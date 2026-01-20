@@ -41,7 +41,7 @@ export function Header() {
             {navItems.map((item) => (
               <div
                 key={item.label}
-                className="relative"
+                className="relative pb-2"
                 onMouseEnter={() => item.children && setActiveDropdown(item.label)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
@@ -57,7 +57,7 @@ export function Header() {
 
                 {/* Dropdown */}
                 {item.children && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white border-2 border-gray-900 rounded-lg shadow-card py-2">
+                  <div className="absolute top-full left-0 w-64 bg-white border-2 border-gray-900 rounded-lg shadow-card py-2">
                     {item.children.map((child) => (
                       <Link
                         key={child.label}
