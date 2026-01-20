@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui";
 
 interface HeroProps {
@@ -50,8 +51,14 @@ export function Hero({
 
           {/* Image Placeholder */}
           <div className="flex justify-center">
-            <div className="w-full max-w-md h-96 bg-gray-200 border-2 border-gray-900 rounded-lg flex items-center justify-center shadow-card">
-              <span className="text-gray-500">Hero Image</span>
+            <div className="relative w-full max-w-md h-96 border-2 border-gray-900 rounded-lg overflow-hidden shadow-card">
+              <Image
+                src="/sloba.webp"
+                alt="Slobodan Jelisavac"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>

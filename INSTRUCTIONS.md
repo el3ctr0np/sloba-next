@@ -1277,8 +1277,115 @@ Take a screenshot and verify before proceeding to next tasks.
 
 ---
 
-# CURRENT TASK: START WITH TASK 001
+# TASK 015: Create Contact Page
 
-Begin with TASK 001. Complete it, verify it works, then proceed to TASK 002.
+## DO THIS ONLY:
+Create contact page with form.
 
-DO NOT skip ahead. ONE TASK AT A TIME.
+### File: src/app/kontakt/page.tsx
+```tsx
+"use client";
+import { useState } from "react";
+import { Section, Button } from "@/components/ui";
+
+export default function ContactPage() {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log(formData);
+    alert("Poruka poslata!");
+  };
+
+  return (
+    <Section>
+      <div className="max-w-2xl mx-auto">
+        <h1 className="text-4xl font-heading font-bold mb-4 text-center">Kontakt</h1>
+        <p className="text-gray-600 text-center mb-8">Zakažite besplatnu konsultaciju</p>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input type="text" placeholder="Ime" required className="w-full p-3 border-2 border-gray-900 rounded-md" onChange={(e) => setFormData({...formData, name: e.target.value})} />
+          <input type="email" placeholder="Email" required className="w-full p-3 border-2 border-gray-900 rounded-md" onChange={(e) => setFormData({...formData, email: e.target.value})} />
+          <textarea placeholder="Poruka" rows={5} required className="w-full p-3 border-2 border-gray-900 rounded-md" onChange={(e) => setFormData({...formData, message: e.target.value})} />
+          <Button variant="secondary" className="w-full">Pošalji</Button>
+        </form>
+      </div>
+    </Section>
+  );
+}
+```
+
+## WHEN DONE:
+Reply "TASK 015 COMPLETE" and STOP.
+
+---
+
+# TASK 016: Create About Page
+
+### File: src/app/o-meni/page.tsx
+```tsx
+import { Section, Button } from "@/components/ui";
+
+export default function AboutPage() {
+  return (
+    <Section>
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl font-heading font-bold mb-6">O Meni</h1>
+        <p className="text-xl text-gray-600 mb-6">Google Ads Strategist sa decenijom iskustva u radu sa premium brendovima iz EU i UK.</p>
+        <div className="space-y-4 text-gray-700">
+          <p>Sa preko 10 godina iskustva u digitalnom oglašavanju, specijalizovao sam se za Google Ads strategije koje donose merljive rezultate.</p>
+          <p>Koristim AI-first pristup kombinujući napredne alate sa dubokim razumevanjem platforme.</p>
+          <p>Partner @ Funky Enterprises za premium brendove i market lidere.</p>
+        </div>
+        <div className="mt-8"><Button href="/kontakt" variant="secondary">Zakažite Konsultaciju</Button></div>
+      </div>
+    </Section>
+  );
+}
+```
+
+## WHEN DONE:
+Reply "TASK 016 COMPLETE" and STOP.
+
+---
+
+# TASK 017: Create Services Listing Page
+
+### File: src/app/usluge/page.tsx
+```tsx
+import Link from "next/link";
+import { Section, Card } from "@/components/ui";
+
+const services = [
+  { title: "Google Ads Upravljanje", href: "/usluge/google-ads-upravljanje", desc: "Kompletno upravljanje kampanjama" },
+  { title: "Performance Max", href: "/usluge/performance-max", desc: "AI-powered kampanje" },
+  { title: "Google Shopping", href: "/usluge/google-shopping", desc: "eCommerce optimizacija" },
+  { title: "SEO", href: "/usluge/seo", desc: "Organski rast" },
+  { title: "Meta Oglašavanje", href: "/usluge/meta-oglasavanje", desc: "Facebook & Instagram" },
+  { title: "YouTube Oglasi", href: "/usluge/youtube-oglasi", desc: "Video marketing" },
+];
+
+export default function ServicesPage() {
+  return (
+    <Section>
+      <h1 className="text-4xl font-heading font-bold mb-4 text-center">Usluge</h1>
+      <p className="text-gray-600 text-center mb-12">Specijalizovane strategije za digitalno oglašavanje</p>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map((s) => (
+          <Link key={s.href} href={s.href}>
+            <Card className="h-full"><h3 className="font-heading font-bold text-xl mb-2">{s.title}</h3><p className="text-gray-600">{s.desc}</p></Card>
+          </Link>
+        ))}
+      </div>
+    </Section>
+  );
+}
+```
+
+## WHEN DONE:
+Reply "TASK 017 COMPLETE" and STOP.
+
+---
+
+# CONTINUE FROM HERE
+
+Tasks 001-017 cover homepage + core pages. More tasks for individual service pages coming next session.
