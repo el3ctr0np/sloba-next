@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
+import { usePathname as useNextPathname } from "next/navigation";
 import { Button } from "@/components/ui";
 
 const navItems = [
@@ -28,7 +29,9 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const locale = useLocale();
-  const pathname = usePathname();
+  const rawPathname = useNextPathname();
+  const pathname =
+    rawPathname.replace(new RegExp(`^/${locale}`), "") || "/";
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b-2 border-gray-900">
