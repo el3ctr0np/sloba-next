@@ -17,7 +17,10 @@ export function Hero({
   trustBadges = []
 }: HeroProps) {
   return (
-    <section className="py-20 md:py-32 px-4 bg-gray-50">
+    <section
+      className="py-20 md:py-32 px-4 bg-gray-50 bg-cover bg-right"
+      style={{ backgroundImage: "url('/hero-bg.webp')" }}
+    >
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -53,10 +56,10 @@ export function Hero({
           <div className="flex justify-center">
             <div className="relative w-full max-w-md h-96 border-2 border-gray-900 rounded-lg overflow-hidden shadow-card">
               <Image
-                src="/sloba.webp"
+                src="/hero.webp"
                 alt="Slobodan Jelisavac"
                 fill
-                className="object-cover"
+                className="object-cover object-left"
                 priority
               />
             </div>
