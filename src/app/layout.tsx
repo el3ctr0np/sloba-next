@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Inter, Poppins } from "next/font/google";
-import { Header, Footer } from "@/components/layout";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,7 +16,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Slobodan Jelisavac - Google Ads Strategist",
-  description: "Google Ads strategist sa decenijom iskustva. Performance Max, Shopping i Search kampanje. AI-first optimizacije.",
+  description:
+    "Google Ads strategist sa decenijom iskustva. Performance Max, Shopping i Search kampanje. AI-first optimizacije.",
 };
 
 export default function RootLayout({
@@ -24,13 +25,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const locale = headers().get("x-next-intl-locale") ?? "sr";
+
   return (
-    <html lang="sr" className={`${inter.variable} ${poppins.variable}`}>
-      <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+    <html lang={locale} className={`${inter.variable} ${poppins.variable}`}>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

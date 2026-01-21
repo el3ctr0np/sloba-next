@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "next-intl/link";
+import { useLocale } from "next-intl";
+import { usePathname } from "next-intl/navigation";
 import { Button } from "@/components/ui";
 
 const navItems = [
@@ -26,6 +28,8 @@ const navItems = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const locale = useLocale();
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b-2 border-gray-900">
@@ -73,8 +77,25 @@ export function Header() {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
+          {/* CTA Button + Language Switcher */}
+          <div className="hidden lg:flex items-center gap-4">
+            <div className="flex items-center gap-2 text-sm font-semibold border-2 border-gray-900 rounded-full px-3 py-1">
+              <Link
+                href={pathname}
+                locale="sr"
+                className={locale === "sr" ? "text-primary" : "text-gray-600"}
+              >
+                SR
+              </Link>
+              <span className="text-gray-400">/</span>
+              <Link
+                href={pathname}
+                locale="en"
+                className={locale === "en" ? "text-primary" : "text-gray-600"}
+              >
+                EN
+              </Link>
+            </div>
             <Button href="/kontakt" variant="secondary">
               Zakaži Poziv
             </Button>
@@ -126,6 +147,25 @@ export function Header() {
               <Button href="/kontakt" variant="secondary" className="w-full text-center">
                 Zakaži Poziv
               </Button>
+            </div>
+            <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold border-2 border-gray-900 rounded-full px-3 py-2">
+              <Link
+                href={pathname}
+                locale="sr"
+                className={locale === "sr" ? "text-primary" : "text-gray-600"}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                SR
+              </Link>
+              <span className="text-gray-400">/</span>
+              <Link
+                href={pathname}
+                locale="en"
+                className={locale === "en" ? "text-primary" : "text-gray-600"}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                EN
+              </Link>
             </div>
           </div>
         )}

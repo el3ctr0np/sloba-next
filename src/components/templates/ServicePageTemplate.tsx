@@ -52,6 +52,17 @@ export function ServicePageTemplate({
   faqs
 }: ServicePageTemplateProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: title,
+    description: subtitle,
+    provider: {
+      "@type": "Organization",
+      name: "Slobodan Jelisavac",
+      url: "https://slobodan-jelisavac.com"
+    }
+  };
 
   const toggleFaq = (index: number) => {
     setOpenIndex((current) => (current === index ? null : index));
@@ -59,6 +70,10 @@ export function ServicePageTemplate({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <Section background="gray" className="pt-12">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
