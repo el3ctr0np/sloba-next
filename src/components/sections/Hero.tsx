@@ -60,7 +60,7 @@ export function Hero({
                 src="/hero.webp"
                 alt="Slobodan Jelisavac"
                 fill
-                className="object-cover object-[15%_center]"
+                className="object-cover object-[15%_center] scale-[0.97]"
                 priority
               />
             </div>
