@@ -60,7 +60,7 @@ export function Hero({
                 src="/hero.webp"
                 alt="Slobodan Jelisavac"
                 fill
-                className="object-contain"
+                className="object-fill"
                 priority
               />
             </div>
