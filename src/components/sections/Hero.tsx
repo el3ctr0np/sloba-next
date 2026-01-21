@@ -55,12 +55,15 @@ export function Hero({
 
           {/* Image Placeholder */}
           <div className="flex justify-center">
-            <div className="relative w-full max-w-md h-96 border border-white/20 rounded-lg overflow-hidden bg-slate-950/40 backdrop-blur-sm shadow-card">
+            <div
+              className="relative w-full max-w-sm border border-white/20 rounded-lg overflow-hidden bg-slate-950/40 backdrop-blur-sm shadow-card"
+              style={{ aspectRatio: "1023 / 781" }}
+            >
               <Image
                 src="/hero.webp"
                 alt="Slobodan Jelisavac"
                 fill
-                className="object-fill"
+                className="object-contain"
                 priority
               />
             </div>
