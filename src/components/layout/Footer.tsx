@@ -74,9 +74,25 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row items-center gap-4">
             <p className="text-gray-400 text-sm">
               Partner @ <a href="https://funky.enterprises" target="_blank" rel="noopener noreferrer" className="hover:text-white">Funky Enterprises</a> - Za market lidere
+            </p>
+            <p className="text-gray-400 text-sm md:flex-1 md:text-center">
+              Dizajn &amp; razvoj:{" "}
+              <a
+                href="https://www.asarum-tech.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                Asarum Tech{" "}
+                <img
+                  src="/asarum-logo.png"
+                  alt="Asarum Tech"
+                  className="inline h-4 w-auto align-middle ml-1"
+                />
+              </a>
             </p>
             <p className="text-gray-400 text-sm">
               © 2026 Slobodan Jelisavac. Sva prava zadržana.
