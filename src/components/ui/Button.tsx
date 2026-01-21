@@ -1,4 +1,4 @@
-import Link from "next-intl/link";
+import { Link } from "@/i18n/navigation";
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -31,3 +31,4 @@ export function Button({
     </button>
   );
 }
+

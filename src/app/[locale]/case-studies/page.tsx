@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next-intl/link";
+import { Link } from "@/i18n/navigation";
 import { Section, Card } from "@/components/ui";
 
 export function generateMetadata(): Metadata {

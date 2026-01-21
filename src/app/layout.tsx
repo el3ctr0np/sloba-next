@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     "Google Ads strategist sa decenijom iskustva. Performance Max, Shopping i Search kampanje. AI-first optimizacije.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const locale = headers().get("x-next-intl-locale") ?? "sr";
+  const locale = (await headers()).get("x-next-intl-locale") ?? "sr";
 
   return (
     <html lang={locale} className={`${inter.variable} ${poppins.variable}`}>

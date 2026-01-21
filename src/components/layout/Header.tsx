@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next-intl/link";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
-import { usePathname } from "next-intl/navigation";
 import { Button } from "@/components/ui";
 
 const navItems = [
@@ -173,3 +172,4 @@ export function Header() {
     </header>
   );
 }
+

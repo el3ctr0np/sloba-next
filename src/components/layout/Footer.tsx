@@ -1,4 +1,4 @@
-import Link from "next-intl/link";
+import { Link } from "@/i18n/navigation";
 
 const footerLinks = {
   usluge: [
@@ -87,3 +87,4 @@ export function Footer() {
     </footer>
   );
 }
+

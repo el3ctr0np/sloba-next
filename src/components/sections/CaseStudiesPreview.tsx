@@ -1,4 +1,4 @@
-import Link from "next-intl/link";
+import { Link } from "@/i18n/navigation";
 import { Card, Button } from "@/components/ui";
 
 const caseStudies = [
@@ -59,3 +59,4 @@ export function CaseStudiesPreview() {
     </section>
   );
 }
+

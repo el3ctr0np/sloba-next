@@ -1,4 +1,4 @@
-import Link from "next-intl/link";
+import { Link } from "@/i18n/navigation";
 import { Card } from "@/components/ui";
 
 const services = [
@@ -46,3 +46,4 @@ export function ServicesPreview() {
     </section>
   );
 }
+
