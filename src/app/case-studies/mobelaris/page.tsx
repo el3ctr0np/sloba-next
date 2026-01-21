@@ -70,15 +70,21 @@ export default function MobelarisCaseStudyPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="h-full">
               <p className="text-sm text-gray-500 mb-2">Primary Metric</p>
-              <p className="text-3xl font-bold text-primary">ROI: 1.8 -> 3.7</p>
+              <p className="text-3xl font-bold text-primary">
+                ROI: 1.8 {"->"} 3.7
+              </p>
             </Card>
             <Card className="h-full">
               <p className="text-sm text-gray-500 mb-2">Budget</p>
-              <p className="text-3xl font-bold text-primary">€30k -> €85k/mes</p>
+              <p className="text-3xl font-bold text-primary">
+                €30k {"->"} €85k/mes
+              </p>
             </Card>
             <Card className="h-full">
               <p className="text-sm text-gray-500 mb-2">Campaigns</p>
-              <p className="text-3xl font-bold text-primary">300 -> 90</p>
+              <p className="text-3xl font-bold text-primary">
+                300 {"->"} 90
+              </p>
             </Card>
           </div>
         </div>

@@ -48,7 +48,7 @@ export default function CaseStudiesPage() {
                 <p className="text-2xl font-bold text-primary">{study.metric}</p>
                 <p className="text-secondary font-semibold">{study.result}</p>
               </div>
-              <span className="text-primary font-medium">Pogledaj -></span>
+              <span className="text-primary font-medium">Pogledaj {"->"}</span>
             </Card>
           </Link>
         ))}

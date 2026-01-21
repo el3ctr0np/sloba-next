@@ -47,7 +47,7 @@ export default function BlogPage() {
                 {post.title}
               </h3>
               <p className="text-gray-600 mb-4">{post.excerpt}</p>
-              <span className="text-primary font-medium">Procitaj -></span>
+              <span className="text-primary font-medium">Procitaj {"->"}</span>
             </Card>
           </Link>
         ))}

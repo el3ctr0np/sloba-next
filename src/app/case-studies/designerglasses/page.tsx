@@ -74,7 +74,9 @@ export default function DesignerGlassesCaseStudyPage() {
             </Card>
             <Card className="h-full">
               <p className="text-sm text-gray-500 mb-2">Revenue</p>
-              <p className="text-3xl font-bold text-primary">£5k -> £62k/mes</p>
+              <p className="text-3xl font-bold text-primary">
+                £5k {"->"} £62k/mes
+              </p>
             </Card>
             <Card className="h-full">
               <p className="text-sm text-gray-500 mb-2">Additional Result</p>
