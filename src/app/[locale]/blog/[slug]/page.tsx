@@ -1901,6 +1901,522 @@ function AgencijaVsFreelancerPost() {
   );
 }
 
+function ConversionTrackingVodicPost() {
+  return (
+    <>
+      <h2>Uvod</h2>
+      <p>Svake nedelje vidim istu situaciju.</p>
+      <p>
+        Firma troši €2,000-5,000 mesečno na Google Ads. Kampanje su "aktivne".
+        Klikova ima. Ali rezultata — nema, ili su nepouzdani.
+      </p>
+      <p>
+        Kada pogledam nalog, problem je skoro uvek isti:{" "}
+        <span className="font-semibold">
+          conversion tracking ne radi kako treba
+        </span>
+        .
+      </p>
+      <p>
+        Loš tracking je tihi ubica Google Ads performansi. Bez pouzdanih
+        podataka o konverzijama:
+      </p>
+      <ul>
+        <li>Ne znate šta zapravo funkcioniše</li>
+        <li>Algoritmi optimizuju ka pogrešnim signalima</li>
+        <li>Donosite odluke na osnovu lažnih podataka</li>
+        <li>Bacate novac, a da to ni ne znate</li>
+      </ul>
+      <p>U ovom vodiču pokrivam:</p>
+      <ul>
+        <li>Zašto je conversion tracking toliko kritičan</li>
+        <li>Tipovi konverzija i kada koji koristiti</li>
+        <li>Kako pravilno postaviti tracking (korak po korak)</li>
+        <li>Enhanced Conversions — šta je i zašto vam treba</li>
+        <li>Server-side tracking — sledeći nivo</li>
+        <li>Najčešće greške i kako ih otkriti</li>
+      </ul>
+
+      <h2>Zašto je Conversion Tracking Kritičan</h2>
+      <h3>Algoritmi zavise od vaših podataka</h3>
+      <p>
+        Google Ads Smart Bidding (Target CPA, Target ROAS, Maximize Conversions)
+        koristi machine learning. Ali machine learning je samo onoliko dobar
+        koliko su dobri podaci.
+      </p>
+      <p className="font-semibold">Sa lošim tracking-om:</p>
+      <ul>
+        <li>Algoritam uči pogrešne signale</li>
+        <li>Biduje previše za loš saobraćaj</li>
+        <li>Biduje premalo za dobar saobraćaj</li>
+        <li>Vaš novac ide u vetar</li>
+      </ul>
+      <p className="font-semibold">Sa dobrim tracking-om:</p>
+      <ul>
+        <li>Algoritam razume šta je prava konverzija</li>
+        <li>Biduje agresivnije kada su signali dobri</li>
+        <li>Štedi budžet kada signali nisu perspektivni</li>
+        <li>Vaš ROAS raste</li>
+      </ul>
+
+      <h3>Optimizacija bez podataka je nagađanje</h3>
+      <p>
+        Ako ne znate koja ključna reč, oglas, ili audience donosi konverzije,
+        kako ćete optimizovati?
+      </p>
+      <p>
+        <span className="font-semibold">Bez tracking-a:</span> "Mislim da ova
+        kampanja radi dobro."
+      </p>
+      <p>
+        <span className="font-semibold">Sa tracking-om:</span> "Ova kampanja
+        donosi 47 konverzija po €12.50, a ova 3 konverzije po €180. Znamo šta
+        raditi."
+      </p>
+
+      <h2>Tipovi Konverzija</h2>
+      <h3>Primarne vs Sekundarne</h3>
+      <p className="font-semibold">Primarne konverzije — vaš glavni cilj:</p>
+      <ul>
+        <li>Kupovina (eCommerce)</li>
+        <li>Lead form submission (B2B)</li>
+        <li>Poziv (lokalni biznis)</li>
+        <li>Registracija (SaaS)</li>
+      </ul>
+      <p className="font-semibold">Sekundarne konverzije — koraci ka cilju:</p>
+      <ul>
+        <li>Add to cart</li>
+        <li>Poseta stranici sa cenama</li>
+        <li>Video view</li>
+        <li>Preuzimanje sadržaja</li>
+      </ul>
+      <p>
+        <span className="font-semibold">Preporuka:</span> Primarne konverzije za
+        bid optimization. Sekundarne za observation i analizu.
+      </p>
+
+      <h3>Online vs Offline</h3>
+      <p className="font-semibold">Online konverzije:</p>
+      <ul>
+        <li>Dešavaju se na vašem sajtu</li>
+        <li>Automatski trackable</li>
+        <li>Form submissions, purchases, calls via website</li>
+      </ul>
+      <p className="font-semibold">Offline konverzije:</p>
+      <ul>
+        <li>Dešavaju se van sajta</li>
+        <li>Zahtevaju import iz CRM-a</li>
+        <li>Sales calls, in-store purchases, signed contracts</li>
+      </ul>
+      <p>
+        <span className="font-semibold">Za B2B:</span> Offline conversion import
+        je ključan za kvalitet lead-ova.
+      </p>
+
+      <h3>Micro vs Macro</h3>
+      <p>
+        <span className="font-semibold">Macro konverzije</span> — krajnji cilj
+      </p>
+      <p>
+        <span className="font-semibold">Micro konverzije</span> — signali ka cilju
+      </p>
+      <p>Primer za eCommerce:</p>
+      <ul>
+        <li>Micro: product view, add to cart, checkout initiated</li>
+        <li>Macro: purchase completed</li>
+      </ul>
+      <p>
+        Micro konverzije pomažu algoritmu da uči i kada je volume macro
+        konverzija nizak.
+      </p>
+
+      <h2>Postavljanje Conversion Tracking (Korak po Korak)</h2>
+      <h3>Metod 1: Google Ads Tag (Direktno)</h3>
+      <p>
+        <span className="font-semibold">Prednosti:</span> Jednostavno, direktno u
+        Google Ads
+      </p>
+      <p>
+        <span className="font-semibold">Mane:</span> Manje fleksibilno, teže za
+        kompleksne setup-e
+      </p>
+      <p className="font-semibold">Koraci:</p>
+      <ol>
+        <li>Idite na Tools &amp; Settings → Conversions</li>
+        <li>Kliknite + New conversion action</li>
+        <li>Izaberite tip (Website, App, Phone calls, Import)</li>
+        <li>
+          Za Website: unesite URL, izaberite kategoriju (Purchase, Lead, etc.),
+          unesite vrednost (fiksna ili dinamička), izaberite count (Every vs One)
+        </li>
+        <li>Kopirajte tag i stavite na confirmation page</li>
+      </ol>
+
+      <h3>Metod 2: Google Tag Manager (Preporučeno)</h3>
+      <p>
+        <span className="font-semibold">Prednosti:</span> Fleksibilno,
+        centralizovano, lakše održavanje
+      </p>
+      <p>
+        <span className="font-semibold">Mane:</span> Zahteva inicijalni setup
+        GTM-a
+      </p>
+      <p className="font-semibold">Koraci:</p>
+      <ol>
+        <li>Postavite GTM container na sajt (sve stranice)</li>
+        <li>Kreirajte Conversion Linker tag (obavezno!)</li>
+        <li>Kreirajte Google Ads Conversion Tracking tag</li>
+        <li>Postavite trigger (form submission, purchase, etc.)</li>
+        <li>Testirajte u Preview mode</li>
+        <li>Publish</li>
+      </ol>
+      <p className="font-semibold">GTM setup za form submission:</p>
+      <pre className="border-2 border-gray-900 rounded-lg p-4 bg-gray-50 text-sm">
+        <code>
+          Tag: Google Ads Conversion Tracking{"\n"}
+          - Conversion ID: [vaš ID]{"\n"}
+          - Conversion Label: [vaš label]{"\n"}
+          - Conversion Value: [ako imate]{"\n"}
+          {"\n"}
+          Trigger: Form Submission{"\n"}
+          - Trigger type: Form Submission{"\n"}
+          - Fire on: Page URL contains "thank-you" ILI Form ID equals
+          "contact-form"
+        </code>
+      </pre>
+
+      <h3>Metod 3: Import iz GA4</h3>
+      <p>
+        <span className="font-semibold">Prednosti:</span> Unified reporting,
+        koristi GA4 events
+      </p>
+      <p>
+        <span className="font-semibold">Mane:</span> Attribution može biti
+        drugačija
+      </p>
+      <p className="font-semibold">Koraci:</p>
+      <ol>
+        <li>Kreirajte event u GA4 (ili koristite postojeći)</li>
+        <li>Markirajte event kao conversion u GA4</li>
+        <li>U Google Ads: Tools → Conversions → Import → Google Analytics 4</li>
+        <li>Izaberite property i konverzije za import</li>
+      </ol>
+
+      <h2>Enhanced Conversions: Šta Je i Zašto Vam Treba</h2>
+      <h3>Problem</h3>
+      <p>
+        Zbog privacy promena (iOS 14+, cookie restrictions, browser tracking
+        prevention), Google Ads gubi podatke. Konverzije se ne pripisuju
+        pravilno. Podaci su nepotpuni.
+      </p>
+      <h3>Rešenje: Enhanced Conversions</h3>
+      <p>
+        Enhanced Conversions šalje hash-ovane (šifrovane) first-party podatke
+        korisnika nazad Google-u:
+      </p>
+      <ul>
+        <li>Email adresa</li>
+        <li>Telefon</li>
+        <li>Ime, adresa</li>
+      </ul>
+      <p>
+        Google ove podatke koristi da matchuje konverzije sa klikovima, čak i
+        kada cookies ne rade.
+      </p>
+
+      <h3>Tipovi Enhanced Conversions</h3>
+      <p className="font-semibold">Enhanced Conversions for Web:</p>
+      <ul>
+        <li>Za online konverzije (kupovine, lead-ove)</li>
+        <li>Šalje podatke sa thank-you stranice</li>
+      </ul>
+      <p className="font-semibold">Enhanced Conversions for Leads:</p>
+      <ul>
+        <li>Za offline konverzije</li>
+        <li>Import iz CRM-a sa customer data</li>
+      </ul>
+
+      <h3>Kako Postaviti (GTM Metod)</h3>
+      <ol>
+        <li>U Google Ads: Conversions → Settings → Enhanced conversions → Turn on</li>
+        <li>Izaberite metod: Google Tag Manager</li>
+        <li>U GTM: Edit conversion tag</li>
+        <li>Enable Include user-provided data</li>
+        <li>
+          Mappirajte data layer varijable: email, phone_number, first_name,
+          last_name, street, city, country, postal_code
+        </li>
+        <li>Kreirajte data layer push na conversion page:</li>
+      </ol>
+      <pre className="border-2 border-gray-900 rounded-lg p-4 bg-gray-50 text-sm">
+        <code>{`dataLayer.push({
+  'event': 'purchase',
+  'user_data': {
+    'email': 'customer@email.com',
+    'phone_number': '+381601234567',
+    'address': {
+      'first_name': 'Marko',
+      'last_name': 'Marković',
+      'city': 'Beograd',
+      'country': 'RS'
+    }
+  }
+});`}</code>
+      </pre>
+
+      <h3>Očekivani Rezultati</h3>
+      <ul>
+        <li>5-15% više pripisanih konverzija</li>
+        <li>Bolja Smart Bidding optimizacija</li>
+        <li>Poboljšana audience matching za remarketing</li>
+      </ul>
+
+      <h2>Server-Side Tracking: Sledeći Nivo</h2>
+      <h3>Šta je Server-Side Tracking</h3>
+      <p>
+        Umesto da browser šalje podatke direktno Google-u, podaci idu na vaš
+        server (ili cloud container), pa odatle Google-u.
+      </p>
+      <pre className="border-2 border-gray-900 rounded-lg p-4 bg-gray-50 text-sm">
+        <code>
+          Standardno: Browser -&gt; Google{"\n"}
+          Server-side: Browser -&gt; Vaš Server -&gt; Google
+        </code>
+      </pre>
+
+      <h3>Zašto Server-Side?</h3>
+      <ol>
+        <li>Zaobilazi ad blockere — podaci idu sa vašeg domena</li>
+        <li>Bolja kontrola podataka — vi odlučujete šta se šalje</li>
+        <li>Poboljšana brzina sajta — manje JavaScript-a na frontendu</li>
+        <li>GDPR compliance — lakše upravljanje consent-om</li>
+      </ol>
+
+      <h3>Kako Implementirati</h3>
+      <p className="font-semibold">Opcija 1: Google Tag Manager Server Container</p>
+      <ul>
+        <li>Google Cloud Run hosting</li>
+        <li>Zahteva tehničko znanje</li>
+        <li>Mesečni trošak ~€50-200 zavisno od volumena</li>
+      </ul>
+      <p className="font-semibold">Opcija 2: Third-party rešenja (Stape.io, Elevar)</p>
+      <ul>
+        <li>Managed hosting</li>
+        <li>Lakši setup</li>
+        <li>Mesečni trošak €50-500</li>
+      </ul>
+
+      <h3>Da li Vam Treba Server-Side?</h3>
+      <p className="font-semibold">DA, ako:</p>
+      <ul>
+        <li>Ad spend €5,000+ mesečno</li>
+        <li>Značajan deo saobraćaja koristi ad blockere (10%+)</li>
+        <li>GDPR/Privacy su prioritet</li>
+        <li>Imate tehničke resurse</li>
+      </ul>
+      <p className="font-semibold">NE NUŽNO, ako:</p>
+      <ul>
+        <li>Mali budžet</li>
+        <li>Jednostavan setup</li>
+        <li>Nemate tehničku podršku</li>
+      </ul>
+
+      <h2>Najčešće Greške sa Tracking-om</h2>
+      <h3>1. Tag na pogrešnoj stranici</h3>
+      <p>
+        Conversion tag je na svim stranicama, ne samo confirmation page.
+        Rezultat: lažne konverzije, nemoguća optimizacija.
+      </p>
+      <p>
+        <span className="font-semibold">Kako proveriti:</span> Google Tag
+        Assistant, GTM Preview mode
+      </p>
+
+      <h3>2. Dupli tagovi</h3>
+      <p>
+        I Google Ads tag i GA4 import za istu konverziju. Rezultat: duplo
+        brojanje.
+      </p>
+      <p>
+        <span className="font-semibold">Rešenje:</span> Koristite jedno ili
+        drugo, ne oba.
+      </p>
+
+      <h3>3. Conversion Linker nedostaje</h3>
+      <p>
+        Bez Conversion Linker taga, cross-domain i cross-device tracking ne
+        radi.
+      </p>
+      <p>
+        <span className="font-semibold">Rešenje:</span> Uvek postavite Conversion
+        Linker u GTM (fire on All Pages).
+      </p>
+
+      <h3>4. Attribution model ne odgovara biznisu</h3>
+      <p>
+        Default: Last Click. Ali možda Data-Driven ili Position-Based ima više
+        smisla za vaš sales cycle.
+      </p>
+      <p>
+        <span className="font-semibold">Rešenje:</span> Razmislite o customer
+        journey i izaberite odgovarajući model.
+      </p>
+
+      <h3>5. Ne trackujete vrednost</h3>
+      <p>
+        Sve konverzije su "1" — ne znate da li je to kupovina od €50 ili €500.
+      </p>
+      <p>
+        <span className="font-semibold">Rešenje:</span> Dynamic conversion values
+        — šaljite stvarnu vrednost transakcije.
+      </p>
+
+      <h3>6. Samo makro konverzije</h3>
+      <p>
+        Trackujete samo purchase/lead, ništa pre toga. Algoritam nema dovoljno
+        signala.
+      </p>
+      <p>
+        <span className="font-semibold">Rešenje:</span> Dodajte micro konverzije
+        (add to cart, pricing page) kao observation.
+      </p>
+
+      <h2>Dijagnostika: Da li Vaš Tracking Radi?</h2>
+      <h3>Koraci za proveru</h3>
+      <ol>
+        <li>
+          <span className="font-semibold">Google Tag Assistant</span> — instalirajte
+          Chrome extension, prođite kroz conversion flow, proverite da li tag
+          puca.
+        </li>
+        <li>
+          <span className="font-semibold">Google Ads → Conversions</span> — status
+          "Recording conversions" je zeleno? Tag status: "Received data"
+          poslednjih 7 dana?
+        </li>
+        <li>
+          <span className="font-semibold">Real-time provera</span> — napravite
+          test konverziju, proverite da li se pojavi u GA4 Real-Time, proverite
+          Google Ads Conversions report (može kasniti 3+ sata).
+        </li>
+        <li>
+          <span className="font-semibold">Cross-check sa stvarnošću</span> —
+          uporedite Google Ads konverzije sa CRM/backend, razlika do 10-15% je
+          OK, veća razlika = problem.
+        </li>
+      </ol>
+
+      <h3>Red Flags</h3>
+      <ul>
+        <li>Conversion rate iznenada skače/pada bez razloga</li>
+        <li>Konverzije ne odgovaraju prodaji u CRM-u</li>
+        <li>Smart Bidding ne daje rezultate iako ima dovoljno data</li>
+        <li>Tag status pokazuje grešku u Conversions panelu</li>
+      </ul>
+
+      <h2>B2B Specifičnosti: Offline Conversion Import</h2>
+      <p>
+        Za B2B, lead form submission nije prava konverzija. Prava konverzija je
+        potpisan ugovor.
+      </p>
+
+      <h3>Zašto je Offline Import Važan</h3>
+      <p>
+        Bez njega: Google optimizuje ka form submissions. Dobijate volume, ali
+        ne kvalitet.
+      </p>
+      <p>
+        Sa njim: Google uči koji tip lead-ova se zatvara. Dobijate manje, ali
+        bolje lead-ove.
+      </p>
+
+      <h3>Kako Implementirati</h3>
+      <ol>
+        <li>GCLID capture — čuvajte Google Click ID sa svakim lead-om</li>
+        <li>CRM tracking — pratite lead kroz pipeline</li>
+        <li>Regular import — exportujte zaključene lead-ove sa GCLID</li>
+        <li>Upload u Google Ads — Tools → Conversions → Uploads</li>
+      </ol>
+      <p className="font-semibold">Format za upload:</p>
+      <pre className="border-2 border-gray-900 rounded-lg p-4 bg-gray-50 text-sm">
+        <code>
+          Google Click ID, Conversion Name, Conversion Time, Conversion Value
+          {"\n"}
+          Abc123xyz..., Offline Sale, 2026-01-15 14:30:00, 5000
+        </code>
+      </pre>
+
+      <h3>Best Practices</h3>
+      <ul>
+        <li>Upload minimalno nedeljno</li>
+        <li>Vreme konverzije = vreme zatvaranja deala</li>
+        <li>Uključite vrednost deala</li>
+        <li>Click-to-conversion window: do 90 dana</li>
+      </ul>
+
+      <h2>Zaključak</h2>
+      <p>
+        Conversion tracking nije "nice to have". To je fundament na kojem se
+        gradi sve ostalo.
+      </p>
+      <p>Bez pouzdanog tracking-a:</p>
+      <ul>
+        <li>Algoritmi ne mogu da rade svoj posao</li>
+        <li>Vi ne možete da donosite informisane odluke</li>
+        <li>Novac se troši bez jasnog ROI-a</li>
+      </ul>
+      <p className="font-semibold">Akcioni plan:</p>
+      <ol>
+        <li>Audit postojeći setup — da li tracking radi?</li>
+        <li>Implementirajte Enhanced Conversions — povećajte data quality</li>
+        <li>Dodajte micro konverzije — dajte algoritmu više signala</li>
+        <li>Za B2B: Offline import — optimizujte ka pravom cilju</li>
+        <li>Redovna provera — mesečni audit tracking-a</li>
+      </ol>
+      <p>
+        Ako trošite više od €1,000 mesečno i niste sigurni u tracking, to je
+        prvi problem koji treba rešiti.
+      </p>
+
+      <h2>FAQ</h2>
+      <h3>Koliko vremena treba da se konverzija pojavi u Google Ads?</h3>
+      <p>
+        Obično 3-6 sati za online konverzije. Može biti i do 24 sata. Offline
+        import zavisi od frekvencije uploada.
+      </p>
+      <h3>Zašto se broj konverzija u GA4 i Google Ads razlikuje?</h3>
+      <p>
+        Različiti attribution modeli, različiti conversion windows, i način
+        brojanja. Razlika 10-20% je normalna.
+      </p>
+      <h3>Da li mi treba developer za postavljanje tracking-a?</h3>
+      <p>
+        Za osnovni setup sa GTM — ne obavezno. Za Enhanced Conversions i
+        server-side — verovatno da.
+      </p>
+      <h3>Šta ako nemam thank-you stranicu?</h3>
+      <p>
+        Koristite event-based tracking: form submission event, AJAX response, ili
+        redirect URL parameters.
+      </p>
+      <h3>Koliko konverzija treba za Smart Bidding?</h3>
+      <p>
+        Minimum 15 u poslednjih 30 dana za Target CPA/ROAS. Idealno 30-50 za
+        stabilnije rezultate.
+      </p>
+
+      <div className="mt-10 text-sm text-gray-500">
+        Poslednje ažuriranje: Januar 2026
+      </div>
+      <div className="text-sm text-gray-500">
+        <Link href="/o-meni" className="underline">
+          Autor: Slobodan Jelisavac, Google Ads Consultant
+        </Link>
+      </div>
+    </>
+  );
+}
+
 type Post = {
   slug: string;
   title: string;
@@ -1963,6 +2479,15 @@ const posts: Post[] = [
     metaDescription:
       "Agencija, freelancer ili in-house tim za Google Ads? Detaljno poređenje troškova, prednosti i mana svake opcije. Saznajte koja je prava za vaš budžet i ciljeve.",
     content: <AgencijaVsFreelancerPost />
+  },
+  {
+    slug: "conversion-tracking-vodic",
+    title: "Conversion Tracking za Google Ads: Zašto Vaše Kampanje Ne Rade",
+    date: "2026-01-26",
+    category: "Google Ads",
+    metaDescription:
+      "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje tracking-a, enhanced conversions i server-side implementaciju.",
+    content: <ConversionTrackingVodicPost />
   }
 ];
 

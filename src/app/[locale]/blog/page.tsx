@@ -33,6 +33,14 @@ const posts = [
     date: "2026-01-24",
     category: "Google Shopping",
     href: "/blog/google-shopping-vodic"
+  },
+  {
+    title: "Conversion Tracking za Google Ads: Zasto Vase Kampanje Ne Rade",
+    excerpt:
+      "Los conversion tracking je razlog #1 zasto Google Ads kampanje ne donose rezultate.",
+    date: "2026-01-26",
+    category: "Google Ads",
+    href: "/blog/conversion-tracking-vodic"
   }
 ];
 
