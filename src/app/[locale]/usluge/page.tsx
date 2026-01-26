@@ -6,7 +6,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Google Ads i Performance Marketing usluge | Slobodan Jelisavac",
     description:
-      "Profesionalne Google Ads usluge za eCommerce, B2B i SaaS kompanije. 10+ godina iskustva, UK Search Awards. Zakazite besplatnu konsultaciju."
+      "Profesionalne Google Ads usluge za eCommerce, B2B i SaaS kompanije. 10+ godina iskustva, UK Search Awards. Zakažite besplatnu konsultaciju."
   };
 }
 
@@ -19,7 +19,7 @@ const coreServices = [
   {
     title: "Google Ads audit",
     href: "/usluge/google-ads-audit",
-    desc: "Detaljna analiza naloga sa jasnim preporukama za poboljsanje."
+    desc: "Detaljna analiza naloga sa jasnim preporukama za poboljšanje."
   },
   {
     title: "Google Shopping kampanje",
@@ -29,7 +29,7 @@ const coreServices = [
   {
     title: "Performance Max",
     href: "/usluge/performance-max",
-    desc: "Kontrola asset grupa, audience signala i transparentno pracenje performansi."
+    desc: "Kontrola asset grupa, audience signala i transparentno praćenje performansi."
   },
   {
     title: "Search kampanje",
@@ -57,7 +57,7 @@ const industryServices = [
   {
     title: "Google Ads za eCommerce",
     href: "/usluge/google-ads-za-ecommerce",
-    desc: "Shopping, Performance Max i full-funnel pristup za veci prihod."
+    desc: "Shopping, Performance Max i full-funnel pristup za veći prihod."
   },
   {
     title: "Google Ads za SaaS",
@@ -73,28 +73,28 @@ const consultationOffers = [
     desc: "Direktna konsultacija za strategiju, konkretne izazove ili second opinion."
   },
   {
-    title: "Starter paket za pocetnike (od EUR 300)",
+    title: "Starter paket za početnike (od EUR 300)",
     href: "/usluge/starter-paket",
-    desc: "Setup naloga, osnovna struktura i edukacija za samostalno vodjenje."
+    desc: "Setup naloga, osnovna struktura i edukacija za samostalno vođenje."
   },
   {
     title: "Usluge za lokalne firme",
     href: "/kontakt",
-    desc: "Prilagodjen pristup za manje budzete sa fokusom na merljiv ROI."
+    desc: "Prilagođen pristup za manje budžete sa fokusom na merljiv ROI."
   }
 ];
 
 const problemPoints = [
   "Visok CPC bez proporcionalnog broja konverzija",
-  "Kampanje koje trose budzet bez vidljivih rezultata",
+  "Kampanje koje troše budžet bez vidljivih rezultata",
   "Nedostatak uvida u to sta zaista funkcionise",
-  "Performance Max koji trosi na irelevantne plasmane",
+  "Performance Max koji troši na irelevantne plasmane",
   "Shopping feed bez optimizacije za maksimalni reach"
 ];
 
 const stats = [
-  { value: "EUR 2M+", label: "Upravljanog ad spend-a godisnje" },
-  { value: "180%+", label: "Prosecno poboljsanje ROAS-a" },
+  { value: "EUR 2M+", label: "Upravljanog ad spend-a godišnje" },
+  { value: "180%+", label: "Prosecno poboljšanje ROAS-a" },
   { value: "10+", label: "Godina iskustva" },
   { value: "UK Search Awards", label: "Dobitnik nagrade" },
   { value: "50+", label: "Zadovoljnih klijenata" }
@@ -111,34 +111,34 @@ const processSteps = [
   },
   {
     title: "Implementacija",
-    desc: "Setup ili preuzimanje naloga, strategija i tracking podesavanje."
+    desc: "Setup ili preuzimanje naloga, strategija i tracking podešavanje."
   },
   {
     title: "Kontinuirana optimizacija",
-    desc: "Mesecni reporting, A/B testiranje i skaliranje pobednickih kampanja."
+    desc: "Mesečni reporting, A/B testiranje i skaliranje pobednickih kampanja."
   }
 ];
 
 const faqs = [
   {
     q: "Koja je minimalna investicija za saradnju?",
-    a: "Radim sa kompanijama koje imaju minimum EUR 800 mesecnog ad spend-a. Za manje budzete preporucujem Starter paket ili 1-na-1 konsultacije."
+    a: "Radim sa kompanijama koje imaju minimum EUR 800 mesečnog ad spend-a. Za manje budžete preporučujem Starter paket ili 1-na-1 konsultacije."
   },
   {
     q: "Da li radite samo sa kompanijama iz Srbije?",
-    a: "Ne, radim sa klijentima iz cele Evrope, ukljucujuci UK, Nemacku, Hrvatsku i Srbiju."
+    a: "Ne, radim sa klijentima iz cele Evrope, uključujući UK, Nemačku, Hrvatsku i Srbiju."
   },
   {
     q: "Koliko traje minimalna saradnja?",
     a: "Preporucujem minimum 3 meseca za upravljanje kampanjama. Za audit i konsultacije nema minimalnog perioda."
   },
   {
-    q: "Kako izgleda mesecni reporting?",
-    a: "Svakog meseca dobijate izvestaj sa kljucnim metrikama, sprovedenim akcijama i preporukama."
+    q: "Kako izgleda mesečni reporting?",
+    a: "Svakog meseca dobijate izveštaj sa ključnim metrikama, sprovedenim akcijama i preporukama."
   },
   {
-    q: "Da li mogu da vidim primer vaseg rada?",
-    a: "Da, pogledajte case studies sekciju sa konkretnim rezultatima za razlicite industrije."
+    q: "Da li mogu da vidim primer vašeg rada?",
+    a: "Da, pogledajte case studies sekciju sa konkretnim rezultatima za različite industrije."
   }
 ];
 
@@ -175,8 +175,8 @@ export default function ServicesPage() {
             Prestanite da bacate novac na oglase koji ne konvertuju
           </h2>
           <p className="text-gray-600">
-            Lose strukturirane kampanje, pogresno targetiranje i manjak
-            optimizacije najcesce dovode do slabog povrata investicije.
+            Loše strukturirane kampanje, pogrešno targetiranje i manjak
+            optimizacije najčešće dovode do slabog povrata investicije.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -194,7 +194,7 @@ export default function ServicesPage() {
             Kompletne Google Ads i Performance Marketing usluge
           </h2>
           <p className="text-gray-600">
-            Od strategije do svakodnevne optimizacije, pokrivam sve kljucne delove
+            Od strategije do svakodnevne optimizacije, pokrivam sve ključne delove
             naloga za stabilan rast.
           </p>
         </div>
@@ -207,7 +207,7 @@ export default function ServicesPage() {
                 </h3>
                 <p className="text-gray-600">{service.desc}</p>
                 <span className="mt-4 inline-block text-primary font-semibold">
-                  Saznajte vise
+                  Saznajte više
                 </span>
               </Card>
             </Link>
@@ -219,8 +219,8 @@ export default function ServicesPage() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-heading font-bold mb-4">Usluge po industriji</h2>
           <p className="text-gray-600">
-            Strategije prilagodjene kompleksnosti prodajnog procesa i ciljevima
-            vase industrije.
+            Strategije prilagođene kompleksnosti prodajnog procesa i ciljevima
+            vaše industrije.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -246,12 +246,12 @@ export default function ServicesPage() {
             Performance Marketing - premium usluga
           </h2>
           <p className="text-gray-700 mb-6">
-            Za kompanije koje zele kompletan omnichannel pristup (Google Ads + Meta
+            Za kompanije koje žele kompletan omnichannel pristup (Google Ads + Meta
             + SEO + CRO), nudim premium paket kroz partnerstvo sa Funky Enterprises
             timom.
           </p>
           <Button href="/usluge/performance-marketing" variant="secondary">
-            Saznajte vise o Performance Marketing paketu
+            Saznajte više o Performance Marketing paketu
           </Button>
         </div>
       </Section>
@@ -262,7 +262,7 @@ export default function ServicesPage() {
             Konsultacije i edukacija
           </h2>
           <p className="text-gray-600">
-            Direktna podrska za timove koji zele jasnu strategiju i brze
+            Direktna podrška za timove koji žele jasnu strategiju i brže
             preporuke.
           </p>
         </div>
@@ -334,7 +334,7 @@ export default function ServicesPage() {
       <Section background="gray">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -350,15 +350,15 @@ export default function ServicesPage() {
       <Section>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Spremni da poboljsate svoje Google Ads rezultate?
+            Spremni da poboljšate svoje Google Ads rezultate?
           </h2>
           <p className="text-gray-600 mb-8">
-            Zakazite besplatnu 30-minutnu konsultaciju i saznajte kako mogu
-            pomoci vasem biznisu da ostvari bolje rezultate kroz strateski
-            pristup placenom oglasavanju.
+            Zakažite besplatnu 30-minutnu konsultaciju i saznajte kako mogu
+            pomoći vašem biznisu da ostvari bolje rezultate kroz strateški
+            pristup plaćenom oglašavanju.
           </p>
           <Button href="/kontakt" variant="secondary">
-            Zakazite besplatnu konsultaciju
+            Zakažite besplatnu konsultaciju
           </Button>
         </div>
       </Section>

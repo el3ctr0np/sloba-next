@@ -7,7 +7,7 @@ export function generateMetadata(): Metadata {
     title:
       "Google Shopping kampanje Srbija | eCommerce specijalist - Slobodan Jelisavac",
     description:
-      "Specijalizovane Google Shopping kampanje za eCommerce. Feed optimizacija, bid strategije, struktura kampanja. Povecajte ROAS."
+      "Specijalizovane Google Shopping kampanje za eCommerce. Feed optimizacija, bid strategije, struktura kampanja. Povećajte ROAS."
   };
 }
 
@@ -15,12 +15,12 @@ const challenges = [
   {
     title: "Feed koji nije optimizovan",
     description:
-      "Losi naslovi, nepotpuni atributi i pogresne kategorije blokiraju rast."
+      "Losi naslovi, nepotpuni atributi i pogrešne kategorije blokiraju rast."
   },
   {
     title: "Sve u jednoj kampanji",
     description:
-      "Bez segmentacije po performansama i profitabilnosti, budzet se trosi bez kontrole."
+      "Bez segmentacije po performansama i profitabilnosti, budžet se troši bez kontrole."
   },
   {
     title: "Performance Max kao black box",
@@ -28,7 +28,7 @@ const challenges = [
       "Bez pravilnog setup-a i pracenja ne znate sta zaista radi."
   },
   {
-    title: "Konkurencija vas nadmasuje",
+    title: "Konkurencija vas nadmašuje",
     description:
       "Veci igraci dominiraju aukcijom, a vi nemate strategiju za pametno nadmetanje."
   },
@@ -45,14 +45,14 @@ const inclusions = [
     items: [
       "Audit i optimizacija naslova i opisa",
       "Custom labels i feed rules",
-      "Ongoing odrzavanje i kontrola kvaliteta"
+      "Ongoing održavanje i kontrola kvaliteta"
     ]
   },
   {
     title: "Setup i struktura kampanja",
     items: [
       "Analiza asortimana",
-      "Struktura po kategorijama i marzama",
+      "Struktura po kategorijama i maržama",
       "Bid strategije po segmentima"
     ]
   },
@@ -78,20 +78,20 @@ const inclusions = [
 const results = [
   {
     title: "Mobelaris - Namestaj",
-    items: ["320% poboljsanje ROAS-a", "Feed optimizacija i restruktuiranje kampanja"]
+    items: ["320% poboljšanje ROAS-a", "Feed optimizacija i restruktuiranje kampanja"]
   },
   {
     title: "Fashion Brand - Srbija",
-    items: ["Od 2x do 5x ROAS u 90 dana", "Custom labels po sezonama i marzama"]
+    items: ["Od 2x do 5x ROAS u 90 dana", "Custom labels po sezonama i maržama"]
   }
 ];
 
 const idealClients = [
   "Imate online prodavnicu sa minimum 50 proizvoda",
-  "Trenutni ad spend je minimum EUR 800/mesecno",
-  "Imate definisane marze po proizvodima",
+  "Trenutni ad spend je minimum EUR 800/mesečno",
+  "Imate definisane marže po proizvodima",
   "Zelite da skalirate eCommerce prihode",
-  "Spremni ste za dugorocnu saradnju (minimum 3 meseca)"
+  "Spremni ste za dugoročnu saradnju (minimum 3 meseca)"
 ];
 
 const industries = [
@@ -108,26 +108,26 @@ const faqs = [
   {
     question: "Koja platforma za online prodavnicu je potrebna?",
     answer:
-      "Radim sa svim platformama, ukljucujuci Shopify, WooCommerce, Magento i custom resenja. Bitno je da mozete generisati product feed."
+      "Radim sa svim platformama, uključujući Shopify, WooCommerce, Magento i custom rešenja. Bitno je da možete generisati product feed."
   },
   {
     question: "Da li je potreban Google Merchant Center?",
     answer:
-      "Da, Merchant Center je obavezan za Shopping kampanje. Ako ga nemate, pomazem sa setup-om."
+      "Da, Merchant Center je obavezan za Shopping kampanje. Ako ga nemate, pomažem sa setup-om."
   },
   {
     question: "Koliko proizvoda je potrebno za Shopping kampanje?",
-    answer: "Za ozbiljne rezultate preporucujem minimum 50+ proizvoda."
+    answer: "Za ozbiljne rezultate preporučujem minimum 50+ proizvoda."
   },
   {
     question: "Koliko traje da se vide rezultati?",
     answer:
-      "Prva poboljsanja su vidljiva nakon 2-3 nedelje. Za stabilne rezultate racunajte na 6-8 nedelja."
+      "Prva poboljšanja su vidljiva nakon 2-3 nedelje. Za stabilne rezultate racunajte na 6-8 nedelja."
   },
   {
     question: "Mogu li kombinovati Shopping i Search kampanje?",
     answer:
-      "Da, i preporucujem to. Full-funnel pristup daje najbolje rezultate za eCommerce."
+      "Da, i preporučujem to. Full-funnel pristup daje najbolje rezultate za eCommerce."
   }
 ];
 
@@ -138,7 +138,7 @@ const serviceSchema = {
   description:
     "Specijalizovane Shopping kampanje za eCommerce brendove sa fokusom na ROAS i profitabilan rast.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -172,19 +172,19 @@ export default function GoogleShoppingPage() {
       <Section background="gray">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
-            Google Shopping kampanje - vasi proizvodi na vrhu Google pretrage
+            Google Shopping kampanje - vaši proizvodi na vrhu Google pretrage
           </h1>
           <p className="text-lg text-gray-700 mb-8">
-            Google Shopping kampanje su najefikasniji nacin da vasi proizvodi dodju
+            Google Shopping kampanje su najefikasniji nacin da vaši proizvodi dođu
             pred kupce koji su spremni da kupe. Shopping oglasi prikazuju sliku,
             cenu i naziv proizvoda direktno u rezultatima pretrage, sto daje kupcima
-            sve informacije pre klika. Specijalizovan sam za eCommerce oglasavanje
-            i pomazem online prodavnicama da maksimiziraju ROAS kroz strateski
+            sve informacije pre klika. Specijalizovan sam za eCommerce oglašavanje
+            i pomažem online prodavnicama da maksimiziraju ROAS kroz strateški
             pristup Shopping kampanjama.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/case-studies" variant="primary">
               Pogledajte rezultate
@@ -239,19 +239,19 @@ export default function GoogleShoppingPage() {
             Standard Shopping vs Performance Max
           </h2>
           <p className="text-gray-600">
-            Pre odluke radim audit i analizu vase situacije. Nekim brendovima
-            Standard Shopping donosi vise kontrole, dok drugima Performance Max
-            daje bolje rezultate. Sve zavisi od kreativa, video materijala i
+            Pre odluke radim audit i analizu vaše situacije. Nekim brendovima
+            Standard Shopping donosi više kontrole, dok drugima Performance Max
+            daje bolje rezultate. Sve zaviši od kreativa, video materijala i
             strukture asortimana.
           </p>
           <p className="text-gray-600 mt-4">
-            Moj pristup je individualan - cilj je ono sto radi za vas konkretan
+            Moj pristup je individualan - cilj je ono sto radi za vaš konkretan
             biznis.
           </p>
         </div>
         <div className="text-center">
           <Button href="/usluge/performance-max" variant="secondary">
-            Vise o Performance Max
+            Više o Performance Max
           </Button>
         </div>
       </Section>
@@ -309,7 +309,7 @@ export default function GoogleShoppingPage() {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -327,15 +327,15 @@ export default function GoogleShoppingPage() {
       <Section>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Spremni da vasi proizvodi dostignu prave kupce?
+            Spremni da vaši proizvodi dostignu prave kupce?
           </h2>
           <p className="text-gray-600 mb-8">
-            Zakazite besplatnu konsultaciju i saznajte kako Shopping kampanje mogu
-            povecati eCommerce prihod.
+            Zakažite besplatnu konsultaciju i saznajte kako Shopping kampanje mogu
+            povećati eCommerce prihod.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/cenovnik" variant="primary">
               Pogledajte cenovnik

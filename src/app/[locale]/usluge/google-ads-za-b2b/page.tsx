@@ -7,7 +7,7 @@ export function generateMetadata(): Metadata {
     title:
       "Google Ads za B2B kompanije | Lead generation Srbija - Slobodan Jelisavac",
     description:
-      "Google Ads strategije za B2B lead generation. Kvalitetni leadovi, CRM integracija, nizi CPA. Zakazite konsultaciju."
+      "Google Ads strategije za B2B lead generation. Kvalitetni leadovi, CRM integracija, niži CPA. Zakažite konsultaciju."
   };
 }
 
@@ -18,7 +18,7 @@ const challenges = [
       "Od prvog kontakta do zatvaranja posla mogu proci meseci, pa je tesko meriti uspeh kratkorocno."
   },
   {
-    title: "Vise decision maker-a",
+    title: "Više decision maker-a",
     description:
       "Potrebno je uveriti ceo tim, od end user-a do C-level-a."
   },
@@ -30,20 +30,20 @@ const challenges = [
   {
     title: "Offline konverzije",
     description:
-      "Pravi close se desava offline, pa je kljucno povezati Google Ads sa CRM podacima."
+      "Pravi cloše se desava offline, pa je ključno povezati Google Ads sa CRM podacima."
   },
   {
     title: "Visi CPC",
     description:
-      "B2B kljucne reci su skupe jer je vrednost konverzije visoka."
+      "B2B ključne reči su skupe jer je vrednost konverzije visoka."
   }
 ];
 
 const idealClients = [
   "Imate definisan sales proces i koristite CRM",
   "Fokusirani ste na lead generation (demo, kontakt forme, pozivi)",
-  "Zelite da pratite leadove do closed deal-a",
-  "Budzet za ads je minimum EUR 1,500/mesecno",
+  "Zelite da pratite leadove do clošed deal-a",
+  "Budžet za ads je minimum EUR 1,500/mesečno",
   "Prosecna vrednost deal-a je EUR 1,000+"
 ];
 
@@ -59,7 +59,7 @@ const results = [
   {
     title: "Tech Company (UK)",
     items: [
-      "180% povecanje qualified leads",
+      "180% povećanje qualified leads",
       "42% smanjenje CPA",
       "Offline conversion tracking implementacija"
     ]
@@ -74,7 +74,7 @@ const faqs = [
   {
     question: "Koji CRM koristite za integraciju?",
     answer:
-      "Radim sa HubSpot, Salesforce, Pipedrive i Zoho sistemima. Bitno je da mozete pratiti lead stages."
+      "Radim sa HubSpot, Salesforce, Pipedrive i Zoho sistemima. Bitno je da možete pratiti lead stages."
   },
   {
     question: "Koliko traje da se vide rezultati?",
@@ -105,7 +105,7 @@ const serviceSchema = {
   description:
     "Google Ads strategije za B2B lead generation sa fokusom na kvalitet leadova i CRM integraciju.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -142,14 +142,14 @@ export default function GoogleAdsZaB2BPage() {
             Google Ads za B2B - kvalitetni leadovi, ne samo klikovi
           </h1>
           <p className="text-lg text-gray-700 mb-8">
-            Google Ads za B2B zahteva drugaciji pristup od eCommerce oglasavanja.
+            Google Ads za B2B zahteva drugačiji pristup od eCommerce oglašavanja.
             Cilj je generisanje kvalitetnih leadova koji prolaze kroz sales proces,
-            a ne samo broj prijava. Pomazem da dodjete do decision maker-a koji su
+            a ne samo broj prijava. Pomazem da dođete do decision maker-a koji su
             spremni za razgovor i da merite uspeh prema kvalitetu leadova.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/search-kampanje" variant="primary">
               Search kampanje
@@ -161,7 +161,7 @@ export default function GoogleAdsZaB2BPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Izazovi B2B oglasavanja
+            Izazovi B2B oglašavanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -218,7 +218,7 @@ export default function GoogleAdsZaB2BPage() {
         </div>
         <div className="text-center mt-8">
           <Button href="/case-studies" variant="primary">
-            Vise B2B case studies
+            Više B2B case studies
           </Button>
         </div>
       </Section>
@@ -226,7 +226,7 @@ export default function GoogleAdsZaB2BPage() {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -247,12 +247,12 @@ export default function GoogleAdsZaB2BPage() {
             Spremni da generisete kvalitetnije B2B leadove?
           </h2>
           <p className="text-gray-600 mb-8">
-            Zakazite besplatnu konsultaciju i razgovarajmo kako Google Ads moze
-            doprineti vasem B2B pipeline-u.
+            Zakažite besplatnu konsultaciju i razgovarajmo kako Google Ads može
+            doprineti vašem B2B pipeline-u.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/google-ads-upravljanje" variant="primary">
               Google Ads upravljanje

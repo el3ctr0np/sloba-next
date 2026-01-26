@@ -5,7 +5,7 @@ import { Button, Card, Section } from "@/components/ui";
 export function generateMetadata(): Metadata {
   return {
     title:
-      "Google Search kampanje Srbija | Strucnjak za PPC - Slobodan Jelisavac",
+      "Google Search kampanje Srbija | Stručnjak za PPC - Slobodan Jelisavac",
     description:
       "Profesionalne Google Search kampanje za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija. Besplatna konsultacija."
   };
@@ -13,24 +13,24 @@ export function generateMetadata(): Metadata {
 
 const problems = [
   {
-    title: "Pogresna struktura kampanja",
+    title: "Pogrešna struktura kampanja",
     description:
-      "Sve kljucne reci u jednoj ad grupi dovode do niskog Quality Score-a i visokog CPC-a."
+      "Sve ključne reči u jednoj ad grupi dovode do niskog Quality Score-a i visokog CPC-a."
   },
   {
     title: "Broad match bez kontrole",
     description:
-      "Bez negativne liste trosite budzet na irelevantne pretrage."
+      "Bez negativne liste trošite budžet na irelevantne pretrage."
   },
   {
     title: "Generic ad copy",
     description:
-      "Isti oglas za sve kljucne reci znaci nizak CTR i slabu relevantnost."
+      "Isti oglas za sve ključne reči znaci nizak CTR i slabu relevantnost."
   },
   {
     title: "Set and forget mentalitet",
     description:
-      "Kampanja je podesena pre meseci i niko je ne optimizuje."
+      "Kampanja je podešena pre meseci i niko je ne optimizuje."
   }
 ];
 
@@ -38,7 +38,7 @@ const inclusions = [
   {
     title: "Setup i struktura",
     items: [
-      "Keyword istrazivanje",
+      "Keyword istraživanje",
       "Campaign i ad group struktura",
       "Negative keywords",
       "Ad copy pisanje",
@@ -57,7 +57,7 @@ const inclusions = [
   {
     title: "Reporting",
     items: [
-      "Kljucne metrike",
+      "Ključne metrike",
       "Search terms insights",
       "Preporuke za sledeci period"
     ]
@@ -71,7 +71,7 @@ const campaignTypes = [
   },
   {
     title: "Generic / Non-Brand Search",
-    description: "Akvizicija novih kupaca koji vas jos ne poznaju."
+    description: "Akvizicija novih kupaca koji vas još ne poznaju."
   },
   {
     title: "Competitor Search",
@@ -79,15 +79,15 @@ const campaignTypes = [
   },
   {
     title: "High-Intent / Bottom Funnel",
-    description: "Kljucne reci sa jasnom kupovnom namerom."
+    description: "Ključne reči sa jasnom kupovnom namerom."
   }
 ];
 
 const idealClients = [
-  "Ljudi aktivno pretrazuju ono sto nudite",
+  "Ljudi aktivno pretražuju ono sto nudite",
   "Imate jasno definisanu ponudu (proizvod/usluga)",
-  "Mozete pratiti konverzije (online ili offline)",
-  "Budzet je minimum EUR 500/mesec za Search"
+  "Možete pratiti konverzije (online ili offline)",
+  "Budžet je minimum EUR 500/mesec za Search"
 ];
 
 const industries = [
@@ -100,9 +100,9 @@ const industries = [
 
 const faqs = [
   {
-    question: "Koliko kljucnih reci treba za pocetak?",
+    question: "Koliko ključnih reči treba za početak?",
     answer:
-      "Kvalitet preko kvantiteta. Pocinjemo sa 20-50 pazljivo odabranih reci i sirimo na osnovu podataka."
+      "Kvalitet preko kvantiteta. Počinjemo sa 20-50 pažljivo odabranih reči i širimo na osnovu podataka."
   },
   {
     question: "Koliko traje da se vide rezultati?",
@@ -115,14 +115,14 @@ const faqs = [
       "Da, pisanje oglasa je deo usluge. Fokus na best practices i poruke koje konvertuju."
   },
   {
-    question: "Sta je Quality Score i zasto je bitan?",
+    question: "Sta je Quality Score i zašto je bitan?",
     answer:
-      "Quality Score (1-10) odredjuje poziciju i CPC. Visi QS znaci bolji polozaj i nizu cenu."
+      "Quality Score (1-10) određuje poziciju i CPC. Visi QS znaci bolji polozaj i nizu cenu."
   },
   {
     question: "Da li mogu da kombinujem Search sa drugim kampanjama?",
     answer:
-      "Da, i preporucujem to. Search + Shopping za eCommerce, Search + Remarketing za B2B."
+      "Da, i preporučujem to. Search + Shopping za eCommerce, Search + Remarketing za B2B."
   }
 ];
 
@@ -133,7 +133,7 @@ const serviceSchema = {
   description:
     "Profesionalne Google Search kampanje sa fokusom na keyword strategiju, ad copy i optimizaciju.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -167,19 +167,19 @@ export default function SearchKampanjePage() {
       <Section background="gray">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
-            Google Search kampanje - dodjite do kupaca kada vas traze
+            Google Search kampanje - dođite do kupaca kada vas traže
           </h1>
           <p className="text-lg text-gray-700 mb-8">
-            Google Search kampanje su najdirektniji nacin da dodjete do kupaca u
-            trenutku kada aktivno traze vase proizvode ili usluge. Za razliku od
-            display ili social oglasavanja, Search oglasi se prikazuju ljudima sa
+            Google Search kampanje su najdirektniji nacin da dođete do kupaca u
+            trenutku kada aktivno traže vaše proizvode ili usluge. Za razliku od
+            display ili social oglašavanja, Search oglasi se prikazuju ljudima sa
             jasnom namerom. Sa 10+ godina iskustva u kreiranju i optimizaciji
-            Search kampanja, pomazem kompanijama da maksimiziraju ROI kroz keyword
+            Search kampanja, pomažem kompanijama da maksimiziraju ROI kroz keyword
             strategiju, ad copy i bid optimizaciju.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/google-ads-upravljanje" variant="primary">
               Google Ads upravljanje
@@ -191,7 +191,7 @@ export default function SearchKampanjePage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Zasto Search kampanje ne ostvaruju puni potencijal
+            Zašto Search kampanje ne ostvaruju puni potencijal
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -269,7 +269,7 @@ export default function SearchKampanjePage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -287,15 +287,15 @@ export default function SearchKampanjePage() {
       <Section background="gray">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Spremni da dodjete do kupaca koji vas traze?
+            Spremni da dođete do kupaca koji vas traže?
           </h2>
           <p className="text-gray-600 mb-8">
-            Zakazite besplatnu konsultaciju i razgovarajmo kako Search kampanje
+            Zakažite besplatnu konsultaciju i razgovarajmo kako Search kampanje
             mogu doneti kvalitetne leadove i prodaju.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/case-studies" variant="primary">
               Pogledajte rezultate

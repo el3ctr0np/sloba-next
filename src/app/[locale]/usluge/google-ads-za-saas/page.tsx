@@ -6,7 +6,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Google Ads za SaaS | Customer acquisition - Slobodan Jelisavac",
     description:
-      "Google Ads strategije za SaaS kompanije. Trial signups, demo requests, smanjenje CAC. Zakazite konsultaciju."
+      "Google Ads strategije za SaaS kompanije. Trial signups, demo requests, smanjenje CAC. Zakažite konsultaciju."
   };
 }
 
@@ -14,17 +14,17 @@ const challenges = [
   {
     title: "Visok CAC",
     description:
-      "Placate previse po trial signup-u, a mali procenat postaje paying."
+      "Plaćate previše po trial signup-u, a mali procenat postaje paying."
   },
   {
-    title: "Optimizacija ka pogresnim metrikama",
+    title: "Optimizacija ka pogrešnim metrikama",
     description:
       "Broj signups-a ne znaci kvalitet. Potreban je fokus na trial-to-paid."
   },
   {
     title: "Competitor bidding war",
     description:
-      "Svi targetiraju iste high-intent reci, pa CPC postaje astronomskim."
+      "Svi targetiraju iste high-intent reči, pa CPC postaje astronomskim."
   },
   {
     title: "Attribution kompleksnost",
@@ -34,10 +34,10 @@ const challenges = [
 ];
 
 const idealClients = [
-  "Imate product-market fit (ljudi placaju i ostaju)",
+  "Imate product-market fit (ljudi plaćaju i ostaju)",
   "MRR minimum EUR 10k+ ili ARR EUR 120k+",
-  "Mozete pratiti downstream konverzije (trial-to-paid)",
-  "Budzet za paid acquisition minimum EUR 2,000/mesecno"
+  "Možete pratiti downstream konverzije (trial-to-paid)",
+  "Budžet za paid acquisition minimum EUR 2,000/mesečno"
 ];
 
 const industries = [
@@ -62,7 +62,7 @@ const results = [
     title: "HR Tech Startup",
     items: [
       "Sa EUR 200 CAC na EUR 95 CAC",
-      "180% povecanje qualified demo zahteva"
+      "180% povećanje qualified demo zahteva"
     ]
   }
 ];
@@ -71,7 +71,7 @@ const faqs = [
   {
     question: "Kada je pravo vreme za SaaS da krene sa Google Ads?",
     answer:
-      "Kada imate product-market fit i mozete trackati full funnel. Retention preko 80% nakon 3 meseca je dobar signal."
+      "Kada imate product-market fit i možete trackati full funnel. Retention preko 80% nakon 3 meseca je dobar signal."
   },
   {
     question: "Koliko traje da se vidi ROI?",
@@ -86,7 +86,7 @@ const faqs = [
   {
     question: "Kako se nosite sa visokim CPC-om?",
     answer:
-      "Kombinujem quality score optimizaciju, long-tail keywords, competitor targeting i remarketing za nizi blended CAC."
+      "Kombinujem quality score optimizaciju, long-tail keywords, competitor targeting i remarketing za niži blended CAC."
   }
 ];
 
@@ -97,7 +97,7 @@ const serviceSchema = {
   description:
     "Google Ads strategije za SaaS kompanije fokusirane na trial-to-paid i smanjenje CAC-a.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -135,13 +135,13 @@ export default function GoogleAdsZaSaasPage() {
           </h1>
           <p className="text-lg text-gray-700 mb-8">
             Google Ads za SaaS kompanije zahteva pristup koji razume SaaS economics.
-            Cilj nije samo dovesti korisnike, vec dovesti one koji postaju paying
+            Cilj nije samo dovesti korisnike, ve? dovesti one koji postaju paying
             customers sa visokim LTV-om. Fokus je na metrikama koje zaista matter:
             trial-to-paid conversion, CAC payback i customer quality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/google-ads-za-b2b" variant="primary">
               Google Ads za B2B
@@ -185,8 +185,8 @@ export default function GoogleAdsZaSaasPage() {
               Posebno dobro radim sa: {industries.join(", ")}.
             </div>
             <div className="text-sm text-gray-500 mt-2">
-              Napomena: Za very early stage startup-e koji jos testiraju PMF,
-              Google Ads mozda nije pravi kanal.
+              Napomena: Za very early stage startup-e koji još testiraju PMF,
+              Google Ads možda nije pravi kanal.
             </div>
           </Card>
         </div>
@@ -222,7 +222,7 @@ export default function GoogleAdsZaSaasPage() {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -243,12 +243,12 @@ export default function GoogleAdsZaSaasPage() {
             Spremni da optimizujete SaaS acquisition?
           </h2>
           <p className="text-gray-600 mb-8">
-            Zakazite besplatnu konsultaciju i razgovarajmo kako Google Ads moze
+            Zakažite besplatnu konsultaciju i razgovarajmo kako Google Ads može
             smanjiti CAC i skalirati growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/search-kampanje" variant="primary">
               Search kampanje

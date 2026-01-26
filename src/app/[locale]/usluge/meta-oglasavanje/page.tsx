@@ -3,7 +3,7 @@ import { ServicePageTemplate } from "@/components/templates/ServicePageTemplate"
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Meta Oglasavanje | Slobodan Jelisavac",
+    title: "Meta Oglašavanje | Slobodan Jelisavac",
     description:
       "Facebook i Instagram kampanje za awareness i konverzije."
   };
@@ -51,14 +51,14 @@ const pricing = [
     features: [
       "Setup i osnovna optimizacija",
       "Kreative smernice",
-      "Mesecni izvestaj"
+      "Mesečni izveštaj"
     ],
     ctaText: "Posalji Upit"
   },
   {
     name: "Standard",
     price: "Na upit",
-    description: "Za rastuce brendove i veci reach.",
+    description: "Za rastuce brendove i veći reach.",
     features: [
       "Napredni targeting",
       "Retargeting strategija",
@@ -74,7 +74,7 @@ const pricing = [
     features: [
       "Full-funnel kampanje",
       "Cross-channel sinergija",
-      "Prioritetna podrska"
+      "Prioritetna podrška"
     ],
     ctaText: "Posalji Upit"
   }
@@ -82,7 +82,7 @@ const pricing = [
 
 const faqs = [
   {
-    question: "Da li Meta oglasavanje moze da zameni Google Ads?",
+    question: "Da li Meta oglašavanje može da zameni Google Ads?",
     answer:
       "Ne. Meta je discovery kanal, Google je intent kanal. Zajedno daju najbolje rezultate."
   },
@@ -92,7 +92,7 @@ const faqs = [
       "Zavisi od cilja. Za awareness Bumper/Story formati, za konverzije Video Action i retargeting."
   },
   {
-    question: "Da li nudite izradu kreativa?",
+    question: "Da li nudite izradu kreativaš",
     answer:
       "Mogu dati smernice i koordinaciju, a realizacija ide kroz Funky Enterprises tim."
   },
@@ -103,11 +103,11 @@ const faqs = [
   }
 ];
 
-export default function MetaOglasavanjePage() {
+export default function MetaOglašavanjePage() {
   return (
     <ServicePageTemplate
-      title="Meta Oglasavanje - Facebook i Instagram Kampanje Koje Konvertuju"
-      subtitle="Meta oglasavanje realizujem u saradnji sa specijalistom u okviru Funky Enterprises tima za omnichannel pristup."
+      title="Meta Oglašavanje - Facebook i Instagram Kampanje Koje Konvertuju"
+      subtitle="Meta oglašavanje realizujem u saradnji sa specijalistom u okviru Funky Enterprises tima za omnichannel pristup."
       problems={problems}
       solutions={solutions}
       pricing={pricing}

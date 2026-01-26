@@ -6,7 +6,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Google Ads za eCommerce | Online prodavnice - Slobodan Jelisavac",
     description:
-      "Google Ads strategije za eCommerce i webshop. Shopping, Performance Max, remarketing. Povecajte ROAS i prihod."
+      "Google Ads strategije za eCommerce i webshop. Shopping, Performance Max, remarketing. Povećajte ROAS i prihod."
   };
 }
 
@@ -14,17 +14,17 @@ const challenges = [
   {
     title: "Feed kvalitet koji koci kampanje",
     description:
-      "Losi naslovi, nepotpuni atributi i pogresne kategorije blokiraju vidljivost proizvoda."
+      "Losi naslovi, nepotpuni atributi i pogrešne kategorije blokiraju vidljivost proizvoda."
   },
   {
-    title: "ROAS ne pokriva troskove",
+    title: "ROAS ne pokriva troškove",
     description:
-      "Kampanje donose prodaju, ali marze nisu dovoljne za profitabilnost."
+      "Kampanje donose prodaju, ali marže nisu dovoljne za profitabilnost."
   },
   {
     title: "Performance Max bez uvida",
     description:
-      "Bez kontrole ne znate gde ide budzet i sta zapravo donosi rezultate."
+      "Bez kontrole ne znate gde ide budžet i sta zapravo donosi rezultate."
   },
   {
     title: "Sezonalnost i inventory",
@@ -32,7 +32,7 @@ const challenges = [
       "Kampanje promovisu proizvode kojih nema na stanju ili propustate peak season."
   },
   {
-    title: "Konkurencija sa vecim budzetima",
+    title: "Konkurencija sa većim budžetima",
     description:
       "Veliki retaileri dominiraju aukcijom, pa je potrebna pametna strategija."
   }
@@ -40,8 +40,8 @@ const challenges = [
 
 const idealClients = [
   "Minimum 100 proizvoda u ponudi",
-  "Ad spend minimum EUR 800/mesecno",
-  "Definisane marze po proizvodima ili kategorijama",
+  "Ad spend minimum EUR 800/mesečno",
+  "Definisane marže po proizvodima ili kategorijama",
   "Funkcionalan tracking (GA4, purchase events)",
   "Spremni ste na minimum 3 meseca saradnje"
 ];
@@ -63,13 +63,13 @@ const results = [
     items: [
       "Od 2x do 5x ROAS u 90 dana",
       "Feed reoptimizacija i campaign restructuring",
-      "EUR 150k+ godisnji prihod iz Google Ads"
+      "EUR 150k+ godišnji prihod iz Google Ads"
     ]
   },
   {
     title: "Home and Garden (Hrvatska)",
     items: [
-      "320% poboljsanje ROAS-a",
+      "320% poboljšanje ROAS-a",
       "Custom labels po sezonama",
       "PMax i Standard Shopping kombinacija"
     ]
@@ -80,22 +80,22 @@ const faqs = [
   {
     question: "Koja platforma je najbolja za eCommerce?",
     answer:
-      "Radim sa Shopify, WooCommerce i Magento platformama. Bitno je da mozete generisati kvalitetan product feed."
+      "Radim sa Shopify, WooCommerce i Magento platformama. Bitno je da možete generisati kvalitetan product feed."
   },
   {
     question: "Sta je dobar ROAS za eCommerce?",
     answer:
-      "Zavisi od marzi. Ako je marza 50%, ROAS 3x je break-even. Za profitabilnost treba vise."
+      "Zavisi od marži. Ako je marža 50%, ROAS 3x je break-even. Za profitabilnost treba više."
   },
   {
     question: "Da li upravljate i feed-om?",
     answer:
-      "Da, feed management je deo usluge, ukljucujuci optimizaciju naslova i custom labels."
+      "Da, feed management je deo usluge, uključujući optimizaciju naslova i custom labels."
   },
   {
     question: "Koliko traje da se vide rezultati?",
     answer:
-      "Prva poboljsanja za 2-3 nedelje, stabilizacija i ozbiljniji rast za 6-8 nedelja."
+      "Prva poboljšanja za 2-3 nedelje, stabilizacija i ozbiljniji rast za 6-8 nedelja."
   },
   {
     question: "Da li radite i Meta oglase?",
@@ -111,7 +111,7 @@ const serviceSchema = {
   description:
     "Google Ads strategije za eCommerce prodavnice uz Shopping, Performance Max i remarketing kampanje.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -145,18 +145,18 @@ export default function GoogleAdsZaEcommercePage() {
       <Section background="gray">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
-            Google Ads za eCommerce - maksimizujte prihod vase online prodavnice
+            Google Ads za eCommerce - maksimizujte prihod vaše online prodavnice
           </h1>
           <p className="text-lg text-gray-700 mb-8">
             Google Ads za eCommerce je najefikasniji kanal za skaliranje online
-            prodavnice. Shopping kampanje prikazuju proizvode direktno u pretrazi,
+            prodavnice. Shopping kampanje prikazuju proizvode direktno u pretraži,
             dok Performance Max dostize kupce na svim Google platformama. Uz pravo
-            podesavanje, kampanje mogu doneti profitabilan rast za fashion, home
+            podešavanje, kampanje mogu doneti profitabilan rast za fashion, home
             and garden, electronics i druge vertikale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/google-shopping" variant="primary">
               Google Shopping kampanje
@@ -168,7 +168,7 @@ export default function GoogleAdsZaEcommercePage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Izazovi eCommerce oglasavanja
+            Izazovi eCommerce oglašavanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -236,7 +236,7 @@ export default function GoogleAdsZaEcommercePage() {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -257,12 +257,12 @@ export default function GoogleAdsZaEcommercePage() {
             Spremni da skalirate vasu online prodavnicu?
           </h2>
           <p className="text-gray-600 mb-8">
-            Zakazite besplatnu konsultaciju i razgovarajmo kako Google Ads moze
-            povecati prihod vase eCommerce prodavnice.
+            Zakažite besplatnu konsultaciju i razgovarajmo kako Google Ads može
+            povećati prihod vaše eCommerce prodavnice.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/performance-marketing" variant="primary">
               Performance Marketing

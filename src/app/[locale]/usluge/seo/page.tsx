@@ -5,22 +5,22 @@ export function generateMetadata(): Metadata {
   return {
     title: "SEO Usluge | Slobodan Jelisavac",
     description:
-      "SEO optimizacija za dugorocni organski rast i bolje rangiranje."
+      "SEO optimizacija za dugoročni organski rast i bolje rangiranje."
   };
 }
 
 const problems = [
   {
     title: "Slab organski saobracaj",
-    description: "Bez SEO optimizacije, vas sajt ne dolazi do pravih korisnika."
+    description: "Bez SEO optimizacije, vaš sajt ne dolazi do pravih korisnika."
   },
   {
     title: "Tehnicki problemi blokiraju rast",
-    description: "Spor sajt, index problemi i lose strukture ogranicavaju rezultate."
+    description: "Spor sajt, index problemi i loše strukture ograničavaju rezultate."
   },
   {
     title: "Content bez strategije",
-    description: "Sadrzaj se objavljuje bez jasnog plana i ciljanih kljucnih reci."
+    description: "Sadržaj se objavljuje bez jasnog plana i ciljanih ključnih reči."
   }
 ];
 
@@ -35,7 +35,7 @@ const solutions = [
   },
   {
     title: "Content strategija",
-    description: "Keyword research, plan sadrzaja i optimizacija postova."
+    description: "Keyword research, plan sadržaja i optimizacija postova."
   },
   {
     title: "Link building",
@@ -47,7 +47,7 @@ const solutions = [
   },
   {
     title: "SEO + PPC sinergija",
-    description: "PPC podaci za SEO strategiju i budzet optimizaciju."
+    description: "PPC podaci za SEO strategiju i budžet optimizaciju."
   }
 ];
 
@@ -55,11 +55,11 @@ const pricing = [
   {
     name: "Starter",
     price: "Od €300/mes",
-    description: "Za manje biznise i pocetni SEO rast.",
+    description: "Za manje biznise i početni SEO rast.",
     features: [
       "Osnovni audit",
       "On-page optimizacija",
-      "Mesecni izvestaj"
+      "Mesečni izveštaj"
     ],
     ctaText: "Posalji Upit"
   },
@@ -78,11 +78,11 @@ const pricing = [
   {
     name: "Premium",
     price: "Na upit",
-    description: "Za brendove koji zele dominaciju u SERP-u.",
+    description: "Za brendove koji žele dominaciju u SERP-u.",
     features: [
       "Link building i PR",
       "Napredna analitika",
-      "Prioritetna podrska"
+      "Prioritetna podrška"
     ],
     ctaText: "Posalji Upit"
   }
@@ -107,15 +107,15 @@ const faqs = [
   {
     question: "Da li nudite content plan?",
     answer:
-      "Da, radim keyword research i plan sadrzaja prilagodjen vasoj industriji."
+      "Da, radim keyword research i plan sadržaja prilagođen vasoj industriji."
   }
 ];
 
 export default function SeoPage() {
   return (
     <ServicePageTemplate
-      title="SEO Usluge - Dugorocni Organski Rast za Vas Biznis"
-      subtitle="SEO optimizacija za dugorocni rast. On-page, tehnicki SEO i content strategija, samostalno ili u paketu sa Google Ads."
+      title="SEO Usluge - Dugoročni Organski Rast za Vas Biznis"
+      subtitle="SEO optimizacija za dugoročni rast. On-page, tehnicki SEO i content strategija, samostalno ili u paketu sa Google Ads."
       problems={problems}
       solutions={solutions}
       pricing={pricing}

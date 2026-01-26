@@ -4,9 +4,9 @@ import { Button, Card, Section } from "@/components/ui";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "YouTube oglasi Srbija | Video oglasavanje - Slobodan Jelisavac",
+    title: "YouTube oglasi Srbija | Video oglašavanje - Slobodan Jelisavac",
     description:
-      "YouTube oglasavanje i video reklame. Brand awareness i direct response kampanje. Upravljanje bez Google Ads."
+      "YouTube oglašavanje i video reklame. Brand awareness i direct response kampanje. Upravljanje bez Google Ads."
   };
 }
 
@@ -14,22 +14,22 @@ const problems = [
   {
     title: "Nemamo video",
     description:
-      "Mnogi misle da je potrebna skupa produkcija, a i jednostavni formati mogu raditi odlicno."
+      "Mnogi misle da je potrebna skupa produkcija, a i jednostavni formati mogu raditi odlično."
   },
   {
     title: "YouTube je samo za awareness",
     description:
-      "Uz pravo targetiranje i format, YouTube moze doneti direktne konverzije."
+      "Uz pravo targetiranje i format, YouTube može doneti direktne konverzije."
   },
   {
-    title: "Previse komplikovano",
+    title: "Previše komplikovano",
     description:
-      "Google Ads interface i razliciti formati mogu delovati konfuzno."
+      "Google Ads interface i različiti formati mogu delovati konfuzno."
   },
   {
     title: "Zelim samo YouTube",
     description:
-      "Nekim brendovima treba fokusirano video oglasavanje bez kompletnog Google Ads setup-a."
+      "Nekim brendovima treba fokusirano video oglašavanje bez kompletnog Google Ads setup-a."
   }
 ];
 
@@ -37,12 +37,12 @@ const adFormats = [
   {
     title: "Skippable In-Stream Ads",
     description:
-      "Oglasi pre/tokom videa koji se mogu preskociti nakon 5 sekundi. Placanje po view-u."
+      "Oglasi pre/tokom videa koji se mogu preskočiti nakon 5 sekundi. Plaćanje po view-u."
   },
   {
     title: "Non-Skippable In-Stream Ads",
     description:
-      "15-20 sekundi video koji se ne moze preskociti, placanje po CPM-u."
+      "15-20 sekundi video koji se ne može preskočiti, plaćanje po CPM-u."
   },
   {
     title: "Bumper Ads",
@@ -52,7 +52,7 @@ const adFormats = [
   {
     title: "In-Feed Video Ads",
     description:
-      "Thumbnail + tekst u YouTube search rezultatima, placanje po kliku."
+      "Thumbnail + tekst u YouTube search rezultatima, plaćanje po kliku."
   },
   {
     title: "Shorts Ads",
@@ -64,40 +64,40 @@ const adFormats = [
 const targetingOptions = [
   "Demographic targeting (starost, pol, parental status, household income)",
   "Affinity audiences (interesovanja i lifestyle kategorije)",
-  "In-Market audiences (ljudi koji aktivno istrazuju kupovinu)",
-  "Custom Intent audiences (na osnovu kljucnih reci)",
+  "In-Market audiences (ljudi koji aktivno istražuju kupovinu)",
+  "Custom Intent audiences (na osnovu ključnih reči)",
   "Remarketing (posetioci sajta, gledaoci videa)",
-  "Placement targeting (specificni kanali ili videi)"
+  "Placement targeting (specifični kanali ili videi)"
 ];
 
 const idealClients = [
-  "Zelite samo YouTube oglasavanje bez kompletnog Google Ads",
+  "Zelite samo YouTube oglašavanje bez kompletnog Google Ads",
   "Imate video content ili ste spremni da ga napravite",
   "Cilj je brand awareness ili direct response",
-  "Budzet za YouTube je minimum EUR 1,000/mesecno",
+  "Budžet za YouTube je minimum EUR 1,000/mesečno",
   "Ciljna grupa provodi vreme na YouTube-u"
 ];
 
 const faqs = [
   {
-    question: "Koliki budzet treba za YouTube?",
+    question: "Koliki budžet treba za YouTube?",
     answer:
-      "Minimum je EUR 1,000/mesecno za smislene rezultate. Za ozbiljnije awareness kampanje racunajte na EUR 3,000+."
+      "Minimum je EUR 1,000/mesečno za smislene rezultate. Za ozbiljnije awareness kampanje racunajte na EUR 3,000+."
   },
   {
     question: "Da li mogu meriti ROI na YouTube?",
     answer:
-      "Da, uz pravilno podesavanje trackinga. View-through i assisted conversions daju uvid u doprinos."
+      "Da, uz pravilno podešavanje trackinga. View-through i assisted conversions daju uvid u doprinos."
   },
   {
     question: "Nemam video - sta sad?",
     answer:
-      "Mogu dati creative brief ili preporuciti lokalne producente. Postoje i opcije sa stock footage-om."
+      "Mogu dati creative brief ili preporučiti lokalne producente. Postoje i opcije sa stock footage-om."
   },
   {
     question: "Da li mogu targetirati konkurentske kanale?",
     answer:
-      "Da, placement targeting omogucava prikazivanje na specificnim kanalima, ukljucujuci konkurenciju."
+      "Da, placement targeting omogućava prikazivanje na specifičnim kanalima, uključujući konkurenciju."
   },
   {
     question: "Koliko traje kampanja da pokaze rezultate?",
@@ -116,9 +116,9 @@ const serviceSchema = {
   "@type": "Service",
   name: "YouTube oglasi",
   description:
-    "YouTube oglasavanje i video reklame za brand awareness i direct response kampanje.",
+    "YouTube oglašavanje i video reklame za brand awareness i direct response kampanje.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -152,18 +152,18 @@ export default function YouTubeOglasiPage() {
       <Section background="gray">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
-            YouTube oglasi - video oglasavanje na najvecoj video platformi
+            YouTube oglasi - video oglašavanje na najvecoj video platformi
           </h1>
           <p className="text-lg text-gray-700 mb-8">
-            YouTube je druga najvea pretrazivacka platforma na svetu i mesto gde
-            ljudi provode sate gledajuci sadrzaj. YouTube oglasi omogucavaju da
+            YouTube je druga najvea pretraživaška platforma na svetu i mesto gde
+            ljudi provode sate gledajuci sadržaj. YouTube oglasi omogućavaju da
             dovedete poruku pred precizno targetiranu publiku kroz video format koji
-            je engaging i memorable. Ova usluga je namenjena brendovima koji zele
-            samo YouTube oglasavanje, bez kompletnog Google Ads upravljanja.
+            je engaging i memorable. Ova usluga je namenjena brendovima koji žele
+            samo YouTube oglašavanje, bez kompletnog Google Ads upravljanja.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              Kontaktirajte me za vise informacija
+              Kontaktirajte me za više informacija
             </Button>
             <Button href="/usluge/google-ads-upravljanje" variant="primary">
               Google Ads upravljanje
@@ -175,7 +175,7 @@ export default function YouTubeOglasiPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Zasto kompanije okleva sa YouTube oglasavanjem
+            Zašto kompanije okleva sa YouTube oglašavanjem
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -228,7 +228,7 @@ export default function YouTubeOglasiPage() {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Za koga je YouTube oglasavanje usluga
+            Za koga je YouTube oglašavanje usluga
           </h2>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -252,7 +252,7 @@ export default function YouTubeOglasiPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -270,15 +270,15 @@ export default function YouTubeOglasiPage() {
       <Section background="gray">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Zainteresovani za YouTube oglasavanje?
+            Zainteresovani za YouTube oglašavanje
           </h2>
           <p className="text-gray-600 mb-8">
-            Kontaktirajte me za vise informacija o YouTube oglasavanju i da vidimo
-            da li je pravi kanal za vas biznis.
+            Kontaktirajte me za više informacija o YouTube oglašavanju i da vidimo
+            da li je pravi kanal za vaš biznis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Kontaktirajte me za vise informacija
+              Kontaktirajte me za više informacija
             </Button>
             <Button href="/case-studies" variant="primary">
               Pogledajte rezultate

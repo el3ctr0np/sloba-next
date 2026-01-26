@@ -15,22 +15,22 @@ const reasons = [
   {
     title: "Kupovina nije linearna",
     description:
-      "Vecina kupaca istrazuje vise opcija pre odluke. Bez prisustva u tom procesu gubite priliku."
+      "Većina kupaca istražuje više opcija pre odluke. Bez prisustva u tom procesu gubite priliku."
   },
   {
-    title: "Paznja je kratka",
+    title: "Pažnja je kratka",
     description:
       "Korisnik je bio zainteresovan, ali se nesto desilo i zaboravio je ponudu."
   },
   {
     title: "Trust treba vremena",
     description:
-      "Za vece kupovine ili B2B usluge potreban je veci broj touchpoints."
+      "Za veće kupovine ili B2B usluge potreban je veći broj touchpoints."
   },
   {
-    title: "Bez remarketinga placate dva puta",
+    title: "Bez remarketinga plaćate dva puta",
     description:
-      "Doveli ste posetioca, a ako se ne vrati, taj trosak je izgubljen."
+      "Doveli ste posetioca, a ako se ne vrati, taj trošak je izgubljen."
   }
 ];
 
@@ -38,7 +38,7 @@ const remarketingTypes = [
   {
     title: "Display remarketing (Google Ads)",
     description:
-      "Baneri koji prate posetioce na sajtovima u Google Display mrezi."
+      "Baneri koji prate posetioce na sajtovima u Google Display mreži."
   },
   {
     title: "Video remarketing (YouTube)",
@@ -48,10 +48,10 @@ const remarketingTypes = [
   {
     title: "Search remarketing (RLSA)",
     description:
-      "Prilagodjeni Search oglasi za warm audience uz agresivnije bidovanje."
+      "Prilagođeni Search oglasi za warm audience uz agresivnije bidovanje."
   },
   {
-    title: "Dinamicki remarketing",
+    title: "Dinamički remarketing",
     description:
       "Personalizovani oglasi sa proizvodima koje je korisnik gledao."
   },
@@ -81,7 +81,7 @@ const inclusions = [
     items: [
       "Kreiranje kampanja po kanalima",
       "Google, Meta i Pinterest gde ima smisla",
-      "Prilagodjeni formati oglasa"
+      "Prilagođeni formati oglasa"
     ]
   },
   {
@@ -103,38 +103,38 @@ const inclusions = [
 ];
 
 const idealClients = [
-  "Imate postojeci traffic na sajtu (minimum 1,000 posetilaca mesecno)",
-  "Sales cycle nije instant, korisnici istrazuju pre kupovine",
-  "Zelite da maksimizujete ROI iz postojecih kampanja",
-  "Imate budzet za remarketing od minimum EUR 300/mesecno"
+  "Imate postojeći traffic na sajtu (minimum 1,000 posetilaca mesečno)",
+  "Sales cycle nije instant, korisnici istražuju pre kupovine",
+  "Zelite da maksimizujete ROI iz postojećih kampanja",
+  "Imate budžet za remarketing od minimum EUR 300/mesečno"
 ];
 
 const bestFor = [
-  "eCommerce (dinamicki remarketing)",
-  "B2B sa duzim sales cycle-om",
-  "Vece kupovine gde ljudi istrazuju"
+  "eCommerce (dinamički remarketing)",
+  "B2B sa dužim sales cycle-om",
+  "Veće kupovine gde ljudi istražuju"
 ];
 
 const faqs = [
   {
-    question: "Da li je remarketing previse napadan?",
+    question: "Da li je remarketing previše napadan?",
     answer:
-      "Moze biti ako se radi pogresno. Uz frequency capping i relevantne poruke, remarketing je koristan i nenametljiv."
+      "Može biti ako se radi pogrešno. Uz frequency capping i relevantne poruke, remarketing je koristan i nenametljiv."
   },
   {
     question: "Koliko dugo targetirati ljude?",
     answer:
-      "Zavisi od sales cycle-a. eCommerce: 7-30 dana. B2B sa duzim ciklusom: do 90 dana."
+      "Zavisi od sales cycle-a. eCommerce: 7-30 dana. B2B sa dužim ciklusom: do 90 dana."
   },
   {
-    question: "Mogu li raditi remarketing sa malim budzetom?",
+    question: "Mogu li raditi remarketing sa malim budžetom?",
     answer:
-      "Da. Remarketing je odlican za manje budzete jer targetira warm audience sa visokim potencijalom konverzije."
+      "Da. Remarketing je odličan za manje budžete jer targetira warm audience sa visokim potencijalom konverzije."
   },
   {
     question: "Da li remarketing radi za B2B?",
     answer:
-      "Da. B2B sales cycle je duzi, pa remarketing pomaze da ostanete top of mind."
+      "Da. B2B sales cycle je duži, pa remarketing pomaže da ostanete top of mind."
   },
   {
     question: "Sta su view-through conversions?",
@@ -155,7 +155,7 @@ const serviceSchema = {
   description:
     "Profesionalne remarketing kampanje koje vracaju posetioce kroz Google, Meta i Pinterest kanale.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -193,14 +193,14 @@ export default function RemarketingPage() {
           </h1>
           <p className="text-lg text-gray-700 mb-8">
             Samo 2-3% posetilaca konvertuje pri prvoj poseti. Bez remarketing
-            kampanja, ostalih 97% odlazi i mozda se nikad ne vrati. Remarketing
-            vam omogucava da pratite posetioce na sajtovima, YouTube-u, u Gmail-u,
-            na Facebooku, Instagramu i Pinterest-u i da ih podsetite zasto su dosli
-            na vas sajt.
+            kampanja, ostalih 97% odlazi i možda se nikad ne vrati. Remarketing
+            vam omogućava da pratite posetioce na sajtovima, YouTube-u, u Gmail-u,
+            na Facebooku, Instagramu i Pinterest-u i da ih podsetite zašto su dosli
+            na vaš sajt.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/google-ads-upravljanje" variant="primary">
               Google Ads upravljanje
@@ -212,7 +212,7 @@ export default function RemarketingPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Zasto gubite potencijalne kupce
+            Zašto gubite potencijalne kupce
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -248,7 +248,7 @@ export default function RemarketingPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Sta je ukljuceno u remarketing uslugu
+            Sta je uključeno u remarketing uslugu
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -290,7 +290,7 @@ export default function RemarketingPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -311,12 +311,12 @@ export default function RemarketingPage() {
             Spremni da vratite izgubljene posetioce?
           </h2>
           <p className="text-gray-600 mb-8">
-            Zakazite konsultaciju i razgovarajmo kako remarketing moze povecati
-            konverzije iz vaseg postojeceg traffic-a.
+            Zakažite konsultaciju i razgovarajmo kako remarketing može povećati
+            konverzije iz vašeg postojećeg traffic-a.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/case-studies" variant="primary">
               Pogledajte rezultate
@@ -327,8 +327,8 @@ export default function RemarketingPage() {
               YouTube oglasi
             </Link>{" "}
             -{" "}
-            <Link href="/usluge/meta-oglasavanje" className="underline">
-              Meta oglasavanje
+            <Link href="/usluge/meta-oglašavanje" className="underline">
+              Meta oglašavanje
             </Link>{" "}
             -{" "}
             <Link href="/usluge/google-shopping" className="underline">

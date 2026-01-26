@@ -4,9 +4,9 @@ import { Button, Card, Section } from "@/components/ui";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google oglasavanje Srbija | Upravljanje nalogom - Slobodan Jelisavac",
+    title: "Google oglašavanje Srbija | Upravljanje nalogom - Slobodan Jelisavac",
     description:
-      "Profesionalno upravljanje Google oglasavanjem za eCommerce i B2B. 10+ godina iskustva, UK Search Awards. Besplatna konsultacija."
+      "Profesionalno upravljanje Google oglašavanjem za eCommerce i B2B. 10+ godina iskustva, UK Search Awards. Besplatna konsultacija."
   };
 }
 
@@ -14,7 +14,7 @@ const problems = [
   {
     title: "Bacanje novca bez rezultata",
     description:
-      "Kampanje trose budzet, ali konverzije izostaju ili su preskupe."
+      "Kampanje troše budžet, ali konverzije izostaju ili su preskupe."
   },
   {
     title: "Nedostatak vremena i ekspertize",
@@ -24,7 +24,7 @@ const problems = [
   {
     title: "Prethodna losa iskustva",
     description:
-      "Agencije su samo podesavale kampanje bez stvarne strategije."
+      "Agencije su samo podešavale kampanje bez stvarne strategije."
   },
   {
     title: "Rast je stao",
@@ -35,14 +35,14 @@ const problems = [
 
 const solutions = [
   {
-    title: "Dubinska analiza pre pocetka",
+    title: "Dubinska analiza pre početka",
     description:
-      "Razumevanje biznis modela, marzi, idealnih kupaca i konkurencije."
+      "Razumevanje biznis modela, marži, idealnih kupaca i konkurencije."
   },
   {
     title: "Customizovana struktura kampanja",
     description:
-      "Struktura prilagodjena vasim ciljevima, bilo da je fokus na ROAS ili lead quality."
+      "Struktura prilagođena vašim ciljevima, bilo da je fokus na ROAS ili lead quality."
   },
   {
     title: "Proaktivna optimizacija",
@@ -61,9 +61,9 @@ const inclusions = [
     title: "Strategija i planiranje",
     items: [
       "Definisanje ciljeva i KPI-a",
-      "Istrazivanje kljucnih reci i konkurencije",
+      "Istraživanje ključnih reči i konkurencije",
       "Kreiranje strukture kampanja",
-      "Planiranje budzeta po kampanjama"
+      "Planiranje budžeta po kampanjama"
     ]
   },
   {
@@ -71,7 +71,7 @@ const inclusions = [
     items: [
       "Kreiranje ili restruktuiranje kampanja",
       "Pisanje oglasa (responsive search i display ads)",
-      "Podesavanje bid strategija",
+      "Podešavanje bid strategija",
       "Audience targeting i remarketing liste"
     ]
   },
@@ -81,7 +81,7 @@ const inclusions = [
       "Dnevno pracenje performansi",
       "A/B testiranje oglasa",
       "Bid adjustments",
-      "Negativne kljucne reci",
+      "Negativne ključne reči",
       "Placement exclusions"
     ]
   },
@@ -89,15 +89,15 @@ const inclusions = [
     title: "Tracking i analitika",
     items: [
       "Google Analytics 4 integracija",
-      "Conversion tracking podesavanje",
+      "Conversion tracking podešavanje",
       "Custom reporting dashboards",
       "Attribution modeling"
     ]
   },
   {
-    title: "Mesecni reporting",
+    title: "Mesečni reporting",
     items: [
-      "Pregled kljucnih metrika",
+      "Pregled ključnih metrika",
       "Analiza trendova",
       "Sprovedene akcije",
       "Preporuke za sledeci period"
@@ -109,37 +109,37 @@ const campaignTypes = [
   {
     title: "Search kampanje",
     description:
-      "Direktno targetiranje korisnika koji aktivno traze vase proizvode ili usluge.",
+      "Direktno targetiranje korisnika koji aktivno traže vaše proizvode ili usluge.",
     href: "/usluge/search-kampanje",
-    cta: "Vise o Search kampanjama"
+    cta: "Više o Search kampanjama"
   },
   {
     title: "Shopping kampanje",
     description:
       "Optimizacija feed-a, struktura kampanja i bid strategije za maksimalan ROAS.",
     href: "/usluge/google-shopping",
-    cta: "Vise o Shopping kampanjama"
+    cta: "Više o Shopping kampanjama"
   },
   {
     title: "Performance Max",
     description:
-      "Strateski PMax uz kontrolu, jasne signale i transparentne rezultate.",
+      "Strateški PMax uz kontrolu, jasne signale i transparentne rezultate.",
     href: "/usluge/performance-max",
-    cta: "Vise o Performance Max"
+    cta: "Više o Performance Max"
   },
   {
     title: "Display i remarketing",
     description:
       "Precizno targetiranje za povratak posetilaca i rast brand awareness-a.",
     href: "/usluge/remarketing",
-    cta: "Vise o remarketingu"
+    cta: "Više o remarketingu"
   },
   {
     title: "YouTube oglasi",
     description:
-      "Video oglasavanje za awareness i direct response kroz skippable i bumper formate.",
+      "Video oglašavanje za awareness i direct response kroz skippable i bumper formate.",
     href: "/usluge/youtube-oglasi",
-    cta: "Vise o YouTube oglasima"
+    cta: "Više o YouTube oglasima"
   }
 ];
 
@@ -152,7 +152,7 @@ const processSteps = [
   {
     title: "Audit i strategija",
     description:
-      "Analiza postojeceg naloga i izrada strategije sa projekcijama."
+      "Analiza postojećeg naloga i izrada strategije sa projekcijama."
   },
   {
     title: "Onboarding",
@@ -167,21 +167,21 @@ const processSteps = [
   {
     title: "Optimizacija i skaliranje",
     description:
-      "Kontinuirano poboljsanje performansi i skaliranje pobednickih kampanja."
+      "Kontinuirano poboljšanje performansi i skaliranje pobednickih kampanja."
   }
 ];
 
 const results = [
-  { value: "180%+", label: "prosecno poboljsanje ROAS-a u prvih 90 dana" },
+  { value: "180%+", label: "prosečno poboljšanje ROAS-a u prvih 90 dana" },
   { value: "-35%", label: "smanjenje CPA kroz kontinuiranu optimizaciju" },
-  { value: "EUR 2M+", label: "upravljanog ad spend-a godisnje" }
+  { value: "EUR 2M+", label: "upravljanog ad spend-a godišnje" }
 ];
 
 const faqs = [
   {
     question: "Koliko vremena treba da se vide rezultati?",
     answer:
-      "Prve optimizacije rade se odmah, a znacajna poboljsanja dolaze nakon 4-6 nedelja. Za punu optimizaciju racunajte 2-3 meseca."
+      "Prve optimizacije rade se odmah, a znacajna poboljšanja dolaze nakon 4-6 nedelja. Za punu optimizaciju racunajte 2-3 meseca."
   },
   {
     question: "Da li morate imati pristup mom Google Ads nalogu?",
@@ -189,35 +189,35 @@ const faqs = [
       "Da, potreban je admin pristup kako bih mogao da sprovodim sve neophodne izmene."
   },
   {
-    question: "Sta ako vec imam kampanje koje rade?",
+    question: "Sta ako ve? imam kampanje koje rade?",
     answer:
-      "Pocinjem auditom postojeceg stanja i identifikujem prilike za poboljsanje pre vecih promena."
+      "Počinjem auditom postojećeg stanja i identifikujem prilike za poboljšanje pre većih promena."
   },
   {
-    question: "Da li radite i sa malim budzetima?",
+    question: "Da li radite i sa malim budžetima?",
     answer:
-      "Za budzete ispod EUR 800/mesecno preporucujem Starter paket ili 1-na-1 konsultacije."
+      "Za budžete ispod EUR 800/mesečno preporučujem Starter paket ili 1-na-1 konsultacije."
   },
   {
-    question: "Koliko cesto cemo komunicirati?",
+    question: "Koliko Često cemo komunicirati?",
     answer:
-      "Minimum jedan mesecni call plus pisani report. Za hitna pitanja dostupan sam putem Slack-a ili email-a."
+      "Minimum jedan mesečni call plus pisani report. Za hitna pitanja dostupan sam putem Slack-a ili email-a."
   },
   {
-    question: "Koja je minimalna duzina saradnje?",
+    question: "Koja je minimalna dužina saradnje?",
     answer:
-      "Preporucujem minimum 3 meseca za testiranje i optimizaciju, bez dugorocnih ugovora."
+      "Preporucujem minimum 3 meseca za testiranje i optimizaciju, bez dugoročnih ugovora."
   }
 ];
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Google oglasavanje - upravljanje nalogom",
+  name: "Google oglašavanje - upravljanje nalogom",
   description:
-    "Profesionalno upravljanje Google oglasavanjem za eCommerce i B2B kompanije.",
+    "Profesionalno upravljanje Google oglašavanjem za eCommerce i B2B kompanije.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -251,18 +251,18 @@ export default function GoogleAdsUpravljanjePage() {
       <Section background="gray">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
-            Google oglasavanje - kampanje koje donose rezultate
+            Google oglašavanje - kampanje koje donose rezultate
           </h1>
           <p className="text-lg text-gray-700 mb-8">
-            Potrebno vam je profesionalno Google oglasavanje koje donosi rezultate?
+            Potrebno vam je profesionalno Google oglašavanje koje donosi rezultate?
             Sa preko 10 godina iskustva u vodjenju kampanja za eCommerce, B2B i SaaS
-            kompanije sirom Evrope, preuzimam kompletan menadzment vaseg Google Ads
+            kompanije širom Evrope, preuzimam kompletan menadžment vašeg Google Ads
             naloga - od strategije do svakodnevne optimizacije. Fokus je na podacima,
-            transparentnosti i kontinuiranom poboljsanju performansi.
+            transparentnosti i kontinuiranom poboljšanju performansi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/case-studies" variant="primary">
               Pogledajte rezultate
@@ -277,7 +277,7 @@ export default function GoogleAdsUpravljanjePage() {
             Da li prepoznajete ove izazove?
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Vecina kompanija koje dolaze do mene ima slicne probleme sa kampanjama.
+            Većina kompanija koje dolaze do mene ima slicne probleme sa kampanjama.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -298,7 +298,7 @@ export default function GoogleAdsUpravljanjePage() {
             Sta dobijate sa mojim upravljanjem
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Strategijski pristup, a ne samo podesavanja u nalogu.
+            Strategijski pristup, a ne samo podešavanja u nalogu.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -386,31 +386,31 @@ export default function GoogleAdsUpravljanjePage() {
         <div className="grid lg:grid-cols-2 gap-6">
           <Card className="h-full">
             <h3 className="text-xl font-heading font-bold mb-3">
-              Lokalne firme i manja preduzeca
+              Lokalne firme i manja predužeca
             </h3>
             <p className="text-gray-600 mb-6">
-              Za biznise sa budzetom do EUR 700 mesecno nudim prilagodjenu uslugu
-              i jasnu strukturu za pocetak.
+              Za biznise sa budžetom do EUR 700 mesečno nudim prilagođenu uslugu
+              i jasnu strukturu za početak.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button href="/usluge/starter-paket" variant="secondary">
                 Starter paket
               </Button>
               <Button href="/usluge/konsultacije" variant="primary">
-                Zakazite konsultaciju
+                Zakažite konsultaciju
               </Button>
             </div>
           </Card>
           <Card className="h-full">
             <h3 className="text-xl font-heading font-bold mb-3">
-              Standardna usluga (EUR 800+/mesecno)
+              Standardna usluga (EUR 800+/mesečno)
             </h3>
             <p className="text-gray-600 mb-4">
-              Idealno za kompanije koje zele dugorocno, ozbiljno upravljanje.
+              Idealno za kompanije koje žele dugoročno, ozbiljno upravljanje.
             </p>
             <ul className="space-y-2 text-gray-600">
-              <li>Minimum EUR 800-900 mesecnog ad spend-a</li>
-              <li>Dugorocna saradnja i stabilan rast</li>
+              <li>Minimum EUR 800-900 mesečnog ad spend-a</li>
+              <li>Dugoročna saradnja i stabilan rast</li>
               <li>Profesionalan pristup kanalu</li>
               <li>Ozbiljan partner za skaliranje</li>
               <li>Proizvod/usluga sa potvrdjenim trzisnim fitom</li>
@@ -430,7 +430,7 @@ export default function GoogleAdsUpravljanjePage() {
                 </p>
               </div>
               <Button href="/usluge/performance-marketing" variant="secondary">
-                Saznajte vise
+                Saznajte više
               </Button>
             </div>
           </Card>
@@ -463,7 +463,7 @@ export default function GoogleAdsUpravljanjePage() {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -481,27 +481,27 @@ export default function GoogleAdsUpravljanjePage() {
       <Section>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Spremni da preuzmemo kontrolu nad vasim Google Ads?
+            Spremni da preuzmemo kontrolu nad vašim Google Ads?
           </h2>
           <p className="text-gray-600 mb-8">
-            Zakazite besplatnu 30-minutnu konsultaciju i proverimo da li ima
+            Zakažite besplatnu 30-minutnu konsultaciju i proverimo da li ima
             smisla da radimo zajedno.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Zakazite besplatnu konsultaciju
+              Zakažite besplatnu konsultaciju
             </Button>
             <Button href="/usluge/google-ads-audit" variant="primary">
-              Zakazite Google Ads audit
+              Zakažite Google Ads audit
             </Button>
           </div>
           <div className="text-sm text-gray-500 mt-6">
             <Link href="/blog/google-ads-cena" className="underline">
-              Koliko kosta Google Ads?
+              Koliko košta Google Ads?
             </Link>{" "}
             -{" "}
-            <Link href="/blog/google-ads-za-pocetnike" className="underline">
-              Google Ads za pocetnike
+            <Link href="/blog/google-ads-za-početnike" className="underline">
+              Google Ads za početnike
             </Link>
           </div>
         </div>

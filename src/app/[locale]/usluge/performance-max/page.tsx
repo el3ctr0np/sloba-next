@@ -7,23 +7,23 @@ export function generateMetadata(): Metadata {
     title:
       "Performance Max kampanje Srbija | PMax specijalist - Slobodan Jelisavac",
     description:
-      "Profesionalno upravljanje Performance Max kampanjama. Za firme koje zele konsolidovano oglasavanje sa jednim budzetom."
+      "Profesionalno upravljanje Performance Max kampanjama. Za firme koje žele konsolidovano oglašavanje sa jednim budžetom."
   };
 }
 
 const reasons = [
-  "Zelite jednu konsolidovanu kampanju umesto vise kompleksnih",
-  "Imate ogranicen budzet i zelite pokrivanje svih kanala",
-  "Nemate vremena za kompleksno upravljanje vise tipova kampanja",
-  "Zelite da neko iskusan vodi kampanju umesto da je sami podesavate",
-  "Vas biznis ne zahteva granularnu kontrolu nad svakim kanalom"
+  "Zelite jednu konsolidovanu kampanju umesto više kompleksnih",
+  "Imate ograničen budžet i zelite pokrivanje svih kanala",
+  "Nemate vremena za kompleksno upravljanje više tipova kampanja",
+  "Zelite da neko iskusan vodi kampanju umesto da je sami podešavate",
+  "Va? biznis ne zahteva granularnu kontrolu nad svakim kanalom"
 ];
 
 const challenges = [
   {
     title: "Black box sindrom",
     description:
-      "Google ne pokazuje gde ide budzet, pa bez pravilnog setup-a nema jasnog uvida."
+      "Google ne pokazuje gde ide budžet, pa bez pravilnog setup-a nema jasnog uvida."
   },
   {
     title: "Kanibalizacija brand pretrage",
@@ -33,12 +33,12 @@ const challenges = [
   {
     title: "Losi asset-i znace los rezultat",
     description:
-      "Automatizacija zavisi od kvaliteta slika, tekstova i videa."
+      "Automatizacija zaviši od kvaliteta slika, tekstova i videa."
   },
   {
-    title: "Pogresni audience signali",
+    title: "Pogrešni audience signali",
     description:
-      "Signali su sugestije, ne targeting. Bez strategije privlacite pogresnu publiku."
+      "Signali su sugestije, ne targeting. Bez strategije privlačite pogrešnu publiku."
   }
 ];
 
@@ -46,7 +46,7 @@ const approach = [
   {
     title: "Transparentnost pre svega",
     description:
-      "Koristim skripte i tehnike za izvore podataka, ukljucujuci search terms i kanal breakdown."
+      "Koristim skripte i tehnike za izvore podataka, uključujući search terms i kanal breakdown."
   },
   {
     title: "Strategijska asset grupa struktura",
@@ -61,7 +61,7 @@ const approach = [
   {
     title: "Search themes za kontrolu",
     description:
-      "Koristim search themes kako bi pretrage bile blize vasim kljucnim fokusima."
+      "Koristim search themes kako bi pretrage bile blize vašim ključnim fokusima."
   },
   {
     title: "Kombinacija sa drugim kampanjama",
@@ -71,35 +71,35 @@ const approach = [
 ];
 
 const idealClients = [
-  "Manja i srednja preduzeca sa budzetom od EUR 800-3,000/mesecno",
-  "Firme koje zele jednostavnost umesto kompleksnosti",
+  "Manja i srednja predužeca sa budžetom od EUR 800-3,000/mesečno",
+  "Firme koje žele jednostavnost umesto kompleksnosti",
   "Biznisi bez internog Google Ads specijaliste",
-  "Kompanije koje zele da testiraju oglasavanje sa jednom kampanjom"
+  "Kompanije koje žele da testiraju oglašavanje sa jednom kampanjom"
 ];
 
 const faqs = [
   {
     question: "Da li PMax zamenjuje sve ostale kampanje?",
     answer:
-      "Ne nuzno. Za neke biznise da, za druge je hibridni pristup bolji. Analiziramo situaciju i predlazemo pravo resenje."
+      "Ne nuzno. Za neke biznise da, za druge je hibridni pristup bolji. Analiziramo situaciju i predlazemo pravo rešenje."
   },
   {
-    question: "Mogu li videti za koje kljucne reci se prikazujem?",
+    question: "Mogu li videti za koje ključne reči se prikazujem?",
     answer:
       "Delimicno. Google prikazuje Search Themes insights, a koristim i skripte za priblizne search terms."
   },
   {
-    question: "Koliko budzeta treba za PMax?",
-    answer: "Minimum preporucujem EUR 800/mesecno samo za PMax kampanju."
+    question: "Koliko budžeta treba za PMax?",
+    answer: "Minimum preporučujem EUR 800/mesečno samo za PMax kampanju."
   },
   {
-    question: "Koliko traje ucenje PMax kampanje?",
+    question: "Koliko traje učenje PMax kampanje?",
     answer: "Realno 4-6 nedelja za stabilizaciju."
   },
   {
     question: "Mogu li koristiti PMax za lead generation?",
     answer:
-      "Da, ali uz oprez. Lead quality moze varirati, zato pratim downstream metrike."
+      "Da, ali uz oprez. Lead quality može varirati, zato pratim downstream metrike."
   }
 ];
 
@@ -108,9 +108,9 @@ const serviceSchema = {
   "@type": "Service",
   name: "Performance Max kampanje",
   description:
-    "Upravljanje Performance Max kampanjama za firme koje zele konsolidovano oglasavanje.",
+    "Upravljanje Performance Max kampanjama za firme koje žele konsolidovano oglašavanje.",
   provider: {
-    "@type": "Organization",
+    "@type": "Organižation",
     name: "Slobodan Jelisavac",
     url: "https://slobodan-jelisavac.com"
   }
@@ -149,8 +149,8 @@ export default function PerformanceMaxPage() {
           <p className="text-lg text-gray-700 mb-8">
             Performance Max kampanje kombinuju Search, Shopping, Display, YouTube,
             Gmail i Discover u jednoj automatizovanoj kampanji. Ova usluga je
-            nastala nakon velikog broja upita od manjih i srednjih preduzeca koja
-            zele konsolidovano oglasavanje u jednoj kampanji i pravilno upravljanje.
+            nastala nakon velikog broja upita od manjih i srednjih predužeca koja
+            žele konsolidovano oglašavanje u jednoj kampanji i pravilno upravljanje.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
@@ -235,12 +235,12 @@ export default function PerformanceMaxPage() {
             </ul>
           </Card>
           <p className="text-sm text-gray-500 mt-6">
-            Napomena: Za budzete preko EUR 5,000/mesecno i potrebu za granularnom
-            kontrolom, preporucujem{" "}
+            Napomena: Za budžete preko EUR 5,000/mesečno i potrebu za granularnom
+            kontrolom, preporučujem{" "}
             <Link href="/usluge/google-ads-upravljanje" className="underline">
               kompletno Google Ads upravljanje
             </Link>{" "}
-            sa kombinacijom vise tipova kampanja.
+            sa kombinacijom više tipova kampanja.
           </p>
         </div>
       </Section>
@@ -248,7 +248,7 @@ export default function PerformanceMaxPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Cesto postavljana pitanja
+            Često postavljana pitanja
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -269,12 +269,12 @@ export default function PerformanceMaxPage() {
             Zainteresovani za Performance Max upravljanje?
           </h2>
           <p className="text-gray-600 mb-8">
-            Kontaktirajte me za vise informacija i da vidimo da li je ovaj pristup
-            pravi izbor za vas biznis.
+            Kontaktirajte me za više informacija i da vidimo da li je ovaj pristup
+            pravi izbor za vaš biznis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Kontaktirajte me za vise informacija
+              Kontaktirajte me za više informacija
             </Button>
             <Button href="/case-studies" variant="primary">
               Pogledajte rezultate
