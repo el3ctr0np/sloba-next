@@ -4,106 +4,98 @@ import { Button, Card, Section } from "@/components/ui";
 
 export function generateMetadata(): Metadata {
   return {
-    title:
-      "Google Ads za B2B kompanije | Lead generation Srbija - Slobodan Jelisavac",
+    title: "Google Ads za SaaS | Customer acquisition - Slobodan Jelisavac",
     description:
-      "Google Ads strategije za B2B lead generation. Kvalitetni leadovi, CRM integracija, nizi CPA. Zakazite konsultaciju."
+      "Google Ads strategije za SaaS kompanije. Trial signups, demo requests, smanjenje CAC. Zakazite konsultaciju."
   };
 }
 
 const challenges = [
   {
-    title: "Duzi sales cycle",
+    title: "Visok CAC",
     description:
-      "Od prvog kontakta do zatvaranja posla mogu proci meseci, pa je tesko meriti uspeh kratkorocno."
+      "Placate previse po trial signup-u, a mali procenat postaje paying."
   },
   {
-    title: "Vise decision maker-a",
+    title: "Optimizacija ka pogresnim metrikama",
     description:
-      "Potrebno je uveriti ceo tim, od end user-a do C-level-a."
+      "Broj signups-a ne znaci kvalitet. Potreban je fokus na trial-to-paid."
   },
   {
-    title: "Kvalitet vs kvantitet leadova",
+    title: "Competitor bidding war",
     description:
-      "Lako je dobiti mnogo leadova, a tesko one koji postaju stvarni kupci."
+      "Svi targetiraju iste high-intent reci, pa CPC postaje astronomskim."
   },
   {
-    title: "Offline konverzije",
+    title: "Attribution kompleksnost",
     description:
-      "Pravi close se desava offline, pa je kljucno povezati Google Ads sa CRM podacima."
-  },
-  {
-    title: "Visi CPC",
-    description:
-      "B2B kljucne reci su skupe jer je vrednost konverzije visoka."
+      "B2B SaaS ima dug sales cycle, pa konverzije dolaze mesecima nakon klika."
   }
 ];
 
 const idealClients = [
-  "Imate definisan sales proces i koristite CRM",
-  "Fokusirani ste na lead generation (demo, kontakt forme, pozivi)",
-  "Zelite da pratite leadove do closed deal-a",
-  "Budzet za ads je minimum EUR 1,500/mesecno",
-  "Prosecna vrednost deal-a je EUR 1,000+"
+  "Imate product-market fit (ljudi placaju i ostaju)",
+  "MRR minimum EUR 10k+ ili ARR EUR 120k+",
+  "Mozete pratiti downstream konverzije (trial-to-paid)",
+  "Budzet za paid acquisition minimum EUR 2,000/mesecno"
 ];
 
 const industries = [
-  "SaaS kompanije",
-  "Professional services (consulting, agencies)",
-  "Tech i IT kompanije",
-  "Manufacturing B2B",
-  "Education i training kompanije"
+  "B2B SaaS",
+  "Productivity tools",
+  "Marketing i Sales software",
+  "HR tech",
+  "Project management",
+  "Developer tools"
 ];
 
 const results = [
   {
-    title: "Tech Company (UK)",
+    title: "B2B SaaS (Germany)",
     items: [
-      "180% povecanje qualified leads",
-      "42% smanjenje CPA",
-      "Offline conversion tracking implementacija"
+      "Demo request kampanje",
+      "EUR 85 CPA (industry benchmark EUR 150+)",
+      "35% reduction u CAC nakon 6 meseci"
     ]
   },
   {
-    title: "SaaS Company (Germany)",
-    items: ["Demo request kampanje", "EUR 85 CPA (industry average EUR 150+)"]
+    title: "HR Tech Startup",
+    items: [
+      "Sa EUR 200 CAC na EUR 95 CAC",
+      "180% povecanje qualified demo zahteva"
+    ]
   }
 ];
 
 const faqs = [
   {
-    question: "Koji CRM koristite za integraciju?",
+    question: "Kada je pravo vreme za SaaS da krene sa Google Ads?",
     answer:
-      "Radim sa HubSpot, Salesforce, Pipedrive i Zoho sistemima. Bitno je da mozete pratiti lead stages."
+      "Kada imate product-market fit i mozete trackati full funnel. Retention preko 80% nakon 3 meseca je dobar signal."
   },
   {
-    question: "Koliko traje da se vide rezultati?",
+    question: "Koliko traje da se vidi ROI?",
     answer:
-      "Prvi leadovi u prve 2 nedelje, a optimizacija ka kvalitetu traje 2-3 meseca uz pracenje full funnel-a."
+      "High-intent search daje prve rezultate u 2-4 nedelje, dok full CAC optimizacija traje 2-3 meseca."
   },
   {
-    question: "Da li je Google Ads bolji od LinkedIn za B2B?",
+    question: "Da li radite i sa freemium modelima?",
     answer:
-      "Zavisi. Google hvata intent, LinkedIn hvata profile. Najbolje rezultate daje kombinacija."
+      "Da, ali fokus je na activated users i eventual conversion, ne samo na signups."
   },
   {
-    question: "Kako znamo da li je lead kvalitetan?",
+    question: "Kako se nosite sa visokim CPC-om?",
     answer:
-      "Definisemo MQL i SQL kriterijume i postavljamo tracking za downstream metrike."
-  },
-  {
-    question: "Sta ako nemamo puno search volume-a?",
-    answer:
-      "Za niche B2B kombinujemo exact match sa sirim intent kampanjama i remarketingom."
+      "Kombinujem quality score optimizaciju, long-tail keywords, competitor targeting i remarketing za nizi blended CAC."
   }
 ];
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Google Ads za B2B kompanije",
+  name: "Google Ads za SaaS",
   description:
-    "Google Ads strategije za B2B lead generation sa fokusom na kvalitet leadova i CRM integraciju.",
+    "Google Ads strategije za SaaS kompanije fokusirane na trial-to-paid i smanjenje CAC-a.",
   provider: {
     "@type": "Organization",
     name: "Slobodan Jelisavac",
@@ -124,7 +116,7 @@ const faqSchema = {
   }))
 };
 
-export default function GoogleAdsZaB2BPage() {
+export default function GoogleAdsZaSaasPage() {
   return (
     <>
       <script
@@ -139,20 +131,20 @@ export default function GoogleAdsZaB2BPage() {
       <Section background="gray">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
-            Google Ads za B2B - kvalitetni leadovi, ne samo klikovi
+            Google Ads za SaaS - smanjite CAC i skalirajte acquisition
           </h1>
           <p className="text-lg text-gray-700 mb-8">
-            Google Ads za B2B zahteva drugaciji pristup od eCommerce oglasavanja.
-            Cilj je generisanje kvalitetnih leadova koji prolaze kroz sales proces,
-            a ne samo broj prijava. Pomazem da dodjete do decision maker-a koji su
-            spremni za razgovor i da merite uspeh prema kvalitetu leadova.
+            Google Ads za SaaS kompanije zahteva pristup koji razume SaaS economics.
+            Cilj nije samo dovesti korisnike, vec dovesti one koji postaju paying
+            customers sa visokim LTV-om. Fokus je na metrikama koje zaista matter:
+            trial-to-paid conversion, CAC payback i customer quality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
               Zakazite besplatnu konsultaciju
             </Button>
-            <Button href="/usluge/search-kampanje" variant="primary">
-              Search kampanje
+            <Button href="/usluge/google-ads-za-b2b" variant="primary">
+              Google Ads za B2B
             </Button>
           </div>
         </div>
@@ -161,7 +153,7 @@ export default function GoogleAdsZaB2BPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Izazovi B2B oglasavanja
+            SaaS acquisition izazovi
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -179,7 +171,7 @@ export default function GoogleAdsZaB2BPage() {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Za koga je B2B Google Ads usluga
+            Za koga je SaaS Google Ads usluga
           </h2>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -192,6 +184,10 @@ export default function GoogleAdsZaB2BPage() {
             <div className="text-sm text-gray-500 mt-6">
               Posebno dobro radim sa: {industries.join(", ")}.
             </div>
+            <div className="text-sm text-gray-500 mt-2">
+              Napomena: Za very early stage startup-e koji jos testiraju PMF,
+              Google Ads mozda nije pravi kanal.
+            </div>
           </Card>
         </div>
       </Section>
@@ -199,7 +195,7 @@ export default function GoogleAdsZaB2BPage() {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            B2B kampanje rezultati
+            SaaS kampanje rezultati
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -218,7 +214,7 @@ export default function GoogleAdsZaB2BPage() {
         </div>
         <div className="text-center mt-8">
           <Button href="/case-studies" variant="primary">
-            Vise B2B case studies
+            Svi SaaS case studies
           </Button>
         </div>
       </Section>
@@ -244,18 +240,18 @@ export default function GoogleAdsZaB2BPage() {
       <Section>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Spremni da generisete kvalitetnije B2B leadove?
+            Spremni da optimizujete SaaS acquisition?
           </h2>
           <p className="text-gray-600 mb-8">
             Zakazite besplatnu konsultaciju i razgovarajmo kako Google Ads moze
-            doprineti vasem B2B pipeline-u.
+            smanjiti CAC i skalirati growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
               Zakazite besplatnu konsultaciju
             </Button>
-            <Button href="/usluge/google-ads-upravljanje" variant="primary">
-              Google Ads upravljanje
+            <Button href="/usluge/search-kampanje" variant="primary">
+              Search kampanje
             </Button>
           </div>
           <div className="text-sm text-gray-500 mt-6">
@@ -263,12 +259,12 @@ export default function GoogleAdsZaB2BPage() {
               Remarketing
             </Link>{" "}
             -{" "}
-            <Link href="/usluge/google-ads-za-saas" className="underline">
-              Google Ads za SaaS
+            <Link href="/usluge/google-ads-za-b2b" className="underline">
+              Google Ads za B2B
             </Link>{" "}
             -{" "}
-            <Link href="/usluge/search-kampanje" className="underline">
-              Search kampanje
+            <Link href="/case-studies" className="underline">
+              Rezultati
             </Link>
           </div>
         </div>
