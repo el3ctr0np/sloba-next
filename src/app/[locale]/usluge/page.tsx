@@ -1,36 +1,367 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { Section, Card } from "@/components/ui";
+import { Section, Card, Button } from "@/components/ui";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Usluge | Slobodan Jelisavac",
+    title: "Google Ads i Performance Marketing usluge | Slobodan Jelisavac",
     description:
-      "Specijalizovane strategije za Google Ads, SEO i performance marketing."
+      "Profesionalne Google Ads usluge za eCommerce, B2B i SaaS kompanije. 10+ godina iskustva, UK Search Awards. Zakazite besplatnu konsultaciju."
   };
 }
 
-const services = [
-  { title: "Google Ads Upravljanje", href: "/usluge/google-ads-upravljanje", desc: "Kompletno upravljanje kampanjama" },
-  { title: "Performance Max", href: "/usluge/performance-max", desc: "AI-powered kampanje" },
-  { title: "Google Shopping", href: "/usluge/google-shopping", desc: "eCommerce optimizacija" },
-  { title: "SEO", href: "/usluge/seo", desc: "Organski rast" },
-  { title: "Meta Oglašavanje", href: "/usluge/meta-oglasavanje", desc: "Facebook & Instagram" },
-  { title: "YouTube Oglasi", href: "/usluge/youtube-oglasi", desc: "Video marketing" },
+const coreServices = [
+  {
+    title: "Google Ads upravljanje",
+    href: "/usluge/google-ads-upravljanje",
+    desc: "Strategija, setup i svakodnevna optimizacija naloga sa fokusom na rast."
+  },
+  {
+    title: "Google Ads audit",
+    href: "/usluge/google-ads-audit",
+    desc: "Detaljna analiza naloga sa jasnim preporukama za poboljsanje."
+  },
+  {
+    title: "Google Shopping kampanje",
+    href: "/usluge/google-shopping",
+    desc: "Feed optimizacija, struktura kampanja i bid strategije za bolji ROAS."
+  },
+  {
+    title: "Performance Max",
+    href: "/usluge/performance-max",
+    desc: "Kontrola asset grupa, audience signala i transparentno pracenje performansi."
+  },
+  {
+    title: "Search kampanje",
+    href: "/usluge/search-kampanje",
+    desc: "Keyword strategija, ad copy i landing page optimizacija za visoku nameru."
+  },
+  {
+    title: "Remarketing",
+    href: "/usluge/remarketing",
+    desc: "Povratak posetilaca kroz Display, YouTube i Search remarketing."
+  },
+  {
+    title: "YouTube oglasi",
+    href: "/usluge/youtube-oglasi",
+    desc: "Video kampanje za awareness i direct response ciljeve."
+  }
+];
+
+const industryServices = [
+  {
+    title: "Google Ads za B2B",
+    href: "/usluge/google-ads-za-b2b",
+    desc: "Lead generation strategije, account-based targeting i CRM integracije."
+  },
+  {
+    title: "Google Ads za eCommerce",
+    href: "/usluge/google-ads-za-ecommerce",
+    desc: "Shopping, Performance Max i full-funnel pristup za veci prihod."
+  },
+  {
+    title: "Google Ads za SaaS",
+    href: "/usluge/google-ads-za-saas",
+    desc: "Akvizicija trial korisnika i demo zahteva uz kontrolu CAC-a."
+  }
+];
+
+const consultationOffers = [
+  {
+    title: "1-na-1 konsultacije (EUR 80/sat)",
+    href: "/usluge/konsultacije",
+    desc: "Direktna konsultacija za strategiju, konkretne izazove ili second opinion."
+  },
+  {
+    title: "Starter paket za pocetnike (od EUR 300)",
+    href: "/usluge/starter-paket",
+    desc: "Setup naloga, osnovna struktura i edukacija za samostalno vodjenje."
+  },
+  {
+    title: "Usluge za lokalne firme",
+    href: "/kontakt",
+    desc: "Prilagodjen pristup za manje budzete sa fokusom na merljiv ROI."
+  }
+];
+
+const problemPoints = [
+  "Visok CPC bez proporcionalnog broja konverzija",
+  "Kampanje koje trose budzet bez vidljivih rezultata",
+  "Nedostatak uvida u to sta zaista funkcionise",
+  "Performance Max koji trosi na irelevantne plasmane",
+  "Shopping feed bez optimizacije za maksimalni reach"
+];
+
+const stats = [
+  { value: "EUR 2M+", label: "Upravljanog ad spend-a godisnje" },
+  { value: "180%+", label: "Prosecno poboljsanje ROAS-a" },
+  { value: "10+", label: "Godina iskustva" },
+  { value: "UK Search Awards", label: "Dobitnik nagrade" },
+  { value: "50+", label: "Zadovoljnih klijenata" }
+];
+
+const processSteps = [
+  {
+    title: "Besplatna konsultacija",
+    desc: "30-minutni poziv gde razumem ciljeve, trenutno stanje i izazove."
+  },
+  {
+    title: "Strategija i ponuda",
+    desc: "Detaljna strategija i transparentna ponuda zasnovana na analizi."
+  },
+  {
+    title: "Implementacija",
+    desc: "Setup ili preuzimanje naloga, strategija i tracking podesavanje."
+  },
+  {
+    title: "Kontinuirana optimizacija",
+    desc: "Mesecni reporting, A/B testiranje i skaliranje pobednickih kampanja."
+  }
+];
+
+const faqs = [
+  {
+    q: "Koja je minimalna investicija za saradnju?",
+    a: "Radim sa kompanijama koje imaju minimum EUR 800 mesecnog ad spend-a. Za manje budzete preporucujem Starter paket ili 1-na-1 konsultacije."
+  },
+  {
+    q: "Da li radite samo sa kompanijama iz Srbije?",
+    a: "Ne, radim sa klijentima iz cele Evrope, ukljucujuci UK, Nemacku, Hrvatsku i Srbiju."
+  },
+  {
+    q: "Koliko traje minimalna saradnja?",
+    a: "Preporucujem minimum 3 meseca za upravljanje kampanjama. Za audit i konsultacije nema minimalnog perioda."
+  },
+  {
+    q: "Kako izgleda mesecni reporting?",
+    a: "Svakog meseca dobijate izvestaj sa kljucnim metrikama, sprovedenim akcijama i preporukama."
+  },
+  {
+    q: "Da li mogu da vidim primer vaseg rada?",
+    a: "Da, pogledajte case studies sekciju sa konkretnim rezultatima za razlicite industrije."
+  }
 ];
 
 export default function ServicesPage() {
   return (
-    <Section>
-      <h1 className="text-4xl font-heading font-bold mb-4 text-center">Usluge</h1>
-      <p className="text-gray-600 text-center mb-12">Specijalizovane strategije za digitalno oglašavanje</p>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {services.map((s) => (
-          <Link key={s.href} href={s.href}>
-            <Card className="h-full"><h3 className="font-heading font-bold text-xl mb-2">{s.title}</h3><p className="text-gray-600">{s.desc}</p></Card>
-          </Link>
-        ))}
-      </div>
-    </Section>
+    <>
+      <Section background="gray">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+            Google Ads i Performance Marketing usluge
+          </h1>
+          <p className="text-lg text-gray-700 mb-8">
+            Tražite pouzdanog partnera za Google Ads usluge koji donosi merljive
+            rezultate? Sa preko 10 godina iskustva u upravljanju kampanjama za
+            eCommerce, B2B i SaaS kompanije širom Evrope, pomažem brendovima da
+            ostvare rast kroz strateški pristup plaćenom oglašavanju. Kao dobitnik
+            UK Search Awards, prenosim međunarodno iskustvo lokalnim i regionalnim
+            klijentima.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/kontakt" variant="secondary">
+              Zakažite besplatnu konsultaciju
+            </Button>
+            <Button href="/case-studies" variant="primary">
+              Pogledajte rezultate
+            </Button>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Prestanite da bacate novac na oglase koji ne konvertuju
+          </h2>
+          <p className="text-gray-600">
+            Lose strukturirane kampanje, pogresno targetiranje i manjak
+            optimizacije najcesce dovode do slabog povrata investicije.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {problemPoints.map((item) => (
+            <Card key={item} className="h-full">
+              <p className="text-gray-700">{item}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Kompletne Google Ads i Performance Marketing usluge
+          </h2>
+          <p className="text-gray-600">
+            Od strategije do svakodnevne optimizacije, pokrivam sve kljucne delove
+            naloga za stabilan rast.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {coreServices.map((service) => (
+            <Link key={service.href} href={service.href}>
+              <Card className="h-full">
+                <h3 className="font-heading font-bold text-xl mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600">{service.desc}</p>
+                <span className="mt-4 inline-block text-primary font-semibold">
+                  Saznajte vise
+                </span>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-heading font-bold mb-4">Usluge po industriji</h2>
+          <p className="text-gray-600">
+            Strategije prilagodjene kompleksnosti prodajnog procesa i ciljevima
+            vase industrije.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {industryServices.map((service) => (
+            <Link key={service.href} href={service.href}>
+              <Card className="h-full">
+                <h3 className="font-heading font-bold text-xl mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600">{service.desc}</p>
+                <span className="mt-4 inline-block text-primary font-semibold">
+                  Detalji usluge
+                </span>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Performance Marketing - premium usluga
+          </h2>
+          <p className="text-gray-700 mb-6">
+            Za kompanije koje zele kompletan omnichannel pristup (Google Ads + Meta
+            + SEO + CRO), nudim premium paket kroz partnerstvo sa Funky Enterprises
+            timom.
+          </p>
+          <Button href="/usluge/performance-marketing" variant="secondary">
+            Saznajte vise o Performance Marketing paketu
+          </Button>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Konsultacije i edukacija
+          </h2>
+          <p className="text-gray-600">
+            Direktna podrska za timove koji zele jasnu strategiju i brze
+            preporuke.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {consultationOffers.map((offer) => (
+            <Link key={offer.href} href={offer.href}>
+              <Card className="h-full">
+                <h3 className="font-heading font-bold text-xl mb-2">
+                  {offer.title}
+                </h3>
+                <p className="text-gray-600">{offer.desc}</p>
+                <span className="mt-4 inline-block text-primary font-semibold">
+                  Kontaktirajte me
+                </span>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Rezultati koje ostvarujem za klijente
+          </h2>
+          <p className="text-gray-600">
+            Fokus na stabilan rast, transparentno izvestavanje i jasne KPI-jeve.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+          {stats.map((stat) => (
+            <Card key={stat.label} className="text-center h-full">
+              <div className="text-2xl font-heading font-bold mb-2">
+                {stat.value}
+              </div>
+              <p className="text-gray-600 text-sm">{stat.label}</p>
+            </Card>
+          ))}
+        </div>
+        <div className="text-center mt-10">
+          <Button href="/case-studies" variant="primary">
+            Pogledajte case studies
+          </Button>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Jednostavan proces u 4 koraka
+          </h2>
+          <p className="text-gray-600">
+            Jasno definisani koraci za brzu implementaciju i kontinuiranu
+            optimizaciju.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {processSteps.map((step, index) => (
+            <Card key={step.title} className="h-full">
+              <div className="text-primary font-heading font-bold text-xl mb-2">
+                {index + 1}. {step.title}
+              </div>
+              <p className="text-gray-600">{step.desc}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Cesto postavljana pitanja
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {faqs.map((faq) => (
+            <Card key={faq.q} className="h-full">
+              <h3 className="font-heading font-bold text-lg mb-2">{faq.q}</h3>
+              <p className="text-gray-600">{faq.a}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Spremni da poboljsate svoje Google Ads rezultate?
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Zakazite besplatnu 30-minutnu konsultaciju i saznajte kako mogu
+            pomoci vasem biznisu da ostvari bolje rezultate kroz strateski
+            pristup placenom oglasavanju.
+          </p>
+          <Button href="/kontakt" variant="secondary">
+            Zakazite besplatnu konsultaciju
+          </Button>
+        </div>
+      </Section>
+    </>
   );
 }
