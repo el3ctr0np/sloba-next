@@ -1,141 +1,300 @@
 import type { Metadata } from "next";
-import { ServicePageTemplate } from "@/components/templates/ServicePageTemplate";
+import { Link } from "@/i18n/navigation";
+import { Button, Card, Section } from "@/components/ui";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Performance Max Kampanje | Slobodan Jelisavac",
+    title:
+      "Performance Max kampanje Srbija | PMax specijalist - Slobodan Jelisavac",
     description:
-      "AI-powered Performance Max strategije za skaliranje prodaje i leadova."
+      "Profesionalno upravljanje Performance Max kampanjama. Za firme koje zele konsolidovano oglasavanje sa jednim budzetom."
   };
 }
 
-const problems = [
+const reasons = [
+  "Zelite jednu konsolidovanu kampanju umesto vise kompleksnih",
+  "Imate ogranicen budzet i zelite pokrivanje svih kanala",
+  "Nemate vremena za kompleksno upravljanje vise tipova kampanja",
+  "Zelite da neko iskusan vodi kampanju umesto da je sami podesavate",
+  "Vas biznis ne zahteva granularnu kontrolu nad svakim kanalom"
+];
+
+const challenges = [
   {
-    title: "PMax deluje kao crna kutija",
-    description: "Ne znate gde se trosi budzet i zasto."
+    title: "Black box sindrom",
+    description:
+      "Google ne pokazuje gde ide budzet, pa bez pravilnog setup-a nema jasnog uvida."
   },
   {
-    title: "Kanibalizacija Search kampanja",
-    description: "PMax preuzima branded traffic i kvari atribuciju."
+    title: "Kanibalizacija brand pretrage",
+    description:
+      "PMax preuzima konverzije od Search kampanja i pripisuje ih sebi."
   },
   {
-    title: "Losi asset-i i signali",
-    description: "AI je dobar koliko i input koji dobije."
+    title: "Losi asset-i znace los rezultat",
+    description:
+      "Automatizacija zavisi od kvaliteta slika, tekstova i videa."
+  },
+  {
+    title: "Pogresni audience signali",
+    description:
+      "Signali su sugestije, ne targeting. Bez strategije privlacite pogresnu publiku."
   }
 ];
 
-const solutions = [
+const approach = [
   {
-    title: "Strategija pre implementacije",
+    title: "Transparentnost pre svega",
     description:
-      "Definisanje ciljeva, analiza postojecih kampanja i izbor pravog PMax modela."
+      "Koristim skripte i tehnike za izvore podataka, ukljucujuci search terms i kanal breakdown."
   },
   {
-    title: "Asset group arhitektura",
+    title: "Strategijska asset grupa struktura",
     description:
-      "Segmentacija po proizvodima/uslugama, naslovima, opisima i vizualima."
+      "Segmentacija po kategorijama, intentu ili funnel fazama za bolju kontrolu."
   },
   {
-    title: "Audience signals optimizacija",
+    title: "Pravilni audience signali",
     description:
-      "Custom segments, first-party data i competitor targeting."
+      "Signale postavljam kao smernice za automatizaciju, ne kao naslepo targetiranje."
   },
   {
-    title: "Feed optimizacija za eCommerce",
+    title: "Search themes za kontrolu",
     description:
-      "Custom labels, supplemental feeds i priprema feed-a za bolji ucinak."
+      "Koristim search themes kako bi pretrage bile blize vasim kljucnim fokusima."
   },
   {
-    title: "Kontinuirana optimizacija",
+    title: "Kombinacija sa drugim kampanjama",
     description:
-      "Asset performance analiza, search terms insights i budget alokacija."
-  },
-  {
-    title: "AI-first pristup",
-    description:
-      "Gemini za asset kreiranje, napredna analitika i prediktivno bidding."
+      "Kada ima smisla, PMax kombinujem sa Search i Standard Shopping kampanjama."
   }
 ];
 
-const pricing = [
-  {
-    name: "Starter",
-    price: "Na upit",
-    description: "Za manje eCommerce i lead gen naloge.",
-    features: [
-      "PMax setup i inicijalna optimizacija",
-      "Asset i signal strategija",
-      "Mesecni izvestaj"
-    ],
-    ctaText: "Posalji Upit"
-  },
-  {
-    name: "Standard",
-    price: "Na upit",
-    description: "Za rastuce naloge i ozbiljnije ciljeve.",
-    features: [
-      "Napredna segmentacija",
-      "Search terms i placement analiza",
-      "Kontinuirana optimizacija"
-    ],
-    highlight: true,
-    ctaText: "Posalji Upit"
-  },
-  {
-    name: "Premium",
-    price: "Na upit",
-    description: "Za market lidere i vecu kompleksnost.",
-    features: [
-      "AI-first optimizacije",
-      "First-party data integracija",
-      "Prioritetna podrska"
-    ],
-    ctaText: "Posalji Upit"
-  }
+const idealClients = [
+  "Manja i srednja preduzeca sa budzetom od EUR 800-3,000/mesecno",
+  "Firme koje zele jednostavnost umesto kompleksnosti",
+  "Biznisi bez internog Google Ads specijaliste",
+  "Kompanije koje zele da testiraju oglasavanje sa jednom kampanjom"
 ];
 
 const faqs = [
   {
-    question: "Da li PMax zamenjuje sve druge kampanje?",
+    question: "Da li PMax zamenjuje sve ostale kampanje?",
     answer:
-      "Ne nuzno. Cesto koristim hibridni pristup - PMax za skaliranje, Search za kontrolu i Shopping za specificne kategorije."
+      "Ne nuzno. Za neke biznise da, za druge je hibridni pristup bolji. Analiziramo situaciju i predlazemo pravo resenje."
   },
   {
-    question: "Kako spreciti kanibalizaciju branded traffica?",
+    question: "Mogu li videti za koje kljucne reci se prikazujem?",
     answer:
-      "Koristim brand exclusion liste, negativne kljucne reci na account nivou i pravilnu strukturu kampanja."
+      "Delimicno. Google prikazuje Search Themes insights, a koristim i skripte za priblizne search terms."
   },
   {
-    question: "Koliko vremena treba PMax da nauci?",
-    answer:
-      "Learning period je tipicno 2-4 nedelje. U tom periodu ne pravim velike promene."
+    question: "Koliko budzeta treba za PMax?",
+    answer: "Minimum preporucujem EUR 800/mesecno samo za PMax kampanju."
   },
   {
-    question: "Mogu li da vidim gde se prikazuju oglasi?",
-    answer:
-      "Delimicno. Google daje Insights, a ja koristim dodatne skripte za dublje uvide."
+    question: "Koliko traje ucenje PMax kampanje?",
+    answer: "Realno 4-6 nedelja za stabilizaciju."
   },
   {
-    question: "Da li PMax radi za Lead Generation?",
+    question: "Mogu li koristiti PMax za lead generation?",
     answer:
-      "Da, ali zahteva kvalitetne conversion signale. Preporucujem offline conversion import za B2B."
-  },
-  {
-    question: "Sta je AI Max i kako se razlikuje?",
-    answer:
-      "AI Max je novija iteracija sa jos vise automatizacije. Pratim beta program i implementiram novosti cim budu dostupne."
+      "Da, ali uz oprez. Lead quality moze varirati, zato pratim downstream metrike."
   }
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Performance Max kampanje",
+  description:
+    "Upravljanje Performance Max kampanjama za firme koje zele konsolidovano oglasavanje.",
+  provider: {
+    "@type": "Organization",
+    name: "Slobodan Jelisavac",
+    url: "https://slobodan-jelisavac.com"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer
+    }
+  }))
+};
+
 export default function PerformanceMaxPage() {
   return (
-    <ServicePageTemplate
-      title="Performance Max Kampanje - AI-Powered Oglasavanje za Maksimalne Rezultate"
-      subtitle="Iskoristite punu snagu Google AI sa strategijskim pristupom Performance Max kampanjama. Od setup-a do skaliranja."
-      problems={problems}
-      solutions={solutions}
-      pricing={pricing}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <Section background="gray">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
+            Performance Max - upravljanje kampanjama za manji i srednji biznis
+          </h1>
+          <p className="text-lg text-gray-700 mb-8">
+            Performance Max kampanje kombinuju Search, Shopping, Display, YouTube,
+            Gmail i Discover u jednoj automatizovanoj kampanji. Ova usluga je
+            nastala nakon velikog broja upita od manjih i srednjih preduzeca koja
+            zele konsolidovano oglasavanje u jednoj kampanji i pravilno upravljanje.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button href="/kontakt" variant="secondary">
+              Kontaktirajte me
+            </Button>
+            <Button href="/usluge/google-ads-upravljanje" variant="primary">
+              Google Ads upravljanje
+            </Button>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Za koga je Performance Max usluga
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Nekad je ovaj pristup pravi, nekad nije. Za mnoge firme jednostavno
+            funkcionise - zato je ova usluga i napravljena.
+          </p>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <Card className="h-full">
+            <ul className="space-y-2 text-gray-600">
+              {reasons.map((reason) => (
+                <li key={reason}>{reason}</li>
+              ))}
+            </ul>
+          </Card>
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Izazovi sa Performance Max kampanjama
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {challenges.map((challenge) => (
+            <Card key={challenge.title} className="h-full">
+              <h3 className="text-lg font-heading font-semibold mb-2">
+                {challenge.title}
+              </h3>
+              <p className="text-gray-600">{challenge.description}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Kako radim sa Performance Max kampanjama
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {approach.map((item) => (
+            <Card key={item.title} className="h-full">
+              <h3 className="text-lg font-heading font-semibold mb-2">
+                {item.title}
+              </h3>
+              <p className="text-gray-600">{item.description}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Idealni klijenti
+          </h2>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <Card className="h-full">
+            <ul className="space-y-2 text-gray-600">
+              {idealClients.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </Card>
+          <p className="text-sm text-gray-500 mt-6">
+            Napomena: Za budzete preko EUR 5,000/mesecno i potrebu za granularnom
+            kontrolom, preporucujem{" "}
+            <Link href="/usluge/google-ads-upravljanje" className="underline">
+              kompletno Google Ads upravljanje
+            </Link>{" "}
+            sa kombinacijom vise tipova kampanja.
+          </p>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Cesto postavljana pitanja
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {faqs.map((faq) => (
+            <Card key={faq.question} className="h-full">
+              <h3 className="text-lg font-heading font-semibold mb-2">
+                {faq.question}
+              </h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Zainteresovani za Performance Max upravljanje?
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Kontaktirajte me za vise informacija i da vidimo da li je ovaj pristup
+            pravi izbor za vas biznis.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/kontakt" variant="secondary">
+              Kontaktirajte me za vise informacija
+            </Button>
+            <Button href="/case-studies" variant="primary">
+              Pogledajte rezultate
+            </Button>
+          </div>
+          <div className="text-sm text-gray-500 mt-6">
+            <Link href="/usluge/google-shopping" className="underline">
+              Google Shopping kampanje
+            </Link>{" "}
+            -{" "}
+            <Link href="/usluge/search-kampanje" className="underline">
+              Search kampanje
+            </Link>{" "}
+            -{" "}
+            <Link href="/blog/performance-max-vodic" className="underline">
+              Performance Max vodic
+            </Link>
+          </div>
+        </div>
+      </Section>
+    </>
   );
 }
