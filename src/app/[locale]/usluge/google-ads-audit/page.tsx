@@ -1,138 +1,382 @@
 import type { Metadata } from "next";
-import { ServicePageTemplate } from "@/components/templates/ServicePageTemplate";
+import { Link } from "@/i18n/navigation";
+import { Button, Card, Section } from "@/components/ui";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Ads Audit | Slobodan Jelisavac",
+    title:
+      "Google Ads audit Srbija | Detaljna analiza kampanja - Slobodan Jelisavac",
     description:
-      "Besplatna analiza Google Ads naloga za kvalifikovane brendove."
+      "Profesionalni Google Ads audit sa konkretnim preporukama. Otkrijte gde gubite novac i kako poboljsati ROAS. Zakazite analizu."
   };
 }
 
 const problems = [
   {
-    title: "Sumnjate da trosite novac uzalud",
+    title: "Ne znate da li kampanje rade kako treba",
     description:
-      "Mnogi nalozi imaju skriveno curenje budzeta koje vlasnici ne vide."
+      "Bez dubinskog razumevanja Google Ads-a tesko je proceniti potencijal za bolje rezultate."
   },
   {
-    title: "Rezultati stagniraju ili opadaju",
+    title: "Izvestaji koje ne razumete",
     description:
-      "Bez redovnog audita, performance polako degradira iz meseca u mesec."
+      "Dobijate metrike, ali nemate jasnu sliku sta to znaci za vas biznis."
   },
   {
-    title: "Nemate uvid sta agencija radi",
+    title: "Troskovi rastu, rezultati stagniraju",
     description:
-      "Second opinion cesto otkrije propuste i prilike za brz napredak."
+      "CPC raste, ROAS pada, a uzrok i resenje nisu jasni."
+  },
+  {
+    title: "Treba vam second opinion",
+    description:
+      "Planirate vecu investiciju i zelite proveru pre skaliranja budzeta."
   }
 ];
 
-const solutions = [
+const auditAreas = [
+  "Analiza strukture naloga: kampanje, ad grupe, kljucne reci, match types, negativne reci",
+  "Analiza oglasa: ad copy, extensions, landing page alignment",
+  "Bid strategije i budzet: uskladjenost sa ciljevima, budget pacing",
+  "Conversion tracking: prave konverzije, duplikati, propusti",
+  "Audience i targeting: remarketing liste, demografija, targeting podesavanja",
+  "Shopping / Performance Max: feed kvalitet, asset grupe, audience signali"
+];
+
+const deliverables = [
   {
-    title: "Analiza strukture naloga",
-    description:
-      "Pregled kampanja, ad grupa i oglasa uz preporuke za reorganizaciju."
+    title: "Detaljan izvestaj u PDF ili Google Doc formatu",
+    items: [
+      "Prioritizovane preporuke (Quick Wins vs Long-term)",
+      "Konkretni action items sa objasnjenjima",
+      "Executive summary sa kljucnim nalazima"
+    ]
   },
   {
-    title: "Keyword analiza",
-    description:
-      "Match types, negativne reci i identifikacija propustenih prilika."
-  },
-  {
-    title: "Budget i bidding analiza",
-    description:
-      "Provera raspodele budzeta, bidding strategija i budget waste tacaka."
-  },
-  {
-    title: "Performance pregled",
-    description: "Quality Score, CTR, Conversion Rate, ROAS i CPA analiza."
-  },
-  {
-    title: "Tracking verifikacija",
-    description:
-      "Provera conversion tracking-a, GA4 povezivanja i attribution modela."
-  },
-  {
-    title: "Akcioni plan",
-    description:
-      "Prioritizovana lista preporuka, quick wins i dugorocne smernice."
+    title: "Opciono: video walkthrough",
+    items: [
+      "Snimak prolaska kroz izvestaj",
+      "Live Q&A poziv za pitanja i nejasnoce"
+    ]
   }
 ];
 
-const pricing = [
+const processSteps = [
   {
-    name: "Besplatan Audit",
-    price: "0 EUR",
-    description: "Za kvalifikovane brendove sa aktivnim nalozima.",
-    features: [
-      "Detaljna analiza naloga",
-      "Prioritizovane preporuke",
-      "30-min prezentacija nalaza"
-    ],
-    ctaText: "Zatrazi Audit"
+    title: "Pristup i kickoff",
+    description:
+      "Dobijam pristup Google Ads i GA4, plus kratak poziv o ciljevima i kontekstu."
   },
   {
-    name: "Placeni Audit",
-    price: "Na upit",
-    description: "Za brendove koji ne ispunjavaju kriterijume.",
-    features: [
-      "Kompletan izvestaj",
-      "Akcioni plan",
-      "Follow-up podrska"
-    ],
-    highlight: true,
-    ctaText: "Posalji Upit"
+    title: "Dubinska analiza",
+    description:
+      "Nekoliko dana detaljnog pregleda naloga uz identifikaciju problema i prilika."
   },
   {
-    name: "Audit + Implementacija",
-    price: "Na upit",
-    description: "Audit uz dodatnu pomoc u implementaciji promena.",
-    features: [
-      "Audit naloga",
-      "Implementacija kljucnih optimizacija",
-      "Monitoring rezultata"
+    title: "Izvestaj i prezentacija",
+    description:
+      "Kompletan izvestaj sa preporukama, uz opciono video ili live call."
+  }
+];
+
+const packages = [
+  {
+    title: "Audit za lokalne firme",
+    subtitle: "Za naloge do EUR 600-700 mesecnog spend-a",
+    items: [
+      "Manji nalozi sa par kampanja",
+      "Fokus na osnovne stvari koje donose brze rezultate"
     ],
-    ctaText: "Posalji Upit"
+    cta: "Kontaktirajte me",
+    href: "/kontakt"
+  },
+  {
+    title: "Standard audit",
+    subtitle: "Za naloge od EUR 700 do EUR 3,000 mesecnog spend-a",
+    items: [
+      "Search i/ili Shopping kampanje",
+      "Kompletan pregled svih oblasti",
+      "Detaljan izvestaj sa prioritetima"
+    ],
+    cta: "Zakazite standard audit",
+    href: "/kontakt",
+    highlight: true
+  },
+  {
+    title: "Advanced audit",
+    subtitle: "Za naloge od EUR 3,000 do EUR 10,000 mesecnog spend-a",
+    items: [
+      "PMax, Shopping, Search, YouTube strukture",
+      "Dublja analiza i vise preporuka",
+      "Video walkthrough ukljucen"
+    ],
+    cta: "Zakazite advanced audit",
+    href: "/kontakt"
+  },
+  {
+    title: "Enterprise audit (Funky Enterprises)",
+    subtitle: "Za naloge preko EUR 10,000/mesec",
+    items: [
+      "Google Ads, Meta oglasavanje, SEO",
+      "Kvalitet sajta i landing stranica",
+      "Conversion tracking kompletna provera",
+      "Kreativa i messaging",
+      "Preporuke kljuc u ruke"
+    ],
+    cta: "Kontaktirajte me za Enterprise audit",
+    href: "/kontakt"
   }
 ];
 
 const faqs = [
   {
-    question: "Koliko traje audit?",
+    question: "Koliko traje kompletan audit?",
     answer:
-      "Kompletan audit zavrsavam u roku od 3-5 radnih dana nakon dobijanja pristupa."
+      "Od dobijanja pristupa do finalnog izvestaja obicno prodje 5-7 radnih dana."
   },
   {
-    question: "Da li je audit zaista besplatan?",
+    question: "Da li mi treba pristup Google Ads-u?",
     answer:
-      "Da, za brendove koji ispunjavaju kriterijume. Nema skrivenih troskova."
+      "Da, potreban mi je read-only pristup (Viewer role). Ne menjam nista bez odobrenja."
   },
   {
-    question: "Sta ako ne ispunjavam kriterijume?",
+    question: "Da li mogu sam da implementiram preporuke?",
     answer:
-      "U tom slucaju nudim placeni audit sa kompletnim izvestajem i akcionim planom."
+      "Da. Izvestaj je napisan tako da vi ili vas tim mozete samostalno da implementirate preporuke."
   },
   {
-    question: "Da li imate pristup mojim podacima?",
+    question: "Sta ako zelim da preuzmete upravljanje nakon audita?",
     answer:
-      "Trazi se samo Viewer pristup, bez mogucnosti bilo kakvih izmena."
+      "Cena audita se odbija od prvog meseca upravljanja ako se odlucite za saradnju u roku od 30 dana."
   },
   {
-    question: "Sta se desava nakon audita?",
+    question: "Radim sa agencijom - da li oni treba da znaju za audit?",
     answer:
-      "Dobijate preporuke koje mozete sami implementirati ili nastaviti saradnju."
+      "To je vasa odluka. Neki klijenti koriste audit kao osnovu za razgovor, drugi kao pripremu za promenu."
   }
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Google Ads audit",
+  description:
+    "Profesionalni audit Google Ads naloga sa prioritetnim preporukama za poboljsanje performansi.",
+  provider: {
+    "@type": "Organization",
+    name: "Slobodan Jelisavac",
+    url: "https://slobodan-jelisavac.com"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer
+    }
+  }))
+};
+
 export default function GoogleAdsAuditPage() {
   return (
-    <ServicePageTemplate
-      title="Google Ads Audit - Otkrijte Skrivene Prilike u Vasem Nalogu"
-      subtitle="Besplatna detaljna analiza vaseg Google Ads naloga. Saznajte sta ne radi, gde gubite novac i kako poboljsati rezultate."
-      problems={problems}
-      solutions={solutions}
-      pricing={pricing}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <Section background="gray">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
+            Google Ads audit - otkrijte gde gubite novac
+          </h1>
+          <p className="text-lg text-gray-700 mb-8">
+            Niste sigurni da li vase Google Ads kampanje rade optimalno?
+            Profesionalni Google Ads audit pokazuje gde gubite novac, koje prilike
+            propustate i sta konkretno treba promeniti. Analiza ukljucuje
+            strategijski pregled koji uzima u obzir vas biznis model, marze i
+            ciljeve - ne samo tehnicke metrike.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button href="/kontakt" variant="secondary">
+              Zakazite Google Ads audit
+            </Button>
+            <Button href="/usluge/google-ads-upravljanje" variant="primary">
+              Google Ads upravljanje
+            </Button>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Zasto vam treba nezavisan audit
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {problems.map((problem) => (
+            <Card key={problem.title} className="h-full">
+              <h3 className="text-lg font-heading font-semibold mb-2">
+                {problem.title}
+              </h3>
+              <p className="text-gray-600">{problem.description}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Oblasti koje pokriva audit
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Fokus na kljucne delove naloga koji direktno uticu na ROAS i rast.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {auditAreas.map((area) => (
+            <Card key={area} className="h-full">
+              <p className="text-gray-700">{area}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Sta dobijate nakon audita
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {deliverables.map((block) => (
+            <Card key={block.title} className="h-full">
+              <h3 className="text-lg font-heading font-semibold mb-4">
+                {block.title}
+              </h3>
+              <ul className="space-y-2 text-gray-600">
+                {block.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Kako izgleda proces
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {processSteps.map((step, index) => (
+            <Card key={step.title} className="h-full">
+              <div className="text-primary font-heading font-bold text-xl mb-2">
+                Korak {index + 1}
+              </div>
+              <h3 className="text-lg font-heading font-semibold mb-2">
+                {step.title}
+              </h3>
+              <p className="text-gray-600">{step.description}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Izaberite pravi audit za vasu situaciju
+          </h2>
+        </div>
+        <div className="grid lg:grid-cols-2 gap-6">
+          {packages.map((pkg) => (
+            <Card
+              key={pkg.title}
+              className={`h-full ${pkg.highlight ? "border-primary" : ""}`}
+            >
+              <h3 className="text-xl font-heading font-bold mb-2">{pkg.title}</h3>
+              <p className="text-gray-600 mb-4">{pkg.subtitle}</p>
+              <ul className="space-y-2 text-gray-600 mb-6">
+                {pkg.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <Button href={pkg.href} variant="secondary" className="w-full">
+                {pkg.cta}
+              </Button>
+            </Card>
+          ))}
+        </div>
+        <p className="text-sm text-gray-500 mt-6">
+          Napomena: Ako nakon audita odlucite da radimo zajedno na upravljanju,
+          cena audita se odbija od prvog meseca.
+        </p>
+      </Section>
+
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Cesto postavljana pitanja
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {faqs.map((faq) => (
+            <Card key={faq.question} className="h-full">
+              <h3 className="text-lg font-heading font-semibold mb-2">
+                {faq.question}
+              </h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            Saznajte tacno gde gubite novac
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Zakazite Google Ads audit i dobijte jasnu sliku performansi kampanja
+            sa konkretnim preporukama za poboljsanje.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/kontakt" variant="secondary">
+              Zakazite Google Ads audit
+            </Button>
+            <Button href="/case-studies" variant="primary">
+              Pogledajte rezultate
+            </Button>
+          </div>
+          <div className="text-sm text-gray-500 mt-6">
+            <Link href="/usluge/performance-max" className="underline">
+              Performance Max
+            </Link>{" "}
+            -{" "}
+            <Link href="/usluge/google-shopping" className="underline">
+              Shopping kampanje
+            </Link>{" "}
+            -{" "}
+            <Link href="/blog/google-ads-greske" className="underline">
+              Najcesce Google Ads greske
+            </Link>
+          </div>
+        </div>
+      </Section>
+    </>
   );
 }
