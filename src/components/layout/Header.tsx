@@ -51,7 +51,10 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const locale = useLocale();
-  const pathname = usePathname();
+  const rawPathname = usePathname();
+
+  // Strip locale prefix if present to avoid /sr/en issues
+  const pathname = rawPathname.replace(/^\/(sr|en)/, "") || "/";
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b-2 border-gray-900">
