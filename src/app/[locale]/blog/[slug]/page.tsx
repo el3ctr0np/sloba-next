@@ -568,7 +568,7 @@ function GoogleOglasavanjeZaFirmePost() {
       <ul>
         <li><strong>Title</strong> — uključite ključne reči, brand, atribute (boja, veličina)</li>
         <li><strong>Description</strong> — detaljan opis sa relevantnim terminima</li>
-        <li><strong>Product Type</strong> — vaša kategorija (npr. "Obuća > Muške Patike > Running")</li>
+        <li><strong>Product Type</strong> — vaša kategorija (npr. &quot;Obuća &gt; Muške Patike &gt; Running&quot;)</li>
         <li><strong>GTIN/MPN</strong> — jedinstveni identifikatori proizvoda</li>
         <li><strong>Custom Labels</strong> — za segmentaciju po marži, sezoni, performansama</li>
       </ul>
