@@ -57,7 +57,7 @@ export function ClientLogos() {
           {logos.map((logo) => (
             <div
               key={logo.src}
-              className="flex items-center justify-center bg-slate-800 border-2 border-gray-900 rounded-lg px-4 py-3 h-20"
+              className="flex items-center justify-center bg-slate-200 border-2 border-gray-900 rounded-lg px-4 py-3 h-20"
             >
               <Image
                 src={logo.src}
