@@ -6,378 +6,374 @@ import { notFound } from "next/navigation";
 function KolikoKostaGoogleAdsPost() {
   return (
     <>
-      <p>
-        &quot;Koliko kota Google Ads?&quot; Ovo je prvo pitanje koje ujem od
-        svakog direktora marketinga ili vlasnika firme koji razmišlja o plaćenom
-        oglašavanju. I razumem frustraciju Ã¢€â€ Google vam neće dati jasan odgovor,
-        a većina sadržaja na ovu temu dolazi iz SAD-a gde su cene potpuno
-        drugaÃ„Âije.
-      </p>
-      <p>
-        Cena Google Ads-a zavisi od industrije, konkurencije i kvaliteta vaših
-        kampanja. U ovom vodiÃ„Âu dobijate realan okvir za planiranje budžeta i
-        procenu oÃ„Âekivanja pre nego što potrošite prvi dinar.
-      </p>
+      <h2>Uvod</h2>
+      <p>"Koliko košta Google Ads?"</p>
+      <p>Ovo je prvo pitanje koje čujem od svakog direktora marketinga ili vlasnika firme koji razmišlja o plaćenom oglašavanju. I razumem frustraciju — Google vam neće dati jasan odgovor, a većina sadržaja na ovu temu dolazi iz SAD-a gde su cene potpuno drugačije.</p>
+      <p>Problem je što na ovo pitanje ne postoji jednostavan odgovor tipa "košta X dinara mesečno". Cena Google Ads-a zavisi od desetak faktora — od vaše industrije, preko konkurencije, do kvaliteta vaših kampanja.</p>
+      <p>Ali nakon skoro decenije rada sa Google Ads-om i stotina naloga u regionu, mogu vam dati konkretan okvir koji će vam pomoći da planirate budžet i razumete šta očekivati.</p>
+      <p>U ovom vodiču pokrivam:</p>
       <ul>
-        <li>Kako Google Ads naplaćuje (i zašto je to važno)</li>
+        <li>Kako Google Ads zapravo naplaćuje (i zašto to morate razumeti)</li>
         <li>Realne CPC cene po industrijama u Srbiji i regionu</li>
         <li>Minimalni budžet koji ima smisla</li>
-        <li>Troškovi agencije vs. freelancer vs. in-house</li>
-        <li>Kako izraÃ„Âunati ROI pre pokretanja kampanja</li>
-        <li>Skriveni troškovi koje mnogi zaborave</li>
+        <li>Troškovi agencije vs. in-house tim</li>
+        <li>Kako izračunati ROI pre nego što potrošite prvi dinar</li>
+        <li>Skriveni troškovi o kojima niko ne priča</li>
       </ul>
-
-      <h2>Kako Google Ads naplauje?</h2>
-      <p>
-        Google Ads koristi aukcijski sistem. Svaki put kada neko ukuca pretragu,
-        dešava se mini-aukcija između oglašivaÃ„Âa koji ciljaju tu kljuÃ„Ânu reÃ„Â. Vi
-        plaćate samo kada neko klikne na vaš oglas Ã¢€â€ pay-per-click (PPC).
-      </p>
-
+      <p>---</p>
+      <h2>Kako Google Ads Naplaćuje?</h2>
+      <p>Pre nego što pričamo o konkretnim ciframa, morate razumeti osnovni model naplate.</p>
+      <p>Google Ads koristi <strong>aukcijski sistem</strong>. Svaki put kada neko ukuca pretragu na Google-u, dešava se mini-aukcija između oglašivača koji ciljaju tu ključnu reč. Pobednik aukcije (odnosno više pobednika) dobija prikaz oglasa.</p>
+      <p>Vi plaćate samo kada neko klikne na vaš oglas — otuda naziv "pay-per-click" ili PPC.</p>
       <h3>Cena po kliku (CPC)</h3>
+      <p>CPC zavisi od:</p>
       <ul>
-        <li>Konkurencija Ã¢€â€ više oglašivaÃ„Âa znaÃ„Âi višu cenu.</li>
-        <li>Quality Score Ã¢€â€ viši skor smanjuje cenu klika.</li>
-        <li>Pozicija oglasa Ã¢€â€ viša pozicija košta više.</li>
-        <li>Industrija Ã¢€â€ osiguranje i advokati su skuplji od eCommerce-a.</li>
-        <li>Geografija Ã¢€â€ Srbija je jeftinija od NemaÃ„Âke ili UK.</li>
+        <li><strong>Konkurencije</strong> — što više oglašivača cilja istu ključnu reč, veća je cena</li>
+        <li><strong>Quality Score</strong> — Google ocenjuje relevantnost vašeg oglasa i landing page-a (1-10). Viši skor = niža cena</li>
+        <li><strong>Pozicija oglasa</strong> — prva pozicija košta više od četvrte</li>
+        <li><strong>Industrija</strong> — osiguranje i advokati plaćaju 10x više od prodavnica odeće</li>
+        <li><strong>Geografija</strong> — Srbija je jeftinija od Nemačke, ali skuplja od Makedonije</li>
       </ul>
-
       <h3>Šta plaćate pored klikova</h3>
+      <p>Google Ads ima više modela naplate:</p>
       <ul>
-        <li>CPC Ã¢€â€ plaćate po kliku (Search, Shopping).</li>
-        <li>CPM Ã¢€â€ plaćate po 1.000 prikaza (Display, YouTube).</li>
-        <li>CPV Ã¢€â€ plaćate po pregledu videa (YouTube).</li>
-        <li>CPA Ã¢€â€ plaćate po konverziji (napredne strategije).</li>
+        <li><strong>CPC</strong> — plaćate po kliku (Search, Shopping)</li>
+        <li><strong>CPM</strong> — plaćate po 1000 prikaza (Display, YouTube)</li>
+        <li><strong>CPV</strong> — plaćate po pregledu videa (YouTube)</li>
+        <li><strong>CPA</strong> — plaćate po konverziji (napredne strategije)</li>
       </ul>
-
-      <h2>Realne CPC cene po industrijama u Srbiji</h2>
-      <p>ProseÃ„Âne vrednosti koje viđam kod klijenata u regionu (2025–2026):</p>
+      <p>Za većinu biznisa u Srbiji, CPC model na Search mreži je polazna tačka.</p>
+      <p>---</p>
+      <h2>Realne CPC Cene po Industrijama u Srbiji</h2>
+      <p>Evo prosečnih CPC cena koje vidim kod klijenata u regionu (2025-2026):</p>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900">
               <th className="py-2 pr-4">Industrija</th>
-              <th className="py-2 pr-4">ProseÃ„Âan CPC (EUR)</th>
-              <th className="py-2">Raspon</th>
+              <th className="py-2 pr-4">Prosečan CPC (EUR)</th>
+              <th className="py-2 pr-4">Raspon</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">eCommerce - moda</td>
               <td className="py-2 pr-4">€0.15 - €0.40</td>
-              <td className="py-2">€0.08 - €0.80</td>
+              <td className="py-2 pr-4">€0.08 - €0.80</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">eCommerce - elektronika</td>
               <td className="py-2 pr-4">€0.20 - €0.50</td>
-              <td className="py-2">€0.10 - €1.00</td>
+              <td className="py-2 pr-4">€0.10 - €1.00</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Nameštaj</td>
               <td className="py-2 pr-4">€0.25 - €0.60</td>
-              <td className="py-2">€0.15 - €1.20</td>
+              <td className="py-2 pr-4">€0.15 - €1.20</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">B2B usluge</td>
               <td className="py-2 pr-4">€0.40 - €1.20</td>
-              <td className="py-2">€0.20 - €3.00</td>
+              <td className="py-2 pr-4">€0.20 - €3.00</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">SaaS (regionalni)</td>
               <td className="py-2 pr-4">€0.80 - €2.50</td>
-              <td className="py-2">€0.30 - €5.00</td>
+              <td className="py-2 pr-4">€0.30 - €5.00</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Nekretnine</td>
               <td className="py-2 pr-4">€0.30 - €0.80</td>
-              <td className="py-2">€0.15 - €1.50</td>
+              <td className="py-2 pr-4">€0.15 - €1.50</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Turizam</td>
               <td className="py-2 pr-4">€0.20 - €0.60</td>
-              <td className="py-2">€0.10 - €1.20</td>
+              <td className="py-2 pr-4">€0.10 - €1.20</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Finansije/Osiguranje</td>
               <td className="py-2 pr-4">€1.00 - €4.00</td>
-              <td className="py-2">€0.50 - €8.00</td>
+              <td className="py-2 pr-4">€0.50 - €8.00</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Zdravstvo/Klinike</td>
               <td className="py-2 pr-4">€0.50 - €1.50</td>
-              <td className="py-2">€0.25 - €3.00</td>
+              <td className="py-2 pr-4">€0.25 - €3.00</td>
             </tr>
-            <tr>
+            <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Obrazovanje</td>
               <td className="py-2 pr-4">€0.30 - €0.90</td>
-              <td className="py-2">€0.15 - €2.00</td>
+              <td className="py-2 pr-4">€0.15 - €2.00</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p className="text-sm text-gray-500">
-        Napomena: ovo su cene za srpsko tržište. Za NemaÃ„Âku ili UK, raÃ„Âunajte
-        3–5x više.
-      </p>
-      <h3>Zato je raspon toliko irok?</h3>
+      <p><strong>Napomena:</strong> Ove cene su za srpsko tržište. Za targeting Nemačke ili UK, pomnožite sa 3-5x.</p>
+      <h3>Zašto je raspon toliko širok?</h3>
+      <p>CPC od €0.08 do €3.00 u istoj industriji deluje apsurdno. Ali razlika je u:</p>
       <ul>
-        <li>KljuÃ„Âne reÃ„Âi Ã¢€â€ branded termini su jeftiniji od generiÃ„Âkih.</li>
-        <li>Namera pretrage Ã¢€â€ “kupiÃ¢€Â košta više od “informiši seÃ¢€Â.</li>
-        <li>Kvalitet naloga Ã¢€â€ optimizovan nalog plaća i do 50% manje.</li>
-        <li>Sezona Ã¢€â€ Black Friday nije isto što i februar.</li>
+        <li><strong>Ključnim rečima</strong> — branded termini su jeftiniji od generičkih</li>
+        <li><strong>Nameri pretrage</strong> — "kupi patike online" košta više od "koje patike su u modi"</li>
+        <li><strong>Kvalitetu naloga</strong> — optimizovan nalog plaća i 50% manje</li>
+        <li><strong>Vremenu</strong> — Black Friday vs. februar</li>
       </ul>
-
-      <h2>Minimalni budžet koji ima smisla</h2>
-      <p>
-        TehniÃ„Âki možete krenuti sa €100 meseÃ„Âno, ali praktiÃ„Âno to retko daje
-        dovoljno podataka za optimizaciju.
-      </p>
-      <div className="border-2 border-gray-900 rounded-lg p-4 bg-gray-50">
-        <p className="font-semibold">
-          Minimalni meseÃ„Âni budžet = (ciljani broj klikova) Ãƒ— (proseÃ„Âan CPC) Ãƒ— 30
-          dana
-        </p>
-        <ul className="mt-3 text-gray-600">
-          <li>eCommerce (CPC €0.30): €90–135 meseÃ„Âno minimum</li>
-          <li>B2B usluge (CPC €0.80): €240–360 meseÃ„Âno minimum</li>
-          <li>SaaS (CPC €1.50): €450–675 meseÃ„Âno minimum</li>
-        </ul>
-      </div>
-      <p>
-        Za stabilne rezultate i optimizaciju, realnije preporuke su:
-      </p>
+      <p>---</p>
+      <h2>Minimalni Budžet Koji Ima Smisla</h2>
+      <p>Pitanje koje čujem stalno: "Mogu li da počnem sa €100 mesečno?"</p>
+      <p>Tehnički — da. Praktično — zavisi.</p>
+      <h3>Formula za minimalni budžet</h3>
+      <p>Minimalni mesečni budžet = (Ciljani broj klikova) × (Prosečan CPC) × 30 dana</p>
+      <p>Za smislene rezultate vam treba <strong>minimum 10-15 klikova dnevno</strong>. To znači:</p>
+      <ul>
+        <li><strong>eCommerce (CPC €0.30):</strong> €90-135/mesečno minimum</li>
+        <li><strong>B2B usluge (CPC €0.80):</strong> €240-360/mesečno minimum</li>
+        <li><strong>SaaS (CPC €1.50):</strong> €450-675/mesečno minimum</li>
+      </ul>
+      <p>Ali ovo je <strong>apsolutni minimum</strong> za testiranje. Za stabilne rezultate i optimizaciju, preporučujem:</p>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900">
               <th className="py-2 pr-4">Tip biznisa</th>
-              <th className="py-2">PreporuÃ„Âeni meseÃ„Âni budžet</th>
+              <th className="py-2 pr-4">Preporučeni mesečni budžet</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Lokalni biznis</td>
-              <td className="py-2">€300 - €800</td>
+              <td className="py-2 pr-4">€300 - €800</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">eCommerce (manji)</td>
-              <td className="py-2">€500 - €1,500</td>
+              <td className="py-2 pr-4">€500 - €1,500</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">eCommerce (srednji)</td>
-              <td className="py-2">€1,500 - €5,000</td>
+              <td className="py-2 pr-4">€1,500 - €5,000</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">B2B usluge</td>
-              <td className="py-2">€800 - €2,500</td>
+              <td className="py-2 pr-4">€800 - €2,500</td>
             </tr>
-            <tr>
+            <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">SaaS</td>
-              <td className="py-2">€1,500 - €5,000+</td>
+              <td className="py-2 pr-4">€1,500 - €5,000+</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <h3>Zašto ne preporuÃ„Âujem mikro-budžete</h3>
+      <h3>Zašto ne preporučujem mikro-budžete</h3>
+      <p>Sa €100-200 mesečno:</p>
       <ul>
-        <li>Nema dovoljno podataka za optimizaciju.</li>
-        <li>Algoritmi nemaju šta da nauÃ„Âe.</li>
-        <li>Ne možete testirati razliÃ„Âite pristupe.</li>
-        <li>ROI je teško pouzdano meriti.</li>
+        <li>Nemate dovoljno podataka za optimizaciju</li>
+        <li>Algoritmi nemaju šta da nauče</li>
+        <li>Ne možete testirati različite pristupe</li>
+        <li>ROI je nemoguće pouzdano meriti</li>
       </ul>
-
-      <h2>Troškovi upravljanja: agencija vs. freelancer vs. in-house</h2>
+      <p>To je kao da otvorite restoran i reklamirate se samo jednom nedeljno. Tehnički radite marketing, ali bez efekta.</p>
+      <p>---</p>
+      <h2>Troškovi Upravljanja: Agencija vs. Freelancer vs. In-House</h2>
+      <p>Pored budžeta za oglase, imate troškove upravljanja. Tri opcije:</p>
       <h3>1. Agencija</h3>
-      <p className="font-semibold">TipiÃ„Âni modeli naplate:</p>
+      <p><strong>Tipični modeli naplate:</strong></p>
       <ul>
-        <li>Procenat od ad spend-a: 10–20%</li>
-        <li>Fiksna meseÃ„Âna naknada: €500–2,500</li>
+        <li>Procenat od ad spend-a: 10-20%</li>
+        <li>Fiksna mesečna naknada: €500-2,500</li>
         <li>Hibrid: manja fiksna + procenat</li>
       </ul>
-      <p className="font-semibold">Prednosti:</p>
+      <p><strong>Prednosti:</strong></p>
       <ul>
-        <li>Tim struÃ„Ânjaka i alati.</li>
-        <li>Kontinuitet i iskustvo iz više industrija.</li>
+        <li>Tim stručnjaka</li>
+        <li>Alati i resursi</li>
+        <li>Kontinuitet (nema zavisnosti od jedne osobe)</li>
+        <li>Iskustvo iz različitih industrija</li>
       </ul>
-      <p className="font-semibold">Mane:</p>
+      <p><strong>Mane:</strong></p>
       <ul>
-        <li>Skuplje za manje budžete.</li>
-        <li>Manje personalizovana pažnja.</li>
+        <li>Skuplje za manje budžete</li>
+        <li>Manje personalizovana pažnja</li>
+        <li>Moguća "šablonska" rešenja</li>
       </ul>
-
       <h3>2. Freelancer/Konsultant</h3>
-      <p className="font-semibold">TipiÃ„Âni modeli naplate:</p>
+      <p><strong>Tipični modeli naplate:</strong></p>
       <ul>
-        <li>Fiksna meseÃ„Âna naknada: €300–1,200</li>
-        <li>Satnica: €30–80/sat</li>
+        <li>Fiksna mesečna naknada: €300-1,200</li>
+        <li>Satnica: €30-80/sat</li>
         <li>Retainer + procenat</li>
       </ul>
-      <p className="font-semibold">Prednosti:</p>
+      <p><strong>Prednosti:</strong></p>
       <ul>
-        <li>Direktna komunikacija i fleksibilnost.</li>
-        <li>Personalizovaniji pristup.</li>
+        <li>Personalizovaniji pristup</li>
+        <li>Direktna komunikacija</li>
+        <li>Često fleksibilniji</li>
+        <li>Bolje za specifične potrebe</li>
       </ul>
-      <p className="font-semibold">Mane:</p>
+      <p><strong>Mane:</strong></p>
       <ul>
-        <li>Zavisnost od jedne osobe.</li>
-        <li>OgraniÃ„Âen kapacitet.</li>
+        <li>Zavisnost od jedne osobe</li>
+        <li>Ograničen kapacitet</li>
+        <li>Može nedostajati širina znanja</li>
       </ul>
-
-      <h3>3. In-house</h3>
-      <p className="font-semibold">Troškovi:</p>
+      <h3>3. In-House</h3>
+      <p><strong>Troškovi:</strong></p>
       <ul>
-        <li>Plata: €800–2,500 meseÃ„Âno (Srbija)</li>
-        <li>Alati: €100–500 meseÃ„Âno</li>
-        <li>Obuke: €500–2,000 godišnje</li>
+        <li>Plata: €800-2,500 mesečno (Srbija)</li>
+        <li>Alati: €100-500 mesečno</li>
+        <li>Obuke: €500-2,000 godišnje</li>
       </ul>
-      <p className="font-semibold">Prednosti:</p>
+      <p><strong>Prednosti:</strong></p>
       <ul>
-        <li>Potpuna kontrola i brzo donošenje odluka.</li>
-        <li>Duboko razumevanje biznisa.</li>
+        <li>Potpuna kontrola</li>
+        <li>Duboko razumevanje biznisa</li>
+        <li>Brza komunikacija</li>
+        <li>Dugoročno jeftinije za velike budžete</li>
       </ul>
-      <p className="font-semibold">Mane:</p>
+      <p><strong>Mane:</strong></p>
       <ul>
-        <li>Skupo za manje kompanije.</li>
-        <li>Rizik od stagnacije znanja.</li>
+        <li>Skup za manje kompanije</li>
+        <li>Rizik od stagnacije znanja</li>
+        <li>Teško naći kvalitetne ljude</li>
       </ul>
-
       <h3>Moja preporuka</h3>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900">
-              <th className="py-2 pr-4">MeseÃ„Âni ad spend</th>
-              <th className="py-2">PreporuÃ„Âena opcija</th>
+              <th className="py-2 pr-4">Mesečni ad spend</th>
+              <th className="py-2 pr-4">Preporučena opcija</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Do €1,000</td>
-              <td className="py-2">Freelancer ili DIY sa konsultacijama</td>
+              <td className="py-2 pr-4">Freelancer ili DIY sa konsultacijama</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">€1,000 - €5,000</td>
-              <td className="py-2">Freelancer/konsultant</td>
+              <td className="py-2 pr-4">Freelancer/konsultant</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">€5,000 - €20,000</td>
-              <td className="py-2">Specijalizovana agencija ili senior freelancer</td>
+              <td className="py-2 pr-4">Specijalizovana agencija ili senior freelancer</td>
             </tr>
-            <tr>
+            <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">€20,000+</td>
-              <td className="py-2">Agencija + in-house koordinator</td>
+              <td className="py-2 pr-4">Agencija + in-house koordinator</td>
             </tr>
           </tbody>
         </table>
       </div>
-
-      <h2>Kako izraÃ„Âunati ROI pre nego što potrošite prvi dinar</h2>
-      <ol>
-        <li>Poznajte proseÃ„Ânu vrednost kupca (AOV, marža, LTV).</li>
-        <li>
-          Definišite maksimalni CPA koji možete da platite a da ostanete
-          profitabilni.
-        </li>
-        <li>Procenite conversion rate za vaš sajt.</li>
-        <li>
-          IzraÃ„Âunajte break-even CPC:{" "}
-          <span className="font-semibold">Maksimalni CPA × Conversion Rate</span>
-        </li>
-      </ol>
-      <p>
-        Ako je proseÃ„Âan CPC niži od break-even vrednosti, imate prostora za
-        profit. Ako je viši, morate povećati conversion rate ili AOV.
-      </p>
-
-      <h2>Skriveni troškovi o kojima niko ne priÃ„Âa</h2>
-      <h3>1. Landing page-ovi</h3>
+      <p>---</p>
+      <h2>Kako Izračunati ROI Pre Nego Što Potrošite Prvi Dinar</h2>
+      <p>Ovde većina preskače, a tu se donose najvažnije odluke.</p>
+      <h3>Korak 1: Poznajte svoju prosečnu vrednost kupca</h3>
+      <p>Za eCommerce:</p>
       <ul>
-        <li>Šablonski: €200–500 (jednokratno)</li>
-        <li>Custom dizajn: €500–2,000 (jednokratno)</li>
+        <li>Prosečna vrednost porudžbine (AOV)</li>
+        <li>Marža po porudžbini</li>
+        <li>Lifetime value (LTV) ako imate povratne kupce</li>
+      </ul>
+      <p>Za B2B/usluge:</p>
+      <ul>
+        <li>Vrednost prosečnog ugovora</li>
+        <li>Marža</li>
+        <li>LTV klijenta</li>
+      </ul>
+      <h3>Korak 2: Definišite maksimalni CPA</h3>
+      <p>Koliko možete da platite za jednu konverziju (kupovinu, lead) i da ostanete profitabilni?</p>
+      <p><strong>Formula:</strong> Maksimalni CPA = (Prosečna vrednost × Marža) × Procenat koji ste spremni da investirate</p>
+      <p>Primer za eCommerce:</p>
+      <ul>
+        <li>AOV: €80</li>
+        <li>Marža: 40% = €32</li>
+        <li>Spremni da investirate 50% marže u akviziciju</li>
+        <li>Maksimalni CPA = €16</li>
+      </ul>
+      <h3>Korak 3: Procenite conversion rate</h3>
+      <p>Tipični conversion rate-ovi:</p>
+      <ul>
+        <li>eCommerce: 1-3%</li>
+        <li>Lead gen: 2-8%</li>
+        <li>B2B: 2-5%</li>
+      </ul>
+      <h3>Korak 4: Izračunajte break-even CPC</h3>
+      <p><strong>Formula:</strong> Break-even CPC = Maksimalni CPA × Conversion Rate</p>
+      <p>Primer:</p>
+      <ul>
+        <li>Maksimalni CPA: €16</li>
+        <li>Conversion rate: 2%</li>
+        <li>Break-even CPC = €16 × 0.02 = €0.32</li>
+      </ul>
+      <p>Ako je prosečan CPC u vašoj industriji €0.25, imate prostora za profit. Ako je €0.50, moraćete da radite na conversion rate-u ili AOV-u.</p>
+      <p>---</p>
+      <h2>Skriveni Troškovi o Kojima Niko Ne Priča</h2>
+      <h3>1. Landing page-ovi</h3>
+      <p>Ako šaljete saobraćaj na homepage, bacate novac. Kvalitetan landing page košta:</p>
+      <ul>
+        <li>Šablonski: €200-500 (jednokratno)</li>
+        <li>Custom dizajn: €500-2,000 (jednokratno)</li>
         <li>A/B testiranje: ongoing trošak</li>
       </ul>
       <h3>2. Kreative i content</h3>
       <ul>
-        <li>Product feed optimizacija: €200–500</li>
-        <li>Ad copy: €100–300 meseÃ„Âno</li>
-        <li>Slike za Display/YouTube: €100–500</li>
+        <li>Product feed optimizacija: €200-500</li>
+        <li>Ad copy pisanje: €100-300 mesečno</li>
+        <li>Slike za Display/YouTube: €100-500</li>
       </ul>
       <h3>3. Alati</h3>
       <ul>
-        <li>Keyword research: €50–200 meseÃ„Âno</li>
-        <li>Competitor analysis: €50–150 meseÃ„Âno</li>
-        <li>Reporting: €30–100 meseÃ„Âno</li>
+        <li>Keyword research: €50-200 mesečno</li>
+        <li>Competitor analysis: €50-150 mesečno</li>
+        <li>Reporting: €30-100 mesečno</li>
       </ul>
       <h3>4. Conversion tracking setup</h3>
+      <p>Jednom, ali neophodno:</p>
       <ul>
-        <li>GA4 + GTM setup: €200–500</li>
-        <li>Enhanced conversions: €100–300</li>
-        <li>Server-side tracking: €300–800</li>
+        <li>GA4 + GTM setup: €200-500</li>
+        <li>Enhanced conversions: €100-300</li>
+        <li>Server-side tracking: €300-800</li>
       </ul>
-      <h3>5. Vreme za uÃ„Âenje</h3>
-      <p>
-        Ako radite sami, raÃ„Âunajte na 3–6 meseci pre nego što uđete u stabilan
-        ritam optimizacije.
-      </p>
-
-      <h2>Kada Google Ads nije pravi izbor</h2>
+      <h3>5. Vreme za učenje</h3>
+      <p>Ako radite sami, računajte na 3-6 meseci pre nego što stvarno naučite. To vreme ima cenu.</p>
+      <p>---</p>
+      <h2>Kada Google Ads Nije Pravi Izbor</h2>
+      <p>Iskreno, Google Ads nije za svakoga. Ne preporučujem ako:</p>
       <ul>
-        <li>Nemate jasno definisan proizvod/uslugu.</li>
-        <li>Marže su ispod 20%.</li>
-        <li>Nema potražnje za onim što nudite.</li>
-        <li>Website nije spreman (UX i ponuda nisu dovoljno jasni).</li>
-        <li>Nemate budžet za 3–6 meseci testiranja.</li>
+        <li><strong>Nemate jasno definisan proizvod/uslugu</strong> — Google Ads ne popravlja loš product-market fit</li>
+        <li><strong>Marže su premale</strong> — ispod 20% je teško biti profitabilan</li>
+        <li><strong>Nema potražnje</strong> — niko ne pretražuje ono što nudite</li>
+        <li><strong>Website nije spreman</strong> — loš UX ubija i najbolje kampanje</li>
+        <li><strong>Nemate budžet za 3-6 meseci</strong> — rezultati ne dolaze preko noći</li>
       </ul>
-
-      <h2>Sledeći koraci</h2>
+      <p>---</p>
+      <h2>Sledeći Koraci</h2>
+      <p>Ako ste pročitali do ovde, verovatno imate bolju sliku o tome šta vas očekuje.</p>
+      <p>Evo šta preporučujem:</p>
       <ol>
-        <li>IzraÃ„Âunajte maksimalni CPA.</li>
-        <li>Proverite CPC u Keyword Planner-u.</li>
-        <li>Definišite realan test budžet za minimum 3 meseca.</li>
-        <li>OdluÃ„Âite da li radite sami, sa freelancerom ili agencijom.</li>
+        <li><strong>Izračunajte svoj maksimalni CPA</strong> koristeći formulu iznad</li>
+        <li><strong>Proverite CPC u vašoj industriji</strong> kroz Keyword Planner (besplatan u Google Ads)</li>
+        <li><strong>Definišite realan test budžet</strong> za minimum 3 meseca</li>
+        <li><strong>Odlučite</strong> da li ćete raditi sami, sa freelancerom ili agencijom</li>
       </ol>
-      <p>
-        Ako vam treba pomoć oko analize ili strategije, pogledajte{" "}
-        <Link href="/usluge/google-ads-upravljanje" className="underline">
-          Google Ads upravljanje
-        </Link>{" "}
-        ili{" "}
-        <Link href="/kontakt" className="underline">
-          zakažite besplatne konsultacije
-        </Link>
-        .
-      </p>
-
+      <p>Ako vam treba pomoć sa analizom ili imate pitanja specifična za vaš biznis, <Link href="/kontakt/">zakažite besplatne konsultacije →</Link></p>
+      <p>---</p>
       <h2>FAQ</h2>
-      <h3>Koliko minimalno treba uloiti u Google Ads?</h3>
-      <p>
-        TehniÃ„Âki minimum je €1 dnevno, ali za smislene rezultate raÃ„Âunajte na
-        €300–500 meseÃ„Âno za lokalne biznise i €1,000+ za eCommerce ili B2B.
-      </p>
+      <h3>Koliko minimalno treba uložiti u Google Ads?</h3>
+      <p>Tehnički minimum je €1 dnevno, ali za smislene rezultate računajte na minimum €300-500 mesečno za lokalne biznise i €1,000+ za eCommerce ili B2B.</p>
       <h3>Da li se Google Ads isplati za mali biznis?</h3>
-      <p>
-        Da, ako imate jasnu vrednost po kupcu i konkurentne marže. Male firme
-        su Ã„Âesto fleksibilnije i brže optimizuju kampanje.
-      </p>
-      <h3>Koliko vremena treba da Google Ads donese rezultate?</h3>
-      <p>
-        Prve indikacije su vidljive za 2–4 nedelje, dok stabilne performanse
-        dolaze nakon 2–3 meseca.
-      </p>
-      <h3>Zato su cene toliko razliite po industrijama?</h3>
-      <p>
-        Zbog konkurencije i vrednosti konverzije. Advokat može platiti €50 po
-        kliku jer jedan klijent vredi €5,000.
-      </p>
-      <h3>Da li Google Ads kota vie nego Facebook Ads?</h3>
-      <p>
-        Generalno da, CPC je viši. Ali intent korisnika je jaÃ„Âi Ã¢€â€ pretraga
-        &quot;kupi X&quot; je bliža kupovini od scrollovanja feed-a.
-      </p>
-
+      <p>Da, ako imate jasnu vrednost po kupcu i konkurentne marže. Male firme često imaju prednost jer su fleksibilnije i mogu brže optimizovati.</p>
+      <h3>Koliko vremena treba da Google Ads počne da donosi rezultate?</h3>
+      <p>Prve indikacije vidite za 2-4 nedelje. Prave rezultate i optimizovan nalog za 2-3 meseca. Stabilne performanse za 4-6 meseci.</p>
+      <h3>Zašto su cene toliko različite po industrijama?</h3>
+      <p>Zbog konkurencije i vrednosti konverzije. Advokat može da plati €50 za klik jer jedan klijent vredi €5,000. Prodavnica majica ne može.</p>
+      <h3>Da li Google Ads košta više nego Facebook Ads?</h3>
+      <p>Generalno da, CPC na Google-u je viši. Ali intent korisnika je jači — neko ko pretražuje "kupi X" je bliži kupovini od nekoga ko scrolla Instagram.</p>
+      <p>---</p>
+      <p>*Poslednje ažuriranje: Januar 2026*</p>
+      <p>*<Link href="/o-meni/">Autor: Slobodan Jelisavac, Google Ads Consultant</Link>*</p>
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Januar 2026
+        Poslednje a?uriranje: Januar 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">
@@ -391,333 +387,380 @@ function KolikoKostaGoogleAdsPost() {
 function GoogleOglasavanjeZaFirmePost() {
   return (
     <>
-      <p>
-        Google oglašavanje je najmoćniji kanal za biznise koji žele da dosegnu
-        kupce sa namerom kupovine. Za razliku od društvenih mreža gde &quot;upadate&quot;
-        ljude dok skroluju, na Google-u dosežete ljude koji aktivno traže vaš
-        proizvod ili uslugu. Ta razlika u nameri je kljuÃ„Âna.
-      </p>
-      <p>
-        Google Ads nije jedinstven sistem Ã¢â‚¬â€ to je ekosistem razliÃ„Âitih tipova
-        kampanja, mreža i strategija. Ono što radi za eCommerce ne radi uvek za
-        B2B. Ono što ima smisla za lokalni biznis nema smisla za međunarodni
-        brend.
-      </p>
+      <h2>Uvod</h2>
+      <p>Google oglašavanje je najmoćniji kanal za biznise koji žele da dosegnu kupce sa namerom kupovine.</p>
+      <p>Za razliku od društvenih mreža gde "upadate" ljude dok skroluju, na Google-u dosežete ljude koji aktivno traže vaš proizvod ili uslugu. Ta razlika u nameri je ključna.</p>
+      <p>Ali Google Ads nije jedinstven sistem — to je ekosistem različitih tipova kampanja, mreža, i strategija. Ono što radi za eCommerce neće raditi za B2B SaaS. Ono što ima smisla za lokalni biznis nema smisla za međunarodni brend.</p>
+      <p>U ovom vodiču pokrivam:</p>
       <ul>
-        <li>Kako Google oglašavanje funkcioniše</li>
+        <li>Kako Google oglašavanje zapravo funkcioniše</li>
         <li>Sve tipove kampanja i kada koji koristiti</li>
-        <li>SpecifiÃ„Âne strategije za eCommerce i B2B</li>
+        <li>Specifične strategije za eCommerce i B2B</li>
         <li>Kako postaviti temelje za uspešne kampanje</li>
-        <li>NajÃ„ÂeÃ…Â¡Ã„â€¡e greÃ…Â¡ke koje vidim kod firmi u Srbiji</li>
+        <li>Najčešće greške koje vidim kod firmi u Srbiji</li>
       </ul>
-
-      <h2>Kako Google oglašavanje funkcioniše</h2>
+      <p>Vodič je napisan za vlasnike firmi i marketing menadžere koji žele da razumeju sistem pre nego što investiraju — ili pre nego što evaluiraju rad postojećeg partnera.</p>
+      <p>---</p>
+      <h2>Kako Google Oglašavanje Funkcioniše</h2>
       <h3>Aukcijski model</h3>
-      <p>
-        Google Ads radi na principu aukcije u realnom vremenu. Svaki put kada
-        neko ukuca pretragu, deÃ…Â¡ava se aukcija meÃ„â€˜u oglaÃ…Â¡ivaÃ„Âima koji ciljaju tu
-        kljuÃ„Ânu reÃ„Â. Pobednik (ili viÃ…Â¡e njih) dobija prikaz oglasa.
-      </p>
-      <p>
-        Google koristi formulu:{" "}
-        <span className="font-semibold">
-          Ad Rank = Bid Ãƒâ€” Quality Score Ãƒâ€” OÃ„Âekivani uticaj ekstenzija
-        </span>
-        . To znaÃ„Âi da oglaÃ…Â¡ivaÃ„Â sa boljim Quality Score-om moÃ…Â¾e da plati manje i
-        da bude iznad konkurenta koji plaća više.
-      </p>
-
-      <h3>Quality Score: vaš skriveni adut</h3>
-      <p>Quality Score (1-10) zavisi od:</p>
+      <p>Google Ads radi na principu aukcije u realnom vremenu.</p>
+      <p>Svaki put kada neko ukuca pretragu, dešava se aukcija među oglašivačima koji ciljaju tu ključnu reč. Pobednik (ili više njih) dobija prikaz oglasa.</p>
+      <p>Ali nije najvažniji ko plati najviše. Google koristi formulu:</p>
+      <p><strong>Ad Rank = Bid × Quality Score × Očekivani uticaj ekstenzija</strong></p>
+      <p>Ovo znači da oglašivač sa boljim Quality Score-om može da plati manje i da bude iznad konkurenta koji plaća više.</p>
+      <h3>Quality Score: Vaš skriveni adut</h3>
+      <p>Quality Score (1-10) meri koliko je vaš oglas relevantan za korisnika. Zavisi od:</p>
       <ul>
-        <li>CTR (Click-Through Rate) Ã¢â‚¬â€ koliko Ã„Âesto ljudi kliknu na oglas</li>
-        <li>Relevantnosti oglasa Ã¢â‚¬â€ koliko oglas odgovara pretrazi</li>
-        <li>Landing page iskustva Ã¢â‚¬â€ brzina, relevantnost, mobilna optimizacija</li>
+        <li><strong>CTR (Click-Through Rate)</strong> — koliko često ljudi kliknu na vaš oglas</li>
+        <li><strong>Relevantnost oglasa</strong> — koliko oglas odgovara pretrazi</li>
+        <li><strong>Landing page iskustvo</strong> — brzina, relevantnost, mobilna optimizacija</li>
       </ul>
-      <p>Visok Quality Score znaÃ„Âi niÃ…Â¾u cenu po kliku i bolje pozicije.</p>
-
+      <p>Visok Quality Score = niža cena po kliku, bolje pozicije, više konverzija za isti budžet.</p>
       <h3>Mreže i gde se prikazuju oglasi</h3>
+      <p>Google Ads ima više mreža:</p>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900">
               <th className="py-2 pr-4">Mreža</th>
               <th className="py-2 pr-4">Gde se prikazuju</th>
-              <th className="py-2">Tip kampanja</th>
+              <th className="py-2 pr-4">Tip kampanja</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Search</td>
               <td className="py-2 pr-4">Google.com rezultati pretrage</td>
-              <td className="py-2">Search, Shopping</td>
+              <td className="py-2 pr-4">Search, Shopping</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Display</td>
               <td className="py-2 pr-4">2+ miliona web sajtova i aplikacija</td>
-              <td className="py-2">Display, Remarketing</td>
+              <td className="py-2 pr-4">Display, Remarketing</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">YouTube</td>
               <td className="py-2 pr-4">Pre/tokom/posle video sadržaja</td>
-              <td className="py-2">Video kampanje</td>
+              <td className="py-2 pr-4">Video kampanje</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Discover</td>
               <td className="py-2 pr-4">Google Discover feed, Gmail</td>
-              <td className="py-2">Demand Gen</td>
+              <td className="py-2 pr-4">Demand Gen</td>
             </tr>
-            <tr>
+            <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Maps</td>
               <td className="py-2 pr-4">Google Maps rezultati</td>
-              <td className="py-2">Local kampanje</td>
+              <td className="py-2 pr-4">Local kampanje</td>
             </tr>
           </tbody>
         </table>
       </div>
-
-      <h2>Tipovi Google Ads kampanja</h2>
-      <h3>1. Search kampanje</h3>
-      <p>
-        Tekstualni oglasi koji se prikazuju na vrhu Google pretrage. Najbolji
-        izbor kada korisnici aktivno traže ono što nudite.
-      </p>
-      <p className="font-semibold">Za koga:</p>
+      <p>---</p>
+      <h2>Tipovi Google Ads Kampanja</h2>
+      <h3>1. Search Kampanje</h3>
+      <p><strong>Šta su:</strong> Tekstualni oglasi koji se prikazuju na vrhu Google pretrage.</p>
+      <p><strong>Kada koristiti:</strong></p>
       <ul>
-        <li>✓ B2B usluge</li>
-        <li>✓ Lokalni biznisi</li>
-        <li>✓ SaaS</li>
-        <li>✓ eCommerce (uz Shopping)</li>
+        <li>Proizvod/usluga sa jasnom potražnjom</li>
+        <li>Ljudi aktivno traže ono što nudite</li>
+        <li>Želite visok intent saobraćaj</li>
       </ul>
-
-      <h3>2. Shopping kampanje</h3>
-      <p>
-        Vizuelni oglasi sa slikom proizvoda, cenom i nazivom prodavnice. Idealno
-        za online prodavnice.
-      </p>
-      <p className="font-semibold">Zahtevi:</p>
+      <p><strong>Za koga:</strong></p>
+      <ul>
+        <li>✅ B2B usluge</li>
+        <li>✅ Lokalni biznisi</li>
+        <li>✅ SaaS</li>
+        <li>✅ eCommerce (uz Shopping)</li>
+      </ul>
+      <p><strong>Primer:</strong> Korisnik traži "CRM softver za mala preduzeća" → vaš oglas se prikazuje → klik → landing page.</p>
+      <h3>2. Shopping Kampanje</h3>
+      <p><strong>Šta su:</strong> Vizuelni oglasi sa slikom proizvoda, cenom i nazivom prodavnice.</p>
+      <p><strong>Kada koristiti:</strong></p>
+      <ul>
+        <li>Imate online prodavnicu</li>
+        <li>Prodajete fizičke proizvode</li>
+        <li>Imate konkurentne cene</li>
+      </ul>
+      <p><strong>Za koga:</strong></p>
+      <ul>
+        <li>✅ eCommerce</li>
+        <li>❌ B2B usluge</li>
+        <li>❌ Digitalni proizvodi</li>
+      </ul>
+      <p><strong>Zahtevi:</strong></p>
       <ul>
         <li>Google Merchant Center nalog</li>
-        <li>Product feed</li>
-        <li>Povezan Google Ads nalog</li>
+        <li>Product feed (lista proizvoda)</li>
+        <li>Povezan sa Google Ads-om</li>
       </ul>
-
       <h3>3. Performance Max (PMax)</h3>
-      <p>
-        Google-ova &quot;sve u jednom&quot; kampanja koja automatski prikazuje oglase na
-        svim mrežama.
-      </p>
+      <p><strong>Šta su:</strong> Google-ova "sve u jednom" kampanja koja automatski prikazuje oglase na svim mrežama.</p>
+      <p><strong>Kada koristiti:</strong></p>
       <ul>
-        <li>✓ eCommerce sa dokazanim proizvodima</li>
-        <li>✓ Lead gen sa volumenom</li>
-        <li>Ã¢Å¡Â Ã¯Â¸Â Oprezno za manje budÃ…Â¾ete</li>
+        <li>Imate dovoljno conversion data (50+ mesečno idealno)</li>
+        <li>Želite skaliranje uz manje ručnog rada</li>
+        <li>Spremni ste da prepustite kontrolu algoritmu</li>
       </ul>
-
-      <h3>4. Display kampanje</h3>
-      <p>
-        Banner oglasi na web sajtovima, aplikacijama i YouTube-u. NajÃ„ÂeÃ…Â¡Ã„â€¡e za
-        brand awareness i remarketing.
-      </p>
-
-      <h3>5. Video kampanje (YouTube)</h3>
-      <p>
-        Video oglasi na YouTube-u (pre-roll, mid-roll, in-feed). Dobri za
-        proizvode koji zahtevaju objašnjenje.
-      </p>
-
+      <p><strong>Za koga:</strong></p>
+      <ul>
+        <li>✅ eCommerce sa dokazanim proizvodima</li>
+        <li>✅ Lead gen sa volumenom</li>
+        <li>⚠️ Oprezno za manje budžete</li>
+      </ul>
+      <p><strong>Upozorenje:</strong> PMax je "crna kutija" — imate manje kontrole i uvida. Ne preporučujem kao prvu kampanju.</p>
+      <h3>4. Display Kampanje</h3>
+      <p><strong>Šta su:</strong> Banner oglasi na web sajtovima, aplikacijama, i YouTube-u.</p>
+      <p><strong>Kada koristiti:</strong></p>
+      <ul>
+        <li>Brand awareness</li>
+        <li>Remarketing</li>
+        <li>Dosezanje šire publike</li>
+      </ul>
+      <p><strong>Za koga:</strong></p>
+      <ul>
+        <li>✅ Branding kampanje</li>
+        <li>✅ Remarketing za sve</li>
+        <li>⚠️ Slabije za direktan response</li>
+      </ul>
+      <h3>5. Video Kampanje (YouTube)</h3>
+      <p><strong>Šta su:</strong> Video oglasi na YouTube-u (pre-roll, mid-roll, in-feed).</p>
+      <p><strong>Kada koristiti:</strong></p>
+      <ul>
+        <li>Imate video content</li>
+        <li>Želite brand awareness</li>
+        <li>Kompleksniji proizvod koji zahteva objašnjenje</li>
+      </ul>
+      <p><strong>Za koga:</strong></p>
+      <ul>
+        <li>✅ B2C brendovi</li>
+        <li>✅ SaaS sa demo video-ima</li>
+        <li>✅ Remarketing</li>
+      </ul>
       <h3>6. Demand Gen</h3>
-      <p>
-        Vizuelni oglasi za Discover, Gmail i YouTube. Dobra alternativa Meta
-        Ads-u kada imate jak vizuelni content.
-      </p>
-
-      <h2>Google oglašavanje za eCommerce</h2>
-      <pre className="border-2 border-gray-900 rounded-lg p-4 bg-gray-50 text-sm">
-        <code>
-          Brand Search (brand kljuÃ„Âne reÃ„Âi){"\n"}
-          Standard Shopping (kontrolisane kampanje){"\n"}
-          Performance Max (skaliranje){"\n"}
-          Search Generic (non-brand pretrage){"\n"}
-          Remarketing (povratak posetilaca)
-        </code>
-      </pre>
-
-      <h3>Product feed: temelj svega</h3>
-      <p>KljuÃ„Âni atributi:</p>
+      <p><strong>Šta su:</strong> Vizuelni oglasi za Discover, Gmail, i YouTube.</p>
+      <p><strong>Kada koristiti:</strong></p>
       <ul>
-        <li>Title Ã¢â‚¬â€ kljuÃ„Âne reÃ„Âi, brand, atributi (boja, veliÃ„Âina)</li>
-        <li>Description Ã¢â‚¬â€ detaljan opis sa relevantnim terminima</li>
-        <li>Product Type Ã¢â‚¬â€ precizna kategorija</li>
-        <li>GTIN/MPN Ã¢â‚¬â€ jedinstveni identifikatori proizvoda</li>
-        <li>Custom Labels Ã¢â‚¬â€ segmentacija po marÃ…Â¾i, sezoni, performansama</li>
+        <li>Želite da dosegnete ljude rano u purchase journey-u</li>
+        <li>Imate jak vizuelni content</li>
+        <li>Želite alternativu Meta Ads-u</li>
       </ul>
-
+      <p><strong>Za koga:</strong></p>
+      <ul>
+        <li>✅ eCommerce (prospect kampanje)</li>
+        <li>✅ B2C sa životnim stilom</li>
+        <li>⚠️ Eksperimentalno za B2B</li>
+      </ul>
+      <p>---</p>
+      <h2>Google Oglašavanje za eCommerce</h2>
+      <p>Ako prodajete fizičke proizvode online, ovo su ključni elementi.</p>
+      <h3>Osnovna struktura</h3>
+      <pre className="border-2 border-gray-900 rounded-lg p-4 bg-gray-50 text-sm">
+        <code>{`├── Brand Search (brand ključne reči)
+├── Standard Shopping (kontrolisane kampanje)
+├── Performance Max (skaliranje)
+├── Search Generic (non-brand pretrage)
+└── Remarketing (povratak posetilaca)`}</code>
+      </pre>
+      <h3>Product Feed: Temelj svega</h3>
+      <p>Vaš product feed u Merchant Center-u je najvažniji element. Loš feed = loše kampanje, bez izuzetka.</p>
+      <p><strong>Ključni atributi:</strong></p>
+      <ul>
+        <li><strong>Title</strong> — uključite ključne reči, brand, atribute (boja, veličina)</li>
+        <li><strong>Description</strong> — detaljan opis sa relevantnim terminima</li>
+        <li><strong>Product Type</strong> — vaša kategorija (npr. "Obuća > Muške Patike > Running")</li>
+        <li><strong>GTIN/MPN</strong> — jedinstveni identifikatori proizvoda</li>
+        <li><strong>Custom Labels</strong> — za segmentaciju po marži, sezoni, performansama</li>
+      </ul>
       <h3>Shopping vs Performance Max</h3>
-      <div className="grid gap-4 md:grid-cols-2">
-        <div className="border-2 border-gray-900 rounded-lg p-4">
-          <p className="font-semibold mb-2">Standard Shopping</p>
-          <ul className="text-gray-700">
-            <li>Više kontrole nad bidovima</li>
-            <li>Jasniji uvid u search terms</li>
-            <li>Bolji za testiranje novih proizvoda</li>
-          </ul>
-        </div>
-        <div className="border-2 border-gray-900 rounded-lg p-4">
-          <p className="font-semibold mb-2">Performance Max</p>
-          <ul className="text-gray-700">
-            <li>Doseg na svim mrežama</li>
-            <li>Bolje za skaliranje dokazanih proizvoda</li>
-            <li>Manje ruÃ„Ânog rada</li>
-          </ul>
-        </div>
-      </div>
-      <p>
-        Moja preporuka: hibridni pristup Ã¢â‚¬â€ Standard Shopping za kontrolu, PMax
-        za skaliranje.
-      </p>
-
-      <h3>Remarketing za eCommerce</h3>
+      <p>Pitanje koje čujem stalno: "Da li da koristim Standard Shopping ili PMax?"</p>
+      <p><strong>Standard Shopping:</strong></p>
       <ul>
-        <li>Cart abandoners Ã¢â‚¬â€ dodali u korpu, nisu kupili (1-7 dana)</li>
-        <li>Product viewers Ã¢â‚¬â€ gledali proizvod, nisu dodali (3-14 dana)</li>
-        <li>Past customers Ã¢â‚¬â€ kupili, potencijal za repeat (30-180 dana)</li>
-        <li>High-value customers Ã¢â‚¬â€ kupili viÃ…Â¡e puta</li>
+        <li>Više kontrole nad bidovima</li>
+        <li>Jasniji uvid u search terms</li>
+        <li>Bolji za testiranje novih proizvoda</li>
+        <li>Preporučujem za početak</li>
       </ul>
-
-      <h2>Google oglašavanje za B2B</h2>
+      <p><strong>Performance Max:</strong></p>
+      <ul>
+        <li>Doseg na svim mrežama</li>
+        <li>Bolje za skaliranje dokazanih proizvoda</li>
+        <li>Manje ručnog rada</li>
+        <li>Preporučujem kada imate conversion history</li>
+      </ul>
+      <p><strong>Moja preporuka:</strong> Hibridni pristup — Standard Shopping za kontrolu, PMax za skaliranje.</p>
+      <h3>Remarketing za eCommerce</h3>
+      <p>Tipovi remarketing publika:</p>
+      <ul>
+        <li><strong>Cart abandoners</strong> — dodali u korpu, nisu kupili (1-7 dana)</li>
+        <li><strong>Product viewers</strong> — gledali proizvod, nisu dodali (3-14 dana)</li>
+        <li><strong>Past customers</strong> — kupili, potencijal za repeat (30-180 dana)</li>
+        <li><strong>High-value customers</strong> — kupili više puta (personalizovane ponude)</li>
+      </ul>
+      <p>---</p>
+      <h2>Google Oglašavanje za B2B</h2>
+      <p>B2B ima specifične izazove: duži sales cycle, više decision maker-a, manji volume pretrage.</p>
+      <h3>Osnovna struktura</h3>
       <pre className="border-2 border-gray-900 rounded-lg p-4 bg-gray-50 text-sm">
-        <code>
-          Brand Search (zaštita brenda){"\n"}
-          Solution Search (&quot;CRM softver&quot;){"\n"}
-          Problem Search (&quot;kako automatizovati procese&quot;){"\n"}
-          Competitor Search (imena konkurenata){"\n"}
-          Remarketing (nurturing)
-        </code>
+        <code>{`├── Brand Search (zaštita brenda)
+├── Solution Search ("CRM softver", "ERP sistem")
+├── Problem Search ("kako automatizovati procese")
+├── Competitor Search (imena konkurenata)
+└── Remarketing (nurturing)`}</code>
       </pre>
-
-      <h3>KljuÃ„Âne razlike od B2C</h3>
+      <h3>Ključne razlike od B2C</h3>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900">
               <th className="py-2 pr-4">Aspekt</th>
               <th className="py-2 pr-4">B2C</th>
-              <th className="py-2">B2B</th>
+              <th className="py-2 pr-4">B2B</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Sales cycle</td>
               <td className="py-2 pr-4">Kratak (minuti-dani)</td>
-              <td className="py-2">Dug (nedelje-meseci)</td>
+              <td className="py-2 pr-4">Dug (nedelje-meseci)</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Konverzija</td>
               <td className="py-2 pr-4">Direktna kupovina</td>
-              <td className="py-2">Lead (forma, demo)</td>
+              <td className="py-2 pr-4">Lead (forma, demo)</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Targeting</td>
               <td className="py-2 pr-4">Širok</td>
-              <td className="py-2">UÃ…Â¾i, specifiÃ„Âniji</td>
+              <td className="py-2 pr-4">Uži, specifičniji</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Keywords</td>
               <td className="py-2 pr-4">Transakcioni</td>
-              <td className="py-2">Informativni + transakcioni</td>
+              <td className="py-2 pr-4">Informativni + transakcioni</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">CPC</td>
-              <td className="py-2 pr-4">ObiÃ„Âno niÃ…Â¾i</td>
-              <td className="py-2">ObiÃ„Âno viÃ…Â¡i</td>
+              <td className="py-2 pr-4">Obično niži</td>
+              <td className="py-2 pr-4">Obično viši</td>
             </tr>
-            <tr>
+            <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Volume</td>
               <td className="py-2 pr-4">Veći</td>
-              <td className="py-2">Manji</td>
+              <td className="py-2 pr-4">Manji</td>
             </tr>
           </tbody>
         </table>
       </div>
-
-      <h3>Lead quality vs quantity</h3>
+      <h3>Lead Quality vs Quantity</h3>
+      <p>Najveća greška u B2B Google Ads: fokus na broj lead-ova umesto na kvalitet.</p>
+      <p>100 loših lead-ova košta više nego 10 kvalitetnih:</p>
       <ul>
-        <li>Offline conversion tracking iz CRM-a</li>
-        <li>Lead scoring i segmentacija</li>
-        <li>Agresivne negative keywords liste</li>
+        <li>Vreme sales tima se troši na kvalifikaciju</li>
+        <li>Pipeline se zagušuje</li>
+        <li>Moral pada</li>
       </ul>
-
+      <p><strong>Rešenje:</strong></p>
+      <ul>
+        <li>Offline conversion tracking — importujte prodaje iz CRM-a nazad u Google Ads</li>
+        <li>Lead scoring — ne tretirajte sve konverzije isto</li>
+        <li>Negative keywords agresivno — izbacite studente, job seekers, DIY-ere</li>
+      </ul>
       <h3>Remarketing za B2B</h3>
+      <p>B2B remarketing je drugačiji jer:</p>
+      <ul>
+        <li>Dužи consideration period</li>
+        <li>Više stakeholder-a u odluci</li>
+        <li>Content mora da edukuje</li>
+      </ul>
+      <p><strong>Strategija:</strong></p>
       <ol>
-        <li>Top of funnel Ã¢â‚¬â€ blog Ã„Âitaoci Ã¢â€ â€™ lead magnet</li>
-        <li>Middle of funnel Ã¢â‚¬â€ lead magnet Ã¢â€ â€™ case study, webinar</li>
-        <li>Bottom of funnel Ã¢â‚¬â€ pricing/demo Ã¢â€ â€™ direktna ponuda</li>
+        <li><strong>Top of funnel</strong> — blog čitaoci → lead magnet ponude</li>
+        <li><strong>Middle of funnel</strong> — lead magnet preuzimači → case study, webinar</li>
+        <li><strong>Bottom of funnel</strong> — stranica sa cenama, demo stranica → direktna ponuda</li>
       </ol>
-
-      <h2>Postavljanje temelja za uspešne kampanje</h2>
-      <h3>1. Conversion tracking</h3>
+      <p>---</p>
+      <h2>Postavljanje Temelja za Uspešne Kampanje</h2>
+      <p>Pre nego što pokrenete prvu kampanju, ove stvari moraju biti na mestu.</p>
+      <h3>1. Conversion Tracking</h3>
+      <p>Bez tracking-a letite slepo. Setup uključuje:</p>
       <ul>
-        <li>Google Tag Manager</li>
-        <li>GA4</li>
-        <li>Google Ads conversion tag</li>
-        <li>Enhanced conversions</li>
+        <li><strong>Google Tag Manager</strong> — centralno upravljanje tagovima</li>
+        <li><strong>GA4</strong> — analitika i atribucija</li>
+        <li><strong>Google Ads conversion tag</strong> — direktno praćenje</li>
+        <li><strong>Enhanced conversions</strong> — bolje matchovanje korisnika</li>
       </ul>
-      <p>
-        Pratite primarne konverzije (kupovina, lead), sekundarne konverzije i
-        micro konverzije (scroll, video view, vreme na sajtu).
-      </p>
-
-      <h3>2. Landing pages</h3>
+      <p>Pratite:</p>
       <ul>
-        <li>Jasan headline koji odgovara oglasu</li>
-        <li>Benefit-focused copy</li>
-        <li>Social proof (testimonijali, logoi klijenata)</li>
-        <li>Jedan CTA</li>
-        <li>Brzina ispod 3 sekunde</li>
+        <li>Primarne konverzije (kupovina, lead)</li>
+        <li>Sekundarne konverzije (add to cart, stranica sa cenama)</li>
+        <li>Micro konverzije (scroll, video view, vreme na sajtu)</li>
       </ul>
-
-      <h3>3. Keyword research</h3>
+      <h3>2. Landing Pages</h3>
+      <p>Pravilo: svaka kampanja treba svoj landing page.</p>
+      <p>Homepage nije landing page.</p>
+      <p>Landing page treba da ima:</p>
       <ul>
-        <li>Google Keyword Planner</li>
-        <li>Semrush/Ahrefs</li>
-        <li>Google Search Console</li>
+        <li><strong>Jasan headline</strong> koji odgovara oglasu</li>
+        <li><strong>Benefit-focused copy</strong> — šta korisnik dobija</li>
+        <li><strong>Social proof</strong> — testimonijali, logoi klijenata</li>
+        <li><strong>Jedan CTA</strong> — ne zbunjujte sa previše opcija</li>
+        <li><strong>Brzina</strong> — pod 3 sekunde load time</li>
       </ul>
-
-      <h3>4. Competitor analysis</h3>
+      <h3>3. Keyword Research</h3>
+      <p>Alati:</p>
       <ul>
-        <li>Ko se oglaava na vae kljune rei?</li>
+        <li><strong>Google Keyword Planner</strong> — besplatan, osnovni</li>
+        <li><strong>Semrush/Ahrefs</strong> — premium, detaljan</li>
+        <li><strong>Google Search Console</strong> — šta vam već donosi organic</li>
+      </ul>
+      <p>Fokus na:</p>
+      <ul>
+        <li><strong>Intent</strong> — šta korisnik želi da postigne</li>
+        <li><strong>Volume</strong> — koliko ljudi traži</li>
+        <li><strong>Competition</strong> — koliko je skupo</li>
+        <li><strong>Relevantnost</strong> — da li možete isporučiti</li>
+      </ul>
+      <h3>4. Competitor Analysis</h3>
+      <p>Pre početka, proverite:</p>
+      <ul>
+        <li>Ko se oglašava na vaše ključne reči?</li>
         <li>Kakve oglase koriste?</li>
         <li>Na koje landing pages vode?</li>
         <li>Koji su im USP-ovi?</li>
       </ul>
-
-      <h2>NajÃ„ÂeÃ…Â¡Ã„â€¡e greÃ…Â¡ke koje vidim</h2>
-      <ol>
-        <li>Nedostatak tracking-a</li>
-        <li>Loša struktura naloga</li>
-        <li>Ignorisanje negativnih kljuÃ„Ânih reÃ„Âi</li>
-        <li>Slanje saobraćaja na homepage</li>
-        <li>Nerealna oÃ„Âekivanja</li>
-        <li>Set-and-forget mentalitet</li>
-      </ol>
-
-      <h2>Kako meriti uspeh</h2>
-      <h3>KljuÃ„Âni KPI-jevi</h3>
-      <p className="font-semibold">Za eCommerce:</p>
+      <p>Alati: Semrush, SpyFu, ili jednostavno — pretražite kao korisnik.</p>
+      <p>---</p>
+      <h2>Najčešće Greške Koje Vidim</h2>
+      <h3>1. Nedostatak tracking-a</h3>
+      <p>Neverovatno koliko firmi troši hiljade evra bez pravilnog tracking-a. Ako ne znate šta konvertuje, ne možete optimizovati.</p>
+      <h3>2. Loša struktura naloga</h3>
+      <p>Sve u jednoj kampanji, sve ključne reči u jednoj ad grupi. Nemoguće optimizovati, nemoguće razumeti šta radi.</p>
+      <h3>3. Ignorisanje negativnih ključnih reči</h3>
+      <p>Plaćate za "besplatno", "kako napraviti sam", "posao" i slično. Novac bačen.</p>
+      <h3>4. Slanje saobraćaja na homepage</h3>
+      <p>Homepage nije dizajniran za konverziju. Landing page jeste.</p>
+      <h3>5. Nerealna očekivanja</h3>
+      <p>"Želim rezultate za nedelju dana sa budžetom od €300." Google Ads zahteva vreme za optimizaciju. Minimum 2-3 meseca za stabilne rezultate.</p>
+      <h3>6. Set-and-forget mentalitet</h3>
+      <p>Google Ads nije "postavi i zaboravi". Zahteva kontinuiranu optimizaciju: bid adjustments, negative keywords, ad testing, landing page testiranje.</p>
+      <p>---</p>
+      <h2>Kako Meriti Uspeh</h2>
+      <h3>Ključni KPI-jevi</h3>
+      <p><strong>Za eCommerce:</strong></p>
       <ul>
-        <li>ROAS</li>
-        <li>CPA</li>
-        <li>Conversion Rate</li>
-        <li>AOV</li>
+        <li><strong>ROAS</strong> (Return on Ad Spend) — prihod ÷ trošak oglasa</li>
+        <li><strong>CPA</strong> (Cost per Acquisition) — trošak po kupovini</li>
+        <li><strong>Conversion Rate</strong> — procenat posetilaca koji kupe</li>
+        <li><strong>AOV</strong> (Average Order Value) — prosečna vrednost porudžbine</li>
       </ul>
-      <p className="font-semibold">Za B2B:</p>
+      <p><strong>Za B2B:</strong></p>
       <ul>
-        <li>CPL</li>
-        <li>Lead Quality Score</li>
-        <li>SQL Rate</li>
-        <li>Pipeline Value</li>
+        <li><strong>CPL</strong> (Cost per Lead) — trošak po lead-u</li>
+        <li><strong>Lead Quality Score</strong> — procenat kvalifikovanih lead-ova</li>
+        <li><strong>SQL Rate</strong> — procenat lead-ova koji postanu sales qualified</li>
+        <li><strong>Pipeline Value</strong> — vrednost potencijalnih dealova</li>
       </ul>
-
       <h3>Benchmark-ovi za region</h3>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
@@ -725,86 +768,66 @@ function GoogleOglasavanjeZaFirmePost() {
             <tr className="border-b-2 border-gray-900">
               <th className="py-2 pr-4">Metrika</th>
               <th className="py-2 pr-4">eCommerce</th>
-              <th className="py-2">B2B</th>
+              <th className="py-2 pr-4">B2B</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">CTR</td>
               <td className="py-2 pr-4">2-4%</td>
-              <td className="py-2">3-6%</td>
+              <td className="py-2 pr-4">3-6%</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">Conversion Rate</td>
               <td className="py-2 pr-4">1-3%</td>
-              <td className="py-2">2-8%</td>
+              <td className="py-2 pr-4">2-8%</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">CPC (prosek)</td>
               <td className="py-2 pr-4">€0.20-0.60</td>
-              <td className="py-2">€0.50-2.00</td>
+              <td className="py-2 pr-4">€0.50-2.00</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">ROAS (cilj)</td>
               <td className="py-2 pr-4">3-5x</td>
-              <td className="py-2">-</td>
+              <td className="py-2 pr-4">-</td>
             </tr>
-            <tr>
+            <tr className="border-b border-gray-200">
               <td className="py-2 pr-4">CPL (cilj)</td>
               <td className="py-2 pr-4">-</td>
-              <td className="py-2">€10-50</td>
+              <td className="py-2 pr-4">€10-50</td>
             </tr>
           </tbody>
         </table>
       </div>
-
-      <h2>Sledeći koraci</h2>
+      <p>---</p>
+      <h2>Sledeći Koraci</h2>
+      <p>Ako ste spremni da počnete sa Google oglašavanjem:</p>
       <ol>
-        <li>Postavite tracking (nulti korak).</li>
-        <li>Definišite ciljeve (ROAS, CPL, broj prodaja).</li>
-        <li>Pripremite landing pages.</li>
-        <li>Krenite sa Search kampanjama.</li>
-        <li>Budite strpljivi (2-3 meseca pre evaluacije).</li>
+        <li><strong>Postavite tracking</strong> — ovo je nulti korak, ne preskačite</li>
+        <li><strong>Definišite ciljeve</strong> — šta je uspeh za vas (ROAS, CPL, broj prodaja)</li>
+        <li><strong>Pripremite landing pages</strong> — barem jedan per kampanja</li>
+        <li><strong>Krenite sa Search</strong> — najlakše za početak, najviši intent</li>
+        <li><strong>Budite strpljivi</strong> — minimum 2-3 meseca pre evaluacije</li>
       </ol>
-      <p>
-        Ako vam treba pomoÃ„â€¡ sa setup-om ili specifiÃ„Ânim pitanjima,{" "}
-        <Link href="/kontakt" className="underline">
-          zakažite konsultacije
-        </Link>
-        .
-      </p>
-
+      <p>Ako vam treba pomoć sa setup-om ili imate specifična pitanja, <Link href="/kontakt/">zakažite konsultacije →</Link></p>
+      <p>---</p>
       <h2>FAQ</h2>
-      <h3>Koliko kota Google oglaavanje?</h3>
-      <p>
-        U Srbiji, proseÃ„Âan CPC je Ã¢â€šÂ¬0.15-1.50. PreporuÃ„Âeni minimalni meseÃ„Âni
-        budžet je €500-1,000 za manje biznise, €2,000+ za ozbiljnije kampanje.
-      </p>
-      <h3>Da li Google oglaavanje radi za B2B?</h3>
-      <p>
-        Da. B2B ima duži sales cycle i manji volume, ali Google Ads je i dalje
-        jedan od najefikasnijih kanala za B2B lead generation.
-      </p>
+      <h3>Koliko košta Google oglašavanje?</h3>
+      <p>Zavisi od industrije i konkurencije. U Srbiji, prosečan CPC je €0.15-1.50. Preporučeni minimalni mesečni budžet je €500-1,000 za manje biznise, €2,000+ za ozbiljnije kampanje.</p>
+      <h3>Da li Google oglašavanje radi za B2B?</h3>
+      <p>Apsolutno. B2B ima specifičnosti (duži sales cycle, manji volume), ali Google Ads je i dalje jedan od najefikasnijih kanala za B2B lead generation.</p>
       <h3>Koliko vremena treba da vidim rezultate?</h3>
-      <p>
-        Prve indikacije za 2-4 nedelje. Prave rezultate za 2-3 meseca. Stabilan
-        nalog za 4-6 meseci.
-      </p>
-      <h3>Da li mi treba agencija za Google oglaavanje?</h3>
-      <p>
-        Ne obavezno. Za manje budžete (do €2,000), kvalitetan freelancer ili
-        DIY sa edukacijom može biti dovoljan. Za veće budžete i kompleksnije
-        kampanje, agencija ima smisla.
-      </p>
-      <h3>ta je bolje: Google Ads ili Facebook Ads?</h3>
-      <p>
-        Google Ads hvata ljude sa namerom (&quot;hoću da kupim X&quot;), Facebook Ads
-        hvata ljude po interesovanjima i demografiji. Za direktne prodaje,
-        obiÃ„Âno Google. Za brand awareness, obiÃ„Âno Facebook. Najbolje: kombinacija.
-      </p>
-
+      <p>Prve indikacije za 2-4 nedelje. Prave rezultate za 2-3 meseca. Optimizovan, stabilan nalog za 4-6 meseci.</p>
+      <h3>Da li mi treba agencija za Google oglašavanje?</h3>
+      <p>Ne obavezno. Za manje budžete (do €2,000), kvalitetan freelancer ili čak DIY sa edukacijom može biti dovoljan. Za veće budžete i kompleksnije kampanje, agencija ima smisla.</p>
+      <h3>Šta je bolje: Google Ads ili Facebook Ads?</h3>
+      <p>Zavisi od cilja. Google Ads hvata ljude sa namerom ("hoću da kupim X"). Facebook Ads hvata ljude po interesovanjima i demografiji. Za direktne prodaje, obično Google. Za brand awareness, obično Facebook. Najbolje: kombinacija.</p>
+      <p>---</p>
+      <p>*Poslednje ažuriranje: Januar 2026*</p>
+      <p>*<Link href="/o-meni/">Autor: Slobodan Jelisavac, Google Ads Consultant</Link>*</p>
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Januar 2026
+        Poslednje a?uriranje: Januar 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">
@@ -884,10 +907,10 @@ function PerformanceMaxVodicPost() {
         kampanjama:
       </p>
       <ul>
-        <li>❌ Ne vidite search terms (potpuno)</li>
-        <li>❌ Ne znate tačno koliko ide na koji kanal</li>
-        <li>❌ Ne možete isključiti specifične placements (većinu)</li>
-        <li>❌ Ne kontrolišete bid per keyword</li>
+        <li> Ne vidite search terms (potpuno)</li>
+        <li> Ne znate tačno koliko ide na koji kanal</li>
+        <li> Ne možete isključiti specifične placements (većinu)</li>
+        <li> Ne kontrolišete bid per keyword</li>
       </ul>
       <p>Dobijate agregirane podatke i morate verovati algoritmu.</p>
 
@@ -895,28 +918,28 @@ function PerformanceMaxVodicPost() {
       <h3>PMax ima smisla kada:</h3>
       <ul>
         <li>
-          ✅ <strong>Imate proven conversion history</strong>
+           <strong>Imate proven conversion history</strong>
           <ul>
             <li>Minimum 30 konverzija mesečno, idealno 50+</li>
             <li>Algoritam uči iz vaših podataka — treba mu data</li>
           </ul>
         </li>
         <li>
-          ✅ <strong>Želite skaliranje</strong>
+           <strong>Želite skaliranje</strong>
           <ul>
             <li>Dostigli ste plafon sa Search/Shopping</li>
             <li>Želite da dosegnete korisnike na drugim mestima</li>
           </ul>
         </li>
         <li>
-          ✅ <strong>Imate kvalitetne asset-e</strong>
+           <strong>Imate kvalitetne asset-e</strong>
           <ul>
             <li>Dobre slike, video, compelling copy</li>
             <li>Loši asset-i = loši rezultati</li>
           </ul>
         </li>
         <li>
-          ✅ <strong>Spremni ste za manje kontrole</strong>
+           <strong>Spremni ste za manje kontrole</strong>
           <ul>
             <li>Verujete podacima više nego intuiciji</li>
             <li>Imate strpljenja za learning period</li>
@@ -927,28 +950,28 @@ function PerformanceMaxVodicPost() {
       <h3>PMax nema smisla kada:</h3>
       <ul>
         <li>
-          ❌ <strong>Tek počinjete sa Google Ads</strong>
+           <strong>Tek počinjete sa Google Ads</strong>
           <ul>
             <li>Nemate conversion data za učenje</li>
             <li>Ne znate šta funkcioniše</li>
           </ul>
         </li>
         <li>
-          ❌ <strong>Imate mali budžet</strong>
+           <strong>Imate mali budžet</strong>
           <ul>
             <li>Ispod €1,000–1,500 mesečno</li>
             <li>Algoritam nema dovoljno podataka za optimizaciju</li>
           </ul>
         </li>
         <li>
-          ❌ <strong>Potrebna vam je granularna kontrola</strong>
+           <strong>Potrebna vam je granularna kontrola</strong>
           <ul>
             <li>Specifična brand vs non-brand alokacija</li>
             <li>Striktna kontrola troškova po proizvodu</li>
           </ul>
         </li>
         <li>
-          ❌ <strong>Conversion tracking nije 100%</strong>
+           <strong>Conversion tracking nije 100%</strong>
           <ul>
             <li>Loši podaci = loše odluke algoritma</li>
             <li>Najpre popravite tracking</li>
@@ -1004,7 +1027,7 @@ function PerformanceMaxVodicPost() {
         </li>
       </ul>
 
-      <h3>Koliko asset grupa treba?</h3>
+      <h3>Koliko asset grupa treba</h3>
       <p>Zavisi od kompleksnosti biznisa:</p>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
@@ -1404,28 +1427,28 @@ function PerformanceMaxVodicPost() {
       </p>
 
       <h2>FAQ</h2>
-      <h3>Da li PMax zamenjuje Shopping kampanje?</h3>
+      <h3>Da li PMax zamenjuje Shopping kampanje</h3>
       <p>
         Ne nužno. Mnogi oglašivači koriste oba — Standard Shopping za brand i
         kontrolu, PMax za prospecting. Google gura PMax, ali Shopping i dalje
         funkcioniše.
       </p>
-      <h3>Koliki budžet treba za PMax?</h3>
+      <h3>Koliki budžet treba za PMax</h3>
       <p>
         Minimum €50-100 dnevno za smislene rezultate. Ispod toga, algoritam nema
         dovoljno podataka.
       </p>
-      <h3>Zašto ne vidim sve search terms?</h3>
+      <h3>Zašto ne vidim sve search terms</h3>
       <p>
         Google ograničava search terms insights za PMax. Vidite samo kategorije i
         top terme, ne sve. Ovo je legitimna kritika PMax-a.
       </p>
-      <h3>Da li PMax kanibalizuje moje druge kampanje?</h3>
+      <h3>Da li PMax kanibalizuje moje druge kampanje</h3>
       <p>
         Može. PMax ima prioritet za Shopping queries. Pratite ukupne rezultate,
         ne samo PMax. Account-level performance je ono što se računa.
       </p>
-      <h3>Kada treba isključiti PMax?</h3>
+      <h3>Kada treba isključiti PMax</h3>
       <p>
         Kada konstantno underperformuje vs vaši ciljevi posle 8+ nedelja, kada je
         lead quality neprihvatljiva i ne poboljšava se, ili kada jednostavno ne
@@ -1587,10 +1610,10 @@ function GoogleShoppingVodicPost() {
       </pre>
       <p className="font-semibold">Primeri:</p>
       <ul>
-        <li>❌ Loše: "Patike muške"</li>
-        <li>✅ Dobro: "Nike Air Max 90 Muške Patike Bele Broj 43"</li>
-        <li>❌ Loše: "Laptop HP"</li>
-        <li>✅ Dobro: "HP Pavilion 15 Laptop i5 16GB RAM 512GB SSD 15.6 inch"</li>
+        <li> Loše: "Patike muške"</li>
+        <li> Dobro: "Nike Air Max 90 Muške Patike Bele Broj 43"</li>
+        <li> Loše: "Laptop HP"</li>
+        <li> Dobro: "HP Pavilion 15 Laptop i5 16GB RAM 512GB SSD 15.6 inch"</li>
       </ul>
       <p className="font-semibold">Šta uključiti u title:</p>
       <ol>
@@ -1976,27 +1999,27 @@ function GoogleShoppingVodicPost() {
       </p>
 
       <h2>FAQ</h2>
-      <h3>Koliko proizvoda treba za Shopping kampanje?</h3>
+      <h3>Koliko proizvoda treba za Shopping kampanje</h3>
       <p>
         Minimum 10-20, ali idealno 50+. Sa više proizvoda imate više prilike za
         impressions i konverzije.
       </p>
-      <h3>Da li mogu koristiti Shopping bez GTIN-a?</h3>
+      <h3>Da li mogu koristiti Shopping bez GTIN-a</h3>
       <p>
         Da, ali performanse mogu biti lošije. Google preferira proizvode sa GTIN
         za matching. Ako nemate GTIN, obavezno popunite brand + MPN.
       </p>
-      <h3>Koliki budžet treba za Shopping?</h3>
+      <h3>Koliki budžet treba za Shopping</h3>
       <p>
         Minimum €500-1,000 mesečno za smislene rezultate. Za ozbiljno testiranje
         i optimizaciju, €1,500-2,000+.
       </p>
-      <h3>Zašto moji proizvodi nisu prikazani?</h3>
+      <h3>Zašto moji proizvodi nisu prikazani</h3>
       <p>
         Najčešći razlozi su disapproved feed (proverite Merchant Center),
         prenizak bid, loš Quality Score ili issue sa dostupnošću.
       </p>
-      <h3>Shopping ili Search za eCommerce?</h3>
+      <h3>Shopping ili Search za eCommerce</h3>
       <p>
         Oba. Shopping za vizuelni, product-focused saobraćaj. Search za branded
         i specifične pretrage koje Shopping ne hvata dobro.
@@ -2019,7 +2042,7 @@ function AgencijaVsFreelancerPost() {
     <>
       <p>
         Odlučili ste da koristite Google Ads. Odlično. Sada dolazi pitanje koje
-        muči svakog marketing menadžera: ko će zapravo upravljati tim kampanjama?
+        muči svakog marketing menadžera: ko će zapravo upravljati tim kampanjama
       </p>
       <p>
         Imate tri opcije: angažujete agenciju, radite sa freelancerom/konsultantom,
@@ -2134,11 +2157,11 @@ function AgencijaVsFreelancerPost() {
 
       <h3>Kada izabrati agenciju</h3>
       <ul>
-        <li>✅ Ad spend preko €5,000 mesečno</li>
-        <li>✅ Potreban multi-channel pristup (Google + Meta + LinkedIn)</li>
-        <li>✅ Nemate vremena za duboku uključenost</li>
-        <li>✅ Želite strukturu i redovne izveštaje</li>
-        <li>✅ Planirate brzo skaliranje</li>
+        <li> Ad spend preko €5,000 mesečno</li>
+        <li> Potreban multi-channel pristup (Google + Meta + LinkedIn)</li>
+        <li> Nemate vremena za duboku uključenost</li>
+        <li> Želite strukturu i redovne izveštaje</li>
+        <li> Planirate brzo skaliranje</li>
       </ul>
 
       <h2>Opcija 2: Freelancer / konsultant</h2>
@@ -2179,11 +2202,11 @@ function AgencijaVsFreelancerPost() {
 
       <h3>Kada izabrati freelancera</h3>
       <ul>
-        <li>✅ Ad spend €1,000-10,000 mesečno</li>
-        <li>✅ Fokus na jednom kanalu (samo Google Ads)</li>
-        <li>✅ Želite duboku specijalizaciju</li>
-        <li>✅ Važna vam je direktna komunikacija</li>
-        <li>✅ Imate nekog ko može nadgledati rad</li>
+        <li> Ad spend €1,000-10,000 mesečno</li>
+        <li> Fokus na jednom kanalu (samo Google Ads)</li>
+        <li> Želite duboku specijalizaciju</li>
+        <li> Važna vam je direktna komunikacija</li>
+        <li> Imate nekog ko može nadgledati rad</li>
       </ul>
 
       <h2>Opcija 3: In-house tim</h2>
@@ -2245,11 +2268,11 @@ function AgencijaVsFreelancerPost() {
 
       <h3>Kada izabrati in-house</h3>
       <ul>
-        <li>✅ Ad spend preko €15,000-20,000 mesečno</li>
-        <li>✅ Marketing je core funkcija biznisa</li>
-        <li>✅ Imate resurse za recruitment i razvoj</li>
-        <li>✅ Planirate dugoročno (3+ godine)</li>
-        <li>✅ Važna vam je potpuna kontrola nad podacima</li>
+        <li> Ad spend preko €15,000-20,000 mesečno</li>
+        <li> Marketing je core funkcija biznisa</li>
+        <li> Imate resurse za recruitment i razvoj</li>
+        <li> Planirate dugoročno (3+ godine)</li>
+        <li> Važna vam je potpuna kontrola nad podacima</li>
       </ul>
 
       <h2>Hibridni modeli</h2>
@@ -2288,9 +2311,9 @@ function AgencijaVsFreelancerPost() {
 
       <h3>Korak 2: Procenite resurse</h3>
       <ul>
-        <li>Imate li nekoga ko može nadgledati eksternog partnera?</li>
-        <li>Koliko vremena možete posvetiti koordinaciji?</li>
-        <li>Imate li budžet za 6+ meseci eksperimentisanja?</li>
+        <li>Imate li nekoga ko može nadgledati eksternog partnera</li>
+        <li>Koliko vremena možete posvetiti koordinaciji</li>
+        <li>Imate li budžet za 6+ meseci eksperimentisanja</li>
       </ul>
 
       <h3>Korak 3: Definišite prioritete</h3>
@@ -2306,22 +2329,22 @@ function AgencijaVsFreelancerPost() {
       <h3>Korak 4: Evaluirajte opcije</h3>
       <p>Razgovarajte sa 2-3 potencijalna partnera u svakoj kategoriji. Pitajte:</p>
       <ul>
-        <li>Koji su vaši slični klijenti?</li>
-        <li>Kako izgleda prva 3 meseca?</li>
-        <li>Šta se dešava kada nešto krene po zlu?</li>
-        <li>Ko konkretno radi na mom nalogu?</li>
-        <li>Kako merite uspeh?</li>
+        <li>Koji su vaši slični klijenti</li>
+        <li>Kako izgleda prva 3 meseca</li>
+        <li>Šta se dešava kada nešto krene po zlu</li>
+        <li>Ko konkretno radi na mom nalogu</li>
+        <li>Kako merite uspeh</li>
       </ul>
 
       <h2>Crvene zastavice (za bilo koju opciju)</h2>
       <ul>
-        <li>❌ Garantuju specifične rezultate pre audita</li>
-        <li>❌ Ne žele da vam daju pristup nalogu</li>
-        <li>❌ Insistiraju na dugim ugovorima bez izlazne klauzule</li>
-        <li>❌ Ne mogu objasniti šta konkretno rade</li>
-        <li>❌ Komuniciraju sporo od prvog kontakta</li>
-        <li>❌ Nemaju reference u vašoj industriji (ili sličnoj)</li>
-        <li>❌ Cena je previše dobra da bi bila istinita</li>
+        <li> Garantuju specifične rezultate pre audita</li>
+        <li> Ne žele da vam daju pristup nalogu</li>
+        <li> Insistiraju na dugim ugovorima bez izlazne klauzule</li>
+        <li> Ne mogu objasniti šta konkretno rade</li>
+        <li> Komuniciraju sporo od prvog kontakta</li>
+        <li> Nemaju reference u vašoj industriji (ili sličnoj)</li>
+        <li> Cena je previše dobra da bi bila istinita</li>
       </ul>
 
       <h2>Zaključak</h2>
@@ -2361,28 +2384,28 @@ function AgencijaVsFreelancerPost() {
       </p>
 
       <h2>FAQ</h2>
-      <h3>Da li mala firma treba Google Ads agenciju?</h3>
+      <h3>Da li mala firma treba Google Ads agenciju</h3>
       <p>
         Ne obavezno. Za budžete do €2,000-3,000 mesečno, kvalitetan freelancer je
         često bolja vrednost — više personalizovane pažnje za istu ili nižu cenu.
       </p>
-      <h3>Koliko košta Google Ads agencija u Srbiji?</h3>
+      <h3>Koliko košta Google Ads agencija u Srbiji</h3>
       <p>
         Cene variraju od €400-500 za manje agencije do €1,500-3,000+ za veće.
         Procenat od ad spend-a je obično 10-20%.
       </p>
-      <h3>Može li freelancer da vodi veliki budžet?</h3>
+      <h3>Može li freelancer da vodi veliki budžet</h3>
       <p>
         Da, ali treba da ima kapacitet i iskustvo. Za budžete preko €20,000
         mesečno, razmotrite ili veoma iskusnog freelancera ili agenciju.
       </p>
-      <h3>Šta je bolje za eCommerce?</h3>
+      <h3>Šta je bolje za eCommerce</h3>
       <p>
         Zavisi od kompleksnosti. Za čist Google Shopping + Search, specijalizovani
         freelancer može biti odličan. Za multi-channel (Google + Meta + email),
         agencija ima više smisla.
       </p>
-      <h3>Kako proveriti kvalitet agencije/freelancera?</h3>
+      <h3>Kako proveriti kvalitet agencije/freelancera</h3>
       <p>
         Tražite reference iz vaše industrije, pitajte za konkretan proces rada i
         proverite kako komuniciraju pre angažovanja. Kvalitet pre-sales
@@ -2449,7 +2472,7 @@ function ConversionTrackingVodicPost() {
       <h3>Optimizacija bez podataka je nagađanje</h3>
       <p>
         Ako ne znate koja ključna reč, oglas ili audience donosi konverzije, kako
-        ćete optimizovati?
+        ćete optimizovati
       </p>
       <p>
         Bez tracking-a: “Mislim da ova kampanja radi dobro.” Sa tracking-om:
@@ -2633,7 +2656,7 @@ Trigger: Form Submission
 Server-side: Browser → Vaš Server → Google`}</code>
       </pre>
 
-      <h3>Zašto server-side?</h3>
+      <h3>Zašto server-side</h3>
       <ol>
         <li>Zaobilazi ad blockere — podaci idu sa vašeg domena</li>
         <li>Bolja kontrola podataka — vi odlučujete šta se šalje</li>
@@ -2655,7 +2678,7 @@ Server-side: Browser → Vaš Server → Google`}</code>
         <li>Mesečni trošak €50-500</li>
       </ul>
 
-      <h3>Da li vam treba server-side?</h3>
+      <h3>Da li vam treba server-side</h3>
       <p className="font-semibold">DA, ako:</p>
       <ul>
         <li>Ad spend €5,000+ mesečno</li>
@@ -2716,11 +2739,11 @@ Server-side: Browser → Vaš Server → Google`}</code>
       <p className="font-semibold">Rešenje:</p>
       <p>Dodajte micro konverzije (add to cart, pricing page) kao observation.</p>
 
-      <h2>Dijagnostika: da li vaš tracking radi?</h2>
+      <h2>Dijagnostika: da li vaš tracking radi</h2>
       <h3>Koraci za proveru</h3>
       <ol>
         <li>Google Tag Assistant: prođite kroz conversion flow i proverite tag</li>
-        <li>Google Ads → Conversions: status “Recording conversions” je zelen?</li>
+        <li>Google Ads → Conversions: status “Recording conversions” je zelen</li>
         <li>Real-time provera u GA4 i Google Ads reports</li>
         <li>Cross-check sa CRM/backend podacima</li>
       </ol>
@@ -2787,27 +2810,27 @@ Abc123xyz..., Offline Sale, 2026-01-15 14:30:00, 5000`}</code>
       </p>
 
       <h2>FAQ</h2>
-      <h3>Koliko vremena treba da se konverzija pojavi u Google Ads?</h3>
+      <h3>Koliko vremena treba da se konverzija pojavi u Google Ads</h3>
       <p>
         Obično 3-6 sati za online konverzije. Može biti i do 24 sata. Offline
         import zavisi od frekvencije uploada.
       </p>
-      <h3>Zašto se broj konverzija u GA4 i Google Ads razlikuje?</h3>
+      <h3>Zašto se broj konverzija u GA4 i Google Ads razlikuje</h3>
       <p>
         Različiti attribution modeli, različiti conversion windows i način
         brojanja. Razlika 10-20% je normalna.
       </p>
-      <h3>Da li mi treba developer za postavljanje tracking-a?</h3>
+      <h3>Da li mi treba developer za postavljanje tracking-a</h3>
       <p>
         Za osnovni setup sa GTM — ne obavezno. Za Enhanced Conversions i
         server-side — verovatno da.
       </p>
-      <h3>Šta ako nemam thank-you stranicu?</h3>
+      <h3>Šta ako nemam thank-you stranicu</h3>
       <p>
         Koristite event-based tracking: form submission event, AJAX response ili
         redirect URL parameters.
       </p>
-      <h3>Koliko konverzija treba za Smart Bidding?</h3>
+      <h3>Koliko konverzija treba za Smart Bidding</h3>
       <p>
         Minimum 15 u poslednjih 30 dana za Target CPA/ROAS. Idealno 30-50 za
         stabilnije rezultate.
@@ -2837,20 +2860,20 @@ type Post = {
 const posts: Post[] = [
   {
     slug: "koliko-kosta-google-ads",
-    title: "Koliko Kota Google Ads? Cene, Budeti i ROI u Srbiji [2026]",
+    title: "Koliko Košta Google Ads? Cene, Budžeti i ROI u Srbiji [2026]",
     date: "2026-01-26",
     category: "Google Ads",
     metaDescription:
-      "Koliko zaista kota Google Ads u Srbiji? Detaljni pregled cena po industrijama, minimalni budeti, trokovi agencija i kako izraunati ROI pre nego to potroite prvi dinar.",
+      "Koliko zaista košta Google Ads u Srbiji? Detaljni pregled cena po industrijama, minimalni budžeti, troškovi agencija i kako izračunati ROI pre nego što potrošite prvi dinar.",
     content: <KolikoKostaGoogleAdsPost />
   },
   {
     slug: "google-oglasavanje-za-firme",
-    title: "Google OglaÃ…Â¡avanje za Firme: Kompletan VodiÃ„Â za B2B i eCommerce [2026]",
+    title: "Google Oglašavanje za Firme: Kompletan Vodič za B2B i eCommerce [2026]",
     date: "2026-01-26",
     category: "Google oglašavanje",
     metaDescription:
-      "Kompletan vodiÃ„Â za Google oglaÃ…Â¡avanje prilagoÃ„â€˜en firmama. Strategije za B2B i eCommerce, tipovi kampanja, budÃ…Â¾etiranje i merenje rezultata Ã¢â‚¬â€ sve na jednom mestu.",
+      "Kompletan vodič za Google oglašavanje prilagođen firmama. Strategije za B2B i eCommerce, tipovi kampanja, budžetiranje i merenje rezultata — sve na jednom mestu.",
     content: <GoogleOglasavanjeZaFirmePost />
   },
     {
@@ -2885,7 +2908,7 @@ const posts: Post[] = [
     date: "2026-01-26",
     category: "Google Ads",
     metaDescription:
-      "Agencija, freelancer ili in-house tim za Google Ads? Detaljno poređenje troškova, prednosti i mana svake opcije. Saznajte koja je prava za vaš budžet i ciljeve.",
+      "Agencija, freelancer ili in-house tim za Google Ads Detaljno poređenje troškova, prednosti i mana svake opcije. Saznajte koja je prava za vaš budžet i ciljeve.",
     content: <AgencijaVsFreelancerPost />
   },
   {
@@ -2937,29 +2960,65 @@ export default async function BlogPostPage({
   }
 
   return (
-    <div className="section-padding">
-      <div className="container-custom grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <article className="lg:col-span-2">
-          <div className="text-sm text-gray-500 mb-3">
-            {post.category} · {post.date}
-          </div>
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+    <div className="bg-slate-950 text-white">
+      <section className="relative overflow-hidden pt-16 pb-28 md:pt-24 md:pb-32">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.25),_transparent_55%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.85),rgba(2,6,23,1))]" />
+        <div className="container-custom px-4 relative">
+          <p className="text-xs uppercase tracking-[0.25em] text-slate-300">
+            Blog
+          </p>
+          <h1 className="mt-4 text-3xl md:text-5xl font-heading font-bold max-w-4xl">
             {post.title}
           </h1>
-          <div className="prose max-w-none text-gray-700">
-            {post.content}
-          </div>
-        </article>
-        <aside className="border-2 border-gray-900 rounded-lg p-6 h-fit">
-          <h2 className="text-xl font-heading font-semibold mb-4">Sidebar</h2>
-          <p className="text-gray-600 mb-4">
-            Placeholder for related posts, newsletter signup, or CTA.
+          <p className="mt-4 text-sm text-slate-300">
+            <Link href="/blog" className="underline">
+              Blog
+            </Link>{" "}
+            <span className="mx-2">|</span>
+            {post.category}
+            <span className="mx-2">|</span>
+            {post.date}
           </p>
-          <Link href="/blog" className="text-primary font-semibold">
-            Nazad na Blog
-          </Link>
-        </aside>
-      </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-100 text-gray-900 pb-16">
+        <div className="container-custom px-4 -mt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-[280px,1fr] gap-8">
+            <aside className="hidden lg:block">
+              <div className="sticky top-24">
+                <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+                  <div className="text-sm uppercase tracking-wide text-gray-500">
+                    Besplatna analiza
+                  </div>
+                  <h2 className="mt-2 text-lg font-heading font-semibold">
+                    Želite audit kampanja
+                  </h2>
+                  <p className="mt-2 text-sm text-gray-600">
+                    Dobijte jasnu sliku performansi i prve korake za optimizaciju.
+                  </p>
+                  <Link
+                    href="/kontakt"
+                    className="btn-secondary inline-block mt-4 w-full text-center"
+                  >
+                    Zakažite konsultacije
+                  </Link>
+                </div>
+              </div>
+            </aside>
+
+            <article className="bg-white border-2 border-gray-900 rounded-xl p-6 md:p-12 shadow-card">
+              <div className="text-sm text-gray-500 mb-4">
+                {post.category} · {post.date}
+              </div>
+              <div className="prose prose-slate max-w-none text-gray-700">
+                {post.content}
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

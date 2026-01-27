@@ -1386,6 +1386,202 @@ Reply "TASK 017 COMPLETE" and STOP.
 
 ---
 
-# CONTINUE FROM HERE
+# TASK 018: Create Service Page Template
 
-Tasks 001-017 cover homepage + core pages. More tasks for individual service pages coming next session.
+Create reusable template at `src/components/templates/ServicePageTemplate.tsx`
+Props: title, subtitle, problems (array), solutions (array), pricing (array), faqs (array)
+Sections: Hero, Problem (3 cards), Solution, Pricing (3-tier cards), FAQ accordion, CTA
+Use existing UI components. Reference content-brief-service-pages.md for structure.
+
+WHEN DONE: Reply "TASK 018 COMPLETE"
+
+---
+
+# TASK 019-030: Individual Service Pages
+
+Create these pages using ServicePageTemplate. Get content from `/c/Users/el3ct/dev/Website/jelisavac/Novi sajt - Slobodan Jelisavac x Asarum/content-brief-service-pages.md`
+
+| Task | File Path | Content Section |
+|------|-----------|-----------------|
+| 019 | src/app/usluge/google-ads-upravljanje/page.tsx | Section 2 |
+| 020 | src/app/usluge/google-ads-audit/page.tsx | Section 3 |
+| 021 | src/app/usluge/google-shopping/page.tsx | Section 4 |
+| 022 | src/app/usluge/performance-max/page.tsx | Section 5 |
+| 023 | src/app/usluge/search-kampanje/page.tsx | Section 6 |
+| 024 | src/app/usluge/remarketing/page.tsx | Section 7 |
+| 025 | src/app/usluge/youtube-oglasi/page.tsx | Section 8 |
+| 026 | src/app/usluge/google-ads-za-b2b/page.tsx | Section 9 |
+| 027 | src/app/usluge/google-ads-za-ecommerce/page.tsx | Section 10 |
+| 028 | src/app/usluge/seo/page.tsx | Section 12 |
+| 029 | src/app/usluge/meta-oglasavanje/page.tsx | Section 13 |
+| 030 | src/app/usluge/performance-marketing/page.tsx | Section 16 |
+
+Do ONE page at a time. Reply "TASK XXX COMPLETE" after each.
+
+---
+
+# TASK 031: Create FAQ Accordion Component
+
+File: `src/components/ui/Accordion.tsx`
+- Expandable/collapsible items
+- Plus/minus icon toggle
+- Smooth animation
+- Export from ui/index.ts
+
+---
+
+# TASK 032: Create Case Studies Listing Page
+
+File: `src/app/case-studies/page.tsx`
+- Grid of 3 case study cards (Mobelaris, DesignerGlasses, SoundBox)
+- Use Card component
+- Link to individual pages
+
+---
+
+# TASK 033-035: Individual Case Study Pages
+
+| Task | File | Client |
+|------|------|--------|
+| 033 | src/app/case-studies/mobelaris/page.tsx | Mobelaris |
+| 034 | src/app/case-studies/designerglasses/page.tsx | DesignerGlasses |
+| 035 | src/app/case-studies/soundboxstore/page.tsx | SoundBox Store |
+
+Each page: Hero, Challenge, Solution, Results (metrics), Testimonial, CTA
+Use data from website-structure doc.
+
+---
+
+# TASK 036: Create Blog Listing Page
+
+File: `src/app/blog/page.tsx`
+- Grid of blog post cards
+- Static data array with 3 placeholder posts
+- Each card: title, excerpt, date, category, link
+
+---
+
+# TASK 037: Create Blog Post Template
+
+File: `src/app/blog/[slug]/page.tsx`
+- Dynamic route
+- Static params for 3 placeholder posts
+- Layout: Title, meta, content area, sidebar placeholder
+
+---
+
+# TASK 038: Create Pricing Page
+
+File: `src/app/cenovnik/page.tsx`
+Content from website-structure doc Section "CENOVNIK STRUKTURA"
+- 3 tier cards (Starter €300, Standard Na upit, Premium Na upit)
+- Additional services section
+- CTA
+
+---
+
+# TASK 039: Vercel Deployment
+
+Run: `npx vercel` or push to GitHub and connect to Vercel
+Verify all pages work on production URL
+
+---
+
+# TASK 040-045: SEO & i18n
+
+| Task | Description |
+|------|-------------|
+| 040 | Add metadata to all pages (use generateMetadata in each page.tsx) |
+| 041 | Create src/app/sitemap.ts for auto sitemap generation |
+| 042 | Create src/app/robots.ts |
+| 043 | Add Schema markup (JSON-LD) to homepage and service pages |
+| 044 | Set up next-intl or similar for SR/EN - restructure to /[locale]/ routes |
+| 045 | Add language switcher to Header |
+
+# TASK 046-048: Final Polish
+
+| Task | Description |
+|------|-------------|
+| 046 | Add Open Graph images (create /public/og-image.png) |
+| 047 | Test all pages mobile/desktop |
+| 048 | Deploy final version to Vercel |
+
+# TASK 049-061: CONTENT UPDATE - Service Pages
+
+Content source: `/c/Users/el3ct/dev/Website/jelisavac/Novi sajt - Slobodan Jelisavac x Asarum-20260126T084153Z-3-001/Novi sajt - Slobodan Jelisavac x Asarum`
+
+**IMPORTANT RULES:**
+- **PRESERVE SERBIAN DIACRITICS** (č, ć, š, ž, đ, Č, Ć, Š, Ž, Đ) - DO NOT remove or replace them!
+- Remove ALL AI signals (checkboxes [ ], TODO markers, etc)
+- Convert markdown to proper JSX/TSX
+- Style with Tailwind classes
+- Keep SEO meta tags updated
+- Use existing components (Section, Card, Button)
+
+| Task | Content File | Target Page |
+|------|--------------|-------------|
+| 049 | _sr_usluge_.md | src/app/usluge/page.tsx |
+| 050 | _sr_usluge_google-ads-upravljanje_.md | src/app/usluge/google-ads-upravljanje/page.tsx |
+| 051 | _sr_usluge_google-ads-audit_.md | src/app/usluge/google-ads-audit/page.tsx |
+| 052 | _sr_usluge_google-shopping-kampanje_.md | src/app/usluge/google-shopping/page.tsx |
+| 053 | _sr_usluge_performance-max_.md | src/app/usluge/performance-max/page.tsx |
+| 054 | _sr_usluge_search-kampanje_.md | src/app/usluge/search-kampanje/page.tsx |
+| 055 | _sr_usluge_remarketing_.md | src/app/usluge/remarketing/page.tsx |
+| 056 | _sr_usluge_youtube-oglasi_.md | src/app/usluge/youtube-oglasi/page.tsx |
+| 057 | _sr_usluge_google-ads-b2b_.md | src/app/usluge/google-ads-za-b2b/page.tsx |
+| 058 | _sr_usluge_google-ads-ecommerce_.md | src/app/usluge/google-ads-za-ecommerce/page.tsx |
+| 059 | _sr_usluge_google-ads-saas_.md | src/app/usluge/google-ads-za-saas/page.tsx |
+| 060 | _sr_usluge_konsultacije_.md | src/app/usluge/konsultacije/page.tsx |
+| 061 | _sr_usluge_starter-paket_.md | src/app/usluge/starter-paket/page.tsx |
+| 062 | _sr_usluge_performance-marketing_.md | src/app/usluge/performance-marketing/page.tsx |
+
+Reply "TASK XXX COMPLETE" after each.
+
+---
+
+# TASK 063-077: CONTENT UPDATE - Blog/Guide Posts
+
+Create blog posts from these files. Place in `src/app/blog/[slug]/` or create static pages.
+
+| Task | Content File | Slug |
+|------|--------------|------|
+| 063 | _google-ads-vodic_koliko-kosta-google-ads_.md | koliko-kosta-google-ads |
+| 064 | _google-ads-vodic_google-oglasavanje-za-firme_.md | google-oglasavanje-za-firme |
+| 065 | _google-ads-vodic_performance-max_.md | performance-max-vodic |
+| 066 | _google-ads-vodic_google-shopping-kampanje_.md | google-shopping-vodic |
+| 067 | _google-ads-vodic_agencija-vs-freelancer-vs-inhouse_.md | agencija-vs-freelancer |
+| 068 | _google-ads-vodic_conversion-tracking_.md | conversion-tracking-vodic |
+| 069 | _google-ads-vodic_google-ads-greske_.md | google-ads-greske |
+| 070 | _google-ads-vodic_zasto-google-ads-ne-donosi-rezultate_.md | zasto-nema-rezultata |
+| 071 | _google-ads-vodic_google-ads-ecommerce-vs-b2b_.md | ecommerce-vs-b2b |
+| 072 | _google-ads-vodic_google-ads-vs-meta-ads_.md | google-ads-vs-meta |
+| 073 | _google-ads-vodic_google-ads-audit_.md | google-ads-audit-vodic |
+| 074 | _google-ads-vodic_kljucne-reci_.md | kljucne-reci-vodic |
+| 075 | _google-ads-vodic_negative-keywords_.md | negativne-kljucne-reci |
+| 076 | _google-ads-vodic_quality-score_.md | quality-score-vodic |
+| 077 | _google-ads-vodic_remarketing_.md | remarketing-vodic |
+
+For each blog post:
+1. Read content file
+2. Create page at src/app/blog/[slug]/page.tsx
+3. Remove AI artifacts (checkboxes, TODOs)
+4. Add proper SEO metadata (generateMetadata)
+5. Style with Tailwind
+6. Add internal links where relevant
+
+Reply "TASK XXX COMPLETE" after each.
+
+---
+
+# TASK 078: Update Blog Listing
+
+Update `src/app/blog/page.tsx` to include all 15 new blog posts with:
+- Title, excerpt, category, date
+- Link to each post
+- Grid layout with BlogPostCard
+
+---
+
+# DONE
+
+All tasks complete. Site ready for launch.
