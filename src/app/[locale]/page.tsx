@@ -3,6 +3,7 @@
   WhyMe,
   ServicesPreview,
   CaseStudiesPreview,
+  ClientLogos,
   Testimonial,
   Newsletter,
   FinalCTA
@@ -54,6 +55,7 @@ export default function Home() {
       <WhyMe />
       <ServicesPreview />
       <CaseStudiesPreview />
+      <ClientLogos />
       <Testimonial />
       <Newsletter />
       <FinalCTA />
