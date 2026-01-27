@@ -5,19 +5,42 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { Button } from "@/components/ui";
 
-const navItems = [
-  { label: "Početna", href: "/" },
+const serviceGroups = [
   {
-    label: "Usluge",
-    href: "/usluge",
-    children: [
+    title: "Google Ads",
+    items: [
       { label: "Google Ads Upravljanje", href: "/usluge/google-ads-upravljanje" },
-      { label: "Performance Max", href: "/usluge/performance-max" },
+      { label: "Google Ads Audit", href: "/usluge/google-ads-audit" },
+      { label: "Search Kampanje", href: "/usluge/search-kampanje" },
       { label: "Google Shopping", href: "/usluge/google-shopping" },
-      { label: "SEO", href: "/usluge/seo" },
-      { label: "Meta Oglašavanje", href: "/usluge/meta-oglasavanje" },
+      { label: "Performance Max", href: "/usluge/performance-max" },
+      { label: "Remarketing", href: "/usluge/remarketing" },
+      { label: "YouTube Oglasi", href: "/usluge/youtube-oglasi" },
     ]
   },
+  {
+    title: "Po Industriji",
+    items: [
+      { label: "Google Ads za B2B", href: "/usluge/google-ads-za-b2b" },
+      { label: "Google Ads za eCommerce", href: "/usluge/google-ads-za-ecommerce" },
+      { label: "Google Ads za SaaS", href: "/usluge/google-ads-za-saas" },
+    ]
+  },
+  {
+    title: "Ostale Usluge",
+    items: [
+      { label: "SEO", href: "/usluge/seo" },
+      { label: "Meta Oglašavanje", href: "/usluge/meta-oglasavanje" },
+      { label: "Performance Marketing", href: "/usluge/performance-marketing" },
+      { label: "Konsultacije", href: "/usluge/konsultacije" },
+      { label: "Starter Paket", href: "/usluge/starter-paket" },
+    ]
+  }
+];
+
+const navItems = [
+  { label: "Početna", href: "/" },
+  { label: "Usluge", href: "/usluge", hasServiceMenu: true },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Blog", href: "/blog" },
   { label: "O Meni", href: "/o-meni" },
@@ -45,7 +68,7 @@ export function Header() {
               <div
                 key={item.label}
                 className="relative pb-2"
-                onMouseEnter={() => item.children && setActiveDropdown(item.label)}
+                onMouseEnter={() => item.hasServiceMenu && setActiveDropdown(item.label)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
@@ -53,23 +76,40 @@ export function Header() {
                   className="font-medium hover:text-primary transition-colors"
                 >
                   {item.label}
-                  {item.children && (
+                  {item.hasServiceMenu && (
                     <span className="ml-1">▼</span>
                   )}
                 </Link>
 
-                {/* Dropdown */}
-                {item.children && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 w-64 bg-white border-2 border-gray-900 rounded-lg shadow-card py-2">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.label}
-                        href={child.href}
-                        className="block px-4 py-2 hover:bg-gray-50 transition-colors"
-                      >
-                        {child.label}
+                {/* Services Mega Menu */}
+                {item.hasServiceMenu && activeDropdown === item.label && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-[700px] bg-white border-2 border-gray-900 rounded-lg shadow-card p-6">
+                    <div className="grid grid-cols-3 gap-6">
+                      {serviceGroups.map((group) => (
+                        <div key={group.title}>
+                          <h4 className="font-heading font-semibold text-sm text-gray-500 mb-3 uppercase tracking-wide">
+                            {group.title}
+                          </h4>
+                          <ul className="space-y-2">
+                            {group.items.map((service) => (
+                              <li key={service.href}>
+                                <Link
+                                  href={service.href}
+                                  className="block text-sm hover:text-primary transition-colors"
+                                >
+                                  {service.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="mt-4 pt-4 border-t border-gray-200">
+                      <Link href="/usluge" className="text-primary font-semibold text-sm hover:underline">
+                        Sve usluge →
                       </Link>
-                    ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -116,7 +156,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t-2 border-gray-900 py-4 px-4">
+          <div className="lg:hidden border-t-2 border-gray-900 py-4 px-4 max-h-[80vh] overflow-y-auto">
             {navItems.map((item) => (
               <div key={item.label} className="py-2">
                 <Link
@@ -126,17 +166,22 @@ export function Header() {
                 >
                   {item.label}
                 </Link>
-                {item.children && (
+                {item.hasServiceMenu && (
                   <div className="pl-4">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.label}
-                        href={child.href}
-                        className="block py-2 text-gray-600"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {child.label}
-                      </Link>
+                    {serviceGroups.map((group) => (
+                      <div key={group.title} className="mb-3">
+                        <span className="text-xs text-gray-500 uppercase tracking-wide">{group.title}</span>
+                        {group.items.map((service) => (
+                          <Link
+                            key={service.href}
+                            href={service.href}
+                            className="block py-1.5 text-gray-600 text-sm"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {service.label}
+                          </Link>
+                        ))}
+                      </div>
                     ))}
                   </div>
                 )}
