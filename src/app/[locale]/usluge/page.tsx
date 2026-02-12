@@ -438,14 +438,16 @@ export default function ServicesPage() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {entryPoints.map((entry) => (
-            <Card key={entry.title} className="h-full">
+            <Card key={entry.title} className="h-full flex flex-col">
               <h3 className="text-xl font-heading font-bold mb-1">
                 {entry.title}
               </h3>
               <p className="text-lg font-heading font-bold text-primary mb-3">
                 {entry.price}
               </p>
-              <p className="text-gray-600 text-sm mb-5">{entry.desc}</p>
+              <p className="text-gray-600 text-sm mb-5 flex-1">
+                {entry.desc}
+              </p>
               <Link
                 href={entry.href}
                 className="text-primary font-semibold text-sm"

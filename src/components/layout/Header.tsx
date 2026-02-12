@@ -142,7 +142,7 @@ export function Header() {
               </Link>
             </div>
             <Button href="/kontakt" variant="secondary">
-              Zakaži Poziv
+              Zakažite konsultaciju
             </Button>
           </div>
 
@@ -195,7 +195,7 @@ export function Header() {
             ))}
             <div className="mt-4">
               <Button href="/kontakt" variant="secondary" className="w-full text-center">
-                Zakaži Poziv
+                Zakažite konsultaciju
               </Button>
             </div>
             <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold border-2 border-gray-900 rounded-full px-3 py-2">
