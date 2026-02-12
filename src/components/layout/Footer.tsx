@@ -4,8 +4,6 @@ const footerLinks = {
   usluge: [
     { label: "Google Ads Upravljanje", href: "/usluge/google-ads-upravljanje" },
     { label: "Performance Max", href: "/usluge/performance-max" },
-    { label: "SEO", href: "/usluge/seo" },
-    { label: "Meta Oglašavanje", href: "/usluge/meta-oglasavanje" },
     { label: "Performance Marketing", href: "/usluge/performance-marketing" },
   ],
   resursi: [

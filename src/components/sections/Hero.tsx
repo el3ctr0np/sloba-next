@@ -6,19 +6,23 @@ interface HeroProps {
   subtitle: string;
   ctaText?: string;
   ctaHref?: string;
+  secondaryCtaText?: string;
+  secondaryCtaHref?: string;
   trustBadges?: string[];
 }
 
 export function Hero({
   title,
   subtitle,
-  ctaText = "Zakažite Konsultaciju",
+  ctaText = "Zakažite besplatnu konsultaciju",
   ctaHref = "/kontakt",
+  secondaryCtaText,
+  secondaryCtaHref,
   trustBadges = []
 }: HeroProps) {
   return (
     <section
-      className="relative py-20 md:py-32 px-4 bg-gray-50 bg-cover bg-[right_center]"
+      className="relative py-12 md:py-20 px-4 bg-gray-50 bg-cover bg-[right_center]"
       style={{ backgroundImage: "url('/hero-bg.webp')" }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-900/50 to-transparent" />
@@ -26,19 +30,21 @@ export function Hero({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 leading-tight">
               {title}
             </h1>
-            <p className="text-xl text-slate-200 mb-8">
+            <p className="text-xl text-slate-200 mb-6">
               {subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button href={ctaHref} variant="secondary">
                 {ctaText}
               </Button>
-              <Button href="/case-studies" variant="primary">
-                Pogledajte Rezultate
-              </Button>
+              {secondaryCtaText && secondaryCtaHref && (
+                <Button href={secondaryCtaHref} variant="primary">
+                  {secondaryCtaText}
+                </Button>
+              )}
             </div>
 
             {/* Trust Badges */}
@@ -56,7 +62,7 @@ export function Hero({
           {/* Image Placeholder */}
           <div className="flex justify-center">
             <div
-              className="relative w-full max-w-sm border border-white/20 rounded-lg overflow-hidden bg-slate-950/40 backdrop-blur-sm shadow-card"
+              className="relative w-full max-w-xl border border-white/20 rounded-lg overflow-hidden bg-slate-950/40 backdrop-blur-sm shadow-card"
               style={{ aspectRatio: "1023 / 781" }}
             >
               <Image

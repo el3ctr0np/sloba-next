@@ -1,71 +1,50 @@
 import Image from "next/image";
 
 const logos = [
-  { src: "/client-logos/aromantic.co.uk-logo10.webp", alt: "Aromantic" },
-  { src: "/client-logos/balkanmedic.rs-logo13.webp", alt: "Balkan Medic" },
-  { src: "/client-logos/beedvine.com-logo11.webp", alt: "Beedvine" },
-  { src: "/client-logos/bestatprinting.co.uk-logo9.webp", alt: "Bestat Printing" },
-  { src: "/client-logos/blindburiedcircuits.com-logo9.webp", alt: "Blind Buried Circuits" },
-  { src: "/client-logos/chatislav.ai-logo11.webp", alt: "Chatislav AI" },
-  { src: "/client-logos/designereditions-logo.svg.webp", alt: "Designer Editions" },
   { src: "/client-logos/designerglasses-uk-logo.svg.webp", alt: "DesignerGlasses UK" },
-  { src: "/client-logos/ecobeauty.rs-logo11.webp", alt: "Eco Beauty" },
-  { src: "/client-logos/eczemacompany.com-logo11.webp", alt: "Eczema Company" },
-  { src: "/client-logos/eliteshuttersandblinds.com-logo19.webp", alt: "Elite Shutters & Blinds" },
-  { src: "/client-logos/eurodijagnostikanis.com-logo22.webp", alt: "Eurodijagnostika Niš" },
-  { src: "/client-logos/everfun.hr-logo74.webp", alt: "Everfun" },
-  { src: "/client-logos/expertdieselparts.com-logo46.webp", alt: "Expert Diesel Parts" },
-  { src: "/client-logos/fireblockplans.com-logo10.webp", alt: "Fire Block Plans" },
-  { src: "/client-logos/hitdoktor.com-logo9.webp", alt: "Hit Doktor" },
-  { src: "/client-logos/igrandia.hr-logo10.webp", alt: "iGrandia" },
-  { src: "/client-logos/johnsonsjewellers.co.uk-logo13.webp", alt: "Johnsons Jewellers" },
-  { src: "/client-logos/kozmo.rs-logo11.webp", alt: "Kozmo" },
-  { src: "/client-logos/laudividni.com-logo11.webp", alt: "Laudividni" },
-  { src: "/client-logos/little-seeds.co.uk-logo9.webp", alt: "Little Seeds" },
-  { src: "/client-logos/mbfinance.rs-logo25.webp", alt: "MB Finance" },
-  { src: "/client-logos/merrythought.co.uk-logo9.webp", alt: "Merrythought" },
-  { src: "/client-logos/metalflex.rs-logo278.webp", alt: "Metalflex" },
   { src: "/client-logos/mobelaris-ecomm-logo.svg.webp", alt: "Mobelaris" },
-  { src: "/client-logos/modmobili.com-logo36.webp", alt: "ModMobili" },
-  { src: "/client-logos/motoplast.rs-logo9.webp", alt: "Motoplast" },
+  { src: "/client-logos/soundbox-store-uk-logo.svg.webp", alt: "SoundBox Store" },
+  { src: "/client-logos/merrythought.co.uk-logo9.webp", alt: "Merrythought" },
+  { src: "/client-logos/johnsonsjewellers.co.uk-logo13.webp", alt: "Johnsons Jewellers" },
   { src: "/client-logos/partypieces.co.uk-logo11.webp", alt: "Party Pieces" },
   { src: "/client-logos/perun-moto-oprema-logo.svg.webp", alt: "Perun Moto Oprema" },
   { src: "/client-logos/pickbox-hrvatska-logo.svg.webp", alt: "Pickbox" },
-  { src: "/client-logos/pickboxnow-hrvatska-logo.webp", alt: "Pickbox NOW" },
-  { src: "/client-logos/six-eyed-scorpion-aus-logo.svg.webp", alt: "Six Eyed Scorpion" },
-  { src: "/client-logos/soundbox-store-uk-logo.svg.webp", alt: "SoundBox Store" },
-  { src: "/client-logos/thecravory.com-logo21.webp", alt: "The Cravory" },
-  { src: "/client-logos/yoronaturals.com-logo11.webp", alt: "Yoro Naturals" },
-  { src: "/client-logos/zavodgaj.rs-logo16.webp", alt: "Zavod GAJ" }
+  { src: "/client-logos/little-seeds.co.uk-logo9.webp", alt: "Little Seeds" },
+  { src: "/client-logos/bestatprinting.co.uk-logo9.webp", alt: "Best at Printing" },
 ];
 
 export function ClientLogos() {
-  return (
-    <section className="section-padding bg-gray-50">
-      <div className="container-custom">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            Brendovi Koji Mi Veruju
-          </h2>
-          <p className="text-gray-600">
-            Od lokalnih lidera do međunarodnih eCommerce brendova — fokus je uvek na
-            rastu, profitu i dugoročnim rezultatima.
-          </p>
-        </div>
+  const allLogos = [...logos, ...logos];
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
-          {logos.map((logo) => (
+  return (
+    <section className="py-16 md:py-24 bg-gray-900 overflow-hidden">
+      <div className="container-custom px-4 mb-12">
+        <p className="text-center text-white/50 text-sm uppercase tracking-widest mb-3">
+          Poverenje brendova iz 6+ zemalja
+        </p>
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-white">
+          Trusted by 50+ brands
+        </h2>
+      </div>
+
+      <div className="relative">
+        {/* Gradient fade edges */}
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-gray-900 to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-gray-900 to-transparent z-10" />
+
+        {/* Marquee track */}
+        <div className="flex animate-marquee">
+          {allLogos.map((logo, i) => (
             <div
-              key={logo.src}
-              className="flex items-center justify-center bg-slate-200 border-2 border-gray-900 rounded-lg px-4 py-3 h-20"
+              key={`${logo.alt}-${i}`}
+              className="flex-shrink-0 mx-8 md:mx-12 flex items-center justify-center h-16"
             >
               <Image
                 src={logo.src}
                 alt={logo.alt}
-                width={240}
-                height={120}
-                className="h-10 md:h-12 w-auto object-contain"
-                sizes="(min-width: 1024px) 160px, (min-width: 640px) 120px, 100px"
+                width={160}
+                height={60}
+                className="h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}

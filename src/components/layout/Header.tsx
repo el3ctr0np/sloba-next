@@ -29,8 +29,6 @@ const serviceGroups = [
   {
     title: "Ostale Usluge",
     items: [
-      { label: "SEO", href: "/usluge/seo" },
-      { label: "Meta Oglašavanje", href: "/usluge/meta-oglasavanje" },
       { label: "Performance Marketing", href: "/usluge/performance-marketing" },
       { label: "Konsultacije", href: "/usluge/konsultacije" },
       { label: "Starter Paket", href: "/usluge/starter-paket" },

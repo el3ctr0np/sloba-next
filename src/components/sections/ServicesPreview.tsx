@@ -5,10 +5,8 @@ const services = [
   { icon: "🎯", title: "Google Ads", href: "/usluge/google-ads-upravljanje" },
   { icon: "⚡", title: "Performance Max", href: "/usluge/performance-max" },
   { icon: "🛒", title: "Google Shopping", href: "/usluge/google-shopping" },
-  { icon: "🔍", title: "SEO", href: "/usluge/seo" },
-  { icon: "📱", title: "Meta Oglašavanje", href: "/usluge/meta-oglasavanje" },
   { icon: "📺", title: "YouTube Oglasi", href: "/usluge/youtube-oglasi" },
-  { icon: "📊", title: "Tracking Setup", href: "/usluge/conversion-tracking" },
+  { icon: "🔄", title: "Remarketing", href: "/usluge/remarketing" },
   { icon: "🚀", title: "Performance Marketing", href: "/usluge/performance-marketing", featured: true },
 ];
 
