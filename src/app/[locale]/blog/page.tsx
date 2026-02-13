@@ -306,7 +306,7 @@ export default function BlogPage() {
       "@type": "ListItem",
       position: index + 1,
       name: post.title,
-      url: `https://www.slobodan-jelisavac.com/sr${post.href}`
+      url: `https://www.slobodan-jelisavac.com${post.href}`
     }))
   };
 
@@ -318,13 +318,13 @@ export default function BlogPage() {
         "@type": "ListItem",
         position: 1,
         name: "Početna",
-        item: "https://www.slobodan-jelisavac.com/sr"
+        item: "https://www.slobodan-jelisavac.com"
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Google Ads Vodič",
-        item: "https://www.slobodan-jelisavac.com/sr/blog"
+        item: "https://www.slobodan-jelisavac.com/blog"
       }
     ]
   };

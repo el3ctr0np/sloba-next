@@ -1,6 +1,11 @@
+"use client";
+
+import { useLocale } from "next-intl";
 import { Button } from "@/components/ui";
 
 export function ContactForm() {
+  const locale = useLocale();
+
   return (
     <form
       action="https://formsubmit.co/info@slobodan-jelisavac.com"
@@ -10,7 +15,11 @@ export function ContactForm() {
       {/* FormSubmit config */}
       <input type="hidden" name="_subject" value="Nova poruka sa sajta" />
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://slobodan-jelisavac.com/sr/kontakt/hvala" />
+      <input
+        type="hidden"
+        name="_next"
+        value={`https://slobodan-jelisavac.com/${locale}/kontakt/hvala`}
+      />
 
       <input
         type="text"

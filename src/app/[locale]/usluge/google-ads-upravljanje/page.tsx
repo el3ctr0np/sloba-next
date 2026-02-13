@@ -300,19 +300,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Početna",
-      item: "https://www.slobodan-jelisavac.com/sr"
+      item: "https://www.slobodan-jelisavac.com"
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Usluge",
-      item: "https://www.slobodan-jelisavac.com/sr/usluge"
+      item: "https://www.slobodan-jelisavac.com/usluge"
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Google Ads upravljanje",
-      item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-upravljanje"
+      item: "https://www.slobodan-jelisavac.com/usluge/google-ads-upravljanje"
     }
   ]
 };
