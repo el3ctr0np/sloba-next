@@ -160,13 +160,13 @@ export default function GoogleAdsOptimizationEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Negative keywords as foundation</h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          People ask &amp;quot;How to get more conversions?&amp;quot; — better question is &amp;quot;How to
-          stop wasting money on bad clicks?&amp;quot;. Negative keywords are the answer.
+          People ask &quot;How to get more conversions?&quot; — better question is &quot;How to
+          stop wasting money on bad clicks?&quot;. Negative keywords are the answer.
         </p>
         <ul className="text-sm">
           <li>Create master negative list at account level (free, cheap, job, tutorial, PDF)</li>
-          <li>Specific negative keywords per campaign (if selling new products: add &amp;quot;used&amp;quot;, &amp;quot;second hand&amp;quot;)</li>
-          <li>Use negative lists for speed — create &amp;quot;B2C_Negatives&amp;quot; or &amp;quot;Informational_Negatives&amp;quot;</li>
+          <li>Specific negative keywords per campaign (if selling new products: add &quot;used&quot;, &quot;second hand&quot;)</li>
+          <li>Use negative lists for speed — create &quot;B2C_Negatives&quot; or &quot;Informational_Negatives&quot;</li>
         </ul>
       </div>
 
@@ -177,7 +177,7 @@ export default function GoogleAdsOptimizationEN() {
         </div>
         <p className="text-sm text-gray-600 mb-3">
           Broad Match Modifier no longer exists (Google removed it 2021). Now you have: Broad, Phrase, Exact.
-          But Exact match is no longer truly &amp;quot;exact&amp;quot; — close variants are enabled by default.
+          But Exact match is no longer truly &quot;exact&quot; — close variants are enabled by default.
         </p>
         <ul className="text-sm">
           <li><strong>Exact Match:</strong> Your default for commercial high-intent keywords. Maximum control.</li>
@@ -216,8 +216,8 @@ export default function GoogleAdsOptimizationEN() {
         <ul className="text-sm">
           <li>Divide headlines into 3 types: Product/Service, Benefit, Offer/CTA</li>
           <li>Use different lengths (20 to 30 characters) so all can display</li>
-          <li>Minimum 2 headlines with dynamic keyword insertion (DKI): &amp;quot;{`{KeyWord:Default Text}`}&amp;quot;</li>
-          <li>Ad Strength &amp;quot;Excellent&amp;quot; isn't goal — goal is CTR and conversions, but &amp;quot;Good&amp;quot; is minimum</li>
+          <li>Minimum 2 headlines with dynamic keyword insertion (DKI): &quot;{`{KeyWord:Default Text}`}&quot;</li>
+          <li>Ad Strength &quot;Excellent&quot; isn't goal — goal is CTR and conversions, but &quot;Good&quot; is minimum</li>
         </ul>
       </div>
 
@@ -232,7 +232,7 @@ export default function GoogleAdsOptimizationEN() {
         </p>
         <ul className="text-sm">
           <li><strong>Sitelinks:</strong> Minimum 4, best practice 8 — link to top categories/pages</li>
-          <li><strong>Callouts:</strong> Short USP bullets (&amp;quot;Free Shipping&amp;quot;, &amp;quot;24/7 Support&amp;quot;)</li>
+          <li><strong>Callouts:</strong> Short USP bullets (&quot;Free Shipping&quot;, &quot;24/7 Support&quot;)</li>
           <li><strong>Structured Snippets:</strong> Branded categories (Brands: Nike, Adidas, Puma...)</li>
           <li><strong>Call Extensions:</strong> Must have if you're local business or high CPA warrants call</li>
           <li>Use account-level extensions as fallback, then campaign-specific for special offers</li>
@@ -245,7 +245,7 @@ export default function GoogleAdsOptimizationEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page alignment (message match)</h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          If your ad promises &amp;quot;20% off sofas&amp;quot;, and landing page has no mention of discount —
+          If your ad promises &quot;20% off sofas&quot;, and landing page has no mention of discount —
           you'll have high bounce rate and poor Quality Score. Message match is critical.
         </p>
         <ul className="text-sm">
@@ -286,7 +286,7 @@ export default function GoogleAdsOptimizationEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Transition plan: Manual → Smart Bidding</p>
         <p className="text-blue-800 text-sm mb-0">
-          Don't jump directly from Manual CPC to Target CPA. First switch to &amp;quot;Maximize Conversions&amp;quot;
+          Don't jump directly from Manual CPC to Target CPA. First switch to &quot;Maximize Conversions&quot;
           without target so algorithm learns. After 2 weeks, switch to Target CPA/ROAS with realistic
           goal (10% better than current average).
         </p>
@@ -331,7 +331,7 @@ export default function GoogleAdsOptimizationEN() {
         <ul className="text-sm">
           <li>Benchmark: Search campaigns average 3-5% CTR, Brand campaigns 10-20%</li>
           <li>If CTR below 2%, problem is in ad copy or keyword relevance</li>
-          <li>Test urgent CTAs in headlines (&amp;quot;Order today&amp;quot;, &amp;quot;Free shipping&amp;quot;)</li>
+          <li>Test urgent CTAs in headlines (&quot;Order today&quot;, &quot;Free shipping&quot;)</li>
         </ul>
       </div>
 
@@ -376,12 +376,12 @@ export default function GoogleAdsOptimizationEN() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Audience layering on Search campaigns</h3>
           <p className="text-sm text-gray-600 mb-3">
             Audience layering means adding audience segments (remarketing lists, demographics, in-market)
-            to Search campaigns as &amp;quot;observation&amp;quot; or with bid adjustments.
+            to Search campaigns as &quot;observation&quot; or with bid adjustments.
           </p>
           <ul className="text-sm mb-0">
             <li><strong>Remarketing audiences:</strong> +30% bid adjustment on previous site visitors</li>
             <li><strong>Customer Match:</strong> Upload email list of existing clients, bid more aggressively</li>
-            <li><strong>In-Market:</strong> Layer &amp;quot;In-Market for X&amp;quot; audiences and track if they convert better</li>
+            <li><strong>In-Market:</strong> Layer &quot;In-Market for X&quot; audiences and track if they convert better</li>
           </ul>
         </div>
 
@@ -395,7 +395,7 @@ export default function GoogleAdsOptimizationEN() {
           <ul className="text-sm mb-0">
             <li>Check all conversions are tagged (Google Tag Manager or gtag.js)</li>
             <li>Test each conversion manually — make test transaction/form and verify it records</li>
-            <li>Exclude internal traffic (your office) so it doesn't &amp;quot;pollute&amp;quot; data</li>
+            <li>Exclude internal traffic (your office) so it doesn't &quot;pollute&quot; data</li>
             <li>Check conversion attribution model — Last Click vs Data-Driven (Data-Driven is better if you have volume)</li>
           </ul>
         </div>

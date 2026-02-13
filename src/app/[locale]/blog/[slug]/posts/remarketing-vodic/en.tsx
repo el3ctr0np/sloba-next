@@ -35,7 +35,7 @@ export default function RemarketingGuideEN() {
         Imagine this: you have a website, you invest in Google Ads, a visitor arrives, views a product or service — and leaves. No purchase, no contact, no trace. The statistics are harsh: <strong>96 out of 100 visitors leave your site without any conversion</strong>.
       </p>
       <p>
-        This does not mean your website is bad. People are simply busy — they opened five tabs, the phone rang, they decided to &amp;quot;think about it&amp;quot;. But what IS a problem: most advertisers let those visitors go and never contact them again.
+        This does not mean your website is bad. People are simply busy — they opened five tabs, the phone rang, they decided to &quot;think about it&quot;. But what IS a problem: most advertisers let those visitors go and never contact them again.
       </p>
       <p>
         This is where remarketing changes the game. Instead of spending budget exclusively on new visitors, remarketing campaigns allow you to return in front of people who have <strong>already shown interest</strong> — at the moment when they are ready to make a decision.
@@ -95,7 +95,7 @@ export default function RemarketingGuideEN() {
 
       <h3>Remarketing, retargeting, or prospecting — what is the difference</h3>
       <p>
-        Remarketing and retargeting are in practice synonyms. Google uses the term &amp;quot;remarketing&amp;quot;, Meta (Facebook/Instagram) uses &amp;quot;retargeting&amp;quot; — but the essence is the same: you return in front of people who already know you.
+        Remarketing and retargeting are in practice synonyms. Google uses the term &quot;remarketing&quot;, Meta (Facebook/Instagram) uses &quot;retargeting&quot; — but the essence is the same: you return in front of people who already know you.
       </p>
       <p>
         Prospecting (cold targeting) is the opposite — you target people who have never heard of you. Here is direct comparison:
@@ -214,7 +214,7 @@ export default function RemarketingGuideEN() {
         <p className="font-semibold mb-2">Direct installation (alternative):</p>
         <ol className="mb-0">
           <li>In Google Ads: Tools → Audience Manager → Audience Sources</li>
-          <li>Under Google Ads tag click &amp;quot;Set up tag&amp;quot;</li>
+          <li>Under Google Ads tag click &quot;Set up tag&quot;</li>
           <li>Copy code and paste it in <code>&lt;head&gt;</code> section of every page</li>
         </ol>
       </div>
@@ -223,7 +223,7 @@ export default function RemarketingGuideEN() {
         <h3 className="mt-0 mb-4 font-heading font-bold">Step 2: Connect GA4 to Google Ads</h3>
         <ol className="mb-0">
           <li>In Google Ads open Tools → Linked Accounts</li>
-          <li>Find Google Analytics (GA4) and click &amp;quot;Link&amp;quot;</li>
+          <li>Find Google Analytics (GA4) and click &quot;Link&quot;</li>
           <li>Select your GA4 property</li>
           <li>Enable remarketing option</li>
         </ol>
@@ -233,7 +233,7 @@ export default function RemarketingGuideEN() {
         <h3 className="mt-0 mb-4 font-heading font-bold">Step 3: Verification and creating lists</h3>
         <ol>
           <li>Go to Audience Manager → Audience Sources</li>
-          <li>Check that tag status is <strong>&amp;quot;Active&amp;quot;</strong></li>
+          <li>Check that tag status is <strong>&quot;Active&quot;</strong></li>
           <li>Wait 24-48 hours for list to start populating</li>
         </ol>
       </div>
@@ -292,7 +292,7 @@ export default function RemarketingGuideEN() {
       {/* ── Section 5: Segmentation ── */}
       <h2>Segmentation — Key to Remarketing Success</h2>
       <p>
-        This is the part where most advertisers fail: they create one remarketing list (&amp;quot;all visitors&amp;quot;) and show them the same ad. That is like saying the same thing in a store to someone who entered for the first time and someone who put a product in cart and left.
+        This is the part where most advertisers fail: they create one remarketing list (&quot;all visitors&quot;) and show them the same ad. That is like saying the same thing in a store to someone who entered for the first time and someone who put a product in cart and left.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
@@ -479,7 +479,7 @@ export default function RemarketingGuideEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA bid boosting on search</h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          Strategy with best ROAS in my practice. On existing Search campaigns add remarketing list as &amp;quot;Observation&amp;quot; and increase bid by 30-100% for people who already visited site.
+          Strategy with best ROAS in my practice. On existing Search campaigns add remarketing list as &quot;Observation&quot; and increase bid by 30-100% for people who already visited site.
         </p>
         <ul className="text-sm">
           <li>Result: same budget, but more conversions from known visitors</li>
@@ -498,7 +498,7 @@ export default function RemarketingGuideEN() {
         </p>
         <ul className="text-sm">
           <li>Mandatory for eCommerce with 50+ products</li>
-          <li>Combine with promotional messages (&amp;quot;Now -20%&amp;quot;, &amp;quot;Free Shipping&amp;quot;)</li>
+          <li>Combine with promotional messages (&quot;Now -20%&quot;, &quot;Free Shipping&quot;)</li>
           <li>Quality product images are critical — poor image kills click</li>
         </ul>
       </div>
@@ -586,7 +586,7 @@ export default function RemarketingGuideEN() {
           <p className="font-semibold mb-2">Same ad for months</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
             <p className="text-sm text-green-800 mb-0">
-              <strong>Solution:</strong> Refresh creatives every 2-4 weeks. Even good ad becomes &amp;quot;invisible&amp;quot; after too many showings.
+              <strong>Solution:</strong> Refresh creatives every 2-4 weeks. Even good ad becomes &quot;invisible&quot; after too many showings.
             </p>
           </div>
         </div>
@@ -722,7 +722,7 @@ export default function RemarketingGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-            Practically none. Google uses term &amp;quot;remarketing&amp;quot;, Meta (Facebook/Instagram) uses &amp;quot;retargeting&amp;quot;. Principle is identical — you show ads to people who have already interacted with your business.
+            Practically none. Google uses term &quot;remarketing&quot;, Meta (Facebook/Instagram) uses &quot;retargeting&quot;. Principle is identical — you show ads to people who have already interacted with your business.
           </div>
         </details>
 
@@ -742,7 +742,7 @@ export default function RemarketingGuideEN() {
       {/* ── Section 10: Conclusion + CTA ── */}
       <h2>Conclusion — Leverage the Potential of Visitors Already Coming</h2>
       <p>
-        Google Ads remarketing is not complicated, but requires thoughtful approach. The difference between &amp;quot;we have remarketing&amp;quot; and &amp;quot;we have remarketing that delivers results&amp;quot; lies in three things: proper segmentation, tailored messages, and regular optimization.
+        Google Ads remarketing is not complicated, but requires thoughtful approach. The difference between &quot;we have remarketing&quot; and &quot;we have remarketing that delivers results&quot; lies in three things: proper segmentation, tailored messages, and regular optimization.
       </p>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">

@@ -6,7 +6,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Ads is the most powerful channel for businesses looking to reach customers with active purchase intent. Unlike social media where you &amp;quot;interrupt&amp;quot; people while they scroll, Google Ads connects you with users actively searching for your product or service.
+          Google Ads is the most powerful channel for businesses looking to reach customers with active purchase intent. Unlike social media where you &quot;interrupt&quot; people while they scroll, Google Ads connects you with users actively searching for your product or service.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -30,7 +30,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <h2>Why Google Ads is effective for businesses</h2>
       <p>Google Ads allows your business to appear exactly when a potential customer searches for what you offer. That's the key difference from other channels.</p>
-      <p>When someone types &amp;quot;CRM software for small businesses&amp;quot; or &amp;quot;men's running shoes&amp;quot;, your ad can appear above organic results. The person searching has clear intent — they're not mindlessly scrolling, they're actively looking for a solution.</p>
+      <p>When someone types &quot;CRM software for small businesses&quot; or &quot;men's running shoes&quot;, your ad can appear above organic results. The person searching has clear intent — they're not mindlessly scrolling, they're actively looking for a solution.</p>
       <p>My experience managing 50+ brands across 6+ countries with $2M+ annual spend shows that Google Ads delivers best results when:</p>
       <ul>
         <li>Your product or service solves a clear need</li>
@@ -41,7 +41,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Difference between Google Ads and social media</p>
-        <p className="text-blue-800 text-sm mb-0">On social media you &amp;quot;interrupt&amp;quot; users while they consume content. On Google, users are actively searching for you. That's why Google Ads typically delivers lower volume but higher-quality traffic with stronger intent.</p>
+        <p className="text-blue-800 text-sm mb-0">On social media you &quot;interrupt&quot; users while they consume content. On Google, users are actively searching for you. That's why Google Ads typically delivers lower volume but higher-quality traffic with stronger intent.</p>
       </div>
 
       <hr />
@@ -144,7 +144,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max (PMax)</h3>
-          <p className="text-sm text-gray-600 mb-3">Google's &amp;quot;all-in-one&amp;quot; campaign automatically showing ads across all networks (Search, Shopping, Display, YouTube, Discover).</p>
+          <p className="text-sm text-gray-600 mb-3">Google's &quot;all-in-one&quot; campaign automatically showing ads across all networks (Search, Shopping, Display, YouTube, Discover).</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">When to use:</p>
           <ul className="text-sm mb-3">
             <li>You have sufficient conversion data (50+ monthly ideal)</li>
@@ -152,7 +152,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
             <li>You're ready to give control to algorithm</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Note:</p>
-          <p className="text-sm text-gray-600 mb-0">PMax is a &amp;quot;black box&amp;quot; — less control and insights. I recommend starting with Search/Shopping.</p>
+          <p className="text-sm text-gray-600 mb-0">PMax is a &quot;black box&quot; — less control and insights. I recommend starting with Search/Shopping.</p>
         </div>
 
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
@@ -225,7 +225,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Search Generic</strong> <span className="text-gray-500">— Non-brand searches (&amp;quot;men's running shoes&amp;quot;)</span></div>
+            <div><strong>Search Generic</strong> <span className="text-gray-500">— Non-brand searches (&quot;men's running shoes&quot;)</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
@@ -238,9 +238,9 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <p>Your product feed in Google Merchant Center is the most important element of Shopping campaigns. Bad feed = bad campaigns, no exceptions.</p>
       <p>In practice, best results come from optimizing these 5 attributes:</p>
       <ul>
-        <li><strong>Title</strong> — Include brand, keywords, attributes (color, size, material). Example: &amp;quot;Nike Air Zoom Pegasus 40 Men's Running Shoes Black&amp;quot;</li>
+        <li><strong>Title</strong> — Include brand, keywords, attributes (color, size, material). Example: &quot;Nike Air Zoom Pegasus 40 Men's Running Shoes Black&quot;</li>
         <li><strong>Description</strong> — Detailed description with relevant terms (Google uses this for matching)</li>
-        <li><strong>Product Type</strong> — Your category (e.g., &amp;quot;Footwear &gt; Men's Shoes &gt; Running&amp;quot;) — critical for campaign structure</li>
+        <li><strong>Product Type</strong> — Your category (e.g., &quot;Footwear &gt; Men's Shoes &gt; Running&quot;) — critical for campaign structure</li>
         <li><strong>GTIN/MPN</strong> — Unique product identifiers (mandatory for known brands)</li>
         <li><strong>Custom Labels</strong> — For segmentation by margin, season, best-sellers, new products</li>
       </ul>
@@ -259,11 +259,11 @@ export default function GoogleAdvertisingForBusinessesEN() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Solution Search</strong> <span className="text-gray-500">— Searches for solution type (&amp;quot;CRM software&amp;quot;, &amp;quot;ERP system&amp;quot;)</span></div>
+            <div><strong>Solution Search</strong> <span className="text-gray-500">— Searches for solution type (&quot;CRM software&quot;, &quot;ERP system&quot;)</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Problem Search</strong> <span className="text-gray-500">— Searches for problem (&amp;quot;how to automate invoicing&amp;quot;)</span></div>
+            <div><strong>Problem Search</strong> <span className="text-gray-500">— Searches for problem (&quot;how to automate invoicing&quot;)</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
@@ -282,7 +282,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <ul>
         <li>Sales team time wasted on qualifying irrelevant inquiries</li>
         <li>Pipeline gets clogged and becomes unmanageable</li>
-        <li>Morale drops when &amp;quot;nothing closes&amp;quot;</li>
+        <li>Morale drops when &quot;nothing closes&quot;</li>
       </ul>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -293,7 +293,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <ul className="text-sm mb-0">
           <li><strong>Offline conversion tracking</strong> — Import sales from CRM back to Google Ads so algorithm learns what quality lead looks like</li>
           <li><strong>Lead scoring</strong> — Don't treat all conversions equally (demo request is more valuable than newsletter signup)</li>
-          <li><strong>Aggressive negative keywords</strong> — Exclude students, job seekers, DIYers, &amp;quot;free&amp;quot;, &amp;quot;cheap&amp;quot;</li>
+          <li><strong>Aggressive negative keywords</strong> — Exclude students, job seekers, DIYers, &quot;free&quot;, &quot;cheap&quot;</li>
           <li><strong>High cost per lead?</strong> — Not a problem if leads are quality. Better to pay $50 for quality lead than $10 for 5 useless ones.</li>
         </ul>
       </div>
@@ -368,7 +368,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
         <p className="font-semibold mb-2">Ignoring negative keywords</p>
-        <p className="text-sm text-gray-600 mb-3">You're paying for &amp;quot;free&amp;quot;, &amp;quot;how to make yourself&amp;quot;, &amp;quot;job&amp;quot;, &amp;quot;course&amp;quot;, &amp;quot;torrent&amp;quot; and similar. Money wasted because these people won't buy.</p>
+        <p className="text-sm text-gray-600 mb-3">You're paying for &quot;free&quot;, &quot;how to make yourself&quot;, &quot;job&quot;, &quot;course&quot;, &quot;torrent&quot; and similar. Money wasted because these people won't buy.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Create negative keyword list immediately (free, cheap, job, salary, course, school, torrent, download, DIY). Update list weekly based on search terms report.</p>
         </div>

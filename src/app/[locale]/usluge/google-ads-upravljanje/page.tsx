@@ -1070,7 +1070,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               {locale === "en" ? "Starter Package" : "Starter paket"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "from €500" : "od €350"}<span className="text-sm text-gray-500 font-normal">/mes</span>
+              {locale === "en" ? "from €500" : "od €350"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
             </p>
             <p className="text-gray-600 text-sm mb-4">
               {locale === "en"
@@ -1118,7 +1118,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               {locale === "en" ? "Standard Service" : "Standardna usluga"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "from €750" : "od €500"}<span className="text-sm text-gray-500 font-normal">/mes</span>
+              {locale === "en" ? "from €750" : "od €500"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
             </p>
             <p className="text-gray-600 text-sm mb-4">
               {locale === "en"

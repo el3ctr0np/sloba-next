@@ -227,7 +227,7 @@ export default function QualityScoreGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword in headline</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Instead of generic &amp;quot;Quality Products | Order Today&amp;quot; use &amp;quot;CRM Software For Small Business | Free Trial&amp;quot;.</p>
+        <p className="text-sm text-gray-600 mb-3">Instead of generic &quot;Quality Products | Order Today&quot; use &quot;CRM Software For Small Business | Free Trial&quot;.</p>
       </div>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -235,7 +235,7 @@ export default function QualityScoreGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Use numbers and specificity</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">&amp;quot;Over 500 Products&amp;quot;, &amp;quot;Save Up To 40%&amp;quot;, &amp;quot;30 Day Guarantee&amp;quot;, &amp;quot;24/7 Support&amp;quot; — concrete numbers attract attention and increase CTR.</p>
+        <p className="text-sm text-gray-600 mb-0">&quot;Over 500 Products&quot;, &quot;Save Up To 40%&quot;, &quot;30 Day Guarantee&quot;, &quot;24/7 Support&quot; — concrete numbers attract attention and increase CTR.</p>
       </div>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -243,7 +243,7 @@ export default function QualityScoreGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Strong CTA and USP in headline</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">Clear action: &amp;quot;Order Today&amp;quot;, &amp;quot;Free Quote&amp;quot;. Unique USP: &amp;quot;Only One With Money-Back Guarantee&amp;quot;, &amp;quot;Same Day Delivery&amp;quot;.</p>
+        <p className="text-sm text-gray-600 mb-0">Clear action: &quot;Order Today&quot;, &quot;Free Quote&quot;. Unique USP: &quot;Only One With Money-Back Guarantee&quot;, &quot;Same Day Delivery&quot;.</p>
       </div>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -277,11 +277,11 @@ export default function QualityScoreGuideEN() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Message match</strong> <span className="text-gray-500">— ad for &amp;quot;CRM pricing&amp;quot; talks about prices, ad for &amp;quot;CRM demo&amp;quot; talks about demo</span></div>
+            <div><strong>Message match</strong> <span className="text-gray-500">— ad for &quot;CRM pricing&quot; talks about prices, ad for &quot;CRM demo&quot; talks about demo</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Avoid generic ads</strong> <span className="text-gray-500">— &amp;quot;Quality Products&amp;quot; means nothing. Be specific.</span></div>
+            <div><strong>Avoid generic ads</strong> <span className="text-gray-500">— &quot;Quality Products&quot; means nothing. Be specific.</span></div>
           </div>
         </div>
       </div>

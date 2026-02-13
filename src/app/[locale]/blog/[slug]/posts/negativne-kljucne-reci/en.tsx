@@ -81,7 +81,7 @@ export default function NegativeKeywordsGuideEN() {
           </div>
         </div>
         <p className="text-sm text-gray-600 mt-3 mb-0">
-          Blocked searches: &amp;quot;cheap chairs&amp;quot; (£180 spend, 0 conv), &amp;quot;used furniture&amp;quot; (£120, 0 conv), &amp;quot;DIY furniture&amp;quot; (£90, 0 conv), &amp;quot;IKEA furniture&amp;quot; (£150, 0 conv)
+          Blocked searches: &quot;cheap chairs&quot; (£180 spend, 0 conv), &quot;used furniture&quot; (£120, 0 conv), &quot;DIY furniture&quot; (£90, 0 conv), &quot;IKEA furniture&quot; (£150, 0 conv)
         </p>
       </div>
 
@@ -108,19 +108,19 @@ export default function NegativeKeywordsGuideEN() {
               <td className="py-3 px-4 font-medium">Negative Broad</td>
               <td className="py-3 px-4">free</td>
               <td className="py-3 px-4">Any search with that word, any order</td>
-              <td className="py-3 px-4">Variations and synonyms (&amp;quot;trial&amp;quot;, &amp;quot;gratis&amp;quot;)</td>
+              <td className="py-3 px-4">Variations and synonyms (&quot;trial&quot;, &quot;gratis&quot;)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-4 font-medium">Negative Phrase</td>
-              <td className="py-3 px-4">&amp;quot;free download&amp;quot;</td>
+              <td className="py-3 px-4">&quot;free download&quot;</td>
               <td className="py-3 px-4">Searches with exact phrase in that order</td>
-              <td className="py-3 px-4">Different order (&amp;quot;download free&amp;quot;)</td>
+              <td className="py-3 px-4">Different order (&quot;download free&quot;)</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-4 font-medium">Negative Exact</td>
               <td className="py-3 px-4">[free download]</td>
               <td className="py-3 px-4">Only that exact search</td>
-              <td className="py-3 px-4">Anything additional (&amp;quot;free download CRM&amp;quot;)</td>
+              <td className="py-3 px-4">Anything additional (&quot;free download CRM&quot;)</td>
             </tr>
           </tbody>
         </table>
@@ -129,7 +129,7 @@ export default function NegativeKeywordsGuideEN() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important: Negative Broad does NOT include synonyms</p>
         <p className="text-yellow-800 text-sm mb-0">
-          Unlike positive Broad match, negative Broad does NOT block synonyms and variations. If you block &amp;quot;free&amp;quot;, the search &amp;quot;gratis CRM&amp;quot; still gets through. Add all common variations.
+          Unlike positive Broad match, negative Broad does NOT block synonyms and variations. If you block &quot;free&quot;, the search &quot;gratis CRM&quot; still gets through. Add all common variations.
         </p>
       </div>
 
@@ -145,7 +145,7 @@ export default function NegativeKeywordsGuideEN() {
       {/* ── Universal Negative List ── */}
       <h2>Universal Negative List — Starter for Every Business</h2>
       <p>
-        I recommend this list for every account as a starting point. Customize it for your business — some of these keywords may be relevant to you (e.g., &amp;quot;free&amp;quot; if you offer free trial).
+        I recommend this list for every account as a starting point. Customize it for your business — some of these keywords may be relevant to you (e.g., &quot;free&quot; if you offer free trial).
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -255,7 +255,7 @@ export default function NegativeKeywordsGuideEN() {
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Search Terms Report</strong> <span className="text-gray-500">— most important method. Filter: last 7 days, sort by cost, question: &amp;quot;Would this person buy from me?&amp;quot; Minimum once weekly.</span></div>
+            <div><strong>Search Terms Report</strong> <span className="text-gray-500">— most important method. Filter: last 7 days, sort by cost, question: &quot;Would this person buy from me?&quot; Minimum once weekly.</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
@@ -263,7 +263,7 @@ export default function NegativeKeywordsGuideEN() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Competitor research</strong> <span className="text-gray-500">— search your keywords on Google, check &amp;quot;Searches related to...&amp;quot;, identify irrelevant ones</span></div>
+            <div><strong>Competitor research</strong> <span className="text-gray-500">— search your keywords on Google, check &quot;Searches related to...&quot;, identify irrelevant ones</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
@@ -318,7 +318,7 @@ export default function NegativeKeywordsGuideEN() {
         <ol className="mb-0 text-sm">
           <li>Tools &amp; Settings → Shared library → Negative keyword lists</li>
           <li>Click + for new list</li>
-          <li>Name the list (e.g., &amp;quot;Universal Negatives&amp;quot;)</li>
+          <li>Name the list (e.g., &quot;Universal Negatives&quot;)</li>
           <li>Add keywords</li>
           <li>Apply to all relevant campaigns</li>
         </ol>
@@ -327,7 +327,7 @@ export default function NegativeKeywordsGuideEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Naming convention for lists</p>
         <p className="text-blue-800 text-sm mb-0">
-          Use format: [Type] - [Description]. Examples: &amp;quot;Universal - Free &amp; Job Terms&amp;quot;, &amp;quot;Industry - eCommerce Fashion&amp;quot;, &amp;quot;Campaign - Brand Protection&amp;quot;
+          Use format: [Type] - [Description]. Examples: &quot;Universal - Free &amp; Job Terms&quot;, &quot;Industry - eCommerce Fashion&quot;, &quot;Campaign - Brand Protection&quot;
         </p>
       </div>
 
@@ -397,7 +397,7 @@ export default function NegativeKeywordsGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
           <p className="font-semibold mb-2">Wrong match type for negatives</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Use Negative Broad for general terms. Exact negative misses variations — &amp;quot;free&amp;quot; in Exact does not block &amp;quot;free CRM download&amp;quot;.</p>
+            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Use Negative Broad for general terms. Exact negative misses variations — &quot;free&quot; in Exact does not block &quot;free CRM download&quot;.</p>
           </div>
         </div>
 
@@ -413,7 +413,7 @@ export default function NegativeKeywordsGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
           <p className="font-semibold mb-2">Ignoring synonyms and variations</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Add all common variations. Block &amp;quot;free&amp;quot; AND &amp;quot;gratis&amp;quot;, &amp;quot;jobs&amp;quot; AND &amp;quot;careers&amp;quot;. Negative Broad does not catch synonyms automatically.</p>
+            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Add all common variations. Block &quot;free&quot; AND &quot;gratis&quot;, &quot;jobs&quot; AND &quot;careers&quot;. Negative Broad does not catch synonyms automatically.</p>
           </div>
         </div>
       </div>
@@ -470,7 +470,7 @@ export default function NegativeKeywordsGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-            Universal list (free, jobs, DIY) is good starter for most businesses. But always customize for your business — &amp;quot;free&amp;quot; may not be negative if you offer free trial or free shipping.
+            Universal list (free, jobs, DIY) is good starter for most businesses. But always customize for your business — &quot;free&quot; may not be negative if you offer free trial or free shipping.
           </div>
         </details>
 

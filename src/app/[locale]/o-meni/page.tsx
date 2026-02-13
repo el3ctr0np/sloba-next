@@ -404,7 +404,7 @@ export default async function AboutPage({ params }: Props) {
             {/* Right: Image Placeholder */}
             <div className="hidden md:flex items-center justify-center">
               <div className="w-full aspect-square max-w-md rounded-2xl bg-slate-800 border-2 border-slate-700 flex items-center justify-center">
-                <span className="text-slate-500 text-sm">{locale === "en" ? "Your image here" : "Vaša slika ovde"}</span>
+                <span className="text-slate-500 text-4xl">SJ</span>
               </div>
             </div>
           </div>

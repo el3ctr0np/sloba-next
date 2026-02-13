@@ -31,10 +31,10 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <h2>The real cost of Google Ads in 2026</h2>
       <p>
-        &amp;quot;How much does Google Ads cost?&amp;quot; — this is the first question every marketing director or business owner asks when considering paid advertising. I understand the frustration — Google won't give you a straight answer, and most content on this topic comes from generic US data that doesn't match your reality.
+        &quot;How much does Google Ads cost?&quot; — this is the first question every marketing director or business owner asks when considering paid advertising. I understand the frustration — Google won't give you a straight answer, and most content on this topic comes from generic US data that doesn't match your reality.
       </p>
       <p>
-        The problem is there's no simple answer like &amp;quot;it costs X per month&amp;quot;. Google Ads pricing depends on a dozen factors — from your industry to competition to campaign quality.
+        The problem is there's no simple answer like &quot;it costs X per month&quot;. Google Ads pricing depends on a dozen factors — from your industry to competition to campaign quality.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -161,7 +161,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       <p>A CPC range from $0.30 to $15 in the same industry seems absurd. But the difference comes from:</p>
       <ul>
         <li><strong>Keywords</strong> — branded terms are cheaper than generic ones</li>
-        <li><strong>Search intent</strong> — &amp;quot;buy sneakers online&amp;quot; costs more than &amp;quot;what sneakers are trending&amp;quot;</li>
+        <li><strong>Search intent</strong> — &quot;buy sneakers online&quot; costs more than &quot;what sneakers are trending&quot;</li>
         <li><strong>Account quality</strong> — optimized accounts pay 30-50% less</li>
         <li><strong>Timing</strong> — Black Friday vs February</li>
       </ul>
@@ -170,7 +170,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <h2>Minimum budget that makes sense</h2>
       <p>
-        The question I hear constantly: &amp;quot;Can I start with $500 per month?&amp;quot; Technically — yes. Practically — it depends.
+        The question I hear constantly: &quot;Can I start with $500 per month?&quot; Technically — yes. Practically — it depends.
       </p>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
@@ -494,7 +494,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-            Generally yes, CPC on Google is higher. But user intent is stronger — someone searching &amp;quot;buy X&amp;quot; is closer to purchase than someone scrolling Instagram.
+            Generally yes, CPC on Google is higher. But user intent is stronger — someone searching &quot;buy X&quot; is closer to purchase than someone scrolling Instagram.
           </div>
         </details>
       </div>

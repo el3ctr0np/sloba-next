@@ -56,7 +56,7 @@ export default function PerformanceMaxGuideEN() {
       </ul>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">&amp;quot;Black box&amp;quot; problem</p>
+        <p className="font-semibold text-blue-900 mb-1">&quot;Black box&quot; problem</p>
         <p className="text-blue-800 text-sm mb-0">PMax doesn't give you the level of control and transparency you have with Search or Shopping campaigns. You don't see all search terms, don't know exact budget allocation per network, can't exclude most placements, don't control bidding per keyword. You get aggregated data and must trust the algorithm. My experience is PMax works best for advertisers who trust data over intuition and have patience for learning period.</p>
       </div>
 
@@ -158,8 +158,8 @@ export default function PerformanceMaxGuideEN() {
         </div>
         <p className="text-sm text-gray-600 mb-3">Title is most important field in feed. Include key attributes: brand, product type, color, material, size. Algorithm uses title for matching with search queries.</p>
         <ul className="text-sm">
-          <li><strong>Bad:</strong> &amp;quot;Nike shoes black&amp;quot;</li>
-          <li><strong>Good:</strong> &amp;quot;Nike Air Max 270 Men's Running Shoes Black Size 10&amp;quot;</li>
+          <li><strong>Bad:</strong> &quot;Nike shoes black&quot;</li>
+          <li><strong>Good:</strong> &quot;Nike Air Max 270 Men's Running Shoes Black Size 10&quot;</li>
         </ul>
       </div>
 
@@ -237,7 +237,7 @@ export default function PerformanceMaxGuideEN() {
         <p className="text-sm text-gray-600 mb-3">PMax optimizes toward what you tell it is conversion. If you optimize only toward form fills, you'll get volume of form fills — but not necessarily quality ones. Solution: import SQL (Sales Qualified Lead) or Won deals back to Google Ads.</p>
         <ul className="text-sm">
           <li>GCLID mapping with CRM</li>
-          <li>Import &amp;quot;Won Deal&amp;quot; conversion from CRM (Pipedrive, HubSpot, Salesforce)</li>
+          <li>Import &quot;Won Deal&quot; conversion from CRM (Pipedrive, HubSpot, Salesforce)</li>
           <li>PMax learns what quality lead looks like</li>
         </ul>
       </div>
@@ -259,7 +259,7 @@ export default function PerformanceMaxGuideEN() {
           <li>Regularly refresh creative (minimum every 2–3 months)</li>
           <li>A/B test different messages in headlines</li>
           <li>Track asset performance ratings (Low / Good / Best)</li>
-          <li>Immediately replace &amp;quot;Low&amp;quot; rated assets</li>
+          <li>Immediately replace &quot;Low&quot; rated assets</li>
         </ul>
       </div>
 

@@ -84,11 +84,11 @@ export default function KeywordGuideEN() {
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Your keyword:</strong> <span className="text-gray-500">— &amp;quot;womens running shoes&amp;quot;</span></div>
+            <div><strong>Your keyword:</strong> <span className="text-gray-500">— &quot;womens running shoes&quot;</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Search terms that trigger your ad:</strong> <span className="text-gray-500">— &amp;quot;womens nike running shoes&amp;quot;, &amp;quot;best running shoes for women&amp;quot;, &amp;quot;buy womens running shoes online&amp;quot;</span></div>
+            <div><strong>Search terms that trigger your ad:</strong> <span className="text-gray-500">— &quot;womens nike running shoes&quot;, &quot;best running shoes for women&quot;, &quot;buy womens running shoes online&quot;</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">!</span>
@@ -117,28 +117,28 @@ export default function KeywordGuideEN() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Navigational (Branded)</h3>
           <p className="text-sm text-gray-600 mb-2">User searches for a specific brand or website.</p>
-          <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &amp;quot;nike uk&amp;quot;, &amp;quot;amazon&amp;quot;</p>
+          <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;nike uk&quot;, &quot;amazon&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">High CTR</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Low CPC</span></p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Informational</h3>
           <p className="text-sm text-gray-600 mb-2">User seeks information, not ready to buy yet.</p>
-          <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &amp;quot;how to choose a CRM&amp;quot;, &amp;quot;what is performance max&amp;quot;</p>
+          <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;how to choose a CRM&quot;, &quot;what is performance max&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Low CPC</span> <span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Lower conversion</span></p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Commercial (Research)</h3>
           <p className="text-sm text-gray-600 mb-2">User researches options before buying.</p>
-          <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &amp;quot;best CRM for small business&amp;quot;, &amp;quot;hubspot vs salesforce&amp;quot;</p>
+          <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;best CRM for small business&quot;, &quot;hubspot vs salesforce&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Medium CPC</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Good conversion</span></p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Transactional</h3>
           <p className="text-sm text-gray-600 mb-2">User ready to buy or convert.</p>
-          <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &amp;quot;buy CRM software&amp;quot;, &amp;quot;CRM pricing&amp;quot;, &amp;quot;CRM free trial&amp;quot;</p>
+          <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;buy CRM software&quot;, &quot;CRM pricing&quot;, &quot;CRM free trial&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Higher CPC</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Highest conversion</span></p>
         </div>
       </div>
@@ -207,7 +207,7 @@ export default function KeywordGuideEN() {
         <p className="text-sm text-gray-600 mb-3">See what keywords competitors rank for.</p>
         <ul className="text-sm">
           <li><strong>Paid tools:</strong> SEMrush, Ahrefs, SpyFu</li>
-          <li><strong>Free:</strong> Google search (check competitor ads), autocomplete, &amp;quot;Searches related to...&amp;quot;</li>
+          <li><strong>Free:</strong> Google search (check competitor ads), autocomplete, &quot;Searches related to...&quot;</li>
         </ul>
       </div>
 
@@ -344,16 +344,16 @@ export default function KeywordGuideEN() {
         <div className="bg-white border-2 border-green-500 rounded-xl p-5">
           <p className="font-heading font-bold text-green-700 mb-2">Priority keywords</p>
           <ul className="text-sm mb-0">
-            <li>Transactional: &amp;quot;buy&amp;quot;, &amp;quot;price&amp;quot;, &amp;quot;order&amp;quot;</li>
-            <li>Commercial: &amp;quot;best&amp;quot;, &amp;quot;reviews&amp;quot;, &amp;quot;vs&amp;quot;</li>
-            <li>Problem-focused: &amp;quot;[problem] solution&amp;quot;</li>
-            <li>Local: &amp;quot;[service] [city]&amp;quot;</li>
+            <li>Transactional: &quot;buy&quot;, &quot;price&quot;, &quot;order&quot;</li>
+            <li>Commercial: &quot;best&quot;, &quot;reviews&quot;, &quot;vs&quot;</li>
+            <li>Problem-focused: &quot;[problem] solution&quot;</li>
+            <li>Local: &quot;[service] [city]&quot;</li>
           </ul>
         </div>
         <div className="bg-white border-2 border-red-500 rounded-xl p-5">
           <p className="font-heading font-bold text-red-700 mb-2">Avoid</p>
           <ul className="text-sm mb-0">
-            <li>Too broad: &amp;quot;software&amp;quot;, &amp;quot;shoes&amp;quot;</li>
+            <li>Too broad: &quot;software&quot;, &quot;shoes&quot;</li>
             <li>Purely informational without strategic reason</li>
             <li>Too expensive for your model</li>
             <li>Irrelevant to your offering</li>
@@ -418,7 +418,7 @@ export default function KeywordGuideEN() {
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-4 font-medium">Phrase</td>
-              <td className="py-3 px-4">&amp;quot;keyword&amp;quot;</td>
+              <td className="py-3 px-4">&quot;keyword&quot;</td>
               <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Medium</span></td>
               <td className="py-3 px-4">Medium</td>
               <td className="py-3 px-4">Campaign launch, discovery</td>
@@ -573,8 +573,8 @@ export default function KeywordGuideEN() {
         </div>
         <p className="text-sm text-gray-600 mb-3">Controlling which keyword triggers which ad when you have overlaps between Ad Groups.</p>
         <ul className="text-sm">
-          <li><strong>Problem:</strong> You have &amp;quot;crm&amp;quot; and &amp;quot;crm pricing&amp;quot; — which shows for &amp;quot;crm pricing uk&amp;quot;?</li>
-          <li><strong>Solution:</strong> Add &amp;quot;pricing&amp;quot; as negative to general Ad Group</li>
+          <li><strong>Problem:</strong> You have &quot;crm&quot; and &quot;crm pricing&quot; — which shows for &quot;crm pricing uk&quot;?</li>
+          <li><strong>Solution:</strong> Add &quot;pricing&quot; as negative to general Ad Group</li>
         </ul>
       </div>
 
@@ -601,7 +601,7 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #1</p>
           <p className="font-semibold mb-2">Too broad keywords without modifiers</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Add modifiers (type, location, intent). Instead of &amp;quot;software&amp;quot; use &amp;quot;crm software for small business&amp;quot;.</p>
+            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Add modifiers (type, location, intent). Instead of &quot;software&quot; use &quot;crm software for small business&quot;.</p>
           </div>
         </div>
 
