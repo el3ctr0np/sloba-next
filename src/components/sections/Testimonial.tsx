@@ -8,8 +8,8 @@ export function Testimonial() {
           of eCommerce made all the difference."
         </blockquote>
         <div>
-          <p className="font-semibold text-lg">Jason</p>
-          <p className="text-gray-400">CEO @ Mobelaris</p>
+          <p className="font-semibold text-lg">Jason M.</p>
+          <p className="text-gray-400">CEO at Mobelaris</p>
         </div>
       </div>
     </section>

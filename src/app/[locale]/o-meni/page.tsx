@@ -335,7 +335,7 @@ export default async function AboutPage({ params }: Props) {
 
               <p className="text-lg text-slate-300 mb-6">
                 {locale === "en"
-                  ? "I help companies from Serbia, the UK, and the USA get the most out of Google Ads. No generic approach, no junior staff on your account — just direct work with an expert."
+                  ? "I help companies from Serbia, the UK, and the USA get the most out of Google Ads. No cookie-cutter strategies, no junior staff on your account — just direct work with an expert."
                   : "Pomažem kompanijama iz Srbije, UK-a i USA da izvuku maksimum iz Google Ads-a. Bez generic pristupa, bez junior kadrova na vašem nalogu — samo direktan rad sa ekspertom."}
               </p>
 
@@ -510,7 +510,7 @@ export default async function AboutPage({ params }: Props) {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en" ? "Numbers speak" : "Brojke govore"}
+            {locale === "en" ? "The numbers speak for themselves" : "Brojke govore"}
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

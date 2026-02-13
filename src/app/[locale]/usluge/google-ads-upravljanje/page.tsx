@@ -90,7 +90,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             title: "Deep analysis before launch",
             description:
-              "Understanding your business model, margins, ideal customers, and competition — before spending a single dollar on ads."
+              "Understanding your business model, margins, ideal customers, and competition — before spending a single euro on ads."
           },
           {
             title: "Custom campaign structure",

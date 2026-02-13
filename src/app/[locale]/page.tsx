@@ -94,7 +94,7 @@ export default async function Home({ params }: Props) {
             "9+ years of experience",
             "3x UK Search Awards winner",
             "Google Partner (Ad Mixer — official representative)",
-            "Partner @ Funky Enterprises",
+            "Partner at Funky Enterprises (omnichannel agency)",
             "50+ brands across 6+ countries",
           ],
         }

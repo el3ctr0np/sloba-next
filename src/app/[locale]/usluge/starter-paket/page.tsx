@@ -130,9 +130,9 @@ export default async function StarterPaketPage({ params }: Props) {
               "GTM, conversion tracking, GA4 linking — everything set up correctly so you know exactly what's working."
           },
           {
-            title: "Live training with comprehension check",
+            title: "Hands-on training with Q&A",
             description:
-              "45-60 minute 1-on-1 training where I not only explain how everything works, but verify you understand and can continue independently."
+              "45-60 minute 1-on-1 training where I walk you through everything, answer your questions, and make sure you can manage campaigns independently."
           },
           {
             title: "30 days support for questions",

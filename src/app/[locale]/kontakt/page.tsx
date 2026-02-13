@@ -342,7 +342,7 @@ export default async function ContactPage({ params }: Props) {
 
             <Card>
               <h3 className="font-heading font-semibold mb-3">
-                {locale === "en" ? "Proof" : "Dokazi"}
+                {locale === "en" ? "Track Record" : "Dokazi"}
               </h3>
               <div className="space-y-3 text-sm text-gray-600">
                 <div>
