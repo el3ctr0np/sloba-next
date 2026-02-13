@@ -1,6 +1,17 @@
-const baseUrl = "https://slobodan-jelisavac.com";
+import { routing } from "@/i18n/routing";
+import { slugMap } from "@/app/[locale]/blog/[slug]/posts/slug-map";
 
-const locales = ["sr", "en"];
+const baseUrl = "https://www.slobodan-jelisavac.com";
+
+// Extract EN pathname map from routing config
+const enPathMap: Record<string, string> = {};
+for (const [canonical, localized] of Object.entries(routing.pathnames)) {
+  if (typeof localized === "object" && "en" in localized) {
+    enPathMap[canonical] = localized.en;
+  }
+}
+
+// SR routes (canonical paths)
 const routes = [
   "",
   "/o-meni",
@@ -43,6 +54,21 @@ const routes = [
   "/blog/remarketing-vodic"
 ];
 
+/** Translate a canonical (SR) route to the EN equivalent */
+function toEnRoute(route: string): string {
+  // Direct match in routing pathnames (service pages, about, contact)
+  if (enPathMap[route]) return enPathMap[route];
+
+  // Blog posts: translate slug
+  const blogMatch = route.match(/^\/blog\/(.+)$/);
+  if (blogMatch && slugMap[blogMatch[1]]) {
+    return `/blog/${slugMap[blogMatch[1]]}`;
+  }
+
+  // Unchanged (homepage, case-studies, etc.)
+  return route;
+}
+
 const priorityForRoute = (route: string) => {
   if (route === "") return "1.0";
   const segments = route.split("/").filter(Boolean);
@@ -53,18 +79,27 @@ const priorityForRoute = (route: string) => {
 
 export async function GET() {
   const now = new Date().toISOString();
-  const urls = locales.flatMap((locale) =>
-    routes.map((route) => {
-      const loc = `${baseUrl}/${locale}${route}`;
-      const priority = priorityForRoute(route);
-      return `
+
+  const urls = routes.flatMap((route) => {
+    const srPath = route;
+    const enPath = toEnRoute(route);
+    const priority = priorityForRoute(route);
+
+    return [
+      `
   <url>
-    <loc>${loc}</loc>
+    <loc>${baseUrl}/sr${srPath}</loc>
     <lastmod>${now}</lastmod>
     <priority>${priority}</priority>
-  </url>`;
-    })
-  );
+  </url>`,
+      `
+  <url>
+    <loc>${baseUrl}/en${enPath}</loc>
+    <lastmod>${now}</lastmod>
+    <priority>${priority}</priority>
+  </url>`
+    ];
+  });
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
