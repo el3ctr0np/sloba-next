@@ -1,17 +1,21 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Card, Button } from "@/components/ui";
 import { caseStudies } from "@/app/[locale]/case-studies/data";
 
 export function CaseStudiesPreview() {
+  const t = useTranslations("CaseStudiesPreview");
+
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4">
-          Rezultati koji govore
+          {t("heading")}
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Pogledajte kako sam pomogao brendovima da ostvare značajan rast kroz
-          Google Ads.
+          {t("description")}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {caseStudies.map((study) => (
@@ -41,7 +45,7 @@ export function CaseStudiesPreview() {
                   ))}
                 </div>
                 <span className="text-primary font-medium">
-                  Pogledajte case study →
+                  {t("viewStudy")}
                 </span>
               </Card>
             </Link>
@@ -49,7 +53,7 @@ export function CaseStudiesPreview() {
         </div>
         <div className="text-center mt-8">
           <Button href="/case-studies" variant="primary">
-            Svi case studies
+            {t("viewAll")}
           </Button>
         </div>
       </div>

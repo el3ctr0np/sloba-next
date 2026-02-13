@@ -1,1 +1,145 @@
-{}
+{
+  "Header": {
+    "nav": {
+      "home": "Početna",
+      "services": "Usluge",
+      "caseStudies": "Case Studies",
+      "blog": "Blog",
+      "about": "O Meni",
+      "contact": "Kontakt"
+    },
+    "cta": "Zakažite konsultaciju",
+    "serviceGroups": {
+      "googleAds": "Google Ads",
+      "byIndustry": "Po Industriji",
+      "other": "Ostale Usluge"
+    },
+    "services": {
+      "googleAdsManagement": "Google Ads Upravljanje",
+      "googleAdsAudit": "Google Ads Audit",
+      "searchCampaigns": "Search Kampanje",
+      "googleShopping": "Google Shopping",
+      "performanceMax": "Performance Max",
+      "remarketing": "Remarketing",
+      "youtubeAds": "YouTube Oglasi",
+      "b2b": "Google Ads za B2B",
+      "ecommerce": "Google Ads za eCommerce",
+      "saas": "Google Ads za SaaS",
+      "performanceMarketing": "Performance Marketing",
+      "consultations": "Konsultacije",
+      "starterPackage": "Starter Paket"
+    },
+    "allServices": "Sve usluge →"
+  },
+  "Footer": {
+    "ctaHeading": "Spremni da poboljšate Google Ads rezultate?",
+    "ctaDescription": "Besplatna konsultacija. Bez obaveze. Odgovor u roku od 24h.",
+    "cta": "Zakažite konsultaciju",
+    "brandDescription": "Google Ads Strategist sa 9+ godina iskustva. 50+ brendova u 6+ zemalja.",
+    "location": "Batajnica, Srbija",
+    "sectionServices": "Usluge",
+    "sectionIndustries": "Po Industriji",
+    "sectionResources": "Resursi",
+    "services": {
+      "googleAdsManagement": "Google Ads Upravljanje",
+      "googleAdsAudit": "Google Ads Audit",
+      "googleShopping": "Google Shopping",
+      "performanceMax": "Performance Max",
+      "searchCampaigns": "Search Kampanje",
+      "remarketing": "Remarketing",
+      "youtubeAds": "YouTube Oglasi",
+      "performanceMarketing": "Performance Marketing"
+    },
+    "industries": {
+      "ecommerce": "Google Ads za eCommerce",
+      "b2b": "Google Ads za B2B",
+      "saas": "Google Ads za SaaS",
+      "starterPackage": "Starter Paket",
+      "consultations": "Konsultacije"
+    },
+    "resources": {
+      "blog": "Blog / Google Ads Vodič",
+      "caseStudies": "Case Studies",
+      "about": "O Meni",
+      "contact": "Kontakt"
+    },
+    "copyright": "© 2026 Slobodan Jelisavac. Sva prava zadržana.",
+    "partner": "Partner @",
+    "designCredit": "Dizajn & razvoj:"
+  },
+  "WhyMe": {
+    "heading": "Zašto klijenti biraju direktnu saradnju umesto agencije",
+    "features": {
+      "experience": {
+        "title": "10+ godina na Google Ads platformi",
+        "description": "Sertifikovan za sve tipove kampanja — od Search-a do Performance Max-a. Svakodnevno upravljanje nalozima od prvog dana."
+      },
+      "results": {
+        "title": "Dokazani rezultati sa brojevima",
+        "description": "3.7x ROAS za eCommerce, -50% CPA za lead gen, 12x rast prihoda. Konkretne brojke, ne obećanja."
+      },
+      "international": {
+        "title": "Međunarodno iskustvo, lokalno razumevanje",
+        "description": "Kampanje za UK, US i EU tržišta. Od britanske eCommerce konkurencije do srpskog lokalnog biznisa — razumem specifičnosti svakog."
+      },
+      "ai": {
+        "title": "AI alati za nadljudsku efikasnost",
+        "description": "Claude, Gemini i custom skripte za analizu, copy i automatizaciju rutinskih zadataka. Više vremena za strategiju, manje za admin."
+      },
+      "direct": {
+        "title": "Radite direktno sa ekspertom",
+        "description": "Nema account menadžera koji prepričava. Nema juniora koji uči na vašem budžetu. Direktna komunikacija sa osobom u nalogu."
+      },
+      "transparent": {
+        "title": "Potpuna transparentnost bez iznenađenja",
+        "description": "Svaki dinar vidljiv. Konkretni mesečni izveštaji, ne generičke PDF prezentacije. Bez dugoročnih ugovora — rezultati vas zadržavaju."
+      }
+    }
+  },
+  "FinalCTA": {
+    "heading": "Spremni da unapredite rezultate?",
+    "description": "Zakažite besplatnu konsultaciju i saznajte kako Google Ads može raditi za vaš biznis. Bez obaveze, bez pritiska.",
+    "cta": "Zakažite besplatnu konsultaciju",
+    "secondaryCta": "Pogledajte usluge",
+    "links": {
+      "caseStudies": "Case Studies",
+      "about": "O meni",
+      "blog": "Blog"
+    }
+  },
+  "CaseStudiesPreview": {
+    "heading": "Rezultati koji govore",
+    "description": "Pogledajte kako sam pomogao brendovima da ostvare značajan rast kroz Google Ads.",
+    "viewStudy": "Pogledajte case study →",
+    "viewAll": "Svi case studies"
+  },
+  "ServicesPreview": {
+    "heading": "Usluge koje Donose Rezultate",
+    "description": "Specijalizovane strategije za svaki aspekt digitalnog oglašavanja.",
+    "services": {
+      "googleAds": "Google Ads",
+      "performanceMax": "Performance Max",
+      "googleShopping": "Google Shopping",
+      "youtubeAds": "YouTube Oglasi",
+      "remarketing": "Remarketing",
+      "performanceMarketing": "Performance Marketing"
+    },
+    "allServices": "Sve usluge →"
+  },
+  "ContactForm": {
+    "subject": "Nova poruka sa sajta",
+    "namePlaceholder": "Ime",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Poruka",
+    "submit": "Pošalji"
+  },
+  "ClientLogos": {
+    "subtitle": "Poverenje brendova iz 6+ zemalja",
+    "heading": "Trusted by 50+ brands"
+  },
+  "Common": {
+    "readMore": "Saznajte više",
+    "viewAll": "Pogledajte sve",
+    "bookConsultation": "Zakažite besplatnu konsultaciju"
+  }
+}

@@ -1,58 +1,59 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui";
-
-const serviceGroups = [
-  {
-    title: "Google Ads",
-    items: [
-      { label: "Google Ads Upravljanje", href: "/usluge/google-ads-upravljanje" },
-      { label: "Google Ads Audit", href: "/usluge/google-ads-audit" },
-      { label: "Search Kampanje", href: "/usluge/search-kampanje" },
-      { label: "Google Shopping", href: "/usluge/google-shopping" },
-      { label: "Performance Max", href: "/usluge/performance-max" },
-      { label: "Remarketing", href: "/usluge/remarketing" },
-      { label: "YouTube Oglasi", href: "/usluge/youtube-oglasi" },
-    ]
-  },
-  {
-    title: "Po Industriji",
-    items: [
-      { label: "Google Ads za B2B", href: "/usluge/google-ads-za-b2b" },
-      { label: "Google Ads za eCommerce", href: "/usluge/google-ads-za-ecommerce" },
-      { label: "Google Ads za SaaS", href: "/usluge/google-ads-za-saas" },
-    ]
-  },
-  {
-    title: "Ostale Usluge",
-    items: [
-      { label: "Performance Marketing", href: "/usluge/performance-marketing" },
-      { label: "Konsultacije", href: "/usluge/konsultacije" },
-      { label: "Starter Paket", href: "/usluge/starter-paket" },
-    ]
-  }
-];
-
-const navItems = [
-  { label: "Početna", href: "/" },
-  { label: "Usluge", href: "/usluge", hasServiceMenu: true },
-  { label: "Case Studies", href: "/case-studies" },
-  { label: "Blog", href: "/blog" },
-  { label: "O Meni", href: "/o-meni" },
-  { label: "Kontakt", href: "/kontakt" },
-];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const locale = useLocale();
+  const t = useTranslations("Header");
   const rawPathname = usePathname();
 
   // Strip locale prefix if present to avoid /sr/en issues
   const pathname = rawPathname.replace(/^\/(sr|en)/, "") || "/";
+
+  const navItems = useMemo(() => [
+    { label: t("nav.home"), href: "/" },
+    { label: t("nav.services"), href: "/usluge", hasServiceMenu: true },
+    { label: t("nav.caseStudies"), href: "/case-studies" },
+    { label: t("nav.blog"), href: "/blog" },
+    { label: t("nav.about"), href: "/o-meni" },
+    { label: t("nav.contact"), href: "/kontakt" },
+  ], [t]);
+
+  const serviceGroups = useMemo(() => [
+    {
+      title: t("serviceGroups.googleAds"),
+      items: [
+        { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" },
+        { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" },
+        { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" },
+        { label: t("services.googleShopping"), href: "/usluge/google-shopping" },
+        { label: t("services.performanceMax"), href: "/usluge/performance-max" },
+        { label: t("services.remarketing"), href: "/usluge/remarketing" },
+        { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" },
+      ]
+    },
+    {
+      title: t("serviceGroups.byIndustry"),
+      items: [
+        { label: t("services.b2b"), href: "/usluge/google-ads-za-b2b" },
+        { label: t("services.ecommerce"), href: "/usluge/google-ads-za-ecommerce" },
+        { label: t("services.saas"), href: "/usluge/google-ads-za-saas" },
+      ]
+    },
+    {
+      title: t("serviceGroups.other"),
+      items: [
+        { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" },
+        { label: t("services.consultations"), href: "/usluge/konsultacije" },
+        { label: t("services.starterPackage"), href: "/usluge/starter-paket" },
+      ]
+    }
+  ], [t]);
 
   return (
     <>
@@ -109,7 +110,7 @@ export function Header() {
                     </div>
                     <div className="mt-4 pt-4 border-t border-gray-200">
                       <Link href="/usluge" className="text-primary font-semibold text-sm hover:underline">
-                        Sve usluge →
+                        {t("allServices")}
                       </Link>
                     </div>
                   </div>
@@ -138,7 +139,7 @@ export function Header() {
               </Link>
             </div>
             <Button href="/kontakt" variant="secondary">
-              Zakažite konsultaciju
+              {t("cta")}
             </Button>
           </div>
 
@@ -191,7 +192,7 @@ export function Header() {
             ))}
             <div className="mt-4">
               <Button href="/kontakt" variant="secondary" className="w-full text-center">
-                Zakažite konsultaciju
+                {t("cta")}
               </Button>
             </div>
             <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold border-2 border-gray-900 rounded-full px-3 py-2">
@@ -220,4 +221,3 @@ export function Header() {
     </>
   );
 }
-

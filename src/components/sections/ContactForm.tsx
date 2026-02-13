@@ -1,10 +1,11 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui";
 
 export function ContactForm() {
   const locale = useLocale();
+  const t = useTranslations("ContactForm");
 
   return (
     <form
@@ -13,7 +14,7 @@ export function ContactForm() {
       className="space-y-4"
     >
       {/* FormSubmit config */}
-      <input type="hidden" name="_subject" value="Nova poruka sa sajta" />
+      <input type="hidden" name="_subject" value={t("subject")} />
       <input type="hidden" name="_captcha" value="false" />
       <input
         type="hidden"
@@ -24,26 +25,26 @@ export function ContactForm() {
       <input
         type="text"
         name="name"
-        placeholder="Ime"
+        placeholder={t("namePlaceholder")}
         required
         className="w-full p-3 border-2 border-gray-900 rounded-md"
       />
       <input
         type="email"
         name="email"
-        placeholder="Email"
+        placeholder={t("emailPlaceholder")}
         required
         className="w-full p-3 border-2 border-gray-900 rounded-md"
       />
       <textarea
         name="message"
-        placeholder="Poruka"
+        placeholder={t("messagePlaceholder")}
         rows={5}
         required
         className="w-full p-3 border-2 border-gray-900 rounded-md"
       />
       <Button type="submit" variant="secondary" className="w-full">
-        Pošalji
+        {t("submit")}
       </Button>
     </form>
   );

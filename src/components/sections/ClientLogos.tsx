@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const logos = [
@@ -14,16 +17,17 @@ const logos = [
 ];
 
 export function ClientLogos() {
+  const t = useTranslations("ClientLogos");
   const allLogos = [...logos, ...logos];
 
   return (
     <section className="py-16 md:py-24 bg-gray-900 overflow-hidden">
       <div className="container-custom px-4 mb-12">
         <p className="text-center text-white/50 text-sm uppercase tracking-widest mb-3">
-          Poverenje brendova iz 6+ zemalja
+          {t("subtitle")}
         </p>
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-white">
-          Trusted by 50+ brands
+          {t("heading")}
         </h2>
       </div>
 

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Header, Footer } from "@/components/layout";
+import { HrefLang } from "@/components/seo/HrefLang";
 import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
@@ -26,6 +27,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <HrefLang />
       <Header />
       <main>{children}</main>
       <Footer />

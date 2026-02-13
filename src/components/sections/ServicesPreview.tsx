@@ -1,24 +1,29 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Card } from "@/components/ui";
 
-const services = [
-  { icon: "🎯", title: "Google Ads", href: "/usluge/google-ads-upravljanje" },
-  { icon: "⚡", title: "Performance Max", href: "/usluge/performance-max" },
-  { icon: "🛒", title: "Google Shopping", href: "/usluge/google-shopping" },
-  { icon: "📺", title: "YouTube Oglasi", href: "/usluge/youtube-oglasi" },
-  { icon: "🔄", title: "Remarketing", href: "/usluge/remarketing" },
-  { icon: "🚀", title: "Performance Marketing", href: "/usluge/performance-marketing", featured: true },
-];
-
 export function ServicesPreview() {
+  const t = useTranslations("ServicesPreview");
+
+  const services = [
+    { icon: "🎯", title: t("services.googleAds"), href: "/usluge/google-ads-upravljanje" },
+    { icon: "⚡", title: t("services.performanceMax"), href: "/usluge/performance-max" },
+    { icon: "🛒", title: t("services.googleShopping"), href: "/usluge/google-shopping" },
+    { icon: "📺", title: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" },
+    { icon: "🔄", title: t("services.remarketing"), href: "/usluge/remarketing" },
+    { icon: "🚀", title: t("services.performanceMarketing"), href: "/usluge/performance-marketing", featured: true },
+  ];
+
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4">
-          Usluge koje Donose Rezultate
+          {t("heading")}
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Specijalizovane strategije za svaki aspekt digitalnog oglašavanja.
+          {t("description")}
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {services.map((service, index) => (
@@ -37,11 +42,10 @@ export function ServicesPreview() {
         </div>
         <div className="text-center mt-8">
           <Link href="/usluge" className="text-primary font-semibold hover:underline">
-            Sve usluge →
+            {t("allServices")}
           </Link>
         </div>
       </div>
     </section>
   );
 }
-

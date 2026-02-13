@@ -1,1 +1,145 @@
-{}
+{
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "caseStudies": "Case Studies",
+      "blog": "Blog",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "cta": "Book a Consultation",
+    "serviceGroups": {
+      "googleAds": "Google Ads",
+      "byIndustry": "By Industry",
+      "other": "Other Services"
+    },
+    "services": {
+      "googleAdsManagement": "Google Ads Management",
+      "googleAdsAudit": "Google Ads Audit",
+      "searchCampaigns": "Search Campaigns",
+      "googleShopping": "Google Shopping",
+      "performanceMax": "Performance Max",
+      "remarketing": "Remarketing",
+      "youtubeAds": "YouTube Ads",
+      "b2b": "Google Ads for B2B",
+      "ecommerce": "Google Ads for eCommerce",
+      "saas": "Google Ads for SaaS",
+      "performanceMarketing": "Performance Marketing",
+      "consultations": "Consultations",
+      "starterPackage": "Starter Package"
+    },
+    "allServices": "All services →"
+  },
+  "Footer": {
+    "ctaHeading": "Ready to improve your Google Ads results?",
+    "ctaDescription": "Free consultation. No obligation. Response within 24h.",
+    "cta": "Book a Consultation",
+    "brandDescription": "Google Ads Strategist with 9+ years of experience. 50+ brands across 6+ countries.",
+    "location": "Belgrade, Serbia",
+    "sectionServices": "Services",
+    "sectionIndustries": "By Industry",
+    "sectionResources": "Resources",
+    "services": {
+      "googleAdsManagement": "Google Ads Management",
+      "googleAdsAudit": "Google Ads Audit",
+      "googleShopping": "Google Shopping",
+      "performanceMax": "Performance Max",
+      "searchCampaigns": "Search Campaigns",
+      "remarketing": "Remarketing",
+      "youtubeAds": "YouTube Ads",
+      "performanceMarketing": "Performance Marketing"
+    },
+    "industries": {
+      "ecommerce": "Google Ads for eCommerce",
+      "b2b": "Google Ads for B2B",
+      "saas": "Google Ads for SaaS",
+      "starterPackage": "Starter Package",
+      "consultations": "Consultations"
+    },
+    "resources": {
+      "blog": "Blog / Google Ads Guide",
+      "caseStudies": "Case Studies",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "copyright": "© 2026 Slobodan Jelisavac. All rights reserved.",
+    "partner": "Partner @",
+    "designCredit": "Design & development:"
+  },
+  "WhyMe": {
+    "heading": "Why clients choose a dedicated specialist over an agency",
+    "features": {
+      "experience": {
+        "title": "9+ years managing Google Ads daily",
+        "description": "Certified across all campaign types — from Search to Performance Max. Hands-on account management since day one."
+      },
+      "results": {
+        "title": "Proven results backed by data",
+        "description": "3.7x ROAS for eCommerce, -50% CPA for lead gen, 12x revenue growth. Real numbers, not promises."
+      },
+      "international": {
+        "title": "Multi-market experience across UK, US & EU",
+        "description": "Campaigns for UK eCommerce, US direct-to-consumer, and European B2B. I understand the nuances of each market."
+      },
+      "ai": {
+        "title": "AI-powered efficiency at scale",
+        "description": "Custom scripts, Claude, and Gemini for analysis, ad copy, and automation. More time for strategy, less on repetitive tasks."
+      },
+      "direct": {
+        "title": "Work directly with the expert",
+        "description": "No account managers relaying messages. No juniors learning on your budget. Direct communication with the person in your account."
+      },
+      "transparent": {
+        "title": "Full transparency with no surprises",
+        "description": "Every dollar accounted for. Actionable monthly reports, not generic PDF decks. No long-term contracts — results keep you."
+      }
+    }
+  },
+  "FinalCTA": {
+    "heading": "Ready to scale your results?",
+    "description": "Book a free consultation and discover how Google Ads can work harder for your business. No obligation, no pressure.",
+    "cta": "Book a Free Consultation",
+    "secondaryCta": "View Services",
+    "links": {
+      "caseStudies": "Case Studies",
+      "about": "About Me",
+      "blog": "Blog"
+    }
+  },
+  "CaseStudiesPreview": {
+    "heading": "Results That Speak for Themselves",
+    "description": "See how I've helped brands achieve significant growth through Google Ads.",
+    "viewStudy": "View case study →",
+    "viewAll": "All Case Studies"
+  },
+  "ServicesPreview": {
+    "heading": "Services That Drive Results",
+    "description": "Specialized strategies for every aspect of paid advertising.",
+    "services": {
+      "googleAds": "Google Ads",
+      "performanceMax": "Performance Max",
+      "googleShopping": "Google Shopping",
+      "youtubeAds": "YouTube Ads",
+      "remarketing": "Remarketing",
+      "performanceMarketing": "Performance Marketing"
+    },
+    "allServices": "All services →"
+  },
+  "ContactForm": {
+    "subject": "New inquiry from website",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Message",
+    "submit": "Send"
+  },
+  "ClientLogos": {
+    "subtitle": "Trusted by brands across 6+ countries",
+    "heading": "Trusted by 50+ brands"
+  },
+  "Common": {
+    "readMore": "Learn more",
+    "viewAll": "View all",
+    "bookConsultation": "Book a Free Consultation"
+  }
+}

@@ -1,33 +1,38 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui";
 
-const footerLinks = {
-  usluge: [
-    { label: "Google Ads Upravljanje", href: "/usluge/google-ads-upravljanje" },
-    { label: "Google Ads Audit", href: "/usluge/google-ads-audit" },
-    { label: "Google Shopping", href: "/usluge/google-shopping" },
-    { label: "Performance Max", href: "/usluge/performance-max" },
-    { label: "Search Kampanje", href: "/usluge/search-kampanje" },
-    { label: "Remarketing", href: "/usluge/remarketing" },
-    { label: "YouTube Oglasi", href: "/usluge/youtube-oglasi" },
-    { label: "Performance Marketing", href: "/usluge/performance-marketing" }
-  ],
-  industrije: [
-    { label: "Google Ads za eCommerce", href: "/usluge/google-ads-za-ecommerce" },
-    { label: "Google Ads za B2B", href: "/usluge/google-ads-za-b2b" },
-    { label: "Google Ads za SaaS", href: "/usluge/google-ads-za-saas" },
-    { label: "Starter Paket", href: "/usluge/starter-paket" },
-    { label: "Konsultacije", href: "/usluge/konsultacije" }
-  ],
-  resursi: [
-    { label: "Blog / Google Ads Vodič", href: "/blog" },
-    { label: "Case Studies", href: "/case-studies" },
-    { label: "O Meni", href: "/o-meni" },
-    { label: "Kontakt", href: "/kontakt" }
-  ]
-};
-
 export function Footer() {
+  const t = useTranslations("Footer");
+
+  const footerLinks = {
+    usluge: [
+      { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" },
+      { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" },
+      { label: t("services.googleShopping"), href: "/usluge/google-shopping" },
+      { label: t("services.performanceMax"), href: "/usluge/performance-max" },
+      { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" },
+      { label: t("services.remarketing"), href: "/usluge/remarketing" },
+      { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" },
+      { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" }
+    ],
+    industrije: [
+      { label: t("industries.ecommerce"), href: "/usluge/google-ads-za-ecommerce" },
+      { label: t("industries.b2b"), href: "/usluge/google-ads-za-b2b" },
+      { label: t("industries.saas"), href: "/usluge/google-ads-za-saas" },
+      { label: t("industries.starterPackage"), href: "/usluge/starter-paket" },
+      { label: t("industries.consultations"), href: "/usluge/konsultacije" }
+    ],
+    resursi: [
+      { label: t("resources.blog"), href: "/blog" },
+      { label: t("resources.caseStudies"), href: "/case-studies" },
+      { label: t("resources.about"), href: "/o-meni" },
+      { label: t("resources.contact"), href: "/kontakt" }
+    ]
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       {/* Footer CTA */}
@@ -36,14 +41,14 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl md:text-2xl font-heading font-bold mb-2">
-                Spremni da poboljšate Google Ads rezultate?
+                {t("ctaHeading")}
               </h3>
               <p className="text-gray-400">
-                Besplatna konsultacija. Bez obaveze. Odgovor u roku od 24h.
+                {t("ctaDescription")}
               </p>
             </div>
             <Button href="/kontakt" variant="secondary">
-              Zakažite konsultaciju
+              {t("cta")}
             </Button>
           </div>
         </div>
@@ -58,8 +63,7 @@ export function Footer() {
               Slobodan Jelisavac
             </h3>
             <p className="text-gray-400 text-sm mb-4">
-              Google Ads Strategist sa 9+ godina iskustva. 50+ brendova u 6+
-              zemalja.
+              {t("brandDescription")}
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <p>
@@ -70,7 +74,7 @@ export function Footer() {
                   info@slobodan-jelisavac.com
                 </a>
               </p>
-              <p>Batajnica, Srbija</p>
+              <p>{t("location")}</p>
             </div>
             <div className="flex gap-4 mt-4">
               <a
@@ -87,7 +91,7 @@ export function Footer() {
           {/* Usluge */}
           <div>
             <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
-              Usluge
+              {t("sectionServices")}
             </h4>
             <ul className="space-y-2">
               {footerLinks.usluge.map((link) => (
@@ -106,7 +110,7 @@ export function Footer() {
           {/* Industrije + Paketi */}
           <div>
             <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
-              Po Industriji
+              {t("sectionIndustries")}
             </h4>
             <ul className="space-y-2">
               {footerLinks.industrije.map((link) => (
@@ -125,7 +129,7 @@ export function Footer() {
           {/* Resursi */}
           <div>
             <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
-              Resursi
+              {t("sectionResources")}
             </h4>
             <ul className="space-y-2">
               {footerLinks.resursi.map((link) => (
@@ -148,10 +152,10 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-500">
             <p>
-              © 2026 Slobodan Jelisavac. Sva prava zadržana.
+              {t("copyright")}
             </p>
             <p className="md:flex-1 md:text-center">
-              Partner @{" "}
+              {t("partner")}{" "}
               <a
                 href="https://funky.enterprises"
                 target="_blank"
@@ -162,7 +166,7 @@ export function Footer() {
               </a>
             </p>
             <p>
-              Dizajn &amp; razvoj:{" "}
+              {t("designCredit")}{" "}
               <a
                 href="https://www.asarum-tech.com/"
                 target="_blank"
