@@ -9,27 +9,27 @@ export function Footer() {
 
   const footerLinks = {
     usluge: [
-      { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" },
-      { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" },
-      { label: t("services.googleShopping"), href: "/usluge/google-shopping" },
-      { label: t("services.performanceMax"), href: "/usluge/performance-max" },
-      { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" },
-      { label: t("services.remarketing"), href: "/usluge/remarketing" },
-      { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" },
-      { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" }
+      { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" as const },
+      { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" as const },
+      { label: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
+      { label: t("services.performanceMax"), href: "/usluge/performance-max" as const },
+      { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" as const },
+      { label: t("services.remarketing"), href: "/usluge/remarketing" as const },
+      { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" as const },
+      { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const }
     ],
     industrije: [
-      { label: t("industries.ecommerce"), href: "/usluge/google-ads-za-ecommerce" },
-      { label: t("industries.b2b"), href: "/usluge/google-ads-za-b2b" },
-      { label: t("industries.saas"), href: "/usluge/google-ads-za-saas" },
-      { label: t("industries.starterPackage"), href: "/usluge/starter-paket" },
-      { label: t("industries.consultations"), href: "/usluge/konsultacije" }
+      { label: t("industries.ecommerce"), href: "/usluge/google-ads-za-ecommerce" as const },
+      { label: t("industries.b2b"), href: "/usluge/google-ads-za-b2b" as const },
+      { label: t("industries.saas"), href: "/usluge/google-ads-za-saas" as const },
+      { label: t("industries.starterPackage"), href: "/usluge/starter-paket" as const },
+      { label: t("industries.consultations"), href: "/usluge/konsultacije" as const }
     ],
     resursi: [
-      { label: t("resources.blog"), href: "/blog" },
-      { label: t("resources.caseStudies"), href: "/case-studies" },
-      { label: t("resources.about"), href: "/o-meni" },
-      { label: t("resources.contact"), href: "/kontakt" }
+      { label: t("resources.blog"), href: "/blog" as const },
+      { label: t("resources.caseStudies"), href: "/case-studies" as const },
+      { label: t("resources.about"), href: "/o-meni" as const },
+      { label: t("resources.contact"), href: "/kontakt" as const }
     ]
   };
 

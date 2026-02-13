@@ -637,7 +637,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
               </Link>
               <span>·</span>
               <Link
-                href="/blog/remarketing-vodic"
+                href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
                 className="hover:text-white transition-colors"
               >
                 {locale === "en" ? "Remarketing Guide" : "Remarketing vodič"}

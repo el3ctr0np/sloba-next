@@ -266,7 +266,7 @@ export default async function CaseStudyPage({ params }: Props) {
           {otherStudies.map((other) => (
             <Link
               key={other.slug}
-              href={`/case-studies/${other.slug}`}
+              href={{ pathname: "/case-studies/[slug]", params: { slug: other.slug } }}
               className="group"
             >
               <Card className="h-full transition-shadow group-hover:shadow-lg">

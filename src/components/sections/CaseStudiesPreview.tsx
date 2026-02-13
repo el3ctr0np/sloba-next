@@ -19,7 +19,7 @@ export function CaseStudiesPreview() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {caseStudies.map((study) => (
-            <Link key={study.slug} href={`/case-studies/${study.slug}`}>
+            <Link key={study.slug} href={{ pathname: "/case-studies/[slug]", params: { slug: study.slug } }}>
               <Card className="h-full border-t-4 border-t-primary">
                 <span className="inline-block bg-secondary/10 text-secondary text-xs font-semibold px-2 py-1 rounded mb-3">
                   {study.highlight}

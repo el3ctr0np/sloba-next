@@ -291,7 +291,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <p>
         Za detaljno poređenje svih opcija, pogledajte{" "}
-        <Link href="/blog/agencija-vs-freelancer" className="underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="underline">
           vodič: agencija vs. freelancer vs. in-house
         </Link>.
       </p>
@@ -391,7 +391,7 @@ export default function KolikoKostaGoogleAdsPost() {
         <p className="font-semibold text-blue-900 mb-1">Ne zaboravite na vreme</p>
         <p className="text-blue-800 text-sm mb-0">
           Ako radite sami, računajte na 3-6 meseci pre nego što stvarno naučite. To vreme ima cenu. Više o pravilnom postavljanju tracking-a u{" "}
-          <Link href="/blog/conversion-tracking-vodic" className="underline">vodiču za conversion tracking</Link>.
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">vodiču za conversion tracking</Link>.
         </p>
       </div>
 
@@ -511,7 +511,7 @@ export default function KolikoKostaGoogleAdsPost() {
           </summary>
           <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
             Generalno da, CPC na Google-u je viši. Ali intent korisnika je jači — neko ko pretražuje &quot;kupi X&quot; je bliži kupovini od nekoga ko scrolla Instagram. Više o ovome u{" "}
-            <Link href="/blog/google-ads-vs-meta" className="underline">Google Ads vs Meta Ads poređenju</Link>.
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta" } }} className="underline">Google Ads vs Meta Ads poređenju</Link>.
           </div>
         </details>
       </div>
@@ -519,19 +519,19 @@ export default function KolikoKostaGoogleAdsPost() {
       {/* ── Povezani vodiči ── */}
       <h2>Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/blog/agencija-vs-freelancer" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Agencija vs. Freelancer vs. In-House</p>
           <p className="text-xs text-gray-500 mb-0">Detaljno poređenje svih opcija za upravljanje kampanjama</p>
         </Link>
-        <Link href="/blog/google-ads-greske" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">20 grešaka koje vas koštaju novca</p>
           <p className="text-xs text-gray-500 mb-0">Najčešće greške u Google Ads kampanjama</p>
         </Link>
-        <Link href="/blog/conversion-tracking-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion tracking vodič</p>
           <p className="text-xs text-gray-500 mb-0">Pravilno postavljanje tracking-a za merenje rezultata</p>
         </Link>
-        <Link href="/blog/google-ads-vs-meta" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads vs Meta Ads</p>
           <p className="text-xs text-gray-500 mb-0">Koji kanal je bolji za vaš biznis</p>
         </Link>

@@ -215,7 +215,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </div>
         <p className="text-sm text-gray-600 mb-3">
           Ako prodajete standardne proizvode koje ljudi traže po imenu,
-          <Link href="/blog/google-shopping-vodic" className="underline">Google Shopping</Link> kampanje
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">Google Shopping</Link> kampanje
           često donose najbolji ROAS. Pretraga pokazuje nameru, Shopping pokazuje proizvod.
         </p>
         <ul className="text-sm">
@@ -297,7 +297,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           moćan za dugoročni rast.
         </p>
         <ul className="text-sm">
-          <li><Link href="/blog/remarketing-vodic" className="underline">Remarketing</Link> za posetioce sajta &amp; cart abandoners</li>
+          <li><Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline">Remarketing</Link> za posetioce sajta &amp; cart abandoners</li>
           <li>Lookalike audiences na osnovu postojećih kupaca</li>
           <li>Video view audiences za funnel progresiju</li>
           <li>Email list retargeting &amp; customer exclusions</li>
@@ -508,7 +508,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         <p className="text-blue-800 text-sm mb-0">
           Korisnik vidi vaš oglas na Instagramu, ne klikne. Sledeće nedelje
           pretražuje Google, klikne na oglas, kupi. Ko dobija credit? Google kaže Google,
-          Meta kaže Meta (view-through). Istina je negde između. Koristite <Link href="/blog/conversion-tracking-vodic" className="underline">Google Analytics 4</Link> ili
+          Meta kaže Meta (view-through). Istina je negde između. Koristite <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">Google Analytics 4</Link> ili
           dedicated attribution tool (npr. Triple Whale) za nezavisno merenje.
         </p>
       </div>
@@ -581,7 +581,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             freelanceri ili manje agencije za svaki kanal mogu biti bolji u egzekuciji
             od generalist agencije koja radi &quot;sve&quot;. Važnije je da neko razume
             vašu industriju nego da ima pristup svim platformama. Vidite više na
-            <Link href="/blog/agencija-vs-freelancer" className="underline ml-1">agencija vs freelancer</Link>.
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="underline ml-1">agencija vs freelancer</Link>.
           </div>
         </details>
 
@@ -646,7 +646,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       {/* ── Connected guides ── */}
       <h3 className="font-heading font-bold text-lg mb-3">Povezani vodiči</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/blog/remarketing-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             Remarketing — Kompletni vodič
           </p>
@@ -654,7 +654,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Kako vratiti 96% posetilaca koji odu bez kupovine
           </p>
         </Link>
-        <Link href="/blog/google-oglasavanje-za-firme" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-oglasavanje-za-firme" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             Google oglašavanje za firme
           </p>
@@ -662,7 +662,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Vodič za B2B kompanije i uslužne delatnosti
           </p>
         </Link>
-        <Link href="/blog/koliko-kosta-google-ads" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             Koliko košta Google Ads?
           </p>
@@ -670,7 +670,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Realni troškovi oglašavanja u Srbiji i regionu
           </p>
         </Link>
-        <Link href="/blog/ecommerce-vs-b2b" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             eCommerce vs B2B strategija
           </p>

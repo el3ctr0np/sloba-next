@@ -572,7 +572,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
               {locale === "en" ? "Remarketing" : "Remarketing"}
             </Link>
             <span aria-hidden="true">•</span>
-            <Link href="/blog/google-shopping-vodic" className="hover:text-yellow-400 transition-colors underline">
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="hover:text-yellow-400 transition-colors underline">
               {locale === "en" ? "Google Shopping guide" : "Google Shopping vodič"}
             </Link>
           </div>

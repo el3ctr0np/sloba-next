@@ -367,7 +367,7 @@ export default function NegativeKeywordsVodicPost() {
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Pro tip</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Kompletna provera naloga</h3>
-          <p className="text-sm text-gray-600 mb-0">Pogledajte <Link href="/blog/google-ads-audit-vodic" className="underline font-semibold">Google Ads audit checklist</Link> za kompletnu reviziju naloga.</p>
+          <p className="text-sm text-gray-600 mb-0">Pogledajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-semibold">Google Ads audit checklist</Link> za kompletnu reviziju naloga.</p>
         </div>
       </div>
 
@@ -440,7 +440,7 @@ export default function NegativeKeywordsVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-            Indirektno — da. Bolji CTR (manje irelevantnih prikaza) → bolji Expected CTR → bolji QS. Više o tome u <Link href="/blog/quality-score-vodic" className="underline">Quality Score vodiču</Link>.
+            Indirektno — da. Bolji CTR (manje irelevantnih prikaza) → bolji Expected CTR → bolji QS. Više o tome u <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline">Quality Score vodiču</Link>.
           </div>
         </details>
 
@@ -510,19 +510,19 @@ export default function NegativeKeywordsVodicPost() {
       {/* ── Povezani vodiči ── */}
       <h2>Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/blog/kljucne-reci-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Ključne reči — kompletan vodič</p>
           <p className="text-xs text-gray-500 mb-0">Od istraživanja do optimizacije ključnih reči</p>
         </Link>
-        <Link href="/blog/quality-score-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako poboljšati QS i smanjiti CPC</p>
         </Link>
-        <Link href="/blog/google-ads-audit-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Audit checklist</p>
           <p className="text-xs text-gray-500 mb-0">80+ tačaka za kompletnu reviziju naloga</p>
         </Link>
-        <Link href="/blog/google-ads-greske" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Najčešće Google Ads greške</p>
           <p className="text-xs text-gray-500 mb-0">12 grešaka koje uništavaju performanse</p>
         </Link>

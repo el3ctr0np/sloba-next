@@ -542,7 +542,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
                 {locale === "en" ? "Search campaigns" : "Search kampanje"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href="/blog/ecommerce-vs-b2b" className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-yellow-400 hover:text-yellow-300 underline">
                 {locale === "en" ? "eCommerce vs B2B" : "eCommerce vs B2B"}
               </Link>
             </div>

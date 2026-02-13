@@ -8,12 +8,12 @@ export function ServicesPreview() {
   const t = useTranslations("ServicesPreview");
 
   const services = [
-    { icon: "🎯", title: t("services.googleAds"), href: "/usluge/google-ads-upravljanje" },
-    { icon: "⚡", title: t("services.performanceMax"), href: "/usluge/performance-max" },
-    { icon: "🛒", title: t("services.googleShopping"), href: "/usluge/google-shopping" },
-    { icon: "📺", title: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" },
-    { icon: "🔄", title: t("services.remarketing"), href: "/usluge/remarketing" },
-    { icon: "🚀", title: t("services.performanceMarketing"), href: "/usluge/performance-marketing", featured: true },
+    { icon: "🎯", title: t("services.googleAds"), href: "/usluge/google-ads-upravljanje" as const },
+    { icon: "⚡", title: t("services.performanceMax"), href: "/usluge/performance-max" as const },
+    { icon: "🛒", title: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
+    { icon: "📺", title: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" as const },
+    { icon: "🔄", title: t("services.remarketing"), href: "/usluge/remarketing" as const },
+    { icon: "🚀", title: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const, featured: true },
   ];
 
   return (

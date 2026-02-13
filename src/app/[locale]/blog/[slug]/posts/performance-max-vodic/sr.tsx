@@ -92,7 +92,7 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">Conversion tracking mora biti 100% ispravan pre pokretanja PMax-a. Loši podaci = loše odluke algoritma. Ako nemate pouzdan tracking, najpre popravite to. Preporučujem da pročitate <Link href="/blog/conversion-tracking-vodic" className="underline">vodič za conversion tracking</Link> pre nego što pokrenete PMax.</p>
+        <p className="text-yellow-800 text-sm mb-0">Conversion tracking mora biti 100% ispravan pre pokretanja PMax-a. Loši podaci = loše odluke algoritma. Ako nemate pouzdan tracking, najpre popravite to. Preporučujem da pročitate <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">vodič za conversion tracking</Link> pre nego što pokrenete PMax.</p>
       </div>
 
       <hr />
@@ -267,7 +267,7 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Moja preporuka: Hibridni pristup</p>
-        <p className="text-blue-800 text-sm mb-0">Počnite sa Standard Shopping kampanjama za kontrolu i učenje. Dodajte PMax kada imate stabilan conversion history (50+ konverzija/mesec). Najbolji rezultati dolaze iz kombinacije: Standard Shopping za brand i kontrolu, PMax za prospecting i skaliranje. Detaljnije o Shopping kampanjama: <Link href="/blog/google-shopping-vodic" className="underline">Google Shopping vodič</Link>.</p>
+        <p className="text-blue-800 text-sm mb-0">Počnite sa Standard Shopping kampanjama za kontrolu i učenje. Dodajte PMax kada imate stabilan conversion history (50+ konverzija/mesec). Najbolji rezultati dolaze iz kombinacije: Standard Shopping za brand i kontrolu, PMax za prospecting i skaliranje. Detaljnije o Shopping kampanjama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">Google Shopping vodič</Link>.</p>
       </div>
 
       <hr />
@@ -487,7 +487,7 @@ export default function PerformanceMaxVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #5</p>
           <p className="font-semibold mb-2">Loš ili nepouzdan conversion tracking</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Ako trackujete pogrešne konverzije (npr. &quot;Click on button&quot; umesto stvarne kupovine) ili nemate conversion values setup, PMax optimizuje ka pogrešnom cilju. Prvo popravite tracking: <Link href="/blog/conversion-tracking-vodic" className="underline">Conversion tracking vodič</Link>.</p>
+            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Ako trackujete pogrešne konverzije (npr. &quot;Click on button&quot; umesto stvarne kupovine) ili nemate conversion values setup, PMax optimizuje ka pogrešnom cilju. Prvo popravite tracking: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">Conversion tracking vodič</Link>.</p>
           </div>
         </div>
       </div>
@@ -616,7 +616,7 @@ export default function PerformanceMaxVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-            Kada konstantno underperformuje vs vaši ciljevi posle 8+ nedelja (dovoljno vremena za learning), kada je lead quality neprihvatljiva i ne poboljšava se sa offline conversion import-om, ili kada jednostavno ne odgovara vašem poslovnom modelu (npr. potreba za striktnom kontrolom budžeta po proizvodu). PMax nije za sve — i to je OK. Neki biznisi bolje funkcionišu sa Search + Shopping + Remarketing kombinacijom. <Link href="/blog/remarketing-vodic" className="underline">Remarketing vodič</Link>.
+            Kada konstantno underperformuje vs vaši ciljevi posle 8+ nedelja (dovoljno vremena za learning), kada je lead quality neprihvatljiva i ne poboljšava se sa offline conversion import-om, ili kada jednostavno ne odgovara vašem poslovnom modelu (npr. potreba za striktnom kontrolom budžeta po proizvodu). PMax nije za sve — i to je OK. Neki biznisi bolje funkcionišu sa Search + Shopping + Remarketing kombinacijom. <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline">Remarketing vodič</Link>.
           </div>
         </details>
       </div>
@@ -628,19 +628,19 @@ export default function PerformanceMaxVodicPost() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/blog/google-shopping-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako optimizovati product feed i strukturu Shopping kampanja za bolji ROAS.</p>
         </Link>
-        <Link href="/blog/remarketing-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing vodič</p>
           <p className="text-xs text-gray-500 mb-0">Strategije za audience segmentaciju i dinamički remarketing na Display i YouTube.</p>
         </Link>
-        <Link href="/blog/conversion-tracking-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako postaviti ispravan conversion tracking pre pokretanja PMax kampanja.</p>
         </Link>
-        <Link href="/blog/google-oglasavanje-za-firme" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-oglasavanje-za-firme" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads za firme</p>
           <p className="text-xs text-gray-500 mb-0">Kompletna strategija Google Ads oglašavanja za B2B i eCommerce.</p>
         </Link>

@@ -1,87 +1,87 @@
 import { Link } from "@/i18n/navigation";
 
-export default function EcommerceVsB2BPost() {
+export default function EcommerceVsB2BEN() {
   return (
     <>
       <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">
-          Ukratko
+          TL;DR
         </p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          eCommerce i B2B Google Ads strategije su fundamentalno različite — customer journey, metrički prioriteti, bidding strategije i conversion tracking nisu isti. Preporučujem prilagođen pristup jer primena pogrešne strategije bacaju novac.
+          eCommerce and B2B Google Ads strategies are fundamentally different — customer journey, metric priorities, bidding strategies, and conversion tracking aren&apos;t the same. I recommend a tailored approach because applying the wrong strategy wastes money.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">
               2
             </p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Modela</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Models</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">
               8
             </p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Ključnih razlika</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Key differences</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">
               4+4
             </p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Strategije</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Strategies</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">
               1
             </p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Pravi pristup</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Right approach</p>
           </div>
         </div>
       </div>
 
       <p>
-        &quot;Radimo Google Ads, ali ne vidimo rezultate.&quot;
+        &quot;We&apos;re running Google Ads but not seeing results.&quot;
       </p>
       <p>
-        Kada čujem ovu rečenicu, prvo pitanje je: da li je strategija prilagođena vašem poslovnom modelu?
+        When I hear this, my first question is: is your strategy tailored to your business model?
       </p>
       <p>
-        eCommerce i B2B imaju fundamentalno različite karakteristike. Customer journey, decision making process, vrednost konverzije, metrike koje pratite — sve je različito.
+        eCommerce and B2B have fundamentally different characteristics. Customer journey, decision-making process, conversion value, metrics you track — everything is different.
       </p>
       <p>
-        A opet, vidim isti pristup primenjivan na oba: iste vrste kampanja, isti KPI-jevi, ista očekivanja.
+        Yet I see the same approach applied to both: same campaign types, same KPIs, same expectations.
       </p>
       <p>
-        U ovom vodiču pokrivam ključne razlike i specifične strategije za svaki model.
-      </p>
-
-      <hr />
-
-      <h2>Zašto se eCommerce i B2B razlikuju u Google Ads-u</h2>
-      <p>
-        Pre nego što pređemo na konkretne taktike, potrebno je razumeti fundamentalne razlike između dva modela.
-      </p>
-      <p>
-        <strong>eCommerce:</strong> Korisnik zna šta želi, traži gde da kupi. &quot;Kupi Nike Air Max 90 bele&quot; — intent je jasan, ciklus kratak, konverzija je kupovina.
-      </p>
-      <p>
-        <strong>B2B:</strong> Korisnik ima problem, traži rešenje. &quot;Kako automatizovati fakturisanje&quot; — tek istražuje opcije, ciklus dug, konverzija je lead.
-      </p>
-      <p>
-        Ova razlika diktira sve ostalo — od tipa kampanja do načina merenja uspeha.
+        In this guide I cover the key differences and specific strategies for each model.
       </p>
 
       <hr />
 
-      <h2>Ključne razlike — poređenje</h2>
+      <h2>Why eCommerce and B2B differ in Google Ads</h2>
       <p>
-        Preporučujem da prvo razumete direktne razlike između modela pre nego što definišete strategiju.
+        Before diving into specific tactics, you need to understand the fundamental differences between the two models.
+      </p>
+      <p>
+        <strong>eCommerce:</strong> User knows what they want, searching where to buy. &quot;Buy Nike Air Max 90 white&quot; — intent is clear, cycle is short, conversion is purchase.
+      </p>
+      <p>
+        <strong>B2B:</strong> User has a problem, searching for a solution. &quot;How to automate invoicing&quot; — just researching options, cycle is long, conversion is a lead.
+      </p>
+      <p>
+        This difference dictates everything else — from campaign types to how you measure success.
+      </p>
+
+      <hr />
+
+      <h2>Key differences — comparison</h2>
+      <p>
+        I recommend understanding the direct differences between models before defining strategy.
       </p>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-4 font-heading font-semibold">Aspect</th>
               <th className="py-3 px-4 font-heading font-semibold">eCommerce</th>
               <th className="py-3 px-4 font-heading font-semibold">B2B</th>
             </tr>
@@ -89,41 +89,41 @@ export default function EcommerceVsB2BPost() {
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-4 font-medium">Sales Cycle</td>
-              <td className="py-3 px-4">Minuti do dana</td>
-              <td className="py-3 px-4">Nedelje do meseci</td>
+              <td className="py-3 px-4">Minutes to days</td>
+              <td className="py-3 px-4">Weeks to months</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-4 font-medium">Decision Makers</td>
-              <td className="py-3 px-4">1 osoba</td>
-              <td className="py-3 px-4">2-10 osoba</td>
+              <td className="py-3 px-4">1 person</td>
+              <td className="py-3 px-4">2-10 people</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-4 font-medium">Touchpoints</td>
-              <td className="py-3 px-4">1-5 interakcija</td>
-              <td className="py-3 px-4">10-50+ interakcija</td>
+              <td className="py-3 px-4">1-5 interactions</td>
+              <td className="py-3 px-4">10-50+ interactions</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Primarna konverzija</td>
-              <td className="py-3 px-4">Kupovina (sa vrednošću)</td>
-              <td className="py-3 px-4">Lead (forma, demo, poziv)</td>
+              <td className="py-3 px-4 font-medium">Primary conversion</td>
+              <td className="py-3 px-4">Purchase (with value)</td>
+              <td className="py-3 px-4">Lead (form, demo, call)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Vrednost</td>
-              <td className="py-3 px-4">€10 - €500 (tipično)</td>
-              <td className="py-3 px-4">€1,000 - €100,000+</td>
+              <td className="py-3 px-4 font-medium">Value</td>
+              <td className="py-3 px-4">$20 - $800 (typical)</td>
+              <td className="py-3 px-4">$2,000 - $200,000+</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-4 font-medium">Volume</td>
-              <td className="py-3 px-4">Visok (stotine transakcija)</td>
-              <td className="py-3 px-4">Nizak (desetine lead-ova)</td>
+              <td className="py-3 px-4">High (hundreds of transactions)</td>
+              <td className="py-3 px-4">Low (dozens of leads)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Primarni KPI</td>
+              <td className="py-3 px-4 font-medium">Primary KPI</td>
               <td className="py-3 px-4">ROAS, Revenue, Conversion Rate</td>
               <td className="py-3 px-4">CPL, Lead Quality, SQL Rate</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Ključne kampanje</td>
+              <td className="py-3 px-4 font-medium">Key campaigns</td>
               <td className="py-3 px-4">Shopping, PMax, Brand Search</td>
               <td className="py-3 px-4">Non-Brand Search, Remarketing</td>
             </tr>
@@ -132,17 +132,17 @@ export default function EcommerceVsB2BPost() {
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-yellow-900 mb-1">Važno</p>
+        <p className="font-semibold text-yellow-900 mb-1">Important</p>
         <p className="text-yellow-800 text-sm mb-0">
-          Ignorisanje ovih razlika vodi ka primeni pogrešne strategije. Shopping kampanje ne postoje za B2B. Lead-gen tracking ne daje ROAS za eCommerce. Prilagodite pristup modelu.
+          Ignoring these differences leads to applying the wrong strategy. Shopping campaigns don&apos;t exist for B2B. Lead-gen tracking doesn&apos;t give ROAS for eCommerce. Tailor the approach to the model.
         </p>
       </div>
 
       <hr />
 
-      <h2>Google Ads strategija za eCommerce</h2>
+      <h2>Google Ads strategy for eCommerce</h2>
       <p>
-        Za eCommerce, Google Ads strategija je fokusirana na brzu konverziju, visok ROAS i Shopping kampanje kao ključni kanal.
+        For eCommerce, Google Ads strategy focuses on quick conversion, high ROAS, and Shopping campaigns as the key channel.
       </p>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
@@ -154,7 +154,7 @@ export default function EcommerceVsB2BPost() {
             <div>
               <strong>Brand Search</strong>{" "}
               <span className="text-gray-500">
-                — zaštita brenda, visok CTR, najbolji ROAS
+                — brand protection, high CTR, best ROAS
               </span>
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function EcommerceVsB2BPost() {
             <div>
               <strong>Google Shopping</strong>{" "}
               <span className="text-gray-500">
-                — Standard Shopping (kontrola) + PMax (skaliranje)
+                — Standard Shopping (control) + PMax (scaling)
               </span>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function EcommerceVsB2BPost() {
             <div>
               <strong>Non-Brand Search</strong>{" "}
               <span className="text-gray-500">
-                — generičke pretrage, viši CPC, dopunski kanal
+                — generic searches, higher CPC, supplemental channel
               </span>
             </div>
           </div>
@@ -200,24 +200,24 @@ export default function EcommerceVsB2BPost() {
             1
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">
-            Shopping kampanje — srce eCommerce strategije
+            Shopping campaigns — heart of eCommerce strategy
           </h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          Za većinu eCommerce biznisa, Shopping kampanje donose 60-80% prihoda iz Google Ads. Vizuelni format, pre-kvalifikacija cenom, visok intent.
+          For most eCommerce businesses, Shopping campaigns drive 60-80% of revenue from Google Ads. Visual format, price pre-qualification, high intent.
         </p>
         <ul className="text-sm">
           <li>
-            <strong>Feed quality</strong> je #1 prioritet — title optimizacija, atributi, custom labels za segmentaciju
+            <strong>Feed quality</strong> is #1 priority — title optimization, attributes, custom labels for segmentation
           </li>
           <li>
-            <strong>Bidding:</strong> Target ROAS sa dynamic conversion values (šaljite stvarnu vrednost transakcije)
+            <strong>Bidding:</strong> Target ROAS with dynamic conversion values (send actual transaction value)
           </li>
           <li>
-            <strong>Segmentacija:</strong> Custom labels po marži, best-sellers, sezonalnost
+            <strong>Segmentation:</strong> Custom labels by margin, best-sellers, seasonality
           </li>
           <li>
-            <strong>Kontrola:</strong> Negative keywords za irelevantne pretrage
+            <strong>Control:</strong> Negative keywords for irrelevant searches
           </li>
         </ul>
       </div>
@@ -227,20 +227,20 @@ export default function EcommerceVsB2BPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
             2
           </span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Search kampanje</h3>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Search campaigns</h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          Brand Search za zaštitu + Non-Brand Search za dopunski volumen. Shopping &gt; Search za većinu eCommerce kategorija.
+          Brand Search for protection + Non-Brand Search for supplemental volume. Shopping &gt; Search for most eCommerce categories.
         </p>
         <ul className="text-sm">
           <li>
-            <strong>Brand:</strong> Obvezno — konkurenti mogu da se prikazuju na vaš brand
+            <strong>Brand:</strong> Mandatory — competitors can show on your brand
           </li>
           <li>
-            <strong>Non-Brand:</strong> Generičke pretrage (&quot;patike Nike&quot;, &quot;bluetooth slušalice&quot;)
+            <strong>Non-Brand:</strong> Generic searches (&quot;Nike sneakers&quot;, &quot;bluetooth headphones&quot;)
           </li>
           <li>
-            <strong>Kategorije:</strong> Mid-funnel (&quot;najbolje patike za trčanje&quot;)
+            <strong>Categories:</strong> Mid-funnel (&quot;best running shoes&quot;)
           </li>
         </ul>
       </div>
@@ -251,21 +251,21 @@ export default function EcommerceVsB2BPost() {
             3
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">
-            Remarketing — recovery strategija
+            Remarketing — recovery strategy
           </h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          97% posetilaca ne kupi prvi put. Remarketing je obavezan za konverziju &quot;gotovo kupljenih&quot; transakcija.
+          97% of visitors don&apos;t buy the first time. Remarketing is essential for converting &quot;almost purchased&quot; transactions.
         </p>
         <ul className="text-sm">
           <li>
-            <strong>Cart Abandoners (1-7 dana):</strong> Agresivan pristup, možda sa incentive (popust 10%)
+            <strong>Cart Abandoners (1-7 days):</strong> Aggressive approach, maybe with incentive (10% off)
           </li>
           <li>
-            <strong>Product Viewers (3-14 dana):</strong> Dinamički product ads (prikazuju proizvod koji su gledali)
+            <strong>Product Viewers (3-14 days):</strong> Dynamic product ads (show product they viewed)
           </li>
           <li>
-            <strong>Past Customers (30-180 dana):</strong> Cross-sell, upsell, novi proizvodi
+            <strong>Past Customers (30-180 days):</strong> Cross-sell, upsell, new products
           </li>
         </ul>
       </div>
@@ -276,37 +276,37 @@ export default function EcommerceVsB2BPost() {
             4
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">
-            Performance Max — skaliranje sa oprezom
+            Performance Max — scaling with caution
           </h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          PMax je automated kanal koji pokriva sve Google inventory (Search, Shopping, Display, YouTube). Koristi se za skaliranje kada imate stabilan ROAS sa Shopping/Search.
+          PMax is an automated channel covering all Google inventory (Search, Shopping, Display, YouTube). Use for scaling when you have stable ROAS from Shopping/Search.
         </p>
         <ul className="text-sm">
           <li>
-            <strong>Kada koristiti:</strong> Nakon što imate 50+ konverzija mesečno i stabilan ROAS
+            <strong>When to use:</strong> After you have 50+ conversions monthly and stable ROAS
           </li>
           <li>
-            <strong>Asset groups:</strong> Segmentirajte po kategorijama ili best-sellers
+            <strong>Asset groups:</strong> Segment by categories or best-sellers
           </li>
           <li>
-            <strong>Oprez:</strong> PMax može da kanibalizuje Brand Search — pratite search term reportove
+            <strong>Caution:</strong> PMax can cannibalize Brand Search — monitor search term reports
           </li>
         </ul>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">Povezan vodič</p>
+        <p className="font-semibold text-blue-900 mb-1">Related guide</p>
         <p className="text-blue-800 text-sm mb-0">
-          Detaljnije o Shopping kampanjama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping vodič — kako pokrenuti i optimizovati</Link>
+          More on Shopping campaigns: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping guide — how to launch and optimize</Link>
         </p>
       </div>
 
       <hr />
 
-      <h2>Google Ads strategija za B2B</h2>
+      <h2>Google Ads strategy for B2B</h2>
       <p>
-        Za B2B, Google Ads strategija je fokusirana na lead quality (ne volume), duži sales cycle, i offline conversion tracking.
+        For B2B, Google Ads strategy focuses on lead quality (not volume), longer sales cycle, and offline conversion tracking.
       </p>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
@@ -318,7 +318,7 @@ export default function EcommerceVsB2BPost() {
             <div>
               <strong>Non-Brand Search</strong>{" "}
               <span className="text-gray-500">
-                — Problem, Solution, Product keywords (50-60% budžeta)
+                — Problem, Solution, Product keywords (50-60% budget)
               </span>
             </div>
           </div>
@@ -329,7 +329,7 @@ export default function EcommerceVsB2BPost() {
             <div>
               <strong>Brand Search</strong>{" "}
               <span className="text-gray-500">
-                — zaštita + authority, najbolji conversion rate
+                — protection + authority, best conversion rate
               </span>
             </div>
           </div>
@@ -340,7 +340,7 @@ export default function EcommerceVsB2BPost() {
             <div>
               <strong>Remarketing</strong>{" "}
               <span className="text-gray-500">
-                — nurture kroz duži ciklus (30-90 dana window)
+                — nurture through longer cycle (30-90 day window)
               </span>
             </div>
           </div>
@@ -351,7 +351,7 @@ export default function EcommerceVsB2BPost() {
             <div>
               <strong>Offline Conversion Import</strong>{" "}
               <span className="text-gray-500">
-                — GCLID tracking, SQL &amp; Won Deal import za pravi feedback
+                — GCLID tracking, SQL &amp; Won Deal import for true feedback
               </span>
             </div>
           </div>
@@ -364,24 +364,24 @@ export default function EcommerceVsB2BPost() {
             1
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">
-            Search kampanje — fokus na intent keywords
+            Search campaigns — focus on intent keywords
           </h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          Za B2B, Search je dominantan kanal. Shopping ne postoji, Display ima ograničen impact. Pokrijte ceo funnel, ali najveći budžet na high-intent.
+          For B2B, Search is the dominant channel. Shopping doesn&apos;t exist, Display has limited impact. Cover the full funnel, but biggest budget on high-intent.
         </p>
         <ul className="text-sm">
           <li>
-            <strong>Problem keywords:</strong> &quot;kako smanjiti troškove IT-a&quot; — nizak intent, niži CPC
+            <strong>Problem keywords:</strong> &quot;how to reduce IT costs&quot; — low intent, lower CPC
           </li>
           <li>
-            <strong>Solution keywords:</strong> &quot;IT outsourcing usluge&quot; — srednji intent, srednji CPC
+            <strong>Solution keywords:</strong> &quot;IT outsourcing services&quot; — medium intent, medium CPC
           </li>
           <li>
-            <strong>Product keywords:</strong> &quot;cloud ERP za proizvodnju&quot; — visok intent, viši CPC
+            <strong>Product keywords:</strong> &quot;cloud ERP for manufacturing&quot; — high intent, higher CPC
           </li>
           <li>
-            <strong>Competitor keywords:</strong> &quot;SAP vs Oracle&quot; — visok intent, visok CPC
+            <strong>Competitor keywords:</strong> &quot;SAP vs Oracle&quot; — high intent, high CPC
           </li>
         </ul>
       </div>
@@ -392,21 +392,21 @@ export default function EcommerceVsB2BPost() {
             2
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">
-            Content/Lead magnet strategija
+            Content/Lead magnet strategy
           </h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          B2B buyer ne želi odmah da ostavi kontakt. Ponudite besplatan content (whitepaper, checklist, webinar) kao prvi korak.
+          B2B buyer doesn&apos;t want to leave contact info immediately. Offer free content (whitepaper, checklist, webinar) as first step.
         </p>
         <ul className="text-sm">
           <li>
-            <strong>Top-of-funnel:</strong> Problem-based content (&quot;Kako smanjiti troškove&quot; &rarr; &quot;Preuzmite besplatnu checklist&quot;)
+            <strong>Top-of-funnel:</strong> Problem-based content (&quot;How to reduce costs&quot; &rarr; &quot;Download free checklist&quot;)
           </li>
           <li>
             <strong>Mid-funnel:</strong> Solution content (case study, demo video)
           </li>
           <li>
-            <strong>Bottom-funnel:</strong> Direktna ponuda (demo, konsultacije)
+            <strong>Bottom-funnel:</strong> Direct offer (demo, consultation)
           </li>
         </ul>
       </div>
@@ -417,24 +417,24 @@ export default function EcommerceVsB2BPost() {
             3
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">
-            Remarketing — nurture kroz duži ciklus
+            Remarketing — nurture through longer cycle
           </h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          B2B remarketing je drugačiji — duži consideration period (30-90 dana), više touchpoints, fokus na value nurture.
+          B2B remarketing is different — longer consideration period (30-90 days), more touchpoints, focus on value nurture.
         </p>
         <ul className="text-sm">
           <li>
-            <strong>Blog Readers (30 dana):</strong> Lead magnet, webinar invite
+            <strong>Blog Readers (30 days):</strong> Lead magnet, webinar invite
           </li>
           <li>
-            <strong>Resource Downloaders (60 dana):</strong> Case study, demo offer
+            <strong>Resource Downloaders (60 days):</strong> Case study, demo offer
           </li>
           <li>
-            <strong>Pricing Page (14 dana):</strong> Direktna ponuda, konsultacije (high-intent segment)
+            <strong>Pricing Page (14 days):</strong> Direct offer, consultation (high-intent segment)
           </li>
           <li>
-            <strong>Demo No-Shows (7 dana):</strong> Reschedule, alternative content
+            <strong>Demo No-Shows (7 days):</strong> Reschedule, alternative content
           </li>
         </ul>
       </div>
@@ -445,37 +445,37 @@ export default function EcommerceVsB2BPost() {
             4
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">
-            Offline Conversion Import — kritična razlika
+            Offline Conversion Import — critical difference
           </h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          U eCommerce, konverzija = prodaja. U B2B, konverzija = lead. Ali nisu svi lead-ovi jednaki. Offline import rešava problem kvaliteta.
+          In eCommerce, conversion = sale. In B2B, conversion = lead. But not all leads are equal. Offline import solves the quality problem.
         </p>
         <ul className="text-sm">
           <li>
-            <strong>Problem:</strong> Optimizujete ka form submissions, dobijate volume ali ne kvalitet
+            <strong>Problem:</strong> You optimize towards form submissions, getting volume but not quality
           </li>
           <li>
-            <strong>Rešenje:</strong> Čuvajte GCLID sa svakim lead-om &rarr; pratite kroz sales pipeline &rarr; importujte &quot;SQL&quot; ili &quot;Won&quot; nazad u Google Ads
+            <strong>Solution:</strong> Save GCLID with each lead &rarr; track through sales pipeline &rarr; import &quot;SQL&quot; or &quot;Won&quot; back to Google Ads
           </li>
           <li>
-            <strong>Impact:</strong> Google uči koji tip lead-ova se zatvara. Volume može pasti, ali kvalitet drastično raste.
+            <strong>Impact:</strong> Google learns which lead types close. Volume may drop, but quality drastically rises.
           </li>
         </ul>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">Povezani vodiči</p>
+        <p className="font-semibold text-blue-900 mb-1">Related guides</p>
         <p className="text-blue-800 text-sm mb-0">
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Conversion tracking vodič</Link> za offline import setup &amp; <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing vodič</Link> za nurture strategiju.
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Conversion tracking guide</Link> for offline import setup &amp; <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing guide</Link> for nurture strategy.
         </p>
       </div>
 
       <hr />
 
-      <h2>KPI-jevi i merenje uspeha</h2>
+      <h2>KPIs and measuring success</h2>
       <p>
-        Preporučujem različite KPI-jeve za eCommerce i B2B jer optimizacija ka pogrešnim metrikama bacaju novac.
+        I recommend different KPIs for eCommerce and B2B because optimizing towards wrong metrics wastes money.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -484,12 +484,12 @@ export default function EcommerceVsB2BPost() {
             eCommerce
           </p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">
-            Primarni KPI-jevi
+            Primary KPIs
           </h3>
           <p className="text-sm text-gray-600 mb-0">
-            <strong>ROAS</strong> (Return on Ad Spend) — prihod / trošak<br />
-            <strong>Revenue</strong> — ukupan prihod iz kampanja<br />
-            <strong>Conversion Rate</strong> — procenat posetilaca koji kupe<br />
+            <strong>ROAS</strong> (Return on Ad Spend) — revenue / cost<br />
+            <strong>Revenue</strong> — total revenue from campaigns<br />
+            <strong>Conversion Rate</strong> — % visitors who buy<br />
             <strong>AOV</strong> (Average Order Value)<br />
             <strong>CPA</strong> (Cost per Acquisition)
           </p>
@@ -500,14 +500,14 @@ export default function EcommerceVsB2BPost() {
             B2B
           </p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">
-            Primarni KPI-jevi
+            Primary KPIs
           </h3>
           <p className="text-sm text-gray-600 mb-0">
-            <strong>CPL</strong> (Cost per Lead) — ali oprez, nije sve o volumenu<br />
-            <strong>Lead Quality Score</strong> — % kvalifikovanih lead-ova<br />
-            <strong>SQL Rate</strong> — % lead-ova koji postanu Sales Qualified<br />
-            <strong>Pipeline Value</strong> — ukupna vrednost potencijalnih dealova<br />
-            <strong>Cost per SQL</strong> (pravi KPI, ne CPL)
+            <strong>CPL</strong> (Cost per Lead) — but caution, it&apos;s not all about volume<br />
+            <strong>Lead Quality Score</strong> — % qualified leads<br />
+            <strong>SQL Rate</strong> — % leads that become Sales Qualified<br />
+            <strong>Pipeline Value</strong> — total value of potential deals<br />
+            <strong>Cost per SQL</strong> (true KPI, not CPL)
           </p>
         </div>
       </div>
@@ -516,16 +516,16 @@ export default function EcommerceVsB2BPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-4 font-heading font-semibold">Metric</th>
               <th className="py-3 px-4 font-heading font-semibold">eCommerce Benchmark</th>
               <th className="py-3 px-4 font-heading font-semibold">B2B Benchmark</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPC (prosek)</td>
-              <td className="py-3 px-4">€0.30 - €1.50</td>
-              <td className="py-3 px-4">€2.00 - €10.00+</td>
+              <td className="py-3 px-4 font-medium">CPC (average)</td>
+              <td className="py-3 px-4">$0.50 - $2.50</td>
+              <td className="py-3 px-4">$3.00 - $15.00+</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-4 font-medium">Conversion Rate</td>
@@ -539,11 +539,11 @@ export default function EcommerceVsB2BPost() {
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-4 font-medium">CPA / CPL</td>
-              <td className="py-3 px-4">€10 - €50 (per purchase)</td>
-              <td className="py-3 px-4">€50 - €500+ (per lead)</td>
+              <td className="py-3 px-4">$15 - $80 (per purchase)</td>
+              <td className="py-3 px-4">$80 - $800+ (per lead)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Konverzije mesečno</td>
+              <td className="py-3 px-4 font-medium">Conversions monthly</td>
               <td className="py-3 px-4">50-500+</td>
               <td className="py-3 px-4">10-50</td>
             </tr>
@@ -553,57 +553,57 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Budžet i očekivanja</h2>
+      <h2>Budget and expectations</h2>
       <p>
-        Realistična očekivanja oko budžeta i rezultata variraju drastično između eCommerce i B2B.
+        Realistic expectations around budget and results vary drastically between eCommerce and B2B.
       </p>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-4 font-heading font-semibold">Aspect</th>
               <th className="py-3 px-4 font-heading font-semibold">eCommerce</th>
               <th className="py-3 px-4 font-heading font-semibold">B2B</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Minimalni budžet</td>
-              <td className="py-3 px-4">€500 - €1,000/mesec</td>
-              <td className="py-3 px-4">€1,500 - €2,500/mesec</td>
+              <td className="py-3 px-4 font-medium">Minimum budget</td>
+              <td className="py-3 px-4">$800 - $1,500/month</td>
+              <td className="py-3 px-4">$2,500 - $4,000/month</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Preporučeni početni</td>
-              <td className="py-3 px-4">€1,500 - €3,000/mesec</td>
-              <td className="py-3 px-4">€3,000 - €5,000/mesec</td>
+              <td className="py-3 px-4 font-medium">Recommended starting</td>
+              <td className="py-3 px-4">$2,000 - $5,000/month</td>
+              <td className="py-3 px-4">$5,000 - $8,000/month</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Vreme do rezultata</td>
-              <td className="py-3 px-4">2-4 nedelje (prvi podaci)</td>
-              <td className="py-3 px-4">1-3 meseca (kvalitetni lead-ovi)</td>
+              <td className="py-3 px-4 font-medium">Time to results</td>
+              <td className="py-3 px-4">2-4 weeks (first data)</td>
+              <td className="py-3 px-4">1-3 months (quality leads)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Skaliranje</td>
-              <td className="py-3 px-4">Linearan rast (2x budžet = ~2x revenue)</td>
-              <td className="py-3 px-4">Nelinearan (viši budžet ≠ 2x lead-ova)</td>
+              <td className="py-3 px-4 font-medium">Scaling</td>
+              <td className="py-3 px-4">Linear growth (2x budget = ~2x revenue)</td>
+              <td className="py-3 px-4">Non-linear (higher budget ≠ 2x leads)</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-yellow-900 mb-1">Pravilo budžeta</p>
+        <p className="font-semibold text-yellow-900 mb-1">Budget rule</p>
         <p className="text-yellow-800 text-sm mb-0">
-          eCommerce: Budžet = 10% očekivanog revenue (npr. želite €10K revenue &rarr; €1K ad spend). B2B: Budžet &gt; 3x CPC × 30 konverzija (npr. €5 CPC &rarr; min. €450/mesec, ali preporučujem 5-10x za stabilnost).
+          eCommerce: Budget = 10% expected revenue (e.g., want $15K revenue &rarr; $1.5K ad spend). B2B: Budget &gt; 3x CPC × 30 conversions (e.g., $8 CPC &rarr; min. $720/month, but I recommend 5-10x for stability).
         </p>
       </div>
 
       <hr />
 
-      <h2>Najčešće greške po modelu</h2>
+      <h2>Most common mistakes by model</h2>
       <p>
-        Svaki model ima specifične greške koje vidim kod novih klijenata. Preporučujem da ih izbegnete.
+        Each model has specific mistakes I see with new clients. I recommend avoiding them.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -612,20 +612,20 @@ export default function EcommerceVsB2BPost() {
             eCommerce
           </p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">
-            Kritične greške
+            Critical mistakes
           </h3>
           <ul className="text-sm mb-0">
             <li>
-              <strong>Ignorisanje feed optimizacije</strong> — feed je temelj Shopping-a, ne title/description
+              <strong>Ignoring feed optimization</strong> — feed is the foundation of Shopping, not title/description
             </li>
             <li>
-              <strong>Isti bid za sve proizvode</strong> — high-margin proizvodi treba više bidova, low-margin manje
+              <strong>Same bid for all products</strong> — high-margin products need higher bids, low-margin lower
             </li>
             <li>
-              <strong>Nema remarketing segmentacije</strong> — cart abandoners ≠ browsers, različit pristup
+              <strong>No remarketing segmentation</strong> — cart abandoners ≠ browsers, different approach
             </li>
             <li>
-              <strong>Fokus na CTR umesto ROAS</strong> — klik nije prodaja, platite li samo za klikove ili za revenue?
+              <strong>Focus on CTR instead of ROAS</strong> — click isn&apos;t sale, are you paying just for clicks or for revenue?
             </li>
           </ul>
         </div>
@@ -635,23 +635,23 @@ export default function EcommerceVsB2BPost() {
             B2B
           </p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">
-            Kritične greške
+            Critical mistakes
           </h3>
           <ul className="text-sm mb-0">
             <li>
-              <strong>Optimizacija ka form fills bez quality metriks</strong> — volume ≠ kvalitet, pratite SQL rate
+              <strong>Optimizing towards form fills without quality metrics</strong> — volume ≠ quality, track SQL rate
             </li>
             <li>
-              <strong>Prekratki remarketing windows</strong> — B2B ciklus je 30-90 dana, ne 7
+              <strong>Remarketing windows too short</strong> — B2B cycle is 30-90 days, not 7
             </li>
             <li>
-              <strong>Ignorisanje offline conversions</strong> — gubite najvažniji feedback za kvalitet
+              <strong>Ignoring offline conversions</strong> — you lose most important feedback for quality
             </li>
             <li>
-              <strong>Previše generički keywords</strong> — &quot;softver&quot; nije dovoljno specifično
+              <strong>Keywords too generic</strong> — &quot;software&quot; isn&apos;t specific enough
             </li>
             <li>
-              <strong>Očekivanje eCommerce-level volumena</strong> — B2B je inherently lower volume, fokus na kvalitet
+              <strong>Expecting eCommerce-level volume</strong> — B2B is inherently lower volume, focus on quality
             </li>
           </ul>
         </div>
@@ -659,89 +659,89 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Često postavljana pitanja</h2>
+      <h2>Frequently asked questions</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Može li isti tim raditi i eCommerce i B2B kampanje?
+          Can the same team run both eCommerce and B2B campaigns?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">
             &#9660;
           </span>
         </summary>
         <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-          Da, ali zahteva drugačiji mindset. Ekspertiza u jednom ne garantuje ekspertizu u drugom. eCommerce konsultant koji poznaje Shopping/ROAS optimizaciju mora da nauči B2B lead quality tracking i offline conversions. Obrnuto važi takođe — B2B konsultant mora da nauči feed optimizaciju i Shopping kampanje. Preporučujem timove koji imaju iskustvo u oba modela ili specijalizovane konsultante po modelu.
+          Yes, but requires different mindset. Expertise in one doesn&apos;t guarantee expertise in the other. eCommerce consultant who knows Shopping/ROAS optimization must learn B2B lead quality tracking and offline conversions. The reverse applies too — B2B consultant must learn feed optimization and Shopping campaigns. I recommend teams with experience in both models or specialized consultants per model.
         </div>
       </details>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mt-3">
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Koji model je lakši za početak?
+          Which model is easier to start with?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">
             &#9660;
           </span>
         </summary>
         <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-          eCommerce je obično jasniji — prodaja je prodaja, ROAS je ROAS. Vidite rezultate brže (2-4 nedelje), tracking je direktan (kupovina = konverzija), metrike su jednostavnije. B2B ima više varijabli: lead quality, sales cycle dužina, multiple decision makers. Ali ako imate CRM i offline conversion import, B2B može biti stabilniji dugoročno (veće deal vrednosti, duži customer lifetime).
+          eCommerce is usually clearer — sale is sale, ROAS is ROAS. You see results faster (2-4 weeks), tracking is direct (purchase = conversion), metrics are simpler. B2B has more variables: lead quality, sales cycle length, multiple decision makers. But if you have CRM and offline conversion import, B2B can be more stable long-term (larger deal values, longer customer lifetime).
         </div>
       </details>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mt-3">
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Da li PMax radi za B2B?
+          Does PMax work for B2B?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">
             &#9660;
           </span>
         </summary>
         <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-          Može, ali sa oprezom. PMax zahteva dovoljno konverzija (minimum 30-50/mesec) i offline import za pravu optimizaciju ka kvalitetu. Većina B2B biznisa nema dovoljno volume za PMax da radi optimalno. Preporučujem: počnite sa Search kampanjama, gradite volume, dodajte offline conversion import, tek onda testirajte PMax sa 20-30% budžeta. Nikada ne prebacujte 100% budžeta na PMax odmah.
+          It can, but with caution. PMax requires enough conversions (minimum 30-50/month) and offline import for true optimization towards quality. Most B2B businesses don&apos;t have enough volume for PMax to work optimally. I recommend: start with Search campaigns, build volume, add offline conversion import, only then test PMax with 20-30% budget. Never move 100% budget to PMax immediately.
         </div>
       </details>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mt-3">
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Koliki budžet treba za B2B?
+          How much budget for B2B?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">
             &#9660;
           </span>
         </summary>
         <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-          Više nego što mislite zbog višeg CPC-a (€2-10+) i nižeg volumena. Minimum €1,500-2,000 mesečno za smisleno testiranje. Preporučujem €3,000-5,000 za stabilne rezultate. Formula: 3x CPC × 30 konverzija = minimalni budžet (npr. €5 CPC &rarr; €450, ali to je minimum za 1 kampanju). Za 3-4 kampanje (Brand, Non-Brand, Remarketing) + testirajuće budžete, računajte €2,000-3,000.
+          More than you think because of higher CPC ($3-15+) and lower volume. Minimum $2,500-3,500 monthly for meaningful testing. I recommend $5,000-8,000 for stable results. Formula: 3x CPC × 30 conversions = minimum budget (e.g., $8 CPC &rarr; $720, but that&apos;s minimum for 1 campaign). For 3-4 campaigns (Brand, Non-Brand, Remarketing) + testing budgets, plan $3,500-5,000.
         </div>
       </details>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mt-3">
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Kako meriti ROI za B2B kada je sales cycle 6 meseci?
+          How to measure ROI for B2B when sales cycle is 6 months?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">
             &#9660;
           </span>
         </summary>
         <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-          Long-term tracking je ključan: pipeline value, SQL rate, eventual revenue. Koristite CRM integraciju (HubSpot, Salesforce) i importujte podatke nazad u Google Ads (offline conversions). Pratite 3 metrike: (1) CPL — koliko košta lead, (2) SQL rate — koliko % lead-ova postaje kvalifikovano, (3) Won rate — koliko % SQL-ova se zatvara. Kombinirajte: CPL × (1 / SQL rate) × (1 / Won rate) = Cost per Won Deal. Uporedite sa average deal value = ROI.
+          Long-term tracking is key: pipeline value, SQL rate, eventual revenue. Use CRM integration (HubSpot, Salesforce) and import data back to Google Ads (offline conversions). Track 3 metrics: (1) CPL — how much a lead costs, (2) SQL rate — what % leads become qualified, (3) Won rate — what % SQLs close. Combine: CPL × (1 / SQL rate) × (1 / Won rate) = Cost per Won Deal. Compare to average deal value = ROI.
         </div>
       </details>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mt-3">
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Šta ako radim hibridni model (npr. SaaS sa self-serve + enterprise)?
+          What if I run hybrid model (e.g., SaaS with self-serve + enterprise)?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">
             &#9660;
           </span>
         </summary>
         <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-          Preporučujem zasebne kampanje po segmentu. Low-touch proizvodi (mesečna pretplata &lt; €100) mogu da koriste eCommerce pristup (Target ROAS, kratki remarketing). High-touch enterprise (annual &gt; €1,000+) treba B2B pristup (lead-gen, duži remarketing, offline import). Razdvojite landing pages, konverzije, i budžete. Ne mešajte u istoj kampanji jer će Smart Bidding biti konfuzovan (optimizuje ka €50 self-serve ili €10,000 enterprise deal?).
+          I recommend separate campaigns per segment. Low-touch products (monthly subscription &lt; $150) can use eCommerce approach (Target ROAS, short remarketing). High-touch enterprise (annual &gt; $1,500+) needs B2B approach (lead-gen, longer remarketing, offline import). Separate landing pages, conversions, and budgets. Don&apos;t mix in same campaign because Smart Bidding will be confused (optimize towards $80 self-serve or $15,000 enterprise deal?).
         </div>
       </details>
 
       <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
-          Trebate pomoć sa Google Ads strategijom?
+          Need help with Google Ads strategy?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Radim sa eCommerce i B2B klijentima na prilagođenim Google Ads strategijama. Besplatna konsultacija uključuje analizu vašeg trenutnog account setup-a i preporuke za optimizaciju.
+          I work with eCommerce and B2B clients on tailored Google Ads strategies. Free consultation includes analysis of your current account setup and optimization recommendations.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
-          Zakažite besplatnu konsultaciju
+          Schedule free consultation
         </Link>
       </div>
 
@@ -751,10 +751,10 @@ export default function EcommerceVsB2BPost() {
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
-            Google Shopping Vodič
+            Google Shopping Guide
           </p>
           <p className="text-xs text-gray-500 mb-0">
-            Kompletan setup i optimizacija Shopping kampanja za eCommerce
+            Complete setup and optimization of Shopping campaigns for eCommerce
           </p>
         </Link>
 
@@ -763,10 +763,10 @@ export default function EcommerceVsB2BPost() {
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
-            Remarketing Vodič
+            Remarketing Guide
           </p>
           <p className="text-xs text-gray-500 mb-0">
-            Strategije za cart abandonment i lead nurture
+            Strategies for cart abandonment and lead nurture
           </p>
         </Link>
 
@@ -775,10 +775,10 @@ export default function EcommerceVsB2BPost() {
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
-            Conversion Tracking Vodič
+            Conversion Tracking Guide
           </p>
           <p className="text-xs text-gray-500 mb-0">
-            Offline conversion import i quality tracking za B2B
+            Offline conversion import and quality tracking for B2B
           </p>
         </Link>
 
@@ -787,23 +787,22 @@ export default function EcommerceVsB2BPost() {
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
-            Koliko Košta Google Ads
+            How Much Does Google Ads Cost
           </p>
           <p className="text-xs text-gray-500 mb-0">
-            Budžet benchmarks i očekivanja za eCommerce i B2B
+            Budget benchmarks and expectations for eCommerce and B2B
           </p>
         </Link>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Februar 2026
+        Last updated: February 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">
-          Autor: Slobodan Jelisavac, Google Ads Consultant
+          Author: Slobodan Jelisavac, Google Ads Consultant
         </Link>
       </div>
     </>
   );
 }
-

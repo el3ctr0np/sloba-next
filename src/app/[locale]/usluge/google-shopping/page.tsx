@@ -668,7 +668,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
               </Link>
               <span className="text-slate-600">•</span>
               <Link
-                href="/blog/google-shopping-vodic"
+                href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
                 className="text-slate-300 hover:text-yellow-400 transition-colors underline"
               >
                 {locale === "en" ? "Google Shopping Guide" : "Google Shopping vodič"}

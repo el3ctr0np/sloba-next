@@ -165,7 +165,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
       <p>
         Ključne reči su srce Search kampanja. 90% optimizacija koje radim svakog ponedeljka vezano je
-        za keyword management: dodavanje novih, pauziranje nerentabilnih, refining match types, i <Link href="/blog/negativne-kljucne-reci">dodavanje negativnih ključnih reči</Link>.
+        za keyword management: dodavanje novih, pauziranje nerentabilnih, refining match types, i <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}>dodavanje negativnih ključnih reči</Link>.
       </p>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -199,7 +199,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <li>Kreirajte master listu negativnih reči na account level (free, besplatno, posao, tutorial, PDF)</li>
           <li>Specifične negative keywords po kampanji (ako prodajete nove proizvode: dodajte &quot;polovno&quot;, &quot;second hand&quot;)</li>
           <li>Koristite negativne liste za brzinu — kreirajte &quot;B2C_Negatives&quot; ili &quot;Informational_Negatives&quot;</li>
-          <li>Kompletan vodič: <Link href="/blog/negativne-kljucne-reci">Negativne ključne reči u Google Ads</Link></li>
+          <li>Kompletan vodič: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}>Negativne ključne reči u Google Ads</Link></li>
         </ul>
       </div>
 
@@ -512,7 +512,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <p>
         Quality Score je Google-ova ocena koliko su vaši oglasi i keywords relevantni korisnicima.
         Viši Quality Score = niži CPC i bolji ad rank. Ako imate prosek ispod 5/10, ovde je vaš
-        najveći optimization opportunity. Kompletan vodič: <Link href="/blog/quality-score-vodic">Kako poboljšati Quality Score</Link>.
+        najveći optimization opportunity. Kompletan vodič: <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }}>Kako poboljšati Quality Score</Link>.
       </p>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -624,7 +624,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <li><strong>Cart Abandoners:</strong> Odvojena kampanja, agresivna ponuda (&quot;10% off if you complete purchase&quot;)</li>
             <li><strong>Page Visitors:</strong> Različite poruke za homepage vs product page posetioce</li>
             <li><strong>Past Purchasers:</strong> Cross-sell/upsell kampanje sa novim proizvodima</li>
-            <li>Kompletan vodič: <Link href="/blog/remarketing-vodic">Remarketing u Google Ads</Link></li>
+            <li>Kompletan vodič: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}>Remarketing u Google Ads</Link></li>
           </ul>
         </div>
       </div>
@@ -643,7 +643,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <li>Testirajte svaku konverziju ručno — napravite test transakciju/formu i proverite da li se evidentira</li>
           <li>Exclude internal traffic (vaša kancelarija) da ne &quot;zagađuje&quot; podatke</li>
           <li>Proverite conversion attribution model — Last Click vs Data-Driven (Data-Driven je bolji ako imate volume)</li>
-          <li>Kompletan vodič: <Link href="/blog/conversion-tracking-vodic">Conversion Tracking u Google Ads</Link></li>
+          <li>Kompletan vodič: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking u Google Ads</Link></li>
         </ul>
       </div>
 
@@ -791,7 +791,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <p>
               Freelance consultants naplaćuju €200-600/mesec za redovnu optimizaciju (u zavisnosti od obima naloga).
               Agencije 10-20% ad spend-a. DIY pristup košta vreme — realno 5-10 sati mesečno ako učite, ili 2-3 sata
-              ako ste iskusni. Više o cenama: <Link href="/blog/koliko-kosta-google-ads">Koliko košta Google Ads</Link>.
+              ako ste iskusni. Više o cenama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}>Koliko košta Google Ads</Link>.
               Ako vas zanima profesionalna pomoć, <Link href="/kontakt">zakažite konsultaciju</Link>.
             </p>
           </div>
@@ -845,7 +845,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <h2 className="text-xl font-heading font-bold mb-6">Povezani vodiči</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link
-            href="/blog/quality-score-vodic"
+            href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }}
             className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimizacija</p>
@@ -858,7 +858,7 @@ export default function GoogleAdsOptimizacijaPost() {
           </Link>
 
           <Link
-            href="/blog/negativne-kljucne-reci"
+            href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
             className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimizacija</p>
@@ -871,7 +871,7 @@ export default function GoogleAdsOptimizacijaPost() {
           </Link>
 
           <Link
-            href="/blog/remarketing-vodic"
+            href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
             className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kampanje</p>
@@ -884,7 +884,7 @@ export default function GoogleAdsOptimizacijaPost() {
           </Link>
 
           <Link
-            href="/blog/google-shopping-vodic"
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
             className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Shopping</p>

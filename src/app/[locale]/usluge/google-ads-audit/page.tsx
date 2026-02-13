@@ -859,7 +859,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                 : "Upravljanje Google Ads nalogom"}
             </Link>
             <Link
-              href="/blog/google-ads-audit-vodic"
+              href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en"
@@ -867,7 +867,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                 : "Google Ads audit vodič"}
             </Link>
             <Link
-              href="/blog/google-ads-greske"
+              href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en"

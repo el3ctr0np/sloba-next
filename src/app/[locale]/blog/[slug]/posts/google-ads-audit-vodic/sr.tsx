@@ -205,7 +205,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
       </div>
 
       <p>
-        Detaljan vodič kako postaviti tracking i kako troubleshoot-ovati probleme: <Link href="/blog/conversion-tracking-vodic">Conversion Tracking za Google Ads</Link>.
+        Detaljan vodič kako postaviti tracking i kako troubleshoot-ovati probleme: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking za Google Ads</Link>.
       </p>
 
       <hr />
@@ -315,7 +315,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
       </div>
 
       <p>
-        Detaljan vodič o keywords research-u, match types, i Quality Score optimizaciji: <Link href="/blog/kljucne-reci-vodic">Klju&#x10D;ne re&#x10D;i za Google Ads</Link>. Za negative keywords strategiju: <Link href="/blog/negativne-kljucne-reci">Negativne klju&#x10D;ne re&#x10D;i</Link>.
+        Detaljan vodič o keywords research-u, match types, i Quality Score optimizaciji: <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }}>Klju&#x10D;ne re&#x10D;i za Google Ads</Link>. Za negative keywords strategiju: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}>Negativne klju&#x10D;ne re&#x10D;i</Link>.
       </p>
 
       <hr />
@@ -418,7 +418,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
       </div>
 
       <p>
-        Detaljan vodič o remarketing strategijama i audience segmentation-u: <Link href="/blog/remarketing-vodic">Remarketing vodič za Google Ads</Link>.
+        Detaljan vodič o remarketing strategijama i audience segmentation-u: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}>Remarketing vodič za Google Ads</Link>.
       </p>
 
       <hr />
@@ -510,7 +510,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
       </div>
 
       <p>
-        Ako ne znate koliko budžeta treba aloćirati po kampanji ili industriji, pro&#x10D;itajte: <Link href="/blog/koliko-kosta-google-ads">Koliko ko&#x161;ta Google Ads</Link>.
+        Ako ne znate koliko budžeta treba aloćirati po kampanji ili industriji, pro&#x10D;itajte: <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}>Koliko ko&#x161;ta Google Ads</Link>.
       </p>
 
       <hr />
@@ -771,7 +771,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
       </p>
 
       <p>
-        Za nastavak optimizacije posle audit-a, pro&#x10D;itajte: <Link href="/blog/google-ads-optimizacija">Google Ads optimizacija vodi&#x10D;</Link> i <Link href="/blog/google-ads-greske">Naj&#x10D;eš&#x107;e Google Ads gre&#x161;ke</Link>.
+        Za nastavak optimizacije posle audit-a, pro&#x10D;itajte: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }}>Google Ads optimizacija vodi&#x10D;</Link> i <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}>Naj&#x10D;eš&#x107;e Google Ads gre&#x161;ke</Link>.
       </p>
 
       <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
@@ -784,42 +784,42 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <h2>Povezani vodi&#x10D;i</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/blog/conversion-tracking-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking vodi&#x10D;</p>
           <p className="text-xs text-gray-500 mb-0">Kako postaviti pra&#x107;enje konverzija i troubleshoot-ovati probleme</p>
         </Link>
 
-        <Link href="/blog/quality-score-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score vodi&#x10D;</p>
           <p className="text-xs text-gray-500 mb-0">&#x160;ta je Quality Score i kako ga pobolj&#x161;ati za niži CPC</p>
         </Link>
 
-        <Link href="/blog/kljucne-reci-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Klju&#x10D;ne re&#x10D;i vodi&#x10D;</p>
           <p className="text-xs text-gray-500 mb-0">Keyword research, match types, i optimizacija klju&#x10D;nih re&#x10D;i</p>
         </Link>
 
-        <Link href="/blog/negativne-kljucne-reci" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negativne klju&#x10D;ne re&#x10D;i</p>
           <p className="text-xs text-gray-500 mb-0">Kako identifikovati i dodati negative keywords za eliminiše wasted spend</p>
         </Link>
 
-        <Link href="/blog/google-ads-optimizacija" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimizacija</p>
           <p className="text-xs text-gray-500 mb-0">Ongoing optimizacija posle audit-a — &#x161;ta raditi mese&#x10D;no i weekly</p>
         </Link>
 
-        <Link href="/blog/koliko-kosta-google-ads" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Koliko ko&#x161;ta Google Ads</p>
           <p className="text-xs text-gray-500 mb-0">Budget planning i CPC benchmark-ovi po industrijama</p>
         </Link>
 
-        <Link href="/blog/remarketing-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing vodi&#x10D;</p>
           <p className="text-xs text-gray-500 mb-0">Kako postaviti remarketing liste i strategije za bolje konverzije</p>
         </Link>
 
-        <Link href="/blog/google-ads-greske" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Naj&#x10D;eš&#x107;e Google Ads gre&#x161;ke</p>
           <p className="text-xs text-gray-500 mb-0">20+ naj&#x10D;e&#x161;&#x107;ih gre&#x161;aka i kako ih izbeći</p>
         </Link>

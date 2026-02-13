@@ -432,7 +432,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
               </Link>
               <span className="mx-2">/</span>
               <Link
-                href={locale === "en" ? "/services" : "/usluge"}
+                href="/usluge"
                 className="hover:text-white transition-colors"
               >
                 {locale === "en" ? "Services" : "Usluge"}
@@ -476,7 +476,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href={locale === "en" ? "/contact" : "/kontakt"}
+                href="/kontakt"
                 className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
               >
                 {locale === "en" ? "Contact me" : "Kontaktirajte me"}
@@ -686,7 +686,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
                   <strong>Note:</strong> If you only need Google Ads, check
                   out my{" "}
                   <Link
-                    href="/services/google-ads-management"
+                    href="/usluge/google-ads-upravljanje"
                     className="text-blue-600 hover:underline font-semibold"
                   >
                     standard Google Ads service
@@ -826,7 +826,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
                 : "Posetite Funky Enterprises →"}
             </a>
             <Link
-              href={locale === "en" ? "/contact" : "/kontakt"}
+              href="/kontakt"
               className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-white hover:bg-white hover:text-gray-900 transition-colors text-lg"
             >
               {locale === "en" ? "Contact me" : "Kontaktirajte me"}
@@ -841,11 +841,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link
-                href={
-                  locale === "en"
-                    ? "/services/google-ads-management"
-                    : "/usluge/google-ads-upravljanje"
-                }
+                href="/usluge/google-ads-upravljanje"
                 className="text-gray-300 hover:text-white underline"
               >
                 {locale === "en"
@@ -854,22 +850,14 @@ export default async function PerformanceMarketingPage({ params }: Props) {
               </Link>
               <span className="text-gray-600">•</span>
               <Link
-                href={
-                  locale === "en"
-                    ? "/services/youtube-ads"
-                    : "/usluge/youtube-oglasi"
-                }
+                href="/usluge/youtube-oglasi"
                 className="text-gray-300 hover:text-white underline"
               >
                 {locale === "en" ? "YouTube ads" : "YouTube oglasi"}
               </Link>
               <span className="text-gray-600">•</span>
               <Link
-                href={
-                  locale === "en"
-                    ? "/services/google-ads-ecommerce"
-                    : "/usluge/google-ads-za-ecommerce"
-                }
+                href="/usluge/google-ads-za-ecommerce"
                 className="text-gray-300 hover:text-white underline"
               >
                 {locale === "en"

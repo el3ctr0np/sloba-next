@@ -454,7 +454,7 @@ export default function ConversionTrackingVodicPost() {
           Instalirajte extension, prođite conversion flow na sajtu i proverite da li se tagovi aktiviraju na pravim stranicama. Proverite da li šalju conversion ID, label i vrednost.
         </p>
         <ul className="text-sm">
-          <li>Tag Assistant: <Link href="https://tagassistant.google.com/" className="underline">tagassistant.google.com</Link></li>
+          <li>Tag Assistant: <a href="https://tagassistant.google.com/" className="underline" target="_blank" rel="noopener noreferrer">tagassistant.google.com</a></li>
           <li>Prođite ceo conversion flow od početne stranice do thank-you</li>
           <li>Proverite da li Conversion Linker tag radi na All Pages</li>
         </ul>
@@ -606,19 +606,19 @@ export default function ConversionTrackingVodicPost() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/blog/google-ads-greske" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">12 Najčešćih Google Ads Grešaka</p>
           <p className="text-xs text-gray-500 mb-0">Greške koje koštaju budžet i kako ih ispraviti.</p>
         </Link>
-        <Link href="/blog/remarketing-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing Vodič 2026</p>
           <p className="text-xs text-gray-500 mb-0">Kako da ponovo targetirate posetioce koji nisu konvertovali.</p>
         </Link>
-        <Link href="/blog/google-shopping-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Vodič</p>
           <p className="text-xs text-gray-500 mb-0">Korak po korak setup za profitabilne Shopping kampanje.</p>
         </Link>
-        <Link href="/blog/koliko-kosta-google-ads" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Koliko Košta Google Ads</p>
           <p className="text-xs text-gray-500 mb-0">Realističan budžet i očekivanja za različite industrije.</p>
         </Link>

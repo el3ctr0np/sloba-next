@@ -202,7 +202,7 @@ export default function RemarketingVodicPost() {
           <p className="text-sm text-gray-600 mb-0">
             Automatski prikazuje tačne proizvode koje je posetilac gledao. Obavezan
             za eCommerce. Zahteva product feed u{" "}
-            <Link href="/blog/google-shopping-vodic" className="underline">
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">
               Google Merchant Center-u
             </Link>.
           </p>
@@ -258,7 +258,7 @@ export default function RemarketingVodicPost() {
         <p className="font-semibold text-blue-900 mb-1">Detaljan vodič</p>
         <p className="text-blue-800 text-sm mb-0">
           Za kompletno uputstvo o postavljanju tagova, pogledajte{" "}
-          <Link href="/blog/conversion-tracking-vodic" className="underline">
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">
             vodič za conversion tracking
           </Link>{" "}
           gde sve objašnjavam korak po korak.
@@ -869,15 +869,15 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing usluge</p>
           <p className="text-xs text-gray-500 mb-0">Kako vam mogu pomoći sa remarketing kampanjama</p>
         </Link>
-        <Link href="/blog/conversion-tracking-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion tracking vodič</p>
           <p className="text-xs text-gray-500 mb-0">Zašto vaše kampanje ne rade bez pravilnog tracking-a</p>
         </Link>
-        <Link href="/blog/google-shopping-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako povećati ROAS sa Shopping kampanjama</p>
         </Link>
-        <Link href="/blog/kljucne-reci-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Ključne reči vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kompletan vodič za keyword istraživanje</p>
         </Link>

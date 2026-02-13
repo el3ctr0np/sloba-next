@@ -703,7 +703,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
               </Link>
               <span>•</span>
               <Link
-                href="/blog/performance-max-vodic"
+                href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }}
                 className="hover:text-yellow-400 transition-colors"
               >
                 {locale === "en"

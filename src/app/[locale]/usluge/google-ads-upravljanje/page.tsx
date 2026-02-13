@@ -230,7 +230,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
 
   const campaignTypes =
     locale === "en"
-      ? [
+      ? ([
           {
             title: "Search campaigns",
             description:
@@ -266,8 +266,8 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             href: "/usluge/youtube-oglasi",
             cta: "Learn more about YouTube ads"
           }
-        ]
-      : [
+        ] as const)
+      : ([
           {
             title: "Search kampanje",
             description:
@@ -303,7 +303,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             href: "/usluge/youtube-oglasi",
             cta: "Više o YouTube oglasima"
           }
-        ];
+        ] as const);
 
   const processSteps =
     locale === "en"
@@ -427,7 +427,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "How much does Google Ads cost?",
             answer:
-              "The cost of Google Ads depends on industry, competition, and goals. Average CPC varies from €0.10-0.80 in emerging markets to €1-5+ in competitive Western markets. My management services start at €350/month, and recommended minimum ad spend is from €500/month for visible results."
+              "The cost of Google Ads depends on industry, competition, and goals. Average CPC varies from €0.10-0.80 in emerging markets to €1-5+ in competitive Western markets. My management services start at €750/month, and recommended minimum ad spend is from €500/month for visible results."
           },
           {
             question: "Does Google Ads work for small businesses?",
@@ -518,13 +518,13 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           offers: {
             "@type": "Offer",
             priceCurrency: "EUR",
-            price: "350",
+            price: "750",
             priceSpecification: {
               "@type": "UnitPriceSpecification",
-              price: "350",
+              price: "750",
               priceCurrency: "EUR",
               unitText: "monthly",
-              description: "Pricing starts at €350/month for Starter package"
+              description: "Pricing starts at €750/month for Standard package"
             }
           }
         }
@@ -988,14 +988,14 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             {locale === "en" ? (
               <>
                 I work with clients from the UK, US, Germany, Australia, and beyond.{" "}
-                <Link href="/blog/ecommerce-vs-b2b" className="text-primary underline">
+                <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-primary underline">
                   Read about differences between eCommerce and B2B strategies →
                 </Link>
               </>
             ) : (
               <>
                 Radim sa klijentima iz Srbije, UK, Nemačke i Hrvatske.{" "}
-                <Link href="/blog/ecommerce-vs-b2b" className="text-primary underline">
+                <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-primary underline">
                   Pročitajte razlike između eCommerce i B2B strategija →
                 </Link>
               </>
@@ -1070,7 +1070,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               {locale === "en" ? "Starter Package" : "Starter paket"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "from €350" : "od €350"}<span className="text-sm text-gray-500 font-normal">/mes</span>
+              {locale === "en" ? "from €500" : "od €350"}<span className="text-sm text-gray-500 font-normal">/mes</span>
             </p>
             <p className="text-gray-600 text-sm mb-4">
               {locale === "en"
@@ -1118,7 +1118,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               {locale === "en" ? "Standard Service" : "Standardna usluga"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "from €500" : "od €500"}<span className="text-sm text-gray-500 font-normal">/mes</span>
+              {locale === "en" ? "from €750" : "od €500"}<span className="text-sm text-gray-500 font-normal">/mes</span>
             </p>
             <p className="text-gray-600 text-sm mb-4">
               {locale === "en"
@@ -1275,7 +1275,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
             <Link
-              href="/blog/koliko-kosta-google-ads"
+              href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en"

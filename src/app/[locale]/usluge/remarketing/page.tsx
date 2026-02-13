@@ -728,7 +728,7 @@ export default async function RemarketingPage({ params }: Props) {
               Performance Marketing
             </Link>
             <Link
-              href="/blog/remarketing-vodic"
+              href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en" ? "Remarketing Guide" : "Remarketing vodič"}

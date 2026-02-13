@@ -13,44 +13,45 @@ export function Header() {
   const rawPathname = usePathname();
 
   // Strip locale prefix if present to avoid /sr/en issues
-  const pathname = rawPathname.replace(/^\/(sr|en)/, "") || "/";
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const pathname = (rawPathname.replace(/^\/(sr|en)/, "") || "/") as any;
 
   const navItems = useMemo(() => [
-    { label: t("nav.home"), href: "/" },
-    { label: t("nav.services"), href: "/usluge", hasServiceMenu: true },
-    { label: t("nav.caseStudies"), href: "/case-studies" },
-    { label: t("nav.blog"), href: "/blog" },
-    { label: t("nav.about"), href: "/o-meni" },
-    { label: t("nav.contact"), href: "/kontakt" },
+    { label: t("nav.home"), href: "/" as const },
+    { label: t("nav.services"), href: "/usluge" as const, hasServiceMenu: true },
+    { label: t("nav.caseStudies"), href: "/case-studies" as const },
+    { label: t("nav.blog"), href: "/blog" as const },
+    { label: t("nav.about"), href: "/o-meni" as const },
+    { label: t("nav.contact"), href: "/kontakt" as const },
   ], [t]);
 
   const serviceGroups = useMemo(() => [
     {
       title: t("serviceGroups.googleAds"),
       items: [
-        { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" },
-        { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" },
-        { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" },
-        { label: t("services.googleShopping"), href: "/usluge/google-shopping" },
-        { label: t("services.performanceMax"), href: "/usluge/performance-max" },
-        { label: t("services.remarketing"), href: "/usluge/remarketing" },
-        { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" },
+        { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" as const },
+        { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" as const },
+        { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" as const },
+        { label: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
+        { label: t("services.performanceMax"), href: "/usluge/performance-max" as const },
+        { label: t("services.remarketing"), href: "/usluge/remarketing" as const },
+        { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" as const },
       ]
     },
     {
       title: t("serviceGroups.byIndustry"),
       items: [
-        { label: t("services.b2b"), href: "/usluge/google-ads-za-b2b" },
-        { label: t("services.ecommerce"), href: "/usluge/google-ads-za-ecommerce" },
-        { label: t("services.saas"), href: "/usluge/google-ads-za-saas" },
+        { label: t("services.b2b"), href: "/usluge/google-ads-za-b2b" as const },
+        { label: t("services.ecommerce"), href: "/usluge/google-ads-za-ecommerce" as const },
+        { label: t("services.saas"), href: "/usluge/google-ads-za-saas" as const },
       ]
     },
     {
       title: t("serviceGroups.other"),
       items: [
-        { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" },
-        { label: t("services.consultations"), href: "/usluge/konsultacije" },
-        { label: t("services.starterPackage"), href: "/usluge/starter-paket" },
+        { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const },
+        { label: t("services.consultations"), href: "/usluge/konsultacije" as const },
+        { label: t("services.starterPackage"), href: "/usluge/starter-paket" as const },
       ]
     }
   ], [t]);

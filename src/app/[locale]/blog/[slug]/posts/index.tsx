@@ -18,6 +18,24 @@ import QualityScoreVodicSR from "./quality-score-vodic/sr";
 import GoogleAdsOptimizacijaSR from "./google-ads-optimizacija/sr";
 import RemarketingVodicSR from "./remarketing-vodic/sr";
 
+// English post imports
+import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
+import GoogleAdvertisingForBusinessesEN from "./google-oglasavanje-za-firme/en";
+import PerformanceMaxGuideEN from "./performance-max-vodic/en";
+import GoogleAdsOptimizationEN from "./google-ads-optimizacija/en";
+import GoogleShoppingGuideEN from "./google-shopping-vodic/en";
+import AgencyVsFreelancerEN from "./agencija-vs-freelancer/en";
+import ConversionTrackingGuideEN from "./conversion-tracking-vodic/en";
+import GoogleAdsMistakesEN from "./google-ads-greske/en";
+import WhyGoogleAdsNotWorkingEN from "./zasto-nema-rezultata/en";
+import EcommerceVsB2BEN from "./ecommerce-vs-b2b/en";
+import GoogleAdsVsMetaAdsEN from "./google-ads-vs-meta/en";
+import GoogleAdsAuditGuideEN from "./google-ads-audit-vodic/en";
+import KeywordGuideEN from "./kljucne-reci-vodic/en";
+import NegativeKeywordsGuideEN from "./negativne-kljucne-reci/en";
+import QualityScoreGuideEN from "./quality-score-vodic/en";
+import RemarketingGuideEN from "./remarketing-vodic/en";
+
 export type PostData = {
   slug: string;
   title: string;
@@ -182,7 +200,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "How much does Google Ads really cost? Detailed CPC breakdown by industry, minimum budgets, agency fees, and how to calculate ROI before spending your first dollar.",
-    content: <KolikoKostaGoogleAdsSR />
+    content: <HowMuchDoesGoogleAdsCostEN />
   },
   {
     slug: "google-oglasavanje-za-firme",
@@ -191,7 +209,7 @@ const enPosts: PostData[] = [
     category: "Google Advertising",
     metaDescription:
       "Complete Google Ads guide for businesses. B2B and eCommerce strategies, campaign types, budgeting and measuring results — all in one place.",
-    content: <GoogleOglasavanjeZaFirmeSR />
+    content: <GoogleAdvertisingForBusinessesEN />
   },
   {
     slug: "performance-max-vodic",
@@ -200,7 +218,7 @@ const enPosts: PostData[] = [
     category: "Performance Max",
     metaDescription:
       "Everything about Performance Max campaigns — how they work, when to use them, structure, asset groups, and optimization strategies. Guide based on real results.",
-    content: <PerformanceMaxVodicSR />
+    content: <PerformanceMaxGuideEN />
   },
   {
     slug: "google-ads-optimizacija",
@@ -209,7 +227,7 @@ const enPosts: PostData[] = [
     category: "Optimization",
     metaDescription:
       "30 proven Google Ads optimization tactics. Bid strategies, negative keywords, Quality Score, landing pages, A/B testing — all from real client experience.",
-    content: <GoogleAdsOptimizacijaSR />
+    content: <GoogleAdsOptimizationEN />
   },
   {
     slug: "google-shopping-vodic",
@@ -218,7 +236,7 @@ const enPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Complete guide to Google Shopping campaigns. Product feed optimization, campaign structure, bidding strategies and tactics for increasing ROAS — based on real results.",
-    content: <GoogleShoppingVodicSR />
+    content: <GoogleShoppingGuideEN />
   },
   {
     slug: "agencija-vs-freelancer",
@@ -227,7 +245,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Agency, freelancer or in-house team for Google Ads? Detailed cost comparison, pros and cons of each option. Find out which is right for your budget and goals.",
-    content: <AgencijaVsFreelancerSR />
+    content: <AgencyVsFreelancerEN />
   },
   {
     slug: "conversion-tracking-vodic",
@@ -236,7 +254,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Poor conversion tracking is the #1 reason Google Ads campaigns fail. Guide to proper tracking setup, enhanced conversions, and server-side implementation.",
-    content: <ConversionTrackingVodicSR />
+    content: <ConversionTrackingGuideEN />
   },
   {
     slug: "google-ads-greske",
@@ -245,7 +263,7 @@ const enPosts: PostData[] = [
     category: "Google Ads Optimization",
     metaDescription:
       "20 most common Google Ads mistakes that cost money — from poor structure, through bidding errors, to missed opportunities. Check if you're making any of them.",
-    content: <GoogleAdsGreskeSR />
+    content: <GoogleAdsMistakesEN />
   },
   {
     slug: "zasto-nema-rezultata",
@@ -254,7 +272,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Your Google Ads campaigns are spending budget but not delivering results? Here are the 12 most common reasons why campaigns fail and concrete solutions for each problem.",
-    content: <GoogleAdsNeDonosiRezultateSR />
+    content: <WhyGoogleAdsNotWorkingEN />
   },
   {
     slug: "ecommerce-vs-b2b",
@@ -263,7 +281,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Google Ads strategy for eCommerce is not the same as for B2B. Complete guide to differences in campaigns, targeting, bidding, and measuring success for both business models.",
-    content: <EcommerceVsB2BSR />
+    content: <EcommerceVsB2BEN />
   },
   {
     slug: "google-ads-vs-meta",
@@ -272,7 +290,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Google Ads captures buyers with intent, Meta Ads builds awareness. Comparison by intent, CPC, conversion rate and ROI. When to use which + how to combine them for maximum impact.",
-    content: <GoogleAdsVsMetaAdsSR />
+    content: <GoogleAdsVsMetaAdsEN />
   },
   {
     slug: "google-ads-audit-vodic",
@@ -281,7 +299,7 @@ const enPosts: PostData[] = [
     category: "Google Ads Audit",
     metaDescription:
       "Detailed Google Ads audit checklist with 80+ checkpoints. Find problems, optimize campaigns, and improve ROI.",
-    content: <GoogleAdsAuditSR />
+    content: <GoogleAdsAuditGuideEN />
   },
   {
     slug: "kljucne-reci-vodic",
@@ -290,7 +308,7 @@ const enPosts: PostData[] = [
     category: "Google Ads Keywords",
     metaDescription:
       "Everything about keywords for Google Ads — research, selection, organization and optimization. Learn how to find keywords that drive conversions, not just clicks.",
-    content: <KljucneReciVodicSR />
+    content: <KeywordGuideEN />
   },
   {
     slug: "negativne-kljucne-reci",
@@ -299,7 +317,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Complete guide to negative keywords in Google Ads — ready-made lists by industry, addition strategy, and how to prevent wasting budget on wrong searches.",
-    content: <NegativeKeywordsVodicSR />
+    content: <NegativeKeywordsGuideEN />
   },
   {
     slug: "quality-score-vodic",
@@ -308,7 +326,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Complete Google Ads Quality Score guide — what it is, how it's calculated, and concrete tactics for improvement. Lower your CPC and improve positions with better QS.",
-    content: <QualityScoreVodicSR />
+    content: <QualityScoreGuideEN />
   },
   {
     slug: "remarketing-vodic",
@@ -317,7 +335,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Learn how to launch Google Ads remarketing campaigns that bring back visitors and reduce CPA by 50-70%. Guide with segmentation, strategies, and real examples.",
-    content: <RemarketingVodicSR />
+    content: <RemarketingGuideEN />
   }
 ];
 

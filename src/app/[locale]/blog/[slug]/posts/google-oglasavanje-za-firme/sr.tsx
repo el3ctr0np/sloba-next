@@ -67,7 +67,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Dublje o Quality Score-u</p>
-        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako poboljšati Quality Score i smanjiti troškove, pročitajte <Link href="/blog/quality-score-vodic" className="underline font-semibold">Quality Score vodič</Link>.</p>
+        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako poboljšati Quality Score i smanjiti troškove, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline font-semibold">Quality Score vodič</Link>.</p>
       </div>
 
       <h3>Google Ads mreže</h3>
@@ -205,7 +205,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Vodič za Performance Max kampanje</p>
-        <p className="text-blue-800 text-sm mb-0">PMax kampanje mogu doneti odlične rezultate, ali samo ako se pravilno postave. Za detaljan vodič, pročitajte <Link href="/blog/performance-max-vodic" className="underline font-semibold">Performance Max vodič</Link>.</p>
+        <p className="text-blue-800 text-sm mb-0">PMax kampanje mogu doneti odlične rezultate, ali samo ako se pravilno postave. Za detaljan vodič, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline font-semibold">Performance Max vodič</Link>.</p>
       </div>
 
       <hr />
@@ -252,7 +252,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Vodič za Google Shopping kampanje</p>
-        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako postaviti product feed i strukturirati Shopping kampanje, pročitajte <Link href="/blog/google-shopping-vodic" className="underline font-semibold">Google Shopping vodič</Link>.</p>
+        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako postaviti product feed i strukturirati Shopping kampanje, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping vodič</Link>.</p>
       </div>
 
       <h3>Shopping vs Performance Max — Šta izabrati?</h3>
@@ -334,7 +334,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Dublje o remarketingu</p>
-        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako postaviti remarketing kampanje i liste, pročitajte <Link href="/blog/remarketing-vodic" className="underline font-semibold">Remarketing vodič</Link>.</p>
+        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako postaviti remarketing kampanje i liste, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing vodič</Link>.</p>
       </div>
 
       <hr />
@@ -498,7 +498,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Vodič za Conversion Tracking</p>
-        <p className="text-blue-800 text-sm mb-0">Za step-by-step vodič kako postaviti tracking, pročitajte <Link href="/blog/conversion-tracking-vodic" className="underline font-semibold">Conversion Tracking vodič</Link>.</p>
+        <p className="text-blue-800 text-sm mb-0">Za step-by-step vodič kako postaviti tracking, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Conversion Tracking vodič</Link>.</p>
       </div>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -567,7 +567,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <p className="font-semibold mb-2">Nedostatak pravilnog tracking-a</p>
         <p className="text-sm text-gray-600 mb-3">Neverovatno koliko firmi troši hiljade evra bez pravilnog tracking-a. Ako ne znate šta konvertuje, ne možete optimizovati. Letite slepo.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Postavite Google Tag Manager, GA4, Google Ads conversion tag, i Enhanced Conversions. Testirajte pre nego što pustite kampanje. <Link href="/blog/conversion-tracking-vodic" className="underline font-semibold">Vodič ovde</Link>.</p>
+          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Postavite Google Tag Manager, GA4, Google Ads conversion tag, i Enhanced Conversions. Testirajte pre nego što pustite kampanje. <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Vodič ovde</Link>.</p>
         </div>
       </div>
 
@@ -748,7 +748,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">Benchmark-ovi su orijentir, ne pravilo. Vaša industrija, ponuda, i tržište mogu značajno uticati na rezultate. <Link href="/blog/koliko-kosta-google-ads" className="underline font-semibold">Više o budžetima ovde</Link>.</p>
+        <p className="text-yellow-800 text-sm mb-0">Benchmark-ovi su orijentir, ne pravilo. Vaša industrija, ponuda, i tržište mogu značajno uticati na rezultate. <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="underline font-semibold">Više o budžetima ovde</Link>.</p>
       </div>
 
       <hr />
@@ -762,7 +762,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         </summary>
         <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Zavisi od industrije i konkurencije. U Srbiji, prosečan CPC je €0.15–1.50.</p>
-          <p className="mb-0"><strong>Preporučeni minimalni mesečni budžet:</strong> €500–1,000 za manje biznise i testiranje, €2,000+ za ozbiljnije kampanje. <Link href="/blog/koliko-kosta-google-ads" className="underline font-semibold">Detaljan vodič o budžetima</Link>.</p>
+          <p className="mb-0"><strong>Preporučeni minimalni mesečni budžet:</strong> €500–1,000 za manje biznise i testiranje, €2,000+ za ozbiljnije kampanje. <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="underline font-semibold">Detaljan vodič o budžetima</Link>.</p>
         </div>
       </details>
 
@@ -848,27 +848,27 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <h3>Povezani vodiči</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/blog/koliko-kosta-google-ads" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Koliko košta Google Ads?</p>
           <p className="text-xs text-gray-500 mb-0">Budžeti, benchmark-ovi i realističan ROI za Srbiju i region</p>
         </Link>
-        <Link href="/blog/remarketing-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako vratiti posetioce koji nisu kupili prvi put</p>
         </Link>
-        <Link href="/blog/quality-score-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako poboljšati Quality Score i smanjiti troškove</p>
         </Link>
-        <Link href="/blog/conversion-tracking-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking vodič</p>
           <p className="text-xs text-gray-500 mb-0">Step-by-step setup za GA4, GTM i Enhanced Conversions</p>
         </Link>
-        <Link href="/blog/google-shopping-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako postaviti product feed i Shopping kampanje</p>
         </Link>
-        <Link href="/blog/performance-max-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kompletan vodič za PMax kampanje</p>
         </Link>

@@ -1,8 +1,11 @@
 import { Link } from "@/i18n/navigation";
+import type { ComponentProps } from "react";
+
+type LinkHref = ComponentProps<typeof Link>["href"];
 
 interface ButtonProps {
   children: React.ReactNode;
-  href?: string;
+  href?: LinkHref | string;
   variant?: "primary" | "secondary";
   className?: string;
   onClick?: () => void;
@@ -21,7 +24,7 @@ export function Button({
 
   if (href) {
     return (
-      <Link href={href} className={`${baseStyles} inline-block ${className}`}>
+      <Link href={href as LinkHref} className={`${baseStyles} inline-block ${className}`}>
         {children}
       </Link>
     );
@@ -33,4 +36,3 @@ export function Button({
     </button>
   );
 }
-

@@ -640,14 +640,14 @@ export default async function SearchKampanjePage({ params }: Props) {
             </div>
             <div>
               <Link
-                href="/blog/kljucne-reci-vodic"
+                href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }}
                 className="underline hover:text-white transition-colors"
               >
                 {locale === "en" ? "Keyword research guide" : "Ključne reči vodič"}
               </Link>{" "}
               |{" "}
               <Link
-                href="/blog/negativne-kljucne-reci"
+                href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
                 className="underline hover:text-white transition-colors"
               >
                 {locale === "en" ? "Negative keywords guide" : "Negativne ključne reči"}

@@ -57,7 +57,7 @@ export default function KljucneReciVodicPost() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Detaljan vodič</p>
         <p className="text-blue-800 text-sm mb-0">
-          Ako vas zanima kako Quality Score utiče na cenu klikova, pogledajte <Link href="/blog/quality-score-vodic" className="underline font-semibold">vodič za Quality Score</Link>.
+          Ako vas zanima kako Quality Score utiče na cenu klikova, pogledajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline font-semibold">vodič za Quality Score</Link>.
         </p>
       </div>
 
@@ -220,7 +220,7 @@ export default function KljucneReciVodicPost() {
         <ul className="text-sm">
           <li>Keywords → Search Terms → analizirajte šta ljudi zapravo traže</li>
           <li>Dobre pretrage dodajte kao nove ključne reči</li>
-          <li>Irelevantne dodajte kao <Link href="/blog/negativne-kljucne-reci" className="underline">negativne ključne reči</Link></li>
+          <li>Irelevantne dodajte kao <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline">negativne ključne reči</Link></li>
         </ul>
       </div>
 
@@ -466,7 +466,7 @@ export default function KljucneReciVodicPost() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Kompletna lista i strategija</p>
         <p className="text-blue-800 text-sm mb-0">
-          Pripremio sam detaljan vodič sa starter listama po industrijama: <Link href="/blog/negativne-kljucne-reci" className="underline font-semibold">Negativne ključne reči — vodič sa listama</Link>.
+          Pripremio sam detaljan vodič sa starter listama po industrijama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">Negativne ključne reči — vodič sa listama</Link>.
         </p>
       </div>
 
@@ -562,7 +562,7 @@ export default function KljucneReciVodicPost() {
         <ul className="text-sm">
           <li>Za cold traffic: [crm za mala preduzeća] (exact)</li>
           <li>Za remarketing publiku: crm softver (broad) — širi reach je ok jer vas već znaju</li>
-          <li>Više o remarketing-u: <Link href="/blog/remarketing-vodic" className="underline">remarketing vodič</Link></li>
+          <li>Više o remarketing-u: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline">remarketing vodič</Link></li>
         </ul>
       </div>
 
@@ -625,7 +625,7 @@ export default function KljucneReciVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
           <p className="font-semibold mb-2">Bez negativnih ključnih reči od starta</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Pripremite <Link href="/blog/negativne-kljucne-reci" className="underline font-semibold">starter listu negatives</Link> pre pokretanja kampanje + dodajte nedeljno na osnovu Search Terms-a.</p>
+            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Pripremite <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">starter listu negatives</Link> pre pokretanja kampanje + dodajte nedeljno na osnovu Search Terms-a.</p>
           </div>
         </div>
 
@@ -738,19 +738,19 @@ export default function KljucneReciVodicPost() {
       {/* ── Povezani vodiči ── */}
       <h2>Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/blog/negativne-kljucne-reci" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negativne ključne reči — kompletna lista</p>
           <p className="text-xs text-gray-500 mb-0">Starter liste po industrijama, strategija i organizacija</p>
         </Link>
-        <Link href="/blog/quality-score-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako poboljšati QS i smanjiti CPC za 28%+</p>
         </Link>
-        <Link href="/blog/google-ads-audit-vodic" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Audit checklist</p>
           <p className="text-xs text-gray-500 mb-0">80+ tačaka za kompletnu reviziju naloga</p>
         </Link>
-        <Link href="/blog/google-ads-optimizacija" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimizacija — 30 taktika</p>
           <p className="text-xs text-gray-500 mb-0">Kompletna strategija za poboljšanje performansi</p>
         </Link>

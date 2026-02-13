@@ -12,9 +12,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (locale === "en") {
     return {
       title:
-        "Google Ads Starter Package from €300 | Professional Campaign Setup — Slobodan Jelisavac",
+        "Google Ads Starter Package from €500 | Professional Campaign Setup — Slobodan Jelisavac",
       description:
-        "Professional Google Ads setup for beginners. Campaigns that work from day one + training for self-management. Packages starting at €300 with tracking, training, and 30-day support."
+        "Professional Google Ads setup for beginners. Campaigns that work from day one + training for self-management. Packages starting at €500 with tracking, training, and 30-day support."
     };
   }
 
@@ -313,7 +313,7 @@ export default async function StarterPaketPage({ params }: Props) {
     locale === "en"
       ? [
           {
-            value: "€300",
+            value: "€500",
             label: "from — professional entry point to Google Ads"
           },
           { value: "45-60min", label: "live training tailored to your account" },
@@ -430,7 +430,7 @@ export default async function StarterPaketPage({ params }: Props) {
           "@type": "Service",
           name: "Google Ads Starter Package",
           description:
-            "Starter package for beginners with professional Google Ads setup, conversion tracking and training for self-management. Three packages: Basic €300, Standard €500, eCommerce €700.",
+            "Starter package for beginners with professional Google Ads setup, conversion tracking and training for self-management. Three packages: Basic €500, Standard €700, eCommerce €900.",
           provider: {
             "@type": "Person",
             name: "Slobodan Jelisavac",
@@ -455,13 +455,13 @@ export default async function StarterPaketPage({ params }: Props) {
           offers: {
             "@type": "Offer",
             priceCurrency: "EUR",
-            price: "300",
+            price: "500",
             priceSpecification: {
               "@type": "UnitPriceSpecification",
-              price: "300",
+              price: "500",
               priceCurrency: "EUR",
               unitText: "one-time",
-              description: "Prices start at €300 for Basic Starter Package"
+              description: "Prices start at €500 for Basic Starter Package"
             }
           }
         }
@@ -937,7 +937,7 @@ export default async function StarterPaketPage({ params }: Props) {
               Basic Starter
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €300
+              {locale === "en" ? "€500" : "€300"}
               <span className="text-sm text-gray-500 font-normal">
                 {" "}
                 {locale === "en" ? "one-time" : "jednokratno"}
@@ -997,7 +997,7 @@ export default async function StarterPaketPage({ params }: Props) {
               Standard Starter
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €500
+              {locale === "en" ? "€700" : "€500"}
               <span className="text-sm text-gray-500 font-normal">
                 {" "}
                 {locale === "en" ? "one-time" : "jednokratno"}
@@ -1060,7 +1060,7 @@ export default async function StarterPaketPage({ params }: Props) {
               eCommerce Starter
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €700
+              {locale === "en" ? "€900" : "€700"}
               <span className="text-sm text-gray-500 font-normal">
                 {" "}
                 {locale === "en" ? "one-time" : "jednokratno"}
@@ -1261,7 +1261,7 @@ export default async function StarterPaketPage({ params }: Props) {
                 : "1-on-1 konsultacije"}
             </Link>
             <Link
-              href="/blog/koliko-kosta-google-ads"
+              href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en"

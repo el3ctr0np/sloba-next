@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ServicesPage({ params }: Props) {
   const { locale } = await params;
 
-  const coreServices = locale === "en" ? [
+  const coreServices = locale === "en" ? ([
     {
       title: "Google Ads Management",
       href: "/usluge/google-ads-upravljanje",
@@ -68,7 +68,7 @@ export default async function ServicesPage({ params }: Props) {
       desc: "Video campaigns for awareness and direct response goals using skippable and bumper formats.",
       badge: null
     }
-  ] : [
+  ] as const) : ([
     {
       title: "Google Ads upravljanje",
       href: "/usluge/google-ads-upravljanje",
@@ -111,9 +111,9 @@ export default async function ServicesPage({ params }: Props) {
       desc: "Video kampanje za awareness i direct response ciljeve kroz skippable i bumper formate.",
       badge: null
     }
-  ];
+  ] as const);
 
-  const industryServices = locale === "en" ? [
+  const industryServices = locale === "en" ? ([
     {
       title: "Google Ads for eCommerce",
       href: "/usluge/google-ads-za-ecommerce",
@@ -132,7 +132,7 @@ export default async function ServicesPage({ params }: Props) {
       desc: "Trial user acquisition and demo requests with controlled CAC for SaaS platforms.",
       icon: "💻"
     }
-  ] : [
+  ] as const) : ([
     {
       title: "Google Ads za eCommerce",
       href: "/usluge/google-ads-za-ecommerce",
@@ -151,12 +151,12 @@ export default async function ServicesPage({ params }: Props) {
       desc: "Akvizicija trial korisnika i demo zahteva uz kontrolu CAC-a za SaaS platforme.",
       icon: "💻"
     }
-  ];
+  ] as const);
 
-  const entryPoints = locale === "en" ? [
+  const entryPoints = locale === "en" ? ([
     {
       title: "Starter Package",
-      price: "from €300",
+      price: "from €500",
       desc: "Professional campaign setup, tracking, and training for self-management. Ideal for businesses just starting with Google Ads.",
       href: "/usluge/starter-paket",
       cta: "Learn more"
@@ -175,7 +175,7 @@ export default async function ServicesPage({ params }: Props) {
       href: "/usluge/konsultacije",
       cta: "Learn more"
     }
-  ] : [
+  ] as const) : ([
     {
       title: "Starter paket",
       price: "od €300",
@@ -197,7 +197,7 @@ export default async function ServicesPage({ params }: Props) {
       href: "/usluge/konsultacije",
       cta: "Saznajte više"
     }
-  ];
+  ] as const);
 
   const results = locale === "en" ? [
     { value: "180%+", label: "Average ROAS improvement" },
@@ -266,7 +266,7 @@ export default async function ServicesPage({ params }: Props) {
   const faqs = locale === "en" ? [
     {
       q: "What's the minimum investment to work together?",
-      a: "Google Ads account management starts from €350/month. For smaller budgets, I recommend the Starter Package (from €300) or one-time consultations (€80/hour). In my experience, businesses need at least €500-1000/month in ad spend to see meaningful results from paid advertising."
+      a: "Google Ads account management starts from €750/month. For smaller budgets, I recommend the Starter Package (from €500) or one-time consultations (€80/hour). In my experience, businesses need at least €500-1000/month in ad spend to see meaningful results from paid advertising."
     },
     {
       q: "Do you only work with companies from Serbia?",
@@ -815,7 +815,7 @@ export default async function ServicesPage({ params }: Props) {
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
             <Link
-              href="/blog/koliko-kosta-google-ads"
+              href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en" ? "How much does Google Ads cost?" : "Koliko košta Google Ads?"}
@@ -827,7 +827,7 @@ export default async function ServicesPage({ params }: Props) {
               {locale === "en" ? "Google Ads guide for beginners" : "Google Ads vodič za početnike"}
             </Link>
             <Link
-              href="/blog/google-ads-greske"
+              href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en" ? "Most common Google Ads mistakes" : "Najčešće Google Ads greške"}
