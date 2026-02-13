@@ -1,4 +1,8 @@
 import type { ReactNode } from "react";
+import { slugMap, enToSrMap } from "./slug-map";
+
+// Re-export slug utilities
+export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
 import KolikoKostaGoogleAdsSR from "./koliko-kosta-google-ads/sr";
@@ -194,7 +198,7 @@ const srPosts: PostData[] = [
 
 const enPosts: PostData[] = [
   {
-    slug: "koliko-kosta-google-ads",
+    slug: "how-much-does-google-ads-cost",
     title: "How Much Does Google Ads Cost? Prices, Budgets & ROI [2026]",
     date: "2026-01-26",
     category: "Google Ads",
@@ -203,7 +207,7 @@ const enPosts: PostData[] = [
     content: <HowMuchDoesGoogleAdsCostEN />
   },
   {
-    slug: "google-oglasavanje-za-firme",
+    slug: "google-advertising-for-businesses",
     title: "Google Advertising for Businesses: Complete Guide for B2B and eCommerce [2026]",
     date: "2026-01-26",
     category: "Google Advertising",
@@ -212,7 +216,7 @@ const enPosts: PostData[] = [
     content: <GoogleAdvertisingForBusinessesEN />
   },
   {
-    slug: "performance-max-vodic",
+    slug: "performance-max-guide",
     title: "Performance Max Campaigns: Guide for eCommerce and B2B [2026]",
     date: "2026-01-26",
     category: "Performance Max",
@@ -221,7 +225,7 @@ const enPosts: PostData[] = [
     content: <PerformanceMaxGuideEN />
   },
   {
-    slug: "google-ads-optimizacija",
+    slug: "google-ads-optimization",
     title: "Google Ads Optimization: 30 Proven Tactics [2026]",
     date: "2026-01-17",
     category: "Optimization",
@@ -230,7 +234,7 @@ const enPosts: PostData[] = [
     content: <GoogleAdsOptimizationEN />
   },
   {
-    slug: "google-shopping-vodic",
+    slug: "google-shopping-guide",
     title: "Google Shopping Campaigns: How to Increase ROAS [Guide 2026]",
     date: "2026-01-26",
     category: "Google Shopping",
@@ -239,7 +243,7 @@ const enPosts: PostData[] = [
     content: <GoogleShoppingGuideEN />
   },
   {
-    slug: "agencija-vs-freelancer",
+    slug: "google-ads-agency-vs-freelancer",
     title: "Google Ads Agency vs Freelancer vs In-House: How to Choose the Right Option",
     date: "2026-01-26",
     category: "Google Ads",
@@ -248,7 +252,7 @@ const enPosts: PostData[] = [
     content: <AgencyVsFreelancerEN />
   },
   {
-    slug: "conversion-tracking-vodic",
+    slug: "conversion-tracking-guide",
     title: "Conversion Tracking for Google Ads: Why Your Campaigns Aren't Working",
     date: "2026-01-26",
     category: "Google Ads",
@@ -257,7 +261,7 @@ const enPosts: PostData[] = [
     content: <ConversionTrackingGuideEN />
   },
   {
-    slug: "google-ads-greske",
+    slug: "google-ads-mistakes",
     title: "Google Ads Optimization: 20 Mistakes Costing You Money",
     date: "2026-01-27",
     category: "Google Ads Optimization",
@@ -266,7 +270,7 @@ const enPosts: PostData[] = [
     content: <GoogleAdsMistakesEN />
   },
   {
-    slug: "zasto-nema-rezultata",
+    slug: "why-google-ads-not-working",
     title: "Why Your Google Ads Campaigns Aren't Getting Results (and How to Fix It)",
     date: "2026-01-27",
     category: "Google Ads",
@@ -275,7 +279,7 @@ const enPosts: PostData[] = [
     content: <WhyGoogleAdsNotWorkingEN />
   },
   {
-    slug: "ecommerce-vs-b2b",
+    slug: "google-ads-ecommerce-vs-b2b",
     title: "Google Ads for eCommerce vs B2B: Key Strategy Differences",
     date: "2026-01-27",
     category: "Google Ads",
@@ -284,7 +288,7 @@ const enPosts: PostData[] = [
     content: <EcommerceVsB2BEN />
   },
   {
-    slug: "google-ads-vs-meta",
+    slug: "google-ads-vs-meta-ads",
     title: "Google Ads vs Meta Ads: Which Is Better for Your Business?",
     date: "2026-02-11",
     category: "Google Ads",
@@ -293,7 +297,7 @@ const enPosts: PostData[] = [
     content: <GoogleAdsVsMetaAdsEN />
   },
   {
-    slug: "google-ads-audit-vodic",
+    slug: "google-ads-audit-checklist",
     title: "Google Ads Audit: Complete Checklist [2026]",
     date: "2026-01-27",
     category: "Google Ads Audit",
@@ -302,7 +306,7 @@ const enPosts: PostData[] = [
     content: <GoogleAdsAuditGuideEN />
   },
   {
-    slug: "kljucne-reci-vodic",
+    slug: "google-ads-keyword-guide",
     title: "Keywords for Google Ads: Complete Guide [2026]",
     date: "2026-01-27",
     category: "Google Ads Keywords",
@@ -311,7 +315,7 @@ const enPosts: PostData[] = [
     content: <KeywordGuideEN />
   },
   {
-    slug: "negativne-kljucne-reci",
+    slug: "negative-keywords-guide",
     title: "Negative Keywords: Complete List + Strategy [2026]",
     date: "2026-01-27",
     category: "Google Ads",
@@ -320,7 +324,7 @@ const enPosts: PostData[] = [
     content: <NegativeKeywordsGuideEN />
   },
   {
-    slug: "quality-score-vodic",
+    slug: "quality-score-guide",
     title: "Quality Score: What It Is and How to Improve It [2026]",
     date: "2026-01-27",
     category: "Google Ads",
@@ -329,7 +333,7 @@ const enPosts: PostData[] = [
     content: <QualityScoreGuideEN />
   },
   {
-    slug: "remarketing-vodic",
+    slug: "remarketing-guide",
     title: "Google Ads Remarketing: Complete Guide [2026]",
     date: "2026-01-27",
     category: "Google Ads",
@@ -344,6 +348,15 @@ export function getPost(slug: string, locale: string): PostData | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
-export function getAllSlugs(): string[] {
+/** Get all slugs for a specific locale (or SR by default) */
+export function getAllSlugs(locale?: string): string[] {
+  if (locale === "en") {
+    return enPosts.map((p) => p.slug);
+  }
   return srPosts.map((p) => p.slug);
+}
+
+/** Check if a slug is a valid SR slug that has an EN equivalent */
+export function isCanonicalSlug(slug: string): boolean {
+  return slug in slugMap;
 }

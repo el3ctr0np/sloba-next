@@ -1,14 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { notFound } from "next/navigation";
-import { getPost, getAllSlugs } from "./posts";
+import { notFound, redirect } from "next/navigation";
+import {
+  getPost,
+  getAllSlugs,
+  getCanonicalSlug,
+  getAlternateSlug,
+  slugMap
+} from "./posts";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
 export function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+  // Return both SR and EN slugs so both URL variants are pre-rendered
+  const srSlugs = getAllSlugs("sr");
+  const enSlugs = getAllSlugs("en");
+  const allSlugs = [...new Set([...srSlugs, ...enSlugs])];
+  return allSlugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -28,9 +38,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const srSlug =
+    locale === "sr" ? slug : getAlternateSlug(slug, "sr");
+  const enSlug =
+    locale === "en" ? slug : getAlternateSlug(slug, "en");
+
   return {
     title: `${post.title} | Slobodan Jelisavac`,
-    description: post.metaDescription
+    description: post.metaDescription,
+    alternates: {
+      canonical: `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
+      languages: {
+        sr: `https://www.slobodan-jelisavac.com/sr/blog/${srSlug}`,
+        en: `https://www.slobodan-jelisavac.com/en/blog/${enSlug}`
+      }
+    }
   };
 }
 
@@ -270,13 +292,19 @@ function getFaqSchema(slug: string, locale: string) {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug, locale } = await params;
-  const post = getPost(slug, locale);
+  let post = getPost(slug, locale);
+
+  // If EN locale receives an SR slug, 301 redirect to the EN slug
+  if (!post && locale === "en" && slug in slugMap) {
+    redirect(`/en/blog/${slugMap[slug]}`);
+  }
 
   if (!post) {
     notFound();
   }
 
-  const faqSchema = getFaqSchema(slug, locale);
+  const canonicalSlug = getCanonicalSlug(slug);
+  const faqSchema = getFaqSchema(canonicalSlug, locale);
 
   return (
     <div className="bg-slate-950 text-white">

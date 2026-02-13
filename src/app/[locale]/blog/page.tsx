@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Card } from "@/components/ui";
+import { slugMap } from "./[slug]/posts/slug-map";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -57,7 +58,7 @@ const getChapters = (locale: string): Chapter[] => {
             title: "How Much Does Google Ads Cost? Prices, Budgets & ROI [2026]",
             excerpt:
               "Real CPC prices by industry, minimum budgets and ROI planning framework.",
-            slug: "koliko-kosta-google-ads",
+            slug: "how-much-does-google-ads-cost",
             readTime: "12 min"
           },
           {
@@ -65,7 +66,7 @@ const getChapters = (locale: string): Chapter[] => {
               "Google Advertising for Businesses: Complete Guide for B2B and eCommerce [2026]",
             excerpt:
               "Strategies, campaign types, budgeting and measuring results for businesses of all sizes.",
-            slug: "google-oglasavanje-za-firme",
+            slug: "google-advertising-for-businesses",
             readTime: "15 min"
           },
           {
@@ -73,7 +74,7 @@ const getChapters = (locale: string): Chapter[] => {
               "Google Ads Agency vs Freelancer vs In-House: How to Choose",
             excerpt:
               "Cost comparison, pros and cons of each campaign management option.",
-            slug: "agencija-vs-freelancer",
+            slug: "google-ads-agency-vs-freelancer",
             readTime: "10 min"
           }
         ]
@@ -91,21 +92,21 @@ const getChapters = (locale: string): Chapter[] => {
             title: "Keywords for Google Ads: Complete Guide [2026]",
             excerpt:
               "Research, selection, organization and keyword optimization step by step.",
-            slug: "kljucne-reci-vodic",
+            slug: "google-ads-keyword-guide",
             readTime: "14 min"
           },
           {
             title: "Negative Keywords: Complete List + Strategy [2026]",
             excerpt:
               "Ready-made negative keyword lists and process for eliminating budget waste.",
-            slug: "negativne-kljucne-reci",
+            slug: "negative-keywords-guide",
             readTime: "11 min"
           },
           {
             title: "Quality Score: What It Is and How to Improve It [2026]",
             excerpt:
               "How Quality Score affects CPC and positions, and concrete tactics for improvement.",
-            slug: "quality-score-vodic",
+            slug: "quality-score-guide",
             readTime: "10 min"
           }
         ]
@@ -123,21 +124,21 @@ const getChapters = (locale: string): Chapter[] => {
             title: "Google Shopping Campaigns: How to Increase ROAS [Guide 2026]",
             excerpt:
               "Feed optimization, campaign structure and tactics for better Shopping performance.",
-            slug: "google-shopping-vodic",
+            slug: "google-shopping-guide",
             readTime: "13 min"
           },
           {
             title: "Performance Max Campaigns: Guide for eCommerce and B2B [2026]",
             excerpt:
               "How PMax campaigns work, when to use them and how to optimize them.",
-            slug: "performance-max-vodic",
+            slug: "performance-max-guide",
             readTime: "12 min"
           },
           {
             title: "Google Ads vs Meta Ads: What's Better for Your Business?",
             excerpt:
               "When to use which channel — differences in targeting, costs and ROI.",
-            slug: "google-ads-vs-meta",
+            slug: "google-ads-vs-meta-ads",
             readTime: "9 min"
           },
           {
@@ -145,7 +146,7 @@ const getChapters = (locale: string): Chapter[] => {
               "Google Ads for eCommerce vs B2B: Key Strategy Differences",
             excerpt:
               "Differences in campaigns, KPIs and strategies for two business models.",
-            slug: "ecommerce-vs-b2b",
+            slug: "google-ads-ecommerce-vs-b2b",
             readTime: "11 min"
           }
         ]
@@ -164,14 +165,14 @@ const getChapters = (locale: string): Chapter[] => {
               "Conversion Tracking for Google Ads: Why Your Campaigns Don't Work",
             excerpt:
               "Guide for proper tracking setup, enhanced conversions and diagnostics.",
-            slug: "conversion-tracking-vodic",
+            slug: "conversion-tracking-guide",
             readTime: "12 min"
           },
           {
             title: "Google Ads Audit: Complete Checklist [2026]",
             excerpt:
               "80+ checkpoints for account review, campaign optimization and better ROI.",
-            slug: "google-ads-audit-vodic",
+            slug: "google-ads-audit-checklist",
             readTime: "15 min"
           }
         ]
@@ -189,14 +190,14 @@ const getChapters = (locale: string): Chapter[] => {
             title: "Google Ads Remarketing: Complete Guide [2026]",
             excerpt:
               "Setup, segmentation and remarketing strategies that increase conversions.",
-            slug: "remarketing-vodic",
+            slug: "remarketing-guide",
             readTime: "14 min"
           },
           {
             title: "Google Ads Optimization: 20 Mistakes Costing You Money",
             excerpt:
               "Most common mistakes in structure, bidding and landing pages — and how to fix them.",
-            slug: "google-ads-greske",
+            slug: "google-ads-mistakes",
             readTime: "13 min"
           },
           {
@@ -204,7 +205,7 @@ const getChapters = (locale: string): Chapter[] => {
               "Why Google Ads Campaigns Don't Work (and How to Fix It)",
             excerpt:
               "12 most common reasons for poor performance and concrete solutions for each problem.",
-            slug: "zasto-nema-rezultata",
+            slug: "why-google-ads-not-working",
             readTime: "12 min"
           }
         ]
