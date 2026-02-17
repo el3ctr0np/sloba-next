@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
-import { Header, Footer } from "@/components/layout";
+import { LayoutShell } from "@/components/layout";
 import { HrefLang } from "@/components/seo/HrefLang";
 import { routing } from "@/i18n/routing";
 
@@ -29,9 +29,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={typedLocale} messages={messages}>
       <HrefLang />
-      <Header />
-      <main>{children}</main>
-      <Footer />
+      <LayoutShell>{children}</LayoutShell>
     </NextIntlClientProvider>
   );
 }
