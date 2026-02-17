@@ -372,7 +372,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     locale === "en"
       ? [
           {
-            name: "Starter",
+            name: "Starter Plan",
             price: "€500",
             period: "/mo",
             subtitle: "Just starting out or have a limited budget? Get expert setup and better results without overspending.",
@@ -385,9 +385,10 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             ],
             popular: false,
             cta: "Start With Starter",
+            funkyBadge: false,
           },
           {
-            name: "Standard",
+            name: "Standard Plan",
             price: "€750",
             period: "/mo",
             subtitle: "For brands and companies already planning bigger budgets. Focus on long-term, stable results and smart scaling.",
@@ -402,27 +403,29 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             ],
             popular: true,
             cta: "Choose Standard",
+            funkyBadge: false,
           },
           {
-            name: "Premium",
-            price: "Custom",
+            name: "Premium Plan",
+            price: "Let's Talk",
             period: "",
-            subtitle: "For market leaders and brands aspiring to be. Complete performance team across all channels.",
+            subtitle: "For market leaders ready to dominate every channel. I assemble a senior specialist team under my coordination — Google Ads, Meta Ads, SEO, CRO — all managed through one point of contact: me.",
             features: [
               "Everything from Standard",
-              "Google Ads + Meta + SEO + CRO",
-              "Senior-led expert team",
+              "Google Ads + Meta Ads + SEO + CRO",
+              "Senior-led team of specialists",
               "Omnichannel strategy & execution",
               "Measurable growth across all channels",
-              "Powered by Funky Enterprises",
+              "One point of contact — full accountability",
             ],
             popular: false,
-            cta: "Contact For Premium",
+            cta: "Get Premium Quote",
+            funkyBadge: true,
           },
         ]
       : [
           {
-            name: "Starter",
+            name: "Starter paket",
             price: "€350",
             period: "/mes",
             subtitle: "Tek počinjete ili imate ograničen budžet? Dobijte ekspertski setup i bolje rezultate bez preterane potrošnje.",
@@ -435,9 +438,10 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             ],
             popular: false,
             cta: "Počnite sa Starter-om",
+            funkyBadge: false,
           },
           {
-            name: "Standard",
+            name: "Standard paket",
             price: "€500",
             period: "/mes",
             subtitle: "Za brendove i kompanije koje već planiraju veće budžete. Fokus na dugoročne, stabilne rezultate i pametno skaliranje.",
@@ -452,22 +456,24 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             ],
             popular: true,
             cta: "Izaberite Standard",
+            funkyBadge: false,
           },
           {
-            name: "Premium",
-            price: "Custom",
+            name: "Premium paket",
+            price: "Po dogovoru",
             period: "",
-            subtitle: "Za tržišne lidere i brendove koji žele to da postanu. Kompletni performance tim kroz sve kanale.",
+            subtitle: "Za tržišne lidere koji žele da dominiraju na svim kanalima. Okupljam senior tim specijalista pod mojom koordinacijom — Google Ads, Meta Ads, SEO, CRO — sve kroz jednu tačku kontakta: mene.",
             features: [
               "Sve iz Standard paketa",
-              "Google Ads + Meta + SEO + CRO",
-              "Senior-led tim eksperata",
+              "Google Ads + Meta Ads + SEO + CRO",
+              "Senior-led tim specijalista",
               "Omnichannel strategija i egzekucija",
               "Merljiv rast kroz sve kanale",
-              "Powered by Funky Enterprises",
+              "Jedna tačka kontakta — puna odgovornost",
             ],
             popular: false,
-            cta: "Kontaktirajte Za Premium",
+            cta: "Zatražite Premium ponudu",
+            funkyBadge: true,
           },
         ];
 
@@ -603,7 +609,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
   const clientLogos = [
     "Chelleon",
     "DesignerGlasses UK",
-    "Mobelaris",
+    "Soundbox Store",
     "Perun Moto",
     "JustRecliners",
     "Cambridge Science",
@@ -853,51 +859,46 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
           {/* Case study card */}
           <div className="max-w-4xl mx-auto bg-slate-900 text-white rounded-xl p-8 md:p-12 mb-10">
             <p className="text-yellow-400 text-sm font-semibold mb-2 uppercase tracking-wider">
-              Case Study — UK eCommerce
+              Case Study — Soundbox Store
             </p>
             <h3 className="text-2xl font-heading font-bold mb-4">
               {locale === "en"
-                ? "From struggling campaigns to 3.7x ROAS"
-                : "Od loših kampanja do 3.7x ROAS-a"}
+                ? "From zero to £170k ad spend — and expanding across Europe"
+                : "Od nule do £170k ad spend-a — i širenje na celu Evropu"}
             </h3>
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div>
                 <p className="text-sm text-slate-400 mb-1">
-                  {locale === "en" ? "Before" : "Pre"}
+                  {locale === "en" ? "Starting point" : "Početak"}
                 </p>
-                <p className="text-2xl font-heading font-bold text-red-400">1.8x ROAS</p>
-                {/* Before bar */}
-                <div className="w-full bg-slate-700 rounded-full h-2 mt-2">
-                  <div className="bg-red-400 h-2 rounded-full" style={{ width: "36%" }} />
-                </div>
+                <p className="text-2xl font-heading font-bold text-red-400">£0</p>
+                <p className="text-xs text-slate-500 mt-1">
+                  {locale === "en" ? "No Google Ads presence" : "Bez Google Ads prisustva"}
+                </p>
               </div>
               <div>
                 <p className="text-sm text-slate-400 mb-1">
-                  {locale === "en" ? "After" : "Posle"}
+                  {locale === "en" ? "Scaled to" : "Skalirano na"}
                 </p>
-                <p className="text-2xl font-heading font-bold text-green-400">3.7x ROAS</p>
-                {/* After bar */}
-                <div className="w-full bg-slate-700 rounded-full h-2 mt-2">
-                  <div className="bg-green-400 h-2 rounded-full" style={{ width: "74%" }} />
-                </div>
+                <p className="text-2xl font-heading font-bold text-green-400">£170k+</p>
+                <p className="text-xs text-slate-500 mt-1">
+                  {locale === "en" ? "Annual ad spend" : "Godišnji ad spend"}
+                </p>
               </div>
               <div>
                 <p className="text-sm text-slate-400 mb-1">
-                  {locale === "en" ? "Budget growth" : "Rast budžeta"}
+                  {locale === "en" ? "Expansion" : "Ekspanzija"}
                 </p>
-                <p className="text-2xl font-heading font-bold text-yellow-400">€30k → €85k</p>
-                {/* Growth indicator */}
-                <div className="flex items-center gap-1 mt-2">
-                  <span className="text-green-400 text-lg">↑</span>
-                  <span className="text-green-400 text-sm font-medium">183%</span>
-                  <span className="text-slate-500 text-xs ml-1">{locale === "en" ? "increase" : "rast"}</span>
-                </div>
+                <p className="text-2xl font-heading font-bold text-yellow-400">UK → EU</p>
+                <p className="text-xs text-slate-500 mt-1">
+                  {locale === "en" ? "Multi-market growth" : "Rast na više tržišta"}
+                </p>
               </div>
             </div>
             <p className="text-slate-300 text-sm">
               {locale === "en"
-                ? "UK skincare brand. 2+ year collaboration. Started with underperforming campaigns, restructured everything from the ground up, implemented tiered shopping strategy, and scaled the budget 3x while improving profitability."
-                : "UK skincare brend. 2+ godine saradnje. Počeli sa lošim kampanjama, restruktuirao sve od nule, implementirao tiered shopping strategiju i skalirao budžet 3x uz poboljšanje profitabilnosti."}
+                ? "UK-based B2B eCommerce in a highly specialized acoustic solutions niche with average order values in the thousands. Built Google Ads from scratch — Search, Shopping, and Performance Max. Stabilized revenue growth in UK, then expanded into EU markets with localized campaigns."
+                : "UK B2B eCommerce u visoko specijalizovanoj niši akustičnih rešenja sa prosečnim narudžbinama u hiljadama funti. Google Ads izgrađen od nule — Search, Shopping i Performance Max. Stabilizovan rast prihoda u UK, zatim ekspanzija na EU tržišta sa lokalizovanim kampanjama."}
             </p>
           </div>
 
@@ -906,13 +907,13 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             <div className="text-4xl mb-4">&ldquo;</div>
             <p className="text-gray-700 text-lg italic mb-4">
               {locale === "en"
-                ? "Slobodan took our Google Ads from 1.8x to 3.7x ROAS. More importantly, he explains everything clearly and we always know where our money goes."
-                : "Slobodan je naše Google Ads podigao sa 1.8x na 3.7x ROAS. Što je još važnije, sve objašnjava jasno i uvek znamo gde ide naš novac."}
+                ? "Slobodan helped us grow our sales significantly, stabilize our ad investment, and expand from UK into multiple European markets. He's proactive, transparent, and genuinely invested in our success."
+                : "Slobodan nam je pomogao da značajno povećamo prodaju, stabilizujemo ulaganja u oglašavanje i proširimo se sa UK tržišta na više evropskih zemalja. Proaktivan je, transparentan i iskreno uložen u naš uspeh."}
             </p>
-            <p className="font-heading font-semibold">
-              {locale === "en" ? "CEO, Mobelaris" : "CEO, Mobelaris"}
+            <p className="font-heading font-semibold">Jason — Owner, Soundbox Store</p>
+            <p className="text-sm text-gray-500">
+              {locale === "en" ? "B2B eCommerce — Acoustic Solutions (UK)" : "B2B eCommerce — Akustična rešenja (UK)"}
             </p>
-            <p className="text-sm text-gray-500">UK eCommerce</p>
           </div>
         </div>
       </section>
@@ -1203,7 +1204,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 className={`rounded-lg p-6 relative flex flex-col ${
                   tier.popular
                     ? "bg-white border-2 border-yellow-400 shadow-card"
-                    : tier.name === "Premium"
+                    : tier.name.includes("Premium")
                       ? "bg-slate-900 text-white border-2 border-slate-700 shadow-card"
                       : "bg-white border-2 border-gray-900 shadow-card"
                 }`}
@@ -1218,13 +1219,13 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 </h3>
                 <p
                   className={`text-2xl font-heading font-bold mb-1 ${
-                    tier.name === "Premium" ? "text-yellow-400" : "text-primary"
+                    tier.name.includes("Premium") ? "text-yellow-400" : "text-primary"
                   }`}
                 >
                   {tier.price}
                   <span
                     className={`text-sm font-normal ${
-                      tier.name === "Premium" ? "text-slate-400" : "text-gray-500"
+                      tier.name.includes("Premium") ? "text-slate-400" : "text-gray-500"
                     }`}
                   >
                     {tier.period}
@@ -1232,7 +1233,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 </p>
                 <p
                   className={`text-sm mb-4 ${
-                    tier.name === "Premium" ? "text-slate-300" : "text-gray-600"
+                    tier.name.includes("Premium") ? "text-slate-300" : "text-gray-600"
                   }`}
                 >
                   {tier.subtitle}
@@ -1242,19 +1243,27 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                     <li key={feature} className="flex items-start gap-2">
                       <span
                         className={`flex-shrink-0 ${
-                          tier.name === "Premium"
+                          tier.name.includes("Premium")
                             ? "text-yellow-400"
                             : "text-green-600"
                         }`}
                       >
                         ✓
                       </span>
-                      <span className={tier.name === "Premium" ? "text-slate-300" : "text-gray-600"}>
+                      <span className={tier.name.includes("Premium") ? "text-slate-300" : "text-gray-600"}>
                         {feature}
                       </span>
                     </li>
                   ))}
                 </ul>
+                {tier.funkyBadge && (
+                  <div className="flex items-center justify-center gap-2 mb-4 py-2 px-3 rounded-md bg-slate-800 border border-slate-600">
+                    <span className="text-xs text-slate-400">
+                      {locale === "en" ? "Delivered with" : "U saradnji sa"}
+                    </span>
+                    <span className="text-sm font-semibold text-yellow-400">Funky Enterprises</span>
+                  </div>
+                )}
                 <a
                   href="#contact-form"
                   className={`block text-center mt-auto ${
