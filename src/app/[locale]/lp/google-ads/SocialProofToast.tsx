@@ -2,36 +2,110 @@
 
 import { useEffect, useState, useCallback } from "react";
 
-type Person = {
+type Notification = {
   name: string;
   city: { sr: string; en: string };
+  message: { sr: string; en: string };
 };
 
-type Action = {
-  sr: string;
-  en: string;
-};
-
-// Pool of people — random combination each time
-const people: Person[] = [
-  { name: "Miloš", city: { sr: "Niš", en: "Niš" } },
-  { name: "Ana", city: { sr: "Novi Sad", en: "Novi Sad" } },
-  { name: "Marko", city: { sr: "Beograd", en: "Belgrade" } },
-  { name: "Grant", city: { sr: "London, UK", en: "London, UK" } },
-  { name: "Jelena", city: { sr: "Zagreb, HR", en: "Zagreb, HR" } },
-  { name: "Stefan", city: { sr: "Kragujevac", en: "Kragujevac" } },
-  { name: "Ivana", city: { sr: "Subotica", en: "Subotica" } },
-  { name: "Nikola", city: { sr: "Čačak", en: "Čačak" } },
-];
-
-// Pool of actions — diverse enough to stay fresh
-const actions: Action[] = [
-  { sr: "zatražio/la besplatnu analizu", en: "requested a free analysis" },
-  { sr: "započeo/la saradnju", en: "started a partnership" },
-  { sr: "zakupio/la Standard paket", en: "signed up for Standard plan" },
-  { sr: "skalirao/la budžet 2x", en: "scaled budget 2x" },
-  { sr: "zatražio/la konsultaciju", en: "requested a consultation" },
-  { sr: "zakupio/la Starter paket", en: "signed up for Starter plan" },
+// Each notification is a mini-story — specific context that doubles as a stealth sales argument
+const notifications: Notification[] = [
+  {
+    name: "Milan",
+    city: { sr: "Beograd", en: "Belgrade" },
+    message: {
+      sr: "Zatražio analizu jer mu Google Ads troši budžet bez konverzija",
+      en: "Requested analysis — Google Ads spending budget with no conversions",
+    },
+  },
+  {
+    name: "Jelena",
+    city: { sr: "Novi Sad", en: "Novi Sad" },
+    message: {
+      sr: "Popunila formu za besplatnu analizu svog eCommerce naloga",
+      en: "Submitted form for a free eCommerce account analysis",
+    },
+  },
+  {
+    name: "Ivana",
+    city: { sr: "Niš", en: "Niš" },
+    message: {
+      sr: "Zatražila konsultacije za njen SaaS brend",
+      en: "Requested a consultation for her SaaS brand",
+    },
+  },
+  {
+    name: "Marko",
+    city: { sr: "Kragujevac", en: "Kragujevac" },
+    message: {
+      sr: "Započeo saradnju nakon što smo mu uštedeli 40% budžeta",
+      en: "Started working with us after we saved him 40% of his budget",
+    },
+  },
+  {
+    name: "Grant",
+    city: { sr: "London, UK", en: "London, UK" },
+    message: {
+      sr: "Popunio formu za analizu svog Shopify naloga",
+      en: "Submitted form for his Shopify account analysis",
+    },
+  },
+  {
+    name: "Stefan",
+    city: { sr: "Subotica", en: "Subotica" },
+    message: {
+      sr: "Prešao sa agencije kod nas jer nije imao uvid u rezultate",
+      en: "Switched from his agency — had no visibility into results",
+    },
+  },
+  {
+    name: "Ana",
+    city: { sr: "Čačak", en: "Čačak" },
+    message: {
+      sr: "Zatražila audit jer joj CPA raste 3 meseca zaredom",
+      en: "Requested an audit — CPA rising for 3 months straight",
+    },
+  },
+  {
+    name: "Nikola",
+    city: { sr: "Zagreb, HR", en: "Zagreb, HR" },
+    message: {
+      sr: "Zakupio Standard paket za svoju B2B firmu",
+      en: "Signed up for Standard plan for his B2B company",
+    },
+  },
+  {
+    name: "Dragana",
+    city: { sr: "Pančevo", en: "Pančevo" },
+    message: {
+      sr: "Popunila formu — prvi put pokreće Google Ads",
+      en: "Submitted form — launching Google Ads for the first time",
+    },
+  },
+  {
+    name: "Luka",
+    city: { sr: "Novi Sad", en: "Novi Sad" },
+    message: {
+      sr: "Zatražio konsultaciju jer mu agencija ne šalje izveštaje",
+      en: "Requested consultation — his agency never sends reports",
+    },
+  },
+  {
+    name: "Sarah",
+    city: { sr: "Manchester, UK", en: "Manchester, UK" },
+    message: {
+      sr: "Zatražila besplatnu analizu za njen skincare brend",
+      en: "Requested a free analysis for her skincare brand",
+    },
+  },
+  {
+    name: "Maja",
+    city: { sr: "Beograd", en: "Belgrade" },
+    message: {
+      sr: "Zakupila Starter paket za svoju online prodavnicu",
+      en: "Signed up for Starter plan for her online store",
+    },
+  },
 ];
 
 // Generate random time string — different each render
@@ -65,25 +139,26 @@ function shuffle<T>(arr: T[]): T[] {
   return copy;
 }
 
+type QueueItem = {
+  name: string;
+  city: string;
+  message: string;
+  time: string;
+};
+
 export function SocialProofToast({ locale }: { locale: string }) {
   const [currentIndex, setCurrentIndex] = useState(-1);
   const [isVisible, setIsVisible] = useState(false);
-  const [queue, setQueue] = useState<
-    { name: string; city: string; action: string; time: string }[]
-  >([]);
+  const [queue, setQueue] = useState<QueueItem[]>([]);
 
   // Build a shuffled queue of notifications on mount
   const buildQueue = useCallback(() => {
-    const shuffledPeople = shuffle(people);
-    const shuffledActions = shuffle(actions);
+    const shuffled = shuffle(notifications);
 
-    return shuffledPeople.map((person, i) => ({
-      name: person.name,
-      city: locale === "en" ? person.city.en : person.city.sr,
-      action:
-        locale === "en"
-          ? shuffledActions[i % shuffledActions.length].en
-          : shuffledActions[i % shuffledActions.length].sr,
+    return shuffled.map((notif) => ({
+      name: notif.name,
+      city: locale === "en" ? notif.city.en : notif.city.sr,
+      message: locale === "en" ? notif.message.en : notif.message.sr,
       time: getRandomTime(locale),
     }));
   }, [locale]);
@@ -107,17 +182,17 @@ export function SocialProofToast({ locale }: { locale: string }) {
   useEffect(() => {
     if (currentIndex < 0 || queue.length === 0) return;
 
-    // Hide after 4 seconds
+    // Hide after 5 seconds (slightly longer — messages are longer now)
     const hideTimeout = setTimeout(() => {
       setIsVisible(false);
-    }, 4000);
+    }, 5000);
 
     // Show next after 20-30 seconds (randomized interval)
     const nextDelay = 20000 + Math.floor(Math.random() * 10000);
     const nextTimeout = setTimeout(() => {
       const nextIndex = currentIndex + 1;
       if (nextIndex >= queue.length) {
-        // Reshuffle and start over
+        // Reshuffle and start over with new times
         setQueue(buildQueue());
         setCurrentIndex(0);
       } else {
@@ -144,17 +219,18 @@ export function SocialProofToast({ locale }: { locale: string }) {
           : "translate-y-4 opacity-0 pointer-events-none"
       }`}
     >
-      <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-xs flex items-start gap-3">
+      <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-sm flex items-start gap-3">
         <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 text-sm">
           ✅
         </div>
         <div className="min-w-0">
-          <p className="text-sm text-gray-900 font-medium leading-tight">
-            {item.name} {locale === "en" ? "from" : "iz"} {item.city}
+          <p className="text-sm text-gray-900 font-semibold leading-tight">
+            {item.name}, {item.city}
           </p>
-          <p className="text-xs text-gray-500 leading-tight mt-0.5">
-            {item.action} — {item.time}
+          <p className="text-xs text-gray-600 leading-snug mt-0.5">
+            {item.message}
           </p>
+          <p className="text-[11px] text-gray-400 mt-1">{item.time}</p>
         </div>
       </div>
     </div>
