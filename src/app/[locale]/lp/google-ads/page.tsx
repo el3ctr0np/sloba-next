@@ -409,14 +409,14 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             name: "Premium Plan",
             price: "Let's Talk",
             period: "",
-            subtitle: "For market leaders ready to dominate every channel. I assemble a senior specialist team under my coordination — Google Ads, Meta Ads, SEO, CRO — all managed through one point of contact: me.",
+            subtitle: "For market leaders — or those ready to become one. Funky Enterprises brings a senior-led team across all digital channels to build a unified revenue engine for your brand.",
             features: [
-              "Everything from Standard",
-              "Google Ads + Meta Ads + SEO + CRO",
-              "Senior-led team of specialists",
-              "Omnichannel strategy & execution",
-              "Measurable growth across all channels",
-              "One point of contact — full accountability",
+              "Paid Search + Paid Social + SEO + CRO",
+              "Demand generation & pipeline architecture",
+              "Senior operators — not junior account managers",
+              "Full marketing operations under one roof",
+              "Strategic alignment across all channels",
+              "Measurable, revenue-focused growth",
             ],
             popular: false,
             cta: "Get Premium Quote",
@@ -462,14 +462,14 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             name: "Premium paket",
             price: "Po dogovoru",
             period: "",
-            subtitle: "Za tržišne lidere koji žele da dominiraju na svim kanalima. Okupljam senior tim specijalista pod mojom koordinacijom — Google Ads, Meta Ads, SEO, CRO — sve kroz jednu tačku kontakta: mene.",
+            subtitle: "Za tržišne lidere — ili one koji to žele da postanu. Funky Enterprises donosi senior tim kroz sve digitalne kanale i gradi jedinstveni revenue engine za vaš brend.",
             features: [
-              "Sve iz Standard paketa",
-              "Google Ads + Meta Ads + SEO + CRO",
-              "Senior-led tim specijalista",
-              "Omnichannel strategija i egzekucija",
-              "Merljiv rast kroz sve kanale",
-              "Jedna tačka kontakta — puna odgovornost",
+              "Paid Search + Paid Social + SEO + CRO",
+              "Demand generation i pipeline arhitektura",
+              "Senior operatori — ne junior account manageri",
+              "Kompletne marketing operacije pod jednim krovom",
+              "Strateško usklađivanje svih kanala",
+              "Merljiv rast fokusiran na prihod",
             ],
             popular: false,
             cta: "Zatražite Premium ponudu",
@@ -1259,7 +1259,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 {tier.funkyBadge && (
                   <div className="flex items-center justify-center gap-2 mb-4 py-2 px-3 rounded-md bg-slate-800 border border-slate-600">
                     <span className="text-xs text-slate-400">
-                      {locale === "en" ? "Delivered with" : "U saradnji sa"}
+                      {locale === "en" ? "Powered by" : "Isporučuje"}
                     </span>
                     <span className="text-sm font-semibold text-yellow-400">Funky Enterprises</span>
                   </div>
