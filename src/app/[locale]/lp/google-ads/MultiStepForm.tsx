@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "@/i18n/navigation";
+import { useSearchParams } from "next/navigation";
 
 type FormData = {
   businessType: string;
@@ -27,12 +28,72 @@ const initialData: FormData = {
   message: "",
 };
 
+// Readable label maps for email output
+const labelMaps = {
+  businessType: {
+    ecommerce: "eCommerce / Online prodavnica",
+    b2b: "B2B / Usluge",
+    local: "Lokalni biznis",
+    saas: "SaaS / Aplikacija",
+    other: "Ostalo",
+  } as Record<string, string>,
+  hasGoogleAds: {
+    "yes-not-happy": "Da, ali nisam zadovoljan rezultatima",
+    "yes-want-scale": "Da, želim da skaliram",
+    "no-new": "Ne, tek počinjem",
+    paused: "Imao/la sam kampanje ali sam pauzirao/la",
+  } as Record<string, string>,
+  monthlyBudget: {
+    "under-500": "Ispod €500/mesečno",
+    "500-1000": "€500 - €1.000/mesečno",
+    "1000-3000": "€1.000 - €3.000/mesečno",
+    "3000-10000": "€3.000 - €10.000/mesečno",
+    "10000+": "€10.000+/mesečno",
+    "not-sure": "Nisam siguran/na",
+  } as Record<string, string>,
+  biggestChallenge: {
+    "no-results": "Trošim novac ali nema rezultata",
+    "high-cpa": "CPA je previsok",
+    "cant-scale": "Ne mogu da skaliram bez povećanja troškova",
+    "bad-agency": "Loše iskustvo sa trenutnom agencijom",
+    "dont-know": "Ne znam odakle da počnem",
+    other: "Ostalo",
+  } as Record<string, string>,
+};
+
+// Ad tracking URL params to capture
+const TRACKING_PARAMS = [
+  "gclid",
+  "gbraid",
+  "wbraid",
+  "fbclid",
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+];
+
 export function MultiStepForm({ locale }: { locale: string }) {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [step, setStep] = useState(1);
   const [data, setData] = useState<FormData>(initialData);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [trackingData, setTrackingData] = useState<Record<string, string>>({});
+
+  // Capture ad tracking params on mount
+  useEffect(() => {
+    const params: Record<string, string> = {};
+    TRACKING_PARAMS.forEach((key) => {
+      const val = searchParams.get(key);
+      if (val) params[key] = val;
+    });
+    if (Object.keys(params).length > 0) {
+      setTrackingData(params);
+    }
+  }, [searchParams]);
 
   const totalSteps = 3;
 
@@ -66,6 +127,11 @@ export function MultiStepForm({ locale }: { locale: string }) {
     setIsSubmitting(true);
 
     try {
+      // Build tracking info string
+      const trackingInfo = Object.keys(trackingData).length > 0
+        ? Object.entries(trackingData).map(([k, v]) => `${k}: ${v}`).join(" | ")
+        : "Direktan pristup (bez oglasa)";
+
       const response = await fetch(
         "https://formsubmit.co/ajax/info@slobodan-jelisavac.com",
         {
@@ -75,18 +141,18 @@ export function MultiStepForm({ locale }: { locale: string }) {
             Accept: "application/json",
           },
           body: JSON.stringify({
-            name: data.name,
-            email: data.email,
-            phone: data.phone || "Nije ostavljeno",
-            website: data.website || "Nije ostavljeno",
-            "Tip biznisa": data.businessType,
-            "Google Ads status": data.hasGoogleAds,
-            "Mesečni budžet": data.monthlyBudget,
-            "Najveći izazov": data.biggestChallenge,
-            message: data.message || "Bez dodatne poruke",
-            _subject: `[LP Lead - ${getLeadTier().toUpperCase()}] ${data.name} — ${data.businessType}`,
-            _source: "meta-ads-lp-multistep",
-            _leadTier: getLeadTier(),
+            "Ime": data.name,
+            "Email": data.email,
+            "Telefon": data.phone || "—",
+            "Sajt": data.website || "—",
+            "Tip biznisa": labelMaps.businessType[data.businessType] || data.businessType,
+            "Google Ads status": labelMaps.hasGoogleAds[data.hasGoogleAds] || data.hasGoogleAds,
+            "Mesečni budžet": labelMaps.monthlyBudget[data.monthlyBudget] || data.monthlyBudget,
+            "Najveći izazov": labelMaps.biggestChallenge[data.biggestChallenge] || data.biggestChallenge,
+            "Poruka": data.message || "—",
+            "Lead Tier": getLeadTier().toUpperCase(),
+            "Izvor": trackingInfo,
+            _subject: `[LP Lead - ${getLeadTier().toUpperCase()}] ${data.name} — ${labelMaps.businessType[data.businessType] || data.businessType}`,
             _template: "table",
           }),
         },
