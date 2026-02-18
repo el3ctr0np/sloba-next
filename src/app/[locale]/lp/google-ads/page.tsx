@@ -12,18 +12,18 @@ type Props = {
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title:
-      "Google Ads ekspert | Više kupaca sa Google-a — Slobodan Jelisavac",
+      "Google Ads ekspert | Oglašavanje koje donosi rezultate — Slobodan Jelisavac",
     description:
-      "Prestanite da bacate budžet na Google Ads. 180%+ poboljšanje ROAS-a, decenija iskustva, 50+ brendova. Zakažite besplatan razgovor.",
+      "Google kampanje za eCommerce i B2B koje donose kupce, ne samo klikove. Decenija iskustva, 50+ brendova. Zakažite besplatan razgovor.",
     robots: {
       index: false,
       follow: false,
     },
     openGraph: {
       title:
-        "Google Ads ekspert | Više kupaca sa Google-a — Slobodan Jelisavac",
+        "Google Ads ekspert | Oglašavanje koje donosi rezultate — Slobodan Jelisavac",
       description:
-        "Prestanite da bacate budžet na Google Ads. 180%+ poboljšanje ROAS-a, decenija iskustva, 50+ brendova. Zakažite besplatan razgovor.",
+        "Google kampanje za eCommerce i B2B koje donose kupce, ne samo klikove. Decenija iskustva, 50+ brendova. Zakažite besplatan razgovor.",
       url: "https://www.slobodan-jelisavac.com/sr/lp/google-ads",
       siteName: "Slobodan Jelisavac",
       locale: "sr_RS",
@@ -465,12 +465,16 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
-              Više kupaca sa Google-a — bez bacanja budžeta
+              Google oglašavanje koje{" "}
+              <span className="text-yellow-400">zapravo donosi rezultate</span>
+              {" "}— a ne samo klikove
             </h1>
 
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              Kampanje izgrađene na podacima i deceniji iskustva. Vi vodite
-              biznis, ja dovodim kupce.
+              Vodim Google kampanje za eCommerce i B2B kompanije koje žele
+              predvidljiv rast. Decenija iskustva, 50+ brendova iz 6 zemalja, i
+              pristup koji se zasniva na podacima — ne na nagađanju. Vi se
+              fokusirate na biznis, ja se brinem da vam Google dovodi kupce.
             </p>
 
             {/* Stats row */}
