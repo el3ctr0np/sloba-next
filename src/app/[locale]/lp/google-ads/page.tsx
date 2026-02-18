@@ -1,8 +1,33 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { MultiStepForm } from "./MultiStepForm";
 import { AnimatedCounter } from "./AnimatedCounter";
 import { SocialProofToast } from "./SocialProofToast";
+import {
+  Banknote,
+  Frown,
+  Clock,
+  BarChart3,
+  Target,
+  Search,
+  Microscope,
+  Building2,
+  Zap,
+  TrendingUp,
+  ShoppingCart,
+  Rocket,
+  Play,
+  Monitor,
+  Handshake,
+  DoorOpen,
+  MessageCircle,
+  Trophy,
+  Globe,
+  Bot,
+  Check,
+  Lightbulb,
+} from "lucide-react";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -45,66 +70,68 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     { value: "50+", label: "Brendova u portfoliju" },
   ];
 
-  const problems = [
+  const iconProps = { size: 28, strokeWidth: 1.5 } as const;
+
+  const problems: { icon: ReactNode; title: string; description: string }[] = [
     {
-      icon: "💸",
+      icon: <Banknote {...iconProps} className="text-gray-900" />,
       title: "Budžet nestaje bez rezultata",
       description:
         "Ulažete u Google Ads svaki mesec, ali konverzije izostaju ili su preskupe. Nemate jasnu sliku šta funkcioniše a šta ne.",
     },
     {
-      icon: "😤",
+      icon: <Frown {...iconProps} className="text-gray-900" />,
       title: "Loša iskustva sa agencijama",
       description:
         "Agencije su podešavale kampanje bez stvarne strategije. Dobijali ste generičke reportove, ali nikada niste videli pravi ROI.",
     },
     {
-      icon: "⏰",
+      icon: <Clock {...iconProps} className="text-gray-900" />,
       title: "Nemate vremena da se time bavite",
       description:
         "Google Ads zahteva svakodnevno praćenje i optimizaciju. Vi imate biznis koji vodite — ne možete ceo dan da sedite u ads dashboard-u.",
     },
     {
-      icon: "📊",
+      icon: <BarChart3 {...iconProps} className="text-gray-900" />,
       title: "Rast je stao",
       description:
         "Kampanje rade solidno, ali ne znate kako da ih skalirate a da troškovi ne izmaknu kontroli.",
     },
     {
-      icon: "🎯",
+      icon: <Target {...iconProps} className="text-gray-900" />,
       title: "Niste sigurni da li Google Ads uopšte radi za vas",
       description:
         "Čuli ste priče o uspehu ali i o bacanju novca. Treba vam ekspertsko mišljenje pre nego što uložite više.",
     },
     {
-      icon: "🔍",
+      icon: <Search {...iconProps} className="text-gray-900" />,
       title: "Konkurencija vas nadmašuje",
       description:
         "Konkurenti se pojavljuju iznad vas u pretrazi i kradu vaše potencijalne kupce.",
     },
   ];
 
-  const solutions = [
+  const solutions: { icon: ReactNode; title: string; description: string }[] = [
     {
-      icon: "🔬",
+      icon: <Microscope {...iconProps} className="text-gray-900" />,
       title: "Dubinska analiza pre bilo kakve potrošnje",
       description:
         "Razumem vaš biznis model, marže, idealne kupce i konkurenciju — pre nego što potrošim i jedan dinar na oglase.",
     },
     {
-      icon: "🏗️",
+      icon: <Building2 {...iconProps} className="text-gray-900" />,
       title: "Struktura kampanja po meri",
       description:
         "Kampanje dizajnirane specifično za vaše ciljeve. Bilo da je fokus ROAS, CPA, kvalitet leadova ili brand awareness — svaka struktura ima svrhu.",
     },
     {
-      icon: "⚡",
+      icon: <Zap {...iconProps} className="text-gray-900" />,
       title: "Proaktivna svakodnevna optimizacija",
       description:
         "Pratim signale i reagujem pre nego što utiču na performanse. Svakodnevna analiza, ne mesečne provere. Problemi se rešavaju pre nego što vas koštaju.",
     },
     {
-      icon: "📈",
+      icon: <TrendingUp {...iconProps} className="text-gray-900" />,
       title: "Transparentni rezultati koje možete proveriti",
       description:
         "Tačno znate gde ide svaki EUR i šta dobijate zauzvrat. Jasni dashboard-ovi, pošteni reportovi, realni brojevi.",
@@ -135,39 +162,39 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     },
   ];
 
-  const services = [
+  const services: { icon: ReactNode; title: string; description: string }[] = [
     {
       title: "Search kampanje",
-      icon: "🔍",
+      icon: <Search {...iconProps} className="text-gray-900" />,
       description:
         "Targetirajte korisnike koji aktivno pretražuju vaše proizvode ili usluge na Google-u.",
     },
     {
       title: "Shopping kampanje",
-      icon: "🛒",
+      icon: <ShoppingCart {...iconProps} className="text-gray-900" />,
       description:
         "Optimizacija feed-a i bid strategije za maksimalan eCommerce ROAS.",
     },
     {
       title: "Performance Max",
-      icon: "🚀",
+      icon: <Rocket {...iconProps} className="text-gray-900" />,
       description:
         "Strateški PMax uz kontrolu, jasne audience signale i transparentne rezultate.",
     },
     {
       title: "Remarketing",
-      icon: "🎯",
+      icon: <Target {...iconProps} className="text-gray-900" />,
       description:
         "Vratite posetioce koji su otišli bez konverzije i zatvorite prodaju.",
     },
     {
       title: "YouTube oglasi",
-      icon: "▶️",
+      icon: <Play {...iconProps} className="text-gray-900" />,
       description: "Video oglašavanje za awareness i direct response.",
     },
     {
       title: "Display mreža",
-      icon: "🖥️",
+      icon: <Monitor {...iconProps} className="text-gray-900" />,
       description:
         "Vizuelni oglasi na milionima sajtova za izgradnju brend svesti.",
     },
@@ -300,21 +327,21 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     },
   ];
 
-  const guarantees = [
+  const guarantees: { icon: ReactNode; title: string; description: string }[] = [
     {
-      icon: "🤝",
+      icon: <Handshake {...iconProps} className="text-gray-900" />,
       title: "Bez dugoročnih ugovora",
       description:
         "Mesec za mesec saradnja. Rezultati me zadržavaju, ne ugovori. Otkažite u bilo kom trenutku sa 30 dana najave.",
     },
     {
-      icon: "🚪",
+      icon: <DoorOpen {...iconProps} className="text-gray-900" />,
       title: "Izlazna garancija",
       description:
         "Bez obaveza, bez penala. Ako niste zadovoljni — odlazite sa kompletnim nalogom, kampanjama i svim što smo izgradili. Sve je vaše.",
     },
     {
-      icon: "💬",
+      icon: <MessageCircle {...iconProps} className="text-gray-900" />,
       title: "Direktan pristup ekspertu — uvek",
       description:
         "Uvek pričate direktno sa mnom. Bez juniora, bez posrednika. Direktan Slack/email pristup sa odgovorom u roku od 24h.",
@@ -504,9 +531,18 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
             {/* Trust badges */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span>🏆 3x UK Search Awards</span>
-              <span>50+ brendova, 6+ zemalja</span>
-              <span>Bez dugoročnih ugovora</span>
+              <span className="inline-flex items-center gap-1.5">
+                <Trophy size={14} strokeWidth={1.5} className="text-slate-400" />
+                3x UK Search Awards
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <Globe size={14} strokeWidth={1.5} className="text-slate-400" />
+                50+ brendova, 6+ zemalja
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <Handshake size={14} strokeWidth={1.5} className="text-slate-400" />
+                Bez dugoročnih ugovora
+              </span>
             </div>
           </div>
         </div>
@@ -552,7 +588,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 key={problem.title}
                 className="bg-white border-2 border-gray-900 rounded-lg p-6 shadow-card transition-all duration-300 hover:shadow-card-hover hover:translate-x-[5px] hover:translate-y-[5px]"
               >
-                <div className="text-3xl mb-3">{problem.icon}</div>
+                <div className="mb-3">{problem.icon}</div>
                 <h3 className="text-lg font-heading font-semibold mb-2">
                   {problem.title}
                 </h3>
@@ -597,7 +633,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 key={solution.title}
                 className="bg-white border-2 border-gray-900 rounded-lg p-6 shadow-card"
               >
-                <div className="text-2xl mb-3">{solution.icon}</div>
+                <div className="mb-3">{solution.icon}</div>
                 <h3 className="text-lg font-heading font-semibold mb-2">
                   {solution.title}
                 </h3>
@@ -740,17 +776,21 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
               </div>
               {/* Authority badges */}
               <div className="flex flex-wrap gap-4 mt-6">
-                <span className="bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
-                  🏆 3x UK Search Awards
+                <span className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
+                  <Trophy size={16} strokeWidth={1.5} className="text-gray-500" />
+                  3x UK Search Awards
                 </span>
-                <span className="bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
-                  📊 €2M+ Ad Spend
+                <span className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
+                  <BarChart3 size={16} strokeWidth={1.5} className="text-gray-500" />
+                  €2M+ Ad Spend
                 </span>
-                <span className="bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
-                  🌍 6+ Zemalja
+                <span className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
+                  <Globe size={16} strokeWidth={1.5} className="text-gray-500" />
+                  6+ Zemalja
                 </span>
-                <span className="bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
-                  🤖 AI-Powered
+                <span className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
+                  <Bot size={16} strokeWidth={1.5} className="text-gray-500" />
+                  AI-Powered
                 </span>
               </div>
             </div>
@@ -807,7 +847,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 key={service.title}
                 className="bg-white border border-gray-200 rounded-lg p-5 hover:border-gray-900 hover:shadow-md transition-all"
               >
-                <span className="text-2xl">{service.icon}</span>
+                <div className="mb-1">{service.icon}</div>
                 <h3 className="font-heading font-semibold mt-2 mb-1">
                   {service.title}
                 </h3>
@@ -1061,8 +1101,9 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
           </div>
           {/* Cost comparison note */}
           <div className="text-center mt-8">
-            <p className="text-sm text-gray-500">
-              💡 U poređenju sa zapošljavanjem in-house PPC specijaliste
+            <p className="text-sm text-gray-500 inline-flex items-center gap-1.5 justify-center w-full">
+              <Lightbulb size={16} strokeWidth={1.5} className="text-gray-400 flex-shrink-0" />
+              U poređenju sa zapošljavanjem in-house PPC specijaliste
               (€2.000-4.000+/mes), dobijate senior-level ekspertizu za deo cene.
             </p>
           </div>
@@ -1089,7 +1130,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 key={guarantee.title}
                 className="bg-white border-2 border-gray-900 rounded-xl p-6 shadow-card text-center"
               >
-                <div className="text-4xl mb-4">{guarantee.icon}</div>
+                <div className="mb-4">{guarantee.icon}</div>
                 <h3 className="font-heading font-bold text-lg mb-2">
                   {guarantee.title}
                 </h3>
@@ -1156,10 +1197,22 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
           {/* Trust badges below form */}
           <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-slate-400">
-            <span>🏆 3x UK Search Awards</span>
-            <span>📊 €2M+ Ad Spend</span>
-            <span>🌍 50+ Brendova</span>
-            <span>🤝 Bez ugovora</span>
+            <span className="inline-flex items-center gap-1.5">
+              <Trophy size={14} strokeWidth={1.5} className="text-slate-400" />
+              3x UK Search Awards
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <BarChart3 size={14} strokeWidth={1.5} className="text-slate-400" />
+              €2M+ Ad Spend
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <Globe size={14} strokeWidth={1.5} className="text-slate-400" />
+              50+ Brendova
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <Handshake size={14} strokeWidth={1.5} className="text-slate-400" />
+              Bez ugovora
+            </span>
           </div>
         </div>
       </section>
