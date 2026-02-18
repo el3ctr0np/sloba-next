@@ -65,17 +65,32 @@ export function MultiStepForm({ locale }: { locale: string }) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // TODO: Replace with your actual form endpoint
     try {
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...data,
-          _source: "meta-ads-lp-multistep",
-          _leadTier: getLeadTier(),
-        }),
-      });
+      const response = await fetch(
+        "https://formsubmit.co/ajax/info@slobodan-jelisavac.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            phone: data.phone || "Nije ostavljeno",
+            website: data.website || "Nije ostavljeno",
+            "Tip biznisa": data.businessType,
+            "Google Ads status": data.hasGoogleAds,
+            "Mesečni budžet": data.monthlyBudget,
+            "Najveći izazov": data.biggestChallenge,
+            message: data.message || "Bez dodatne poruke",
+            _subject: `[LP Lead - ${getLeadTier().toUpperCase()}] ${data.name} — ${data.businessType}`,
+            _source: "meta-ads-lp-multistep",
+            _leadTier: getLeadTier(),
+            _template: "table",
+          }),
+        },
+      );
 
       if (response.ok) {
         setIsSubmitted(true);
