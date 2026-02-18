@@ -10,6 +10,7 @@ type FormData = {
   biggestChallenge: string;
   name: string;
   email: string;
+  phone: string;
   website: string;
   message: string;
 };
@@ -21,6 +22,7 @@ const initialData: FormData = {
   biggestChallenge: "",
   name: "",
   email: "",
+  phone: "",
   website: "",
   message: "",
 };
@@ -149,8 +151,11 @@ export function MultiStepForm({ locale }: { locale: string }) {
           namePlaceholder: "John Smith",
           emailLabel: "Email *",
           emailPlaceholder: "email@example.com",
+          phoneLabel: "Phone (optional)",
+          phonePlaceholder: "+44 7XXX XXX XXX",
+          phoneHint: "If you'd like me to call you to schedule a meeting",
           websiteLabel: "Website URL",
-          websitePlaceholder: "https://www.example.com",
+          websitePlaceholder: "www.example.com",
           messageLabel: "Anything else you'd like me to know?",
           messagePlaceholder: "Your goals, timeline, questions...",
           next: "Next Step",
@@ -202,8 +207,11 @@ export function MultiStepForm({ locale }: { locale: string }) {
           namePlaceholder: "Petar Petrovic",
           emailLabel: "Email *",
           emailPlaceholder: "email@example.com",
+          phoneLabel: "Telefon (opciono)",
+          phonePlaceholder: "+381 6X XXX XXXX",
+          phoneHint: "Ako želite da vas pozovem radi zakazivanja sastanka",
           websiteLabel: "URL sajta",
-          websitePlaceholder: "https://www.example.com",
+          websitePlaceholder: "www.example.com",
           messageLabel: "Želite li da dodate nešto?",
           messagePlaceholder: "Vaši ciljevi, vremenski okvir, pitanja...",
           next: "Sledeći korak",
@@ -488,22 +496,42 @@ export function MultiStepForm({ locale }: { locale: string }) {
               </div>
             </div>
 
-            <div>
-              <label
-                htmlFor="website"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                {t.websiteLabel}
-              </label>
-              <input
-                type="url"
-                id="website"
-                name="website"
-                value={data.website}
-                onChange={(e) => updateField("website", e.target.value)}
-                className={inputClass}
-                placeholder={t.websitePlaceholder}
-              />
+            <div className="grid md:grid-cols-2 gap-4">
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  {t.phoneLabel}
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={data.phone}
+                  onChange={(e) => updateField("phone", e.target.value)}
+                  className={inputClass}
+                  placeholder={t.phonePlaceholder}
+                />
+                <p className="text-xs text-gray-400 mt-1">{t.phoneHint}</p>
+              </div>
+              <div>
+                <label
+                  htmlFor="website"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  {t.websiteLabel}
+                </label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  value={data.website}
+                  onChange={(e) => updateField("website", e.target.value)}
+                  className={inputClass}
+                  placeholder={t.websitePlaceholder}
+                />
+              </div>
             </div>
 
             <div>

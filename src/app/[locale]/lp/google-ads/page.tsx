@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { MultiStepForm } from "./MultiStepForm";
 import { AnimatedCounter } from "./AnimatedCounter";
@@ -397,40 +398,13 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
   ];
 
   const clientLogos = [
-    "Chelleon",
-    "Soundbox Store",
-    "Pickbox",
-    "Chatislav",
-    "Perun Moto",
-    "JustRecliners",
-    "Cambridge Science",
-    "Merrythought",
-    "YMCA",
-  ];
-
-  // Domestic mini case studies
-  const domesticCaseStudies = [
-    {
-      name: "Chatislav",
-      industry: "AI platforma",
-      type: "Brand Awareness kampanje",
-      flag: "🇷🇸",
-      market: "Srbija",
-    },
-    {
-      name: "Pickbox",
-      industry: "Streaming servis",
-      type: "YouTube & Display oglasi",
-      flag: "🇭🇷",
-      market: "Hrvatska",
-    },
-    {
-      name: "DC Gaj",
-      industry: "Privatna klinika",
-      type: "Lead gen — zakazivanje pregleda",
-      flag: "🇷🇸",
-      market: "Srbija",
-    },
+    { name: "Soundbox Store", src: "/client-logos/soundbox-store.svg", width: 160, height: 56, context: "UK · Akustična rešenja" },
+    { name: "Chatislav", src: "/client-logos/chatislav.svg", width: 48, height: 45, context: "Srbija · AI platforma" },
+    { name: "Pickbox", src: "/client-logos/pickbox-hrvatska-logo.svg.webp", width: 120, height: 40, context: "Hrvatska · Video On Demand" },
+    { name: "DC Gaj", src: "/client-logos/dc-gaj.png", width: 120, height: 40, context: "Beograd · Poliklinika" },
+    { name: "Chelleon", src: null, width: 0, height: 0, context: "UK · Skincare eCommerce" },
+    { name: "Best at Printing", src: "/client-logos/bestatprinting.co.uk-logo9.webp", width: 120, height: 40, context: "UK · Custom Printing" },
+    { name: "Merrythought", src: "/client-logos/merrythought.co.uk-logo9.webp", width: 120, height: 40, context: "UK · Heritage Teddy Bears" },
   ];
 
   // =============================================
@@ -549,21 +523,47 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       </section>
 
       {/* ============================================= */}
-      {/* SECTION 2: CLIENT LOGOS — Social Proof Strip */}
+      {/* SECTION 2: CLIENT LOGOS — Scrolling Social Proof */}
       {/* ============================================= */}
-      <section className="py-8 px-4 md:px-8 bg-gray-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-center text-sm text-gray-500 mb-4 uppercase tracking-wider">
-            Brendovi iz UK, USA, EU i Srbije koji mi veruju
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-            {clientLogos.map((logo) => (
-              <span
-                key={logo}
-                className="text-gray-400 font-heading font-semibold text-sm md:text-base"
+      <section className="py-10 md:py-12 bg-gray-50 border-b border-gray-100 overflow-hidden">
+        <p className="text-center text-sm text-gray-500 mb-6 uppercase tracking-wider px-4">
+          Brendovi koji su mi ukazali poverenje — UK, EU, Srbija, Ex-Yu
+        </p>
+        <div className="relative">
+          {/* Fade edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-gray-50 to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-gray-50 to-transparent z-10" />
+          {/* Scrolling track */}
+          <div className="flex" style={{ animation: "marquee 30s linear infinite" }}>
+            {[...clientLogos, ...clientLogos].map((logo, i) => (
+              <div
+                key={`${logo.name}-${i}`}
+                className="flex-shrink-0 flex items-center gap-4 px-6 md:px-8 border-r border-gray-200 last:border-r-0"
               >
-                {logo}
-              </span>
+                {/* Logo or text fallback */}
+                <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  {logo.src ? (
+                    <Image
+                      src={logo.src}
+                      alt={logo.name}
+                      width={logo.width}
+                      height={logo.height}
+                      className="max-h-10 w-auto object-contain"
+                    />
+                  ) : (
+                    <span className="text-xl font-heading font-bold text-gray-800">
+                      {logo.name.split(" ").map((w) => w[0]).join("")}
+                    </span>
+                  )}
+                </div>
+                {/* Name + context */}
+                <div className="whitespace-nowrap">
+                  <p className="font-heading font-semibold text-sm text-gray-800">
+                    {logo.name}
+                  </p>
+                  <p className="text-xs text-gray-500">{logo.context}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -718,27 +718,6 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             </p>
           </div>
 
-          {/* Domestic mini case studies */}
-          <div className="max-w-4xl mx-auto">
-            <p className="text-center text-sm text-gray-500 mb-6 uppercase tracking-wider">
-              Još neki od klijenata sa kojima sarađujem
-            </p>
-            <div className="grid md:grid-cols-3 gap-4">
-              {domesticCaseStudies.map((cs) => (
-                <div
-                  key={cs.name}
-                  className="bg-white border border-gray-200 rounded-lg p-5 text-center hover:border-gray-900 hover:shadow-md transition-all"
-                >
-                  <span className="text-2xl">{cs.flag}</span>
-                  <h4 className="font-heading font-semibold mt-2">
-                    {cs.name}
-                  </h4>
-                  <p className="text-sm text-gray-500 mt-1">{cs.industry}</p>
-                  <p className="text-xs text-gray-400 mt-2">{cs.type}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
