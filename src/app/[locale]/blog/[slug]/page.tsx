@@ -532,7 +532,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <section className="bg-slate-100 text-gray-900 pb-16">
         <div className="container-custom px-4 -mt-16">
-          <div className="grid grid-cols-1 lg:grid-cols-[280px,1fr] gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8">
             <aside className="hidden lg:block">
               <div className="sticky top-24 space-y-4">
                 <TableOfContents locale={locale} />
