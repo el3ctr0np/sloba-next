@@ -27,9 +27,13 @@ export function TableOfContents({ locale }: TableOfContentsProps) {
 
     const extracted: TocItem[] = headings
       .filter((el) => {
-        // Skip headings inside card grids (e.g., CPC/CPM model cards)
-        const parent = el.closest(".grid");
-        return !parent;
+        // Skip h3s inside card grids (e.g., CPC/CPM model cards with grid-cols-2)
+        // Only filter h3s — h2s are always section headings
+        if (el.tagName === "H3") {
+          const cardGrid = el.closest("[class*='grid-cols-2']");
+          if (cardGrid && article.contains(cardGrid)) return false;
+        }
+        return true;
       })
       .map((el, index) => {
         // Auto-assign IDs if not present
