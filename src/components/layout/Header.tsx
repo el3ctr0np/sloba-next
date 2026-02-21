@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { useParams } from "next/navigation";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui";
@@ -12,14 +13,16 @@ export function Header() {
   const locale = useLocale();
   const t = useTranslations("Header");
   const rawPathname = usePathname();
+  const params = useParams<{ slug?: string }>();
 
   // Strip locale prefix if present to avoid /sr/en issues
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const pathname = (rawPathname.replace(/^\/(sr|en)/, "") || "/") as any;
 
   // Blog slug swap for language switcher — use correct slug per locale
-  const blogMatch = pathname.match(/^\/blog\/(.+)$/);
-  const currentBlogSlug = blogMatch ? blogMatch[1] : null;
+  // usePathname from next-intl returns template "/blog/[slug]", so we use useParams for real slug
+  const isBlogPost = pathname === "/blog/[slug]" || pathname.startsWith("/blog/");
+  const currentBlogSlug = isBlogPost && params?.slug ? (params.slug as string) : null;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const srHref = useMemo(() => {
