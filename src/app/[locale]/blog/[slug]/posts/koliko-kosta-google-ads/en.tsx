@@ -59,6 +59,12 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         <li><strong>Industry</strong> — insurance and legal pay 10x more than fashion retailers</li>
         <li><strong>Geography</strong> — US cities are more expensive than UK regions; UK more than Eastern Europe</li>
       </ul>
+      <p className="text-sm text-gray-500 mt-3">
+        Read more about the auction system in the{" "}
+        <a href="https://support.google.com/google-ads/answer/1704342" target="_blank" rel="noopener noreferrer" className="underline">
+          Google Ads Help Center
+        </a>.
+      </p>
 
       <h3>Pricing models in Google Ads</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -421,7 +427,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Check CPC in your industry</strong> <span className="text-gray-500">via Keyword Planner (free in Google Ads)</span></div>
+            <div><strong>Check CPC in your industry</strong> <span className="text-gray-500">via{" "}<a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a> (free in Google Ads)</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>

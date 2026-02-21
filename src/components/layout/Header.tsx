@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui";
+import { getAlternateSlug } from "@/app/[locale]/blog/[slug]/posts/slug-map";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,6 +16,24 @@ export function Header() {
   // Strip locale prefix if present to avoid /sr/en issues
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const pathname = (rawPathname.replace(/^\/(sr|en)/, "") || "/") as any;
+
+  // Blog slug swap for language switcher — use correct slug per locale
+  const blogMatch = pathname.match(/^\/blog\/(.+)$/);
+  const currentBlogSlug = blogMatch ? blogMatch[1] : null;
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const srHref = useMemo(() => {
+    if (!currentBlogSlug) return pathname;
+    const srSlug = getAlternateSlug(currentBlogSlug, "sr");
+    return `/blog/${srSlug}` as any;
+  }, [currentBlogSlug, pathname]);
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const enHref = useMemo(() => {
+    if (!currentBlogSlug) return pathname;
+    const enSlug = getAlternateSlug(currentBlogSlug, "en");
+    return `/blog/${enSlug}` as any;
+  }, [currentBlogSlug, pathname]);
 
   const navItems = useMemo(() => [
     { label: t("nav.home"), href: "/" as const },
@@ -124,7 +143,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <div className="flex items-center gap-2 text-sm font-semibold border-2 border-gray-900 rounded-full px-3 py-1">
               <Link
-                href={pathname}
+                href={srHref}
                 locale="sr"
                 className={locale === "sr" ? "text-primary" : "text-gray-600"}
               >
@@ -132,7 +151,7 @@ export function Header() {
               </Link>
               <span className="text-gray-400">/</span>
               <Link
-                href={pathname}
+                href={enHref}
                 locale="en"
                 className={locale === "en" ? "text-primary" : "text-gray-600"}
               >
@@ -198,7 +217,7 @@ export function Header() {
             </div>
             <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold border-2 border-gray-900 rounded-full px-3 py-2">
               <Link
-                href={pathname}
+                href={srHref}
                 locale="sr"
                 className={locale === "sr" ? "text-primary" : "text-gray-600"}
                 onClick={() => setMobileMenuOpen(false)}
@@ -207,7 +226,7 @@ export function Header() {
               </Link>
               <span className="text-gray-400">/</span>
               <Link
-                href={pathname}
+                href={enHref}
                 locale="en"
                 className={locale === "en" ? "text-primary" : "text-gray-600"}
                 onClick={() => setMobileMenuOpen(false)}

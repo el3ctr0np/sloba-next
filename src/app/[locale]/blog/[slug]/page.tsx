@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { notFound, redirect } from "next/navigation";
+import { TableOfContents } from "@/components/blog/TableOfContents";
 import {
   getPost,
   getAllSlugs,
@@ -533,7 +534,8 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="container-custom px-4 -mt-16">
           <div className="grid grid-cols-1 lg:grid-cols-[280px,1fr] gap-8">
             <aside className="hidden lg:block">
-              <div className="sticky top-24">
+              <div className="sticky top-24 space-y-4">
+                <TableOfContents locale={locale} />
                 <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
                   <div className="text-sm uppercase tracking-wide text-gray-500">
                     {locale === "en" ? "Free analysis" : "Besplatna analiza"}

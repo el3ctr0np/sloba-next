@@ -60,6 +60,12 @@ export default function KolikoKostaGoogleAdsPost() {
         <li><strong>Industrija</strong> — osiguranje i advokati plaćaju 10x više od prodavnica odeće</li>
         <li><strong>Geografija</strong> — Srbija je jeftinija od Nemačke, ali skuplja od Makedonije</li>
       </ul>
+      <p className="text-sm text-gray-500 mt-3">
+        Više o aukcijskom sistemu pročitajte u{" "}
+        <a href="https://support.google.com/google-ads/answer/1704342" target="_blank" rel="noopener noreferrer" className="underline">
+          Google Ads Help Center-u
+        </a>.
+      </p>
 
       <h3>Modeli naplate u Google Ads-u</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -437,7 +443,7 @@ export default function KolikoKostaGoogleAdsPost() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Proverite CPC u vašoj industriji</strong> <span className="text-gray-500">kroz Keyword Planner (besplatan u Google Ads)</span></div>
+            <div><strong>Proverite CPC u vašoj industriji</strong> <span className="text-gray-500">kroz{" "}<a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a> (besplatan u Google Ads)</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
