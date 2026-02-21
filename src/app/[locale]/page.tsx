@@ -7,6 +7,7 @@ import {
   FinalCTA
 } from "@/components/sections";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -14,18 +15,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   if (locale === "en") {
-    return {
+    return buildMetadata({
       title: "Google Ads Consultant | 9+ Years, 50+ Brands — Slobodan Jelisavac",
-      description:
-        "Expert Google Ads management for eCommerce, B2B and SaaS brands. 3.7x average ROAS, 50+ brands across 6+ countries. Book a free consultation.",
-    };
+      description: "Expert Google Ads management for eCommerce, B2B and SaaS brands. 3.7x average ROAS, 50+ brands across 6+ countries. Book a free consultation.",
+      locale,
+      path: "",
+      ogImage: "/og/homepage.png",
+    });
   }
 
-  return {
+  return buildMetadata({
     title: "Google Ads ekspert sa 9+ godina iskustva | Slobodan Jelisavac",
-    description:
-      "Google Ads upravljanje za eCommerce, B2B i SaaS brendove. 3.7x ROAS, 50+ brendova iz 6+ zemalja. Zakažite besplatnu konsultaciju.",
-  };
+    description: "Google Ads upravljanje za eCommerce, B2B i SaaS brendove. 3.7x ROAS, 50+ brendova iz 6+ zemalja. Zakažite besplatnu konsultaciju.",
+    locale,
+    path: "",
+    ogImage: "/og/homepage.png",
+  });
 }
 
 export default async function Home({ params }: Props) {
@@ -36,47 +41,90 @@ export default async function Home({ params }: Props) {
       ? {
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
+          "@id": "https://www.slobodan-jelisavac.com/#business",
           name: "Slobodan Jelisavac - Google Ads Consultant",
           description:
             "Google Ads consultant with 9+ years of experience managing campaigns for eCommerce, B2B and SaaS brands across the UK, US and EU.",
           url: "https://www.slobodan-jelisavac.com/en",
+          email: "slobodan@slobodan-jelisavac.com",
           areaServed: [
-            "United States",
-            "United Kingdom",
-            "European Union",
-            "Australia",
+            { "@type": "Country", name: "United States" },
+            { "@type": "Country", name: "United Kingdom" },
+            { "@type": "Country", name: "Australia" },
+            { "@type": "Country", name: "Germany" },
+            { "@type": "Country", name: "Serbia" },
           ],
           serviceType: [
             "Google Ads Management",
+            "Google Ads Audit",
             "Google Shopping",
             "Performance Max",
             "Search Campaigns",
             "Remarketing",
             "YouTube Ads",
+            "Performance Marketing",
+          ],
+          knowsAbout: [
+            "Google Ads",
+            "PPC",
+            "eCommerce Marketing",
+            "B2B Lead Generation",
+            "SaaS Marketing",
+          ],
+          sameAs: [
+            "https://www.linkedin.com/in/slobodan-jelisavac/",
           ],
         }
       : {
           "@context": "https://schema.org",
-          "@type": "ProfessionalService",
+          "@type": ["ProfessionalService", "LocalBusiness"],
+          "@id": "https://www.slobodan-jelisavac.com/#business",
           name: "Slobodan Jelisavac - Google Ads Strategist",
           description:
-            "Google Ads strategist sa decenijom iskustva u radu sa premium brendovima.",
+            "Google Ads strategist sa decenijom iskustva u radu sa premium brendovima. Specijalizovan za eCommerce, B2B i SaaS.",
           url: "https://www.slobodan-jelisavac.com/sr",
+          telephone: "+381692603998",
+          email: "slobodan@slobodan-jelisavac.com",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Batajnica",
+            addressLocality: "Beograd",
+            addressRegion: "Vojvodina",
+            postalCode: "11273",
+            addressCountry: "RS",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 44.8989,
+            longitude: 20.2842,
+          },
+          priceRange: "€200-€800/mesečno",
           areaServed: [
-            "Serbia",
-            "Croatia",
-            "Slovenia",
-            "Bosnia and Herzegovina",
-            "UK",
-            "EU",
+            { "@type": "Country", name: "Serbia" },
+            { "@type": "Country", name: "Croatia" },
+            { "@type": "Country", name: "Slovenia" },
+            { "@type": "Country", name: "Bosnia and Herzegovina" },
+            { "@type": "Country", name: "United Kingdom" },
           ],
           serviceType: [
             "Google Ads Management",
+            "Google Ads Audit",
             "Google Shopping",
             "Performance Max",
             "Search Campaigns",
             "Remarketing",
             "YouTube Ads",
+            "Performance Marketing",
+          ],
+          knowsAbout: [
+            "Google Ads",
+            "PPC",
+            "eCommerce Marketing",
+            "B2B Lead Generation",
+            "SaaS Marketing",
+          ],
+          sameAs: [
+            "https://www.linkedin.com/in/slobodan-jelisavac/",
           ],
         };
 
@@ -130,11 +178,43 @@ export default async function Home({ params }: Props) {
           { value: "6+", label: "zemalja" },
         ];
 
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.slobodan-jelisavac.com/#organization",
+    name: "Slobodan Jelisavac",
+    url: "https://www.slobodan-jelisavac.com",
+    logo: "https://www.slobodan-jelisavac.com/og/homepage.png",
+    description:
+      locale === "en"
+        ? "Google Ads consultant with 9+ years of experience managing campaigns for eCommerce, B2B and SaaS brands."
+        : "Google Ads konsultant sa 9+ godina iskustva u vođenju kampanja za eCommerce, B2B i SaaS brendove.",
+    founder: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      jobTitle: "Google Ads Strategist",
+      url: "https://www.slobodan-jelisavac.com",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "slobodan@slobodan-jelisavac.com",
+      contactType: "customer service",
+      availableLanguage: ["Serbian", "English"],
+    },
+    sameAs: [
+      "https://www.linkedin.com/in/slobodan-jelisavac/",
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
       <Hero {...heroProps} />
 

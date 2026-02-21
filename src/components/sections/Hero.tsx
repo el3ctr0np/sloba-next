@@ -21,10 +21,14 @@ export function Hero({
   trustBadges = []
 }: HeroProps) {
   return (
-    <section
-      className="relative py-12 md:py-20 px-4 bg-gray-50 bg-cover bg-[right_center]"
-      style={{ backgroundImage: "url('/hero-bg.webp')" }}
-    >
+    <section className="relative py-12 md:py-20 px-4 bg-gray-50 overflow-hidden">
+      <Image
+        src="/hero-bg.webp"
+        alt=""
+        fill
+        className="object-cover object-right-center"
+        priority
+      />
       <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-900/50 to-transparent" />
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -10,18 +11,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   if (locale === "en") {
-    return {
+    return buildMetadata({
       title: "Thank You | Slobodan Jelisavac",
-      description:
-        "We received your inquiry. Book a slot for a free Google Ads consultation."
-    };
+      description: "We received your inquiry. Book a slot for a free Google Ads consultation.",
+      locale,
+      path: "/contact/thank-you",
+      srPath: "/kontakt/hvala",
+    });
   }
 
-  return {
+  return buildMetadata({
     title: "Hvala na upitu | Slobodan Jelisavac",
-    description:
-      "Primili smo vaš upit. Zakažite termin za besplatnu Google Ads konsultaciju."
-  };
+    description: "Primili smo vaš upit. Zakažite termin za besplatnu Google Ads konsultaciju.",
+    locale,
+    path: "/kontakt/hvala",
+  });
 }
 
 const getPersonSchema = () => ({

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { caseStudies } from "./data";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -11,18 +12,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   if (locale === "en") {
-    return {
+    return buildMetadata({
       title: "Google Ads Case Studies | Real Results — Slobodan Jelisavac",
-      description:
-        "Real Google Ads results: 3.7x ROI for luxury furniture, 12x revenue growth for eyewear, 3x more leads for acoustic pods. View case studies."
-    };
+      description: "Real Google Ads results: 3.7x ROI for luxury furniture, 12x revenue growth for eyewear, 3x more leads for acoustic pods. View case studies.",
+      locale,
+      path: "/case-studies",
+    });
   }
 
-  return {
+  return buildMetadata({
     title: "Case Studies | Google Ads Rezultati — Slobodan Jelisavac",
-    description:
-      "Realni Google Ads rezultati: 3.7x ROI za luksuzni nameštaj, 12x rast prihoda za naočare, 3x više leadova za akustične kabine. Pogledajte case studies."
-  };
+    description: "Realni Google Ads rezultati: 3.7x ROI za luksuzni nameštaj, 12x rast prihoda za naočare, 3x više leadova za akustične kabine. Pogledajte case studies.",
+    locale,
+    path: "/case-studies",
+  });
 }
 
 const personSchema = {

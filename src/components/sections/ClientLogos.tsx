@@ -48,6 +48,7 @@ export function ClientLogos() {
                 alt={logo.alt}
                 width={160}
                 height={60}
+                loading="lazy"
                 className="h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
               />
             </div>

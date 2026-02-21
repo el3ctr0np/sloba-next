@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
-import { caseStudies, getCaseStudy } from "../data";
+import { caseStudies, getCaseStudy, getCaseStudiesByLocale } from "../data";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 };
 
 export async function generateStaticParams() {
@@ -13,22 +13,42 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const cs = getCaseStudy(slug);
+  const { slug, locale } = await params;
+  const cs = getCaseStudy(slug, locale);
   if (!cs) return { title: "Case Study Not Found" };
+
+  const isEn = locale === "en";
+  const seeHow = isEn ? "See how." : "Pogledajte kako.";
 
   return {
     title: `${cs.company} Case Study | ${cs.highlight} — Slobodan Jelisavac`,
-    description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}. ${cs.results[1]?.label}: ${cs.results[1]?.value}. Pogledajte kako.`
+    description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}. ${cs.results[1]?.label}: ${cs.results[1]?.value}. ${seeHow}`,
+    alternates: {
+      canonical: `https://www.slobodan-jelisavac.com/${locale}/case-studies/${slug}`,
+      languages: {
+        sr: `https://www.slobodan-jelisavac.com/sr/case-studies/${slug}`,
+        en: `https://www.slobodan-jelisavac.com/en/case-studies/${slug}`,
+        "x-default": `https://www.slobodan-jelisavac.com/sr/case-studies/${slug}`,
+      },
+    },
+    openGraph: {
+      title: `${cs.company} Case Study | ${cs.highlight}`,
+      description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}. ${cs.results[1]?.label}: ${cs.results[1]?.value}.`,
+      url: `https://www.slobodan-jelisavac.com/${locale}/case-studies/${slug}`,
+      siteName: "Slobodan Jelisavac",
+      type: "article",
+    },
   };
 }
 
 export default async function CaseStudyPage({ params }: Props) {
-  const { slug } = await params;
-  const cs = getCaseStudy(slug);
+  const { slug, locale } = await params;
+  const cs = getCaseStudy(slug, locale);
   if (!cs) notFound();
 
-  const otherStudies = caseStudies.filter((s) => s.slug !== slug);
+  const isEn = locale === "en";
+  const allStudies = getCaseStudiesByLocale(locale);
+  const otherStudies = allStudies.filter((s) => s.slug !== slug);
 
   const personSchema = {
     "@context": "https://schema.org",
@@ -38,6 +58,34 @@ export default async function CaseStudyPage({ params }: Props) {
     jobTitle: "Google Ads Strategist"
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${cs.company} Case Study | ${cs.highlight}`,
+    description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}.`,
+    datePublished: "2026-01-26",
+    author: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      url: "https://www.slobodan-jelisavac.com",
+      jobTitle: "Google Ads Strategist",
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      url: "https://www.slobodan-jelisavac.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.slobodan-jelisavac.com/${locale}/case-studies/${slug}`,
+    },
+    inLanguage: locale === "en" ? "en" : "sr",
+    mentions: {
+      "@type": "Organization",
+      name: cs.company,
+    },
+  };
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -45,26 +93,30 @@ export default async function CaseStudyPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Početna",
-        item: "https://www.slobodan-jelisavac.com"
+        name: isEn ? "Home" : "Početna",
+        item: `https://www.slobodan-jelisavac.com/${locale}`
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Case Studies",
-        item: "https://www.slobodan-jelisavac.com/case-studies"
+        item: `https://www.slobodan-jelisavac.com/${locale}/case-studies`
       },
       {
         "@type": "ListItem",
         position: 3,
         name: cs.company,
-        item: `https://www.slobodan-jelisavac.com/case-studies/${cs.slug}`
+        item: `https://www.slobodan-jelisavac.com/${locale}/case-studies/${cs.slug}`
       }
     ]
   };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
@@ -87,7 +139,7 @@ export default async function CaseStudyPage({ params }: Props) {
                       href="/"
                       className="hover:text-white transition-colors"
                     >
-                      Početna
+                      {isEn ? "Home" : "Početna"}
                     </Link>
                   </li>
                   <li>/</li>
@@ -126,10 +178,10 @@ export default async function CaseStudyPage({ params }: Props) {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button href="/kontakt" variant="secondary">
-                  Želim slične rezultate
+                  {isEn ? "I want similar results" : "Želim slične rezultate"}
                 </Button>
                 <Button href="/case-studies" variant="primary">
-                  Svi case studies
+                  {isEn ? "All case studies" : "Svi case studies"}
                 </Button>
               </div>
             </div>
@@ -138,7 +190,7 @@ export default async function CaseStudyPage({ params }: Props) {
             <div className="hidden md:flex items-center justify-center">
               <div className="w-full aspect-[4/3] max-w-lg rounded-2xl bg-slate-800 border-2 border-slate-700 flex items-center justify-center">
                 <span className="text-slate-500 text-sm">
-                  {cs.company} — slika ovde
+                  {cs.company} — {isEn ? "image here" : "slika ovde"}
                 </span>
               </div>
             </div>
@@ -150,7 +202,7 @@ export default async function CaseStudyPage({ params }: Props) {
       <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-heading font-bold mb-4">
-            O kompaniji {cs.company}
+            {isEn ? `About ${cs.company}` : `O kompaniji ${cs.company}`}
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             {cs.brandIntro}
@@ -162,7 +214,7 @@ export default async function CaseStudyPage({ params }: Props) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 mt-4 text-slate-900 font-semibold hover:underline"
             >
-              Posetite {cs.company} →
+              {isEn ? `Visit ${cs.company}` : `Posetite ${cs.company}`} →
             </a>
           )}
         </div>
@@ -185,7 +237,7 @@ export default async function CaseStudyPage({ params }: Props) {
       {/* Izazov */}
       <Section>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-heading font-bold mb-6">Izazov</h2>
+          <h2 className="text-3xl font-heading font-bold mb-6">{isEn ? "Challenge" : "Izazov"}</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             {cs.challenge}
           </p>
@@ -195,7 +247,7 @@ export default async function CaseStudyPage({ params }: Props) {
       {/* Strategija + Taktike */}
       <Section background="gray">
         <div className="max-w-3xl mx-auto mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-6">Strategija</h2>
+          <h2 className="text-3xl font-heading font-bold mb-6">{isEn ? "Strategy" : "Strategija"}</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             {cs.strategy}
           </p>
@@ -215,7 +267,7 @@ export default async function CaseStudyPage({ params }: Props) {
       {/* Rezultati */}
       <Section>
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">Rezultati</h2>
+          <h2 className="text-3xl font-heading font-bold mb-4">{isEn ? "Results" : "Rezultati"}</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {cs.results.map((result) => (
@@ -259,7 +311,7 @@ export default async function CaseStudyPage({ params }: Props) {
       <Section background={cs.testimonial ? undefined : "gray"}>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            Ostali case studies
+            {isEn ? "Other case studies" : "Ostali case studies"}
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -293,18 +345,19 @@ export default async function CaseStudyPage({ params }: Props) {
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4 text-white">
-            Želite slične rezultate za vaš biznis?
+            {isEn ? "Want similar results for your business?" : "Želite slične rezultate za vaš biznis?"}
           </h2>
           <p className="text-slate-300 mb-8">
-            Zakažite besplatnu konsultaciju i razgovarajmo o tome kako Google
-            Ads može raditi za vas.
+            {isEn
+              ? "Book a free consultation and let's discuss how Google Ads can work for you."
+              : "Zakažite besplatnu konsultaciju i razgovarajmo o tome kako Google Ads može raditi za vas."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              Zakažite konsultaciju
+              {isEn ? "Book a consultation" : "Zakažite konsultaciju"}
             </Button>
             <Button href="/usluge" variant="primary">
-              Pogledajte usluge
+              {isEn ? "View services" : "Pogledajte usluge"}
             </Button>
           </div>
         </div>

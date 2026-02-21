@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Card } from "@/components/ui";
 import { slugMap } from "./[slug]/posts/slug-map";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -11,18 +12,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   if (locale === "en") {
-    return {
+    return buildMetadata({
       title: "Google Ads Guide: From Beginner to Expert | Slobodan Jelisavac",
-      description:
-        "Free Google Ads guide with 15 detailed tutorials in 5 chapters. From basics and keywords to remarketing and advanced optimization."
-    };
+      description: "Free Google Ads guide with 15 detailed tutorials in 5 chapters. From basics and keywords to remarketing and advanced optimization.",
+      locale,
+      path: "/blog",
+    });
   }
 
-  return {
+  return buildMetadata({
     title: "Google Ads Vodič: Od Početnika do Eksperta | Slobodan Jelisavac",
-    description:
-      "Besplatan Google Ads vodič sa 15 detaljnih vodiča u 5 poglavlja. Od osnova i ključnih reči do remarketing-a i napredne optimizacije."
-  };
+    description: "Besplatan Google Ads vodič sa 15 detaljnih vodiča u 5 poglavlja. Od osnova i ključnih reči do remarketing-a i napredne optimizacije.",
+    locale,
+    path: "/blog",
+  });
 }
 
 type ChapterPost = {

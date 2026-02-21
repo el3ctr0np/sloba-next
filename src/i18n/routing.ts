@@ -85,6 +85,12 @@ export const routing = defineRouting({
     "/blog": "/blog",
     "/blog/[slug]": "/blog/[slug]",
 
+    // Landing Pages (Meta Ads - noindex)
+    "/lp/google-ads": {
+      sr: "/lp/google-ads",
+      en: "/lp/google-ads"
+    },
+
     // Case Studies
     "/case-studies": "/case-studies",
     "/case-studies/[slug]": "/case-studies/[slug]"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Inter, Poppins } from "next/font/google";
 import Script from "next/script";
+import MetaPixel from "@/components/MetaPixel";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,6 +33,7 @@ export default async function RootLayout({
     <html lang={locale} className={`${inter.variable} ${poppins.variable}`}>
       <head>
         <link rel="preload" href="/hero-bg.webp" as="image" type="image/webp" />
+        <link rel="preload" href="/hero.webp" as="image" type="image/webp" />
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -50,6 +52,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {children}
+        <MetaPixel />
       </body>
     </html>
   );

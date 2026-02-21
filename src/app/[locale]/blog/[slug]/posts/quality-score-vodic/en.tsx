@@ -525,6 +525,11 @@ export default function QualityScoreGuideEN() {
       {/* ── Related guides ── */}
       <h2>Related Guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
+        <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Management</p>
+          <p className="text-xs text-gray-500 mb-0">Improve Quality Score with professional management</p>
+        </Link>
+
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Keywords — Complete Guide</p>
           <p className="text-xs text-gray-500 mb-0">From research to keyword optimization</p>

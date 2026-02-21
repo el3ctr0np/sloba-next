@@ -784,6 +784,11 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <h2>Povezani vodi&#x10D;i</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
+        <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Profesionalni Google Ads audit</p>
+          <p className="text-xs text-gray-500 mb-0">Detaljna analiza va&#x161;eg naloga sa akcionim planom</p>
+        </Link>
+
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking vodi&#x10D;</p>
           <p className="text-xs text-gray-500 mb-0">Kako postaviti pra&#x107;enje konverzija i troubleshoot-ovati probleme</p>

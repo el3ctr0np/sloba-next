@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -8,20 +9,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   if (locale === "en") {
-    return {
-      title:
-        "About — Slobodan Jelisavac | Google Ads Specialist | 9+ Years",
-      description:
-        "Google Ads freelancer and PPC consultant with 9+ years experience. UK Search Awards winner, 50+ brands in 6+ countries. Work directly with the expert — no middlemen."
-    };
+    return buildMetadata({
+      title: "About — Slobodan Jelisavac | Google Ads Specialist | 9+ Years",
+      description: "Google Ads freelancer and PPC consultant with 9+ years experience. UK Search Awards winner, 50+ brands in 6+ countries. Work directly with the expert — no middlemen.",
+      locale,
+      path: "/about",
+      srPath: "/o-meni",
+      ogImage: "/og/o-meni.png",
+    });
   }
 
-  return {
-    title:
-      "O Meni — Slobodan Jelisavac | Google Ads Strategist | 9+ Godina Iskustva",
-    description:
-      "Google Ads strategist sa 9+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja. Direktan rad sa ekspertom — bez posrednika."
-  };
+  return buildMetadata({
+    title: "O Meni — Slobodan Jelisavac | Google Ads Strategist | 9+ Godina Iskustva",
+    description: "Google Ads strategist sa 9+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja. Direktan rad sa ekspertom — bez posrednika.",
+    locale,
+    path: "/o-meni",
+    srPath: "/o-meni",
+    ogImage: "/og/o-meni.png",
+  });
 }
 
 export default async function AboutPage({ params }: Props) {

@@ -646,6 +646,11 @@ export default function GoogleAdsVsMetaAdsEN() {
       {/* ── Connected guides ── */}
       <h3 className="font-heading font-bold text-lg mb-3">Related guides</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
+        <Link href="/usluge/performance-marketing" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Marketing</p>
+          <p className="text-xs text-gray-500 mb-0">Campaign management across all platforms</p>
+        </Link>
+
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             Remarketing — Complete guide

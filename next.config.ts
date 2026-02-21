@@ -17,11 +17,7 @@ const nextConfig: NextConfig = {
         destination: "/:locale/usluge",
         permanent: true
       },
-      {
-        source: "/:locale/usluge/meta-oglasavanje",
-        destination: "/:locale/usluge",
-        permanent: true
-      }
+      // meta-oglasavanje redirect removed — LP page now exists at /lp/google-ads
     ];
   }
 };

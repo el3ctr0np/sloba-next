@@ -519,6 +519,10 @@ export default function KolikoKostaGoogleAdsPost() {
       {/* ── Povezani vodiči ── */}
       <h2>Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
+        <Link href="/usluge/konsultacije" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Konsultacije</p>
+          <p className="text-xs text-gray-500 mb-0">Personalizovana analiza troškova i strategije za vaš biznis</p>
+        </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Agencija vs. Freelancer vs. In-House</p>
           <p className="text-xs text-gray-500 mb-0">Detaljno poređenje svih opcija za upravljanje kampanjama</p>

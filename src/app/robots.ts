@@ -4,8 +4,9 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/"
+      allow: "/",
+      disallow: ""
     },
-    sitemap: "https://slobodan-jelisavac.com/sitemap.xml"
+    sitemap: "https://www.slobodan-jelisavac.com/sitemap.xml"
   };
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { ContactForm } from "@/components/sections/ContactForm";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -9,20 +10,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   if (locale === "en") {
-    return {
-      title:
-        "Contact | Free Google Ads Consultation — Slobodan Jelisavac",
-      description:
-        "Book a free Google Ads consultation. No obligation, no pressure — just an honest conversation about how Google Ads can work for your business. Hire a Google Ads expert with 9+ years experience."
-    };
+    return buildMetadata({
+      title: "Contact | Free Google Ads Consultation — Slobodan Jelisavac",
+      description: "Book a free Google Ads consultation. No obligation, no pressure — just an honest conversation about how Google Ads can work for you.",
+      locale,
+      path: "/contact",
+      srPath: "/kontakt",
+    });
   }
 
-  return {
-    title:
-      "Kontakt | Besplatna Google Ads Konsultacija — Slobodan Jelisavac",
-    description:
-      "Zakažite besplatnu Google Ads konsultaciju. Bez obaveze, bez pritiska — samo konkretan razgovor o tome kako poboljšati vaše kampanje."
-  };
+  return buildMetadata({
+    title: "Kontakt | Besplatna Google Ads Konsultacija — Slobodan Jelisavac",
+    description: "Zakažite besplatnu Google Ads konsultaciju. Bez obaveze, bez pritiska — samo konkretan razgovor o tome kako poboljšati vaše kampanje.",
+    locale,
+    path: "/kontakt",
+  });
 }
 
 export default async function ContactPage({ params }: Props) {

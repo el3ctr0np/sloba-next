@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { notFound, redirect } from "next/navigation";
 import {
@@ -43,6 +44,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const enSlug =
     locale === "en" ? slug : getAlternateSlug(slug, "en");
 
+  const ogImageUrl = post.featuredImage
+    ? `https://www.slobodan-jelisavac.com${post.featuredImage}`
+    : `https://www.slobodan-jelisavac.com/og/homepage.png`;
+
   return {
     title: `${post.title} | Slobodan Jelisavac`,
     description: post.metaDescription,
@@ -50,9 +55,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
       languages: {
         sr: `https://www.slobodan-jelisavac.com/sr/blog/${srSlug}`,
-        en: `https://www.slobodan-jelisavac.com/en/blog/${enSlug}`
+        en: `https://www.slobodan-jelisavac.com/en/blog/${enSlug}`,
+        "x-default": `https://www.slobodan-jelisavac.com/sr/blog/${srSlug}`
       }
-    }
+    },
+    openGraph: {
+      title: post.title,
+      description: post.metaDescription,
+      url: `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
+      siteName: "Slobodan Jelisavac",
+      locale: locale === "en" ? "en_US" : "sr_RS",
+      type: "article",
+      publishedTime: post.date,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.metaDescription,
+      images: [ogImageUrl],
+    },
   };
 }
 
@@ -278,12 +307,109 @@ const faqSchemaRemarketingEN = {
   ]
 };
 
+const faqSchemaKolikoKostaSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Koliko minimalno treba uložiti u Google Ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Tehnički minimum je €1 dnevno, ali za smislene rezultate računajte na minimum €300-500 mesečno za lokalne biznise i €1,000+ za eCommerce ili B2B."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Da li se Google Ads isplati za mali biznis?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Da, ako imate jasnu vrednost po kupcu i konkurentne marže. Male firme često imaju prednost jer su fleksibilnije i mogu brže optimizovati."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Koliko vremena treba da Google Ads počne da donosi rezultate?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Prve indikacije vidite za 2-4 nedelje. Prave rezultate i optimizovan nalog za 2-3 meseca. Stabilne performanse za 4-6 meseci."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Zašto su cene toliko različite po industrijama?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zbog konkurencije i vrednosti konverzije. Advokat može da plati €50 za klik jer jedan klijent vredi €5,000. Prodavnica majica ne može."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Da li Google Ads košta više nego Meta Ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Generalno da, CPC na Google-u je viši. Ali intent korisnika je jači — neko ko pretražuje 'kupi X' je bliži kupovini od nekoga ko scrolla Instagram."
+      }
+    }
+  ]
+};
+
+const faqSchemaKolikoKostaEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the minimum investment for Google Ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The technical minimum is $1/day, but for meaningful results expect to spend at least $300-500/month for local businesses and $1,000+ for eCommerce or B2B."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Is Google Ads worth it for small businesses?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, if you have a clear customer value and competitive margins. Small businesses often have an advantage because they're more flexible and can optimize faster."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "How long does it take for Google Ads to show results?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "First indicators appear within 2-4 weeks. Real results and an optimized account in 2-3 months. Stable performance in 4-6 months."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Why are costs so different across industries?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Due to competition and conversion value. A lawyer can pay $50 per click because one client is worth $5,000. A t-shirt shop cannot."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Is Google Ads more expensive than Meta Ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Generally yes, CPC on Google is higher. But user intent is stronger — someone searching 'buy X' is closer to purchasing than someone scrolling Instagram."
+      }
+    }
+  ]
+};
+
 function getFaqSchema(slug: string, locale: string) {
   if (slug === "google-ads-vs-meta") {
     return locale === "en" ? faqSchemaGoogleVsMetaEN : faqSchemaGoogleVsMetaSR;
   }
   if (slug === "remarketing-vodic") {
     return locale === "en" ? faqSchemaRemarketingEN : faqSchemaRemarketingSR;
+  }
+  if (slug === "koliko-kosta-google-ads") {
+    return locale === "en" ? faqSchemaKolikoKostaEN : faqSchemaKolikoKostaSR;
   }
   return null;
 }
@@ -306,8 +432,69 @@ export default async function BlogPostPage({ params }: Props) {
   const canonicalSlug = getCanonicalSlug(slug);
   const faqSchema = getFaqSchema(canonicalSlug, locale);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.metaDescription,
+    ...(post.featuredImage && {
+      image: `https://www.slobodan-jelisavac.com${post.featuredImage}`,
+    }),
+    datePublished: post.date,
+    dateModified: post.dateModified,
+    author: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      url: "https://www.slobodan-jelisavac.com",
+      jobTitle: "Google Ads Strategist",
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      url: "https://www.slobodan-jelisavac.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
+    },
+    inLanguage: locale === "en" ? "en" : "sr",
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: locale === "en" ? "Home" : "Početna",
+        item: `https://www.slobodan-jelisavac.com/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `https://www.slobodan-jelisavac.com/${locale}/blog`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
+      },
+    ],
+  };
+
   return (
     <div className="bg-slate-950 text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {faqSchema && (
         <script
           type="application/ld+json"
@@ -332,6 +519,12 @@ export default async function BlogPostPage({ params }: Props) {
             {post.category}
             <span className="mx-2">|</span>
             {post.date}
+            {post.readingTime && (
+              <>
+                <span className="mx-2">|</span>
+                {post.readingTime}
+              </>
+            )}
           </p>
         </div>
       </section>
@@ -368,10 +561,22 @@ export default async function BlogPostPage({ params }: Props) {
             </aside>
 
             <article className="bg-white border-2 border-gray-900 rounded-xl p-6 md:p-12 shadow-card">
+              {post.featuredImage && (
+                <div className="mb-8 -mx-6 md:-mx-12 -mt-6 md:-mt-12">
+                  <Image
+                    src={post.featuredImage}
+                    alt={post.title}
+                    width={1200}
+                    height={630}
+                    className="w-full h-auto rounded-t-xl"
+                    priority
+                  />
+                </div>
+              )}
               <div className="text-sm text-gray-500 mb-4">
-                {post.category} · {post.date}
+                {post.category} · {post.date}{post.readingTime && ` · ${post.readingTime}`}
               </div>
-              <div className="prose prose-slate max-w-none text-gray-700">
+              <div className="prose prose-slate prose-lg max-w-none text-gray-700 prose-headings:scroll-mt-24 prose-h2:mt-12 prose-h2:mb-6 prose-h3:mt-8 prose-h3:mb-4 prose-p:mb-5 prose-p:leading-relaxed prose-li:leading-relaxed prose-hr:my-10">
                 {post.content}
               </div>
             </article>
