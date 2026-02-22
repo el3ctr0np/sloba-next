@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Section, Card, Button } from "@/components/ui";
+import { ShoppingCart, Building2, Monitor } from "lucide-react";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -113,45 +115,48 @@ export default async function ServicesPage({ params }: Props) {
     }
   ] as const);
 
-  const industryServices = locale === "en" ? ([
+  const iconProps = { size: 28, strokeWidth: 1.5 } as const;
+
+  type ServiceHref = "/usluge/google-ads-za-ecommerce" | "/usluge/google-ads-za-b2b" | "/usluge/google-ads-za-saas";
+  const industryServices: { title: string; href: ServiceHref; desc: string; icon: ReactNode }[] = locale === "en" ? [
     {
       title: "Google Ads for eCommerce",
       href: "/usluge/google-ads-za-ecommerce",
       desc: "Shopping, Performance Max, and full-funnel approach for online stores seeking higher revenue and better ROAS.",
-      icon: "🛒"
+      icon: <ShoppingCart {...iconProps} className="text-gray-900" />
     },
     {
       title: "Google Ads for B2B",
       href: "/usluge/google-ads-za-b2b",
       desc: "Lead generation strategies, account-based targeting, and lead qualification for B2B companies.",
-      icon: "🏢"
+      icon: <Building2 {...iconProps} className="text-gray-900" />
     },
     {
       title: "Google Ads for SaaS",
       href: "/usluge/google-ads-za-saas",
       desc: "Trial user acquisition and demo requests with controlled CAC for SaaS platforms.",
-      icon: "💻"
+      icon: <Monitor {...iconProps} className="text-gray-900" />
     }
-  ] as const) : ([
+  ] : [
     {
       title: "Google Ads za eCommerce",
       href: "/usluge/google-ads-za-ecommerce",
       desc: "Shopping, Performance Max i full-funnel pristup za online prodavnice koje žele veći prihod i bolji ROAS.",
-      icon: "🛒"
+      icon: <ShoppingCart {...iconProps} className="text-gray-900" />
     },
     {
       title: "Google Ads za B2B",
       href: "/usluge/google-ads-za-b2b",
       desc: "Lead generation strategije, account-based targeting i kvalifikacija leadova za B2B kompanije.",
-      icon: "🏢"
+      icon: <Building2 {...iconProps} className="text-gray-900" />
     },
     {
       title: "Google Ads za SaaS",
       href: "/usluge/google-ads-za-saas",
       desc: "Akvizicija trial korisnika i demo zahteva uz kontrolu CAC-a za SaaS platforme.",
-      icon: "💻"
+      icon: <Monitor {...iconProps} className="text-gray-900" />
     }
-  ] as const);
+  ];
 
   const entryPoints = locale === "en" ? ([
     {
@@ -607,7 +612,7 @@ export default async function ServicesPage({ params }: Props) {
           {industryServices.map((service) => (
             <Link key={service.href} href={service.href} className="group">
               <Card className="h-full">
-                <div className="text-3xl mb-3">{service.icon}</div>
+                <div className="mb-3">{service.icon}</div>
                 <h3 className="font-heading font-bold text-xl mb-2">
                   {service.title}
                 </h3>

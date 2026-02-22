@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { UserCheck, Target, Building2, Briefcase } from "lucide-react";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -198,29 +200,31 @@ export default async function KonsultacijePage({ params }: Props) {
           }
         ];
 
-  const audiences =
+  const iconProps = { size: 28, strokeWidth: 1.5 } as const;
+
+  const audiences: { icon: ReactNode; title: string; description: string }[] =
     locale === "en"
       ? [
           {
-            icon: "👨‍💼",
+            icon: <UserCheck {...iconProps} className="text-gray-900" />,
             title: "Marketing managers",
             description:
               "Strategy validation, budget justification, agency evaluation."
           },
           {
-            icon: "🎯",
+            icon: <Target {...iconProps} className="text-gray-900" />,
             title: "In-house PPC specialists",
             description:
               "Solving complex problems, second opinion, campaign optimization."
           },
           {
-            icon: "🏢",
+            icon: <Building2 {...iconProps} className="text-gray-900" />,
             title: "Agency owners",
             description:
               "Client project consultations, specialist input, white label support."
           },
           {
-            icon: "💼",
+            icon: <Briefcase {...iconProps} className="text-gray-900" />,
             title: "Founders & CEOs",
             description:
               "Understanding Google Ads, performance evaluation, strategic decisions."
@@ -228,25 +232,25 @@ export default async function KonsultacijePage({ params }: Props) {
         ]
       : [
           {
-            icon: "👨‍💼",
+            icon: <UserCheck {...iconProps} className="text-gray-900" />,
             title: "Marketing manageri",
             description:
               "Validacija strategije, budget justification, evaluacija agencija."
           },
           {
-            icon: "🎯",
+            icon: <Target {...iconProps} className="text-gray-900" />,
             title: "In-house PPC specijalisti",
             description:
               "Rešavanje kompleksnih problema, second opinion, optimizacija kampanja."
           },
           {
-            icon: "🏢",
+            icon: <Building2 {...iconProps} className="text-gray-900" />,
             title: "Agency owners",
             description:
               "Konsultacije za klijentske projekte, specialist input, white label podrška."
           },
           {
-            icon: "💼",
+            icon: <Briefcase {...iconProps} className="text-gray-900" />,
             title: "Founders i CEOs",
             description:
               "Razumevanje Google Ads-a, evaluacija performansi, strateške odluke."
@@ -799,7 +803,7 @@ export default async function KonsultacijePage({ params }: Props) {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {audiences.map((audience) => (
             <Card key={audience.title} className="h-full text-center">
-              <div className="text-4xl mb-3">{audience.icon}</div>
+              <div className="mb-3">{audience.icon}</div>
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {audience.title}
               </h3>

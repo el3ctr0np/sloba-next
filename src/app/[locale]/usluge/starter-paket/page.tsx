@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { HelpCircle, Banknote, BookOpen, Clock } from "lucide-react";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -61,29 +63,31 @@ export default async function StarterPaketPage({ params }: Props) {
           "Tražite agenciju koja će sve voditi umesto vas"
         ];
 
-  const problems =
+  const iconProps = { size: 28, strokeWidth: 1.5 } as const;
+
+  const problems: { icon: ReactNode; title: string; description: string }[] =
     locale === "en"
       ? [
           {
-            icon: "🤷",
+            icon: <HelpCircle {...iconProps} className="text-gray-900" />,
             title: "Don't know where to start",
             description:
               "The Google Ads interface is confusing. Campaigns, ad groups, keywords, bidding — everything seems complicated."
           },
           {
-            icon: "💸",
+            icon: <Banknote {...iconProps} className="text-gray-900" />,
             title: "Fear of wasting budget",
             description:
               "You're worried about launching campaigns that burn budget without results. You've read the horror stories."
           },
           {
-            icon: "📚",
+            icon: <BookOpen {...iconProps} className="text-gray-900" />,
             title: "Too many YouTube tutorials",
             description:
               "Every tutorial says something different. You don't know what actually works and what's outdated."
           },
           {
-            icon: "⏰",
+            icon: <Clock {...iconProps} className="text-gray-900" />,
             title: "Agencies are too expensive",
             description:
               "€500+ monthly for management is out of budget, but you want a professional approach."
@@ -91,25 +95,25 @@ export default async function StarterPaketPage({ params }: Props) {
         ]
       : [
           {
-            icon: "🤷",
+            icon: <HelpCircle {...iconProps} className="text-gray-900" />,
             title: "Ne znate odakle da počnete",
             description:
               "Google Ads interfejs je konfuzan. Kampanje, ad grupe, ključne reči, bidding — sve izgleda komplikovano."
           },
           {
-            icon: "💸",
+            icon: <Banknote {...iconProps} className="text-gray-900" />,
             title: "Strah od bacanja budžeta",
             description:
               "Plaši vas da pokrenete kampanje koje će spaliti budžet bez rezultata. Čitali ste priče o neuspesima."
           },
           {
-            icon: "📚",
+            icon: <BookOpen {...iconProps} className="text-gray-900" />,
             title: "Previše YouTube tutorijala",
             description:
               "Svaki tutorial kaže nešto različito. Ne znate šta zaista funkcioniše a šta je već zastarelo."
           },
           {
-            icon: "⏰",
+            icon: <Clock {...iconProps} className="text-gray-900" />,
             title: "Agencija je preskupa",
             description:
               "€500+ mesečno za upravljanje je van budžeta, ali želite profesionalan pristup."
@@ -727,7 +731,7 @@ export default async function StarterPaketPage({ params }: Props) {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {problems.map((problem) => (
             <Card key={problem.title} className="h-full">
-              <div className="text-3xl mb-3">{problem.icon}</div>
+              <div className="mb-3">{problem.icon}</div>
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {problem.title}
               </h3>

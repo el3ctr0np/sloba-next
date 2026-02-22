@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { Banknote, Clock, Frown, BarChart3 } from "lucide-react";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -29,29 +31,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function GoogleAdsUpravljanjePage({ params }: Props) {
   const { locale } = await params;
 
-  const problems =
+  const iconProps = { size: 28, strokeWidth: 1.5 } as const;
+
+  const problems: { icon: ReactNode; title: string; description: string }[] =
     locale === "en"
       ? [
           {
-            icon: "💸",
+            icon: <Banknote {...iconProps} className="text-gray-900" />,
             title: "Budget waste without results",
             description:
               "Campaigns are burning through your budget, but conversions are missing or too expensive. You lack clear visibility into what's working."
           },
           {
-            icon: "⏰",
+            icon: <Clock {...iconProps} className="text-gray-900" />,
             title: "No time or expertise",
             description:
               "Google Ads requires constant monitoring and optimization, but you have a business to run."
           },
           {
-            icon: "😤",
+            icon: <Frown {...iconProps} className="text-gray-900" />,
             title: "Bad past experiences",
             description:
               "Agencies just set up campaigns without real strategy. You never saw genuine ROI."
           },
           {
-            icon: "📊",
+            icon: <BarChart3 {...iconProps} className="text-gray-900" />,
             title: "Growth has stalled",
             description:
               "Campaigns work okay, but you don't know how to scale them without inflating costs."
@@ -59,25 +63,25 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         ]
       : [
           {
-            icon: "💸",
+            icon: <Banknote {...iconProps} className="text-gray-900" />,
             title: "Bacanje novca bez rezultata",
             description:
               "Kampanje troše budžet, ali konverzije izostaju ili su preskupe. Nemate jasnu sliku šta funkcioniše."
           },
           {
-            icon: "⏰",
+            icon: <Clock {...iconProps} className="text-gray-900" />,
             title: "Nedostatak vremena i ekspertize",
             description:
               "Google Ads zahteva stalno praćenje i optimizaciju, a vi imate biznis koji vodite."
           },
           {
-            icon: "😤",
+            icon: <Frown {...iconProps} className="text-gray-900" />,
             title: "Prethodna loša iskustva",
             description:
               "Agencije su samo podešavale kampanje bez stvarne strategije. Niste videli pravi ROI."
           },
           {
-            icon: "📊",
+            icon: <BarChart3 {...iconProps} className="text-gray-900" />,
             title: "Rast je stao",
             description:
               "Kampanje rade solidno, ali ne znate kako da ih skalirate bez povećanja troškova."
@@ -795,7 +799,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {problems.map((problem) => (
             <Card key={problem.title} className="h-full">
-              <div className="text-3xl mb-3">{problem.icon}</div>
+              <div className="mb-3">{problem.icon}</div>
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {problem.title}
               </h3>
