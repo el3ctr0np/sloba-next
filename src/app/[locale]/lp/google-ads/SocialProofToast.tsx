@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { CheckCircle } from "lucide-react";
 
 type Notification = {
   name: string;
@@ -220,8 +221,8 @@ export function SocialProofToast({ locale }: { locale: string }) {
       }`}
     >
       <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-sm flex items-start gap-3">
-        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 text-sm">
-          ✅
+        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+          <CheckCircle size={18} strokeWidth={1.5} className="text-green-600" />
         </div>
         <div className="min-w-0">
           <p className="text-sm text-gray-900 font-semibold leading-tight">

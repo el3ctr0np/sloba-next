@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { CheckCircle, XCircle } from "lucide-react";
 
 export default function PerformanceMaxVodicPost() {
   return (
@@ -69,22 +70,22 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">✅ Kada DA</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> Kada DA</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Proven conversion history</h3>
           <p className="text-sm text-gray-600 mb-0">Imate minimum 30–50 konverzija mesečno. Algoritam uči iz vaših podataka — treba mu data da bi optimizovao. Bez conversion history, PMax gađa nasumično.</p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">✅ Kada DA</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> Kada DA</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Želite skaliranje dosega</h3>
           <p className="text-sm text-gray-600 mb-0">Dostigli ste plafon sa Search ili Shopping kampanjama i želite da dosegnete korisnike na YouTube, Display, Discover. PMax je alat za skaliranje, ne za pokretanje od nule.</p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">❌ Kada NE</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Kada NE</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mali budžet</h3>
           <p className="text-sm text-gray-600 mb-0">Ispod €1,000–1,500 mesečno. Algoritam nema dovoljno budžeta za testiranje i učenje na 7 mreža. Rezultat je često suboptimalan.</p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">❌ Kada NE</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Kada NE</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Potrebna granularna kontrola</h3>
           <p className="text-sm text-gray-600 mb-0">Ako vam treba striktna kontrola troškova po proizvodu, brand vs non-brand alokacija budžeta, ili bid per keyword — PMax nije pravi alat. Koristite Search ili Standard Shopping.</p>
         </div>

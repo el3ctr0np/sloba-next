@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "@/i18n/navigation";
 import { useSearchParams } from "next/navigation";
+import { CheckCircle } from "lucide-react";
 
 type FormData = {
   businessType: string;
@@ -173,7 +174,7 @@ export function MultiStepForm({ locale }: { locale: string }) {
   if (isSubmitted) {
     return (
       <div className="bg-white text-gray-900 rounded-xl p-8 md:p-12 shadow-lg text-center">
-        <div className="text-5xl mb-4">✅</div>
+        <div className="mb-4"><CheckCircle size={48} strokeWidth={1.5} className="text-green-600 mx-auto" /></div>
         <h3 className="text-2xl font-heading font-bold mb-3">
           {locale === "en"
             ? "Thank you! Your request has been sent."

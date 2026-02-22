@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { CheckCircle, XCircle } from "lucide-react";
 
 export default function PerformanceMaxGuideEN() {
   return (
@@ -69,22 +70,22 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">✅ When YES</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> When YES</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Proven conversion history</h3>
           <p className="text-sm text-gray-600 mb-0">You have minimum 30–50 conversions monthly. Algorithm learns from your data — it needs data to optimize. Without conversion history, PMax shoots randomly.</p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">✅ When YES</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> When YES</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Want to scale reach</h3>
           <p className="text-sm text-gray-600 mb-0">You've hit ceiling with Search or Shopping campaigns and want to reach users on YouTube, Display, Discover. PMax is a scaling tool, not a launch-from-zero tool.</p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">❌ When NO</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> When NO</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Small budget</h3>
           <p className="text-sm text-gray-600 mb-0">Below $1,500–2,000 monthly. Algorithm doesn't have enough budget to test and learn across 7 networks. Result is often suboptimal.</p>
         </div>
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">❌ When NO</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> When NO</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Need granular control</h3>
           <p className="text-sm text-gray-600 mb-0">If you need strict cost control per product, brand vs non-brand budget allocation, or bid per keyword — PMax isn't right tool. Use Search or Standard Shopping.</p>
         </div>
