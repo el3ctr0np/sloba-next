@@ -1,19 +1,31 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Card } from "@/components/ui";
+import {
+  Target,
+  Zap,
+  ShoppingCart,
+  Play,
+  RefreshCw,
+  Rocket,
+  Star,
+} from "lucide-react";
+
+const iconProps = { size: 28, strokeWidth: 1.5 } as const;
 
 export function ServicesPreview() {
   const t = useTranslations("ServicesPreview");
 
-  const services = [
-    { icon: "🎯", title: t("services.googleAds"), href: "/usluge/google-ads-upravljanje" as const },
-    { icon: "⚡", title: t("services.performanceMax"), href: "/usluge/performance-max" as const },
-    { icon: "🛒", title: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
-    { icon: "📺", title: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" as const },
-    { icon: "🔄", title: t("services.remarketing"), href: "/usluge/remarketing" as const },
-    { icon: "🚀", title: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const, featured: true },
+  const services: { icon: ReactNode; title: string; href: "/usluge/google-ads-upravljanje" | "/usluge/performance-max" | "/usluge/google-shopping" | "/usluge/youtube-oglasi" | "/usluge/remarketing" | "/usluge/performance-marketing"; featured?: boolean }[] = [
+    { icon: <Target {...iconProps} />, title: t("services.googleAds"), href: "/usluge/google-ads-upravljanje" },
+    { icon: <Zap {...iconProps} />, title: t("services.performanceMax"), href: "/usluge/performance-max" },
+    { icon: <ShoppingCart {...iconProps} />, title: t("services.googleShopping"), href: "/usluge/google-shopping" },
+    { icon: <Play {...iconProps} />, title: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" },
+    { icon: <RefreshCw {...iconProps} />, title: t("services.remarketing"), href: "/usluge/remarketing" },
+    { icon: <Rocket {...iconProps} />, title: t("services.performanceMarketing"), href: "/usluge/performance-marketing", featured: true },
   ];
 
   return (
@@ -29,12 +41,12 @@ export function ServicesPreview() {
           {services.map((service, index) => (
             <Link key={index} href={service.href}>
               <Card className={`text-center h-full ${service.featured ? 'border-primary' : ''}`}>
-                <span className="text-3xl mb-3 block">{service.icon}</span>
+                <span className="mb-3 block">{service.icon}</span>
                 <h3 className="font-heading font-semibold">
                   {service.title}
                 </h3>
                 {service.featured && (
-                  <span className="text-xs text-primary mt-2 block">⭐ Premium</span>
+                  <span className="text-xs text-primary mt-2 flex items-center justify-center gap-1"><Star size={14} strokeWidth={1.5} /> Premium</span>
                 )}
               </Card>
             </Link>
