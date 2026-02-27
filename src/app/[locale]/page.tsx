@@ -46,7 +46,8 @@ export default async function Home({ params }: Props) {
           description:
             "Google Ads consultant with 9+ years of experience managing campaigns for eCommerce, B2B and SaaS brands across the UK, US and EU.",
           url: "https://www.slobodan-jelisavac.com/en",
-          email: "slobodan@slobodan-jelisavac.com",
+          email: "info@slobodan-jelisavac.com",
+          image: "https://www.slobodan-jelisavac.com/og/homepage.png",
           areaServed: [
             { "@type": "Country", name: "United States" },
             { "@type": "Country", name: "United Kingdom" },
@@ -84,19 +85,30 @@ export default async function Home({ params }: Props) {
             "Google Ads strategist sa decenijom iskustva u radu sa premium brendovima. Specijalizovan za eCommerce, B2B i SaaS.",
           url: "https://www.slobodan-jelisavac.com/sr",
           telephone: "+381692603998",
-          email: "slobodan@slobodan-jelisavac.com",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Batajnica",
-            addressLocality: "Beograd",
-            addressRegion: "Vojvodina",
-            postalCode: "11273",
-            addressCountry: "RS",
-          },
+          email: "info@slobodan-jelisavac.com",
+          image: "https://www.slobodan-jelisavac.com/og/homepage.png",
+          address: [
+            {
+              "@type": "PostalAddress",
+              streetAddress: "Majora Gavrilovića 1",
+              addressLocality: "Nova Pazova",
+              addressRegion: "Vojvodina",
+              postalCode: "22330",
+              addressCountry: "RS",
+            },
+            {
+              "@type": "PostalAddress",
+              streetAddress: "Majora Zorana Radosavljevića 222, stan 16",
+              addressLocality: "Batajnica",
+              addressRegion: "Beograd",
+              postalCode: "11273",
+              addressCountry: "RS",
+            },
+          ],
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 44.8989,
-            longitude: 20.2842,
+            latitude: 44.9439,
+            longitude: 20.2200,
           },
           priceRange: "€200-€800/mesečno",
           areaServed: [
@@ -197,7 +209,7 @@ export default async function Home({ params }: Props) {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      email: "slobodan@slobodan-jelisavac.com",
+      email: "info@slobodan-jelisavac.com",
       contactType: "customer service",
       availableLanguage: ["Serbian", "English"],
     },
