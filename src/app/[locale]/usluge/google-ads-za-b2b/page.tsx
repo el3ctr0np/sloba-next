@@ -1,27 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  if (locale === "en") {
-    return {
-      title:
-        "Google Ads for B2B | Lead Generation & PPC Management — Slobodan Jelisavac",
-      description:
-        "Expert B2B Google Ads management focused on qualified lead generation, CPA optimization, and CRM integration (HubSpot, Salesforce). 9+ years experience, 50+ brands across 6+ countries."
-    };
-  }
-
-  return {
-    title:
-      "Google Ads za B2B kompanije | Lead generation Srbija - Slobodan Jelisavac",
-    description:
-      "Google Ads strategije za B2B lead generation. 180% više kvalifikovanih leadova, CRM integracija (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Ads for B2B | Lead Generation & PPC Management — Slobodan Jelisavac"
+      : "Google Ads za B2B kompanije | Lead generation Srbija - Slobodan Jelisavac",
+    description: isEn
+      ? "Expert B2B Google Ads management focused on qualified lead generation, CPA optimization, and CRM integration (HubSpot, Salesforce). 9+ years experience, 50+ brands across 6+ countries."
+      : "Google Ads strategije za B2B lead generation. 180% više kvalifikovanih leadova, CRM integracija (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju.",
+    locale,
+    path: "/services/google-ads-for-b2b",
+    srPath: "/usluge/google-ads-za-b2b",
+  });
 }
 
 export default async function GoogleAdsZaB2BPage({ params }: Props) {

@@ -85,16 +85,24 @@ export async function GET() {
     const enPath = toEnRoute(route);
     const priority = priorityForRoute(route);
 
+    const srUrl = `${baseUrl}/sr${srPath}`;
+    const enUrl = `${baseUrl}/en${enPath}`;
+
+    const alternates = `
+    <xhtml:link rel="alternate" hreflang="sr" href="${srUrl}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${srUrl}"/>`;
+
     return [
       `
   <url>
-    <loc>${baseUrl}/sr${srPath}</loc>
+    <loc>${srUrl}</loc>${alternates}
     <lastmod>${now}</lastmod>
     <priority>${priority}</priority>
   </url>`,
       `
   <url>
-    <loc>${baseUrl}/en${enPath}</loc>
+    <loc>${enUrl}</loc>${alternates}
     <lastmod>${now}</lastmod>
     <priority>${priority}</priority>
   </url>`
@@ -103,7 +111,7 @@ export async function GET() {
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls.join("")}
 </urlset>`;
 

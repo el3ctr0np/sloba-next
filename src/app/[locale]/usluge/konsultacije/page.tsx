@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { UserCheck, Target, Building2, Briefcase } from "lucide-react";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -10,22 +11,18 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  if (locale === "en") {
-    return {
-      title:
-        "Google Ads Consulting €80/hr | Expert PPC Advice — Slobodan Jelisavac",
-      description:
-        "Expert Google Ads consulting at €80/hr. Get strategic advice, second opinions, and problem-solving for your PPC campaigns. Flexible support without long-term commitment."
-    };
-  }
-
-  return {
-    title:
-      "Google Ads Konsultacije €80/sat | Ekspertski Savet — Slobodan Jelisavac",
-    description:
-      "Ekspertske Google Ads konsultacije €80/sat. Strategija, second opinion, problem solving. Fleksibilna podrška bez dugoročne obaveze. Zakažite konsultaciju."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Ads Consulting €80/hr | Expert PPC Advice — Slobodan Jelisavac"
+      : "Google Ads Konsultacije €80/sat | Ekspertski Savet — Slobodan Jelisavac",
+    description: isEn
+      ? "Expert Google Ads consulting at €80/hr. Get strategic advice, second opinions, and problem-solving for your PPC campaigns. Flexible support without long-term commitment."
+      : "Ekspertske Google Ads konsultacije €80/sat. Strategija, second opinion, problem solving. Fleksibilna podrška bez dugoročne obaveze. Zakažite konsultaciju.",
+    locale,
+    path: "/services/consultations",
+    srPath: "/usluge/konsultacije",
+  });
 }
 
 export default async function KonsultacijePage({ params }: Props) {

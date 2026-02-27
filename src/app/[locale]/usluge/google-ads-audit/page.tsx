@@ -1,27 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  if (locale === "en") {
-    return {
-      title:
-        "Google Ads Audit Services | Professional PPC Account Analysis — Slobodan Jelisavac",
-      description:
-        "Professional Google Ads audit reveals where you're losing money and how to improve ROAS. In-depth campaign analysis with actionable recommendations. From €200."
-    };
-  }
-
-  return {
-    title:
-      "Google Ads Audit Srbija | Profesionalna Analiza Google Ads Kampanja — Slobodan Jelisavac",
-    description:
-      "Profesionalni Google Ads audit otkriva gde gubite novac i kako poboljšati ROAS. Detaljna analiza kampanja sa konkretnim preporukama. Od €200."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Ads Audit Services | Professional PPC Account Analysis — Slobodan Jelisavac"
+      : "Google Ads Audit Srbija | Profesionalna Analiza Google Ads Kampanja — Slobodan Jelisavac",
+    description: isEn
+      ? "Professional Google Ads audit reveals where you're losing money and how to improve ROAS. In-depth campaign analysis with actionable recommendations. From €200."
+      : "Profesionalni Google Ads audit otkriva gde gubite novac i kako poboljšati ROAS. Detaljna analiza kampanja sa konkretnim preporukama. Od €200.",
+    locale,
+    path: "/services/google-ads-audit",
+    srPath: "/usluge/google-ads-audit",
+  });
 }
 
 const personSchema = {

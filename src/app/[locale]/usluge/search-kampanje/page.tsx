@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  if (locale === "en") {
-    return {
-      title:
-        "Google Search Ads Management | High-Intent PPC Campaigns — Slobodan Jelisavac",
-      description:
-        "Expert Google Search campaign management for B2B and eCommerce. High-intent keyword strategy, conversion-focused ad copy, and Quality Score optimization. Free consultation."
-    };
-  }
-  return {
-    title:
-      "Google Search kampanje Srbija | Stručnjak za PPC - Slobodan Jelisavac",
-    description:
-      "Profesionalne Google Search kampanje za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija. Besplatna konsultacija."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Search Ads Management | High-Intent PPC Campaigns — Slobodan Jelisavac"
+      : "Google Search kampanje Srbija | Stručnjak za PPC - Slobodan Jelisavac",
+    description: isEn
+      ? "Expert Google Search campaign management for B2B and eCommerce. High-intent keyword strategy, conversion-focused ad copy, and Quality Score optimization. Free consultation."
+      : "Profesionalne Google Search kampanje za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija. Besplatna konsultacija.",
+    locale,
+    path: "/services/search-campaigns",
+    srPath: "/usluge/search-kampanje",
+  });
 }
 
 export default async function SearchKampanjePage({ params }: Props) {

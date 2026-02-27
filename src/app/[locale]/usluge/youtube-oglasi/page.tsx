@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  if (locale === "en") {
-    return {
-      title: "YouTube Ads Management | Video Advertising Campaigns — Slobodan Jelisavac",
-      description:
-        "Professional YouTube advertising management. Drive brand awareness and conversions through targeted video campaigns. Expert PPC consultant with 9+ years experience across 6+ countries."
-    };
-  }
-
-  return {
-    title: "YouTube oglasi Srbija | Video oglašavanje sa merljivim rezultatima",
-    description:
-      "Profesionalno upravljanje YouTube oglasima. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1,000/mesečno."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "YouTube Ads Management | Video Advertising Campaigns — Slobodan Jelisavac"
+      : "YouTube oglasi Srbija | Video oglašavanje sa merljivim rezultatima",
+    description: isEn
+      ? "Professional YouTube advertising management. Drive brand awareness and conversions through targeted video campaigns. Expert PPC consultant with 9+ years experience across 6+ countries."
+      : "Profesionalno upravljanje YouTube oglasima. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1,000/mesečno.",
+    locale,
+    path: "/services/youtube-ads",
+    srPath: "/usluge/youtube-oglasi",
+  });
 }
 
 export default async function YouTubeOglasiPage({ params }: Props) {

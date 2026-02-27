@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { HelpCircle, Banknote, BookOpen, Clock } from "lucide-react";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -10,22 +11,18 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  if (locale === "en") {
-    return {
-      title:
-        "Google Ads Starter Package from €500 | Professional Campaign Setup — Slobodan Jelisavac",
-      description:
-        "Professional Google Ads setup for beginners. Campaigns that work from day one + training for self-management. Packages starting at €500 with tracking, training, and 30-day support."
-    };
-  }
-
-  return {
-    title:
-      "Google Ads Starter Paket od €300 | Profesionalni Setup — Slobodan Jelisavac",
-    description:
-      "Profesionalni Google Ads setup za početnike. Kampanje koje rade od prvog dana + edukacija za samostalno vođenje. Paketi od €300."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Ads Starter Package from €500 | Professional Campaign Setup — Slobodan Jelisavac"
+      : "Google Ads Starter Paket od €300 | Profesionalni Setup — Slobodan Jelisavac",
+    description: isEn
+      ? "Professional Google Ads setup for beginners. Campaigns that work from day one + training for self-management. Packages starting at €500 with tracking, training, and 30-day support."
+      : "Profesionalni Google Ads setup za početnike. Kampanje koje rade od prvog dana + edukacija za samostalno vođenje. Paketi od €300.",
+    locale,
+    path: "/services/starter-package",
+    srPath: "/usluge/starter-paket",
+  });
 }
 
 export default async function StarterPaketPage({ params }: Props) {

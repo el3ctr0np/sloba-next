@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { Banknote, Clock, Frown, BarChart3 } from "lucide-react";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -10,22 +11,18 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  if (locale === "en") {
-    return {
-      title:
-        "Google Ads Management Services | PPC Account Management — Slobodan Jelisavac",
-      description:
-        "Professional Google Ads management for eCommerce and B2B companies. 180%+ ROAS improvement, 9+ years of experience. Book your free consultation today."
-    };
-  }
-
-  return {
-    title:
-      "Google Oglašavanje Srbija | Upravljanje Google Ads Nalogom — Slobodan Jelisavac",
-    description:
-      "Profesionalno upravljanje Google oglašavanjem za eCommerce i B2B. 180%+ poboljšanje ROAS-a, 10+ godina iskustva. Zakažite besplatnu konsultaciju."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Ads Management Services | PPC Account Management — Slobodan Jelisavac"
+      : "Google Oglašavanje Srbija | Upravljanje Google Ads Nalogom — Slobodan Jelisavac",
+    description: isEn
+      ? "Professional Google Ads management for eCommerce and B2B companies. 180%+ ROAS improvement, 9+ years of experience. Book your free consultation today."
+      : "Profesionalno upravljanje Google oglašavanjem za eCommerce i B2B. 180%+ poboljšanje ROAS-a, 10+ godina iskustva. Zakažite besplatnu konsultaciju.",
+    locale,
+    path: "/services/google-ads-management",
+    srPath: "/usluge/google-ads-upravljanje",
+  });
 }
 
 export default async function GoogleAdsUpravljanjePage({ params }: Props) {

@@ -1,27 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  if (locale === "en") {
-    return {
-      title:
-        "Performance Marketing Services | Omnichannel Growth Strategy — Slobodan Jelisavac",
-      description:
-        "Premium performance marketing with a dedicated team of experts. Google Ads + Meta + SEO + CRO for omnichannel growth. For companies with €5,000+ monthly budgets."
-    };
-  }
-
-  return {
-    title:
-      "Performance Marketing Srbija | Omnichannel tim - Funky Enterprises",
-    description:
-      "Premium performance marketing sa dedicated timom eksperata. Google Ads + Meta + SEO + CRO. Za kompanije sa €5,000+ mesečnim budžetom."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Performance Marketing Services | Omnichannel Growth Strategy — Slobodan Jelisavac"
+      : "Performance Marketing Srbija | Omnichannel tim - Funky Enterprises",
+    description: isEn
+      ? "Premium performance marketing with a dedicated team of experts. Google Ads + Meta + SEO + CRO for omnichannel growth. For companies with €5,000+ monthly budgets."
+      : "Premium performance marketing sa dedicated timom eksperata. Google Ads + Meta + SEO + CRO. Za kompanije sa €5,000+ mesečnim budžetom.",
+    locale,
+    path: "/services/performance-marketing",
+    srPath: "/usluge/performance-marketing",
+  });
 }
 
 export default async function PerformanceMarketingPage({ params }: Props) {

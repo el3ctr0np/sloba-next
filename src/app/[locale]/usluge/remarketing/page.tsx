@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  if (locale === "en") {
-    return {
-      title:
-        "Google Ads Remarketing Services | Retargeting Campaign Management — Slobodan Jelisavac",
-      description:
-        "Expert remarketing & retargeting campaign management across Google Ads, Meta, and Pinterest. Display remarketing, YouTube remarketing, RLSA, and dynamic retargeting. 9+ years of experience. Book a free consultation."
-    };
-  }
-  return {
-    title:
-      "Remarketing Kampanje Srbija | Google, Meta, Pinterest — Slobodan Jelisavac",
-    description:
-      "Profesionalne remarketing kampanje koje vraćaju posetioce i povećavaju konverzije. Google Display, YouTube, RLSA, Meta, Pinterest. Zakažite konsultaciju."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Ads Remarketing Services | Retargeting Campaign Management — Slobodan Jelisavac"
+      : "Remarketing Kampanje Srbija | Google, Meta, Pinterest — Slobodan Jelisavac",
+    description: isEn
+      ? "Expert remarketing & retargeting campaign management across Google Ads, Meta, and Pinterest. Display remarketing, YouTube remarketing, RLSA, and dynamic retargeting. 9+ years of experience. Book a free consultation."
+      : "Profesionalne remarketing kampanje koje vraćaju posetioce i povećavaju konverzije. Google Display, YouTube, RLSA, Meta, Pinterest. Zakažite konsultaciju.",
+    locale,
+    path: "/services/remarketing",
+    srPath: "/usluge/remarketing",
+  });
 }
 
 export default async function RemarketingPage({ params }: Props) {

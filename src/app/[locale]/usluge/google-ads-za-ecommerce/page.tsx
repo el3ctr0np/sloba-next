@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  return locale === "en"
-    ? {
-        title: "Google Ads for eCommerce | Shopping & PMax Campaign Management — Slobodan Jelisavac",
-        description:
-          "Drive profitable growth for your online store with expert eCommerce Google Ads strategies. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, and other verticals. 9+ years experience, 5x+ ROAS in 90 days."
-      }
-    : {
-        title: "Google Ads za eCommerce | Online prodavnice - Slobodan Jelisavac",
-        description:
-          "Povećajte prihod i ROAS vaše online prodavnice sa specijalizovanim Google Ads strategijama za eCommerce. Shopping, Performance Max i remarketing kampanje za fashion, home & garden i druge vertikale."
-      };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Ads for eCommerce | Shopping & PMax Campaign Management — Slobodan Jelisavac"
+      : "Google Ads za eCommerce | Online prodavnice - Slobodan Jelisavac",
+    description: isEn
+      ? "Drive profitable growth for your online store with expert eCommerce Google Ads strategies. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, and other verticals. 9+ years experience, 5x+ ROAS in 90 days."
+      : "Povećajte prihod i ROAS vaše online prodavnice sa specijalizovanim Google Ads strategijama za eCommerce. Shopping, Performance Max i remarketing kampanje za fashion, home & garden i druge vertikale.",
+    locale,
+    path: "/services/google-ads-for-ecommerce",
+    srPath: "/usluge/google-ads-za-ecommerce",
+  });
 }
 
 export default async function GoogleAdsZaEcommercePage({ params }: Props) {

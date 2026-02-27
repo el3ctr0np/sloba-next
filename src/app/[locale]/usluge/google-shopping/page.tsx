@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  if (locale === "en") {
-    return {
-      title:
-        "Google Shopping Campaign Management | eCommerce PPC Services — Slobodan Jelisavac",
-      description:
-        "Expert Google Shopping campaign management for eCommerce brands. Product feed optimization, bid strategies, campaign structure. Maximize ROAS and sell more products."
-    };
-  }
-  return {
-    title:
-      "Google Shopping kampanje Srbija | eCommerce specijalist - Slobodan Jelisavac",
-    description:
-      "Specijalizovane Google Shopping kampanje za eCommerce. Feed optimizacija, bid strategije, struktura kampanja. Povećajte ROAS i prodajte više proizvoda."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Shopping Campaign Management | eCommerce PPC Services — Slobodan Jelisavac"
+      : "Google Shopping kampanje Srbija | eCommerce specijalist - Slobodan Jelisavac",
+    description: isEn
+      ? "Expert Google Shopping campaign management for eCommerce brands. Product feed optimization, bid strategies, campaign structure. Maximize ROAS and sell more products."
+      : "Specijalizovane Google Shopping kampanje za eCommerce. Feed optimizacija, bid strategije, struktura kampanja. Povećajte ROAS i prodajte više proizvoda.",
+    locale,
+    path: "/services/google-shopping",
+    srPath: "/usluge/google-shopping",
+  });
 }
 
 export default async function GoogleShoppingPage({ params }: Props) {

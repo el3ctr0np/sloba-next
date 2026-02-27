@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { LayoutShell } from "@/components/layout";
 import { HrefLang } from "@/components/seo/HrefLang";
+import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
@@ -29,6 +30,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={typedLocale} messages={messages}>
       <HrefLang />
+      <LocalBusinessSchema locale={typedLocale} />
       <LayoutShell>{children}</LayoutShell>
     </NextIntlClientProvider>
   );

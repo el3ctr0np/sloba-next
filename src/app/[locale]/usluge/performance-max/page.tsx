@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  if (locale === "en") {
-    return {
-      title:
-        "Performance Max Campaign Management | PMax Google Ads — Slobodan Jelisavac",
-      description:
-        "Expert Performance Max campaign management for businesses seeking consolidated advertising. Asset group optimization, audience signals, and transparent tracking across all Google channels."
-    };
-  }
-  return {
-    title:
-      "Performance Max kampanje Srbija | PMax specijalist - Slobodan Jelisavac",
-    description:
-      "Profesionalno upravljanje Performance Max kampanjama. Za firme koje žele konsolidovano oglašavanje sa jednim budžetom i transparentno praćenje rezultata."
-  };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Performance Max Campaign Management | PMax Google Ads — Slobodan Jelisavac"
+      : "Performance Max kampanje Srbija | PMax specijalist - Slobodan Jelisavac",
+    description: isEn
+      ? "Expert Performance Max campaign management for businesses seeking consolidated advertising. Asset group optimization, audience signals, and transparent tracking across all Google channels."
+      : "Profesionalno upravljanje Performance Max kampanjama. Za firme koje žele konsolidovano oglašavanje sa jednim budžetom i transparentno praćenje rezultata.",
+    locale,
+    path: "/services/performance-max",
+    srPath: "/usluge/performance-max",
+  });
 }
 
 export default async function PerformanceMaxPage({ params }: Props) {

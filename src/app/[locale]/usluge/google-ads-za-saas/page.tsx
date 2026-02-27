@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  return locale === "en"
-    ? {
-        title:
-          "Google Ads for SaaS | PPC Lead Generation for Software Companies — Slobodan Jelisavac",
-        description:
-          "Reduce CAC and scale SaaS customer acquisition with Google Ads. Focus on trial-to-paid conversions, demo bookings, and metrics that drive growth. 9+ years working with B2B SaaS companies."
-      }
-    : {
-        title:
-          "Google Ads za SaaS | Customer acquisition - Slobodan Jelisavac",
-        description:
-          "Smanjite CAC i skalirajte SaaS acquisition kroz Google Ads. Fokus na trial-to-paid konverzije i metrike koje donose rast. 10+ godina iskustva sa B2B SaaS kompanijama."
-      };
+  const isEn = locale === "en";
+  return buildMetadata({
+    title: isEn
+      ? "Google Ads for SaaS | PPC Lead Generation for Software Companies — Slobodan Jelisavac"
+      : "Google Ads za SaaS | Customer acquisition - Slobodan Jelisavac",
+    description: isEn
+      ? "Reduce CAC and scale SaaS customer acquisition with Google Ads. Focus on trial-to-paid conversions, demo bookings, and metrics that drive growth. 9+ years working with B2B SaaS companies."
+      : "Smanjite CAC i skalirajte SaaS acquisition kroz Google Ads. Fokus na trial-to-paid konverzije i metrike koje donose rast. 10+ godina iskustva sa B2B SaaS kompanijama.",
+    locale,
+    path: "/services/google-ads-for-saas",
+    srPath: "/usluge/google-ads-za-saas",
+  });
 }
 
 export default async function GoogleAdsZaSaasPage({ params }: Props) {
