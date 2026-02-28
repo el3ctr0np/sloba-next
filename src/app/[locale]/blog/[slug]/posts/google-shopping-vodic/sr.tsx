@@ -50,7 +50,7 @@ export default function GoogleShoppingVodicPost() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Upload u Google Merchant Center</strong> <span className="text-gray-500">— centralna platforma za upravljanje feed-om</span></div>
+            <div><strong><a href="https://support.google.com/merchants/answer/188493" target="_blank" rel="noopener noreferrer" className="underline">Upload u Google Merchant Center</a></strong> <span className="text-gray-500">— centralna platforma za upravljanje feed-om</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
@@ -94,7 +94,7 @@ export default function GoogleShoppingVodicPost() {
 
       <h2>Product feed — temelj Shopping kampanja</h2>
       <p>
-        Vaš product feed je XML ili TXT fajl koji sadrži sve informacije o proizvodima. Google koristi ove podatke da odluči za koje pretrage prikazati vaš proizvod, kako ga rangirati u odnosu na konkurenciju, i da li je proizvod eligible za prikaz.
+        Vaš product feed je XML ili TXT fajl koji sadrži sve informacije o proizvodima. Google koristi ove podatke da odluči za koje pretrage prikazati vaš proizvod, kako ga rangirati u odnosu na konkurenciju, i da li je proizvod eligible za prikaz. Kompletnu specifikaciju svih atributa možete pronaći u <a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener noreferrer" className="underline">Google-ovoj specifikaciji podataka o proizvodima</a>.
       </p>
       <p>
         Moje iskustvo je da 80% problema sa Shopping kampanjama dolazi iz loše optimizovanog feed-a. Ako feed nije dobar, ni najbolji bidding neće pomoći.
@@ -739,6 +739,62 @@ export default function GoogleShoppingVodicPost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google oglašavanje za firme</p>
           <p className="text-xs text-gray-500 mb-0">Kompletni vodič za Google Ads za B2B i B2C biznise.</p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Najčešća pitanja o Google Shopping kampanjama</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li mi treba Merchant Center za Google Shopping?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Da, Merchant Center je obavezan. Tu upload-ujete product feed sa svim informacijama o proizvodima (naziv, cena, slika, dostupnost). Bez MC-a ne možete pokrenuti Shopping kampanje.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliko proizvoda treba imati za Google Shopping?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Nema minimuma, ali Shopping najbolje radi sa 50+ proizvoda. Sa manje od 20 proizvoda, budžet se brzo potroši na malo SKU-ova. Za optimalne rezultate, preporučuje se 100+ aktivnih proizvoda u feed-u.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Zašto su moji Shopping oglasi odbijeni?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Najčešći razlozi: neusklađenost cena između sajta i feed-a, nedostajući GTIN/MPN, loše slike (watermark, tekst na slici), nedostajuće shipping informacije, ili kršenje Google Merchant Center politika.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Shopping vs Performance Max — šta je bolje za eCommerce?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Standard Shopping daje veću kontrolu i transparentnost. PMax daje širi reach ali manje kontrole. Idealna kombinacija: Standard Shopping za top proizvode + PMax za ostatak kataloga. Zavisi od budžeta i broja proizvoda.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Kako optimizovati product feed za bolje rezultate?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Ključne optimizacije: 1) Title sa glavnom ključnom rečju na početku, 2) Visokokvalitetne slike na beloj pozadini, 3) Detaljan opis sa ključnim rečima, 4) Tačan product_type i google_product_category, 5) Redovno ažuriranje cena i dostupnosti.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

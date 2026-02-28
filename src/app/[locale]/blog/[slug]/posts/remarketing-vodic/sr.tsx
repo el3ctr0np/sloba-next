@@ -46,7 +46,7 @@ export default function RemarketingVodicPost() {
       </p>
       <p>
         Tu remarketing menja igru. Umesto da trošite budžet isključivo na nove
-        posetioce, remarketing kampanje vam omogućavaju da se vratite pred ljude
+        posetioce, <a href="https://support.google.com/google-ads/answer/2453998" target="_blank" rel="noopener noreferrer">remarketing kampanje</a> vam omogućavaju da se vratite pred ljude
         koji su <strong>već pokazali interes</strong> — i to u trenutku kada su
         spremni da donesu odluku.
       </p>
@@ -72,7 +72,7 @@ export default function RemarketingVodicPost() {
       {/* ── Sekcija 2: Šta je remarketing ── */}
       <h2>Šta je remarketing i kako funkcioniše</h2>
       <p>
-        <strong>Google Ads remarketing</strong> (ponekad nazvan i retargeting) je
+        <a href="https://support.google.com/google-ads/answer/2453998" target="_blank" rel="noopener noreferrer"><strong>Google Ads remarketing</strong></a> (ponekad nazvan i retargeting) je
         strategija koja vam omogućava da prikazujete oglase ljudima koji su već
         bili u kontaktu sa vašim biznisom. To mogu biti posetioci sajta, korisnici
         aplikacije, gledaoci YouTube videa ili ljudi sa vaše email liste.

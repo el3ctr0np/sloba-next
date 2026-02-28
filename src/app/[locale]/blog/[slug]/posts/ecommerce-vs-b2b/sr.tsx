@@ -67,7 +67,7 @@ export default function EcommerceVsB2BPost() {
         <strong>B2B:</strong> Korisnik ima problem, traži rešenje. &quot;Kako automatizovati fakturisanje&quot; — tek istražuje opcije, ciklus dug, konverzija je lead.
       </p>
       <p>
-        Ova razlika diktira sve ostalo — od tipa kampanja do načina merenja uspeha.
+        Ova razlika diktira sve ostalo — od <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">tipa kampanja</a> do načina merenja uspeha.
       </p>
 
       <hr />
@@ -134,7 +134,7 @@ export default function EcommerceVsB2BPost() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
         <p className="text-yellow-800 text-sm mb-0">
-          Ignorisanje ovih razlika vodi ka primeni pogrešne strategije. Shopping kampanje ne postoje za B2B. Lead-gen tracking ne daje ROAS za eCommerce. Prilagodite pristup modelu.
+          Ignorisanje ovih razlika vodi ka primeni pogrešne strategije. <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">Shopping kampanje</a> ne postoje za B2B. Lead-gen tracking ne daje ROAS za eCommerce. Prilagodite pristup modelu.
         </p>
       </div>
 
@@ -798,6 +798,52 @@ export default function EcommerceVsB2BPost() {
             Budžet benchmarks i očekivanja za eCommerce i B2B
           </p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Najčešća pitanja — eCommerce vs B2B Google Ads</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koji tip kampanje je bolji za eCommerce?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Shopping kampanje (Standard Shopping i Performance Max) su #1 za eCommerce — vizuelno prikazuju proizvode direktno u pretrazi i imaju visok purchase intent. Search kampanje su komplementarne za brand i kategorijske termine. Display i YouTube su za remarketing i awareness fazu kupovnog puta.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Kako meriti uspeh B2B Google Ads kampanja?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Ključne B2B metrike: CPL (cost per lead), MQL-to-SQL stopa (koliko leadova postaje kvalifikovani prodajni lead), CAC (customer acquisition cost) i LTV:CAC ratio. Ne fokusiraj se samo na klik i impression metrike — bez praćenja kvaliteta leadova nemoguće je znati da li kampanja zaista donosi vrednost biznisu.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li Google Ads radi za B2B sa dugim sales cycle-om?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Da, ali sa drugačijim pristupom. Dugačak sales cycle zahteva remarketing strategiju (da ostaneš u vidokrugu tokom 3-6 meseci odlučivanja), lead nurturing sadržaj i offline conversion import (da Google zna koji leadovi su se pretvorili u kupce). Attribution window treba proširiti na 60-90 dana da zahvati ceo ciklus.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliki budžet je potreban za eCommerce vs B2B?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            eCommerce starteri: €500-1.000/mesečno za testiranje, €2.000+ za ozbiljne rezultate (zavisi od CPC i margina). B2B: €300-800/mesečno za niche targeting, ali CPL može biti €50-500+ zavisno od industrije. Važniji od budžeta je ROI — B2B deal vredan €10.000 opravdava visok CPL.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

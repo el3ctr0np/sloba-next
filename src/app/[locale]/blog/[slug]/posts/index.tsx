@@ -89,7 +89,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-optimizacija",
-    title: "Google Ads optimizacija - 30 taktika",
+    title: "Google Ads Optimizacija: 30 Taktika za Bolji ROAS [2026]",
     date: "2026-01-17",
     dateModified: "2025-12-18",
     category: "Optimizacija",
@@ -133,7 +133,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-greske",
-    title: "Google Ads Optimizacija: 20 Grešaka Koje Vas Koštaju Novca",
+    title: "Google Ads Greške: 20 Skupih Propusta u Kampanjama [2026]",
     date: "2026-01-27",
     dateModified: "2026-02-12",
     category: "Google Ads optimizacija",
@@ -313,7 +313,7 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-mistakes",
-    title: "Google Ads Optimization: 20 Mistakes Costing You Money",
+    title: "Google Ads Mistakes: 20 Costly Errors in Your Campaigns [2026]",
     date: "2026-01-27",
     dateModified: "2026-02-12",
     category: "Google Ads Optimization",

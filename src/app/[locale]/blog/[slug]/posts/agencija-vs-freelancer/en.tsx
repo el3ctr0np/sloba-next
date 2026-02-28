@@ -62,7 +62,7 @@ export default function AgencyVsFreelancerEN() {
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Ads agency</h3>
-          <p className="text-sm text-gray-600 mb-3">Team of specialists managing your campaigns. Full service with account manager, PPC specialist, and often designer.</p>
+          <p className="text-sm text-gray-600 mb-3">Team of specialists managing your campaigns. Full service with account manager, PPC specialist, and often designer. Certified agencies can be found through the <a href="https://ads.google.com/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Google Partners</a> directory.</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Monthly cost:</strong></p>
           <p className="text-sm mb-3">$500-3,000+ / £400-2,500+</p>
           <p className="text-xs text-gray-500 mb-1"><strong>For whom:</strong></p>
@@ -120,7 +120,7 @@ export default function AgencyVsFreelancerEN() {
         <ul className="text-sm">
           <li>Experience with 20-50+ different clients</li>
           <li>Access to SEMrush, Optmyzr, Google Analytics 360, etc.</li>
-          <li>Beta programs and early access to new Google Ads features</li>
+          <li><a href="https://ads.google.com/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Beta programs and early access</a> to new Google Ads features</li>
           <li>Best practices from different industries</li>
         </ul>
       </div>
@@ -868,6 +868,62 @@ export default function AgencyVsFreelancerEN() {
             Everything you need to know before launching Google Ads campaigns.
           </p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Frequently asked questions — agency vs freelancer</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How much does a Google Ads agency cost?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            In the US/UK: $500-2,000+/month for mid-range agencies, $3,000-10,000+ for enterprise. Most work on a fixed retainer or percentage of ad spend (10-20%). Some charge setup fees of $500-2,000.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Freelancer or agency — what&apos;s better for small business?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            For ad spend budgets under $2,000/month, a freelancer is usually the better choice — lower costs, direct communication, more dedication. An agency makes sense when you need multi-channel approach or have $5,000+/month budget.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How do I spot a bad Google Ads agency?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Red flags: they don&apos;t give access to your Google Ads account, promise guaranteed results, have no case studies, don&apos;t explain strategy, only use Smart campaigns, don&apos;t set up conversion tracking, or require long-term contracts without exit clause.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Can I switch from one agency to another?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Yes, your Google Ads account is yours — the agency only has access. Verify the account is registered to your email. When switching, request full access from the old agency, retain campaign and conversion history, and backup before changes.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            What should I look for in an agency contract?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Key points: clearly defined scope of work, monthly reporting, account access, notice period (30 days is fair), who owns the account, onboarding process, and what happens to campaigns when the partnership ends.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

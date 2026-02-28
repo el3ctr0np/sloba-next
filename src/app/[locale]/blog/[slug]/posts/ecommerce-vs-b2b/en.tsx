@@ -67,7 +67,7 @@ export default function EcommerceVsB2BEN() {
         <strong>B2B:</strong> User has a problem, searching for a solution. &quot;How to automate invoicing&quot; — just researching options, cycle is long, conversion is a lead.
       </p>
       <p>
-        This difference dictates everything else — from campaign types to how you measure success.
+        This difference dictates everything else — from <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">campaign types</a> to how you measure success.
       </p>
 
       <hr />
@@ -134,7 +134,7 @@ export default function EcommerceVsB2BEN() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
         <p className="text-yellow-800 text-sm mb-0">
-          Ignoring these differences leads to applying the wrong strategy. Shopping campaigns don&apos;t exist for B2B. Lead-gen tracking doesn&apos;t give ROAS for eCommerce. Tailor the approach to the model.
+          Ignoring these differences leads to applying the wrong strategy. <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">Shopping campaigns</a> don&apos;t exist for B2B. Lead-gen tracking doesn&apos;t give ROAS for eCommerce. Tailor the approach to the model.
         </p>
       </div>
 
@@ -798,6 +798,52 @@ export default function EcommerceVsB2BEN() {
             Budget benchmarks and expectations for eCommerce and B2B
           </p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Frequently asked questions — eCommerce vs B2B Google Ads</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Which campaign type is best for eCommerce?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Shopping campaigns (Standard Shopping and Performance Max) are #1 for eCommerce — they visually display products directly in search results and attract high purchase intent traffic. Search campaigns complement Shopping for brand and category terms. Display and YouTube work best for remarketing and awareness stages of the buying journey.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How do I measure B2B Google Ads campaign success?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Key B2B metrics: CPL (cost per lead), MQL-to-SQL rate (how many leads become qualified sales leads), CAC (customer acquisition cost), and LTV:CAC ratio. Don&apos;t focus only on clicks and impressions — without tracking lead quality, it&apos;s impossible to know whether campaigns are actually delivering business value.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Does Google Ads work for B2B with long sales cycles?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Yes, but with a different approach. Long sales cycles require a remarketing strategy (staying visible during 3-6 months of decision-making), lead nurturing content, and offline conversion imports (so Google knows which leads converted to customers). Extend your attribution window to 60-90 days to capture the full buying cycle.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            What budget is needed for eCommerce vs B2B?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            eCommerce starters: $1,000-2,000/month for testing, $5,000+ for serious results (depends on CPC and margins). B2B: $500-1,500/month for niche targeting, but CPL can be $100-1,000+ depending on industry. More important than budget is ROI — a B2B deal worth $50,000 justifies a high CPL.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

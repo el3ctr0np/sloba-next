@@ -5,7 +5,7 @@ export default function PerformanceMaxVodicPost() {
   return (
     <>
       <p>
-        Performance Max (PMax) kampanje su Google-ov najmoćniji — i najkontroverzniji — alat za automatizovano oglašavanje. Dajete algoritmu budžet, kreativ i cilj, on pronalazi kupce na svim Google mrežama odjednom.
+        <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max (PMax)</a> kampanje su Google-ov najmoćniji — i najkontroverzniji — alat za automatizovano oglašavanje. Dajete algoritmu budžet, kreativ i cilj, on pronalazi kupce na svim Google mrežama odjednom.
       </p>
       <p>
         U praksi, PMax može biti izuzetno efikasan kanal koji skalira rezultate ili crna rupa koja guta budžet bez transparentnosti. Razlika je u pristupu i razumevanju kako sistem funkcioniše.
@@ -38,7 +38,7 @@ export default function PerformanceMaxVodicPost() {
 
       <h2>Šta je Performance Max i zašto je poseban</h2>
       <p>
-        Performance Max je automatizovana kampanja koja koristi machine learning da prikaže vaše oglase na svim Google mrežama odjednom: Search, Shopping, Display, YouTube, Gmail, Discover i Maps. Umesto da kreirate odvojene kampanje po kanalu, dajete Google-u sirov materijal i on kombinuje sve u stvarnom vremenu.
+        <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max</a> je automatizovana kampanja koja koristi machine learning da prikaže vaše oglase na svim Google mrežama odjednom: Search, Shopping, Display, YouTube, Gmail, Discover i Maps. Umesto da kreirate odvojene kampanje po kanalu, dajete Google-u sirov materijal i on kombinuje sve u stvarnom vremenu.
       </p>
       <p><strong>Vi dajete:</strong></p>
       <ul>
@@ -653,6 +653,62 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">PMax je moćan alat — ali nije magija. Funkcioniše najbolje kada imate solid conversion tracking, kvalitetne asset-e, i strpljenja za learning period. Moj savet: koristite PMax kao deo strategije, ne kao jedinu kampanju.</p>
+      </div>
+
+      <hr />
+
+      <h2>Najčešća pitanja o Performance Max kampanjama</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li Performance Max zamenjuje Search i Shopping kampanje?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Ne u potpunosti. PMax može da radi uz Search i Shopping. Google preporučuje kombinaciju — PMax za široku pokrivenost, Search za high-intent upite. Shopping sa PMax-om zahteva pažljivu asset group strukturu da se izbegne kanibalizacija.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliki budžet treba za Performance Max?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Minimum €30-50/dan (€900-1,500/mesečno). PMax koristi machine learning koji zahteva dovoljno podataka — ispod ovog budžeta algoritam nema dovoljno konverzija za optimizaciju. Za eCommerce sa 100+ proizvoda, preporučuje se €2,000+/mesečno.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Zašto PMax troši većinu budžeta na Display/YouTube?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Čest problem sa PMax-om. Rešenja: isključite URL expansion, dodajte negativne ključne reči (preko Google podrške), napravite jače Search kampanje za iste ključne reči. PMax će trošiti gde mu je najjeftinije, ne nužno najefikasnije.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Kako videti gde PMax prikazuje oglase?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Insights tab → Placement report (ograničen), Asset group performance. Za detaljnije: koristite URL-based conversion tracking ili GA4 da vidite koji kanali donose konverzije. Google namerno ograničava transparentnost PMax-a.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Kada NE koristiti Performance Max?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Kad imate mali budžet (ispod €500/mesečno), kad nemate conversion tracking, za čist brand awareness, ili kad trebate preciznu kontrolu nad ključnim rečima. PMax je automatizovan — ako želite potpunu kontrolu, Search i Shopping su bolji izbor.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

@@ -62,7 +62,7 @@ export default function AgencijaVsFreelancerPost() {
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Ads agencija</h3>
-          <p className="text-sm text-gray-600 mb-3">Tim specijalista koji vodi vaše kampanje. Kompletna usluga sa account managerom, PPC specijalistom i često dizajnerom.</p>
+          <p className="text-sm text-gray-600 mb-3">Tim specijalista koji vodi vaše kampanje. Kompletna usluga sa account managerom, PPC specijalistom i često dizajnerom. Sertifikovane agencije možete pronaći kroz <a href="https://ads.google.com/intl/sr_rs/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Google Partners</a> direktorijum.</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Mesečni trošak:</strong></p>
           <p className="text-sm mb-3">€500-3,000+</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Za koga:</strong></p>
@@ -120,7 +120,7 @@ export default function AgencijaVsFreelancerPost() {
         <ul className="text-sm">
           <li>Iskustvo sa 20-50+ različitih klijenata</li>
           <li>Pristup SEMrush, Optmyzr, Google Analytics 360, itd.</li>
-          <li>Beta programi i early access do novih Google Ads features</li>
+          <li><a href="https://ads.google.com/intl/sr_rs/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Beta programi i early access</a> do novih Google Ads features</li>
           <li>Best practices iz različitih industrija</li>
         </ul>
       </div>
@@ -868,6 +868,62 @@ export default function AgencijaVsFreelancerPost() {
             Sve što treba da znate pre lansiranja Google Ads kampanja.
           </p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Najčešća pitanja — agencija vs freelancer</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliko košta Google Ads agencija?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            U Srbiji: €200-600/mesečno za manje agencije, €800-2,000+ za veće. U UK/USA: £500-2,000+ za mid-range, £3,000-10,000+ za enterprise. Većina radi na fiksnom retainer-u ili procentu od ad spend-a (10-20%).
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Freelancer ili agencija — šta je bolje za mali biznis?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Za budžete do €1,000/mesečno ad spend, freelancer je obično bolji izbor — niži troškovi, direktna komunikacija, veća posvećenost. Agencija ima smisla kad trebate multi-channel pristup ili imate budžet €3,000+/mesečno.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Kako prepoznati lošu Google Ads agenciju?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Red flags: ne daju pristup Google Ads nalogu, obećavaju garantovane rezultate, nemaju case studies, ne objašnjavaju strategiju, koriste samo Smart kampanje, ne postavljaju conversion tracking, ili zahtevaju dugoročne ugovore bez izlazne klauzule.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li mogu prebaciti nalog sa jedne agencije na drugu?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Da, vaš Google Ads nalog je vaš — agencija ima samo pristup. Proverite da je nalog registrovan na vašu email adresu. Pri prelasku, tražite full access od stare agencije, zadržite istoriju kampanja i konverzija, i napravite backup pre promena.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Šta da tražim u ugovoru sa agencijom?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Ključne tačke: jasno definisan scope rada, mesečni reporting, pristup nalogu, otkazni rok (30 dana je fer), ko je vlasnik naloga, kakav je onboarding proces, i šta se dešava sa kampanjama po raskidu saradnje.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

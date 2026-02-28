@@ -101,7 +101,7 @@ export default function GoogleAdsAuditGuideEN() {
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advanced</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">10. Scripts and automation</h3>
-          <p className="text-sm text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations</p>
+          <p className="text-sm text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — including <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> for offline changes</p>
         </div>
       </div>
 
@@ -155,7 +155,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pro tip</p>
-        <p className="text-yellow-800 text-sm mb-0">If you have more than 10 campaigns, create labels (e.g., &quot;Priority&quot;, &quot;Testing&quot;, &quot;Paused-Low_ROI&quot;) for faster filtering in interface. This saves time during Google Ads audit analysis.</p>
+        <p className="text-yellow-800 text-sm mb-0">If you have more than 10 campaigns, create labels (e.g., &quot;Priority&quot;, &quot;Testing&quot;, &quot;Paused-Low_ROI&quot;) for faster filtering in interface. For bulk changes, use <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> — it saves significant time during Google Ads audit analysis.</p>
       </div>
 
       <hr />
@@ -826,6 +826,62 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Most common Google Ads mistakes</p>
           <p className="text-xs text-gray-500 mb-0">20+ most common mistakes and how to avoid them</p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Frequently asked questions about Google Ads audit</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How often should I do a Google Ads audit?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            A full audit every 3-6 months is the minimum for active accounts. For new accounts — mandatory after the first 30 days (to catch early issues). For high-spend accounts ($5,000+/month), a monthly mini-audit is recommended. Ongoing optimization is not a substitute for a periodic deep review of the entire account structure.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            What should I check first in a Google Ads audit?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Five points that cover 80% of problems: 1) Conversion tracking — are you tracking the right actions? 2) Search Terms report — what queries are triggering your ads? 3) Quality Score — are keywords relevant? 4) Wasted spend — where is money going without results? 5) Landing page — does the page you&apos;re sending traffic to actually convert?
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How much does a Google Ads audit cost?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Free basic audits (surface-level reviews) are offered by many agencies as lead magnets. Professional audits with detailed analysis and an action plan cost $500-2,000 in the US/UK, depending on account size and auditor experience. Consider that one well-executed audit can save 20-40% of monthly budget — the ROI is usually excellent.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Can I audit my own Google Ads account?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Yes, with a good checklist you can cover the basic issues — this guide gives you exactly that. The limitation of a DIY audit is that you may miss subtle problems an experienced specialist spots immediately (e.g., poor campaign structure, suboptimal bidding setup, missed opportunities). An external perspective always brings a fresh viewpoint.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            What should I do after a Google Ads audit?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Build a prioritized action list: Urgent (this week) — conversion tracking errors, active issues burning budget. High priority (this month) — negative keywords, ad improvements, Quality Score. Optimization (next 3 months) — bidding strategy testing, landing page optimization, campaign expansion. Without prioritization, the audit remains just a list of problems.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

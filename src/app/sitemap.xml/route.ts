@@ -11,48 +11,62 @@ for (const [canonical, localized] of Object.entries(routing.pathnames)) {
   }
 }
 
-// SR routes (canonical paths)
+// Static lastmod dates for non-blog routes (last meaningful content update)
+const routeLastmod: Record<string, string> = {
+  "": "2026-02-27",
+  "/o-meni": "2026-02-10",
+  "/kontakt": "2026-01-26",
+  "/kontakt/hvala": "2026-01-26",
+  "/usluge": "2026-02-10",
+  "/usluge/google-ads-upravljanje": "2026-02-10",
+  "/usluge/google-ads-audit": "2026-02-10",
+  "/usluge/google-shopping": "2026-02-10",
+  "/usluge/performance-max": "2026-02-10",
+  "/usluge/search-kampanje": "2026-02-10",
+  "/usluge/remarketing": "2026-02-10",
+  "/usluge/youtube-oglasi": "2026-02-10",
+  "/usluge/google-ads-za-b2b": "2026-02-10",
+  "/usluge/google-ads-za-ecommerce": "2026-02-10",
+  "/usluge/google-ads-za-saas": "2026-02-10",
+  "/usluge/konsultacije": "2026-02-10",
+  "/usluge/performance-marketing": "2026-02-10",
+  "/usluge/starter-paket": "2026-02-10",
+  "/case-studies": "2026-01-26",
+  "/case-studies/mobelaris": "2026-01-26",
+  "/case-studies/designerglasses": "2026-01-26",
+  "/case-studies/soundboxstore": "2026-01-26",
+  "/blog": "2026-02-27",
+};
+
+// Blog post dateModified values (from posts/index.tsx)
+const blogLastmod: Record<string, string> = {
+  "/blog/koliko-kosta-google-ads": "2026-02-10",
+  "/blog/google-oglasavanje-za-firme": "2026-02-07",
+  "/blog/performance-max-vodic": "2026-01-31",
+  "/blog/google-ads-optimizacija": "2025-12-18",
+  "/blog/google-shopping-vodic": "2026-02-03",
+  "/blog/agencija-vs-freelancer": "2026-01-28",
+  "/blog/conversion-tracking-vodic": "2026-02-05",
+  "/blog/google-ads-greske": "2026-02-12",
+  "/blog/zasto-nema-rezultata": "2026-01-30",
+  "/blog/ecommerce-vs-b2b": "2026-02-08",
+  "/blog/google-ads-vs-meta": "2026-02-14",
+  "/blog/google-ads-audit-vodic": "2025-12-22",
+  "/blog/kljucne-reci-vodic": "2026-01-29",
+  "/blog/negativne-kljucne-reci": "2025-12-28",
+  "/blog/quality-score-vodic": "2026-01-04",
+  "/blog/remarketing-vodic": "2026-02-11",
+};
+
+// All SR routes (canonical paths)
 const routes = [
-  "",
-  "/o-meni",
-  "/kontakt",
-  "/kontakt/hvala",
-  "/usluge",
-  "/usluge/google-ads-upravljanje",
-  "/usluge/google-ads-audit",
-  "/usluge/google-shopping",
-  "/usluge/performance-max",
-  "/usluge/search-kampanje",
-  "/usluge/remarketing",
-  "/usluge/youtube-oglasi",
-  "/usluge/google-ads-za-b2b",
-  "/usluge/google-ads-za-ecommerce",
-  "/usluge/google-ads-za-saas",
-  "/usluge/konsultacije",
-  "/usluge/performance-marketing",
-  "/usluge/starter-paket",
-  "/case-studies",
-  "/case-studies/mobelaris",
-  "/case-studies/designerglasses",
-  "/case-studies/soundboxstore",
-  "/blog",
-  "/blog/koliko-kosta-google-ads",
-  "/blog/google-oglasavanje-za-firme",
-  "/blog/performance-max-vodic",
-  "/blog/google-ads-optimizacija",
-  "/blog/google-shopping-vodic",
-  "/blog/agencija-vs-freelancer",
-  "/blog/conversion-tracking-vodic",
-  "/blog/google-ads-greske",
-  "/blog/zasto-nema-rezultata",
-  "/blog/ecommerce-vs-b2b",
-  "/blog/google-ads-vs-meta",
-  "/blog/google-ads-audit-vodic",
-  "/blog/kljucne-reci-vodic",
-  "/blog/negativne-kljucne-reci",
-  "/blog/quality-score-vodic",
-  "/blog/remarketing-vodic"
+  ...Object.keys(routeLastmod),
+  ...Object.keys(blogLastmod),
 ];
+
+function getLastmod(route: string): string {
+  return blogLastmod[route] || routeLastmod[route] || "2026-01-26";
+}
 
 /** Translate a canonical (SR) route to the EN equivalent */
 function toEnRoute(route: string): string {
@@ -78,12 +92,11 @@ const priorityForRoute = (route: string) => {
 };
 
 export async function GET() {
-  const now = new Date().toISOString();
-
   const urls = routes.flatMap((route) => {
     const srPath = route;
     const enPath = toEnRoute(route);
     const priority = priorityForRoute(route);
+    const lastmod = getLastmod(route);
 
     const srUrl = `${baseUrl}/sr${srPath}`;
     const enUrl = `${baseUrl}/en${enPath}`;
@@ -97,13 +110,13 @@ export async function GET() {
       `
   <url>
     <loc>${srUrl}</loc>${alternates}
-    <lastmod>${now}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <priority>${priority}</priority>
   </url>`,
       `
   <url>
     <loc>${enUrl}</loc>${alternates}
-    <lastmod>${now}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <priority>${priority}</priority>
   </url>`
     ];

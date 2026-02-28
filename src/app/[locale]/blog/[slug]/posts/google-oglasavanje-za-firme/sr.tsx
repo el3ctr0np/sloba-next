@@ -29,7 +29,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       </div>
 
       <h2>Zašto je Google oglašavanje efikasno za firme</h2>
-      <p>Google Ads omogućava vašoj firmi da bude vidljiva tačno u trenutku kada potencijalni kupac traži ono što nudite. To je ključna razlika u odnosu na druge kanale.</p>
+      <p><a href="https://support.google.com/google-ads/answer/6146252" target="_blank" rel="noopener noreferrer" className="underline">Google Ads</a> omogućava vašoj firmi da bude vidljiva tačno u trenutku kada potencijalni kupac traži ono što nudite. To je ključna razlika u odnosu na druge kanale.</p>
       <p>Kada neko ukuca &quot;CRM softver za mala preduzeća&quot; ili &quot;muške patike za trčanje&quot;, vaš oglas se može pojaviti iznad organskih rezultata. Osoba koja pretražuje ima jasnu nameru — ne skrola bezveze, već aktivno traži rešenje.</p>
       <p>Moje iskustvo sa preko 50 klijenata u Srbiji, regiji i inostranstvu pokazuje da Google Ads donosi najbolje rezultate kada:</p>
       <ul>
@@ -527,7 +527,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <p className="text-sm text-gray-600 mb-3">Ključne reči nisu samo &quot;koliko ljudi traži&quot; — fokus je na intent-u.</p>
         <p className="text-sm font-semibold mb-2">Alati:</p>
         <ul className="text-sm mb-3">
-          <li><strong>Google Keyword Planner</strong> — besplatan, dovoljan za početak</li>
+          <li><strong><a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a></strong> — besplatan, dovoljan za početak</li>
           <li><strong>Semrush/Ahrefs</strong> — premium, detaljan uvid u konkurenciju</li>
           <li><strong>Google Search Console</strong> — šta vam već donosi organic saobraćaj</li>
         </ul>
@@ -876,6 +876,62 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>
           <p className="text-xs text-gray-500 mb-0">Profesionalno upravljanje Google Ads kampanjama</p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Najčešća pitanja o Google oglašavanju za firme</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliko košta Google oglašavanje za firme?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Prosečan CPC u Srbiji je €0.10-0.80, u UK/DE €1-5+. Minimalni preporučeni mesečni budžet za kampanje je €300-500 za lokalne firme, €1,000+ za eCommerce. Uz to ide fee za upravljanje €200-600/mesečno.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koji tip Google kampanje je najbolji za moju firmu?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Search kampanje su najbolje za firme koje žele direktne upite/pozive. Shopping za eCommerce. Performance Max za kombinaciju kanala. Display za brand awareness. Zavisi od vašeg cilja — lead generation ili online prodaja.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliko dugo treba da se vide rezultati?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Prve konverzije obično za 2-4 nedelje. Puna optimizacija zahteva 60-90 dana jer Google algoritam treba podatke za učenje. B2B kampanje obično zahtevaju duži period (3-6 meseci) zbog dužeg sales cycle-a.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li mi treba sajt za Google oglašavanje?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Da, sajt je obavezan za Google Ads. Trebate landing page koji je brz (ispod 3 sekunde), mobile-friendly i sa jasnim pozivom na akciju. Bez dobrog sajta, čak ni savršena kampanja neće doneti rezultate.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Mogu li sam da vodim Google Ads ili mi treba stručnjak?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Možete početi sami sa manjim budžetom, ali bez iskustva obično potrošite 30-50% budžeta neoptimalno. Stručnjak se isplati kad mesečni ad spend pređe €500-1,000 jer uštede na optimizaciji obično pokrivaju fee.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

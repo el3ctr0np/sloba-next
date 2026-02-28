@@ -34,7 +34,7 @@ export default function NegativeKeywordsGuideEN() {
       {/* ── What are negative keywords ── */}
       <h2>What Are Negative Keywords and Why They Matter</h2>
       <p>
-        Negative keywords are words and phrases you DO NOT want your ads to show for. While regular keywords attract traffic, negatives filter it — protecting your budget from clicks that will never convert.
+        <a href="https://support.google.com/google-ads/answer/2453972" target="_blank" rel="noopener noreferrer">Negative keywords</a> are words and phrases you DO NOT want your ads to show for. While regular keywords attract traffic, negatives filter it — protecting your budget from clicks that will never convert.
       </p>
       <p>
         In practice, this is one of the most important optimization activities. On every account I audit, the Search Terms Report reveals at minimum 15-20% of budget spent on completely irrelevant searches.
@@ -90,7 +90,7 @@ export default function NegativeKeywordsGuideEN() {
       {/* ── Match Types for Negatives ── */}
       <h2>Match Types for Negative Keywords</h2>
       <p>
-        Negative match types work differently from positive ones. Understanding the differences is critical to avoid blocking good searches by mistake.
+        <a href="https://support.google.com/google-ads/answer/2453972" target="_blank" rel="noopener noreferrer">Negative match types</a> work differently from positive ones. Understanding the differences is critical to avoid blocking good searches by mistake.
       </p>
 
       <div className="overflow-x-auto my-6">

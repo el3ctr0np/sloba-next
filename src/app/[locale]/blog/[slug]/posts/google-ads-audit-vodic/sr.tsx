@@ -101,7 +101,7 @@ export default function GoogleAdsAuditPost() {
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advanced</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">10. Scripts i automatizacije</h3>
-          <p className="text-sm text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations</p>
+          <p className="text-sm text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — kao i <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> za offline izmene</p>
         </div>
       </div>
 
@@ -157,7 +157,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pro tip</p>
-        <p className="text-yellow-800 text-sm mb-0">Ako imate vi&#x161;e od 10 kampanja, kreirajte labels (npr. {`"Priority"`}, {`"Testing"`}, {`"Paused-Low_ROI"`}) za brže filtriranje u interfejsu. To štedi vreme pri Google Ads audit analizi.</p>
+        <p className="text-yellow-800 text-sm mb-0">Ako imate vi&#x161;e od 10 kampanja, kreirajte labels (npr. {`"Priority"`}, {`"Testing"`}, {`"Paused-Low_ROI"`}) za brže filtriranje u interfejsu. Za bulk izmene koristite <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> — štedi vreme pri Google Ads audit analizi.</p>
       </div>
 
       <hr />
@@ -828,6 +828,62 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Naj&#x10D;eš&#x107;e Google Ads gre&#x161;ke</p>
           <p className="text-xs text-gray-500 mb-0">20+ naj&#x10D;e&#x161;&#x107;ih gre&#x161;aka i kako ih izbeći</p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Najčešća pitanja o Google Ads auditu</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliko često treba raditi Google Ads audit?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Kompletan audit svakih 3-6 meseci je minimum za aktivne naloge. Za nove naloge — obavezno nakon prvih 30 dana (da se uhvate rani problemi). Za naloge sa visokim spend-om (€5.000+/mesečno), mesečni mini-audit je preporučljiv. Kontinuirana optimizacija nije zamena za periodični dubinski pregled cele strukture.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Šta proveriti prvo u Google Ads auditu?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Pet tačaka koje pokrivaju 80% problema: 1) Conversion tracking — da li se prate prave akcije? 2) Search Terms report — koje upite aktiviraju tvoje oglase? 3) Quality Score — da li su ključne reči relevantne? 4) Wasted spend — gde novac odlazi bez rezultata? 5) Landing page — konvertuje li stranica na koju šalješ saobraćaj?
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliko košta Google Ads audit?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Besplatan basic audit (surface-level pregled) nudi mnogo agencija kao lead magnet. Profesionalni audit sa detaljnom analizom i akcionim planom košta €200-800 zavisno od veličine naloga i iskustva auditora. Uzmimo u obzir da jedan dobro urađen audit može da sačuva 20-40% mesečnog budžeta — ROI je obično odličan.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Mogu li sam da uradim audit svog naloga?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Da, sa dobrom checklistom možeš pokriti osnovne probleme. Ovaj vodič ti daje tačno to. Ograničenje DIY audita je što možeš propustiti suptilne probleme koje iskusan specijalista prepoznaje odmah (npr. loša struktura kampanja, suboptimalni bidding setup, propuštene prilike). Eksterni pogled uvek donosi svežu perspektivu.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Šta raditi posle audita?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Napravi prioritizovanu listu akcija: Hitno (ove nedelje) — conversion tracking greške, aktivni problemi koji trose budžet. Visok prioritet (ovaj mesec) — negativne ključne reči, poboljšanje oglasa, Quality Score. Optimizacija (naredna 3 meseca) — testiranje bidding strategija, landing page optimizacija, proširenje kampanja. Bez prioritizacije, audit ostaje samo lista problema.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

@@ -38,7 +38,7 @@ export default function RemarketingGuideEN() {
         This does not mean your website is bad. People are simply busy — they opened five tabs, the phone rang, they decided to &quot;think about it&quot;. But what IS a problem: most advertisers let those visitors go and never contact them again.
       </p>
       <p>
-        This is where remarketing changes the game. Instead of spending budget exclusively on new visitors, remarketing campaigns allow you to return in front of people who have <strong>already shown interest</strong> — at the moment when they are ready to make a decision.
+        This is where remarketing changes the game. Instead of spending budget exclusively on new visitors, <a href="https://support.google.com/google-ads/answer/2453998" target="_blank" rel="noopener noreferrer">remarketing campaigns</a> allow you to return in front of people who have <strong>already shown interest</strong> — at the moment when they are ready to make a decision.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -57,7 +57,7 @@ export default function RemarketingGuideEN() {
       {/* ── Section 2: What is remarketing ── */}
       <h2>What Is Remarketing and How It Works</h2>
       <p>
-        <strong>Google Ads remarketing</strong> (sometimes called retargeting) is a strategy that allows you to show ads to people who have already interacted with your business. These can be website visitors, app users, YouTube viewers, or people from your email list.
+        <a href="https://support.google.com/google-ads/answer/2453998" target="_blank" rel="noopener noreferrer"><strong>Google Ads remarketing</strong></a> (sometimes called retargeting) is a strategy that allows you to show ads to people who have already interacted with your business. These can be website visitors, app users, YouTube viewers, or people from your email list.
       </p>
       <p>
         The principle is simple, but the effect is powerful: instead of targeting a completely unknown audience, you reach people who already know you.

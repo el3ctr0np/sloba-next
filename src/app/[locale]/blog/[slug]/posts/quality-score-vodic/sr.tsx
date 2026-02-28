@@ -34,10 +34,10 @@ export default function QualityScoreVodicPost() {
       {/* ── Šta je Quality Score ── */}
       <h2>Šta je Quality Score i zašto je bitan</h2>
       <p>
-        Quality Score je Google-ova dijagnostička ocena relevantnosti vaših ključnih reči, oglasa i landing page-a. Ocenjuje se na skali 1-10 za svaku ključnu reč u vašem nalogu.
+        <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> je Google-ova dijagnostička ocena relevantnosti vaših ključnih reči, oglasa i landing page-a. Ocenjuje se na skali 1-10 za svaku ključnu reč u vašem nalogu.
       </p>
       <p>
-        U praksi, ovo je jedna od najvažnijih metrika za kontrolu troškova. Na svakom auditu koji radim, vidim da nalozi sa prosečnim QS ispod 5 plaćaju 50-400% više po kliku nego što bi trebali.
+        U praksi, ovo je jedna od najvažnijih metrika za kontrolu troškova. Na svakom auditu koji radim, vidim da nalozi sa prosečnim <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">QS ispod 5</a> plaćaju 50-400% više po kliku nego što bi trebali.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">

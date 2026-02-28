@@ -191,7 +191,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Keyword Planner</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Besplatan Google-ov alat za pronalaženje novih ideja i proveru volume-a.</p>
+        <p className="text-sm text-gray-600 mb-3">Besplatan Google-ov alat za pronalaženje novih ideja i proveru volume-a. Pristupite alatu na <a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a>.</p>
         <ul className="text-sm">
           <li><strong>Discover New Keywords</strong> — unesite seed keywords ili URL konkurenta</li>
           <li><strong>Get Search Volume</strong> — proverite podatke za postojeću listu</li>
@@ -394,7 +394,7 @@ export default function KljucneReciVodicPost() {
       {/* ── Match Types ── */}
       <h2>Match Types objašnjeni</h2>
       <p>
-        Google Ads u 2026. godini ima tri match type-a. Svaki daje različit nivo kontrole nad time koje pretrage triggeruju vaš oglas.
+        Google Ads u 2026. godini ima tri match type-a. Svaki daje različit nivo kontrole nad time koje pretrage triggeruju vaš oglas. Zvanična dokumentacija o <a href="https://support.google.com/google-ads/answer/7478529" target="_blank" rel="noopener noreferrer" className="underline">match type-ovima od Google-a</a> pokriva sve detalje i najnovije promene.
       </p>
 
       <div className="overflow-x-auto my-6">

@@ -34,10 +34,10 @@ export default function QualityScoreGuideEN() {
       {/* ── What is Quality Score ── */}
       <h2>What Is Quality Score and Why It Matters</h2>
       <p>
-        Quality Score is Google's diagnostic rating of your keyword, ad, and landing page relevance. It is scored on a 1-10 scale for every keyword in your account.
+        <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> is Google's diagnostic rating of your keyword, ad, and landing page relevance. It is scored on a 1-10 scale for every keyword in your account.
       </p>
       <p>
-        In practice, this is one of the most important metrics for controlling costs. On every audit I conduct, I see that accounts with average QS below 5 pay 50-400% more per click than they should.
+        In practice, this is one of the most important metrics for controlling costs. On every audit I conduct, I see that accounts with average <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">QS below 5</a> pay 50-400% more per click than they should.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">

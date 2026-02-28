@@ -85,7 +85,7 @@ export default function GoogleAdsMistakesEN() {
         </p>
         <p className="text-sm text-gray-600 mb-3">
           Impossible to understand what works and what doesn't. Can't optimize
-          budget when everything's in one basket. Quality Score drops because ads can't
+          budget when everything's in one basket. <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> drops because ads can't
           be relevant to everything.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
@@ -462,7 +462,7 @@ export default function GoogleAdsMistakesEN() {
           <li>Add all relevant ad extensions</li>
           <li>Create 2-3 ads per ad group for testing</li>
           <li>Add specific numbers and unique benefits to copy</li>
-          <li>Test Quality Score improvements</li>
+          <li>Test <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> improvements</li>
         </ul>
       </div>
 
@@ -655,6 +655,62 @@ export default function GoogleAdsMistakesEN() {
             Real advertising costs and how to plan budget
           </p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Frequently asked questions about Google Ads mistakes</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            What is the most expensive Google Ads mistake?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Lack of negative keywords. Without them, your budget gets spent on irrelevant searches. An average account without negative keywords wastes 20-40% of budget on unproductive clicks. Regular search terms report analysis is mandatory.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Should I use broad match keywords?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Broad match can work with Smart Bidding and enough conversions (30+/month). But for smaller accounts, phrase match and exact match give better control. The most common mistake is using broad match without negative keywords — that&apos;s a recipe for wasting money.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How many ad groups should I have per campaign?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            5-20 ad groups for most campaigns. Too many (50+) makes management difficult and dilutes budget. Too few (1-2) means poor relevance. Each ad group should have thematically related keywords and matching ads.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Why is my CTR declining even though I haven&apos;t changed anything?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Most common reasons: seasonality, new competitors, ad fatigue (same ad running too long), changes in SERP layout, or Quality Score decline. Solution: refresh ads regularly (every 4-6 weeks), monitor Auction Insights, and test new variants.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Should I follow all Google Ads recommendations?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            No. Many recommendations serve Google&apos;s goal to increase your spending. Ignore: &quot;switch to broad match&quot;, &quot;increase budget by 50%&quot;, auto-apply changes. Use: RSA recommendations for ads, negative keyword suggestions, and technical improvements.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

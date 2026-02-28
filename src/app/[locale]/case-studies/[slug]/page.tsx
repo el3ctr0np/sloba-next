@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { caseStudies, getCaseStudy, getCaseStudiesByLocale } from "../data";
+import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ slug: string; locale: string }>;
@@ -20,25 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   const seeHow = isEn ? "See how." : "Pogledajte kako.";
 
-  return {
+  return buildMetadata({
     title: `${cs.company} Case Study | ${cs.highlight} — Slobodan Jelisavac`,
     description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}. ${cs.results[1]?.label}: ${cs.results[1]?.value}. ${seeHow}`,
-    alternates: {
-      canonical: `https://www.slobodan-jelisavac.com/${locale}/case-studies/${slug}`,
-      languages: {
-        sr: `https://www.slobodan-jelisavac.com/sr/case-studies/${slug}`,
-        en: `https://www.slobodan-jelisavac.com/en/case-studies/${slug}`,
-        "x-default": `https://www.slobodan-jelisavac.com/sr/case-studies/${slug}`,
-      },
-    },
-    openGraph: {
-      title: `${cs.company} Case Study | ${cs.highlight}`,
-      description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}. ${cs.results[1]?.label}: ${cs.results[1]?.value}.`,
-      url: `https://www.slobodan-jelisavac.com/${locale}/case-studies/${slug}`,
-      siteName: "Slobodan Jelisavac",
-      type: "article",
-    },
-  };
+    locale,
+    path: `/case-studies/${slug}`,
+  });
 }
 
 export default async function CaseStudyPage({ params }: Props) {

@@ -50,7 +50,7 @@ export default function GoogleShoppingGuideEN() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Upload to Google Merchant Center</strong> <span className="text-gray-500">— central platform for feed management</span></div>
+            <div><strong><a href="https://support.google.com/merchants/answer/188493" target="_blank" rel="noopener noreferrer" className="underline">Upload to Google Merchant Center</a></strong> <span className="text-gray-500">— central platform for feed management</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
@@ -94,7 +94,7 @@ export default function GoogleShoppingGuideEN() {
 
       <h2>Product feed — the foundation of Shopping campaigns</h2>
       <p>
-        Your product feed is an XML or TXT file containing all product information. Google uses this data to decide which searches to show your product for, how to rank it against competitors, and whether the product is eligible for display.
+        Your product feed is an XML or TXT file containing all product information. Google uses this data to decide which searches to show your product for, how to rank it against competitors, and whether the product is eligible for display. The full attribute specification is available in <a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener noreferrer" className="underline">Google&apos;s product data specification</a>.
       </p>
       <p>
         In my experience, 80% of Shopping campaign problems come from a poorly optimized feed. If the feed isn't good, even the best bidding won't help.
@@ -739,6 +739,62 @@ export default function GoogleShoppingGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for Businesses</p>
           <p className="text-xs text-gray-500 mb-0">Complete guide to Google Ads for B2B and B2C businesses.</p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Frequently asked questions about Google Shopping campaigns</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Do I need Merchant Center for Google Shopping?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Yes, Merchant Center is mandatory. This is where you upload your product feed with all product information (title, price, image, availability). Without MC you cannot run Shopping campaigns.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How many products do I need for Google Shopping?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            There&apos;s no minimum, but Shopping works best with 50+ products. With fewer than 20 products, budget gets spent quickly on few SKUs. For optimal results, 100+ active products in the feed is recommended.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Why are my Shopping ads being disapproved?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Most common reasons: price mismatch between website and feed, missing GTIN/MPN, poor images (watermarks, text on image), missing shipping information, or violating Google Merchant Center policies.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Shopping vs Performance Max — what&apos;s better for eCommerce?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Standard Shopping gives more control and transparency. PMax gives broader reach but less control. Ideal combination: Standard Shopping for top products + PMax for the rest of the catalog. Depends on budget and product count.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How do I optimize my product feed for better results?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Key optimizations: 1) Title with main keyword at the beginning, 2) High-quality images on white background, 3) Detailed description with keywords, 4) Accurate product_type and google_product_category, 5) Regular price and availability updates.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

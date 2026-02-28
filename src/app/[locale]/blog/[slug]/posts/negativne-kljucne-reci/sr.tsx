@@ -34,7 +34,7 @@ export default function NegativeKeywordsVodicPost() {
       {/* ── Šta su negativne ključne reči ── */}
       <h2>Šta su negativne ključne reči i zašto su kritične</h2>
       <p>
-        Negativne ključne reči (negative keywords) su reči i fraze za koje NE želite da se vaši oglasi prikazuju. Dok regularne ključne reči privlače saobraćaj, negativne ga filtriraju — štite vaš budžet od klikova koji nikada neće doneti konverziju.
+        <a href="https://support.google.com/google-ads/answer/2453972" target="_blank" rel="noopener noreferrer">Negativne ključne reči</a> (negative keywords) su reči i fraze za koje NE želite da se vaši oglasi prikazuju. Dok regularne ključne reči privlače saobraćaj, negativne ga filtriraju — štite vaš budžet od klikova koji nikada neće doneti konverziju.
       </p>
       <p>
         U praksi, ovo je jedna od najvažnijih optimizacionih aktivnosti. Na svakom nalogu koji preuzmem, Search Terms Report otkriva minimum 15-20% budžeta potrošenog na potpuno irelevantne pretrage.
@@ -90,7 +90,7 @@ export default function NegativeKeywordsVodicPost() {
       {/* ── Match Types za Negatives ── */}
       <h2>Match Types za negativne ključne reči</h2>
       <p>
-        Negativni match types rade drugačije od pozitivnih. Razumevanje razlika je ključno da ne blokirate i dobre pretrage greškom.
+        <a href="https://support.google.com/google-ads/answer/2453972" target="_blank" rel="noopener noreferrer">Negativni match types</a> rade drugačije od pozitivnih. Razumevanje razlika je ključno da ne blokirate i dobre pretrage greškom.
       </p>
 
       <div className="overflow-x-auto my-6">

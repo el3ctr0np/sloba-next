@@ -161,7 +161,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Proizvodi sa visokim intent-om</h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          Kada ljudi aktivno pretražuju vaš proizvod ili uslugu, Google Ads
+          Kada ljudi aktivno pretražuju vaš proizvod ili uslugu, <a href="https://support.google.com/google-ads/" target="_blank" rel="noopener noreferrer" className="underline">Google Ads</a>
           hvata tu potražnju u pravom trenutku. Idealno za industrije gde je
           pretraga prvi korak ka kupovini.
         </p>
@@ -238,7 +238,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </div>
         <p className="text-sm text-gray-600 mb-3">
           Kada ljudi ne znaju da vaš proizvod postoji ili da im treba, nema
-          šta da pretražuju na Google-u. Meta vam omogućava da stvorite potražnju
+          šta da pretražuju na Google-u. <a href="https://www.facebook.com/business/help" target="_blank" rel="noopener noreferrer" className="underline">Meta Ads</a> vam omogućava da stvorite potražnju
           prikazivanjem oglasa pravoj publici na osnovu interesovanja.
         </p>
         <ul className="text-sm">

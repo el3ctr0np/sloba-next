@@ -96,7 +96,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
               1
             </span>
             <div>
-              <strong>Conversion tracking radi?</strong>{" "}
+              <strong><a href="https://support.google.com/google-ads/answer/1722054" target="_blank" rel="noopener noreferrer">Conversion tracking</a> radi?</strong>{" "}
               <span className="text-gray-500">
                 — Proverite Google Ads {"->"} Goals {"->"} Summary. Ako imate 0
                 konverzija, ili konverzije koje ne odgovaraju stvarnosti,
@@ -181,7 +181,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           Problem 1
         </p>
         <p className="font-semibold mb-2">
-          Loš ili nepostojeći conversion tracking
+          Loš ili nepostojeći <a href="https://support.google.com/google-ads/answer/1722054" target="_blank" rel="noopener noreferrer">conversion tracking</a>
         </p>
         <p className="text-sm text-gray-600 mb-3">
           Ne znate koliko konverzija imate. Smart Bidding ne donosi rezultate.
@@ -771,6 +771,52 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           koje &quot;ne rade&quot; mogu se popraviti za 2-4 nedelje sa
           pravilnom analizom i akcijama.
         </p>
+      </div>
+
+      <hr />
+
+      <h2>Najčešća pitanja — zašto Google Ads ne radi</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Zašto Google Ads kampanja troši budžet ali nema konverzija?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Top 3 razloga: 1) Loš conversion tracking (ne pratite prave akcije), 2) Landing page ne konvertuje (spor, nejasan CTA, loš mobile), 3) Pogrešne ključne reči (privlačite ljude bez namere kupovine). Proverite ova tri pre bilo čega drugog.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliko dugo čekati pre nego što zaustavim kampanju?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Minimum 2-3 nedelje sa dovoljnim budžetom (barem 100-200 klikova). Ako posle 500+ klikova nema ni jedne konverzije, problem je gotovo sigurno u landing page-u ili ponudi, ne u kampnji. Smart Bidding treba minimum 2-4 nedelje learning perioda.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li je moj budžet premali za rezultate?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Ako dnevni budžet ne pokriva barem 10-15 klikova, da — budžet je premali. Izračunajte: prosečan CPC × 15 = minimalni dnevni budžet. Za većinu industrija u Srbiji, €10-20/dan je minimum. Za UK/USA, $30-50/dan.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Zašto konkurenti imaju bolje pozicije od mene?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Ad Rank = Bid × Quality Score × Expected impact of extensions. Ako konkurent ima bolji QS (bolji oglas i LP), može platiti manje po kliku i imati višu poziciju. Proverite Quality Score — ako je ispod 6, tu je problem. Takođe proverite da koristite sve relevantne ad extensions.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

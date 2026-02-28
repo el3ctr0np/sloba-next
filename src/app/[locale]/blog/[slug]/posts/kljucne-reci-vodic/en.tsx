@@ -191,7 +191,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Keyword Planner</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Free Google tool for finding new ideas and checking volume.</p>
+        <p className="text-sm text-gray-600 mb-3">Free Google tool for finding new ideas and checking volume. Access it directly at <a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a>.</p>
         <ul className="text-sm">
           <li><strong>Discover New Keywords</strong> — enter seed keywords or competitor URL</li>
           <li><strong>Get Search Volume</strong> — check data for your existing list</li>
@@ -394,7 +394,7 @@ export default function KeywordGuideEN() {
       {/* ── Match Types ── */}
       <h2>Match Types Explained</h2>
       <p>
-        Google Ads in 2026 has three match types. Each gives different level of control over which searches trigger your ad.
+        Google Ads in 2026 has three match types. Each gives different level of control over which searches trigger your ad. See <a href="https://support.google.com/google-ads/answer/7478529" target="_blank" rel="noopener noreferrer" className="underline">Google&apos;s official match types documentation</a> for the latest updates.
       </p>
 
       <div className="overflow-x-auto my-6">

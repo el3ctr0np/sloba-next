@@ -161,7 +161,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">High-intent products</h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          When people actively search for your product or service, Google Ads
+          When people actively search for your product or service, <a href="https://support.google.com/google-ads/" target="_blank" rel="noopener noreferrer" className="underline">Google Ads</a>
           captures that demand at the right moment. Ideal for industries where
           search is the first step towards purchase.
         </p>
@@ -238,7 +238,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         </div>
         <p className="text-sm text-gray-600 mb-3">
           When people don&apos;t know your product exists or need it, there&apos;s nothing
-          to search on Google. Meta lets you create demand
+          to search on Google. <a href="https://www.facebook.com/business/help" target="_blank" rel="noopener noreferrer" className="underline">Meta Ads</a> lets you create demand
           by showing ads to the right audience based on interests.
         </p>
         <ul className="text-sm">

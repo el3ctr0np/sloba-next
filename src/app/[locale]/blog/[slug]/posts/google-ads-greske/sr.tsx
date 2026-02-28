@@ -86,7 +86,7 @@ export default function GoogleAdsGreskePost() {
         </p>
         <p className="text-sm text-gray-600 mb-3">
           Nemoguće je razumeti šta radi i šta ne radi. Ne možete optimizovati
-          budžet kada je sve u jednom košu. Quality Score pada jer oglasi ne
+          budžet kada je sve u jednom košu. <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> pada jer oglasi ne
           mogu biti relevantni za sve.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
@@ -463,7 +463,7 @@ export default function GoogleAdsGreskePost() {
           <li>Dodajte sve relevantne ad extensions</li>
           <li>Kreirajte 2-3 oglasa po ad grupi za testiranje</li>
           <li>Unesite specifične brojke i unique benefits u copy</li>
-          <li>Testirajte Quality Score poboljšanja</li>
+          <li>Testirajte <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> poboljšanja</li>
         </ul>
       </div>
 
@@ -656,6 +656,62 @@ export default function GoogleAdsGreskePost() {
             Realni troškovi oglašavanja i kako planirati budžet
           </p>
         </Link>
+      </div>
+
+      <hr />
+
+      <h2>Najčešća pitanja o Google Ads greškama</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koja je najskuplja greška u Google Ads?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Nedostatak negativnih ključnih reči. Bez njih, vaš budžet se troši na irelevantne pretrage. Prosečan nalog bez negativnih ključnih reči baca 20-40% budžeta na neproduktivne klikove. Redovna analiza search terms report-a je obavezna.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li broad match ključne reči treba koristiti?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Broad match može raditi uz Smart Bidding i dovoljno konverzija (30+/mesečno). Ali za manje naloge, phrase match i exact match daju bolju kontrolu. Najčešća greška je korišćenje broad match-a bez negativnih ključnih reči — to je recept za bacanje novca.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliko ad grupa treba imati po kampnji?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            5-20 ad grupa za većinu kampanja. Previše ad grupa (50+) otežava upravljanje i razređuje budžet. Premalo (1-2) znači lošu relevantnost. Svaka ad grupa treba imati tematski povezane ključne reči i odgovarajuće oglase.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Zašto mi CTR opada iako ništa nisam menjao?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Najčešći razlozi: sezonalnost, novi konkurenti, ad fatigue (isti oglas predugo), promene u SERP layout-u, ili Quality Score pad. Rešenje: redovno osvežavajte oglase (svakih 4-6 nedelja), pratite Auction Insights i testirajte nove varijante.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li treba koristiti sve Google Ads preporuke?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Ne. Mnoge preporuke služe Googleu da poveća vašu potrošnju. Ignorirajte: &quot;prebacite na broad match&quot;, &quot;povećajte budžet za 50%&quot;, auto-apply promene. Koristite: RSA preporuke za oglase, preporuke za negativne ključne reči, i tehnička poboljšanja.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

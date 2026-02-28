@@ -95,7 +95,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
               1
             </span>
             <div>
-              <strong>Is conversion tracking working?</strong>{" "}
+              <strong><a href="https://support.google.com/google-ads/answer/1722054" target="_blank" rel="noopener noreferrer">Is conversion tracking working?</a></strong>{" "}
               <span className="text-gray-500">
                 — Check Google Ads {"->"} Goals {"->"} Summary. If you have 0
                 conversions, or conversions that don&apos;t match reality,
@@ -180,7 +180,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
           Problem 1
         </p>
         <p className="font-semibold mb-2">
-          Poor or non-existent conversion tracking
+          Poor or non-existent <a href="https://support.google.com/google-ads/answer/1722054" target="_blank" rel="noopener noreferrer">conversion tracking</a>
         </p>
         <p className="text-sm text-gray-600 mb-3">
           You don&apos;t know how many conversions you have. Smart Bidding doesn&apos;t deliver
@@ -761,6 +761,52 @@ export default function WhyGoogleAdsNotWorkingEN() {
           that &quot;don&apos;t work&quot; can be fixed in 2-4 weeks with proper analysis
           and actions.
         </p>
+      </div>
+
+      <hr />
+
+      <h2>Frequently asked questions — why Google Ads isn&apos;t working</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Why is my Google Ads campaign spending budget but getting no conversions?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Top 3 reasons: 1) Poor conversion tracking — you&apos;re not tracking the right actions or tracking is broken. 2) Landing page doesn&apos;t convert — slow load speed, unclear CTA, poor mobile experience. 3) Wrong keywords — attracting people without purchase intent. Check these three before anything else.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How long should I wait before stopping a campaign?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Minimum 2-3 weeks and at least 100-200 clicks before making any conclusions. Smart Bidding strategies need 4-6 weeks to exit the learning phase. Stopping too early is one of the most common mistakes — the algorithm needs time to find converting users.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Is my budget too small for results?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Calculate: average CPC × 15 = minimum recommended daily budget. If your average CPC is $2, you need at least $30/day ($900/month). Below that, the campaign doesn&apos;t have enough data for optimization. For Smart Bidding, Google recommends 30+ conversions per month — with less, results are unpredictable.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Why do competitors have better positions than me?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Ad Rank = Max CPC × Quality Score × Expected impact of extensions. If your QS is below 6, competitors with better relevance beat you even with lower bids. Check your Quality Score in the keywords report — scores below 5 signal that ads or landing pages aren&apos;t relevant enough for those keywords.
+          </div>
+        </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">

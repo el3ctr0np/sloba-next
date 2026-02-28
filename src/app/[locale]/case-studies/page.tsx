@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
-import { caseStudies } from "./data";
+import { getCaseStudiesByLocale } from "./data";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
@@ -168,7 +168,7 @@ export default async function CaseStudiesPage({ params }: Props) {
       {/* Case Studies Grid */}
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {caseStudies.map((study) => (
+          {getCaseStudiesByLocale(locale).map((study) => (
             <Link
               key={study.slug}
               href={{ pathname: "/case-studies/[slug]", params: { slug: study.slug } }}
