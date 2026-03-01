@@ -166,18 +166,26 @@ export function Header() {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            <span className="sr-only">Menu</span>
-            {mobileMenuOpen ? (
-              <span className="text-2xl">✖</span>
-            ) : (
-              <span className="text-2xl">☰</span>
-            )}
-          </button>
+          {/* Mobile CTA + Menu Button */}
+          <div className="lg:hidden flex items-center gap-2">
+            <Link
+              href="/kontakt"
+              className="bg-accent text-gray-900 px-4 py-2 rounded-md text-sm font-semibold border-2 border-gray-900 shadow-[3px_3px_0_0_#202124] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all duration-200"
+            >
+              {locale === "sr" ? "Konsultacija" : "Consult"}
+            </Link>
+            <button
+              className="p-2"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <span className="sr-only">Menu</span>
+              {mobileMenuOpen ? (
+                <span className="text-2xl">✖</span>
+              ) : (
+                <span className="text-2xl">☰</span>
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

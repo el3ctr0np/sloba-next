@@ -143,6 +143,32 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Newsletter signup — coming soon */}
+            <div className="mt-6 pt-4 border-t border-gray-800">
+              <h4 className="font-heading font-semibold text-sm text-gray-300 mb-2">
+                Newsletter
+              </h4>
+              <p className="text-gray-500 text-xs mb-2">
+                {t("sectionResources") === "Resursi"
+                  ? "Google Ads saveti, pravo u inbox."
+                  : "Google Ads tips, straight to your inbox."}
+              </p>
+              <div className="flex gap-2">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  disabled
+                  className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm text-gray-500 cursor-not-allowed"
+                />
+                <button
+                  disabled
+                  className="px-3 py-2 bg-gray-700 text-gray-500 rounded-md text-xs font-semibold cursor-not-allowed"
+                >
+                  {t("sectionResources") === "Resursi" ? "Uskoro" : "Soon"}
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

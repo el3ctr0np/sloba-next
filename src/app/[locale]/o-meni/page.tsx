@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { Button, Card, Section } from "@/components/ui";
+import { Button, Card, Section, AnimateOnScroll } from "@/components/ui";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -466,25 +466,27 @@ export default async function AboutPage({ params }: Props) {
         <div className="max-w-3xl mx-auto">
           <div className="space-y-8">
             {timeline.map((step, index) => (
-              <div key={step.title} className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">
-                    {index + 1}
+              <AnimateOnScroll key={step.title} animation="fade-up" delay={index * 200}>
+                <div className="flex gap-6">
+                  <div className="flex flex-col items-center">
+                    <div className="w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                      {index + 1}
+                    </div>
+                    {index < timeline.length - 1 && (
+                      <div className="w-px h-full bg-gray-300 mt-2" />
+                    )}
                   </div>
-                  {index < timeline.length - 1 && (
-                    <div className="w-px h-full bg-gray-300 mt-2" />
-                  )}
+                  <div className="pb-8">
+                    <span className="text-sm font-semibold text-yellow-600 uppercase tracking-wide">
+                      {step.period}
+                    </span>
+                    <h3 className="text-xl font-heading font-bold mt-1 mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-600">{step.description}</p>
+                  </div>
                 </div>
-                <div className="pb-8">
-                  <span className="text-sm font-semibold text-yellow-600 uppercase tracking-wide">
-                    {step.period}
-                  </span>
-                  <h3 className="text-xl font-heading font-bold mt-1 mb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600">{step.description}</p>
-                </div>
-              </div>
+              </AnimateOnScroll>
             ))}
           </div>
         </div>
@@ -500,13 +502,15 @@ export default async function AboutPage({ params }: Props) {
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
-          {differentiators.map((item) => (
-            <Card key={item.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {item.title}
-              </h3>
-              <p className="text-gray-600">{item.description}</p>
-            </Card>
+          {differentiators.map((item, index) => (
+            <AnimateOnScroll key={item.title} delay={index * 100}>
+              <Card className="h-full">
+                <h3 className="text-lg font-heading font-semibold mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600">{item.description}</p>
+              </Card>
+            </AnimateOnScroll>
           ))}
         </div>
       </Section>

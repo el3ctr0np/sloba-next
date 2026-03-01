@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
-import { Section, Card, Button } from "@/components/ui";
-import { ShoppingCart, Building2, Monitor } from "lucide-react";
+import { Section, Card, Button, AnimateOnScroll } from "@/components/ui";
+import { ShoppingCart, Building2, Monitor, Settings, ClipboardCheck, Search, Eye, PlayCircle, BarChart3 } from "lucide-react";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -570,24 +570,33 @@ export default async function ServicesPage({ params }: Props) {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {coreServices.map((service) => (
-            <Link key={service.href} href={service.href} className="group">
-              <Card className="h-full relative">
-                {service.badge && (
-                  <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
-                    {service.badge}
-                  </span>
-                )}
-                <h3 className="font-heading font-bold text-xl mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 text-sm">{service.desc}</p>
-                <span className="mt-4 inline-block text-primary font-semibold text-sm group-hover:translate-x-1 transition-transform">
-                  {locale === "en" ? "Learn more →" : "Saznajte više →"}
-                </span>
-              </Card>
-            </Link>
-          ))}
+          {coreServices.map((service, index) => {
+            const icons = [Settings, ClipboardCheck, ShoppingCart, BarChart3, Search, Eye, PlayCircle];
+            const Icon = icons[index] || Settings;
+            return (
+              <AnimateOnScroll key={service.href} delay={index * 100}>
+                <Link href={service.href} className="group block h-full">
+                  <Card className="h-full relative hover:border-primary hover:shadow-[5px_5px_0_0_#1a73e8] transition-all duration-300">
+                    {service.badge && (
+                      <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
+                        {service.badge}
+                      </span>
+                    )}
+                    <div className="mb-3 text-gray-400 group-hover:text-primary transition-colors">
+                      <Icon size={28} strokeWidth={1.5} />
+                    </div>
+                    <h3 className="font-heading font-bold text-xl mb-2">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">{service.desc}</p>
+                    <span className="mt-4 inline-block text-primary font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                      {locale === "en" ? "Learn more →" : "Saznajte više →"}
+                    </span>
+                  </Card>
+                </Link>
+              </AnimateOnScroll>
+            );
+          })}
         </div>
       </Section>
 

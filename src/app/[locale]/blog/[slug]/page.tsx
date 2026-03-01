@@ -4,6 +4,8 @@ import { Link } from "@/i18n/navigation";
 import { notFound, redirect } from "next/navigation";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { AuthorBox } from "@/components/blog/AuthorBox";
+import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
+import { MobileTOC } from "@/components/blog/MobileTOC";
 import {
   getPost,
   getAllSlugs,
@@ -886,6 +888,8 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <div className="bg-slate-950 text-white">
+      <ReadingProgressBar />
+      <MobileTOC locale={locale} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -976,7 +980,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="text-sm text-gray-500 mb-4">
                 {post.category} · {post.date}{post.readingTime && ` · ${post.readingTime}`}
               </div>
-              <div className="prose prose-slate prose-lg max-w-none text-gray-700 prose-headings:scroll-mt-24 prose-h2:mt-12 prose-h2:mb-6 prose-h3:mt-8 prose-h3:mb-4 prose-p:mb-5 prose-p:leading-relaxed prose-li:leading-relaxed prose-hr:my-10">
+              <div className="prose prose-slate prose-lg max-w-none text-gray-700 prose-headings:font-heading prose-headings:scroll-mt-24 prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:font-bold prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:md:text-2xl prose-h3:font-semibold prose-h3:mt-8 prose-h3:mb-4 prose-p:text-base prose-p:md:text-lg prose-p:mb-5 prose-p:leading-[1.75] prose-li:text-base prose-li:md:text-lg prose-li:leading-[1.75] prose-a:text-primary prose-a:underline prose-a:underline-offset-2 prose-strong:text-gray-900 prose-hr:my-10 prose-blockquote:border-l-primary prose-blockquote:text-gray-600 prose-img:rounded-xl">
                 {post.content}
               </div>
               <AuthorBox locale={locale} />

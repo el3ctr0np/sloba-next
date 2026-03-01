@@ -36,10 +36,34 @@ export function ContactForm() {
         required
         className="w-full p-3 border-2 border-gray-900 rounded-md"
       />
+      <input
+        type="url"
+        name="website"
+        placeholder={locale === "sr" ? "Website URL (opciono)" : "Website URL (optional)"}
+        className="w-full p-3 border-2 border-gray-900 rounded-md"
+      />
+      <select
+        name="budget"
+        className="w-full p-3 border-2 border-gray-900 rounded-md text-gray-500 bg-white"
+        defaultValue=""
+      >
+        <option value="" disabled>
+          {locale === "sr" ? "Mesečni budžet za oglašavanje" : "Monthly ad budget"}
+        </option>
+        <option value="<500">
+          {locale === "sr" ? "Do €500/mesec" : "Under €500/month"}
+        </option>
+        <option value="500-1500">€500 – €1,500/{locale === "sr" ? "mesec" : "month"}</option>
+        <option value="1500-5000">€1,500 – €5,000/{locale === "sr" ? "mesec" : "month"}</option>
+        <option value="5000+">€5,000+/{locale === "sr" ? "mesec" : "month"}</option>
+        <option value="not-sure">
+          {locale === "sr" ? "Nisam siguran/na" : "Not sure yet"}
+        </option>
+      </select>
       <textarea
         name="message"
         placeholder={t("messagePlaceholder")}
-        rows={5}
+        rows={4}
         required
         className="w-full p-3 border-2 border-gray-900 rounded-md"
       />

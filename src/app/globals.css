@@ -1,5 +1,6 @@
 @config "../../tailwind.config.ts";
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @layer base {
   html {
@@ -48,4 +49,39 @@
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+/* Blog prose readability — optimized for Google readability standards */
+.prose {
+  --tw-prose-body: #374151;        /* gray-700 — 7:1 contrast ratio */
+  --tw-prose-headings: #111827;    /* gray-900 — max contrast */
+  --tw-prose-links: #1a73e8;       /* primary blue */
+  --tw-prose-bold: #111827;
+  --tw-prose-counters: #6b7280;
+  --tw-prose-bullets: #9ca3af;
+  --tw-prose-quotes: #4b5563;
+  --tw-prose-quote-borders: #1a73e8;
+  --tw-prose-captions: #6b7280;
+  --tw-prose-th-borders: #d1d5db;
+  --tw-prose-td-borders: #e5e7eb;
+}
+
+/* Table scroll hint for mobile — gradient shadow on right edge */
+@media (max-width: 768px) {
+  .prose .overflow-x-auto {
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .prose .overflow-x-auto::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 32px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.9));
+    pointer-events: none;
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
 }
