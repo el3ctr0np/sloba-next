@@ -58,6 +58,13 @@ const getChapters = (locale: string): Chapter[] => {
         levelColor: "bg-green-100 text-green-800",
         posts: [
           {
+            title: "How to Start with Google Ads: Beginner's Guide [2026]",
+            excerpt:
+              "Step-by-step guide from zero to your first campaign — types, budget, keywords and common mistakes.",
+            slug: "how-to-start-google-ads",
+            readTime: "14 min"
+          },
+          {
             title: "How Much Does Google Ads Cost? Prices, Budgets & ROI [2026]",
             excerpt:
               "Real CPC prices by industry, minimum budgets and ROI planning framework.",
@@ -226,6 +233,13 @@ const getChapters = (locale: string): Chapter[] => {
       level: "Početnik",
       levelColor: "bg-green-100 text-green-800",
       posts: [
+        {
+          title: "Kako Početi sa Google Ads: Vodič za Početnike [2026]",
+          excerpt:
+            "Korak po korak vodič od nule do prve kampanje — tipovi, budžet, ključne reči i greške.",
+          slug: "kako-poceti-google-ads",
+          readTime: "14 min"
+        },
         {
           title: "Koliko Košta Google Ads? Cene, Budžeti i ROI u Srbiji [2026]",
           excerpt:

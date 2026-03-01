@@ -16,6 +16,7 @@ export const slugMap: Record<string, string> = {
   "negativne-kljucne-reci": "negative-keywords-guide",
   "quality-score-vodic": "quality-score-guide",
   "remarketing-vodic": "remarketing-guide",
+  "kako-poceti-google-ads": "how-to-start-google-ads",
 };
 
 // Reverse map: EN slug → SR (canonical) slug

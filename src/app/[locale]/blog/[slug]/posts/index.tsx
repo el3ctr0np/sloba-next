@@ -21,6 +21,7 @@ import NegativeKeywordsVodicSR from "./negativne-kljucne-reci/sr";
 import QualityScoreVodicSR from "./quality-score-vodic/sr";
 import GoogleAdsOptimizacijaSR from "./google-ads-optimizacija/sr";
 import RemarketingVodicSR from "./remarketing-vodic/sr";
+import KakoPocetiGoogleAdsSR from "./kako-poceti-google-ads/sr";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -39,6 +40,7 @@ import KeywordGuideEN from "./kljucne-reci-vodic/en";
 import NegativeKeywordsGuideEN from "./negativne-kljucne-reci/en";
 import QualityScoreGuideEN from "./quality-score-vodic/en";
 import RemarketingGuideEN from "./remarketing-vodic/en";
+import KakoPocetiGoogleAdsEN from "./kako-poceti-google-ads/en";
 
 export type PostData = {
   slug: string;
@@ -229,6 +231,17 @@ const srPosts: PostData[] = [
       "Naučite kako da pokrenete Google Ads remarketing kampanje koje vraćaju posetioce i smanjuju CPA za 50-70%. Vodič sa segmentacijom, strategijama i realnim primerima.",
     readingTime: "15 min",
     content: <RemarketingVodicSR />
+  },
+  {
+    slug: "kako-poceti-google-ads",
+    title: "Kako Početi sa Google Ads: Vodič za Početnike [2026]",
+    date: "2026-03-01",
+    dateModified: "2026-03-01",
+    category: "Google Ads",
+    metaDescription:
+      "Kako početi sa Google Ads od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
+    readingTime: "14 min",
+    content: <KakoPocetiGoogleAdsSR />
   }
 ];
 
@@ -409,6 +422,17 @@ const enPosts: PostData[] = [
       "Learn how to launch Google Ads remarketing campaigns that bring back visitors and reduce CPA by 50-70%. Guide with segmentation, strategies, and real examples.",
     readingTime: "15 min",
     content: <RemarketingGuideEN />
+  },
+  {
+    slug: "how-to-start-google-ads",
+    title: "How to Start with Google Ads: Beginner's Guide [2026]",
+    date: "2026-03-01",
+    dateModified: "2026-03-01",
+    category: "Google Ads",
+    metaDescription:
+      "How to start Google Ads from scratch? Step-by-step beginner guide — campaign types, budget, keywords, and common mistakes. Everything you need before your first campaign.",
+    readingTime: "14 min",
+    content: <KakoPocetiGoogleAdsEN />
   }
 ];
 

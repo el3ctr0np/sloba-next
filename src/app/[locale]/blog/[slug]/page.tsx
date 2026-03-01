@@ -733,6 +733,31 @@ const faqSchemaAuditEN = {
   ]
 };
 
+// --- kako-poceti-google-ads ---
+const faqSchemaKakoPocetiSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Da li se Google Ads isplati za male biznise?", acceptedAnswer: { "@type": "Answer", text: "Da, Google Ads je jedan od najisplativijih kanala za male biznise jer plaćate samo kada neko klikne na vaš oglas. Ključ je precizno targetiranje — koristite lokalne ključne reči, postavite geografski targeting i počnite sa budžetom od €10-20 dnevno. Mali biznisi sa lokalnom uslugom (vodoinstalater, šlep služba, stomatolog) često imaju najbolji ROI jer je konkurencija manja." } },
+    { "@type": "Question", name: "Koliko vremena treba da se vide rezultati sa Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Prve klikove i posetioce videćete istog dana kad pokrenete kampanju. Međutim, za pouzdane podatke o konverzijama potrebno je 2-4 nedelje. Google-ov algoritam koristi prvih 14 dana za učenje (learning period), a prava optimizacija počinje posle 30 dana kada imate dovoljno podataka za donošenje odluka." } },
+    { "@type": "Question", name: "Da li mogu sam da vodim Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Da, možete, ali budite spremni da uložite vreme u učenje. Google Skillshop nudi besplatnu sertifikaciju. Za jednostavne kampanje (jedan proizvod, jedna lokacija) DIY pristup funkcioniše. Za kompleksnije naloge (eCommerce sa 100+ proizvoda, višestruke lokacije, budžet preko €1000/mesec) stručnjak će vam uštedeti novac i vreme." } },
+    { "@type": "Question", name: "Koji je minimalni budžet za Google Ads u Srbiji?", acceptedAnswer: { "@type": "Answer", text: "Tehnički možete početi sa bilo kojim iznosom, ali preporučujem minimum €300-500 mesečno (€10-20 dnevno) za Srbiju. Ispod toga nemate dovoljno podataka za optimizaciju. CPC u Srbiji je obično €1-3 za većinu industrija, što znači da sa €10 dnevno dobijate 3-10 klikova — dovoljno za testiranje." } },
+    { "@type": "Question", name: "Da li preporučujete Google Ads za svaki biznis?", acceptedAnswer: { "@type": "Answer", text: "Ne. Google Ads nije za svakoga. Ne preporučujem ako: nemate funkcionalan sajt sa jasnim pozivom na akciju, vaša usluga ima ekstremno nisku maržu, vaša ciljna grupa ne koristi Google za pretragu, ili nemate budžet za minimum 3 meseca testiranja. U tim slučajevima, SEO ili društvene mreže mogu biti bolji prvi korak." } },
+  ]
+};
+
+const faqSchemaKakoPocetiEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Is Google Ads worth it for small businesses?", acceptedAnswer: { "@type": "Answer", text: "Yes, Google Ads is one of the most cost-effective channels for small businesses because you only pay when someone clicks your ad. The key is precise targeting — use local keywords, set geographic targeting, and start with a budget of €10-20 per day. Small businesses with local services (plumber, tow truck, dentist) often see the best ROI because competition is lower." } },
+    { "@type": "Question", name: "How long until I see results from Google Ads?", acceptedAnswer: { "@type": "Answer", text: "You'll see your first clicks and visitors the same day you launch your campaign. However, for reliable conversion data you need 2-4 weeks. Google's algorithm uses the first 14 days for learning (learning period), and real optimization begins after 30 days when you have enough data for decision-making." } },
+    { "@type": "Question", name: "Can I manage Google Ads myself?", acceptedAnswer: { "@type": "Answer", text: "Yes, you can, but be prepared to invest time in learning. Google Skillshop offers free certification. For simple campaigns (one product, one location) the DIY approach works well. For more complex accounts (eCommerce with 100+ products, multiple locations, budget over €1000/month) an expert will save you money and time." } },
+    { "@type": "Question", name: "What's the minimum budget for Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Technically you can start with any amount, but I recommend a minimum of €300-500 per month (€10-20 per day). Below that you won't have enough data for optimization. CPC varies by market — €1-3 in Eastern Europe, €2-8 in Western Europe, €3-15 in the US — so your minimum budget depends on your target market." } },
+    { "@type": "Question", name: "Do you recommend Google Ads for every business?", acceptedAnswer: { "@type": "Answer", text: "No. Google Ads isn't for everyone. I don't recommend it if: you don't have a functional website with a clear call-to-action, your service has extremely low margins, your target audience doesn't use Google for search, or you can't commit to at least 3 months of testing budget. In those cases, SEO or social media may be a better first step." } },
+  ]
+};
+
 function getFaqSchema(slug: string, locale: string) {
   if (slug === "google-ads-vs-meta") {
     return locale === "en" ? faqSchemaGoogleVsMetaEN : faqSchemaGoogleVsMetaSR;
@@ -781,6 +806,9 @@ function getFaqSchema(slug: string, locale: string) {
   }
   if (slug === "google-ads-audit-vodic") {
     return locale === "en" ? faqSchemaAuditEN : faqSchemaAuditSR;
+  }
+  if (slug === "kako-poceti-google-ads") {
+    return locale === "en" ? faqSchemaKakoPocetiEN : faqSchemaKakoPocetiSR;
   }
   return null;
 }
