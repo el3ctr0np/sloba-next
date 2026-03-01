@@ -170,9 +170,9 @@ export function Header() {
           <div className="lg:hidden flex items-center gap-2">
             <Link
               href="/kontakt"
-              className="bg-accent text-gray-900 px-4 py-2 rounded-md text-sm font-semibold border-2 border-gray-900 shadow-[3px_3px_0_0_#202124] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all duration-200"
+              className="bg-accent text-gray-900 px-3 py-2 rounded-md text-xs font-semibold border-2 border-gray-900 shadow-[3px_3px_0_0_#202124] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all duration-200"
             >
-              {locale === "sr" ? "Konsultacija" : "Consult"}
+              {locale === "sr" ? "Zakažite konsultaciju" : "Book a Call"}
             </Link>
             <button
               className="p-2"
