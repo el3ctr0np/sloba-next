@@ -46,8 +46,24 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           </div>
         </div>
       </div>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#razumem-frustraciju-ali-problem-je-resiv" className="text-sm text-gray-700 hover:text-primary underline">Razumem frustraciju — ali problem je rešiv</a></li>
+          <li><a href="#pre-svega-proverite-osnove" className="text-sm text-gray-700 hover:text-primary underline">Pre svega — proverite osnove</a></li>
+          <li><a href="#osam-razloga-zasto-kampanje-ne-rade" className="text-sm text-gray-700 hover:text-primary underline">Osam razloga zašto kampanje ne rade</a></li>
+          <li><a href="#dijagnosticki-vodic-kako-identifikovati-problem" className="text-sm text-gray-700 hover:text-primary underline">Dijagnostički vodič — kako identifikovati problem</a></li>
+          <li><a href="#koliko-vremena-dati-kampanji-pre-nego-odustanete" className="text-sm text-gray-700 hover:text-primary underline">Koliko vremena dati kampanji pre nego odustanete</a></li>
+          <li><a href="#kada-potraziti-pomoc" className="text-sm text-gray-700 hover:text-primary underline">Kada potražiti pomoć</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-zasto-google-ads-ne-radi" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja — zašto Google Ads ne radi</a></li>
+        </ol>
+      </nav>
 
-      <h2>Razumem frustraciju — ali problem je rešiv</h2>
+
+
+      <h2 id="razumem-frustraciju-ali-problem-je-resiv">Razumem frustraciju — ali problem je rešiv</h2>
       <p>
         &quot;Google Ads nam ne radi.&quot; Ovu rečenicu čujem bar jednom
         nedeljno. Od vlasnika firmi koji su pokušali sami. Od marketing
@@ -83,7 +99,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2>Pre svega — proverite osnove</h2>
+      <h2 id="pre-svega-proverite-osnove">Pre svega — proverite osnove</h2>
       <p>
         Pre nego što pređemo na dubinsku analizu, pet brzih provera koje su u
         80% slučajeva dovoljne da identifikujete problem.
@@ -169,7 +185,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2>Osam razloga zašto kampanje ne rade</h2>
+      <h2 id="osam-razloga-zasto-kampanje-ne-rade">Osam razloga zašto kampanje ne rade</h2>
       <p>
         Ovo su najučestaliji razlozi zašto Google Ads kampanje ne donose
         rezultate — rangirani po učestalosti, ne po važnosti. Za svaki dajem
@@ -358,7 +374,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2>Dijagnostički vodič — kako identifikovati problem</h2>
+      <h2 id="dijagnosticki-vodic-kako-identifikovati-problem">Dijagnostički vodič — kako identifikovati problem</h2>
       <p>
         Ako ne znate gde je problem, idite ovim redosledom. Ovo je framework koji
         koristim kad preuzimam novi nalog.
@@ -507,7 +523,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2>Koliko vremena dati kampanji pre nego odustanete</h2>
+      <h2 id="koliko-vremena-dati-kampanji-pre-nego-odustanete">Koliko vremena dati kampanji pre nego odustanete</h2>
       <p>
         Jedna od najčešćih greški je da se kampanja odustaje prerano. Evo
         realističkih timelinova po tipu kampanje.
@@ -572,7 +588,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2>Kada potražiti pomoć</h2>
+      <h2 id="kada-potraziti-pomoc">Kada potražiti pomoć</h2>
       <p>
         Neki problemi možete rešiti sami za sat vremena. Za druge vam treba
         dublje znanje. Evo kada ima smisla raditi sam, a kada angažovati
@@ -626,7 +642,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2>Često postavljana pitanja</h2>
+      <h2 id="cesto-postavljana-pitanja">Često postavljana pitanja</h2>
 
       <details
         className="bg-white border-2 border-gray-200 rounded-xl group mb-3"
@@ -775,7 +791,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2>Najčešća pitanja — zašto Google Ads ne radi</h2>
+      <h2 id="najcesca-pitanja-zasto-google-ads-ne-radi">Najčešća pitanja — zašto Google Ads ne radi</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

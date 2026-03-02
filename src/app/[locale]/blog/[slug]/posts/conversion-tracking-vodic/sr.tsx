@@ -39,8 +39,26 @@ export default function ConversionTrackingVodicPost() {
       </p>
 
       <hr />
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#zasto-je-conversion-tracking-temelj-google-ads-a" className="text-sm text-gray-700 hover:text-primary underline">Zašto je conversion tracking temelj Google Ads-a</a></li>
+          <li><a href="#tipovi-konverzija-koje-treba-pratiti" className="text-sm text-gray-700 hover:text-primary underline">Tipovi konverzija koje treba pratiti</a></li>
+          <li><a href="#alati-za-conversion-tracking" className="text-sm text-gray-700 hover:text-primary underline">Alati za conversion tracking</a></li>
+          <li><a href="#korak-po-korak-postavljanje-tracking-a" className="text-sm text-gray-700 hover:text-primary underline">Korak po korak — postavljanje tracking-a</a></li>
+          <li><a href="#conversion-tracking-za-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Conversion tracking za eCommerce</a></li>
+          <li><a href="#conversion-tracking-za-lead-generation" className="text-sm text-gray-700 hover:text-primary underline">Conversion tracking za Lead Generation</a></li>
+          <li><a href="#najcesce-greske-u-conversion-tracking-u" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške u conversion tracking-u</a></li>
+          <li><a href="#kako-proveriti-da-li-tracking-radi-ispravno" className="text-sm text-gray-700 hover:text-primary underline">Kako proveriti da li tracking radi ispravno</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-o-conversion-tracking-u" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o conversion tracking-u</a></li>
+        </ol>
+      </nav>
 
-      <h2>Zašto je conversion tracking temelj Google Ads-a</h2>
+
+
+      <h2 id="zasto-je-conversion-tracking-temelj-google-ads-a">Zašto je conversion tracking temelj Google Ads-a</h2>
       <p>
         Preporučujem da na conversion tracking gledate kao na nervni sistem vaših kampanja. Bez njega, algoritmi ne znaju šta je dobar signal, a vi gubite kontrolu nad budžetom.
       </p>
@@ -72,7 +90,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Tipovi konverzija koje treba pratiti</h2>
+      <h2 id="tipovi-konverzija-koje-treba-pratiti">Tipovi konverzija koje treba pratiti</h2>
       <p>
         Preporučujem da ne pratite samo krajnji cilj (kupovinu ili lead), već i korake koji vode ka njemu. Evo koje tipove konverzija treba postaviti za različite tipove biznisa.
       </p>
@@ -150,7 +168,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Alati za conversion tracking</h2>
+      <h2 id="alati-za-conversion-tracking">Alati za conversion tracking</h2>
       <p>
         Postoje tri glavna načina da pratite konverzije u Google Ads-u. Svaki ima svoje prednosti i kada ga koristiti.
       </p>
@@ -188,7 +206,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Korak po korak — postavljanje tracking-a</h2>
+      <h2 id="korak-po-korak-postavljanje-tracking-a">Korak po korak — postavljanje tracking-a</h2>
       <p>
         Ovo je postupak koji koristim za sve klijente. GTM + GA4 + Google Ads tag + Enhanced Conversions = kompletna postavka koja daje maksimalnu preciznost.
       </p>
@@ -255,7 +273,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Conversion tracking za eCommerce</h2>
+      <h2 id="conversion-tracking-za-ecommerce">Conversion tracking za eCommerce</h2>
       <p>
         Za eCommerce, moje iskustvo pokazuje da je tracking vrednosti transakcije ključan. Bez toga, Google ne zna razliku između kupovine od €10 i €500.
       </p>
@@ -314,7 +332,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Conversion tracking za Lead Generation</h2>
+      <h2 id="conversion-tracking-za-lead-generation">Conversion tracking za Lead Generation</h2>
       <p>
         Za lead gen kampanje, moje iskustvo je da nije dovoljno pratiti samo form submissions. Morati pratiti kvalitet lead-ova kroz offline conversion import.
       </p>
@@ -373,7 +391,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Najčešće greške u conversion tracking-u</h2>
+      <h2 id="najcesce-greske-u-conversion-tracking-u">Najčešće greške u conversion tracking-u</h2>
       <p>
         Tokom godina sam video stotine naloga i evo grešaka koje se najčešće ponavljaju. Svaka od njih košta budžet i performance.
       </p>
@@ -440,7 +458,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Kako proveriti da li tracking radi ispravno</h2>
+      <h2 id="kako-proveriti-da-li-tracking-radi-ispravno">Kako proveriti da li tracking radi ispravno</h2>
       <p>
         Postavljanje tracking-a je polovina posla. Druga polovina je verifikacija da sve radi kako treba. Evo postupka koji koristim za svaki nalog.
       </p>
@@ -529,7 +547,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Često postavljana pitanja</h2>
+      <h2 id="cesto-postavljana-pitanja">Često postavljana pitanja</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group my-3" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -631,7 +649,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2>Najčešća pitanja o conversion tracking-u</h2>
+      <h2 id="najcesca-pitanja-o-conversion-tracking-u">Najčešća pitanja o conversion tracking-u</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

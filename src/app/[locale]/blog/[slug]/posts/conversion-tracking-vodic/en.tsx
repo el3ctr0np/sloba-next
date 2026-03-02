@@ -39,8 +39,26 @@ export default function ConversionTrackingGuideEN() {
       </p>
 
       <hr />
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#why-conversion-tracking-is-the-foundation-of-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Why conversion tracking is the foundation of Google Ads</a></li>
+          <li><a href="#types-of-conversions-to-track" className="text-sm text-gray-700 hover:text-primary underline">Types of conversions to track</a></li>
+          <li><a href="#tools-for-conversion-tracking" className="text-sm text-gray-700 hover:text-primary underline">Tools for conversion tracking</a></li>
+          <li><a href="#step-by-step-setting-up-tracking" className="text-sm text-gray-700 hover:text-primary underline">Step by step — setting up tracking</a></li>
+          <li><a href="#conversion-tracking-for-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Conversion tracking for eCommerce</a></li>
+          <li><a href="#conversion-tracking-for-lead-generation" className="text-sm text-gray-700 hover:text-primary underline">Conversion tracking for Lead Generation</a></li>
+          <li><a href="#most-common-conversion-tracking-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most common conversion tracking mistakes</a></li>
+          <li><a href="#how-to-verify-tracking-is-working-correctly" className="text-sm text-gray-700 hover:text-primary underline">How to verify tracking is working correctly</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-about-conversion-tracking" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about conversion tracking</a></li>
+        </ol>
+      </nav>
 
-      <h2>Why conversion tracking is the foundation of Google Ads</h2>
+
+
+      <h2 id="why-conversion-tracking-is-the-foundation-of-google-ads">Why conversion tracking is the foundation of Google Ads</h2>
       <p>
         I recommend viewing conversion tracking as your campaign's nervous system. Without it, algorithms don't know what's a good signal, and you lose control over budget.
       </p>
@@ -72,7 +90,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>Types of conversions to track</h2>
+      <h2 id="types-of-conversions-to-track">Types of conversions to track</h2>
       <p>
         I recommend tracking not just the final goal (purchase or lead), but also steps leading to it. Here are the conversion types to set up for different business types.
       </p>
@@ -150,7 +168,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>Tools for conversion tracking</h2>
+      <h2 id="tools-for-conversion-tracking">Tools for conversion tracking</h2>
       <p>
         There are three main ways to track conversions in Google Ads. Each has its advantages and when to use it.
       </p>
@@ -188,7 +206,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>Step by step — setting up tracking</h2>
+      <h2 id="step-by-step-setting-up-tracking">Step by step — setting up tracking</h2>
       <p>
         This is the process I use for all clients. GTM + GA4 + Google Ads tag + Enhanced Conversions = complete setup that delivers maximum accuracy.
       </p>
@@ -255,7 +273,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>Conversion tracking for eCommerce</h2>
+      <h2 id="conversion-tracking-for-ecommerce">Conversion tracking for eCommerce</h2>
       <p>
         For eCommerce, my experience shows that tracking transaction value is critical. Without it, Google doesn't know the difference between a $10/£8 purchase and a $500/£400 purchase.
       </p>
@@ -314,7 +332,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>Conversion tracking for Lead Generation</h2>
+      <h2 id="conversion-tracking-for-lead-generation">Conversion tracking for Lead Generation</h2>
       <p>
         For lead gen campaigns, my experience shows it's not enough to track just form submissions. You must track lead quality through offline conversion import.
       </p>
@@ -373,7 +391,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>Most common conversion tracking mistakes</h2>
+      <h2 id="most-common-conversion-tracking-mistakes">Most common conversion tracking mistakes</h2>
       <p>
         Over the years I've seen hundreds of accounts, and here are the mistakes that repeat most often. Each costs budget and performance.
       </p>
@@ -440,7 +458,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>How to verify tracking is working correctly</h2>
+      <h2 id="how-to-verify-tracking-is-working-correctly">How to verify tracking is working correctly</h2>
       <p>
         Setting up tracking is half the job. The other half is verification that everything works as it should. Here's the process I use for every account.
       </p>
@@ -529,7 +547,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group my-3" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -631,7 +649,7 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
-      <h2>Frequently asked questions about conversion tracking</h2>
+      <h2 id="frequently-asked-questions-about-conversion-tracking">Frequently asked questions about conversion tracking</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

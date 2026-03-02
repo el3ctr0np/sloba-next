@@ -55,8 +55,25 @@ export default function EcommerceVsB2BEN() {
       </p>
 
       <hr />
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#why-ecommerce-and-b2b-differ-in-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Why eCommerce and B2B differ in Google Ads</a></li>
+          <li><a href="#key-differences-comparison" className="text-sm text-gray-700 hover:text-primary underline">Key differences — comparison</a></li>
+          <li><a href="#google-ads-strategy-for-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Google Ads strategy for eCommerce</a></li>
+          <li><a href="#google-ads-strategy-for-b2b" className="text-sm text-gray-700 hover:text-primary underline">Google Ads strategy for B2B</a></li>
+          <li><a href="#kpis-and-measuring-success" className="text-sm text-gray-700 hover:text-primary underline">KPIs and measuring success</a></li>
+          <li><a href="#budget-and-expectations" className="text-sm text-gray-700 hover:text-primary underline">Budget and expectations</a></li>
+          <li><a href="#most-common-mistakes-by-model" className="text-sm text-gray-700 hover:text-primary underline">Most common mistakes by model</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-ecommerce-vs-b2b-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions — eCommerce vs B2B Google Ads</a></li>
+        </ol>
+      </nav>
 
-      <h2>Why eCommerce and B2B differ in Google Ads</h2>
+
+
+      <h2 id="why-ecommerce-and-b2b-differ-in-google-ads">Why eCommerce and B2B differ in Google Ads</h2>
       <p>
         Before diving into specific tactics, you need to understand the fundamental differences between the two models.
       </p>
@@ -72,7 +89,7 @@ export default function EcommerceVsB2BEN() {
 
       <hr />
 
-      <h2>Key differences — comparison</h2>
+      <h2 id="key-differences-comparison">Key differences — comparison</h2>
       <p>
         I recommend understanding the direct differences between models before defining strategy.
       </p>
@@ -140,7 +157,7 @@ export default function EcommerceVsB2BEN() {
 
       <hr />
 
-      <h2>Google Ads strategy for eCommerce</h2>
+      <h2 id="google-ads-strategy-for-ecommerce">Google Ads strategy for eCommerce</h2>
       <p>
         For eCommerce, Google Ads strategy focuses on quick conversion, high ROAS, and Shopping campaigns as the key channel.
       </p>
@@ -304,7 +321,7 @@ export default function EcommerceVsB2BEN() {
 
       <hr />
 
-      <h2>Google Ads strategy for B2B</h2>
+      <h2 id="google-ads-strategy-for-b2b">Google Ads strategy for B2B</h2>
       <p>
         For B2B, Google Ads strategy focuses on lead quality (not volume), longer sales cycle, and offline conversion tracking.
       </p>
@@ -473,7 +490,7 @@ export default function EcommerceVsB2BEN() {
 
       <hr />
 
-      <h2>KPIs and measuring success</h2>
+      <h2 id="kpis-and-measuring-success">KPIs and measuring success</h2>
       <p>
         I recommend different KPIs for eCommerce and B2B because optimizing towards wrong metrics wastes money.
       </p>
@@ -553,7 +570,7 @@ export default function EcommerceVsB2BEN() {
 
       <hr />
 
-      <h2>Budget and expectations</h2>
+      <h2 id="budget-and-expectations">Budget and expectations</h2>
       <p>
         Realistic expectations around budget and results vary drastically between eCommerce and B2B.
       </p>
@@ -601,7 +618,7 @@ export default function EcommerceVsB2BEN() {
 
       <hr />
 
-      <h2>Most common mistakes by model</h2>
+      <h2 id="most-common-mistakes-by-model">Most common mistakes by model</h2>
       <p>
         Each model has specific mistakes I see with new clients. I recommend avoiding them.
       </p>
@@ -659,7 +676,7 @@ export default function EcommerceVsB2BEN() {
 
       <hr />
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -802,7 +819,7 @@ export default function EcommerceVsB2BEN() {
 
       <hr />
 
-      <h2>Frequently asked questions — eCommerce vs B2B Google Ads</h2>
+      <h2 id="frequently-asked-questions-ecommerce-vs-b2b-google-ads">Frequently asked questions — eCommerce vs B2B Google Ads</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

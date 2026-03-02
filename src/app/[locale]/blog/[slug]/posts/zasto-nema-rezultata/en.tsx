@@ -46,8 +46,24 @@ export default function WhyGoogleAdsNotWorkingEN() {
           </div>
         </div>
       </div>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#i-understand-the-frustration-but-the-problem-is-fixable" className="text-sm text-gray-700 hover:text-primary underline">I understand the frustration — but the problem is fixable</a></li>
+          <li><a href="#first-things-first-check-the-basics" className="text-sm text-gray-700 hover:text-primary underline">First things first — check the basics</a></li>
+          <li><a href="#eight-reasons-why-campaigns-dont-work" className="text-sm text-gray-700 hover:text-primary underline">Eight reasons why campaigns don&apos;t work</a></li>
+          <li><a href="#diagnostic-guide-how-to-identify-the-problem" className="text-sm text-gray-700 hover:text-primary underline">Diagnostic guide — how to identify the problem</a></li>
+          <li><a href="#how-much-time-to-give-a-campaign-before-giving-up" className="text-sm text-gray-700 hover:text-primary underline">How much time to give a campaign before giving up</a></li>
+          <li><a href="#when-to-seek-help" className="text-sm text-gray-700 hover:text-primary underline">When to seek help</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-why-google-ads-isnt-working" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions — why Google Ads isn&apos;t working</a></li>
+        </ol>
+      </nav>
 
-      <h2>I understand the frustration — but the problem is fixable</h2>
+
+
+      <h2 id="i-understand-the-frustration-but-the-problem-is-fixable">I understand the frustration — but the problem is fixable</h2>
       <p>
         &quot;Google Ads isn&apos;t working for us.&quot; I hear this at least once a
         week. From business owners who tried running it themselves. From marketing
@@ -82,7 +98,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <hr />
 
-      <h2>First things first — check the basics</h2>
+      <h2 id="first-things-first-check-the-basics">First things first — check the basics</h2>
       <p>
         Before we dive into deep analysis, here are five quick checks that in 80%
         of cases are enough to identify the problem.
@@ -168,7 +184,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <hr />
 
-      <h2>Eight reasons why campaigns don&apos;t work</h2>
+      <h2 id="eight-reasons-why-campaigns-dont-work">Eight reasons why campaigns don&apos;t work</h2>
       <p>
         These are the most common reasons why Google Ads campaigns don&apos;t deliver
         results — ranked by frequency, not importance. For each I provide a
@@ -355,7 +371,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <hr />
 
-      <h2>Diagnostic guide — how to identify the problem</h2>
+      <h2 id="diagnostic-guide-how-to-identify-the-problem">Diagnostic guide — how to identify the problem</h2>
       <p>
         If you don&apos;t know where the problem is, follow this order. This is the
         framework I use when taking over a new account.
@@ -500,7 +516,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <hr />
 
-      <h2>How much time to give a campaign before giving up</h2>
+      <h2 id="how-much-time-to-give-a-campaign-before-giving-up">How much time to give a campaign before giving up</h2>
       <p>
         One of the most common mistakes is giving up on a campaign too early.
         Here are realistic timelines by campaign type.
@@ -565,7 +581,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <hr />
 
-      <h2>When to seek help</h2>
+      <h2 id="when-to-seek-help">When to seek help</h2>
       <p>
         Some problems you can fix yourself in an hour. Others require deeper
         expertise. Here&apos;s when it makes sense to work solo vs when to hire an expert.
@@ -618,7 +634,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <hr />
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
       <details
         className="bg-white border-2 border-gray-200 rounded-xl group mb-3"
@@ -765,7 +781,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <hr />
 
-      <h2>Frequently asked questions — why Google Ads isn&apos;t working</h2>
+      <h2 id="frequently-asked-questions-why-google-ads-isnt-working">Frequently asked questions — why Google Ads isn&apos;t working</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

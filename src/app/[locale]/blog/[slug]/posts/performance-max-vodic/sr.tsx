@@ -35,8 +35,26 @@ export default function PerformanceMaxVodicPost() {
       </div>
 
       <hr />
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#sta-je-performance-max-i-zasto-je-poseban" className="text-sm text-gray-700 hover:text-primary underline">Šta je Performance Max i zašto je poseban</a></li>
+          <li><a href="#kada-koristiti-performance-max-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Kada koristiti Performance Max kampanje</a></li>
+          <li><a href="#struktura-performance-max-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Struktura Performance Max kampanje</a></li>
+          <li><a href="#performance-max-za-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Performance Max za eCommerce</a></li>
+          <li><a href="#performance-max-za-b2b-firme" className="text-sm text-gray-700 hover:text-primary underline">Performance Max za B2B firme</a></li>
+          <li><a href="#optimizacija-performance-max-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Optimizacija Performance Max kampanja</a></li>
+          <li><a href="#najcesce-greske-sa-performance-max" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške sa Performance Max</a></li>
+          <li><a href="#realna-ocekivanja-i-rezultati" className="text-sm text-gray-700 hover:text-primary underline">Realna očekivanja i rezultati</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-o-performance-max-kampanjama" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Performance Max kampanjama</a></li>
+        </ol>
+      </nav>
 
-      <h2>Šta je Performance Max i zašto je poseban</h2>
+
+
+      <h2 id="sta-je-performance-max-i-zasto-je-poseban">Šta je Performance Max i zašto je poseban</h2>
       <p>
         <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max</a> je automatizovana kampanja koja koristi machine learning da prikaže vaše oglase na svim Google mrežama odjednom: Search, Shopping, Display, YouTube, Gmail, Discover i Maps. Umesto da kreirate odvojene kampanje po kanalu, dajete Google-u sirov materijal i on kombinuje sve u stvarnom vremenu.
       </p>
@@ -63,7 +81,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Kada koristiti Performance Max kampanje</h2>
+      <h2 id="kada-koristiti-performance-max-kampanje">Kada koristiti Performance Max kampanje</h2>
       <p>
         PMax nije univerzalno rešenje. U nekim situacijama je idealan, u drugim je greška. Evo kada preporučujem PMax vs kada ne.
       </p>
@@ -98,7 +116,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Struktura Performance Max kampanje</h2>
+      <h2 id="struktura-performance-max-kampanje">Struktura Performance Max kampanje</h2>
       <p>
         PMax kampanja se sastoji od asset grupa. Svaka asset grupa je tematska celina sa svojim kreativima, audience signalima, i (za eCommerce) listing grupama proizvoda.
       </p>
@@ -180,7 +198,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Performance Max za eCommerce</h2>
+      <h2 id="performance-max-za-ecommerce">Performance Max za eCommerce</h2>
       <p>
         Za eCommerce, PMax je najmoćniji kada se pokreće sa optimizovanim product feed-om. PMax bez feed-a je u suštini Display kampanja u novom pakovanju — gubi Shopping i Product Listing Ads moć.
       </p>
@@ -273,7 +291,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Performance Max za B2B firme</h2>
+      <h2 id="performance-max-za-b2b-firme">Performance Max za B2B firme</h2>
       <p>
         PMax za B2B je izazovniji nego za eCommerce. Manji volume konverzija, duži sales cycles, i potreba za kvalitetom leadova (ne samo volume) čine setup komplikovanijim.
       </p>
@@ -327,7 +345,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Optimizacija Performance Max kampanja</h2>
+      <h2 id="optimizacija-performance-max-kampanja">Optimizacija Performance Max kampanja</h2>
       <p>
         Najveća frustracija sa PMax-om je ograničena kontrola. Ali kontrola nije nula — imate poluge koje možete pomerati. Evo šta možete (i treba) optimizovati.
       </p>
@@ -446,7 +464,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Najčešće greške sa Performance Max</h2>
+      <h2 id="najcesce-greske-sa-performance-max">Najčešće greške sa Performance Max</h2>
       <p>
         Ovo su greške koje vidim kod 90% oglašivača koji pokušaju PMax prvi put — i koje koštaju novca.
       </p>
@@ -495,7 +513,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Realna očekivanja i rezultati</h2>
+      <h2 id="realna-ocekivanja-i-rezultati">Realna očekivanja i rezultati</h2>
       <p>
         Najvažnije pitanje: šta možete očekivati od PMax-a u praksi? Evo realnih brojki baziranih na mom iskustvu sa 20+ PMax kampanja.
       </p>
@@ -568,7 +586,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Često postavljana pitanja</h2>
+      <h2 id="cesto-postavljana-pitanja">Često postavljana pitanja</h2>
 
       <div className="space-y-3 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -657,7 +675,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
 
-      <h2>Najčešća pitanja o Performance Max kampanjama</h2>
+      <h2 id="najcesca-pitanja-o-performance-max-kampanjama">Najčešća pitanja o Performance Max kampanjama</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

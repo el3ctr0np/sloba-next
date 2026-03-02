@@ -37,8 +37,24 @@ export default function GoogleAdsGreskePost() {
           </div>
         </div>
       </div>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#zasto-su-greske-u-google-ads-u-skupe" className="text-sm text-gray-700 hover:text-primary underline">Zašto su greške u Google Ads-u skupe</a></li>
+          <li><a href="#greske-u-strukturi-naloga" className="text-sm text-gray-700 hover:text-primary underline">Greške u strukturi naloga</a></li>
+          <li><a href="#greske-u-kljucnim-recima" className="text-sm text-gray-700 hover:text-primary underline">Greške u ključnim rečima</a></li>
+          <li><a href="#greske-u-oglasima" className="text-sm text-gray-700 hover:text-primary underline">Greške u oglasima</a></li>
+          <li><a href="#greske-u-merenju" className="text-sm text-gray-700 hover:text-primary underline">Greške u merenju</a></li>
+          <li><a href="#kako-napraviti-akcioni-plan-za-popravku" className="text-sm text-gray-700 hover:text-primary underline">Kako napraviti akcioni plan za popravku</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-o-google-ads-greskama" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Google Ads greškama</a></li>
+        </ol>
+      </nav>
 
-      <h2>Zašto su greške u Google Ads-u skupe</h2>
+
+
+      <h2 id="zasto-su-greske-u-google-ads-u-skupe">Zašto su greške u Google Ads-u skupe</h2>
       <p>
         Kad god auditiram Google Ads nalog — bilo da je reč o lokalnoj firmi
         sa budžetom od €500 mesečno ili eCommerce-u sa €10,000+ spend-om —
@@ -74,7 +90,7 @@ export default function GoogleAdsGreskePost() {
 
       <hr />
 
-      <h2>Greške u strukturi naloga</h2>
+      <h2 id="greske-u-strukturi-naloga">Greške u strukturi naloga</h2>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">
@@ -147,7 +163,7 @@ export default function GoogleAdsGreskePost() {
 
       <hr />
 
-      <h2>Greške u ključnim rečima</h2>
+      <h2 id="greske-u-kljucnim-recima">Greške u ključnim rečima</h2>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">
@@ -226,7 +242,7 @@ export default function GoogleAdsGreskePost() {
 
       <hr />
 
-      <h2>Greške u oglasima</h2>
+      <h2 id="greske-u-oglasima">Greške u oglasima</h2>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">
@@ -295,7 +311,7 @@ export default function GoogleAdsGreskePost() {
 
       <hr />
 
-      <h2>Greške u merenju</h2>
+      <h2 id="greske-u-merenju">Greške u merenju</h2>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">
@@ -380,7 +396,7 @@ export default function GoogleAdsGreskePost() {
 
       <hr />
 
-      <h2>Kako napraviti akcioni plan za popravku</h2>
+      <h2 id="kako-napraviti-akcioni-plan-za-popravku">Kako napraviti akcioni plan za popravku</h2>
 
       <p>
         Pronašli ste više grešaka u vašem nalogu? Ne morate sve da popravite
@@ -505,7 +521,7 @@ export default function GoogleAdsGreskePost() {
 
       <hr />
 
-      <h2>Često postavljana pitanja</h2>
+      <h2 id="cesto-postavljana-pitanja">Često postavljana pitanja</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -660,7 +676,7 @@ export default function GoogleAdsGreskePost() {
 
       <hr />
 
-      <h2>Najčešća pitanja o Google Ads greškama</h2>
+      <h2 id="najcesca-pitanja-o-google-ads-greskama">Najčešća pitanja o Google Ads greškama</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

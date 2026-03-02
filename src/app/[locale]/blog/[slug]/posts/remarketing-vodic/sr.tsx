@@ -31,7 +31,26 @@ export default function RemarketingVodicPost() {
       </div>
 
       {/* ── Sekcija 1: Hook intro ── */}
-      <h2>Zašto 96% posetilaca odlazi bez kupovine</h2>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#zasto-96-posetilaca-odlazi-bez-kupovine" className="text-sm text-gray-700 hover:text-primary underline">Zašto 96% posetilaca odlazi bez kupovine</a></li>
+          <li><a href="#sta-je-remarketing-i-kako-funkcionise" className="text-sm text-gray-700 hover:text-primary underline">Šta je remarketing i kako funkcioniše</a></li>
+          <li><a href="#tipovi-remarketing-kampanja-u-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Tipovi remarketing kampanja u Google Ads</a></li>
+          <li><a href="#kako-postaviti-remarketing-korak-po-korak" className="text-sm text-gray-700 hover:text-primary underline">Kako postaviti remarketing korak po korak</a></li>
+          <li><a href="#segmentacija-kljuc-uspeha-remarketing-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Segmentacija — ključ uspeha remarketing kampanja</a></li>
+          <li><a href="#5-remarketing-strategija-koje-donose-rezultate" className="text-sm text-gray-700 hover:text-primary underline">5 remarketing strategija koje donose rezultate</a></li>
+          <li><a href="#najcesce-greske-u-remarketing-kampanjama-i-kako-ih-izbeci" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške u remarketing kampanjama i kako ih izbeći</a></li>
+          <li><a href="#koliko-budzeta-izdvojiti-za-remarketing" className="text-sm text-gray-700 hover:text-primary underline">Koliko budžeta izdvojiti za remarketing</a></li>
+          <li><a href="#cesto-postavljana-pitanja-o-remarketing-u" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja o remarketing-u</a></li>
+          <li><a href="#zakljucak-iskoristite-potencijal-posetilaca-koji-vec-dolaze" className="text-sm text-gray-700 hover:text-primary underline">Zaključak — iskoristite potencijal posetilaca koji već dolaze</a></li>
+          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+        </ol>
+      </nav>
+
+
+      <h2 id="zasto-96-posetilaca-odlazi-bez-kupovine">Zašto 96% posetilaca odlazi bez kupovine</h2>
       <p>
         Zamislite scenu: imate sajt, ulažete u Google Ads remarketing kampanje,
         posetilac dođe, pogleda proizvod ili uslugu — i ode. Bez kupovine, bez
@@ -70,7 +89,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 2: Šta je remarketing ── */}
-      <h2>Šta je remarketing i kako funkcioniše</h2>
+      <h2 id="sta-je-remarketing-i-kako-funkcionise">Šta je remarketing i kako funkcioniše</h2>
       <p>
         <a href="https://support.google.com/google-ads/answer/2453998" target="_blank" rel="noopener noreferrer"><strong>Google Ads remarketing</strong></a> (ponekad nazvan i retargeting) je
         strategija koja vam omogućava da prikazujete oglase ljudima koji su već
@@ -173,7 +192,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 3: Tipovi remarketing kampanja ── */}
-      <h2>Tipovi remarketing kampanja u Google Ads</h2>
+      <h2 id="tipovi-remarketing-kampanja-u-google-ads">Tipovi remarketing kampanja u Google Ads</h2>
       <p>
         Google Ads nudi nekoliko vrsta remarketing kampanja, a svaka ima svoju
         namenu. Evo pregleda sa preporukom kada koristiti koji tip:
@@ -228,7 +247,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 4: Kako postaviti remarketing ── */}
-      <h2>Kako postaviti remarketing korak po korak</h2>
+      <h2 id="kako-postaviti-remarketing-korak-po-korak">Kako postaviti remarketing korak po korak</h2>
       <p>
         Postavljanje remarketing kampanje zahteva tri koraka: instalacija taga,
         povezivanje sa Google Analytics-om i verifikacija. Preporučujem da koristite
@@ -337,7 +356,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 5: Segmentacija ── */}
-      <h2>Segmentacija — ključ uspeha remarketing kampanja</h2>
+      <h2 id="segmentacija-kljuc-uspeha-remarketing-kampanja">Segmentacija — ključ uspeha remarketing kampanja</h2>
       <p>
         Ovo je deo gde većina oglašivača greši: kreiraju jednu remarketing listu
         (&quot;svi posetioci&quot;) i prikazuju im isti oglas. To je kao da u prodavnici
@@ -503,7 +522,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 6: 5 remarketing strategija ── */}
-      <h2>5 remarketing strategija koje donose rezultate</h2>
+      <h2 id="5-remarketing-strategija-koje-donose-rezultate">5 remarketing strategija koje donose rezultate</h2>
       <p>
         Ovo su strategije koje koristim na klijentskim nalozima i koje
         konzistentno daju najbolje rezultate. Svaka je testirana na realnim
@@ -604,7 +623,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 7: Najčešće greške ── */}
-      <h2>Najčešće greške u remarketing kampanjama i kako ih izbeći</h2>
+      <h2 id="najcesce-greske-u-remarketing-kampanjama-i-kako-ih-izbeci">Najčešće greške u remarketing kampanjama i kako ih izbeći</h2>
       <p>
         Posle stotina audita Google Ads naloga, ovo su greške koje viđam
         najčešće. Dobra vest je da su sve lako popravljive.
@@ -694,7 +713,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 8: Budžet ── */}
-      <h2>Koliko budžeta izdvojiti za remarketing</h2>
+      <h2 id="koliko-budzeta-izdvojiti-za-remarketing">Koliko budžeta izdvojiti za remarketing</h2>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Pravilo: 10-30% ukupnog Google Ads budžeta</p>
@@ -745,7 +764,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 9: FAQ ── */}
-      <h2>Često postavljana pitanja o remarketing-u</h2>
+      <h2 id="cesto-postavljana-pitanja-o-remarketing-u">Često postavljana pitanja o remarketing-u</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -827,7 +846,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 10: Zaključak + CTA ── */}
-      <h2>Zaključak — iskoristite potencijal posetilaca koji već dolaze</h2>
+      <h2 id="zakljucak-iskoristite-potencijal-posetilaca-koji-vec-dolaze">Zaključak — iskoristite potencijal posetilaca koji već dolaze</h2>
       <p>
         Google Ads remarketing nije komplikovan, ali zahteva promišljen pristup.
         Razlika između &quot;imamo remarketing&quot; i &quot;imamo remarketing
@@ -863,7 +882,7 @@ export default function RemarketingVodicPost() {
       </div>
 
       {/* ── Interni linkovi ── */}
-      <h2>Povezani vodiči</h2>
+      <h2 id="povezani-vodici">Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/remarketing" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing usluge</p>

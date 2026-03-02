@@ -55,8 +55,25 @@ export default function EcommerceVsB2BPost() {
       </p>
 
       <hr />
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#zasto-se-ecommerce-i-b2b-razlikuju-u-google-ads-u" className="text-sm text-gray-700 hover:text-primary underline">Zašto se eCommerce i B2B razlikuju u Google Ads-u</a></li>
+          <li><a href="#kljucne-razlike-poreenje" className="text-sm text-gray-700 hover:text-primary underline">Ključne razlike — poređenje</a></li>
+          <li><a href="#google-ads-strategija-za-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Google Ads strategija za eCommerce</a></li>
+          <li><a href="#google-ads-strategija-za-b2b" className="text-sm text-gray-700 hover:text-primary underline">Google Ads strategija za B2B</a></li>
+          <li><a href="#kpi-jevi-i-merenje-uspeha" className="text-sm text-gray-700 hover:text-primary underline">KPI-jevi i merenje uspeha</a></li>
+          <li><a href="#budzet-i-ocekivanja" className="text-sm text-gray-700 hover:text-primary underline">Budžet i očekivanja</a></li>
+          <li><a href="#najcesce-greske-po-modelu" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške po modelu</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-ecommerce-vs-b2b-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja — eCommerce vs B2B Google Ads</a></li>
+        </ol>
+      </nav>
 
-      <h2>Zašto se eCommerce i B2B razlikuju u Google Ads-u</h2>
+
+
+      <h2 id="zasto-se-ecommerce-i-b2b-razlikuju-u-google-ads-u">Zašto se eCommerce i B2B razlikuju u Google Ads-u</h2>
       <p>
         Pre nego što pređemo na konkretne taktike, potrebno je razumeti fundamentalne razlike između dva modela.
       </p>
@@ -72,7 +89,7 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Ključne razlike — poređenje</h2>
+      <h2 id="kljucne-razlike-poreenje">Ključne razlike — poređenje</h2>
       <p>
         Preporučujem da prvo razumete direktne razlike između modela pre nego što definišete strategiju.
       </p>
@@ -140,7 +157,7 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Google Ads strategija za eCommerce</h2>
+      <h2 id="google-ads-strategija-za-ecommerce">Google Ads strategija za eCommerce</h2>
       <p>
         Za eCommerce, Google Ads strategija je fokusirana na brzu konverziju, visok ROAS i Shopping kampanje kao ključni kanal.
       </p>
@@ -304,7 +321,7 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Google Ads strategija za B2B</h2>
+      <h2 id="google-ads-strategija-za-b2b">Google Ads strategija za B2B</h2>
       <p>
         Za B2B, Google Ads strategija je fokusirana na lead quality (ne volume), duži sales cycle, i offline conversion tracking.
       </p>
@@ -473,7 +490,7 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>KPI-jevi i merenje uspeha</h2>
+      <h2 id="kpi-jevi-i-merenje-uspeha">KPI-jevi i merenje uspeha</h2>
       <p>
         Preporučujem različite KPI-jeve za eCommerce i B2B jer optimizacija ka pogrešnim metrikama bacaju novac.
       </p>
@@ -553,7 +570,7 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Budžet i očekivanja</h2>
+      <h2 id="budzet-i-ocekivanja">Budžet i očekivanja</h2>
       <p>
         Realistična očekivanja oko budžeta i rezultata variraju drastično između eCommerce i B2B.
       </p>
@@ -601,7 +618,7 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Najčešće greške po modelu</h2>
+      <h2 id="najcesce-greske-po-modelu">Najčešće greške po modelu</h2>
       <p>
         Svaki model ima specifične greške koje vidim kod novih klijenata. Preporučujem da ih izbegnete.
       </p>
@@ -659,7 +676,7 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Često postavljana pitanja</h2>
+      <h2 id="cesto-postavljana-pitanja">Često postavljana pitanja</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -802,7 +819,7 @@ export default function EcommerceVsB2BPost() {
 
       <hr />
 
-      <h2>Najčešća pitanja — eCommerce vs B2B Google Ads</h2>
+      <h2 id="najcesca-pitanja-ecommerce-vs-b2b-google-ads">Najčešća pitanja — eCommerce vs B2B Google Ads</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

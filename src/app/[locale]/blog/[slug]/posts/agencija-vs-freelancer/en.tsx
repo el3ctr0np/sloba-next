@@ -35,7 +35,25 @@ export default function AgencyVsFreelancerEN() {
         After years working on both sides (as in-house, as freelancer, and collaborating with agencies), I can tell you there's no universal &quot;best&quot; solution. But there is a right solution for your specific situation. In this guide, I'll help you discover it.
       </p>
 
-      <h2>Why partner choice is critical</h2>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#why-partner-choice-is-critical" className="text-sm text-gray-700 hover:text-primary underline">Why partner choice is critical</a></li>
+          <li><a href="#three-options-for-google-ads-campaign-management" className="text-sm text-gray-700 hover:text-primary underline">Three options for Google Ads campaign management</a></li>
+          <li><a href="#advantages-and-disadvantages-of-google-ads-agencies" className="text-sm text-gray-700 hover:text-primary underline">Advantages and disadvantages of Google Ads agencies</a></li>
+          <li><a href="#advantages-and-disadvantages-of-freelancers" className="text-sm text-gray-700 hover:text-primary underline">Advantages and disadvantages of freelancers</a></li>
+          <li><a href="#advantages-and-disadvantages-of-in-house-team" className="text-sm text-gray-700 hover:text-primary underline">Advantages and disadvantages of in-house team</a></li>
+          <li><a href="#comparison-by-key-criteria" className="text-sm text-gray-700 hover:text-primary underline">Comparison by key criteria</a></li>
+          <li><a href="#which-model-for-your-company" className="text-sm text-gray-700 hover:text-primary underline">Which model for your company</a></li>
+          <li><a href="#what-to-look-for-when-choosing-a-partner" className="text-sm text-gray-700 hover:text-primary underline">What to look for when choosing a partner</a></li>
+          <li><a href="#red-flags--when-to-walk-away" className="text-sm text-gray-700 hover:text-primary underline">Red flags — when to walk away</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions--agency-vs-freelancer" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions — agency vs freelancer</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="why-partner-choice-is-critical">Why partner choice is critical</h2>
       <p>
         My experience shows that a bad partner choice costs far more than the service fee itself. The average company starting with the wrong partner loses 3-6 months and often a significant portion of budget on suboptimal campaigns.
       </p>
@@ -53,7 +71,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Three options for Google Ads campaign management</h2>
+      <h2 id="three-options-for-google-ads-campaign-management">Three options for Google Ads campaign management</h2>
       <p>
         I recommend understanding the basics of all three models before diving into details. Each model has its sweet spot depending on company size and budget.
       </p>
@@ -92,7 +110,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Advantages and disadvantages of Google Ads agencies</h2>
+      <h2 id="advantages-and-disadvantages-of-google-ads-agencies">Advantages and disadvantages of Google Ads agencies</h2>
       <p>
         My experience working with agencies (both as client and partner) shows that agencies deliver the most value when you have clearly defined goals and budget that justifies their structure.
       </p>
@@ -224,7 +242,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Advantages and disadvantages of freelancers</h2>
+      <h2 id="advantages-and-disadvantages-of-freelancers">Advantages and disadvantages of freelancers</h2>
       <p>
         As a freelancer with years of experience, I can tell you the biggest advantage is direct communication and personalized attention. But that comes with trade-offs you need to understand.
       </p>
@@ -344,7 +362,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Advantages and disadvantages of in-house team</h2>
+      <h2 id="advantages-and-disadvantages-of-in-house-team">Advantages and disadvantages of in-house team</h2>
       <p>
         In-house team is a long-term investment that makes sense only when you have critical mass of budget and marketing is a core business function.
       </p>
@@ -473,7 +491,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Comparison by key criteria</h2>
+      <h2 id="comparison-by-key-criteria">Comparison by key criteria</h2>
       <p>
         I recommend looking at this table as quick reference for comparing all options. There's no universal &quot;best&quot; — only the right option for your situation.
       </p>
@@ -549,7 +567,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Which model for your company</h2>
+      <h2 id="which-model-for-your-company">Which model for your company</h2>
       <p>
         Based on my experience working with 50+ clients across 6 countries, here are concrete recommendations by company type and budget.
       </p>
@@ -620,7 +638,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>What to look for when choosing a partner</h2>
+      <h2 id="what-to-look-for-when-choosing-a-partner">What to look for when choosing a partner</h2>
       <p>
         In my experience, these 5 factors determine the success or failure of collaboration, regardless of whether you work with an agency, freelancer, or build a team.
       </p>
@@ -692,7 +710,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Red flags — when to walk away</h2>
+      <h2 id="red-flags--when-to-walk-away">Red flags — when to walk away</h2>
       <p>
         I recommend immediately ending the conversation if you see any of these red flags, regardless of how good the offer sounds.
       </p>
@@ -760,7 +778,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mb-3" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -872,7 +890,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <h2>Frequently asked questions — agency vs freelancer</h2>
+      <h2 id="frequently-asked-questions--agency-vs-freelancer">Frequently asked questions — agency vs freelancer</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

@@ -30,7 +30,26 @@ export default function RemarketingGuideEN() {
       </div>
 
       {/* ── Section 1: Hook intro ── */}
-      <h2>Why 96% of Visitors Leave Without Buying</h2>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#why-96-of-visitors-leave-without-buying" className="text-sm text-gray-700 hover:text-primary underline">Why 96% of Visitors Leave Without Buying</a></li>
+          <li><a href="#what-is-remarketing-and-how-it-works" className="text-sm text-gray-700 hover:text-primary underline">What Is Remarketing and How It Works</a></li>
+          <li><a href="#types-of-remarketing-campaigns-in-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Types of Remarketing Campaigns in Google Ads</a></li>
+          <li><a href="#how-to-set-up-remarketing-step-by-step" className="text-sm text-gray-700 hover:text-primary underline">How to Set Up Remarketing Step by Step</a></li>
+          <li><a href="#segmentation-key-to-remarketing-success" className="text-sm text-gray-700 hover:text-primary underline">Segmentation — Key to Remarketing Success</a></li>
+          <li><a href="#5-remarketing-strategies-that-deliver-results" className="text-sm text-gray-700 hover:text-primary underline">5 Remarketing Strategies That Deliver Results</a></li>
+          <li><a href="#most-common-mistakes-in-remarketing-campaigns-and-how-to-avoid-them" className="text-sm text-gray-700 hover:text-primary underline">Most Common Mistakes in Remarketing Campaigns and How to Avoid Them</a></li>
+          <li><a href="#how-much-budget-to-allocate-to-remarketing" className="text-sm text-gray-700 hover:text-primary underline">How Much Budget to Allocate to Remarketing</a></li>
+          <li><a href="#frequently-asked-questions-about-remarketing" className="text-sm text-gray-700 hover:text-primary underline">Frequently Asked Questions About Remarketing</a></li>
+          <li><a href="#conclusion-leverage-the-potential-of-visitors-already-coming" className="text-sm text-gray-700 hover:text-primary underline">Conclusion — Leverage the Potential of Visitors Already Coming</a></li>
+          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+        </ol>
+      </nav>
+
+
+      <h2 id="why-96-of-visitors-leave-without-buying">Why 96% of Visitors Leave Without Buying</h2>
       <p>
         Imagine this: you have a website, you invest in Google Ads, a visitor arrives, views a product or service — and leaves. No purchase, no contact, no trace. The statistics are harsh: <strong>96 out of 100 visitors leave your site without any conversion</strong>.
       </p>
@@ -55,7 +74,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 2: What is remarketing ── */}
-      <h2>What Is Remarketing and How It Works</h2>
+      <h2 id="what-is-remarketing-and-how-it-works">What Is Remarketing and How It Works</h2>
       <p>
         <a href="https://support.google.com/google-ads/answer/2453998" target="_blank" rel="noopener noreferrer"><strong>Google Ads remarketing</strong></a> (sometimes called retargeting) is a strategy that allows you to show ads to people who have already interacted with your business. These can be website visitors, app users, YouTube viewers, or people from your email list.
       </p>
@@ -150,7 +169,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 3: Types of remarketing campaigns ── */}
-      <h2>Types of Remarketing Campaigns in Google Ads</h2>
+      <h2 id="types-of-remarketing-campaigns-in-google-ads">Types of Remarketing Campaigns in Google Ads</h2>
       <p>
         Google Ads offers several types of remarketing campaigns, each with its purpose. Here is an overview with recommendation when to use which type:
       </p>
@@ -196,7 +215,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 4: How to set up remarketing ── */}
-      <h2>How to Set Up Remarketing Step by Step</h2>
+      <h2 id="how-to-set-up-remarketing-step-by-step">How to Set Up Remarketing Step by Step</h2>
       <p>
         Setting up a remarketing campaign requires three steps: tag installation, connecting to Google Analytics, and verification. I recommend using Google Tag Manager (GTM) — gives you flexibility without needing to touch site code every time.
       </p>
@@ -290,7 +309,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 5: Segmentation ── */}
-      <h2>Segmentation — Key to Remarketing Success</h2>
+      <h2 id="segmentation-key-to-remarketing-success">Segmentation — Key to Remarketing Success</h2>
       <p>
         This is the part where most advertisers fail: they create one remarketing list (&quot;all visitors&quot;) and show them the same ad. That is like saying the same thing in a store to someone who entered for the first time and someone who put a product in cart and left.
       </p>
@@ -452,7 +471,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 6: 5 remarketing strategies ── */}
-      <h2>5 Remarketing Strategies That Deliver Results</h2>
+      <h2 id="5-remarketing-strategies-that-deliver-results">5 Remarketing Strategies That Deliver Results</h2>
       <p>
         These are strategies I use on client accounts that consistently deliver best results. Each is tested on real campaigns.
       </p>
@@ -545,7 +564,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 7: Common mistakes ── */}
-      <h2>Most Common Mistakes in Remarketing Campaigns and How to Avoid Them</h2>
+      <h2 id="most-common-mistakes-in-remarketing-campaigns-and-how-to-avoid-them">Most Common Mistakes in Remarketing Campaigns and How to Avoid Them</h2>
       <p>
         After hundreds of Google Ads account audits, these are the mistakes I see most often. Good news is they are all easily fixable.
       </p>
@@ -625,7 +644,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 8: Budget ── */}
-      <h2>How Much Budget to Allocate to Remarketing</h2>
+      <h2 id="how-much-budget-to-allocate-to-remarketing">How Much Budget to Allocate to Remarketing</h2>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Rule: 10-30% of total Google Ads budget</p>
@@ -673,7 +692,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 9: FAQ ── */}
-      <h2>Frequently Asked Questions About Remarketing</h2>
+      <h2 id="frequently-asked-questions-about-remarketing">Frequently Asked Questions About Remarketing</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -740,7 +759,7 @@ export default function RemarketingGuideEN() {
       <hr />
 
       {/* ── Section 10: Conclusion + CTA ── */}
-      <h2>Conclusion — Leverage the Potential of Visitors Already Coming</h2>
+      <h2 id="conclusion-leverage-the-potential-of-visitors-already-coming">Conclusion — Leverage the Potential of Visitors Already Coming</h2>
       <p>
         Google Ads remarketing is not complicated, but requires thoughtful approach. The difference between &quot;we have remarketing&quot; and &quot;we have remarketing that delivers results&quot; lies in three things: proper segmentation, tailored messages, and regular optimization.
       </p>
@@ -773,7 +792,7 @@ export default function RemarketingGuideEN() {
       </div>
 
       {/* ── Internal links ── */}
-      <h2>Related Guides</h2>
+      <h2 id="related-guides">Related Guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/remarketing" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing Services</p>

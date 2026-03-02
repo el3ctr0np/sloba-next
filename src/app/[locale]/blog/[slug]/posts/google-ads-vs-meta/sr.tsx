@@ -50,7 +50,23 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: Osnovna razlika ── */}
-      <h2>Osnovna razlika — namera vs interesovanje</h2>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#osnovna-razlika-namera-vs-interesovanje" className="text-sm text-gray-700 hover:text-primary underline">Osnovna razlika — namera vs interesovanje</a></li>
+          <li><a href="#poreenje-po-kljucnim-kriterijumima" className="text-sm text-gray-700 hover:text-primary underline">Poređenje po ključnim kriterijumima</a></li>
+          <li><a href="#kada-je-google-ads-bolji-izbor" className="text-sm text-gray-700 hover:text-primary underline">Kada je Google Ads bolji izbor</a></li>
+          <li><a href="#kada-je-meta-ads-bolji-izbor" className="text-sm text-gray-700 hover:text-primary underline">Kada je Meta Ads bolji izbor</a></li>
+          <li><a href="#kombinovana-strategija-najbolji-pristup" className="text-sm text-gray-700 hover:text-primary underline">Kombinovana strategija — najbolji pristup</a></li>
+          <li><a href="#budzet-i-raspodela" className="text-sm text-gray-700 hover:text-primary underline">Budžet i raspodela</a></li>
+          <li><a href="#merenje-i-atribucija" className="text-sm text-gray-700 hover:text-primary underline">Merenje i atribucija</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+        </ol>
+      </nav>
+
+
+      <h2 id="osnovna-razlika-namera-vs-interesovanje">Osnovna razlika — namera vs interesovanje</h2>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
@@ -85,7 +101,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: Poređenje po ključnim kriterijumima ── */}
-      <h2>Poređenje po ključnim kriterijumima</h2>
+      <h2 id="poreenje-po-kljucnim-kriterijumima">Poređenje po ključnim kriterijumima</h2>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
@@ -153,7 +169,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: Kada je Google Ads bolji izbor ── */}
-      <h2>Kada je Google Ads bolji izbor</h2>
+      <h2 id="kada-je-google-ads-bolji-izbor">Kada je Google Ads bolji izbor</h2>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
@@ -229,7 +245,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: Kada je Meta Ads bolji izbor ── */}
-      <h2>Kada je Meta Ads bolji izbor</h2>
+      <h2 id="kada-je-meta-ads-bolji-izbor">Kada je Meta Ads bolji izbor</h2>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
@@ -307,7 +323,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: Kombinovana strategija ── */}
-      <h2>Kombinovana strategija — najbolji pristup</h2>
+      <h2 id="kombinovana-strategija-najbolji-pristup">Kombinovana strategija — najbolji pristup</h2>
 
       <p>
         Umesto &quot;ili-ili&quot;, razmislite o &quot;i-i&quot; pristupu.
@@ -418,7 +434,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: Budžet i raspodela ── */}
-      <h2>Budžet i raspodela</h2>
+      <h2 id="budzet-i-raspodela">Budžet i raspodela</h2>
 
       <p>
         Koliko treba izdvajati za svaku platformu? Preporuka zavisi od industrije,
@@ -460,7 +476,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: Merenje i atribucija ── */}
-      <h2>Merenje i atribucija</h2>
+      <h2 id="merenje-i-atribucija">Merenje i atribucija</h2>
 
       <p>
         Jedan od najvećih izazova multi-platform oglašavanja je <strong>atribucija</strong>
@@ -540,7 +556,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: FAQ ── */}
-      <h2>Često postavljana pitanja</h2>
+      <h2 id="cesto-postavljana-pitanja">Često postavljana pitanja</h2>
 
       <div className="space-y-3 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

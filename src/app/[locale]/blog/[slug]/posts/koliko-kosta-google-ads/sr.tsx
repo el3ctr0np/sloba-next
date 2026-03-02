@@ -29,8 +29,27 @@ export default function KolikoKostaGoogleAdsPost() {
           </div>
         </div>
       </div>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#koliko-zaista-kosta-google-ads-u-srbiji" className="text-sm text-gray-700 hover:text-primary underline">Koliko zaista košta Google Ads u Srbiji</a></li>
+          <li><a href="#kako-google-ads-naplacuje" className="text-sm text-gray-700 hover:text-primary underline">Kako Google Ads naplaćuje</a></li>
+          <li><a href="#realne-cpc-cene-po-industrijama-u-srbiji" className="text-sm text-gray-700 hover:text-primary underline">Realne CPC cene po industrijama u Srbiji</a></li>
+          <li><a href="#minimalni-budzet-koji-ima-smisla" className="text-sm text-gray-700 hover:text-primary underline">Minimalni budžet koji ima smisla</a></li>
+          <li><a href="#troskovi-upravljanja-agencija-vs-freelancer-vs-in-house" className="text-sm text-gray-700 hover:text-primary underline">Troškovi upravljanja: agencija vs. freelancer vs. in-house</a></li>
+          <li><a href="#kako-izracunati-roi-pre-nego-sto-potrosite-prvi-dinar" className="text-sm text-gray-700 hover:text-primary underline">Kako izračunati ROI pre nego što potrošite prvi dinar</a></li>
+          <li><a href="#skriveni-troskovi-o-kojima-niko-ne-prica" className="text-sm text-gray-700 hover:text-primary underline">Skriveni troškovi o kojima niko ne priča</a></li>
+          <li><a href="#kada-google-ads-nije-pravi-izbor" className="text-sm text-gray-700 hover:text-primary underline">Kada Google Ads nije pravi izbor</a></li>
+          <li><a href="#sledeci-koraci" className="text-sm text-gray-700 hover:text-primary underline">Sledeći koraci</a></li>
+          <li><a href="#cesto-postavljana-pitanja-o-cenama-google-ads-a" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja o cenama Google Ads-a</a></li>
+          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+        </ol>
+      </nav>
 
-      <h2>Koliko zaista košta Google Ads u Srbiji</h2>
+
+
+      <h2 id="koliko-zaista-kosta-google-ads-u-srbiji">Koliko zaista košta Google Ads u Srbiji</h2>
       <p>
         &quot;Koliko košta Google Ads?&quot; — ovo je prvo pitanje koje čujem od svakog direktora marketinga ili vlasnika firme koji razmišlja o plaćenom oglašavanju. I razumem frustraciju — Google vam neće dati jasan odgovor, a većina sadržaja na ovu temu dolazi iz SAD-a gde su cene potpuno drugačije.
       </p>
@@ -47,7 +66,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <hr />
 
-      <h2>Kako Google Ads naplaćuje</h2>
+      <h2 id="kako-google-ads-naplacuje">Kako Google Ads naplaćuje</h2>
       <p>
         Google Ads koristi <strong>aukcijski sistem</strong>. Svaki put kada neko ukuca pretragu, dešava se mini-aukcija između oglašivača koji ciljaju tu ključnu reč. Vi plaćate samo kada neko klikne na vaš oglas — otuda naziv PPC (pay-per-click).
       </p>
@@ -91,7 +110,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <hr />
 
-      <h2>Realne CPC cene po industrijama u Srbiji</h2>
+      <h2 id="realne-cpc-cene-po-industrijama-u-srbiji">Realne CPC cene po industrijama u Srbiji</h2>
       <p>Evo prosečnih CPC cena koje vidim kod klijenata u regionu (2025-2026):</p>
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
@@ -175,7 +194,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <hr />
 
-      <h2>Minimalni budžet koji ima smisla</h2>
+      <h2 id="minimalni-budzet-koji-ima-smisla">Minimalni budžet koji ima smisla</h2>
       <p>
         Pitanje koje čujem stalno: &quot;Mogu li da počnem sa €100 mesečno?&quot; Tehnički — da. Praktično — zavisi.
       </p>
@@ -238,7 +257,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <hr />
 
-      <h2>Troškovi upravljanja: agencija vs. freelancer vs. in-house</h2>
+      <h2 id="troskovi-upravljanja-agencija-vs-freelancer-vs-in-house">Troškovi upravljanja: agencija vs. freelancer vs. in-house</h2>
       <p>Pored budžeta za oglase, imate troškove upravljanja kampanjama. Tri opcije:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
@@ -304,7 +323,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <hr />
 
-      <h2>Kako izračunati ROI pre nego što potrošite prvi dinar</h2>
+      <h2 id="kako-izracunati-roi-pre-nego-sto-potrosite-prvi-dinar">Kako izračunati ROI pre nego što potrošite prvi dinar</h2>
       <p>Ovde većina preskače, a tu se donose najvažnije odluke.</p>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
@@ -356,7 +375,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <hr />
 
-      <h2>Skriveni troškovi o kojima niko ne priča</h2>
+      <h2 id="skriveni-troskovi-o-kojima-niko-ne-prica">Skriveni troškovi o kojima niko ne priča</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5">
@@ -403,7 +422,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <hr />
 
-      <h2>Kada Google Ads nije pravi izbor</h2>
+      <h2 id="kada-google-ads-nije-pravi-izbor">Kada Google Ads nije pravi izbor</h2>
       <p>Iskreno, Google Ads nije za svakoga. Ne preporučujem ga ako:</p>
 
       <div className="space-y-4 my-6">
@@ -432,7 +451,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <hr />
 
-      <h2>Sledeći koraci</h2>
+      <h2 id="sledeci-koraci">Sledeći koraci</h2>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Preporučujem ova 4 koraka:</p>
@@ -472,7 +491,7 @@ export default function KolikoKostaGoogleAdsPost() {
       <hr />
 
       {/* ── FAQ ── */}
-      <h2>Često postavljana pitanja o cenama Google Ads-a</h2>
+      <h2 id="cesto-postavljana-pitanja-o-cenama-google-ads-a">Često postavljana pitanja o cenama Google Ads-a</h2>
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -523,7 +542,7 @@ export default function KolikoKostaGoogleAdsPost() {
       </div>
 
       {/* ── Povezani vodiči ── */}
-      <h2>Povezani vodiči</h2>
+      <h2 id="povezani-vodici">Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/konsultacije" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Konsultacije</p>

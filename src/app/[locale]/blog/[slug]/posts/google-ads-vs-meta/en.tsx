@@ -50,7 +50,23 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── H2: Core difference ── */}
-      <h2>Core difference — intent vs interest</h2>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#core-difference-intent-vs-interest" className="text-sm text-gray-700 hover:text-primary underline">Core difference — intent vs interest</a></li>
+          <li><a href="#comparison-by-key-criteria" className="text-sm text-gray-700 hover:text-primary underline">Comparison by key criteria</a></li>
+          <li><a href="#when-google-ads-is-the-better-choice" className="text-sm text-gray-700 hover:text-primary underline">When Google Ads is the better choice</a></li>
+          <li><a href="#when-meta-ads-is-the-better-choice" className="text-sm text-gray-700 hover:text-primary underline">When Meta Ads is the better choice</a></li>
+          <li><a href="#combined-strategy-best-approach" className="text-sm text-gray-700 hover:text-primary underline">Combined strategy — best approach</a></li>
+          <li><a href="#budget-and-allocation" className="text-sm text-gray-700 hover:text-primary underline">Budget and allocation</a></li>
+          <li><a href="#measurement-and-attribution" className="text-sm text-gray-700 hover:text-primary underline">Measurement and attribution</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+
+      <h2 id="core-difference-intent-vs-interest">Core difference — intent vs interest</h2>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
@@ -85,7 +101,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── H2: Comparison by key criteria ── */}
-      <h2>Comparison by key criteria</h2>
+      <h2 id="comparison-by-key-criteria">Comparison by key criteria</h2>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
@@ -153,7 +169,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── H2: When Google Ads is better ── */}
-      <h2>When Google Ads is the better choice</h2>
+      <h2 id="when-google-ads-is-the-better-choice">When Google Ads is the better choice</h2>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
@@ -229,7 +245,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── H2: When Meta Ads is better ── */}
-      <h2>When Meta Ads is the better choice</h2>
+      <h2 id="when-meta-ads-is-the-better-choice">When Meta Ads is the better choice</h2>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
@@ -307,7 +323,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── H2: Combined strategy ── */}
-      <h2>Combined strategy — best approach</h2>
+      <h2 id="combined-strategy-best-approach">Combined strategy — best approach</h2>
 
       <p>
         Instead of &quot;either-or&quot;, think about &quot;both-and&quot; approach.
@@ -418,7 +434,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── H2: Budget and allocation ── */}
-      <h2>Budget and allocation</h2>
+      <h2 id="budget-and-allocation">Budget and allocation</h2>
 
       <p>
         How much to allocate for each platform? Recommendation depends on industry,
@@ -460,7 +476,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── H2: Measurement and attribution ── */}
-      <h2>Measurement and attribution</h2>
+      <h2 id="measurement-and-attribution">Measurement and attribution</h2>
 
       <p>
         One of the biggest challenges of multi-platform advertising is <strong>attribution</strong>
@@ -540,7 +556,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── H2: FAQ ── */}
-      <h2>Frequently asked questions</h2>
+      <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
       <div className="space-y-3 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

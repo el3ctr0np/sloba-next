@@ -25,8 +25,33 @@ export default function GoogleAdsAuditPost() {
           </div>
         </div>
       </div>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#zasto-je-google-ads-audit-neophodan" className="text-sm text-gray-700 hover:text-primary underline">Zašto je Google Ads audit neophodan</a></li>
+          <li><a href="#sta-dobar-google-ads-audit-pokriva" className="text-sm text-gray-700 hover:text-primary underline">Šta dobar Google Ads audit pokriva</a></li>
+          <li><a href="#kategorija-1-struktura-naloga" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 1: Struktura naloga</a></li>
+          <li><a href="#kategorija-2-prax107enje-konverzija" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 2: Pra&#x107;enje konverzija</a></li>
+          <li><a href="#kategorija-3-podex161avanja-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 3: Pode&#x161;avanja kampanja</a></li>
+          <li><a href="#kategorija-4-kljux10dne-rex10di-i-search-terms" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 4: Klju&#x10D;ne re&#x10D;i i search terms</a></li>
+          <li><a href="#kategorija-5-oglasi-i-ekstenzije" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 5: Oglasi i ekstenzije</a></li>
+          <li><a href="#kategorija-6-publike-i-remarketing" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 6: Publike i remarketing</a></li>
+          <li><a href="#kategorija-7-bidding-strategija" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 7: Bidding strategija</a></li>
+          <li><a href="#kategorija-8-budzet-i-alokacija" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 8: Budžet i alokacija</a></li>
+          <li><a href="#brzi-google-ads-audit-za-30-minuta" className="text-sm text-gray-700 hover:text-primary underline">Brzi Google Ads audit za 30 minuta</a></li>
+          <li><a href="#sistem-bodovanja-za-google-ads-audit" className="text-sm text-gray-700 hover:text-primary underline">Sistem bodovanja za Google Ads audit</a></li>
+          <li><a href="#najx10dex161x107e-grex161ke-pri-google-ads-audit-u" className="text-sm text-gray-700 hover:text-primary underline">Naj&#x10D;e&#x161;&#x107;e gre&#x161;ke pri Google Ads audit-u</a></li>
+          <li><a href="#najx10dex161x107e-postavljena-pitanja-o-google-ads-audit-u" className="text-sm text-gray-700 hover:text-primary underline">Naj&#x10D;e&#x161;&#x107;e postavljena pitanja o Google Ads audit-u</a></li>
+          <li><a href="#zakljux10dak" className="text-sm text-gray-700 hover:text-primary underline">Zaklju&#x10D;ak</a></li>
+          <li><a href="#povezani-vodix10di" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodi&#x10D;i</a></li>
+          <li><a href="#najcesca-pitanja-o-google-ads-auditu" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Google Ads auditu</a></li>
+        </ol>
+      </nav>
 
-      <h2>Zašto je Google Ads audit neophodan</h2>
+
+
+      <h2 id="zasto-je-google-ads-audit-neophodan">Zašto je Google Ads audit neophodan</h2>
       <p>
         Kada preuzmem novi nalog na upravljanje, prva stvar je uvek detaljan Google Ads audit. U praksi vidim da preko 90% naloga ima iste fundamentalne probleme: conversion tracking ne funkcioniše kako treba, budžet cure na irelevantne search terms-ove, kampanje su loše organizovane, ili Smart Bidding pokušava da optimizuje sa nedovoljno podataka.
       </p>
@@ -47,7 +72,7 @@ export default function GoogleAdsAuditPost() {
 
       <hr />
 
-      <h2>Šta dobar Google Ads audit pokriva</h2>
+      <h2 id="sta-dobar-google-ads-audit-pokriva">Šta dobar Google Ads audit pokriva</h2>
       <p>
         Profesionalan Google Ads audit nije improvizacija — to je strukturiran checklist od 80+ kontrolnih tačaka podeljenih u 10 ključnih kategorija. Svaka kategorija ima priority items (kritično za performance) i optimization items (dodatna poboljšanja za napredne naloge).
       </p>
@@ -111,7 +136,7 @@ export default function GoogleAdsAuditPost() {
 
       <hr />
 
-      <h2>Kategorija 1: Struktura naloga</h2>
+      <h2 id="kategorija-1-struktura-naloga">Kategorija 1: Struktura naloga</h2>
       <p>
         Lo&#x161;a struktura je kao lo&#x161;a arhitektura zgrade — možete farbati fasadu, ali fundamentalni problemi ostaju. Preporu&#x10D;ujem da struktura bude lo
 
@@ -162,7 +187,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Kategorija 2: Pra&#x107;enje konverzija</h2>
+      <h2 id="kategorija-2-prax107enje-konverzija">Kategorija 2: Pra&#x107;enje konverzija</h2>
       <p>
         Conversion tracking je najkriti&#x10D;niji deo svakog Google Ads audit-a. Ako pra&#x107;enje ne funkcioniše, ili bele&#x17E;i pogrešne podatke, sve ostalo je beskorisno — optimizujete na osnovu lo&#x161;ih informacija i donosite pogre&#x161;ne odluke.
       </p>
@@ -210,7 +235,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Kategorija 3: Pode&#x161;avanja kampanja</h2>
+      <h2 id="kategorija-3-podex161avanja-kampanja">Kategorija 3: Pode&#x161;avanja kampanja</h2>
       <p>
         Default pode&#x161;avanja u Google Ads-u su lo&#x161;a — dizajnirana da Google zaradi vi&#x161;e, ne da vi dobijete bolje rezultate. U praksi vidim da preko 70% novih naloga ima default settings koji tro&#x161;e budžet na pogre&#x161;nim mestima.
       </p>
@@ -268,7 +293,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Kategorija 4: Klju&#x10D;ne re&#x10D;i i search terms</h2>
+      <h2 id="kategorija-4-kljux10dne-rex10di-i-search-terms">Kategorija 4: Klju&#x10D;ne re&#x10D;i i search terms</h2>
       <p>
         Keywords nisu ono &#x161;to vi unesete u nalog — to su <strong>search terms</strong> koje ljudi zaista kucaju. Svaki Google Ads audit mora detaljno analizirati Search Terms Report i identifikovati &#x161;ta zapravo trigger-uje va&#x161;e oglase i kuda odlazi budžet.
       </p>
@@ -320,7 +345,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Kategorija 5: Oglasi i ekstenzije</h2>
+      <h2 id="kategorija-5-oglasi-i-ekstenzije">Kategorija 5: Oglasi i ekstenzije</h2>
       <p>
         Oglasi su ono &#x161;to potencijalni kupci zapravo vide, ali u praksi vidim da preko 50% naloga ima {`"Poor"`} Ad Strength i minimalan broj ekstenzija. To je propuštena prilika — bolji oglasi = viši CTR = niži CPC + vi&#x161;e konverzija.
       </p>
@@ -378,7 +403,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Kategorija 6: Publike i remarketing</h2>
+      <h2 id="kategorija-6-publike-i-remarketing">Kategorija 6: Publike i remarketing</h2>
       <p>
         Remarketing je najlak&#x161;i win u Google Ads-u — ljudi koji su već posetili sajt konvertuju 3-5x bolje od cold traffic-a. Ako Google Ads audit otkrije da nalog nema remarketing liste ili converter exclusions, to je ogromna propuštena prilika.
       </p>
@@ -423,7 +448,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Kategorija 7: Bidding strategija</h2>
+      <h2 id="kategorija-7-bidding-strategija">Kategorija 7: Bidding strategija</h2>
       <p>
         Smart Bidding je moćan alat, ali samo ako imate dovoljno konverzija da algoritam može validno učiti. U praksi vidim da preko 40% naloga koristi Smart Bidding sa &lt;10 konverzija mesečno — to ne može funkcionisati.
       </p>
@@ -475,7 +500,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Kategorija 8: Budžet i alokacija</h2>
+      <h2 id="kategorija-8-budzet-i-alokacija">Kategorija 8: Budžet i alokacija</h2>
       <p>
         Budget allocation je jedna od naj&#x10D;eš&#x107;ih gre&#x161;aka u Google Ads audit-ima — najbolje kampanje su {`"Limited by budget"`}, dok lo&#x161;e kampanje tro&#x161;e punim budžetom. To je kao da najboljem prodavcu date najmanje resursa.
       </p>
@@ -515,7 +540,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Brzi Google Ads audit za 30 minuta</h2>
+      <h2 id="brzi-google-ads-audit-za-30-minuta">Brzi Google Ads audit za 30 minuta</h2>
       <p>
         Ako nemate 2-4 sata za full Google Ads audit, evo quick check-a koji pokriva 80% najkriti&#x10D;nijih stvari. Preporu&#x10D;ujem da radite ovaj brzi audit mesečno između kvartalnih deep audit-a.
       </p>
@@ -564,7 +589,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Sistem bodovanja za Google Ads audit</h2>
+      <h2 id="sistem-bodovanja-za-google-ads-audit">Sistem bodovanja za Google Ads audit</h2>
       <p>
         Preporu&#x10D;ujem da svaku kategoriju bodujete od 1 do 5, i da pratite overall account health score tokom vremena. To pomaže da prioriziujete akcije, merite napredak, i opravdate investiciju u optimizaciju.
       </p>
@@ -625,7 +650,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Naj&#x10D;e&#x161;&#x107;e gre&#x161;ke pri Google Ads audit-u</h2>
+      <h2 id="najx10dex161x107e-grex161ke-pri-google-ads-audit-u">Naj&#x10D;e&#x161;&#x107;e gre&#x161;ke pri Google Ads audit-u</h2>
       <p>
         Evo naj&#x10D;eš&#x107;ih gre&#x161;aka koje vidim kada ljudi rade Google Ads audit sami, ili kada outsource-uju neiskusnoj agenciji ili freelancer-u.
       </p>
@@ -682,7 +707,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Naj&#x10D;e&#x161;&#x107;e postavljena pitanja o Google Ads audit-u</h2>
+      <h2 id="najx10dex161x107e-postavljena-pitanja-o-google-ads-audit-u">Naj&#x10D;e&#x161;&#x107;e postavljena pitanja o Google Ads audit-u</h2>
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -753,7 +778,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Zaklju&#x10D;ak</h2>
+      <h2 id="zakljux10dak">Zaklju&#x10D;ak</h2>
       <p>
         Google Ads audit nije one-time checklist — to je sistematski proces koji treba da postane deo va&#x161;eg redovnog workflow-a. Moje iskustvo je da nalozi koji se redovno audit-uju (kvartalni deep audit + mese&#x10D;ni quick check) imaju 20-30% bolje rezultate od naloga koji se {`"set and forget"`}.
       </p>
@@ -782,7 +807,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Povezani vodi&#x10D;i</h2>
+      <h2 id="povezani-vodix10di">Povezani vodi&#x10D;i</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Profesionalni Google Ads audit</p>
@@ -832,7 +857,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <hr />
 
-      <h2>Najčešća pitanja o Google Ads auditu</h2>
+      <h2 id="najcesca-pitanja-o-google-ads-auditu">Najčešća pitanja o Google Ads auditu</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

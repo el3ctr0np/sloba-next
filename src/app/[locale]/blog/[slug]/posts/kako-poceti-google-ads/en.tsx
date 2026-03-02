@@ -46,8 +46,28 @@ export default function KakoPocetiGoogleAdsEN() {
           </div>
         </div>
       </div>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#why-google-ads-in-2026" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads in 2026</a></li>
+          <li><a href="#how-google-ads-works-simple-explanation" className="text-sm text-gray-700 hover:text-primary underline">How Google Ads Works — Simple Explanation</a></li>
+          <li><a href="#5-key-terms-you-need-to-understand" className="text-sm text-gray-700 hover:text-primary underline">5 Key Terms You Need to Understand</a></li>
+          <li><a href="#which-campaign-type-to-start-with" className="text-sm text-gray-700 hover:text-primary underline">Which Campaign Type to Start With</a></li>
+          <li><a href="#step-by-step-from-zero-to-your-first-campaign" className="text-sm text-gray-700 hover:text-primary underline">Step by Step — From Zero to Your First Campaign</a></li>
+          <li><a href="#how-much-budget-to-start-with" className="text-sm text-gray-700 hover:text-primary underline">How Much Budget to Start With</a></li>
+          <li><a href="#5-most-common-beginner-mistakes" className="text-sm text-gray-700 hover:text-primary underline">5 Most Common Beginner Mistakes</a></li>
+          <li><a href="#diy-or-hire-an-expert" className="text-sm text-gray-700 hover:text-primary underline">DIY or Hire an Expert</a></li>
+          <li><a href="#how-to-learn-google-ads" className="text-sm text-gray-700 hover:text-primary underline">How to Learn Google Ads</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently Asked Questions</a></li>
+          <li><a href="#conclusion" className="text-sm text-gray-700 hover:text-primary underline">Conclusion</a></li>
+          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+        </ol>
+      </nav>
 
-      <h2>Why Google Ads in 2026</h2>
+
+
+      <h2 id="why-google-ads-in-2026">Why Google Ads in 2026</h2>
       <p>
         Google processes over <strong>8.5 billion searches per day</strong>. Every one of those searches is a signal of intent — someone looking for a product, a service, an answer, or a solution. Google Ads lets you show up exactly at that moment.
       </p>
@@ -68,7 +88,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>How Google Ads Works — Simple Explanation</h2>
+      <h2 id="how-google-ads-works-simple-explanation">How Google Ads Works — Simple Explanation</h2>
       <p>
         The mechanics are simpler than most people expect. Here is what happens from the moment someone types a search query to the moment they land on your website:
       </p>
@@ -153,7 +173,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>5 Key Terms You Need to Understand</h2>
+      <h2 id="5-key-terms-you-need-to-understand">5 Key Terms You Need to Understand</h2>
       <p>
         Before you touch any settings, make sure you understand these five terms. They will come up constantly, and misunderstanding any of them leads to bad decisions.
       </p>
@@ -198,7 +218,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>Which Campaign Type to Start With</h2>
+      <h2 id="which-campaign-type-to-start-with">Which Campaign Type to Start With</h2>
       <p>
         Google Ads offers multiple campaign types, each designed for different goals and stages of the customer journey. Here is what you need to know about each:
       </p>
@@ -245,7 +265,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>Step by Step — From Zero to Your First Campaign</h2>
+      <h2 id="step-by-step-from-zero-to-your-first-campaign">Step by Step — From Zero to Your First Campaign</h2>
       <p>
         Here is the exact process I follow when launching a new account from scratch. Skip any of these steps and you will pay for it later.
       </p>
@@ -354,7 +374,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>How Much Budget to Start With</h2>
+      <h2 id="how-much-budget-to-start-with">How Much Budget to Start With</h2>
       <p>
         Budget is one of the most common sources of confusion for beginners. The answer depends on your market, industry, and goals — but here is a practical framework.
       </p>
@@ -414,7 +434,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>5 Most Common Beginner Mistakes</h2>
+      <h2 id="5-most-common-beginner-mistakes">5 Most Common Beginner Mistakes</h2>
       <p>
         After auditing hundreds of Google Ads accounts, I see the same mistakes repeated constantly. Here are the five that cause the most damage — and how to avoid them.
       </p>
@@ -496,7 +516,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>DIY or Hire an Expert</h2>
+      <h2 id="diy-or-hire-an-expert">DIY or Hire an Expert</h2>
       <p>
         Honest answer: it depends on your budget, time, and learning curve tolerance. Here is a comparison to help you decide.
       </p>
@@ -553,7 +573,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>How to Learn Google Ads</h2>
+      <h2 id="how-to-learn-google-ads">How to Learn Google Ads</h2>
       <p>
         There is no shortcut. Learning Google Ads properly takes time — and the time is well spent, because it teaches you to think about advertising in a fundamentally measurable way.
       </p>
@@ -585,7 +605,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>Frequently Asked Questions</h2>
+      <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 
       <div className="space-y-3 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -651,7 +671,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <hr />
 
-      <h2>Conclusion</h2>
+      <h2 id="conclusion">Conclusion</h2>
       <p>
         Google Ads is not complicated — but it does reward those who invest time in understanding how it works. The fundamentals have not changed: target the right keywords, write relevant ads, send traffic to focused landing pages, track your conversions, and optimize based on data.
       </p>
@@ -674,7 +694,7 @@ export default function KakoPocetiGoogleAdsEN() {
         </Link>
       </div>
 
-      <h2>Related Guides</h2>
+      <h2 id="related-guides">Related Guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link
           href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}

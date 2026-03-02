@@ -35,7 +35,25 @@ export default function AgencijaVsFreelancerPost() {
         Nakon godina rada na obe strane (kao in-house, kao freelancer i sarađujući sa agencijama) mogu vam reći da ne postoji univerzalno „najbolje" rešenje. Ali postoji pravo rešenje za vašu specifičnu situaciju. U ovom vodiču ću vam pomoći da to otkrijete.
       </p>
 
-      <h2>Zašto je izbor partnera ključan</h2>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#zasto-je-izbor-partnera-kljucan" className="text-sm text-gray-700 hover:text-primary underline">Zašto je izbor partnera ključan</a></li>
+          <li><a href="#tri-opcije-za-upravljanje-google-ads-kampanjama" className="text-sm text-gray-700 hover:text-primary underline">Tri opcije za upravljanje Google Ads kampanjama</a></li>
+          <li><a href="#prednosti-i-mane-google-ads-agencije" className="text-sm text-gray-700 hover:text-primary underline">Prednosti i mane Google Ads agencije</a></li>
+          <li><a href="#prednosti-i-mane-freelancera" className="text-sm text-gray-700 hover:text-primary underline">Prednosti i mane freelancera</a></li>
+          <li><a href="#prednosti-i-mane-in-house-tima" className="text-sm text-gray-700 hover:text-primary underline">Prednosti i mane in-house tima</a></li>
+          <li><a href="#poredenje-po-kljucnim-kriterijumima" className="text-sm text-gray-700 hover:text-primary underline">Poređenje po ključnim kriterijumima</a></li>
+          <li><a href="#koji-model-za-vasu-firmu" className="text-sm text-gray-700 hover:text-primary underline">Koji model za vašu firmu</a></li>
+          <li><a href="#na-sta-obratiti-paznju-prilikom-izbora-partnera" className="text-sm text-gray-700 hover:text-primary underline">Na šta obratiti pažnju prilikom izbora partnera</a></li>
+          <li><a href="#crvene-zastavice---kada-odustati-od-partnera" className="text-sm text-gray-700 hover:text-primary underline">Crvene zastavice - kada odustati od partnera</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja--agencija-vs-freelancer" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja — agencija vs freelancer</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="zasto-je-izbor-partnera-kljucan">Zašto je izbor partnera ključan</h2>
       <p>
         Moje iskustvo pokazuje da loš izbor partnera košta mnogo više od same cene usluge. Prosečna firma koja krene sa pogrešnim partnerom gubi 3-6 meseci, a često i značajan deo budžeta na neoptimalne kampanje.
       </p>
@@ -53,7 +71,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Tri opcije za upravljanje Google Ads kampanjama</h2>
+      <h2 id="tri-opcije-za-upravljanje-google-ads-kampanjama">Tri opcije za upravljanje Google Ads kampanjama</h2>
       <p>
         Preporučujem da prvo razumete osnove sva tri modela pre nego što uđete u detalje. Svaki model ima svoj sweet spot zavisno od veličine firme i budžeta.
       </p>
@@ -92,7 +110,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Prednosti i mane Google Ads agencije</h2>
+      <h2 id="prednosti-i-mane-google-ads-agencije">Prednosti i mane Google Ads agencije</h2>
       <p>
         Moje iskustvo rada sa agencijama (i kao klijent i kao partner) pokazuje da agencije donose najveću vrednost kada imate jasno definisane ciljeve i budžet koji opravdava njihovu strukturu.
       </p>
@@ -224,7 +242,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Prednosti i mane freelancera</h2>
+      <h2 id="prednosti-i-mane-freelancera">Prednosti i mane freelancera</h2>
       <p>
         Kao freelancer sa višegodišnjim iskustvom, mogu vam reći da je najveća prednost freelancera direktna komunikacija i personalizovana pažnja. Ali to dolazi sa trade-off-ovima koje treba razumeti.
       </p>
@@ -344,7 +362,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Prednosti i mane in-house tima</h2>
+      <h2 id="prednosti-i-mane-in-house-tima">Prednosti i mane in-house tima</h2>
       <p>
         In-house tim je dugoročna investicija koja ima smisla samo kada imate kritičnu masu budžeta i marketing je core funkcija vašeg biznisa.
       </p>
@@ -473,7 +491,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Poređenje po ključnim kriterijumima</h2>
+      <h2 id="poredenje-po-kljucnim-kriterijumima">Poređenje po ključnim kriterijumima</h2>
       <p>
         Preporučujem da pogledate ovu tabelu kao quick reference za poređenje svih opcija. Nema univerzalno "najbolje" — samo pravu opciju za vašu situaciju.
       </p>
@@ -549,7 +567,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Koji model za vašu firmu</h2>
+      <h2 id="koji-model-za-vasu-firmu">Koji model za vašu firmu</h2>
       <p>
         Na osnovu mog iskustva rada sa 50+ klijenata, evo konkretnih preporuka po tipu firme i budžetu.
       </p>
@@ -620,7 +638,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Na šta obratiti pažnju prilikom izbora partnera</h2>
+      <h2 id="na-sta-obratiti-paznju-prilikom-izbora-partnera">Na šta obratiti pažnju prilikom izbora partnera</h2>
       <p>
         Moje iskustvo pokazuje da ovih 5 faktora određuju uspeh ili neuspeh saradnje, bez obzira da li radite sa agencijom, freelancerom ili gradite tim.
       </p>
@@ -692,7 +710,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Crvene zastavice - kada odustati od partnera</h2>
+      <h2 id="crvene-zastavice---kada-odustati-od-partnera">Crvene zastavice - kada odustati od partnera</h2>
       <p>
         Preporučujem da immediately prekinete razgovor ako vidite bilo koju od ovih crvenih zastavica, bez obzira koliko dobra zvučala ponuda.
       </p>
@@ -760,7 +778,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Često postavljana pitanja</h2>
+      <h2 id="cesto-postavljana-pitanja">Često postavljana pitanja</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mb-3" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -872,7 +890,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <h2>Najčešća pitanja — agencija vs freelancer</h2>
+      <h2 id="najcesca-pitanja--agencija-vs-freelancer">Najčešća pitanja — agencija vs freelancer</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

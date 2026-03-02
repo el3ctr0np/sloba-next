@@ -28,8 +28,27 @@ export default function HowMuchDoesGoogleAdsCostEN() {
           </div>
         </div>
       </div>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#the-real-cost-of-google-ads-in-2026" className="text-sm text-gray-700 hover:text-primary underline">The real cost of Google Ads in 2026</a></li>
+          <li><a href="#how-google-ads-pricing-works" className="text-sm text-gray-700 hover:text-primary underline">How Google Ads pricing works</a></li>
+          <li><a href="#real-cpc-costs-by-industry-usuk-markets" className="text-sm text-gray-700 hover:text-primary underline">Real CPC costs by industry (US/UK markets)</a></li>
+          <li><a href="#minimum-budget-that-makes-sense" className="text-sm text-gray-700 hover:text-primary underline">Minimum budget that makes sense</a></li>
+          <li><a href="#management-costs-agency-vs-freelancer-vs-in-house" className="text-sm text-gray-700 hover:text-primary underline">Management costs: agency vs. freelancer vs. in-house</a></li>
+          <li><a href="#how-to-calculate-roi-before-spending-your-first-dollar" className="text-sm text-gray-700 hover:text-primary underline">How to calculate ROI before spending your first dollar</a></li>
+          <li><a href="#hidden-costs-nobody-talks-about" className="text-sm text-gray-700 hover:text-primary underline">Hidden costs nobody talks about</a></li>
+          <li><a href="#when-google-ads-isnt-the-right-choice" className="text-sm text-gray-700 hover:text-primary underline">When Google Ads isn't the right choice</a></li>
+          <li><a href="#next-steps" className="text-sm text-gray-700 hover:text-primary underline">Next steps</a></li>
+          <li><a href="#frequently-asked-questions-about-google-ads-pricing" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads pricing</a></li>
+          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+        </ol>
+      </nav>
 
-      <h2>The real cost of Google Ads in 2026</h2>
+
+
+      <h2 id="the-real-cost-of-google-ads-in-2026">The real cost of Google Ads in 2026</h2>
       <p>
         &quot;How much does Google Ads cost?&quot; — this is the first question every marketing director or business owner asks when considering paid advertising. I understand the frustration — Google won't give you a straight answer, and most content on this topic comes from generic US data that doesn't match your reality.
       </p>
@@ -46,7 +65,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <hr />
 
-      <h2>How Google Ads pricing works</h2>
+      <h2 id="how-google-ads-pricing-works">How Google Ads pricing works</h2>
       <p>
         Google Ads uses an <strong>auction system</strong>. Every time someone searches, a mini-auction happens between advertisers targeting that keyword. You only pay when someone clicks your ad — hence PPC (pay-per-click).
       </p>
@@ -90,7 +109,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <hr />
 
-      <h2>Real CPC costs by industry (US/UK markets)</h2>
+      <h2 id="real-cpc-costs-by-industry-usuk-markets">Real CPC costs by industry (US/UK markets)</h2>
       <p>Here are average CPCs I see across clients in US and UK markets (2025-2026):</p>
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
@@ -174,7 +193,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <hr />
 
-      <h2>Minimum budget that makes sense</h2>
+      <h2 id="minimum-budget-that-makes-sense">Minimum budget that makes sense</h2>
       <p>
         The question I hear constantly: &quot;Can I start with $500 per month?&quot; Technically — yes. Practically — it depends.
       </p>
@@ -237,7 +256,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <hr />
 
-      <h2>Management costs: agency vs. freelancer vs. in-house</h2>
+      <h2 id="management-costs-agency-vs-freelancer-vs-in-house">Management costs: agency vs. freelancer vs. in-house</h2>
       <p>Besides ad spend, you have campaign management costs. Three options:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
@@ -296,7 +315,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <hr />
 
-      <h2>How to calculate ROI before spending your first dollar</h2>
+      <h2 id="how-to-calculate-roi-before-spending-your-first-dollar">How to calculate ROI before spending your first dollar</h2>
       <p>This is where most people skip, but it's where the most important decisions are made.</p>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
@@ -348,7 +367,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <hr />
 
-      <h2>Hidden costs nobody talks about</h2>
+      <h2 id="hidden-costs-nobody-talks-about">Hidden costs nobody talks about</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5">
@@ -387,7 +406,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <hr />
 
-      <h2>When Google Ads isn't the right choice</h2>
+      <h2 id="when-google-ads-isnt-the-right-choice">When Google Ads isn't the right choice</h2>
       <p>Honestly, Google Ads isn't for everyone. I don't recommend it if:</p>
 
       <div className="space-y-4 my-6">
@@ -416,7 +435,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <hr />
 
-      <h2>Next steps</h2>
+      <h2 id="next-steps">Next steps</h2>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">I recommend these 4 steps:</p>
@@ -456,7 +475,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       <hr />
 
       {/* ── FAQ ── */}
-      <h2>Frequently asked questions about Google Ads pricing</h2>
+      <h2 id="frequently-asked-questions-about-google-ads-pricing">Frequently asked questions about Google Ads pricing</h2>
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -505,7 +524,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         </details>
       </div>
 
-      <h2>Related Guides</h2>
+      <h2 id="related-guides">Related Guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/konsultacije" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Consultations</p>

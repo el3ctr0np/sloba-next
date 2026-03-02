@@ -25,8 +25,33 @@ export default function GoogleAdsAuditGuideEN() {
           </div>
         </div>
       </div>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#why-google-ads-audit-is-essential" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads audit is essential</a></li>
+          <li><a href="#what-a-good-google-ads-audit-covers" className="text-sm text-gray-700 hover:text-primary underline">What a good Google Ads audit covers</a></li>
+          <li><a href="#category-1-account-structure" className="text-sm text-gray-700 hover:text-primary underline">Category 1: Account structure</a></li>
+          <li><a href="#category-2-conversion-tracking" className="text-sm text-gray-700 hover:text-primary underline">Category 2: Conversion tracking</a></li>
+          <li><a href="#category-3-campaign-settings" className="text-sm text-gray-700 hover:text-primary underline">Category 3: Campaign settings</a></li>
+          <li><a href="#category-4-keywords-and-search-terms" className="text-sm text-gray-700 hover:text-primary underline">Category 4: Keywords and search terms</a></li>
+          <li><a href="#category-5-ads-and-extensions" className="text-sm text-gray-700 hover:text-primary underline">Category 5: Ads and extensions</a></li>
+          <li><a href="#category-6-audiences-and-remarketing" className="text-sm text-gray-700 hover:text-primary underline">Category 6: Audiences and remarketing</a></li>
+          <li><a href="#category-7-bidding-strategy" className="text-sm text-gray-700 hover:text-primary underline">Category 7: Bidding strategy</a></li>
+          <li><a href="#category-8-budget-and-allocation" className="text-sm text-gray-700 hover:text-primary underline">Category 8: Budget and allocation</a></li>
+          <li><a href="#quick-google-ads-audit-in-30-minutes" className="text-sm text-gray-700 hover:text-primary underline">Quick Google Ads audit in 30 minutes</a></li>
+          <li><a href="#scoring-system-for-google-ads-audit" className="text-sm text-gray-700 hover:text-primary underline">Scoring system for Google Ads audit</a></li>
+          <li><a href="#most-common-google-ads-audit-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most common Google Ads audit mistakes</a></li>
+          <li><a href="#frequently-asked-questions-about-google-ads-audit" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads audit</a></li>
+          <li><a href="#conclusion" className="text-sm text-gray-700 hover:text-primary underline">Conclusion</a></li>
+          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related guides</a></li>
+          <li><a href="#frequently-asked-questions-about-google-ads-audit" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads audit</a></li>
+        </ol>
+      </nav>
 
-      <h2>Why Google Ads audit is essential</h2>
+
+
+      <h2 id="why-google-ads-audit-is-essential">Why Google Ads audit is essential</h2>
       <p>
         When I take over a new account for management, the first thing is always a detailed Google Ads audit. In practice I see that over 90% of accounts have the same fundamental problems: conversion tracking doesn&apos;t work properly, budget is bleeding on irrelevant search terms, campaigns are poorly organized, or Smart Bidding is trying to optimize with insufficient data.
       </p>
@@ -47,7 +72,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>What a good Google Ads audit covers</h2>
+      <h2 id="what-a-good-google-ads-audit-covers">What a good Google Ads audit covers</h2>
       <p>
         A professional Google Ads audit isn&apos;t improvisation — it&apos;s a structured checklist of 80+ control points divided into 10 key categories. Each category has priority items (critical for performance) and optimization items (additional improvements for advanced accounts).
       </p>
@@ -111,7 +136,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Category 1: Account structure</h2>
+      <h2 id="category-1-account-structure">Category 1: Account structure</h2>
       <p>
         Poor structure is like poor building architecture — you can paint the facade, but fundamental problems remain. I recommend structure be logical, scalable, and transparent — anyone should understand the organization in 5 minutes of review.
       </p>
@@ -160,7 +185,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Category 2: Conversion tracking</h2>
+      <h2 id="category-2-conversion-tracking">Category 2: Conversion tracking</h2>
       <p>
         Conversion tracking is the most critical part of any Google Ads audit. If tracking doesn&apos;t work, or records wrong data, everything else is useless — you&apos;re optimizing based on bad information and making wrong decisions.
       </p>
@@ -208,7 +233,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Category 3: Campaign settings</h2>
+      <h2 id="category-3-campaign-settings">Category 3: Campaign settings</h2>
       <p>
         Default settings in Google Ads are bad — designed for Google to earn more, not for you to get better results. In practice I see that over 70% of new accounts have default settings that waste budget in wrong places.
       </p>
@@ -266,7 +291,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Category 4: Keywords and search terms</h2>
+      <h2 id="category-4-keywords-and-search-terms">Category 4: Keywords and search terms</h2>
       <p>
         Keywords aren&apos;t what you enter in account — they&apos;re <strong>search terms</strong> people actually type. Every Google Ads audit must analyze Search Terms Report in detail and identify what actually triggers your ads and where budget goes.
       </p>
@@ -318,7 +343,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Category 5: Ads and extensions</h2>
+      <h2 id="category-5-ads-and-extensions">Category 5: Ads and extensions</h2>
       <p>
         Ads are what potential customers actually see, but in practice I see that over 50% of accounts have &quot;Poor&quot; Ad Strength and minimal number of extensions. That&apos;s a missed opportunity — better ads = higher CTR = lower CPC + more conversions.
       </p>
@@ -376,7 +401,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Category 6: Audiences and remarketing</h2>
+      <h2 id="category-6-audiences-and-remarketing">Category 6: Audiences and remarketing</h2>
       <p>
         Remarketing is the easiest win in Google Ads — people who already visited site convert 3-5x better than cold traffic. If Google Ads audit reveals account has no remarketing lists or converter exclusions, that&apos;s huge missed opportunity.
       </p>
@@ -421,7 +446,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Category 7: Bidding strategy</h2>
+      <h2 id="category-7-bidding-strategy">Category 7: Bidding strategy</h2>
       <p>
         Smart Bidding is powerful tool, but only if you have enough conversions for algorithm to validly learn. In practice I see that over 40% of accounts use Smart Bidding with &lt;10 conversions monthly — that can&apos;t work.
       </p>
@@ -473,7 +498,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Category 8: Budget and allocation</h2>
+      <h2 id="category-8-budget-and-allocation">Category 8: Budget and allocation</h2>
       <p>
         Budget allocation is one of most common mistakes in Google Ads audits — best campaigns are &quot;Limited by budget&quot;, while bad campaigns spend full budget. That&apos;s like giving best salesperson least resources.
       </p>
@@ -513,7 +538,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Quick Google Ads audit in 30 minutes</h2>
+      <h2 id="quick-google-ads-audit-in-30-minutes">Quick Google Ads audit in 30 minutes</h2>
       <p>
         If you don&apos;t have 2-4 hours for full Google Ads audit, here&apos;s quick check covering 80% of most critical things. I recommend doing this quick audit monthly between quarterly deep audits.
       </p>
@@ -562,7 +587,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Scoring system for Google Ads audit</h2>
+      <h2 id="scoring-system-for-google-ads-audit">Scoring system for Google Ads audit</h2>
       <p>
         I recommend scoring each category from 1 to 5, and tracking overall account health score over time. This helps prioritize actions, measure progress, and justify investment in optimization.
       </p>
@@ -623,7 +648,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Most common Google Ads audit mistakes</h2>
+      <h2 id="most-common-google-ads-audit-mistakes">Most common Google Ads audit mistakes</h2>
       <p>
         Here are most common mistakes I see when people audit Google Ads themselves, or outsource to inexperienced agency or freelancer.
       </p>
@@ -680,7 +705,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Frequently asked questions about Google Ads audit</h2>
+      <h2 id="frequently-asked-questions-about-google-ads-audit">Frequently asked questions about Google Ads audit</h2>
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -751,7 +776,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Conclusion</h2>
+      <h2 id="conclusion">Conclusion</h2>
       <p>
         Google Ads audit isn&apos;t one-time checklist — it&apos;s systematic process that should become part of your regular workflow. My experience is that accounts regularly audited (quarterly deep audit + monthly quick check) have 20-30% better results than accounts that are &quot;set and forget&quot;.
       </p>
@@ -780,7 +805,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Related guides</h2>
+      <h2 id="related-guides">Related guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Professional Google Ads Audit</p>
@@ -830,7 +855,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
-      <h2>Frequently asked questions about Google Ads audit</h2>
+      <h2 id="frequently-asked-questions-about-google-ads-audit">Frequently asked questions about Google Ads audit</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

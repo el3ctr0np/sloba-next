@@ -37,8 +37,24 @@ export default function GoogleAdsMistakesEN() {
           </div>
         </div>
       </div>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#why-google-ads-mistakes-are-expensive" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads mistakes are expensive</a></li>
+          <li><a href="#account-structure-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Account structure mistakes</a></li>
+          <li><a href="#keyword-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Keyword mistakes</a></li>
+          <li><a href="#ad-copy-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Ad copy mistakes</a></li>
+          <li><a href="#measurement-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Measurement mistakes</a></li>
+          <li><a href="#how-to-create-action-plan-for-fixes" className="text-sm text-gray-700 hover:text-primary underline">How to create action plan for fixes</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-about-google-ads-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads mistakes</a></li>
+        </ol>
+      </nav>
 
-      <h2>Why Google Ads mistakes are expensive</h2>
+
+
+      <h2 id="why-google-ads-mistakes-are-expensive">Why Google Ads mistakes are expensive</h2>
       <p>
         Whenever I audit a Google Ads account — whether it's a local business
         with a $500/£400 monthly budget or an eCommerce with $10,000+/£8,000+ spend —
@@ -73,7 +89,7 @@ export default function GoogleAdsMistakesEN() {
 
       <hr />
 
-      <h2>Account structure mistakes</h2>
+      <h2 id="account-structure-mistakes">Account structure mistakes</h2>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">
@@ -146,7 +162,7 @@ export default function GoogleAdsMistakesEN() {
 
       <hr />
 
-      <h2>Keyword mistakes</h2>
+      <h2 id="keyword-mistakes">Keyword mistakes</h2>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">
@@ -225,7 +241,7 @@ export default function GoogleAdsMistakesEN() {
 
       <hr />
 
-      <h2>Ad copy mistakes</h2>
+      <h2 id="ad-copy-mistakes">Ad copy mistakes</h2>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">
@@ -294,7 +310,7 @@ export default function GoogleAdsMistakesEN() {
 
       <hr />
 
-      <h2>Measurement mistakes</h2>
+      <h2 id="measurement-mistakes">Measurement mistakes</h2>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">
@@ -379,7 +395,7 @@ export default function GoogleAdsMistakesEN() {
 
       <hr />
 
-      <h2>How to create action plan for fixes</h2>
+      <h2 id="how-to-create-action-plan-for-fixes">How to create action plan for fixes</h2>
 
       <p>
         Found multiple mistakes in your account? You don't have to fix everything
@@ -504,7 +520,7 @@ export default function GoogleAdsMistakesEN() {
 
       <hr />
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -659,7 +675,7 @@ export default function GoogleAdsMistakesEN() {
 
       <hr />
 
-      <h2>Frequently asked questions about Google Ads mistakes</h2>
+      <h2 id="frequently-asked-questions-about-google-ads-mistakes">Frequently asked questions about Google Ads mistakes</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

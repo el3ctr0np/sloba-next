@@ -32,7 +32,27 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── What is Quality Score ── */}
-      <h2>What Is Quality Score and Why It Matters</h2>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#what-is-quality-score-and-why-it-matters" className="text-sm text-gray-700 hover:text-primary underline">What Is Quality Score and Why It Matters</a></li>
+          <li><a href="#how-quality-score-affects-cost-per-click" className="text-sm text-gray-700 hover:text-primary underline">How Quality Score Affects Cost Per Click</a></li>
+          <li><a href="#three-components-of-quality-score" className="text-sm text-gray-700 hover:text-primary underline">Three Components of Quality Score</a></li>
+          <li><a href="#how-to-improve-expected-ctr" className="text-sm text-gray-700 hover:text-primary underline">How to Improve Expected CTR</a></li>
+          <li><a href="#how-to-improve-ad-relevance" className="text-sm text-gray-700 hover:text-primary underline">How to Improve Ad Relevance</a></li>
+          <li><a href="#how-to-improve-landing-page-experience" className="text-sm text-gray-700 hover:text-primary underline">How to Improve Landing Page Experience</a></li>
+          <li><a href="#30-day-plan-to-improve-quality-score" className="text-sm text-gray-700 hover:text-primary underline">30-Day Plan to Improve Quality Score</a></li>
+          <li><a href="#quality-score-by-campaign-type" className="text-sm text-gray-700 hover:text-primary underline">Quality Score by Campaign Type</a></li>
+          <li><a href="#most-common-quality-score-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most Common Quality Score Mistakes</a></li>
+          <li><a href="#frequently-asked-questions-about-quality-score" className="text-sm text-gray-700 hover:text-primary underline">Frequently Asked Questions About Quality Score</a></li>
+          <li><a href="#conclusion" className="text-sm text-gray-700 hover:text-primary underline">Conclusion</a></li>
+          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+        </ol>
+      </nav>
+
+
+      <h2 id="what-is-quality-score-and-why-it-matters">What Is Quality Score and Why It Matters</h2>
       <p>
         <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> is Google's diagnostic rating of your keyword, ad, and landing page relevance. It is scored on a 1-10 scale for every keyword in your account.
       </p>
@@ -57,7 +77,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── CPC impact ── */}
-      <h2>How Quality Score Affects Cost Per Click</h2>
+      <h2 id="how-quality-score-affects-cost-per-click">How Quality Score Affects Cost Per Click</h2>
       <p>
         This is the most important table in the entire guide. It shows how much more or less you pay depending on QS, with baseline at QS 5.
       </p>
@@ -147,7 +167,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── Three components ── */}
-      <h2>Three Components of Quality Score</h2>
+      <h2 id="three-components-of-quality-score">Three Components of Quality Score</h2>
       <p>
         Each component is rated as: Above average, Average, or Below average. Understanding which component drags QS down is key to efficient optimization.
       </p>
@@ -219,7 +239,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── Improving Expected CTR ── */}
-      <h2>How to Improve Expected CTR</h2>
+      <h2 id="how-to-improve-expected-ctr">How to Improve Expected CTR</h2>
       <p>Expected CTR makes up ~40% of Quality Score and can be most directly improved by optimizing ads.</p>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -262,7 +282,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── Improving Ad Relevance ── */}
-      <h2>How to Improve Ad Relevance</h2>
+      <h2 id="how-to-improve-ad-relevance">How to Improve Ad Relevance</h2>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">4 tactics for better relevance</p>
@@ -289,7 +309,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── Improving LP Experience ── */}
-      <h2>How to Improve Landing Page Experience</h2>
+      <h2 id="how-to-improve-landing-page-experience">How to Improve Landing Page Experience</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
@@ -324,7 +344,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── 30-day plan ── */}
-      <h2>30-Day Plan to Improve Quality Score</h2>
+      <h2 id="30-day-plan-to-improve-quality-score">30-Day Plan to Improve Quality Score</h2>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
@@ -350,7 +370,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── QS by campaign type ── */}
-      <h2>Quality Score by Campaign Type</h2>
+      <h2 id="quality-score-by-campaign-type">Quality Score by Campaign Type</h2>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
@@ -389,7 +409,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── Common mistakes ── */}
-      <h2>Most Common Quality Score Mistakes</h2>
+      <h2 id="most-common-quality-score-mistakes">Most Common Quality Score Mistakes</h2>
 
       <div className="space-y-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5">
@@ -436,7 +456,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── FAQ ── */}
-      <h2>Frequently Asked Questions About Quality Score</h2>
+      <h2 id="frequently-asked-questions-about-quality-score">Frequently Asked Questions About Quality Score</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -503,7 +523,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── Conclusion + CTA ── */}
-      <h2>Conclusion</h2>
+      <h2 id="conclusion">Conclusion</h2>
       <p>
         Quality Score is the most powerful tool for controlling costs in Google Ads. Improving from QS 5 to 7 reduces CPC by 28%, which annually can mean thousands in savings. Focus on three components — Expected CTR, Ad Relevance, and Landing Page Experience — using the diagnostic table to identify where the problem is.
       </p>
@@ -523,7 +543,7 @@ export default function QualityScoreGuideEN() {
       <hr />
 
       {/* ── Related guides ── */}
-      <h2>Related Guides</h2>
+      <h2 id="related-guides">Related Guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Management</p>

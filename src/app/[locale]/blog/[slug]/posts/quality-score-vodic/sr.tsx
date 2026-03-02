@@ -32,7 +32,27 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── Šta je Quality Score ── */}
-      <h2>Šta je Quality Score i zašto je bitan</h2>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#sta-je-quality-score-i-zasto-je-bitan" className="text-sm text-gray-700 hover:text-primary underline">Šta je Quality Score i zašto je bitan</a></li>
+          <li><a href="#koliko-quality-score-utice-na-cenu-klika" className="text-sm text-gray-700 hover:text-primary underline">Koliko Quality Score utiče na cenu klika</a></li>
+          <li><a href="#tri-komponente-quality-score-a" className="text-sm text-gray-700 hover:text-primary underline">Tri komponente Quality Score-a</a></li>
+          <li><a href="#kako-poboljsati-expected-ctr" className="text-sm text-gray-700 hover:text-primary underline">Kako poboljšati Expected CTR</a></li>
+          <li><a href="#kako-poboljsati-ad-relevance" className="text-sm text-gray-700 hover:text-primary underline">Kako poboljšati Ad Relevance</a></li>
+          <li><a href="#kako-poboljsati-landing-page-experience" className="text-sm text-gray-700 hover:text-primary underline">Kako poboljšati Landing Page Experience</a></li>
+          <li><a href="#30-dnevni-plan-za-poboljsanje-quality-score-a" className="text-sm text-gray-700 hover:text-primary underline">30-dnevni plan za poboljšanje Quality Score-a</a></li>
+          <li><a href="#quality-score-po-tipu-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Quality Score po tipu kampanje</a></li>
+          <li><a href="#najcesce-greske-sa-quality-score-om" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške sa Quality Score-om</a></li>
+          <li><a href="#najcesca-pitanja-o-quality-score-u" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Quality Score-u</a></li>
+          <li><a href="#zakljucak" className="text-sm text-gray-700 hover:text-primary underline">Zaključak</a></li>
+          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+        </ol>
+      </nav>
+
+
+      <h2 id="sta-je-quality-score-i-zasto-je-bitan">Šta je Quality Score i zašto je bitan</h2>
       <p>
         <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> je Google-ova dijagnostička ocena relevantnosti vaših ključnih reči, oglasa i landing page-a. Ocenjuje se na skali 1-10 za svaku ključnu reč u vašem nalogu.
       </p>
@@ -57,7 +77,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── CPC uticaj ── */}
-      <h2>Koliko Quality Score utiče na cenu klika</h2>
+      <h2 id="koliko-quality-score-utice-na-cenu-klika">Koliko Quality Score utiče na cenu klika</h2>
       <p>
         Ovo je najvažnija tabela u celom vodiču. Pokazuje koliko više ili manje plaćate u zavisnosti od QS-a, sa baseline-om na QS 5.
       </p>
@@ -147,7 +167,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── Tri komponente ── */}
-      <h2>Tri komponente Quality Score-a</h2>
+      <h2 id="tri-komponente-quality-score-a">Tri komponente Quality Score-a</h2>
       <p>
         Svaka komponenta se ocenjuje kao: Above average, Average, ili Below average. Razumevanje koja komponenta vuče QS dole je ključ za efikasnu optimizaciju.
       </p>
@@ -219,7 +239,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── Poboljšanje Expected CTR ── */}
-      <h2>Kako poboljšati Expected CTR</h2>
+      <h2 id="kako-poboljsati-expected-ctr">Kako poboljšati Expected CTR</h2>
       <p>Expected CTR čini ~40% Quality Score-a i najdirektnije se može poboljšati optimizacijom oglasa.</p>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -262,7 +282,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── Poboljšanje Ad Relevance ── */}
-      <h2>Kako poboljšati Ad Relevance</h2>
+      <h2 id="kako-poboljsati-ad-relevance">Kako poboljšati Ad Relevance</h2>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">4 taktike za bolju relevantnost</p>
@@ -289,7 +309,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── Poboljšanje LP Experience ── */}
-      <h2>Kako poboljšati Landing Page Experience</h2>
+      <h2 id="kako-poboljsati-landing-page-experience">Kako poboljšati Landing Page Experience</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
@@ -324,7 +344,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── 30-dnevni plan ── */}
-      <h2>30-dnevni plan za poboljšanje Quality Score-a</h2>
+      <h2 id="30-dnevni-plan-za-poboljsanje-quality-score-a">30-dnevni plan za poboljšanje Quality Score-a</h2>
 
       <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
@@ -350,7 +370,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── QS po tipu kampanje ── */}
-      <h2>Quality Score po tipu kampanje</h2>
+      <h2 id="quality-score-po-tipu-kampanje">Quality Score po tipu kampanje</h2>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
@@ -389,7 +409,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── Najčešće greške ── */}
-      <h2>Najčešće greške sa Quality Score-om</h2>
+      <h2 id="najcesce-greske-sa-quality-score-om">Najčešće greške sa Quality Score-om</h2>
 
       <div className="space-y-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5">
@@ -436,7 +456,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── FAQ ── */}
-      <h2>Najčešća pitanja o Quality Score-u</h2>
+      <h2 id="najcesca-pitanja-o-quality-score-u">Najčešća pitanja o Quality Score-u</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -503,7 +523,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── Zaključak + CTA ── */}
-      <h2>Zaključak</h2>
+      <h2 id="zakljucak">Zaključak</h2>
       <p>
         Quality Score je najmoćniji alat za kontrolu troškova u Google Ads-u. Poboljšanje sa QS 5 na 7 smanjuje CPC za 28%, što na godišnjem nivou može značiti hiljade evra uštede. Fokusirajte se na tri komponente — Expected CTR, Ad Relevance i Landing Page Experience — koristeći dijagnostičku tabelu da identifikujete gde je problem.
       </p>
@@ -523,7 +543,7 @@ export default function QualityScoreVodicPost() {
       <hr />
 
       {/* ── Povezani vodiči ── */}
-      <h2>Povezani vodiči</h2>
+      <h2 id="povezani-vodici">Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>

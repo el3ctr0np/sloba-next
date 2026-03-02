@@ -27,8 +27,26 @@ export default function GoogleAdvertisingForBusinessesEN() {
           </div>
         </div>
       </div>
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#why-google-ads-is-effective-for-businesses" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads is effective for businesses</a></li>
+          <li><a href="#how-google-ads-works" className="text-sm text-gray-700 hover:text-primary underline">How Google Ads works</a></li>
+          <li><a href="#types-of-google-ads-campaigns" className="text-sm text-gray-700 hover:text-primary underline">Types of Google Ads campaigns</a></li>
+          <li><a href="#google-ads-for-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Google Ads for eCommerce</a></li>
+          <li><a href="#google-ads-for-b2b-businesses" className="text-sm text-gray-700 hover:text-primary underline">Google Ads for B2B businesses</a></li>
+          <li><a href="#how-to-set-foundations-for-successful-campaigns" className="text-sm text-gray-700 hover:text-primary underline">How to set foundations for successful campaigns</a></li>
+          <li><a href="#most-common-google-ads-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most common Google Ads mistakes</a></li>
+          <li><a href="#how-to-measure-campaign-success" className="text-sm text-gray-700 hover:text-primary underline">How to measure campaign success</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-about-google-advertising-for-businesses" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google advertising for businesses</a></li>
+        </ol>
+      </nav>
 
-      <h2>Why Google Ads is effective for businesses</h2>
+
+
+      <h2 id="why-google-ads-is-effective-for-businesses">Why Google Ads is effective for businesses</h2>
       <p><a href="https://support.google.com/google-ads/answer/6146252" target="_blank" rel="noopener noreferrer" className="underline">Google Ads</a> allows your business to appear exactly when a potential customer searches for what you offer. That&apos;s the key difference from other channels.</p>
       <p>When someone types &quot;CRM software for small businesses&quot; or &quot;men's running shoes&quot;, your ad can appear above organic results. The person searching has clear intent — they're not mindlessly scrolling, they're actively looking for a solution.</p>
       <p>My experience managing 50+ brands across 6+ countries with $2M+ annual spend shows that Google Ads delivers best results when:</p>
@@ -46,7 +64,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>How Google Ads works</h2>
+      <h2 id="how-google-ads-works">How Google Ads works</h2>
       <p>Google Ads operates on a real-time auction principle. Every time someone searches, an auction happens among advertisers targeting that keyword. Use <a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a> to research which terms your potential customers use.</p>
       <p>But it's not just who pays most. Google uses this formula:</p>
 
@@ -109,7 +127,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>Types of Google Ads campaigns</h2>
+      <h2 id="types-of-google-ads-campaigns">Types of Google Ads campaigns</h2>
       <p>Google Ads isn't one system — it's an ecosystem of different campaign types. What works for eCommerce won't work for B2B SaaS. Here's an overview:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -205,7 +223,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>Google Ads for eCommerce</h2>
+      <h2 id="google-ads-for-ecommerce">Google Ads for eCommerce</h2>
       <p>If you sell physical products online, Google Ads is likely your most important channel. Shopping campaigns deliver quality traffic because users see image and price before clicking.</p>
 
       <h3>Basic campaign structure for eCommerce</h3>
@@ -334,7 +352,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>Google Ads for B2B businesses</h2>
+      <h2 id="google-ads-for-b2b-businesses">Google Ads for B2B businesses</h2>
       <p>B2B has specific challenges: longer sales cycles, multiple decision makers, lower search volume. But Google Ads still works excellently — just requires different approach.</p>
 
       <h3>Basic campaign structure for B2B</h3>
@@ -467,7 +485,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>How to set foundations for successful campaigns</h2>
+      <h2 id="how-to-set-foundations-for-successful-campaigns">How to set foundations for successful campaigns</h2>
       <p>Before launching your first campaign, these 4 things must be in place. Skipping these steps is the most common reason for failure.</p>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -549,7 +567,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>Most common Google Ads mistakes</h2>
+      <h2 id="most-common-google-ads-mistakes">Most common Google Ads mistakes</h2>
       <p>After working with 50+ clients, I see these 6 mistakes most often. All are easily fixable.</p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
@@ -608,7 +626,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>How to measure campaign success</h2>
+      <h2 id="how-to-measure-campaign-success">How to measure campaign success</h2>
       <p>Measuring Google Ads success depends on what you sell — eCommerce or B2B. Here are key KPIs for both.</p>
 
       <h3>KPIs for eCommerce</h3>
@@ -743,7 +761,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mb-3" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -866,7 +884,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <h2>Frequently asked questions about Google advertising for businesses</h2>
+      <h2 id="frequently-asked-questions-about-google-advertising-for-businesses">Frequently asked questions about Google advertising for businesses</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

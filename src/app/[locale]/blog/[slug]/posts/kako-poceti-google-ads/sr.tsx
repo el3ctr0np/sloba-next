@@ -30,7 +30,27 @@ export default function KakoPocetiGoogleAdsSR() {
       </div>
 
       {/* ── Sekcija 1: Zašto Google Ads u 2026. ── */}
-      <h2>Zašto Google Ads u 2026. godini</h2>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#zasto-google-ads-u-2026-godini" className="text-sm text-gray-700 hover:text-primary underline">Zašto Google Ads u 2026. godini</a></li>
+          <li><a href="#kako-google-ads-funkcionise-jednostavno-objasnjenje" className="text-sm text-gray-700 hover:text-primary underline">Kako Google Ads funkcioniše (jednostavno objašnjenje)</a></li>
+          <li><a href="#5-kljucnih-pojmova-koje-morate-razumeti" className="text-sm text-gray-700 hover:text-primary underline">5 ključnih pojmova koje morate razumeti</a></li>
+          <li><a href="#koji-tip-kampanje-izabrati-za-pocetak" className="text-sm text-gray-700 hover:text-primary underline">Koji tip kampanje izabrati za početak</a></li>
+          <li><a href="#korak-po-korak-od-nule-do-prve-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Korak po korak — od nule do prve kampanje</a></li>
+          <li><a href="#koliki-budzet-za-pocetak" className="text-sm text-gray-700 hover:text-primary underline">Koliki budžet za početak</a></li>
+          <li><a href="#5-najcescih-gresaka-pocetnika" className="text-sm text-gray-700 hover:text-primary underline">5 najčešćih grešaka početnika</a></li>
+          <li><a href="#sam-ili-sa-strucnjakom" className="text-sm text-gray-700 hover:text-primary underline">Sam ili sa stručnjakom</a></li>
+          <li><a href="#kako-nauciti-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Kako naučiti Google Ads</a></li>
+          <li><a href="#cesta-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Česta pitanja</a></li>
+          <li><a href="#zakljucak" className="text-sm text-gray-700 hover:text-primary underline">Zaključak</a></li>
+          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+        </ol>
+      </nav>
+
+
+      <h2 id="zasto-google-ads-u-2026-godini">Zašto Google Ads u 2026. godini</h2>
       <p>
         Google obradi <strong>8,5 milijardi pretraga dnevno</strong>. Svaki put kada neko ukuca &quot;servis klima uređaja Beograd&quot; ili &quot;kupiti bicikl online&quot; — to je potencijalni kupac koji aktivno traži rešenje. Ne čeka da ga reklama nađe. On sam traži.
       </p>
@@ -52,7 +72,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 2: Kako Google Ads funkcioniše ── */}
-      <h2>Kako Google Ads funkcioniše (jednostavno objašnjenje)</h2>
+      <h2 id="kako-google-ads-funkcionise-jednostavno-objasnjenje">Kako Google Ads funkcioniše (jednostavno objašnjenje)</h2>
       <p>
         Zamislite da imate prodavnicu u centru grada. Google Ads je kao da plaćate zakup izloga na najprometnijem uglu — ali samo onda kada neko prođe i potraži tačno ono što vi prodajete. Ne plaćate za prikazivanje. Plaćate samo kada neko klikne.
       </p>
@@ -103,7 +123,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 3: 5 ključnih pojmova ── */}
-      <h2>5 ključnih pojmova koje morate razumeti</h2>
+      <h2 id="5-kljucnih-pojmova-koje-morate-razumeti">5 ključnih pojmova koje morate razumeti</h2>
       <p>
         Pre nego što pokrenete prvu kampanju, postoji pet termina bez kojih ne možete pratiti šta se dešava sa vašim budžetom. Evo svakog objašnjenog bez žargona:
       </p>
@@ -139,7 +159,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 4: Koji tip kampanje ── */}
-      <h2>Koji tip kampanje izabrati za početak</h2>
+      <h2 id="koji-tip-kampanje-izabrati-za-pocetak">Koji tip kampanje izabrati za početak</h2>
       <p>
         Google Ads nudi više vrsta kampanja — svaka je dizajnirana za drugačiji cilj i drugačiju fazu puta kupca. Evo pregleda svakog tipa:
       </p>
@@ -182,7 +202,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 5: Korak po korak ── */}
-      <h2>Korak po korak — od nule do prve kampanje</h2>
+      <h2 id="korak-po-korak-od-nule-do-prve-kampanje">Korak po korak — od nule do prve kampanje</h2>
       <p>
         Evo konkretnih koraka za pokretanje prve Google Ads kampanje. Ne preskačite korake — redosled je bitan, posebno postavljanje praćenja konverzija pre svega ostalog.
       </p>
@@ -250,7 +270,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 6: Budžet ── */}
-      <h2>Koliki budžet za početak</h2>
+      <h2 id="koliki-budzet-za-pocetak">Koliki budžet za početak</h2>
       <p>
         Jedno od najčešćih pitanja: &quot;Koliko para treba da potrošim?&quot; Odgovor zavisi od tržišta, industrije i vaših ciljeva — ali postoji praktično pravilo za testiranje.
       </p>
@@ -313,7 +333,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 7: Greške početnika ── */}
-      <h2>5 najčešćih grešaka početnika</h2>
+      <h2 id="5-najcescih-gresaka-pocetnika">5 najčešćih grešaka početnika</h2>
       <p>
         Procenjujem da oko 70% početnika pravi iste greške. Dobre vesti: sve su lako izbegljive ako znate šta da tražite.
       </p>
@@ -373,7 +393,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 8: Sam ili sa stručnjakom ── */}
-      <h2>Sam ili sa stručnjakom</h2>
+      <h2 id="sam-ili-sa-strucnjakom">Sam ili sa stručnjakom</h2>
       <p>
         Ovo je pitanje koje dobijam često — i iskren odgovor zavisi od toga šta je vaša primarna delatnost, koliko vremena imate i koliko brzo trebate rezultate.
       </p>
@@ -432,7 +452,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 9: Kako naučiti ── */}
-      <h2>Kako naučiti Google Ads</h2>
+      <h2 id="kako-nauciti-google-ads">Kako naučiti Google Ads</h2>
       <p>
         Učenje Google Ads-a je kontinuirani proces. Platforma se menja, algoritmi se ažuriraju, novi formati kampanja se uvode. Ono što funkcionisalo pre dve godine možda danas nije optimalno.
       </p>
@@ -467,7 +487,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 10: FAQ ── */}
-      <h2>Česta pitanja</h2>
+      <h2 id="cesta-pitanja">Česta pitanja</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -524,7 +544,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 11: Zaključak ── */}
-      <h2>Zaključak</h2>
+      <h2 id="zakljucak">Zaključak</h2>
       <p>
         Kako početi sa Google Ads-om nije komplikovano pitanje — ali zahteva pravi redosled koraka i strpljenje u prvim nedeljama. Pokrenite nalog, povežite Analytics, postavite praćenje konverzija <em>pre</em> prve kampanje, istražite ključne reči i krenite sa jednom, dobro strukturiranom Search kampanjom.
       </p>
@@ -550,7 +570,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Povezani vodiči ── */}
-      <h2>Povezani vodiči</h2>
+      <h2 id="povezani-vodici">Povezani vodiči</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

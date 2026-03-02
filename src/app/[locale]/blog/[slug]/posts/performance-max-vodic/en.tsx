@@ -35,8 +35,27 @@ export default function PerformanceMaxGuideEN() {
       </div>
 
       <hr />
+      {/* ── Table of Contents ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#what-is-performance-max-and-why-its-special" className="text-sm text-gray-700 hover:text-primary underline">What is Performance Max and why it's special</a></li>
+          <li><a href="#when-to-use-performance-max-campaigns" className="text-sm text-gray-700 hover:text-primary underline">When to use Performance Max campaigns</a></li>
+          <li><a href="#performance-max-campaign-structure" className="text-sm text-gray-700 hover:text-primary underline">Performance Max campaign structure</a></li>
+          <li><a href="#performance-max-for-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Performance Max for eCommerce</a></li>
+          <li><a href="#performance-max-for-b2b-companies" className="text-sm text-gray-700 hover:text-primary underline">Performance Max for B2B companies</a></li>
+          <li><a href="#performance-max-optimization" className="text-sm text-gray-700 hover:text-primary underline">Performance Max optimization</a></li>
+          <li><a href="#most-common-performance-max-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most common Performance Max mistakes</a></li>
+          <li><a href="#realistic-expectations-and-results" className="text-sm text-gray-700 hover:text-primary underline">Realistic expectations and results</a></li>
+          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+          <li><a href="#frequently-asked-questions-about-performance-max-campaigns" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Performance Max campaigns</a></li>
+        </ol>
+      </nav>
 
-      <h2>What is Performance Max and why it's special</h2>
+
+
+      <h2 id="what-is-performance-max-and-why-its-special">What is Performance Max and why it's special</h2>
       <p>
         <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max</a> is an automated campaign using machine learning to show your ads across all Google networks simultaneously: Search, Shopping, Display, YouTube, Gmail, Discover, and Maps. Instead of creating separate campaigns per channel, you give Google raw material and it combines everything in real time.
       </p>
@@ -63,7 +82,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>When to use Performance Max campaigns</h2>
+      <h2 id="when-to-use-performance-max-campaigns">When to use Performance Max campaigns</h2>
       <p>
         PMax isn't a universal solution. In some situations it's ideal, in others it's a mistake. Here's when I recommend PMax vs when not to.
       </p>
@@ -98,7 +117,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>Performance Max campaign structure</h2>
+      <h2 id="performance-max-campaign-structure">Performance Max campaign structure</h2>
       <p>
         PMax campaign consists of asset groups. Each asset group is a thematic unit with its own creatives, audience signals, and (for eCommerce) product listing groups.
       </p>
@@ -180,7 +199,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>Performance Max for eCommerce</h2>
+      <h2 id="performance-max-for-ecommerce">Performance Max for eCommerce</h2>
       <p>
         For eCommerce, PMax is most powerful when launched with optimized product feed. PMax without feed is essentially Display campaign in new packaging — loses Shopping and Product Listing Ads power.
       </p>
@@ -263,7 +282,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>Performance Max for B2B companies</h2>
+      <h2 id="performance-max-for-b2b-companies">Performance Max for B2B companies</h2>
       <p>
         PMax for B2B is more challenging than for eCommerce. Lower conversion volume, longer sales cycles, and need for lead quality (not just volume) make setup more complex.
       </p>
@@ -317,7 +336,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>Performance Max optimization</h2>
+      <h2 id="performance-max-optimization">Performance Max optimization</h2>
       <p>
         Biggest frustration with PMax is limited control. But control isn't zero — you have levers you can move. Here's what you can (and should) optimize.
       </p>
@@ -436,7 +455,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>Most common Performance Max mistakes</h2>
+      <h2 id="most-common-performance-max-mistakes">Most common Performance Max mistakes</h2>
       <p>
         These are mistakes I see with 90% of advertisers trying PMax first time — and they cost money.
       </p>
@@ -485,7 +504,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>Realistic expectations and results</h2>
+      <h2 id="realistic-expectations-and-results">Realistic expectations and results</h2>
       <p>
         Most important question: what can you expect from PMax in practice? Here are realistic numbers based on my experience with 20+ PMax campaigns.
       </p>
@@ -558,7 +577,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
       <div className="space-y-3 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -622,7 +641,7 @@ export default function PerformanceMaxGuideEN() {
         <p className="font-heading font-semibold text-lg mb-0">PMax is powerful tool — but not magic. Works best when you have solid conversion tracking, quality assets, and patience for learning period. My advice: use PMax as part of strategy, not as only campaign.</p>
       </div>
 
-      <h2>Related Guides</h2>
+      <h2 id="related-guides">Related Guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/performance-max" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Services</p>
@@ -648,7 +667,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
 
-      <h2>Frequently asked questions about Performance Max campaigns</h2>
+      <h2 id="frequently-asked-questions-about-performance-max-campaigns">Frequently asked questions about Performance Max campaigns</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

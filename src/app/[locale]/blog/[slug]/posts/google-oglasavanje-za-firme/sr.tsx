@@ -27,8 +27,26 @@ export default function GoogleOglasavanjeZaFirmePost() {
           </div>
         </div>
       </div>
+      {/* ── Sadržaj ── */}
+      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
+        <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#zasto-je-google-oglasavanje-efikasno-za-firme" className="text-sm text-gray-700 hover:text-primary underline">Zašto je Google oglašavanje efikasno za firme</a></li>
+          <li><a href="#kako-funkcionise-google-oglasavanje" className="text-sm text-gray-700 hover:text-primary underline">Kako funkcioniše Google oglašavanje</a></li>
+          <li><a href="#tipovi-google-ads-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Tipovi Google Ads kampanja</a></li>
+          <li><a href="#google-oglasavanje-za-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Google oglašavanje za eCommerce</a></li>
+          <li><a href="#google-oglasavanje-za-b2b-firme" className="text-sm text-gray-700 hover:text-primary underline">Google oglašavanje za B2B firme</a></li>
+          <li><a href="#kako-postaviti-temelje-za-uspesne-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Kako postaviti temelje za uspešne kampanje</a></li>
+          <li><a href="#najcesce-greske-u-google-oglasavanju" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške u Google oglašavanju</a></li>
+          <li><a href="#kako-meriti-uspeh-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Kako meriti uspeh kampanja</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-o-google-oglasavanju-za-firme" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Google oglašavanju za firme</a></li>
+        </ol>
+      </nav>
 
-      <h2>Zašto je Google oglašavanje efikasno za firme</h2>
+
+
+      <h2 id="zasto-je-google-oglasavanje-efikasno-za-firme">Zašto je Google oglašavanje efikasno za firme</h2>
       <p><a href="https://support.google.com/google-ads/answer/6146252" target="_blank" rel="noopener noreferrer" className="underline">Google Ads</a> omogućava vašoj firmi da bude vidljiva tačno u trenutku kada potencijalni kupac traži ono što nudite. To je ključna razlika u odnosu na druge kanale.</p>
       <p>Kada neko ukuca &quot;CRM softver za mala preduzeća&quot; ili &quot;muške patike za trčanje&quot;, vaš oglas se može pojaviti iznad organskih rezultata. Osoba koja pretražuje ima jasnu nameru — ne skrola bezveze, već aktivno traži rešenje.</p>
       <p>Moje iskustvo sa preko 50 klijenata u Srbiji, regiji i inostranstvu pokazuje da Google Ads donosi najbolje rezultate kada:</p>
@@ -46,7 +64,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Kako funkcioniše Google oglašavanje</h2>
+      <h2 id="kako-funkcionise-google-oglasavanje">Kako funkcioniše Google oglašavanje</h2>
       <p>Google Ads radi na principu aukcije u realnom vremenu. Svaki put kada neko ukuca pretragu, dešava se aukcija među oglašivačima koji ciljaju tu ključnu reč.</p>
       <p>Ali nije najvažniji ko plati najviše. Google koristi formulu:</p>
 
@@ -114,7 +132,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Tipovi Google Ads kampanja</h2>
+      <h2 id="tipovi-google-ads-kampanja">Tipovi Google Ads kampanja</h2>
       <p>Google Ads nije jedan sistem — to je ekosistem različitih tipova kampanja. Ono što radi za eCommerce neće raditi za B2B SaaS. Evo pregleda svih tipova:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -210,7 +228,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Google oglašavanje za eCommerce</h2>
+      <h2 id="google-oglasavanje-za-ecommerce">Google oglašavanje za eCommerce</h2>
       <p>Ako prodajete fizičke proizvode online, Google Ads je verovatno najvažniji kanal. Shopping kampanje donose kvalitetan saobraćaj jer korisnik vidi sliku i cenu pre klika.</p>
 
       <h3>Osnovna struktura kampanja za eCommerce</h3>
@@ -339,7 +357,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Google oglašavanje za B2B firme</h2>
+      <h2 id="google-oglasavanje-za-b2b-firme">Google oglašavanje za B2B firme</h2>
       <p>B2B ima specifične izazove: duži sales cycle, više decision maker-a, manji volume pretrage. Ali Google Ads i dalje funkcioniše odlično — samo zahteva drugačiji pristup.</p>
 
       <h3>Osnovna struktura kampanja za B2B</h3>
@@ -472,7 +490,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Kako postaviti temelje za uspešne kampanje</h2>
+      <h2 id="kako-postaviti-temelje-za-uspesne-kampanje">Kako postaviti temelje za uspešne kampanje</h2>
       <p>Pre nego što pokrenete prvu kampanju, ove 4 stvari moraju biti na mestu. Preskakanje ovih koraka je najčešći razlog neuspeha.</p>
 
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -559,7 +577,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Najčešće greške u Google oglašavanju</h2>
+      <h2 id="najcesce-greske-u-google-oglasavanju">Najčešće greške u Google oglašavanju</h2>
       <p>Posle rada sa 50+ klijenata, ovih 6 grešaka vidim najčešće. Sve su lako rešive.</p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
@@ -618,7 +636,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Kako meriti uspeh kampanja</h2>
+      <h2 id="kako-meriti-uspeh-kampanja">Kako meriti uspeh kampanja</h2>
       <p>Merenje uspeha Google Ads kampanja zavisi od toga šta prodajete — eCommerce ili B2B. Evo ključnih KPI-jeva za oba.</p>
 
       <h3>KPI-jevi za eCommerce</h3>
@@ -753,7 +771,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Često postavljana pitanja</h2>
+      <h2 id="cesto-postavljana-pitanja">Često postavljana pitanja</h2>
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group mb-3" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
@@ -880,7 +898,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <h2>Najčešća pitanja o Google oglašavanju za firme</h2>
+      <h2 id="najcesca-pitanja-o-google-oglasavanju-za-firme">Najčešća pitanja o Google oglašavanju za firme</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
