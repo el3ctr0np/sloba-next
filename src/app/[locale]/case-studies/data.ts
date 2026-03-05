@@ -69,6 +69,7 @@ export const caseStudies: CaseStudy[] = [
     market: "EU & UK",
     period: "2-3 godine saradnje",
     website: "https://mobelaris.com",
+    heroImage: "/case-studies/mobelaris-hero.png",
     brandIntro:
       "Mobelaris je eCommerce brend specijalizovan za luksuzni nameštaj, prisutan na celom EU i UK tržištu. CEO Jason je tražio Google Ads konsultanta koji može da skalira prodaju i maksimizira profit u izuzetno konkurentnoj niši.",
     challenge:
@@ -115,6 +116,7 @@ export const caseStudies: CaseStudy[] = [
     market: "UK & Skandinavija",
     period: "2 godine saradnje",
     website: "https://www.designerglasses.co.uk",
+    heroImage: "/case-studies/designerglasses-hero.png",
     brandIntro:
       "DesignerGlasses je jedan od najstarijih online prodavaca dizajnerskih naočara u UK. Nude brendirane naočare za vid i sunčane naočare poznatih brendova kao što su Gucci, Burberry, Hugo Boss, Oakley, Dolce & Gabbana i mnogi drugi. Imaju Excellent rejting na Trustpilotu i opslužuju klijente iz UK-a i širom sveta.",
     challenge:
@@ -155,6 +157,7 @@ export const caseStudies: CaseStudy[] = [
     market: "UK & 8+ EU tržišta",
     period: "24 meseca saradnje",
     website: "https://soundboxstore.com",
+    heroImage: "/case-studies/soundboxstore-hero.png",
     brandIntro:
       "SoundBox Store je specijalizovan za akustične kabine, meeting podove i office phone booth rešenja za B2B klijente širom Evrope. Nastao je iz višegodišnjeg iskustva u komercijalnim prostorima, prepoznajući potrebu za kvalitetnim akustičnim rešenjima u modernim kancelarijama.",
     challenge:
@@ -195,6 +198,7 @@ export const caseStudies: CaseStudy[] = [
     market: "Ujedinjeno Kraljevstvo",
     period: "2+ godine saradnje (od feb 2023)",
     website: "https://chelleon.co.uk",
+    heroImage: "/case-studies/chelleon-hero.png",
     brandIntro:
       "Chelleon je porodični UK eCommerce brend specijalizovan za premium proizvode za negu kože, pre svega Environ i Jane Iredale linije. Porodično preduzeće koje vode Grant i kćerka Chelcie, prodaje kroz Shopify, a email marketing vodi kroz Klaviyo. Tržište je visoko segmentirano po demografiji, uređaju i dobu dana — što je zahtevalo precizno optimizovanu Google Ads strategiju.",
     challenge:
@@ -398,6 +402,7 @@ export const caseStudiesEn: CaseStudy[] = [
     market: "EU & UK",
     period: "2-3 year partnership",
     website: "https://mobelaris.com",
+    heroImage: "/case-studies/mobelaris-hero.png",
     brandIntro:
       "Mobelaris is an eCommerce brand specializing in luxury furniture, serving customers across the EU and UK. CEO Jason needed a Google Ads consultant who could scale revenue and maximize profitability in a highly competitive niche.",
     challenge:
@@ -444,6 +449,7 @@ export const caseStudiesEn: CaseStudy[] = [
     market: "UK & Scandinavia",
     period: "2 year partnership",
     website: "https://www.designerglasses.co.uk",
+    heroImage: "/case-studies/designerglasses-hero.png",
     brandIntro:
       "DesignerGlasses is one of the UK's oldest online designer eyewear retailers. They offer branded prescription and sunglasses from renowned brands such as Gucci, Burberry, Hugo Boss, Oakley, Dolce & Gabbana, and many others. They have an Excellent Trustpilot rating and serve customers throughout the UK and worldwide.",
     challenge:
@@ -484,6 +490,7 @@ export const caseStudiesEn: CaseStudy[] = [
     market: "UK & 8+ EU markets",
     period: "24 month partnership",
     website: "https://soundboxstore.com",
+    heroImage: "/case-studies/soundboxstore-hero.png",
     brandIntro:
       "SoundBox Store specializes in acoustic pods, meeting booths, and office phone booth solutions for B2B clients across Europe. Born from years of experience in commercial spaces, they recognized the need for quality acoustic solutions in modern offices.",
     challenge:
@@ -524,6 +531,7 @@ export const caseStudiesEn: CaseStudy[] = [
     market: "United Kingdom",
     period: "2+ year partnership (since Feb 2023)",
     website: "https://chelleon.co.uk",
+    heroImage: "/case-studies/chelleon-hero.png",
     brandIntro:
       "Chelleon is a family-run UK eCommerce brand specialising in premium skincare, primarily Environ and Jane Iredale product lines. The business is operated by Grant and his daughter Chelcie, selling through Shopify with Klaviyo powering their email marketing. The market is highly segmented by demographics, device, and time of day — requiring a precisely optimised Google Ads strategy to turn data into profit.",
     challenge:
