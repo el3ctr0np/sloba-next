@@ -742,6 +742,10 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search Campaigns</p>
           <p className="text-xs text-gray-500 mb-0">Professional Search campaign management</p>
         </Link>
+        <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Management</p>
+          <p className="text-xs text-gray-500 mb-0">Ongoing keyword and campaign optimisation</p>
+        </Link>
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negative Keywords — Complete List</p>

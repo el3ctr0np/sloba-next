@@ -549,6 +549,14 @@ export default function QualityScoreVodicPost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>
           <p className="text-xs text-gray-500 mb-0">Poboljšajte Quality Score uz profesionalno upravljanje</p>
         </Link>
+        <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads audit</p>
+          <p className="text-xs text-gray-500 mb-0">Identifikujte ključne reči sa niskim QS koje troše budžet</p>
+        </Link>
+        <Link href="/usluge/search-kampanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search kampanje</p>
+          <p className="text-xs text-gray-500 mb-0">Profesionalne Search kampanje sa optimizovanim Quality Score-om</p>
+        </Link>
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Ključne reči — kompletan vodič</p>

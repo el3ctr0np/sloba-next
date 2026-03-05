@@ -647,6 +647,10 @@ export default function PerformanceMaxGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Services</p>
           <p className="text-xs text-gray-500 mb-0">Professional PMax campaign management</p>
         </Link>
+        <Link href="/usluge/google-shopping" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Services</p>
+          <p className="text-xs text-gray-500 mb-0">Shopping campaign and product feed optimisation for better ROAS</p>
+        </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Guide</p>
           <p className="text-xs text-gray-500 mb-0">How to optimise your product feed and Shopping campaign structure for better ROAS.</p>

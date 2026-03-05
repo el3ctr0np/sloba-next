@@ -811,6 +811,10 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Professional Google Ads Audit</p>
           <p className="text-xs text-gray-500 mb-0">Detailed account analysis with action plan</p>
         </Link>
+        <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Management</p>
+          <p className="text-xs text-gray-500 mb-0">Professional account management after the audit — optimization and reporting</p>
+        </Link>
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking guide</p>

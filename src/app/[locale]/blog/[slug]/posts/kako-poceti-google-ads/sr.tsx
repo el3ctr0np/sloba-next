@@ -573,6 +573,14 @@ export default function KakoPocetiGoogleAdsSR() {
       <h2 id="povezani-vodici">Povezani vodiči</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
+        <Link href="/usluge/starter-paket" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Starter paket — Google Ads za početnike</p>
+          <p className="text-xs text-gray-500 mb-0">Pokrenite prve kampanje uz stručnu podršku od samog starta</p>
+        </Link>
+        <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>
+          <p className="text-xs text-gray-500 mb-0">Profesionalno vođenje kampanja kada ste spremni za skaliranje</p>
+        </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Koliko košta Google Ads oglašavanje?</p>
           <p className="text-xs text-gray-500 mb-0">Realni troškovi po tržištu, industriji i tipu kampanje — sa konkretnim brojevima.</p>

@@ -723,6 +723,14 @@ export default function GoogleShoppingGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Services</p>
           <p className="text-xs text-gray-500 mb-0">Professional Shopping campaign management</p>
         </Link>
+        <Link href="/usluge/performance-max" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Services</p>
+          <p className="text-xs text-gray-500 mb-0">PMax campaigns for scaling eCommerce revenue</p>
+        </Link>
+        <Link href="/usluge/google-ads-za-ecommerce" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for eCommerce</p>
+          <p className="text-xs text-gray-500 mb-0">Complete Google Ads strategy for online stores</p>
+        </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Guide</p>
           <p className="text-xs text-gray-500 mb-0">Everything about PMax campaigns, structure, and eCommerce optimization.</p>

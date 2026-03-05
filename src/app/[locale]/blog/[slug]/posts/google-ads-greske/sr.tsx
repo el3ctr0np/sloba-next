@@ -628,6 +628,10 @@ export default function GoogleAdsGreskePost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads audit</p>
           <p className="text-xs text-gray-500 mb-0">Pronađite i ispravite greške u vašim kampanjama</p>
         </Link>
+        <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>
+          <p className="text-xs text-gray-500 mb-0">Profesionalno vođenje naloga — bez grešaka koje koštaju budžet</p>
+        </Link>
         <Link
           href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"

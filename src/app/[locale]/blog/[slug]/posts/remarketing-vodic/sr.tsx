@@ -888,6 +888,10 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing usluge</p>
           <p className="text-xs text-gray-500 mb-0">Kako vam mogu pomoći sa remarketing kampanjama</p>
         </Link>
+        <Link href="/usluge/google-ads-za-ecommerce" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads za eCommerce</p>
+          <p className="text-xs text-gray-500 mb-0">Kompletna Google Ads strategija za online prodavnice</p>
+        </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion tracking vodič</p>
           <p className="text-xs text-gray-500 mb-0">Zašto vaše kampanje ne rade bez pravilnog tracking-a</p>
