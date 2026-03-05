@@ -238,6 +238,7 @@ export const caseStudies: CaseStudy[] = [
     niche: "White-label Google Ads menadžment",
     market: "Ujedinjeno Kraljevstvo",
     period: "24 meseca saradnje",
+    heroImage: "/case-studies/uk-agency-hero.png",
     brandIntro:
       "UK Digital Agency je britanska digitalna agencija koja je eksternalizovala kompletno Google Ads upravljanje za portfolio od 8 klijentskih naloga. Vertikale su obuhvatale eCommerce, neprofitni sektor, nakit, turizam i lead generation — svaki sa različitim KPI-jevima, budžetima i ciljevima.",
     challenge:
@@ -278,6 +279,7 @@ export const caseStudies: CaseStudy[] = [
     market: "Srbija",
     period: "Jednokratni Google Ads audit",
     website: "https://mbfinancekonsalting.rs",
+    heroImage: "/case-studies/mbfinance-hero.png",
     brandIntro:
       "MBFinance je srpska firma za finansijski konsalting i računovodstvo, fokusirana na mala i srednja preduzeća. Kao lead gen biznis u lokalnom tržištu, Google Ads je bio primarni akvizicioni kanal — ali bez jasnog uvida u to gde odlazi budžet i šta zaista donosi klijente.",
     challenge:
@@ -318,6 +320,7 @@ export const caseStudies: CaseStudy[] = [
     market: "Srbija / Ex-Yu region",
     period: "Brand awareness kampanja — launch faza",
     website: "https://chatislav.ai",
+    heroImage: "/case-studies/chatislav-hero.png",
     brandIntro:
       "Chatislav je AI chatbot platforma razvijena za srpsko i Ex-Yu tržište — region gde je AI adopcija tek u ranom stadijumu, a lokalizovana rešenja retka. Kao novi igrač u emerging kategoriji, Chatislav nije imao problem sa potrošnjom — imao je problem sa vidljivošću i merenjem. Kampanja je trebalo da izgradi brend svest u tržištu koje još uvek uči šta AI chatbot može da uradi za biznis.",
     challenge:
@@ -571,6 +574,7 @@ export const caseStudiesEn: CaseStudy[] = [
     niche: "White-label Google Ads management",
     market: "United Kingdom",
     period: "24 month partnership",
+    heroImage: "/case-studies/uk-agency-hero.png",
     brandIntro:
       "UK Digital Agency is a British digital agency that outsourced complete Google Ads management across a portfolio of 8 client accounts. Verticals spanned eCommerce, nonprofit, jewellery, heritage tourism, and lead generation — each with distinct KPIs, budgets, and objectives.",
     challenge:
@@ -611,6 +615,7 @@ export const caseStudiesEn: CaseStudy[] = [
     market: "Serbia",
     period: "One-time Google Ads audit",
     website: "https://mbfinancekonsalting.rs",
+    heroImage: "/case-studies/mbfinance-hero.png",
     brandIntro:
       "MBFinance is a Serbian financial consulting and accounting firm focused on small and medium-sized businesses. As a lead generation business in a local market, Google Ads was the primary acquisition channel — but without clear visibility into where budget was going or what was actually bringing in clients.",
     challenge:
@@ -651,6 +656,7 @@ export const caseStudiesEn: CaseStudy[] = [
     market: "Serbia / Ex-Yu region",
     period: "Brand awareness campaign — launch phase",
     website: "https://chatislav.ai",
+    heroImage: "/case-studies/chatislav-hero.png",
     brandIntro:
       "Chatislav is an AI chatbot platform built for the Serbian and Ex-Yu market — a region where AI adoption is still in its early stages and localised solutions are rare. As a new entrant in an emerging category, Chatislav's challenge wasn't budget — it was visibility and measurement. The campaign needed to build brand awareness in a market still learning what an AI chatbot can do for a business.",
     challenge:
