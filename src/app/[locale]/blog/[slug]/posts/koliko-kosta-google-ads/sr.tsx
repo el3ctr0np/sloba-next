@@ -4,7 +4,7 @@ export default function KolikoKostaGoogleAdsPost() {
   return (
     <>
       {/* ── TL;DR hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Cena Google Ads-a zavisi od industrije, konkurencije i kvaliteta kampanja.
@@ -30,7 +30,7 @@ export default function KolikoKostaGoogleAdsPost() {
         </div>
       </div>
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#koliko-zaista-kosta-google-ads-u-srbiji" className="text-sm text-gray-700 hover:text-primary underline">Koliko zaista košta Google Ads u Srbiji</a></li>
@@ -88,19 +88,19 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <h3>Modeli naplate u Google Ads-u</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC — cena po kliku</h3>
           <p className="text-sm text-gray-600 mb-0">Plaćate kada neko klikne na oglas. Najčešći model za Search i Shopping kampanje.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPM — cena po 1.000 prikaza</h3>
           <p className="text-sm text-gray-600 mb-0">Plaćate za vidljivost, ne klikove. Koristi se za Display i YouTube kampanje.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPV — cena po pregledu videa</h3>
           <p className="text-sm text-gray-600 mb-0">Plaćate kada neko pogleda vaš video oglas. Specifično za YouTube.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPA — cena po konverziji</h3>
           <p className="text-sm text-gray-600 mb-0">Napredni model gde plaćate po ostvarenoj akciji. Zahteva dovoljno podataka.</p>
         </div>
@@ -261,21 +261,21 @@ export default function KolikoKostaGoogleAdsPost() {
       <p>Pored budžeta za oglase, imate troškove upravljanja kampanjama. Tri opcije:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">Agencija</h3>
           <p className="text-sm text-gray-600 mb-2"><strong>Cena:</strong> €500-2,500/mes. ili 10-20% ad spend-a</p>
           <p className="text-xs text-green-700 mb-1">+ Tim stručnjaka, alati, kontinuitet</p>
           <p className="text-xs text-red-600 mb-0">- Skuplje za manje budžete, manje personalizovano</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">Freelancer</h3>
           <p className="text-sm text-gray-600 mb-2"><strong>Cena:</strong> €300-1,200/mes. ili €30-80/sat</p>
           <p className="text-xs text-green-700 mb-1">+ Personalizovan pristup, fleksibilnost</p>
           <p className="text-xs text-red-600 mb-0">- Zavisnost od jedne osobe, ograničen kapacitet</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">In-House</h3>
           <p className="text-sm text-gray-600 mb-2"><strong>Cena:</strong> €800-2,500/mes. plata + alati</p>
@@ -326,7 +326,7 @@ export default function KolikoKostaGoogleAdsPost() {
       <h2 id="kako-izracunati-roi-pre-nego-sto-potrosite-prvi-dinar">Kako izračunati ROI pre nego što potrošite prvi dinar</h2>
       <p>Ovde većina preskače, a tu se donose najvažnije odluke.</p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -453,7 +453,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <h2 id="sledeci-koraci">Sledeći koraci</h2>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Preporučujem ova 4 koraka:</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -476,7 +476,7 @@ export default function KolikoKostaGoogleAdsPost() {
       </div>
 
       {/* ── CTA ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Želite da znate koliko bi Google Ads koštao za vaš biznis?
         </p>

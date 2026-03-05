@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 export default function GoogleAdvertisingForBusinessesEN() {
   return (
     <>
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google Ads is the most powerful channel for businesses looking to reach customers with active purchase intent. Unlike social media where you &quot;interrupt&quot; people while they scroll, Google Ads connects you with users actively searching for your product or service.
@@ -28,7 +28,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         </div>
       </div>
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#why-google-ads-is-effective-for-businesses" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads is effective for businesses</a></li>
@@ -131,7 +131,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <p>Google Ads isn't one system — it's an ecosystem of different campaign types. What works for eCommerce won't work for B2B SaaS. Here's an overview:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Highest intent</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Campaigns</h3>
           <p className="text-sm text-gray-600 mb-3">Text ads appearing at top of Google search when people search specific keywords.</p>
@@ -145,7 +145,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <p className="text-sm text-gray-600 mb-0">B2B services, local businesses, SaaS, eCommerce (alongside Shopping)</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Visual comparison</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping Campaigns</h3>
           <p className="text-sm text-gray-600 mb-3">Visual ads with product image, price, and store name. Appear at top of Google search and Shopping tab.</p>
@@ -159,7 +159,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <p className="text-sm text-gray-600 mb-0">Google Merchant Center account, product feed, linked to Google Ads</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max (PMax)</h3>
           <p className="text-sm text-gray-600 mb-3">Google's &quot;all-in-one&quot; campaign automatically showing ads across all networks (Search, Shopping, Display, YouTube, Discover).</p>
@@ -173,7 +173,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <p className="text-sm text-gray-600 mb-0">PMax is a &quot;black box&quot; — less control and insights. I recommend starting with Search/Shopping.</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Brand awareness</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display Campaigns</h3>
           <p className="text-sm text-gray-600 mb-3">Banner ads on websites, apps, and YouTube. Lower intent, but wider reach.</p>
@@ -187,7 +187,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <p className="text-sm text-gray-600 mb-0">Weaker for direct response, but excellent for remarketing.</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Video content</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Video Campaigns (YouTube)</h3>
           <p className="text-sm text-gray-600 mb-3">Video ads on YouTube (pre-roll, mid-roll, in-feed). Require video creative.</p>
@@ -201,7 +201,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <p className="text-sm text-gray-600 mb-0">B2C brands, SaaS with demo videos, remarketing</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Early funnel</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Demand Gen</h3>
           <p className="text-sm text-gray-600 mb-3">Visual ads for Discover, Gmail, and YouTube. Replacement for Discovery campaigns.</p>
@@ -227,7 +227,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <p>If you sell physical products online, Google Ads is likely your most important channel. Shopping campaigns deliver quality traffic because users see image and price before clicking.</p>
 
       <h3>Basic campaign structure for eCommerce</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -324,7 +324,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <p>Very few people buy on their first visit. Remarketing is your way of bringing those visitors back.</p>
       <p>I recommend creating these audience segments:</p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -356,7 +356,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <p>B2B has specific challenges: longer sales cycles, multiple decision makers, lower search volume. But Google Ads still works excellently — just requires different approach.</p>
 
       <h3>Basic campaign structure for B2B</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -440,7 +440,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <li>Morale drops when &quot;nothing closes&quot;</li>
       </ul>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Solution: Focus on quality</h3>
@@ -456,7 +456,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <h3>Remarketing strategy for B2B</h3>
       <p>B2B decision-making involves multiple stakeholders and a longer timeline. Remarketing needs to educate and build trust, not just push for a close.</p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Top of Funnel</h3>
@@ -465,7 +465,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <p className="text-sm mb-0"><strong>Goal:</strong> Offer a lead magnet (white paper, checklist, webinar) to capture contact details.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Middle of Funnel</h3>
@@ -474,7 +474,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <p className="text-sm mb-0"><strong>Goal:</strong> Offer case studies, customer testimonials, webinars — proof that your solution works.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bottom of Funnel</h3>
@@ -488,7 +488,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <h2 id="how-to-set-foundations-for-successful-campaigns">How to set foundations for successful campaigns</h2>
       <p>Before launching your first campaign, these 4 things must be in place. Skipping these steps is the most common reason for failure.</p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Conversion Tracking</h3>
@@ -509,7 +509,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing Pages</h3>
@@ -527,7 +527,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <p className="text-sm mb-0"><strong>Most common mistake:</strong> Sending traffic to homepage with 10 links not focused on conversion.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword Research</h3>
@@ -548,7 +548,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor Analysis</h3>
@@ -848,7 +848,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <hr />
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Need help with Google Ads campaigns?</p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">I specialize in Google Ads management and optimization for eCommerce and B2B companies. Schedule free consultation for analysis of your current campaigns or planning new ones.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Schedule free consultation</Link>

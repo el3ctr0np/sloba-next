@@ -4,7 +4,7 @@ export default function KljucneReciVodicPost() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Ključne reči određuju ko vidi vaše oglase, koliko plaćate i da li ćete ostvariti profit. Pogrešan izbor ključnih reči je razlog #1 zašto Google Ads kampanje ne donose rezultate.
@@ -67,19 +67,19 @@ export default function KljucneReciVodicPost() {
       <h2>Ključna reč vs Search Term — razlika koja menja sve</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Vi kontrolišete</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Ključna reč (Keyword)</h3>
           <p className="text-sm text-gray-600 mb-0">Reč ili fraza koju VI dodajete u kampanju i na koju targetirate oglase.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Korisnik unosi</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Term (Pretraga)</h3>
           <p className="text-sm text-gray-600 mb-0">Ono što korisnik zapravo ukuca u Google pretragu. Može se razlikovati od vaše ključne reči.</p>
         </div>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Primer iz prakse</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -113,28 +113,28 @@ export default function KljucneReciVodicPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Navigacione (Branded)</h3>
           <p className="text-sm text-gray-600 mb-2">Korisnik traži specifičan brand ili sajt.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Primeri:</strong> {`"nike srbija"`}, {`"gigatron"`}</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Visok CTR</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Nizak CPC</span></p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Informacione</h3>
           <p className="text-sm text-gray-600 mb-2">Korisnik traži informacije, ne želi (još) da kupi.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Primeri:</strong> {`"kako odabrati CRM"`}, {`"šta je performance max"`}</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Nizak CPC</span> <span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Niža konverzija</span></p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Komercijalne (Istraživačke)</h3>
           <p className="text-sm text-gray-600 mb-2">Korisnik istražuje opcije pre kupovine.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Primeri:</strong> {`"najbolji CRM za mala preduzeća"`}, {`"hubspot vs salesforce"`}</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Srednji CPC</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Dobra konverzija</span></p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Transakcione</h3>
           <p className="text-sm text-gray-600 mb-2">Korisnik je spreman da kupi ili konvertuje.</p>
@@ -172,7 +172,7 @@ export default function KljucneReciVodicPost() {
         Dobar keyword research je investicija koja se višestruko vraća. Preporučujem ovaj petostepeni proces koji koristim za sve nove kampanje.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Brainstorming</h3>
@@ -186,7 +186,7 @@ export default function KljucneReciVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Keyword Planner</h3>
@@ -199,7 +199,7 @@ export default function KljucneReciVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Analiza konkurencije</h3>
@@ -211,7 +211,7 @@ export default function KljucneReciVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search Terms Mining</h3>
@@ -224,7 +224,7 @@ export default function KljucneReciVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Jezik vaših kupaca</h3>
@@ -369,7 +369,7 @@ export default function KljucneReciVodicPost() {
         Pravilo koje nikada ne prekršim: sve ključne reči u jednoj Ad Group moraju biti dovoljno slične da dele ISTI oglas. Ako ne možete napisati jedan oglas koji je relevantan za sve ključne reči u grupi — podelite ih.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Primer dobre organizacije</p>
         <div className="space-y-3 text-sm">
           <p className="font-semibold mb-1">Kampanja: CRM Softver</p>
@@ -434,7 +434,7 @@ export default function KljucneReciVodicPost() {
         </table>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Strategija po fazi kampanje</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -478,7 +478,7 @@ export default function KljucneReciVodicPost() {
         Jednom kad kampanja radi, ključne reči zahtevaju kontinuiranu pažnju. U praksi koristim ovaj nedeljni workflow.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Nedeljni workflow (20-30 minuta)</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -540,7 +540,7 @@ export default function KljucneReciVodicPost() {
       {/* ── Napredne strategije ── */}
       <h2>Napredne strategije za ključne reči</h2>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor keyword targeting</h3>
@@ -553,7 +553,7 @@ export default function KljucneReciVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA proširenje ključnih reči</h3>
@@ -566,7 +566,7 @@ export default function KljucneReciVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword Sculpting</h3>
@@ -578,7 +578,7 @@ export default function KljucneReciVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dynamic Keyword Insertion (DKI)</h3>
@@ -721,7 +721,7 @@ export default function KljucneReciVodicPost() {
         Ključne reči su temelj svake uspešne Google Ads kampanje. Pravi izbor i organizacija ključnih reči direktno određuju da li ćete dobiti kvalitetne klikove ili trošiti budžet na irelevantne pretrage. Počnite sa temeljnim istraživanjem, organizujte u tematske grupe, koristite Phrase match za početak i kontinuirano optimizujte na osnovu podataka.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Potrebna vam je pomoć sa keyword strategijom?
         </p>

@@ -4,7 +4,7 @@ export default function KeywordGuideEN() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Keywords determine who sees your ads, how much you pay, and whether you turn a profit. Poor keyword selection is the #1 reason Google Ads campaigns fail.
@@ -67,19 +67,19 @@ export default function KeywordGuideEN() {
       <h2>Keyword vs Search Term — The Critical Difference</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">You control</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Keyword</h3>
           <p className="text-sm text-gray-600 mb-0">The word or phrase YOU add to your campaign and target your ads to.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">User enters</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Term</h3>
           <p className="text-sm text-gray-600 mb-0">What the user actually types into Google. Can differ from your keyword.</p>
         </div>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Real-world example</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -113,28 +113,28 @@ export default function KeywordGuideEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Navigational (Branded)</h3>
           <p className="text-sm text-gray-600 mb-2">User searches for a specific brand or website.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;nike uk&quot;, &quot;amazon&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">High CTR</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Low CPC</span></p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Informational</h3>
           <p className="text-sm text-gray-600 mb-2">User seeks information, not ready to buy yet.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;how to choose a CRM&quot;, &quot;what is performance max&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Low CPC</span> <span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Lower conversion</span></p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Commercial (Research)</h3>
           <p className="text-sm text-gray-600 mb-2">User researches options before buying.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;best CRM for small business&quot;, &quot;hubspot vs salesforce&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Medium CPC</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Good conversion</span></p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Transactional</h3>
           <p className="text-sm text-gray-600 mb-2">User ready to buy or convert.</p>
@@ -172,7 +172,7 @@ export default function KeywordGuideEN() {
         Quality keyword research is an investment that pays back multifold. I recommend this five-step process I use for all new campaigns.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Brainstorming</h3>
@@ -186,7 +186,7 @@ export default function KeywordGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Keyword Planner</h3>
@@ -199,7 +199,7 @@ export default function KeywordGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor Analysis</h3>
@@ -211,7 +211,7 @@ export default function KeywordGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search Terms Mining</h3>
@@ -224,7 +224,7 @@ export default function KeywordGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Customer Language</h3>
@@ -369,7 +369,7 @@ export default function KeywordGuideEN() {
         A rule I never break: all keywords in one Ad Group must be similar enough to share the SAME ad. If you cannot write one ad that is relevant to all keywords in the group — split them.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Example of good organization</p>
         <div className="space-y-3 text-sm">
           <p className="font-semibold mb-1">Campaign: CRM Software</p>
@@ -434,7 +434,7 @@ export default function KeywordGuideEN() {
         </table>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Strategy by campaign stage</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -478,7 +478,7 @@ export default function KeywordGuideEN() {
         Once a campaign is running, keywords require continuous attention. In practice, I use this weekly workflow.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Weekly workflow (20-30 minutes)</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -540,7 +540,7 @@ export default function KeywordGuideEN() {
       {/* ── Advanced strategies ── */}
       <h2>Advanced Keyword Strategies</h2>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor keyword targeting</h3>
@@ -553,7 +553,7 @@ export default function KeywordGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA keyword expansion</h3>
@@ -566,7 +566,7 @@ export default function KeywordGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword Sculpting</h3>
@@ -578,7 +578,7 @@ export default function KeywordGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dynamic Keyword Insertion (DKI)</h3>
@@ -721,7 +721,7 @@ export default function KeywordGuideEN() {
         Keywords are the foundation of every successful Google Ads campaign. Proper keyword selection and organization directly determine whether you get quality clicks or waste budget on irrelevant searches. Start with thorough research, organize into thematic groups, use Phrase match for launch, and continuously optimize based on data.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Need help with keyword strategy?
         </p>

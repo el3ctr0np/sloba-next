@@ -4,7 +4,7 @@ export default function GoogleAdsOptimizacijaPost() {
   return (
     <>
       {/* ── TL;DR boks ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           30 taktika za Google Ads optimizaciju proverenih na 20+ naloga. Prosečno poboljšanje performansi 40% u prvih 90 dana. Fokus na strukturu, ključne reči, oglase, bidding i Quality Score.
@@ -79,7 +79,7 @@ export default function GoogleAdsOptimizacijaPost() {
         maksimalne rezultate.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Odvojite Brand i Non-Brand kampanje</h3>
@@ -95,7 +95,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Single Keyword Ad Groups (SKAGs) ili tematske grupe?</h3>
@@ -111,7 +111,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Konzistentna naming konvencija</h3>
@@ -127,7 +127,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Kampanje po fazi customer journey</h3>
@@ -143,7 +143,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dnevni budžet vs shared budget</h3>
@@ -168,7 +168,7 @@ export default function GoogleAdsOptimizacijaPost() {
         za keyword management: dodavanje novih, pauziranje nerentabilnih, refining match types, i <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}>dodavanje negativnih ključnih reči</Link>.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search Terms Report mining (nedeljno)</h3>
@@ -186,7 +186,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Negativne ključne reči kao fundament</h3>
@@ -203,7 +203,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">8</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Match types strategija: 2026 realnost</h3>
@@ -227,7 +227,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">9</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword consolidation (merge duplicates)</h3>
@@ -243,7 +243,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">10</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Long-tail strategija za niše</h3>
@@ -259,7 +259,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">11</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Sezonske ključne reči i scheduled campaigns</h3>
@@ -275,7 +275,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">12</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor keywords: yes or no?</h3>
@@ -302,7 +302,7 @@ export default function GoogleAdsOptimizacijaPost() {
         koje Google kombinuje. Strategija je drugačija.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">13</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RSA best practices: diversity je ključ</h3>
@@ -319,7 +319,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">14</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Pin strategija: kada pinnovati headlines</h3>
@@ -335,7 +335,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">15</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Extensions: koristite SVE relevantne</h3>
@@ -353,7 +353,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">16</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page alignment (message match)</h3>
@@ -369,7 +369,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">17</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Device-specific ad copy (mobile vs desktop)</h3>
@@ -385,7 +385,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">18</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Emotional triggers u ad copy</h3>
@@ -411,7 +411,7 @@ export default function GoogleAdsOptimizacijaPost() {
         i optimizujemo bidding strategije.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">19</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Manual CPC vs Smart Bidding: kada šta?</h3>
@@ -438,7 +438,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">20</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target CPA/ROAS: kako postaviti realan target</h3>
@@ -455,7 +455,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">21</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Portfolio bidding za multi-kampanja management</h3>
@@ -471,7 +471,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">22</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dayparting: kad su vaši korisnici najaktivniji?</h3>
@@ -488,7 +488,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">23</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Device bid adjustments (mobile/tablet/desktop)</h3>
@@ -515,7 +515,7 @@ export default function GoogleAdsOptimizacijaPost() {
         najveći optimization opportunity. Kompletan vodič: <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }}>Kako poboljšati Quality Score</Link>.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">24</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">CTR optimization: najbrži način da podignete QS</h3>
@@ -531,7 +531,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">25</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad relevance signals: keyword → ad → landing page</h3>
@@ -547,7 +547,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">26</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page experience: brzina i mobile-friendly</h3>
@@ -572,7 +572,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">27</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Historical QS recovery: kad da &quot;reset-ujete&quot; keyword</h3>
@@ -599,7 +599,7 @@ export default function GoogleAdsOptimizacijaPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika 28</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Audience layering na Search kampanjama</h3>
           <p className="text-sm text-gray-600 mb-3">
@@ -613,7 +613,7 @@ export default function GoogleAdsOptimizacijaPost() {
           </ul>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika 29</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Remarketing optimization</h3>
           <p className="text-sm text-gray-600 mb-3">
@@ -629,7 +629,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </div>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">30</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Conversion Tracking audit (kvartalno)</h3>
@@ -657,7 +657,7 @@ export default function GoogleAdsOptimizacijaPost() {
       </p>
 
       <div className="overflow-x-auto my-6">
-        <table className="w-full border-2 border-gray-900 text-sm">
+        <table className="w-full border border-gray-200 text-sm">
           <thead className="bg-gray-50">
             <tr>
               <th className="border border-gray-300 px-4 py-2 text-left font-heading font-bold">Dan</th>
@@ -816,7 +816,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <hr />
 
       {/* ── CTA boks ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <h2 className="text-2xl md:text-3xl font-heading font-bold mt-0 mb-4">
           Želite da profesionalac preuzme optimizaciju?
         </h2>
@@ -851,7 +851,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }}
-            className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
+            className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimizacija</p>
             <h3 className="text-base font-heading font-bold mt-0 mb-2 text-gray-900">
@@ -864,7 +864,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
-            className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
+            className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimizacija</p>
             <h3 className="text-base font-heading font-bold mt-0 mb-2 text-gray-900">
@@ -877,7 +877,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
-            className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
+            className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kampanje</p>
             <h3 className="text-base font-heading font-bold mt-0 mb-2 text-gray-900">
@@ -890,7 +890,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
-            className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
+            className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Shopping</p>
             <h3 className="text-base font-heading font-bold mt-0 mb-2 text-gray-900">

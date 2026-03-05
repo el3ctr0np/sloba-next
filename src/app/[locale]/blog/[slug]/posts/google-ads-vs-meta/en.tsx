@@ -4,7 +4,7 @@ export default function GoogleAdsVsMetaAdsEN() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google Ads captures buyers with intent, Meta Ads builds awareness and interest.
@@ -51,7 +51,7 @@ export default function GoogleAdsVsMetaAdsEN() {
 
       {/* ── H2: Core difference ── */}
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#core-difference-intent-vs-interest" className="text-sm text-gray-700 hover:text-primary underline">Core difference — intent vs interest</a></li>
@@ -171,7 +171,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       {/* ── H2: When Google Ads is better ── */}
       <h2 id="when-google-ads-is-the-better-choice">When Google Ads is the better choice</h2>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">High-intent products</h3>
@@ -188,7 +188,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Local businesses</h3>
@@ -206,7 +206,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">B2B with specific solution</h3>
@@ -224,7 +224,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce with clear demand</h3>
@@ -247,7 +247,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       {/* ── H2: When Meta Ads is better ── */}
       <h2 id="when-meta-ads-is-the-better-choice">When Meta Ads is the better choice</h2>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Brand awareness &amp; new products</h3>
@@ -265,7 +265,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Visually attractive products</h3>
@@ -283,7 +283,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Impulse purchase categories</h3>
@@ -301,7 +301,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Building audiences &amp; lookalikes</h3>
@@ -332,7 +332,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       </p>
 
       <h3>Full-funnel approach</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-4 text-sm font-mono">
           <div>
             <strong className="text-blue-600">AWARENESS (Top of funnel)</strong>
@@ -443,7 +443,7 @@ export default function GoogleAdsVsMetaAdsEN() {
 
       <h3>Minimum budgets for testing</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Google Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">$1,000-1,500/month</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -452,7 +452,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             For competitive industries, you need more.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Meta Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">$500-800/month</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -531,7 +531,7 @@ export default function GoogleAdsVsMetaAdsEN() {
 
       <h3>Key metrics to track per platform</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Google Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Focus metrics</h3>
           <ul className="text-sm mb-0">
@@ -541,7 +541,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             <li><strong>ROAS</strong> — campaign profitability</li>
           </ul>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Meta Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Focus metrics</h3>
           <ul className="text-sm mb-0">
@@ -646,7 +646,7 @@ export default function GoogleAdsVsMetaAdsEN() {
       <hr />
 
       {/* ── CTA ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Not sure which platform is right for your business?
         </p>

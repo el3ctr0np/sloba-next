@@ -4,7 +4,7 @@ export default function GoogleAdsVsMetaAdsPost() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google Ads hvata kupce sa namerom, Meta Ads gradi svest i interesovanje.
@@ -51,7 +51,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       {/* ── H2: Osnovna razlika ── */}
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#osnovna-razlika-namera-vs-interesovanje" className="text-sm text-gray-700 hover:text-primary underline">Osnovna razlika — namera vs interesovanje</a></li>
@@ -171,7 +171,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       {/* ── H2: Kada je Google Ads bolji izbor ── */}
       <h2 id="kada-je-google-ads-bolji-izbor">Kada je Google Ads bolji izbor</h2>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Proizvodi sa visokim intent-om</h3>
@@ -188,7 +188,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Lokalni biznisi</h3>
@@ -206,7 +206,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">B2B sa specifičnim rešenjem</h3>
@@ -224,7 +224,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce sa jasnom potražnjom</h3>
@@ -247,7 +247,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       {/* ── H2: Kada je Meta Ads bolji izbor ── */}
       <h2 id="kada-je-meta-ads-bolji-izbor">Kada je Meta Ads bolji izbor</h2>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Brand awareness &amp; novi proizvodi</h3>
@@ -265,7 +265,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Vizuelno privlačni proizvodi</h3>
@@ -283,7 +283,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Impulse purchase kategorije</h3>
@@ -301,7 +301,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Izgradnja publike &amp; lookalikes</h3>
@@ -332,7 +332,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       </p>
 
       <h3>Full-funnel pristup</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-4 text-sm font-mono">
           <div>
             <strong className="text-blue-600">AWARENESS (Vrh levka)</strong>
@@ -443,7 +443,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <h3>Minimalni budžeti za testiranje</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Google Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">€500-1,000/mesečno</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -452,7 +452,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Za konkurentne industrije, potrebno je više.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Meta Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">€300-500/mesečno</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -531,7 +531,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <h3>Ključne metrike za praćenje po platformi</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Google Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Focus metrike</h3>
           <ul className="text-sm mb-0">
@@ -541,7 +541,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             <li><strong>ROAS</strong> — profitabilnost kampanja</li>
           </ul>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Meta Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Focus metrike</h3>
           <ul className="text-sm mb-0">
@@ -646,7 +646,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── CTA ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Niste sigurni koja platforma je prava za vaš biznis?
         </p>

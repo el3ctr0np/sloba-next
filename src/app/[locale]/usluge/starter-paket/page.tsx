@@ -814,7 +814,7 @@ export default async function StarterPaketPage({ params }: Props) {
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div className="bg-white border-2 border-gray-900 rounded-xl p-6 shadow-card">
+          <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-card">
             <h3 className="font-heading font-bold text-lg mb-4">
               {locale === "en"
                 ? "The Starter Package is ideal if"
@@ -829,7 +829,7 @@ export default async function StarterPaketPage({ params }: Props) {
               ))}
             </ul>
           </div>
-          <div className="bg-white border-2 border-gray-900 rounded-xl p-6 shadow-card">
+          <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-card">
             <h3 className="font-heading font-bold text-lg mb-4">
               {locale === "en"
                 ? "The Starter Package is not for you if"
@@ -891,7 +891,7 @@ export default async function StarterPaketPage({ params }: Props) {
             {processSteps.map((step, index) => (
               <div
                 key={step.title}
-                className="flex items-start gap-4 bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card"
+                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
               >
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${

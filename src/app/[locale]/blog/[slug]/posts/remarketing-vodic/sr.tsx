@@ -4,7 +4,7 @@ export default function RemarketingVodicPost() {
   return (
     <>
       {/* ── TL;DR boks ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Remarketing kampanje imaju 2-3x viši CTR i 50-70% niži CPA od hladnog
@@ -32,7 +32,7 @@ export default function RemarketingVodicPost() {
 
       {/* ── Sekcija 1: Hook intro ── */}
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#zasto-96-posetilaca-odlazi-bez-kupovine" className="text-sm text-gray-700 hover:text-primary underline">Zašto 96% posetilaca odlazi bez kupovine</a></li>
@@ -102,7 +102,7 @@ export default function RemarketingVodicPost() {
       </p>
 
       <h3>Kako remarketing funkcioniše korak po korak</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -199,7 +199,7 @@ export default function RemarketingVodicPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display remarketing</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -207,7 +207,7 @@ export default function RemarketingVodicPost() {
             prva remarketing kampanja za svaki nalog. Podseća posetioce da postojite.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">RLSA (remarketing na pretrazi)</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -215,7 +215,7 @@ export default function RemarketingVodicPost() {
             viši bidovi, šire ključne reči. Daje najbolji ROAS od svih tipova.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Dinamički remarketing</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -226,7 +226,7 @@ export default function RemarketingVodicPost() {
             </Link>.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">YouTube remarketing</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -235,7 +235,7 @@ export default function RemarketingVodicPost() {
           </p>
         </div>
       </div>
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card my-4">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card my-4">
         <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #5</p>
         <h3 className="text-base font-heading font-bold mt-0 mb-2">Customer Match</h3>
         <p className="text-sm text-gray-600 mb-0">
@@ -255,7 +255,7 @@ export default function RemarketingVodicPost() {
         kod sajta svaki put.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <h3 className="mt-0 mb-4 font-heading font-bold">Korak 1: Instalacija Google Ads remarketing taga</h3>
         <p className="font-semibold mb-2">Preko Google Tag Manager-a (preporuka):</p>
         <ol className="mb-4">
@@ -284,7 +284,7 @@ export default function RemarketingVodicPost() {
         </p>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <h3 className="mt-0 mb-4 font-heading font-bold">Korak 2: Povežite GA4 sa Google Ads-om</h3>
         <ol className="mb-0">
           <li>U Google Ads otvorite Tools → Linked Accounts</li>
@@ -294,7 +294,7 @@ export default function RemarketingVodicPost() {
         </ol>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <h3 className="mt-0 mb-4 font-heading font-bold">Korak 3: Verifikacija i kreiranje lista</h3>
         <ol>
           <li>Idite na Audience Manager → Audience Sources</li>
@@ -495,7 +495,7 @@ export default function RemarketingVodicPost() {
       <p>
         Ovako izgleda struktura kampanje kada se sva tri pristupa kombinuju:
       </p>
-      <pre className="border-2 border-gray-900 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed">
         <code>{`Kampanja: Remarketing
 │
 ├── Grupa oglasa: Napuštene korpe (1-7 dana)
@@ -529,7 +529,7 @@ export default function RemarketingVodicPost() {
         kampanjama.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Vraćanje napuštenih korpi</h3>
@@ -546,7 +546,7 @@ export default function RemarketingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA pojačanje bidova na pretrazi</h3>
@@ -563,7 +563,7 @@ export default function RemarketingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dinamički remarketing za online prodavnice</h3>
@@ -579,7 +579,7 @@ export default function RemarketingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Sekvencijalne poruke</h3>
@@ -604,7 +604,7 @@ export default function RemarketingVodicPost() {
         </div>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Customer Match za vraćanje bivših kupaca</h3>
@@ -854,7 +854,7 @@ export default function RemarketingVodicPost() {
         prilagođene poruke i redovna optimizacija.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Ključne stvari iz ovog vodiča:</p>
         <ul className="space-y-2 text-sm">
           <li>Remarketing kampanje imaju <strong>2-3x viši CTR</strong> i <strong>50-70% niži CPA</strong> od hladnog saobraćaja</li>
@@ -866,7 +866,7 @@ export default function RemarketingVodicPost() {
       </div>
 
       {/* ── CTA boks ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Želite da neko pregleda vaše remarketing kampanje?
         </p>

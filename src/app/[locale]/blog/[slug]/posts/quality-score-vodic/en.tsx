@@ -4,7 +4,7 @@ export default function QualityScoreGuideEN() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Quality Score is Google's relevance rating on a 1-10 scale. It directly impacts your ad position and cost per click. Improving QS from 5 to 7 reduces CPC by 28%. Three components: Expected CTR, Ad Relevance, and Landing Page Experience.
@@ -33,7 +33,7 @@ export default function QualityScoreGuideEN() {
 
       {/* ── What is Quality Score ── */}
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#what-is-quality-score-and-why-it-matters" className="text-sm text-gray-700 hover:text-primary underline">What Is Quality Score and Why It Matters</a></li>
@@ -173,17 +173,17 @@ export default function QualityScoreGuideEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% impact</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Expected CTR</h3>
           <p className="text-sm text-gray-600 mb-0">Likelihood someone will click your ad. Depends on headlines, CTAs, extensions, and historical performance.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~20% impact</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Ad Relevance</h3>
           <p className="text-sm text-gray-600 mb-0">How relevant your ad is to the keyword. Depends on keyword match with ad text.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% impact</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Landing Page Experience</h3>
           <p className="text-sm text-gray-600 mb-0">How useful and relevant your LP is. Depends on content, speed, mobile optimization, and trust signals.</p>
@@ -242,7 +242,7 @@ export default function QualityScoreGuideEN() {
       <h2 id="how-to-improve-expected-ctr">How to Improve Expected CTR</h2>
       <p>Expected CTR makes up ~40% of Quality Score and can be most directly improved by optimizing ads.</p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword in headline</h3>
@@ -250,7 +250,7 @@ export default function QualityScoreGuideEN() {
         <p className="text-sm text-gray-600 mb-3">Instead of generic &quot;Quality Products | Order Today&quot; use &quot;CRM Software For Small Business | Free Trial&quot;.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Use numbers and specificity</h3>
@@ -258,7 +258,7 @@ export default function QualityScoreGuideEN() {
         <p className="text-sm text-gray-600 mb-0">&quot;Over 500 Products&quot;, &quot;Save Up To 40%&quot;, &quot;30 Day Guarantee&quot;, &quot;24/7 Support&quot; — concrete numbers attract attention and increase CTR.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Strong CTA and USP in headline</h3>
@@ -266,7 +266,7 @@ export default function QualityScoreGuideEN() {
         <p className="text-sm text-gray-600 mb-0">Clear action: &quot;Order Today&quot;, &quot;Free Quote&quot;. Unique USP: &quot;Only One With Money-Back Guarantee&quot;, &quot;Same Day Delivery&quot;.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Add all extensions</h3>
@@ -284,7 +284,7 @@ export default function QualityScoreGuideEN() {
       {/* ── Improving Ad Relevance ── */}
       <h2 id="how-to-improve-ad-relevance">How to Improve Ad Relevance</h2>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">4 tactics for better relevance</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -312,22 +312,22 @@ export default function QualityScoreGuideEN() {
       <h2 id="how-to-improve-landing-page-experience">How to Improve Landing Page Experience</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Priority 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Content relevance</h3>
           <p className="text-sm text-gray-600 mb-0">LP must match keyword and ad. Dedicated LP for each theme — do not send everything to homepage.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Priority 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Page speed</h3>
           <p className="text-sm text-gray-600 mb-0">Goal: &lt; 3 seconds load time. Image compression (WebP), minify CSS/JS, CDN, caching, lazy loading.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Priority 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mobile optimization</h3>
           <p className="text-sm text-gray-600 mb-0">60%+ traffic is mobile. Responsive design, readable without zooming, clickable buttons.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Priority 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Trust signals</h3>
           <p className="text-sm text-gray-600 mb-0">Reviews, testimonials, trust badges, SSL, guarantees, contact information. User must trust you.</p>
@@ -346,7 +346,7 @@ export default function QualityScoreGuideEN() {
       {/* ── 30-day plan ── */}
       <h2 id="30-day-plan-to-improve-quality-score">30-Day Plan to Improve Quality Score</h2>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -528,7 +528,7 @@ export default function QualityScoreGuideEN() {
         Quality Score is the most powerful tool for controlling costs in Google Ads. Improving from QS 5 to 7 reduces CPC by 28%, which annually can mean thousands in savings. Focus on three components — Expected CTR, Ad Relevance, and Landing Page Experience — using the diagnostic table to identify where the problem is.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Are you paying too much per click?
         </p>

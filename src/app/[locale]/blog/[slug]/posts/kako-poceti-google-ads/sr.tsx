@@ -4,7 +4,7 @@ export default function KakoPocetiGoogleAdsSR() {
   return (
     <>
       {/* ── TL;DR boks ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google Ads nije komplikovan ako znate odakle da krenete. Ovo je sve što vam treba da pokrenete prvu kampanju i vidite prve rezultate.
@@ -31,7 +31,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       {/* ── Sekcija 1: Zašto Google Ads u 2026. ── */}
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#zasto-google-ads-u-2026-godini" className="text-sm text-gray-700 hover:text-primary underline">Zašto Google Ads u 2026. godini</a></li>
@@ -80,7 +80,7 @@ export default function KakoPocetiGoogleAdsSR() {
         Evo kako ceo sistem funkcioniše od momenta kada neko ukuca pretragu do momenta kada konvertuje:
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -129,27 +129,27 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Cena po kliku</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC</h3>
           <p className="text-sm text-gray-600 mb-0">Koliko platite svaki put kada neko klikne na vaš oglas. Može biti €0,20 za lokalnu nišu ili €5+ za konkurentne industrije. Cilj je da CPC bude što niži uz što bolji kvalitet saobraćaja.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Stopa klika</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CTR</h3>
           <p className="text-sm text-gray-600 mb-0">Procenat ljudi koji vide vaš oglas i kliknu na njega. Ako 100 ljudi vidi oglas i 3 klikne — CTR je 3%. Viši CTR znači relevantniji oglas, što smanjuje CPC i poboljšava poziciju.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ocena kvaliteta</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Quality Score</h3>
           <p className="text-sm text-gray-600 mb-0">Google-ova ocena od 1 do 10 koja meri koliko su vaš oglas, ključna reč i landing page relevantni jedni za druge. Viši Quality Score = niži CPC i bolja pozicija oglasa.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Željeni ishod</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Konverzija</h3>
           <p className="text-sm text-gray-600 mb-0">Akcija koju želite da posetilac uradi: kupovina, poziv, popunjen formular, prijava. Bez praćenja konverzija ne znate šta funkcioniše — vodite kampanju naslepo.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card md:col-span-2">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Povrat na potrošnju oglasa</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">ROAS</h3>
           <p className="text-sm text-gray-600 mb-0">Koliko prihoda ostvarite za svaki euro uložen u oglase. ROAS od 4x znači: potrošili ste €100, zaradili €400. Ovo je ključna metrika za eCommerce. Za lead gen prati CPA (cenu po konverziji).</p>
@@ -165,27 +165,27 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Pretraga</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search kampanje</h3>
           <p className="text-sm text-gray-600 mb-0">Tekstualni oglasi u rezultatima pretrage. Prikazuju se kada neko aktivno traži vaš proizvod ili uslugu. Najveća namera, najveća kontrola. Idealne za početnike.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Proizvodi</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping kampanje</h3>
           <p className="text-sm text-gray-600 mb-0">Oglasi sa slikom, nazivom i cenom proizvoda. Prikazuju se na vrhu rezultata za produktne pretrage. Savršene za eCommerce — ali zahtevaju product feed i malo iskustva.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Baneri</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display kampanje</h3>
           <p className="text-sm text-gray-600 mb-0">Vizuelni oglasi na milionima sajtova i aplikacija. Odlično za remarketing i svesnost o brendu. Niska namera, ali visok doseg. Ne preporučujem za početak bez prethodnog saobraćaja.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Video</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">YouTube kampanje</h3>
           <p className="text-sm text-gray-600 mb-0">Video oglasi pre i tokom YouTube sadržaja. Odlično za brend svesnost i edukaciju. Zahtevaju video produkciju i veće budžete za smislene rezultate.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card md:col-span-2">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Sve u jednom</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max</h3>
           <p className="text-sm text-gray-600 mb-0">Google-ov AI vodi kampanju na svim kanalima istovremeno (Search, Shopping, Display, YouTube, Maps). Moćan alat kada imate dovoljno konverzija i iskustva — ali crna kutija za početnike. Sačekajte da savladate Search pre PMax-a.</p>
@@ -207,7 +207,7 @@ export default function KakoPocetiGoogleAdsSR() {
         Evo konkretnih koraka za pokretanje prve Google Ads kampanje. Ne preskačite korake — redosled je bitan, posebno postavljanje praćenja konverzija pre svega ostalog.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -555,7 +555,7 @@ export default function KakoPocetiGoogleAdsSR() {
         Ako budete pratili korake iz ovog vodiča, izbegli pet grešaka koje sam opisao i dali kampanjama 2-4 nedelje da se stabilizuju — bićete ispred 70% početnika koji odustanu prerano ili optimizuju previše rano.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Želite da pokrenete Google Ads ali niste sigurni odakle da počnete?
         </p>

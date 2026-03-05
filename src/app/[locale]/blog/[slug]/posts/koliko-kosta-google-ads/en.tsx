@@ -4,7 +4,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
   return (
     <>
       {/* ── TL;DR hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google Ads costs vary by industry, competition, and campaign quality. In the UK and US markets, CPC ranges from $0.50 to $50+ — but with the right approach, every dollar invested can deliver 3-10x returns.
@@ -29,7 +29,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         </div>
       </div>
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#the-real-cost-of-google-ads-in-2026" className="text-sm text-gray-700 hover:text-primary underline">The real cost of Google Ads in 2026</a></li>
@@ -87,19 +87,19 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <h3>Pricing models in Google Ads</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC — cost per click</h3>
           <p className="text-sm text-gray-600 mb-0">Pay when someone clicks your ad. Most common for Search and Shopping campaigns.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPM — cost per 1,000 impressions</h3>
           <p className="text-sm text-gray-600 mb-0">Pay for visibility, not clicks. Used for Display and YouTube campaigns.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPV — cost per video view</h3>
           <p className="text-sm text-gray-600 mb-0">Pay when someone watches your video ad. YouTube-specific.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPA — cost per conversion</h3>
           <p className="text-sm text-gray-600 mb-0">Advanced model where you pay per action. Requires sufficient conversion data.</p>
         </div>
@@ -260,21 +260,21 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       <p>Besides ad spend, you have campaign management costs. Three options:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">Agency</h3>
           <p className="text-sm text-gray-600 mb-2"><strong>Cost:</strong> $1,500-5,000/mo or 10-20% of ad spend</p>
           <p className="text-xs text-green-700 mb-1">+ Expert team, tools, continuity</p>
           <p className="text-xs text-red-600 mb-0">- More expensive for smaller budgets, less personalized</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">Freelancer</h3>
           <p className="text-sm text-gray-600 mb-2"><strong>Cost:</strong> $800-3,000/mo or $80-200/hr</p>
           <p className="text-xs text-green-700 mb-1">+ Personalized approach, flexibility</p>
           <p className="text-xs text-red-600 mb-0">- Single point of failure, limited capacity</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">In-House</h3>
           <p className="text-sm text-gray-600 mb-2"><strong>Cost:</strong> $3,000-8,000/mo salary + tools</p>
@@ -318,7 +318,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       <h2 id="how-to-calculate-roi-before-spending-your-first-dollar">How to calculate ROI before spending your first dollar</h2>
       <p>This is where most people skip, but it's where the most important decisions are made.</p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -437,7 +437,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <h2 id="next-steps">Next steps</h2>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">I recommend these 4 steps:</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -460,7 +460,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       </div>
 
       {/* ── CTA ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Want to know what Google Ads would cost for your business?
         </p>

@@ -4,7 +4,7 @@ export default function NegativeKeywordsGuideEN() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Negative keywords prevent your ads from showing for irrelevant searches. Without them, 20-40% of your budget goes to clicks that will never convert. In this guide: complete starter lists, strategy by industry, and organization system.
@@ -47,12 +47,12 @@ export default function NegativeKeywordsGuideEN() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Regular keywords</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Trigger your ad</h3>
           <p className="text-sm text-gray-600 mb-0">Define which searches show your ad. Attract traffic to your site.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Negative keywords</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Block your ad</h3>
           <p className="text-sm text-gray-600 mb-0">Prevent showing for irrelevant searches. Protect budget from wasted spend.</p>
@@ -60,7 +60,7 @@ export default function NegativeKeywordsGuideEN() {
       </div>
 
       <h3>Real-world case study</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Client: Premium furniture eCommerce (UK)</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -149,32 +149,32 @@ export default function NegativeKeywordsGuideEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Category</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Free / No Cost</h3>
           <p className="text-sm text-gray-600 mb-0">free, freeware, gratis, complimentary, no cost, opensource, open source, trial (if not offering), demo (if not offering)</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Category</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Jobs / Employment</h3>
           <p className="text-sm text-gray-600 mb-0">jobs, career, hiring, employment, salary, wage, CV, resume, vacancy, intern, internship, apprentice, work from home</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Category</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Informational / Educational</h3>
           <p className="text-sm text-gray-600 mb-0">what is, how to, why, definition, meaning, wikipedia, wiki, tutorial, course, training, education, webinar, learn</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Category</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">DIY</h3>
           <p className="text-sm text-gray-600 mb-0">DIY, do it yourself, make your own, homemade, handmade, tutorial, how to make, build your own</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Category</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Cheap / Budget</h3>
           <p className="text-sm text-gray-600 mb-0">cheap, cheapest, budget, affordable, discount, sale, clearance, second hand, used, refurbished, reconditioned</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Category</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Negative Associations</h3>
           <p className="text-sm text-gray-600 mb-0">problem, broken, not working, complaint, scam, fraud, fake, dangerous, risk, bug, error, virus</p>
@@ -189,7 +189,7 @@ export default function NegativeKeywordsGuideEN() {
         Beyond the universal list, every industry has specific terms to block. Here are lists for the most common industries I work with.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce — Fashion & Apparel</h3>
@@ -197,7 +197,7 @@ export default function NegativeKeywordsGuideEN() {
         <p className="text-sm text-gray-600 mb-0">cheap, used, second hand, thrift, outlet, replica, fake, how to sew, sewing, pattern, DIY, trends, fashion week, designer jobs, vintage, cosplay, costume, halloween</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce — Electronics</h3>
@@ -205,7 +205,7 @@ export default function NegativeKeywordsGuideEN() {
         <p className="text-sm text-gray-600 mb-0">used, refurbished, broken, repair, service, parts, how to fix, teardown, review, unboxing, drivers, firmware, manual, specifications, comparison</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">B2B / SaaS</h3>
@@ -213,7 +213,7 @@ export default function NegativeKeywordsGuideEN() {
         <p className="text-sm text-gray-600 mb-0">free, open source, crack, pirate, nulled, developer jobs, programmer salary, IT career, course, tutorial, for beginners, student, personal use, home use</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Local Services</h3>
@@ -221,7 +221,7 @@ export default function NegativeKeywordsGuideEN() {
         <p className="text-sm text-gray-600 mb-0">[cities outside service area], online, remote, virtual, free, cheap, jobs, hiring, salary, DIY, do it yourself, complaint, lawsuit, lawyer, inspection</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Travel / Hotels</h3>
@@ -229,7 +229,7 @@ export default function NegativeKeywordsGuideEN() {
         <p className="text-sm text-gray-600 mb-0">free, budget, hostel (for hotels), camping, hotel jobs, receptionist, waiter jobs, tour guide jobs, pictures, photos, vlog, blog, reviews, forum</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Real Estate</h3>
@@ -237,7 +237,7 @@ export default function NegativeKeywordsGuideEN() {
         <p className="text-sm text-gray-600 mb-0">rental (if selling), sale (if renting), commercial (for residential), estate agent jobs, broker, license, property prices, forecast, statistics, foreclosure, auction</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Fitness / Health</h3>
@@ -250,7 +250,7 @@ export default function NegativeKeywordsGuideEN() {
       {/* ── How to find negatives ── */}
       <h2>How to Find Negative Keywords</h2>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">5 methods for finding negatives</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -313,7 +313,7 @@ export default function NegativeKeywordsGuideEN() {
         </table>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <h3 className="mt-0 mb-4 font-heading font-bold">How to create Negative Keyword List</h3>
         <ol className="mb-0 text-sm">
           <li>Tools &amp; Settings → Shared library → Negative keyword lists</li>
@@ -337,7 +337,7 @@ export default function NegativeKeywordsGuideEN() {
       <h2>Negative Keywords — Audit Checklist</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Weekly</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Terms Review</h3>
           <ul className="text-sm mb-0">
@@ -346,7 +346,7 @@ export default function NegativeKeywordsGuideEN() {
             <li>Check negatives do not block good searches</li>
           </ul>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Monthly</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Deep Dive</h3>
           <ul className="text-sm mb-0">
@@ -355,7 +355,7 @@ export default function NegativeKeywordsGuideEN() {
             <li>Industry list updated</li>
           </ul>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Quarterly</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Complete Review</h3>
           <ul className="text-sm mb-0">
@@ -364,7 +364,7 @@ export default function NegativeKeywordsGuideEN() {
             <li>List reorganization</li>
           </ul>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Pro tip</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Complete account check</h3>
           <p className="text-sm text-gray-600 mb-0">See <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-semibold">Google Ads audit checklist</Link> for complete account review.</p>
@@ -493,7 +493,7 @@ export default function NegativeKeywordsGuideEN() {
         Negative keywords are one of the most powerful optimization levers in Google Ads. Proper strategy can reduce wasted spend by 30%+ and improve ROAS by 20-50%. Start with universal list, add industry list, and review Search Terms weekly. Results are visible immediately.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Are you throwing money at irrelevant clicks?
         </p>

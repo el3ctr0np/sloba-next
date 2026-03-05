@@ -11,7 +11,7 @@ export default function PerformanceMaxVodicPost() {
         U praksi, PMax može biti izuzetno efikasan kanal koji skalira rezultate ili crna rupa koja guta budžet bez transparentnosti. Razlika je u pristupu i razumevanju kako sistem funkcioniše.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Performance Max kampanje kombinuju sve Google mreže u jednoj kampanji sa automatskim bidding-om. Preporučujem ih za skaliranje nakon što imate stabilan conversion tracking i dovoljno podataka — minimum 50+ konverzija mesečno. Hibridni pristup daje najbolje rezultate: Search za kontrolu, Shopping za proizvode, PMax za doseg.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -36,7 +36,7 @@ export default function PerformanceMaxVodicPost() {
 
       <hr />
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#sta-je-performance-max-i-zasto-je-poseban" className="text-sm text-gray-700 hover:text-primary underline">Šta je Performance Max i zašto je poseban</a></li>
@@ -87,22 +87,22 @@ export default function PerformanceMaxVodicPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> Kada DA</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Proven conversion history</h3>
           <p className="text-sm text-gray-600 mb-0">Imate minimum 30–50 konverzija mesečno. Algoritam uči iz vaših podataka — treba mu data da bi optimizovao. Bez conversion history, PMax gađa nasumično.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> Kada DA</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Želite skaliranje dosega</h3>
           <p className="text-sm text-gray-600 mb-0">Dostigli ste plafon sa Search ili Shopping kampanjama i želite da dosegnete korisnike na YouTube, Display, Discover. PMax je alat za skaliranje, ne za pokretanje od nule.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Kada NE</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mali budžet</h3>
           <p className="text-sm text-gray-600 mb-0">Ispod €1,000–1,500 mesečno. Algoritam nema dovoljno budžeta za testiranje i učenje na 7 mreža. Rezultat je često suboptimalan.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Kada NE</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Potrebna granularna kontrola</h3>
           <p className="text-sm text-gray-600 mb-0">Ako vam treba striktna kontrola troškova po proizvodu, brand vs non-brand alokacija budžeta, ili bid per keyword — PMax nije pravi alat. Koristite Search ili Standard Shopping.</p>
@@ -121,7 +121,7 @@ export default function PerformanceMaxVodicPost() {
         PMax kampanja se sastoji od asset grupa. Svaka asset grupa je tematska celina sa svojim kreativima, audience signalima, i (za eCommerce) listing grupama proizvoda.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -203,7 +203,7 @@ export default function PerformanceMaxVodicPost() {
         Za eCommerce, PMax je najmoćniji kada se pokreće sa optimizovanim product feed-om. PMax bez feed-a je u suštini Display kampanja u novom pakovanju — gubi Shopping i Product Listing Ads moć.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Optimizovati product feed titles</h3>
@@ -215,7 +215,7 @@ export default function PerformanceMaxVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dodati custom labels za segmentaciju</h3>
@@ -229,7 +229,7 @@ export default function PerformanceMaxVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Segmentovati asset grupe po kategorijama</h3>
@@ -302,7 +302,7 @@ export default function PerformanceMaxVodicPost() {
         <li>Možete importovati offline konverzije (zatvoreni dealovi iz CRM-a)</li>
       </ul>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Offline conversion import</h3>
@@ -315,7 +315,7 @@ export default function PerformanceMaxVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Audience signals su kritični</h3>
@@ -329,7 +329,7 @@ export default function PerformanceMaxVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Account-level negative keywords</h3>
@@ -350,7 +350,7 @@ export default function PerformanceMaxVodicPost() {
         Najveća frustracija sa PMax-om je ograničena kontrola. Ali kontrola nije nula — imate poluge koje možete pomerati. Evo šta možete (i treba) optimizovati.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Asset kvalitet i raznolikost</h3>
@@ -364,7 +364,7 @@ export default function PerformanceMaxVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Audience signals refinement</h3>
@@ -377,7 +377,7 @@ export default function PerformanceMaxVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Product feed optimizacija (eCommerce)</h3>
@@ -390,7 +390,7 @@ export default function PerformanceMaxVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bid strategija i ciljna vrednost</h3>
@@ -403,7 +403,7 @@ export default function PerformanceMaxVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">URL Expansion setting</h3>
@@ -440,7 +440,7 @@ export default function PerformanceMaxVodicPost() {
         </table>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">Timeline: Kako pristupiti optimizaciji</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -557,7 +557,7 @@ export default function PerformanceMaxVodicPost() {
         </table>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">Timeline: Šta očekivati kroz vreme</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -640,7 +640,7 @@ export default function PerformanceMaxVodicPost() {
         </details>
       </div>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Razmišljate o Performance Max kampanji?</p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">Pomažem firmama da pokrenu i optimizuju PMax kampanje sa hibridnim pristupom — Search za kontrolu, Shopping za proizvode, PMax za skaliranje. Zakažite besplatnu konsultaciju da vidimo da li je PMax pravi izbor za vaš biznis.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Zakažite besplatnu konsultaciju</Link>

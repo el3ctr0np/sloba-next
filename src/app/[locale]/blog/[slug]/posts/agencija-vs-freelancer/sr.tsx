@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 export default function AgencijaVsFreelancerPost() {
   return (
     <>
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Odlučili ste da koristite Google Ads. Odlično. Sada dolazi pitanje: ko će upravljati kampanjama? Postoje tri modela, raspon cena je €200-2,000+, a 67% marketing menadžera menja partnera u prvoj godini. Ključ nije u ceni — ključ je u fitu.
@@ -36,7 +36,7 @@ export default function AgencijaVsFreelancerPost() {
       </p>
 
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#zasto-je-izbor-partnera-kljucan" className="text-sm text-gray-700 hover:text-primary underline">Zašto je izbor partnera ključan</a></li>
@@ -77,7 +77,7 @@ export default function AgencijaVsFreelancerPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Ads agencija</h3>
           <p className="text-sm text-gray-600 mb-3">Tim specijalista koji vodi vaše kampanje. Kompletna usluga sa account managerom, PPC specijalistom i često dizajnerom. Sertifikovane agencije možete pronaći kroz <a href="https://ads.google.com/intl/sr_rs/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Google Partners</a> direktorijum.</p>
@@ -87,7 +87,7 @@ export default function AgencijaVsFreelancerPost() {
           <p className="text-sm mb-0">Firme sa budžetom €5,000+ mesečno, multi-channel potrebe, potrebna struktura i skalabilnost.</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Freelancer / konsultant</h3>
           <p className="text-sm text-gray-600 mb-3">Nezavisni specijalista koji radi direktno sa vama. Personalizovana pažnja, fleksibilnost i fokus na jedan kanal.</p>
@@ -97,7 +97,7 @@ export default function AgencijaVsFreelancerPost() {
           <p className="text-sm mb-0">Firme sa budžetom €1,000-10,000 mesečno, fokus na Google Ads, važna direktna komunikacija.</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">In-house tim</h3>
           <p className="text-sm text-gray-600 mb-3">Zaposlen PPC specijalista u vašoj firmi. Potpuna kontrola, duboko razumevanje biznisa, instant komunikacija.</p>
@@ -115,7 +115,7 @@ export default function AgencijaVsFreelancerPost() {
         Moje iskustvo rada sa agencijama (i kao klijent i kao partner) pokazuje da agencije donose najveću vrednost kada imate jasno definisane ciljeve i budžet koji opravdava njihovu strukturu.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Tim umesto pojedinca</h3>
@@ -129,7 +129,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Šira ekspertiza i resursi</h3>
@@ -143,7 +143,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Skalabilnost i accountability</h3>
@@ -247,7 +247,7 @@ export default function AgencijaVsFreelancerPost() {
         Kao freelancer sa višegodišnjim iskustvom, mogu vam reći da je najveća prednost freelancera direktna komunikacija i personalizovana pažnja. Ali to dolazi sa trade-off-ovima koje treba razumeti.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Personalizovana pažnja i direktna komunikacija</h3>
@@ -261,7 +261,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Fleksibilnost i specijalizacija</h3>
@@ -275,7 +275,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Isplativost za male/srednje budžete</h3>
@@ -367,7 +367,7 @@ export default function AgencijaVsFreelancerPost() {
         In-house tim je dugoročna investicija koja ima smisla samo kada imate kritičnu masu budžeta i marketing je core funkcija vašeg biznisa.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Potpuna kontrola i instant komunikacija</h3>
@@ -381,7 +381,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Duboko razumevanje biznisa</h3>
@@ -395,7 +395,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dugoročna isplativost</h3>
@@ -573,7 +573,7 @@ export default function AgencijaVsFreelancerPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €0-2,000/mesec</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mala firma ili startup</h3>
           <p className="text-sm text-gray-600 mb-3">Budžet je ograničen, potrebna vam je brzina i fleksibilnost.</p>
@@ -587,7 +587,7 @@ export default function AgencijaVsFreelancerPost() {
           </ul>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €2,000-10,000/mesec</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mid-size firma (solo fokus)</h3>
           <p className="text-sm text-gray-600 mb-3">Stabilan biznis, fokus na Google Ads kao primarni kanal.</p>
@@ -601,7 +601,7 @@ export default function AgencijaVsFreelancerPost() {
           </ul>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €10,000-30,000/mesec</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Rastuća firma (multi-channel)</h3>
           <p className="text-sm text-gray-600 mb-3">Potreban vam je multi-channel pristup i veći kapacitet.</p>
@@ -615,7 +615,7 @@ export default function AgencijaVsFreelancerPost() {
           </ul>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €30,000+/mesec</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Enterprise firma</h3>
           <p className="text-sm text-gray-600 mb-3">Marketing je core funkcija, dugoročna strategija ključna.</p>
@@ -643,7 +643,7 @@ export default function AgencijaVsFreelancerPost() {
         Moje iskustvo pokazuje da ovih 5 faktora određuju uspeh ili neuspeh saradnje, bez obzira da li radite sa agencijom, freelancerom ili gradite tim.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Iskustvo u vašoj industriji</h3>
@@ -656,7 +656,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Transparentnost oko pristupa i vlasništva naloga</h3>
@@ -669,7 +669,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Komunikacijski stil i response time</h3>
@@ -682,7 +682,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Jasno definisan proces rada</h3>
@@ -695,7 +695,7 @@ export default function AgencijaVsFreelancerPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Realistična očekivanja (ne garantuje rezultate)</h3>
@@ -842,7 +842,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <hr />
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Ne znate koji model je pravi za vas?
         </p>

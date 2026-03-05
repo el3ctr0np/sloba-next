@@ -90,7 +90,7 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white border-b-2 border-gray-900">
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
       <div className="container-custom">
         <div className="flex items-center justify-between h-20 px-4">
           {/* Logo */}
@@ -119,7 +119,7 @@ export function Header() {
 
                 {/* Services Mega Menu */}
                 {item.hasServiceMenu && activeDropdown === item.label && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-[700px] bg-white border-2 border-gray-900 rounded-lg shadow-card p-6">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-[700px] bg-white border border-gray-200 rounded-2xl shadow-card-lg p-6">
                     <div className="grid grid-cols-3 gap-6">
                       {serviceGroups.map((group) => (
                         <div key={group.title}>
@@ -154,7 +154,7 @@ export function Header() {
 
           {/* CTA Button + Language Switcher */}
           <div className="hidden lg:flex items-center gap-4">
-            <div className="flex items-center gap-2 text-sm font-semibold border-2 border-gray-900 rounded-full px-3 py-1">
+            <div className="flex items-center gap-2 text-sm font-semibold border border-gray-300 rounded-full px-3 py-1">
               <Link
                 href={srHref}
                 locale="sr"
@@ -180,7 +180,7 @@ export function Header() {
           <div className="lg:hidden flex items-center gap-2">
             <Link
               href="/kontakt"
-              className="bg-accent text-gray-900 px-3 py-2 rounded-md text-xs font-semibold border-2 border-gray-900 shadow-[3px_3px_0_0_#202124] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all duration-200"
+              className="bg-accent text-gray-900 px-3 py-2 rounded-lg text-xs font-semibold transition-all duration-200 hover:brightness-105 hover:shadow-md hover:-translate-y-0.5"
             >
               {locale === "sr" ? "Zakažite konsultaciju" : "Book a Call"}
             </Link>
@@ -200,7 +200,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t-2 border-gray-900 py-4 px-4 max-h-[80vh] overflow-y-auto">
+          <div className="lg:hidden border-t border-gray-200 py-4 px-4 max-h-[80vh] overflow-y-auto">
             {navItems.map((item) => (
               <div key={item.label} className="py-2">
                 <Link
@@ -236,7 +236,7 @@ export function Header() {
                 {t("cta")}
               </Button>
             </div>
-            <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold border-2 border-gray-900 rounded-full px-3 py-2">
+            <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold border border-gray-300 rounded-full px-3 py-2">
               <Link
                 href={srHref}
                 locale="sr"

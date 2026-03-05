@@ -8,8 +8,8 @@ export function Card({ children, className = "", hover = true }: CardProps) {
   return (
     <div
       className={`
-        bg-white border-2 border-gray-900 rounded-lg p-6
-        ${hover ? "shadow-card transition-all duration-300 hover:shadow-card-hover hover:translate-x-[5px] hover:translate-y-[5px]" : ""}
+        bg-white border border-gray-200 rounded-2xl p-6
+        ${hover ? "shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5" : "shadow-card"}
         ${className}
       `}
     >

@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 export default function AgencyVsFreelancerEN() {
   return (
     <>
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           You've decided to use Google Ads. Great. Now comes the question: who will manage your campaigns? Three models exist, pricing ranges from $200-2,000+/£150-1,500+, and 67% of marketing managers change partners within the first year. The key isn't price — the key is fit.
@@ -36,7 +36,7 @@ export default function AgencyVsFreelancerEN() {
       </p>
 
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#why-partner-choice-is-critical" className="text-sm text-gray-700 hover:text-primary underline">Why partner choice is critical</a></li>
@@ -77,7 +77,7 @@ export default function AgencyVsFreelancerEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Ads agency</h3>
           <p className="text-sm text-gray-600 mb-3">Team of specialists managing your campaigns. Full service with account manager, PPC specialist, and often designer. Certified agencies can be found through the <a href="https://ads.google.com/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Google Partners</a> directory.</p>
@@ -87,7 +87,7 @@ export default function AgencyVsFreelancerEN() {
           <p className="text-sm mb-0">Companies with $5,000+/£4,000+ monthly budget, multi-channel needs, requiring structure and scalability.</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Freelancer / consultant</h3>
           <p className="text-sm text-gray-600 mb-3">Independent specialist working directly with you. Personalized attention, flexibility, and single-channel focus.</p>
@@ -97,7 +97,7 @@ export default function AgencyVsFreelancerEN() {
           <p className="text-sm mb-0">Companies with $1,000-10,000/£800-8,000 monthly budget, Google Ads focus, direct communication important.</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">In-house team</h3>
           <p className="text-sm text-gray-600 mb-3">Employed PPC specialist in your company. Full control, deep business understanding, instant communication.</p>
@@ -115,7 +115,7 @@ export default function AgencyVsFreelancerEN() {
         My experience working with agencies (both as client and partner) shows that agencies deliver the most value when you have clearly defined goals and budget that justifies their structure.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Team instead of individual</h3>
@@ -129,7 +129,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Broader expertise and resources</h3>
@@ -143,7 +143,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Scalability and accountability</h3>
@@ -247,7 +247,7 @@ export default function AgencyVsFreelancerEN() {
         As a freelancer with years of experience, I can tell you the biggest advantage is direct communication and personalized attention. But that comes with trade-offs you need to understand.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Personalized attention and direct communication</h3>
@@ -261,7 +261,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Flexibility and specialization</h3>
@@ -275,7 +275,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Cost-effective for small/medium budgets</h3>
@@ -367,7 +367,7 @@ export default function AgencyVsFreelancerEN() {
         In-house team is a long-term investment that makes sense only when you have critical mass of budget and marketing is a core business function.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Full control and instant communication</h3>
@@ -381,7 +381,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Deep business understanding</h3>
@@ -395,7 +395,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Long-term cost-effectiveness</h3>
@@ -573,7 +573,7 @@ export default function AgencyVsFreelancerEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: $0-2,000/£0-1,600/mo</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Small company or startup</h3>
           <p className="text-sm text-gray-600 mb-3">Budget is limited, you need speed and flexibility.</p>
@@ -587,7 +587,7 @@ export default function AgencyVsFreelancerEN() {
           </ul>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: $2,000-10,000/£1,600-8,000/mo</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mid-size company (single channel focus)</h3>
           <p className="text-sm text-gray-600 mb-3">Stable business, Google Ads as primary channel.</p>
@@ -601,7 +601,7 @@ export default function AgencyVsFreelancerEN() {
           </ul>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: $10,000-30,000/£8,000-24,000/mo</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Growing company (multi-channel)</h3>
           <p className="text-sm text-gray-600 mb-3">Need multi-channel approach and greater capacity.</p>
@@ -615,7 +615,7 @@ export default function AgencyVsFreelancerEN() {
           </ul>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: $30,000+/£24,000+/mo</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Enterprise company</h3>
           <p className="text-sm text-gray-600 mb-3">Marketing is core function, long-term strategy critical.</p>
@@ -643,7 +643,7 @@ export default function AgencyVsFreelancerEN() {
         In my experience, these 5 factors determine the success or failure of collaboration, regardless of whether you work with an agency, freelancer, or build a team.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Experience in your industry</h3>
@@ -656,7 +656,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Transparency about access and account ownership</h3>
@@ -669,7 +669,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Communication style and response time</h3>
@@ -682,7 +682,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Clearly defined work process</h3>
@@ -695,7 +695,7 @@ export default function AgencyVsFreelancerEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Realistic expectations (doesn't guarantee results)</h3>
@@ -842,7 +842,7 @@ export default function AgencyVsFreelancerEN() {
 
       <hr />
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Not sure which model is right for you?
         </p>

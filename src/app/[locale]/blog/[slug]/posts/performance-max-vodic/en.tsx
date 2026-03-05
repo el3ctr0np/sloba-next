@@ -11,7 +11,7 @@ export default function PerformanceMaxGuideEN() {
         In practice, PMax can be an exceptionally effective channel that scales results or a black hole consuming budget without transparency. The difference is in approach and understanding how the system works.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Performance Max campaigns combine all Google networks in one campaign with automated bidding. I recommend them for scaling after you have stable conversion tracking and sufficient data — minimum 50+ conversions monthly. Hybrid approach delivers best results: Search for control, Shopping for products, PMax for reach.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -36,7 +36,7 @@ export default function PerformanceMaxGuideEN() {
 
       <hr />
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#what-is-performance-max-and-why-its-special" className="text-sm text-gray-700 hover:text-primary underline">What is Performance Max and why it's special</a></li>
@@ -88,22 +88,22 @@ export default function PerformanceMaxGuideEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> When YES</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Proven conversion history</h3>
           <p className="text-sm text-gray-600 mb-0">You have minimum 30–50 conversions monthly. Algorithm learns from your data — it needs data to optimize. Without conversion history, PMax shoots randomly.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> When YES</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Want to scale reach</h3>
           <p className="text-sm text-gray-600 mb-0">You've hit ceiling with Search or Shopping campaigns and want to reach users on YouTube, Display, Discover. PMax is a scaling tool, not a launch-from-zero tool.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> When NO</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Small budget</h3>
           <p className="text-sm text-gray-600 mb-0">Below $1,500–2,000 monthly. Algorithm doesn't have enough budget to test and learn across 7 networks. Result is often suboptimal.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> When NO</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Need granular control</h3>
           <p className="text-sm text-gray-600 mb-0">If you need strict cost control per product, brand vs non-brand budget allocation, or bid per keyword — PMax isn't right tool. Use Search or Standard Shopping.</p>
@@ -122,7 +122,7 @@ export default function PerformanceMaxGuideEN() {
         PMax campaign consists of asset groups. Each asset group is a thematic unit with its own creatives, audience signals, and (for eCommerce) product listing groups.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -204,7 +204,7 @@ export default function PerformanceMaxGuideEN() {
         For eCommerce, PMax is most powerful when launched with optimized product feed. PMax without feed is essentially Display campaign in new packaging — loses Shopping and Product Listing Ads power.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Optimize product feed titles</h3>
@@ -216,7 +216,7 @@ export default function PerformanceMaxGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Add custom labels for segmentation</h3>
@@ -230,7 +230,7 @@ export default function PerformanceMaxGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Segment asset groups by product category</h3>
@@ -293,7 +293,7 @@ export default function PerformanceMaxGuideEN() {
         <li>You can import offline conversions (closed deals from CRM)</li>
       </ul>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Offline conversion import</h3>
@@ -306,7 +306,7 @@ export default function PerformanceMaxGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Audience signals are critical for B2B</h3>
@@ -320,7 +320,7 @@ export default function PerformanceMaxGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Account-level negative keywords</h3>
@@ -341,7 +341,7 @@ export default function PerformanceMaxGuideEN() {
         Biggest frustration with PMax is limited control. But control isn't zero — you have levers you can move. Here's what you can (and should) optimize.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Asset quality and diversity</h3>
@@ -355,7 +355,7 @@ export default function PerformanceMaxGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Audience signals refinement</h3>
@@ -368,7 +368,7 @@ export default function PerformanceMaxGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Product feed optimization (eCommerce)</h3>
@@ -381,7 +381,7 @@ export default function PerformanceMaxGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bid strategy and target value</h3>
@@ -394,7 +394,7 @@ export default function PerformanceMaxGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">URL Expansion setting</h3>
@@ -431,7 +431,7 @@ export default function PerformanceMaxGuideEN() {
         </table>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">Timeline: How to approach optimization</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -548,7 +548,7 @@ export default function PerformanceMaxGuideEN() {
         </table>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">Timeline: What to expect over time</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -631,7 +631,7 @@ export default function PerformanceMaxGuideEN() {
         </details>
       </div>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Considering Performance Max campaign?</p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">I help companies launch and optimize PMax campaigns with hybrid approach — Search for control, Shopping for products, PMax for scaling. Schedule free consultation to see if PMax is right choice for your business.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Schedule free consultation</Link>

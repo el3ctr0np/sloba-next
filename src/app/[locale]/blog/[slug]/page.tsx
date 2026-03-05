@@ -938,7 +938,7 @@ export default async function BlogPostPage({ params }: Props) {
             <aside className="hidden lg:block">
               <div className="sticky top-24 space-y-4">
                 <TableOfContents locale={locale} />
-                <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+                <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
                   <div className="text-sm uppercase tracking-wide text-gray-500">
                     {locale === "en" ? "Free analysis" : "Besplatna analiza"}
                   </div>
@@ -964,7 +964,7 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
             </aside>
 
-            <article className="bg-white border-2 border-gray-900 rounded-xl p-6 md:p-12 shadow-card">
+            <article className="bg-white border border-gray-200 rounded-xl p-6 md:p-12 shadow-card">
               {post.featuredImage && (
                 <div className="mb-8 -mx-6 md:-mx-12 -mt-6 md:-mt-12">
                   <Image

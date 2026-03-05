@@ -94,7 +94,7 @@ export function TableOfContents({ locale }: TableOfContentsProps) {
 
   return (
     <nav aria-label={label} className="mb-4">
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
         <p className="text-xs uppercase tracking-wide text-gray-500 mb-3 font-semibold">
           {label}
         </p>

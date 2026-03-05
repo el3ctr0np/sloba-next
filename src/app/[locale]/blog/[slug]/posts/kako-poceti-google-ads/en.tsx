@@ -4,7 +4,7 @@ export default function KakoPocetiGoogleAdsEN() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">
           TL;DR
         </p>
@@ -47,7 +47,7 @@ export default function KakoPocetiGoogleAdsEN() {
         </div>
       </div>
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#why-google-ads-in-2026" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads in 2026</a></li>
@@ -93,7 +93,7 @@ export default function KakoPocetiGoogleAdsEN() {
         The mechanics are simpler than most people expect. Here is what happens from the moment someone types a search query to the moment they land on your website:
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="space-y-4">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
@@ -179,35 +179,35 @@ export default function KakoPocetiGoogleAdsEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC — Cost Per Click</h3>
           <p className="text-sm text-gray-600 mb-0">
             How much you pay each time someone clicks your ad. This varies by keyword, competition, and Quality Score. For most niches it ranges from €0.20 to €5+.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CTR — Click-Through Rate</h3>
           <p className="text-sm text-gray-600 mb-0">
             The percentage of people who click your ad after seeing it. Calculated as clicks ÷ impressions × 100. A strong CTR for Search campaigns is typically 5-10%+.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Quality Score</h3>
           <p className="text-sm text-gray-600 mb-0">
             Google&apos;s 1-10 rating of your keyword, ad, and landing page relevance. Higher Quality Score = lower CPC. It&apos;s Google&apos;s way of rewarding advertisers who create relevant, useful experiences.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Conversion</h3>
           <p className="text-sm text-gray-600 mb-0">
             A valuable action taken by a user after clicking your ad — a purchase, a form submission, a phone call. This is the metric that actually matters. Clicks without conversions are just expense.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card md:col-span-2">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 5</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">ROAS — Return on Ad Spend</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -224,31 +224,31 @@ export default function KakoPocetiGoogleAdsEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Campaigns</h3>
           <p className="text-sm text-gray-600 mb-0">
             Text ads that appear in Google search results. Best for capturing high-intent traffic — people actively searching for your product or service. Ideal starting point for most businesses.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping Campaigns</h3>
           <p className="text-sm text-gray-600 mb-0">
             Visual product listings showing image, price, and store name. Works from a product feed. Essential for eCommerce — natural fit for physical products where comparison is key.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display Campaigns</h3>
           <p className="text-sm text-gray-600 mb-0">
             Banner and image ads across the Google Display Network (2M+ websites). Lower intent than Search, but powerful for brand awareness and remarketing. Not recommended as a first campaign.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">YouTube Campaigns</h3>
           <p className="text-sm text-gray-600 mb-0">
             Video ads on YouTube and partner sites. Great for brand building and reaching audiences before they have an active need. Requires video production investment.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card md:col-span-2">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max</h3>
           <p className="text-sm text-gray-600 mb-0">
             Google&apos;s AI-powered campaign type that runs across all channels automatically. Requires significant conversion data to work well. Best suited for experienced advertisers who already have solid tracking in place.
@@ -270,7 +270,7 @@ export default function KakoPocetiGoogleAdsEN() {
         Here is the exact process I follow when launching a new account from scratch. Skip any of these steps and you will pay for it later.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
             1
@@ -282,7 +282,7 @@ export default function KakoPocetiGoogleAdsEN() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
             2
@@ -304,7 +304,7 @@ export default function KakoPocetiGoogleAdsEN() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
             3
@@ -326,7 +326,7 @@ export default function KakoPocetiGoogleAdsEN() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
             4
@@ -348,7 +348,7 @@ export default function KakoPocetiGoogleAdsEN() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
             5
@@ -360,7 +360,7 @@ export default function KakoPocetiGoogleAdsEN() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
             6
@@ -682,7 +682,7 @@ export default function KakoPocetiGoogleAdsEN() {
         Every business that gets Google Ads right treats it as a system, not a lottery. The results are measurable. The levers are clear. And the compounding effect of consistent optimization is real.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Ready to launch your first Google Ads campaign?
         </p>

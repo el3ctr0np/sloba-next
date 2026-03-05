@@ -586,7 +586,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             {problems.map((problem) => (
               <div
                 key={problem.title}
-                className="bg-white border-2 border-gray-900 rounded-lg p-6 shadow-card transition-all duration-300 hover:shadow-card-hover hover:translate-x-[5px] hover:translate-y-[5px]"
+                className="bg-white border border-gray-200 rounded-lg p-6 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5"
               >
                 <div className="mb-3">{problem.icon}</div>
                 <h3 className="text-lg font-heading font-semibold mb-2">
@@ -631,7 +631,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             {solutions.map((solution) => (
               <div
                 key={solution.title}
-                className="bg-white border-2 border-gray-900 rounded-lg p-6 shadow-card"
+                className="bg-white border border-gray-200 rounded-lg p-6 shadow-card"
               >
                 <div className="mb-3">{solution.icon}</div>
                 <h3 className="text-lg font-heading font-semibold mb-2">
@@ -887,7 +887,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             {processSteps.map((step) => (
               <div
                 key={step.step}
-                className="flex items-start gap-5 bg-white border-2 border-gray-900 rounded-xl p-6 shadow-card"
+                className="flex items-start gap-5 bg-white border border-gray-200 rounded-xl p-6 shadow-card"
               >
                 <span className="flex-shrink-0 w-14 h-14 rounded-full bg-yellow-400 text-gray-900 flex items-center justify-center text-xl font-heading font-bold">
                   {step.step}
@@ -934,7 +934,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             </h2>
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full bg-white border-2 border-gray-900 rounded-xl overflow-hidden text-sm">
+            <table className="w-full bg-white border border-gray-200 rounded-xl overflow-hidden text-sm">
               <thead>
                 <tr className="bg-slate-900 text-white">
                   {comparisonData.headers.map((header, i) => (
@@ -997,7 +997,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                     ? "bg-white border-2 border-yellow-400 shadow-card"
                     : tier.name.includes("Premium")
                       ? "bg-slate-900 text-white border-2 border-slate-700 shadow-card"
-                      : "bg-white border-2 border-gray-900 shadow-card"
+                      : "bg-white border border-gray-200 shadow-card"
                 }`}
               >
                 {tier.popular && (
@@ -1107,7 +1107,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             {guarantees.map((guarantee) => (
               <div
                 key={guarantee.title}
-                className="bg-white border-2 border-gray-900 rounded-xl p-6 shadow-card text-center"
+                className="bg-white border border-gray-200 rounded-xl p-6 shadow-card text-center"
               >
                 <div className="mb-4">{guarantee.icon}</div>
                 <h3 className="font-heading font-bold text-lg mb-2">

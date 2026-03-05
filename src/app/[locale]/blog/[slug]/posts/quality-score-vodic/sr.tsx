@@ -4,7 +4,7 @@ export default function QualityScoreVodicPost() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Quality Score je Google-ova ocena relevantnosti na skali 1-10. Direktno utiče na poziciju i cenu klika. Poboljšanje QS sa 5 na 7 smanjuje CPC za 28%. Tri komponente: Expected CTR, Ad Relevance i Landing Page Experience.
@@ -33,7 +33,7 @@ export default function QualityScoreVodicPost() {
 
       {/* ── Šta je Quality Score ── */}
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#sta-je-quality-score-i-zasto-je-bitan" className="text-sm text-gray-700 hover:text-primary underline">Šta je Quality Score i zašto je bitan</a></li>
@@ -173,17 +173,17 @@ export default function QualityScoreVodicPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Expected CTR</h3>
           <p className="text-sm text-gray-600 mb-0">Verovatnoća da će neko kliknuti na vaš oglas. Zavisi od headline-ova, CTA-a, extensions i istorijskih performansi.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~20% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Ad Relevance</h3>
           <p className="text-sm text-gray-600 mb-0">Koliko je vaš oglas relevantan za ključnu reč. Zavisi od podudaranja ključne reči sa tekstom oglasa.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Landing Page Experience</h3>
           <p className="text-sm text-gray-600 mb-0">Koliko je LP koristan i relevantan. Zavisi od sadržaja, brzine, mobile optimizacije i trust signala.</p>
@@ -242,7 +242,7 @@ export default function QualityScoreVodicPost() {
       <h2 id="kako-poboljsati-expected-ctr">Kako poboljšati Expected CTR</h2>
       <p>Expected CTR čini ~40% Quality Score-a i najdirektnije se može poboljšati optimizacijom oglasa.</p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ključna reč u headline-u</h3>
@@ -250,7 +250,7 @@ export default function QualityScoreVodicPost() {
         <p className="text-sm text-gray-600 mb-3">Umesto generičnog {`"Kvalitetni proizvodi | Naručite danas"`} koristite {`"CRM Softver Za Mala Preduzeća | Besplatan Trial"`}.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Koristite brojke i specifičnost</h3>
@@ -258,7 +258,7 @@ export default function QualityScoreVodicPost() {
         <p className="text-sm text-gray-600 mb-0">{`"Preko 500 Proizvoda"`}, {`"Uštedite Do 40%"`}, {`"30 Dana Garancije"`}, {`"24/7 Podrška"`} — konkretne brojke privlače pažnju i povećavaju CTR.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Jak CTA i USP u headline</h3>
@@ -266,7 +266,7 @@ export default function QualityScoreVodicPost() {
         <p className="text-sm text-gray-600 mb-0">Jasna akcija: {`"Naručite Danas"`}, {`"Besplatna Procena"`}. Jedinstven USP: {`"Jedini Sa Garancijom Povrata"`}, {`"Dostava Istog Dana"`}.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dodajte sve extensions</h3>
@@ -284,7 +284,7 @@ export default function QualityScoreVodicPost() {
       {/* ── Poboljšanje Ad Relevance ── */}
       <h2 id="kako-poboljsati-ad-relevance">Kako poboljšati Ad Relevance</h2>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">4 taktike za bolju relevantnost</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -312,22 +312,22 @@ export default function QualityScoreVodicPost() {
       <h2 id="kako-poboljsati-landing-page-experience">Kako poboljšati Landing Page Experience</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prioritet 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Relevantnost sadržaja</h3>
           <p className="text-sm text-gray-600 mb-0">LP mora odgovarati ključnoj reči i oglasu. Dedicirane LP za svaku temu — ne šaljite sve na homepage.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prioritet 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Brzina stranice</h3>
           <p className="text-sm text-gray-600 mb-0">Cilj: &lt; 3 sekunde load time. Kompresija slika (WebP), minifikacija CSS/JS, CDN, caching, lazy loading.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prioritet 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mobile optimizacija</h3>
           <p className="text-sm text-gray-600 mb-0">60%+ saobraćaja je sa mobilnih. Responsive dizajn, čitljivo bez zumiranja, klikabilni buttoni.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prioritet 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Trust signali</h3>
           <p className="text-sm text-gray-600 mb-0">Reviews, testimonials, trust badges, SSL, garancije, kontakt informacije. Korisnik mora imati poverenje.</p>
@@ -346,7 +346,7 @@ export default function QualityScoreVodicPost() {
       {/* ── 30-dnevni plan ── */}
       <h2 id="30-dnevni-plan-za-poboljsanje-quality-score-a">30-dnevni plan za poboljšanje Quality Score-a</h2>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -528,7 +528,7 @@ export default function QualityScoreVodicPost() {
         Quality Score je najmoćniji alat za kontrolu troškova u Google Ads-u. Poboljšanje sa QS 5 na 7 smanjuje CPC za 28%, što na godišnjem nivou može značiti hiljade evra uštede. Fokusirajte se na tri komponente — Expected CTR, Ad Relevance i Landing Page Experience — koristeći dijagnostičku tabelu da identifikujete gde je problem.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Plaćate li previše po kliku?
         </p>

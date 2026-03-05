@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 export default function GoogleOglasavanjeZaFirmePost() {
   return (
     <>
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google oglašavanje je najmoćniji kanal za firme koje žele da dosegnu kupce sa aktivnom namerom kupovine. Za razliku od društvenih mreža gde &quot;upadate&quot; ljude dok skroluju, Google Ads vas dovodi do korisnika koji aktivno traže vaš proizvod ili uslugu.
@@ -28,7 +28,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         </div>
       </div>
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#zasto-je-google-oglasavanje-efikasno-za-firme" className="text-sm text-gray-700 hover:text-primary underline">Zašto je Google oglašavanje efikasno za firme</a></li>
@@ -136,7 +136,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <p>Google Ads nije jedan sistem — to je ekosistem različitih tipova kampanja. Ono što radi za eCommerce neće raditi za B2B SaaS. Evo pregleda svih tipova:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Najviši intent</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Kampanje</h3>
           <p className="text-sm text-gray-600 mb-3">Tekstualni oglasi koji se prikazuju na vrhu Google pretrage kada ljudi traže specifične ključne reči.</p>
@@ -150,7 +150,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <p className="text-sm text-gray-600 mb-0">B2B usluge, lokalni biznisi, SaaS, eCommerce (uz Shopping)</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Vizuelno poređenje</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping Kampanje</h3>
           <p className="text-sm text-gray-600 mb-3">Vizuelni oglasi sa slikom proizvoda, cenom i nazivom prodavnice. Prikazuju se na vrhu Google pretrage i u Shopping tabu.</p>
@@ -164,7 +164,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <p className="text-sm text-gray-600 mb-0">Google Merchant Center nalog, product feed, povezan sa Google Ads-om</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automatizacija</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max (PMax)</h3>
           <p className="text-sm text-gray-600 mb-3">Google-ova &quot;sve u jednom&quot; kampanja koja automatski prikazuje oglase na svim mrežama (Search, Shopping, Display, YouTube, Discover).</p>
@@ -178,7 +178,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <p className="text-sm text-gray-600 mb-0">PMax je &quot;crna kutija&quot; — imate manje kontrole i uvida. Preporučujem da počnete sa Search/Shopping.</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Brand awareness</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display Kampanje</h3>
           <p className="text-sm text-gray-600 mb-3">Banner oglasi na web sajtovima, aplikacijama, i YouTube-u. Niži intent, ali širi doseg.</p>
@@ -192,7 +192,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <p className="text-sm text-gray-600 mb-0">Slabije za direktan response, ali odlično za remarketing.</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Video content</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Video Kampanje (YouTube)</h3>
           <p className="text-sm text-gray-600 mb-3">Video oglasi na YouTube-u (pre-roll, mid-roll, in-feed). Zahtevaju video kreativ.</p>
@@ -206,7 +206,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <p className="text-sm text-gray-600 mb-0">B2C brendovi, SaaS sa demo video-ima, remarketing</p>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Early funnel</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Demand Gen</h3>
           <p className="text-sm text-gray-600 mb-3">Vizuelni oglasi za Discover, Gmail, i YouTube. Zamena za Discovery kampanje.</p>
@@ -232,7 +232,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <p>Ako prodajete fizičke proizvode online, Google Ads je verovatno najvažniji kanal. Shopping kampanje donose kvalitetan saobraćaj jer korisnik vidi sliku i cenu pre klika.</p>
 
       <h3>Osnovna struktura kampanja za eCommerce</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -329,7 +329,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <p>Retko ko kupi prvi put kada poseti sajt. Remarketing je vaš način da vratite te ljude.</p>
       <p>Preporučujem da kreirate ove segmente:</p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -361,7 +361,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <p>B2B ima specifične izazove: duži sales cycle, više decision maker-a, manji volume pretrage. Ali Google Ads i dalje funkcioniše odlično — samo zahteva drugačiji pristup.</p>
 
       <h3>Osnovna struktura kampanja za B2B</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -445,7 +445,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <li>Moral pada kada &quot;nema rezultata&quot;</li>
       </ul>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Rešenje: Fokus na kvalitet</h3>
@@ -461,7 +461,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <h3>Remarketing strategija za B2B</h3>
       <p>B2B decision proces je duži i uključuje više stakeholder-a. Remarketing mora da edukuje i gradi poverenje.</p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Top of Funnel</h3>
@@ -470,7 +470,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <p className="text-sm mb-0"><strong>Cilj:</strong> Ponudite lead magnet (white paper, checklist, webinar) da dobijete kontakt.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Middle of Funnel</h3>
@@ -479,7 +479,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <p className="text-sm mb-0"><strong>Cilj:</strong> Ponudite case study, customer testimonials, webinar — dokaz da rešenje funkcioniše.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bottom of Funnel</h3>
@@ -493,7 +493,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <h2 id="kako-postaviti-temelje-za-uspesne-kampanje">Kako postaviti temelje za uspešne kampanje</h2>
       <p>Pre nego što pokrenete prvu kampanju, ove 4 stvari moraju biti na mestu. Preskakanje ovih koraka je najčešći razlog neuspeha.</p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Conversion Tracking</h3>
@@ -519,7 +519,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <p className="text-blue-800 text-sm mb-0">Za step-by-step vodič kako postaviti tracking, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Conversion Tracking vodič</Link>.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing Pages</h3>
@@ -537,7 +537,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <p className="text-sm mb-0"><strong>Najčešća greška:</strong> Slanje saobraćaja na homepage koja ima 10 linkova i nije fokusirana na konverziju.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword Research</h3>
@@ -558,7 +558,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor Analysis</h3>
@@ -858,7 +858,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <hr />
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Trebate pomoć sa Google Ads kampanjama?</p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">Specijalizujem se za Google Ads upravljanje i optimizaciju za eCommerce i B2B firme. Zakazite besplatnu konsultaciju za analizu vaših trenutnih kampanja ili planiranje novih.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Zakažite besplatnu konsultaciju</Link>

@@ -4,7 +4,7 @@ export default function NegativeKeywordsVodicPost() {
   return (
     <>
       {/* ── TL;DR Hero ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Negativne ključne reči sprečavaju prikazivanje oglasa za irelevantne pretrage. Bez njih, 20-40% budžeta odlazi na klikove koji nikada neće konvertovati. U ovom vodiču: kompletne starter liste, strategija po industrijama i sistem organizacije.
@@ -47,12 +47,12 @@ export default function NegativeKeywordsVodicPost() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Regularne ključne reči</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Triggeruju oglas</h3>
           <p className="text-sm text-gray-600 mb-0">Definišu za koje pretrage se vaš oglas prikazuje. Privlače saobraćaj ka vašem sajtu.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Negativne ključne reči</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Blokiraju oglas</h3>
           <p className="text-sm text-gray-600 mb-0">Sprečavaju prikazivanje za irelevantne pretrage. Štite budžet od wasted spend-a.</p>
@@ -60,7 +60,7 @@ export default function NegativeKeywordsVodicPost() {
       </div>
 
       <h3>Primer iz prakse</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Klijent: Online prodavnica premium nameštaja</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -149,32 +149,32 @@ export default function NegativeKeywordsVodicPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Besplatno / Free</h3>
           <p className="text-sm text-gray-600 mb-0">besplatno, besplatan, besplatna, free, freeware, opensource, open source, dzabe, gratis</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Posao / Zaposlenje</h3>
           <p className="text-sm text-gray-600 mb-0">posao, zaposlenje, karijera, plata, zarada, CV, resume, konkurs, oglas za posao, job, hiring, vacancy, praksa, pripravnik</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Informacione / Edukacione</h3>
           <p className="text-sm text-gray-600 mb-0">šta je, kako, zašto, what is, how to, definicija, pojam, wikipedia, wiki, tutorial, kurs, obuka, edukacija, webinar</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">DIY / Uradi sam</h3>
           <p className="text-sm text-gray-600 mb-0">DIY, uradi sam, napravi sam, homemade, handmade, tutorial, how to make, kako napraviti</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Jeftino / Budget</h3>
           <p className="text-sm text-gray-600 mb-0">jeftino, najjeftinije, povoljno, budget, cheap, discount, popust, akcija, rasprodaja, sniženje, second hand, polovno, rabljeno</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Negativne asocijacije</h3>
           <p className="text-sm text-gray-600 mb-0">problem, ne radi, complaint, žalba, prevara, scam, fake, lažno, opasno, rizik, bug, greška</p>
@@ -189,7 +189,7 @@ export default function NegativeKeywordsVodicPost() {
         Pored univerzalne liste, svaka industrija ima specifične termine koje bi trebalo blokirati. Evo lista za najčešće industrije sa kojima radim.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce — Moda i odeća</h3>
@@ -197,7 +197,7 @@ export default function NegativeKeywordsVodicPost() {
         <p className="text-sm text-gray-600 mb-0">jeftino, polovno, second hand, outlet, imitacija, replika, fake, kako sašiti, šivenje, pattern, kroj, DIY, trendovi, fashion week, modni dizajner posao, vintage, cosplay, kostim</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce — Elektronika</h3>
@@ -205,7 +205,7 @@ export default function NegativeKeywordsVodicPost() {
         <p className="text-sm text-gray-600 mb-0">polovno, refurbished, korišćeno, broken, pokvaren, popravka, servis, delovi, kako popraviti, teardown, review, unboxing, drajveri, firmware, manual, uputstvo, specifikacije</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">B2B / SaaS</h3>
@@ -213,7 +213,7 @@ export default function NegativeKeywordsVodicPost() {
         <p className="text-sm text-gray-600 mb-0">besplatno, free, open source, crack, pirate, nulled, developer posao, programer plata, it karijera, kurs, tutorial, za početnike, student, personal use</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Lokalne usluge</h3>
@@ -221,7 +221,7 @@ export default function NegativeKeywordsVodicPost() {
         <p className="text-sm text-gray-600 mb-0">[gradovi van zone], online, remote, na daljinu, besplatno, jeftino, posao, zapošljavanje, plata, uradi sam, kako sam, DIY, žalba, tužba, advokat, inspekcija</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Turizam / Hoteli</h3>
@@ -229,7 +229,7 @@ export default function NegativeKeywordsVodicPost() {
         <p className="text-sm text-gray-600 mb-0">besplatno, free, budget, hostel (za hotele), camping, posao u hotelu, recepcioner, konobar posao, turistički vodič posao, slike, fotografije, vlog, blog, iskustva, forum</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Nekretnine</h3>
@@ -237,7 +237,7 @@ export default function NegativeKeywordsVodicPost() {
         <p className="text-sm text-gray-600 mb-0">iznajmljivanje (ako prodajete), prodaja (ako iznajmljujete), poslovni prostor (za residential), agent za nekretnine posao, broker, licenca, cene nekretnina, prognoza, statistika, foreclosure, ovrha</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Fitness / Zdravlje</h3>
@@ -250,7 +250,7 @@ export default function NegativeKeywordsVodicPost() {
       {/* ── Kako pronaći negativne reči ── */}
       <h2>Kako pronaći negativne ključne reči</h2>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">5 metoda za pronalaženje negatives</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -313,7 +313,7 @@ export default function NegativeKeywordsVodicPost() {
         </table>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <h3 className="mt-0 mb-4 font-heading font-bold">Kako kreirati Negative Keyword List</h3>
         <ol className="mb-0 text-sm">
           <li>Tools &amp; Settings → Shared library → Negative keyword lists</li>
@@ -337,7 +337,7 @@ export default function NegativeKeywordsVodicPost() {
       <h2>Negativne ključne reči — audit checklist</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Nedeljno</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Terms Review</h3>
           <ul className="text-sm mb-0">
@@ -346,7 +346,7 @@ export default function NegativeKeywordsVodicPost() {
             <li>Provera da negatives ne blokiraju dobre pretrage</li>
           </ul>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Mesečno</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Deep Dive</h3>
           <ul className="text-sm mb-0">
@@ -355,7 +355,7 @@ export default function NegativeKeywordsVodicPost() {
             <li>Industry lista ažurirana</li>
           </ul>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kvartalno</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Kompletna revizija</h3>
           <ul className="text-sm mb-0">
@@ -364,7 +364,7 @@ export default function NegativeKeywordsVodicPost() {
             <li>Liste reorganizacija</li>
           </ul>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Pro tip</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Kompletna provera naloga</h3>
           <p className="text-sm text-gray-600 mb-0">Pogledajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-semibold">Google Ads audit checklist</Link> za kompletnu reviziju naloga.</p>
@@ -493,7 +493,7 @@ export default function NegativeKeywordsVodicPost() {
         Negativne ključne reči su jedna od najmoćnijih optimizacionih poluga u Google Ads-u. Pravilna strategija može smanjiti wasted spend za 30%+ i poboljšati ROAS za 20-50%. Počnite sa univerzalnom listom, dodajte industrijsku listu, i pregledajte Search Terms nedeljno. Rezultati su vidljivi odmah.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Bacate li novac na irelevantne klikove?
         </p>

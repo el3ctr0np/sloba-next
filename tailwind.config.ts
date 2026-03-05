@@ -28,8 +28,9 @@ const config: Config = {
         heading: ["var(--font-poppins)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        card: "5px 5px 0 0 #202124",
-        "card-hover": "0 0 0 0 #202124",
+        card: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        "card-hover": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        "card-lg": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
       },
     },
   },

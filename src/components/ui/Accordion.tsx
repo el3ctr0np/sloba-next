@@ -25,7 +25,7 @@ export function Accordion({ items }: AccordionProps) {
         return (
           <div
             key={item.title}
-            className="border-2 border-gray-900 rounded-lg bg-white"
+            className="border border-gray-200 rounded-xl bg-white"
           >
             <button
               type="button"

@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 export default function GoogleAdsAuditGuideEN() {
   return (
     <>
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">A Google Ads audit is a systematic account review that uncovers wasted spend, missed opportunities, and technical errors. A professional audit covers 80+ checkpoints in 10 categories and on average identifies 15-25% of budget being spent inefficiently.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -26,7 +26,7 @@ export default function GoogleAdsAuditGuideEN() {
         </div>
       </div>
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#why-google-ads-audit-is-essential" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads audit is essential</a></li>
@@ -78,52 +78,52 @@ export default function GoogleAdsAuditGuideEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Foundation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">1. Account structure</h3>
           <p className="text-sm text-gray-600 mb-0">Logical campaign organization, naming conventions, hierarchy, labels</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Critical</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">2. Conversion Tracking</h3>
           <p className="text-sm text-gray-600 mb-0">Whether conversion tracking works accurately and data is valid</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Setup</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">3. Campaign settings</h3>
           <p className="text-sm text-gray-600 mb-0">Location targeting, networks, ad schedule, device bid adjustments</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Search</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">4. Keywords and search terms</h3>
           <p className="text-sm text-gray-600 mb-0">Search Terms Report, negatives, Quality Score, match types, duplicates</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Creative</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">5. Ads and extensions</h3>
           <p className="text-sm text-gray-600 mb-0">RSA quality, Ad Strength, sitelinks, callouts, structured snippets</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Targeting</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">6. Audiences and remarketing</h3>
           <p className="text-sm text-gray-600 mb-0">Remarketing lists, audience layering, converter exclusions</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">7. Bidding strategy</h3>
           <p className="text-sm text-gray-600 mb-0">Smart Bidding setup, conversion volume, target realism, learning periods</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Spend</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">8. Budget and allocation</h3>
           <p className="text-sm text-gray-600 mb-0">Impression Share Lost (Budget), campaign budget distribution</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Analysis</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">9. Reporting and analytics</h3>
           <p className="text-sm text-gray-600 mb-0">GA4 integration, attribution models, segment analysis, data discrepancies</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advanced</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">10. Scripts and automation</h3>
           <p className="text-sm text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — including <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> for offline changes</p>
@@ -141,7 +141,7 @@ export default function GoogleAdsAuditGuideEN() {
         Poor structure is like poor building architecture — you can paint the facade, but fundamental problems remain. I recommend structure be logical, scalable, and transparent — anyone should understand the organization in 5 minutes of review.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Campaigns organized logically</h3>
@@ -155,7 +155,7 @@ export default function GoogleAdsAuditGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Groups thematically focused</h3>
@@ -190,7 +190,7 @@ export default function GoogleAdsAuditGuideEN() {
         Conversion tracking is the most critical part of any Google Ads audit. If tracking doesn&apos;t work, or records wrong data, everything else is useless — you&apos;re optimizing based on bad information and making wrong decisions.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -238,7 +238,7 @@ export default function GoogleAdsAuditGuideEN() {
         Default settings in Google Ads are bad — designed for Google to earn more, not for you to get better results. In practice I see that over 70% of new accounts have default settings that waste budget in wrong places.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Location targeting</h3>
@@ -251,7 +251,7 @@ export default function GoogleAdsAuditGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Networks</h3>
@@ -264,7 +264,7 @@ export default function GoogleAdsAuditGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad schedule (days/hours)</h3>
@@ -277,7 +277,7 @@ export default function GoogleAdsAuditGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Devices (Desktop/Mobile/Tablet)</h3>
@@ -296,7 +296,7 @@ export default function GoogleAdsAuditGuideEN() {
         Keywords aren&apos;t what you enter in account — they&apos;re <strong>search terms</strong> people actually type. Every Google Ads audit must analyze Search Terms Report in detail and identify what actually triggers your ads and where budget goes.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -348,7 +348,7 @@ export default function GoogleAdsAuditGuideEN() {
         Ads are what potential customers actually see, but in practice I see that over 50% of accounts have &quot;Poor&quot; Ad Strength and minimal number of extensions. That&apos;s a missed opportunity — better ads = higher CTR = lower CPC + more conversions.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RSA quality</h3>
@@ -363,7 +363,7 @@ export default function GoogleAdsAuditGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Extensions (sitelinks, callouts...)</h3>
@@ -406,7 +406,7 @@ export default function GoogleAdsAuditGuideEN() {
         Remarketing is the easiest win in Google Ads — people who already visited site convert 3-5x better than cold traffic. If Google Ads audit reveals account has no remarketing lists or converter exclusions, that&apos;s huge missed opportunity.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -451,7 +451,7 @@ export default function GoogleAdsAuditGuideEN() {
         Smart Bidding is powerful tool, but only if you have enough conversions for algorithm to validly learn. In practice I see that over 40% of accounts use Smart Bidding with &lt;10 conversions monthly — that can&apos;t work.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Strategy matches goal and phase</h3>
@@ -466,7 +466,7 @@ export default function GoogleAdsAuditGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Enough conversions for Smart Bidding</h3>
@@ -474,7 +474,7 @@ export default function GoogleAdsAuditGuideEN() {
         <p className="text-sm text-gray-600 mb-3">Google recommends 15+ conversions in last 30 days for Maximize Conversions, 30+ for Target CPA, 50+ for Target ROAS. Below that, algorithm doesn&apos;t have enough signals for valid optimization.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target CPA/ROAS realistic and achievable</h3>
@@ -503,7 +503,7 @@ export default function GoogleAdsAuditGuideEN() {
         Budget allocation is one of most common mistakes in Google Ads audits — best campaigns are &quot;Limited by budget&quot;, while bad campaigns spend full budget. That&apos;s like giving best salesperson least resources.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -543,7 +543,7 @@ export default function GoogleAdsAuditGuideEN() {
         If you don&apos;t have 2-4 hours for full Google Ads audit, here&apos;s quick check covering 80% of most critical things. I recommend doing this quick audit monthly between quarterly deep audits.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -797,7 +797,7 @@ export default function GoogleAdsAuditGuideEN() {
         For continuing optimization after audit, read: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }}>Google Ads optimization guide</Link> and <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}>Most common Google Ads mistakes</Link>.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Need professional Google Ads audit?</p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">I run audits for accounts of all sizes — from startups to enterprise clients. You get 80+ checkpoint audit report + prioritized action plan + implementation recommendations + follow-up consultation.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Schedule free consultation</Link>

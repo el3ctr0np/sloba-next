@@ -401,7 +401,7 @@ const getChapters = (locale: string): Chapter[] => {
 
 function ChapterNav({ chapters, locale }: { chapters: Chapter[]; locale: string }) {
   return (
-    <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-6 md:p-8">
+    <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 md:p-8">
       <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-5 font-semibold">
         {locale === "en" ? "Guide contents" : "Sadržaj vodiča"}
       </p>

@@ -4,7 +4,7 @@ export default function RemarketingGuideEN() {
   return (
     <>
       {/* ── TL;DR box ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Remarketing campaigns have 2-3x higher CTR and 50-70% lower CPA than cold traffic. The key to success is segmentation — do not treat all visitors the same.
@@ -31,7 +31,7 @@ export default function RemarketingGuideEN() {
 
       {/* ── Section 1: Hook intro ── */}
       {/* ── Table of Contents ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#why-96-of-visitors-leave-without-buying" className="text-sm text-gray-700 hover:text-primary underline">Why 96% of Visitors Leave Without Buying</a></li>
@@ -83,7 +83,7 @@ export default function RemarketingGuideEN() {
       </p>
 
       <h3>How remarketing works step by step</h3>
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -175,28 +175,28 @@ export default function RemarketingGuideEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display remarketing</h3>
           <p className="text-sm text-gray-600 mb-0">
             Banners on Google Display Network — over 2 million websites. Ideal as first remarketing campaign for every account. Reminds visitors you exist.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">RLSA (remarketing on search)</h3>
           <p className="text-sm text-gray-600 mb-0">
             Adjust Search campaigns for people who already visited your site — higher bids, broader keywords. Delivers best ROAS of all types.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Dynamic remarketing</h3>
           <p className="text-sm text-gray-600 mb-0">
             Automatically shows exact products visitor viewed. Mandatory for eCommerce. Requires product feed in Google Merchant Center.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">YouTube remarketing</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -204,7 +204,7 @@ export default function RemarketingGuideEN() {
           </p>
         </div>
       </div>
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card my-4">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card my-4">
         <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #5</p>
         <h3 className="text-base font-heading font-bold mt-0 mb-2">Customer Match</h3>
         <p className="text-sm text-gray-600 mb-0">
@@ -220,7 +220,7 @@ export default function RemarketingGuideEN() {
         Setting up a remarketing campaign requires three steps: tag installation, connecting to Google Analytics, and verification. I recommend using Google Tag Manager (GTM) — gives you flexibility without needing to touch site code every time.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <h3 className="mt-0 mb-4 font-heading font-bold">Step 1: Installing Google Ads remarketing tag</h3>
         <p className="font-semibold mb-2">Via Google Tag Manager (recommended):</p>
         <ol className="mb-4">
@@ -238,7 +238,7 @@ export default function RemarketingGuideEN() {
         </ol>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <h3 className="mt-0 mb-4 font-heading font-bold">Step 2: Connect GA4 to Google Ads</h3>
         <ol className="mb-0">
           <li>In Google Ads open Tools → Linked Accounts</li>
@@ -248,7 +248,7 @@ export default function RemarketingGuideEN() {
         </ol>
       </div>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <h3 className="mt-0 mb-4 font-heading font-bold">Step 3: Verification and creating lists</h3>
         <ol>
           <li>Go to Audience Manager → Audience Sources</li>
@@ -444,7 +444,7 @@ export default function RemarketingGuideEN() {
       <p>
         This is what campaign structure looks like when all three approaches are combined:
       </p>
-      <pre className="border-2 border-gray-900 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed">
         <code>{`Campaign: Remarketing
 │
 ├── Ad Group: Abandoned carts (1-7 days)
@@ -476,7 +476,7 @@ export default function RemarketingGuideEN() {
         These are strategies I use on client accounts that consistently deliver best results. Each is tested on real campaigns.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Abandoned cart recovery</h3>
@@ -492,7 +492,7 @@ export default function RemarketingGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA bid boosting on search</h3>
@@ -507,7 +507,7 @@ export default function RemarketingGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dynamic remarketing for online stores</h3>
@@ -522,7 +522,7 @@ export default function RemarketingGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Sequential messaging</h3>
@@ -546,7 +546,7 @@ export default function RemarketingGuideEN() {
         </div>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Customer Match for bringing back former customers</h3>
@@ -764,7 +764,7 @@ export default function RemarketingGuideEN() {
         Google Ads remarketing is not complicated, but requires thoughtful approach. The difference between &quot;we have remarketing&quot; and &quot;we have remarketing that delivers results&quot; lies in three things: proper segmentation, tailored messages, and regular optimization.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Key takeaways from this guide:</p>
         <ul className="space-y-2 text-sm">
           <li>Remarketing campaigns have <strong>2-3x higher CTR</strong> and <strong>50-70% lower CPA</strong> than cold traffic</li>
@@ -776,7 +776,7 @@ export default function RemarketingGuideEN() {
       </div>
 
       {/* ── CTA box ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Want someone to review your remarketing campaigns?
         </p>

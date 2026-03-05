@@ -4,7 +4,7 @@ export default function GoogleAdsOptimizationEN() {
   return (
     <>
       {/* ── TL;DR box ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           30 Google Ads optimization tactics proven across 20+ accounts managing $2M+ annual spend. Average 40% performance improvement in first 90 days. Focus on structure, keywords, ads, bidding, and Quality Score.
@@ -79,7 +79,7 @@ export default function GoogleAdsOptimizationEN() {
         maximum results.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Separate Brand and Non-Brand campaigns</h3>
@@ -95,7 +95,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Single Keyword Ad Groups (SKAGs) or thematic groups?</h3>
@@ -111,7 +111,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Consistent naming convention</h3>
@@ -127,7 +127,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Campaigns by customer journey stage</h3>
@@ -143,7 +143,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Daily budget vs shared budget</h3>
@@ -168,7 +168,7 @@ export default function GoogleAdsOptimizationEN() {
         keyword management: adding new ones, pausing unprofitable, refining match types, and adding negative keywords.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search Terms Report mining (weekly)</h3>
@@ -186,7 +186,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Negative keywords as foundation</h3>
@@ -202,7 +202,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">8</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Match types strategy: 2026 reality</h3>
@@ -226,7 +226,7 @@ export default function GoogleAdsOptimizationEN() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">9</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword consolidation (merge duplicates)</h3>
@@ -242,7 +242,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">10</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Long-tail strategy for niche industries</h3>
@@ -258,7 +258,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">11</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Seasonal keywords and scheduled campaigns</h3>
@@ -274,7 +274,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">12</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor keywords: yes or no?</h3>
@@ -301,7 +301,7 @@ export default function GoogleAdsOptimizationEN() {
         Google combines. Strategy is different.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">13</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RSA best practices: diversity is key</h3>
@@ -318,7 +318,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">14</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Pin strategy: when to pin headlines in RSAs</h3>
@@ -334,7 +334,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">15</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Extensions: use ALL relevant ones</h3>
@@ -352,7 +352,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">16</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page alignment (message match)</h3>
@@ -368,7 +368,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">17</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Device-specific ad copy (mobile vs desktop)</h3>
@@ -384,7 +384,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">18</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Emotional triggers in ad copy</h3>
@@ -411,7 +411,7 @@ export default function GoogleAdsOptimizationEN() {
         and optimize bidding strategies.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">19</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Manual CPC vs Smart Bidding: when what?</h3>
@@ -438,7 +438,7 @@ export default function GoogleAdsOptimizationEN() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">20</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target CPA/ROAS: how to set a realistic target</h3>
@@ -456,7 +456,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">21</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Portfolio bidding for multi-campaign management</h3>
@@ -472,7 +472,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">22</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dayparting: when are your users most active?</h3>
@@ -489,7 +489,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">23</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Device bid adjustments (mobile/tablet/desktop)</h3>
@@ -516,7 +516,7 @@ export default function GoogleAdsOptimizationEN() {
         biggest optimization opportunity.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">24</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">CTR optimization: fastest way to raise QS</h3>
@@ -532,7 +532,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">25</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad relevance signals: keyword → ad → landing page</h3>
@@ -548,7 +548,7 @@ export default function GoogleAdsOptimizationEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">26</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page experience: speed and mobile-friendly</h3>
@@ -573,7 +573,7 @@ export default function GoogleAdsOptimizationEN() {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">27</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Historical QS recovery: when to &quot;reset&quot; a keyword</h3>
@@ -601,7 +601,7 @@ export default function GoogleAdsOptimizationEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic 28</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Audience layering on Search campaigns</h3>
           <p className="text-sm text-gray-600 mb-3">
@@ -615,7 +615,7 @@ export default function GoogleAdsOptimizationEN() {
           </ul>
         </div>
 
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic 29</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Remarketing optimization</h3>
           <p className="text-sm text-gray-600 mb-3">
@@ -631,7 +631,7 @@ export default function GoogleAdsOptimizationEN() {
         </div>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">30</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Conversion Tracking audit (quarterly)</h3>
@@ -659,7 +659,7 @@ export default function GoogleAdsOptimizationEN() {
       </p>
 
       <div className="overflow-x-auto my-6">
-        <table className="w-full border-2 border-gray-900 text-sm">
+        <table className="w-full border border-gray-200 text-sm">
           <thead className="bg-gray-50">
             <tr>
               <th className="border border-gray-300 px-4 py-2 text-left font-heading font-bold">Day</th>
@@ -819,7 +819,7 @@ export default function GoogleAdsOptimizationEN() {
       <hr />
 
       {/* ── CTA box ── */}
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <h2 className="text-2xl md:text-3xl font-heading font-bold mt-0 mb-4">
           Want a professional to handle optimization?
         </h2>
@@ -854,7 +854,7 @@ export default function GoogleAdsOptimizationEN() {
 
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }}
-            className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
+            className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimization</p>
             <h3 className="text-base font-heading font-bold mt-0 mb-2 text-gray-900">
@@ -867,7 +867,7 @@ export default function GoogleAdsOptimizationEN() {
 
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
-            className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
+            className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimization</p>
             <h3 className="text-base font-heading font-bold mt-0 mb-2 text-gray-900">
@@ -880,7 +880,7 @@ export default function GoogleAdsOptimizationEN() {
 
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
-            className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
+            className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Campaigns</p>
             <h3 className="text-base font-heading font-bold mt-0 mb-2 text-gray-900">
@@ -893,7 +893,7 @@ export default function GoogleAdsOptimizationEN() {
 
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
-            className="block bg-white border-2 border-gray-900 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
+            className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Shopping</p>
             <h3 className="text-base font-heading font-bold mt-0 mb-2 text-gray-900">

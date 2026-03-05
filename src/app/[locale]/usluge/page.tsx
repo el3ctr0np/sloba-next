@@ -746,7 +746,7 @@ export default async function ServicesPage({ params }: Props) {
             {processSteps.map((step, index) => (
               <div
                 key={step.title}
-                className="flex items-start gap-4 bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card"
+                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
               >
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${

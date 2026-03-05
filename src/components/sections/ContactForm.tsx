@@ -27,24 +27,24 @@ export function ContactForm() {
         name="name"
         placeholder={t("namePlaceholder")}
         required
-        className="w-full p-3 border-2 border-gray-900 rounded-md"
+        className="w-full p-3 border border-gray-300 rounded-md"
       />
       <input
         type="email"
         name="email"
         placeholder={t("emailPlaceholder")}
         required
-        className="w-full p-3 border-2 border-gray-900 rounded-md"
+        className="w-full p-3 border border-gray-300 rounded-md"
       />
       <input
         type="url"
         name="website"
         placeholder={locale === "sr" ? "Website URL (opciono)" : "Website URL (optional)"}
-        className="w-full p-3 border-2 border-gray-900 rounded-md"
+        className="w-full p-3 border border-gray-300 rounded-md"
       />
       <select
         name="budget"
-        className="w-full p-3 border-2 border-gray-900 rounded-md text-gray-500 bg-white"
+        className="w-full p-3 border border-gray-300 rounded-md text-gray-500 bg-white"
         defaultValue=""
       >
         <option value="" disabled>
@@ -65,7 +65,7 @@ export function ContactForm() {
         placeholder={t("messagePlaceholder")}
         rows={4}
         required
-        className="w-full p-3 border-2 border-gray-900 rounded-md"
+        className="w-full p-3 border border-gray-300 rounded-md"
       />
       <Button type="submit" variant="secondary" className="w-full">
         {t("submit")}

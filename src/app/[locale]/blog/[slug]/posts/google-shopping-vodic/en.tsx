@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 export default function GoogleShoppingGuideEN() {
   return (
     <>
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Properly configured Google Shopping campaigns deliver 3-8x ROAS. 80% of success depends on product feed optimization — 10 mandatory attributes, strategic title structure, and 5 custom labels for segmentation. I recommend a priority-based structure (High/Medium/Low) and Target ROAS bidding for stable campaigns with 50+ monthly conversions.
@@ -42,7 +42,7 @@ export default function GoogleShoppingGuideEN() {
         Unlike Search campaigns where you choose keywords, Google Shopping uses your <strong>product feed</strong> to determine when to show ads. Google matches data from the feed with user searches and displays relevant products.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -68,22 +68,22 @@ export default function GoogleShoppingGuideEN() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advantage</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Visual format</h3>
           <p className="text-sm text-gray-600 mb-0">Users see product, price, and brand before clicking — direct pre-qualification of buyers.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advantage</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">High purchase intent</h3>
           <p className="text-sm text-gray-600 mb-0">People search for specific products with intent to buy, not research.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advantage</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Price visible upfront</h3>
           <p className="text-sm text-gray-600 mb-0">Transparency eliminates clicks from users for whom the product is too expensive.</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advantage</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Less competition</h3>
           <p className="text-sm text-gray-600 mb-0">Many eCommerce stores don't optimize feeds — opportunity for better positions and lower CPCs.</p>
@@ -190,7 +190,7 @@ export default function GoogleShoppingGuideEN() {
         Description helps Google understand the product and affects relevance. I recommend 500-1000 characters, focusing on key information at the beginning.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <p className="font-heading font-bold text-lg mb-4">Best practices for descriptions</p>
         <ul className="text-sm space-y-2 mb-0">
           <li>Start with the most important information (product type, purpose)</li>
@@ -272,7 +272,7 @@ export default function GoogleShoppingGuideEN() {
         Campaign structure determines how much control you have over bids and budget. I recommend a priority-based structure that gives you maximum control with minimal complexity.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-4">Priority-based structure</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -362,7 +362,7 @@ export default function GoogleShoppingGuideEN() {
         </table>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Manual CPC</h3>
@@ -376,7 +376,7 @@ export default function GoogleShoppingGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target ROAS</h3>
@@ -402,7 +402,7 @@ export default function GoogleShoppingGuideEN() {
         These are tactics that consistently deliver results in Shopping campaigns. In my experience, most eCommerce businesses can increase ROAS by 20-50% implementing these optimizations.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Feed optimization</h3>
@@ -417,7 +417,7 @@ export default function GoogleShoppingGuideEN() {
         <p className="text-sm text-gray-500 mb-0">Expected result: 10-30% improvement in CTR and Conversion Rate.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Negative keywords</h3>
@@ -432,7 +432,7 @@ export default function GoogleShoppingGuideEN() {
         <p className="text-sm text-gray-500 mb-0">I recommend weekly Search Terms report review and aggressive addition of negatives. This is the fastest way to improve CTR and reduce CPC.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bid adjustments</h3>
@@ -445,7 +445,7 @@ export default function GoogleShoppingGuideEN() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Remarketing Lists for Shopping Ads (RLSA)</h3>
@@ -459,7 +459,7 @@ export default function GoogleShoppingGuideEN() {
         <p className="text-sm text-gray-500 mb-0">These users already know your brand — worth paying more per click as conversion rate is significantly higher.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Exclude poor performers</h3>
@@ -473,7 +473,7 @@ export default function GoogleShoppingGuideEN() {
         <p className="text-sm text-gray-500 mb-0">Use custom labels for easier segmentation and exclusion. This frees budget for top performers.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Price competitiveness</h3>
@@ -596,7 +596,7 @@ export default function GoogleShoppingGuideEN() {
         Before launching Shopping campaigns, you need to properly set up Google Merchant Center. This is the checklist I use for all new clients.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-4">Setup checklist</p>
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -710,7 +710,7 @@ export default function GoogleShoppingGuideEN() {
 
       <hr />
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Need help with Google Shopping campaigns?</p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
           I create and optimize Shopping campaigns for eCommerce businesses. Focus on feed optimization, campaign structure, and ROAS improvement.

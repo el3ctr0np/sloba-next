@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 export default function ConversionTrackingVodicPost() {
   return (
     <>
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Bez pouzdanog conversion tracking-a, Google Ads kampanje rade naslepo. Algoritmi optimizuju ka pogrešnim signalima, budžet se troši bez jasnog ROI-a, a vi donosite odluke na osnovu netačnih podataka. Ovaj vodič pokazuje kako pravilno postaviti GTM, GA4 i Google Ads tagove, izbeći najčešće greške i koristiti Enhanced Conversions za maksimalnu preciznost.
@@ -40,7 +40,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#zasto-je-conversion-tracking-temelj-google-ads-a" className="text-sm text-gray-700 hover:text-primary underline">Zašto je conversion tracking temelj Google Ads-a</a></li>
@@ -96,21 +96,21 @@ export default function ConversionTrackingVodicPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Primary</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Primarne konverzije</h3>
           <p className="text-sm text-gray-600 mb-0">
             Krajnji cilj kampanje — kupovina, lead, poziv, registracija. Koriste se za bid optimization.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Secondary</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Sekundarne konverzije</h3>
           <p className="text-sm text-gray-600 mb-0">
             Koraci prema cilju — add to cart, pricing page visit, preuzimanje kataloga. Koriste se za observation.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Micro</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Micro konverzije</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -174,28 +174,28 @@ export default function ConversionTrackingVodicPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Preporučeno</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Tag Manager</h3>
           <p className="text-sm text-gray-600 mb-0">
             Centralizovano upravljanje svim tag-ovima. Fleksibilno, lako za testiranje i održavanje. Moj prvi izbor za sve osim najjednostavnijih setup-a.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Analytics</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">GA4 Import</h3>
           <p className="text-sm text-gray-600 mb-0">
             Koristi GA4 events kao konverzije. Dobar za unified reporting, ali attribution može biti drugačija od native Google Ads tracking-a.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Direktno</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Ads Tag</h3>
           <p className="text-sm text-gray-600 mb-0">
             Direktno postavljanje tag-a kroz Google Ads interface. Jednostavno za one-page setup, ali manje fleksibilno za kompleksnije scenario.
           </p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Napredni</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Enhanced Conversions</h3>
           <p className="text-sm text-gray-600 mb-0">
@@ -211,7 +211,7 @@ export default function ConversionTrackingVodicPost() {
         Ovo je postupak koji koristim za sve klijente. GTM + GA4 + Google Ads tag + Enhanced Conversions = kompletna postavka koja daje maksimalnu preciznost.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -278,7 +278,7 @@ export default function ConversionTrackingVodicPost() {
         Za eCommerce, moje iskustvo pokazuje da je tracking vrednosti transakcije ključan. Bez toga, Google ne zna razliku između kupovine od €10 i €500.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Purchase (Primary konverzija)</h3>
@@ -293,7 +293,7 @@ export default function ConversionTrackingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Add to Cart (Secondary konverzija)</h3>
@@ -308,7 +308,7 @@ export default function ConversionTrackingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Begin Checkout (Secondary konverzija)</h3>
@@ -337,7 +337,7 @@ export default function ConversionTrackingVodicPost() {
         Za lead gen kampanje, moje iskustvo je da nije dovoljno pratiti samo form submissions. Morati pratiti kvalitet lead-ova kroz offline conversion import.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Form Submission (Primary konverzija)</h3>
@@ -352,7 +352,7 @@ export default function ConversionTrackingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Phone Call (Primary konverzija)</h3>
@@ -367,7 +367,7 @@ export default function ConversionTrackingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Offline Conversions (Kvalifikovani lead)</h3>
@@ -463,7 +463,7 @@ export default function ConversionTrackingVodicPost() {
         Postavljanje tracking-a je polovina posla. Druga polovina je verifikacija da sve radi kako treba. Evo postupka koji koristim za svaki nalog.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Tag Assistant Chrome Extension</h3>
@@ -478,7 +478,7 @@ export default function ConversionTrackingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">GTM Preview Mode</h3>
@@ -493,7 +493,7 @@ export default function ConversionTrackingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Ads Conversion Status</h3>
@@ -508,7 +508,7 @@ export default function ConversionTrackingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Real-Time provera u GA4</h3>
@@ -523,7 +523,7 @@ export default function ConversionTrackingVodicPost() {
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Cross-check sa backend podacima</h3>
@@ -611,7 +611,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Potrebna vam je pomoć sa conversion tracking-om?
         </p>

@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 export default function GoogleAdsAuditPost() {
   return (
     <>
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Google Ads audit je sistematski pregled naloga koji otkriva wasted spend, propuštene prilike, i tehničke greške. Profesionalan audit pokriva 80+ checkpoint-a u 10 kategorija i u proseku identifikuje 15-25% budžeta koji se troši neefikasno.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -26,7 +26,7 @@ export default function GoogleAdsAuditPost() {
         </div>
       </div>
       {/* ── Sadržaj ── */}
-      <nav className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-8 shadow-card">
+      <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#zasto-je-google-ads-audit-neophodan" className="text-sm text-gray-700 hover:text-primary underline">Zašto je Google Ads audit neophodan</a></li>
@@ -78,52 +78,52 @@ export default function GoogleAdsAuditPost() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Osnova</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">1. Struktura naloga</h3>
           <p className="text-sm text-gray-600 mb-0">Logična organizacija kampanja, naming conventions, hierarchy, labels</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kritično</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">2. Conversion Tracking</h3>
           <p className="text-sm text-gray-600 mb-0">Da li pra&#x107;enje konverzija funkcioniše ta&#x10D;no i da li su podaci validni</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Setup</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">3. Pode&#x161;avanja kampanja</h3>
           <p className="text-sm text-gray-600 mb-0">Location targeting, networks, ad schedule, device bid adjustments</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Search</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">4. Klju&#x10D;ne re&#x10D;i i search terms</h3>
           <p className="text-sm text-gray-600 mb-0">Search Terms Report, negatives, Quality Score, match types, duplicates</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Creative</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">5. Oglasi i ekstenzije</h3>
           <p className="text-sm text-gray-600 mb-0">RSA quality, Ad Strength, sitelinks, callouts, structured snippets</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Targeting</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">6. Publike i remarketing</h3>
           <p className="text-sm text-gray-600 mb-0">Remarketing liste, audience layering, converter exclusions</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">7. Bidding strategija</h3>
           <p className="text-sm text-gray-600 mb-0">Smart Bidding setup, conversion volume, target realism, learning periods</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Spend</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">8. Budžet i alokacija</h3>
           <p className="text-sm text-gray-600 mb-0">Impression Share Lost (Budget), campaign budget distribution</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Analysis</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">9. Reporting i analitika</h3>
           <p className="text-sm text-gray-600 mb-0">GA4 integration, attribution models, segment analysis, data discrepancies</p>
         </div>
-        <div className="bg-white border-2 border-gray-900 rounded-xl p-5 shadow-card">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advanced</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">10. Scripts i automatizacije</h3>
           <p className="text-sm text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — kao i <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> za offline izmene</p>
@@ -143,7 +143,7 @@ export default function GoogleAdsAuditPost() {
 gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizaciju za 5 minuta pregledanja.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Kampanje organizovane logi&#x10D;no</h3>
@@ -157,7 +157,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Groups tematski fokusirane</h3>
@@ -192,7 +192,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Conversion tracking je najkriti&#x10D;niji deo svakog Google Ads audit-a. Ako pra&#x107;enje ne funkcioniše, ili bele&#x17E;i pogrešne podatke, sve ostalo je beskorisno — optimizujete na osnovu lo&#x161;ih informacija i donosite pogre&#x161;ne odluke.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -240,7 +240,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Default pode&#x161;avanja u Google Ads-u su lo&#x161;a — dizajnirana da Google zaradi vi&#x161;e, ne da vi dobijete bolje rezultate. U praksi vidim da preko 70% novih naloga ima default settings koji tro&#x161;e budžet na pogre&#x161;nim mestima.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Location targeting</h3>
@@ -253,7 +253,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Networks</h3>
@@ -266,7 +266,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad schedule (dani/sati)</h3>
@@ -279,7 +279,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Devices (Desktop/Mobile/Tablet)</h3>
@@ -298,7 +298,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Keywords nisu ono &#x161;to vi unesete u nalog — to su <strong>search terms</strong> koje ljudi zaista kucaju. Svaki Google Ads audit mora detaljno analizirati Search Terms Report i identifikovati &#x161;ta zapravo trigger-uje va&#x161;e oglase i kuda odlazi budžet.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -350,7 +350,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Oglasi su ono &#x161;to potencijalni kupci zapravo vide, ali u praksi vidim da preko 50% naloga ima {`"Poor"`} Ad Strength i minimalan broj ekstenzija. To je propuštena prilika — bolji oglasi = viši CTR = niži CPC + vi&#x161;e konverzija.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RSA kvalitet</h3>
@@ -365,7 +365,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ekstenzije (sitelinks, callouts...)</h3>
@@ -408,7 +408,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Remarketing je najlak&#x161;i win u Google Ads-u — ljudi koji su već posetili sajt konvertuju 3-5x bolje od cold traffic-a. Ako Google Ads audit otkrije da nalog nema remarketing liste ili converter exclusions, to je ogromna propuštena prilika.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -453,7 +453,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Smart Bidding je moćan alat, ali samo ako imate dovoljno konverzija da algoritam može validno učiti. U praksi vidim da preko 40% naloga koristi Smart Bidding sa &lt;10 konverzija mesečno — to ne može funkcionisati.
       </p>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Strategija odgovara cilju i fazi</h3>
@@ -468,7 +468,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         </ul>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dovoljno konverzija za Smart Bidding</h3>
@@ -476,7 +476,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         <p className="text-sm text-gray-600 mb-3">Google preporu&#x10D;uje 15+ konverzija u poslednjih 30 dana za Maximize Conversions, 30+ za Target CPA, 50+ za Target ROAS. Ispod toga, algoritam nema dovoljno signal-a za validnu optimizaciju.</p>
       </div>
 
-      <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card">
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target CPA/ROAS realan i dostiživm</h3>
@@ -505,7 +505,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Budget allocation je jedna od naj&#x10D;eš&#x107;ih gre&#x161;aka u Google Ads audit-ima — najbolje kampanje su {`"Limited by budget"`}, dok lo&#x161;e kampanje tro&#x161;e punim budžetom. To je kao da najboljem prodavcu date najmanje resursa.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -545,7 +545,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Ako nemate 2-4 sata za full Google Ads audit, evo quick check-a koji pokriva 80% najkriti&#x10D;nijih stvari. Preporu&#x10D;ujem da radite ovaj brzi audit mesečno između kvartalnih deep audit-a.
       </p>
 
-      <div className="bg-gray-50 border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
@@ -799,7 +799,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         Za nastavak optimizacije posle audit-a, pro&#x10D;itajte: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }}>Google Ads optimizacija vodi&#x10D;</Link> i <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}>Naj&#x10D;eš&#x107;e Google Ads gre&#x161;ke</Link>.
       </p>
 
-      <div className="bg-slate-900 text-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Potreban vam je profesionalan Google Ads audit?</p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">Radim audit-e za naloge svih veli&#x10D;ina — od startupa do enterprise klijenata. Dobijate 80+ checkpoint audit report + prioritizovan action plan + implementation preporuke + follow-up консультацију.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Zaka&#x17E;ite besplatnu konsultaciju</Link>
