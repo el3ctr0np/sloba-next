@@ -404,7 +404,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     { name: "DC Gaj", src: "/client-logos/dc-gaj.png", width: 120, height: 40, context: "Beograd · Poliklinika" },
     { name: "Chelleon", src: null, width: 0, height: 0, context: "UK · Skincare eCommerce" },
     { name: "Best at Printing", src: "/client-logos/bestatprinting.co.uk-logo9.webp", width: 120, height: 40, context: "UK · Custom Printing" },
-    { name: "Merrythought", src: "/client-logos/merrythought.co.uk-logo9.webp", width: 120, height: 40, context: "UK · Heritage Teddy Bears" },
+    { name: "Everfun", src: "/client-logos/everfun.hr-logo74.webp", width: 120, height: 40, context: "Hrvatska · Entertainment" },
   ];
 
   // =============================================

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { caseStudies, getCaseStudy, getCaseStudiesByLocale } from "../data";
@@ -174,13 +175,25 @@ export default async function CaseStudyPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Right: Image Placeholder */}
+            {/* Right: Hero Image */}
             <div className="hidden md:flex items-center justify-center">
-              <div className="w-full aspect-[4/3] max-w-lg rounded-2xl bg-slate-800 border-2 border-slate-700 flex items-center justify-center">
-                <span className="text-slate-500 text-sm">
-                  {cs.company} — {isEn ? "image here" : "slika ovde"}
-                </span>
-              </div>
+              {cs.heroImage ? (
+                <div className="w-full max-w-lg rounded-2xl overflow-hidden border-2 border-slate-700">
+                  <Image
+                    src={cs.heroImage}
+                    alt={`${cs.company} homepage`}
+                    width={800}
+                    height={600}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="w-full aspect-[4/3] max-w-lg rounded-2xl bg-slate-800 border-2 border-slate-700 flex items-center justify-center">
+                  <span className="text-slate-500 text-sm">
+                    {cs.company} — {isEn ? "image here" : "slika ovde"}
+                  </span>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -268,6 +281,31 @@ export default async function CaseStudyPage({ params }: Props) {
           ))}
         </div>
       </Section>
+
+      {/* Results Screenshot (if exists) */}
+      {cs.resultsImage && (
+        <Section background="gray">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-heading font-bold mb-6 text-center">
+              {isEn ? "Week-over-Week Performance" : "Nedeljni performans"}
+            </h3>
+            <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+              <Image
+                src={cs.resultsImage}
+                alt={`${cs.company} ${isEn ? "performance results" : "rezultati performansa"}`}
+                width={1200}
+                height={600}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-gray-500 text-center mt-4">
+              {isEn
+                ? "Week-over-week search campaign analysis showing consistent lead generation and conversion improvements."
+                : "Nedeljni prikaz performansa search kampanja sa konzistentnim poboljšanjima u generisanju leadova i konverzijama."}
+            </p>
+          </div>
+        </Section>
+      )}
 
       {/* Testimonial (if exists) */}
       {cs.testimonial && (

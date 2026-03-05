@@ -24,19 +24,29 @@ export function Header() {
   const isBlogPost = pathname === "/blog/[slug]" || pathname.startsWith("/blog/");
   const currentBlogSlug = isBlogPost && params?.slug ? (params.slug as string) : null;
 
+  // Case study slug — resolve [slug] template for locale switcher
+  const isCaseStudy = pathname === "/case-studies/[slug]" || (pathname.startsWith("/case-studies/") && pathname !== "/case-studies");
+  const currentCaseStudySlug = isCaseStudy && params?.slug ? (params.slug as string) : null;
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const resolvedPathname = useMemo(() => {
+    if (currentCaseStudySlug) return `/case-studies/${currentCaseStudySlug}` as any;
+    return pathname;
+  }, [currentCaseStudySlug, pathname]);
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const srHref = useMemo(() => {
-    if (!currentBlogSlug) return pathname;
+    if (!currentBlogSlug) return resolvedPathname;
     const srSlug = getAlternateSlug(currentBlogSlug, "sr");
     return `/blog/${srSlug}` as any;
-  }, [currentBlogSlug, pathname]);
+  }, [currentBlogSlug, resolvedPathname]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const enHref = useMemo(() => {
-    if (!currentBlogSlug) return pathname;
+    if (!currentBlogSlug) return resolvedPathname;
     const enSlug = getAlternateSlug(currentBlogSlug, "en");
     return `/blog/${enSlug}` as any;
-  }, [currentBlogSlug, pathname]);
+  }, [currentBlogSlug, resolvedPathname]);
 
   const navItems = useMemo(() => [
     { label: t("nav.home"), href: "/" as const },

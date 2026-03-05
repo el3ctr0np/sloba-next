@@ -199,7 +199,7 @@ export default async function CaseStudiesPage({ params }: Props) {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">
-                      {locale === "en" ? "Budget" : "Budžet"}
+                      {study.results[1]?.label || (locale === "en" ? "Budget" : "Budžet")}
                     </p>
                     <p className="text-lg font-semibold text-slate-700">
                       {study.results[1]?.value}

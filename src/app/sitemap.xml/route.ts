@@ -31,10 +31,15 @@ const routeLastmod: Record<string, string> = {
   "/usluge/konsultacije": "2026-02-10",
   "/usluge/performance-marketing": "2026-02-10",
   "/usluge/starter-paket": "2026-02-10",
-  "/case-studies": "2026-01-26",
+  "/case-studies": "2026-03-05",
   "/case-studies/mobelaris": "2026-01-26",
   "/case-studies/designerglasses": "2026-01-26",
   "/case-studies/soundboxstore": "2026-01-26",
+  "/case-studies/ankibuddy": "2026-02-28",
+  "/case-studies/chelleon": "2026-03-05",
+  "/case-studies/uk-agency-partnership": "2026-03-05",
+  "/case-studies/mbfinance": "2026-03-05",
+  "/case-studies/chatislav": "2026-03-05",
   "/blog": "2026-02-27",
 };
 
