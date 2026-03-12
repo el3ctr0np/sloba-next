@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { useParams } from "next/navigation";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import { Button } from "@/components/ui";
 import { getAlternateSlug } from "@/app/[locale]/blog/[slug]/posts/slug-map";
 
@@ -94,8 +95,18 @@ export function Header() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20 px-4">
           {/* Logo */}
-          <Link href="/" className="font-heading font-bold text-xl">
-            Slobodan Jelisavac
+          <Link href="/" className="flex items-center gap-2.5">
+            <Image
+              src="/logo.png"
+              alt="Slobodan Jelisavac"
+              width={44}
+              height={44}
+              className="w-11 h-11"
+              priority
+            />
+            <span className="font-heading font-bold text-xl hidden sm:inline">
+              Slobodan Jelisavac
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
