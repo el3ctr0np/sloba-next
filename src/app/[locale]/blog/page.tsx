@@ -158,6 +158,13 @@ const getChapters = (locale: string): Chapter[] => {
               "Differences in campaigns, KPIs and strategies for two business models.",
             slug: "google-ads-ecommerce-vs-b2b",
             readTime: "11 min"
+          },
+          {
+            title: "RSA Guide: Responsive Search Ads Framework [2026]",
+            excerpt:
+              "7-8 headlines instead of 15, angle-based distribution, and a testing loop that actually works.",
+            slug: "responsive-search-ads-guide",
+            readTime: "14 min"
           }
         ]
       },
@@ -334,6 +341,13 @@ const getChapters = (locale: string): Chapter[] => {
             "Razlike u kampanjama, KPI-jevima i strategijama za dva poslovna modela.",
           slug: "ecommerce-vs-b2b",
           readTime: "11 min"
+        },
+        {
+          title: "RSA Vodič: Responsive Search Ads Framework [2026]",
+          excerpt:
+            "7-8 naslova umesto 15, angle-based distribucija i testiranje koje zaista daje rezultate.",
+          slug: "rsa-vodic",
+          readTime: "14 min"
         }
       ]
     },

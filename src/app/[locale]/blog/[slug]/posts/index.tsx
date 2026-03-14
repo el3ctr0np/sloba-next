@@ -22,6 +22,8 @@ import QualityScoreVodicSR from "./quality-score-vodic/sr";
 import GoogleAdsOptimizacijaSR from "./google-ads-optimizacija/sr";
 import RemarketingVodicSR from "./remarketing-vodic/sr";
 import KakoPocetiGoogleAdsSR from "./kako-poceti-google-ads/sr";
+import RsaVodicSR from "./rsa-vodic/sr";
+import RsaGuideEN from "./rsa-vodic/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -242,6 +244,17 @@ const srPosts: PostData[] = [
       "Kako početi sa Google Ads od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
     readingTime: "14 min",
     content: <KakoPocetiGoogleAdsSR />
+  },
+  {
+    slug: "rsa-vodic",
+    title: "RSA Vodič: Responsive Search Ads Framework koji Stvarno Radi [2026]",
+    date: "2026-03-14",
+    dateModified: "2026-03-14",
+    category: "Google Ads",
+    metaDescription:
+      "Responsive Search Ads framework sa 7-8 headline-ova umesto 15, angle-based distribucija, testiranje i optimizacija. Vodič baziran na podacima iz State of PPC 2026 i realnim kampanjama.",
+    readingTime: "14 min",
+    content: <RsaVodicSR />
   }
 ];
 
@@ -433,6 +446,17 @@ const enPosts: PostData[] = [
       "How to start Google Ads from scratch? Step-by-step beginner guide — campaign types, budget, keywords, and common mistakes. Everything you need before your first campaign.",
     readingTime: "14 min",
     content: <KakoPocetiGoogleAdsEN />
+  },
+  {
+    slug: "responsive-search-ads-guide",
+    title: "RSA Guide: Responsive Search Ads Framework That Actually Works [2026]",
+    date: "2026-03-14",
+    dateModified: "2026-03-14",
+    category: "Google Ads",
+    metaDescription:
+      "Responsive Search Ads framework with 7-8 headlines instead of 15, angle-based slot distribution, testing and optimisation. Guide backed by State of PPC 2026 data and real campaign results.",
+    readingTime: "14 min",
+    content: <RsaGuideEN />
   }
 ];
 
