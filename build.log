@@ -1,0 +1,59 @@
+
+> sloba-next@0.1.0 build
+> next build
+
+▲ Next.js 16.1.4 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+(node:77955) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/slobodanjelisavac/Documents/DigitalJelisavac/WEBSITE_slobodan-jelisavac.com/sloba-next/tailwind.config.ts?id=1771710096822 is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/slobodanjelisavac/Documents/DigitalJelisavac/WEBSITE_slobodan-jelisavac.com/sloba-next/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✓ Compiled successfully in 19.3s
+  Running TypeScript ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/119) ...
+  Generating static pages using 7 workers (29/119) 
+  Generating static pages using 7 workers (59/119) 
+  Generating static pages using 7 workers (89/119) 
+✓ Generating static pages using 7 workers (119/119) in 679.5ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /[locale]
+├ ƒ /[locale]/blog
+├ ƒ /[locale]/blog/[slug]
+├ ƒ /[locale]/case-studies
+├ ƒ /[locale]/case-studies/[slug]
+├ ƒ /[locale]/kontakt
+├ ƒ /[locale]/kontakt/hvala
+├ ƒ /[locale]/lp/google-ads
+├ ƒ /[locale]/o-meni
+├ ƒ /[locale]/usluge
+├ ƒ /[locale]/usluge/google-ads-audit
+├ ƒ /[locale]/usluge/google-ads-upravljanje
+├ ƒ /[locale]/usluge/google-ads-za-b2b
+├ ƒ /[locale]/usluge/google-ads-za-ecommerce
+├ ƒ /[locale]/usluge/google-ads-za-saas
+├ ƒ /[locale]/usluge/google-shopping
+├ ƒ /[locale]/usluge/konsultacije
+├ ƒ /[locale]/usluge/performance-marketing
+├ ƒ /[locale]/usluge/performance-max
+├ ƒ /[locale]/usluge/remarketing
+├ ƒ /[locale]/usluge/search-kampanje
+├ ƒ /[locale]/usluge/starter-paket
+├ ƒ /[locale]/usluge/youtube-oglasi
+├ ƒ /api/meta-capi
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+└ ƒ /studio/[[...tool]]
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

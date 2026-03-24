@@ -141,5 +141,61 @@
     "readMore": "Saznajte više",
     "viewAll": "Pogledajte sve",
     "bookConsultation": "Zakažite besplatnu konsultaciju"
+  },
+  "Portal": {
+    "login": {
+      "title": "Klijent Portal",
+      "subtitle": "Pristupite vašem dashboardu i izveštajima",
+      "accessCode": "Pristupni kod",
+      "placeholder": "Unesite kod",
+      "submit": "Pristupi portalu",
+      "hint": "Pristupni kod ste dobili od vašeg account menadžera."
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "reports": "Izveštaji",
+      "history": "Istorija",
+      "dataEntry": "Unesi podatke",
+      "logout": "Odjava"
+    },
+    "dashboard": {
+      "welcome": "Dobrodošli",
+      "subtitle": "Pregled performansi vaših kampanja",
+      "noData": "Još nema podataka za prikaz.",
+      "managerNote": "Poruka od vašeg menadžera"
+    },
+    "metrics": {
+      "phoneCalls": "Telefonski pozivi",
+      "jobsCompleted": "Završeni poslovi",
+      "adSpend": "Ad Spend",
+      "costPerCall": "Cena po pozivu",
+      "revenue": "Prihod",
+      "roas": "ROAS",
+      "conversions": "Konverzije",
+      "previousMonth": "Prethodni mesec"
+    },
+    "reports": {
+      "title": "Izveštaji",
+      "subtitle": "Svi vaši izveštaji na jednom mestu",
+      "noReports": "Još nema izveštaja.",
+      "download": "Preuzmi"
+    },
+    "history": {
+      "title": "Istorija podataka",
+      "subtitle": "Pregled svih mesečnih podataka",
+      "exportCSV": "Izvezi CSV",
+      "noData": "Još nema istorijskih podataka za prikaz."
+    },
+    "dataEntry": {
+      "title": "Unos podataka",
+      "subtitle": "Unesite broj poziva i završenih poslova za tekući mesec",
+      "period": "Period",
+      "phoneCalls": "Broj telefonskih poziva",
+      "jobsCompleted": "Broj završenih poslova",
+      "note": "Napomena (opciono)",
+      "submit": "Sačuvaj podatke",
+      "success": "Podaci su sačuvani!",
+      "anotherPeriod": "Unesi podatke za drugi period"
+    }
   }
 }

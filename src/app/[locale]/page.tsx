@@ -26,8 +26,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "Google Ads ekspert sa 9+ godina iskustva | Slobodan Jelisavac",
-    description: "Google Ads upravljanje za eCommerce, B2B i SaaS brendove. 3.7x ROAS, 50+ brendova iz 6+ zemalja. Zakažite besplatnu konsultaciju.",
+    title: "Google Ads Srbija | Konsultant Ekspert sa Decenijskim Iskustvom — Slobodan Jelisavac",
+    description: "Google Ads konsultant i ekspert sa 10+ godina iskustva i preko 50 brendova u portfoliju. Profesionalno Google oglašavanje za firme iz Srbije, regiona i EU. Zakažite konsultaciju.",
     locale,
     path: "",
     ogImage: "/og/homepage.png",

@@ -43,6 +43,7 @@ export default function KakoPocetiGoogleAdsSR() {
           <li><a href="#5-najcescih-gresaka-pocetnika" className="text-sm text-gray-700 hover:text-primary underline">5 najčešćih grešaka početnika</a></li>
           <li><a href="#sam-ili-sa-strucnjakom" className="text-sm text-gray-700 hover:text-primary underline">Sam ili sa stručnjakom</a></li>
           <li><a href="#kako-nauciti-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Kako naučiti Google Ads</a></li>
+          <li><a href="#remarketing-za-pocetnike" className="text-sm text-gray-700 hover:text-primary underline">Remarketing za početnike</a></li>
           <li><a href="#cesta-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Česta pitanja</a></li>
           <li><a href="#zakljucak" className="text-sm text-gray-700 hover:text-primary underline">Zaključak</a></li>
           <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
@@ -207,65 +208,45 @@ export default function KakoPocetiGoogleAdsSR() {
         Evo konkretnih koraka za pokretanje prve Google Ads kampanje. Ne preskačite korake — redosled je bitan, posebno postavljanje praćenja konverzija pre svega ostalog.
       </p>
 
-      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
-        <div className="space-y-3">
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div>
-              <strong>Otvorite Google Ads nalog</strong>{" "}
-              <span className="text-gray-500">— idite na{" "}
-                <a href="https://ads.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">ads.google.com</a>{" "}
-                i registrujte se sa Gmail nalogom. Koristite &quot;Expert mode&quot; umesto automatskog podešavanja.
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div>
-              <strong>Povežite sa Google Analytics 4</strong>{" "}
-              <span className="text-gray-500">— u podešavanjima naloga povežite GA4 property. Ovo vam daje uvid u ponašanje korisnika nakon klika.</span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div>
-              <strong>Postavite conversion tracking od prvog dana</strong>{" "}
-              <span className="text-gray-500">— ovo je najvažniji korak. Bez praćenja konverzija ne znate šta vam donosi rezultate.{" "}
-                <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="text-blue-700 underline">Detaljni vodič za conversion tracking</Link>.
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div>
-              <strong>Istražite ključne reči</strong>{" "}
-              <span className="text-gray-500">— koristite Google Keyword Planner da pronađete reči sa kojima vaša publika pretražuje.{" "}
-                <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="text-blue-700 underline">Kompletan vodič za istraživanje ključnih reči</Link>.
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div>
-              <strong>Kreirajte prvu Search kampanju</strong>{" "}
-              <span className="text-gray-500">— jedna kampanja, jedna ad group, 10-15 closely related ključnih reči, 3 oglasa. Fokusirajte se na relevantnost, ne na obim.</span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
-            <div>
-              <strong>Postavite negativne ključne reči</strong>{" "}
-              <span className="text-gray-500">— odmah na startu blokirajte neodgovarajuće pretrage i sprečite trošenje budžeta na irelevantne klikove.{" "}
-                <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="text-blue-700 underline">Vodič za negativne ključne reči</Link>.
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <h3 id="korak-1-otvorite-google-ads-nalog">Korak 1: Otvorite Google Ads nalog</h3>
       <p>
-        Nakon pokretanja, prvih 7-10 dana je faza učenja — algoritam prikuplja podatke. Ne dirajte kampanju prečesto. Pregledajte rezultate jednom dnevno, ali suštinske promene pravite tek kada imate dovoljno podataka (minimum 50-100 klikova po ad grupi).
+        Idite na <a href="https://ads.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">ads.google.com</a> i registrujte se sa Gmail nalogom. <strong>Koristite &quot;Expert mode&quot;</strong> umesto automatskog podešavanja koje vodi ka &quot;Smart Campaigns&quot; — one imaju manje kontrole i lošije rezultate za većinu biznisa.
       </p>
+
+      <h3 id="korak-2-povezite-sa-google-analytics-4">Korak 2: Povežite sa Google Analytics 4</h3>
+      <p>
+        U podešavanjima naloga povežite GA4 property. Ovo vam daje uvid u ponašanje korisnika <em>nakon</em> klika — bounce rate, vreme na stranici, putanja kroz sajt. Bez GA4 vidite samo klikove, ne i šta se dešava dalje.
+      </p>
+
+      <h3 id="korak-3-postavite-conversion-tracking">Korak 3: Postavite conversion tracking od prvog dana</h3>
+      <p>
+        Ovo je <strong>najvažniji korak</strong>. Bez praćenja konverzija ne znate šta vam donosi rezultate — vodite kampanju naslepo. Postavite tracking za svaki važan cilj: kupovina, poziv, popunjeni formular.{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="text-blue-700 underline">Detaljni vodič za conversion tracking</Link>.
+      </p>
+
+      <h3 id="korak-4-istrazite-kljucne-reci">Korak 4: Istražite ključne reči</h3>
+      <p>
+        Koristite Google Keyword Planner da pronađete reči sa kojima vaša publika pretražuje. Fokusirajte se na ključne reči sa <em>namerom kupovine</em>, ne samo informativne pretrage. Za lokalne biznise dodajte geografske modifikatore (&quot;vodoinstalater Beograd&quot;, &quot;servis klime Novi Sad&quot;).{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="text-blue-700 underline">Kompletan vodič za istraživanje ključnih reči</Link>.
+      </p>
+
+      <h3 id="korak-5-kreirajte-prvu-search-kampanju">Korak 5: Kreirajte prvu Search kampanju</h3>
+      <p>
+        Počnite jednostavno: <strong>jedna kampanja, jedna ad grupa, 10-15 usko povezanih ključnih reči, 2-3 oglasa</strong>. Fokusirajte se na relevantnost, ne na obim. Bolje je imati 10 preciznih ključnih reči nego 100 razvodnjenih. Koristite phrase match ili exact match za početak.
+      </p>
+
+      <h3 id="korak-6-postavite-negativne-kljucne-reci">Korak 6: Postavite negativne ključne reči</h3>
+      <p>
+        Odmah na startu blokirajte neodgovarajuće pretrage i sprečite trošenje budžeta na irelevantne klikove. Česte negativne reči: &quot;besplatno&quot;, &quot;posao&quot;, &quot;karijera&quot;, imena konkurenata (ako ne ciljate konkurentski saobraćaj).{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="text-blue-700 underline">Vodič za negativne ključne reči</Link>.
+      </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Faza učenja</p>
+        <p className="text-blue-800 text-sm mb-0">
+          Nakon pokretanja, prvih 7-10 dana je faza učenja — algoritam prikuplja podatke. Ne dirajte kampanju prečesto. Pregledajte rezultate jednom dnevno, ali suštinske promene pravite tek kada imate dovoljno podataka (minimum 50-100 klikova po ad grupi).
+        </p>
+      </div>
 
       <hr />
 
@@ -338,56 +319,59 @@ export default function KakoPocetiGoogleAdsSR() {
         Procenjujem da oko 70% početnika pravi iste greške. Dobre vesti: sve su lako izbegljive ako znate šta da tražite.
       </p>
 
-      <div className="space-y-4 my-6">
-        <div className="bg-white border border-gray-200 rounded-xl p-5">
-          <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 1</p>
-          <p className="font-semibold mb-2">Koriste samo broad match bez negativnih ključnih reči</p>
-          <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
-              <strong>Rešenje:</strong> Koristite phrase match i exact match za početak, i odmah postavite negativne ključne reči. Proverite Search Terms report posle prvih 3-5 dana i blokirajte neodgovarajuće pretrage.
-            </p>
-          </div>
-        </div>
+      <h3 id="greska-1-broad-match-bez-negativnih">Greška 1: Koriste samo broad match bez negativnih ključnih reči</h3>
+      <p>
+        Broad match hvata previše širok opseg pretraga, uključujući i one koje nemaju nikakve veze sa vašom ponudom. Bez negativnih ključnih reči, budžet curi na irelevantne klikove.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Rešenje</p>
+        <p className="text-sm text-green-800 mb-0">
+          Koristite phrase match i exact match za početak, i odmah postavite negativne ključne reči. Proverite Search Terms report posle prvih 3-5 dana i blokirajte neodgovarajuće pretrage.
+        </p>
+      </div>
 
-        <div className="bg-white border border-gray-200 rounded-xl p-5">
-          <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 2</p>
-          <p className="font-semibold mb-2">Nemaju postavljeno praćenje konverzija</p>
-          <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
-              <strong>Rešenje:</strong> Pre pokretanja kampanje, postavite conversion tracking za svaki važan cilj — kupovina, poziv, formular. Bez toga vodite kampanju naslepo i ne možete optimizovati. Ovo je korak koji nikada ne preskačem kod klijenata.
-            </p>
-          </div>
-        </div>
+      <h3 id="greska-2-bez-conversion-trackinga">Greška 2: Nemaju postavljeno praćenje konverzija</h3>
+      <p>
+        Bez conversion trackinga vodite kampanju naslepo. Vidite klikove, ali ne znate koji od njih donose rezultate. Ne možete optimizovati nešto što ne merite.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Rešenje</p>
+        <p className="text-sm text-green-800 mb-0">
+          Pre pokretanja kampanje, postavite conversion tracking za svaki važan cilj — kupovina, poziv, formular. Ovo je korak koji nikada ne preskačem kod klijenata.
+        </p>
+      </div>
 
-        <div className="bg-white border border-gray-200 rounded-xl p-5">
-          <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 3</p>
-          <p className="font-semibold mb-2">Šalju saobraćaj na homepage umesto na relevantan landing page</p>
-          <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
-              <strong>Rešenje:</strong> Svaki oglas treba da vodi na stranicu koja direktno odgovara pretrazi. Ako neko traži &quot;ugradnja klime Beograd&quot; — vodi ih na stranicu o ugradnji klime, ne na homepage sa svim vašim uslugama.
-            </p>
-          </div>
-        </div>
+      <h3 id="greska-3-saobracaj-na-homepage">Greška 3: Šalju saobraćaj na homepage umesto na relevantan landing page</h3>
+      <p>
+        Homepage ima previše izbora i odvlači pažnju. Posetilac je tražio nešto konkretno, a vi ga šaljete na stranicu sa svim vašim uslugama.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Rešenje</p>
+        <p className="text-sm text-green-800 mb-0">
+          Svaki oglas treba da vodi na stranicu koja direktno odgovara pretrazi. Ako neko traži &quot;ugradnja klime Beograd&quot; — vodite ih na stranicu o ugradnji klime, ne na homepage.
+        </p>
+      </div>
 
-        <div className="bg-white border border-gray-200 rounded-xl p-5">
-          <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 4</p>
-          <p className="font-semibold mb-2">Menjaju kampanju previše brzo — ne čekaju dovoljno podataka</p>
-          <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
-              <strong>Rešenje:</strong> Prvih 2-4 nedelje su faza učenja — i za algoritam i za vas. Suštinske promene pravite tek posle 50-100 klikova po segmentu. Prerane izmene remete algoritam i produžavaju period učenja.
-            </p>
-          </div>
-        </div>
+      <h3 id="greska-4-prerane-izmene-kampanje">Greška 4: Menjaju kampanju previše brzo — ne čekaju dovoljno podataka</h3>
+      <p>
+        Nestrpljenje je skupo. Kada promenite kampanju posle 10 klikova, ne znate da li ste popravili nešto ili samo dodali šum. Algoritam takođe treba vremena da se prilagodi.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Rešenje</p>
+        <p className="text-sm text-green-800 mb-0">
+          Prvih 2-4 nedelje su faza učenja — i za algoritam i za vas. Suštinske promene pravite tek posle 50-100 klikova po segmentu. Prerane izmene remete algoritam i produžavaju period učenja.
+        </p>
+      </div>
 
-        <div className="bg-white border border-gray-200 rounded-xl p-5">
-          <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 5</p>
-          <p className="font-semibold mb-2">Prihvataju sve Google-ove &quot;pametne&quot; preporuke bez razumevanja</p>
-          <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
-              <strong>Rešenje:</strong> Google-ove preporuke nisu uvek loše, ali su uvek u Google-ovom interesu (veća potrošnja). Svaku preporuku procenite samostalno pre prihvatanja. Automatsko prihvatanje preporuka može udvostručiti troškove za minimalan benefit.
-            </p>
-          </div>
-        </div>
+      <h3 id="greska-5-automatsko-prihvatanje-preporuka">Greška 5: Prihvataju sve Google-ove &quot;pametne&quot; preporuke bez razumevanja</h3>
+      <p>
+        Google vam aktivno predlaže promene — ali te preporuke su uvek u Google-ovom interesu (veća potrošnja), ne nužno u vašem. Automatsko prihvatanje može udvostručiti troškove za minimalan benefit.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Rešenje</p>
+        <p className="text-sm text-green-800 mb-0">
+          Svaku preporuku procenite samostalno pre prihvatanja. Razumite <em>zašto</em> Google predlaže promenu i kakav je uticaj na vaš budžet i ciljeve. Većina preporuka se može bezbedno ignorisati.
+        </p>
       </div>
 
       <hr />
@@ -483,6 +467,35 @@ export default function KakoPocetiGoogleAdsSR() {
           &quot;Ne bih ništa menjao u svom putu — samostalno učenje me naučilo šta je zaista bitno, a šta je samo teorija bez primene u praksi.&quot;
         </p>
       </div>
+
+      <hr />
+
+      {/* ── Sekcija: Remarketing za početnike ── */}
+      <h2 id="remarketing-za-pocetnike">Remarketing: Sledeći korak nakon prve kampanje</h2>
+      <p>
+        Kada pokrenete prvu kampanju i počnete da dobijate saobraćaj, jedan deo posetilaca neće konvertovati odmah. To je normalno — stopa konverzije od 2-5% znači da 95-98% ljudi napusti sajt bez akcije. <strong>Remarketing</strong> vam omogućava da ponovo dosegnete te ljude sa ciljanim porukama.
+      </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Kada početi sa remarketingom?</p>
+        <p className="text-yellow-800 text-sm mb-0">
+          Google Ads zahteva minimum <strong>100 aktivnih korisnika</strong> u remarketing publici da bi kampanja mogla da se pokrene. Za većinu malih biznisa to znači 2-4 nedelje prikupljanja saobraćaja pre nego što remarketing postane opcija. Postavite remarketing tag od prvog dana da počnete sa prikupljanjem publike.
+        </p>
+      </div>
+
+      <p>
+        Remarketing je posebno efikasan za:
+      </p>
+      <ul>
+        <li><strong>Napuštene korpe</strong> — podsetite kupce na proizvode koje su ostavili</li>
+        <li><strong>Posetioce servisnih stranica</strong> — dosegnite ih dok još uvek traže rešenje</li>
+        <li><strong>Čitaoce blog sadržaja</strong> — pretvorite edukaciju u konverziju</li>
+      </ul>
+
+      <p>
+        Kompletan vodič za postavljanje i optimizaciju remarketing kampanja:{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="text-blue-700 underline">Google Ads Remarketing vodič</Link>.
+      </p>
 
       <hr />
 

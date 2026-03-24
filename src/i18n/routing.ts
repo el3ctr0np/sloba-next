@@ -94,6 +94,17 @@ export const routing = defineRouting({
 
     // Case Studies
     "/case-studies": "/case-studies",
-    "/case-studies/[slug]": "/case-studies/[slug]"
+    "/case-studies/[slug]": "/case-studies/[slug]",
+
+    // Portal
+    "/portal": "/portal",
+    "/portal/dashboard": "/portal/dashboard",
+    "/portal/reports": "/portal/reports",
+    "/portal/history": "/portal/history",
+    "/portal/unos": "/portal/unos",
+
+    // Client Reports
+    "/klijenti-login": "/klijenti-login",
+    "/klijenti/[slug]": "/klijenti/[slug]"
   }
 });

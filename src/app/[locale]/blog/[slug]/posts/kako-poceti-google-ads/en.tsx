@@ -59,6 +59,7 @@ export default function KakoPocetiGoogleAdsEN() {
           <li><a href="#5-most-common-beginner-mistakes" className="text-sm text-gray-700 hover:text-primary underline">5 Most Common Beginner Mistakes</a></li>
           <li><a href="#diy-or-hire-an-expert" className="text-sm text-gray-700 hover:text-primary underline">DIY or Hire an Expert</a></li>
           <li><a href="#how-to-learn-google-ads" className="text-sm text-gray-700 hover:text-primary underline">How to Learn Google Ads</a></li>
+          <li><a href="#remarketing-for-beginners" className="text-sm text-gray-700 hover:text-primary underline">Remarketing for Beginners</a></li>
           <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently Asked Questions</a></li>
           <li><a href="#conclusion" className="text-sm text-gray-700 hover:text-primary underline">Conclusion</a></li>
           <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
@@ -439,79 +440,59 @@ export default function KakoPocetiGoogleAdsEN() {
         After auditing hundreds of Google Ads accounts, I see the same mistakes repeated constantly. Here are the five that cause the most damage — and how to avoid them.
       </p>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-5">
-        <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake 1</p>
-        <p className="font-semibold mb-2">
-          No conversion tracking — optimizing blind
+      <h3 id="mistake-1-no-conversion-tracking">Mistake 1: No conversion tracking — optimizing blind</h3>
+      <p>
+        You cannot make good decisions without data. Without conversion tracking, you don&apos;t know which keywords, ads, or campaigns are driving results. Every optimization becomes a guess.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Solution</p>
+        <p className="text-sm text-green-800 mb-0">
+          Set up conversion tracking before launching. Use Google Tag Manager with proper Conversion Linker, define your conversion actions clearly (purchase, lead, call), and verify everything is firing correctly using Google Tag Assistant.
         </p>
-        <p className="text-sm text-gray-600 mb-3">
-          You cannot make good decisions without data. Without conversion tracking, you don&apos;t know which keywords, ads, or campaigns are driving results. Every optimization becomes a guess.
-        </p>
-        <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
-            <strong>Solution:</strong> Set up conversion tracking before launching. Use Google Tag Manager with proper Conversion Linker, define your conversion actions clearly (purchase, lead, call), and verify everything is firing correctly using Google Tag Assistant.
-          </p>
-        </div>
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-5 mt-4">
-        <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake 2</p>
-        <p className="font-semibold mb-2">
-          Using broad match for everything without negative keywords
+      <h3 id="mistake-2-broad-match-without-negatives">Mistake 2: Using broad match for everything without negative keywords</h3>
+      <p>
+        Broad match without negative keywords is one of the fastest ways to waste budget. Google will match your keywords to searches that have nothing to do with your business, and you&apos;ll pay for every click.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Solution</p>
+        <p className="text-sm text-green-800 mb-0">
+          Start with Phrase match or Exact match for your core keywords. Build a negative keyword list before launch — add &quot;free&quot;, &quot;job&quot;, &quot;course&quot;, &quot;DIY&quot;, and any irrelevant modifiers for your niche. Review Search Terms Report weekly and add new negatives continuously.
         </p>
-        <p className="text-sm text-gray-600 mb-3">
-          Broad match without negative keywords is one of the fastest ways to waste budget. Google will match your keywords to searches that have nothing to do with your business, and you&apos;ll pay for every click.
-        </p>
-        <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
-            <strong>Solution:</strong> Start with Phrase match or Exact match for your core keywords. Build a negative keyword list before launch — add &quot;free&quot;, &quot;job&quot;, &quot;course&quot;, &quot;DIY&quot;, and any irrelevant modifiers for your niche. Review Search Terms Report weekly and add new negatives continuously.
-          </p>
-        </div>
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-5 mt-4">
-        <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake 3</p>
-        <p className="font-semibold mb-2">
-          Sending all traffic to the homepage
+      <h3 id="mistake-3-traffic-to-homepage">Mistake 3: Sending all traffic to the homepage</h3>
+      <p>
+        Your homepage is designed for general visitors. Ad traffic needs a focused landing page that matches exactly what the ad promises. Sending someone who clicked &quot;buy leather hiking boots&quot; to your homepage loses them immediately.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Solution</p>
+        <p className="text-sm text-green-800 mb-0">
+          Match your destination URL to your ad&apos;s message. If your ad is about a specific product or service, send traffic to that product or service page. The closer the alignment between keyword → ad → landing page, the higher your conversion rate — and the lower your CPC.
         </p>
-        <p className="text-sm text-gray-600 mb-3">
-          Your homepage is designed for general visitors. Ad traffic needs a focused landing page that matches exactly what the ad promises. Sending someone who clicked &quot;buy leather hiking boots&quot; to your homepage homepage loses them immediately.
-        </p>
-        <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
-            <strong>Solution:</strong> Match your destination URL to your ad&apos;s message. If your ad is about a specific product or service, send traffic to that product or service page. Remove distractions. The closer the alignment between keyword → ad → landing page, the higher your conversion rate — and the lower your CPC.
-          </p>
-        </div>
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-5 mt-4">
-        <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake 4</p>
-        <p className="font-semibold mb-2">
-          Switching bidding strategies too early or too often
+      <h3 id="mistake-4-switching-strategies-too-early">Mistake 4: Switching bidding strategies too early or too often</h3>
+      <p>
+        Smart Bidding strategies like Target CPA or Target ROAS require conversion data and time to learn. Switching strategies every few days resets the learning period and produces erratic results.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Solution</p>
+        <p className="text-sm text-green-800 mb-0">
+          Start with Manual CPC or Maximize Clicks while building your conversion history. Switch to Smart Bidding only after accumulating 30-50 conversions. Once you switch, give each strategy at least 2-4 weeks before evaluating performance.
         </p>
-        <p className="text-sm text-gray-600 mb-3">
-          Smart Bidding strategies like Target CPA or Target ROAS require conversion data and time to learn. Switching strategies every few days resets the learning period and produces erratic results. Many beginners constantly tinker because they expect instant results.
-        </p>
-        <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
-            <strong>Solution:</strong> Start with Manual CPC or Maximize Clicks while building your conversion history. Switch to Smart Bidding only after accumulating 30-50 conversions. Once you switch, give each strategy at least 2-4 weeks before evaluating performance.
-          </p>
-        </div>
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-5 mt-4">
-        <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake 5</p>
-        <p className="font-semibold mb-2">
-          Mixing Search and Display networks in the same campaign
+      <h3 id="mistake-5-mixing-search-and-display">Mistake 5: Mixing Search and Display networks in the same campaign</h3>
+      <p>
+        Google pre-selects &quot;Search Network with Display Expansion&quot; by default. This silently routes part of your Search budget to Display placements, which have far lower intent and different performance dynamics.
+      </p>
+      <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
+        <p className="font-semibold text-green-900 mb-1">Solution</p>
+        <p className="text-sm text-green-800 mb-0">
+          When creating a Search campaign, go to Campaign settings → Networks and uncheck &quot;Include Google Display Network&quot;. If you want Display traffic, create a separate campaign with its own budget and targeting.
         </p>
-        <p className="text-sm text-gray-600 mb-3">
-          Google pre-selects &quot;Search Network with Display Expansion&quot; by default. This silently routes part of your Search budget to Display placements, which have far lower intent and different performance dynamics. You can&apos;t see this clearly in the data without digging.
-        </p>
-        <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
-            <strong>Solution:</strong> When creating a Search campaign, go to Campaign settings → Networks and uncheck &quot;Include Google Display Network&quot;. If you want Display traffic, create a separate campaign with its own budget and targeting.
-          </p>
-        </div>
       </div>
 
       <hr />
@@ -602,6 +583,35 @@ export default function KakoPocetiGoogleAdsEN() {
         </p>
         <p className="text-slate-400 text-sm mt-3 mb-0">— Slobodan Jelisavac, Google Ads Consultant</p>
       </div>
+
+      <hr />
+
+      {/* ── Section: Remarketing for Beginners ── */}
+      <h2 id="remarketing-for-beginners">Remarketing: Your Next Step After the First Campaign</h2>
+      <p>
+        Once you launch your first campaign and start driving traffic, some visitors won&apos;t convert right away. That&apos;s normal — a conversion rate of 2-5% means 95-98% of people leave without taking action. <strong>Remarketing</strong> lets you reach those people again with targeted messages.
+      </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">When to start remarketing?</p>
+        <p className="text-yellow-800 text-sm mb-0">
+          Google Ads requires a minimum of <strong>100 active users</strong> in your remarketing audience before a campaign can run. For most small businesses, that means 2-4 weeks of collecting traffic before remarketing becomes viable. Set up your remarketing tag from day one to start building your audience immediately.
+        </p>
+      </div>
+
+      <p>
+        Remarketing is especially effective for:
+      </p>
+      <ul>
+        <li><strong>Abandoned carts</strong> — remind shoppers about products they left behind</li>
+        <li><strong>Service page visitors</strong> — reach them while they&apos;re still searching for a solution</li>
+        <li><strong>Blog content readers</strong> — turn education into conversion</li>
+      </ul>
+
+      <p>
+        Full guide to setting up and optimizing remarketing campaigns:{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="text-blue-700 underline">Google Ads Remarketing Guide</Link>.
+      </p>
 
       <hr />
 

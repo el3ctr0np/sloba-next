@@ -11,8 +11,10 @@ import { Footer } from "./Footer";
 export function LayoutShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const isLandingPage = pathname.includes("/lp/");
+  const isPortal = pathname.includes("/portal");
+  const isClientReport = pathname.includes("/klijenti");
 
-  if (isLandingPage) {
+  if (isLandingPage || isPortal || isClientReport) {
     return <>{children}</>;
   }
 

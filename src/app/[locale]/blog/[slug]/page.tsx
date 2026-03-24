@@ -760,6 +760,31 @@ const faqSchemaKakoPocetiEN = {
   ]
 };
 
+// --- ctr-vodic ---
+const faqSchemaCtrSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Koliki CTR je dobar u Srbiji?", acceptedAnswer: { "@type": "Answer", text: "Za Search kampanje u Srbiji, prosečan CTR je 3-5%, a dobar CTR je 5-10%. Za uske niše sa specifičnim ključnim rečima, CTR može biti i preko 10-15%. Važno je uvek razdvajati branded od non-branded ključnih reči — branded reči prirodno imaju viši CTR jer korisnici već znaju vaš brend." } },
+    { "@type": "Question", name: "Zašto mi pada CTR u Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Najčešći razlozi pada CTR-a: ad fatigue (isti oglas predugo radi), novi konkurenti koji su poboljšali svoje oglase, promene u SERP layout-u, loše ključne reči koje privlače irelevantnu publiku, ili pad Quality Score-a. Proverite Search Terms report i Auction Insights da identifikujete uzrok." } },
+    { "@type": "Question", name: "Da li CTR utiče na cenu klika (CPC)?", acceptedAnswer: { "@type": "Answer", text: "Da, indirektno. CTR je komponenta Quality Score-a (kroz Expected CTR). Viši Quality Score = niži CPC za istu poziciju. Poboljšanjem CTR-a možete smanjiti troškove i dobiti bolje pozicije bez povećanja bid-a." } },
+    { "@type": "Question", name: "Kako razdvojiti branded od non-branded CTR?", acceptedAnswer: { "@type": "Answer", text: "Kreirajte segmente u Google Ads: Campaigns > Segment > Search keyword. Ili napravite odvojene kampanje za branded i non-branded ključne reči. Branded CTR je obično 10-30%, non-branded 3-8%. Ako non-branded ima previsok CTR, proverite da li ste dobro isključili branded termine." } },
+    { "@type": "Question", name: "Kako videti CTR u Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Columns > Modify columns > Performance > CTR. Možete videti CTR na nivou kampanje, ad grupe, ključne reči ili oglasa. Za detaljniju analizu, segmentirajte po uređaju, lokaciji ili vremenu da pronađete gde gubite klikove." } },
+  ]
+};
+
+const faqSchemaCtrEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "What is a good CTR for Google Ads?", acceptedAnswer: { "@type": "Answer", text: "For Search campaigns, average CTR is 3-5%, and a good CTR is 5-10%. For niche markets with specific keywords, CTR can exceed 10-15%. Always separate branded from non-branded keywords — branded terms naturally have higher CTR because users already know your brand." } },
+    { "@type": "Question", name: "Why is my CTR dropping in Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Most common reasons for CTR decline: ad fatigue (same ad running too long), new competitors improving their ads, changes in SERP layout, poor keywords attracting irrelevant audiences, or Quality Score decline. Check Search Terms report and Auction Insights to identify the cause." } },
+    { "@type": "Question", name: "Does CTR affect cost per click (CPC)?", acceptedAnswer: { "@type": "Answer", text: "Yes, indirectly. CTR is a component of Quality Score (through Expected CTR). Higher Quality Score = lower CPC for the same position. By improving CTR you can reduce costs and get better positions without increasing your bid." } },
+    { "@type": "Question", name: "How do I separate branded from non-branded CTR?", acceptedAnswer: { "@type": "Answer", text: "Create segments in Google Ads: Campaigns > Segment > Search keyword. Or create separate campaigns for branded and non-branded keywords. Branded CTR is typically 10-30%, non-branded 3-8%. If non-branded has unusually high CTR, check if you've properly excluded branded terms." } },
+    { "@type": "Question", name: "How do I see CTR in Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Columns > Modify columns > Performance > CTR. You can view CTR at campaign, ad group, keyword, or ad level. For deeper analysis, segment by device, location, or time to find where you're losing clicks." } },
+  ]
+};
+
 function getFaqSchema(slug: string, locale: string) {
   if (slug === "google-ads-vs-meta") {
     return locale === "en" ? faqSchemaGoogleVsMetaEN : faqSchemaGoogleVsMetaSR;
@@ -811,6 +836,9 @@ function getFaqSchema(slug: string, locale: string) {
   }
   if (slug === "kako-poceti-google-ads") {
     return locale === "en" ? faqSchemaKakoPocetiEN : faqSchemaKakoPocetiSR;
+  }
+  if (slug === "ctr-vodic") {
+    return locale === "en" ? faqSchemaCtrEN : faqSchemaCtrSR;
   }
   return null;
 }

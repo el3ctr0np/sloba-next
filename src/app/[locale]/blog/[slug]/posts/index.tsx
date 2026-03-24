@@ -24,6 +24,8 @@ import RemarketingVodicSR from "./remarketing-vodic/sr";
 import KakoPocetiGoogleAdsSR from "./kako-poceti-google-ads/sr";
 import RsaVodicSR from "./rsa-vodic/sr";
 import RsaGuideEN from "./rsa-vodic/en";
+import CtrVodicSR from "./ctr-vodic/sr";
+import CtrGuideEN from "./ctr-vodic/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -255,6 +257,17 @@ const srPosts: PostData[] = [
       "Responsive Search Ads framework sa 7-8 headline-ova umesto 15, angle-based distribucija, testiranje i optimizacija. Vodič baziran na podacima iz State of PPC 2026 i realnim kampanjama.",
     readingTime: "14 min",
     content: <RsaVodicSR />
+  },
+  {
+    slug: "ctr-vodic",
+    title: "CTR (Click-Through Rate): Šta Je, Formula i Kako Poboljšati [2026]",
+    date: "2026-03-24",
+    dateModified: "2026-03-24",
+    category: "Google Ads",
+    metaDescription:
+      "Šta je CTR (Click-Through Rate) u Google Ads? Formula, benchmarks za Srbiju (5-10%+), dijagnostika niskog CTR-a, i 7 proverenih taktika za poboljšanje iz prakse.",
+    readingTime: "12 min",
+    content: <CtrVodicSR />
   }
 ];
 
@@ -457,6 +470,17 @@ const enPosts: PostData[] = [
       "Responsive Search Ads framework with 7-8 headlines instead of 15, angle-based slot distribution, testing and optimisation. Guide backed by State of PPC 2026 data and real campaign results.",
     readingTime: "14 min",
     content: <RsaGuideEN />
+  },
+  {
+    slug: "ctr-guide",
+    title: "CTR (Click-Through Rate): What It Is, Formula & How to Improve [2026]",
+    date: "2026-03-24",
+    dateModified: "2026-03-24",
+    category: "Google Ads",
+    metaDescription:
+      "What is CTR (Click-Through Rate) in Google Ads? Formula, benchmarks by campaign type, diagnosing low CTR, and 7 proven tactics to improve your click-through rate.",
+    readingTime: "12 min",
+    content: <CtrGuideEN />
   }
 ];
 
