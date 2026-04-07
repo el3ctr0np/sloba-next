@@ -523,13 +523,15 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
             {/* Right: Photo */}
             <div className="hidden md:block md:flex-shrink-0">
-              <div className="relative w-72 lg:w-80">
+              <div
+                className="relative w-72 lg:w-80 border border-white/20 rounded-lg overflow-hidden bg-slate-950/40 backdrop-blur-sm shadow-card"
+                style={{ aspectRatio: "1023 / 781" }}
+              >
                 <Image
-                  src="/sloba.webp"
+                  src="/hero.webp"
                   alt="Slobodan Jelisavac — Google Ads Strategist"
-                  width={400}
-                  height={400}
-                  className="rounded-2xl"
+                  fill
+                  className="object-contain"
                   priority
                 />
               </div>
