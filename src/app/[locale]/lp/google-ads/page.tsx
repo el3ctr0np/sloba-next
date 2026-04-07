@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { MultiStepForm } from "./MultiStepForm";
 import { AnimatedCounter } from "./AnimatedCounter";
 import { SocialProofToast } from "./SocialProofToast";
+import { ExitIntentPopup } from "./ExitIntentPopup";
 import {
   Banknote,
   Frown,
@@ -66,9 +67,9 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
   // =============================================
 
   const heroStats = [
+    { value: "€2M+", label: "Godišnji ad spend pod upravljanjem" },
     { value: "180%+", label: "Prosečno poboljšanje ROAS-a" },
-    { value: "-35%", label: "Smanjenje CPA" },
-    { value: "50+", label: "Brendova u portfoliju" },
+    { value: "50+", label: "Brendova iz 6+ zemalja" },
   ];
 
   const iconProps = { size: 28, strokeWidth: 1.5 } as const;
@@ -76,39 +77,39 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
   const problems: { icon: ReactNode; title: string; description: string }[] = [
     {
       icon: <Banknote {...iconProps} className="text-gray-900" />,
-      title: "Budžet nestaje bez rezultata",
+      title: "Budžet raste, ali rezultati ne prate",
       description:
-        "Ulažete u Google Ads svaki mesec, ali konverzije izostaju ili su preskupe. Nemate jasnu sliku šta funkcioniše a šta ne.",
+        "Ulažete sve više u Google Ads, ali ROAS stagnira ili pada. Nemate jasnu sliku gde se gube pare i zašto konverzije ne rastu proporcionalno.",
     },
     {
       icon: <Frown {...iconProps} className="text-gray-900" />,
-      title: "Loša iskustva sa agencijama",
+      title: "Juniori rade na vašim nalozima",
       description:
-        "Agencije su podešavale kampanje bez stvarne strategije. Dobijali ste generičke reportove, ali nikada niste videli pravi ROI.",
-    },
-    {
-      icon: <Clock {...iconProps} className="text-gray-900" />,
-      title: "Nemate vremena da se time bavite",
-      description:
-        "Google Ads zahteva svakodnevno praćenje i optimizaciju. Vi imate biznis koji vodite — ne možete ceo dan da sedite u ads dashboard-u.",
+        "Agencija vam je dodelila junior account managera koji uči na vašem budžetu. Dobijate generičke reportove, ali nikada niste videli pravi ROI.",
     },
     {
       icon: <BarChart3 {...iconProps} className="text-gray-900" />,
-      title: "Rast je stao",
+      title: "Agencija šalje reportove, ali ROAS stagnira",
       description:
-        "Kampanje rade solidno, ali ne znate kako da ih skalirate a da troškovi ne izmaknu kontroli.",
+        "Mesecima gledate iste brojke. Niko ne predlaže nove strategije, ne testira nove pristupe — samo održava status quo dok vi plaćate retainer.",
     },
     {
       icon: <Target {...iconProps} className="text-gray-900" />,
-      title: "Niste sigurni da li Google Ads uopšte radi za vas",
+      title: "Želite da uložite više, ali ne verujete trenutnom timu",
       description:
-        "Čuli ste priče o uspehu ali i o bacanju novca. Treba vam ekspertsko mišljenje pre nego što uložite više.",
+        "Znate da Google Ads radi za vašu industriju, imate budžet za skaliranje — ali nemate poverenje da će trenutni tim pametno upravljati većim spend-om.",
+    },
+    {
+      icon: <TrendingUp {...iconProps} className="text-gray-900" />,
+      title: "Rast je stao — ne znate kako dalje",
+      description:
+        "Kampanje rade solidno, ali ste udarili u plafon. Treba vam neko ko razume napredne strategije skaliranja bez gubitka profitabilnosti.",
     },
     {
       icon: <Search {...iconProps} className="text-gray-900" />,
       title: "Konkurencija vas nadmašuje",
       description:
-        "Konkurenti se pojavljuju iznad vas u pretrazi i kradu vaše potencijalne kupce.",
+        "Konkurenti se pojavljuju iznad vas u pretrazi, kradu vaše potencijalne kupce i postavljaju tempo koji ne možete da pratite sa trenutnim pristupom.",
     },
   ];
 
@@ -217,123 +218,123 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
   ];
 
   const comparisonData = {
-    headers: ["", "Slobodan J.", "Tipična agencija", "Zaposleni", "Sam/a"],
+    headers: ["", "Slobodan J.", "Tipična agencija", "Marketing zaposleni"],
     rows: [
       [
-        "Mesečna cena",
-        "Od €350",
-        "€300-500+",
-        "€1.000+ plata",
-        "Besplatno (vaše vreme)",
+        "Mesečna investicija",
+        "Od €500/mes",
+        "€300-500+/mes",
+        "€1.200+ plata + alati",
       ],
       [
-        "Iskustvo",
-        "Senior — decenija rada, 50+ brendova",
-        "Junior koji vežba na vašim nalozima",
-        "Varira zavisno od iskustva",
-        "Kriva učenja",
+        "Ko radi na vašem nalogu",
+        "Senior strateg sa decenijom iskustva",
+        "Junior koji uči na vašem budžetu",
+        "Zavisi od iskustva kandidata",
       ],
       [
         "Vreme odgovora",
         "U roku od 24h",
-        "Oko nedelju dana",
-        "Odmah vam je pri ruci",
-        "N/A",
+        "Dan ili dva",
+        "Odmah, ali ograničen fokus",
       ],
       [
-        "Strategija",
-        "Senior znanje, custom i prema podacima",
-        "Template pristupi — juniori uče",
+        "Pristup strategiji",
+        "Custom, baziran na podacima",
+        "Template pristupi, generički",
         "Ograničena perspektiva",
-        "Pokušaj-greška",
       ],
       [
-        "PPC i AI alati",
-        "Napredni — custom skripte, AI monitoring",
-        "Retko ili osnovni alati",
+        "PPC alati i automatizacija",
+        "Agentic workflow, napredne skripte",
+        "Retko ili samo osnovno",
         "Skupo za jedan nalog",
-        "Samo besplatni osnovi",
       ],
       [
-        "Ugovori",
-        "Mesec za mesec",
-        "Mesec za mesec",
-        "Ugovor o radu",
-        "N/A",
+        "Obavezivanje",
+        "Prvih 90 dana, pa dugoročno",
+        "Često 6-12 meseci unapred",
+        "Ugovor o radu + otpremnina",
       ],
       [
-        "Direktan pristup",
-        "Uvek — pričate direktno sa mnom",
-        "Junior ili treće lice",
-        "Da — vaš je zaposleni",
-        "N/A",
+        "Pristup ekspertu",
+        "Direktno sa mnom, uvek",
+        "Junior ili account manager",
+        "Direktno, ali jedan čovek za sve",
+      ],
+      [
+        "ROI fokus",
+        "Svaka odluka merljiva",
+        "Fokus na aktivnost, ne rezultat",
+        "Teško meriti doprinos",
       ],
     ],
   };
 
   const pricingTiers = [
     {
-      name: "Starter paket",
-      price: "Od €350",
-      period: "/mes",
+      name: "Premium paket",
+      price: "Po dogovoru",
+      period: "",
+      adSpend: "Ad spend €5.000+ po kanalu",
       subtitle:
-        "Sve što vam treba za početak — pravilna struktura, ključne reči i optimizacija koja donosi rezultate.",
+        "Za tržišne lidere — ili one koji to žele da postanu. Senior tim kroz sve digitalne kanale gradi jedinstveni revenue engine za vaš brend.",
       features: [
-        "Kompletna analiza i setup kampanja",
-        "Biweekly optimizacija",
-        "Mesečni report sa ključnim metrikama",
-        "Email podrška",
-        "Do 2 tipa kampanja",
+        "Google Ads + Meta Ads + SEO + CRO",
+        "Demand generation i pipeline arhitektura",
+        "Senior operatori na svim kanalima",
+        "Kompletne marketing operacije pod jednim krovom",
+        "Strateško usklađivanje svih kanala",
+        "Merljiv rast fokusiran na prihod",
+        "Dedikirani account strateg",
       ],
       popular: false,
-      cta: "Počnite sa Starter-om",
-      funkyBadge: false,
+      cta: "Zatražite Premium ponudu",
+      funkyBadge: true,
     },
     {
       name: "Standard paket",
-      price: "Od €500",
+      price: "€500-700",
       period: "/mes",
+      adSpend: "Ad spend €1.000-5.000/mes",
       subtitle:
-        "Za brendove i kompanije koje već planiraju veće budžete. Fokus na dugoročne, stabilne rezultate i pametno skaliranje.",
+        "Za kompanije koje već ulažu u Google Ads i žele stabilne rezultate uz pametno skaliranje.",
       features: [
-        "Sve iz Starter paketa",
-        "Nedeljne optimizacije kampanja",
+        "Vođenje Search, Shopping i/ili PMax kampanja",
+        "Nedeljne optimizacije i A/B testiranje",
         "Mesečni report + strategijski call",
-        "A/B testiranje i pametno skaliranje",
         "Kvartalna strategijska analiza",
-        "Slack/email podrška — odgovor za 24h",
-        "Bez dugoročnih ugovora",
+        "Conversion tracking i analitika",
       ],
       popular: true,
       cta: "Izaberite Standard",
       funkyBadge: false,
     },
     {
-      name: "Premium paket",
-      price: "Po dogovoru",
-      period: "",
+      name: "Starter paket",
+      price: "Od €350",
+      period: "/mes",
+      adSpend: "Ad spend €300-1.000/mes",
       subtitle:
-        "Za tržišne lidere — ili one koji to žele da postanu. Funky Enterprises donosi senior tim kroz sve digitalne kanale i gradi jedinstveni revenue engine za vaš brend.",
+        "Za kompanije koje tek počinju sa Google Ads ili imaju manji budžet.",
       features: [
-        "Paid Search + Paid Social + SEO + CRO",
-        "Demand generation i pipeline arhitektura",
-        "Senior operatori — ne junior account manageri",
-        "Kompletne marketing operacije pod jednim krovom",
-        "Strateško usklađivanje svih kanala",
-        "Merljiv rast fokusiran na prihod",
+        "Setup i vođenje do 2 tipa kampanja",
+        "Optimizacija svake 2 nedelje",
+        "Mesečni report sa ključnim metrikama",
+        "Conversion tracking setup",
       ],
       popular: false,
-      cta: "Zatražite Premium ponudu",
-      funkyBadge: true,
+      cta: "Počnite sa Starter-om",
+      funkyBadge: false,
     },
   ];
 
   const guarantees: { icon: ReactNode; title: string; description: string }[] = [
     {
       icon: <Handshake {...iconProps} className="text-gray-900" />,
-      title: "Bez dugoročnih ugovora",
+      title: "Prvih 90 dana bez rizika",
       description:
-        "Mesec za mesec saradnja. Rezultati me zadržavaju, ne ugovori. Otkažite u bilo kom trenutku sa 30 dana najave.",
+        "Počinjemo sa probnim periodom od 90 dana. Ako ste zadovoljni rezultatima — nastavljamo dugoročno. Ako ne — bez obaveza.",
     },
     {
       icon: <DoorOpen {...iconProps} className="text-gray-900" />,
@@ -356,19 +357,19 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
         "Prve optimizacije počinju odmah. Značajna poboljšanja dolaze nakon 4-6 nedelja, a za punu optimizaciju računajte 2-3 meseca. Google-ovom algoritmu treba vreme da nauči i prilagodi se vašoj specifičnoj publici.",
     },
     {
-      question: "Koji je minimalan budžet za oglašavanje?",
+      question: "Koji je preporučeni budžet za oglašavanje?",
       answer:
-        "Preporučujem minimum €500/mesečno za ad spend za vidljive rezultate. Za budžete ispod toga nudim jednokratne konsultacije gde vas obučim da sami vodite kampanje.",
+        "Najbolje rezultate vidimo kod klijenata koji investiraju €1.000+ mesečno u ad spend. Za manje budžete (€300-1.000) postoji Starter paket sa biweekly optimizacijom. Za budžete ispod €300, preporučujem jednokratnu konsultaciju.",
     },
     {
       question: "Šta ako već imam kampanje koje rade?",
       answer:
-        "Počinjem auditom postojećeg stanja i identifikujem prilike za poboljšanje. Nikada ne rušim ono što funkcioniše — nadograđujem i tražim propuštene prilike.",
+        "Odlično — to je idealna polazna tačka. Počinjem auditom postojećeg stanja i identifikujem prilike za poboljšanje. Nikada ne rušim ono što funkcioniše — nadograđujem i tražim propuštene prilike za rast.",
     },
     {
       question: "Po čemu se razlikujete od agencije?",
       answer:
-        "U agenciji obično dobijete junior account managera. Sa mnom dobijate deceniju direktnog iskustva na svakom nalogu. Bez slojeva, bez delegiranja juniorima, bez generičkih playbook-ova.",
+        "U agenciji obično dobijete junior account managera koji uči na vašem budžetu. Sa mnom dobijate deceniju direktnog iskustva na svakom nalogu. Bez slojeva, bez delegiranja juniorima, bez generičkih playbook-ova. Isti čovek koji pravi strategiju je i onaj koji optimizuje kampanje.",
     },
     {
       question: "Zašto ste skuplji od nekih agencija?",
@@ -376,14 +377,14 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
         "Zato što ne dobijate juniora koji uči na vašem nalogu. Dobijate senior stratega sa decenijom iskustva, custom skripte, AI monitoring i direktan pristup — bez posrednika. Kvalitet košta manje od lošeg rada koji troši vaš budžet.",
     },
     {
-      question: "Da li radite sa malim firmama?",
+      question: "Da li pokrivate i ostale kanale osim Google Ads?",
       answer:
-        "Apsolutno. Google oglašavanje je idealno za male firme jer plaćate samo kada neko klikne. Ključ je pravilna struktura, pametno targetiranje i eliminacija nepotrebnih troškova.",
+        "Da — kroz Premium paket sa Funky Enterprises pokrivamo Google Ads, Meta Ads, SEO, CRO i kompletnu digitalnu strategiju. Conversion tracking, analitika i atribucija su uključeni u svaki paket.",
     },
     {
-      question: "Sa kojim industrijama radite?",
+      question: "Sa kojim tipovima biznisa radite?",
       answer:
-        "Specijalizujem se za eCommerce (Shopping, PMax) i B2B lead generation (Search). Radio sam sa audio opremom, auto delovima, printing-om, streaming servisima, AI platformama, zdravstvom i još mnogo toga.",
+        "Radim sa biznisima koji su spremni da investiraju u rast — od ambicioznih kompanija do etabliranih brendova. Specijalizujem se za eCommerce (Shopping, PMax) i lead generation (Search). Radio sam sa skincare brendovima, auto delovima, printing-om, klinikama, SaaS platformama i još mnogo toga.",
     },
     {
       question: "Da li postoji minimalan period saradnje?",
@@ -393,7 +394,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     {
       question: "Šta se dešava na besplatnom razgovoru?",
       answer:
-        "Pregledam vašu trenutnu Google Ads situaciju (ili vaše tržište ako ste novi), identifikujem najveće prilike i probleme, i dajem vam iskren feedback o tome šta je realno. Bez prodajnog pitch-a — samo podaci.",
+        "Pregledam vašu trenutnu Google Ads situaciju (ili vaše tržište ako ste novi), identifikujem najveće prilike i probleme, i dajem vam iskren feedback o tome šta je realno. Bez prodajnog pitch-a — samo podaci. Ako se kvalifikujete, možete dobiti i besplatnu analizu naloga sa konkretnim akcionim planom.",
     },
   ];
 
@@ -450,73 +451,88 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       {/* ============================================= */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            {/* Micro-label */}
-            <p className="text-yellow-400 text-sm font-semibold mb-4 uppercase tracking-wider">
-              Google Ads ekspert — decenija iskustva u digitalnom oglašavanju
-            </p>
+          <div className="md:flex md:items-center md:gap-12">
+            {/* Left: Content */}
+            <div className="md:flex-1">
+              {/* Micro-label */}
+              <p className="text-yellow-400 text-sm font-semibold mb-4 uppercase tracking-wider">
+                Google Ads ekspert — decenija iskustva
+              </p>
 
-            {/* Urgency badge */}
-            <div className="inline-flex items-center gap-2 bg-red-500/20 border border-red-400/30 text-red-300 text-xs font-medium px-3 py-1.5 rounded-full mb-5">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-400"></span>
-              </span>
-              Primam samo 2 nova klijenta mesečno
+              {/* Urgency badge */}
+              <div className="inline-flex items-center gap-2 bg-red-500/20 border border-red-400/30 text-red-300 text-xs font-medium px-3 py-1.5 rounded-full mb-5">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-400"></span>
+                </span>
+                Trenutno primam samo 2 nova klijenta u aprilu
+              </div>
+
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 leading-tight">
+                Google Ads sistem koji pretvara budžet u{" "}
+                <span className="text-yellow-400">predvidljiv rast</span>
+              </h1>
+
+              <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-xl">
+                Kampanje za srednje i enterprise kompanije koje žele merljive
+                rezultate. Vi se fokusirate na biznis — ja se brinem da vam
+                Google dovodi kupce.
+              </p>
+
+              {/* Stats row */}
+              <div className="grid grid-cols-3 gap-4 mb-10 max-w-lg">
+                {heroStats.map((stat) => (
+                  <div key={stat.value}>
+                    <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">
+                      <AnimatedCounter value={stat.value} />
+                    </p>
+                    <p className="text-xs text-slate-400 mt-1">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="#contact-form" className="btn-secondary text-center">
+                  Zakažite besplatan razgovor
+                </a>
+                <a
+                  href="#how-it-works"
+                  className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
+                >
+                  Pogledajte kako funkcioniše ↓
+                </a>
+              </div>
+
+              {/* Trust badges */}
+              <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
+                <span className="inline-flex items-center gap-1.5">
+                  <Trophy size={14} strokeWidth={1.5} className="text-slate-400" />
+                  3x UK Search Awards
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <Globe size={14} strokeWidth={1.5} className="text-slate-400" />
+                  50+ brendova, 6+ zemalja
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <Handshake size={14} strokeWidth={1.5} className="text-slate-400" />
+                  €2M+ ad spend pod upravljanjem
+                </span>
+              </div>
             </div>
 
-            <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
-              Google oglašavanje koje{" "}
-              <span className="text-yellow-400">zapravo donosi rezultate</span>
-              {" "}— a ne samo klikove
-            </h1>
-
-            <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              Vodim Google kampanje za eCommerce i B2B kompanije koje žele
-              predvidljiv rast. Decenija iskustva, 50+ brendova iz 6 zemalja, i
-              pristup koji se zasniva na podacima — ne na nagađanju. Vi se
-              fokusirate na biznis, ja se brinem da vam Google dovodi kupce.
-            </p>
-
-            {/* Stats row */}
-            <div className="grid grid-cols-3 gap-4 mb-10 max-w-lg">
-              {heroStats.map((stat) => (
-                <div key={stat.value}>
-                  <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">
-                    <AnimatedCounter value={stat.value} />
-                  </p>
-                  <p className="text-xs text-slate-400 mt-1">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contact-form" className="btn-secondary text-center">
-                Zakažite besplatan razgovor
-              </a>
-              <a
-                href="#how-it-works"
-                className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
-              >
-                Pogledajte kako funkcioniše ↓
-              </a>
-            </div>
-
-            {/* Trust badges */}
-            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span className="inline-flex items-center gap-1.5">
-                <Trophy size={14} strokeWidth={1.5} className="text-slate-400" />
-                3x UK Search Awards
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Globe size={14} strokeWidth={1.5} className="text-slate-400" />
-                50+ brendova, 6+ zemalja
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Handshake size={14} strokeWidth={1.5} className="text-slate-400" />
-                Bez dugoročnih ugovora
-              </span>
+            {/* Right: Photo */}
+            <div className="hidden md:block md:flex-shrink-0">
+              <div className="relative w-72 lg:w-80">
+                <Image
+                  src="/sloba.webp"
+                  alt="Slobodan Jelisavac — Google Ads Strategist"
+                  width={400}
+                  height={400}
+                  className="rounded-2xl"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -579,7 +595,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
               Problemi koje ignorišete — a koštaju vas svaki dan
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Većina biznisa sa kojima radim dolazi mi sa istim frustracijama.
+              Većina kompanija sa kojima radim dolazi mi sa istim frustracijama. Prepoznajete li se?
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -605,7 +621,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       <section className="py-10 px-4 md:px-8 bg-primary text-white">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg md:text-xl font-heading font-semibold mb-4">
-            Ako ste se prepoznali u bilo čemu od ovoga — mogu da pomognem.
+            Saznajte koliko ostavljate na stolu
           </p>
           <a href="#contact-form" className="btn-secondary inline-block">
             Zakažite besplatan razgovor
@@ -701,6 +717,43 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             </p>
           </div>
 
+          {/* Additional case studies — grid */}
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 mb-10">
+            {/* MetalFlex RS */}
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
+                eCommerce — Srbija
+              </p>
+              <h4 className="font-heading font-bold text-lg mb-3">
+                Domaći eCommerce sa 40.000+ proizvoda
+              </h4>
+              <div className="flex items-baseline gap-2 mb-3">
+                <span className="text-3xl font-heading font-bold text-green-600">300%+</span>
+                <span className="text-sm text-gray-500">porast poseta i prodaje</span>
+              </div>
+              <p className="text-sm text-gray-600">
+                Kompletan tehnički setup — analitika, tracking, feed optimizacija i aktivacija Search kampanja. Rezultati vidljivi u prvih par meseci saradnje.
+              </p>
+            </div>
+
+            {/* Privatna klinika */}
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
+                Lead Generation — Beograd
+              </p>
+              <h4 className="font-heading font-bold text-lg mb-3">
+                Privatna klinika sa 10 lokacija
+              </h4>
+              <div className="flex items-baseline gap-2 mb-3">
+                <span className="text-3xl font-heading font-bold text-green-600">+320%</span>
+                <span className="text-sm text-gray-500">više upita za isti budžet</span>
+              </div>
+              <p className="text-sm text-gray-600">
+                Restrukturirane Search kampanje, poboljšan Quality Score i optimizovano targetiranje. Isti mesečni budžet, drastično više kvalifikovanih upita.
+              </p>
+            </div>
+          </div>
+
           {/* Testimonial */}
           <div className="max-w-3xl mx-auto bg-gray-50 border-2 border-gray-200 rounded-xl p-8 text-center mb-12">
             <div className="text-4xl mb-4">&ldquo;</div>
@@ -727,10 +780,14 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       <section className="py-16 md:py-24 px-4 md:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="md:flex md:items-start md:gap-10">
-            {/* Photo placeholder */}
-            <div className="w-32 h-32 md:w-48 md:h-48 bg-slate-900 rounded-xl flex-shrink-0 flex items-center justify-center text-white text-4xl mb-6 md:mb-0">
-              {/* Replace with actual Image component when photo is ready */}
-              SJ
+            <div className="w-32 h-32 md:w-48 md:h-48 rounded-xl flex-shrink-0 overflow-hidden mb-6 md:mb-0">
+              <Image
+                src="/sloba.webp"
+                alt="Slobodan Jelisavac"
+                width={192}
+                height={192}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h2 className="text-3xl font-heading font-bold mb-4">
@@ -838,6 +895,39 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       </section>
 
       {/* ============================================= */}
+      {/* SECTION 7b: INDUSTRIES — Results by vertical */}
+      {/* ============================================= */}
+      <section className="py-12 md:py-16 px-4 md:px-8 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3">
+              Industrije u kojima donosimo rezultate
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white border border-gray-200 rounded-lg p-5 text-center shadow-card">
+              <ShoppingCart size={28} strokeWidth={1.5} className="text-gray-900 mx-auto mb-3" />
+              <h3 className="font-heading font-semibold mb-1">eCommerce</h3>
+              <p className="text-sm text-gray-500 mb-2">Skincare, nameštaj, auto delovi, štampa</p>
+              <p className="text-lg font-heading font-bold text-green-600">ROAS 3-5x</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5 text-center shadow-card">
+              <Target size={28} strokeWidth={1.5} className="text-gray-900 mx-auto mb-3" />
+              <h3 className="font-heading font-semibold mb-1">Lokalne usluge</h3>
+              <p className="text-sm text-gray-500 mb-2">Klinike, servisi, hitne službe</p>
+              <p className="text-lg font-heading font-bold text-green-600">+320% poziva</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5 text-center shadow-card">
+              <Building2 size={28} strokeWidth={1.5} className="text-gray-900 mx-auto mb-3" />
+              <h3 className="font-heading font-semibold mb-1">B2B i SaaS</h3>
+              <p className="text-sm text-gray-500 mb-2">Kvalifikovani leadovi, pipeline</p>
+              <p className="text-lg font-heading font-bold text-green-600">CPA &lt; €50</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================= */}
       {/* SECTION 8: WHAT'S INCLUDED */}
       {/* ============================================= */}
       <section className="py-16 md:py-24 px-4 md:px-8 bg-gray-50">
@@ -920,6 +1010,9 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
           <a href="#contact-form" className="btn-secondary inline-block">
             Zakažite besplatan razgovor
           </a>
+          <p className="text-sm text-white/60 mt-3">
+            Trenutno primam samo 2 nova klijenta u aprilu
+          </p>
         </div>
       </section>
 
@@ -1026,6 +1119,17 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                     {tier.period}
                   </span>
                 </p>
+                {tier.adSpend && (
+                  <p
+                    className={`text-xs font-medium mb-2 ${
+                      tier.name.includes("Premium")
+                        ? "text-yellow-400/80"
+                        : "text-primary/70"
+                    }`}
+                  >
+                    {tier.adSpend}
+                  </p>
+                )}
                 <p
                   className={`text-sm mb-4 ${
                     tier.name.includes("Premium")
@@ -1068,7 +1172,9 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                   </div>
                 )}
                 <a
-                  href="#contact-form"
+                  href={tier.name.includes("Premium") ? "https://www.funky.enterprises/full-marketing-operations" : "#contact-form"}
+                  target={tier.name.includes("Premium") ? "_blank" : undefined}
+                  rel={tier.name.includes("Premium") ? "noopener noreferrer" : undefined}
                   className={`block text-center mt-auto ${
                     tier.popular ? "btn-secondary" : "btn-primary"
                   }`}
@@ -1079,12 +1185,18 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             ))}
           </div>
           {/* Cost comparison note */}
-          <div className="text-center mt-8">
-            <p className="text-sm text-gray-500 inline-flex items-center gap-1.5 justify-center w-full">
-              <Lightbulb size={16} strokeWidth={1.5} className="text-gray-400 flex-shrink-0" />
-              U poređenju sa zapošljavanjem in-house PPC specijaliste
-              (€2.000-4.000+/mes), dobijate senior-level ekspertizu za deo cene.
+          <div className="max-w-2xl mx-auto mt-10 bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">
+            <p className="text-base text-gray-700 inline-flex items-center gap-2 justify-center w-full mb-3">
+              <Lightbulb size={20} strokeWidth={1.5} className="text-yellow-500 flex-shrink-0" />
+              <span>In-house PPC zaposleni košta <strong>€1.200-3.000+/mes</strong> (plata + alati + obuke). Sa mnom dobijate senior-level ekspertizu za deo te cene.</span>
             </p>
+            <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-300/40 text-red-600 text-sm font-semibold px-4 py-2 rounded-full">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+              </span>
+              Trenutno primam samo 2 nova klijenta u aprilu
+            </div>
           </div>
         </div>
       </section>
@@ -1109,7 +1221,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 key={guarantee.title}
                 className="bg-white border border-gray-200 rounded-xl p-6 shadow-card text-center"
               >
-                <div className="mb-4">{guarantee.icon}</div>
+                <div className="mb-4 flex justify-center">{guarantee.icon}</div>
                 <h3 className="font-heading font-bold text-lg mb-2">
                   {guarantee.title}
                 </h3>
@@ -1164,11 +1276,21 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
               Zakažite besplatan razgovor
             </h2>
-            <p className="text-slate-300 max-w-xl mx-auto">
+            <p className="text-slate-300 max-w-xl mx-auto mb-6">
               Popunite formular i ja ću lično pregledati vašu situaciju u roku
               od 48 sati. Bez prodajnog pitch-a — samo iskren feedback i
               konkretne preporuke.
             </p>
+
+            {/* Qualification badge */}
+            <div className="inline-flex items-center gap-3 bg-yellow-400/10 border border-yellow-400/30 rounded-lg px-5 py-3">
+              <Lightbulb size={18} strokeWidth={1.5} className="text-yellow-400 flex-shrink-0" />
+              <p className="text-sm text-yellow-200 text-left">
+                Trošite €2.000+ mesečno na Google Ads? Kvalifikujete se za{" "}
+                <span className="font-semibold text-yellow-400">besplatnu analizu naloga</span>{" "}
+                sa konkretnim akcionim planom.
+              </p>
+            </div>
           </div>
 
           {/* Multi-Step Contact Form */}
@@ -1198,6 +1320,9 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
       {/* Social Proof Toast Notifications */}
       <SocialProofToast locale={locale} />
+
+      {/* Exit Intent Popup */}
+      <ExitIntentPopup locale={locale} />
 
       {/* ============================================= */}
       {/* MINIMAL FOOTER */}

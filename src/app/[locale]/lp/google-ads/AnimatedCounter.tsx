@@ -13,10 +13,11 @@ export function AnimatedCounter({ value, className = "" }: AnimatedCounterProps)
   const [hasAnimated, setHasAnimated] = useState(false);
 
   // Parse the numeric part and prefix/suffix
-  const match = value.match(/^([+-]?)(\d+)(.*)/);
-  const prefix = match?.[1] || "";
-  const target = parseInt(match?.[2] || "0", 10);
-  const suffix = match?.[3] || "";
+  // Handles: "180%+", "-35%", "50+", "€2M+", "3.7x"
+  const match = value.match(/^([^0-9+-]*)([+-]?)(\d+)(.*)/);
+  const prefix = (match?.[1] || "") + (match?.[2] || "");
+  const target = parseInt(match?.[3] || "0", 10);
+  const suffix = match?.[4] || "";
 
   useEffect(() => {
     if (hasAnimated || !ref.current) return;

@@ -269,6 +269,22 @@ export default async function ThankYouPage({ params }: Props) {
                 ? "No obligation. No pressure. Just honest conversation."
                 : "Bez obaveze. Bez pritiska. Samo iskren razgovor."}
             </p>
+
+            {/* Qualification upsell hook */}
+            <div className="mt-8 bg-yellow-400/10 border border-yellow-400/30 rounded-lg px-5 py-4 text-left">
+              <p className="text-sm text-yellow-200 mb-1">
+                <span className="font-semibold text-yellow-400">
+                  {locale === "en"
+                    ? "Spending €2,000+/month on Google Ads?"
+                    : "Trošite €2.000+ mesečno na Google Ads?"}
+                </span>
+              </p>
+              <p className="text-xs text-slate-400">
+                {locale === "en"
+                  ? "You qualify for a free in-depth account analysis with a concrete action plan. We'll discuss this on our call."
+                  : "Kvalifikujete se za besplatnu dubinsku analizu naloga sa konkretnim akcionim planom. O tome ćemo razgovarati na pozivu."}
+              </p>
+            </div>
           </div>
         </div>
       </section>
