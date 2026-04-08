@@ -612,8 +612,11 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       {/* ============================================= */}
       <section className="py-10 px-4 md:px-8 bg-primary text-white">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-lg md:text-xl font-heading font-semibold mb-4">
+          <p className="text-lg md:text-xl font-heading font-semibold mb-2">
             Saznajte koliko novca ostavljate na stolu
+          </p>
+          <p className="text-sm text-white/70 mb-5 max-w-xl mx-auto">
+            Prosečan Google Ads nalog gubi 35-45% mesečnog budžeta na ključne reči koje ne konvertuju, loše bid strategije i kampanje koje niko ne optimizuje na vreme.
           </p>
           <a href="#contact-form" className="btn-secondary inline-block">
             Zakažite besplatan razgovor
