@@ -86,7 +86,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       icon: <Frown {...iconProps} className="text-gray-900" />,
       title: "Juniori rade na vašim nalozima",
       description:
-        "Agencija vam je dodelila junior account managera koji uči na vašem budžetu. Dobijate generičke reportove, ali nikada niste videli pravi ROI.",
+        "To je zamka rada sa velikim agencijama. Dodelili su vam junior account managera koji uči na vašem budžetu. Dobijate generičke reportove, ali nikada niste videli pravi ROI.",
     },
     {
       icon: <BarChart3 {...iconProps} className="text-gray-900" />,
@@ -613,7 +613,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       <section className="py-10 px-4 md:px-8 bg-primary text-white">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg md:text-xl font-heading font-semibold mb-4">
-            Saznajte koliko ostavljate na stolu
+            Saznajte koliko novca ostavljate na stolu
           </p>
           <a href="#contact-form" className="btn-secondary inline-block">
             Zakažite besplatan razgovor
