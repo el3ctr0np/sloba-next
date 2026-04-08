@@ -6,6 +6,7 @@ import { MultiStepForm } from "./MultiStepForm";
 import { AnimatedCounter } from "./AnimatedCounter";
 import { SocialProofToast } from "./SocialProofToast";
 import { ExitIntentPopup } from "./ExitIntentPopup";
+import { MobileStickyCTA } from "./MobileStickyCTA";
 import {
   Banknote,
   Frown,
@@ -415,16 +416,9 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
   return (
     <div className="bg-white">
       {/* ============================================= */}
-      {/* STICKY CTA BAR — Mobile only */}
+      {/* STICKY CTA BAR — Mobile only, shows after hero */}
       {/* ============================================= */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-slate-900 border-t border-slate-700 p-3 md:hidden">
-        <a
-          href="#contact-form"
-          className="btn-secondary block text-center text-sm"
-        >
-          Zakažite besplatan razgovor
-        </a>
-      </div>
+      <MobileStickyCTA />
 
       {/* ============================================= */}
       {/* MINI HEADER — Logo + CTA only */}
@@ -548,7 +542,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
           <div className="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-gray-50 to-transparent z-10" />
           <div className="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-gray-50 to-transparent z-10" />
           {/* Scrolling track */}
-          <div className="flex" style={{ animation: "marquee 30s linear infinite" }}>
+          <div className="flex" style={{ animation: "marquee 15s linear infinite" }}>
             {[...clientLogos, ...clientLogos].map((logo, i) => (
               <div
                 key={`${logo.name}-${i}`}
@@ -832,34 +826,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ============================================= */}
-      {/* VIDEO INTRO SECTION */}
-      {/* ============================================= */}
-      <section className="py-16 md:py-20 px-4 md:px-8 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold mb-3">
-            Pogledajte kako radim — za 60 sekundi
-          </h2>
-          <p className="text-gray-600 mb-8 text-sm">
-            Kratki uvod o mom pristupu i šta možete očekivati.
-          </p>
-          {/* Video placeholder — replace with actual video embed */}
-          <div className="relative aspect-video bg-slate-900 rounded-xl overflow-hidden group cursor-pointer shadow-xl">
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-              <div className="w-20 h-20 rounded-full bg-yellow-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
-                <svg
-                  className="w-8 h-8 text-gray-900 ml-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="text-slate-300 text-sm">Video uskoro</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* VIDEO SECTION — removed, may add later */}
 
       {/* ============================================= */}
       {/* SECTION 7: SERVICES — Campaign Types */}
