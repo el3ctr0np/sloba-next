@@ -19,6 +19,7 @@ export const slugMap: Record<string, string> = {
   "kako-poceti-google-ads": "how-to-start-google-ads",
   "rsa-vodic": "responsive-search-ads-guide",
   "ctr-vodic": "ctr-guide",
+  "google-shopping-srbija-2026": "google-shopping-serbia-2026",
 };
 
 // Reverse map: EN slug → SR (canonical) slug

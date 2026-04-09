@@ -3,6 +3,19 @@ import { Link } from "@/i18n/navigation";
 export default function GoogleShoppingVodicPost() {
   return (
     <>
+      <div className="bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-400 rounded-xl p-6 md:p-8 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.2em] text-orange-600 font-bold mb-3">NOVO — Novembar 2026</p>
+        <h3 className="text-xl md:text-2xl font-heading font-bold text-gray-900 mt-0 mb-3">Google Shopping Dolazi u Srbiju!</h3>
+        <p className="text-base md:text-lg text-gray-800 mb-4 leading-relaxed">
+          Google zvanično lansira Shopping Ads u Srbiji u <strong>novembru 2026</strong>, tačno pred Black Friday sezonu. Hrvatska, BiH, Slovenija i Crna Gora dobijaju Shopping u Q4 2026. Ovo je najveća promena srpskog eCommerce-a u zadnjih 10 godina — i vreme za pripremu je sada.
+        </p>
+        <p className="mb-0">
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }} className="inline-block bg-orange-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-700 transition-colors">
+            Pročitaj pillar vodič za 2026 lansiranje →
+          </Link>
+        </p>
+      </div>
+
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">

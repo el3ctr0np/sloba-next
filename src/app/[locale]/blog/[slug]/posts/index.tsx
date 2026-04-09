@@ -5,6 +5,8 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import GoogleShoppingSrbija2026SR from "./google-shopping-srbija-2026/sr";
+import GoogleShoppingSerbiaLaunch2026EN from "./google-shopping-srbija-2026/en";
 import KolikoKostaGoogleAdsSR from "./koliko-kosta-google-ads/sr";
 import GoogleOglasavanjeZaFirmeSR from "./google-oglasavanje-za-firme/sr";
 import PerformanceMaxVodicSR from "./performance-max-vodic/sr";
@@ -60,6 +62,17 @@ export type PostData = {
 
 const srPosts: PostData[] = [
   {
+    slug: "google-shopping-srbija-2026",
+    title: "Google Shopping Dolazi u Srbiju Novembar 2026: Kompletan Vodič za Pripremu",
+    date: "2026-04-09",
+    dateModified: "2026-04-09",
+    category: "Google Shopping",
+    metaDescription:
+      "Google Shopping Ads stiže u Srbiju novembra 2026 i u Hrvatsku Q4 2026. Kompletan vodič sa 15-korak checklist-om, Merchant Center setup, product feed optimizacija, i lekcije iz 2+ godine UK iskustva (Chelleon, £290k+ revenue).",
+    readingTime: "18 min",
+    content: <GoogleShoppingSrbija2026SR />
+  },
+  {
     slug: "koliko-kosta-google-ads",
     title: "Koliko Košta Google Ads? Cene, Budžeti i ROI u Srbiji [2026]",
     date: "2026-01-26",
@@ -106,12 +119,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-shopping-vodic",
-    title: "Google Shopping Kampanje: Kako Povećati ROAS [Vodič 2026]",
+    title: "Google Shopping Kampanje: Kompletan Vodič + 2026 Srbija Launch Priprema",
     date: "2026-01-26",
-    dateModified: "2026-02-03",
+    dateModified: "2026-04-09",
     category: "Google Shopping",
     metaDescription:
-      "Kompletan vodič za Google Shopping kampanje. Product feed optimizacija, struktura kampanja, bidding strategije i taktike za povećanje ROAS-a — sve bazirano na realnim rezultatima.",
+      "Google Shopping vodič sa 2+ godine UK iskustva (Chelleon £290k+): product feed optimizacija, 10 obaveznih atributa, struktura kampanja, i priprema za lansiranje u Srbiji novembar 2026.",
     readingTime: "16 min",
     content: <GoogleShoppingVodicSR />
   },
@@ -272,6 +285,17 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "google-shopping-serbia-2026",
+    title: "Google Shopping Launches in Serbia November 2026: Complete Preparation Guide",
+    date: "2026-04-09",
+    dateModified: "2026-04-09",
+    category: "Google Shopping",
+    metaDescription:
+      "Google Shopping Ads launches in Serbia in November 2026 and across Croatia, BiH and Slovenia in Q4 2026. Full guide with 15-step checklist, Merchant Center setup, product feed optimisation, and lessons from 2+ years of UK Shopping campaigns (Chelleon, £290k+ revenue).",
+    readingTime: "18 min",
+    content: <GoogleShoppingSerbiaLaunch2026EN />
+  },
   {
     slug: "how-much-does-google-ads-cost",
     title: "How Much Does Google Ads Cost? Prices, Budgets & ROI [2026]",
