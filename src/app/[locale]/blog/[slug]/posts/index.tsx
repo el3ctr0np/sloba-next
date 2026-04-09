@@ -84,12 +84,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "performance-max-vodic",
-    title: "Performance Max Kampanje: Vodič za eCommerce i B2B [2026]",
+    title: "Performance Max (PMax): Kompletan Vodič za 2026 + Asset Grupa Template",
     date: "2026-01-26",
-    dateModified: "2026-01-31",
+    dateModified: "2026-04-09",
     category: "Performance Max",
     metaDescription:
-      "Sve o Performance Max kampanjama — kako rade, kada ih koristiti, struktura, asset grupe, i strategije optimizacije. Vodič baziran na realnim rezultatima iz regiona.",
+      "Kako da pokreneš Performance Max kampanju koja donosi 3-4x ROAS: struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje vidim svaki mesec u 10+ naloga.",
     readingTime: "14 min",
     content: <PerformanceMaxVodicSR />
   },
@@ -194,12 +194,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "kljucne-reci-vodic",
-    title: "Ključne Reči za Google Ads: Kompletan Vodič [2026]",
+    title: "Ključne Reči za Google Ads: Kako Ih Naći u 30 Minuta [Vodič 2026]",
     date: "2026-01-27",
-    dateModified: "2026-01-29",
+    dateModified: "2026-04-09",
     category: "Google Ads keywords",
     metaDescription:
-      "Sve o ključnim rečima za Google Ads — istraživanje, selekcija, organizacija i optimizacija. Naučite kako da pronađete keywords koji donose konverzije, ne samo klikove.",
+      "Vodič za istraživanje ključnih reči u Google Ads: 7 besplatnih alata, match types (broad/phrase/exact), negative keywords, i šablon za organizaciju 100+ keyword-a u ad groups. Koraci koje koristim u praksi.",
     readingTime: "14 min",
     content: <KljucneReciVodicSR />
   },
@@ -227,12 +227,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "remarketing-vodic",
-    title: "Google Ads Remarketing: Kompletan Vodič [2026]",
+    title: "Google Ads Remarketing: 7 Audience Lista za 4x ROAS [Vodič 2026]",
     date: "2026-01-27",
-    dateModified: "2026-02-11",
+    dateModified: "2026-04-09",
     category: "Google Ads",
     metaDescription:
-      "Naučite kako da pokrenete Google Ads remarketing kampanje koje vraćaju posetioce i smanjuju CPA za 50-70%. Vodič sa segmentacijom, strategijama i realnim primerima.",
+      "Kako da postaviš remarketing u Google Ads: 7 audience lista koje rade (cart abandoners, 30-day viewers, video viewers), GA4 integracija, i zašto većina kampanja smanji CPA za 50-70%.",
     readingTime: "15 min",
     content: <RemarketingVodicSR />
   },
@@ -249,23 +249,23 @@ const srPosts: PostData[] = [
   },
   {
     slug: "rsa-vodic",
-    title: "RSA Vodič: Responsive Search Ads Framework koji Stvarno Radi [2026]",
+    title: "Responsive Search Ads (RSA): Character Limits + 15 Headline Primera [2026]",
     date: "2026-03-14",
-    dateModified: "2026-03-14",
+    dateModified: "2026-04-09",
     category: "Google Ads",
     metaDescription:
-      "Responsive Search Ads framework sa 7-8 headline-ova umesto 15, angle-based distribucija, testiranje i optimizacija. Vodič baziran na podacima iz State of PPC 2026 i realnim kampanjama.",
+      "Kompletan vodič za RSA oglase u Google Ads: character limit-i za headlines (30) i descriptions (90), 15 headline primera koji rade, i zašto 7-8 bolje od 15. Realni podaci iz 50+ naloga.",
     readingTime: "14 min",
     content: <RsaVodicSR />
   },
   {
     slug: "ctr-vodic",
-    title: "CTR (Click-Through Rate): Šta Je, Formula i Kako Poboljšati [2026]",
+    title: "Šta je CTR (Click-Through Rate) i Kako Ga Podići sa 2% na 8% [2026]",
     date: "2026-03-24",
-    dateModified: "2026-03-24",
+    dateModified: "2026-04-09",
     category: "Google Ads",
     metaDescription:
-      "Šta je CTR (Click-Through Rate) u Google Ads? Formula, benchmarks za Srbiju (5-10%+), dijagnostika niskog CTR-a, i 7 proverenih taktika za poboljšanje iz prakse.",
+      "CTR formula, realni benchmarks za Srbiju (Search 5-10%, Display 0.5-1%), dijagnostika niskog CTR-a, i 7 taktika koje sam koristio za 4x poboljšanje u 30 naloga.",
     readingTime: "12 min",
     content: <CtrVodicSR />
   }
