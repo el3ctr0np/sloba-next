@@ -8,11 +8,14 @@ import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
 import { MobileTOC } from "@/components/blog/MobileTOC";
 import {
   getPost,
+  getNextPost,
   getAllSlugs,
   getCanonicalSlug,
   getAlternateSlug,
   slugMap
 } from "./posts";
+import { BlogCTA } from "@/components/blog/BlogCTA";
+import { ReadNext } from "@/components/blog/ReadNext";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -967,26 +970,26 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="sticky top-24 space-y-4">
                 <TableOfContents locale={locale} />
                 <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-                  <div className="text-sm uppercase tracking-wide text-gray-500">
-                    {locale === "en" ? "Free analysis" : "Besplatna analiza"}
+                  <div className="text-xs uppercase tracking-wider text-yellow-600 font-bold">
+                    {locale === "en" ? "Free — limited spots" : "Besplatno — ogranicen broj mesta"}
                   </div>
                   <h2 className="mt-2 text-lg font-heading font-semibold">
                     {locale === "en"
-                      ? "Want a campaign audit?"
-                      : "Želite audit kampanja"}
+                      ? "Get Your Free Action Plan"
+                      : "Besplatan Akcioni Plan"}
                   </h2>
                   <p className="mt-2 text-sm text-gray-600">
                     {locale === "en"
-                      ? "Get a clear picture of your performance and actionable first steps for optimization."
-                      : "Dobijte jasnu sliku performansi i prve korake za optimizaciju."}
+                      ? "60-min deep dive into your account. Written plan with specific next steps. Value: \u20AC300."
+                      : "60 min analize tvog naloga. Pisan plan sa konkretnim koracima. Vrednost: \u20AC300."}
                   </p>
                   <Link
                     href="/kontakt"
-                    className="btn-secondary inline-block mt-4 w-full text-center"
+                    className="bg-slate-900 text-white font-bold inline-block mt-4 w-full text-center py-2.5 px-4 rounded-lg hover:bg-slate-800 transition-colors text-sm"
                   >
                     {locale === "en"
-                      ? "Book a consultation"
-                      : "Zakažite konsultacije"}
+                      ? "Book Free Audit \u2192"
+                      : "Zakazi besplatan audit \u2192"}
                   </Link>
                 </div>
               </div>
@@ -1012,6 +1015,20 @@ export default async function BlogPostPage({ params }: Props) {
                 {post.content}
               </div>
               <AuthorBox locale={locale} />
+              <BlogCTA locale={locale} variant="bottom" />
+              {(() => {
+                const next = getNextPost(slug, locale);
+                if (!next || next.slug === slug) return null;
+                return (
+                  <ReadNext
+                    locale={locale}
+                    nextSlug={next.slug}
+                    nextTitle={next.title}
+                    nextCategory={next.category}
+                    nextReadingTime={next.readingTime}
+                  />
+                );
+              })()}
             </article>
           </div>
         </div>

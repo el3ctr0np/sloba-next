@@ -1,12 +1,18 @@
+import Image from "next/image";
+
 export function AuthorBox({ locale }: { locale: string }) {
   const isEn = locale === "en";
 
   return (
     <aside className="mt-12 pt-8 border-t border-gray-200">
       <div className="flex items-start gap-4">
-        <div className="w-16 h-16 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold text-xl shrink-0">
-          SJ
-        </div>
+        <Image
+          src="/slobodan-jelisavac-photo.png"
+          alt="Slobodan Jelisavac"
+          width={64}
+          height={64}
+          className="w-16 h-16 rounded-full object-cover shrink-0"
+        />
         <div>
           <p className="font-heading font-bold text-lg text-slate-900">
             Slobodan Jelisavac

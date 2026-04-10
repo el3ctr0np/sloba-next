@@ -521,6 +521,14 @@ export function getAllSlugs(locale?: string): string[] {
   return srPosts.map((p) => p.slug);
 }
 
+/** Get the next post in the list (for "Read Next" navigation) */
+export function getNextPost(slug: string, locale: string): PostData | undefined {
+  const posts = locale === "en" ? enPosts : srPosts;
+  const idx = posts.findIndex((p) => p.slug === slug);
+  if (idx === -1 || idx >= posts.length - 1) return posts[0]; // wrap to first
+  return posts[idx + 1];
+}
+
 /** Check if a slug is a valid SR slug that has an EN equivalent */
 export function isCanonicalSlug(slug: string): boolean {
   return slug in slugMap;
