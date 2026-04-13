@@ -7,6 +7,8 @@ export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-m
 // Serbian post imports
 import GoogleAdsNovosti2026SR from "./google-ads-novosti-2026/sr";
 import GoogleAdsUpdates2026EN from "./google-ads-novosti-2026/en";
+import YouTubeOglasavanjeVodicSR from "./youtube-oglasavanje-vodic/sr";
+import YouTubeAdvertisingGuideEN from "./youtube-oglasavanje-vodic/en";
 import GoogleShoppingSrbija2026SR from "./google-shopping-srbija-2026/sr";
 import GoogleShoppingSerbiaLaunch2026EN from "./google-shopping-srbija-2026/en";
 import KolikoKostaGoogleAdsSR from "./koliko-kosta-google-ads/sr";
@@ -73,6 +75,17 @@ const srPosts: PostData[] = [
       "Sve Google Ads promene i novosti za 2026 na jednom mestu. Shopping lansiranje u Srbiji, AI Max Text Guidelines, PMax transparentnost, Editor 2.12. Ažurirano mesečno.",
     readingTime: "12 min",
     content: <GoogleAdsNovosti2026SR />
+  },
+  {
+    slug: "youtube-oglasavanje-vodic",
+    title: "YouTube Oglašavanje: Kompletan Vodič za Video Kampanje [2026]",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    category: "YouTube Ads",
+    metaDescription:
+      "Kompletan vodič za YouTube oglašavanje u 2026: 6 formata oglasa (Skippable, Bumper, Shorts, In-Feed), targeting opcije, troškovi (CPV €0.02-0.03), i strategije za eCommerce i B2B. Bazirano na iskustvu sa 10+ naloga.",
+    readingTime: "16 min",
+    content: <YouTubeOglasavanjeVodicSR />
   },
   {
     slug: "google-shopping-srbija-2026",
@@ -308,6 +321,17 @@ const enPosts: PostData[] = [
       "All major Google Ads changes in 2026 in one place. Shopping launch in Serbia, AI Max Text Guidelines, PMax Channel Performance, Editor 2.12. Updated monthly.",
     readingTime: "12 min",
     content: <GoogleAdsUpdates2026EN />
+  },
+  {
+    slug: "youtube-advertising-guide",
+    title: "YouTube Advertising: Complete Guide to Video Campaigns [2026]",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    category: "YouTube Ads",
+    metaDescription:
+      "Complete YouTube advertising guide for 2026: 6 ad formats, targeting options, costs (CPV benchmarks), and strategies for eCommerce and B2B. Based on experience managing 10+ accounts.",
+    readingTime: "16 min",
+    content: <YouTubeAdvertisingGuideEN />
   },
   {
     slug: "google-shopping-serbia-2026",

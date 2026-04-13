@@ -1,5 +1,6 @@
 // Canonical (SR) slug → EN slug mapping
 export const slugMap: Record<string, string> = {
+  "youtube-oglasavanje-vodic": "youtube-advertising-guide",
   "koliko-kosta-google-ads": "how-much-does-google-ads-cost",
   "google-oglasavanje-za-firme": "google-advertising-for-businesses",
   "performance-max-vodic": "performance-max-guide",
