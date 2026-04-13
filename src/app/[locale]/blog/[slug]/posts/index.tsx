@@ -5,6 +5,8 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import GoogleAdsNovosti2026SR from "./google-ads-novosti-2026/sr";
+import GoogleAdsUpdates2026EN from "./google-ads-novosti-2026/en";
 import GoogleShoppingSrbija2026SR from "./google-shopping-srbija-2026/sr";
 import GoogleShoppingSerbiaLaunch2026EN from "./google-shopping-srbija-2026/en";
 import KolikoKostaGoogleAdsSR from "./koliko-kosta-google-ads/sr";
@@ -61,6 +63,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "google-ads-novosti-2026",
+    title: "Google Ads Novosti i Promene 2026 [Ažurirano Mesečno]",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    category: "Google Ads",
+    metaDescription:
+      "Sve Google Ads promene i novosti za 2026 na jednom mestu. Shopping lansiranje u Srbiji, AI Max Text Guidelines, PMax transparentnost, Editor 2.12. Ažurirano mesečno.",
+    readingTime: "12 min",
+    content: <GoogleAdsNovosti2026SR />
+  },
   {
     slug: "google-shopping-srbija-2026",
     title: "Google Shopping Dolazi u Srbiju Novembar 2026: Kompletan Vodič za Pripremu",
@@ -285,6 +298,17 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "google-ads-updates-2026",
+    title: "Google Ads News & Updates 2026 [Updated Monthly]",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    category: "Google Ads",
+    metaDescription:
+      "All major Google Ads changes in 2026 in one place. Shopping launch in Serbia, AI Max Text Guidelines, PMax Channel Performance, Editor 2.12. Updated monthly.",
+    readingTime: "12 min",
+    content: <GoogleAdsUpdates2026EN />
+  },
   {
     slug: "google-shopping-serbia-2026",
     title: "Google Shopping Launches in Serbia November 2026: Complete Preparation Guide",

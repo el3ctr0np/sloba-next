@@ -976,12 +976,12 @@ export default async function BlogPostPage({ params }: Props) {
                   <h2 className="mt-2 text-lg font-heading font-semibold">
                     {locale === "en"
                       ? "Get a Video Walkthrough of Your Account"
-                      : "Video pregled tvog naloga"}
+                      : "Video pregled vašeg naloga"}
                   </h2>
                   <p className="mt-2 text-sm text-gray-600">
                     {locale === "en"
                       ? "5-min personalised video showing where you're losing money. Requires €3,000+/mo ad spend."
-                      : "5-min personalizovani video gde pokazujem gde gubis novac. Uslov: €1,000+/mes ad spend."}
+                      : "5-min personalizovani video gde pokazujemo gde gubite novac. Uslov: €1,000+/mes ad spend."}
                   </p>
                   <Link
                     href="/kontakt"
@@ -989,7 +989,7 @@ export default async function BlogPostPage({ params }: Props) {
                   >
                     {locale === "en"
                       ? "Apply for video audit \u2192"
-                      : "Apliciraj za video audit \u2192"}
+                      : "Aplicirajte za video audit \u2192"}
                   </Link>
                 </div>
               </div>
