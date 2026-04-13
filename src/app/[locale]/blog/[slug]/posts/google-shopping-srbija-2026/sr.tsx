@@ -116,13 +116,13 @@ export default function GoogleShoppingSrbija2026SR() {
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Razlog #4</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">KupujemProdajem disrupcija</h3>
-          <p className="text-sm text-gray-600 mb-0">Shopping direktno konkuriše marketplace-ima. Kupci koji traže "kuhinjski robotIzetbegović" mogu naći vaš shop pre KupujemProdajem lista — bez marketplace provizije.</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Direktan kanal bez marketplace provizije</h3>
+          <p className="text-sm text-gray-600 mb-0">Shopping stavlja vaš proizvod direktno u Google pretragu. Kupac koji traži "robot usisivač" vidi vaš shop sa cenom i slikom — bez posrednika, bez provizije, sa punom kontrolom nad korisničkim iskustvom.</p>
         </div>
       </div>
 
       <p>
-        Prema Slobodanu Jelisavacu, Google Ads konsultantu sa 2+ godine Shopping iskustva na UK tržištu: "KupujemProdajem je dominantan jer Google Shopping nije postojao kao opcija. Od novembra 2026, srpski eCommerce brendovi imaju direktan kanal bez marketplace provizije, sa boljim targeting-om i atribucijom. Ovo je moment koji se dešava jednom."
+        Radeći 2+ godine na UK tržištu gde je Shopping standard, video sam koliko se percepcija kupca menja kad mu se proizvod prikaže vizuelno, sa cenom i recenzijama, direktno u pretrazi. U Srbiji su se ljudi godinama oslanjali na marketplace-ove — KupujemProdajem, razne oglase — gde ništa nije bilo sortirano kako treba, prilagođeno korisničkom iskustvu kakvo Google Shopping pruža. Mislim da će ovo biti veliki bum — i za brendove koji prodaju, i za kupce koji konačno dobijaju pregled proizvoda kakav zaslužuju.
       </p>
 
       <hr />
@@ -462,7 +462,7 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <h2>Moje iskustvo: 2+ godine Shopping kampanja u UK (Chelleon)</h2>
       <p>
-        Ne pišem ovo iz teorije. Više od 2 godine vodim Google Shopping kampanje za Chelleon UK — premium skincare eCommerce brend koji posluje na UK tržištu sa mesečnim ad spend-om do £8,000.
+        Ovo ne pišem iz teorije — vodim Shopping kampanje za jedan UK brend već više od 2 godine. Chelleon je premium skincare eCommerce sa mesečnim ad spend-om do £8,000. Kroz taj period naučio sam koliko je data feed kritičan za uspeh — bukvalno 80% performansi zavisi od kvaliteta feed-a, ne od bidding-a. Taj insight sam preneo na sve nove kampanje i to je prva stvar koju proveravam kod svakog klijenta.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
@@ -884,21 +884,37 @@ export default function GoogleShoppingSrbija2026SR() {
 
       {/* CTA block */}
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
-        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Besplatna ponuda</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">Za ozbiljne brendove</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
-        <p className="text-slate-300 text-sm mb-2 max-w-xl">
-          Pre novembra 2026, proći ću kroz vaš sajt, katalog i trenutni setup i dati vam konkretan plan za pripremu — bez teorije, samo akcioni koraci.
+        <p className="text-slate-300 text-sm mb-4 max-w-xl">
+          Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre novembra ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu.
         </p>
-        <ul className="text-slate-300 text-sm mb-5 space-y-1">
-          <li>Trajanje: 60 minuta (online)</li>
-          <li>Vrednost: €300 — besplatno za prvih 3 biznisa nedeljno</li>
-          <li>Šta dobijate: personalizovani checklist, feed gap analiza, budžet preporuka</li>
-          <li>Ko može: srpski eCommerce sa 50+ SKU-ova i aktivnim sajtom</li>
-        </ul>
-        <Link href="/kontakt" className="btn-secondary inline-block">
-          Zakažite besplatni pre-launch audit
-        </Link>
-        <p className="text-slate-500 text-xs mt-3 mb-0">Limit: 3 audita nedeljno. Slobodna mesta su ograničena.</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+          <div className="bg-white/5 border border-white/10 rounded-lg p-4">
+            <p className="text-yellow-400 font-bold text-sm mb-2">Besplatan audit (€3,000+/mes ad spend)</p>
+            <ul className="text-slate-300 text-sm space-y-1">
+              <li>60 minuta dubinske analize (online)</li>
+              <li>Feed gap analiza + budžet preporuka</li>
+              <li>Personalizovani Shopping launch checklist</li>
+            </ul>
+            <Link href="/kontakt" className="btn-secondary inline-block mt-3 text-sm">
+              Zakaži besplatan audit →
+            </Link>
+          </div>
+          <div className="bg-white/5 border border-white/10 rounded-lg p-4">
+            <p className="text-slate-300 font-bold text-sm mb-2">Svi ostali brendovi</p>
+            <ul className="text-slate-300 text-sm space-y-1">
+              <li>Pošaljite upit sa informacijama o vašem brendu</li>
+              <li>Odgovorićemo da li je vaš brend spreman za Shopping</li>
+              <li>Bez obaveze — samo procena spremnosti</li>
+            </ul>
+            <Link href="/kontakt" className="text-sm text-yellow-400 hover:underline inline-block mt-3">
+              Pošalji upit →
+            </Link>
+          </div>
+        </div>
+        <p className="text-slate-500 text-xs mb-0">Besplatni auditi: ograničeno na 3 nedeljno. Pravo na besplatan audit imaju brendovi sa aktivnim ad spend-om od €3,000+/mes.</p>
       </div>
     </>
   );
