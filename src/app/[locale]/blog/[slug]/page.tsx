@@ -971,25 +971,25 @@ export default async function BlogPostPage({ params }: Props) {
                 <TableOfContents locale={locale} />
                 <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
                   <div className="text-xs uppercase tracking-wider text-yellow-600 font-bold">
-                    {locale === "en" ? "Free — limited spots" : "Besplatno — ogranicen broj mesta"}
+                    {locale === "en" ? "Free video audit" : "Besplatni video audit"}
                   </div>
                   <h2 className="mt-2 text-lg font-heading font-semibold">
                     {locale === "en"
-                      ? "Get Your Free Action Plan"
-                      : "Besplatan Akcioni Plan"}
+                      ? "Get a Video Walkthrough of Your Account"
+                      : "Video pregled tvog naloga"}
                   </h2>
                   <p className="mt-2 text-sm text-gray-600">
                     {locale === "en"
-                      ? "60-min deep dive into your account. Written plan with specific next steps. Value: \u20AC300."
-                      : "60 min analize tvog naloga. Pisan plan sa konkretnim koracima. Vrednost: \u20AC300."}
+                      ? "5-min personalised video showing where you're losing money. Requires €3,000+/mo ad spend."
+                      : "5-min personalizovani video gde pokazujem gde gubis novac. Uslov: €1,000+/mes ad spend."}
                   </p>
                   <Link
                     href="/kontakt"
                     className="bg-slate-900 text-white font-bold inline-block mt-4 w-full text-center py-2.5 px-4 rounded-lg hover:bg-slate-800 transition-colors text-sm"
                   >
                     {locale === "en"
-                      ? "Book Free Audit \u2192"
-                      : "Zakazi besplatan audit \u2192"}
+                      ? "Apply for video audit \u2192"
+                      : "Apliciraj za video audit \u2192"}
                   </Link>
                 </div>
               </div>
