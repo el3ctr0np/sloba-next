@@ -918,7 +918,7 @@ export default async function BlogPostPage({ params }: Props) {
   };
 
   return (
-    <div className="bg-slate-950 text-white">
+    <div className={post.featuredImage ? "bg-white" : "bg-slate-950 text-white"}>
       <ReadingProgressBar />
       <MobileTOC locale={locale} />
       <script
@@ -935,54 +935,95 @@ export default async function BlogPostPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
-      <section className="relative overflow-hidden pt-16 pb-28 md:pt-24 md:pb-32">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.25),_transparent_55%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.85),rgba(2,6,23,1))]" />
-        <div className="container-custom px-4 relative">
-          <p className="text-xs uppercase tracking-[0.25em] text-slate-300">
-            Blog
-          </p>
-          <h1 className="mt-4 text-3xl md:text-5xl font-heading font-bold max-w-4xl">
-            {post.title}
-          </h1>
-          <p className="mt-4 text-sm text-slate-300">
-            <Link href="/blog" className="underline">
-              Blog
-            </Link>{" "}
-            <span className="mx-2">|</span>
-            {post.category}
-            <span className="mx-2">|</span>
-            {post.date}
-            {post.readingTime && (
-              <>
-                <span className="mx-2">|</span>
-                {post.readingTime}
-              </>
-            )}
-          </p>
-        </div>
-      </section>
 
-      {/* Featured Image — full-width banner between hero and article */}
-      {post.featuredImage && (
-        <section className="bg-slate-950 pb-0">
-          <div className="container-custom px-4 -mt-12 md:-mt-16 relative z-10">
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-800 max-w-5xl mx-auto">
-              <Image
-                src={post.featuredImage}
-                alt={post.title}
-                width={1200}
-                height={630}
-                className="w-full h-auto"
-                priority
-              />
+      {post.featuredImage ? (
+        // Light hero with side-by-side layout (image right, content left)
+        <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/30 border-b border-gray-100">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(59,130,246,0.08),_transparent_60%)]" />
+          <div className="container-custom px-4 relative pt-12 pb-12 md:pt-20 md:pb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-center">
+              {/* Left: Title + meta */}
+              <div className="order-2 lg:order-1">
+                <nav className="mb-4 text-xs uppercase tracking-[0.2em] text-gray-500">
+                  <Link href="/blog" className="hover:text-primary transition-colors">
+                    Blog
+                  </Link>
+                  <span className="mx-2 text-gray-300">/</span>
+                  <span className="text-gray-700">{post.category}</span>
+                </nav>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-slate-900 leading-tight mb-5">
+                  {post.title}
+                </h1>
+                <div className="flex flex-wrap items-center gap-3 text-sm text-gray-500">
+                  <span className="inline-flex items-center gap-1.5">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    {post.date}
+                  </span>
+                  {post.readingTime && (
+                    <>
+                      <span className="text-gray-300">•</span>
+                      <span className="inline-flex items-center gap-1.5">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        {post.readingTime}
+                      </span>
+                    </>
+                  )}
+                </div>
+              </div>
+
+              {/* Right: Featured image */}
+              <div className="order-1 lg:order-2">
+                <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
+                  <Image
+                    src={post.featuredImage}
+                    alt={post.title}
+                    width={1200}
+                    height={630}
+                    className="w-full h-auto"
+                    priority
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+      ) : (
+        // Original dark hero (fallback for posts without image)
+        <section className="relative overflow-hidden pt-16 pb-28 md:pt-24 md:pb-32 bg-slate-950 text-white">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.25),_transparent_55%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.85),rgba(2,6,23,1))]" />
+          <div className="container-custom px-4 relative">
+            <p className="text-xs uppercase tracking-[0.25em] text-slate-300">
+              Blog
+            </p>
+            <h1 className="mt-4 text-3xl md:text-5xl font-heading font-bold max-w-4xl">
+              {post.title}
+            </h1>
+            <p className="mt-4 text-sm text-slate-300">
+              <Link href="/blog" className="underline">
+                Blog
+              </Link>{" "}
+              <span className="mx-2">|</span>
+              {post.category}
+              <span className="mx-2">|</span>
+              {post.date}
+              {post.readingTime && (
+                <>
+                  <span className="mx-2">|</span>
+                  {post.readingTime}
+                </>
+              )}
+            </p>
           </div>
         </section>
       )}
 
       <section className="bg-slate-100 text-gray-900 pb-16">
-        <div className={`container-custom px-4 ${post.featuredImage ? 'pt-12 md:pt-16' : '-mt-16'}`}>
+        <div className={`container-custom px-4 ${post.featuredImage ? 'pt-12' : '-mt-16'}`}>
           <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8">
             <aside className="hidden lg:block">
               <div className="sticky top-24 space-y-4">
