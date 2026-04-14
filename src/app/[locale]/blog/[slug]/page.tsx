@@ -963,8 +963,26 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Featured Image — full-width banner between hero and article */}
+      {post.featuredImage && (
+        <section className="bg-slate-950 pb-0">
+          <div className="container-custom px-4 -mt-12 md:-mt-16 relative z-10">
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-800 max-w-5xl mx-auto">
+              <Image
+                src={post.featuredImage}
+                alt={post.title}
+                width={1200}
+                height={630}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="bg-slate-100 text-gray-900 pb-16">
-        <div className="container-custom px-4 -mt-16">
+        <div className={`container-custom px-4 ${post.featuredImage ? 'pt-12 md:pt-16' : '-mt-16'}`}>
           <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8">
             <aside className="hidden lg:block">
               <div className="sticky top-24 space-y-4">
@@ -996,18 +1014,6 @@ export default async function BlogPostPage({ params }: Props) {
             </aside>
 
             <article className="bg-white border border-gray-200 rounded-xl p-6 md:p-12 shadow-card">
-              {post.featuredImage && (
-                <div className="mb-8 -mx-6 md:-mx-12 -mt-6 md:-mt-12">
-                  <Image
-                    src={post.featuredImage}
-                    alt={post.title}
-                    width={1200}
-                    height={630}
-                    className="w-full h-auto rounded-t-xl"
-                    priority
-                  />
-                </div>
-              )}
               <div className="text-sm text-gray-500 mb-4">
                 {post.category} · {post.date}{post.readingTime && ` · ${post.readingTime}`}
               </div>

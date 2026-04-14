@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Card } from "@/components/ui";
 import { slugMap } from "./[slug]/posts/slug-map";
+import { getPost } from "./[slug]/posts";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
@@ -474,28 +476,45 @@ function ChapterSection({ chapter, locale }: { chapter: Chapter; locale: string 
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-        {chapter.posts.map((post, index) => (
-          <Link key={post.slug} href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }} className="no-underline">
-            <Card className="h-full">
-              <div className="flex items-center justify-between text-sm text-gray-500 mb-3">
-                <span className="bg-gray-100 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded">
-                  {chapter.number}.{index + 1}
-                </span>
-                <span className="text-xs">
-                  {post.readTime} {locale === "en" ? "read" : "čitanja"}
-                </span>
-              </div>
-              <h3 className="text-lg font-heading font-bold mb-2 text-gray-900">
-                {post.title}
-              </h3>
-              <p className="text-gray-600 text-sm mb-3">{post.excerpt}</p>
-              <span className="text-primary font-medium text-sm">
-                {locale === "en" ? "Read guide →" : "Pročitaj vodič →"}
-              </span>
-            </Card>
-          </Link>
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        {chapter.posts.map((post, index) => {
+          const postData = getPost(post.slug, locale);
+          const featuredImage = postData?.featuredImage;
+          return (
+            <Link key={post.slug} href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }} className="no-underline group">
+              <Card className="h-full p-0 overflow-hidden hover:shadow-xl transition-shadow">
+                {featuredImage && (
+                  <div className="relative aspect-[1200/630] bg-slate-100 overflow-hidden">
+                    <Image
+                      src={featuredImage}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="p-6">
+                  <div className="flex items-center justify-between text-sm text-gray-500 mb-3">
+                    <span className="bg-gray-100 text-gray-700 text-xs font-semibold px-2 py-0.5 rounded">
+                      {chapter.number}.{index + 1}
+                    </span>
+                    <span className="text-xs">
+                      {post.readTime} {locale === "en" ? "read" : "čitanja"}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-heading font-bold mb-2 text-gray-900 group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">{post.excerpt}</p>
+                  <span className="text-primary font-medium text-sm">
+                    {locale === "en" ? "Read guide →" : "Pročitaj vodič →"}
+                  </span>
+                </div>
+              </Card>
+            </Link>
+          );
+        })}
       </div>
     </section>
   );

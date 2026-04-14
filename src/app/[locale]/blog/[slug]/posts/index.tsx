@@ -73,6 +73,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Sve Google Ads promene i novosti za 2026 na jednom mestu. Shopping lansiranje u Srbiji, AI Max Text Guidelines, PMax transparentnost, Editor 2.12. Ažurirano mesečno.",
+    featuredImage: "/blog/google-ads-novosti-2026.webp",
     readingTime: "12 min",
     content: <GoogleAdsNovosti2026SR />
   },
@@ -84,6 +85,7 @@ const srPosts: PostData[] = [
     category: "YouTube Ads",
     metaDescription:
       "Kompletan vodič za YouTube oglašavanje u 2026: 6 formata oglasa (Skippable, Bumper, Shorts, In-Feed), targeting opcije, troškovi (CPV €0.02-0.03), i strategije za eCommerce i B2B. Bazirano na iskustvu sa 10+ naloga.",
+    featuredImage: "/blog/youtube-oglasavanje-vodic.webp",
     readingTime: "16 min",
     content: <YouTubeOglasavanjeVodicSR />
   },
@@ -95,6 +97,7 @@ const srPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Google Shopping Ads stiže u Srbiju novembra 2026 i u Hrvatsku Q4 2026. Kompletan vodič sa 15-korak checklist-om, Merchant Center setup, product feed optimizacija, i lekcije iz 2+ godine UK iskustva (Chelleon, £290k+ revenue).",
+    featuredImage: "/blog/google-shopping-srbija-2026.webp",
     readingTime: "18 min",
     content: <GoogleShoppingSrbija2026SR />
   },
@@ -118,6 +121,7 @@ const srPosts: PostData[] = [
     category: "Google oglašavanje",
     metaDescription:
       "Kompletan vodič za Google oglašavanje prilagođen firmama. Strategije za B2B i eCommerce, tipovi kampanja, budžetiranje i merenje rezultata — sve na jednom mestu.",
+    featuredImage: "/blog/google-oglasavanje-za-firme.webp",
     readingTime: "15 min",
     content: <GoogleOglasavanjeZaFirmeSR />
   },
@@ -129,6 +133,7 @@ const srPosts: PostData[] = [
     category: "Performance Max",
     metaDescription:
       "Kako da pokreneš Performance Max kampanju koja donosi 3-4x ROAS: struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje vidim svaki mesec u 10+ naloga.",
+    featuredImage: "/blog/performance-max-vodic.webp",
     readingTime: "14 min",
     content: <PerformanceMaxVodicSR />
   },
@@ -140,6 +145,7 @@ const srPosts: PostData[] = [
     category: "Optimizacija",
     metaDescription:
       "30 proverenih taktika za optimizaciju Google Ads kampanja. Bid strategije, negativne ključne reči, Quality Score, landing page, A/B testiranje — sve iz prakse sa realnim klijentima.",
+    featuredImage: "/blog/google-ads-optimizacija.webp",
     readingTime: "18 min",
     content: <GoogleAdsOptimizacijaSR />
   },
@@ -151,6 +157,7 @@ const srPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Google Shopping vodič sa 2+ godine UK iskustva (Chelleon £290k+): product feed optimizacija, 10 obaveznih atributa, struktura kampanja, i priprema za lansiranje u Srbiji novembar 2026.",
+    featuredImage: "/blog/google-shopping-vodic.webp",
     readingTime: "16 min",
     content: <GoogleShoppingVodicSR />
   },
@@ -162,6 +169,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Agencija, freelancer ili in-house tim za Google Ads Detaljno poređenje troškova, prednosti i mana svake opcije. Saznajte koja je prava za vaš budžet i ciljeve.",
+    featuredImage: "/blog/agencija-vs-freelancer.webp",
     readingTime: "11 min",
     content: <AgencijaVsFreelancerSR />
   },
@@ -173,6 +181,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje tracking-a, enhanced conversions i server-side implementaciju.",
+    featuredImage: "/blog/conversion-tracking-vodic.webp",
     readingTime: "13 min",
     content: <ConversionTrackingVodicSR />
   },
@@ -184,6 +193,7 @@ const srPosts: PostData[] = [
     category: "Google Ads optimizacija",
     metaDescription:
       "20 najčešćih Google Ads grešaka koje koštaju novac — od loše strukture, preko bidding grešaka, do propuštenih prilika. Proverite da li pravite neku od njih.",
+    featuredImage: "/blog/google-ads-greske.webp",
     readingTime: "14 min",
     content: <GoogleAdsGreskeSR />
   },
@@ -195,6 +205,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Vaše Google Ads kampanje troše budžet ali ne donose rezultate? Evo 12 najčešćih razloga zašto kampanje ne rade i konkretna rešenja za svaki problem.",
+    featuredImage: "/blog/zasto-nema-rezultata.webp",
     readingTime: "10 min",
     content: <GoogleAdsNeDonosiRezultateSR />
   },
@@ -206,6 +217,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Google Ads strategija za eCommerce nije ista kao za B2B. Kompletan vodič o razlikama u kampanjama, targetingu, bidding-u i merenju uspeha za oba modela poslovanja.",
+    featuredImage: "/blog/ecommerce-vs-b2b.webp",
     readingTime: "13 min",
     content: <EcommerceVsB2BSR />
   },
@@ -217,6 +229,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Google Ads hvata kupce sa namerom, Meta Ads gradi svest. Poređenje po intent-u, CPC, conversion rate-u i ROI-u. Kada koristiti šta + kako ih kombinovati za maksimalan efekat.",
+    featuredImage: "/blog/google-ads-vs-meta.webp",
     readingTime: "15 min",
     content: <GoogleAdsVsMetaAdsSR />
   },
@@ -228,6 +241,7 @@ const srPosts: PostData[] = [
     category: "Google Ads audit",
     metaDescription:
       "Detaljni Google Ads audit checklist sa 80+ tačaka za proveru. Pronađite probleme, optimizujte kampanje, i poboljšajte ROI.",
+    featuredImage: "/blog/google-ads-audit-vodic.webp",
     readingTime: "16 min",
     content: <GoogleAdsAuditSR />
   },
@@ -239,6 +253,7 @@ const srPosts: PostData[] = [
     category: "Google Ads keywords",
     metaDescription:
       "Vodič za istraživanje ključnih reči u Google Ads: 7 besplatnih alata, match types (broad/phrase/exact), negative keywords, i šablon za organizaciju 100+ keyword-a u ad groups. Koraci koje koristim u praksi.",
+    featuredImage: "/blog/kljucne-reci-vodic.webp",
     readingTime: "14 min",
     content: <KljucneReciVodicSR />
   },
@@ -250,6 +265,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Kompletan vodič za negative keywords u Google Ads — gotove liste po industrijama, strategija dodavanja i kako sprečiti bacanje budžeta na pogrešne pretrage.",
+    featuredImage: "/blog/negativne-kljucne-reci.webp",
     readingTime: "12 min",
     content: <NegativeKeywordsVodicSR />
   },
@@ -261,6 +277,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Kompletan vodič za Google Ads Quality Score — šta je, kako se računa i konkretne taktike za poboljšanje. Smanjite CPC i poboljšajte pozicije sa boljim QS.",
+    featuredImage: "/blog/quality-score-vodic.webp",
     readingTime: "11 min",
     content: <QualityScoreVodicSR />
   },
@@ -272,6 +289,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Kako da postaviš remarketing u Google Ads: 7 audience lista koje rade (cart abandoners, 30-day viewers, video viewers), GA4 integracija, i zašto većina kampanja smanji CPA za 50-70%.",
+    featuredImage: "/blog/remarketing-vodic.webp",
     readingTime: "15 min",
     content: <RemarketingVodicSR />
   },
@@ -283,6 +301,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Kako početi sa Google Ads od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
+    featuredImage: "/blog/kako-poceti-google-ads.webp",
     readingTime: "14 min",
     content: <KakoPocetiGoogleAdsSR />
   },
@@ -294,6 +313,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Kompletan vodič za RSA oglase u Google Ads: character limit-i za headlines (30) i descriptions (90), 15 headline primera koji rade, i zašto 7-8 bolje od 15. Realni podaci iz 50+ naloga.",
+    featuredImage: "/blog/rsa-vodic.webp",
     readingTime: "14 min",
     content: <RsaVodicSR />
   },
@@ -305,6 +325,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "CTR formula, realni benchmarks za Srbiju (Search 5-10%, Display 0.5-1%), dijagnostika niskog CTR-a, i 7 taktika koje sam koristio za 4x poboljšanje u 30 naloga.",
+    featuredImage: "/blog/ctr-vodic.webp",
     readingTime: "12 min",
     content: <CtrVodicSR />
   }
