@@ -39,7 +39,6 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${poppins.variable}`}>
       <head>
-        <link rel="preload" href="/hero-bg.webp" as="image" type="image/webp" />
         <link rel="preload" href="/hero.webp" as="image" type="image/webp" />
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

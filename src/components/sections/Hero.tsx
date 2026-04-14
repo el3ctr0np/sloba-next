@@ -11,6 +11,13 @@ interface HeroProps {
   trustBadges?: string[];
 }
 
+/**
+ * Editorial / Magazine style hero
+ * - Top Google accent bar
+ * - Meta bar with trust signals
+ * - Large editorial title across full width
+ * - Below: 3-column grid — stats left, hero photo center (with Google Partner badge), CTAs right
+ */
 export function Hero({
   title,
   subtitle,
@@ -18,65 +25,112 @@ export function Hero({
   ctaHref = "/kontakt",
   secondaryCtaText,
   secondaryCtaHref,
-  trustBadges = []
 }: HeroProps) {
   return (
-    <section className="relative py-12 md:py-20 px-4 bg-gray-50 overflow-hidden">
-      <Image
-        src="/hero-bg.webp"
-        alt=""
-        fill
-        className="object-cover object-right-center"
-        priority
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-900/50 to-transparent" />
-      <div className="container-custom relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
-          <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 leading-tight">
-              {title}
-            </h1>
-            <p className="text-xl text-slate-200 mb-6">
-              {subtitle}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button href={ctaHref} variant="secondary">
-                {ctaText}
-              </Button>
-              {secondaryCtaText && secondaryCtaHref && (
-                <Button href={secondaryCtaHref} variant="primary">
-                  {secondaryCtaText}
-                </Button>
-              )}
-            </div>
+    <section className="relative overflow-hidden bg-white border-b border-gray-100">
+      {/* Top Google accent bar */}
+      <div className="h-1 bg-gradient-to-r from-blue-500 via-red-500 via-yellow-500 to-green-500" />
 
-            {/* Trust Badges */}
-            {trustBadges.length > 0 && (
-              <div className="flex flex-wrap gap-4 items-center text-sm text-slate-200">
-                {trustBadges.map((badge, index) => (
-                  <span key={index} className="flex items-center gap-2">
-                    <span className="text-secondary">✓</span> {badge}
-                  </span>
-                ))}
-              </div>
-            )}
+      <div className="container-custom px-4 relative py-12 md:py-16">
+        {/* Top meta bar */}
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-6 border-b border-gray-100">
+          <div className="inline-flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            <span className="text-xs font-semibold text-gray-600 uppercase tracking-[0.15em]">
+              Google Ads Konsalting • Srbija & UK
+            </span>
+          </div>
+          <div className="flex items-center gap-4 text-xs text-gray-500">
+            <span className="hidden md:flex items-center gap-1.5">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              9+ godina iskustva
+            </span>
+            <span className="hidden md:flex items-center gap-1.5">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              50+ brendova
+            </span>
+            <span className="hidden md:flex items-center gap-1.5">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Ad Mixer predstavnik
+            </span>
+          </div>
+        </div>
+
+        {/* Large editorial title */}
+        <div className="max-w-5xl mb-10 md:mb-12">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-slate-900 leading-[1.05] mb-6">
+            {title}
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl leading-relaxed">
+            {subtitle}
+          </p>
+        </div>
+
+        {/* Photo + Stats + CTA grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.8fr_1fr] gap-6 lg:gap-8 items-center">
+          {/* Left: Stats column */}
+          <div className="order-2 lg:order-1 space-y-3">
+            <div className="border-l-4 border-blue-500 pl-4 py-1">
+              <div className="text-3xl font-heading font-bold text-slate-900 leading-none">£290k+</div>
+              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">Shopping revenue (UK)</div>
+            </div>
+            <div className="border-l-4 border-green-500 pl-4 py-1">
+              <div className="text-3xl font-heading font-bold text-slate-900 leading-none">1.78x</div>
+              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">Prosečan POAS</div>
+            </div>
+            <div className="border-l-4 border-yellow-500 pl-4 py-1">
+              <div className="text-3xl font-heading font-bold text-slate-900 leading-none">-86%</div>
+              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">CPA rekord</div>
+            </div>
           </div>
 
-          {/* Image Placeholder */}
-          <div className="flex justify-center">
-            <div
-              className="relative w-full max-w-xl border border-white/20 rounded-lg overflow-hidden bg-slate-950/40 backdrop-blur-sm shadow-card"
-              style={{ aspectRatio: "1023 / 781" }}
-            >
+          {/* Center: Hero photo */}
+          <div className="order-1 lg:order-2 relative">
+            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-900 bg-white">
               <Image
                 src="/hero.webp"
-                alt="Slobodan Jelisavac"
-                fill
-                className="object-contain"
+                alt="Slobodan Jelisavac — Ad Mixer Google Ads Event"
+                width={1023}
+                height={781}
+                className="w-full h-auto"
                 priority
               />
             </div>
+            {/* Google Partner badge overlay */}
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-white border-2 border-slate-900 rounded-full px-4 py-1.5 shadow-xl whitespace-nowrap">
+              <div className="flex items-center gap-2">
+                <div className="flex gap-0.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-500" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
+                </div>
+                <span className="text-[11px] font-bold text-slate-900 uppercase tracking-wider">
+                  Google Ads Event — Beograd 2025
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: CTA column */}
+          <div className="order-3 space-y-3">
+            <Button href={ctaHref} variant="secondary" className="w-full">
+              {ctaText}
+            </Button>
+            {secondaryCtaText && secondaryCtaHref && (
+              <Button href={secondaryCtaHref} variant="primary" className="w-full">
+                {secondaryCtaText}
+              </Button>
+            )}
+            <p className="text-xs text-gray-500 text-center pt-2">
+              Bez onboarding naknada.<br />Bez dugoročnih ugovora.
+            </p>
           </div>
         </div>
       </div>
