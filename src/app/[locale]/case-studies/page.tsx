@@ -206,8 +206,7 @@ export default async function CaseStudiesPage({ params }: Props) {
                     </p>
                   </div>
                 </div>
-                <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-xs text-gray-400">{study.period}</span>
+                <div className="pt-4 border-t border-gray-100 flex items-center justify-end">
                   <span className="text-slate-900 font-semibold group-hover:underline">
                     {locale === "en" ? "View →" : "Pogledajte →"}
                   </span>
