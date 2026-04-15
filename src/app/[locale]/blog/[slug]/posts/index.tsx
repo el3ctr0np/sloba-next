@@ -75,6 +75,7 @@ const srPosts: PostData[] = [
     category: "eCommerce",
     metaDescription:
       "Data-driven vodič za Google Ads eCommerce strategiju u Srbiji 2026: 110.6M internet kupovina, €3.61B tržište, rast 34%, top kategorije, benchmarks i taktike. Bazirano na podacima NBS-a i iskustvu sa 10+ naloga.",
+    featuredImage: "/blog/google-ads-za-ecommerce-srbija-2026.webp",
     readingTime: "17 min",
     content: <GoogleAdsZaEcommerceSrbija2026SR />
   },
