@@ -441,13 +441,13 @@ export default async function PerformanceMarketingPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "Performance Marketing — Complete omnichannel team for serious growth"
-                : "Performance Marketing - kompletan omnichannel tim za ozbiljan rast"}
+                : "Performance Marketing u Srbiji — omnichannel tim za ozbiljan rast"}
             </h1>
 
             <p className="text-lg text-gray-300 mb-8">
               {locale === "en"
                 ? "For companies that want more than one channel. You get a dedicated team of experts covering Google Ads, Meta advertising, SEO, CRO, and creative. The result: integrated omnichannel approach with a single point of contact."
-                : "Za kompanije koje žele više od jednog kanala. Dobijate dedicated tim eksperata koji pokriva Google Ads, Meta oglašavanje, SEO, CRO i kreativu. Rezultat: integrisani omnichannel pristup sa jednom kontaktnom tačkom."}
+                : "Performance marketing u Srbiji zahteva više od jednog kanala — kombinaciju Google Ads-a, Meta oglašavanja, SEO-a, CRO-a i kreative. Dobijate dedicated tim eksperata koji pokrivaju sve kanale, sa jednom kontaktnom tačkom. Rezultat: integrisani omnichannel pristup prilagođen srpskom i regionalnom tržištu."}
             </p>
 
             {/* Trust Badges */}

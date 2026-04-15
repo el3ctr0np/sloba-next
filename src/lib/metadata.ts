@@ -24,6 +24,8 @@ export function buildMetadata({
 }: MetadataInput): Metadata {
   const enPath = path;
   const srPathFinal = srPath || path;
+  // Use locale-specific path so SR canonical points to /sr/usluge/... not /sr/services/...
+  const currentPath = locale === "sr" ? srPathFinal : enPath;
   const ogImageUrl = ogImage
     ? `${BASE_URL}${ogImage}`
     : `${BASE_URL}/og/homepage.png`;
@@ -32,7 +34,7 @@ export function buildMetadata({
     title,
     description,
     alternates: {
-      canonical: `${BASE_URL}/${locale}${path}`,
+      canonical: `${BASE_URL}/${locale}${currentPath}`,
       languages: {
         sr: `${BASE_URL}/sr${srPathFinal}`,
         en: `${BASE_URL}/en${enPath}`,
@@ -42,7 +44,7 @@ export function buildMetadata({
     openGraph: {
       title,
       description,
-      url: `${BASE_URL}/${locale}${path}`,
+      url: `${BASE_URL}/${locale}${currentPath}`,
       siteName: "Slobodan Jelisavac",
       locale: locale === "en" ? "en_US" : "sr_RS",
       type: "website",

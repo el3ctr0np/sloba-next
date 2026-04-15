@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Management Services | PPC Account Management — Slobodan Jelisavac"
+      ? "Google Ads Management Services Belgrade, Serbia | PPC Expert — Slobodan Jelisavac"
       : "Google Oglašavanje Srbija | Upravljanje Google Ads Nalogom — Slobodan Jelisavac",
     description: isEn
-      ? "Professional Google Ads management for eCommerce and B2B companies. 180%+ ROAS improvement, 9+ years of experience. Book your free consultation today."
+      ? "Belgrade-based Google Ads management services for eCommerce and B2B companies. 180%+ ROAS improvement, 9+ years of experience across Serbia, UK, and EU. Book your free consultation."
       : "Profesionalno upravljanje Google oglašavanjem za eCommerce i B2B. 180%+ poboljšanje ROAS-a, 10+ godina iskustva. Zakažite besplatnu konsultaciju.",
     locale,
     path: "/services/google-ads-management",
@@ -684,17 +684,18 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
-                ? "Google Ads management that delivers measurable results"
+                ? "Google Ads management services in Belgrade, Serbia — measurable results for eCommerce & B2B"
                 : "Google oglašavanje koje donosi merljive rezultate"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
                 <>
-                  Looking for professional <strong className="text-white">Google Ads management</strong> that
-                  actually delivers results? I handle complete management of your Google Ads
-                  account — from strategy and campaign structure to daily optimization.
-                  Focus: <strong className="text-white">ROAS, CPA, and real revenue growth</strong> for
-                  eCommerce and B2B companies globally.
+                  Looking for professional <strong className="text-white">Google Ads management services</strong> from
+                  a <strong className="text-white">Belgrade-based PPC expert</strong>? I handle complete management
+                  of your Google Ads account — from strategy and campaign structure to daily optimization.
+                  Based in Serbia, working with eCommerce and B2B companies across <strong className="text-white">Belgrade,
+                  the UK, and EU markets</strong>. Focus: <strong className="text-white">ROAS, CPA, and real
+                  revenue growth</strong>.
                 </>
               ) : (
                 <>
