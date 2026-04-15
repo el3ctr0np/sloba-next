@@ -11,10 +11,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "YouTube Ads Management | Video Advertising Campaigns — Slobodan Jelisavac"
-      : "YouTube oglasi Srbija | Video oglašavanje sa merljivim rezultatima",
+      : "YouTube oglašavanje i oglasi Srbija | Video kampanje sa merljivim ROI",
     description: isEn
       ? "Professional YouTube advertising management. Drive brand awareness and conversions through targeted video campaigns. Expert PPC consultant with 9+ years experience across 6+ countries."
-      : "Profesionalno upravljanje YouTube oglasima. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1,000/mesečno.",
+      : "YouTube oglašavanje u Srbiji — profesionalno upravljanje YouTube oglasima. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1.000/mesečno.",
     locale,
     path: "/services/youtube-ads",
     srPath: "/usluge/youtube-oglasi",
@@ -354,12 +354,12 @@ export default async function YouTubeOglasiPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "YouTube Ads — video advertising on the world's largest video platform"
-                : "YouTube oglasi - video oglašavanje na najvećoj video platformi"}
+                : "YouTube oglašavanje i oglasi — video kampanje koje donose rezultate"}
             </h1>
             <p className="text-lg text-gray-300 mb-8">
               {locale === "en"
                 ? "YouTube is the second-largest search platform in the world and where people spend hours watching content. YouTube ads enable you to deliver your message to precisely targeted audiences through engaging and memorable video formats. This service is designed for brands that want YouTube advertising without full-scale Google Ads management."
-                : "YouTube je druga najveća pretraživačka platforma na svetu i mesto gde ljudi provode sate gledajući sadržaj. YouTube oglasi omogućavaju da dovedete poruku pred precizno targetiranu publiku kroz video format koji je engaging i memorable. Ova usluga je namenjena brendovima koji žele samo YouTube oglašavanje, bez kompletnog Google Ads upravljanja."}
+                : "YouTube oglašavanje u Srbiji je jedan od najbrže rastućih kanala za brendove koji žele da kombinuju doseg sa merljivim konverzijama. YouTube je druga najveća pretraživačka platforma na svetu i mesto gde ljudi provode sate gledajući sadržaj. YouTube oglasi omogućavaju da dovedete poruku pred precizno targetiranu publiku kroz video format koji je engaging i memorable. Ova usluga je namenjena brendovima koji žele samo YouTube oglašavanje, bez kompletnog Google Ads upravljanja."}
             </p>
 
             {/* Trust badges */}

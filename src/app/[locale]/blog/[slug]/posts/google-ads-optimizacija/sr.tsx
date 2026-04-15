@@ -41,6 +41,20 @@ export default function GoogleAdsOptimizacijaPost() {
         su prošle test prakse.
       </p>
 
+      <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-5 my-6">
+        <p className="font-semibold text-amber-900 mb-2">
+          Napomena za one koji još uvek govore „AdWords optimizacija"
+        </p>
+        <p className="text-amber-900 text-sm mb-0 leading-relaxed">
+          Ako si navikao/la da Google Ads zoveš <strong>AdWords</strong>, nisi sam/a.
+          AdWords je bio originalni naziv Google-ove oglašivačke platforme od 2000. do 2018.
+          godine, kada ga je Google preimenovao u Google Ads. <strong>Ista platforma, isti principi
+          optimizacije</strong> — samo moderniji naziv i AI-first pristup od 2023. godine.
+          Sve taktike iz ovog vodiča se 1:1 primenjuju na ono što mnogi u industriji (posebno
+          agencije sa dužim stažem) još uvek zovu „AdWords optimizacija". Reč se menja, suština ostaje.
+        </p>
+      </div>
+
       <hr />
 
       <h2>Zašto je optimizacija ključna za uspeh</h2>
@@ -955,6 +969,16 @@ export default function GoogleAdsOptimizacijaPost() {
           </summary>
           <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
             Najčešći razlozi: landing page se sporije učitava, konkurenti su poboljšali svoje oglase, CTR je pao (morate osvežiti copy), ili je relevantnost opala (ključne reči ne odgovaraju oglas → LP putanji). Proverite svaku komponentu pojedinačno.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li su AdWords i Google Ads ista stvar?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Da, potpuno ista. AdWords je bio originalni naziv Google-ove oglašivačke platforme od 2000. do 2018. godine, kada je Google izvršio rebrand u <strong>Google Ads</strong>. Sve što se nekada zvalo „AdWords optimizacija" danas se zove „Google Ads optimizacija" — ista platforma, iste taktike, isti ROAS principi. Starije agencije i marketing profesionalci još uvek ponekad koriste termin AdWords iz navike, posebno u B2B i enterprise okruženju.
           </div>
         </details>
       </div>

@@ -155,10 +155,10 @@ const srPosts: PostData[] = [
     slug: "google-ads-optimizacija",
     title: "Google Ads Optimizacija: 30 Taktika za Bolji ROAS [2026]",
     date: "2026-01-17",
-    dateModified: "2025-12-18",
+    dateModified: "2026-04-15",
     category: "Optimizacija",
     metaDescription:
-      "30 proverenih taktika za optimizaciju Google Ads kampanja. Bid strategije, negativne ključne reči, Quality Score, landing page, A/B testiranje — sve iz prakse sa realnim klijentima.",
+      "Google Ads optimizacija: 30 proverenih taktika za bolji ROAS. Kompletan vodič — bid strategije, negativne ključne reči, Quality Score, landing page i A/B testiranje. Iz prakse sa 20+ klijenata (Srbija, UK, EU).",
     featuredImage: "/blog/google-ads-optimizacija.webp",
     readingTime: "18 min",
     content: <GoogleAdsOptimizacijaSR />
