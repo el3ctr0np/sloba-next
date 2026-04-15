@@ -5,6 +5,8 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import GoogleAdsZaEcommerceSrbija2026SR from "./google-ads-za-ecommerce-srbija-2026/sr";
+import GoogleAdsForEcommerceSerbia2026EN from "./google-ads-za-ecommerce-srbija-2026/en";
 import GoogleAdsNovosti2026SR from "./google-ads-novosti-2026/sr";
 import GoogleAdsUpdates2026EN from "./google-ads-novosti-2026/en";
 import YouTubeOglasavanjeVodicSR from "./youtube-oglasavanje-vodic/sr";
@@ -65,6 +67,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "google-ads-za-ecommerce-srbija-2026",
+    title: "Google Ads za eCommerce u Srbiji: Kompletna Strategija za 2026 [sa Zvaničnim Podacima]",
+    date: "2026-04-14",
+    dateModified: "2026-04-14",
+    category: "eCommerce",
+    metaDescription:
+      "Data-driven vodič za Google Ads eCommerce strategiju u Srbiji 2026: 110.6M internet kupovina, €3.61B tržište, rast 34%, top kategorije, benchmarks i taktike. Bazirano na podacima NBS-a i iskustvu sa 10+ naloga.",
+    readingTime: "17 min",
+    content: <GoogleAdsZaEcommerceSrbija2026SR />
+  },
   {
     slug: "google-ads-novosti-2026",
     title: "Google Ads Novosti i Promene 2026 [Ažurirano Mesečno]",
@@ -332,6 +345,17 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "google-ads-for-ecommerce-serbia-2026",
+    title: "Google Ads for eCommerce in Serbia: Complete 2026 Strategy [with Official Data]",
+    date: "2026-04-14",
+    dateModified: "2026-04-14",
+    category: "eCommerce",
+    metaDescription:
+      "Data-driven Google Ads eCommerce strategy for Serbia 2026: 110.6M internet purchases, €3.61B market, 34% growth, top categories and tactics.",
+    readingTime: "17 min",
+    content: <GoogleAdsForEcommerceSerbia2026EN />
+  },
   {
     slug: "google-ads-updates-2026",
     title: "Google Ads News & Updates 2026 [Updated Monthly]",
