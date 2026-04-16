@@ -70,6 +70,19 @@ export function Footer() {
                 <a
                   href="mailto:info@slobodan-jelisavac.com"
                   className="hover:text-white transition-colors"
+                  onClick={() => {
+                    // GTM contact_email micro conversion (CE - contact_email trigger)
+                    if (typeof window !== "undefined") {
+                      const w = window as Window & {
+                        dataLayer?: Array<Record<string, unknown>>;
+                      };
+                      w.dataLayer = w.dataLayer || [];
+                      w.dataLayer.push({
+                        event: "contact_email",
+                        contact_method: "footer_email",
+                      });
+                    }
+                  }}
                 >
                   info@slobodan-jelisavac.com
                 </a>

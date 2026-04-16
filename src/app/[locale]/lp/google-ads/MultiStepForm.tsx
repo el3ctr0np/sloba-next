@@ -1,9 +1,26 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "@/i18n/navigation";
 import { useSearchParams } from "next/navigation";
 import { CheckCircle } from "lucide-react";
+
+// --- GTM dataLayer helper -------------------------------------------------
+// Pushes events to window.dataLayer for GTM container GTM-PJ4B5QP.
+// Triggers in workspace 17: CE - form_view, CE - form_start,
+// CE - form_step_complete, CE - lead_submit.
+const FORM_NAME = "multistep_lp_google_ads";
+
+type DataLayerWindow = Window & {
+  dataLayer?: Array<Record<string, unknown>>;
+};
+
+function pushDataLayer(event: string, params: Record<string, unknown> = {}): void {
+  if (typeof window === "undefined") return;
+  const w = window as DataLayerWindow;
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({ event, ...params });
+}
 
 type FormData = {
   businessType: string;
@@ -84,6 +101,10 @@ export function MultiStepForm({ locale }: { locale: string }) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [trackingData, setTrackingData] = useState<Record<string, string>>({});
 
+  // Tracking flags (refs to avoid extra renders)
+  const formStartedRef = useRef(false);
+  const formViewedRef = useRef(false);
+
   // Capture ad tracking params on mount
   useEffect(() => {
     const params: Record<string, string> = {};
@@ -96,13 +117,49 @@ export function MultiStepForm({ locale }: { locale: string }) {
     }
   }, [searchParams]);
 
+  // form_view: fire once when form scrolls into 30% viewport
+  useEffect(() => {
+    if (formViewedRef.current) return;
+    const formEl = document.getElementById("multistep-form");
+    if (!formEl) {
+      // Form not in DOM yet — fire immediately as fallback
+      pushDataLayer("form_view", { form_name: FORM_NAME });
+      formViewedRef.current = true;
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting && !formViewedRef.current) {
+          pushDataLayer("form_view", { form_name: FORM_NAME });
+          formViewedRef.current = true;
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
+    observer.observe(formEl);
+    return () => observer.disconnect();
+  }, []);
+
   const totalSteps = 3;
 
   const updateField = (field: keyof FormData, value: string) => {
+    // form_start: fire once on first field interaction
+    if (!formStartedRef.current) {
+      pushDataLayer("form_start", { form_name: FORM_NAME });
+      formStartedRef.current = true;
+    }
     setData((prev) => ({ ...prev, [field]: value }));
   };
 
-  const nextStep = () => setStep((s) => Math.min(s + 1, totalSteps));
+  const nextStep = () => {
+    // form_step_complete: fire BEFORE incrementing step (capture which step was completed)
+    pushDataLayer("form_step_complete", {
+      form_name: FORM_NAME,
+      form_step: step,
+    });
+    setStep((s) => Math.min(s + 1, totalSteps));
+  };
   const prevStep = () => setStep((s) => Math.max(s - 1, 1));
 
   const canProceedStep1 = data.businessType && data.hasGoogleAds;
@@ -160,6 +217,23 @@ export function MultiStepForm({ locale }: { locale: string }) {
       );
 
       if (response.ok) {
+        // Push step 3 completion + lead_submit BEFORE redirect so events fire
+        const tier = getLeadTier();
+        pushDataLayer("form_step_complete", {
+          form_name: FORM_NAME,
+          form_step: 3,
+        });
+        pushDataLayer("lead_submit", {
+          form_name: FORM_NAME,
+          lead_tier: tier,
+        });
+        // Stash lead_tier so /kontakt/hvala LeadConfirmedTracker can read it
+        try {
+          sessionStorage.setItem("dj_lead_tier", tier);
+          sessionStorage.setItem("dj_lead_pending", "1");
+        } catch {
+          // Ignore sessionStorage errors (private mode etc.)
+        }
         setIsSubmitted(true);
         router.push("/kontakt/hvala");
         return;
@@ -317,7 +391,7 @@ export function MultiStepForm({ locale }: { locale: string }) {
     }`;
 
   return (
-    <div className="bg-white text-gray-900 rounded-xl p-6 md:p-8 shadow-lg">
+    <div id="multistep-form" className="bg-white text-gray-900 rounded-xl p-6 md:p-8 shadow-lg">
       {/* Progress bar */}
       <div className="mb-6">
         <div className="flex justify-between text-xs text-gray-500 mb-2">

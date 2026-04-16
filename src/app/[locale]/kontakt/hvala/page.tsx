@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { buildMetadata } from "@/lib/metadata";
+import LeadConfirmedTracker from "@/components/LeadConfirmedTracker";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -179,6 +180,8 @@ export default async function ThankYouPage({ params }: Props) {
 
   return (
     <>
+      {/* GTM lead_confirmed event (PRIMARY conversion) — fires once per session */}
+      <LeadConfirmedTracker />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
