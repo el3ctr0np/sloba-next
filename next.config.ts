@@ -150,6 +150,19 @@ const nextConfig: NextConfig = {
         destination: "/sr/usluge",
         permanent: true
       },
+      // /klijenti parent route is not implemented (only /klijenti/[slug] for portal)
+      // Redirect to public case studies hub — consolidates authority signals
+      {
+        source: "/sr/klijenti",
+        destination: "/sr/case-studies",
+        permanent: true
+      },
+      {
+        source: "/en/klijenti",
+        destination: "/en/case-studies",
+        permanent: true
+      },
+
       // Old case studies (without locale) → new with locale
       {
         source: "/case-studies/designerglasses/",
