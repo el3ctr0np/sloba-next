@@ -29,10 +29,10 @@ export default function AgencyVsFreelancerEN() {
       </div>
 
       <p>
-        You have three options: hire an agency, work with a freelancer/consultant, or build an in-house team. Each has its advantages and disadvantages. And each is right — for a specific situation.
+        The <strong>Google Ads agency vs freelancer vs in-house</strong> decision is one of the most consequential choices you&apos;ll make as an advertiser — and also one of the most under-researched. You have three core options: hire an agency, work with a freelancer or consultant, or build an in-house team. Each has its advantages and disadvantages. And each is right — for a specific situation.
       </p>
       <p>
-        After years working on both sides (as in-house, as freelancer, and collaborating with agencies), I can tell you there's no universal &quot;best&quot; solution. But there is a right solution for your specific situation. In this guide, I'll help you discover it.
+        After years working on every side of this equation (as in-house marketer, as Google Ads freelancer, and collaborating with agencies across UK, Serbia, and EU), I can tell you there&apos;s no universal &quot;best&quot; solution. But there is a right solution for your specific situation. In this guide, I&apos;ll walk you through how a Google Ads agency differs from a freelancer, what each model actually costs in 2026, and how to pick the fit that maximizes your return on ad spend.
       </p>
 
       {/* ── Table of Contents ── */}

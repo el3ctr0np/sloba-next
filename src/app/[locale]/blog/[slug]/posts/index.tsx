@@ -335,10 +335,10 @@ const srPosts: PostData[] = [
     slug: "ctr-vodic",
     title: "Šta je CTR (Click-Through Rate) i Kako Ga Podići sa 2% na 8% [2026]",
     date: "2026-03-24",
-    dateModified: "2026-04-09",
+    dateModified: "2026-04-17",
     category: "Google Ads",
     metaDescription:
-      "CTR formula, realni benchmarks za Srbiju (Search 5-10%, Display 0.5-1%), dijagnostika niskog CTR-a, i 7 taktika koje sam koristio za 4x poboljšanje u 30 naloga.",
+      "Šta je CTR (Click-Through Rate)? To je procenat ljudi koji kliknu na oglas nakon što ga vide. Formula, realni benchmarks za Srbiju (Search 5-10%, Display 0.5-1%) i 7 taktika za 4x poboljšanje iz 30 naloga.",
     featuredImage: "/blog/ctr-vodic.webp",
     readingTime: "12 min",
     content: <CtrVodicSR />
@@ -448,12 +448,13 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-agency-vs-freelancer",
-    title: "Google Ads: Agency vs Freelancer vs In-House [2026]",
+    title: "Google Ads Agency vs Freelancer vs In-House — Which Should You Hire in 2026?",
     date: "2026-01-26",
-    dateModified: "2026-01-28",
+    dateModified: "2026-04-17",
     category: "Google Ads",
     metaDescription:
-      "Agency, freelancer or in-house team for Google Ads? Detailed cost comparison, pros and cons of each option. Find out which is right for your budget and goals.",
+      "Google Ads agency vs freelancer vs in-house team: detailed cost comparison ($200–$2,000+/mo), pros and cons, and a decision framework. 67% of companies switch partners in year 1 — here's how to pick right the first time.",
+    featuredImage: "/blog/agencija-vs-freelancer.webp",
     readingTime: "11 min",
     content: <AgencyVsFreelancerEN />
   },

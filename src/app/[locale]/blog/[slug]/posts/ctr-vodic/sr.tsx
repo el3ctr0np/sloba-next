@@ -29,6 +29,19 @@ export default function CTRVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta je CTR (Click-Through Rate)?
+        </p>
+        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>CTR (Click-Through Rate)</strong> je procenat ljudi koji kliknu na vaš oglas nakon što ga vide. Formula: <strong>CTR = (Klikovi ÷ Prikazi) × 100</strong>. U Google Ads-u, CTR je jedan od glavnih signala kvaliteta — čini oko 40% Quality Score-a. Dobar CTR za Search kampanje u Srbiji je <strong>5-10%</strong>, dok je za Display oko <strong>0.5-1%</strong>.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── Sadržaj ── */}
