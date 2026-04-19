@@ -1,0 +1,86 @@
+# Slobodan Jelisavac — Google Ads Strategist
+
+> Independent Google Ads consultant based in Belgrade, Serbia. 9+ years of experience managing PPC campaigns across Search, Shopping, and Performance Max for eCommerce and B2B clients in Serbia, the UK, and the EU. Active accounts include Chelleon (UK skincare, £290k+ Google Ads revenue), Pickbox (Croatia), Perun Moto (USA/Global), and 10+ regional brands.
+
+This site is a free resource hub for Serbian and English-speaking advertisers covering Google Ads strategy, Google Shopping (launching in Serbia November 2026), Performance Max, conversion tracking, remarketing, and PPC fundamentals. All content is original, written by a practitioner, and based on real client accounts.
+
+## About
+
+- [About Slobodan](https://www.slobodan-jelisavac.com/sr/o-meni): 9+ years managing Google Ads, ex-OutSearch (UK white-label agency), Ad Mixer Beograd 2025 event speaker
+- [About (English)](https://www.slobodan-jelisavac.com/en/about): Background, philosophy, and credentials
+- [Contact](https://www.slobodan-jelisavac.com/sr/kontakt): Free 30-minute consultation, no onboarding fees
+
+## Services (Usluge)
+
+- [Google Ads Management](https://www.slobodan-jelisavac.com/en/services/google-ads-management): End-to-end Google Ads account management for eCommerce and B2B
+- [Google Ads Audit](https://www.slobodan-jelisavac.com/en/services/google-ads-audit): 80+ checkpoint audit of existing accounts
+- [Google Shopping](https://www.slobodan-jelisavac.com/en/services/google-shopping): Feed optimization, Merchant Center setup, Shopping campaign management
+- [Performance Max](https://www.slobodan-jelisavac.com/en/services/performance-max): PMax campaigns for multi-SKU eCommerce
+- [Search Campaigns](https://www.slobodan-jelisavac.com/en/services/search-campaigns): Keyword strategy, RSA optimization, Quality Score improvement
+- [Remarketing](https://www.slobodan-jelisavac.com/en/services/remarketing): Display + Search remarketing for cart abandoners and high-intent audiences
+- [YouTube Ads](https://www.slobodan-jelisavac.com/en/services/youtube-ads): Video advertising for awareness and direct response
+- [Google Ads for eCommerce](https://www.slobodan-jelisavac.com/en/services/google-ads-for-ecommerce): Specialized eCommerce strategy
+- [Google Ads for B2B](https://www.slobodan-jelisavac.com/en/services/google-ads-for-b2b): Lead generation for B2B companies
+- [Google Ads for SaaS](https://www.slobodan-jelisavac.com/en/services/google-ads-for-saas): SaaS-specific PPC strategies
+- [Performance Marketing](https://www.slobodan-jelisavac.com/en/services/performance-marketing): Omnichannel team via Funky Enterprises partnership
+- [Consultations](https://www.slobodan-jelisavac.com/en/services/consultations): One-off strategy sessions
+- [Starter Package](https://www.slobodan-jelisavac.com/en/services/starter-package): Onboarding package for new advertisers
+
+## Pillar / Cornerstone Content (2026)
+
+- [Google Ads for eCommerce in Serbia 2026](https://www.slobodan-jelisavac.com/en/blog/google-ads-for-ecommerce-serbia-2026): Data-driven strategy guide using NBS data (110.6M online purchases, €3.61B market, +34% YoY), CPC benchmarks per category, urban vs rural strategy, and 15-step prep checklist for the November 2026 Shopping Ads launch
+- [Google Shopping Launches in Serbia November 2026](https://www.slobodan-jelisavac.com/en/blog/google-shopping-serbia-2026): Complete preparation guide for the Shopping Ads launch — Merchant Center setup, feed optimization, account requirements, and a 6-month timeline
+- [Google Ads Updates 2026 (Living Post)](https://www.slobodan-jelisavac.com/en/blog/google-ads-updates-2026): Continuously updated changelog of Google Ads platform changes throughout 2026
+- [YouTube Advertising Complete Guide](https://www.slobodan-jelisavac.com/en/blog/youtube-advertising-guide): Format breakdown (skippable, bumper, in-feed, Shorts), targeting, budgets, and CPV benchmarks
+
+## Foundational Guides
+
+- [How to Start with Google Ads (Beginner's Guide 2026)](https://www.slobodan-jelisavac.com/en/blog/how-to-start-google-ads): Step-by-step from zero to first campaign
+- [How Much Does Google Ads Cost?](https://www.slobodan-jelisavac.com/en/blog/how-much-does-google-ads-cost): Real CPCs by industry, minimum budgets, ROI framework
+- [Google Advertising for Businesses (B2B + eCommerce)](https://www.slobodan-jelisavac.com/en/blog/google-advertising-for-businesses): Complete primer for company owners
+- [Google Ads Agency vs Freelancer vs In-House](https://www.slobodan-jelisavac.com/en/blog/google-ads-agency-vs-freelancer): Cost comparison and decision framework
+
+## Keywords & Targeting
+
+- [Keywords for Google Ads — Complete Guide](https://www.slobodan-jelisavac.com/en/blog/google-ads-keyword-guide): Research, selection, organization, optimization
+- [Negative Keywords — Strategy + Lists](https://www.slobodan-jelisavac.com/en/blog/negative-keywords-guide): Ready-made negative keyword lists, budget waste prevention
+- [Quality Score Guide](https://www.slobodan-jelisavac.com/en/blog/quality-score-guide): How Quality Score affects CPC and how to improve it
+
+## Campaign Types
+
+- [Google Shopping Campaigns Guide](https://www.slobodan-jelisavac.com/en/blog/google-shopping-guide): Feed optimization, structure, ROAS tactics
+- [Performance Max Guide](https://www.slobodan-jelisavac.com/en/blog/performance-max-guide): When to use PMax, how to optimize
+- [Google Ads vs Meta Ads](https://www.slobodan-jelisavac.com/en/blog/google-ads-vs-meta-ads): Channel comparison
+- [Google Ads for eCommerce vs B2B](https://www.slobodan-jelisavac.com/en/blog/google-ads-ecommerce-vs-b2b): Strategy differences
+- [Responsive Search Ads (RSA) Framework](https://www.slobodan-jelisavac.com/en/blog/responsive-search-ads-guide): 7–8 headlines vs 15, angle-based testing
+
+## Measurement & Analysis
+
+- [Conversion Tracking for Google Ads](https://www.slobodan-jelisavac.com/en/blog/conversion-tracking-guide): Setup, enhanced conversions, troubleshooting
+- [Google Ads Audit Checklist](https://www.slobodan-jelisavac.com/en/blog/google-ads-audit-checklist): 80+ checkpoints
+- [CTR Guide — From 2% to 8%](https://www.slobodan-jelisavac.com/en/blog/ctr-guide): What is CTR, formula, benchmarks, optimization tactics
+
+## Advanced Strategy
+
+- [Google Ads Remarketing Guide](https://www.slobodan-jelisavac.com/en/blog/remarketing-guide): Setup, segmentation, 7 audience lists
+- [Google Ads Optimization — 30 Tactics](https://www.slobodan-jelisavac.com/en/blog/google-ads-optimization): Proven optimization playbook for better ROAS
+- [Google Ads Mistakes — 20 Things That Cost You Money](https://www.slobodan-jelisavac.com/en/blog/google-ads-mistakes): Common errors and fixes
+- [Why Google Ads Aren't Working](https://www.slobodan-jelisavac.com/en/blog/why-google-ads-not-working): 12 common reasons and solutions
+
+## Case Studies
+
+- [Chelleon UK — Skincare eCommerce](https://www.slobodan-jelisavac.com/en/case-studies/chelleon): £290k+ revenue, 2-year ongoing client, UK market
+- [Mobelaris — Furniture eCommerce](https://www.slobodan-jelisavac.com/en/case-studies/mobelaris): Growth strategy for furniture brand
+- [DesignerGlasses — UK Eyewear](https://www.slobodan-jelisavac.com/en/case-studies/designerglasses): Premium eyewear PPC
+- [SoundBoxStore — Audio Equipment](https://www.slobodan-jelisavac.com/en/case-studies/soundboxstore): Niche electronics
+- [AnkiBuddy — DACH SaaS](https://www.slobodan-jelisavac.com/en/case-studies/ankibuddy): EdTech SaaS for medical students
+- [UK Agency Partnership (OutSearch)](https://www.slobodan-jelisavac.com/en/case-studies/uk-agency-partnership): White-label management of 8 UK accounts
+- [MBFinance — Financial Services](https://www.slobodan-jelisavac.com/en/case-studies/mbfinance): B2B finance lead gen
+- [Chatislav — Local Services](https://www.slobodan-jelisavac.com/en/case-studies/chatislav): Local Lead generation
+
+## Optional
+
+- [Blog Hub (Serbian)](https://www.slobodan-jelisavac.com/sr/blog): Full Serbian blog index, organized into 5 chapters by skill level
+- [Blog Hub (English)](https://www.slobodan-jelisavac.com/en/blog): English blog index
+- [Google Ads Landing Page](https://www.slobodan-jelisavac.com/sr/lp/google-ads): Conversion-focused service landing page
+- [XML Sitemap](https://www.slobodan-jelisavac.com/sitemap.xml): Full machine-readable URL list

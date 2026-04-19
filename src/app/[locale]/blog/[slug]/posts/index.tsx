@@ -603,6 +603,9 @@ const enPosts: PostData[] = [
   }
 ];
 
+// Export raw arrays for sitemap and other consumers that need full metadata
+export { srPosts, enPosts };
+
 export function getPost(slug: string, locale: string): PostData | undefined {
   const posts = locale === "en" ? enPosts : srPosts;
   return posts.find((p) => p.slug === slug);

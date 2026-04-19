@@ -1,5 +1,6 @@
 import { routing } from "@/i18n/routing";
-import { slugMap } from "@/app/[locale]/blog/[slug]/posts/slug-map";
+import { srPosts, enPosts, slugMap } from "@/app/[locale]/blog/[slug]/posts";
+import { caseStudies } from "@/app/[locale]/case-studies/data";
 
 const baseUrl = "https://www.slobodan-jelisavac.com";
 
@@ -11,59 +12,66 @@ for (const [canonical, localized] of Object.entries(routing.pathnames)) {
   }
 }
 
-// Static lastmod dates for non-blog routes (last meaningful content update)
+// Static lastmod dates for non-blog, non-case-study routes (last meaningful update)
 const routeLastmod: Record<string, string> = {
-  "": "2026-02-27",
+  "": "2026-04-17",
   "/o-meni": "2026-02-10",
   "/kontakt": "2026-01-26",
   "/kontakt/hvala": "2026-01-26",
   "/usluge": "2026-02-10",
-  "/usluge/google-ads-upravljanje": "2026-02-10",
+  "/usluge/google-ads-upravljanje": "2026-04-17",
   "/usluge/google-ads-audit": "2026-02-10",
   "/usluge/google-shopping": "2026-02-10",
   "/usluge/performance-max": "2026-02-10",
   "/usluge/search-kampanje": "2026-02-10",
   "/usluge/remarketing": "2026-02-10",
-  "/usluge/youtube-oglasi": "2026-02-10",
+  "/usluge/youtube-oglasi": "2026-04-17",
   "/usluge/google-ads-za-b2b": "2026-02-10",
   "/usluge/google-ads-za-ecommerce": "2026-02-10",
   "/usluge/google-ads-za-saas": "2026-02-10",
   "/usluge/konsultacije": "2026-02-10",
-  "/usluge/performance-marketing": "2026-02-10",
+  "/usluge/performance-marketing": "2026-04-17",
   "/usluge/starter-paket": "2026-02-10",
   "/case-studies": "2026-03-05",
-  "/case-studies/mobelaris": "2026-01-26",
-  "/case-studies/designerglasses": "2026-01-26",
-  "/case-studies/soundboxstore": "2026-01-26",
-  "/case-studies/ankibuddy": "2026-02-28",
-  "/case-studies/chelleon": "2026-03-05",
-  "/case-studies/uk-agency-partnership": "2026-03-05",
-  "/case-studies/mbfinance": "2026-03-05",
-  "/case-studies/chatislav": "2026-03-05",
-  "/blog": "2026-02-27",
+  "/blog": "2026-04-17",
 };
 
-// Blog post dateModified values (from posts/index.tsx)
-const blogLastmod: Record<string, string> = {
-  "/blog/koliko-kosta-google-ads": "2026-02-10",
-  "/blog/google-oglasavanje-za-firme": "2026-02-07",
-  "/blog/performance-max-vodic": "2026-01-31",
-  "/blog/google-ads-optimizacija": "2025-12-18",
-  "/blog/google-shopping-vodic": "2026-02-03",
-  "/blog/agencija-vs-freelancer": "2026-01-28",
-  "/blog/conversion-tracking-vodic": "2026-02-05",
-  "/blog/google-ads-greske": "2026-02-12",
-  "/blog/zasto-nema-rezultata": "2026-01-30",
-  "/blog/ecommerce-vs-b2b": "2026-02-08",
-  "/blog/google-ads-vs-meta": "2026-02-14",
-  "/blog/google-ads-audit-vodic": "2025-12-22",
-  "/blog/kljucne-reci-vodic": "2026-01-29",
-  "/blog/negativne-kljucne-reci": "2025-12-28",
-  "/blog/quality-score-vodic": "2026-01-04",
-  "/blog/remarketing-vodic": "2026-02-11",
-};
+// Build blog lastmod map dynamically from posts/index.tsx (single source of truth)
+const blogLastmod: Record<string, string> = {};
+for (const post of srPosts) {
+  blogLastmod[`/blog/${post.slug}`] = post.dateModified || post.date;
+}
 
-// All SR routes (canonical paths)
+// Build case study lastmod map (use static dates per slug — case studies don't have
+// dateModified field; use the most recent meaningful update we know about)
+const caseStudyLastmod: Record<string, string> = {
+  "ankibuddy": "2026-02-28",
+  "mobelaris": "2026-01-26",
+  "designerglasses": "2026-01-26",
+  "soundboxstore": "2026-01-26",
+  "chelleon": "2026-03-05",
+  "uk-agency-partnership": "2026-03-05",
+  "mbfinance": "2026-03-05",
+  "chatislav": "2026-03-05",
+};
+for (const cs of caseStudies) {
+  if (caseStudyLastmod[cs.slug]) {
+    routeLastmod[`/case-studies/${cs.slug}`] = caseStudyLastmod[cs.slug];
+  } else {
+    routeLastmod[`/case-studies/${cs.slug}`] = "2026-01-26";
+  }
+}
+
+// Build EN-only blog slugs map (for posts that exist in enPosts but not in slugMap)
+const enOnlySlugs = new Set<string>();
+const knownEnSlugs = new Set(Object.values(slugMap));
+for (const post of enPosts) {
+  if (!knownEnSlugs.has(post.slug)) {
+    enOnlySlugs.add(post.slug);
+  }
+}
+
+// All canonical (SR) routes
 const routes = [
   ...Object.keys(routeLastmod),
   ...Object.keys(blogLastmod),
@@ -90,6 +98,8 @@ function toEnRoute(route: string): string {
 
 const priorityForRoute = (route: string) => {
   if (route === "") return "1.0";
+  // Pillar / news posts get higher priority
+  if (route.includes("google-shopping-srbija-2026") || route.includes("google-ads-za-ecommerce-srbija-2026")) return "0.9";
   const segments = route.split("/").filter(Boolean);
   if (segments.length === 1) return "0.8";
   if (segments.length === 2) return "0.7";
@@ -135,7 +145,8 @@ ${urls.join("")}
 
   return new Response(xml, {
     headers: {
-      "Content-Type": "application/xml; charset=utf-8"
+      "Content-Type": "application/xml; charset=utf-8",
+      "Cache-Control": "public, max-age=3600, s-maxage=3600"
     }
   });
 }
