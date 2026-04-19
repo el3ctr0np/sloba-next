@@ -41,6 +41,19 @@ export default function GoogleShoppingVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta je Google Shopping i kako funkcioniše?
+        </p>
+        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google Shopping</strong> je vizuelni format oglasa koji prikazuje sliku proizvoda, cenu i ime prodavnice pre klika — što filtrira nekupce i dovodi visoko-nameravane kupce. Zahteva <strong>Google Merchant Center</strong> i optimizovan product feed. Za Srbiju: <strong>lansira se novembra 2026</strong>.
+        </p>
+      </div>
+
       <p>
         Google Shopping kampanje su najvažniji kanal za većinu eCommerce biznisa. Vizuelni format sa slikom, cenom i imenom prodavnice stavlja proizvod na vrh pretrage. Korisnici vide proizvod pre nego što kliknu, što filtrira nekvalifikovan saobraćaj i dovodi ljude koji su spremni da kupe.
       </p>

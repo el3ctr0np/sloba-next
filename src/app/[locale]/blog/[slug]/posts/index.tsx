@@ -71,7 +71,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-za-ecommerce-srbija-2026",
     title: "Google Ads za eCommerce u Srbiji: Kompletna Strategija za 2026 [sa Zvaničnim Podacima]",
     date: "2026-04-14",
-    dateModified: "2026-04-14",
+    dateModified: "2026-04-19",
     category: "eCommerce",
     metaDescription:
       "Data-driven vodič za Google Ads eCommerce strategiju u Srbiji 2026: 110.6M internet kupovina, €3.61B tržište, rast 34%, top kategorije, benchmarks i taktike. Bazirano na podacima NBS-a i iskustvu sa 10+ naloga.",
@@ -119,7 +119,7 @@ const srPosts: PostData[] = [
     slug: "koliko-kosta-google-ads",
     title: "Koliko Košta Google Ads? Cene, Budžeti i ROI u Srbiji [2026]",
     date: "2026-01-26",
-    dateModified: "2026-02-10",
+    dateModified: "2026-04-19",
     category: "Google Ads",
     metaDescription:
       "Koliko zaista košta Google Ads u Srbiji? Detaljni pregled cena po industrijama, minimalni budžeti, troškovi agencija i kako izračunati ROI pre nego što potrošite prvi dinar.",
@@ -143,7 +143,7 @@ const srPosts: PostData[] = [
     slug: "performance-max-vodic",
     title: "Performance Max (PMax): Kompletan Vodič za 2026 + Asset Grupa Template",
     date: "2026-01-26",
-    dateModified: "2026-04-09",
+    dateModified: "2026-04-19",
     category: "Performance Max",
     metaDescription:
       "Kako da pokreneš Performance Max kampanju koja donosi 3-4x ROAS: struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje vidim svaki mesec u 10+ naloga.",
@@ -167,7 +167,7 @@ const srPosts: PostData[] = [
     slug: "google-shopping-vodic",
     title: "Google Shopping Kampanje: Kompletan Vodič + 2026 Srbija Launch Priprema",
     date: "2026-01-26",
-    dateModified: "2026-04-09",
+    dateModified: "2026-04-19",
     category: "Google Shopping",
     metaDescription:
       "Google Shopping vodič sa 2+ godine UK iskustva (Chelleon £290k+): product feed optimizacija, 10 obaveznih atributa, struktura kampanja, i priprema za lansiranje u Srbiji novembar 2026.",
@@ -299,7 +299,7 @@ const srPosts: PostData[] = [
     slug: "remarketing-vodic",
     title: "Google Ads Remarketing: 7 Audience Lista za 4x ROAS [Vodič 2026]",
     date: "2026-01-27",
-    dateModified: "2026-04-09",
+    dateModified: "2026-04-19",
     category: "Google Ads",
     metaDescription:
       "Kako da postaviš remarketing u Google Ads: 7 audience lista koje rade (cart abandoners, 30-day viewers, video viewers), GA4 integracija, i zašto većina kampanja smanji CPA za 50-70%.",
@@ -311,7 +311,7 @@ const srPosts: PostData[] = [
     slug: "kako-poceti-google-ads",
     title: "Kako Početi sa Google Ads: Vodič za Početnike [2026]",
     date: "2026-03-01",
-    dateModified: "2026-03-01",
+    dateModified: "2026-04-19",
     category: "Google Ads",
     metaDescription:
       "Kako početi sa Google Ads od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",

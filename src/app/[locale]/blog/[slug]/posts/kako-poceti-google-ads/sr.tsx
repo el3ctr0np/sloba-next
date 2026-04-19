@@ -29,6 +29,19 @@ export default function KakoPocetiGoogleAdsSR() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Kako početi sa Google Ads-om?
+        </p>
+        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+          Početak sa <strong>Google Ads-om</strong> svodi se na 5 koraka: kreiranje naloga → postavljanje conversion trackinga → keyword research → pokretanje prve kampanje → optimizacija na osnovu podataka. Preporučeni početni budžet je <strong>€200-400 mesečno</strong> za prve 4-8 nedelja testiranja.
+        </p>
+      </div>
+
       {/* ── Sekcija 1: Zašto Google Ads u 2026. ── */}
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">

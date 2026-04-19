@@ -939,6 +939,72 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
 
       <hr />
 
+      <h2>Najčešća pitanja o Google Ads-u za eCommerce u Srbiji</h2>
+
+      <div className="space-y-4 my-6">
+        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koji je minimalni mesečni budžet za Google Ads u Srbiji za eCommerce?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Za eCommerce sa &lt;50 SKU-ova: <strong>200–400 EUR/mesec</strong> (Search 80% + Remarketing 20%). Za 50–500 SKU: 400–800 EUR/mesec (Search + PMax + Remarketing). Za 500+ SKU: 800+ EUR/mesec sa fokusom na PMax. CPC u Srbiji je 2–3 puta jeftiniji od UK tržišta — ovo je značajna prednost za srpske oglašivače.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Kada stiže Google Shopping u Srbiju i kako se pripremiti?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Google je 25. marta 2026. zvanično potvrdio lansiranje <strong>novembra 2026</strong> kao deo Holiday Season talasa (Srbija, Hrvatska, BiH, Slovenija, Crna Gora + Baltik + Bugarska). Priprema mora početi sada — Merchant Center verifikacija traje 1–4 nedelje, feed optimizacija 2–4 nedelje. Brendovi koji startuju u oktobru/novembru kreću sa nultim iskustvom u najkonkurentnijem periodu godine.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koji ROAS je realan za eCommerce u Srbiji 2026?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Po industriji iz mog iskustva sa 10+ naloga: <strong>moda 4–7x</strong>, <strong>elektronika 3–5x</strong>, <strong>hobi/sport 4–8x</strong>, <strong>nameštaj 3–6x</strong>, <strong>kozmetika 4–9x</strong>. Ali ROAS nije cilj — cilj je profit. Ako je vaša bruto marža 40%, breakeven ROAS je 2,5x. Sve iznad je profit. Branded kampanje uvek imaju 5–10x veći ROAS od non-branded.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li koristiti Performance Max ili Search kampanje za eCommerce?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Oba — kombinacija. Search (40%) za high-intent pretrage gde tačno znate šta kupac traži. PMax (50%) za scaling kroz sve Google kanale automatski (Search, YouTube, Display, Gmail, Maps). Remarketing (10%) za već-zainteresovane korisnike. Ovaj split radi za 50–500 SKU eCommerce sa budžetom 400–800 EUR. PMax zahteva minimum 50 konverzija mesečno pre nego što algoritam krene da daje rezultate.
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Kako tretirati COD (pouzeće) narudžbine u Google Ads-u?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            U ruralnoj Srbiji oko 62% transakcija je COD. Problem: narudžbina koja se odbije na isporuci nije ista kao plaćena onlajn. Preporuka: koristiti <strong>offline conversion import</strong> — šaljete konverziju Google-u tek kada je narudžbina <strong>isporučena i plaćena</strong> (ne pri checkout-u). Ovo daje algoritmu tačan signal i sprečava ga da optimizuje ka korisnicima koji neće platiti. Dodatno: razdvojite kampanje za urbano (agresivniji bidding) i ruralno (konzervativniji).
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koje su najveće greške srpskih eCommerce naloga koje vidim?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            Top 5: (1) <strong>Bez Conversion Tracking-a</strong> ili pogrešno postavljen — algoritam ne može da uči; (2) <strong>Mešanje branded + non-branded</strong> u jednoj kampanji što skriva da non-branded ne radi; (3) <strong>Mobile bid -20%</strong> postavljen davno i zaboravljen — sa 62% mobile penetracijom, sami sebi smanjujete vidljivost; (4) <strong>Nema remarketing-a za cart abandoners</strong> — najtoplija publika se poklanja konkurenciji; (5) <strong>Ignorisanje srpske sezonalnosti</strong> (Đurđevdan, Badnji dan, 8. mart, Back-to-School).
+          </div>
+        </details>
+      </div>
+
+      <hr />
+
       <h2>Izvori i dodatno čitanje</h2>
 
       <ul>

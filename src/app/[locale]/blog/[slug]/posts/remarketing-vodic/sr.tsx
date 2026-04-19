@@ -30,6 +30,19 @@ export default function RemarketingVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta je Google Ads remarketing?
+        </p>
+        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google Ads remarketing</strong> je strategija ponovnog targetiranja korisnika koji su već posetili vaš sajt. Ovi korisnici konvertuju <strong>2-5x bolje</strong> od hladnog saobraćaja jer su već pokazali interes. Setup zahteva <strong>Google tag</strong> i audience liste (cart abandoners, pregledači proizvoda, postojeći kupci).
+        </p>
+      </div>
+
       {/* ── Sekcija 1: Hook intro ── */}
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">

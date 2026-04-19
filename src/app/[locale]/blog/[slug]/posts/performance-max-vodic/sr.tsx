@@ -34,6 +34,19 @@ export default function PerformanceMaxVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta je Performance Max?
+        </p>
+        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Performance Max</strong> je AI-driven Google Ads kampanja koja automatski koristi sve Google kanale — <strong>Search, Shopping, Display, YouTube, Gmail i Discover</strong> — iz jedne kampanje. Najefektivnija je za multi-SKU eCommerce sa minimum <strong>50 konverzija mesečno</strong> koje algoritam koristi za optimizaciju.
+        </p>
+      </div>
+
       <hr />
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
