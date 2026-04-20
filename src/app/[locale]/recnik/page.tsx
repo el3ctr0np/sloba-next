@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale,
     path: "/glossary",
     srPath: "/recnik",
+    ogImage: "/blog/recnik.webp",
   });
 }
 
