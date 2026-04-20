@@ -86,6 +86,12 @@ export const routing = defineRouting({
     "/blog": "/blog",
     "/blog/[slug]": "/blog/[slug]",
 
+    // PPC Glossary / Rečnik
+    "/recnik": {
+      sr: "/recnik",
+      en: "/glossary"
+    },
+
     // Landing Pages (Meta Ads - noindex)
     "/lp/google-ads": {
       sr: "/lp/google-ads",

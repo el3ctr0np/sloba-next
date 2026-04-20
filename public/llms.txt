@@ -78,6 +78,11 @@ This site is a free resource hub for Serbian and English-speaking advertisers co
 - [MBFinance — Financial Services](https://www.slobodan-jelisavac.com/en/case-studies/mbfinance): B2B finance lead gen
 - [Chatislav — Local Services](https://www.slobodan-jelisavac.com/en/case-studies/chatislav): Local Lead generation
 
+## PPC Glossary
+
+- [PPC Glossary (English)](https://www.slobodan-jelisavac.com/en/glossary): 50 essential Google Ads terms — CTR, CPC, ROAS, POAS, Smart Bidding, Performance Max, Quality Score, and more. Each with definition, formula, example, and Serbian market benchmarks.
+- [PPC Rečnik (Serbian)](https://www.slobodan-jelisavac.com/sr/recnik): Kompletan rečnik PPC i Google Ads termina na srpskom — 50 termina sa definicijama, formulama, primerima.
+
 ## Optional
 
 - [Blog Hub (Serbian)](https://www.slobodan-jelisavac.com/sr/blog): Full Serbian blog index, organized into 5 chapters by skill level
