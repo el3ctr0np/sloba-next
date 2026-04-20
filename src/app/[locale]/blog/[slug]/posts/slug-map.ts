@@ -1,5 +1,6 @@
 // Canonical (SR) slug → EN slug mapping
 export const slugMap: Record<string, string> = {
+  "microsoft-ads-vs-google-ads": "microsoft-ads-vs-google-ads-comparison",
   "youtube-oglasavanje-vodic": "youtube-advertising-guide",
   "koliko-kosta-google-ads": "how-much-does-google-ads-cost",
   "google-oglasavanje-za-firme": "google-advertising-for-businesses",
@@ -23,6 +24,7 @@ export const slugMap: Record<string, string> = {
   "google-shopping-srbija-2026": "google-shopping-serbia-2026",
   "google-ads-novosti-2026": "google-ads-updates-2026",
   "google-ads-za-ecommerce-srbija-2026": "google-ads-for-ecommerce-serbia-2026",
+  "smart-bidding-vodic": "smart-bidding-guide",
 };
 
 // Reverse map: EN slug → SR (canonical) slug

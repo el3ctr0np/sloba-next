@@ -5,6 +5,10 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import MicrosoftAdsVsGoogleAdsSR from "./microsoft-ads-vs-google-ads/sr";
+import MicrosoftAdsVsGoogleAdsEN from "./microsoft-ads-vs-google-ads/en";
+import SmartBiddingVodicSR from "./smart-bidding-vodic/sr";
+import SmartBiddingGuideEN from "./smart-bidding-vodic/en";
 import GoogleAdsZaEcommerceSrbija2026SR from "./google-ads-za-ecommerce-srbija-2026/sr";
 import GoogleAdsForEcommerceSerbia2026EN from "./google-ads-za-ecommerce-srbija-2026/en";
 import GoogleAdsNovosti2026SR from "./google-ads-novosti-2026/sr";
@@ -68,6 +72,18 @@ export type PostData = {
 
 const srPosts: PostData[] = [
   {
+    slug: "microsoft-ads-vs-google-ads",
+    title: "Microsoft Ads vs Google Ads: Kompletno Poređenje za 2026 [Iz Prakse]",
+    date: "2026-04-19",
+    dateModified: "2026-04-19",
+    category: "Strategija",
+    metaDescription:
+      "Microsoft Ads vs Google Ads u 2026: market share, CPC razlike, kada koristiti koju platformu, LinkedIn targeting prednost. Iz 2 godine rada sa Chelleon UK na obe platforme istovremeno.",
+    featuredImage: "/blog/microsoft-ads-vs-google-ads.webp",
+    readingTime: "14 min",
+    content: <MicrosoftAdsVsGoogleAdsSR />
+  },
+  {
     slug: "google-ads-za-ecommerce-srbija-2026",
     title: "Google Ads za eCommerce u Srbiji: Kompletna Strategija za 2026 [sa Zvaničnim Podacima]",
     date: "2026-04-14",
@@ -78,6 +94,18 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-ads-za-ecommerce-srbija-2026.webp",
     readingTime: "17 min",
     content: <GoogleAdsZaEcommerceSrbija2026SR />
+  },
+  {
+    slug: "smart-bidding-vodic",
+    title: "Smart Bidding Strategije za Google Ads: Kompletan Vodič za 2026",
+    date: "2026-04-19",
+    dateModified: "2026-04-19",
+    category: "Optimizacija",
+    metaDescription:
+      "Smart Bidding strategije u Google Ads-u 2026: 6 strategija (Maximize Conversions, tCPA, tROAS i ostale) sa decision tree-jem, conversion volume requirements, i lekcijama iz 10+ naloga (Chelleon UK, Šlep Služba, Zlaja, Perun Moto).",
+    featuredImage: "/blog/smart-bidding-vodic.webp",
+    readingTime: "16 min",
+    content: <SmartBiddingVodicSR />
   },
   {
     slug: "google-ads-novosti-2026",
@@ -347,6 +375,18 @@ const srPosts: PostData[] = [
 
 const enPosts: PostData[] = [
   {
+    slug: "microsoft-ads-vs-google-ads-comparison",
+    title: "Microsoft Ads vs Google Ads: Complete 2026 Comparison [From the Trenches]",
+    date: "2026-04-19",
+    dateModified: "2026-04-19",
+    category: "Strategija",
+    metaDescription:
+      "Microsoft Ads vs Google Ads in 2026: market share, CPC differences, when to use which platform, LinkedIn targeting advantage. From 2 years running Chelleon UK on both platforms simultaneously.",
+    featuredImage: "/blog/microsoft-ads-vs-google-ads.webp",
+    readingTime: "14 min",
+    content: <MicrosoftAdsVsGoogleAdsEN />
+  },
+  {
     slug: "google-ads-for-ecommerce-serbia-2026",
     title: "Google Ads for eCommerce in Serbia: Complete 2026 Strategy [with Official Data]",
     date: "2026-04-14",
@@ -356,6 +396,18 @@ const enPosts: PostData[] = [
       "Data-driven Google Ads eCommerce strategy for Serbia 2026: 110.6M internet purchases, €3.61B market, 34% growth, top categories and tactics.",
     readingTime: "17 min",
     content: <GoogleAdsForEcommerceSerbia2026EN />
+  },
+  {
+    slug: "smart-bidding-guide",
+    title: "Smart Bidding Strategies for Google Ads: Complete 2026 Guide",
+    date: "2026-04-19",
+    dateModified: "2026-04-19",
+    category: "Optimizacija",
+    metaDescription:
+      "Smart Bidding strategies in Google Ads 2026: 6 strategies (Maximize Conversions, tCPA, tROAS, more) with decision tree, conversion volume requirements, and lessons from 10+ accounts (Chelleon UK, Perun Moto, Pickbox).",
+    featuredImage: "/blog/smart-bidding-vodic.webp",
+    readingTime: "16 min",
+    content: <SmartBiddingGuideEN />
   },
   {
     slug: "google-ads-updates-2026",
