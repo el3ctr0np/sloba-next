@@ -1,3 +1,5 @@
+import { PERSON_SAME_AS } from "@/lib/brand";
+
 export function LocalBusinessSchema({ locale }: { locale: string }) {
   const isEn = locale === "en";
 
@@ -21,9 +23,7 @@ export function LocalBusinessSchema({ locale }: { locale: string }) {
       name: "Slobodan Jelisavac",
       jobTitle: "Google Ads Strategist",
       url: "https://www.slobodan-jelisavac.com",
-      sameAs: [
-        "https://www.linkedin.com/in/slobodan-jelisavac/",
-      ],
+      sameAs: PERSON_SAME_AS,
     },
     address: [
       {
@@ -75,9 +75,7 @@ export function LocalBusinessSchema({ locale }: { locale: string }) {
       "Google Ads Audit",
       "PPC Consulting",
     ],
-    sameAs: [
-      "https://www.linkedin.com/in/slobodan-jelisavac/",
-    ],
+    sameAs: PERSON_SAME_AS,
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: isEn ? "Google Ads Services" : "Google Ads Usluge",

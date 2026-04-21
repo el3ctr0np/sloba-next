@@ -9,6 +9,7 @@ import {
 import { AnimateOnScroll, CounterAnimation } from "@/components/ui";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_SAME_AS } from "@/lib/brand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -73,9 +74,7 @@ export default async function Home({ params }: Props) {
             "B2B Lead Generation",
             "SaaS Marketing",
           ],
-          sameAs: [
-            "https://www.linkedin.com/in/slobodan-jelisavac/",
-          ],
+          sameAs: PERSON_SAME_AS,
         }
       : {
           "@context": "https://schema.org",
@@ -136,9 +135,7 @@ export default async function Home({ params }: Props) {
             "B2B Lead Generation",
             "SaaS Marketing",
           ],
-          sameAs: [
-            "https://www.linkedin.com/in/slobodan-jelisavac/",
-          ],
+          sameAs: PERSON_SAME_AS,
         };
 
   const heroProps =
@@ -214,9 +211,7 @@ export default async function Home({ params }: Props) {
       contactType: "customer service",
       availableLanguage: ["Serbian", "English"],
     },
-    sameAs: [
-      "https://www.linkedin.com/in/slobodan-jelisavac/",
-    ],
+    sameAs: PERSON_SAME_AS,
   };
 
   return (

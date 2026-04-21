@@ -27,7 +27,7 @@ export function AuthorBox({ locale }: { locale: string }) {
           </p>
           <div className="flex items-center gap-3">
             <a
-              href="https://www.linkedin.com/in/slobodan-jelisavac/"
+              href="https://www.linkedin.com/in/slobodanjelisavac/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-blue-600 hover:underline"
