@@ -444,12 +444,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "how-much-does-google-ads-cost",
-    title: "How Much Does Google Ads Cost? Prices, Budgets & ROI [2026]",
+    title: "How Much Does Google Ads Cost in 2026? Real CPCs + Budget Guide ($500–$50K/mo)",
     date: "2026-01-26",
-    dateModified: "2026-02-10",
+    dateModified: "2026-04-22",
     category: "Google Ads",
     metaDescription:
-      "How much does Google Ads cost? CPC breakdown by industry, minimum budgets, agency fees, and how to calculate ROI before your first dollar.",
+      "Google Ads costs $0.50–$5 per click on average — but your real spend depends on industry, competition, and goals. Actual CPC data across 10+ industries, minimum budgets from $500/mo, and the ROI framework 20+ clients use to scale profitably.",
     featuredImage: "/blog/koliko-kosta-google-ads.webp",
     readingTime: "12 min",
     content: <HowMuchDoesGoogleAdsCostEN />
@@ -478,12 +478,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-optimization",
-    title: "Google Ads Optimization: 30 Proven Tactics [2026]",
+    title: "Google Ads Optimization: 30 Tactics Proven to Lift ROAS 40% in 90 Days [2026]",
     date: "2026-01-17",
-    dateModified: "2025-12-18",
+    dateModified: "2026-04-22",
     category: "Optimization",
     metaDescription:
-      "30 proven Google Ads optimization tactics. Bid strategies, negative keywords, Quality Score, landing pages, A/B testing — all from real client experience.",
+      "30 Google Ads optimization tactics that actually move the needle in 2026: Smart Bidding, negative keywords, Quality Score, landing page tweaks, A/B testing. Tested across 20+ eCommerce and B2B accounts. Average impact: 40% ROAS lift in 90 days.",
     readingTime: "18 min",
     content: <GoogleAdsOptimizationEN />
   },
@@ -578,12 +578,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-keyword-guide",
-    title: "Keywords for Google Ads: Complete Guide [2026]",
+    title: "Keywords for Google Ads: Types, Match Strategy + 12 Tactics That Convert [2026]",
     date: "2026-01-27",
-    dateModified: "2026-01-29",
+    dateModified: "2026-04-22",
     category: "Google Ads Keywords",
     metaDescription:
-      "Everything about keywords for Google Ads — research, selection, organization and optimization. Learn how to find keywords that drive conversions, not just clicks.",
+      "Google Ads keywords: research process, match types (broad/phrase/exact), intent classification (transactional/commercial/informational), and 12 tactics to find keywords that drive conversions — not just clicks. Real examples from 20+ accounts.",
     readingTime: "14 min",
     content: <KeywordGuideEN />
   },

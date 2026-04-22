@@ -92,6 +92,12 @@ export const routing = defineRouting({
       en: "/glossary"
     },
 
+    // Video Audit (free for qualified prospects)
+    "/audit": {
+      sr: "/audit",
+      en: "/audit"
+    },
+
     // Landing Pages (Meta Ads - noindex)
     "/lp/google-ads": {
       sr: "/lp/google-ads",

@@ -4,6 +4,7 @@ import {
   ClientLogos,
   CaseStudiesPreview,
   Testimonial,
+  Testimonials,
   FinalCTA
 } from "@/components/sections";
 import { AnimateOnScroll, CounterAnimation } from "@/components/ui";
@@ -267,6 +268,17 @@ export default async function Home({ params }: Props) {
       </AnimateOnScroll>
       <AnimateOnScroll>
         <Testimonial />
+      </AnimateOnScroll>
+      <AnimateOnScroll>
+        <Testimonials
+          title={locale === "en" ? "Trusted by brands across 6+ countries" : "Veruje mi 50+ brendova iz 6+ zemalja"}
+          subtitle={
+            locale === "en"
+              ? "Real quotes from eCommerce, B2B, and local services clients across the UK, Serbia, Croatia, USA, and EU."
+              : "Realni citati od eCommerce, B2B, i lokalnih klijenata iz UK-a, Srbije, Hrvatske, USA i EU."
+          }
+          limit={6}
+        />
       </AnimateOnScroll>
       <FinalCTA />
     </>
