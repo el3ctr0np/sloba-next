@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function KeywordGuideEN() {
   return (
@@ -34,7 +35,7 @@ export default function KeywordGuideEN() {
       {/* ── Why keywords matter ── */}
       <h2>Why Keywords Are the Foundation of Google Ads Success</h2>
       <p>
-        After managing $2M+ in annual ad spend across 50+ campaigns, one truth holds constant — keyword quality directly determines campaign success. You can have perfect ad copy, an optimized landing page, and unlimited budget, but if you target the wrong keywords, you will fail.
+        After managing $2M+ in annual ad spend across 50+ campaigns, one truth holds constant — keyword quality directly determines campaign success. You can have perfect ad copy, an optimized landing page, and unlimited budget, but if you target the wrong keywords, you will fail. Wrong keywords tank your <GlossaryLink slug="quality-score">Quality Score</GlossaryLink>, drive up CPC, and waste budget on clicks that never convert.
       </p>
       <p>
         Keywords in Google Ads are the words and phrases you target with your ads. When a user searches for something matching your keyword, your ad can appear. Sounds simple, but this is where complexity begins — choosing the right keywords requires understanding your customers, their intent, and behavior.
@@ -394,7 +395,7 @@ export default function KeywordGuideEN() {
       {/* ── Match Types ── */}
       <h2>Match Types Explained</h2>
       <p>
-        Google Ads in 2026 has three match types. Each gives different level of control over which searches trigger your ad. See <a href="https://support.google.com/google-ads/answer/7478529" target="_blank" rel="noopener noreferrer" className="underline">Google&apos;s official match types documentation</a> for the latest updates.
+        Google Ads in 2026 has three <GlossaryLink slug="match-types">match types</GlossaryLink>. Each gives different level of control over which searches trigger your ad. See <a href="https://support.google.com/google-ads/answer/7478529" target="_blank" rel="noopener noreferrer" className="underline">Google&apos;s official match types documentation</a> for the latest updates.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -457,7 +458,7 @@ export default function KeywordGuideEN() {
       {/* ── Negative keywords ── */}
       <h2>Negative Keywords — Protecting Your Budget</h2>
       <p>
-        Negative keywords prevent your ads from showing for irrelevant searches. Without them, 20-40% of budget goes to clicks that will never convert.
+        <GlossaryLink slug="negative-keywords">Negative keywords</GlossaryLink> prevent your ads from showing for irrelevant searches. Without them, 20-40% of budget goes to clicks that will never convert.
       </p>
       <p>
         I recommend preparing a starter list of negatives before launching any campaign and reviewing your Search Terms Report weekly.
@@ -668,7 +669,7 @@ export default function KeywordGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
-            I recommend Phrase match for launch. Gives good balance of control and discovery — you see what people actually search for. Add Exact match later for proven performers.
+            I recommend <GlossaryLink slug="phrase-match">Phrase match</GlossaryLink> for launch. Gives good balance of control and discovery — you see what people actually search for. Add <GlossaryLink slug="exact-match">Exact match</GlossaryLink> later for proven performers, and consider <GlossaryLink slug="broad-match">Broad match</GlossaryLink> only once you have 30+ conversions monthly with Smart Bidding.
           </div>
         </details>
 

@@ -1,11 +1,12 @@
 import { Link } from "@/i18n/navigation";
 import { CheckCircle, XCircle } from "lucide-react";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function PerformanceMaxGuideEN() {
   return (
     <>
       <p>
-        <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max (PMax)</a> campaigns are Google's most powerful — and most controversial — tool for automated advertising. You give the algorithm budget, creative, and goal, and it finds customers across all Google networks simultaneously.
+        <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max</a> (<GlossaryLink slug="pmax">PMax</GlossaryLink>) campaigns are Google's most powerful — and most controversial — tool for automated advertising. You give the algorithm budget, creative, and goal, and it finds customers across all Google networks simultaneously.
       </p>
       <p>
         In practice, PMax can be an exceptionally effective channel that scales results or a black hole consuming budget without transparency. The difference is in approach and understanding how the system works.
@@ -201,7 +202,7 @@ export default function PerformanceMaxGuideEN() {
 
       <h2 id="performance-max-for-ecommerce">Performance Max for eCommerce</h2>
       <p>
-        For eCommerce, PMax is most powerful when launched with optimized product feed. PMax without feed is essentially Display campaign in new packaging — loses Shopping and Product Listing Ads power.
+        For eCommerce, PMax is most powerful when launched with an optimized product feed linked to <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink>. PMax without feed is essentially a Display campaign in new packaging — it loses Shopping and Product Listing Ads power, and your <GlossaryLink slug="roas">ROAS</GlossaryLink> potential drops significantly.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -277,7 +278,7 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">My recommendation: Hybrid approach</p>
-        <p className="text-blue-800 text-sm mb-0">Start with Standard Shopping campaigns for control and learning. Add PMax when you have stable conversion history (50+ conversions/month). Best results come from combination: Standard Shopping for brand and control, PMax for prospecting and scaling.</p>
+        <p className="text-blue-800 text-sm mb-0">Start with Standard Shopping campaigns for control and learning. Add PMax when you have stable conversion history (50+ conversions/month). Best results come from combination: Standard Shopping for brand and control, PMax for prospecting and scaling. For margin-conscious eCommerce, track <GlossaryLink slug="poas">POAS</GlossaryLink> alongside ROAS to ensure real profitability.</p>
       </div>
 
       <hr />
@@ -338,7 +339,8 @@ export default function PerformanceMaxGuideEN() {
 
       <h2 id="performance-max-optimization">Performance Max optimization</h2>
       <p>
-        Biggest frustration with PMax is limited control. But control isn't zero — you have levers you can move. Here's what you can (and should) optimize.
+        Biggest frustration with PMax is limited control. But control isn&apos;t zero — you have levers you can move. Here&apos;s what you can (and should) optimize. For a deep dive into bid strategies used within PMax, see the{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="underline font-medium">Smart Bidding guide</Link>.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -386,7 +388,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bid strategy and target value</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">You can adjust your Target CPA or Target ROAS as you see results. I recommend making incremental changes only.</p>
+        <p className="text-sm text-gray-600 mb-3">You can adjust your Target CPA or <GlossaryLink slug="troas">Target ROAS</GlossaryLink> as you see results. Tracking <GlossaryLink slug="conversion-value">conversion value</GlossaryLink> accurately is essential for tROAS to work correctly. I recommend making incremental changes only.</p>
         <ul className="text-sm">
           <li>Never change your target by more than 10–20% at once</li>
           <li>Wait a minimum of 7–10 days before making the next adjustment</li>

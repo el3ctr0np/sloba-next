@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function HowMuchDoesGoogleAdsCostEN() {
   return (
@@ -67,7 +68,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <h2 id="how-google-ads-pricing-works">How Google Ads pricing works</h2>
       <p>
-        Google Ads uses an <strong>auction system</strong>. Every time someone searches, a mini-auction happens between advertisers targeting that keyword. You only pay when someone clicks your ad — hence PPC (pay-per-click).
+        Google Ads uses an <strong>auction system</strong>. Every time someone searches, a mini-auction happens between advertisers targeting that keyword. You only pay when someone clicks your ad — hence <GlossaryLink slug="cpc">PPC (pay-per-click)</GlossaryLink>.
       </p>
 
       <h3>What determines cost per click (CPC)</h3>
@@ -105,7 +106,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         </div>
       </div>
 
-      <p>For most businesses, CPC on Search is the starting point.</p>
+      <p>For most businesses, CPC on Search is the starting point. Display and YouTube campaigns typically use <GlossaryLink slug="cpm">CPM</GlossaryLink> (cost per 1,000 impressions) pricing instead.</p>
 
       <hr />
 
@@ -183,7 +184,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       </div>
 
       <h3>Why the range is so wide</h3>
-      <p>A CPC range from $0.30 to $15 in the same industry seems absurd. But the difference comes from:</p>
+      <p>A CPC range from $0.30 to $15 in the same industry seems absurd. But the difference comes from <GlossaryLink slug="quality-score">Quality Score</GlossaryLink>, keyword competitiveness, and account optimisation level:</p>
       <ul>
         <li><strong>Keywords</strong> — branded terms are cheaper than generic ones</li>
         <li><strong>Search intent</strong> — &quot;buy sneakers online&quot; costs more than &quot;what sneakers are trending&quot;</li>
@@ -362,7 +363,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       </div>
 
       <p>
-        If average CPC in your industry is $0.30, you have room for profit. If it's $0.60, work on conversion rate or AOV.
+        If average CPC in your industry is $0.30, you have room for profit. If it's $0.60, work on conversion rate or <GlossaryLink slug="aov">AOV</GlossaryLink>. For eCommerce, tracking <GlossaryLink slug="roas">ROAS</GlossaryLink> gives you a clearer picture of campaign profitability than raw ROI.
       </p>
 
       <hr />
@@ -529,6 +530,10 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         <Link href="/usluge/konsultacije" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Consultations</p>
           <p className="text-xs text-gray-500 mb-0">Personalized cost analysis and strategy for your business</p>
+        </Link>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Microsoft Ads vs Google Ads</p>
+          <p className="text-xs text-gray-500 mb-0">Which platform delivers better ROI for your budget and industry?</p>
         </Link>
       </div>
 

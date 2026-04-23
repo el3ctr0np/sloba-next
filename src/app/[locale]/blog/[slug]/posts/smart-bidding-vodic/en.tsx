@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function SmartBiddingGuideEN() {
   return (
@@ -37,7 +38,7 @@ export default function SmartBiddingGuideEN() {
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-5 md:p-6 my-8">
         <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Quick Answer</p>
         <p className="text-base md:text-lg font-heading font-semibold text-blue-900 mb-0">
-          Smart Bidding is Google&apos;s suite of automated bid strategies that use machine learning to
+          <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> is Google&apos;s suite of automated bid strategies that use machine learning to
           optimise bids in real time at every auction, aiming to maximise conversions or conversion value
           within a set budget or CPA/ROAS target.
         </p>
@@ -165,7 +166,7 @@ export default function SmartBiddingGuideEN() {
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Maximize Conversions</h3>
               <p className="text-sm text-gray-700 mb-2">
-                Spends the full budget to achieve as many conversions as possible, without a cost target.
+                <GlossaryLink slug="maximize-conversions">Maximize Conversions</GlossaryLink> spends the full budget to achieve as many conversions as possible, without a cost target.
                 The algorithm bids freely — it may pay a high CPA if it believes a conversion will occur.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -198,7 +199,7 @@ export default function SmartBiddingGuideEN() {
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Maximize Conversion Value</h3>
               <p className="text-sm text-gray-700 mb-2">
-                Spends the full budget to achieve the highest total conversion value. The difference from
+                <GlossaryLink slug="maximize-conversion-value">Maximize Conversion Value</GlossaryLink> spends the full budget to achieve the highest total conversion value. The difference from
                 Maximize Conversions: the algorithm prefers higher-value conversions over more conversions.
                 Requires conversion value tracking (mandatory for eCommerce).
               </p>
@@ -231,7 +232,7 @@ export default function SmartBiddingGuideEN() {
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Target CPA (tCPA)</h3>
               <p className="text-sm text-gray-700 mb-2">
-                The algorithm attempts to achieve conversions at a target average cost per acquisition.
+                The <GlossaryLink slug="tcpa">Target CPA</GlossaryLink> algorithm attempts to achieve conversions at a target average cost per acquisition.
                 Some conversions will cost more, some less — but the average should land near your target.
                 The go-to strategy for mature Lead Gen accounts.
               </p>
@@ -265,7 +266,7 @@ export default function SmartBiddingGuideEN() {
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Target ROAS (tROAS)</h3>
               <p className="text-sm text-gray-700 mb-2">
-                The algorithm optimises toward a target return on ad spend (revenue ÷ ad cost × 100%).
+                The <GlossaryLink slug="troas">Target ROAS</GlossaryLink> algorithm optimises toward a target return on ad spend (revenue ÷ ad cost × 100%).
                 The most powerful strategy for mature eCommerce — but the most demanding in terms of
                 data quality. Typically introduced from month 4 onwards once data is stable.
               </p>
@@ -787,6 +788,14 @@ export default function SmartBiddingGuideEN() {
 
       <p>For deeper Google Ads campaign optimisation, see:</p>
       <ul>
+        <li>
+          <Link
+            href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads" } }}
+            className="underline font-medium"
+          >
+            Microsoft Ads vs Google Ads — full comparison [2026]
+          </Link>
+        </li>
         <li>
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimization" } }}

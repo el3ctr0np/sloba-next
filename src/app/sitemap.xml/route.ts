@@ -34,7 +34,8 @@ const routeLastmod: Record<string, string> = {
   "/usluge/starter-paket": "2026-02-10",
   "/case-studies": "2026-03-05",
   "/blog": "2026-04-17",
-  "/recnik": "2026-04-20",
+  "/recnik": "2026-04-23",
+  "/audit": "2026-04-23",
 };
 
 // Build blog lastmod map dynamically from posts/index.tsx (single source of truth)

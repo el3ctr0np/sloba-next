@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleAdsOptimizationEN() {
   return (
@@ -31,8 +32,8 @@ export default function GoogleAdsOptimizationEN() {
 
       <p className="lead">
         Google Ads optimization isn't a one-time activity — it's a continuous process that
-        separates campaigns with 2x ROAS from those with 5x ROAS. In this guide I share 30 tactics I use
-        in practice with clients across different industries.
+        separates campaigns with 2x <GlossaryLink slug="roas">ROAS</GlossaryLink> from those with 5x ROAS. In this guide I share 30 tactics I use
+        in practice with clients across different industries. Every tactic is aimed at improving <GlossaryLink slug="conversion">conversion</GlossaryLink> volume or efficiency.
       </p>
 
       <p>
@@ -193,7 +194,7 @@ export default function GoogleAdsOptimizationEN() {
         </div>
         <p className="text-sm text-gray-600 mb-3">
           People ask &quot;How to get more conversions?&quot; — better question is &quot;How to
-          stop wasting money on bad clicks?&quot;. Negative keywords are the answer.
+          stop wasting money on bad clicks?&quot;. <GlossaryLink slug="negative-keywords">Negative keywords</GlossaryLink> are the answer.
         </p>
         <ul className="text-sm">
           <li>Create master negative list at account level (free, cheap, job, tutorial, PDF)</li>
@@ -417,9 +418,9 @@ export default function GoogleAdsOptimizationEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Manual CPC vs Smart Bidding: when what?</h3>
         </div>
         <p className="text-sm text-gray-600 mb-3">
-          Google pushes Smart Bidding (Target CPA, Target ROAS, Maximize Conversions) as superior
+          Google pushes Smart Bidding (<GlossaryLink slug="tcpa">Target CPA</GlossaryLink>, <GlossaryLink slug="troas">Target ROAS</GlossaryLink>, Maximize Conversions) as superior
           solution. In practice: depends on conversion volume. Below 30 conversions monthly, Smart Bidding
-          doesn't have enough data to learn — Manual CPC with bid adjustments is better.
+          doesn't have enough data to learn — Manual CPC with <GlossaryLink slug="bid-adjustments">bid adjustments</GlossaryLink> is better.
         </p>
         <ul className="text-sm">
           <li><strong>Manual CPC:</strong> New launch, small budget, &lt;30 conversions/month</li>
@@ -434,7 +435,8 @@ export default function GoogleAdsOptimizationEN() {
         <p className="text-blue-800 text-sm mb-0">
           Don't jump directly from Manual CPC to Target CPA. First switch to &quot;Maximize Conversions&quot;
           without target so algorithm learns. After 2 weeks, switch to Target CPA/ROAS with realistic
-          goal (10% better than current average).
+          goal (10% better than current average). For a complete walkthrough, see the{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="underline font-semibold">Smart Bidding guide</Link>.
         </p>
       </div>
 
@@ -511,8 +513,8 @@ export default function GoogleAdsOptimizationEN() {
       <h2>Quality Score optimization</h2>
 
       <p>
-        Quality Score is Google's rating of how relevant your ads and keywords are to users.
-        Higher Quality Score = lower CPC and better ad rank. If you have average below 5/10, here's your
+        <GlossaryLink slug="quality-score">Quality Score</GlossaryLink> is Google's rating of how relevant your ads and keywords are to users.
+        Higher Quality Score = lower CPC and better <GlossaryLink slug="ad-rank">Ad Rank</GlossaryLink>. If you have average below 5/10, here&apos;s your
         biggest optimization opportunity.
       </p>
 

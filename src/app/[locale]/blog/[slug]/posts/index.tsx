@@ -75,7 +75,7 @@ const srPosts: PostData[] = [
     slug: "microsoft-ads-vs-google-ads",
     title: "Microsoft Ads vs Google Ads: Kompletno Poređenje za 2026 [Iz Prakse]",
     date: "2026-04-19",
-    dateModified: "2026-04-19",
+    dateModified: "2026-04-23",
     category: "Strategija",
     metaDescription:
       "Microsoft Ads vs Google Ads u 2026: market share, CPC razlike, kada koristiti koju platformu, LinkedIn targeting prednost. Iz 2 godine rada sa Chelleon UK na obe platforme istovremeno.",
@@ -99,10 +99,10 @@ const srPosts: PostData[] = [
     slug: "smart-bidding-vodic",
     title: "Smart Bidding Strategije za Google Ads: Kompletan Vodič za 2026",
     date: "2026-04-19",
-    dateModified: "2026-04-19",
+    dateModified: "2026-04-23",
     category: "Optimizacija",
     metaDescription:
-      "Smart Bidding strategije u Google Ads-u 2026: 6 strategija (Maximize Conversions, tCPA, tROAS i ostale) sa decision tree-jem, conversion volume requirements, i lekcijama iz 10+ naloga (Chelleon UK, Šlep Služba, Zlaja, Perun Moto).",
+      "Smart Bidding strategije u Google Ads-u 2026: 6 strategija (Maximize Conversions, tCPA, tROAS i ostale) sa decision tree-jem, conversion volume requirements, i lekcijama iz 10+ naloga.",
     featuredImage: "/blog/smart-bidding-vodic.webp",
     readingTime: "16 min",
     content: <SmartBiddingVodicSR />
@@ -378,7 +378,7 @@ const enPosts: PostData[] = [
     slug: "microsoft-ads-vs-google-ads-comparison",
     title: "Microsoft Ads vs Google Ads: Complete 2026 Comparison [From the Trenches]",
     date: "2026-04-19",
-    dateModified: "2026-04-19",
+    dateModified: "2026-04-23",
     category: "Strategija",
     metaDescription:
       "Microsoft Ads vs Google Ads in 2026: market share, CPC differences, when to use which platform, LinkedIn targeting advantage. From 2 years running Chelleon UK on both platforms simultaneously.",
@@ -401,10 +401,10 @@ const enPosts: PostData[] = [
     slug: "smart-bidding-guide",
     title: "Smart Bidding Strategies for Google Ads: Complete 2026 Guide",
     date: "2026-04-19",
-    dateModified: "2026-04-19",
+    dateModified: "2026-04-23",
     category: "Optimizacija",
     metaDescription:
-      "Smart Bidding strategies in Google Ads 2026: 6 strategies (Maximize Conversions, tCPA, tROAS, more) with decision tree, conversion volume requirements, and lessons from 10+ accounts (Chelleon UK, Perun Moto, Pickbox).",
+      "Smart Bidding strategies in Google Ads 2026: 6 strategies (Maximize Conversions, tCPA, tROAS, more) with decision tree, conversion volume requirements, and lessons from managing 10+ accounts across UK, Serbia, and EU markets.",
     featuredImage: "/blog/smart-bidding-vodic.webp",
     readingTime: "16 min",
     content: <SmartBiddingGuideEN />
@@ -567,12 +567,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-audit-checklist",
-    title: "Google Ads Audit: Complete Checklist [2026]",
+    title: "Google Ads Audit Checklist: 80+ Checkpoints to Find Wasted Spend in 1 Hour [2026]",
     date: "2026-01-27",
-    dateModified: "2025-12-22",
+    dateModified: "2026-04-23",
     category: "Google Ads Audit",
     metaDescription:
-      "Detailed Google Ads audit checklist with 80+ checkpoints. Find problems, optimize campaigns, and improve ROI.",
+      "Run a complete Google Ads audit in 60 minutes with this 80+ point checklist. Covers conversion tracking, Smart Bidding, Quality Score, negatives, search terms, and budget waste detection. Used across 20+ accounts (UK, Serbia, EU).",
     readingTime: "16 min",
     content: <GoogleAdsAuditGuideEN />
   },
