@@ -38,6 +38,10 @@ import RsaVodicSR from "./rsa-vodic/sr";
 import RsaGuideEN from "./rsa-vodic/en";
 import CtrVodicSR from "./ctr-vodic/sr";
 import CtrGuideEN from "./ctr-vodic/en";
+import GA4GoogleAdsIntegracijaSR from "./ga4-google-ads-integracija/sr";
+import GA4GoogleAdsIntegrationEN from "./ga4-google-ads-integracija/en";
+import StaJeRoasSR from "./sta-je-roas/sr";
+import WhatIsRoasEN from "./sta-je-roas/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -71,6 +75,28 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "ga4-google-ads-integracija",
+    title: "GA4 + Google Ads Integracija: Kompletan Setup Vodič [2026]",
+    date: "2026-04-26",
+    dateModified: "2026-04-26",
+    category: "Tracking",
+    metaDescription:
+      "Kompletan 7-koračni vodič za GA4 + Google Ads integraciju u 2026: linkovanje property-ja, import key events kao konverzija, Primary/Secondary setup, Consent Mode v2 i troubleshooting. HowTo schema + realne lekcije iz 10+ naloga.",
+    readingTime: "18 min",
+    content: <GA4GoogleAdsIntegracijaSR />
+  },
+  {
+    slug: "sta-je-roas",
+    title: "Šta je ROAS i Kako se Računa? [sa Kalkulatorom] [2026]",
+    date: "2026-04-26",
+    dateModified: "2026-04-26",
+    category: "Metrike",
+    metaDescription:
+      "Šta je ROAS (Return on Ad Spend)? Formula: ROAS = Prihod ÷ Potrošnja. Interaktivni kalkulator, industrijski benchmarks, razlika ROAS vs POAS i 6 taktika za poboljšanje. Bazirano na realnim nalozima.",
+    readingTime: "8 min",
+    content: <StaJeRoasSR />
+  },
   {
     slug: "microsoft-ads-vs-google-ads",
     title: "Microsoft Ads vs Google Ads: Kompletno Poređenje za 2026 [Iz Prakse]",
@@ -145,12 +171,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "koliko-kosta-google-ads",
-    title: "Koliko Košta Google Ads? Cene, Budžeti i ROI u Srbiji [2026]",
+    title: "Koliko Košta Google Ads u Srbiji? CPC po Industrijama + Budžeti od 200€ do 5.000€ [2026]",
     date: "2026-01-26",
-    dateModified: "2026-04-19",
+    dateModified: "2026-04-27",
     category: "Google Ads",
     metaDescription:
-      "Koliko zaista košta Google Ads u Srbiji? Detaljni pregled cena po industrijama, minimalni budžeti, troškovi agencija i kako izračunati ROI pre nego što potrošite prvi dinar.",
+      "Google Ads cena u Srbiji: realni CPC po industrijama (15-50 RSD), minimalni budžeti od €200/mes, agencijske takse, i ROI okvir koji koristim sa 20+ klijenata. Sve cifre iz 2026, sa konkretnim primerima.",
     featuredImage: "/blog/koliko-kosta-google-ads.webp",
     readingTime: "12 min",
     content: <KolikoKostaGoogleAdsSR />
@@ -169,12 +195,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "performance-max-vodic",
-    title: "Performance Max (PMax): Kompletan Vodič za 2026 + Asset Grupa Template",
+    title: "Performance Max (PMax) Vodič za 2026: Struktura, Asset Grupe + Template koji Daje 3-4x ROAS",
     date: "2026-01-26",
-    dateModified: "2026-04-19",
+    dateModified: "2026-04-27",
     category: "Performance Max",
     metaDescription:
-      "Kako da pokreneš Performance Max kampanju koja donosi 3-4x ROAS: struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje vidim svaki mesec u 10+ naloga.",
+      "Performance Max kampanje u 2026: kompletna struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje koštaju 30-50% ROAS-a. Uključuje gotov PMax Asset Grupa template + lekcije iz 10+ naloga.",
     featuredImage: "/blog/performance-max-vodic.webp",
     readingTime: "14 min",
     content: <PerformanceMaxVodicSR />
@@ -205,12 +231,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "agencija-vs-freelancer",
-    title: "Google Ads Agencija vs Freelancer vs In-House: Kako Izabrati Pravu Opciju",
+    title: "Google Ads Agencija vs Freelancer vs In-House: Koju Opciju Izabrati u 2026? [€200–€2K+/mes]",
     date: "2026-01-26",
-    dateModified: "2026-01-28",
+    dateModified: "2026-04-27",
     category: "Google Ads",
     metaDescription:
-      "Agencija, freelancer ili in-house tim za Google Ads Detaljno poređenje troškova, prednosti i mana svake opcije. Saznajte koja je prava za vaš budžet i ciljeve.",
+      "Google Ads agencija, freelancer ili in-house tim u 2026? Detaljno poređenje troškova (€200–€2.000+/mes), prednosti i mana svake opcije. Decision framework za biznise iz Srbije, regiona i EU. 67% kompanija menja partnera u prvoj godini — kako da izaberete prvi put kako treba.",
     featuredImage: "/blog/agencija-vs-freelancer.webp",
     readingTime: "11 min",
     content: <AgencijaVsFreelancerSR />
@@ -289,12 +315,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "kljucne-reci-vodic",
-    title: "Ključne Reči za Google Ads: Kako Ih Naći u 30 Minuta [Vodič 2026]",
+    title: "Ključne Reči za Google Ads u 30 Minuta: Tipovi po Intentu, Match Strategija + 12 Taktika [2026]",
     date: "2026-01-27",
-    dateModified: "2026-04-09",
+    dateModified: "2026-04-27",
     category: "Google Ads keywords",
     metaDescription:
-      "Vodič za istraživanje ključnih reči u Google Ads: 7 besplatnih alata, match types (broad/phrase/exact), negative keywords, i šablon za organizaciju 100+ keyword-a u ad groups. Koraci koje koristim u praksi.",
+      "Ključne reči za Google Ads: tipovi po intentu (transactional, commercial, informational), match types (broad/phrase/exact), negative keywords, 7 besplatnih alata za istraživanje i šablon za organizaciju 100+ keyword-a. Koraci koje koristim sa 20+ klijenata.",
     featuredImage: "/blog/kljucne-reci-vodic.webp",
     readingTime: "14 min",
     content: <KljucneReciVodicSR />
@@ -325,12 +351,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "remarketing-vodic",
-    title: "Google Ads Remarketing: 7 Audience Lista za 4x ROAS [Vodič 2026]",
+    title: "Google Ads Remarketing Vodič 2026: 7 Audience Lista koje Smanje CPA za 50–70%",
     date: "2026-01-27",
-    dateModified: "2026-04-19",
+    dateModified: "2026-04-27",
     category: "Google Ads",
     metaDescription:
-      "Kako da postaviš remarketing u Google Ads: 7 audience lista koje rade (cart abandoners, 30-day viewers, video viewers), GA4 integracija, i zašto većina kampanja smanji CPA za 50-70%.",
+      "Remarketing kampanje u Google Ads-u 2026: 7 proverenih audience lista (cart abandoners 7d, product viewers 30d, video viewers, customer match, lookalikes), GA4 integracija, i konkretan setup koji smanji CPA za 50–70% u prosečnom eCommerce nalogu.",
     featuredImage: "/blog/remarketing-vodic.webp",
     readingTime: "15 min",
     content: <RemarketingVodicSR />
@@ -374,6 +400,28 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "ga4-google-ads-integration",
+    title: "GA4 + Google Ads Integration: Complete Setup Guide [2026]",
+    date: "2026-04-26",
+    dateModified: "2026-04-26",
+    category: "Tracking",
+    metaDescription:
+      "Complete 7-step GA4 + Google Ads integration guide for 2026: link property, import key events as conversions, Primary/Secondary setup, Consent Mode v2, and troubleshooting. HowTo schema + lessons from 10+ accounts.",
+    readingTime: "18 min",
+    content: <GA4GoogleAdsIntegrationEN />
+  },
+  {
+    slug: "what-is-roas",
+    title: "What is ROAS and How to Calculate It? [with Calculator] [2026]",
+    date: "2026-04-26",
+    dateModified: "2026-04-26",
+    category: "Metrics",
+    metaDescription:
+      "What is ROAS (Return on Ad Spend)? Formula: ROAS = Revenue ÷ Spend. Interactive calculator, industry benchmarks, ROAS vs POAS, and 6 tactics to improve. Based on real account data.",
+    readingTime: "8 min",
+    content: <WhatIsRoasEN />
+  },
   {
     slug: "microsoft-ads-vs-google-ads-comparison",
     title: "Microsoft Ads vs Google Ads: Complete 2026 Comparison [From the Trenches]",
@@ -589,12 +637,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "negative-keywords-guide",
-    title: "Negative Keywords: Complete List + Strategy [2026]",
+    title: "Comprehensive Negative Keywords List for Google Ads: 200+ Universal + 7 Industry Lists [2026]",
     date: "2026-01-27",
-    dateModified: "2025-12-28",
+    dateModified: "2026-04-27",
     category: "Google Ads",
     metaDescription:
-      "Complete guide to negative keywords in Google Ads — ready-made lists by industry, addition strategy, and how to prevent wasting budget on wrong searches.",
+      "Complete negative keywords list for Google Ads (200+ entries across 7 categories): universal negatives, eCommerce, B2B, SaaS, Local Service, Lead Gen + competitor blocks. Strategy and match types that cut wasted spend by 20-40% in 30 days.",
     readingTime: "12 min",
     content: <NegativeKeywordsGuideEN />
   },

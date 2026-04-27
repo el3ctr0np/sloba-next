@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "Google Ads Srbija | Konsultant Ekspert sa Decenijskim Iskustvom — Slobodan Jelisavac",
-    description: "Google Ads konsultant i ekspert sa 10+ godina iskustva i preko 50 brendova u portfoliju. Profesionalno Google oglašavanje za firme iz Srbije, regiona i EU. Zakažite konsultaciju.",
+    title: "Google Ads Srbija — Konsultant sa 10+ Godina Iskustva | Slobodan Jelisavac",
+    description: "Google Ads Srbija — nezavisni PPC konsultant sa 10+ godina iskustva i 50+ brendova u portfoliju (Srbija, UK, EU). Search, Shopping, Performance Max kampanje. Bez onboarding naknada, bez dugoročnih ugovora.",
     locale,
     path: "",
     ogImage: "/og/homepage.png",
@@ -158,9 +158,9 @@ export default async function Home({ params }: Props) {
           ],
         }
       : {
-          title: "Vaša potraga za Google Ads ekspertom se završava ovde",
+          title: "Google Ads Srbija — vaša potraga za Google Ads konsultantom se završava ovde",
           subtitle:
-            "Bez onboarding naknada. Bez dugoročnih ugovora. Bez juniora na vašem nalogu. Uz napredne AI tehnologije za maksimalne rezultate.",
+            "Profesionalno Google oglašavanje u Srbiji, UK i EU. Bez onboarding naknada. Bez dugoročnih ugovora. Bez juniora na vašem nalogu. Uz napredne AI tehnologije za maksimalne rezultate.",
           ctaText: "Zakažite besplatnu konsultaciju",
           ctaHref: "/kontakt",
           secondaryCtaText: "Pogledajte rezultate",

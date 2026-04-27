@@ -29,6 +29,19 @@ export default function NegativeKeywordsGuideEN() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick Answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What is a comprehensive negative keywords list for Google Ads?
+        </p>
+        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+          A <strong>comprehensive negative keywords list</strong> is a curated set of 200+ words and phrases that prevent ads from showing for irrelevant searches — typically organized into 7 universal categories: <strong>free/freebie seekers</strong> (free, download, torrent), <strong>job seekers</strong> (jobs, careers, salary), <strong>DIY/research</strong> (how to, tutorial, course), <strong>competitor brands</strong>, <strong>off-topic geo</strong>, <strong>used/refurbished</strong>, and <strong>review/comparison aggregators</strong>. Adding them across campaigns typically reduces wasted spend by <strong>20–40%</strong> in the first 30 days.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── What are negative keywords ── */}
