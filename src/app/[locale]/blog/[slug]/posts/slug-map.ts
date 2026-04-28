@@ -25,6 +25,8 @@ export const slugMap: Record<string, string> = {
   "google-ads-novosti-2026": "google-ads-updates-2026",
   "google-ads-za-ecommerce-srbija-2026": "google-ads-for-ecommerce-serbia-2026",
   "smart-bidding-vodic": "smart-bidding-guide",
+  "ga4-google-ads-integracija": "ga4-google-ads-integration",
+  "sta-je-roas": "what-is-roas",
 };
 
 // Reverse map: EN slug → SR (canonical) slug
