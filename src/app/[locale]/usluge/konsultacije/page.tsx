@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Google Ads Konsultacije €80/sat | Ekspertski Savet — Slobodan Jelisavac",
     description: isEn
       ? "Expert Google Ads consulting at €80/hr. Get strategic advice, second opinions, and problem-solving for your PPC campaigns. Flexible support without long-term commitment."
-      : "Ekspertske Google Ads konsultacije €80/sat. Strategija, second opinion, problem solving. Fleksibilna podrška bez dugoročne obaveze. Zakažite konsultaciju.",
+      : "Google Ads Srbija — ekspertske konsultacije €80/sat. Strategija, second opinion, problem solving. Fleksibilna podrška bez dugoročne obaveze. Zakažite konsultaciju.",
     locale,
     path: "/services/consultations",
     srPath: "/usluge/konsultacije",

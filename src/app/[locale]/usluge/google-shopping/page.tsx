@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Google Shopping kampanje Srbija | eCommerce specijalist - Slobodan Jelisavac",
     description: isEn
       ? "Expert Google Shopping campaign management for eCommerce brands. Product feed optimization, bid strategies, campaign structure. Maximize ROAS and sell more products."
-      : "Specijalizovane Google Shopping kampanje za eCommerce. Feed optimizacija, bid strategije, struktura kampanja. Povećajte ROAS i prodajte više proizvoda.",
+      : "Google Ads Srbija — specijalizovane Google Shopping kampanje za eCommerce. Feed optimizacija, bid strategije, struktura kampanja. Povećajte ROAS i prodajte više proizvoda.",
     locale,
     path: "/services/google-shopping",
     srPath: "/usluge/google-shopping",

@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Performance Max kampanje Srbija | PMax specijalist - Slobodan Jelisavac",
     description: isEn
       ? "Expert Performance Max campaign management for businesses seeking consolidated advertising. Asset group optimization, audience signals, and transparent tracking across all Google channels."
-      : "Profesionalno upravljanje Performance Max kampanjama. Za firme koje žele konsolidovano oglašavanje sa jednim budžetom i transparentno praćenje rezultata.",
+      : "Google Ads Srbija — Performance Max kampanje. Profesionalno upravljanje za firme koje žele konsolidovano oglašavanje sa jednim budžetom i transparentno praćenje rezultata.",
     locale,
     path: "/services/performance-max",
     srPath: "/usluge/performance-max",

@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Google Ads za B2B kompanije | Lead generation Srbija - Slobodan Jelisavac",
     description: isEn
       ? "Expert B2B Google Ads management focused on qualified lead generation, CPA optimization, and CRM integration (HubSpot, Salesforce). 9+ years experience, 50+ brands across 6+ countries."
-      : "Google Ads strategije za B2B lead generation. 180% više kvalifikovanih leadova, CRM integracija (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju.",
+      : "Google Ads Srbija za B2B kompanije — strategije za lead generation. 180% više kvalifikovanih leadova, CRM integracija (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju.",
     locale,
     path: "/services/google-ads-for-b2b",
     srPath: "/usluge/google-ads-za-b2b",
