@@ -528,10 +528,10 @@ const enPosts: PostData[] = [
     slug: "google-ads-optimization",
     title: "Google Ads Optimization: 30 Tactics Proven to Lift ROAS 40% in 90 Days [2026]",
     date: "2026-01-17",
-    dateModified: "2026-04-22",
+    dateModified: "2026-04-29",
     category: "Optimization",
     metaDescription:
-      "30 Google Ads optimization tactics that actually move the needle in 2026: Smart Bidding, negative keywords, Quality Score, landing page tweaks, A/B testing. Tested across 20+ eCommerce and B2B accounts. Average impact: 40% ROAS lift in 90 days.",
+      "January 2026 audience list size decrease — plus 29 more Google Ads fixes that actually move the needle. 30 optimization tactics tested across 20+ eCommerce and B2B accounts: Smart Bidding, negative keywords, Quality Score, landing page tweaks, A/B testing. Average 40% ROAS lift in 90 days.",
     readingTime: "18 min",
     content: <GoogleAdsOptimizationEN />
   },

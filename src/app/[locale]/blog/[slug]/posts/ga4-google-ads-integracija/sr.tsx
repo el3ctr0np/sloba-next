@@ -549,10 +549,10 @@ export default function GA4GoogleAdsIntegracijaSR() {
           Vaša GA4 + Google Ads integracija nije potpuna?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Besplatni tracking audit — proveravam link status, Primary/Secondary setup, Consent Mode v2, i attribution model. Obično pronađem 3–5 grešaka koje koštaju konverzija.
+          Besplatan audit kompletnog tracking sistema na vašem sajtu — provera link statusa, Primary/Secondary setup-a, Consent Mode v2, attribution modela i celokupnog data flow-a. Obično se otkrije 3–5 grešaka koje koštaju konverzija.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
-          Zakažite tracking audit
+          Pošaljite zahtev za besplatan audit
         </Link>
       </div>
 

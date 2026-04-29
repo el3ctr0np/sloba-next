@@ -549,10 +549,10 @@ export default function GA4GoogleAdsIntegrationEN() {
           Your GA4 + Google Ads integration incomplete?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Free tracking audit — I check link status, Primary/Secondary setup, Consent Mode v2, and attribution. I typically find 3–5 mistakes costing conversions.
+          Free comprehensive audit of your entire site&apos;s tracking system — link status, Primary/Secondary setup, Consent Mode v2, attribution model, and the full data flow. Typically reveals 3–5 mistakes costing conversions.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
-          Book a tracking audit
+          Submit your free audit request
         </Link>
       </div>
 
