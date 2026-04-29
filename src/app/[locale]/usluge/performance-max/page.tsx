@@ -718,6 +718,20 @@ export default async function PerformanceMaxPage({ params }: Props) {
                   ? "Google Ads management"
                   : "Google Ads upravljanje"}
               </Link>
+              <span>•</span>
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }}
+                className="hover:text-yellow-400 transition-colors"
+              >
+                {locale === "en" ? "Smart Bidding guide" : "Smart Bidding vodič"}
+              </Link>
+              <span>•</span>
+              <Link
+                href="/"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                {locale === "en" ? "Google Ads Consulting" : "Google Ads usluge"}
+              </Link>
             </div>
           </div>
         </div>

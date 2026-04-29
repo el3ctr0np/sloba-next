@@ -871,6 +871,18 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                 ? "Common Google Ads Mistakes"
                 : "Najčešće Google Ads greške"}
             </Link>
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: "sta-je-roas" } }}
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "What is ROAS?" : "Šta je ROAS i kako ga meriti?"}
+            </Link>
+            <Link
+              href="/"
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "Google Ads Consulting" : "Google Ads Srbija"}
+            </Link>
           </div>
         </div>
       </section>

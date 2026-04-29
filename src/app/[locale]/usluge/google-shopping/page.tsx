@@ -679,6 +679,20 @@ export default async function GoogleShoppingPage({ params }: Props) {
               >
                 {locale === "en" ? "Performance Max" : "Performance Max"}
               </Link>
+              <span className="text-slate-600">•</span>
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "sta-je-roas" } }}
+                className="text-slate-300 hover:text-yellow-400 transition-colors underline"
+              >
+                {locale === "en" ? "What is ROAS?" : "Šta je ROAS?"}
+              </Link>
+              <span className="text-slate-600">•</span>
+              <Link
+                href="/"
+                className="text-slate-300 hover:text-yellow-400 transition-colors underline"
+              >
+                {locale === "en" ? "Google Ads Consulting" : "Google Ads konsultant"}
+              </Link>
             </div>
           </div>
         </div>

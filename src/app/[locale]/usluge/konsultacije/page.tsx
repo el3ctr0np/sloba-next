@@ -885,6 +885,30 @@ export default async function KonsultacijePage({ params }: Props) {
             >
               {locale === "en" ? "Starter Package" : "Starter paket"}
             </Link>
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "Agency vs Freelancer" : "Agencija vs Freelancer"}
+            </Link>
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }}
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "Keyword Research Guide" : "Vodič za ključne reči"}
+            </Link>
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: "sta-je-roas" } }}
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "What is ROAS?" : "Šta je ROAS?"}
+            </Link>
+            <Link
+              href="/"
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "Google Ads Consulting" : "Google Ads Srbija"}
+            </Link>
           </div>
         </div>
       </section>
