@@ -23,10 +23,14 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "ChatGPT-User", allow: "/", disallow },
       { userAgent: "OAI-SearchBot", allow: "/", disallow },
 
-      // Anthropic — Claude
+      // Anthropic — Claude (granular per-bot per Anthropic 2025 docs)
+      // ClaudeBot = potential training; Claude-User = user-initiated fetches;
+      // Claude-SearchBot = search quality/relevance improvements in answers.
       { userAgent: "ClaudeBot", allow: "/", disallow },
-      { userAgent: "Claude-Web", allow: "/", disallow },
-      { userAgent: "anthropic-ai", allow: "/", disallow },
+      { userAgent: "Claude-User", allow: "/", disallow },
+      { userAgent: "Claude-SearchBot", allow: "/", disallow },
+      { userAgent: "Claude-Web", allow: "/", disallow }, // legacy, kept defensively
+      { userAgent: "anthropic-ai", allow: "/", disallow }, // legacy
 
       // Google AI — Gemini & AI Overviews (separate from Googlebot)
       { userAgent: "Google-Extended", allow: "/", disallow },
