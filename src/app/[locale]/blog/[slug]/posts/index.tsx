@@ -38,6 +38,7 @@ import RsaVodicSR from "./rsa-vodic/sr";
 import RsaGuideEN from "./rsa-vodic/en";
 import CtrVodicSR from "./ctr-vodic/sr";
 import CtrGuideEN from "./ctr-vodic/en";
+import GoogleAdsAuditChecklistSrbijaSR from "./google-ads-audit-checklist-srbija/sr";
 import GA4GoogleAdsIntegracijaSR from "./ga4-google-ads-integracija/sr";
 import GA4GoogleAdsIntegrationEN from "./ga4-google-ads-integracija/en";
 import StaJeRoasSR from "./sta-je-roas/sr";
@@ -75,6 +76,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "google-ads-audit-checklist-srbija",
+    title: "Google Ads Audit Checklist 2026 — 50 Stavki [Srbija]",
+    date: "2026-05-09",
+    dateModified: "2026-05-09",
+    category: "Google Ads Audit",
+    metaDescription:
+      "Konkretan checklist od 50 stavki za audit Google Ads naloga u Srbiji. 10 kategorija sa primerima iz prakse — eCommerce, B2B, lead-gen. Scoring sistem i 30-min brzi audit.",
+    readingTime: "18 min",
+    content: <GoogleAdsAuditChecklistSrbijaSR />
+  },
   {
     slug: "ga4-google-ads-integracija",
     title: "GA4 + Google Ads Integracija: Kompletan Setup Vodič [2026]",
@@ -171,12 +183,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "koliko-kosta-google-ads",
-    title: "Koliko Košta Google Ads u Srbiji? CPC po Industrijama + Budžeti od 200€ do 5.000€ [2026]",
+    title: "Koliko zapravo košta Google oglašavanje u Srbiji? CPC po Industrijama + Budžeti od 200€ do 5.000€ [2026]",
     date: "2026-01-26",
-    dateModified: "2026-04-27",
+    dateModified: "2026-05-14",
     category: "Google Ads",
     metaDescription:
-      "Google Ads cena u Srbiji: realni CPC po industrijama (15-50 RSD), minimalni budžeti od €200/mes, agencijske takse, i ROI okvir koji koristim sa 20+ klijenata. Sve cifre iz 2026, sa konkretnim primerima.",
+      "Google oglašavanje cena u Srbiji: realni CPC po industrijama (15-50 RSD), minimalni budžeti od €200/mes, agencijske takse, i ROI okvir koji koristim sa 20+ klijenata. Sve cifre iz 2026, sa konkretnim primerima.",
     featuredImage: "/blog/koliko-kosta-google-ads.webp",
     readingTime: "12 min",
     content: <KolikoKostaGoogleAdsSR />
@@ -195,7 +207,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "performance-max-vodic",
-    title: "Performance Max (PMax) Vodič za 2026: Struktura, Asset Grupe + Template koji Daje 3-4x ROAS",
+    title: "Performance Max (PMax) Vodič za 2026: Struktura, Asset Grupe + Template koji daje bolji ROAS",
     date: "2026-01-26",
     dateModified: "2026-04-27",
     category: "Performance Max",
@@ -207,12 +219,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-optimizacija",
-    title: "Google Ads Optimizacija: 30 Taktika za Bolji ROAS [2026]",
+    title: "Google Ads Optimizacija: +20 Taktika za bolje rezultate [2026]",
     date: "2026-01-17",
-    dateModified: "2026-04-15",
+    dateModified: "2026-05-14",
     category: "Optimizacija",
     metaDescription:
-      "Google Ads optimizacija: 30 proverenih taktika za bolji ROAS. Kompletan vodič — bid strategije, negativne ključne reči, Quality Score, landing page i A/B testiranje. Iz prakse sa 20+ klijenata (Srbija, UK, EU).",
+      "Preko +20 taktika za bolje rezultate. Kompletan vodič — bid strategije, negativne ključne reči, Quality Score, landing page i A/B testiranje. Iz prakse sa 20+ klijenata.",
     featuredImage: "/blog/google-ads-optimizacija.webp",
     readingTime: "18 min",
     content: <GoogleAdsOptimizacijaSR />
@@ -315,7 +327,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "kljucne-reci-vodic",
-    title: "Ključne Reči za Google Ads u 30 Minuta: Tipovi po Intentu, Match Strategija + 12 Taktika [2026]",
+    title: "Koje ključne reči zapravo donose rezultate, a koje samo troše budžete",
     date: "2026-01-27",
     dateModified: "2026-04-27",
     category: "Google Ads keywords",
@@ -363,12 +375,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "kako-poceti-google-ads",
-    title: "Kako Početi sa Google Ads: Vodič za Početnike [2026]",
+    title: "Kako početi sa Google oglašavanjem: Vodič za početnike [2026]",
     date: "2026-03-01",
-    dateModified: "2026-04-19",
+    dateModified: "2026-05-14",
     category: "Google Ads",
     metaDescription:
-      "Kako početi sa Google Ads od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
+      "Kako početi sa Google oglašavanjem od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
     featuredImage: "/blog/kako-poceti-google-ads.webp",
     readingTime: "14 min",
     content: <KakoPocetiGoogleAdsSR />
