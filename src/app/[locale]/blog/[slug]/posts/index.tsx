@@ -638,12 +638,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-keyword-guide",
-    title: "Keywords for Google Ads: Types, Match Strategy + 12 Tactics That Convert [2026]",
+    title: "Which Keywords Actually Bring Customers — And Which Ones Just Burn Your Budget",
     date: "2026-01-27",
-    dateModified: "2026-04-22",
+    dateModified: "2026-05-25",
     category: "Google Ads Keywords",
     metaDescription:
-      "Google Ads keywords: research process, match types (broad/phrase/exact), intent classification (transactional/commercial/informational), and 12 tactics to find keywords that drive conversions — not just clicks. Real examples from 20+ accounts.",
+      "What separates Google Ads keywords that bring paying customers from those that just drain your budget. Match types, intent classification, negative keywords, and lessons from 20+ accounts I've personally managed.",
     readingTime: "14 min",
     content: <KeywordGuideEN />
   },
