@@ -1,7 +1,22 @@
 import { Link } from "@/i18n/navigation";
 
-export function BlogCTA({ locale, variant = "bottom" }: { locale: string; variant?: "mid" | "bottom" }) {
+export function BlogCTA({
+  locale,
+  variant = "bottom",
+  target = "consult",
+}: {
+  locale: string;
+  variant?: "mid" | "bottom";
+  /**
+   * Where the CTA should send the reader.
+   * - "consult": low-commitment enquiry/consultation (TOFU / beginner posts) -> /kontakt
+   * - "audit": the paid audit service page (BOFU / strategy / audit posts) -> /usluge/google-ads-audit
+   * Defaults to "consult" to preserve the original /kontakt behaviour.
+   */
+  target?: "audit" | "consult";
+}) {
   const isEn = locale === "en";
+  const primaryHref = target === "audit" ? "/usluge/google-ads-audit" : "/kontakt";
 
   if (variant === "mid") {
     return (
@@ -23,10 +38,16 @@ export function BlogCTA({ locale, variant = "bottom" }: { locale: string; varian
             </p>
           </div>
           <Link
-            href="/kontakt"
+            href={primaryHref}
             className="shrink-0 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors text-sm whitespace-nowrap"
           >
-            {isEn ? "Apply for Free Audit" : "Aplicirajte za video audit"}
+            {target === "audit"
+              ? isEn
+                ? "See the audit service"
+                : "Pogledaj uslugu audita"
+              : isEn
+                ? "Book a free consultation"
+                : "Zakaži besplatnu konsultaciju"}
           </Link>
         </div>
       </div>
@@ -74,10 +95,12 @@ export function BlogCTA({ locale, variant = "bottom" }: { locale: string; varian
 
       <div className="flex flex-col sm:flex-row gap-3">
         <Link
-          href="/kontakt"
+          href={primaryHref}
           className="inline-block bg-yellow-400 text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition-colors text-center"
         >
-          {isEn ? "Apply for your free video audit \u2192" : "Aplicirajte za besplatni video audit naloga \u2192"}
+          {target === "audit"
+            ? (isEn ? "Apply for your free video audit \u2192" : "Aplicirajte za besplatni video audit naloga \u2192")
+            : (isEn ? "Book a free 15-min consultation \u2192" : "Zaka\u017eite besplatnu 15-min konsultaciju \u2192")}
         </Link>
         <Link
           href="/kontakt"

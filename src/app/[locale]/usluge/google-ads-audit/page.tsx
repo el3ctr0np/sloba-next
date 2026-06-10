@@ -368,6 +368,13 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     ]
   };
 
+  // Real, consent-approved client quotes only. Leave EMPTY until a client has
+  // explicitly approved a quote for public use. The testimonials section below
+  // renders NOTHING while this array is empty — no placeholder/fake text ships.
+  // TODO: real client quote pending consent — add objects of the shape:
+  // { quote: string; author: string; role: string } (localized as needed).
+  const testimonials: { quote: string; author: string; role: string }[] = [];
+
   return (
     <>
       <script
@@ -595,6 +602,35 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
           ))}
         </div>
       </Section>
+
+      {/* Testimonials — renders ONLY when real, consent-approved quotes exist.
+          Positioned between "What a Google Ads audit covers" and "What you get".
+          Empty `testimonials` array => this whole block returns null (nothing
+          ships). Do NOT add placeholder/fake quotes here. */}
+      {testimonials.length > 0 && (
+        <Section>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-heading font-bold mb-4">
+              {locale === "en"
+                ? "What clients say"
+                : "Šta kažu klijenti"}
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {testimonials.map((t) => (
+              <Card key={t.author} className="h-full">
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <p className="text-sm font-heading font-semibold text-gray-900">
+                  {t.author}
+                </p>
+                <p className="text-xs text-gray-500">{t.role}</p>
+              </Card>
+            ))}
+          </div>
+        </Section>
+      )}
 
       {/* Process — sequential vertical stack */}
       <Section background="gray">

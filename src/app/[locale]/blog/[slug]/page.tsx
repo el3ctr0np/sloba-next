@@ -17,6 +17,29 @@ import {
 import { BlogCTA } from "@/components/blog/BlogCTA";
 import { ReadNext } from "@/components/blog/ReadNext";
 
+/**
+ * Segment the blog CTA by post intent.
+ * TOFU / educational / beginner posts -> low-commitment consultation (/kontakt).
+ * BOFU / strategy / audit posts -> the paid audit service page.
+ * Keyed on the canonical (SR) slug so SR and EN variants resolve identically.
+ */
+const AUDIT_CTA_SLUGS = new Set<string>([
+  "google-ads-audit-vodic",
+  "google-ads-audit-checklist-srbija",
+  "google-ads-greske",
+  "google-ads-optimizacija",
+  "zasto-nema-rezultata",
+  "google-ads-za-ecommerce-srbija-2026",
+  "performance-max-vodic",
+  "smart-bidding-vodic",
+  "conversion-tracking-vodic",
+  "agencija-vs-freelancer",
+]);
+
+function getBlogCtaTarget(canonicalSlug: string): "audit" | "consult" {
+  return AUDIT_CTA_SLUGS.has(canonicalSlug) ? "audit" : "consult";
+}
+
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
@@ -1061,8 +1084,22 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="prose prose-slate prose-lg max-w-none text-gray-700 prose-headings:font-heading prose-headings:scroll-mt-24 prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:font-bold prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:md:text-2xl prose-h3:font-semibold prose-h3:mt-8 prose-h3:mb-4 prose-p:text-base prose-p:md:text-lg prose-p:mb-5 prose-p:leading-[1.75] prose-li:text-base prose-li:md:text-lg prose-li:leading-[1.75] prose-a:text-primary prose-a:underline prose-a:underline-offset-2 prose-strong:text-gray-900 prose-hr:my-10 prose-blockquote:border-l-primary prose-blockquote:text-gray-600 prose-img:rounded-xl">
                 {post.content}
               </div>
+              {/* Mid-content CTA. The post body renders as a single opaque
+                  ReactNode ({post.content}), so true in-body insertion is not
+                  feasible without rewriting every post component. This is the
+                  closest safe "mid" position: after the body, before the author
+                  box and the bottom CTA. Segmented by post intent. */}
+              <BlogCTA
+                locale={locale}
+                variant="mid"
+                target={getBlogCtaTarget(getCanonicalSlug(slug))}
+              />
               <AuthorBox locale={locale} />
-              <BlogCTA locale={locale} variant="bottom" />
+              <BlogCTA
+                locale={locale}
+                variant="bottom"
+                target={getBlogCtaTarget(getCanonicalSlug(slug))}
+              />
               {(() => {
                 const next = getNextPost(slug, locale);
                 if (!next || next.slug === slug) return null;
