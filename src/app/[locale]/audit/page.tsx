@@ -415,7 +415,7 @@ export default async function AuditPage({ params }: Props) {
         visible "[PLACEHOLDER]" text. Re-enable once real client quotes are collected.
       */}
 
-      {/* Form — stub */}
+      {/* Form */}
       <section id="audit-form" className="py-16 md:py-20 bg-white border-t border-gray-100">
         <div className="container-custom px-4">
           <div className="max-w-2xl mx-auto">
@@ -433,8 +433,23 @@ export default async function AuditPage({ params }: Props) {
               </p>
             </div>
 
-            {/* Form placeholder — to be wired to /api/audit or Formspree later */}
-            <form className="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200 space-y-4">
+            <form
+              action="https://formsubmit.co/info@slobodan-jelisavac.com"
+              method="POST"
+              className="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200 space-y-4"
+            >
+              {/* FormSubmit config */}
+              <input
+                type="hidden"
+                name="_subject"
+                value={isEn ? "Audit Application — slobodan-jelisavac.com" : "Prijava za Audit — slobodan-jelisavac.com"}
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value={`https://www.slobodan-jelisavac.com/${locale}/kontakt/hvala`}
+              />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-semibold text-gray-900 block mb-1.5">
@@ -442,6 +457,7 @@ export default async function AuditPage({ params }: Props) {
                   </label>
                   <input
                     type="text"
+                    name="name"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                     placeholder={isEn ? "Jane Doe" : "Marko Marković"}
@@ -453,6 +469,7 @@ export default async function AuditPage({ params }: Props) {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                     placeholder="you@brand.com"
@@ -466,6 +483,7 @@ export default async function AuditPage({ params }: Props) {
                 </label>
                 <input
                   type="url"
+                  name="website"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                   placeholder="https://"
@@ -478,6 +496,7 @@ export default async function AuditPage({ params }: Props) {
                     {isEn ? "Business type" : "Tip biznisa"} *
                   </label>
                   <select
+                    name="business_type"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                   >
@@ -494,6 +513,7 @@ export default async function AuditPage({ params }: Props) {
                     {isEn ? "Monthly ad spend" : "Mesečni ad spend"} *
                   </label>
                   <select
+                    name="monthly_ad_spend"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                   >
@@ -512,6 +532,7 @@ export default async function AuditPage({ params }: Props) {
                   {isEn ? "Biggest pain right now" : "Najveći problem trenutno"}
                 </label>
                 <textarea
+                  name="biggest_pain"
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                   placeholder={
@@ -522,7 +543,7 @@ export default async function AuditPage({ params }: Props) {
                 />
               </div>
 
-              <Button href="/kontakt" variant="secondary" className="w-full justify-center">
+              <Button type="submit" variant="secondary" className="w-full justify-center">
                 {isEn ? "Submit application →" : "Pošalji prijavu →"}
               </Button>
             </form>
