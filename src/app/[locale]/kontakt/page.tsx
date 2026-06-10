@@ -376,7 +376,12 @@ export default async function ContactPage({ params }: Props) {
               <p className="font-semibold text-gray-700 mb-1">
                 {locale === "en" ? "Direct contact:" : "Direktan kontakt:"}
               </p>
-              <p>info@slobodan-jelisavac.com</p>
+              <a
+                href="mailto:info@slobodan-jelisavac.com"
+                className="text-blue-600 hover:underline"
+              >
+                info@slobodan-jelisavac.com
+              </a>
             </div>
           </div>
         </div>

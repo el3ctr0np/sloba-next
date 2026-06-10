@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const PIXEL_ID = process.env.META_PIXEL_ID ?? "179454509459591";
+const PIXEL_ID = process.env.META_PIXEL_ID ?? "1794545094595591";
 const ACCESS_TOKEN = process.env.META_ACCESS_TOKEN ?? "";
 const GRAPH_API_URL = `https://graph.facebook.com/v21.0/${PIXEL_ID}/events`;
 

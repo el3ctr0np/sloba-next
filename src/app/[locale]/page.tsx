@@ -4,7 +4,6 @@ import {
   ClientLogos,
   CaseStudiesPreview,
   Testimonial,
-  Testimonials,
   FinalCTA
 } from "@/components/sections";
 import { AnimateOnScroll, CounterAnimation } from "@/components/ui";
@@ -269,17 +268,12 @@ export default async function Home({ params }: Props) {
       <AnimateOnScroll>
         <Testimonial />
       </AnimateOnScroll>
-      <AnimateOnScroll>
-        <Testimonials
-          title={locale === "en" ? "Trusted by brands across 6+ countries" : "Veruje mi 50+ brendova iz 6+ zemalja"}
-          subtitle={
-            locale === "en"
-              ? "Real quotes from eCommerce, B2B, and local services clients across the UK, Serbia, Croatia, USA, and EU."
-              : "Realni citati od eCommerce, B2B, i lokalnih klijenata iz UK-a, Srbije, Hrvatske, USA i EU."
-          }
-          limit={6}
-        />
-      </AnimateOnScroll>
+      {/*
+        Testimonials grid removed (Jun 10 2026): all entries in placeholderTestimonials
+        contained visible "[PLACEHOLDER — ...]" text. Re-enable once real client quotes
+        are collected (Asana: outreach HERO reviews — Grant, Janko, Mike).
+        The single real <Testimonial /> above remains.
+      */}
       <FinalCTA />
     </>
   );

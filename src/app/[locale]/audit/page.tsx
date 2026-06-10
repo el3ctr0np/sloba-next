@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Section } from "@/components/ui";
-import { Testimonials } from "@/components/sections";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -411,17 +410,10 @@ export default async function AuditPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Testimonials — service-filtered */}
-      <Testimonials
-        title={isEn ? "What clients say" : "Šta klijenti kažu"}
-        subtitle={
-          isEn
-            ? "Real quotes from brands I've worked with across UK, Serbia, Croatia, and USA."
-            : "Realni citati od brendova s kojima sam radio u UK-u, Srbiji, Hrvatskoj i USA."
-        }
-        limit={3}
-        className="bg-gray-50"
-      />
+      {/*
+        Testimonials grid removed (Jun 10 2026): placeholderTestimonials contain
+        visible "[PLACEHOLDER]" text. Re-enable once real client quotes are collected.
+      */}
 
       {/* Form — stub */}
       <section id="audit-form" className="py-16 md:py-20 bg-white border-t border-gray-100">
@@ -528,12 +520,6 @@ export default async function AuditPage({ params }: Props) {
                       : "npr. 'ROAS pao 30% u Q1, ne znam zašto' ili 'stopirali smo rast na €3k/mes'"
                   }
                 />
-              </div>
-
-              <div className="text-xs text-gray-500 pt-2">
-                {isEn
-                  ? "⚠️ This form is a skeleton. Submission wiring (API / Formspree / Email) will be added once we finalize the qualification logic. For now, this is a visual prototype."
-                  : "⚠️ Forma je skeleton. Submission integracija (API / Formspree / Email) dolazi kad finalizujemo kvalifikacijsku logiku. Za sada je vizuelni prototip."}
               </div>
 
               <Button href="/kontakt" variant="secondary" className="w-full justify-center">

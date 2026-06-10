@@ -120,11 +120,11 @@ export function Hero({
 
           {/* Right: CTA column */}
           <div className="order-3 space-y-3">
-            <Button href={ctaHref} variant="secondary" className="w-full">
+            <Button href={ctaHref} variant="primary" className="w-full">
               {ctaText}
             </Button>
             {secondaryCtaText && secondaryCtaHref && (
-              <Button href={secondaryCtaHref} variant="primary" className="w-full">
+              <Button href={secondaryCtaHref} variant="secondary" className="w-full">
                 {secondaryCtaText}
               </Button>
             )}
