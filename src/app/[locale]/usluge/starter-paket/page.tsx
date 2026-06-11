@@ -703,7 +703,7 @@ export default async function StarterPaketPage({ params }: Props) {
               </>
             )}
           </p>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-600 text-base leading-relaxed">
             {locale === "en"
               ? "This is your entry point to Google Ads. Instead of wasting time and budget on experimentation, you start with a structure proven in real campaigns — from local service businesses to eCommerce stores."
               : "Ovo je vaša ulazna tačka u Google Ads. Umesto da gubite vreme i budžet na eksperimentisanje, počinjete sa strukturom koja se dokazala u stvarnim kampanjama — od lokalne uslužne delatnosti do eCommerce prodavnica."}
@@ -732,7 +732,7 @@ export default async function StarterPaketPage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {problem.title}
               </h3>
-              <p className="text-gray-600 text-sm">{problem.description}</p>
+              <p className="text-gray-600 text-base">{problem.description}</p>
             </Card>
           ))}
         </div>
@@ -906,7 +906,7 @@ export default async function StarterPaketPage({ params }: Props) {
                   <h3 className="font-heading font-semibold text-lg mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
+                  <p className="text-gray-600 text-base">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -944,7 +944,7 @@ export default async function StarterPaketPage({ params }: Props) {
                 {locale === "en" ? "one-time" : "jednokratno"}
               </span>
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "For simple services, local business and smaller companies that want simple setup without complications."
                 : "Za jednostavne usluge, lokalni biznis i manja preduzeća koja žele jednostavan setup bez komplikovanja."}
@@ -1004,7 +1004,7 @@ export default async function StarterPaketPage({ params }: Props) {
                 {locale === "en" ? "one-time" : "jednokratno"}
               </span>
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "For most small businesses and lead generation. Professional setup with all necessary components for successful start."
                 : "Za većinu malih biznisa i lead generation. Profesionalan setup sa svim potrebnim komponentama za uspešan start."}
@@ -1067,7 +1067,7 @@ export default async function StarterPaketPage({ params }: Props) {
                 {locale === "en" ? "one-time" : "jednokratno"}
               </span>
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "For small online stores that want professional Search + Shopping campaign setup with basic feed optimization."
                 : "Za male online prodavnice koje žele profesionalan setup Search + Shopping kampanja sa osnovnom feed optimizacijom."}
@@ -1132,7 +1132,7 @@ export default async function StarterPaketPage({ params }: Props) {
                 ? "No time for optimization?"
                 : "Nemate vremena za optimizaciju?"}
             </h3>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "Switch to monthly management where I handle all optimizations, reporting and scaling."
                 : "Pređite na mesečno upravljanje gde preuzimam sve optimizacije, reporting i skaliranje."}
@@ -1152,7 +1152,7 @@ export default async function StarterPaketPage({ params }: Props) {
                 ? "Have questions after support period?"
                 : "Imate pitanja nakon support perioda?"}
             </h3>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "Book a 1-on-1 consultation for specific questions, audit or optimization help."
                 : "Zakažite 1-on-1 konsultaciju za specifična pitanja, audit ili pomoć oko optimizacija."}
@@ -1172,7 +1172,7 @@ export default async function StarterPaketPage({ params }: Props) {
                 ? "Campaigns growing and need scaling?"
                 : "Kampanje rastu i treba skaliranje?"}
             </h3>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "Let's talk about ongoing partnership — setup stays, we just upgrade the strategy."
                 : "Razgovarajmo o ongoing partnership-u — setup ostaje, samo nadograđujemo strategiju."}
@@ -1208,7 +1208,7 @@ export default async function StarterPaketPage({ params }: Props) {
                   &#9660;
                 </span>
               </summary>
-              <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+              <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.answer}
               </div>
             </details>

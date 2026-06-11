@@ -524,7 +524,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
                 </li>
               ))}
             </ul>
-            <div className="text-sm text-gray-500 pt-4 border-t border-gray-200">
+            <div className="text-base text-gray-500 pt-4 border-t border-gray-200">
               {locale === "en" ? (
                 <>
                   If you need complete Google Ads management with all campaign types, check out{" "}

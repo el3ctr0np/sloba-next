@@ -50,19 +50,19 @@ export default function KakoPocetiGoogleAdsEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#why-google-ads-in-2026" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads in 2026</a></li>
-          <li><a href="#how-google-ads-works-simple-explanation" className="text-sm text-gray-700 hover:text-primary underline">How Google Ads Works — Simple Explanation</a></li>
-          <li><a href="#5-key-terms-you-need-to-understand" className="text-sm text-gray-700 hover:text-primary underline">5 Key Terms You Need to Understand</a></li>
-          <li><a href="#which-campaign-type-to-start-with" className="text-sm text-gray-700 hover:text-primary underline">Which Campaign Type to Start With</a></li>
-          <li><a href="#step-by-step-from-zero-to-your-first-campaign" className="text-sm text-gray-700 hover:text-primary underline">Step by Step — From Zero to Your First Campaign</a></li>
-          <li><a href="#how-much-budget-to-start-with" className="text-sm text-gray-700 hover:text-primary underline">How Much Budget to Start With</a></li>
-          <li><a href="#5-most-common-beginner-mistakes" className="text-sm text-gray-700 hover:text-primary underline">5 Most Common Beginner Mistakes</a></li>
-          <li><a href="#diy-or-hire-an-expert" className="text-sm text-gray-700 hover:text-primary underline">DIY or Hire an Expert</a></li>
-          <li><a href="#how-to-learn-google-ads" className="text-sm text-gray-700 hover:text-primary underline">How to Learn Google Ads</a></li>
-          <li><a href="#remarketing-for-beginners" className="text-sm text-gray-700 hover:text-primary underline">Remarketing for Beginners</a></li>
-          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently Asked Questions</a></li>
-          <li><a href="#conclusion" className="text-sm text-gray-700 hover:text-primary underline">Conclusion</a></li>
-          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+          <li><a href="#why-google-ads-in-2026" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why Google Ads in 2026</a></li>
+          <li><a href="#how-google-ads-works-simple-explanation" className="block py-1 text-base text-gray-700 hover:text-primary underline">How Google Ads Works — Simple Explanation</a></li>
+          <li><a href="#5-key-terms-you-need-to-understand" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 Key Terms You Need to Understand</a></li>
+          <li><a href="#which-campaign-type-to-start-with" className="block py-1 text-base text-gray-700 hover:text-primary underline">Which Campaign Type to Start With</a></li>
+          <li><a href="#step-by-step-from-zero-to-your-first-campaign" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step by Step — From Zero to Your First Campaign</a></li>
+          <li><a href="#how-much-budget-to-start-with" className="block py-1 text-base text-gray-700 hover:text-primary underline">How Much Budget to Start With</a></li>
+          <li><a href="#5-most-common-beginner-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 Most Common Beginner Mistakes</a></li>
+          <li><a href="#diy-or-hire-an-expert" className="block py-1 text-base text-gray-700 hover:text-primary underline">DIY or Hire an Expert</a></li>
+          <li><a href="#how-to-learn-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to Learn Google Ads</a></li>
+          <li><a href="#remarketing-for-beginners" className="block py-1 text-base text-gray-700 hover:text-primary underline">Remarketing for Beginners</a></li>
+          <li><a href="#frequently-asked-questions" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently Asked Questions</a></li>
+          <li><a href="#conclusion" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conclusion</a></li>
+          <li><a href="#related-guides" className="block py-1 text-base text-gray-700 hover:text-primary underline">Related Guides</a></li>
         </ol>
       </nav>
 
@@ -337,7 +337,7 @@ export default function KakoPocetiGoogleAdsEN() {
         <p className="text-base text-gray-600 mb-2">
           Before spending a single cent, add a negative keyword list. This prevents your ads from showing on irrelevant searches — &quot;free&quot;, &quot;jobs&quot;, &quot;DIY&quot;, &quot;course&quot;, and any other terms that will never convert. Most beginners skip this. It costs them 20-30% of their budget immediately.
         </p>
-        <p className="text-sm text-gray-600 mb-0">
+        <p className="text-base text-gray-600 mb-0">
           How to build your list:{" "}
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
@@ -356,7 +356,7 @@ export default function KakoPocetiGoogleAdsEN() {
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Write your ads and set up extensions</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">
+        <p className="text-base text-gray-600 mb-0">
           Create Responsive Search Ads — add 10-15 headlines and 4 descriptions. Make them specific, not generic. Avoid &quot;Best quality, lowest prices&quot; — use real differentiators. Add all relevant ad extensions: sitelinks (4+), callouts (4+), structured snippets, call extension if you take calls. Extensions are free and significantly improve both CTR and Ad Rank.
         </p>
       </div>
@@ -368,7 +368,7 @@ export default function KakoPocetiGoogleAdsEN() {
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Launch, monitor, and optimize weekly</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">
+        <p className="text-base text-gray-600 mb-0">
           Set your daily budget, choose Manual CPC or Maximize Clicks for the first 2-4 weeks (before you have conversion data), and launch. Check Search Terms Report weekly to catch irrelevant traffic early. Only switch to Smart Bidding (Target CPA or Target ROAS) once you have at least 30-50 conversions in the account.
         </p>
       </div>
@@ -382,7 +382,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">The testing rule</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Start with <strong>€10-20/day</strong> for your test period. This gives you enough data to see what works without overcommitting. Run for at least 4 weeks before drawing conclusions.
         </p>
       </div>
@@ -428,7 +428,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">You don&apos;t need a huge budget to start</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           When I started managing campaigns for local businesses near Nova Pazova, the budgets were under €500. Results were still real and measurable. A small budget with the right targeting and proper tracking beats a large budget spent carelessly every single time. What matters most is efficiency — not scale.
         </p>
       </div>
@@ -446,7 +446,7 @@ export default function KakoPocetiGoogleAdsEN() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Solution</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Set up conversion tracking before launching. Use Google Tag Manager with proper Conversion Linker, define your conversion actions clearly (purchase, lead, call), and verify everything is firing correctly using Google Tag Assistant.
         </p>
       </div>
@@ -457,7 +457,7 @@ export default function KakoPocetiGoogleAdsEN() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Solution</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Start with Phrase match or Exact match for your core keywords. Build a negative keyword list before launch — add &quot;free&quot;, &quot;job&quot;, &quot;course&quot;, &quot;DIY&quot;, and any irrelevant modifiers for your niche. Review Search Terms Report weekly and add new negatives continuously.
         </p>
       </div>
@@ -468,7 +468,7 @@ export default function KakoPocetiGoogleAdsEN() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Solution</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Match your destination URL to your ad&apos;s message. If your ad is about a specific product or service, send traffic to that product or service page. The closer the alignment between keyword → ad → landing page, the higher your conversion rate — and the lower your CPC.
         </p>
       </div>
@@ -479,7 +479,7 @@ export default function KakoPocetiGoogleAdsEN() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Solution</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Start with Manual CPC or Maximize Clicks while building your conversion history. Switch to Smart Bidding only after accumulating 30-50 conversions. Once you switch, give each strategy at least 2-4 weeks before evaluating performance.
         </p>
       </div>
@@ -490,7 +490,7 @@ export default function KakoPocetiGoogleAdsEN() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Solution</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           When creating a Search campaign, go to Campaign settings → Networks and uncheck &quot;Include Google Display Network&quot;. If you want Display traffic, create a separate campaign with its own budget and targeting.
         </p>
       </div>
@@ -594,7 +594,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">When to start remarketing?</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Google Ads requires a minimum of <strong>100 active users</strong> in your remarketing audience before a campaign can run. For most small businesses, that means 2-4 weeks of collecting traffic before remarketing becomes viable. Set up your remarketing tag from day one to start building your audience immediately.
         </p>
       </div>
@@ -625,7 +625,7 @@ export default function KakoPocetiGoogleAdsEN() {
               &#9660;
             </span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes — if you have a clear offer, a decent landing page, and proper tracking in place. Small businesses actually have an advantage: they can be more targeted, more nimble, and can optimize faster than large companies. The key is not budget size — it&apos;s efficiency. I have seen €300/month campaigns deliver better ROAS than €3,000/month campaigns, because the fundamentals were right.
           </div>
         </details>
@@ -637,7 +637,7 @@ export default function KakoPocetiGoogleAdsEN() {
               &#9660;
             </span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             First signals (clicks, impressions, initial conversions) appear within 2-4 weeks. Meaningful data for optimization comes after 4-8 weeks. A fully optimized, stable account typically takes 2-3 months. This timeline is non-negotiable — anyone promising results in a few days is misleading you. Give the platform time to learn, and give yourself time to iterate.
           </div>
         </details>
@@ -649,7 +649,7 @@ export default function KakoPocetiGoogleAdsEN() {
               &#9660;
             </span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Absolutely — if you are willing to invest the time to learn it properly. The platform is not magic; it rewards methodical thinking and consistent optimization. The challenge is that mistakes are expensive during the learning period. If your monthly budget is under €500, managing it yourself while learning is a reasonable path. Above that, the opportunity cost of slow optimization often exceeds the cost of an expert.
           </div>
         </details>
@@ -661,7 +661,7 @@ export default function KakoPocetiGoogleAdsEN() {
               &#9660;
             </span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Technically, you can run Google Ads on €5/day. Practically, you need enough budget to generate meaningful click and conversion volume for optimization. For local businesses in Serbia or the Balkans, €200-400/month is a viable starting point. For UK or US markets, budget €500-1,500/month to get enough data. The formula: budget should generate at least 10-15 clicks per day at your estimated CPC.
           </div>
         </details>
@@ -673,7 +673,7 @@ export default function KakoPocetiGoogleAdsEN() {
               &#9660;
             </span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             No. Google Ads works best when there is active search demand for what you sell. If your product is genuinely new or niche to the point where nobody is searching for it, Search campaigns will not work. Also, if your margins are very thin (below 20%) or your website is not ready to convert visitors, you will burn budget without results. Fix those foundations first, then advertise.
           </div>
         </details>

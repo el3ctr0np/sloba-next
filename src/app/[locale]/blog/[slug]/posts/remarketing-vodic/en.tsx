@@ -34,17 +34,17 @@ export default function RemarketingGuideEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#why-96-of-visitors-leave-without-buying" className="text-sm text-gray-700 hover:text-primary underline">Why 96% of Visitors Leave Without Buying</a></li>
-          <li><a href="#what-is-remarketing-and-how-it-works" className="text-sm text-gray-700 hover:text-primary underline">What Is Remarketing and How It Works</a></li>
-          <li><a href="#types-of-remarketing-campaigns-in-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Types of Remarketing Campaigns in Google Ads</a></li>
-          <li><a href="#how-to-set-up-remarketing-step-by-step" className="text-sm text-gray-700 hover:text-primary underline">How to Set Up Remarketing Step by Step</a></li>
-          <li><a href="#segmentation-key-to-remarketing-success" className="text-sm text-gray-700 hover:text-primary underline">Segmentation — Key to Remarketing Success</a></li>
-          <li><a href="#5-remarketing-strategies-that-deliver-results" className="text-sm text-gray-700 hover:text-primary underline">5 Remarketing Strategies That Deliver Results</a></li>
-          <li><a href="#most-common-mistakes-in-remarketing-campaigns-and-how-to-avoid-them" className="text-sm text-gray-700 hover:text-primary underline">Most Common Mistakes in Remarketing Campaigns and How to Avoid Them</a></li>
-          <li><a href="#how-much-budget-to-allocate-to-remarketing" className="text-sm text-gray-700 hover:text-primary underline">How Much Budget to Allocate to Remarketing</a></li>
-          <li><a href="#frequently-asked-questions-about-remarketing" className="text-sm text-gray-700 hover:text-primary underline">Frequently Asked Questions About Remarketing</a></li>
-          <li><a href="#conclusion-leverage-the-potential-of-visitors-already-coming" className="text-sm text-gray-700 hover:text-primary underline">Conclusion — Leverage the Potential of Visitors Already Coming</a></li>
-          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+          <li><a href="#why-96-of-visitors-leave-without-buying" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why 96% of Visitors Leave Without Buying</a></li>
+          <li><a href="#what-is-remarketing-and-how-it-works" className="block py-1 text-base text-gray-700 hover:text-primary underline">What Is Remarketing and How It Works</a></li>
+          <li><a href="#types-of-remarketing-campaigns-in-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Types of Remarketing Campaigns in Google Ads</a></li>
+          <li><a href="#how-to-set-up-remarketing-step-by-step" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to Set Up Remarketing Step by Step</a></li>
+          <li><a href="#segmentation-key-to-remarketing-success" className="block py-1 text-base text-gray-700 hover:text-primary underline">Segmentation — Key to Remarketing Success</a></li>
+          <li><a href="#5-remarketing-strategies-that-deliver-results" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 Remarketing Strategies That Deliver Results</a></li>
+          <li><a href="#most-common-mistakes-in-remarketing-campaigns-and-how-to-avoid-them" className="block py-1 text-base text-gray-700 hover:text-primary underline">Most Common Mistakes in Remarketing Campaigns and How to Avoid Them</a></li>
+          <li><a href="#how-much-budget-to-allocate-to-remarketing" className="block py-1 text-base text-gray-700 hover:text-primary underline">How Much Budget to Allocate to Remarketing</a></li>
+          <li><a href="#frequently-asked-questions-about-remarketing" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently Asked Questions About Remarketing</a></li>
+          <li><a href="#conclusion-leverage-the-potential-of-visitors-already-coming" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conclusion — Leverage the Potential of Visitors Already Coming</a></li>
+          <li><a href="#related-guides" className="block py-1 text-base text-gray-700 hover:text-primary underline">Related Guides</a></li>
         </ol>
       </nav>
 
@@ -62,7 +62,7 @@ export default function RemarketingGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">From my experience</p>
-        <p className="text-blue-800 text-sm">
+        <p className="text-blue-800 text-base">
           After managing $2M+ in annual ad spend across 50+ accounts in 6+ countries, remarketing is the most profitable campaign type you can run. CTR is 2-3 times higher than cold traffic, and CPA is 50-70% lower.
         </p>
       </div>
@@ -123,41 +123,41 @@ export default function RemarketingGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Characteristic</th>
-              <th className="py-3 px-4 font-heading font-semibold">Remarketing</th>
-              <th className="py-3 px-4 font-heading font-semibold">Prospecting (cold audience)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Characteristic</th>
+              <th className="py-3 px-3 font-heading font-semibold">Remarketing</th>
+              <th className="py-3 px-3 font-heading font-semibold">Prospecting (cold audience)</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Audience</td>
-              <td className="py-3 px-4">Already know you</td>
-              <td className="py-3 px-4">Do not know you</td>
+              <td className="py-3 px-3 font-medium">Audience</td>
+              <td className="py-3 px-3">Already know you</td>
+              <td className="py-3 px-3">Do not know you</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Intent</td>
-              <td className="py-3 px-4">Shown interest</td>
-              <td className="py-3 px-4">Assumed intent</td>
+              <td className="py-3 px-3 font-medium">Intent</td>
+              <td className="py-3 px-3">Shown interest</td>
+              <td className="py-3 px-3">Assumed intent</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CTR</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">2-3x higher</td>
-              <td className="py-3 px-4">Baseline</td>
+              <td className="py-3 px-3 font-medium">CTR</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">2-3x higher</td>
+              <td className="py-3 px-3">Baseline</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">CPA</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">50-70% lower</td>
-              <td className="py-3 px-4">Baseline</td>
+              <td className="py-3 px-3 font-medium">CPA</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">50-70% lower</td>
+              <td className="py-3 px-3">Baseline</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Volume</td>
-              <td className="py-3 px-4">Limited (your traffic)</td>
-              <td className="py-3 px-4">Practically unlimited</td>
+              <td className="py-3 px-3 font-medium">Volume</td>
+              <td className="py-3 px-3">Limited (your traffic)</td>
+              <td className="py-3 px-3">Practically unlimited</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Role</td>
-              <td className="py-3 px-4">Closes sales</td>
-              <td className="py-3 px-4">Brings new people</td>
+              <td className="py-3 px-3 font-medium">Role</td>
+              <td className="py-3 px-3">Closes sales</td>
+              <td className="py-3 px-3">Brings new people</td>
             </tr>
           </tbody>
         </table>
@@ -178,28 +178,28 @@ export default function RemarketingGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display remarketing</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Banners on Google Display Network — over 2 million websites. Ideal as first remarketing campaign for every account. Reminds visitors you exist.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">RLSA (remarketing on search)</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Adjust Search campaigns for people who already visited your site — higher bids, broader keywords. Delivers best ROAS of all types.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Dynamic remarketing</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Automatically shows exact products visitor viewed. Mandatory for eCommerce. Requires product feed in Google Merchant Center.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">YouTube remarketing</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Video ads for people who visited site, or targeting YouTube channel viewers. Excellent for branding and building trust.
           </p>
         </div>
@@ -207,7 +207,7 @@ export default function RemarketingGuideEN() {
       <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card my-4">
         <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type #5</p>
         <h3 className="text-base font-heading font-bold mt-0 mb-2">Customer Match</h3>
-        <p className="text-sm text-gray-600 mb-0">
+        <p className="text-base text-gray-600 mb-0">
           Upload your email list to Google Ads and target those people via Search, YouTube, and Gmail. Perfect for win-back campaigns to former customers.
         </p>
       </div>
@@ -264,36 +264,36 @@ export default function RemarketingGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">List</th>
-              <th className="py-3 px-4 font-heading font-semibold">Condition</th>
-              <th className="py-3 px-4 font-heading font-semibold">Duration</th>
+              <th className="py-3 px-3 font-heading font-semibold">List</th>
+              <th className="py-3 px-3 font-heading font-semibold">Condition</th>
+              <th className="py-3 px-3 font-heading font-semibold">Duration</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">All visitors</td>
-              <td className="py-3 px-4">URL contains: /</td>
-              <td className="py-3 px-4">30 days</td>
+              <td className="py-3 px-3 font-medium">All visitors</td>
+              <td className="py-3 px-3">URL contains: /</td>
+              <td className="py-3 px-3">30 days</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Product viewers</td>
-              <td className="py-3 px-4">URL contains: /products/</td>
-              <td className="py-3 px-4">14 days</td>
+              <td className="py-3 px-3 font-medium">Product viewers</td>
+              <td className="py-3 px-3">URL contains: /products/</td>
+              <td className="py-3 px-3">14 days</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">No conversion</td>
-              <td className="py-3 px-4">All visitors MINUS thank-you page</td>
-              <td className="py-3 px-4">30 days</td>
+              <td className="py-3 px-3 font-medium">No conversion</td>
+              <td className="py-3 px-3">All visitors MINUS thank-you page</td>
+              <td className="py-3 px-3">30 days</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Abandoned carts</td>
-              <td className="py-3 px-4">URL contains: /cart/ MINUS /thank-you/</td>
-              <td className="py-3 px-4">7 days</td>
+              <td className="py-3 px-3 font-medium">Abandoned carts</td>
+              <td className="py-3 px-3">URL contains: /cart/ MINUS /thank-you/</td>
+              <td className="py-3 px-3">7 days</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Previous customers</td>
-              <td className="py-3 px-4">URL contains: /thank-you/</td>
-              <td className="py-3 px-4">180 days</td>
+              <td className="py-3 px-3 font-medium">Previous customers</td>
+              <td className="py-3 px-3">URL contains: /thank-you/</td>
+              <td className="py-3 px-3">180 days</td>
             </tr>
           </tbody>
         </table>
@@ -301,7 +301,7 @@ export default function RemarketingGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Minimum list size for activation: <strong>100 users</strong> for Display, <strong>1,000</strong> for Search (RLSA) and YouTube.
         </p>
       </div>
@@ -325,36 +325,36 @@ export default function RemarketingGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Stage</th>
-              <th className="py-3 px-4 font-heading font-semibold">Who they are</th>
-              <th className="py-3 px-4 font-heading font-semibold">Strategy</th>
-              <th className="py-3 px-4 font-heading font-semibold">Bid</th>
+              <th className="py-3 px-3 font-heading font-semibold">Stage</th>
+              <th className="py-3 px-3 font-heading font-semibold">Who they are</th>
+              <th className="py-3 px-3 font-heading font-semibold">Strategy</th>
+              <th className="py-3 px-3 font-heading font-semibold">Bid</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Top of funnel</td>
-              <td className="py-3 px-4">All site visitors</td>
-              <td className="py-3 px-4">General brand awareness</td>
-              <td className="py-3 px-4">Low</td>
+              <td className="py-3 px-3 font-medium">Top of funnel</td>
+              <td className="py-3 px-3">All site visitors</td>
+              <td className="py-3 px-3">General brand awareness</td>
+              <td className="py-3 px-3">Low</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Middle of funnel</td>
-              <td className="py-3 px-4">Viewed product/service</td>
-              <td className="py-3 px-4">Relevant message + benefits</td>
-              <td className="py-3 px-4">Medium</td>
+              <td className="py-3 px-3 font-medium">Middle of funnel</td>
+              <td className="py-3 px-3">Viewed product/service</td>
+              <td className="py-3 px-3">Relevant message + benefits</td>
+              <td className="py-3 px-3">Medium</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Bottom of funnel</td>
-              <td className="py-3 px-4">Abandoned cart / pricing</td>
-              <td className="py-3 px-4">Urgency + offer</td>
-              <td className="py-3 px-4">High</td>
+              <td className="py-3 px-3 font-medium">Bottom of funnel</td>
+              <td className="py-3 px-3">Abandoned cart / pricing</td>
+              <td className="py-3 px-3">Urgency + offer</td>
+              <td className="py-3 px-3">High</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Post-purchase</td>
-              <td className="py-3 px-4">Existing customers</td>
-              <td className="py-3 px-4">Cross-sell, upsell</td>
-              <td className="py-3 px-4">Medium</td>
+              <td className="py-3 px-3 font-medium">Post-purchase</td>
+              <td className="py-3 px-3">Existing customers</td>
+              <td className="py-3 px-3">Cross-sell, upsell</td>
+              <td className="py-3 px-3">Medium</td>
             </tr>
           </tbody>
         </table>
@@ -365,36 +365,36 @@ export default function RemarketingGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Segment</th>
-              <th className="py-3 px-4 font-heading font-semibold">Period</th>
-              <th className="py-3 px-4 font-heading font-semibold">Approach</th>
-              <th className="py-3 px-4 font-heading font-semibold">Bid</th>
+              <th className="py-3 px-3 font-heading font-semibold">Segment</th>
+              <th className="py-3 px-3 font-heading font-semibold">Period</th>
+              <th className="py-3 px-3 font-heading font-semibold">Approach</th>
+              <th className="py-3 px-3 font-heading font-semibold">Bid</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Hot</span></td>
-              <td className="py-3 px-4">1-3 days</td>
-              <td className="py-3 px-4">Direct call to action</td>
-              <td className="py-3 px-4">Highest</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Hot</span></td>
+              <td className="py-3 px-3">1-3 days</td>
+              <td className="py-3 px-3">Direct call to action</td>
+              <td className="py-3 px-3">Highest</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Warm</span></td>
-              <td className="py-3 px-4">4-14 days</td>
-              <td className="py-3 px-4">Reminder + benefits</td>
-              <td className="py-3 px-4">High</td>
+              <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Warm</span></td>
+              <td className="py-3 px-3">4-14 days</td>
+              <td className="py-3 px-3">Reminder + benefits</td>
+              <td className="py-3 px-3">High</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Tepid</span></td>
-              <td className="py-3 px-4">15-30 days</td>
-              <td className="py-3 px-4">Re-engagement</td>
-              <td className="py-3 px-4">Medium</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Tepid</span></td>
+              <td className="py-3 px-3">15-30 days</td>
+              <td className="py-3 px-3">Re-engagement</td>
+              <td className="py-3 px-3">Medium</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Cold</span></td>
-              <td className="py-3 px-4">30-90 days</td>
-              <td className="py-3 px-4">New offer, changes</td>
-              <td className="py-3 px-4">Low</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Cold</span></td>
+              <td className="py-3 px-3">30-90 days</td>
+              <td className="py-3 px-3">New offer, changes</td>
+              <td className="py-3 px-3">Low</td>
             </tr>
           </tbody>
         </table>
@@ -405,36 +405,36 @@ export default function RemarketingGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Behavior</th>
-              <th className="py-3 px-4 font-heading font-semibold">Intent level</th>
-              <th className="py-3 px-4 font-heading font-semibold">Message</th>
+              <th className="py-3 px-3 font-heading font-semibold">Behavior</th>
+              <th className="py-3 px-3 font-heading font-semibold">Intent level</th>
+              <th className="py-3 px-3 font-heading font-semibold">Message</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">Homepage only</td>
-              <td className="py-3 px-4">Low</td>
-              <td className="py-3 px-4">General brand awareness</td>
+              <td className="py-3 px-3">Homepage only</td>
+              <td className="py-3 px-3">Low</td>
+              <td className="py-3 px-3">General brand awareness</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Viewed categories</td>
-              <td className="py-3 px-4">Medium</td>
-              <td className="py-3 px-4">Benefits of specific category</td>
+              <td className="py-3 px-3">Viewed categories</td>
+              <td className="py-3 px-3">Medium</td>
+              <td className="py-3 px-3">Benefits of specific category</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">Viewed product</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">High</td>
-              <td className="py-3 px-4">Specific product + offer</td>
+              <td className="py-3 px-3">Viewed product</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">High</td>
+              <td className="py-3 px-3">Specific product + offer</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Abandoned cart</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">Highest</td>
-              <td className="py-3 px-4">Urgency + discount</td>
+              <td className="py-3 px-3">Abandoned cart</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Highest</td>
+              <td className="py-3 px-3">Urgency + discount</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">Searched your brand</td>
-              <td className="py-3 px-4">Brand intent</td>
-              <td className="py-3 px-4">Trust + USP</td>
+              <td className="py-3 px-3">Searched your brand</td>
+              <td className="py-3 px-3">Brand intent</td>
+              <td className="py-3 px-3">Trust + USP</td>
             </tr>
           </tbody>
         </table>
@@ -481,7 +481,7 @@ export default function RemarketingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Abandoned cart recovery</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Most valuable remarketing strategy for eCommerce. About 70% of online shopping carts are abandoned, and remarketing can bring back 10-15% of those customers.
         </p>
         <ul className="text-sm">
@@ -497,7 +497,7 @@ export default function RemarketingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA bid boosting on search</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Strategy with best ROAS in my practice. On existing Search campaigns add remarketing list as &quot;Observation&quot; and increase bid by 30-100% for people who already visited site.
         </p>
         <ul className="text-sm">
@@ -512,7 +512,7 @@ export default function RemarketingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dynamic remarketing for online stores</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Automatically shows visitor exact products they viewed, with current price and image. Requires product feed and dynamic remarketing tag.
         </p>
         <ul className="text-sm">
@@ -527,7 +527,7 @@ export default function RemarketingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Sequential messaging</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Instead of showing same ad constantly, create series of ads that guide user through decision:
         </p>
         <div className="space-y-2 text-sm">
@@ -551,7 +551,7 @@ export default function RemarketingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Customer Match for bringing back former customers</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Upload list of email addresses of customers who have not purchased in a while (6-12 months) and target them with new offers.
         </p>
         <ul className="text-sm">
@@ -574,7 +574,7 @@ export default function RemarketingGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">One list for entire audience</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Solution:</strong> Segment by behavior and time. Person who abandoned cart deserves different message than someone who only viewed homepage.
             </p>
           </div>
@@ -584,7 +584,7 @@ export default function RemarketingGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">No frequency cap</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Solution:</strong> Set frequency cap to 3-5 impressions daily and 15-20 weekly. Without it, user sees your ad 50 times daily.
             </p>
           </div>
@@ -594,7 +594,7 @@ export default function RemarketingGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">Showing ads to converted users</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Solution:</strong> Always exclude people who already converted (except for cross-sell campaigns). No point spending budget on someone who bought same product yesterday.
             </p>
           </div>
@@ -604,7 +604,7 @@ export default function RemarketingGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">Same ad for months</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Solution:</strong> Refresh creatives every 2-4 weeks. Even good ad becomes &quot;invisible&quot; after too many showings.
             </p>
           </div>
@@ -614,7 +614,7 @@ export default function RemarketingGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">Same message for all stages</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Solution:</strong> Adapt message to segment — reminder for fresh visitors, urgency for abandoned carts, new offer for cold audience.
             </p>
           </div>
@@ -624,7 +624,7 @@ export default function RemarketingGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">Too short list period</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Solution:</strong> 7-day list is ok for abandoned carts, but for general visitors use 30-90 days. For B2B up to 180 days.
             </p>
           </div>
@@ -634,7 +634,7 @@ export default function RemarketingGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">Neglecting user privacy</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Solution:</strong> Ensure cookie consent banner and respect GDPR. Users who give consent are more valuable audience because they actively accept communication.
             </p>
           </div>
@@ -648,7 +648,7 @@ export default function RemarketingGuideEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Rule: 10-30% of total Google Ads budget</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Exact percentage depends on traffic volume and remarketing list size.
         </p>
       </div>
@@ -657,26 +657,26 @@ export default function RemarketingGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Monthly traffic</th>
-              <th className="py-3 px-4 font-heading font-semibold">Share for remarketing</th>
-              <th className="py-3 px-4 font-heading font-semibold">Expected effect</th>
+              <th className="py-3 px-3 font-heading font-semibold">Monthly traffic</th>
+              <th className="py-3 px-3 font-heading font-semibold">Share for remarketing</th>
+              <th className="py-3 px-3 font-heading font-semibold">Expected effect</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Up to 5,000 visits</td>
-              <td className="py-3 px-4">10-15%</td>
-              <td className="py-3 px-4">Basic coverage, Display focus</td>
+              <td className="py-3 px-3 font-medium">Up to 5,000 visits</td>
+              <td className="py-3 px-3">10-15%</td>
+              <td className="py-3 px-3">Basic coverage, Display focus</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">5,000 - 20,000 visits</td>
-              <td className="py-3 px-4">15-20%</td>
-              <td className="py-3 px-4">Segmentation + RLSA</td>
+              <td className="py-3 px-3 font-medium">5,000 - 20,000 visits</td>
+              <td className="py-3 px-3">15-20%</td>
+              <td className="py-3 px-3">Segmentation + RLSA</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">20,000+ visits</td>
-              <td className="py-3 px-4">20-30%</td>
-              <td className="py-3 px-4">Full segmentation + dynamic remarketing</td>
+              <td className="py-3 px-3 font-medium">20,000+ visits</td>
+              <td className="py-3 px-3">20-30%</td>
+              <td className="py-3 px-3">Full segmentation + dynamic remarketing</td>
             </tr>
           </tbody>
         </table>
@@ -684,7 +684,7 @@ export default function RemarketingGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Why remarketing deserves larger budget share?</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Math is clear: if prospecting campaign brings CPA of $80/£60, remarketing campaign for same conversions usually brings CPA of $25-40/£20-30. That means <strong>2-3 times more conversions for same money</strong>. ROI of 300-500% is realistic for well-set remarketing campaigns.
         </p>
       </div>
@@ -700,7 +700,7 @@ export default function RemarketingGuideEN() {
             How long does a remarketing list last?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             You can set duration from 1 to 540 days. Default is 30 days. For eCommerce, I recommend 7 days for abandoned carts, 30 days for general visitors, and 180 days for former customers.
           </div>
         </details>
@@ -710,7 +710,7 @@ export default function RemarketingGuideEN() {
             How many users do I need on list to start?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum is 100 users for Display campaigns and 1,000 for Search (RLSA) and YouTube. If your site has low traffic, start with Display remarketing while list grows enough for RLSA.
           </div>
         </details>
@@ -720,7 +720,7 @@ export default function RemarketingGuideEN() {
             Does remarketing work after iOS privacy restrictions?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes, but with certain limitations. First-party data (your site, your tag) still works reliably. Third-party tracking is limited on Apple devices. I recommend combination of Google Ads tag, GA4 audiences, and Customer Match for best coverage.
           </div>
         </details>
@@ -730,7 +730,7 @@ export default function RemarketingGuideEN() {
             Is remarketing intrusive to users?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Can be — if poorly set up. Three things prevent negative impression: frequency cap (3-5 impressions daily), relevant messages tailored to segment, and regular creative refresh.
           </div>
         </details>
@@ -740,7 +740,7 @@ export default function RemarketingGuideEN() {
             What is the difference between remarketing and retargeting?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Practically none. Google uses term &quot;remarketing&quot;, Meta (Facebook/Instagram) uses &quot;retargeting&quot;. Principle is identical — you show ads to people who have already interacted with your business.
           </div>
         </details>
@@ -750,7 +750,7 @@ export default function RemarketingGuideEN() {
             Can I use remarketing for B2B, not just online stores?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Absolutely. B2B remarketing is extremely effective because sales cycles are longer (30-90+ days), so more touchpoints are needed before conversion. Combination of RLSA campaigns and Display remarketing with expert content (case study, guide, webinar) works excellently for B2B.
           </div>
         </details>
@@ -766,7 +766,7 @@ export default function RemarketingGuideEN() {
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Key takeaways from this guide:</p>
-        <ul className="space-y-2 text-sm">
+        <ul className="space-y-2 text-base">
           <li>Remarketing campaigns have <strong>2-3x higher CTR</strong> and <strong>50-70% lower CPA</strong> than cold traffic</li>
           <li>Segmentation by behavior, time, and funnel stage makes huge difference</li>
           <li>Allocate <strong>10-30% of budget</strong> to remarketing — ROI of 300-500% is realistic</li>

@@ -36,18 +36,18 @@ export default function QualityScoreGuideEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#what-is-quality-score-and-why-it-matters" className="text-sm text-gray-700 hover:text-primary underline">What Is Quality Score and Why It Matters</a></li>
-          <li><a href="#how-quality-score-affects-cost-per-click" className="text-sm text-gray-700 hover:text-primary underline">How Quality Score Affects Cost Per Click</a></li>
-          <li><a href="#three-components-of-quality-score" className="text-sm text-gray-700 hover:text-primary underline">Three Components of Quality Score</a></li>
-          <li><a href="#how-to-improve-expected-ctr" className="text-sm text-gray-700 hover:text-primary underline">How to Improve Expected CTR</a></li>
-          <li><a href="#how-to-improve-ad-relevance" className="text-sm text-gray-700 hover:text-primary underline">How to Improve Ad Relevance</a></li>
-          <li><a href="#how-to-improve-landing-page-experience" className="text-sm text-gray-700 hover:text-primary underline">How to Improve Landing Page Experience</a></li>
-          <li><a href="#30-day-plan-to-improve-quality-score" className="text-sm text-gray-700 hover:text-primary underline">30-Day Plan to Improve Quality Score</a></li>
-          <li><a href="#quality-score-by-campaign-type" className="text-sm text-gray-700 hover:text-primary underline">Quality Score by Campaign Type</a></li>
-          <li><a href="#most-common-quality-score-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most Common Quality Score Mistakes</a></li>
-          <li><a href="#frequently-asked-questions-about-quality-score" className="text-sm text-gray-700 hover:text-primary underline">Frequently Asked Questions About Quality Score</a></li>
-          <li><a href="#conclusion" className="text-sm text-gray-700 hover:text-primary underline">Conclusion</a></li>
-          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+          <li><a href="#what-is-quality-score-and-why-it-matters" className="block py-1 text-base text-gray-700 hover:text-primary underline">What Is Quality Score and Why It Matters</a></li>
+          <li><a href="#how-quality-score-affects-cost-per-click" className="block py-1 text-base text-gray-700 hover:text-primary underline">How Quality Score Affects Cost Per Click</a></li>
+          <li><a href="#three-components-of-quality-score" className="block py-1 text-base text-gray-700 hover:text-primary underline">Three Components of Quality Score</a></li>
+          <li><a href="#how-to-improve-expected-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to Improve Expected CTR</a></li>
+          <li><a href="#how-to-improve-ad-relevance" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to Improve Ad Relevance</a></li>
+          <li><a href="#how-to-improve-landing-page-experience" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to Improve Landing Page Experience</a></li>
+          <li><a href="#30-day-plan-to-improve-quality-score" className="block py-1 text-base text-gray-700 hover:text-primary underline">30-Day Plan to Improve Quality Score</a></li>
+          <li><a href="#quality-score-by-campaign-type" className="block py-1 text-base text-gray-700 hover:text-primary underline">Quality Score by Campaign Type</a></li>
+          <li><a href="#most-common-quality-score-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Most Common Quality Score Mistakes</a></li>
+          <li><a href="#frequently-asked-questions-about-quality-score" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently Asked Questions About Quality Score</a></li>
+          <li><a href="#conclusion" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conclusion</a></li>
+          <li><a href="#related-guides" className="block py-1 text-base text-gray-700 hover:text-primary underline">Related Guides</a></li>
         </ol>
       </nav>
 
@@ -86,72 +86,72 @@ export default function QualityScoreGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Quality Score</th>
-              <th className="py-3 px-4 font-heading font-semibold">CPC impact</th>
-              <th className="py-3 px-4 font-heading font-semibold">Example (baseline $1.00/£1.00)</th>
-              <th className="py-3 px-4 font-heading font-semibold">Status</th>
+              <th className="py-3 px-3 font-heading font-semibold">Quality Score</th>
+              <th className="py-3 px-3 font-heading font-semibold">CPC impact</th>
+              <th className="py-3 px-3 font-heading font-semibold">Example (baseline $1.00/£1.00)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Status</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">10</td>
-              <td className="py-3 px-4">-50%</td>
-              <td className="py-3 px-4">$0.50/£0.50</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
+              <td className="py-3 px-3 font-medium">10</td>
+              <td className="py-3 px-3">-50%</td>
+              <td className="py-3 px-3">$0.50/£0.50</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">9</td>
-              <td className="py-3 px-4">-44%</td>
-              <td className="py-3 px-4">$0.56/£0.56</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
+              <td className="py-3 px-3 font-medium">9</td>
+              <td className="py-3 px-3">-44%</td>
+              <td className="py-3 px-3">$0.56/£0.56</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">8</td>
-              <td className="py-3 px-4">-37%</td>
-              <td className="py-3 px-4">$0.63/£0.63</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Very good</span></td>
+              <td className="py-3 px-3 font-medium">8</td>
+              <td className="py-3 px-3">-37%</td>
+              <td className="py-3 px-3">$0.63/£0.63</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Very good</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">7</td>
-              <td className="py-3 px-4">-28%</td>
-              <td className="py-3 px-4">$0.72/£0.72</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
+              <td className="py-3 px-3 font-medium">7</td>
+              <td className="py-3 px-3">-28%</td>
+              <td className="py-3 px-3">$0.72/£0.72</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">6</td>
-              <td className="py-3 px-4">-17%</td>
-              <td className="py-3 px-4">$0.83/£0.83</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">OK</span></td>
+              <td className="py-3 px-3 font-medium">6</td>
+              <td className="py-3 px-3">-17%</td>
+              <td className="py-3 px-3">$0.83/£0.83</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">OK</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">5</td>
-              <td className="py-3 px-4">Baseline (0%)</td>
-              <td className="py-3 px-4">$1.00/£1.00</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Average</span></td>
+              <td className="py-3 px-3 font-medium">5</td>
+              <td className="py-3 px-3">Baseline (0%)</td>
+              <td className="py-3 px-3">$1.00/£1.00</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Average</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">4</td>
-              <td className="py-3 px-4">+25%</td>
-              <td className="py-3 px-4">$1.25/£1.25</td>
-              <td className="py-3 px-4"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Below average</span></td>
+              <td className="py-3 px-3 font-medium">4</td>
+              <td className="py-3 px-3">+25%</td>
+              <td className="py-3 px-3">$1.25/£1.25</td>
+              <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Below average</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">3</td>
-              <td className="py-3 px-4">+67%</td>
-              <td className="py-3 px-4">$1.67/£1.67</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Poor</span></td>
+              <td className="py-3 px-3 font-medium">3</td>
+              <td className="py-3 px-3">+67%</td>
+              <td className="py-3 px-3">$1.67/£1.67</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Poor</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">2</td>
-              <td className="py-3 px-4">+150%</td>
-              <td className="py-3 px-4">$2.50/£2.50</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
+              <td className="py-3 px-3 font-medium">2</td>
+              <td className="py-3 px-3">+150%</td>
+              <td className="py-3 px-3">$2.50/£2.50</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">1</td>
-              <td className="py-3 px-4">+400%</td>
-              <td className="py-3 px-4">$5.00/£5.00</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Urgent action</span></td>
+              <td className="py-3 px-3 font-medium">1</td>
+              <td className="py-3 px-3">+400%</td>
+              <td className="py-3 px-3">$5.00/£5.00</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Urgent action</span></td>
             </tr>
           </tbody>
         </table>
@@ -159,7 +159,7 @@ export default function QualityScoreGuideEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">ROI example: QS improvement from 5 to 7</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Monthly spend $6,000/£5,000 with QS 5. By improving to QS 7, CPC decreases by 28%. That means either $1,680/£1,400 savings monthly for same number of clicks, or 28% more clicks for same budget. Annually: $20,160/£16,800 savings.
         </p>
       </div>
@@ -176,17 +176,17 @@ export default function QualityScoreGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% impact</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Expected CTR</h3>
-          <p className="text-sm text-gray-600 mb-0">Likelihood someone will click your ad. Depends on headlines, CTAs, extensions, and historical performance.</p>
+          <p className="text-base text-gray-600 mb-0">Likelihood someone will click your ad. Depends on headlines, CTAs, extensions, and historical performance.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~20% impact</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Ad Relevance</h3>
-          <p className="text-sm text-gray-600 mb-0">How relevant your ad is to the keyword. Depends on keyword match with ad text.</p>
+          <p className="text-base text-gray-600 mb-0">How relevant your ad is to the keyword. Depends on keyword match with ad text.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% impact</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Landing Page Experience</h3>
-          <p className="text-sm text-gray-600 mb-0">How useful and relevant your LP is. Depends on content, speed, mobile optimization, and trust signals.</p>
+          <p className="text-base text-gray-600 mb-0">How useful and relevant your LP is. Depends on content, speed, mobile optimization, and trust signals.</p>
         </div>
       </div>
 
@@ -195,42 +195,42 @@ export default function QualityScoreGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Exp. CTR</th>
-              <th className="py-3 px-4 font-heading font-semibold">Ad Relevance</th>
-              <th className="py-3 px-4 font-heading font-semibold">LP Exp.</th>
-              <th className="py-3 px-4 font-heading font-semibold">Optimization focus</th>
+              <th className="py-3 px-3 font-heading font-semibold">Exp. CTR</th>
+              <th className="py-3 px-3 font-heading font-semibold">Ad Relevance</th>
+              <th className="py-3 px-3 font-heading font-semibold">LP Exp.</th>
+              <th className="py-3 px-3 font-heading font-semibold">Optimization focus</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4 font-medium">Improve ad (headline, CTA, extensions)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3 font-medium">Improve ad (headline, CTA, extensions)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4 font-medium">Improve relevance (keyword in ad)</td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3 font-medium">Improve relevance (keyword in ad)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4 font-medium">Improve landing page (speed, content, mobile)</td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3 font-medium">Improve landing page (speed, content, mobile)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4 font-medium">Restructure Ad Group (tighter grouping)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3 font-medium">Restructure Ad Group (tighter grouping)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4 font-medium">Complete review — <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline">audit checklist</Link></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3 font-medium">Complete review — <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline">audit checklist</Link></td>
             </tr>
           </tbody>
         </table>
@@ -247,7 +247,7 @@ export default function QualityScoreGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword in headline</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Instead of generic &quot;Quality Products | Order Today&quot; use &quot;CRM Software For Small Business | Free Trial&quot;.</p>
+        <p className="text-base text-gray-600 mb-3">Instead of generic &quot;Quality Products | Order Today&quot; use &quot;CRM Software For Small Business | Free Trial&quot;.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -255,7 +255,7 @@ export default function QualityScoreGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Use numbers and specificity</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">&quot;Over 500 Products&quot;, &quot;Save Up To 40%&quot;, &quot;30 Day Guarantee&quot;, &quot;24/7 Support&quot; — concrete numbers attract attention and increase CTR.</p>
+        <p className="text-base text-gray-600 mb-0">&quot;Over 500 Products&quot;, &quot;Save Up To 40%&quot;, &quot;30 Day Guarantee&quot;, &quot;24/7 Support&quot; — concrete numbers attract attention and increase CTR.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -263,7 +263,7 @@ export default function QualityScoreGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Strong CTA and USP in headline</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">Clear action: &quot;Order Today&quot;, &quot;Free Quote&quot;. Unique USP: &quot;Only One With Money-Back Guarantee&quot;, &quot;Same Day Delivery&quot;.</p>
+        <p className="text-base text-gray-600 mb-0">Clear action: &quot;Order Today&quot;, &quot;Free Quote&quot;. Unique USP: &quot;Only One With Money-Back Guarantee&quot;, &quot;Same Day Delivery&quot;.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -271,7 +271,7 @@ export default function QualityScoreGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Add all extensions</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Extensions increase ad size and directly impact CTR.</p>
+        <p className="text-base text-gray-600 mb-3">Extensions increase ad size and directly impact CTR.</p>
         <ul className="text-sm">
           <li>Sitelinks: +10-20% CTR</li>
           <li>Callouts: +5-10% CTR</li>
@@ -315,28 +315,28 @@ export default function QualityScoreGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Priority 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Content relevance</h3>
-          <p className="text-sm text-gray-600 mb-0">LP must match keyword and ad. Dedicated LP for each theme — do not send everything to homepage.</p>
+          <p className="text-base text-gray-600 mb-0">LP must match keyword and ad. Dedicated LP for each theme — do not send everything to homepage.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Priority 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Page speed</h3>
-          <p className="text-sm text-gray-600 mb-0">Goal: &lt; 3 seconds load time. Image compression (WebP), minify CSS/JS, CDN, caching, lazy loading.</p>
+          <p className="text-base text-gray-600 mb-0">Goal: &lt; 3 seconds load time. Image compression (WebP), minify CSS/JS, CDN, caching, lazy loading.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Priority 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mobile optimization</h3>
-          <p className="text-sm text-gray-600 mb-0">60%+ traffic is mobile. Responsive design, readable without zooming, clickable buttons.</p>
+          <p className="text-base text-gray-600 mb-0">60%+ traffic is mobile. Responsive design, readable without zooming, clickable buttons.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Priority 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Trust signals</h3>
-          <p className="text-sm text-gray-600 mb-0">Reviews, testimonials, trust badges, SSL, guarantees, contact information. User must trust you.</p>
+          <p className="text-base text-gray-600 mb-0">Reviews, testimonials, trust badges, SSL, guarantees, contact information. User must trust you.</p>
         </div>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Landing Page checklist</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Relevant to keyword ✓ Message match with ad ✓ Load time &lt; 3s ✓ Mobile-friendly ✓ Clear CTA above fold ✓ Trust signals ✓ SSL (https) ✓ No intrusive pop-ups ✓
         </p>
       </div>
@@ -376,31 +376,31 @@ export default function QualityScoreGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Campaign type</th>
-              <th className="py-3 px-4 font-heading font-semibold">QS visibility</th>
-              <th className="py-3 px-4 font-heading font-semibold">What to focus on</th>
+              <th className="py-3 px-3 font-heading font-semibold">Campaign type</th>
+              <th className="py-3 px-3 font-heading font-semibold">QS visibility</th>
+              <th className="py-3 px-3 font-heading font-semibold">What to focus on</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Search</td>
-              <td className="py-3 px-4">Fully visible (1-10)</td>
-              <td className="py-3 px-4">All three components — most important</td>
+              <td className="py-3 px-3 font-medium">Search</td>
+              <td className="py-3 px-3">Fully visible (1-10)</td>
+              <td className="py-3 px-3">All three components — most important</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Display</td>
-              <td className="py-3 px-4">Less transparent</td>
-              <td className="py-3 px-4">Ad relevance, LP experience, historical performance</td>
+              <td className="py-3 px-3 font-medium">Display</td>
+              <td className="py-3 px-3">Less transparent</td>
+              <td className="py-3 px-3">Ad relevance, LP experience, historical performance</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Shopping</td>
-              <td className="py-3 px-4">No traditional QS</td>
-              <td className="py-3 px-4">Product feed quality, prices, seller ratings</td>
+              <td className="py-3 px-3 font-medium">Shopping</td>
+              <td className="py-3 px-3">No traditional QS</td>
+              <td className="py-3 px-3">Product feed quality, prices, seller ratings</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Performance Max</td>
-              <td className="py-3 px-4">Not visible</td>
-              <td className="py-3 px-4">Google uses internal quality signals</td>
+              <td className="py-3 px-3 font-medium">Performance Max</td>
+              <td className="py-3 px-3">Not visible</td>
+              <td className="py-3 px-3">Google uses internal quality signals</td>
             </tr>
           </tbody>
         </table>
@@ -416,7 +416,7 @@ export default function QualityScoreGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #1</p>
           <p className="font-semibold mb-2">Obsession with QS 10 for every keyword</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> QS 7-8 is excellent and sufficient. Focus on business metrics (CPA, ROAS) — QS is diagnostic tool, not goal itself.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> QS 7-8 is excellent and sufficient. Focus on business metrics (CPA, ROAS) — QS is diagnostic tool, not goal itself.</p>
           </div>
         </div>
 
@@ -424,7 +424,7 @@ export default function QualityScoreGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
           <p className="font-semibold mb-2">Completely ignoring QS</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Low QS = higher costs = worse ROI. Use QS as diagnostic tool to identify problems, especially for keywords with highest spend.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Low QS = higher costs = worse ROI. Use QS as diagnostic tool to identify problems, especially for keywords with highest spend.</p>
           </div>
         </div>
 
@@ -432,7 +432,7 @@ export default function QualityScoreGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
           <p className="font-semibold mb-2">50+ keywords in one Ad Group</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Thematic grouping with 10-20 keywords max. Impossible to write relevant ad for 50 different themes.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Thematic grouping with 10-20 keywords max. Impossible to write relevant ad for 50 different themes.</p>
           </div>
         </div>
 
@@ -440,7 +440,7 @@ export default function QualityScoreGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #4</p>
           <p className="font-semibold mb-2">All ads go to homepage</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Create dedicated landing pages for each theme/Ad Group. Homepage is not relevant for specific searches.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Create dedicated landing pages for each theme/Ad Group. Homepage is not relevant for specific searches.</p>
           </div>
         </div>
 
@@ -448,7 +448,7 @@ export default function QualityScoreGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
           <p className="font-semibold mb-2">Slow website (5+ seconds load time)</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Speed optimization is priority. Image compression, lazy loading, caching. Goal: &lt; 3 seconds. Use PageSpeed Insights for diagnostics.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Speed optimization is priority. Image compression, lazy loading, caching. Goal: &lt; 3 seconds. Use PageSpeed Insights for diagnostics.</p>
           </div>
         </div>
       </div>
@@ -464,7 +464,7 @@ export default function QualityScoreGuideEN() {
             What is a good Quality Score?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             7+ is good, 8-9 is excellent, 10 is ideal but not always necessary or realistic. For branded keywords expect 8-10, for generic commercial 6-8 is solid result.
           </div>
         </details>
@@ -474,7 +474,7 @@ export default function QualityScoreGuideEN() {
             How quickly does Quality Score change?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             QS updates based on cumulative performance, but changes show gradually — usually days to weeks. Bigger changes (restructuring Ad Groups, new LPs) require more data to reflect.
           </div>
         </details>
@@ -484,7 +484,7 @@ export default function QualityScoreGuideEN() {
             Does QS affect Display and Shopping campaigns?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Display has similar but less transparent system. Shopping has no traditional QS — uses feed quality, price competitiveness, and seller ratings. PMax uses internal signals not visible.
           </div>
         </details>
@@ -494,7 +494,7 @@ export default function QualityScoreGuideEN() {
             Can I have high QS and poor conversions?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes. QS measures relevance, not offer quality. You can have perfectly relevant ad and LP for an uncompetitive offer. QS is only part of equation — offer, price, and user experience are equally important.
           </div>
         </details>
@@ -504,7 +504,7 @@ export default function QualityScoreGuideEN() {
             Why do I have low QS for branded keywords?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Likely competitors are bidding on your brand. Branded keywords should have QS 8-10. Check: is brand in ad headline, does LP have brand prominently, are there technical issues with site.
           </div>
         </details>
@@ -514,7 +514,7 @@ export default function QualityScoreGuideEN() {
             Does pausing poor keywords improve QS of others?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Not directly — there is no account-level QS. But indirectly, better focus on quality keywords improves overall account performance which over time helps all metrics.
           </div>
         </details>

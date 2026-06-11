@@ -760,7 +760,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               </>
             )}
           </p>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-600 text-base leading-relaxed">
             {locale === "en" ? (
               <>
                 With over a decade of experience managing Google Ads campaigns for brands
@@ -801,7 +801,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {problem.title}
               </h3>
-              <p className="text-gray-600 text-sm">{problem.description}</p>
+              <p className="text-gray-600 text-base">{problem.description}</p>
             </Card>
           ))}
         </div>
@@ -881,7 +881,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               ? "Each campaign type requires a specific approach. I choose the right combination based on your goals, industry, and budget."
               : "Svaki tip kampanje zahteva specifičan pristup. Biram pravu kombinaciju na osnovu vaših ciljeva, industrije i budžeta."}
           </p>
-          <p className="text-sm text-gray-500 mt-3">
+          <p className="text-base text-gray-500 mt-3">
             {locale === "en" ? (
               <>
                 Read detailed information about each campaign type in the{" "}
@@ -905,7 +905,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {campaign.title}
               </h3>
-              <p className="text-gray-600 text-sm mb-4">
+              <p className="text-gray-600 text-base mb-4">
                 {campaign.description}
               </p>
               <Link
@@ -986,7 +986,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           </div>
         </div>
         <div className="text-center mt-8">
-          <p className="text-sm text-gray-500">
+          <p className="text-base text-gray-500">
             {locale === "en" ? (
               <>
                 I work with clients from the UK, US, Germany, Australia, and beyond.{" "}
@@ -1040,7 +1040,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
                   <h3 className="font-heading font-semibold text-lg mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
+                  <p className="text-gray-600 text-base">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -1074,7 +1074,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <p className="text-2xl font-heading font-bold text-primary mb-3">
               {locale === "en" ? "from €500" : "od €350"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "For companies starting with Google Ads or looking to achieve better results with existing campaigns. Focus on fundamentals that deliver measurable ROI."
                 : "Za firme koje tek počinju sa Google oglašavanjem ili žele da ostvare bolje rezultate. Fokus na osnovu i ono što donosi realne rezultate — bez komplikovanja."}
@@ -1122,7 +1122,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <p className="text-2xl font-heading font-bold text-primary mb-3">
               {locale === "en" ? "from €750" : "od €500"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "Everything from Starter, plus strategic scaling approach. Monthly and quarterly analysis, reduced error margin, smart testing, and focus on maximizing return on investment."
                 : "Sve iz Starter paketa, plus strateški pristup skaliranju. Mesečne i kvartalne analize, smanjenje prostora za greške, pametno testiranje i fokus na visok povrat investicije."}
@@ -1239,7 +1239,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
                   &#9660;
                 </span>
               </summary>
-              <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+              <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.answer}
               </div>
             </details>

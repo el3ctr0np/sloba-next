@@ -42,7 +42,7 @@ export default function PerformanceMaxVodicPost() {
         <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
           Šta je Performance Max?
         </p>
-        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
           <strong>Performance Max</strong> je AI-driven Google Ads kampanja koja automatski koristi sve Google kanale — <strong>Search, Shopping, Display, YouTube, Gmail i Discover</strong> — iz jedne kampanje. Najefektivnija je za multi-SKU eCommerce sa minimum <strong>50 konverzija mesečno</strong> koje algoritam koristi za optimizaciju.
         </p>
       </div>
@@ -52,16 +52,16 @@ export default function PerformanceMaxVodicPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#sta-je-performance-max-i-zasto-je-poseban" className="text-sm text-gray-700 hover:text-primary underline">Šta je Performance Max i zašto je poseban</a></li>
-          <li><a href="#kada-koristiti-performance-max-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Kada koristiti Performance Max kampanje</a></li>
-          <li><a href="#struktura-performance-max-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Struktura Performance Max kampanje</a></li>
-          <li><a href="#performance-max-za-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Performance Max za eCommerce</a></li>
-          <li><a href="#performance-max-za-b2b-firme" className="text-sm text-gray-700 hover:text-primary underline">Performance Max za B2B firme</a></li>
-          <li><a href="#optimizacija-performance-max-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Optimizacija Performance Max kampanja</a></li>
-          <li><a href="#najcesce-greske-sa-performance-max" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške sa Performance Max</a></li>
-          <li><a href="#realna-ocekivanja-i-rezultati" className="text-sm text-gray-700 hover:text-primary underline">Realna očekivanja i rezultati</a></li>
-          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
-          <li><a href="#najcesca-pitanja-o-performance-max-kampanjama" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Performance Max kampanjama</a></li>
+          <li><a href="#sta-je-performance-max-i-zasto-je-poseban" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je Performance Max i zašto je poseban</a></li>
+          <li><a href="#kada-koristiti-performance-max-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kada koristiti Performance Max kampanje</a></li>
+          <li><a href="#struktura-performance-max-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Struktura Performance Max kampanje</a></li>
+          <li><a href="#performance-max-za-ecommerce" className="block py-1 text-base text-gray-700 hover:text-primary underline">Performance Max za eCommerce</a></li>
+          <li><a href="#performance-max-za-b2b-firme" className="block py-1 text-base text-gray-700 hover:text-primary underline">Performance Max za B2B firme</a></li>
+          <li><a href="#optimizacija-performance-max-kampanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Optimizacija Performance Max kampanja</a></li>
+          <li><a href="#najcesce-greske-sa-performance-max" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešće greške sa Performance Max</a></li>
+          <li><a href="#realna-ocekivanja-i-rezultati" className="block py-1 text-base text-gray-700 hover:text-primary underline">Realna očekivanja i rezultati</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-o-performance-max-kampanjama" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja o Performance Max kampanjama</a></li>
         </ol>
       </nav>
 
@@ -89,7 +89,7 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">&quot;Crna kutija&quot; problem</p>
-        <p className="text-blue-800 text-sm mb-0">PMax vam ne daje nivo kontrole i transparentnosti koji imate sa Search ili Shopping kampanjama. Ne vidite sve search terms, ne znate tačnu alokaciju budžeta po mreži, ne možete isključiti većinu placements, ne kontrolišete bidding po keyword-u. Dobijate agregirane podatke i morate verovati algoritmu. Moje iskustvo je da PMax najbolje funkcioniše za oglašivače koji veruju podacima više nego intuiciji i imaju strpljenja za learning period.</p>
+        <p className="text-blue-800 text-base mb-0">PMax vam ne daje nivo kontrole i transparentnosti koji imate sa Search ili Shopping kampanjama. Ne vidite sve search terms, ne znate tačnu alokaciju budžeta po mreži, ne možete isključiti većinu placements, ne kontrolišete bidding po keyword-u. Dobijate agregirane podatke i morate verovati algoritmu. Moje iskustvo je da PMax najbolje funkcioniše za oglašivače koji veruju podacima više nego intuiciji i imaju strpljenja za learning period.</p>
       </div>
 
       <hr />
@@ -103,28 +103,28 @@ export default function PerformanceMaxVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> Kada DA</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Proven conversion history</h3>
-          <p className="text-sm text-gray-600 mb-0">Imate minimum 30–50 konverzija mesečno. Algoritam uči iz vaših podataka — treba mu data da bi optimizovao. Bez conversion history, PMax gađa nasumično.</p>
+          <p className="text-base text-gray-600 mb-0">Imate minimum 30–50 konverzija mesečno. Algoritam uči iz vaših podataka — treba mu data da bi optimizovao. Bez conversion history, PMax gađa nasumično.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> Kada DA</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Želite skaliranje dosega</h3>
-          <p className="text-sm text-gray-600 mb-0">Dostigli ste plafon sa Search ili Shopping kampanjama i želite da dosegnete korisnike na YouTube, Display, Discover. PMax je alat za skaliranje, ne za pokretanje od nule.</p>
+          <p className="text-base text-gray-600 mb-0">Dostigli ste plafon sa Search ili Shopping kampanjama i želite da dosegnete korisnike na YouTube, Display, Discover. PMax je alat za skaliranje, ne za pokretanje od nule.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Kada NE</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mali budžet</h3>
-          <p className="text-sm text-gray-600 mb-0">Ispod €1,000–1,500 mesečno. Algoritam nema dovoljno budžeta za testiranje i učenje na 7 mreža. Rezultat je često suboptimalan.</p>
+          <p className="text-base text-gray-600 mb-0">Ispod €1,000–1,500 mesečno. Algoritam nema dovoljno budžeta za testiranje i učenje na 7 mreža. Rezultat je često suboptimalan.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Kada NE</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Potrebna granularna kontrola</h3>
-          <p className="text-sm text-gray-600 mb-0">Ako vam treba striktna kontrola troškova po proizvodu, brand vs non-brand alokacija budžeta, ili bid per keyword — PMax nije pravi alat. Koristite Search ili Standard Shopping.</p>
+          <p className="text-base text-gray-600 mb-0">Ako vam treba striktna kontrola troškova po proizvodu, brand vs non-brand alokacija budžeta, ili bid per keyword — PMax nije pravi alat. Koristite Search ili Standard Shopping.</p>
         </div>
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">Conversion tracking mora biti 100% ispravan pre pokretanja PMax-a. Loši podaci = loše odluke algoritma. Ako nemate pouzdan tracking, najpre popravite to. Preporučujem da pročitate <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">vodič za conversion tracking</Link> pre nego što pokrenete PMax.</p>
+        <p className="text-yellow-800 text-base mb-0">Conversion tracking mora biti 100% ispravan pre pokretanja PMax-a. Loši podaci = loše odluke algoritma. Ako nemate pouzdan tracking, najpre popravite to. Preporučujem da pročitate <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">vodič za conversion tracking</Link> pre nego što pokrenete PMax.</p>
       </div>
 
       <hr />
@@ -175,30 +175,30 @@ export default function PerformanceMaxVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Tip biznisa</th>
-              <th className="py-3 px-4 font-heading font-semibold">Preporučen broj asset grupa</th>
+              <th className="py-3 px-3 font-heading font-semibold">Tip biznisa</th>
+              <th className="py-3 px-3 font-heading font-semibold">Preporučen broj asset grupa</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce (mali)</td>
-              <td className="py-3 px-4">2–4</td>
+              <td className="py-3 px-3 font-medium">eCommerce (mali)</td>
+              <td className="py-3 px-3">2–4</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">eCommerce (srednji)</td>
-              <td className="py-3 px-4">4–8</td>
+              <td className="py-3 px-3">eCommerce (srednji)</td>
+              <td className="py-3 px-3">4–8</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce (veliki)</td>
-              <td className="py-3 px-4">8–15+</td>
+              <td className="py-3 px-3 font-medium">eCommerce (veliki)</td>
+              <td className="py-3 px-3">8–15+</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">B2B (jedna usluga)</td>
-              <td className="py-3 px-4">1–2</td>
+              <td className="py-3 px-3">B2B (jedna usluga)</td>
+              <td className="py-3 px-3">1–2</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">B2B (više usluga)</td>
-              <td className="py-3 px-4">3–6</td>
+              <td className="py-3 px-3 font-medium">B2B (više usluga)</td>
+              <td className="py-3 px-3">3–6</td>
             </tr>
           </tbody>
         </table>
@@ -206,7 +206,7 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Pravilo tematske povezanosti</p>
-        <p className="text-sm text-yellow-900 mb-0">Svaka asset grupa treba imati tematsku povezanost — proizvodi, poruka, landing page i audience signals treba da budu usklađeni. Jedna asset grupa = jedan konzistentan message-to-market match. Ne mešajte muške patike sa ženskim torbicama u istoj asset grupi.</p>
+        <p className="text-base text-yellow-900 mb-0">Svaka asset grupa treba imati tematsku povezanost — proizvodi, poruka, landing page i audience signals treba da budu usklađeni. Jedna asset grupa = jedan konzistentan message-to-market match. Ne mešajte muške patike sa ženskim torbicama u istoj asset grupi.</p>
       </div>
 
       <hr />
@@ -221,7 +221,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Optimizovati product feed titles</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Title je najvažnije polje u feed-u. Uključite ključne atribute: brand, tip proizvoda, boja, materijal, veličina. Algoritam koristi title za matching sa search queries.</p>
+        <p className="text-base text-gray-600 mb-3">Title je najvažnije polje u feed-u. Uključite ključne atribute: brand, tip proizvoda, boja, materijal, veličina. Algoritam koristi title za matching sa search queries.</p>
         <ul className="text-sm">
           <li><strong>Loše:</strong> &quot;Nike patike crne&quot;</li>
           <li><strong>Dobro:</strong> &quot;Nike Air Max 270 muške patike crne sportske 42&quot;</li>
@@ -233,7 +233,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dodati custom labels za segmentaciju</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Custom label 0–4 su vaša slobodna polja za grupisanje proizvoda. Preporučujem segmentaciju po profitabilnosti i performansama.</p>
+        <p className="text-base text-gray-600 mb-3">Custom label 0–4 su vaša slobodna polja za grupisanje proizvoda. Preporučujem segmentaciju po profitabilnosti i performansama.</p>
         <ul className="text-sm">
           <li><strong>Custom Label 0:</strong> Marža (high / medium / low)</li>
           <li><strong>Custom Label 1:</strong> Performance (best_seller / slow_mover / new)</li>
@@ -247,7 +247,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Segmentovati asset grupe po kategorijama</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Ne stavljajte sve proizvode u jednu asset grupu. Segmentirajte po Product Type ili Custom Label da biste imali različite kreative i poruke za različite kategorije.</p>
+        <p className="text-base text-gray-600 mb-3">Ne stavljajte sve proizvode u jednu asset grupu. Segmentirajte po Product Type ili Custom Label da biste imali različite kreative i poruke za različite kategorije.</p>
         <ul className="text-sm">
           <li><strong>Primer (Fashion eCommerce):</strong> AG 1 = Best Sellers, AG 2 = Muška Obuća, AG 3 = Ženska Obuća, AG 4 = Accessories, AG 5 = Sale Items</li>
         </ul>
@@ -257,41 +257,41 @@ export default function PerformanceMaxVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
-              <th className="py-3 px-4 font-heading font-semibold">Standard Shopping</th>
-              <th className="py-3 px-4 font-heading font-semibold">Performance Max</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-3 font-heading font-semibold">Standard Shopping</th>
+              <th className="py-3 px-3 font-heading font-semibold">Performance Max</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Kontrola</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Visoka</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Niska</span></td>
+              <td className="py-3 px-3 font-medium">Kontrola</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Visoka</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Niska</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Reach</td>
-              <td className="py-3 px-4">Shopping only</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Sve mreže</span></td>
+              <td className="py-3 px-3">Reach</td>
+              <td className="py-3 px-3">Shopping only</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Sve mreže</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Bidding</td>
-              <td className="py-3 px-4">Manual ili Smart</td>
-              <td className="py-3 px-4">Samo automated</td>
+              <td className="py-3 px-3 font-medium">Bidding</td>
+              <td className="py-3 px-3">Manual ili Smart</td>
+              <td className="py-3 px-3">Samo automated</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Search Terms</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Potpun uvid</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Delimičan</span></td>
+              <td className="py-3 px-3">Search Terms</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Potpun uvid</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Delimičan</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Learning period</td>
-              <td className="py-3 px-4">Brži (1–2 nedelje)</td>
-              <td className="py-3 px-4">Sporiji (4–6 nedelja)</td>
+              <td className="py-3 px-3 font-medium">Learning period</td>
+              <td className="py-3 px-3">Brži (1–2 nedelje)</td>
+              <td className="py-3 px-3">Sporiji (4–6 nedelja)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Skaliranje</td>
-              <td className="py-3 px-4">Manuelno</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Automatsko</span></td>
+              <td className="py-3 px-3">Skaliranje</td>
+              <td className="py-3 px-3">Manuelno</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Automatsko</span></td>
             </tr>
           </tbody>
         </table>
@@ -299,7 +299,7 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Moja preporuka: Hibridni pristup</p>
-        <p className="text-blue-800 text-sm mb-0">Počnite sa Standard Shopping kampanjama za kontrolu i učenje. Dodajte PMax kada imate stabilan conversion history (50+ konverzija/mesec). Najbolji rezultati dolaze iz kombinacije: Standard Shopping za brand i kontrolu, PMax za prospecting i skaliranje. Detaljnije o Shopping kampanjama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">Google Shopping vodič</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">Počnite sa Standard Shopping kampanjama za kontrolu i učenje. Dodajte PMax kada imate stabilan conversion history (50+ konverzija/mesec). Najbolji rezultati dolaze iz kombinacije: Standard Shopping za brand i kontrolu, PMax za prospecting i skaliranje. Detaljnije o Shopping kampanjama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">Google Shopping vodič</Link>.</p>
       </div>
 
       <hr />
@@ -320,7 +320,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Offline conversion import</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">PMax optimizuje ka onome što mu kažete da je konverzija. Ako optimizujete samo ka form fills, dobićete volume form fills — ali ne nužno kvalitetne. Rešenje: importujte SQL (Sales Qualified Lead) ili Won deals nazad u Google Ads.</p>
+        <p className="text-base text-gray-600 mb-3">PMax optimizuje ka onome što mu kažete da je konverzija. Ako optimizujete samo ka form fills, dobićete volume form fills — ali ne nužno kvalitetne. Rešenje: importujte SQL (Sales Qualified Lead) ili Won deals nazad u Google Ads.</p>
         <ul className="text-sm">
           <li>Mapiranje GCLID-a sa CRM-om</li>
           <li>Import &quot;Won Deal&quot; konverzije iz CRM-a (Pipedrive, HubSpot, Salesforce)</li>
@@ -333,7 +333,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Audience signals su kritični</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Za B2B, audience signals su važniji nego za eCommerce. Prvi mesec learning period-a PMax će koristiti vaše signale pre nego što proširi reach.</p>
+        <p className="text-base text-gray-600 mb-3">Za B2B, audience signals su važniji nego za eCommerce. Prvi mesec learning period-a PMax će koristiti vaše signale pre nego što proširi reach.</p>
         <ul className="text-sm">
           <li><strong>Customer Match liste</strong> — postojeći klijenti (email liste iz CRM-a)</li>
           <li><strong>Website visitors</strong> — korisnici koji su bili na ključnim stranicama (pricing, case studies)</li>
@@ -347,7 +347,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Account-level negative keywords</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">PMax dozvoljava samo account-level negative keywords. Koristite ih agresivno da filtrirate nekvalitetne upite.</p>
+        <p className="text-base text-gray-600 mb-3">PMax dozvoljava samo account-level negative keywords. Koristite ih agresivno da filtrirate nekvalitetne upite.</p>
         <ul className="text-sm">
           <li><strong>Job-related:</strong> &quot;posao&quot;, &quot;karijera&quot;, &quot;plata&quot;, &quot;oglasi za posao&quot;</li>
           <li><strong>Student terms:</strong> &quot;seminarski&quot;, &quot;završni rad&quot;, &quot;projekat&quot;</li>
@@ -368,7 +368,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Asset kvalitet i raznolikost</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Google kombinuje vaše asset-e u različite formate. Što više kvalitetnih varijanti date, to bolje algoritam može optimizovati.</p>
+        <p className="text-base text-gray-600 mb-3">Google kombinuje vaše asset-e u različite formate. Što više kvalitetnih varijanti date, to bolje algoritam može optimizovati.</p>
         <ul className="text-sm">
           <li>Redovno osvežavajte kreativu (minimum svaka 2–3 meseca)</li>
           <li>A/B testirajte različite poruke u naslovima</li>
@@ -382,7 +382,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Audience signals refinement</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Audience signals nisu striktni targeting, ali pomažu algoritmu da brže nauči. Što bolji signali, brže učenje.</p>
+        <p className="text-base text-gray-600 mb-3">Audience signals nisu striktni targeting, ali pomažu algoritmu da brže nauči. Što bolji signali, brže učenje.</p>
         <ul className="text-sm">
           <li>Dodavajte audience signals (Custom Audiences, Customer Match, Affinity)</li>
           <li>Iz Insights tab-a vidite koji audience segmenti performuju</li>
@@ -395,7 +395,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Product feed optimizacija (eCommerce)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Za eCommerce PMax, feed je pola bitke. Algoritam koristi feed data za matching.</p>
+        <p className="text-base text-gray-600 mb-3">Za eCommerce PMax, feed je pola bitke. Algoritam koristi feed data za matching.</p>
         <ul className="text-sm">
           <li>Title optimizacija (brand + tip + atributi)</li>
           <li>Custom label strategija (marža, sezona, performance)</li>
@@ -408,7 +408,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bid strategija i ciljna vrednost</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Možete menjati Target CPA ili Target ROAS kada vidite rezultate. Preporučujem postepene izmene.</p>
+        <p className="text-base text-gray-600 mb-3">Možete menjati Target CPA ili Target ROAS kada vidite rezultate. Preporučujem postepene izmene.</p>
         <ul className="text-sm">
           <li>Ne menjajte target više od 10–20% odjednom</li>
           <li>Čekajte minimum 7–10 dana pre sledeće izmene</li>
@@ -421,7 +421,7 @@ export default function PerformanceMaxVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">URL Expansion setting</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">URL Expansion omogućava Google-u da automatski šalje saobraćaj na druge stranice vašeg sajta, ne samo Final URL iz asset grupe. Moja preporuka: OFF za većinu biznisa.</p>
+        <p className="text-base text-gray-600 mb-3">URL Expansion omogućava Google-u da automatski šalje saobraćaj na druge stranice vašeg sajta, ne samo Final URL iz asset grupe. Moja preporuka: OFF za većinu biznisa.</p>
         <ul className="text-sm">
           <li>Sa OFF: Kontrolišete gde ide saobraćaj</li>
           <li>Sa ON: Google može slati ljude na stranice koje ne želite (blog, about, stare promo stranice)</li>
@@ -432,22 +432,22 @@ export default function PerformanceMaxVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Bid strategija</th>
-              <th className="py-3 px-4 font-heading font-semibold">Kada koristiti</th>
+              <th className="py-3 px-3 font-heading font-semibold">Bid strategija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Kada koristiti</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Maximize Conversions</td>
-              <td className="py-3 px-4">Za početak, dok skupljate data. Nema target, samo maksimizuje konverzije sa datim budžetom.</td>
+              <td className="py-3 px-3 font-medium">Maximize Conversions</td>
+              <td className="py-3 px-3">Za početak, dok skupljate data. Nema target, samo maksimizuje konverzije sa datim budžetom.</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Target CPA</td>
-              <td className="py-3 px-4">Kada znate koliko možete platiti po konverziji (lead, poziv). Postavite realan CPA baziran na historiji.</td>
+              <td className="py-3 px-3">Target CPA</td>
+              <td className="py-3 px-3">Kada znate koliko možete platiti po konverziji (lead, poziv). Postavite realan CPA baziran na historiji.</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Target ROAS</td>
-              <td className="py-3 px-4">Za eCommerce sa različitim vrednostima porudžbina. Zahteva Conversion Value tracking setup.</td>
+              <td className="py-3 px-3 font-medium">Target ROAS</td>
+              <td className="py-3 px-3">Za eCommerce sa različitim vrednostima porudžbina. Zahteva Conversion Value tracking setup.</td>
             </tr>
           </tbody>
         </table>
@@ -487,7 +487,7 @@ export default function PerformanceMaxVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #1</p>
           <p className="font-semibold mb-2">Pokretanje bez dovoljno conversion data</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Prvo izgradite conversion history sa Search ili Shopping kampanjama. Minimum 30 konverzija mesečno pre nego što pokrenete PMax. Inače, algoritam gađa nasumično.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Prvo izgradite conversion history sa Search ili Shopping kampanjama. Minimum 30 konverzija mesečno pre nego što pokrenete PMax. Inače, algoritam gađa nasumično.</p>
           </div>
         </div>
 
@@ -495,7 +495,7 @@ export default function PerformanceMaxVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
           <p className="font-semibold mb-2">Jedan asset set za sve kategorije</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Segmentujte asset grupe po relevantnosti. Različite kategorije proizvoda = različite asset grupe sa custom kreativom. Generički asset-i = generički rezultati.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Segmentujte asset grupe po relevantnosti. Različite kategorije proizvoda = različite asset grupe sa custom kreativom. Generički asset-i = generički rezultati.</p>
           </div>
         </div>
 
@@ -503,7 +503,7 @@ export default function PerformanceMaxVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
           <p className="font-semibold mb-2">Ignorisanje audience signals</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Audience signals nisu targeting, ali pomažu algoritmu da brže nauči. Dodajte Customer Match liste, website visitors, in-market audiences. Što bolji signali, brže učenje. Preporučujem minimum 3–5 različitih audience signala po asset grupi.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Audience signals nisu targeting, ali pomažu algoritmu da brže nauči. Dodajte Customer Match liste, website visitors, in-market audiences. Što bolji signali, brže učenje. Preporučujem minimum 3–5 različitih audience signala po asset grupi.</p>
           </div>
         </div>
 
@@ -511,7 +511,7 @@ export default function PerformanceMaxVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
           <p className="font-semibold mb-2">&quot;Postavi i zaboravi&quot; mentalitet</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> PMax zahteva manje dnevnog rada nego Search kampanje, ali ne nula. Nedeljne provere su minimum: performance metrics, asset ratings, audience insights, placement reports. Mesečno osvežite kreativ i proverite search terms insights.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> PMax zahteva manje dnevnog rada nego Search kampanje, ali ne nula. Nedeljne provere su minimum: performance metrics, asset ratings, audience insights, placement reports. Mesečno osvežite kreativ i proverite search terms insights.</p>
           </div>
         </div>
 
@@ -519,7 +519,7 @@ export default function PerformanceMaxVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #5</p>
           <p className="font-semibold mb-2">Loš ili nepouzdan conversion tracking</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Ako trackujete pogrešne konverzije (npr. &quot;Click on button&quot; umesto stvarne kupovine) ili nemate conversion values setup, PMax optimizuje ka pogrešnom cilju. Prvo popravite tracking: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">Conversion tracking vodič</Link>.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Ako trackujete pogrešne konverzije (npr. &quot;Click on button&quot; umesto stvarne kupovine) ili nemate conversion values setup, PMax optimizuje ka pogrešnom cilju. Prvo popravite tracking: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">Conversion tracking vodič</Link>.</p>
           </div>
         </div>
       </div>
@@ -535,36 +535,36 @@ export default function PerformanceMaxVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
-              <th className="py-3 px-4 font-heading font-semibold">eCommerce</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B Lead Gen</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-3 font-heading font-semibold">eCommerce</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B Lead Gen</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">ROAS / CPL</td>
-              <td className="py-3 px-4">3–6x ROAS (optimizovane kampanje)</td>
-              <td className="py-3 px-4">Varijabilno — često viši CPL nego Search</td>
+              <td className="py-3 px-3 font-medium">ROAS / CPL</td>
+              <td className="py-3 px-3">3–6x ROAS (optimizovane kampanje)</td>
+              <td className="py-3 px-3">Varijabilno — često viši CPL nego Search</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Porast volume-a</td>
-              <td className="py-3 px-4">20–40% porast revenue-a vs samo Search/Shopping</td>
-              <td className="py-3 px-4">Volume značajno raste, ali lead quality variše</td>
+              <td className="py-3 px-3">Porast volume-a</td>
+              <td className="py-3 px-3">20–40% porast revenue-a vs samo Search/Shopping</td>
+              <td className="py-3 px-3">Volume značajno raste, ali lead quality variše</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Learning period</td>
-              <td className="py-3 px-4">4–6 nedelja</td>
-              <td className="py-3 px-4">6–8 nedelja (duži sales cycle)</td>
+              <td className="py-3 px-3 font-medium">Learning period</td>
+              <td className="py-3 px-3">4–6 nedelja</td>
+              <td className="py-3 px-3">6–8 nedelja (duži sales cycle)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Minimum konverzija</td>
-              <td className="py-3 px-4">50+ mesečno idealno</td>
-              <td className="py-3 px-4">15–20 mesečno minimum</td>
+              <td className="py-3 px-3">Minimum konverzija</td>
+              <td className="py-3 px-3">50+ mesečno idealno</td>
+              <td className="py-3 px-3">15–20 mesečno minimum</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Minimum budžet</td>
-              <td className="py-3 px-4">€1,500+ mesečno</td>
-              <td className="py-3 px-4">€1,000+ mesečno</td>
+              <td className="py-3 px-3 font-medium">Minimum budžet</td>
+              <td className="py-3 px-3">€1,500+ mesečno</td>
+              <td className="py-3 px-3">€1,000+ mesečno</td>
             </tr>
           </tbody>
         </table>
@@ -594,7 +594,7 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Pravilo: Kada odustati od PMax-a</p>
-        <p className="text-sm text-yellow-900 mb-0">Ako posle 8–10 nedelja i 100+ konverzija rezultati su konstantno ispod cilja (ROAS ispod target-a, CPA iznad prihvatljivog, lead quality neprihvatljiva) i ne vidiš trend poboljšanja — možda PMax nije za vaš biznis u ovom trenutku. Vratite se osnovama: Search ili Shopping kampanje sa više kontrole.</p>
+        <p className="text-base text-yellow-900 mb-0">Ako posle 8–10 nedelja i 100+ konverzija rezultati su konstantno ispod cilja (ROAS ispod target-a, CPA iznad prihvatljivog, lead quality neprihvatljiva) i ne vidiš trend poboljšanja — možda PMax nije za vaš biznis u ovom trenutku. Vratite se osnovama: Search ili Shopping kampanje sa više kontrole.</p>
       </div>
 
       <hr />
@@ -607,7 +607,7 @@ export default function PerformanceMaxVodicPost() {
             Da li Performance Max zamenjuje Shopping kampanje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ne nužno. Mnogi oglašivači koriste oba formata — Standard Shopping za brand i kontrolu, PMax za prospecting i skaliranje. Google aktivno gura PMax, ali Shopping kampanje i dalje funkcionišu odlično. Moja preporuka: hibridni pristup. Ne zatvarajte Shopping kampanje ako dobro performuju, već dodajte PMax kao dodatni kanal.
           </div>
         </details>
@@ -617,7 +617,7 @@ export default function PerformanceMaxVodicPost() {
             Koliki budžet treba za Performance Max?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum €50–100 dnevno (€1,500–3,000 mesečno) za smislene rezultate. Ispod toga, algoritam nema dovoljno budžeta da testira 7 različitih mreža i skupi dovoljno podataka za optimizaciju. Za B2B sa manjim volume-om konverzija, može funkcionisati sa €30–50 dnevno, ali učenje će biti sporije.
           </div>
         </details>
@@ -627,7 +627,7 @@ export default function PerformanceMaxVodicPost() {
             Zašto ne vidim sve search terms u PMax kampanjama?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google ograničava search terms insights za PMax. Vidite samo agregirane kategorije i top terme, ne sve kao u Search kampanjama. Ovo je legitimna kritika PMax-a — gubi se transparentnost. Razlog je što PMax radi na više mreža istovremeno i Google ne želi da prikaže kompletan stream podataka. Rešenje: koristite Insights tab i gledate trends, ne pojedinačne termine.
           </div>
         </details>
@@ -637,7 +637,7 @@ export default function PerformanceMaxVodicPost() {
             Da li PMax kanibalizuje moje druge kampanje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Može. PMax ima prioritet za Shopping queries — što znači da će PMax preuzeti impressions od Standard Shopping kampanja za iste proizvode. To nije nužno loše ako PMax performuje bolje. Pratite ukupne rezultate account-level, ne samo PMax. Ako ukupan ROAS ili konverzije rastu, kanibalizacija nije problem. Ako padaju, razmislite o strategiji — možda isključite neke proizvode iz PMax-a ili podesite bidding.
           </div>
         </details>
@@ -647,7 +647,7 @@ export default function PerformanceMaxVodicPost() {
             Kada treba isključiti Performance Max?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Kada konstantno underperformuje vs vaši ciljevi posle 8+ nedelja (dovoljno vremena za learning), kada je lead quality neprihvatljiva i ne poboljšava se sa offline conversion import-om, ili kada jednostavno ne odgovara vašem poslovnom modelu (npr. potreba za striktnom kontrolom budžeta po proizvodu). PMax nije za sve — i to je OK. Neki biznisi bolje funkcionišu sa Search + Shopping + Remarketing kombinacijom. <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline">Remarketing vodič</Link>.
           </div>
         </details>
@@ -700,7 +700,7 @@ export default function PerformanceMaxVodicPost() {
             Da li Performance Max zamenjuje Search i Shopping kampanje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ne u potpunosti. PMax može da radi uz Search i Shopping. Google preporučuje kombinaciju — PMax za široku pokrivenost, Search za high-intent upite. Shopping sa PMax-om zahteva pažljivu asset group strukturu da se izbegne kanibalizacija.
           </div>
         </details>
@@ -710,7 +710,7 @@ export default function PerformanceMaxVodicPost() {
             Koliki budžet treba za Performance Max?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum €30-50/dan (€900-1,500/mesečno). PMax koristi machine learning koji zahteva dovoljno podataka — ispod ovog budžeta algoritam nema dovoljno konverzija za optimizaciju. Za eCommerce sa 100+ proizvoda, preporučuje se €2,000+/mesečno.
           </div>
         </details>
@@ -720,7 +720,7 @@ export default function PerformanceMaxVodicPost() {
             Zašto PMax troši većinu budžeta na Display/YouTube?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Čest problem sa PMax-om. Rešenja: isključite URL expansion, dodajte negativne ključne reči (preko Google podrške), napravite jače Search kampanje za iste ključne reči. PMax će trošiti gde mu je najjeftinije, ne nužno najefikasnije.
           </div>
         </details>
@@ -730,7 +730,7 @@ export default function PerformanceMaxVodicPost() {
             Kako videti gde PMax prikazuje oglase?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Insights tab → Placement report (ograničen), Asset group performance. Za detaljnije: koristite URL-based conversion tracking ili GA4 da vidite koji kanali donose konverzije. Google namerno ograničava transparentnost PMax-a.
           </div>
         </details>
@@ -740,7 +740,7 @@ export default function PerformanceMaxVodicPost() {
             Kada NE koristiti Performance Max?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Kad imate mali budžet (ispod €500/mesečno), kad nemate conversion tracking, za čist brand awareness, ili kad trebate preciznu kontrolu nad ključnim rečima. PMax je automatizovan — ako želite potpunu kontrolu, Search i Shopping su bolji izbor.
           </div>
         </details>

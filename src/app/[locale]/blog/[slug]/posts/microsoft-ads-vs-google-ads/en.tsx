@@ -97,42 +97,42 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Market</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Google share</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Bing / MS share</th>
-              <th className="py-3 px-4 text-right font-heading font-semibold text-gray-900">Note</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Market</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Google share</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Bing / MS share</th>
+              <th className="py-3 px-3 text-right font-heading font-semibold text-gray-900">Note</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Global</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~92%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~3–5%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">StatCounter 2026</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Global</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~92%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~3–5%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">StatCounter 2026</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">USA (desktop)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~80%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~12%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">Edge default effect</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">USA (desktop)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~80%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~12%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">Edge default effect</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">United Kingdom</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~87%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~7–9%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">Relevant for UK brands</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">United Kingdom</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~87%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~7–9%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">Relevant for UK brands</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Germany</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~88%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~5–7%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">Worth testing for DE</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Germany</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~88%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~5–7%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">Worth testing for DE</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Serbia / Eastern Europe</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~97%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~2%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">MS Ads not a priority locally</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Serbia / Eastern Europe</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~97%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~2%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">MS Ads not a priority locally</td>
             </tr>
           </tbody>
         </table>
@@ -276,48 +276,48 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Industry</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Google CPC (UK avg.)</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Microsoft CPC (UK avg.)</th>
-              <th className="py-3 px-4 text-right font-heading font-semibold text-gray-900">Saving</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Industry</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Google CPC (UK avg.)</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Microsoft CPC (UK avg.)</th>
+              <th className="py-3 px-3 text-right font-heading font-semibold text-gray-900">Saving</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Skincare / Beauty</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0.45–£0.90</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0.25–£0.50</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Skincare / Beauty</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0.45–£0.90</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0.25–£0.50</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Financial services</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£3.00–£8.00</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£1.80–£4.50</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Financial services</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£3.00–£8.00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£1.80–£4.50</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">B2B SaaS / Software</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£2.00–£6.00</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£1.00–£3.20</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">B2B SaaS / Software</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£2.00–£6.00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£1.00–£3.20</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Legal services</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£4.00–£12.00</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£2.00–£6.50</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Legal services</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£4.00–£12.00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£2.00–£6.50</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Hobbies and leisure</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0.30–£0.70</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0.18–£0.40</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Hobbies and leisure</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0.30–£0.70</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0.18–£0.40</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">eCommerce (general)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0.40–£1.20</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0.22–£0.65</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~40–45%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">eCommerce (general)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0.40–£1.20</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0.22–£0.65</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40–45%</td>
             </tr>
           </tbody>
         </table>
@@ -351,7 +351,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">R</span>
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Responsive Search Ads (RSA)</h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-base text-gray-600 mb-2">
                 Both platforms have RSA format — 15 headlines, 4 descriptions, Google/Microsoft combines
                 automatically. Key difference: Microsoft Ads RSA performance insights are less granular
                 than Google&apos;s (Asset performance labels are Basic vs. Google&apos;s Good/Best/Low/Learning).
@@ -370,7 +370,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">Sh</span>
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Microsoft Shopping Campaigns</h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-base text-gray-600 mb-2">
                 Direct Google Shopping equivalent — Microsoft Merchant Center, product feed (same format
                 as Google), Shopping campaigns with Product Groups. The feed can be imported directly
                 from Google Merchant Center. On accounts where we run both platforms, we run parallel Shopping campaigns on both
@@ -389,7 +389,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">P</span>
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Performance Max equivalent — Microsoft Audience Campaigns + Smart Shopping</h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-base text-gray-600 mb-2">
                 Microsoft does not have an identical PMax, but it has the Audience Network (equivalent
                 to Google Display/YouTube network) and Smart Shopping campaigns that automatically
                 distribute budget across Search and Shopping. In 2025, Performance Max launched in
@@ -408,7 +408,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             <span className="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">AI</span>
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">AI and automation — where Google leads</h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-base text-gray-600 mb-2">
                 Google&apos;s Smart Bidding (tROAS, tCPA, Maximize Conversions) is more mature and reliable
                 due to the sheer volume of conversion data it processes. Microsoft Smart Bidding works,
                 but requires more time to learn and more conversions to stabilise. For accounts with
@@ -427,60 +427,60 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Feature</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Google Ads</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Microsoft Ads</th>
-              <th className="py-3 px-4 text-right font-heading font-semibold text-gray-900">Leader</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Feature</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Google Ads</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Microsoft Ads</th>
+              <th className="py-3 px-3 text-right font-heading font-semibold text-gray-900">Leader</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200">RSA format</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Tied</td>
+              <td className="py-3 px-3 border-b border-gray-200">RSA format</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Tied</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200">Shopping campaigns</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google (better reporting)</td>
+              <td className="py-3 px-3 border-b border-gray-200">Shopping campaigns</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google (better reporting)</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200">Performance Max</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes (mature)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Beta</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google</td>
+              <td className="py-3 px-3 border-b border-gray-200">Performance Max</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes (mature)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Beta</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200">Smart Bidding</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes (mature)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes (less data)</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google</td>
+              <td className="py-3 px-3 border-b border-gray-200">Smart Bidding</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes (mature)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes (less data)</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200">LinkedIn targeting</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">No</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 font-semibold text-orange-700">Microsoft</td>
+              <td className="py-3 px-3 border-b border-gray-200">LinkedIn targeting</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">No</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 font-semibold text-orange-700">Microsoft</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200">Audience Network (Display)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes (GDN)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes (MS Audience Net.)</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google (larger network)</td>
+              <td className="py-3 px-3 border-b border-gray-200">Audience Network (Display)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes (GDN)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes (MS Audience Net.)</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google (larger network)</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200">Google Import tool</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">N/A</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Yes (automatic import)</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 font-semibold text-orange-700">Microsoft (convenience)</td>
+              <td className="py-3 px-3 border-b border-gray-200">Google Import tool</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">N/A</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Yes (automatic import)</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 font-semibold text-orange-700">Microsoft (convenience)</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200">Reporting granularity</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Excellent</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Good</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google</td>
+              <td className="py-3 px-3 border-b border-gray-200">Reporting granularity</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Excellent</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Good</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google</td>
             </tr>
           </tbody>
         </table>
@@ -498,7 +498,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
       <div className="space-y-4 my-8">
         <div className="bg-white border-l-4 border-green-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Finding 1: AOV is consistently higher on Microsoft Ads</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Customers arriving from Bing search have on average 15–25% higher Average Order Value
             than Google customers. The older demographic purchases premium products — premium lines
             line (~£80–£120 per item) proportionally more than the entry-level line (~£20–£35). This directly
@@ -508,7 +508,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
 
         <div className="bg-white border-l-4 border-green-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Finding 2: Microsoft import tool saves hours of work each month</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Microsoft&apos;s &quot;Import from Google Ads&quot; feature is genuinely useful. You can automatically pull
             an entire campaign structure from Google Ads directly into Microsoft Ads. In the dual-platform workflow, the
             initial Microsoft setup took 3–4 hours instead of the typical 15–20 hours for a manual build.
@@ -518,7 +518,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Finding 3: Conversion rate is lower, but not dramatically</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Microsoft Ads conversion rate is consistently 20–30% lower than Google for identical
             campaigns. The explanation: lower volume means less data for Smart Bidding to optimise, and
             the more deliberate demographic profile brings more &quot;window shoppers.&quot; Importantly: lower
@@ -528,7 +528,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Finding 4: Desktop dominance requires adapted ad copy</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             With 70%+ desktop searches on Bing, Microsoft campaigns have different asset
             performance patterns from Google. Longer descriptions (90 characters) that detail product
             benefits outperform the short, punch-oriented headlines that dominate on mobile Google search.
@@ -539,7 +539,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
 
         <div className="bg-white border-l-4 border-blue-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Finding 5: Impression Share is easier to win on Bing</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             On Google Ads, capturing 80%+ impression share for competitive terms requires aggressive budgets.
             On Microsoft Ads, the same impression share is achievable with a 3–5x smaller budget due to fewer
             competing advertisers. A typical UK brand maintains 85%+ IS on branded searches on Bing with a budget that
@@ -642,7 +642,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             </span>
             <div>
               <p className="text-sm font-bold text-gray-900 mb-0.5">{item.title}</p>
-              <p className="text-xs text-gray-600 mb-0">{item.desc}</p>
+              <p className="text-base text-gray-600 mb-0">{item.desc}</p>
             </div>
           </div>
         ))}
@@ -693,7 +693,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
 
       <div className="bg-green-50 border border-green-200 rounded-xl p-5 my-6">
         <p className="text-sm font-bold text-green-900 mb-2">Pro tip: Microsoft Import tool in 3 steps</p>
-        <ol className="text-sm text-green-800 space-y-1 mb-0 list-decimal pl-4">
+        <ol className="text-base text-green-800 space-y-1 mb-0 list-decimal pl-4">
           <li>Microsoft Ads → Tools → Import Campaigns → Import from Google Ads</li>
           <li>Connect your Google Ads account, select campaigns to import, map budgets</li>
           <li>Set automatic import (monthly) — you receive a notification each time with a change summary</li>
@@ -783,7 +783,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             Is Microsoft Ads worth it for small businesses?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             It depends on your market. For businesses selling <strong>only locally in Eastern Europe</strong>: not worth it — Bing holds only ~2% market share there. For businesses selling into the <strong>UK, USA, Germany, or Australia</strong>: worth testing. In those markets Bing holds 7–12% of desktop search, CPC is 35–45% lower than Google, and the audience skews older and wealthier. Minimum meaningful monthly spend: £300–500 or equivalent.
           </div>
         </details>
@@ -793,7 +793,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             How difficult is it to move Google Ads campaigns to Microsoft Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Technically, <strong>extremely straightforward</strong>. Microsoft Ads has an &quot;Import from Google Ads&quot; tool that automatically transfers your complete campaign structure (campaigns, ad groups, keywords, ads, extensions) from Google. Initial import takes 1–2 hours (settings, budget mapping, bid adjustments). In practice, monthly synchronisation is automatic and takes just 15 minutes of manual review. Smart advertisers keep Microsoft as a &quot;shadow campaign&quot; that auto-syncs with Google changes.
           </div>
         </details>
@@ -803,7 +803,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             What is LinkedIn targeting in Microsoft Ads and how does it work?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Microsoft has owned LinkedIn since 2016, giving it access to professional profile data. In Microsoft Ads you can target search users by <strong>LinkedIn industry</strong> (40+ categories), <strong>job function</strong> (C-level, Director, Manager, Individual Contributor), and <strong>company name</strong>. This works as a <strong>bid modifier</strong> — you increase bids for segments that convert better, but you do not exclude others. Always start in observation mode, gather data, then apply bid adjustments (+15% to +30% for high-value segments). Ideal for B2B, financial services, SaaS, and professional services.
           </div>
         </details>
@@ -813,7 +813,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             Does Microsoft Ads have Shopping campaigns equivalent to Google Shopping?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes — Microsoft Merchant Center and Microsoft Shopping Campaigns are a functional equivalent. <strong>Same feed format</strong> (Google Shopping feed works directly on Microsoft without modification), similar campaign structure (Product Groups, bids by category), and the same visual format (image, price, store name). Differences: Microsoft lacks Google&apos;s Shopping Intelligence tab and provides less impression share data, but core functionality is identical. In practice, parallel Shopping campaigns on both platforms deliver 10–15% additional Shopping conversions with the same feed.
           </div>
         </details>
@@ -823,7 +823,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             How much budget does Microsoft Ads require?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             The rule I use: <strong>10–15% of total paid search budget</strong>. If you are spending £3,500 on Google, a sensible Microsoft test budget is £350–500. This is enough for meaningful data without compromising Google performance. Minimum viable budget for UK eCommerce: <strong>£300/month</strong> — below that, there are not enough clicks for statistically relevant conclusions. For B2B with higher CPCs, the minimum is higher (~£500+) since more expensive keywords require more budget to generate the same data volume.
           </div>
         </details>
@@ -833,7 +833,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             Which bidding strategy should I use on Microsoft Ads at the start?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Recommendation for new Microsoft accounts: start with <strong>Enhanced CPC (eCPC)</strong> or Manual CPC. Microsoft Smart Bidding (tROAS, tCPA) requires a minimum of <strong>30 conversions per month</strong> for stable optimisation — with lower volumes, the algorithm fluctuates due to insufficient data. After 60–90 days with 30+ monthly conversions, transition to Maximize Conversions with a target CPA cap. Only consider tROAS after 6 months of solid data if that model is relevant to your business.
           </div>
         </details>

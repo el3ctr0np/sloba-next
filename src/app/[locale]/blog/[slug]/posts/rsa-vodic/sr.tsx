@@ -35,19 +35,19 @@ export default function RsaVodicPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto-rsa-format-dominira-u-2026" className="text-sm text-gray-700 hover:text-primary underline">Zašto RSA format dominira u 2026</a></li>
-          <li><a href="#sta-su-responsive-search-ads-i-kako-funkcionisu" className="text-sm text-gray-700 hover:text-primary underline">Šta su Responsive Search Ads i kako funkcionišu</a></li>
-          <li><a href="#zasto-7-8-naslova-a-ne-15" className="text-sm text-gray-700 hover:text-primary underline">Zašto 7-8 naslova, a ne 15</a></li>
-          <li><a href="#7-tipova-naslova-koji-pokrivaju-sve" className="text-sm text-gray-700 hover:text-primary underline">7 tipova naslova koji pokrivaju sve</a></li>
-          <li><a href="#traffic-temperature-pristup" className="text-sm text-gray-700 hover:text-primary underline">Traffic Temperature pristup — prilagodite ton publici</a></li>
-          <li><a href="#kako-napisati-rsa-korak-po-korak" className="text-sm text-gray-700 hover:text-primary underline">Kako napisati RSA korak po korak</a></li>
-          <li><a href="#strategija-za-opise" className="text-sm text-gray-700 hover:text-primary underline">Strategija za opise (descriptions)</a></li>
-          <li><a href="#pinning-da-ili-ne" className="text-sm text-gray-700 hover:text-primary underline">Pinning — da ili ne?</a></li>
-          <li><a href="#najcesce-rsa-greske" className="text-sm text-gray-700 hover:text-primary underline">Najčešće RSA greške i kako ih izbeći</a></li>
-          <li><a href="#rsa-testiranje-iteration-loop" className="text-sm text-gray-700 hover:text-primary underline">RSA testiranje — The Iteration Loop</a></li>
-          <li><a href="#cesta-pitanja-o-rsa" className="text-sm text-gray-700 hover:text-primary underline">Česta pitanja o RSA</a></li>
-          <li><a href="#zakljucak" className="text-sm text-gray-700 hover:text-primary underline">Zaključak</a></li>
-          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+          <li><a href="#zasto-rsa-format-dominira-u-2026" className="text-base block py-1 text-gray-700 hover:text-primary underline">Zašto RSA format dominira u 2026</a></li>
+          <li><a href="#sta-su-responsive-search-ads-i-kako-funkcionisu" className="text-base block py-1 text-gray-700 hover:text-primary underline">Šta su Responsive Search Ads i kako funkcionišu</a></li>
+          <li><a href="#zasto-7-8-naslova-a-ne-15" className="text-base block py-1 text-gray-700 hover:text-primary underline">Zašto 7-8 naslova, a ne 15</a></li>
+          <li><a href="#7-tipova-naslova-koji-pokrivaju-sve" className="text-base block py-1 text-gray-700 hover:text-primary underline">7 tipova naslova koji pokrivaju sve</a></li>
+          <li><a href="#traffic-temperature-pristup" className="text-base block py-1 text-gray-700 hover:text-primary underline">Traffic Temperature pristup — prilagodite ton publici</a></li>
+          <li><a href="#kako-napisati-rsa-korak-po-korak" className="text-base block py-1 text-gray-700 hover:text-primary underline">Kako napisati RSA korak po korak</a></li>
+          <li><a href="#strategija-za-opise" className="text-base block py-1 text-gray-700 hover:text-primary underline">Strategija za opise (descriptions)</a></li>
+          <li><a href="#pinning-da-ili-ne" className="text-base block py-1 text-gray-700 hover:text-primary underline">Pinning — da ili ne?</a></li>
+          <li><a href="#najcesce-rsa-greske" className="text-base block py-1 text-gray-700 hover:text-primary underline">Najčešće RSA greške i kako ih izbeći</a></li>
+          <li><a href="#rsa-testiranje-iteration-loop" className="text-base block py-1 text-gray-700 hover:text-primary underline">RSA testiranje — The Iteration Loop</a></li>
+          <li><a href="#cesta-pitanja-o-rsa" className="text-base block py-1 text-gray-700 hover:text-primary underline">Česta pitanja o RSA</a></li>
+          <li><a href="#zakljucak" className="text-base block py-1 text-gray-700 hover:text-primary underline">Zaključak</a></li>
+          <li><a href="#povezani-vodici" className="text-base block py-1 text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
         </ol>
       </nav>
 
@@ -73,7 +73,7 @@ export default function RsaVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Nakon upravljanja Google Ads nalozima za eCommerce, Lead Gen i lokalne biznise —
           RSA sa 7-8 dobro raspoređenih naslova redovno nadmašuje RSA sa 15 naslova
           po CTR-u i konverzijama. Razlog je matematika, ne mišljenje.
@@ -115,7 +115,7 @@ export default function RsaVodicPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno pravilo</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Svaki naslov mora imati smisla i sa bilo kojim drugim naslovom. Google kombinuje
           naslov 1 sa naslovom 8 i naslovom 12 — ako dva naslova govore istu stvar ili se
           sukobljavaju, oglas gubi na kvalitetu.
@@ -140,36 +140,36 @@ export default function RsaVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Broj naslova</th>
-              <th className="py-3 px-4 font-heading font-semibold">3-headline kombinacije</th>
-              <th className="py-3 px-4 font-heading font-semibold">Min. impressions za učenje</th>
-              <th className="py-3 px-4 font-heading font-semibold">Status</th>
+              <th className="py-3 px-3 font-heading font-semibold">Broj naslova</th>
+              <th className="py-3 px-3 font-heading font-semibold">3-headline kombinacije</th>
+              <th className="py-3 px-3 font-heading font-semibold">Min. impressions za učenje</th>
+              <th className="py-3 px-3 font-heading font-semibold">Status</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">7</td>
-              <td className="py-3 px-4">210</td>
-              <td className="py-3 px-4">~21,000</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Optimalno</span></td>
+              <td className="py-3 px-3 font-medium">7</td>
+              <td className="py-3 px-3">210</td>
+              <td className="py-3 px-3">~21,000</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Optimalno</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">8</td>
-              <td className="py-3 px-4">336</td>
-              <td className="py-3 px-4">~33,600</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Optimalno</span></td>
+              <td className="py-3 px-3 font-medium">8</td>
+              <td className="py-3 px-3">336</td>
+              <td className="py-3 px-3">~33,600</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Optimalno</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">10</td>
-              <td className="py-3 px-4">720</td>
-              <td className="py-3 px-4">~72,000</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Mnogo</span></td>
+              <td className="py-3 px-3 font-medium">10</td>
+              <td className="py-3 px-3">720</td>
+              <td className="py-3 px-3">~72,000</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Mnogo</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">15</td>
-              <td className="py-3 px-4">2,730</td>
-              <td className="py-3 px-4">~273,000</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Data poverty</span></td>
+              <td className="py-3 px-3 font-medium">15</td>
+              <td className="py-3 px-3">2,730</td>
+              <td className="py-3 px-3">~273,000</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Data poverty</span></td>
             </tr>
           </tbody>
         </table>
@@ -211,7 +211,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center font-heading font-bold text-sm">H1</span>
             <h3 className="font-heading font-semibold text-base mb-0">Relevance Anchor</h3>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Pokaži da je oglas relevantan za pretragu.</p>
+          <p className="text-base text-gray-600 mb-2">Pokaži da je oglas relevantan za pretragu.</p>
           <p className="text-xs text-gray-500 mb-1 font-semibold">Primeri:</p>
           <ul className="text-sm text-gray-700 mb-0 pl-4">
             <li>&quot;CRM Software za Timove&quot;</li>
@@ -226,7 +226,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center font-heading font-bold text-sm">H2</span>
             <h3 className="font-heading font-semibold text-base mb-0">Value Proposition</h3>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Osnovna ponuda + glavna korist.</p>
+          <p className="text-base text-gray-600 mb-2">Osnovna ponuda + glavna korist.</p>
           <p className="text-xs text-gray-500 mb-1 font-semibold">Primeri:</p>
           <ul className="text-sm text-gray-700 mb-0 pl-4">
             <li>&quot;Više Leads-ova, Manje Troškova&quot;</li>
@@ -241,7 +241,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center font-heading font-bold text-sm">H3</span>
             <h3 className="font-heading font-semibold text-base mb-0">USP / Benefit</h3>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Zašto ste različiti od konkurencije.</p>
+          <p className="text-base text-gray-600 mb-2">Zašto ste različiti od konkurencije.</p>
           <p className="text-xs text-gray-500 mb-1 font-semibold">Primeri:</p>
           <ul className="text-sm text-gray-700 mb-0 pl-4">
             <li>&quot;Rezultati za 30 Dana&quot;</li>
@@ -256,7 +256,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center font-heading font-bold text-sm">H4</span>
             <h3 className="font-heading font-semibold text-base mb-0">Social Proof</h3>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Poverenje i kredibilitet.</p>
+          <p className="text-base text-gray-600 mb-2">Poverenje i kredibilitet.</p>
           <p className="text-xs text-gray-500 mb-1 font-semibold">Primeri:</p>
           <ul className="text-sm text-gray-700 mb-0 pl-4">
             <li>&quot;500+ Zadovoljnih Klijenata&quot;</li>
@@ -271,7 +271,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center font-heading font-bold text-sm">H5</span>
             <h3 className="font-heading font-semibold text-base mb-0">Risk Removal</h3>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Uklonite barijeru za akciju.</p>
+          <p className="text-base text-gray-600 mb-2">Uklonite barijeru za akciju.</p>
           <p className="text-xs text-gray-500 mb-1 font-semibold">Primeri:</p>
           <ul className="text-sm text-gray-700 mb-0 pl-4">
             <li>&quot;Besplatan Probni Period&quot;</li>
@@ -286,7 +286,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center font-heading font-bold text-sm">H6</span>
             <h3 className="font-heading font-semibold text-base mb-0">Call-to-Action</h3>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Jasna akcija koju želite.</p>
+          <p className="text-base text-gray-600 mb-2">Jasna akcija koju želite.</p>
           <p className="text-xs text-gray-500 mb-1 font-semibold">Primeri:</p>
           <ul className="text-sm text-gray-700 mb-0 pl-4">
             <li>&quot;Zatražite Besplatan Audit&quot;</li>
@@ -301,7 +301,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center font-heading font-bold text-sm">H7</span>
             <h3 className="font-heading font-semibold text-base mb-0">Lead Angle x2 (varijabilno)</h3>
           </div>
-          <p className="text-sm text-gray-600 mb-2">
+          <p className="text-base text-gray-600 mb-2">
             Duplirajte najjači signal — koji to zavisi od temperature saobraćaja (više o tome u sledećoj sekciji).
             Za hladan saobraćaj: drugi Problem/Pain naslov. Za topao: drugi USP. Za vrući: drugi Social Proof.
           </p>
@@ -310,7 +310,7 @@ export default function RsaVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Zašto ovo radi</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Kad svaki naslov ima drugačiju ulogu, svaka kombinacija koju Google prikaže pokriva
           različite persuazijske uglove. Rezultat: oglas je relevantan za širi spektar korisnika
           i motivacija. Umesto 7 varijacija iste poruke — dobijate 7 komplementarnih poruka.
@@ -332,30 +332,30 @@ export default function RsaVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Temperatura</th>
-              <th className="py-3 px-4 font-heading font-semibold">Tip pretrage</th>
-              <th className="py-3 px-4 font-heading font-semibold">H7 treba biti</th>
-              <th className="py-3 px-4 font-heading font-semibold">CTA ton</th>
+              <th className="py-3 px-3 font-heading font-semibold">Temperatura</th>
+              <th className="py-3 px-3 font-heading font-semibold">Tip pretrage</th>
+              <th className="py-3 px-3 font-heading font-semibold">H7 treba biti</th>
+              <th className="py-3 px-3 font-heading font-semibold">CTA ton</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Hladan</td>
-              <td className="py-3 px-4">Istraživanje, edukacija</td>
-              <td className="py-3 px-4">Problem/Pain (druga varijanta)</td>
-              <td className="py-3 px-4">&quot;Saznajte Više&quot;, &quot;Pogledajte Kako&quot;</td>
+              <td className="py-3 px-3 font-medium">Hladan</td>
+              <td className="py-3 px-3">Istraživanje, edukacija</td>
+              <td className="py-3 px-3">Problem/Pain (druga varijanta)</td>
+              <td className="py-3 px-3">&quot;Saznajte Više&quot;, &quot;Pogledajte Kako&quot;</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Topao</td>
-              <td className="py-3 px-4">Poređenje, evaluacija</td>
-              <td className="py-3 px-4">USP ili Value Prop (druga varijanta)</td>
-              <td className="py-3 px-4">&quot;Uporedite Planove&quot;, &quot;Besplatan Demo&quot;</td>
+              <td className="py-3 px-3 font-medium">Topao</td>
+              <td className="py-3 px-3">Poređenje, evaluacija</td>
+              <td className="py-3 px-3">USP ili Value Prop (druga varijanta)</td>
+              <td className="py-3 px-3">&quot;Uporedite Planove&quot;, &quot;Besplatan Demo&quot;</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Vrući</td>
-              <td className="py-3 px-4">Kupovina, naručivanje</td>
-              <td className="py-3 px-4">Social Proof ili Risk Removal (druga varijanta)</td>
-              <td className="py-3 px-4">&quot;Počnite Odmah&quot;, &quot;Naručite Danas&quot;</td>
+              <td className="py-3 px-3 font-medium">Vrući</td>
+              <td className="py-3 px-3">Kupovina, naručivanje</td>
+              <td className="py-3 px-3">Social Proof ili Risk Removal (druga varijanta)</td>
+              <td className="py-3 px-3">&quot;Počnite Odmah&quot;, &quot;Naručite Danas&quot;</td>
             </tr>
           </tbody>
         </table>
@@ -369,7 +369,7 @@ export default function RsaVodicPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Praktičan primer</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Vodoinstalater ima ad grupu za &quot;odgušenje kanalizacije cena&quot; (vrući saobraćaj).
           H7 postaje drugi Social Proof: &quot;200+ Uspešnih Intervencija&quot;.
           CTA: &quot;Pozovite Odmah — Dolazimo za 30 Min&quot;. Za hladnu pretragu &quot;kako odgušiti
@@ -466,7 +466,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center font-heading font-bold text-xs">D1</span>
             <p className="font-heading font-semibold text-sm mb-0">Problem + Solution</p>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Validirajte bol korisnika i ponudite rešenje. Uključite ključnu reč — Google je bolduje.</p>
+          <p className="text-base text-gray-600 mb-2">Validirajte bol korisnika i ponudite rešenje. Uključite ključnu reč — Google je bolduje.</p>
           <p className="text-xs bg-gray-100 rounded p-2 text-gray-700 mb-0">
             &quot;Zapušena kanalizacija ugrožava vaš dom. Naš tim rešava problem istog dana sa garancijom.&quot;
           </p>
@@ -477,7 +477,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center font-heading font-bold text-xs">D2</span>
             <p className="font-heading font-semibold text-sm mb-0">Proof + CTA</p>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Izgradite poverenje konkretnim dokazom i završite sa jasnim pozivom na akciju.</p>
+          <p className="text-base text-gray-600 mb-2">Izgradite poverenje konkretnim dokazom i završite sa jasnim pozivom na akciju.</p>
           <p className="text-xs bg-gray-100 rounded p-2 text-gray-700 mb-0">
             &quot;200+ uspešnih intervencija u Beogradu. Pozovite sada — dolazimo za 30 minuta, 0-24.&quot;
           </p>
@@ -488,7 +488,7 @@ export default function RsaVodicPost() {
             <span className="flex-shrink-0 w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center font-heading font-bold text-xs">D3</span>
             <p className="font-heading font-semibold text-sm mb-0">Offer + Urgency (opciono)</p>
           </div>
-          <p className="text-sm text-gray-600 mb-2">Koristite SAMO ako postoji realan deadline. Lažna urgentnost ubija poverenje.</p>
+          <p className="text-base text-gray-600 mb-2">Koristite SAMO ako postoji realan deadline. Lažna urgentnost ubija poverenje.</p>
           <p className="text-xs bg-gray-100 rounded p-2 text-gray-700 mb-0">
             &quot;Popust 20% za sve intervencije do kraja meseca. Ograničen broj termina — zakažite danas.&quot;
           </p>
@@ -539,7 +539,7 @@ export default function RsaVodicPost() {
           </div>
           <div className="bg-green-50 px-5 py-3">
             <p className="font-heading font-semibold text-green-800 text-sm mb-1">Rešenje:</p>
-            <p className="text-green-700 text-sm mb-0">
+            <p className="text-green-700 text-base mb-0">
               Koristite 7-8 naslova. Više = data poverty. Svaki dodatni naslov smanjuje
               količinu podataka po kombinaciji, što usporava učenje algoritma.
             </p>
@@ -553,7 +553,7 @@ export default function RsaVodicPost() {
           </div>
           <div className="bg-green-50 px-5 py-3">
             <p className="font-heading font-semibold text-green-800 text-sm mb-1">Rešenje:</p>
-            <p className="text-green-700 text-sm mb-0">
+            <p className="text-green-700 text-base mb-0">
               Koristite angle-based distribution. Svaki naslov ima drugačiju ulogu:
               relevantnost, korist, dokaz, uklanjanje rizika, poziv na akciju. 7 uglova = 7 razloga da kliknu.
             </p>
@@ -567,7 +567,7 @@ export default function RsaVodicPost() {
           </div>
           <div className="bg-green-50 px-5 py-3">
             <p className="font-heading font-semibold text-green-800 text-sm mb-1">Rešenje:</p>
-            <p className="text-green-700 text-sm mb-0">
+            <p className="text-green-700 text-base mb-0">
               Opisi treba da PROŠIRE poruku. Naslov kaže &quot;500+ Zadovoljnih Klijenata&quot;, opis
               objašnjava: &quot;Pridružite se kompanijama koje su smanjile CPA za 40% u prvih 90 dana.&quot;
             </p>
@@ -581,7 +581,7 @@ export default function RsaVodicPost() {
           </div>
           <div className="bg-green-50 px-5 py-3">
             <p className="font-heading font-semibold text-green-800 text-sm mb-1">Rešenje:</p>
-            <p className="text-green-700 text-sm mb-0">
+            <p className="text-green-700 text-base mb-0">
               Pinirajte SAMO ako regulativa to zahteva. Inače, pustite Google da optimizuje.
               Pinovanje pretvara RSA u ETA — gubitе se prednosti automatske kombinacije.
             </p>
@@ -595,7 +595,7 @@ export default function RsaVodicPost() {
           </div>
           <div className="bg-green-50 px-5 py-3">
             <p className="font-heading font-semibold text-green-800 text-sm mb-1">Rešenje:</p>
-            <p className="text-green-700 text-sm mb-0">
+            <p className="text-green-700 text-base mb-0">
               Ad Strength je Googleov input signal, ne performance metrika. Ciljajte &quot;Good&quot;
               ili bolje, ali merite uspeh po CTR-u, konverzijama i CPA — ne po oceni u interfejsu.
             </p>
@@ -609,7 +609,7 @@ export default function RsaVodicPost() {
           </div>
           <div className="bg-green-50 px-5 py-3">
             <p className="font-heading font-semibold text-green-800 text-sm mb-1">Rešenje:</p>
-            <p className="text-green-700 text-sm mb-0">
+            <p className="text-green-700 text-base mb-0">
               &quot;Samo danas!&quot; koji traje celu godinu — ruši poverenje. Koristite D3 (urgency)
               SAMO kada imate realan deadline. Inače — preskočite i ostanite na 2 opisa.
             </p>
@@ -659,36 +659,36 @@ export default function RsaVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Kvadrant</th>
-              <th className="py-3 px-4 font-heading font-semibold">Impressions</th>
-              <th className="py-3 px-4 font-heading font-semibold">Performance</th>
-              <th className="py-3 px-4 font-heading font-semibold">Akcija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Kvadrant</th>
+              <th className="py-3 px-3 font-heading font-semibold">Impressions</th>
+              <th className="py-3 px-3 font-heading font-semibold">Performance</th>
+              <th className="py-3 px-3 font-heading font-semibold">Akcija</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Champions</span></td>
-              <td className="py-3 px-4">Visoke</td>
-              <td className="py-3 px-4">Visok CTR/Conv</td>
-              <td className="py-3 px-4">Zadržite i učite iz njih</td>
+              <td className="py-3 px-3 font-medium"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Champions</span></td>
+              <td className="py-3 px-3">Visoke</td>
+              <td className="py-3 px-3">Visok CTR/Conv</td>
+              <td className="py-3 px-3">Zadržite i učite iz njih</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Hidden Gems</span></td>
-              <td className="py-3 px-4">Niske</td>
-              <td className="py-3 px-4">Visok CTR/Conv</td>
-              <td className="py-3 px-4">Duplirajte angle u novom RSA-u</td>
+              <td className="py-3 px-3 font-medium"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Hidden Gems</span></td>
+              <td className="py-3 px-3">Niske</td>
+              <td className="py-3 px-3">Visok CTR/Conv</td>
+              <td className="py-3 px-3">Duplirajte angle u novom RSA-u</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Silent Killers</span></td>
-              <td className="py-3 px-4">Visoke</td>
-              <td className="py-3 px-4">Nizak CTR/Conv</td>
-              <td className="py-3 px-4">Zamenite — troše impressions bez rezultata</td>
+              <td className="py-3 px-3 font-medium"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Silent Killers</span></td>
+              <td className="py-3 px-3">Visoke</td>
+              <td className="py-3 px-3">Nizak CTR/Conv</td>
+              <td className="py-3 px-3">Zamenite — troše impressions bez rezultata</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Trash</span></td>
-              <td className="py-3 px-4">Niske</td>
-              <td className="py-3 px-4">Nizak CTR/Conv</td>
-              <td className="py-3 px-4">Uklonite i napišite nov headline</td>
+              <td className="py-3 px-3 font-medium"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Trash</span></td>
+              <td className="py-3 px-3">Niske</td>
+              <td className="py-3 px-3">Nizak CTR/Conv</td>
+              <td className="py-3 px-3">Uklonite i napišite nov headline</td>
             </tr>
           </tbody>
         </table>
@@ -710,7 +710,7 @@ export default function RsaVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Koliko dugo čekati pre analize</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Minimum 2 nedelje i 1,000+ impressions po RSA varijanti. Bez toga, podaci su nepouzdani.
           Za naloge sa manjim volumenom, čekajte 4 nedelje. Nikada ne menjajte RSA u prvih 7 dana —
           dajte Google-u vremena za learning period.
@@ -729,7 +729,7 @@ export default function RsaVodicPost() {
             Koliko RSA-ova treba imati po ad grupi?
             <span className="ml-2 text-gray-400 group-open:rotate-45 transition-transform text-lg">+</span>
           </summary>
-          <div className="px-5 pb-4 text-sm text-gray-600">
+          <div className="px-5 pb-4 text-base text-gray-600">
             Google preporučuje minimum 1 RSA po ad grupi, a optimalno 2-3. Dva RSA-a vam
             omogućavaju A/B testiranje različitih pristupa (npr. jedan fokusiran na cenu,
             drugi na kvalitet). Ne idite preko 3 — fragmentišete podatke.
@@ -741,7 +741,7 @@ export default function RsaVodicPost() {
             Da li Ad Strength &quot;Excellent&quot; garantuje bolje rezultate?
             <span className="ml-2 text-gray-400 group-open:rotate-45 transition-transform text-lg">+</span>
           </summary>
-          <div className="px-5 pb-4 text-sm text-gray-600">
+          <div className="px-5 pb-4 text-base text-gray-600">
             Ne. Ad Strength je Googleov input signal koji meri raznolikost i relevantnost
             vaših naslova — nije performance metrika. RSA sa &quot;Good&quot; Ad Strength i preciznim
             angle-based naslovima često nadmašuje &quot;Excellent&quot; RSA sa 15 generičkih naslova.
@@ -754,7 +754,7 @@ export default function RsaVodicPost() {
             Da li da koristim AI za pisanje RSA naslova?
             <span className="ml-2 text-gray-400 group-open:rotate-45 transition-transform text-lg">+</span>
           </summary>
-          <div className="px-5 pb-4 text-sm text-gray-600">
+          <div className="px-5 pb-4 text-base text-gray-600">
             Da, ali sa framework-om. 59% PPC profesionalaca već koristi LLM-ove za ad copy
             (State of PPC 2026). Problem nastaje kad AI piše bez strukture — dobijate 15
             varijacija iste poruke. Koristite angle-based slot distribution kao briф za AI:
@@ -767,7 +767,7 @@ export default function RsaVodicPost() {
             Koliko često treba menjati RSA?
             <span className="ml-2 text-gray-400 group-open:rotate-45 transition-transform text-lg">+</span>
           </summary>
-          <div className="px-5 pb-4 text-sm text-gray-600">
+          <div className="px-5 pb-4 text-base text-gray-600">
             Koristite Iteration Loop: svake 2-8 nedelja analizirajte podatke, identifikujte
             Champions i Silent Killers, i napravite novu iteraciju. Ne menjajte RSA pre nego
             što imate minimum 1,000 impressions. Česte promene resetuju learning period.
@@ -779,7 +779,7 @@ export default function RsaVodicPost() {
             Šta ako nemam dovoljno impressions za 7-8 naslova?
             <span className="ml-2 text-gray-400 group-open:rotate-45 transition-transform text-lg">+</span>
           </summary>
-          <div className="px-5 pb-4 text-sm text-gray-600">
+          <div className="px-5 pb-4 text-base text-gray-600">
             Za ad grupe sa manje od 5,000 impressions mesečno, koristite 5-6 naslova. Manje
             naslova = manje kombinacija = brže učenje. Bolje je imati 5 preciznih naslova nego
             8 od kojih su 3 slaba.
@@ -791,7 +791,7 @@ export default function RsaVodicPost() {
             Kako RSA funkcioniše sa Smart Bidding-om?
             <span className="ml-2 text-gray-400 group-open:rotate-45 transition-transform text-lg">+</span>
           </summary>
-          <div className="px-5 pb-4 text-sm text-gray-600">
+          <div className="px-5 pb-4 text-base text-gray-600">
             RSA i Smart Bidding su komplementarni. Smart Bidding (tCPA, tROAS) optimizuje
             <em>koliko</em> platite za klik, dok RSA optimizuje <em>koji</em> oglas se prikazuje.
             Prema State of PPC 2026, tROAS i tCPA su najkorišćenije i najzadovoljnije bid
@@ -804,7 +804,7 @@ export default function RsaVodicPost() {
             Da li RSA zamenjuje potrebu za A/B testiranjem?
             <span className="ml-2 text-gray-400 group-open:rotate-45 transition-transform text-lg">+</span>
           </summary>
-          <div className="px-5 pb-4 text-sm text-gray-600">
+          <div className="px-5 pb-4 text-base text-gray-600">
             Ne. RSA optimizuje kombinacije <em>unutar</em> jednog oglasa. A/B testiranje
             (Google Ads Experiments) testira <em>različite pristupe</em> — npr. RSA fokusiran
             na cenu vs RSA fokusiran na kvalitet. Oba su potrebna za kompletnu optimizaciju.

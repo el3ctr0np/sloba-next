@@ -511,7 +511,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
                 </li>
               ))}
             </ul>
-            <div className="text-sm text-gray-500 mt-6 pt-6 border-t border-gray-200">
+            <div className="text-base text-gray-500 mt-6 pt-6 border-t border-gray-200">
               <strong>
                 {locale === "en"
                   ? "I work particularly well with:"
@@ -519,7 +519,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
               </strong>{" "}
               {industries.join(", ")}.
             </div>
-            <div className="text-sm text-gray-500 mt-3 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+            <div className="text-base text-gray-500 mt-3 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
               <strong>
                 {locale === "en" ? "Note:" : "Napomena:"}
               </strong>{" "}
@@ -600,7 +600,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
                   &#9660;
                 </span>
               </summary>
-              <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+              <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.answer}
               </div>
             </details>

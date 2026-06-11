@@ -594,7 +594,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
               ))}
             </ul>
           </Card>
-          <p className="text-sm text-gray-500 mt-6">
+          <p className="text-base text-gray-500 mt-6">
             {locale === "en" ? (
               <>
                 Note: For budgets over $5,000/month and need for granular

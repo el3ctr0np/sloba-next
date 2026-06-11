@@ -527,7 +527,7 @@ export default async function RemarketingPage({ params }: Props) {
               </>
             )}
           </p>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-600 text-base leading-relaxed">
             {locale === "en" ? (
               <>
                 With proper segmentation, relevant messaging, and frequency
@@ -565,7 +565,7 @@ export default async function RemarketingPage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {reason.title}
               </h3>
-              <p className="text-gray-600 text-sm">{reason.description}</p>
+              <p className="text-gray-600 text-base">{reason.description}</p>
             </Card>
           ))}
         </div>
@@ -591,7 +591,7 @@ export default async function RemarketingPage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm">{item.description}</p>
+              <p className="text-gray-600 text-base">{item.description}</p>
             </Card>
           ))}
         </div>
@@ -644,7 +644,7 @@ export default async function RemarketingPage({ params }: Props) {
                 </li>
               ))}
             </ul>
-            <div className="text-sm text-gray-500 mt-6">
+            <div className="text-base text-gray-500 mt-6">
               {locale === "en" ? (
                 <>Especially effective for: {bestFor.join(", ")}.</>
               ) : (
@@ -675,7 +675,7 @@ export default async function RemarketingPage({ params }: Props) {
                   &#9660;
                 </span>
               </summary>
-              <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+              <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.answer}
               </div>
             </details>

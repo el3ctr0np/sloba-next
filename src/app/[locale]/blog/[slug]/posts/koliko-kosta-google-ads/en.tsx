@@ -79,7 +79,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         <li><strong>Industry</strong> — insurance and legal pay 10x more than fashion retailers</li>
         <li><strong>Geography</strong> — US cities are more expensive than UK regions; UK more than Eastern Europe</li>
       </ul>
-      <p className="text-sm text-gray-500 mt-3">
+      <p className="text-base text-gray-500 mt-3">
         Read more about the auction system in the{" "}
         <a href="https://support.google.com/google-ads/answer/1704342" target="_blank" rel="noopener noreferrer" className="underline">
           Google Ads Help Center

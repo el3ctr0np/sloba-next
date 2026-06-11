@@ -38,7 +38,7 @@ export default function RemarketingVodicPost() {
         <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
           Šta je Google Ads remarketing?
         </p>
-        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
           <strong>Google Ads remarketing</strong> je strategija ponovnog targetiranja korisnika koji su već posetili vaš sajt. Ovi korisnici konvertuju <strong>2-5x bolje</strong> od hladnog saobraćaja jer su već pokazali interes. Setup zahteva <strong>Google tag</strong> i audience liste (cart abandoners, pregledači proizvoda, postojeći kupci).
         </p>
       </div>
@@ -48,17 +48,17 @@ export default function RemarketingVodicPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto-96-posetilaca-odlazi-bez-kupovine" className="text-sm text-gray-700 hover:text-primary underline">Zašto 96% posetilaca odlazi bez kupovine</a></li>
-          <li><a href="#sta-je-remarketing-i-kako-funkcionise" className="text-sm text-gray-700 hover:text-primary underline">Šta je remarketing i kako funkcioniše</a></li>
-          <li><a href="#tipovi-remarketing-kampanja-u-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Tipovi remarketing kampanja u Google Ads</a></li>
-          <li><a href="#kako-postaviti-remarketing-korak-po-korak" className="text-sm text-gray-700 hover:text-primary underline">Kako postaviti remarketing korak po korak</a></li>
-          <li><a href="#segmentacija-kljuc-uspeha-remarketing-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Segmentacija — ključ uspeha remarketing kampanja</a></li>
-          <li><a href="#5-remarketing-strategija-koje-donose-rezultate" className="text-sm text-gray-700 hover:text-primary underline">5 remarketing strategija koje donose rezultate</a></li>
-          <li><a href="#najcesce-greske-u-remarketing-kampanjama-i-kako-ih-izbeci" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške u remarketing kampanjama i kako ih izbeći</a></li>
-          <li><a href="#koliko-budzeta-izdvojiti-za-remarketing" className="text-sm text-gray-700 hover:text-primary underline">Koliko budžeta izdvojiti za remarketing</a></li>
-          <li><a href="#cesto-postavljana-pitanja-o-remarketing-u" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja o remarketing-u</a></li>
-          <li><a href="#zakljucak-iskoristite-potencijal-posetilaca-koji-vec-dolaze" className="text-sm text-gray-700 hover:text-primary underline">Zaključak — iskoristite potencijal posetilaca koji već dolaze</a></li>
-          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+          <li><a href="#zasto-96-posetilaca-odlazi-bez-kupovine" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto 96% posetilaca odlazi bez kupovine</a></li>
+          <li><a href="#sta-je-remarketing-i-kako-funkcionise" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je remarketing i kako funkcioniše</a></li>
+          <li><a href="#tipovi-remarketing-kampanja-u-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tipovi remarketing kampanja u Google Ads</a></li>
+          <li><a href="#kako-postaviti-remarketing-korak-po-korak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako postaviti remarketing korak po korak</a></li>
+          <li><a href="#segmentacija-kljuc-uspeha-remarketing-kampanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Segmentacija — ključ uspeha remarketing kampanja</a></li>
+          <li><a href="#5-remarketing-strategija-koje-donose-rezultate" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 remarketing strategija koje donose rezultate</a></li>
+          <li><a href="#najcesce-greske-u-remarketing-kampanjama-i-kako-ih-izbeci" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešće greške u remarketing kampanjama i kako ih izbeći</a></li>
+          <li><a href="#koliko-budzeta-izdvojiti-za-remarketing" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koliko budžeta izdvojiti za remarketing</a></li>
+          <li><a href="#cesto-postavljana-pitanja-o-remarketing-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja o remarketing-u</a></li>
+          <li><a href="#zakljucak-iskoristite-potencijal-posetilaca-koji-vec-dolaze" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zaključak — iskoristite potencijal posetilaca koji već dolaze</a></li>
+          <li><a href="#povezani-vodici" className="block py-1 text-base text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
         </ol>
       </nav>
 
@@ -85,7 +85,7 @@ export default function RemarketingVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
-        <p className="text-blue-800 text-sm">
+        <p className="text-blue-800 text-base">
           Nakon skoro decenije upravljanja Google Ads nalozima u regionu i
           inostranstvu, remarketing je najisplativiji tip kampanja koji možete
           pokrenuti. CTR je 2-3 puta viši od hladnog saobraćaja, a CPA je 50-70% niži.
@@ -158,41 +158,41 @@ export default function RemarketingVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Karakteristika</th>
-              <th className="py-3 px-4 font-heading font-semibold">Remarketing</th>
-              <th className="py-3 px-4 font-heading font-semibold">Prospecting (hladna publika)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Karakteristika</th>
+              <th className="py-3 px-3 font-heading font-semibold">Remarketing</th>
+              <th className="py-3 px-3 font-heading font-semibold">Prospecting (hladna publika)</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Publika</td>
-              <td className="py-3 px-4">Već vas poznaju</td>
-              <td className="py-3 px-4">Ne znaju za vas</td>
+              <td className="py-3 px-3 font-medium">Publika</td>
+              <td className="py-3 px-3">Već vas poznaju</td>
+              <td className="py-3 px-3">Ne znaju za vas</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Namera</td>
-              <td className="py-3 px-4">Pokazali su interes</td>
-              <td className="py-3 px-4">Pretpostavljena namera</td>
+              <td className="py-3 px-3 font-medium">Namera</td>
+              <td className="py-3 px-3">Pokazali su interes</td>
+              <td className="py-3 px-3">Pretpostavljena namera</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CTR</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">2-3x viši</td>
-              <td className="py-3 px-4">Osnovni nivo</td>
+              <td className="py-3 px-3 font-medium">CTR</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">2-3x viši</td>
+              <td className="py-3 px-3">Osnovni nivo</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">CPA</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">50-70% niži</td>
-              <td className="py-3 px-4">Osnovni nivo</td>
+              <td className="py-3 px-3 font-medium">CPA</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">50-70% niži</td>
+              <td className="py-3 px-3">Osnovni nivo</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Obim</td>
-              <td className="py-3 px-4">Ograničen (vaš saobraćaj)</td>
-              <td className="py-3 px-4">Praktično neograničen</td>
+              <td className="py-3 px-3 font-medium">Obim</td>
+              <td className="py-3 px-3">Ograničen (vaš saobraćaj)</td>
+              <td className="py-3 px-3">Praktično neograničen</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Uloga</td>
-              <td className="py-3 px-4">Zatvara prodaje</td>
-              <td className="py-3 px-4">Donosi nove ljude</td>
+              <td className="py-3 px-3 font-medium">Uloga</td>
+              <td className="py-3 px-3">Zatvara prodaje</td>
+              <td className="py-3 px-3">Donosi nove ljude</td>
             </tr>
           </tbody>
         </table>
@@ -215,7 +215,7 @@ export default function RemarketingVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display remarketing</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Baneri na Google Display mreži — preko 2 miliona sajtova. Idealan kao
             prva remarketing kampanja za svaki nalog. Podseća posetioce da postojite.
           </p>
@@ -223,7 +223,7 @@ export default function RemarketingVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">RLSA (remarketing na pretrazi)</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Prilagođavate Search kampanje za ljude koji su već bili na sajtu —
             viši bidovi, šire ključne reči. Daje najbolji ROAS od svih tipova.
           </p>
@@ -231,7 +231,7 @@ export default function RemarketingVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Dinamički remarketing</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Automatski prikazuje tačne proizvode koje je posetilac gledao. Obavezan
             za eCommerce. Zahteva product feed u{" "}
             <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">
@@ -242,7 +242,7 @@ export default function RemarketingVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">YouTube remarketing</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Video oglasi za ljude koji su posetili sajt, ili targetiranje gledaoca
             YouTube kanala. Odličan za branding i izgradnju poverenja.
           </p>
@@ -251,7 +251,7 @@ export default function RemarketingVodicPost() {
       <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card my-4">
         <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #5</p>
         <h3 className="text-base font-heading font-bold mt-0 mb-2">Customer Match</h3>
-        <p className="text-sm text-gray-600 mb-0">
+        <p className="text-base text-gray-600 mb-0">
           Upload-ujete svoju email listu u Google Ads i targetirate te ljude preko
           Search-a, YouTube-a i Gmail-a. Savršen za win-back kampanje prema bivšim kupcima.
         </p>
@@ -288,7 +288,7 @@ export default function RemarketingVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Detaljan vodič</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Za kompletno uputstvo o postavljanju tagova, pogledajte{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">
             vodič za conversion tracking
@@ -323,36 +323,36 @@ export default function RemarketingVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Lista</th>
-              <th className="py-3 px-4 font-heading font-semibold">Uslov</th>
-              <th className="py-3 px-4 font-heading font-semibold">Trajanje</th>
+              <th className="py-3 px-3 font-heading font-semibold">Lista</th>
+              <th className="py-3 px-3 font-heading font-semibold">Uslov</th>
+              <th className="py-3 px-3 font-heading font-semibold">Trajanje</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Svi posetioci</td>
-              <td className="py-3 px-4">URL sadrži: /</td>
-              <td className="py-3 px-4">30 dana</td>
+              <td className="py-3 px-3 font-medium">Svi posetioci</td>
+              <td className="py-3 px-3">URL sadrži: /</td>
+              <td className="py-3 px-3">30 dana</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Gledaoci proizvoda</td>
-              <td className="py-3 px-4">URL sadrži: /products/</td>
-              <td className="py-3 px-4">14 dana</td>
+              <td className="py-3 px-3 font-medium">Gledaoci proizvoda</td>
+              <td className="py-3 px-3">URL sadrži: /products/</td>
+              <td className="py-3 px-3">14 dana</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Bez konverzije</td>
-              <td className="py-3 px-4">Svi posetioci MINUS thank-you stranica</td>
-              <td className="py-3 px-4">30 dana</td>
+              <td className="py-3 px-3 font-medium">Bez konverzije</td>
+              <td className="py-3 px-3">Svi posetioci MINUS thank-you stranica</td>
+              <td className="py-3 px-3">30 dana</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Napuštene korpe</td>
-              <td className="py-3 px-4">URL sadrži: /cart/ MINUS /thank-you/</td>
-              <td className="py-3 px-4">7 dana</td>
+              <td className="py-3 px-3 font-medium">Napuštene korpe</td>
+              <td className="py-3 px-3">URL sadrži: /cart/ MINUS /thank-you/</td>
+              <td className="py-3 px-3">7 dana</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Prethodni kupci</td>
-              <td className="py-3 px-4">URL sadrži: /thank-you/</td>
-              <td className="py-3 px-4">180 dana</td>
+              <td className="py-3 px-3 font-medium">Prethodni kupci</td>
+              <td className="py-3 px-3">URL sadrži: /thank-you/</td>
+              <td className="py-3 px-3">180 dana</td>
             </tr>
           </tbody>
         </table>
@@ -360,7 +360,7 @@ export default function RemarketingVodicPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Minimum veličina liste za aktiviranje: <strong>100 korisnika</strong> za Display,{" "}
           <strong>1.000</strong> za Search (RLSA) i YouTube.
         </p>
@@ -389,36 +389,36 @@ export default function RemarketingVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Faza</th>
-              <th className="py-3 px-4 font-heading font-semibold">Ko su</th>
-              <th className="py-3 px-4 font-heading font-semibold">Strategija</th>
-              <th className="py-3 px-4 font-heading font-semibold">Bid</th>
+              <th className="py-3 px-3 font-heading font-semibold">Faza</th>
+              <th className="py-3 px-3 font-heading font-semibold">Ko su</th>
+              <th className="py-3 px-3 font-heading font-semibold">Strategija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Bid</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Vrh levka</td>
-              <td className="py-3 px-4">Svi posetioci sajta</td>
-              <td className="py-3 px-4">Generalna svest o brendu</td>
-              <td className="py-3 px-4">Nizak</td>
+              <td className="py-3 px-3 font-medium">Vrh levka</td>
+              <td className="py-3 px-3">Svi posetioci sajta</td>
+              <td className="py-3 px-3">Generalna svest o brendu</td>
+              <td className="py-3 px-3">Nizak</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Sredina levka</td>
-              <td className="py-3 px-4">Gledali proizvod/uslugu</td>
-              <td className="py-3 px-4">Relevantna poruka + benefiti</td>
-              <td className="py-3 px-4">Srednji</td>
+              <td className="py-3 px-3 font-medium">Sredina levka</td>
+              <td className="py-3 px-3">Gledali proizvod/uslugu</td>
+              <td className="py-3 px-3">Relevantna poruka + benefiti</td>
+              <td className="py-3 px-3">Srednji</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Dno levka</td>
-              <td className="py-3 px-4">Napustili korpu / pricing</td>
-              <td className="py-3 px-4">Urgentnost + ponuda</td>
-              <td className="py-3 px-4">Visok</td>
+              <td className="py-3 px-3 font-medium">Dno levka</td>
+              <td className="py-3 px-3">Napustili korpu / pricing</td>
+              <td className="py-3 px-3">Urgentnost + ponuda</td>
+              <td className="py-3 px-3">Visok</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Posle kupovine</td>
-              <td className="py-3 px-4">Postojeći kupci</td>
-              <td className="py-3 px-4">Cross-sell, upsell</td>
-              <td className="py-3 px-4">Srednji</td>
+              <td className="py-3 px-3 font-medium">Posle kupovine</td>
+              <td className="py-3 px-3">Postojeći kupci</td>
+              <td className="py-3 px-3">Cross-sell, upsell</td>
+              <td className="py-3 px-3">Srednji</td>
             </tr>
           </tbody>
         </table>
@@ -429,36 +429,36 @@ export default function RemarketingVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Segment</th>
-              <th className="py-3 px-4 font-heading font-semibold">Period</th>
-              <th className="py-3 px-4 font-heading font-semibold">Pristup</th>
-              <th className="py-3 px-4 font-heading font-semibold">Bid</th>
+              <th className="py-3 px-3 font-heading font-semibold">Segment</th>
+              <th className="py-3 px-3 font-heading font-semibold">Period</th>
+              <th className="py-3 px-3 font-heading font-semibold">Pristup</th>
+              <th className="py-3 px-3 font-heading font-semibold">Bid</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Vrući</span></td>
-              <td className="py-3 px-4">1-3 dana</td>
-              <td className="py-3 px-4">Direktan poziv na akciju</td>
-              <td className="py-3 px-4">Najviši</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Vrući</span></td>
+              <td className="py-3 px-3">1-3 dana</td>
+              <td className="py-3 px-3">Direktan poziv na akciju</td>
+              <td className="py-3 px-3">Najviši</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Topli</span></td>
-              <td className="py-3 px-4">4-14 dana</td>
-              <td className="py-3 px-4">Podsetnik + prednosti</td>
-              <td className="py-3 px-4">Visok</td>
+              <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Topli</span></td>
+              <td className="py-3 px-3">4-14 dana</td>
+              <td className="py-3 px-3">Podsetnik + prednosti</td>
+              <td className="py-3 px-3">Visok</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Mlaki</span></td>
-              <td className="py-3 px-4">15-30 dana</td>
-              <td className="py-3 px-4">Ponovna angažovanost</td>
-              <td className="py-3 px-4">Srednji</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Mlaki</span></td>
+              <td className="py-3 px-3">15-30 dana</td>
+              <td className="py-3 px-3">Ponovna angažovanost</td>
+              <td className="py-3 px-3">Srednji</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Hladni</span></td>
-              <td className="py-3 px-4">30-90 dana</td>
-              <td className="py-3 px-4">Nova ponuda, promene</td>
-              <td className="py-3 px-4">Nizak</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Hladni</span></td>
+              <td className="py-3 px-3">30-90 dana</td>
+              <td className="py-3 px-3">Nova ponuda, promene</td>
+              <td className="py-3 px-3">Nizak</td>
             </tr>
           </tbody>
         </table>
@@ -469,36 +469,36 @@ export default function RemarketingVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Ponašanje</th>
-              <th className="py-3 px-4 font-heading font-semibold">Nivo namere</th>
-              <th className="py-3 px-4 font-heading font-semibold">Poruka</th>
+              <th className="py-3 px-3 font-heading font-semibold">Ponašanje</th>
+              <th className="py-3 px-3 font-heading font-semibold">Nivo namere</th>
+              <th className="py-3 px-3 font-heading font-semibold">Poruka</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">Samo početna stranica</td>
-              <td className="py-3 px-4">Nizak</td>
-              <td className="py-3 px-4">Generalna svest o brendu</td>
+              <td className="py-3 px-3">Samo početna stranica</td>
+              <td className="py-3 px-3">Nizak</td>
+              <td className="py-3 px-3">Generalna svest o brendu</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Pregledao kategorije</td>
-              <td className="py-3 px-4">Srednji</td>
-              <td className="py-3 px-4">Prednosti konkretne kategorije</td>
+              <td className="py-3 px-3">Pregledao kategorije</td>
+              <td className="py-3 px-3">Srednji</td>
+              <td className="py-3 px-3">Prednosti konkretne kategorije</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">Gledao proizvod</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">Visok</td>
-              <td className="py-3 px-4">Konkretni proizvod + ponuda</td>
+              <td className="py-3 px-3">Gledao proizvod</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Visok</td>
+              <td className="py-3 px-3">Konkretni proizvod + ponuda</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Napustio korpu</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">Najviši</td>
-              <td className="py-3 px-4">Urgentnost + popust</td>
+              <td className="py-3 px-3">Napustio korpu</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Najviši</td>
+              <td className="py-3 px-3">Urgentnost + popust</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">Tražio vaš brend</td>
-              <td className="py-3 px-4">Brendovska namera</td>
-              <td className="py-3 px-4">Poverenje + USP</td>
+              <td className="py-3 px-3">Tražio vaš brend</td>
+              <td className="py-3 px-3">Brendovska namera</td>
+              <td className="py-3 px-3">Poverenje + USP</td>
             </tr>
           </tbody>
         </table>
@@ -547,7 +547,7 @@ export default function RemarketingVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Vraćanje napuštenih korpi</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Najvrednija remarketing strategija za eCommerce. Oko 70% online kupovnih
           korpi biva napušteno, a remarketing može vratiti 10-15% tih kupaca.
         </p>
@@ -564,7 +564,7 @@ export default function RemarketingVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA pojačanje bidova na pretrazi</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Strategija sa najboljim ROAS-om u mojoj praksi. Na postojeće
           Search kampanje dodate remarketing listu kao &quot;Observation&quot; i
           povećate bid za 30-100% za ljude koji su već posetili sajt.
@@ -581,7 +581,7 @@ export default function RemarketingVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dinamički remarketing za online prodavnice</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Automatski prikazuje posetiocu tačne proizvode koje je gledao, sa
           aktuelnom cenom i slikom. Zahteva product feed i dynamic remarketing tag.
         </p>
@@ -597,7 +597,7 @@ export default function RemarketingVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Sekvencijalne poruke</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Umesto da prikazujete isti oglas stalno, kreirajte seriju oglasa koja
           vodi korisnika kroz odluku:
         </p>
@@ -622,7 +622,7 @@ export default function RemarketingVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Customer Match za vraćanje bivših kupaca</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Upload-ujte listu email adresa kupaca koji dugo nisu kupovali (6-12
           meseci) i targetirajte ih sa novim ponudama.
         </p>
@@ -647,7 +647,7 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Jedna lista za celu publiku</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Rešenje:</strong> Segmentirajte po ponašanju i vremenu.
               Čovek koji je napustio korpu zaslužuje drugačiju poruku od
               nekoga ko je samo pogledao početnu stranicu.
@@ -659,7 +659,7 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Bez ograničenja učestalosti prikazivanja</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Rešenje:</strong> Postavite frequency cap na 3-5 prikazivanja dnevno
               i 15-20 nedeljno. Bez toga, korisnik vidi vaš oglas 50 puta dnevno.
             </p>
@@ -670,7 +670,7 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Prikazivanje oglasa konvertovanim korisnicima</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Rešenje:</strong> Uvek isključite ljude koji su već konvertovali
               (osim za cross-sell kampanje). Nema smisla trošiti budžet na nekoga
               ko je juče kupio isti proizvod.
@@ -682,7 +682,7 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Isti oglas mesecima</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Rešenje:</strong> Osvežite kreative svakih 2-4 nedelje.
               Čak i dobar oglas postane &quot;nevidljiv&quot; nakon previše prikazivanja.
             </p>
@@ -693,7 +693,7 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Ista poruka za sve faze</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Rešenje:</strong> Prilagodite poruku segmentu — podsetnik za sveže
               posetioce, urgentnost za napuštene korpe, nova ponuda za hladnu publiku.
             </p>
@@ -704,7 +704,7 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Previše kratak period liste</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Rešenje:</strong> Lista od 7 dana je ok za napuštene korpe, ali za
               generalne posetioce koristite 30-90 dana. Za B2B i do 180 dana.
             </p>
@@ -715,7 +715,7 @@ export default function RemarketingVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Zanemarivanje privatnosti korisnika</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">
+            <p className="text-base text-green-800 mb-0">
               <strong>Rešenje:</strong> Obezbedite cookie consent banner i poštujte GDPR.
               Korisnici koji daju saglasnost su vrednija publika jer aktivno prihvataju komunikaciju.
             </p>
@@ -730,7 +730,7 @@ export default function RemarketingVodicPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Pravilo: 10-30% ukupnog Google Ads budžeta</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Tačan procenat zavisi od količine saobraćaja i veličine remarketing lista.
         </p>
       </div>
@@ -739,26 +739,26 @@ export default function RemarketingVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Mesečni saobraćaj</th>
-              <th className="py-3 px-4 font-heading font-semibold">Udeo za remarketing</th>
-              <th className="py-3 px-4 font-heading font-semibold">Očekivani efekat</th>
+              <th className="py-3 px-3 font-heading font-semibold">Mesečni saobraćaj</th>
+              <th className="py-3 px-3 font-heading font-semibold">Udeo za remarketing</th>
+              <th className="py-3 px-3 font-heading font-semibold">Očekivani efekat</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Do 5.000 poseta</td>
-              <td className="py-3 px-4">10-15%</td>
-              <td className="py-3 px-4">Osnovno pokrivanje, Display fokus</td>
+              <td className="py-3 px-3 font-medium">Do 5.000 poseta</td>
+              <td className="py-3 px-3">10-15%</td>
+              <td className="py-3 px-3">Osnovno pokrivanje, Display fokus</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">5.000 - 20.000 poseta</td>
-              <td className="py-3 px-4">15-20%</td>
-              <td className="py-3 px-4">Segmentacija + RLSA</td>
+              <td className="py-3 px-3 font-medium">5.000 - 20.000 poseta</td>
+              <td className="py-3 px-3">15-20%</td>
+              <td className="py-3 px-3">Segmentacija + RLSA</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">20.000+ poseta</td>
-              <td className="py-3 px-4">20-30%</td>
-              <td className="py-3 px-4">Puna segmentacija + dinamički remarketing</td>
+              <td className="py-3 px-3 font-medium">20.000+ poseta</td>
+              <td className="py-3 px-3">20-30%</td>
+              <td className="py-3 px-3">Puna segmentacija + dinamički remarketing</td>
             </tr>
           </tbody>
         </table>
@@ -766,7 +766,7 @@ export default function RemarketingVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Zašto remarketing zaslužuje veći deo budžeta?</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Proračun je jasan: ako vam prospecting kampanja donese CPA od 2.000 RSD,
           remarketing kampanja za iste konverzije obično donese CPA od 600-1.000 RSD.
           To znači <strong>2-3 puta više konverzija za isti novac</strong>.
@@ -785,7 +785,7 @@ export default function RemarketingVodicPost() {
             Koliko traje remarketing lista?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Možete postaviti trajanje od 1 do 540 dana. Podrazumevano je 30 dana.
             Za eCommerce, preporučujem 7 dana za napuštene korpe, 30 dana za opšte
             posetioce i 180 dana za bivše kupce.
@@ -797,7 +797,7 @@ export default function RemarketingVodicPost() {
             Koliko korisnika treba da imam na listi za početak?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum je 100 korisnika za Display kampanje i 1.000 za Search (RLSA) i
             YouTube. Ako vaš sajt ima mali saobraćaj, počnite sa Display
             remarketing-om dok lista naraste dovoljno za RLSA.
@@ -809,7 +809,7 @@ export default function RemarketingVodicPost() {
             Da li remarketing funkcioniše nakon iOS ograničenja privatnosti?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, ali sa određenim ograničenjima. First-party podaci (vaš sajt, vaš
             tag) i dalje funkcionišu pouzdano. Third-party tracking je ograničen na
             Apple uređajima. Preporučujem kombinaciju Google Ads taga, GA4
@@ -822,7 +822,7 @@ export default function RemarketingVodicPost() {
             Da li je remarketing napadan za korisnike?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Može biti — ako je loše postavljen. Tri stvari sprečavaju negativan
             utisak: frequency cap (3-5 prikazivanja dnevno), relevantne poruke
             prilagođene segmentu i redovno osvežavanje kreativa.
@@ -834,7 +834,7 @@ export default function RemarketingVodicPost() {
             Koja je razlika između remarketing-a i retargeting-a?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Praktično nikakva. Google koristi termin &quot;remarketing&quot;, Meta
             (Facebook/Instagram) koristi &quot;retargeting&quot;. Princip je
             identičan — prikazujete oglase ljudima koji su već bili u kontaktu sa
@@ -847,7 +847,7 @@ export default function RemarketingVodicPost() {
             Mogu li koristiti remarketing za B2B, ne samo za online prodavnice?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Apsolutno. B2B remarketing je izuzetno efikasan jer su prodajni ciklusi
             duži (30-90+ dana), pa je potrebno više kontaktnih tačaka pre konverzije.
             Kombinacija RLSA kampanja i Display remarketing-a sa stručnim sadržajem
@@ -869,7 +869,7 @@ export default function RemarketingVodicPost() {
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Ključne stvari iz ovog vodiča:</p>
-        <ul className="space-y-2 text-sm">
+        <ul className="space-y-2 text-base">
           <li>Remarketing kampanje imaju <strong>2-3x viši CTR</strong> i <strong>50-70% niži CPA</strong> od hladnog saobraćaja</li>
           <li>Segmentacija po ponašanju, vremenu i fazi levka pravi ogromnu razliku</li>
           <li>Izdvojite <strong>10-30% budžeta</strong> za remarketing — ROI od 300-500% je realan</li>

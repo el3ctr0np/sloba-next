@@ -40,17 +40,17 @@ export default function PerformanceMaxGuideEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#what-is-performance-max-and-why-its-special" className="text-sm text-gray-700 hover:text-primary underline">What is Performance Max and why it's special</a></li>
-          <li><a href="#when-to-use-performance-max-campaigns" className="text-sm text-gray-700 hover:text-primary underline">When to use Performance Max campaigns</a></li>
-          <li><a href="#performance-max-campaign-structure" className="text-sm text-gray-700 hover:text-primary underline">Performance Max campaign structure</a></li>
-          <li><a href="#performance-max-for-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Performance Max for eCommerce</a></li>
-          <li><a href="#performance-max-for-b2b-companies" className="text-sm text-gray-700 hover:text-primary underline">Performance Max for B2B companies</a></li>
-          <li><a href="#performance-max-optimization" className="text-sm text-gray-700 hover:text-primary underline">Performance Max optimization</a></li>
-          <li><a href="#most-common-performance-max-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most common Performance Max mistakes</a></li>
-          <li><a href="#realistic-expectations-and-results" className="text-sm text-gray-700 hover:text-primary underline">Realistic expectations and results</a></li>
-          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
-          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
-          <li><a href="#frequently-asked-questions-about-performance-max-campaigns" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Performance Max campaigns</a></li>
+          <li><a href="#what-is-performance-max-and-why-its-special" className="block py-1 text-base text-gray-700 hover:text-primary underline">What is Performance Max and why it's special</a></li>
+          <li><a href="#when-to-use-performance-max-campaigns" className="block py-1 text-base text-gray-700 hover:text-primary underline">When to use Performance Max campaigns</a></li>
+          <li><a href="#performance-max-campaign-structure" className="block py-1 text-base text-gray-700 hover:text-primary underline">Performance Max campaign structure</a></li>
+          <li><a href="#performance-max-for-ecommerce" className="block py-1 text-base text-gray-700 hover:text-primary underline">Performance Max for eCommerce</a></li>
+          <li><a href="#performance-max-for-b2b-companies" className="block py-1 text-base text-gray-700 hover:text-primary underline">Performance Max for B2B companies</a></li>
+          <li><a href="#performance-max-optimization" className="block py-1 text-base text-gray-700 hover:text-primary underline">Performance Max optimization</a></li>
+          <li><a href="#most-common-performance-max-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Most common Performance Max mistakes</a></li>
+          <li><a href="#realistic-expectations-and-results" className="block py-1 text-base text-gray-700 hover:text-primary underline">Realistic expectations and results</a></li>
+          <li><a href="#frequently-asked-questions" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#related-guides" className="block py-1 text-base text-gray-700 hover:text-primary underline">Related Guides</a></li>
+          <li><a href="#frequently-asked-questions-about-performance-max-campaigns" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions about Performance Max campaigns</a></li>
         </ol>
       </nav>
 
@@ -78,7 +78,7 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">&quot;Black box&quot; problem</p>
-        <p className="text-blue-800 text-sm mb-0">PMax doesn't give you the level of control and transparency you have with Search or Shopping campaigns. You don't see all search terms, don't know exact budget allocation per network, can't exclude most placements, don't control bidding per keyword. You get aggregated data and must trust the algorithm. My experience is PMax works best for advertisers who trust data over intuition and have patience for learning period.</p>
+        <p className="text-blue-800 text-base mb-0">PMax doesn't give you the level of control and transparency you have with Search or Shopping campaigns. You don't see all search terms, don't know exact budget allocation per network, can't exclude most placements, don't control bidding per keyword. You get aggregated data and must trust the algorithm. My experience is PMax works best for advertisers who trust data over intuition and have patience for learning period.</p>
       </div>
 
       <hr />
@@ -92,28 +92,28 @@ export default function PerformanceMaxGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> When YES</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Proven conversion history</h3>
-          <p className="text-sm text-gray-600 mb-0">You have minimum 30–50 conversions monthly. Algorithm learns from your data — it needs data to optimize. Without conversion history, PMax shoots randomly.</p>
+          <p className="text-base text-gray-600 mb-0">You have minimum 30–50 conversions monthly. Algorithm learns from your data — it needs data to optimize. Without conversion history, PMax shoots randomly.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><CheckCircle size={14} strokeWidth={1.5} className="text-green-600" /> When YES</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Want to scale reach</h3>
-          <p className="text-sm text-gray-600 mb-0">You've hit ceiling with Search or Shopping campaigns and want to reach users on YouTube, Display, Discover. PMax is a scaling tool, not a launch-from-zero tool.</p>
+          <p className="text-base text-gray-600 mb-0">You've hit ceiling with Search or Shopping campaigns and want to reach users on YouTube, Display, Discover. PMax is a scaling tool, not a launch-from-zero tool.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> When NO</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Small budget</h3>
-          <p className="text-sm text-gray-600 mb-0">Below $1,500–2,000 monthly. Algorithm doesn't have enough budget to test and learn across 7 networks. Result is often suboptimal.</p>
+          <p className="text-base text-gray-600 mb-0">Below $1,500–2,000 monthly. Algorithm doesn't have enough budget to test and learn across 7 networks. Result is often suboptimal.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> When NO</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Need granular control</h3>
-          <p className="text-sm text-gray-600 mb-0">If you need strict cost control per product, brand vs non-brand budget allocation, or bid per keyword — PMax isn't right tool. Use Search or Standard Shopping.</p>
+          <p className="text-base text-gray-600 mb-0">If you need strict cost control per product, brand vs non-brand budget allocation, or bid per keyword — PMax isn't right tool. Use Search or Standard Shopping.</p>
         </div>
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">Conversion tracking must be 100% accurate before launching PMax. Bad data = bad algorithm decisions. If you don't have reliable tracking, fix that first. I recommend reading <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">conversion tracking guide</Link> before launching PMax.</p>
+        <p className="text-yellow-800 text-base mb-0">Conversion tracking must be 100% accurate before launching PMax. Bad data = bad algorithm decisions. If you don't have reliable tracking, fix that first. I recommend reading <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">conversion tracking guide</Link> before launching PMax.</p>
       </div>
 
       <hr />
@@ -164,30 +164,30 @@ export default function PerformanceMaxGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Business type</th>
-              <th className="py-3 px-4 font-heading font-semibold">Recommended number of asset groups</th>
+              <th className="py-3 px-3 font-heading font-semibold">Business type</th>
+              <th className="py-3 px-3 font-heading font-semibold">Recommended number of asset groups</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce (small)</td>
-              <td className="py-3 px-4">2–4</td>
+              <td className="py-3 px-3 font-medium">eCommerce (small)</td>
+              <td className="py-3 px-3">2–4</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">eCommerce (medium)</td>
-              <td className="py-3 px-4">4–8</td>
+              <td className="py-3 px-3">eCommerce (medium)</td>
+              <td className="py-3 px-3">4–8</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce (large)</td>
-              <td className="py-3 px-4">8–15+</td>
+              <td className="py-3 px-3 font-medium">eCommerce (large)</td>
+              <td className="py-3 px-3">8–15+</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">B2B (single service)</td>
-              <td className="py-3 px-4">1–2</td>
+              <td className="py-3 px-3">B2B (single service)</td>
+              <td className="py-3 px-3">1–2</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">B2B (multiple services)</td>
-              <td className="py-3 px-4">3–6</td>
+              <td className="py-3 px-3 font-medium">B2B (multiple services)</td>
+              <td className="py-3 px-3">3–6</td>
             </tr>
           </tbody>
         </table>
@@ -195,7 +195,7 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Thematic consistency rule</p>
-        <p className="text-sm text-yellow-900 mb-0">Each asset group should be thematically consistent — products, message, landing page, and audience signals should align. One asset group = one consistent message-to-market match. Don't mix men's shoes with women's bags in same asset group.</p>
+        <p className="text-base text-yellow-900 mb-0">Each asset group should be thematically consistent — products, message, landing page, and audience signals should align. One asset group = one consistent message-to-market match. Don't mix men's shoes with women's bags in same asset group.</p>
       </div>
 
       <hr />
@@ -210,7 +210,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Optimize product feed titles</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Title is most important field in feed. Include key attributes: brand, product type, color, material, size. Algorithm uses title for matching with search queries.</p>
+        <p className="text-base text-gray-600 mb-3">Title is most important field in feed. Include key attributes: brand, product type, color, material, size. Algorithm uses title for matching with search queries.</p>
         <ul className="text-sm">
           <li><strong>Bad:</strong> &quot;Nike shoes black&quot;</li>
           <li><strong>Good:</strong> &quot;Nike Air Max 270 Men's Running Shoes Black Size 10&quot;</li>
@@ -222,7 +222,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Add custom labels for segmentation</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Custom label 0–4 are your free fields for product grouping. I recommend segmentation by profitability and performance.</p>
+        <p className="text-base text-gray-600 mb-3">Custom label 0–4 are your free fields for product grouping. I recommend segmentation by profitability and performance.</p>
         <ul className="text-sm">
           <li><strong>Custom Label 0:</strong> Margin (high / medium / low)</li>
           <li><strong>Custom Label 1:</strong> Performance (best_seller / slow_mover / new)</li>
@@ -236,7 +236,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Segment asset groups by product category</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Don&apos;t put all products in one asset group. Segment by Product Type or Custom Label so you can use different creatives and messaging for different categories.</p>
+        <p className="text-base text-gray-600 mb-3">Don&apos;t put all products in one asset group. Segment by Product Type or Custom Label so you can use different creatives and messaging for different categories.</p>
         <ul className="text-sm">
           <li><strong>Example (Fashion eCommerce):</strong> AG 1 = Best Sellers, AG 2 = Men&apos;s Footwear, AG 3 = Women&apos;s Footwear, AG 4 = Accessories, AG 5 = Sale Items</li>
         </ul>
@@ -246,31 +246,31 @@ export default function PerformanceMaxGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspect</th>
-              <th className="py-3 px-4 font-heading font-semibold">Standard Shopping</th>
-              <th className="py-3 px-4 font-heading font-semibold">Performance Max</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspect</th>
+              <th className="py-3 px-3 font-heading font-semibold">Standard Shopping</th>
+              <th className="py-3 px-3 font-heading font-semibold">Performance Max</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Control</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">High</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Low</span></td>
+              <td className="py-3 px-3 font-medium">Control</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">High</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Low</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Reach</td>
-              <td className="py-3 px-4">Shopping only</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">All networks</span></td>
+              <td className="py-3 px-3">Reach</td>
+              <td className="py-3 px-3">Shopping only</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">All networks</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Search Terms</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Full visibility</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Partial</span></td>
+              <td className="py-3 px-3 font-medium">Search Terms</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Full visibility</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Partial</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Learning period</td>
-              <td className="py-3 px-4">Faster (1–2 weeks)</td>
-              <td className="py-3 px-4">Slower (4–6 weeks)</td>
+              <td className="py-3 px-3 font-medium">Learning period</td>
+              <td className="py-3 px-3">Faster (1–2 weeks)</td>
+              <td className="py-3 px-3">Slower (4–6 weeks)</td>
             </tr>
           </tbody>
         </table>
@@ -278,7 +278,7 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">My recommendation: Hybrid approach</p>
-        <p className="text-blue-800 text-sm mb-0">Start with Standard Shopping campaigns for control and learning. Add PMax when you have stable conversion history (50+ conversions/month). Best results come from combination: Standard Shopping for brand and control, PMax for prospecting and scaling. For margin-conscious eCommerce, track <GlossaryLink slug="poas">POAS</GlossaryLink> alongside ROAS to ensure real profitability.</p>
+        <p className="text-blue-800 text-base mb-0">Start with Standard Shopping campaigns for control and learning. Add PMax when you have stable conversion history (50+ conversions/month). Best results come from combination: Standard Shopping for brand and control, PMax for prospecting and scaling. For margin-conscious eCommerce, track <GlossaryLink slug="poas">POAS</GlossaryLink> alongside ROAS to ensure real profitability.</p>
       </div>
 
       <hr />
@@ -299,7 +299,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Offline conversion import</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">PMax optimizes toward what you tell it is conversion. If you optimize only toward form fills, you'll get volume of form fills — but not necessarily quality ones. Solution: import SQL (Sales Qualified Lead) or Won deals back to Google Ads.</p>
+        <p className="text-base text-gray-600 mb-3">PMax optimizes toward what you tell it is conversion. If you optimize only toward form fills, you'll get volume of form fills — but not necessarily quality ones. Solution: import SQL (Sales Qualified Lead) or Won deals back to Google Ads.</p>
         <ul className="text-sm">
           <li>GCLID mapping with CRM</li>
           <li>Import &quot;Won Deal&quot; conversion from CRM (Pipedrive, HubSpot, Salesforce)</li>
@@ -312,7 +312,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Audience signals are critical for B2B</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">For B2B, audience signals matter more than for eCommerce. During the first month of the learning period, PMax will lean on your signals before broadening its reach.</p>
+        <p className="text-base text-gray-600 mb-3">For B2B, audience signals matter more than for eCommerce. During the first month of the learning period, PMax will lean on your signals before broadening its reach.</p>
         <ul className="text-sm">
           <li><strong>Customer Match lists</strong> — existing clients (email lists from your CRM)</li>
           <li><strong>Website visitors</strong> — users who visited high-intent pages (pricing, case studies)</li>
@@ -326,7 +326,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Account-level negative keywords</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">PMax only allows account-level negative keywords. Use them aggressively to filter out low-quality queries.</p>
+        <p className="text-base text-gray-600 mb-3">PMax only allows account-level negative keywords. Use them aggressively to filter out low-quality queries.</p>
         <ul className="text-sm">
           <li><strong>Job-related:</strong> &quot;jobs&quot;, &quot;careers&quot;, &quot;salary&quot;, &quot;job listings&quot;</li>
           <li><strong>Student terms:</strong> &quot;essay&quot;, &quot;dissertation&quot;, &quot;coursework&quot;, &quot;assignment&quot;</li>
@@ -348,7 +348,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Asset quality and diversity</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Google combines your assets into different formats. More quality variants you provide, better algorithm can optimize.</p>
+        <p className="text-base text-gray-600 mb-3">Google combines your assets into different formats. More quality variants you provide, better algorithm can optimize.</p>
         <ul className="text-sm">
           <li>Regularly refresh creative (minimum every 2–3 months)</li>
           <li>A/B test different messages in headlines</li>
@@ -362,7 +362,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Audience signals refinement</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Audience signals aren't strict targeting, but help algorithm learn faster. Better signals, faster learning.</p>
+        <p className="text-base text-gray-600 mb-3">Audience signals aren't strict targeting, but help algorithm learn faster. Better signals, faster learning.</p>
         <ul className="text-sm">
           <li>Add audience signals (Custom Audiences, Customer Match, Affinity)</li>
           <li>From Insights tab see which audience segments perform</li>
@@ -375,7 +375,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Product feed optimization (eCommerce)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">For eCommerce PMax, the feed is half the battle. The algorithm uses feed data for matching search queries to your products.</p>
+        <p className="text-base text-gray-600 mb-3">For eCommerce PMax, the feed is half the battle. The algorithm uses feed data for matching search queries to your products.</p>
         <ul className="text-sm">
           <li>Title optimization (brand + type + attributes)</li>
           <li>Custom label strategy (margin, season, performance tier)</li>
@@ -388,7 +388,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bid strategy and target value</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">You can adjust your Target CPA or <GlossaryLink slug="troas">Target ROAS</GlossaryLink> as you see results. Tracking <GlossaryLink slug="conversion-value">conversion value</GlossaryLink> accurately is essential for tROAS to work correctly. I recommend making incremental changes only.</p>
+        <p className="text-base text-gray-600 mb-3">You can adjust your Target CPA or <GlossaryLink slug="troas">Target ROAS</GlossaryLink> as you see results. Tracking <GlossaryLink slug="conversion-value">conversion value</GlossaryLink> accurately is essential for tROAS to work correctly. I recommend making incremental changes only.</p>
         <ul className="text-sm">
           <li>Never change your target by more than 10–20% at once</li>
           <li>Wait a minimum of 7–10 days before making the next adjustment</li>
@@ -401,7 +401,7 @@ export default function PerformanceMaxGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">URL Expansion setting</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">URL Expansion allows Google to automatically send traffic to other pages on your site, not just the Final URL in your asset group. My recommendation: OFF for most businesses.</p>
+        <p className="text-base text-gray-600 mb-3">URL Expansion allows Google to automatically send traffic to other pages on your site, not just the Final URL in your asset group. My recommendation: OFF for most businesses.</p>
         <ul className="text-sm">
           <li>With OFF: you control where traffic lands</li>
           <li>With ON: Google may send visitors to pages you don&apos;t want promoted (blog posts, old promos, about page)</li>
@@ -412,22 +412,22 @@ export default function PerformanceMaxGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Bid strategy</th>
-              <th className="py-3 px-4 font-heading font-semibold">When to use it</th>
+              <th className="py-3 px-3 font-heading font-semibold">Bid strategy</th>
+              <th className="py-3 px-3 font-heading font-semibold">When to use it</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Maximize Conversions</td>
-              <td className="py-3 px-4">For the start while collecting data. No target set — just maximises conversions within your budget.</td>
+              <td className="py-3 px-3 font-medium">Maximize Conversions</td>
+              <td className="py-3 px-3">For the start while collecting data. No target set — just maximises conversions within your budget.</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Target CPA</td>
-              <td className="py-3 px-4">When you know what you can pay per conversion (lead, call). Set a realistic CPA based on historical results.</td>
+              <td className="py-3 px-3">Target CPA</td>
+              <td className="py-3 px-3">When you know what you can pay per conversion (lead, call). Set a realistic CPA based on historical results.</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Target ROAS</td>
-              <td className="py-3 px-4">For eCommerce with variable order values. Requires Conversion Value tracking setup.</td>
+              <td className="py-3 px-3 font-medium">Target ROAS</td>
+              <td className="py-3 px-3">For eCommerce with variable order values. Requires Conversion Value tracking setup.</td>
             </tr>
           </tbody>
         </table>
@@ -467,7 +467,7 @@ export default function PerformanceMaxGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #1</p>
           <p className="font-semibold mb-2">Launching without sufficient conversion data</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> First build conversion history with Search or Shopping campaigns. Minimum 30 conversions monthly before launching PMax. Otherwise, algorithm shoots randomly.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> First build conversion history with Search or Shopping campaigns. Minimum 30 conversions monthly before launching PMax. Otherwise, algorithm shoots randomly.</p>
           </div>
         </div>
 
@@ -475,7 +475,7 @@ export default function PerformanceMaxGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
           <p className="font-semibold mb-2">One asset set for all categories</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Segment asset groups by relevance. Different product categories = different asset groups with custom creative. Generic assets = generic results.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Segment asset groups by relevance. Different product categories = different asset groups with custom creative. Generic assets = generic results.</p>
           </div>
         </div>
 
@@ -483,7 +483,7 @@ export default function PerformanceMaxGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
           <p className="font-semibold mb-2">Ignoring audience signals</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Audience signals aren't targeting, but help algorithm learn faster. Add Customer Match lists, website visitors, in-market audiences. Better signals, faster learning. I recommend minimum 3–5 different audience signals per asset group.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Audience signals aren't targeting, but help algorithm learn faster. Add Customer Match lists, website visitors, in-market audiences. Better signals, faster learning. I recommend minimum 3–5 different audience signals per asset group.</p>
           </div>
         </div>
 
@@ -491,7 +491,7 @@ export default function PerformanceMaxGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #4</p>
           <p className="font-semibold mb-2">&quot;Set it and forget it&quot; mentality</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> PMax requires less daily work than Search campaigns, but not zero. Weekly checks are the minimum: performance metrics, asset ratings, audience insights, placement reports. Refresh creative monthly and review search terms insights.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> PMax requires less daily work than Search campaigns, but not zero. Weekly checks are the minimum: performance metrics, asset ratings, audience insights, placement reports. Refresh creative monthly and review search terms insights.</p>
           </div>
         </div>
 
@@ -499,7 +499,7 @@ export default function PerformanceMaxGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
           <p className="font-semibold mb-2">Poor or unreliable conversion tracking</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> If you&apos;re tracking the wrong conversions (e.g. &quot;button click&quot; instead of an actual purchase) or haven&apos;t set up conversion values, PMax will optimise toward the wrong goal. Fix your tracking first: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking guide</Link>.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> If you&apos;re tracking the wrong conversions (e.g. &quot;button click&quot; instead of an actual purchase) or haven&apos;t set up conversion values, PMax will optimise toward the wrong goal. Fix your tracking first: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking guide</Link>.</p>
           </div>
         </div>
       </div>
@@ -515,36 +515,36 @@ export default function PerformanceMaxGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metric</th>
-              <th className="py-3 px-4 font-heading font-semibold">eCommerce</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B Lead Gen</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metric</th>
+              <th className="py-3 px-3 font-heading font-semibold">eCommerce</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B Lead Gen</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">ROAS / CPL</td>
-              <td className="py-3 px-4">3–6x ROAS (optimized campaigns)</td>
-              <td className="py-3 px-4">Variable — often higher CPL than Search</td>
+              <td className="py-3 px-3 font-medium">ROAS / CPL</td>
+              <td className="py-3 px-3">3–6x ROAS (optimized campaigns)</td>
+              <td className="py-3 px-3">Variable — often higher CPL than Search</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Volume increase</td>
-              <td className="py-3 px-4">20–40% revenue increase vs Search/Shopping only</td>
-              <td className="py-3 px-4">Volume significantly grows, but lead quality varies</td>
+              <td className="py-3 px-3">Volume increase</td>
+              <td className="py-3 px-3">20–40% revenue increase vs Search/Shopping only</td>
+              <td className="py-3 px-3">Volume significantly grows, but lead quality varies</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Learning period</td>
-              <td className="py-3 px-4">4–6 weeks</td>
-              <td className="py-3 px-4">6–8 weeks (longer sales cycle)</td>
+              <td className="py-3 px-3 font-medium">Learning period</td>
+              <td className="py-3 px-3">4–6 weeks</td>
+              <td className="py-3 px-3">6–8 weeks (longer sales cycle)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Minimum conversions</td>
-              <td className="py-3 px-4">50+ monthly ideal</td>
-              <td className="py-3 px-4">15–20 monthly minimum</td>
+              <td className="py-3 px-3">Minimum conversions</td>
+              <td className="py-3 px-3">50+ monthly ideal</td>
+              <td className="py-3 px-3">15–20 monthly minimum</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Minimum budget</td>
-              <td className="py-3 px-4">$2,000+ monthly</td>
-              <td className="py-3 px-4">$1,500+ monthly</td>
+              <td className="py-3 px-3 font-medium">Minimum budget</td>
+              <td className="py-3 px-3">$2,000+ monthly</td>
+              <td className="py-3 px-3">$1,500+ monthly</td>
             </tr>
           </tbody>
         </table>
@@ -574,7 +574,7 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Rule: When to quit PMax</p>
-        <p className="text-sm text-yellow-900 mb-0">If after 8–10 weeks and 100+ conversions results are consistently below target (ROAS below target, CPA above acceptable, lead quality unacceptable) and you see no improvement trend — maybe PMax isn't for your business right now. Return to basics: Search or Shopping campaigns with more control.</p>
+        <p className="text-base text-yellow-900 mb-0">If after 8–10 weeks and 100+ conversions results are consistently below target (ROAS below target, CPA above acceptable, lead quality unacceptable) and you see no improvement trend — maybe PMax isn't for your business right now. Return to basics: Search or Shopping campaigns with more control.</p>
       </div>
 
       <hr />
@@ -587,7 +587,7 @@ export default function PerformanceMaxGuideEN() {
             Does Performance Max replace Shopping campaigns?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Not necessarily. Many advertisers use both formats — Standard Shopping for brand and control, PMax for prospecting and scaling. Google actively pushes PMax, but Shopping campaigns still work excellently. My recommendation: hybrid approach. Don't close Shopping campaigns if performing well, add PMax as additional channel.
           </div>
         </details>
@@ -597,7 +597,7 @@ export default function PerformanceMaxGuideEN() {
             What budget is needed for Performance Max?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum $60–120 daily ($2,000–3,500 monthly) for meaningful results. Below that, algorithm doesn't have enough budget to test 7 different networks and collect sufficient data for optimization. For B2B with lower conversion volume, can work with $40–60 daily, but learning will be slower.
           </div>
         </details>
@@ -607,7 +607,7 @@ export default function PerformanceMaxGuideEN() {
             Why don't I see all search terms in PMax campaigns?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google limits search terms insights for PMax. You only see aggregated categories and top terms, not everything like in Search campaigns. This is legitimate PMax criticism — transparency is lost. Reason is PMax works across multiple networks simultaneously and Google doesn't want to show complete data stream. Solution: use Insights tab and look at trends, not individual terms.
           </div>
         </details>
@@ -617,7 +617,7 @@ export default function PerformanceMaxGuideEN() {
             Does PMax cannibalize my other campaigns?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             It can. PMax has priority for Shopping queries — meaning it will take impressions away from Standard Shopping campaigns for the same products. That&apos;s not necessarily a bad thing if PMax performs better. Monitor account-level totals, not just PMax in isolation. If overall ROAS or conversions are growing, cannibalization isn&apos;t a problem. If they&apos;re falling, reconsider your strategy — you may want to exclude certain products from PMax or adjust your bidding.
           </div>
         </details>
@@ -627,7 +627,7 @@ export default function PerformanceMaxGuideEN() {
             When should I turn off Performance Max?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             When it consistently underperforms vs your targets after 8+ weeks (enough time for learning), when lead quality is unacceptable and doesn&apos;t improve despite offline conversion import, or when it simply doesn&apos;t fit your business model (e.g. you need strict per-product budget control). PMax isn&apos;t for everyone — and that&apos;s fine. Some businesses perform better with a Search + Shopping + Remarketing combination. <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}>Remarketing guide</Link>.
           </div>
         </details>
@@ -681,7 +681,7 @@ export default function PerformanceMaxGuideEN() {
             Does Performance Max replace Search and Shopping campaigns?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Not entirely. PMax can run alongside Search and Shopping. Google recommends a combination — PMax for broad coverage, Search for high-intent queries. Shopping with PMax requires careful asset group structure to avoid cannibalization.
           </div>
         </details>
@@ -691,7 +691,7 @@ export default function PerformanceMaxGuideEN() {
             What budget do I need for Performance Max?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum $30-50/day ($900-1,500/month). PMax uses machine learning that requires sufficient data — below this budget the algorithm doesn&apos;t have enough conversions for optimization. For eCommerce with 100+ products, $2,000+/month is recommended.
           </div>
         </details>
@@ -701,7 +701,7 @@ export default function PerformanceMaxGuideEN() {
             Why is PMax spending most of my budget on Display/YouTube?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Common PMax problem. Solutions: disable URL expansion, add negative keywords (through Google support), create stronger Search campaigns for the same keywords. PMax will spend where it&apos;s cheapest, not necessarily most effective.
           </div>
         </details>
@@ -711,7 +711,7 @@ export default function PerformanceMaxGuideEN() {
             How can I see where PMax shows my ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Insights tab → Placement report (limited), Asset group performance. For more detail: use URL-based conversion tracking or GA4 to see which channels drive conversions. Google intentionally limits PMax transparency.
           </div>
         </details>
@@ -721,7 +721,7 @@ export default function PerformanceMaxGuideEN() {
             When should I NOT use Performance Max?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             When you have a small budget (under $500/month), no conversion tracking, for pure brand awareness, or when you need precise keyword control. PMax is automated — if you want full control, Search and Shopping are better choices.
           </div>
         </details>

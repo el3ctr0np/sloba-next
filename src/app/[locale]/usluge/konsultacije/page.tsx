@@ -510,7 +510,7 @@ export default async function KonsultacijePage({ params }: Props) {
               </>
             )}
           </p>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-600 text-base leading-relaxed">
             {locale === "en"
               ? "I work with marketing managers, in-house PPC specialists, agency owners, and company founders who want independent assessment, strategic advice, or technical help — without commitment to long-term collaboration."
               : "Radim sa marketing managerima, in-house PPC specijalistima, agency owners-ima i osnivačima kompanija koji žele nezavisnu procenu, strateški savet ili tehničku pomoć — bez obaveze na dugotrajnu saradnju."}
@@ -538,7 +538,7 @@ export default async function KonsultacijePage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {reason.title}
               </h3>
-              <p className="text-gray-600 text-sm">{reason.description}</p>
+              <p className="text-gray-600 text-base">{reason.description}</p>
             </Card>
           ))}
         </div>
@@ -564,7 +564,7 @@ export default async function KonsultacijePage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {topic.title}
               </h3>
-              <p className="text-gray-600 text-sm">{topic.description}</p>
+              <p className="text-gray-600 text-base">{topic.description}</p>
             </Card>
           ))}
         </div>
@@ -599,7 +599,7 @@ export default async function KonsultacijePage({ params }: Props) {
             <p className="text-2xl font-heading font-bold text-primary mb-3">
               €80<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "hr" : "sat"}</span>
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "Campaign review, strategic questions, training session, or second opinion. Ideal for approach validation and quick problem diagnostics."
                 : "Pregled kampanja, strategijska pitanja, training sesija ili second opinion. Idealno za validaciju pristupa i brzu dijagnostiku problema."}
@@ -648,7 +648,7 @@ export default async function KonsultacijePage({ params }: Props) {
             <p className="text-2xl font-heading font-bold text-primary mb-3">
               €150<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "2 hours" : "2 sata"}</span>
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "Detailed account review, complex strategy discussion, or team training. For situations requiring deeper analysis and more time."
                 : "Detaljan account review, kompleksna diskusija o strategiji ili team training. Za situacije kada treba dublja analiza i više vremena."}
@@ -775,7 +775,7 @@ export default async function KonsultacijePage({ params }: Props) {
                   <h3 className="font-heading font-semibold text-lg mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
+                  <p className="text-gray-600 text-base">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -804,7 +804,7 @@ export default async function KonsultacijePage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {audience.title}
               </h3>
-              <p className="text-gray-600 text-sm">{audience.description}</p>
+              <p className="text-gray-600 text-base">{audience.description}</p>
             </Card>
           ))}
         </div>
@@ -832,7 +832,7 @@ export default async function KonsultacijePage({ params }: Props) {
                   &#9660;
                 </span>
               </summary>
-              <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+              <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.answer}
               </div>
             </details>

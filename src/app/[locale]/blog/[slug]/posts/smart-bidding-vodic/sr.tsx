@@ -79,51 +79,51 @@ export default function SmartBiddingVodicSR() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Kategorija signala</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Primeri</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Uticaj</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Kategorija signala</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Primeri</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Uticaj</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Uređaj</td>
-              <td className="py-3 px-4 border-b border-gray-200">Desktop, mobile, tablet, tip browsera</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Uređaj</td>
+              <td className="py-3 px-3 border-b border-gray-200">Desktop, mobile, tablet, tip browsera</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Lokacija</td>
-              <td className="py-3 px-4 border-b border-gray-200">Fizička lokacija, IP, jezik, lokalni trendovi</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Lokacija</td>
+              <td className="py-3 px-3 border-b border-gray-200">Fizička lokacija, IP, jezik, lokalni trendovi</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Vreme</td>
-              <td className="py-3 px-4 border-b border-gray-200">Dan u nedelji, doba dana, sezona</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-orange-600 font-semibold">Srednji</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Vreme</td>
+              <td className="py-3 px-3 border-b border-gray-200">Dan u nedelji, doba dana, sezona</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-orange-600 font-semibold">Srednji</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Publika</td>
-              <td className="py-3 px-4 border-b border-gray-200">Remarketing liste, custom intent, demografija</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Publika</td>
+              <td className="py-3 px-3 border-b border-gray-200">Remarketing liste, custom intent, demografija</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Pretraga</td>
-              <td className="py-3 px-4 border-b border-gray-200">Upit, match type, istorija pretrage korisnika</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Pretraga</td>
+              <td className="py-3 px-3 border-b border-gray-200">Upit, match type, istorija pretrage korisnika</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Browser / OS</td>
-              <td className="py-3 px-4 border-b border-gray-200">Chrome, Safari, Firefox, iOS vs Android</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-gray-500">Nizak</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Browser / OS</td>
+              <td className="py-3 px-3 border-b border-gray-200">Chrome, Safari, Firefox, iOS vs Android</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-gray-500">Nizak</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Kontekst sajta</td>
-              <td className="py-3 px-4 border-b border-gray-200">Tema stranice na kojoj se oglas prikazuje (Display)</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-orange-600 font-semibold">Srednji</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Kontekst sajta</td>
+              <td className="py-3 px-3 border-b border-gray-200">Tema stranice na kojoj se oglas prikazuje (Display)</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-orange-600 font-semibold">Srednji</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Aktivnost u listi</td>
-              <td className="py-3 px-4 border-b border-gray-200">Prethodni poseti, interakcije sa vašim sajtom</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Aktivnost u listi</td>
+              <td className="py-3 px-3 border-b border-gray-200">Prethodni poseti, interakcije sa vašim sajtom</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">Visok</td>
             </tr>
           </tbody>
         </table>
@@ -139,7 +139,7 @@ export default function SmartBiddingVodicSR() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-semibold text-yellow-900 text-sm mb-1">Važno razumeti: "Smart Bidding" vs "Automated Bidding"</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Sve Smart Bidding strategije su automatizovane, ali nisu sve automatizovane strategije Smart Bidding.
           Maximize Clicks i Target Impression Share su automatizovane, ali ne koriste conversion signals —
           pa nisu deo Smart Bidding grupe. Pravi Smart Bidding su: Maximize Conversions, Maximize Conversion Value,
@@ -163,7 +163,7 @@ export default function SmartBiddingVodicSR() {
             <span className="flex-shrink-0 w-9 h-9 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Maximize Conversions</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 Troši ceo budžet da bi ostvario što više konverzija, bez cenovnog cilja. Algoritam
                 slobodno licitira — može platiti visok CPA ako smatra da će doći do konverzije.
               </p>
@@ -196,7 +196,7 @@ export default function SmartBiddingVodicSR() {
             <span className="flex-shrink-0 w-9 h-9 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Maximize Conversion Value</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 Troši ceo budžet da bi ostvario što veću ukupnu vrednost konverzija. Razlika od Maximize
                 Conversions: ovde algoritam preferira skuplje konverzije, a ne više konverzija. Zahteva
                 praćenje vrednosti konverzija (obavezno za eCommerce).
@@ -229,7 +229,7 @@ export default function SmartBiddingVodicSR() {
             <span className="flex-shrink-0 w-9 h-9 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Target CPA (tCPA)</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 Algoritam pokušava da ostvari konverzije po zadatom prosečnom CPA cilju. Neke konverzije
                 će koštati više, neke manje — ali prosek treba da bude oko zadatog cilja. Realna strategija
                 za zrele Lead Gen naloge.
@@ -263,7 +263,7 @@ export default function SmartBiddingVodicSR() {
             <span className="flex-shrink-0 w-9 h-9 bg-yellow-500 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Target ROAS (tROAS)</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 Algoritam optimizuje ka zadatom prinosu od ad spenda (prihod ÷ trošak oglasa × 100%).
                 Najmoćnija strategija za zrele eCommerce naloge — ali i najzahtevnija po pitanju data
                 kvaliteta. Tipično se uvodi od meseca 4 napred kada su podaci stabilni.
@@ -297,7 +297,7 @@ export default function SmartBiddingVodicSR() {
             <span className="flex-shrink-0 w-9 h-9 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Maximize Clicks</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 Automatizovana (ali ne Smart Bidding) strategija — troši budžet za što više klikova.
                 Ne koristi conversion signals. Korisna za brand awareness i keyword istraživanje,
                 ali bez optimizacije ka ciljevima biznisa.
@@ -329,7 +329,7 @@ export default function SmartBiddingVodicSR() {
             <span className="flex-shrink-0 w-9 h-9 bg-gray-700 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Manual CPC (+ Enhanced CPC)</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 Vi zadajete licitaciju za svaku ključnu reč. Enhanced CPC je hibrid — vi zadajete base bid,
                 ali Google može povećati do 30% za aukcije sa višom verovatnoćom konverzije. Manual CPC
                 je relevantan za specifične situacije, ali za 95% naloga postoje bolje opcije.
@@ -437,36 +437,36 @@ export default function SmartBiddingVodicSR() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Strategija</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Google preporuka</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Realni minimum</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Napomena</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Strategija</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Google preporuka</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Realni minimum</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Napomena</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Maximize Conversions</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Bez min.</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200 text-green-700 font-semibold">0+ (odmah)</td>
-              <td className="py-3 px-4 border-b border-gray-200">Idealno za nove naloge</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Maximize Conversions</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Bez min.</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200 text-green-700 font-semibold">0+ (odmah)</td>
+              <td className="py-3 px-3 border-b border-gray-200">Idealno za nove naloge</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Target CPA</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">50/30d</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200 text-orange-600 font-semibold">30–40/30d</td>
-              <td className="py-3 px-4 border-b border-gray-200">Ispod 30: Maximize Conv. je bolji</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Target CPA</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">50/30d</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200 text-orange-600 font-semibold">30–40/30d</td>
+              <td className="py-3 px-3 border-b border-gray-200">Ispod 30: Maximize Conv. je bolji</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Target ROAS</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">50/30d</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200 text-orange-600 font-semibold">30–50/30d</td>
-              <td className="py-3 px-4 border-b border-gray-200">Treba i vrednost konverzija</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Target ROAS</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">50/30d</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200 text-orange-600 font-semibold">30–50/30d</td>
+              <td className="py-3 px-3 border-b border-gray-200">Treba i vrednost konverzija</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Maximize Conv. Value</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Bez min.</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200 text-green-700 font-semibold">15–20/30d</td>
-              <td className="py-3 px-4 border-b border-gray-200">Ali treba vrednost konverzija</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Maximize Conv. Value</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Bez min.</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200 text-green-700 font-semibold">15–20/30d</td>
+              <td className="py-3 px-3 border-b border-gray-200">Ali treba vrednost konverzija</td>
             </tr>
           </tbody>
         </table>
@@ -480,13 +480,13 @@ export default function SmartBiddingVodicSR() {
 
       <div className="bg-white border-2 border-gray-200 rounded-xl p-5 shadow-card my-6">
         <p className="text-sm font-bold text-gray-900 mb-3">POAS vs ROAS — Važna distinkcija za eCommerce</p>
-        <p className="text-sm text-gray-700 mb-3">
+        <p className="text-base text-gray-700 mb-3">
           ROAS (Return on Ad Spend) meri prihod ÷ trošak oglasa. Ali prihod nije profit.
           <strong> POAS (Profit on Ad Spend)</strong> = profit ÷ trošak oglasa — to je cifra koja zaista meri
           zdravlje kampanje. Za jedan UK skincare nalog, cilj nije bio maksimalni ROAS, već POAS koji osigurava profitabilnost
           uz određen nivo ad spenda.
         </p>
-        <p className="text-sm text-gray-700 mb-0">
+        <p className="text-base text-gray-700 mb-0">
           Praktično: ako je vaša bruto marža 40%, a ROAS je 3x — vi ste na granici profitabilnosti.
           Ako ROAS poraste na 5x sa 30% manjim volumenom, možda zarađujete više. tROAS strategija
           treba da bude kalibrisana na osnovu marže, a ne na osnovu industrijskog proseka.
@@ -506,7 +506,7 @@ export default function SmartBiddingVodicSR() {
 
       <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-5 my-6">
         <p className="font-semibold text-red-900 text-sm mb-2">Najčešća greška: intervenisanje tokom learning perioda</p>
-        <p className="text-red-800 text-sm mb-0">
+        <p className="text-red-800 text-base mb-0">
           Svaka promena tokom learning perioda restartuje taj period. Promena budžeta za više od 20%,
           promena tCPA cilja, dodavanje novih ključnih reči, pauziranje ad grupe — sve ovo može restartovati
           learning. Rezultat: nalog je permanentno u learning periodu i nikada ne dostigne stabilni performance.
@@ -522,31 +522,31 @@ export default function SmartBiddingVodicSR() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Period</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Šta se dešava</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Šta raditi</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Period</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Šta se dešava</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Šta raditi</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Dan 1–3</td>
-              <td className="py-3 px-4 border-b border-gray-200">Algoritam eksploriše, CPA može biti 2–3x viši</td>
-              <td className="py-3 px-4 border-b border-gray-200">NE intervenisati</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Dan 1–3</td>
+              <td className="py-3 px-3 border-b border-gray-200">Algoritam eksploriše, CPA može biti 2–3x viši</td>
+              <td className="py-3 px-3 border-b border-gray-200">NE intervenisati</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Dan 4–7</td>
-              <td className="py-3 px-4 border-b border-gray-200">Algoritam počinje da nalazi obrasce</td>
-              <td className="py-3 px-4 border-b border-gray-200">Pratiti, ne menjati ključne parametre</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Dan 4–7</td>
+              <td className="py-3 px-3 border-b border-gray-200">Algoritam počinje da nalazi obrasce</td>
+              <td className="py-3 px-3 border-b border-gray-200">Pratiti, ne menjati ključne parametre</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Dan 8–14</td>
-              <td className="py-3 px-4 border-b border-gray-200">Performance se stabilizuje, CPA normalizuje</td>
-              <td className="py-3 px-4 border-b border-gray-200">Bezbedno je oceniti rezultate</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Dan 8–14</td>
+              <td className="py-3 px-3 border-b border-gray-200">Performance se stabilizuje, CPA normalizuje</td>
+              <td className="py-3 px-3 border-b border-gray-200">Bezbedno je oceniti rezultate</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Dan 15–30</td>
-              <td className="py-3 px-4 border-b border-gray-200">Pun potencijal — bazni period za optimizaciju</td>
-              <td className="py-3 px-4 border-b border-gray-200">Postepena korekcija ciljeva (max 20%/promena)</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Dan 15–30</td>
+              <td className="py-3 px-3 border-b border-gray-200">Pun potencijal — bazni period za optimizaciju</td>
+              <td className="py-3 px-3 border-b border-gray-200">Postepena korekcija ciljeva (max 20%/promena)</td>
             </tr>
           </tbody>
         </table>
@@ -571,7 +571,7 @@ export default function SmartBiddingVodicSR() {
 
         <div className="bg-white border-l-4 border-red-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">1. tCPA cilj postavljen prenisko od prvog dana</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Najčešća greška. Neko želi CPA od €5 ali je istorijski prosek bio €15. Algoritam ne može
             naći dovoljno aukcija po toj ceni, potrošnja pada na nulu ili na minimum. Pravilo: postavi
             tCPA 20–30% iznad aktuelnog proseka, pa ga postepeno spuštaj.
@@ -580,7 +580,7 @@ export default function SmartBiddingVodicSR() {
 
         <div className="bg-white border-l-4 border-red-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">2. Promena strategije svake nedelje</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Maximize Conversions nedelju, tCPA sledeću, Manual CPC posle toga. Algoritam nikada
             ne izlazi iz learning perioda. Stabilnost je preduslov za Smart Bidding performance.
             Minimalno 3–4 nedelje po strategiji pre evaluacije.
@@ -589,7 +589,7 @@ export default function SmartBiddingVodicSR() {
 
         <div className="bg-white border-l-4 border-red-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">3. Portfolio bidding bez razumevanja</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Portfolio bid strategija omogućava jednu zajedničku strategiju za više kampanja. Korisno
             za naloge sa malim brojem konverzija po kampanji — algoritam uči iz svih kampanja zajedno.
             Ali ako su kampanje sa veoma različitim ciljevima, portfoliom se gubi granularnost.
@@ -598,7 +598,7 @@ export default function SmartBiddingVodicSR() {
 
         <div className="bg-white border-l-4 border-orange-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">4. tROAS na nalog sa manje od 30 konverzija</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             tROAS zahteva ne samo konverzije već i vrednost konverzija. Sa 20 konverzija mesečno
             i tROAS ciljem od 400%, algoritam je toliko restriktivan da gotovo ne troši budžet.
             Maximize Conversion Value bez tROAS cilja je bolji izbor u toj fazi.
@@ -607,7 +607,7 @@ export default function SmartBiddingVodicSR() {
 
         <div className="bg-white border-l-4 border-orange-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">5. Zanemarivanje Bid Strategy Report-a</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             U okviru kampanje, postoji Bid Strategy Report koji pokazuje kako algoritam performira
             u odnosu na vaš cilj. Mnogi ga nikad ne otvore. Ovo je najdirektniji uvid u to da li
             je cilj ostvariv ili ne — ako je "ograničen budžetom", povećajte budžet ili prilagodite cilj.
@@ -616,7 +616,7 @@ export default function SmartBiddingVodicSR() {
 
         <div className="bg-white border-l-4 border-orange-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">6. Uključivanje Smart Bidding bez konverzijskog tracking-a</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Smart Bidding bez tačnog tracking-a je gore nego Manual CPC. Algoritam optimizuje
             ka pogrešnim signalima. Proverite da li su konverzije ispravno postavljene pre aktivacije.
             Konverzije moraju biti Primary (ne Secondary) za Smart Bidding da ih koristi.
@@ -625,7 +625,7 @@ export default function SmartBiddingVodicSR() {
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">7. Ignorisanje Auction Insights tokom promene strategije</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Auction Insights pokazuje vaš Impression Share u odnosu na konkurenciju. Ako ste prešli
             na tROAS i IS pao sa 60% na 20%, to znači da algoritam smatra da mnoge aukcije nisu
             profitabilne po vašem cilju. Možda je cilj previše agresivan ili budžet premali.
@@ -634,7 +634,7 @@ export default function SmartBiddingVodicSR() {
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">8. Promena budžeta za 50%+ odjednom</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Drastična promena budžeta (gore ili dole) može destabilizovati algoritam. Preporuka:
             max 15–20% promene po koraku, sa razmakom od 5–7 dana između promena. Za sezonske
             povećanje (Black Friday) koristite Seasonality Adjustments umesto direktne promene budžeta.
@@ -731,36 +731,36 @@ export default function SmartBiddingVodicSR() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Google Ads Strategija</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Microsoft Ads Ekvivalent</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Razlike</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Google Ads Strategija</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Microsoft Ads Ekvivalent</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Razlike</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Maximize Conversions</td>
-              <td className="py-3 px-4 border-b border-gray-200">Maximize Conversions</td>
-              <td className="py-3 px-4 border-b border-gray-200">Identično, manji volumen podataka</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Maximize Conversions</td>
+              <td className="py-3 px-3 border-b border-gray-200">Maximize Conversions</td>
+              <td className="py-3 px-3 border-b border-gray-200">Identično, manji volumen podataka</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Target CPA</td>
-              <td className="py-3 px-4 border-b border-gray-200">Target CPA</td>
-              <td className="py-3 px-4 border-b border-gray-200">Min konverzija je viši (~30/30d)</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Target CPA</td>
+              <td className="py-3 px-3 border-b border-gray-200">Target CPA</td>
+              <td className="py-3 px-3 border-b border-gray-200">Min konverzija je viši (~30/30d)</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Target ROAS</td>
-              <td className="py-3 px-4 border-b border-gray-200">Target ROAS</td>
-              <td className="py-3 px-4 border-b border-gray-200">Dostupno, ali konzervativniji algoritam</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Target ROAS</td>
+              <td className="py-3 px-3 border-b border-gray-200">Target ROAS</td>
+              <td className="py-3 px-3 border-b border-gray-200">Dostupno, ali konzervativniji algoritam</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Maximize Conv. Value</td>
-              <td className="py-3 px-4 border-b border-gray-200">Maximize Conv. Value</td>
-              <td className="py-3 px-4 border-b border-gray-200">Dostupno od 2024</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Maximize Conv. Value</td>
+              <td className="py-3 px-3 border-b border-gray-200">Maximize Conv. Value</td>
+              <td className="py-3 px-3 border-b border-gray-200">Dostupno od 2024</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Target Impression Share</td>
-              <td className="py-3 px-4 border-b border-gray-200">Target Impression Share</td>
-              <td className="py-3 px-4 border-b border-gray-200">Identično</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Target Impression Share</td>
+              <td className="py-3 px-3 border-b border-gray-200">Target Impression Share</td>
+              <td className="py-3 px-3 border-b border-gray-200">Identično</td>
             </tr>
           </tbody>
         </table>
@@ -833,7 +833,7 @@ export default function SmartBiddingVodicSR() {
                 <p className="text-sm font-bold text-gray-900 mb-0.5">{item.title}</p>
                 <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full flex-shrink-0">{item.time}</span>
               </div>
-              <p className="text-xs text-gray-600 mb-0">{item.desc}</p>
+              <p className="text-base text-gray-600 mb-0">{item.desc}</p>
             </div>
           </div>
         ))}
@@ -851,7 +851,7 @@ export default function SmartBiddingVodicSR() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
         <div className="bg-white border-2 border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs font-bold uppercase tracking-wide text-blue-700 mb-2">Bid Simulator</p>
-          <p className="text-sm text-gray-700 mb-0">
+          <p className="text-base text-gray-700 mb-0">
             Dostupan u Keywords i Ad Groups koloni. Pokazuje šta bi se desilo sa Impressions,
             Clicks i Conversions kada biste promenili bid za određeni procenat. Koristite pre
             svake veće promene tCPA/tROAS cilja da procenite uticaj.
@@ -859,7 +859,7 @@ export default function SmartBiddingVodicSR() {
         </div>
         <div className="bg-white border-2 border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs font-bold uppercase tracking-wide text-purple-700 mb-2">Bid Strategy Report</p>
-          <p className="text-sm text-gray-700 mb-0">
+          <p className="text-base text-gray-700 mb-0">
             Unutar kampanje: Settings → Bid Strategy. Prikazuje status (Learning/Eligible/Limited),
             aktuelni performance vs cilj, i razlog ograničenja (budžet, cilj, volumen konverzija).
             Ovo je dijagnostički alat #1 za Smart Bidding probleme.
@@ -867,7 +867,7 @@ export default function SmartBiddingVodicSR() {
         </div>
         <div className="bg-white border-2 border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Performance Planner</p>
-          <p className="text-sm text-gray-700 mb-0">
+          <p className="text-base text-gray-700 mb-0">
             Tools → Planning → Performance Planner. Projektuje performance za sledeći period
             uz promene budžeta i ciljeva. Koristite za kvartalno planiranje i predviđanje
             efekata sezonskih kampanja.
@@ -875,7 +875,7 @@ export default function SmartBiddingVodicSR() {
         </div>
         <div className="bg-white border-2 border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs font-bold uppercase tracking-wide text-orange-700 mb-2">Auction Insights</p>
-          <p className="text-sm text-gray-700 mb-0">
+          <p className="text-base text-gray-700 mb-0">
             Pokazuje vašu konkurentnost u aukcijama — Impression Share, Overlap Rate, Position
             Above Rate. Ako IS padne posle promene bidding strategije, to je signal da je cilj
             previše restriktivan ili budžet premali.
@@ -953,7 +953,7 @@ export default function SmartBiddingVodicSR() {
             Koliko konverzija treba za Smart Bidding?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Za <strong>Maximize Conversions</strong> (bez cilja) — nula, možete odmah. Za <strong>Target CPA</strong> —
             Google preporučuje 50/30d, u praksi funkcioniše sa 30–40 ako je CPA stabilan. Za <strong>Target ROAS</strong> —
             50/30d plus obavezno praćenje vrednosti konverzija. Realni minimum iz prakse: 30 konverzija mesečno
@@ -966,7 +966,7 @@ export default function SmartBiddingVodicSR() {
             Target CPA ili Target ROAS — šta je bolje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Zavisi od tipa biznisa. <strong>tCPA</strong> je bolji za Lead Gen (pozivi, forme) gde sve konverzije imaju
             sličnu vrednost. <strong>tROAS</strong> je bolji za eCommerce gde različiti proizvodi imaju različite cene —
             algoritam tada preferira skuplje konverzije. Ako ne pratite vrednost konverzija, tROAS nije opcija.
@@ -978,7 +978,7 @@ export default function SmartBiddingVodicSR() {
             Koliko traje learning period i šta ga restartuje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Tipično <strong>7–14 dana</strong>. Learning period restartuje: promena bid strategije, promena tCPA/tROAS cilja
             za više od 20%, promena budžeta za više od 20%, dodavanje/brisanje ključnih reči ili ad grupa,
             pauziranje i reaktiviranje kampanje. Svaka od ovih promena vraća algoritam na početak —
@@ -991,7 +991,7 @@ export default function SmartBiddingVodicSR() {
             Šta je Portfolio Bidding i kada ga koristiti?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Portfolio Bid Strategy je zajednička strategija koja se primenjuje na više kampanja simultano.
             Algoritam uči iz kombinovanih konverzija svih kampanja u portfoliju. Korisno za:
             naloge gde svaka kampanja ima premalo konverzija za samostalni Smart Bidding, ali zajedno
@@ -1005,7 +1005,7 @@ export default function SmartBiddingVodicSR() {
             Kako Smart Bidding radi sa sezonskim pikovima?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Smart Bidding automatski prepoznaje sezonske trendove na osnovu istorijata — ali za kratke,
             intenzivne pike (Black Friday, Đurđevdan, Nova Godina), preporučuje se korišćenje
             <strong>Seasonality Adjustments</strong> u Tools sekciji. Ovim najavite algoritmu da očekujete
@@ -1019,7 +1019,7 @@ export default function SmartBiddingVodicSR() {
             Zašto Smart Bidding troši budžet ali nema konverzija?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Najčešći razlozi: (1) <strong>loš conversion tracking</strong> — algoritam dobija pogrešne signale;
             (2) <strong>landing page problem</strong> — saobraćaj dolazi ali ne konvertuje, što algoritam ne zna;
             (3) <strong>previše agresivan cilj</strong> — tROAS 800% sa 20 konverzija mesečno zamrzava potrošnju;
@@ -1033,7 +1033,7 @@ export default function SmartBiddingVodicSR() {
             Da li Manual CPC ima smisla u 2026?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Za 95% naloga — ne. Manual CPC ima smisla samo u specifičnim situacijama: izuzetno mali budžeti
             (&lt;€80/mesec) gde algoritam nema dovoljno prostora, hiperspefičičan targeting za jedan
             ključni termin, ili kratka tranziciona faza između strategija. Sve ostalo je bolje servisirano
@@ -1046,7 +1046,7 @@ export default function SmartBiddingVodicSR() {
             Kako podesiti Smart Bidding za lokalne usluge (plumber, towing, čišćenje)?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Za lokalne usluge: počnite sa <strong>Maximize Conversions</strong> uz call tracking (min 30 sekundi poziv).
             Definišite jasno radno vreme u Ad Scheduling — algoritam ne treba da licitira za pozive u 02:00
             ako niste dostupni. Tek sa 40+ kvalitetnih poziva mesečno, razmotrite tCPA. Geografski targeting

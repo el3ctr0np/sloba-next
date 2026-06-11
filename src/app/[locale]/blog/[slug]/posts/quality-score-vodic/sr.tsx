@@ -36,18 +36,18 @@ export default function QualityScoreVodicPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#sta-je-quality-score-i-zasto-je-bitan" className="text-sm text-gray-700 hover:text-primary underline">Šta je Quality Score i zašto je bitan</a></li>
-          <li><a href="#koliko-quality-score-utice-na-cenu-klika" className="text-sm text-gray-700 hover:text-primary underline">Koliko Quality Score utiče na cenu klika</a></li>
-          <li><a href="#tri-komponente-quality-score-a" className="text-sm text-gray-700 hover:text-primary underline">Tri komponente Quality Score-a</a></li>
-          <li><a href="#kako-poboljsati-expected-ctr" className="text-sm text-gray-700 hover:text-primary underline">Kako poboljšati Expected CTR</a></li>
-          <li><a href="#kako-poboljsati-ad-relevance" className="text-sm text-gray-700 hover:text-primary underline">Kako poboljšati Ad Relevance</a></li>
-          <li><a href="#kako-poboljsati-landing-page-experience" className="text-sm text-gray-700 hover:text-primary underline">Kako poboljšati Landing Page Experience</a></li>
-          <li><a href="#30-dnevni-plan-za-poboljsanje-quality-score-a" className="text-sm text-gray-700 hover:text-primary underline">30-dnevni plan za poboljšanje Quality Score-a</a></li>
-          <li><a href="#quality-score-po-tipu-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Quality Score po tipu kampanje</a></li>
-          <li><a href="#najcesce-greske-sa-quality-score-om" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške sa Quality Score-om</a></li>
-          <li><a href="#najcesca-pitanja-o-quality-score-u" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Quality Score-u</a></li>
-          <li><a href="#zakljucak" className="text-sm text-gray-700 hover:text-primary underline">Zaključak</a></li>
-          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+          <li><a href="#sta-je-quality-score-i-zasto-je-bitan" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je Quality Score i zašto je bitan</a></li>
+          <li><a href="#koliko-quality-score-utice-na-cenu-klika" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koliko Quality Score utiče na cenu klika</a></li>
+          <li><a href="#tri-komponente-quality-score-a" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tri komponente Quality Score-a</a></li>
+          <li><a href="#kako-poboljsati-expected-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako poboljšati Expected CTR</a></li>
+          <li><a href="#kako-poboljsati-ad-relevance" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako poboljšati Ad Relevance</a></li>
+          <li><a href="#kako-poboljsati-landing-page-experience" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako poboljšati Landing Page Experience</a></li>
+          <li><a href="#30-dnevni-plan-za-poboljsanje-quality-score-a" className="block py-1 text-base text-gray-700 hover:text-primary underline">30-dnevni plan za poboljšanje Quality Score-a</a></li>
+          <li><a href="#quality-score-po-tipu-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Quality Score po tipu kampanje</a></li>
+          <li><a href="#najcesce-greske-sa-quality-score-om" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešće greške sa Quality Score-om</a></li>
+          <li><a href="#najcesca-pitanja-o-quality-score-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja o Quality Score-u</a></li>
+          <li><a href="#zakljucak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zaključak</a></li>
+          <li><a href="#povezani-vodici" className="block py-1 text-base text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
         </ol>
       </nav>
 
@@ -86,72 +86,72 @@ export default function QualityScoreVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Quality Score</th>
-              <th className="py-3 px-4 font-heading font-semibold">CPC uticaj</th>
-              <th className="py-3 px-4 font-heading font-semibold">Primer (baseline €1.00)</th>
-              <th className="py-3 px-4 font-heading font-semibold">Status</th>
+              <th className="py-3 px-3 font-heading font-semibold">Quality Score</th>
+              <th className="py-3 px-3 font-heading font-semibold">CPC uticaj</th>
+              <th className="py-3 px-3 font-heading font-semibold">Primer (baseline €1.00)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Status</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">10</td>
-              <td className="py-3 px-4">-50%</td>
-              <td className="py-3 px-4">€0.50</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Odlično</span></td>
+              <td className="py-3 px-3 font-medium">10</td>
+              <td className="py-3 px-3">-50%</td>
+              <td className="py-3 px-3">€0.50</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Odlično</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">9</td>
-              <td className="py-3 px-4">-44%</td>
-              <td className="py-3 px-4">€0.56</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Odlično</span></td>
+              <td className="py-3 px-3 font-medium">9</td>
+              <td className="py-3 px-3">-44%</td>
+              <td className="py-3 px-3">€0.56</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Odlično</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">8</td>
-              <td className="py-3 px-4">-37%</td>
-              <td className="py-3 px-4">€0.63</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Vrlo dobro</span></td>
+              <td className="py-3 px-3 font-medium">8</td>
+              <td className="py-3 px-3">-37%</td>
+              <td className="py-3 px-3">€0.63</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Vrlo dobro</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">7</td>
-              <td className="py-3 px-4">-28%</td>
-              <td className="py-3 px-4">€0.72</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Dobro</span></td>
+              <td className="py-3 px-3 font-medium">7</td>
+              <td className="py-3 px-3">-28%</td>
+              <td className="py-3 px-3">€0.72</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Dobro</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">6</td>
-              <td className="py-3 px-4">-17%</td>
-              <td className="py-3 px-4">€0.83</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">OK</span></td>
+              <td className="py-3 px-3 font-medium">6</td>
+              <td className="py-3 px-3">-17%</td>
+              <td className="py-3 px-3">€0.83</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">OK</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">5</td>
-              <td className="py-3 px-4">Baseline (0%)</td>
-              <td className="py-3 px-4">€1.00</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Prosek</span></td>
+              <td className="py-3 px-3 font-medium">5</td>
+              <td className="py-3 px-3">Baseline (0%)</td>
+              <td className="py-3 px-3">€1.00</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Prosek</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">4</td>
-              <td className="py-3 px-4">+25%</td>
-              <td className="py-3 px-4">€1.25</td>
-              <td className="py-3 px-4"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Ispod proseka</span></td>
+              <td className="py-3 px-3 font-medium">4</td>
+              <td className="py-3 px-3">+25%</td>
+              <td className="py-3 px-3">€1.25</td>
+              <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Ispod proseka</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">3</td>
-              <td className="py-3 px-4">+67%</td>
-              <td className="py-3 px-4">€1.67</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Loš</span></td>
+              <td className="py-3 px-3 font-medium">3</td>
+              <td className="py-3 px-3">+67%</td>
+              <td className="py-3 px-3">€1.67</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Loš</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">2</td>
-              <td className="py-3 px-4">+150%</td>
-              <td className="py-3 px-4">€2.50</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Kritičan</span></td>
+              <td className="py-3 px-3 font-medium">2</td>
+              <td className="py-3 px-3">+150%</td>
+              <td className="py-3 px-3">€2.50</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Kritičan</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">1</td>
-              <td className="py-3 px-4">+400%</td>
-              <td className="py-3 px-4">€5.00</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Hitna akcija</span></td>
+              <td className="py-3 px-3 font-medium">1</td>
+              <td className="py-3 px-3">+400%</td>
+              <td className="py-3 px-3">€5.00</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Hitna akcija</span></td>
             </tr>
           </tbody>
         </table>
@@ -159,7 +159,7 @@ export default function QualityScoreVodicPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">ROI primer: QS poboljšanje sa 5 na 7</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Mesečni spend €5,000 sa QS 5. Poboljšanjem na QS 7, CPC se smanjuje za 28%. To znači ili €1,400 uštede mesečno za isti broj klikova, ili 28% više klikova za isti budžet. Na godišnjem nivou: €16,800 uštede.
         </p>
       </div>
@@ -176,17 +176,17 @@ export default function QualityScoreVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Expected CTR</h3>
-          <p className="text-sm text-gray-600 mb-0">Verovatnoća da će neko kliknuti na vaš oglas. Zavisi od headline-ova, CTA-a, extensions i istorijskih performansi.</p>
+          <p className="text-base text-gray-600 mb-0">Verovatnoća da će neko kliknuti na vaš oglas. Zavisi od headline-ova, CTA-a, extensions i istorijskih performansi.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~20% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Ad Relevance</h3>
-          <p className="text-sm text-gray-600 mb-0">Koliko je vaš oglas relevantan za ključnu reč. Zavisi od podudaranja ključne reči sa tekstom oglasa.</p>
+          <p className="text-base text-gray-600 mb-0">Koliko je vaš oglas relevantan za ključnu reč. Zavisi od podudaranja ključne reči sa tekstom oglasa.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Landing Page Experience</h3>
-          <p className="text-sm text-gray-600 mb-0">Koliko je LP koristan i relevantan. Zavisi od sadržaja, brzine, mobile optimizacije i trust signala.</p>
+          <p className="text-base text-gray-600 mb-0">Koliko je LP koristan i relevantan. Zavisi od sadržaja, brzine, mobile optimizacije i trust signala.</p>
         </div>
       </div>
 
@@ -195,42 +195,42 @@ export default function QualityScoreVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Exp. CTR</th>
-              <th className="py-3 px-4 font-heading font-semibold">Ad Relevance</th>
-              <th className="py-3 px-4 font-heading font-semibold">LP Exp.</th>
-              <th className="py-3 px-4 font-heading font-semibold">Fokus optimizacije</th>
+              <th className="py-3 px-3 font-heading font-semibold">Exp. CTR</th>
+              <th className="py-3 px-3 font-heading font-semibold">Ad Relevance</th>
+              <th className="py-3 px-3 font-heading font-semibold">LP Exp.</th>
+              <th className="py-3 px-3 font-heading font-semibold">Fokus optimizacije</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4 font-medium">Poboljšajte oglas (headline, CTA, extensions)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3 font-medium">Poboljšajte oglas (headline, CTA, extensions)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4 font-medium">Poboljšajte relevantnost (ključna reč u oglasu)</td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3 font-medium">Poboljšajte relevantnost (ključna reč u oglasu)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4 font-medium">Poboljšajte landing page (brzina, sadržaj, mobile)</td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3 font-medium">Poboljšajte landing page (brzina, sadržaj, mobile)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4">Average</td>
-              <td className="py-3 px-4 font-medium">Restrukturirajte Ad Group (uža grupacija)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3">Average</td>
+              <td className="py-3 px-3 font-medium">Restrukturirajte Ad Group (uža grupacija)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-4 font-medium">Kompletna revizija — <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline">audit checklist</Link></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
+              <td className="py-3 px-3 font-medium">Kompletna revizija — <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline">audit checklist</Link></td>
             </tr>
           </tbody>
         </table>
@@ -247,7 +247,7 @@ export default function QualityScoreVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ključna reč u headline-u</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Umesto generičnog {`"Kvalitetni proizvodi | Naručite danas"`} koristite {`"CRM Softver Za Mala Preduzeća | Besplatan Trial"`}.</p>
+        <p className="text-base text-gray-600 mb-3">Umesto generičnog {`"Kvalitetni proizvodi | Naručite danas"`} koristite {`"CRM Softver Za Mala Preduzeća | Besplatan Trial"`}.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -255,7 +255,7 @@ export default function QualityScoreVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Koristite brojke i specifičnost</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">{`"Preko 500 Proizvoda"`}, {`"Uštedite Do 40%"`}, {`"30 Dana Garancije"`}, {`"24/7 Podrška"`} — konkretne brojke privlače pažnju i povećavaju CTR.</p>
+        <p className="text-base text-gray-600 mb-0">{`"Preko 500 Proizvoda"`}, {`"Uštedite Do 40%"`}, {`"30 Dana Garancije"`}, {`"24/7 Podrška"`} — konkretne brojke privlače pažnju i povećavaju CTR.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -263,7 +263,7 @@ export default function QualityScoreVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Jak CTA i USP u headline</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">Jasna akcija: {`"Naručite Danas"`}, {`"Besplatna Procena"`}. Jedinstven USP: {`"Jedini Sa Garancijom Povrata"`}, {`"Dostava Istog Dana"`}.</p>
+        <p className="text-base text-gray-600 mb-0">Jasna akcija: {`"Naručite Danas"`}, {`"Besplatna Procena"`}. Jedinstven USP: {`"Jedini Sa Garancijom Povrata"`}, {`"Dostava Istog Dana"`}.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -271,7 +271,7 @@ export default function QualityScoreVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dodajte sve extensions</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Extensions povećavaju veličinu oglasa i direktno utiču na CTR.</p>
+        <p className="text-base text-gray-600 mb-3">Extensions povećavaju veličinu oglasa i direktno utiču na CTR.</p>
         <ul className="text-sm">
           <li>Sitelinks: +10-20% CTR</li>
           <li>Callouts: +5-10% CTR</li>
@@ -315,28 +315,28 @@ export default function QualityScoreVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prioritet 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Relevantnost sadržaja</h3>
-          <p className="text-sm text-gray-600 mb-0">LP mora odgovarati ključnoj reči i oglasu. Dedicirane LP za svaku temu — ne šaljite sve na homepage.</p>
+          <p className="text-base text-gray-600 mb-0">LP mora odgovarati ključnoj reči i oglasu. Dedicirane LP za svaku temu — ne šaljite sve na homepage.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prioritet 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Brzina stranice</h3>
-          <p className="text-sm text-gray-600 mb-0">Cilj: &lt; 3 sekunde load time. Kompresija slika (WebP), minifikacija CSS/JS, CDN, caching, lazy loading.</p>
+          <p className="text-base text-gray-600 mb-0">Cilj: &lt; 3 sekunde load time. Kompresija slika (WebP), minifikacija CSS/JS, CDN, caching, lazy loading.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prioritet 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mobile optimizacija</h3>
-          <p className="text-sm text-gray-600 mb-0">60%+ saobraćaja je sa mobilnih. Responsive dizajn, čitljivo bez zumiranja, klikabilni buttoni.</p>
+          <p className="text-base text-gray-600 mb-0">60%+ saobraćaja je sa mobilnih. Responsive dizajn, čitljivo bez zumiranja, klikabilni buttoni.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prioritet 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Trust signali</h3>
-          <p className="text-sm text-gray-600 mb-0">Reviews, testimonials, trust badges, SSL, garancije, kontakt informacije. Korisnik mora imati poverenje.</p>
+          <p className="text-base text-gray-600 mb-0">Reviews, testimonials, trust badges, SSL, garancije, kontakt informacije. Korisnik mora imati poverenje.</p>
         </div>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Landing Page checklist</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Relevantna za ključnu reč ✓ Message match sa oglasom ✓ Load time &lt; 3s ✓ Mobile-friendly ✓ Jasan CTA iznad fold-a ✓ Trust signals ✓ SSL (https) ✓ Bez intrusive pop-ups ✓
         </p>
       </div>
@@ -376,31 +376,31 @@ export default function QualityScoreVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Tip kampanje</th>
-              <th className="py-3 px-4 font-heading font-semibold">QS vidljivost</th>
-              <th className="py-3 px-4 font-heading font-semibold">Na šta se fokusirati</th>
+              <th className="py-3 px-3 font-heading font-semibold">Tip kampanje</th>
+              <th className="py-3 px-3 font-heading font-semibold">QS vidljivost</th>
+              <th className="py-3 px-3 font-heading font-semibold">Na šta se fokusirati</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Search</td>
-              <td className="py-3 px-4">Potpuno vidljiv (1-10)</td>
-              <td className="py-3 px-4">Sve tri komponente — najvažniji</td>
+              <td className="py-3 px-3 font-medium">Search</td>
+              <td className="py-3 px-3">Potpuno vidljiv (1-10)</td>
+              <td className="py-3 px-3">Sve tri komponente — najvažniji</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Display</td>
-              <td className="py-3 px-4">Manje transparentan</td>
-              <td className="py-3 px-4">Ad relevance, LP experience, istorijske performanse</td>
+              <td className="py-3 px-3 font-medium">Display</td>
+              <td className="py-3 px-3">Manje transparentan</td>
+              <td className="py-3 px-3">Ad relevance, LP experience, istorijske performanse</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Shopping</td>
-              <td className="py-3 px-4">Nema klasičan QS</td>
-              <td className="py-3 px-4">Product feed kvalitet, cene, seller ratings</td>
+              <td className="py-3 px-3 font-medium">Shopping</td>
+              <td className="py-3 px-3">Nema klasičan QS</td>
+              <td className="py-3 px-3">Product feed kvalitet, cene, seller ratings</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Performance Max</td>
-              <td className="py-3 px-4">Nije vidljiv</td>
-              <td className="py-3 px-4">Google koristi interne signale kvaliteta</td>
+              <td className="py-3 px-3 font-medium">Performance Max</td>
+              <td className="py-3 px-3">Nije vidljiv</td>
+              <td className="py-3 px-3">Google koristi interne signale kvaliteta</td>
             </tr>
           </tbody>
         </table>
@@ -416,7 +416,7 @@ export default function QualityScoreVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #1</p>
           <p className="font-semibold mb-2">Opsesija sa QS 10 za svaku ključnu reč</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> QS 7-8 je odličan i sasvim dovoljan. Fokusirajte se na business metrike (CPA, ROAS) — QS je dijagnostički alat, ne cilj sam po sebi.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> QS 7-8 je odličan i sasvim dovoljan. Fokusirajte se na business metrike (CPA, ROAS) — QS je dijagnostički alat, ne cilj sam po sebi.</p>
           </div>
         </div>
 
@@ -424,7 +424,7 @@ export default function QualityScoreVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
           <p className="font-semibold mb-2">Potpuno ignorisanje QS-a</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Nizak QS = viši troškovi = lošiji ROI. Koristite QS kao dijagnostički alat za identifikaciju problema, posebno za ključne reči sa najvećim spend-om.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Nizak QS = viši troškovi = lošiji ROI. Koristite QS kao dijagnostički alat za identifikaciju problema, posebno za ključne reči sa najvećim spend-om.</p>
           </div>
         </div>
 
@@ -432,7 +432,7 @@ export default function QualityScoreVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
           <p className="font-semibold mb-2">50+ ključnih reči u jednoj Ad Group</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Tematska grupacija sa 10-20 ključnih reči max. Nemoguće je napisati relevantan oglas za 50 različitih tema.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Tematska grupacija sa 10-20 ključnih reči max. Nemoguće je napisati relevantan oglas za 50 različitih tema.</p>
           </div>
         </div>
 
@@ -440,7 +440,7 @@ export default function QualityScoreVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
           <p className="font-semibold mb-2">Svi oglasi vode na homepage</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Kreirajte dedicirane landing page-ove za svaku temu/Ad Group. Homepage nije relevantan za specifične pretrage.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Kreirajte dedicirane landing page-ove za svaku temu/Ad Group. Homepage nije relevantan za specifične pretrage.</p>
           </div>
         </div>
 
@@ -448,7 +448,7 @@ export default function QualityScoreVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #5</p>
           <p className="font-semibold mb-2">Spor sajt (5+ sekundi load time)</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Speed optimization je prioritet. Kompresija slika, lazy loading, caching. Cilj: &lt; 3 sekunde. Koristite PageSpeed Insights za dijagnostiku.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Speed optimization je prioritet. Kompresija slika, lazy loading, caching. Cilj: &lt; 3 sekunde. Koristite PageSpeed Insights za dijagnostiku.</p>
           </div>
         </div>
       </div>
@@ -464,7 +464,7 @@ export default function QualityScoreVodicPost() {
             Koji je dobar Quality Score?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             7+ je dobar, 8-9 je odličan, 10 je idealan ali nije uvek potreban niti realan. Za branded ključne reči očekujte 8-10, za generičke komercijalne 6-8 je sasvim solidan rezultat.
           </div>
         </details>
@@ -474,7 +474,7 @@ export default function QualityScoreVodicPost() {
             Koliko brzo se Quality Score menja?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             QS se ažurira na osnovu kumulativnih performansi, ali promene vidite postepeno — obično dani do nedelje. Veće promene (restrukturiranje Ad Groups, nove LP) zahtevaju više podataka da se reflektuju.
           </div>
         </details>
@@ -484,7 +484,7 @@ export default function QualityScoreVodicPost() {
             Da li QS utiče na Display i Shopping kampanje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Display ima sličan ali manje transparentan sistem. Shopping nema klasičan QS — koristi feed quality, price competitiveness i seller ratings. PMax koristi interne signale koji nisu vidljivi.
           </div>
         </details>
@@ -494,7 +494,7 @@ export default function QualityScoreVodicPost() {
             Mogu li imati visok QS i loše konverzije?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da. QS meri relevantnost, ne kvalitet ponude. Možete imati savršeno relevantan oglas i LP za ponudu koja nije konkurentna. QS je samo deo jednačine — ponuda, cena i korisničko iskustvo su jednako važni.
           </div>
         </details>
@@ -504,7 +504,7 @@ export default function QualityScoreVodicPost() {
             Zašto imam nizak QS za branded ključne reči?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Verovatno konkurenti bidduju na vaš brand. Branded reči bi trebalo da imaju QS 8-10. Proverite: da li je brand u headline-u oglasa, da li LP ima brand prominentno, da li ima tehničkih problema sa sajtom.
           </div>
         </details>
@@ -514,7 +514,7 @@ export default function QualityScoreVodicPost() {
             Da li pauziranje loših ključnih reči poboljšava QS ostalih?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ne direktno — ne postoji account-level QS. Ali indirektno, bolji fokus na kvalitetne reči poboljšava ukupne performanse naloga što vremenom pomaže svim metrikama.
           </div>
         </details>

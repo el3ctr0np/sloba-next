@@ -44,14 +44,14 @@ export default function WhatIsRoasEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#what-is-roas" className="text-sm text-gray-700 hover:text-primary underline">What is ROAS</a></li>
-          <li><a href="#formula" className="text-sm text-gray-700 hover:text-primary underline">Formula and calculation</a></li>
-          <li><a href="#calculator" className="text-sm text-gray-700 hover:text-primary underline">ROAS calculator</a></li>
-          <li><a href="#benchmarks" className="text-sm text-gray-700 hover:text-primary underline">ROAS benchmarks by industry</a></li>
-          <li><a href="#roas-vs-poas" className="text-sm text-gray-700 hover:text-primary underline">ROAS vs POAS: why ROAS doesn&apos;t measure profit</a></li>
-          <li><a href="#how-to-improve" className="text-sm text-gray-700 hover:text-primary underline">How to improve ROAS</a></li>
-          <li><a href="#faq" className="text-sm text-gray-700 hover:text-primary underline">FAQ</a></li>
-          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related guides</a></li>
+          <li><a href="#what-is-roas" className="block py-1 text-base text-gray-700 hover:text-primary underline">What is ROAS</a></li>
+          <li><a href="#formula" className="block py-1 text-base text-gray-700 hover:text-primary underline">Formula and calculation</a></li>
+          <li><a href="#calculator" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS calculator</a></li>
+          <li><a href="#benchmarks" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS benchmarks by industry</a></li>
+          <li><a href="#roas-vs-poas" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS vs POAS: why ROAS doesn&apos;t measure profit</a></li>
+          <li><a href="#how-to-improve" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to improve ROAS</a></li>
+          <li><a href="#faq" className="block py-1 text-base text-gray-700 hover:text-primary underline">FAQ</a></li>
+          <li><a href="#related-guides" className="block py-1 text-base text-gray-700 hover:text-primary underline">Related guides</a></li>
         </ol>
       </nav>
 
@@ -103,42 +103,42 @@ export default function WhatIsRoasEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Revenue</th>
-              <th className="py-3 px-4 font-heading font-semibold">Spend</th>
-              <th className="py-3 px-4 font-heading font-semibold">ROAS</th>
-              <th className="py-3 px-4 font-heading font-semibold">Rating</th>
+              <th className="py-3 px-3 font-heading font-semibold">Revenue</th>
+              <th className="py-3 px-3 font-heading font-semibold">Spend</th>
+              <th className="py-3 px-3 font-heading font-semibold">ROAS</th>
+              <th className="py-3 px-3 font-heading font-semibold">Rating</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">€500</td>
-              <td className="py-3 px-4">€1,000</td>
-              <td className="py-3 px-4">0.5× (50%)</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Loss</span></td>
+              <td className="py-3 px-3">€500</td>
+              <td className="py-3 px-3">€1,000</td>
+              <td className="py-3 px-3">0.5× (50%)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Loss</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">€1,000</td>
-              <td className="py-3 px-4">€1,000</td>
-              <td className="py-3 px-4">1× (100%)</td>
-              <td className="py-3 px-4"><span className="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded">Break-even</span></td>
+              <td className="py-3 px-3">€1,000</td>
+              <td className="py-3 px-3">€1,000</td>
+              <td className="py-3 px-3">1× (100%)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded">Break-even</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">€3,000</td>
-              <td className="py-3 px-4">€1,000</td>
-              <td className="py-3 px-4">3× (300%)</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Solid</span></td>
+              <td className="py-3 px-3">€3,000</td>
+              <td className="py-3 px-3">€1,000</td>
+              <td className="py-3 px-3">3× (300%)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Solid</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4">€5,000</td>
-              <td className="py-3 px-4">€1,000</td>
-              <td className="py-3 px-4">5× (500%)</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Great</span></td>
+              <td className="py-3 px-3">€5,000</td>
+              <td className="py-3 px-3">€1,000</td>
+              <td className="py-3 px-3">5× (500%)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Great</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4">€10,000</td>
-              <td className="py-3 px-4">€1,000</td>
-              <td className="py-3 px-4">10× (1000%)</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Exceptional</span></td>
+              <td className="py-3 px-3">€10,000</td>
+              <td className="py-3 px-3">€1,000</td>
+              <td className="py-3 px-3">10× (1000%)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Exceptional</span></td>
             </tr>
           </tbody>
         </table>
@@ -146,7 +146,7 @@ export default function WhatIsRoasEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Important: ROAS only tracks &quot;attributed revenue&quot;</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           In Google Ads, ROAS is calculated only from conversions <em>attributed</em> to the campaign. If a customer clicks your ad, leaves, and buys direct the next day — that conversion isn&apos;t counted in ROAS (unless it&apos;s inside the attribution window). That&apos;s why the number in Google Ads always differs from revenue shown in Shopify/WooCommerce.
         </p>
       </div>
@@ -160,7 +160,7 @@ export default function WhatIsRoasEN() {
 
       <RoasCalculator locale="en" />
 
-      <p className="text-sm text-gray-600">
+      <p className="text-base text-gray-600">
         The benchmarks in the calculator are industry averages. Your <em>profitable</em> threshold depends on margin — low margin means you need a higher ROAS just to break even.
       </p>
 
@@ -175,51 +175,51 @@ export default function WhatIsRoasEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Industry</th>
-              <th className="py-3 px-4 font-heading font-semibold">Target ROAS</th>
-              <th className="py-3 px-4 font-heading font-semibold">Notes</th>
+              <th className="py-3 px-3 font-heading font-semibold">Industry</th>
+              <th className="py-3 px-3 font-heading font-semibold">Target ROAS</th>
+              <th className="py-3 px-3 font-heading font-semibold">Notes</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce — Fashion/Apparel</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">4.0×</td>
-              <td className="py-3 px-4">40–60% margin, brand dependency</td>
+              <td className="py-3 px-3 font-medium">eCommerce — Fashion/Apparel</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">4.0×</td>
+              <td className="py-3 px-3">40–60% margin, brand dependency</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">eCommerce — Beauty/Skincare</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">3.5×</td>
-              <td className="py-3 px-4">High LTV, repeat orders</td>
+              <td className="py-3 px-3 font-medium">eCommerce — Beauty/Skincare</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">3.5×</td>
+              <td className="py-3 px-3">High LTV, repeat orders</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce — Electronics</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">5.0×</td>
-              <td className="py-3 px-4">Low margins (5–15%) — needs higher ROAS</td>
+              <td className="py-3 px-3 font-medium">eCommerce — Electronics</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">5.0×</td>
+              <td className="py-3 px-3">Low margins (5–15%) — needs higher ROAS</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">eCommerce — Home &amp; Garden</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">3.8×</td>
-              <td className="py-3 px-4">Solid margins, seasonal</td>
+              <td className="py-3 px-3 font-medium">eCommerce — Home &amp; Garden</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">3.8×</td>
+              <td className="py-3 px-3">Solid margins, seasonal</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce — Food &amp; Beverage</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">4.5×</td>
-              <td className="py-3 px-4">Subscription lifts LTV</td>
+              <td className="py-3 px-3 font-medium">eCommerce — Food &amp; Beverage</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">4.5×</td>
+              <td className="py-3 px-3">Subscription lifts LTV</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">SaaS / B2B</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">3.0×</td>
-              <td className="py-3 px-4">LTV-based (calculated on 12-month revenue)</td>
+              <td className="py-3 px-3 font-medium">SaaS / B2B</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">3.0×</td>
+              <td className="py-3 px-3">LTV-based (calculated on 12-month revenue)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Lead Gen (local services)</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">2.5×</td>
-              <td className="py-3 px-4">Track CPA instead of ROAS if no direct sale</td>
+              <td className="py-3 px-3 font-medium">Lead Gen (local services)</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">2.5×</td>
+              <td className="py-3 px-3">Track CPA instead of ROAS if no direct sale</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Luxury / premium</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">6.0×</td>
-              <td className="py-3 px-4">High margin, lower volume, selective targeting</td>
+              <td className="py-3 px-3 font-medium">Luxury / premium</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">6.0×</td>
+              <td className="py-3 px-3">High margin, lower volume, selective targeting</td>
             </tr>
           </tbody>
         </table>
@@ -235,7 +235,7 @@ export default function WhatIsRoasEN() {
 
       <div className="bg-red-50 border-2 border-red-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-red-700 text-lg mb-2">Critical point: ROAS ≠ profit</p>
-        <p className="text-sm text-red-800 mb-0">
+        <p className="text-base text-red-800 mb-0">
           I&apos;ve seen dozens of accounts with 8× ROAS that are losing money, and 2× ROAS accounts printing profit. The difference is <strong>margin</strong>. Raw ROAS ignores COGS, shipping, returns, and operational costs.
         </p>
       </div>
@@ -260,37 +260,37 @@ export default function WhatIsRoasEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Lift AOV (Average Order Value)</h3>
-          <p className="text-sm text-gray-600 mb-0">Bundles, &quot;Add to order&quot; upsells, free shipping thresholds. Higher AOV = higher ROAS without touching bid strategy.</p>
+          <p className="text-base text-gray-600 mb-0">Bundles, &quot;Add to order&quot; upsells, free shipping thresholds. Higher AOV = higher ROAS without touching bid strategy.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Cut low-ROAS ad groups</h3>
-          <p className="text-sm text-gray-600 mb-0">Pause ad groups/keywords stuck below break-even ROAS. Budget reallocates to winners.</p>
+          <p className="text-base text-gray-600 mb-0">Pause ad groups/keywords stuck below break-even ROAS. Budget reallocates to winners.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Target ROAS Smart Bidding</h3>
-          <p className="text-sm text-gray-600 mb-0">Once you have 30+ conversions in 30 days, switch to tROAS. The algorithm bids higher for users with high purchase intent.</p>
+          <p className="text-base text-gray-600 mb-0">Once you have 30+ conversions in 30 days, switch to tROAS. The algorithm bids higher for users with high purchase intent.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Improve Quality Score</h3>
-          <p className="text-sm text-gray-600 mb-0">Higher QS = lower CPC. Same revenue with less spend = higher ROAS. QS 7+ cuts CPC by 20–30%.</p>
+          <p className="text-base text-gray-600 mb-0">Higher QS = lower CPC. Same revenue with less spend = higher ROAS. QS 7+ cuts CPC by 20–30%.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #5</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Landing page CVR optimization</h3>
-          <p className="text-sm text-gray-600 mb-0">Higher conversion rate → more revenue on same clicks → higher ROAS. Test speed, CTA, social proof.</p>
+          <p className="text-base text-gray-600 mb-0">Higher conversion rate → more revenue on same clicks → higher ROAS. Test speed, CTA, social proof.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #6</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Add negative keywords</h3>
-          <p className="text-sm text-gray-600 mb-0">Every click from an irrelevant query is spend without revenue. Monthly Search Terms review + aggressive negatives protect ROAS.</p>
+          <p className="text-base text-gray-600 mb-0">Every click from an irrelevant query is spend without revenue. Monthly Search Terms review + aggressive negatives protect ROAS.</p>
         </div>
       </div>
 
@@ -304,7 +304,7 @@ export default function WhatIsRoasEN() {
             What ROAS is good?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Depends on margin. For eCommerce with 30–50% margin, ROAS of 3–5× is good. For low margins (electronics, 5–15%), you need 6–10×. Break-even formula: ROAS = 1 ÷ margin (decimal). For a 25% margin, break-even is 4×.
           </div>
         </details>
@@ -314,7 +314,7 @@ export default function WhatIsRoasEN() {
             How to calculate ROAS as a percentage?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             ROAS % = (Revenue ÷ Spend) × 100. Example: €4,000 revenue ÷ €1,000 spend × 100 = 400%. Same thing as 4× ROAS, just expressed differently.
           </div>
         </details>
@@ -324,7 +324,7 @@ export default function WhatIsRoasEN() {
             Difference between ROAS and ROI?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             ROAS measures revenue per spend. ROI measures profit against total investment (spend + operational costs + COGS). ROAS is surface-level; ROI is a deeper financial read. A 4× ROAS can translate to −10% ROI if margins are thin.
           </div>
         </details>
@@ -334,7 +334,7 @@ export default function WhatIsRoasEN() {
             What&apos;s the break-even ROAS?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Break-even ROAS = 1 ÷ margin. If margin is 20%, break-even is 5× (1 ÷ 0.20). Below that you run at a loss. Key note: margin here is <em>net</em> margin after COGS and operational costs — not gross markup.
           </div>
         </details>
@@ -344,7 +344,7 @@ export default function WhatIsRoasEN() {
             How does Target ROAS bidding work?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Target ROAS (tROAS) is a Smart Bidding strategy — you set a target ROAS (e.g. 400%), and Google bids higher for users more likely to convert at high value and lower for everyone else. Needs 30+ conversions in the last 30 days and stable conversion value history.
           </div>
         </details>
@@ -354,7 +354,7 @@ export default function WhatIsRoasEN() {
             Is a 10× ROAS always good?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Not necessarily. An extremely high ROAS (10×+) usually means the budget is too conservative — the algorithm is only catching the &quot;easiest&quot; conversions (branded, repeat buyers). Doubling the budget often drops ROAS to 5× but raises total profit. 10× on €500/mo is worth less than 4× on €5,000/mo.
           </div>
         </details>

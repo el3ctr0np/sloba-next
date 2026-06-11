@@ -80,51 +80,51 @@ export default function SmartBiddingGuideEN() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Signal Category</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Examples</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Impact</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Signal Category</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Examples</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Impact</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Device</td>
-              <td className="py-3 px-4 border-b border-gray-200">Desktop, mobile, tablet, browser type</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">High</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Device</td>
+              <td className="py-3 px-3 border-b border-gray-200">Desktop, mobile, tablet, browser type</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">High</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Location</td>
-              <td className="py-3 px-4 border-b border-gray-200">Physical location, IP, language, local trends</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">High</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Location</td>
+              <td className="py-3 px-3 border-b border-gray-200">Physical location, IP, language, local trends</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">High</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Time</td>
-              <td className="py-3 px-4 border-b border-gray-200">Day of week, time of day, season</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-orange-600 font-semibold">Medium</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Time</td>
+              <td className="py-3 px-3 border-b border-gray-200">Day of week, time of day, season</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-orange-600 font-semibold">Medium</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Audience</td>
-              <td className="py-3 px-4 border-b border-gray-200">Remarketing lists, custom intent, demographics</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">High</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Audience</td>
+              <td className="py-3 px-3 border-b border-gray-200">Remarketing lists, custom intent, demographics</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">High</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Search query</td>
-              <td className="py-3 px-4 border-b border-gray-200">Query, match type, user search history</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">High</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Search query</td>
+              <td className="py-3 px-3 border-b border-gray-200">Query, match type, user search history</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">High</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Browser / OS</td>
-              <td className="py-3 px-4 border-b border-gray-200">Chrome, Safari, Firefox, iOS vs Android</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-gray-500">Low</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Browser / OS</td>
+              <td className="py-3 px-3 border-b border-gray-200">Chrome, Safari, Firefox, iOS vs Android</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-gray-500">Low</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Site context</td>
-              <td className="py-3 px-4 border-b border-gray-200">Topic of the page where the ad appears (Display)</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-orange-600 font-semibold">Medium</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Site context</td>
+              <td className="py-3 px-3 border-b border-gray-200">Topic of the page where the ad appears (Display)</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-orange-600 font-semibold">Medium</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">List activity</td>
-              <td className="py-3 px-4 border-b border-gray-200">Prior visits, interactions with your site</td>
-              <td className="py-3 px-4 border-b border-gray-200 text-green-700 font-semibold">High</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">List activity</td>
+              <td className="py-3 px-3 border-b border-gray-200">Prior visits, interactions with your site</td>
+              <td className="py-3 px-3 border-b border-gray-200 text-green-700 font-semibold">High</td>
             </tr>
           </tbody>
         </table>
@@ -140,7 +140,7 @@ export default function SmartBiddingGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-semibold text-yellow-900 text-sm mb-1">Important: &quot;Smart Bidding&quot; vs &quot;Automated Bidding&quot;</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           All Smart Bidding strategies are automated, but not all automated strategies are Smart Bidding.
           Maximize Clicks and Target Impression Share are automated, but they don&apos;t use conversion signals —
           so they&apos;re not part of the Smart Bidding family. True Smart Bidding strategies are: Maximize
@@ -165,7 +165,7 @@ export default function SmartBiddingGuideEN() {
             <span className="flex-shrink-0 w-9 h-9 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Maximize Conversions</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 <GlossaryLink slug="maximize-conversions">Maximize Conversions</GlossaryLink> spends the full budget to achieve as many conversions as possible, without a cost target.
                 The algorithm bids freely — it may pay a high CPA if it believes a conversion will occur.
               </p>
@@ -198,7 +198,7 @@ export default function SmartBiddingGuideEN() {
             <span className="flex-shrink-0 w-9 h-9 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Maximize Conversion Value</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 <GlossaryLink slug="maximize-conversion-value">Maximize Conversion Value</GlossaryLink> spends the full budget to achieve the highest total conversion value. The difference from
                 Maximize Conversions: the algorithm prefers higher-value conversions over more conversions.
                 Requires conversion value tracking (mandatory for eCommerce).
@@ -231,7 +231,7 @@ export default function SmartBiddingGuideEN() {
             <span className="flex-shrink-0 w-9 h-9 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Target CPA (tCPA)</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 The <GlossaryLink slug="tcpa">Target CPA</GlossaryLink> algorithm attempts to achieve conversions at a target average cost per acquisition.
                 Some conversions will cost more, some less — but the average should land near your target.
                 The go-to strategy for mature Lead Gen accounts.
@@ -265,7 +265,7 @@ export default function SmartBiddingGuideEN() {
             <span className="flex-shrink-0 w-9 h-9 bg-yellow-500 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Target ROAS (tROAS)</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 The <GlossaryLink slug="troas">Target ROAS</GlossaryLink> algorithm optimises toward a target return on ad spend (revenue ÷ ad cost × 100%).
                 The most powerful strategy for mature eCommerce — but the most demanding in terms of
                 data quality. Typically introduced from month 4 onwards once data is stable.
@@ -299,7 +299,7 @@ export default function SmartBiddingGuideEN() {
             <span className="flex-shrink-0 w-9 h-9 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Maximize Clicks</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 An automated (but not Smart Bidding) strategy — spends budget to generate as many clicks
                 as possible. Does not use conversion signals. Useful for brand awareness and keyword
                 research, but without optimisation toward business goals.
@@ -331,7 +331,7 @@ export default function SmartBiddingGuideEN() {
             <span className="flex-shrink-0 w-9 h-9 bg-gray-700 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
             <div className="flex-1">
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Manual CPC (+ Enhanced CPC)</h3>
-              <p className="text-sm text-gray-700 mb-2">
+              <p className="text-base text-gray-700 mb-2">
                 You set the bid for each keyword. Enhanced CPC is a hybrid — you set the base bid, but
                 Google can increase it up to 30% for auctions with higher conversion probability. Manual
                 CPC is relevant in specific situations, but for 95% of accounts there are better options.
@@ -440,36 +440,36 @@ export default function SmartBiddingGuideEN() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Strategy</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Google Recommendation</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Real-World Minimum</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Note</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Strategy</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Google Recommendation</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Real-World Minimum</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Note</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Maximize Conversions</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">No min.</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200 text-green-700 font-semibold">0+ (immediately)</td>
-              <td className="py-3 px-4 border-b border-gray-200">Ideal for new accounts</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Maximize Conversions</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">No min.</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200 text-green-700 font-semibold">0+ (immediately)</td>
+              <td className="py-3 px-3 border-b border-gray-200">Ideal for new accounts</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Target CPA</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">50/30d</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200 text-orange-600 font-semibold">30–40/30d</td>
-              <td className="py-3 px-4 border-b border-gray-200">Below 30: Maximize Conv. is better</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Target CPA</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">50/30d</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200 text-orange-600 font-semibold">30–40/30d</td>
+              <td className="py-3 px-3 border-b border-gray-200">Below 30: Maximize Conv. is better</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Target ROAS</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">50/30d</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200 text-orange-600 font-semibold">30–50/30d</td>
-              <td className="py-3 px-4 border-b border-gray-200">Requires conversion value tracking too</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Target ROAS</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">50/30d</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200 text-orange-600 font-semibold">30–50/30d</td>
+              <td className="py-3 px-3 border-b border-gray-200">Requires conversion value tracking too</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Maximize Conv. Value</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">No min.</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200 text-green-700 font-semibold">15–20/30d</td>
-              <td className="py-3 px-4 border-b border-gray-200">But value tracking is required</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Maximize Conv. Value</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">No min.</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200 text-green-700 font-semibold">15–20/30d</td>
+              <td className="py-3 px-3 border-b border-gray-200">But value tracking is required</td>
             </tr>
           </tbody>
         </table>
@@ -477,13 +477,13 @@ export default function SmartBiddingGuideEN() {
 
       <div className="bg-white border-2 border-gray-200 rounded-xl p-5 shadow-card my-6">
         <p className="text-sm font-bold text-gray-900 mb-3">POAS vs ROAS — A Critical Distinction for eCommerce</p>
-        <p className="text-sm text-gray-700 mb-3">
+        <p className="text-base text-gray-700 mb-3">
           ROAS (Return on Ad Spend) measures revenue ÷ ad cost. But revenue is not profit.
           <strong> POAS (Profit on Ad Spend)</strong> = profit ÷ ad cost — that is the metric that truly
           measures campaign health. For one UK skincare account, the goal was never maximum ROAS, but a POAS
           that ensures profitability at a given ad spend level.
         </p>
-        <p className="text-sm text-gray-700 mb-0">
+        <p className="text-base text-gray-700 mb-0">
           Practical implication: if your gross margin is 40% and ROAS is 3x, you&apos;re at break-even.
           If ROAS rises to 5x with 30% less volume, you may actually earn more. Your tROAS target
           should be calibrated against your margin, not against industry averages.
@@ -503,7 +503,7 @@ export default function SmartBiddingGuideEN() {
 
       <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-5 my-6">
         <p className="font-semibold text-red-900 text-sm mb-2">Most common mistake: intervening during the learning period</p>
-        <p className="text-red-800 text-sm mb-0">
+        <p className="text-red-800 text-base mb-0">
           Every change during the learning period restarts it. Changing the budget by more than 20%,
           changing the tCPA target, adding new keywords, pausing an ad group — all of these can restart
           learning. The result: the account is permanently in a learning period and never reaches stable
@@ -516,31 +516,31 @@ export default function SmartBiddingGuideEN() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Period</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">What happens</th>
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">What to do</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Period</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">What happens</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">What to do</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Days 1–3</td>
-              <td className="py-3 px-4 border-b border-gray-200">Algorithm explores; CPA may be 2–3x higher</td>
-              <td className="py-3 px-4 border-b border-gray-200">Do NOT intervene</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Days 1–3</td>
+              <td className="py-3 px-3 border-b border-gray-200">Algorithm explores; CPA may be 2–3x higher</td>
+              <td className="py-3 px-3 border-b border-gray-200">Do NOT intervene</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Days 4–7</td>
-              <td className="py-3 px-4 border-b border-gray-200">Algorithm begins finding patterns</td>
-              <td className="py-3 px-4 border-b border-gray-200">Monitor; don&apos;t change key parameters</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Days 4–7</td>
+              <td className="py-3 px-3 border-b border-gray-200">Algorithm begins finding patterns</td>
+              <td className="py-3 px-3 border-b border-gray-200">Monitor; don&apos;t change key parameters</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Days 8–14</td>
-              <td className="py-3 px-4 border-b border-gray-200">Performance stabilises, CPA normalises</td>
-              <td className="py-3 px-4 border-b border-gray-200">Safe to evaluate results</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Days 8–14</td>
+              <td className="py-3 px-3 border-b border-gray-200">Performance stabilises, CPA normalises</td>
+              <td className="py-3 px-3 border-b border-gray-200">Safe to evaluate results</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Days 15–30</td>
-              <td className="py-3 px-4 border-b border-gray-200">Full potential — baseline for optimisation</td>
-              <td className="py-3 px-4 border-b border-gray-200">Gradual target adjustment (max 20%/change)</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Days 15–30</td>
+              <td className="py-3 px-3 border-b border-gray-200">Full potential — baseline for optimisation</td>
+              <td className="py-3 px-3 border-b border-gray-200">Gradual target adjustment (max 20%/change)</td>
             </tr>
           </tbody>
         </table>
@@ -559,7 +559,7 @@ export default function SmartBiddingGuideEN() {
 
         <div className="bg-white border-l-4 border-red-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">1. tCPA target set too low from day one</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             The most common mistake. Someone wants a €5 CPA but the historical average was €15. The algorithm
             can&apos;t find enough auctions at that price — spend drops to near zero. Rule: set tCPA 20–30% above
             your current average, then reduce it gradually.
@@ -568,7 +568,7 @@ export default function SmartBiddingGuideEN() {
 
         <div className="bg-white border-l-4 border-red-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">2. Changing strategy every week</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Maximize Conversions one week, tCPA the next, Manual CPC after that. The algorithm never
             exits the learning period. Stability is a prerequisite for Smart Bidding performance.
             Minimum 3–4 weeks per strategy before evaluation.
@@ -577,7 +577,7 @@ export default function SmartBiddingGuideEN() {
 
         <div className="bg-white border-l-4 border-red-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">3. Portfolio bidding without understanding it</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Portfolio bid strategy allows one shared strategy across multiple campaigns. Useful for accounts
             with low conversion volume per campaign — the algorithm learns from all campaigns together.
             But if campaigns have very different goals, a portfolio loses granularity.
@@ -586,7 +586,7 @@ export default function SmartBiddingGuideEN() {
 
         <div className="bg-white border-l-4 border-orange-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">4. tROAS on an account with fewer than 30 conversions</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             tROAS requires not just conversions but conversion values. With 20 conversions per month
             and a tROAS target of 400%, the algorithm is so restrictive it barely spends the budget.
             Maximize Conversion Value without a tROAS target is a better choice at that stage.
@@ -595,7 +595,7 @@ export default function SmartBiddingGuideEN() {
 
         <div className="bg-white border-l-4 border-orange-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">5. Ignoring the Bid Strategy Report</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Inside the campaign settings, there is a Bid Strategy Report that shows how the algorithm
             is performing against your target. Most users never open it. This is the most direct insight
             into whether your target is achievable — if it shows &quot;Limited by budget,&quot; increase the
@@ -605,7 +605,7 @@ export default function SmartBiddingGuideEN() {
 
         <div className="bg-white border-l-4 border-orange-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">6. Enabling Smart Bidding without conversion tracking</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Smart Bidding without accurate tracking is worse than Manual CPC. The algorithm optimises
             toward the wrong signals. Verify your conversions are correctly set up before activating.
             Conversions must be set as Primary (not Secondary) for Smart Bidding to use them.
@@ -614,7 +614,7 @@ export default function SmartBiddingGuideEN() {
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">7. Ignoring Auction Insights during strategy changes</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Auction Insights shows your Impression Share compared to competitors. If you switched to
             tROAS and IS dropped from 60% to 20%, it means the algorithm considers most auctions
             unprofitable at your target. Either the target is too aggressive or the budget is too small.
@@ -623,7 +623,7 @@ export default function SmartBiddingGuideEN() {
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">8. Changing budget by 50%+ at once</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Drastic budget changes (up or down) can destabilise the algorithm. Recommendation: max
             15–20% change per step, with a 5–7 day gap between changes. For seasonal increases
             (Black Friday), use Seasonality Adjustments instead of direct budget changes.
@@ -757,7 +757,7 @@ export default function SmartBiddingGuideEN() {
                 <p className="text-sm font-bold text-gray-900 mb-0.5">{item.title}</p>
                 <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full flex-shrink-0">{item.time}</span>
               </div>
-              <p className="text-xs text-gray-600 mb-0">{item.desc}</p>
+              <p className="text-base text-gray-600 mb-0">{item.desc}</p>
             </div>
           </div>
         ))}
@@ -840,7 +840,7 @@ export default function SmartBiddingGuideEN() {
             How many conversions do you need for Smart Bidding?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             For <strong>Maximize Conversions</strong> (no target) — zero, you can start immediately. For <strong>Target CPA</strong> —
             Google recommends 50/30d; in practice it works with 30–40 if CPA is stable. For <strong>Target ROAS</strong> —
             50/30d plus mandatory conversion value tracking. Real-world minimum from experience: 30 conversions
@@ -853,7 +853,7 @@ export default function SmartBiddingGuideEN() {
             Target CPA or Target ROAS — which is better?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Depends on your business type. <strong>tCPA</strong> is better for Lead Gen (calls, forms) where all
             conversions have similar value. <strong>tROAS</strong> is better for eCommerce where different products
             have different prices — the algorithm then prefers higher-value conversions. If you don&apos;t
@@ -866,7 +866,7 @@ export default function SmartBiddingGuideEN() {
             How long does the learning period last and what resets it?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Typically <strong>7–14 days</strong>. The learning period resets when you: change bid strategy, change
             tCPA/tROAS target by more than 20%, change budget by more than 20%, add/remove keywords or ad groups,
             or pause and reactivate a campaign. Each of these changes sends the algorithm back to the start —
@@ -879,7 +879,7 @@ export default function SmartBiddingGuideEN() {
             What is Portfolio Bidding and when should you use it?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Portfolio Bid Strategy is a shared strategy applied across multiple campaigns simultaneously.
             The algorithm learns from the combined conversions of all campaigns in the portfolio. Useful for:
             accounts where each campaign has too few conversions for standalone Smart Bidding, but together
@@ -893,7 +893,7 @@ export default function SmartBiddingGuideEN() {
             Why is Smart Bidding spending budget but generating no conversions?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Most common reasons: (1) <strong>poor conversion tracking</strong> — algorithm receiving wrong signals;
             (2) <strong>landing page problem</strong> — traffic arrives but doesn&apos;t convert, which the algorithm can&apos;t see;
             (3) <strong>overly aggressive target</strong> — tROAS 800% with 20 conversions/month freezes spend;
@@ -907,7 +907,7 @@ export default function SmartBiddingGuideEN() {
             Does Manual CPC make sense in 2026?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             For 95% of accounts — no. Manual CPC only makes sense in specific situations: very small budgets
             (&lt;€80/month) where the algorithm has no room to operate, hyper-specific targeting where every
             click must be controlled, or a short transitional phase between strategies. Everything else is

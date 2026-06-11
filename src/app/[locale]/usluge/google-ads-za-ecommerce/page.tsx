@@ -457,13 +457,13 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
                 </li>
               ))}
             </ul>
-            <div className="text-sm text-gray-600 mt-6 pt-6 border-t border-gray-200">
+            <div className="text-base text-gray-600 mt-6 pt-6 border-t border-gray-200">
               <strong className="font-semibold text-gray-900">
                 {locale === "en" ? "Industries I work best with:" : "Industrije sa kojima najbolje radim:"}
               </strong>
               <p className="mt-2">{industries.join(", ")}</p>
             </div>
-            <div className="text-sm text-gray-600 mt-4">
+            <div className="text-base text-gray-600 mt-4">
               <strong className="font-semibold text-gray-900">
                 {locale === "en" ? "Platforms:" : "Platforme:"}
               </strong>
@@ -532,7 +532,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
                 {faq.question}
                 <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
               </summary>
-              <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+              <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.answer}
               </div>
             </details>

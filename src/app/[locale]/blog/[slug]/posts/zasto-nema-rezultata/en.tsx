@@ -50,14 +50,14 @@ export default function WhyGoogleAdsNotWorkingEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#i-understand-the-frustration-but-the-problem-is-fixable" className="text-sm text-gray-700 hover:text-primary underline">I understand the frustration — but the problem is fixable</a></li>
-          <li><a href="#first-things-first-check-the-basics" className="text-sm text-gray-700 hover:text-primary underline">First things first — check the basics</a></li>
-          <li><a href="#eight-reasons-why-campaigns-dont-work" className="text-sm text-gray-700 hover:text-primary underline">Eight reasons why campaigns don&apos;t work</a></li>
-          <li><a href="#diagnostic-guide-how-to-identify-the-problem" className="text-sm text-gray-700 hover:text-primary underline">Diagnostic guide — how to identify the problem</a></li>
-          <li><a href="#how-much-time-to-give-a-campaign-before-giving-up" className="text-sm text-gray-700 hover:text-primary underline">How much time to give a campaign before giving up</a></li>
-          <li><a href="#when-to-seek-help" className="text-sm text-gray-700 hover:text-primary underline">When to seek help</a></li>
-          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
-          <li><a href="#frequently-asked-questions-why-google-ads-isnt-working" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions — why Google Ads isn&apos;t working</a></li>
+          <li><a href="#i-understand-the-frustration-but-the-problem-is-fixable" className="block py-1 text-base text-gray-700 hover:text-primary underline">I understand the frustration — but the problem is fixable</a></li>
+          <li><a href="#first-things-first-check-the-basics" className="block py-1 text-base text-gray-700 hover:text-primary underline">First things first — check the basics</a></li>
+          <li><a href="#eight-reasons-why-campaigns-dont-work" className="block py-1 text-base text-gray-700 hover:text-primary underline">Eight reasons why campaigns don&apos;t work</a></li>
+          <li><a href="#diagnostic-guide-how-to-identify-the-problem" className="block py-1 text-base text-gray-700 hover:text-primary underline">Diagnostic guide — how to identify the problem</a></li>
+          <li><a href="#how-much-time-to-give-a-campaign-before-giving-up" className="block py-1 text-base text-gray-700 hover:text-primary underline">How much time to give a campaign before giving up</a></li>
+          <li><a href="#when-to-seek-help" className="block py-1 text-base text-gray-700 hover:text-primary underline">When to seek help</a></li>
+          <li><a href="#frequently-asked-questions" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-why-google-ads-isnt-working" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions — why Google Ads isn&apos;t working</a></li>
         </ol>
       </nav>
 
@@ -175,7 +175,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           If your problem was one of the above — fix that FIRST, then continue
           with analysis. There&apos;s no point optimizing a campaign if the basics
           aren&apos;t in place.
@@ -198,13 +198,13 @@ export default function WhyGoogleAdsNotWorkingEN() {
         <p className="font-semibold mb-2">
           Poor or non-existent <a href="https://support.google.com/google-ads/answer/1722054" target="_blank" rel="noopener noreferrer">conversion tracking</a>
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           You don&apos;t know how many conversions you have. Smart Bidding doesn&apos;t deliver
           results. You make decisions based on &quot;gut feeling.&quot; Google Ads shows
           conversions, but numbers don&apos;t match reality.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Set up proper conversion tracking (Google Tag
             Manager is recommended). Enable Enhanced Conversions. Verify that each
             campaign tracks the right conversion action. Test tracking before launch.{" "}
@@ -223,12 +223,12 @@ export default function WhyGoogleAdsNotWorkingEN() {
         <p className="font-semibold mb-2">
           Sending traffic to homepage or wrong landing page
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           High bounce rate (70%+). Low conversion rate ({"{<"}1%). People arrive
           but leave quickly. Landing page doesn&apos;t talk about the same topic as the ad.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Create dedicated landing pages for each
             campaign or ad group. Rule: if the ad talks about X, landing page
             MUST talk about X (message match). Clear CTA, benefit-focused copy,
@@ -242,13 +242,13 @@ export default function WhyGoogleAdsNotWorkingEN() {
           Problem 3
         </p>
         <p className="font-semibold mb-2">Keywords too broad</p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           High costs, few conversions. Search Terms report full of irrelevant
           searches. CPC is &quot;normal&quot; but ROI is poor. You&apos;re only using Broad
           match.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Switch to Phrase and Exact match for
             proven keywords. You can only use Broad match if you have strong
             conversion tracking and enough conversions. Aggressive negative keyword
@@ -262,13 +262,13 @@ export default function WhyGoogleAdsNotWorkingEN() {
           Problem 4
         </p>
         <p className="font-semibold mb-2">Lack of negative keywords</p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           You&apos;re paying for &quot;free&quot;, &quot;jobs&quot;, &quot;how to&quot;
           searches. Search Terms report shows non-buyer intent. High costs
           without conversions. You have fewer than 50 negative keywords (too few).
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Exclude informational searches (how, what
             is, tutorial), job seekers (jobs, career, salary), free seekers
             (free, cheap, discount), and competitors (if you don&apos;t want to show).
@@ -283,13 +283,13 @@ export default function WhyGoogleAdsNotWorkingEN() {
           Problem 5
         </p>
         <p className="font-semibold mb-2">Poor account structure</p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Everything in one campaign. 50+ keywords in one ad group. Impossible to
           understand what&apos;s working. Brand and non-brand mixed. Research and
           high-intent in the same campaign.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Restructure by thematic groups. Ideal: 10-20
             keywords per ad group, thematically connected. Separate: Brand vs
             Non-brand (mandatory), High intent vs Research, Products vs Services.
@@ -307,12 +307,12 @@ export default function WhyGoogleAdsNotWorkingEN() {
           Problem 6
         </p>
         <p className="font-semibold mb-2">Low Quality Score</p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Quality Score below 5-6 for most keywords. High CPC for the position you
           get. Ad Rank problems — campaign rarely shows.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Quality Score has 3 components — work on all.
             <strong>For CTR:</strong> better ad copy, more relevant extensions.
             <strong>For Ad Relevance:</strong> keywords in headline, tighter ad groups.
@@ -331,13 +331,13 @@ export default function WhyGoogleAdsNotWorkingEN() {
           Problem 7
         </p>
         <p className="font-semibold mb-2">Unrealistic expectations (and budget too small)</p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Budget $500, expecting $30,000 revenue. &quot;We want results in a
           week.&quot; Constant dissatisfaction without clear reason. Fewer than
           10-15 conversions monthly — not enough data for optimization.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Set realistic KPIs based on math. Minimum
             2-3 months for proper evaluation. Budget that allows minimum 10-15
             conversions monthly (Google recommends 30+, but 10-15 is minimum for
@@ -355,12 +355,12 @@ export default function WhyGoogleAdsNotWorkingEN() {
           Problem 8
         </p>
         <p className="font-semibold mb-2">Poor ads (ad copy)</p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Low CTR ({"{<"}2% for Search). Ads talk about you, not the user. No
           differentiation from competitors. Same text in all ads, no testing.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Benefit-focused copy (what the user gets,
             not what you do). Include keyword in headline. Clear CTA (Call, Buy,
             Schedule). Test variations — minimum 2-3 ads per ad group, different
@@ -386,7 +386,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             Check conversion tracking
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Do you know how many conversions you have and where they come from? Do
           the numbers match reality?
         </p>
@@ -412,7 +412,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             Analyze Search Terms report
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Are you paying for relevant traffic? Check Google Ads {"->"} Insights &amp;
           Reports {"->"} Search Terms.
         </p>
@@ -439,7 +439,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             Check landing pages
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Are you sending people to relevant pages? Check Google Ads {"->"} Campaigns
           {"->"} Final URLs.
         </p>
@@ -466,7 +466,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             Quality Score audit
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Is QS above 6 for most keywords? Google Ads {"->"} Keywords {"->"} add
           Quality Score column.
         </p>
@@ -494,7 +494,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             Budget and reality
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Do you have enough data for optimization? Check number of conversions in
           last 30 days.
         </p>
@@ -526,44 +526,44 @@ export default function WhyGoogleAdsNotWorkingEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">
+              <th className="py-3 px-3 font-heading font-semibold">
                 Campaign type
               </th>
-              <th className="py-3 px-4 font-heading font-semibold">
+              <th className="py-3 px-3 font-heading font-semibold">
                 Learning period
               </th>
-              <th className="py-3 px-4 font-heading font-semibold">
+              <th className="py-3 px-3 font-heading font-semibold">
                 Stable performance
               </th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Search (Manual CPC)</td>
-              <td className="py-3 px-4">7-14 days</td>
-              <td className="py-3 px-4">2-4 weeks</td>
+              <td className="py-3 px-3 font-medium">Search (Manual CPC)</td>
+              <td className="py-3 px-3">7-14 days</td>
+              <td className="py-3 px-3">2-4 weeks</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">
+              <td className="py-3 px-3 font-medium">
                 Search (Smart Bidding)
               </td>
-              <td className="py-3 px-4">2-4 weeks</td>
-              <td className="py-3 px-4">6-8 weeks</td>
+              <td className="py-3 px-3">2-4 weeks</td>
+              <td className="py-3 px-3">6-8 weeks</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Shopping</td>
-              <td className="py-3 px-4">2-3 weeks</td>
-              <td className="py-3 px-4">4-6 weeks</td>
+              <td className="py-3 px-3 font-medium">Shopping</td>
+              <td className="py-3 px-3">2-3 weeks</td>
+              <td className="py-3 px-3">4-6 weeks</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">PMax</td>
-              <td className="py-3 px-4">4-6 weeks</td>
-              <td className="py-3 px-4">8-12 weeks</td>
+              <td className="py-3 px-3 font-medium">PMax</td>
+              <td className="py-3 px-3">4-6 weeks</td>
+              <td className="py-3 px-3">8-12 weeks</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Display/Video</td>
-              <td className="py-3 px-4">3-4 weeks</td>
-              <td className="py-3 px-4">6-10 weeks</td>
+              <td className="py-3 px-3 font-medium">Display/Video</td>
+              <td className="py-3 px-3">3-4 weeks</td>
+              <td className="py-3 px-3">6-10 weeks</td>
             </tr>
           </tbody>
         </table>
@@ -571,7 +571,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Learning period doesn&apos;t mean you can&apos;t touch anything. It means
           performance isn&apos;t stable yet. But you can (and should) check Search
           Terms report, add negative keywords, test different landing pages. Just
@@ -595,7 +595,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">
             Do it yourself if...
           </h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             You have a clear diagnosis (e.g., lack of negative keywords). Problem is
             technically simple (adding keywords, changing landing page). You have
             time to learn and experiment. Budget is smaller (under $1,000/month).
@@ -609,7 +609,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">
             Hire an expert if...
           </h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             You don&apos;t know what the problem is (unclear diagnostics). You&apos;ve tried
             everything in this guide and it doesn&apos;t work. Budget is larger (over
             $2,000/month) — mistakes cost you. You don&apos;t have time to learn —
@@ -621,7 +621,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Strategy</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           If you&apos;re not sure — schedule an audit. One good audit (1-2h from a
           freelancer or agency) will give you a clear diagnosis and action plan.
           Then you can decide whether to work solo or hire help.{" "}
@@ -646,7 +646,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Depends on campaign type. For Search campaigns with Manual CPC, you can
           see first conversions in 7-14 days. For Smart Bidding (Target CPA,
           Target ROAS), learning period is 2-4 weeks. For PMax campaigns, even 4-6
@@ -662,7 +662,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Maybe. Look for transparency: account access (Admin), monthly reports
           with clear metrics, clear explanation of actions. If you only get
           &quot;we&apos;re working on it&quot; without details, that&apos;s a red flag.
@@ -680,7 +680,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Depends on industry, CPC, and goals. But rule of thumb: you need minimum
           10-15 conversions monthly to have enough data for any conclusions. If
           your CPA (cost per acquisition) is $80, that means minimum $800-1,200/month
@@ -697,7 +697,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Focus on niches where they&apos;re not strong: long-tail keywords (more
           specific searches), geographic targeting (specific locations), ad schedule
           (time periods when competition sleeps). Quality Score can significantly
@@ -714,7 +714,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Before giving up, try an audit from an independent party. A fresh
           perspective often uncovers problems you don&apos;t see (or that are masked if
           you&apos;re working with an agency that&apos;s not doing well). Google Ads works
@@ -789,7 +789,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             Why is my Google Ads campaign spending budget but getting no conversions?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Top 3 reasons: 1) Poor conversion tracking — you&apos;re not tracking the right actions or tracking is broken. 2) Landing page doesn&apos;t convert — slow load speed, unclear CTA, poor mobile experience. 3) Wrong keywords — attracting people without purchase intent. Check these three before anything else.
           </div>
         </details>
@@ -799,7 +799,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             How long should I wait before stopping a campaign?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum 2-3 weeks and at least 100-200 clicks before making any conclusions. Smart Bidding strategies need 4-6 weeks to exit the learning phase. Stopping too early is one of the most common mistakes — the algorithm needs time to find converting users.
           </div>
         </details>
@@ -809,7 +809,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             Is my budget too small for results?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Calculate: average CPC × 15 = minimum recommended daily budget. If your average CPC is $2, you need at least $30/day ($900/month). Below that, the campaign doesn&apos;t have enough data for optimization. For Smart Bidding, Google recommends 30+ conversions per month — with less, results are unpredictable.
           </div>
         </details>
@@ -819,7 +819,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             Why do competitors have better positions than me?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ad Rank = Max CPC × Quality Score × Expected impact of extensions. If your QS is below 6, competitors with better relevance beat you even with lower bids. Check your Quality Score in the keywords report — scores below 5 signal that ads or landing pages aren&apos;t relevant enough for those keywords.
           </div>
         </details>

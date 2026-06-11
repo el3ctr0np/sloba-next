@@ -93,7 +93,7 @@ export default function KolikoKostaGoogleAdsPost() {
         <li><strong>Industrija</strong> — osiguranje i advokati plaćaju 10x više od prodavnica odeće</li>
         <li><strong>Geografija</strong> — Srbija je jeftinija od Nemačke, ali skuplja od Makedonije</li>
       </ul>
-      <p className="text-sm text-gray-500 mt-3">
+      <p className="text-base text-gray-500 mt-3">
         Više o aukcijskom sistemu pročitajte u{" "}
         <a href="https://support.google.com/google-ads/answer/1704342" target="_blank" rel="noopener noreferrer" className="underline">
           Google Ads Help Center-u

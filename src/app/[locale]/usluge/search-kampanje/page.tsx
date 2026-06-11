@@ -550,7 +550,7 @@ export default async function SearchKampanjePage({ params }: Props) {
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <div className="text-sm text-gray-500 mt-6">
+            <div className="text-base text-gray-500 mt-6">
               {locale === "en" ? (
                 <>Search campaigns work for: {industries.join(", ")}.</>
               ) : (

@@ -494,7 +494,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               </>
             )}
           </p>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-600 text-base leading-relaxed">
             {locale === "en" ? (
               <>
                 With over a decade of experience managing Google Ads campaigns for brands
@@ -536,7 +536,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {problem.title}
               </h3>
-              <p className="text-gray-600 text-sm">{problem.description}</p>
+              <p className="text-gray-600 text-base">{problem.description}</p>
             </Card>
           ))}
         </div>
@@ -562,7 +562,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               <h3 className="text-lg font-heading font-semibold mb-2">
                 {area.title}
               </h3>
-              <p className="text-gray-600 text-sm">{area.description}</p>
+              <p className="text-gray-600 text-base">{area.description}</p>
             </Card>
           ))}
         </div>
@@ -619,7 +619,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {testimonials.map((t) => (
               <Card key={t.author} className="h-full">
-                <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <p className="text-sm font-heading font-semibold text-gray-900">
@@ -666,7 +666,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                   <h3 className="font-heading font-semibold text-lg mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
+                  <p className="text-gray-600 text-base">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -712,7 +712,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             <p className="text-2xl font-heading font-bold text-primary mb-3">
               ~€200
             </p>
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "For accounts up to ~€3,000 monthly spend. Complete review of structure, ads, bidding strategies, tracking, audiences, and Shopping/PMax campaigns. PDF report + video walkthrough."
                 : "Za naloge do ~€3,000 mesečnog spend-a. Kompletan pregled strukture, oglasa, bidding strategija, tracking-a, audience-a i Shopping/PMax kampanja. Izveštaj u PDF formatu + video walkthrough."}
@@ -814,7 +814,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         {/* Discount note */}
         <div className="max-w-3xl mx-auto mt-8">
           <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5">
-            <p className="text-sm text-gray-700 font-medium">
+            <p className="text-base text-gray-700 font-medium">
               <span className="font-heading font-bold text-gray-900">
                 {locale === "en" ? "Bonus:" : "Bonus:"}
               </span>{" "}
@@ -848,7 +848,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                   &#9660;
                 </span>
               </summary>
-              <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+              <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.answer}
               </div>
             </details>

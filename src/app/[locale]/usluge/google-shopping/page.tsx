@@ -620,7 +620,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
                   />
                 </svg>
               </summary>
-              <div className="px-6 pb-4 pt-2 text-gray-600 border-t border-gray-100">
+              <div className="px-6 pb-4 pt-2 text-base text-gray-600 border-t border-gray-100">
                 {faq.answer}
               </div>
             </details>

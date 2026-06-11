@@ -58,22 +58,22 @@ export default function YouTubeOglasavanjeVodicSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Činjenica #1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Drugi najveći search engine</h3>
-          <p className="text-sm text-gray-600 mb-0">YouTube ima 2.5 milijardi mesečnih aktivnih korisnika i svaki dan se gleda preko milijardu sati videa. Više ljudi traži informacije na YouTube-u nego na Bing-u, Yahoo-u i svim ostalim pretraživačima zajedno.</p>
+          <p className="text-base text-gray-600 mb-0">YouTube ima 2.5 milijardi mesečnih aktivnih korisnika i svaki dan se gleda preko milijardu sati videa. Više ljudi traži informacije na YouTube-u nego na Bing-u, Yahoo-u i svim ostalim pretraživačima zajedno.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Činjenica #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shorts eksplozija</h3>
-          <p className="text-sm text-gray-600 mb-0">YouTube Shorts generiše 70+ milijardi dnevnih pregleda. Vertikalni kratki format je najbrže rastući tip sadržaja, a Shorts Ads su novi format koji brendovi tek počinju da koriste — dok je konkurencija još niska.</p>
+          <p className="text-base text-gray-600 mb-0">YouTube Shorts generiše 70+ milijardi dnevnih pregleda. Vertikalni kratki format je najbrže rastući tip sadržaja, a Shorts Ads su novi format koji brendovi tek počinju da koriste — dok je konkurencija još niska.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Činjenica #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Jeftino u Srbiji</h3>
-          <p className="text-sm text-gray-600 mb-0">CPV (cena po pregledu) u Srbiji je 2-3 puta niži nego u SAD ili UK. To znači da za isti budžet dobijate značajno više pregleda — idealna prilika za testiranje pre nego što se cene povećaju.</p>
+          <p className="text-base text-gray-600 mb-0">CPV (cena po pregledu) u Srbiji je 2-3 puta niži nego u SAD ili UK. To znači da za isti budžet dobijate značajno više pregleda — idealna prilika za testiranje pre nego što se cene povećaju.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Činjenica #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Full-funnel platforma</h3>
-          <p className="text-sm text-gray-600 mb-0">YouTube pokriva ceo marketing levak: od brand awareness (bumper oglasi), kroz consideration (in-stream), do konverzija (action kampanje sa CTA overlay-em).</p>
+          <p className="text-base text-gray-600 mb-0">YouTube pokriva ceo marketing levak: od brand awareness (bumper oglasi), kroz consideration (in-stream), do konverzija (action kampanje sa CTA overlay-em).</p>
         </div>
       </div>
 
@@ -100,48 +100,48 @@ export default function YouTubeOglasavanjeVodicSR() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Format</th>
-              <th className="py-3 px-4 font-heading font-semibold">Trajanje</th>
-              <th className="py-3 px-4 font-heading font-semibold">Naplata</th>
-              <th className="py-3 px-4 font-heading font-semibold">Najbolje za</th>
+              <th className="py-3 px-3 font-heading font-semibold">Format</th>
+              <th className="py-3 px-3 font-heading font-semibold">Trajanje</th>
+              <th className="py-3 px-3 font-heading font-semibold">Naplata</th>
+              <th className="py-3 px-3 font-heading font-semibold">Najbolje za</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Skippable In-Stream</td>
-              <td className="py-3 px-4">Bez limita (skip posle 5s)</td>
-              <td className="py-3 px-4">CPV (plaćate za 30s+ view)</td>
-              <td className="py-3 px-4">Consideration, engagement</td>
+              <td className="py-3 px-3 font-medium">Skippable In-Stream</td>
+              <td className="py-3 px-3">Bez limita (skip posle 5s)</td>
+              <td className="py-3 px-3">CPV (plaćate za 30s+ view)</td>
+              <td className="py-3 px-3">Consideration, engagement</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Non-Skippable In-Stream</td>
-              <td className="py-3 px-4">Do 15 sekundi</td>
-              <td className="py-3 px-4">CPM (po 1,000 impresija)</td>
-              <td className="py-3 px-4">Brand awareness, kompletna poruka</td>
+              <td className="py-3 px-3 font-medium">Non-Skippable In-Stream</td>
+              <td className="py-3 px-3">Do 15 sekundi</td>
+              <td className="py-3 px-3">CPM (po 1,000 impresija)</td>
+              <td className="py-3 px-3">Brand awareness, kompletna poruka</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Bumper Ads</td>
-              <td className="py-3 px-4">Do 6 sekundi</td>
-              <td className="py-3 px-4">CPM</td>
-              <td className="py-3 px-4">Reach, brand recall</td>
+              <td className="py-3 px-3 font-medium">Bumper Ads</td>
+              <td className="py-3 px-3">Do 6 sekundi</td>
+              <td className="py-3 px-3">CPM</td>
+              <td className="py-3 px-3">Reach, brand recall</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">In-Feed Video Ads</td>
-              <td className="py-3 px-4">Bez limita</td>
-              <td className="py-3 px-4">CPC (po kliku na thumbnail)</td>
-              <td className="py-3 px-4">Discovery, YouTube pretraga</td>
+              <td className="py-3 px-3 font-medium">In-Feed Video Ads</td>
+              <td className="py-3 px-3">Bez limita</td>
+              <td className="py-3 px-3">CPC (po kliku na thumbnail)</td>
+              <td className="py-3 px-3">Discovery, YouTube pretraga</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">YouTube Shorts Ads</td>
-              <td className="py-3 px-4">Do 60 sekundi (vertikalni)</td>
-              <td className="py-3 px-4">CPV/CPM</td>
-              <td className="py-3 px-4">Mobile-first, mlađa demografija</td>
+              <td className="py-3 px-3 font-medium">YouTube Shorts Ads</td>
+              <td className="py-3 px-3">Do 60 sekundi (vertikalni)</td>
+              <td className="py-3 px-3">CPV/CPM</td>
+              <td className="py-3 px-3">Mobile-first, mlađa demografija</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Masthead</td>
-              <td className="py-3 px-4">Varijabilno</td>
-              <td className="py-3 px-4">CPD (po danu)</td>
-              <td className="py-3 px-4">Masivni reach, veliki brendovi</td>
+              <td className="py-3 px-3 font-medium">Masthead</td>
+              <td className="py-3 px-3">Varijabilno</td>
+              <td className="py-3 px-3">CPD (po danu)</td>
+              <td className="py-3 px-3">Masivni reach, veliki brendovi</td>
             </tr>
           </tbody>
         </table>
@@ -149,7 +149,7 @@ export default function YouTubeOglasavanjeVodicSR() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Moja preporuka za početnike</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Počnite sa <strong>Skippable In-Stream</strong> formatom. Plaćate samo kada neko odgleda
           30+ sekundi vašeg videa — što znači da plaćate isključivo za zainteresovane gledaoce.
           Idealno za testiranje sa budžetom od €300-500 mesečno.
@@ -169,31 +169,31 @@ export default function YouTubeOglasavanjeVodicSR() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
-              <th className="py-3 px-4 font-heading font-semibold">Globalni prosek</th>
-              <th className="py-3 px-4 font-heading font-semibold">Srbija (procena)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-3 font-heading font-semibold">Globalni prosek</th>
+              <th className="py-3 px-3 font-heading font-semibold">Srbija (procena)</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">CPV (cena po pregledu)</td>
-              <td className="py-3 px-4">€0.02 – €0.03</td>
-              <td className="py-3 px-4">€0.01 – €0.02</td>
+              <td className="py-3 px-3 font-medium">CPV (cena po pregledu)</td>
+              <td className="py-3 px-3">€0.02 – €0.03</td>
+              <td className="py-3 px-3">€0.01 – €0.02</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">CPM (cena po 1,000 impresija)</td>
-              <td className="py-3 px-4">€5 – €10</td>
-              <td className="py-3 px-4">€2 – €5</td>
+              <td className="py-3 px-3 font-medium">CPM (cena po 1,000 impresija)</td>
+              <td className="py-3 px-3">€5 – €10</td>
+              <td className="py-3 px-3">€2 – €5</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Shorts CPV</td>
-              <td className="py-3 px-4">€0.10 – €0.30</td>
-              <td className="py-3 px-4">€0.05 – €0.15</td>
+              <td className="py-3 px-3 font-medium">Shorts CPV</td>
+              <td className="py-3 px-3">€0.10 – €0.30</td>
+              <td className="py-3 px-3">€0.05 – €0.15</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">CPC (In-Feed format)</td>
-              <td className="py-3 px-4">~€0.49</td>
-              <td className="py-3 px-4">€0.15 – €0.35</td>
+              <td className="py-3 px-3 font-medium">CPC (In-Feed format)</td>
+              <td className="py-3 px-3">~€0.49</td>
+              <td className="py-3 px-3">€0.15 – €0.35</td>
             </tr>
           </tbody>
         </table>
@@ -203,17 +203,17 @@ export default function YouTubeOglasavanjeVodicSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Starter budžet</p>
           <p className="text-2xl font-heading font-bold text-slate-900 mb-1">€300-500</p>
-          <p className="text-sm text-gray-600 mb-0">Za prvi mesec testiranja. Dovoljno za 10,000-25,000 pregleda i početne podatke o publici.</p>
+          <p className="text-base text-gray-600 mb-0">Za prvi mesec testiranja. Dovoljno za 10,000-25,000 pregleda i početne podatke o publici.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimalni budžet</p>
           <p className="text-2xl font-heading font-bold text-slate-900 mb-1">€800-1,500</p>
-          <p className="text-sm text-gray-600 mb-0">Za ozbiljne kampanje sa retargetingom, A/B testiranjem kreativa i optimizacijom publike.</p>
+          <p className="text-base text-gray-600 mb-0">Za ozbiljne kampanje sa retargetingom, A/B testiranjem kreativa i optimizacijom publike.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Minimum dnevno</p>
           <p className="text-2xl font-heading font-bold text-slate-900 mb-1">€5-10</p>
-          <p className="text-sm text-gray-600 mb-0">Google Ads dozvoljava dnevne budžete od €1, ali ispod €5 nemate dovoljno podataka za optimizaciju.</p>
+          <p className="text-base text-gray-600 mb-0">Google Ads dozvoljava dnevne budžete od €1, ali ispod €5 nemate dovoljno podataka za optimizaciju.</p>
         </div>
       </div>
 
@@ -238,31 +238,31 @@ export default function YouTubeOglasavanjeVodicSR() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">1. Demografski targeting</h3>
-          <p className="text-sm text-gray-600 mb-0">Starost, pol, roditeljski status, prihod domaćinstva, lokacija, jezik. Osnova svake kampanje.</p>
+          <p className="text-base text-gray-600 mb-0">Starost, pol, roditeljski status, prihod domaćinstva, lokacija, jezik. Osnova svake kampanje.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">2. Affinity Segments</h3>
-          <p className="text-sm text-gray-600 mb-0">Ljudi sa dugoročnim interesovanjima: "ljubitelji sporta", "tech entuzijasti", "ljubitelji putovanja". Idealno za awareness kampanje.</p>
+          <p className="text-base text-gray-600 mb-0">Ljudi sa dugoročnim interesovanjima: "ljubitelji sporta", "tech entuzijasti", "ljubitelji putovanja". Idealno za awareness kampanje.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">3. In-Market Segments</h3>
-          <p className="text-sm text-gray-600 mb-0">Ljudi koji aktivno istražuju kupovinu: "kupci automobila", "tražioci osiguranja". Bliže konverziji od Affinity segmenata.</p>
+          <p className="text-base text-gray-600 mb-0">Ljudi koji aktivno istražuju kupovinu: "kupci automobila", "tražioci osiguranja". Bliže konverziji od Affinity segmenata.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">4. Custom Segments</h3>
-          <p className="text-sm text-gray-600 mb-0">Kreirajte vlastite publike na osnovu ključnih reči koje su korisnici nedavno tražili na Google-u. Najmoćniji targeting tip za Intent-based kampanje.</p>
+          <p className="text-base text-gray-600 mb-0">Kreirajte vlastite publike na osnovu ključnih reči koje su korisnici nedavno tražili na Google-u. Najmoćniji targeting tip za Intent-based kampanje.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">5. Placements</h3>
-          <p className="text-sm text-gray-600 mb-0">Izaberite specifične YouTube kanale, videa ili čak kategorije sajtova gde želite da se vaš oglas prikaže. Kontrola nad kontekstom.</p>
+          <p className="text-base text-gray-600 mb-0">Izaberite specifične YouTube kanale, videa ili čak kategorije sajtova gde želite da se vaš oglas prikaže. Kontrola nad kontekstom.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">6. Topics</h3>
-          <p className="text-sm text-gray-600 mb-0">Tematske kategorije: "kuvanje", "fitness", "tehnologija". Šire od Placements-a, ali i dalje kontekstualno relevantno.</p>
+          <p className="text-base text-gray-600 mb-0">Tematske kategorije: "kuvanje", "fitness", "tehnologija". Šire od Placements-a, ali i dalje kontekstualno relevantno.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">7. Remarketing (vaša publika)</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Prikažite oglase ljudima koji su već posetili vaš sajt, gledali vaše videe, ili interagovali sa vašim YouTube kanalom.
             Najisplativiji targeting — više o ovome u našem{" "}
             <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-medium">
@@ -301,7 +301,7 @@ export default function YouTubeOglasavanjeVodicSR() {
             </span>
             <div>
               <p className="font-heading font-bold text-sm mb-1">{item.title}</p>
-              <p className="text-sm text-gray-600 mb-0">{item.desc}</p>
+              <p className="text-base text-gray-600 mb-0">{item.desc}</p>
             </div>
           </div>
         ))}
@@ -403,7 +403,7 @@ export default function YouTubeOglasavanjeVodicSR() {
         ].map((item) => (
           <div key={item.num} className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
             <p className="font-heading font-bold mb-2">Greška #{item.num}: {item.title}</p>
-            <p className="text-sm text-gray-600 mb-0">{item.desc}</p>
+            <p className="text-base text-gray-600 mb-0">{item.desc}</p>
           </div>
         ))}
       </div>
@@ -424,41 +424,41 @@ export default function YouTubeOglasavanjeVodicSR() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
-              <th className="py-3 px-4 font-heading font-semibold">Šta meri</th>
-              <th className="py-3 px-4 font-heading font-semibold">Benchmark</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-3 font-heading font-semibold">Šta meri</th>
+              <th className="py-3 px-3 font-heading font-semibold">Benchmark</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">View Rate</td>
-              <td className="py-3 px-4">% ljudi koji odgledaju 30s+ ili ceo video</td>
-              <td className="py-3 px-4">15-30% (dobar), 30%+ (odličan)</td>
+              <td className="py-3 px-3 font-medium">View Rate</td>
+              <td className="py-3 px-3">% ljudi koji odgledaju 30s+ ili ceo video</td>
+              <td className="py-3 px-3">15-30% (dobar), 30%+ (odličan)</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">CPV</td>
-              <td className="py-3 px-4">Cena po kvalifikovanom pregledu</td>
-              <td className="py-3 px-4">€0.02-0.05 (globalni prosek)</td>
+              <td className="py-3 px-3 font-medium">CPV</td>
+              <td className="py-3 px-3">Cena po kvalifikovanom pregledu</td>
+              <td className="py-3 px-3">€0.02-0.05 (globalni prosek)</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Watch Time</td>
-              <td className="py-3 px-4">Ukupno vreme gledanja vašeg oglasa</td>
-              <td className="py-3 px-4">Raste = dobro, signalizira relevantnost</td>
+              <td className="py-3 px-3 font-medium">Watch Time</td>
+              <td className="py-3 px-3">Ukupno vreme gledanja vašeg oglasa</td>
+              <td className="py-3 px-3">Raste = dobro, signalizira relevantnost</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Earned Actions</td>
-              <td className="py-3 px-4">Besplatne interakcije (lajkovi, share, subscribe)</td>
-              <td className="py-3 px-4">Bonus metrički, nije primarni KPI</td>
+              <td className="py-3 px-3 font-medium">Earned Actions</td>
+              <td className="py-3 px-3">Besplatne interakcije (lajkovi, share, subscribe)</td>
+              <td className="py-3 px-3">Bonus metrički, nije primarni KPI</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Conversions</td>
-              <td className="py-3 px-4">Kupovine, lead-ovi, registracije</td>
-              <td className="py-3 px-4">Zavisi od industrije i funnela</td>
+              <td className="py-3 px-3 font-medium">Conversions</td>
+              <td className="py-3 px-3">Kupovine, lead-ovi, registracije</td>
+              <td className="py-3 px-3">Zavisi od industrije i funnela</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 font-medium">Brand Lift</td>
-              <td className="py-3 px-4">Porast brand awareness-a (ankete)</td>
-              <td className="py-3 px-4">Dostupno za veće budžete (€5,000+)</td>
+              <td className="py-3 px-3 font-medium">Brand Lift</td>
+              <td className="py-3 px-3">Porast brand awareness-a (ankete)</td>
+              <td className="py-3 px-3">Dostupno za veće budžete (€5,000+)</td>
             </tr>
           </tbody>
         </table>
@@ -561,7 +561,7 @@ export default function YouTubeOglasavanjeVodicSR() {
               {item.q}
               <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
             </summary>
-            <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+            <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
               {item.a}
             </div>
           </details>

@@ -639,7 +639,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             </span>
             <div>
               <p className="text-sm font-bold text-gray-900 mb-0.5">{item.title}</p>
-              <p className="text-xs text-gray-600 mb-0">{item.desc}</p>
+              <p className="text-base text-gray-600 mb-0">{item.desc}</p>
             </div>
           </div>
         ))}

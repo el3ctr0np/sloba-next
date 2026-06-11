@@ -63,12 +63,12 @@ export default function NegativeKeywordsGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Regular keywords</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Trigger your ad</h3>
-          <p className="text-sm text-gray-600 mb-0">Define which searches show your ad. Attract traffic to your site.</p>
+          <p className="text-base text-gray-600 mb-0">Define which searches show your ad. Attract traffic to your site.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Negative keywords</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Block your ad</h3>
-          <p className="text-sm text-gray-600 mb-0">Prevent showing for irrelevant searches. Protect budget from wasted spend.</p>
+          <p className="text-base text-gray-600 mb-0">Prevent showing for irrelevant searches. Protect budget from wasted spend.</p>
         </div>
       </div>
 
@@ -93,7 +93,7 @@ export default function NegativeKeywordsGuideEN() {
             </ul>
           </div>
         </div>
-        <p className="text-sm text-gray-600 mt-3 mb-0">
+        <p className="text-base text-gray-600 mt-3 mb-0">
           Blocked searches: &quot;cheap chairs&quot; (£180 spend, 0 conv), &quot;used furniture&quot; (£120, 0 conv), &quot;DIY furniture&quot; (£90, 0 conv), &quot;IKEA furniture&quot; (£150, 0 conv)
         </p>
       </div>
@@ -110,30 +110,30 @@ export default function NegativeKeywordsGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Match Type</th>
-              <th className="py-3 px-4 font-heading font-semibold">Syntax</th>
-              <th className="py-3 px-4 font-heading font-semibold">Blocks</th>
-              <th className="py-3 px-4 font-heading font-semibold">Does NOT block</th>
+              <th className="py-3 px-3 font-heading font-semibold">Match Type</th>
+              <th className="py-3 px-3 font-heading font-semibold">Syntax</th>
+              <th className="py-3 px-3 font-heading font-semibold">Blocks</th>
+              <th className="py-3 px-3 font-heading font-semibold">Does NOT block</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Negative Broad</td>
-              <td className="py-3 px-4">free</td>
-              <td className="py-3 px-4">Any search with that word, any order</td>
-              <td className="py-3 px-4">Variations and synonyms (&quot;trial&quot;, &quot;gratis&quot;)</td>
+              <td className="py-3 px-3 font-medium">Negative Broad</td>
+              <td className="py-3 px-3">free</td>
+              <td className="py-3 px-3">Any search with that word, any order</td>
+              <td className="py-3 px-3">Variations and synonyms (&quot;trial&quot;, &quot;gratis&quot;)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Negative Phrase</td>
-              <td className="py-3 px-4">&quot;free download&quot;</td>
-              <td className="py-3 px-4">Searches with exact phrase in that order</td>
-              <td className="py-3 px-4">Different order (&quot;download free&quot;)</td>
+              <td className="py-3 px-3 font-medium">Negative Phrase</td>
+              <td className="py-3 px-3">&quot;free download&quot;</td>
+              <td className="py-3 px-3">Searches with exact phrase in that order</td>
+              <td className="py-3 px-3">Different order (&quot;download free&quot;)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Negative Exact</td>
-              <td className="py-3 px-4">[free download]</td>
-              <td className="py-3 px-4">Only that exact search</td>
-              <td className="py-3 px-4">Anything additional (&quot;free download CRM&quot;)</td>
+              <td className="py-3 px-3 font-medium">Negative Exact</td>
+              <td className="py-3 px-3">[free download]</td>
+              <td className="py-3 px-3">Only that exact search</td>
+              <td className="py-3 px-3">Anything additional (&quot;free download CRM&quot;)</td>
             </tr>
           </tbody>
         </table>
@@ -141,14 +141,14 @@ export default function NegativeKeywordsGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important: Negative Broad does NOT include synonyms</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Unlike positive Broad match, negative Broad does NOT block synonyms and variations. If you block &quot;free&quot;, the search &quot;gratis CRM&quot; still gets through. Add all common variations.
         </p>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Match type recommendation</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Use Negative Broad for most cases — covers widest range. Negative Phrase for specific phrases where order matters. Negative Exact rarely — only for very specific cases.
         </p>
       </div>
@@ -301,26 +301,26 @@ export default function NegativeKeywordsGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Level</th>
-              <th className="py-3 px-4 font-heading font-semibold">Where to add</th>
-              <th className="py-3 px-4 font-heading font-semibold">When to use</th>
+              <th className="py-3 px-3 font-heading font-semibold">Level</th>
+              <th className="py-3 px-3 font-heading font-semibold">Where to add</th>
+              <th className="py-3 px-3 font-heading font-semibold">When to use</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Negative Keyword Lists</td>
-              <td className="py-3 px-4">Account level (shared list)</td>
-              <td className="py-3 px-4">For universal negatives that apply to all campaigns</td>
+              <td className="py-3 px-3 font-medium">Negative Keyword Lists</td>
+              <td className="py-3 px-3">Account level (shared list)</td>
+              <td className="py-3 px-3">For universal negatives that apply to all campaigns</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Campaign Level</td>
-              <td className="py-3 px-4">Specific campaign</td>
-              <td className="py-3 px-4">For negatives specific to that campaign</td>
+              <td className="py-3 px-3 font-medium">Campaign Level</td>
+              <td className="py-3 px-3">Specific campaign</td>
+              <td className="py-3 px-3">For negatives specific to that campaign</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Ad Group Level</td>
-              <td className="py-3 px-4">Specific Ad Group</td>
-              <td className="py-3 px-4">For keyword sculpting and granular control</td>
+              <td className="py-3 px-3 font-medium">Ad Group Level</td>
+              <td className="py-3 px-3">Specific Ad Group</td>
+              <td className="py-3 px-3">For keyword sculpting and granular control</td>
             </tr>
           </tbody>
         </table>
@@ -339,7 +339,7 @@ export default function NegativeKeywordsGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Naming convention for lists</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Use format: [Type] - [Description]. Examples: &quot;Universal - Free &amp; Job Terms&quot;, &quot;Industry - eCommerce Fashion&quot;, &quot;Campaign - Brand Protection&quot;
         </p>
       </div>
@@ -380,7 +380,7 @@ export default function NegativeKeywordsGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Pro tip</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Complete account check</h3>
-          <p className="text-sm text-gray-600 mb-0">See <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-semibold">Google Ads audit checklist</Link> for complete account review.</p>
+          <p className="text-base text-gray-600 mb-0">See <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-semibold">Google Ads audit checklist</Link> for complete account review.</p>
         </div>
       </div>
 
@@ -394,7 +394,7 @@ export default function NegativeKeywordsGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #1</p>
           <p className="font-semibold mb-2">Never checking Search Terms</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Set weekly reminder for Search Terms review. This is the most important optimization activity for negative keywords.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Set weekly reminder for Search Terms review. This is the most important optimization activity for negative keywords.</p>
           </div>
         </div>
 
@@ -402,7 +402,7 @@ export default function NegativeKeywordsGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
           <p className="font-semibold mb-2">Too aggressive blocking without analysis</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Check volume and conversions before adding. Some keywords may look irrelevant but actually convert.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Check volume and conversions before adding. Some keywords may look irrelevant but actually convert.</p>
           </div>
         </div>
 
@@ -410,7 +410,7 @@ export default function NegativeKeywordsGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
           <p className="font-semibold mb-2">Wrong match type for negatives</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Use Negative Broad for general terms. Exact negative misses variations — &quot;free&quot; in Exact does not block &quot;free CRM download&quot;.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Use Negative Broad for general terms. Exact negative misses variations — &quot;free&quot; in Exact does not block &quot;free CRM download&quot;.</p>
           </div>
         </div>
 
@@ -418,7 +418,7 @@ export default function NegativeKeywordsGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #4</p>
           <p className="font-semibold mb-2">No shared lists — everything manual per campaign</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Create Negative Keyword Lists and apply to all campaigns. Consistency and efficiency.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Create Negative Keyword Lists and apply to all campaigns. Consistency and efficiency.</p>
           </div>
         </div>
 
@@ -426,7 +426,7 @@ export default function NegativeKeywordsGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
           <p className="font-semibold mb-2">Ignoring synonyms and variations</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Add all common variations. Block &quot;free&quot; AND &quot;gratis&quot;, &quot;jobs&quot; AND &quot;careers&quot;. Negative Broad does not catch synonyms automatically.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Add all common variations. Block &quot;free&quot; AND &quot;gratis&quot;, &quot;jobs&quot; AND &quot;careers&quot;. Negative Broad does not catch synonyms automatically.</p>
           </div>
         </div>
       </div>
@@ -442,7 +442,7 @@ export default function NegativeKeywordsGuideEN() {
             How many negative keywords is enough?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             No upper limit. Typically: 50-200 for starter list, grows over time. Quality is more important than quantity — better 50 carefully selected than 500 random ones.
           </div>
         </details>
@@ -452,7 +452,7 @@ export default function NegativeKeywordsGuideEN() {
             Do negative keywords affect Quality Score?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Indirectly — yes. Better CTR (fewer irrelevant impressions) → better Expected CTR → better QS. More on this in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline">Quality Score guide</Link>.
           </div>
         </details>
@@ -462,7 +462,7 @@ export default function NegativeKeywordsGuideEN() {
             Can I accidentally block good searches?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes, that is a real risk. Therefore: (1) use data before adding, (2) check Search Terms after adding, (3) be careful with Broad negatives for short keywords that have multiple meanings.
           </div>
         </details>
@@ -472,7 +472,7 @@ export default function NegativeKeywordsGuideEN() {
             How often should I review and update negative lists?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum: weekly Search Terms review. Ideally in first 30 days: every 2-3 days. For mature campaigns: weekly + monthly deep dive + quarterly complete review.
           </div>
         </details>
@@ -482,7 +482,7 @@ export default function NegativeKeywordsGuideEN() {
             Are there mandatory negative keywords for every account?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Universal list (free, jobs, DIY) is good starter for most businesses. But always customize for your business — &quot;free&quot; may not be negative if you offer free trial or free shipping.
           </div>
         </details>
@@ -492,7 +492,7 @@ export default function NegativeKeywordsGuideEN() {
             Negative Broad vs Negative Phrase — when which?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Broad: for general terms you always want to block (free, jobs) — covers all searches with that word. Phrase: for specific phrases where order matters. Exact: rarely — only for very specific cases where only that exact search is a problem.
           </div>
         </details>

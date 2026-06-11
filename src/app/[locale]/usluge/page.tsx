@@ -527,7 +527,7 @@ export default async function ServicesPage({ params }: Props) {
                 campaign structure, and continuous optimization — it easily becomes
                 wasted spend.
               </p>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed">
                 With over 9 years of experience managing campaigns for brands in Serbia,
                 the UK, Germany, and Croatia, I offer complete Google Ads services
                 tailored to your goals — whether you're an eCommerce business seeking
@@ -542,7 +542,7 @@ export default async function ServicesPage({ params }: Props) {
                 strukture kampanja i kontinuirane optimizacije — lako se pretvori u
                 nepotrebni trošak.
               </p>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed">
                 Sa preko decenije iskustva u vođenju kampanja za brendove u Srbiji,
                 UK, Nemačkoj i Hrvatskoj, nudim kompletne Google Ads usluge
                 prilagođene vašim ciljevima — bilo da ste eCommerce koji traži bolji
@@ -588,7 +588,7 @@ export default async function ServicesPage({ params }: Props) {
                     <h3 className="font-heading font-bold text-xl mb-2">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600 text-sm">{service.desc}</p>
+                    <p className="text-gray-600 text-base">{service.desc}</p>
                     <span className="mt-4 inline-block text-primary font-semibold text-sm group-hover:translate-x-1 transition-transform">
                       {locale === "en" ? "Learn more →" : "Saznajte više →"}
                     </span>
@@ -624,7 +624,7 @@ export default async function ServicesPage({ params }: Props) {
                 <h3 className="font-heading font-bold text-xl mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{service.desc}</p>
+                <p className="text-gray-600 text-base">{service.desc}</p>
                 <span className="mt-4 inline-block text-primary font-semibold text-sm group-hover:translate-x-1 transition-transform">
                   {locale === "en" ? "Service details →" : "Detalji usluge →"}
                 </span>
@@ -711,7 +711,7 @@ export default async function ServicesPage({ params }: Props) {
               <p className="text-lg font-heading font-bold text-primary mb-3">
                 {entry.price}
               </p>
-              <p className="text-gray-600 text-sm mb-5 flex-1">
+              <p className="text-gray-600 text-base mb-5 flex-1">
                 {entry.desc}
               </p>
               <Link
@@ -761,7 +761,7 @@ export default async function ServicesPage({ params }: Props) {
                   <h3 className="font-heading font-semibold text-lg mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
+                  <p className="text-gray-600 text-base">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -792,7 +792,7 @@ export default async function ServicesPage({ params }: Props) {
                   &#9660;
                 </span>
               </summary>
-              <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+              <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.a}
               </div>
             </details>
