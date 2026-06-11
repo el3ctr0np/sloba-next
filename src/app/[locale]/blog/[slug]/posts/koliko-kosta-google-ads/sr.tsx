@@ -38,7 +38,7 @@ export default function KolikoKostaGoogleAdsPost() {
         <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
           Koliko košta Google Ads u Srbiji?
         </p>
-        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
           <strong>Google Ads u Srbiji</strong> košta od <strong>15 do 50 RSD po kliku</strong> za većinu industrija, uz minimalni mesečni budžet od <strong>€200-400</strong> da biste videli merljive rezultate. Konačna cena zavisi od industrije i konkurencije — usluge i B2B plaćaju više od maloprodaje.
         </p>
       </div>
@@ -47,17 +47,17 @@ export default function KolikoKostaGoogleAdsPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#koliko-zaista-kosta-google-ads-u-srbiji" className="text-sm text-gray-700 hover:text-primary underline">Koliko zaista košta Google Ads u Srbiji</a></li>
-          <li><a href="#kako-google-ads-naplacuje" className="text-sm text-gray-700 hover:text-primary underline">Kako Google Ads naplaćuje</a></li>
-          <li><a href="#realne-cpc-cene-po-industrijama-u-srbiji" className="text-sm text-gray-700 hover:text-primary underline">Realne CPC cene po industrijama u Srbiji</a></li>
-          <li><a href="#minimalni-budzet-koji-ima-smisla" className="text-sm text-gray-700 hover:text-primary underline">Minimalni budžet koji ima smisla</a></li>
-          <li><a href="#troskovi-upravljanja-agencija-vs-freelancer-vs-in-house" className="text-sm text-gray-700 hover:text-primary underline">Troškovi upravljanja: agencija vs. freelancer vs. in-house</a></li>
-          <li><a href="#kako-izracunati-roi-pre-nego-sto-potrosite-prvi-dinar" className="text-sm text-gray-700 hover:text-primary underline">Kako izračunati ROI pre nego što potrošite prvi dinar</a></li>
-          <li><a href="#skriveni-troskovi-o-kojima-niko-ne-prica" className="text-sm text-gray-700 hover:text-primary underline">Skriveni troškovi o kojima niko ne priča</a></li>
-          <li><a href="#kada-google-ads-nije-pravi-izbor" className="text-sm text-gray-700 hover:text-primary underline">Kada Google Ads nije pravi izbor</a></li>
-          <li><a href="#sledeci-koraci" className="text-sm text-gray-700 hover:text-primary underline">Sledeći koraci</a></li>
-          <li><a href="#cesto-postavljana-pitanja-o-cenama-google-ads-a" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja o cenama Google Ads-a</a></li>
-          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+          <li><a href="#koliko-zaista-kosta-google-ads-u-srbiji" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koliko zaista košta Google Ads u Srbiji</a></li>
+          <li><a href="#kako-google-ads-naplacuje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako Google Ads naplaćuje</a></li>
+          <li><a href="#realne-cpc-cene-po-industrijama-u-srbiji" className="block py-1 text-base text-gray-700 hover:text-primary underline">Realne CPC cene po industrijama u Srbiji</a></li>
+          <li><a href="#minimalni-budzet-koji-ima-smisla" className="block py-1 text-base text-gray-700 hover:text-primary underline">Minimalni budžet koji ima smisla</a></li>
+          <li><a href="#troskovi-upravljanja-agencija-vs-freelancer-vs-in-house" className="block py-1 text-base text-gray-700 hover:text-primary underline">Troškovi upravljanja: agencija vs. freelancer vs. in-house</a></li>
+          <li><a href="#kako-izracunati-roi-pre-nego-sto-potrosite-prvi-dinar" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako izračunati ROI pre nego što potrošite prvi dinar</a></li>
+          <li><a href="#skriveni-troskovi-o-kojima-niko-ne-prica" className="block py-1 text-base text-gray-700 hover:text-primary underline">Skriveni troškovi o kojima niko ne priča</a></li>
+          <li><a href="#kada-google-ads-nije-pravi-izbor" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kada Google Ads nije pravi izbor</a></li>
+          <li><a href="#sledeci-koraci" className="block py-1 text-base text-gray-700 hover:text-primary underline">Sledeći koraci</a></li>
+          <li><a href="#cesto-postavljana-pitanja-o-cenama-google-ads-a" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja o cenama Google Ads-a</a></li>
+          <li><a href="#povezani-vodici" className="block py-1 text-base text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
         </ol>
       </nav>
 
@@ -73,7 +73,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Nakon skoro decenije rada sa Google Ads-om i stotina naloga u regionu, mogu vam dati konkretan okvir koji će vam pomoći da planirate budžet i razumete šta očekivati.
         </p>
       </div>
@@ -104,19 +104,19 @@ export default function KolikoKostaGoogleAdsPost() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC — cena po kliku</h3>
-          <p className="text-sm text-gray-600 mb-0">Plaćate kada neko klikne na oglas. Najčešći model za Search i Shopping kampanje.</p>
+          <p className="text-base text-gray-600 mb-0">Plaćate kada neko klikne na oglas. Najčešći model za Search i Shopping kampanje.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPM — cena po 1.000 prikaza</h3>
-          <p className="text-sm text-gray-600 mb-0">Plaćate za vidljivost, ne klikove. Koristi se za Display i YouTube kampanje.</p>
+          <p className="text-base text-gray-600 mb-0">Plaćate za vidljivost, ne klikove. Koristi se za Display i YouTube kampanje.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPV — cena po pregledu videa</h3>
-          <p className="text-sm text-gray-600 mb-0">Plaćate kada neko pogleda vaš video oglas. Specifično za YouTube.</p>
+          <p className="text-base text-gray-600 mb-0">Plaćate kada neko pogleda vaš video oglas. Specifično za YouTube.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPA — cena po konverziji</h3>
-          <p className="text-sm text-gray-600 mb-0">Napredni model gde plaćate po ostvarenoj akciji. Zahteva dovoljno podataka.</p>
+          <p className="text-base text-gray-600 mb-0">Napredni model gde plaćate po ostvarenoj akciji. Zahteva dovoljno podataka.</p>
         </div>
       </div>
 
@@ -130,61 +130,61 @@ export default function KolikoKostaGoogleAdsPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Industrija</th>
-              <th className="py-3 px-4 font-heading font-semibold">Prosečan CPC</th>
-              <th className="py-3 px-4 font-heading font-semibold">Raspon</th>
+              <th className="py-3 px-3 font-heading font-semibold">Industrija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Prosečan CPC</th>
+              <th className="py-3 px-3 font-heading font-semibold">Raspon</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce — moda</td>
-              <td className="py-3 px-4">€0.15 - €0.40</td>
-              <td className="py-3 px-4">€0.08 - €0.80</td>
+              <td className="py-3 px-3 font-medium">eCommerce — moda</td>
+              <td className="py-3 px-3">€0.15 - €0.40</td>
+              <td className="py-3 px-3">€0.08 - €0.80</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">eCommerce — elektronika</td>
-              <td className="py-3 px-4">€0.20 - €0.50</td>
-              <td className="py-3 px-4">€0.10 - €1.00</td>
+              <td className="py-3 px-3 font-medium">eCommerce — elektronika</td>
+              <td className="py-3 px-3">€0.20 - €0.50</td>
+              <td className="py-3 px-3">€0.10 - €1.00</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Nameštaj</td>
-              <td className="py-3 px-4">€0.25 - €0.60</td>
-              <td className="py-3 px-4">€0.15 - €1.20</td>
+              <td className="py-3 px-3 font-medium">Nameštaj</td>
+              <td className="py-3 px-3">€0.25 - €0.60</td>
+              <td className="py-3 px-3">€0.15 - €1.20</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">B2B usluge</td>
-              <td className="py-3 px-4">€0.40 - €1.20</td>
-              <td className="py-3 px-4">€0.20 - €3.00</td>
+              <td className="py-3 px-3 font-medium">B2B usluge</td>
+              <td className="py-3 px-3">€0.40 - €1.20</td>
+              <td className="py-3 px-3">€0.20 - €3.00</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">SaaS (regionalni)</td>
-              <td className="py-3 px-4">€0.80 - €2.50</td>
-              <td className="py-3 px-4">€0.30 - €5.00</td>
+              <td className="py-3 px-3 font-medium">SaaS (regionalni)</td>
+              <td className="py-3 px-3">€0.80 - €2.50</td>
+              <td className="py-3 px-3">€0.30 - €5.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Nekretnine</td>
-              <td className="py-3 px-4">€0.30 - €0.80</td>
-              <td className="py-3 px-4">€0.15 - €1.50</td>
+              <td className="py-3 px-3 font-medium">Nekretnine</td>
+              <td className="py-3 px-3">€0.30 - €0.80</td>
+              <td className="py-3 px-3">€0.15 - €1.50</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Turizam</td>
-              <td className="py-3 px-4">€0.20 - €0.60</td>
-              <td className="py-3 px-4">€0.10 - €1.20</td>
+              <td className="py-3 px-3 font-medium">Turizam</td>
+              <td className="py-3 px-3">€0.20 - €0.60</td>
+              <td className="py-3 px-3">€0.10 - €1.20</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Finansije/Osiguranje</td>
-              <td className="py-3 px-4 text-red-600 font-semibold">€1.00 - €4.00</td>
-              <td className="py-3 px-4">€0.50 - €8.00</td>
+              <td className="py-3 px-3 font-medium">Finansije/Osiguranje</td>
+              <td className="py-3 px-3 text-red-600 font-semibold">€1.00 - €4.00</td>
+              <td className="py-3 px-3">€0.50 - €8.00</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Zdravstvo/Klinike</td>
-              <td className="py-3 px-4">€0.50 - €1.50</td>
-              <td className="py-3 px-4">€0.25 - €3.00</td>
+              <td className="py-3 px-3 font-medium">Zdravstvo/Klinike</td>
+              <td className="py-3 px-3">€0.50 - €1.50</td>
+              <td className="py-3 px-3">€0.25 - €3.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Obrazovanje</td>
-              <td className="py-3 px-4">€0.30 - €0.90</td>
-              <td className="py-3 px-4">€0.15 - €2.00</td>
+              <td className="py-3 px-3 font-medium">Obrazovanje</td>
+              <td className="py-3 px-3">€0.30 - €0.90</td>
+              <td className="py-3 px-3">€0.15 - €2.00</td>
             </tr>
           </tbody>
         </table>
@@ -192,7 +192,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Ove cene su za srpsko tržište. Za targeting Nemačke ili UK, pomnožite sa 3-5x.
         </p>
       </div>
@@ -215,7 +215,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Formula za minimalni budžet</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Mesečni budžet = (Ciljani broj klikova dnevno) × (Prosečan CPC) × 30 dana.
           Za smislene rezultate vam treba <strong>minimum 10-15 klikova dnevno</strong>.
         </p>
@@ -233,30 +233,30 @@ export default function KolikoKostaGoogleAdsPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Tip biznisa</th>
-              <th className="py-3 px-4 font-heading font-semibold">Preporučeni mesečni budžet</th>
+              <th className="py-3 px-3 font-heading font-semibold">Tip biznisa</th>
+              <th className="py-3 px-3 font-heading font-semibold">Preporučeni mesečni budžet</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Lokalni biznis</td>
-              <td className="py-3 px-4">€300 - €800</td>
+              <td className="py-3 px-3 font-medium">Lokalni biznis</td>
+              <td className="py-3 px-3">€300 - €800</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">eCommerce (manji)</td>
-              <td className="py-3 px-4">€500 - €1,500</td>
+              <td className="py-3 px-3 font-medium">eCommerce (manji)</td>
+              <td className="py-3 px-3">€500 - €1,500</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce (srednji)</td>
-              <td className="py-3 px-4">€1,500 - €5,000</td>
+              <td className="py-3 px-3 font-medium">eCommerce (srednji)</td>
+              <td className="py-3 px-3">€1,500 - €5,000</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">B2B usluge</td>
-              <td className="py-3 px-4">€800 - €2,500</td>
+              <td className="py-3 px-3 font-medium">B2B usluge</td>
+              <td className="py-3 px-3">€800 - €2,500</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">SaaS</td>
-              <td className="py-3 px-4">€1,500 - €5,000+</td>
+              <td className="py-3 px-3 font-medium">SaaS</td>
+              <td className="py-3 px-3">€1,500 - €5,000+</td>
             </tr>
           </tbody>
         </table>
@@ -264,7 +264,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Zašto ne preporučujem mikro-budžete</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Sa €100-200 mesečno nemate dovoljno podataka za optimizaciju, algoritmi nemaju šta da nauče i ne možete testirati različite pristupe. To je kao da otvorite restoran i reklamirate se samo jednom nedeljno.
         </p>
       </div>
@@ -278,21 +278,21 @@ export default function KolikoKostaGoogleAdsPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">Agencija</h3>
-          <p className="text-sm text-gray-600 mb-2"><strong>Cena:</strong> €500-2,500/mes. ili 10-20% ad spend-a</p>
+          <p className="text-base text-gray-600 mb-2"><strong>Cena:</strong> €500-2,500/mes. ili 10-20% ad spend-a</p>
           <p className="text-xs text-green-700 mb-1">+ Tim stručnjaka, alati, kontinuitet</p>
           <p className="text-xs text-red-600 mb-0">- Skuplje za manje budžete, manje personalizovano</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">Freelancer</h3>
-          <p className="text-sm text-gray-600 mb-2"><strong>Cena:</strong> €300-1,200/mes. ili €30-80/sat</p>
+          <p className="text-base text-gray-600 mb-2"><strong>Cena:</strong> €300-1,200/mes. ili €30-80/sat</p>
           <p className="text-xs text-green-700 mb-1">+ Personalizovan pristup, fleksibilnost</p>
           <p className="text-xs text-red-600 mb-0">- Zavisnost od jedne osobe, ograničen kapacitet</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">In-House</h3>
-          <p className="text-sm text-gray-600 mb-2"><strong>Cena:</strong> €800-2,500/mes. plata + alati</p>
+          <p className="text-base text-gray-600 mb-2"><strong>Cena:</strong> €800-2,500/mes. plata + alati</p>
           <p className="text-xs text-green-700 mb-1">+ Potpuna kontrola, duboko razumevanje biznisa</p>
           <p className="text-xs text-red-600 mb-0">- Skupo za manje firme, rizik od stagnacije</p>
         </div>
@@ -303,26 +303,26 @@ export default function KolikoKostaGoogleAdsPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Mesečni ad spend</th>
-              <th className="py-3 px-4 font-heading font-semibold">Preporučena opcija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Mesečni ad spend</th>
+              <th className="py-3 px-3 font-heading font-semibold">Preporučena opcija</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Do €1,000</td>
-              <td className="py-3 px-4">Freelancer ili DIY sa konsultacijama</td>
+              <td className="py-3 px-3 font-medium">Do €1,000</td>
+              <td className="py-3 px-3">Freelancer ili DIY sa konsultacijama</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">€1,000 - €5,000</td>
-              <td className="py-3 px-4">Freelancer/konsultant</td>
+              <td className="py-3 px-3 font-medium">€1,000 - €5,000</td>
+              <td className="py-3 px-3">Freelancer/konsultant</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">€5,000 - €20,000</td>
-              <td className="py-3 px-4">Specijalizovana agencija ili senior freelancer</td>
+              <td className="py-3 px-3 font-medium">€5,000 - €20,000</td>
+              <td className="py-3 px-3">Specijalizovana agencija ili senior freelancer</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">€20,000+</td>
-              <td className="py-3 px-4">Agencija + in-house koordinator</td>
+              <td className="py-3 px-3 font-medium">€20,000+</td>
+              <td className="py-3 px-3">Agencija + in-house koordinator</td>
             </tr>
           </tbody>
         </table>
@@ -375,7 +375,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Primer kalkulacije za eCommerce</p>
-        <div className="text-sm text-yellow-900 space-y-1">
+        <div className="text-base text-yellow-900 space-y-1">
           <p className="mb-1">AOV: €80 | Marža: 40% = €32 | Investicija: 50% marže</p>
           <p className="mb-1"><strong>Maksimalni CPA = €16</strong></p>
           <p className="mb-1">Conversion rate: 2%</p>
@@ -428,7 +428,7 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Ne zaboravite na vreme</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Ako radite sami, računajte na 3-6 meseci pre nego što stvarno naučite. To vreme ima cenu. Više o pravilnom postavljanju tracking-a u{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">vodiču za conversion tracking</Link>.
         </p>
@@ -444,21 +444,21 @@ export default function KolikoKostaGoogleAdsPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Preskočite ako...</p>
           <p className="font-semibold mb-2">Nemate jasno definisan proizvod ili uslugu</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">Google Ads ne popravlja loš product-market fit. Prvo validirajte ponudu, pa onda oglašavajte.</p>
+            <p className="text-base text-green-800 mb-0">Google Ads ne popravlja loš product-market fit. Prvo validirajte ponudu, pa onda oglašavajte.</p>
           </div>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Preskočite ako...</p>
           <p className="font-semibold mb-2">Marže su ispod 20% ili nema dovoljno potražnje</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">Sa niskim maržama je teško biti profitabilan. A ako niko ne pretražuje vaš proizvod, Search kampanje neće raditi — razmislite o Display ili Social oglašavanju.</p>
+            <p className="text-base text-green-800 mb-0">Sa niskim maržama je teško biti profitabilan. A ako niko ne pretražuje vaš proizvod, Search kampanje neće raditi — razmislite o Display ili Social oglašavanju.</p>
           </div>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Preskočite ako...</p>
           <p className="font-semibold mb-2">Sajt nije spreman ili nemate budžet za 3-6 meseci</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">Loš UX ubija i najbolje kampanje. A rezultati ne dolaze preko noći — potrebna su bar 2-3 meseca za optimizaciju.</p>
+            <p className="text-base text-green-800 mb-0">Loš UX ubija i najbolje kampanje. A rezultati ne dolaze preko noći — potrebna su bar 2-3 meseca za optimizaciju.</p>
           </div>
         </div>
       </div>
@@ -512,7 +512,7 @@ export default function KolikoKostaGoogleAdsPost() {
             Koliko minimalno treba uložiti u Google Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Tehnički minimum je €1 dnevno, ali za smislene rezultate računajte na minimum €300-500 mesečno za lokalne biznise i €1,000+ za eCommerce ili B2B.
           </div>
         </details>
@@ -521,7 +521,7 @@ export default function KolikoKostaGoogleAdsPost() {
             Da li se Google Ads isplati za mali biznis?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, ako imate jasnu vrednost po kupcu i konkurentne marže. Male firme često imaju prednost jer su fleksibilnije i mogu brže optimizovati.
           </div>
         </details>
@@ -530,7 +530,7 @@ export default function KolikoKostaGoogleAdsPost() {
             Koliko vremena treba da Google Ads počne da donosi rezultate?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Prve indikacije vidite za 2-4 nedelje. Prave rezultate i optimizovan nalog za 2-3 meseca. Stabilne performanse za 4-6 meseci.
           </div>
         </details>
@@ -539,7 +539,7 @@ export default function KolikoKostaGoogleAdsPost() {
             Zašto su cene toliko različite po industrijama?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Zbog konkurencije i vrednosti konverzije. Advokat može da plati €50 za klik jer jedan klijent vredi €5,000. Prodavnica majica ne može.
           </div>
         </details>
@@ -548,7 +548,7 @@ export default function KolikoKostaGoogleAdsPost() {
             Da li Google Ads košta više nego Meta Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Generalno da, CPC na Google-u je viši. Ali intent korisnika je jači — neko ko pretražuje &quot;kupi X&quot; je bliži kupovini od nekoga ko scrolla Instagram. Više o ovome u{" "}
             <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta" } }} className="underline">Google Ads vs Meta Ads poređenju</Link>.
           </div>

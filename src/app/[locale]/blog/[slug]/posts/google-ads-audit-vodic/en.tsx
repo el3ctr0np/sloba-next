@@ -29,23 +29,23 @@ export default function GoogleAdsAuditGuideEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#why-google-ads-audit-is-essential" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads audit is essential</a></li>
-          <li><a href="#what-a-good-google-ads-audit-covers" className="text-sm text-gray-700 hover:text-primary underline">What a good Google Ads audit covers</a></li>
-          <li><a href="#category-1-account-structure" className="text-sm text-gray-700 hover:text-primary underline">Category 1: Account structure</a></li>
-          <li><a href="#category-2-conversion-tracking" className="text-sm text-gray-700 hover:text-primary underline">Category 2: Conversion tracking</a></li>
-          <li><a href="#category-3-campaign-settings" className="text-sm text-gray-700 hover:text-primary underline">Category 3: Campaign settings</a></li>
-          <li><a href="#category-4-keywords-and-search-terms" className="text-sm text-gray-700 hover:text-primary underline">Category 4: Keywords and search terms</a></li>
-          <li><a href="#category-5-ads-and-extensions" className="text-sm text-gray-700 hover:text-primary underline">Category 5: Ads and extensions</a></li>
-          <li><a href="#category-6-audiences-and-remarketing" className="text-sm text-gray-700 hover:text-primary underline">Category 6: Audiences and remarketing</a></li>
-          <li><a href="#category-7-bidding-strategy" className="text-sm text-gray-700 hover:text-primary underline">Category 7: Bidding strategy</a></li>
-          <li><a href="#category-8-budget-and-allocation" className="text-sm text-gray-700 hover:text-primary underline">Category 8: Budget and allocation</a></li>
-          <li><a href="#quick-google-ads-audit-in-30-minutes" className="text-sm text-gray-700 hover:text-primary underline">Quick Google Ads audit in 30 minutes</a></li>
-          <li><a href="#scoring-system-for-google-ads-audit" className="text-sm text-gray-700 hover:text-primary underline">Scoring system for Google Ads audit</a></li>
-          <li><a href="#most-common-google-ads-audit-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most common Google Ads audit mistakes</a></li>
-          <li><a href="#frequently-asked-questions-about-google-ads-audit" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads audit</a></li>
-          <li><a href="#conclusion" className="text-sm text-gray-700 hover:text-primary underline">Conclusion</a></li>
-          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related guides</a></li>
-          <li><a href="#frequently-asked-questions-about-google-ads-audit" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads audit</a></li>
+          <li><a href="#why-google-ads-audit-is-essential" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why Google Ads audit is essential</a></li>
+          <li><a href="#what-a-good-google-ads-audit-covers" className="block py-1 text-base text-gray-700 hover:text-primary underline">What a good Google Ads audit covers</a></li>
+          <li><a href="#category-1-account-structure" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 1: Account structure</a></li>
+          <li><a href="#category-2-conversion-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 2: Conversion tracking</a></li>
+          <li><a href="#category-3-campaign-settings" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 3: Campaign settings</a></li>
+          <li><a href="#category-4-keywords-and-search-terms" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 4: Keywords and search terms</a></li>
+          <li><a href="#category-5-ads-and-extensions" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 5: Ads and extensions</a></li>
+          <li><a href="#category-6-audiences-and-remarketing" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 6: Audiences and remarketing</a></li>
+          <li><a href="#category-7-bidding-strategy" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 7: Bidding strategy</a></li>
+          <li><a href="#category-8-budget-and-allocation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 8: Budget and allocation</a></li>
+          <li><a href="#quick-google-ads-audit-in-30-minutes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Quick Google Ads audit in 30 minutes</a></li>
+          <li><a href="#scoring-system-for-google-ads-audit" className="block py-1 text-base text-gray-700 hover:text-primary underline">Scoring system for Google Ads audit</a></li>
+          <li><a href="#most-common-google-ads-audit-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Most common Google Ads audit mistakes</a></li>
+          <li><a href="#frequently-asked-questions-about-google-ads-audit" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads audit</a></li>
+          <li><a href="#conclusion" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conclusion</a></li>
+          <li><a href="#related-guides" className="block py-1 text-base text-gray-700 hover:text-primary underline">Related guides</a></li>
+          <li><a href="#frequently-asked-questions-about-google-ads-audit" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads audit</a></li>
         </ol>
       </nav>
 
@@ -61,7 +61,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">When to run Google Ads audit</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           <strong>Quarterly deep audit</strong> (2-4 hours, all 10 categories) + <strong>monthly quick check</strong> (30 min, 7 priority points). Additionally: immediately if performance suddenly drops, you&apos;re taking over account from previous agency, changing business model, or launching new campaign.
         </p>
       </div>
@@ -81,52 +81,52 @@ export default function GoogleAdsAuditGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Foundation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">1. Account structure</h3>
-          <p className="text-sm text-gray-600 mb-0">Logical campaign organization, naming conventions, hierarchy, labels</p>
+          <p className="text-base text-gray-600 mb-0">Logical campaign organization, naming conventions, hierarchy, labels</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Critical</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">2. Conversion Tracking</h3>
-          <p className="text-sm text-gray-600 mb-0">Whether conversion tracking works accurately and data is valid</p>
+          <p className="text-base text-gray-600 mb-0">Whether conversion tracking works accurately and data is valid</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Setup</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">3. Campaign settings</h3>
-          <p className="text-sm text-gray-600 mb-0">Location targeting, networks, ad schedule, device bid adjustments</p>
+          <p className="text-base text-gray-600 mb-0">Location targeting, networks, ad schedule, device bid adjustments</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Search</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">4. Keywords and search terms</h3>
-          <p className="text-sm text-gray-600 mb-0">Search Terms Report, negatives, Quality Score, match types, duplicates</p>
+          <p className="text-base text-gray-600 mb-0">Search Terms Report, negatives, Quality Score, match types, duplicates</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Creative</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">5. Ads and extensions</h3>
-          <p className="text-sm text-gray-600 mb-0">RSA quality, Ad Strength, sitelinks, callouts, structured snippets</p>
+          <p className="text-base text-gray-600 mb-0">RSA quality, Ad Strength, sitelinks, callouts, structured snippets</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Targeting</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">6. Audiences and remarketing</h3>
-          <p className="text-sm text-gray-600 mb-0">Remarketing lists, audience layering, converter exclusions</p>
+          <p className="text-base text-gray-600 mb-0">Remarketing lists, audience layering, converter exclusions</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">7. Bidding strategy</h3>
-          <p className="text-sm text-gray-600 mb-0">Smart Bidding setup, conversion volume, target realism, learning periods</p>
+          <p className="text-base text-gray-600 mb-0">Smart Bidding setup, conversion volume, target realism, learning periods</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Spend</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">8. Budget and allocation</h3>
-          <p className="text-sm text-gray-600 mb-0">Impression Share Lost (Budget), campaign budget distribution</p>
+          <p className="text-base text-gray-600 mb-0">Impression Share Lost (Budget), campaign budget distribution</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Analysis</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">9. Reporting and analytics</h3>
-          <p className="text-sm text-gray-600 mb-0">GA4 integration, attribution models, segment analysis, data discrepancies</p>
+          <p className="text-base text-gray-600 mb-0">GA4 integration, attribution models, segment analysis, data discrepancies</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advanced</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">10. Scripts and automation</h3>
-          <p className="text-sm text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — including <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> for offline changes</p>
+          <p className="text-base text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — including <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> for offline changes</p>
         </div>
       </div>
 
@@ -146,7 +146,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Campaigns organized logically</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Campaigns divided by product/service, geography, or funnel stage. Never everything in one mega campaign.</p>
+        <p className="text-base text-gray-600 mb-3">Campaigns divided by product/service, geography, or funnel stage. Never everything in one mega campaign.</p>
         <ul className="text-sm">
           <li><strong>Brand vs Non-brand SEPARATE</strong> — Completely different economics: brand has lower CPC, higher CVR, different strategy</li>
           <li><strong>Search and Display SEPARATE</strong> — Never together, except Performance Max (different metrics, different targeting)</li>
@@ -160,7 +160,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Groups thematically focused</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">One Ad Group = one theme/intent. In practice that means 5-20 keywords per Ad Group, not 50+.</p>
+        <p className="text-base text-gray-600 mb-3">One Ad Group = one theme/intent. In practice that means 5-20 keywords per Ad Group, not 50+.</p>
         <ul className="text-sm">
           <li><strong>No &quot;catch-all&quot; Ad Groups</strong> — All words for different themes in same group = worse Ad Strength and Quality Score</li>
           <li><strong>Keywords have similar intent</strong> — &quot;buy shoes&quot; and &quot;shoe price&quot; are similar intent; &quot;running shoes&quot; and &quot;dress shoes&quot; aren&apos;t</li>
@@ -173,14 +173,14 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">One campaign with 50+ Ad Groups, or Search + Display together in same campaign</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Restructure account: separate Search and Display, divide campaigns into smaller logical units (by product/geo/stage), reduce Ad Groups to 5-15 per campaign.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Restructure account: separate Search and Display, divide campaigns into smaller logical units (by product/geo/stage), reduce Ad Groups to 5-15 per campaign.</p>
           </div>
         </div>
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pro tip</p>
-        <p className="text-yellow-800 text-sm mb-0">If you have more than 10 campaigns, create labels (e.g., &quot;Priority&quot;, &quot;Testing&quot;, &quot;Paused-Low_ROI&quot;) for faster filtering in interface. For bulk changes, use <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> — it saves significant time during Google Ads audit analysis.</p>
+        <p className="text-yellow-800 text-base mb-0">If you have more than 10 campaigns, create labels (e.g., &quot;Priority&quot;, &quot;Testing&quot;, &quot;Paused-Low_ROI&quot;) for faster filtering in interface. For bulk changes, use <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> — it saves significant time during Google Ads audit analysis.</p>
       </div>
 
       <hr />
@@ -243,7 +243,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Location targeting</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Check that &quot;People in your targeted locations&quot; is selected, NOT &quot;People interested in your locations&quot;. Default option shows ads to people Google <em>thinks</em> are interested in your location, even if they&apos;re on another continent.</p>
+        <p className="text-base text-gray-600 mb-3">Check that &quot;People in your targeted locations&quot; is selected, NOT &quot;People interested in your locations&quot;. Default option shows ads to people Google <em>thinks</em> are interested in your location, even if they&apos;re on another continent.</p>
         <ul className="text-sm">
           <li><strong>Location bid adjustments active</strong> — Increase bid for best performing geo, decrease for worst</li>
           <li><strong>Exclude non-converting locations</strong> — If location has 0% CVR after 50+ clicks, exclude</li>
@@ -256,7 +256,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Networks</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Display Network must be DISABLED in Search campaigns. Search Partners evaluate after 30 days — if they have worse CPA than Search, disable.</p>
+        <p className="text-base text-gray-600 mb-3">Display Network must be DISABLED in Search campaigns. Search Partners evaluate after 30 days — if they have worse CPA than Search, disable.</p>
         <ul className="text-sm">
           <li><strong>Search campaigns</strong> = only Google Search (uncheck Display + careful with Search Partners)</li>
           <li><strong>Display campaigns</strong> = only Display Network (never together with Search, different economics)</li>
@@ -269,7 +269,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad schedule (days/hours)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Analyze performance by hours and days (Day &amp; Hour report). If conversions drop after 8pm or weekends, decrease bid or pause those slots.</p>
+        <p className="text-base text-gray-600 mb-3">Analyze performance by hours and days (Day &amp; Hour report). If conversions drop after 8pm or weekends, decrease bid or pause those slots.</p>
         <ul className="text-sm">
           <li><strong>Bid adjustments for time</strong> — Increase +20-50% for best time slots, decrease -30-50% for worst</li>
           <li><strong>B2B campaigns</strong> — Usually shouldn&apos;t run weekends (office hours only: 9am-5pm, Mon-Fri)</li>
@@ -282,7 +282,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Devices (Desktop/Mobile/Tablet)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Analyze performance by devices. If mobile has 2x worse conversion rate, decrease bid by -30% to -50%.</p>
+        <p className="text-base text-gray-600 mb-3">Analyze performance by devices. If mobile has 2x worse conversion rate, decrease bid by -30% to -50%.</p>
         <ul className="text-sm">
           <li><strong>Device bid adjustments</strong> — Increase for best performing device, decrease for worst</li>
           <li><strong>Mobile-friendly landing page</strong> — If mobile LP isn&apos;t optimized, decrease mobile bid until you fix UX</li>
@@ -353,7 +353,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RSA quality</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Each Ad Group must have minimum 1 Responsive Search Ad with 10-15 headlines and 4 descriptions.</p>
+        <p className="text-base text-gray-600 mb-3">Each Ad Group must have minimum 1 Responsive Search Ad with 10-15 headlines and 4 descriptions.</p>
         <ul className="text-sm">
           <li><strong>Ad Strength is &quot;Good&quot; or &quot;Excellent&quot;</strong> — Never &quot;Poor&quot; (Google literally tells you ad is bad)</li>
           <li><strong>Headlines contain keywords</strong> — Minimum 3-4 headline variations with primary keywords from that Ad Group</li>
@@ -368,7 +368,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Extensions (sitelinks, callouts...)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Extensions increase CTR by 10-15% and take more space on SERP. Each campaign must have:</p>
+        <p className="text-base text-gray-600 mb-3">Extensions increase CTR by 10-15% and take more space on SERP. Each campaign must have:</p>
         <ul className="text-sm">
           <li><strong>Sitelinks (min 4)</strong> — Links to different pages (categories, about, contact), each relevant for that campaign</li>
           <li><strong>Callouts (min 4)</strong> — Short bullet point benefits: &quot;Free shipping&quot;, &quot;24/7 support&quot;, &quot;30-day guarantee&quot;</li>
@@ -384,7 +384,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">Ad Strength &quot;Poor&quot;, only 3-5 headlines, generic copy that doesn&apos;t differentiate from competition</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Complete RSA to 10-15 headlines (add variations with keywords, numbers, CTA, USP), use all 4 descriptions, remove excess pinning so Google tests combinations.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Complete RSA to 10-15 headlines (add variations with keywords, numbers, CTA, USP), use all 4 descriptions, remove excess pinning so Google tests combinations.</p>
           </div>
         </div>
       </div>
@@ -394,7 +394,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">No extensions, or all sitelinks lead to same homepage</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Create 4 sitelinks to different pages (product categories, best sellers, about, contact), 4 callouts with specific benefits (not generic &quot;quality&quot;), structured snippets with product/service lists.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Create 4 sitelinks to different pages (product categories, best sellers, about, contact), 4 callouts with specific benefits (not generic &quot;quality&quot;), structured snippets with product/service lists.</p>
           </div>
         </div>
       </div>
@@ -437,7 +437,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Recommendation</p>
-        <p className="text-blue-800 text-sm mb-0">Create dedicated remarketing campaigns with higher bid (+50-100% vs cold traffic) and targeted ad copy referencing their previous visit. Remarketing has 3-5x better conversion rate, so you can afford higher CPC and still be profitable.</p>
+        <p className="text-blue-800 text-base mb-0">Create dedicated remarketing campaigns with higher bid (+50-100% vs cold traffic) and targeted ad copy referencing their previous visit. Remarketing has 3-5x better conversion rate, so you can afford higher CPC and still be profitable.</p>
       </div>
 
       <p>
@@ -456,7 +456,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Strategy matches goal and phase</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">I recommend:</p>
+        <p className="text-base text-gray-600 mb-3">I recommend:</p>
         <ul className="text-sm">
           <li><strong>Maximize Clicks or Manual CPC</strong> — New campaign without conversions, focus on traffic gathering and data collection</li>
           <li><strong>Maximize Conversions</strong> — When you have 15-30 conversions monthly, but don&apos;t have clear target CPA yet</li>
@@ -471,7 +471,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Enough conversions for Smart Bidding</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Google recommends 15+ conversions in last 30 days for Maximize Conversions, 30+ for Target CPA, 50+ for Target ROAS. Below that, algorithm doesn&apos;t have enough signals for valid optimization.</p>
+        <p className="text-base text-gray-600 mb-3">Google recommends 15+ conversions in last 30 days for Maximize Conversions, 30+ for Target CPA, 50+ for Target ROAS. Below that, algorithm doesn&apos;t have enough signals for valid optimization.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -479,7 +479,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target CPA/ROAS realistic and achievable</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Target shouldn&apos;t be 50% better than current performance. I recommend target be 10-20% improvement from baseline, then gradually tighten it over several weeks.</p>
+        <p className="text-base text-gray-600 mb-3">Target shouldn&apos;t be 50% better than current performance. I recommend target be 10-20% improvement from baseline, then gradually tighten it over several weeks.</p>
         <ul className="text-sm">
           <li><strong>Example:</strong> If current CPA is $65, don&apos;t set target $30 immediately — start with $55, then after 2 weeks $50, etc.</li>
           <li><strong>Learning period</strong> — Wait 7-14 days after each change before drawing conclusions</li>
@@ -491,7 +491,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
           <p className="font-semibold mb-2">Smart Bidding with &lt;10 conversions monthly, or unrealistic target (e.g., target CPA $15 when current is $80)</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Return to Manual CPC or Maximize Conversions until you collect more conversions (30+ monthly). If already using Smart Bidding, change target to be more realistic (10-20% improvement, not 50%+).</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Return to Manual CPC or Maximize Conversions until you collect more conversions (30+ monthly). If already using Smart Bidding, change target to be more realistic (10-20% improvement, not 50%+).</p>
           </div>
         </div>
       </div>
@@ -582,7 +582,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pro tip</p>
-        <p className="text-yellow-800 text-sm mb-0">Create Google Sheet with scoring for each category (1-5 scale). When doing monthly quick audit, just update scoring and track trend — is it going up (optimizations working) or down (new problems).</p>
+        <p className="text-yellow-800 text-base mb-0">Create Google Sheet with scoring for each category (1-5 scale). When doing monthly quick audit, just update scoring and track trend — is it going up (optimizations working) or down (new problems).</p>
       </div>
 
       <hr />
@@ -596,42 +596,42 @@ export default function GoogleAdsAuditGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Score</th>
-              <th className="py-3 px-4 font-heading font-semibold">Status</th>
-              <th className="py-3 px-4 font-heading font-semibold">Description</th>
-              <th className="py-3 px-4 font-heading font-semibold">Action</th>
+              <th className="py-3 px-3 font-heading font-semibold">Score</th>
+              <th className="py-3 px-3 font-heading font-semibold">Status</th>
+              <th className="py-3 px-3 font-heading font-semibold">Description</th>
+              <th className="py-3 px-3 font-heading font-semibold">Action</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">5</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
-              <td className="py-3 px-4">All checkpoints covered, best practices implemented</td>
-              <td className="py-3 px-4">Maintain, monitor monthly</td>
+              <td className="py-3 px-3 font-medium">5</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
+              <td className="py-3 px-3">All checkpoints covered, best practices implemented</td>
+              <td className="py-3 px-3">Maintain, monitor monthly</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">4</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
-              <td className="py-3 px-4">Most covered, minor improvements possible</td>
-              <td className="py-3 px-4">Minor tweaks, low priority (schedule for next month or two)</td>
+              <td className="py-3 px-3 font-medium">4</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
+              <td className="py-3 px-3">Most covered, minor improvements possible</td>
+              <td className="py-3 px-3">Minor tweaks, low priority (schedule for next month or two)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">3</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Average</span></td>
-              <td className="py-3 px-4">Basics covered, but missing important optimizations</td>
-              <td className="py-3 px-4">Improvement needed, plan 1-2 weeks for fixes</td>
+              <td className="py-3 px-3 font-medium">3</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Average</span></td>
+              <td className="py-3 px-3">Basics covered, but missing important optimizations</td>
+              <td className="py-3 px-3">Improvement needed, plan 1-2 weeks for fixes</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">2</td>
-              <td className="py-3 px-4"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Poor</span></td>
-              <td className="py-3 px-4">Major gaps, wasted spend high (15-25%+)</td>
-              <td className="py-3 px-4">Priority fix, schedule immediately (this week)</td>
+              <td className="py-3 px-3 font-medium">2</td>
+              <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Poor</span></td>
+              <td className="py-3 px-3">Major gaps, wasted spend high (15-25%+)</td>
+              <td className="py-3 px-3">Priority fix, schedule immediately (this week)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">1</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
-              <td className="py-3 px-4">Fundamentally not working, serious problems</td>
-              <td className="py-3 px-4">Urgent action today, maybe pause campaigns until fixed</td>
+              <td className="py-3 px-3 font-medium">1</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
+              <td className="py-3 px-3">Fundamentally not working, serious problems</td>
+              <td className="py-3 px-3">Urgent action today, maybe pause campaigns until fixed</td>
             </tr>
           </tbody>
         </table>
@@ -643,7 +643,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">My experience with scoring</p>
-        <p className="text-blue-800 text-sm mb-0">When I take over new account for management, average score is 2.5-3.0 (basic setup ok, but many gaps). After first month of optimizations, score goes to 3.5-4.0. Score 4.5+ is hard to maintain long-term because requires constant proactive work and testing.</p>
+        <p className="text-blue-800 text-base mb-0">When I take over new account for management, average score is 2.5-3.0 (basic setup ok, but many gaps). After first month of optimizations, score goes to 3.5-4.0. Score 4.5+ is hard to maintain long-term because requires constant proactive work and testing.</p>
       </div>
 
       <hr />
@@ -658,7 +658,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #1</p>
           <p className="font-semibold mb-2">Focusing only on surface-level metrics (CTR, CPC) without looking at conversions and profitability</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Always audit CPA and ROAS (or conversion rate if you don&apos;t have revenue tracking). CTR and CPC are means, not goal — you can have high CTR and bad ROI.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Always audit CPA and ROAS (or conversion rate if you don&apos;t have revenue tracking). CTR and CPC are means, not goal — you can have high CTR and bad ROI.</p>
           </div>
         </div>
 
@@ -666,7 +666,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
           <p className="font-semibold mb-2">Skipping Search Terms Report — most important part of audit that uncovers wasted spend</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Search Terms Report MUST be part of every Google Ads audit. Filter top 50 by cost (30 days) and check if relevant. Add negatives for all irrelevant with $15+ spend.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Search Terms Report MUST be part of every Google Ads audit. Filter top 50 by cost (30 days) and check if relevant. Add negatives for all irrelevant with $15+ spend.</p>
           </div>
         </div>
 
@@ -674,7 +674,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
           <p className="font-semibold mb-2">Changing 10 things at once so you don&apos;t know what impacted results</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> After audit, prioritize top 3-5 actions and do them gradually (1-2 weeks between changes, wait learning period). This way you can measure impact of each optimization individually.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> After audit, prioritize top 3-5 actions and do them gradually (1-2 weeks between changes, wait learning period). This way you can measure impact of each optimization individually.</p>
           </div>
         </div>
 
@@ -682,7 +682,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #4</p>
           <p className="font-semibold mb-2">Looking only at last 7 days of data (too short for valid conclusions)</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Audit last 30-90 days of data. 7 days is too short (weekend vs weekday distortion, seasonality, not enough conversions for statistical significance).</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Audit last 30-90 days of data. 7 days is too short (weekend vs weekday distortion, seasonality, not enough conversions for statistical significance).</p>
           </div>
         </div>
 
@@ -690,7 +690,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
           <p className="font-semibold mb-2">Pausing campaigns/keywords with &quot;bad&quot; performance without diagnosing WHY they&apos;re bad</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Before pausing, diagnose: Is problem keyword (bad intent), ad copy (low CTR), landing page (bad CVR), or targeting (wrong audience)? Maybe fix is simple — new LP or better ad copy.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Before pausing, diagnose: Is problem keyword (bad intent), ad copy (low CTR), landing page (bad CVR), or targeting (wrong audience)? Maybe fix is simple — new LP or better ad copy.</p>
           </div>
         </div>
 
@@ -698,7 +698,7 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #6</p>
           <p className="font-semibold mb-2">Ignoring benchmarks — you don&apos;t know if your CPA $80 is good or bad</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Compare metrics with industry benchmarks (Google publishes average CPC/CVR by industries). Also compare performance with your baseline (3-6 months ago) to see trend.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Compare metrics with industry benchmarks (Google publishes average CPC/CVR by industries). Also compare performance with your baseline (3-6 months ago) to see trend.</p>
           </div>
         </div>
       </div>
@@ -712,7 +712,7 @@ export default function GoogleAdsAuditGuideEN() {
             How often to run Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">I recommend <strong>quarterly deep audit</strong> (2-4 hours, all 10 categories + 80+ checkpoints) + <strong>monthly quick audit</strong> (30 min, 8 priority checkpoints). Also run audit immediately if: (1) performance suddenly drops, (2) taking over account from other agency, (3) launching new products/services, or (4) changing business model.</p>
           </div>
         </details>
@@ -722,7 +722,7 @@ export default function GoogleAdsAuditGuideEN() {
             How much does professional Google Ads audit cost?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-3">In practice I see range from $300 to $2,500+ depending on account size, campaign number, and audit depth.</p>
             <ul className="text-sm mb-0">
               <li><strong>Basic audit</strong> (small account, 2-3 campaigns, 1 market): $300-500</li>
@@ -738,7 +738,7 @@ export default function GoogleAdsAuditGuideEN() {
             Can I run Google Ads audit myself or do I need specialist?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">You can yourself if you follow checklist from this guide and have technical understanding of Google Ads. However, specialist or agency will identify problems faster because they see 10-20+ accounts monthly and know what&apos;s &quot;normal&quot; vs &quot;red flag&quot;. Also, external view eliminates confirmation bias. If ad spend is $5K+ monthly, I recommend at least yearly professional Google Ads audit for second opinion.</p>
           </div>
         </details>
@@ -748,7 +748,7 @@ export default function GoogleAdsAuditGuideEN() {
             What&apos;s most common problem Google Ads audit uncovers?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">Top 3 problems are: (1) <strong>Irrelevant search terms</strong> — waste 15-30% of budget because no negative keywords list or not maintained, (2) <strong>Conversion tracking doesn&apos;t work accurately</strong> — not working or recording duplicate conversions, so algorithm makes bad decisions, (3) <strong>Bad budget allocation</strong> — bad campaigns spend too much, good campaigns limited by budget.</p>
           </div>
         </details>
@@ -758,7 +758,7 @@ export default function GoogleAdsAuditGuideEN() {
             How much time between audit and visible results?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0"><strong>Quick wins</strong> (adding negative keywords, disabling Display Network from Search campaigns, budget reallocation) deliver results in 7-14 days. <strong>Medium optimizations</strong> (ad copy improvement, bidding adjustments) in 2-4 weeks. <strong>Deep changes</strong> (restructuring campaigns, new bidding strategy) may require 4-8 weeks. Smart Bidding always has 7-14 day learning period after each change.</p>
           </div>
         </details>
@@ -768,7 +768,7 @@ export default function GoogleAdsAuditGuideEN() {
             What after Google Ads audit — who implements optimizations?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">Depends on agreement and your resources. Some specialists give only audit report with prioritized recommendations (DIY implementation). Others offer audit + implementation as package. Third offer audit + ongoing management (monthly management). I recommend implementation by same person who did audit because they know context, priorities, and reasons behind each recommendation.</p>
           </div>
         </details>
@@ -799,7 +799,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Need professional Google Ads audit?</p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">I run audits for accounts of all sizes — from startups to enterprise clients. You get 80+ checkpoint audit report + prioritized action plan + implementation recommendations + follow-up consultation.</p>
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">I run audits for accounts of all sizes — from startups to enterprise clients. You get 80+ checkpoint audit report + prioritized action plan + implementation recommendations + follow-up consultation.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Schedule free consultation</Link>
       </div>
 
@@ -867,7 +867,7 @@ export default function GoogleAdsAuditGuideEN() {
             How often should I do a Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             A full audit every 3-6 months is the minimum for active accounts. For new accounts — mandatory after the first 30 days (to catch early issues). For high-spend accounts ($5,000+/month), a monthly mini-audit is recommended. Ongoing optimization is not a substitute for a periodic deep review of the entire account structure.
           </div>
         </details>
@@ -877,7 +877,7 @@ export default function GoogleAdsAuditGuideEN() {
             What should I check first in a Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Five points that cover 80% of problems: 1) Conversion tracking — are you tracking the right actions? 2) Search Terms report — what queries are triggering your ads? 3) Quality Score — are keywords relevant? 4) Wasted spend — where is money going without results? 5) Landing page — does the page you&apos;re sending traffic to actually convert?
           </div>
         </details>
@@ -887,7 +887,7 @@ export default function GoogleAdsAuditGuideEN() {
             How much does a Google Ads audit cost?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Free basic audits (surface-level reviews) are offered by many agencies as lead magnets. Professional audits with detailed analysis and an action plan cost $500-2,000 in the US/UK, depending on account size and auditor experience. Consider that one well-executed audit can save 20-40% of monthly budget — the ROI is usually excellent.
           </div>
         </details>
@@ -897,7 +897,7 @@ export default function GoogleAdsAuditGuideEN() {
             Can I audit my own Google Ads account?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes, with a good checklist you can cover the basic issues — this guide gives you exactly that. The limitation of a DIY audit is that you may miss subtle problems an experienced specialist spots immediately (e.g., poor campaign structure, suboptimal bidding setup, missed opportunities). An external perspective always brings a fresh viewpoint.
           </div>
         </details>
@@ -907,7 +907,7 @@ export default function GoogleAdsAuditGuideEN() {
             What should I do after a Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Build a prioritized action list: Urgent (this week) — conversion tracking errors, active issues burning budget. High priority (this month) — negative keywords, ad improvements, Quality Score. Optimization (next 3 months) — bidding strategy testing, landing page optimization, campaign expansion. Without prioritization, the audit remains just a list of problems.
           </div>
         </details>

@@ -41,14 +41,14 @@ export default function GoogleAdsMistakesEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#why-google-ads-mistakes-are-expensive" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads mistakes are expensive</a></li>
-          <li><a href="#account-structure-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Account structure mistakes</a></li>
-          <li><a href="#keyword-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Keyword mistakes</a></li>
-          <li><a href="#ad-copy-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Ad copy mistakes</a></li>
-          <li><a href="#measurement-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Measurement mistakes</a></li>
-          <li><a href="#how-to-create-action-plan-for-fixes" className="text-sm text-gray-700 hover:text-primary underline">How to create action plan for fixes</a></li>
-          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
-          <li><a href="#frequently-asked-questions-about-google-ads-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads mistakes</a></li>
+          <li><a href="#why-google-ads-mistakes-are-expensive" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why Google Ads mistakes are expensive</a></li>
+          <li><a href="#account-structure-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Account structure mistakes</a></li>
+          <li><a href="#keyword-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Keyword mistakes</a></li>
+          <li><a href="#ad-copy-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Ad copy mistakes</a></li>
+          <li><a href="#measurement-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Measurement mistakes</a></li>
+          <li><a href="#how-to-create-action-plan-for-fixes" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to create action plan for fixes</a></li>
+          <li><a href="#frequently-asked-questions" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-about-google-ads-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads mistakes</a></li>
         </ol>
       </nav>
 
@@ -76,7 +76,7 @@ export default function GoogleAdsMistakesEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Most common pattern</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Client spends $1,000/£800 monthly, but $300/£240 goes to clicks that will
           never convert. After fixes, same budget delivers 40-60% more results.
         </p>
@@ -99,13 +99,13 @@ export default function GoogleAdsMistakesEN() {
           Everything in one campaign — products, services, brand and non-brand keywords,
           all mixed together
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Impossible to understand what works and what doesn't. Can't optimize
           budget when everything's in one basket. <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> drops because ads can't
           be relevant to everything.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> I recommend restructuring by logical
             segments — brand campaign separate from non-brand, products by
             categories, different goals in different campaigns. This gives you
@@ -122,13 +122,13 @@ export default function GoogleAdsMistakesEN() {
           Bad campaign and ad group naming — &quot;Campaign 1&quot;, &quot;Ad group test&quot;,
           no structure
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           After 3 months you don't know what's what. Optimization becomes
           guesswork. Can't quickly find campaign when you need to make
           a change.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of generic names, use clear
             convention — e.g., &quot;US_Search_Brand_Product-X&quot; or
             &quot;UK_Shopping_Returning_Category-Y&quot;. Include geography, campaign
@@ -145,13 +145,13 @@ export default function GoogleAdsMistakesEN() {
           Mixing Search and Display in same campaign — Google defaults to including
           Display Network
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Display has completely different characteristics from Search. Lower CTR,
           different intent, different metrics. When everything's mixed, you can't see where
           budget is going.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Immediately disable Display Network from
             Search campaigns (Campaign settings → Networks). If you want Display,
             create separate campaigns with specific targeting and different
@@ -172,13 +172,13 @@ export default function GoogleAdsMistakesEN() {
           No or minimal negative keywords — paying for &quot;free&quot;, &quot;job&quot;,
           &quot;course&quot;, &quot;DIY&quot;
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Google shows your ads for searches without purchase intent. 20-30%
           of budget goes to clicks that will never convert because people
           are looking for free solutions or information.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of waiting for mistakes to hit your bill,
             create starter lists immediately — add &quot;free&quot;, &quot;cheap&quot;,
             &quot;job&quot;, &quot;ads&quot;, &quot;course&quot;, &quot;how to&quot;, &quot;DIY&quot; as account-level
@@ -201,13 +201,13 @@ export default function GoogleAdsMistakesEN() {
         <p className="font-semibold mb-2">
           Too broad match types — everything on Broad Match without control
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Broad match gives Google too much freedom to interpret your
           keywords. Ads show for totally irrelevant searches that
           Google &quot;thinks&quot; are relevant.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> I recommend switching proven keywords (ones
             already converting) to Phrase or Exact match. Keep Broad match
             only for discovery — and with strong negative keyword list
@@ -224,13 +224,13 @@ export default function GoogleAdsMistakesEN() {
           Never look at Search Terms Report — don't know what you're actually
           paying for
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Search Terms Report shows actual user searches that triggered
           your ads. Without regular review, you're paying for tons of
           irrelevant things and missing good new keywords.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of ignoring, make weekly
             ritual — open Search Terms for previous week, add irrelevant
             as negative keywords, extract good terms as new positive
@@ -251,12 +251,12 @@ export default function GoogleAdsMistakesEN() {
           Generic ad copy — &quot;Quality&quot;, &quot;Best prices&quot;, &quot;Fast delivery&quot; like
           everyone else
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Your ads are identical to competitors. No reason to click on
           yours specifically. Lower CTR means higher CPC and worse Ad Rank.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of generic phrases, add
             specific numbers (&quot;98% positive reviews&quot;), unique benefits
             (&quot;Free installation in London and Manchester&quot;), social proof
@@ -272,12 +272,12 @@ export default function GoogleAdsMistakesEN() {
         <p className="font-semibold mb-2">
           No ad testing — only one ad per ad group
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Without A/B testing you don't know if you can do better. Missing opportunity
           to continuously improve CTR and conversion rate through tests.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> I recommend minimum 2-3 ads per ad
             group. Test different headlines (benefit vs feature), different
             CTAs (&quot;Order today&quot; vs &quot;Learn more&quot;), different value
@@ -294,12 +294,12 @@ export default function GoogleAdsMistakesEN() {
           Missing ad extensions — text ad without extensions takes
           minimal space
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Smaller visual footprint means lower CTR. Ad Rank drops. You pay more
           per click. Extensions are free and significantly improve performance.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of empty ads, add minimum:
             4-6 sitelinks, 4+ callouts, structured snippets (brands,
             categories, services), call extension if you have phone, location
@@ -319,13 +319,13 @@ export default function GoogleAdsMistakesEN() {
         <p className="font-semibold mb-2">
           No conversion tracking or it's incorrectly set up
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           This is fundamental mistake. Without proper conversion measurement,
           you optimize wrong metrics. Smart Bidding can't work.
           You don't know what's working.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of improvising, read{" "}
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
@@ -347,13 +347,13 @@ export default function GoogleAdsMistakesEN() {
           Tracking wrong conversions — page views, form view, &quot;thank you&quot;
           duplicates
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Suspiciously high conversion rates (20%+) or conversions that don't
           match actual sales/leads. Google algorithm optimizes
           toward wrong actions.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> I recommend hierarchy: primary
             conversion = valuable action (purchase, qualified lead), secondary
             conversions = micro-actions (add to cart, pricing view) but marked
@@ -369,13 +369,13 @@ export default function GoogleAdsMistakesEN() {
         <p className="font-semibold mb-2">
           Ignoring attribution model — using Last Click for long sales cycle
         </p>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Last Click gives all credit to last touchpoint. If you have B2B
           with 30-60 day cycle, campaigns creating awareness don't
           get credit. Result: shutting down campaigns that actually work.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of Last Click for everything, use
             Data-Driven attribution if you have enough data (400+ conversions
             monthly). For shorter cycle (eCommerce), Last Click is OK. For longer
@@ -386,7 +386,7 @@ export default function GoogleAdsMistakesEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Measurement mistakes are most critical. If you're not measuring correctly, all
           decisions are guesswork. Before fixing anything else,
           fix tracking.
@@ -411,10 +411,10 @@ export default function GoogleAdsMistakesEN() {
             Fix tracking first
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Without proper conversion measurement, all other decisions are guesswork.
         </p>
-        <ul className="text-sm">
+        <ul className="text-base">
           <li>Set up conversion tracking correctly</li>
           <li>Verify conversions match actual actions</li>
           <li>Add Enhanced Conversions</li>
@@ -431,10 +431,10 @@ export default function GoogleAdsMistakesEN() {
             Stop budget leaks
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Immediately cut most obvious sources of wasted money.
         </p>
-        <ul className="text-sm">
+        <ul className="text-base">
           <li>Add negative keywords (starter lists)</li>
           <li>Disable Display Network from Search campaigns</li>
           <li>Set location targeting to &quot;People in&quot; only</li>
@@ -451,10 +451,10 @@ export default function GoogleAdsMistakesEN() {
             Restructure account
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Create logical structure for future optimizations.
         </p>
-        <ul className="text-sm">
+        <ul className="text-base">
           <li>Separate brand and non-brand campaigns</li>
           <li>Organize by products/services/categories</li>
           <li>Create clear naming conventions</li>
@@ -471,10 +471,10 @@ export default function GoogleAdsMistakesEN() {
             Improve ads
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Higher CTR means lower CPC and better Ad Rank.
         </p>
-        <ul className="text-sm">
+        <ul className="text-base">
           <li>Add all relevant ad extensions</li>
           <li>Create 2-3 ads per ad group for testing</li>
           <li>Add specific numbers and unique benefits to copy</li>
@@ -491,10 +491,10 @@ export default function GoogleAdsMistakesEN() {
             Optimize continuously
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Optimization isn't one-time activity, it's a process.
         </p>
-        <ul className="text-sm">
+        <ul className="text-base">
           <li>Weekly Search Terms review</li>
           <li>Monthly ad testing review and structure check</li>
           <li>Quarterly complete audit</li>
@@ -529,7 +529,7 @@ export default function GoogleAdsMistakesEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           In my audits, 80% of accounts have minimum 3-5 of these mistakes. Accounts
           managed by someone without experience often have 8+. Even accounts
           run by agencies sometimes have 2-3 fundamental mistakes (most often in
@@ -545,7 +545,7 @@ export default function GoogleAdsMistakesEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Measurement mistakes — absence or incorrect conversion tracking. Without
           proper measurement, all decisions are guesswork. Smart Bidding doesn't work.
           You don't know which campaign brings results. Second most expensive mistake is
@@ -561,7 +561,7 @@ export default function GoogleAdsMistakesEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Most you can fix yourself — these mistakes aren't technically complex, just require
           time and attention. I recommend reading linked guides (conversion
           tracking, negative keywords, Quality Score) and working step by step.
@@ -577,7 +577,7 @@ export default function GoogleAdsMistakesEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Depends on mistake. Negative keywords have instant effect — as soon as you
           add them, you stop paying for those searches. Structural changes
           (campaigns, ad groups) need 1-2 weeks to stabilize. Smart
@@ -594,7 +594,7 @@ export default function GoogleAdsMistakesEN() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Make systematic review: 1) Check if you have conversion
           tracking set up and numbers match reality, 2) Open
           Search Terms Report for past week — see irrelevant searches?
@@ -612,7 +612,7 @@ export default function GoogleAdsMistakesEN() {
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Need help fixing your Google Ads account?
         </p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           Professional audit of your account with detailed mistake analysis,
           prioritization, and action plan for fixes. Analysis includes all
           campaigns, keywords, tracking, structure, and performance.
@@ -687,7 +687,7 @@ export default function GoogleAdsMistakesEN() {
             What is the most expensive Google Ads mistake?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Lack of negative keywords. Without them, your budget gets spent on irrelevant searches. An average account without negative keywords wastes 20-40% of budget on unproductive clicks. Regular search terms report analysis is mandatory.
           </div>
         </details>
@@ -697,7 +697,7 @@ export default function GoogleAdsMistakesEN() {
             Should I use broad match keywords?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Broad match can work with Smart Bidding and enough conversions (30+/month). But for smaller accounts, phrase match and exact match give better control. The most common mistake is using broad match without negative keywords — that&apos;s a recipe for wasting money.
           </div>
         </details>
@@ -707,7 +707,7 @@ export default function GoogleAdsMistakesEN() {
             How many ad groups should I have per campaign?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             5-20 ad groups for most campaigns. Too many (50+) makes management difficult and dilutes budget. Too few (1-2) means poor relevance. Each ad group should have thematically related keywords and matching ads.
           </div>
         </details>
@@ -717,7 +717,7 @@ export default function GoogleAdsMistakesEN() {
             Why is my CTR declining even though I haven&apos;t changed anything?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Most common reasons: seasonality, new competitors, ad fatigue (same ad running too long), changes in SERP layout, or Quality Score decline. Solution: refresh ads regularly (every 4-6 weeks), monitor Auction Insights, and test new variants.
           </div>
         </details>
@@ -727,7 +727,7 @@ export default function GoogleAdsMistakesEN() {
             Should I follow all Google Ads recommendations?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             No. Many recommendations serve Google&apos;s goal to increase your spending. Ignore: &quot;switch to broad match&quot;, &quot;increase budget by 50%&quot;, auto-apply changes. Use: RSA recommendations for ads, negative keyword suggestions, and technical improvements.
           </div>
         </details>

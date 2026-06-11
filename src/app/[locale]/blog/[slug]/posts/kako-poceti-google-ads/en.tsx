@@ -78,7 +78,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">From my experience</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           I started out as a freelancer, running first ads for local businesses around Nova Pazova, Serbia. Budgets were under €500. But even at that scale, the results were real and measurable. What I learned early on is that the platform rewards understanding — not just money. The businesses that succeeded weren&apos;t necessarily the ones with bigger budgets. They were the ones who understood what they were doing and why.
         </p>
       </div>
@@ -102,7 +102,7 @@ export default function KakoPocetiGoogleAdsEN() {
             </span>
             <div>
               <strong>Keyword targeting</strong>
-              <p className="text-sm text-gray-600 mt-1 mb-0">
+              <p className="text-base text-gray-600 mt-1 mb-0">
                 You choose which search terms should trigger your ads. When someone searches for those terms, your campaign enters the auction.
               </p>
             </div>
@@ -113,7 +113,7 @@ export default function KakoPocetiGoogleAdsEN() {
             </span>
             <div>
               <strong>Real-time auction</strong>
-              <p className="text-sm text-gray-600 mt-1 mb-0">
+              <p className="text-base text-gray-600 mt-1 mb-0">
                 Google runs a lightning-fast auction for every single search. Your bid, your Quality Score, and expected impact all factor into who wins.
               </p>
             </div>
@@ -124,7 +124,7 @@ export default function KakoPocetiGoogleAdsEN() {
             </span>
             <div>
               <strong>Ad appears in search results</strong>
-              <p className="text-sm text-gray-600 mt-1 mb-0">
+              <p className="text-base text-gray-600 mt-1 mb-0">
                 If you win the auction, your ad is shown — above or below the organic results. You pay only when someone clicks.
               </p>
             </div>
@@ -135,7 +135,7 @@ export default function KakoPocetiGoogleAdsEN() {
             </span>
             <div>
               <strong>User clicks the ad</strong>
-              <p className="text-sm text-gray-600 mt-1 mb-0">
+              <p className="text-base text-gray-600 mt-1 mb-0">
                 You are charged for the click. The cost depends on competition, your Quality Score, and how much you bid.
               </p>
             </div>
@@ -146,7 +146,7 @@ export default function KakoPocetiGoogleAdsEN() {
             </span>
             <div>
               <strong>User lands on your page</strong>
-              <p className="text-sm text-gray-600 mt-1 mb-0">
+              <p className="text-base text-gray-600 mt-1 mb-0">
                 The landing page experience now determines whether that click converts into a lead, sale, or call.
               </p>
             </div>
@@ -157,7 +157,7 @@ export default function KakoPocetiGoogleAdsEN() {
             </span>
             <div>
               <strong>Conversion is tracked</strong>
-              <p className="text-sm text-gray-600 mt-1 mb-0">
+              <p className="text-base text-gray-600 mt-1 mb-0">
                 Google Ads measures the outcome — purchase, form submission, phone call — and feeds that data back to optimize future performance.
               </p>
             </div>
@@ -167,7 +167,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Key insight</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Google Ads isn&apos;t a cost — it&apos;s an investment with measurable returns. Every click, impression, and conversion is tracked. That&apos;s what separates it from traditional advertising.
         </p>
       </div>
@@ -183,35 +183,35 @@ export default function KakoPocetiGoogleAdsEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC — Cost Per Click</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             How much you pay each time someone clicks your ad. This varies by keyword, competition, and Quality Score. For most niches it ranges from €0.20 to €5+.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CTR — Click-Through Rate</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             The percentage of people who click your ad after seeing it. Calculated as clicks ÷ impressions × 100. A strong CTR for Search campaigns is typically 5-10%+.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Quality Score</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Google&apos;s 1-10 rating of your keyword, ad, and landing page relevance. Higher Quality Score = lower CPC. It&apos;s Google&apos;s way of rewarding advertisers who create relevant, useful experiences.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Conversion</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             A valuable action taken by a user after clicking your ad — a purchase, a form submission, a phone call. This is the metric that actually matters. Clicks without conversions are just expense.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-1">Term 5</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">ROAS — Return on Ad Spend</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Revenue generated for every dollar/euro spent on ads. ROAS of 4x means you earn €4 for every €1 spent. For eCommerce, this is the primary health metric. For lead gen, CPA (cost per acquisition) matters more.
           </p>
         </div>
@@ -227,31 +227,31 @@ export default function KakoPocetiGoogleAdsEN() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Campaigns</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Text ads that appear in Google search results. Best for capturing high-intent traffic — people actively searching for your product or service. Ideal starting point for most businesses.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping Campaigns</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Visual product listings showing image, price, and store name. Works from a product feed. Essential for eCommerce — natural fit for physical products where comparison is key.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display Campaigns</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Banner and image ads across the Google Display Network (2M+ websites). Lower intent than Search, but powerful for brand awareness and remarketing. Not recommended as a first campaign.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">YouTube Campaigns</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Video ads on YouTube and partner sites. Great for brand building and reaching audiences before they have an active need. Requires video production investment.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Google&apos;s AI-powered campaign type that runs across all channels automatically. Requires significant conversion data to work well. Best suited for experienced advertisers who already have solid tracking in place.
           </p>
         </div>
@@ -259,7 +259,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">My recommendation for beginners</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Start with <strong>Search campaigns</strong>. They give you the most control, the clearest data, and the highest purchase intent. Once you have conversion tracking working and understand what drives results, you can expand to Shopping or Performance Max. Skip Display and YouTube until you have a solid foundation.
         </p>
       </div>
@@ -278,7 +278,7 @@ export default function KakoPocetiGoogleAdsEN() {
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Create your Google Ads account</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-0">
+        <p className="text-base text-gray-600 mb-0">
           Go to <a href="https://ads.google.com" target="_blank" rel="noopener noreferrer" className="underline">ads.google.com</a> and set up your account. Choose &quot;Switch to Expert Mode&quot; immediately — the simplified Smart campaigns mode hides critical controls you need. Link your Google Analytics 4 property during setup.
         </p>
       </div>
@@ -290,10 +290,10 @@ export default function KakoPocetiGoogleAdsEN() {
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Set up conversion tracking first</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-2">
+        <p className="text-base text-gray-600 mb-2">
           This is non-negotiable. Without proper conversion tracking you are flying blind. Every optimization decision — bidding strategy, keyword prioritization, budget allocation — depends on accurate conversion data.
         </p>
-        <p className="text-sm text-gray-600 mb-0">
+        <p className="text-base text-gray-600 mb-0">
           Full setup guide:{" "}
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
@@ -312,10 +312,10 @@ export default function KakoPocetiGoogleAdsEN() {
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Research and select your keywords</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-2">
+        <p className="text-base text-gray-600 mb-2">
           Use Google Keyword Planner (free, inside your account) to find keywords your customers are actually using. Focus on high-intent, specific terms first — not broad category terms. A targeted keyword list of 20-50 strong terms outperforms 500 vague ones every time.
         </p>
-        <p className="text-sm text-gray-600 mb-0">
+        <p className="text-base text-gray-600 mb-0">
           Detailed process:{" "}
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }}
@@ -334,7 +334,7 @@ export default function KakoPocetiGoogleAdsEN() {
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Add negative keywords before launch</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-2">
+        <p className="text-base text-gray-600 mb-2">
           Before spending a single cent, add a negative keyword list. This prevents your ads from showing on irrelevant searches — &quot;free&quot;, &quot;jobs&quot;, &quot;DIY&quot;, &quot;course&quot;, and any other terms that will never convert. Most beginners skip this. It costs them 20-30% of their budget immediately.
         </p>
         <p className="text-sm text-gray-600 mb-0">

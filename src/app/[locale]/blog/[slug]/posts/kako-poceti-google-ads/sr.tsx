@@ -37,7 +37,7 @@ export default function KakoPocetiGoogleAdsSR() {
         <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
           Kako početi sa Google Ads-om?
         </p>
-        <p className="text-sm md:text-base text-gray-700 mb-0 leading-relaxed">
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
           Početak sa <strong>Google Ads-om</strong> svodi se na 5 koraka: kreiranje naloga → postavljanje conversion trackinga → keyword research → pokretanje prve kampanje → optimizacija na osnovu podataka. Preporučeni početni budžet je <strong>€200-400 mesečno</strong> za prve 4-8 nedelja testiranja.
         </p>
       </div>
@@ -47,19 +47,19 @@ export default function KakoPocetiGoogleAdsSR() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto-google-ads-u-2026-godini" className="text-sm text-gray-700 hover:text-primary underline">Zašto Google Ads u 2026. godini</a></li>
-          <li><a href="#kako-google-ads-funkcionise-jednostavno-objasnjenje" className="text-sm text-gray-700 hover:text-primary underline">Kako Google Ads funkcioniše (jednostavno objašnjenje)</a></li>
-          <li><a href="#5-kljucnih-pojmova-koje-morate-razumeti" className="text-sm text-gray-700 hover:text-primary underline">5 ključnih pojmova koje morate razumeti</a></li>
-          <li><a href="#koji-tip-kampanje-izabrati-za-pocetak" className="text-sm text-gray-700 hover:text-primary underline">Koji tip kampanje izabrati za početak</a></li>
-          <li><a href="#korak-po-korak-od-nule-do-prve-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Korak po korak — od nule do prve kampanje</a></li>
-          <li><a href="#koliki-budzet-za-pocetak" className="text-sm text-gray-700 hover:text-primary underline">Koliki budžet za početak</a></li>
-          <li><a href="#5-najcescih-gresaka-pocetnika" className="text-sm text-gray-700 hover:text-primary underline">5 najčešćih grešaka početnika</a></li>
-          <li><a href="#sam-ili-sa-strucnjakom" className="text-sm text-gray-700 hover:text-primary underline">Sam ili sa stručnjakom</a></li>
-          <li><a href="#kako-nauciti-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Kako naučiti Google Ads</a></li>
-          <li><a href="#remarketing-za-pocetnike" className="text-sm text-gray-700 hover:text-primary underline">Remarketing za početnike</a></li>
-          <li><a href="#cesta-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Česta pitanja</a></li>
-          <li><a href="#zakljucak" className="text-sm text-gray-700 hover:text-primary underline">Zaključak</a></li>
-          <li><a href="#povezani-vodici" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
+          <li><a href="#zasto-google-ads-u-2026-godini" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto Google Ads u 2026. godini</a></li>
+          <li><a href="#kako-google-ads-funkcionise-jednostavno-objasnjenje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako Google Ads funkcioniše (jednostavno objašnjenje)</a></li>
+          <li><a href="#5-kljucnih-pojmova-koje-morate-razumeti" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 ključnih pojmova koje morate razumeti</a></li>
+          <li><a href="#koji-tip-kampanje-izabrati-za-pocetak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koji tip kampanje izabrati za početak</a></li>
+          <li><a href="#korak-po-korak-od-nule-do-prve-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak po korak — od nule do prve kampanje</a></li>
+          <li><a href="#koliki-budzet-za-pocetak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koliki budžet za početak</a></li>
+          <li><a href="#5-najcescih-gresaka-pocetnika" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 najčešćih grešaka početnika</a></li>
+          <li><a href="#sam-ili-sa-strucnjakom" className="block py-1 text-base text-gray-700 hover:text-primary underline">Sam ili sa stručnjakom</a></li>
+          <li><a href="#kako-nauciti-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako naučiti Google Ads</a></li>
+          <li><a href="#remarketing-za-pocetnike" className="block py-1 text-base text-gray-700 hover:text-primary underline">Remarketing za početnike</a></li>
+          <li><a href="#cesta-pitanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Česta pitanja</a></li>
+          <li><a href="#zakljucak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zaključak</a></li>
+          <li><a href="#povezani-vodici" className="block py-1 text-base text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
         </ol>
       </nav>
 
@@ -74,7 +74,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Počeo sam kao frilensar, a prve kampanje sam vodio za lokalne firme u okolini Nove Pazove — sa budžetima ispod €500 mesečno. Firme su znale da im je oglašavanje potrebno, ali nisu znale odakle da krenu. Naučio sam zajedno sa njima — i svaka ta kampanja mi je dala uvid koji nikakav kurs ne bi mogao da zameni.
         </p>
       </div>
@@ -125,7 +125,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Google Ads nije trošak — to je investicija sa merljivim povratom. Za razliku od bilborda ili radio reklame, tačno znate koliko ste platili po kliku, po konverziji i kakav je vaš ROI.
         </p>
       </div>
@@ -146,27 +146,27 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Cena po kliku</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC</h3>
-          <p className="text-sm text-gray-600 mb-0">Koliko platite svaki put kada neko klikne na vaš oglas. Može biti €0,20 za lokalnu nišu ili €5+ za konkurentne industrije. Cilj je da CPC bude što niži uz što bolji kvalitet saobraćaja.</p>
+          <p className="text-base text-gray-600 mb-0">Koliko platite svaki put kada neko klikne na vaš oglas. Može biti €0,20 za lokalnu nišu ili €5+ za konkurentne industrije. Cilj je da CPC bude što niži uz što bolji kvalitet saobraćaja.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Stopa klika</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CTR</h3>
-          <p className="text-sm text-gray-600 mb-0">Procenat ljudi koji vide vaš oglas i kliknu na njega. Ako 100 ljudi vidi oglas i 3 klikne — CTR je 3%. Viši CTR znači relevantniji oglas, što smanjuje CPC i poboljšava poziciju.</p>
+          <p className="text-base text-gray-600 mb-0">Procenat ljudi koji vide vaš oglas i kliknu na njega. Ako 100 ljudi vidi oglas i 3 klikne — CTR je 3%. Viši CTR znači relevantniji oglas, što smanjuje CPC i poboljšava poziciju.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ocena kvaliteta</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Quality Score</h3>
-          <p className="text-sm text-gray-600 mb-0">Google-ova ocena od 1 do 10 koja meri koliko su vaš oglas, ključna reč i landing page relevantni jedni za druge. Viši Quality Score = niži CPC i bolja pozicija oglasa.</p>
+          <p className="text-base text-gray-600 mb-0">Google-ova ocena od 1 do 10 koja meri koliko su vaš oglas, ključna reč i landing page relevantni jedni za druge. Viši Quality Score = niži CPC i bolja pozicija oglasa.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Željeni ishod</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Konverzija</h3>
-          <p className="text-sm text-gray-600 mb-0">Akcija koju želite da posetilac uradi: kupovina, poziv, popunjen formular, prijava. Bez praćenja konverzija ne znate šta funkcioniše — vodite kampanju naslepo.</p>
+          <p className="text-base text-gray-600 mb-0">Akcija koju želite da posetilac uradi: kupovina, poziv, popunjen formular, prijava. Bez praćenja konverzija ne znate šta funkcioniše — vodite kampanju naslepo.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Povrat na potrošnju oglasa</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">ROAS</h3>
-          <p className="text-sm text-gray-600 mb-0">Koliko prihoda ostvarite za svaki euro uložen u oglase. ROAS od 4x znači: potrošili ste €100, zaradili €400. Ovo je ključna metrika za eCommerce. Za lead gen prati CPA (cenu po konverziji).</p>
+          <p className="text-base text-gray-600 mb-0">Koliko prihoda ostvarite za svaki euro uložen u oglase. ROAS od 4x znači: potrošili ste €100, zaradili €400. Ovo je ključna metrika za eCommerce. Za lead gen prati CPA (cenu po konverziji).</p>
         </div>
       </div>
 
@@ -182,33 +182,33 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Pretraga</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search kampanje</h3>
-          <p className="text-sm text-gray-600 mb-0">Tekstualni oglasi u rezultatima pretrage. Prikazuju se kada neko aktivno traži vaš proizvod ili uslugu. Najveća namera, najveća kontrola. Idealne za početnike.</p>
+          <p className="text-base text-gray-600 mb-0">Tekstualni oglasi u rezultatima pretrage. Prikazuju se kada neko aktivno traži vaš proizvod ili uslugu. Najveća namera, najveća kontrola. Idealne za početnike.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Proizvodi</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping kampanje</h3>
-          <p className="text-sm text-gray-600 mb-0">Oglasi sa slikom, nazivom i cenom proizvoda. Prikazuju se na vrhu rezultata za produktne pretrage. Savršene za eCommerce — ali zahtevaju product feed i malo iskustva.</p>
+          <p className="text-base text-gray-600 mb-0">Oglasi sa slikom, nazivom i cenom proizvoda. Prikazuju se na vrhu rezultata za produktne pretrage. Savršene za eCommerce — ali zahtevaju product feed i malo iskustva.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Baneri</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display kampanje</h3>
-          <p className="text-sm text-gray-600 mb-0">Vizuelni oglasi na milionima sajtova i aplikacija. Odlično za remarketing i svesnost o brendu. Niska namera, ali visok doseg. Ne preporučujem za početak bez prethodnog saobraćaja.</p>
+          <p className="text-base text-gray-600 mb-0">Vizuelni oglasi na milionima sajtova i aplikacija. Odlično za remarketing i svesnost o brendu. Niska namera, ali visok doseg. Ne preporučujem za početak bez prethodnog saobraćaja.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Video</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">YouTube kampanje</h3>
-          <p className="text-sm text-gray-600 mb-0">Video oglasi pre i tokom YouTube sadržaja. Odlično za brend svesnost i edukaciju. Zahtevaju video produkciju i veće budžete za smislene rezultate.</p>
+          <p className="text-base text-gray-600 mb-0">Video oglasi pre i tokom YouTube sadržaja. Odlično za brend svesnost i edukaciju. Zahtevaju video produkciju i veće budžete za smislene rezultate.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Sve u jednom</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max</h3>
-          <p className="text-sm text-gray-600 mb-0">Google-ov AI vodi kampanju na svim kanalima istovremeno (Search, Shopping, Display, YouTube, Maps). Moćan alat kada imate dovoljno konverzija i iskustva — ali crna kutija za početnike. Sačekajte da savladate Search pre PMax-a.</p>
+          <p className="text-base text-gray-600 mb-0">Google-ov AI vodi kampanju na svim kanalima istovremeno (Search, Shopping, Display, YouTube, Maps). Moćan alat kada imate dovoljno konverzija i iskustva — ali crna kutija za početnike. Sačekajte da savladate Search pre PMax-a.</p>
         </div>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Za početnike uvek preporučujem Search kampanje</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Razlog je jednostavan: Search kampanje ciljaju ljude koji <em>aktivno traže</em> ono što nudite. Imate punu kontrolu nad ključnim rečima, oglasima i budžetom. Svaki klik je nameran. I što je najvažnije za učenje — možete jasno videti šta funkcioniše i zašto. Ostale tipove kampanji uvrstite tek kada razumete osnove.
         </p>
       </div>
@@ -256,7 +256,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Faza učenja</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Nakon pokretanja, prvih 7-10 dana je faza učenja — algoritam prikuplja podatke. Ne dirajte kampanju prečesto. Pregledajte rezultate jednom dnevno, ali suštinske promene pravite tek kada imate dovoljno podataka (minimum 50-100 klikova po ad grupi).
         </p>
       </div>
@@ -271,7 +271,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Pravilo: počnite sa €10-20 dnevno za testiranje</p>
-        <p className="text-sm text-yellow-900 mb-0">Mesečno to iznosi €300-600. Dovoljno da sakupite smislene podatke u 4-6 nedelja i donesete informisane odluke o skaliranju. Premali budžet = premalo podataka = nemoguće optimizovati.</p>
+        <p className="text-base text-yellow-900 mb-0">Mesečno to iznosi €300-600. Dovoljno da sakupite smislene podatke u 4-6 nedelja i donesete informisane odluke o skaliranju. Premali budžet = premalo podataka = nemoguće optimizovati.</p>
       </div>
 
       <p>
@@ -282,36 +282,36 @@ export default function KakoPocetiGoogleAdsSR() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Tržište</th>
-              <th className="py-3 px-4 font-heading font-semibold">Preporučeni mesečni budžet</th>
-              <th className="py-3 px-4 font-heading font-semibold">Prosečni CPC (Search)</th>
-              <th className="py-3 px-4 font-heading font-semibold">Napomena</th>
+              <th className="py-3 px-3 font-heading font-semibold">Tržište</th>
+              <th className="py-3 px-3 font-heading font-semibold">Preporučeni mesečni budžet</th>
+              <th className="py-3 px-3 font-heading font-semibold">Prosečni CPC (Search)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Napomena</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Srbija</td>
-              <td className="py-3 px-4">€300–500</td>
-              <td className="py-3 px-4">€0,20–1,50</td>
-              <td className="py-3 px-4 text-gray-500">Nizak CPC, manja konkurencija</td>
+              <td className="py-3 px-3 font-medium">Srbija</td>
+              <td className="py-3 px-3">€300–500</td>
+              <td className="py-3 px-3">€0,20–1,50</td>
+              <td className="py-3 px-3 text-gray-500">Nizak CPC, manja konkurencija</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Hrvatska</td>
-              <td className="py-3 px-4">€400–600</td>
-              <td className="py-3 px-4">€0,50–2,50</td>
-              <td className="py-3 px-4 text-gray-500">Nešto viša konkurencija</td>
+              <td className="py-3 px-3 font-medium">Hrvatska</td>
+              <td className="py-3 px-3">€400–600</td>
+              <td className="py-3 px-3">€0,50–2,50</td>
+              <td className="py-3 px-3 text-gray-500">Nešto viša konkurencija</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">UK</td>
-              <td className="py-3 px-4">€800–1.500</td>
-              <td className="py-3 px-4">€1,50–6,00</td>
-              <td className="py-3 px-4 text-gray-500">Visoka konkurencija, viša kupovna moć</td>
+              <td className="py-3 px-3 font-medium">UK</td>
+              <td className="py-3 px-3">€800–1.500</td>
+              <td className="py-3 px-3">€1,50–6,00</td>
+              <td className="py-3 px-3 text-gray-500">Visoka konkurencija, viša kupovna moć</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">USA</td>
-              <td className="py-3 px-4">€1.000–2.000+</td>
-              <td className="py-3 px-4">€2,00–10,00+</td>
-              <td className="py-3 px-4 text-gray-500">Najkonkurentnije tržište, najviši CPC</td>
+              <td className="py-3 px-3 font-medium">USA</td>
+              <td className="py-3 px-3">€1.000–2.000+</td>
+              <td className="py-3 px-3">€2,00–10,00+</td>
+              <td className="py-3 px-3 text-gray-500">Najkonkurentnije tržište, najviši CPC</td>
             </tr>
           </tbody>
         </table>
@@ -319,7 +319,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Sa budžetima ispod €500 mesečno postigao sam odlične rezultate za lokalne firme u Srbiji. Ključ nije u veličini budžeta — ključ je u preciznosti ciljanja. Mali budžet dobro usmeren bije veliki budžet rasut na sve strane.
         </p>
       </div>
@@ -338,7 +338,7 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Koristite phrase match i exact match za početak, i odmah postavite negativne ključne reči. Proverite Search Terms report posle prvih 3-5 dana i blokirajte neodgovarajuće pretrage.
         </p>
       </div>
@@ -349,7 +349,7 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Pre pokretanja kampanje, postavite conversion tracking za svaki važan cilj — kupovina, poziv, formular. Ovo je korak koji nikada ne preskačem kod klijenata.
         </p>
       </div>
@@ -360,7 +360,7 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Svaki oglas treba da vodi na stranicu koja direktno odgovara pretrazi. Ako neko traži &quot;ugradnja klime Beograd&quot; — vodite ih na stranicu o ugradnji klime, ne na homepage.
         </p>
       </div>
@@ -371,7 +371,7 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Prvih 2-4 nedelje su faza učenja — i za algoritam i za vas. Suštinske promene pravite tek posle 50-100 klikova po segmentu. Prerane izmene remete algoritam i produžavaju period učenja.
         </p>
       </div>
@@ -382,7 +382,7 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
-        <p className="text-sm text-green-800 mb-0">
+        <p className="text-base text-green-800 mb-0">
           Svaku preporuku procenite samostalno pre prihvatanja. Razumite <em>zašto</em> Google predlaže promenu i kakav je uticaj na vaš budžet i ciljeve. Većina preporuka se može bezbedno ignorisati.
         </p>
       </div>
@@ -397,7 +397,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">DIY vs. stručnjak — ključno pitanje</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Ako imate vremena za učenje i manji budžet, DIY je potpuno opravdan put. Google Ads je dostupan svakome. Ali ako je vaše vreme skuplje od usluge stručnjaka, ili ako je greška u kampanjama skupa (veći budžeti, konkurentna tržišta) — angažovanje iskusnog praktičara donosi brži ROI.
         </p>
       </div>
@@ -406,36 +406,36 @@ export default function KakoPocetiGoogleAdsSR() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
-              <th className="py-3 px-4 font-heading font-semibold">Sami (DIY)</th>
-              <th className="py-3 px-4 font-heading font-semibold">Stručnjak / Freelancer</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-3 font-heading font-semibold">Sami (DIY)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Stručnjak / Freelancer</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Cena upravljanja</td>
-              <td className="py-3 px-4">€0 (samo ad spend)</td>
-              <td className="py-3 px-4">€200–600/mesečno</td>
+              <td className="py-3 px-3 font-medium">Cena upravljanja</td>
+              <td className="py-3 px-3">€0 (samo ad spend)</td>
+              <td className="py-3 px-3">€200–600/mesečno</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Kriva učenja</td>
-              <td className="py-3 px-4">Puno vremena uloženo</td>
-              <td className="py-3 px-4">Minimalno — stručnjak to zna</td>
+              <td className="py-3 px-3 font-medium">Kriva učenja</td>
+              <td className="py-3 px-3">Puno vremena uloženo</td>
+              <td className="py-3 px-3">Minimalno — stručnjak to zna</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Brzina rezultata</td>
-              <td className="py-3 px-4">Sporije — potrebno iskustvo</td>
-              <td className="py-3 px-4">Brže — iskustvo iz prakse</td>
+              <td className="py-3 px-3 font-medium">Brzina rezultata</td>
+              <td className="py-3 px-3">Sporije — potrebno iskustvo</td>
+              <td className="py-3 px-3">Brže — iskustvo iz prakse</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Greške</td>
-              <td className="py-3 px-4">Skuplje (učite na svom budžetu)</td>
-              <td className="py-3 px-4">Manje (vidi obrasce iz prakse)</td>
+              <td className="py-3 px-3 font-medium">Greške</td>
+              <td className="py-3 px-3">Skuplje (učite na svom budžetu)</td>
+              <td className="py-3 px-3">Manje (vidi obrasce iz prakse)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Prikladnost</td>
-              <td className="py-3 px-4">Mali budžeti, puno slobodnog vremena</td>
-              <td className="py-3 px-4">Veći budžeti, fokus na core biznis</td>
+              <td className="py-3 px-3 font-medium">Prikladnost</td>
+              <td className="py-3 px-3">Mali budžeti, puno slobodnog vremena</td>
+              <td className="py-3 px-3">Veći budžeti, fokus na core biznis</td>
             </tr>
           </tbody>
         </table>
@@ -491,7 +491,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Kada početi sa remarketingom?</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Google Ads zahteva minimum <strong>100 aktivnih korisnika</strong> u remarketing publici da bi kampanja mogla da se pokrene. Za većinu malih biznisa to znači 2-4 nedelje prikupljanja saobraćaja pre nego što remarketing postane opcija. Postavite remarketing tag od prvog dana da počnete sa prikupljanjem publike.
         </p>
       </div>
@@ -521,7 +521,7 @@ export default function KakoPocetiGoogleAdsSR() {
             Da li se Google Ads isplati za male biznise?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da — ali pod uslovom da postoji dovoljno pretrage za vaše usluge ili proizvode i da je ekonomija konverzije zdrava. Ako je vaša prosečna vrednost prodaje €50 a CPC je €3, trebate dobru stopu konverzije da budete profitabilni. Ako je prosečna prodaja €500, margina je puno veća. Google Ads funkcioniše za male biznise koji imaju jasnu ponudu i relevantan saobraćaj — posebno lokalni servisi i specijalizovani eCommerce.
           </div>
         </details>
@@ -531,7 +531,7 @@ export default function KakoPocetiGoogleAdsSR() {
             Koliko vremena treba da se vide rezultati?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Realno: prvih klikova ima već prvog dana. Smislene podatke za donošenje odluka dobijate posle 2-4 nedelje, zavisno od budžeta i volumena pretrage. Automatski bidding strategije (Target CPA, Target ROAS) zahtevaju minimum 30-50 konverzija mesečno da bi algoritam radio dobro. Do tada preporučujem Manual CPC ili Maximize Clicks sa postavljenim maksimalnim CPC.
           </div>
         </details>
@@ -541,7 +541,7 @@ export default function KakoPocetiGoogleAdsSR() {
             Da li mogu sam da vodim Google Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Apsolutno. Mnogi vlasnici biznisa uspešno vode sopstvene kampanje. Ključ je u tome da razumete šta pratite (konverzije, CPA, ROAS) i da ne donosite preuranjene odluke. Izazov postaje kada kampanje narastu — više kampanja, više tržišta, kompleksnija segmentacija zahtevaju više vremena i iskustva. Za početak: jedan nalog, jedna kampanja, puno fokusa.
           </div>
         </details>
@@ -551,7 +551,7 @@ export default function KakoPocetiGoogleAdsSR() {
             Koji je minimalni budžet za Google Ads u Srbiji?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Tehnički, Google nema minimalni dnevni budžet. Praktično, preporučujem minimum €10/dan (€300/mes) da dobijete dovoljno klikova za smislenu analizu. Sa manjim budžetom, podaci su previše retki da biste doneli pouzdane zaključke. Za lokalne servise u Srbiji, sa €300-500 mesečno možete dobiti odlične rezultate zahvaljujući niskom CPC.
           </div>
         </details>
@@ -561,7 +561,7 @@ export default function KakoPocetiGoogleAdsSR() {
             Da li preporučujem Google Ads za svaki biznis?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ne. Google Ads funkcioniše sjajno kada postoji aktivna pretraga — ljudi moraju da traže vaš proizvod ili uslugu na Google-u. Ako ste potpuno nova kategorija proizvoda koju niko ne zna da traži, bolje počnite sa Facebook/Meta oglasima koji grade svesnost. Isto važi ako je vaš prosečan prihod po kupcu prenizak da pokrije CPC. Pre pokretanja uvek pitajte: &quot;Koliko ljudi traži ovo na Google-u?&quot; i &quot;Da li se ekonomija konverzije drži?&quot;
           </div>
         </details>
@@ -585,7 +585,7 @@ export default function KakoPocetiGoogleAdsSR() {
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Želite da pokrenete Google Ads ali niste sigurni odakle da počnete?
         </p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           Zajedno prolazimo kroz vaš specifični slučaj — industriju, tržište, budžet — i pravimo konkretni plan akcije. Bez generičkih saveta.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">

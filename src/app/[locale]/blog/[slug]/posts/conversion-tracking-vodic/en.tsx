@@ -43,16 +43,16 @@ export default function ConversionTrackingGuideEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#why-conversion-tracking-is-the-foundation-of-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Why conversion tracking is the foundation of Google Ads</a></li>
-          <li><a href="#types-of-conversions-to-track" className="text-sm text-gray-700 hover:text-primary underline">Types of conversions to track</a></li>
-          <li><a href="#tools-for-conversion-tracking" className="text-sm text-gray-700 hover:text-primary underline">Tools for conversion tracking</a></li>
-          <li><a href="#step-by-step-setting-up-tracking" className="text-sm text-gray-700 hover:text-primary underline">Step by step — setting up tracking</a></li>
-          <li><a href="#conversion-tracking-for-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Conversion tracking for eCommerce</a></li>
-          <li><a href="#conversion-tracking-for-lead-generation" className="text-sm text-gray-700 hover:text-primary underline">Conversion tracking for Lead Generation</a></li>
-          <li><a href="#most-common-conversion-tracking-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most common conversion tracking mistakes</a></li>
-          <li><a href="#how-to-verify-tracking-is-working-correctly" className="text-sm text-gray-700 hover:text-primary underline">How to verify tracking is working correctly</a></li>
-          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
-          <li><a href="#frequently-asked-questions-about-conversion-tracking" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about conversion tracking</a></li>
+          <li><a href="#why-conversion-tracking-is-the-foundation-of-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why conversion tracking is the foundation of Google Ads</a></li>
+          <li><a href="#types-of-conversions-to-track" className="block py-1 text-base text-gray-700 hover:text-primary underline">Types of conversions to track</a></li>
+          <li><a href="#tools-for-conversion-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tools for conversion tracking</a></li>
+          <li><a href="#step-by-step-setting-up-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step by step — setting up tracking</a></li>
+          <li><a href="#conversion-tracking-for-ecommerce" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conversion tracking for eCommerce</a></li>
+          <li><a href="#conversion-tracking-for-lead-generation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conversion tracking for Lead Generation</a></li>
+          <li><a href="#most-common-conversion-tracking-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Most common conversion tracking mistakes</a></li>
+          <li><a href="#how-to-verify-tracking-is-working-correctly" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to verify tracking is working correctly</a></li>
+          <li><a href="#frequently-asked-questions" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-about-conversion-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions about conversion tracking</a></li>
         </ol>
       </nav>
 
@@ -99,21 +99,21 @@ export default function ConversionTrackingGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Primary</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Primary conversions</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Campaign's ultimate goal — purchase, lead, call, registration. Used for bid optimization.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Secondary</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Secondary conversions</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Steps toward goal — add to cart, pricing page visit, catalog download. Used for observation.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Micro</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Micro conversions</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Engagement signals — scroll depth, video view, time on site. Help algorithm when volume is low.
           </p>
         </div>
@@ -124,36 +124,36 @@ export default function ConversionTrackingGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Business type</th>
-              <th className="py-3 px-4 font-heading font-semibold">Primary</th>
-              <th className="py-3 px-4 font-heading font-semibold">Secondary</th>
-              <th className="py-3 px-4 font-heading font-semibold">Micro</th>
+              <th className="py-3 px-3 font-heading font-semibold">Business type</th>
+              <th className="py-3 px-3 font-heading font-semibold">Primary</th>
+              <th className="py-3 px-3 font-heading font-semibold">Secondary</th>
+              <th className="py-3 px-3 font-heading font-semibold">Micro</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce</td>
-              <td className="py-3 px-4">Purchase</td>
-              <td className="py-3 px-4">Add to cart, Begin checkout</td>
-              <td className="py-3 px-4">Product view</td>
+              <td className="py-3 px-3 font-medium">eCommerce</td>
+              <td className="py-3 px-3">Purchase</td>
+              <td className="py-3 px-3">Add to cart, Begin checkout</td>
+              <td className="py-3 px-3">Product view</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">B2B Lead Gen</td>
-              <td className="py-3 px-4">Form submission, Demo request</td>
-              <td className="py-3 px-4">Pricing page, Case study download</td>
-              <td className="py-3 px-4">Time on site 2min+</td>
+              <td className="py-3 px-3 font-medium">B2B Lead Gen</td>
+              <td className="py-3 px-3">Form submission, Demo request</td>
+              <td className="py-3 px-3">Pricing page, Case study download</td>
+              <td className="py-3 px-3">Time on site 2min+</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Local business</td>
-              <td className="py-3 px-4">Phone call, Directions click</td>
-              <td className="py-3 px-4">Contact page visit</td>
-              <td className="py-3 px-4">Store locator use</td>
+              <td className="py-3 px-3 font-medium">Local business</td>
+              <td className="py-3 px-3">Phone call, Directions click</td>
+              <td className="py-3 px-3">Contact page visit</td>
+              <td className="py-3 px-3">Store locator use</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">SaaS</td>
-              <td className="py-3 px-4">Trial sign-up, Paid conversion</td>
-              <td className="py-3 px-4">Features page, Video view</td>
-              <td className="py-3 px-4">Pricing calculator use</td>
+              <td className="py-3 px-3 font-medium">SaaS</td>
+              <td className="py-3 px-3">Trial sign-up, Paid conversion</td>
+              <td className="py-3 px-3">Features page, Video view</td>
+              <td className="py-3 px-3">Pricing calculator use</td>
             </tr>
           </tbody>
         </table>
@@ -161,7 +161,7 @@ export default function ConversionTrackingGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">3-level rule</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           I recommend setting up all three conversion levels. Primary for optimization, Secondary for observation and analysis, Micro for signals when volume is low. This gives the algorithm a more complete picture of user behavior.
         </p>
       </div>
@@ -177,28 +177,28 @@ export default function ConversionTrackingGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Recommended</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Tag Manager</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Centralized management of all tags. Flexible, easy to test and maintain. My first choice for all but simplest setups.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Analytics</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">GA4 Import</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Uses GA4 events as conversions. Good for unified reporting, but attribution may differ from native Google Ads tracking.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Direct</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Ads Tag</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Direct tag placement through Google Ads interface. Simple for one-page setup, but less flexible for complex scenarios.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advanced</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Enhanced Conversions</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Sends hashed first-party data (email, phone) to improve attribution despite cookie restrictions. I recommend for all campaigns with $1,000+/£800+ budget.
           </p>
         </div>
@@ -266,7 +266,7 @@ export default function ConversionTrackingGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Conversion Linker tag is often a forgotten step, but without it cross-domain and cross-device tracking doesn't work properly. Always set this tag on All Pages before any other conversion tag.
         </p>
       </div>
@@ -283,7 +283,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Purchase (Primary conversion)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Most important conversion. Must send dynamic value (transaction_value), currency, and transaction_id. Used for bid optimization.
         </p>
         <ul className="text-sm">
@@ -298,7 +298,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Add to Cart (Secondary conversion)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Shows intent. I recommend setting as observation, not for bidding. Helps algorithm learn which products people add to cart.
         </p>
         <ul className="text-sm">
@@ -313,7 +313,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Begin Checkout (Secondary conversion)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           User started checkout process. Strong signal showing purchase intent. I use it for remarketing audiences.
         </p>
         <ul className="text-sm">
@@ -325,7 +325,7 @@ export default function ConversionTrackingGuideEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Value tracking rule</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           I recommend ALWAYS tracking transaction value for eCommerce. Without it, Target ROAS bidding doesn't work and you don't know how much revenue each campaign brings. Dynamic conversion values are mandatory for profitable optimization.
         </p>
       </div>
@@ -342,7 +342,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Form Submission (Primary conversion)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Basic lead event. Trigger is usually form submission or thank-you page load. Use this for initial optimization.
         </p>
         <ul className="text-sm">
@@ -357,7 +357,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Phone Call (Primary conversion)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           For B2B and local businesses, phone calls are often the most important conversion. Google offers call tracking extension that automatically tracks calls.
         </p>
         <ul className="text-sm">
@@ -372,7 +372,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Offline Conversions (Qualified lead)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           This is the most important step for B2B. Import qualified leads or closed deals from CRM back into Google Ads. Without this, Google optimizes for volume, not quality.
         </p>
         <ul className="text-sm">
@@ -384,7 +384,7 @@ export default function ConversionTrackingGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Offline Conversion Import — Game Changer for B2B</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           I recommend offline import to all B2B clients. The difference is huge — Google learns which type of leads actually become customers and optimizes toward that, not just toward volume of form submissions. Expect 20-30% better CPA after a few months of learning.
         </p>
       </div>
@@ -400,7 +400,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #1</p>
         <p className="font-semibold mb-2">Conversion tag set on all pages instead of just confirmation page</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Check trigger in GTM. Tag should fire ONLY on thank-you page (e.g., Page URL contains &quot;/thank-you&quot; or &quot;/order-complete&quot;). Use GTM Preview mode to test.
           </p>
         </div>
@@ -410,7 +410,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
         <p className="font-semibold mb-2">Double counting — Google Ads tag + GA4 import for same conversion</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Use ONE or THE OTHER, not both. If importing conversions from GA4, deactivate direct Google Ads tag for that same action. Double counting kills attribution accuracy.
           </p>
         </div>
@@ -420,7 +420,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
         <p className="font-semibold mb-2">Conversion Linker tag missing or not on All Pages</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> In GTM create &quot;Conversion Linker&quot; tag type and set trigger to All Pages. This is the first tag that should fire before any other conversion tag. Without it, cross-domain tracking doesn't work.
           </p>
         </div>
@@ -430,7 +430,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #4</p>
         <p className="font-semibold mb-2">Not tracking conversion value (all conversions = &quot;1&quot;)</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> For eCommerce use dynamic conversion values — send actual transaction_value via data layer. For lead gen, set fixed value matching average lead value. Without values, Target ROAS doesn't work.
           </p>
         </div>
@@ -440,7 +440,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
         <p className="font-semibold mb-2">Only tracking purchase/lead, no secondary conversions</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Add secondary and micro conversions (add to cart, pricing page, video view) and set them as observation (Include in Conversions = NO). This gives the algorithm more signals and helps when volume is low.
           </p>
         </div>
@@ -450,7 +450,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #6</p>
         <p className="font-semibold mb-2">Attribution model not adjusted to business type</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0">
+          <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Think about customer journey. For short sales cycles (impulse eCommerce), Last Click is OK. For B2B with long cycle, Data-Driven or Position-Based gives more realistic picture. Check in Google Ads → Conversions → Attribution models.
           </p>
         </div>
@@ -468,7 +468,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Tag Assistant Chrome Extension</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Install extension, go through conversion flow on site, and verify tags fire on correct pages. Check if they send conversion ID, label, and value.
         </p>
         <ul className="text-sm">
@@ -483,7 +483,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">GTM Preview Mode</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           In GTM interface click &quot;Preview&quot;, open site in new tab and go through conversion flow. Preview mode shows which tags fire and what data they send.
         </p>
         <ul className="text-sm">
@@ -498,7 +498,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Ads Conversion Status</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           In Google Ads → Tools → Conversions check Status column. Should say &quot;Recording conversions&quot; with green checkmark.
         </p>
         <ul className="text-sm">
@@ -513,7 +513,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Real-time check in GA4</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           In GA4 → Reports → Realtime check if events appear in real-time when you make test conversion.
         </p>
         <ul className="text-sm">
@@ -528,7 +528,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Cross-check with backend data</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Compare number of conversions in Google Ads with actual number of orders/leads from CRM or eCommerce platform. Difference of 10-20% is normal, but if larger — you have tracking problem.
         </p>
         <ul className="text-sm">
@@ -540,7 +540,7 @@ export default function ConversionTrackingGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Conversions usually appear in Google Ads after 3-6 hours, but can take up to 24 hours. Don't panic if test conversion doesn't show immediately — wait a few hours and check again.
         </p>
       </div>
@@ -554,7 +554,7 @@ export default function ConversionTrackingGuideEN() {
           How long until conversion appears in Google Ads?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Usually 3-6 hours for online conversions. Can be up to 24 hours in some cases. Offline conversion import depends on your upload frequency (I recommend weekly). If conversion doesn't show after 24 hours, check if tag is properly set up via GTM Preview mode and Tag Assistant.
         </div>
       </details>
@@ -564,7 +564,7 @@ export default function ConversionTrackingGuideEN() {
           Why do conversion numbers in GA4 and Google Ads differ?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Different attribution models, different conversion windows, and different counting methods. GA4 typically uses data-driven attribution, while Google Ads may use last click. Also, GA4 counts sessions differently than Google Ads. Difference of 10-20% is completely normal and doesn't indicate a problem. If difference &gt;30%, check for double counting.
         </div>
       </details>
@@ -574,7 +574,7 @@ export default function ConversionTrackingGuideEN() {
           Do I need a developer to set up conversion tracking?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           For basic GTM setup — not necessarily. You can set up GTM container and basic conversion tags yourself if you follow documentation. For Enhanced Conversions (data layer push) and server-side tracking — probably yes, as it requires JavaScript and backend integration. If you don't have technical knowledge, I recommend hiring a developer or Google Ads consultant who'll set everything up properly.
         </div>
       </details>
@@ -584,7 +584,7 @@ export default function ConversionTrackingGuideEN() {
           What if I don't have a thank-you page?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Use event-based tracking instead of page load tracking. Trigger can be form submission event, AJAX response success callback, or URL parameters (e.g., ?submitted=true). In GTM you can set trigger on Form Submission or custom JavaScript event. If using platforms like Webflow, WordPress, or Shopify, there are often built-in options for tracking without thank-you page.
         </div>
       </details>
@@ -594,7 +594,7 @@ export default function ConversionTrackingGuideEN() {
           How many conversions needed for Smart Bidding?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Google officially recommends minimum 15 conversions in last 30 days for Target CPA and Target ROAS. However, my experience is that 30-50 conversions monthly is ideal for more stable results. Below 15, algorithm doesn't have enough data and performance can be unpredictable. If you don't have enough primary conversions, you can temporarily add secondary conversions as observation while collecting enough volume.
         </div>
       </details>
@@ -604,7 +604,7 @@ export default function ConversionTrackingGuideEN() {
           What is Enhanced Conversions and do I need it?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Enhanced Conversions sends hashed first-party data (email, phone, address) to improve attribution despite cookie restrictions and iOS privacy changes. I recommend it for ALL campaigns with $1,000+/£800+ budget. Expect 5-15% more attributed conversions after implementation. Setup requires data layer push with user data (email and phone are minimum), which usually requires developer help.
         </div>
       </details>
@@ -615,7 +615,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Need help with conversion tracking?
         </p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           I offer complete conversion tracking setup — GTM, GA4, Google Ads tags, Enhanced Conversions, and offline import. Everything you need to track real results and optimize for profitability.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
@@ -657,7 +657,7 @@ export default function ConversionTrackingGuideEN() {
             What is conversion tracking and why is it important?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Conversion tracking monitors user actions after clicking an ad — purchases, calls, form submissions. Without it, Google doesn&apos;t know which keywords and ads drive results, so it can&apos;t optimize campaigns. It&apos;s the foundation of every successful campaign.
           </div>
         </details>
@@ -667,7 +667,7 @@ export default function ConversionTrackingGuideEN() {
             Google Tag vs GTM — which should I use?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google Tag Manager (GTM) is always recommended because it offers flexibility without changing site code. Google Tag (gtag.js) is direct but requires developer help for every change. For most businesses, GTM is the better choice.
           </div>
         </details>
@@ -677,7 +677,7 @@ export default function ConversionTrackingGuideEN() {
             What are Enhanced Conversions?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Enhanced Conversions send hashed user data (email, phone) to Google for better matching. They improve tracking accuracy by 5-15%, especially on iOS devices. Implementation is straightforward through GTM or Google Tag.
           </div>
         </details>
@@ -687,7 +687,7 @@ export default function ConversionTrackingGuideEN() {
             How many conversions do I need for Smart Bidding?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google recommends a minimum of 15-30 conversions per month per campaign for Target CPA, and 50+ for Target ROAS. Below that, the algorithm lacks sufficient data and results are unpredictable. In that case, use Manual CPC or Maximize Clicks.
           </div>
         </details>
@@ -697,7 +697,7 @@ export default function ConversionTrackingGuideEN() {
             Why don&apos;t conversions match between Google Ads and GA4?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Different attribution models: Google Ads uses last-click by default with a 30-day window, GA4 uses data-driven with a 90-day window. Different counting methods (Google Ads counts every conversion, GA4 counts sessions). Always compare the same periods and understand the differences.
           </div>
         </details>

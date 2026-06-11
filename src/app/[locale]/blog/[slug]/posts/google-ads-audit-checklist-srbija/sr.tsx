@@ -33,22 +33,22 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto" className="text-sm text-gray-700 hover:text-primary underline">Zašto je audit kritičan baš sada (2026)</a></li>
-          <li><a href="#sta-pokriva" className="text-sm text-gray-700 hover:text-primary underline">Šta dobar audit pokriva — 10 kategorija</a></li>
-          <li><a href="#kategorija-1" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 1: Account Structure (5 stavki)</a></li>
-          <li><a href="#kategorija-2" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 2: Conversion Tracking (5 stavki)</a></li>
-          <li><a href="#kategorija-3" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 3: Campaign Settings (5 stavki)</a></li>
-          <li><a href="#kategorija-4" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 4: Keywords &amp; Search Terms (5 stavki)</a></li>
-          <li><a href="#kategorija-5" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 5: Ads &amp; Extensions (5 stavki)</a></li>
-          <li><a href="#kategorija-6" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 6: Audiences &amp; Remarketing (5 stavki)</a></li>
-          <li><a href="#kategorija-7" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 7: Bidding Strategy (5 stavki)</a></li>
-          <li><a href="#kategorija-8" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 8: Budget &amp; Allocation (5 stavki)</a></li>
-          <li><a href="#kategorija-9" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 9: Tracking &amp; Attribution (5 stavki)</a></li>
-          <li><a href="#kategorija-10" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 10: Reporting &amp; Communication (5 stavki)</a></li>
-          <li><a href="#brzi-audit" className="text-sm text-gray-700 hover:text-primary underline">30-min brzi audit — koje stavke prvo</a></li>
-          <li><a href="#scoring" className="text-sm text-gray-700 hover:text-primary underline">Scoring sistem — kako oceniti rezultat</a></li>
-          <li><a href="#greske" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške koje vidim u Srbiji</a></li>
-          <li><a href="#faq" className="text-sm text-gray-700 hover:text-primary underline">FAQ</a></li>
+          <li><a href="#zasto" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto je audit kritičan baš sada (2026)</a></li>
+          <li><a href="#sta-pokriva" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta dobar audit pokriva — 10 kategorija</a></li>
+          <li><a href="#kategorija-1" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 1: Account Structure (5 stavki)</a></li>
+          <li><a href="#kategorija-2" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 2: Conversion Tracking (5 stavki)</a></li>
+          <li><a href="#kategorija-3" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 3: Campaign Settings (5 stavki)</a></li>
+          <li><a href="#kategorija-4" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 4: Keywords &amp; Search Terms (5 stavki)</a></li>
+          <li><a href="#kategorija-5" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 5: Ads &amp; Extensions (5 stavki)</a></li>
+          <li><a href="#kategorija-6" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 6: Audiences &amp; Remarketing (5 stavki)</a></li>
+          <li><a href="#kategorija-7" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 7: Bidding Strategy (5 stavki)</a></li>
+          <li><a href="#kategorija-8" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 8: Budget &amp; Allocation (5 stavki)</a></li>
+          <li><a href="#kategorija-9" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 9: Tracking &amp; Attribution (5 stavki)</a></li>
+          <li><a href="#kategorija-10" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 10: Reporting &amp; Communication (5 stavki)</a></li>
+          <li><a href="#brzi-audit" className="block py-1 text-base text-gray-700 hover:text-primary underline">30-min brzi audit — koje stavke prvo</a></li>
+          <li><a href="#scoring" className="block py-1 text-base text-gray-700 hover:text-primary underline">Scoring sistem — kako oceniti rezultat</a></li>
+          <li><a href="#greske" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešće greške koje vidim u Srbiji</a></li>
+          <li><a href="#faq" className="block py-1 text-base text-gray-700 hover:text-primary underline">FAQ</a></li>
         </ol>
       </nav>
 
@@ -66,7 +66,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Preporučena kadenca audita</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           <strong>Quarterly deep audit</strong> (3–4 sata, svih 50 stavki, full report) + <strong>mesečni quick check</strong> (30 min, prioritetnih 10 stavki). Dodatni trigger: preuzimanje naloga, promena business modela, performance pad &gt;20% nedelju na nedelju.
         </p>
       </div>
@@ -87,61 +87,61 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">#</th>
-              <th className="py-3 px-4 font-heading font-semibold">Kategorija</th>
-              <th className="py-3 px-4 font-heading font-semibold">Fokus</th>
+              <th className="py-3 px-3 font-heading font-semibold">#</th>
+              <th className="py-3 px-3 font-heading font-semibold">Kategorija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Fokus</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">1</td>
-              <td className="py-3 px-4 font-medium">Account Structure</td>
-              <td className="py-3 px-4 text-gray-600">Organizacija kampanja, ad grupa, MCC</td>
+              <td className="py-3 px-3 font-medium">1</td>
+              <td className="py-3 px-3 font-medium">Account Structure</td>
+              <td className="py-3 px-3 text-gray-600">Organizacija kampanja, ad grupa, MCC</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">2</td>
-              <td className="py-3 px-4 font-medium">Conversion Tracking</td>
-              <td className="py-3 px-4 text-gray-600">Tag setup, dedupe, value tracking</td>
+              <td className="py-3 px-3 font-medium">2</td>
+              <td className="py-3 px-3 font-medium">Conversion Tracking</td>
+              <td className="py-3 px-3 text-gray-600">Tag setup, dedupe, value tracking</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">3</td>
-              <td className="py-3 px-4 font-medium">Campaign Settings</td>
-              <td className="py-3 px-4 text-gray-600">Geo, device, jezik, network</td>
+              <td className="py-3 px-3 font-medium">3</td>
+              <td className="py-3 px-3 font-medium">Campaign Settings</td>
+              <td className="py-3 px-3 text-gray-600">Geo, device, jezik, network</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">4</td>
-              <td className="py-3 px-4 font-medium">Keywords &amp; Search Terms</td>
-              <td className="py-3 px-4 text-gray-600">Match types, negatives, search term mining</td>
+              <td className="py-3 px-3 font-medium">4</td>
+              <td className="py-3 px-3 font-medium">Keywords &amp; Search Terms</td>
+              <td className="py-3 px-3 text-gray-600">Match types, negatives, search term mining</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">5</td>
-              <td className="py-3 px-4 font-medium">Ads &amp; Extensions</td>
-              <td className="py-3 px-4 text-gray-600">RSA quality, sitelinks, callouts</td>
+              <td className="py-3 px-3 font-medium">5</td>
+              <td className="py-3 px-3 font-medium">Ads &amp; Extensions</td>
+              <td className="py-3 px-3 text-gray-600">RSA quality, sitelinks, callouts</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">6</td>
-              <td className="py-3 px-4 font-medium">Audiences &amp; Remarketing</td>
-              <td className="py-3 px-4 text-gray-600">List health, observation vs targeting</td>
+              <td className="py-3 px-3 font-medium">6</td>
+              <td className="py-3 px-3 font-medium">Audiences &amp; Remarketing</td>
+              <td className="py-3 px-3 text-gray-600">List health, observation vs targeting</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">7</td>
-              <td className="py-3 px-4 font-medium">Bidding Strategy</td>
-              <td className="py-3 px-4 text-gray-600">Smart Bidding readiness, tCPA/tROAS kalibracija</td>
+              <td className="py-3 px-3 font-medium">7</td>
+              <td className="py-3 px-3 font-medium">Bidding Strategy</td>
+              <td className="py-3 px-3 text-gray-600">Smart Bidding readiness, tCPA/tROAS kalibracija</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">8</td>
-              <td className="py-3 px-4 font-medium">Budget &amp; Allocation</td>
-              <td className="py-3 px-4 text-gray-600">Pacing, daily limit, lost IS budget</td>
+              <td className="py-3 px-3 font-medium">8</td>
+              <td className="py-3 px-3 font-medium">Budget &amp; Allocation</td>
+              <td className="py-3 px-3 text-gray-600">Pacing, daily limit, lost IS budget</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">9</td>
-              <td className="py-3 px-4 font-medium">Tracking &amp; Attribution</td>
-              <td className="py-3 px-4 text-gray-600">GA4 link, attribution model, data quality</td>
+              <td className="py-3 px-3 font-medium">9</td>
+              <td className="py-3 px-3 font-medium">Tracking &amp; Attribution</td>
+              <td className="py-3 px-3 text-gray-600">GA4 link, attribution model, data quality</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">10</td>
-              <td className="py-3 px-4 font-medium">Reporting &amp; Communication</td>
-              <td className="py-3 px-4 text-gray-600">KPI definicija, frequency, akcionabilnost</td>
+              <td className="py-3 px-3 font-medium">10</td>
+              <td className="py-3 px-3 font-medium">Reporting &amp; Communication</td>
+              <td className="py-3 px-3 text-gray-600">KPI definicija, frequency, akcionabilnost</td>
             </tr>
           </tbody>
         </table>
@@ -165,7 +165,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Crveni flag</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Ako preuzimaš nalog i bivša agencija je još uvek na MCC — eskaluj odmah. Smart Bidding signali se mešaju između naloga.
         </p>
       </div>
@@ -188,7 +188,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Pravilo iz prakse</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Ako u jednoj ad grupi imaš keywords sa CPC opsegom &gt;3x razlike (npr. 50 RSD vs 200 RSD), to je signal za podelu. Grupišeš skuplje i jeftinije ključne reči zajedno i bidding ne može da radi efikasno.
         </p>
       </div>
@@ -210,7 +210,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz prakse</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Nalog sa 30+ paused kampanja je signal da niko ne čisti. To je tehnički dug koji usporava izveštavanje i dashboard preglede. Nalog koji izgleda haotično interno — to se oseća i na kvalitetu optimizacija.
         </p>
       </div>
@@ -236,7 +236,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Crveni flag</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Ako je &ldquo;Page View&rdquo; markirana kao Primary konverzija — Smart Bidding optimizuje pogrešnu stvar i troši budžet na posete, ne na prave kupce.
         </p>
       </div>
@@ -251,7 +251,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Najčešća greška u Srbiji</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Klijenti koriste WordPress + plugin koji već ima conversion tag, pa onda dodaju i GTM tag, pa onda i Google Ads kod ručno — 3x dupli count. Vidim ovo redovno. Rezultat: Smart Bidding misli da ima 3x više konverzija nego što zapravo ima.
         </p>
       </div>
@@ -288,7 +288,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Enhanced Conversions isključen = gubiš 10–30% konverzija u attributionu. Consent Mode v2 isključen = potencijalna kazna po GDPR / srpskom ZZPL. Oba su obavezna za 2026.
         </p>
       </div>
@@ -311,7 +311,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Default trap</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Google default je &ldquo;Presence or interest&rdquo; — što znači da neko iz Hrvatske koji pretražuje &ldquo;Srbija&rdquo; može videti tvoj oglas. Skoro uvek hoćeš <strong>Presence</strong> (geo target po lokaciji korisnika, ne po intentu).
         </p>
       </div>
@@ -325,7 +325,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz prakse</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Klijent sa &ldquo;Vodoinstalater Beograd&rdquo; targetingom imao je language = &ldquo;All&rdquo; — 8% impresija na arapskim/ruskim search terms. Switch na SR+EN smanjio waste za 8%.
         </p>
       </div>
@@ -340,7 +340,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pravilo</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Search kampanja nikad ne sme da uključi Display network expansion. Display impresije su u 99% slučajeva bot/junk saobraćaj koji troši budžet bez konverzija.
         </p>
       </div>
@@ -379,7 +379,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">2026 update</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Broad match je mnogo bolji nego pre 2–3 godine, ali samo ako imaš Smart Bidding (tCPA/tROAS), 30+ konverzija u zadnjih 30 dana, i robustnu negative keyword listu. Bez ova tri uslova — broad match = trošenje.
         </p>
       </div>
@@ -402,7 +402,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz prakse</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Klijent sa 0 negative keywords trošio je 25% spenda na irelevantne queryje. Posle 30 minuta rada na negative listi, CTR porastao 40%, CPA pao 18%. Za polaznu tačku pogledaj <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="text-blue-700 underline">kompletnu listu negativnih ključnih reči</Link> organizovanu po kategorijama.
         </p>
       </div>
@@ -425,7 +425,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Pro tip</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="text-blue-700 underline">Quality Score</Link> direktno zavisi od relevantnosti keywordsima — što bolje organizuješ ad grupe i match types, to bolje QS dobijaš, a manji CPC plaćaš.
         </p>
       </div>
@@ -448,7 +448,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">2026 realnost + RSA vodič</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Google AI-generated assets sada uključuju u kompoziciju RSA-a. Možeš ih isključiti, ali većina klijenata vidi boost kad ih ostaviš uključene. Za kompletan setup pogledaj <Link href={{ pathname: "/blog/[slug]", params: { slug: "rsa-vodic" } }} className="text-blue-700 underline">RSA vodič</Link>.
         </p>
       </div>
@@ -487,7 +487,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz prakse</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Klijent koji je dodao Image extensions video je CTR boost +12% na Search kampanji za 14 dana. Minimalan setup napor, konkretan rezultat.
         </p>
       </div>
@@ -510,7 +510,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Crveni flag</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Lista sa &ldquo;Currently empty&rdquo; ili &ldquo;Below threshold&rdquo; — zauzima slot u nalogu ali ne radi ništa korisno.
         </p>
       </div>
@@ -565,7 +565,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pravilo</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Smart Bidding bez podataka = trošenje. Treba ti data first. Bolje je ostati na Maximize Conversions bez targeta i prikupiti signal nego forsirati tCPA bez dovoljno konverzija.
         </p>
       </div>
@@ -580,7 +580,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz prakse</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Klijent sa tCPA = 800 RSD koji nije dostigao — kad smo postavili realniji 1.500 RSD, conversion volume porastao 3.2x za 30 dana. Algoritam je dobio prostor da radi i pronašao je konverzije na koje pre nije ni pokušavao da biduje.
         </p>
       </div>
@@ -595,7 +595,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Common miss</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           B2B nalog koji prikazuje 24/7, ali konverzije se dešavaju samo radnim danima 9–18h. Bid -100% van tog perioda = 30% smanjenje troška sa 0% smanjenja konverzija.
         </p>
       </div>
@@ -665,7 +665,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">80/20 pravilo za budžet</p>
-        <p className="text-sm text-yellow-900 mb-0">Top 20% kampanja po efikasnosti dobija 60–70% budžeta. Ostatak dobija minimalni budget za testiranje ili se pauzira dok ne pokaže rezultate.</p>
+        <p className="text-base text-yellow-900 mb-0">Top 20% kampanja po efikasnosti dobija 60–70% budžeta. Ostatak dobija minimalni budget za testiranje ili se pauzira dok ne pokaže rezultate.</p>
       </div>
 
       <hr />
@@ -774,61 +774,61 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">#</th>
-              <th className="py-3 px-4 font-heading font-semibold">Stavka</th>
-              <th className="py-3 px-4 font-heading font-semibold">Vreme</th>
+              <th className="py-3 px-3 font-heading font-semibold">#</th>
+              <th className="py-3 px-3 font-heading font-semibold">Stavka</th>
+              <th className="py-3 px-3 font-heading font-semibold">Vreme</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">1</td>
-              <td className="py-3 px-4">1.2 — Kampanje grupisane po cilju</td>
-              <td className="py-3 px-4 text-gray-600">3 min</td>
+              <td className="py-3 px-3 font-medium">1</td>
+              <td className="py-3 px-3">1.2 — Kampanje grupisane po cilju</td>
+              <td className="py-3 px-3 text-gray-600">3 min</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">2</td>
-              <td className="py-3 px-4">2.2 — Tag setup verifikacija (Tag Assistant)</td>
-              <td className="py-3 px-4 text-gray-600">5 min</td>
+              <td className="py-3 px-3 font-medium">2</td>
+              <td className="py-3 px-3">2.2 — Tag setup verifikacija (Tag Assistant)</td>
+              <td className="py-3 px-3 text-gray-600">5 min</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">3</td>
-              <td className="py-3 px-4">2.5 — Enhanced Conversions on/off</td>
-              <td className="py-3 px-4 text-gray-600">2 min</td>
+              <td className="py-3 px-3 font-medium">3</td>
+              <td className="py-3 px-3">2.5 — Enhanced Conversions on/off</td>
+              <td className="py-3 px-3 text-gray-600">2 min</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">4</td>
-              <td className="py-3 px-4">3.1 — Geo + &ldquo;Presence&rdquo; vs &ldquo;Presence or interest&rdquo;</td>
-              <td className="py-3 px-4 text-gray-600">2 min</td>
+              <td className="py-3 px-3 font-medium">4</td>
+              <td className="py-3 px-3">3.1 — Geo + &ldquo;Presence&rdquo; vs &ldquo;Presence or interest&rdquo;</td>
+              <td className="py-3 px-3 text-gray-600">2 min</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">5</td>
-              <td className="py-3 px-4">4.2 — Search Terms top 20 → negative keywords</td>
-              <td className="py-3 px-4 text-gray-600">8 min</td>
+              <td className="py-3 px-3 font-medium">5</td>
+              <td className="py-3 px-3">4.2 — Search Terms top 20 → negative keywords</td>
+              <td className="py-3 px-3 text-gray-600">8 min</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">6</td>
-              <td className="py-3 px-4">5.1 — RSA Ad Strength check</td>
-              <td className="py-3 px-4 text-gray-600">3 min</td>
+              <td className="py-3 px-3 font-medium">6</td>
+              <td className="py-3 px-3">5.1 — RSA Ad Strength check</td>
+              <td className="py-3 px-3 text-gray-600">3 min</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">7</td>
-              <td className="py-3 px-4">7.1 — Smart Bidding readiness (data sufficient?)</td>
-              <td className="py-3 px-4 text-gray-600">2 min</td>
+              <td className="py-3 px-3 font-medium">7</td>
+              <td className="py-3 px-3">7.1 — Smart Bidding readiness (data sufficient?)</td>
+              <td className="py-3 px-3 text-gray-600">2 min</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">8</td>
-              <td className="py-3 px-4">8.1 — Lost IS (budget) %</td>
-              <td className="py-3 px-4 text-gray-600">1 min</td>
+              <td className="py-3 px-3 font-medium">8</td>
+              <td className="py-3 px-3">8.1 — Lost IS (budget) %</td>
+              <td className="py-3 px-3 text-gray-600">1 min</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">9</td>
-              <td className="py-3 px-4">9.1 — GA4 link + auto-tagging</td>
-              <td className="py-3 px-4 text-gray-600">2 min</td>
+              <td className="py-3 px-3 font-medium">9</td>
+              <td className="py-3 px-3">9.1 — GA4 link + auto-tagging</td>
+              <td className="py-3 px-3 text-gray-600">2 min</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">10</td>
-              <td className="py-3 px-4">10.1 — KPI alignment (ako postoji 2. osoba)</td>
-              <td className="py-3 px-4 text-gray-600">2 min</td>
+              <td className="py-3 px-3 font-medium">10</td>
+              <td className="py-3 px-3">10.1 — KPI alignment (ako postoji 2. osoba)</td>
+              <td className="py-3 px-3 text-gray-600">2 min</td>
             </tr>
           </tbody>
         </table>
@@ -852,31 +852,31 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Stavke OK</th>
-              <th className="py-3 px-4 font-heading font-semibold">Ocena</th>
-              <th className="py-3 px-4 font-heading font-semibold">Šta to znači</th>
+              <th className="py-3 px-3 font-heading font-semibold">Stavke OK</th>
+              <th className="py-3 px-3 font-heading font-semibold">Ocena</th>
+              <th className="py-3 px-3 font-heading font-semibold">Šta to znači</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">0–2</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
-              <td className="py-3 px-4 text-gray-600">Hitni rad potreban</td>
+              <td className="py-3 px-3 font-medium">0–2</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
+              <td className="py-3 px-3 text-gray-600">Hitni rad potreban</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">3</td>
-              <td className="py-3 px-4"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Below Average</span></td>
-              <td className="py-3 px-4 text-gray-600">Ima prostora za popravku</td>
+              <td className="py-3 px-3 font-medium">3</td>
+              <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Below Average</span></td>
+              <td className="py-3 px-3 text-gray-600">Ima prostora za popravku</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">4</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
-              <td className="py-3 px-4 text-gray-600">Solidno, fine-tuning preostaje</td>
+              <td className="py-3 px-3 font-medium">4</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
+              <td className="py-3 px-3 text-gray-600">Solidno, fine-tuning preostaje</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">5</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
-              <td className="py-3 px-4 text-gray-600">Top stanje, samo maintenance</td>
+              <td className="py-3 px-3 font-medium">5</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
+              <td className="py-3 px-3 text-gray-600">Top stanje, samo maintenance</td>
             </tr>
           </tbody>
         </table>
@@ -886,30 +886,30 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Ukupan skor</th>
-              <th className="py-3 px-4 font-heading font-semibold">Interpretacija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Ukupan skor</th>
+              <th className="py-3 px-3 font-heading font-semibold">Interpretacija</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">40–50 OK</td>
-              <td className="py-3 px-4 text-gray-600">Nalog u odličnom stanju (top 10%)</td>
+              <td className="py-3 px-3 font-medium">40–50 OK</td>
+              <td className="py-3 px-3 text-gray-600">Nalog u odličnom stanju (top 10%)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">30–40 OK</td>
-              <td className="py-3 px-4 text-gray-600">Iznad proseka, manji propusti</td>
+              <td className="py-3 px-3 font-medium">30–40 OK</td>
+              <td className="py-3 px-3 text-gray-600">Iznad proseka, manji propusti</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">20–30 OK</td>
-              <td className="py-3 px-4 text-gray-600">Prosek (najveći deo naloga)</td>
+              <td className="py-3 px-3 font-medium">20–30 OK</td>
+              <td className="py-3 px-3 text-gray-600">Prosek (najveći deo naloga)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">10–20 OK</td>
-              <td className="py-3 px-4 text-gray-600">Dosta nesređenosti — 15–25% wasted spend</td>
+              <td className="py-3 px-3 font-medium">10–20 OK</td>
+              <td className="py-3 px-3 text-gray-600">Dosta nesređenosti — 15–25% wasted spend</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">&lt;10 OK</td>
-              <td className="py-3 px-4 text-gray-600">Ozbiljan problem, rebuild potreban</td>
+              <td className="py-3 px-3 font-medium">&lt;10 OK</td>
+              <td className="py-3 px-3 text-gray-600">Ozbiljan problem, rebuild potreban</td>
             </tr>
           </tbody>
         </table>
@@ -928,7 +928,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 1</p>
           <p className="font-semibold mb-2">Samo &ldquo;Presence or interest&rdquo; geo targetiranje</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Promeni na &ldquo;Presence&rdquo; odmah. Eliminiše irelevantne impresije iz dijaspore i inostranih korisnika.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Promeni na &ldquo;Presence&rdquo; odmah. Eliminiše irelevantne impresije iz dijaspore i inostranih korisnika.</p>
           </div>
         </div>
 
@@ -936,7 +936,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 2</p>
           <p className="font-semibold mb-2">Search Partners ON za Search kampanju bez evaluacije</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Isključi Search Partners, prikupi 30 dana podataka bez, zatim uključi i segmentiraj report da vidiš da li je CPA bolji ili gori.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Isključi Search Partners, prikupi 30 dana podataka bez, zatim uključi i segmentiraj report da vidiš da li je CPA bolji ili gori.</p>
           </div>
         </div>
 
@@ -944,7 +944,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 3</p>
           <p className="font-semibold mb-2">Single conversion tag bez deduplikacije — duplo brojanje</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Uradi Tag Assistant test na thank-you stranici. Ako vidiš 2+ hitove za isti event — ukloni jedan izvor (najčešće hardcoded gtag).</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Uradi Tag Assistant test na thank-you stranici. Ako vidiš 2+ hitove za isti event — ukloni jedan izvor (najčešće hardcoded gtag).</p>
           </div>
         </div>
 
@@ -952,7 +952,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 4</p>
           <p className="font-semibold mb-2">Smart Bidding bez 30 konverzija — Google uči na šumu</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Vrati se na Maximize Conversions bez target CPA/ROAS dok ne sakupiš 30+ konverzija mesečno. Tada uvedi target postepeno.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Vrati se na Maximize Conversions bez target CPA/ROAS dok ne sakupiš 30+ konverzija mesečno. Tada uvedi target postepeno.</p>
           </div>
         </div>
 
@@ -960,7 +960,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 5</p>
           <p className="font-semibold mb-2">Brand i non-brand u istoj kampanji — misleading ROAS</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Odvoji brand u posebnu kampanju. Brand ima niži CPC i viši CVR — meša i iskrivljuje pravi non-brand performance koji je pravi test efikasnosti.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Odvoji brand u posebnu kampanju. Brand ima niži CPC i viši CVR — meša i iskrivljuje pravi non-brand performance koji je pravi test efikasnosti.</p>
           </div>
         </div>
 
@@ -968,7 +968,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 6</p>
           <p className="font-semibold mb-2">Display Network expansion ON na Search kampanjama</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Isključi odmah. Ovo je najveći budget leak koji sam video — impresije na random sajtovima bez ijedne konverzije.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Isključi odmah. Ovo je najveći budget leak koji sam video — impresije na random sajtovima bez ijedne konverzije.</p>
           </div>
         </div>
 
@@ -976,7 +976,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 7</p>
           <p className="font-semibold mb-2">0 negative keywords u nalogu</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Najlakša optimizacija, ali često zaboravljena. 30 minuta rada na negative listi tipično donosi 15–25% smanjenje waste-a. Počni sa <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="text-green-700 underline">kompletnom listom negativnih ključnih reči</Link>.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Najlakša optimizacija, ali često zaboravljena. 30 minuta rada na negative listi tipično donosi 15–25% smanjenje waste-a. Počni sa <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="text-green-700 underline">kompletnom listom negativnih ključnih reči</Link>.</p>
           </div>
         </div>
 
@@ -984,7 +984,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 8</p>
           <p className="font-semibold mb-2">tCPA target = wish, ne realnost</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Postavi target koji je 10–20% bolji od trenutnog CPA-a, ne 50%+. Algoritam ne može da dostigne magični broj — ali može postepeno da se poboljšava.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Postavi target koji je 10–20% bolji od trenutnog CPA-a, ne 50%+. Algoritam ne može da dostigne magični broj — ali može postepeno da se poboljšava.</p>
           </div>
         </div>
 
@@ -992,7 +992,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 9</p>
           <p className="font-semibold mb-2">Mobile bid adjustment 0% iako mobile konvertuje 2x bolje</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Analiziraj device report za 90 dana i postavi bid adjustment baziran na stvarnim podacima. +20–40% za mobile ako konvertuje bolje.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Analiziraj device report za 90 dana i postavi bid adjustment baziran na stvarnim podacima. +20–40% za mobile ako konvertuje bolje.</p>
           </div>
         </div>
 
@@ -1000,7 +1000,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška 10</p>
           <p className="font-semibold mb-2">Kampanja &ldquo;1&rdquo; sa 50 ad grupa &ldquo;1, 2, 3...&rdquo; — nemoguće održavati</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Definiši naming convention i primeni ga retroaktivno. Za više o <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="text-green-700 underline">Google Ads optimizaciju</Link> i organizaciju naloga — detaljan vodič.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Definiši naming convention i primeni ga retroaktivno. Za više o <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="text-green-700 underline">Google Ads optimizaciju</Link> i organizaciju naloga — detaljan vodič.</p>
           </div>
         </div>
       </div>
@@ -1016,7 +1016,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
             Da li treba da angažujem agenciju za audit, ili mogu sam?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Sam za 30-min brzi audit ako imaš tehničke veštine i poznaješ interface. Detaljan 3–4h audit bolje da radi neko ko je radio 50+ naloga — pattern recognition je razlika. Vidim greške na prvom pogledu koje neiskusni advertiser ne bi primetio ni za sat vremena.
           </div>
         </details>
@@ -1026,7 +1026,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
             Koliko košta audit u Srbiji?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Range: 100–500 EUR za jednokratan audit, zavisi od veličine naloga i dubine. Mnoge agencije nude besplatan brzi audit kao lead magnet — to je legitimno ali pokriva 10–15 stavki, ne 50. Ako nalog troši &gt;1.000 EUR mesečno, investicija u detaljni audit vraća se za prvi mesec optimizacija.
           </div>
         </details>
@@ -1036,7 +1036,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
             Koliko često da radim audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Quarterly deep + monthly quick check. Ako pokrenete audit i ne nađete ništa dva kvartala zaredom — to je signal da je nalog u odličnom stanju, ne da je audit beskoristan. Pre-emptivni audit je uvek bolji od reaktivnog.
           </div>
         </details>
@@ -1046,7 +1046,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
             Da li audit garantuje bolji performance?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Audit identifikuje probleme. Šta ćeš sa njima — to je akciona faza. Najveće poboljšanje vidim kod naloga koji nisu auditovani 6+ meseci — tu se dobije 15–25% efikasnosti odmah nakon što se implementiraju preporuke.
           </div>
         </details>
@@ -1056,7 +1056,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
             Šta ako mi Google &ldquo;Recommendations&rdquo; nudi savete — da li je to dovoljno?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ne. Google Recommendations sugerišu većinom u korist Google-a: više spend, broader match, automatizovano targeting proširenje. Audit od strane treće strane gleda u korist tvog biznisa. To nije isti cilj.
           </div>
         </details>

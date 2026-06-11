@@ -33,17 +33,17 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#the-real-cost-of-google-ads-in-2026" className="text-sm text-gray-700 hover:text-primary underline">The real cost of Google Ads in 2026</a></li>
-          <li><a href="#how-google-ads-pricing-works" className="text-sm text-gray-700 hover:text-primary underline">How Google Ads pricing works</a></li>
-          <li><a href="#real-cpc-costs-by-industry-usuk-markets" className="text-sm text-gray-700 hover:text-primary underline">Real CPC costs by industry (US/UK markets)</a></li>
-          <li><a href="#minimum-budget-that-makes-sense" className="text-sm text-gray-700 hover:text-primary underline">Minimum budget that makes sense</a></li>
-          <li><a href="#management-costs-agency-vs-freelancer-vs-in-house" className="text-sm text-gray-700 hover:text-primary underline">Management costs: agency vs. freelancer vs. in-house</a></li>
-          <li><a href="#how-to-calculate-roi-before-spending-your-first-dollar" className="text-sm text-gray-700 hover:text-primary underline">How to calculate ROI before spending your first dollar</a></li>
-          <li><a href="#hidden-costs-nobody-talks-about" className="text-sm text-gray-700 hover:text-primary underline">Hidden costs nobody talks about</a></li>
-          <li><a href="#when-google-ads-isnt-the-right-choice" className="text-sm text-gray-700 hover:text-primary underline">When Google Ads isn't the right choice</a></li>
-          <li><a href="#next-steps" className="text-sm text-gray-700 hover:text-primary underline">Next steps</a></li>
-          <li><a href="#frequently-asked-questions-about-google-ads-pricing" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads pricing</a></li>
-          <li><a href="#related-guides" className="text-sm text-gray-700 hover:text-primary underline">Related Guides</a></li>
+          <li><a href="#the-real-cost-of-google-ads-in-2026" className="block py-1 text-base text-gray-700 hover:text-primary underline">The real cost of Google Ads in 2026</a></li>
+          <li><a href="#how-google-ads-pricing-works" className="block py-1 text-base text-gray-700 hover:text-primary underline">How Google Ads pricing works</a></li>
+          <li><a href="#real-cpc-costs-by-industry-usuk-markets" className="block py-1 text-base text-gray-700 hover:text-primary underline">Real CPC costs by industry (US/UK markets)</a></li>
+          <li><a href="#minimum-budget-that-makes-sense" className="block py-1 text-base text-gray-700 hover:text-primary underline">Minimum budget that makes sense</a></li>
+          <li><a href="#management-costs-agency-vs-freelancer-vs-in-house" className="block py-1 text-base text-gray-700 hover:text-primary underline">Management costs: agency vs. freelancer vs. in-house</a></li>
+          <li><a href="#how-to-calculate-roi-before-spending-your-first-dollar" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to calculate ROI before spending your first dollar</a></li>
+          <li><a href="#hidden-costs-nobody-talks-about" className="block py-1 text-base text-gray-700 hover:text-primary underline">Hidden costs nobody talks about</a></li>
+          <li><a href="#when-google-ads-isnt-the-right-choice" className="block py-1 text-base text-gray-700 hover:text-primary underline">When Google Ads isn't the right choice</a></li>
+          <li><a href="#next-steps" className="block py-1 text-base text-gray-700 hover:text-primary underline">Next steps</a></li>
+          <li><a href="#frequently-asked-questions-about-google-ads-pricing" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions about Google Ads pricing</a></li>
+          <li><a href="#related-guides" className="block py-1 text-base text-gray-700 hover:text-primary underline">Related Guides</a></li>
         </ol>
       </nav>
 
@@ -59,7 +59,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">From my experience</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           After nearly a decade managing Google Ads across 50+ brands in 6+ countries with $2M+ annual spend, I can give you a concrete framework to plan your budget and understand what to expect.
         </p>
       </div>
@@ -90,19 +90,19 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC — cost per click</h3>
-          <p className="text-sm text-gray-600 mb-0">Pay when someone clicks your ad. Most common for Search and Shopping campaigns.</p>
+          <p className="text-base text-gray-600 mb-0">Pay when someone clicks your ad. Most common for Search and Shopping campaigns.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPM — cost per 1,000 impressions</h3>
-          <p className="text-sm text-gray-600 mb-0">Pay for visibility, not clicks. Used for Display and YouTube campaigns.</p>
+          <p className="text-base text-gray-600 mb-0">Pay for visibility, not clicks. Used for Display and YouTube campaigns.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPV — cost per video view</h3>
-          <p className="text-sm text-gray-600 mb-0">Pay when someone watches your video ad. YouTube-specific.</p>
+          <p className="text-base text-gray-600 mb-0">Pay when someone watches your video ad. YouTube-specific.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPA — cost per conversion</h3>
-          <p className="text-sm text-gray-600 mb-0">Advanced model where you pay per action. Requires sufficient conversion data.</p>
+          <p className="text-base text-gray-600 mb-0">Advanced model where you pay per action. Requires sufficient conversion data.</p>
         </div>
       </div>
 
@@ -116,61 +116,61 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Industry</th>
-              <th className="py-3 px-4 font-heading font-semibold">Average CPC</th>
-              <th className="py-3 px-4 font-heading font-semibold">Range</th>
+              <th className="py-3 px-3 font-heading font-semibold">Industry</th>
+              <th className="py-3 px-3 font-heading font-semibold">Average CPC</th>
+              <th className="py-3 px-3 font-heading font-semibold">Range</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce — Fashion</td>
-              <td className="py-3 px-4">$0.50 - $1.50</td>
-              <td className="py-3 px-4">$0.30 - $3.00</td>
+              <td className="py-3 px-3 font-medium">eCommerce — Fashion</td>
+              <td className="py-3 px-3">$0.50 - $1.50</td>
+              <td className="py-3 px-3">$0.30 - $3.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">eCommerce — Electronics</td>
-              <td className="py-3 px-4">$0.80 - $2.00</td>
-              <td className="py-3 px-4">$0.40 - $4.00</td>
+              <td className="py-3 px-3 font-medium">eCommerce — Electronics</td>
+              <td className="py-3 px-3">$0.80 - $2.00</td>
+              <td className="py-3 px-3">$0.40 - $4.00</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Furniture</td>
-              <td className="py-3 px-4">$1.00 - $2.50</td>
-              <td className="py-3 px-4">$0.50 - $5.00</td>
+              <td className="py-3 px-3 font-medium">Furniture</td>
+              <td className="py-3 px-3">$1.00 - $2.50</td>
+              <td className="py-3 px-3">$0.50 - $5.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">B2B Services</td>
-              <td className="py-3 px-4">$2.00 - $6.00</td>
-              <td className="py-3 px-4">$1.00 - $15.00</td>
+              <td className="py-3 px-3 font-medium">B2B Services</td>
+              <td className="py-3 px-3">$2.00 - $6.00</td>
+              <td className="py-3 px-3">$1.00 - $15.00</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">SaaS</td>
-              <td className="py-3 px-4">$3.00 - $10.00</td>
-              <td className="py-3 px-4">$1.50 - $25.00</td>
+              <td className="py-3 px-3 font-medium">SaaS</td>
+              <td className="py-3 px-3">$3.00 - $10.00</td>
+              <td className="py-3 px-3">$1.50 - $25.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Real Estate</td>
-              <td className="py-3 px-4">$1.50 - $4.00</td>
-              <td className="py-3 px-4">$0.80 - $8.00</td>
+              <td className="py-3 px-3 font-medium">Real Estate</td>
+              <td className="py-3 px-3">$1.50 - $4.00</td>
+              <td className="py-3 px-3">$0.80 - $8.00</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Travel</td>
-              <td className="py-3 px-4">$1.00 - $3.00</td>
-              <td className="py-3 px-4">$0.50 - $6.00</td>
+              <td className="py-3 px-3 font-medium">Travel</td>
+              <td className="py-3 px-3">$1.00 - $3.00</td>
+              <td className="py-3 px-3">$0.50 - $6.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Finance/Insurance</td>
+              <td className="py-3 px-3 font-medium">Finance/Insurance</td>
               <td className="py-3 px-4 text-red-600 font-semibold">$5.00 - $20.00</td>
-              <td className="py-3 px-4">$2.00 - $50.00</td>
+              <td className="py-3 px-3">$2.00 - $50.00</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Healthcare/Medical</td>
-              <td className="py-3 px-4">$2.50 - $8.00</td>
-              <td className="py-3 px-4">$1.00 - $20.00</td>
+              <td className="py-3 px-3 font-medium">Healthcare/Medical</td>
+              <td className="py-3 px-3">$2.50 - $8.00</td>
+              <td className="py-3 px-3">$1.00 - $20.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Legal Services</td>
+              <td className="py-3 px-3 font-medium">Legal Services</td>
               <td className="py-3 px-4 text-red-600 font-semibold">$8.00 - $30.00</td>
-              <td className="py-3 px-4">$4.00 - $100.00+</td>
+              <td className="py-3 px-3">$4.00 - $100.00+</td>
             </tr>
           </tbody>
         </table>
@@ -178,7 +178,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           These are US/UK market averages. Costs in other English-speaking markets (Canada, Australia) are typically 10-30% lower.
         </p>
       </div>
@@ -201,7 +201,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Minimum budget formula</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Monthly budget = (Target clicks per day) × (Average CPC) × 30 days.
           For meaningful results you need <strong>minimum 10-15 clicks daily</strong>.
         </p>
@@ -219,30 +219,30 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Business type</th>
-              <th className="py-3 px-4 font-heading font-semibold">Recommended monthly budget</th>
+              <th className="py-3 px-3 font-heading font-semibold">Business type</th>
+              <th className="py-3 px-3 font-heading font-semibold">Recommended monthly budget</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Local business</td>
-              <td className="py-3 px-4">$1,000 - $2,500</td>
+              <td className="py-3 px-3 font-medium">Local business</td>
+              <td className="py-3 px-3">$1,000 - $2,500</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">eCommerce (small)</td>
-              <td className="py-3 px-4">$1,500 - $5,000</td>
+              <td className="py-3 px-3 font-medium">eCommerce (small)</td>
+              <td className="py-3 px-3">$1,500 - $5,000</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce (medium)</td>
-              <td className="py-3 px-4">$5,000 - $15,000</td>
+              <td className="py-3 px-3 font-medium">eCommerce (medium)</td>
+              <td className="py-3 px-3">$5,000 - $15,000</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">B2B services</td>
-              <td className="py-3 px-4">$2,500 - $8,000</td>
+              <td className="py-3 px-3 font-medium">B2B services</td>
+              <td className="py-3 px-3">$2,500 - $8,000</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">SaaS</td>
-              <td className="py-3 px-4">$5,000 - $20,000+</td>
+              <td className="py-3 px-3 font-medium">SaaS</td>
+              <td className="py-3 px-3">$5,000 - $20,000+</td>
             </tr>
           </tbody>
         </table>
@@ -250,7 +250,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Why I don't recommend micro-budgets</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           With $300-500 monthly you don't have enough data for optimization, algorithms can't learn, and you can't test different approaches. It's like opening a restaurant and advertising once a week.
         </p>
       </div>
@@ -264,21 +264,21 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">Agency</h3>
-          <p className="text-sm text-gray-600 mb-2"><strong>Cost:</strong> $1,500-5,000/mo or 10-20% of ad spend</p>
+          <p className="text-base text-gray-600 mb-2"><strong>Cost:</strong> $1,500-5,000/mo or 10-20% of ad spend</p>
           <p className="text-xs text-green-700 mb-1">+ Expert team, tools, continuity</p>
           <p className="text-xs text-red-600 mb-0">- More expensive for smaller budgets, less personalized</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">Freelancer</h3>
-          <p className="text-sm text-gray-600 mb-2"><strong>Cost:</strong> $800-3,000/mo or $80-200/hr</p>
+          <p className="text-base text-gray-600 mb-2"><strong>Cost:</strong> $800-3,000/mo or $80-200/hr</p>
           <p className="text-xs text-green-700 mb-1">+ Personalized approach, flexibility</p>
           <p className="text-xs text-red-600 mb-0">- Single point of failure, limited capacity</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Option 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-3">In-House</h3>
-          <p className="text-sm text-gray-600 mb-2"><strong>Cost:</strong> $3,000-8,000/mo salary + tools</p>
+          <p className="text-base text-gray-600 mb-2"><strong>Cost:</strong> $3,000-8,000/mo salary + tools</p>
           <p className="text-xs text-green-700 mb-1">+ Full control, deep business knowledge</p>
           <p className="text-xs text-red-600 mb-0">- Expensive for smaller companies, risk of stagnation</p>
         </div>
@@ -289,26 +289,26 @@ export default function HowMuchDoesGoogleAdsCostEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Monthly ad spend</th>
-              <th className="py-3 px-4 font-heading font-semibold">Recommended option</th>
+              <th className="py-3 px-3 font-heading font-semibold">Monthly ad spend</th>
+              <th className="py-3 px-3 font-heading font-semibold">Recommended option</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Up to $3,000</td>
-              <td className="py-3 px-4">Freelancer or DIY with consultations</td>
+              <td className="py-3 px-3 font-medium">Up to $3,000</td>
+              <td className="py-3 px-3">Freelancer or DIY with consultations</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">$3,000 - $15,000</td>
-              <td className="py-3 px-4">Freelancer/consultant</td>
+              <td className="py-3 px-3 font-medium">$3,000 - $15,000</td>
+              <td className="py-3 px-3">Freelancer/consultant</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">$15,000 - $60,000</td>
-              <td className="py-3 px-4">Specialized agency or senior freelancer</td>
+              <td className="py-3 px-3 font-medium">$15,000 - $60,000</td>
+              <td className="py-3 px-3">Specialized agency or senior freelancer</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">$60,000+</td>
-              <td className="py-3 px-4">Agency + in-house coordinator</td>
+              <td className="py-3 px-3 font-medium">$60,000+</td>
+              <td className="py-3 px-3">Agency + in-house coordinator</td>
             </tr>
           </tbody>
         </table>
@@ -354,7 +354,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Example calculation for eCommerce</p>
-        <div className="text-sm text-yellow-900 space-y-1">
+        <div className="text-base text-yellow-900 space-y-1">
           <p className="mb-1">AOV: $100 | Margin: 40% = $40 | Investment: 50% of margin</p>
           <p className="mb-1"><strong>Maximum CPA = $20</strong></p>
           <p className="mb-1">Conversion rate: 2%</p>
@@ -415,21 +415,21 @@ export default function HowMuchDoesGoogleAdsCostEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Skip if...</p>
           <p className="font-semibold mb-2">You don't have a clearly defined product or service</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">Google Ads won't fix poor product-market fit. First validate your offer, then advertise.</p>
+            <p className="text-base text-green-800 mb-0">Google Ads won't fix poor product-market fit. First validate your offer, then advertise.</p>
           </div>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Skip if...</p>
           <p className="font-semibold mb-2">Margins are below 20% or there's insufficient search demand</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">Low margins make profitability difficult. And if nobody's searching for your product, Search campaigns won't work — consider Display or Social advertising.</p>
+            <p className="text-base text-green-800 mb-0">Low margins make profitability difficult. And if nobody's searching for your product, Search campaigns won't work — consider Display or Social advertising.</p>
           </div>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Skip if...</p>
           <p className="font-semibold mb-2">Your website isn't ready or you don't have budget for 3-6 months</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0">Poor UX kills even the best campaigns. And results don't come overnight — you need at least 2-3 months for optimization.</p>
+            <p className="text-base text-green-800 mb-0">Poor UX kills even the best campaigns. And results don't come overnight — you need at least 2-3 months for optimization.</p>
           </div>
         </div>
       </div>
@@ -483,7 +483,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
             What's the minimum investment for Google Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Technical minimum is $1 per day, but for meaningful results expect $1,000-1,500 monthly for local businesses and $3,000+ for eCommerce or B2B.
           </div>
         </details>
@@ -492,7 +492,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
             Is Google Ads worth it for small businesses?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes, if you have clear customer value and competitive margins. Small businesses often have an advantage because they're more agile and can optimize faster.
           </div>
         </details>
@@ -501,7 +501,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
             How long before Google Ads starts delivering results?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             First indicators in 2-4 weeks. Real results and optimized account in 2-3 months. Stable performance in 4-6 months.
           </div>
         </details>
@@ -510,7 +510,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
             Why do prices vary so much by industry?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Because of competition and conversion value. A lawyer can pay $50 per click because one client is worth $5,000. A t-shirt store can't.
           </div>
         </details>
@@ -519,7 +519,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
             Does Google Ads cost more than Meta Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Generally yes, CPC on Google is higher. But user intent is stronger — someone searching &quot;buy X&quot; is closer to purchase than someone scrolling Instagram.
           </div>
         </details>

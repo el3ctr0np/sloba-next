@@ -31,16 +31,16 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#why-google-ads-is-effective-for-businesses" className="text-sm text-gray-700 hover:text-primary underline">Why Google Ads is effective for businesses</a></li>
-          <li><a href="#how-google-ads-works" className="text-sm text-gray-700 hover:text-primary underline">How Google Ads works</a></li>
-          <li><a href="#types-of-google-ads-campaigns" className="text-sm text-gray-700 hover:text-primary underline">Types of Google Ads campaigns</a></li>
-          <li><a href="#google-ads-for-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Google Ads for eCommerce</a></li>
-          <li><a href="#google-ads-for-b2b-businesses" className="text-sm text-gray-700 hover:text-primary underline">Google Ads for B2B businesses</a></li>
-          <li><a href="#how-to-set-foundations-for-successful-campaigns" className="text-sm text-gray-700 hover:text-primary underline">How to set foundations for successful campaigns</a></li>
-          <li><a href="#most-common-google-ads-mistakes" className="text-sm text-gray-700 hover:text-primary underline">Most common Google Ads mistakes</a></li>
-          <li><a href="#how-to-measure-campaign-success" className="text-sm text-gray-700 hover:text-primary underline">How to measure campaign success</a></li>
-          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
-          <li><a href="#frequently-asked-questions-about-google-advertising-for-businesses" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions about Google advertising for businesses</a></li>
+          <li><a href="#why-google-ads-is-effective-for-businesses" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why Google Ads is effective for businesses</a></li>
+          <li><a href="#how-google-ads-works" className="block py-1 text-base text-gray-700 hover:text-primary underline">How Google Ads works</a></li>
+          <li><a href="#types-of-google-ads-campaigns" className="block py-1 text-base text-gray-700 hover:text-primary underline">Types of Google Ads campaigns</a></li>
+          <li><a href="#google-ads-for-ecommerce" className="block py-1 text-base text-gray-700 hover:text-primary underline">Google Ads for eCommerce</a></li>
+          <li><a href="#google-ads-for-b2b-businesses" className="block py-1 text-base text-gray-700 hover:text-primary underline">Google Ads for B2B businesses</a></li>
+          <li><a href="#how-to-set-foundations-for-successful-campaigns" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to set foundations for successful campaigns</a></li>
+          <li><a href="#most-common-google-ads-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">Most common Google Ads mistakes</a></li>
+          <li><a href="#how-to-measure-campaign-success" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to measure campaign success</a></li>
+          <li><a href="#frequently-asked-questions" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#frequently-asked-questions-about-google-advertising-for-businesses" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions about Google advertising for businesses</a></li>
         </ol>
       </nav>
 
@@ -59,7 +59,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Difference between Google Ads and social media</p>
-        <p className="text-blue-800 text-sm mb-0">On social media you &quot;interrupt&quot; users while they consume content. On Google, users are actively searching for you. That's why Google Ads typically delivers lower volume but higher-quality traffic with stronger intent.</p>
+        <p className="text-blue-800 text-base mb-0">On social media you &quot;interrupt&quot; users while they consume content. On Google, users are actively searching for you. That's why Google Ads typically delivers lower volume but higher-quality traffic with stronger intent.</p>
       </div>
 
       <hr />
@@ -90,36 +90,36 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Network</th>
-              <th className="py-3 px-4 font-heading font-semibold">Where ads appear</th>
-              <th className="py-3 px-4 font-heading font-semibold">Campaign type</th>
+              <th className="py-3 px-3 font-heading font-semibold">Network</th>
+              <th className="py-3 px-3 font-heading font-semibold">Where ads appear</th>
+              <th className="py-3 px-3 font-heading font-semibold">Campaign type</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Search</td>
-              <td className="py-3 px-4">Google.com search results</td>
-              <td className="py-3 px-4">Search, Shopping</td>
+              <td className="py-3 px-3 font-medium">Search</td>
+              <td className="py-3 px-3">Google.com search results</td>
+              <td className="py-3 px-3">Search, Shopping</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Display</td>
-              <td className="py-3 px-4">2+ million websites and apps</td>
-              <td className="py-3 px-4">Display, Remarketing</td>
+              <td className="py-3 px-3 font-medium">Display</td>
+              <td className="py-3 px-3">2+ million websites and apps</td>
+              <td className="py-3 px-3">Display, Remarketing</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">YouTube</td>
-              <td className="py-3 px-4">Before/during/after video content</td>
-              <td className="py-3 px-4">Video campaigns</td>
+              <td className="py-3 px-3 font-medium">YouTube</td>
+              <td className="py-3 px-3">Before/during/after video content</td>
+              <td className="py-3 px-3">Video campaigns</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Discover</td>
-              <td className="py-3 px-4">Google Discover feed, Gmail</td>
-              <td className="py-3 px-4">Demand Gen</td>
+              <td className="py-3 px-3 font-medium">Discover</td>
+              <td className="py-3 px-3">Google Discover feed, Gmail</td>
+              <td className="py-3 px-3">Demand Gen</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Maps</td>
-              <td className="py-3 px-4">Google Maps results</td>
-              <td className="py-3 px-4">Local campaigns</td>
+              <td className="py-3 px-3 font-medium">Maps</td>
+              <td className="py-3 px-3">Google Maps results</td>
+              <td className="py-3 px-3">Local campaigns</td>
             </tr>
           </tbody>
         </table>
@@ -134,91 +134,91 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Highest intent</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Campaigns</h3>
-          <p className="text-sm text-gray-600 mb-3">Text ads appearing at top of Google search when people search specific keywords.</p>
+          <p className="text-base text-gray-600 mb-3">Text ads appearing at top of Google search when people search specific keywords.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">When to use:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>Product/service with clear demand</li>
             <li>People actively search what you offer</li>
             <li>You want high-intent traffic</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Ideal for:</p>
-          <p className="text-sm text-gray-600 mb-0">B2B services, local businesses, SaaS, eCommerce (alongside Shopping)</p>
+          <p className="text-base text-gray-600 mb-0">B2B services, local businesses, SaaS, eCommerce (alongside Shopping)</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Visual comparison</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping Campaigns</h3>
-          <p className="text-sm text-gray-600 mb-3">Visual ads with product image, price, and store name. Appear at top of Google search and Shopping tab.</p>
+          <p className="text-base text-gray-600 mb-3">Visual ads with product image, price, and store name. Appear at top of Google search and Shopping tab.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">When to use:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>You have an online store</li>
             <li>You sell physical products</li>
             <li>You have competitive pricing</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Requirements:</p>
-          <p className="text-sm text-gray-600 mb-0">Google Merchant Center account, product feed, linked to Google Ads</p>
+          <p className="text-base text-gray-600 mb-0">Google Merchant Center account, product feed, linked to Google Ads</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max (PMax)</h3>
-          <p className="text-sm text-gray-600 mb-3">Google's &quot;all-in-one&quot; campaign automatically showing ads across all networks (Search, Shopping, Display, YouTube, Discover).</p>
+          <p className="text-base text-gray-600 mb-3">Google's &quot;all-in-one&quot; campaign automatically showing ads across all networks (Search, Shopping, Display, YouTube, Discover).</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">When to use:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>You have sufficient conversion data (50+ monthly ideal)</li>
             <li>You want to scale with less manual work</li>
             <li>You're ready to give control to algorithm</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Note:</p>
-          <p className="text-sm text-gray-600 mb-0">PMax is a &quot;black box&quot; — less control and insights. I recommend starting with Search/Shopping.</p>
+          <p className="text-base text-gray-600 mb-0">PMax is a &quot;black box&quot; — less control and insights. I recommend starting with Search/Shopping.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Brand awareness</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display Campaigns</h3>
-          <p className="text-sm text-gray-600 mb-3">Banner ads on websites, apps, and YouTube. Lower intent, but wider reach.</p>
+          <p className="text-base text-gray-600 mb-3">Banner ads on websites, apps, and YouTube. Lower intent, but wider reach.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">When to use:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>Brand awareness campaigns</li>
             <li>Remarketing (bring back visitors who didn't buy)</li>
             <li>Reaching wider audience</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Note:</p>
-          <p className="text-sm text-gray-600 mb-0">Weaker for direct response, but excellent for remarketing.</p>
+          <p className="text-base text-gray-600 mb-0">Weaker for direct response, but excellent for remarketing.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Video content</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Video Campaigns (YouTube)</h3>
-          <p className="text-sm text-gray-600 mb-3">Video ads on YouTube (pre-roll, mid-roll, in-feed). Require video creative.</p>
+          <p className="text-base text-gray-600 mb-3">Video ads on YouTube (pre-roll, mid-roll, in-feed). Require video creative.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">When to use:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>You have video content</li>
             <li>You want brand awareness</li>
             <li>Complex product requiring explanation</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Ideal for:</p>
-          <p className="text-sm text-gray-600 mb-0">B2C brands, SaaS with demo videos, remarketing</p>
+          <p className="text-base text-gray-600 mb-0">B2C brands, SaaS with demo videos, remarketing</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Early funnel</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Demand Gen</h3>
-          <p className="text-sm text-gray-600 mb-3">Visual ads for Discover, Gmail, and YouTube. Replacement for Discovery campaigns.</p>
+          <p className="text-base text-gray-600 mb-3">Visual ads for Discover, Gmail, and YouTube. Replacement for Discovery campaigns.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">When to use:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>You want to reach people early in purchase journey</li>
             <li>You have strong visual content</li>
             <li>You want alternative to Meta Ads</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Ideal for:</p>
-          <p className="text-sm text-gray-600 mb-0">eCommerce (prospecting campaigns), B2C with lifestyle products</p>
+          <p className="text-base text-gray-600 mb-0">eCommerce (prospecting campaigns), B2C with lifestyle products</p>
         </div>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Guide to Performance Max campaigns</p>
-        <p className="text-blue-800 text-sm mb-0">PMax campaigns can deliver excellent results, but only if properly set up. For detailed guide, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline font-semibold">Performance Max guide</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">PMax campaigns can deliver excellent results, but only if properly set up. For detailed guide, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline font-semibold">Performance Max guide</Link>.</p>
       </div>
 
       <hr />
@@ -265,7 +265,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Google Shopping campaigns guide</p>
-        <p className="text-blue-800 text-sm mb-0">For a detailed guide on setting up your product feed and structuring Shopping campaigns, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping guide</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">For a detailed guide on setting up your product feed and structuring Shopping campaigns, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping guide</Link>.</p>
       </div>
 
       <h3>Shopping vs Performance Max — Which to choose?</h3>
@@ -275,41 +275,41 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspect</th>
-              <th className="py-3 px-4 font-heading font-semibold">Standard Shopping</th>
-              <th className="py-3 px-4 font-heading font-semibold">Performance Max</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspect</th>
+              <th className="py-3 px-3 font-heading font-semibold">Standard Shopping</th>
+              <th className="py-3 px-3 font-heading font-semibold">Performance Max</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Control</td>
-              <td className="py-3 px-4">High (bids, structure, negative KW)</td>
-              <td className="py-3 px-4">Low (algorithm decides)</td>
+              <td className="py-3 px-3 font-medium">Control</td>
+              <td className="py-3 px-3">High (bids, structure, negative KW)</td>
+              <td className="py-3 px-3">Low (algorithm decides)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Search term visibility</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Full visibility</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Limited</span></td>
+              <td className="py-3 px-3 font-medium">Search term visibility</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Full visibility</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Limited</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Networks</td>
-              <td className="py-3 px-4">Search + Shopping only</td>
-              <td className="py-3 px-4">All networks (Search, Shopping, Display, YouTube, Discover)</td>
+              <td className="py-3 px-3 font-medium">Networks</td>
+              <td className="py-3 px-3">Search + Shopping only</td>
+              <td className="py-3 px-3">All networks (Search, Shopping, Display, YouTube, Discover)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Best for</td>
-              <td className="py-3 px-4">Testing, control, new products</td>
-              <td className="py-3 px-4">Scaling proven products</td>
+              <td className="py-3 px-3 font-medium">Best for</td>
+              <td className="py-3 px-3">Testing, control, new products</td>
+              <td className="py-3 px-3">Scaling proven products</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Minimum conversion data</td>
-              <td className="py-3 px-4">0 (can launch immediately)</td>
-              <td className="py-3 px-4">50+ monthly (recommended)</td>
+              <td className="py-3 px-3 font-medium">Minimum conversion data</td>
+              <td className="py-3 px-3">0 (can launch immediately)</td>
+              <td className="py-3 px-3">50+ monthly (recommended)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Manual effort</td>
-              <td className="py-3 px-4">More optimization required</td>
-              <td className="py-3 px-4">Less manual work</td>
+              <td className="py-3 px-3 font-medium">Manual effort</td>
+              <td className="py-3 px-3">More optimization required</td>
+              <td className="py-3 px-3">Less manual work</td>
             </tr>
           </tbody>
         </table>
@@ -317,7 +317,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">My recommendation</p>
-        <p className="text-yellow-800 text-sm mb-0">A hybrid approach works best — Standard Shopping for control and testing new products, PMax for scaling products that already deliver results. Don't pause Shopping when you launch PMax.</p>
+        <p className="text-yellow-800 text-base mb-0">A hybrid approach works best — Standard Shopping for control and testing new products, PMax for scaling products that already deliver results. Don't pause Shopping when you launch PMax.</p>
       </div>
 
       <h3>Remarketing for eCommerce</h3>
@@ -347,7 +347,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Remarketing deep dive</p>
-        <p className="text-blue-800 text-sm mb-0">For a detailed guide on setting up remarketing campaigns and audience lists, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing guide</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">For a detailed guide on setting up remarketing campaigns and audience lists, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing guide</Link>.</p>
       </div>
 
       <hr />
@@ -386,46 +386,46 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspect</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2C</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspect</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2C</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Sales cycle</td>
-              <td className="py-3 px-4">Short (minutes–days)</td>
-              <td className="py-3 px-4">Long (weeks–months)</td>
+              <td className="py-3 px-3 font-medium">Sales cycle</td>
+              <td className="py-3 px-3">Short (minutes–days)</td>
+              <td className="py-3 px-3">Long (weeks–months)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Conversion</td>
-              <td className="py-3 px-4">Direct purchase</td>
-              <td className="py-3 px-4">Lead (form, demo request)</td>
+              <td className="py-3 px-3 font-medium">Conversion</td>
+              <td className="py-3 px-3">Direct purchase</td>
+              <td className="py-3 px-3">Lead (form, demo request)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Targeting</td>
-              <td className="py-3 px-4">Broad</td>
-              <td className="py-3 px-4">Narrow, more specific</td>
+              <td className="py-3 px-3 font-medium">Targeting</td>
+              <td className="py-3 px-3">Broad</td>
+              <td className="py-3 px-3">Narrow, more specific</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Keywords</td>
-              <td className="py-3 px-4">Transactional</td>
-              <td className="py-3 px-4">Informational + transactional</td>
+              <td className="py-3 px-3 font-medium">Keywords</td>
+              <td className="py-3 px-3">Transactional</td>
+              <td className="py-3 px-3">Informational + transactional</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPC</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Usually lower</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Usually higher</span></td>
+              <td className="py-3 px-3 font-medium">CPC</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Usually lower</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Usually higher</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Volume</td>
-              <td className="py-3 px-4">Larger</td>
-              <td className="py-3 px-4">Smaller</td>
+              <td className="py-3 px-3 font-medium">Volume</td>
+              <td className="py-3 px-3">Larger</td>
+              <td className="py-3 px-3">Smaller</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Focus</td>
-              <td className="py-3 px-4">ROAS, CPA</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Lead quality</span></td>
+              <td className="py-3 px-3 font-medium">Focus</td>
+              <td className="py-3 px-3">ROAS, CPA</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Lead quality</span></td>
             </tr>
           </tbody>
         </table>
@@ -445,7 +445,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Solution: Focus on quality</h3>
         </div>
-        <ul className="text-sm mb-0">
+        <ul className="text-base mb-0">
           <li><strong>Offline conversion tracking</strong> — Import sales from CRM back to Google Ads so algorithm learns what quality lead looks like</li>
           <li><strong>Lead scoring</strong> — Don't treat all conversions equally (demo request is more valuable than newsletter signup)</li>
           <li><strong>Aggressive negative keywords</strong> — Exclude students, job seekers, DIYers, &quot;free&quot;, &quot;cheap&quot;</li>
@@ -461,8 +461,8 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Top of Funnel</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Blog readers who haven't converted.</p>
-        <p className="text-sm mb-0"><strong>Goal:</strong> Offer a lead magnet (white paper, checklist, webinar) to capture contact details.</p>
+        <p className="text-base text-gray-600 mb-3">Blog readers who haven't converted.</p>
+        <p className="text-base mb-0"><strong>Goal:</strong> Offer a lead magnet (white paper, checklist, webinar) to capture contact details.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -470,8 +470,8 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Middle of Funnel</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Lead magnet downloaders who haven't booked a demo.</p>
-        <p className="text-sm mb-0"><strong>Goal:</strong> Offer case studies, customer testimonials, webinars — proof that your solution works.</p>
+        <p className="text-base text-gray-600 mb-3">Lead magnet downloaders who haven't booked a demo.</p>
+        <p className="text-base mb-0"><strong>Goal:</strong> Offer case studies, customer testimonials, webinars — proof that your solution works.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -479,8 +479,8 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bottom of Funnel</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Visitors to your pricing page or demo request page.</p>
-        <p className="text-sm mb-0"><strong>Goal:</strong> Direct offer — limited-time discount, free trial, free consultation.</p>
+        <p className="text-base text-gray-600 mb-3">Visitors to your pricing page or demo request page.</p>
+        <p className="text-base mb-0"><strong>Goal:</strong> Direct offer — limited-time discount, free trial, free consultation.</p>
       </div>
 
       <hr />
@@ -493,16 +493,16 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Conversion Tracking</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Without tracking you're flying blind. You don't know what delivers results, can't optimize, waste money.</p>
+        <p className="text-base text-gray-600 mb-3">Without tracking you're flying blind. You don't know what delivers results, can't optimize, waste money.</p>
         <p className="text-sm font-semibold mb-2">Setup includes:</p>
-        <ul className="text-sm mb-3">
+        <ul className="text-base mb-3">
           <li><strong>Google Tag Manager</strong> — centralized tag management</li>
           <li><strong>GA4</strong> — analytics and attribution</li>
           <li><strong>Google Ads conversion tag</strong> — direct conversion tracking</li>
           <li><strong>Enhanced conversions</strong> — better user matching (increases accuracy 20–30%)</li>
         </ul>
         <p className="text-sm font-semibold mb-2">What to track:</p>
-        <ul className="text-sm mb-0">
+        <ul className="text-base mb-0">
           <li>Primary conversions (purchase, lead, demo request)</li>
           <li>Secondary conversions (add to cart, pricing page)</li>
           <li>Micro conversions (scroll, video view, time on site &gt; 2min)</li>
@@ -514,9 +514,9 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing Pages</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Rule: every campaign needs its own landing page. Homepage is not a landing page.</p>
+        <p className="text-base text-gray-600 mb-3">Rule: every campaign needs its own landing page. Homepage is not a landing page.</p>
         <p className="text-sm font-semibold mb-2">Landing page must have:</p>
-        <ul className="text-sm mb-3">
+        <ul className="text-base mb-3">
           <li><strong>Clear headline</strong> — matching the ad (message match)</li>
           <li><strong>Benefit-focused copy</strong> — what user gets, not what you offer</li>
           <li><strong>Social proof</strong> — testimonials, reviews, client logos, numbers</li>
@@ -524,7 +524,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <li><strong>Speed</strong> — under 3 seconds load time (every second delay = 7% fewer conversions)</li>
           <li><strong>Mobile optimization</strong> — 60%+ traffic is mobile</li>
         </ul>
-        <p className="text-sm mb-0"><strong>Most common mistake:</strong> Sending traffic to homepage with 10 links not focused on conversion.</p>
+        <p className="text-base mb-0"><strong>Most common mistake:</strong> Sending traffic to homepage with 10 links not focused on conversion.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -532,15 +532,15 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword Research</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Keywords aren't just about "how many people are searching" — the focus is on intent.</p>
+        <p className="text-base text-gray-600 mb-3">Keywords aren't just about "how many people are searching" — the focus is on intent.</p>
         <p className="text-sm font-semibold mb-2">Tools:</p>
-        <ul className="text-sm mb-3">
+        <ul className="text-base mb-3">
           <li><strong><a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a></strong> — free, sufficient to get started</li>
           <li><strong>Semrush/Ahrefs</strong> — premium, detailed competitive intelligence</li>
           <li><strong>Google Search Console</strong> — what's already driving organic traffic to your site</li>
         </ul>
         <p className="text-sm font-semibold mb-2">Focus on:</p>
-        <ul className="text-sm mb-0">
+        <ul className="text-base mb-0">
           <li><strong>Intent</strong> — What does the user want to achieve? (informational vs purchase)</li>
           <li><strong>Volume</strong> — How many people search? (balance between volume and intent)</li>
           <li><strong>Competition</strong> — How expensive is it? (high CPC usually = high intent)</li>
@@ -553,16 +553,16 @@ export default function GoogleAdvertisingForBusinessesEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor Analysis</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Before you start, check what your competitors are doing.</p>
+        <p className="text-base text-gray-600 mb-3">Before you start, check what your competitors are doing.</p>
         <p className="text-sm font-semibold mb-2">What to analyse:</p>
-        <ul className="text-sm mb-3">
+        <ul className="text-base mb-3">
           <li>Who is bidding on your target keywords?</li>
           <li>What ads are they running? (headline, copy, CTA)</li>
           <li>Which landing pages do they use?</li>
           <li>What are their USPs? (unique selling points)</li>
           <li>Which ad extensions are they using?</li>
         </ul>
-        <p className="text-sm mb-0"><strong>Tools:</strong> Semrush, SpyFu, or simply — search as a customer and analyse the ads you see.</p>
+        <p className="text-base mb-0"><strong>Tools:</strong> Semrush, SpyFu, or simply — search as a customer and analyse the ads you see.</p>
       </div>
 
       <hr />
@@ -573,54 +573,54 @@ export default function GoogleAdvertisingForBusinessesEN() {
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #1</p>
         <p className="font-semibold mb-2">Lack of proper tracking</p>
-        <p className="text-sm text-gray-600 mb-3">Incredible how many companies spend thousands without proper tracking. If you don't know what converts, you can't optimize. You're flying blind.</p>
+        <p className="text-base text-gray-600 mb-3">Incredible how many companies spend thousands without proper tracking. If you don't know what converts, you can't optimize. You're flying blind.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Set up Google Tag Manager, GA4, Google Ads conversion tag, and Enhanced Conversions. Test before launching campaigns.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Set up Google Tag Manager, GA4, Google Ads conversion tag, and Enhanced Conversions. Test before launching campaigns.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
         <p className="font-semibold mb-2">Poor account structure</p>
-        <p className="text-sm text-gray-600 mb-3">Everything in one campaign, all keywords in one ad group, brand and non-brand mixed. Impossible to optimize, impossible to understand what works.</p>
+        <p className="text-base text-gray-600 mb-3">Everything in one campaign, all keywords in one ad group, brand and non-brand mixed. Impossible to optimize, impossible to understand what works.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Separate brand and non-brand campaigns. Group keywords by intent in different ad groups (max 10–20 KW per group). Each ad group needs 2–3 relevant ads.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Separate brand and non-brand campaigns. Group keywords by intent in different ad groups (max 10–20 KW per group). Each ad group needs 2–3 relevant ads.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
         <p className="font-semibold mb-2">Ignoring negative keywords</p>
-        <p className="text-sm text-gray-600 mb-3">You're paying for &quot;free&quot;, &quot;how to make yourself&quot;, &quot;job&quot;, &quot;course&quot;, &quot;torrent&quot; and similar. Money wasted because these people won't buy.</p>
+        <p className="text-base text-gray-600 mb-3">You're paying for &quot;free&quot;, &quot;how to make yourself&quot;, &quot;job&quot;, &quot;course&quot;, &quot;torrent&quot; and similar. Money wasted because these people won't buy.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Create negative keyword list immediately (free, cheap, job, salary, course, school, torrent, download, DIY). Update list weekly based on search terms report.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Create negative keyword list immediately (free, cheap, job, salary, course, school, torrent, download, DIY). Update list weekly based on search terms report.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #4</p>
         <p className="font-semibold mb-2">Sending traffic directly to the homepage</p>
-        <p className="text-sm text-gray-600 mb-3">Your homepage isn't designed for conversion — it has 10 links, is generic, and doesn't match your ad. A dedicated landing page is.</p>
+        <p className="text-base text-gray-600 mb-3">Your homepage isn't designed for conversion — it has 10 links, is generic, and doesn't match your ad. A dedicated landing page is.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Create a landing page for each campaign. Headline must match the ad (message match). One goal, one CTA. Load time under 3 seconds.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Create a landing page for each campaign. Headline must match the ad (message match). One goal, one CTA. Load time under 3 seconds.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
         <p className="font-semibold mb-2">Unrealistic expectations</p>
-        <p className="text-sm text-gray-600 mb-3">&quot;I want results within a week with a £500 budget.&quot; Google Ads requires time for the learning period and optimization. Allow a minimum of 2–3 months for stable results.</p>
+        <p className="text-base text-gray-600 mb-3">&quot;I want results within a week with a £500 budget.&quot; Google Ads requires time for the learning period and optimization. Allow a minimum of 2–3 months for stable results.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Plan for at least 2–3 months of testing. Minimum budget £1,000–2,000/month to start (varies by industry). Don't expect ROI in week one — the algorithm is still learning.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Plan for at least 2–3 months of testing. Minimum budget £1,000–2,000/month to start (varies by industry). Don't expect ROI in week one — the algorithm is still learning.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #6</p>
         <p className="font-semibold mb-2">Set-and-forget mentality</p>
-        <p className="text-sm text-gray-600 mb-3">Launching campaigns and leaving them untouched for a month. Google Ads is not &quot;set it and forget it&quot;. It requires continuous optimization.</p>
+        <p className="text-base text-gray-600 mb-3">Launching campaigns and leaving them untouched for a month. Google Ads is not &quot;set it and forget it&quot;. It requires continuous optimization.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Weekly: check search terms, add negative keywords, bid adjustments. Monthly: A/B test ads, landing page improvements, account structure review.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Weekly: check search terms, add negative keywords, bid adjustments. Monthly: A/B test ads, landing page improvements, account structure review.</p>
         </div>
       </div>
 
@@ -634,36 +634,36 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metric</th>
-              <th className="py-3 px-4 font-heading font-semibold">What it shows</th>
-              <th className="py-3 px-4 font-heading font-semibold">Good benchmark</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metric</th>
+              <th className="py-3 px-3 font-heading font-semibold">What it shows</th>
+              <th className="py-3 px-3 font-heading font-semibold">Good benchmark</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">ROAS</td>
-              <td className="py-3 px-4">Revenue ÷ ad spend</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–5x minimum</span></td>
+              <td className="py-3 px-3 font-medium">ROAS</td>
+              <td className="py-3 px-3">Revenue ÷ ad spend</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–5x minimum</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">CPA</td>
-              <td className="py-3 px-4">Cost per purchase</td>
-              <td className="py-3 px-4">Depends on AOV and margin</td>
+              <td className="py-3 px-3 font-medium">CPA</td>
+              <td className="py-3 px-3">Cost per purchase</td>
+              <td className="py-3 px-3">Depends on AOV and margin</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Conversion Rate</td>
-              <td className="py-3 px-4">% of visitors who buy</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">1–3%</span></td>
+              <td className="py-3 px-3 font-medium">Conversion Rate</td>
+              <td className="py-3 px-3">% of visitors who buy</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">1–3%</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">AOV</td>
-              <td className="py-3 px-4">Average order value</td>
-              <td className="py-3 px-4">Varies by industry</td>
+              <td className="py-3 px-3 font-medium">AOV</td>
+              <td className="py-3 px-3">Average order value</td>
+              <td className="py-3 px-3">Varies by industry</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CTR</td>
-              <td className="py-3 px-4">% of people who click ad</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">2–4%</span></td>
+              <td className="py-3 px-3 font-medium">CTR</td>
+              <td className="py-3 px-3">% of people who click ad</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">2–4%</span></td>
             </tr>
           </tbody>
         </table>
@@ -674,41 +674,41 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metric</th>
-              <th className="py-3 px-4 font-heading font-semibold">What it shows</th>
-              <th className="py-3 px-4 font-heading font-semibold">Good benchmark</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metric</th>
+              <th className="py-3 px-3 font-heading font-semibold">What it shows</th>
+              <th className="py-3 px-3 font-heading font-semibold">Good benchmark</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPL</td>
-              <td className="py-3 px-4">Cost per lead</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">£15–60</span></td>
+              <td className="py-3 px-3 font-medium">CPL</td>
+              <td className="py-3 px-3">Cost per lead</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">£15–60</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Lead Quality Score</td>
-              <td className="py-3 px-4">% of qualified leads</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Most important</span></td>
+              <td className="py-3 px-3 font-medium">Lead Quality Score</td>
+              <td className="py-3 px-3">% of qualified leads</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Most important</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">SQL Rate</td>
-              <td className="py-3 px-4">% of leads that become sales qualified</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">20–40%</span></td>
+              <td className="py-3 px-3 font-medium">SQL Rate</td>
+              <td className="py-3 px-3">% of leads that become sales qualified</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">20–40%</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Pipeline Value</td>
-              <td className="py-3 px-4">Value of potential deals</td>
-              <td className="py-3 px-4">Track in CRM</td>
+              <td className="py-3 px-3 font-medium">Pipeline Value</td>
+              <td className="py-3 px-3">Value of potential deals</td>
+              <td className="py-3 px-3">Track in CRM</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CTR</td>
-              <td className="py-3 px-4">% of people who click ad</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–6%</span></td>
+              <td className="py-3 px-3 font-medium">CTR</td>
+              <td className="py-3 px-3">% of people who click ad</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–6%</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Conversion Rate</td>
-              <td className="py-3 px-4">% of visitors who leave contact</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">2–8%</span></td>
+              <td className="py-3 px-3 font-medium">Conversion Rate</td>
+              <td className="py-3 px-3">% of visitors who leave contact</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">2–8%</span></td>
             </tr>
           </tbody>
         </table>
@@ -719,36 +719,36 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metric</th>
-              <th className="py-3 px-4 font-heading font-semibold">eCommerce</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metric</th>
+              <th className="py-3 px-3 font-heading font-semibold">eCommerce</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPC (average)</td>
-              <td className="py-3 px-4">$0.50–$2.50</td>
-              <td className="py-3 px-4">$2.00–$10.00</td>
+              <td className="py-3 px-3 font-medium">CPC (average)</td>
+              <td className="py-3 px-3">$0.50–$2.50</td>
+              <td className="py-3 px-3">$2.00–$10.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">CTR</td>
-              <td className="py-3 px-4">2–4%</td>
-              <td className="py-3 px-4">3–6%</td>
+              <td className="py-3 px-3 font-medium">CTR</td>
+              <td className="py-3 px-3">2–4%</td>
+              <td className="py-3 px-3">3–6%</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Conversion Rate</td>
-              <td className="py-3 px-4">1–3%</td>
-              <td className="py-3 px-4">2–8%</td>
+              <td className="py-3 px-3 font-medium">Conversion Rate</td>
+              <td className="py-3 px-3">1–3%</td>
+              <td className="py-3 px-3">2–8%</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">ROAS (target)</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–5x</span></td>
-              <td className="py-3 px-4">N/A (focus on lead quality)</td>
+              <td className="py-3 px-3 font-medium">ROAS (target)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–5x</span></td>
+              <td className="py-3 px-3">N/A (focus on lead quality)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Minimum budget</td>
-              <td className="py-3 px-4">£1,000–2,000/month</td>
-              <td className="py-3 px-4">£2,000–5,000/month</td>
+              <td className="py-3 px-3 font-medium">Minimum budget</td>
+              <td className="py-3 px-3">£1,000–2,000/month</td>
+              <td className="py-3 px-3">£2,000–5,000/month</td>
             </tr>
           </tbody>
         </table>
@@ -756,7 +756,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">Benchmarks are a guide, not a rule. Your industry, offer, and market can significantly affect results.</p>
+        <p className="text-yellow-800 text-base mb-0">Benchmarks are a guide, not a rule. Your industry, offer, and market can significantly affect results.</p>
       </div>
 
       <hr />
@@ -768,7 +768,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           How much does Google Ads cost?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Depends on industry and competition. In US/UK, average CPC is $0.50–$7.</p>
           <p className="mb-0"><strong>Recommended minimum monthly budget:</strong> $1,000–$2,500 for smaller businesses and testing, $5,000+ for serious campaigns.</p>
         </div>
@@ -779,7 +779,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           Does Google Ads work for B2B?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Absolutely. B2B has specificities (longer sales cycle, lower search volume, higher CPC), but Google Ads is still one of most effective channels for B2B lead generation.</p>
           <p className="mb-0">Key is focus on <strong>lead quality</strong> instead of quantity, proper offline conversion tracking (CRM integration), and remarketing through entire funnel.</p>
         </div>
@@ -790,7 +790,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           How long to see results?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <ul className="mb-0">
             <li><strong>First indicators:</strong> 2–4 weeks (learning period)</li>
             <li><strong>Real results:</strong> 2–3 months (enough data for optimization)</li>
@@ -804,7 +804,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           Do I need an agency for Google Ads?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Not necessarily. It depends on budget and complexity:</p>
           <ul className="mb-0">
             <li><strong>Under £2,000/month:</strong> A quality freelancer or even DIY with proper education can be enough</li>
@@ -819,7 +819,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           Which is better: Google Ads or Facebook Ads?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Depends on your goal:</p>
           <ul className="mb-3">
             <li><strong>Google Ads</strong> — captures people with intent (&quot;I want to buy X&quot;). Better for direct sales.</li>
@@ -834,7 +834,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           Can I manage Google Ads myself?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Yes, if you have the time and willingness to learn. Google Ads isn't rocket science, but it requires:</p>
           <ul className="mb-2">
             <li>Understanding the basics (auction model, Quality Score, match types)</li>
@@ -892,7 +892,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
             How much does Google advertising cost for businesses?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Average CPC varies by industry: $1-5 for eCommerce, $2-10 for B2B, $5-50+ for legal/finance. Recommended minimum monthly budget is $500-1,000 for local businesses, $2,000+ for eCommerce. Management fees range from $300-1,000/month.
           </div>
         </details>
@@ -902,7 +902,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
             Which Google campaign type is best for my business?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Search campaigns are best for businesses wanting direct inquiries/calls. Shopping for eCommerce. Performance Max for multi-channel reach. Display for brand awareness. It depends on your goal — lead generation or online sales.
           </div>
         </details>
@@ -912,7 +912,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
             How long until I see results from Google Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             First conversions typically within 2-4 weeks. Full optimization requires 60-90 days as Google&apos;s algorithm needs data for learning. B2B campaigns usually require a longer period (3-6 months) due to longer sales cycles.
           </div>
         </details>
@@ -922,7 +922,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
             Do I need a website for Google advertising?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes, a website is mandatory for Google Ads. You need a landing page that loads fast (under 3 seconds), is mobile-friendly, and has a clear call to action. Without a good website, even a perfect campaign won&apos;t deliver results.
           </div>
         </details>
@@ -932,7 +932,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
             Can I manage Google Ads myself or do I need an expert?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             You can start managing it yourself with a smaller budget, but without experience you typically waste 30-50% of budget on unoptimized spending. An expert pays for itself when monthly ad spend exceeds $1,000-2,000 as optimization savings usually cover the fee.
           </div>
         </details>

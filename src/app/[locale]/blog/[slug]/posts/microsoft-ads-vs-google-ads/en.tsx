@@ -37,7 +37,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
       {/* Quick Answer — featured snippet target */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-bold text-yellow-900 text-sm mb-1 uppercase tracking-wide">Quick Answer</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Google Ads is non-negotiable for any business advertising online — 92% market share, unmatched reach, and the most advanced automation available. Microsoft Ads is a profitable supplementary channel: 30–50% lower CPC, an older and wealthier audience (35+, higher incomes), and unique LinkedIn targeting available exclusively through the Microsoft platform.
         </p>
       </div>
@@ -64,16 +64,16 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#market-share" className="text-sm text-gray-700 hover:underline">Market share reality — what 5% actually means</a></li>
-          <li><a href="#audience-differences" className="text-sm text-gray-700 hover:underline">Audience differences — who are Microsoft Ads users</a></li>
-          <li><a href="#linkedin-targeting" className="text-sm text-gray-700 hover:underline">LinkedIn targeting — Microsoft's exclusive advantage</a></li>
-          <li><a href="#cpc-benchmarks" className="text-sm text-gray-700 hover:underline">CPC differences by industry — real benchmarks</a></li>
-          <li><a href="#feature-parity" className="text-sm text-gray-700 hover:underline">Feature parity — RSA, Shopping, PMax equivalents</a></li>
-          <li><a href="#real-patterns" className="text-sm text-gray-700 hover:underline">Real patterns from UK/US accounts — dual platform management</a></li>
-          <li><a href="#conversions-attribution" className="text-sm text-gray-700 hover:underline">Conversions and attribution — where platforms diverge</a></li>
-          <li><a href="#when-to-use" className="text-sm text-gray-700 hover:underline">When to use Microsoft Ads — decision framework</a></li>
-          <li><a href="#using-both" className="text-sm text-gray-700 hover:underline">When to run both platforms simultaneously</a></li>
-          <li><a href="#conclusion" className="text-sm text-gray-700 hover:underline">Conclusion and recommendations</a></li>
+          <li><a href="#market-share" className="block py-1 text-base text-gray-700 hover:underline">Market share reality — what 5% actually means</a></li>
+          <li><a href="#audience-differences" className="block py-1 text-base text-gray-700 hover:underline">Audience differences — who are Microsoft Ads users</a></li>
+          <li><a href="#linkedin-targeting" className="block py-1 text-base text-gray-700 hover:underline">LinkedIn targeting — Microsoft's exclusive advantage</a></li>
+          <li><a href="#cpc-benchmarks" className="block py-1 text-base text-gray-700 hover:underline">CPC differences by industry — real benchmarks</a></li>
+          <li><a href="#feature-parity" className="block py-1 text-base text-gray-700 hover:underline">Feature parity — RSA, Shopping, PMax equivalents</a></li>
+          <li><a href="#real-patterns" className="block py-1 text-base text-gray-700 hover:underline">Real patterns from UK/US accounts — dual platform management</a></li>
+          <li><a href="#conversions-attribution" className="block py-1 text-base text-gray-700 hover:underline">Conversions and attribution — where platforms diverge</a></li>
+          <li><a href="#when-to-use" className="block py-1 text-base text-gray-700 hover:underline">When to use Microsoft Ads — decision framework</a></li>
+          <li><a href="#using-both" className="block py-1 text-base text-gray-700 hover:underline">When to run both platforms simultaneously</a></li>
+          <li><a href="#conclusion" className="block py-1 text-base text-gray-700 hover:underline">Conclusion and recommendations</a></li>
         </ol>
       </nav>
 
@@ -205,7 +205,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
 
       <div className="bg-slate-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
         <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-3">LinkedIn Profile Targeting in Microsoft Ads</p>
-        <p className="text-gray-700 mb-3 text-sm">
+        <p className="text-gray-700 mb-3 text-base">
           In Microsoft Ads you can target search users by the following LinkedIn dimensions:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -254,7 +254,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
 
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-5 my-6">
         <p className="text-sm font-bold text-yellow-900 mb-2">Note on LinkedIn targeting</p>
-        <p className="text-sm text-yellow-800 mb-0">
+        <p className="text-base text-yellow-800 mb-0">
           LinkedIn Profile Targeting works as an <strong>audience bid modifier</strong>, not as exclusion
           targeting. Use it to adjust bids (+20%, +30%) towards segments that convert better — not to
           restrict reach. Always start in observation mode before applying bid adjustments.

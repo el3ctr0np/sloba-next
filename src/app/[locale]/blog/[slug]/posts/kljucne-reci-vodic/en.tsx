@@ -57,7 +57,7 @@ export default function KeywordGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Deep dive</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           To understand how Quality Score affects your CPC, see the <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline font-semibold">Quality Score guide</Link>.
         </p>
       </div>
@@ -71,12 +71,12 @@ export default function KeywordGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">You control</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Keyword</h3>
-          <p className="text-sm text-gray-600 mb-0">The word or phrase YOU add to your campaign and target your ads to.</p>
+          <p className="text-base text-gray-600 mb-0">The word or phrase YOU add to your campaign and target your ads to.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">User enters</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Term</h3>
-          <p className="text-sm text-gray-600 mb-0">What the user actually types into Google. Can differ from your keyword.</p>
+          <p className="text-base text-gray-600 mb-0">What the user actually types into Google. Can differ from your keyword.</p>
         </div>
       </div>
 
@@ -100,7 +100,7 @@ export default function KeywordGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Critical</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Understanding the difference between keywords and search terms is fundamental to optimization. If you do not review your Search Terms Report weekly, you are wasting budget on irrelevant searches.
         </p>
       </div>
@@ -117,28 +117,28 @@ export default function KeywordGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Navigational (Branded)</h3>
-          <p className="text-sm text-gray-600 mb-2">User searches for a specific brand or website.</p>
+          <p className="text-base text-gray-600 mb-2">User searches for a specific brand or website.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;nike uk&quot;, &quot;amazon&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">High CTR</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Low CPC</span></p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Informational</h3>
-          <p className="text-sm text-gray-600 mb-2">User seeks information, not ready to buy yet.</p>
+          <p className="text-base text-gray-600 mb-2">User seeks information, not ready to buy yet.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;how to choose a CRM&quot;, &quot;what is performance max&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Low CPC</span> <span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Lower conversion</span></p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Commercial (Research)</h3>
-          <p className="text-sm text-gray-600 mb-2">User researches options before buying.</p>
+          <p className="text-base text-gray-600 mb-2">User researches options before buying.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;best CRM for small business&quot;, &quot;hubspot vs salesforce&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Medium CPC</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Good conversion</span></p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Type 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Transactional</h3>
-          <p className="text-sm text-gray-600 mb-2">User ready to buy or convert.</p>
+          <p className="text-base text-gray-600 mb-2">User ready to buy or convert.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Examples:</strong> &quot;buy CRM software&quot;, &quot;CRM pricing&quot;, &quot;CRM free trial&quot;</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Higher CPC</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Highest conversion</span></p>
         </div>
@@ -178,7 +178,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Brainstorming</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Start with questions that reveal how your customers think.</p>
+        <p className="text-base text-gray-600 mb-3">Start with questions that reveal how your customers think.</p>
         <ul className="text-sm">
           <li>How would customers describe your product or service?</li>
           <li>What problems do you solve?</li>
@@ -192,7 +192,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Keyword Planner</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Free Google tool for finding new ideas and checking volume. Access it directly at <a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a>.</p>
+        <p className="text-base text-gray-600 mb-3">Free Google tool for finding new ideas and checking volume. Access it directly at <a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a>.</p>
         <ul className="text-sm">
           <li><strong>Discover New Keywords</strong> — enter seed keywords or competitor URL</li>
           <li><strong>Get Search Volume</strong> — check data for your existing list</li>
@@ -205,7 +205,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor Analysis</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">See what keywords competitors rank for.</p>
+        <p className="text-base text-gray-600 mb-3">See what keywords competitors rank for.</p>
         <ul className="text-sm">
           <li><strong>Paid tools:</strong> SEMrush, Ahrefs, SpyFu</li>
           <li><strong>Free:</strong> Google search (check competitor ads), autocomplete, &quot;Searches related to...&quot;</li>
@@ -217,7 +217,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search Terms Mining</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">If you have active campaigns, use the data you already have.</p>
+        <p className="text-base text-gray-600 mb-3">If you have active campaigns, use the data you already have.</p>
         <ul className="text-sm">
           <li>Keywords → Search Terms → analyze what people actually search for</li>
           <li>Add good searches as new keywords</li>
@@ -230,7 +230,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Customer Language</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">The goal is to understand how CUSTOMERS speak, not how you think they speak.</p>
+        <p className="text-base text-gray-600 mb-3">The goal is to understand how CUSTOMERS speak, not how you think they speak.</p>
         <ul className="text-sm">
           <li>Product and service reviews</li>
           <li>Support tickets and FAQs</li>
@@ -249,31 +249,31 @@ export default function KeywordGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metric</th>
-              <th className="py-3 px-4 font-heading font-semibold">What it means</th>
-              <th className="py-3 px-4 font-heading font-semibold">How to use it</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metric</th>
+              <th className="py-3 px-3 font-heading font-semibold">What it means</th>
+              <th className="py-3 px-3 font-heading font-semibold">How to use it</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Avg. monthly searches</td>
-              <td className="py-3 px-4">How many people search monthly</td>
-              <td className="py-3 px-4">Balance volume vs competition</td>
+              <td className="py-3 px-3 font-medium">Avg. monthly searches</td>
+              <td className="py-3 px-3">How many people search monthly</td>
+              <td className="py-3 px-3">Balance volume vs competition</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Competition</td>
-              <td className="py-3 px-4">How many advertisers compete</td>
-              <td className="py-3 px-4">High = more expensive but more valuable</td>
+              <td className="py-3 px-3 font-medium">Competition</td>
+              <td className="py-3 px-3">How many advertisers compete</td>
+              <td className="py-3 px-3">High = more expensive but more valuable</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Top of page bid (low)</td>
-              <td className="py-3 px-4">CPC for lower first page</td>
-              <td className="py-3 px-4">Minimum for visibility</td>
+              <td className="py-3 px-3 font-medium">Top of page bid (low)</td>
+              <td className="py-3 px-3">CPC for lower first page</td>
+              <td className="py-3 px-3">Minimum for visibility</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Top of page bid (high)</td>
-              <td className="py-3 px-4">CPC for top of results</td>
-              <td className="py-3 px-4">Premium positions</td>
+              <td className="py-3 px-3 font-medium">Top of page bid (high)</td>
+              <td className="py-3 px-3">CPC for top of results</td>
+              <td className="py-3 px-3">Premium positions</td>
             </tr>
           </tbody>
         </table>
@@ -281,7 +281,7 @@ export default function KeywordGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Pro tip for Keyword Planner</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Keyword Planner often underestimates volume for long-tail keywords. Combine with autocomplete and Search Terms data for complete picture. Also, always download results to Excel for easier analysis.
         </p>
       </div>
@@ -298,36 +298,36 @@ export default function KeywordGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Factor</th>
-              <th className="py-3 px-4 font-heading font-semibold">Evaluation question</th>
-              <th className="py-3 px-4 font-heading font-semibold">Ideal</th>
+              <th className="py-3 px-3 font-heading font-semibold">Factor</th>
+              <th className="py-3 px-3 font-heading font-semibold">Evaluation question</th>
+              <th className="py-3 px-3 font-heading font-semibold">Ideal</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Relevance</td>
-              <td className="py-3 px-4">Does it match your offering?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">High</span></td>
+              <td className="py-3 px-3 font-medium">Relevance</td>
+              <td className="py-3 px-3">Does it match your offering?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">High</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Intent</td>
-              <td className="py-3 px-4">Does it show buying intent?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Commercial/Transactional</span></td>
+              <td className="py-3 px-3 font-medium">Intent</td>
+              <td className="py-3 px-3">Does it show buying intent?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Commercial/Transactional</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Volume</td>
-              <td className="py-3 px-4">Does it have enough searches?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">100+ monthly</span></td>
+              <td className="py-3 px-3 font-medium">Volume</td>
+              <td className="py-3 px-3">Does it have enough searches?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">100+ monthly</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Competition</td>
-              <td className="py-3 px-4">Can you compete?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Depends on budget</span></td>
+              <td className="py-3 px-3 font-medium">Competition</td>
+              <td className="py-3 px-3">Can you compete?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Depends on budget</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPC</td>
-              <td className="py-3 px-4">Can you afford the click?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Within target CPA</span></td>
+              <td className="py-3 px-3 font-medium">CPC</td>
+              <td className="py-3 px-3">Can you afford the click?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Within target CPA</span></td>
             </tr>
           </tbody>
         </table>
@@ -335,8 +335,8 @@ export default function KeywordGuideEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Rule: Calculate max CPC before adding</p>
-        <p className="text-sm text-yellow-900 mb-2">Max CPC = Target CPA × Expected Conversion Rate</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-2">Max CPC = Target CPA × Expected Conversion Rate</p>
+        <p className="text-base text-yellow-900 mb-0">
           <strong>Example:</strong> Target CPA $40/£30, expected conversion 3% → Max CPC = $40 × 0.03 = $1.20. If Keyword Planner shows CPC $3.00 and your max is $1.20 — that keyword may not be profitable for your business model.
         </p>
       </div>
@@ -385,7 +385,7 @@ export default function KeywordGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">How many keywords per Ad Group?</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Recommendation: 10-20 keywords. Less than 5 — insufficient data for optimization. More than 30 — difficult to write relevant ad for all.
         </p>
       </div>
@@ -402,34 +402,34 @@ export default function KeywordGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Match Type</th>
-              <th className="py-3 px-4 font-heading font-semibold">Symbol</th>
-              <th className="py-3 px-4 font-heading font-semibold">Control</th>
-              <th className="py-3 px-4 font-heading font-semibold">Reach</th>
-              <th className="py-3 px-4 font-heading font-semibold">When to use</th>
+              <th className="py-3 px-3 font-heading font-semibold">Match Type</th>
+              <th className="py-3 px-3 font-heading font-semibold">Symbol</th>
+              <th className="py-3 px-3 font-heading font-semibold">Control</th>
+              <th className="py-3 px-3 font-heading font-semibold">Reach</th>
+              <th className="py-3 px-3 font-heading font-semibold">When to use</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Exact</td>
-              <td className="py-3 px-4">[keyword]</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Highest</span></td>
-              <td className="py-3 px-4">Smallest</td>
-              <td className="py-3 px-4">Proven winners, limited budget</td>
+              <td className="py-3 px-3 font-medium">Exact</td>
+              <td className="py-3 px-3">[keyword]</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Highest</span></td>
+              <td className="py-3 px-3">Smallest</td>
+              <td className="py-3 px-3">Proven winners, limited budget</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Phrase</td>
-              <td className="py-3 px-4">&quot;keyword&quot;</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Medium</span></td>
-              <td className="py-3 px-4">Medium</td>
-              <td className="py-3 px-4">Campaign launch, discovery</td>
+              <td className="py-3 px-3 font-medium">Phrase</td>
+              <td className="py-3 px-3">&quot;keyword&quot;</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Medium</span></td>
+              <td className="py-3 px-3">Medium</td>
+              <td className="py-3 px-3">Campaign launch, discovery</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Broad</td>
-              <td className="py-3 px-4">keyword</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Lowest</span></td>
-              <td className="py-3 px-4">Largest</td>
-              <td className="py-3 px-4">Scaling with Smart Bidding (30+ conversions)</td>
+              <td className="py-3 px-3 font-medium">Broad</td>
+              <td className="py-3 px-3">keyword</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Lowest</span></td>
+              <td className="py-3 px-3">Largest</td>
+              <td className="py-3 px-3">Scaling with Smart Bidding (30+ conversions)</td>
             </tr>
           </tbody>
         </table>
@@ -466,7 +466,7 @@ export default function KeywordGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Complete list and strategy</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           I have prepared a detailed guide with starter lists by industry: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">Negative Keywords — Guide with Lists</Link>.
         </p>
       </div>
@@ -506,31 +506,31 @@ export default function KeywordGuideEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Situation</th>
-              <th className="py-3 px-4 font-heading font-semibold">Minimum data</th>
-              <th className="py-3 px-4 font-heading font-semibold">Action</th>
+              <th className="py-3 px-3 font-heading font-semibold">Situation</th>
+              <th className="py-3 px-3 font-heading font-semibold">Minimum data</th>
+              <th className="py-3 px-3 font-heading font-semibold">Action</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Zero clicks</td>
-              <td className="py-3 px-4">1000+ impressions</td>
-              <td className="py-3 px-4">Check bid and QS</td>
+              <td className="py-3 px-3 font-medium">Zero clicks</td>
+              <td className="py-3 px-3">1000+ impressions</td>
+              <td className="py-3 px-3">Check bid and QS</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Clicks without conversions</td>
-              <td className="py-3 px-4">100+ clicks</td>
-              <td className="py-3 px-4">Evaluate LP and offer</td>
+              <td className="py-3 px-3 font-medium">Clicks without conversions</td>
+              <td className="py-3 px-3">100+ clicks</td>
+              <td className="py-3 px-3">Evaluate LP and offer</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPA too high</td>
-              <td className="py-3 px-4">3x target CPA spend</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Pause</span></td>
+              <td className="py-3 px-3 font-medium">CPA too high</td>
+              <td className="py-3 px-3">3x target CPA spend</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Pause</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Low QS without improvement</td>
-              <td className="py-3 px-4">QS 1-3, 30+ days</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Restructure</span></td>
+              <td className="py-3 px-3 font-medium">Low QS without improvement</td>
+              <td className="py-3 px-3">QS 1-3, 30+ days</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Restructure</span></td>
             </tr>
           </tbody>
         </table>
@@ -546,7 +546,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor keyword targeting</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Bidding on competitor brand names can be effective — you reach people actively considering alternatives.</p>
+        <p className="text-base text-gray-600 mb-3">Bidding on competitor brand names can be effective — you reach people actively considering alternatives.</p>
         <ul className="text-sm">
           <li>Never use competitor brand in ad text</li>
           <li>Focus on differentiation — why are you better?</li>
@@ -559,7 +559,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA keyword expansion</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">With remarketing lists, you can be more aggressive with keywords because users already know you.</p>
+        <p className="text-base text-gray-600 mb-3">With remarketing lists, you can be more aggressive with keywords because users already know you.</p>
         <ul className="text-sm">
           <li>For cold traffic: [crm for small business] (exact)</li>
           <li>For remarketing audience: crm software (broad) — wider reach is ok because they already know you</li>
@@ -572,7 +572,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword Sculpting</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Controlling which keyword triggers which ad when you have overlaps between Ad Groups.</p>
+        <p className="text-base text-gray-600 mb-3">Controlling which keyword triggers which ad when you have overlaps between Ad Groups.</p>
         <ul className="text-sm">
           <li><strong>Problem:</strong> You have &quot;crm&quot; and &quot;crm pricing&quot; — which shows for &quot;crm pricing uk&quot;?</li>
           <li><strong>Solution:</strong> Add &quot;pricing&quot; as negative to general Ad Group</li>
@@ -584,7 +584,7 @@ export default function KeywordGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dynamic Keyword Insertion (DKI)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Automatically inserts search term into ad for greater relevance. Useful tool, but test before wide application.</p>
+        <p className="text-base text-gray-600 mb-3">Automatically inserts search term into ad for greater relevance. Useful tool, but test before wide application.</p>
         <ul className="text-sm">
           <li>Syntax: &#123;KeyWord:Default Text&#125;</li>
           <li>Increases relevance and CTR</li>
@@ -602,7 +602,7 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #1</p>
           <p className="font-semibold mb-2">Too broad keywords without modifiers</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Add modifiers (type, location, intent). Instead of &quot;software&quot; use &quot;crm software for small business&quot;.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Add modifiers (type, location, intent). Instead of &quot;software&quot; use &quot;crm software for small business&quot;.</p>
           </div>
         </div>
 
@@ -610,7 +610,7 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
           <p className="font-semibold mb-2">Ignoring Search Terms Report</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Weekly Search Terms review. First 2 months — every 2-3 days. This is the most important optimization activity.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Weekly Search Terms review. First 2 months — every 2-3 days. This is the most important optimization activity.</p>
           </div>
         </div>
 
@@ -618,7 +618,7 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #3</p>
           <p className="font-semibold mb-2">100 keywords in one Ad Group</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Thematic grouping with 10-20 keywords. Test: can you write one relevant ad for all keywords in the group?</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Thematic grouping with 10-20 keywords. Test: can you write one relevant ad for all keywords in the group?</p>
           </div>
         </div>
 
@@ -626,7 +626,7 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #4</p>
           <p className="font-semibold mb-2">No negative keywords from start</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Prepare a <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">starter negative list</Link> before launching campaign + add weekly based on Search Terms.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Prepare a <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">starter negative list</Link> before launching campaign + add weekly based on Search Terms.</p>
           </div>
         </div>
 
@@ -634,7 +634,7 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
           <p className="font-semibold mb-2">Focus only on volume, not intent</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Always prioritize intent. 50 searches monthly with transactional intent is worth more than 5,000 informational searches.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Always prioritize intent. 50 searches monthly with transactional intent is worth more than 5,000 informational searches.</p>
           </div>
         </div>
 
@@ -642,7 +642,7 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #6</p>
           <p className="font-semibold mb-2">Copy-pasting competitor keywords</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Use competitor research as inspiration, but find your own unique angles. Your customers may use different terms.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Use competitor research as inspiration, but find your own unique angles. Your customers may use different terms.</p>
           </div>
         </div>
       </div>
@@ -658,7 +658,7 @@ export default function KeywordGuideEN() {
             How many keywords do I need to start?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             For one campaign: 30-50 keywords organized into 3-5 Ad Groups. Better to start with fewer and expand based on data than launch too many at once without focus.
           </div>
         </details>
@@ -668,7 +668,7 @@ export default function KeywordGuideEN() {
             Exact or Phrase match for campaign launch?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             I recommend <GlossaryLink slug="phrase-match">Phrase match</GlossaryLink> for launch. Gives good balance of control and discovery — you see what people actually search for. Add <GlossaryLink slug="exact-match">Exact match</GlossaryLink> later for proven performers, and consider <GlossaryLink slug="broad-match">Broad match</GlossaryLink> only once you have 30+ conversions monthly with Smart Bidding.
           </div>
         </details>
@@ -678,7 +678,7 @@ export default function KeywordGuideEN() {
             How often should I review Search Terms?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum once weekly. In first 30 days of new campaign — every 2-3 days. For mature campaigns with low wasted spend, weekly is sufficient.
           </div>
         </details>
@@ -688,7 +688,7 @@ export default function KeywordGuideEN() {
             What if a keyword shows 0 searches in Keyword Planner?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             It may still be valuable. Keyword Planner underestimates volume for long-tail keywords. If it is relevant and has transactional intent, test it — it may convert excellently.
           </div>
         </details>
@@ -698,7 +698,7 @@ export default function KeywordGuideEN() {
             Should I target competitor brand names?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Optional and depends on industry. Can be effective for reaching people considering alternatives. Never use competitor brand in ad text — focus on differentiation.
           </div>
         </details>
@@ -708,7 +708,7 @@ export default function KeywordGuideEN() {
             How do I know a keyword is performing poorly?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             100+ clicks without conversions or 3x target CPA spend without results are clear signals. But before pausing, check landing page and ad — the problem may be there, not the keyword.
           </div>
         </details>

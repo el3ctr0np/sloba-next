@@ -56,7 +56,7 @@ export default function KljucneReciVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Detaljan vodič</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Ako vas zanima kako Quality Score utiče na cenu klikova, pogledajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline font-semibold">vodič za Quality Score</Link>.
         </p>
       </div>
@@ -70,12 +70,12 @@ export default function KljucneReciVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Vi kontrolišete</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Ključna reč (Keyword)</h3>
-          <p className="text-sm text-gray-600 mb-0">Reč ili fraza koju VI dodajete u kampanju i na koju targetirate oglase.</p>
+          <p className="text-base text-gray-600 mb-0">Reč ili fraza koju VI dodajete u kampanju i na koju targetirate oglase.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Korisnik unosi</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Term (Pretraga)</h3>
-          <p className="text-sm text-gray-600 mb-0">Ono što korisnik zapravo ukuca u Google pretragu. Može se razlikovati od vaše ključne reči.</p>
+          <p className="text-base text-gray-600 mb-0">Ono što korisnik zapravo ukuca u Google pretragu. Može se razlikovati od vaše ključne reči.</p>
         </div>
       </div>
 
@@ -99,7 +99,7 @@ export default function KljucneReciVodicPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Razumevanje razlike između ključne reči i search term-a je osnova za optimizaciju. Ako ne pregledate Search Terms Report nedeljno, trosite budžet na pretrage koje nisu relevantne.
         </p>
       </div>
@@ -116,28 +116,28 @@ export default function KljucneReciVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Navigacione (Branded)</h3>
-          <p className="text-sm text-gray-600 mb-2">Korisnik traži specifičan brand ili sajt.</p>
+          <p className="text-base text-gray-600 mb-2">Korisnik traži specifičan brand ili sajt.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Primeri:</strong> {`"nike srbija"`}, {`"gigatron"`}</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Visok CTR</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Nizak CPC</span></p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Informacione</h3>
-          <p className="text-sm text-gray-600 mb-2">Korisnik traži informacije, ne želi (još) da kupi.</p>
+          <p className="text-base text-gray-600 mb-2">Korisnik traži informacije, ne želi (još) da kupi.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Primeri:</strong> {`"kako odabrati CRM"`}, {`"šta je performance max"`}</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Nizak CPC</span> <span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Niža konverzija</span></p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Komercijalne (Istraživačke)</h3>
-          <p className="text-sm text-gray-600 mb-2">Korisnik istražuje opcije pre kupovine.</p>
+          <p className="text-base text-gray-600 mb-2">Korisnik istražuje opcije pre kupovine.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Primeri:</strong> {`"najbolji CRM za mala preduzeća"`}, {`"hubspot vs salesforce"`}</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Srednji CPC</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Dobra konverzija</span></p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip 4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Transakcione</h3>
-          <p className="text-sm text-gray-600 mb-2">Korisnik je spreman da kupi ili konvertuje.</p>
+          <p className="text-base text-gray-600 mb-2">Korisnik je spreman da kupi ili konvertuje.</p>
           <p className="text-sm text-gray-600 mb-1"><strong>Primeri:</strong> {`"kupi CRM softver"`}, {`"CRM cena"`}, {`"CRM besplatan trial"`}</p>
           <p className="text-sm text-gray-600 mb-0"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Viši CPC</span> <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Najviša konverzija</span></p>
         </div>
@@ -177,7 +177,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Brainstorming</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Počnite sa pitanjima koja otkrivaju kako vaši kupci razmišljaju.</p>
+        <p className="text-base text-gray-600 mb-3">Počnite sa pitanjima koja otkrivaju kako vaši kupci razmišljaju.</p>
         <ul className="text-sm">
           <li>Kako bi kupci opisali vaš proizvod/uslugu?</li>
           <li>Koje probleme rešavate?</li>
@@ -191,7 +191,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Keyword Planner</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Besplatan Google-ov alat za pronalaženje novih ideja i proveru volume-a. Pristupite alatu na <a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a>.</p>
+        <p className="text-base text-gray-600 mb-3">Besplatan Google-ov alat za pronalaženje novih ideja i proveru volume-a. Pristupite alatu na <a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a>.</p>
         <ul className="text-sm">
           <li><strong>Discover New Keywords</strong> — unesite seed keywords ili URL konkurenta</li>
           <li><strong>Get Search Volume</strong> — proverite podatke za postojeću listu</li>
@@ -204,7 +204,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Analiza konkurencije</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Pogledajte na koje reči se konkurenti prikazuju.</p>
+        <p className="text-base text-gray-600 mb-3">Pogledajte na koje reči se konkurenti prikazuju.</p>
         <ul className="text-sm">
           <li><strong>Plaćeni alati:</strong> SEMrush, Ahrefs, SpyFu</li>
           <li><strong>Besplatno:</strong> Google pretraga (pogledajte oglase konkurenata), autocomplete, {`"Searches related to..."`}</li>
@@ -216,7 +216,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search Terms Mining</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Ako već imate aktivne kampanje, koristite podatke koje već imate.</p>
+        <p className="text-base text-gray-600 mb-3">Ako već imate aktivne kampanje, koristite podatke koje već imate.</p>
         <ul className="text-sm">
           <li>Keywords → Search Terms → analizirajte šta ljudi zapravo traže</li>
           <li>Dobre pretrage dodajte kao nove ključne reči</li>
@@ -229,7 +229,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Jezik vaših kupaca</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Cilj je razumeti kako KUPCI govore, ne kako vi mislite da govore.</p>
+        <p className="text-base text-gray-600 mb-3">Cilj je razumeti kako KUPCI govore, ne kako vi mislite da govore.</p>
         <ul className="text-sm">
           <li>Reviews proizvoda i usluga</li>
           <li>Support tiketi i najčešća pitanja</li>
@@ -248,31 +248,31 @@ export default function KljucneReciVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
-              <th className="py-3 px-4 font-heading font-semibold">Šta znači</th>
-              <th className="py-3 px-4 font-heading font-semibold">Kako koristiti</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-3 font-heading font-semibold">Šta znači</th>
+              <th className="py-3 px-3 font-heading font-semibold">Kako koristiti</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Avg. monthly searches</td>
-              <td className="py-3 px-4">Koliko ljudi traži mesečno</td>
-              <td className="py-3 px-4">Balans volume vs competition</td>
+              <td className="py-3 px-3 font-medium">Avg. monthly searches</td>
+              <td className="py-3 px-3">Koliko ljudi traži mesečno</td>
+              <td className="py-3 px-3">Balans volume vs competition</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Competition</td>
-              <td className="py-3 px-4">Koliko oglašivača se takmiči</td>
-              <td className="py-3 px-4">High = skuplji ali vredniji</td>
+              <td className="py-3 px-3 font-medium">Competition</td>
+              <td className="py-3 px-3">Koliko oglašivača se takmiči</td>
+              <td className="py-3 px-3">High = skuplji ali vredniji</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Top of page bid (low)</td>
-              <td className="py-3 px-4">CPC za donji deo prve stranice</td>
-              <td className="py-3 px-4">Minimum za vidljivost</td>
+              <td className="py-3 px-3 font-medium">Top of page bid (low)</td>
+              <td className="py-3 px-3">CPC za donji deo prve stranice</td>
+              <td className="py-3 px-3">Minimum za vidljivost</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Top of page bid (high)</td>
-              <td className="py-3 px-4">CPC za sam vrh rezultata</td>
-              <td className="py-3 px-4">Premium pozicije</td>
+              <td className="py-3 px-3 font-medium">Top of page bid (high)</td>
+              <td className="py-3 px-3">CPC za sam vrh rezultata</td>
+              <td className="py-3 px-3">Premium pozicije</td>
             </tr>
           </tbody>
         </table>
@@ -280,7 +280,7 @@ export default function KljucneReciVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Pro tip za Keyword Planner</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Keyword Planner često potcenjuje volume za long-tail ključne reči. Kombinujte sa autocomplete i Search Terms podacima za kompletnu sliku. Takođe, uvek downloadujte rezultate u Excel za lakšu analizu.
         </p>
       </div>
@@ -297,36 +297,36 @@ export default function KljucneReciVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Faktor</th>
-              <th className="py-3 px-4 font-heading font-semibold">Pitanje za evaluaciju</th>
-              <th className="py-3 px-4 font-heading font-semibold">Idealno</th>
+              <th className="py-3 px-3 font-heading font-semibold">Faktor</th>
+              <th className="py-3 px-3 font-heading font-semibold">Pitanje za evaluaciju</th>
+              <th className="py-3 px-3 font-heading font-semibold">Idealno</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Relevantnost</td>
-              <td className="py-3 px-4">Da li odgovara vašoj ponudi?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Visoka</span></td>
+              <td className="py-3 px-3 font-medium">Relevantnost</td>
+              <td className="py-3 px-3">Da li odgovara vašoj ponudi?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Visoka</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Intent</td>
-              <td className="py-3 px-4">Da li pokazuje kupovnu nameru?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Komercijalni/Transakcioni</span></td>
+              <td className="py-3 px-3 font-medium">Intent</td>
+              <td className="py-3 px-3">Da li pokazuje kupovnu nameru?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Komercijalni/Transakcioni</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Volume</td>
-              <td className="py-3 px-4">Da li ima dovoljno pretraga?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">100+ mesečno</span></td>
+              <td className="py-3 px-3 font-medium">Volume</td>
+              <td className="py-3 px-3">Da li ima dovoljno pretraga?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">100+ mesečno</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Competition</td>
-              <td className="py-3 px-4">Možete li se takmičiti?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Zavisi od budžeta</span></td>
+              <td className="py-3 px-3 font-medium">Competition</td>
+              <td className="py-3 px-3">Možete li se takmičiti?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Zavisi od budžeta</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPC</td>
-              <td className="py-3 px-4">Možete li priuštiti klik?</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Unutar target CPA</span></td>
+              <td className="py-3 px-3 font-medium">CPC</td>
+              <td className="py-3 px-3">Možete li priuštiti klik?</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Unutar target CPA</span></td>
             </tr>
           </tbody>
         </table>
@@ -334,8 +334,8 @@ export default function KljucneReciVodicPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Pravilo: Izračunajte maksimalan CPC pre dodavanja</p>
-        <p className="text-sm text-yellow-900 mb-2">Max CPC = Target CPA × Expected Conversion Rate</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-2">Max CPC = Target CPA × Expected Conversion Rate</p>
+        <p className="text-base text-yellow-900 mb-0">
           <strong>Primer:</strong> Target CPA €30, očekivana konverzija 3% → Max CPC = €30 × 0.03 = €0.90. Ako Keyword Planner pokazuje CPC €2.00, a vaš max je €0.90 — ta ključna reč možda nije isplativa za vaš biznis model.
         </p>
       </div>
@@ -384,7 +384,7 @@ export default function KljucneReciVodicPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Koliko ključnih reči po Ad Group?</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Preporuka: 10-20 ključnih reči. Manje od 5 — nedovoljno podataka za optimizaciju. Više od 30 — teško napisati relevantan oglas za sve.
         </p>
       </div>
@@ -401,34 +401,34 @@ export default function KljucneReciVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Match Type</th>
-              <th className="py-3 px-4 font-heading font-semibold">Simbol</th>
-              <th className="py-3 px-4 font-heading font-semibold">Kontrola</th>
-              <th className="py-3 px-4 font-heading font-semibold">Reach</th>
-              <th className="py-3 px-4 font-heading font-semibold">Kada koristiti</th>
+              <th className="py-3 px-3 font-heading font-semibold">Match Type</th>
+              <th className="py-3 px-3 font-heading font-semibold">Simbol</th>
+              <th className="py-3 px-3 font-heading font-semibold">Kontrola</th>
+              <th className="py-3 px-3 font-heading font-semibold">Reach</th>
+              <th className="py-3 px-3 font-heading font-semibold">Kada koristiti</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Exact</td>
-              <td className="py-3 px-4">[keyword]</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Najviša</span></td>
-              <td className="py-3 px-4">Najmanji</td>
-              <td className="py-3 px-4">Proven winners, ograničen budžet</td>
+              <td className="py-3 px-3 font-medium">Exact</td>
+              <td className="py-3 px-3">[keyword]</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Najviša</span></td>
+              <td className="py-3 px-3">Najmanji</td>
+              <td className="py-3 px-3">Proven winners, ograničen budžet</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Phrase</td>
-              <td className="py-3 px-4">{`"keyword"`}</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Srednja</span></td>
-              <td className="py-3 px-4">Srednji</td>
-              <td className="py-3 px-4">Početak kampanje, discovery</td>
+              <td className="py-3 px-3 font-medium">Phrase</td>
+              <td className="py-3 px-3">{`"keyword"`}</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Srednja</span></td>
+              <td className="py-3 px-3">Srednji</td>
+              <td className="py-3 px-3">Početak kampanje, discovery</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Broad</td>
-              <td className="py-3 px-4">keyword</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Najniža</span></td>
-              <td className="py-3 px-4">Najveći</td>
-              <td className="py-3 px-4">Scaling sa Smart Bidding (30+ konverzija)</td>
+              <td className="py-3 px-3 font-medium">Broad</td>
+              <td className="py-3 px-3">keyword</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Najniža</span></td>
+              <td className="py-3 px-3">Najveći</td>
+              <td className="py-3 px-3">Scaling sa Smart Bidding (30+ konverzija)</td>
             </tr>
           </tbody>
         </table>
@@ -465,7 +465,7 @@ export default function KljucneReciVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Kompletna lista i strategija</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Pripremio sam detaljan vodič sa starter listama po industrijama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">Negativne ključne reči — vodič sa listama</Link>.
         </p>
       </div>
@@ -505,31 +505,31 @@ export default function KljucneReciVodicPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Situacija</th>
-              <th className="py-3 px-4 font-heading font-semibold">Minimum podataka</th>
-              <th className="py-3 px-4 font-heading font-semibold">Akcija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Situacija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Minimum podataka</th>
+              <th className="py-3 px-3 font-heading font-semibold">Akcija</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Nula klikova</td>
-              <td className="py-3 px-4">1000+ impressions</td>
-              <td className="py-3 px-4">Proverite bid i QS</td>
+              <td className="py-3 px-3 font-medium">Nula klikova</td>
+              <td className="py-3 px-3">1000+ impressions</td>
+              <td className="py-3 px-3">Proverite bid i QS</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Klikovi bez konverzija</td>
-              <td className="py-3 px-4">100+ klikova</td>
-              <td className="py-3 px-4">Evaluirajte LP i ponudu</td>
+              <td className="py-3 px-3 font-medium">Klikovi bez konverzija</td>
+              <td className="py-3 px-3">100+ klikova</td>
+              <td className="py-3 px-3">Evaluirajte LP i ponudu</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Previsok CPA</td>
-              <td className="py-3 px-4">3x target CPA spend</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Pauzirajte</span></td>
+              <td className="py-3 px-3 font-medium">Previsok CPA</td>
+              <td className="py-3 px-3">3x target CPA spend</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Pauzirajte</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Nizak QS bez poboljšanja</td>
-              <td className="py-3 px-4">QS 1-3, 30+ dana</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Restrukturirajte</span></td>
+              <td className="py-3 px-3 font-medium">Nizak QS bez poboljšanja</td>
+              <td className="py-3 px-3">QS 1-3, 30+ dana</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Restrukturirajte</span></td>
             </tr>
           </tbody>
         </table>
@@ -545,7 +545,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor keyword targeting</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Bidovanje na brand imena konkurenata može biti efektivno — dosežete ljude koji aktivno razmatraju alternative.</p>
+        <p className="text-base text-gray-600 mb-3">Bidovanje na brand imena konkurenata može biti efektivno — dosežete ljude koji aktivno razmatraju alternative.</p>
         <ul className="text-sm">
           <li>Nikada ne koristite competitor brand u tekstu oglasa</li>
           <li>Fokusirajte se na diferencijaciju — zašto ste bolji?</li>
@@ -558,7 +558,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RLSA proširenje ključnih reči</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Sa remarketing listama, možete biti agresivniji sa ključnim rečima jer korisnik vas već poznaje.</p>
+        <p className="text-base text-gray-600 mb-3">Sa remarketing listama, možete biti agresivniji sa ključnim rečima jer korisnik vas već poznaje.</p>
         <ul className="text-sm">
           <li>Za cold traffic: [crm za mala preduzeća] (exact)</li>
           <li>Za remarketing publiku: crm softver (broad) — širi reach je ok jer vas već znaju</li>
@@ -571,7 +571,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword Sculpting</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Kontrola koja ključna reč triggeruje koji oglas kada imate preklapanja između Ad Groups.</p>
+        <p className="text-base text-gray-600 mb-3">Kontrola koja ključna reč triggeruje koji oglas kada imate preklapanja između Ad Groups.</p>
         <ul className="text-sm">
           <li><strong>Problem:</strong> Imate {`"crm"`} i {`"crm cena"`} — koja se prikazuje za {`"crm cena srbija"`}?</li>
           <li><strong>Rešenje:</strong> Dodajte {`"cena"`} kao negative u general Ad Group</li>
@@ -583,7 +583,7 @@ export default function KljucneReciVodicPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dynamic Keyword Insertion (DKI)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Automatsko ubacivanje search term-a u oglas za veću relevantnost. Koristan alat, ali testirajte pre široke primene.</p>
+        <p className="text-base text-gray-600 mb-3">Automatsko ubacivanje search term-a u oglas za veću relevantnost. Koristan alat, ali testirajte pre široke primene.</p>
         <ul className="text-sm">
           <li>Sintaksa: {`{KeyWord:Default Text}`}</li>
           <li>Povećava relevantnost i CTR</li>
@@ -601,7 +601,7 @@ export default function KljucneReciVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #1</p>
           <p className="font-semibold mb-2">Previše široke ključne reči bez modifikatora</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Dodajte modifikatore (tip, lokacija, intent). Umesto {`"softver"`} koristite {`"crm softver za mala preduzeća"`}.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Dodajte modifikatore (tip, lokacija, intent). Umesto {`"softver"`} koristite {`"crm softver za mala preduzeća"`}.</p>
           </div>
         </div>
 
@@ -609,7 +609,7 @@ export default function KljucneReciVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
           <p className="font-semibold mb-2">Ignorisanje Search Terms Report-a</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Nedeljni pregled Search Terms-a. Prva 2 meseca — svaka 2-3 dana. Ovo je najvažnija optimizaciona aktivnost.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Nedeljni pregled Search Terms-a. Prva 2 meseca — svaka 2-3 dana. Ovo je najvažnija optimizaciona aktivnost.</p>
           </div>
         </div>
 
@@ -617,7 +617,7 @@ export default function KljucneReciVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
           <p className="font-semibold mb-2">100 ključnih reči u jednoj Ad Group</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Tematska grupacija sa 10-20 ključnih reči. Test: možete li napisati jedan relevantan oglas za sve reči u grupi?</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Tematska grupacija sa 10-20 ključnih reči. Test: možete li napisati jedan relevantan oglas za sve reči u grupi?</p>
           </div>
         </div>
 
@@ -625,7 +625,7 @@ export default function KljucneReciVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
           <p className="font-semibold mb-2">Bez negativnih ključnih reči od starta</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Pripremite <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">starter listu negatives</Link> pre pokretanja kampanje + dodajte nedeljno na osnovu Search Terms-a.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Pripremite <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">starter listu negatives</Link> pre pokretanja kampanje + dodajte nedeljno na osnovu Search Terms-a.</p>
           </div>
         </div>
 
@@ -633,7 +633,7 @@ export default function KljucneReciVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #5</p>
           <p className="font-semibold mb-2">Fokus samo na volume, a ne na intent</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Prioritet uvek dajte intent-u. 50 pretraga mesečno sa transakcijskim intent-om vredi više od 5,000 informacionih pretraga.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Prioritet uvek dajte intent-u. 50 pretraga mesečno sa transakcijskim intent-om vredi više od 5,000 informacionih pretraga.</p>
           </div>
         </div>
 
@@ -641,7 +641,7 @@ export default function KljucneReciVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #6</p>
           <p className="font-semibold mb-2">Copy-paste ključnih reči konkurencije</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Koristite competitor research kao inspiraciju, ali pronađite sopstvene unique angles. Vaši kupci možda koriste drugačije termine.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Koristite competitor research kao inspiraciju, ali pronađite sopstvene unique angles. Vaši kupci možda koriste drugačije termine.</p>
           </div>
         </div>
       </div>
@@ -657,7 +657,7 @@ export default function KljucneReciVodicPost() {
             Koliko ključnih reči je potrebno za početak?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Za jednu kampanju: 30-50 ključnih reči organizovanih u 3-5 Ad Groups. Bolje je početi sa manje i proširiti na osnovu podataka nego pokrenuti previše odjednom bez fokusa.
           </div>
         </details>
@@ -667,7 +667,7 @@ export default function KljucneReciVodicPost() {
             Exact ili Phrase match za početak kampanje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Preporučujem Phrase match za početak. Daje dobar balans kontrole i discovery-ja — vidite šta ljudi zapravo traže. Exact match dodajte kasnije za dokazane performere.
           </div>
         </details>
@@ -677,7 +677,7 @@ export default function KljucneReciVodicPost() {
             Koliko često pregledati Search Terms?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum jednom nedeljno. U prva 30 dana nove kampanje — svaka 2-3 dana. Za zrele kampanje sa niskim wasted spend-om, nedeljno je sasvim dovoljno.
           </div>
         </details>
@@ -687,7 +687,7 @@ export default function KljucneReciVodicPost() {
             Šta ako ključna reč ima 0 pretraga u Keyword Planner?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Može i dalje biti vredna. Keyword Planner potcenjuje volume za long-tail reči. Ako je relevantna i ima transakcijsku nameru, testirajte je — možda konvertuje odlično.
           </div>
         </details>
@@ -697,7 +697,7 @@ export default function KljucneReciVodicPost() {
             Da li targetirati brand imena konkurenata?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Opciono i zavisi od industrije. Može biti efektivno za dosezanje ljudi koji razmatraju alternative. Nikada ne koristite competitor brand u tekstu oglasa — fokusirajte se na diferencijaciju.
           </div>
         </details>
@@ -707,7 +707,7 @@ export default function KljucneReciVodicPost() {
             Kako prepoznati da je ključna reč loša?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             100+ klikova bez konverzije ili 3x target CPA spend bez rezultata su jasni signali. Ali pre pauziranja, proverite i landing page i oglas — možda je problem tamo, ne u ključnoj reči.
           </div>
         </details>

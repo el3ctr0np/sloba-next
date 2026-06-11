@@ -104,7 +104,7 @@ export function TableOfContents({ locale }: TableOfContentsProps) {
               <a
                 href={`#${item.id}`}
                 className={`
-                  block py-0.5 transition-colors leading-snug
+                  block py-1.5 transition-colors leading-snug
                   ${item.level === 3 ? "text-xs text-gray-500" : "text-sm"}
                   ${
                     activeId === item.id

@@ -51,38 +51,38 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Važna napomena o Wave sistemu</p>
-        <p className="text-blue-800 text-sm mb-0">Google uvodi nova tržišta u talasima. Wave 1 tržišta dobijaju pristup odmah na launch datum, Wave 2 tržišta mogu imati kašnjenje od 2-4 nedelje. Preporučujem da Merchant Center nalog kreirate i verifikujete minimum 60 dana pre launch datuma — Google ponekad zahteva vreme za account review na novim tržištima.</p>
+        <p className="text-blue-800 text-base mb-0">Google uvodi nova tržišta u talasima. Wave 1 tržišta dobijaju pristup odmah na launch datum, Wave 2 tržišta mogu imati kašnjenje od 2-4 nedelje. Preporučujem da Merchant Center nalog kreirate i verifikujete minimum 60 dana pre launch datuma — Google ponekad zahteva vreme za account review na novim tržištima.</p>
       </div>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Faza</th>
-              <th className="py-3 px-4 font-heading font-semibold">Šta se dešava</th>
-              <th className="py-3 px-4 font-heading font-semibold">Akcija za vas</th>
+              <th className="py-3 px-3 font-heading font-semibold">Faza</th>
+              <th className="py-3 px-3 font-heading font-semibold">Šta se dešava</th>
+              <th className="py-3 px-3 font-heading font-semibold">Akcija za vas</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Sada – Septembar 2026</td>
-              <td className="py-3 px-4">Priprema, feed optimizacija, MC setup</td>
-              <td className="py-3 px-4">Kompletirati 15-korak checklist</td>
+              <td className="py-3 px-3 font-medium">Sada – Septembar 2026</td>
+              <td className="py-3 px-3">Priprema, feed optimizacija, MC setup</td>
+              <td className="py-3 px-3">Kompletirati 15-korak checklist</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Oktobar 2026</td>
-              <td className="py-3 px-4">Final checks, feed live, MC verifikovan</td>
-              <td className="py-3 px-4">Test kampanje, bug fix</td>
+              <td className="py-3 px-3 font-medium">Oktobar 2026</td>
+              <td className="py-3 px-3">Final checks, feed live, MC verifikovan</td>
+              <td className="py-3 px-3">Test kampanje, bug fix</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Novembar 2026</td>
-              <td className="py-3 px-4">Google Shopping LIVE u Srbiji</td>
-              <td className="py-3 px-4">Launch kampanje, Q4 budžet aktivan</td>
+              <td className="py-3 px-3 font-medium">Novembar 2026</td>
+              <td className="py-3 px-3">Google Shopping LIVE u Srbiji</td>
+              <td className="py-3 px-3">Launch kampanje, Q4 budžet aktivan</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Decembar 2026</td>
-              <td className="py-3 px-4">Božić sezona, peak Shopping volumen</td>
-              <td className="py-3 px-4">Scale budžet, bidding optimizacija</td>
+              <td className="py-3 px-3 font-medium">Decembar 2026</td>
+              <td className="py-3 px-3">Božić sezona, peak Shopping volumen</td>
+              <td className="py-3 px-3">Scale budžet, bidding optimizacija</td>
             </tr>
           </tbody>
         </table>
@@ -102,22 +102,22 @@ export default function GoogleShoppingSrbija2026SR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Razlog #1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Vizuelni format konvertuje bolje</h3>
-          <p className="text-sm text-gray-600 mb-0">Kupac vidi sliku, cenu i brend pre klika. Samo zainteresovani kliknu — CVR je 2-3x viši od tekstualnih oglasa prema mom UK iskustvu.</p>
+          <p className="text-base text-gray-600 mb-0">Kupac vidi sliku, cenu i brend pre klika. Samo zainteresovani kliknu — CVR je 2-3x viši od tekstualnih oglasa prema mom UK iskustvu.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Razlog #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">High-intent purchase traffic</h3>
-          <p className="text-sm text-gray-600 mb-0">Niko ne traži "Nike Air Max bele 43" ako ne planira kupovinu. Shopping hvata dno purchase funnela — najvrednije pretrage.</p>
+          <p className="text-base text-gray-600 mb-0">Niko ne traži "Nike Air Max bele 43" ako ne planira kupovinu. Shopping hvata dno purchase funnela — najvrednije pretrage.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Razlog #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Konkurencija nije spremna</h3>
-          <p className="text-sm text-gray-600 mb-0">Slovenija i Hrvatska dobijaju Shopping Q4 2026 — pratim srpski eCommerce i vidim da 90% biznisa nema product feed niti Merchant Center nalog.</p>
+          <p className="text-base text-gray-600 mb-0">Slovenija i Hrvatska dobijaju Shopping Q4 2026 — pratim srpski eCommerce i vidim da 90% biznisa nema product feed niti Merchant Center nalog.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Razlog #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Direktan kanal bez marketplace provizije</h3>
-          <p className="text-sm text-gray-600 mb-0">Shopping stavlja vaš proizvod direktno u Google pretragu. Kupac koji traži "robot usisivač" vidi vaš shop sa cenom i slikom — bez posrednika, bez provizije, sa punom kontrolom nad korisničkim iskustvom.</p>
+          <p className="text-base text-gray-600 mb-0">Shopping stavlja vaš proizvod direktno u Google pretragu. Kupac koji traži "robot usisivač" vidi vaš shop sa cenom i slikom — bez posrednika, bez provizije, sa punom kontrolom nad korisničkim iskustvom.</p>
         </div>
       </div>
 
@@ -136,55 +136,55 @@ export default function GoogleShoppingSrbija2026SR() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Tržište</th>
-              <th className="py-3 px-4 font-heading font-semibold">Valuta</th>
-              <th className="py-3 px-4 font-heading font-semibold">Launch</th>
-              <th className="py-3 px-4 font-heading font-semibold">eCommerce veličina</th>
-              <th className="py-3 px-4 font-heading font-semibold">Napomena</th>
+              <th className="py-3 px-3 font-heading font-semibold">Tržište</th>
+              <th className="py-3 px-3 font-heading font-semibold">Valuta</th>
+              <th className="py-3 px-3 font-heading font-semibold">Launch</th>
+              <th className="py-3 px-3 font-heading font-semibold">eCommerce veličina</th>
+              <th className="py-3 px-3 font-heading font-semibold">Napomena</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Srbija</td>
-              <td className="py-3 px-4">RSD</td>
-              <td className="py-3 px-4 font-semibold text-green-700">Novembar 2026</td>
-              <td className="py-3 px-4">~€2.1B godišnje</td>
-              <td className="py-3 px-4">Najveće tržište u regionu</td>
+              <td className="py-3 px-3 font-medium">Srbija</td>
+              <td className="py-3 px-3">RSD</td>
+              <td className="py-3 px-3 font-semibold text-green-700">Novembar 2026</td>
+              <td className="py-3 px-3">~€2.1B godišnje</td>
+              <td className="py-3 px-3">Najveće tržište u regionu</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Hrvatska</td>
-              <td className="py-3 px-4">EUR</td>
-              <td className="py-3 px-4 font-semibold text-green-700">Q4 2026</td>
-              <td className="py-3 px-4">~€1.8B godišnje</td>
-              <td className="py-3 px-4">EUR valuta, EU tržište</td>
+              <td className="py-3 px-3 font-medium">Hrvatska</td>
+              <td className="py-3 px-3">EUR</td>
+              <td className="py-3 px-3 font-semibold text-green-700">Q4 2026</td>
+              <td className="py-3 px-3">~€1.8B godišnje</td>
+              <td className="py-3 px-3">EUR valuta, EU tržište</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Bosna i Hercegovina</td>
-              <td className="py-3 px-4">BAM</td>
-              <td className="py-3 px-4 font-semibold text-yellow-700">Q4 2026</td>
-              <td className="py-3 px-4">~€0.8B godišnje</td>
-              <td className="py-3 px-4">Malje tržište, manja konkurencija</td>
+              <td className="py-3 px-3 font-medium">Bosna i Hercegovina</td>
+              <td className="py-3 px-3">BAM</td>
+              <td className="py-3 px-3 font-semibold text-yellow-700">Q4 2026</td>
+              <td className="py-3 px-3">~€0.8B godišnje</td>
+              <td className="py-3 px-3">Malje tržište, manja konkurencija</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Slovenija</td>
-              <td className="py-3 px-4">EUR</td>
-              <td className="py-3 px-4 font-semibold text-yellow-700">Q4 2026</td>
-              <td className="py-3 px-4">~€1.2B godišnje</td>
-              <td className="py-3 px-4">EU tržište, viša kupovna moć</td>
+              <td className="py-3 px-3 font-medium">Slovenija</td>
+              <td className="py-3 px-3">EUR</td>
+              <td className="py-3 px-3 font-semibold text-yellow-700">Q4 2026</td>
+              <td className="py-3 px-3">~€1.2B godišnje</td>
+              <td className="py-3 px-3">EU tržište, viša kupovna moć</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Crna Gora</td>
-              <td className="py-3 px-4">EUR</td>
-              <td className="py-3 px-4 font-semibold text-yellow-700">Q4 2026</td>
-              <td className="py-3 px-4">~€0.3B godišnje</td>
-              <td className="py-3 px-4">Turizam-orjentisano tržište</td>
+              <td className="py-3 px-3 font-medium">Crna Gora</td>
+              <td className="py-3 px-3">EUR</td>
+              <td className="py-3 px-3 font-semibold text-yellow-700">Q4 2026</td>
+              <td className="py-3 px-3">~€0.3B godišnje</td>
+              <td className="py-3 px-3">Turizam-orjentisano tržište</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Severna Makedonija</td>
-              <td className="py-3 px-4">MKD</td>
-              <td className="py-3 px-4 font-semibold text-gray-500">TBD 2027</td>
-              <td className="py-3 px-4">~€0.4B godišnje</td>
-              <td className="py-3 px-4">Verovatno Wave 2</td>
+              <td className="py-3 px-3 font-medium">Severna Makedonija</td>
+              <td className="py-3 px-3">MKD</td>
+              <td className="py-3 px-3 font-semibold text-gray-500">TBD 2027</td>
+              <td className="py-3 px-3">~€0.4B godišnje</td>
+              <td className="py-3 px-3">Verovatno Wave 2</td>
             </tr>
           </tbody>
         </table>
@@ -208,7 +208,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Kreirajte Google Merchant Center nalog</strong>
               <span className="text-gray-500 ml-2">— Rok: odmah (april/maj 2026)</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">MC je obavezan za Shopping oglase. Idite na merchants.google.com, kreirajte nalog sa poslovnim imenom, adresom i kontaktom. Na novim tržištima Google može zahtevati account review — bolje ranije nego kasnije.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">MC je obavezan za Shopping oglase. Idite na merchants.google.com, kreirajte nalog sa poslovnim imenom, adresom i kontaktom. Na novim tržištima Google može zahtevati account review — bolje ranije nego kasnije.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -216,7 +216,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Verifikujte i claimujte vaš sajt</strong>
               <span className="text-gray-500 ml-2">— Rok: odmah</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Dodajte HTML tag ili Google Analytics na sajt da biste dokazali vlasništvo. Bez verifikacije, ne možete pokrenuti Shopping kampanje.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Dodajte HTML tag ili Google Analytics na sajt da biste dokazali vlasništvo. Bez verifikacije, ne možete pokrenuti Shopping kampanje.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -224,7 +224,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Podesite business information kompletno</strong>
               <span className="text-gray-500 ml-2">— Rok: maj 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Popunite adresu, PIB, kontakt telefon, i email. Google koristi ove podatke za trust signals. Nepotpun profil = veći rizik od account suspension.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Popunite adresu, PIB, kontakt telefon, i email. Google koristi ove podatke za trust signals. Nepotpun profil = veći rizik od account suspension.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -232,7 +232,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Podesite shipping settings za Srbiju</strong>
               <span className="text-gray-500 ml-2">— Rok: jun 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Definirajte cene dostave i rokove isporuke. Ovo se prikazuje u Shopping oglasima i utiče na CTR. Besplatna dostava nad određenim iznosom = veliki CTR boost.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Definirajte cene dostave i rokove isporuke. Ovo se prikazuje u Shopping oglasima i utiče na CTR. Besplatna dostava nad određenim iznosom = veliki CTR boost.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -240,7 +240,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Povežite Merchant Center sa Google Ads nalogom</strong>
               <span className="text-gray-500 ml-2">— Rok: jun 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Bez ove veze ne možete kreirati Shopping kampanje. U MC: Tools → Linked accounts → Google Ads.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Bez ove veze ne možete kreirati Shopping kampanje. U MC: Tools → Linked accounts → Google Ads.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -248,7 +248,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Kreirajte ili exportujte product feed</strong>
               <span className="text-gray-500 ml-2">— Rok: jul 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">XML ili TXT fajl sa svim informacijama o proizvodima. WooCommerce ima plugin, Shopify ima automatski feed, za custom shopove potreban je developer. Detalji u <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="underline text-blue-700">Product Feed vodiču</Link>.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">XML ili TXT fajl sa svim informacijama o proizvodima. WooCommerce ima plugin, Shopify ima automatski feed, za custom shopove potreban je developer. Detalji u <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="underline text-blue-700">Product Feed vodiču</Link>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -256,7 +256,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Optimizujte title-ove svih proizvoda</strong>
               <span className="text-gray-500 ml-2">— Rok: jul–avgust 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Title je #1 faktor za Shopping matching. Format: [Brand] + [Tip proizvoda] + [Boja/Veličina/Model]. "Jakna muška" nije isto kao "Zara Muška Bomber Jakna Crna Veličina L".</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Title je #1 faktor za Shopping matching. Format: [Brand] + [Tip proizvoda] + [Boja/Veličina/Model]. "Jakna muška" nije isto kao "Zara Muška Bomber Jakna Crna Veličina L".</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -264,7 +264,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Dodajte GTIN/EAN barkodove</strong>
               <span className="text-gray-500 ml-2">— Rok: jul–avgust 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Google preferira GTIN za product matching. Ako prodajete brandovane proizvode, GTIN je obavezan. Sopstvena marka → popunite Brand + MPN ili aplicirajte za GTIN exemption.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Google preferira GTIN za product matching. Ako prodajete brandovane proizvode, GTIN je obavezan. Sopstvena marka → popunite Brand + MPN ili aplicirajte za GTIN exemption.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -272,7 +272,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Optimizujte slike proizvoda</strong>
               <span className="text-gray-500 ml-2">— Rok: jul–avgust 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Bela pozadina, minimum 800x800px, bez watermark-a i teksta. Slika je prva stvar koju kupac vidi — lošu sliku neće kliknuti ni sa najboljim bidom.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Bela pozadina, minimum 800x800px, bez watermark-a i teksta. Slika je prva stvar koju kupac vidi — lošu sliku neće kliknuti ni sa najboljim bidom.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -280,7 +280,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Dodelite Google Product Categories</strong>
               <span className="text-gray-500 ml-2">— Rok: avgust 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Koristite Google-ovu taksonomiju (<a href="https://support.google.com/merchants/answer/6324436" target="_blank" rel="noopener noreferrer" className="underline">taxonomy lista</a>). Što preciznija kategorija = bolji matching i niži CPC.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Koristite Google-ovu taksonomiju (<a href="https://support.google.com/merchants/answer/6324436" target="_blank" rel="noopener noreferrer" className="underline">taxonomy lista</a>). Što preciznija kategorija = bolji matching i niži CPC.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -288,7 +288,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Dodajte custom labels za segmentaciju</strong>
               <span className="text-gray-500 ml-2">— Rok: avgust 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Custom labels (0–4) omogućavaju segmentaciju po marži, sezoni, i performansama. "high_margin", "best_seller", "clearance" — ovo kontroliše gde trošite budžet.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Custom labels (0–4) omogućavaju segmentaciju po marži, sezoni, i performansama. "high_margin", "best_seller", "clearance" — ovo kontroliše gde trošite budžet.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -296,7 +296,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Uploadujte feed i rešite sve disapproval-e</strong>
               <span className="text-gray-500 ml-2">— Rok: septembar 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Pošaljite feed u MC i pregledajte Diagnostics sekciju. Svi disapproval-i moraju biti rešeni pre lansiranja kampanje. Ciljajte 95%+ approval rate.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Pošaljite feed u MC i pregledajte Diagnostics sekciju. Svi disapproval-i moraju biti rešeni pre lansiranja kampanje. Ciljajte 95%+ approval rate.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -304,7 +304,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Podesite conversion tracking pre launch-a</strong>
               <span className="text-gray-500 ml-2">— Rok: septembar 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Purchase konverzija u Google Ads (vrednost + kvantitet). Bez pravilnog trackinga, Smart Bidding ne funkcioniše i ne možete meriti ROAS. Detalji u <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline text-blue-700">Conversion Tracking vodiču</Link>.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Purchase konverzija u Google Ads (vrednost + kvantitet). Bez pravilnog trackinga, Smart Bidding ne funkcioniše i ne možete meriti ROAS. Detalji u <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline text-blue-700">Conversion Tracking vodiču</Link>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -312,7 +312,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Istraži CSS partnere za Srbiju</strong>
               <span className="text-gray-500 ml-2">— Rok: oktobar 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">CSS (Comparison Shopping Service) model može smanjiti efektivni CPC za 15-20%. Postavljanje CSS partnera pre launch-a = konkretna prednost od prvog dana. Više u sekciji ispod.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">CSS (Comparison Shopping Service) model može smanjiti efektivni CPC za 15-20%. Postavljanje CSS partnera pre launch-a = konkretna prednost od prvog dana. Više u sekciji ispod.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -320,7 +320,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Kreirajte kampanjsku strukturu i Q4 budžet plan</strong>
               <span className="text-gray-500 ml-2">— Rok: oktobar 2026</span>
-              <p className="text-sm text-gray-600 mt-1 mb-0">Standard Shopping kampanje segmentirane po kategoriji ili marži, sa posebnom kampanjom za Best Sellers. Black Friday budžet minimum 2x normalni mesečni budžet — srpsko tržište će biti agresivno od prvog dana.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Standard Shopping kampanje segmentirane po kategoriji ili marži, sa posebnom kampanjom za Best Sellers. Black Friday budžet minimum 2x normalni mesečni budžet — srpsko tržište će biti agresivno od prvog dana.</p>
             </div>
           </div>
         </div>
@@ -340,22 +340,22 @@ export default function GoogleShoppingSrbija2026SR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">MC Setup za Srbiju</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Valuta: RSD</h3>
-          <p className="text-sm text-gray-600 mb-0">Cene u feed-u moraju biti u RSD (srpskim dinarima). Format: "12990 RSD" ili "12990.00 RSD". Mismatch između feed-a i sajta = disapproval.</p>
+          <p className="text-base text-gray-600 mb-0">Cene u feed-u moraju biti u RSD (srpskim dinarima). Format: "12990 RSD" ili "12990.00 RSD". Mismatch između feed-a i sajta = disapproval.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">MC Setup za Srbiju</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Jezik: Srpski</h3>
-          <p className="text-sm text-gray-600 mb-0">Feed mora biti na srpskom jeziku za srpsko tržište. Title, description i sve tekstualne vrednosti — ćirilica ili latinica, oboje je prihvatljivo, ali budite konzistentni.</p>
+          <p className="text-base text-gray-600 mb-0">Feed mora biti na srpskom jeziku za srpsko tržište. Title, description i sve tekstualne vrednosti — ćirilica ili latinica, oboje je prihvatljivo, ali budite konzistentni.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">MC Setup za Srbiju</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Dostava: obavezno</h3>
-          <p className="text-sm text-gray-600 mb-0">Podesite shipping settings sa realnim cenama i rokovima. Srpski kupci su navikli na "express" i "besplatna dostava nad X RSD" — ovo se prikazuje u oglasu.</p>
+          <p className="text-base text-gray-600 mb-0">Podesite shipping settings sa realnim cenama i rokovima. Srpski kupci su navikli na "express" i "besplatna dostava nad X RSD" — ovo se prikazuje u oglasu.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">MC Setup za Srbiju</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Return policy: linkujte</h3>
-          <p className="text-sm text-gray-600 mb-0">Google zahteva aktuelnu return policy stranicu na sajtu. 14 dana return (zakonski minimum u Srbiji) — povežite URL u MC settings.</p>
+          <p className="text-base text-gray-600 mb-0">Google zahteva aktuelnu return policy stranicu na sajtu. 14 dana return (zakonski minimum u Srbiji) — povežite URL u MC settings.</p>
         </div>
       </div>
 
@@ -380,72 +380,72 @@ export default function GoogleShoppingSrbija2026SR() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">#</th>
-              <th className="py-3 px-4 font-heading font-semibold">Atribut</th>
-              <th className="py-3 px-4 font-heading font-semibold">Primer za srpski market</th>
-              <th className="py-3 px-4 font-heading font-semibold">Uticaj</th>
+              <th className="py-3 px-3 font-heading font-semibold">#</th>
+              <th className="py-3 px-3 font-heading font-semibold">Atribut</th>
+              <th className="py-3 px-3 font-heading font-semibold">Primer za srpski market</th>
+              <th className="py-3 px-3 font-heading font-semibold">Uticaj</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">1</td>
-              <td className="py-3 px-4 font-medium">title</td>
-              <td className="py-3 px-4">Nike Air Max 90 Muške Patike Bele Broj 43</td>
-              <td className="py-3 px-4 text-red-600 font-semibold">Kritičan</td>
+              <td className="py-3 px-3 font-medium">1</td>
+              <td className="py-3 px-3 font-medium">title</td>
+              <td className="py-3 px-3">Nike Air Max 90 Muške Patike Bele Broj 43</td>
+              <td className="py-3 px-3 text-red-600 font-semibold">Kritičan</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">2</td>
-              <td className="py-3 px-4 font-medium">description</td>
-              <td className="py-3 px-4">500-1000 karaktera, ključne reči prirodno integrisane</td>
-              <td className="py-3 px-4 text-red-600 font-semibold">Kritičan</td>
+              <td className="py-3 px-3 font-medium">2</td>
+              <td className="py-3 px-3 font-medium">description</td>
+              <td className="py-3 px-3">500-1000 karaktera, ključne reči prirodno integrisane</td>
+              <td className="py-3 px-3 text-red-600 font-semibold">Kritičan</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">3</td>
-              <td className="py-3 px-4 font-medium">image_link</td>
-              <td className="py-3 px-4">Bela pozadina, min 800x800px, bez watermark-a</td>
-              <td className="py-3 px-4 text-red-600 font-semibold">Kritičan</td>
+              <td className="py-3 px-3 font-medium">3</td>
+              <td className="py-3 px-3 font-medium">image_link</td>
+              <td className="py-3 px-3">Bela pozadina, min 800x800px, bez watermark-a</td>
+              <td className="py-3 px-3 text-red-600 font-semibold">Kritičan</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">4</td>
-              <td className="py-3 px-4 font-medium">price</td>
-              <td className="py-3 px-4">12990.00 RSD (mora biti identično sajtu)</td>
-              <td className="py-3 px-4 text-red-600 font-semibold">Kritičan</td>
+              <td className="py-3 px-3 font-medium">4</td>
+              <td className="py-3 px-3 font-medium">price</td>
+              <td className="py-3 px-3">12990.00 RSD (mora biti identično sajtu)</td>
+              <td className="py-3 px-3 text-red-600 font-semibold">Kritičan</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">5</td>
-              <td className="py-3 px-4 font-medium">availability</td>
-              <td className="py-3 px-4">in stock / out of stock (real-time sync!)</td>
-              <td className="py-3 px-4 text-red-600 font-semibold">Kritičan</td>
+              <td className="py-3 px-3 font-medium">5</td>
+              <td className="py-3 px-3 font-medium">availability</td>
+              <td className="py-3 px-3">in stock / out of stock (real-time sync!)</td>
+              <td className="py-3 px-3 text-red-600 font-semibold">Kritičan</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">6</td>
-              <td className="py-3 px-4 font-medium">brand</td>
-              <td className="py-3 px-4">Nike, Zara, Bosch — ili naziv vaše firme</td>
-              <td className="py-3 px-4 text-yellow-600 font-semibold">Visok</td>
+              <td className="py-3 px-3 font-medium">6</td>
+              <td className="py-3 px-3 font-medium">brand</td>
+              <td className="py-3 px-3">Nike, Zara, Bosch — ili naziv vaše firme</td>
+              <td className="py-3 px-3 text-yellow-600 font-semibold">Visok</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">7</td>
-              <td className="py-3 px-4 font-medium">gtin</td>
-              <td className="py-3 px-4">EAN barkod (13 cifara) — ako ne postoji, brand+MPN</td>
-              <td className="py-3 px-4 text-yellow-600 font-semibold">Visok</td>
+              <td className="py-3 px-3 font-medium">7</td>
+              <td className="py-3 px-3 font-medium">gtin</td>
+              <td className="py-3 px-3">EAN barkod (13 cifara) — ako ne postoji, brand+MPN</td>
+              <td className="py-3 px-3 text-yellow-600 font-semibold">Visok</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">8</td>
-              <td className="py-3 px-4 font-medium">google_product_category</td>
-              <td className="py-3 px-4">Apparel &amp; Accessories &gt; Shoes (ID: 187)</td>
-              <td className="py-3 px-4 text-yellow-600 font-semibold">Visok</td>
+              <td className="py-3 px-3 font-medium">8</td>
+              <td className="py-3 px-3 font-medium">google_product_category</td>
+              <td className="py-3 px-3">Apparel &amp; Accessories &gt; Shoes (ID: 187)</td>
+              <td className="py-3 px-3 text-yellow-600 font-semibold">Visok</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">9</td>
-              <td className="py-3 px-4 font-medium">product_type</td>
-              <td className="py-3 px-4">Obuća &gt; Muška obuća &gt; Patike &gt; Running</td>
-              <td className="py-3 px-4 text-blue-600 font-semibold">Srednji</td>
+              <td className="py-3 px-3 font-medium">9</td>
+              <td className="py-3 px-3 font-medium">product_type</td>
+              <td className="py-3 px-3">Obuća &gt; Muška obuća &gt; Patike &gt; Running</td>
+              <td className="py-3 px-3 text-blue-600 font-semibold">Srednji</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">10</td>
-              <td className="py-3 px-4 font-medium">custom_label_0–4</td>
-              <td className="py-3 px-4">high_margin, best_seller, seasonal, clearance</td>
-              <td className="py-3 px-4 text-blue-600 font-semibold">Srednji</td>
+              <td className="py-3 px-3 font-medium">10</td>
+              <td className="py-3 px-3 font-medium">custom_label_0–4</td>
+              <td className="py-3 px-3">high_margin, best_seller, seasonal, clearance</td>
+              <td className="py-3 px-3 text-blue-600 font-semibold">Srednji</td>
             </tr>
           </tbody>
         </table>
@@ -494,23 +494,23 @@ export default function GoogleShoppingSrbija2026SR() {
       <div className="space-y-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lekcija 1: Feed kvalitet je sve</p>
-          <p className="text-sm text-gray-600 mb-0">Na UK tržištu, povećanje title kvaliteta sa generičnog na specifičan (dodavanje veličine, boje, varijante) povećalo je impressions za 34% bez promene bida. Srpsko tržište je manje saturisano — efekat će biti još dramatičniji jer je konkurencija niža.</p>
+          <p className="text-base text-gray-600 mb-0">Na UK tržištu, povećanje title kvaliteta sa generičnog na specifičan (dodavanje veličine, boje, varijante) povećalo je impressions za 34% bez promene bida. Srpsko tržište je manje saturisano — efekat će biti još dramatičniji jer je konkurencija niža.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lekcija 2: Tiered struktura kampanja je obavezna</p>
-          <p className="text-sm text-gray-600 mb-0">Sa Chelleon koristimo 3-tier sistem: Best Sellers (visoki bid), Catalog (srednji bid), Clearance (niski bid). Ovim kontrolišemo gde ide budžet umesto da Google odlučuje. Za srpsko tržište preporučujem isti pristup od starta.</p>
+          <p className="text-base text-gray-600 mb-0">Sa Chelleon koristimo 3-tier sistem: Best Sellers (visoki bid), Catalog (srednji bid), Clearance (niski bid). Ovim kontrolišemo gde ide budžet umesto da Google odlučuje. Za srpsko tržište preporučujem isti pristup od starta.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lekcija 3: POAS, ne ROAS</p>
-          <p className="text-sm text-gray-600 mb-0">ROAS bez marže je misleading metrika. Skincare ima različite marže po kategoriji — retinol kreme 70% marže, SPF 30% marže. Target ROAS mora biti prilagođen marži. Za srpski eCommerce: znajte maržu po kategoriji pre nego što postavite bidding.</p>
+          <p className="text-base text-gray-600 mb-0">ROAS bez marže je misleading metrika. Skincare ima različite marže po kategoriji — retinol kreme 70% marže, SPF 30% marže. Target ROAS mora biti prilagođen marži. Za srpski eCommerce: znajte maržu po kategoriji pre nego što postavite bidding.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lekcija 4: Negative keywords su kritični</p>
-          <p className="text-sm text-gray-600 mb-0">Shopping nema direktno keyword targeting, ali negative keywords blokiraju irelevantne pretrage. Na UK tržištu prvih 30 dana dodamo 200+ negativa — brand nazivi konkurencije, generičke pretrage, informacijske upite. Isti pristup je neophodan od dana 1 u Srbiji.</p>
+          <p className="text-base text-gray-600 mb-0">Shopping nema direktno keyword targeting, ali negative keywords blokiraju irelevantne pretrage. Na UK tržištu prvih 30 dana dodamo 200+ negativa — brand nazivi konkurencije, generičke pretrage, informacijske upite. Isti pristup je neophodan od dana 1 u Srbiji.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lekcija 5: Seasonalnost u Srbiji će biti drugačija od UK</p>
-          <p className="text-sm text-gray-600 mb-0">UK tržište ima stabilnu godišnju krivulju. Srpsko tržište ima ekstremnu sezonalnost — Bela Nedelja, Đurđevdan, Uskrs, i Q4 Black Friday/Novi Sad Exito sezona. Planirajte budžetske multipliere unapred.</p>
+          <p className="text-base text-gray-600 mb-0">UK tržište ima stabilnu godišnju krivulju. Srpsko tržište ima ekstremnu sezonalnost — Bela Nedelja, Đurđevdan, Uskrs, i Q4 Black Friday/Novi Sad Exito sezona. Planirajte budžetske multipliere unapred.</p>
         </div>
       </div>
 
@@ -529,7 +529,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #1</p>
         <p className="font-semibold mb-2">Cene na sajtu u eurima, feed u RSD — ili obrnuto</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Feed mora biti 100% identičan sajtu. Ako prodajete u RSD, feed je u RSD. Google crawl-uje sajt i poredi sa feed-om — mismatch = disapproval svih proizvoda.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Feed mora biti 100% identičan sajtu. Ako prodajete u RSD, feed je u RSD. Google crawl-uje sajt i poredi sa feed-om — mismatch = disapproval svih proizvoda.</p>
         </div>
       </div>
 
@@ -537,7 +537,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
         <p className="font-semibold mb-2">Title-ovi kopirani direktno iz web shopa bez optimizacije</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> "Jakna 123" ili "Model XR-45" su neupotrebljivi Shopping title-ovi. Google ne može matchovati vage sa pretragama. Investirajte 1-2 nedelje u title rewrite za top 100 SKU-ova pre feed upload-a.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> "Jakna 123" ili "Model XR-45" su neupotrebljivi Shopping title-ovi. Google ne može matchovati vage sa pretragama. Investirajte 1-2 nedelje u title rewrite za top 100 SKU-ova pre feed upload-a.</p>
         </div>
       </div>
 
@@ -545,7 +545,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
         <p className="font-semibold mb-2">Slike sa watermark-om ili lošim pozadinama</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Google automatski odbija slike sa logom, watermark-om ili promotional tekstom. Čista bela ili svetla pozadina, visoka rezolucija. Za srpski tržišni kontekst: remove.bg može automatizovati background removal za hundredse slika.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Google automatski odbija slike sa logom, watermark-om ili promotional tekstom. Čista bela ili svetla pozadina, visoka rezolucija. Za srpski tržišni kontekst: remove.bg može automatizovati background removal za hundredse slika.</p>
         </div>
       </div>
 
@@ -553,7 +553,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
         <p className="font-semibold mb-2">Feed koji se ažurira ručno jednom nedeljno</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Cene i stanje zaliha moraju biti real-time sync. Ako oglasite "in stock" a proizvod nije dostupan, Google penalizuje nalog. Podesite automatski scheduled feed koji se ažurira minimum jednom dnevno.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Cene i stanje zaliha moraju biti real-time sync. Ako oglasite "in stock" a proizvod nije dostupan, Google penalizuje nalog. Podesite automatski scheduled feed koji se ažurira minimum jednom dnevno.</p>
         </div>
       </div>
 
@@ -561,7 +561,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #5</p>
         <p className="font-semibold mb-2">Jedna kampanja za 5,000+ proizvoda bez segmentacije</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Google će trošiti budžet na šta on smatra relevantnim — što obično nisu vaši najprofitabilniji proizvodi. Segmentacija po kategoriji, marži i performansama je neophodna. Minimalno 3 kampanje: Best Sellers, Catalog, Long Tail.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Google će trošiti budžet na šta on smatra relevantnim — što obično nisu vaši najprofitabilniji proizvodi. Segmentacija po kategoriji, marži i performansama je neophodna. Minimalno 3 kampanje: Best Sellers, Catalog, Long Tail.</p>
         </div>
       </div>
 
@@ -569,7 +569,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #6</p>
         <p className="font-semibold mb-2">Nema conversion trackinga za purchase</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Bez purchase konverzije, Smart Bidding radi nasumično. Target ROAS strategija zahteva minimum 50 konverzija mesečno da bi bila efektivna. Podesite GA4 ecommerce events + Google Ads import pre lansiranja.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Bez purchase konverzije, Smart Bidding radi nasumično. Target ROAS strategija zahteva minimum 50 konverzija mesečno da bi bila efektivna. Podesite GA4 ecommerce events + Google Ads import pre lansiranja.</p>
         </div>
       </div>
 
@@ -577,7 +577,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #7</p>
         <p className="font-semibold mb-2">Čekanje na launch dan pre početka Merchant Center setup-a</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> MC account review može trajati 1-3 nedelje na novim tržištima. Feed optimizacija traje mesecima. Oni koji počnu sada (april 2026) biće live na dan 1. Oni koji čekaju novembar, počeće tek u decembru ili januaru.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> MC account review može trajati 1-3 nedelje na novim tržištima. Feed optimizacija traje mesecima. Oni koji počnu sada (april 2026) biće live na dan 1. Oni koji čekaju novembar, počeće tek u decembru ili januaru.</p>
         </div>
       </div>
 
@@ -590,55 +590,55 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno: rane CPC projekcije</p>
-        <p className="text-yellow-800 text-sm mb-0">Na novim tržištima, Google Shopping CPC je niži nego na maturisanim tržištima — manje konkurencije, niži auction pritisak. Ovo je prozor za jeftinu akviziciju koji se zatvara kako konkurencija uđe. Rumunija 2023: prosečni Shopping CPC €0.08–0.15. UK 2026: £0.35–0.80 isti segmenti.</p>
+        <p className="text-yellow-800 text-base mb-0">Na novim tržištima, Google Shopping CPC je niži nego na maturisanim tržištima — manje konkurencije, niži auction pritisak. Ovo je prozor za jeftinu akviziciju koji se zatvara kako konkurencija uđe. Rumunija 2023: prosečni Shopping CPC €0.08–0.15. UK 2026: £0.35–0.80 isti segmenti.</p>
       </div>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Industrija</th>
-              <th className="py-3 px-4 font-heading font-semibold">Procenjeni CPC (launch)</th>
-              <th className="py-3 px-4 font-heading font-semibold">Očekivani ROAS (mesec 1-3)</th>
-              <th className="py-3 px-4 font-heading font-semibold">Starter budžet/mes.</th>
+              <th className="py-3 px-3 font-heading font-semibold">Industrija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Procenjeni CPC (launch)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Očekivani ROAS (mesec 1-3)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Starter budžet/mes.</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Moda i obuća</td>
-              <td className="py-3 px-4">5–12 RSD</td>
-              <td className="py-3 px-4">2.5–4.0x</td>
-              <td className="py-3 px-4">€200–500</td>
+              <td className="py-3 px-3 font-medium">Moda i obuća</td>
+              <td className="py-3 px-3">5–12 RSD</td>
+              <td className="py-3 px-3">2.5–4.0x</td>
+              <td className="py-3 px-3">€200–500</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Elektronika</td>
-              <td className="py-3 px-4">10–25 RSD</td>
-              <td className="py-3 px-4">3.0–6.0x</td>
-              <td className="py-3 px-4">€300–800</td>
+              <td className="py-3 px-3 font-medium">Elektronika</td>
+              <td className="py-3 px-3">10–25 RSD</td>
+              <td className="py-3 px-3">3.0–6.0x</td>
+              <td className="py-3 px-3">€300–800</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Dom i bašta</td>
-              <td className="py-3 px-4">4–10 RSD</td>
-              <td className="py-3 px-4">2.0–3.5x</td>
-              <td className="py-3 px-4">€150–400</td>
+              <td className="py-3 px-3 font-medium">Dom i bašta</td>
+              <td className="py-3 px-3">4–10 RSD</td>
+              <td className="py-3 px-3">2.0–3.5x</td>
+              <td className="py-3 px-3">€150–400</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Kozmetika</td>
-              <td className="py-3 px-4">6–15 RSD</td>
-              <td className="py-3 px-4">2.0–4.0x</td>
-              <td className="py-3 px-4">€200–500</td>
+              <td className="py-3 px-3 font-medium">Kozmetika</td>
+              <td className="py-3 px-3">6–15 RSD</td>
+              <td className="py-3 px-3">2.0–4.0x</td>
+              <td className="py-3 px-3">€200–500</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Sportska oprema</td>
-              <td className="py-3 px-4">5–12 RSD</td>
-              <td className="py-3 px-4">2.5–4.5x</td>
-              <td className="py-3 px-4">€200–500</td>
+              <td className="py-3 px-3 font-medium">Sportska oprema</td>
+              <td className="py-3 px-3">5–12 RSD</td>
+              <td className="py-3 px-3">2.5–4.5x</td>
+              <td className="py-3 px-3">€200–500</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Knjige i edukacija</td>
-              <td className="py-3 px-4">3–8 RSD</td>
-              <td className="py-3 px-4">1.5–3.0x</td>
-              <td className="py-3 px-4">€100–300</td>
+              <td className="py-3 px-3 font-medium">Knjige i edukacija</td>
+              <td className="py-3 px-3">3–8 RSD</td>
+              <td className="py-3 px-3">1.5–3.0x</td>
+              <td className="py-3 px-3">€100–300</td>
             </tr>
           </tbody>
         </table>
@@ -784,7 +784,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Kada tačno počinje Google Shopping u Srbiji?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google Shopping zvanično starta u Srbiji u novembru 2026. Tačan datum u okviru novembra nije potvrđen, ali prema obrazcu prethodnih EMEA launch-eva, očekuje se prva ili druga nedelja novembra 2026 — tačno pre Black Friday sezone.
           </div>
         </details>
@@ -794,7 +794,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Da li mi treba Merchant Center pre novembra 2026?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da — i što pre, to bolje. Na novim tržištima, Google Merchant Center account review može trajati 1-3 nedelje. Feed optimizacija zahteva mesece rada. Biznisi koji počnu setup u aprilu-maju 2026 biće spremni na launch datum. Oni koji čekaju oktobar-novembar, počeće aktivno tek u januaru 2027.
           </div>
         </details>
@@ -804,7 +804,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Koliko košta Google Shopping mesečno za srpski eCommerce?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Starter budžet za srpsko tržište je €150-500 mesečno, zavisno od industrije i broja SKU-ova. Na launch, CPC će biti niži nego na maturisanim tržištima (analogno Rumuniji 2023: 5-15 RSD po kliku). Preporučujem da počnete sa €200-300 na top 50 SKU-ova i skalujete na osnovu ROAS podataka.
           </div>
         </details>
@@ -814,7 +814,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Da li Google Shopping može zameniti KupujemProdajem?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Delimično — i ovo je važna razlika. KupujemProdajem je marketplace sa vlasničkim traffic-om. Google Shopping je kanal plaćenog oglašavanja koji vodi na vaš sajt. Prednost Shopping-a: nema marketplace provizije, imate vlasništvo nad kupcem i podacima, i direktno kontrolišete korisničko iskustvo. Preporučujem kombinaciju: Shopping za acquisition, vaš shop za lojalnost.
           </div>
         </details>
@@ -824,7 +824,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Koliko SKU-ova mi treba da bi Shopping bio isplativ?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum 50 aktivnih SKU-ova sa prosečnom vrednosti porudžbine iznad 2,500-3,000 RSD. Sa manjim katalogom ili nižim AOV, setup troškovi mogu premašiti ROI. Idealno: 200+ SKU-ova, jasna segmentacija po kategorijama, i margina minimum 30% na best-sellerima.
           </div>
         </details>
@@ -834,7 +834,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Da li Shopping funkcioniše i za usluge (ne samo fizičke proizvode)?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ne — Google Shopping je isključivo za fizičke (i digitalne) proizvode koji se prodaju online. Za usluge koristite Search kampanje. Shopping zahteva product feed sa cenama, slikama i dostupnošću — atributima koji nisu primenjivi za usluge.
           </div>
         </details>
@@ -844,7 +844,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Šta je razlika između Standard Shopping i Performance Max za eCommerce?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Standard Shopping daje više kontrole: vidite search terms, možete segmentirati, i imate transparentnost. Performance Max automatizuje sve ali daje manje uvida. Moja preporuka za srpsko tržište: počnite sa Standard Shopping prve 3 meseca dok skupljate podatke, zatim testirajte PMax uz Signal audiences.
           </div>
         </details>
@@ -854,7 +854,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Mogu li ja sam podesiti Shopping ili mi treba specijalist?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Merchant Center setup i osnovni feed možete sami (posebno sa WooCommerce + plugin-om, ili Shopify). Kampanjska optimizacija, tiered struktura, i bid management zahtevaju iskustvo. DIY setup sa 0 znanja obično košta više u propuštenim konverzijama nego rad sa iskusnim specijalistom.
           </div>
         </details>
@@ -864,7 +864,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Da li Hrvatska i BiH dobijaju Shopping u isto vreme kao Srbija?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Hrvatska i BiH su u Q4 2026 wave — precizni datumi nisu potvrđeni, ali se očekuje isti period (oktobar-novembar 2026). Slovenija je takođe Q4 2026. Severna Makedonija je verovatno Wave 2 u 2027. Za multi-market strategiju, planirajte feed koji može pokriti RS, HR i BiH od starta.
           </div>
         </details>
@@ -874,7 +874,7 @@ export default function GoogleShoppingSrbija2026SR() {
             Šta je POAS i zašto je važniji od ROAS-a za Shopping?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             POAS (Profit on Ad Spend) = (Revenue - COGS) / Ad Spend. Za razliku od ROAS koji meri ukupni revenue, POAS meri profitabilnost. Uvek znajte COGS po kategoriji pre postavljanja bidding targeta — visok ROAS uz lošu maržu može značiti da trošite profit.
           </div>
         </details>
@@ -886,7 +886,7 @@ export default function GoogleShoppingSrbija2026SR() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">Za ozbiljne brendove</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
-        <p className="text-slate-300 text-sm mb-4 max-w-xl">
+        <p className="text-slate-300 text-base mb-4 max-w-xl">
           Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre novembra ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu.
         </p>
 

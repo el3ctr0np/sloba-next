@@ -29,23 +29,23 @@ export default function GoogleAdsAuditPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto-je-google-ads-audit-neophodan" className="text-sm text-gray-700 hover:text-primary underline">Zašto je Google Ads audit neophodan</a></li>
-          <li><a href="#sta-dobar-google-ads-audit-pokriva" className="text-sm text-gray-700 hover:text-primary underline">Šta dobar Google Ads audit pokriva</a></li>
-          <li><a href="#kategorija-1-struktura-naloga" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 1: Struktura naloga</a></li>
-          <li><a href="#kategorija-2-prax107enje-konverzija" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 2: Pra&#x107;enje konverzija</a></li>
-          <li><a href="#kategorija-3-podex161avanja-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 3: Pode&#x161;avanja kampanja</a></li>
-          <li><a href="#kategorija-4-kljux10dne-rex10di-i-search-terms" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 4: Klju&#x10D;ne re&#x10D;i i search terms</a></li>
-          <li><a href="#kategorija-5-oglasi-i-ekstenzije" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 5: Oglasi i ekstenzije</a></li>
-          <li><a href="#kategorija-6-publike-i-remarketing" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 6: Publike i remarketing</a></li>
-          <li><a href="#kategorija-7-bidding-strategija" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 7: Bidding strategija</a></li>
-          <li><a href="#kategorija-8-budzet-i-alokacija" className="text-sm text-gray-700 hover:text-primary underline">Kategorija 8: Budžet i alokacija</a></li>
-          <li><a href="#brzi-google-ads-audit-za-30-minuta" className="text-sm text-gray-700 hover:text-primary underline">Brzi Google Ads audit za 30 minuta</a></li>
-          <li><a href="#sistem-bodovanja-za-google-ads-audit" className="text-sm text-gray-700 hover:text-primary underline">Sistem bodovanja za Google Ads audit</a></li>
-          <li><a href="#najx10dex161x107e-grex161ke-pri-google-ads-audit-u" className="text-sm text-gray-700 hover:text-primary underline">Naj&#x10D;e&#x161;&#x107;e gre&#x161;ke pri Google Ads audit-u</a></li>
-          <li><a href="#najx10dex161x107e-postavljena-pitanja-o-google-ads-audit-u" className="text-sm text-gray-700 hover:text-primary underline">Naj&#x10D;e&#x161;&#x107;e postavljena pitanja o Google Ads audit-u</a></li>
-          <li><a href="#zakljux10dak" className="text-sm text-gray-700 hover:text-primary underline">Zaklju&#x10D;ak</a></li>
-          <li><a href="#povezani-vodix10di" className="text-sm text-gray-700 hover:text-primary underline">Povezani vodi&#x10D;i</a></li>
-          <li><a href="#najcesca-pitanja-o-google-ads-auditu" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Google Ads auditu</a></li>
+          <li><a href="#zasto-je-google-ads-audit-neophodan" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto je Google Ads audit neophodan</a></li>
+          <li><a href="#sta-dobar-google-ads-audit-pokriva" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta dobar Google Ads audit pokriva</a></li>
+          <li><a href="#kategorija-1-struktura-naloga" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 1: Struktura naloga</a></li>
+          <li><a href="#kategorija-2-prax107enje-konverzija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 2: Pra&#x107;enje konverzija</a></li>
+          <li><a href="#kategorija-3-podex161avanja-kampanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 3: Pode&#x161;avanja kampanja</a></li>
+          <li><a href="#kategorija-4-kljux10dne-rex10di-i-search-terms" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 4: Klju&#x10D;ne re&#x10D;i i search terms</a></li>
+          <li><a href="#kategorija-5-oglasi-i-ekstenzije" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 5: Oglasi i ekstenzije</a></li>
+          <li><a href="#kategorija-6-publike-i-remarketing" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 6: Publike i remarketing</a></li>
+          <li><a href="#kategorija-7-bidding-strategija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 7: Bidding strategija</a></li>
+          <li><a href="#kategorija-8-budzet-i-alokacija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 8: Budžet i alokacija</a></li>
+          <li><a href="#brzi-google-ads-audit-za-30-minuta" className="block py-1 text-base text-gray-700 hover:text-primary underline">Brzi Google Ads audit za 30 minuta</a></li>
+          <li><a href="#sistem-bodovanja-za-google-ads-audit" className="block py-1 text-base text-gray-700 hover:text-primary underline">Sistem bodovanja za Google Ads audit</a></li>
+          <li><a href="#najx10dex161x107e-grex161ke-pri-google-ads-audit-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Naj&#x10D;e&#x161;&#x107;e gre&#x161;ke pri Google Ads audit-u</a></li>
+          <li><a href="#najx10dex161x107e-postavljena-pitanja-o-google-ads-audit-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Naj&#x10D;e&#x161;&#x107;e postavljena pitanja o Google Ads audit-u</a></li>
+          <li><a href="#zakljux10dak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zaklju&#x10D;ak</a></li>
+          <li><a href="#povezani-vodix10di" className="block py-1 text-base text-gray-700 hover:text-primary underline">Povezani vodi&#x10D;i</a></li>
+          <li><a href="#najcesca-pitanja-o-google-ads-auditu" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja o Google Ads auditu</a></li>
         </ol>
       </nav>
 
@@ -61,7 +61,7 @@ export default function GoogleAdsAuditPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Kada raditi Google Ads audit</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           <strong>Kvartalni deep audit</strong> (2-4 sata, svih 10 kategorija) + <strong>mesečni quick check</strong> (30 min, 7 prioritetnih tačaka). Dodatno: odmah ako performance naglo padne, preuzimate nalog od prethodne agencije, menjate biznis model, ili pokre&#x107;ete novu kampanju.
         </p>
       </div>
@@ -81,52 +81,52 @@ export default function GoogleAdsAuditPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Osnova</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">1. Struktura naloga</h3>
-          <p className="text-sm text-gray-600 mb-0">Logična organizacija kampanja, naming conventions, hierarchy, labels</p>
+          <p className="text-base text-gray-600 mb-0">Logična organizacija kampanja, naming conventions, hierarchy, labels</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kritično</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">2. Conversion Tracking</h3>
-          <p className="text-sm text-gray-600 mb-0">Da li pra&#x107;enje konverzija funkcioniše ta&#x10D;no i da li su podaci validni</p>
+          <p className="text-base text-gray-600 mb-0">Da li pra&#x107;enje konverzija funkcioniše ta&#x10D;no i da li su podaci validni</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Setup</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">3. Pode&#x161;avanja kampanja</h3>
-          <p className="text-sm text-gray-600 mb-0">Location targeting, networks, ad schedule, device bid adjustments</p>
+          <p className="text-base text-gray-600 mb-0">Location targeting, networks, ad schedule, device bid adjustments</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Search</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">4. Klju&#x10D;ne re&#x10D;i i search terms</h3>
-          <p className="text-sm text-gray-600 mb-0">Search Terms Report, negatives, Quality Score, match types, duplicates</p>
+          <p className="text-base text-gray-600 mb-0">Search Terms Report, negatives, Quality Score, match types, duplicates</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Creative</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">5. Oglasi i ekstenzije</h3>
-          <p className="text-sm text-gray-600 mb-0">RSA quality, Ad Strength, sitelinks, callouts, structured snippets</p>
+          <p className="text-base text-gray-600 mb-0">RSA quality, Ad Strength, sitelinks, callouts, structured snippets</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Targeting</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">6. Publike i remarketing</h3>
-          <p className="text-sm text-gray-600 mb-0">Remarketing liste, audience layering, converter exclusions</p>
+          <p className="text-base text-gray-600 mb-0">Remarketing liste, audience layering, converter exclusions</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automation</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">7. Bidding strategija</h3>
-          <p className="text-sm text-gray-600 mb-0">Smart Bidding setup, conversion volume, target realism, learning periods</p>
+          <p className="text-base text-gray-600 mb-0">Smart Bidding setup, conversion volume, target realism, learning periods</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Spend</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">8. Budžet i alokacija</h3>
-          <p className="text-sm text-gray-600 mb-0">Impression Share Lost (Budget), campaign budget distribution</p>
+          <p className="text-base text-gray-600 mb-0">Impression Share Lost (Budget), campaign budget distribution</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Analysis</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">9. Reporting i analitika</h3>
-          <p className="text-sm text-gray-600 mb-0">GA4 integration, attribution models, segment analysis, data discrepancies</p>
+          <p className="text-base text-gray-600 mb-0">GA4 integration, attribution models, segment analysis, data discrepancies</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advanced</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">10. Scripts i automatizacije</h3>
-          <p className="text-sm text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — kao i <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> za offline izmene</p>
+          <p className="text-base text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — kao i <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> za offline izmene</p>
         </div>
       </div>
 
@@ -148,7 +148,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Kampanje organizovane logi&#x10D;no</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Kampanje podeljene po proizvodu/usluzi, geografiji, ili funnel stage-u. Nikad sve u jednoj megakampanji.</p>
+        <p className="text-base text-gray-600 mb-3">Kampanje podeljene po proizvodu/usluzi, geografiji, ili funnel stage-u. Nikad sve u jednoj megakampanji.</p>
         <ul className="text-sm">
           <li><strong>Brand vs Non-brand ODVOJENI</strong> — Potpuno druga ekonomija: brand ima ni&#x17E;i CPC, vi&#x161;i CVR, druga strategija</li>
           <li><strong>Search i Display ODVOJENI</strong> — Nikad zajedno, osim kod Performance Max (drugačije metrike, drugo targetiranje)</li>
@@ -162,7 +162,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Groups tematski fokusirane</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Jedna Ad Group = jedna tema/intent. U praksi to zna&#x10D;i 5-20 keywords po Ad Group-i, ne 50+.</p>
+        <p className="text-base text-gray-600 mb-3">Jedna Ad Group = jedna tema/intent. U praksi to zna&#x10D;i 5-20 keywords po Ad Group-i, ne 50+.</p>
         <ul className="text-sm">
           <li><strong>Nema {`"catch-all"`} Ad Groups</strong> — Sve re&#x10D;i vezane za razli&#x10D;ite teme u istoj grupi = lo&#x161;iji Ad Strength i Quality Score</li>
           <li><strong>Keywords imaju sli&#x10D;an intent</strong> — {`"kupiti cipele"`} i {`"cena cipela"`} su sli&#x10D;an intent; {`"sportske cipele"`} i {`"svečane cipele"`} nisu</li>
@@ -175,14 +175,14 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Jedna kampanja sa 50+ Ad Groups, ili Search + Display zajedno u istoj kampanji</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Restrukturirajte nalog: izdvojite Search i Display, podelite kampanje na manje logi&#x10D;ne celine (po proizvodu/geo/stage), smanjite broj Ad Groups na 5-15 po kampanji.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Restrukturirajte nalog: izdvojite Search i Display, podelite kampanje na manje logi&#x10D;ne celine (po proizvodu/geo/stage), smanjite broj Ad Groups na 5-15 po kampanji.</p>
           </div>
         </div>
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pro tip</p>
-        <p className="text-yellow-800 text-sm mb-0">Ako imate vi&#x161;e od 10 kampanja, kreirajte labels (npr. {`"Priority"`}, {`"Testing"`}, {`"Paused-Low_ROI"`}) za brže filtriranje u interfejsu. Za bulk izmene koristite <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> — štedi vreme pri Google Ads audit analizi.</p>
+        <p className="text-yellow-800 text-base mb-0">Ako imate vi&#x161;e od 10 kampanja, kreirajte labels (npr. {`"Priority"`}, {`"Testing"`}, {`"Paused-Low_ROI"`}) za brže filtriranje u interfejsu. Za bulk izmene koristite <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> — štedi vreme pri Google Ads audit analizi.</p>
       </div>
 
       <hr />
@@ -245,7 +245,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Location targeting</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Proverite da je {`"People in your targeted locations"`} izabrano, NE {`"People interested in your locations"`}. Default opcija prikazuje oglase ljudima koje Google <em>misli</em> da su zainteresovani za va&#x161;u lokaciju, &#x10D;ak i ako su na drugom kontinentu.</p>
+        <p className="text-base text-gray-600 mb-3">Proverite da je {`"People in your targeted locations"`} izabrano, NE {`"People interested in your locations"`}. Default opcija prikazuje oglase ljudima koje Google <em>misli</em> da su zainteresovani za va&#x161;u lokaciju, &#x10D;ak i ako su na drugom kontinentu.</p>
         <ul className="text-sm">
           <li><strong>Location bid adjustments aktivni</strong> — Pove&#x107;ajte bid za best performing geo, smanjite za worst</li>
           <li><strong>Exclude nekonvertuju&#x107;e lokacije</strong> — Ako lokacija ima 0% CVR posle 50+ klikova, isklju&#x10D;ite</li>
@@ -258,7 +258,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Networks</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Display Network mora biti ISKLJU&#x10C;EN u Search kampanjama. Search Partners evaluirajte posle 30 dana — ako imaju lo&#x161;iji CPA od Search-a, isklju&#x10D;ite.</p>
+        <p className="text-base text-gray-600 mb-3">Display Network mora biti ISKLJU&#x10C;EN u Search kampanjama. Search Partners evaluirajte posle 30 dana — ako imaju lo&#x161;iji CPA od Search-a, isklju&#x10D;ite.</p>
         <ul className="text-sm">
           <li><strong>Search kampanje</strong> = samo Google Search (uncheck Display + pažljivo sa Search Partners)</li>
           <li><strong>Display kampanje</strong> = samo Display Network (nikad zajedno sa Search, druga ekonomija)</li>
@@ -271,7 +271,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad schedule (dani/sati)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Analizirajte performance po satima i danima (Day &amp; Hour report). Ako konverzije padaju posle 20h ili vikendom, smanjite bid ili pauzirajte te slotove.</p>
+        <p className="text-base text-gray-600 mb-3">Analizirajte performance po satima i danima (Day &amp; Hour report). Ako konverzije padaju posle 20h ili vikendom, smanjite bid ili pauzirajte te slotove.</p>
         <ul className="text-sm">
           <li><strong>Bid adjustments za vreme</strong> — Pove&#x107;ajte +20-50% za best time slots, smanjite -30-50% za worst</li>
           <li><strong>B2B kampanje</strong> — Obi&#x10D;no ne treba da rade vikendom (office hours only: 9-17h, Mon-Fri)</li>
@@ -284,7 +284,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Devices (Desktop/Mobile/Tablet)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Analizirajte performance po device-ima. Ako mobile ima 2x gori conversion rate, smanjite bid za -30% do -50%.</p>
+        <p className="text-base text-gray-600 mb-3">Analizirajte performance po device-ima. Ako mobile ima 2x gori conversion rate, smanjite bid za -30% do -50%.</p>
         <ul className="text-sm">
           <li><strong>Device bid adjustments</strong> — Pove&#x107;ajte za best performing device, smanjite za worst</li>
           <li><strong>Mobile-friendly landing page</strong> — Ako mobile LP nije optimizovan, smanjite mobile bid dok ne popravite UX</li>
@@ -355,7 +355,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RSA kvalitet</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Svaka Ad Group mora imati minimum 1 Responsive Search Ad sa 10-15 headlines i 4 descriptions.</p>
+        <p className="text-base text-gray-600 mb-3">Svaka Ad Group mora imati minimum 1 Responsive Search Ad sa 10-15 headlines i 4 descriptions.</p>
         <ul className="text-sm">
           <li><strong>Ad Strength je {`"Good"`} ili {`"Excellent"`}</strong> — Nikad {`"Poor"`} (Google bukvalno govori da je oglas lo&#x161;)</li>
           <li><strong>Headlines sadrže klju&#x10D;ne re&#x10D;i</strong> — Minimum 3-4 headline varijacije sa primary keywords iz te Ad Group-e</li>
@@ -370,7 +370,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ekstenzije (sitelinks, callouts...)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Extensions pove&#x107;avaju CTR za 10-15% i zauzimaju vi&#x161;e prostora na SERP-u. Svaka kampanja mora imati:</p>
+        <p className="text-base text-gray-600 mb-3">Extensions pove&#x107;avaju CTR za 10-15% i zauzimaju vi&#x161;e prostora na SERP-u. Svaka kampanja mora imati:</p>
         <ul className="text-sm">
           <li><strong>Sitelinks (min 4)</strong> — Linkovi ka razli&#x10D;itim stranicama (categories, about, contact), svaki relevantan za tu kampanju</li>
           <li><strong>Callouts (min 4)</strong> — Kratke bullet point prednosti: {`"Besplatna dostava"`}, {`"24/7 podrška"`}, {`"30 dana garancije"`}</li>
@@ -386,7 +386,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Ad Strength {`"Poor"`}, samo 3-5 headlines, generi&#x10D;ki copy koji ne razlikuje od konkurencije</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Dopunite RSA do 10-15 headlines (dodajte varijacije sa keywords, brojevi, CTA, USP), iskoristite svih 4 descriptions, uklonite vi&#x161;ak pinning-a da Google testira kombinacije.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Dopunite RSA do 10-15 headlines (dodajte varijacije sa keywords, brojevi, CTA, USP), iskoristite svih 4 descriptions, uklonite vi&#x161;ak pinning-a da Google testira kombinacije.</p>
           </div>
         </div>
       </div>
@@ -396,7 +396,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Nema extensions, ili svi sitelinks vode na istu homepage</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Kreirajte 4 sitelinks-a ka razli&#x10D;itim stranicama (product categories, best sellers, about, contact), 4 callouts-a sa konkretnim benefitima (ne generi&#x10D;ki {`"kvalitet"`}), structured snippets sa product/service listama.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Kreirajte 4 sitelinks-a ka razli&#x10D;itim stranicama (product categories, best sellers, about, contact), 4 callouts-a sa konkretnim benefitima (ne generi&#x10D;ki {`"kvalitet"`}), structured snippets sa product/service listama.</p>
           </div>
         </div>
       </div>
@@ -439,7 +439,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Preporuka</p>
-        <p className="text-blue-800 text-sm mb-0">Kreirajte dedicated remarketing kampanje sa vi&#x161;im bid-om (+50-100% vs cold traffic) i targeted ad copy koji referen&#x10D;ira njihovu prethodnu posetu. Remarketing ima 3-5x bolji conversion rate, pa možete priuštiti vi&#x161;i CPC i dalje biti profitabilni.</p>
+        <p className="text-blue-800 text-base mb-0">Kreirajte dedicated remarketing kampanje sa vi&#x161;im bid-om (+50-100% vs cold traffic) i targeted ad copy koji referen&#x10D;ira njihovu prethodnu posetu. Remarketing ima 3-5x bolji conversion rate, pa možete priuštiti vi&#x161;i CPC i dalje biti profitabilni.</p>
       </div>
 
       <p>
@@ -458,7 +458,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Strategija odgovara cilju i fazi</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Preporu&#x10D;ujem:</p>
+        <p className="text-base text-gray-600 mb-3">Preporu&#x10D;ujem:</p>
         <ul className="text-sm">
           <li><strong>Maximize Clicks ili Manual CPC</strong> — Nova kampanja bez konverzija, fokus na traffic gathering i data collection</li>
           <li><strong>Maximize Conversions</strong> — Kada imate 15-30 konverzija mesečno, ali još nemate jasan target CPA</li>
@@ -473,7 +473,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dovoljno konverzija za Smart Bidding</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Google preporu&#x10D;uje 15+ konverzija u poslednjih 30 dana za Maximize Conversions, 30+ za Target CPA, 50+ za Target ROAS. Ispod toga, algoritam nema dovoljno signal-a za validnu optimizaciju.</p>
+        <p className="text-base text-gray-600 mb-3">Google preporu&#x10D;uje 15+ konverzija u poslednjih 30 dana za Maximize Conversions, 30+ za Target CPA, 50+ za Target ROAS. Ispod toga, algoritam nema dovoljno signal-a za validnu optimizaciju.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -481,7 +481,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target CPA/ROAS realan i dostiživm</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Target ne treba da bude 50% bolji od trenutnog performance-a. Preporu&#x10D;ujem da target bude 10-20% improvement od baseline-a, pa ga postepeno tighten-ujete tokom nekoliko nedelja.</p>
+        <p className="text-base text-gray-600 mb-3">Target ne treba da bude 50% bolji od trenutnog performance-a. Preporu&#x10D;ujem da target bude 10-20% improvement od baseline-a, pa ga postepeno tighten-ujete tokom nekoliko nedelja.</p>
         <ul className="text-sm">
           <li><strong>Primer:</strong> Ako je trenutni CPA €40, ne stavljajte target €20 odmah — krenite sa €35, pa posle 2 nedelje €32, itd.</li>
           <li><strong>Learning period</strong> — Sačekajte 7-14 dana posle svake promene pre nego &#x161;to donesite zaključke</li>
@@ -493,7 +493,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
           <p className="font-semibold mb-2">Smart Bidding sa &lt;10 konverzija mesečno, ili nerealan target (npr. target CPA €10 kada je trenutni €50)</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Vratite se na Manual CPC ili Maximize Conversions dok ne sakupite vi&#x161;e konverzija (30+ mesečno). Ako već koristite Smart Bidding, promenite target da bude realisti&#x10D;niji (10-20% improvement, ne 50%+).</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Vratite se na Manual CPC ili Maximize Conversions dok ne sakupite vi&#x161;e konverzija (30+ mesečno). Ako već koristite Smart Bidding, promenite target da bude realisti&#x10D;niji (10-20% improvement, ne 50%+).</p>
           </div>
         </div>
       </div>
@@ -584,7 +584,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pro tip</p>
-        <p className="text-yellow-800 text-sm mb-0">Napravite Google Sheet sa scoring-om za svaku kategoriju (1-5 skala). Kada radite mese&#x10D;ni quick audit, samo update-ujete scoring i pratite trend — da li ide naviše (optimizacije rade) ili naniže (novi problemi).</p>
+        <p className="text-yellow-800 text-base mb-0">Napravite Google Sheet sa scoring-om za svaku kategoriju (1-5 skala). Kada radite mese&#x10D;ni quick audit, samo update-ujete scoring i pratite trend — da li ide naviše (optimizacije rade) ili naniže (novi problemi).</p>
       </div>
 
       <hr />
@@ -598,42 +598,42 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Score</th>
-              <th className="py-3 px-4 font-heading font-semibold">Status</th>
-              <th className="py-3 px-4 font-heading font-semibold">Opis</th>
-              <th className="py-3 px-4 font-heading font-semibold">Akcija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Score</th>
+              <th className="py-3 px-3 font-heading font-semibold">Status</th>
+              <th className="py-3 px-3 font-heading font-semibold">Opis</th>
+              <th className="py-3 px-3 font-heading font-semibold">Akcija</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">5</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
-              <td className="py-3 px-4">Svi checkpoint-i pokriveni, best practices implementirani</td>
-              <td className="py-3 px-4">Održavajte, monitorirajte mesečno</td>
+              <td className="py-3 px-3 font-medium">5</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
+              <td className="py-3 px-3">Svi checkpoint-i pokriveni, best practices implementirani</td>
+              <td className="py-3 px-3">Održavajte, monitorirajte mesečno</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">4</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
-              <td className="py-3 px-4">Većina pokrivena, sitna pobolj&#x161;anja mogu&#x107;a</td>
-              <td className="py-3 px-4">Minor tweaks, low priority (schedule za sledećih mesec-dva)</td>
+              <td className="py-3 px-3 font-medium">4</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
+              <td className="py-3 px-3">Većina pokrivena, sitna pobolj&#x161;anja mogu&#x107;a</td>
+              <td className="py-3 px-3">Minor tweaks, low priority (schedule za sledećih mesec-dva)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">3</td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Average</span></td>
-              <td className="py-3 px-4">Osnovno pokriveno, ali fale važne optimizacije</td>
-              <td className="py-3 px-4">Improvement needed, planirajte 1-2 nedelje za fixes</td>
+              <td className="py-3 px-3 font-medium">3</td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Average</span></td>
+              <td className="py-3 px-3">Osnovno pokriveno, ali fale važne optimizacije</td>
+              <td className="py-3 px-3">Improvement needed, planirajte 1-2 nedelje za fixes</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">2</td>
-              <td className="py-3 px-4"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Poor</span></td>
-              <td className="py-3 px-4">Veliki propusti, wasted spend visok (15-25%+)</td>
-              <td className="py-3 px-4">Priority fix, zakažite odmah (ove nedelje)</td>
+              <td className="py-3 px-3 font-medium">2</td>
+              <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Poor</span></td>
+              <td className="py-3 px-3">Veliki propusti, wasted spend visok (15-25%+)</td>
+              <td className="py-3 px-3">Priority fix, zakažite odmah (ove nedelje)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">1</td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
-              <td className="py-3 px-4">Fundamentalno ne funkcioniše, ozbiljni problemi</td>
-              <td className="py-3 px-4">Hitna akcija danas, možda pauzirajte kampanje dok ne popravite</td>
+              <td className="py-3 px-3 font-medium">1</td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
+              <td className="py-3 px-3">Fundamentalno ne funkcioniše, ozbiljni problemi</td>
+              <td className="py-3 px-3">Hitna akcija danas, možda pauzirajte kampanje dok ne popravite</td>
             </tr>
           </tbody>
         </table>
@@ -645,7 +645,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Moje iskustvo sa scoring-om</p>
-        <p className="text-blue-800 text-sm mb-0">Kada preuzmem novi nalog na upravljanje, prose&#x10D;an score je 2.5-3.0 (basic setup ok, ali mnogo propusta). Posle prvog meseca optimizacija, score ide na 3.5-4.0. Score 4.5+ je te&#x161;ko održiv dugoro&#x10D;no jer zahteva konstantan proactive rad i testuvarje.</p>
+        <p className="text-blue-800 text-base mb-0">Kada preuzmem novi nalog na upravljanje, prose&#x10D;an score je 2.5-3.0 (basic setup ok, ali mnogo propusta). Posle prvog meseca optimizacija, score ide na 3.5-4.0. Score 4.5+ je te&#x161;ko održiv dugoro&#x10D;no jer zahteva konstantan proactive rad i testuvarje.</p>
       </div>
 
       <hr />
@@ -660,7 +660,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #1</p>
           <p className="font-semibold mb-2">Fokusiranje samo na surface-level metrike (CTR, CPC) bez gledanja konverzija i profitabilnosti</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Uvek audit-ujte CPA i ROAS (ili conversion rate ako nemate revenue tracking). CTR i CPC su sredstvo, ne cilj — možete imati visok CTR i lo&#x161; ROI.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Uvek audit-ujte CPA i ROAS (ili conversion rate ako nemate revenue tracking). CTR i CPC su sredstvo, ne cilj — možete imati visok CTR i lo&#x161; ROI.</p>
           </div>
         </div>
 
@@ -668,7 +668,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
           <p className="font-semibold mb-2">Preskakanje Search Terms Report-a — najvažniji deo audit-a koji otkriva wasted spend</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Search Terms Report MORA biti deo svakog Google Ads audit-a. Filterirajte top 50 po tro&#x161;ku (30 dana) i proverite da li su relevantni. Dodajte negatives za sve irelevantne sa €10+ spend-om.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Search Terms Report MORA biti deo svakog Google Ads audit-a. Filterirajte top 50 po tro&#x161;ku (30 dana) i proverite da li su relevantni. Dodajte negatives za sve irelevantne sa €10+ spend-om.</p>
           </div>
         </div>
 
@@ -676,7 +676,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
           <p className="font-semibold mb-2">Promena 10 stvari odjednom pa ne znate &#x161;ta je uticalo na rezultat</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Posle audit-a, prioritizujte top 3-5 akcija i radite ih postepeno (1-2 nedelje između change-ova, sa&#x10D;ekajte learning period). Tako možete meriti impact svake optimizacije pojedina&#x10D;no.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Posle audit-a, prioritizujte top 3-5 akcija i radite ih postepeno (1-2 nedelje između change-ova, sa&#x10D;ekajte learning period). Tako možete meriti impact svake optimizacije pojedina&#x10D;no.</p>
           </div>
         </div>
 
@@ -684,7 +684,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
           <p className="font-semibold mb-2">Gledanje samo poslednjih 7 dana podataka (suvše kratko za validne zaklju&#x10D;ke)</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Audit-ujte poslednjih 30-90 dana podataka. 7 dana je previše kratko (vikend vs radni dani distorzija, sezonalnost, nedovoljno konverzija za statisti&#x10D;ku zna&#x10D;ajnost).</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Audit-ujte poslednjih 30-90 dana podataka. 7 dana je previše kratko (vikend vs radni dani distorzija, sezonalnost, nedovoljno konverzija za statisti&#x10D;ku zna&#x10D;ajnost).</p>
           </div>
         </div>
 
@@ -692,7 +692,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #5</p>
           <p className="font-semibold mb-2">Pauziranje kampanja/keywords-a sa {`"lošim"`} performance-om bez dijagnostike ZA&#x160;TO su lo&#x161;i</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Pre nego &#x161;to pauzirate, dijagnostikujte: Da li je problem keyword (lo&#x161; intent), ad copy (nizak CTR), landing page (lo&#x161; CVR), ili targeting (pogre&#x161;na publika)? Možda je fix jednostavan — nova LP ili bolji ad copy.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Pre nego &#x161;to pauzirate, dijagnostikujte: Da li je problem keyword (lo&#x161; intent), ad copy (nizak CTR), landing page (lo&#x161; CVR), ili targeting (pogre&#x161;na publika)? Možda je fix jednostavan — nova LP ili bolji ad copy.</p>
           </div>
         </div>
 
@@ -700,7 +700,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #6</p>
           <p className="font-semibold mb-2">Ignorisanje benchmark-ova — ne znate da li je va&#x161; CPA €50 dobar ili lo&#x161;</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-sm text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Uporedite metrike sa industry benchmarks (Google objavljuje prose&#x10D;ne CPC/CVR po industrijama). Takođe uporedite performance sa va&#x161;im baseline-om (pre 3-6 meseci) da vidite trend.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Re&#x161;enje:</strong> Uporedite metrike sa industry benchmarks (Google objavljuje prose&#x10D;ne CPC/CVR po industrijama). Takođe uporedite performance sa va&#x161;im baseline-om (pre 3-6 meseci) da vidite trend.</p>
           </div>
         </div>
       </div>
@@ -714,7 +714,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Koliko često treba raditi Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">Preporu&#x10D;ujem <strong>kvartalni deep audit</strong> (2-4 sata, svih 10 kategorija + 80+ checkpoint-a) + <strong>mese&#x10D;ni quick audit</strong> (30 min, 8 priority checkpoint-a). Takođe radite audit odmah ako: (1) performance naglo padne, (2) preuzimate nalog od druge agencije, (3) pokrećete nove proizvode/usluge, ili (4) menjate biznis model.</p>
           </div>
         </details>
@@ -724,7 +724,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Koliko ko&#x161;ta profesionalan Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-3">U praksi vidim opseg od €200 do €1500+ u zavisnosti od veli&#x10D;ine naloga, broja kampanja, i dubine audit-a.</p>
             <ul className="text-sm mb-0">
               <li><strong>Basic audit</strong> (mali nalog, 2-3 kampanje, 1 tržište): €200-350</li>
@@ -740,7 +740,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Mogu li sam da radim Google Ads audit ili mi treba specialist?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">Možete sami ako pratite checklist iz ovog vodi&#x10D;a i imate tehni&#x10D;ko razumevanje Google Ads-a. Međutim, specialist ili agencija &#x107;e brže identifikovati probleme jer vide 10-20+ naloga mese&#x10D;no i znaju &#x161;ta je {`"normal"`} vs {`"red flag"`}. Takođe, spoljni pogled elimini&#x161;e confirmation bias. Ako je ad spend €3K+ mese&#x10D;no, preporu&#x10D;ujem da bar jednom godi&#x161;nje platite profesionalan Google Ads audit za second opinion.</p>
           </div>
         </details>
@@ -750,7 +750,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             &#x160;ta je naj&#x10D;e&#x161;&#x107;i problem koji Google Ads audit otkriva?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">Top 3 problema su: (1) <strong>Irelevantni search terms</strong> — tro&#x161;e 15-30% budžeta jer nema negative keywords liste ili se ne odr&#x17E;ava, (2) <strong>Conversion tracking ne funkcioniše ta&#x10D;no</strong> — ne radi ili bele&#x17E;i duplirane konverzije, pa algoritam donosi lo&#x161;e odluke, (3) <strong>Lo&#x161;a budget alokacija</strong> — lo&#x161;e kampanje tro&#x161;e previ&#x161;e, dobre kampanje limited by budget.</p>
           </div>
         </details>
@@ -760,7 +760,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Koliko vremena treba da prođe između audit-a i vidljivih rezultata?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0"><strong>Quick wins</strong> (dodavanje negative keywords, isklju&#x10D;ivanje Display Network-a iz Search kampanja, budget reallocation) daju rezultate za 7-14 dana. <strong>Srednje optimizacije</strong> (ad copy improvement, bidding adjustments) za 2-4 nedelje. <strong>Dublje promene</strong> (restructuring kampanja, nova bidding strategija) mogu zahtevati 4-8 nedelja. Smart Bidding uvek ima 7-14 dana learning period posle svake promene.</p>
           </div>
         </details>
@@ -770,7 +770,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             &#x160;ta posle Google Ads audit-a — ko implementira optimizacije?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">Zavisi od dogovora i va&#x161;ih resursa. Neki specialist-i daju samo audit report sa priori zovanim preporukama (DIY implementation). Drugi nude audit + implementation kao package. Tre&#x107;i nude audit + ongoing management (mese&#x10D;no upravljanje). Preporu&#x10D;ujem da implementation radi ista osoba koja je radila audit jer poznaje kontekst, prioritete, i razloge iza svake preporuke.</p>
           </div>
         </details>
@@ -801,7 +801,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Potreban vam je profesionalan Google Ads audit?</p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">Radim audit-e za naloge svih veli&#x10D;ina — od startupa do enterprise klijenata. Dobijate 80+ checkpoint audit report + prioritizovan action plan + implementation preporuke + follow-up консультацију.</p>
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">Radim audit-e za naloge svih veli&#x10D;ina — od startupa do enterprise klijenata. Dobijate 80+ checkpoint audit report + prioritizovan action plan + implementation preporuke + follow-up консультацију.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Zaka&#x17E;ite besplatnu konsultaciju</Link>
       </div>
 
@@ -869,7 +869,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Koliko često treba raditi Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Kompletan audit svakih 3-6 meseci je minimum za aktivne naloge. Za nove naloge — obavezno nakon prvih 30 dana (da se uhvate rani problemi). Za naloge sa visokim spend-om (€5.000+/mesečno), mesečni mini-audit je preporučljiv. Kontinuirana optimizacija nije zamena za periodični dubinski pregled cele strukture.
           </div>
         </details>
@@ -879,7 +879,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Šta proveriti prvo u Google Ads auditu?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Pet tačaka koje pokrivaju 80% problema: 1) Conversion tracking — da li se prate prave akcije? 2) Search Terms report — koje upite aktiviraju tvoje oglase? 3) Quality Score — da li su ključne reči relevantne? 4) Wasted spend — gde novac odlazi bez rezultata? 5) Landing page — konvertuje li stranica na koju šalješ saobraćaj?
           </div>
         </details>
@@ -889,7 +889,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Koliko košta Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Besplatan basic audit (surface-level pregled) nudi mnogo agencija kao lead magnet. Profesionalni audit sa detaljnom analizom i akcionim planom košta €200-800 zavisno od veličine naloga i iskustva auditora. Uzmimo u obzir da jedan dobro urađen audit može da sačuva 20-40% mesečnog budžeta — ROI je obično odličan.
           </div>
         </details>
@@ -899,7 +899,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Mogu li sam da uradim audit svog naloga?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, sa dobrom checklistom možeš pokriti osnovne probleme. Ovaj vodič ti daje tačno to. Ograničenje DIY audita je što možeš propustiti suptilne probleme koje iskusan specijalista prepoznaje odmah (npr. loša struktura kampanja, suboptimalni bidding setup, propuštene prilike). Eksterni pogled uvek donosi svežu perspektivu.
           </div>
         </details>
@@ -909,7 +909,7 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
             Šta raditi posle audita?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Napravi prioritizovanu listu akcija: Hitno (ove nedelje) — conversion tracking greške, aktivni problemi koji trose budžet. Visok prioritet (ovaj mesec) — negativne ključne reči, poboljšanje oglasa, Quality Score. Optimizacija (naredna 3 meseca) — testiranje bidding strategija, landing page optimizacija, proširenje kampanja. Bez prioritizacije, audit ostaje samo lista problema.
           </div>
         </details>

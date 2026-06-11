@@ -59,15 +59,15 @@ export default function EcommerceVsB2BPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto-se-ecommerce-i-b2b-razlikuju-u-google-ads-u" className="text-sm text-gray-700 hover:text-primary underline">Zašto se eCommerce i B2B razlikuju u Google Ads-u</a></li>
-          <li><a href="#kljucne-razlike-poreenje" className="text-sm text-gray-700 hover:text-primary underline">Ključne razlike — poređenje</a></li>
-          <li><a href="#google-ads-strategija-za-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Google Ads strategija za eCommerce</a></li>
-          <li><a href="#google-ads-strategija-za-b2b" className="text-sm text-gray-700 hover:text-primary underline">Google Ads strategija za B2B</a></li>
-          <li><a href="#kpi-jevi-i-merenje-uspeha" className="text-sm text-gray-700 hover:text-primary underline">KPI-jevi i merenje uspeha</a></li>
-          <li><a href="#budzet-i-ocekivanja" className="text-sm text-gray-700 hover:text-primary underline">Budžet i očekivanja</a></li>
-          <li><a href="#najcesce-greske-po-modelu" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške po modelu</a></li>
-          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
-          <li><a href="#najcesca-pitanja-ecommerce-vs-b2b-google-ads" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja — eCommerce vs B2B Google Ads</a></li>
+          <li><a href="#zasto-se-ecommerce-i-b2b-razlikuju-u-google-ads-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto se eCommerce i B2B razlikuju u Google Ads-u</a></li>
+          <li><a href="#kljucne-razlike-poreenje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Ključne razlike — poređenje</a></li>
+          <li><a href="#google-ads-strategija-za-ecommerce" className="block py-1 text-base text-gray-700 hover:text-primary underline">Google Ads strategija za eCommerce</a></li>
+          <li><a href="#google-ads-strategija-za-b2b" className="block py-1 text-base text-gray-700 hover:text-primary underline">Google Ads strategija za B2B</a></li>
+          <li><a href="#kpi-jevi-i-merenje-uspeha" className="block py-1 text-base text-gray-700 hover:text-primary underline">KPI-jevi i merenje uspeha</a></li>
+          <li><a href="#budzet-i-ocekivanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Budžet i očekivanja</a></li>
+          <li><a href="#najcesce-greske-po-modelu" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešće greške po modelu</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-ecommerce-vs-b2b-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja — eCommerce vs B2B Google Ads</a></li>
         </ol>
       </nav>
 
@@ -98,51 +98,51 @@ export default function EcommerceVsB2BPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
-              <th className="py-3 px-4 font-heading font-semibold">eCommerce</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-3 font-heading font-semibold">eCommerce</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Sales Cycle</td>
-              <td className="py-3 px-4">Minuti do dana</td>
-              <td className="py-3 px-4">Nedelje do meseci</td>
+              <td className="py-3 px-3 font-medium">Sales Cycle</td>
+              <td className="py-3 px-3">Minuti do dana</td>
+              <td className="py-3 px-3">Nedelje do meseci</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Decision Makers</td>
-              <td className="py-3 px-4">1 osoba</td>
-              <td className="py-3 px-4">2-10 osoba</td>
+              <td className="py-3 px-3 font-medium">Decision Makers</td>
+              <td className="py-3 px-3">1 osoba</td>
+              <td className="py-3 px-3">2-10 osoba</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Touchpoints</td>
-              <td className="py-3 px-4">1-5 interakcija</td>
-              <td className="py-3 px-4">10-50+ interakcija</td>
+              <td className="py-3 px-3 font-medium">Touchpoints</td>
+              <td className="py-3 px-3">1-5 interakcija</td>
+              <td className="py-3 px-3">10-50+ interakcija</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Primarna konverzija</td>
-              <td className="py-3 px-4">Kupovina (sa vrednošću)</td>
-              <td className="py-3 px-4">Lead (forma, demo, poziv)</td>
+              <td className="py-3 px-3 font-medium">Primarna konverzija</td>
+              <td className="py-3 px-3">Kupovina (sa vrednošću)</td>
+              <td className="py-3 px-3">Lead (forma, demo, poziv)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Vrednost</td>
-              <td className="py-3 px-4">€10 - €500 (tipično)</td>
-              <td className="py-3 px-4">€1,000 - €100,000+</td>
+              <td className="py-3 px-3 font-medium">Vrednost</td>
+              <td className="py-3 px-3">€10 - €500 (tipično)</td>
+              <td className="py-3 px-3">€1,000 - €100,000+</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Volume</td>
-              <td className="py-3 px-4">Visok (stotine transakcija)</td>
-              <td className="py-3 px-4">Nizak (desetine lead-ova)</td>
+              <td className="py-3 px-3 font-medium">Volume</td>
+              <td className="py-3 px-3">Visok (stotine transakcija)</td>
+              <td className="py-3 px-3">Nizak (desetine lead-ova)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Primarni KPI</td>
-              <td className="py-3 px-4">ROAS, Revenue, Conversion Rate</td>
-              <td className="py-3 px-4">CPL, Lead Quality, SQL Rate</td>
+              <td className="py-3 px-3 font-medium">Primarni KPI</td>
+              <td className="py-3 px-3">ROAS, Revenue, Conversion Rate</td>
+              <td className="py-3 px-3">CPL, Lead Quality, SQL Rate</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Ključne kampanje</td>
-              <td className="py-3 px-4">Shopping, PMax, Brand Search</td>
-              <td className="py-3 px-4">Non-Brand Search, Remarketing</td>
+              <td className="py-3 px-3 font-medium">Ključne kampanje</td>
+              <td className="py-3 px-3">Shopping, PMax, Brand Search</td>
+              <td className="py-3 px-3">Non-Brand Search, Remarketing</td>
             </tr>
           </tbody>
         </table>
@@ -150,7 +150,7 @@ export default function EcommerceVsB2BPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Ignorisanje ovih razlika vodi ka primeni pogrešne strategije. <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">Shopping kampanje</a> ne postoje za B2B. Lead-gen tracking ne daje ROAS za eCommerce. Prilagodite pristup modelu.
         </p>
       </div>
@@ -220,7 +220,7 @@ export default function EcommerceVsB2BPost() {
             Shopping kampanje — srce eCommerce strategije
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Za većinu eCommerce biznisa, Shopping kampanje donose 60-80% prihoda iz Google Ads. Vizuelni format, pre-kvalifikacija cenom, visok intent.
         </p>
         <ul className="text-sm">
@@ -246,7 +246,7 @@ export default function EcommerceVsB2BPost() {
           </span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search kampanje</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Brand Search za zaštitu + Non-Brand Search za dopunski volumen. Shopping &gt; Search za većinu eCommerce kategorija.
         </p>
         <ul className="text-sm">
@@ -271,7 +271,7 @@ export default function EcommerceVsB2BPost() {
             Remarketing — recovery strategija
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           97% posetilaca ne kupi prvi put. Remarketing je obavezan za konverziju &quot;gotovo kupljenih&quot; transakcija.
         </p>
         <ul className="text-sm">
@@ -296,7 +296,7 @@ export default function EcommerceVsB2BPost() {
             Performance Max — skaliranje sa oprezom
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           PMax je automated kanal koji pokriva sve Google inventory (Search, Shopping, Display, YouTube). Koristi se za skaliranje kada imate stabilan ROAS sa Shopping/Search.
         </p>
         <ul className="text-sm">
@@ -314,7 +314,7 @@ export default function EcommerceVsB2BPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Povezan vodič</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Detaljnije o Shopping kampanjama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping vodič — kako pokrenuti i optimizovati</Link>
         </p>
       </div>
@@ -384,7 +384,7 @@ export default function EcommerceVsB2BPost() {
             Search kampanje — fokus na intent keywords
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Za B2B, Search je dominantan kanal. Shopping ne postoji, Display ima ograničen impact. Pokrijte ceo funnel, ali najveći budžet na high-intent.
         </p>
         <ul className="text-sm">
@@ -412,7 +412,7 @@ export default function EcommerceVsB2BPost() {
             Content/Lead magnet strategija
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           B2B buyer ne želi odmah da ostavi kontakt. Ponudite besplatan content (whitepaper, checklist, webinar) kao prvi korak.
         </p>
         <ul className="text-sm">
@@ -437,7 +437,7 @@ export default function EcommerceVsB2BPost() {
             Remarketing — nurture kroz duži ciklus
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           B2B remarketing je drugačiji — duži consideration period (30-90 dana), više touchpoints, fokus na value nurture.
         </p>
         <ul className="text-sm">
@@ -465,7 +465,7 @@ export default function EcommerceVsB2BPost() {
             Offline Conversion Import — kritična razlika
           </h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           U eCommerce, konverzija = prodaja. U B2B, konverzija = lead. Ali nisu svi lead-ovi jednaki. Offline import rešava problem kvaliteta.
         </p>
         <ul className="text-sm">
@@ -483,7 +483,7 @@ export default function EcommerceVsB2BPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Povezani vodiči</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Conversion tracking vodič</Link> za offline import setup &amp; <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing vodič</Link> za nurture strategiju.
         </p>
       </div>
@@ -503,7 +503,7 @@ export default function EcommerceVsB2BPost() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">
             Primarni KPI-jevi
           </h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             <strong>ROAS</strong> (Return on Ad Spend) — prihod / trošak<br />
             <strong>Revenue</strong> — ukupan prihod iz kampanja<br />
             <strong>Conversion Rate</strong> — procenat posetilaca koji kupe<br />
@@ -519,7 +519,7 @@ export default function EcommerceVsB2BPost() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">
             Primarni KPI-jevi
           </h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             <strong>CPL</strong> (Cost per Lead) — ali oprez, nije sve o volumenu<br />
             <strong>Lead Quality Score</strong> — % kvalifikovanih lead-ova<br />
             <strong>SQL Rate</strong> — % lead-ova koji postanu Sales Qualified<br />
@@ -533,36 +533,36 @@ export default function EcommerceVsB2BPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
-              <th className="py-3 px-4 font-heading font-semibold">eCommerce Benchmark</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B Benchmark</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-3 font-heading font-semibold">eCommerce Benchmark</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B Benchmark</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPC (prosek)</td>
-              <td className="py-3 px-4">€0.30 - €1.50</td>
-              <td className="py-3 px-4">€2.00 - €10.00+</td>
+              <td className="py-3 px-3 font-medium">CPC (prosek)</td>
+              <td className="py-3 px-3">€0.30 - €1.50</td>
+              <td className="py-3 px-3">€2.00 - €10.00+</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Conversion Rate</td>
-              <td className="py-3 px-4">2% - 5%</td>
-              <td className="py-3 px-4">5% - 15% (lead form)</td>
+              <td className="py-3 px-3 font-medium">Conversion Rate</td>
+              <td className="py-3 px-3">2% - 5%</td>
+              <td className="py-3 px-3">5% - 15% (lead form)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Target ROAS</td>
-              <td className="py-3 px-4">300% - 500%+</td>
-              <td className="py-3 px-4">N/A (lead-gen model)</td>
+              <td className="py-3 px-3 font-medium">Target ROAS</td>
+              <td className="py-3 px-3">300% - 500%+</td>
+              <td className="py-3 px-3">N/A (lead-gen model)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">CPA / CPL</td>
-              <td className="py-3 px-4">€10 - €50 (per purchase)</td>
-              <td className="py-3 px-4">€50 - €500+ (per lead)</td>
+              <td className="py-3 px-3 font-medium">CPA / CPL</td>
+              <td className="py-3 px-3">€10 - €50 (per purchase)</td>
+              <td className="py-3 px-3">€50 - €500+ (per lead)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Konverzije mesečno</td>
-              <td className="py-3 px-4">50-500+</td>
-              <td className="py-3 px-4">10-50</td>
+              <td className="py-3 px-3 font-medium">Konverzije mesečno</td>
+              <td className="py-3 px-3">50-500+</td>
+              <td className="py-3 px-3">10-50</td>
             </tr>
           </tbody>
         </table>
@@ -579,31 +579,31 @@ export default function EcommerceVsB2BPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
-              <th className="py-3 px-4 font-heading font-semibold">eCommerce</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-3 font-heading font-semibold">eCommerce</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Minimalni budžet</td>
-              <td className="py-3 px-4">€500 - €1,000/mesec</td>
-              <td className="py-3 px-4">€1,500 - €2,500/mesec</td>
+              <td className="py-3 px-3 font-medium">Minimalni budžet</td>
+              <td className="py-3 px-3">€500 - €1,000/mesec</td>
+              <td className="py-3 px-3">€1,500 - €2,500/mesec</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Preporučeni početni</td>
-              <td className="py-3 px-4">€1,500 - €3,000/mesec</td>
-              <td className="py-3 px-4">€3,000 - €5,000/mesec</td>
+              <td className="py-3 px-3 font-medium">Preporučeni početni</td>
+              <td className="py-3 px-3">€1,500 - €3,000/mesec</td>
+              <td className="py-3 px-3">€3,000 - €5,000/mesec</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Vreme do rezultata</td>
-              <td className="py-3 px-4">2-4 nedelje (prvi podaci)</td>
-              <td className="py-3 px-4">1-3 meseca (kvalitetni lead-ovi)</td>
+              <td className="py-3 px-3 font-medium">Vreme do rezultata</td>
+              <td className="py-3 px-3">2-4 nedelje (prvi podaci)</td>
+              <td className="py-3 px-3">1-3 meseca (kvalitetni lead-ovi)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Skaliranje</td>
-              <td className="py-3 px-4">Linearan rast (2x budžet = ~2x revenue)</td>
-              <td className="py-3 px-4">Nelinearan (viši budžet ≠ 2x lead-ova)</td>
+              <td className="py-3 px-3 font-medium">Skaliranje</td>
+              <td className="py-3 px-3">Linearan rast (2x budžet = ~2x revenue)</td>
+              <td className="py-3 px-3">Nelinearan (viši budžet ≠ 2x lead-ova)</td>
             </tr>
           </tbody>
         </table>
@@ -611,7 +611,7 @@ export default function EcommerceVsB2BPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Pravilo budžeta</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           eCommerce: Budžet = 10% očekivanog revenue (npr. želite €10K revenue &rarr; €1K ad spend). B2B: Budžet &gt; 3x CPC × 30 konverzija (npr. €5 CPC &rarr; min. €450/mesec, ali preporučujem 5-10x za stabilnost).
         </p>
       </div>
@@ -685,7 +685,7 @@ export default function EcommerceVsB2BPost() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Da, ali zahteva drugačiji mindset. Ekspertiza u jednom ne garantuje ekspertizu u drugom. eCommerce konsultant koji poznaje Shopping/ROAS optimizaciju mora da nauči B2B lead quality tracking i offline conversions. Obrnuto važi takođe — B2B konsultant mora da nauči feed optimizaciju i Shopping kampanje. Preporučujem timove koji imaju iskustvo u oba modela ili specijalizovane konsultante po modelu.
         </div>
       </details>
@@ -697,7 +697,7 @@ export default function EcommerceVsB2BPost() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           eCommerce je obično jasniji — prodaja je prodaja, ROAS je ROAS. Vidite rezultate brže (2-4 nedelje), tracking je direktan (kupovina = konverzija), metrike su jednostavnije. B2B ima više varijabli: lead quality, sales cycle dužina, multiple decision makers. Ali ako imate CRM i offline conversion import, B2B može biti stabilniji dugoročno (veće deal vrednosti, duži customer lifetime).
         </div>
       </details>
@@ -709,7 +709,7 @@ export default function EcommerceVsB2BPost() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Može, ali sa oprezom. PMax zahteva dovoljno konverzija (minimum 30-50/mesec) i offline import za pravu optimizaciju ka kvalitetu. Većina B2B biznisa nema dovoljno volume za PMax da radi optimalno. Preporučujem: počnite sa Search kampanjama, gradite volume, dodajte offline conversion import, tek onda testirajte PMax sa 20-30% budžeta. Nikada ne prebacujte 100% budžeta na PMax odmah.
         </div>
       </details>
@@ -721,7 +721,7 @@ export default function EcommerceVsB2BPost() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Više nego što mislite zbog višeg CPC-a (€2-10+) i nižeg volumena. Minimum €1,500-2,000 mesečno za smisleno testiranje. Preporučujem €3,000-5,000 za stabilne rezultate. Formula: 3x CPC × 30 konverzija = minimalni budžet (npr. €5 CPC &rarr; €450, ali to je minimum za 1 kampanju). Za 3-4 kampanje (Brand, Non-Brand, Remarketing) + testirajuće budžete, računajte €2,000-3,000.
         </div>
       </details>
@@ -733,7 +733,7 @@ export default function EcommerceVsB2BPost() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Long-term tracking je ključan: pipeline value, SQL rate, eventual revenue. Koristite CRM integraciju (HubSpot, Salesforce) i importujte podatke nazad u Google Ads (offline conversions). Pratite 3 metrike: (1) CPL — koliko košta lead, (2) SQL rate — koliko % lead-ova postaje kvalifikovano, (3) Won rate — koliko % SQL-ova se zatvara. Kombinirajte: CPL × (1 / SQL rate) × (1 / Won rate) = Cost per Won Deal. Uporedite sa average deal value = ROI.
         </div>
       </details>
@@ -745,7 +745,7 @@ export default function EcommerceVsB2BPost() {
             &#9660;
           </span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Preporučujem zasebne kampanje po segmentu. Low-touch proizvodi (mesečna pretplata &lt; €100) mogu da koriste eCommerce pristup (Target ROAS, kratki remarketing). High-touch enterprise (annual &gt; €1,000+) treba B2B pristup (lead-gen, duži remarketing, offline import). Razdvojite landing pages, konverzije, i budžete. Ne mešajte u istoj kampanji jer će Smart Bidding biti konfuzovan (optimizuje ka €50 self-serve ili €10,000 enterprise deal?).
         </div>
       </details>
@@ -754,7 +754,7 @@ export default function EcommerceVsB2BPost() {
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Trebate pomoć sa Google Ads strategijom?
         </p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           Radim sa eCommerce i B2B klijentima na prilagođenim Google Ads strategijama. Besplatna konsultacija uključuje analizu vašeg trenutnog account setup-a i preporuke za optimizaciju.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
@@ -827,7 +827,7 @@ export default function EcommerceVsB2BPost() {
             Koji tip kampanje je bolji za eCommerce?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Shopping kampanje (Standard Shopping i Performance Max) su #1 za eCommerce — vizuelno prikazuju proizvode direktno u pretrazi i imaju visok purchase intent. Search kampanje su komplementarne za brand i kategorijske termine. Display i YouTube su za remarketing i awareness fazu kupovnog puta.
           </div>
         </details>
@@ -837,7 +837,7 @@ export default function EcommerceVsB2BPost() {
             Kako meriti uspeh B2B Google Ads kampanja?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ključne B2B metrike: CPL (cost per lead), MQL-to-SQL stopa (koliko leadova postaje kvalifikovani prodajni lead), CAC (customer acquisition cost) i LTV:CAC ratio. Ne fokusiraj se samo na klik i impression metrike — bez praćenja kvaliteta leadova nemoguće je znati da li kampanja zaista donosi vrednost biznisu.
           </div>
         </details>
@@ -847,7 +847,7 @@ export default function EcommerceVsB2BPost() {
             Da li Google Ads radi za B2B sa dugim sales cycle-om?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, ali sa drugačijim pristupom. Dugačak sales cycle zahteva remarketing strategiju (da ostaneš u vidokrugu tokom 3-6 meseci odlučivanja), lead nurturing sadržaj i offline conversion import (da Google zna koji leadovi su se pretvorili u kupce). Attribution window treba proširiti na 60-90 dana da zahvati ceo ciklus.
           </div>
         </details>
@@ -857,7 +857,7 @@ export default function EcommerceVsB2BPost() {
             Koliki budžet je potreban za eCommerce vs B2B?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             eCommerce starteri: €500-1.000/mesečno za testiranje, €2.000+ za ozbiljne rezultate (zavisi od CPC i margina). B2B: €300-800/mesečno za niche targeting, ali CPL može biti €50-500+ zavisno od industrije. Važniji od budžeta je ROI — B2B deal vredan €10.000 opravdava visok CPL.
           </div>
         </details>

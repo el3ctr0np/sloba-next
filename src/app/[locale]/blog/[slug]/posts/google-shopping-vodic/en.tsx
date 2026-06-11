@@ -182,7 +182,7 @@ export default function GoogleShoppingGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Character limit</p>
-        <p className="text-blue-800 text-sm mb-0">Google allows 150 characters, but the first 70 are most important — that's what's visible in the ad. Put the most important information at the beginning.</p>
+        <p className="text-blue-800 text-base mb-0">Google allows 150 characters, but the first 70 are most important — that's what's visible in the ad. Put the most important information at the beginning.</p>
       </div>
 
       <h3>Description optimization</h3>
@@ -192,7 +192,7 @@ export default function GoogleShoppingGuideEN() {
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <p className="font-heading font-bold text-lg mb-4">Best practices for descriptions</p>
-        <ul className="text-sm space-y-2 mb-0">
+        <ul className="text-base space-y-2 mb-0">
           <li>Start with the most important information (product type, purpose)</li>
           <li>Include keywords naturally (no keyword stuffing)</li>
           <li>List specifications (material, dimensions, weight)</li>
@@ -262,7 +262,7 @@ export default function GoogleShoppingGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">Custom Labels allow you to create campaigns by margin (high margin = higher bid), by performance (top performers = separate campaign), or by season (exclude winter products in summer).</p>
+        <p className="text-yellow-800 text-base mb-0">Custom Labels allow you to create campaigns by margin (high margin = higher bid), by performance (top performers = separate campaign), or by season (exclude winter products in summer).</p>
       </div>
 
       <hr />
@@ -306,7 +306,7 @@ export default function GoogleShoppingGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">How it works</p>
-        <p className="text-blue-800 text-sm mb-0">Negative keywords in the High Priority campaign push more specific traffic down through Medium and Low campaigns. This gives you control — you pay less for generic searches, more for high-intent searches.</p>
+        <p className="text-blue-800 text-base mb-0">Negative keywords in the High Priority campaign push more specific traffic down through Medium and Low campaigns. This gives you control — you pay less for generic searches, more for high-intent searches.</p>
       </div>
 
       <h3>Single Product Ad Groups (SPAGs)</h3>
@@ -367,9 +367,9 @@ export default function GoogleShoppingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Manual CPC</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Full control over bids. Every bid change is active immediately. No learning period. Ideal for starting or small budgets.</p>
+        <p className="text-base text-gray-600 mb-3">Full control over bids. Every bid change is active immediately. No learning period. Ideal for starting or small budgets.</p>
         <p className="text-sm font-semibold mb-1">When to use:</p>
-        <ul className="text-sm mb-0">
+        <ul className="text-base mb-0">
           <li>New campaign without conversion history</li>
           <li>Budget below $1,000/£800 monthly</li>
           <li>Need for precise control</li>
@@ -381,9 +381,9 @@ export default function GoogleShoppingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target ROAS</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Automatic optimization toward target ROAS. Google uses device, location, time, and audience signals. Less manual work, but requires learning period.</p>
+        <p className="text-base text-gray-600 mb-3">Automatic optimization toward target ROAS. Google uses device, location, time, and audience signals. Less manual work, but requires learning period.</p>
         <p className="text-sm font-semibold mb-1">When to use:</p>
-        <ul className="text-sm mb-0">
+        <ul className="text-base mb-0">
           <li>Stable campaign with 50+ conversions monthly</li>
           <li>Budget $2,000+/£1,500+ monthly</li>
           <li>Clear conversion values (eCommerce with transaction values)</li>
@@ -392,7 +392,7 @@ export default function GoogleShoppingGuideEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">My recommendation</p>
-        <p className="text-sm text-yellow-900 mb-0">I recommend Manual CPC for the first 2-4 weeks (while collecting minimum 50 conversions), then switch to Target ROAS. Split campaigns by custom labels (high/medium/low margin) and set different ROAS targets — high margin = lower target, low margin = higher target.</p>
+        <p className="text-base text-yellow-900 mb-0">I recommend Manual CPC for the first 2-4 weeks (while collecting minimum 50 conversions), then switch to Target ROAS. Split campaigns by custom labels (high/medium/low margin) and set different ROAS targets — high margin = lower target, low margin = higher target.</p>
       </div>
 
       <hr />
@@ -407,14 +407,14 @@ export default function GoogleShoppingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Feed optimization</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Biggest impact for smallest effort. 80% of problems are in the feed.</p>
-        <ul className="text-sm mb-3">
+        <p className="text-base text-gray-600 mb-3">Biggest impact for smallest effort. 80% of problems are in the feed.</p>
+        <ul className="text-base mb-3">
           <li>Audit all titles — add brand, color, size, model</li>
           <li>Optimize descriptions for top 100 products</li>
           <li>Set custom labels by margin, performance, season</li>
           <li>Check that all required attributes are filled</li>
         </ul>
-        <p className="text-sm text-gray-500 mb-0">Expected result: 10-30% improvement in CTR and Conversion Rate.</p>
+        <p className="text-base text-gray-500 mb-0">Expected result: 10-30% improvement in CTR and Conversion Rate.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -422,14 +422,14 @@ export default function GoogleShoppingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Negative keywords</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Shopping uses feed for targeting, but you can add negative keywords to filter unqualified traffic.</p>
-        <ul className="text-sm mb-3">
+        <p className="text-base text-gray-600 mb-3">Shopping uses feed for targeting, but you can add negative keywords to filter unqualified traffic.</p>
+        <ul className="text-base mb-3">
           <li><strong>Informational:</strong> &quot;how to&quot;, &quot;what is&quot;, &quot;review&quot;, &quot;tutorial&quot;</li>
           <li><strong>Free seekers:</strong> &quot;free&quot;, &quot;cheap&quot;, &quot;discount code&quot;</li>
           <li><strong>Job related:</strong> &quot;job&quot;, &quot;employment&quot;, &quot;career&quot;</li>
           <li><strong>DIY:</strong> &quot;make your own&quot;, &quot;DIY&quot;, &quot;homemade&quot;</li>
         </ul>
-        <p className="text-sm text-gray-500 mb-0">I recommend weekly Search Terms report review and aggressive addition of negatives. This is the fastest way to improve CTR and reduce CPC.</p>
+        <p className="text-base text-gray-500 mb-0">I recommend weekly Search Terms report review and aggressive addition of negatives. This is the fastest way to improve CTR and reduce CPC.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -437,8 +437,8 @@ export default function GoogleShoppingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bid adjustments</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Device, location, and time adjustments can significantly improve ROAS.</p>
-        <ul className="text-sm mb-0">
+        <p className="text-base text-gray-600 mb-3">Device, location, and time adjustments can significantly improve ROAS.</p>
+        <ul className="text-base mb-0">
           <li><strong>Device:</strong> Desktop usually converts better. Mobile for research, desktop for purchase. Test +20-50% desktop, -10-20% mobile.</li>
           <li><strong>Location:</strong> Different regions = different performance. London vs rest of UK can vary 20-50%.</li>
           <li><strong>Time:</strong> Analyze performance by hour/day. Reduce bids when conversion rate is low (nighttime, early morning).</li>
@@ -450,13 +450,13 @@ export default function GoogleShoppingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Remarketing Lists for Shopping Ads (RLSA)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Add audience lists and increase bids for users who already know your brand.</p>
-        <ul className="text-sm mb-3">
+        <p className="text-base text-gray-600 mb-3">Add audience lists and increase bids for users who already know your brand.</p>
+        <ul className="text-base mb-3">
           <li><strong>Past purchasers:</strong> +50-100% bid adjustment</li>
           <li><strong>Cart abandoners:</strong> +30-50% bid adjustment</li>
           <li><strong>Product viewers:</strong> +20-30% bid adjustment</li>
         </ul>
-        <p className="text-sm text-gray-500 mb-0">These users already know your brand — worth paying more per click as conversion rate is significantly higher.</p>
+        <p className="text-base text-gray-500 mb-0">These users already know your brand — worth paying more per click as conversion rate is significantly higher.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -464,13 +464,13 @@ export default function GoogleShoppingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Exclude poor performers</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Not all products deserve budget. I recommend excluding:</p>
-        <ul className="text-sm mb-3">
+        <p className="text-base text-gray-600 mb-3">Not all products deserve budget. I recommend excluding:</p>
+        <ul className="text-base mb-3">
           <li>Products without conversions after 100+ clicks</li>
           <li>Low margin products that don't convert</li>
           <li>Out of stock products (automatic, but verify)</li>
         </ul>
-        <p className="text-sm text-gray-500 mb-0">Use custom labels for easier segmentation and exclusion. This frees budget for top performers.</p>
+        <p className="text-base text-gray-500 mb-0">Use custom labels for easier segmentation and exclusion. This frees budget for top performers.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -478,8 +478,8 @@ export default function GoogleShoppingGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Price competitiveness</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Google displays price in the ad. If you're 30% more expensive than competitors, CTR will suffer.</p>
-        <ul className="text-sm mb-0">
+        <p className="text-base text-gray-600 mb-3">Google displays price in the ad. If you're 30% more expensive than competitors, CTR will suffer.</p>
+        <ul className="text-base mb-0">
           <li>Check Price Competitiveness report in Merchant Center</li>
           <li>Adjust prices for competitiveness or</li>
           <li>Focus budget on products where you're competitive</li>
@@ -497,7 +497,7 @@ export default function GoogleShoppingGuideEN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
         <p className="font-semibold mb-2">Unoptimized feed straight from shop platform</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Invest time in feed optimization or use a feed management tool (DataFeedWatch, GoDataFeed). Title &quot;Product 123&quot; and generic description don't work — add brand, color, size, specifics.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Invest time in feed optimization or use a feed management tool (DataFeedWatch, GoDataFeed). Title &quot;Product 123&quot; and generic description don't work — add brand, color, size, specifics.</p>
         </div>
       </div>
 

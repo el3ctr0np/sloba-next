@@ -45,7 +45,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <p className="font-semibold text-amber-900 mb-2">
           Napomena za one koji još uvek govore „AdWords optimizacija"
         </p>
-        <p className="text-amber-900 text-sm mb-0 leading-relaxed">
+        <p className="text-amber-900 text-base mb-0 leading-relaxed">
           Ako si navikao/la da Google Ads zoveš <strong>AdWords</strong>, nisi sam/a.
           AdWords je bio originalni naziv Google-ove oglašivačke platforme od 2000. do 2018.
           godine, kada ga je Google preimenovao u Google Ads. <strong>Ista platforma, isti principi
@@ -72,7 +72,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Realnost iz prakse</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           U januaru 2026 sam preuzeo nalog gde je kampanja 6 meseci radila bez optimizacije. CPA je bio
           €85. Nakon 4 nedelje primene ovih taktika: CPA €42. Isti budžet, duplo više konverzija.
         </p>
@@ -98,7 +98,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Odvojite Brand i Non-Brand kampanje</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Brand kampanje (vaše ime brenda) imaju 10x viši CTR i 3x niži CPC od non-brand kampanja.
           Ako ih mešate u jednoj kampanji, statistika je zbunjujuća i ne možete optimalno alokirati budžet.
         </p>
@@ -114,7 +114,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Single Keyword Ad Groups (SKAGs) ili tematske grupe?</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Stara škola preporučuje SKAGs — svaka ključna reč u svojoj ad grupi za maksimalnu relevantnost.
           Nova realnost sa RSA oglasima: tematske grupe od 5-15 sličnih ključnih reči daju bolju AI optimizaciju.
         </p>
@@ -130,7 +130,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Konzistentna naming konvencija</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ako imate 20+ kampanja, kako brzo pronalazite šta tražite? Preporučujem strukturu:
           [TIP]_[KATEGORIJA]_[GEO]_[DODATNO]. Primer: SEARCH_Sofas_UK_Exact ili PMAX_AllProducts_EU_NewCustomers.
         </p>
@@ -146,7 +146,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Kampanje po fazi customer journey</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Korisnik koji traži &quot;šta je CRM&quot; nije u istoj fazi kao onaj koji traži &quot;kupiti HubSpot
           alternativu&quot;. Odvojite kampanje po fazi: Awareness, Consideration, Decision.
         </p>
@@ -162,7 +162,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dnevni budžet vs shared budget</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Individualni dnevni budžet po kampanji vam daje kontrolu. Shared budget pools automatski
           alokira gde Google vidi priliku. U praksi: najbolje funkcioniše hybrid pristup.
         </p>
@@ -187,7 +187,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search Terms Report mining (nedeljno)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ovo je najmoćnija taktika u ovom vodiču. Search Terms Report pokazuje šta ljudi ZAPRAVO
           pretražuju kada vide vaš oglas. Tamo nalazite zlato (nove converting keywords) i otpad
           (terms koje trebaju biti negativne).
@@ -205,7 +205,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Negativne ključne reči kao fundament</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ljudi pitaju &quot;Kako da dobijem više konverzija?&quot; — bolje pitanje je &quot;Kako da
           prestanem da gubim pare na lošim klikovima?&quot;. Negativne ključne reči su odgovor.
         </p>
@@ -222,7 +222,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">8</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Match types strategija: 2026 realnost</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Broad Match Modifier više ne postoji (Google ga je ukinuo 2021). Sada imate: Broad, Phrase, Exact.
           Ali Exact match više nije baš &quot;exact&quot; — close variants su enabled by default.
         </p>
@@ -235,7 +235,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Broad Match sa Manual CPC bidding je recept za katastrofu. Broad Match sa Target CPA i dobrom
           conversion tracking istorijom? To može biti vaša best performing taktika. Kontekst je sve.
         </p>
@@ -246,7 +246,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">9</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword consolidation (merge duplicates)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Čest scenario: ista ključna reč u 3 različite ad grupe, sve sa low impression share jer budžet
           i Quality Score su rasparčani. Rešenje: konsolidacija.
         </p>
@@ -262,7 +262,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">10</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Long-tail strategija za niše</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ako ste u nišnoj industriji ili imate mali budžet — long-tail keywords su vaš best friend.
           Da, imaju mali volumen, ali CPC je 3-5x niži, a konverziona stopa često viša.
         </p>
@@ -278,7 +278,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">11</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Sezonske ključne reči i scheduled campaigns</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ako imate seasonalne proizvode (npr. &quot;ski oprema&quot; vs &quot;surfboard&quot;), nemojte
           držati sve keywords aktivne celu godinu. Trošite budžet uzalud van sezone.
         </p>
@@ -294,7 +294,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">12</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor keywords: yes or no?</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Bidding na imena konkurencije (npr. &quot;HubSpot alternative&quot;) može biti moćno, ali i
           skupo. Moje pravilo: testirajte ako imate clear differentiation i landing page koja objašnjava
           zašto ste bolji.
@@ -321,7 +321,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">13</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RSA best practices: diversity je ključ</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Google vam dozvoljava 15 headlines i 4 descriptions u RSA oglasu. Većina ljudi piše 15
           varijacija iste poruke. Greška. Google treba diversity da optimalno testira kombinacije.
         </p>
@@ -338,7 +338,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">14</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Pin strategija: kada pinnovati headlines</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Pinning (fiksiranje headline/description na određenu poziciju) smanjuje broj kombinacija koje
           Google može testirati, ali je ponekad neophodan za brand compliance ili messaging kontrolu.
         </p>
@@ -354,7 +354,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">15</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Extensions: koristite SVE relevantne</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ad extensions (sitelinks, callouts, structured snippets, call, location...) povećavaju CTR
           za 10-25% jer vaš oglas zauzima više prostora na SERP-u. I potpuno su besplatni.
         </p>
@@ -372,7 +372,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">16</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page alignment (message match)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ako vaš oglas obećava &quot;20% popust na sofe&quot;, a landing page nema pomena o popustu —
           imali ste visok bounce rate i loš Quality Score. Message match je kritičan.
         </p>
@@ -388,7 +388,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">17</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Device-specific ad copy (mobile vs desktop)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Mobile traffic ima drugačiji intent od desktop traffic. Kraći attention span, često local
           searches, više call conversions. Optimizujte ad copy za device ako vidite performance gap.
         </p>
@@ -404,7 +404,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">18</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Emotional triggers u ad copy</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ad copy koji samo opisuje features je dosadan. Ad copy koji rešava problem ili aktivira emociju
           dobija klik. FOMO (fear of missing out), urgencija, benefit-driven copy — to pobjeđuje.
         </p>
@@ -430,7 +430,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">19</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Manual CPC vs Smart Bidding: kada šta?</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Google gura Smart Bidding (Target CPA, Target ROAS, Maximize Conversions) kao superiorno
           rešenje. U praksi: zavisi od conversion volume-a. Ispod 30 konverzija mesečno, Smart Bidding
           nema dovoljno podataka da uči — Manual CPC sa bid adjustments je bolji.
@@ -445,7 +445,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Transition plan: Manual → Smart Bidding</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Ne skačite direktno sa Manual CPC na Target CPA. Pređite prvo na &quot;Maximize Conversions&quot;
           bez target-a da algoritam nauči. Nakon 2 nedelje, pređite na Target CPA/ROAS sa realističnim
           ciljem (10% iznad current average).
@@ -457,7 +457,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">20</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target CPA/ROAS: kako postaviti realan target</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Greška #1: postaviti previše agresivan target. Ako je vaš current CPA €50, a postavite target
           €20 — kampanja neće dobiti impressions jer Google zna da ne može postići taj target.
         </p>
@@ -474,7 +474,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">21</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Portfolio bidding za multi-kampanja management</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Portfolio bid strategies dozvoljavaju da delite bid strategiju preko više kampanja. Benefit:
           algoritam uči na agregiranom conversion volume-u, što znači bržu optimizaciju.
         </p>
@@ -490,7 +490,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">22</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dayparting: kad su vaši korisnici najaktivniji?</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Dayparting (Ad Schedule) podešava bidove po danu u nedelji i času u danu. Ako vaš CPA u
           ponedeljak ujutro 50% bolji od petka uveče — zašto bidate isto?
         </p>
@@ -507,7 +507,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">23</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Device bid adjustments (mobile/tablet/desktop)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ako vaš desktop CPA je €30, a mobilni €60 — ne treba da bidate isto. Device bid adjustments
           omogućavaju da automatski smanjite/povećate bid na različitim device-ima.
         </p>
@@ -534,7 +534,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">24</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">CTR optimization: najbrži način da podignete QS</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Expected CTR je najveći component Quality Score-a. Ako vaš CTR raste, QS prati. Kako povećati CTR?
           Bolje oglase (taktika #13-18), relevantnije keywords, i ad extensions.
         </p>
@@ -550,7 +550,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">25</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad relevance signals: keyword → ad → landing page</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Google prati da li vaš oglas sadrži keyword (ili close variant), i da li landing page sadrži
           isti keyword. Što je chain relevantniji, viši je Ad Relevance score.
         </p>
@@ -566,7 +566,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">26</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page experience: brzina i mobile-friendly</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Landing Page Experience component gleda brzinu učitavanja, mobile-friendliness, i relevantnost
           content-a. Najčešći problem: spor sajt. Ako je load time &gt;3 sekunde, gubite poene.
         </p>
@@ -580,7 +580,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Quality Score je historijski metric — promene koje napravite danas neće odmah podići QS.
           Treba 1-2 nedelje da Google akumulira dovoljno podataka. Budite strpljivi i konzistentni.
         </p>
@@ -591,7 +591,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">27</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Historical QS recovery: kad da &quot;reset-ujete&quot; keyword</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ponekad keyword ima istoriju loših performansi (nizak CTR godinu dana), i uprkos vašim
           optimizacijama, QS ostaje nizak jer je historical data loš. Rešenje: &quot;reset&quot;.
         </p>
@@ -616,7 +616,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika 28</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Audience layering na Search kampanjama</h3>
-          <p className="text-sm text-gray-600 mb-3">
+          <p className="text-base text-gray-600 mb-3">
             Audience layering znači dodavanje audience segments (remarketing lists, demographics, in-market)
             na Search kampanje kao &quot;observation&quot; ili sa bid adjustments.
           </p>
@@ -630,7 +630,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika 29</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Remarketing optimization</h3>
-          <p className="text-sm text-gray-600 mb-3">
+          <p className="text-base text-gray-600 mb-3">
             Remarketing kampanje imaju 2-3x viši CTR i 50-70% niži CPA od cold traffic. Ali samo ako
             pravilno segmentirate audience. Ne tretirajte sve posetioce isto.
           </p>
@@ -648,7 +648,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">30</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Conversion Tracking audit (kvartalno)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Najveća greška koju vidim: conversion tracking nije podešen pravilno, ili prati pogrešne
           akcije. Ako algoritam uči na lošim podacima, optimizacija je uzaludna.
         </p>
@@ -725,7 +725,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Mesečne optimizacije (jednom mesečno)</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           <strong>1. Conversion Tracking audit</strong> (provera da li sve konverzije prate pravilno) <br />
           <strong>2. Competitor analysis</strong> (Google Auction Insights — ko se pojavio/nestao) <br />
           <strong>3. Landing page optimization</strong> (A/B testiranje različitih verzija) <br />
@@ -743,7 +743,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Koliko često treba optimizovati Google Ads naloge?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Za mali nalog (do €1000/mesec): nedeljno 1-2 sata optimizacije je dovoljno. Za veće naloge
               (€5000+/mesec): preporučujem dnevni check (15 min) + dublja nedeljne optimizacija (2-3 sata).
@@ -757,7 +757,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Koja je najvažnija optimizacija ako imam samo 1 sat nedeljno?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               <strong>Search Terms Report review</strong> (taktika #6). Ovo je aktivnost sa najvišim ROI —
               eliminišete nerentabilne klikove i otkrivate nove profitable keywords. 80% optimizacije koje
@@ -771,7 +771,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Da li treba pauzirati kampanje noću ili vikendom?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Zavisi od industrije. <strong>B2B kampanje:</strong> često je pametno sniziti bidove za 50-70%
               vikendom jer decision makers ne rade. <strong>eCommerce:</strong> vikendi su često best performing
@@ -786,7 +786,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Kako znam da li moje optimizacije rade?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Pratite 3 metrike mesec-na-mesec: <strong>1) CPA ili ROAS</strong> (efficiency), <strong>2) Conversion
               volume</strong> (scale), <strong>3) Impression Share</strong> (coverage). Ako CPA pada ali i konverzije
@@ -801,7 +801,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Koliko košta profesionalna Google Ads optimizacija?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Freelance consultants naplaćuju €200-600/mesec za redovnu optimizaciju (u zavisnosti od obima naloga).
               Agencije 10-20% ad spend-a. DIY pristup košta vreme — realno 5-10 sati mesečno ako učite, ili 2-3 sata
@@ -816,7 +816,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Mogu li automatizovati optimizaciju pomoću pravila (Automated Rules)?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Da, ali oprezno. Automated Rules su odlični za repetitivne zadatke: pauziranje keywords sa CPA &gt;€100
               i 0 konverzija u poslednjih 30 dana, povećanje budžeta za kampanje sa &gt;90% impression share, itd.
@@ -927,7 +927,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Koliko često treba optimizovati Google Ads kampanje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Dnevno: provera budžeta i alert-a. Nedeljno: bid adjustments, search terms review, negativne ključne reči. Mesečno: A/B testovi oglasa, strukturalne promene, strategija. Preterana optimizacija (svaki dan menjanje bid-ova) može biti kontraproduktivna.
           </div>
         </details>
@@ -937,7 +937,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Šta je najvažnija optimizacija za Google Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Conversion tracking. Bez tačnog tracking-a, sve ostale optimizacije su naslepo. Posle toga: negativne ključne reči (sprečavaju bacanje budžeta), Quality Score (smanjuje CPC), i bid strategija (kontroliše gde se troši).
           </div>
         </details>
@@ -947,7 +947,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Da li Google Ads automatske preporuke treba prihvatiti?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ne sve. Google optimizuje za svoj prihod, ne nužno za vaš ROI. Preporuke za broad match, budget povećanje i auto-apply promene obično nisu u vašem interesu. Prihvatajte samo one koje imaju smisla za vaše ciljeve.
           </div>
         </details>
@@ -957,7 +957,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Kako poboljšati ROAS u Google Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Fokusirajte se na: 1) Negativne ključne reči (eliminišite neproduktivne pretrage), 2) Bid strategiju po uređaju/lokaciji/vremenu, 3) Landing page optimizaciju, 4) Segmentaciju kampanja po profitabilnosti proizvoda, 5) Remarketing za postojeće posetioce.
           </div>
         </details>
@@ -967,7 +967,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Zašto mi Quality Score opada?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Najčešći razlozi: landing page se sporije učitava, konkurenti su poboljšali svoje oglase, CTR je pao (morate osvežiti copy), ili je relevantnost opala (ključne reči ne odgovaraju oglas → LP putanji). Proverite svaku komponentu pojedinačno.
           </div>
         </details>
@@ -977,7 +977,7 @@ export default function GoogleAdsOptimizacijaPost() {
             Da li su AdWords i Google Ads ista stvar?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, potpuno ista. AdWords je bio originalni naziv Google-ove oglašivačke platforme od 2000. do 2018. godine, kada je Google izvršio rebrand u <strong>Google Ads</strong>. Sve što se nekada zvalo „AdWords optimizacija" danas se zove „Google Ads optimizacija" — ista platforma, iste taktike, isti ROAS principi. Starije agencije i marketing profesionalci još uvek ponekad koriste termin AdWords iz navike, posebno u B2B i enterprise okruženju.
           </div>
         </details>

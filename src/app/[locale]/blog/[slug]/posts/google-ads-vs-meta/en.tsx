@@ -54,14 +54,14 @@ export default function GoogleAdsVsMetaAdsEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#core-difference-intent-vs-interest" className="text-sm text-gray-700 hover:text-primary underline">Core difference — intent vs interest</a></li>
-          <li><a href="#comparison-by-key-criteria" className="text-sm text-gray-700 hover:text-primary underline">Comparison by key criteria</a></li>
-          <li><a href="#when-google-ads-is-the-better-choice" className="text-sm text-gray-700 hover:text-primary underline">When Google Ads is the better choice</a></li>
-          <li><a href="#when-meta-ads-is-the-better-choice" className="text-sm text-gray-700 hover:text-primary underline">When Meta Ads is the better choice</a></li>
-          <li><a href="#combined-strategy-best-approach" className="text-sm text-gray-700 hover:text-primary underline">Combined strategy — best approach</a></li>
-          <li><a href="#budget-and-allocation" className="text-sm text-gray-700 hover:text-primary underline">Budget and allocation</a></li>
-          <li><a href="#measurement-and-attribution" className="text-sm text-gray-700 hover:text-primary underline">Measurement and attribution</a></li>
-          <li><a href="#frequently-asked-questions" className="text-sm text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#core-difference-intent-vs-interest" className="block py-1 text-base text-gray-700 hover:text-primary underline">Core difference — intent vs interest</a></li>
+          <li><a href="#comparison-by-key-criteria" className="block py-1 text-base text-gray-700 hover:text-primary underline">Comparison by key criteria</a></li>
+          <li><a href="#when-google-ads-is-the-better-choice" className="block py-1 text-base text-gray-700 hover:text-primary underline">When Google Ads is the better choice</a></li>
+          <li><a href="#when-meta-ads-is-the-better-choice" className="block py-1 text-base text-gray-700 hover:text-primary underline">When Meta Ads is the better choice</a></li>
+          <li><a href="#combined-strategy-best-approach" className="block py-1 text-base text-gray-700 hover:text-primary underline">Combined strategy — best approach</a></li>
+          <li><a href="#budget-and-allocation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Budget and allocation</a></li>
+          <li><a href="#measurement-and-attribution" className="block py-1 text-base text-gray-700 hover:text-primary underline">Measurement and attribution</a></li>
+          <li><a href="#frequently-asked-questions" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
         </ol>
       </nav>
 
@@ -91,7 +91,7 @@ export default function GoogleAdsVsMetaAdsEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">From my experience</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Over 80% of my clients who use both platforms see best results.
           Google brings conversions with higher intent, Meta fills the funnel and reduces CPA
           through remarketing. I recommend combined approach whenever possible.
@@ -107,51 +107,51 @@ export default function GoogleAdsVsMetaAdsEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Criteria</th>
-              <th className="py-3 px-4 font-heading font-semibold">Google Ads</th>
-              <th className="py-3 px-4 font-heading font-semibold">Meta Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Criteria</th>
+              <th className="py-3 px-3 font-heading font-semibold">Google Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Meta Ads</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Targeting approach</td>
-              <td className="py-3 px-4">Keywords &amp; intent</td>
-              <td className="py-3 px-4">Interests &amp; behaviors</td>
+              <td className="py-3 px-3 font-medium">Targeting approach</td>
+              <td className="py-3 px-3">Keywords &amp; intent</td>
+              <td className="py-3 px-3">Interests &amp; behaviors</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">User mindset</td>
-              <td className="py-3 px-4">&quot;Actively searching solution&quot;</td>
-              <td className="py-3 px-4">&quot;Scrolling for entertainment&quot;</td>
+              <td className="py-3 px-3 font-medium">User mindset</td>
+              <td className="py-3 px-3">&quot;Actively searching solution&quot;</td>
+              <td className="py-3 px-3">&quot;Scrolling for entertainment&quot;</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Ad format</td>
-              <td className="py-3 px-4">Text, Shopping, Responsive</td>
-              <td className="py-3 px-4">Images, Video, Carousel, Stories</td>
+              <td className="py-3 px-3 font-medium">Ad format</td>
+              <td className="py-3 px-3">Text, Shopping, Responsive</td>
+              <td className="py-3 px-3">Images, Video, Carousel, Stories</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Average CPC (US/UK)</td>
-              <td className="py-3 px-4">$0.50 - $3.00</td>
-              <td className="py-3 px-4">$0.10 - $1.00</td>
+              <td className="py-3 px-3 font-medium">Average CPC (US/UK)</td>
+              <td className="py-3 px-3">$0.50 - $3.00</td>
+              <td className="py-3 px-3">$0.10 - $1.00</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Conversion rate</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">Higher (2-8%)</td>
-              <td className="py-3 px-4">Lower (0.5-4%)</td>
+              <td className="py-3 px-3 font-medium">Conversion rate</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Higher (2-8%)</td>
+              <td className="py-3 px-3">Lower (0.5-4%)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Attribution window</td>
-              <td className="py-3 px-4">Short (1-2 touches)</td>
-              <td className="py-3 px-4">Longer (3-7+ touches)</td>
+              <td className="py-3 px-3 font-medium">Attribution window</td>
+              <td className="py-3 px-3">Short (1-2 touches)</td>
+              <td className="py-3 px-3">Longer (3-7+ touches)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Best for</td>
-              <td className="py-3 px-4">Closing sales, lead gen</td>
-              <td className="py-3 px-4">Brand awareness, filling funnel</td>
+              <td className="py-3 px-3 font-medium">Best for</td>
+              <td className="py-3 px-3">Closing sales, lead gen</td>
+              <td className="py-3 px-3">Brand awareness, filling funnel</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Learning curve</td>
-              <td className="py-3 px-4">Medium (keyword research)</td>
-              <td className="py-3 px-4">Higher (creative &amp; targeting)</td>
+              <td className="py-3 px-3 font-medium">Learning curve</td>
+              <td className="py-3 px-3">Medium (keyword research)</td>
+              <td className="py-3 px-3">Higher (creative &amp; targeting)</td>
             </tr>
           </tbody>
         </table>
@@ -159,7 +159,7 @@ export default function GoogleAdsVsMetaAdsEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Lower CPC on Meta doesn&apos;t automatically mean better ROI. Because of lower intent,
           you might need 5x more clicks for the same conversion. Focus on
           CPA and ROAS, not just cost per click.
@@ -176,7 +176,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">High-intent products</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           When people actively search for your product or service, <a href="https://support.google.com/google-ads/" target="_blank" rel="noopener noreferrer" className="underline">Google Ads</a>
           captures that demand at the right moment. Ideal for industries where
           search is the first step towards purchase.
@@ -193,7 +193,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Local businesses</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Local searches (&quot;near me&quot;, &quot;in Boston&quot;) have
           extremely high intent and conversion rate. Google Maps integration and Local
           Service Ads give additional advantage.
@@ -211,7 +211,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">B2B with specific solution</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Decision makers first search Google when looking for business solutions.
           If someone searches &quot;ERP for manufacturing&quot;, they have budget and a problem
           to solve — that&apos;s your opportunity.
@@ -229,7 +229,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce with clear demand</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           If you sell standard products people search by name,
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">Google Shopping</Link> campaigns
           often deliver best ROAS. Search shows intent, Shopping shows product.
@@ -252,7 +252,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Brand awareness &amp; new products</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           When people don&apos;t know your product exists or need it, there&apos;s nothing
           to search on Google. <a href="https://www.facebook.com/business/help" target="_blank" rel="noopener noreferrer" className="underline">Meta Ads</a> lets you create demand
           by showing ads to the right audience based on interests.
@@ -270,7 +270,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Visually attractive products</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Products that &quot;sell themselves&quot; when seen work
           excellently on Instagram and Facebook. Meta format enables storytelling,
           lifestyle presentation, and emotional connection.
@@ -288,7 +288,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Impulse purchase categories</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Products people buy quickly, without long consideration,
           work excellently on Meta platforms. Scrolling feed, sees something,
           likes it — buys. Lower price = less resistance.
@@ -306,7 +306,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Building audiences &amp; lookalikes</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Meta enables sophisticated audience building strategy —
           you collect email lists, build custom audiences from visitors,
           create lookalike audiences of similar buyers. This approach is
@@ -372,7 +372,7 @@ export default function GoogleAdsVsMetaAdsEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Key principle</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Meta fills the funnel, Google closes it. Use Meta to introduce people
           to your brand, Google to capture those ready to buy.
           I recommend this approach for most businesses with $1,500+/month budget.
@@ -384,48 +384,48 @@ export default function GoogleAdsVsMetaAdsEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Business type</th>
-              <th className="py-3 px-4 font-heading font-semibold">Google Ads</th>
-              <th className="py-3 px-4 font-heading font-semibold">Meta Ads</th>
-              <th className="py-3 px-4 font-heading font-semibold">Reason</th>
+              <th className="py-3 px-3 font-heading font-semibold">Business type</th>
+              <th className="py-3 px-3 font-heading font-semibold">Google Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Meta Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Reason</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce (known products)</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">60-70%</td>
-              <td className="py-3 px-4">30-40%</td>
-              <td className="py-3 px-4">High demand, Shopping dominates</td>
+              <td className="py-3 px-3 font-medium">eCommerce (known products)</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">60-70%</td>
+              <td className="py-3 px-3">30-40%</td>
+              <td className="py-3 px-3">High demand, Shopping dominates</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">eCommerce (new brand)</td>
-              <td className="py-3 px-4">30-40%</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">60-70%</td>
-              <td className="py-3 px-4">Need to build awareness</td>
+              <td className="py-3 px-3 font-medium">eCommerce (new brand)</td>
+              <td className="py-3 px-3">30-40%</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">60-70%</td>
+              <td className="py-3 px-3">Need to build awareness</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">B2B Lead Gen</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">70-80%</td>
-              <td className="py-3 px-4">20-30%</td>
-              <td className="py-3 px-4">Search = active intent</td>
+              <td className="py-3 px-3 font-medium">B2B Lead Gen</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">70-80%</td>
+              <td className="py-3 px-3">20-30%</td>
+              <td className="py-3 px-3">Search = active intent</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Local business</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">60-80%</td>
-              <td className="py-3 px-4">20-40%</td>
-              <td className="py-3 px-4">Local searches have high intent</td>
+              <td className="py-3 px-3 font-medium">Local business</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">60-80%</td>
+              <td className="py-3 px-3">20-40%</td>
+              <td className="py-3 px-3">Local searches have high intent</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">SaaS</td>
-              <td className="py-3 px-4">50-60%</td>
-              <td className="py-3 px-4">40-50%</td>
-              <td className="py-3 px-4">Balance: search + retargeting</td>
+              <td className="py-3 px-3 font-medium">SaaS</td>
+              <td className="py-3 px-3">50-60%</td>
+              <td className="py-3 px-3">40-50%</td>
+              <td className="py-3 px-3">Balance: search + retargeting</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">D2C Brand</td>
-              <td className="py-3 px-4">40-50%</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">50-60%</td>
-              <td className="py-3 px-4">Storytelling &amp; visual identity</td>
+              <td className="py-3 px-3 font-medium">D2C Brand</td>
+              <td className="py-3 px-3">40-50%</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">50-60%</td>
+              <td className="py-3 px-3">Storytelling &amp; visual identity</td>
             </tr>
           </tbody>
         </table>
@@ -446,7 +446,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Google Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">$1,000-1,500/month</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Minimum for meaningful testing of Search + Shopping campaigns.
             Below this, it&apos;s hard to gather enough data for optimization.
             For competitive industries, you need more.
@@ -455,7 +455,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Meta Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">$500-800/month</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Minimum for testing different creatives and audiences.
             CPM is lower, but takes time for algorithm to learn.
             For serious scaling, plan $1,500+.
@@ -465,7 +465,7 @@ export default function GoogleAdsVsMetaAdsEN() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Golden rule for starting</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Don&apos;t start both platforms simultaneously if this is your first campaign.
           Start with the one that has bigger potential for your business (usually Google
           if demand exists), collect data for 60-90 days, then
@@ -489,31 +489,31 @@ export default function GoogleAdsVsMetaAdsEN() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspect</th>
-              <th className="py-3 px-4 font-heading font-semibold">Google Ads</th>
-              <th className="py-3 px-4 font-heading font-semibold">Meta Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspect</th>
+              <th className="py-3 px-3 font-heading font-semibold">Google Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Meta Ads</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Default attribution window</td>
-              <td className="py-3 px-4">30 days (click), 1 day (view)</td>
-              <td className="py-3 px-4">7 days (click), 1 day (view)</td>
+              <td className="py-3 px-3 font-medium">Default attribution window</td>
+              <td className="py-3 px-3">30 days (click), 1 day (view)</td>
+              <td className="py-3 px-3">7 days (click), 1 day (view)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Attribution model</td>
-              <td className="py-3 px-4">Data-driven (default)</td>
-              <td className="py-3 px-4">Last-click (default)</td>
+              <td className="py-3 px-3 font-medium">Attribution model</td>
+              <td className="py-3 px-3">Data-driven (default)</td>
+              <td className="py-3 px-3">Last-click (default)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Cross-device tracking</td>
-              <td className="py-3 px-4">Yes (Google login)</td>
-              <td className="py-3 px-4">Limited (iOS 14+ issue)</td>
+              <td className="py-3 px-3 font-medium">Cross-device tracking</td>
+              <td className="py-3 px-3">Yes (Google login)</td>
+              <td className="py-3 px-3">Limited (iOS 14+ issue)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">View-through conversions</td>
-              <td className="py-3 px-4">1 day (Display)</td>
-              <td className="py-3 px-4">1 day</td>
+              <td className="py-3 px-3 font-medium">View-through conversions</td>
+              <td className="py-3 px-3">1 day (Display)</td>
+              <td className="py-3 px-3">1 day</td>
             </tr>
           </tbody>
         </table>
@@ -521,7 +521,7 @@ export default function GoogleAdsVsMetaAdsEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Attribution in multi-platform world</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           User sees your ad on Instagram, doesn&apos;t click. Next week
           searches Google, clicks ad, buys. Who gets credit? Google says Google,
           Meta says Meta (view-through). Truth is somewhere in between. Use <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">Google Analytics 4</Link> or
@@ -564,7 +564,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             Which channel is better for beginners?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google Search is usually easier to measure direct ROI because users
             have high intent. Meta requires strong creative and deeper understanding
             of audience. But depends on your business — if you sell visually attractive
@@ -578,7 +578,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             How much budget for testing both platforms?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum $1,500-2,500 total ($1,000+ Google, $500+ Meta) for 60-90 days
             to get meaningful data for decision-making. Below this, results
             are often statistically meaningless. If your budget is smaller, start with
@@ -591,7 +591,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             Do I need agency that runs both platforms?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ideally yes, because strategy should be coordinated — Meta fills funnel,
             Google closes sales, remarketing overlaps. But specialized
             freelancers or smaller agencies for each channel can be better at execution
@@ -606,7 +606,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             What if my product isn&apos;t visual — does Meta make sense?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Meta can still work through UGC content, testimonials, before/after
             comparison, or storytelling videos. B2B SaaS and technical products successfully
             use Meta for thought leadership and webinar promotion. But realistically,
@@ -619,7 +619,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             How to measure cross-channel impact?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Without independent tracking system, it&apos;s difficult. Google Analytics 4 is good
             start (Advertising → Attribution → Conversion paths), but has limitations.
             For serious multi-platform advertising, consider dedicated attribution
@@ -633,7 +633,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             Do Facebook Ads still work after iOS 14 update?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Yes, but not the same as before. iOS 14+ reduced tracking capabilities,
             making attribution and targeting harder. But Meta still works — just
             requires different approach (Conversions API, server-side tracking, broader
@@ -650,7 +650,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Not sure which platform is right for your business?
         </p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           I analyze your industry, budget, and goals, and recommend optimal
           strategy — Google, Meta, or combination. Free consultation, no obligation.
         </p>

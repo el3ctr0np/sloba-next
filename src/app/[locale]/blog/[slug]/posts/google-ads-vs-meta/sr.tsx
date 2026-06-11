@@ -54,14 +54,14 @@ export default function GoogleAdsVsMetaAdsPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#osnovna-razlika-namera-vs-interesovanje" className="text-sm text-gray-700 hover:text-primary underline">Osnovna razlika — namera vs interesovanje</a></li>
-          <li><a href="#poreenje-po-kljucnim-kriterijumima" className="text-sm text-gray-700 hover:text-primary underline">Poređenje po ključnim kriterijumima</a></li>
-          <li><a href="#kada-je-google-ads-bolji-izbor" className="text-sm text-gray-700 hover:text-primary underline">Kada je Google Ads bolji izbor</a></li>
-          <li><a href="#kada-je-meta-ads-bolji-izbor" className="text-sm text-gray-700 hover:text-primary underline">Kada je Meta Ads bolji izbor</a></li>
-          <li><a href="#kombinovana-strategija-najbolji-pristup" className="text-sm text-gray-700 hover:text-primary underline">Kombinovana strategija — najbolji pristup</a></li>
-          <li><a href="#budzet-i-raspodela" className="text-sm text-gray-700 hover:text-primary underline">Budžet i raspodela</a></li>
-          <li><a href="#merenje-i-atribucija" className="text-sm text-gray-700 hover:text-primary underline">Merenje i atribucija</a></li>
-          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#osnovna-razlika-namera-vs-interesovanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Osnovna razlika — namera vs interesovanje</a></li>
+          <li><a href="#poreenje-po-kljucnim-kriterijumima" className="block py-1 text-base text-gray-700 hover:text-primary underline">Poređenje po ključnim kriterijumima</a></li>
+          <li><a href="#kada-je-google-ads-bolji-izbor" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kada je Google Ads bolji izbor</a></li>
+          <li><a href="#kada-je-meta-ads-bolji-izbor" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kada je Meta Ads bolji izbor</a></li>
+          <li><a href="#kombinovana-strategija-najbolji-pristup" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kombinovana strategija — najbolji pristup</a></li>
+          <li><a href="#budzet-i-raspodela" className="block py-1 text-base text-gray-700 hover:text-primary underline">Budžet i raspodela</a></li>
+          <li><a href="#merenje-i-atribucija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Merenje i atribucija</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
         </ol>
       </nav>
 
@@ -91,7 +91,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Preko 80% mojih klijenata koji koriste obe platforme vide najbolje rezultate.
           Google donosi konverzije sa višim intent-om, Meta puni levak i smanjuje CPA
           kroz remarketing. Preporučujem kombinovani pristup kad god je to moguće.
@@ -107,51 +107,51 @@ export default function GoogleAdsVsMetaAdsPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Kriterijum</th>
-              <th className="py-3 px-4 font-heading font-semibold">Google Ads</th>
-              <th className="py-3 px-4 font-heading font-semibold">Meta Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Kriterijum</th>
+              <th className="py-3 px-3 font-heading font-semibold">Google Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Meta Ads</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Targeting pristup</td>
-              <td className="py-3 px-4">Ključne reči &amp; namera</td>
-              <td className="py-3 px-4">Interesovanja &amp; ponašanja</td>
+              <td className="py-3 px-3 font-medium">Targeting pristup</td>
+              <td className="py-3 px-3">Ključne reči &amp; namera</td>
+              <td className="py-3 px-3">Interesovanja &amp; ponašanja</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">User mindset</td>
-              <td className="py-3 px-4">&quot;Aktivno tražim rešenje&quot;</td>
-              <td className="py-3 px-4">&quot;Scrolla za zabavu&quot;</td>
+              <td className="py-3 px-3 font-medium">User mindset</td>
+              <td className="py-3 px-3">&quot;Aktivno tražim rešenje&quot;</td>
+              <td className="py-3 px-3">&quot;Scrolla za zabavu&quot;</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Ad format</td>
-              <td className="py-3 px-4">Tekst, Shopping, Responsive</td>
-              <td className="py-3 px-4">Slike, Video, Carousel, Stories</td>
+              <td className="py-3 px-3 font-medium">Ad format</td>
+              <td className="py-3 px-3">Tekst, Shopping, Responsive</td>
+              <td className="py-3 px-3">Slike, Video, Carousel, Stories</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Prosečan CPC (Srbija)</td>
-              <td className="py-3 px-4">€0.20 - €1.50</td>
-              <td className="py-3 px-4">€0.05 - €0.50</td>
+              <td className="py-3 px-3 font-medium">Prosečan CPC (Srbija)</td>
+              <td className="py-3 px-3">€0.20 - €1.50</td>
+              <td className="py-3 px-3">€0.05 - €0.50</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Conversion rate</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">Viši (2-8%)</td>
-              <td className="py-3 px-4">Niži (0.5-4%)</td>
+              <td className="py-3 px-3 font-medium">Conversion rate</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Viši (2-8%)</td>
+              <td className="py-3 px-3">Niži (0.5-4%)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Attribution window</td>
-              <td className="py-3 px-4">Kratak (1-2 dodira)</td>
-              <td className="py-3 px-4">Duži (3-7+ dodira)</td>
+              <td className="py-3 px-3 font-medium">Attribution window</td>
+              <td className="py-3 px-3">Kratak (1-2 dodira)</td>
+              <td className="py-3 px-3">Duži (3-7+ dodira)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Najbolje za</td>
-              <td className="py-3 px-4">Zatvaranje prodaja, lead gen</td>
-              <td className="py-3 px-4">Brand awareness, punjenje levka</td>
+              <td className="py-3 px-3 font-medium">Najbolje za</td>
+              <td className="py-3 px-3">Zatvaranje prodaja, lead gen</td>
+              <td className="py-3 px-3">Brand awareness, punjenje levka</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Learning curve</td>
-              <td className="py-3 px-4">Srednji (keyword research)</td>
-              <td className="py-3 px-4">Viši (kreativa &amp; targeting)</td>
+              <td className="py-3 px-3 font-medium">Learning curve</td>
+              <td className="py-3 px-3">Srednji (keyword research)</td>
+              <td className="py-3 px-3">Viši (kreativa &amp; targeting)</td>
             </tr>
           </tbody>
         </table>
@@ -159,7 +159,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Niži CPC na Meta ne znači automatski bolji ROI. Zbog nižeg intenta,
           možda vam treba 5x više klikova za istu konverziju. Fokusirajte se na
           CPA i ROAS, ne samo na cenu klika.
@@ -176,7 +176,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Proizvodi sa visokim intent-om</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Kada ljudi aktivno pretražuju vaš proizvod ili uslugu, <a href="https://support.google.com/google-ads/" target="_blank" rel="noopener noreferrer" className="underline">Google Ads</a>
           hvata tu potražnju u pravom trenutku. Idealno za industrije gde je
           pretraga prvi korak ka kupovini.
@@ -193,7 +193,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Lokalni biznisi</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Lokalne pretrage (&quot;blizu mene&quot;, &quot;u Beogradu&quot;) imaju
           izuzetno visok intent i conversion rate. Google Maps integracija i Local
           Service Ads daju dodatnu prednost.
@@ -211,7 +211,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">B2B sa specifičnim rešenjem</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Decision makeri prvo pretražuju Google kada traže biznis rešenja.
           Ako neko traži &quot;ERP za proizvodnju&quot;, ima budžet i ima problem
           koji mora rešiti — to je vaša prilika.
@@ -229,7 +229,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce sa jasnom potražnjom</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ako prodajete standardne proizvode koje ljudi traže po imenu,
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">Google Shopping</Link> kampanje
           često donose najbolji ROAS. Pretraga pokazuje nameru, Shopping pokazuje proizvod.
@@ -252,7 +252,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Brand awareness &amp; novi proizvodi</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Kada ljudi ne znaju da vaš proizvod postoji ili da im treba, nema
           šta da pretražuju na Google-u. <a href="https://www.facebook.com/business/help" target="_blank" rel="noopener noreferrer" className="underline">Meta Ads</a> vam omogućava da stvorite potražnju
           prikazivanjem oglasa pravoj publici na osnovu interesovanja.
@@ -270,7 +270,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Vizuelno privlačni proizvodi</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Proizvodi koji &quot;prodaju sami sebe&quot; kada ih vide funkcionišu
           odlično na Instagramu i Facebooku. Meta format omogućava storytelling,
           lifestyle prezentaciju i emocionalnu konekciju.
@@ -288,7 +288,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Impulse purchase kategorije</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Proizvodi koje ljudi kupuju brzo, bez dugog razmišljanja,
           odlično funkcionišu na Meta platformama. Feed scrolla, vidi nešto,
           dopada mu se — kupi. Niža cena = manji otpor.
@@ -306,7 +306,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Izgradnja publike &amp; lookalikes</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Meta omogućava sofisticiranu audience building strategiju —
           skupljate email liste, gradite custom audiences od posetilaca,
           pravite lookalike audiences sličnih kupaca. Ovaj pristup je
@@ -372,7 +372,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Ključni princip</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Meta puni levak, Google ga zatvara. Koristite Meta za upoznavanje ljudi
           sa vašim brendom, Google za hvatanje onih koji su spremni kupiti.
           Preporučujem ovaj pristup za većinu biznisa sa budžetom €1,000+/mesec.
@@ -384,48 +384,48 @@ export default function GoogleAdsVsMetaAdsPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Tip biznisa</th>
-              <th className="py-3 px-4 font-heading font-semibold">Google Ads</th>
-              <th className="py-3 px-4 font-heading font-semibold">Meta Ads</th>
-              <th className="py-3 px-4 font-heading font-semibold">Razlog</th>
+              <th className="py-3 px-3 font-heading font-semibold">Tip biznisa</th>
+              <th className="py-3 px-3 font-heading font-semibold">Google Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Meta Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Razlog</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">eCommerce (poznati proizvodi)</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">60-70%</td>
-              <td className="py-3 px-4">30-40%</td>
-              <td className="py-3 px-4">Visoka potražnja, Shopping dominira</td>
+              <td className="py-3 px-3 font-medium">eCommerce (poznati proizvodi)</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">60-70%</td>
+              <td className="py-3 px-3">30-40%</td>
+              <td className="py-3 px-3">Visoka potražnja, Shopping dominira</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">eCommerce (novi brend)</td>
-              <td className="py-3 px-4">30-40%</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">60-70%</td>
-              <td className="py-3 px-4">Treba graditi awareness</td>
+              <td className="py-3 px-3 font-medium">eCommerce (novi brend)</td>
+              <td className="py-3 px-3">30-40%</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">60-70%</td>
+              <td className="py-3 px-3">Treba graditi awareness</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">B2B Lead Gen</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">70-80%</td>
-              <td className="py-3 px-4">20-30%</td>
-              <td className="py-3 px-4">Pretraga = aktivna namera</td>
+              <td className="py-3 px-3 font-medium">B2B Lead Gen</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">70-80%</td>
+              <td className="py-3 px-3">20-30%</td>
+              <td className="py-3 px-3">Pretraga = aktivna namera</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Lokalni biznis</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">60-80%</td>
-              <td className="py-3 px-4">20-40%</td>
-              <td className="py-3 px-4">Lokalne pretrage imaju visok intent</td>
+              <td className="py-3 px-3 font-medium">Lokalni biznis</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">60-80%</td>
+              <td className="py-3 px-3">20-40%</td>
+              <td className="py-3 px-3">Lokalne pretrage imaju visok intent</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">SaaS</td>
-              <td className="py-3 px-4">50-60%</td>
-              <td className="py-3 px-4">40-50%</td>
-              <td className="py-3 px-4">Balans: pretraga + retargeting</td>
+              <td className="py-3 px-3 font-medium">SaaS</td>
+              <td className="py-3 px-3">50-60%</td>
+              <td className="py-3 px-3">40-50%</td>
+              <td className="py-3 px-3">Balans: pretraga + retargeting</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">D2C Brend</td>
-              <td className="py-3 px-4">40-50%</td>
-              <td className="py-3 px-4 text-green-700 font-semibold">50-60%</td>
-              <td className="py-3 px-4">Storytelling &amp; visual identity</td>
+              <td className="py-3 px-3 font-medium">D2C Brend</td>
+              <td className="py-3 px-3">40-50%</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">50-60%</td>
+              <td className="py-3 px-3">Storytelling &amp; visual identity</td>
             </tr>
           </tbody>
         </table>
@@ -446,7 +446,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Google Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">€500-1,000/mesečno</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Minimum za smisleno testiranje Search + Shopping kampanja.
             Ispod ovoga, teško je skupiti dovoljno podataka za optimizaciju.
             Za konkurentne industrije, potrebno je više.
@@ -455,7 +455,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Meta Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">€300-500/mesečno</h3>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Minimum za testiranje različitih kreativa i audiences.
             CPM je niži, ali treba vremena da algoritam nauči.
             Za ozbiljan scaling, planirajte €1,000+.
@@ -465,7 +465,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Zlatno pravilo startovanja</p>
-        <p className="text-sm text-yellow-900 mb-0">
+        <p className="text-base text-yellow-900 mb-0">
           Ne startujte obe platforme istovremeno ako vam je ovo prva kampanja.
           Startujte sa onom koja ima veći potencijal za vaš biznis (obično Google
           ako postoji potražnja), prikupite podatke 60-90 dana, pa tek onda
@@ -489,31 +489,31 @@ export default function GoogleAdsVsMetaAdsPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
-              <th className="py-3 px-4 font-heading font-semibold">Google Ads</th>
-              <th className="py-3 px-4 font-heading font-semibold">Meta Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-3 font-heading font-semibold">Google Ads</th>
+              <th className="py-3 px-3 font-heading font-semibold">Meta Ads</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Default attribution window</td>
-              <td className="py-3 px-4">30 dana (klik), 1 dan (view)</td>
-              <td className="py-3 px-4">7 dana (klik), 1 dan (view)</td>
+              <td className="py-3 px-3 font-medium">Default attribution window</td>
+              <td className="py-3 px-3">30 dana (klik), 1 dan (view)</td>
+              <td className="py-3 px-3">7 dana (klik), 1 dan (view)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Attribution model</td>
-              <td className="py-3 px-4">Data-driven (default)</td>
-              <td className="py-3 px-4">Last-click (default)</td>
+              <td className="py-3 px-3 font-medium">Attribution model</td>
+              <td className="py-3 px-3">Data-driven (default)</td>
+              <td className="py-3 px-3">Last-click (default)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Cross-device tracking</td>
-              <td className="py-3 px-4">Da (Google login)</td>
-              <td className="py-3 px-4">Ograničeno (iOS 14+ problem)</td>
+              <td className="py-3 px-3 font-medium">Cross-device tracking</td>
+              <td className="py-3 px-3">Da (Google login)</td>
+              <td className="py-3 px-3">Ograničeno (iOS 14+ problem)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">View-through conversions</td>
-              <td className="py-3 px-4">1 dan (Display)</td>
-              <td className="py-3 px-4">1 dan</td>
+              <td className="py-3 px-3 font-medium">View-through conversions</td>
+              <td className="py-3 px-3">1 dan (Display)</td>
+              <td className="py-3 px-3">1 dan</td>
             </tr>
           </tbody>
         </table>
@@ -521,7 +521,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Atribucija u multi-platform svetu</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Korisnik vidi vaš oglas na Instagramu, ne klikne. Sledeće nedelje
           pretražuje Google, klikne na oglas, kupi. Ko dobija credit? Google kaže Google,
           Meta kaže Meta (view-through). Istina je negde između. Koristite <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">Google Analytics 4</Link> ili
@@ -564,7 +564,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Koji kanal je bolji za početnike?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google Search je obično lakši za merenje direktnog ROI-a jer korisnici
             imaju visoku nameru. Meta zahteva jaku kreativu i dublje razumevanje
             audience-a. Ali zavisi od vašeg biznisa — ako prodajete vizuelno privlačne
@@ -578,7 +578,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Koliki budžet treba za testiranje obe platforme?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Minimum €800-1,500 ukupno (€500+ Google, €300+ Meta) za 60-90 dana
             da biste dobili smislene podatke za odlučivanje. Ispod ovoga, rezultati
             su često statistički besmisleni. Ako vam je budžet manji, startujte sa
@@ -591,7 +591,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Da li mi treba agencija koja radi obe platforme?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Idealno da, jer strategija treba biti koordinisana — Meta puni levak,
             Google zatvara prodaje, remarketing se overlap-uje. Ali specijalizovani
             freelanceri ili manje agencije za svaki kanal mogu biti bolji u egzekuciji
@@ -606,7 +606,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Šta ako moj proizvod nije vizuelan — da li Meta ima smisla?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Meta i dalje može raditi kroz UGC content, testimonijale, before/after
             comparison, ili storytelling videe. B2B SaaS i tehnički proizvodi uspešno
             koriste Meta za thought leadership i webinar promocije. Ali realno,
@@ -619,7 +619,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Kako merim cross-channel uticaj?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Bez nezavisnog tracking sistema, teško je. Google Analytics 4 je dobar
             početak (Advertising → Attribution → Conversion paths), ali ima ograničenja.
             Za ozbiljno multi-platform oglašavanje, razmotrite dedicated attribution
@@ -633,7 +633,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Da li Facebook Ads još uvek rade posle iOS 14 update-a?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, ali nisu isti kao pre. iOS 14+ je smanjio tracking mogućnosti,
             što otežava atribuciju i targetiranje. Ali Meta i dalje radi — samo
             zahteva drugačiji pristup (Conversions API, server-side tracking, širi
@@ -650,7 +650,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Niste sigurni koja platforma je prava za vaš biznis?
         </p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           Analiziram vašu industriju, budžet i ciljeve, i preporučujem optimalnu
           strategiju — Google, Meta, ili kombinaciju. Besplatna konsultacija, bez obaveze.
         </p>

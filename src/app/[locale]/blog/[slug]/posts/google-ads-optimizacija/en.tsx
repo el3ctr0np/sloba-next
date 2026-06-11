@@ -59,7 +59,7 @@ export default function GoogleAdsOptimizationEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Reality from practice</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           In January 2026 I took over an account where campaign ran 6 months without optimization. CPA was
           $85. After 4 weeks applying these tactics: CPA $42. Same budget, double the conversions.
         </p>
@@ -85,7 +85,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Separate Brand and Non-Brand campaigns</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Brand campaigns (your brand name) have 10x higher CTR and 3x lower CPC than non-brand campaigns.
           If you mix them in one campaign, statistics are confusing and you can't optimally allocate budget.
         </p>
@@ -101,7 +101,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Single Keyword Ad Groups (SKAGs) or thematic groups?</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Old school recommends SKAGs — each keyword in its own ad group for maximum relevance.
           New reality with RSA ads: thematic groups of 5-15 similar keywords give better AI optimization.
         </p>
@@ -117,7 +117,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Consistent naming convention</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           If you have 20+ campaigns, how quickly do you find what you're looking for? I recommend structure:
           [TYPE]_[CATEGORY]_[GEO]_[ADDITIONAL]. Example: SEARCH_Sofas_UK_Exact or PMAX_AllProducts_US_NewCustomers.
         </p>
@@ -133,7 +133,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Campaigns by customer journey stage</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           A user searching &quot;what is a CRM&quot; is not in the same stage as someone searching &quot;buy HubSpot
           alternative&quot;. Separate campaigns by stage: Awareness, Consideration, Decision.
         </p>
@@ -149,7 +149,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Daily budget vs shared budget</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Individual daily budgets per campaign give you control. Shared budgets automatically allocate
           where Google sees opportunity. In practice, a hybrid approach works best.
         </p>
@@ -174,7 +174,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Search Terms Report mining (weekly)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           This is most powerful tactic in this guide. Search Terms Report shows what people ACTUALLY
           search when seeing your ad. There you find gold (new converting keywords) and waste
           (terms that should be negative).
@@ -192,7 +192,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Negative keywords as foundation</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           People ask &quot;How to get more conversions?&quot; — better question is &quot;How to
           stop wasting money on bad clicks?&quot;. <GlossaryLink slug="negative-keywords">Negative keywords</GlossaryLink> are the answer.
         </p>
@@ -208,7 +208,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">8</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Match types strategy: 2026 reality</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Broad Match Modifier no longer exists (Google removed it 2021). Now you have: Broad, Phrase, Exact.
           But Exact match is no longer truly &quot;exact&quot; — close variants are enabled by default.
         </p>
@@ -221,7 +221,7 @@ export default function GoogleAdsOptimizationEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Broad Match with Manual CPC bidding is recipe for disaster. Broad Match with Target CPA and good
           conversion tracking history? That can be your best performing tactic. Context is everything.
         </p>
@@ -232,7 +232,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">9</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword consolidation (merge duplicates)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           A common scenario: the same keyword spread across 3 different ad groups, each with low impression
           share because budget and Quality Score are fragmented. The solution is consolidation.
         </p>
@@ -248,7 +248,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">10</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Long-tail strategy for niche industries</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           If you&apos;re in a niche industry or working with a small budget — long-tail keywords are your best
           friend. Yes, they have low search volume, but CPC is 3-5x lower and conversion rate is often higher.
         </p>
@@ -264,7 +264,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">11</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Seasonal keywords and scheduled campaigns</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           If you have seasonal products (e.g. &quot;ski gear&quot; vs &quot;surfboards&quot;), don&apos;t keep
           all keywords active year-round. You&apos;re wasting budget during the off-season.
         </p>
@@ -280,7 +280,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">12</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor keywords: yes or no?</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Bidding on competitor brand names (e.g. &quot;HubSpot alternative&quot;) can be powerful, but
           also expensive. My rule: test it only if you have clear differentiation and a landing page that
           explains why you&apos;re the better choice.
@@ -307,7 +307,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">13</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">RSA best practices: diversity is key</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Google allows 15 headlines and 4 descriptions in RSA ad. Most people write 15
           variations of same message. Mistake. Google needs diversity to optimally test combinations.
         </p>
@@ -324,7 +324,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">14</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Pin strategy: when to pin headlines in RSAs</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Pinning a headline or description to a specific position reduces the number of combinations
           Google can test — but it&apos;s sometimes necessary for brand compliance or message control.
         </p>
@@ -340,7 +340,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">15</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Extensions: use ALL relevant ones</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ad extensions (sitelinks, callouts, structured snippets, call, location...) increase CTR
           by 10-25% because your ad takes more space on SERP. And they're completely free.
         </p>
@@ -358,7 +358,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">16</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page alignment (message match)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           If your ad promises &quot;20% off sofas&quot;, and landing page has no mention of discount —
           you'll have high bounce rate and poor Quality Score. Message match is critical.
         </p>
@@ -374,7 +374,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">17</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Device-specific ad copy (mobile vs desktop)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Mobile traffic has different intent from desktop. Shorter attention span, more local searches,
           more call conversions. Optimise your ad copy for device if you see a performance gap.
         </p>
@@ -390,7 +390,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">18</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Emotional triggers in ad copy</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Ad copy that only describes features is forgettable. Ad copy that solves a problem or activates
           an emotion earns the click. FOMO, urgency, and benefit-driven copy consistently outperform
           feature-heavy descriptions.
@@ -417,7 +417,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">19</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Manual CPC vs Smart Bidding: when what?</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Google pushes Smart Bidding (<GlossaryLink slug="tcpa">Target CPA</GlossaryLink>, <GlossaryLink slug="troas">Target ROAS</GlossaryLink>, Maximize Conversions) as superior
           solution. In practice: depends on conversion volume. Below 30 conversions monthly, Smart Bidding
           doesn't have enough data to learn — Manual CPC with <GlossaryLink slug="bid-adjustments">bid adjustments</GlossaryLink> is better.
@@ -432,7 +432,7 @@ export default function GoogleAdsOptimizationEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Transition plan: Manual → Smart Bidding</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           Don't jump directly from Manual CPC to Target CPA. First switch to &quot;Maximize Conversions&quot;
           without target so algorithm learns. After 2 weeks, switch to Target CPA/ROAS with realistic
           goal (10% better than current average). For a complete walkthrough, see the{" "}
@@ -445,7 +445,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">20</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Target CPA/ROAS: how to set a realistic target</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Mistake #1: setting an overly aggressive target. If your current CPA is £50 and you set a
           target of £20, the campaign will barely get impressions because Google knows it can&apos;t
           achieve that target.
@@ -463,7 +463,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">21</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Portfolio bidding for multi-campaign management</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Portfolio bid strategies let you share a bid strategy across multiple campaigns. The benefit:
           the algorithm learns from aggregated conversion volume, which means faster optimisation.
         </p>
@@ -479,7 +479,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">22</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dayparting: when are your users most active?</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Dayparting (Ad Schedule) adjusts bids by day of week and hour of day. If your CPA on
           Monday morning is 50% better than Friday evening — why bid the same?
         </p>
@@ -496,7 +496,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">23</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Device bid adjustments (mobile/tablet/desktop)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           If your desktop CPA is £30 and mobile CPA is £60, there&apos;s no reason to bid the same on both.
           Device bid adjustments automatically increase or decrease your bid by device.
         </p>
@@ -523,7 +523,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">24</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">CTR optimization: fastest way to raise QS</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Expected CTR is largest Quality Score component. If your CTR rises, QS follows. How to increase CTR?
           Better ads (tactics #13-18), more relevant keywords, and ad extensions.
         </p>
@@ -539,7 +539,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">25</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad relevance signals: keyword → ad → landing page</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Google checks whether your ad contains the keyword (or a close variant), and whether the landing
           page also contains that keyword. The tighter this relevance chain, the higher your Ad Relevance score.
         </p>
@@ -555,7 +555,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">26</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page experience: speed and mobile-friendly</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Landing Page Experience component looks at load speed, mobile-friendliness, and content
           relevance. Most common problem: slow site. If load time &gt;3 seconds, you lose points.
         </p>
@@ -569,7 +569,7 @@ export default function GoogleAdsOptimizationEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Quality Score is historical metric — changes you make today won't immediately raise QS.
           Takes 1-2 weeks for Google to accumulate sufficient data. Be patient and consistent.
         </p>
@@ -580,7 +580,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">27</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Historical QS recovery: when to &quot;reset&quot; a keyword</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Sometimes a keyword has a history of poor performance (low CTR for a year), and despite your
           optimisations the QS stays low because the historical data is dragging it down. The solution is
           a reset.
@@ -606,7 +606,7 @@ export default function GoogleAdsOptimizationEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic 28</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Audience layering on Search campaigns</h3>
-          <p className="text-sm text-gray-600 mb-3">
+          <p className="text-base text-gray-600 mb-3">
             Audience layering means adding audience segments (remarketing lists, demographics, in-market)
             to Search campaigns as &quot;observation&quot; or with bid adjustments.
           </p>
@@ -620,7 +620,7 @@ export default function GoogleAdsOptimizationEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic 29</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Remarketing optimization</h3>
-          <p className="text-sm text-gray-600 mb-3">
+          <p className="text-base text-gray-600 mb-3">
             Remarketing campaigns have 2-3x higher CTR and 50-70% lower CPA than cold traffic — but only
             if you properly segment your audiences. Don&apos;t treat all site visitors the same.
           </p>
@@ -638,7 +638,7 @@ export default function GoogleAdsOptimizationEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">30</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Conversion Tracking audit (quarterly)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-base text-gray-600 mb-3">
           Biggest mistake I see: conversion tracking isn&apos;t set up properly, or it&apos;s tracking the
           wrong actions. If the algorithm learns on bad data, all optimization is futile.
         </p>
@@ -715,7 +715,7 @@ export default function GoogleAdsOptimizationEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Monthly optimizations (once per month)</p>
-        <p className="text-blue-800 text-sm mb-0">
+        <p className="text-blue-800 text-base mb-0">
           <strong>1. Conversion Tracking audit</strong> (check all conversions track properly) <br />
           <strong>2. Competitor analysis</strong> (Google Auction Insights — who appeared/disappeared) <br />
           <strong>3. Landing page optimization</strong> (A/B testing different versions) <br />
@@ -733,7 +733,7 @@ export default function GoogleAdsOptimizationEN() {
             How often should I optimize Google Ads accounts?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               For small account (up to $3,000/month): weekly 1-2 hours optimization is enough. For larger accounts
               ($15,000+/month): I recommend daily check (15 min) + deeper weekly optimization (2-3 hours).
@@ -747,7 +747,7 @@ export default function GoogleAdsOptimizationEN() {
             What's most important optimization if I only have 1 hour weekly?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               <strong>Search Terms Report review</strong> (tactic #6). This is activity with highest ROI —
               you eliminate unprofitable clicks and discover new profitable keywords. 80% of optimization I
@@ -761,7 +761,7 @@ export default function GoogleAdsOptimizationEN() {
             How do I know if my optimizations are working?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Track 3 metrics month-over-month: <strong>1) CPA or ROAS</strong> (efficiency), <strong>2) Conversion
               volume</strong> (scale), <strong>3) Impression Share</strong> (coverage). If CPA drops but conversions
@@ -776,7 +776,7 @@ export default function GoogleAdsOptimizationEN() {
             Should I pause campaigns at night or on weekends?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               It depends on your industry. <strong>B2B campaigns:</strong> it&apos;s often smart to reduce bids
               by 50-70% on weekends because decision-makers aren&apos;t working. <strong>eCommerce:</strong>
@@ -792,7 +792,7 @@ export default function GoogleAdsOptimizationEN() {
             How much does professional Google Ads optimization cost?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Freelance consultants typically charge £200-600/month for ongoing optimization (depending on account
               size and complexity). Agencies charge 10-20% of ad spend. The DIY approach costs time — realistically
@@ -807,7 +807,7 @@ export default function GoogleAdsOptimizationEN() {
             Can I automate optimization using Automated Rules?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Yes, but carefully. Automated Rules are excellent for repetitive tasks: pausing keywords with
               CPA &gt;£100 and 0 conversions in the last 30 days, increasing budget for campaigns with &gt;90%
@@ -918,7 +918,7 @@ export default function GoogleAdsOptimizationEN() {
             How often should I optimize Google Ads campaigns?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Daily: budget and alert checks. Weekly: bid adjustments, search terms review, negative keywords. Monthly: ad A/B tests, structural changes, strategy review. Over-optimization (changing bids daily) can be counterproductive.
           </div>
         </details>
@@ -928,7 +928,7 @@ export default function GoogleAdsOptimizationEN() {
             What is the most important Google Ads optimization?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Conversion tracking. Without accurate tracking, all other optimizations are blind. After that: negative keywords (prevent budget waste), Quality Score (reduces CPC), and bid strategy (controls where budget is spent).
           </div>
         </details>
@@ -938,7 +938,7 @@ export default function GoogleAdsOptimizationEN() {
             Should I accept Google Ads automatic recommendations?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Not all of them. Google optimizes for their revenue, not necessarily your ROI. Recommendations for broad match, budget increases, and auto-apply changes are usually not in your best interest. Only accept those that align with your goals.
           </div>
         </details>
@@ -948,7 +948,7 @@ export default function GoogleAdsOptimizationEN() {
             How do I improve ROAS in Google Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Focus on: 1) Negative keywords (eliminate unproductive searches), 2) Bid strategy by device/location/time, 3) Landing page optimization, 4) Campaign segmentation by product profitability, 5) Remarketing to existing visitors.
           </div>
         </details>
@@ -958,7 +958,7 @@ export default function GoogleAdsOptimizationEN() {
             Why is my Quality Score dropping?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Most common reasons: landing page loads slower, competitors improved their ads, CTR dropped (refresh your copy), or relevance decreased (keywords don&apos;t match the ad → LP path). Check each component individually.
           </div>
         </details>

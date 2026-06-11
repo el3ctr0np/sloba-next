@@ -38,7 +38,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       {/* Brzi odgovor — featured snippet target */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-bold text-yellow-900 text-sm mb-1 uppercase tracking-wide">Brzi odgovor</p>
-        <p className="text-yellow-800 text-sm mb-0">
+        <p className="text-yellow-800 text-base mb-0">
           Google Ads je obavezna platforma za svaki biznis koji se oglašava online — 92% tržišta, nenadmašan reach, najnaprednija automatizacija. Microsoft Ads je profitabilan dopunski kanal: niži CPC za 30–50%, starija i bogatija publika (35+, viši prihodi), i jedinstven LinkedIn targeting dostupan samo na Microsoft platformi.
         </p>
       </div>
@@ -67,16 +67,16 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#trzisni-udeo" className="text-sm text-gray-700 hover:underline">Market share realnost — šta 5% zapravo znači</a></li>
-          <li><a href="#razlike-u-publici" className="text-sm text-gray-700 hover:underline">Razlike u publici — ko su Microsoft Ads korisnici</a></li>
-          <li><a href="#linkedin-targeting" className="text-sm text-gray-700 hover:underline">LinkedIn targeting — ekskluzivna prednost Microsoft-a</a></li>
-          <li><a href="#cpc-razlike" className="text-sm text-gray-700 hover:underline">CPC razlike po industrijama — realni benchmarks</a></li>
-          <li><a href="#feature-paritet" className="text-sm text-gray-700 hover:underline">Feature paritet — RSA, Shopping, PMax ekvivalenti</a></li>
-          <li><a href="#realni-podaci" className="text-sm text-gray-700 hover:underline">Realni obrasci iz UK/USA naloga — dualno vođenje platformi</a></li>
-          <li><a href="#konverzije-i-atribucija" className="text-sm text-gray-700 hover:underline">Konverzije i atribucija — gde platforme rade drugačije</a></li>
-          <li><a href="#kada-koristiti" className="text-sm text-gray-700 hover:underline">Kada koristiti Microsoft Ads — decision framework</a></li>
-          <li><a href="#kada-obe" className="text-sm text-gray-700 hover:underline">Kada koristiti obe platforme simultano</a></li>
-          <li><a href="#zakljucak" className="text-sm text-gray-700 hover:underline">Zaključak i preporuke</a></li>
+          <li><a href="#trzisni-udeo" className="block py-1 text-base text-gray-700 hover:underline">Market share realnost — šta 5% zapravo znači</a></li>
+          <li><a href="#razlike-u-publici" className="block py-1 text-base text-gray-700 hover:underline">Razlike u publici — ko su Microsoft Ads korisnici</a></li>
+          <li><a href="#linkedin-targeting" className="block py-1 text-base text-gray-700 hover:underline">LinkedIn targeting — ekskluzivna prednost Microsoft-a</a></li>
+          <li><a href="#cpc-razlike" className="block py-1 text-base text-gray-700 hover:underline">CPC razlike po industrijama — realni benchmarks</a></li>
+          <li><a href="#feature-paritet" className="block py-1 text-base text-gray-700 hover:underline">Feature paritet — RSA, Shopping, PMax ekvivalenti</a></li>
+          <li><a href="#realni-podaci" className="block py-1 text-base text-gray-700 hover:underline">Realni obrasci iz UK/USA naloga — dualno vođenje platformi</a></li>
+          <li><a href="#konverzije-i-atribucija" className="block py-1 text-base text-gray-700 hover:underline">Konverzije i atribucija — gde platforme rade drugačije</a></li>
+          <li><a href="#kada-koristiti" className="block py-1 text-base text-gray-700 hover:underline">Kada koristiti Microsoft Ads — decision framework</a></li>
+          <li><a href="#kada-obe" className="block py-1 text-base text-gray-700 hover:underline">Kada koristiti obe platforme simultano</a></li>
+          <li><a href="#zakljucak" className="block py-1 text-base text-gray-700 hover:underline">Zaključak i preporuke</a></li>
         </ol>
       </nav>
 
@@ -99,42 +99,42 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Tržište</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Google udeo</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Bing/MS udeo</th>
-              <th className="py-3 px-4 text-right font-heading font-semibold text-gray-900">Komentar</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Tržište</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Google udeo</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Bing/MS udeo</th>
+              <th className="py-3 px-3 text-right font-heading font-semibold text-gray-900">Komentar</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Globalno</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~92%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~3–5%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">StatCounter 2026</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Globalno</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~92%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~3–5%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">StatCounter 2026</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">SAD (desktop)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~80%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~12%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">Edge default effect</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">SAD (desktop)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~80%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~12%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">Edge default effect</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Velika Britanija</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~87%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~7–9%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">Relevantno za UK brendove</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Velika Britanija</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~87%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~7–9%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">Relevantno za UK brendove</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Srbija</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~97%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~2%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">MS Ads nije prioritet za SR tržište</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Srbija</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~97%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~2%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">MS Ads nije prioritet za SR tržište</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Nemačka</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~88%</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">~5–7%</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-gray-500">Vredan kanal za DE tržište</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Nemačka</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~88%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~5–7%</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">Vredan kanal za DE tržište</td>
             </tr>
           </tbody>
         </table>
@@ -206,7 +206,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <div className="bg-slate-50 border-l-4 border-blue-500 rounded-r-xl p-6 my-8">
         <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-3">LinkedIn Profile Targeting u Microsoft Ads</p>
-        <p className="text-gray-700 mb-3 text-sm">
+        <p className="text-gray-700 mb-3 text-base">
           U Microsoft Ads-u možete targetirati korisnike pretraživanja po sledećim LinkedIn dimenzijama:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -254,7 +254,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-5 my-6">
         <p className="text-sm font-bold text-yellow-900 mb-2">Napomena o LinkedInt targeting-u</p>
-        <p className="text-sm text-yellow-800 mb-0">
+        <p className="text-base text-yellow-800 mb-0">
           LinkedIn Profile Targeting funkcioniše kao <strong>audience bid modifier</strong>, ne kao exclusion targeting.
           Koristite ga za bid adjustment (+20%, +30%) prema segmentima koji konvertuju bolje — ne za ograničavanje
           dosega. Počnite sa observation mode-om pre nego što primenite bid adjustments.
@@ -275,48 +275,48 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Industrija</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Google CPC (prosek UK)</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Microsoft CPC (prosek UK)</th>
-              <th className="py-3 px-4 text-right font-heading font-semibold text-gray-900">Ušteda</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Industrija</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Google CPC (prosek UK)</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Microsoft CPC (prosek UK)</th>
+              <th className="py-3 px-3 text-right font-heading font-semibold text-gray-900">Ušteda</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Skincare / Beauty</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0,45–£0,90</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0,25–£0,50</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Skincare / Beauty</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,45–£0,90</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,25–£0,50</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Finansijske usluge</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£3,00–£8,00</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£1,80–£4,50</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Finansijske usluge</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£3,00–£8,00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£1,80–£4,50</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">B2B SaaS / Softver</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£2,00–£6,00</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£1,00–£3,20</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">B2B SaaS / Softver</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£2,00–£6,00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£1,00–£3,20</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Pravo i advokatura</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£4,00–£12,00</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£2,00–£6,50</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Pravo i advokatura</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£4,00–£12,00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£2,00–£6,50</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">Hobi i slobodno vreme</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0,30–£0,70</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0,18–£0,40</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">Hobi i slobodno vreme</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,30–£0,70</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,18–£0,40</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200 font-medium">eCommerce (opšte)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0,40–£1,20</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">£0,22–£0,65</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 text-green-700 font-semibold">~40–45%</td>
+              <td className="py-3 px-3 border-b border-gray-200 font-medium">eCommerce (opšte)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,40–£1,20</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,22–£0,65</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40–45%</td>
             </tr>
           </tbody>
         </table>
@@ -350,7 +350,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">R</span>
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Responsive Search Ads (RSA)</h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-base text-gray-600 mb-2">
                 Obe platforme imaju RSA format — 15 naslova, 4 opisa, Google/Microsoft kombinuje automatski.
                 Ključna razlika: Microsoft Ads RSA performance insights su manje detaljni od Google-ovih
                 (Asset performance labels su Basic vs. Google-ovog Good/Best/Low/Learning). Character limiti
@@ -369,7 +369,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">Sh</span>
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Microsoft Shopping Campaigns</h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-base text-gray-600 mb-2">
                 Direktni Google Shopping ekvivalent — Microsoft Merchant Center, product feed (isti format
                 kao Google), Shopping kampanje sa Product Groups. Feed se može importovati direktno iz
                 Google Merchant Center-a. Na nalozima gde dualno radimo, vodim paralelne Shopping kampanje na obe platforme
@@ -388,7 +388,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">P</span>
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Performance Max ekvivalent — Microsoft Audience Campaigns + Smart Shopping</h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-base text-gray-600 mb-2">
                 Microsoft nema identični PMax, ali ima Audience Network (ekvivalent Google Display/YouTube
                 mreže) i Smart Shopping kampanje koje automatski distribuiraju budget kroz Search i Shopping.
                 U 2025. je lansiran &quot;Performance Max&quot; u beta na Microsoft Ads — postepeno rollout tokom 2026.
@@ -406,7 +406,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">AI</span>
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">AI i automatizacija — gde Google vodi</h3>
-              <p className="text-sm text-gray-600 mb-2">
+              <p className="text-base text-gray-600 mb-2">
                 Google-ov Smart Bidding (tROAS, tCPA, Maximize Conversions) je zreliji i pouzdaniji zbog
                 ogromne količine konverzionih podataka. Microsoft Smart Bidding funkcioniše, ali zahteva
                 više vremena za learning period i više konverzija za stabilizaciju. Za naloge sa &lt;30
@@ -425,60 +425,60 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 text-left font-heading font-semibold text-gray-900">Feature</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Google Ads</th>
-              <th className="py-3 px-4 text-center font-heading font-semibold text-gray-900">Microsoft Ads</th>
-              <th className="py-3 px-4 text-right font-heading font-semibold text-gray-900">Ko vodi?</th>
+              <th className="py-3 px-3 text-left font-heading font-semibold text-gray-900">Feature</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Google Ads</th>
+              <th className="py-3 px-3 text-center font-heading font-semibold text-gray-900">Microsoft Ads</th>
+              <th className="py-3 px-3 text-right font-heading font-semibold text-gray-900">Ko vodi?</th>
             </tr>
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200">RSA format</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Izjednačeno</td>
+              <td className="py-3 px-3 border-b border-gray-200">RSA format</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Izjednačeno</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200">Shopping kampanje</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google (bolja reporting)</td>
+              <td className="py-3 px-3 border-b border-gray-200">Shopping kampanje</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google (bolja reporting)</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200">Performance Max</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da (zreo)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Beta</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google</td>
+              <td className="py-3 px-3 border-b border-gray-200">Performance Max</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da (zreo)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Beta</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200">Smart Bidding</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da (zreo)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da (manje podataka)</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google</td>
+              <td className="py-3 px-3 border-b border-gray-200">Smart Bidding</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da (zreo)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da (manje podataka)</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200">LinkedIn targeting</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Ne</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 font-semibold text-orange-700">Microsoft</td>
+              <td className="py-3 px-3 border-b border-gray-200">LinkedIn targeting</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Ne</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 font-semibold text-orange-700">Microsoft</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200">Audience Network (Display)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da (Google Display)</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da (MS Audience Net.)</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google (veća mreža)</td>
+              <td className="py-3 px-3 border-b border-gray-200">Audience Network (Display)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da (Google Display)</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da (MS Audience Net.)</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google (veća mreža)</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-4 border-b border-gray-200">Google Import alat</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">N/A</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Da (automatski import)</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200 font-semibold text-orange-700">Microsoft (praktičnost)</td>
+              <td className="py-3 px-3 border-b border-gray-200">Google Import alat</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">N/A</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Da (automatski import)</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 font-semibold text-orange-700">Microsoft (praktičnost)</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
-              <td className="py-3 px-4 border-b border-gray-200">Reporting granularnost</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Excelentno</td>
-              <td className="py-3 px-4 text-center border-b border-gray-200">Dobro</td>
-              <td className="py-3 px-4 text-right border-b border-gray-200">Google</td>
+              <td className="py-3 px-3 border-b border-gray-200">Reporting granularnost</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Excelentno</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">Dobro</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200">Google</td>
             </tr>
           </tbody>
         </table>
@@ -496,7 +496,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       <div className="space-y-4 my-8">
         <div className="bg-white border-l-4 border-green-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Uvid 1: AOV je konzistentno viši na Microsoft Ads</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Kupci koji dolaze sa Bing pretrage imaju u proseku 15–25% viši Average Order Value od
             Google kupaca. Starija demografija kupuje premium proizvode — premium linije u kategorijama koje su relevantne (~£80–£120
             po stavci) proporcionalno više od entry-level linije (~£20–£35). Ovo direktno utiče na POAS računicu.
@@ -505,7 +505,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
         <div className="bg-white border-l-4 border-green-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Uvid 2: Microsoft import alat štedi sate rada mesečno</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Microsoft-ov &quot;Import from Google Ads&quot; funkcija je izuzetno korisna. Možete automatski povući
             kompletnu kampanjsku strukturu iz Google Ads-a direktno u Microsoft Ads. U dualnom workflow-u, inicijalni
             setup na Microsoft-u trajao je 3–4 sata umesto tipičnih 15–20 sati za ručni setup. Kampanje
@@ -515,7 +515,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Uvid 3: Conversion rate je niži, ali ne dramatično</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Microsoft Ads conversion rate je konzistentno 20–30% niži od Google-a za iste kampanje.
             Objašnjenje: manji volumen znači manje podataka za Smart Bidding optimizaciju, a demografski
             profil koji više istražuje donosi više &quot;window shoppers&quot;. Važno: niži CVR se kompenzuje
@@ -525,7 +525,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Uvid 4: Desktop dominacija zahteva prilagođen ad copy</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Sa 70%+ desktop pretrage na Bing-u, Microsoft kampanje imaju drugačije asset performanse
             od Google. Duži opisi (90 karaktera) koji detaljno opisuju benefite rade bolje od kratkih,
             punch-oriented naslova koji dominiraju na mobile Google pretrazi. Prilagodili smo descriptions
@@ -536,7 +536,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
         <div className="bg-white border-l-4 border-blue-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Uvid 5: Impression Share je lakše osvajati na Bing-u</p>
-          <p className="text-sm text-gray-600 mb-0">
+          <p className="text-base text-gray-600 mb-0">
             Na Google Ads, osvajanje 80%+ impression share za konkurentne termine zahteva agresivne budžete.
             Na Microsoft Ads, isti impression share dostupan je sa 3–5x manjim budžetom zbog nižeg broja
             konkurentnih oglašivača. Tipičan UK brend ima 85%+ IS na branded pretragama na Bing-u sa budžetom
@@ -578,7 +578,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           ].map((item, i) => (
             <div key={i} className="flex items-start gap-3">
               <span className="flex-shrink-0 text-yellow-400 font-bold text-sm">{item.br}</span>
-              <p className="text-sm text-slate-200 mb-0">{item.txt}</p>
+              <p className="text-base text-slate-200 mb-0">{item.txt}</p>
             </div>
           ))}
         </div>
@@ -688,7 +688,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <div className="bg-green-50 border border-green-200 rounded-xl p-5 my-6">
         <p className="text-sm font-bold text-green-900 mb-2">Pro tip: Microsoft Import alat u 3 koraka</p>
-        <ol className="text-sm text-green-800 space-y-1 mb-0 list-decimal pl-4">
+        <ol className="text-base text-green-800 space-y-1 mb-0 list-decimal pl-4">
           <li>Microsoft Ads → Tools → Import Campaigns → Import from Google Ads</li>
           <li>Povežite Google Ads nalog, izaberite kampanje za import, mapiranje budžeta</li>
           <li>Postavite automatski uvoz (mesečno) — svaki put dobijate notifikaciju o promenama</li>
@@ -777,7 +777,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             Da li Microsoft Ads vredi za srpska preduzeća?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Za biznise koji prodaju <strong>isključivo na srpskom tržištu</strong>: ne vredi — Bing ima samo ~2% tržišnog udela u Srbiji. Za biznise koji prodaju na <strong>UK, SAD, Nemačku, Australiju</strong>: vredi testirati. Na tim tržištima Bing drži 7–12% desktop pretrage, CPC je 35–45% niži od Google-a, a publika je starija i imovinijski snažnija. Minimalni mesečni spend za smislen test: £300–500 ili ekvivalent.
           </div>
         </details>
@@ -787,7 +787,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             Koliko je teško prebaciti Google Ads kampanje na Microsoft Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Tehnički, <strong>izuzetno lako</strong>. Microsoft Ads ima &quot;Import from Google Ads&quot; alat koji automatski prebacuje kompletnu strukturu kampanja (kampanje, ad groups, keywords, ads, extensions) iz Google naloga. Inicijalni import traje 1–2 sata (podešavanja, budžet mapping, prilagođavanje bid-ova). Iz prakse: mesečna sinhronizacija je automatska i traje svega 15 minuta manualnog pregleda. Pametni oglašivači imaju Microsoft kao &quot;shadow campaign&quot; koji se automatski sinhronizuje sa Google promenama.
           </div>
         </details>
@@ -797,7 +797,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             Šta je LinkedIn targeting na Microsoft Ads i kako radi?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Microsoft poseduje LinkedIn od 2016, što im daje pristup profesionalnim profilnim podacima. U Microsoft Ads-u možete targetirati korisnike pretrage po <strong>LinkedIn industriji</strong> (40+ kategorija), <strong>radnoj poziciji</strong> (C-level, Director, Manager, Individual Contributor) i <strong>imenu firme</strong>. Ovo funkcioniše kao <strong>bid modifier</strong> — povećavate bid za segmente koji konvertuju bolje, ali ne isključujete ostale. Idealno za B2B, financial services, SaaS, i professional services. Počnite sa observation mode-om, sakupite podatke, pa primenite bid adjustments (+15% do +30% za vredne segmente).
           </div>
         </details>
@@ -807,7 +807,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             Da li Microsoft Ads ima Shopping kampanje ekvivalentne Google Shopping-u?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da — Microsoft Merchant Center i Microsoft Shopping Campaigns su funkcionalni ekvivalent. <strong>Isti feed format</strong> (Google Shopping feed radi direktno na Microsoft bez izmena), slična kampanjska struktura (Product Groups, bid-ovi po kategoriji), i isti vizuelni format (slika, cena, naziv prodavnice). Razlike: Microsoft nema Google-ov Shopping Intelligence, auction insights su manje detaljni, a reporting je bazičniji. Na nalozima gde dualno radimo, vodim paralelne Shopping kampanje — Microsoft verzija donosi 10–15% dodatnih Shopping konverzija sa identičnim feed-om.
           </div>
         </details>
@@ -817,7 +817,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             Koliki budžet je potreban za Microsoft Ads?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Pravilo koje koristim: <strong>10–15% ukupnog paid search budžeta</strong>. Ako trošite £3.500 na Google, testni Microsoft budžet je £350–500. Ovo je dovoljno za merljive podatke, ali ne toliko da ugrozi Google performanse. Minimalni smisleni budžet za UK eCommerce je <strong>£300/mesec</strong> — ispod toga nema dovoljno klikova za statički relevantne podatke. Za B2B sa višim CPC-ovima, minimum je viši (~£500+) jer skuplje ključne reči zahtevaju više budžeta za isti volumen podataka.
           </div>
         </details>
@@ -827,7 +827,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             Koji bidding model koristiti na Microsoft Ads na početku?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Preporuka za nove Microsoft naloge: počnite sa <strong>Enhanced CPC (eCPC)</strong> ili Manual CPC. Microsoft Smart Bidding (tROAS, tCPA) zahteva minimum <strong>30 konverzija mesečno</strong> za stabilnu optimizaciju — sa manjim volumenima, algoritam fluktuira jer nema dovoljno podataka. Posle 60–90 dana sa 30+ konverzija mesečno, prelazite na Maximize Conversions sa target CPA cap-om. Tek posle 6 meseci solidnih podataka razmišljajte o tROAS ako je to relevantno za vaš model.
           </div>
         </details>

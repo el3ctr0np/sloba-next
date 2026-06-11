@@ -39,17 +39,17 @@ export default function AgencijaVsFreelancerPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto-je-izbor-partnera-kljucan" className="text-sm text-gray-700 hover:text-primary underline">Zašto je izbor partnera ključan</a></li>
-          <li><a href="#tri-opcije-za-upravljanje-google-ads-kampanjama" className="text-sm text-gray-700 hover:text-primary underline">Tri opcije za upravljanje Google Ads kampanjama</a></li>
-          <li><a href="#prednosti-i-mane-google-ads-agencije" className="text-sm text-gray-700 hover:text-primary underline">Prednosti i mane Google Ads agencije</a></li>
-          <li><a href="#prednosti-i-mane-freelancera" className="text-sm text-gray-700 hover:text-primary underline">Prednosti i mane freelancera</a></li>
-          <li><a href="#prednosti-i-mane-in-house-tima" className="text-sm text-gray-700 hover:text-primary underline">Prednosti i mane in-house tima</a></li>
-          <li><a href="#poredenje-po-kljucnim-kriterijumima" className="text-sm text-gray-700 hover:text-primary underline">Poređenje po ključnim kriterijumima</a></li>
-          <li><a href="#koji-model-za-vasu-firmu" className="text-sm text-gray-700 hover:text-primary underline">Koji model za vašu firmu</a></li>
-          <li><a href="#na-sta-obratiti-paznju-prilikom-izbora-partnera" className="text-sm text-gray-700 hover:text-primary underline">Na šta obratiti pažnju prilikom izbora partnera</a></li>
-          <li><a href="#crvene-zastavice---kada-odustati-od-partnera" className="text-sm text-gray-700 hover:text-primary underline">Crvene zastavice - kada odustati od partnera</a></li>
-          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
-          <li><a href="#najcesca-pitanja--agencija-vs-freelancer" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja — agencija vs freelancer</a></li>
+          <li><a href="#zasto-je-izbor-partnera-kljucan" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto je izbor partnera ključan</a></li>
+          <li><a href="#tri-opcije-za-upravljanje-google-ads-kampanjama" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tri opcije za upravljanje Google Ads kampanjama</a></li>
+          <li><a href="#prednosti-i-mane-google-ads-agencije" className="block py-1 text-base text-gray-700 hover:text-primary underline">Prednosti i mane Google Ads agencije</a></li>
+          <li><a href="#prednosti-i-mane-freelancera" className="block py-1 text-base text-gray-700 hover:text-primary underline">Prednosti i mane freelancera</a></li>
+          <li><a href="#prednosti-i-mane-in-house-tima" className="block py-1 text-base text-gray-700 hover:text-primary underline">Prednosti i mane in-house tima</a></li>
+          <li><a href="#poredenje-po-kljucnim-kriterijumima" className="block py-1 text-base text-gray-700 hover:text-primary underline">Poređenje po ključnim kriterijumima</a></li>
+          <li><a href="#koji-model-za-vasu-firmu" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koji model za vašu firmu</a></li>
+          <li><a href="#na-sta-obratiti-paznju-prilikom-izbora-partnera" className="block py-1 text-base text-gray-700 hover:text-primary underline">Na šta obratiti pažnju prilikom izbora partnera</a></li>
+          <li><a href="#crvene-zastavice---kada-odustati-od-partnera" className="block py-1 text-base text-gray-700 hover:text-primary underline">Crvene zastavice - kada odustati od partnera</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja--agencija-vs-freelancer" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja — agencija vs freelancer</a></li>
         </ol>
       </nav>
 
@@ -66,7 +66,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Pozitivna perspektiva</p>
-        <p className="text-blue-800 text-sm mb-0">Sve tri opcije mogu biti odlične. Ključ je u tome da pronađete model koji se uklapa u vašu trenutnu fazu rasta, budžet i interne resurse. Čak i ako krenete sa jednim modelom, možete later preći na drugi kako rastete.</p>
+        <p className="text-blue-800 text-base mb-0">Sve tri opcije mogu biti odlične. Ključ je u tome da pronađete model koji se uklapa u vašu trenutnu fazu rasta, budžet i interne resurse. Čak i ako krenete sa jednim modelom, možete later preći na drugi kako rastete.</p>
       </div>
 
       <hr />
@@ -80,31 +80,31 @@ export default function AgencijaVsFreelancerPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Ads agencija</h3>
-          <p className="text-sm text-gray-600 mb-3">Tim specijalista koji vodi vaše kampanje. Kompletna usluga sa account managerom, PPC specijalistom i često dizajnerom. Sertifikovane agencije možete pronaći kroz <a href="https://ads.google.com/intl/sr_rs/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Google Partners</a> direktorijum.</p>
+          <p className="text-base text-gray-600 mb-3">Tim specijalista koji vodi vaše kampanje. Kompletna usluga sa account managerom, PPC specijalistom i često dizajnerom. Sertifikovane agencije možete pronaći kroz <a href="https://ads.google.com/intl/sr_rs/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Google Partners</a> direktorijum.</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Mesečni trošak:</strong></p>
           <p className="text-sm mb-3">€500-3,000+</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Za koga:</strong></p>
-          <p className="text-sm mb-0">Firme sa budžetom €5,000+ mesečno, multi-channel potrebe, potrebna struktura i skalabilnost.</p>
+          <p className="text-base mb-0">Firme sa budžetom €5,000+ mesečno, multi-channel potrebe, potrebna struktura i skalabilnost.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Freelancer / konsultant</h3>
-          <p className="text-sm text-gray-600 mb-3">Nezavisni specijalista koji radi direktno sa vama. Personalizovana pažnja, fleksibilnost i fokus na jedan kanal.</p>
+          <p className="text-base text-gray-600 mb-3">Nezavisni specijalista koji radi direktno sa vama. Personalizovana pažnja, fleksibilnost i fokus na jedan kanal.</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Mesečni trošak:</strong></p>
           <p className="text-sm mb-3">€300-1,500</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Za koga:</strong></p>
-          <p className="text-sm mb-0">Firme sa budžetom €1,000-10,000 mesečno, fokus na Google Ads, važna direktna komunikacija.</p>
+          <p className="text-base mb-0">Firme sa budžetom €1,000-10,000 mesečno, fokus na Google Ads, važna direktna komunikacija.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Opcija 3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">In-house tim</h3>
-          <p className="text-sm text-gray-600 mb-3">Zaposlen PPC specijalista u vašoj firmi. Potpuna kontrola, duboko razumevanje biznisa, instant komunikacija.</p>
+          <p className="text-base text-gray-600 mb-3">Zaposlen PPC specijalista u vašoj firmi. Potpuna kontrola, duboko razumevanje biznisa, instant komunikacija.</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Mesečni trošak:</strong></p>
           <p className="text-sm mb-3">€1,000-2,500+ (plata + alati)</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Za koga:</strong></p>
-          <p className="text-sm mb-0">Firme sa budžetom €15,000+ mesečno, marketing kao core funkcija, dugoročna vizija.</p>
+          <p className="text-base mb-0">Firme sa budžetom €15,000+ mesečno, marketing kao core funkcija, dugoročna vizija.</p>
         </div>
       </div>
 
@@ -120,8 +120,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Tim umesto pojedinca</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Preporučujem agenciju ako vam treba multidisciplinarni pristup. Dobijate account managera, PPC specijalista, često i copywritera/dizajnera.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Preporučujem agenciju ako vam treba multidisciplinarni pristup. Dobijate account managera, PPC specijalista, često i copywritera/dizajnera.</p>
+        <ul className="text-base">
           <li>Account manager koordiniše sve aktivnosti</li>
           <li>PPC specijalista vodi optimizacije</li>
           <li>Dizajner kreira vizuele za display/video kampanje</li>
@@ -134,8 +134,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Šira ekspertiza i resursi</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Agencije donose iskustvo iz više industrija i pristup premium alatima koje ne morate posebno plaćati.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Agencije donose iskustvo iz više industrija i pristup premium alatima koje ne morate posebno plaćati.</p>
+        <ul className="text-base">
           <li>Iskustvo sa 20-50+ različitih klijenata</li>
           <li>Pristup SEMrush, Optmyzr, Google Analytics 360, itd.</li>
           <li><a href="https://ads.google.com/intl/sr_rs/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Beta programi i early access</a> do novih Google Ads features</li>
@@ -148,8 +148,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Skalabilnost i accountability</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Kada planirate rast budžeta ili ekspanziju na nove kanale, agencije mogu pratiti taj tempo bez preopterećenja.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Kada planirate rast budžeta ili ekspanziju na nove kanale, agencije mogu pratiti taj tempo bez preopterećenja.</p>
+        <ul className="text-base">
           <li>Lako dodaju nove kampanje i kanale</li>
           <li>Formalni ugovori sa jasnim KPI-jevima</li>
           <li>Redovni izveštaji (weekly/monthly)</li>
@@ -163,7 +163,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Niste prioritet — junior specijalista radi na vašem nalogu</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Pre potpisivanja ugovora, pitajte ko će konkretno raditi na vašem nalogu, koliko klijenata ta osoba vodi istovremeno, i ko je backup. Insistirajte na upoznavanju sa osobom koja će raditi na naloga, ne samo account managerom.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Pre potpisivanja ugovora, pitajte ko će konkretno raditi na vašem nalogu, koliko klijenata ta osoba vodi istovremeno, i ko je backup. Insistirajte na upoznavanju sa osobom koja će raditi na naloga, ne samo account managerom.</p>
         </div>
       </div>
 
@@ -171,7 +171,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Šablonski pristup — copy-paste strategije iz drugih klijenata</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Tražite da vam pokažu konkretne strategije koje planiraju za vašu industriju. Ako čujete generičke odgovore ("optimizujemo ključne reči", "testiramo oglase"), to je crvena zastavica. Dobra agencija će imati specifična pitanja o vašem biznis modelu.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Tražite da vam pokažu konkretne strategije koje planiraju za vašu industriju. Ako čujete generičke odgovore ("optimizujemo ključne reči", "testiramo oglase"), to je crvena zastavica. Dobra agencija će imati specifična pitanja o vašem biznis modelu.</p>
         </div>
       </div>
 
@@ -179,13 +179,13 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Sporija komunikacija — account manager kao bottleneck</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Definišite komunikacijske kanale i response time u ugovoru. Idealno je imati direktan pristup PPC specijalistu preko Slack/Teams za hitne stvari, dok account manager koordiniše strateške odluke.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Definišite komunikacijske kanale i response time u ugovoru. Idealno je imati direktan pristup PPC specijalistu preko Slack/Teams za hitne stvari, dok account manager koordiniše strateške odluke.</p>
         </div>
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">Za budžete ispod €5,000 mesečno, agencije obično nisu isplative. Matematika je jednostavna: ako plaćate €800/mesec retainer za upravljanje budžetom od €2,000, to je 40% fee. U tom slučaju freelancer je bolja opcija.</p>
+        <p className="text-yellow-800 text-base mb-0">Za budžete ispod €5,000 mesečno, agencije obično nisu isplative. Matematika je jednostavna: ako plaćate €800/mesec retainer za upravljanje budžetom od €2,000, to je 40% fee. U tom slučaju freelancer je bolja opcija.</p>
       </div>
 
       <h3>Kada izabrati agenciju</h3>
@@ -203,31 +203,31 @@ export default function AgencijaVsFreelancerPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Model</th>
-              <th className="py-3 px-4 font-heading font-semibold">Cena</th>
-              <th className="py-3 px-4 font-heading font-semibold">Za koga</th>
+              <th className="py-3 px-3 font-heading font-semibold">Model</th>
+              <th className="py-3 px-3 font-heading font-semibold">Cena</th>
+              <th className="py-3 px-3 font-heading font-semibold">Za koga</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Procenat od ad spend-a</td>
-              <td className="py-3 px-4">10-20% (najčešće 12-15%)</td>
-              <td className="py-3 px-4">Veći budžeti, skalabilno</td>
+              <td className="py-3 px-3 font-medium">Procenat od ad spend-a</td>
+              <td className="py-3 px-3">10-20% (najčešće 12-15%)</td>
+              <td className="py-3 px-3">Veći budžeti, skalabilno</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Fiksna mesečna naknada</td>
-              <td className="py-3 px-4">€500-3,000</td>
-              <td className="py-3 px-4">Mali do srednji budžeti, predvidivo</td>
+              <td className="py-3 px-3 font-medium">Fiksna mesečna naknada</td>
+              <td className="py-3 px-3">€500-3,000</td>
+              <td className="py-3 px-3">Mali do srednji budžeti, predvidivo</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Hibrid</td>
-              <td className="py-3 px-4">Manja fiksna + procenat iznad praga</td>
-              <td className="py-3 px-4">Mid-size firme koje rastu</td>
+              <td className="py-3 px-3 font-medium">Hibrid</td>
+              <td className="py-3 px-3">Manja fiksna + procenat iznad praga</td>
+              <td className="py-3 px-3">Mid-size firme koje rastu</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Performance-based</td>
-              <td className="py-3 px-4">Obično kombinovano sa fiksnom</td>
-              <td className="py-3 px-4">Retko, visok rizik za agenciju</td>
+              <td className="py-3 px-3 font-medium">Performance-based</td>
+              <td className="py-3 px-3">Obično kombinovano sa fiksnom</td>
+              <td className="py-3 px-3">Retko, visok rizik za agenciju</td>
             </tr>
           </tbody>
         </table>
@@ -252,8 +252,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Personalizovana pažnja i direktna komunikacija</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Radite direktno sa osobom koja upravlja kampanjama. Bez posrednika, bez account managera, bez "telefona bez žice".</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Radite direktno sa osobom koja upravlja kampanjama. Bez posrednika, bez account managera, bez "telefona bez žice".</p>
+        <ul className="text-base">
           <li>Manje klijenata = više fokusa na vaš nalog</li>
           <li>Brži response time (obično isti dan)</li>
           <li>Direktan Slack/WhatsApp kontakt</li>
@@ -266,8 +266,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Fleksibilnost i specijalizacija</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Freelanceri često imaju dublju specijalizaciju u jednoj oblasti (npr. Google Shopping, lead gen kampanje) i fleksibilnije ugovore.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Freelanceri često imaju dublju specijalizaciju u jednoj oblasti (npr. Google Shopping, lead gen kampanje) i fleksibilnije ugovore.</p>
+        <ul className="text-base">
           <li>Lakši dogovor oko scope-a rada</li>
           <li>Mogućnost monthly retainer ili project-based rada</li>
           <li>Duboko znanje specifičnih industrija ili campaign type-ova</li>
@@ -280,8 +280,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Isplativost za male/srednje budžete</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Za budžete €1,000-10,000 mesečno, freelanceri nude najbolji value. Dobijate senior-level ekspertizu po ceni mid-level agencijskog retainera.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Za budžete €1,000-10,000 mesečno, freelanceri nude najbolji value. Dobijate senior-level ekspertizu po ceni mid-level agencijskog retainera.</p>
+        <ul className="text-base">
           <li>€300-1,500/mesec vs €800-2,000 za agenciju</li>
           <li>Nema overhead troškova agencijske strukture</li>
           <li>Transparentno pricing (znate koliko vremena ide na vaš nalog)</li>
@@ -295,7 +295,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Zavisnost od jedne osobe — nema backup-a ako freelancer nestane</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Insistirajte na admin pristupu vašem Google Ads nalogu od dana 1. Tražite dokumentaciju svih kampanja, strategija i account strukture. Preporučujem i quarterly review sa drugim freelancerom ili agencijom kao "second opinion".</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Insistirajte na admin pristupu vašem Google Ads nalogu od dana 1. Tražite dokumentaciju svih kampanja, strategija i account strukture. Preporučujem i quarterly review sa drugim freelancerom ili agencijom kao "second opinion".</p>
         </div>
       </div>
 
@@ -303,7 +303,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Ograničen kapacitet — teško skaliranje kada budžet naglo poraste</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Pričajte sa freelancerom o planovima rasta. Dobar freelancer će vam reći kada je dostigao kapacitet i predložiti prehod na agenciju ili dodavanje još jednog freelancera u tim. Moje iskustvo: jedan freelancer može voditi €15-20K spend, posle toga treba backup.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Pričajte sa freelancerom o planovima rasta. Dobar freelancer će vam reći kada je dostigao kapacitet i predložiti prehod na agenciju ili dodavanje još jednog freelancera u tim. Moje iskustvo: jedan freelancer može voditi €15-20K spend, posle toga treba backup.</p>
         </div>
       </div>
 
@@ -311,7 +311,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Varijabilna profesionalnost — kvalitet varira drastično</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Due diligence je ključan. Tražite reference, case studies, konkretne rezultate. Pitajte za pristup njihovim client nalozima (sa maskiranim podacima). Test period od 3 meseca sa jasnim KPI-jevima pre long-term commitovanja.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Due diligence je ključan. Tražite reference, case studies, konkretne rezultate. Pitajte za pristup njihovim client nalozima (sa maskiranim podacima). Test period od 3 meseca sa jasnim KPI-jevima pre long-term commitovanja.</p>
         </div>
       </div>
 
@@ -330,31 +330,31 @@ export default function AgencijaVsFreelancerPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Model</th>
-              <th className="py-3 px-4 font-heading font-semibold">Cena</th>
-              <th className="py-3 px-4 font-heading font-semibold">Za koga</th>
+              <th className="py-3 px-3 font-heading font-semibold">Model</th>
+              <th className="py-3 px-3 font-heading font-semibold">Cena</th>
+              <th className="py-3 px-3 font-heading font-semibold">Za koga</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Fiksna mesečna naknada</td>
-              <td className="py-3 px-4">€300-1,500</td>
-              <td className="py-3 px-4">Ongoing upravljanje, predvidiv scope</td>
+              <td className="py-3 px-3 font-medium">Fiksna mesečna naknada</td>
+              <td className="py-3 px-3">€300-1,500</td>
+              <td className="py-3 px-3">Ongoing upravljanje, predvidiv scope</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Satnica</td>
-              <td className="py-3 px-4">€25-80/sat</td>
-              <td className="py-3 px-4">Konsultacije, ad-hoc optimizacije</td>
+              <td className="py-3 px-3 font-medium">Satnica</td>
+              <td className="py-3 px-3">€25-80/sat</td>
+              <td className="py-3 px-3">Konsultacije, ad-hoc optimizacije</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Project-based</td>
-              <td className="py-3 px-4">€500-3,000</td>
-              <td className="py-3 px-4">Audit, setup, migracija naloga</td>
+              <td className="py-3 px-3 font-medium">Project-based</td>
+              <td className="py-3 px-3">€500-3,000</td>
+              <td className="py-3 px-3">Audit, setup, migracija naloga</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Retainer + performance bonus</td>
-              <td className="py-3 px-4">Kombinacija</td>
-              <td className="py-3 px-4">Uske niše, clear performance metrike</td>
+              <td className="py-3 px-3 font-medium">Retainer + performance bonus</td>
+              <td className="py-3 px-3">Kombinacija</td>
+              <td className="py-3 px-3">Uske niše, clear performance metrike</td>
             </tr>
           </tbody>
         </table>
@@ -372,8 +372,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Potpuna kontrola i instant komunikacija</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Vaša osoba, vaši prioriteti, vašu brzina. Nema čekanja na weekly call-ove ili monthly izveštaje.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Vaša osoba, vaši prioriteti, vašu brzina. Nema čekanja na weekly call-ove ili monthly izveštaje.</p>
+        <ul className="text-base">
           <li>Setujete prioritete po svojoj logici</li>
           <li>Instant pivoti bez pregovaranja sa eksternim partnerom</li>
           <li>Direktna integracija sa sales, product i customer support timom</li>
@@ -386,8 +386,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Duboko razumevanje biznisa</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">In-house osoba živi i diše vaš product, poznaje customer journey, razume margin strukturu i internal metrics.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">In-house osoba živi i diše vaš product, poznaje customer journey, razume margin strukturu i internal metrics.</p>
+        <ul className="text-base">
           <li>Poznavanje nijansi proizvoda/usluga koje eksterni partner ne vidi</li>
           <li>Razumevanje sezonalnosti, inventory limitova, operational constraints</li>
           <li>Bliska saradnja sa CEO-om ili founders (brže donošenje odluka)</li>
@@ -400,8 +400,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Dugoročna isplativost</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Za velike budžete (€20,000+), in-house postaje isplativiji od agencije nakon 12-18 meseci.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Za velike budžete (€20,000+), in-house postaje isplativiji od agencije nakon 12-18 meseci.</p>
+        <ul className="text-base">
           <li>€1,800 plata vs €2,500+ agencijski retainer za isti spend</li>
           <li>Nema markup-a na alate i software (direktno plaćate)</li>
           <li>Znanje ostaje u firmi kada budžet raste</li>
@@ -415,7 +415,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Teško naći dobre ljude — recruitment traje 1-3 meseca</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Dok tražite full-time osobu, angažujte freelancera kao bridge solution. Ili još bolje: angažujte freelancera da vam pomogne u recruitment procesu (intervjuiše kandidate, evaluira skills). Moje iskustvo: dobar PPC specialist u Srbiji se naći za 2-3 meseca ako znate šta tražite.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Dok tražite full-time osobu, angažujte freelancera kao bridge solution. Ili još bolje: angažujte freelancera da vam pomogne u recruitment procesu (intervjuiše kandidate, evaluira skills). Moje iskustvo: dobar PPC specialist u Srbiji se naći za 2-3 meseca ako znate šta tražite.</p>
         </div>
       </div>
 
@@ -423,7 +423,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Rizik od stagnacije — osoba gubi touch sa industry best practices</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Budžetirajte €1,000-2,000 godišnje za konferencije, online courses i networking. Preporučujem i quarterly audit sa eksternim konsultantom kao "quality check". Ovaj hibridni model (in-house + quarterly consultant review) je odličan za mid-size firme.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Budžetirajte €1,000-2,000 godišnje za konferencije, online courses i networking. Preporučujem i quarterly audit sa eksternim konsultantom kao "quality check". Ovaj hibridni model (in-house + quarterly consultant review) je odličan za mid-size firme.</p>
         </div>
       </div>
 
@@ -431,7 +431,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Rizik od odlaska — gubite znanje kada osoba napusti firmu</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Dokumentacija je ključna. Insistirajte na pisanju SOPs (standard operating procedures) za sve kampanje, dokumentaciji strategija, i jasnoj strukturi naloga. Koristite alate poput Notion ili Confluence za knowledge base. Kada osoba da otkaz, imate 1-2 meseca notice perioda da transferujete znanje.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Dokumentacija je ključna. Insistirajte na pisanju SOPs (standard operating procedures) za sve kampanje, dokumentaciji strategija, i jasnoj strukturi naloga. Koristite alate poput Notion ili Confluence za knowledge base. Kada osoba da otkaz, imate 1-2 meseca notice perioda da transferujete znanje.</p>
         </div>
       </div>
 
@@ -450,44 +450,44 @@ export default function AgencijaVsFreelancerPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Pozicija</th>
-              <th className="py-3 px-4 font-heading font-semibold">Bruto mesečna plata</th>
-              <th className="py-3 px-4 font-heading font-semibold">Alati</th>
-              <th className="py-3 px-4 font-heading font-semibold">Total trošak</th>
+              <th className="py-3 px-3 font-heading font-semibold">Pozicija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Bruto mesečna plata</th>
+              <th className="py-3 px-3 font-heading font-semibold">Alati</th>
+              <th className="py-3 px-3 font-heading font-semibold">Total trošak</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Junior PPC Specialist</td>
-              <td className="py-3 px-4">€800-1,200</td>
-              <td className="py-3 px-4">€100-200</td>
-              <td className="py-3 px-4">€900-1,400</td>
+              <td className="py-3 px-3 font-medium">Junior PPC Specialist</td>
+              <td className="py-3 px-3">€800-1,200</td>
+              <td className="py-3 px-3">€100-200</td>
+              <td className="py-3 px-3">€900-1,400</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Mid-Level PPC Specialist</td>
-              <td className="py-3 px-4">€1,200-1,800</td>
-              <td className="py-3 px-4">€150-300</td>
-              <td className="py-3 px-4">€1,350-2,100</td>
+              <td className="py-3 px-3 font-medium">Mid-Level PPC Specialist</td>
+              <td className="py-3 px-3">€1,200-1,800</td>
+              <td className="py-3 px-3">€150-300</td>
+              <td className="py-3 px-3">€1,350-2,100</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Senior PPC Specialist</td>
-              <td className="py-3 px-4">€1,800-2,500</td>
-              <td className="py-3 px-4">€200-400</td>
-              <td className="py-3 px-4">€2,000-2,900</td>
+              <td className="py-3 px-3 font-medium">Senior PPC Specialist</td>
+              <td className="py-3 px-3">€1,800-2,500</td>
+              <td className="py-3 px-3">€200-400</td>
+              <td className="py-3 px-3">€2,000-2,900</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Head of Performance Marketing</td>
-              <td className="py-3 px-4">€2,500-4,000</td>
-              <td className="py-3 px-4">€300-500</td>
-              <td className="py-3 px-4">€2,800-4,500</td>
+              <td className="py-3 px-3 font-medium">Head of Performance Marketing</td>
+              <td className="py-3 px-3">€2,500-4,000</td>
+              <td className="py-3 px-3">€300-500</td>
+              <td className="py-3 px-3">€2,800-4,500</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <p className="text-sm text-gray-600">+ Obuke i sertifikacije: €500-2,000 godišnje po osobi</p>
-      <p className="text-sm text-gray-600">+ Recruitment trošak: €500-1,500 (HR agencije, oglasi)</p>
-      <p className="text-sm text-gray-600">+ Vreme do productive capacity: 1-3 meseca onboarding</p>
+      <p className="text-base text-gray-600">+ Obuke i sertifikacije: €500-2,000 godišnje po osobi</p>
+      <p className="text-base text-gray-600">+ Recruitment trošak: €500-1,500 (HR agencije, oglasi)</p>
+      <p className="text-base text-gray-600">+ Vreme do productive capacity: 1-3 meseca onboarding</p>
 
       <hr />
 
@@ -500,66 +500,66 @@ export default function AgencijaVsFreelancerPost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Kriterijum</th>
-              <th className="py-3 px-4 font-heading font-semibold">Agencija</th>
-              <th className="py-3 px-4 font-heading font-semibold">Freelancer</th>
-              <th className="py-3 px-4 font-heading font-semibold">In-house</th>
+              <th className="py-3 px-3 font-heading font-semibold">Kriterijum</th>
+              <th className="py-3 px-3 font-heading font-semibold">Agencija</th>
+              <th className="py-3 px-3 font-heading font-semibold">Freelancer</th>
+              <th className="py-3 px-3 font-heading font-semibold">In-house</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Mesečni trošak</td>
-              <td className="py-3 px-4">€500-3,000+</td>
-              <td className="py-3 px-4">€300-1,500</td>
-              <td className="py-3 px-4">€1,000-2,500+</td>
+              <td className="py-3 px-3 font-medium">Mesečni trošak</td>
+              <td className="py-3 px-3">€500-3,000+</td>
+              <td className="py-3 px-3">€300-1,500</td>
+              <td className="py-3 px-3">€1,000-2,500+</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Brzina početka</td>
-              <td className="py-3 px-4">1-2 nedelje</td>
-              <td className="py-3 px-4">Odmah (1-3 dana)</td>
-              <td className="py-3 px-4">1-3 meseca (recruitment + onboarding)</td>
+              <td className="py-3 px-3 font-medium">Brzina početka</td>
+              <td className="py-3 px-3">1-2 nedelje</td>
+              <td className="py-3 px-3">Odmah (1-3 dana)</td>
+              <td className="py-3 px-3">1-3 meseca (recruitment + onboarding)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Ekspertiza</td>
-              <td className="py-3 px-4">Široka, multi-industry</td>
-              <td className="py-3 px-4">Duboka, specifična niša</td>
-              <td className="py-3 px-4">Zavisi od skills osobe</td>
+              <td className="py-3 px-3 font-medium">Ekspertiza</td>
+              <td className="py-3 px-3">Široka, multi-industry</td>
+              <td className="py-3 px-3">Duboka, specifična niša</td>
+              <td className="py-3 px-3">Zavisi od skills osobe</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Skalabilnost</td>
-              <td className="py-3 px-4">Visoka (dodaju resurse po potrebi)</td>
-              <td className="py-3 px-4">Ograničena (max €15-20K spend)</td>
-              <td className="py-3 px-4">Srednja (zahteva hiring više ljudi)</td>
+              <td className="py-3 px-3 font-medium">Skalabilnost</td>
+              <td className="py-3 px-3">Visoka (dodaju resurse po potrebi)</td>
+              <td className="py-3 px-3">Ograničena (max €15-20K spend)</td>
+              <td className="py-3 px-3">Srednja (zahteva hiring više ljudi)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Komunikacija</td>
-              <td className="py-3 px-4">Formalnija, preko account managera</td>
-              <td className="py-3 px-4">Direktna, Slack/WhatsApp</td>
-              <td className="py-3 px-4">Instant, face-to-face</td>
+              <td className="py-3 px-3 font-medium">Komunikacija</td>
+              <td className="py-3 px-3">Formalnija, preko account managera</td>
+              <td className="py-3 px-3">Direktna, Slack/WhatsApp</td>
+              <td className="py-3 px-3">Instant, face-to-face</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Rizik</td>
-              <td className="py-3 px-4">Niži (tim, backup, struktura)</td>
-              <td className="py-3 px-4">Srednji (single point of failure)</td>
-              <td className="py-3 px-4">Viši (recruitment, retention, stagnacija)</td>
+              <td className="py-3 px-3 font-medium">Rizik</td>
+              <td className="py-3 px-3">Niži (tim, backup, struktura)</td>
+              <td className="py-3 px-3">Srednji (single point of failure)</td>
+              <td className="py-3 px-3">Viši (recruitment, retention, stagnacija)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Transparentnost</td>
-              <td className="py-3 px-4">Formalni izveštaji, često generic</td>
-              <td className="py-3 px-4">Vrlo transparentno, direktan pristup</td>
-              <td className="py-3 px-4">Potpuna transparentnost</td>
+              <td className="py-3 px-3 font-medium">Transparentnost</td>
+              <td className="py-3 px-3">Formalni izveštaji, često generic</td>
+              <td className="py-3 px-3">Vrlo transparentno, direktan pristup</td>
+              <td className="py-3 px-3">Potpuna transparentnost</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Fleksibilnost</td>
-              <td className="py-3 px-4">Ugovori 6-12 meseci, rigidni scope</td>
-              <td className="py-3 px-4">30-day notice, fleksibilan scope</td>
-              <td className="py-3 px-4">Potpuna kontrola</td>
+              <td className="py-3 px-3 font-medium">Fleksibilnost</td>
+              <td className="py-3 px-3">Ugovori 6-12 meseci, rigidni scope</td>
+              <td className="py-3 px-3">30-day notice, fleksibilan scope</td>
+              <td className="py-3 px-3">Potpuna kontrola</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Multi-channel capability</td>
-              <td className="py-3 px-4">Visoka (Google + Meta + LinkedIn)</td>
-              <td className="py-3 px-4">Niska (obično 1-2 kanala max)</td>
-              <td className="py-3 px-4">Zavisi od skills osobe</td>
+              <td className="py-3 px-3 font-medium">Multi-channel capability</td>
+              <td className="py-3 px-3">Visoka (Google + Meta + LinkedIn)</td>
+              <td className="py-3 px-3">Niska (obično 1-2 kanala max)</td>
+              <td className="py-3 px-3">Zavisi od skills osobe</td>
             </tr>
           </tbody>
         </table>
@@ -576,11 +576,11 @@ export default function AgencijaVsFreelancerPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €0-2,000/mesec</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mala firma ili startup</h3>
-          <p className="text-sm text-gray-600 mb-3">Budžet je ograničen, potrebna vam je brzina i fleksibilnost.</p>
+          <p className="text-base text-gray-600 mb-3">Budžet je ograničen, potrebna vam je brzina i fleksibilnost.</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Preporučujem:</p>
-          <p className="text-sm mb-3">Freelancer (€300-500/mesec) ili DIY + konsultacije (€80-120/sat po potrebi)</p>
+          <p className="text-base mb-3">Freelancer (€300-500/mesec) ili DIY + konsultacije (€80-120/sat po potrebi)</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Zašto:</p>
-          <ul className="text-sm">
+          <ul className="text-base">
             <li>Agencija nije isplativa (40%+ fee)</li>
             <li>Brz start (1-3 dana)</li>
             <li>Fleksibilan scope dok tražite product-market fit</li>
@@ -590,11 +590,11 @@ export default function AgencijaVsFreelancerPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €2,000-10,000/mesec</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mid-size firma (solo fokus)</h3>
-          <p className="text-sm text-gray-600 mb-3">Stabilan biznis, fokus na Google Ads kao primarni kanal.</p>
+          <p className="text-base text-gray-600 mb-3">Stabilan biznis, fokus na Google Ads kao primarni kanal.</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Preporučujem:</p>
-          <p className="text-sm mb-3">Freelancer (€500-1,200/mesec) ili manja specijalizovana agencija (€800-1,500/mesec)</p>
+          <p className="text-base mb-3">Freelancer (€500-1,200/mesec) ili manja specijalizovana agencija (€800-1,500/mesec)</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Zašto:</p>
-          <ul className="text-sm">
+          <ul className="text-base">
             <li>Sweet spot za freelancer ekspertizu</li>
             <li>Dobra vrednost za novac</li>
             <li>Direktna komunikacija još uvek bitna</li>
@@ -604,11 +604,11 @@ export default function AgencijaVsFreelancerPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €10,000-30,000/mesec</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Rastuća firma (multi-channel)</h3>
-          <p className="text-sm text-gray-600 mb-3">Potreban vam je multi-channel pristup i veći kapacitet.</p>
+          <p className="text-base text-gray-600 mb-3">Potreban vam je multi-channel pristup i veći kapacitet.</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Preporučujem:</p>
-          <p className="text-sm mb-3">Agencija (€1,500-2,500/mesec) ili hibrid (in-house koordinator + freelancer/agencija)</p>
+          <p className="text-base mb-3">Agencija (€1,500-2,500/mesec) ili hibrid (in-house koordinator + freelancer/agencija)</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Zašto:</p>
-          <ul className="text-sm">
+          <ul className="text-base">
             <li>Multi-channel ekspertiza (Google + Meta + email)</li>
             <li>Skalabilnost kako raste budžet</li>
             <li>Freelancer dostiže capacity limit</li>
@@ -618,11 +618,11 @@ export default function AgencijaVsFreelancerPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €30,000+/mesec</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Enterprise firma</h3>
-          <p className="text-sm text-gray-600 mb-3">Marketing je core funkcija, dugoročna strategija ključna.</p>
+          <p className="text-base text-gray-600 mb-3">Marketing je core funkcija, dugoročna strategija ključna.</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Preporučujem:</p>
-          <p className="text-sm mb-3">In-house tim (€2,000-4,000/mesec) + quarterly consultant review ili full-service agencija</p>
+          <p className="text-base mb-3">In-house tim (€2,000-4,000/mesec) + quarterly consultant review ili full-service agencija</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Zašto:</p>
-          <ul className="text-sm">
+          <ul className="text-base">
             <li>Potpuna kontrola nad strategijom i podacima</li>
             <li>Isplativije dugoročno od agencije</li>
             <li>Znanje ostaje u firmi</li>
@@ -648,8 +648,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Iskustvo u vašoj industriji</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Partner koji je već radio sa klijentima iz vaše industrije će brže razumeti vašu nišu i doneti rezultate.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Partner koji je već radio sa klijentima iz vaše industrije će brže razumeti vašu nišu i doneti rezultate.</p>
+        <ul className="text-base">
           <li><strong>Pitajte:</strong> "Imate li case study ili klijenta iz [vaša industrija]?"</li>
           <li><strong>Red flag:</strong> Partner tvrdi da zna sve industrije podjednako</li>
           <li><strong>Moja preporuka:</strong> Relevant experience &gt; generalno iskustvo</li>
@@ -661,8 +661,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Transparentnost oko pristupa i vlasništva naloga</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Vi MORATE imati admin pristup svom Google Ads nalogu. Bez izuzetaka.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Vi MORATE imati admin pristup svom Google Ads nalogu. Bez izuzetaka.</p>
+        <ul className="text-base">
           <li><strong>Pitajte:</strong> "Da li ću imati admin pristup nalogu?"</li>
           <li><strong>Red flag:</strong> Partner insistira da on kontroliše nalog "zbog sigurnosti"</li>
           <li><strong>Moja preporuka:</strong> Ovo je deal-breaker. Ako partner ne želi dati pristup, bežite.</li>
@@ -674,8 +674,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Komunikacijski stil i response time</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Kvalitet pre-sales komunikacije je najbolji indikator buduće saradnje. Ako je spor i nejasan sada, biće još gori kasnije.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Kvalitet pre-sales komunikacije je najbolji indikator buduće saradnje. Ako je spor i nejasan sada, biće još gori kasnije.</p>
+        <ul className="text-base">
           <li><strong>Testirajte:</strong> Pošaljite follow-up pitanje i merite response time</li>
           <li><strong>Red flag:</strong> Odgovara nakon 3-5 dana ili daje generičke odgovore</li>
           <li><strong>Moja preporuka:</strong> Dobar partner odgovara u roku 24h sa konkretnim odgovorima</li>
@@ -687,8 +687,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Jasno definisan proces rada</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Partner treba da vam objasni tačno kako izgleda prva 3 meseca, ko radi šta, i kako merite uspeh.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Partner treba da vam objasni tačno kako izgleda prva 3 meseca, ko radi šta, i kako merite uspeh.</p>
+        <ul className="text-base">
           <li><strong>Pitajte:</strong> "Kako izgleda onboarding process? Šta se dešava u prvom mesecu?"</li>
           <li><strong>Red flag:</strong> Generički odgovor "optimizujemo kampanje i šaljemo izveštaje"</li>
           <li><strong>Moja preporuka:</strong> Dobar partner ima written process sa jasnim milestones</li>
@@ -700,8 +700,8 @@ export default function AgencijaVsFreelancerPost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Realistična očekivanja (ne garantuje rezultate)</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Dobar partner će vam reći šta je moguće, ali neće garantovati specifične rezultate pre nego što vidi vaš nalog i industriju.</p>
-        <ul className="text-sm">
+        <p className="text-base text-gray-600 mb-3">Dobar partner će vam reći šta je moguće, ali neće garantovati specifične rezultate pre nego što vidi vaš nalog i industriju.</p>
+        <ul className="text-base">
           <li><strong>Pitajte:</strong> "Kakve rezultate mogu očekivati u prva 3 meseca?"</li>
           <li><strong>Red flag:</strong> "Garantujemo ROAS 5x" ili "Dovodimo 100 conversions mesečno"</li>
           <li><strong>Moja preporuka:</strong> Dobar odgovor je "Zavisi od industrije, ali obično vidimo X% poboljšanje u prva 3 meseca"</li>
@@ -719,7 +719,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Red Flag #1</p>
         <p className="font-semibold mb-2">Ne žele da vam daju admin pristup nalogu</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Zašto je problem:</strong> To znači da partner misli da je nalog "njihov", ne vaš. Kada prekinete saradnju, možete ostati bez pristupa podacima i istoriji kampanja. Ovo je neprihvatljivo.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Zašto je problem:</strong> To znači da partner misli da je nalog "njihov", ne vaš. Kada prekinete saradnju, možete ostati bez pristupa podacima i istoriji kampanja. Ovo je neprihvatljivo.</p>
         </div>
       </div>
 
@@ -727,7 +727,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Red Flag #2</p>
         <p className="font-semibold mb-2">Garantuju specifične rezultate PRE audita naloga</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Zašto je problem:</strong> Nemoguće je garantovati ROAS 5x ili CPA €20 bez detaljne analize naloga, industrije, website-a i trenutnih performansi. Ovo je ili neserioznost ili prodajni trik.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Zašto je problem:</strong> Nemoguće je garantovati ROAS 5x ili CPA €20 bez detaljne analize naloga, industrije, website-a i trenutnih performansi. Ovo je ili neserioznost ili prodajni trik.</p>
         </div>
       </div>
 
@@ -735,7 +735,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Red Flag #3</p>
         <p className="font-semibold mb-2">Insistiraju na dugim ugovorima bez trial perioda (12+ meseci)</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Zašto je problem:</strong> Dobri partneri su sigurni u svoje rezultate i ne trebaju lock-in period. Standard je 3-6 meseci sa 30-day notice klauzulom. Duži ugovori su red flag.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Zašto je problem:</strong> Dobri partneri su sigurni u svoje rezultate i ne trebaju lock-in period. Standard je 3-6 meseci sa 30-day notice klauzulom. Duži ugovori su red flag.</p>
         </div>
       </div>
 
@@ -743,7 +743,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Red Flag #4</p>
         <p className="font-semibold mb-2">Ne mogu da objasne šta konkretno rade (generic pitches)</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Zašto je problem:</strong> Ako partner ne može da objasni svoj proces jasnim rečima, ili koristi samo buzzwords ("AI optimization", "machine learning campaigns"), verovatno ne znaju šta rade.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Zašto je problem:</strong> Ako partner ne može da objasni svoj proces jasnim rečima, ili koristi samo buzzwords ("AI optimization", "machine learning campaigns"), verovatno ne znaju šta rade.</p>
         </div>
       </div>
 
@@ -751,7 +751,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Red Flag #5</p>
         <p className="font-semibold mb-2">Spor response time od prvog kontakta (3+ dana)</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Zašto je problem:</strong> Ako ne mogu da odgovore brzo dok pokušavaju da vas dobiju kao klijenta, kako mislite da će komunikacija izgledati kasnije? Ovo je najbolji indikator buduće saradnje.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Zašto je problem:</strong> Ako ne mogu da odgovore brzo dok pokušavaju da vas dobiju kao klijenta, kako mislite da će komunikacija izgledati kasnije? Ovo je najbolji indikator buduće saradnje.</p>
         </div>
       </div>
 
@@ -759,7 +759,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Red Flag #6</p>
         <p className="font-semibold mb-2">Nemaju reference ili case studies u vašoj (ili sličnoj) industriji</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Zašto je problem:</strong> Svaka industrija ima svoje specifičnosti. Partner bez relevant experience će utrošiti vaš budžet učeći basics koje bi trebalo već da znaju. Tražite minimum 2-3 slična klijenta.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Zašto je problem:</strong> Svaka industrija ima svoje specifičnosti. Partner bez relevant experience će utrošiti vaš budžet učeći basics koje bi trebalo već da znaju. Tražite minimum 2-3 slična klijenta.</p>
         </div>
       </div>
 
@@ -767,13 +767,13 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Red Flag #7</p>
         <p className="font-semibold mb-2">Cena je "previše dobra da bi bila istinita" (€150-200 za upravljanje)</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Zašto je problem:</strong> Kvalitetan PPC specialist ne može raditi za €200/mesec i pružiti dobru uslugu. To znači ili da ste jedan od 20+ klijenata (nula pažnje), ili je osoba junior bez iskustva. Minimum za kvalitetan rad je €300-400.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Zašto je problem:</strong> Kvalitetan PPC specialist ne može raditi za €200/mesec i pružiti dobru uslugu. To znači ili da ste jedan od 20+ klijenata (nula pažnje), ili je osoba junior bez iskustva. Minimum za kvalitetan rad je €300-400.</p>
         </div>
       </div>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Zlatno pravilo izbora partnera</p>
-        <p className="text-sm text-yellow-900 mb-0">Ako imate loš gut feeling tokom razgovora, to je obično tačno. Ne ignoriše instinkt. Saradnja sa pogrešnim partnerom će vas koštati 10x više od cene usluge.</p>
+        <p className="text-base text-yellow-900 mb-0">Ako imate loš gut feeling tokom razgovora, to je obično tačno. Ne ignoriše instinkt. Saradnja sa pogrešnim partnerom će vas koštati 10x više od cene usluge.</p>
       </div>
 
       <hr />
@@ -785,7 +785,7 @@ export default function AgencijaVsFreelancerPost() {
           Da li mala firma treba Google Ads agenciju ili je freelancer dovoljan?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Za male firme sa budžetom do €2,000-3,000 mesečno, freelancer je obično bolja opcija. Dobijate više personalizovane pažnje za istu ili nižu cenu. Agencija ima smisla kada prekoračite €5,000 spend ili vam treba multi-channel pristup (Google + Meta + LinkedIn). Moje iskustvo: 80% malih firmi u Srbiji bolje prolazi sa freelancerom nego sa agencijom.
         </div>
       </details>
@@ -795,7 +795,7 @@ export default function AgencijaVsFreelancerPost() {
           Koliko košta Google Ads agencija u Srbiji - cene 2026?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Cene Google Ads agencija u Srbiji variraju od €400-500 za manje agencije do €1,500-3,000+ za veće, etablirane agencije. Model procenta od ad spend-a je obično 10-20% (najčešće 12-15%). Freelanceri naplaćuju €300-1,500 mesečno zavisno od obima posla. Preporučujem da tražite barem 2-3 ponude i uporedite ne samo cenu, već i scope rada i komunikacijski stil.
         </div>
       </details>
@@ -805,7 +805,7 @@ export default function AgencijaVsFreelancerPost() {
           Može li freelancer da vodi veliki budžet (€20,000+)?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Da, ali samo ako ima pravo iskustvo i kapacitet. Moje iskustvo pokazuje da jedan senior freelancer može efikasno voditi do €15-20K spend, posle čega capacity postaje problem. Za budžete preko €20,000 mesečno, preporučujem ili veoma iskusnog freelancera (sa 5+ godina) koji ima backup sistem, ili agenciju. Alternativa je hibridni model: dva freelancera koja pokrivaju različite kanale.
         </div>
       </details>
@@ -815,7 +815,7 @@ export default function AgencijaVsFreelancerPost() {
           Šta je bolje za eCommerce - agencija ili freelancer?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Zavisi od kompleksnosti vašeg eCommerce poslovanja. Za čist Google Shopping + Search kampanje sa jednim kanalom, specijalizovani freelancer može biti odličan i cost-effective. Za multi-channel pristup (Google + Meta + email marketing + retargeting), agencija ima više smisla jer vam treba šira ekspertiza. Preporučujem: ispod €8,000 spend → freelancer, iznad €8,000 → agencija ili hibrid.
         </div>
       </details>
@@ -825,7 +825,7 @@ export default function AgencijaVsFreelancerPost() {
           Kako proveriti kvalitet Google Ads agencije ili freelancera?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Pet koraka za proveru kvaliteta: (1) Tražite reference iz vaše ili slične industrije (minimum 2-3), (2) Pitajte za pristup njihovim client nalozima (sa maskiranim podacima) da vidite setup, (3) Proverite kako komuniciraju PRE angažovanja (response time, jasnoća odgovora), (4) Tražite da objasne konkretno šta će raditi u prva 3 meseca, (5) Insistirajte na trial periodu od 3 meseca sa clear KPI-jevima. Kvalitet pre-sales komunikacije obično odražava kvalitet buduće saradnje.
         </div>
       </details>
@@ -835,7 +835,7 @@ export default function AgencijaVsFreelancerPost() {
           Kada prebaciti sa freelancera na agenciju (ili obrnuto)?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Prelazak sa freelancera na agenciju ima smisla kada: (1) Ad spend prelazi €10,000-15,000 i freelancer dostiže capacity, (2) Trebaju vam dodatni kanali koje freelancer ne pokriva, (3) Potrebna vam je veća skalabilnost i backup tim. Prelazak sa agencije na freelancera ima smisla kada: (1) Smanjite budžet ispod €5,000, (2) Želite više personalizovane pažnje i direktne komunikacije, (3) Agencija daje generic service bez prave vrednosti. Moj savet: test period od 3 meseca pre full commitment-a.
         </div>
       </details>
@@ -846,7 +846,7 @@ export default function AgencijaVsFreelancerPost() {
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
           Ne znate koji model je pravi za vas?
         </p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           Zakažite besplatnu 30-minutnu konsultaciju i zajedno ćemo analizirati vašu situaciju, budžet i ciljeve. Dobiću vam objektivan pogled (čak i ako to znači da vam ne treba freelancer kao ja).
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
@@ -898,7 +898,7 @@ export default function AgencijaVsFreelancerPost() {
             Koliko košta Google Ads agencija?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             U Srbiji: €200-600/mesečno za manje agencije, €800-2,000+ za veće. U UK/USA: £500-2,000+ za mid-range, £3,000-10,000+ za enterprise. Većina radi na fiksnom retainer-u ili procentu od ad spend-a (10-20%).
           </div>
         </details>
@@ -908,7 +908,7 @@ export default function AgencijaVsFreelancerPost() {
             Freelancer ili agencija — šta je bolje za mali biznis?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Za budžete do €1,000/mesečno ad spend, freelancer je obično bolji izbor — niži troškovi, direktna komunikacija, veća posvećenost. Agencija ima smisla kad trebate multi-channel pristup ili imate budžet €3,000+/mesečno.
           </div>
         </details>
@@ -918,7 +918,7 @@ export default function AgencijaVsFreelancerPost() {
             Kako prepoznati lošu Google Ads agenciju?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Red flags: ne daju pristup Google Ads nalogu, obećavaju garantovane rezultate, nemaju case studies, ne objašnjavaju strategiju, koriste samo Smart kampanje, ne postavljaju conversion tracking, ili zahtevaju dugoročne ugovore bez izlazne klauzule.
           </div>
         </details>
@@ -928,7 +928,7 @@ export default function AgencijaVsFreelancerPost() {
             Da li mogu prebaciti nalog sa jedne agencije na drugu?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, vaš Google Ads nalog je vaš — agencija ima samo pristup. Proverite da je nalog registrovan na vašu email adresu. Pri prelasku, tražite full access od stare agencije, zadržite istoriju kampanja i konverzija, i napravite backup pre promena.
           </div>
         </details>
@@ -938,7 +938,7 @@ export default function AgencijaVsFreelancerPost() {
             Šta da tražim u ugovoru sa agencijom?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Ključne tačke: jasno definisan scope rada, mesečni reporting, pristup nalogu, otkazni rok (30 dana je fer), ko je vlasnik naloga, kakav je onboarding proces, i šta se dešava sa kampanjama po raskidu saradnje.
           </div>
         </details>

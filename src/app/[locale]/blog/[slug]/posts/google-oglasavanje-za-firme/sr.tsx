@@ -31,16 +31,16 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto-je-google-oglasavanje-efikasno-za-firme" className="text-sm text-gray-700 hover:text-primary underline">Zašto je Google oglašavanje efikasno za firme</a></li>
-          <li><a href="#kako-funkcionise-google-oglasavanje" className="text-sm text-gray-700 hover:text-primary underline">Kako funkcioniše Google oglašavanje</a></li>
-          <li><a href="#tipovi-google-ads-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Tipovi Google Ads kampanja</a></li>
-          <li><a href="#google-oglasavanje-za-ecommerce" className="text-sm text-gray-700 hover:text-primary underline">Google oglašavanje za eCommerce</a></li>
-          <li><a href="#google-oglasavanje-za-b2b-firme" className="text-sm text-gray-700 hover:text-primary underline">Google oglašavanje za B2B firme</a></li>
-          <li><a href="#kako-postaviti-temelje-za-uspesne-kampanje" className="text-sm text-gray-700 hover:text-primary underline">Kako postaviti temelje za uspešne kampanje</a></li>
-          <li><a href="#najcesce-greske-u-google-oglasavanju" className="text-sm text-gray-700 hover:text-primary underline">Najčešće greške u Google oglašavanju</a></li>
-          <li><a href="#kako-meriti-uspeh-kampanja" className="text-sm text-gray-700 hover:text-primary underline">Kako meriti uspeh kampanja</a></li>
-          <li><a href="#cesto-postavljana-pitanja" className="text-sm text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
-          <li><a href="#najcesca-pitanja-o-google-oglasavanju-za-firme" className="text-sm text-gray-700 hover:text-primary underline">Najčešća pitanja o Google oglašavanju za firme</a></li>
+          <li><a href="#zasto-je-google-oglasavanje-efikasno-za-firme" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto je Google oglašavanje efikasno za firme</a></li>
+          <li><a href="#kako-funkcionise-google-oglasavanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako funkcioniše Google oglašavanje</a></li>
+          <li><a href="#tipovi-google-ads-kampanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tipovi Google Ads kampanja</a></li>
+          <li><a href="#google-oglasavanje-za-ecommerce" className="block py-1 text-base text-gray-700 hover:text-primary underline">Google oglašavanje za eCommerce</a></li>
+          <li><a href="#google-oglasavanje-za-b2b-firme" className="block py-1 text-base text-gray-700 hover:text-primary underline">Google oglašavanje za B2B firme</a></li>
+          <li><a href="#kako-postaviti-temelje-za-uspesne-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako postaviti temelje za uspešne kampanje</a></li>
+          <li><a href="#najcesce-greske-u-google-oglasavanju" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešće greške u Google oglašavanju</a></li>
+          <li><a href="#kako-meriti-uspeh-kampanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako meriti uspeh kampanja</a></li>
+          <li><a href="#cesto-postavljana-pitanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
+          <li><a href="#najcesca-pitanja-o-google-oglasavanju-za-firme" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja o Google oglašavanju za firme</a></li>
         </ol>
       </nav>
 
@@ -59,7 +59,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Razlika između Google Ads i društvenih mreža</p>
-        <p className="text-blue-800 text-sm mb-0">Na društvenim mrežama &quot;upadate&quot; korisnike dok oni konzumiraju sadržaj. Na Google-u, korisnici vas aktivno traže. Zbog toga Google Ads obično donosi manji volume, ali kvalitetniji saobraćaj sa višim intent-om.</p>
+        <p className="text-blue-800 text-base mb-0">Na društvenim mrežama &quot;upadate&quot; korisnike dok oni konzumiraju sadržaj. Na Google-u, korisnici vas aktivno traže. Zbog toga Google Ads obično donosi manji volume, ali kvalitetniji saobraćaj sa višim intent-om.</p>
       </div>
 
       <hr />
@@ -85,7 +85,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Dublje o Quality Score-u</p>
-        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako poboljšati Quality Score i smanjiti troškove, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline font-semibold">Quality Score vodič</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">Za detaljan vodič kako poboljšati Quality Score i smanjiti troškove, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline font-semibold">Quality Score vodič</Link>.</p>
       </div>
 
       <h3>Google Ads mreže</h3>
@@ -95,36 +95,36 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Mreža</th>
-              <th className="py-3 px-4 font-heading font-semibold">Gde se prikazuju oglasi</th>
-              <th className="py-3 px-4 font-heading font-semibold">Tip kampanje</th>
+              <th className="py-3 px-3 font-heading font-semibold">Mreža</th>
+              <th className="py-3 px-3 font-heading font-semibold">Gde se prikazuju oglasi</th>
+              <th className="py-3 px-3 font-heading font-semibold">Tip kampanje</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Search</td>
-              <td className="py-3 px-4">Google.com rezultati pretrage</td>
-              <td className="py-3 px-4">Search, Shopping</td>
+              <td className="py-3 px-3 font-medium">Search</td>
+              <td className="py-3 px-3">Google.com rezultati pretrage</td>
+              <td className="py-3 px-3">Search, Shopping</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Display</td>
-              <td className="py-3 px-4">2+ miliona web sajtova i aplikacija</td>
-              <td className="py-3 px-4">Display, Remarketing</td>
+              <td className="py-3 px-3 font-medium">Display</td>
+              <td className="py-3 px-3">2+ miliona web sajtova i aplikacija</td>
+              <td className="py-3 px-3">Display, Remarketing</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">YouTube</td>
-              <td className="py-3 px-4">Pre/tokom/posle video sadržaja</td>
-              <td className="py-3 px-4">Video kampanje</td>
+              <td className="py-3 px-3 font-medium">YouTube</td>
+              <td className="py-3 px-3">Pre/tokom/posle video sadržaja</td>
+              <td className="py-3 px-3">Video kampanje</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Discover</td>
-              <td className="py-3 px-4">Google Discover feed, Gmail</td>
-              <td className="py-3 px-4">Demand Gen</td>
+              <td className="py-3 px-3 font-medium">Discover</td>
+              <td className="py-3 px-3">Google Discover feed, Gmail</td>
+              <td className="py-3 px-3">Demand Gen</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Maps</td>
-              <td className="py-3 px-4">Google Maps rezultati</td>
-              <td className="py-3 px-4">Local kampanje</td>
+              <td className="py-3 px-3 font-medium">Maps</td>
+              <td className="py-3 px-3">Google Maps rezultati</td>
+              <td className="py-3 px-3">Local kampanje</td>
             </tr>
           </tbody>
         </table>
@@ -139,91 +139,91 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Najviši intent</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search Kampanje</h3>
-          <p className="text-sm text-gray-600 mb-3">Tekstualni oglasi koji se prikazuju na vrhu Google pretrage kada ljudi traže specifične ključne reči.</p>
+          <p className="text-base text-gray-600 mb-3">Tekstualni oglasi koji se prikazuju na vrhu Google pretrage kada ljudi traže specifične ključne reči.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">Kada koristiti:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>Proizvod/usluga sa jasnom potražnjom</li>
             <li>Ljudi aktivno traže ono što nudite</li>
             <li>Želite visok intent saobraćaj</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Idealno za:</p>
-          <p className="text-sm text-gray-600 mb-0">B2B usluge, lokalni biznisi, SaaS, eCommerce (uz Shopping)</p>
+          <p className="text-base text-gray-600 mb-0">B2B usluge, lokalni biznisi, SaaS, eCommerce (uz Shopping)</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Vizuelno poređenje</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping Kampanje</h3>
-          <p className="text-sm text-gray-600 mb-3">Vizuelni oglasi sa slikom proizvoda, cenom i nazivom prodavnice. Prikazuju se na vrhu Google pretrage i u Shopping tabu.</p>
+          <p className="text-base text-gray-600 mb-3">Vizuelni oglasi sa slikom proizvoda, cenom i nazivom prodavnice. Prikazuju se na vrhu Google pretrage i u Shopping tabu.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">Kada koristiti:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>Imate online prodavnicu</li>
             <li>Prodajete fizičke proizvode</li>
             <li>Imate konkurentne cene</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Zahtevi:</p>
-          <p className="text-sm text-gray-600 mb-0">Google Merchant Center nalog, product feed, povezan sa Google Ads-om</p>
+          <p className="text-base text-gray-600 mb-0">Google Merchant Center nalog, product feed, povezan sa Google Ads-om</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Automatizacija</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max (PMax)</h3>
-          <p className="text-sm text-gray-600 mb-3">Google-ova &quot;sve u jednom&quot; kampanja koja automatski prikazuje oglase na svim mrežama (Search, Shopping, Display, YouTube, Discover).</p>
+          <p className="text-base text-gray-600 mb-3">Google-ova &quot;sve u jednom&quot; kampanja koja automatski prikazuje oglase na svim mrežama (Search, Shopping, Display, YouTube, Discover).</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">Kada koristiti:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>Imate dovoljno conversion data (50+ mesečno idealno)</li>
             <li>Želite skaliranje uz manje ručnog rada</li>
             <li>Spremni ste da prepustite kontrolu algoritmu</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Napomena:</p>
-          <p className="text-sm text-gray-600 mb-0">PMax je &quot;crna kutija&quot; — imate manje kontrole i uvida. Preporučujem da počnete sa Search/Shopping.</p>
+          <p className="text-base text-gray-600 mb-0">PMax je &quot;crna kutija&quot; — imate manje kontrole i uvida. Preporučujem da počnete sa Search/Shopping.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Brand awareness</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display Kampanje</h3>
-          <p className="text-sm text-gray-600 mb-3">Banner oglasi na web sajtovima, aplikacijama, i YouTube-u. Niži intent, ali širi doseg.</p>
+          <p className="text-base text-gray-600 mb-3">Banner oglasi na web sajtovima, aplikacijama, i YouTube-u. Niži intent, ali širi doseg.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">Kada koristiti:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>Brand awareness kampanje</li>
             <li>Remarketing (vrati posete koji nisu kupili)</li>
             <li>Dosezanje šire publike</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Napomena:</p>
-          <p className="text-sm text-gray-600 mb-0">Slabije za direktan response, ali odlično za remarketing.</p>
+          <p className="text-base text-gray-600 mb-0">Slabije za direktan response, ali odlično za remarketing.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Video content</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Video Kampanje (YouTube)</h3>
-          <p className="text-sm text-gray-600 mb-3">Video oglasi na YouTube-u (pre-roll, mid-roll, in-feed). Zahtevaju video kreativ.</p>
+          <p className="text-base text-gray-600 mb-3">Video oglasi na YouTube-u (pre-roll, mid-roll, in-feed). Zahtevaju video kreativ.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">Kada koristiti:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>Imate video content</li>
             <li>Želite brand awareness</li>
             <li>Kompleksniji proizvod koji zahteva objašnjenje</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Idealno za:</p>
-          <p className="text-sm text-gray-600 mb-0">B2C brendovi, SaaS sa demo video-ima, remarketing</p>
+          <p className="text-base text-gray-600 mb-0">B2C brendovi, SaaS sa demo video-ima, remarketing</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Early funnel</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Demand Gen</h3>
-          <p className="text-sm text-gray-600 mb-3">Vizuelni oglasi za Discover, Gmail, i YouTube. Zamena za Discovery kampanje.</p>
+          <p className="text-base text-gray-600 mb-3">Vizuelni oglasi za Discover, Gmail, i YouTube. Zamena za Discovery kampanje.</p>
           <p className="text-xs font-semibold text-gray-900 mb-1">Kada koristiti:</p>
-          <ul className="text-sm mb-3">
+          <ul className="text-base mb-3">
             <li>Želite da dosegnete ljude rano u purchase journey-u</li>
             <li>Imate jak vizuelni content</li>
             <li>Želite alternativu Meta Ads-u</li>
           </ul>
           <p className="text-xs font-semibold text-gray-900 mb-1">Idealno za:</p>
-          <p className="text-sm text-gray-600 mb-0">eCommerce (prospect kampanje), B2C sa životnim stilom</p>
+          <p className="text-base text-gray-600 mb-0">eCommerce (prospect kampanje), B2C sa životnim stilom</p>
         </div>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Vodič za Performance Max kampanje</p>
-        <p className="text-blue-800 text-sm mb-0">PMax kampanje mogu doneti odlične rezultate, ali samo ako se pravilno postave. Za detaljan vodič, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline font-semibold">Performance Max vodič</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">PMax kampanje mogu doneti odlične rezultate, ali samo ako se pravilno postave. Za detaljan vodič, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline font-semibold">Performance Max vodič</Link>.</p>
       </div>
 
       <hr />
@@ -270,7 +270,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Vodič za Google Shopping kampanje</p>
-        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako postaviti product feed i strukturirati Shopping kampanje, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping vodič</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">Za detaljan vodič kako postaviti product feed i strukturirati Shopping kampanje, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping vodič</Link>.</p>
       </div>
 
       <h3>Shopping vs Performance Max — Šta izabrati?</h3>
@@ -280,41 +280,41 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
-              <th className="py-3 px-4 font-heading font-semibold">Standard Shopping</th>
-              <th className="py-3 px-4 font-heading font-semibold">Performance Max</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-3 font-heading font-semibold">Standard Shopping</th>
+              <th className="py-3 px-3 font-heading font-semibold">Performance Max</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Kontrola</td>
-              <td className="py-3 px-4">Visoka (bidovi, struktura, negativne KR)</td>
-              <td className="py-3 px-4">Niska (algoritam odlučuje)</td>
+              <td className="py-3 px-3 font-medium">Kontrola</td>
+              <td className="py-3 px-3">Visoka (bidovi, struktura, negativne KR)</td>
+              <td className="py-3 px-3">Niska (algoritam odlučuje)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Uvid u search terms</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Potpun uvid</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Ograničen</span></td>
+              <td className="py-3 px-3 font-medium">Uvid u search terms</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Potpun uvid</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Ograničen</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Mreže</td>
-              <td className="py-3 px-4">Samo Search + Shopping</td>
-              <td className="py-3 px-4">Sve mreže (Search, Shopping, Display, YouTube, Discover)</td>
+              <td className="py-3 px-3 font-medium">Mreže</td>
+              <td className="py-3 px-3">Samo Search + Shopping</td>
+              <td className="py-3 px-3">Sve mreže (Search, Shopping, Display, YouTube, Discover)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Najbolje za</td>
-              <td className="py-3 px-4">Testiranje, kontrola, novi proizvodi</td>
-              <td className="py-3 px-4">Skaliranje dokazanih proizvoda</td>
+              <td className="py-3 px-3 font-medium">Najbolje za</td>
+              <td className="py-3 px-3">Testiranje, kontrola, novi proizvodi</td>
+              <td className="py-3 px-3">Skaliranje dokazanih proizvoda</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Minimum conversion data</td>
-              <td className="py-3 px-4">0 (može odmah)</td>
-              <td className="py-3 px-4">50+ mesečno (preporuka)</td>
+              <td className="py-3 px-3 font-medium">Minimum conversion data</td>
+              <td className="py-3 px-3">0 (može odmah)</td>
+              <td className="py-3 px-3">50+ mesečno (preporuka)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Ručni rad</td>
-              <td className="py-3 px-4">Više optimizacije potrebno</td>
-              <td className="py-3 px-4">Manje ručnog rada</td>
+              <td className="py-3 px-3 font-medium">Ručni rad</td>
+              <td className="py-3 px-3">Više optimizacije potrebno</td>
+              <td className="py-3 px-3">Manje ručnog rada</td>
             </tr>
           </tbody>
         </table>
@@ -322,7 +322,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Moja preporuka</p>
-        <p className="text-yellow-800 text-sm mb-0">Hibridni pristup funkcioniše najbolje — Standard Shopping za kontrolu i testiranje novih proizvoda, PMax za skaliranje proizvoda koji već donose rezultate. Nemojte pauzirati Shopping kada pokrenete PMax.</p>
+        <p className="text-yellow-800 text-base mb-0">Hibridni pristup funkcioniše najbolje — Standard Shopping za kontrolu i testiranje novih proizvoda, PMax za skaliranje proizvoda koji već donose rezultate. Nemojte pauzirati Shopping kada pokrenete PMax.</p>
       </div>
 
       <h3>Remarketing za eCommerce</h3>
@@ -352,7 +352,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Dublje o remarketingu</p>
-        <p className="text-blue-800 text-sm mb-0">Za detaljan vodič kako postaviti remarketing kampanje i liste, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing vodič</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">Za detaljan vodič kako postaviti remarketing kampanje i liste, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing vodič</Link>.</p>
       </div>
 
       <hr />
@@ -391,46 +391,46 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Aspekt</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2C</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B</th>
+              <th className="py-3 px-3 font-heading font-semibold">Aspekt</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2C</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Sales cycle</td>
-              <td className="py-3 px-4">Kratak (minuti–dani)</td>
-              <td className="py-3 px-4">Dug (nedelje–meseci)</td>
+              <td className="py-3 px-3 font-medium">Sales cycle</td>
+              <td className="py-3 px-3">Kratak (minuti–dani)</td>
+              <td className="py-3 px-3">Dug (nedelje–meseci)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Konverzija</td>
-              <td className="py-3 px-4">Direktna kupovina</td>
-              <td className="py-3 px-4">Lead (forma, demo zahtev)</td>
+              <td className="py-3 px-3 font-medium">Konverzija</td>
+              <td className="py-3 px-3">Direktna kupovina</td>
+              <td className="py-3 px-3">Lead (forma, demo zahtev)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Targeting</td>
-              <td className="py-3 px-4">Širok</td>
-              <td className="py-3 px-4">Uži, specifičniji</td>
+              <td className="py-3 px-3 font-medium">Targeting</td>
+              <td className="py-3 px-3">Širok</td>
+              <td className="py-3 px-3">Uži, specifičniji</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Keywords</td>
-              <td className="py-3 px-4">Transakcioni</td>
-              <td className="py-3 px-4">Informativni + transakcioni</td>
+              <td className="py-3 px-3 font-medium">Keywords</td>
+              <td className="py-3 px-3">Transakcioni</td>
+              <td className="py-3 px-3">Informativni + transakcioni</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPC</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Obično niži</span></td>
-              <td className="py-3 px-4"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Obično viši</span></td>
+              <td className="py-3 px-3 font-medium">CPC</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Obično niži</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Obično viši</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Volume</td>
-              <td className="py-3 px-4">Veći</td>
-              <td className="py-3 px-4">Manji</td>
+              <td className="py-3 px-3 font-medium">Volume</td>
+              <td className="py-3 px-3">Veći</td>
+              <td className="py-3 px-3">Manji</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Fokus</td>
-              <td className="py-3 px-4">ROAS, CPA</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Lead quality</span></td>
+              <td className="py-3 px-3 font-medium">Fokus</td>
+              <td className="py-3 px-3">ROAS, CPA</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Lead quality</span></td>
             </tr>
           </tbody>
         </table>
@@ -450,7 +450,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">✓</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Rešenje: Fokus na kvalitet</h3>
         </div>
-        <ul className="text-sm mb-0">
+        <ul className="text-base mb-0">
           <li><strong>Offline conversion tracking</strong> — Importujte prodaje iz CRM-a nazad u Google Ads da algoritam nauči šta je kvalitetan lead</li>
           <li><strong>Lead scoring</strong> — Ne tretirajte sve konverzije isto (demo zahtev je vredniji od newsletter prijave)</li>
           <li><strong>Aggressive negative keywords</strong> — Izbacite studente, job seekers, DIY-ere, &quot;besplatno&quot;, &quot;jeftino&quot;</li>
@@ -466,8 +466,8 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Top of Funnel</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Blog čitaoci koji nisu konvertovali.</p>
-        <p className="text-sm mb-0"><strong>Cilj:</strong> Ponudite lead magnet (white paper, checklist, webinar) da dobijete kontakt.</p>
+        <p className="text-base text-gray-600 mb-3">Blog čitaoci koji nisu konvertovali.</p>
+        <p className="text-base mb-0"><strong>Cilj:</strong> Ponudite lead magnet (white paper, checklist, webinar) da dobijete kontakt.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -475,8 +475,8 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Middle of Funnel</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Lead magnet preuzimači koji nisu zakazali demo.</p>
-        <p className="text-sm mb-0"><strong>Cilj:</strong> Ponudite case study, customer testimonials, webinar — dokaz da rešenje funkcioniše.</p>
+        <p className="text-base text-gray-600 mb-3">Lead magnet preuzimači koji nisu zakazali demo.</p>
+        <p className="text-base mb-0"><strong>Cilj:</strong> Ponudite case study, customer testimonials, webinar — dokaz da rešenje funkcioniše.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -484,8 +484,8 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Bottom of Funnel</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Posetioci stranice sa cenama ili demo stranice.</p>
-        <p className="text-sm mb-0"><strong>Cilj:</strong> Direktna ponuda — limited time discount, besplatan trial, besplatna konsultacija.</p>
+        <p className="text-base text-gray-600 mb-3">Posetioci stranice sa cenama ili demo stranice.</p>
+        <p className="text-base mb-0"><strong>Cilj:</strong> Direktna ponuda — limited time discount, besplatan trial, besplatna konsultacija.</p>
       </div>
 
       <hr />
@@ -498,16 +498,16 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Conversion Tracking</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Bez tracking-a letite slepo. Ne znate šta donosi rezultate, ne možete optimizovati, bacate novac.</p>
+        <p className="text-base text-gray-600 mb-3">Bez tracking-a letite slepo. Ne znate šta donosi rezultate, ne možete optimizovati, bacate novac.</p>
         <p className="text-sm font-semibold mb-2">Setup uključuje:</p>
-        <ul className="text-sm mb-3">
+        <ul className="text-base mb-3">
           <li><strong>Google Tag Manager</strong> — centralno upravljanje svim tagovima</li>
           <li><strong>GA4</strong> — analitika i atribucija</li>
           <li><strong>Google Ads conversion tag</strong> — direktno praćenje konverzija</li>
           <li><strong>Enhanced conversions</strong> — bolje matchovanje korisnika (povećava accuracy za 20–30%)</li>
         </ul>
         <p className="text-sm font-semibold mb-2">Šta pratiti:</p>
-        <ul className="text-sm mb-0">
+        <ul className="text-base mb-0">
           <li>Primarne konverzije (kupovina, lead, demo zahtev)</li>
           <li>Sekundarne konverzije (add to cart, stranica sa cenama)</li>
           <li>Micro konverzije (scroll, video view, vreme na sajtu &gt; 2min)</li>
@@ -516,7 +516,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Vodič za Conversion Tracking</p>
-        <p className="text-blue-800 text-sm mb-0">Za step-by-step vodič kako postaviti tracking, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Conversion Tracking vodič</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">Za step-by-step vodič kako postaviti tracking, pročitajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Conversion Tracking vodič</Link>.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -524,9 +524,9 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing Pages</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Pravilo: svaka kampanja treba svoj landing page. Homepage nije landing page.</p>
+        <p className="text-base text-gray-600 mb-3">Pravilo: svaka kampanja treba svoj landing page. Homepage nije landing page.</p>
         <p className="text-sm font-semibold mb-2">Landing page mora imati:</p>
-        <ul className="text-sm mb-3">
+        <ul className="text-base mb-3">
           <li><strong>Jasan headline</strong> — koji odgovara oglasu (message match)</li>
           <li><strong>Benefit-focused copy</strong> — šta korisnik dobija, ne šta vi nudite</li>
           <li><strong>Social proof</strong> — testimonijali, recenzije, logoi klijenata, brojke</li>
@@ -534,7 +534,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <li><strong>Brzina</strong> — pod 3 sekunde load time (svaka sekunda kašnjenja = 7% manje konverzija)</li>
           <li><strong>Mobilna optimizacija</strong> — 60%+ saobraćaja je mobilno</li>
         </ul>
-        <p className="text-sm mb-0"><strong>Najčešća greška:</strong> Slanje saobraćaja na homepage koja ima 10 linkova i nije fokusirana na konverziju.</p>
+        <p className="text-base mb-0"><strong>Najčešća greška:</strong> Slanje saobraćaja na homepage koja ima 10 linkova i nije fokusirana na konverziju.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -542,15 +542,15 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Keyword Research</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Ključne reči nisu samo &quot;koliko ljudi traži&quot; — fokus je na intent-u.</p>
+        <p className="text-base text-gray-600 mb-3">Ključne reči nisu samo &quot;koliko ljudi traži&quot; — fokus je na intent-u.</p>
         <p className="text-sm font-semibold mb-2">Alati:</p>
-        <ul className="text-sm mb-3">
+        <ul className="text-base mb-3">
           <li><strong><a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener noreferrer" className="underline">Google Keyword Planner</a></strong> — besplatan, dovoljan za početak</li>
           <li><strong>Semrush/Ahrefs</strong> — premium, detaljan uvid u konkurenciju</li>
           <li><strong>Google Search Console</strong> — šta vam već donosi organic saobraćaj</li>
         </ul>
         <p className="text-sm font-semibold mb-2">Fokusirajte se na:</p>
-        <ul className="text-sm mb-0">
+        <ul className="text-base mb-0">
           <li><strong>Intent</strong> — Šta korisnik želi da postigne? (informativno vs kupovina)</li>
           <li><strong>Volume</strong> — Koliko ljudi traži? (balans između volume i intent-a)</li>
           <li><strong>Competition</strong> — Koliko je skupo? (high CPC = high intent obično)</li>
@@ -563,16 +563,16 @@ export default function GoogleOglasavanjeZaFirmePost() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Competitor Analysis</h3>
         </div>
-        <p className="text-sm text-gray-600 mb-3">Pre nego što krenete, proverite šta rade konkurenti.</p>
+        <p className="text-base text-gray-600 mb-3">Pre nego što krenete, proverite šta rade konkurenti.</p>
         <p className="text-sm font-semibold mb-2">Šta analizirati:</p>
-        <ul className="text-sm mb-3">
+        <ul className="text-base mb-3">
           <li>Ko se oglašava na vaše ključne reči?</li>
           <li>Kakve oglase koriste? (headline, copy, CTA)</li>
           <li>Na koje landing pages vode?</li>
           <li>Koji su im USP-ovi? (unique selling points)</li>
           <li>Koje ad extensions koriste?</li>
         </ul>
-        <p className="text-sm mb-0"><strong>Alati:</strong> Semrush, SpyFu, ili jednostavno — pretražite kao korisnik i analizirajte oglase.</p>
+        <p className="text-base mb-0"><strong>Alati:</strong> Semrush, SpyFu, ili jednostavno — pretražite kao korisnik i analizirajte oglase.</p>
       </div>
 
       <hr />
@@ -583,54 +583,54 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #1</p>
         <p className="font-semibold mb-2">Nedostatak pravilnog tracking-a</p>
-        <p className="text-sm text-gray-600 mb-3">Neverovatno koliko firmi troši hiljade evra bez pravilnog tracking-a. Ako ne znate šta konvertuje, ne možete optimizovati. Letite slepo.</p>
+        <p className="text-base text-gray-600 mb-3">Neverovatno koliko firmi troši hiljade evra bez pravilnog tracking-a. Ako ne znate šta konvertuje, ne možete optimizovati. Letite slepo.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Postavite Google Tag Manager, GA4, Google Ads conversion tag, i Enhanced Conversions. Testirajte pre nego što pustite kampanje. <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Vodič ovde</Link>.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Postavite Google Tag Manager, GA4, Google Ads conversion tag, i Enhanced Conversions. Testirajte pre nego što pustite kampanje. <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Vodič ovde</Link>.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
         <p className="font-semibold mb-2">Loša struktura naloga</p>
-        <p className="text-sm text-gray-600 mb-3">Sve u jednoj kampanji, sve ključne reči u jednoj ad grupi, brand i non-brand pomešani. Nemoguće optimizovati, nemoguće razumeti šta funkcioniše.</p>
+        <p className="text-base text-gray-600 mb-3">Sve u jednoj kampanji, sve ključne reči u jednoj ad grupi, brand i non-brand pomešani. Nemoguće optimizovati, nemoguće razumeti šta funkcioniše.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Razdvojite brand i non-brand kampanje. Grupisati ključne reči po intent-u u različite ad grupe (maksimum 10–20 KR po grupi). Svaka ad grupa treba 2–3 relevantna oglasa.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Razdvojite brand i non-brand kampanje. Grupisati ključne reči po intent-u u različite ad grupe (maksimum 10–20 KR po grupi). Svaka ad grupa treba 2–3 relevantna oglasa.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
         <p className="font-semibold mb-2">Ignorisanje negativnih ključnih reči</p>
-        <p className="text-sm text-gray-600 mb-3">Plaćate za &quot;besplatno&quot;, &quot;kako napraviti sam&quot;, &quot;posao&quot;, &quot;kurs&quot;, &quot;torrent&quot; i slično. Novac bačen jer ti ljudi neće kupiti.</p>
+        <p className="text-base text-gray-600 mb-3">Plaćate za &quot;besplatno&quot;, &quot;kako napraviti sam&quot;, &quot;posao&quot;, &quot;kurs&quot;, &quot;torrent&quot; i slično. Novac bačen jer ti ljudi neće kupiti.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Kreirajte negative keyword listu odmah na početku (besplatno, džabe, posao, plata, kurs, škola, torrent, download, DIY, sam). Ažurirajte listu svake nedelje na osnovu search terms report-a.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Kreirajte negative keyword listu odmah na početku (besplatno, džabe, posao, plata, kurs, škola, torrent, download, DIY, sam). Ažurirajte listu svake nedelje na osnovu search terms report-a.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
         <p className="font-semibold mb-2">Slanje saobraćaja direktno na homepage</p>
-        <p className="text-sm text-gray-600 mb-3">Homepage nije dizajniran za konverziju — ima 10 linkova, opšti je, ne odgovara oglasu. Landing page jeste.</p>
+        <p className="text-base text-gray-600 mb-3">Homepage nije dizajniran za konverziju — ima 10 linkova, opšti je, ne odgovara oglasu. Landing page jeste.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Kreirajte landing page za svaku kampanju. Headline mora odgovarati oglasu (message match). Jedan cilj, jedan CTA. Brzina &lt; 3 sekunde.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Kreirajte landing page za svaku kampanju. Headline mora odgovarati oglasu (message match). Jedan cilj, jedan CTA. Brzina &lt; 3 sekunde.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #5</p>
         <p className="font-semibold mb-2">Nerealna očekivanja</p>
-        <p className="text-sm text-gray-600 mb-3">&quot;Želim rezultate za nedelju dana sa budžetom od €300.&quot; Google Ads zahteva vreme za learning period i optimizaciju. Minimum 2–3 meseca za stabilne rezultate.</p>
+        <p className="text-base text-gray-600 mb-3">&quot;Želim rezultate za nedelju dana sa budžetom od €300.&quot; Google Ads zahteva vreme za learning period i optimizaciju. Minimum 2–3 meseca za stabilne rezultate.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Planirajte minimum 2–3 meseca testiranja. Budget minimum €500–1,000/mesec za početak (zavisi od industrije). Ne očekujte ROI u prvoj nedelji — algoritam uči.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Planirajte minimum 2–3 meseca testiranja. Budget minimum €500–1,000/mesec za početak (zavisi od industrije). Ne očekujte ROI u prvoj nedelji — algoritam uči.</p>
         </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #6</p>
         <p className="font-semibold mb-2">Set-and-forget mentalitet</p>
-        <p className="text-sm text-gray-600 mb-3">Pokrenuli kampanje i mesec dana ništa ne dirali. Google Ads nije &quot;postavi i zaboravi&quot;. Zahteva kontinuiranu optimizaciju.</p>
+        <p className="text-base text-gray-600 mb-3">Pokrenuli kampanje i mesec dana ništa ne dirali. Google Ads nije &quot;postavi i zaboravi&quot;. Zahteva kontinuiranu optimizaciju.</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Rešenje:</strong> Nedeljno: provera search terms, dodavanje negativnih KR, bid adjustments. Mesečno: A/B testiranje oglasa, landing page optimizacije, struktura naloga.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Nedeljno: provera search terms, dodavanje negativnih KR, bid adjustments. Mesečno: A/B testiranje oglasa, landing page optimizacije, struktura naloga.</p>
         </div>
       </div>
 
@@ -644,36 +644,36 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
-              <th className="py-3 px-4 font-heading font-semibold">Šta pokazuje</th>
-              <th className="py-3 px-4 font-heading font-semibold">Dobar benchmark</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-3 font-heading font-semibold">Šta pokazuje</th>
+              <th className="py-3 px-3 font-heading font-semibold">Dobar benchmark</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">ROAS</td>
-              <td className="py-3 px-4">Prihod ÷ trošak oglasa</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–5x minimum</span></td>
+              <td className="py-3 px-3 font-medium">ROAS</td>
+              <td className="py-3 px-3">Prihod ÷ trošak oglasa</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–5x minimum</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">CPA</td>
-              <td className="py-3 px-4">Trošak po kupovini</td>
-              <td className="py-3 px-4">Zavisi od AOV i marže</td>
+              <td className="py-3 px-3 font-medium">CPA</td>
+              <td className="py-3 px-3">Trošak po kupovini</td>
+              <td className="py-3 px-3">Zavisi od AOV i marže</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Conversion Rate</td>
-              <td className="py-3 px-4">% posetilaca koji kupe</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">1–3%</span></td>
+              <td className="py-3 px-3 font-medium">Conversion Rate</td>
+              <td className="py-3 px-3">% posetilaca koji kupe</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">1–3%</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">AOV</td>
-              <td className="py-3 px-4">Prosečna vrednost porudžbine</td>
-              <td className="py-3 px-4">Varira po industriji</td>
+              <td className="py-3 px-3 font-medium">AOV</td>
+              <td className="py-3 px-3">Prosečna vrednost porudžbine</td>
+              <td className="py-3 px-3">Varira po industriji</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CTR</td>
-              <td className="py-3 px-4">% ljudi koji kliknu na oglas</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">2–4%</span></td>
+              <td className="py-3 px-3 font-medium">CTR</td>
+              <td className="py-3 px-3">% ljudi koji kliknu na oglas</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">2–4%</span></td>
             </tr>
           </tbody>
         </table>
@@ -684,41 +684,41 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
-              <th className="py-3 px-4 font-heading font-semibold">Šta pokazuje</th>
-              <th className="py-3 px-4 font-heading font-semibold">Dobar benchmark</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-3 font-heading font-semibold">Šta pokazuje</th>
+              <th className="py-3 px-3 font-heading font-semibold">Dobar benchmark</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPL</td>
-              <td className="py-3 px-4">Trošak po lead-u</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">€10–50</span></td>
+              <td className="py-3 px-3 font-medium">CPL</td>
+              <td className="py-3 px-3">Trošak po lead-u</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">€10–50</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Lead Quality Score</td>
-              <td className="py-3 px-4">% kvalifikovanih lead-ova</td>
-              <td className="py-3 px-4"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Najvažnije</span></td>
+              <td className="py-3 px-3 font-medium">Lead Quality Score</td>
+              <td className="py-3 px-3">% kvalifikovanih lead-ova</td>
+              <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Najvažnije</span></td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">SQL Rate</td>
-              <td className="py-3 px-4">% lead-ova koji postanu sales qualified</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">20–40%</span></td>
+              <td className="py-3 px-3 font-medium">SQL Rate</td>
+              <td className="py-3 px-3">% lead-ova koji postanu sales qualified</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">20–40%</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Pipeline Value</td>
-              <td className="py-3 px-4">Vrednost potencijalnih dealova</td>
-              <td className="py-3 px-4">Prati u CRM-u</td>
+              <td className="py-3 px-3 font-medium">Pipeline Value</td>
+              <td className="py-3 px-3">Vrednost potencijalnih dealova</td>
+              <td className="py-3 px-3">Prati u CRM-u</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CTR</td>
-              <td className="py-3 px-4">% ljudi koji kliknu na oglas</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–6%</span></td>
+              <td className="py-3 px-3 font-medium">CTR</td>
+              <td className="py-3 px-3">% ljudi koji kliknu na oglas</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–6%</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">Conversion Rate</td>
-              <td className="py-3 px-4">% posetilaca koji ostave kontakt</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">2–8%</span></td>
+              <td className="py-3 px-3 font-medium">Conversion Rate</td>
+              <td className="py-3 px-3">% posetilaca koji ostave kontakt</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">2–8%</span></td>
             </tr>
           </tbody>
         </table>
@@ -729,36 +729,36 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-4 font-heading font-semibold">Metrika</th>
-              <th className="py-3 px-4 font-heading font-semibold">eCommerce (Srbija)</th>
-              <th className="py-3 px-4 font-heading font-semibold">B2B (Srbija)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Metrika</th>
+              <th className="py-3 px-3 font-heading font-semibold">eCommerce (Srbija)</th>
+              <th className="py-3 px-3 font-heading font-semibold">B2B (Srbija)</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">CPC (prosek)</td>
-              <td className="py-3 px-4">€0.15–0.60</td>
-              <td className="py-3 px-4">€0.50–2.00</td>
+              <td className="py-3 px-3 font-medium">CPC (prosek)</td>
+              <td className="py-3 px-3">€0.15–0.60</td>
+              <td className="py-3 px-3">€0.50–2.00</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">CTR</td>
-              <td className="py-3 px-4">2–4%</td>
-              <td className="py-3 px-4">3–6%</td>
+              <td className="py-3 px-3 font-medium">CTR</td>
+              <td className="py-3 px-3">2–4%</td>
+              <td className="py-3 px-3">3–6%</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Conversion Rate</td>
-              <td className="py-3 px-4">1–3%</td>
-              <td className="py-3 px-4">2–8%</td>
+              <td className="py-3 px-3 font-medium">Conversion Rate</td>
+              <td className="py-3 px-3">1–3%</td>
+              <td className="py-3 px-3">2–8%</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-4 font-medium">ROAS (cilj)</td>
-              <td className="py-3 px-4"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–5x</span></td>
-              <td className="py-3 px-4">N/A (fokus na lead quality)</td>
+              <td className="py-3 px-3 font-medium">ROAS (cilj)</td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">3–5x</span></td>
+              <td className="py-3 px-3">N/A (fokus na lead quality)</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-4 font-medium">Minimum budžet</td>
-              <td className="py-3 px-4">€500–1,000/mesec</td>
-              <td className="py-3 px-4">€1,000–2,000/mesec</td>
+              <td className="py-3 px-3 font-medium">Minimum budžet</td>
+              <td className="py-3 px-3">€500–1,000/mesec</td>
+              <td className="py-3 px-3">€1,000–2,000/mesec</td>
             </tr>
           </tbody>
         </table>
@@ -766,7 +766,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
-        <p className="text-yellow-800 text-sm mb-0">Benchmark-ovi su orijentir, ne pravilo. Vaša industrija, ponuda, i tržište mogu značajno uticati na rezultate. <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="underline font-semibold">Više o budžetima ovde</Link>.</p>
+        <p className="text-yellow-800 text-base mb-0">Benchmark-ovi su orijentir, ne pravilo. Vaša industrija, ponuda, i tržište mogu značajno uticati na rezultate. <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="underline font-semibold">Više o budžetima ovde</Link>.</p>
       </div>
 
       <hr />
@@ -778,7 +778,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           Koliko košta Google oglašavanje?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Zavisi od industrije i konkurencije. U Srbiji, prosečan CPC je €0.15–1.50.</p>
           <p className="mb-0"><strong>Preporučeni minimalni mesečni budžet:</strong> €500–1,000 za manje biznise i testiranje, €2,000+ za ozbiljnije kampanje. <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="underline font-semibold">Detaljan vodič o budžetima</Link>.</p>
         </div>
@@ -789,7 +789,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           Da li Google oglašavanje radi za B2B?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Apsolutno. B2B ima specifičnosti (duži sales cycle, manji search volume, viši CPC), ali Google Ads je i dalje jedan od najefikasnijih kanala za B2B lead generation.</p>
           <p className="mb-0">Ključ je fokus na <strong>kvalitet lead-ova</strong> umesto na broj, pravilno praćenje offline konverzija (CRM integracija), i remarketing kroz ceo funnel.</p>
         </div>
@@ -800,7 +800,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           Koliko vremena treba da vidim rezultate?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <ul className="mb-0">
             <li><strong>Prve indikacije:</strong> 2–4 nedelje (learning period)</li>
             <li><strong>Prave rezultate:</strong> 2–3 meseca (dovoljno data za optimizaciju)</li>
@@ -814,7 +814,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           Da li mi treba agencija za Google oglašavanje?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Ne obavezno. Zavisi od budžeta i kompleksnosti:</p>
           <ul className="mb-0">
             <li><strong>Do €2,000/mesec:</strong> Kvalitetan freelancer ili čak DIY sa edukacijom može biti dovoljan</li>
@@ -829,7 +829,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           Šta je bolje: Google Ads ili Facebook Ads?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Zavisi od cilja:</p>
           <ul className="mb-3">
             <li><strong>Google Ads</strong> — hvata ljude sa namerom (&quot;hoću da kupim X&quot;). Bolji za direktne prodaje.</li>
@@ -844,7 +844,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           Da li mogu sam voditi Google Ads?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
-        <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           <p className="mb-2">Da, ako imate vreme i volje za učenje. Google Ads nije rocket science, ali zahteva:</p>
           <ul className="mb-2">
             <li>Razumevanje osnova (aukcijski model, Quality Score, match types)</li>
@@ -906,7 +906,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
             Koliko košta Google oglašavanje za firme?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Prosečan CPC u Srbiji je €0.10-0.80, u UK/DE €1-5+. Minimalni preporučeni mesečni budžet za kampanje je €300-500 za lokalne firme, €1,000+ za eCommerce. Uz to ide fee za upravljanje €200-600/mesečno.
           </div>
         </details>
@@ -916,7 +916,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
             Koji tip Google kampanje je najbolji za moju firmu?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Search kampanje su najbolje za firme koje žele direktne upite/pozive. Shopping za eCommerce. Performance Max za kombinaciju kanala. Display za brand awareness. Zavisi od vašeg cilja — lead generation ili online prodaja.
           </div>
         </details>
@@ -926,7 +926,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
             Koliko dugo treba da se vide rezultati?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Prve konverzije obično za 2-4 nedelje. Puna optimizacija zahteva 60-90 dana jer Google algoritam treba podatke za učenje. B2B kampanje obično zahtevaju duži period (3-6 meseci) zbog dužeg sales cycle-a.
           </div>
         </details>
@@ -936,7 +936,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
             Da li mi treba sajt za Google oglašavanje?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, sajt je obavezan za Google Ads. Trebate landing page koji je brz (ispod 3 sekunde), mobile-friendly i sa jasnim pozivom na akciju. Bez dobrog sajta, čak ni savršena kampanja neće doneti rezultate.
           </div>
         </details>
@@ -946,7 +946,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
             Mogu li sam da vodim Google Ads ili mi treba stručnjak?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
-          <div className="px-5 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3">
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Možete početi sami sa manjim budžetom, ali bez iskustva obično potrošite 30-50% budžeta neoptimalno. Stručnjak se isplati kad mesečni ad spend pređe €500-1,000 jer uštede na optimizaciji obično pokrivaju fee.
           </div>
         </details>
