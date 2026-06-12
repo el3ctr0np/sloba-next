@@ -324,7 +324,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           "@type": "Person",
           name: "Slobodan Jelisavac",
           url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Strategist",
+          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
           knowsAbout: [
             "Performance Marketing",
             "Google Ads",
@@ -355,13 +355,13 @@ export default async function PerformanceMarketingPage({ params }: Props) {
               "@type": "ListItem",
               position: 2,
               name: "Services",
-              item: "https://www.slobodan-jelisavac.com/services"
+              item: "https://www.slobodan-jelisavac.com/en/services"
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Performance Marketing",
-              item: "https://www.slobodan-jelisavac.com/services/performance-marketing"
+              item: "https://www.slobodan-jelisavac.com/en/services/performance-marketing"
             }
           ]
         }
@@ -379,13 +379,13 @@ export default async function PerformanceMarketingPage({ params }: Props) {
               "@type": "ListItem",
               position: 2,
               name: "Usluge",
-              item: "https://www.slobodan-jelisavac.com/usluge"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge"
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Performance Marketing",
-              item: "https://www.slobodan-jelisavac.com/usluge/performance-marketing"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge/performance-marketing"
             }
           ]
         };

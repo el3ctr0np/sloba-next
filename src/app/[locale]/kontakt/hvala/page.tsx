@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-const getPersonSchema = () => ({
+const getPersonSchema = (locale: string) => ({
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Slobodan Jelisavac",
   url: "https://www.slobodan-jelisavac.com",
-  jobTitle: "Google Ads Strategist"
+  jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
 });
 
 const getBreadcrumbSchema = (locale: string) => ({
@@ -172,7 +172,7 @@ const getFaqs = (locale: string) => {
 
 export default async function ThankYouPage({ params }: Props) {
   const { locale } = await params;
-  const personSchema = getPersonSchema();
+  const personSchema = getPersonSchema(locale);
   const breadcrumbSchema = getBreadcrumbSchema(locale);
   const callBenefits = getCallBenefits(locale);
   const callSteps = getCallSteps(locale);
@@ -352,8 +352,8 @@ export default async function ThankYouPage({ params }: Props) {
                 </h3>
                 <p className="text-yellow-600 font-semibold text-sm mb-3">
                   {locale === "en"
-                    ? "Google Ads Strategist — 9+ years of experience"
-                    : "Google Ads Strategist — 9+ godina iskustva"}
+                    ? "Google Ads Consultant — 10+ years of experience"
+                    : "Google Ads Konsultant — 10+ godina iskustva"}
                 </p>
                 <p className="text-gray-600">
                   {locale === "en"
@@ -371,7 +371,7 @@ export default async function ThankYouPage({ params }: Props) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
             <div className="text-3xl font-heading font-bold text-slate-900 mb-1">
-              9+
+              10+
             </div>
             <p className="text-gray-500 text-sm">
               {locale === "en" ? "years of experience" : "godina iskustva"}

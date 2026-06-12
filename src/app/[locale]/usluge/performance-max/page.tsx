@@ -229,7 +229,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: "Google Ads Strategist"
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
   const breadcrumbSchema =
@@ -248,13 +248,13 @@ export default async function PerformanceMaxPage({ params }: Props) {
               "@type": "ListItem",
               position: 2,
               name: "Services",
-              item: "https://www.slobodan-jelisavac.com/en/usluge"
+              item: "https://www.slobodan-jelisavac.com/en/services"
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Performance Max",
-              item: "https://www.slobodan-jelisavac.com/en/usluge/performance-max"
+              item: "https://www.slobodan-jelisavac.com/en/services/performance-max"
             }
           ]
         }
@@ -272,13 +272,13 @@ export default async function PerformanceMaxPage({ params }: Props) {
               "@type": "ListItem",
               position: 2,
               name: "Usluge",
-              item: "https://www.slobodan-jelisavac.com/usluge"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge"
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Performance Max",
-              item: "https://www.slobodan-jelisavac.com/usluge/performance-max"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge/performance-max"
             }
           ]
         };
@@ -396,7 +396,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
             <div className="flex flex-wrap gap-4 mb-8">
               <div className="bg-slate-800 px-4 py-2 rounded-lg text-sm">
                 {locale === "en"
-                  ? "9+ years experience"
+                  ? "10+ years experience"
                   : "10+ godina iskustva"}
               </div>
               <div className="bg-slate-800 px-4 py-2 rounded-lg text-sm">

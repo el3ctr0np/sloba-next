@@ -28,6 +28,7 @@ export function Footer() {
     resursi: [
       { label: t("resources.blog"), href: "/blog" as const },
       { label: t("resources.caseStudies"), href: "/case-studies" as const },
+      { label: t("resources.glossary"), href: "/recnik" as const },
       { label: t("resources.about"), href: "/o-meni" as const },
       { label: t("resources.contact"), href: "/kontakt" as const }
     ]

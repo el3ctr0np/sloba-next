@@ -121,7 +121,7 @@ export default async function ContactPage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: "Google Ads Strategist",
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
     email: "info@slobodan-jelisavac.com"
   };
 
@@ -212,14 +212,14 @@ export default async function ContactPage({ params }: Props) {
 
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
               {locale === "en"
-                ? "Book a Free Consultation"
-                : "Zakažite besplatnu konsultaciju"}
+                ? "Book a free 20-minute call"
+                : "Zakažite besplatnih 20 minuta"}
             </h1>
 
             <p className="text-lg text-slate-300 mb-8">
               {locale === "en"
-                ? "No obligation, no pressure — just an honest conversation about how Google Ads can work for your business."
-                : "Bez obaveze, bez pritiska — samo konkretan razgovor o tome kako Google Ads može raditi za vaš biznis."}
+                ? "No obligation, no pressure — just an honest 20-minute conversation about how Google Ads can work for your business."
+                : "Bez obaveze, bez pritiska — samo konkretan 20-minutni razgovor o tome kako Google Ads može raditi za vaš biznis."}
             </p>
 
             <div className="flex flex-wrap gap-4 text-sm text-slate-300">
@@ -349,7 +349,7 @@ export default async function ContactPage({ params }: Props) {
               <div className="space-y-3 text-sm text-gray-600">
                 <div>
                   <p className="font-semibold text-slate-900">
-                    {locale === "en" ? "9+ years" : "9+ godina"}
+                    {locale === "en" ? "10+ years" : "10+ godina"}
                   </p>
                   <p>{locale === "en" ? "of Google Ads experience" : "iskustva u Google Ads-u"}</p>
                 </div>

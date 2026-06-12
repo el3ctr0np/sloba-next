@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Services | PPC Management & Optimization — Slobodan Jelisavac"
       : "Google Ads Usluge Srbija | Performance Marketing — Slobodan Jelisavac",
     description: isEn
-      ? "Professional Google Ads services for eCommerce and B2B: management, audit, Shopping, PMax, remarketing. 9+ years experience, 180%+ ROAS improvement."
+      ? "Professional Google Ads services for eCommerce and B2B: management, audit, Shopping, PMax, remarketing. 10+ years experience, 180%+ ROAS improvement."
       : "Profesionalne Google Ads usluge za eCommerce i B2B: upravljanje, audit, Shopping, PMax, remarketing. 10+ godina iskustva, 180%+ poboljšanje ROAS-a.",
     locale,
     path: "/services",
@@ -160,21 +160,21 @@ export default async function ServicesPage({ params }: Props) {
   const entryPoints = locale === "en" ? ([
     {
       title: "Starter Package",
-      price: "from €500",
+      price: "Priced per scope",
       desc: "Professional campaign setup, tracking, and training for self-management. Ideal for businesses just starting with Google Ads.",
       href: "/usluge/starter-paket",
       cta: "Learn more"
     },
     {
       title: "Google Ads Audit",
-      price: "from €200",
+      price: "from €350",
       desc: "Independent account analysis with actionable recommendations. No commitment for ongoing work required.",
       href: "/usluge/google-ads-audit",
       cta: "Learn more"
     },
     {
       title: "1-on-1 Consultations",
-      price: "€80/hour",
+      price: "€120/hour (3h package — €300)",
       desc: "Expert advice for specific questions, second opinions, or strategic help without long-term commitment.",
       href: "/usluge/konsultacije",
       cta: "Learn more"
@@ -182,21 +182,21 @@ export default async function ServicesPage({ params }: Props) {
   ] as const) : ([
     {
       title: "Starter paket",
-      price: "od €300",
+      price: "Cena po obimu projekta",
       desc: "Profesionalni setup kampanja, tracking i edukacija za samostalno vođenje. Idealno za firme koje tek počinju sa Google Ads.",
       href: "/usluge/starter-paket",
       cta: "Saznajte više"
     },
     {
       title: "Google Ads audit",
-      price: "od €200",
+      price: "od €350",
       desc: "Nezavisna analiza naloga sa konkretnim preporukama. Bez obaveze za dalju saradnju.",
       href: "/usluge/google-ads-audit",
       cta: "Saznajte više"
     },
     {
       title: "1-na-1 konsultacije",
-      price: "€80/sat",
+      price: "€120/sat (paket 3h — €300)",
       desc: "Ekspertski savet za konkretna pitanja, second opinion ili strategijsku pomoć bez dugoročne obaveze.",
       href: "/usluge/konsultacije",
       cta: "Saznajte više"
@@ -207,7 +207,7 @@ export default async function ServicesPage({ params }: Props) {
     { value: "180%+", label: "Average ROAS improvement" },
     { value: "−35%", label: "CPA reduction" },
     { value: "€2M+", label: "Annual ad spend managed" },
-    { value: "9+", label: "Years of experience" }
+    { value: "10+", label: "Years of experience" }
   ] : [
     { value: "180%+", label: "Prosečno poboljšanje ROAS-a" },
     { value: "−35%", label: "Smanjenje CPA" },
@@ -270,7 +270,7 @@ export default async function ServicesPage({ params }: Props) {
   const faqs = locale === "en" ? [
     {
       q: "What's the minimum investment to work together?",
-      a: "Google Ads account management starts from €750/month. For smaller budgets, I recommend the Starter Package (from €500) or one-time consultations (€80/hour). In my experience, businesses need at least €500-1000/month in ad spend to see meaningful results from paid advertising."
+      a: "Monthly Google Ads management starts from €700/month. For smaller ad spend, I recommend one-off projects or consultations — priced per scope. In my experience, businesses need at least €500-1000/month in ad spend to see meaningful results from paid advertising."
     },
     {
       q: "Do you only work with companies from Serbia?",
@@ -291,7 +291,7 @@ export default async function ServicesPage({ params }: Props) {
   ] : [
     {
       q: "Koja je minimalna investicija za saradnju?",
-      a: "Upravljanje Google Ads nalogom počinje od €350/mesečno. Za manje budžete preporučujem Starter paket (od €300) ili jednokratne konsultacije (€80/sat)."
+      a: "Mesečno vođenje Google Ads naloga počinje od €700 mesečno. Za manje ad spend budžete tu su one-off projekti i konsultacije — cena zavisi od obima."
     },
     {
       q: "Da li radite samo sa kompanijama iz Srbije?",
@@ -321,7 +321,7 @@ export default async function ServicesPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
       knowsAbout: [
         "Google Ads",
         "Performance Marketing",
@@ -346,7 +346,7 @@ export default async function ServicesPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
       knowsAbout: [
         "Google Ads",
         "Performance Marketing",
@@ -390,7 +390,7 @@ export default async function ServicesPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/en/services"
       }
     ]
   } : {
@@ -407,7 +407,7 @@ export default async function ServicesPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Usluge",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge"
       }
     ]
   };
@@ -489,7 +489,7 @@ export default async function ServicesPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a Free Consultation" : "Zakažite besplatnu konsultaciju"}
+                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
               <Button href="/case-studies" variant="primary">
                 {locale === "en" ? "View Results" : "Pogledajte rezultate"}
@@ -500,7 +500,7 @@ export default async function ServicesPage({ params }: Props) {
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
               {locale === "en" ? (
                 <>
-                  <span>9+ years of experience</span>
+                  <span>10+ years of experience</span>
                   <span>3x UK Search Awards</span>
                   <span>50+ brands across 6+ countries</span>
                 </>
@@ -528,7 +528,7 @@ export default async function ServicesPage({ params }: Props) {
                 wasted spend.
               </p>
               <p className="text-gray-600 text-base leading-relaxed">
-                With over 9 years of experience managing campaigns for brands in Serbia,
+                With over 10 years of experience managing campaigns for brands in Serbia,
                 the UK, Germany, and Croatia, I offer complete Google Ads services
                 tailored to your goals — whether you're an eCommerce business seeking
                 better ROAS or a B2B company generating qualified leads.
@@ -817,7 +817,7 @@ export default async function ServicesPage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a Free Consultation" : "Zakažite besplatnu konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Link
               href="/case-studies"

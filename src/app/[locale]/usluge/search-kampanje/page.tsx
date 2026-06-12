@@ -247,7 +247,7 @@ export default async function SearchKampanjePage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Strategist" : "Google Ads Strategist"
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
   const breadcrumbSchema = locale === "en" ? {
@@ -264,13 +264,13 @@ export default async function SearchKampanjePage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://www.slobodan-jelisavac.com/en/usluge"
+        item: "https://www.slobodan-jelisavac.com/en/services"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Search Campaigns",
-        item: "https://www.slobodan-jelisavac.com/en/usluge/search-kampanje"
+        item: "https://www.slobodan-jelisavac.com/en/services/search-campaigns"
       }
     ]
   } : {
@@ -287,13 +287,13 @@ export default async function SearchKampanjePage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Usluge",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Search kampanje",
-        item: "https://www.slobodan-jelisavac.com/usluge/search-kampanje"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/search-kampanje"
       }
     ]
   };
@@ -409,7 +409,7 @@ export default async function SearchKampanjePage({ params }: Props) {
                   d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <span>{locale === "en" ? "9+ years experience" : "10+ godina iskustva"}</span>
+              <span>{locale === "en" ? "10+ years experience" : "10+ godina iskustva"}</span>
             </div>
             <div className="flex items-center gap-2">
               <svg
@@ -447,7 +447,7 @@ export default async function SearchKampanjePage({ params }: Props) {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Button href="/usluge/google-ads-upravljanje" variant="primary">
               {locale === "en" ? "Google Ads management" : "Google Ads upravljanje"}
@@ -463,7 +463,7 @@ export default async function SearchKampanjePage({ params }: Props) {
           <p className="text-lg text-gray-700 leading-relaxed">
             {locale === "en" ? (
               <>
-                Google Search campaigns are the most direct way to reach customers when they actively search for your products or services. Unlike display or social advertising, Search ads target people with clear intent. With 9+ years of experience creating and optimizing Search campaigns for 50+ brands across 6+ countries, I help companies maximize ROI through high-intent keyword strategy, conversion-focused ad copy, and bid optimization.
+                Google Search campaigns are the most direct way to reach customers when they actively search for your products or services. Unlike display or social advertising, Search ads target people with clear intent. With 10+ years of experience creating and optimizing Search campaigns for 50+ brands across 6+ countries, I help companies maximize ROI through high-intent keyword strategy, conversion-focused ad copy, and bid optimization.
               </>
             ) : (
               <>
@@ -615,7 +615,7 @@ export default async function SearchKampanjePage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Button href="/case-studies" variant="primary">
               {locale === "en" ? "View case studies" : "Pogledajte rezultate"}

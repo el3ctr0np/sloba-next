@@ -519,7 +519,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             <div className="hidden md:block md:flex-shrink-0">
               <Image
                 src="/sloba.webp"
-                alt="Slobodan Jelisavac — Google Ads Strategist"
+                alt="Slobodan Jelisavac — Google Ads Consultant"
                 width={380}
                 height={380}
                 className="rounded-2xl shadow-2xl shadow-black/30 lg:w-[380px] md:w-[300px]"

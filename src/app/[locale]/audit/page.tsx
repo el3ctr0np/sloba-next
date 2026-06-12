@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Free Google Ads Video Audit — For Qualified eCommerce & B2B Brands"
       : "Besplatan Google Ads Video Audit — za kvalifikovane eCommerce i B2B brendove",
     description: isEn
-      ? "15-minute video walkthrough of your Google Ads account: structure issues, conversion tracking gaps, bidding strategy, and top 3 priorities to fix. For brands with €1,000+/mo ad spend."
-      : "15-minutni video review vašeg Google Ads naloga: struktura kampanja, conversion tracking, bidding strategija, i top 3 prioriteta za fix. Za brendove sa €1.000+/mes ad spend-om.",
+      ? "15-minute video walkthrough of your Google Ads account: structure issues, conversion tracking gaps, bidding strategy, and top 3 priorities to fix. For brands with €1,500+/mo ad spend."
+      : "15-minutni video review vašeg Google Ads naloga: struktura kampanja, conversion tracking, bidding strategija, i top 3 prioriteta za fix. Za brendove sa €1.500+/mes ad spend-om.",
     locale,
     path: "/audit",
     srPath: "/audit",
@@ -59,8 +59,8 @@ export default async function AuditPage({ params }: Props) {
 
               <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
                 {isEn
-                  ? "I'll personally review your account, record a 15-minute video walkthrough showing 3 red flags and top 3 priorities to fix. No sales pitch. Just a qualified second opinion from 9+ years of managing campaigns across 50+ brands."
-                  : "Lično ću pregledati vaš nalog i snimiti 15-minutni video koji pokazuje 3 crvena flag-a i top 3 prioriteta za fix. Bez prodajnog razgovora. Samo kvalifikovano drugo mišljenje iz 9+ godina rada sa 50+ brendova."}
+                  ? "I'll personally review your account, record a 15-minute video walkthrough showing 3 red flags and top 3 priorities to fix. No sales pitch. Just a qualified second opinion from 10+ years of managing campaigns across 50+ brands."
+                  : "Lično ću pregledati vaš nalog i snimiti 15-minutni video koji pokazuje 3 crvena flag-a i top 3 prioriteta za fix. Bez prodajnog razgovora. Samo kvalifikovano drugo mišljenje iz 10+ godina rada sa 50+ brendova."}
               </p>
 
               <div className="flex flex-wrap gap-4 mb-8">
@@ -172,11 +172,11 @@ export default async function AuditPage({ params }: Props) {
                     <span>
                       {isEn ? (
                         <>
-                          Min. <strong>€1,000/mo</strong> (SR) or <strong>€3,000/mo</strong> (UK/EU/US) ad spend
+                          Ad spend: <strong>€1,500+/month</strong> (or £1,500+)
                         </>
                       ) : (
                         <>
-                          Min. <strong>€1.000/mes</strong> (SR) ili <strong>€3.000/mes</strong> (UK/EU/US) ad spend
+                          Ad spend: <strong>€1.500+/mesečno</strong>
                         </>
                       )}
                     </span>

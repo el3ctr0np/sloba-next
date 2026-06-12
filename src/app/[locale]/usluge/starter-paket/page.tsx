@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Starter Package from €500 | Professional Campaign Setup — Slobodan Jelisavac"
+      ? "Google Ads Starter Package from €300 | Professional Campaign Setup — Slobodan Jelisavac"
       : "Google Ads Starter Paket od €300 | Profesionalni Setup — Slobodan Jelisavac",
     description: isEn
-      ? "Professional Google Ads setup for beginners. Campaigns that work from day one + training for self-management. Packages starting at €500 with tracking, training, and 30-day support."
+      ? "Professional Google Ads setup for beginners. Campaigns that work from day one + training for self-management. Packages starting at €300 with tracking, training, and 30-day support."
       : "Profesionalni Google Ads setup za početnike. Kampanje koje rade od prvog dana + edukacija za samostalno vođenje. Paketi od €300.",
     locale,
     path: "/services/starter-package",
@@ -314,7 +314,7 @@ export default async function StarterPaketPage({ params }: Props) {
     locale === "en"
       ? [
           {
-            value: "€500",
+            value: "€300",
             label: "from — professional entry point to Google Ads"
           },
           { value: "45-60min", label: "live training tailored to your account" },
@@ -360,7 +360,7 @@ export default async function StarterPaketPage({ params }: Props) {
           {
             question: "Do you work with eCommerce campaigns?",
             answer:
-              "Yes. The eCommerce Starter Package (€700) includes Search + Shopping campaigns, basic feed review and feed optimization recommendations."
+              "Yes. The eCommerce Starter Package (€700) includes Search + Shopping campaigns, basic feed review and feed optimization recommendations. Basic Starter starts at €300."
           },
           {
             question: "How long from start to live campaigns?",
@@ -421,7 +421,7 @@ export default async function StarterPaketPage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: "Google Ads Strategist"
+    jobTitle: "Google Ads Consultant"
   };
 
   const serviceSchema =
@@ -431,12 +431,12 @@ export default async function StarterPaketPage({ params }: Props) {
           "@type": "Service",
           name: "Google Ads Starter Package",
           description:
-            "Starter package for beginners with professional Google Ads setup, conversion tracking and training for self-management. Three packages: Basic €500, Standard €700, eCommerce €900.",
+            "Starter package for beginners with professional Google Ads setup, conversion tracking and training for self-management. Three packages: Basic €300, Standard €500, eCommerce €700.",
           provider: {
             "@type": "Person",
             name: "Slobodan Jelisavac",
             url: "https://www.slobodan-jelisavac.com",
-            jobTitle: "Google Ads Strategist",
+            jobTitle: "Google Ads Consultant",
             knowsAbout: [
               "Google Ads",
               "Google Ads Setup",
@@ -456,13 +456,13 @@ export default async function StarterPaketPage({ params }: Props) {
           offers: {
             "@type": "Offer",
             priceCurrency: "EUR",
-            price: "500",
+            price: "300",
             priceSpecification: {
               "@type": "UnitPriceSpecification",
-              price: "500",
+              price: "300",
               priceCurrency: "EUR",
               unitText: "one-time",
-              description: "Prices start at €500 for Basic Starter Package"
+              description: "Prices start at €300 for Basic Starter Package"
             }
           }
         }
@@ -476,7 +476,7 @@ export default async function StarterPaketPage({ params }: Props) {
             "@type": "Person",
             name: "Slobodan Jelisavac",
             url: "https://www.slobodan-jelisavac.com",
-            jobTitle: "Google Ads Strategist",
+            jobTitle: "Google Ads Consultant",
             knowsAbout: [
               "Google Ads",
               "Google Ads Setup",
@@ -534,13 +534,13 @@ export default async function StarterPaketPage({ params }: Props) {
               "@type": "ListItem",
               position: 2,
               name: "Services",
-              item: "https://www.slobodan-jelisavac.com/usluge"
+              item: "https://www.slobodan-jelisavac.com/en/services"
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Starter Package",
-              item: "https://www.slobodan-jelisavac.com/usluge/starter-paket"
+              item: "https://www.slobodan-jelisavac.com/en/services/starter-package"
             }
           ]
         }
@@ -558,13 +558,13 @@ export default async function StarterPaketPage({ params }: Props) {
               "@type": "ListItem",
               position: 2,
               name: "Usluge",
-              item: "https://www.slobodan-jelisavac.com/usluge"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge"
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Starter paket",
-              item: "https://www.slobodan-jelisavac.com/usluge/starter-paket"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge/starter-paket"
             }
           ]
         };
@@ -669,7 +669,7 @@ export default async function StarterPaketPage({ params }: Props) {
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
               <span>
                 {locale === "en"
-                  ? "9+ years of experience"
+                  ? "10+ years of experience"
                   : "10+ godina iskustva"}
               </span>
               <span>3x UK Search Awards</span>
@@ -932,13 +932,13 @@ export default async function StarterPaketPage({ params }: Props) {
           {/* Basic Starter */}
           <Card className="h-full">
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "For local business" : "Za lokalni biznis"}
+              {locale === "en" ? "For advertising beginners" : "Za početnike u oglašavanju"}
             </p>
             <h3 className="text-xl font-heading font-bold mb-1">
               Basic Starter
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "€500" : "€300"}
+              €300
               <span className="text-sm text-gray-500 font-normal">
                 {" "}
                 {locale === "en" ? "one-time" : "jednokratno"}
@@ -946,8 +946,8 @@ export default async function StarterPaketPage({ params }: Props) {
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
-                ? "For simple services, local business and smaller companies that want simple setup without complications."
-                : "Za jednostavne usluge, lokalni biznis i manja preduzeća koja žele jednostavan setup bez komplikovanja."}
+                ? "For simple services and smaller companies that want simple setup without complications."
+                : "Za jednostavne usluge i manja preduzeća koja žele jednostavan setup bez komplikovanja."}
             </p>
             <ul className="space-y-2 text-sm text-gray-600 mb-5">
               <li className="flex items-start gap-2">
@@ -998,7 +998,7 @@ export default async function StarterPaketPage({ params }: Props) {
               Standard Starter
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "€700" : "€500"}
+              €500
               <span className="text-sm text-gray-500 font-normal">
                 {" "}
                 {locale === "en" ? "one-time" : "jednokratno"}
@@ -1061,7 +1061,7 @@ export default async function StarterPaketPage({ params }: Props) {
               eCommerce Starter
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "€900" : "€700"}
+              €700
               <span className="text-sm text-gray-500 font-normal">
                 {" "}
                 {locale === "en" ? "one-time" : "jednokratno"}

@@ -46,7 +46,7 @@ export default function GoogleAdsNovosti2026SR() {
         Google Ads platforma se menja brže nego ikad. U 2026, između AI Max ekspanzije, Shopping lansiranja na novim tržištima, PMax transparentnosti i deprecation-a starih funkcija — teško je pratiti šta je bitno, a šta je samo šum. Ovaj post je moj odgovor na taj problem.
       </p>
       <p>
-        Radim Google Ads konsalting 9+ godina, upravljam sa 10+ naloga mesečno na tržištima od Srbije do UK i USA. Svaki mesec čitam sve što izlazi iz Google HQ-a, filtriram šta zaista utiče na kampanje, i upisujem ovde. Najnoviji mesec je uvek na vrhu.
+        Radim Google Ads konsalting 10+ godina, upravljam sa 10+ naloga mesečno na tržištima od Srbije do UK i USA. Svaki mesec čitam sve što izlazi iz Google HQ-a, filtriram šta zaista utiče na kampanje, i upisujem ovde. Najnoviji mesec je uvek na vrhu.
       </p>
 
       <hr />

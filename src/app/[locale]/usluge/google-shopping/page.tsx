@@ -265,7 +265,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Strategist" : "Google Ads Strategist"
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
   const serviceSchema = locale === "en" ? {
@@ -314,13 +314,13 @@ export default async function GoogleShoppingPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://www.slobodan-jelisavac.com/en/usluge"
+        item: "https://www.slobodan-jelisavac.com/en/services"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Google Shopping Campaigns",
-        item: "https://www.slobodan-jelisavac.com/en/usluge/google-shopping"
+        item: "https://www.slobodan-jelisavac.com/en/services/google-shopping"
       }
     ]
   } : {
@@ -337,13 +337,13 @@ export default async function GoogleShoppingPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Usluge",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Google Shopping kampanje",
-        item: "https://www.slobodan-jelisavac.com/usluge/google-shopping"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/google-shopping"
       }
     ]
   };
@@ -426,7 +426,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
               <div className="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-lg">
                 <span className="text-yellow-400 text-xl">✓</span>
                 <span className="text-sm text-slate-200">
-                  {locale === "en" ? "9+ years experience" : "10+ godina iskustva"}
+                  {locale === "en" ? "10+ years experience" : "10+ godina iskustva"}
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-lg">
@@ -445,7 +445,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Schedule a free consultation" : "Zakažite besplatnu konsultaciju"}
+                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
               <Button href="/case-studies" variant="primary">
                 {locale === "en" ? "View results" : "Pogledajte rezultate"}
@@ -639,7 +639,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Schedule a free consultation" : "Zakažite besplatnu konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Button href="/usluge" variant="primary">
               {locale === "en" ? "View all services" : "Pogledajte sve usluge"}

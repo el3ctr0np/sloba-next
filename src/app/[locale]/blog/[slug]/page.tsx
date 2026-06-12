@@ -901,7 +901,7 @@ export default async function BlogPostPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
     },
     publisher: {
       "@type": "Person",

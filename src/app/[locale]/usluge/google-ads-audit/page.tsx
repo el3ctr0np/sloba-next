@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Audit Services | Professional PPC Account Analysis — Slobodan Jelisavac"
       : "Google Ads Audit Srbija | Profesionalna Analiza Google Ads Kampanja — Slobodan Jelisavac",
     description: isEn
-      ? "Professional Google Ads audit reveals where you're losing money and how to improve ROAS. In-depth campaign analysis with actionable recommendations. From €200."
-      : "Google Ads Srbija — profesionalni audit otkriva gde gubite novac i kako poboljšati ROAS. Detaljna analiza kampanja sa konkretnim preporukama. Od €200.",
+      ? "Professional Google Ads audit reveals where you're losing money and how to improve ROAS. In-depth campaign analysis with actionable recommendations. From €350."
+      : "Google Ads Srbija — profesionalni audit otkriva gde gubite novac i kako poboljšati ROAS. Detaljna analiza kampanja sa konkretnim preporukama. Od €350.",
     locale,
     path: "/services/google-ads-audit",
     srPath: "/usluge/google-ads-audit",
@@ -26,7 +26,7 @@ const personSchema = {
   "@type": "Person",
   name: "Slobodan Jelisavac",
   url: "https://www.slobodan-jelisavac.com",
-  jobTitle: "Google Ads Strategist"
+  jobTitle: "Google Ads Consultant"
 };
 
 export default async function GoogleAdsAuditPage({ params }: Props) {
@@ -293,7 +293,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: "Google Ads Consultant",
       knowsAbout: [
         "Google Ads",
         "Google Ads Audit",
@@ -318,14 +318,14 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     offers: {
       "@type": "Offer",
       priceCurrency: "EUR",
-      price: "200",
+      price: "350",
       priceSpecification: {
         "@type": "UnitPriceSpecification",
-        price: "200",
+        price: "350",
         priceCurrency: "EUR",
         description: locale === "en"
-          ? "Standard audit from €200. For large and complex accounts (over €3,000 monthly), pricing on request."
-          : "Standardni audit od €200. Za velike i složene naloge (preko €3,000 mesečno) cena na upit."
+          ? "Standard audit from €350. For large and complex accounts (over €3,000 monthly), pricing on request."
+          : "Standardni audit od €350. Za velike i složene naloge (preko €3,000 mesečno) cena na upit."
       }
     }
   };
@@ -357,13 +357,13 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: locale === "en" ? "Services" : "Usluge",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: locale === "en" ? "https://www.slobodan-jelisavac.com/en/services" : "https://www.slobodan-jelisavac.com/sr/usluge"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: locale === "en" ? "Google Ads Audit" : "Google Ads audit",
-        item: "https://www.slobodan-jelisavac.com/usluge/google-ads-audit"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-audit"
       }
     ]
   };
@@ -466,7 +466,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
 
             {/* Trust badges */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span>{locale === "en" ? "9+ years of experience" : "10+ godina iskustva"}</span>
+              <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
               <span>{locale === "en" ? "€2M+ in audited ad spend" : "€2M+ audit-ovanih budžeta"}</span>
               <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
             </div>
@@ -710,7 +710,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                 : "Standardni Google Ads audit"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              ~€200
+              od €350
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"

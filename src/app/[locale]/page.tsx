@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return buildMetadata({
-      title: "Google Ads Consultant | 9+ Years, 50+ Brands — Slobodan Jelisavac",
+      title: "Google Ads Consultant | 10+ Years, 50+ Brands — Slobodan Jelisavac",
       description: "Expert Google Ads management for eCommerce, B2B and SaaS brands. 3.7x average ROAS, 50+ brands across 6+ countries. Book a free consultation.",
       locale,
       path: "",
@@ -46,7 +46,8 @@ export default async function Home({ params }: Props) {
           "@id": "https://www.slobodan-jelisavac.com/#business",
           name: "Slobodan Jelisavac - Google Ads Consultant",
           description:
-            "Google Ads consultant with 9+ years of experience managing campaigns for eCommerce, B2B and SaaS brands across the UK, US and EU.",
+            "Google Ads Consultant with 10+ years of experience managing campaigns for eCommerce, B2B and SaaS brands across the UK, US and EU.",
+          priceRange: "from €700/month",
           url: "https://www.slobodan-jelisavac.com/en",
           email: "info@slobodan-jelisavac.com",
           image: "https://www.slobodan-jelisavac.com/og/homepage.png",
@@ -80,9 +81,9 @@ export default async function Home({ params }: Props) {
           "@context": "https://schema.org",
           "@type": ["ProfessionalService", "LocalBusiness"],
           "@id": "https://www.slobodan-jelisavac.com/#business",
-          name: "Slobodan Jelisavac - Google Ads Strategist",
+          name: "Slobodan Jelisavac - Google Ads Konsultant",
           description:
-            "Google Ads strategist sa decenijom iskustva u radu sa premium brendovima. Specijalizovan za eCommerce, B2B i SaaS.",
+            "Google Ads konsultant sa decenijom iskustva u radu sa premium brendovima. Specijalizovan za eCommerce, B2B i SaaS.",
           url: "https://www.slobodan-jelisavac.com/sr",
           telephone: "+381692603998",
           email: "info@slobodan-jelisavac.com",
@@ -110,7 +111,7 @@ export default async function Home({ params }: Props) {
             latitude: 44.9439,
             longitude: 20.2200,
           },
-          priceRange: "€200-€800/mesečno",
+          priceRange: "od €700/mesečno",
           areaServed: [
             { "@type": "Country", name: "Serbia" },
             { "@type": "Country", name: "Croatia" },
@@ -144,12 +145,12 @@ export default async function Home({ params }: Props) {
           title: "Your search for a Google Ads expert ends here",
           subtitle:
             "No onboarding fees. No long-term contracts. No juniors on your account. AI-powered strategies for maximum results.",
-          ctaText: "Book a Free Consultation",
+          ctaText: "Book a free 20-minute call",
           ctaHref: "/kontakt",
           secondaryCtaText: "View Results",
           secondaryCtaHref: "/case-studies",
           trustBadges: [
-            "9+ years of experience",
+            "10+ years of experience",
             "3x UK Search Awards winner",
             "Google Partner (Ad Mixer — official representative)",
             "Partner at Funky Enterprises (omnichannel agency)",
@@ -160,12 +161,12 @@ export default async function Home({ params }: Props) {
           title: "Google Ads Srbija — vaša potraga za Google Ads konsultantom se završava ovde",
           subtitle:
             "Profesionalno Google oglašavanje u Srbiji, UK i EU. Bez onboarding naknada. Bez dugoročnih ugovora. Bez juniora na vašem nalogu. Uz napredne AI tehnologije za maksimalne rezultate.",
-          ctaText: "Zakažite besplatnu konsultaciju",
+          ctaText: "Zakažite besplatnih 20 minuta",
           ctaHref: "/kontakt",
           secondaryCtaText: "Pogledajte rezultate",
           secondaryCtaHref: "/case-studies",
           trustBadges: [
-            "9+ godina iskustva",
+            "10+ godina iskustva",
             "3x UK Search Awards nagrade",
             "Google Partner (Ad Mixer — zvanični predstavnik)",
             "Partner @ Funky Enterprises",
@@ -176,13 +177,13 @@ export default async function Home({ params }: Props) {
   const stats =
     locale === "en"
       ? [
-          { value: "9+", label: "years of experience" },
+          { value: "10+", label: "years of experience" },
           { value: "3.7x", label: "average ROAS" },
           { value: "50+", label: "brands managed" },
           { value: "6+", label: "countries served" },
         ]
       : [
-          { value: "9+", label: "godina iskustva" },
+          { value: "10+", label: "godina iskustva" },
           { value: "3.7x", label: "prosečan ROAS" },
           { value: "50+", label: "brendova" },
           { value: "6+", label: "zemalja" },
@@ -197,12 +198,12 @@ export default async function Home({ params }: Props) {
     logo: "https://www.slobodan-jelisavac.com/og/homepage.png",
     description:
       locale === "en"
-        ? "Google Ads consultant with 9+ years of experience managing campaigns for eCommerce, B2B and SaaS brands."
-        : "Google Ads konsultant sa 9+ godina iskustva u vođenju kampanja za eCommerce, B2B i SaaS brendove.",
+        ? "Google Ads Consultant with 10+ years of experience managing campaigns for eCommerce, B2B and SaaS brands."
+        : "Google Ads konsultant sa 10+ godina iskustva u vođenju kampanja za eCommerce, B2B i SaaS brendove.",
     founder: {
       "@type": "Person",
       name: "Slobodan Jelisavac",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: "Google Ads Consultant",
       url: "https://www.slobodan-jelisavac.com",
     },
     contactPoint: {
@@ -232,7 +233,7 @@ export default async function Home({ params }: Props) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <AnimateOnScroll delay={0}>
               <div className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-1">
-                <CounterAnimation end={9} suffix="+" />
+                <CounterAnimation end={10} suffix="+" />
               </div>
               <p className="text-gray-500 text-sm">{stats[0].label}</p>
             </AnimateOnScroll>

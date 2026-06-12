@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section, AnimateOnScroll } from "@/components/ui";
 import { buildMetadata } from "@/lib/metadata";
@@ -10,8 +11,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return buildMetadata({
-      title: "About — Slobodan Jelisavac | Google Ads Specialist | 9+ Years",
-      description: "Google Ads freelancer and PPC consultant with 9+ years experience. UK Search Awards winner, 50+ brands in 6+ countries. Work directly with the expert — no middlemen.",
+      title: "About — Slobodan Jelisavac | Google Ads Consultant | 10+ Years",
+      description: "Google Ads Consultant with 10+ years experience. UK Search Awards winner, 50+ brands in 6+ countries. Work directly with the expert — no middlemen.",
       locale,
       path: "/about",
       srPath: "/o-meni",
@@ -20,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "O Meni — Slobodan Jelisavac | Google Ads Strategist | 9+ Godina Iskustva",
-    description: "Google Ads strategist sa 9+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja. Direktan rad sa ekspertom — bez posrednika.",
+    title: "O Meni — Slobodan Jelisavac | Google Ads Konsultant | 10+ Godina Iskustva",
+    description: "Google Ads konsultant sa 10+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja. Direktan rad sa ekspertom — bez posrednika.",
     locale,
     path: "/o-meni",
     srPath: "/o-meni",
@@ -198,9 +199,9 @@ export default async function AboutPage({ params }: Props) {
         "@type": "Person",
         name: "Slobodan Jelisavac",
         url: "https://www.slobodan-jelisavac.com",
-        jobTitle: "Google Ads Specialist",
+        jobTitle: "Google Ads Consultant",
         description:
-          "Google Ads freelancer and PPC consultant with 9+ years experience. UK Search Awards winner, 50+ brands in 6+ countries.",
+          "Google Ads Consultant with 10+ years experience. UK Search Awards winner, 50+ brands in 6+ countries.",
         knowsAbout: [
           "Google Ads",
           "PPC Strategy",
@@ -223,9 +224,9 @@ export default async function AboutPage({ params }: Props) {
         "@type": "Person",
         name: "Slobodan Jelisavac",
         url: "https://www.slobodan-jelisavac.com",
-        jobTitle: "Google Ads Strategist",
+        jobTitle: "Google Ads Konsultant",
         description:
-          "Google Ads strategist sa 9+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja.",
+          "Google Ads konsultant sa 10+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja.",
         knowsAbout: [
           "Google Ads",
           "PPC Strategy",
@@ -334,8 +335,8 @@ export default async function AboutPage({ params }: Props) {
 
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 {locale === "en"
-                  ? "Slobodan Jelisavac — Google Ads specialist focused on data and results"
-                  : "Slobodan Jelisavac — Google Ads strategist sa fokusom na podatke i rezultate"}
+                  ? "Slobodan Jelisavac — Google Ads Consultant focused on data and results"
+                  : "Slobodan Jelisavac — Google Ads Konsultant sa fokusom na podatke i rezultate"}
               </h1>
 
               <p className="text-lg text-slate-300 mb-6">
@@ -360,7 +361,7 @@ export default async function AboutPage({ params }: Props) {
                       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  <span>{locale === "en" ? "9+ years of experience" : "9+ godina iskustva"}</span>
+                  <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <svg
@@ -398,7 +399,7 @@ export default async function AboutPage({ params }: Props) {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button href="/kontakt" variant="secondary">
-                  {locale === "en" ? "Book a consultation" : "Zakažite konsultaciju"}
+                  {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
                 </Button>
                 <Button href="/case-studies" variant="primary">
                   {locale === "en" ? "View results" : "Pogledajte rezultate"}
@@ -406,10 +407,17 @@ export default async function AboutPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Right: Image Placeholder */}
+            {/* Right: Photo */}
             <div className="hidden md:flex items-center justify-center">
-              <div className="w-full aspect-square max-w-md rounded-2xl bg-slate-800 border-2 border-slate-700 flex items-center justify-center">
-                <span className="text-slate-500 text-4xl">SJ</span>
+              <div className="w-full aspect-square max-w-md rounded-2xl overflow-hidden">
+                <Image
+                  src="/slobodan-jelisavac-photo.png"
+                  alt="Slobodan Jelisavac — Google Ads konsultant"
+                  width={480}
+                  height={480}
+                  className="w-full h-full object-cover rounded-2xl"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -581,12 +589,12 @@ export default async function AboutPage({ params }: Props) {
           </h2>
           <p className="text-slate-300 mb-8">
             {locale === "en"
-              ? "Book a free consultation and let's see how Google Ads can work for your business."
-              : "Zakažite besplatnu konsultaciju i da vidimo kako Google Ads može raditi za vaš biznis."}
+              ? "Book a free 20-minute call and let's see how Google Ads can work for your business."
+              : "Zakažite besplatnih 20 minuta i da vidimo kako Google Ads može raditi za vaš biznis."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a consultation" : "Zakažite konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Button href="/usluge" variant="primary">
               {locale === "en" ? "View services" : "Pogledajte usluge"}

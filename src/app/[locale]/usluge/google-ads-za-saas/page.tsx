@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads for SaaS | PPC Lead Generation for Software Companies — Slobodan Jelisavac"
       : "Google Ads za SaaS | Customer acquisition - Slobodan Jelisavac",
     description: isEn
-      ? "Reduce CAC and scale SaaS customer acquisition with Google Ads. Focus on trial-to-paid conversions, demo bookings, and metrics that drive growth. 9+ years working with B2B SaaS companies."
+      ? "Reduce CAC and scale SaaS customer acquisition with Google Ads. Focus on trial-to-paid conversions, demo bookings, and metrics that drive growth. 10+ years working with B2B SaaS companies."
       : "Smanjite CAC i skalirajte SaaS acquisition kroz Google Ads. Fokus na trial-to-paid konverzije i metrike koje donose rast. 10+ godina iskustva sa B2B SaaS kompanijama.",
     locale,
     path: "/services/google-ads-for-saas",
@@ -210,7 +210,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
     jobTitle:
-      locale === "en" ? "Google Ads Strategist" : "Google Ads Strategist"
+      locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
   const serviceSchema = locale === "en"
@@ -224,7 +224,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           "@type": "Person",
           name: "Slobodan Jelisavac",
           url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Strategist",
+          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
           knowsAbout: [
             "Google Ads",
             "SaaS Customer Acquisition",
@@ -251,7 +251,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           "@type": "Person",
           name: "Slobodan Jelisavac",
           url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Strategist",
+          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
           knowsAbout: [
             "Google Ads",
             "SaaS Customer Acquisition",
@@ -306,13 +306,13 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
             "@type": "ListItem",
             position: 2,
             name: "Usluge",
-            item: "https://www.slobodan-jelisavac.com/usluge"
+            item: "https://www.slobodan-jelisavac.com/sr/usluge"
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Google Ads za SaaS",
-            item: "https://www.slobodan-jelisavac.com/usluge/google-ads-za-saas"
+            item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-za-saas"
           }
         ]
       };
@@ -392,7 +392,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
               <div className="bg-slate-800 px-4 py-3 rounded-lg border border-slate-700">
                 <div className="text-yellow-400 font-semibold text-sm">
                   {locale === "en"
-                    ? "9+ years experience"
+                    ? "10+ years experience"
                     : "10+ godina iskustva"}
                 </div>
                 <div className="text-slate-400 text-xs mt-1">
@@ -430,8 +430,8 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
                 {locale === "en"
-                  ? "Book a free consultation"
-                  : "Zakažite besplatnu konsultaciju"}
+                  ? "Book a free 20-minute call"
+                  : "Zakažite besplatnih 20 minuta"}
               </Button>
               <Button href="/usluge/google-ads-za-b2b" variant="primary">
                 {locale === "en"
@@ -624,7 +624,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button href="/kontakt" variant="secondary">
               {locale === "en"
-                ? "Book a free consultation"
+                ? "Book a free 20-minute call"
                 : "Zakažite besplatnu konsultaciju"}
             </Button>
             <Button href="/usluge/search-kampanje" variant="primary">

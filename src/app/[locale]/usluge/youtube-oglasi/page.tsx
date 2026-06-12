@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "YouTube Ads Management | Video Advertising Campaigns — Slobodan Jelisavac"
       : "YouTube oglašavanje i oglasi Srbija | Video kampanje sa merljivim ROI",
     description: isEn
-      ? "Professional YouTube advertising management. Drive brand awareness and conversions through targeted video campaigns. Expert PPC consultant with 9+ years experience across 6+ countries."
+      ? "Professional YouTube advertising management. Drive brand awareness and conversions through targeted video campaigns. Expert PPC consultant with 10+ years experience across 6+ countries."
       : "YouTube oglašavanje u Srbiji — profesionalno upravljanje YouTube oglasima. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1.000/mesečno.",
     locale,
     path: "/services/youtube-ads",
@@ -221,7 +221,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: "Google Ads Strategist & PPC Consultant",
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
     knowsAbout: ["YouTube Ads", "Video Advertising", "Google Ads", "PPC Strategy", "Performance Marketing"],
     areaServed: [
       { "@type": "Country", name: "United States" },
@@ -236,7 +236,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: "Google Ads Strategist",
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
     knowsAbout: ["YouTube Ads", "Video Advertising", "Google Ads", "PPC Strategy", "Performance Marketing"],
     areaServed: [
       { "@type": "Country", name: "Serbia" },
@@ -283,13 +283,13 @@ export default async function YouTubeOglasiPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Usluge",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "YouTube oglasi",
-        item: "https://www.slobodan-jelisavac.com/usluge/youtube-oglasi"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/youtube-oglasi"
       }
     ]
   };
@@ -377,7 +377,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
                   />
                 </svg>
                 <span className="text-sm text-gray-300">
-                  {locale === "en" ? "9+ years experience" : "7+ godina iskustva"}
+                  {locale === "en" ? "10+ years experience" : "7+ godina iskustva"}
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -416,7 +416,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a free consultation" : "Kontaktirajte me za više informacija"}
+                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
               <Button href="/usluge/google-ads-upravljanje" variant="primary">
                 {locale === "en" ? "Full Google Ads management" : "Google Ads upravljanje"}

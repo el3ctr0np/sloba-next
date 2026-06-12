@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads for B2B | Lead Generation & PPC Management — Slobodan Jelisavac"
       : "Google Ads za B2B kompanije | Lead generation Srbija - Slobodan Jelisavac",
     description: isEn
-      ? "Expert B2B Google Ads management focused on qualified lead generation, CPA optimization, and CRM integration (HubSpot, Salesforce). 9+ years experience, 50+ brands across 6+ countries."
+      ? "Expert B2B Google Ads management focused on qualified lead generation, CPA optimization, and CRM integration (HubSpot, Salesforce). 10+ years experience, 50+ brands across 6+ countries."
       : "Google Ads Srbija za B2B kompanije — strategije za lead generation. 180% više kvalifikovanih leadova, CRM integracija (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju.",
     locale,
     path: "/services/google-ads-for-b2b",
@@ -193,7 +193,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Strategist" : "Google Ads Strategist"
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
   const serviceSchema = locale === "en" ? {
@@ -206,7 +206,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
       knowsAbout: ["Google Ads", "B2B Lead Generation", "CRM Integration", "Performance Marketing"]
     },
     areaServed: [
@@ -227,7 +227,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
       knowsAbout: ["Google Ads", "B2B Lead Generation", "CRM Integration", "Performance Marketing"]
     },
     areaServed: [
@@ -252,13 +252,13 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/en/services"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Google Ads for B2B",
-        item: "https://www.slobodan-jelisavac.com/usluge/google-ads-za-b2b"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-za-b2b"
       }
     ]
   } : {
@@ -275,13 +275,13 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Usluge",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Google Ads za B2B",
-        item: "https://www.slobodan-jelisavac.com/usluge/google-ads-za-b2b"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-za-b2b"
       }
     ]
   };
@@ -346,7 +346,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             {/* Trust Badges */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-                <div className="text-yellow-400 font-bold text-2xl mb-1">{locale === "en" ? "9+" : "10+"}</div>
+                <div className="text-yellow-400 font-bold text-2xl mb-1">{locale === "en" ? "10+" : "10+"}</div>
                 <div className="text-sm text-slate-400">{locale === "en" ? "years of experience" : "godina iskustva"}</div>
               </div>
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
@@ -361,7 +361,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
+                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
               <Button href="/usluge/search-kampanje" variant="primary">
                 {locale === "en" ? "Search campaigns" : "Search kampanje"}
@@ -516,7 +516,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Button href="/usluge/google-ads-upravljanje" variant="primary">
               {locale === "en" ? "Google Ads management" : "Google Ads upravljanje"}

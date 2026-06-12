@@ -22,8 +22,8 @@ export function AuthorBox({ locale }: { locale: string }) {
           </p>
           <p className="text-gray-600 text-sm leading-relaxed mb-3">
             {isEn
-              ? "9+ years managing Google Ads for eCommerce and B2B companies across UK, EU, and the Balkans. Specialized in Search, Shopping, and Performance Max campaigns."
-              : "9+ godina upravljanja Google Ads kampanjama za eCommerce i B2B kompanije u UK, EU i na Balkanu. Specijalizovan za Search, Shopping i Performance Max kampanje."}
+              ? "10+ years managing Google Ads for eCommerce and B2B companies across UK, EU, and the Balkans. Specialized in Search, Shopping, and Performance Max campaigns."
+              : "10+ godina upravljanja Google Ads kampanjama za eCommerce i B2B kompanije u UK, EU i na Balkanu. Specijalizovan za Search, Shopping i Performance Max kampanje."}
           </p>
           <div className="flex items-center gap-3">
             <a

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads for eCommerce | Shopping & PMax Campaign Management — Slobodan Jelisavac"
       : "Google Ads za eCommerce | Online prodavnice - Slobodan Jelisavac",
     description: isEn
-      ? "Drive profitable growth for your online store with expert eCommerce Google Ads strategies. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, and other verticals. 9+ years experience, 5x+ ROAS in 90 days."
+      ? "Drive profitable growth for your online store with expert eCommerce Google Ads strategies. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, and other verticals. 10+ years experience, 5x+ ROAS in 90 days."
       : "Povećajte prihod i ROAS vaše online prodavnice sa specijalizovanim Google Ads strategijama za eCommerce. Shopping, Performance Max i remarketing kampanje za fashion, home & garden i druge vertikale.",
     locale,
     path: "/services/google-ads-for-ecommerce",
@@ -215,7 +215,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Strategist & eCommerce PPC Consultant" : "Google Ads Strategist"
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
   const serviceSchema = locale === "en"
@@ -229,7 +229,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
           "@type": "Person",
           name: "Slobodan Jelisavac",
           url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Strategist & eCommerce PPC Consultant",
+          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
           knowsAbout: ["Google Ads", "eCommerce Advertising", "Google Shopping", "Performance Max", "Product Feed Optimization"]
         },
         areaServed: [
@@ -251,7 +251,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
           "@type": "Person",
           name: "Slobodan Jelisavac",
           url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Strategist",
+          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
           knowsAbout: ["Google Ads", "eCommerce Advertising", "Google Shopping", "Performance Max"]
         },
         areaServed: [
@@ -277,13 +277,13 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
             "@type": "ListItem",
             position: 2,
             name: "Services",
-            item: "https://www.slobodan-jelisavac.com/en/usluge"
+            item: "https://www.slobodan-jelisavac.com/en/services"
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Google Ads for eCommerce",
-            item: "https://www.slobodan-jelisavac.com/en/usluge/google-ads-za-ecommerce"
+            item: "https://www.slobodan-jelisavac.com/en/services/google-ads-for-ecommerce"
           }
         ]
       }
@@ -301,13 +301,13 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
             "@type": "ListItem",
             position: 2,
             name: "Usluge",
-            item: "https://www.slobodan-jelisavac.com/usluge"
+            item: "https://www.slobodan-jelisavac.com/sr/usluge"
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Google Ads za eCommerce",
-            item: "https://www.slobodan-jelisavac.com/usluge/google-ads-za-ecommerce"
+            item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-za-ecommerce"
           }
         ]
       };
@@ -373,7 +373,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
                 <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-slate-300">{locale === "en" ? "9+ years experience" : "10+ godina iskustva"}</span>
+                <span className="text-slate-300">{locale === "en" ? "10+ years experience" : "10+ godina iskustva"}</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -391,7 +391,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
+                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
               <Button href="/usluge/google-shopping" variant="primary">
                 {locale === "en" ? "Google Shopping campaigns" : "Google Shopping kampanje"}
@@ -554,7 +554,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Button href="/usluge/performance-marketing" variant="primary">
               {locale === "en" ? "Performance Marketing" : "Performance Marketing"}

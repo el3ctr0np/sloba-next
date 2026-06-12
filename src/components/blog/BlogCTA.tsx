@@ -16,7 +16,7 @@ export function BlogCTA({
   target?: "audit" | "consult";
 }) {
   const isEn = locale === "en";
-  const primaryHref = target === "audit" ? "/usluge/google-ads-audit" : "/kontakt";
+  const primaryHref = target === "audit" ? "/audit" : "/kontakt";
 
   if (variant === "mid") {
     return (
@@ -33,8 +33,8 @@ export function BlogCTA({
             </h3>
             <p className="text-sm text-gray-600 mb-0">
               {isEn
-                ? "I'll record a 5-minute walkthrough of your campaigns showing exactly where you're losing money and what to fix first."
-                : "Snimićemo 5-minutni pregled vaših kampanja gde pokazujemo tačno gde gubite novac i šta bi prvi popravili."}
+                ? "I'll record a 15-minute walkthrough of your campaigns showing exactly where you're losing money and what to fix first."
+                : "Snimićemo 15-minutni pregled vaših kampanja gde pokazujemo tačno gde gubite novac i šta bi prvi popravili."}
             </p>
           </div>
           <Link
@@ -66,8 +66,8 @@ export function BlogCTA({
       </h3>
       <p className="text-slate-300 mb-4">
         {isEn
-          ? "I'll personally record a 5-minute video walking through your campaigns, showing you where you're losing money and giving you 3 specific things to fix immediately. No sales pitch — just value."
-          : "Lično ću snimiti 5-minutni video u kome prolazim kroz vaše kampanje, pokazujem gde gubite novac i dajem 3 konkretne stvari za popravku odmah. Bez prodaje — samo vrednost."}
+          ? "I'll personally record a 15-minute video walking through your campaigns, showing you where you're losing money and giving you 3 specific things to fix immediately. No sales pitch — just value."
+          : "Lično ću snimiti 15-minutni video u kome prolazim kroz vaše kampanje, pokazujem gde gubite novac i dajem 3 konkretne stvari za popravku odmah. Bez prodaje — samo vrednost."}
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -76,7 +76,7 @@ export function BlogCTA({
             {isEn ? "What you get:" : "Šta dobijate:"}
           </p>
           <ul className="text-slate-300 text-sm space-y-1">
-            <li>{isEn ? "5-min personalised video analysis" : "5-min personalizovana video analiza"}</li>
+            <li>{isEn ? "15-min personalised video analysis" : "15-min personalizovana video analiza"}</li>
             <li>{isEn ? "3 specific quick wins to implement" : "3 konkretna quick wins za implementaciju"}</li>
             <li>{isEn ? "Budget & bidding recommendations" : "Preporuke za budžet i bidding"}</li>
           </ul>
@@ -86,7 +86,7 @@ export function BlogCTA({
             {isEn ? "Requirements:" : "Uslovi:"}
           </p>
           <ul className="text-slate-400 text-sm space-y-1">
-            <li>{isEn ? "Ad spend: €3,000+/month (or £3,000+)" : "Ad spend: €1,000+/mesečno"}</li>
+            <li>{isEn ? "Ad spend: €1,500+/month (or £1,500+)" : "Ad spend: €1.500+/mesečno"}</li>
             <li>{isEn ? "Active account for 3+ months" : "Aktivan nalog minimum 3 meseca"}</li>
             <li>{isEn ? "eCommerce or Lead Gen business" : "eCommerce ili Lead Gen biznis"}</li>
           </ul>
@@ -100,7 +100,7 @@ export function BlogCTA({
         >
           {target === "audit"
             ? (isEn ? "Apply for your free video audit \u2192" : "Aplicirajte za besplatni video audit naloga \u2192")
-            : (isEn ? "Book a free 15-min consultation \u2192" : "Zaka\u017eite besplatnu 15-min konsultaciju \u2192")}
+            : (isEn ? "Book a free 20-minute call \u2192" : "Zaka\u017eite besplatnih 20 minuta \u2192")}
         </Link>
         <Link
           href="/kontakt"
@@ -112,8 +112,8 @@ export function BlogCTA({
 
       <p className="text-slate-500 text-xs mt-4 mb-0">
         {isEn
-          ? "Limited to 3 video audits per week. Response within 48 hours."
-          : "Ograničeno na 3 video audita nedeljno. Odgovor u roku od 48h."}
+          ? "Limited to 5 audits per month. Response within 48 hours."
+          : "Ograničeno na 5 audita mesečno. Odgovor u roku od 48h."}
       </p>
     </div>
   );

@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Management Services Belgrade, Serbia | PPC Expert — Slobodan Jelisavac"
       : "Google Oglašavanje Srbija | Upravljanje Google Ads Nalogom — Slobodan Jelisavac",
     description: isEn
-      ? "Belgrade-based Google Ads management services for eCommerce and B2B companies. 180%+ ROAS improvement, 9+ years of experience across Serbia, UK, and EU. Book your free consultation."
+      ? "Belgrade-based Google Ads management services for eCommerce and B2B companies. 180%+ ROAS improvement, 10+ years of experience across Serbia, UK, and EU. Book your free consultation."
       : "Profesionalno upravljanje Google oglašavanjem za eCommerce i B2B. 180%+ poboljšanje ROAS-a, 10+ godina iskustva. Zakažite besplatnu konsultaciju.",
     locale,
     path: "/services/google-ads-management",
@@ -428,7 +428,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "How much does Google Ads cost?",
             answer:
-              "The cost of Google Ads depends on industry, competition, and goals. Average CPC varies from €0.10-0.80 in emerging markets to €1-5+ in competitive Western markets. My management services start at €750/month, and recommended minimum ad spend is from €500/month for visible results."
+              "The cost of Google Ads depends on industry, competition, and goals. Average CPC varies from €0.10-0.80 in emerging markets to €1-5+ in competitive Western markets. Monthly management starts from €700/month. For businesses with smaller ad spend, one-off projects and consultations are priced per scope."
           },
           {
             question: "Does Google Ads work for small businesses?",
@@ -470,7 +470,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "Koliko košta Google oglašavanje u Srbiji?",
             answer:
-              "Cena Google oglašavanja zavisi od industrije, konkurencije i ciljeva. Prosečan CPC u Srbiji je €0,10-0,80. Moje usluge upravljanja počinju od €350/mesečno, a preporučeni minimalni ad spend je od €500/mesečno za vidljive rezultate."
+              "Cena Google oglašavanja zavisi od industrije, konkurencije i ciljeva. Prosečan CPC u Srbiji je €0,10-0,80. Mesečno vođenje počinje od €700. Za manja ulaganja tu su one-off projekti i konsultacije — cena zavisi od obima."
           },
           {
             question: "Da li Google oglašavanje funkcioniše za malu firmu?",
@@ -484,7 +484,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: "Google Ads Strategist"
+    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
   const serviceSchema =
@@ -499,7 +499,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             "@type": "Person",
             name: "Slobodan Jelisavac",
             url: "https://www.slobodan-jelisavac.com",
-            jobTitle: "Google Ads Strategist",
+            jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
             knowsAbout: [
               "Google Ads",
               "Performance Marketing",
@@ -519,13 +519,13 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           offers: {
             "@type": "Offer",
             priceCurrency: "EUR",
-            price: "750",
+            price: "700",
             priceSpecification: {
               "@type": "UnitPriceSpecification",
-              price: "750",
+              price: "700",
               priceCurrency: "EUR",
               unitText: "monthly",
-              description: "Pricing starts at €750/month for Standard package"
+              description: "Monthly Google Ads management — from €700/month"
             }
           }
         }
@@ -539,7 +539,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             "@type": "Person",
             name: "Slobodan Jelisavac",
             url: "https://www.slobodan-jelisavac.com",
-            jobTitle: "Google Ads Strategist",
+            jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
             knowsAbout: [
               "Google Ads",
               "Performance Marketing",
@@ -557,13 +557,13 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           offers: {
             "@type": "Offer",
             priceCurrency: "EUR",
-            price: "350",
+            price: "700",
             priceSpecification: {
               "@type": "UnitPriceSpecification",
-              price: "350",
+              price: "700",
               priceCurrency: "EUR",
               unitText: "mesečno",
-              description: "Cene počinju od €350/mesečno za Starter paket"
+              description: "Mesečno vođenje Google Ads naloga — već od €700"
             }
           }
         };
@@ -597,13 +597,13 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               "@type": "ListItem",
               position: 2,
               name: "Services",
-              item: "https://www.slobodan-jelisavac.com/usluge"
+              item: "https://www.slobodan-jelisavac.com/en/services"
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Google Ads Management",
-              item: "https://www.slobodan-jelisavac.com/usluge/google-ads-upravljanje"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-upravljanje"
             }
           ]
         }
@@ -621,13 +621,13 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               "@type": "ListItem",
               position: 2,
               name: "Usluge",
-              item: "https://www.slobodan-jelisavac.com/usluge"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge"
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Google Ads upravljanje",
-              item: "https://www.slobodan-jelisavac.com/usluge/google-ads-upravljanje"
+              item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-upravljanje"
             }
           ]
         };
@@ -725,14 +725,14 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
                 {locale === "en"
-                  ? "Book a free consultation"
-                  : "Zakažite besplatnu konsultaciju"}
+                  ? "Book a free 20-minute call"
+                  : "Zakažite besplatnih 20 minuta"}
               </Button>
             </div>
 
             {/* Trust badges */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span>{locale === "en" ? "9+ years of experience" : "10+ godina iskustva"}</span>
+              <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
               <span>3x UK Search Awards{locale === "en" ? " winner" : ""}</span>
               <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
             </div>
@@ -1058,119 +1058,107 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
-              ? "Transparent pricing with no hidden costs. Each package includes complete Google Ads account management."
-              : "Transparentne cene bez skrivenih troškova. Svaki paket uključuje kompletno upravljanje Google Ads nalogom."}
+              ? "Transparent pricing with no hidden costs."
+              : "Transparentne cene bez skrivenih troškova."}
           </p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
-          {/* Starter */}
+          {/* Card 1 — Discovery & one-off */}
           <Card className="h-full">
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "Start with the basics" : "Počnite sa osnovom"}
+              {locale === "en" ? "START WITH CLARITY" : "POČNITE SA JASNOM SLIKOM"}
             </p>
             <h3 className="text-xl font-heading font-bold mb-1">
-              {locale === "en" ? "Starter Package" : "Starter paket"}
+              {locale === "en" ? "Discovery & one-off projects" : "Discovery & One-off projekti"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "from €500" : "od €350"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
+              {locale === "en" ? "Priced per project scope" : "Cena po obimu projekta"}
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
-                ? "For companies starting with Google Ads or looking to achieve better results with existing campaigns. Focus on fundamentals that deliver measurable ROI."
-                : "Za firme koje tek počinju sa Google oglašavanjem ili žele da ostvare bolje rezultate. Fokus na osnovu i ono što donosi realne rezultate — bez komplikovanja."}
+                ? "For businesses exploring Google Ads or with ad spend under €1,000/month. Get clarity before committing to ongoing management."
+                : "Za biznise koji istražuju Google Ads ili sa ad spendom ispod €1.000/mes. Dobijte jasnu sliku pre nego što se odlučite za stalnu saradnju."}
             </p>
             <ul className="space-y-2 text-sm text-gray-600 mb-5">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Complete analysis and campaign setup"
-                  : "Kompletna analiza i setup kampanja"}
+                {locale === "en" ? "Discovery conversation" : "Discovery razgovor"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Biweekly optimization" : "Biweekly optimizacija"}
+                {locale === "en" ? "Deep account analysis" : "Dubinska analiza naloga"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Monthly report with key metrics"
-                  : "Mesečni report sa ključnim metrikama"}
+                {locale === "en" ? "Setup projects" : "Setup projekti"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Focus on what delivers ROI"
-                  : "Fokus na ono što donosi ROI"}
+                {locale === "en" ? "Strategic consultations" : "Strategijske konsultacije"}
               </li>
             </ul>
             <Button href="/kontakt" variant="primary">
-              {locale === "en" ? "Schedule a consultation" : "Zakažite konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
           </Card>
 
-          {/* Standardna */}
+          {/* Card 2 — eCommerce Growth (highlighted) */}
           <div className="bg-white border-2 border-yellow-400 rounded-lg p-6 shadow-card relative">
             <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
-              {locale === "en" ? "Most Popular" : "Najpopularniji"}
+              {locale === "en" ? "Most popular" : "Najpopularniji"}
             </span>
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "For stable growth" : "Za stabilan rast"}
+              {locale === "en" ? "FOR STEADY GROWTH" : "ZA STABILAN RAST"}
             </p>
             <h3 className="text-xl font-heading font-bold mb-1">
-              {locale === "en" ? "Standard Service" : "Standardna usluga"}
+              eCommerce Growth
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "from €750" : "od €500"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
+              {locale === "en" ? "from €700" : "već od €700"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
-                ? "Everything from Starter, plus strategic scaling approach. Monthly and quarterly analysis, reduced error margin, smart testing, and focus on maximizing return on investment."
-                : "Sve iz Starter paketa, plus strateški pristup skaliranju. Mesečne i kvartalne analize, smanjenje prostora za greške, pametno testiranje i fokus na visok povrat investicije."}
+                ? "Complete Google Ads management for online stores. Weekly optimizations, Shopping feed management, and monthly reporting with a strategic call."
+                : "Kompletno Google Ads upravljanje za online prodavnice. Nedeljne optimizacije, upravljanje Shopping feedom i mesečni reporting sa strategijskim pozivom."}
             </p>
             <ul className="space-y-2 text-sm text-gray-600 mb-5">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Weekly campaign optimizations"
-                  : "Nedeljne optimizacije kampanja"}
+                {locale === "en" ? "Weekly optimizations" : "Nedeljne optimizacije"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Monthly report + strategic call"
-                  : "Mesečni report + strategijski call"}
+                {locale === "en" ? "Shopping feed management" : "Shopping feed upravljanje"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "A/B testing and smart scaling"
-                  : "A/B testiranje i pametno skaliranje"}
+                {locale === "en" ? "Monthly report + call" : "Mesečni report + poziv"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Quarterly strategic analysis"
-                  : "Kvartalna strategijska analiza"}
+                {locale === "en" ? "A/B testing" : "A/B testiranje"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "No long-term contracts"
-                  : "Bez dugoročnih ugovora"}
+                {locale === "en" ? "Quarterly analysis" : "Kvartalna analiza"}
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-600 flex-shrink-0">✓</span>
+                {locale === "en" ? "No long-term contracts" : "Bez ugovora"}
               </li>
             </ul>
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Schedule a consultation" : "Zakažite konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
           </div>
 
-          {/* Premium — Funky Enterprises */}
+          {/* Card 3 — Performance Marketing via Funky */}
           <div className="bg-slate-900 text-white border-2 border-slate-700 rounded-lg p-6 shadow-card relative">
             <span className="absolute -top-3 left-6 bg-white text-slate-900 text-xs font-bold px-3 py-1 rounded">
-              {locale === "en" ? "Premium tier" : "Premium tim"}
+              {locale === "en" ? "Full-team" : "Ceo tim"}
             </span>
             <p className="text-xs uppercase tracking-wider text-slate-400 mb-2">
-              {locale === "en" ? "Multi-channel approach" : "Multi-channel pristup"}
+              {locale === "en" ? "COMPLETE GROWTH TEAM" : "KOMPLETAN GROWTH TIM"}
             </p>
             <h3 className="text-xl font-heading font-bold mb-1">
               Performance Marketing
@@ -1180,27 +1168,25 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             </p>
             <p className="text-slate-300 text-sm mb-4">
               {locale === "en"
-                ? "For market leaders and brands aspiring to be. Complete performance team — Google Ads + Meta + SEO + CRO. I operate as a partner with the Funky Enterprises team."
-                : "Za tržišne lidere i brendove koji žele da to postanu. Kompletni performance tim — Google Ads + Meta + SEO + CRO. Nastupam kao partner Funky Enterprises tima."}
+                ? "For brands that need a complete business growth team — not just Google Ads."
+                : "Za brendove kojima treba kompletan tim za rast biznisa — ne samo Google Ads."}
             </p>
             <ul className="space-y-2 text-sm text-slate-300 mb-5">
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Omnichannel strategy and execution"
-                  : "Omnichannel strategija i egzekucija"}
+                {locale === "en" ? "GTM strategy" : "GTM strategija"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Senior-led expert team"
-                  : "Senior-led tim eksperata"}
+                {locale === "en" ? "Brand + creative" : "Brend + kreativa"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Measurable growth across all channels"
-                  : "Merljiv rast kroz sve kanale"}
+                {locale === "en" ? "Google + Meta + SEO + CRO" : "Google + Meta + SEO + CRO"}
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                {locale === "en" ? "Senior-led team" : "Senior-led tim"}
               </li>
             </ul>
             <a
@@ -1263,8 +1249,8 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
               {locale === "en"
-                ? "Book a free consultation"
-                : "Zakažite besplatnu konsultaciju"}
+                ? "Book a free 20-minute call"
+                : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Link
               href="/usluge/google-ads-audit"

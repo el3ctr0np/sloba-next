@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Remarketing Services | Retargeting Campaign Management — Slobodan Jelisavac"
       : "Remarketing Kampanje Srbija | Google, Meta, Pinterest — Slobodan Jelisavac",
     description: isEn
-      ? "Expert remarketing & retargeting campaign management across Google Ads, Meta, and Pinterest. Display remarketing, YouTube remarketing, RLSA, and dynamic retargeting. 9+ years of experience. Book a free consultation."
+      ? "Expert remarketing & retargeting campaign management across Google Ads, Meta, and Pinterest. Display remarketing, YouTube remarketing, RLSA, and dynamic retargeting. 10+ years of experience. Book a free consultation."
       : "Profesionalne remarketing kampanje koje vraćaju posetioce i povećavaju konverzije. Google Display, YouTube, RLSA, Meta, Pinterest. Zakažite konsultaciju.",
     locale,
     path: "/services/remarketing",
@@ -296,7 +296,7 @@ export default async function RemarketingPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
       knowsAbout: [
         "Google Ads",
         "Remarketing",
@@ -324,7 +324,7 @@ export default async function RemarketingPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
       knowsAbout: [
         "Google Ads",
         "Remarketing",
@@ -368,13 +368,13 @@ export default async function RemarketingPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/en/services"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Remarketing",
-        item: "https://www.slobodan-jelisavac.com/usluge/remarketing"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/remarketing"
       }
     ]
   } : {
@@ -391,13 +391,13 @@ export default async function RemarketingPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Usluge",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Remarketing",
-        item: "https://www.slobodan-jelisavac.com/usluge/remarketing"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/remarketing"
       }
     ]
   };
@@ -481,7 +481,7 @@ export default async function RemarketingPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
+                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
               <Button href="/usluge/google-ads-upravljanje" variant="primary">
                 {locale === "en" ? "Google Ads Management" : "Google Ads upravljanje"}
@@ -491,7 +491,7 @@ export default async function RemarketingPage({ params }: Props) {
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
               {locale === "en" ? (
                 <>
-                  <span>9+ years of experience</span>
+                  <span>10+ years of experience</span>
                   <span>Google, Meta, Pinterest</span>
                   <span>97% of visitors return</span>
                 </>
@@ -704,7 +704,7 @@ export default async function RemarketingPage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Link
               href="/case-studies"

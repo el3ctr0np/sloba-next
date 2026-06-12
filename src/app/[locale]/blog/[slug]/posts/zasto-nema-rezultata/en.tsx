@@ -81,7 +81,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
         specific — and almost always fixable.
       </p>
       <p>
-        I&apos;ve been running Google Ads campaigns for 9+ years. I&apos;ve seen every scenario.
+        I&apos;ve been running Google Ads campaigns for 10+ years. I&apos;ve seen every scenario.
         Good campaigns that suddenly stopped working. New campaigns that never took
         off. Expensive agency setups that were completely misconfigured.
       </p>

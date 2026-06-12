@@ -14,11 +14,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Consulting €80/hr | Expert PPC Advice — Slobodan Jelisavac"
-      : "Google Ads Konsultacije €80/sat | Ekspertski Savet — Slobodan Jelisavac",
+      ? "Google Ads Consulting €120/hr | Expert PPC Advice — Slobodan Jelisavac"
+      : "Google Ads Konsultacije €120/sat | Ekspertski Savet — Slobodan Jelisavac",
     description: isEn
-      ? "Expert Google Ads consulting at €80/hr. Get strategic advice, second opinions, and problem-solving for your PPC campaigns. Flexible support without long-term commitment."
-      : "Google Ads Srbija — ekspertske konsultacije €80/sat. Strategija, second opinion, problem solving. Fleksibilna podrška bez dugoročne obaveze. Zakažite konsultaciju.",
+      ? "Expert Google Ads consulting at €120/hr (3h package €300). Get strategic advice, second opinions, and problem-solving for your PPC campaigns. Flexible support without long-term commitment."
+      : "Google Ads Srbija — ekspertske konsultacije €120/sat (paket 3h €300). Strategija, second opinion, problem solving. Fleksibilna podrška bez dugoročne obaveze. Zakažite konsultaciju.",
     locale,
     path: "/services/consultations",
     srPath: "/usluge/konsultacije",
@@ -333,7 +333,7 @@ export default async function KonsultacijePage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Strategist",
+      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
       knowsAbout: [
         "Google Ads",
         "Google Ads Consulting",
@@ -352,11 +352,11 @@ export default async function KonsultacijePage({ params }: Props) {
     serviceType: "Google Ads Consulting",
     offers: {
       "@type": "Offer",
-      price: "80",
+      price: "120",
       priceCurrency: "EUR",
       priceSpecification: {
         "@type": "UnitPriceSpecification",
-        price: "80",
+        price: "120",
         priceCurrency: "EUR",
         unitText: locale === "en" ? "hour" : "sat"
       }
@@ -390,13 +390,13 @@ export default async function KonsultacijePage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: locale === "en" ? "Services" : "Usluge",
-        item: "https://www.slobodan-jelisavac.com/usluge"
+        item: locale === "en" ? "https://www.slobodan-jelisavac.com/en/services" : "https://www.slobodan-jelisavac.com/sr/usluge"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: locale === "en" ? "Consultations" : "Konsultacije",
-        item: "https://www.slobodan-jelisavac.com/usluge/konsultacije"
+        item: "https://www.slobodan-jelisavac.com/sr/usluge/konsultacije"
       }
     ]
   };
@@ -459,8 +459,8 @@ export default async function KonsultacijePage({ params }: Props) {
                   Google Ads consulting is ideal when you have specific questions,
                   need a <strong className="text-white">second opinion</strong>, or want{" "}
                   <strong className="text-white">strategic guidance</strong> without long-term commitment.
-                  For <strong className="text-white">€80/hr</strong> you get full attention and
-                  expertise from 9+ years working with the Google Ads platform.
+                  For <strong className="text-white">€120/hr</strong> (or €300 for a 3h package) you get full attention and
+                  expertise from 10+ years working with the Google Ads platform.
                 </>
               ) : (
                 <>
@@ -468,7 +468,7 @@ export default async function KonsultacijePage({ params }: Props) {
                   Google Ads konsultacije su idealne kada imate konkretna pitanja,
                   trebate <strong className="text-white">second opinion</strong> ili želite{" "}
                   <strong className="text-white">strategijsku pomoć</strong> bez dugoročne obaveze.
-                  Za <strong className="text-white">€80/sat</strong> dobijate punu pažnju i
+                  Za <strong className="text-white">€120/sat</strong> (ili €300 za paket 3h) dobijate punu pažnju i
                   ekspertizu iz 10+ godina rada sa Google Ads platformom.
                 </>
               )}
@@ -476,13 +476,13 @@ export default async function KonsultacijePage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a consultation" : "Zakažite konsultaciju"}
+                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
             </div>
 
             {/* Trust badges */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span>{locale === "en" ? "9+ years of experience" : "10+ godina iskustva"}</span>
+              <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
               <span>3x UK Search Awards</span>
               <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
             </div>
@@ -597,7 +597,8 @@ export default async function KonsultacijePage({ params }: Props) {
               Standard Session
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €80<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "hr" : "sat"}</span>
+              €120<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "hr" : "sat"}</span>
+              <span className="block text-sm text-gray-500 font-normal mt-0.5">{locale === "en" ? "3h package — €300" : "paket 3h — €300"}</span>
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
@@ -635,7 +636,7 @@ export default async function KonsultacijePage({ params }: Props) {
               </li>
             </ul>
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a consultation" : "Zakažite konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
           </div>
 
@@ -855,7 +856,7 @@ export default async function KonsultacijePage({ params }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a consultation" : "Zakažite konsultaciju"}
+              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
             <Link
               href="/usluge/google-ads-audit"
