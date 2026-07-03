@@ -43,6 +43,8 @@ import GA4GoogleAdsIntegracijaSR from "./ga4-google-ads-integracija/sr";
 import GA4GoogleAdsIntegrationEN from "./ga4-google-ads-integracija/en";
 import StaJeRoasSR from "./sta-je-roas/sr";
 import WhatIsRoasEN from "./sta-je-roas/en";
+import MerchantCenterSrbijaSetupSR from "./merchant-center-srbija-setup/sr";
+import MerchantCenterSerbiaSetupEN from "./merchant-center-srbija-setup/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -76,6 +78,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "merchant-center-srbija-setup",
+    title: "Google Merchant Center za Srbiju — Kompletan Setup Vodič [2026]",
+    date: "2026-07-03",
+    dateModified: "2026-07-03",
+    category: "Google Shopping",
+    metaDescription:
+      "Google Merchant Center setup vodič za srpsko tržište: kreiranje naloga, verifikacija, product feed atributi, metode dostave feed-a, česte greške i disapproval razlozi, shipping/tax settings. Iz prakse sa 10+ Shopping naloga.",
+    readingTime: "14 min",
+    content: <MerchantCenterSrbijaSetupSR />
+  },
   {
     slug: "google-ads-audit-checklist-srbija",
     title: "Google Ads Audit Checklist 2026 — 50 Stavki [Srbija]",
@@ -413,6 +426,17 @@ const srPosts: PostData[] = [
 
 const enPosts: PostData[] = [
   {
+    slug: "merchant-center-serbia-setup",
+    title: "Google Merchant Center for Serbia — Complete Setup Guide [2026]",
+    date: "2026-07-03",
+    dateModified: "2026-07-03",
+    category: "Google Shopping",
+    metaDescription:
+      "Google Merchant Center setup guide for the Serbian market: account creation, verification, product feed attributes, feed delivery methods, common disapproval reasons, shipping/tax settings.",
+    readingTime: "14 min",
+    content: <MerchantCenterSerbiaSetupEN />
+  },
+  {
     slug: "ga4-google-ads-integration",
     title: "GA4 + Google Ads Integration: Complete Setup Guide [2026]",
     date: "2026-04-26",
@@ -538,12 +562,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-optimization",
-    title: "Google Ads Optimization: 30 Tactics Proven to Lift ROAS 40% in 90 Days [2026]",
+    title: "Google Ads Optimization 2026: 30 Tactics to Lift ROAS 40%",
     date: "2026-01-17",
-    dateModified: "2026-04-29",
+    dateModified: "2026-07-03",
     category: "Optimization",
     metaDescription:
-      "January 2026 audience list size decrease — plus 29 more Google Ads fixes that actually move the needle. 30 optimization tactics tested across 20+ eCommerce and B2B accounts: Smart Bidding, negative keywords, Quality Score, landing page tweaks, A/B testing. Average 40% ROAS lift in 90 days.",
+      "30 Google Ads optimization tactics tested on 20+ eCommerce and B2B accounts — Smart Bidding, negative keywords, Quality Score, landing pages. Average 40% ROAS lift in 90 days.",
     readingTime: "18 min",
     content: <GoogleAdsOptimizationEN />
   },
@@ -627,12 +651,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-audit-checklist",
-    title: "Google Ads Audit Checklist: 80+ Checkpoints to Find Wasted Spend in 1 Hour [2026]",
+    title: "Google Ads Audit Checklist 2026: 80+ Points, 1-Hour Audit",
     date: "2026-01-27",
-    dateModified: "2026-04-23",
+    dateModified: "2026-07-03",
     category: "Google Ads Audit",
     metaDescription:
-      "Run a complete Google Ads audit in 60 minutes with this 80+ point checklist. Covers conversion tracking, Smart Bidding, Quality Score, negatives, search terms, and budget waste detection. Used across 20+ accounts (UK, Serbia, EU).",
+      "Free 80+ point Google Ads audit checklist for 2026. Find wasted spend in 60 minutes — conversion tracking, Smart Bidding, Quality Score, negatives. Tested on 20+ accounts.",
     readingTime: "16 min",
     content: <GoogleAdsAuditGuideEN />
   },

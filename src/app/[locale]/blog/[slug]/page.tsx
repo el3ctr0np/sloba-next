@@ -437,6 +437,7 @@ const faqSchemaKljucneReciSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Šta su ključne reči za Google oglašavanje?", acceptedAnswer: { "@type": "Answer", text: "Ključne reči su reči i fraze koje dodajete u Google Ads kampanju da bi se vaš oglas prikazao kada ih korisnici pretražuju. One određuju ko vidi oglas, koliko plaćate po kliku i kakav Quality Score dobijate. Kontrolišu se preko tri match type-a: Exact, Phrase i Broad." } },
     { "@type": "Question", name: "Koliko ključnih reči je potrebno za početak?", acceptedAnswer: { "@type": "Answer", text: "Za jednu kampanju: 30-50 ključnih reči organizovanih u 3-5 Ad Groups. Bolje je početi sa manje i proširiti na osnovu podataka nego pokrenuti previše odjednom bez fokusa." } },
     { "@type": "Question", name: "Exact ili Phrase match za početak kampanje?", acceptedAnswer: { "@type": "Answer", text: "Preporučujem Phrase match za početak. Daje dobar balans kontrole i discovery-ja — vidite šta ljudi zapravo traže. Exact match dodajte kasnije za dokazane performere." } },
     { "@type": "Question", name: "Koliko često pregledati Search Terms?", acceptedAnswer: { "@type": "Answer", text: "Minimum jednom nedeljno. U prva 30 dana nove kampanje — svaka 2-3 dana. Za zrele kampanje sa niskim wasted spend-om, nedeljno je sasvim dovoljno." } },
@@ -450,6 +451,7 @@ const faqSchemaKljucneReciEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "What are keywords in Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Keywords are the words and phrases you add to a Google Ads campaign so your ad shows when users search for them. They determine who sees your ad, how much you pay per click, and your Quality Score. They are controlled through three match types: Exact, Phrase, and Broad." } },
     { "@type": "Question", name: "How many keywords do I need to start?", acceptedAnswer: { "@type": "Answer", text: "For one campaign: 30-50 keywords organized into 3-5 Ad Groups. Better to start with fewer and expand based on data than launch too many at once without focus." } },
     { "@type": "Question", name: "Exact or Phrase match for campaign launch?", acceptedAnswer: { "@type": "Answer", text: "I recommend Phrase match for launch. Gives good balance of control and discovery — you see what people actually search for. Add Exact match later for proven performers." } },
     { "@type": "Question", name: "How often should I review Search Terms?", acceptedAnswer: { "@type": "Answer", text: "Minimum once weekly. In first 30 days of new campaign — every 2-3 days. For mature campaigns with low wasted spend, weekly is sufficient." } },

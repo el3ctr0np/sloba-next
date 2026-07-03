@@ -29,6 +29,19 @@ export default function KljucneReciVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta su ključne reči za Google oglašavanje?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Ključne reči</strong> su reči i fraze koje dodajete u Google Ads kampanju da bi se vaš oglas prikazao kada ih korisnici pretražuju. One određuju ko vidi oglas, koliko plaćate po kliku i kakav Quality Score dobijate. Biraju se prema nameri pretrage (informaciona, komercijalna, transakciona) i kontrolišu preko tri match type-a: <strong>Exact, Phrase i Broad</strong>.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── Zašto su ključne reči temelj ── */}

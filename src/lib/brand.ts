@@ -2,25 +2,19 @@
  * Canonical brand identifiers — single source of truth for Person/Organization
  * schema sameAs references across the site.
  *
- * Linking to the Wikidata Q-entity gives AI search engines (ChatGPT, Claude,
- * Perplexity, Gemini) a verified entity identifier they can trust. This is
- * the "bidirectional verification" signal: the website tells AI that this
- * Person is Wikidata Q139494210, and Wikidata tells AI that this entity's
- * official website is slobodan-jelisavac.com.
+ * NOTE: Wikidata entity Q139494210 (published 2026-04-20) was deleted by
+ * Wikidata moderators on 2026-05-17 (notability policy — self-created entry).
+ * Do NOT re-add a Wikidata sameAs link until an entity is re-established
+ * through independent sources (press mentions, Clutch profile, directories).
+ * A sameAs pointing to a deleted/dead URL is a negative trust signal for AI
+ * search engines, worse than no Wikidata link at all.
  */
-
-/** Wikidata Q-number for Slobodan Jelisavac (published 2026-04-20) */
-export const WIKIDATA_QID = "Q139494210";
-
-/** Wikidata canonical URL */
-export const WIKIDATA_URL = `https://www.wikidata.org/wiki/${WIKIDATA_QID}`;
 
 /**
  * sameAs array for Person / Organization / ProfessionalService schema.
- * Order matters: Wikidata first (highest authority), then owned profiles.
+ * Owned, verifiable profiles only.
  */
 export const PERSON_SAME_AS = [
-  WIKIDATA_URL,
   "https://www.linkedin.com/in/slobodanjelisavac/",
   "https://www.youtube.com/channel/UCpmzFFo5olyqxfAxfzjvoDg",
   "https://www.facebook.com/jelisavacs",
