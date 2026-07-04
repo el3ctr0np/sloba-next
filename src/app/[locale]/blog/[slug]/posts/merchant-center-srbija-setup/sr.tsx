@@ -29,6 +29,14 @@ export default function MerchantCenterSrbijaSetupSR() {
         </div>
       </div>
 
+      {/* ── GMC availability warning ── */}
+      <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 md:p-5 my-6">
+        <p className="font-semibold text-amber-900 mb-1">⚠️ Važna napomena — status jul 2026</p>
+        <p className="text-amber-800 text-base mb-0">
+          <strong>Otvaranje Merchant Center naloga za srpsko tržište trenutno još nije moguće.</strong> Google će registraciju omogućiti pred zvanični start Shopping-a u Srbiji. Više čitalaca mi je javilo da registracija trenutno ne prolazi — to je očekivano, ne radite ništa pogrešno. Ovaj vodič koristite kao pripremu: kada se registracija otvori, proći ćete kroz setup za jedan dan umesto za nedelju dana. Sve ostalo iz vodiča (feed priprema, atributi, struktura sajta) možete raditi već sada.
+        </p>
+      </div>
+
       <p>
         Kad god otvorim novi Shopping nalog za klijenta, prva stvar koju radim nije bidding strategija niti kampanjska struktura — to je Merchant Center. Zvuči kao administrativni detalj, ali u praksi je obrnuto: 80% grešaka koje vidim u Shopping kampanjama potiču iz lošeg MC setup-a ili neurednog feed-a, ne iz lošeg bid managementa.
       </p>
@@ -63,7 +71,7 @@ export default function MerchantCenterSrbijaSetupSR() {
 
       <h2>Korak-po-korak: kreiranje i verifikacija naloga</h2>
       <p>
-        Evo tačno šta treba da uradite, redosledom kojim to radim sa svakim novim klijentom. Za srpsko tržište, ovo možete raditi već sada — nalog možete kreirati i pre nego što Shopping zvanično starta u Srbiji, tako da ste spremni na dan 1.
+        Evo tačno šta treba da uradite, redosledom kojim to radim sa svakim novim klijentom. Podsetnik: za srpsko tržište registracija još nije otvorena — ove korake ćete proći na dan kada Google omogući otvaranje naloga. Do tada pripremite sve što koraci traže (poslovni podaci, pristup sajtu za verifikaciju), da vas ništa ne uspori.
       </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">

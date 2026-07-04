@@ -207,8 +207,8 @@ export default function GoogleShoppingSrbija2026SR() {
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div>
               <strong>Kreirajte Google Merchant Center nalog</strong>
-              <span className="text-gray-500 ml-2">— Rok: odmah (april/maj 2026)</span>
-              <p className="text-base text-gray-600 mt-1 mb-0">MC je obavezan za Shopping oglase. Idite na merchants.google.com, kreirajte nalog sa poslovnim imenom, adresom i kontaktom. Na novim tržištima Google može zahtevati account review — bolje ranije nego kasnije.</p>
+              <span className="text-gray-500 ml-2">— Rok: čim otvaranje postane dostupno</span>
+              <p className="text-base text-gray-600 mt-1 mb-0">MC je obavezan za Shopping oglase. <strong>Važno (jul 2026): otvaranje MC naloga za srpsko tržište još uvek nije moguće</strong> — Google će ga omogućiti pred zvanični start. Čitaoci su mi javili da registracija trenutno ne prolazi za Srbiju. Do tada: pripremite poslovne podatke (ime identično sajtu i fakturama, adresa, kontakt) i sredite feed — pa nalog otvarate na dan kada se opcija pojavi.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
