@@ -14,11 +14,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Starter Package from €300 | Professional Campaign Setup — Slobodan Jelisavac"
-      : "Google Ads Starter Paket od €300 | Profesionalni Setup — Slobodan Jelisavac",
+      ? "Google Ads Setup from €300 | Starter Package — Slobodan Jelisavac"
+      : "Google Ads Cena od €300 — Starter Paket Srbija",
     description: isEn
-      ? "Professional Google Ads setup for beginners. Campaigns that work from day one + training for self-management. Packages starting at €300 with tracking, training, and 30-day support."
-      : "Profesionalni Google Ads setup za početnike. Kampanje koje rade od prvog dana + edukacija za samostalno vođenje. Paketi od €300.",
+      ? "Professional Google Ads setup for beginners, price from €300. Campaigns that work from day one + training for self-management, tracking, and 30-day support."
+      : "Google Ads usluge za početnike — cena od €300 za profesionalni setup kampanja, tracking i edukaciju za samostalno vođenje. 30 dana podrške uključeno.",
     locale,
     path: "/services/starter-package",
     srPath: "/usluge/starter-paket",
@@ -371,6 +371,16 @@ export default async function StarterPaketPage({ params }: Props) {
             question: "What if I already have poorly performing campaigns?",
             answer:
               "I start with a quick audit of the current state. If the structure can be fixed, I optimize it. If it's better to start fresh, we create new campaigns with proper structure. Either way, you get a clean setup and understanding of what's next."
+          },
+          {
+            question: "Is the Starter Package a one-time fee or do I need a contract?",
+            answer:
+              "One-time fee, no contract. You pay once for setup, tracking, and training, then you own and run the campaigns yourself. If you later want ongoing management, that's a separate service with no obligation to switch."
+          },
+          {
+            question: "Why choose a Starter Package over hiring an agency?",
+            answer:
+              "Agencies typically require a monthly retainer even for basic setup. The Starter Package gives you the same professional structure and tracking as a one-time investment, plus training so you're not dependent on anyone afterward — ideal if your budget doesn't yet justify ongoing management."
           }
         ]
       : [
@@ -413,6 +423,16 @@ export default async function StarterPaketPage({ params }: Props) {
             question: "Šta ako već imam kampanje koje rade loše?",
             answer:
               "Počinjem sa quick auditom postojećeg stanja. Ako struktura može da se popravi, radim optimizaciju. Ako je bolje krenuti iznova, kreiramo nove kampanje sa pravilnom strukturom. U oba slučaja dobijate čist setup i razumevanje šta dalje."
+          },
+          {
+            question: "Da li je Starter paket jednokratna cena ili treba ugovor?",
+            answer:
+              "Jednokratna cena, bez ugovora. Platite jednom za setup, tracking i edukaciju, a onda samostalno vodite kampanje. Ako kasnije poželite ongoing upravljanje, to je posebna usluga bez obaveze da pređete na nju."
+          },
+          {
+            question: "Zašto Starter paket umesto angažovanja agencije?",
+            answer:
+              "Agencije obično traže mesečni retainer čak i za osnovni setup. Starter paket vam daje istu profesionalnu strukturu i tracking kao jednokratnu investiciju, plus edukaciju da posle ne zavisite ni od koga — idealno ako vaš budžet još ne opravdava ongoing upravljanje."
           }
         ];
 

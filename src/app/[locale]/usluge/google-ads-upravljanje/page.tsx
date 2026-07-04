@@ -14,11 +14,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Management Services Belgrade, Serbia | PPC Expert — Slobodan Jelisavac"
-      : "Google Oglašavanje Srbija | Upravljanje Google Ads Nalogom — Slobodan Jelisavac",
+      ? "Google Ads Management Services Serbia | PPC Expert — Slobodan Jelisavac"
+      : "Google Ads Usluge Srbija — Vođenje Google Ads Kampanja",
     description: isEn
-      ? "Belgrade-based Google Ads management services for eCommerce and B2B companies. 180%+ ROAS improvement, 10+ years of experience across Serbia, UK, and EU. Book your free consultation."
-      : "Profesionalno upravljanje Google oglašavanjem za eCommerce i B2B. 180%+ poboljšanje ROAS-a, 10+ godina iskustva. Zakažite besplatnu konsultaciju.",
+      ? "Google Ads management services for eCommerce and B2B companies. 180%+ ROAS improvement, 10+ years of experience across Serbia, UK, and EU. From €700/month. Book your free consultation."
+      : "Profesionalne Google Ads usluge — vođenje Google Ads kampanja za eCommerce i B2B u Srbiji. Cena od €700/mes, 180%+ poboljšanje ROAS-a. Zakažite besplatnu konsultaciju.",
     locale,
     path: "/services/google-ads-management",
     srPath: "/usluge/google-ads-upravljanje",
@@ -434,6 +434,16 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             question: "Does Google Ads work for small businesses?",
             answer:
               "Absolutely. Google Ads is ideal for small businesses because you only pay when someone clicks on your ad. The key is proper campaign structure, smart targeting, and eliminating unnecessary costs through negative keywords."
+          },
+          {
+            question: "What's the difference between hiring an agency and a freelance consultant?",
+            answer:
+              "With an agency, your account often gets passed between junior account managers. Working directly with me means one senior person handles strategy and execution — no account handoffs, no junior training on your budget. Pricing is also typically lower than agency overhead."
+          },
+          {
+            question: "What does onboarding actually look like?",
+            answer:
+              "After the free call and account audit, I request MCC access, agree on KPIs and reporting cadence, then implement the strategy within the first 1-2 weeks. You get a shared document with goals, timeline, and access checklist before we start — no surprises."
           }
         ]
       : [
@@ -476,6 +486,16 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             question: "Da li Google oglašavanje funkcioniše za malu firmu?",
             answer:
               "Apsolutno. Google oglašavanje je idealno za male firme jer plaćate samo kada neko klikne na vaš oglas. Ključ je pravilna struktura kampanja, pametno targetiranje i eliminacija nepotrebnih troškova kroz negativne ključne reči."
+          },
+          {
+            question: "Koja je razlika između agencije i freelance konsultanta?",
+            answer:
+              "Kod agencije vaš nalog često prolazi kroz junior account managere. Radeći direktno sa mnom, jedna senior osoba vodi i strategiju i izvršenje — bez predaje naloga i bez učenja na vašem budžetu. Cena je po pravilu i niža od agencijskog overhead-a."
+          },
+          {
+            question: "Kako konkretno izgleda onboarding?",
+            answer:
+              "Nakon besplatnog poziva i audita naloga, tražim MCC pristup, dogovaramo KPI-jeve i dinamiku reportinga, pa implementiram strategiju u prve 1-2 nedelje. Dobijate zajednički dokument sa ciljevima, rokovima i checklist-om pristupa pre nego što krenemo — bez iznenađenja."
           }
         ];
 

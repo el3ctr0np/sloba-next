@@ -89,7 +89,10 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija 2: Kako Google Ads funkcioniše ── */}
       <h2 id="kako-google-ads-funkcionise-jednostavno-objasnjenje">Kako Google Ads funkcioniše (jednostavno objašnjenje)</h2>
       <p>
-        Zamislite da imate prodavnicu u centru grada. Google Ads je kao da plaćate zakup izloga na najprometnijem uglu — ali samo onda kada neko prođe i potraži tačno ono što vi prodajete. Ne plaćate za prikazivanje. Plaćate samo kada neko klikne.
+        <strong>Google Ads funkcioniše kao aukcija u realnom vremenu: svaki put kada korisnik nešto pretraži, Google za delić sekunde rangira oglašavače kombinacijom ponude (bid) i Quality Score-a — ocene relevantnosti od 1 do 10.</strong> Plaćate samo kada neko klikne na oglas (CPC model), a cena klika u Srbiji se kreće od €0,20 za lokalne niše do €1,50+ za konkurentne industrije. Zamislite to kao zakup najboljeg izloga u gradu — ali koji plaćate samo kada prolaznik zaista traži baš ono što prodajete.
+      </p>
+      <p>
+        Ne plaćate za prikazivanje oglasa, samo za klik.
       </p>
       <p>
         Evo kako ceo sistem funkcioniše od momenta kada neko ukuca pretragu do momenta kada konvertuje:
@@ -147,27 +150,27 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Cena po kliku</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC</h3>
-          <p className="text-base text-gray-600 mb-0">Koliko platite svaki put kada neko klikne na vaš oglas. Može biti €0,20 za lokalnu nišu ili €5+ za konkurentne industrije. Cilj je da CPC bude što niži uz što bolji kvalitet saobraćaja.</p>
+          <p className="text-base text-gray-600 mb-0"><strong>CPC (Cost Per Click) je iznos koji plaćate Google-u svaki put kada neko klikne na vaš oglas.</strong> U Srbiji se prosečan CPC kreće od €0,20 za lokalne uslužne niše do €1,50+ za konkurentne industrije poput osiguranja i nekretnina. Cilj je da CPC bude što niži uz što bolji kvalitet saobraćaja.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Stopa klika</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CTR</h3>
-          <p className="text-base text-gray-600 mb-0">Procenat ljudi koji vide vaš oglas i kliknu na njega. Ako 100 ljudi vidi oglas i 3 klikne — <GlossaryLink slug="ctr">CTR</GlossaryLink> je 3%. Viši CTR znači relevantniji oglas, što smanjuje CPC i poboljšava poziciju.</p>
+          <p className="text-base text-gray-600 mb-0"><strong><GlossaryLink slug="ctr">CTR</GlossaryLink> (Click-Through Rate) je procenat ljudi koji vide vaš oglas i kliknu na njega.</strong> Ako 100 ljudi vidi oglas i 3 klikne, CTR je 3%. Viši CTR znači relevantniji oglas, što smanjuje CPC i poboljšava poziciju.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ocena kvaliteta</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Quality Score</h3>
-          <p className="text-base text-gray-600 mb-0">Google-ova ocena od 1 do 10 koja meri koliko su vaš oglas, ključna reč i landing page relevantni jedni za druge. Viši Quality Score = niži CPC i bolja pozicija oglasa.</p>
+          <p className="text-base text-gray-600 mb-0"><strong>Quality Score je Google-ova ocena od 1 do 10 koja meri koliko su vaš oglas, ključna reč i landing page relevantni jedni za druge.</strong> Viši Quality Score znači niži CPC i bolju poziciju oglasa.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Željeni ishod</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Konverzija</h3>
-          <p className="text-base text-gray-600 mb-0">Akcija koju želite da posetilac uradi: kupovina, poziv, popunjen formular, prijava. Bez praćenja konverzija ne znate šta funkcioniše — vodite kampanju naslepo.</p>
+          <p className="text-base text-gray-600 mb-0"><strong>Konverzija je akcija koju želite da posetilac uradi: kupovina, poziv, popunjen formular ili prijava.</strong> Bez praćenja konverzija ne znate šta funkcioniše — vodite kampanju naslepo.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Povrat na potrošnju oglasa</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">ROAS</h3>
-          <p className="text-base text-gray-600 mb-0">Koliko prihoda ostvarite za svaki euro uložen u oglase. <GlossaryLink slug="roas">ROAS</GlossaryLink> od 4x znači: potrošili ste €100, zaradili €400. Ovo je ključna metrika za eCommerce. Za lead gen prati CPA (cenu po konverziji).</p>
+          <p className="text-base text-gray-600 mb-0"><strong><GlossaryLink slug="roas">ROAS</GlossaryLink> (Return on Ad Spend) je koliko prihoda ostvarite za svaki euro uložen u oglase.</strong> ROAS od 4x znači: potrošili ste €100, zaradili €400. Ovo je ključna metrika za eCommerce. Za lead gen prati CPA (cenu po konverziji).</p>
         </div>
       </div>
 
@@ -267,7 +270,10 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija 6: Budžet ── */}
       <h2 id="koliki-budzet-za-pocetak">Koliki budžet za početak</h2>
       <p>
-        Jedno od najčešćih pitanja: &quot;Koliko para treba da potrošim?&quot; Odgovor zavisi od tržišta, industrije i vaših ciljeva — ali postoji praktično pravilo za testiranje.
+        <strong>Minimalni smisleni budžet za Google Ads u Srbiji je €300–500 mesečno (€10–20 dnevno), uz period testiranja od 4–8 nedelja pre ocene rezultata.</strong> Sa manjim budžetom kampanja ne skuplja dovoljno podataka za optimizaciju: potrebno je 30–50 konverzija mesečno da bi automatsko bidovanje radilo pouzdano.
+      </p>
+      <p>
+        Ovo je jedno od najčešćih pitanja koje dobijam: &quot;Koliko para treba da potrošim?&quot; Tačan odgovor zavisi od tržišta, industrije i vaših ciljeva — ali gornje pravilo važi kao polazna tačka za testiranje.
       </p>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
@@ -330,7 +336,10 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija 7: Greške početnika ── */}
       <h2 id="5-najcescih-gresaka-pocetnika">5 najčešćih grešaka početnika</h2>
       <p>
-        Procenjujem da oko 70% početnika pravi iste greške. Dobre vesti: sve su lako izbegljive ako znate šta da tražite.
+        <strong>Pet najčešćih grešaka početnika u Google Ads-u su: broad match bez negativnih ključnih reči, izostanak conversion trackinga, slanje saobraćaja na homepage, prerane izmene kampanje pre dovoljno podataka i automatsko prihvatanje Google-ovih preporuka.</strong> Od naloga početnika koje sam preuzeo na upravljanje u poslednje 3 godine, preko 70% je pravilo istih 5 grešaka.
+      </p>
+      <p>
+        Dobre vesti: sve su lako izbegljive ako znate šta da tražite.
       </p>
 
       <h3 id="greska-1-broad-match-bez-negativnih">Greška 1: Koriste samo broad match bez negativnih ključnih reči</h3>

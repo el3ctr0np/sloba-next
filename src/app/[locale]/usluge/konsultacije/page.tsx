@@ -14,11 +14,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Consulting €120/hr | Expert PPC Advice — Slobodan Jelisavac"
-      : "Google Ads Konsultacije €120/sat | Ekspertski Savet — Slobodan Jelisavac",
+      ? "Google Ads Consulting Serbia | Price from €120/hr — Slobodan Jelisavac"
+      : "Google Ads Konsultacije Srbija — Cena od €120/sat",
     description: isEn
-      ? "Expert Google Ads consulting at €120/hr (3h package €300). Get strategic advice, second opinions, and problem-solving for your PPC campaigns. Flexible support without long-term commitment."
-      : "Google Ads Srbija — ekspertske konsultacije €120/sat (paket 3h €300). Strategija, second opinion, problem solving. Fleksibilna podrška bez dugoročne obaveze. Zakažite konsultaciju.",
+      ? "Google Ads consulting services from €120/hr (3h package €300). Get strategic advice, second opinions, and problem-solving for your PPC campaigns. No long-term commitment."
+      : "Google Ads usluge — ekspertske konsultacije u Srbiji, cena od €120/sat (paket 3h €300). Strategija, second opinion, problem solving. Bez dugoročne obaveze. Zakažite konsultaciju.",
     locale,
     path: "/services/consultations",
     srPath: "/usluge/konsultacije",
@@ -286,6 +286,26 @@ export default async function KonsultacijePage({ params }: Props) {
             question: "What tools do we use during consultation?",
             answer:
               "Google Meet or Zoom for the call. If you want screen share and account review, Google Ads account access is needed (read-only is sufficient)."
+          },
+          {
+            question: "How much does Google Ads consulting cost?",
+            answer:
+              "A standard 1-hour session is €120, or €300 for a 3-hour package if you need more sessions. Deep Dive (2 hours, detailed account review) is €150. There are no hidden fees — you pay only for the time booked, no retainer required."
+          },
+          {
+            question: "Is there a minimum ad spend budget for consulting?",
+            answer:
+              "No minimum ad spend is required for a consultation — it works whether you're spending €300/month or €30,000/month. Consulting is priced per session, not tied to your ad budget, which makes it accessible for smaller businesses too."
+          },
+          {
+            question: "What's the difference between hiring a consultant and an agency?",
+            answer:
+              "An agency takes over full execution monthly. A consultant like me gives you expert input on demand — strategy, second opinion, or problem-solving — while your team (or you) stays in control of day-to-day execution. It's a lighter, more flexible commitment."
+          },
+          {
+            question: "Do you work with small businesses on a single consultation?",
+            answer:
+              "Yes. Many small business owners book a single Standard Session to validate their approach before investing more in ads. You don't need an in-house team or large budget to benefit from a consultation."
           }
         ]
       : [
@@ -318,6 +338,26 @@ export default async function KonsultacijePage({ params }: Props) {
             question: "Koji alati koristimo tokom konsultacije?",
             answer:
               "Google Meet ili Zoom za poziv. Ako želite screen share i pregled naloga, potreban je pristup Google Ads nalogu (read-only dovoljan)."
+          },
+          {
+            question: "Koliko koštaju Google Ads konsultacije?",
+            answer:
+              "Standardna 1-satna sesija je €120, ili €300 za paket od 3 sata ako vam trebaju dodatne sesije. Deep Dive (2 sata, detaljan account review) je €150. Nema skrivenih troškova — plaćate samo zakazano vreme, bez mesečnog ugovora."
+          },
+          {
+            question: "Da li postoji minimalni budžet za oglašavanje da bi konsultacija imala smisla?",
+            answer:
+              "Ne, nema minimalnog ad spend budžeta za konsultaciju — funkcioniše bez obzira da li trošite €300 ili €30.000 mesečno. Cena je po sesiji, ne vezuje se za vaš budžet, što je čini pristupačnom i za manje firme."
+          },
+          {
+            question: "Koja je razlika između konsultanta i agencije?",
+            answer:
+              "Agencija preuzima kompletnu izvedbu mesečno. Konsultant poput mene daje ekspertski input po potrebi — strategiju, second opinion ili rešavanje problema — dok vaš tim (ili vi) zadržava kontrolu nad svakodnevnim izvršenjem. Lakša i fleksibilnija obaveza."
+          },
+          {
+            question: "Da li radite konsultacije i sa malim firmama?",
+            answer:
+              "Da. Mnogi vlasnici malih firmi zakažu jednu Standard Session da provere pristup pre nego što ulože više u oglase. Ne treba vam interni tim niti veliki budžet da biste imali korist od konsultacije."
           }
         ];
 

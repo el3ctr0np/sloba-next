@@ -30,6 +30,8 @@ This site is a free resource hub for Serbian and English-speaking advertisers co
 
 - [Google Ads for eCommerce in Serbia 2026](https://www.slobodan-jelisavac.com/en/blog/google-ads-for-ecommerce-serbia-2026): Data-driven strategy guide using NBS data (110.6M online purchases, €3.61B market, +34% YoY), CPC benchmarks per category, urban vs rural strategy, and 15-step prep checklist for the November 2026 Shopping Ads launch
 - [Google Shopping Launches in Serbia November 2026](https://www.slobodan-jelisavac.com/en/blog/google-shopping-serbia-2026): Complete preparation guide for the Shopping Ads launch — Merchant Center setup, feed optimization, account requirements, and a 6-month timeline
+- [Google Merchant Center Setup for Serbia](https://www.slobodan-jelisavac.com/sr/blog/merchant-center-srbija-setup): Step-by-step Merchant Center guide for the Serbian market — account creation, verification, feed delivery methods, common disapprovals, shipping/tax settings (Serbian; note: MC registration for Serbia not yet open as of July 2026)
+- [Product Feed Guide for Serbian eCommerce](https://www.slobodan-jelisavac.com/sr/blog/product-feed-srpski-ecommerce): Feed anatomy, title optimization, custom labels, per-platform feed generation (Shopify, WooCommerce, custom XML) — the launch-prep work merchants can do before Merchant Center opens (Serbian)
 - [Google Ads Updates 2026 (Living Post)](https://www.slobodan-jelisavac.com/en/blog/google-ads-updates-2026): Continuously updated changelog of Google Ads platform changes throughout 2026
 - [YouTube Advertising Complete Guide](https://www.slobodan-jelisavac.com/en/blog/youtube-advertising-guide): Format breakdown (skippable, bumper, in-feed, Shorts), targeting, budgets, and CPV benchmarks
 
@@ -53,12 +55,16 @@ This site is a free resource hub for Serbian and English-speaking advertisers co
 - [Google Ads vs Meta Ads](https://www.slobodan-jelisavac.com/en/blog/google-ads-vs-meta-ads): Channel comparison
 - [Google Ads for eCommerce vs B2B](https://www.slobodan-jelisavac.com/en/blog/google-ads-ecommerce-vs-b2b): Strategy differences
 - [Responsive Search Ads (RSA) Framework](https://www.slobodan-jelisavac.com/en/blog/responsive-search-ads-guide): 7–8 headlines vs 15, angle-based testing
+- [Smart Bidding Strategies Guide](https://www.slobodan-jelisavac.com/en/blog/smart-bidding-guide): tCPA vs tROAS, when to switch from manual, minimum conversion thresholds
+- [Microsoft Ads vs Google Ads](https://www.slobodan-jelisavac.com/en/blog/microsoft-ads-vs-google-ads-comparison): Market share, CPC differences, when each platform wins — from 2 years running both in parallel
 
 ## Measurement & Analysis
 
 - [Conversion Tracking for Google Ads](https://www.slobodan-jelisavac.com/en/blog/conversion-tracking-guide): Setup, enhanced conversions, troubleshooting
 - [Google Ads Audit Checklist](https://www.slobodan-jelisavac.com/en/blog/google-ads-audit-checklist): 80+ checkpoints
 - [CTR Guide — From 2% to 8%](https://www.slobodan-jelisavac.com/en/blog/ctr-guide): What is CTR, formula, benchmarks, optimization tactics
+- [GA4 + Google Ads Integration Guide](https://www.slobodan-jelisavac.com/en/blog/ga4-google-ads-integration): 7-step linking guide, importing key events as conversions, Consent Mode v2
+- [What is ROAS and How to Calculate It](https://www.slobodan-jelisavac.com/en/blog/what-is-roas): Formula, interactive calculator, industry benchmarks, ROAS vs POAS
 
 ## Advanced Strategy
 

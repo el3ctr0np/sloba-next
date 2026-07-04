@@ -45,6 +45,8 @@ import StaJeRoasSR from "./sta-je-roas/sr";
 import WhatIsRoasEN from "./sta-je-roas/en";
 import MerchantCenterSrbijaSetupSR from "./merchant-center-srbija-setup/sr";
 import MerchantCenterSerbiaSetupEN from "./merchant-center-srbija-setup/en";
+import ProductFeedSrpskiEcommerceSR from "./product-feed-srpski-ecommerce/sr";
+import ProductFeedSerbianEcommerceEN from "./product-feed-srpski-ecommerce/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -78,6 +80,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "product-feed-srpski-ecommerce",
+    title: "Product Feed za Srpski eCommerce — Kompletan Vodič [2026]",
+    date: "2026-07-04",
+    dateModified: "2026-07-04",
+    category: "Google Shopping",
+    metaDescription:
+      "Product feed vodič za srpski eCommerce: 8 obaveznih atributa, title optimizacija, custom labels za bidding, feed po platformi (Shopify, WooCommerce, custom XML) i najčešće greške. Iz prakse sa globalnim Shopping nalozima.",
+    readingTime: "15 min",
+    content: <ProductFeedSrpskiEcommerceSR />
+  },
   {
     slug: "merchant-center-srbija-setup",
     title: "Google Merchant Center za Srbiju — Kompletan Setup Vodič [2026]",
@@ -425,6 +438,17 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "product-feed-serbian-ecommerce",
+    title: "Product Feed for Serbian eCommerce — Complete Guide [2026]",
+    date: "2026-07-04",
+    dateModified: "2026-07-04",
+    category: "Google Shopping",
+    metaDescription:
+      "Product feed guide for Serbian eCommerce: 8 required attributes, title optimization, custom labels for bidding, feed delivery by platform, and common feed errors.",
+    readingTime: "15 min",
+    content: <ProductFeedSerbianEcommerceEN />
+  },
   {
     slug: "merchant-center-serbia-setup",
     title: "Google Merchant Center for Serbia — Complete Setup Guide [2026]",

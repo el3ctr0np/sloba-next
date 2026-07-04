@@ -10,11 +10,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Audit Services | Professional PPC Account Analysis — Slobodan Jelisavac"
-      : "Google Ads Audit Srbija | Profesionalna Analiza Google Ads Kampanja — Slobodan Jelisavac",
+      ? "Google Ads Audit Serbia | PPC Account Analysis — Slobodan Jelisavac"
+      : "Google Ads Audit Srbija — Usluge Google Oglašavanja",
     description: isEn
-      ? "Professional Google Ads audit reveals where you're losing money and how to improve ROAS. In-depth campaign analysis with actionable recommendations. From €350."
-      : "Google Ads Srbija — profesionalni audit otkriva gde gubite novac i kako poboljšati ROAS. Detaljna analiza kampanja sa konkretnim preporukama. Od €350.",
+      ? "Professional Google Ads audit services reveal where you're losing money and how to improve ROAS. In-depth campaign analysis with actionable recommendations. From €350."
+      : "Google Ads usluge — profesionalni audit otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljna analiza kampanja, cena od €350.",
     locale,
     path: "/services/google-ads-audit",
     srPath: "/usluge/google-ads-audit",
@@ -248,6 +248,21 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
       question: "What if I don't have active campaigns yet?",
       answer:
         "The audit is designed for existing accounts with active campaigns. For new accounts, I recommend going directly to strategy and setup through the management service."
+    },
+    {
+      question: "How much does a Google Ads audit cost?",
+      answer:
+        "The Standard Audit starts at €350 for accounts up to ~€3,000 monthly spend. Larger or multi-channel accounts (over €3,000/month) get custom pricing on request. It's a one-time fee, and it's deducted from the first month if you move to ongoing management within 30 days."
+    },
+    {
+      question: "Do you audit accounts with small ad budgets?",
+      answer:
+        "Yes. Even a small budget benefits from an audit if you're unsure why campaigns aren't converting. For very small budgets under €500/month, a consultation session might be a more cost-effective starting point — I'll tell you honestly which fits better."
+    },
+    {
+      question: "What's the difference between an audit from an agency versus an independent consultant?",
+      answer:
+        "An agency audit often doubles as a sales pitch for their own management service. An independent audit from me is neutral — I have no incentive to recommend unnecessary changes, and you can take the report to any agency or your in-house team."
     }
   ] : [
     {
@@ -279,6 +294,21 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
       question: "Šta ako nemam aktivne kampanje već?",
       answer:
         "Audit je namenjen postojećim nalozima sa aktivnim kampanjama. Za nove naloge preporučujem direktno strategiju i setup kroz uslugu upravljanja."
+    },
+    {
+      question: "Koliko košta Google Ads audit?",
+      answer:
+        "Standardni audit počinje od €350 za naloge do ~€3.000 mesečnog spend-a. Veći ili multi-channel nalozi (preko €3.000/mesečno) dobijaju cenu na upit. Jednokratna je i odbija se od prvog meseca ako pređete na ongoing upravljanje u roku od 30 dana."
+    },
+    {
+      question: "Da li radite audit i za male ad budžete?",
+      answer:
+        "Da. Čak i mali budžet ima koristi od audita ako niste sigurni zašto kampanje ne konvertuju. Za veoma male budžete ispod €500/mesečno, konsultacija može biti isplativiji početak — iskreno ću vam reći šta vam više odgovara."
+    },
+    {
+      question: "Koja je razlika između audita od agencije i nezavisnog konsultanta?",
+      answer:
+        "Audit od agencije često je zapravo prodajni pitch za njihovu uslugu upravljanja. Moj nezavisni audit je neutralan — nemam interes da preporučim nepotrebne izmene, a izveštaj možete odneti bilo kojoj agenciji ili svom internom timu."
     }
   ];
 
