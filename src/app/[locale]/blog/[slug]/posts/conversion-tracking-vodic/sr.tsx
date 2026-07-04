@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function ConversionTrackingVodicPost() {
   return (
@@ -37,7 +38,7 @@ export default function ConversionTrackingVodicPost() {
           Šta je conversion tracking?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Conversion tracking</strong> je sistem praćenja koji beleži šta korisnik uradi nakon klika na oglas — kupovinu, poziv, popunjenu formu. Postavlja se preko <strong>GTM-a, GA4 i Google Ads tagova</strong> i predstavlja osnovu na kojoj Smart Bidding algoritmi optimizuju kampanje. Bez tačnog tracking-a, oko 40% naloga optimizuje ka pogrešnim signalima i troši budžet naslepo.
+          <strong><GlossaryLink slug="conversion">Conversion tracking</GlossaryLink></strong> je sistem praćenja koji beleži šta korisnik uradi nakon klika na oglas — kupovinu, poziv, popunjenu formu. Postavlja se preko <strong><GlossaryLink slug="gtm">GTM-a</GlossaryLink>, <GlossaryLink slug="ga4">GA4</GlossaryLink> i Google Ads tagova</strong> i predstavlja osnovu na kojoj Smart Bidding algoritmi optimizuju kampanje. Bez tačnog tracking-a, oko 40% naloga optimizuje ka pogrešnim signalima i troši budžet naslepo.
         </p>
       </div>
 
@@ -212,7 +213,7 @@ export default function ConversionTrackingVodicPost() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Napredni</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Enhanced Conversions</h3>
           <p className="text-base text-gray-600 mb-0">
-            Šalje hashed first-party podatke (email, telefon) da poboljša attribution uprkos cookie restrictions. Preporučujem za sve kampanje sa budžetom €1,000+.
+            Šalje hashed first-party podatke (email, telefon) da poboljša <GlossaryLink slug="attribution-model">attribution</GlossaryLink> uprkos cookie restrictions. Preporučujem za sve kampanje sa budžetom €1,000+.
           </p>
         </div>
       </div>

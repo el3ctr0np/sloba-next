@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function KljucneReciVodicPost() {
   return (
@@ -64,7 +65,7 @@ export default function KljucneReciVodicPost() {
         <li><strong>Ko vidi vaš oglas</strong> — pogrešne reči = pogrešna publika</li>
         <li><strong>Koliko plaćate po kliku</strong> — popularniji termini koštaju više</li>
         <li><strong>Relevantnost oglasa</strong> — ključne reči moraju odgovarati oglasu i landing page-u</li>
-        <li><strong>Quality Score</strong> — direktan uticaj na Ad Rank i troškove</li>
+        <li><strong><GlossaryLink slug="quality-score">Quality Score</GlossaryLink></strong> — direktan uticaj na Ad Rank i troškove</li>
       </ul>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -407,7 +408,7 @@ export default function KljucneReciVodicPost() {
       {/* ── Match Types ── */}
       <h2>Match Types objašnjeni</h2>
       <p>
-        Google Ads u 2026. godini ima tri match type-a. Svaki daje različit nivo kontrole nad time koje pretrage triggeruju vaš oglas. Zvanična dokumentacija o <a href="https://support.google.com/google-ads/answer/7478529" target="_blank" rel="noopener noreferrer" className="underline">match type-ovima od Google-a</a> pokriva sve detalje i najnovije promene.
+        Google Ads u 2026. godini ima tri <GlossaryLink slug="match-types">match type-a</GlossaryLink>. Svaki daje različit nivo kontrole nad time koje pretrage triggeruju vaš oglas. Zvanična dokumentacija o <a href="https://support.google.com/google-ads/answer/7478529" target="_blank" rel="noopener noreferrer" className="underline">match type-ovima od Google-a</a> pokriva sve detalje i najnovije promene.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -470,7 +471,7 @@ export default function KljucneReciVodicPost() {
       {/* ── Negativne ključne reči ── */}
       <h2>Negativne ključne reči — zaštita budžeta</h2>
       <p>
-        Negativne ključne reči sprečavaju prikazivanje oglasa za irelevantne pretrage. Bez njih, 20-40% budžeta odlazi na klikove koji nikada neće konvertovati.
+        <GlossaryLink slug="negative-keywords">Negativne ključne reči</GlossaryLink> sprečavaju prikazivanje oglasa za irelevantne pretrage. Bez njih, 20-40% budžeta odlazi na klikove koji nikada neće konvertovati.
       </p>
       <p>
         Preporučujem da pre lansiranja svake kampanje pripremite starter listu negatives i da Search Terms Report pregledajte nedeljno.

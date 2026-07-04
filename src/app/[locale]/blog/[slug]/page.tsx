@@ -16,6 +16,7 @@ import {
 } from "./posts";
 import { BlogCTA } from "@/components/blog/BlogCTA";
 import { ReadNext } from "@/components/blog/ReadNext";
+import { PERSON_SCHEMA } from "@/lib/brand";
 
 /**
  * Segment the blog CTA by post intent.
@@ -915,6 +916,148 @@ function getFaqSchema(slug: string, locale: string) {
   return null;
 }
 
+/* ── HowTo Schemas ── */
+
+// --- conversion-tracking-vodic ---
+const howToSchemaConversionTrackingSR = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Kako postaviti Google Ads conversion tracking (GTM + GA4 + Enhanced Conversions)",
+  step: [
+    { "@type": "HowToStep", name: "Postavite Google Tag Manager container", text: "Kreirajte GTM account i container, instalirajte container snippet u <head> i <body> na svim stranicama sajta." },
+    { "@type": "HowToStep", name: "Dodajte Conversion Linker tag", text: "U GTM kreirajte tag tipa Conversion Linker sa trigger-om All Pages. Ovo je obavezno za cross-domain i cross-device tracking." },
+    { "@type": "HowToStep", name: "Povežite GA4 property", text: "Kreirajte GA4 property i instalirajte GA4 tag kroz GTM ili direktno. Obeležite key events (purchase, generate_lead) kao conversions." },
+    { "@type": "HowToStep", name: "Kreirajte Google Ads conversion action", text: "U Google Ads → Tools → Conversions → + New conversion. Kopirajte Conversion ID i Conversion Label." },
+    { "@type": "HowToStep", name: "Postavite Google Ads Conversion tag u GTM", text: "Kreirajte tag tipa Google Ads Conversion Tracking, unesite ID i Label, postavite trigger (npr. Page URL contains 'thank-you' ili Form ID equals 'contact-form')." },
+    { "@type": "HowToStep", name: "Uključite Enhanced Conversions", text: "U Google Ads → Conversions → Settings → Enhanced conversions → Turn on. Izaberite GTM metod i mapirajte user data (email, phone, address) kroz data layer." },
+    { "@type": "HowToStep", name: "Testirajte u GTM Preview mode", text: "Kliknite Preview u GTM, prođite conversion flow na sajtu i proverite da li tagovi rade. Proverite i Google Tag Assistant Chrome extension." },
+    { "@type": "HowToStep", name: "Publish i verifikacija", text: "Objavite GTM container, napravite test konverziju i proverite da li se pojavljuje u Google Ads (3-6 sati delay je normalno)." },
+  ],
+};
+
+const howToSchemaConversionTrackingEN = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to set up Google Ads conversion tracking (GTM + GA4 + Enhanced Conversions)",
+  step: [
+    { "@type": "HowToStep", name: "Set up Google Tag Manager container", text: "Create GTM account and container, install container snippet in <head> and <body> on all pages." },
+    { "@type": "HowToStep", name: "Add Conversion Linker tag", text: "In GTM create a Conversion Linker tag type with an All Pages trigger. This is mandatory for cross-domain and cross-device tracking." },
+    { "@type": "HowToStep", name: "Connect GA4 property", text: "Create GA4 property and install GA4 tag via GTM or directly. Mark key events (purchase, generate_lead) as conversions." },
+    { "@type": "HowToStep", name: "Create Google Ads conversion action", text: "In Google Ads → Tools → Conversions → + New conversion. Copy Conversion ID and Conversion Label." },
+    { "@type": "HowToStep", name: "Set up Google Ads Conversion tag in GTM", text: "Create tag type Google Ads Conversion Tracking, enter ID and Label, set trigger (e.g., Page URL contains 'thank-you' or Form ID equals 'contact-form')." },
+    { "@type": "HowToStep", name: "Enable Enhanced Conversions", text: "In Google Ads → Conversions → Settings → Enhanced conversions → Turn on. Choose GTM method and map user data (email, phone, address) via data layer." },
+    { "@type": "HowToStep", name: "Test in GTM Preview mode", text: "Click Preview in GTM, go through the conversion flow on the site and verify tags fire. Also check Google Tag Assistant Chrome extension." },
+    { "@type": "HowToStep", name: "Publish and verify", text: "Publish GTM container, make a test conversion and verify it appears in Google Ads (3-6 hour delay is normal)." },
+  ],
+};
+
+// --- google-ads-audit-vodic ---
+const howToSchemaAuditSR = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Brzi Google Ads audit za 30 minuta",
+  step: [
+    { "@type": "HowToStep", name: "Search Terms Report (5 min)", text: "Pregledajte top 30 search terms po trošku za poslednjih 30 dana: da li su relevantni? Dodajte negativne ključne reči za sve irelevantne sa €10+ spend-om." },
+    { "@type": "HowToStep", name: "Budget allocation (3 min)", text: "Proverite da li je profitabilna kampanja 'Limited by budget'. Realokujte budžet iz loših kampanja." },
+    { "@type": "HowToStep", name: "Conversion tracking check (5 min)", text: "Proverite da li tracking radi — uporedite Google Ads konverzije sa GA4/CRM-om (maksimalno 10-15% razlike je prihvatljivo)." },
+    { "@type": "HowToStep", name: "Top keywords performance (5 min)", text: "Pregledajte top 15 keywords po trošku: da li je Quality Score 6+? Da li je CPA prihvatljiv? Pauzirajte keywords sa CPA 2x+ iznad targeta i 50+ klikova." },
+    { "@type": "HowToStep", name: "Ad performance (4 min)", text: "Identifikujte Ad Groups sa CTR ispod 2% (Search) ili 0.5% (Display). Dopunite RSA sa više headlines ili kreirajte nove oglase." },
+    { "@type": "HowToStep", name: "Extensions active (2 min)", text: "Proverite da li su svi extensions (sitelinks, callouts, structured snippets) aktivni i serving. Dodajte ako fale." },
+    { "@type": "HowToStep", name: "Audience lists i exclusions (3 min)", text: "Proverite da li remarketing liste imaju 1000+ korisnika i da li converters exclusion funkcioniše. Pregledajte segment report." },
+    { "@type": "HowToStep", name: "Campaign settings quick scan (3 min)", text: "Proverite location targeting, networks podešavanja (Display isključen u Search kampanjama) i da li su schedule adjustments aktivni." },
+  ],
+};
+
+const howToSchemaAuditEN = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Quick Google Ads audit in 30 minutes",
+  step: [
+    { "@type": "HowToStep", name: "Search Terms Report (5 min)", text: "Review top 30 search terms by cost for the last 30 days: are they relevant? Add negatives for all irrelevant terms with $15+ spend." },
+    { "@type": "HowToStep", name: "Budget allocation (3 min)", text: "Check whether a profitable campaign is 'Limited by budget'. Reallocate budget from underperforming campaigns." },
+    { "@type": "HowToStep", name: "Conversion tracking check (5 min)", text: "Verify tracking is working — compare Google Ads conversions with GA4/CRM (max 10-15% difference is acceptable)." },
+    { "@type": "HowToStep", name: "Top keywords performance (5 min)", text: "Review top 15 keywords by cost: is Quality Score 6+? Is CPA acceptable? Pause keywords with CPA 2x+ above target and 50+ clicks." },
+    { "@type": "HowToStep", name: "Ad performance (4 min)", text: "Identify Ad Groups with CTR below 2% (Search) or 0.5% (Display). Complete RSAs with more headlines or create new ads." },
+    { "@type": "HowToStep", name: "Extensions active (2 min)", text: "Check that all extensions (sitelinks, callouts, structured snippets) are active and serving. Add any that are missing." },
+    { "@type": "HowToStep", name: "Audience lists & exclusions (3 min)", text: "Check that remarketing lists have 1000+ users and that converters exclusion is working. Review the segment report." },
+    { "@type": "HowToStep", name: "Campaign settings quick scan (3 min)", text: "Verify location targeting, network settings (Display OFF in Search campaigns), and that schedule adjustments are active." },
+  ],
+};
+
+// --- google-ads-optimizacija ---
+const howToSchemaOptimizacijaSR = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Kako optimizovati Google Ads kampanje",
+  step: [
+    { "@type": "HowToStep", name: "Optimizujte strukturu naloga", text: "Odvojite Brand i Non-Brand kampanje, organizujte tematski fokusirane Ad Groups, uvedite konzistentnu naming konvenciju i strukturirajte kampanje po fazi customer journey-a." },
+    { "@type": "HowToStep", name: "Optimizujte ključne reči", text: "Radite Search Terms Report mining nedeljno, gradite listu negativnih ključnih reči kao fundament, prilagodite match types strategiju i konsolidujte duplikate." },
+    { "@type": "HowToStep", name: "Optimizujte oglase", text: "Primenite RSA best practices sa raznovrsnim headlines, koristite pin strategiju samo kad je neophodno, aktivirajte sve relevantne ad extensions i uskladite landing page sa porukom oglasa." },
+    { "@type": "HowToStep", name: "Optimizujte bidding strategiju", text: "Izaberite Manual CPC ili Smart Bidding u zavisnosti od broja konverzija, postavite realan Target CPA/ROAS, i podesite dayparting i device bid adjustments." },
+    { "@type": "HowToStep", name: "Optimizujte Quality Score", text: "Podignite CTR kao najbrži put ka boljem QS, uskladite keyword → oglas → landing page relevantnost, i poboljšajte brzinu i mobile iskustvo landing stranica." },
+    { "@type": "HowToStep", name: "Uvedite nedeljni raspored optimizacije", text: "Ponedeljak: Search Terms review. Utorak: performance review po kampanji. Sreda: ad copy testing. Četvrtak: bid strategy review. Petak: Quality Score audit." },
+  ],
+};
+
+const howToSchemaOptimizacijaEN = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to optimize Google Ads campaigns",
+  step: [
+    { "@type": "HowToStep", name: "Optimize account structure", text: "Separate Brand and Non-Brand campaigns, organize thematically focused Ad Groups, introduce a consistent naming convention, and structure campaigns by customer journey stage." },
+    { "@type": "HowToStep", name: "Optimize keywords", text: "Mine the Search Terms Report weekly, build a negative keyword list as the foundation, adapt your match types strategy, and consolidate duplicate keywords." },
+    { "@type": "HowToStep", name: "Optimize ads", text: "Apply RSA best practices with diverse headlines, use pinning only when necessary, enable all relevant ad extensions, and align landing pages with ad messaging." },
+    { "@type": "HowToStep", name: "Optimize bidding strategy", text: "Choose Manual CPC or Smart Bidding based on conversion volume, set a realistic Target CPA/ROAS, and configure dayparting and device bid adjustments." },
+    { "@type": "HowToStep", name: "Optimize Quality Score", text: "Raise CTR as the fastest way to improve QS, align keyword → ad → landing page relevance, and improve landing page speed and mobile experience." },
+    { "@type": "HowToStep", name: "Set up a weekly optimization schedule", text: "Monday: Search Terms review. Tuesday: per-campaign performance review. Wednesday: ad copy testing. Thursday: bid strategy review. Friday: Quality Score audit." },
+  ],
+};
+
+// --- kako-poceti-google-ads ---
+const howToSchemaKakoPocetiSR = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Kako početi sa Google Ads — od nule do prve kampanje",
+  step: [
+    { "@type": "HowToStep", name: "Otvorite Google Ads nalog", text: "Idite na ads.google.com i registrujte se sa Gmail nalogom. Koristite Expert mode umesto automatskog podešavanja koje vodi ka Smart kampanjama sa manje kontrole." },
+    { "@type": "HowToStep", name: "Povežite sa Google Analytics 4", text: "U podešavanjima naloga povežite GA4 property. Ovo daje uvid u ponašanje korisnika nakon klika — bounce rate, vreme na stranici, putanju kroz sajt." },
+    { "@type": "HowToStep", name: "Postavite conversion tracking od prvog dana", text: "Najvažniji korak — bez praćenja konverzija vodite kampanju naslepo. Postavite tracking za svaki važan cilj: kupovinu, poziv, popunjeni formular." },
+    { "@type": "HowToStep", name: "Istražite ključne reči", text: "Koristite Google Keyword Planner i fokusirajte se na ključne reči sa namerom kupovine. Za lokalne biznise dodajte geografske modifikatore (npr. 'vodoinstalater Beograd')." },
+    { "@type": "HowToStep", name: "Kreirajte prvu Search kampanju", text: "Počnite jednostavno: jedna kampanja, jedna ad grupa, 10-15 usko povezanih ključnih reči, 2-3 oglasa. Koristite phrase ili exact match za početak." },
+    { "@type": "HowToStep", name: "Postavite negativne ključne reči", text: "Odmah na startu blokirajte neodgovarajuće pretrage: 'besplatno', 'posao', 'karijera' i imena konkurenata ako ne ciljate konkurentski saobraćaj." },
+  ],
+};
+
+const howToSchemaKakoPocetiEN = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to start with Google Ads — from zero to your first campaign",
+  step: [
+    { "@type": "HowToStep", name: "Create your Google Ads account", text: "Go to ads.google.com and set up your account. Switch to Expert Mode immediately — the simplified Smart campaigns mode hides critical controls. Link your Google Analytics 4 property during setup." },
+    { "@type": "HowToStep", name: "Set up conversion tracking first", text: "This is non-negotiable. Every optimization decision — bidding strategy, keyword prioritization, budget allocation — depends on accurate conversion data." },
+    { "@type": "HowToStep", name: "Research and select your keywords", text: "Use Google Keyword Planner to find keywords your customers actually use. Focus on high-intent, specific terms — a targeted list of 20-50 strong terms outperforms 500 vague ones." },
+    { "@type": "HowToStep", name: "Add negative keywords before launch", text: "Before spending anything, add a negative keyword list ('free', 'jobs', 'DIY', 'course') to prevent ads showing on irrelevant searches that never convert." },
+    { "@type": "HowToStep", name: "Write your ads and set up extensions", text: "Create Responsive Search Ads with 10-15 headlines and 4 descriptions using real differentiators. Add all relevant extensions: sitelinks, callouts, structured snippets, call extension." },
+    { "@type": "HowToStep", name: "Launch, monitor, and optimize weekly", text: "Set your daily budget, use Manual CPC or Maximize Clicks for the first 2-4 weeks, check the Search Terms Report weekly, and switch to Smart Bidding once you have 30-50 conversions." },
+  ],
+};
+
+function getHowToSchema(slug: string, locale: string) {
+  if (slug === "conversion-tracking-vodic") {
+    return locale === "en" ? howToSchemaConversionTrackingEN : howToSchemaConversionTrackingSR;
+  }
+  if (slug === "google-ads-audit-vodic") {
+    return locale === "en" ? howToSchemaAuditEN : howToSchemaAuditSR;
+  }
+  if (slug === "google-ads-optimizacija") {
+    return locale === "en" ? howToSchemaOptimizacijaEN : howToSchemaOptimizacijaSR;
+  }
+  if (slug === "kako-poceti-google-ads") {
+    return locale === "en" ? howToSchemaKakoPocetiEN : howToSchemaKakoPocetiSR;
+  }
+  return null;
+}
+
 /* ── Page Component ── */
 
 export default async function BlogPostPage({ params }: Props) {
@@ -935,7 +1078,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.metaDescription,
     ...(post.featuredImage && {
@@ -943,17 +1086,8 @@ export default async function BlogPostPage({ params }: Props) {
     }),
     datePublished: post.date,
     dateModified: post.dateModified,
-    author: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-    },
-    publisher: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-    },
+    author: { "@id": "https://www.slobodan-jelisavac.com/#person" },
+    publisher: { "@id": "https://www.slobodan-jelisavac.com/#person" },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
@@ -986,6 +1120,15 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
+  // Standalone Person entity (E-E-A-T author bio) — the Article's author/publisher
+  // reference this node via @id.
+  const personSchema = {
+    "@context": "https://schema.org",
+    ...PERSON_SCHEMA,
+  };
+
+  const howToSchema = getHowToSchema(canonicalSlug, locale);
+
   return (
     <div className={post.featuredImage ? "bg-white" : "bg-slate-950 text-white"}>
       <ReadingProgressBar />
@@ -998,10 +1141,20 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       {faqSchema && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
       )}
 

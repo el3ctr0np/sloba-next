@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function QualityScoreVodicPost() {
   return (
@@ -68,8 +69,8 @@ export default function QualityScoreVodicPost() {
 
       <p>Viši Quality Score znači:</p>
       <ul>
-        <li><strong>Bolja pozicija</strong> — viši Ad Rank bez povećanja bid-a</li>
-        <li><strong>Niži CPC</strong> — plaćate manje za isti klik</li>
+        <li><strong>Bolja pozicija</strong> — viši <GlossaryLink slug="ad-rank">Ad Rank</GlossaryLink> bez povećanja bid-a</li>
+        <li><strong>Niži <GlossaryLink slug="cpc">CPC</GlossaryLink></strong> — plaćate manje za isti klik</li>
         <li><strong>Više impression-a</strong> — češće prikazivanje za isti budžet</li>
         <li><strong>Pristup premium pozicijama</strong> — neke pozicije zahtevaju minimum Ad Rank</li>
       </ul>
@@ -176,17 +177,17 @@ export default function QualityScoreVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Expected CTR</h3>
-          <p className="text-base text-gray-600 mb-0">Verovatnoća da će neko kliknuti na vaš oglas. Zavisi od headline-ova, CTA-a, extensions i istorijskih performansi.</p>
+          <p className="text-base text-gray-600 mb-0">Verovatnoća da će neko kliknuti na vaš oglas — vidi <GlossaryLink slug="expected-ctr">Expected CTR</GlossaryLink>. Zavisi od headline-ova, CTA-a, extensions i istorijskih performansi.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~20% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Ad Relevance</h3>
-          <p className="text-base text-gray-600 mb-0">Koliko je vaš oglas relevantan za ključnu reč. Zavisi od podudaranja ključne reči sa tekstom oglasa.</p>
+          <p className="text-base text-gray-600 mb-0">Koliko je vaš oglas relevantan za ključnu reč — vidi <GlossaryLink slug="ad-relevance">Ad Relevance</GlossaryLink>. Zavisi od podudaranja ključne reči sa tekstom oglasa.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% uticaja</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Landing Page Experience</h3>
-          <p className="text-base text-gray-600 mb-0">Koliko je LP koristan i relevantan. Zavisi od sadržaja, brzine, mobile optimizacije i trust signala.</p>
+          <p className="text-base text-gray-600 mb-0">Koliko je <GlossaryLink slug="landing-page-experience">LP koristan i relevantan</GlossaryLink>. Zavisi od sadržaja, brzine, mobile optimizacije i trust signala.</p>
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function KolikoKostaGoogleAdsPost() {
   return (
@@ -88,7 +89,7 @@ export default function KolikoKostaGoogleAdsPost() {
       <h3>Od čega zavisi cena po kliku (CPC)</h3>
       <ul>
         <li><strong>Konkurencija</strong> — što više oglašivača cilja istu ključnu reč, veća je cena</li>
-        <li><strong>Quality Score</strong> — Google ocenjuje relevantnost vašeg oglasa i landing page-a (1-10). Viši skor = niža cena</li>
+        <li><strong><GlossaryLink slug="quality-score">Quality Score</GlossaryLink></strong> — Google ocenjuje relevantnost vašeg oglasa i landing page-a (1-10). Viši skor = niža cena</li>
         <li><strong>Pozicija oglasa</strong> — prva pozicija košta više od četvrte</li>
         <li><strong>Industrija</strong> — osiguranje i advokati plaćaju 10x više od prodavnica odeće</li>
         <li><strong>Geografija</strong> — Srbija je jeftinija od Nemačke, ali skuplja od Makedonije</li>
@@ -120,7 +121,7 @@ export default function KolikoKostaGoogleAdsPost() {
         </div>
       </div>
 
-      <p>Za većinu biznisa u Srbiji, CPC model na Search mreži je polazna tačka.</p>
+      <p>Za većinu biznisa u Srbiji, <GlossaryLink slug="cpc">CPC</GlossaryLink> model na Search mreži je polazna tačka.</p>
 
       <hr />
 
@@ -346,7 +347,7 @@ export default function KolikoKostaGoogleAdsPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div>
               <strong>Poznajte prosečnu vrednost kupca</strong>
-              <span className="text-gray-500"> — AOV, marža po porudžbini, LTV za povratne kupce</span>
+              <span className="text-gray-500"> — <GlossaryLink slug="aov">AOV</GlossaryLink>, marža po porudžbini, <GlossaryLink slug="ltv">LTV</GlossaryLink> za povratne kupce</span>
             </div>
           </div>
           <div className="flex items-start gap-3">

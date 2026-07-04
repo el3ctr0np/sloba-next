@@ -1,11 +1,12 @@
 import { Link } from "@/i18n/navigation";
 import { CheckCircle, XCircle } from "lucide-react";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function PerformanceMaxVodicPost() {
   return (
     <>
       <p>
-        <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max (PMax)</a> kampanje su Google-ov najmoćniji — i najkontroverzniji — alat za automatizovano oglašavanje. Dajete algoritmu budžet, kreativ i cilj, on pronalazi kupce na svim Google mrežama odjednom.
+        <GlossaryLink slug="pmax">Performance Max (PMax)</GlossaryLink> kampanje su Google-ov najmoćniji — i najkontroverzniji — alat za automatizovano oglašavanje. Dajete algoritmu budžet, kreativ i cilj, on pronalazi kupce na svim Google mrežama odjednom.
       </p>
       <p>
         U praksi, PMax može biti izuzetno efikasan kanal koji skalira rezultate ili crna rupa koja guta budžet bez transparentnosti. Razlika je u pristupu i razumevanju kako sistem funkcioniše.
@@ -77,14 +78,14 @@ export default function PerformanceMaxVodicPost() {
         <li><strong>Budžet</strong> — dnevni ili kampanjski</li>
         <li><strong>Asset-e</strong> — slike, video, naslove, opise, logoe</li>
         <li><strong>Audience signals</strong> — ko je vaša ciljna publika (nije striktni targeting)</li>
-        <li><strong>Product feed</strong> — za eCommerce (povezan sa Merchant Center)</li>
+        <li><strong>Product feed</strong> — za eCommerce (povezan sa <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink>)</li>
       </ul>
       <p><strong>Google automatski radi:</strong></p>
       <ul>
         <li>Kombinuje asset-e u različite formate oglasa (Responsive, Shopping, Video, Display)</li>
         <li>Odlučuje gde i kada prikazati svaki oglas</li>
         <li>Automatski bidduje za konverzije na osnovu real-time podataka</li>
-        <li>Optimizuje ka vašem Target CPA ili Target ROAS cilju</li>
+        <li>Optimizuje ka vašem Target CPA ili <GlossaryLink slug="troas">Target ROAS</GlossaryLink> cilju</li>
       </ul>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">

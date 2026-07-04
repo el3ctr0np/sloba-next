@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleAdsOptimizacijaPost() {
   return (
@@ -311,7 +312,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <h2>Optimizacija oglasa</h2>
 
       <p>
-        Sa prelaskom na Responsive Search Ads (RSA) kao default formatu, optimizacija oglasa je
+        Sa prelaskom na <GlossaryLink slug="rsa">Responsive Search Ads (RSA)</GlossaryLink> kao default formatu, optimizacija oglasa je
         promenila prirodu. Više nije copy-paste opisnih rečenica — sada kreirate building blocks
         koje Google kombinuje. Strategija je drugačija.
       </p>
@@ -524,7 +525,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <h2>Optimizacija Quality Score</h2>
 
       <p>
-        Quality Score je Google-ova ocena koliko su vaši oglasi i keywords relevantni korisnicima.
+        <GlossaryLink slug="quality-score">Quality Score</GlossaryLink> je Google-ova ocena koliko su vaši oglasi i keywords relevantni korisnicima.
         Viši Quality Score = niži CPC i bolji ad rank. Ako imate prosek ispod 5/10, ovde je vaš
         najveći optimization opportunity. Kompletan vodič: <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }}>Kako poboljšati Quality Score</Link>.
       </p>
@@ -535,7 +536,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">CTR optimization: najbrži način da podignete QS</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Expected CTR je najveći component Quality Score-a. Ako vaš CTR raste, QS prati. Kako povećati CTR?
+          Expected CTR je najveći component Quality Score-a. Ako vaš <GlossaryLink slug="ctr">CTR</GlossaryLink> raste, QS prati. Kako povećati CTR?
           Bolje oglase (taktika #13-18), relevantnije keywords, i ad extensions.
         </p>
         <ul className="text-sm">
@@ -631,7 +632,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika 29</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Remarketing optimization</h3>
           <p className="text-base text-gray-600 mb-3">
-            Remarketing kampanje imaju 2-3x viši CTR i 50-70% niži CPA od cold traffic. Ali samo ako
+            <GlossaryLink slug="remarketing">Remarketing</GlossaryLink> kampanje imaju 2-3x viši CTR i 50-70% niži CPA od cold traffic. Ali samo ako
             pravilno segmentirate audience. Ne tretirajte sve posetioce isto.
           </p>
           <ul className="text-sm mb-0">

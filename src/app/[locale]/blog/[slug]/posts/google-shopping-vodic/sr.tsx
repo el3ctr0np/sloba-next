@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleShoppingVodicPost() {
   return (
@@ -50,7 +51,7 @@ export default function GoogleShoppingVodicPost() {
           Šta je Google Shopping i kako funkcioniše?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Shopping</strong> je vizuelni format oglasa koji prikazuje sliku proizvoda, cenu i ime prodavnice pre klika — što filtrira nekupce i dovodi visoko-nameravane kupce. Zahteva <strong>Google Merchant Center</strong> i optimizovan product feed. Za Srbiju: <strong>lansira se novembra 2026</strong>.
+          <strong>Google Shopping</strong> je vizuelni format oglasa koji prikazuje sliku proizvoda, cenu i ime prodavnice pre klika — što filtrira nekupce i dovodi visoko-nameravane kupce. Zahteva <strong><GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink></strong> i optimizovan product feed. Za Srbiju: <strong>lansira se novembra 2026</strong>.
         </p>
       </div>
 
@@ -88,7 +89,7 @@ export default function GoogleShoppingVodicPost() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div><strong>Plaćate po kliku</strong> <span className="text-gray-500">— CPC model, kao i Search kampanje</span></div>
+            <div><strong>Plaćate po kliku</strong> <span className="text-gray-500">— <GlossaryLink slug="cpc">CPC</GlossaryLink> model, kao i Search kampanje</span></div>
           </div>
         </div>
       </div>
@@ -351,7 +352,7 @@ export default function GoogleShoppingVodicPost() {
 
       <h2>Bidding strategije za Shopping</h2>
       <p>
-        Izbor bidding strategije zavisi od veličine budžeta, istorije konverzija, i koliko kontrole želite. Moje iskustvo je da većina eCommerce poslova ima najbolje performanse sa Target ROAS nakon inicijalnog data collection perioda.
+        Izbor bidding strategije zavisi od veličine budžeta, istorije konverzija, i koliko kontrole želite. Moje iskustvo je da većina eCommerce poslova ima najbolje performanse sa <GlossaryLink slug="troas">Target ROAS</GlossaryLink> nakon inicijalnog data collection perioda.
       </p>
 
       <div className="overflow-x-auto my-6">

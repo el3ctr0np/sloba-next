@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function NegativeKeywordsVodicPost() {
   return (
@@ -47,7 +48,7 @@ export default function NegativeKeywordsVodicPost() {
       {/* ── Šta su negativne ključne reči ── */}
       <h2>Šta su negativne ključne reči i zašto su kritične</h2>
       <p>
-        <a href="https://support.google.com/google-ads/answer/2453972" target="_blank" rel="noopener noreferrer">Negativne ključne reči</a> (negative keywords) su reči i fraze za koje NE želite da se vaši oglasi prikazuju. Dok regularne ključne reči privlače saobraćaj, negativne ga filtriraju — štite vaš budžet od klikova koji nikada neće doneti konverziju.
+<GlossaryLink slug="negative-keywords">Negativne ključne reči</GlossaryLink> (negative keywords) su reči i fraze za koje NE želite da se vaši oglasi prikazuju. Dok regularne ključne reči privlače saobraćaj, negativne ga filtriraju — štite vaš budžet od klikova koji nikada neće doneti konverziju.
       </p>
       <p>
         U praksi, ovo je jedna od najvažnijih optimizacionih aktivnosti. Na svakom nalogu koji preuzmem, Search Terms Report otkriva minimum 15-20% budžeta potrošenog na potpuno irelevantne pretrage.
@@ -103,7 +104,7 @@ export default function NegativeKeywordsVodicPost() {
       {/* ── Match Types za Negatives ── */}
       <h2>Match Types za negativne ključne reči</h2>
       <p>
-        <a href="https://support.google.com/google-ads/answer/2453972" target="_blank" rel="noopener noreferrer">Negativni match types</a> rade drugačije od pozitivnih. Razumevanje razlika je ključno da ne blokirate i dobre pretrage greškom.
+Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade drugačije od pozitivnih. Razumevanje razlika je ključno da ne blokirate i dobre pretrage greškom.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -453,7 +454,7 @@ export default function NegativeKeywordsVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Indirektno — da. Bolji CTR (manje irelevantnih prikaza) → bolji Expected CTR → bolji QS. Više o tome u <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline">Quality Score vodiču</Link>.
+            Indirektno — da. Bolji <GlossaryLink slug="ctr">CTR</GlossaryLink> (manje irelevantnih prikaza) → bolji Expected CTR → bolji <GlossaryLink slug="quality-score">QS</GlossaryLink>. Više o tome u <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline">Quality Score vodiču</Link>.
           </div>
         </details>
 

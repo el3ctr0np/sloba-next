@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function RemarketingVodicPost() {
   return (
@@ -88,7 +89,7 @@ export default function RemarketingVodicPost() {
         <p className="text-blue-800 text-base">
           Nakon skoro decenije upravljanja Google Ads nalozima u regionu i
           inostranstvu, remarketing je najisplativiji tip kampanja koji možete
-          pokrenuti. CTR je 2-3 puta viši od hladnog saobraćaja, a CPA je 50-70% niži.
+          pokrenuti. <GlossaryLink slug="ctr">CTR</GlossaryLink> je 2-3 puta viši od hladnog saobraćaja, a CPA je 50-70% niži.
         </p>
       </div>
 
@@ -264,7 +265,7 @@ export default function RemarketingVodicPost() {
       <p>
         Postavljanje remarketing kampanje zahteva tri koraka: instalacija taga,
         povezivanje sa Google Analytics-om i verifikacija. Preporučujem da koristite
-        Google Tag Manager (GTM) — daje vam fleksibilnost bez potrebe da dirate
+        <GlossaryLink slug="gtm">Google Tag Manager (GTM)</GlossaryLink> — daje vam fleksibilnost bez potrebe da dirate
         kod sajta svaki put.
       </p>
 
@@ -301,7 +302,7 @@ export default function RemarketingVodicPost() {
         <h3 className="mt-0 mb-4 font-heading font-bold">Korak 2: Povežite GA4 sa Google Ads-om</h3>
         <ol className="mb-0">
           <li>U Google Ads otvorite Tools → Linked Accounts</li>
-          <li>Pronađite Google Analytics (GA4) i kliknite &quot;Link&quot;</li>
+          <li>Pronađite <GlossaryLink slug="ga4">Google Analytics (GA4)</GlossaryLink> i kliknite &quot;Link&quot;</li>
           <li>Izaberite vaš GA4 property</li>
           <li>Omogućite remarketing opciju</li>
         </ol>

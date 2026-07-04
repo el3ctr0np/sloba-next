@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function KakoPocetiGoogleAdsSR() {
   return (
@@ -110,7 +111,7 @@ export default function KakoPocetiGoogleAdsSR() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Korisnik klikne</strong> <span className="text-gray-500">— vi plaćate CPC (cenu po kliku) tek u ovom trenutku</span></div>
+            <div><strong>Korisnik klikne</strong> <span className="text-gray-500">— vi plaćate <GlossaryLink slug="cpc">CPC</GlossaryLink> (cenu po kliku) tek u ovom trenutku</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
@@ -131,7 +132,7 @@ export default function KakoPocetiGoogleAdsSR() {
       </div>
 
       <p>
-        Aukcija nije isključivo o ceni. Google koristi <strong>Quality Score</strong> — kombinaciju relevantnosti oglasa, ključnih reči i landing page-a — da odredi ko dobija bolju poziciju. To znači da pametno kreiran nalog može pobediti veće budžete konkurencije.
+        Aukcija nije isključivo o ceni. Google koristi <strong><GlossaryLink slug="quality-score">Quality Score</GlossaryLink></strong> — kombinaciju relevantnosti oglasa, ključnih reči i landing page-a — da odredi ko dobija bolju poziciju. To znači da pametno kreiran nalog može pobediti veće budžete konkurencije.
       </p>
 
       <hr />
@@ -151,7 +152,7 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Stopa klika</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">CTR</h3>
-          <p className="text-base text-gray-600 mb-0">Procenat ljudi koji vide vaš oglas i kliknu na njega. Ako 100 ljudi vidi oglas i 3 klikne — CTR je 3%. Viši CTR znači relevantniji oglas, što smanjuje CPC i poboljšava poziciju.</p>
+          <p className="text-base text-gray-600 mb-0">Procenat ljudi koji vide vaš oglas i kliknu na njega. Ako 100 ljudi vidi oglas i 3 klikne — <GlossaryLink slug="ctr">CTR</GlossaryLink> je 3%. Viši CTR znači relevantniji oglas, što smanjuje CPC i poboljšava poziciju.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ocena kvaliteta</p>
@@ -166,7 +167,7 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Povrat na potrošnju oglasa</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">ROAS</h3>
-          <p className="text-base text-gray-600 mb-0">Koliko prihoda ostvarite za svaki euro uložen u oglase. ROAS od 4x znači: potrošili ste €100, zaradili €400. Ovo je ključna metrika za eCommerce. Za lead gen prati CPA (cenu po konverziji).</p>
+          <p className="text-base text-gray-600 mb-0">Koliko prihoda ostvarite za svaki euro uložen u oglase. <GlossaryLink slug="roas">ROAS</GlossaryLink> od 4x znači: potrošili ste €100, zaradili €400. Ovo je ključna metrika za eCommerce. Za lead gen prati CPA (cenu po konverziji).</p>
         </div>
       </div>
 
@@ -486,7 +487,7 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija: Remarketing za početnike ── */}
       <h2 id="remarketing-za-pocetnike">Remarketing: Sledeći korak nakon prve kampanje</h2>
       <p>
-        Kada pokrenete prvu kampanju i počnete da dobijate saobraćaj, jedan deo posetilaca neće konvertovati odmah. To je normalno — stopa konverzije od 2-5% znači da 95-98% ljudi napusti sajt bez akcije. <strong>Remarketing</strong> vam omogućava da ponovo dosegnete te ljude sa ciljanim porukama.
+        Kada pokrenete prvu kampanju i počnete da dobijate saobraćaj, jedan deo posetilaca neće konvertovati odmah. To je normalno — stopa konverzije od 2-5% znači da 95-98% ljudi napusti sajt bez akcije. <strong><GlossaryLink slug="remarketing">Remarketing</GlossaryLink></strong> vam omogućava da ponovo dosegnete te ljude sa ciljanim porukama.
       </p>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
