@@ -29,6 +29,19 @@ export default function NegativeKeywordsVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta su negativne ključne reči?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Negativne ključne reči</strong> su reči i fraze za koje ne želite da se vaš Google Ads oglas prikazuje. Za razliku od regularnih ključnih reči koje privlače saobraćaj, negativne ga filtriraju i štite budžet od klikova bez namere kupovine. Bez njih, <strong>20-40% budžeta</strong> obično odlazi na potpuno irelevantne pretrage.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── Šta su negativne ključne reči ── */}

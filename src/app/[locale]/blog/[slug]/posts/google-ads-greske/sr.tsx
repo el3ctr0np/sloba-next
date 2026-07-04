@@ -37,6 +37,20 @@ export default function GoogleAdsGreskePost() {
           </div>
         </div>
       </div>
+
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Koje su najčešće Google Ads greške?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          Najčešće <strong>Google Ads greške</strong> su nestrukturirani nalozi (sve pomešano u jednoj kampanji), izostanak negativnih ključnih reči, loš conversion tracking i location targeting koji pušta saobraćaj van servisnog područja. Ove greške zajedno bacaju u proseku <strong>30% mesečnog budžeta</strong> na neproduktivne klikove. Sve su popravljive uz sistematičan audit naloga.
+        </p>
+      </div>
+
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>

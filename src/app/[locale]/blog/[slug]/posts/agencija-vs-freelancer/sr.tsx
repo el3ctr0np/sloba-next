@@ -28,6 +28,19 @@ export default function AgencijaVsFreelancerPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Agencija ili freelancer za Google Ads — šta izabrati?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          Izbor između <strong>agencije, freelancera i in-house tima</strong> zavisi pre svega od mesečnog budžeta. Freelancer je najbolji fit za budžete od €1,000-10,000 mesečno gde je bitna direktna komunikacija i fokus na jedan kanal. Agencija ima smisla od €5,000+ mesečno kad su potrebni multi-channel tim i skalabilnost. In-house tim se isplati tek od €15,000+ mesečno. Fit je važniji od cene — 67% firmi menja partnera u prvoj godini zbog lošeg fita.
+        </p>
+      </div>
+
       <p>
         Imate tri opcije: angažujete agenciju, radite sa freelancerom/konsultantom, ili gradite in-house tim. Svaka ima svoje prednosti i mane. I svaka je prava — za određenu situaciju.
       </p>

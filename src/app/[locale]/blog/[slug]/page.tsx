@@ -233,6 +233,14 @@ const faqSchemaRemarketingSR = {
   mainEntity: [
     {
       "@type": "Question",
+      name: "Šta je remarketing u Google Ads-u?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Google Ads remarketing je strategija ponovnog targetiranja korisnika koji su već posetili vaš sajt. Ovi korisnici konvertuju 2-5x bolje od hladnog saobraćaja jer su već pokazali interes. Setup zahteva Google tag i audience liste (cart abandoners, pregledači proizvoda, postojeći kupci)."
+      }
+    },
+    {
+      "@type": "Question",
       name: "Koliko traje remarketing lista?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -286,6 +294,14 @@ const faqSchemaRemarketingEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is remarketing in Google Ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Google Ads remarketing is a strategy of re-targeting users who have already visited your site. These users convert 2-5x better than cold traffic because they've already shown interest. Setup requires a Google tag and audience lists (cart abandoners, product viewers, existing customers)."
+      }
+    },
     {
       "@type": "Question",
       name: "How long does a remarketing list last?",
@@ -343,6 +359,14 @@ const faqSchemaKolikoKostaSR = {
   mainEntity: [
     {
       "@type": "Question",
+      name: "Koliko košta Google Ads oglašavanje u Srbiji?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Google Ads u Srbiji košta od 15 do 50 RSD po kliku za većinu industrija, uz minimalni mesečni budžet od €200-400 da biste videli merljive rezultate. Konačna cena zavisi od industrije i konkurencije — usluge i B2B plaćaju više od maloprodaje."
+      }
+    },
+    {
+      "@type": "Question",
       name: "Koliko minimalno treba uložiti u Google Ads?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -388,6 +412,14 @@ const faqSchemaKolikoKostaEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "How much does Google Ads advertising cost in Serbia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Google Ads in Serbia costs between 15 and 50 RSD per click for most industries, with a minimum monthly budget of €200-400 needed to see measurable results. The final cost depends on industry and competition — services and B2B pay more than retail."
+      }
+    },
     {
       "@type": "Question",
       name: "What is the minimum investment for Google Ads?",
@@ -467,6 +499,7 @@ const faqSchemaNegativneKljucneReciSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Šta su negativne ključne reči?", acceptedAnswer: { "@type": "Answer", text: "Negativne ključne reči su reči i fraze za koje ne želite da se vaš Google Ads oglas prikazuje. Za razliku od regularnih ključnih reči koje privlače saobraćaj, negativne ga filtriraju i štite budžet od klikova bez namere kupovine. Bez njih, 20-40% budžeta obično odlazi na irelevantne pretrage." } },
     { "@type": "Question", name: "Koliko negativnih ključnih reči je dovoljno?", acceptedAnswer: { "@type": "Answer", text: "Nema gornjeg limita. Tipično: 50-200 za starter listu, raste vremenom. Kvalitet je važniji od kvantiteta — bolje 50 pažljivo odabranih nego 500 nasumičnih." } },
     { "@type": "Question", name: "Da li negativne ključne reči utiču na Quality Score?", acceptedAnswer: { "@type": "Answer", text: "Indirektno — da. Bolji CTR (manje irelevantnih prikaza) → bolji Expected CTR → bolji QS." } },
     { "@type": "Question", name: "Mogu li slučajno blokirati dobre pretrage?", acceptedAnswer: { "@type": "Answer", text: "Da, to je realan rizik. Zato: (1) koristite podatke pre dodavanja, (2) proveravajte Search Terms nakon dodavanja, (3) budite pažljivi sa Broad negatives za kratke reči koje imaju više značenja." } },
@@ -480,6 +513,7 @@ const faqSchemaNegativneKljucneReciEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "What are negative keywords?", acceptedAnswer: { "@type": "Answer", text: "Negative keywords are words and phrases you don't want your Google Ads ad to show for. Unlike regular keywords that attract traffic, negatives filter it out and protect your budget from clicks with no purchase intent. Without them, 20-40% of budget typically goes to irrelevant searches." } },
     { "@type": "Question", name: "How many negative keywords is enough?", acceptedAnswer: { "@type": "Answer", text: "No upper limit. Typically: 50-200 for starter list, grows over time. Quality is more important than quantity — better 50 carefully selected than 500 random ones." } },
     { "@type": "Question", name: "Do negative keywords affect Quality Score?", acceptedAnswer: { "@type": "Answer", text: "Indirectly — yes. Better CTR (fewer irrelevant impressions) → better Expected CTR → better QS." } },
     { "@type": "Question", name: "Can I accidentally block good searches?", acceptedAnswer: { "@type": "Answer", text: "Yes, that is a real risk. Therefore: (1) use data before adding, (2) check Search Terms after adding, (3) be careful with Broad negatives for short keywords that have multiple meanings." } },
@@ -547,6 +581,7 @@ const faqSchemaPerformanceMaxSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Šta je Performance Max kampanja?", acceptedAnswer: { "@type": "Answer", text: "Performance Max je AI-driven Google Ads kampanja koja automatski koristi sve Google kanale — Search, Shopping, Display, YouTube, Gmail i Discover — iz jedne kampanje. Najefektivnija je za multi-SKU eCommerce sa minimum 50 konverzija mesečno koje algoritam koristi za optimizaciju." } },
     { "@type": "Question", name: "Da li Performance Max zamenjuje Search i Shopping kampanje?", acceptedAnswer: { "@type": "Answer", text: "Ne u potpunosti. PMax može da radi uz Search i Shopping. Google preporučuje kombinaciju — PMax za široku pokrivenost, Search za high-intent upite. Shopping sa PMax-om zahteva pažljivu asset group strukturu da se izbegne kanibalizacija." } },
     { "@type": "Question", name: "Koliki budžet treba za Performance Max?", acceptedAnswer: { "@type": "Answer", text: "Minimum €30-50/dan (€900-1,500/mesečno). PMax koristi machine learning koji zahteva dovoljno podataka — ispod ovog budžeta algoritam nema dovoljno konverzija za optimizaciju. Za eCommerce sa 100+ proizvoda, preporučuje se €2,000+/mesečno." } },
     { "@type": "Question", name: "Zašto PMax troši većinu budžeta na Display/YouTube?", acceptedAnswer: { "@type": "Answer", text: "Čest problem sa PMax-om. Rešenja: isključite URL expansion, dodajte negativne ključne reči (preko Google podrške), napravite jače Search kampanje za iste ključne reči. PMax će trošiti gde mu je najjeftinije, ne nužno najefikasnije." } },
@@ -559,6 +594,7 @@ const faqSchemaPerformanceMaxEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "What is a Performance Max campaign?", acceptedAnswer: { "@type": "Answer", text: "Performance Max is an AI-driven Google Ads campaign that automatically uses all Google channels — Search, Shopping, Display, YouTube, Gmail, and Discover — from a single campaign. It's most effective for multi-SKU eCommerce with a minimum of 50 conversions per month for the algorithm to optimize with." } },
     { "@type": "Question", name: "Does Performance Max replace Search and Shopping campaigns?", acceptedAnswer: { "@type": "Answer", text: "Not entirely. PMax can run alongside Search and Shopping. Google recommends a combination — PMax for broad coverage, Search for high-intent queries. Shopping with PMax requires careful asset group structure to avoid cannibalization." } },
     { "@type": "Question", name: "What budget do I need for Performance Max?", acceptedAnswer: { "@type": "Answer", text: "Minimum $30-50/day ($900-1,500/month). PMax uses machine learning that requires sufficient data — below this budget the algorithm doesn't have enough conversions for optimization. For eCommerce with 100+ products, $2,000+/month is recommended." } },
     { "@type": "Question", name: "Why is PMax spending most of my budget on Display/YouTube?", acceptedAnswer: { "@type": "Answer", text: "Common PMax problem. Solutions: disable URL expansion, add negative keywords (through Google support), create stronger Search campaigns for the same keywords. PMax will spend where it's cheapest, not necessarily most effective." } },
@@ -597,6 +633,7 @@ const faqSchemaShoppingSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Šta je Google Shopping i kako funkcioniše?", acceptedAnswer: { "@type": "Answer", text: "Google Shopping je vizuelni format oglasa koji prikazuje sliku proizvoda, cenu i ime prodavnice pre klika — što filtrira nekupce i dovodi visoko-nameravane kupce. Zahteva Google Merchant Center i optimizovan product feed. Za Srbiju: lansira se novembra 2026." } },
     { "@type": "Question", name: "Da li mi treba Merchant Center za Google Shopping?", acceptedAnswer: { "@type": "Answer", text: "Da, Merchant Center je obavezan. Tu upload-ujete product feed sa svim informacijama o proizvodima (naziv, cena, slika, dostupnost). Bez MC-a ne možete pokrenuti Shopping kampanje." } },
     { "@type": "Question", name: "Koliko proizvoda treba imati za Google Shopping?", acceptedAnswer: { "@type": "Answer", text: "Nema minimuma, ali Shopping najbolje radi sa 50+ proizvoda. Sa manje od 20 proizvoda, budžet se brzo potroši na malo SKU-ova. Za optimalne rezultate, preporučuje se 100+ aktivnih proizvoda u feed-u." } },
     { "@type": "Question", name: "Zašto su moji Shopping oglasi odbijeni?", acceptedAnswer: { "@type": "Answer", text: "Najčešći razlozi: neusklađenost cena između sajta i feed-a, nedostajući GTIN/MPN, loše slike (watermark, tekst na slici), nedostajuće shipping informacije, ili kršenje Google Merchant Center politika." } },
@@ -609,6 +646,7 @@ const faqSchemaShoppingEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "What is Google Shopping and how does it work?", acceptedAnswer: { "@type": "Answer", text: "Google Shopping is a visual ad format that shows the product image, price, and store name before the click — filtering out non-buyers and bringing in high-intent shoppers. It requires Google Merchant Center and an optimized product feed." } },
     { "@type": "Question", name: "Do I need Merchant Center for Google Shopping?", acceptedAnswer: { "@type": "Answer", text: "Yes, Merchant Center is mandatory. This is where you upload your product feed with all product information (title, price, image, availability). Without MC you cannot run Shopping campaigns." } },
     { "@type": "Question", name: "How many products do I need for Google Shopping?", acceptedAnswer: { "@type": "Answer", text: "There's no minimum, but Shopping works best with 50+ products. With fewer than 20 products, budget gets spent quickly on few SKUs. For optimal results, 100+ active products in the feed is recommended." } },
     { "@type": "Question", name: "Why are my Shopping ads being disapproved?", acceptedAnswer: { "@type": "Answer", text: "Most common reasons: price mismatch between website and feed, missing GTIN/MPN, poor images (watermarks, text on image), missing shipping information, or violating Google Merchant Center policies." } },
@@ -622,6 +660,7 @@ const faqSchemaAgencijaSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Agencija ili freelancer za Google Ads — šta izabrati?", acceptedAnswer: { "@type": "Answer", text: "Izbor zavisi pre svega od mesečnog budžeta. Freelancer je najbolji fit za budžete od €1,000-10,000 mesečno gde je bitna direktna komunikacija i fokus na jedan kanal. Agencija ima smisla od €5,000+ mesečno kad su potrebni multi-channel tim i skalabilnost. Fit je važniji od cene." } },
     { "@type": "Question", name: "Koliko košta Google Ads agencija?", acceptedAnswer: { "@type": "Answer", text: "U Srbiji: €200-600/mesečno za manje agencije, €800-2,000+ za veće. U UK/USA: £500-2,000+ za mid-range, £3,000-10,000+ za enterprise. Većina radi na fiksnom retainer-u ili procentu od ad spend-a (10-20%)." } },
     { "@type": "Question", name: "Freelancer ili agencija — šta je bolje za mali biznis?", acceptedAnswer: { "@type": "Answer", text: "Za budžete do €1,000/mesečno ad spend, freelancer je obično bolji izbor — niži troškovi, direktna komunikacija, veća posvećenost. Agencija ima smisla kad trebate multi-channel pristup ili imate budžet €3,000+/mesečno." } },
     { "@type": "Question", name: "Kako prepoznati lošu Google Ads agenciju?", acceptedAnswer: { "@type": "Answer", text: "Red flags: ne daju pristup Google Ads nalogu, obećavaju garantovane rezultate, nemaju case studies, ne objašnjavaju strategiju, koriste samo Smart kampanje, ne postavljaju conversion tracking, ili zahtevaju dugoročne ugovore bez izlazne klauzule." } },
@@ -634,6 +673,7 @@ const faqSchemaAgencyEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Agency or freelancer for Google Ads — which should you choose?", acceptedAnswer: { "@type": "Answer", text: "The choice depends mainly on your monthly budget. A freelancer is the best fit for budgets of $1,000-10,000/month where direct communication and single-channel focus matter. An agency makes sense from $5,000+/month when you need a multi-channel team and scalability. Fit matters more than price." } },
     { "@type": "Question", name: "How much does a Google Ads agency cost?", acceptedAnswer: { "@type": "Answer", text: "In the US/UK: $500-2,000+/month for mid-range agencies, $3,000-10,000+ for enterprise. Most work on a fixed retainer or percentage of ad spend (10-20%). Some charge setup fees of $500-2,000." } },
     { "@type": "Question", name: "Freelancer or agency — what's better for small business?", acceptedAnswer: { "@type": "Answer", text: "For ad spend budgets under $2,000/month, a freelancer is usually the better choice — lower costs, direct communication, more dedication. An agency makes sense when you need multi-channel approach or have $5,000+/month budget." } },
     { "@type": "Question", name: "How do I spot a bad Google Ads agency?", acceptedAnswer: { "@type": "Answer", text: "Red flags: they don't give access to your Google Ads account, promise guaranteed results, have no case studies, don't explain strategy, only use Smart campaigns, don't set up conversion tracking, or require long-term contracts without exit clause." } },
@@ -647,6 +687,7 @@ const faqSchemaConversionTrackingSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Šta je conversion tracking?", acceptedAnswer: { "@type": "Answer", text: "Conversion tracking je sistem praćenja koji beleži šta korisnik uradi nakon klika na oglas — kupovinu, poziv, popunjenu formu. Postavlja se preko GTM-a, GA4 i Google Ads tagova i predstavlja osnovu na kojoj Smart Bidding algoritmi optimizuju kampanje. Bez tačnog tracking-a, oko 40% naloga optimizuje ka pogrešnim signalima." } },
     { "@type": "Question", name: "Šta je conversion tracking i zašto je važan?", acceptedAnswer: { "@type": "Answer", text: "Conversion tracking prati akcije korisnika nakon klika na oglas — kupovinu, poziv, popunjavanje forme. Bez njega, Google ne zna koje ključne reči i oglasi donose rezultate, pa ne može optimizovati kampanje. To je osnova svake uspešne kampanje." } },
     { "@type": "Question", name: "Google Tag vs GTM — šta koristiti?", acceptedAnswer: { "@type": "Answer", text: "Google Tag Manager (GTM) je uvek preporučen jer omogućava fleksibilnost bez menjanja koda sajta. Google Tag (gtag.js) je direktan ali zahteva developersku pomoć za svaku promenu. Za većinu biznisa, GTM je bolji izbor." } },
     { "@type": "Question", name: "Šta su Enhanced Conversions?", acceptedAnswer: { "@type": "Answer", text: "Enhanced Conversions šalju hash-ovane korisničke podatke (email, telefon) Googleu za bolji matching. Poboljšavaju tracking tačnost za 5-15% posebno na iOS uređajima. Implementacija je jednostavna preko GTM-a ili Google Tag-a." } },
@@ -659,6 +700,7 @@ const faqSchemaConversionTrackingEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "What is conversion tracking?", acceptedAnswer: { "@type": "Answer", text: "Conversion tracking is a monitoring system that records what a user does after clicking an ad — a purchase, call, or completed form. It's set up through GTM, GA4, and Google Ads tags and forms the foundation Smart Bidding algorithms use to optimize campaigns. Without accurate tracking, around 40% of accounts optimize toward the wrong signals." } },
     { "@type": "Question", name: "What is conversion tracking and why is it important?", acceptedAnswer: { "@type": "Answer", text: "Conversion tracking monitors user actions after clicking an ad — purchases, calls, form submissions. Without it, Google doesn't know which keywords and ads drive results, so it can't optimize campaigns. It's the foundation of every successful campaign." } },
     { "@type": "Question", name: "Google Tag vs GTM — which should I use?", acceptedAnswer: { "@type": "Answer", text: "Google Tag Manager (GTM) is always recommended because it offers flexibility without changing site code. Google Tag (gtag.js) is direct but requires developer help for every change. For most businesses, GTM is the better choice." } },
     { "@type": "Question", name: "What are Enhanced Conversions?", acceptedAnswer: { "@type": "Answer", text: "Enhanced Conversions send hashed user data (email, phone) to Google for better matching. They improve tracking accuracy by 5-15%, especially on iOS devices. Implementation is straightforward through GTM or Google Tag." } },
@@ -672,6 +714,7 @@ const faqSchemaGreskeSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "Koje su najčešće Google Ads greške?", acceptedAnswer: { "@type": "Answer", text: "Najčešće Google Ads greške su nestrukturirani nalozi (sve pomešano u jednoj kampanji), izostanak negativnih ključnih reči, loš conversion tracking i location targeting koji pušta saobraćaj van servisnog područja. Ove greške zajedno bacaju u proseku 30% mesečnog budžeta na neproduktivne klikove." } },
     { "@type": "Question", name: "Koja je najskuplja greška u Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Nedostatak negativnih ključnih reči. Bez njih, vaš budžet se troši na irelevantne pretrage. Prosečan nalog bez negativnih ključnih reči baca 20-40% budžeta na neproduktivne klikove. Redovna analiza search terms report-a je obavezna." } },
     { "@type": "Question", name: "Da li broad match ključne reči treba koristiti?", acceptedAnswer: { "@type": "Answer", text: "Broad match može raditi uz Smart Bidding i dovoljno konverzija (30+/mesečno). Ali za manje naloge, phrase match i exact match daju bolju kontrolu. Najčešća greška je korišćenje broad match-a bez negativnih ključnih reči — to je recept za bacanje novca." } },
     { "@type": "Question", name: "Koliko ad grupa treba imati po kampnji?", acceptedAnswer: { "@type": "Answer", text: "5-20 ad grupa za većinu kampanja. Previše ad grupa (50+) otežava upravljanje i razređuje budžet. Premalo (1-2) znači lošu relevantnost. Svaka ad grupa treba imati tematski povezane ključne reči i odgovarajuće oglase." } },
@@ -684,6 +727,7 @@ const faqSchemaGreskeEN = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "What are the most common Google Ads mistakes?", acceptedAnswer: { "@type": "Answer", text: "The most common Google Ads mistakes are unstructured accounts (everything mixed into one campaign), missing negative keywords, poor conversion tracking, and location targeting that lets traffic in from outside the service area. Together these mistakes waste on average 30% of monthly budget on unproductive clicks." } },
     { "@type": "Question", name: "What is the most expensive Google Ads mistake?", acceptedAnswer: { "@type": "Answer", text: "Lack of negative keywords. Without them, your budget gets spent on irrelevant searches. An average account without negative keywords wastes 20-40% of budget on unproductive clicks. Regular search terms report analysis is mandatory." } },
     { "@type": "Question", name: "Should I use broad match keywords?", acceptedAnswer: { "@type": "Answer", text: "Broad match can work with Smart Bidding and enough conversions (30+/month). But for smaller accounts, phrase match and exact match give better control. The most common mistake is using broad match without negative keywords — that's a recipe for wasting money." } },
     { "@type": "Question", name: "How many ad groups should I have per campaign?", acceptedAnswer: { "@type": "Answer", text: "5-20 ad groups for most campaigns. Too many (50+) makes management difficult and dilutes budget. Too few (1-2) means poor relevance. Each ad group should have thematically related keywords and matching ads." } },

@@ -28,6 +28,19 @@ export default function ConversionTrackingVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta je conversion tracking?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Conversion tracking</strong> je sistem praćenja koji beleži šta korisnik uradi nakon klika na oglas — kupovinu, poziv, popunjenu formu. Postavlja se preko <strong>GTM-a, GA4 i Google Ads tagova</strong> i predstavlja osnovu na kojoj Smart Bidding algoritmi optimizuju kampanje. Bez tačnog tracking-a, oko 40% naloga optimizuje ka pogrešnim signalima i troši budžet naslepo.
+        </p>
+      </div>
+
       <p>
         Svake nedelje vidim istu situaciju. Firma troši €2,000-5,000 mesečno na Google Ads. Kampanje su aktivne, klikova ima, ali rezultata nema ili su nepouzdani. Kada pogledam nalog, problem je skoro uvek isti — conversion tracking ne radi kako treba.
       </p>
