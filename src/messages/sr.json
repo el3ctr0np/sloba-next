@@ -9,15 +9,15 @@
       "contact": "Kontakt",
       "glossary": "Rečnik"
     },
-    "cta": "Zakažite konsultaciju",
+    "cta": "Zakažite konsultaciju →",
     "serviceGroups": {
-      "googleAds": "Google Ads",
-      "byIndustry": "Po Industriji",
-      "other": "Ostale Usluge"
+      "googleAds": "Vođenje kampanja",
+      "strategySupport": "Strategija i podrška",
+      "byIndustry": "Po industriji"
     },
     "services": {
       "googleAdsManagement": "Google Ads Upravljanje",
-      "googleAdsAudit": "Google Ads Audit",
+      "googleAdsAudit": "Deep Audit",
       "searchCampaigns": "Search Kampanje",
       "googleShopping": "Google Shopping",
       "performanceMax": "Performance Max",
@@ -36,13 +36,17 @@
     "ctaHeading": "Spremni da poboljšate Google Ads rezultate?",
     "ctaDescription": "20 minuta razgovora. Kažem vam da li mogu da pomognem — i ako ne mogu.",
     "cta": "Zakažite konsultaciju",
+    "ctaMicroTrust": "Besplatno · Bez obaveze · Odgovor u 24h",
     "brandDescription": "Google Ads Konsultant sa 10+ godina iskustva. 50+ brendova u 6+ zemalja.",
     "location": "Batajnica, Srbija",
     "sectionServices": "Usluge",
     "sectionIndustries": "Po Industriji",
     "sectionResources": "Resursi",
+    "privacyPolicy": "Politika privatnosti",
     "services": {
       "googleAdsManagement": "Google Ads Upravljanje",
+      "starterPackage": "Kickstart",
+      "consultations": "Konsultacije",
       "googleAdsAudit": "Google Ads Audit",
       "googleShopping": "Google Shopping",
       "performanceMax": "Performance Max",
@@ -54,9 +58,7 @@
     "industries": {
       "ecommerce": "Google Ads za eCommerce",
       "b2b": "Google Ads za B2B",
-      "saas": "Google Ads za SaaS",
-      "starterPackage": "Kickstart",
-      "consultations": "Konsultacije"
+      "saas": "Google Ads za SaaS"
     },
     "resources": {
       "blog": "Blog / Google Ads Vodič",
@@ -64,6 +66,12 @@
       "glossary": "PPC Rečnik",
       "about": "O Meni",
       "contact": "Kontakt"
+    },
+    "insights": {
+      "heading": "Google Ads uvidi",
+      "description": "Praktični saveti iz prakse — na blogu i LinkedIn-u.",
+      "blogLink": "Blog →",
+      "linkedinLink": "LinkedIn →"
     },
     "copyright": "© 2026 Slobodan Jelisavac. Sva prava zadržana.",
     "partner": "Partner @",

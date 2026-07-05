@@ -10,6 +10,8 @@ export function Footer() {
   const footerLinks = {
     usluge: [
       { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" as const },
+      { label: t("services.starterPackage"), href: "/usluge/starter-paket" as const },
+      { label: t("services.consultations"), href: "/usluge/konsultacije" as const },
       { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" as const },
       { label: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
       { label: t("services.performanceMax"), href: "/usluge/performance-max" as const },
@@ -21,9 +23,7 @@ export function Footer() {
     industrije: [
       { label: t("industries.ecommerce"), href: "/usluge/google-ads-za-ecommerce" as const },
       { label: t("industries.b2b"), href: "/usluge/google-ads-za-b2b" as const },
-      { label: t("industries.saas"), href: "/usluge/google-ads-za-saas" as const },
-      { label: t("industries.starterPackage"), href: "/usluge/starter-paket" as const },
-      { label: t("industries.consultations"), href: "/usluge/konsultacije" as const }
+      { label: t("industries.saas"), href: "/usluge/google-ads-za-saas" as const }
     ],
     resursi: [
       { label: t("resources.blog"), href: "/blog" as const },
@@ -48,9 +48,14 @@ export function Footer() {
                 {t("ctaDescription")}
               </p>
             </div>
-            <Button href="/kontakt" variant="secondary">
-              {t("cta")}
-            </Button>
+            <div className="flex flex-col items-center md:items-end gap-2">
+              <Button href="/kontakt" variant="secondary">
+                {t("cta")}
+              </Button>
+              <p className="text-sm text-white/60">
+                {t("ctaMicroTrust")}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -158,29 +163,29 @@ export function Footer() {
               ))}
             </ul>
 
-            {/* Newsletter signup — coming soon */}
+            {/* Mini-CTA — Google Ads insights */}
             <div className="mt-6 pt-4 border-t border-gray-800">
               <h4 className="font-heading font-semibold text-sm text-gray-300 mb-2">
-                Newsletter
+                {t("insights.heading")}
               </h4>
-              <p className="text-gray-500 text-xs mb-2">
-                {t("sectionResources") === "Resursi"
-                  ? "Google Ads saveti, pravo u inbox."
-                  : "Google Ads tips, straight to your inbox."}
+              <p className="text-gray-500 text-xs mb-3">
+                {t("insights.description")}
               </p>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  disabled
-                  className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm text-gray-500 cursor-not-allowed"
-                />
-                <button
-                  disabled
-                  className="px-3 py-2 bg-gray-700 text-gray-500 rounded-md text-xs font-semibold cursor-not-allowed"
+              <div className="flex flex-col gap-1.5">
+                <Link
+                  href="/blog"
+                  className="text-sm text-gray-400 hover:text-white transition-colors"
                 >
-                  {t("sectionResources") === "Resursi" ? "Uskoro" : "Soon"}
-                </button>
+                  {t("insights.blogLink")}
+                </Link>
+                <a
+                  href="https://www.linkedin.com/in/slobodanjelisavac/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                  {t("insights.linkedinLink")}
+                </a>
               </div>
             </div>
           </div>
@@ -194,6 +199,12 @@ export function Footer() {
             <p>
               {t("copyright")}
             </p>
+            <Link
+              href="/privatnost"
+              className="hover:text-white transition-colors"
+            >
+              {t("privacyPolicy")}
+            </Link>
             <p className="md:flex-1 md:text-center">
               {t("partner")}{" "}
               <a

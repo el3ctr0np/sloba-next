@@ -70,6 +70,72 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         }
       ];
 
+  const processSteps = locale === "en"
+    ? [
+        {
+          number: 1,
+          title: "Trial/demo tracking",
+          description:
+            "Before any campaign changes, I set up tracking for the actions that actually matter — trial starts, demo bookings, and the events that precede a paid conversion."
+        },
+        {
+          number: 2,
+          title: "Attribution across a long cycle",
+          description:
+            "SaaS conversions often happen weeks after the first click, so attribution needs to account for the full trial or sales cycle, not just last-click data."
+        },
+        {
+          number: 3,
+          title: "Segmentation by plan",
+          description:
+            "Campaigns are segmented by the plan tier a lead is likely to land on, since a self-serve signup and an enterprise demo request have very different value and CAC tolerance."
+        },
+        {
+          number: 4,
+          title: "CAC:LTV monitoring",
+          description:
+            "Once trial-to-paid data starts flowing, I track CAC against LTV by campaign and keyword, not just at the account level."
+        },
+        {
+          number: 5,
+          title: "Optimization on CAC payback",
+          description:
+            "Budget shifts toward the campaigns with the fastest CAC payback period — the metric that actually determines whether growth is sustainable."
+        }
+      ]
+    : [
+        {
+          number: 1,
+          title: "Trial/demo tracking",
+          description:
+            "Pre bilo kakvih izmena u kampanjama, postavljam tracking za akcije koje su zaista bitne — trial start, demo booking i evente koji prethode plaćenoj konverziji."
+        },
+        {
+          number: 2,
+          title: "Atribucija kroz dug ciklus",
+          description:
+            "SaaS konverzije se često dešavaju nedeljama nakon prvog klika, pa atribucija mora da uzme u obzir ceo trial ili sales ciklus, ne samo last-click podatke."
+        },
+        {
+          number: 3,
+          title: "Segmentacija po planovima",
+          description:
+            "Kampanje se segmentiraju prema plan tier-u na koji lead verovatno spada, jer self-serve signup i enterprise demo zahtev imaju vrlo različitu vrednost i CAC toleranciju."
+        },
+        {
+          number: 4,
+          title: "CAC:LTV monitoring",
+          description:
+            "Kada trial-to-paid podaci počnu da pristižu, pratim CAC naspram LTV-a po kampanji i ključnoj reči, ne samo na nivou naloga."
+        },
+        {
+          number: 5,
+          title: "Optimizacija na CAC payback",
+          description:
+            "Budžet se pomera ka kampanjama sa najbržim CAC payback periodom — metrikom koja zaista određuje da li je rast održiv."
+        }
+      ];
+
   const idealClients = locale === "en"
     ? [
         "You have product-market fit (people pay and stay)",
@@ -573,6 +639,74 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         </div>
       </Section>
 
+      {/* Process — SaaS setup */}
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            {locale === "en" ? "SaaS setup process" : "SaaS setup proces"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {locale === "en"
+              ? "From trial/demo tracking to optimization on CAC payback — a 5-step process."
+              : "Od trial/demo trackinga do optimizacije na CAC payback — proces u 5 koraka."}
+          </p>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-4">
+            {processSteps.map((step, index) => (
+              <div
+                key={step.title}
+                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
+              >
+                <span
+                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
+                    index === processSteps.length - 1
+                      ? "bg-yellow-400 text-gray-900"
+                      : "bg-gray-900 text-white"
+                  }`}
+                >
+                  {step.number}
+                </span>
+                <div>
+                  <h3 className="font-heading font-semibold text-lg mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-base">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* CAC and LTV definition box */}
+      <Section background="gray">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white border-2 border-gray-200 rounded-xl p-6 md:p-8 shadow-card">
+            <h2 className="text-2xl font-heading font-bold mb-4">
+              {locale === "en"
+                ? "CAC and LTV in a Google Ads context"
+                : "CAC i LTV u Google Ads kontekstu"}
+            </h2>
+            <p className="text-gray-700 text-base leading-relaxed mb-3">
+              {locale === "en"
+                ? "CAC (Customer Acquisition Cost) is what it costs to turn a click into a paying customer, and LTV (Lifetime Value) is what that customer is worth over the full relationship. In Google Ads, every bid decision is really a bet on this ratio — if CAC creeps above what LTV supports, growth stops being profitable no matter how many trials you generate."
+                : "CAC (Customer Acquisition Cost) je trošak pretvaranja klika u plaćajućeg korisnika, a LTV (Lifetime Value) je vrednost tog korisnika tokom celog odnosa sa vama. U Google Ads-u je svaka odluka o bidu zapravo opklada na ovaj odnos — ako CAC prevaziđe ono što LTV podržava, rast prestaje da bude profitabilan bez obzira na broj generisanih trial-ova."}
+            </p>
+            <p className="text-gray-700 text-base leading-relaxed mb-4">
+              {locale === "en"
+                ? "The formula is straightforward: CAC = total acquisition cost / number of new customers. As a rule of thumb, a healthy LTV:CAC ratio target is 3:1 or higher — below that, the economics of paid acquisition become fragile."
+                : "Formula je jednostavna: CAC = ukupan trošak akvizicije / broj novih kupaca. Kao orijentir, zdrav cilj za LTV:CAC odnos je 3:1 ili viši — ispod toga, ekonomija paid acquisition-a postaje krhka."}
+            </p>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 font-mono text-sm text-gray-800">
+              CAC = {locale === "en" ? "total acquisition cost" : "ukupan trošak akvizicije"} / {locale === "en" ? "number of new customers" : "broj novih kupaca"}
+              <br />
+              LTV:CAC {locale === "en" ? "target" : "cilj"} = 3:1+
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Results Section */}
       <Section>
         <div className="text-center mb-10">
@@ -605,6 +739,18 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
               </ul>
             </Card>
           ))}
+        </div>
+        <div className="max-w-4xl mx-auto mt-8">
+          <Card className="h-full">
+            <h3 className="text-lg font-heading font-semibold mb-3 text-yellow-700">
+              {locale === "en" ? "HR Tech Startup — mini case" : "HR Tech Startup — mini case"}
+            </h3>
+            <p className="text-gray-600 text-base">
+              {locale === "en"
+                ? "This HR tech startup had demo request campaigns running, but CAC was climbing and there was no clear read on which channels produced demos that converted to paid seats. After tightening targeting toward higher-intent search terms and connecting demo-to-paid data back into the account, CAC dropped from $220 to $105 while qualified demo requests grew 180% — proof that a lower CAC and higher lead quality can move together when the account optimizes on the right signal."
+                : "Ovaj HR tech startup je imao demo request kampanje, ali CAC je rastao i nije bilo jasnog uvida u to koji kanali donose demo zahteve koji konvertuju u plaćene korisnike. Nakon sužavanja targetiranja ka high-intent search terminima i povezivanja demo-to-paid podataka nazad u nalog, CAC je pao sa EUR 200 na EUR 95, dok su kvalifikovani demo zahtevi porasli 180% — dokaz da niži CAC i veći kvalitet leadova mogu ići zajedno kada nalog optimizuje ka pravom signalu."}
+            </p>
+          </Card>
         </div>
         <div className="text-center mt-8">
           <Button href="/case-studies" variant="primary">

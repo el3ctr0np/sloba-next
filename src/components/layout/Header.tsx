@@ -65,28 +65,28 @@ export function Header() {
       title: t("serviceGroups.googleAds"),
       items: [
         { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" as const },
-        { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" as const },
-        { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" as const },
         { label: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
         { label: t("services.performanceMax"), href: "/usluge/performance-max" as const },
+        { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" as const },
         { label: t("services.remarketing"), href: "/usluge/remarketing" as const },
         { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" as const },
+        { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const },
+      ]
+    },
+    {
+      title: t("serviceGroups.strategySupport"),
+      items: [
+        { label: t("services.consultations"), href: "/usluge/konsultacije" as const },
+        { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" as const },
+        { label: t("services.starterPackage"), href: "/usluge/starter-paket" as const },
       ]
     },
     {
       title: t("serviceGroups.byIndustry"),
       items: [
-        { label: t("services.b2b"), href: "/usluge/google-ads-za-b2b" as const },
         { label: t("services.ecommerce"), href: "/usluge/google-ads-za-ecommerce" as const },
+        { label: t("services.b2b"), href: "/usluge/google-ads-za-b2b" as const },
         { label: t("services.saas"), href: "/usluge/google-ads-za-saas" as const },
-      ]
-    },
-    {
-      title: t("serviceGroups.other"),
-      items: [
-        { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const },
-        { label: t("services.consultations"), href: "/usluge/konsultacije" as const },
-        { label: t("services.starterPackage"), href: "/usluge/starter-paket" as const },
       ]
     }
   ], [t]);
@@ -215,6 +215,11 @@ export function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-200 py-4 px-4 max-h-[80vh] overflow-y-auto">
+            <div className="mb-4">
+              <Button href="/kontakt" variant="secondary" className="w-full text-center" ctaLocation="header_mobile_menu">
+                {t("cta")}
+              </Button>
+            </div>
             {navItems.map((item) => (
               <div key={item.label} className="py-2">
                 <Link
@@ -245,11 +250,6 @@ export function Header() {
                 )}
               </div>
             ))}
-            <div className="mt-4">
-              <Button href="/kontakt" variant="secondary" className="w-full text-center" ctaLocation="header_mobile_menu">
-                {t("cta")}
-              </Button>
-            </div>
             <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold border border-gray-300 rounded-full px-3 py-2">
               <Link
                 href={srHref}

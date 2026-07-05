@@ -78,6 +78,124 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     }
   ];
 
+  const processSteps = locale === "en" ? [
+    {
+      number: 1,
+      title: "CRM / lead-flow audit",
+      description:
+        "I review how leads currently move through your CRM, from first form fill to closed deal. This tells me what's actually trackable before we touch the account."
+    },
+    {
+      number: 2,
+      title: "MQL/SQL definitions",
+      description:
+        "Together we define what counts as a marketing-qualified and sales-qualified lead. Without this, Google Ads optimizes toward the wrong signal."
+    },
+    {
+      number: 3,
+      title: "Structure focused on lead quality",
+      description:
+        "Campaigns and ad groups are built around buyer intent, not just keyword volume. The goal is fewer, better leads - not the largest possible number of form fills."
+    },
+    {
+      number: 4,
+      title: "Offline conversion import",
+      description:
+        "Closed-deal data from HubSpot or Salesforce is imported back into Google Ads. This is what lets the bidding algorithm optimize toward revenue, not just form submissions."
+    },
+    {
+      number: 5,
+      title: "Optimization by closed deals",
+      description:
+        "Once offline conversions are flowing, budget shifts toward the keywords and campaigns that actually produce closed business - not the ones with the most clicks."
+    }
+  ] : [
+    {
+      number: 1,
+      title: "CRM / lead-flow audit",
+      description:
+        "Pregledam kako leadovi trenutno prolaze kroz vaš CRM, od prve prijave do zatvorenog posla. To mi govori šta je zaista merljivo pre nego što diramo nalog."
+    },
+    {
+      number: 2,
+      title: "MQL/SQL definicije",
+      description:
+        "Zajedno definišemo šta se računa kao marketing-qualified, a šta kao sales-qualified lead. Bez ovoga, Google Ads optimizuje ka pogrešnom signalu."
+    },
+    {
+      number: 3,
+      title: "Struktura fokusirana na kvalitet leadova",
+      description:
+        "Kampanje i ad grupe se grade oko namere kupca, ne samo oko volumena ključnih reči. Cilj je manje, ali kvalitetnijih leadova - ne najveći mogući broj prijava."
+    },
+    {
+      number: 4,
+      title: "Offline conversion import",
+      description:
+        "Podaci o zatvorenim poslovima iz HubSpot-a ili Salesforce-a se uvoze nazad u Google Ads. To omogućava bidding algoritmu da optimizuje ka prihodu, ne samo ka prijavama."
+    },
+    {
+      number: 5,
+      title: "Optimizacija po zatvorenim poslovima",
+      description:
+        "Kada offline konverzije počnu da pristižu, budžet se pomera ka ključnim rečima i kampanjama koje zaista donose zatvoren posao - ne onima sa najviše klikova."
+    }
+  ];
+
+  const b2bVsEcommerce = locale === "en" ? [
+    {
+      row: "Conversion goal",
+      b2b: "Qualified lead (demo, call, contact form)",
+      ecommerce: "Completed purchase"
+    },
+    {
+      row: "Sales cycle",
+      b2b: "Weeks to months, multiple decision makers",
+      ecommerce: "Minutes to days, usually one decision maker"
+    },
+    {
+      row: "Tracking",
+      b2b: "CRM integration + offline conversion import",
+      ecommerce: "GA4 purchase events, feed-based tracking"
+    },
+    {
+      row: "Success metric",
+      b2b: "CPA per qualified lead, closed-deal rate",
+      ecommerce: "ROAS / POAS"
+    },
+    {
+      row: "Typical budget",
+      b2b: "From $10,000/month ad spend",
+      ecommerce: "From $10,000/month ad spend, scales with catalog size"
+    }
+  ] : [
+    {
+      row: "Cilj konverzije",
+      b2b: "Kvalifikovan lead (demo, poziv, kontakt forma)",
+      ecommerce: "Završena kupovina"
+    },
+    {
+      row: "Sales cycle",
+      b2b: "Nedelje do meseci, više decision maker-a",
+      ecommerce: "Minuti do dana, obično jedan decision maker"
+    },
+    {
+      row: "Tracking",
+      b2b: "CRM integracija + offline conversion import",
+      ecommerce: "GA4 purchase eventi, feed-based tracking"
+    },
+    {
+      row: "Metrika uspeha",
+      b2b: "CPA po kvalifikovanom leadu, stopa zatvorenih poslova",
+      ecommerce: "ROAS / POAS"
+    },
+    {
+      row: "Tipičan budžet",
+      b2b: "Od €1.500/mesečno ad spend-a",
+      ecommerce: "Od €1.500/mesečno ad spend-a, raste sa veličinom kataloga"
+    }
+  ];
+
   const idealClients = locale === "en" ? [
     "You have a defined sales process and use CRM",
     "Focused on lead generation (demos, contact forms, calls)",
@@ -450,7 +568,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            {locale === "en" ? "Who is B2B Google Ads service for" : "Za kogo je B2B Google Ads usluga"}
+            {locale === "en" ? "Who is B2B Google Ads service for" : "Za koga je B2B Google Ads usluga"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
@@ -481,6 +599,83 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
         </div>
       </Section>
 
+      {/* Process — how B2B setup works */}
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+            {locale === "en" ? "What a B2B setup looks like" : "Kako izgleda B2B setup"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {locale === "en"
+              ? "From CRM audit to optimization by closed deals — a 5-step process."
+              : "Od CRM audita do optimizacije po zatvorenim poslovima — proces u 5 koraka."}
+          </p>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-4">
+            {processSteps.map((step, index) => (
+              <div
+                key={step.title}
+                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
+              >
+                <span
+                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
+                    index === processSteps.length - 1
+                      ? "bg-yellow-400 text-gray-900"
+                      : "bg-gray-900 text-white"
+                  }`}
+                >
+                  {step.number}
+                </span>
+                <div>
+                  <h3 className="font-heading font-semibold text-lg mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-base">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* B2B vs eCommerce comparison table */}
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+            {locale === "en" ? "B2B vs eCommerce Google Ads" : "B2B vs eCommerce Google Ads"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {locale === "en"
+              ? "The two approaches optimize toward fundamentally different signals."
+              : "Dva pristupa optimizuju ka fundamentalno različitim signalima."}
+          </p>
+        </div>
+        <div className="max-w-4xl mx-auto overflow-x-auto">
+          <table className="w-full border-collapse bg-white rounded-xl shadow-card overflow-hidden">
+            <thead>
+              <tr className="bg-gray-900 text-white">
+                <th className="text-left p-4 font-heading font-semibold"></th>
+                <th className="text-left p-4 font-heading font-semibold">B2B</th>
+                <th className="text-left p-4 font-heading font-semibold">eCommerce</th>
+              </tr>
+            </thead>
+            <tbody>
+              {b2bVsEcommerce.map((row, index) => (
+                <tr
+                  key={row.row}
+                  className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                >
+                  <td className="p-4 font-semibold text-gray-900 align-top">{row.row}</td>
+                  <td className="p-4 text-gray-600 align-top">{row.b2b}</td>
+                  <td className="p-4 text-gray-600 align-top">{row.ecommerce}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Section>
+
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
@@ -508,6 +703,18 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
               </ul>
             </Card>
           ))}
+        </div>
+        <div className="max-w-4xl mx-auto mt-8">
+          <Card className="h-full">
+            <h3 className="text-lg font-heading font-semibold mb-3 text-gray-900">
+              {locale === "en" ? "SaaS Company (Germany) — mini case" : "SaaS Company (Nemačka) — mini case"}
+            </h3>
+            <p className="text-gray-600 text-base">
+              {locale === "en"
+                ? "This B2B SaaS company was generating demo requests, but had no visibility into which campaigns produced leads that actually turned into sales conversations. I restructured the account around demo-request campaigns with tighter targeting and connected downstream CRM data back into Google Ads. The result was a $95 CPA against an industry average of $150+ — a direct outcome of optimizing for lead quality rather than raw form-fill volume."
+                : "Ova B2B SaaS kompanija je generisala demo zahteve, ali nije imala uvid u to koje kampanje donose leadove koji zaista postaju sales razgovori. Restruktuirao sam nalog oko demo-request kampanja sa užim targetiranjem i povezao downstream CRM podatke nazad u Google Ads. Rezultat je bio EUR 85 CPA naspram industrijskog proseka od EUR 140+ — direktna posledica optimizacije ka kvalitetu leadova, a ne ka golom broju prijava."}
+            </p>
+          </Card>
         </div>
         <div className="text-center mt-8">
           <Button href="/case-studies" variant="primary">

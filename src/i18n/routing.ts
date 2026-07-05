@@ -92,6 +92,12 @@ export const routing = defineRouting({
       en: "/glossary"
     },
 
+    // Privacy Policy
+    "/privatnost": {
+      sr: "/privatnost",
+      en: "/privacy"
+    },
+
     // Video Audit (free for qualified prospects)
     "/audit": {
       sr: "/audit",

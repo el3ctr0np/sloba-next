@@ -9,15 +9,15 @@
       "contact": "Contact",
       "glossary": "Glossary"
     },
-    "cta": "Book a Consultation",
+    "cta": "Book a Consultation →",
     "serviceGroups": {
-      "googleAds": "Google Ads",
-      "byIndustry": "By Industry",
-      "other": "Other Services"
+      "googleAds": "Campaign management",
+      "strategySupport": "Strategy & support",
+      "byIndustry": "By industry"
     },
     "services": {
       "googleAdsManagement": "Google Ads Management",
-      "googleAdsAudit": "Google Ads Audit",
+      "googleAdsAudit": "Deep Audit",
       "searchCampaigns": "Search Campaigns",
       "googleShopping": "Google Shopping",
       "performanceMax": "Performance Max",
@@ -36,13 +36,17 @@
     "ctaHeading": "Ready to improve your Google Ads results?",
     "ctaDescription": "20 minutes. I'll tell you if I can help — and if I can't.",
     "cta": "Book a Consultation",
+    "ctaMicroTrust": "Free · No commitment · Reply within 24h",
     "brandDescription": "Google Ads Consultant with 10+ years of experience. 50+ brands across 6+ countries.",
     "location": "Belgrade, Serbia",
     "sectionServices": "Services",
     "sectionIndustries": "By Industry",
     "sectionResources": "Resources",
+    "privacyPolicy": "Privacy Policy",
     "services": {
       "googleAdsManagement": "Google Ads Management",
+      "starterPackage": "Kickstart",
+      "consultations": "Consultations",
       "googleAdsAudit": "Google Ads Audit",
       "googleShopping": "Google Shopping",
       "performanceMax": "Performance Max",
@@ -54,9 +58,7 @@
     "industries": {
       "ecommerce": "Google Ads for eCommerce",
       "b2b": "Google Ads for B2B",
-      "saas": "Google Ads for SaaS",
-      "starterPackage": "Kickstart",
-      "consultations": "Consultations"
+      "saas": "Google Ads for SaaS"
     },
     "resources": {
       "blog": "Blog / Google Ads Guide",
@@ -64,6 +66,12 @@
       "glossary": "PPC Glossary",
       "about": "About",
       "contact": "Contact"
+    },
+    "insights": {
+      "heading": "Google Ads insights",
+      "description": "Practical insights from real accounts — on the blog and LinkedIn.",
+      "blogLink": "Blog →",
+      "linkedinLink": "LinkedIn →"
     },
     "copyright": "© 2026 Slobodan Jelisavac. All rights reserved.",
     "partner": "Partner @",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { GlossaryLink } from "@/components/GlossaryLink";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -159,6 +160,104 @@ export default async function SearchKampanjePage({ params }: Props) {
     {
       title: "High-Intent / Bottom Funnel",
       description: "Ključne reči sa jasnom kupovnom namerom."
+    }
+  ];
+
+  const processSteps = locale === "en" ? [
+    {
+      number: 1,
+      title: "Keyword research + match type strategy",
+      description:
+        "I map every keyword to search intent and choose the right match type from the start. This keeps early spend focused on the searches most likely to convert."
+    },
+    {
+      number: 2,
+      title: "Structure",
+      description:
+        "Keywords are grouped into tightly themed ad groups of 20-50 words each. Tighter themes mean more relevant ads and a healthier Quality Score."
+    },
+    {
+      number: 3,
+      title: "RSA copy + extensions",
+      description:
+        "Responsive Search Ads are written around each ad group's theme, and extensions (sitelinks, callouts, structured snippets) are added to increase ad real estate. This combination drives higher CTR without changing bids."
+    },
+    {
+      number: 4,
+      title: "Tracking verification before launch",
+      description:
+        "Before a single euro is spent, conversion tracking is tested end-to-end. Campaigns don't go live until I can confirm the data feeding the bidding algorithm is accurate."
+    },
+    {
+      number: 5,
+      title: "Weekly optimization",
+      description:
+        "Search terms reports, negative keyword additions, and bid adjustments happen weekly, not monthly. This is what keeps CPC and Quality Score moving in the right direction over time."
+    }
+  ] : [
+    {
+      number: 1,
+      title: "Keyword research + match type strategija",
+      description:
+        "Svaku ključnu reč mapiram na search intent i biram odgovarajući match type od početka. Tako je rani budžet fokusiran na pretrage koje najverovatnije konvertuju."
+    },
+    {
+      number: 2,
+      title: "Struktura",
+      description:
+        "Ključne reči grupišem u tematske ad grupe od po 20-50 reči. Uže teme znače relevantnije oglase i zdraviji Quality Score."
+    },
+    {
+      number: 3,
+      title: "RSA copy + ekstenzije",
+      description:
+        "Responsive Search Ads oglasi se pišu prema temi svake ad grupe, a ekstenzije (sitelinks, callouts, structured snippets) se dodaju da povećaju prostor oglasa. Ova kombinacija podiže CTR bez menjanja bidova."
+    },
+    {
+      number: 4,
+      title: "Tracking verifikacija pre launcha",
+      description:
+        "Pre nego što se potroši prvi euro, conversion tracking se testira od početka do kraja. Kampanje ne idu u live dok ne potvrdim da su podaci koji hrane bidding algoritam tačni."
+    },
+    {
+      number: 5,
+      title: "Nedeljna optimizacija",
+      description:
+        "Search terms izveštaji, dodavanje negativnih ključnih reči i bid adjustments rade se nedeljno, ne mesečno. To je ono što drži CPC i Quality Score u dobrom pravcu tokom vremena."
+    }
+  ];
+
+  const matchTypes = locale === "en" ? [
+    {
+      type: "Exact",
+      how: "Ad shows only for the exact term or very close variants (same meaning, different word order or minor variation).",
+      when: "For proven, high-intent keywords where you want maximum control over spend and relevance."
+    },
+    {
+      type: "Phrase",
+      how: "Ad shows for searches that include the meaning of your keyword phrase, with words potentially added before or after.",
+      when: "For expanding reach around a validated core term while still keeping the main intent intact."
+    },
+    {
+      type: "Broad",
+      how: "Ad shows for searches related to your keyword's meaning, decided by Google's algorithm - the widest and least controlled option.",
+      when: "Only with a clean conversion signal in place and a full layer of negative lists - otherwise it burns budget on irrelevant traffic."
+    }
+  ] : [
+    {
+      type: "Exact",
+      how: "Oglas se prikazuje samo za tačan termin ili vrlo bliske varijante (isto značenje, drugačiji redosled reči ili manja varijacija).",
+      when: "Za proverene, high-intent ključne reči gde želite maksimalnu kontrolu nad potrošnjom i relevantnošću."
+    },
+    {
+      type: "Phrase",
+      how: "Oglas se prikazuje za pretrage koje sadrže značenje vaše fraze, sa mogućim dodatnim rečima pre ili posle.",
+      when: "Za širenje dosega oko proverenog osnovnog termina uz zadržavanje glavnog intenta."
+    },
+    {
+      type: "Broad",
+      how: "Oglas se prikazuje za pretrage povezane sa značenjem ključne reči, po odluci Google algoritma - najširi i najmanje kontrolisan tip.",
+      when: "Samo uz čist conversion signal i pun negative lists sloj - u suprotnom troši budžet na irelevantan saobraćaj."
     }
   ];
 
@@ -565,6 +664,147 @@ export default async function SearchKampanjePage({ params }: Props) {
               <p className="text-gray-600">{campaign.description}</p>
             </Card>
           ))}
+        </div>
+      </Section>
+
+      {/* Process — how I run Search campaigns */}
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            {locale === "en" ? "How I run Search campaigns" : "Kako radim Search kampanje"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {locale === "en"
+              ? "A consistent 5-step process from keyword research to weekly optimization."
+              : "Dosledan proces u 5 koraka, od keyword istraživanja do nedeljne optimizacije."}
+          </p>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-4">
+            {processSteps.map((step, index) => (
+              <div
+                key={step.title}
+                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
+              >
+                <span
+                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
+                    index === processSteps.length - 1
+                      ? "bg-yellow-400 text-gray-900"
+                      : "bg-gray-900 text-white"
+                  }`}
+                >
+                  {step.number}
+                </span>
+                <div>
+                  <h3 className="font-heading font-semibold text-lg mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-base">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* Match type comparison table */}
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            {locale === "en" ? "Match type comparison" : "Match type poređenje"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {locale === "en" ? (
+              <>
+                Choosing the right{" "}
+                <GlossaryLink slug="match-types">match type</GlossaryLink>{" "}
+                determines how much control you have over spend and relevance.
+              </>
+            ) : (
+              <>
+                Izbor pravog{" "}
+                <GlossaryLink slug="match-types">match type-a</GlossaryLink>{" "}
+                određuje koliko kontrole imate nad potrošnjom i relevantnošću.
+              </>
+            )}
+          </p>
+        </div>
+        <div className="max-w-4xl mx-auto overflow-x-auto">
+          <table className="w-full border-collapse bg-white rounded-xl shadow-card overflow-hidden">
+            <thead>
+              <tr className="bg-gray-900 text-white">
+                <th className="text-left p-4 font-heading font-semibold">
+                  {locale === "en" ? "Match type" : "Match type"}
+                </th>
+                <th className="text-left p-4 font-heading font-semibold">
+                  {locale === "en" ? "How it works" : "Kako radi"}
+                </th>
+                <th className="text-left p-4 font-heading font-semibold">
+                  {locale === "en" ? "When I use it" : "Kada ga koristim"}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {matchTypes.map((row, index) => (
+                <tr
+                  key={row.type}
+                  className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                >
+                  <td className="p-4 font-semibold text-gray-900 align-top">
+                    <GlossaryLink slug={row.type.toLowerCase() === "broad" ? "broad-match" : row.type.toLowerCase() === "phrase" ? "phrase-match" : "exact-match"}>
+                      {row.type}
+                    </GlossaryLink>
+                  </td>
+                  <td className="p-4 text-gray-600 align-top">{row.how}</td>
+                  <td className="p-4 text-gray-600 align-top">{row.when}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Section>
+
+      {/* Pricing mini-card */}
+      <Section>
+        <div className="max-w-3xl mx-auto">
+          <Card className="h-full">
+            <h3 className="text-lg font-heading font-semibold mb-3">
+              {locale === "en" ? "Search campaigns pricing" : "Cena Search kampanja"}
+            </h3>
+            <ul className="space-y-2 text-gray-700 text-base">
+              <li className="flex items-start gap-2">
+                <span className="text-green-600 mt-0.5 flex-shrink-0">✓</span>
+                {locale === "en"
+                  ? "As a standalone channel — from $500/month ad budget"
+                  : "Kao samostalan kanal — od €500/mes budžeta"}
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-600 mt-0.5 flex-shrink-0">✓</span>
+                {locale === "en"
+                  ? "As part of full management — from $2,500/mo"
+                  : "U okviru upravljanja — od €700/mes"}
+              </li>
+            </ul>
+            <p className="text-base text-gray-500 mt-4">
+              {locale === "en" ? (
+                <>
+                  See full pricing on the{" "}
+                  <Link href="/usluge/google-ads-upravljanje" className="text-primary underline">
+                    Google Ads management
+                  </Link>{" "}
+                  page.
+                </>
+              ) : (
+                <>
+                  Kompletan cenovnik na{" "}
+                  <Link href="/usluge/google-ads-upravljanje" className="text-primary underline">
+                    Google Ads upravljanje
+                  </Link>{" "}
+                  strani.
+                </>
+              )}
+            </p>
+          </Card>
         </div>
       </Section>
 

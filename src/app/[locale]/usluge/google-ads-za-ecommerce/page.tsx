@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { GlossaryLink } from "@/components/GlossaryLink";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -79,6 +80,116 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
             "Veliki retaileri dominiraju aukcijom, pa je potrebna pametna strategija."
         }
       ];
+
+  const processSteps = locale === "en"
+    ? [
+        {
+          number: 1,
+          title: "Feed audit",
+          description:
+            "I review titles, attributes, categories, and image quality against Google Merchant Center requirements. Most Shopping underperformance traces back to feed issues, not bidding."
+        },
+        {
+          number: 2,
+          title: "Shopping/PMax/Search structure",
+          description:
+            "Campaigns are structured across Shopping, Performance Max, and Search based on where each product sits in its lifecycle and margin profile."
+        },
+        {
+          number: 3,
+          title: "Seasonal strategy + custom labels",
+          description:
+            "Custom labels segment products by margin, season, and performance tier, so budget and bids can be adjusted at the segment level rather than the whole catalog."
+        },
+        {
+          number: 4,
+          title: "ROAS/POAS tracking",
+          description:
+            "Conversion tracking is set up to capture margin data where possible, not just revenue - this is what makes POAS optimization possible."
+        },
+        {
+          number: 5,
+          title: "Optimization on margin",
+          description:
+            "Ongoing optimization prioritizes the products and campaigns that protect margin, not just the ones with the highest raw revenue."
+        }
+      ]
+    : [
+        {
+          number: 1,
+          title: "Feed audit",
+          description:
+            "Pregledam naslove, atribute, kategorije i kvalitet slika u odnosu na Google Merchant Center zahteve. Najveći deo slabog Shopping učinka vuče koren iz feed-a, ne iz bidovanja."
+        },
+        {
+          number: 2,
+          title: "Struktura Shopping/PMax/Search",
+          description:
+            "Kampanje se strukturiraju kroz Shopping, Performance Max i Search u zavisnosti od toga gde se proizvod nalazi u životnom ciklusu i profilu marže."
+        },
+        {
+          number: 3,
+          title: "Sezonska strategija + custom labels",
+          description:
+            "Custom labels segmentiraju proizvode po marži, sezoni i performance tier-u, tako da se budžet i bidovi mogu prilagoditi na nivou segmenta, ne celog kataloga."
+        },
+        {
+          number: 4,
+          title: "ROAS/POAS tracking",
+          description:
+            "Conversion tracking se podešava da hvata podatke o marži gde je moguće, ne samo prihod - to je ono što omogućava POAS optimizaciju."
+        },
+        {
+          number: 5,
+          title: "Optimizacija marži",
+          description:
+            "Kontinuirana optimizacija prioritizuje proizvode i kampanje koje čuvaju maržu, ne samo one sa najvećim golim prihodom."
+        }
+      ];
+
+  const roasVsPoas = locale === "en" ? [
+    {
+      row: "What it measures",
+      roas: "Revenue generated per unit of ad spend",
+      poas: "Profit generated per unit of ad spend"
+    },
+    {
+      row: "Formula",
+      roas: "Revenue / Ad spend",
+      poas: "(Revenue − COGS − costs) / Ad spend"
+    },
+    {
+      row: "When it's enough",
+      roas: "Early-stage accounts with uniform margins across the catalog",
+      poas: "Catalogs with mixed margins, bundles, or discounting"
+    },
+    {
+      row: "Why POAS",
+      roas: "Simple, but blind to margin differences between products",
+      poas: "Optimizes toward what the business actually keeps, not just top-line revenue"
+    }
+  ] : [
+    {
+      row: "Šta meri",
+      roas: "Prihod ostvaren po jedinici uloženog u oglase",
+      poas: "Profit ostvaren po jedinici uloženog u oglase"
+    },
+    {
+      row: "Formula",
+      roas: "Prihod / Ad spend",
+      poas: "(Prihod − nabavna cena − troškovi) / Ad spend"
+    },
+    {
+      row: "Kada je dovoljan",
+      roas: "Rani nalozi sa ujednačenim maržama kroz ceo katalog",
+      poas: "Katalozi sa različitim maržama, bundle proizvodima ili popustima"
+    },
+    {
+      row: "Zašto POAS",
+      roas: "Jednostavan, ali slep za razlike u marži između proizvoda",
+      poas: "Optimizuje ka onome što biznis zaista zadrži, ne samo ka golom prihodu"
+    }
+  ];
 
   const idealClients = locale === "en"
     ? [
@@ -521,6 +632,97 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         </div>
       </Section>
 
+      {/* Process — eCommerce setup */}
+      <Section>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+            {locale === "en" ? "eCommerce setup process" : "eCommerce setup proces"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {locale === "en"
+              ? "From feed audit to margin-based optimization — a 5-step process."
+              : "Od feed audita do optimizacije po marži — proces u 5 koraka."}
+          </p>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-4">
+            {processSteps.map((step, index) => (
+              <div
+                key={step.title}
+                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
+              >
+                <span
+                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
+                    index === processSteps.length - 1
+                      ? "bg-yellow-400 text-gray-900"
+                      : "bg-gray-900 text-white"
+                  }`}
+                >
+                  {step.number}
+                </span>
+                <div>
+                  <h3 className="font-heading font-semibold text-lg mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-base">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* ROAS vs POAS comparison table */}
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+            {locale === "en" ? "ROAS vs POAS" : "ROAS vs POAS"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {locale === "en" ? (
+              <>
+                <GlossaryLink slug="roas">ROAS</GlossaryLink> and{" "}
+                <GlossaryLink slug="poas">POAS</GlossaryLink> answer different
+                questions — one measures revenue, the other measures profit.
+              </>
+            ) : (
+              <>
+                <GlossaryLink slug="roas">ROAS</GlossaryLink> i{" "}
+                <GlossaryLink slug="poas">POAS</GlossaryLink> odgovaraju na
+                različita pitanja — jedan meri prihod, drugi meri profit.
+              </>
+            )}
+          </p>
+        </div>
+        <div className="max-w-4xl mx-auto overflow-x-auto">
+          <table className="w-full border-collapse bg-white rounded-xl shadow-card overflow-hidden">
+            <thead>
+              <tr className="bg-gray-900 text-white">
+                <th className="text-left p-4 font-heading font-semibold"></th>
+                <th className="text-left p-4 font-heading font-semibold">
+                  <GlossaryLink slug="roas" className="text-white border-white/40 hover:border-white">ROAS</GlossaryLink>
+                </th>
+                <th className="text-left p-4 font-heading font-semibold">
+                  <GlossaryLink slug="poas" className="text-white border-white/40 hover:border-white">POAS</GlossaryLink>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {roasVsPoas.map((row, index) => (
+                <tr
+                  key={row.row}
+                  className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                >
+                  <td className="p-4 font-semibold text-gray-900 align-top">{row.row}</td>
+                  <td className="p-4 text-gray-600 align-top">{row.roas}</td>
+                  <td className="p-4 text-gray-600 align-top">{row.poas}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Section>
+
       <Section>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
@@ -550,6 +752,24 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
               </ul>
             </Card>
           ))}
+        </div>
+        <div className="max-w-5xl mx-auto mt-8">
+          <Card className="h-full">
+            <h3 className="text-lg font-heading font-semibold mb-3 text-gray-900">
+              {locale === "en" ? "Mobelaris — mini case" : "Mobelaris — mini case"}
+            </h3>
+            <p className="text-gray-600 text-base">
+              {locale === "en"
+                ? "Mobelaris, a luxury furniture eCommerce brand, came in with an ROI of only 1.8x on a €30k monthly budget spread across 300+ overlapping campaigns. The account was consolidated to 90 campaigns and rebuilt around server-side profit tracking rather than raw revenue, using broad match combined with Performance Max to give visually strong products the display placements they needed. Over the course of a 2-3 year partnership, ROI moved from 1.8x to 3.7x while the monthly budget scaled from €30k to €85k."
+                : "Mobelaris, eCommerce brend luksuznog nameštaja, došao je sa ROI-jem od svega 1.8x na mesečnom budžetu od €30k, raspoređenom kroz 300+ preklapajućih kampanja. Nalog je konsolidovan na 90 kampanja i rekonstruisan oko server-side tracking-a profita umesto golog prihoda, uz broad match kombinovan sa Performance Max-om koji je vizuelno jakim proizvodima dao display prikaz koji im je bio potreban. Tokom 2-3 godine saradnje, ROI je porastao sa 1.8x na 3.7x, dok je mesečni budžet skaliran sa €30k na €85k."}
+            </p>
+            <Link
+              href={{ pathname: "/case-studies/[slug]", params: { slug: "mobelaris" } }}
+              className="text-primary underline text-sm mt-3 inline-block"
+            >
+              {locale === "en" ? "Read the full Mobelaris case study →" : "Pročitajte kompletnu Mobelaris studiju slučaja →"}
+            </Link>
+          </Card>
         </div>
         <div className="text-center mt-10">
           <Button href="/case-studies" variant="primary">
