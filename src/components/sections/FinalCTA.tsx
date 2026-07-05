@@ -15,10 +15,10 @@ export function FinalCTA() {
           {t("description")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/kontakt" variant="secondary">
+          <Button href="/kontakt" variant="secondary" ctaLocation="final_cta_primary">
             {t("cta")}
           </Button>
-          <Button href="/usluge" variant="primary">
+          <Button href="/usluge" variant="primary" ctaLocation="final_cta_secondary">
             {t("secondaryCta")}
           </Button>
         </div>

@@ -244,26 +244,23 @@ export default async function ThankYouPage({ params }: Props) {
 
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
               {locale === "en"
-                ? "Book Your Free Google Ads Strategy Call"
-                : "Zakažite vaš besplatni Google Ads Strategy Call"}
+                ? "Thanks — Your Message Is In"
+                : "Hvala — vaša poruka je stigla"}
             </h1>
 
             <p className="text-lg text-slate-300 mb-8">
               {locale === "en"
-                ? "We received your inquiry — I'll respond within 24h. To speed things up, book a slot now."
-                : "Primili smo vaš upit — javim se u roku od 24h. Ali ako želite da ubrzate proces, zakažite termin odmah i preskočite čekanje."}
+                ? "I'll get back to you within 24h (weekdays). In the meantime:"
+                : "Javljam se u roku od 24h (radnim danima). U međuvremenu:"}
             </p>
 
-            {/* Primary CTA - Calendar booking */}
+            {/* Primary CTAs - honest, no fake booking link */}
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              {/* TODO: Replace with actual Calendly/Cal.com link */}
-              <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a Slot Now" : "Zakažite termin odmah"}
+              <Button href="/case-studies" variant="secondary">
+                {locale === "en" ? "See Case Studies" : "Pogledajte case studies"}
               </Button>
-              <Button href="/case-studies" variant="primary">
-                {locale === "en"
-                  ? "View Results While You Wait"
-                  : "Pogledajte rezultate dok čekate"}
+              <Button href="/blog" variant="primary">
+                {locale === "en" ? "Read the Blog" : "Pročitajte blog"}
               </Button>
             </div>
 
@@ -448,18 +445,20 @@ export default async function ThankYouPage({ params }: Props) {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4 text-white">
             {locale === "en"
-              ? "Don't wait — book a slot now"
-              : "Ne čekajte — zakažite termin odmah"}
+              ? "While You Wait for My Reply"
+              : "Dok čekate moj odgovor"}
           </h2>
           <p className="text-slate-300 mb-8">
             {locale === "en"
-              ? "Every day without optimization is wasted budget. Book a free call and get a clear plan for your campaigns."
-              : "Svaki dan bez optimizacije je propušten budžet. Zakažite besplatan poziv i dobijte jasan plan za vaše kampanje."}
+              ? "I'll get back to you within 24h (weekdays). In the meantime, take a look at real results and recent thinking."
+              : "Javljam se u roku od 24h (radnim danima). U međuvremenu, pogledajte stvarne rezultate i najnovije tekstove."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* TODO: Replace with actual Calendly/Cal.com link */}
-            <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a Slot Now" : "Zakažite termin odmah"}
+            <Button href="/case-studies" variant="secondary">
+              {locale === "en" ? "See Case Studies" : "Pogledajte case studies"}
+            </Button>
+            <Button href="/blog" variant="primary">
+              {locale === "en" ? "Read the Blog" : "Pročitajte blog"}
             </Button>
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">

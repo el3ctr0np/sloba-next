@@ -11,11 +11,14 @@ import { useEffect } from "react";
  *
  * Dedup pattern (sessionStorage):
  *   - MultiStepForm sets `dj_lead_pending=1` + `dj_lead_tier=<tier>` on submit success
- *   - This component reads tier, fires lead_confirmed once per session, sets
- *     `dj_lead_confirmed_fired=1` flag to prevent double-fire on hvala refresh
+ *   - ContactForm sets `dj_lead_pending=1` + `dj_lead_form=contact_form` + `dj_lead_budget=<budget>`
+ *   - AuditForm sets `dj_lead_pending=1` + `dj_lead_form=audit_form` + `dj_lead_ad_spend=<spend>`
+ *   - This component reads whichever markers are present, fires lead_confirmed
+ *     once per session, and sets `dj_lead_confirmed_fired=1` to prevent
+ *     double-fire on hvala refresh
  *   - If user lands on hvala WITHOUT pending flag (direct hit, refresh later, bookmark),
- *     still fires lead_confirmed once with tier=unknown — captures organic conversions
- *     without losing them
+ *     still fires lead_confirmed once with fallback "unknown" values — captures
+ *     organic conversions without losing them
  */
 export default function LeadConfirmedTracker() {
   useEffect(() => {
@@ -30,11 +33,17 @@ export default function LeadConfirmedTracker() {
     }
     if (alreadyFired) return;
 
-    // Read tier stashed by MultiStepForm (if available)
+    // Read markers stashed by MultiStepForm / ContactForm / AuditForm (if available)
     let leadTier = "unknown";
+    let leadForm = "unknown";
+    let leadBudget = "unknown";
+    let leadAdSpend = "unknown";
     let isPending = false;
     try {
       leadTier = sessionStorage.getItem("dj_lead_tier") || "unknown";
+      leadForm = sessionStorage.getItem("dj_lead_form") || "unknown";
+      leadBudget = sessionStorage.getItem("dj_lead_budget") || "unknown";
+      leadAdSpend = sessionStorage.getItem("dj_lead_ad_spend") || "unknown";
       isPending = sessionStorage.getItem("dj_lead_pending") === "1";
     } catch {
       // ignore
@@ -46,17 +55,21 @@ export default function LeadConfirmedTracker() {
     w.dataLayer = w.dataLayer || [];
     w.dataLayer.push({
       event: "lead_confirmed",
-      form_name: "multistep_lp_google_ads",
+      form_name: leadForm !== "unknown" ? leadForm : "multistep_lp_google_ads",
       lead_tier: leadTier,
+      lead_form: leadForm,
+      lead_budget: leadBudget,
+      lead_ad_spend: leadAdSpend,
       // false = direct/refresh hit (organic), true = arrived via form submit redirect
       from_form_submit: isPending,
     });
 
-    // Set dedup flag and clean up tier/pending markers
+    // Set dedup flag and clean up pending/form markers
     try {
       sessionStorage.setItem("dj_lead_confirmed_fired", "1");
       sessionStorage.removeItem("dj_lead_pending");
-      // keep dj_lead_tier in case page is reopened in same session — harmless
+      // keep dj_lead_tier/dj_lead_form/dj_lead_budget/dj_lead_ad_spend in case
+      // page is reopened in same session — harmless
     } catch {
       // ignore
     }

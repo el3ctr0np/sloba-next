@@ -7,6 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { Button } from "@/components/ui";
 import { getAlternateSlug } from "@/app/[locale]/blog/[slug]/posts/slug-map";
+import { trackCtaClick } from "@/lib/track";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -183,7 +184,7 @@ export function Header() {
                 EN
               </Link>
             </div>
-            <Button href="/kontakt" variant="secondary">
+            <Button href="/kontakt" variant="secondary" ctaLocation="header_desktop">
               {t("cta")}
             </Button>
           </div>
@@ -192,6 +193,7 @@ export function Header() {
           <div className="lg:hidden flex items-center gap-2">
             <Link
               href="/kontakt"
+              onClick={() => trackCtaClick("header_mobile", "/kontakt")}
               className="bg-accent text-gray-900 px-3 py-2 rounded-lg text-xs font-semibold transition-all duration-200 hover:brightness-105 hover:shadow-md hover:-translate-y-0.5"
             >
               {locale === "sr" ? "Zakažite konsultaciju" : "Book a Call"}
@@ -244,7 +246,7 @@ export function Header() {
               </div>
             ))}
             <div className="mt-4">
-              <Button href="/kontakt" variant="secondary" className="w-full text-center">
+              <Button href="/kontakt" variant="secondary" className="w-full text-center" ctaLocation="header_mobile_menu">
                 {t("cta")}
               </Button>
             </div>
