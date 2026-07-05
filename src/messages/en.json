@@ -18,11 +18,7 @@
     "services": {
       "googleAdsManagement": "Google Ads Management",
       "googleAdsAudit": "Deep Audit",
-      "searchCampaigns": "Search Campaigns",
       "googleShopping": "Google Shopping",
-      "performanceMax": "Performance Max",
-      "remarketing": "Remarketing",
-      "youtubeAds": "YouTube Ads",
       "b2b": "Google Ads for B2B",
       "ecommerce": "Google Ads for eCommerce",
       "saas": "Google Ads for SaaS",
@@ -30,7 +26,11 @@
       "consultations": "Consultations",
       "starterPackage": "Kickstart"
     },
-    "allServices": "All services →"
+    "allServices": "All services →",
+    "trustBar": {
+      "full": "10+ years of experience · 3x UK Search Awards · 50+ brands across 6+ countries",
+      "short": "10+ years · 3x UK Search Awards"
+    }
   },
   "Footer": {
     "ctaHeading": "Ready to improve your Google Ads results?",
@@ -42,6 +42,7 @@
     "sectionServices": "Services",
     "sectionIndustries": "By Industry",
     "sectionResources": "Resources",
+    "trustLine": "Trusted by 50+ brands across 6+ countries",
     "privacyPolicy": "Privacy Policy",
     "services": {
       "googleAdsManagement": "Google Ads Management",
@@ -151,5 +152,11 @@
     "readMore": "Learn more",
     "viewAll": "View all",
     "bookConsultation": "Book a Free Consultation"
+  },
+  "ConsentBanner": {
+    "message": "We use cookies for analytics and ad measurement. Details in our",
+    "linkLabel": "Privacy Policy",
+    "accept": "Accept",
+    "essentialOnly": "Essential only"
   }
 }

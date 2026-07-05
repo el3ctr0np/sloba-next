@@ -66,10 +66,6 @@ export function Header() {
       items: [
         { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" as const },
         { label: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
-        { label: t("services.performanceMax"), href: "/usluge/performance-max" as const },
-        { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" as const },
-        { label: t("services.remarketing"), href: "/usluge/remarketing" as const },
-        { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" as const },
         { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const },
       ]
     },
@@ -93,6 +89,10 @@ export function Header() {
 
   return (
     <>
+      <div className="bg-slate-900 text-white text-xs text-center py-1.5 px-4">
+        <span className="hidden md:inline">{t("trustBar.full")}</span>
+        <span className="md:hidden">{t("trustBar.short")}</span>
+      </div>
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
       <div className="container-custom">
         <div className="flex items-center justify-between h-20 px-4">

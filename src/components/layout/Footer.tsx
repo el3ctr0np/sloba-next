@@ -1,8 +1,17 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui";
+
+const trustLogos = [
+  { src: "/client-logos/designerglasses-uk-logo.svg.webp", alt: "DesignerGlasses UK" },
+  { src: "/client-logos/pickbox-hrvatska-logo.svg.webp", alt: "Pickbox" },
+  { src: "/client-logos/everfun.hr-logo74.webp", alt: "Everfun" },
+  { src: "/client-logos/bestatprinting.co.uk-logo9.webp", alt: "Best at Printing" },
+  { src: "/client-logos/perun-moto-oprema-logo.svg.webp", alt: "Perun Moto Oprema" },
+];
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -55,6 +64,30 @@ export function Footer() {
               <p className="text-sm text-white/60">
                 {t("ctaMicroTrust")}
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Client Trust Row */}
+      <div className="border-b border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-8">
+            <p className="text-xs uppercase tracking-wide text-gray-500 whitespace-nowrap">
+              {t("trustLine")}
+            </p>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-3">
+              {trustLogos.map((logo) => (
+                <Image
+                  key={logo.alt}
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={100}
+                  height={32}
+                  loading="lazy"
+                  className="h-6 md:h-8 w-auto object-contain grayscale opacity-60"
+                />
+              ))}
             </div>
           </div>
         </div>

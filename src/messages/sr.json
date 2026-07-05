@@ -18,11 +18,7 @@
     "services": {
       "googleAdsManagement": "Google Ads Upravljanje",
       "googleAdsAudit": "Deep Audit",
-      "searchCampaigns": "Search Kampanje",
       "googleShopping": "Google Shopping",
-      "performanceMax": "Performance Max",
-      "remarketing": "Remarketing",
-      "youtubeAds": "YouTube Oglasi",
       "b2b": "Google Ads za B2B",
       "ecommerce": "Google Ads za eCommerce",
       "saas": "Google Ads za SaaS",
@@ -30,7 +26,11 @@
       "consultations": "Konsultacije",
       "starterPackage": "Kickstart"
     },
-    "allServices": "Sve usluge →"
+    "allServices": "Sve usluge →",
+    "trustBar": {
+      "full": "10+ godina iskustva · 3x UK Search Awards · 50+ brendova iz 6+ zemalja",
+      "short": "10+ godina · 3x UK Search Awards"
+    }
   },
   "Footer": {
     "ctaHeading": "Spremni da poboljšate Google Ads rezultate?",
@@ -42,6 +42,7 @@
     "sectionServices": "Usluge",
     "sectionIndustries": "Po Industriji",
     "sectionResources": "Resursi",
+    "trustLine": "Poverenje 50+ brendova iz 6+ zemalja",
     "privacyPolicy": "Politika privatnosti",
     "services": {
       "googleAdsManagement": "Google Ads Upravljanje",
@@ -151,6 +152,12 @@
     "readMore": "Saznajte više",
     "viewAll": "Pogledajte sve",
     "bookConsultation": "Zakažite besplatnu konsultaciju"
+  },
+  "ConsentBanner": {
+    "message": "Koristimo kolačiće za analitiku i merenje oglašavanja. Detalji u",
+    "linkLabel": "Politici privatnosti",
+    "accept": "Prihvatam",
+    "essentialOnly": "Samo neophodni"
   },
   "Portal": {
     "login": {
