@@ -82,7 +82,7 @@ export function ConsentBanner() {
           </Link>
           .
         </p>
-        <div className="flex items-center gap-4 shrink-0">
+        <div className="flex items-center gap-3 shrink-0 flex-wrap justify-center">
           <button
             type="button"
             onClick={handleEssentialOnly}
@@ -93,7 +93,7 @@ export function ConsentBanner() {
           <button
             type="button"
             onClick={handleAccept}
-            className="text-sm font-semibold bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
+            className="text-sm font-semibold bg-slate-900 text-white px-4 py-2 rounded-md hover:bg-slate-800 transition-colors"
           >
             {t("accept")}
           </button>

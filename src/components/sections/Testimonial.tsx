@@ -1,6 +1,6 @@
 export function Testimonial() {
   return (
-    <section className="section-padding bg-gray-900 text-white">
+    <section className="section-padding bg-slate-900 text-white">
       <div className="container-custom max-w-4xl text-center">
         <blockquote className="text-2xl md:text-3xl font-heading font-medium mb-8 leading-relaxed">
           "With Slobodan's expertise, we successfully scaled our Google Ads campaigns

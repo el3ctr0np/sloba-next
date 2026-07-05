@@ -610,8 +610,8 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/starter-paket" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Starter paket — Google Ads za početnike</p>
-          <p className="text-xs text-gray-500 mb-0">Pokrenite prve kampanje uz stručnu podršku od samog starta</p>
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Kickstart — senior setup naloga</p>
+          <p className="text-xs text-gray-500 mb-0">Profesionalno postavljen nalog koji dalje vodite sami — od €690</p>
         </Link>
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>

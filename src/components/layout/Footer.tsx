@@ -44,7 +44,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-slate-900 text-white">
       {/* Footer CTA */}
       <div className="border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">

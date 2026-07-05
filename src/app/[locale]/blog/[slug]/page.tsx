@@ -1261,8 +1261,8 @@ export default async function BlogPostPage({ params }: Props) {
                   </h2>
                   <p className="mt-2 text-sm text-gray-600">
                     {locale === "en"
-                      ? "5-min personalised video showing where you're losing money. Requires €3,000+/mo ad spend."
-                      : "5-min personalizovani video gde pokazujemo gde gubite novac. Uslov: €1,000+/mes ad spend."}
+                      ? "5-min personalised video showing where you're losing money. Requires $1,500+/mo ad spend."
+                      : "5-min personalizovani video gde pokazujemo gde gubite novac. Uslov: €1.500+/mes ad spend."}
                   </p>
                   <Link
                     href="/kontakt"

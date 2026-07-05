@@ -21,7 +21,7 @@ export function ClientLogos() {
   const allLogos = [...logos, ...logos];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-900 overflow-hidden">
+    <section className="py-16 md:py-24 bg-slate-900 overflow-hidden">
       <div className="container-custom px-4 mb-12">
         <p className="text-center text-white/50 text-sm uppercase tracking-widest mb-3">
           {t("subtitle")}
