@@ -10,11 +10,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Audit Serbia | PPC Account Analysis — Slobodan Jelisavac"
-      : "Google Ads Audit Srbija — Usluge Google Oglašavanja",
+      ? "Deep Audit + Action Plan | PPC Account Analysis — Slobodan Jelisavac"
+      : "Deep Audit + Action Plan — Google Ads Audit Srbija",
     description: isEn
-      ? "Professional Google Ads audit services reveal where you're losing money and how to improve ROAS. In-depth campaign analysis with actionable recommendations. From €350."
-      : "Google Ads usluge — profesionalni audit otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljna analiza kampanja, cena od €350.",
+      ? "Deep Audit + Action Plan reveals where you're losing money and how to improve ROAS. In-depth campaign analysis with prioritized recommendations. From $500."
+      : "Deep Audit + Action Plan — profesionalni audit otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljna analiza kampanja, cena od €450.",
     locale,
     path: "/services/google-ads-audit",
     srPath: "/usluge/google-ads-audit",
@@ -222,7 +222,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     {
       question: "How long does a complete audit take?",
       answer:
-        "From receiving access to final report typically takes 5-7 business days. For more complex accounts (over €5,000 spend), it may take up to 10 days."
+        "From receiving access to final report typically takes 5-7 business days. For more complex accounts (over $5,000 spend), it may take up to 10 days."
     },
     {
       question: "Do you need access to my Google Ads account?",
@@ -237,7 +237,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     {
       question: "What if I want you to take over management after the audit?",
       answer:
-        "The audit fee is deducted from the first month of management if you decide to work together within 30 days. The audit gives me a complete picture of your account before taking over."
+        "The audit fee is credited toward your first month of management if you decide to work together within 30 days. The audit gives me a complete picture of your account before taking over."
     },
     {
       question: "I work with an agency - do they need to know about the audit?",
@@ -250,14 +250,14 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         "The audit is designed for existing accounts with active campaigns. For new accounts, I recommend going directly to strategy and setup through the management service."
     },
     {
-      question: "How much does a Google Ads audit cost?",
+      question: "How much does the Deep Audit + Action Plan cost?",
       answer:
-        "The Standard Audit starts at €350 for accounts up to ~€3,000 monthly spend. Larger or multi-channel accounts (over €3,000/month) get custom pricing on request. It's a one-time fee, and it's deducted from the first month if you move to ongoing management within 30 days."
+        "The Deep Audit + Action Plan starts at $500 for accounts up to ~$5,000 monthly spend. Larger or multi-channel accounts get custom pricing on request. It's a one-time fee, and it's credited toward your first month of management if we start within 30 days."
     },
     {
       question: "Do you audit accounts with small ad budgets?",
       answer:
-        "Yes. Even a small budget benefits from an audit if you're unsure why campaigns aren't converting. For very small budgets under €500/month, a consultation session might be a more cost-effective starting point — I'll tell you honestly which fits better."
+        "Yes. Even a small budget benefits from an audit if you're unsure why campaigns aren't converting. For very small budgets, a consultation session might be a more cost-effective starting point — I'll tell you honestly which fits better. If you just want a quick gut check, the free 15-minute video review is also worth considering first."
     },
     {
       question: "What's the difference between an audit from an agency versus an independent consultant?",
@@ -283,7 +283,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     {
       question: "Šta ako želim da preuzmete upravljanje nakon audita?",
       answer:
-        "Cena audita se odbija od prvog meseca upravljanja ako se odlučite za saradnju u roku od 30 dana. Audit mi daje kompletnu sliku vašeg naloga pre preuzimanja."
+        "Cena audita se uračunava u prvi mesec upravljanja ako se odlučite za saradnju u roku od 30 dana. Audit mi daje kompletnu sliku vašeg naloga pre preuzimanja."
     },
     {
       question: "Radim sa agencijom - da li oni treba da znaju za audit?",
@@ -296,14 +296,14 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         "Audit je namenjen postojećim nalozima sa aktivnim kampanjama. Za nove naloge preporučujem direktno strategiju i setup kroz uslugu upravljanja."
     },
     {
-      question: "Koliko košta Google Ads audit?",
+      question: "Koliko košta Deep Audit + Action Plan?",
       answer:
-        "Standardni audit počinje od €350 za naloge do ~€3.000 mesečnog spend-a. Veći ili multi-channel nalozi (preko €3.000/mesečno) dobijaju cenu na upit. Jednokratna je i odbija se od prvog meseca ako pređete na ongoing upravljanje u roku od 30 dana."
+        "Deep Audit + Action Plan počinje od €450 za naloge do ~€5.000 mesečnog spend-a. Veći ili multi-channel nalozi dobijaju cenu na upit. Jednokratna je i uračunava se u prvi mesec upravljanja ako krenemo u saradnju u roku od 30 dana."
     },
     {
       question: "Da li radite audit i za male ad budžete?",
       answer:
-        "Da. Čak i mali budžet ima koristi od audita ako niste sigurni zašto kampanje ne konvertuju. Za veoma male budžete ispod €500/mesečno, konsultacija može biti isplativiji početak — iskreno ću vam reći šta vam više odgovara."
+        "Da. Čak i mali budžet ima koristi od audita ako niste sigurni zašto kampanje ne konvertuju. Za veoma male budžete, konsultacija može biti isplativiji početak — iskreno ću vam reći šta vam više odgovara. Ako vam treba samo brza provera, razmislite prvo o besplatnom 15-minutnom video pregledu."
     },
     {
       question: "Koja je razlika između audita od agencije i nezavisnog konsultanta?",
@@ -312,13 +312,12 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     }
   ];
 
-  const serviceSchema = {
+  const serviceSchema = locale === "en" ? {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: locale === "en" ? "Google Ads Audit" : "Google Ads audit",
-    description: locale === "en"
-      ? "Professional Google Ads account audit with prioritized recommendations for performance improvement. Analysis of structure, bidding strategies, conversion tracking, and identification of opportunities to increase ROAS."
-      : "Profesionalni audit Google Ads naloga sa prioritetnim preporukama za poboljšanje performansi. Analiza strukture, bidding strategija, conversion tracking-a i identifikacija prilika za povećanje ROAS-a.",
+    name: "Deep Audit + Action Plan",
+    description:
+      "Professional Google Ads account audit with prioritized recommendations for performance improvement. Analysis of structure, bidding strategies, conversion tracking, and identification of opportunities to increase ROAS.",
     provider: {
       "@type": "Person",
       name: "Slobodan Jelisavac",
@@ -331,14 +330,43 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         "eCommerce Advertising"
       ]
     },
-    areaServed: locale === "en" ? [
+    areaServed: [
       { "@type": "Country", name: "United States" },
       { "@type": "Country", name: "United Kingdom" },
       { "@type": "Country", name: "Australia" },
-      { "@type": "Country", name: "Germany" },
-      { "@type": "Country", name: "Serbia" },
-      { "@type": "Country", name: "Croatia" }
-    ] : [
+      { "@type": "Country", name: "Germany" }
+    ],
+    serviceType: "Google Ads Audit",
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "USD",
+      price: "500",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "500",
+        priceCurrency: "USD",
+        description: "Deep Audit + Action Plan from $500, credited toward your first month of management if we start within 30 days."
+      }
+    }
+  } : {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Deep Audit + Action Plan",
+    description:
+      "Profesionalni audit Google Ads naloga sa prioritetnim preporukama za poboljšanje performansi. Analiza strukture, bidding strategija, conversion tracking-a i identifikacija prilika za povećanje ROAS-a.",
+    provider: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      url: "https://www.slobodan-jelisavac.com",
+      jobTitle: "Google Ads Consultant",
+      knowsAbout: [
+        "Google Ads",
+        "Google Ads Audit",
+        "Performance Marketing",
+        "eCommerce Advertising"
+      ]
+    },
+    areaServed: [
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "United Kingdom" },
       { "@type": "Country", name: "Germany" },
@@ -348,14 +376,12 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     offers: {
       "@type": "Offer",
       priceCurrency: "EUR",
-      price: "350",
+      price: "450",
       priceSpecification: {
         "@type": "UnitPriceSpecification",
-        price: "350",
+        price: "450",
         priceCurrency: "EUR",
-        description: locale === "en"
-          ? "Standard audit from €350. For large and complex accounts (over €3,000 monthly), pricing on request."
-          : "Standardni audit od €350. Za velike i složene naloge (preko €3,000 mesečno) cena na upit."
+        description: "Deep Audit + Action Plan od €450, uračunava se u prvi mesec upravljanja ako krenemo u saradnju u roku od 30 dana."
       }
     }
   };
@@ -392,7 +418,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 3,
-        name: locale === "en" ? "Google Ads Audit" : "Google Ads audit",
+        name: locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan",
         item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-audit"
       }
     ]
@@ -449,7 +475,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               </li>
               <li aria-hidden="true">/</li>
               <li className="text-yellow-400 font-medium">
-                {locale === "en" ? "Google Ads Audit" : "Google Ads audit"}
+                {locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan"}
               </li>
             </ol>
           </nav>
@@ -457,14 +483,14 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
-                ? "Google Ads audit — discover where you're losing money"
-                : "Google Ads audit — otkrijte gde gubite novac"}
+                ? "Deep Audit + Action Plan — discover where you're losing money"
+                : "Deep Audit + Action Plan — otkrijte gde gubite novac"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
                 <>
                   Not sure if your Google Ads campaigns are running optimally?{" "}
-                  <strong className="text-white">Professional Google Ads audit</strong> shows
+                  <strong className="text-white">Deep Audit + Action Plan</strong> shows
                   where you're losing money, which opportunities you're missing, and what
                   specifically needs to change. The analysis includes a strategic review that
                   considers your business model, margins, and goals — not just technical metrics.
@@ -472,7 +498,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               ) : (
                 <>
                   Niste sigurni da li vaše Google Ads kampanje rade optimalno?{" "}
-                  <strong className="text-white">Profesionalni Google Ads audit</strong> pokazuje
+                  <strong className="text-white">Deep Audit + Action Plan</strong> pokazuje
                   gde gubite novac, koje prilike propuštate i šta konkretno treba promeniti.
                   Analiza uključuje strategijski pregled koji uzima u obzir vaš biznis model,
                   marže i ciljeve — ne samo tehničke metrike.
@@ -482,7 +508,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Schedule a Google Ads Audit" : "Zakažite Google Ads audit"}
+                {locale === "en" ? "Schedule a Deep Audit" : "Zakažite Deep Audit"}
               </Button>
               <Link
                 href="/usluge/google-ads-upravljanje"
@@ -497,7 +523,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             {/* Trust badges */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
               <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
-              <span>{locale === "en" ? "€2M+ in audited ad spend" : "€2M+ audit-ovanih budžeta"}</span>
+              <span>{locale === "en" ? "3x UK Search Awards" : "3x UK Search Awards"}</span>
               <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
             </div>
           </div>
@@ -510,14 +536,14 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
             {locale === "en" ? (
               <>
-                <strong>Google Ads audit</strong> is an in-depth analysis of your account that
+                <strong>Deep Audit + Action Plan</strong> is an in-depth analysis of your account that
                 identifies problems, missed opportunities, and concrete actions to improve
                 performance. Unlike automated tools that just output metrics, a professional
                 audit considers your business model, industry, and goals.
               </>
             ) : (
               <>
-                <strong>Google Ads audit</strong> je dubinska analiza vašeg naloga koja
+                <strong>Deep Audit + Action Plan</strong> je dubinska analiza vašeg naloga koja
                 identifikuje probleme, propuštene prilike i konkretne akcije za poboljšanje
                 performansi. Za razliku od automatizovanih alata koji samo izbacuju metrike,
                 profesionalni audit uzima u obzir vaš biznis model, industriju i ciljeve.
@@ -543,6 +569,40 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               </>
             )}
           </p>
+        </div>
+      </section>
+
+      {/* Cross-link — which analysis do you need */}
+      <section className="py-10 px-4 md:px-8 bg-white border-b border-gray-100">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-6">
+            <h3 className="font-heading font-bold text-lg mb-3">
+              {locale === "en" ? "Which analysis do you need?" : "Koja analiza vam treba?"}
+            </h3>
+            <p className="text-gray-600 text-base leading-relaxed">
+              {locale === "en" ? (
+                <>
+                  <strong>Deep Audit + Action Plan</strong> (this page, from $500) is a paid,
+                  complete review with a written action plan you can implement yourself or hand
+                  to your team. If you just want a quick gut check first, there's also a{" "}
+                  <Link href="/audit" className="text-primary underline">
+                    free 15-minute video review
+                  </Link>{" "}
+                  for qualified accounts — a lighter, teaser-level look, not a full plan.
+                </>
+              ) : (
+                <>
+                  <strong>Deep Audit + Action Plan</strong> (ova stranica, od €450) je plaćena,
+                  kompletna analiza sa pisanim akcionim planom koji možete sami da implementirate
+                  ili predate svom timu. Ako želite prvo brzu proveru, tu je i{" "}
+                  <Link href="/audit" className="text-primary underline">
+                    besplatan 15-minutni video pregled
+                  </Link>{" "}
+                  za kvalifikovane naloge — lakši, teaser nivo, ne kompletan plan.
+                </>
+              )}
+            </p>
+          </div>
         </div>
       </section>
 
@@ -709,21 +769,20 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
             {locale === "en"
-              ? "Google Ads audit pricing"
-              : "Cena Google Ads audita"}
+              ? "Deep Audit + Action Plan pricing"
+              : "Cena Deep Audit + Action Plan"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en" ? (
               <>
-                Transparent pricing based on account complexity and monthly ad spend.
-                The audit is a <strong>low-ticket entry point</strong> — strategically
-                priced to open the door to collaboration.
+                Transparent pricing based on account complexity and monthly ad spend,
+                credited toward your first month of management if we start within 30 days.
               </>
             ) : (
               <>
                 Transparentne cene zasnovane na složenosti naloga i mesečnom ad
-                spend-u. Audit je <strong>low-ticket entry point</strong> — simbolično
-                precenjen kako bi otvorio vrata saradnji.
+                spend-u, uračunava se u prvi mesec upravljanja ako krenemo u saradnju
+                u roku od 30 dana.
               </>
             )}
           </p>
@@ -736,16 +795,16 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             </span>
             <h3 className="text-xl font-heading font-bold mb-2">
               {locale === "en"
-                ? "Standard Google Ads Audit"
-                : "Standardni Google Ads audit"}
+                ? "Deep Audit + Action Plan"
+                : "Deep Audit + Action Plan"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              od €350
+              {locale === "en" ? "from $500" : "od €450"}
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
-                ? "For accounts up to ~€3,000 monthly spend. Complete review of structure, ads, bidding strategies, tracking, audiences, and Shopping/PMax campaigns. PDF report + video walkthrough."
-                : "Za naloge do ~€3,000 mesečnog spend-a. Kompletan pregled strukture, oglasa, bidding strategija, tracking-a, audience-a i Shopping/PMax kampanja. Izveštaj u PDF formatu + video walkthrough."}
+                ? "For accounts up to ~$5,000 monthly spend. Complete review of structure, ads, bidding strategies, tracking, audiences, and Shopping/PMax campaigns. PDF report + video walkthrough."
+                : "Za naloge do ~€5.000 mesečnog spend-a. Kompletan pregled strukture, oglasa, bidding strategija, tracking-a, audience-a i Shopping/PMax kampanja. Izveštaj u PDF formatu + video walkthrough."}
             </p>
             <ul className="space-y-2 text-sm text-gray-600 mb-5">
               <li className="flex items-start gap-2">
@@ -781,8 +840,8 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             </ul>
             <Button href="/kontakt" variant="secondary" className="w-full">
               {locale === "en"
-                ? "Schedule standard audit"
-                : "Zakažite standardni audit"}
+                ? "Schedule Deep Audit"
+                : "Zakažite Deep Audit"}
             </Button>
           </div>
 
@@ -798,8 +857,8 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             </p>
             <p className="text-slate-300 text-sm mb-4">
               {locale === "en"
-                ? "For large and complex accounts with ad spend over €3,000/month. Multi-channel audit (Google + Meta + Microsoft), deeper analysis, strategic recommendations for scaling. Premium reporting and live Q&A session."
-                : "Za velike i složene naloge sa ad spend-om preko €3,000/mesečno. Multi-channel audit (Google + Meta + Microsoft), dublja analiza, strategijske preporuke za skaliranje. Premium reporting i live Q&A sesija."}
+                ? "For large and complex accounts with ad spend over $5,000/month. Multi-channel audit (Google + Meta + Microsoft), deeper analysis, strategic recommendations for scaling. Premium reporting and live Q&A session."
+                : "Za velike i složene naloge sa ad spend-om preko €5.000/mesečno. Multi-channel audit (Google + Meta + Microsoft), dublja analiza, strategijske preporuke za skaliranje. Premium reporting i live Q&A sesija."}
             </p>
             <ul className="space-y-2 text-sm text-slate-300 mb-5">
               <li className="flex items-start gap-2">
@@ -849,8 +908,8 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                 {locale === "en" ? "Bonus:" : "Bonus:"}
               </span>{" "}
               {locale === "en"
-                ? "The audit fee is deducted from the first month of management if you decide to work together within 30 days. The audit gives me a complete picture of your account before taking over, so I use it as a foundation for strategy."
-                : "Cena audita se odbija od prvog meseca upravljanja ako se odlučite za saradnju u roku od 30 dana. Audit mi daje kompletnu sliku vašeg naloga pre preuzimanja, pa ga koristim kao osnovu za strategiju."}
+                ? "The audit fee is credited toward your first month of management if you decide to work together within 30 days. The audit gives me a complete picture of your account before taking over, so I use it as a foundation for strategy."
+                : "Cena audita se uračunava u prvi mesec upravljanja ako se odlučite za saradnju u roku od 30 dana. Audit mi daje kompletnu sliku vašeg naloga pre preuzimanja, pa ga koristim kao osnovu za strategiju."}
             </p>
           </div>
         </div>
@@ -896,12 +955,12 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
           </h2>
           <p className="text-slate-300 mb-8">
             {locale === "en"
-              ? "Schedule a Google Ads audit and get a clear picture of campaign performance with concrete recommendations for improvement. No obligations."
-              : "Zakažite Google Ads audit i dobijte jasnu sliku performansi kampanja sa konkretnim preporukama za poboljšanje. Bez obaveza."}
+              ? "Schedule a Deep Audit + Action Plan and get a clear picture of campaign performance with concrete recommendations for improvement. No obligations."
+              : "Zakažite Deep Audit + Action Plan i dobijte jasnu sliku performansi kampanja sa konkretnim preporukama za poboljšanje. Bez obaveza."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Schedule a Google Ads Audit" : "Zakažite Google Ads audit"}
+              {locale === "en" ? "Schedule a Deep Audit" : "Zakažite Deep Audit"}
             </Button>
             <Link
               href="/usluge/google-ads-upravljanje"

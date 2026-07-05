@@ -37,13 +37,13 @@ export default async function AboutPage({ params }: Props) {
     ? [
         { value: "3.7x", label: "average ROAS improvement" },
         { value: "-50%", label: "CPA reduction for lead generation" },
-        { value: "€2M+", label: "annual ad spend managed" },
+        { value: "3x", label: "UK Search Awards" },
         { value: "50+", label: "brands across 6+ countries" }
       ]
     : [
         { value: "3.7x", label: "prosečno poboljšanje ROAS-a" },
         { value: "-50%", label: "smanjenje CPA za lead generation" },
-        { value: "€2M+", label: "godišnje upravljan ad spend" },
+        { value: "3x", label: "UK Search Awards" },
         { value: "50+", label: "brendova u 6+ zemalja" }
       ];
 
@@ -111,7 +111,7 @@ export default async function AboutPage({ params }: Props) {
           period: "Recognition",
           title: "Exposure Ninja (UK) — Senior PPC Expert",
           description:
-            "I simultaneously worked as a Senior PPC expert at one of the UK's most prominent digital agencies. There I led campaigns that won the prestigious UK Search Awards — for Google Search and Microsoft Search campaigns I set up."
+            "I simultaneously worked as a Senior PPC expert at one of the UK's most prominent digital agencies. There I led campaigns that won 3x UK Search Awards — for Google Search and Microsoft Search campaigns I set up."
         },
         {
           period: "Today",
@@ -137,7 +137,7 @@ export default async function AboutPage({ params }: Props) {
           period: "Priznanja",
           title: "Exposure Ninja (UK) — Senior PPC ekspert",
           description:
-            "Uporedo sam radio kao Senior PPC ekspert u jednoj od najpoznatijih UK digitalnih agencija. Tu sam vodio kampanje koje su osvojile prestižne UK Search Awards — za Google Search i Microsoft Search kampanje koje sam postavio."
+            "Uporedo sam radio kao Senior PPC ekspert u jednoj od najpoznatijih UK digitalnih agencija. Tu sam vodio kampanje koje su osvojile 3x UK Search Awards — za Google Search i Microsoft Search kampanje koje sam postavio."
         },
         {
           period: "Danas",
@@ -333,6 +333,12 @@ export default async function AboutPage({ params }: Props) {
                 </ol>
               </nav>
 
+              <p className="text-sm font-semibold text-slate-400 uppercase tracking-wide mb-3">
+                {locale === "en"
+                  ? "Independent senior consultant · Partner & Head of Paid Media at Funky Enterprises"
+                  : "Nezavisni senior konsultant · Partner @ Funky Enterprises"}
+              </p>
+
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 {locale === "en"
                   ? "Slobodan Jelisavac — Google Ads Consultant focused on data and results"
@@ -442,7 +448,7 @@ export default async function AboutPage({ params }: Props) {
                   I quickly discovered that Google Ads attracted me in a way I didn't expect. It wasn't marketing in the classic sense — it was working with data, analyzing numbers, financial optimization. Things I didn't even know I was drawn to until I tried them.
                 </p>
                 <p>
-                  I'm not a genius. But I found a field where an analytical approach and persistence deliver measurable results — and that's what kept me.
+                  It turned out to be a field where analytical thinking and persistence produce measurable results — a decade later, campaigns I've worked on have won three UK Search Awards.
                 </p>
               </>
             ) : (
@@ -454,7 +460,7 @@ export default async function AboutPage({ params }: Props) {
                   Brzo sam otkrio da me Google Ads privlači na način koji nisam očekivao. Nije to bio marketing u klasičnom smislu — bio je to rad sa podacima, analiza brojeva, finansijska optimizacija. Stvari za koje nisam ni znao da me privlače dok ih nisam probao.
                 </p>
                 <p>
-                  Nisam nikakav genije. Ali pronašao sam oblast u kojoj analitičan pristup i upornost donose merljive rezultate — i to me je zadržalo.
+                  Ispostavilo se da je to oblast u kojoj analitičnost i upornost donose merljive rezultate — deset godina kasnije, kampanje na kojima sam radio osvojile su tri UK Search Awards.
                 </p>
               </>
             )}

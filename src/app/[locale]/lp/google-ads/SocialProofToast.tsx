@@ -71,8 +71,8 @@ const notifications: Notification[] = [
     name: "Nikola",
     city: { sr: "Zagreb, HR", en: "Zagreb, HR" },
     message: {
-      sr: "Zakupio Standard paket za svoju B2B firmu",
-      en: "Signed up for Standard plan for his B2B company",
+      sr: "Zakazao Kickstart projekat za svoju B2B firmu",
+      en: "Booked the Kickstart project for his B2B company",
     },
   },
   {
@@ -103,8 +103,8 @@ const notifications: Notification[] = [
     name: "Maja",
     city: { sr: "Beograd", en: "Belgrade" },
     message: {
-      sr: "Zakupila Starter paket za svoju online prodavnicu",
-      en: "Signed up for Starter plan for her online store",
+      sr: "Zakupila eCommerce Growth paket za svoju online prodavnicu",
+      en: "Signed up for the eCommerce Growth plan for her online store",
     },
   },
 ];

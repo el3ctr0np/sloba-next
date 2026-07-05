@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Management Services Serbia | PPC Expert — Slobodan Jelisavac"
       : "Google Ads Usluge Srbija — Vođenje Google Ads Kampanja",
     description: isEn
-      ? "Google Ads management services for eCommerce and B2B companies. 180%+ ROAS improvement, 10+ years of experience across Serbia, UK, and EU. From €700/month. Book your free consultation."
+      ? "Google Ads management services for eCommerce and B2B companies. 180%+ ROAS improvement, 10+ years of experience. From $2,500/month. Book your free consultation."
       : "Profesionalne Google Ads usluge — vođenje Google Ads kampanja za eCommerce i B2B u Srbiji. Cena od €700/mes, 180%+ poboljšanje ROAS-a. Zakažite besplatnu konsultaciju.",
     locale,
     path: "/services/google-ads-management",
@@ -381,7 +381,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             label: "average ROAS improvement in first 90 days"
           },
           { value: "−35%", label: "CPA reduction through continuous optimization" },
-          { value: "€2M+", label: "managed ad spend annually" }
+          { value: "3x", label: "UK Search Awards" }
         ]
       : [
           {
@@ -389,7 +389,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             label: "prosečno poboljšanje ROAS-a u prvih 90 dana"
           },
           { value: "−35%", label: "smanjenje CPA kroz kontinuiranu optimizaciju" },
-          { value: "€2M+", label: "upravljanog ad spend-a godišnje" }
+          { value: "3x", label: "UK Search Awards" }
         ];
 
   const faqs =
@@ -413,7 +413,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "Do you work with small budgets?",
             answer:
-              "For monthly ad spend budgets below €800, I recommend the Starter package or one-time consultations where I train you to manage campaigns yourself."
+              "I don't take on monthly management under $2,500/month — I can't deliver it at a senior level below that. For smaller budgets: consultations ($200/hour) or a Kickstart project (from $990)."
           },
           {
             question: "How often will we communicate?",
@@ -428,12 +428,12 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "How much does Google Ads cost?",
             answer:
-              "The cost of Google Ads depends on industry, competition, and goals. Average CPC varies from €0.10-0.80 in emerging markets to €1-5+ in competitive Western markets. Monthly management starts from €700/month. For businesses with smaller ad spend, one-off projects and consultations are priced per scope."
+              "The cost of Google Ads depends on industry, competition, and goals. Average CPC varies from $0.10-0.80 in emerging markets to $1-5+ in competitive Western markets. Monthly management (eCommerce Growth) starts from $2,500/month. For smaller ad spend, Kickstart and consultations are priced per scope."
           },
           {
             question: "Does Google Ads work for small businesses?",
             answer:
-              "Absolutely. Google Ads is ideal for small businesses because you only pay when someone clicks on your ad. The key is proper campaign structure, smart targeting, and eliminating unnecessary costs through negative keywords."
+              "I intentionally keep a limited number of accounts. If you're not yet ready for a serious budget, start with a consultation — you'll get a plan you can execute yourself."
           },
           {
             question: "What's the difference between hiring an agency and a freelance consultant?",
@@ -465,7 +465,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "Da li radite i sa malim budžetima?",
             answer:
-              "Za mesečne ad spend budžete ispod €800 preporučujem Starter paket ili jednokratne konsultacije gde vas obučim da sami vodite kampanje."
+              "Mesečno vođenje ispod €700/mes ne radim — ne mogu da ga isporučim na senior nivou. Za manje budžete: konsultacije (€150/sat) ili Kickstart projekat (od €690)."
           },
           {
             question: "Koliko često ćemo komunicirati?",
@@ -485,7 +485,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "Da li Google oglašavanje funkcioniše za malu firmu?",
             answer:
-              "Apsolutno. Google oglašavanje je idealno za male firme jer plaćate samo kada neko klikne na vaš oglas. Ključ je pravilna struktura kampanja, pametno targetiranje i eliminacija nepotrebnih troškova kroz negativne ključne reči."
+              "Svesno vodim ograničen broj naloga. Ako još niste spremni za ozbiljan budžet, počnite konsultacijom — dobićete plan koji možete sami da izvršite."
           },
           {
             question: "Koja je razlika između agencije i freelance konsultanta?",
@@ -538,14 +538,14 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           serviceType: "Google Ads Management",
           offers: {
             "@type": "Offer",
-            priceCurrency: "EUR",
-            price: "700",
+            priceCurrency: "USD",
+            price: "2500",
             priceSpecification: {
               "@type": "UnitPriceSpecification",
-              price: "700",
-              priceCurrency: "EUR",
+              price: "2500",
+              priceCurrency: "USD",
               unitText: "monthly",
-              description: "Monthly Google Ads management — from €700/month"
+              description: "Monthly Google Ads management (eCommerce Growth) — from $2,500/month"
             }
           }
         }
@@ -974,8 +974,8 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
                 {locale === "en"
-                  ? "Companies with ad spend budget of minimum €500/month"
-                  : "Firme sa ad spend budžetom od minimum €500/mesečno"}
+                  ? "Companies with ad spend budget of $10k+/month"
+                  : "Firme sa ad spend budžetom od €1.500+/mesečno"}
               </li>
             </ul>
           </div>
@@ -1083,38 +1083,38 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           </p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
-          {/* Card 1 — Discovery & one-off */}
+          {/* Card 1 — Strategy & support */}
           <Card className="h-full">
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
               {locale === "en" ? "START WITH CLARITY" : "POČNITE SA JASNOM SLIKOM"}
             </p>
             <h3 className="text-xl font-heading font-bold mb-1">
-              {locale === "en" ? "Discovery & one-off projects" : "Discovery & One-off projekti"}
+              {locale === "en" ? "Strategy & support" : "Strategija i podrška"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "Priced per project scope" : "Cena po obimu projekta"}
+              {locale === "en" ? "Kickstart from $990" : "Kickstart od €690"}
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
-                ? "For businesses exploring Google Ads or with ad spend under €1,000/month. Get clarity before committing to ongoing management."
-                : "Za biznise koji istražuju Google Ads ili sa ad spendom ispod €1.000/mes. Dobijte jasnu sliku pre nego što se odlučite za stalnu saradnju."}
+                ? "Senior setup with strategy consultations included — no monthly commitment. Get clarity and a working foundation before committing to ongoing management."
+                : "Senior setup sa uključenim strategijskim konsultacijama — bez mesečne obaveze. Dobijte jasnu sliku i radni temelj pre nego što se odlučite za stalnu saradnju."}
             </p>
             <ul className="space-y-2 text-sm text-gray-600 mb-5">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Discovery conversation" : "Discovery razgovor"}
+                {locale === "en" ? "Strategy consultations included (otherwise $200/hr)" : "Strategijske konsultacije uključene (inače €150/sat)"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Deep account analysis" : "Dubinska analiza naloga"}
+                {locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Setup projects" : "Setup projekti"}
+                {locale === "en" ? "Kickstart account setup" : "Kickstart setup naloga"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Strategic consultations" : "Strategijske konsultacije"}
+                {locale === "en" ? "No monthly commitment" : "Bez mesečne obaveze"}
               </li>
             </ul>
             <Button href="/kontakt" variant="primary">
@@ -1133,8 +1133,13 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <h3 className="text-xl font-heading font-bold mb-1">
               eCommerce Growth
             </h3>
-            <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "from €700" : "već od €700"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
+            <p className="text-2xl font-heading font-bold text-primary mb-1">
+              {locale === "en" ? "from $2,500" : "od €700"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
+            </p>
+            <p className="text-sm text-gray-500 mb-3">
+              {locale === "en"
+                ? "For brands spending $10k–100k/month — scope and fee scale with spend."
+                : "Saradnja ima smisla ako u oglašavanje ulažete €1.500+ mesečno — konačna ponuda zavisi od obima."}
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
@@ -1186,10 +1191,15 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <p className="text-sm text-slate-400 mb-4 italic">
               Powered by Funky Enterprises
             </p>
-            <p className="text-slate-300 text-sm mb-4">
+            <p className="text-slate-300 text-sm mb-2">
               {locale === "en"
                 ? "For brands that need a complete business growth team — not just Google Ads."
                 : "Za brendove kojima treba kompletan tim za rast biznisa — ne samo Google Ads."}
+            </p>
+            <p className="text-slate-400 text-sm mb-4 italic">
+              {locale === "en"
+                ? "For brands aiming for the leading position in their category — $20k+/month per channel."
+                : "Za brendove koji ciljaju lidersku poziciju u svojoj kategoriji."}
             </p>
             <ul className="space-y-2 text-sm text-slate-300 mb-5">
               <li className="flex items-start gap-2">

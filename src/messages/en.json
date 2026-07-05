@@ -28,13 +28,13 @@
       "saas": "Google Ads for SaaS",
       "performanceMarketing": "Performance Marketing",
       "consultations": "Consultations",
-      "starterPackage": "Starter Package"
+      "starterPackage": "Kickstart"
     },
     "allServices": "All services →"
   },
   "Footer": {
     "ctaHeading": "Ready to improve your Google Ads results?",
-    "ctaDescription": "Free consultation. No obligation. Response within 24h.",
+    "ctaDescription": "20 minutes. I'll tell you if I can help — and if I can't.",
     "cta": "Book a Consultation",
     "brandDescription": "Google Ads Consultant with 10+ years of experience. 50+ brands across 6+ countries.",
     "location": "Belgrade, Serbia",
@@ -55,7 +55,7 @@
       "ecommerce": "Google Ads for eCommerce",
       "b2b": "Google Ads for B2B",
       "saas": "Google Ads for SaaS",
-      "starterPackage": "Starter Package",
+      "starterPackage": "Kickstart",
       "consultations": "Consultations"
     },
     "resources": {

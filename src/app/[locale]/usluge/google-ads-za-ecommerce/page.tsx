@@ -83,7 +83,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
   const idealClients = locale === "en"
     ? [
         "Minimum 100 products in your catalog",
-        "Ad spend minimum $1,000/month (€800+)",
+        "Ad spend minimum $1,000/month",
         "Defined margins by product or category",
         "Functional tracking setup (GA4, purchase events)",
         "Ready for minimum 3-month engagement"

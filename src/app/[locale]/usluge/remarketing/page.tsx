@@ -204,7 +204,7 @@ export default async function RemarketingPage({ params }: Props) {
     "You have existing website traffic (minimum 1,000 visitors monthly)",
     "Sales cycle isn't instant — users research before purchasing",
     "You want to maximize ROI from existing campaigns",
-    "You have a minimum remarketing budget of €300/month"
+    "You have a minimum remarketing budget of $300/month"
   ] : [
     "Imate postojeći saobraćaj na sajtu (minimum 1.000 posetilaca mesečno)",
     "Sales cycle nije instant — korisnici istražuju pre kupovine",
@@ -236,7 +236,7 @@ export default async function RemarketingPage({ params }: Props) {
     {
       question: "Can I run remarketing with a small budget?",
       answer:
-        "Yes. Remarketing is excellent for smaller budgets because it targets warm audiences with high conversion potential. From €300/month you can see results."
+        "Yes. Remarketing is excellent for smaller budgets because it targets warm audiences with high conversion potential. From $300/month you can see results."
     },
     {
       question: "Does remarketing work for B2B?",

@@ -1,6 +1,7 @@
 import {
   Hero,
   WhyMe,
+  WhatYouNeed,
   ClientLogos,
   CaseStudiesPreview,
   Testimonial,
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "Google Ads Srbija — Konsultant sa 10+ Godina Iskustva | Slobodan Jelisavac",
+    title: "Google Ads Srbija — vaš Google Ads partner, ne agencija | Slobodan Jelisavac",
     description: "Google Ads Srbija — nezavisni PPC konsultant sa 10+ godina iskustva i 50+ brendova u portfoliju (Srbija, UK, EU). Search, Shopping, Performance Max kampanje. Bez onboarding naknada, bez dugoročnih ugovora.",
     locale,
     path: "",
@@ -47,7 +48,7 @@ export default async function Home({ params }: Props) {
           name: "Slobodan Jelisavac - Google Ads Consultant",
           description:
             "Google Ads Consultant with 10+ years of experience managing campaigns for eCommerce, B2B and SaaS brands across the UK, US and EU.",
-          priceRange: "from €700/month",
+          priceRange: "from $2,500/month",
           url: "https://www.slobodan-jelisavac.com/en",
           email: "info@slobodan-jelisavac.com",
           image: "https://www.slobodan-jelisavac.com/og/homepage.png",
@@ -142,9 +143,9 @@ export default async function Home({ params }: Props) {
   const heroProps =
     locale === "en"
       ? {
-          title: "Your search for a Google Ads expert ends here",
+          title: "Your Google Ads partner, not an agency",
           subtitle:
-            "No onboarding fees. No long-term contracts. No juniors on your account. AI-powered strategies for maximum results.",
+            "A decade of experience. 3x UK Search Awards. Direct work from strategy to execution. No juniors, no middlemen.",
           ctaText: "Book a free 20-minute call",
           ctaHref: "/kontakt",
           secondaryCtaText: "View Results",
@@ -158,9 +159,9 @@ export default async function Home({ params }: Props) {
           ],
         }
       : {
-          title: "Google Ads Srbija — vaša potraga za Google Ads konsultantom se završava ovde",
+          title: "Vaš Google Ads partner, ne agencija",
           subtitle:
-            "Profesionalno Google oglašavanje u Srbiji, UK i EU. Bez onboarding naknada. Bez dugoročnih ugovora. Bez juniora na vašem nalogu. Uz napredne AI tehnologije za maksimalne rezultate.",
+            "Decenija iskustva, osvojene 3x UK Search Awards. Direktan rad od strategije do izvršenja. Bez juniora, bez posrednika.",
           ctaText: "Zakažite besplatnih 20 minuta",
           ctaHref: "/kontakt",
           secondaryCtaText: "Pogledajte rezultate",
@@ -261,6 +262,9 @@ export default async function Home({ params }: Props) {
 
       <AnimateOnScroll>
         <WhyMe />
+      </AnimateOnScroll>
+      <AnimateOnScroll>
+        <WhatYouNeed locale={locale} />
       </AnimateOnScroll>
       <ClientLogos />
       <AnimateOnScroll>

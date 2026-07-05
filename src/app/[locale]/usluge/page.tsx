@@ -157,61 +157,107 @@ export default async function ServicesPage({ params }: Props) {
     }
   ];
 
-  const entryPoints = locale === "en" ? ([
+  const strategySupport = locale === "en" ? ([
     {
-      title: "Starter Package",
-      price: "Priced per scope",
-      desc: "Professional campaign setup, tracking, and training for self-management. Ideal for businesses just starting with Google Ads.",
-      href: "/usluge/starter-paket",
+      title: "1-on-1 Consultations",
+      price: "$200/hour",
+      desc: "Expert advice for specific questions, second opinions, or strategic help without long-term commitment.",
+      href: "/usluge/konsultacije",
       cta: "Learn more"
     },
     {
-      title: "Google Ads Audit",
-      price: "from €350",
-      desc: "Independent account analysis with actionable recommendations. No commitment for ongoing work required.",
+      title: "Deep Audit + Action Plan",
+      price: "from $500",
+      desc: "Independent account analysis with a written, prioritized action plan. No commitment for ongoing work required.",
       href: "/usluge/google-ads-audit",
       cta: "Learn more"
     },
     {
-      title: "1-on-1 Consultations",
-      price: "€120/hour (3h package — €300)",
-      desc: "Expert advice for specific questions, second opinions, or strategic help without long-term commitment.",
-      href: "/usluge/konsultacije",
+      title: "Kickstart",
+      price: "from $990",
+      desc: "Senior account setup for teams with an in-house owner who takes it from there. No monthly retainer.",
+      href: "/usluge/starter-paket",
       cta: "Learn more"
     }
   ] as const) : ([
     {
-      title: "Starter paket",
-      price: "Cena po obimu projekta",
-      desc: "Profesionalni setup kampanja, tracking i edukacija za samostalno vođenje. Idealno za firme koje tek počinju sa Google Ads.",
-      href: "/usluge/starter-paket",
+      title: "Konsultacije",
+      price: "€150/sat",
+      desc: "Ekspertski savet za konkretna pitanja, second opinion ili strategijsku pomoć bez dugoročne obaveze.",
+      href: "/usluge/konsultacije",
       cta: "Saznajte više"
     },
     {
-      title: "Google Ads audit",
-      price: "od €350",
-      desc: "Nezavisna analiza naloga sa konkretnim preporukama. Bez obaveze za dalju saradnju.",
+      title: "Deep Audit + Action Plan",
+      price: "od €450",
+      desc: "Nezavisna analiza naloga sa pisanim, prioritizovanim akcionim planom. Bez obaveze za dalju saradnju.",
       href: "/usluge/google-ads-audit",
       cta: "Saznajte više"
     },
     {
-      title: "1-na-1 konsultacije",
-      price: "€120/sat (paket 3h — €300)",
-      desc: "Ekspertski savet za konkretna pitanja, second opinion ili strategijsku pomoć bez dugoročne obaveze.",
-      href: "/usluge/konsultacije",
+      title: "Kickstart",
+      price: "od €690",
+      desc: "Senior setup naloga za timove koji imaju in-house osobu za dalje vođenje. Bez mesečnog retainera.",
+      href: "/usluge/starter-paket",
       cta: "Saznajte više"
     }
   ] as const);
 
+  const fullManagement = locale === "en" ? ([
+    {
+      title: "eCommerce Growth",
+      price: "from $2,500/mo",
+      note: "For brands spending $10k–100k/month — scope and fee scale with spend.",
+      desc: "Complete Google Ads management for online stores — weekly optimization, Shopping feed management, monthly reporting.",
+      href: "/usluge/google-ads-upravljanje",
+      cta: "Learn more"
+    },
+    {
+      title: "Performance Marketing",
+      price: "Powered by Funky Enterprises",
+      note: null,
+      desc: "For brands aiming for the leading position in their category — investing $20k+/month per channel. Complete omnichannel team: Google Ads + Meta + SEO + CRO + tracking.",
+      href: "/usluge/google-ads-upravljanje",
+      cta: "Learn more"
+    }
+  ] as const) : ([
+    {
+      title: "eCommerce Growth",
+      price: "od €700/mes",
+      note: "Za budžete €1.500+/mes ad spend-a.",
+      desc: "Kompletno Google Ads upravljanje za online prodavnice — nedeljna optimizacija, Shopping feed upravljanje, mesečni reporting.",
+      href: "/usluge/google-ads-upravljanje",
+      cta: "Saznajte više"
+    },
+    {
+      title: "Performance Marketing",
+      price: "Powered by Funky Enterprises",
+      note: null,
+      desc: "Za brendove koji ciljaju lidersku poziciju u svojoj kategoriji. Kompletan omnichannel tim — Google Ads + Meta + SEO + CRO.",
+      href: "/usluge/google-ads-upravljanje",
+      cta: "Saznajte više"
+    }
+  ] as const);
+
+  const routingRows = locale === "en" ? [
+    { range: "Under $5k/mo or just starting", fit: "Consulting or Kickstart" },
+    { range: "$10k–100k/mo Google Ads spend", fit: "eCommerce Growth" },
+    { range: "Omnichannel (Google + Meta + SEO + CRO) — $20k+/mo per channel", fit: "Performance Marketing (Funky)" }
+  ] : [
+    { range: "Ispod €1.000/mes ili tek počinjete", fit: "Konsultacije / Kickstart" },
+    { range: "€1.500–5.000/mes eCommerce ad spend", fit: "Growth" },
+    { range: "€5.000+/mes ili multi-channel", fit: "Performance (Funky)" }
+  ];
+
   const results = locale === "en" ? [
     { value: "180%+", label: "Average ROAS improvement" },
     { value: "−35%", label: "CPA reduction" },
-    { value: "€2M+", label: "Annual ad spend managed" },
+    { value: "3x", label: "UK Search Awards" },
     { value: "10+", label: "Years of experience" }
   ] : [
     { value: "180%+", label: "Prosečno poboljšanje ROAS-a" },
     { value: "−35%", label: "Smanjenje CPA" },
-    { value: "€2M+", label: "Upravljanog ad spend-a godišnje" },
+    { value: "3x", label: "UK Search Awards" },
     { value: "10+", label: "Godina iskustva" }
   ];
 
@@ -270,7 +316,7 @@ export default async function ServicesPage({ params }: Props) {
   const faqs = locale === "en" ? [
     {
       q: "What's the minimum investment to work together?",
-      a: "Monthly Google Ads management starts from €700/month. For smaller ad spend, I recommend one-off projects or consultations — priced per scope. In my experience, businesses need at least €500-1000/month in ad spend to see meaningful results from paid advertising."
+      a: "Monthly Google Ads management (eCommerce Growth) starts from $2,500/month. For smaller ad spend, I recommend Kickstart or consultations — priced per scope. In my experience, businesses need at least $2,000+/month in ad spend to see meaningful results from paid advertising."
     },
     {
       q: "Do you only work with companies from Serbia?",
@@ -286,7 +332,7 @@ export default async function ServicesPage({ params }: Props) {
     },
     {
       q: "Can I see examples of your work?",
-      a: "Yes — check out the case studies section with specific results for eCommerce, B2B, and local campaigns. I've worked with brands across 6+ countries, managing over €2M in annual ad spend, with an average ROAS improvement of 180%+."
+      a: "Yes — check out the case studies section with specific results for eCommerce, B2B, and local campaigns. I've worked with brands across 6+ countries, with an average ROAS improvement of 180%+ and campaigns that won 3 UK Search Awards."
     }
   ] : [
     {
@@ -686,42 +732,112 @@ export default async function ServicesPage({ params }: Props) {
         </div>
       </Section>
 
-      {/* Entry points — kako početi */}
+      {/* What do you need — dva bloka */}
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "How to get started with Google Ads"
-              : "Kako da počnete sa Google Ads"
-            }
+            {locale === "en" ? "What do you need?" : "Šta vam treba?"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
-              ? "Regardless of budget and experience, there's a right entry point for you."
-              : "Bez obzira na budžet i iskustvo, postoji pravi ulazni put za vas."
+              ? "Two ways to work together — strategic support you or your team execute, or complete campaign management."
+              : "Dva načina saradnje — strategijska podrška koju vi ili vaš tim izvršavate, ili kompletno vođenje kampanja."
             }
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {entryPoints.map((entry) => (
-            <Card key={entry.title} className="h-full flex flex-col">
-              <h3 className="text-xl font-heading font-bold mb-1">
-                {entry.title}
-              </h3>
-              <p className="text-lg font-heading font-bold text-primary mb-3">
-                {entry.price}
-              </p>
-              <p className="text-gray-600 text-base mb-5 flex-1">
-                {entry.desc}
-              </p>
-              <Link
-                href={entry.href}
-                className="text-primary font-semibold text-sm"
-              >
-                {entry.cta} →
-              </Link>
-            </Card>
-          ))}
+
+        <div className="mb-4">
+          <h3 className="text-xl font-heading font-bold mb-6 text-center">
+            {locale === "en" ? "Strategy & support" : "Strategija i podrška"}
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {strategySupport.map((entry) => (
+              <Card key={entry.title} className="h-full flex flex-col">
+                <h3 className="text-xl font-heading font-bold mb-1">
+                  {entry.title}
+                </h3>
+                <p className="text-lg font-heading font-bold text-primary mb-3">
+                  {entry.price}
+                </p>
+                <p className="text-gray-600 text-base mb-5 flex-1">
+                  {entry.desc}
+                </p>
+                <Link
+                  href={entry.href}
+                  className="text-primary font-semibold text-sm"
+                >
+                  {entry.cta} →
+                </Link>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-heading font-bold mb-6 text-center">
+            {locale === "en" ? "Complete campaign management" : "Kompletno vođenje kampanja"}
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {fullManagement.map((entry) => (
+              <Card key={entry.title} className="h-full flex flex-col">
+                <h3 className="text-xl font-heading font-bold mb-1">
+                  {entry.title}
+                </h3>
+                <p className="text-lg font-heading font-bold text-primary mb-1">
+                  {entry.price}
+                </p>
+                {entry.note && (
+                  <p className="text-sm text-gray-500 mb-3">{entry.note}</p>
+                )}
+                <p className={`text-gray-600 text-base mb-5 flex-1 ${entry.note ? "" : "mt-2"}`}>
+                  {entry.desc}
+                </p>
+                <Link
+                  href={entry.href}
+                  className="text-primary font-semibold text-sm"
+                >
+                  {entry.cta} →
+                </Link>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* Gde spadate — routing table */}
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            {locale === "en" ? "Where do you fit?" : "Gde spadate?"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {locale === "en"
+              ? "A quick guide based on monthly ad spend."
+              : "Brzi vodič na osnovu mesečnog ad spend-a."
+            }
+          </p>
+        </div>
+        <div className="max-w-2xl mx-auto overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr className="border-b-2 border-gray-200">
+                <th className="text-left py-3 px-4 text-sm font-heading font-semibold text-gray-900">
+                  {locale === "en" ? "Ad spend" : "Ad spend"}
+                </th>
+                <th className="text-left py-3 px-4 text-sm font-heading font-semibold text-gray-900">
+                  {locale === "en" ? "Best fit" : "Odgovara vam"}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {routingRows.map((row) => (
+                <tr key={row.range} className="border-b border-gray-100">
+                  <td className="py-3 px-4 text-sm text-gray-600">{row.range}</td>
+                  <td className="py-3 px-4 text-sm font-medium text-gray-900">{row.fit}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </Section>
 

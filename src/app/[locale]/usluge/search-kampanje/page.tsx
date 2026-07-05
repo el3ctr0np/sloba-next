@@ -166,7 +166,7 @@ export default async function SearchKampanjePage({ params }: Props) {
     "People actively search for what you offer",
     "You have a clearly defined offer (product/service)",
     "You can track conversions (online or offline)",
-    "Budget is minimum €500/month for Search"
+    "Budget is minimum $500/month for Search"
   ] : [
     "Ljudi aktivno pretražuju ono što nudite",
     "Imate jasno definisanu ponudu (proizvod/usluga)",

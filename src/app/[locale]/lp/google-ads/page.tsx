@@ -68,7 +68,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
   // =============================================
 
   const heroStats = [
-    { value: "€2M+", label: "Godišnji ad spend pod upravljanjem" },
+    { value: "3x", label: "UK Search Awards" },
     { value: "180%+", label: "Prosečno poboljšanje ROAS-a" },
     { value: "50+", label: "Brendova iz 6+ zemalja" },
   ];
@@ -223,7 +223,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     rows: [
       [
         "Mesečna investicija",
-        "Od €500/mes",
+        "Od €700/mes",
         "€300-500+/mes",
         "€1.200+ plata + alati",
       ],
@@ -274,12 +274,49 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
   const pricingTiers = [
     {
-      name: "Premium paket",
+      name: "Kickstart projekat",
+      price: "Od €690",
+      period: " jednokratno",
+      adSpend: "Za planirane budžete €1.000+/mes",
+      subtitle:
+        "Senior setup: arhitektura kampanja, keywords, oglasi, tracking specifikacija + verifikacija, 60-dnevni plan. Vi vodite dalje.",
+      features: [
+        "Arhitektura kampanja i struktura naloga",
+        "Istraživanje ključnih reči i konkurencije",
+        "Oglasi — RSA naslovi i opisi",
+        "Tracking specifikacija + verifikacija",
+        "60-dnevni plan optimizacije",
+        "Predaja naloga vašem timu",
+      ],
+      popular: false,
+      cta: "Zatražite Kickstart",
+      funkyBadge: false,
+    },
+    {
+      name: "eCommerce Growth",
+      price: "Od €700",
+      period: "/mes",
+      adSpend: "Saradnja ima smisla od €1.500+/mes ad spend-a",
+      subtitle:
+        "Ja lično vodim nalog: nedeljne optimizacije, feed, skaliranje.",
+      features: [
+        "Vođenje Search, Shopping i/ili PMax kampanja",
+        "Nedeljne optimizacije i A/B testiranje",
+        "Feed upravljanje i optimizacija",
+        "Mesečni report + strategijski call",
+        "Conversion tracking i analitika",
+      ],
+      popular: true,
+      cta: "Izaberite eCommerce Growth",
+      funkyBadge: false,
+    },
+    {
+      name: "Performance Marketing",
       price: "Po dogovoru",
       period: "",
-      adSpend: "Ad spend €5.000+ po kanalu",
+      adSpend: "Ad spend €5.000+/mes",
       subtitle:
-        "Za tržišne lidere — ili one koji to žele da postanu. Senior tim kroz sve digitalne kanale gradi jedinstveni revenue engine za vaš brend.",
+        "Powered by Funky Enterprises. Za brendove koji ciljaju lidersku poziciju u svojoj kategoriji.",
       features: [
         "Google Ads + Meta Ads + SEO + CRO",
         "Demand generation i pipeline arhitektura",
@@ -290,43 +327,8 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
         "Dedikirani account strateg",
       ],
       popular: false,
-      cta: "Zatražite Premium ponudu",
+      cta: "Zatražite Performance ponudu",
       funkyBadge: true,
-    },
-    {
-      name: "Standard paket",
-      price: "€500-700",
-      period: "/mes",
-      adSpend: "Ad spend €1.000-5.000/mes",
-      subtitle:
-        "Za kompanije koje već ulažu u Google Ads i žele stabilne rezultate uz pametno skaliranje.",
-      features: [
-        "Vođenje Search, Shopping i/ili PMax kampanja",
-        "Nedeljne optimizacije i A/B testiranje",
-        "Mesečni report + strategijski call",
-        "Kvartalna strategijska analiza",
-        "Conversion tracking i analitika",
-      ],
-      popular: true,
-      cta: "Izaberite Standard",
-      funkyBadge: false,
-    },
-    {
-      name: "Starter paket",
-      price: "Od €350",
-      period: "/mes",
-      adSpend: "Ad spend €300-1.000/mes",
-      subtitle:
-        "Za kompanije koje tek počinju sa Google Ads ili imaju manji budžet.",
-      features: [
-        "Setup i vođenje do 2 tipa kampanja",
-        "Optimizacija svake 2 nedelje",
-        "Mesečni report sa ključnim metrikama",
-        "Conversion tracking setup",
-      ],
-      popular: false,
-      cta: "Počnite sa Starter-om",
-      funkyBadge: false,
     },
   ];
 
@@ -360,7 +362,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     {
       question: "Koji je preporučeni budžet za oglašavanje?",
       answer:
-        "Najbolje rezultate vidimo kod klijenata koji investiraju €1.000+ mesečno u ad spend. Za manje budžete (€300-1.000) postoji Starter paket sa biweekly optimizacijom. Za budžete ispod €300, preporučujem jednokratnu konsultaciju.",
+        "Za mesečno vođenje naloga (eCommerce Growth) najbolje rezultate vidimo kod klijenata koji ulažu €1.500+ mesečno u ad spend. Za planirane budžete od €1.000+/mes, ali gde tek gradite temelje, ima smisla Kickstart projekat — jednokratan senior setup nakon kog vi vodite dalje.",
     },
     {
       question: "Šta ako već imam kampanje koje rade?",
@@ -380,7 +382,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     {
       question: "Da li pokrivate i ostale kanale osim Google Ads?",
       answer:
-        "Da — kroz Premium paket sa Funky Enterprises pokrivamo Google Ads, Meta Ads, SEO, CRO i kompletnu digitalnu strategiju. Conversion tracking, analitika i atribucija su uključeni u svaki paket.",
+        "Da — kroz Performance Marketing paket sa Funky Enterprises pokrivamo Google Ads, Meta Ads, SEO, CRO i kompletnu digitalnu strategiju. Conversion tracking, analitika i atribucija su uključeni u svaki paket.",
     },
     {
       question: "Sa kojim tipovima biznisa radite?",
@@ -459,7 +461,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-red-400"></span>
                 </span>
-                Trenutno primam samo 2 nova klijenta u aprilu
+                Svesno primam ograničen broj novih klijenata po kvartalu — trenutnu dostupnost proveravamo na 20-min pozivu
               </div>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 leading-tight">
@@ -510,7 +512,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <Handshake size={14} strokeWidth={1.5} className="text-slate-400" />
-                  €2M+ ad spend pod upravljanjem
+                  10+ godina iskustva
                 </span>
               </div>
             </div>
@@ -796,7 +798,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 </p>
                 <p>
                   Radio sam u agencijama uključujući Exposure Ninja (UK) kao Head
-                  of PPC, upravljao sa €2M+ godišnjim ad spend-om i osvojio 3x
+                  of PPC, vodio kampanje koje su osvojile 3x
                   UK Search Awards. Sada radim nezavisno — što znači da uvek
                   dobijate senior-level ekspertizu direktno.
                 </p>
@@ -813,7 +815,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
                   <BarChart3 size={16} strokeWidth={1.5} className="text-gray-500" />
-                  €2M+ Ad Spend
+                  10+ Godina Iskustva
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700">
                   <Globe size={16} strokeWidth={1.5} className="text-gray-500" />
@@ -979,7 +981,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             Zakažite besplatan razgovor
           </a>
           <p className="text-sm text-white/60 mt-3">
-            Trenutno primam samo 2 nova klijenta u aprilu
+            Svesno primam ograničen broj novih klijenata po kvartalu — trenutnu dostupnost proveravamo na 20-min pozivu
           </p>
         </div>
       </section>
@@ -1056,14 +1058,14 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 className={`rounded-lg p-6 relative flex flex-col ${
                   tier.popular
                     ? "bg-white border-2 border-yellow-400 shadow-card"
-                    : tier.name.includes("Premium")
+                    : tier.name.includes("Performance Marketing")
                       ? "bg-slate-900 text-white border-2 border-slate-700 shadow-card"
                       : "bg-white border border-gray-200 shadow-card"
                 }`}
               >
                 {tier.popular && (
                   <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
-                    Najpopularniji
+                    Najčešći izbor
                   </span>
                 )}
                 <h3 className="text-xl font-heading font-bold mb-1">
@@ -1071,7 +1073,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 </h3>
                 <p
                   className={`text-2xl font-heading font-bold mb-1 ${
-                    tier.name.includes("Premium")
+                    tier.name.includes("Performance Marketing")
                       ? "text-yellow-400"
                       : "text-primary"
                   }`}
@@ -1079,7 +1081,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                   {tier.price}
                   <span
                     className={`text-sm font-normal ${
-                      tier.name.includes("Premium")
+                      tier.name.includes("Performance Marketing")
                         ? "text-slate-400"
                         : "text-gray-500"
                     }`}
@@ -1090,7 +1092,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 {tier.adSpend && (
                   <p
                     className={`text-xs font-medium mb-2 ${
-                      tier.name.includes("Premium")
+                      tier.name.includes("Performance Marketing")
                         ? "text-yellow-400/80"
                         : "text-primary/70"
                     }`}
@@ -1100,7 +1102,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 )}
                 <p
                   className={`text-sm mb-4 ${
-                    tier.name.includes("Premium")
+                    tier.name.includes("Performance Marketing")
                       ? "text-slate-300"
                       : "text-gray-600"
                   }`}
@@ -1112,7 +1114,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                     <li key={feature} className="flex items-start gap-2">
                       <span
                         className={`flex-shrink-0 ${
-                          tier.name.includes("Premium")
+                          tier.name.includes("Performance Marketing")
                             ? "text-yellow-400"
                             : "text-green-600"
                         }`}
@@ -1121,7 +1123,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                       </span>
                       <span
                         className={
-                          tier.name.includes("Premium")
+                          tier.name.includes("Performance Marketing")
                             ? "text-slate-300"
                             : "text-gray-600"
                         }
@@ -1140,9 +1142,9 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                   </div>
                 )}
                 <a
-                  href={tier.name.includes("Premium") ? "https://www.funky.enterprises/full-marketing-operations" : "#contact-form"}
-                  target={tier.name.includes("Premium") ? "_blank" : undefined}
-                  rel={tier.name.includes("Premium") ? "noopener noreferrer" : undefined}
+                  href={tier.name.includes("Performance Marketing") ? "https://www.funky.enterprises/full-marketing-operations" : "#contact-form"}
+                  target={tier.name.includes("Performance Marketing") ? "_blank" : undefined}
+                  rel={tier.name.includes("Performance Marketing") ? "noopener noreferrer" : undefined}
                   className={`block text-center mt-auto ${
                     tier.popular ? "btn-secondary" : "btn-primary"
                   }`}
@@ -1163,7 +1165,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
               </span>
-              Trenutno primam samo 2 nova klijenta u aprilu
+              Ograničen broj novih klijenata po kvartalu — proverite dostupnost na pozivu
             </div>
           </div>
         </div>
@@ -1272,7 +1274,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             </span>
             <span className="inline-flex items-center gap-1.5">
               <BarChart3 size={14} strokeWidth={1.5} className="text-slate-400" />
-              €2M+ Ad Spend
+              10+ Godina Iskustva
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Globe size={14} strokeWidth={1.5} className="text-slate-400" />

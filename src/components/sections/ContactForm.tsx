@@ -51,11 +51,11 @@ export function ContactForm() {
           {locale === "sr" ? "Mesečni budžet za oglašavanje" : "Monthly ad budget"}
         </option>
         <option value="<500">
-          {locale === "sr" ? "Do €500/mesec" : "Under €500/month"}
+          {locale === "sr" ? "Do €500/mesec" : "Under $500/month"}
         </option>
-        <option value="500-1500">€500 – €1,500/{locale === "sr" ? "mesec" : "month"}</option>
-        <option value="1500-5000">€1,500 – €5,000/{locale === "sr" ? "mesec" : "month"}</option>
-        <option value="5000+">€5,000+/{locale === "sr" ? "mesec" : "month"}</option>
+        <option value="500-1500">{locale === "sr" ? "€500 – €1.500/mesec" : "$500 – $1,500/month"}</option>
+        <option value="1500-5000">{locale === "sr" ? "€1.500 – €5.000/mesec" : "$1,500 – $5,000/month"}</option>
+        <option value="5000+">{locale === "sr" ? "€5.000+/mesec" : "$5,000+/month"}</option>
         <option value="not-sure">
           {locale === "sr" ? "Nisam siguran/na" : "Not sure yet"}
         </option>

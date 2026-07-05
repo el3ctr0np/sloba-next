@@ -278,7 +278,7 @@ export default async function ThankYouPage({ params }: Props) {
               <p className="text-sm text-yellow-200 mb-1">
                 <span className="font-semibold text-yellow-400">
                   {locale === "en"
-                    ? "Spending €2,000+/month on Google Ads?"
+                    ? "Spending $2,000+/month on Google Ads?"
                     : "Trošite €2.000+ mesečno na Google Ads?"}
                 </span>
               </p>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
-import { HelpCircle, Banknote, BookOpen, Clock } from "lucide-react";
+import { Layers, ShieldCheck, ListChecks, Handshake } from "lucide-react";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
@@ -14,427 +14,332 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Setup from €300 | Starter Package — Slobodan Jelisavac"
-      : "Google Ads Cena od €300 — Starter Paket Srbija",
+      ? "Google Ads Kickstart — Senior Setup from $990 — Slobodan Jelisavac"
+      : "Google Ads Kickstart — senior setup od €690",
     description: isEn
-      ? "Professional Google Ads setup for beginners, price from €300. Campaigns that work from day one + training for self-management, tracking, and 30-day support."
-      : "Google Ads usluge za početnike — cena od €300 za profesionalni setup kampanja, tracking i edukaciju za samostalno vođenje. 30 dana podrške uključeno.",
+      ? "Senior Google Ads setup for teams with an in-house owner who takes it from there. Architecture, keywords, RSAs, tracking spec, 60-day plan, handover session. From $990."
+      : "Senior Google Ads setup za timove koji imaju osobu za dalje vođenje kampanja. Arhitektura naloga, ključne reči, RSA oglasi, tracking specifikacija, 60-dnevni plan, handover sesija. Od €690.",
     locale,
-    path: "/services/starter-package",
+    path: "/services/kickstart",
     srPath: "/usluge/starter-paket",
   });
 }
 
 export default async function StarterPaketPage({ params }: Props) {
   const { locale } = await params;
+  const isEn = locale === "en";
 
-  const idealFor =
-    locale === "en"
-      ? [
-          "You're new to Google Ads",
-          "You want professional campaign structure without monthly contracts",
-          "You have time to monitor and optimize campaigns yourself",
-          "You want to learn how Google Ads works",
-          "You plan to manage campaigns yourself after initial setup"
-        ]
-      : [
-          "Tek počinjete sa Google Ads-om",
-          "Želite profesionalnu strukturu kampanja bez mesečnog ugovora",
-          "Imate vremena da sami pratite i optimizujete kampanje",
-          "Želite da naučite kako Google Ads funkcioniše",
-          "Planirate sami voditi kampanje nakon početnog setup-a"
-        ];
+  const idealFor = isEn
+    ? [
+        "You have an in-house person (or you're the founder) who will run campaigns going forward",
+        "Planned ad budget of $2,000+/month",
+        "A functional website that can support conversion tracking",
+        "You want a senior setup once, not a monthly retainer",
+        "You can handle day-to-day optimization after handover"
+      ]
+    : [
+        "Imate in-house osobu (ili ste vi founder) koja će voditi kampanje dalje",
+        "Planirani ad budžet €1.000+/mesečno",
+        "Funkcionalan sajt koji može da podrži conversion tracking",
+        "Želite senior setup jednom, ne mesečni retainer",
+        "Možete da preuzmete svakodnevnu optimizaciju posle handover-a"
+      ];
 
-  const notFor =
-    locale === "en"
-      ? [
-          "You don't have time to monitor campaigns (you need ongoing management)",
-          "Your ad budget exceeds €1,500/month (full management is better)",
-          "You prefer results without learning the platform",
-          "You're looking for an agency to handle everything"
-        ]
-      : [
-          "Nemate vremena za praćenje kampanja (potreban vam je ongoing management)",
-          "Budžet za ads je preko €1,500 mesečno (bolje vam je full upravljanje)",
-          "Ne želite da učite već samo rezultate",
-          "Tražite agenciju koja će sve voditi umesto vas"
-        ];
+  const notFor = isEn
+    ? [
+        "You want someone else to run the account long-term (see Google Ads Management)",
+        "No one on your team has time to own campaigns after launch",
+        "You need tracking implementation done for you (see below — that's a separate step)",
+        "Ad budget under $2,000/month — start with a consultation instead"
+      ]
+    : [
+        "Želite da neko drugi dugoročno vodi nalog (pogledajte Google Ads upravljanje)",
+        "Niko u vašem timu nema vremena da preuzme kampanje posle launcha",
+        "Treba vam da neko implementira tracking umesto vas (vidi ispod — to je poseban korak)",
+        "Ad budžet ispod €1.000/mesečno — krenite radije sa konsultacijom"
+      ];
 
   const iconProps = { size: 28, strokeWidth: 1.5 } as const;
 
-  const problems: { icon: ReactNode; title: string; description: string }[] =
-    locale === "en"
-      ? [
-          {
-            icon: <HelpCircle {...iconProps} className="text-gray-900" />,
-            title: "Don't know where to start",
-            description:
-              "The Google Ads interface is confusing. Campaigns, ad groups, keywords, bidding — everything seems complicated."
-          },
-          {
-            icon: <Banknote {...iconProps} className="text-gray-900" />,
-            title: "Fear of wasting budget",
-            description:
-              "You're worried about launching campaigns that burn budget without results. You've read the horror stories."
-          },
-          {
-            icon: <BookOpen {...iconProps} className="text-gray-900" />,
-            title: "Too many YouTube tutorials",
-            description:
-              "Every tutorial says something different. You don't know what actually works and what's outdated."
-          },
-          {
-            icon: <Clock {...iconProps} className="text-gray-900" />,
-            title: "Agencies are too expensive",
-            description:
-              "€500+ monthly for management is out of budget, but you want a professional approach."
-          }
-        ]
-      : [
-          {
-            icon: <HelpCircle {...iconProps} className="text-gray-900" />,
-            title: "Ne znate odakle da počnete",
-            description:
-              "Google Ads interfejs je konfuzan. Kampanje, ad grupe, ključne reči, bidding — sve izgleda komplikovano."
-          },
-          {
-            icon: <Banknote {...iconProps} className="text-gray-900" />,
-            title: "Strah od bacanja budžeta",
-            description:
-              "Plaši vas da pokrenete kampanje koje će spaliti budžet bez rezultata. Čitali ste priče o neuspesima."
-          },
-          {
-            icon: <BookOpen {...iconProps} className="text-gray-900" />,
-            title: "Previše YouTube tutorijala",
-            description:
-              "Svaki tutorial kaže nešto različito. Ne znate šta zaista funkcioniše a šta je već zastarelo."
-          },
-          {
-            icon: <Clock {...iconProps} className="text-gray-900" />,
-            title: "Agencija je preskupa",
-            description:
-              "€500+ mesečno za upravljanje je van budžeta, ali želite profesionalan pristup."
-          }
-        ];
+  const pillars: { icon: ReactNode; title: string; description: string }[] = isEn
+    ? [
+        {
+          icon: <Layers {...iconProps} className="text-gray-900" />,
+          title: "Account architecture, not templates",
+          description:
+            "Campaign and ad group structure built around how your business actually sells — not a generic template pulled from a tutorial."
+        },
+        {
+          icon: <ListChecks {...iconProps} className="text-gray-900" />,
+          title: "Written keyword and negative strategy",
+          description:
+            "Full keyword lists with match types, plus a negative keyword list to stop budget leaking on irrelevant searches from day one."
+        },
+        {
+          icon: <ShieldCheck {...iconProps} className="text-gray-900" />,
+          title: "A tracking gate, not a guess",
+          description:
+            "I don't launch anything until conversions are verified. If your tracking isn't ready, the launch waits — that's the point."
+        },
+        {
+          icon: <Handshake {...iconProps} className="text-gray-900" />,
+          title: "Handover built for a real handoff",
+          description:
+            "A 60-minute session and a 60-day plan so whoever owns the account next knows exactly what to do and why."
+        }
+      ]
+    : [
+        {
+          icon: <Layers {...iconProps} className="text-gray-900" />,
+          title: "Arhitektura naloga, ne template",
+          description:
+            "Struktura kampanja i ad grupa napravljena prema tome kako vaš biznis stvarno prodaje — ne generički template iz tutorijala."
+        },
+        {
+          icon: <ListChecks {...iconProps} className="text-gray-900" />,
+          title: "Pisana keyword i negative strategija",
+          description:
+            "Kompletne liste ključnih reči sa match types, plus lista negativnih reči da budžet ne curi na irelevantne pretrage od prvog dana."
+        },
+        {
+          icon: <ShieldCheck {...iconProps} className="text-gray-900" />,
+          title: "Tracking gate, ne pretpostavka",
+          description:
+            "Ne puštam ništa live dok konverzije nisu verifikovane. Ako tracking nije spreman, launch čeka — to je poenta."
+        },
+        {
+          icon: <Handshake {...iconProps} className="text-gray-900" />,
+          title: "Handover napravljen za realnu predaju",
+          description:
+            "60-minutna sesija i 60-dnevni plan da osoba koja preuzima nalog tačno zna šta da radi i zašto."
+        }
+      ];
 
-  const solutions =
-    locale === "en"
-      ? [
-          {
-            title: "Proven campaign structure",
-            description:
-              "You get campaigns set up according to best practices proven in real accounts — not generic YouTube tutorials."
-          },
-          {
-            title: "Properly configured tracking",
-            description:
-              "GTM, conversion tracking, GA4 linking — everything set up correctly so you know exactly what's working."
-          },
-          {
-            title: "Hands-on training with Q&A",
-            description:
-              "45-60 minute 1-on-1 training where I walk you through everything, answer your questions, and make sure you can manage campaigns independently."
-          },
-          {
-            title: "30 days support for questions",
-            description:
-              "After setup you get email support for questions while you're learning to manage campaigns yourself."
-          }
-        ]
-      : [
-          {
-            title: "Proven struktura kampanja",
-            description:
-              "Dobijate kampanje postavljene prema best practice-ima koji se dokazano pokazuju u realnim nalozima — ne prema generičkim YouTube tutorijalima."
-          },
-          {
-            title: "Pravilno podešen tracking",
-            description:
-              "GTM, conversion tracking, GA4 linking — sve pravilno setup-ovano da tačno znate šta radi i šta ne."
-          },
-          {
-            title: "Live edukacija sa proverom razumevanja",
-            description:
-              "45-60 minuta 1-on-1 training gde ne samo objašnjavam kako šta radi, već proveravamo da razumete i možete sami dalje."
-          },
-          {
-            title: "30 dana podrške za pitanja",
-            description:
-              "Nakon setup-a dobijate email podršku za pitanja dok se ne osposobite da samostalno vodite kampanje."
-          }
-        ];
+  const inclusions = isEn
+    ? [
+        {
+          title: "Account & campaign architecture",
+          items: [
+            "Campaign and ad group structure tailored to your business model",
+            "Keyword research with match types",
+            "Negative keyword lists",
+            "Extensions setup (sitelinks, callouts, structured snippets)"
+          ]
+        },
+        {
+          title: "Ad copy",
+          items: [
+            "Written Responsive Search Ads per ad group",
+            "Headline and description variations aligned to search intent",
+            "Feed review for eCommerce accounts (Shopping/PMax readiness)"
+          ]
+        },
+        {
+          title: "Tracking specification & verification",
+          items: [
+            "Precise specification of what must be measured and how",
+            "Verification of conversions before anything goes live",
+            "Implementation itself is not included — see note below"
+          ]
+        },
+        {
+          title: "Plan and handover",
+          items: [
+            "Strategy consultation before the build (included — otherwise $200/hr)",
+            "60-day action plan for the account owner",
+            "60-minute handover session (recorded)",
+            "Written documentation specific to your account"
+          ]
+        }
+      ]
+    : [
+        {
+          title: "Arhitektura naloga i kampanja",
+          items: [
+            "Struktura kampanja i ad grupa prilagođena vašem biznis modelu",
+            "Keyword research sa match types",
+            "Liste negativnih ključnih reči",
+            "Extensions setup (sitelinks, callouts, structured snippets)"
+          ]
+        },
+        {
+          title: "Oglasi",
+          items: [
+            "Napisani Responsive Search Ads po ad grupi",
+            "Varijacije naslova i opisa usklađene sa search intent-om",
+            "Feed review za eCommerce naloge (Shopping/PMax spremnost)"
+          ]
+        },
+        {
+          title: "Tracking specifikacija i verifikacija",
+          items: [
+            "Precizna specifikacija šta mora da se meri i kako",
+            "Verifikacija konverzija pre nego što bilo šta ide live",
+            "Sama implementacija nije uključena — vidi napomenu ispod"
+          ]
+        },
+        {
+          title: "Plan i handover",
+          items: [
+            "Strategijska konsultacija pre setupa (uključena — inače €150/sat)",
+            "60-dnevni akcioni plan za osobu koja vodi nalog",
+            "60-minutna handover sesija (snimljena)",
+            "Pisana dokumentacija specifična za vaš nalog"
+          ]
+        }
+      ];
 
-  const inclusions =
-    locale === "en"
-      ? [
-          {
-            title: "Google Ads setup",
-            items: [
-              "Professional campaign structure tailored to your business",
-              "Search campaign with 20-50 keywords",
-              "Responsive Search Ads (2-3 per ad group)",
-              "Extensions setup (sitelinks, callouts, structured snippets)",
-              "Initial negative keyword list",
-              "Basic remarketing setup"
-            ]
-          },
-          {
-            title: "Conversion tracking",
-            items: [
-              "Google Tag Manager setup",
-              "2-3 conversion actions (purchase, lead, phone call)",
-              "Google Analytics 4 integration",
-              "Verification that tracking works correctly"
-            ]
-          },
-          {
-            title: "Training and documentation",
-            items: [
-              "1-on-1 live training session (45-60 min)",
-              "Written documentation specific to your account",
-              "Weekly optimization checklist",
-              "Video recording of training session (for reference)"
-            ]
-          },
-          {
-            title: "Follow-up support",
-            items: [
-              "30 days email support for questions",
-              "Responses within 24h on business days"
-            ]
-          }
-        ]
-      : [
-          {
-            title: "Google Ads setup",
-            items: [
-              "Profesionalna struktura kampanja prilagođena vašem biznisu",
-              "Search kampanja sa 20-50 ključnih reči",
-              "Responsive Search Ads (2-3 po ad grupi)",
-              "Extensions setup (sitelinks, callouts, structured snippets)",
-              "Početna lista negativnih ključnih reči",
-              "Basic remarketing setup"
-            ]
-          },
-          {
-            title: "Conversion tracking",
-            items: [
-              "Google Tag Manager setup",
-              "2-3 conversion actions (purchase, lead, phone call)",
-              "Google Analytics 4 integracija",
-              "Provera da tracking tačno radi"
-            ]
-          },
-          {
-            title: "Edukacija i dokumentacija",
-            items: [
-              "1-on-1 live training session (45-60 min)",
-              "Pisana dokumentacija specifična za vaš nalog",
-              "Checklist za nedeljnu optimizaciju",
-              "Video snimak training sesije (za podsetnik)"
-            ]
-          },
-          {
-            title: "Follow-up podrška",
-            items: [
-              "30 dana email podrške za pitanja",
-              "Odgovori u roku od 24h radnim danima"
-            ]
-          }
-        ];
+  const processSteps = isEn
+    ? [
+        {
+          number: 1,
+          title: "20-minute scoping call",
+          description:
+            "We confirm fit — budget, in-house ownership, site readiness — and define the exact scope before any quote."
+        },
+        {
+          number: 2,
+          title: "Research and architecture",
+          description:
+            "Keyword research, competitor review, and account/campaign structure built for your specific business."
+        },
+        {
+          number: 3,
+          title: "Ad copy and tracking spec",
+          description:
+            "RSAs written per ad group, plus a written tracking specification covering exactly what needs to be measured."
+        },
+        {
+          number: 4,
+          title: "Tracking verification gate",
+          description:
+            "Your team (or your vendor) implements tracking. I verify it's firing correctly before campaigns launch — no exceptions."
+        },
+        {
+          number: 5,
+          title: "Handover session",
+          description:
+            "60-minute session walking through the account, the 60-day plan, and what to watch in the first weeks."
+        }
+      ]
+    : [
+        {
+          number: 1,
+          title: "20-minutni scoping poziv",
+          description:
+            "Potvrđujemo fit — budžet, in-house vlasništvo naloga, spremnost sajta — i definišemo tačan obim pre bilo kakve ponude."
+        },
+        {
+          number: 2,
+          title: "Istraživanje i arhitektura",
+          description:
+            "Keyword research, pregled konkurencije i struktura naloga/kampanja napravljena za vaš specifičan biznis."
+        },
+        {
+          number: 3,
+          title: "Oglasi i tracking specifikacija",
+          description:
+            "RSA oglasi napisani po ad grupi, plus pisana tracking specifikacija koja pokriva tačno šta treba da se meri."
+        },
+        {
+          number: 4,
+          title: "Tracking verification gate",
+          description:
+            "Vaš tim (ili vaš vendor) implementira tracking. Ja verifikujem da radi ispravno pre nego što kampanje krenu live — bez izuzetka."
+        },
+        {
+          number: 5,
+          title: "Handover sesija",
+          description:
+            "60-minutna sesija kroz nalog, 60-dnevni plan i šta da pratite u prvim nedeljama."
+        }
+      ];
 
-  const processSteps =
-    locale === "en"
-      ? [
-          {
-            number: 1,
-            title: "Kickoff call and discovery",
-            description:
-              "15-30 min conversation about your business, goals, budget and current state (if you already have campaigns)."
-          },
-          {
-            number: 2,
-            title: "Research and planning",
-            description:
-              "Keyword research, competitor analysis and creating campaign structure tailored to your industry."
-          },
-          {
-            number: 3,
-            title: "Campaign and tracking setup",
-            description:
-              "Creating campaigns, ad groups, ads, extensions and configuring conversion tracking."
-          },
-          {
-            number: 4,
-            title: "Live training session",
-            description:
-              "45-60 min 1-on-1 training where we go through the account, I explain what's been done and how to optimize going forward."
-          },
-          {
-            number: 5,
-            title: "Campaigns live + 30 days support",
-            description:
-              "Campaigns are active, you monitor performance. I'm available for questions via email for the next month."
-          }
-        ]
-      : [
-          {
-            number: 1,
-            title: "Kickoff poziv i discovery",
-            description:
-              "15-30 min razgovor o vašem biznisu, ciljevima, budžetu i trenutnom stanju (ako već imate kampanje)."
-          },
-          {
-            number: 2,
-            title: "Istraživanje i planiranje",
-            description:
-              "Keyword research, analiza konkurencije i kreiranje strukture kampanja prilagođene vašoj industriji."
-          },
-          {
-            number: 3,
-            title: "Setup kampanja i trackinga",
-            description:
-              "Kreiranje kampanja, ad grupa, oglasa, extensions-a i podešavanje conversion trackinga."
-          },
-          {
-            number: 4,
-            title: "Live training session",
-            description:
-              "45-60 min 1-on-1 edukacija gde prolazimo kroz nalog, objašnjavam šta je urađeno i kako dalje optimizovati."
-          },
-          {
-            number: 5,
-            title: "Kampanje live + 30 dana podrške",
-            description:
-              "Kampanje su aktivne, vi pratite performanse. Dostupan sam za pitanja putem email-a narednih mesec dana."
-          }
-        ];
-
-  const results =
-    locale === "en"
-      ? [
-          {
-            value: "€300",
-            label: "from — professional entry point to Google Ads"
-          },
-          { value: "45-60min", label: "live training tailored to your account" },
-          { value: "30 days", label: "email support after setup" }
-        ]
-      : [
-          {
-            value: "€300",
-            label: "od — ulazna tačka u Google Ads sa profesionalnim pristupom"
-          },
-          { value: "45-60min", label: "live edukacije prilagođene vašem nalogu" },
-          { value: "30 dana", label: "email podrške nakon setup-a" }
-        ];
-
-  const faqs =
-    locale === "en"
-      ? [
-          {
-            question: "Do I need previous Google Ads experience?",
-            answer:
-              "No. The Starter Package is designed for complete beginners. The training session covers the basics needed to run campaigns, and written documentation stays with you as a reference."
-          },
-          {
-            question: "What ad budget do I need?",
-            answer:
-              "I recommend a minimum of €500 monthly for ad spend. Ideally €800-1,000 to start so Google's algorithm has enough data to learn. The Starter Package is a one-time fee — this is your ad spend budget."
-          },
-          {
-            question: "Can I upgrade to full management later?",
-            answer:
-              "Yes. Many clients start with the Starter Package, and when campaigns grow or they need more time, they move to ongoing management. The setup I do stays — we just build on it."
-          },
-          {
-            question: "How much time weekly is needed for campaign maintenance?",
-            answer:
-              "For basic maintenance, count on 30-60 minutes weekly. This includes checking performance, adding negative keywords, and minor bid adjustments."
-          },
-          {
-            question: "What if my campaigns don't deliver results?",
-            answer:
-              "Google Ads isn't magic — results depend on product, offer, pricing, competition and budget. My job is to set up a structure that eliminates common mistakes and gives you the best chance of success. The training session covers what to track and how to optimize."
-          },
-          {
-            question: "Do you work with eCommerce campaigns?",
-            answer:
-              "Yes. The eCommerce Starter Package (€700) includes Search + Shopping campaigns, basic feed review and feed optimization recommendations. Basic Starter starts at €300."
-          },
-          {
-            question: "How long from start to live campaigns?",
-            answer:
-              "Usually 5-7 business days from kickoff call to live campaigns. Depends on how quickly you can provide account access and additional information if needed."
-          },
-          {
-            question: "What if I already have poorly performing campaigns?",
-            answer:
-              "I start with a quick audit of the current state. If the structure can be fixed, I optimize it. If it's better to start fresh, we create new campaigns with proper structure. Either way, you get a clean setup and understanding of what's next."
-          },
-          {
-            question: "Is the Starter Package a one-time fee or do I need a contract?",
-            answer:
-              "One-time fee, no contract. You pay once for setup, tracking, and training, then you own and run the campaigns yourself. If you later want ongoing management, that's a separate service with no obligation to switch."
-          },
-          {
-            question: "Why choose a Starter Package over hiring an agency?",
-            answer:
-              "Agencies typically require a monthly retainer even for basic setup. The Starter Package gives you the same professional structure and tracking as a one-time investment, plus training so you're not dependent on anyone afterward — ideal if your budget doesn't yet justify ongoing management."
-          }
-        ]
-      : [
-          {
-            question: "Da li mi treba prethodno iskustvo sa Google Ads-om?",
-            answer:
-              "Ne. Starter paket je dizajniran za potpune početnike. Training sesija pokriva osnove potrebne za vođenje kampanja, a pisana dokumentacija ostaje uz vas kao referenca."
-          },
-          {
-            question: "Koliki budžet za oglase treba da imam?",
-            answer:
-              "Preporučujem minimum €500 mesečno za ad spend. Idealno je €800-1,000 za početak kako bi Google-ov algoritam imao dovoljno podataka za učenje. Starter paket je jednokratna cena — ovo je vaš ad spend budžet."
-          },
-          {
-            question: "Da li mogu kasnije da nadogradim na full management?",
-            answer:
-              "Da. Mnogi klijenti počnu sa Starter paketom, a kada kampanje porastu ili im zatreba više vremena, pređu na ongoing upravljanje. Setup koji radim ostaje — samo nadograđujemo."
-          },
-          {
-            question: "Koliko vremena nedeljno treba za održavanje kampanja?",
-            answer:
-              "Za basic maintenance računajte na 30-60 minuta nedeljno. To uključuje proveru performansi, dodavanje negativnih ključnih reči i minor bid adjustments."
-          },
-          {
-            question: "Šta ako mi kampanje ne donesu rezultate?",
-            answer:
-              "Google Ads nije magija — rezultati zavise od proizvoda, ponude, cena, konkurencije i budžeta. Moj zadatak je da postavim strukturu koja eliminiše najčešće greške i daje vam najbolje šanse za uspeh. Training sesija pokriva šta da pratite i kako da optimizujete."
-          },
-          {
-            question: "Da li radite i eCommerce kampanje?",
-            answer:
-              "Da. eCommerce Starter paket (€700) uključuje Search + Shopping kampanju, basic feed review i preporuke za optimizaciju feed-a."
-          },
-          {
-            question: "Koliko traje proces od početka do live kampanja?",
-            answer:
-              "Obično 5-7 radnih dana od kickoff poziva do live kampanja. Zavisi od toga koliko brzo možete da obezbedite pristup nalogu i dodatne informacije ako zatreba."
-          },
-          {
-            question: "Šta ako već imam kampanje koje rade loše?",
-            answer:
-              "Počinjem sa quick auditom postojećeg stanja. Ako struktura može da se popravi, radim optimizaciju. Ako je bolje krenuti iznova, kreiramo nove kampanje sa pravilnom strukturom. U oba slučaja dobijate čist setup i razumevanje šta dalje."
-          },
-          {
-            question: "Da li je Starter paket jednokratna cena ili treba ugovor?",
-            answer:
-              "Jednokratna cena, bez ugovora. Platite jednom za setup, tracking i edukaciju, a onda samostalno vodite kampanje. Ako kasnije poželite ongoing upravljanje, to je posebna usluga bez obaveze da pređete na nju."
-          },
-          {
-            question: "Zašto Starter paket umesto angažovanja agencije?",
-            answer:
-              "Agencije obično traže mesečni retainer čak i za osnovni setup. Starter paket vam daje istu profesionalnu strukturu i tracking kao jednokratnu investiciju, plus edukaciju da posle ne zavisite ni od koga — idealno ako vaš budžet još ne opravdava ongoing upravljanje."
-          }
-        ];
+  const faqs = isEn
+    ? [
+        {
+          question: "Who is Kickstart built for?",
+          answer:
+            "Teams or founders who already have someone to own the account day-to-day — you just need it built right the first time. If you need someone to run it long-term, that's Google Ads Management, not Kickstart."
+        },
+        {
+          question: "Why isn't tracking implementation included?",
+          answer:
+            "Tracking implementation touches your site's codebase and varies wildly by platform (Shopify, custom stack, WordPress, headless). I don't do that work — vetted vendors I work with do, billed separately. What I guarantee is the specification of exactly what must be measured, and I verify it works before anything launches. That's a senior gate, not a gap."
+        },
+        {
+          question: "What ad budget do I need?",
+          answer:
+            "Plan for at least $2,000/month in ad spend. Below that, Google's algorithm doesn't get enough signal for Smart Bidding to work, and a full architecture is overkill — a consultation is a better starting point."
+        },
+        {
+          question: "How is the final price determined?",
+          answer:
+            "Kickstart starts from $990. The final quote depends on scope — number of campaigns, whether Shopping/PMax is involved, and complexity of your account — confirmed after the 20-minute call."
+        },
+        {
+          question: "What if I want ongoing management instead?",
+          answer:
+            "If you'd rather I run the account long-term instead of handing it off, check out Google Ads Management. Some clients start with Kickstart and move to management later once they see what running it well actually takes."
+        },
+        {
+          question: "How long from kickoff to handover?",
+          answer:
+            "Usually 10-15 business days, depending on how quickly tracking gets implemented and verified on your side — that's typically the pacing factor, not my work."
+        },
+        {
+          question: "What if I already have campaigns running?",
+          answer:
+            "I start with a quick review of the current state. If the structure is salvageable, I rebuild around it. If not, we start clean. Either way, you get a proper architecture and a plan for what's next."
+        },
+        {
+          question: "Is this a one-time fee?",
+          answer:
+            "Yes — one payment, no contract. You get the architecture, copy, tracking spec, plan, and handover, then you run it. If you want to switch to ongoing management later, that's a separate conversation with no obligation."
+        }
+      ]
+    : [
+        {
+          question: "Za koga je Kickstart napravljen?",
+          answer:
+            "Za timove ili osnivače koji već imaju nekoga da svakodnevno vodi nalog — samo treba da bude napravljen kako treba od prvog dana. Ako vam treba neko da ga vodi dugoročno, to je Google Ads upravljanje, ne Kickstart."
+        },
+        {
+          question: "Zašto implementacija trackinga nije uključena?",
+          answer:
+            "Implementacija trackinga dira kod vašeg sajta i drastično se razlikuje po platformi (Shopify, custom stack, WordPress, headless). Taj posao ne radim ja — rade ga provereni vendori sa kojima sarađujem, naplaćuje se posebno. Ono što garantujem je specifikacija šta tačno mora da se meri, i verifikacija da radi pre nego što bilo šta ide live. To je senior gate, ne rupa u usluzi."
+        },
+        {
+          question: "Koliki ad budžet mi treba?",
+          answer:
+            "Planirajte minimum €1.000 mesečno za ad spend. Ispod toga Google-ov algoritam nema dovoljno signala da Smart Bidding radi kako treba, a kompletna arhitektura je overkill — konsultacija je bolja polazna tačka."
+        },
+        {
+          question: "Kako se određuje konačna cena?",
+          answer:
+            "Kickstart počinje od €690. Konačna ponuda zavisi od obima — broja kampanja, da li je uključen Shopping/PMax i kompleksnosti naloga — potvrđuje se posle 20-minutnog poziva."
+        },
+        {
+          question: "Šta ako želim ongoing upravljanje umesto ovoga?",
+          answer:
+            "Ako želite da ja dugoročno vodim nalog umesto da vam ga predam, pogledajte Google Ads upravljanje. Neki klijenti krenu sa Kickstart-om pa pređu na upravljanje kasnije kada vide šta zaista treba da bi se nalog vodio kako treba."
+        },
+        {
+          question: "Koliko traje od kickoff-a do handover-a?",
+          answer:
+            "Obično 10-15 radnih dana, zavisno od toga koliko brzo se tracking implementira i verifikuje sa vaše strane — to je obično faktor koji određuje tempo, ne moj rad."
+        },
+        {
+          question: "Šta ako već imam kampanje koje rade?",
+          answer:
+            "Počinjem sa brzim pregledom trenutnog stanja. Ako se struktura može spasiti, gradim oko nje. Ako ne, krećemo iznova. U oba slučaja dobijate pravu arhitekturu i plan za dalje."
+        },
+        {
+          question: "Da li je ovo jednokratna cena?",
+          answer:
+            "Da — jedna uplata, bez ugovora. Dobijate arhitekturu, oglase, tracking specifikaciju, plan i handover, a onda vodite dalje. Ako kasnije poželite da pređete na ongoing upravljanje, to je poseban razgovor bez obaveze."
+        }
+      ];
 
   const personSchema = {
     "@context": "https://schema.org",
@@ -444,86 +349,83 @@ export default async function StarterPaketPage({ params }: Props) {
     jobTitle: "Google Ads Consultant"
   };
 
-  const serviceSchema =
-    locale === "en"
-      ? {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: "Google Ads Starter Package",
-          description:
-            "Starter package for beginners with professional Google Ads setup, conversion tracking and training for self-management. Three packages: Basic €300, Standard €500, eCommerce €700.",
-          provider: {
-            "@type": "Person",
-            name: "Slobodan Jelisavac",
-            url: "https://www.slobodan-jelisavac.com",
-            jobTitle: "Google Ads Consultant",
-            knowsAbout: [
-              "Google Ads",
-              "Google Ads Setup",
-              "Conversion Tracking",
-              "Campaign Structure"
-            ]
-          },
-          areaServed: [
-            { "@type": "Country", name: "Serbia" },
-            { "@type": "Country", name: "United Kingdom" },
-            { "@type": "Country", name: "Germany" },
-            { "@type": "Country", name: "Croatia" },
-            { "@type": "Country", name: "United States" },
-            { "@type": "Country", name: "Australia" }
-          ],
-          serviceType: "Google Ads Setup and Training",
-          offers: {
-            "@type": "Offer",
-            priceCurrency: "EUR",
-            price: "300",
-            priceSpecification: {
-              "@type": "UnitPriceSpecification",
-              price: "300",
-              priceCurrency: "EUR",
-              unitText: "one-time",
-              description: "Prices start at €300 for Basic Starter Package"
-            }
+  const serviceSchema = isEn
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Google Ads Kickstart",
+        description:
+          "Senior Google Ads setup project for teams with an in-house owner. Account architecture, keyword and negative strategy, RSA copy, tracking specification and verification, 60-day plan, handover session.",
+        provider: {
+          "@type": "Person",
+          name: "Slobodan Jelisavac",
+          url: "https://www.slobodan-jelisavac.com",
+          jobTitle: "Google Ads Consultant",
+          knowsAbout: [
+            "Google Ads",
+            "Google Ads Setup",
+            "Conversion Tracking",
+            "Campaign Structure"
+          ]
+        },
+        areaServed: [
+          { "@type": "Country", name: "United Kingdom" },
+          { "@type": "Country", name: "Germany" },
+          { "@type": "Country", name: "United States" },
+          { "@type": "Country", name: "Australia" }
+        ],
+        serviceType: "Google Ads Setup and Handover",
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "USD",
+          price: "990",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "990",
+            priceCurrency: "USD",
+            unitText: "one-time",
+            description: "Final quote based on scope, from $990"
           }
         }
-      : {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: "Google Ads Starter paket",
-          description:
-            "Starter paket za početnike sa profesionalnim Google Ads setup-om, conversion trackingom i edukacijom za samostalno vođenje kampanja. Tri paketa: Basic €300, Standard €500, eCommerce €700.",
-          provider: {
-            "@type": "Person",
-            name: "Slobodan Jelisavac",
-            url: "https://www.slobodan-jelisavac.com",
-            jobTitle: "Google Ads Consultant",
-            knowsAbout: [
-              "Google Ads",
-              "Google Ads Setup",
-              "Conversion Tracking",
-              "Campaign Structure"
-            ]
-          },
-          areaServed: [
-            { "@type": "Country", name: "Serbia" },
-            { "@type": "Country", name: "United Kingdom" },
-            { "@type": "Country", name: "Germany" },
-            { "@type": "Country", name: "Croatia" }
-          ],
-          serviceType: "Google Ads Setup and Training",
-          offers: {
-            "@type": "Offer",
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Google Ads Kickstart",
+        description:
+          "Senior Google Ads setup projekat za timove koji imaju in-house osobu za dalje vođenje. Arhitektura naloga, keyword i negative strategija, RSA oglasi, tracking specifikacija i verifikacija, 60-dnevni plan, handover sesija.",
+        provider: {
+          "@type": "Person",
+          name: "Slobodan Jelisavac",
+          url: "https://www.slobodan-jelisavac.com",
+          jobTitle: "Google Ads Consultant",
+          knowsAbout: [
+            "Google Ads",
+            "Google Ads Setup",
+            "Conversion Tracking",
+            "Campaign Structure"
+          ]
+        },
+        areaServed: [
+          { "@type": "Country", name: "Serbia" },
+          { "@type": "Country", name: "United Kingdom" },
+          { "@type": "Country", name: "Germany" },
+          { "@type": "Country", name: "Croatia" }
+        ],
+        serviceType: "Google Ads Setup and Handover",
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "EUR",
+          price: "690",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "690",
             priceCurrency: "EUR",
-            price: "300",
-            priceSpecification: {
-              "@type": "UnitPriceSpecification",
-              price: "300",
-              priceCurrency: "EUR",
-              unitText: "jednokratno",
-              description: "Cene počinju od €300 za Basic Starter paket"
-            }
+            unitText: "jednokratno",
+            description: "Konačna ponuda po obimu, od €690"
           }
-        };
+        }
+      };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -538,56 +440,55 @@ export default async function StarterPaketPage({ params }: Props) {
     }))
   };
 
-  const breadcrumbSchema =
-    locale === "en"
-      ? {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://www.slobodan-jelisavac.com"
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Services",
-              item: "https://www.slobodan-jelisavac.com/en/services"
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: "Starter Package",
-              item: "https://www.slobodan-jelisavac.com/en/services/starter-package"
-            }
-          ]
-        }
-      : {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Početna",
-              item: "https://www.slobodan-jelisavac.com"
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Usluge",
-              item: "https://www.slobodan-jelisavac.com/sr/usluge"
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: "Starter paket",
-              item: "https://www.slobodan-jelisavac.com/sr/usluge/starter-paket"
-            }
-          ]
-        };
+  const breadcrumbSchema = isEn
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.slobodan-jelisavac.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://www.slobodan-jelisavac.com/en/services"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Kickstart",
+            item: "https://www.slobodan-jelisavac.com/en/services/starter-package"
+          }
+        ]
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Početna",
+            item: "https://www.slobodan-jelisavac.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Usluge",
+            item: "https://www.slobodan-jelisavac.com/sr/usluge"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Kickstart projekat",
+            item: "https://www.slobodan-jelisavac.com/sr/usluge/starter-paket"
+          }
+        ]
+      };
 
   return (
     <>
@@ -615,88 +516,61 @@ export default async function StarterPaketPage({ params }: Props) {
           <nav className="mb-8 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 text-slate-400">
               <li>
-                <Link
-                  href="/"
-                  className="hover:text-white transition-colors"
-                >
-                  {locale === "en" ? "Home" : "Početna"}
+                <Link href="/" className="hover:text-white transition-colors">
+                  {isEn ? "Home" : "Početna"}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li>
-                <Link
-                  href="/usluge"
-                  className="hover:text-white transition-colors"
-                >
-                  {locale === "en" ? "Services" : "Usluge"}
+                <Link href="/usluge" className="hover:text-white transition-colors">
+                  {isEn ? "Services" : "Usluge"}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li className="text-yellow-400 font-medium">
-                {locale === "en" ? "Starter Package" : "Starter paket"}
+                {isEn ? "Kickstart" : "Kickstart paket"}
               </li>
             </ol>
           </nav>
 
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              {locale === "en"
-                ? "Google Ads Starter Package — professional setup for self-management"
-                : "Google Ads Starter paket — profesionalni setup za samostalno vođenje"}
+              {isEn
+                ? "Google Ads Kickstart — senior setup, you take it from there"
+                : "Google Ads Kickstart — senior setup, vi vodite dalje"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              {locale === "en" ? (
+              {isEn ? (
                 <>
-                  Want to launch <strong className="text-white">Google Ads</strong> but don't have
-                  budget for monthly management? The Starter Package delivers professional
-                  campaign structure, properly configured tracking and training for
-                  self-management. Instead of learning by trial and error, you get a{" "}
-                  <strong className="text-white">proven setup that works from day one</strong>.
+                  You have someone in-house who will run the account — you just need it
+                  built right the first time. Kickstart delivers account architecture,
+                  written ad copy, and a verified tracking foundation, then hands it
+                  over with a <strong className="text-white">60-day plan</strong>. No
+                  monthly retainer required.
                 </>
               ) : (
                 <>
-                  Želite da pokrenete <strong className="text-white">Google Ads</strong> ali nemate budžet za mesečno
-                  upravljanje? Starter paket donosi profesionalnu strukturu kampanja, pravilno
-                  podešen tracking i edukaciju za samostalno vođenje. Umesto učenja metodom
-                  pokušaja i greške, dobijate <strong className="text-white">proven setup koji funkcioniše od prvog dana</strong>.
+                  Imate nekoga in-house ko će voditi nalog — samo treba da bude
+                  napravljen kako treba od prvog dana. Kickstart donosi arhitekturu
+                  naloga, napisane oglase i verifikovan tracking temelj, pa ga predaje
+                  uz <strong className="text-white">60-dnevni plan</strong>. Bez
+                  mesečnog retainera.
                 </>
               )}
             </p>
 
-            {/* Results — social proof odmah u heroju */}
-            <div className="grid grid-cols-3 gap-6 mb-10 max-w-lg">
-              {results.map((result) => (
-                <div key={result.label}>
-                  <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">
-                    {result.value}
-                  </p>
-                  <p className="text-xs text-slate-400 mt-1">
-                    {result.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {locale === "en"
-                  ? "Request Starter Package"
-                  : "Zatražite Starter paket"}
+                {isEn ? "Book a 20-minute scoping call" : "Zakažite 20-min razgovor"}
               </Button>
             </div>
 
             {/* Trust badges */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span>
-                {locale === "en"
-                  ? "10+ years of experience"
-                  : "10+ godina iskustva"}
-              </span>
+              <span>{isEn ? "10+ years of experience" : "10+ godina iskustva"}</span>
               <span>3x UK Search Awards</span>
               <span>
-                {locale === "en"
-                  ? "50+ campaigns set up"
-                  : "50+ setup-ovanih kampanja"}
+                {isEn ? "50+ campaigns set up" : "50+ setup-ovanih kampanja"}
               </span>
             </div>
           </div>
@@ -707,80 +581,87 @@ export default async function StarterPaketPage({ params }: Props) {
       <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto">
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            {locale === "en" ? (
+            {isEn ? (
               <>
-                The <strong>Google Ads Starter Package</strong> is designed for business owners and
-                marketers who want to launch Google advertising professionally — without monthly
-                management contracts. You get fully configured campaigns, conversion tracking
-                and training for self-management.
+                <strong>Google Ads Kickstart</strong> is a one-time project for teams
+                that already have someone to own the account — an in-house marketer or
+                the founder — and just need a senior-level foundation to build on.
+                It's not a beginner package and it's not a monthly contract.
               </>
             ) : (
               <>
-                <strong>Google Ads Starter paket</strong> je dizajniran za vlasnike preduzeća i
-                marketare koji žele da pokrenu Google oglašavanje profesionalno — bez mesečnih
-                ugovora za upravljanje. Dobijate kompletno podešene kampanje, conversion tracking
-                i edukaciju za samostalno vođenje.
+                <strong>Google Ads Kickstart</strong> je jednokratan projekat za timove
+                koji već imaju nekoga da vodi nalog — in-house marketara ili osnivača —
+                i samo im treba senior temelj na kome će graditi. Nije paket za
+                početnike i nije mesečni ugovor.
               </>
             )}
           </p>
           <p className="text-gray-600 text-base leading-relaxed">
-            {locale === "en"
-              ? "This is your entry point to Google Ads. Instead of wasting time and budget on experimentation, you start with a structure proven in real campaigns — from local service businesses to eCommerce stores."
-              : "Ovo je vaša ulazna tačka u Google Ads. Umesto da gubite vreme i budžet na eksperimentisanje, počinjete sa strukturom koja se dokazala u stvarnim kampanjama — od lokalne uslužne delatnosti do eCommerce prodavnica."}
+            {isEn
+              ? "You get the architecture, the copy, and a verified tracking setup — the parts that are hardest to get right and most expensive to fix later. What you do with it after handover is up to you."
+              : "Dobijate arhitekturu, oglase i verifikovan tracking setup — delove koje je najteže napraviti kako treba i najskuplje popraviti kasnije. Šta radite sa tim posle handover-a, to je na vama."}
           </p>
         </div>
       </section>
 
-      {/* Problem — PAS framework */}
+      {/* Pillars */}
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Sound familiar?"
-              : "Prepoznajete li se u ovome?"}
+            {isEn ? "What Kickstart actually delivers" : "Šta Kickstart zaista donosi"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Most people who start with Google Ads on their own hit the same obstacles. Don't waste time and budget — start right away with the proper approach."
-              : "Većina ljudi koji krenu sami sa Google Ads-om nailazi na iste prepreke. Ne gubite vreme i budžet — krenite odmah sa pravilnim pristupom."}
+            {isEn
+              ? "Four things that are easy to get wrong without senior oversight — and expensive to fix once campaigns are live."
+              : "Četiri stvari koje je lako pogrešno napraviti bez senior nadzora — i skupo popraviti kada su kampanje već live."}
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {problems.map((problem) => (
-            <Card key={problem.title} className="h-full">
-              <div className="mb-3">{problem.icon}</div>
+          {pillars.map((pillar) => (
+            <Card key={pillar.title} className="h-full">
+              <div className="mb-3">{pillar.icon}</div>
               <h3 className="text-lg font-heading font-semibold mb-2">
-                {problem.title}
+                {pillar.title}
               </h3>
-              <p className="text-gray-600 text-base">{problem.description}</p>
+              <p className="text-gray-600 text-base">{pillar.description}</p>
             </Card>
           ))}
         </div>
       </Section>
 
-      {/* Solution */}
+      {/* Tracking gate callout */}
       <Section background="gray">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "What You Get with the Starter Package"
-              : "Šta dobijate sa Starter paketom"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Proven approach to campaign setup that eliminates common beginner mistakes and sets you on the path to success."
-              : "Proven pristup setup-u kampanja koji eliminiše najčešće greške početnika i postavlja vas na put uspeha."}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          {solutions.map((solution) => (
-            <Card key={solution.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {solution.title}
-              </h3>
-              <p className="text-gray-600">{solution.description}</p>
-            </Card>
-          ))}
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white border-2 border-slate-900 rounded-xl p-6 md:p-8 shadow-card">
+            <h3 className="font-heading font-bold text-lg mb-3">
+              {isEn
+                ? "About tracking — read this before you ask"
+                : "O trackingu — pročitajte pre nego što pitate"}
+            </h3>
+            <p className="text-gray-700 text-base leading-relaxed mb-3">
+              {isEn ? (
+                <>
+                  Tracking implementation is <strong>not included</strong> in Kickstart —
+                  it's done by vetted vendors I work with, billed separately. What I
+                  guarantee: you get a precise specification of exactly what must be
+                  measured, and I don't launch campaigns until conversions are verified.
+                </>
+              ) : (
+                <>
+                  Tracking implementaciju <strong>ne radim</strong> u okviru Kickstart-a
+                  — nju rade provereni vendori sa kojima sarađujem, naplaćuje se posebno.
+                  Ono što garantujem: dobijate preciznu specifikaciju šta mora da se meri,
+                  i ne puštam kampanje live dok konverzije nisu verifikovane.
+                </>
+              )}
+            </p>
+            <p className="text-gray-500 text-sm">
+              {isEn
+                ? "This is a senior gate, not a shortcut — campaigns built on broken tracking waste budget from day one."
+                : "Ovo je senior gate, ne prečica — kampanje izgrađene na pokvarenom trackingu troše budžet od prvog dana."}
+            </p>
+          </div>
         </div>
       </Section>
 
@@ -788,14 +669,12 @@ export default async function StarterPaketPage({ params }: Props) {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "What's Included"
-              : "Šta je uključeno u Starter paket"}
+            {isEn ? "What's Included" : "Šta je uključeno u Kickstart"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Everything you need to launch Google Ads the right way — from campaign setup to training and support."
-              : "Sve što vam treba da pokrenete Google Ads na pravi način — od setup-a kampanja do edukacije i podrške."}
+            {isEn
+              ? "A single senior-built package — architecture, copy, tracking specification, and a clean handover."
+              : "Jedan senior paket — arhitektura, oglasi, tracking specifikacija i čist handover."}
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -807,9 +686,7 @@ export default async function StarterPaketPage({ params }: Props) {
               <ul className="space-y-2 text-gray-600 text-sm">
                 {block.items.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5 flex-shrink-0">
-                      ✓
-                    </span>
+                    <span className="text-green-600 mt-0.5 flex-shrink-0">✓</span>
                     {item}
                   </li>
                 ))}
@@ -823,22 +700,18 @@ export default async function StarterPaketPage({ params }: Props) {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Is the Starter Package Right for You?"
-              : "Da li je Starter paket za vas?"}
+            {isEn ? "Is Kickstart Right for You?" : "Da li je Kickstart za vas?"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "The Starter Package works best for certain client profiles. Check if you're a fit before requesting."
-              : "Starter paket najbolje funkcioniše za određene profile klijenata. Proverite da li odgovarate pre nego što zatražite."}
+            {isEn
+              ? "Kickstart works for a specific profile. Check if you're a fit before booking a call."
+              : "Kickstart funkcioniše za specifičan profil. Proverite da li odgovarate pre nego što zakažete poziv."}
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-card">
             <h3 className="font-heading font-bold text-lg mb-4">
-              {locale === "en"
-                ? "The Starter Package is ideal if"
-                : "Starter paket je idealan ako"}
+              {isEn ? "Kickstart is a fit if" : "Kickstart je za vas ako"}
             </h3>
             <ul className="space-y-2 text-sm text-gray-600">
               {idealFor.map((item) => (
@@ -851,9 +724,7 @@ export default async function StarterPaketPage({ params }: Props) {
           </div>
           <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-card">
             <h3 className="font-heading font-bold text-lg mb-4">
-              {locale === "en"
-                ? "The Starter Package is not for you if"
-                : "Starter paket nije za vas ako"}
+              {isEn ? "Kickstart is not for you if" : "Kickstart nije za vas ako"}
             </h3>
             <ul className="space-y-2 text-sm text-gray-600">
               {notFor.map((item) => (
@@ -867,23 +738,17 @@ export default async function StarterPaketPage({ params }: Props) {
         </div>
         <div className="text-center mt-8">
           <p className="text-sm text-gray-500">
-            {locale === "en" ? (
+            {isEn ? (
               <>
-                If you need ongoing management, check out{" "}
-                <Link
-                  href="/usluge/google-ads-upravljanje"
-                  className="text-primary underline"
-                >
+                If you need someone to run the account long-term, check out{" "}
+                <Link href="/usluge/google-ads-upravljanje" className="text-primary underline">
                   Google Ads Management →
                 </Link>
               </>
             ) : (
               <>
-                Ako vam treba ongoing upravljanje, pogledajte{" "}
-                <Link
-                  href="/usluge/google-ads-upravljanje"
-                  className="text-primary underline"
-                >
+                Ako vam treba neko da dugoročno vodi nalog, pogledajte{" "}
+                <Link href="/usluge/google-ads-upravljanje" className="text-primary underline">
                   Google Ads upravljanje →
                 </Link>
               </>
@@ -896,14 +761,12 @@ export default async function StarterPaketPage({ params }: Props) {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "How the Starter Package Works"
-              : "Kako izgleda proces Starter paketa"}
+            {isEn ? "How Kickstart Works" : "Kako izgleda proces Kickstart-a"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "From first call to live campaigns — transparent process in 5 steps."
-              : "Od prvog poziva do live kampanja — transparentan proces u 5 koraka."}
+            {isEn
+              ? "From scoping call to handover — transparent process in 5 steps."
+              : "Od scoping poziva do handover-a — transparentan proces u 5 koraka."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -934,200 +797,28 @@ export default async function StarterPaketPage({ params }: Props) {
         </div>
       </Section>
 
-      {/* Pricing */}
+      {/* Pricing — single package */}
       <Section background="gray">
-        <div className="text-center mb-10">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Choose the Right Package"
-              : "Izaberite paket koji vam odgovara"}
+            {isEn ? "Pricing" : "Cena"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Transparent pricing with no hidden fees. All options include fully configured campaigns, tracking and training."
-              : "Transparentne cene bez skrivenih troškova. Sve opcije uključuju kompletno podešene kampanje, tracking i edukaciju."}
-          </p>
-        </div>
-        <div className="grid lg:grid-cols-3 gap-6">
-          {/* Basic Starter */}
-          <Card className="h-full">
-            <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "For advertising beginners" : "Za početnike u oglašavanju"}
-            </p>
-            <h3 className="text-xl font-heading font-bold mb-1">
-              Basic Starter
+          <div className="bg-white border-2 border-yellow-400 rounded-xl p-8 shadow-card mt-8">
+            <h3 className="text-xl font-heading font-bold mb-2">
+              Google Ads Kickstart
             </h3>
-            <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €300
-              <span className="text-sm text-gray-500 font-normal">
-                {" "}
-                {locale === "en" ? "one-time" : "jednokratno"}
-              </span>
+            <p className="text-3xl font-heading font-bold text-primary mb-4">
+              {isEn ? "from $990" : "od €690"}
             </p>
-            <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "For simple services and smaller companies that want simple setup without complications."
-                : "Za jednostavne usluge i manja preduzeća koja žele jednostavan setup bez komplikovanja."}
+            <p className="text-gray-600 text-base mb-6">
+              {isEn
+                ? "Final quote based on scope, after a 20-minute call."
+                : "Konačna ponuda po obimu, posle 20-min razgovora."}
             </p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "1 Search campaign (up to 3 ad groups)"
-                  : "1 Search kampanja (do 3 ad grupe)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Up to 30 keywords"
-                  : "Do 30 ključnih reči"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                Basic conversion tracking
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                45-min training session
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "2 weeks email support"
-                  : "2 nedelje email support"}
-              </li>
-            </ul>
-            <Button href="/kontakt" variant="primary">
-              {locale === "en"
-                ? "Request Basic Package"
-                : "Zatražite Basic paket"}
-            </Button>
-          </Card>
-
-          {/* Standard Starter */}
-          <div className="bg-white border-2 border-yellow-400 rounded-lg p-6 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
-              {locale === "en" ? "Most Popular" : "Najpopularniji"}
-            </span>
-            <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en"
-                ? "For most small businesses"
-                : "Za većinu malih biznisa"}
-            </p>
-            <h3 className="text-xl font-heading font-bold mb-1">
-              Standard Starter
-            </h3>
-            <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €500
-              <span className="text-sm text-gray-500 font-normal">
-                {" "}
-                {locale === "en" ? "one-time" : "jednokratno"}
-              </span>
-            </p>
-            <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "For most small businesses and lead generation. Professional setup with all necessary components for successful start."
-                : "Za većinu malih biznisa i lead generation. Profesionalan setup sa svim potrebnim komponentama za uspešan start."}
-            </p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "2 Search campaigns (up to 6 ad groups)"
-                  : "2 Search kampanje (do 6 ad grupa)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Up to 50 keywords"
-                  : "Do 50 ključnih reči"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                Basic remarketing setup
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                Full conversion tracking + GA4 linking
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                60-min training session
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "30 days email support" : "30 dana email support"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Complete documentation"
-                  : "Kompletna dokumentacija"}
-              </li>
-            </ul>
             <Button href="/kontakt" variant="secondary">
-              {locale === "en"
-                ? "Request Standard Package"
-                : "Zatražite Standard paket"}
+              {isEn ? "Book a 20-minute scoping call" : "Zakažite 20-min razgovor"}
             </Button>
           </div>
-
-          {/* eCommerce Starter */}
-          <Card className="h-full">
-            <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "For online stores" : "Za online prodavnice"}
-            </p>
-            <h3 className="text-xl font-heading font-bold mb-1">
-              eCommerce Starter
-            </h3>
-            <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €700
-              <span className="text-sm text-gray-500 font-normal">
-                {" "}
-                {locale === "en" ? "one-time" : "jednokratno"}
-              </span>
-            </p>
-            <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "For small online stores that want professional Search + Shopping campaign setup with basic feed optimization."
-                : "Za male online prodavnice koje žele profesionalan setup Search + Shopping kampanja sa osnovnom feed optimizacijom."}
-            </p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                Search + Shopping {locale === "en" ? "campaigns (basic setup)" : "kampanja (basic setup)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Basic feed review and recommendations"
-                  : "Basic feed review i preporuke"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                Remarketing setup
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                eCommerce tracking (purchase, add to cart)
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "90-min training (2 sessions)"
-                  : "90-min training (2 sesije)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "30 days email support" : "30 dana email support"}
-              </li>
-            </ul>
-            <Button href="/kontakt" variant="primary">
-              {locale === "en"
-                ? "Request eCommerce Package"
-                : "Zatražite eCommerce paket"}
-            </Button>
-          </Card>
         </div>
       </Section>
 
@@ -1135,72 +826,52 @@ export default async function StarterPaketPage({ params }: Props) {
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "What Happens When Campaigns Grow?"
-              : "Šta kada kampanje porastu?"}
+            {isEn ? "What Happens After Handover?" : "Šta se dešava posle handover-a?"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "The Starter Package prepares you for self-management. When you need help or campaigns outgrow your time, the following options are available."
-              : "Starter paket vas osposobljava za samostalno vođenje. Kada zatreba pomoć ili kampanje prerastu vaše vreme, dostupne su sledeće opcije."}
+            {isEn
+              ? "Kickstart sets your team up to run the account. If your needs change later, here's what's available."
+              : "Kickstart osposobljava vaš tim da vodi nalog. Ako se vaše potrebe promene kasnije, dostupne su sledeće opcije."}
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="h-full">
             <h3 className="text-lg font-heading font-semibold mb-3">
-              {locale === "en"
-                ? "No time for optimization?"
-                : "Nemate vremena za optimizaciju?"}
+              {isEn ? "No time to run it after all?" : "Ipak nemate vremena da vodite?"}
             </h3>
             <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
+              {isEn
                 ? "Switch to monthly management where I handle all optimizations, reporting and scaling."
                 : "Pređite na mesečno upravljanje gde preuzimam sve optimizacije, reporting i skaliranje."}
             </p>
-            <Link
-              href="/usluge/google-ads-upravljanje"
-              className="text-primary font-semibold text-sm"
-            >
-              {locale === "en"
-                ? "Google Ads Management →"
-                : "Google Ads upravljanje →"}
+            <Link href="/usluge/google-ads-upravljanje" className="text-primary font-semibold text-sm">
+              {isEn ? "Google Ads Management →" : "Google Ads upravljanje →"}
             </Link>
           </Card>
           <Card className="h-full">
             <h3 className="text-lg font-heading font-semibold mb-3">
-              {locale === "en"
-                ? "Have questions after support period?"
-                : "Imate pitanja nakon support perioda?"}
+              {isEn ? "Have questions after handover?" : "Imate pitanja posle handover-a?"}
             </h3>
             <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "Book a 1-on-1 consultation for specific questions, audit or optimization help."
-                : "Zakažite 1-on-1 konsultaciju za specifična pitanja, audit ili pomoć oko optimizacija."}
+              {isEn
+                ? "Book a 1-on-1 consultation for specific questions, a review, or optimization help."
+                : "Zakažite 1-on-1 konsultaciju za specifična pitanja, review ili pomoć oko optimizacija."}
             </p>
-            <Link
-              href="/usluge/konsultacije"
-              className="text-primary font-semibold text-sm"
-            >
-              {locale === "en"
-                ? "1-on-1 consultations →"
-                : "1-on-1 konsultacije →"}
+            <Link href="/usluge/konsultacije" className="text-primary font-semibold text-sm">
+              {isEn ? "1-on-1 consultations →" : "1-on-1 konsultacije →"}
             </Link>
           </Card>
           <Card className="h-full">
             <h3 className="text-lg font-heading font-semibold mb-3">
-              {locale === "en"
-                ? "Campaigns growing and need scaling?"
-                : "Kampanje rastu i treba skaliranje?"}
+              {isEn ? "Growing and need to scale?" : "Rastete i treba skaliranje?"}
             </h3>
             <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "Let's talk about ongoing partnership — setup stays, we just upgrade the strategy."
-                : "Razgovarajmo o ongoing partnership-u — setup ostaje, samo nadograđujemo strategiju."}
+              {isEn
+                ? "Let's talk about ongoing partnership — the architecture stays, we just upgrade the strategy."
+                : "Razgovarajmo o ongoing partnership-u — arhitektura ostaje, samo nadograđujemo strategiju."}
             </p>
             <Link href="/kontakt" className="text-primary font-semibold text-sm">
-              {locale === "en"
-                ? "Let's discuss partnership →"
-                : "Razgovarajmo o partnerstvu →"}
+              {isEn ? "Let's discuss partnership →" : "Razgovarajmo o partnerstvu →"}
             </Link>
           </Card>
         </div>
@@ -1210,9 +881,9 @@ export default async function StarterPaketPage({ params }: Props) {
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Frequently Asked Questions About the Starter Package"
-              : "Često postavljana pitanja o Starter paketu"}
+            {isEn
+              ? "Frequently Asked Questions About Kickstart"
+              : "Često postavljana pitanja o Kickstart-u"}
           </h2>
         </div>
         <div className="max-w-3xl mx-auto space-y-3">
@@ -1240,28 +911,24 @@ export default async function StarterPaketPage({ params }: Props) {
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Ready to launch Google Ads the right way?"
-              : "Spremni da pokrenete Google Ads na pravi način?"}
+            {isEn
+              ? "Ready for a senior setup you can take from there?"
+              : "Spremni za senior setup koji dalje vodite sami?"}
           </h2>
           <p className="text-slate-300 mb-8">
-            {locale === "en"
-              ? "Book a free consultation and let's check which Starter Package fits you. No commitment."
-              : "Zakažite besplatnu konsultaciju i proverimo koji Starter paket vam odgovara. Bez obaveza."}
+            {isEn
+              ? "Book a 20-minute call and let's confirm Kickstart is the right fit. No commitment."
+              : "Zakažite 20-minutni poziv i proverimo da li vam Kickstart odgovara. Bez obaveza."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en"
-                ? "Request Starter Package"
-                : "Zatražite Starter paket"}
+              {isEn ? "Book a 20-minute scoping call" : "Zakažite 20-min razgovor"}
             </Button>
             <Link
               href="/usluge/konsultacije"
               className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
             >
-              {locale === "en"
-                ? "Or book a consultation →"
-                : "Ili zakažite konsultaciju →"}
+              {isEn ? "Or book a consultation →" : "Ili zakažite konsultaciju →"}
             </Link>
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
@@ -1269,25 +936,19 @@ export default async function StarterPaketPage({ params }: Props) {
               href="/usluge/google-ads-upravljanje"
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en"
-                ? "Google Ads Management"
-                : "Google Ads upravljanje"}
+              {isEn ? "Google Ads Management" : "Google Ads upravljanje"}
             </Link>
             <Link
               href="/usluge/konsultacije"
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en"
-                ? "1-on-1 Consultations"
-                : "1-on-1 konsultacije"}
+              {isEn ? "1-on-1 Consultations" : "1-on-1 konsultacije"}
             </Link>
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en"
-                ? "How much does Google Ads cost?"
-                : "Koliko košta Google Ads?"}
+              {isEn ? "How much does Google Ads cost?" : "Koliko košta Google Ads?"}
             </Link>
           </div>
         </div>

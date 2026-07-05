@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Performance Marketing Services | Omnichannel Growth Strategy — Slobodan Jelisavac"
       : "Performance Marketing Srbija | Omnichannel tim - Funky Enterprises",
     description: isEn
-      ? "Premium performance marketing with a dedicated team of experts. Google Ads + Meta + SEO + CRO for omnichannel growth. For companies with €5,000+ monthly budgets."
+      ? "Premium performance marketing with a dedicated senior team. Google Ads + Meta + SEO + CRO + tracking for omnichannel growth. For brands investing $20k+/month per channel."
       : "Premium performance marketing sa dedicated timom eksperata. Google Ads + Meta + SEO + CRO. Za kompanije sa €5,000+ mesečnim budžetom.",
     locale,
     path: "/services/performance-marketing",
@@ -29,7 +29,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
       ? [
           "Omnichannel approach",
           "Funky Enterprises team",
-          "€5,000+ monthly budgets"
+          "$20k+/month per channel"
         ]
       : [
           "Omnichannel pristup",
@@ -152,7 +152,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
     locale === "en"
       ? [
           "Market leaders or companies aspiring to become one",
-          "Monthly ad spend of €5,000+ (ideally €10,000+)",
+          "Ad spend of $20k+/month per channel (Google, Meta...)",
           "Need a complete omnichannel approach",
           "Want a senior team with extensive experience",
           "Plan serious growth over the next 12+ months"
@@ -168,7 +168,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
   const notFor =
     locale === "en"
       ? [
-          "Budget below €3,000 monthly for advertising",
+          "Ad spend under $20k/month per channel — eCommerce Growth is a better fit",
           "Need only one channel (Google Ads or Meta)",
           "Looking for the cheapest option on the market"
         ]
@@ -246,7 +246,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
             question:
               "What's the minimum budget for Performance Marketing?",
             answer:
-              "The recommended minimum is €5,000 monthly for advertising, ideally €10,000+. For smaller budgets, my standard Google Ads service is a better option."
+              "Performance Marketing makes sense at $20k+/month ad spend per channel (e.g. Google + Meta). Below that, my standard Google Ads service (eCommerce Growth) is the better option."
           },
           {
             question: "Who is Funky Enterprises?",
@@ -807,7 +807,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           </h2>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             {locale === "en"
-              ? "Performance Marketing is the right choice for companies with €5,000+ monthly budgets that want a complete team of experts and an integrated strategy."
+              ? "Performance Marketing is the right choice for serious brands investing $20k+/month per channel that want a complete senior team and an integrated omnichannel strategy."
               : "Performance Marketing je pravi izbor za kompanije sa €5,000+ mesečnim budžetom koje žele kompletan tim eksperata i integrisanu strategiju."}
           </p>
 

@@ -14,11 +14,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Consulting Serbia | Price from €120/hr — Slobodan Jelisavac"
-      : "Google Ads Konsultacije Srbija — Cena od €120/sat",
+      ? "Google Ads Consulting | Price from $200/hr — Slobodan Jelisavac"
+      : "Google Ads Konsultacije Srbija — Cena od €150/sat",
     description: isEn
-      ? "Google Ads consulting services from €120/hr (3h package €300). Get strategic advice, second opinions, and problem-solving for your PPC campaigns. No long-term commitment."
-      : "Google Ads usluge — ekspertske konsultacije u Srbiji, cena od €120/sat (paket 3h €300). Strategija, second opinion, problem solving. Bez dugoročne obaveze. Zakažite konsultaciju.",
+      ? "Google Ads consulting services from $200/hr (3h package $500). Get strategic advice, second opinions, and problem-solving for your PPC campaigns. No long-term commitment."
+      : "Google Ads usluge — ekspertske konsultacije u Srbiji, cena od €150/sat (paket 3h €400). Strategija, second opinion, problem solving. Bez dugoročne obaveze. Zakažite konsultaciju.",
     locale,
     path: "/services/consultations",
     srPath: "/usluge/konsultacije",
@@ -290,12 +290,12 @@ export default async function KonsultacijePage({ params }: Props) {
           {
             question: "How much does Google Ads consulting cost?",
             answer:
-              "A standard 1-hour session is €120, or €300 for a 3-hour package if you need more sessions. Deep Dive (2 hours, detailed account review) is €150. There are no hidden fees — you pay only for the time booked, no retainer required."
+              "A standard 1-hour session is $200, or $500 for a 3-hour package if you need more sessions. Deep Dive (2 hours, detailed account review) is $350. There are no hidden fees — you pay only for the time booked, no retainer required."
           },
           {
             question: "Is there a minimum ad spend budget for consulting?",
             answer:
-              "No minimum ad spend is required for a consultation — it works whether you're spending €300/month or €30,000/month. Consulting is priced per session, not tied to your ad budget, which makes it accessible for smaller businesses too."
+              "No minimum ad spend is required for a consultation — it works whether you're spending $500/month or $50,000/month. Consulting is priced per session, not tied to your ad budget, which makes it accessible for smaller businesses too."
           },
           {
             question: "What's the difference between hiring a consultant and an agency?",
@@ -342,7 +342,7 @@ export default async function KonsultacijePage({ params }: Props) {
           {
             question: "Koliko koštaju Google Ads konsultacije?",
             answer:
-              "Standardna 1-satna sesija je €120, ili €300 za paket od 3 sata ako vam trebaju dodatne sesije. Deep Dive (2 sata, detaljan account review) je €150. Nema skrivenih troškova — plaćate samo zakazano vreme, bez mesečnog ugovora."
+              "Standardna 1-satna sesija je €150, ili €400 za paket od 3 sata ako vam trebaju dodatne sesije. Deep Dive (2 sata + priprema, detaljan account review) je €250. Nema skrivenih troškova — plaćate samo zakazano vreme, bez mesečnog ugovora."
           },
           {
             question: "Da li postoji minimalni budžet za oglašavanje da bi konsultacija imala smisla?",
@@ -361,19 +361,53 @@ export default async function KonsultacijePage({ params }: Props) {
           }
         ];
 
-  const serviceSchema = {
+  const serviceSchema = locale === "en" ? {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: locale === "en" ? "Google Ads Consulting" : "Google Ads konsultacije",
+    name: "Google Ads Consulting",
     description:
-      locale === "en"
-        ? "Expert 1-on-1 Google Ads consulting. Strategy, audit, second opinion and problem solving. Flexible support without long-term commitment."
-        : "Ekspertske 1-na-1 Google Ads konsultacije. Strategija, audit, second opinion i problem solving. Fleksibilna podrška bez dugoročne obaveze.",
+      "Expert 1-on-1 Google Ads consulting. Strategy, audit, second opinion and problem solving. Flexible support without long-term commitment.",
     provider: {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com",
-      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
+      jobTitle: "Google Ads Consultant",
+      knowsAbout: [
+        "Google Ads",
+        "Google Ads Consulting",
+        "PPC Strategy",
+        "Performance Marketing"
+      ]
+    },
+    areaServed: [
+      { "@type": "Country", name: "United Kingdom" },
+      { "@type": "Country", name: "United States" },
+      { "@type": "Country", name: "Australia" },
+      { "@type": "Country", name: "Germany" }
+    ],
+    serviceType: "Google Ads Consulting",
+    offers: {
+      "@type": "Offer",
+      price: "200",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "200",
+        priceCurrency: "USD",
+        unitText: "hour"
+      }
+    }
+  } : {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Google Ads konsultacije",
+    description:
+      "Ekspertske 1-na-1 Google Ads konsultacije. Strategija, audit, second opinion i problem solving. Fleksibilna podrška bez dugoročne obaveze.",
+    provider: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      url: "https://www.slobodan-jelisavac.com",
+      jobTitle: "Google Ads Konsultant",
       knowsAbout: [
         "Google Ads",
         "Google Ads Consulting",
@@ -384,21 +418,19 @@ export default async function KonsultacijePage({ params }: Props) {
     areaServed: [
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "United Kingdom" },
-      { "@type": "Country", name: "United States" },
-      { "@type": "Country", name: "Australia" },
       { "@type": "Country", name: "Germany" },
       { "@type": "Country", name: "Croatia" }
     ],
     serviceType: "Google Ads Consulting",
     offers: {
       "@type": "Offer",
-      price: "120",
+      price: "150",
       priceCurrency: "EUR",
       priceSpecification: {
         "@type": "UnitPriceSpecification",
-        price: "120",
+        price: "150",
         priceCurrency: "EUR",
-        unitText: locale === "en" ? "hour" : "sat"
+        unitText: "sat"
       }
     }
   };
@@ -499,7 +531,7 @@ export default async function KonsultacijePage({ params }: Props) {
                   Google Ads consulting is ideal when you have specific questions,
                   need a <strong className="text-white">second opinion</strong>, or want{" "}
                   <strong className="text-white">strategic guidance</strong> without long-term commitment.
-                  For <strong className="text-white">€120/hr</strong> (or €300 for a 3h package) you get full attention and
+                  For <strong className="text-white">$200/hr</strong> (or $500 for a 3h package) you get full attention and
                   expertise from 10+ years working with the Google Ads platform.
                 </>
               ) : (
@@ -508,7 +540,7 @@ export default async function KonsultacijePage({ params }: Props) {
                   Google Ads konsultacije su idealne kada imate konkretna pitanja,
                   trebate <strong className="text-white">second opinion</strong> ili želite{" "}
                   <strong className="text-white">strategijsku pomoć</strong> bez dugoročne obaveze.
-                  Za <strong className="text-white">€120/sat</strong> (ili €300 za paket 3h) dobijate punu pažnju i
+                  Za <strong className="text-white">€150/sat</strong> (ili €400 za paket 3h) dobijate punu pažnju i
                   ekspertizu iz 10+ godina rada sa Google Ads platformom.
                 </>
               )}
@@ -637,8 +669,8 @@ export default async function KonsultacijePage({ params }: Props) {
               Standard Session
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €120<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "hr" : "sat"}</span>
-              <span className="block text-sm text-gray-500 font-normal mt-0.5">{locale === "en" ? "3h package — €300" : "paket 3h — €300"}</span>
+              {locale === "en" ? "$200" : "€150"}<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "hr" : "sat"}</span>
+              <span className="block text-sm text-gray-500 font-normal mt-0.5">{locale === "en" ? "3h package — $500" : "paket 3h — €400"}</span>
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
@@ -687,7 +719,7 @@ export default async function KonsultacijePage({ params }: Props) {
             </p>
             <h3 className="text-xl font-heading font-bold mb-1">Deep Dive</h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              €150<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "2 hours" : "2 sata"}</span>
+              {locale === "en" ? "$350" : "€250"}<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "2 hours + prep" : "2 sata + priprema"}</span>
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
@@ -737,7 +769,7 @@ export default async function KonsultacijePage({ params }: Props) {
               {locale === "en" ? "For ongoing support" : "Za kontinuiranu podršku"}
             </p>
             <h3 className="text-xl font-heading font-bold mb-1">
-              Ongoing Retainer
+              {locale === "en" ? "Ongoing Advisory" : "Kontinuirano savetovanje"}
             </h3>
             <p className="text-2xl font-heading font-bold text-yellow-400 mb-3">
               {locale === "en" ? "on request" : "na upit"}
@@ -918,13 +950,13 @@ export default async function KonsultacijePage({ params }: Props) {
               href="/usluge/google-ads-audit"
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en" ? "Google Ads Audit" : "Google Ads audit"}
+              {locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan"}
             </Link>
             <Link
               href="/usluge/starter-paket"
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en" ? "Starter Package" : "Starter paket"}
+              {locale === "en" ? "Kickstart" : "Kickstart paket"}
             </Link>
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}

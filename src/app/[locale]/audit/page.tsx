@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Free Google Ads Video Audit — For Qualified eCommerce & B2B Brands"
       : "Besplatan Google Ads Video Audit — za kvalifikovane eCommerce i B2B brendove",
     description: isEn
-      ? "15-minute video walkthrough of your Google Ads account: structure issues, conversion tracking gaps, bidding strategy, and top 3 priorities to fix. For brands with €1,500+/mo ad spend."
+      ? "15-minute video walkthrough of your Google Ads account: structure issues, conversion tracking gaps, bidding strategy, and top 3 priorities to fix. For brands with $1,500+/mo ad spend."
       : "15-minutni video review vašeg Google Ads naloga: struktura kampanja, conversion tracking, bidding strategija, i top 3 prioriteta za fix. Za brendove sa €1.500+/mes ad spend-om.",
     locale,
     path: "/audit",
@@ -44,13 +44,13 @@ export default async function AuditPage({ params }: Props) {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-5 leading-[1.05]">
                 {isEn ? (
                   <>
-                    Free <span className="text-yellow-400">15-min Video Audit</span>
+                    Free <span className="text-yellow-400">15-Minute Video Review</span>
                     <br />
                     of Your Google Ads Account
                   </>
                 ) : (
                   <>
-                    Besplatan <span className="text-yellow-400">15-min Video Audit</span>
+                    Besplatan <span className="text-yellow-400">15-min video pregled</span>
                     <br />
                     vašeg Google Ads naloga
                   </>
@@ -172,7 +172,7 @@ export default async function AuditPage({ params }: Props) {
                     <span>
                       {isEn ? (
                         <>
-                          Ad spend: <strong>€1,500+/month</strong> (or £1,500+)
+                          Ad spend: <strong>$1,500+/month</strong> (or £/€ equivalent)
                         </>
                       ) : (
                         <>
@@ -223,7 +223,7 @@ export default async function AuditPage({ params }: Props) {
                     <span className="text-red-600 mt-0.5">✗</span>
                     <span>
                       {isEn
-                        ? "Ad spend under €500/month"
+                        ? "Ad spend under $500/month"
                         : "Ad spend ispod €500/mesečno"}
                     </span>
                   </li>
@@ -331,6 +331,43 @@ export default async function AuditPage({ params }: Props) {
                 <p className="text-sm text-gray-600 mb-0 leading-relaxed">{step.d}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cross-link — which analysis do you need */}
+      <section className="py-10 px-4 md:px-8 bg-gray-50 border-b border-gray-100">
+        <div className="container-custom px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6">
+              <h3 className="font-heading font-bold text-lg mb-3">
+                {isEn ? "Which analysis do you need?" : "Koja analiza vam treba?"}
+              </h3>
+              <p className="text-gray-600 text-base leading-relaxed">
+                {isEn ? (
+                  <>
+                    This <strong>free 15-minute video review</strong> is a lighter, teaser-level
+                    look at qualified accounts — 3 red flags and top priorities, not a full plan.
+                    If you want a complete, paid analysis with a written action plan, see{" "}
+                    <Link href="/usluge/google-ads-audit" className="text-primary underline">
+                      Deep Audit + Action Plan (from $500)
+                    </Link>
+                    .
+                  </>
+                ) : (
+                  <>
+                    Ovaj <strong>besplatan 15-minutni video pregled</strong> je lakši, teaser nivo
+                    provere za kvalifikovane naloge — 3 crvena flag-a i top prioriteti, ne
+                    kompletan plan. Ako želite kompletnu, plaćenu analizu sa pisanim akcionim
+                    planom, pogledajte{" "}
+                    <Link href="/usluge/google-ads-audit" className="text-primary underline">
+                      Deep Audit + Action Plan (od €450)
+                    </Link>
+                    .
+                  </>
+                )}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -518,11 +555,11 @@ export default async function AuditPage({ params }: Props) {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                   >
                     <option value="">— {isEn ? "Select" : "Izaberi"} —</option>
-                    <option>&lt; €500/mo {isEn ? "(not qualified yet)" : "(nije još kvalifikovan)"}</option>
-                    <option>€500 – €1,000/mo</option>
-                    <option>€1,000 – €3,000/mo ✓</option>
-                    <option>€3,000 – €10,000/mo ✓</option>
-                    <option>€10,000+/mo ✓</option>
+                    <option>&lt; {isEn ? "$" : "€"}500/mo {isEn ? "(not qualified yet)" : "(nije još kvalifikovan)"}</option>
+                    <option>{isEn ? "$500 – $1,000/mo" : "€500 – €1.000/mes"}</option>
+                    <option>{isEn ? "$1,000 – $3,000/mo ✓" : "€1.000 – €3.000/mes ✓"}</option>
+                    <option>{isEn ? "$3,000 – $10,000/mo ✓" : "€3.000 – €10.000/mes ✓"}</option>
+                    <option>{isEn ? "$10,000+/mo ✓" : "€10.000+/mes ✓"}</option>
                   </select>
                 </div>
               </div>
@@ -537,7 +574,7 @@ export default async function AuditPage({ params }: Props) {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                   placeholder={
                     isEn
-                      ? "e.g., 'ROAS dropped 30% in Q1, can't figure out why' or 'scaling is stuck at €3k/mo'"
+                      ? "e.g., 'ROAS dropped 30% in Q1, can't figure out why' or 'scaling is stuck at $3k/mo'"
                       : "npr. 'ROAS pao 30% u Q1, ne znam zašto' ili 'stopirali smo rast na €3k/mes'"
                   }
                 />
