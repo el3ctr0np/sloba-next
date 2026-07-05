@@ -108,7 +108,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           title: "B2B SaaS (Germany)",
           items: [
             "Demo request campaigns",
-            "$95 CPA (industry benchmark $170+)",
+            "$95 CPA (industry benchmark $150+)",
             "35% reduction in CAC after 6 months"
           ]
         },
@@ -125,7 +125,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           title: "B2B SaaS (Germany)",
           items: [
             "Demo request kampanje",
-            "EUR 85 CPA (industry benchmark EUR 150+)",
+            "EUR 85 CPA (industry benchmark EUR 140+)",
             "35% reduction u CAC nakon 6 meseci"
           ]
         },
@@ -310,7 +310,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
             "@type": "ListItem",
             position: 3,
             name: "Google Ads for SaaS",
-            item: "https://www.slobodan-jelisavac.com/en/services/google-ads-za-saas"
+            item: "https://www.slobodan-jelisavac.com/en/services/google-ads-for-saas"
           }
         ]
       }

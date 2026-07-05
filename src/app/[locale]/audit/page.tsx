@@ -485,7 +485,7 @@ export default async function AuditPage({ params }: Props) {
               <input
                 type="hidden"
                 name="_next"
-                value={`https://www.slobodan-jelisavac.com/${locale}/kontakt/hvala`}
+                value={`https://www.slobodan-jelisavac.com/${locale === "en" ? "en/contact/thank-you" : "sr/kontakt/hvala"}`}
               />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -555,9 +555,9 @@ export default async function AuditPage({ params }: Props) {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
                   >
                     <option value="">— {isEn ? "Select" : "Izaberi"} —</option>
-                    <option>&lt; {isEn ? "$" : "€"}500/mo {isEn ? "(not qualified yet)" : "(nije još kvalifikovan)"}</option>
-                    <option>{isEn ? "$500 – $1,000/mo" : "€500 – €1.000/mes"}</option>
-                    <option>{isEn ? "$1,000 – $3,000/mo ✓" : "€1.000 – €3.000/mes ✓"}</option>
+                    <option>{isEn ? "< $500/mo (not qualified yet)" : "< €500/mes (nije još kvalifikovan)"}</option>
+                    <option>{isEn ? "$500 – $1,500/mo" : "€500 – €1.500/mes"}</option>
+                    <option>{isEn ? "$1,500 – $3,000/mo ✓" : "€1.500 – €3.000/mes ✓"}</option>
                     <option>{isEn ? "$3,000 – $10,000/mo ✓" : "€3.000 – €10.000/mes ✓"}</option>
                     <option>{isEn ? "$10,000+/mo ✓" : "€10.000+/mes ✓"}</option>
                   </select>
@@ -621,7 +621,7 @@ export default async function AuditPage({ params }: Props) {
                 q: isEn ? "What if I'm not qualified?" : "Šta ako nisam kvalifikovan?",
                 a: isEn
                   ? "I'll redirect you to the right resource — blog, glossary, or suggested agency. No ghosting."
-                  : "Redirectujem vas ka pravom resursu — blog, rečnik, ili predloženoj agenciji. Bez ghostingа.",
+                  : "Redirectujem vas ka pravom resursu — blog, rečnik, ili predloženoj agenciji. Bez ghosting-a.",
               },
               {
                 q: isEn ? "Is there any obligation?" : "Da li postoji obaveza?",

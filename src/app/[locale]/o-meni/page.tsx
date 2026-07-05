@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "O Meni — Slobodan Jelisavac | Google Ads Konsultant | 10+ Godina Iskustva",
     description: "Google Ads konsultant sa 10+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja. Direktan rad sa ekspertom — bez posrednika.",
     locale,
-    path: "/o-meni",
+    path: "/about",
     srPath: "/o-meni",
     ogImage: "/og/o-meni.png",
   });
@@ -35,13 +35,13 @@ export default async function AboutPage({ params }: Props) {
 
   const stats = locale === "en"
     ? [
-        { value: "3.7x", label: "average ROAS improvement" },
+        { value: "3.7x", label: "average ROAS (eCommerce)" },
         { value: "-50%", label: "CPA reduction for lead generation" },
         { value: "3x", label: "UK Search Awards" },
         { value: "50+", label: "brands across 6+ countries" }
       ]
     : [
-        { value: "3.7x", label: "prosečno poboljšanje ROAS-a" },
+        { value: "3.7x", label: "prosečan ROAS (eCommerce)" },
         { value: "-50%", label: "smanjenje CPA za lead generation" },
         { value: "3x", label: "UK Search Awards" },
         { value: "50+", label: "brendova u 6+ zemalja" }
@@ -278,7 +278,7 @@ export default async function AboutPage({ params }: Props) {
             "@type": "ListItem",
             position: 2,
             name: "O meni",
-            item: "https://www.slobodan-jelisavac.com/o-meni"
+            item: "https://www.slobodan-jelisavac.com/sr/o-meni"
           }
         ]
       };

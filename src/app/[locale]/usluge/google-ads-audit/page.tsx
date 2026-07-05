@@ -165,7 +165,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         "Prioritizovane preporuke (Quick Wins vs Long-term)",
         "Konkretni action items sa objašnjenjima",
         "Executive summary sa ključnim nalazima",
-        "Screenshot-ovi problema i primerih"
+        "Screenshot-ovi problema i primerima"
       ]
     },
     {
@@ -418,8 +418,8 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 3,
-        name: locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan",
-        item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-audit"
+        name: "Deep Audit + Action Plan",
+        item: locale === "en" ? "https://www.slobodan-jelisavac.com/en/services/google-ads-audit" : "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-audit"
       }
     ]
   };

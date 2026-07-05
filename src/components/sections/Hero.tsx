@@ -9,6 +9,7 @@ interface HeroProps {
   secondaryCtaText?: string;
   secondaryCtaHref?: string;
   trustBadges?: string[];
+  locale?: string;
 }
 
 /**
@@ -21,11 +22,16 @@ interface HeroProps {
 export function Hero({
   title,
   subtitle,
-  ctaText = "Zakažite besplatnu konsultaciju",
+  ctaText,
   ctaHref = "/kontakt",
   secondaryCtaText,
   secondaryCtaHref,
+  locale = "sr",
 }: HeroProps) {
+  const isEn = locale === "en";
+  const resolvedCtaText =
+    ctaText ?? (isEn ? "Book a free consultation" : "Zakažite besplatnu konsultaciju");
+
   return (
     <section className="relative overflow-hidden bg-white border-b border-gray-100">
       {/* Top Google accent bar */}
@@ -37,7 +43,7 @@ export function Hero({
           <div className="inline-flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
             <span className="text-xs font-semibold text-gray-600 uppercase tracking-[0.15em]">
-              Google Ads Konsalting • Srbija & UK
+              {isEn ? "Google Ads Consulting • Serbia & UK" : "Google Ads Konsalting • Srbija & UK"}
             </span>
           </div>
           <div className="flex items-center gap-4 text-xs text-gray-500">
@@ -45,19 +51,19 @@ export function Hero({
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              10+ godina iskustva
+              {isEn ? "10+ years of experience" : "10+ godina iskustva"}
             </span>
             <span className="hidden md:flex items-center gap-1.5">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              50+ brendova
+              {isEn ? "50+ brands" : "50+ brendova"}
             </span>
             <span className="hidden md:flex items-center gap-1.5">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
-              Ad Mixer predstavnik
+              {isEn ? "Ad Mixer representative" : "Ad Mixer predstavnik"}
             </span>
           </div>
         </div>
@@ -78,15 +84,21 @@ export function Hero({
           <div className="order-2 lg:order-1 space-y-3">
             <div className="border-l-4 border-blue-500 pl-4 py-1">
               <div className="text-3xl font-heading font-bold text-slate-900 leading-none">£290k+</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">Shopping revenue (UK)</div>
+              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
+                {isEn ? "Shopping revenue (UK)" : "Shopping revenue (UK)"}
+              </div>
             </div>
             <div className="border-l-4 border-green-500 pl-4 py-1">
               <div className="text-3xl font-heading font-bold text-slate-900 leading-none">1.78x</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">Prosečan POAS</div>
+              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
+                {isEn ? "Average POAS" : "Prosečan POAS"}
+              </div>
             </div>
             <div className="border-l-4 border-yellow-500 pl-4 py-1">
               <div className="text-3xl font-heading font-bold text-slate-900 leading-none">-86%</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">CPA rekord</div>
+              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
+                {isEn ? "Best CPA cut" : "CPA rekord"}
+              </div>
             </div>
           </div>
 
@@ -112,7 +124,7 @@ export function Hero({
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                 </div>
                 <span className="text-[11px] font-bold text-slate-900 uppercase tracking-wider">
-                  Google Ads Event — Beograd 2025
+                  {isEn ? "Google Ads Event — Belgrade 2025" : "Google Ads Event — Beograd 2025"}
                 </span>
               </div>
             </div>
@@ -121,7 +133,7 @@ export function Hero({
           {/* Right: CTA column */}
           <div className="order-3 space-y-3">
             <Button href={ctaHref} variant="primary" className="w-full">
-              {ctaText}
+              {resolvedCtaText}
             </Button>
             {secondaryCtaText && secondaryCtaHref && (
               <Button href={secondaryCtaHref} variant="secondary" className="w-full">
@@ -129,7 +141,11 @@ export function Hero({
               </Button>
             )}
             <p className="text-xs text-gray-500 text-center pt-2">
-              Bez onboarding naknada.<br />Bez dugoročnih ugovora.
+              {isEn ? (
+                <>No onboarding fees.<br />No long-term contracts.</>
+              ) : (
+                <>Bez onboarding naknada.<br />Bez dugoročnih ugovora.</>
+              )}
             </p>
           </div>
         </div>

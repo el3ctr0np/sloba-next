@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Management Services Serbia | PPC Expert — Slobodan Jelisavac"
       : "Google Ads Usluge Srbija — Vođenje Google Ads Kampanja",
     description: isEn
-      ? "Google Ads management services for eCommerce and B2B companies. 180%+ ROAS improvement, 10+ years of experience. From $2,500/month. Book your free consultation."
-      : "Profesionalne Google Ads usluge — vođenje Google Ads kampanja za eCommerce i B2B u Srbiji. Cena od €700/mes, 180%+ poboljšanje ROAS-a. Zakažite besplatnu konsultaciju.",
+      ? "Google Ads management services for eCommerce and B2B companies. 3.7x average ROAS (eCommerce), 10+ years of experience. From $2,500/month. Book your free consultation."
+      : "Profesionalne Google Ads usluge — vođenje Google Ads kampanja za eCommerce i B2B u Srbiji. Cena od €700/mes, 3.7x prosečan ROAS (eCommerce). Zakažite besplatnu konsultaciju.",
     locale,
     path: "/services/google-ads-management",
     srPath: "/usluge/google-ads-upravljanje",
@@ -313,7 +313,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             number: 1,
             title: "Free consultation",
             description:
-              "30-minute call about your goals, current campaign status, and challenges."
+              "20-minute call about your goals, current campaign status, and challenges."
           },
           {
             number: 2,
@@ -345,7 +345,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             number: 1,
             title: "Besplatna konsultacija",
             description:
-              "30-minutni poziv o vašim ciljevima, trenutnom stanju kampanja i izazovima."
+              "20-minutni poziv o vašim ciljevima, trenutnom stanju kampanja i izazovima."
           },
           {
             number: 2,
@@ -377,16 +377,16 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
     locale === "en"
       ? [
           {
-            value: "180%+",
-            label: "average ROAS improvement in first 90 days"
+            value: "3.7x",
+            label: "average ROAS (eCommerce)"
           },
           { value: "−35%", label: "CPA reduction through continuous optimization" },
           { value: "3x", label: "UK Search Awards" }
         ]
       : [
           {
-            value: "180%+",
-            label: "prosečno poboljšanje ROAS-a u prvih 90 dana"
+            value: "3.7x",
+            label: "prosečan ROAS (eCommerce)"
           },
           { value: "−35%", label: "smanjenje CPA kroz kontinuiranu optimizaciju" },
           { value: "3x", label: "UK Search Awards" }
@@ -623,7 +623,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               "@type": "ListItem",
               position: 3,
               name: "Google Ads Management",
-              item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-upravljanje"
+              item: "https://www.slobodan-jelisavac.com/en/services/google-ads-management"
             }
           ]
         }
@@ -1102,15 +1102,15 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <ul className="space-y-2 text-sm text-gray-600 mb-5">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Strategy consultations included (otherwise $200/hr)" : "Strategijske konsultacije uključene (inače €150/sat)"}
+                {locale === "en" ? "Consulting — $200/hr" : "Konsultacije — €150/sat"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan"}
+                {locale === "en" ? "Deep Audit + Action Plan — from $500" : "Deep Audit + Action Plan — od €450"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Kickstart account setup" : "Kickstart setup naloga"}
+                {locale === "en" ? "Kickstart setup (strategy consultation included) — from $990" : "Kickstart setup (strateška konsultacija uključena) — od €690"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
@@ -1273,8 +1273,8 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           </h2>
           <p className="text-slate-300 mb-8">
             {locale === "en"
-              ? "Book a free 30-minute consultation and let's see if it makes sense to work together. No obligations."
-              : "Zakažite besplatnu 30-minutnu konsultaciju i proverimo da li ima smisla da radimo zajedno. Bez obaveza."}
+              ? "Book a free 20-minute consultation and let's see if it makes sense to work together. No obligations."
+              : "Zakažite besplatnu 20-minutnu konsultaciju i proverimo da li ima smisla da radimo zajedno. Bez obaveza."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">

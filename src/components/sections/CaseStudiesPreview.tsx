@@ -1,10 +1,15 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Card, Button } from "@/components/ui";
-import { caseStudies } from "@/app/[locale]/case-studies/data";
+import { getCaseStudiesByLocale } from "@/app/[locale]/case-studies/data";
 
-export function CaseStudiesPreview() {
+type Props = {
+  locale: string;
+};
+
+export function CaseStudiesPreview({ locale }: Props) {
   const t = useTranslations("CaseStudiesPreview");
+  const caseStudies = getCaseStudiesByLocale(locale);
 
   return (
     <section className="section-padding bg-white">

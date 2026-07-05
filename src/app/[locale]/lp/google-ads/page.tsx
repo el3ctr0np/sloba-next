@@ -69,7 +69,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
   const heroStats = [
     { value: "3x", label: "UK Search Awards" },
-    { value: "180%+", label: "Prosečno poboljšanje ROAS-a" },
+    { value: "3.7x", label: "Prosečan ROAS (eCommerce)" },
     { value: "50+", label: "Brendova iz 6+ zemalja" },
   ];
 

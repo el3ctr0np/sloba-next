@@ -143,13 +143,13 @@ export default async function YouTubeOglasiPage({ params }: Props) {
     "✓ You have video content or are ready to create it (I can recommend producers)",
     "✓ Goal is brand awareness, direct conversions, or both (hybrid approach)",
     "✓ YouTube budget is minimum $1,000/month for meaningful results and optimization",
-    "✓ Your target audience spends time on YouTube (90%+ of internet users globally)"
+    "✓ Your target audience spends time on YouTube (YouTube reaches the vast majority of internet users in your market)"
   ] : [
-    "✓ Želite samo YouTube oglašavanje bez kompletnog Google Ads managementa",
+    "✓ Želite samo YouTube oglašavanje bez kompletnog Google Ads upravljanja",
     "✓ Imate video content ili ste spremni da ga napravite (preporučujem producente)",
     "✓ Cilj je brand awareness, direktne konverzije ili oboje (hybrid pristup)",
     "✓ Budžet za YouTube je minimum EUR 1,000/mesečno za smislene rezultate",
-    "✓ Ciljna grupa provodi vreme na YouTube-u (90%+ internet korisnika u Srbiji)"
+    "✓ Ciljna grupa provodi vreme na YouTube-u (YouTube dopire do ogromne većine internet korisnika na vašem tržištu)"
   ];
 
   const faqs = locale === "en" ? [
@@ -586,7 +586,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "This service is designed for companies that want to leverage the power of video advertising without full-scale Google Ads management."
-              : "Ova usluga je dizajnirana za kompanije koje žele da iskoriste moć video oglašavanja bez kompletnog Google Ads managementa."}
+              : "Ova usluga je dizajnirana za kompanije koje žele da iskoriste moć video oglašavanja bez kompletnog Google Ads upravljanja."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">

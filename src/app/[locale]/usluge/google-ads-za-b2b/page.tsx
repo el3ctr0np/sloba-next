@@ -130,7 +130,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     },
     {
       title: "SaaS Company (Germany)",
-      items: ["Demo request kampanje", "EUR 85 CPA (industry average EUR 150+)"]
+      items: ["Demo request kampanje", "EUR 85 CPA (industry average EUR 140+)"]
     }
   ];
 
@@ -280,7 +280,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
         "@type": "ListItem",
         position: 3,
         name: "Google Ads for B2B",
-        item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-za-b2b"
+        item: "https://www.slobodan-jelisavac.com/en/services/google-ads-for-b2b"
       }
     ]
   } : {

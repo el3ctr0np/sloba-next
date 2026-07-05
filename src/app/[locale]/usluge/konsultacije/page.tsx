@@ -79,7 +79,7 @@ export default async function KonsultacijePage({ params }: Props) {
               "Performance je pao ili nešto ne radi kako treba — potreban vam je debugging."
           },
           {
-            title: "Želite strategiju, ne execution",
+            title: "Želite strategiju, ne izvršenje",
             description:
               "Vaš tim implementira, a vi trebate nekoga ko postavlja pravac i donosi strateške odluke."
           }
@@ -131,7 +131,7 @@ export default async function KonsultacijePage({ params }: Props) {
               "Bid strategije, PMax setup, Shopping feed optimizacija, conversion tracking."
           },
           {
-            title: "Second opinion",
+            title: "Drugo mišljenje",
             description:
               "Validacija agencijske strategije, provera predloženih izmena, nezavisna procena."
           },
@@ -275,7 +275,7 @@ export default async function KonsultacijePage({ params }: Props) {
           {
             question: "What if I decide to work together long-term?",
             answer:
-              "The consultation fee is deducted from the first month if you decide on management or starter package within 30 days."
+              "The consultation fee is deducted from the first month if you decide on management or a Kickstart project within 30 days."
           },
           {
             question: "Do you work with competing agencies?",
@@ -327,7 +327,7 @@ export default async function KonsultacijePage({ params }: Props) {
           {
             question: "Šta ako odlučim da radimo zajedno dugotrajno?",
             answer:
-              "Cena konsultacije se odbija od prvog meseca ukoliko se odlučite za upravljanje ili starter paket u roku od 30 dana."
+              "Cena konsultacije se odbija od prvog meseca ukoliko se odlučite za upravljanje ili Kickstart projekat u roku od 30 dana."
           },
           {
             question: "Da li radite i za konkurentske agencije?",
@@ -468,7 +468,7 @@ export default async function KonsultacijePage({ params }: Props) {
         "@type": "ListItem",
         position: 3,
         name: locale === "en" ? "Consultations" : "Konsultacije",
-        item: "https://www.slobodan-jelisavac.com/sr/usluge/konsultacije"
+        item: locale === "en" ? "https://www.slobodan-jelisavac.com/en/services/consultations" : "https://www.slobodan-jelisavac.com/sr/usluge/konsultacije"
       }
     ]
   };
@@ -585,7 +585,7 @@ export default async function KonsultacijePage({ params }: Props) {
           <p className="text-gray-600 text-base leading-relaxed">
             {locale === "en"
               ? "I work with marketing managers, in-house PPC specialists, agency owners, and company founders who want independent assessment, strategic advice, or technical help — without commitment to long-term collaboration."
-              : "Radim sa marketing managerima, in-house PPC specijalistima, agency owners-ima i osnivačima kompanija koji žele nezavisnu procenu, strateški savet ili tehničku pomoć — bez obaveze na dugotrajnu saradnju."}
+              : "Radim sa marketing managerima, in-house PPC specijalistima, vlasnicima agencija i osnivačima kompanija koji žele nezavisnu procenu, strateški savet ili tehničku pomoć — bez obaveze na dugotrajnu saradnju."}
           </p>
         </div>
       </section>
@@ -698,7 +698,7 @@ export default async function KonsultacijePage({ params }: Props) {
                 <span className="text-green-600 flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Second opinion on proposed changes"
-                  : "Second opinion na predložene izmene"}
+                  : "Drugo mišljenje na predložene izmene"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
@@ -736,14 +736,14 @@ export default async function KonsultacijePage({ params }: Props) {
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
                 {locale === "en"
-                  ? "Complete account audit"
-                  : "Kompletan account audit"}
+                  ? "Live account walkthrough (no written report)"
+                  : "Live pregled naloga (bez pisanog izveštaja)"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
                 {locale === "en"
-                  ? "Strategic roadmap for the next period"
-                  : "Strategijska roadmap za naredni period"}
+                  ? "Verbal priorities — for a written prioritized plan, see Deep Audit + Action Plan"
+                  : "Usmeni prioriteti — za pisani prioritizovan plan tu je Deep Audit + Action Plan"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
@@ -754,8 +754,8 @@ export default async function KonsultacijePage({ params }: Props) {
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
                 {locale === "en"
-                  ? "Detailed written report with action items"
-                  : "Detaljan pisani report sa action items-ima"}
+                  ? "Session recording and summary notes"
+                  : "Snimak sesije i kratke beleške"}
               </li>
             </ul>
             <Button href="/kontakt" variant="primary">
@@ -784,7 +784,7 @@ export default async function KonsultacijePage({ params }: Props) {
                 <span className="text-yellow-400 flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Monthly allocated hours"
-                  : "Mesečno alocirana sata"}
+                  : "Mesečno alociranih sati"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 flex-shrink-0">✓</span>

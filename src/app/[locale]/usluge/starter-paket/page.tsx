@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Senior Google Ads setup for teams with an in-house owner who takes it from there. Architecture, keywords, RSAs, tracking spec, 60-day plan, handover session. From $990."
       : "Senior Google Ads setup za timove koji imaju osobu za dalje vođenje kampanja. Arhitektura naloga, ključne reči, RSA oglasi, tracking specifikacija, 60-dnevni plan, handover sesija. Od €690.",
     locale,
-    path: "/services/kickstart",
+    path: "/services/starter-package",
     srPath: "/usluge/starter-paket",
   });
 }
@@ -570,7 +570,7 @@ export default async function StarterPaketPage({ params }: Props) {
               <span>{isEn ? "10+ years of experience" : "10+ godina iskustva"}</span>
               <span>3x UK Search Awards</span>
               <span>
-                {isEn ? "50+ campaigns set up" : "50+ setup-ovanih kampanja"}
+                {isEn ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}
               </span>
             </div>
           </div>

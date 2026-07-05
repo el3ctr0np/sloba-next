@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Services | PPC Management & Optimization — Slobodan Jelisavac"
       : "Google Ads Usluge Srbija | Performance Marketing — Slobodan Jelisavac",
     description: isEn
-      ? "Professional Google Ads services for eCommerce and B2B: management, audit, Shopping, PMax, remarketing. 10+ years experience, 180%+ ROAS improvement."
-      : "Profesionalne Google Ads usluge za eCommerce i B2B: upravljanje, audit, Shopping, PMax, remarketing. 10+ godina iskustva, 180%+ poboljšanje ROAS-a.",
+      ? "Professional Google Ads services for eCommerce and B2B: management, audit, Shopping, PMax, remarketing. 10+ years experience, 3.7x average ROAS (eCommerce)."
+      : "Profesionalne Google Ads usluge za eCommerce i B2B: upravljanje, audit, Shopping, PMax, remarketing. 10+ godina iskustva, 3.7x prosečan ROAS (eCommerce).",
     locale,
     path: "/services",
     srPath: "/usluge",
@@ -250,12 +250,12 @@ export default async function ServicesPage({ params }: Props) {
   ];
 
   const results = locale === "en" ? [
-    { value: "180%+", label: "Average ROAS improvement" },
+    { value: "3.7x", label: "Average ROAS (eCommerce)" },
     { value: "−35%", label: "CPA reduction" },
     { value: "3x", label: "UK Search Awards" },
     { value: "10+", label: "Years of experience" }
   ] : [
-    { value: "180%+", label: "Prosečno poboljšanje ROAS-a" },
+    { value: "3.7x", label: "Prosečan ROAS (eCommerce)" },
     { value: "−35%", label: "Smanjenje CPA" },
     { value: "3x", label: "UK Search Awards" },
     { value: "10+", label: "Godina iskustva" }
@@ -266,7 +266,7 @@ export default async function ServicesPage({ params }: Props) {
       number: 1,
       title: "Free consultation",
       description:
-        "30-minute call where I understand your goals, current state, and challenges."
+        "20-minute call where I understand your goals, current state, and challenges."
     },
     {
       number: 2,
@@ -291,7 +291,7 @@ export default async function ServicesPage({ params }: Props) {
       number: 1,
       title: "Besplatna konsultacija",
       description:
-        "30-minutni poziv gde razumem vaše ciljeve, trenutno stanje i izazove."
+        "20-minutni poziv gde razumem vaše ciljeve, trenutno stanje i izazove."
     },
     {
       number: 2,
@@ -332,12 +332,12 @@ export default async function ServicesPage({ params }: Props) {
     },
     {
       q: "Can I see examples of your work?",
-      a: "Yes — check out the case studies section with specific results for eCommerce, B2B, and local campaigns. I've worked with brands across 6+ countries, with an average ROAS improvement of 180%+ and campaigns that won 3 UK Search Awards."
+      a: "Yes — check out the case studies section with specific results for eCommerce, B2B, and local campaigns. I've worked with brands across 6+ countries, with a 3.7x average ROAS (eCommerce) and campaigns that won 3 UK Search Awards."
     }
   ] : [
     {
       q: "Koja je minimalna investicija za saradnju?",
-      a: "Mesečno vođenje Google Ads naloga počinje od €700 mesečno. Za manje ad spend budžete tu su one-off projekti i konsultacije — cena zavisi od obima."
+      a: "Mesečno vođenje Google Ads naloga počinje od €700 mesečno. Za manje ad spend budžete tu su one-off projekti i konsultacije — cena zavisi od obima. Iz iskustva, za smislene rezultate treba bar €1.500+ mesečno ad spend-a — ispod toga je Kickstart ili konsultacija bolji format."
     },
     {
       q: "Da li radite samo sa kompanijama iz Srbije?",
@@ -927,8 +927,8 @@ export default async function ServicesPage({ params }: Props) {
           </h2>
           <p className="text-slate-300 mb-8">
             {locale === "en"
-              ? "Book a free 30-minute consultation and let's see if it makes sense to work together. No obligation."
-              : "Zakažite besplatnu 30-minutnu konsultaciju i proverimo da li ima smisla da radimo zajedno. Bez obaveza."
+              ? "Book a free 20-minute consultation and let's see if it makes sense to work together. No obligation."
+              : "Zakažite besplatnu 20-minutnu konsultaciju i proverimo da li ima smisla da radimo zajedno. Bez obaveza."
             }
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

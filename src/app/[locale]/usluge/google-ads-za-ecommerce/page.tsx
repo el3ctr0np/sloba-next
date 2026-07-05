@@ -164,7 +164,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         {
           question: "What's a good ROAS for eCommerce?",
           answer:
-            "It depends on margins. If your margin is 50%, ROAS 3x is break-even. For profitability, you need higher. I optimize for POAS (Profit on Ad Spend) to ensure real business growth."
+            "It depends on margins. If your margin is 50%, break-even ROAS is 2x. For real profit — covering shipping, returns and overhead — you target higher, which is why I optimize for POAS (profit on ad spend), not raw ROAS."
         },
         {
           question: "Do you manage product feeds?",
@@ -191,7 +191,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         {
           question: "Šta je dobar ROAS za eCommerce?",
           answer:
-            "Zavisi od marži. Ako je marža 50%, ROAS 3x je break-even. Za profitabilnost treba više."
+            "Zavisi od marži. Ako je marža 50%, break-even ROAS je 2x. Za stvaran profit — uz troškove dostave, povrata i režije — cilja se više, zato optimizujem POAS (profit na uloženo), ne goli ROAS."
         },
         {
           question: "Da li upravljate i feed-om?",

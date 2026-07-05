@@ -23,7 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Kontakt | Besplatna Google Ads Konsultacija — Slobodan Jelisavac",
     description: "Zakažite besplatnu Google Ads konsultaciju. Bez obaveze, bez pritiska — samo konkretan razgovor o tome kako poboljšati vaše kampanje.",
     locale,
-    path: "/kontakt",
+    path: "/contact",
+    srPath: "/kontakt",
   });
 }
 
@@ -158,7 +159,7 @@ export default async function ContactPage({ params }: Props) {
             "@type": "ListItem",
             position: 2,
             name: "Kontakt",
-            item: "https://www.slobodan-jelisavac.com/kontakt"
+            item: "https://www.slobodan-jelisavac.com/sr/kontakt"
           }
         ]
       };

@@ -390,7 +390,7 @@ export default async function RemarketingPage({ params }: Props) {
         "@type": "ListItem",
         position: 3,
         name: "Remarketing",
-        item: "https://www.slobodan-jelisavac.com/sr/usluge/remarketing"
+        item: "https://www.slobodan-jelisavac.com/en/services/remarketing"
       }
     ]
   } : {

@@ -19,7 +19,7 @@ export function ContactForm() {
       <input
         type="hidden"
         name="_next"
-        value={`https://www.slobodan-jelisavac.com/${locale}/kontakt/hvala`}
+        value={`https://www.slobodan-jelisavac.com/${locale === "en" ? "en/contact/thank-you" : "sr/kontakt/hvala"}`}
       />
 
       <input

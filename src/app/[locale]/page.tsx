@@ -226,7 +226,7 @@ export default async function Home({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      <Hero {...heroProps} />
+      <Hero {...heroProps} locale={locale} />
 
       {/* Stats Strip — with counter animations */}
       <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
@@ -268,7 +268,7 @@ export default async function Home({ params }: Props) {
       </AnimateOnScroll>
       <ClientLogos />
       <AnimateOnScroll>
-        <CaseStudiesPreview />
+        <CaseStudiesPreview locale={locale} />
       </AnimateOnScroll>
       <AnimateOnScroll>
         <Testimonial />

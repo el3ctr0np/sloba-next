@@ -220,7 +220,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
           {
             question: "Koliko budžeta treba za PMax?",
             answer:
-              "Za sam PMax kanal minimum €800/mes budžeta ima smisla, ali PMax vodim u sklopu šireg upravljanja (od €700/mes) — samostalan PMax bez Search/Shopping konteksta retko daje pun potencijal."
+              "Za sam PMax kanal minimum €1.000/mes budžeta ima smisla, ali PMax vodim u sklopu šireg upravljanja (od €700/mes) — samostalan PMax bez Search/Shopping konteksta retko daje pun potencijal."
           },
           {
             question: "Koliko traje učenje PMax kampanje?",
