@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Ads for SaaS | PPC Lead Generation for Software Companies — Slobodan Jelisavac"
-      : "Google Ads za SaaS | Customer acquisition - Slobodan Jelisavac",
+      : "Google Ads za SaaS | Niži CAC, brže skaliranje - Slobodan Jelisavac",
     description: isEn
       ? "Reduce CAC and scale SaaS customer acquisition with Google Ads. Focus on trial-to-paid conversions, demo bookings, and metrics that drive growth. 10+ years working with B2B SaaS companies."
       : "Smanjite CAC i skalirajte SaaS acquisition kroz Google Ads. Fokus na trial-to-paid konverzije i metrike koje donose rast. 10+ godina iskustva sa B2B SaaS kompanijama.",
@@ -75,13 +75,13 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         "You have product-market fit (people pay and stay)",
         "MRR minimum $10k+ or ARR $120k+",
         "You can track downstream conversions (trial-to-paid)",
-        "Budget for paid acquisition minimum $2,000/month"
+        "Budget for paid acquisition minimum $10,000/month for paid acquisition (management from $2,500/mo)"
       ]
     : [
         "Imate product-market fit (ljudi plaćaju i ostaju)",
         "MRR minimum EUR 10k+ ili ARR EUR 120k+",
         "Možete pratiti downstream konverzije (trial-to-paid)",
-        "Budžet za paid acquisition minimum EUR 2,000/mesečno"
+        "Budžet za paid acquisition minimum €1.500/mesečno (mesečno vođenje od €700/mes)"
       ];
 
   const industries = locale === "en"
@@ -219,7 +219,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         "@type": "Service",
         name: "Google Ads for SaaS",
         description:
-          "Google Ads strategies for SaaS companies focused on trial-to-paid conversion and CAC reduction.",
+          "Monthly Google Ads management for SaaS — from $2,500/mo.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
@@ -239,14 +239,25 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           { "@type": "Country", name: "Germany" },
           { "@type": "Country", name: "Serbia" },
           { "@type": "Country", name: "Croatia" }
-        ]
+        ],
+        offers: {
+          "@type": "Offer",
+          price: "2500",
+          priceCurrency: "USD",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "2500",
+            priceCurrency: "USD",
+            unitText: "MONTH"
+          }
+        }
       }
     : {
         "@context": "https://schema.org",
         "@type": "Service",
         name: "Google Ads za SaaS",
         description:
-          "Google Ads strategije za SaaS kompanije fokusirane na trial-to-paid i smanjenje CAC-a.",
+          "Mesečno Google Ads vođenje za SaaS — od €700/mes.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
@@ -264,7 +275,18 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           { "@type": "Country", name: "United Kingdom" },
           { "@type": "Country", name: "Germany" },
           { "@type": "Country", name: "Croatia" }
-        ]
+        ],
+        offers: {
+          "@type": "Offer",
+          price: "700",
+          priceCurrency: "EUR",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "700",
+            priceCurrency: "EUR",
+            unitText: "MONTH"
+          }
+        }
       };
 
   const breadcrumbSchema = locale === "en"
@@ -443,6 +465,21 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         </div>
       </section>
 
+      <section className="bg-white px-4 md:px-8 pt-8 md:pt-10">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-blue-50 border-l-4 border-primary rounded-xl p-5 md:p-6 shadow-card">
+            <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+              {locale === "en" ? "Quick answer" : "Brzi odgovor"}
+            </p>
+            <p className="text-base text-gray-800 mb-0 leading-relaxed">
+              {locale === "en"
+                ? "Google Ads for SaaS works best for companies with MRR $10k+ (ARR $120k+), product-market fit, and 80%+ retention after 3 months. The focus is CAC and trial-to-paid conversion, not signup count. Monthly management starts from $2,500/mo."
+                : "Google Ads za SaaS radi najbolje za kompanije sa MRR €10k+ (ARR €120k+), product-market fit-om i retencijom 80%+ posle 3 meseca. Fokus je na CAC-u i trial-to-paid konverziji, ne na broju signup-ova. Mesečno vođenje od €700/mes."}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SEO Intro Section */}
       <section className="bg-white border-b border-gray-100 py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
@@ -456,6 +493,11 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
               {locale === "en"
                 ? "My approach focuses on downstream metrics—not just how many trial signups you get, but how many convert to paying customers with strong retention. This means integrating Google Ads data with your CRM, tracking trial-to-paid conversion rates by campaign, and optimizing toward a CAC that makes sense for your LTV."
                 : "Moj pristup fokusira se na downstream metrike - ne samo koliko trial signups imate, već koliko njih postaje paying customers sa dobrim retention-om. To znači integraciju Google Ads podataka sa vašim CRM-om, praćenje trial-to-paid conversion rate-a po kampanjama i optimizaciju ka CAC-u koji ima smisla za vaš LTV."}
+            </p>
+            <p className="text-base text-gray-500">
+              {locale === "en"
+                ? <>If you're looking for lead generation for other B2B services outside of software, see <Link href="/usluge/google-ads-za-b2b" className="text-primary underline">Google Ads for B2B</Link>.</>
+                : <>Ako tražite lead generation za druge B2B usluge van softvera, pogledajte <Link href="/usluge/google-ads-za-b2b" className="text-primary underline">Google Ads za B2B</Link>.</>}
             </p>
           </div>
         </div>
@@ -608,6 +650,28 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         </div>
       </Section>
 
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+            {locale === "en" ? "What's your next step?" : "Koji je vaš sledeći korak?"}
+          </h2>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-base">
+          <Link href="/usluge/google-ads-upravljanje" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Ready for management → eCommerce Growth (from $2,500/mo)" : "Spremni za vođenje → eCommerce Growth (od €700/mes)"}
+          </Link>
+          <Link href="/usluge/starter-paket" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Just setting up your account → Kickstart (from $990)" : "Tek postavljate nalog → Kickstart (od €690)"}
+          </Link>
+          <Link href="/usluge/google-ads-audit" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Diagnosis first → Deep Audit + Action Plan (from $500)" : "Prvo dijagnostika → Deep Audit + Action Plan (od €450)"}
+          </Link>
+          <Link href="/usluge/konsultacije" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Smaller budget or a quick answer → Consulting ($200/hr)" : "Manji budžet ili brzi savet → Konsultacije (€150/sat)"}
+          </Link>
+        </div>
+      </Section>
+
       {/* Dark CTA Section */}
       <section className="bg-slate-900 text-white py-16 md:py-20 px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center">
@@ -651,6 +715,20 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
               className="hover:text-yellow-400 transition-colors underline"
             >
               {locale === "en" ? "Search campaigns" : "Search kampanje"}
+            </Link>
+            <span className="text-slate-600">·</span>
+            <Link
+              href="/usluge/google-ads-audit"
+              className="hover:text-yellow-400 transition-colors underline"
+            >
+              {locale === "en" ? "Deep Audit" : "Deep Audit"}
+            </Link>
+            <span className="text-slate-600">·</span>
+            <Link
+              href="/usluge/starter-paket"
+              className="hover:text-yellow-400 transition-colors underline"
+            >
+              {locale === "en" ? "Kickstart" : "Kickstart"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link

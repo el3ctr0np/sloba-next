@@ -327,7 +327,13 @@ export default async function SearchKampanjePage({ params }: Props) {
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "Croatia" }
     ],
-    description: "Expert Google Search campaign management with focus on high-intent keywords, conversion-focused ad copy, and Quality Score optimization."
+    description: "Expert Google Search campaign management with focus on high-intent keywords, conversion-focused ad copy, and Quality Score optimization.",
+    offers: {
+      "@type": "Offer",
+      price: "500",
+      priceCurrency: "USD",
+      description: "Search campaigns — minimum channel budget $500/month"
+    }
   } : {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -341,7 +347,13 @@ export default async function SearchKampanjePage({ params }: Props) {
       { "@type": "Country", name: "Croatia" },
       { "@type": "Country", name: "Bosnia and Herzegovina" }
     ],
-    description: "Profesionalne Google Search kampanje za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija."
+    description: "Profesionalne Google Search kampanje za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija.",
+    offers: {
+      "@type": "Offer",
+      price: "500",
+      priceCurrency: "EUR",
+      description: "Search kampanje — minimalni budžet kanala €500/mes"
+    }
   };
 
   return (
@@ -390,7 +402,7 @@ export default async function SearchKampanjePage({ params }: Props) {
           </nav>
 
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
-            {locale === "en" ? "Google Search campaigns - reach customers when they search for you" : "Google Search kampanje - dođite do kupaca kada vas traže"}
+            {locale === "en" ? "Google Search campaigns — reach customers when they search for you" : "Google Search kampanje — dođite do kupaca kada vas traže"}
           </h1>
 
           {/* Trust Badges */}
@@ -457,6 +469,20 @@ export default async function SearchKampanjePage({ params }: Props) {
         </div>
       </section>
 
+      {/* Brzi odgovor / Quick answer */}
+      <section className="py-8 px-4 md:px-8 bg-white">
+        <div className="max-w-3xl">
+          <div className="border-l-4 border-primary bg-blue-50 rounded-r-xl p-5 md:p-6">
+            <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+              <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
+              {locale === "en"
+                ? "Search campaigns capture existing demand — minimum $500/month budget, first results within a week, stable results after 4-6 weeks with 20-50 carefully chosen keywords."
+                : "Search kampanje hvataju postojeću tražnju — minimum €500/mes budžeta, prvi rezultati za nedelju dana, stabilni rezultati za 4-6 nedelja uz 20-50 pažljivo biranih ključnih reči."}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SEO Intro Section */}
       <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
         <div className="max-w-3xl">
@@ -475,6 +501,11 @@ export default async function SearchKampanjePage({ params }: Props) {
                 ROI kroz keyword strategiju, ad copy i bid optimizaciju.
               </>
             )}
+          </p>
+          <p className="text-base text-gray-600 leading-relaxed mt-4">
+            {locale === "en"
+              ? "Search from a $500/month budget makes sense as a standalone test — for full growth it combines with Shopping/PMax within management (from $2,500/mo)."
+              : "Search od €500/mes budžeta ima smisla kao samostalan test — za pun rast kombinuje se sa Shopping/PMax u okviru upravljanja (od €700/mes)."}
           </p>
         </div>
       </section>
@@ -555,6 +586,45 @@ export default async function SearchKampanjePage({ params }: Props) {
                 <>Search campaigns work for: {industries.join(", ")}.</>
               ) : (
                 <>Search kampanje funkcionišu za: {industries.join(", ")}.</>
+              )}
+            </div>
+            <div className="text-base text-gray-500 mt-3 pt-3 border-t border-gray-200">
+              {locale === "en" ? (
+                <>
+                  Search is a natural lead-gen channel for{" "}
+                  <Link
+                    href="/usluge/google-ads-za-b2b"
+                    className="text-blue-600 hover:underline"
+                  >
+                    B2B
+                  </Link>{" "}
+                  and{" "}
+                  <Link
+                    href="/usluge/google-ads-za-saas"
+                    className="text-blue-600 hover:underline"
+                  >
+                    SaaS
+                  </Link>{" "}
+                  companies.
+                </>
+              ) : (
+                <>
+                  Search je prirodan lead-gen kanal za{" "}
+                  <Link
+                    href="/usluge/google-ads-za-b2b"
+                    className="text-blue-600 hover:underline"
+                  >
+                    B2B
+                  </Link>{" "}
+                  i{" "}
+                  <Link
+                    href="/usluge/google-ads-za-saas"
+                    className="text-blue-600 hover:underline"
+                  >
+                    SaaS
+                  </Link>{" "}
+                  kompanije.
+                </>
               )}
             </div>
           </Card>

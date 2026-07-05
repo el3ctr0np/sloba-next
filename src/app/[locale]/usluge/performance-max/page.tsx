@@ -148,16 +148,29 @@ export default async function PerformanceMaxPage({ params }: Props) {
   const idealClients =
     locale === "en"
       ? [
-          "Small and medium businesses with a budget of $1,000-3,500/month",
+          "eCommerce and lead-gen brands spending $10k+/month across Google Ads",
           "Companies that want simplicity over complexity",
           "Businesses without an in-house Google Ads specialist",
           "Companies wanting to test advertising with a single campaign"
         ]
       : [
-          "Manja i srednja preduzeća sa budžetom od EUR 800-3,000/mesečno",
+          "eCommerce i lead-gen biznisi sa ukupnim ad spend-om €1.500+/mesečno",
           "Firme koje žele jednostavnost umesto kompleksnosti",
           "Biznisi bez internog Google Ads specijaliste",
           "Kompanije koje žele da testiraju oglašavanje sa jednom kampanjom"
+        ];
+
+  const notFor =
+    locale === "en"
+      ? [
+          "You want set-it-and-forget-it with no strategic oversight",
+          "You don't have verified conversion tracking in place",
+          "Your ad spend is below the threshold — a consultation is a better starting point"
+        ]
+      : [
+          "Tražite set-and-forget bez strateškog nadzora",
+          "Nemate verifikovan tracking konverzija",
+          "Vaš ad spend je ispod praga — konsultacija je bolja polazna tačka"
         ];
 
   const faqs =
@@ -176,7 +189,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
           {
             question: "How much budget is needed for PMax?",
             answer:
-              "I recommend a minimum of $1,000/month for a PMax campaign alone."
+              "A $1,000/month channel minimum makes sense for PMax alone, but I run it as part of broader management (from $2,500/mo) — a standalone PMax campaign without Search/Shopping context rarely reaches its full potential."
           },
           {
             question: "How long does the PMax learning phase take?",
@@ -206,7 +219,8 @@ export default async function PerformanceMaxPage({ params }: Props) {
           },
           {
             question: "Koliko budžeta treba za PMax?",
-            answer: "Minimum preporučujem EUR 800/mesečno samo za PMax kampanju."
+            answer:
+              "Za sam PMax kanal minimum €800/mes budžeta ima smisla, ali PMax vodim u sklopu šireg upravljanja (od €700/mes) — samostalan PMax bez Search/Shopping konteksta retko daje pun potencijal."
           },
           {
             question: "Koliko traje učenje PMax kampanje?",
@@ -290,7 +304,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
           "@type": "Service",
           name: "Performance Max Campaign Management",
           description:
-            "Professional Performance Max campaign management for businesses seeking consolidated advertising across all Google channels.",
+            "Professional Performance Max campaign management for eCommerce and lead-gen brands seeking strategic control across all Google channels.",
           provider: {
             "@type": "Person",
             name: "Slobodan Jelisavac",
@@ -303,18 +317,40 @@ export default async function PerformanceMaxPage({ params }: Props) {
             "Germany",
             "Serbia",
             "Croatia"
-          ]
+          ],
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "USD",
+            price: "2500",
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price: "2500",
+              priceCurrency: "USD",
+              unitText: "MONTH"
+            }
+          }
         }
       : {
           "@context": "https://schema.org",
           "@type": "Service",
           name: "Performance Max kampanje",
           description:
-            "Upravljanje Performance Max kampanjama za firme koje žele konsolidovano oglašavanje.",
+            "Upravljanje Performance Max kampanjama za eCommerce i lead-gen biznise koji žele stratešku kontrolu.",
           provider: {
             "@type": "Person",
             name: "Slobodan Jelisavac",
             url: "https://www.slobodan-jelisavac.com"
+          },
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "EUR",
+            price: "700",
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price: "700",
+              priceCurrency: "EUR",
+              unitText: "MONTH"
+            }
           }
         };
 
@@ -369,28 +405,41 @@ export default async function PerformanceMaxPage({ params }: Props) {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
-                ? "Performance Max campaign management for small and medium businesses"
-                : "Performance Max - upravljanje kampanjama za manji i srednji biznis"}
+                ? "Performance Max management — strategic control, not black-box automation"
+                : "Performance Max — strateška kontrola umesto \"set it and forget it\" pristupa"}
             </h1>
             <p className="text-lg text-gray-300 mb-8">
               {locale === "en" ? (
                 <>
                   Performance Max campaigns combine Search, Shopping, Display,
-                  YouTube, Gmail, and Discover into one automated campaign. This
-                  service was created after receiving numerous requests from
-                  small and medium businesses seeking consolidated advertising
-                  in a single campaign with proper management.
+                  YouTube, Gmail, and Discover into one automated campaign.
+                  Left on autopilot, PMax burns budget with no visibility into
+                  what's actually driving results. I run it with the
+                  transparency, structure, and measurement that automation on
+                  its own doesn't provide.
                 </>
               ) : (
                 <>
                   Performance Max kampanje kombinuju Search, Shopping, Display,
                   YouTube, Gmail i Discover u jednoj automatizovanoj kampanji.
-                  Ova usluga je nastala nakon velikog broja upita od manjih i
-                  srednjih preduzeća koja žele konsolidovano oglašavanje u
-                  jednoj kampanji i pravilno upravljanje.
+                  Prepuštena sama sebi, PMax troši budžet bez jasnog uvida šta
+                  zaista donosi rezultate. Vodim je uz transparentnost,
+                  strukturu i merenje koje automatizacija sama po sebi ne
+                  pruža.
                 </>
               )}
             </p>
+
+            <div
+              className={`border-l-4 border-primary bg-blue-50 p-4 md:p-5 rounded-r-lg mb-8 text-left`}
+            >
+              <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
+                {locale === "en"
+                  ? "Performance Max works best combined with Search and Shopping campaigns — automation needs 4-6 weeks to stabilize and get a clean conversion signal. I run it as part of Google Ads management from $2,500/mo."
+                  : "Performance Max najbolje radi u kombinaciji sa Search i Shopping kampanjama — automatizaciji treba 4-6 nedelja za stabilizaciju i čist conversion signal. Vodim ga u sklopu Google Ads upravljanja od €700/mes."}
+              </p>
+            </div>
 
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-4 mb-8">
@@ -477,17 +526,19 @@ export default async function PerformanceMaxPage({ params }: Props) {
             <p>
               {locale === "en" ? (
                 <>
-                  This service is designed for companies that want the benefits
-                  of PMax campaigns with expert management and transparency. I
-                  use advanced scripts and data extraction techniques that give
-                  you insights Google doesn't show by default.
+                  This service is designed for eCommerce and lead-gen brands
+                  that want the benefits of PMax campaigns with expert
+                  management and transparency. I use advanced scripts and data
+                  extraction techniques that give you insights Google doesn't
+                  show by default.
                 </>
               ) : (
                 <>
-                  Ova usluga je dizajnirana za firme koje žele prednosti PMax
-                  kampanja uz stručno upravljanje i transparentnost. Koristim
-                  napredne skripte i tehnike za izvore podataka koje vam daju
-                  uvid koji Google standardno ne prikazuje.
+                  Ova usluga je dizajnirana za eCommerce i lead-gen biznise
+                  koji žele prednosti PMax kampanja uz stručno upravljanje i
+                  transparentnost. Koristim napredne skripte i tehnike za
+                  izvore podataka koje vam daju uvid koji Google standardno
+                  ne prikazuje.
                 </>
               )}
             </p>
@@ -597,16 +648,17 @@ export default async function PerformanceMaxPage({ params }: Props) {
           <p className="text-base text-gray-500 mt-6">
             {locale === "en" ? (
               <>
-                Note: For budgets over $5,000/month and need for granular
-                control, I recommend{" "}
+                Note: PMax is one channel within Google Ads management —
+                strategy, feed, and measurement move together. I run it as
+                part of{" "}
                 <Link
                   href="/usluge/google-ads-upravljanje"
                   className="underline"
                 >
                   full Google Ads management
                 </Link>{" "}
-                with a combination of multiple campaign types. For eCommerce
-                businesses, consider{" "}
+                alongside Search and Shopping. For eCommerce businesses,
+                consider{" "}
                 <Link href="/usluge/google-shopping" className="underline">
                   Google Shopping campaigns
                 </Link>{" "}
@@ -614,16 +666,17 @@ export default async function PerformanceMaxPage({ params }: Props) {
               </>
             ) : (
               <>
-                Napomena: Za budžete preko EUR 5,000/mesečno i potrebu za
-                granularnom kontrolom, preporučujem{" "}
+                Napomena: PMax je jedan od kanala unutar Google Ads
+                upravljanja — strategija, feed i merenje idu zajedno. Vodim
+                ga u sklopu{" "}
                 <Link
                   href="/usluge/google-ads-upravljanje"
                   className="underline"
                 >
-                  kompletno Google Ads upravljanje
+                  kompletnog Google Ads upravljanja
                 </Link>{" "}
-                sa kombinacijom više tipova kampanja. Za eCommerce biznise,
-                razmotrite{" "}
+                zajedno sa Search i Shopping kampanjama. Za eCommerce
+                biznise, razmotrite{" "}
                 <Link href="/usluge/google-shopping" className="underline">
                   Google Shopping kampanje
                 </Link>{" "}
@@ -631,6 +684,43 @@ export default async function PerformanceMaxPage({ params }: Props) {
               </>
             )}
           </p>
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="max-w-3xl mx-auto">
+          <Card className="h-full border-2 border-red-200 bg-red-50">
+            <h3 className="text-xl font-heading font-semibold text-gray-900 mb-4">
+              {locale === "en" ? "Not for you if..." : "Nije za vas ako..."}
+            </h3>
+            <ul className="space-y-3">
+              {notFor.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="text-red-600 mr-1 mt-1">✕</span>
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-gray-500 mt-4">
+              {locale === "en" ? (
+                <>
+                  If any of this sounds like you, start with a{" "}
+                  <Link href="/kontakt" className="underline">
+                    consultation
+                  </Link>{" "}
+                  before committing to PMax management.
+                </>
+              ) : (
+                <>
+                  Ako se prepoznajete u ovome, počnite sa{" "}
+                  <Link href="/kontakt" className="underline">
+                    konsultacijom
+                  </Link>{" "}
+                  pre nego što krenete u PMax upravljanje.
+                </>
+              )}
+            </p>
+          </Card>
         </div>
       </Section>
 

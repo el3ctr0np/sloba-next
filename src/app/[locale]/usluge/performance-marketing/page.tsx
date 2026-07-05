@@ -173,7 +173,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           "Looking for the cheapest option on the market"
         ]
       : [
-          "Budžet ispod €3,000 mesečno za oglašavanje",
+          "Budžet ispod €5.000 mesečno po kanalu — eCommerce Growth je bolji fit za vas",
           "Potreban samo jedan kanal (Google Ads ili Meta)",
           "Tražite najjeftiniju opciju na tržištu"
         ];
@@ -390,6 +390,65 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           ]
         };
 
+  const serviceSchema =
+    locale === "en"
+      ? {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Performance Marketing",
+          description:
+            "Omnichannel performance marketing team (Google Ads + Meta + SEO + CRO) for brands investing $20k+/month per channel. Delivered in partnership with Funky Enterprises.",
+          provider: [
+            {
+              "@type": "Person",
+              name: "Slobodan Jelisavac",
+              url: "https://www.slobodan-jelisavac.com",
+              jobTitle: "Performance Marketing Strategist"
+            },
+            {
+              "@type": "Organization",
+              name: "Funky Enterprises",
+              url: "https://www.funky.enterprises/"
+            }
+          ],
+          areaServed: [
+            { "@type": "Country", name: "United States" },
+            { "@type": "Country", name: "United Kingdom" },
+            { "@type": "Country", name: "Australia" },
+            { "@type": "Country", name: "Germany" },
+            { "@type": "Country", name: "Serbia" },
+            { "@type": "Country", name: "Croatia" }
+          ],
+          serviceType: "Performance Marketing"
+        }
+      : {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Performance Marketing",
+          description:
+            "Omnichannel performance marketing tim (Google + Meta + SEO + CRO) — za budžete €5.000+/mes. Isporučuje se u partnerstvu sa Funky Enterprises.",
+          provider: [
+            {
+              "@type": "Person",
+              name: "Slobodan Jelisavac",
+              url: "https://www.slobodan-jelisavac.com",
+              jobTitle: "Google Ads Konsultant"
+            },
+            {
+              "@type": "Organization",
+              name: "Funky Enterprises",
+              url: "https://www.funky.enterprises/"
+            }
+          ],
+          areaServed: [
+            { "@type": "Country", name: "Serbia" },
+            { "@type": "Country", name: "United Kingdom" },
+            { "@type": "Country", name: "Germany" },
+            { "@type": "Country", name: "Croatia" }
+          ],
+          serviceType: "Performance Marketing"
+        };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -412,6 +471,10 @@ export default async function PerformanceMarketingPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <script
         type="application/ld+json"
@@ -449,6 +512,15 @@ export default async function PerformanceMarketingPage({ params }: Props) {
                 ? "For companies that want more than one channel. You get a dedicated team of experts covering Google Ads, Meta advertising, SEO, CRO, and creative. The result: integrated omnichannel approach with a single point of contact."
                 : "Performance marketing u Srbiji zahteva više od jednog kanala — kombinaciju Google Ads-a, Meta oglašavanja, SEO-a, CRO-a i kreative. Dobijate dedicated tim eksperata koji pokrivaju sve kanale, sa jednom kontaktnom tačkom. Rezultat: integrisani omnichannel pristup prilagođen srpskom i regionalnom tržištu."}
             </p>
+
+            <div className="border-l-4 border-primary bg-blue-50 p-4 md:p-5 rounded-r-lg mb-8 text-left">
+              <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
+                {locale === "en"
+                  ? "Performance Marketing (powered by Funky Enterprises) is an omnichannel team — Google Ads, Meta, SEO, CRO, and tracking under one strategy. For brands with $20k+/month per channel aiming for category leadership."
+                  : "Performance Marketing (Powered by Funky Enterprises) je omnichannel tim — Google Ads, Meta, SEO, CRO i tracking pod jednom strategijom. Za brendove sa €5.000+/mes budžetom koji ciljaju lidersku poziciju u kategoriji."}
+              </p>
+            </div>
 
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-4 mb-8">

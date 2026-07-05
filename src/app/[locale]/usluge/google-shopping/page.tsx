@@ -170,16 +170,26 @@ export default async function GoogleShoppingPage({ params }: Props) {
 
   const idealClients = locale === "en" ? [
     "You have an online store with minimum 50 products",
-    "Current ad spend is minimum $1,000/month",
+    "Ad spend is $10,000/month — Shopping is managed as part of the eCommerce Growth package (from $2,500/mo)",
     "You have defined margins per product",
     "You want to scale eCommerce revenue",
     "You're ready for long-term partnership (minimum 3 months)"
   ] : [
     "Imate online prodavnicu sa minimum 50 proizvoda",
-    "Trenutni ad spend je minimum EUR 800/mesečno",
+    "Ad spend minimum €1.500/mesečno — Shopping vodim u okviru eCommerce Growth paketa (od €700/mes)",
     "Imate definisane marže po proizvodima",
     "Želite da skalirate eCommerce prihode",
     "Spremni ste za dugoročnu saradnju (minimum 3 meseca)"
+  ];
+
+  const notFor = locale === "en" ? [
+    "No functional online store or checkout yet",
+    "Ad spend below the $10,000/month threshold — a consultation or Kickstart is a better fit",
+    "Looking for the cheapest option on the market"
+  ] : [
+    "Nemate funkcionalan online sajt ili checkout",
+    "Ad spend je ispod praga od €1.500/mesečno — konsultacija ili Kickstart su bolji fit",
+    "Tražite najjeftiniju opciju na tržištu"
   ];
 
   const industries = locale === "en" ? [
@@ -286,7 +296,18 @@ export default async function GoogleShoppingPage({ params }: Props) {
       { "@type": "Country", name: "Germany" },
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "Croatia" }
-    ]
+    ],
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "USD",
+      price: "2500",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "2500",
+        priceCurrency: "USD",
+        unitText: "MONTH"
+      }
+    }
   } : {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -297,6 +318,17 @@ export default async function GoogleShoppingPage({ params }: Props) {
       "@type": "Person",
       name: "Slobodan Jelisavac",
       url: "https://www.slobodan-jelisavac.com"
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      price: "700",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "700",
+        priceCurrency: "EUR",
+        unitText: "MONTH"
+      }
     }
   };
 
@@ -443,12 +475,26 @@ export default async function GoogleShoppingPage({ params }: Props) {
               </div>
             </div>
 
+            <div
+              className="border-l-4 border-primary bg-blue-50 p-4 md:p-5 rounded-r-lg mb-8 text-left"
+            >
+              <p className="text-gray-800 text-sm md:text-base leading-relaxed">
+                <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
+                {locale === "en"
+                  ? "Google Shopping campaigns work best for online stores with 50+ products and $10,000+/month ad spend. Average ROAS improvement: 2-5x within the first 3 months with a solid feed. I run them as part of the eCommerce Growth package from $2,500/mo."
+                  : "Google Shopping kampanje rade najbolje za online prodavnice sa 50+ proizvoda i €1.500+/mes ad spend-a. Prosečno poboljšanje ROAS-a: 2-5x u prva 3 meseca uz kvalitetan feed. Vodim ih u okviru eCommerce Growth paketa od €700/mes."}
+              </p>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
                 {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
               <Button href="/case-studies" variant="primary">
                 {locale === "en" ? "View results" : "Pogledajte rezultate"}
+              </Button>
+              <Button href="/usluge/google-ads-upravljanje" variant="primary">
+                {locale === "en" ? "Google Ads management" : "Google Ads upravljanje"}
               </Button>
             </div>
           </div>
@@ -466,6 +512,25 @@ export default async function GoogleShoppingPage({ params }: Props) {
             ) : (
               <>
                 Google Shopping kampanje omogućavaju online prodavnicama da prikažu svoje proizvode sa slikom, cenom i nazivom direktno u Google rezultatima pretrage. Za razliku od tekstualnih oglasa, Shopping oglasi daju kupcima vizuelni pregled proizvoda pre nego što kliknu, što rezultuje kvalitetnijim klikom i višim stopama konverzije. Međutim, da bi Shopping kampanje donele rezultate, potrebna je stručna optimizacija product feed-a, pravilna struktura kampanja i kontinuirano praćenje performansi. Specijalizovan sam za Google Shopping oglašavanje za eCommerce brendove u Srbiji i regionu, sa fokusom na maksimizaciju ROAS-a kroz data-driven optimizacije.
+              </>
+            )}
+          </p>
+          <p className="text-gray-700 leading-relaxed mt-4">
+            {locale === "en" ? (
+              <>
+                Shopping is one channel — for a complete eCommerce strategy, see{" "}
+                <Link href="/usluge/google-ads-za-ecommerce" className="underline">
+                  Google Ads for eCommerce
+                </Link>
+                .
+              </>
+            ) : (
+              <>
+                Shopping je jedan kanal — za kompletnu eCommerce strategiju pogledajte{" "}
+                <Link href="/usluge/google-ads-za-ecommerce" className="underline">
+                  Google Ads za eCommerce
+                </Link>
+                .
               </>
             )}
           </p>
@@ -587,6 +652,51 @@ export default async function GoogleShoppingPage({ params }: Props) {
               {locale === "en" ? "Platforms: " : "Platforme: "}
               {platforms.join(", ")}.
             </div>
+          </Card>
+        </div>
+      </Section>
+
+      <Section background="gray">
+        <div className="max-w-3xl mx-auto">
+          <Card className="h-full border-2 border-red-200 bg-red-50">
+            <h3 className="text-xl font-heading font-semibold text-gray-900 mb-4">
+              {locale === "en" ? "Not for you if..." : "Nije za vas ako..."}
+            </h3>
+            <ul className="space-y-3">
+              {notFor.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="text-red-600 mr-1 mt-1">✕</span>
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-gray-500 mt-4">
+              {locale === "en" ? (
+                <>
+                  If any of this sounds like you, start with a{" "}
+                  <Link href="/kontakt" className="underline">
+                    consultation
+                  </Link>{" "}
+                  or the{" "}
+                  <Link href="/kontakt" className="underline">
+                    Kickstart
+                  </Link>{" "}
+                  package instead.
+                </>
+              ) : (
+                <>
+                  Ako se prepoznajete u ovome, počnite sa{" "}
+                  <Link href="/kontakt" className="underline">
+                    konsultacijom
+                  </Link>{" "}
+                  ili{" "}
+                  <Link href="/kontakt" className="underline">
+                    Kickstart
+                  </Link>{" "}
+                  paketom.
+                </>
+              )}
+            </p>
           </Card>
         </div>
       </Section>

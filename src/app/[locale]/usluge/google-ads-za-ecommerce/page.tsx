@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Ads for eCommerce | Shopping & PMax Campaign Management — Slobodan Jelisavac"
-      : "Google Ads za eCommerce | Online prodavnice - Slobodan Jelisavac",
+      : "Google Ads za eCommerce | 3-5x ROAS za online prodavnice - Slobodan Jelisavac",
     description: isEn
       ? "Drive profitable growth for your online store with expert eCommerce Google Ads strategies. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, and other verticals. 10+ years experience, 5x+ ROAS in 90 days."
       : "Povećajte prihod i ROAS vaše online prodavnice sa specijalizovanim Google Ads strategijama za eCommerce. Shopping, Performance Max i remarketing kampanje za fashion, home & garden i druge vertikale.",
@@ -83,14 +83,14 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
   const idealClients = locale === "en"
     ? [
         "Minimum 100 products in your catalog",
-        "Ad spend minimum $1,000/month",
+        "Ad spend minimum $10,000/month (monthly management from $2,500/mo)",
         "Defined margins by product or category",
         "Functional tracking setup (GA4, purchase events)",
         "Ready for minimum 3-month engagement"
       ]
     : [
         "Minimum 100 proizvoda u ponudi",
-        "Ad spend minimum EUR 800/mesečno",
+        "Ad spend minimum €1.500/mesečno (mesečno vođenje od €700/mes)",
         "Definisane marže po proizvodima ili kategorijama",
         "Funkcionalan tracking (GA4, purchase events)",
         "Spremni ste na minimum 3 meseca saradnje"
@@ -179,7 +179,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         {
           question: "Do you run Meta ads too?",
           answer:
-            "My focus is Google Ads, but for omnichannel performance marketing, I offer comprehensive services through Funky Enterprises."
+            "My focus is Google Ads, but for omnichannel performance marketing, I offer comprehensive services through Funky Enterprises — a senior team that runs a complete omnichannel paid strategy: Google, Meta, SEO, and CRO."
         }
       ]
     : [
@@ -206,7 +206,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         {
           question: "Da li radite i Meta oglase?",
           answer:
-            "Fokus je na Google Ads, ali za omnichannel pristup nudim Performance Marketing kroz Funky Enterprises."
+            "Fokus je na Google Ads, ali za omnichannel pristup nudim Performance Marketing kroz Funky Enterprises — senior tim koji vodi kompletnu omnichannel paid strategiju: Google, Meta, SEO i CRO."
         }
       ];
 
@@ -224,7 +224,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         "@type": "Service",
         name: "Google Ads for eCommerce",
         description:
-          "Expert Google Ads strategies for eCommerce stores with Shopping campaigns, Performance Max, and remarketing to drive profitable growth for fashion, home & garden, electronics, and other verticals.",
+          "Monthly Google Ads management for eCommerce — from $2,500/mo.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
@@ -239,14 +239,25 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
           { "@type": "Country", name: "Germany" },
           { "@type": "Country", name: "Serbia" },
           { "@type": "Country", name: "Croatia" }
-        ]
+        ],
+        offers: {
+          "@type": "Offer",
+          price: "2500",
+          priceCurrency: "USD",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "2500",
+            priceCurrency: "USD",
+            unitText: "MONTH"
+          }
+        }
       }
     : {
         "@context": "https://schema.org",
         "@type": "Service",
         name: "Google Ads za eCommerce",
         description:
-          "Google Ads strategije za eCommerce prodavnice uz Shopping, Performance Max i remarketing kampanje.",
+          "Mesečno Google Ads vođenje za eCommerce — od €700/mes.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
@@ -259,7 +270,18 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
           { "@type": "Country", name: "United Kingdom" },
           { "@type": "Country", name: "Germany" },
           { "@type": "Country", name: "Croatia" }
-        ]
+        ],
+        offers: {
+          "@type": "Offer",
+          price: "700",
+          priceCurrency: "EUR",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "700",
+            priceCurrency: "EUR",
+            unitText: "MONTH"
+          }
+        }
       };
 
   const breadcrumbSchema = locale === "en"
@@ -401,12 +423,32 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         </div>
       </section>
 
+      <section className="bg-white px-4 md:px-8 pt-8 md:pt-10">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-blue-50 border-l-4 border-primary rounded-xl p-5 md:p-6 shadow-card">
+            <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+              {locale === "en" ? "Quick answer" : "Brzi odgovor"}
+            </p>
+            <p className="text-base text-gray-800 mb-0 leading-relaxed">
+              {locale === "en"
+                ? "Google Ads for eCommerce works best for stores with 100+ products and $10,000+/month ad spend. Combining Shopping + Performance Max + remarketing typically reaches 3-5x ROAS in 90 days when the feed is high quality. Monthly management starts from $2,500/mo; for smaller budgets, Kickstart (from $990) or consulting ($200/hr) are the right entry points."
+                : "Google Ads za eCommerce najbolje radi za prodavnice sa 100+ proizvoda i €1.500+/mes ad spend-a. Kombinacija Shopping + Performance Max + remarketing tipično dostiže 3-5x ROAS u 90 dana kada je feed kvalitetan. Mesečno vođenje kreće od €700/mes; za manje budžete tu su Kickstart (od €690) ili konsultacije (€150/sat)."}
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white border-b border-gray-100 py-12 md:py-16 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <p className="text-lg text-gray-700 leading-relaxed">
             {locale === "en"
               ? "Google Ads for eCommerce is the most effective channel for scaling online stores. Shopping campaigns display products directly in search results with images, prices, and names, while Performance Max reaches customers across all Google platforms - YouTube, Display, Search, and Discover. With a properly optimized product feed, campaign structure, and bidding strategy, Google Ads can drive profitable growth for fashion, home & garden, electronics, beauty, and other verticals. The key to success is combining quality product feed optimization, performance-based segmentation (best sellers, new arrivals, seasonal), and continuous ROAS and margin-driven optimization."
               : "Google Ads za eCommerce je najefikasniji kanal za skaliranje online prodavnice. Shopping kampanje prikazuju proizvode direktno u pretraži sa slikom, cenom i nazivom, dok Performance Max dostiže kupce na svim Google platformama - YouTube, Display, Search i Discover. Sa pravilno podešenim feed-om, strukturom kampanja i bid strategijom, Google Ads može doneti profitabilan rast za fashion, home and garden, electronics, beauty i druge vertikale. Ključ uspeha je u kombinaciji kvalitetnog product feed-a, segmentacije po performance-u (best sellers, new arrivals, seasonal), i kontinuirane optimizacije zasnovane na ROAS-u i marži."}
+          </p>
+          <p className="text-base text-gray-500 mt-4">
+            {locale === "en"
+              ? <>This page covers the complete eCommerce strategy — if you're interested specifically in the Shopping feed, see <Link href="/usluge/google-shopping" className="text-primary underline">Google Shopping campaigns</Link>.</>
+              : <>Ova stranica pokriva kompletnu eCommerce strategiju — ako vas zanima isključivo Shopping feed, pogledajte <Link href="/usluge/google-shopping" className="text-primary underline">Google Shopping kampanje</Link>.</>}
           </p>
         </div>
       </section>
@@ -468,6 +510,12 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
                 {locale === "en" ? "Platforms:" : "Platforme:"}
               </strong>
               <p className="mt-2">{platforms.join(", ")}</p>
+            </div>
+            <div className="text-base text-gray-500 mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+              <strong>{locale === "en" ? "Note:" : "Napomena:"}</strong>{" "}
+              {locale === "en"
+                ? "If you have fewer than 50 products or your store just launched, full management is overkill — a consultation ($200/hr) or Kickstart is a better first step."
+                : "Ako imate manje od 50 proizvoda ili ste tek pokrenuli prodavnicu, puno vođenje je overkill — konsultacija (€150/sat) ili Kickstart su bolji prvi korak."}
             </div>
           </Card>
         </div>
@@ -540,6 +588,28 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         </div>
       </Section>
 
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+            {locale === "en" ? "What's your next step?" : "Koji je vaš sledeći korak?"}
+          </h2>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-base">
+          <Link href="/usluge/google-ads-upravljanje" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Ready for management → eCommerce Growth (from $2,500/mo)" : "Spremni za vođenje → eCommerce Growth (od €700/mes)"}
+          </Link>
+          <Link href="/usluge/starter-paket" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Just setting up your account → Kickstart (from $990)" : "Tek postavljate nalog → Kickstart (od €690)"}
+          </Link>
+          <Link href="/usluge/google-ads-audit" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Diagnosis first → Deep Audit + Action Plan (from $500)" : "Prvo dijagnostika → Deep Audit + Action Plan (od €450)"}
+          </Link>
+          <Link href="/usluge/konsultacije" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Smaller budget or a quick answer → Consulting ($200/hr)" : "Manji budžet ili brzi savet → Konsultacije (€150/sat)"}
+          </Link>
+        </div>
+      </Section>
+
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
@@ -571,6 +641,14 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
             <span aria-hidden="true">•</span>
             <Link href="/usluge/remarketing" className="hover:text-yellow-400 transition-colors underline">
               {locale === "en" ? "Remarketing" : "Remarketing"}
+            </Link>
+            <span aria-hidden="true">•</span>
+            <Link href="/usluge/google-ads-audit" className="hover:text-yellow-400 transition-colors underline">
+              {locale === "en" ? "Deep Audit" : "Deep Audit"}
+            </Link>
+            <span aria-hidden="true">•</span>
+            <Link href="/usluge/starter-paket" className="hover:text-yellow-400 transition-colors underline">
+              {locale === "en" ? "Kickstart" : "Kickstart"}
             </Link>
             <span aria-hidden="true">•</span>
             <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="hover:text-yellow-400 transition-colors underline">

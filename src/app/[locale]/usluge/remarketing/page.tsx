@@ -212,6 +212,10 @@ export default async function RemarketingPage({ params }: Props) {
     "Imate budžet za remarketing od minimum €300/mesečno"
   ];
 
+  const positioningNote = locale === "en"
+    ? "I most often run remarketing as part of broader Google Ads management (from $2,500/mo) — as a standalone channel it makes sense from a $300/mo remarketing-only budget."
+    : "Remarketing najčešće vodim kao deo šireg Google Ads upravljanja (od €700/mes) — kao samostalan kanal ima smisla od €300/mes budžeta za sam remarketing.";
+
   const bestFor = locale === "en" ? [
     "eCommerce (dynamic remarketing)",
     "B2B with longer sales cycles",
@@ -313,7 +317,13 @@ export default async function RemarketingPage({ params }: Props) {
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "Croatia" }
     ],
-    serviceType: "Remarketing Campaigns"
+    serviceType: "Remarketing Campaigns",
+    offers: {
+      "@type": "Offer",
+      price: "300",
+      priceCurrency: "USD",
+      description: "Remarketing as a standalone channel — minimum budget $300/month"
+    }
   } : {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -338,7 +348,13 @@ export default async function RemarketingPage({ params }: Props) {
       { "@type": "Country", name: "Germany" },
       { "@type": "Country", name: "Croatia" }
     ],
-    serviceType: "Remarketing Campaigns"
+    serviceType: "Remarketing Campaigns",
+    offers: {
+      "@type": "Offer",
+      price: "300",
+      priceCurrency: "EUR",
+      description: "Remarketing kao samostalan kanal — minimalni budžet €300/mes"
+    }
   };
 
   const faqSchema = {
@@ -507,6 +523,20 @@ export default async function RemarketingPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Brzi odgovor / Quick answer */}
+      <section className="py-8 px-4 md:px-8 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="border-l-4 border-primary bg-blue-50 rounded-r-xl p-5 md:p-6">
+            <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+              <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
+              {locale === "en"
+                ? "Only 2-3% of visitors convert on their first visit — remarketing brings back the other 97%. Optimal frequency cap is 3-5 impressions per day. Minimum budget for the channel: $300/month."
+                : "Samo 2-3% posetilaca konvertuje pri prvoj poseti — remarketing vraća ostalih 97%. Optimalan frequency cap je 3-5 impresija dnevno. Minimalni budžet za kanal: €300/mes."}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SEO Intro */}
       <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto">
@@ -650,6 +680,9 @@ export default async function RemarketingPage({ params }: Props) {
               ) : (
                 <>Posebno efikasno za: {bestFor.join(", ")}.</>
               )}
+            </div>
+            <div className="text-base text-gray-500 mt-3 pt-3 border-t border-gray-200">
+              {positioningNote}
             </div>
           </Card>
         </div>

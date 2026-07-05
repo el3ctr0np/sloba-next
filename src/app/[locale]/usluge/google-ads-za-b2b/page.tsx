@@ -82,13 +82,13 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     "You have a defined sales process and use CRM",
     "Focused on lead generation (demos, contact forms, calls)",
     "Want to track leads through to closed deals",
-    "Ad budget minimum $1,500/month",
+    "Ad budget minimum $10,000/month (monthly management from $2,500/mo)",
     "Average deal value is $1,000+"
   ] : [
     "Imate definisan sales proces i koristite CRM",
     "Fokusirani ste na lead generation (demo, kontakt forme, pozivi)",
     "Želite da pratite leadove do zatvorenog posla",
-    "Budžet za ads je minimum EUR 1,500/mesečno",
+    "Budžet za ads je minimum €1.500/mesečno (mesečno vođenje od €700/mes)",
     "Prosečna vrednost deal-a je EUR 1,000+"
   ];
 
@@ -201,7 +201,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     "@type": "Service",
     name: "Google Ads for B2B Companies",
     description:
-      "Google Ads strategies for B2B lead generation with focus on lead quality and CRM integration.",
+      "Monthly Google Ads management for B2B — from $2,500/mo.",
     provider: {
       "@type": "Person",
       name: "Slobodan Jelisavac",
@@ -216,13 +216,24 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
       { "@type": "Country", name: "Germany" },
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "Croatia" }
-    ]
+    ],
+    offers: {
+      "@type": "Offer",
+      price: "2500",
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "2500",
+        priceCurrency: "USD",
+        unitText: "MONTH"
+      }
+    }
   } : {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Google Ads za B2B kompanije",
     description:
-      "Google Ads strategije za B2B lead generation sa fokusom na kvalitet leadova i CRM integraciju.",
+      "Mesečno Google Ads vođenje za B2B — od €700/mes.",
     provider: {
       "@type": "Person",
       name: "Slobodan Jelisavac",
@@ -235,7 +246,18 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
       { "@type": "Country", name: "United Kingdom" },
       { "@type": "Country", name: "Germany" },
       { "@type": "Country", name: "Croatia" }
-    ]
+    ],
+    offers: {
+      "@type": "Offer",
+      price: "700",
+      priceCurrency: "EUR",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "700",
+        priceCurrency: "EUR",
+        unitText: "MONTH"
+      }
+    }
   };
 
   const breadcrumbSchema = locale === "en" ? {
@@ -346,16 +368,16 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             {/* Trust Badges */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-                <div className="text-yellow-400 font-bold text-2xl mb-1">{locale === "en" ? "10+" : "10+"}</div>
-                <div className="text-sm text-slate-400">{locale === "en" ? "years of experience" : "godina iskustva"}</div>
+                <div className="text-yellow-400 font-bold text-2xl mb-1">180%</div>
+                <div className="text-sm text-slate-400">{locale === "en" ? "more qualified leads" : "više kvalifikovanih leadova"}</div>
               </div>
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-                <div className="text-yellow-400 font-bold text-2xl mb-1">{locale === "en" ? "UK Search Awards" : "180%"}</div>
-                <div className="text-sm text-slate-400">{locale === "en" ? "shortlisted 2024" : "više kvalifikovanih leadova"}</div>
+                <div className="text-yellow-400 font-bold text-2xl mb-1">{locale === "en" ? "3x" : "3x"}</div>
+                <div className="text-sm text-slate-400">{locale === "en" ? "UK Search Awards shortlisted" : "UK Search Awards"}</div>
               </div>
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-                <div className="text-yellow-400 font-bold text-2xl mb-1">{locale === "en" ? "50+" : "HubSpot"}</div>
-                <div className="text-sm text-slate-400">{locale === "en" ? "brands, 6+ countries" : "Salesforce integracija"}</div>
+                <div className="text-yellow-400 font-bold text-2xl mb-1">HubSpot</div>
+                <div className="text-sm text-slate-400">{locale === "en" ? "/ Salesforce integration" : "/ Salesforce integracija"}</div>
               </div>
             </div>
 
@@ -371,6 +393,21 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
         </div>
       </section>
 
+      <section className="bg-white px-4 md:px-8 pt-8 md:pt-10">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-blue-50 border-l-4 border-primary rounded-xl p-5 md:p-6 shadow-card">
+            <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+              {locale === "en" ? "Quick answer" : "Brzi odgovor"}
+            </p>
+            <p className="text-base text-gray-800 mb-0 leading-relaxed">
+              {locale === "en"
+                ? "Google Ads for B2B works best for companies with a defined sales process, a CRM system (HubSpot, Salesforce, Pipedrive), and a budget of $10,000+/month. The focus is lead quality, not lead count — tracking from click to closed deal typically cuts CPA by 40%+ in 2-3 months. Monthly management starts from $2,500/mo."
+                : "Google Ads za B2B najbolje radi za firme sa definisanim sales procesom, CRM sistemom (HubSpot, Salesforce, Pipedrive) i budžetom od €1.500+/mes. Fokus je na kvalitetu leadova, ne na broju — praćenje od klika do zatvorenog posla tipično smanjuje CPA za 40%+ u 2-3 meseca. Mesečno vođenje od €700/mes."}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SEO Intro Section */}
       <section className="bg-white border-b border-gray-100 py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
@@ -378,6 +415,11 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             {locale === "en"
               ? "B2B Google Ads campaigns are fundamentally different from eCommerce advertising. While eCommerce ROI tracking goes from click to purchase, in B2B lead generation the real work begins when a lead enters your CRM. That's why it's crucial to set up tracking that connects Google Ads with your sales pipeline - from first click to closed deal."
               : "B2B Google Ads kampanje su fundamentalno različite od eCommerce oglašavanja. Dok kod eCommerce praćenje ROI-a ide od klika do kupovine, kod B2B lead generation pravi posao počinje tek kada lead uđe u CRM. Zato je ključno postaviti praćenje koje povezuje Google Ads sa vašim sales pipeline-om - od prvog klika do zatvorenog posla."}
+          </p>
+          <p className="text-base text-gray-500 mt-4">
+            {locale === "en"
+              ? <>If you run a SaaS company with a trial-to-paid model, see <Link href="/usluge/google-ads-za-saas" className="text-primary underline">Google Ads for SaaS</Link>.</>
+              : <>Ako vodite SaaS kompaniju sa trial-to-paid modelom, pogledajte <Link href="/usluge/google-ads-za-saas" className="text-primary underline">Google Ads za SaaS</Link>.</>}
           </p>
         </div>
       </section>
@@ -428,6 +470,12 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             </ul>
             <div className="text-base text-gray-500 mt-6 pt-6 border-t border-gray-200">
               <strong className="text-gray-700">{locale === "en" ? "I work particularly well with:" : "Posebno dobro radim sa:"}</strong> {industries.join(", ")}.
+            </div>
+            <div className="text-base text-gray-500 mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+              <strong>{locale === "en" ? "Note:" : "Napomena:"}</strong>{" "}
+              {locale === "en"
+                ? "If you don't yet have a CRM or a defined sales process, set that up first — a consultation is the right format for that step."
+                : "Ako još nemate CRM ni definisan sales proces, prvo to postavite — konsultacija je pravi format za taj korak."}
             </div>
           </Card>
         </div>
@@ -501,6 +549,28 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
         </div>
       </Section>
 
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+            {locale === "en" ? "What's your next step?" : "Koji je vaš sledeći korak?"}
+          </h2>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-base">
+          <Link href="/usluge/google-ads-upravljanje" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Ready for management → eCommerce Growth (from $2,500/mo)" : "Spremni za vođenje → eCommerce Growth (od €700/mes)"}
+          </Link>
+          <Link href="/usluge/starter-paket" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Just setting up your account → Kickstart (from $990)" : "Tek postavljate nalog → Kickstart (od €690)"}
+          </Link>
+          <Link href="/usluge/google-ads-audit" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Diagnosis first → Deep Audit + Action Plan (from $500)" : "Prvo dijagnostika → Deep Audit + Action Plan (od €450)"}
+          </Link>
+          <Link href="/usluge/konsultacije" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
+            {locale === "en" ? "Smaller budget or a quick answer → Consulting ($200/hr)" : "Manji budžet ili brzi savet → Konsultacije (€150/sat)"}
+          </Link>
+        </div>
+      </Section>
+
       {/* Dark CTA Section */}
       <section className="bg-slate-900 text-white py-16 md:py-20 px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center">
@@ -537,6 +607,14 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
               <span className="text-slate-600">•</span>
               <Link href="/usluge/search-kampanje" className="text-yellow-400 hover:text-yellow-300 underline">
                 {locale === "en" ? "Search campaigns" : "Search kampanje"}
+              </Link>
+              <span className="text-slate-600">•</span>
+              <Link href="/usluge/google-ads-audit" className="text-yellow-400 hover:text-yellow-300 underline">
+                {locale === "en" ? "Deep Audit" : "Deep Audit"}
+              </Link>
+              <span className="text-slate-600">•</span>
+              <Link href="/usluge/starter-paket" className="text-yellow-400 hover:text-yellow-300 underline">
+                {locale === "en" ? "Kickstart" : "Kickstart"}
               </Link>
               <span className="text-slate-600">•</span>
               <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-yellow-400 hover:text-yellow-300 underline">

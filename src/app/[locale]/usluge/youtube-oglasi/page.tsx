@@ -307,6 +307,62 @@ export default async function YouTubeOglasiPage({ params }: Props) {
     }))
   };
 
+  const serviceSchema = locale === "en" ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "YouTube Ads Management",
+    description:
+      "Professional YouTube advertising management for brand awareness and direct conversions through targeted video campaigns.",
+    provider: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      url: "https://www.slobodan-jelisavac.com",
+      jobTitle: "Google Ads Consultant",
+      knowsAbout: ["YouTube Ads", "Video Advertising", "Google Ads", "PPC Strategy"]
+    },
+    areaServed: [
+      { "@type": "Country", name: "United States" },
+      { "@type": "Country", name: "United Kingdom" },
+      { "@type": "Country", name: "Australia" },
+      { "@type": "Country", name: "Germany" },
+      { "@type": "Country", name: "Serbia" },
+      { "@type": "Country", name: "Croatia" }
+    ],
+    serviceType: "YouTube Ads Management",
+    offers: {
+      "@type": "Offer",
+      price: "1000",
+      priceCurrency: "USD",
+      description: "YouTube advertising — minimum budget $1,000/month"
+    }
+  } : {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "YouTube oglašavanje",
+    description:
+      "Profesionalno upravljanje YouTube oglasima za brand awareness i direktne konverzije kroz targetirane video kampanje.",
+    provider: {
+      "@type": "Person",
+      name: "Slobodan Jelisavac",
+      url: "https://www.slobodan-jelisavac.com",
+      jobTitle: "Google Ads Konsultant",
+      knowsAbout: ["YouTube Ads", "Video Advertising", "Google Ads", "PPC Strategy"]
+    },
+    areaServed: [
+      { "@type": "Country", name: "Serbia" },
+      { "@type": "Country", name: "United Kingdom" },
+      { "@type": "Country", name: "Germany" },
+      { "@type": "Country", name: "Croatia" }
+    ],
+    serviceType: "YouTube oglašavanje",
+    offers: {
+      "@type": "Offer",
+      price: "1000",
+      priceCurrency: "EUR",
+      description: "YouTube oglašavanje — minimalni budžet €1.000/mes"
+    }
+  };
+
   return (
     <>
       <script
@@ -320,6 +376,10 @@ export default async function YouTubeOglasiPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
@@ -377,7 +437,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
                   />
                 </svg>
                 <span className="text-sm text-gray-300">
-                  {locale === "en" ? "10+ years experience" : "7+ godina iskustva"}
+                  {locale === "en" ? "10+ years experience" : "10+ godina iskustva"}
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -393,7 +453,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
                   />
                 </svg>
                 <span className="text-sm text-gray-300">
-                  {locale === "en" ? "50+ brands across 6+ countries" : "Video kampanje za UK i RS tržište"}
+                  {locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -422,6 +482,20 @@ export default async function YouTubeOglasiPage({ params }: Props) {
                 {locale === "en" ? "Full Google Ads management" : "Google Ads upravljanje"}
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brzi odgovor / Quick answer */}
+      <section className="py-8 px-4 md:px-8 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="border-l-4 border-primary bg-blue-50 rounded-r-xl p-5 md:p-6">
+            <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+              <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
+              {locale === "en"
+                ? "YouTube advertising requires a minimum budget of $1,000/month for measurable results — for awareness campaigns count on $3,000+, for performance campaigns $2,000+. I run it as a channel within Google Ads management."
+                : "YouTube oglašavanje zahteva minimum €1.000/mes budžeta za merljive rezultate — za awareness kampanje računajte €3.000+, za performance €2.000+. Vodim ga kao kanal u okviru Google Ads upravljanja."}
+            </p>
           </div>
         </div>
       </section>
