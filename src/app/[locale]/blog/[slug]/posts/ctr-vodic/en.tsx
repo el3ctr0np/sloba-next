@@ -29,6 +29,19 @@ export default function CTRGuidePost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What is CTR (Click-Through Rate)?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>CTR (Click-Through Rate)</strong> is the percentage of people who click your ad after seeing it. Formula: <strong>CTR = (Clicks ÷ Impressions) × 100</strong>. In Google Ads, CTR is a major quality signal — it makes up around 40% of Quality Score. A good CTR for Search campaigns is <strong>5-10%</strong>, while Display typically averages around <strong>0.5-1%</strong>.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── Table of Contents ── */}

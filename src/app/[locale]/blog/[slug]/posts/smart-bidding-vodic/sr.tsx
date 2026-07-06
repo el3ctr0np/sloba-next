@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function SmartBiddingVodicSR() {
   return (
@@ -37,7 +38,7 @@ export default function SmartBiddingVodicSR() {
       <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-5 md:p-6 my-8">
         <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Brzi odgovor</p>
         <p className="text-base md:text-lg font-heading font-semibold text-blue-900 mb-0">
-          Smart Bidding je skup Google Ads automatizovanih bid strategija koje koriste mašinsko učenje
+          <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> je skup Google Ads automatizovanih bid strategija koje koriste mašinsko učenje
           da optimizuju licitacije u realnom vremenu za svaku aukciju, sa ciljem maksimiziranja konverzija
           ili vrednosti konverzija unutar zadatog budžeta ili CPA/ROAS cilja.
         </p>
@@ -228,7 +229,7 @@ export default function SmartBiddingVodicSR() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-9 h-9 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div className="flex-1">
-              <h3 className="text-base font-heading font-bold mt-0 mb-1">Target CPA (tCPA)</h3>
+              <h3 className="text-base font-heading font-bold mt-0 mb-1">Target <GlossaryLink slug="tcpa">CPA (tCPA)</GlossaryLink></h3>
               <p className="text-base text-gray-700 mb-2">
                 Algoritam pokušava da ostvari konverzije po zadatom prosečnom CPA cilju. Neke konverzije
                 će koštati više, neke manje — ali prosek treba da bude oko zadatog cilja. Realna strategija
@@ -262,7 +263,7 @@ export default function SmartBiddingVodicSR() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-9 h-9 bg-yellow-500 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
             <div className="flex-1">
-              <h3 className="text-base font-heading font-bold mt-0 mb-1">Target ROAS (tROAS)</h3>
+              <h3 className="text-base font-heading font-bold mt-0 mb-1">Target <GlossaryLink slug="troas">ROAS (tROAS)</GlossaryLink></h3>
               <p className="text-base text-gray-700 mb-2">
                 Algoritam optimizuje ka zadatom prinosu od ad spenda (prihod ÷ trošak oglasa × 100%).
                 Najmoćnija strategija za zrele eCommerce naloge — ali i najzahtevnija po pitanju data
@@ -482,7 +483,7 @@ export default function SmartBiddingVodicSR() {
         <p className="text-sm font-bold text-gray-900 mb-3">POAS vs ROAS — Važna distinkcija za eCommerce</p>
         <p className="text-base text-gray-700 mb-3">
           ROAS (Return on Ad Spend) meri prihod ÷ trošak oglasa. Ali prihod nije profit.
-          <strong> POAS (Profit on Ad Spend)</strong> = profit ÷ trošak oglasa — to je cifra koja zaista meri
+          <strong> <GlossaryLink slug="poas">POAS (Profit on Ad Spend)</GlossaryLink></strong> = profit ÷ trošak oglasa — to je cifra koja zaista meri
           zdravlje kampanje. Za jedan UK skincare nalog, cilj nije bio maksimalni ROAS, već POAS koji osigurava profitabilnost
           uz određen nivo ad spenda.
         </p>
@@ -677,7 +678,8 @@ export default function SmartBiddingVodicSR() {
         <strong>Tiered Shopping framework</strong> (ličana inovacija iz prakse): odvojene kampanje za
         New Customers, Returning Customers i Feeder kampanju za prospecting. Svaka ima drugačiji tROAS cilj
         jer se različiti korisnici drugačije konvertuju. Returning customers konvertuju za ~30% niži CPA —
-        agresivniji bid je opravdan.
+        agresivniji bid je opravdan. Ovakav pristup je deo naše šire usluge{" "}
+        <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads za eCommerce</Link>.
       </p>
 
       <h3>Lead Gen nalozi — lokalni servisi (towing, cleaning)</h3>
@@ -894,7 +896,8 @@ export default function SmartBiddingVodicSR() {
       </p>
 
       <p>
-        Iz iskustva sa 10+ naloga u 2024–2026, rezime koji važi bez obzira na tip biznisa:
+        Iz iskustva sa 10+ naloga u 2024–2026, rezime koji važi bez obzira na tip biznisa. Ako želite da neko sa iskustvom podesi i prati bidding strategiju umesto vas, pogledajte našu uslugu{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">Google Ads upravljanja</Link>.
       </p>
 
       <ul>

@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function MicrosoftAdsVsGoogleAdsSR() {
   return (
@@ -39,7 +40,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-bold text-yellow-900 text-sm mb-1 uppercase tracking-wide">Brzi odgovor</p>
         <p className="text-yellow-800 text-base mb-0">
-          Google Ads je obavezna platforma za svaki biznis koji se oglašava online — 92% tržišta, nenadmašan reach, najnaprednija automatizacija. Microsoft Ads je profitabilan dopunski kanal: niži CPC za 30–50%, starija i bogatija publika (35+, viši prihodi), i jedinstven LinkedIn targeting dostupan samo na Microsoft platformi.
+          <GlossaryLink slug="google-ads">Google Ads</GlossaryLink> je obavezna platforma za svaki biznis koji se oglašava online — 92% tržišta, nenadmašan reach, najnaprednija automatizacija. Microsoft Ads je profitabilan dopunski kanal: niži <GlossaryLink slug="cpc">CPC</GlossaryLink> za 30–50%, starija i bogatija publika (35+, viši prihodi), i jedinstven LinkedIn targeting dostupan samo na Microsoft platformi.
         </p>
       </div>
 
@@ -407,7 +408,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">AI i automatizacija — gde Google vodi</h3>
               <p className="text-base text-gray-600 mb-2">
-                Google-ov Smart Bidding (tROAS, tCPA, Maximize Conversions) je zreliji i pouzdaniji zbog
+                Google-ov <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> (tROAS, tCPA, Maximize Conversions) je zreliji i pouzdaniji zbog
                 ogromne količine konverzionih podataka. Microsoft Smart Bidding funkcioniše, ali zahteva
                 više vremena za learning period i više konverzija za stabilizaciju. Za naloge sa &lt;30
                 konverzija mesečno, Microsoft Smart Bidding može biti nestabilan.
@@ -535,7 +536,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         </div>
 
         <div className="bg-white border-l-4 border-blue-500 rounded-r-xl p-4 shadow-card">
-          <p className="text-sm font-bold text-gray-900 mb-1">Uvid 5: Impression Share je lakše osvajati na Bing-u</p>
+          <p className="text-sm font-bold text-gray-900 mb-1">Uvid 5: <GlossaryLink slug="impression-share">Impression Share</GlossaryLink> je lakše osvajati na Bing-u</p>
           <p className="text-base text-gray-600 mb-0">
             Na Google Ads, osvajanje 80%+ impression share za konkurentne termine zahteva agresivne budžete.
             Na Microsoft Ads, isti impression share dostupan je sa 3–5x manjim budžetom zbog nižeg broja
@@ -756,7 +757,9 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         Za srpske biznise koji prodaju lokalno: Microsoft Ads nije prioritet za 2026. Fokusirajte se na
         Google — i pripremite se za Google Shopping koji stiže u novembru. Za biznise koji prodaju
         na UK, SAD, DE ili AU: Microsoft Ads test kampanja od £300–£500 mesečno može biti jedan od
-        najisplativijih eksperimenata koje ćete uraditi.
+        najisplativijih eksperimenata koje ćete uraditi. Ako želite da vam neko upravlja Google Ads nalogom
+        dok testirate Microsoft Ads paralelno, pogledajte našu uslugu{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">Google Ads upravljanja</Link>.
       </p>
 
       <p>
@@ -764,7 +767,9 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         strategiju,{" "}
         <a href="/sr/kontakt" className="underline font-medium">
           pišite mi — besplatna konsultacija 30 minuta.
-        </a>
+        </a>{" "}
+        Ili pogledajte detalje naše{" "}
+        <Link href="/usluge/konsultacije" className="underline font-medium">konsultantske usluge</Link>.
       </p>
 
       <hr />

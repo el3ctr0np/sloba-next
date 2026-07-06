@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function MerchantCenterSrbijaSetupSR() {
   return (
@@ -54,7 +55,7 @@ export default function MerchantCenterSrbijaSetupSR() {
 
       <h2>Šta je Google Merchant Center i zašto je preduslov za Shopping</h2>
       <p>
-        Google Merchant Center (MC) je besplatna platforma na merchants.google.com gde upload-ujete <strong>product feed</strong> — strukturirani spisak svih proizvoda sa cenama, slikama, dostupnošću i drugim atributima. Google Ads ne zna ništa o vašim proizvodima dok mu vi to ne kažete kroz MC. Nema feed-a, nema Shopping oglasa. Tačka.
+        <GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink> (MC) je besplatna platforma na merchants.google.com gde upload-ujete <strong>product feed</strong> — strukturirani spisak svih proizvoda sa cenama, slikama, dostupnošću i drugim atributima. <GlossaryLink slug="google-ads">Google Ads</GlossaryLink> ne zna ništa o vašim proizvodima dok mu vi to ne kažete kroz MC. Nema feed-a, nema Shopping oglasa. Tačka.
       </p>
       <p>
         Ljudi često mešaju Merchant Center sa Google Ads nalogom — to su dve odvojene platforme koje se povezuju. Google Ads je mesto gde kreirate kampanje i upravljate budžetom. Merchant Center je mesto gde živi vaš katalog proizvoda. Shopping kampanja u Google Ads-u "vuče" proizvode direktno iz vašeg MC feed-a — vi ne birate ključne reči kao kod Search kampanja, Google automatski matchuje proizvode sa pretragama na osnovu podataka iz feed-a.
@@ -108,7 +109,7 @@ export default function MerchantCenterSrbijaSetupSR() {
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
             <div>
               <strong>Podesite shipping settings</strong>
-              <p className="text-base text-gray-600 mt-1 mb-0">Tools → Shipping and returns. Definišite cene dostave po regionu (cela Srbija, ili po gradovima ako imate diferenciranu cenu), rokove isporuke, i uslove za besplatnu dostavu. Ovo se prikazuje direktno u Shopping oglasu i utiče na CTR.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Tools → Shipping and returns. Definišite cene dostave po regionu (cela Srbija, ili po gradovima ako imate diferenciranu cenu), rokove isporuke, i uslove za besplatnu dostavu. Ovo se prikazuje direktno u Shopping oglasu i utiče na <GlossaryLink slug="ctr">CTR</GlossaryLink>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -553,7 +554,8 @@ export default function MerchantCenterSrbijaSetupSR() {
           Treba vam pomoć oko Merchant Center setup-a?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Prolazim kroz vaš sajt, feed i Merchant Center nalog i dajem konkretan plan pre nego što Shopping zvanično starta u Srbiji.
+          Prolazim kroz vaš sajt, feed i Merchant Center nalog i dajem konkretan plan pre nego što Shopping zvanično starta u Srbiji — deo naše usluge{" "}
+          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping upravljanja</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju
@@ -572,6 +574,10 @@ export default function MerchantCenterSrbijaSetupSR() {
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-za-ecommerce-srbija-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads za eCommerce u Srbiji</p>
           <p className="text-xs text-gray-500 mb-0">Kompletan vodič za srpski eCommerce, feed optimizacija</p>
+        </Link>
+        <Link href="/usluge/google-ads-za-ecommerce" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Usluga: Google Ads za eCommerce</p>
+          <p className="text-xs text-gray-500 mb-0">Setup, feed, kampanje i optimizacija — sve na jednom mestu</p>
         </Link>
       </div>
     </>

@@ -29,6 +29,19 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What does a Google Ads audit checklist cover?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          A complete <strong>Google Ads audit checklist</strong> has <strong>50 items across 10 categories</strong> — from account structure and conversion tracking to keywords, ads, and budget. A quick audit takes about <strong>30 minutes</strong>, and the average account that hasn&apos;t been audited in 6+ months wastes <strong>15-25% of its budget</strong> inefficiently — the checklist pinpoints exactly where.
+        </p>
+      </div>
+
       {/* ── TOC ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>

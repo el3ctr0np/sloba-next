@@ -54,6 +54,19 @@ export default function EcommerceVsB2BEN() {
         In this guide I cover the key differences and specific strategies for each model.
       </p>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Does Google Ads strategy differ for eCommerce and B2B?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          Yes — <strong>eCommerce and B2B</strong> require a fundamentally different Google Ads approach because they have different customer journeys, KPIs, and conversion values. There are <strong>8 key differences</strong> between the two models and <strong>4 distinct strategies</strong> for each. Applying the same strategy to both models is the most common reason campaigns waste budget without results.
+        </p>
+      </div>
+
       <hr />
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">

@@ -47,6 +47,19 @@ export default function GoogleAdsVsMetaAdsPost() {
         izbor za vaš specifičan biznis.
       </p>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta je bolje, Google Ads ili Meta Ads?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google Ads</strong> hvata kupce koji već imaju nameru kupovine (aktivno pretražuju), dok <strong>Meta Ads</strong> gradi svest i interesovanje kod publike koja još nije u fazi traženja. To nisu konkurentske, već <strong>komplementarne platforme</strong> — najbolji rezultati dolaze kada se koriste zajedno: Google za zatvaranje prodaje, Meta za punjenje levka. Pravi izbor zavisi od vašeg biznisa, budžeta i faze u kojoj je vaša publika.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── H2: Osnovna razlika ── */}

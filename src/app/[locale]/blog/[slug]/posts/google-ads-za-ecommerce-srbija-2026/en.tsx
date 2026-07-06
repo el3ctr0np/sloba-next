@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleAdsForEcommerceSerbia2026EN() {
   return (
@@ -41,8 +42,8 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       </p>
       <p>
         The problem is that most Serbian eCommerce businesses are still running Google Ads tactics from 2020:
-        one Search campaign, broad match, no remarketing lists, no separation between branded and non-branded
-        traffic. The result is campaigns that burn budget without predictable ROAS.
+        one Search campaign, broad match, no <GlossaryLink slug="remarketing">remarketing</GlossaryLink> lists, no separation between branded and non-branded
+        traffic. The result is campaigns that burn budget without predictable <GlossaryLink slug="roas">ROAS</GlossaryLink>.
       </p>
       <p>
         This post is a data-driven guide for 2026 — built on official National Bank of Serbia data,
@@ -243,7 +244,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-semibold text-yellow-900 text-sm mb-1">Why does this matter now, in April?</p>
         <p className="text-yellow-800 text-base mb-0">
-          Merchant Center setup, product feed optimization, and account review can&apos;t be done over
+          <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink> setup, product feed optimization, and account review can&apos;t be done over
           a weekend. Brands that start preparing now have a 6–7 month head start over competitors who
           will start in October. In eCommerce, 6 months is a massive advantage.
         </p>
@@ -258,7 +259,9 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <p>
         After Shopping launches, the dynamic shifts — Shopping campaigns take over as the dominant format
         for product-first businesses, just as they have in the UK, Germany, and across Western Europe.
-        You can find a detailed preparation strategy in a dedicated guide:
+        If you want someone to set up your account ahead of this transition, see our{" "}
+        <Link href="/usluge/google-shopping" className="underline font-medium">Google Shopping management service</Link>.
+        You can also find a detailed preparation strategy in a dedicated guide:
       </p>
 
       <ul>
@@ -628,7 +631,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       </div>
 
       <p>
-        Core Web Vitals are directly tied to Quality Score in Google Ads. Better QS means lower CPC,
+        Core Web Vitals are directly tied to <GlossaryLink slug="quality-score">Quality Score</GlossaryLink> in Google Ads. Better QS means lower CPC,
         which means more clicks for the same budget. Mobile optimization isn&apos;t just a UX question
         — it&apos;s an economic one.
       </p>
@@ -924,7 +927,8 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <p>
         What separates successful eCommerce accounts from those that just burn budget comes down to
         three things: accurate conversion tracking, the right campaign structure, and timely
-        preparation for change. All three are available to you today.
+        preparation for change. All three are available to you today — or through our{" "}
+        <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads for eCommerce service</Link>.
       </p>
 
       <p>

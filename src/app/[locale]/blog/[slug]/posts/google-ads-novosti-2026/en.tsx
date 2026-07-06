@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleAdsUpdates2026EN() {
   return (
@@ -46,7 +47,8 @@ export default function GoogleAdsUpdates2026EN() {
         The Google Ads platform is changing faster than ever. In 2026, between the AI Max rollout, Shopping launches in new markets, PMax transparency additions, and old-feature deprecations — it is hard to keep track of what actually matters versus what is just noise. This post is my answer to that problem.
       </p>
       <p>
-        I have been doing Google Ads consulting for 10+ years, managing 10+ accounts monthly across markets from Serbia to the UK and the US. Every month I read everything coming out of Google HQ, filter out what genuinely affects campaigns, and log it here. The newest month is always at the top.
+        I have been doing Google Ads consulting for 10+ years, managing 10+ accounts monthly across markets from Serbia to the UK and the US. Every month I read everything coming out of Google HQ, filter out what genuinely affects campaigns, and log it here. The newest month is always at the top. If you would rather have someone track these changes for you and apply them to your account right away, see our{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">Google Ads management service</Link>.
       </p>
 
       <hr />
@@ -108,7 +110,7 @@ export default function GoogleAdsUpdates2026EN() {
           <p className="text-xs text-gray-500 mt-1 mb-0">April 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          PMax Channel Performance Timeline — New Transparency
+          <GlossaryLink slug="pmax">PMax</GlossaryLink> Channel Performance Timeline — New Transparency
         </h3>
         <p className="text-base text-gray-700 mb-3">
           Finally. Google has introduced a Channel Performance Timeline for Performance Max campaigns — you can now see how each channel contributes to overall results.
@@ -132,7 +134,7 @@ export default function GoogleAdsUpdates2026EN() {
           <p className="text-xs text-gray-500 mt-1 mb-0">April–June 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          Google Unified Enhanced Conversions Settings
+          Google Unified <GlossaryLink slug="enhanced-conversions">Enhanced Conversions</GlossaryLink> Settings
         </h3>
         <p className="text-base text-gray-700 mb-0">
           Google is consolidating Web and Leads enhanced conversions into a single setup interface. The previously separate settings for web conversions and lead conversions now live in one place.
@@ -151,7 +153,7 @@ export default function GoogleAdsUpdates2026EN() {
           Product Ratings in YouTube Shorts Ads
         </h3>
         <p className="text-base text-gray-700 mb-0">
-          eCommerce sellers can now display product ratings (stars and review count) directly inside YouTube Shorts ads. This pulls data from Google Merchant Center and the Google Customer Reviews program.
+          eCommerce sellers can now display product ratings (stars and review count) directly inside YouTube Shorts ads. This pulls data from Google <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink> and the Google Customer Reviews program.
           Relevant for brands with well-rated products — social proof directly in a video format increases CTR and lowers friction to purchase.
         </p>
       </div>
@@ -180,7 +182,7 @@ export default function GoogleAdsUpdates2026EN() {
           Performance Planner — Partial Deprecation
         </h3>
         <p className="text-base text-gray-700 mb-3">
-          Since March 9, 2026, Display and Video campaigns are no longer supported in Performance Planner. The impression share metric has also been removed from the Planner interface.
+          Since March 9, 2026, Display and Video campaigns are no longer supported in Performance Planner. The <GlossaryLink slug="impression-share">impression share</GlossaryLink> metric has also been removed from the Planner interface.
         </p>
         <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4">
           <p className="font-semibold text-yellow-900 text-sm mb-1">What is still supported?</p>
@@ -378,6 +380,10 @@ export default function GoogleAdsUpdates2026EN() {
         >
           Read: Google Shopping Serbia 2026 →
         </Link>
+        <p className="text-sm text-slate-400 mt-4 mb-0">
+          Or book your preparation now through our{" "}
+          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping management service</Link>.
+        </p>
       </div>
 
       <hr />

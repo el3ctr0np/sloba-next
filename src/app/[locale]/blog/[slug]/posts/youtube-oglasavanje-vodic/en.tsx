@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function YouTubeAdvertisingGuideEN() {
   return (
@@ -8,7 +9,7 @@ export default function YouTubeAdvertisingGuideEN() {
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           YouTube is the second-largest search engine on the planet, with 2.5 billion monthly users. Video ads
-          convert better than text because they combine visuals, sound, and emotion. Average CPV in Serbia runs
+          convert better than text because they combine visuals, sound, and emotion. Average <GlossaryLink slug="cpv">CPV</GlossaryLink> in Serbia runs
           2-3x lower than in the US/UK — which means right now is an ideal window to test video campaigns.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -182,7 +183,7 @@ export default function YouTubeAdvertisingGuideEN() {
               <td className="py-3 px-3">€0.01 – €0.02</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-3 font-medium">CPM (cost per 1,000 impressions)</td>
+              <td className="py-3 px-3 font-medium"><GlossaryLink slug="cpm">CPM</GlossaryLink> (cost per 1,000 impressions)</td>
               <td className="py-3 px-3">€5 – €10</td>
               <td className="py-3 px-3">€2 – €5</td>
             </tr>
@@ -262,7 +263,7 @@ export default function YouTubeAdvertisingGuideEN() {
           <p className="text-base text-gray-600 mb-0">Thematic categories: &quot;cooking&quot;, &quot;fitness&quot;, &quot;technology&quot;. Broader than Placements, but still contextually relevant.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">7. Remarketing (your audience)</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">7. <GlossaryLink slug="remarketing">Remarketing</GlossaryLink> (your audience)</h3>
           <p className="text-base text-gray-600 mb-0">
             Show ads to people who already visited your site, watched your videos, or engaged with your YouTube
             channel. The most cost-effective targeting type — more on this in our{" "}
@@ -586,6 +587,9 @@ export default function YouTubeAdvertisingGuideEN() {
         For more on our YouTube advertising services, visit the{" "}
         <Link href="/usluge/youtube-oglasi" className="underline font-medium">
           YouTube Ads management page
+        </Link>. If you also run Search or Shopping campaigns alongside video, see our broader{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">
+          Google Ads management service
         </Link>.
       </p>
     </>

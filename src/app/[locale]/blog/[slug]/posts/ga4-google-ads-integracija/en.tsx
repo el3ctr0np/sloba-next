@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GA4GoogleAdsIntegrationEN() {
   const howToJsonLd = {
@@ -54,7 +55,7 @@ export default function GA4GoogleAdsIntegrationEN() {
           What is GA4 + Google Ads integration?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>GA4 + Google Ads integration</strong> is a two-way link between a Google Analytics 4 property and a Google Ads account that enables importing GA4 conversions (key events) into Google Ads, sharing audiences for remarketing, and feeding a richer signal set to the Smart Bidding algorithm. The link is activated in GA4 Admin → Product links and verified after 24–48h.
+          <strong><GlossaryLink slug="ga4">GA4</GlossaryLink> + Google Ads integration</strong> is a two-way link between a Google Analytics 4 property and a Google Ads account that enables importing GA4 conversions (key events) into Google Ads, sharing audiences for <GlossaryLink slug="remarketing">remarketing</GlossaryLink>, and feeding a richer signal set to the <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> algorithm. The link is activated in GA4 Admin → Product links and verified after 24–48h.
         </p>
       </div>
 
@@ -65,7 +66,8 @@ export default function GA4GoogleAdsIntegrationEN() {
         The typical symptom: the client has GA4, sees purchase events, has Google Ads campaigns — but when you check the Google Ads Conversions page, either nothing is there, or both a &quot;Google Ads conversion&quot; and a &quot;GA4 purchase&quot; are firing simultaneously, generating duplicates. Smart Bidding tries to optimize against muddled metrics and performance stalls.
       </p>
       <p>
-        This guide covers the exact 7-step setup that works in 2026 — with Consent Mode v2 mandatory since March 2024, Data Manager changes in the Google Ads UI, and the most common mistakes I see on accounts across Serbia and the UK.
+        This guide covers the exact 7-step setup that works in 2026 — with Consent Mode v2 mandatory since March 2024, Data Manager changes in the Google Ads UI, and the most common mistakes I see on accounts across Serbia and the UK. If you&apos;d rather have someone experienced check and set up your entire tracking stack, see our{" "}
+        <Link href="/usluge/konsultacije" className="underline font-medium">consulting service</Link>.
       </p>
 
       <hr />
@@ -308,7 +310,7 @@ export default function GA4GoogleAdsIntegrationEN() {
 
       <h2 id="attribution">Attribution model: Ads-preferred vs Data-driven</h2>
       <p>
-        After import, an important question is which attribution model to use. GA4 uses Data-driven by default since 2023. Google Ads has its own set of options:
+        After import, an important question is which <GlossaryLink slug="attribution-model">attribution model</GlossaryLink> to use. GA4 uses Data-driven by default since 2023. Google Ads has its own set of options:
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -549,7 +551,8 @@ export default function GA4GoogleAdsIntegrationEN() {
           Your GA4 + Google Ads integration incomplete?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Free comprehensive audit of your entire site&apos;s tracking system — link status, Primary/Secondary setup, Consent Mode v2, attribution model, and the full data flow. Typically reveals 3–5 mistakes costing conversions.
+          Free comprehensive audit of your entire site&apos;s tracking system — link status, Primary/Secondary setup, Consent Mode v2, attribution model, and the full data flow. Typically reveals 3–5 mistakes costing conversions. Part of our{" "}
+          <Link href="/usluge/google-ads-audit" className="underline text-white hover:text-yellow-400">Google Ads audit service</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Submit your free audit request
@@ -576,8 +579,8 @@ export default function GA4GoogleAdsIntegrationEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimization — 30 tactics</p>
           <p className="text-xs text-gray-500 mb-0">Post-tracking playbook to scale results</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Audit Checklist</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads audit checklist</p>
           <p className="text-xs text-gray-500 mb-0">80+ points for a full account audit</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

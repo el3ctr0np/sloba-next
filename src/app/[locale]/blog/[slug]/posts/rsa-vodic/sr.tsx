@@ -31,6 +31,19 @@ export default function RsaVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Koliko naslova treba imati Responsive Search Ad?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Responsive Search Ads (RSA)</strong> su jedini format tekstualnih oglasa u Google Ads-u i dozvoljavaju do 15 naslova, ali optimalan broj je <strong>7-8 naslova</strong> precizno raspoređenih po ulogama (7 tipova naslova), što daje 336 mogućih kombinacija — više je nepotrebno i razvodnjava relevantnost. Prema anketama, <strong>59% oglašivača</strong> već koristi AI za pisanje ad copy-ja.
+        </p>
+      </div>
+
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>

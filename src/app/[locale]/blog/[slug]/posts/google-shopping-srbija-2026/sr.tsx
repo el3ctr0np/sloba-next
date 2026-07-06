@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleShoppingSrbija2026SR() {
   return (
@@ -33,10 +34,11 @@ export default function GoogleShoppingSrbija2026SR() {
         Novembar 2026. Upisuješ "jakna muška zara" u Google pretragu. Umesto samo tekstualnih oglasa, vidiš red slika — jakna, cena, prodavnica. Klikneš direktno. Kupiš. Ovo je Google Shopping, i to iskustvo dolazi u Srbiju za manje od godinu dana.
       </p>
       <p>
-        Radim Google Shopping kampanje za UK klijente više od 2 godine. Sa Chelleeon UK smo generisali £290.000+ revenue kroz Shopping, sa POAS 1.78x u kategoriji gde je margina tanka i konkurencija brutalna. Znam iz prve ruke šta funkcioniše, šta ne funkcioniše, i — što je najvažnije za ovaj post — šta srpski eCommerce biznisi moraju da urade pre novembra 2026 da ne propuste launch window.
+        Radim Google Shopping kampanje za UK klijente više od 2 godine. Sa Chelleeon UK smo generisali £290.000+ revenue kroz Shopping, sa <GlossaryLink slug="poas">POAS</GlossaryLink> 1.78x u kategoriji gde je margina tanka i konkurencija brutalna. Znam iz prve ruke šta funkcioniše, šta ne funkcioniše, i — što je najvažnije za ovaj post — šta srpski eCommerce biznisi moraju da urade pre novembra 2026 da ne propuste launch window.
       </p>
       <p>
-        Ovo je pillar post o Google Shopping-u u Srbiji. Pokriva sve: datum, šta je Shopping, Ex-Yu tržišta, 15-korak checklist, Merchant Center, product feed, moje UK iskustvo, greške, troškove, i CSS strategiju. Linkovi ka supporting postovima se nalaze kroz tekst za one koji žele više detalja o konkretnim temama.
+        Ovo je pillar post o Google Shopping-u u Srbiji. Pokriva sve: datum, šta je Shopping, Ex-Yu tržišta, 15-korak checklist, Merchant Center, product feed, moje UK iskustvo, greške, troškove, i CSS strategiju. Linkovi ka supporting postovima se nalaze kroz tekst za one koji žele više detalja o konkretnim temama. Ako želite da vam neko sa iskustvom postavi ceo eCommerce nalog, pogledajte i našu uslugu{" "}
+        <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads za eCommerce</Link>.
       </p>
 
       <hr />
@@ -232,7 +234,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Podesite shipping settings za Srbiju</strong>
               <span className="text-gray-500 ml-2">— Rok: jun 2026</span>
-              <p className="text-base text-gray-600 mt-1 mb-0">Definirajte cene dostave i rokove isporuke. Ovo se prikazuje u Shopping oglasima i utiče na CTR. Besplatna dostava nad određenim iznosom = veliki CTR boost.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Definirajte cene dostave i rokove isporuke. Ovo se prikazuje u Shopping oglasima i utiče na <GlossaryLink slug="ctr">CTR</GlossaryLink>. Besplatna dostava nad određenim iznosom = veliki CTR boost.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -304,7 +306,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <div>
               <strong>Podesite conversion tracking pre launch-a</strong>
               <span className="text-gray-500 ml-2">— Rok: septembar 2026</span>
-              <p className="text-base text-gray-600 mt-1 mb-0">Purchase konverzija u Google Ads (vrednost + kvantitet). Bez pravilnog trackinga, Smart Bidding ne funkcioniše i ne možete meriti ROAS. Detalji u <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline text-blue-700">Conversion Tracking vodiču</Link>.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Purchase konverzija u Google Ads (vrednost + kvantitet). Bez pravilnog trackinga, Smart Bidding ne funkcioniše i ne možete meriti <GlossaryLink slug="roas">ROAS</GlossaryLink>. Detalji u <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline text-blue-700">Conversion Tracking vodiču</Link>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -330,7 +332,7 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <h2>Google Merchant Center — obavezan prvi korak</h2>
       <p>
-        Google Merchant Center (MC) je centralna platforma za upravljanje vašim product feed-om i Shopping kampanjama. Bez verifikovanog MC naloga, ne možete pokrenuti nijednu Shopping reklamu. Ovo nije opcija — ovo je preduslov.
+        <GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink> (MC) je centralna platforma za upravljanje vašim product feed-om i Shopping kampanjama. Bez verifikovanog MC naloga, ne možete pokrenuti nijednu Shopping reklamu. Ovo nije opcija — ovo je preduslov.
       </p>
       <p>
         Za srpsko tržište, postoje specifičnosti koje morate imati na umu pri setup-u:
@@ -896,7 +898,8 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">Za ozbiljne brendove</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
-          Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre novembra ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu.
+          Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre novembra ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu — deo je naše šire usluge{" "}
+          <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping upravljanja</Link>.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">

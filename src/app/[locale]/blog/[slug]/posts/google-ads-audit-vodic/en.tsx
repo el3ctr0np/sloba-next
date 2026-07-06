@@ -25,6 +25,20 @@ export default function GoogleAdsAuditGuideEN() {
           </div>
         </div>
       </div>
+
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What is a Google Ads audit and what does it find?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          A <strong>Google Ads audit</strong> is a systematic account review across <strong>10 categories</strong> — account structure, conversion tracking, campaign settings, keywords, ads, audiences, bidding strategy, and budget. A professional audit covers <strong>80+ checkpoints</strong> and, on average, finds that <strong>15-25% of budget</strong> is being spent inefficiently on accounts that haven&apos;t been optimized in 6+ months.
+        </p>
+      </div>
+
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>

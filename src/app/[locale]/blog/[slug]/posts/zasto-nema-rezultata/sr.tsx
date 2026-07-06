@@ -46,6 +46,20 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           </div>
         </div>
       </div>
+
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Zašto moje Google Ads kampanje ne donose rezultate?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          U <strong>90% slučajeva</strong> razlog zašto Google Ads kampanje ne rade je tehnički i rešiv — najčešće loš conversion tracking, pogrešna podešavanja kampanje ili neusklađenost ključnih reči, oglasa i landing page-a. Postoji <strong>8 najčešćih razloga</strong>, a dijagnoza obično traje <strong>2-4 nedelje</strong>. Tačna dijagnoza je pola rešenja.
+        </p>
+      </div>
+
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>

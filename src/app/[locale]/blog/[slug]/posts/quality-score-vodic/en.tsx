@@ -29,6 +29,19 @@ export default function QualityScoreGuideEN() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What is Quality Score in Google Ads?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Quality Score</strong> is Google&apos;s ad relevance rating on a <strong>1-10 scale</strong>, made up of three components: Expected CTR, Ad Relevance, and Landing Page Experience. It directly affects ad position and cost per click — improving QS from 5 to 7 cuts CPC by <strong>28%</strong>, while a QS of 1 carries up to a <strong>400% higher</strong> cost per click.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── What is Quality Score ── */}

@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function MicrosoftAdsVsGoogleAdsEN() {
   return (
@@ -38,7 +39,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-bold text-yellow-900 text-sm mb-1 uppercase tracking-wide">Quick Answer</p>
         <p className="text-yellow-800 text-base mb-0">
-          Google Ads is non-negotiable for any business advertising online — 92% market share, unmatched reach, and the most advanced automation available. Microsoft Ads is a profitable supplementary channel: 30–50% lower CPC, an older and wealthier audience (35+, higher incomes), and unique LinkedIn targeting available exclusively through the Microsoft platform.
+          <GlossaryLink slug="google-ads">Google Ads</GlossaryLink> is non-negotiable for any business advertising online — 92% market share, unmatched reach, and the most advanced automation available. Microsoft Ads is a profitable supplementary channel: 30–50% lower <GlossaryLink slug="cpc">CPC</GlossaryLink>, an older and wealthier audience (35+, higher incomes), and unique LinkedIn targeting available exclusively through the Microsoft platform.
         </p>
       </div>
 
@@ -409,7 +410,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">AI and automation — where Google leads</h3>
               <p className="text-base text-gray-600 mb-2">
-                Google&apos;s Smart Bidding (tROAS, tCPA, Maximize Conversions) is more mature and reliable
+                Google&apos;s <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> (tROAS, tCPA, Maximize Conversions) is more mature and reliable
                 due to the sheer volume of conversion data it processes. Microsoft Smart Bidding works,
                 but requires more time to learn and more conversions to stabilise. For accounts with
                 fewer than 30 conversions per month, Microsoft Smart Bidding can be unstable.
@@ -538,7 +539,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
         </div>
 
         <div className="bg-white border-l-4 border-blue-500 rounded-r-xl p-4 shadow-card">
-          <p className="text-sm font-bold text-gray-900 mb-1">Finding 5: Impression Share is easier to win on Bing</p>
+          <p className="text-sm font-bold text-gray-900 mb-1">Finding 5: <GlossaryLink slug="impression-share">Impression Share</GlossaryLink> is easier to win on Bing</p>
           <p className="text-base text-gray-600 mb-0">
             On Google Ads, capturing 80%+ impression share for competitive terms requires aggressive budgets.
             On Microsoft Ads, the same impression share is achievable with a 3–5x smaller budget due to fewer
@@ -762,7 +763,9 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
         For businesses selling internationally into the UK, USA, or Germany: a Microsoft Ads test
         campaign at £300–£500 per month can be one of the most cost-effective experiments you run.
         The asymmetry is compelling — lower competition, lower CPC, higher AOV audience, and an
-        import tool that makes setup nearly effortless if you already run Google Ads.
+        import tool that makes setup nearly effortless if you already run Google Ads. If you want someone
+        to manage your Google Ads account while you test Microsoft Ads in parallel, see our{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">Google Ads management service</Link>.
       </p>
 
       <p>
@@ -770,7 +773,11 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
         a coherent strategy,{" "}
         <a href="/en/contact" className="underline font-medium">
           get in touch — free 30-minute consultation.
-        </a>
+        </a>{" "}
+        Or see our{" "}
+        <Link href="/usluge/konsultacije" className="underline font-medium">consulting service</Link>. Before you touch bids, it also helps to run a{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-medium">Google Ads audit checklist</Link>{" "}
+        on your main account first.
       </p>
 
       <hr />

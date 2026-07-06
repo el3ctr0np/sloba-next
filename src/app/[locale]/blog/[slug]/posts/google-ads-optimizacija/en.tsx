@@ -42,6 +42,19 @@ export default function GoogleAdsOptimizationEN() {
         has survived contact with practice.
       </p>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          How do you optimize Google Ads campaigns?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google Ads optimization</strong> is a continuous process of applying concrete tactics to account structure, keywords, ads, bidding, and Quality Score. This guide covers <strong>30 tactics</strong> tested across <strong>20+ accounts</strong>, delivering an average performance improvement of <strong>40% within the first 90 days</strong>. The key is a systematic, weekly approach — not a one-time action.
+        </p>
+      </div>
+
       <hr />
 
       <h2>Why optimization is key to success</h2>

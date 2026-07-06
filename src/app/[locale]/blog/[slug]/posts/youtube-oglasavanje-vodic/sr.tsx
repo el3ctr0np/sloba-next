@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function YouTubeOglasavanjeVodicSR() {
   return (
@@ -8,7 +9,7 @@ export default function YouTubeOglasavanjeVodicSR() {
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           YouTube je drugi najveći search engine na svetu sa 2.5 milijardi mesečnih korisnika. Video oglasi konvertuju
-          bolje od teksta jer kombinuju vizual, zvuk i emociju. Prosečni CPV u Srbiji je 2-3x niži nego u US/UK —
+          bolje od teksta jer kombinuju vizual, zvuk i emociju. Prosečni <GlossaryLink slug="cpv">CPV</GlossaryLink> u Srbiji je 2-3x niži nego u US/UK —
           što znači da je sada idealno vreme za testiranje video kampanja.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -181,7 +182,7 @@ export default function YouTubeOglasavanjeVodicSR() {
               <td className="py-3 px-3">€0.01 – €0.02</td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="py-3 px-3 font-medium">CPM (cena po 1,000 impresija)</td>
+              <td className="py-3 px-3 font-medium"><GlossaryLink slug="cpm">CPM</GlossaryLink> (cena po 1,000 impresija)</td>
               <td className="py-3 px-3">€5 – €10</td>
               <td className="py-3 px-3">€2 – €5</td>
             </tr>
@@ -261,7 +262,7 @@ export default function YouTubeOglasavanjeVodicSR() {
           <p className="text-base text-gray-600 mb-0">Tematske kategorije: "kuvanje", "fitness", "tehnologija". Šire od Placements-a, ali i dalje kontekstualno relevantno.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">7. Remarketing (vaša publika)</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">7. <GlossaryLink slug="remarketing">Remarketing</GlossaryLink> (vaša publika)</h3>
           <p className="text-base text-gray-600 mb-0">
             Prikažite oglase ljudima koji su već posetili vaš sajt, gledali vaše videe, ili interagovali sa vašim YouTube kanalom.
             Najisplativiji targeting — više o ovome u našem{" "}
@@ -584,6 +585,9 @@ export default function YouTubeOglasavanjeVodicSR() {
         Za više o našim YouTube oglašavačkim uslugama, posetite{" "}
         <Link href="/usluge/youtube-oglasi" className="underline font-medium">
           stranicu za YouTube Ads upravljanje
+        </Link>. Ako vodite i Search/Shopping kampanje uz video, pogledajte i našu širu uslugu{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">
+          Google Ads upravljanja
         </Link>.
       </p>
     </>

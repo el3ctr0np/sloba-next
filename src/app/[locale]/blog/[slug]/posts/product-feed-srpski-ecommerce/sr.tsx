@@ -47,7 +47,7 @@ export default function ProductFeedSrpskiEcommerceSR() {
           Šta je product feed?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Product feed</strong> je strukturirani fajl (XML, TXT ili Google Sheets) koji sadrži sve podatke o vašim proizvodima — naziv, cenu, sliku, dostupnost i druge atribute — u formatu koji Google Merchant Center razume. Google koristi feed da odluči kada, kome i za koju pretragu da prikaže vaš proizvod u <GlossaryLink slug="pmax">Shopping oglasima</GlossaryLink>. Bez feed-a, Shopping kampanja nema šta da prikaže — feed je bukvalno izvor svih proizvoda koje oglašavate.
+          <strong>Product feed</strong> je strukturirani fajl (XML, TXT ili Google Sheets) koji sadrži sve podatke o vašim proizvodima — naziv, cenu, sliku, dostupnost i druge atribute — u formatu koji <GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink> razume. Google koristi feed da odluči kada, kome i za koju pretragu da prikaže vaš proizvod u <GlossaryLink slug="pmax">Shopping oglasima</GlossaryLink>. Bez feed-a, Shopping kampanja nema šta da prikaže — feed je bukvalno izvor svih proizvoda koje oglašavate.
         </p>
       </div>
 
@@ -55,7 +55,8 @@ export default function ProductFeedSrpskiEcommerceSR() {
         Kad radim Shopping audit za novog klijenta, gotovo uvek prvo pogledam feed, ne kampanju. Razlog je jednostavan — loš bidding se da popraviti za nedelju dana, ali loš feed je razlog zašto pola kataloga uopšte ne dobija impresije, bez obzira koliko dobro strukturirate kampanju oko njega. Feed je fundament; sve ostalo je nadgradnja.
       </p>
       <p>
-        Radio sam Shopping feed-ove za globalne naloge — moto delove koji se prodaju u skoro 40 zemalja, UK skincare brend i UK proizvođača dušeka. Svaki od ta tri kataloga imao je svoje specifičnosti (varijante po veličini/boji, sezonski proizvodi, GTIN komplikacije), ali princip je uvek isti: čist, kompletan i ažuran feed nosi kampanju, ne obrnuto. Ovaj vodič prenosi to iskustvo na srpski kontekst — jezik, RSD cene, PDV i lokalne platforme koje ovdašnji eCommerce koristi.
+        Radio sam Shopping feed-ove za globalne naloge — moto delove koji se prodaju u skoro 40 zemalja, UK skincare brend i UK proizvođača dušeka. Svaki od ta tri kataloga imao je svoje specifičnosti (varijante po veličini/boji, sezonski proizvodi, GTIN komplikacije), ali princip je uvek isti: čist, kompletan i ažuran feed nosi kampanju, ne obrnuto. Ovaj vodič prenosi to iskustvo na srpski kontekst — jezik, RSD cene, PDV i lokalne platforme koje ovdašnji eCommerce koristi. Za kompletno upravljanje nalogom, pogledajte i našu uslugu{" "}
+        <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads za eCommerce</Link>.
       </p>
       <p>
         Ovo je treći post u Google Shopping seriji. Ako tek počinjete, prvo pročitajte pillar vodič{" "}
@@ -446,7 +447,7 @@ export default function ProductFeedSrpskiEcommerceSR() {
         <h3 className="mt-0 mb-4 font-heading font-bold">Kako izgleda kontinuirana optimizacija u praksi</h3>
         <ol className="mb-0">
           <li><strong>Supplemental feeds</strong> — dodatni feed koji nadograđuje primarni feed novim podacima (npr. custom labels ili ažurirane kategorije) bez menjanja glavne izvorne datoteke. Koristan kad ne možete direktno editovati primarni feed generisan iz platforme.</li>
-          <li><strong>A/B testovi title formula</strong> — testirajte da li title sa "Brend + Proizvod + Boja" ili "Proizvod + Brend + Veličina" donosi bolji CTR za vašu kategoriju proizvoda. Male promene u redosledu atributa mogu značajno promeniti impresije.</li>
+          <li><strong>A/B testovi title formula</strong> — testirajte da li title sa "Brend + Proizvod + Boja" ili "Proizvod + Brend + Veličina" donosi bolji <GlossaryLink slug="ctr">CTR</GlossaryLink> za vašu kategoriju proizvoda. Male promene u redosledu atributa mogu značajno promeniti impresije.</li>
           <li><strong>Mesečni pregled Diagnostics-a</strong> — čak i kad je feed stabilan, novi proizvodi ili promene na sajtu mogu uvesti nove greške. Redovan mesečni pregled sprečava da se problem gomila neopaženo.</li>
           <li><strong>Praćenje performansi po custom label segmentu</strong> — kad jednom uvedete margin/sezona/bestseller labele, pratite performanse po segmentu i prilagođavajte bidding na osnovu tih podataka, ne na osnovu celog kataloga uprosečeno.</li>
         </ol>
@@ -475,7 +476,8 @@ export default function ProductFeedSrpskiEcommerceSR() {
           Treba vam pomoć oko product feed-a?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Prolazim kroz vaš katalog, feed strukturu i atribute i dajem konkretan plan pre nego što Shopping zvanično starta u Srbiji.
+          Prolazim kroz vaš katalog, feed strukturu i atribute i dajem konkretan plan pre nego što Shopping zvanično starta u Srbiji — deo naše usluge{" "}
+          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping upravljanja</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju

@@ -30,6 +30,19 @@ export default function QualityScoreVodicPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta je Quality Score u Google Ads-u?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Quality Score</strong> je Google-ova ocena relevantnosti oglasa na skali <strong>1-10</strong>, sastavljena od tri komponente: Expected CTR, Ad Relevance i Landing Page Experience. Direktno utiče na poziciju oglasa i cenu klika — poboljšanje QS sa 5 na 7 smanjuje CPC za <strong>28%</strong>, dok QS od 1 nosi i do <strong>400% veću</strong> cenu po kliku.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── Šta je Quality Score ── */}

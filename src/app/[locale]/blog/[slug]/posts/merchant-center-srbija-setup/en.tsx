@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function MerchantCenterSerbiaSetupEN() {
   return (
@@ -54,7 +55,7 @@ export default function MerchantCenterSerbiaSetupEN() {
 
       <h2 id="what-is-google-merchant-center-and-why-its-a-prerequisite">What is Google Merchant Center and why it&apos;s a prerequisite for Shopping</h2>
       <p>
-        Google Merchant Center (MC) is a free platform at merchants.google.com where you upload your <strong>product feed</strong> — a structured list of all your products with prices, images, availability, and other attributes. Google Ads knows nothing about your products until you tell it through MC. No feed, no Shopping ads. Full stop.
+        <GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink> (MC) is a free platform at merchants.google.com where you upload your <strong>product feed</strong> — a structured list of all your products with prices, images, availability, and other attributes. <GlossaryLink slug="google-ads">Google Ads</GlossaryLink> knows nothing about your products until you tell it through MC. No feed, no Shopping ads. Full stop.
       </p>
       <p>
         People often confuse Merchant Center with the Google Ads account — these are two separate platforms that connect to each other. Google Ads is where you create campaigns and manage budget. Merchant Center is where your product catalog lives. A Shopping campaign in Google Ads &quot;pulls&quot; products directly from your MC feed — you don&apos;t pick keywords like with Search campaigns, Google automatically matches products to searches based on the data in your feed.
@@ -108,7 +109,7 @@ export default function MerchantCenterSerbiaSetupEN() {
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
             <div>
               <strong>Set up shipping settings</strong>
-              <p className="text-base text-gray-600 mt-1 mb-0">Tools → Shipping and returns. Define delivery prices by region (all of Serbia, or by city if you have differentiated pricing), delivery timeframes, and conditions for free shipping. This shows up directly in the Shopping ad and affects CTR.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Tools → Shipping and returns. Define delivery prices by region (all of Serbia, or by city if you have differentiated pricing), delivery timeframes, and conditions for free shipping. This shows up directly in the Shopping ad and affects <GlossaryLink slug="ctr">CTR</GlossaryLink>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -553,7 +554,8 @@ export default function MerchantCenterSerbiaSetupEN() {
           Need help with your Merchant Center setup?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          I go through your site, feed, and Merchant Center account and give you a concrete plan before Shopping officially launches in Serbia.
+          I go through your site, feed, and Merchant Center account and give you a concrete plan before Shopping officially launches in Serbia — part of our{" "}
+          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping management service</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Schedule a free consultation
@@ -572,6 +574,10 @@ export default function MerchantCenterSerbiaSetupEN() {
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-za-ecommerce-srbija-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for eCommerce in Serbia</p>
           <p className="text-xs text-gray-500 mb-0">Complete guide for Serbian eCommerce, feed optimization</p>
+        </Link>
+        <Link href="/usluge/google-ads-za-ecommerce" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Service: Google Ads for eCommerce</p>
+          <p className="text-xs text-gray-500 mb-0">Setup, feed, campaigns, and optimization — all in one place</p>
         </Link>
       </div>
     </>

@@ -31,6 +31,19 @@ export default function RsaGuideEN() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          How many headlines should a Responsive Search Ad have?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Responsive Search Ads (RSA)</strong> are the only text ad format in Google Ads and allow up to 15 headlines, but the optimal number is <strong>7-8 headlines</strong> precisely distributed by role (7 headline types), giving 336 possible combinations — more is unnecessary and dilutes relevance. Surveys show <strong>59% of advertisers</strong> already use AI to write ad copy.
+        </p>
+      </div>
+
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>

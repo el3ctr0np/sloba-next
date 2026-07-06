@@ -775,7 +775,9 @@ export default function SmartBiddingGuideEN() {
       </p>
 
       <p>
-        From testing across 10+ accounts in 2024–2026, a summary that holds regardless of business type:
+        From testing across 10+ accounts in 2024–2026, a summary that holds regardless of business type.
+        If you&apos;d rather have someone experienced set this up and manage it for you, see our{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">Google Ads management service</Link>.
       </p>
 
       <ul>
@@ -794,6 +796,14 @@ export default function SmartBiddingGuideEN() {
             className="underline font-medium"
           >
             Microsoft Ads vs Google Ads — full comparison [2026]
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }}
+            className="underline font-medium"
+          >
+            Google Ads audit checklist
           </Link>
         </li>
         <li>

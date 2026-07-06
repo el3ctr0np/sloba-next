@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GA4GoogleAdsIntegracijaSR() {
   const howToJsonLd = {
@@ -54,7 +55,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
           Šta je GA4 + Google Ads integracija?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>GA4 + Google Ads integracija</strong> je dvosmerno povezivanje Google Analytics 4 property-ja i Google Ads naloga koje omogućava import konverzija (key events) iz GA4 u Google Ads, prenos audience-a za remarketing, i bogatiji set signala za Smart Bidding algoritam. Link se aktivira u GA4 Admin → Product links, a verifikuje kroz 24–48h.
+          <strong><GlossaryLink slug="ga4">GA4</GlossaryLink> + Google Ads integracija</strong> je dvosmerno povezivanje Google Analytics 4 property-ja i Google Ads naloga koje omogućava import konverzija (key events) iz GA4 u Google Ads, prenos audience-a za <GlossaryLink slug="remarketing">remarketing</GlossaryLink>, i bogatiji set signala za <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> algoritam. Link se aktivira u GA4 Admin → Product links, a verifikuje kroz 24–48h.
         </p>
       </div>
 
@@ -65,7 +66,8 @@ export default function GA4GoogleAdsIntegracijaSR() {
         Tipičan simptom: klijent ima GA4, vidi purchase events, ima Google Ads kampanje — ali kada pogledate Google Ads Conversions stranicu, ili ih nema uopšte, ili ima &quot;Google Ads conversion&quot; + &quot;GA4 purchase&quot; u isto vreme što generiše duplikate. Smart Bidding pokušava da optimizuje protiv zbunjene metrike i rezultati stoje.
       </p>
       <p>
-        Ovaj vodič pokriva tačan 7-koračni setup koji radi u 2026 — sa Consent Mode v2 obaveznim od marta 2024, Data Manager izmenama u Google Ads UI-ju, i najčešćim greškama koje vidim na nalozima iz Srbije i UK-a.
+        Ovaj vodič pokriva tačan 7-koračni setup koji radi u 2026 — sa Consent Mode v2 obaveznim od marta 2024, Data Manager izmenama u Google Ads UI-ju, i najčešćim greškama koje vidim na nalozima iz Srbije i UK-a. Ako želite da vam neko sa iskustvom proveri i podesi ceo tracking sistem, pogledajte našu{" "}
+        <Link href="/usluge/konsultacije" className="underline font-medium">konsultantsku uslugu</Link>.
       </p>
 
       <hr />
@@ -308,7 +310,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
 
       <h2 id="attribution">Attribution model: Ads-preferred vs Data-driven</h2>
       <p>
-        Posle importa, važno pitanje je koji attribution model koristiti. GA4 koristi Data-driven by default od 2023. Google Ads ima svoj set opcija:
+        Posle importa, važno pitanje je koji <GlossaryLink slug="attribution-model">attribution model</GlossaryLink> koristiti. GA4 koristi Data-driven by default od 2023. Google Ads ima svoj set opcija:
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -549,7 +551,8 @@ export default function GA4GoogleAdsIntegracijaSR() {
           Vaša GA4 + Google Ads integracija nije potpuna?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Besplatan audit kompletnog tracking sistema na vašem sajtu — provera link statusa, Primary/Secondary setup-a, Consent Mode v2, attribution modela i celokupnog data flow-a. Obično se otkrije 3–5 grešaka koje koštaju konverzija.
+          Besplatan audit kompletnog tracking sistema na vašem sajtu — provera link statusa, Primary/Secondary setup-a, Consent Mode v2, attribution modela i celokupnog data flow-a. Obično se otkrije 3–5 grešaka koje koštaju konverzija. Deo je našeg{" "}
+          <Link href="/usluge/google-ads-audit" className="underline text-white hover:text-yellow-400">Google Ads audit servisa</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Pošaljite zahtev za besplatan audit

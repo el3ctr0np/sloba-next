@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleShoppingSerbiaLaunch2026EN() {
   return (
@@ -33,10 +34,11 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         November 2026. You type &quot;men&apos;s jacket zara&quot; into Google search. Instead of just text ads, you see a row of images — jacket, price, store. You click directly. You buy. This is Google Shopping, and that experience is coming to Serbia in less than a year.
       </p>
       <p>
-        I have run Google Shopping campaigns for UK clients for over 2 years. With Chelleon UK we generated £290,000+ in revenue through Shopping, at a 1.78x POAS (Profit on Ad Spend) in a category with thin margins and brutal competition. I know first-hand what works, what doesn&apos;t, and — most importantly for this post — what Serbian eCommerce businesses need to do before November 2026 so they don&apos;t miss the launch window.
+        I have run Google Shopping campaigns for UK clients for over 2 years. With Chelleon UK we generated £290,000+ in revenue through Shopping, at a 1.78x <GlossaryLink slug="poas">POAS</GlossaryLink> (Profit on Ad Spend) in a category with thin margins and brutal competition. I know first-hand what works, what doesn&apos;t, and — most importantly for this post — what Serbian eCommerce businesses need to do before November 2026 so they don&apos;t miss the launch window.
       </p>
       <p>
-        This is a pillar post about Google Shopping in Serbia. It covers everything: the launch date, what Shopping actually is, the wider Ex-Yu markets, a 15-step checklist, Merchant Center, the product feed, my UK experience, common mistakes, costs, and CSS strategy. Links to supporting posts are placed throughout for readers who want more detail on specific topics.
+        This is a pillar post about Google Shopping in Serbia. It covers everything: the launch date, what Shopping actually is, the wider Ex-Yu markets, a 15-step checklist, Merchant Center, the product feed, my UK experience, common mistakes, costs, and CSS strategy. Links to supporting posts are placed throughout for readers who want more detail on specific topics. If you want an experienced hand to set up the whole eCommerce account for you, see our{" "}
+        <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads for eCommerce service</Link>.
       </p>
 
       <hr />
@@ -232,7 +234,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             <div>
               <strong>Set up shipping settings for Serbia</strong>
               <span className="text-gray-500 ml-2">— Deadline: June 2026</span>
-              <p className="text-base text-gray-600 mt-1 mb-0">Define shipping costs and delivery times. This shows up directly in Shopping ads and affects CTR. Free shipping above a certain amount is a big CTR boost.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Define shipping costs and delivery times. This shows up directly in Shopping ads and affects <GlossaryLink slug="ctr">CTR</GlossaryLink>. Free shipping above a certain amount is a big CTR boost.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -304,7 +306,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             <div>
               <strong>Set up conversion tracking before launch</strong>
               <span className="text-gray-500 ml-2">— Deadline: September 2026</span>
-              <p className="text-base text-gray-600 mt-1 mb-0">Purchase conversion in Google Ads (value + quantity). Without accurate tracking, Smart Bidding doesn&apos;t work and you can&apos;t measure ROAS. Details in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline text-blue-700">Conversion Tracking guide</Link>.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Purchase conversion in Google Ads (value + quantity). Without accurate tracking, Smart Bidding doesn&apos;t work and you can&apos;t measure <GlossaryLink slug="roas">ROAS</GlossaryLink>. Details in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline text-blue-700">Conversion Tracking guide</Link>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -330,7 +332,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <h2>Google Merchant Center — the mandatory first step</h2>
       <p>
-        Google Merchant Center (MC) is the central platform for managing your product feed and Shopping campaigns. Without a verified MC account, you can&apos;t run a single Shopping ad. This isn&apos;t optional — it&apos;s a prerequisite.
+        <GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink> (MC) is the central platform for managing your product feed and Shopping campaigns. Without a verified MC account, you can&apos;t run a single Shopping ad. This isn&apos;t optional — it&apos;s a prerequisite.
       </p>
       <p>
         For the Serbian market, there are specifics you need to keep in mind during setup:
@@ -896,7 +898,8 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">For serious brands</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
-          If your brand already invests $3,000+ per month in advertising, you&apos;re ready for Shopping from day one. Before November, I&apos;ll go through your site, product feed, Merchant Center, and give you a concrete preparation plan.
+          If your brand already invests $3,000+ per month in advertising, you&apos;re ready for Shopping from day one. Before November, I&apos;ll go through your site, product feed, Merchant Center, and give you a concrete preparation plan — part of our broader{" "}
+          <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping management service</Link>.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">

@@ -27,6 +27,20 @@ export default function GoogleOglasavanjeZaFirmePost() {
           </div>
         </div>
       </div>
+
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta je Google oglašavanje i zašto je efikasno za firme?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google oglašavanje (Google Ads)</strong> prikazuje vaše oglase korisnicima koji aktivno traže vaš proizvod ili uslugu, za razliku od društvenih mreža gde prekidate skrolovanje. Postoji <strong>6 tipova kampanja</strong> (Search, Shopping, Performance Max, Display, Video, Demand Gen), a prosečan ROAS na dobro vođenim nalozima iznosi oko <strong>8.5x</strong>. U Srbiji je CPC od <strong>€0.15 do €2.00</strong>, sa prvim merljivim rezultatima za 2-3 meseca.
+        </p>
+      </div>
+
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>

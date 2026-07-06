@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleAdsZaEcommerceSrbija2026SR() {
   return (
@@ -41,8 +42,8 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       </p>
       <p>
         Problem je što većina srpskih eCommerce biznisa i dalje koristi Google Ads taktike iz 2020:
-        jedna Search kampanja, široki match, bez remarketing lista, bez razdvajanja branded i non-branded saobraćaja.
-        Rezultat su kampanje koje troše budžet bez predvidivog ROAS-a.
+        jedna Search kampanja, široki match, bez <GlossaryLink slug="remarketing">remarketing</GlossaryLink> lista, bez razdvajanja branded i non-branded saobraćaja.
+        Rezultat su kampanje koje troše budžet bez predvidivog <GlossaryLink slug="roas">ROAS</GlossaryLink>-a.
       </p>
       <p>
         Ovaj post je data-driven vodič za 2026 — zasnovan na zvaničnim podacima Narodne banke Srbije,
@@ -242,7 +243,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-semibold text-yellow-900 text-sm mb-1">Zašto je ovo bitno sada, u aprilu?</p>
         <p className="text-yellow-800 text-base mb-0">
-          Merchant Center setup, product feed optimizacija i account review ne mogu da se urade za vikend.
+          <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink> setup, product feed optimizacija i account review ne mogu da se urade za vikend.
           Brendovi koji počnu pripremu sada imaju 6–7 meseci prednosti pred konkurencijom koja će početi
           u oktobru. U eCommerce-u, 6 meseci je ogromna prednost.
         </p>
@@ -257,6 +258,8 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       <p>
         Nakon lansiranja Shopping-a, dinamika se menja — Shopping kampanje preuzimaju dominaciju za
         product-first biznise, baš kao što je to slučaj u UK, Nemačkoj i celoj zapadnoj Evropi.
+        Ako želite da vam neko unapred podesi nalog za ovu tranziciju, pogledajte našu uslugu{" "}
+        <Link href="/usluge/google-shopping" className="underline font-medium">Google Shopping upravljanja</Link>.
         Detaljnu strategiju pripreme možete pronaći u posebnom vodiču:
       </p>
 
@@ -622,7 +625,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       </div>
 
       <p>
-        Core Web Vitals su direktno vezani za Quality Score u Google Ads-u. Bolji QS = niži CPC =
+        Core Web Vitals su direktno vezani za <GlossaryLink slug="quality-score">Quality Score</GlossaryLink> u Google Ads-u. Bolji QS = niži CPC =
         više klikova za isti budžet. Mobile optimizacija nije samo UX pitanje — to je ekonomsko pitanje.
       </p>
 
@@ -913,7 +916,8 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       <p>
         Ono što odvaja uspešne eCommerce naloge od onih koji samo troše budžet su tri stvari:
         tačan conversion tracking, ispravna kampanjska struktura, i pravovremena priprema za promene.
-        Sve tri su dostupne vama već danas.
+        Sve tri su dostupne vama već danas — ili kroz našu uslugu{" "}
+        <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads za eCommerce</Link>.
       </p>
 
       <p>

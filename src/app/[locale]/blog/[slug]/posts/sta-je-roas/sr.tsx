@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import RoasCalculator from "@/components/tools/RoasCalculator";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function StaJeRoasSR() {
   return (
@@ -236,7 +237,7 @@ export default function StaJeRoasSR() {
       <div className="bg-red-50 border-2 border-red-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-red-700 text-lg mb-2">Kritična tačka: ROAS ≠ profit</p>
         <p className="text-base text-red-800 mb-0">
-          Video sam desetine naloga sa 8× ROAS-om koji gube novac, i 2× ROAS naloge koji zgrću profit. Razlika je u <strong>marži</strong>. Sirov ROAS ne uzima u obzir cenu koštanja robe (COGS), troškove dostave, povrata, ili operativne troškove.
+          Video sam desetine naloga sa 8× ROAS-om koji gube novac, i 2× ROAS naloge koji zgrću profit. Razlika je u <strong>marži</strong>. Sirov ROAS ne uzima u obzir cenu koštanja robe (<GlossaryLink slug="cogs">COGS</GlossaryLink>), troškove dostave, povrata, ili operativne troškove.
         </p>
       </div>
 
@@ -245,7 +246,7 @@ export default function StaJeRoasSR() {
       </p>
 
       <p>
-        Rešenje je <strong>POAS (Profit on Ad Spend)</strong> — metrika koja uzima u obzir maržu. POAS = (Prihod × Marža) ÷ Spend. Za isti primer: (4.000 × 0.20) ÷ 1.000 = 0.8× POAS → ispod 1× = gubitak. Jasno, bez dvosmislenosti.
+        Rešenje je <strong><GlossaryLink slug="poas">POAS (Profit on Ad Spend)</GlossaryLink></strong> — metrika koja uzima u obzir maržu. POAS = (Prihod × Marža) ÷ Spend. Za isti primer: (4.000 × 0.20) ÷ 1.000 = 0.8× POAS → ispod 1× = gubitak. Jasno, bez dvosmislenosti.
       </p>
 
       <p>
@@ -259,7 +260,7 @@ export default function StaJeRoasSR() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika #1</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Povećajte AOV (Average Order Value)</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Povećajte <GlossaryLink slug="aov">AOV (Average Order Value)</GlossaryLink></h3>
           <p className="text-base text-gray-600 mb-0">Bundle-i, &quot;Add to order&quot; preporuke, free shipping threshold. Viši AOV = viši ROAS bez menjanja bid strategije.</p>
         </div>
 
@@ -271,7 +272,7 @@ export default function StaJeRoasSR() {
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika #3</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">tROAS Smart Bidding</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2"><GlossaryLink slug="troas">tROAS</GlossaryLink> Smart Bidding</h3>
           <p className="text-base text-gray-600 mb-0">Kada imate 30+ konverzija/30 dana, prebacite na Target ROAS. Algoritam licitira više za korisnike sa visokom verovatnoćom kupovine.</p>
         </div>
 
@@ -367,7 +368,7 @@ export default function StaJeRoasSR() {
           Vaš ROAS ne prati profit?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Besplatna analiza naloga sa POAS mapiranjem i preporukama za optimizaciju bid strategije po margini.
+          Besplatna analiza naloga sa POAS mapiranjem i preporukama za optimizaciju bid strategije po margini. Ako vodite eCommerce nalog, pogledajte i naš pristup <Link href="/usluge/google-ads-za-ecommerce" className="underline text-white hover:text-yellow-400">Google Ads upravljanju za eCommerce</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju

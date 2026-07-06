@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleAdsNovosti2026SR() {
   return (
@@ -46,7 +47,8 @@ export default function GoogleAdsNovosti2026SR() {
         Google Ads platforma se menja brže nego ikad. U 2026, između AI Max ekspanzije, Shopping lansiranja na novim tržištima, PMax transparentnosti i deprecation-a starih funkcija — teško je pratiti šta je bitno, a šta je samo šum. Ovaj post je moj odgovor na taj problem.
       </p>
       <p>
-        Radim Google Ads konsalting 10+ godina, upravljam sa 10+ naloga mesečno na tržištima od Srbije do UK i USA. Svaki mesec čitam sve što izlazi iz Google HQ-a, filtriram šta zaista utiče na kampanje, i upisujem ovde. Najnoviji mesec je uvek na vrhu.
+        Radim Google Ads konsalting 10+ godina, upravljam sa 10+ naloga mesečno na tržištima od Srbije do UK i USA. Svaki mesec čitam sve što izlazi iz Google HQ-a, filtriram šta zaista utiče na kampanje, i upisujem ovde. Najnoviji mesec je uvek na vrhu. Ako želite da neko prati ove promene umesto vas i odmah ih primeni na vaš nalog, pogledajte našu uslugu{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">Google Ads upravljanja</Link>.
       </p>
 
       <hr />
@@ -108,7 +110,7 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-500 mt-1 mb-0">April 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          PMax Channel Performance Timeline — Nova Transparentnost
+          <GlossaryLink slug="pmax">PMax</GlossaryLink> Channel Performance Timeline — Nova Transparentnost
         </h3>
         <p className="text-base text-gray-700 mb-3">
           Konačno. Google je uveo Channel Performance Timeline za Performance Max kampanje — sada možete videti kako svaki kanal doprinosi ukupnim rezultatima.
@@ -132,7 +134,7 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-500 mt-1 mb-0">April–Jun 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          Google Unified Enhanced Conversions Settings
+          Google Unified <GlossaryLink slug="enhanced-conversions">Enhanced Conversions</GlossaryLink> Settings
         </h3>
         <p className="text-base text-gray-700 mb-0">
           Google konsoliduje Web i Leads enhanced conversions u jedinstven setup interfejs. Prethodno odvojene postavke za web konverzije i lead konverzije sada se nalaze na jednom mestu.
@@ -151,7 +153,7 @@ export default function GoogleAdsNovosti2026SR() {
           Product Ratings u YouTube Shorts Oglasima
         </h3>
         <p className="text-base text-gray-700 mb-0">
-          eCommerce prodavci sada mogu prikazati product ratings (zvezde i broj recenzija) direktno unutar YouTube Shorts oglasa. Ovo koristi podatke iz Google Merchant Center i Google Customer Reviews programa.
+          eCommerce prodavci sada mogu prikazati product ratings (zvezde i broj recenzija) direktno unutar YouTube Shorts oglasa. Ovo koristi podatke iz Google <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink> i Google Customer Reviews programa.
           Relevantno za brendove koji imaju dobro ocenjene proizvode — social proof direktno u video formatu povećava CTR i smanjuje prepreke za kupovinu.
         </p>
       </div>
@@ -180,7 +182,7 @@ export default function GoogleAdsNovosti2026SR() {
           Performance Planner — Delimičan Deprecation
         </h3>
         <p className="text-base text-gray-700 mb-3">
-          Od 9. marta 2026, Display i Video kampanje više nisu podržane u Performance Planner-u. Impression share metrika je takođe uklonjena iz Planner interfejsa.
+          Od 9. marta 2026, Display i Video kampanje više nisu podržane u Performance Planner-u. <GlossaryLink slug="impression-share">Impression share</GlossaryLink> metrika je takođe uklonjena iz Planner interfejsa.
         </p>
         <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4">
           <p className="font-semibold text-yellow-900 text-sm mb-1">Šta ostaje podržano?</p>
@@ -378,6 +380,10 @@ export default function GoogleAdsNovosti2026SR() {
         >
           Pročitaj: Google Shopping Srbija 2026 →
         </Link>
+        <p className="text-sm text-slate-400 mt-4 mb-0">
+          Ili zakažite pripremu unapred kroz našu uslugu{" "}
+          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping upravljanja</Link>.
+        </p>
       </div>
 
       <hr />

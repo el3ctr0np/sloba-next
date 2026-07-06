@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import RoasCalculator from "@/components/tools/RoasCalculator";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function WhatIsRoasEN() {
   return (
@@ -236,7 +237,7 @@ export default function WhatIsRoasEN() {
       <div className="bg-red-50 border-2 border-red-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-red-700 text-lg mb-2">Critical point: ROAS ≠ profit</p>
         <p className="text-base text-red-800 mb-0">
-          I&apos;ve seen dozens of accounts with 8× ROAS that are losing money, and 2× ROAS accounts printing profit. The difference is <strong>margin</strong>. Raw ROAS ignores COGS, shipping, returns, and operational costs.
+          I&apos;ve seen dozens of accounts with 8× ROAS that are losing money, and 2× ROAS accounts printing profit. The difference is <strong>margin</strong>. Raw ROAS ignores <GlossaryLink slug="cogs">COGS</GlossaryLink>, shipping, returns, and operational costs.
         </p>
       </div>
 
@@ -245,7 +246,7 @@ export default function WhatIsRoasEN() {
       </p>
 
       <p>
-        The solution is <strong>POAS (Profit on Ad Spend)</strong> — a metric that factors in margin. POAS = (Revenue × Margin) ÷ Spend. For the same example: (4,000 × 0.20) ÷ 1,000 = 0.8× POAS → below 1× means loss. Clear, unambiguous.
+        The solution is <strong><GlossaryLink slug="poas">POAS (Profit on Ad Spend)</GlossaryLink></strong> — a metric that factors in margin. POAS = (Revenue × Margin) ÷ Spend. For the same example: (4,000 × 0.20) ÷ 1,000 = 0.8× POAS → below 1× means loss. Clear, unambiguous.
       </p>
 
       <p>
@@ -259,7 +260,7 @@ export default function WhatIsRoasEN() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #1</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Lift AOV (Average Order Value)</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Lift <GlossaryLink slug="aov">AOV (Average Order Value)</GlossaryLink></h3>
           <p className="text-base text-gray-600 mb-0">Bundles, &quot;Add to order&quot; upsells, free shipping thresholds. Higher AOV = higher ROAS without touching bid strategy.</p>
         </div>
 
@@ -271,7 +272,7 @@ export default function WhatIsRoasEN() {
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #3</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Target ROAS Smart Bidding</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Target <GlossaryLink slug="troas">ROAS</GlossaryLink> Smart Bidding</h3>
           <p className="text-base text-gray-600 mb-0">Once you have 30+ conversions in 30 days, switch to tROAS. The algorithm bids higher for users with high purchase intent.</p>
         </div>
 
@@ -367,7 +368,7 @@ export default function WhatIsRoasEN() {
           Your ROAS not tracking profit?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Free account analysis with POAS mapping and margin-aware bid strategy recommendations.
+          Free account analysis with POAS mapping and margin-aware bid strategy recommendations. Running an eCommerce account? See how we approach <Link href="/usluge/google-ads-za-ecommerce" className="underline text-white hover:text-yellow-400">Google Ads management for eCommerce</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Book a free consultation

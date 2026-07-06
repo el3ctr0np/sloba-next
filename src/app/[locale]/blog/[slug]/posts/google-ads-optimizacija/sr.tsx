@@ -56,6 +56,19 @@ export default function GoogleAdsOptimizacijaPost() {
         </p>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Kako optimizovati Google Ads kampanje?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google Ads optimizacija</strong> je kontinuiran proces primene konkretnih taktika na strukturu naloga, ključne reči, oglase, bidding i Quality Score. Ovaj vodič donosi <strong>30 taktika</strong> testiranih na <strong>20+ naloga</strong>, sa prosečnim poboljšanjem performansi od <strong>40% u prvih 90 dana</strong>. Ključ je sistematičan, nedeljni pristup — ne jednokratna akcija.
+        </p>
+      </div>
+
       <hr />
 
       <h2>Zašto je optimizacija ključna za uspeh</h2>

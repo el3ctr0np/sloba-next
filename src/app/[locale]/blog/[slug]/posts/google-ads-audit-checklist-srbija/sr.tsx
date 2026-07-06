@@ -29,6 +29,19 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Šta sadrži Google Ads audit checklist?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          Kompletan <strong>Google Ads audit checklist</strong> ima <strong>50 stavki u 10 kategorija</strong> — od strukture naloga i praćenja konverzija do ključnih reči, oglasa i budžeta. Brzi audit traje oko <strong>30 minuta</strong>, a prosečan nalog koji nije auditovan 6+ meseci troši <strong>15-25% budžeta</strong> neefikasno — checklist precizno pokazuje gde.
+        </p>
+      </div>
+
       {/* ── TOC ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>

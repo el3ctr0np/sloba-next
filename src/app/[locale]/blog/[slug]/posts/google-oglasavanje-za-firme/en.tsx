@@ -27,6 +27,20 @@ export default function GoogleAdvertisingForBusinessesEN() {
           </div>
         </div>
       </div>
+
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What is Google advertising and why is it effective for businesses?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google advertising (Google Ads)</strong> shows your ads to people actively searching for your product or service, unlike social media where you interrupt scrolling. There are <strong>6 campaign types</strong> (Search, Shopping, Performance Max, Display, Video, Demand Gen), and well-run accounts see an average ROAS of around <strong>8.5x</strong>. CPC typically ranges from <strong>$0.50 to $10</strong>, with the first measurable results in 2-3 months.
+        </p>
+      </div>
+
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>

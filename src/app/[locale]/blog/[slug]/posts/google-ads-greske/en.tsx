@@ -37,6 +37,20 @@ export default function GoogleAdsMistakesEN() {
           </div>
         </div>
       </div>
+
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What are the most common Google Ads mistakes?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          The most common <strong>Google Ads mistakes</strong> are unstructured accounts (everything mixed into one campaign), missing negative keywords, broken conversion tracking, and location targeting that lets traffic in outside the service area. Together, these mistakes waste an average of <strong>30% of monthly budget</strong> on unproductive clicks. All are fixable with a systematic account audit.
+        </p>
+      </div>
+
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>

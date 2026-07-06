@@ -54,6 +54,19 @@ export default function EcommerceVsB2BPost() {
         U ovom vodiču pokrivam ključne razlike i specifične strategije za svaki model.
       </p>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Brzi odgovor
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Da li se Google Ads strategija razlikuje za eCommerce i B2B?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          Da — <strong>eCommerce i B2B</strong> zahtevaju fundamentalno drugačiji Google Ads pristup jer imaju različit customer journey, KPI-jeve i vrednost konverzije. Postoje <strong>8 ključnih razlika</strong> između ova dva modela i po <strong>4 posebne strategije</strong> za svaki. Primena iste strategije na oba modela je najčešći razlog zašto kampanje bacaju budžet bez rezultata.
+        </p>
+      </div>
+
       <hr />
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">

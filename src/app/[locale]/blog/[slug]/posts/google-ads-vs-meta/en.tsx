@@ -47,6 +47,19 @@ export default function GoogleAdsVsMetaAdsEN() {
         choice for your specific business.
       </p>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          Which is better, Google Ads or Meta Ads?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google Ads</strong> captures buyers who already have purchase intent (actively searching), while <strong>Meta Ads</strong> builds awareness and interest with audiences that aren&apos;t searching yet. They aren&apos;t competitors — they&apos;re <strong>complementary platforms</strong>, and the best results come from using both together: Google for closing sales, Meta for filling the funnel. The right choice depends on your business, budget, and where your audience is in the journey.
+        </p>
+      </div>
+
       <hr />
 
       {/* ── H2: Core difference ── */}
