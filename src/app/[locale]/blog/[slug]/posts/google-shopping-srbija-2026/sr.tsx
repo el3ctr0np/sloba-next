@@ -688,9 +688,7 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <p>
         Detaljna CSS strategija, lista CSS partnera koji planiraju Serbian market coverage, i kako da evaluirate CSS vs direktni Shopping je pokriveno u supporting postu:{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "css-comparison-shopping-service-srbija" } }} className="underline text-blue-700 font-medium">
-          CSS za Srbiju — Kako Uštedeti 20% na Shopping CPC-u
-        </Link>.
+        <strong>CSS za Srbiju — Kako Uštedeti 20% na Shopping CPC-u</strong> (uskoro).
       </p>
 
       <hr />

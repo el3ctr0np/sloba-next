@@ -688,9 +688,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <p>
         A detailed CSS strategy, a list of CSS partners planning Serbian market coverage, and how to evaluate CSS vs direct Shopping is covered in a supporting post:{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "css-comparison-shopping-service-srbija" } }} className="underline text-blue-700 font-medium">
-          CSS for Serbia — How to Save 20% on Shopping CPC
-        </Link>.
+        <strong>CSS for Serbia — How to Save 20% on Shopping CPC</strong> (coming soon).
       </p>
 
       <hr />

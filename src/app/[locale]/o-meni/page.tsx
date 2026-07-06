@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section, AnimateOnScroll } from "@/components/ui";
+import { AskAI } from "@/components/sections";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -586,6 +587,8 @@ export default async function AboutPage({ params }: Props) {
           ))}
         </div>
       </Section>
+
+      <AskAI locale={locale} />
 
       {/* Dark CTA */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">

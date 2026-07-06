@@ -5,6 +5,7 @@ import {
   ClientLogos,
   CaseStudiesPreview,
   Testimonial,
+  AskAI,
   FinalCTA
 } from "@/components/sections";
 import { AnimateOnScroll, CounterAnimation } from "@/components/ui";
@@ -279,6 +280,7 @@ export default async function Home({ params }: Props) {
         are collected (Asana: outreach HERO reviews — Grant, Janko, Mike).
         The single real <Testimonial /> above remains.
       */}
+      <AskAI locale={locale} />
       <FinalCTA />
     </>
   );
