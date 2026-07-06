@@ -7,9 +7,19 @@ type Props = {
   locale: string;
 };
 
+// Slugs of the strongest case studies to feature on the homepage preview,
+// in display order. Kept separate from data.ts ordering (which follows a
+// different, e.g. chronological, convention) — this list only affects
+// what shows up here.
+const FEATURED_SLUGS = ["chelleon", "mobelaris", "soundboxstore"];
+
 export function CaseStudiesPreview({ locale }: Props) {
   const t = useTranslations("CaseStudiesPreview");
-  const caseStudies = getCaseStudiesByLocale(locale);
+  const allCaseStudies = getCaseStudiesByLocale(locale);
+  const caseStudies = FEATURED_SLUGS
+    .map((slug) => allCaseStudies.find((study) => study.slug === slug))
+    .filter((study): study is NonNullable<typeof study> => Boolean(study))
+    .slice(0, 3);
 
   return (
     <section className="section-padding bg-white">

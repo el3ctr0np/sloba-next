@@ -1,5 +1,4 @@
 import {
-  Hero,
   WhyMe,
   WhatYouNeed,
   ClientLogos,
@@ -8,7 +7,8 @@ import {
   AskAI,
   FinalCTA
 } from "@/components/sections";
-import { AnimateOnScroll, CounterAnimation } from "@/components/ui";
+import { HeroV1 } from "@/components/sections/hero-variants/HeroV1";
+import { AnimateOnScroll } from "@/components/ui";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
 import { PERSON_SAME_AS } from "@/lib/brand";
@@ -176,20 +176,6 @@ export default async function Home({ params }: Props) {
           ],
         };
 
-  const stats =
-    locale === "en"
-      ? [
-          { value: "10+", label: "years of experience" },
-          { value: "3.7x", label: "average ROAS" },
-          { value: "50+", label: "brands managed" },
-          { value: "6+", label: "countries served" },
-        ]
-      : [
-          { value: "10+", label: "godina iskustva" },
-          { value: "3.7x", label: "prosečan ROAS" },
-          { value: "50+", label: "brendova" },
-          { value: "6+", label: "zemalja" },
-        ];
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -227,39 +213,8 @@ export default async function Home({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      <Hero {...heroProps} locale={locale} />
+      <HeroV1 {...heroProps} locale={locale} />
 
-      {/* Stats Strip — with counter animations */}
-      <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <AnimateOnScroll delay={0}>
-              <div className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-1">
-                <CounterAnimation end={10} suffix="+" />
-              </div>
-              <p className="text-gray-500 text-sm">{stats[0].label}</p>
-            </AnimateOnScroll>
-            <AnimateOnScroll delay={150}>
-              <div className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-1">
-                <CounterAnimation end={3.7} suffix="x" decimals={1} />
-              </div>
-              <p className="text-gray-500 text-sm">{stats[1].label}</p>
-            </AnimateOnScroll>
-            <AnimateOnScroll delay={300}>
-              <div className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-1">
-                <CounterAnimation end={50} suffix="+" />
-              </div>
-              <p className="text-gray-500 text-sm">{stats[2].label}</p>
-            </AnimateOnScroll>
-            <AnimateOnScroll delay={450}>
-              <div className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-1">
-                <CounterAnimation end={6} suffix="+" />
-              </div>
-              <p className="text-gray-500 text-sm">{stats[3].label}</p>
-            </AnimateOnScroll>
-          </div>
-        </div>
-      </section>
 
       <AnimateOnScroll>
         <WhyMe />
