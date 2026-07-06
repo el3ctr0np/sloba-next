@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AskAI } from "@/components/sections";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { getCaseStudiesByLocale } from "./data";
@@ -217,6 +218,8 @@ export default async function CaseStudiesPage({ params }: Props) {
           ))}
         </div>
       </Section>
+
+      <AskAI locale={locale} />
 
       {/* Dark CTA */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
