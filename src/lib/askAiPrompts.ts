@@ -3,7 +3,7 @@
  * Used by AskAI section and HeroV3 (Ask-AI card variant) so the
  * prompt text and link logic only live in one place.
  */
-import { Asterisk, Sparkles, Search } from "lucide-react";
+import { ClaudeIcon, ChatGPTIcon, PerplexityIcon } from "@/components/icons/AiIcons";
 
 export const ASK_AI_PROMPT_SR =
   "Poseti sajt slobodan-jelisavac.com i reci mi: ko je Slobodan Jelisavac, kakvo iskustvo ima sa Google Ads kampanjama i po čemu se razlikuje od tipične agencije? Da li bi bio dobar izbor da vodi Google Ads za moj biznis i pomogne mi da skaliram?";
@@ -20,7 +20,7 @@ export type AskAiButton = {
   label: string;
   href: string;
   base: string;
-  Icon: typeof Asterisk;
+  Icon: typeof ClaudeIcon;
 };
 
 export function getAskAiButtons(locale: string): AskAiButton[] {
@@ -34,21 +34,21 @@ export function getAskAiButtons(locale: string): AskAiButton[] {
       label: isEn ? "Ask Claude" : "Pitaj Claude",
       href: `https://claude.ai/new?q=${encodedPrompt}`,
       base: "https://claude.ai/new",
-      Icon: Asterisk,
+      Icon: ClaudeIcon,
     },
     {
       key: "ask_ai_chatgpt",
       label: isEn ? "Ask ChatGPT" : "Pitaj ChatGPT",
       href: `https://chatgpt.com/?q=${encodedPrompt}`,
       base: "https://chatgpt.com/",
-      Icon: Sparkles,
+      Icon: ChatGPTIcon,
     },
     {
       key: "ask_ai_perplexity",
       label: isEn ? "Ask Perplexity" : "Pitaj Perplexity",
       href: `https://www.perplexity.ai/search?q=${encodedPrompt}`,
       base: "https://www.perplexity.ai/search",
-      Icon: Search,
+      Icon: PerplexityIcon,
     },
   ];
 }

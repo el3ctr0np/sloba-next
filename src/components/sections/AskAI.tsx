@@ -47,7 +47,7 @@ export function AskAI({ locale }: AskAIProps) {
                 className="group flex items-center justify-between gap-4 bg-white border border-gray-200 rounded-xl p-6 hover:border-accent hover:shadow-card-hover transition-all duration-300"
               >
                 <div className="flex items-center gap-3">
-                  <Icon className="w-5 h-5 text-gray-500 group-hover:text-accent-dark transition-colors shrink-0" />
+                  <Icon className="w-5 h-5 shrink-0" />
                   <span className="uppercase text-sm font-semibold tracking-wide text-gray-900">
                     {label}
                   </span>
