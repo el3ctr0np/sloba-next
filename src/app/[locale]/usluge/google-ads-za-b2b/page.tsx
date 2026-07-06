@@ -467,7 +467,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
               <li aria-hidden="true">/</li>
               <li><Link href="/usluge" className="hover:text-white transition-colors">{locale === "en" ? "Services" : "Usluge"}</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">{locale === "en" ? "Google Ads for B2B" : "Google Ads za B2B"}</li>
+              <li className="text-accent font-medium">{locale === "en" ? "Google Ads for B2B" : "Google Ads za B2B"}</li>
             </ol>
           </nav>
 
@@ -486,15 +486,15 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             {/* Trust Badges */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-                <div className="text-yellow-400 font-bold text-2xl mb-1">180%</div>
+                <div className="text-accent font-bold text-2xl mb-1">180%</div>
                 <div className="text-sm text-slate-400">{locale === "en" ? "more qualified leads" : "više kvalifikovanih leadova"}</div>
               </div>
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-                <div className="text-yellow-400 font-bold text-2xl mb-1">{locale === "en" ? "3x" : "3x"}</div>
+                <div className="text-accent font-bold text-2xl mb-1">{locale === "en" ? "3x" : "3x"}</div>
                 <div className="text-sm text-slate-400">{locale === "en" ? "UK Search Awards shortlisted" : "UK Search Awards"}</div>
               </div>
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-                <div className="text-yellow-400 font-bold text-2xl mb-1">HubSpot</div>
+                <div className="text-accent font-bold text-2xl mb-1">HubSpot</div>
                 <div className="text-sm text-slate-400">{locale === "en" ? "/ Salesforce integration" : "/ Salesforce integracija"}</div>
               </div>
             </div>
@@ -581,7 +581,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             <ul className="space-y-3 text-gray-700">
               {idealClients.map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-yellow-500 mt-1">✓</span>
+                  <span className="text-accent mt-1">✓</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -589,7 +589,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             <div className="text-base text-gray-500 mt-6 pt-6 border-t border-gray-200">
               <strong className="text-gray-700">{locale === "en" ? "I work particularly well with:" : "Posebno dobro radim sa:"}</strong> {industries.join(", ")}.
             </div>
-            <div className="text-base text-gray-500 mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+            <div className="text-base text-gray-500 mt-4 bg-yellow-50 border-l-4 border-accent p-4 rounded">
               <strong>{locale === "en" ? "Note:" : "Napomena:"}</strong>{" "}
               {locale === "en"
                 ? "If you don't yet have a CRM or a defined sales process, set that up first — a consultation is the right format for that step."
@@ -621,8 +621,8 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}
@@ -654,7 +654,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
         <div className="max-w-4xl mx-auto overflow-x-auto">
           <table className="w-full border-collapse bg-white rounded-xl shadow-card overflow-hidden">
             <thead>
-              <tr className="bg-gray-900 text-white">
+              <tr className="bg-slate-900 text-white">
                 <th className="text-left p-4 font-heading font-semibold"></th>
                 <th className="text-left p-4 font-heading font-semibold">B2B</th>
                 <th className="text-left p-4 font-heading font-semibold">eCommerce</th>
@@ -804,35 +804,35 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
           <div className="mt-12 pt-8 border-t border-slate-800">
             <p className="text-sm text-slate-400 mb-4">{locale === "en" ? "Related services:" : "Povezane usluge:"}</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link href="/usluge/remarketing" className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href="/usluge/remarketing" className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "Remarketing" : "Remarketing"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href="/usluge/google-ads-za-saas" className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href="/usluge/google-ads-za-saas" className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "Google Ads for SaaS" : "Google Ads za SaaS"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href="/usluge/search-kampanje" className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href="/usluge/search-kampanje" className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "Search campaigns" : "Search kampanje"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href="/usluge/google-ads-audit" className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href="/usluge/google-ads-audit" className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "Deep Audit" : "Deep Audit"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href="/usluge/starter-paket" className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href="/usluge/starter-paket" className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "Kickstart" : "Kickstart"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "eCommerce vs B2B" : "eCommerce vs B2B"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integracija" } }} className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integracija" } }} className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "GA4 + Google Ads tracking" : "GA4 + Google Ads tracking"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href="/" className="text-yellow-400 hover:text-yellow-300 underline">
+              <Link href="/" className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "Google Ads Consulting" : "Google Ads u Srbiji"}
               </Link>
             </div>

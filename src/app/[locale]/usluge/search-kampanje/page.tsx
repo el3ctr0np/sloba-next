@@ -689,8 +689,8 @@ export default async function SearchKampanjePage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}
@@ -732,7 +732,7 @@ export default async function SearchKampanjePage({ params }: Props) {
         <div className="max-w-4xl mx-auto overflow-x-auto">
           <table className="w-full border-collapse bg-white rounded-xl shadow-card overflow-hidden">
             <thead>
-              <tr className="bg-gray-900 text-white">
+              <tr className="bg-slate-900 text-white">
                 <th className="text-left p-4 font-heading font-semibold">
                   {locale === "en" ? "Match type" : "Match type"}
                 </th>

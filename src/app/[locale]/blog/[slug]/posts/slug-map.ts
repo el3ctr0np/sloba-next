@@ -1,5 +1,10 @@
 // Canonical (SR) slug → EN slug mapping
 export const slugMap: Record<string, string> = {
+  "offline-conversion-import-b2b": "offline-conversion-import-b2b",
+  "koliko-kosta-google-ads-konsultant": "google-ads-consultant-cost-2026",
+  "kako-izabrati-google-ads-konsultanta": "how-to-choose-google-ads-consultant",
+  "poas-vs-roas": "poas-vs-roas",
+  "preuzimanje-google-ads-naloga": "google-ads-account-takeover-checklist",
   "microsoft-ads-vs-google-ads": "microsoft-ads-vs-google-ads-comparison",
   "youtube-oglasavanje-vodic": "youtube-advertising-guide",
   "koliko-kosta-google-ads": "how-much-does-google-ads-cost",
@@ -14,6 +19,7 @@ export const slugMap: Record<string, string> = {
   "ecommerce-vs-b2b": "google-ads-ecommerce-vs-b2b",
   "google-ads-vs-meta": "google-ads-vs-meta-ads",
   "google-ads-audit-vodic": "google-ads-audit-checklist",
+  "google-ads-audit-checklist-srbija": "google-ads-audit-checklist-serbia-2026",
   "kljucne-reci-vodic": "google-ads-keyword-guide",
   "negativne-kljucne-reci": "negative-keywords-guide",
   "quality-score-vodic": "quality-score-guide",

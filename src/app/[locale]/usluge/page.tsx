@@ -488,7 +488,7 @@ export default async function ServicesPage({ params }: Props) {
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">
+              <li className="text-accent font-medium">
                 {locale === "en" ? "Services" : "Usluge"}
               </li>
             </ol>
@@ -523,7 +523,7 @@ export default async function ServicesPage({ params }: Props) {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
               {results.map((result) => (
                 <div key={result.label}>
-                  <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">
+                  <p className="text-2xl md:text-3xl font-heading font-bold text-accent">
                     {result.value}
                   </p>
                   <p className="text-xs text-slate-400 mt-1">
@@ -624,7 +624,7 @@ export default async function ServicesPage({ params }: Props) {
                 <Link href={service.href} className="group block h-full">
                   <Card className="h-full relative hover:border-primary hover:shadow-[5px_5px_0_0_#1a73e8] transition-all duration-300">
                     {service.badge && (
-                      <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
+                      <span className="absolute -top-3 left-6 bg-accent text-gray-900 text-xs font-bold px-3 py-1 rounded-md">
                         {service.badge}
                       </span>
                     )}
@@ -684,7 +684,7 @@ export default async function ServicesPage({ params }: Props) {
       <Section>
         <div className="max-w-4xl mx-auto">
           <div className="bg-slate-900 text-white border-2 border-slate-700 rounded-xl p-6 md:p-10 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-white text-slate-900 text-xs font-bold px-3 py-1 rounded">
+            <span className="absolute -top-3 left-6 bg-white text-slate-900 text-xs font-bold px-3 py-1 rounded-md">
               {locale === "en" ? "Premium team" : "Premium tim"}
             </span>
             <div className="md:flex items-center gap-10">
@@ -706,15 +706,15 @@ export default async function ServicesPage({ params }: Props) {
                 </p>
                 <ul className="space-y-2 text-sm text-slate-300 mb-6">
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 flex-shrink-0">✓</span>
+                    <span className="text-accent flex-shrink-0">✓</span>
                     {locale === "en" ? "Omnichannel strategy and execution" : "Omnichannel strategija i egzekucija"}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 flex-shrink-0">✓</span>
+                    <span className="text-accent flex-shrink-0">✓</span>
                     {locale === "en" ? "Senior-led team of experts" : "Senior-led tim eksperata"}
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 flex-shrink-0">✓</span>
+                    <span className="text-accent flex-shrink-0">✓</span>
                     {locale === "en" ? "Measurable growth across all channels" : "Merljiv rast kroz sve kanale"}
                   </li>
                 </ul>
@@ -867,8 +867,8 @@ export default async function ServicesPage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}

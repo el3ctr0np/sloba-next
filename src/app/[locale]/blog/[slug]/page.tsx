@@ -35,6 +35,8 @@ const AUDIT_CTA_SLUGS = new Set<string>([
   "smart-bidding-vodic",
   "conversion-tracking-vodic",
   "agencija-vs-freelancer",
+  "poas-vs-roas",
+  "preuzimanje-google-ads-naloga",
 ]);
 
 function getBlogCtaTarget(canonicalSlug: string): "audit" | "consult" {

@@ -432,7 +432,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">
+              <li className="text-accent font-medium">
                 {locale === "en" ? "Google Shopping Campaigns" : "Google Shopping kampanje"}
               </li>
             </ol>
@@ -456,19 +456,19 @@ export default async function GoogleShoppingPage({ params }: Props) {
             {/* Trust badges */}
             <div className="flex flex-wrap gap-4 mb-8">
               <div className="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-lg">
-                <span className="text-yellow-400 text-xl">✓</span>
+                <span className="text-accent text-xl">✓</span>
                 <span className="text-sm text-slate-200">
                   {locale === "en" ? "10+ years experience" : "10+ godina iskustva"}
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-lg">
-                <span className="text-yellow-400 text-xl">✓</span>
+                <span className="text-accent text-xl">✓</span>
                 <span className="text-sm text-slate-200">
                   {locale === "en" ? "5x+ ROAS improvement" : "5x+ ROAS poboljšanje"}
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-lg">
-                <span className="text-yellow-400 text-xl">✓</span>
+                <span className="text-accent text-xl">✓</span>
                 <span className="text-sm text-slate-200">
                   {locale === "en" ? "Shopify, WooCommerce, Magento" : "Shopify, WooCommerce, Magento"}
                 </span>
@@ -764,42 +764,42 @@ export default async function GoogleShoppingPage({ params }: Props) {
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link
                 href="/usluge/google-ads-za-ecommerce"
-                className="text-slate-300 hover:text-yellow-400 transition-colors underline"
+                className="text-slate-300 hover:text-accent transition-colors underline"
               >
                 {locale === "en" ? "Google Ads for eCommerce" : "Google Ads za eCommerce"}
               </Link>
               <span className="text-slate-600">•</span>
               <Link
                 href="/usluge/remarketing"
-                className="text-slate-300 hover:text-yellow-400 transition-colors underline"
+                className="text-slate-300 hover:text-accent transition-colors underline"
               >
                 {locale === "en" ? "Remarketing" : "Remarketing"}
               </Link>
               <span className="text-slate-600">•</span>
               <Link
                 href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
-                className="text-slate-300 hover:text-yellow-400 transition-colors underline"
+                className="text-slate-300 hover:text-accent transition-colors underline"
               >
                 {locale === "en" ? "Google Shopping Guide" : "Google Shopping vodič"}
               </Link>
               <span className="text-slate-600">•</span>
               <Link
                 href="/usluge/performance-max"
-                className="text-slate-300 hover:text-yellow-400 transition-colors underline"
+                className="text-slate-300 hover:text-accent transition-colors underline"
               >
                 {locale === "en" ? "Performance Max" : "Performance Max"}
               </Link>
               <span className="text-slate-600">•</span>
               <Link
                 href={{ pathname: "/blog/[slug]", params: { slug: "sta-je-roas" } }}
-                className="text-slate-300 hover:text-yellow-400 transition-colors underline"
+                className="text-slate-300 hover:text-accent transition-colors underline"
               >
                 {locale === "en" ? "What is ROAS?" : "Šta je ROAS?"}
               </Link>
               <span className="text-slate-600">•</span>
               <Link
                 href="/"
-                className="text-slate-300 hover:text-yellow-400 transition-colors underline"
+                className="text-slate-300 hover:text-accent transition-colors underline"
               >
                 {locale === "en" ? "Google Ads Consulting" : "Google Ads konsultant"}
               </Link>

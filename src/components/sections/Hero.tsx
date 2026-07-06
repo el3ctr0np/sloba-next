@@ -104,7 +104,7 @@ export function Hero({
 
           {/* Center: Hero photo */}
           <div className="order-1 lg:order-2 relative">
-            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-900 bg-white">
+            <div className="rounded-2xl overflow-hidden shadow-card-lg border border-gray-200 bg-white">
               <Image
                 src="/hero.webp"
                 alt="Slobodan Jelisavac — Ad Mixer Google Ads Event"

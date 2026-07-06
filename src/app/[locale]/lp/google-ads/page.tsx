@@ -451,7 +451,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             {/* Left: Content */}
             <div className="md:flex-1">
               {/* Micro-label */}
-              <p className="text-yellow-400 text-sm font-semibold mb-4 uppercase tracking-wider">
+              <p className="text-accent text-sm font-semibold mb-4 uppercase tracking-wider">
                 Google Ads ekspert — decenija iskustva
               </p>
 
@@ -466,7 +466,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 leading-tight">
                 Google Ads sistem koji pretvara budžet u{" "}
-                <span className="text-yellow-400">predvidljiv rast</span>
+                <span className="text-accent">predvidljiv rast</span>
               </h1>
 
               <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-xl">
@@ -479,7 +479,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
               <div className="grid grid-cols-3 gap-4 mb-10 max-w-lg">
                 {heroStats.map((stat) => (
                   <div key={stat.value}>
-                    <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">
+                    <p className="text-2xl md:text-3xl font-heading font-bold text-accent">
                       <AnimatedCounter value={stat.value} />
                     </p>
                     <p className="text-xs text-slate-400 mt-1">{stat.label}</p>
@@ -670,7 +670,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
           {/* Case study card — Soundbox Store */}
           <div className="max-w-4xl mx-auto bg-slate-900 text-white rounded-xl p-8 md:p-12 mb-10">
-            <p className="text-yellow-400 text-sm font-semibold mb-2 uppercase tracking-wider">
+            <p className="text-accent text-sm font-semibold mb-2 uppercase tracking-wider">
               Case Study — Soundbox Store
             </p>
             <h3 className="text-2xl font-heading font-bold mb-4">
@@ -697,7 +697,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
               </div>
               <div>
                 <p className="text-sm text-slate-400 mb-1">Ekspanzija</p>
-                <p className="text-2xl font-heading font-bold text-yellow-400">
+                <p className="text-2xl font-heading font-bold text-accent">
                   UK → EU
                 </p>
                 <p className="text-xs text-slate-500 mt-1">
@@ -949,7 +949,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 key={step.step}
                 className="flex items-start gap-5 bg-white border border-gray-200 rounded-xl p-6 shadow-card"
               >
-                <span className="flex-shrink-0 w-14 h-14 rounded-full bg-yellow-400 text-gray-900 flex items-center justify-center text-xl font-heading font-bold">
+                <span className="flex-shrink-0 w-14 h-14 rounded-full bg-accent text-gray-900 flex items-center justify-center text-xl font-heading font-bold">
                   {step.step}
                 </span>
                 <div>
@@ -1004,7 +1004,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                     <th
                       key={header || "category"}
                       className={`px-4 py-3 text-left font-heading font-semibold ${
-                        i === 1 ? "bg-yellow-500 text-gray-900" : ""
+                        i === 1 ? "bg-accent text-gray-900" : ""
                       }`}
                     >
                       {header}
@@ -1057,14 +1057,14 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 key={tier.name}
                 className={`rounded-lg p-6 relative flex flex-col ${
                   tier.popular
-                    ? "bg-white border-2 border-yellow-400 shadow-card"
+                    ? "bg-white border-2 border-accent shadow-card"
                     : tier.name.includes("Performance Marketing")
                       ? "bg-slate-900 text-white border-2 border-slate-700 shadow-card"
                       : "bg-white border border-gray-200 shadow-card"
                 }`}
               >
                 {tier.popular && (
-                  <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
+                  <span className="absolute -top-3 left-6 bg-accent text-gray-900 text-xs font-bold px-3 py-1 rounded-md">
                     Najčešći izbor
                   </span>
                 )}
@@ -1074,7 +1074,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 <p
                   className={`text-2xl font-heading font-bold mb-1 ${
                     tier.name.includes("Performance Marketing")
-                      ? "text-yellow-400"
+                      ? "text-accent"
                       : "text-primary"
                   }`}
                 >
@@ -1093,7 +1093,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                   <p
                     className={`text-xs font-medium mb-2 ${
                       tier.name.includes("Performance Marketing")
-                        ? "text-yellow-400/80"
+                        ? "text-accent/80"
                         : "text-primary/70"
                     }`}
                   >
@@ -1115,7 +1115,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                       <span
                         className={`flex-shrink-0 ${
                           tier.name.includes("Performance Marketing")
-                            ? "text-yellow-400"
+                            ? "text-accent"
                             : "text-green-600"
                         }`}
                       >
@@ -1136,7 +1136,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 {tier.funkyBadge && (
                   <div className="flex items-center justify-center gap-2 mb-4 py-2 px-3 rounded-md bg-slate-800 border border-slate-600">
                     <span className="text-xs text-slate-400">Isporučuje</span>
-                    <span className="text-sm font-semibold text-yellow-400">
+                    <span className="text-sm font-semibold text-accent">
                       Funky Enterprises
                     </span>
                   </div>
@@ -1157,7 +1157,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
           {/* Cost comparison note */}
           <div className="max-w-2xl mx-auto mt-10 bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">
             <p className="text-base text-gray-700 inline-flex items-center gap-2 justify-center w-full mb-3">
-              <Lightbulb size={20} strokeWidth={1.5} className="text-yellow-500 flex-shrink-0" />
+              <Lightbulb size={20} strokeWidth={1.5} className="text-accent flex-shrink-0" />
               <span>In-house PPC zaposleni košta <strong>€1.200-3.000+/mes</strong> (plata + alati + obuke). Sa mnom dobijate senior-level ekspertizu za deo te cene.</span>
             </p>
             <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-300/40 text-red-600 text-sm font-semibold px-4 py-2 rounded-full">
@@ -1253,11 +1253,11 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             </p>
 
             {/* Qualification badge */}
-            <div className="inline-flex items-center gap-3 bg-yellow-400/10 border border-yellow-400/30 rounded-lg px-5 py-3">
-              <Lightbulb size={18} strokeWidth={1.5} className="text-yellow-400 flex-shrink-0" />
+            <div className="inline-flex items-center gap-3 bg-accent/10 border border-accent/30 rounded-lg px-5 py-3">
+              <Lightbulb size={18} strokeWidth={1.5} className="text-accent flex-shrink-0" />
               <p className="text-sm text-yellow-200 text-left">
                 Trošite €2.000+ mesečno na Google Ads? Kvalifikujete se za{" "}
-                <span className="font-semibold text-yellow-400">besplatnu analizu naloga</span>{" "}
+                <span className="font-semibold text-accent">besplatnu analizu naloga</span>{" "}
                 sa konkretnim akcionim planom.
               </p>
             </div>

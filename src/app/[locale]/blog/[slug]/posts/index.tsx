@@ -39,6 +39,7 @@ import RsaGuideEN from "./rsa-vodic/en";
 import CtrVodicSR from "./ctr-vodic/sr";
 import CtrGuideEN from "./ctr-vodic/en";
 import GoogleAdsAuditChecklistSrbijaSR from "./google-ads-audit-checklist-srbija/sr";
+import GoogleAdsAuditChecklistSerbia2026EN from "./google-ads-audit-checklist-srbija/en";
 import GA4GoogleAdsIntegracijaSR from "./ga4-google-ads-integracija/sr";
 import GA4GoogleAdsIntegrationEN from "./ga4-google-ads-integracija/en";
 import StaJeRoasSR from "./sta-je-roas/sr";
@@ -47,6 +48,16 @@ import MerchantCenterSrbijaSetupSR from "./merchant-center-srbija-setup/sr";
 import MerchantCenterSerbiaSetupEN from "./merchant-center-srbija-setup/en";
 import ProductFeedSrpskiEcommerceSR from "./product-feed-srpski-ecommerce/sr";
 import ProductFeedSerbianEcommerceEN from "./product-feed-srpski-ecommerce/en";
+import KolikoKostaGoogleAdsKonsultantSR from "./koliko-kosta-google-ads-konsultant/sr";
+import GoogleAdsConsultantCostEN from "./koliko-kosta-google-ads-konsultant/en";
+import KakoIzabratiGoogleAdsKonsultantaSR from "./kako-izabrati-google-ads-konsultanta/sr";
+import HowToChooseGoogleAdsConsultantEN from "./kako-izabrati-google-ads-konsultanta/en";
+import PoasVsRoasSR from "./poas-vs-roas/sr";
+import PoasVsRoasEN from "./poas-vs-roas/en";
+import PreuzimanjeGoogleAdsNalogaSR from "./preuzimanje-google-ads-naloga/sr";
+import GoogleAdsAccountTakeoverChecklistEN from "./preuzimanje-google-ads-naloga/en";
+import OfflineConversionImportB2BSR from "./offline-conversion-import-b2b/sr";
+import OfflineConversionImportB2BEN from "./offline-conversion-import-b2b/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -80,6 +91,61 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "offline-conversion-import-b2b",
+    title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Tracking",
+    metaDescription:
+      "Kako da Google Ads algoritam uči na zatvorenim poslovima umesto na formama: GCLID vs Enhanced Conversions for Leads, setup za HubSpot, Salesforce i Pipedrive, vrednovanje MQL/SQL/Closed-won faza i česte greške.",
+    readingTime: "13 min",
+    content: <OfflineConversionImportB2BSR />
+  },
+  {
+    slug: "koliko-kosta-google-ads-konsultant",
+    title: "Koliko košta Google Ads konsultant u 2026? (senior vs agencija vs junior)",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Google Ads",
+    metaDescription:
+      "Transparentna cenovnica: junior freelancer €200-400/mes, senior konsultant €700-2.000/mes (€120-200/sat), agencija €500-2.000+ uz % od spend-a. Modeli naplate, tržišni benchmark i crvene zastavice kod jeftinih ponuda.",
+    readingTime: "14 min",
+    content: <KolikoKostaGoogleAdsKonsultantSR />
+  },
+  {
+    slug: "kako-izabrati-google-ads-konsultanta",
+    title: "Kako izabrati Google Ads konsultanta: 12 pitanja pre potpisivanja ugovora",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Google Ads",
+    metaDescription:
+      "12 konkretnih pitanja za proveru Google Ads konsultanta ili agencije pre potpisivanja: ko radi na nalogu, vlasništvo naloga, tracking, naplata. Zelene i crvene zastavice iz prakse.",
+    readingTime: "16 min",
+    content: <KakoIzabratiGoogleAdsKonsultantaSR />
+  },
+  {
+    slug: "poas-vs-roas",
+    title: "POAS umesto ROAS: Kako Profit-Based Bidding Menja eCommerce Oglašavanje",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Metrike",
+    metaDescription:
+      "POAS (Profit on Ad Spend) = profit ÷ spend. Zašto ROAS od 4x može biti gubitak, break-even matematika, praktična implementacija (feed, custom columns) i kada POAS nije potreban.",
+    readingTime: "14 min",
+    content: <PoasVsRoasSR />
+  },
+  {
+    slug: "preuzimanje-google-ads-naloga",
+    title: "Preuzimanje Google Ads Naloga od Agencije: Šta Proveriti u Prvoj Nedelji",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Audit",
+    metaDescription:
+      "Menjate Google Ads agenciju? Checklist šta proveriti PRE prekida (vlasništvo naloga, pristupi, izvoz istorije) i šta raditi u prvoj nedelji preuzimanja — bez naglih promena koje ugrožavaju rezultate.",
+    readingTime: "14 min",
+    content: <PreuzimanjeGoogleAdsNalogaSR />
+  },
   {
     slug: "product-feed-srpski-ecommerce",
     title: "Product Feed za Srpski eCommerce — Kompletan Vodič [2026]",
@@ -439,6 +505,61 @@ const srPosts: PostData[] = [
 
 const enPosts: PostData[] = [
   {
+    slug: "offline-conversion-import-b2b",
+    title: "Offline Conversion Import for B2B: Connect Google Ads to Your CRM",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Tracking",
+    metaDescription:
+      "Make the Google Ads algorithm learn from closed deals instead of form fills: GCLID vs Enhanced Conversions for Leads, setup for HubSpot, Salesforce and Pipedrive, MQL/SQL/Closed-won valuation, and common mistakes.",
+    readingTime: "13 min",
+    content: <OfflineConversionImportB2BEN />
+  },
+  {
+    slug: "google-ads-consultant-cost-2026",
+    title: "How Much Does a Google Ads Consultant Cost in 2026? (Senior vs Agency vs Junior)",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Google Ads",
+    metaDescription:
+      "A transparent cost breakdown: junior freelancer $250-500/mo, senior consultant $800-2,500/mo ($150-250/hr), agency $600-2,500+ plus % of spend. Pricing models, market benchmarks, and red flags in cheap offers.",
+    readingTime: "14 min",
+    content: <GoogleAdsConsultantCostEN />
+  },
+  {
+    slug: "how-to-choose-google-ads-consultant",
+    title: "How to Choose a Google Ads Consultant: 12 Questions to Ask Before Signing",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Google Ads",
+    metaDescription:
+      "12 vetting questions to ask a Google Ads consultant or agency before signing: who actually works on the account, account ownership, tracking, billing models. Green and red flags from practice.",
+    readingTime: "16 min",
+    content: <HowToChooseGoogleAdsConsultantEN />
+  },
+  {
+    slug: "poas-vs-roas",
+    title: "POAS vs ROAS: Why Profit-Based Bidding Changes eCommerce Advertising",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Metrics",
+    metaDescription:
+      "POAS (Profit on Ad Spend) = profit ÷ spend. Why a 4x ROAS can still be a loss, break-even math, practical implementation (feed, custom columns), and when POAS isn't needed.",
+    readingTime: "14 min",
+    content: <PoasVsRoasEN />
+  },
+  {
+    slug: "google-ads-account-takeover-checklist",
+    title: "Taking Over a Google Ads Account from an Agency: First-Week Checklist",
+    date: "2026-07-06",
+    dateModified: "2026-07-06",
+    category: "Audit",
+    metaDescription:
+      "Switching Google Ads agencies? What to verify BEFORE you cut ties (account ownership, access, history export) and exactly what to do in your first week — without sudden changes that put results at risk.",
+    readingTime: "16 min",
+    content: <GoogleAdsAccountTakeoverChecklistEN />
+  },
+  {
     slug: "product-feed-serbian-ecommerce",
     title: "Product Feed for Serbian eCommerce — Complete Guide [2026]",
     date: "2026-07-04",
@@ -459,6 +580,17 @@ const enPosts: PostData[] = [
       "Google Merchant Center setup guide for the Serbian market: account creation, verification, product feed attributes, feed delivery methods, common disapproval reasons, shipping/tax settings.",
     readingTime: "14 min",
     content: <MerchantCenterSerbiaSetupEN />
+  },
+  {
+    slug: "google-ads-audit-checklist-serbia-2026",
+    title: "Google Ads Audit Checklist 2026 — 50 Points [Serbia]",
+    date: "2026-05-09",
+    dateModified: "2026-05-09",
+    category: "Google Ads Audit",
+    metaDescription:
+      "A concrete 50-item checklist for auditing Google Ads accounts in Serbia. 10 categories with real examples — eCommerce, B2B, lead-gen. Scoring system and a 30-minute quick audit.",
+    readingTime: "18 min",
+    content: <GoogleAdsAuditChecklistSerbia2026EN />
   },
   {
     slug: "ga4-google-ads-integration",

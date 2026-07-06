@@ -163,7 +163,7 @@ export function Testimonials({
       <div className={`bg-slate-900 text-white rounded-2xl p-8 md:p-10 ${className}`}>
         <div className="flex gap-1 mb-4">
           {[...Array(5)].map((_, i) => (
-            <span key={i} className="text-yellow-400 text-lg">★</span>
+            <span key={i} className="text-accent text-lg">★</span>
           ))}
         </div>
         <p className="text-xl md:text-2xl font-heading font-semibold leading-snug mb-6">
@@ -193,7 +193,7 @@ export function Testimonials({
           <div key={t.slug} className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
             <div className="flex gap-1 mb-2">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-yellow-400 text-sm">★</span>
+                <span key={i} className="text-accent text-sm">★</span>
               ))}
             </div>
             <p className="text-sm text-gray-700 mb-3 leading-relaxed line-clamp-3">
@@ -230,7 +230,7 @@ export function Testimonials({
           >
             <div className="flex gap-1 mb-3">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-yellow-400">★</span>
+                <span key={i} className="text-accent">★</span>
               ))}
             </div>
             {t.headline && (

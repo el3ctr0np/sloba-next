@@ -73,7 +73,7 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
                 {card.title}
               </h3>
               <p className="text-gray-500 mb-4">{card.subtitle}</p>
-              <ul className="space-y-2 mb-6 flex-1">
+              <ul className="space-y-2 mb-6">
                 {card.items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-gray-700 text-sm">
                     <svg
@@ -89,7 +89,7 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
                   </li>
                 ))}
               </ul>
-              <Button href={card.ctaHref} variant="secondary" className="w-full">
+              <Button href={card.ctaHref} variant="secondary" className="w-full mt-auto">
                 {card.ctaText}
               </Button>
             </Card>

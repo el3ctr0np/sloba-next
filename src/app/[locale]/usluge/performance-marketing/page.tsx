@@ -554,7 +554,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
                 href="https://www.funky.enterprises/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-300 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 bg-accent text-gray-900 font-semibold rounded-lg hover:bg-accent-dark transition-colors"
               >
                 Funky Enterprises →
               </a>
@@ -888,7 +888,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
               href="https://www.funky.enterprises/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-300 transition-colors text-lg"
+              className="inline-flex items-center justify-center px-8 py-4 bg-accent text-gray-900 font-semibold rounded-lg hover:bg-accent-dark transition-colors text-lg"
             >
               {locale === "en"
                 ? "Visit Funky Enterprises →"

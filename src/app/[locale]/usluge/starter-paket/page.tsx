@@ -527,7 +527,7 @@ export default async function StarterPaketPage({ params }: Props) {
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">
+              <li className="text-accent font-medium">
                 {isEn ? "Kickstart" : "Kickstart paket"}
               </li>
             </ol>
@@ -779,8 +779,8 @@ export default async function StarterPaketPage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}
@@ -803,7 +803,7 @@ export default async function StarterPaketPage({ params }: Props) {
           <h2 className="text-3xl font-heading font-bold mb-4">
             {isEn ? "Pricing" : "Cena"}
           </h2>
-          <div className="bg-white border-2 border-yellow-400 rounded-xl p-8 shadow-card mt-8">
+          <div className="bg-white border-2 border-accent rounded-xl p-8 shadow-card mt-8">
             <h3 className="text-xl font-heading font-bold mb-2">
               Google Ads Kickstart
             </h3>

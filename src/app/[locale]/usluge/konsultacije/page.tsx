@@ -512,7 +512,7 @@ export default async function KonsultacijePage({ params }: Props) {
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">
+              <li className="text-accent font-medium">
                 {locale === "en" ? "Consultations" : "Konsultacije"}
               </li>
             </ol>
@@ -658,8 +658,8 @@ export default async function KonsultacijePage({ params }: Props) {
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           {/* Standard Session */}
-          <div className="bg-white border-2 border-yellow-400 rounded-lg p-6 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
+          <div className="bg-white border-2 border-accent rounded-lg p-6 shadow-card relative">
+            <span className="absolute -top-3 left-6 bg-accent text-gray-900 text-xs font-bold px-3 py-1 rounded-md">
               {locale === "en" ? "Most Popular" : "Najpopularniji"}
             </span>
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
@@ -771,7 +771,7 @@ export default async function KonsultacijePage({ params }: Props) {
             <h3 className="text-xl font-heading font-bold mb-1">
               {locale === "en" ? "Ongoing Advisory" : "Kontinuirano savetovanje"}
             </h3>
-            <p className="text-2xl font-heading font-bold text-yellow-400 mb-3">
+            <p className="text-2xl font-heading font-bold text-accent mb-3">
               {locale === "en" ? "on request" : "na upit"}
             </p>
             <p className="text-slate-300 text-sm mb-4">
@@ -781,29 +781,29 @@ export default async function KonsultacijePage({ params }: Props) {
             </p>
             <ul className="space-y-2 text-sm text-slate-300 mb-5">
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Monthly allocated hours"
                   : "Mesečno alociranih sati"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 Priority scheduling
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Slack/email access for quick questions"
                   : "Slack/email pristup za brza pitanja"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Ad-hoc consultations as needed"
                   : "Ad-hoc konsultacije po potrebi"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Flexible extension as needed"
                   : "Fleksibilno produženje po potrebi"}
@@ -838,8 +838,8 @@ export default async function KonsultacijePage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}

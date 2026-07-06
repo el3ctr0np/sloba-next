@@ -390,7 +390,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
       <section className="bg-slate-900 text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Breadcrumb Navigation */}
-          <nav className="text-sm mb-8 text-yellow-400">
+          <nav className="text-sm mb-8 text-accent">
             <Link href="/" className="hover:underline">
               {locale === "en" ? "Home" : "Početna"}
             </Link>
@@ -564,7 +564,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
             <ul className="space-y-3 text-gray-700">
               {reasons.map((reason) => (
                 <li key={reason} className="flex items-start">
-                  <span className="text-yellow-500 mr-3 mt-1">✓</span>
+                  <span className="text-accent mr-3 mt-1">✓</span>
                   <span>{reason}</span>
                 </li>
               ))}
@@ -639,7 +639,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
             <ul className="space-y-3 text-gray-700">
               {idealClients.map((item) => (
                 <li key={item} className="flex items-start">
-                  <span className="text-yellow-500 mr-3 mt-1">✓</span>
+                  <span className="text-accent mr-3 mt-1">✓</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -777,7 +777,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
             <div className="text-sm text-gray-400 mt-8 space-x-3">
               <Link
                 href="/usluge/google-shopping"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-accent transition-colors"
               >
                 {locale === "en"
                   ? "Google Shopping campaigns"
@@ -786,14 +786,14 @@ export default async function PerformanceMaxPage({ params }: Props) {
               <span>•</span>
               <Link
                 href="/usluge/search-kampanje"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-accent transition-colors"
               >
                 {locale === "en" ? "Search campaigns" : "Search kampanje"}
               </Link>
               <span>•</span>
               <Link
                 href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }}
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-accent transition-colors"
               >
                 {locale === "en"
                   ? "Performance Max guide"
@@ -802,7 +802,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
               <span>•</span>
               <Link
                 href="/usluge/google-ads-upravljanje"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-accent transition-colors"
               >
                 {locale === "en"
                   ? "Google Ads management"
@@ -811,14 +811,14 @@ export default async function PerformanceMaxPage({ params }: Props) {
               <span>•</span>
               <Link
                 href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }}
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-accent transition-colors"
               >
                 {locale === "en" ? "Smart Bidding guide" : "Smart Bidding vodič"}
               </Link>
               <span>•</span>
               <Link
                 href="/"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-accent transition-colors"
               >
                 {locale === "en" ? "Google Ads Consulting" : "Google Ads usluge"}
               </Link>

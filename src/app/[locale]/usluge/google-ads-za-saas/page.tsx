@@ -457,7 +457,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">
+              <li className="text-accent font-medium">
                 {locale === "en" ? "Google Ads for SaaS" : "Google Ads za SaaS"}
               </li>
             </ol>
@@ -478,7 +478,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
             {/* Trust Badges */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               <div className="bg-slate-800 px-4 py-3 rounded-lg border border-slate-700">
-                <div className="text-yellow-400 font-semibold text-sm">
+                <div className="text-accent font-semibold text-sm">
                   {locale === "en"
                     ? "10+ years experience"
                     : "10+ godina iskustva"}
@@ -490,7 +490,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
                 </div>
               </div>
               <div className="bg-slate-800 px-4 py-3 rounded-lg border border-slate-700">
-                <div className="text-yellow-400 font-semibold text-sm">
+                <div className="text-accent font-semibold text-sm">
                   {locale === "en"
                     ? "−35% CAC reduction"
                     : "−35% smanjenje CAC-a"}
@@ -502,7 +502,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
                 </div>
               </div>
               <div className="bg-slate-800 px-4 py-3 rounded-lg border border-slate-700">
-                <div className="text-yellow-400 font-semibold text-sm">
+                <div className="text-accent font-semibold text-sm">
                   {locale === "en"
                     ? "B2B SaaS specialization"
                     : "B2B SaaS specijalizacija"}
@@ -614,7 +614,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
             <ul className="space-y-3 text-gray-700">
               {idealClients.map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-yellow-600 mt-1 flex-shrink-0">✓</span>
+                  <span className="text-accent mt-1 flex-shrink-0">✓</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -627,7 +627,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
               </strong>{" "}
               {industries.join(", ")}.
             </div>
-            <div className="text-base text-gray-500 mt-3 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+            <div className="text-base text-gray-500 mt-3 bg-yellow-50 border-l-4 border-accent p-4 rounded">
               <strong>
                 {locale === "en" ? "Note:" : "Napomena:"}
               </strong>{" "}
@@ -661,8 +661,8 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}
@@ -730,7 +730,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
               <ul className="space-y-3 text-gray-700">
                 {result.items.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="text-yellow-600 mt-1 flex-shrink-0">
+                    <span className="text-accent mt-1 flex-shrink-0">
                       →
                     </span>
                     <span>{item}</span>
@@ -844,42 +844,42 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           <div className="text-sm text-slate-400 space-x-4">
             <Link
               href="/usluge/remarketing"
-              className="hover:text-yellow-400 transition-colors underline"
+              className="hover:text-accent transition-colors underline"
             >
               {locale === "en" ? "Remarketing" : "Remarketing"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link
               href="/usluge/google-ads-za-b2b"
-              className="hover:text-yellow-400 transition-colors underline"
+              className="hover:text-accent transition-colors underline"
             >
               {locale === "en" ? "Google Ads for B2B" : "Google Ads za B2B"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link
               href="/usluge/search-kampanje"
-              className="hover:text-yellow-400 transition-colors underline"
+              className="hover:text-accent transition-colors underline"
             >
               {locale === "en" ? "Search campaigns" : "Search kampanje"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link
               href="/usluge/google-ads-audit"
-              className="hover:text-yellow-400 transition-colors underline"
+              className="hover:text-accent transition-colors underline"
             >
               {locale === "en" ? "Deep Audit" : "Deep Audit"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link
               href="/usluge/starter-paket"
-              className="hover:text-yellow-400 transition-colors underline"
+              className="hover:text-accent transition-colors underline"
             >
               {locale === "en" ? "Kickstart" : "Kickstart"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link
               href="/case-studies"
-              className="hover:text-yellow-400 transition-colors underline"
+              className="hover:text-accent transition-colors underline"
             >
               {locale === "en" ? "Case Studies" : "Case Studies"}
             </Link>

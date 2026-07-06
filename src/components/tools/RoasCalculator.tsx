@@ -90,7 +90,7 @@ export default function RoasCalculator({ locale = "sr" }: RoasCalculatorProps) {
     status === "good"
       ? "bg-green-50 border-green-400 text-green-900"
       : status === "ok"
-      ? "bg-yellow-50 border-yellow-400 text-yellow-900"
+      ? "bg-yellow-50 border-accent text-yellow-900"
       : "bg-red-50 border-red-400 text-red-900";
 
   const statusLabel =
@@ -179,13 +179,13 @@ export default function RoasCalculator({ locale = "sr" }: RoasCalculatorProps) {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
-                <p className="text-3xl md:text-4xl font-heading font-bold text-yellow-400 mb-1">
+                <p className="text-3xl md:text-4xl font-heading font-bold text-accent mb-1">
                   {ratio.toFixed(2)}×
                 </p>
                 <p className="text-xs text-slate-400 mb-0">{t.ratioLabel}</p>
               </div>
               <div>
-                <p className="text-3xl md:text-4xl font-heading font-bold text-yellow-400 mb-1">
+                <p className="text-3xl md:text-4xl font-heading font-bold text-accent mb-1">
                   {percent.toFixed(0)}%
                 </p>
                 <p className="text-xs text-slate-400 mb-0">{t.percentLabel}</p>

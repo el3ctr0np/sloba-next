@@ -485,7 +485,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
               <li aria-hidden="true">/</li>
               <li><Link href="/usluge" className="hover:text-white transition-colors">{locale === "en" ? "Services" : "Usluge"}</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">{locale === "en" ? "Google Ads for eCommerce" : "Google Ads za eCommerce"}</li>
+              <li className="text-accent font-medium">{locale === "en" ? "Google Ads for eCommerce" : "Google Ads za eCommerce"}</li>
             </ol>
           </nav>
 
@@ -503,19 +503,19 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
 
             <div className="flex flex-wrap gap-6 mb-8">
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-slate-300">{locale === "en" ? "10+ years experience" : "10+ godina iskustva"}</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-slate-300">{locale === "en" ? "5x+ ROAS in 90 days" : "5x+ ROAS u 90 dana"}</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-slate-300">Shopify, WooCommerce, Magento</span>
@@ -622,7 +622,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
               </strong>
               <p className="mt-2">{platforms.join(", ")}</p>
             </div>
-            <div className="text-base text-gray-500 mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+            <div className="text-base text-gray-500 mt-4 bg-yellow-50 border-l-4 border-accent p-4 rounded">
               <strong>{locale === "en" ? "Note:" : "Napomena:"}</strong>{" "}
               {locale === "en"
                 ? "If you have fewer than 50 products or your store just launched, full management is overkill — a consultation ($200/hr) or Kickstart is a better first step."
@@ -654,8 +654,8 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}
@@ -697,7 +697,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         <div className="max-w-4xl mx-auto overflow-x-auto">
           <table className="w-full border-collapse bg-white rounded-xl shadow-card overflow-hidden">
             <thead>
-              <tr className="bg-gray-900 text-white">
+              <tr className="bg-slate-900 text-white">
                 <th className="text-left p-4 font-heading font-semibold"></th>
                 <th className="text-left p-4 font-heading font-semibold">
                   <GlossaryLink slug="roas" className="text-white border-white/40 hover:border-white">ROAS</GlossaryLink>
@@ -851,27 +851,27 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
             </Button>
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
-            <Link href="/usluge/google-shopping" className="hover:text-yellow-400 transition-colors underline">
+            <Link href="/usluge/google-shopping" className="hover:text-accent transition-colors underline">
               {locale === "en" ? "Google Shopping campaigns" : "Google Shopping kampanje"}
             </Link>
             <span aria-hidden="true">•</span>
-            <Link href="/usluge/performance-max" className="hover:text-yellow-400 transition-colors underline">
+            <Link href="/usluge/performance-max" className="hover:text-accent transition-colors underline">
               {locale === "en" ? "Performance Max" : "Performance Max"}
             </Link>
             <span aria-hidden="true">•</span>
-            <Link href="/usluge/remarketing" className="hover:text-yellow-400 transition-colors underline">
+            <Link href="/usluge/remarketing" className="hover:text-accent transition-colors underline">
               {locale === "en" ? "Remarketing" : "Remarketing"}
             </Link>
             <span aria-hidden="true">•</span>
-            <Link href="/usluge/google-ads-audit" className="hover:text-yellow-400 transition-colors underline">
+            <Link href="/usluge/google-ads-audit" className="hover:text-accent transition-colors underline">
               {locale === "en" ? "Deep Audit" : "Deep Audit"}
             </Link>
             <span aria-hidden="true">•</span>
-            <Link href="/usluge/starter-paket" className="hover:text-yellow-400 transition-colors underline">
+            <Link href="/usluge/starter-paket" className="hover:text-accent transition-colors underline">
               {locale === "en" ? "Kickstart" : "Kickstart"}
             </Link>
             <span aria-hidden="true">•</span>
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="hover:text-yellow-400 transition-colors underline">
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="hover:text-accent transition-colors underline">
               {locale === "en" ? "Google Shopping guide" : "Google Shopping vodič"}
             </Link>
           </div>

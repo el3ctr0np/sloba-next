@@ -695,7 +695,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">
+              <li className="text-accent font-medium">
                 {locale === "en" ? "Google Ads Management" : "Google Ads upravljanje"}
               </li>
             </ol>
@@ -732,7 +732,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <div className="grid grid-cols-3 gap-6 mb-10 max-w-lg">
               {results.map((result) => (
                 <div key={result.label}>
-                  <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">
+                  <p className="text-2xl md:text-3xl font-heading font-bold text-accent">
                     {result.value}
                   </p>
                   <p className="text-xs text-slate-400 mt-1">
@@ -1050,8 +1050,8 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}
@@ -1082,9 +1082,9 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               : "Transparentne cene bez skrivenih troškova."}
           </p>
         </div>
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-6 items-stretch">
           {/* Card 1 — Strategy & support */}
-          <Card className="h-full">
+          <div className="flex flex-col h-full bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-card relative">
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
               {locale === "en" ? "START WITH CLARITY" : "POČNITE SA JASNOM SLIKOM"}
             </p>
@@ -1117,14 +1117,14 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
                 {locale === "en" ? "No monthly commitment" : "Bez mesečne obaveze"}
               </li>
             </ul>
-            <Button href="/kontakt" variant="primary">
+            <Button href="/kontakt" variant="secondary" className="mt-auto w-full">
               {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
-          </Card>
+          </div>
 
           {/* Card 2 — eCommerce Growth (highlighted) */}
-          <div className="bg-white border-2 border-yellow-400 rounded-lg p-6 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
+          <div className="flex flex-col h-full bg-white border-2 border-accent rounded-xl p-6 md:p-8 shadow-card relative">
+            <span className="absolute -top-3 left-6 bg-accent text-gray-900 text-xs font-bold px-3 py-1 rounded-md">
               {locale === "en" ? "Most popular" : "Najpopularniji"}
             </span>
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
@@ -1169,17 +1169,17 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "No long-term contracts" : "Bez ugovora"}
+                {locale === "en" ? "Quarterly strategy plan" : "Kvartalni strategijski plan"}
               </li>
             </ul>
-            <Button href="/kontakt" variant="secondary">
+            <Button href="/kontakt" variant="secondary" className="mt-auto w-full">
               {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
             </Button>
           </div>
 
           {/* Card 3 — Performance Marketing via Funky */}
-          <div className="bg-slate-900 text-white border-2 border-slate-700 rounded-lg p-6 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-white text-slate-900 text-xs font-bold px-3 py-1 rounded">
+          <div className="flex flex-col h-full bg-slate-900 text-white border-2 border-slate-700 rounded-xl p-6 md:p-8 shadow-card relative">
+            <span className="absolute -top-3 left-6 bg-white text-slate-900 text-xs font-bold px-3 py-1 rounded-md">
               {locale === "en" ? "Full-team" : "Ceo tim"}
             </span>
             <p className="text-xs uppercase tracking-wider text-slate-400 mb-2">
@@ -1203,19 +1203,19 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             </p>
             <ul className="space-y-2 text-sm text-slate-300 mb-5">
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en" ? "GTM strategy" : "GTM strategija"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en" ? "Brand + creative" : "Brend + kreativa"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en" ? "Google + Meta + SEO + CRO" : "Google + Meta + SEO + CRO"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en" ? "Senior-led team" : "Senior-led tim"}
               </li>
             </ul>
@@ -1223,7 +1223,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               href="https://www.funky.enterprises/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary inline-block text-center w-full"
+              className="inline-block text-center w-full mt-auto border border-slate-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-slate-800 hover:border-slate-500"
             >
               {locale === "en"
                 ? "Learn more about Funky Enterprises"

@@ -75,7 +75,7 @@ export function ExitIntentPopup({ locale }: ExitIntentPopupProps) {
             >
               <X size={20} />
             </button>
-            <p className="text-yellow-400 text-xs font-semibold uppercase tracking-wider mb-1">
+            <p className="text-accent text-xs font-semibold uppercase tracking-wider mb-1">
               Besplatan vodič
             </p>
             <h3 className="text-xl font-heading font-bold pr-8">
@@ -99,7 +99,7 @@ export function ExitIntentPopup({ locale }: ExitIntentPopupProps) {
                   <CheckCircle2
                     size={18}
                     strokeWidth={1.5}
-                    className="text-yellow-500 flex-shrink-0 mt-0.5"
+                    className="text-accent flex-shrink-0 mt-0.5"
                   />
                   <span>{step}</span>
                 </div>

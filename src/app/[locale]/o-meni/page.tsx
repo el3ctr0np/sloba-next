@@ -355,7 +355,7 @@ export default async function AboutPage({ params }: Props) {
               <div className="flex flex-wrap gap-4 mb-8 text-sm text-slate-300">
                 <div className="flex items-center gap-2">
                   <svg
-                    className="w-5 h-5 text-blue-400"
+                    className="w-5 h-5 text-primary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -371,7 +371,7 @@ export default async function AboutPage({ params }: Props) {
                 </div>
                 <div className="flex items-center gap-2">
                   <svg
-                    className="w-5 h-5 text-blue-400"
+                    className="w-5 h-5 text-primary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -387,7 +387,7 @@ export default async function AboutPage({ params }: Props) {
                 </div>
                 <div className="flex items-center gap-2">
                   <svg
-                    className="w-5 h-5 text-blue-400"
+                    className="w-5 h-5 text-primary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -491,7 +491,7 @@ export default async function AboutPage({ params }: Props) {
                     )}
                   </div>
                   <div className="pb-8">
-                    <span className="text-sm font-semibold text-yellow-600 uppercase tracking-wide">
+                    <span className="text-sm font-semibold text-accent uppercase tracking-wide">
                       {step.period}
                     </span>
                     <h3 className="text-xl font-heading font-bold mt-1 mb-2">

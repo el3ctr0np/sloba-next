@@ -474,7 +474,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">
+              <li className="text-accent font-medium">
                 {locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan"}
               </li>
             </ol>
@@ -746,8 +746,8 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                 <span
                   className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
                     index === processSteps.length - 1
-                      ? "bg-yellow-400 text-gray-900"
-                      : "bg-gray-900 text-white"
+                      ? "bg-accent text-gray-900"
+                      : "bg-slate-900 text-white"
                   }`}
                 >
                   {step.number}
@@ -789,8 +789,8 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         </div>
         <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Standard audit */}
-          <div className="bg-white border-2 border-yellow-400 rounded-lg p-6 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded">
+          <div className="bg-white border-2 border-accent rounded-lg p-6 shadow-card relative">
+            <span className="absolute -top-3 left-6 bg-accent text-gray-900 text-xs font-bold px-3 py-1 rounded-md">
               {locale === "en" ? "Most Popular" : "Najpopularniji"}
             </span>
             <h3 className="text-xl font-heading font-bold mb-2">
@@ -852,7 +852,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                 ? "Custom audit (on request)"
                 : "Custom audit (na upit)"}
             </h3>
-            <p className="text-2xl font-heading font-bold text-yellow-400 mb-3">
+            <p className="text-2xl font-heading font-bold text-accent mb-3">
               {locale === "en" ? "Pricing on request" : "Cena na upit"}
             </p>
             <p className="text-slate-300 text-sm mb-4">
@@ -862,31 +862,31 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             </p>
             <ul className="space-y-2 text-sm text-slate-300 mb-5">
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Multi-channel analysis (Google, Meta, Microsoft)"
                   : "Multi-channel analiza (Google, Meta, Microsoft)"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Deeper competitive and market analysis"
                   : "Dublja analiza konkurencije i tržišta"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Strategic recommendations for scaling"
                   : "Strategijske preporuke za skaliranje"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Live presentation + Q&A session"
                   : "Live prezentacija + Q&A sesija"}
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-yellow-400 flex-shrink-0">✓</span>
+                <span className="text-accent flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Premium reporting with detailed charts"
                   : "Premium reporting sa detaljnim grafovima"}
@@ -902,7 +902,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
 
         {/* Discount note */}
         <div className="max-w-3xl mx-auto mt-8">
-          <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5">
+          <div className="bg-yellow-50 border-2 border-accent rounded-xl p-5">
             <p className="text-base text-gray-700 font-medium">
               <span className="font-heading font-bold text-gray-900">
                 {locale === "en" ? "Bonus:" : "Bonus:"}

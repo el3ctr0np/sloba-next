@@ -456,7 +456,7 @@ export default async function RemarketingPage({ params }: Props) {
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-yellow-400 font-medium">Remarketing</li>
+              <li className="text-accent font-medium">Remarketing</li>
             </ol>
           </nav>
 
