@@ -104,6 +104,12 @@ export const routing = defineRouting({
       en: "/audit"
     },
 
+    // Profit-Leak Check (interactive scored diagnostic front-door)
+    "/profit-provera": {
+      sr: "/profit-provera",
+      en: "/profit-leak-check"
+    },
+
     // Landing Pages (Meta Ads - noindex)
     "/lp/google-ads": {
       sr: "/lp/google-ads",

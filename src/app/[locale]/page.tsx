@@ -144,9 +144,9 @@ export default async function Home({ params }: Props) {
   const heroProps =
     locale === "en"
       ? {
-          title: "Your Google Ads partner, not an agency",
+          title: "Your Google Ads report looks great. Does your bank account agree?",
           subtitle:
-            "A decade of experience. 3x UK Search Awards. Direct work from strategy to execution. No juniors, no middlemen.",
+            "I'm Slobodan — a senior Google Ads consultant. On the accounts I take over, I usually find 20–40% of the budget doing nothing, and tracking that overstates the results. I fix the truth first, then scale what actually earns.",
           ctaText: "Book a free 20-minute call",
           ctaHref: "/kontakt",
           secondaryCtaText: "View Results",
@@ -160,9 +160,9 @@ export default async function Home({ params }: Props) {
           ],
         }
       : {
-          title: "Vaš Google Ads partner, ne agencija",
+          title: "Vaš Google Ads izveštaj izgleda odlično. Da li i vaš račun?",
           subtitle:
-            "Decenija iskustva, osvojene 3x UK Search Awards. Direktan rad od strategije do izvršenja. Bez juniora, bez posrednika.",
+            "Ja sam Slobodan — senior Google Ads konsultant. Na nalozima koje preuzmem najčešće nađem 20–40% budžeta koji ne radi ništa, i merenje koje prijavljuje bolje rezultate nego što ih ima. Prvo sredim istinu, pa skaliram ono što stvarno zarađuje.",
           ctaText: "Zakažite besplatnih 20 minuta",
           ctaHref: "/kontakt",
           secondaryCtaText: "Pogledajte rezultate",

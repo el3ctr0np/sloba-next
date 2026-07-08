@@ -45,10 +45,10 @@ export function HeroV1({
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 leading-[1.05] mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold text-slate-900 leading-[1.12] tracking-tight mb-6">
               {title}
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed mb-8">
+            <p className="text-base md:text-lg text-gray-600 max-w-xl leading-relaxed mb-8">
               {subtitle}
             </p>
 
