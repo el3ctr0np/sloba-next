@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import { ProfitLeakCheck } from "./ProfitLeakCheck";
+import { ProfitTool } from "./ProfitTool";
 import { ShieldCheck, Mail, Gauge } from "lucide-react";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -10,11 +10,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Profit-Leak Check — How Much Is Your Account Leaking?"
-      : "Google Ads Profit-Leak Check — Koliko vaš nalog curi? | Slobodan Jelisavac",
+      ? "Google Ads Waste Calculator — How Much Budget Is Leaking?"
+      : "Google Ads Kalkulator Curenja — Koliko Budžeta Curi? | Slobodan Jelisavac",
     description: isEn
-      ? "Free 90-second diagnostic: 6 questions to estimate how much of your Google Ads budget is leaking — plus a personal breakdown of the exact leak points by email within 24 hours."
-      : "Besplatna procena za 90 sekundi: 6 pitanja za procenu koliko vašeg Google Ads budžeta curi — plus lični pregled tačnih tačaka curenja na email u roku od 24h.",
+      ? "Free calculator: enter your monthly spend and see roughly how many dollars leak each month — with a transparent formula and a detailed breakdown by email within 24 hours."
+      : "Besplatan kalkulator: unesite mesečni budžet i vidite otprilike koliko evra curi mesečno — uz transparentnu formulu i detaljan pregled na email u roku od 24h.",
     locale,
     path: "/profit-leak-check",
     srPath: "/profit-provera",
@@ -29,13 +29,13 @@ export default async function ProfitLeakPage({ params }: Props) {
     ? [
         {
           icon: <Gauge size={22} strokeWidth={1.5} className="text-gray-900" />,
-          title: "90 seconds, 6 questions",
-          description: "No account access needed — just answer honestly.",
+          title: "Under a minute, no account access",
+          description: "Enter your numbers, or answer 6 quick questions instead.",
         },
         {
           icon: <ShieldCheck size={22} strokeWidth={1.5} className="text-gray-900" />,
-          title: "Instant leak estimate",
-          description: "A deterministic score based on patterns from real audits.",
+          title: "A concrete number, transparent math",
+          description: "A deterministic estimate from real-audit patterns — formula shown.",
         },
         {
           icon: <Mail size={22} strokeWidth={1.5} className="text-gray-900" />,
@@ -46,13 +46,13 @@ export default async function ProfitLeakPage({ params }: Props) {
     : [
         {
           icon: <Gauge size={22} strokeWidth={1.5} className="text-gray-900" />,
-          title: "90 sekundi, 6 pitanja",
-          description: "Ne treba pristup nalogu — samo iskreni odgovori.",
+          title: "Za manje od minuta, bez pristupa nalogu",
+          description: "Unesite svoje brojke, ili odgovorite na 6 pitanja umesto toga.",
         },
         {
           icon: <ShieldCheck size={22} strokeWidth={1.5} className="text-gray-900" />,
-          title: "Odmah procena curenja",
-          description: "Deterministički skor baziran na obrascima iz stvarnih audita.",
+          title: "Konkretna cifra, transparentna matematika",
+          description: "Deterministička procena iz obrazaca stvarnih audita — formula prikazana.",
         },
         {
           icon: <Mail size={22} strokeWidth={1.5} className="text-gray-900" />,
@@ -84,8 +84,8 @@ export default async function ProfitLeakPage({ params }: Props) {
           </h1>
           <p className="text-lg text-slate-300 mb-6 leading-relaxed">
             {isEn
-              ? "6 questions, 90 seconds. I build this leak estimate from patterns in real audits — not a generic widget."
-              : "6 pitanja, 90 sekundi. Procenu curenja pravim na osnovu obrazaca iz stvarnih audita — ne generički widget."}
+              ? "Enter your numbers and see the estimate in seconds — or answer 6 quick questions if you don't have them handy. Built from patterns in real audits, with the formula shown. Not a generic widget."
+              : "Unesite svoje brojke i vidite procenu za nekoliko sekundi — ili odgovorite na 6 pitanja ako brojke nisu pri ruci. Pravljeno na osnovu obrazaca iz stvarnih audita, uz prikazanu formulu. Ne generički widget."}
           </p>
           <p className="text-sm text-slate-400 max-w-xl mx-auto">
             {isEn
@@ -98,7 +98,7 @@ export default async function ProfitLeakPage({ params }: Props) {
       {/* Diagnostic */}
       <section className="py-14 md:py-20 px-4 md:px-8 bg-gray-50">
         <div className="max-w-2xl mx-auto">
-          <ProfitLeakCheck locale={locale} />
+          <ProfitTool locale={locale} />
         </div>
       </section>
 
