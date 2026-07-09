@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return buildMetadata({
-      title: "Google Ads Consultant, 10+ Years | Slobodan Jelisavac",
-      description: "Expert Google Ads management for eCommerce, B2B and SaaS brands. 3.7x average ROAS, 50+ brands across 6+ countries. Book a free consultation.",
+      title: "Digital Jelisavac — Senior Google Ads Agency | Slobodan Jelisavac",
+      description: "Digital Jelisavac is a senior-led boutique Google Ads agency, led personally by Slobodan Jelisavac (10+ years, 3x UK Search Awards). Search, Shopping and Performance Max, managed to profit.",
       locale,
       path: "",
       ogImage: "/og/homepage.png",
@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "Google Ads Srbija - Partner, Ne Agencija | S. Jelisavac",
-    description: "Nezavisni Google Ads konsultant, 10+ godina iskustva, 50+ brendova (Srbija, UK, EU). Search, Shopping i Performance Max. Bez onboarding naknada.",
+    title: "Digital Jelisavac - Senior Google Ads Agencija | S. Jelisavac",
+    description: "Digital Jelisavac je senior-led boutique Google Ads agencija koju lično vodi Slobodan Jelisavac (10+ godina, 3x UK Search Awards). Search, Shopping i Performance Max, optimizovani na profit.",
     locale,
     path: "",
     ogImage: "/og/homepage.png",
@@ -46,9 +46,9 @@ export default async function Home({ params }: Props) {
   const heroProps =
     locale === "en"
       ? {
-          title: "Your Google Ads report looks great. Does your bank account agree?",
+          title: "A senior Google Ads partner for brands that want results, not overhead and junior staff",
           subtitle:
-            "I'm Slobodan — a senior Google Ads consultant. On the accounts I take over, I usually find 20–40% of the budget doing nothing, and tracking that overstates the results. I fix the truth first, then scale what actually earns.",
+            "Digital Jelisavac is a senior-led boutique Google Ads practice. Your account is run by a senior specialist, not a junior learning on your budget. Search, Shopping and Performance Max, managed to profit.",
           ctaText: "Book a free 20-minute call",
           ctaHref: "/kontakt",
           secondaryCtaText: "View Results",
@@ -62,9 +62,9 @@ export default async function Home({ params }: Props) {
           ],
         }
       : {
-          title: "Vaš Google Ads izveštaj izgleda odlično. Da li i vaš račun?",
+          title: "Senior Google Ads partner za brendove koji žele rezultate, ne troškove i juniore",
           subtitle:
-            "Ja sam Slobodan — senior Google Ads konsultant. Na nalozima koje preuzmem najčešće nađem 20–40% budžeta koji ne radi ništa, i merenje koje prijavljuje bolje rezultate nego što ih ima. Prvo sredim istinu, pa skaliram ono što stvarno zarađuje.",
+            "Digital Jelisavac je senior-led boutique Google Ads agencija. Vaš nalog vodi senior stručnjak lično, ne junior koji uči na vašem budžetu. Search, Shopping i Performance Max, optimizovani na profit.",
           ctaText: "Zakažite besplatnih 20 minuta",
           ctaHref: "/kontakt",
           secondaryCtaText: "Pogledajte rezultate",
