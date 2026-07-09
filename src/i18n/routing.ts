@@ -37,6 +37,10 @@ export const routing = defineRouting({
       sr: "/usluge/performance-max",
       en: "/services/performance-max"
     },
+    "/usluge/chatgpt-ads": {
+      sr: "/usluge/chatgpt-ads",
+      en: "/services/chatgpt-ads"
+    },
     "/usluge/search-kampanje": {
       sr: "/usluge/search-kampanje",
       en: "/services/search-campaigns"

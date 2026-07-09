@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Section, Card, Button, AnimateOnScroll } from "@/components/ui";
-import { ShoppingCart, Building2, Monitor, Settings, ClipboardCheck, Search, Eye, PlayCircle, BarChart3 } from "lucide-react";
+import { ShoppingCart, Building2, Monitor, Settings, ClipboardCheck, Search, Eye, PlayCircle, BarChart3, MessageSquare } from "lucide-react";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -68,6 +68,12 @@ export default async function ServicesPage({ params }: Props) {
       href: "/usluge/youtube-oglasi",
       desc: "Video campaigns for awareness and direct response goals using skippable and bumper formats.",
       badge: null
+    },
+    {
+      title: "ChatGPT Ads",
+      href: "/usluge/chatgpt-ads",
+      desc: "Early-access advertising inside ChatGPT — sponsored placements captured at peak intent, before your competition arrives.",
+      badge: "New"
     }
   ] as const) : ([
     {
@@ -111,6 +117,12 @@ export default async function ServicesPage({ params }: Props) {
       href: "/usluge/youtube-oglasi",
       desc: "Video kampanje za awareness i direct response ciljeve kroz skippable i bumper formate.",
       badge: null
+    },
+    {
+      title: "ChatGPT Ads",
+      href: "/usluge/chatgpt-ads",
+      desc: "Early-access oglašavanje unutar ChatGPT-a - sponzorisana mesta u trenutku najveće namere, pre nego što konkurencija stigne.",
+      badge: "Novo"
     }
   ] as const);
 
@@ -637,7 +649,7 @@ export default async function ServicesPage({ params }: Props) {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {coreServices.map((service, index) => {
-            const icons = [Settings, ClipboardCheck, ShoppingCart, BarChart3, Search, Eye, PlayCircle];
+            const icons = [Settings, ClipboardCheck, ShoppingCart, BarChart3, Search, Eye, PlayCircle, MessageSquare];
             const Icon = icons[index] || Settings;
             return (
               <AnimateOnScroll key={service.href} delay={index * 100}>

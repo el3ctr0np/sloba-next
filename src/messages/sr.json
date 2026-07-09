@@ -25,7 +25,8 @@
       "saas": "Google Ads za SaaS",
       "performanceMarketing": "Performance Marketing",
       "consultations": "Konsultacije",
-      "starterPackage": "Kickstart"
+      "starterPackage": "Kickstart",
+      "chatgptAds": "ChatGPT Ads"
     },
     "allServices": "Sve usluge →",
     "trustBar": {
@@ -55,7 +56,8 @@
       "searchCampaigns": "Search Kampanje",
       "remarketing": "Remarketing",
       "youtubeAds": "YouTube Oglasi",
-      "performanceMarketing": "Performance Marketing"
+      "performanceMarketing": "Performance Marketing",
+      "chatgptAds": "ChatGPT Ads"
     },
     "industries": {
       "ecommerce": "Google Ads za eCommerce",

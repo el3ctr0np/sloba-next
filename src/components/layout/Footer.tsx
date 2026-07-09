@@ -27,7 +27,8 @@ export function Footer() {
       { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" as const },
       { label: t("services.remarketing"), href: "/usluge/remarketing" as const },
       { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" as const },
-      { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const }
+      { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const },
+      { label: t("services.chatgptAds"), href: "/usluge/chatgpt-ads" as const }
     ],
     industrije: [
       { label: t("industries.ecommerce"), href: "/usluge/google-ads-za-ecommerce" as const },

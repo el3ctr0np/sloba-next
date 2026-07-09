@@ -27,6 +27,7 @@ const routeLastmod: Record<string, string> = {
   "/usluge/search-kampanje": "2026-02-10",
   "/usluge/remarketing": "2026-02-10",
   "/usluge/youtube-oglasi": "2026-04-17",
+  "/usluge/chatgpt-ads": "2026-07-09",
   "/usluge/google-ads-za-b2b": "2026-02-10",
   "/usluge/google-ads-za-ecommerce": "2026-02-10",
   "/usluge/google-ads-za-saas": "2026-02-10",

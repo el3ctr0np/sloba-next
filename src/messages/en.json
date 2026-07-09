@@ -25,7 +25,8 @@
       "saas": "Google Ads for SaaS",
       "performanceMarketing": "Performance Marketing",
       "consultations": "Consultations",
-      "starterPackage": "Kickstart"
+      "starterPackage": "Kickstart",
+      "chatgptAds": "ChatGPT Ads"
     },
     "allServices": "All services →",
     "trustBar": {
@@ -55,7 +56,8 @@
       "searchCampaigns": "Search Campaigns",
       "remarketing": "Remarketing",
       "youtubeAds": "YouTube Ads",
-      "performanceMarketing": "Performance Marketing"
+      "performanceMarketing": "Performance Marketing",
+      "chatgptAds": "ChatGPT Ads"
     },
     "industries": {
       "ecommerce": "Google Ads for eCommerce",
