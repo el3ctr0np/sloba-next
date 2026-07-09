@@ -1,5 +1,6 @@
 import {
   WhyMe,
+  ProfitFirstMethod,
   WhatYouNeed,
   ClientLogos,
   CaseStudiesPreview,
@@ -85,6 +86,9 @@ export default async function Home({ params }: Props) {
 
       <AnimateOnScroll>
         <WhyMe />
+      </AnimateOnScroll>
+      <AnimateOnScroll>
+        <ProfitFirstMethod locale={locale} />
       </AnimateOnScroll>
       <AnimateOnScroll>
         <WhatYouNeed locale={locale} />

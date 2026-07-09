@@ -284,8 +284,8 @@ export default async function AboutPage({ params }: Props) {
 
               <p className="text-sm font-semibold text-slate-400 uppercase tracking-wide mb-3">
                 {locale === "en"
-                  ? "Independent senior consultant · Partner & Head of Paid Media at Funky Enterprises"
-                  : "Nezavisni senior konsultant · Partner @ Funky Enterprises"}
+                  ? "Founder, Digital Jelisavac · Senior Google Ads specialist · Partner at Funky Enterprises"
+                  : "Osnivač, Digital Jelisavac · Senior Google Ads specijalista · Partner @ Funky Enterprises"}
               </p>
 
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">

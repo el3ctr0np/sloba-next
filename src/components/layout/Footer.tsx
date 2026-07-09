@@ -100,7 +100,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <h3 className="font-heading font-bold text-xl mb-4">
-              Slobodan Jelisavac
+              Digital Jelisavac
             </h3>
             <p className="text-gray-400 text-sm mb-4">
               {t("brandDescription")}
