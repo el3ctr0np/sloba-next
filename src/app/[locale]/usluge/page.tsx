@@ -315,16 +315,24 @@ export default async function ServicesPage({ params }: Props) {
 
   const faqs = locale === "en" ? [
     {
-      q: "What's the minimum investment to work together?",
-      a: "Monthly Google Ads management (eCommerce Growth) starts from $2,500/month. For smaller ad spend, I recommend Kickstart or consultations — priced per scope. In my experience, businesses need at least $2,000+/month in ad spend to see meaningful results from paid advertising."
+      q: "How much does a Google Ads consultant cost?",
+      a: "Pricing depends on account scope and budget. A one-off consultation is $200/hour. A deep audit with a written action plan starts from $500. Monthly account management starts from $2,500/month, scaling with ad spend and complexity. No hidden fees — you get an exact number after I've reviewed the account, not a promised outcome upfront."
     },
     {
-      q: "Do you only work with companies from Serbia?",
-      a: "Not at all — I work with clients across Europe, including the UK, Germany, Croatia, and Serbia. Communication in English or Serbian. Most of my portfolio consists of UK-based eCommerce and B2B companies."
+      q: "What's the difference between a consultant and an agency?",
+      a: "You work directly with a senior expert who personally runs your account — no juniors learning on your budget, no account manager acting as a go-between. There's no long-term lock-in contract tying you down if the collaboration isn't working. Fewer layers means faster decisions and direct accountability for the results."
     },
     {
-      q: "What's the minimum engagement period?",
-      a: "I recommend a minimum of 3 months for campaign management to allow for proper testing and optimization. For audits and consultations, there's no minimum period — these are one-time services. In my experience, meaningful Google Ads results require at least 60-90 days of data collection and iterative improvements."
+      q: "What is POAS and why track it instead of ROAS?",
+      a: "POAS (profit on ad spend) accounts for margin and cost of goods (COGS), unlike ROAS, which only measures revenue. An account can show a great ROAS while losing money on low-margin products. I optimize campaigns for profit, not for a revenue number that looks good in a report but doesn't move your bottom line."
+    },
+    {
+      q: "Is there a contract or minimum term?",
+      a: "No long-term contracts — the collaboration runs month-to-month, with no onboarding fees. For ongoing campaign management I recommend a minimum of 3 months to gather enough data for real optimization, but that's a recommendation, not a requirement. Audits and consultations are one-off services with no minimum term at all."
+    },
+    {
+      q: "Which markets and industries do you work with?",
+      a: "I work with clients in Serbia, the wider region (Croatia, Slovenia), the UK, the EU, and the US. My focus is eCommerce brands, B2B lead generation companies, and SaaS platforms — industries where results can be clearly measured through revenue, leads, or trial conversions, not vanity metrics."
     },
     {
       q: "What does monthly reporting look like?",
@@ -336,16 +344,24 @@ export default async function ServicesPage({ params }: Props) {
     }
   ] : [
     {
-      q: "Koja je minimalna investicija za saradnju?",
-      a: "Mesečno vođenje Google Ads naloga počinje od €700 mesečno. Za manje ad spend budžete tu su one-off projekti i konsultacije — cena zavisi od obima. Iz iskustva, za smislene rezultate treba bar €1.500+ mesečno ad spend-a — ispod toga je Kickstart ili konsultacija bolji format."
+      q: "Koliko košta Google Ads konsultant?",
+      a: "Cena zavisi od obima naloga i budžeta. Jednokratna konsultacija je €150 po satu. Deep audit sa akcionim planom kreće od €450. Mesečno vođenje naloga počinje od €700, u zavisnosti od ad spend-a i kompleksnosti. Bez skrivenih troškova - tačnu cifru dobijate posle uvida u nalog, ne unapred obećanih rezultata."
     },
     {
-      q: "Da li radite samo sa kompanijama iz Srbije?",
-      a: "Ne — radim sa klijentima iz cele Evrope, uključujući UK, Nemačku, Hrvatsku i Srbiju. Komunikacija na srpskom ili engleskom jeziku."
+      q: "Koja je razlika između konsultanta i agencije?",
+      a: "Radite direktno sa senior ekspertom koji lično vodi vaš nalog - nema juniora koji uči na vašem budžetu, nema account managera kao posrednika između vas i osobe koja stvarno radi optimizaciju. Nema ni dugoročnog lock-in ugovora koji vas vezuje ako saradnja ne funkcioniše. Manje slojeva znači brže odluke i direktnu odgovornost."
     },
     {
-      q: "Koliko traje minimalna saradnja?",
-      a: "Preporučujem minimum 3 meseca za upravljanje kampanjama. Za audit i konsultacije nema minimalnog perioda — to su jednokratne usluge."
+      q: "Šta je POAS i zašto ga pratite umesto ROAS-a?",
+      a: "POAS (profit on ad spend) računa stvarni profit posle marže i troška robe (COGS), za razliku od ROAS-a koji meri samo prihod. Nalog može imati odličan ROAS a da gubi novac na proizvodima sa niskom maržom. Optimizujem kampanje na profit, ne na prihod koji dobro izgleda u reportu ali ne znači ništa za vaš bilans."
+    },
+    {
+      q: "Da li postoji ugovor ili minimalni period?",
+      a: "Ne radim sa dugoročnim ugovorima - saradnja je mesec-po-mesec, bez onboarding naknada. Za upravljanje kampanjama preporučujem minimum 3 meseca da se prikupi dovoljno podataka za pravu optimizaciju, ali to je preporuka, ne obaveza. Audit i konsultacije su jednokratne usluge bez ikakvog perioda vezivanja."
+    },
+    {
+      q: "Sa kojim tržištima i industrijama radite?",
+      a: "Radim sa klijentima iz Srbije, regiona (Hrvatska, Slovenija), UK-a, EU i USA. Fokus je na eCommerce brendovima, B2B lead generation kompanijama i SaaS platformama - industrijama gde se rezultat može jasno meriti kroz prihod, lead-ove ili trial konverzije, a ne kroz vanity metrike."
     },
     {
       q: "Kako izgleda mesečni reporting?",
@@ -353,7 +369,7 @@ export default async function ServicesPage({ params }: Props) {
     },
     {
       q: "Da li mogu da vidim primere vašeg rada?",
-      a: "Da — pogledajte case studies sekciju sa konkretnim rezultatima za eCommerce, B2B i lokalne kampanje."
+      a: "Da - pogledajte case studies sekciju sa konkretnim rezultatima za eCommerce, B2B i lokalne kampanje."
     }
   ];
 

@@ -17,11 +17,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "PPC Glossary — 50 Google Ads Terms Explained [2026] | Slobodan Jelisavac"
-      : "PPC Rečnik — 50 Google Ads Termina Objašnjenih [2026] | Slobodan Jelisavac",
+      ? "PPC Glossary — 64 Google Ads Terms Explained [2026] | Slobodan Jelisavac"
+      : "PPC Rečnik - 64 Google Ads Termina Objašnjenih [2026] | Slobodan Jelisavac",
     description: isEn
-      ? "PPC glossary with 50 essential Google Ads terms — from CTR, CPC, ROAS, POAS to Performance Max, Smart Bidding, and Quality Score. Definitions, formulas, examples, and Serbian market benchmarks."
-      : "PPC rečnik sa 50 osnovnih Google Ads termina — od CTR, CPC, ROAS, POAS do Performance Max, Smart Bidding i Quality Score. Definicije, formule, primeri i benchmarks za srpsko tržište.",
+      ? "PPC glossary with 64 essential Google Ads terms — from CTR, CPC, ROAS, POAS to Performance Max, Smart Bidding, and Quality Score. Definitions, formulas, examples, and Serbian market benchmarks."
+      : "PPC rečnik sa 64 Google Ads termina - od CTR, CPC, ROAS, POAS do Performance Max, Smart Bidding i Quality Score. Definicije, formule, primeri i benchmarks za srpsko tržište.",
     locale,
     path: "/glossary",
     srPath: "/recnik",
@@ -93,13 +93,13 @@ export default async function GlossaryPage({ params }: Props) {
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-4 leading-[1.1]">
             {isEn
-              ? "PPC Glossary — 50 Google Ads Terms"
-              : "PPC Rečnik — 50 Google Ads Termina"}
+              ? "PPC Glossary — 64 Google Ads Terms"
+              : "PPC Rečnik - 64 Google Ads Termina"}
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mb-8 leading-relaxed">
             {isEn
               ? "From CTR and CPC to POAS and Performance Max — everything you need to understand in one place. Definitions, formulas, examples, and real Serbian market benchmarks."
-              : "Od CTR-a i CPC-a do POAS-a i Performance Max-a — sve što treba da razumete na jednom mestu. Definicije, formule, primeri i realni benchmarks za srpsko tržište."}
+              : "Od CTR-a i CPC-a do POAS-a i Performance Max-a, sve što treba da razumete na jednom mestu. Definicije, formule, primeri i realni benchmarks za srpsko tržište."}
           </p>
 
           <GlossarySearch locale={loc} />
@@ -243,9 +243,16 @@ const TERM_SERVICE_MAP = {
   "exact-match": "/usluge/search-kampanje",
   "phrase-match": "/usluge/search-kampanje",
   "negative-keywords": "/usluge/search-kampanje",
+  "ad-assets": "/usluge/search-kampanje",
+  "brand-vs-nonbrand": "/usluge/search-kampanje",
   // Remarketing
   remarketing: "/usluge/remarketing",
   "audience-network": "/usluge/remarketing",
+  "in-market-audience": "/usluge/remarketing",
+  "custom-segments": "/usluge/remarketing",
+  // Display / Demand Gen
+  "display-network": "/usluge/performance-marketing",
+  "demand-gen": "/usluge/performance-marketing",
   // YouTube
   cpv: "/usluge/youtube-oglasi",
   // eCommerce economics
@@ -261,11 +268,15 @@ const TERM_SERVICE_MAP = {
   "landing-page-experience": "/usluge/google-ads-audit",
   "expected-ctr": "/usluge/google-ads-audit",
   "ad-relevance": "/usluge/google-ads-audit",
+  "landing-page": "/usluge/google-ads-audit",
+  "auction-insights": "/usluge/google-ads-audit",
   // Tracking → audit / B2B
   gtm: "/usluge/google-ads-audit",
   ga4: "/usluge/google-ads-audit",
   "enhanced-conversions": "/usluge/google-ads-audit",
   "attribution-model": "/usluge/google-ads-audit",
+  "consent-mode-v2": "/usluge/google-ads-audit",
+  "first-party-data": "/usluge/google-ads-audit",
   "offline-conversion-import": "/usluge/google-ads-za-b2b",
   // Bidding → management
   "smart-bidding": "/usluge/google-ads-upravljanje",
@@ -275,6 +286,9 @@ const TERM_SERVICE_MAP = {
   "maximize-conversion-value": "/usluge/google-ads-upravljanje",
   "bid-adjustments": "/usluge/google-ads-upravljanje",
   "portfolio-bidding": "/usluge/google-ads-upravljanje",
+  "seasonality-adjustment": "/usluge/google-ads-upravljanje",
+  "budget-pacing": "/usluge/google-ads-upravljanje",
+  experiment: "/usluge/google-ads-upravljanje",
   // Core
   "google-ads": "/usluge/google-ads-upravljanje",
   adwords: "/usluge/google-ads-upravljanje",

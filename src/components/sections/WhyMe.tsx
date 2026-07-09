@@ -1,8 +1,9 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Card } from "@/components/ui";
 
 export function WhyMe() {
   const t = useTranslations("WhyMe");
+  const locale = useLocale();
 
   const features = [
     {
@@ -72,9 +73,14 @@ export function WhyMe() {
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4">
           {t("heading")}
         </h2>
+        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+          {locale === "en"
+            ? "Slobodan Jelisavac is an independent Google Ads consultant based in Belgrade, Serbia, with 10+ years of experience, who has managed accounts for 50+ brands across 6+ countries (Serbia, the UK, the EU and the US). Campaigns he built won 3 UK Search Awards."
+            : "Slobodan Jelisavac je nezavisni Google Ads konsultant iz Beograda, sa 10+ godina iskustva, koji je vodio naloge za 50+ brendova u 6+ zemalja (Srbija, UK, EU i US). Kampanje koje je postavio osvojile su 3 UK Search Awards."}
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <Card key={index}>

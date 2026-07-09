@@ -40,13 +40,8 @@ export default async function CaseStudyPage({ params }: Props) {
   const allStudies = getCaseStudiesByLocale(locale);
   const otherStudies = allStudies.filter((s) => s.slug !== slug);
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
-  };
+  // Person (#person) is emitted site-wide by <LocalBusinessSchema /> in the
+  // locale layout; the article references it by @id below.
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -54,22 +49,17 @@ export default async function CaseStudyPage({ params }: Props) {
     headline: `${cs.company} Case Study | ${cs.highlight}`,
     description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}.`,
     datePublished: "2026-01-26",
-    author: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-    },
-    publisher: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-    },
+    author: { "@id": "https://www.slobodan-jelisavac.com/#person" },
+    publisher: { "@id": "https://www.slobodan-jelisavac.com/#person" },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.slobodan-jelisavac.com/${locale}/case-studies/${slug}`,
     },
     inLanguage: locale === "en" ? "en" : "sr",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2"],
+    },
     mentions: {
       "@type": "Organization",
       name: cs.company,
@@ -106,10 +96,6 @@ export default async function CaseStudyPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
       <script
         type="application/ld+json"

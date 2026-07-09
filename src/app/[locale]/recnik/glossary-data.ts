@@ -57,7 +57,7 @@ export const glossaryCategoryLabels: Record<
  * Structure below is the canonical reference for implementation.
  */
 export const glossaryTerms: GlossaryTerm[] = [
-  // ────────── OSNOVE (12) ──────────
+  // ────────── OSNOVE (14) ──────────
   {
     slug: "adwords",
     term: "AdWords",
@@ -230,8 +230,36 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedPostSr: "kako-poceti-google-ads",
     relatedPostEn: "how-to-start-google-ads",
   },
+  {
+    slug: "google-partner",
+    term: "Google Partner",
+    termSr: "Google Partner status",
+    aliases: ["Google Ads Partner", "Premier Partner"],
+    category: "basics",
+    shortDefinitionSr: "Google Partner je zvanični status koji Google dodeljuje agencijama koje ispunjavaju uslove potrošnje, sertifikacije, i performansi klijenata na Google Ads nalozima kojima upravljaju.",
+    shortDefinitionEn: "Google Partner is an official status Google grants to agencies that meet spend, certification, and client-performance requirements on the Google Ads accounts they manage.",
+    definitionSr: "Status se dodeljuje kroz Google Partner program i proverava mesečno. Zahteva minimalnu potrošnju klijenata kojima agencija upravlja u poslednjih 90 dana, važeće Google Ads sertifikacije za najmanje 50% zaposlenih koji rade na nalozima, i zadovoljavajuće performanse (rast naloga, optimizacija). Premier Partner je viši nivo, rezervisan za otprilike top 3% agencija po tržištu. Status NIJE garancija kvaliteta - meri aktivnost i spend, ne nužno rezultate klijenata - ali je koristan filter kod biranja agencije jer isključuje potpune početnike.",
+    definitionEn: "The status is granted through the Google Partner program and re-checked monthly. It requires a minimum spend managed by the agency in the past 90 days, valid Google Ads certifications for at least 50% of staff working on accounts, and satisfactory performance (account growth, optimization). Premier Partner is the higher tier, reserved for roughly the top 3% of agencies by market. The status is NOT a quality guarantee - it measures activity and spend, not necessarily client results - but it's a useful filter when choosing an agency since it rules out complete beginners.",
+    relatedTerms: ["google-ads", "quality-score"],
+  },
+  {
+    slug: "landing-page",
+    term: "Landing Page",
+    termSr: "Odredišna stranica",
+    aliases: ["LP", "Landing stranica", "Prodajna stranica"],
+    category: "basics",
+    shortDefinitionSr: "Landing page je stranica na koju korisnik stiže nakon klika na oglas - dizajnirana da odgovori na intent pretrage i vodi ka jednoj jasnoj akciji (kupovina, forma, poziv).",
+    shortDefinitionEn: "A landing page is the page a user reaches after clicking an ad - designed to match search intent and drive one clear action (purchase, form, call).",
+    definitionSr: "Najčešća greška domaćih firmi: slanje celog Google Ads saobraćaja na home page umesto na dedikovanu landing page koja odgovara tačno na ono što je korisnik pretraživao. Dobra landing page ima: jedan jasan CTA (ne 5 opcija), keyword match sa oglasom (relevantnost), brzo učitavanje na mobilnom (LCP ispod 2.5s), i minimalno trenje do konverzije (kratka forma, vidljiv broj telefona). Landing page kvalitet direktno utiče na Quality Score kroz Landing Page Experience komponentu, i indirektno na CPC.",
+    definitionEn: "The most common mistake for local businesses: sending all Google Ads traffic to the homepage instead of a dedicated landing page that matches exactly what the user searched for. A good landing page has: one clear CTA (not 5 options), keyword match with the ad (relevance), fast mobile loading (LCP under 2.5s), and minimal friction to conversion (short form, visible phone number). Landing page quality directly affects Quality Score through the Landing Page Experience component, and indirectly affects CPC.",
+    benchmarks: [
+      { label: "LCP (Largest Contentful Paint)", range: "< 2.5s" },
+      { label: "Forma - broj polja", range: "3-5 polja max" },
+    ],
+    relatedTerms: ["landing-page-experience", "quality-score", "conversion-rate"],
+  },
 
-  // ────────── BIDDING (10) ──────────
+  // ────────── BIDDING (11) ──────────
   {
     slug: "manual-cpc",
     term: "Manual CPC",
@@ -366,8 +394,22 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedPostSr: "smart-bidding-vodic",
     relatedPostEn: "smart-bidding-guide",
   },
+  {
+    slug: "seasonality-adjustment",
+    term: "Seasonality Adjustment",
+    termSr: "Sezonsko prilagođavanje",
+    aliases: ["Seasonality Adjustments", "Data Exclusions"],
+    category: "bidding",
+    shortDefinitionSr: "Seasonality Adjustment je alat u Google Ads Smart Bidding-u kojim najavljujete algoritmu očekivan privremeni skok ili pad u conversion rate-u za tačno određen period (rasprodaja, praznik, promocija).",
+    shortDefinitionEn: "Seasonality Adjustment is a Google Ads Smart Bidding tool used to tell the algorithm to expect a temporary spike or drop in conversion rate for a specific date range (sale, holiday, promotion).",
+    definitionSr: "Smart Bidding uči iz istorijskih podataka - ako ne najavite iznenadni skok (npr. Black Friday, gde CR raste 3-5x), algoritam sporo reaguje i propušta budžet u prvim danima. Postavlja se u Google Ads → Tools → Bid Strategies → Seasonality adjustments, sa procenatom očekivane promene konverzija za odabrani period (max 7 dana preporučeno). Odvojen alat, Data Exclusions, radi suprotno - isključuje period sa neobičnim podacima (pad sajta, tehnički problem) iz trening seta algoritma da ne pokvari buduće predikcije.",
+    definitionEn: "Smart Bidding learns from historical data - if you don't flag a sudden spike (e.g. Black Friday, where CR can jump 3-5x), the algorithm reacts slowly and wastes budget in the first days. Set it up in Google Ads → Tools → Bid Strategies → Seasonality adjustments, with a percentage of expected conversion rate change for the selected period (max 7 days recommended). A separate tool, Data Exclusions, does the opposite - it excludes a period with abnormal data (site downtime, technical issue) from the algorithm's training set so it doesn't skew future predictions.",
+    exampleSr: "Black Friday vikend: postavite Seasonality Adjustment +150% za 3 dana da algoritam agresivnije bid-uje unapred.",
+    exampleEn: "Black Friday weekend: set a Seasonality Adjustment of +150% for 3 days so the algorithm bids more aggressively in advance.",
+    relatedTerms: ["smart-bidding", "maximize-conversions", "tcpa"],
+  },
 
-  // ────────── TRACKING (8) ──────────
+  // ────────── TRACKING (10) ──────────
   {
     slug: "conversion",
     term: "Conversion",
@@ -475,8 +517,32 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedPostSr: "conversion-tracking-vodic",
     relatedPostEn: "conversion-tracking-guide",
   },
+  {
+    slug: "consent-mode-v2",
+    term: "Consent Mode v2",
+    termSr: "Consent Mode v2",
+    aliases: ["Google Consent Mode", "CMv2"],
+    category: "tracking",
+    shortDefinitionSr: "Consent Mode v2 je Google-ov sistem koji prilagođava rad Google tag-ova (Ads, GA4) prema korisnikovoj cookie saglasnosti - obavezan od marta 2024. za sve oglašivače koji targetiraju korisnike u EU/EEA.",
+    shortDefinitionEn: "Consent Mode v2 is Google's system that adjusts how Google tags (Ads, GA4) behave based on a user's cookie consent - mandatory since March 2024 for any advertiser targeting users in the EU/EEA.",
+    definitionSr: "Uvodi 2 nova consent parametra pored postojećih ad_storage i analytics_storage: ad_user_data (da li se lični podaci mogu slati Google-u za oglašavanje) i ad_personalization (da li se podaci mogu koristiti za remarketing i personalizovane oglase). Bez implementiranog CMv2, Google Ads i GA4 gube mogućnost punog merenja i remarketinga za EEA saobraćaj - ograničeno je na modelovane (procenjene) konverzije umesto stvarnih. Implementacija ide preko Cookie Consent Management platforme (CMP) povezane sa GTM-om. Za srpsko tržište formalno nije zakonska obaveza (Srbija nije EEA), ali je relevantno za firme koje prodaju u EU.",
+    definitionEn: "It introduces 2 new consent parameters alongside the existing ad_storage and analytics_storage: ad_user_data (whether personal data can be sent to Google for advertising) and ad_personalization (whether data can be used for remarketing and personalized ads). Without CMv2 implemented, Google Ads and GA4 lose the ability to fully measure and remarket EEA traffic - falling back to modeled (estimated) conversions instead of actual ones. Implementation runs through a Cookie Consent Management Platform (CMP) connected to GTM. For the Serbian market it's not formally a legal requirement (Serbia isn't in the EEA), but it's relevant for businesses selling into the EU.",
+    relatedTerms: ["gtm", "ga4", "enhanced-conversions", "first-party-data"],
+  },
+  {
+    slug: "first-party-data",
+    term: "First-Party Data",
+    termSr: "Podaci prve strane",
+    aliases: ["1st-party data", "Vlastiti podaci"],
+    category: "tracking",
+    shortDefinitionSr: "First-party data su podaci koje firma prikuplja direktno od svojih korisnika - email, telefon, istorija kupovine - za razliku od third-party podataka koje kupujete od spoljnih izvora.",
+    shortDefinitionEn: "First-party data is data a business collects directly from its own users - email, phone, purchase history - as opposed to third-party data purchased from external sources.",
+    definitionSr: "Sa postepenim gašenjem third-party cookie-ja i sve strožijim privacy pravilima, first-party data postaje najvredniji asset za targeting i merenje. Praktična upotreba u Google Ads: Customer Match (upload email/telefon liste za targeting postojećih kupaca ili sličnih), Enhanced Conversions (hashovani email/telefon za tačniju atribuciju), i seed audience za PMax/Demand Gen optimizovano targetiranje. Firme koje nemaju CRM ili newsletter listu gube značajnu prednost u odnosu na konkurenciju koja aktivno gradi first-party bazu.",
+    definitionEn: "With the gradual phase-out of third-party cookies and increasingly strict privacy rules, first-party data has become the most valuable asset for targeting and measurement. Practical use in Google Ads: Customer Match (upload email/phone lists to target existing customers or lookalikes), Enhanced Conversions (hashed email/phone for more accurate attribution), and seed audiences for PMax/Demand Gen optimized targeting. Businesses without a CRM or newsletter list lose significant ground to competitors actively building a first-party base.",
+    relatedTerms: ["enhanced-conversions", "consent-mode-v2", "custom-segments", "remarketing"],
+  },
 
-  // ────────── OPTIMIZATION (10) ──────────
+  // ────────── OPTIMIZATION (15) ──────────
   {
     slug: "quality-score",
     term: "Quality Score",
@@ -609,8 +675,77 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedPostSr: "kljucne-reci-vodic",
     relatedPostEn: "google-ads-keyword-guide",
   },
+  {
+    slug: "ad-assets",
+    term: "Ad Assets",
+    termSr: "Ekstenzije oglasa",
+    aliases: ["Ad Extensions", "Extensions", "Sitelinks", "Sitelink Extensions"],
+    category: "optimization",
+    shortDefinitionSr: "Ad Assets (ranije Ad Extensions) su dodatni elementi uz osnovni tekstualni oglas - sitelinkovi, telefon, lokacija, cena, promocije - koji povećavaju veličinu oglasa i CTR bez dodatne cene po prikazu.",
+    shortDefinitionEn: "Ad Assets (formerly Ad Extensions) are additional elements attached to a base text ad - sitelinks, phone number, location, price, promotions - that increase ad size and CTR at no extra cost per impression.",
+    definitionSr: "Google je 2022. preimenovao 'Extensions' u 'Assets'. Najčešći tipovi: Sitelink (dodatni linkovi ka konkretnim stranicama), Callout (kratke fraze bez linka, npr. 'Besplatna dostava'), Structured Snippet (kategorizovane liste, npr. 'Usluge: X, Y, Z'), Call (klik-za-poziv dugme), Location (adresa iz Google Business Profile-a), Price (cenovnik proizvoda/usluga), Lead Form (forma direktno u oglasu). Assets ulaze u Ad Rank formulu - više relevantnih asset-a znači veći Ad Rank pri istom bidu. Minimum preporučen: 4+ sitelinka, 4+ callout-a po kampanji.",
+    definitionEn: "Google renamed 'Extensions' to 'Assets' in 2022. Most common types: Sitelink (additional links to specific pages), Callout (short phrases without a link, e.g. 'Free shipping'), Structured Snippet (categorized lists, e.g. 'Services: X, Y, Z'), Call (click-to-call button), Location (address pulled from Google Business Profile), Price (product/service price list), Lead Form (form embedded directly in the ad). Assets feed into the Ad Rank formula - more relevant assets means a higher Ad Rank at the same bid. Recommended minimum: 4+ sitelinks, 4+ callouts per campaign.",
+    benchmarks: [
+      { label: "Sitelink minimum", range: "4+" },
+      { label: "Callout minimum", range: "4+" },
+    ],
+    relatedTerms: ["ad-rank", "ctr", "rsa", "quality-score"],
+  },
+  {
+    slug: "brand-vs-nonbrand",
+    term: "Brand vs Non-Brand Campaigns",
+    termSr: "Brend vs Ne-brend kampanje",
+    aliases: ["Branded Search", "Non-branded Search"],
+    category: "optimization",
+    shortDefinitionSr: "Razdvajanje Search kampanja na Brand (pretrage sa imenom firme) i Non-Brand (generičke pretrage kategorije) - ključna strukturna odluka za tačno merenje stvarnog efekta oglašavanja.",
+    shortDefinitionEn: "Splitting Search campaigns into Brand (searches containing the business name) and Non-Brand (generic category searches) - a key structural decision for accurately measuring the real impact of advertising.",
+    definitionSr: "Brand kampanje (npr. 'Digital Jelisavac Google Ads') tipično imaju 2-3x veći conversion rate i 30-50% niži CPC jer korisnik već poznaje firmu - lako je 'pobediti' sopstveno ime na aukciji. Non-Brand kampanje (npr. 'Google Ads agencija Beograd') privlače hladniji saobraćaj, koštaju više, ali donose nove klijente. Zamka: spajanje oba tipa u jednu kampanju maskira stvarnu efikasnost - prosečan blended CPA izgleda dobro zahvaljujući brendu dok non-brand tiho gubi novac. Odvojeni budžeti i target CPA po tipu su standard za tačnu procenu ROI-a oglašavanja.",
+    definitionEn: "Brand campaigns (e.g. 'Digital Jelisavac Google Ads') typically have 2-3x higher conversion rates and 30-50% lower CPC because the user already knows the business - it's easy to 'win' your own name in the auction. Non-Brand campaigns (e.g. 'Google Ads agency London') attract colder traffic, cost more, but bring in new customers. Pitfall: merging both types into one campaign masks real efficiency - the average blended CPA looks good thanks to brand while non-brand quietly loses money. Separate budgets and target CPA per type are standard for accurately assessing advertising ROI.",
+    benchmarks: [
+      { label: "Brand CR (tipično)", range: "8-20%" },
+      { label: "Non-brand CR (tipično)", range: "1-4%" },
+    ],
+    relatedTerms: ["conversion-rate", "cpc", "tcpa", "impression-share"],
+  },
+  {
+    slug: "budget-pacing",
+    term: "Budget Pacing",
+    termSr: "Trošenje budžeta",
+    aliases: ["Ad Pacing", "Delivery Method"],
+    category: "optimization",
+    shortDefinitionSr: "Budget Pacing je tempo kojim se dnevni budžet kampanje troši tokom dana - loš pacing znači da budžet nestane do podneva i kampanja 'nestaje' sa oglasnog prostora ostatak dana.",
+    shortDefinitionEn: "Budget Pacing is the rate at which a campaign's daily budget is spent throughout the day - poor pacing means the budget runs out by noon and the campaign disappears from ad space for the rest of the day.",
+    definitionSr: "Google Ads od 2019. koristi isključivo Standard delivery za Search/Shopping (raspoređuje trošenje ravnomerno preko dana na osnovu predikcije saobraćaja), pošto je stari Accelerated delivery ukinut za te tipove kampanja. I dalje se dešava da budžet nestane rano ako je dnevni limit nizak u odnosu na potražnju - to se vidi kroz 'Lost IS (budget)' metriku. Rešenje nije uvek povećanje budžeta - može biti i suženje targetinga (match types, negative keywords, geo) da postojeći budžet pokrije ceo dan sa relevantnijim saobraćajem.",
+    definitionEn: "Since 2019, Google Ads uses only Standard delivery for Search/Shopping (spreads spending evenly across the day based on predicted traffic), since the old Accelerated delivery method was removed for those campaign types. Budget can still run out early if the daily cap is low relative to demand - visible through the 'Lost IS (budget)' metric. The fix isn't always a bigger budget - it can also mean narrowing targeting (match types, negative keywords, geo) so the existing budget covers the full day with more relevant traffic.",
+    formula: "Preporučeni dnevni budžet ≈ Mesečni budžet ÷ 30.4",
+    relatedTerms: ["impression-share", "match-types", "negative-keywords"],
+  },
+  {
+    slug: "experiment",
+    term: "Experiment (A/B Test)",
+    termSr: "Eksperiment / A/B test",
+    aliases: ["Drafts & Experiments", "Split Test", "A/B testiranje"],
+    category: "optimization",
+    shortDefinitionSr: "Experiment je Google Ads native alat za A/B testiranje - deli saobraćaj između originalne kampanje i verzije sa jednom izmenom (bidding, ad copy, landing page) da izmeri stvarni efekat promene.",
+    shortDefinitionEn: "Experiment is Google Ads' native A/B testing tool - it splits traffic between the original campaign and a version with one change (bidding, ad copy, landing page) to measure the real effect of that change.",
+    definitionSr: "Nalazi se pod Drafts & Experiments u Google Ads UI-ju. Proces: napravite draft izmenu postojeće kampanje (npr. promena bidding-a sa Maximize Conversions na tCPA), pokrenete je kao experiment sa procentom split-a saobraćaja (obično 50/50), pustite da radi minimum 2-4 nedelje (dovoljno za statističku značajnost), pa uporedite rezultate pre nego što odluku primenite na 100% budžeta. Ključna razlika od pristupa 'probaj pa vidi': eksperiment izoluje JEDNU varijablu i eliminiše noise od sezonalnosti jer obe verzije rade istovremeno.",
+    definitionEn: "Found under Drafts & Experiments in the Google Ads UI. Process: create a draft change to an existing campaign (e.g. switching bidding from Maximize Conversions to tCPA), launch it as an experiment with a traffic split percentage (usually 50/50), let it run for a minimum of 2-4 weeks (enough for statistical significance), then compare results before applying the change to 100% of budget. Key difference from a 'just try it' approach: the experiment isolates ONE variable and removes seasonality noise because both versions run simultaneously.",
+    relatedTerms: ["smart-bidding", "tcpa", "conversion-rate"],
+  },
+  {
+    slug: "auction-insights",
+    term: "Auction Insights",
+    termSr: "Uvid u aukciju",
+    aliases: ["Auction Insights Report"],
+    category: "optimization",
+    shortDefinitionSr: "Auction Insights je Google Ads report koji pokazuje kako se vaše kampanje i ključne reči porede sa drugim oglašivačima koji učestvuju u istim aukcijama - konkurentska analiza direktno iz platforme.",
+    shortDefinitionEn: "Auction Insights is a Google Ads report showing how your campaigns and keywords compare to other advertisers competing in the same auctions - competitive analysis straight from the platform.",
+    definitionSr: "Dostupan na nivou kampanje, ad grupe, ili keyword-a. Ključne metrike: Impression Share (vaš deo prikaza), Overlap Rate (koliko često se pojavljujete zajedno sa konkretnim konkurentom), Position Above Rate (koliko često je konkurent iznad vas kad se oba pojavite), Top of Page Rate, i Outranking Share. Korisno za identifikovanje novih konkurenata koji su ušli na tržište (nagli skok Overlap Rate-a), i za procenu da li je pad performansi zbog vašeg naloga ili pojačane konkurencije.",
+    definitionEn: "Available at campaign, ad group, or keyword level. Key metrics: Impression Share (your share of impressions), Overlap Rate (how often you appear alongside a specific competitor), Position Above Rate (how often the competitor outranks you when you both show), Top of Page Rate, and Outranking Share. Useful for spotting new competitors entering the market (a sudden jump in Overlap Rate), and for judging whether a performance drop is your account's fault or increased competition.",
+    relatedTerms: ["impression-share", "ad-rank", "quality-score"],
+  },
 
-  // ────────── ADVANCED (10) ──────────
+  // ────────── ADVANCED (14) ──────────
   {
     slug: "roas",
     term: "ROAS",
@@ -747,6 +882,54 @@ export const glossaryTerms: GlossaryTerm[] = [
     relatedTerms: ["pmax", "google-shopping", "cogs"],
     relatedPostSr: "google-shopping-vodic",
     relatedPostEn: "google-shopping-guide",
+  },
+  {
+    slug: "display-network",
+    term: "Google Display Network (GDN)",
+    termSr: "Google Display mreža",
+    aliases: ["GDN", "Display Network", "Display kampanja"],
+    category: "advanced",
+    shortDefinitionSr: "Google Display Network (GDN) je mreža preko 2 miliona sajtova, aplikacija, i Google servisa (Gmail, YouTube) gde se prikazuju vizuelni banner i native oglasi - dostiže preko 90% internet korisnika.",
+    shortDefinitionEn: "Google Display Network (GDN) is a network of over 2 million sites, apps, and Google properties (Gmail, YouTube) showing visual banner and native ads - reaching over 90% of internet users.",
+    definitionSr: "Za razliku od Search-a (visok intent, korisnik aktivno traži), Display je uglavnom awareness i remarketing kanal - korisnik ne traži proizvod u tom trenutku, već ga oglas 'prekida' dok čita vest ili gleda video. Formati: Responsive Display Ads (Google automatski kombinuje sliku/tekst za svaki placement), statični banneri, native (izgleda kao deo sadržaja sajta). CTR na Display-u je znatno niži nego na Search-u (0.5-1% naspram 5-10%), ali CPM je i mnogo jeftiniji. Najbolji rezultati: kombinovan sa remarketing listama, ne kao samostalan cold prospecting.",
+    definitionEn: "Unlike Search (high intent, the user is actively searching), Display is mostly an awareness and remarketing channel - the user isn't looking for the product at that moment, the ad 'interrupts' them while reading news or watching a video. Formats: Responsive Display Ads (Google auto-combines image/text for each placement), static banners, native (looks like part of the site's content). CTR on Display is much lower than Search (0.5-1% vs 5-10%), but CPM is also much cheaper. Best results: combined with remarketing lists, not as standalone cold prospecting.",
+    relatedTerms: ["cpm", "remarketing", "ctr", "demand-gen"],
+  },
+  {
+    slug: "demand-gen",
+    term: "Demand Gen",
+    termSr: "Demand Gen kampanja",
+    aliases: ["Demand Generation", "Discovery Ads"],
+    category: "advanced",
+    shortDefinitionSr: "Demand Gen je Google Ads kampanja tip (od 2023, naslednik Discovery Ads) koja koristi vizuelno bogate, feed-native oglase na YouTube Shorts, Discover feed-u, Gmail-u, i Display-u da generiše potražnju kod korisnika koji još ne traže aktivno.",
+    shortDefinitionEn: "Demand Gen is a Google Ads campaign type (since 2023, successor to Discovery Ads) using visually rich, feed-native ads across YouTube Shorts, the Discover feed, Gmail, and Display to generate demand among users not yet actively searching.",
+    definitionSr: "Demand Gen cilja gornji i srednji deo funnel-a - korisnici skroluju kroz feed (Discover, YouTube Shorts) i oglas se pojavljuje kao prirodan deo sadržaja, ne kao 'prekidač'. Zahteva jaku vizuelnu kreativu (slike/video, ne tekst) jer format zavisi od skroliranja i vizuelne pažnje. Koristi se sa Maximize Conversions/Conversion Value bidding-om. Ne meša se sa PMax-om - Demand Gen daje veću kontrolu nad kreativom i placement-ima (npr. možete isključiti YouTube i ostaviti samo Discover), dok PMax sve automatizuje preko svih kanala uključujući Search.",
+    definitionEn: "Demand Gen targets the upper and mid funnel - users scroll through a feed (Discover, YouTube Shorts) and the ad appears as a natural part of the content rather than an 'interruption'. It requires strong visual creative (images/video, not text) since the format relies on scrolling and visual attention. Used with Maximize Conversions/Conversion Value bidding. Not to be confused with PMax - Demand Gen gives more control over creative and placements (e.g. you can exclude YouTube and keep only Discover), while PMax automates everything across all channels including Search.",
+    relatedTerms: ["pmax", "display-network", "cpv", "maximize-conversion-value"],
+  },
+  {
+    slug: "in-market-audience",
+    term: "In-Market Audience",
+    termSr: "In-market publika",
+    aliases: ["In-Market Segment", "Kupovna namera publika"],
+    category: "advanced",
+    shortDefinitionSr: "In-Market Audience je Google-ov gotov segment korisnika za koje algoritam procenjuje da aktivno istražuju ili planiraju kupovinu u određenoj kategoriji proizvoda/usluga - na osnovu nedavnih pretraga i ponašanja na sajtovima.",
+    shortDefinitionEn: "An In-Market Audience is a ready-made Google segment of users the algorithm judges to be actively researching or planning a purchase in a specific product/service category - based on recent searches and on-site behavior.",
+    definitionSr: "Za razliku od Affinity segmenata (dugoročna interesovanja, npr. 'ljubitelji automobila'), In-Market meri kratkoročni kupovni intent (npr. 'u fazi poređenja polovnih automobila poslednjih 30 dana'). Koristi se na Display, YouTube, i Demand Gen kampanjama kao targeting ili opservacioni signal (u PMax-u samo kao signal, ne striktan filter). Praktičan primer za srpsko tržište: firma koja prodaje nameštaj može targetirati 'In-Market: Nameštaj i uređenje doma' segment na Display-u da dopuni Search kampanju hladnijim, ali relevantnim saobraćajem.",
+    definitionEn: "Unlike Affinity segments (long-term interests, e.g. 'car enthusiasts'), In-Market measures short-term purchase intent (e.g. 'comparing used cars in the last 30 days'). Used on Display, YouTube, and Demand Gen campaigns as a targeting or observation signal (in PMax it's only a signal, not a strict filter). Practical example for the Serbian market: a furniture retailer can target the 'In-Market: Home & Garden' segment on Display to supplement Search with colder but relevant traffic.",
+    relatedTerms: ["custom-segments", "display-network", "demand-gen", "remarketing"],
+  },
+  {
+    slug: "custom-segments",
+    term: "Custom Segments",
+    termSr: "Prilagođeni segmenti",
+    aliases: ["Custom Segment", "Custom Intent", "Custom Affinity", "Optimized Targeting"],
+    category: "advanced",
+    shortDefinitionSr: "Custom Segments su publike koje sami definišete unosom relevantnih ključnih reči, URL-ova, ili aplikacija - naslednik Custom Intent/Custom Affinity segmenata, danas standardni alat za precizno targetiranje van Search-a.",
+    shortDefinitionEn: "Custom Segments are audiences you define yourself by entering relevant keywords, URLs, or apps - the successor to Custom Intent/Custom Affinity segments, now the standard tool for precise targeting outside Search.",
+    definitionSr: "Bitna napomena za tačnost: Similar Audiences (publika 'slična' vašim postojećim kupcima) je Google potpuno ugasio - najava maja 2023, uklonjeno iz svih naloga avgusta 2023 - zbog gubitka third-party signala. Zamena je dvostruka: (1) Custom Segments, gde ručno unosite keyword-e/URL-ove/app-ove koji opisuju vašu idealnu publiku, i (2) Optimized Targeting, gde AI unutar PMax/Display/Demand Gen kampanja automatski proširuje targeting na osnovu conversion signala, bez ručnog definisanja segmenta. Za firme koje su ranije oslanjale na Similar Audiences, kombinacija Custom Segments (za kontrolu) i Optimized Targeting (za AI reach) je danas standardna zamena.",
+    definitionEn: "Important accuracy note: Similar Audiences (audiences 'similar' to your existing customers) were fully sunset by Google - announced May 2023, removed from all accounts by August 2023 - due to loss of third-party signal availability. The replacement is two-fold: (1) Custom Segments, where you manually enter keywords/URLs/apps describing your ideal audience, and (2) Optimized Targeting, where AI inside PMax/Display/Demand Gen campaigns automatically expands targeting based on conversion signals, without manually defining a segment. For businesses that previously relied on Similar Audiences, combining Custom Segments (for control) with Optimized Targeting (for AI reach) is the standard replacement today.",
+    relatedTerms: ["in-market-audience", "pmax", "demand-gen", "first-party-data"],
   },
 ];
 
