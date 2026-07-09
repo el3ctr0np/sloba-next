@@ -191,11 +191,19 @@ const nextConfig: NextConfig = {
   },
 
   async headers() {
-    // Security headers applied site-wide. The CSP is intentionally minimal —
-    // it sets only directives that CANNOT block scripts/styles/fonts/images
-    // (so GTM, GA4, Meta Pixel, fonts and Vercel keep working). A full
-    // script-src CSP needs to be tested against those third parties before
-    // shipping — tracked as a follow-up, not set here.
+    // Security headers applied site-wide. Full script-src CSP is ENFORCED
+    // (flipped from Report-Only Jul 9 2026 after a static audit of every
+    // loaded resource — no legitimate resource is blocked).
+    //
+    // Allowlist notes:
+    //  - GTM / GA4 / Google Ads / Meta Pixel / YouTube / Vercel: analytics
+    //    and embeds fire through googletagmanager, google-analytics,
+    //    googleadservices, doubleclick, connect.facebook.net, youtube, vercel.
+    //  - formsubmit.co: contact + audit forms POST natively (form-action),
+    //    LP multi-step + profit-leak calculators POST via fetch (connect-src).
+    //  - *.sanity.io + wss://*.sanity.io: embedded Sanity Studio at /studio
+    //    needs data + realtime WebSocket; worker-src blob: for its web workers.
+    //  - Fonts are self-hosted via next/font, so font-src 'self' covers them.
     const securityHeaders = [
       { key: "X-Content-Type-Options", value: "nosniff" },
       { key: "X-Frame-Options", value: "SAMEORIGIN" },
@@ -208,12 +216,12 @@ const nextConfig: NextConfig = {
         key: "Strict-Transport-Security",
         value: "max-age=63072000; includeSubDomains; preload"
       },
+      { key: "X-DNS-Prefetch-Control", value: "on" },
       {
         key: "Content-Security-Policy",
         value:
-          "base-uri 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests"
-      },
-      { key: "X-DNS-Prefetch-Control", value: "on" }
+          "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://connect.facebook.net https://*.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://connect.facebook.net https://www.facebook.com https://*.vercel-insights.com https://formsubmit.co https://*.sanity.io wss://*.sanity.io; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.googletagmanager.com https://td.doubleclick.net https://www.facebook.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; frame-ancestors 'self'; upgrade-insecure-requests"
+      }
     ];
 
     const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
