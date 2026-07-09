@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { GlossaryLink } from "@/components/GlossaryLink";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -870,6 +871,11 @@ export default async function SearchKampanjePage({ params }: Props) {
           </Card>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["rsa", "match-types", "broad-match", "exact-match", "phrase-match", "negative-keywords", "quality-score"]}
+        locale={locale}
+      />
 
       {/* FAQ Accordion Section */}
       <Section background="gray">

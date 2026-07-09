@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -914,6 +915,11 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
           </div>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["quality-score", "ad-rank", "landing-page-experience", "gtm", "ga4", "attribution-model", "conversion"]}
+        locale={locale}
+      />
 
       {/* FAQ — accordion */}
       <Section background="gray">

@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { Layers, ShieldCheck, ListChecks, Handshake } from "lucide-react";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
@@ -876,6 +877,11 @@ export default async function StarterPaketPage({ params }: Props) {
           </Card>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["google-ads", "cpc", "ctr", "conversion", "quality-score"]}
+        locale={locale}
+      />
 
       {/* FAQ — proper accordion */}
       <Section background="gray">

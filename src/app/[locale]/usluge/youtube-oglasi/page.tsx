@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -626,6 +627,11 @@ export default async function YouTubeOglasiPage({ params }: Props) {
           </Card>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["cpv", "demand-gen", "display-network", "remarketing"]}
+        locale={locale}
+      />
 
       <Section>
         <div className="text-center mb-10">

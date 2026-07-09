@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { GlossaryLink } from "@/components/GlossaryLink";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -777,6 +778,11 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
           </Button>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["roas", "poas", "aov", "ltv", "cogs", "merchant-center", "pmax"]}
+        locale={locale}
+      />
 
       <Section background="gray">
         <div className="text-center mb-12">

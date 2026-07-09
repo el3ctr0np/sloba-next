@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -760,6 +761,11 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           </Button>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["ltv", "conversion-rate", "ga4", "remarketing", "first-party-data"]}
+        locale={locale}
+      />
 
       {/* FAQ Section - Accordion Style */}
       <Section background="gray">

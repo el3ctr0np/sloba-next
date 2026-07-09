@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { UserCheck, Target, Building2, Briefcase } from "lucide-react";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
@@ -882,6 +883,11 @@ export default async function KonsultacijePage({ params }: Props) {
           ))}
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["google-ads", "quality-score", "poas", "roas", "conversion"]}
+        locale={locale}
+      />
 
       {/* FAQ — proper accordion */}
       <Section background="gray">

@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { Banknote, Clock, Frown, BarChart3 } from "lucide-react";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = {
@@ -1232,6 +1233,11 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           </div>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["smart-bidding", "tcpa", "troas", "quality-score", "budget-pacing", "bid-adjustments"]}
+        locale={locale}
+      />
 
       {/* FAQ — proper accordion */}
       <Section>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -722,6 +723,11 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
           </Button>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["offline-conversion-import", "conversion", "cpc", "landing-page", "first-party-data"]}
+        locale={locale}
+      />
 
       {/* FAQ as Accordion */}
       <Section background="gray">

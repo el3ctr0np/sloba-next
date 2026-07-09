@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
+import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -819,6 +820,11 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           </div>
         </div>
       </Section>
+
+      <RelatedGlossaryTerms
+        slugs={["demand-gen", "display-network", "pmax", "roas", "attribution-model"]}
+        locale={locale}
+      />
 
       {/* FAQ Section */}
       <Section>

@@ -16,7 +16,6 @@ import {
 } from "./posts";
 import { BlogCTA } from "@/components/blog/BlogCTA";
 import { ReadNext } from "@/components/blog/ReadNext";
-import { PERSON_SCHEMA } from "@/lib/brand";
 
 /**
  * Segment the blog CTA by post intent.
@@ -1126,12 +1125,8 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
-  // Standalone Person entity (E-E-A-T author bio) — the Article's author/publisher
-  // reference this node via @id.
-  const personSchema = {
-    "@context": "https://schema.org",
-    ...PERSON_SCHEMA,
-  };
+  // Person (#person) is emitted site-wide by <LocalBusinessSchema /> in the
+  // locale layout; the article references it by @id (author/publisher).
 
   const howToSchema = getHowToSchema(canonicalSlug, locale);
 
@@ -1146,10 +1141,6 @@ export default async function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
       {faqSchema && (
         <script
