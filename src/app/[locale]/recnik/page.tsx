@@ -225,6 +225,62 @@ export default async function GlossaryPage({ params }: Props) {
 }
 
 /**
+ * Term → money page map. Wires the glossary into service/offer pages so each
+ * definition passes internal-link equity to a commercial page (the lever the
+ * glossary was missing — see glossary-tofu-strategy-analysis.md). Values are
+ * registered next-intl pathnames; next-intl localizes SR↔EN automatically.
+ */
+const TERM_SERVICE_MAP = {
+  // Shopping / feed
+  "google-shopping": "/usluge/google-shopping",
+  "merchant-center": "/usluge/google-shopping",
+  // Performance Max
+  pmax: "/usluge/performance-max",
+  // Search / keywords
+  rsa: "/usluge/search-kampanje",
+  "match-types": "/usluge/search-kampanje",
+  "broad-match": "/usluge/search-kampanje",
+  "exact-match": "/usluge/search-kampanje",
+  "phrase-match": "/usluge/search-kampanje",
+  "negative-keywords": "/usluge/search-kampanje",
+  // Remarketing
+  remarketing: "/usluge/remarketing",
+  "audience-network": "/usluge/remarketing",
+  // YouTube
+  cpv: "/usluge/youtube-oglasi",
+  // eCommerce economics
+  roas: "/usluge/google-ads-za-ecommerce",
+  poas: "/usluge/google-ads-za-ecommerce",
+  aov: "/usluge/google-ads-za-ecommerce",
+  ltv: "/usluge/google-ads-za-ecommerce",
+  cogs: "/usluge/google-ads-za-ecommerce",
+  "conversion-value": "/usluge/google-ads-za-ecommerce",
+  // Quality / audit
+  "quality-score": "/usluge/google-ads-audit",
+  "ad-rank": "/usluge/google-ads-audit",
+  "landing-page-experience": "/usluge/google-ads-audit",
+  "expected-ctr": "/usluge/google-ads-audit",
+  "ad-relevance": "/usluge/google-ads-audit",
+  // Tracking → audit / B2B
+  gtm: "/usluge/google-ads-audit",
+  ga4: "/usluge/google-ads-audit",
+  "enhanced-conversions": "/usluge/google-ads-audit",
+  "attribution-model": "/usluge/google-ads-audit",
+  "offline-conversion-import": "/usluge/google-ads-za-b2b",
+  // Bidding → management
+  "smart-bidding": "/usluge/google-ads-upravljanje",
+  tcpa: "/usluge/google-ads-upravljanje",
+  troas: "/usluge/google-ads-upravljanje",
+  "maximize-conversions": "/usluge/google-ads-upravljanje",
+  "maximize-conversion-value": "/usluge/google-ads-upravljanje",
+  "bid-adjustments": "/usluge/google-ads-upravljanje",
+  "portfolio-bidding": "/usluge/google-ads-upravljanje",
+  // Core
+  "google-ads": "/usluge/google-ads-upravljanje",
+  adwords: "/usluge/google-ads-upravljanje",
+} as const;
+
+/**
  * Single glossary entry card.
  * Renders term, aliases, definition, formula, example, benchmarks, related.
  */
@@ -239,6 +295,10 @@ function GlossaryEntry({
   const definition = isEn ? t.definitionEn : t.definitionSr;
   const example = isEn ? t.exampleEn : t.exampleSr;
   const relatedPost = isEn ? t.relatedPostEn : t.relatedPostSr;
+  const serviceHref =
+    t.slug in TERM_SERVICE_MAP
+      ? TERM_SERVICE_MAP[t.slug as keyof typeof TERM_SERVICE_MAP]
+      : undefined;
   const categoryLabel = glossaryCategoryLabels[t.category];
 
   return (
@@ -346,6 +406,19 @@ function GlossaryEntry({
               className="text-primary hover:underline"
             >
               {isEn ? "Full guide →" : "Kompletan vodič →"}
+            </Link>
+          </div>
+        )}
+        {serviceHref && (
+          <div className="mt-2">
+            <span className="font-semibold">
+              {isEn ? "Related service: " : "Povezana usluga: "}
+            </span>
+            <Link
+              href={serviceHref}
+              className="text-primary hover:underline font-medium"
+            >
+              {isEn ? "See the service →" : "Pogledaj uslugu →"}
             </Link>
           </div>
         )}
