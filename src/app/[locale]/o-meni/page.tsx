@@ -112,7 +112,7 @@ export default async function AboutPage({ params }: Props) {
           period: "Recognition",
           title: "Exposure Ninja (UK) — Senior PPC Expert",
           description:
-            "I simultaneously worked as a Senior PPC expert at Exposure Ninja, one of the UK's most prominent digital agencies. There I led campaigns that won 3 UK Search Awards for the Google Search and Microsoft Advertising campaigns I set up, including Best Use of Search (B2B, Large) at the 2021 UK Search Awards."
+            "I simultaneously worked as a Senior PPC expert at Exposure Ninja, one of the UK's most prominent digital agencies. Campaigns I worked on won 3 awards at the 2021 UK Search Awards: Best Low Budget Campaign (PPC) for Aromantic (\"Low Budget, Huge ROI\"), where I ran the paid channel, plus two Best Use of Search awards (B2B and Retail/Ecommerce) for Takeaway Packaging."
         },
         {
           period: "Today",
@@ -138,7 +138,7 @@ export default async function AboutPage({ params }: Props) {
           period: "Priznanja",
           title: "Exposure Ninja (UK) — Senior PPC ekspert",
           description:
-            "Uporedo sam radio kao Senior PPC ekspert u Exposure Ninja, jednoj od najpoznatijih UK digitalnih agencija. Tu sam vodio kampanje koje su osvojile 3 UK Search Awards nagrade za Google Search i Microsoft Advertising kampanje koje sam postavio, uključujući Best Use of Search (B2B, Large) na UK Search Awards 2021."
+            "Uporedo sam radio kao Senior PPC ekspert u Exposure Ninja, jednoj od najpoznatijih UK digitalnih agencija. Kampanje na kojima sam radio osvojile su 3 nagrade na UK Search Awards 2021: Best Low Budget Campaign (PPC) za Aromantic (\"Low Budget, Huge ROI\"), gde sam vodio paid kanal, i dve Best Use of Search nagrade (B2B i Retail/Ecommerce) za Takeaway Packaging."
         },
         {
           period: "Danas",
@@ -495,6 +495,21 @@ export default async function AboutPage({ params }: Props) {
             </div>
           ))}
         </div>
+        <p className="text-center text-sm text-gray-500 mt-8">
+          {locale === "en"
+            ? "Awards verified on the official "
+            : "Nagrade potvrđene na zvaničnoj stranici "}
+          <a
+            href="https://searchawards.co.uk/2021-winners/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline hover:no-underline"
+          >
+            {locale === "en"
+              ? "UK Search Awards 2021 winners page"
+              : "UK Search Awards 2021"}
+          </a>
+        </p>
       </Section>
 
       {/* FAQ */}

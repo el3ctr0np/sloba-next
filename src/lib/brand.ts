@@ -39,8 +39,9 @@ export const PERSON_SCHEMA = {
     name: "Exposure Ninja",
   },
   award: [
-    "UK Search Awards 2021 - Best Use of Search (B2B, Large)",
-    "UK Search Awards winner (3x)",
+    "UK Search Awards 2021 - Best Low Budget Campaign (PPC), Aromantic",
+    "UK Search Awards 2021 - Best Use of Search B2B (SEO) Large, Takeaway Packaging",
+    "UK Search Awards 2021 - Best Use of Search Retail/Ecommerce (SEO) Large, Takeaway Packaging",
   ],
   knowsAbout: [
     "Google Ads",
