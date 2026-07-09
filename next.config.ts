@@ -213,7 +213,18 @@ const nextConfig: NextConfig = {
         value:
           "base-uri 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests"
       },
-      { key: "X-DNS-Prefetch-Control", value: "on" }
+      { key: "X-DNS-Prefetch-Control", value: "on" },
+      // FULL CSP in REPORT-ONLY mode — blocks NOTHING, only reports violations
+      // to the browser console. TEST: deploy this branch to a Vercel preview,
+      // open the site (clicking around so GTM/GA/Meta/YouTube all fire), and
+      // read the console for "Content-Security-Policy-Report-Only" violations.
+      // Once no legitimate resource is flagged, rename the key below to
+      // "Content-Security-Policy" to ENFORCE, and delete the minimal CSP above.
+      {
+        key: "Content-Security-Policy-Report-Only",
+        value:
+          "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://connect.facebook.net https://*.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://connect.facebook.net https://www.facebook.com https://*.vercel-insights.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.googletagmanager.com https://td.doubleclick.net https://www.facebook.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+      }
     ];
 
     const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
