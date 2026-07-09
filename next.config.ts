@@ -220,10 +220,16 @@ const nextConfig: NextConfig = {
       // read the console for "Content-Security-Policy-Report-Only" violations.
       // Once no legitimate resource is flagged, rename the key below to
       // "Content-Security-Policy" to ENFORCE, and delete the minimal CSP above.
+      //
+      // Allowlist notes (found via static audit, Jul 9 2026):
+      //  - formsubmit.co: contact + audit forms POST natively (form-action),
+      //    LP multi-step + profit-leak calculators POST via fetch (connect-src).
+      //  - *.sanity.io + wss://*.sanity.io: embedded Sanity Studio at /studio
+      //    needs data + realtime WebSocket; worker-src blob: for its web workers.
       {
         key: "Content-Security-Policy-Report-Only",
         value:
-          "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://connect.facebook.net https://*.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://connect.facebook.net https://www.facebook.com https://*.vercel-insights.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.googletagmanager.com https://td.doubleclick.net https://www.facebook.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+          "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://connect.facebook.net https://*.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://connect.facebook.net https://www.facebook.com https://*.vercel-insights.com https://formsubmit.co https://*.sanity.io wss://*.sanity.io; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.googletagmanager.com https://td.doubleclick.net https://www.facebook.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; frame-ancestors 'self'; upgrade-insecure-requests"
       }
     ];
 
