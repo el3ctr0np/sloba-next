@@ -112,7 +112,7 @@ export default async function AboutPage({ params }: Props) {
           period: "Recognition",
           title: "Exposure Ninja (UK) — Senior PPC Expert",
           description:
-            "I simultaneously worked as a Senior PPC expert at one of the UK's most prominent digital agencies. There I led campaigns that won 3x UK Search Awards — for Google Search and Microsoft Search campaigns I set up."
+            "I simultaneously worked as a Senior PPC expert at Exposure Ninja, one of the UK's most prominent digital agencies. There I led campaigns that won 3 UK Search Awards for the Google Search and Microsoft Advertising campaigns I set up, including Best Use of Search (B2B, Large) at the 2021 UK Search Awards."
         },
         {
           period: "Today",
@@ -138,7 +138,7 @@ export default async function AboutPage({ params }: Props) {
           period: "Priznanja",
           title: "Exposure Ninja (UK) — Senior PPC ekspert",
           description:
-            "Uporedo sam radio kao Senior PPC ekspert u jednoj od najpoznatijih UK digitalnih agencija. Tu sam vodio kampanje koje su osvojile 3x UK Search Awards — za Google Search i Microsoft Search kampanje koje sam postavio."
+            "Uporedo sam radio kao Senior PPC ekspert u Exposure Ninja, jednoj od najpoznatijih UK digitalnih agencija. Tu sam vodio kampanje koje su osvojile 3 UK Search Awards nagrade za Google Search i Microsoft Advertising kampanje koje sam postavio, uključujući Best Use of Search (B2B, Large) na UK Search Awards 2021."
         },
         {
           period: "Danas",
@@ -194,57 +194,9 @@ export default async function AboutPage({ params }: Props) {
         }
       ];
 
-  const personSchema = locale === "en"
-    ? {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        name: "Slobodan Jelisavac",
-        url: "https://www.slobodan-jelisavac.com",
-        jobTitle: "Google Ads Consultant",
-        description:
-          "Google Ads Consultant with 10+ years experience. UK Search Awards winner, 50+ brands in 6+ countries.",
-        knowsAbout: [
-          "Google Ads",
-          "PPC Strategy",
-          "eCommerce",
-          "B2B Marketing",
-          "Performance Marketing"
-        ],
-        award: ["UK Search Awards"],
-        areaServed: [
-          { "@type": "Country", name: "Serbia" },
-          { "@type": "Country", name: "United Kingdom" },
-          { "@type": "Country", name: "United States" },
-          { "@type": "Country", name: "Germany" },
-          { "@type": "Country", name: "Croatia" },
-          { "@type": "Country", name: "Australia" }
-        ]
-      }
-    : {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        name: "Slobodan Jelisavac",
-        url: "https://www.slobodan-jelisavac.com",
-        jobTitle: "Google Ads Konsultant",
-        description:
-          "Google Ads konsultant sa 10+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja.",
-        knowsAbout: [
-          "Google Ads",
-          "PPC Strategy",
-          "eCommerce",
-          "B2B Marketing",
-          "Performance Marketing"
-        ],
-        award: ["UK Search Awards"],
-        areaServed: [
-          { "@type": "Country", name: "Serbia" },
-          { "@type": "Country", name: "United Kingdom" },
-          { "@type": "Country", name: "United States" },
-          { "@type": "Country", name: "Germany" },
-          { "@type": "Country", name: "Croatia" },
-          { "@type": "Country", name: "Australia" }
-        ]
-      };
+  // Person (#person) is emitted site-wide by <LocalBusinessSchema /> in the
+  // locale layout — do not re-emit it here (a second #person would duplicate
+  // the @id and split the entity).
 
   const breadcrumbSchema = locale === "en"
     ? {
@@ -301,10 +253,6 @@ export default async function AboutPage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <script
@@ -348,8 +296,8 @@ export default async function AboutPage({ params }: Props) {
 
               <p className="text-lg text-slate-300 mb-6">
                 {locale === "en"
-                  ? "I help companies from Serbia, the UK, and the USA get the most out of Google Ads. No cookie-cutter strategies, no junior staff on your account — just direct work with an expert."
-                  : "Pomažem kompanijama iz Srbije, UK-a i USA da izvuku maksimum iz Google Ads-a. Bez generic pristupa, bez junior kadrova na vašem nalogu — samo direktan rad sa ekspertom."}
+                  ? "Slobodan Jelisavac is an independent Google Ads consultant based in Belgrade, Serbia, with 10+ years of experience managing campaigns for 50+ brands across 6+ countries. I help companies from Serbia, the UK, and the USA get the most out of Google Ads. No cookie-cutter strategies, no junior staff on your account, just direct work with the expert."
+                  : "Slobodan Jelisavac je nezavisni Google Ads konsultant iz Beograda, sa 10+ godina iskustva i preko 50 brendova u 6+ zemalja. Pomažem kompanijama iz Srbije, UK-a i USA da izvuku maksimum iz Google Ads-a. Bez generic pristupa, bez junior kadrova na vašem nalogu, samo direktan rad sa ekspertom."}
               </p>
 
               {/* Trust Badges */}
@@ -455,13 +403,13 @@ export default async function AboutPage({ params }: Props) {
             ) : (
               <>
                 <p>
-                  Ušao sam u ovu industriju pre devet godina — potpuno slučajno. Tražio sam posao koji mogu da radim remote, i to me je dovelo do digitalnog oglašavanja.
+                  Ušao sam u ovu industriju pre devet godina, potpuno slučajno. Tražio sam posao koji mogu da radim remote, i to me je dovelo do digitalnog oglašavanja.
                 </p>
                 <p>
-                  Brzo sam otkrio da me Google Ads privlači na način koji nisam očekivao. Nije to bio marketing u klasičnom smislu — bio je to rad sa podacima, analiza brojeva, finansijska optimizacija. Stvari za koje nisam ni znao da me privlače dok ih nisam probao.
+                  Brzo sam otkrio da me Google Ads privlači na način koji nisam očekivao. Nije to bio marketing u klasičnom smislu. Bio je to rad sa podacima, analiza brojeva, finansijska optimizacija. Stvari za koje nisam ni znao da me privlače dok ih nisam probao.
                 </p>
                 <p>
-                  Ispostavilo se da je to oblast u kojoj analitičnost i upornost donose merljive rezultate — deset godina kasnije, kampanje na kojima sam radio osvojile su tri UK Search Awards.
+                  Ispostavilo se da je to oblast u kojoj analitičnost i upornost donose merljive rezultate. Deset godina kasnije, kampanje na kojima sam radio osvojile su tri UK Search Awards.
                 </p>
               </>
             )}

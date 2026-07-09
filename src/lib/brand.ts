@@ -27,13 +27,21 @@ export const PERSON_SCHEMA = {
   "@id": "https://www.slobodan-jelisavac.com/#person",
   name: "Slobodan Jelisavac",
   alternateName: "Sloba Jelisavac",
-  jobTitle: "Google Ads Strategist",
+  jobTitle: "Google Ads Consultant",
   url: "https://www.slobodan-jelisavac.com",
   image: "https://www.slobodan-jelisavac.com/sloba.webp",
   worksFor: {
     "@type": "Organization",
     name: "Funky Enterprises",
   },
+  alumniOf: {
+    "@type": "Organization",
+    name: "Exposure Ninja",
+  },
+  award: [
+    "UK Search Awards 2021 - Best Use of Search (B2B, Large)",
+    "UK Search Awards winner (3x)",
+  ],
   knowsAbout: [
     "Google Ads",
     "PPC",

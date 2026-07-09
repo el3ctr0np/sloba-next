@@ -188,6 +188,45 @@ const nextConfig: NextConfig = {
         permanent: true
       },
     ];
+  },
+
+  async headers() {
+    // Security headers applied site-wide. The CSP is intentionally minimal —
+    // it sets only directives that CANNOT block scripts/styles/fonts/images
+    // (so GTM, GA4, Meta Pixel, fonts and Vercel keep working). A full
+    // script-src CSP needs to be tested against those third parties before
+    // shipping — tracked as a follow-up, not set here.
+    const securityHeaders = [
+      { key: "X-Content-Type-Options", value: "nosniff" },
+      { key: "X-Frame-Options", value: "SAMEORIGIN" },
+      { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+      {
+        key: "Permissions-Policy",
+        value: "camera=(), microphone=(), geolocation=(), browsing-topics=()"
+      },
+      {
+        key: "Strict-Transport-Security",
+        value: "max-age=63072000; includeSubDomains; preload"
+      },
+      {
+        key: "Content-Security-Policy",
+        value:
+          "base-uri 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests"
+      },
+      { key: "X-DNS-Prefetch-Control", value: "on" }
+    ];
+
+    const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
+
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      // Private surfaces: robots.txt disallows crawling, but add a header-level
+      // noindex so a linked URL can never be URL-indexed either.
+      { source: "/studio/:path*", headers: noindex },
+      { source: "/portal/:path*", headers: noindex },
+      { source: "/klijenti-login/:path*", headers: noindex },
+      { source: "/klijenti-login", headers: noindex }
+    ];
   }
 };
 

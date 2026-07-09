@@ -1095,6 +1095,10 @@ export default async function BlogPostPage({ params }: Props) {
       "@id": `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
     },
     inLanguage: locale === "en" ? "en" : "sr",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2"],
+    },
   };
 
   const breadcrumbSchema = {
