@@ -53,6 +53,7 @@ export function Header() {
   const navItems = useMemo(() => [
     { label: t("nav.home"), href: "/" as const },
     { label: t("nav.services"), href: "/usluge" as const, hasServiceMenu: true },
+    { label: t("nav.methodology"), href: "/metodologija" as const },
     { label: t("nav.caseStudies"), href: "/case-studies" as const },
     { label: t("nav.blog"), href: "/blog" as const },
     { label: t("nav.glossary"), href: "/recnik" as const },

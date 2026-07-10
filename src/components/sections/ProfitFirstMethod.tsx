@@ -1,3 +1,5 @@
+import { Link } from "@/i18n/navigation";
+
 const PHASES_EN = [
   {
     n: "01",
@@ -81,6 +83,14 @@ export function ProfitFirstMethod({ locale }: { locale: string }) {
               <p className="text-slate-300 text-sm leading-relaxed">{p.desc}</p>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-10">
+          <Link
+            href="/metodologija"
+            className="inline-flex items-center gap-1 text-primary font-semibold hover:underline"
+          >
+            {isEn ? "The complete method →" : "Kompletan metod →"}
+          </Link>
         </div>
       </div>
     </section>
