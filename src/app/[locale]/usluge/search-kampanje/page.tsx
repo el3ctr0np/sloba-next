@@ -12,11 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Search Ads Management | High-Intent PPC Campaigns — Slobodan Jelisavac"
-      : "Google Search kampanje Srbija | Stručnjak za PPC - Slobodan Jelisavac",
+      ? "Google Search Ads Management | High-Intent PPC — Digital Jelisavac"
+      : "Google Search Kampanje Srbija | Digital Jelisavac",
     description: isEn
-      ? "Expert Google Search campaign management for B2B and eCommerce. High-intent keyword strategy, conversion-focused ad copy, and Quality Score optimization. Free consultation."
-      : "Profesionalne Google Search kampanje za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija. Besplatna konsultacija.",
+      ? "Digital Jelisavac's expert Google Search campaign management for B2B and eCommerce. High-intent keyword strategy, conversion-focused ad copy, and Quality Score optimization. Free consultation."
+      : "Profesionalne Google Search kampanje od Digital Jelisavac agencije za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija. Besplatna konsultacija.",
     locale,
     path: "/services/search-campaigns",
     srPath: "/usluge/search-kampanje",
@@ -502,7 +502,7 @@ export default async function SearchKampanjePage({ params }: Props) {
           </nav>
 
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
-            {locale === "en" ? "Google Search campaigns — reach customers when they search for you" : "Google Search kampanje — dođite do kupaca kada vas traže"}
+            {locale === "en" ? "Google Search campaigns — reach customers when they search for you" : "Google Search kampanje - dođite do kupaca kada vas traže"}
           </h1>
 
           {/* Trust Badges */}

@@ -15,11 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Kickstart — Senior Setup from $990 — Slobodan Jelisavac"
-      : "Google Ads Kickstart — senior setup od €690",
+      ? "Google Ads Kickstart — Senior Setup from $990 | Digital Jelisavac"
+      : "Google Ads Kickstart - senior setup od €690 | Digital Jelisavac",
     description: isEn
-      ? "Senior Google Ads setup for teams with an in-house owner who takes it from there. Architecture, keywords, RSAs, tracking spec, 60-day plan, handover session. From $990."
-      : "Senior Google Ads setup za timove koji imaju osobu za dalje vođenje kampanja. Arhitektura naloga, ključne reči, RSA oglasi, tracking specifikacija, 60-dnevni plan, handover sesija. Od €690.",
+      ? "Digital Jelisavac's senior Google Ads setup for teams with an in-house owner who takes it from there. Architecture, keywords, RSAs, tracking spec, 60-day plan, handover session. From $990."
+      : "Senior Google Ads setup od Digital Jelisavac agencije za timove koji imaju osobu za dalje vođenje kampanja. Arhitektura naloga, ključne reči, RSA oglasi, tracking specifikacija, 60-dnevni plan, handover sesija. Od €690.",
     locale,
     path: "/services/starter-package",
     srPath: "/usluge/starter-paket",
@@ -538,7 +538,7 @@ export default async function StarterPaketPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {isEn
                 ? "Google Ads Kickstart — senior setup, you take it from there"
-                : "Google Ads Kickstart — senior setup, vi vodite dalje"}
+                : "Google Ads Kickstart - senior setup, vi vodite dalje"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {isEn ? (
@@ -551,10 +551,11 @@ export default async function StarterPaketPage({ params }: Props) {
                 </>
               ) : (
                 <>
-                  Imate nekoga in-house ko će voditi nalog — samo treba da bude
-                  napravljen kako treba od prvog dana. Kickstart donosi arhitekturu
-                  naloga, napisane oglase i verifikovan tracking temelj, pa ga predaje
-                  uz <strong className="text-white">60-dnevni plan</strong>. Bez
+                  Imate nekoga in-house ko će voditi nalog, samo treba da bude
+                  napravljen kako treba od prvog dana. Kickstart, senior projekat
+                  Digital Jelisavac agencije, donosi arhitekturu naloga, napisane
+                  oglase i verifikovan tracking temelj, pa ga predaje uz{" "}
+                  <strong className="text-white">60-dnevni plan</strong>. Bez
                   mesečnog retainera.
                 </>
               )}

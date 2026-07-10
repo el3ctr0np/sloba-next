@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "YouTube Ads Management | Video Advertising Campaigns — Slobodan Jelisavac"
-      : "YouTube oglašavanje i oglasi Srbija | Video kampanje sa merljivim ROI",
+      ? "YouTube Ads Management | Video Campaigns — Digital Jelisavac"
+      : "YouTube Oglašavanje i Oglasi Srbija | Digital Jelisavac",
     description: isEn
-      ? "Professional YouTube advertising management. Drive brand awareness and conversions through targeted video campaigns. Expert PPC consultant with 10+ years experience across 6+ countries."
-      : "YouTube oglašavanje u Srbiji — profesionalno upravljanje YouTube oglasima. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1.000/mesečno.",
+      ? "Digital Jelisavac's professional YouTube advertising management. Drive brand awareness and conversions through targeted video campaigns. Expert PPC consultant with 10+ years experience across 6+ countries."
+      : "Digital Jelisavac profesionalno upravlja YouTube oglašavanjem u Srbiji. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1.000/mesečno.",
     locale,
     path: "/services/youtube-ads",
     srPath: "/usluge/youtube-oglasi",
@@ -415,7 +415,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "YouTube Ads — video advertising on the world's largest video platform"
-                : "YouTube oglašavanje i oglasi — video kampanje koje donose rezultate"}
+                : "YouTube oglašavanje i oglasi - video kampanje koje donose rezultate"}
             </h1>
             <p className="text-lg text-gray-300 mb-8">
               {locale === "en"

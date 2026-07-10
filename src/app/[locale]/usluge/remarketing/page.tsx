@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Remarketing Services | Retargeting Campaign Management — Slobodan Jelisavac"
-      : "Remarketing Kampanje Srbija | Google, Meta, Pinterest — Slobodan Jelisavac",
+      ? "Google Ads Remarketing Services | Retargeting Campaigns — Digital Jelisavac"
+      : "Remarketing Kampanje Srbija | Google, Meta, Pinterest - Digital Jelisavac",
     description: isEn
-      ? "Expert remarketing & retargeting campaign management across Google Ads, Meta, and Pinterest. Display remarketing, YouTube remarketing, RLSA, and dynamic retargeting. 10+ years of experience. Book a free consultation."
-      : "Profesionalne remarketing kampanje koje vraćaju posetioce i povećavaju konverzije. Google Display, YouTube, RLSA, Meta, Pinterest. Zakažite konsultaciju.",
+      ? "Digital Jelisavac's expert remarketing & retargeting campaign management across Google Ads, Meta, and Pinterest. Display remarketing, YouTube remarketing, RLSA, and dynamic retargeting. 10+ years of experience. Book a free consultation."
+      : "Profesionalne remarketing kampanje od Digital Jelisavac agencije koje vraćaju posetioce i povećavaju konverzije. Google Display, YouTube, RLSA, Meta, Pinterest. Zakažite konsultaciju.",
     locale,
     path: "/services/remarketing",
     srPath: "/usluge/remarketing",
@@ -469,7 +469,7 @@ export default async function RemarketingPage({ params }: Props) {
                 </>
               ) : (
                 <>
-                  Remarketing kampanje — vratite posetioce koji su otišli bez
+                  Remarketing kampanje - vratite posetioce koji su otišli bez
                   kupovine
                 </>
               )}
@@ -490,8 +490,8 @@ export default async function RemarketingPage({ params }: Props) {
                   <strong className="text-white">remarketing kampanja</strong>,
                   ostalih 97% odlazi i možda se nikad ne vrati. Remarketing vam
                   omogućava da pratite posetioce na sajtovima, YouTube-u, Gmail-u,
-                  Facebooku, Instagramu i Pinterest-u — i da ih podsetite zašto su
-                  došli na vaš sajt.
+                  Facebooku, Instagramu i Pinterest-u, kako biste ih podsetili
+                  zašto su došli na vaš sajt.
                 </>
               )}
             </p>

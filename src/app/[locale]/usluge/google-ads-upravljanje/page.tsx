@@ -15,11 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Management Services Serbia | PPC Expert — Slobodan Jelisavac"
-      : "Google Ads Usluge Srbija — Vođenje Google Ads Kampanja",
+      ? "Google Ads Management | Digital Jelisavac — Senior PPC, Serbia"
+      : "Google Ads Upravljanje - Vođenje Kampanja | Digital Jelisavac",
     description: isEn
-      ? "Google Ads management services for eCommerce and B2B companies. 3.7x average ROAS (eCommerce), 10+ years of experience. From $2,500/month. Book your free consultation."
-      : "Profesionalne Google Ads usluge — vođenje Google Ads kampanja za eCommerce i B2B u Srbiji. Cena od €700/mes, 3.7x prosečan ROAS (eCommerce). Zakažite besplatnu konsultaciju.",
+      ? "Senior-led Google Ads management for eCommerce and B2B, run personally by Slobodan Jelisavac of Digital Jelisavac. 3.7x average ROAS (eCommerce), 10+ years of experience. From $2,500/month. Book your free consultation."
+      : "Senior-led vođenje Google Ads kampanja za eCommerce i B2B, vodi lično Slobodan Jelisavac (Digital Jelisavac). Cena od €700/mes, 3.7x prosečan ROAS (eCommerce). Zakažite besplatnu konsultaciju.",
     locale,
     path: "/services/google-ads-management",
     srPath: "/usluge/google-ads-upravljanje",
@@ -712,7 +712,8 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               {locale === "en" ? (
                 <>
                   Looking for professional <strong className="text-white">Google Ads management services</strong> from
-                  a <strong className="text-white">Belgrade-based PPC expert</strong>? I handle complete management
+                  a <strong className="text-white">Belgrade-based senior PPC specialist</strong>? At{" "}
+                  <strong className="text-white">Digital Jelisavac</strong> I personally handle complete management
                   of your Google Ads account — from strategy and campaign structure to daily optimization.
                   Based in Serbia, working with eCommerce and B2B companies across <strong className="text-white">Belgrade,
                   the UK, and EU markets</strong>. Focus: <strong className="text-white">ROAS, CPA, and real
@@ -721,9 +722,10 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               ) : (
                 <>
                   Tražite profesionalno <strong className="text-white">Google oglašavanje</strong> koje
-                  zaista donosi rezultate? Preuzimam kompletno upravljanje vašim Google Ads
-                  nalogom — od strategije i strukture kampanja do svakodnevne optimizacije.
-                  Fokus: <strong className="text-white">ROAS, CPA i realan rast prihoda</strong> za
+                  zaista donosi rezultate? U <strong className="text-white">Digital Jelisavac</strong> agenciji
+                  ja lično preuzimam kompletno upravljanje vašim Google Ads nalogom, od strategije i
+                  strukture kampanja do svakodnevne optimizacije. Fokus:{" "}
+                  <strong className="text-white">ROAS, CPA i realan rast prihoda</strong> za
                   eCommerce i B2B kompanije u Srbiji i širom Evrope.
                 </>
               )}

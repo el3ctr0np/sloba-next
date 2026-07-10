@@ -16,6 +16,7 @@ for (const [canonical, localized] of Object.entries(routing.pathnames)) {
 const routeLastmod: Record<string, string> = {
   "": "2026-04-17",
   "/o-meni": "2026-02-10",
+  "/metodologija": "2026-07-09",
   "/kontakt": "2026-01-26",
   "/kontakt/hvala": "2026-01-26",
   "/usluge": "2026-02-10",

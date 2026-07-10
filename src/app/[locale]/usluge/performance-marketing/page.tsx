@@ -505,13 +505,13 @@ export default async function PerformanceMarketingPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "Performance Marketing — Complete omnichannel team for serious growth"
-                : "Performance Marketing u Srbiji — omnichannel tim za ozbiljan rast"}
+                : "Performance Marketing u Srbiji - omnichannel tim za ozbiljan rast"}
             </h1>
 
             <p className="text-lg text-gray-300 mb-8">
               {locale === "en"
                 ? "For companies that want more than one channel. You get a dedicated team of experts covering Google Ads, Meta advertising, SEO, CRO, and creative. The result: integrated omnichannel approach with a single point of contact."
-                : "Performance marketing u Srbiji zahteva više od jednog kanala — kombinaciju Google Ads-a, Meta oglašavanja, SEO-a, CRO-a i kreative. Dobijate dedicated tim eksperata koji pokrivaju sve kanale, sa jednom kontaktnom tačkom. Rezultat: integrisani omnichannel pristup prilagođen srpskom i regionalnom tržištu."}
+                : "Performance marketing u Srbiji zahteva više od jednog kanala, kombinaciju Google Ads-a, Meta oglašavanja, SEO-a, CRO-a i kreative. Dobijate dedicated tim eksperata koji pokrivaju sve kanale, sa jednom kontaktnom tačkom. Rezultat: integrisani omnichannel pristup prilagođen srpskom i regionalnom tržištu."}
             </p>
 
             <div className="border-l-4 border-primary bg-blue-50 p-4 md:p-5 rounded-r-lg mb-8 text-left">
@@ -519,7 +519,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
                 <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
                 {locale === "en"
                   ? "Performance Marketing (powered by Funky Enterprises) is an omnichannel team — Google Ads, Meta, SEO, CRO, and tracking under one strategy. For brands with $20k+/month per channel aiming for category leadership."
-                  : "Performance Marketing (Powered by Funky Enterprises) je omnichannel tim — Google Ads, Meta, SEO, CRO i tracking pod jednom strategijom. Za brendove sa €5.000+/mes budžetom koji ciljaju lidersku poziciju u kategoriji."}
+                  : "Performance Marketing (Powered by Funky Enterprises) je omnichannel tim - Google Ads, Meta, SEO, CRO i tracking pod jednom strategijom. Za brendove sa €5.000+/mes budžetom koji ciljaju lidersku poziciju u kategoriji."}
               </p>
             </div>
 

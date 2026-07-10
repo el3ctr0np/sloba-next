@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Performance Max Campaign Management | PMax Google Ads — Slobodan Jelisavac"
-      : "Performance Max kampanje Srbija | PMax specijalist - Slobodan Jelisavac",
+      ? "Performance Max Campaign Management | PMax — Digital Jelisavac"
+      : "Performance Max Kampanje Srbija | Digital Jelisavac",
     description: isEn
-      ? "Expert Performance Max campaign management for businesses seeking consolidated advertising. Asset group optimization, audience signals, and transparent tracking across all Google channels."
-      : "Google Ads Srbija — Performance Max kampanje. Profesionalno upravljanje za firme koje žele konsolidovano oglašavanje sa jednim budžetom i transparentno praćenje rezultata.",
+      ? "Digital Jelisavac's expert Performance Max campaign management for businesses seeking consolidated advertising. Asset group optimization, audience signals, and transparent tracking across all Google channels."
+      : "Digital Jelisavac vodi Performance Max kampanje, profesionalno upravljanje za firme koje žele konsolidovano oglašavanje sa jednim budžetom i transparentno praćenje rezultata.",
     locale,
     path: "/services/performance-max",
     srPath: "/usluge/performance-max",
@@ -407,7 +407,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "Performance Max management — strategic control, not black-box automation"
-                : "Performance Max — strateška kontrola umesto \"set it and forget it\" pristupa"}
+                : "Performance Max - strateška kontrola umesto \"set it and forget it\" pristupa"}
             </h1>
             <p className="text-lg text-gray-300 mb-8">
               {locale === "en" ? (

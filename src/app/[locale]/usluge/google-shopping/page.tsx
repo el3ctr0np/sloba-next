@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Shopping Campaign Management | eCommerce PPC Services — Slobodan Jelisavac"
-      : "Google Shopping kampanje Srbija | eCommerce specijalist - Slobodan Jelisavac",
+      ? "Google Shopping Campaign Management | eCommerce PPC — Digital Jelisavac"
+      : "Google Shopping Kampanje Srbija | Digital Jelisavac",
     description: isEn
-      ? "Expert Google Shopping campaign management for eCommerce brands. Product feed optimization, bid strategies, campaign structure. Maximize ROAS and sell more products."
-      : "Google Ads Srbija — specijalizovane Google Shopping kampanje za eCommerce. Feed optimizacija, bid strategije, struktura kampanja. Povećajte ROAS i prodajte više proizvoda.",
+      ? "Digital Jelisavac's expert Google Shopping campaign management for eCommerce brands. Product feed optimization, bid strategies, campaign structure. Maximize ROAS and sell more products."
+      : "Digital Jelisavac vodi specijalizovane Google Shopping kampanje za eCommerce u Srbiji - feed optimizacija, bid strategije, struktura kampanja. Povećajte ROAS i prodajte više proizvoda.",
     locale,
     path: "/services/google-shopping",
     srPath: "/usluge/google-shopping",

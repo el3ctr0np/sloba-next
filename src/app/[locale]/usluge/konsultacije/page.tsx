@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Ads Consulting | Price from $200/hr — Slobodan Jelisavac"
-      : "Google Ads Konsultacije Srbija — Cena od €150/sat",
+      : "Google Ads Konsultacije - Cena od €150/sat | Digital Jelisavac",
     description: isEn
-      ? "Google Ads consulting services from $200/hr (3h package $500). Get strategic advice, second opinions, and problem-solving for your PPC campaigns. No long-term commitment."
-      : "Google Ads usluge — ekspertske konsultacije u Srbiji, cena od €150/sat (paket 3h €400). Strategija, second opinion, problem solving. Bez dugoročne obaveze. Zakažite konsultaciju.",
+      ? "Google Ads consulting from $200/hr (3h package $500) with Slobodan Jelisavac of Digital Jelisavac. Strategic advice, second opinions, and problem-solving for your PPC campaigns. No long-term commitment."
+      : "Google Ads konsultacije direktno sa Slobodanom Jelisavcem (Digital Jelisavac), cena od €150/sat (paket 3h €400). Strategija, second opinion, problem solving. Bez dugoročne obaveze. Zakažite konsultaciju.",
     locale,
     path: "/services/consultations",
     srPath: "/usluge/konsultacije",
@@ -523,7 +523,7 @@ export default async function KonsultacijePage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "Expert advice when you need it — no long-term commitment"
-                : "Ekspertski savet kada vam treba — bez dugoročne obaveze"}
+                : "Ekspertski savet kada vam treba, bez dugoročne obaveze"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (

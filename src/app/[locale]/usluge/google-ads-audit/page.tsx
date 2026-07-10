@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Deep Audit + Action Plan | PPC Account Analysis — Slobodan Jelisavac"
-      : "Deep Audit + Action Plan — Google Ads Audit Srbija",
+      ? "Deep Audit + Action Plan | Digital Jelisavac — PPC Analysis"
+      : "Deep Audit + Action Plan - Google Ads Audit | Digital Jelisavac",
     description: isEn
-      ? "Deep Audit + Action Plan reveals where you're losing money and how to improve ROAS. In-depth campaign analysis with prioritized recommendations. From $500."
-      : "Deep Audit + Action Plan — profesionalni audit otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljna analiza kampanja, cena od €450.",
+      ? "A Deep Audit + Action Plan from Digital Jelisavac reveals where you're losing money and how to improve ROAS. In-depth campaign analysis by senior specialist Slobodan Jelisavac, with prioritized recommendations. From $500."
+      : "Deep Audit + Action Plan: profesionalni audit koji otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljnu analizu radi lično Slobodan Jelisavac (Digital Jelisavac), cena od €450.",
     locale,
     path: "/services/google-ads-audit",
     srPath: "/usluge/google-ads-audit",
@@ -485,7 +485,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "Deep Audit + Action Plan — discover where you're losing money"
-                : "Deep Audit + Action Plan — otkrijte gde gubite novac"}
+                : "Deep Audit + Action Plan - otkrijte gde gubite novac"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
@@ -502,7 +502,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                   <strong className="text-white">Deep Audit + Action Plan</strong> pokazuje
                   gde gubite novac, koje prilike propuštate i šta konkretno treba promeniti.
                   Analiza uključuje strategijski pregled koji uzima u obzir vaš biznis model,
-                  marže i ciljeve — ne samo tehničke metrike.
+                  marže i ciljeve, ne samo tehničke metrike.
                 </>
               )}
             </p>

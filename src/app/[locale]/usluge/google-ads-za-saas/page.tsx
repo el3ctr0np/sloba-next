@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads for SaaS | PPC Lead Generation for Software Companies — Slobodan Jelisavac"
-      : "Google Ads za SaaS | Niži CAC, brže skaliranje - Slobodan Jelisavac",
+      ? "Google Ads for SaaS | PPC Lead Generation — Digital Jelisavac"
+      : "Google Ads za SaaS | Niži CAC, brže skaliranje - Digital Jelisavac",
     description: isEn
-      ? "Reduce CAC and scale SaaS customer acquisition with Google Ads. Focus on trial-to-paid conversions, demo bookings, and metrics that drive growth. 10+ years working with B2B SaaS companies."
-      : "Smanjite CAC i skalirajte SaaS acquisition kroz Google Ads. Fokus na trial-to-paid konverzije i metrike koje donose rast. 10+ godina iskustva sa B2B SaaS kompanijama.",
+      ? "Digital Jelisavac helps reduce CAC and scale SaaS customer acquisition with Google Ads. Focus on trial-to-paid conversions, demo bookings, and metrics that drive growth. 10+ years working with B2B SaaS companies."
+      : "Digital Jelisavac smanjuje CAC i skalira SaaS acquisition kroz Google Ads. Fokus na trial-to-paid konverzije i metrike koje donose rast. 10+ godina iskustva sa B2B SaaS kompanijama.",
     locale,
     path: "/services/google-ads-for-saas",
     srPath: "/usluge/google-ads-za-saas",

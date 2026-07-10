@@ -12,11 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Services | PPC Management & Optimization — Slobodan Jelisavac"
-      : "Google Ads Usluge Srbija | Performance Marketing — Slobodan Jelisavac",
+      ? "Google Ads Services | Digital Jelisavac — Senior PPC Agency"
+      : "Google Ads Usluge | Digital Jelisavac - Senior PPC Agencija",
     description: isEn
-      ? "Professional Google Ads services for eCommerce and B2B: management, audit, Shopping, PMax, remarketing. 10+ years experience, 3.7x average ROAS (eCommerce)."
-      : "Profesionalne Google Ads usluge za eCommerce i B2B: upravljanje, audit, Shopping, PMax, remarketing. 10+ godina iskustva, 3.7x prosečan ROAS (eCommerce).",
+      ? "Digital Jelisavac is a senior-led boutique Google Ads agency: management, audit, Shopping, PMax and remarketing for eCommerce and B2B. Led personally by Slobodan Jelisavac (10+ years, 3.7x average ROAS, 3x UK Search Awards)."
+      : "Digital Jelisavac je senior-led boutique Google Ads agencija: upravljanje, audit, Shopping, PMax i remarketing za eCommerce i B2B. Vodi lično Slobodan Jelisavac (10+ godina, 3.7x prosečan ROAS, 3x UK Search Awards).",
     locale,
     path: "/services",
     srPath: "/usluge",
@@ -520,17 +520,21 @@ export default async function ServicesPage({ params }: Props) {
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
                 <>
-                  Professional <strong className="text-white">Google Ads management</strong>,
-                  audit, and consulting for companies seeking measurable results from
-                  paid advertising. From strategy to daily optimization — everything
-                  you need for stable revenue growth.
+                  <strong className="text-white">Digital Jelisavac</strong> is a
+                  senior-led boutique Google Ads agency — management, audit, and
+                  consulting for companies that want measurable results from paid
+                  advertising. Your account is run by a senior specialist, not a
+                  junior learning on your budget. From strategy to daily optimization,
+                  everything you need for stable revenue growth.
                 </>
               ) : (
                 <>
-                  Profesionalno <strong className="text-white">Google Ads upravljanje</strong>,
-                  audit i konsultacije za kompanije koje žele merljive rezultate iz
-                  plaćenog oglašavanja. Od strategije do svakodnevne optimizacije —
-                  sve što vam treba za stabilan rast prihoda.
+                  <strong className="text-white">Digital Jelisavac</strong> je
+                  senior-led boutique Google Ads agencija: upravljanje, audit i
+                  konsultacije za kompanije koje žele merljive rezultate iz plaćenog
+                  oglašavanja. Vaš nalog vodi senior stručnjak lično, ne junior koji
+                  uči na vašem budžetu. Od strategije do svakodnevne optimizacije, sve
+                  što vam treba za stabilan rast prihoda.
                 </>
               )}
             </p>

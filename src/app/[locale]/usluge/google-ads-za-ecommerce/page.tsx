@@ -12,11 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads for eCommerce | Shopping & PMax Campaign Management — Slobodan Jelisavac"
-      : "Google Ads za eCommerce | 3-5x ROAS za online prodavnice - Slobodan Jelisavac",
+      ? "Google Ads for eCommerce | Shopping & PMax — Digital Jelisavac"
+      : "Google Ads za eCommerce | 3-5x ROAS - Digital Jelisavac",
     description: isEn
-      ? "Drive profitable growth for your online store with expert eCommerce Google Ads strategies. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, and other verticals. 10+ years experience, 5x+ ROAS in 90 days."
-      : "Povećajte prihod i ROAS vaše online prodavnice sa specijalizovanim Google Ads strategijama za eCommerce. Shopping, Performance Max i remarketing kampanje za fashion, home & garden i druge vertikale.",
+      ? "Digital Jelisavac drives profitable growth for your online store with expert eCommerce Google Ads strategies. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, and other verticals. 10+ years experience, 5x+ ROAS in 90 days."
+      : "Digital Jelisavac povećava prihod i ROAS vaše online prodavnice sa specijalizovanim Google Ads strategijama za eCommerce. Shopping, Performance Max i remarketing kampanje za fashion, home & garden i druge vertikale.",
     locale,
     path: "/services/google-ads-for-ecommerce",
     srPath: "/usluge/google-ads-za-ecommerce",
