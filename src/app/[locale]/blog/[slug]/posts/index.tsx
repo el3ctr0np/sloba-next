@@ -103,6 +103,7 @@ const srPosts: PostData[] = [
     category: "Automatizacija",
     metaDescription:
       "Kompletan setup vodič za Google API pristupe u PPC agenciji: Ads, GA4, Search Console, Tag Manager, Merchant Center i Data Manager API. Jedan Cloud projekat, OAuth scope-ovi i ključna lekcija o Testing modu koji gasi refresh token za 7 dana.",
+    featuredImage: "/blog/google-api-pristupi-za-agencije.webp",
     readingTime: "13 min",
     content: <GoogleApiPristupiZaAgencijeSR />
   },
@@ -126,6 +127,7 @@ const srPosts: PostData[] = [
     category: "Tracking",
     metaDescription:
       "Kako da Google Ads algoritam uči na zatvorenim poslovima umesto na formama: GCLID vs Enhanced Conversions for Leads, setup za HubSpot, Salesforce i Pipedrive, vrednovanje MQL/SQL/Closed-won faza i česte greške.",
+    featuredImage: "/blog/offline-conversion-import-b2b.webp",
     readingTime: "13 min",
     content: <OfflineConversionImportB2BSR />
   },
@@ -137,6 +139,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Transparentna cenovnica: junior freelancer €200-400/mes, senior konsultant €700-2.000/mes (€120-200/sat), agencija €500-2.000+ uz % od spend-a. Modeli naplate, tržišni benchmark i crvene zastavice kod jeftinih ponuda.",
+    featuredImage: "/blog/koliko-kosta-google-ads-konsultant.webp",
     readingTime: "14 min",
     content: <KolikoKostaGoogleAdsKonsultantSR />
   },
@@ -148,6 +151,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "12 konkretnih pitanja za proveru Google Ads konsultanta ili agencije pre potpisivanja: ko radi na nalogu, vlasništvo naloga, tracking, naplata. Zelene i crvene zastavice iz prakse.",
+    featuredImage: "/blog/kako-izabrati-google-ads-konsultanta.webp",
     readingTime: "16 min",
     content: <KakoIzabratiGoogleAdsKonsultantaSR />
   },
@@ -159,6 +163,7 @@ const srPosts: PostData[] = [
     category: "Metrike",
     metaDescription:
       "POAS (Profit on Ad Spend) = profit ÷ spend. Zašto ROAS od 4x može biti gubitak, break-even matematika, praktična implementacija (feed, custom columns) i kada POAS nije potreban.",
+    featuredImage: "/blog/poas-vs-roas.webp",
     readingTime: "14 min",
     content: <PoasVsRoasSR />
   },
@@ -170,6 +175,7 @@ const srPosts: PostData[] = [
     category: "Audit",
     metaDescription:
       "Menjate Google Ads agenciju? Checklist šta proveriti PRE prekida (vlasništvo naloga, pristupi, izvoz istorije) i šta raditi u prvoj nedelji preuzimanja — bez naglih promena koje ugrožavaju rezultate.",
+    featuredImage: "/blog/preuzimanje-google-ads-naloga.webp",
     readingTime: "14 min",
     content: <PreuzimanjeGoogleAdsNalogaSR />
   },
@@ -181,6 +187,7 @@ const srPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Product feed vodič za srpski eCommerce: 8 obaveznih atributa, title optimizacija, custom labels za bidding, feed po platformi (Shopify, WooCommerce, custom XML) i najčešće greške. Iz prakse sa globalnim Shopping nalozima.",
+    featuredImage: "/blog/product-feed-srpski-ecommerce.webp",
     readingTime: "15 min",
     content: <ProductFeedSrpskiEcommerceSR />
   },
@@ -192,6 +199,7 @@ const srPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Google Merchant Center setup vodič za srpsko tržište: kreiranje naloga, verifikacija, product feed atributi, metode dostave feed-a, česte greške i disapproval razlozi, shipping/tax settings. Iz prakse sa 10+ Shopping naloga.",
+    featuredImage: "/blog/merchant-center-srbija-setup.webp",
     readingTime: "14 min",
     content: <MerchantCenterSrbijaSetupSR />
   },
@@ -203,6 +211,7 @@ const srPosts: PostData[] = [
     category: "Google Ads Audit",
     metaDescription:
       "Konkretan checklist od 50 stavki za audit Google Ads naloga u Srbiji. 10 kategorija sa primerima iz prakse — eCommerce, B2B, lead-gen. Scoring sistem i 30-min brzi audit.",
+    featuredImage: "/blog/google-ads-audit-checklist-srbija.webp",
     readingTime: "18 min",
     content: <GoogleAdsAuditChecklistSrbijaSR />
   },
@@ -214,6 +223,7 @@ const srPosts: PostData[] = [
     category: "Tracking",
     metaDescription:
       "Kompletan 7-koračni vodič za GA4 + Google Ads integraciju u 2026: linkovanje property-ja, import key events kao konverzija, Primary/Secondary setup, Consent Mode v2 i troubleshooting. HowTo schema + realne lekcije iz 10+ naloga.",
+    featuredImage: "/blog/ga4-google-ads-integracija.webp",
     readingTime: "18 min",
     content: <GA4GoogleAdsIntegracijaSR />
   },
@@ -225,6 +235,7 @@ const srPosts: PostData[] = [
     category: "Metrike",
     metaDescription:
       "Šta je ROAS (Return on Ad Spend)? Formula: ROAS = Prihod ÷ Potrošnja. Interaktivni kalkulator, industrijski benchmarks, razlika ROAS vs POAS i 6 taktika za poboljšanje. Bazirano na realnim nalozima.",
+    featuredImage: "/blog/sta-je-roas.webp",
     readingTime: "8 min",
     content: <StaJeRoasSR />
   },
@@ -539,6 +550,7 @@ const enPosts: PostData[] = [
     category: "Automation",
     metaDescription:
       "Complete setup guide to Google API access for PPC agencies: Ads, GA4, Search Console, Tag Manager, Merchant Center, and Data Manager API. One Cloud project, OAuth scopes, and the key lesson about Testing mode killing refresh tokens after 7 days.",
+    featuredImage: "/blog/google-api-pristupi-za-agencije.webp",
     readingTime: "13 min",
     content: <GoogleApiAccessGuideForAgenciesEN />
   },
@@ -562,6 +574,7 @@ const enPosts: PostData[] = [
     category: "Tracking",
     metaDescription:
       "Make the Google Ads algorithm learn from closed deals instead of form fills: GCLID vs Enhanced Conversions for Leads, setup for HubSpot, Salesforce and Pipedrive, MQL/SQL/Closed-won valuation, and common mistakes.",
+    featuredImage: "/blog/offline-conversion-import-b2b.webp",
     readingTime: "13 min",
     content: <OfflineConversionImportB2BEN />
   },
@@ -573,6 +586,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "A transparent cost breakdown: junior freelancer $250-500/mo, senior consultant $800-2,500/mo ($150-250/hr), agency $600-2,500+ plus % of spend. Pricing models, market benchmarks, and red flags in cheap offers.",
+    featuredImage: "/blog/koliko-kosta-google-ads-konsultant.webp",
     readingTime: "14 min",
     content: <GoogleAdsConsultantCostEN />
   },
@@ -584,6 +598,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "12 vetting questions to ask a Google Ads consultant or agency before signing: who actually works on the account, account ownership, tracking, billing models. Green and red flags from practice.",
+    featuredImage: "/blog/kako-izabrati-google-ads-konsultanta.webp",
     readingTime: "16 min",
     content: <HowToChooseGoogleAdsConsultantEN />
   },
@@ -595,6 +610,7 @@ const enPosts: PostData[] = [
     category: "Metrics",
     metaDescription:
       "POAS (Profit on Ad Spend) = profit ÷ spend. Why a 4x ROAS can still be a loss, break-even math, practical implementation (feed, custom columns), and when POAS isn't needed.",
+    featuredImage: "/blog/poas-vs-roas.webp",
     readingTime: "14 min",
     content: <PoasVsRoasEN />
   },
@@ -606,6 +622,7 @@ const enPosts: PostData[] = [
     category: "Audit",
     metaDescription:
       "Switching Google Ads agencies? What to verify BEFORE you cut ties (account ownership, access, history export) and exactly what to do in your first week — without sudden changes that put results at risk.",
+    featuredImage: "/blog/preuzimanje-google-ads-naloga.webp",
     readingTime: "16 min",
     content: <GoogleAdsAccountTakeoverChecklistEN />
   },
@@ -617,6 +634,7 @@ const enPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Product feed guide for Serbian eCommerce: 8 required attributes, title optimization, custom labels for bidding, feed delivery by platform, and common feed errors.",
+    featuredImage: "/blog/product-feed-srpski-ecommerce.webp",
     readingTime: "15 min",
     content: <ProductFeedSerbianEcommerceEN />
   },
@@ -628,6 +646,7 @@ const enPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Google Merchant Center setup guide for the Serbian market: account creation, verification, product feed attributes, feed delivery methods, common disapproval reasons, shipping/tax settings.",
+    featuredImage: "/blog/merchant-center-srbija-setup.webp",
     readingTime: "14 min",
     content: <MerchantCenterSerbiaSetupEN />
   },
@@ -639,6 +658,7 @@ const enPosts: PostData[] = [
     category: "Google Ads Audit",
     metaDescription:
       "A concrete 50-item checklist for auditing Google Ads accounts in Serbia. 10 categories with real examples — eCommerce, B2B, lead-gen. Scoring system and a 30-minute quick audit.",
+    featuredImage: "/blog/google-ads-audit-checklist-srbija.webp",
     readingTime: "18 min",
     content: <GoogleAdsAuditChecklistSerbia2026EN />
   },
@@ -650,6 +670,7 @@ const enPosts: PostData[] = [
     category: "Tracking",
     metaDescription:
       "Complete 7-step GA4 + Google Ads integration guide for 2026: link property, import key events as conversions, Primary/Secondary setup, Consent Mode v2, and troubleshooting. HowTo schema + lessons from 10+ accounts.",
+    featuredImage: "/blog/ga4-google-ads-integracija.webp",
     readingTime: "18 min",
     content: <GA4GoogleAdsIntegrationEN />
   },
@@ -661,6 +682,7 @@ const enPosts: PostData[] = [
     category: "Metrics",
     metaDescription:
       "What is ROAS (Return on Ad Spend)? Formula: ROAS = Revenue ÷ Spend. Interactive calculator, industry benchmarks, ROAS vs POAS, and 6 tactics to improve. Based on real account data.",
+    featuredImage: "/blog/sta-je-roas.webp",
     readingTime: "8 min",
     content: <WhatIsRoasEN />
   },
@@ -684,6 +706,7 @@ const enPosts: PostData[] = [
     category: "eCommerce",
     metaDescription:
       "Data-driven Google Ads eCommerce strategy for Serbia 2026: 110.6M internet purchases, €3.61B market, 34% growth, top categories and tactics.",
+    featuredImage: "/blog/google-ads-za-ecommerce-srbija-2026.webp",
     readingTime: "17 min",
     content: <GoogleAdsForEcommerceSerbia2026EN />
   },
@@ -707,6 +730,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "All major Google Ads changes in 2026 in one place. Shopping launch in Serbia, AI Max Text Guidelines, PMax Channel Performance, Editor 2.12. Updated monthly.",
+    featuredImage: "/blog/google-ads-novosti-2026.webp",
     readingTime: "12 min",
     content: <GoogleAdsUpdates2026EN />
   },
@@ -718,6 +742,7 @@ const enPosts: PostData[] = [
     category: "YouTube Ads",
     metaDescription:
       "Complete YouTube advertising guide for 2026: 6 ad formats, targeting options, costs (CPV benchmarks), and strategies for eCommerce and B2B. Based on experience managing 10+ accounts.",
+    featuredImage: "/blog/youtube-oglasavanje-vodic.webp",
     readingTime: "16 min",
     content: <YouTubeAdvertisingGuideEN />
   },
@@ -729,6 +754,7 @@ const enPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Google Shopping Ads launches in Serbia in November 2026 and across Croatia, BiH and Slovenia in Q4 2026. Full guide with 15-step checklist, Merchant Center setup, product feed optimisation, and lessons from 2+ years of UK Shopping campaigns (Chelleon, £290k+ revenue).",
+    featuredImage: "/blog/google-shopping-srbija-2026.webp",
     readingTime: "18 min",
     content: <GoogleShoppingSerbiaLaunch2026EN />
   },
