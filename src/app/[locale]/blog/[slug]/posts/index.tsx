@@ -5,6 +5,8 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import GoogleAdsApiBasicAccessVodicSR from "./google-ads-api-basic-access-vodic/sr";
+import GoogleAdsApiBasicAccessGuideEN from "./google-ads-api-basic-access-vodic/en";
 import MicrosoftAdsVsGoogleAdsSR from "./microsoft-ads-vs-google-ads/sr";
 import MicrosoftAdsVsGoogleAdsEN from "./microsoft-ads-vs-google-ads/en";
 import SmartBiddingVodicSR from "./smart-bidding-vodic/sr";
@@ -91,6 +93,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "google-ads-api-basic-access-vodic",
+    title: "Google Ads API Basic Access: Vodič Korak po Korak [2026]",
+    date: "2026-07-11",
+    dateModified: "2026-07-11",
+    category: "Automatizacija",
+    metaDescription:
+      "Kako do Google Ads API Basic Access nivoa u 2026: developer token, aplikacija koja prolazi iz prve, povezivanje sa Cloud projektom i novi brand verification pilot koji skraćuje review sa nedelja na par sati. Iz ličnog iskustva.",
+    readingTime: "12 min",
+    content: <GoogleAdsApiBasicAccessVodicSR />
+  },
   {
     slug: "offline-conversion-import-b2b",
     title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",
@@ -504,6 +517,17 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "google-ads-api-basic-access-guide",
+    title: "Google Ads API Basic Access: Step-by-Step Guide [2026]",
+    date: "2026-07-11",
+    dateModified: "2026-07-11",
+    category: "Automation",
+    metaDescription:
+      "How to get Google Ads API Basic Access in 2026: developer token setup, an application that gets approved on the first try, Cloud project linking, and the new brand verification pilot that cuts review time from weeks to hours. First-hand guide.",
+    readingTime: "12 min",
+    content: <GoogleAdsApiBasicAccessGuideEN />
+  },
   {
     slug: "offline-conversion-import-b2b",
     title: "Offline Conversion Import for B2B: Connect Google Ads to Your CRM",

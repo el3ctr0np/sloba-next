@@ -1088,7 +1088,7 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.date,
     dateModified: post.dateModified,
     author: { "@id": "https://www.slobodan-jelisavac.com/#person" },
-    publisher: { "@id": "https://www.slobodan-jelisavac.com/#person" },
+    publisher: { "@id": "https://www.slobodan-jelisavac.com/#organization" },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
@@ -1125,8 +1125,9 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
-  // Person (#person) is emitted site-wide by <LocalBusinessSchema /> in the
-  // locale layout; the article references it by @id (author/publisher).
+  // Person (#person) and Organization (#organization) are emitted site-wide by
+  // <LocalBusinessSchema /> in the locale layout; the article references them
+  // by @id (author = person, publisher = organization).
 
   const howToSchema = getHowToSchema(canonicalSlug, locale);
 
