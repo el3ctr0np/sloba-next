@@ -121,14 +121,6 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
         In API Center, next to the developer token, there&apos;s a link to apply for Basic Access. The form asks what you plan to do with the API — and this is the part that actually determines how smoothly the review goes.
       </p>
 
-      {/* IMG-03: replace with <Image src="/blog/google-ads-api-basic-access/03-basic-access-application-form.webp" alt="Basic Access application form in the Google Ads API Center" width={1200} height={675} /> */}
-      <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: Application form]</p>
-          <p className="text-xs text-gray-400 mb-0">The Basic Access application form, showing use case and access-level fields</p>
-        </div>
-      </figure>
-
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
           <div className="flex items-start gap-3">
@@ -163,14 +155,6 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           </div>
         </div>
       </div>
-
-      {/* IMG-04: replace with <Image src="/blog/google-ads-api-basic-access/04-application-pending.webp" alt="Application status showing Pending in API Center after submission" width={1200} height={675} /> */}
-      <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: Pending status]</p>
-          <p className="text-xs text-gray-400 mb-0">Application status showing Pending in API Center right after submission</p>
-        </div>
-      </figure>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Why the wait was the problem</p>
@@ -311,14 +295,6 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           Brand verification isn&apos;t a requirement to get Basic Access — it&apos;s a trust signal that helps Google&apos;s review move faster. If your application is sitting in Pending status right now, it&apos;s a few minutes of setup for a review that could otherwise take days. If you already have an approved token, there&apos;s nothing to do here.
         </p>
       </div>
-
-      {/* IMG-07: replace with <Image src="/blog/google-ads-api-basic-access/07-basic-access-approved.webp" alt="Approved Basic Access status shown in API Center" width={1200} height={675} /> */}
-      <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: Approved]</p>
-          <p className="text-xs text-gray-400 mb-0">Approved Basic Access status in API Center — the token now works against production accounts</p>
-        </div>
-      </figure>
 
       <hr />
 

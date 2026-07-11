@@ -143,28 +143,12 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
         </div>
       </div>
 
-      {/* IMG-03: zameniti sa <Image src="/blog/google-ads-api-basic-access/03-basic-access-application-form.webp" alt="..." width={1200} height={675} /> */}
-      <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: Aplikaciona forma]</p>
-          <p className="text-xs text-gray-400 mb-0">Aplikaciona forma za Basic Access iz API Center-a, sa pitanjima o use case-u i servisima koje pozivate</p>
-        </div>
-      </figure>
-
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Zašto je čekanje bilo problem</p>
         <p className="text-yellow-800 text-base mb-0">
           Google za Basic review zvanično navodi do 5 radnih dana. U praksi, to je nedelja dana tokom koje je status samo "pending": nema procene datuma, nema poruke da je neko preuzeo review, nema dugmeta "ubrzaj mi". Ja sam aplikaciju odlagao mesecima upravo zbog toga, jer mi je Explorer nivo pokrivao tekući posao, a nedelja neizvesnosti nije delovala vredna truda. Pilot iz Koraka 4 je tačno ono što taj račun menja.
         </p>
       </div>
-
-      {/* IMG-04: zameniti sa <Image src="/blog/google-ads-api-basic-access/04-application-pending.webp" alt="..." width={1200} height={675} /> */}
-      <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: Status Pending]</p>
-          <p className="text-xs text-gray-400 mb-0">Status aplikacije Pending u API Center-u, nakon podnošenja zahteva za Basic Access</p>
-        </div>
-      </figure>
 
       <hr />
 
@@ -305,14 +289,6 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       <p>
         Ako trenutno imate aplikaciju koja čeka na review, ovo je jednostavno najbrži put da je ubrzate: par minuta u Cloud Console-u umesto do 5 radnih dana neizvesnosti.
       </p>
-
-      {/* IMG-07: zameniti sa <Image src="/blog/google-ads-api-basic-access/07-basic-access-approved.webp" alt="..." width={1200} height={675} /> */}
-      <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: Basic Access odobren]</p>
-          <p className="text-xs text-gray-400 mb-0">Odobren status Basic Access u API Center-u, nakon uspešnog review-a</p>
-        </div>
-      </figure>
 
       <hr />
 
