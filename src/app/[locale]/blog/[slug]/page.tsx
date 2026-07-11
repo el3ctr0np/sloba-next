@@ -1043,7 +1043,37 @@ const howToSchemaKakoPocetiEN = {
   ],
 };
 
+// --- google-ads-api-basic-access-vodic ---
+const howToSchemaApiBasicAccessSR = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Kako do Google Ads API Basic Access nivoa (sa brand verification pilotom)",
+  totalTime: "PT1H",
+  step: [
+    { "@type": "HowToStep", name: "Generišite developer token u API Center-u", text: "U Google Ads manager (MCC) nalogu otvorite API Center pod Admin sekcijom. Token se generiše odmah, sa Test Account Access nivoom; Google mnogim nalozima automatski dodeli Explorer Access (produkcijski nalozi, 2.880 operacija dnevno, bez planning alata)." },
+    { "@type": "HowToStep", name: "Podnesite Basic Access aplikaciju", text: "Iz API Center-a otvorite aplikacionu formu. Budite konkretni oko use case-a, navedite servise koje pozivate, koristite poslovni email na svom domenu i jednostavno opišite tok podataka. Zvaničan review traje do 5 radnih dana." },
+    { "@type": "HowToStep", name: "Povežite developer token sa Google Cloud projektom", text: "Napravite bilo koji API poziv koji istovremeno koristi developer token i OAuth kredencijale iz vašeg Cloud projekta. Poziv može ciljati test ili produkcijski nalog; uspeh poziva nije bitan." },
+    { "@type": "HowToStep", name: "Završite brand verification na Cloud projektu", text: "U Google Cloud Console pod OAuth consent screen podesite User type na External i status In production, popunite Branding tab, kliknite Verify branding (do 5 minuta) i objavite rezultat u roku od 7 dana. Google pending aplikacije nakon toga pregleda u narednih nekoliko sati." },
+  ],
+};
+
+const howToSchemaApiBasicAccessEN = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to get Google Ads API Basic Access (with the brand verification pilot)",
+  totalTime: "PT1H",
+  step: [
+    { "@type": "HowToStep", name: "Generate a developer token in the API Center", text: "In your Google Ads manager (MCC) account, open the API Center under Admin. The token is generated instantly at Test Account Access; Google often grants Explorer Access automatically (production accounts, 2,880 operations/day, no planning tools)." },
+    { "@type": "HowToStep", name: "Submit the Basic Access application", text: "Open the application form from the API Center. Be specific about your use case, name the services you'll call, use a business email on your own domain, and describe the data flow simply. The official review takes up to 5 business days." },
+    { "@type": "HowToStep", name: "Link the developer token to a Google Cloud project", text: "Make any API call that uses your developer token together with OAuth credentials from your Cloud project. The call can target a test or production account; whether it succeeds doesn't matter." },
+    { "@type": "HowToStep", name: "Complete brand verification on the Cloud project", text: "In Google Cloud Console under the OAuth consent screen, set User type to External and publishing status to In production, complete the Branding tab, click Verify branding (up to 5 minutes) and publish the result within 7 days. Google then reviews pending applications within a few hours." },
+  ],
+};
+
 function getHowToSchema(slug: string, locale: string) {
+  if (slug === "google-ads-api-basic-access-vodic") {
+    return locale === "en" ? howToSchemaApiBasicAccessEN : howToSchemaApiBasicAccessSR;
+  }
   if (slug === "conversion-tracking-vodic") {
     return locale === "en" ? howToSchemaConversionTrackingEN : howToSchemaConversionTrackingSR;
   }
@@ -1088,7 +1118,7 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.date,
     dateModified: post.dateModified,
     author: { "@id": "https://www.slobodan-jelisavac.com/#person" },
-    publisher: { "@id": "https://www.slobodan-jelisavac.com/#person" },
+    publisher: { "@id": "https://www.slobodan-jelisavac.com/#organization" },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,
@@ -1125,8 +1155,9 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
-  // Person (#person) is emitted site-wide by <LocalBusinessSchema /> in the
-  // locale layout; the article references it by @id (author/publisher).
+  // Person (#person) and Organization (#organization) are emitted site-wide by
+  // <LocalBusinessSchema /> in the locale layout; the article references them
+  // by @id (author = person, publisher = organization).
 
   const howToSchema = getHowToSchema(canonicalSlug, locale);
 

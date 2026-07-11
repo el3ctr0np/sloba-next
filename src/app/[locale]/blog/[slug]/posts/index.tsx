@@ -5,6 +5,10 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import GoogleApiPristupiZaAgencijeSR from "./google-api-pristupi-za-agencije/sr";
+import GoogleApiAccessGuideForAgenciesEN from "./google-api-pristupi-za-agencije/en";
+import GoogleAdsApiBasicAccessVodicSR from "./google-ads-api-basic-access-vodic/sr";
+import GoogleAdsApiBasicAccessGuideEN from "./google-ads-api-basic-access-vodic/en";
 import MicrosoftAdsVsGoogleAdsSR from "./microsoft-ads-vs-google-ads/sr";
 import MicrosoftAdsVsGoogleAdsEN from "./microsoft-ads-vs-google-ads/en";
 import SmartBiddingVodicSR from "./smart-bidding-vodic/sr";
@@ -91,6 +95,29 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "google-api-pristupi-za-agencije",
+    title: "Google API Pristupi za PPC Agencije — Kompletan Setup Vodič [2026]",
+    date: "2026-07-11",
+    dateModified: "2026-07-11",
+    category: "Automatizacija",
+    metaDescription:
+      "Kompletan setup vodič za Google API pristupe u PPC agenciji: Ads, GA4, Search Console, Tag Manager, Merchant Center i Data Manager API. Jedan Cloud projekat, OAuth scope-ovi i ključna lekcija o Testing modu koji gasi refresh token za 7 dana.",
+    readingTime: "13 min",
+    content: <GoogleApiPristupiZaAgencijeSR />
+  },
+  {
+    slug: "google-ads-api-basic-access-vodic",
+    title: "Google Ads API Basic Access: Vodič Korak po Korak [2026]",
+    date: "2026-07-11",
+    dateModified: "2026-07-11",
+    category: "Automatizacija",
+    metaDescription:
+      "Kako do Google Ads API Basic Access nivoa u 2026: developer token, aplikacija koja prolazi iz prve, povezivanje sa Cloud projektom i novi brand verification pilot koji skraćuje review sa nedelja na par sati. Iz ličnog iskustva.",
+    featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
+    readingTime: "12 min",
+    content: <GoogleAdsApiBasicAccessVodicSR />
+  },
   {
     slug: "offline-conversion-import-b2b",
     title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",
@@ -504,6 +531,29 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "google-api-access-guide-for-agencies",
+    title: "Google API Access for PPC Agencies: Complete Setup Guide [2026]",
+    date: "2026-07-11",
+    dateModified: "2026-07-11",
+    category: "Automation",
+    metaDescription:
+      "Complete setup guide to Google API access for PPC agencies: Ads, GA4, Search Console, Tag Manager, Merchant Center, and Data Manager API. One Cloud project, OAuth scopes, and the key lesson about Testing mode killing refresh tokens after 7 days.",
+    readingTime: "13 min",
+    content: <GoogleApiAccessGuideForAgenciesEN />
+  },
+  {
+    slug: "google-ads-api-basic-access-guide",
+    title: "Google Ads API Basic Access: Step-by-Step Guide [2026]",
+    date: "2026-07-11",
+    dateModified: "2026-07-11",
+    category: "Automation",
+    metaDescription:
+      "How to get Google Ads API Basic Access in 2026: developer token setup, an application that gets approved on the first try, Cloud project linking, and the new brand verification pilot that cuts review time from weeks to hours. First-hand guide.",
+    featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
+    readingTime: "12 min",
+    content: <GoogleAdsApiBasicAccessGuideEN />
+  },
   {
     slug: "offline-conversion-import-b2b",
     title: "Offline Conversion Import for B2B: Connect Google Ads to Your CRM",

@@ -1,5 +1,7 @@
 // Canonical (SR) slug → EN slug mapping
 export const slugMap: Record<string, string> = {
+  "google-api-pristupi-za-agencije": "google-api-access-guide-for-agencies",
+  "google-ads-api-basic-access-vodic": "google-ads-api-basic-access-guide",
   "offline-conversion-import-b2b": "offline-conversion-import-b2b",
   "koliko-kosta-google-ads-konsultant": "google-ads-consultant-cost-2026",
   "kako-izabrati-google-ads-konsultanta": "how-to-choose-google-ads-consultant",
