@@ -8,7 +8,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">In short</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Getting a Google Ads API developer token approved for Basic Access used to mean submitting a form and waiting — days to weeks, with almost no visibility into where you stood. On July 7, 2026, Google launched a brand verification pilot that can cut a pending review down to a few hours. Here&apos;s the exact path: token, application, Cloud project link, verification.
+          Getting a Google Ads API developer token approved for Basic Access used to mean submitting a form and waiting up to 5 business days, with almost no visibility into where you stood. On July 7, 2026, Google launched a brand verification pilot that can cut a pending review down to a few hours. Here&apos;s the exact path: token, application, Cloud project link, verification.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -45,7 +45,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "offline-conversion-import-b2b" } }} className="underline text-blue-700 font-medium">
           the offline conversion import guide
         </Link>
-        , which also runs through the API under the hood). But getting that token past Test access and into production has historically been the slowest, most opaque part of the whole setup. I went through the old process myself — submitted the application, then waited, with no real sense of whether it would be a matter of days or weeks.
+        , which also runs through the API under the hood). My token currently runs at Explorer access — the level Google grants automatically — and it covers all of that nightly reporting. But the moment you ask for more, say Keyword Planner calls, you hit a wall: <code>DEVELOPER_TOKEN_NOT_APPROVED</code>. Full functionality means Basic Access, and that means an application and a review that officially takes up to 5 business days, with no status bar and no estimate of how much longer you&apos;ll wait.
       </p>
       <p>
         That changed on July 7, 2026. Google launched a pilot that lets you complete brand verification on your Cloud project while your Basic Access application is pending, and get a review within hours. This guide walks through the whole path — token, application, Cloud project link, and the new verification shortcut — based on how I actually set mine up.
@@ -95,25 +95,17 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
         In your manager account, open the API Center — under Admin in the current interface (older accounts may still show it under Tools &amp; Settings). This is where the developer token lives, and where its current access level is shown. If you&apos;ve never applied before, generating the token itself is instant — you don&apos;t need approval to get a token, only to use it against real accounts.
       </p>
 
-      {/* IMG-01: replace with <Image src="/blog/google-ads-api-basic-access/01-api-center.webp" alt="Google Ads API Center in the manager account showing the developer token card" width={1200} height={675} /> */}
       <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: API Center]</p>
-          <p className="text-xs text-gray-400 mb-0">API Center in the Google Ads manager account showing the developer token card and current access level</p>
-        </div>
+        <Image src="/blog/google-ads-api-basic-access/api-center-token-explorer.webp" alt="API Center in the Google Ads manager account: masked developer token with a View token link, and an Access level row showing Explorer Access" width={1690} height={400} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">API Center in my manager account: the developer token (masked) and its current access level</figcaption>
       </figure>
 
       <p>
-        A brand new token starts at <strong>Test access</strong>. It works, but only against test accounts you create specifically for development — it cannot touch a real, live account with real campaigns and real spend. This is by design: Google doesn&apos;t hand out production access to an untested integration on day one. It&apos;s a good place to build and debug your first scripts before you have anything to lose.
+        A brand new token starts at <strong>Test Account Access</strong>: it works only against test accounts you create for development and can&apos;t see a byte of production data. Google then automatically grants many accounts <strong>Explorer Access</strong> — no application needed. That&apos;s the level my token is at in the screenshot above: it works against real, production accounts, but with a cap of 2,880 operations per day and no access to planning tools (Keyword Planner), account creation, user management, or billing services.
       </p>
-
-      {/* IMG-02: replace with <Image src="/blog/google-ads-api-basic-access/02-test-access-token.webp" alt="Developer token showing Test access level before applying for Basic Access" width={1200} height={675} /> */}
-      <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: Test access]</p>
-          <p className="text-xs text-gray-400 mb-0">Token showing Test access level in API Center, before the Basic Access application is submitted</p>
-        </div>
-      </figure>
+      <p>
+        Explorer is a perfectly usable entry ticket — my entire nightly reporting stack runs on it. It&apos;s also exactly where you&apos;ll first feel the ceiling, because any call to a service Explorer doesn&apos;t cover returns <code>DEVELOPER_TOKEN_NOT_APPROVED</code>. Before you apply for Basic, use this level to confirm your authentication and basic connection work: if a call fails here, the problem is your configuration, not your access level.
+      </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">From my experience</p>
@@ -181,9 +173,9 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
       </figure>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-yellow-900 mb-1">What the old process actually felt like</p>
+        <p className="font-semibold text-yellow-900 mb-1">Why the wait was the problem</p>
         <p className="text-yellow-800 text-base mb-0">
-          When I applied, the form itself took ten minutes. The wait was the hard part — days stretching into weeks, with the status stuck on Pending and no way to know if it was moving. That uncertainty, more than the wait itself, was what made the process feel worse than it needed to be. The brand verification pilot in Step 4 exists specifically to fix that.
+          Google officially quotes up to 5 business days for the Basic review. In practice that&apos;s a week of the status just sitting on Pending — no estimated date, no sign anyone has picked it up, no &quot;speed this up&quot; button. I put off applying for months for exactly this reason: Explorer covered my day-to-day work, and a week of uncertainty didn&apos;t feel worth it. The brand verification pilot in Step 4 is what changes that math.
         </p>
       </div>
 
@@ -332,10 +324,10 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
 
       <h2 id="what-basic-access-gives-you-and-what-it-still-doesnt">What Basic Access gives you — and what it still doesn&apos;t</h2>
       <p>
-        Once approved, the token works against every production account under your manager account — not just one. That&apos;s what makes it worth setting up even for a small agency: reporting, campaign and ad group management, budget changes, disapproval alerts, all scriptable, all running against real accounts, up to 15,000 operations a day. For a solo operator watching ten client accounts, that cap is not something you&apos;ll bump into.
+        Once approved, you get the API&apos;s full feature set against every production account under your manager account, up to 15,000 operations a day. That includes exactly what Explorer excludes: planning tools (Keyword Planner calls for keyword ideas and volume), account creation, and billing services. My day-to-day stack — reporting that generates itself every morning, pacing, performance and disapproval monitoring across all accounts — already runs at Explorer level. For a solo operator watching ten client accounts, Basic&apos;s daily cap is not something you&apos;ll bump into.
       </p>
       <p>
-        What it doesn&apos;t automatically give you is everything the API surface exposes. When I first got approved, I tried to pull keyword ideas and search volume through the Keyword Planner endpoints and hit <code>DEVELOPER_TOKEN_NOT_APPROVED</code> — that part of the API needed a higher access level than the reporting and management work I&apos;d been approved for. I never chased that approval down further, since it wasn&apos;t essential to what I do day to day; instead I estimate volume from Search Console impression data plus benchmark CPCs, which is close enough for planning purposes. Your mileage may vary here — treat this as one practitioner&apos;s experience with a specific endpoint, not an official access matrix.
+        Keyword Planner was the first thing that hit the ceiling for me: calls for keyword ideas and search volume returned <code>DEVELOPER_TOKEN_NOT_APPROVED</code>, because planning tools simply aren&apos;t part of the Explorer level. Until Basic comes through, I estimate volume from Search Console impression data plus benchmark CPCs, which is close enough for planning decisions. But if keyword research through the API matters to your workflow, Basic Access isn&apos;t optional — it&apos;s the requirement.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -349,19 +341,24 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Test</td>
-              <td className="py-3 px-3">Building and debugging against test accounts only</td>
+              <td className="py-3 px-3 font-medium">Test Account</td>
+              <td className="py-3 px-3">Building and debugging against test accounts only — the default for a new token</td>
               <td className="py-3 px-3">No production account access</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">Basic</td>
-              <td className="py-3 px-3">Reporting, campaign management, automation on real accounts</td>
-              <td className="py-3 px-3">15,000 operations/day</td>
+              <td className="py-3 px-3 font-medium">Explorer</td>
+              <td className="py-3 px-3">Production accounts, minus planning tools, account creation, user management and billing — often granted automatically</td>
+              <td className="py-3 px-3">2,880 operations/day on production</td>
             </tr>
             <tr className="border-b border-gray-200">
+              <td className="py-3 px-3 font-medium">Basic</td>
+              <td className="py-3 px-3">Full feature set: reporting, campaign management, planning tools, automation on real accounts</td>
+              <td className="py-3 px-3">15,000 operations/day — application, review up to 5 business days</td>
+            </tr>
+            <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">Standard</td>
-              <td className="py-3 px-3">High-volume tools, large-scale management platforms</td>
-              <td className="py-3 px-3">Daily cap removed — separate application</td>
+              <td className="py-3 px-3">High-volume tools, large-scale management platforms — requires Basic first</td>
+              <td className="py-3 px-3">Daily cap removed for most services — separate application</td>
             </tr>
           </tbody>
         </table>
@@ -387,7 +384,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
                 name: "How long does the Basic Access review take now?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "If your application is Pending and you complete brand verification on your linked Google Cloud project, Google says review happens within a few hours, per the July 7, 2026 pilot announcement. Without brand verification, the review still follows the standard process, which has historically taken anywhere from a few days to a few weeks with limited status visibility."
+                  text: "If your application is Pending and you complete brand verification on your linked Google Cloud project, Google says review happens within a few hours, per the July 7, 2026 pilot announcement. Without brand verification, the standard process applies — officially up to 5 business days, with limited status visibility in the meantime."
                 }
               },
               {
@@ -400,10 +397,10 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
               },
               {
                 "@type": "Question",
-                name: "What's the difference between Test, Basic, and Standard access?",
+                name: "What's the difference between Test, Explorer, Basic, and Standard access?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Test access only works against test accounts you create yourself, with no access to real production data. Basic Access opens up production accounts with a cap of 15,000 API operations per day, which covers most agency and internal automation use cases. Standard Access is a separate, later application for high-volume tools that removes the daily operations cap."
+                  text: "There are four levels. Test Account Access is the default for a new token and works only against test accounts. Explorer Access is often granted automatically: it works against production accounts (2,880 operations per day) but excludes planning tools, account creation and billing services. Basic Access requires an application and brings the full feature set at 15,000 operations per day, which covers most agency and internal automation use cases. Standard Access is a separate, later application for high-volume tools that removes the daily cap for most services."
                 }
               },
               {
@@ -449,7 +446,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          If your application is Pending and you complete brand verification on your linked Google Cloud project, Google says review happens within a few hours, per the July 7, 2026 pilot announcement. Without brand verification, the review still follows the standard process, which has historically taken anywhere from a few days to a few weeks with limited status visibility.
+          If your application is Pending and you complete brand verification on your linked Google Cloud project, Google says review happens within a few hours, per the July 7, 2026 pilot announcement. Without brand verification, the standard process applies — officially up to 5 business days, with limited status visibility in the meantime.
         </div>
       </details>
 
@@ -465,11 +462,11 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          What&apos;s the difference between Test, Basic, and Standard access?
+          What&apos;s the difference between Test, Explorer, Basic, and Standard access?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Test access only works against test accounts you create yourself, with no access to real production data. Basic Access opens up production accounts with a cap of 15,000 API operations per day, which covers most agency and internal automation use cases. Standard Access is a separate, later application for high-volume tools that removes the daily operations cap.
+          There are four levels. Test Account Access is the default for a new token and works only against test accounts. Explorer Access is often granted automatically: it works against production accounts (2,880 operations per day) but excludes planning tools, account creation and billing services. Basic Access requires an application and brings the full feature set at 15,000 operations per day, which covers most agency and internal automation use cases. Standard Access is a separate, later application for high-volume tools that removes the daily cap for most services.
         </div>
       </details>
 

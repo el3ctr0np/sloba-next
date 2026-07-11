@@ -7,7 +7,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Ads API Basic Access je nivo pristupa koji vam otključava produkcijske naloge za reporting i automatizaciju, sa limitom od 15.000 API operacija dnevno. Od 7. jula 2026. Google testira brand verification pilot koji, ako je vaša aplikacija na statusu pending, skraćuje čekanje na review sa dana ili nedelja na svega par sati.
+          Google Ads API Basic Access je nivo pristupa koji vam otključava produkcijske naloge za reporting i automatizaciju, sa limitom od 15.000 API operacija dnevno. Od 7. jula 2026. Google testira brand verification pilot koji, ako je vaša aplikacija na statusu pending, skraćuje čekanje na review sa zvaničnih do 5 radnih dana na svega par sati.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -46,7 +46,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
         Živimo u trenutku kada svaka ozbiljnija agencijska operacija prolazi kroz neki oblik API-ja i automatizacije, ne samo kroz interfejs u browseru. Kod mene to izgleda konkretno: svako jutro, pre nego što otvorim Google Ads na bilo kom klijentskom nalogu, već imam podatke iz noćne provere preko svih ~10 naloga koje vodim pod jednim manager nalogom. Budget pacing, performanse po kampanji, upozorenja kada nešto padne u disapproved, i rudarenje search termina koje bi ručno trajalo satima. Sve to radi API, ne ja.
       </p>
       <p>
-        Ulaznica za sve to je developer token. Bez odobrenog tokena na nivou Basic Access, API vam vraća test podatke i ništa se ne dešava na pravim nalozima. Ja imam odobren token, ali sam prošao kroz stari proces koji je bio spor i neproziran. Aplikacija bi otišla na review i onda bi nastupila tišina. Nema statusne trake, nema procene koliko još treba čekati. Dani su prelazili u nedelje, i jedino što ste mogli da radite je da čekate mejl.
+        Ulaznica za sve to je developer token. Moj token danas radi na Explorer nivou, koji Google dodeljuje automatski, i on pokriva kompletan moj noćni reporting. Ali čim zatražite nešto više od toga, recimo Keyword Planner pozive, udarite u zid: DEVELOPER_TOKEN_NOT_APPROVED. Za punu funkcionalnost treba vam Basic Access, a to znači aplikaciju i review koji zvanično traje do 5 radnih dana, bez statusne trake i bez procene koliko još treba čekati.
       </p>
       <p>
         To se menja. Google je 7. jula 2026. objavio pilot koji tu čekaonicu drastično skraćuje za developere koji su spremni da urade jedan dodatni, opcioni korak. Ovaj vodič vas vodi kroz ceo proces, od nule do odobrenog Basic Access tokena, uključujući i taj novi korak.
@@ -89,28 +89,17 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
         Developer token se nalazi na jednom, uvek istom mestu: u manager nalogu otvorite API Center, u novijem interfejsu pod Admin sekcijom (stariji nalozi ga i dalje prikazuju pod Tools and Settings). Ako do sada niste imali potrebu za API-jem, ova stranica vam verovatno nikad nije zapala za oko, ali tu se dešava sve što je vezano za pristup Google Ads API-ju.
       </p>
 
-      {/* IMG-01: zameniti sa <Image src="/blog/google-ads-api-basic-access/01-api-center.webp" alt="..." width={1200} height={675} /> */}
       <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: API Center]</p>
-          <p className="text-xs text-gray-400 mb-0">API Center u Google Ads manager nalogu sa karticom developer tokena i nivoom pristupa</p>
-        </div>
+        <Image src="/blog/google-ads-api-basic-access/api-center-token-explorer.webp" alt="API Center u Google Ads manager nalogu: maskiran developer token sa View token linkom i Access level red koji prikazuje Explorer Access" width={1690} height={400} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">API Center u mom manager nalogu: developer token (maskiran) i trenutni nivo pristupa</figcaption>
       </figure>
 
       <p>
-        Kada prvi put otvorite API Center, Google vam automatski generiše token, ali on dolazi sa statusom <strong>Test access</strong>. To je default, i to je namerno ograničen nivo: token radi isključivo sa test nalozima koje sami kreirate u Google Ads-u, i ne vidi ni jedan bajt produkcijskih podataka. Možete pisati i testirati kod, možete proveriti da li vam autentifikacija radi, ali ne možete povući izveštaj o pravom klijentu niti napraviti pravu izmenu na pravoj kampanji.
+        Kada prvi put otvorite API Center, Google vam automatski generiše token sa <strong>Test Account Access</strong> nivoom: radi isključivo sa test nalozima koje sami kreirate, i ne vidi ni jedan bajt produkcijskih podataka. Google zatim mnogim nalozima automatski dodeli <strong>Explorer Access</strong>, bez ikakve aplikacije. To je nivo na kom je moj token na slici iznad: radi i sa pravim, produkcijskim nalozima, ali sa limitom od 2.880 operacija dnevno i bez pristupa planning alatima (Keyword Planner), kreiranju naloga, user management-u i billing servisima.
       </p>
       <p>
-        Test access je koristan za jednu stvar: da proverite da vam osnovna konekcija radi pre nego što uopšte pošaljete aplikaciju za Basic Access. Ako API poziv na test nalogu ne prolazi, problem je u autentifikaciji ili konfiguraciji, ne u nivou pristupa, i bolje je to rešiti pre aplikacije nego posle.
+        Explorer je sasvim pristojna ulaznica: na njemu vrtim kompletan noćni reporting preko svih klijentskih naloga. Ali je i tačno mesto gde ćete prvi put osetiti ograničenje, jer svaki poziv ka servisu koji Explorer ne pokriva vraća DEVELOPER_TOKEN_NOT_APPROVED. Pre nego što aplicirate za Basic, iskoristite ovaj nivo da proverite da vam autentifikacija i osnovna konekcija rade: ako poziv ne prolazi ni ovde, problem je u konfiguraciji, ne u nivou pristupa.
       </p>
-
-      {/* IMG-02: zameniti sa <Image src="/blog/google-ads-api-basic-access/02-test-access-token.webp" alt="..." width={1200} height={675} /> */}
-      <figure className="my-6">
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-10 text-center bg-gray-50">
-          <p className="text-sm font-semibold text-gray-500 mb-1">[Screenshot: Test access token]</p>
-          <p className="text-xs text-gray-400 mb-0">Developer token sa nivoom pristupa Test access, pre podnošenja aplikacije za Basic Access</p>
-        </div>
-      </figure>
 
       <hr />
 
@@ -163,9 +152,9 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       </figure>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-yellow-900 mb-1">Iz mog starog iskustva</p>
+        <p className="font-semibold text-yellow-900 mb-1">Zašto je čekanje bilo problem</p>
         <p className="text-yellow-800 text-base mb-0">
-          Kad sam ja prvi put aplicirao, čekanje je bilo najgori deo celog procesa. Aplikacija bi otišla, status bi ostao "pending", i onda ništa. Nema procene datuma, nema poruke da je neko preuzeo review. Prošlo je od par dana do preko nedelju dana dok mejl konačno nije stigao. U tom periodu jedino što možete da radite je da nastavite da razvijate na Test access-u i čekate, jer nema dugmeta "ubrzaj mi review".
+          Google za Basic review zvanično navodi do 5 radnih dana. U praksi, to je nedelja dana tokom koje je status samo "pending": nema procene datuma, nema poruke da je neko preuzeo review, nema dugmeta "ubrzaj mi". Ja sam aplikaciju odlagao mesecima upravo zbog toga, jer mi je Explorer nivo pokrivao tekući posao, a nedelja neizvesnosti nije delovala vredna truda. Pilot iz Koraka 4 je tačno ono što taj račun menja.
         </p>
       </div>
 
@@ -314,7 +303,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       </div>
 
       <p>
-        Ako trenutno imate aplikaciju koja čeka na review, ovo je jednostavno najbrži put da je ubrzate: par minuta u Cloud Console-u, umesto neizvesnog čekanja kroz koje sam ja prošao.
+        Ako trenutno imate aplikaciju koja čeka na review, ovo je jednostavno najbrži put da je ubrzate: par minuta u Cloud Console-u umesto do 5 radnih dana neizvesnosti.
       </p>
 
       {/* IMG-07: zameniti sa <Image src="/blog/google-ads-api-basic-access/07-basic-access-approved.webp" alt="..." width={1200} height={675} /> */}
@@ -329,16 +318,16 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
 
       <h2 id="sta-dobijate-i-sta-ne-radi">Šta dobijate sa Basic Access i šta i dalje ne radi</h2>
       <p>
-        Sa odobrenim Basic Access tokenom, dobijate pristup produkcijskim podacima na svim klijentskim nalozima povezanim pod vašim manager nalogom, do 15.000 API operacija dnevno. Za mene to znači reporting koji se sam generiše svako jutro, upravljanje kampanjama preko skripti kada treba masovna izmena (na primer promena budžeta na više naloga odjednom), i automatizaciju koja prati pacing, performanse i disapproved oglase bez da ja ručno otvaram svaki od deset naloga. Isti mehanizam koristim i za automatski upload offline konverzija kod pojedinih klijenata, o čemu sam pisao odvojeno u{" "}
+        Sa odobrenim Basic Access tokenom dobijate punu funkcionalnost API-ja na svim klijentskim nalozima povezanim pod vašim manager nalogom, do 15.000 API operacija dnevno. To uključuje i ono što Explorer izričito ne pokriva: planning alate (Keyword Planner pozive za keyword ideje i volumen), kreiranje naloga i billing servise. Moj svakodnevni stack, reporting koji se sam generiše svako jutro, praćenje pacing-a, performansi i disapproved oglasa preko svih naloga, radi već na Explorer nivou. Isti mehanizam koristim i za automatski upload offline konverzija kod pojedinih klijenata, o čemu sam pisao odvojeno u{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "offline-conversion-import-b2b" } }} className="underline text-blue-700 font-medium">
           vodiču o Offline Conversion Import za B2B
         </Link>. Za jednog čoveka koji vodi deset naloga, ovo nije pogodnost, ovo je jedini realan način da monitoring bude na nivou agencije, a ne na nivou koliko stigne da otvori u browseru.
       </p>
       <p>
-        Ono što i dalje ne radi, makar u mom iskustvu, jeste Keyword Planner deo API-ja. I sa odobrenim Basic Access tokenom, pozivi za generisanje keyword ideja i procenu volumena pretrage meni su vraćali grešku DEVELOPER_TOKEN_NOT_APPROVED. Taj deo API-ja očigledno traži viši nivo pristupa nego što je pokrivao moj svakodnevni reporting i management posao, a meni nije bio presudan, pa ga nisam dalje terao. Umesto toga, procenu volumena radim preko podataka iz Search Console-a i benchmark CPC-a iz same platforme, što je sasvim dovoljno za odluke koje donosim.
+        Keyword Planner je kod mene bio prva stvar koja je udarila u ograničenje: pozivi za generisanje keyword ideja i procenu volumena vraćali su DEVELOPER_TOKEN_NOT_APPROVED, jer planning alati jednostavno nisu deo Explorer nivoa. Dok Basic ne prođe, procenu volumena radim preko podataka iz Search Console-a i benchmark CPC-a iz same platforme, što je sasvim dovoljno za odluke koje donosim. Ali ako vam je keyword research kroz API bitan deo posla, Basic Access nije opcija nego uslov.
       </p>
       <p>
-        Standard Access je posebna, kasnija aplikacija za koju idete tek kada Basic postane usko grlo, obično kada gradite alat velikog obima za više klijenata istovremeno i kada dnevni limit od 15.000 operacija počne realno da vas koči. Za agenciju sa desetak naloga, Basic Access je sasvim dovoljan nivo, i tu sam ja ostao.
+        Standard Access je posebna, kasnija aplikacija za koju idete tek kada Basic postane usko grlo, obično kada gradite alat velikog obima za više klijenata istovremeno i kada dnevni limit od 15.000 operacija počne realno da vas koči. Uslov je da već imate Basic, a zvaničan review traje do 10 radnih dana. Za agenciju sa desetak naloga, Basic je plafon koji vam realno treba.
       </p>
 
       <hr />
@@ -357,7 +346,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
                 name: "Koliko sada traje review Basic Access aplikacije?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ako je vaša aplikacija na statusu pending i završite opcioni brand verification korak na povezanom Google Cloud projektu, Google navodi da će vašu aplikaciju pregledati u narednih nekoliko sati. Bez tog koraka, review i dalje može trajati onako kako je trajao ranije, od nekoliko dana do preko nedelju dana, bez uvida u status u međuvremenu."
+                  text: "Ako je vaša aplikacija na statusu pending i završite opcioni brand verification korak na povezanom Google Cloud projektu, Google navodi da će vašu aplikaciju pregledati u narednih nekoliko sati. Bez tog koraka važi standardni proces, za koji Google zvanično navodi do 5 radnih dana, bez uvida u status u međuvremenu."
                 }
               },
               {
@@ -370,10 +359,10 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
               },
               {
                 "@type": "Question",
-                name: "Koja je razlika između Test, Basic i Standard access-a?",
+                name: "Koja je razlika između Test, Explorer, Basic i Standard access-a?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Test access je default nivo novog tokena i radi isključivo sa test Google Ads nalozima, bez produkcijskih podataka. Basic Access otključava produkcijske naloge sa limitom od 15.000 API operacija dnevno, dovoljno za većinu agencijske automatizacije. Standard Access je posebna, kasnija aplikacija namenjena alatima velikog obima, i uklanja dnevni limit."
+                  text: "Postoje četiri nivoa. Test Account Access je default novog tokena i radi samo sa test nalozima. Explorer Access Google često dodeli automatski: radi i sa produkcijskim nalozima (2.880 operacija dnevno), ali bez planning alata, kreiranja naloga i billing servisa. Basic Access se dobija aplikacijom i donosi punu funkcionalnost sa 15.000 operacija dnevno, dovoljno za većinu agencijske automatizacije. Standard Access je posebna, kasnija aplikacija za alate velikog obima i uklanja dnevni limit za većinu servisa."
                 }
               },
               {
@@ -411,7 +400,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Ako je vaša aplikacija na statusu pending i završite opcioni brand verification korak na povezanom Google Cloud projektu, Google navodi da će vašu aplikaciju pregledati u narednih nekoliko sati. Bez tog koraka, review i dalje može trajati onako kako je trajao ranije, od nekoliko dana do preko nedelju dana, bez uvida u status u međuvremenu.
+          Ako je vaša aplikacija na statusu pending i završite opcioni brand verification korak na povezanom Google Cloud projektu, Google navodi da će vašu aplikaciju pregledati u narednih nekoliko sati. Bez tog koraka važi standardni proces, za koji Google zvanično navodi do 5 radnih dana, bez uvida u status u međuvremenu.
         </div>
       </details>
 
@@ -427,11 +416,11 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Koja je razlika između Test, Basic i Standard access-a?
+          Koja je razlika između Test, Explorer, Basic i Standard access-a?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Test access je default nivo novog tokena i radi isključivo sa test Google Ads nalozima, bez produkcijskih podataka. Basic Access otključava produkcijske naloge sa limitom od 15.000 API operacija dnevno, dovoljno za većinu agencijske automatizacije. Standard Access je posebna, kasnija aplikacija namenjena alatima velikog obima, i uklanja dnevni limit.
+          Postoje četiri nivoa. Test Account Access je default novog tokena i radi samo sa test nalozima. Explorer Access Google često dodeli automatski: radi i sa produkcijskim nalozima (2.880 operacija dnevno), ali bez planning alata, kreiranja naloga i billing servisa. Basic Access se dobija aplikacijom i donosi punu funkcionalnost sa 15.000 operacija dnevno, dovoljno za većinu agencijske automatizacije. Standard Access je posebna, kasnija aplikacija za alate velikog obima i uklanja dnevni limit za većinu servisa.
         </div>
       </details>
 
