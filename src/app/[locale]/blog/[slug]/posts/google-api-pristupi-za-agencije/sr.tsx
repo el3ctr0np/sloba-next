@@ -114,10 +114,10 @@ export default function GoogleApiPristupiZaAgencijePost() {
 
       <h2 id="google-ads-api">Google Ads API</h2>
       <p>
-        Google Ads API je verovatno prvi API po koji agencija poseže, jer direktno diže reporting i upravljanje kampanjama na nivo koji ručni rad ne može da isprati. Pristup se drži na nivou manager (MCC) naloga preko developer tokena, i taj token prolazi kroz tri nivoa: <strong>Test/Explorer access</strong> (default, radi samo sa test nalozima), <strong>Basic Access</strong> (produkcijski nalozi, do 15.000 operacija dnevno) i <strong>Standard Access</strong> (bez dnevnog limita, za alate velikog obima).
+        Google Ads API je verovatno prvi API po koji agencija poseže, jer direktno diže reporting i upravljanje kampanjama na nivo koji ručni rad ne može da isprati. Pristup se drži na nivou manager (MCC) naloga preko developer tokena, i taj token prolazi kroz tri nivoa: <strong>Explorer access</strong> (default, do 2.880 operacija dnevno na produkcijskim nalozima), <strong>Basic Access</strong> (do 15.000 operacija dnevno plus planning servisi) i <strong>Standard Access</strong> (bez dnevnog limita, za alate velikog obima).
       </p>
       <p>
-        Dok ste na Test/Explorer nivou, API vraća test podatke i ne dotiče nijedan pravi nalog. Konkretno, i sa odobrenim Basic Access tokenom, deo API-ja koji se tiče Keyword Planner-a i planning servisa ostaje nedostupan - pozivi za generisanje ideja za ključne reči ili procenu volumena pretrage vraćaju grešku <code>DEVELOPER_TOKEN_NOT_APPROVED</code>, jer taj deo traži viši nivo pristupa nego što reporting i kampanja menadžment posao zahteva.
+        Explorer nivo je dovoljan da povlačite izveštaje i radite osnovne izmene na svojim nalozima, ali sa dva ograničenja koja se brzo osete: dnevni limit od 2.880 operacija i potpuno blokirani planning servisi. Pozivi ka Keyword Planner delu API-ja, za generisanje ideja za ključne reči ili procenu volumena pretrage, vraćaju grešku <code>DEVELOPER_TOKEN_NOT_APPROVED</code> sve dok ne dobijete Basic Access. To je i glavni praktični razlog da aplikaciju pošaljete pre nego što vam limiti stvarno zasmetaju.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">

@@ -109,17 +109,17 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
 
       <h2 id="google-ads-api">Google Ads API</h2>
       <p>
-        The Google Ads API is probably the first API an agency reaches for, since it lifts reporting and campaign management to a level manual work simply can&apos;t match. Access sits at the manager (MCC) account level through a developer token, and that token moves through three tiers: <strong>Test/Explorer access</strong> (the default, works only against test accounts), <strong>Basic Access</strong> (production accounts, up to 15,000 operations a day), and <strong>Standard Access</strong> (no daily cap, built for high-volume tools).
+        The Google Ads API is probably the first API an agency reaches for, since it lifts reporting and campaign management to a level manual work simply can&apos;t match. Access sits at the manager (MCC) account level through a developer token, and that token moves through three tiers: <strong>Explorer access</strong> (the default, up to 2,880 operations a day against production accounts), <strong>Basic Access</strong> (up to 15,000 operations a day plus the planning services), and <strong>Standard Access</strong> (no daily cap, built for high-volume tools).
       </p>
       <p>
-        At Test/Explorer level, the API returns test data and never touches a real account. Concretely, even with an approved Basic Access token, the Keyword Planner and planning-service portion of the API stays out of reach — calls for keyword ideas or search volume return a <code>DEVELOPER_TOKEN_NOT_APPROVED</code> error, because that part of the API requires a higher access tier than reporting and campaign management work needs.
+        Explorer level is enough to pull reports and make basic changes on your own accounts, but it comes with two constraints you feel quickly: the 2,880 daily operations cap and fully blocked planning services. Calls to the Keyword Planner portion of the API — keyword ideas, search volume estimates — return a <code>DEVELOPER_TOKEN_NOT_APPROVED</code> error until you're approved for Basic Access. That's the main practical reason to submit the application before the limits actually start to hurt.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Dedicated guide</p>
         <p className="text-blue-800 text-base mb-0">
           The full Basic Access application process, including the newer brand verification pilot that cuts review from days or weeks down to a few hours, is covered step by step in a separate guide:{" "}
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="underline text-blue-700 font-medium">
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="underline text-blue-700 font-medium">
             Google Ads API Basic Access: Step-by-Step Guide
           </Link>. Here I&apos;ll just note the OAuth scope you need is <code>https://www.googleapis.com/auth/adwords</code>, and it all runs through the same Cloud project you set up in the previous section.
         </p>
