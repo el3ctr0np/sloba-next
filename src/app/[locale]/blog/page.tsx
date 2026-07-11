@@ -228,6 +228,38 @@ const getChapters = (locale: string): Chapter[] => {
             readTime: "12 min"
           }
         ]
+      },
+      {
+        id: "api-automation",
+        number: 6,
+        title: "API & Automation",
+        description:
+          "Run your accounts through the API instead of the browser: access setup for the whole Google stack, developer token approval and CRM-to-Google-Ads feedback loops. For agencies and in-house teams automating reporting and monitoring.",
+        level: "Advanced",
+        levelColor: "bg-purple-100 text-purple-800",
+        posts: [
+          {
+            title: "Google API Access for PPC Agencies — Complete Setup Guide [2026]",
+            excerpt:
+              "One Cloud project for Ads, GA4, Search Console, Tag Manager and Merchant Center — with OAuth lessons learned in practice.",
+            slug: "google-api-access-guide-for-agencies",
+            readTime: "13 min"
+          },
+          {
+            title: "Google Ads API Basic Access: Step-by-Step Guide [2026]",
+            excerpt:
+              "Developer token, an application that gets approved, and the new brand verification pilot that cuts review time to hours.",
+            slug: "google-ads-api-basic-access-guide",
+            readTime: "12 min"
+          },
+          {
+            title: "Offline Conversion Import for B2B: Connect Google Ads to Your CRM",
+            excerpt:
+              "Make the algorithm learn from closed deals instead of form fills — GCLID, Enhanced Conversions for Leads and CRM setup.",
+            slug: "offline-conversion-import-b2b",
+            readTime: "13 min"
+          }
+        ]
       }
     ];
   }
@@ -409,6 +441,38 @@ const getChapters = (locale: string): Chapter[] => {
             "12 najčešćih razloga za loše performanse i konkretna rešenja za svaki problem.",
           slug: "zasto-nema-rezultata",
           readTime: "12 min"
+        }
+      ]
+    },
+    {
+      id: "api-automatizacija",
+      number: 6,
+      title: "API i Automatizacija",
+      description:
+        "Vodite naloge kroz API umesto kroz browser: podešavanje pristupa za ceo Google stack, odobravanje developer tokena i povratna petlja iz CRM-a ka Google Ads-u. Za agencije i in-house timove koji automatizuju reporting i monitoring.",
+      level: "Napredni",
+      levelColor: "bg-purple-100 text-purple-800",
+      posts: [
+        {
+          title: "Google API Pristupi za PPC Agencije — Kompletan Setup Vodič [2026]",
+          excerpt:
+            "Jedan Cloud projekat za Ads, GA4, Search Console, Tag Manager i Merchant Center — sa OAuth lekcijama iz prakse.",
+          slug: "google-api-pristupi-za-agencije",
+          readTime: "13 min"
+        },
+        {
+          title: "Google Ads API Basic Access: Vodič Korak po Korak [2026]",
+          excerpt:
+            "Developer token, aplikacija koja prolazi i novi brand verification pilot koji skraćuje review na par sati.",
+          slug: "google-ads-api-basic-access-vodic",
+          readTime: "12 min"
+        },
+        {
+          title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",
+          excerpt:
+            "Neka algoritam uči na zatvorenim poslovima umesto na formama — GCLID, Enhanced Conversions for Leads i CRM setup.",
+          slug: "offline-conversion-import-b2b",
+          readTime: "13 min"
         }
       ]
     }
