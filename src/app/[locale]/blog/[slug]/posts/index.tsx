@@ -5,6 +5,8 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import GoogleApiPristupiZaAgencijeSR from "./google-api-pristupi-za-agencije/sr";
+import GoogleApiAccessGuideForAgenciesEN from "./google-api-pristupi-za-agencije/en";
 import GoogleAdsApiBasicAccessVodicSR from "./google-ads-api-basic-access-vodic/sr";
 import GoogleAdsApiBasicAccessGuideEN from "./google-ads-api-basic-access-vodic/en";
 import MicrosoftAdsVsGoogleAdsSR from "./microsoft-ads-vs-google-ads/sr";
@@ -93,6 +95,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "google-api-pristupi-za-agencije",
+    title: "Google API Pristupi za PPC Agencije — Kompletan Setup Vodič [2026]",
+    date: "2026-07-11",
+    dateModified: "2026-07-11",
+    category: "Automatizacija",
+    metaDescription:
+      "Kompletan setup vodič za Google API pristupe u PPC agenciji: Ads, GA4, Search Console, Tag Manager, Merchant Center i Data Manager API. Jedan Cloud projekat, OAuth scope-ovi i ključna lekcija o Testing modu koji gasi refresh token za 7 dana.",
+    readingTime: "13 min",
+    content: <GoogleApiPristupiZaAgencijeSR />
+  },
   {
     slug: "google-ads-api-basic-access-vodic",
     title: "Google Ads API Basic Access: Vodič Korak po Korak [2026]",
@@ -517,6 +530,17 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "google-api-access-guide-for-agencies",
+    title: "Google API Access for PPC Agencies: Complete Setup Guide [2026]",
+    date: "2026-07-11",
+    dateModified: "2026-07-11",
+    category: "Automation",
+    metaDescription:
+      "Complete setup guide to Google API access for PPC agencies: Ads, GA4, Search Console, Tag Manager, Merchant Center, and Data Manager API. One Cloud project, OAuth scopes, and the key lesson about Testing mode killing refresh tokens after 7 days.",
+    readingTime: "13 min",
+    content: <GoogleApiAccessGuideForAgenciesEN />
+  },
   {
     slug: "google-ads-api-basic-access-guide",
     title: "Google Ads API Basic Access: Step-by-Step Guide [2026]",
