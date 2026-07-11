@@ -114,6 +114,7 @@ const srPosts: PostData[] = [
     category: "Automatizacija",
     metaDescription:
       "Kako do Google Ads API Basic Access nivoa u 2026: developer token, aplikacija koja prolazi iz prve, povezivanje sa Cloud projektom i novi brand verification pilot koji skraćuje review sa nedelja na par sati. Iz ličnog iskustva.",
+    featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
     readingTime: "12 min",
     content: <GoogleAdsApiBasicAccessVodicSR />
   },
@@ -549,6 +550,7 @@ const enPosts: PostData[] = [
     category: "Automation",
     metaDescription:
       "How to get Google Ads API Basic Access in 2026: developer token setup, an application that gets approved on the first try, Cloud project linking, and the new brand verification pilot that cuts review time from weeks to hours. First-hand guide.",
+    featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
     readingTime: "12 min",
     content: <GoogleAdsApiBasicAccessGuideEN />
   },
