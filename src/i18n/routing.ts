@@ -17,6 +17,10 @@ export const routing = defineRouting({
       sr: "/usluge/google-ads-upravljanje",
       en: "/services/google-ads-management"
     },
+    "/usluge/google-ads-agencija": {
+      sr: "/usluge/google-ads-agencija",
+      en: "/services/google-ads-agency"
+    },
     "/usluge/google-ads-audit": {
       sr: "/usluge/google-ads-audit",
       en: "/services/google-ads-audit"

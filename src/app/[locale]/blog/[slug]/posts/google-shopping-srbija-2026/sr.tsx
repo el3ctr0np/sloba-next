@@ -899,7 +899,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="text-slate-300 text-base mb-4 max-w-xl">
           Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre novembra ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu — deo je naše šire usluge{" "}
           <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping upravljanja</Link>. Kao{" "}
-          <Link href="/usluge/google-ads-upravljanje" className="underline text-yellow-400">agencija za Google Ads</Link> vodimo i Search i Performance Max kampanje, ne samo Shopping.
+          <Link href="/usluge/google-ads-agencija" className="underline text-yellow-400">agencija za Google Ads</Link> vodimo i Search i Performance Max kampanje, ne samo Shopping.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">

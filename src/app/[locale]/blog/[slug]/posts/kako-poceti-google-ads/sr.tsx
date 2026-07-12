@@ -103,7 +103,7 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
       <p>
         Ovaj vodič vam daje sve što vam treba da krenete sami. Ako u nekom trenutku poželite da neko ko se time bavi svaki dan preuzme vođenje umesto vas, tu je moja{" "}
-        <Link href="/usluge/google-ads-upravljanje" className="text-blue-700 underline">agencija za Google Ads</Link>.
+        <Link href="/usluge/google-ads-agencija" className="text-blue-700 underline">agencija za Google Ads</Link>.
       </p>
 
       <hr />

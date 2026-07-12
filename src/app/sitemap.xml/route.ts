@@ -21,6 +21,7 @@ const routeLastmod: Record<string, string> = {
   "/kontakt/hvala": "2026-01-26",
   "/usluge": "2026-02-10",
   "/usluge/google-ads-upravljanje": "2026-04-17",
+  "/usluge/google-ads-agencija": "2026-07-12",
   "/usluge/google-ads-audit": "2026-02-10",
   "/usluge/google-shopping": "2026-02-10",
   "/usluge/performance-max": "2026-02-10",

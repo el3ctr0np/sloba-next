@@ -34,6 +34,12 @@ export default async function ServicesPage({ params }: Props) {
       badge: "Most Popular"
     },
     {
+      title: "Google Ads Agency",
+      href: "/usluge/google-ads-agencija",
+      desc: "Senior-led boutique agency — no junior account managers, transparent reporting, and you own your account.",
+      badge: null
+    },
+    {
       title: "Google Ads Audit",
       href: "/usluge/google-ads-audit",
       desc: "In-depth account analysis with prioritized recommendations — discover where you're losing money and how to fix it.",
@@ -81,6 +87,12 @@ export default async function ServicesPage({ params }: Props) {
       href: "/usluge/google-ads-upravljanje",
       desc: "Strategija, setup i svakodnevna optimizacija naloga sa fokusom na ROAS i realan rast prihoda.",
       badge: "Najpopularnija"
+    },
+    {
+      title: "Google Ads agencija",
+      href: "/usluge/google-ads-agencija",
+      desc: "Senior-led boutique agencija - bez junior account managera, transparentan izveštaj, i vi ste vlasnik naloga.",
+      badge: null
     },
     {
       title: "Google Ads audit",
@@ -649,7 +661,7 @@ export default async function ServicesPage({ params }: Props) {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {coreServices.map((service, index) => {
-            const icons = [Settings, ClipboardCheck, ShoppingCart, BarChart3, Search, Eye, PlayCircle, MessageSquare];
+            const icons = [Settings, Building2, ClipboardCheck, ShoppingCart, BarChart3, Search, Eye, PlayCircle, MessageSquare];
             const Icon = icons[index] || Settings;
             return (
               <AnimateOnScroll key={service.href} delay={index * 100}>
