@@ -39,6 +39,25 @@ export default function GoogleAdsAuditGuideEN() {
         </p>
       </div>
 
+      {/* ── Featured-snippet: 10 categories list ── */}
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-3">
+          Google Ads audit checklist — the 10 categories
+        </p>
+        <ol className="space-y-2 text-base text-gray-700 pl-5 mb-0">
+          <li><strong>Account structure</strong> — campaign organization, naming conventions, hierarchy</li>
+          <li><strong>Conversion tracking</strong> — accuracy, duplicates, attribution window</li>
+          <li><strong>Campaign settings</strong> — location targeting, networks, ad schedule, devices</li>
+          <li><strong>Keywords and search terms</strong> — Search Terms Report, negatives, Quality Score</li>
+          <li><strong>Ads and extensions</strong> — RSA quality, Ad Strength, sitelinks, callouts</li>
+          <li><strong>Audiences and remarketing</strong> — remarketing lists, converter exclusions</li>
+          <li><strong>Bidding strategy</strong> — Smart Bidding setup, conversion volume, target realism</li>
+          <li><strong>Budget and allocation</strong> — Impression Share Lost (Budget), budget distribution</li>
+          <li><strong>Reporting and analytics</strong> — GA4 integration, attribution models, data discrepancies</li>
+          <li><strong>Scripts and automation</strong> — Google Ads Scripts, automated rules, alerts</li>
+        </ol>
+      </div>
+
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
@@ -69,7 +88,11 @@ export default function GoogleAdsAuditGuideEN() {
         Over 90% of the Google Ads accounts I take over have the same fundamental problems: conversion tracking that doesn&apos;t work properly, budget leaking into irrelevant search terms, poorly organized campaigns, or Smart Bidding trying to optimize on insufficient data. That&apos;s why a detailed audit is always the first thing I run on a new account.
       </p>
       <p>
-        A Google Ads audit isn&apos;t just a list of things that &quot;don&apos;t work&quot; — it&apos;s a systematic diagnostic that pinpoints <strong>where you&apos;re losing money and where you&apos;re missing growth opportunities</strong>. The average account that hasn&apos;t been optimized for 6+ months wastes 15-25% of its budget outright. That waste can be eliminated in the first week after the audit.
+        A Google Ads audit isn&apos;t just a list of things that &quot;don&apos;t work&quot; — it&apos;s a systematic diagnostic that pinpoints <strong>where you&apos;re losing money and where you&apos;re missing growth opportunities</strong>. The average account that hasn&apos;t been optimized for 6+ months wastes 15-25% of its budget outright. That waste can be eliminated in the first week after the audit. If you&apos;d rather have it done for you, see my{" "}
+        <Link href="/usluge/google-ads-audit" className="underline font-semibold">Google Ads audit service</Link>, which covers the same 80+ checkpoints below.
+      </p>
+      <p>
+        This checklist still holds up in the Performance Max and AI Max era: those campaign types blend Search, Shopping, and Display signals into one automated unit, so audit them separately from standard Search campaigns and treat each asset group the way you&apos;d treat an ad group — one theme, not a dumping ground.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -892,7 +915,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <div className="mt-10 text-sm text-gray-500">
         <p className="mb-1"><strong>Author:</strong> Slobodan Jelisavac, Google Ads Specialist</p>
-        <p className="mb-0">Last updated: February 2026</p>
+        <p className="mb-0">Last updated: July 2026</p>
       </div>
     </>
   );

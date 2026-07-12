@@ -303,7 +303,7 @@ const srPosts: PostData[] = [
     slug: "google-shopping-srbija-2026",
     title: "Google Shopping Dolazi u Srbiju Novembar 2026: Kompletan Vodič za Pripremu",
     date: "2026-04-09",
-    dateModified: "2026-04-09",
+    dateModified: "2026-07-12",
     category: "Google Shopping",
     metaDescription:
       "Google Shopping Ads stiže u Srbiju novembra 2026 i u Hrvatsku Q4 2026. Kompletan vodič sa 15-korak checklist-om, Merchant Center setup, product feed optimizacija, i lekcije iz 2+ godine UK iskustva (Chelleon, £290k+ revenue).",
@@ -351,7 +351,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-optimizacija",
     title: "Google Ads Optimizacija: +20 Taktika za bolje rezultate [2026]",
     date: "2026-01-17",
-    dateModified: "2026-05-14",
+    dateModified: "2026-07-12",
     category: "Optimizacija",
     metaDescription:
       "Preko +20 taktika za bolje rezultate. Kompletan vodič — bid strategije, negativne ključne reči, Quality Score, landing page i A/B testiranje. Iz prakse sa 20+ klijenata.",
@@ -447,7 +447,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-audit-vodic",
     title: "Google Ads Audit: Kompletan Checklist [2026]",
     date: "2026-01-27",
-    dateModified: "2025-12-22",
+    dateModified: "2026-07-12",
     category: "Google Ads audit",
     metaDescription:
       "Detaljni Google Ads audit checklist sa 80+ tačaka za proveru. Pronađite probleme, optimizujte kampanje, i poboljšajte ROI.",
@@ -507,7 +507,7 @@ const srPosts: PostData[] = [
     slug: "kako-poceti-google-ads",
     title: "Kako početi sa Google oglašavanjem: Vodič za početnike [2026]",
     date: "2026-03-01",
-    dateModified: "2026-05-14",
+    dateModified: "2026-07-12",
     category: "Google Ads",
     metaDescription:
       "Kako početi sa Google oglašavanjem od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
@@ -750,7 +750,7 @@ const enPosts: PostData[] = [
     slug: "google-shopping-serbia-2026",
     title: "Google Shopping Launches in Serbia November 2026: Complete Preparation Guide",
     date: "2026-04-09",
-    dateModified: "2026-04-09",
+    dateModified: "2026-07-12",
     category: "Google Shopping",
     metaDescription:
       "Google Shopping Ads launches in Serbia in November 2026 and across Croatia, BiH and Slovenia in Q4 2026. Full guide with 15-step checklist, Merchant Center setup, product feed optimisation, and lessons from 2+ years of UK Shopping campaigns (Chelleon, £290k+ revenue).",
@@ -796,7 +796,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-optimization",
     title: "Google Ads Optimization 2026: 30 Tactics to Lift ROAS 40%",
     date: "2026-01-17",
-    dateModified: "2026-07-03",
+    dateModified: "2026-07-12",
     category: "Optimization",
     metaDescription:
       "30 Google Ads optimization tactics tested on 20+ eCommerce and B2B accounts — Smart Bidding, negative keywords, Quality Score, landing pages. Average 40% ROAS lift in 90 days.",
@@ -885,7 +885,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-audit-checklist",
     title: "Google Ads Audit Checklist 2026: 80+ Points, 1-Hour Audit",
     date: "2026-01-27",
-    dateModified: "2026-07-03",
+    dateModified: "2026-07-12",
     category: "Google Ads Audit",
     metaDescription:
       "Free 80+ point Google Ads audit checklist for 2026. Find wasted spend in 60 minutes — conversion tracking, Smart Bidding, Quality Score, negatives. Tested on 20+ accounts.",
@@ -940,7 +940,7 @@ const enPosts: PostData[] = [
     slug: "how-to-start-google-ads",
     title: "How to Start with Google Ads: Beginner's Guide [2026]",
     date: "2026-03-01",
-    dateModified: "2026-03-01",
+    dateModified: "2026-07-12",
     category: "Google Ads",
     metaDescription:
       "How to start Google Ads from scratch? Step-by-step beginner guide — campaign types, budget, keywords, and common mistakes. Everything you need before your first campaign.",

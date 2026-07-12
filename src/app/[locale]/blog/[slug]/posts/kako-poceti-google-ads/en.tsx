@@ -46,6 +46,25 @@ export default function KakoPocetiGoogleAdsEN() {
           </div>
         </div>
       </div>
+
+      {/* ── Featured-snippet: steps overview ── */}
+      <div className="bg-white border-2 border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-2">
+          Quick overview
+        </p>
+        <h3 className="text-base md:text-lg font-heading font-semibold mb-3 mt-0">
+          How to start Google Ads in 6 steps
+        </h3>
+        <ol className="list-decimal list-inside space-y-2 text-base text-gray-700 mb-0">
+          <li><strong>Create your Google Ads account</strong> — sign up at ads.google.com and switch to Expert Mode</li>
+          <li><strong>Set up conversion tracking</strong> — before you spend a single cent</li>
+          <li><strong>Research and select your keywords</strong> — focus on high-intent, specific terms</li>
+          <li><strong>Add negative keywords</strong> — block irrelevant searches before launch</li>
+          <li><strong>Write your ads and set up extensions</strong> — sitelinks, callouts, structured snippets</li>
+          <li><strong>Launch, monitor, and optimize weekly</strong> — review the Search Terms Report every week</li>
+        </ol>
+      </div>
+
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
@@ -84,7 +103,9 @@ export default function KakoPocetiGoogleAdsEN() {
       </div>
 
       <p>
-        In 2026, Google Ads remains the most efficient way to reach people who are actively searching for what you sell. The question isn&apos;t whether it works — it&apos;s whether you&apos;re doing it right.
+        In 2026, Google Ads remains the most efficient way to reach people who are actively searching for what you sell. The question isn&apos;t whether it works — it&apos;s whether you&apos;re doing it right. This guide gives you everything you need to start on your own; if you&apos;d rather hand it to someone who does this daily, that&apos;s what my{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline text-gray-900">Google Ads management</Link>{" "}
+        service is for.
       </p>
 
       <hr />
@@ -549,7 +570,9 @@ export default function KakoPocetiGoogleAdsEN() {
         >
           Google Ads: Agency vs. Freelancer vs. In-House
         </Link>
-        .
+        . There is also a middle ground: a professionally built account you run yourself. Check out my{" "}
+        <Link href="/usluge/starter-paket" className="underline text-gray-900">Google Ads services</Link>{" "}
+        for a senior account setup.
       </p>
 
       <hr />
@@ -616,6 +639,7 @@ export default function KakoPocetiGoogleAdsEN() {
       <hr />
 
       <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+
 
       <div className="space-y-3 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

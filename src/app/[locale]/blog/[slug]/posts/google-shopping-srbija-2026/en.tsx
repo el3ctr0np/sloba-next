@@ -41,6 +41,21 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads for eCommerce service</Link>.
       </p>
 
+      <div className="bg-white border-2 border-gray-200 rounded-xl p-6 my-8">
+        <p className="text-xs uppercase tracking-wider text-gray-500 mb-3 font-semibold">Google Shopping Serbia launch — key facts</p>
+        <ul className="space-y-2 text-base text-gray-700 mb-0 pl-5 list-disc">
+          <li><strong>Launch date:</strong> November 2026, expected first or second week — right before Black Friday (November 28th).</li>
+          <li><strong>Regional rollout:</strong> Croatia and Slovenia also launch in Q4 2026, alongside Bosnia &amp; Herzegovina and Montenegro — the wider Balkans wave. North Macedonia is likely Wave 2 in 2027.</li>
+          <li><strong>Merchant Center:</strong> registration for the Serbian market isn&apos;t open yet as of July 2026 — Google enables it ahead of the official launch. See the{" "}
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="underline text-blue-700">Merchant Center Serbia setup guide</Link>.
+          </li>
+          <li><strong>Preparation window:</strong> 7 months from today to complete the 15-step checklist below.</li>
+          <li><strong>Account review:</strong> Merchant Center account review can take 1-3 weeks in new markets — verify your account a minimum of 60 days before launch.</li>
+          <li><strong>Starter budget:</strong> €150-500/month, with CPC estimated between 3 and 25 RSD depending on industry.</li>
+          <li><strong>CSS partners:</strong> can lower effective CPC by 15-20% versus bidding directly through Google Shopping.</li>
+        </ul>
+      </div>
+
       <hr />
 
       <h2>Exactly when Google Shopping arrives in Serbia</h2>
@@ -129,9 +144,9 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <hr />
 
-      <h2>Every Ex-Yu market getting Shopping in 2026</h2>
+      <h2>Every Ex-Yu market getting Shopping in 2026 — the Balkans rollout</h2>
       <p>
-        Serbia isn&apos;t the only country in the region. Google is expanding Shopping across the whole Ex-Yu region in Q4 2026, which opens up a multi-market strategy from day one.
+        Serbia isn&apos;t the only country in the region. Google is expanding Shopping across the whole Ex-Yu region — the wider Balkans — in Q4 2026, which opens up a multi-market strategy from day one.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -330,12 +345,12 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <hr />
 
-      <h2>Google Merchant Center — the mandatory first step</h2>
+      <h2>Google Merchant Center Serbia setup — the mandatory first step</h2>
       <p>
         <GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink> (MC) is the central platform for managing your product feed and Shopping campaigns. Without a verified MC account, you can&apos;t run a single Shopping ad. This isn&apos;t optional — it&apos;s a prerequisite.
       </p>
       <p>
-        For the Serbian market, there are specifics you need to keep in mind during setup:
+        Merchant Center Serbia setup has a few market-specific requirements you need to keep in mind:
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">

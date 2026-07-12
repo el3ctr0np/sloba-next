@@ -93,8 +93,12 @@ export default function GoogleAdsOptimizacijaPost() {
       </div>
 
       <p>
-        Optimizacija nije raketna nauka, ali zahteva sistem. Ovaj vodič je taj sistem — korak po korak,
-        taktika po taktika.
+        Optimizacija nije raketna nauka, ali zahteva sistem. Ovaj vodič je taj sistem - korak po korak,
+        taktika po taktika. Pretpostavka je da su osnove već postavljene. Ako niste sigurni gde vaš nalog
+        stoji, počnite od{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline">Google Ads audit checklist-e</Link>{" "}
+        - ili preskočite DIY pristup uz{" "}
+        <Link href="/usluge/google-ads-audit" className="underline">profesionalni Google Ads audit</Link>.
       </p>
 
       <hr />
@@ -934,6 +938,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <hr />
 
       <h2>Najčešća pitanja o Google Ads optimizaciji</h2>
+
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

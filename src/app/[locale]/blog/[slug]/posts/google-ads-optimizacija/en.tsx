@@ -55,6 +55,28 @@ export default function GoogleAdsOptimizationEN() {
         </p>
       </div>
 
+      {/* ── Featured-snippet checklist block ── */}
+      <div className="bg-white border-2 border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-3">
+          Quick reference
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-4">
+          Google Ads optimization checklist (10 priorities)
+        </p>
+        <ol className="text-base text-gray-700 space-y-2 mb-0 pl-5 list-decimal">
+          <li>Separate Brand and Non-Brand campaigns so budget and Quality Score don&apos;t blur together</li>
+          <li>Mine the Search Terms Report every week — the single highest-ROI habit</li>
+          <li>Build a negative keyword foundation at the account and campaign level</li>
+          <li>Match match types (Exact/Phrase/Broad) to your bidding strategy and conversion volume</li>
+          <li>Write RSAs with real headline diversity instead of 15 versions of the same line</li>
+          <li>Use every relevant ad extension — sitelinks, callouts, structured snippets, call</li>
+          <li>Align landing pages with ad messaging so Quality Score doesn&apos;t suffer</li>
+          <li>Pick a bidding strategy that matches your monthly conversion volume</li>
+          <li>Apply dayparting and device bid adjustments once you have enough data</li>
+          <li>Audit conversion tracking every quarter so the algorithm learns from clean data</li>
+        </ol>
+      </div>
+
       <hr />
 
       <h2>Why optimization is key to success</h2>
@@ -81,7 +103,11 @@ export default function GoogleAdsOptimizationEN() {
 
       <p>
         Optimization isn&apos;t rocket science, but it does require a system. This guide is that system — step by step,
-        tactic by tactic.
+        tactic by tactic. It also assumes the fundamentals are already in place. If you&apos;re not sure where your
+        account stands, start with our{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="underline font-semibold">Google Ads audit checklist</Link>{" "}
+        — or skip the DIY route entirely with a{" "}
+        <Link href="/usluge/google-ads-audit" className="underline font-semibold">professional Google Ads audit</Link>.
       </p>
 
       <hr />
@@ -740,6 +766,7 @@ export default function GoogleAdsOptimizationEN() {
       <hr />
 
       <h2>Frequently asked questions</h2>
+
 
       <div className="space-y-4 my-8">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

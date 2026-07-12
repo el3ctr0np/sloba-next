@@ -59,7 +59,6 @@ export default function GoogleAdsAuditPost() {
           <li><a href="#najx10dex161x107e-postavljena-pitanja-o-google-ads-audit-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Naj&#x10D;e&#x161;&#x107;e postavljena pitanja o Google Ads audit-u</a></li>
           <li><a href="#zakljux10dak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zaklju&#x10D;ak</a></li>
           <li><a href="#povezani-vodix10di" className="block py-1 text-base text-gray-700 hover:text-primary underline">Povezani vodi&#x10D;i</a></li>
-          <li><a href="#najcesca-pitanja-o-google-ads-auditu" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja o Google Ads auditu</a></li>
         </ol>
       </nav>
 
@@ -70,7 +69,7 @@ export default function GoogleAdsAuditPost() {
         Kada preuzmem novi nalog na upravljanje, prva stvar je uvek detaljan Google Ads audit. U praksi vidim da preko 90% naloga ima iste fundamentalne probleme: conversion tracking ne funkcioniše kako treba, budžet cure na irelevantne search terms-ove, kampanje su loše organizovane, ili Smart Bidding pokušava da optimizuje sa nedovoljno podataka.
       </p>
       <p>
-        Google Ads audit nije samo lista stvari koje &quot;ne rade&quot; — to je sistematska dijagnostika koja precizno identifikuje <strong>gde gubite novac i gde propuštate prilike za rast</strong>. Prosečan nalog koji nije optimizovan 6+ meseci troši 15-25% budžeta potpuno neefikasno. To se može eliminisati u prvoj nedelji posle audit-a.
+        Google Ads audit nije samo lista stvari koje &quot;ne rade&quot; - to je sistematska dijagnostika koja precizno identifikuje <strong>gde gubite novac i gde propuštate prilike za rast</strong>. Prosečan nalog koji nije optimizovan 6+ meseci troši 15-25% budžeta potpuno neefikasno. To se može eliminisati u prvoj nedelji posle audit-a. Ako nemate vremena da to radite sami, pogledajte moj <Link href="/usluge/google-ads-audit" className="underline">Google Ads audit servis</Link>, koji pokriva isti checklist od 80+ tačaka.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -735,6 +734,16 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
 
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            &#x160;ta proveriti prvo u Google Ads auditu?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+            <p className="mb-0">Pet ta&#x10D;aka koje pokrivaju 80% problema: 1) Conversion tracking - da li se prate prave akcije? 2) Search Terms Report - koji upiti aktiviraju va&#x161;e oglase? 3) Quality Score - da li su klju&#x10D;ne re&#x10D;i relevantne? 4) Wasted spend - gde novac odlazi bez rezultata? 5) Landing page - konvertuje li stranica na koju &#x161;aljete saobra&#x107;aj?</p>
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
             Koliko ko&#x161;ta profesionalan Google Ads audit?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
@@ -873,65 +882,9 @@ gi&#x10D;na, skalabilna, i transparentna — bilo ko treba da razume organizacij
         </Link>
       </div>
 
-      <hr />
-
-      <h2 id="najcesca-pitanja-o-google-ads-auditu">Najčešća pitanja o Google Ads auditu</h2>
-
-      <div className="space-y-4 my-6">
-        <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
-          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Koliko često treba raditi Google Ads audit?
-            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
-          </summary>
-          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Kompletan audit svakih 3-6 meseci je minimum za aktivne naloge. Za nove naloge — obavezno nakon prvih 30 dana (da se uhvate rani problemi). Za naloge sa visokim spend-om (€5.000+/mesečno), mesečni mini-audit je preporučljiv. Kontinuirana optimizacija nije zamena za periodični dubinski pregled cele strukture.
-          </div>
-        </details>
-
-        <details className="bg-white border-2 border-gray-200 rounded-xl group">
-          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Šta proveriti prvo u Google Ads auditu?
-            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
-          </summary>
-          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Pet tačaka koje pokrivaju 80% problema: 1) Conversion tracking — da li se prate prave akcije? 2) Search Terms report — koje upite aktiviraju tvoje oglase? 3) Quality Score — da li su ključne reči relevantne? 4) Wasted spend — gde novac odlazi bez rezultata? 5) Landing page — konvertuje li stranica na koju šalješ saobraćaj?
-          </div>
-        </details>
-
-        <details className="bg-white border-2 border-gray-200 rounded-xl group">
-          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Koliko košta Google Ads audit?
-            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
-          </summary>
-          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Besplatan basic audit (surface-level pregled) nudi mnogo agencija kao lead magnet. Profesionalni audit sa detaljnom analizom i akcionim planom košta €200-800 zavisno od veličine naloga i iskustva auditora. Uzmimo u obzir da jedan dobro urađen audit može da sačuva 20-40% mesečnog budžeta — ROI je obično odličan.
-          </div>
-        </details>
-
-        <details className="bg-white border-2 border-gray-200 rounded-xl group">
-          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Mogu li sam da uradim audit svog naloga?
-            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
-          </summary>
-          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Da, sa dobrom checklistom možeš pokriti osnovne probleme. Ovaj vodič ti daje tačno to. Ograničenje DIY audita je što možeš propustiti suptilne probleme koje iskusan specijalista prepoznaje odmah (npr. loša struktura kampanja, suboptimalni bidding setup, propuštene prilike). Eksterni pogled uvek donosi svežu perspektivu.
-          </div>
-        </details>
-
-        <details className="bg-white border-2 border-gray-200 rounded-xl group">
-          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Šta raditi posle audita?
-            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
-          </summary>
-          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Napravi prioritizovanu listu akcija: Hitno (ove nedelje) — conversion tracking greške, aktivni problemi koji trose budžet. Visok prioritet (ovaj mesec) — negativne ključne reči, poboljšanje oglasa, Quality Score. Optimizacija (naredna 3 meseca) — testiranje bidding strategija, landing page optimizacija, proširenje kampanja. Bez prioritizacije, audit ostaje samo lista problema.
-          </div>
-        </details>
-      </div>
-
       <div className="mt-10 text-sm text-gray-500">
         <p className="mb-1"><strong>Autor:</strong> Slobodan Jelisavac, Google Ads Specialist</p>
-        <p className="mb-0">Poslednje ažuriranje: Februar 2026</p>
+        <p className="mb-0">Poslednje ažuriranje: Jul 2026</p>
       </div>
     </>
   );

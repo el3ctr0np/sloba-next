@@ -39,8 +39,26 @@ export default function KakoPocetiGoogleAdsSR() {
           Kako početi sa Google Ads-om?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          Početak sa <strong>Google Ads-om</strong> svodi se na 5 koraka: kreiranje naloga → postavljanje conversion trackinga → keyword research → pokretanje prve kampanje → optimizacija na osnovu podataka. Preporučeni početni budžet je <strong>€200-400 mesečno</strong> za prve 4-8 nedelja testiranja.
+          Ovaj vodič za <strong>google ads za početnike</strong> pokazuje tačno odakle da krenete: kreiranje naloga → postavljanje conversion trackinga → keyword research → pokretanje prve kampanje → optimizacija na osnovu podataka. Preporučeni početni budžet je <strong>€200-400 mesečno</strong> za prve 4-8 nedelja testiranja.
         </p>
+      </div>
+
+      {/* ── Featured-snippet: koraci ── */}
+      <div className="bg-white border-2 border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-2">
+          Kratak pregled
+        </p>
+        <h3 className="text-base md:text-lg font-heading font-semibold mb-3 mt-0">
+          Kako početi sa Google Ads u 6 koraka
+        </h3>
+        <ol className="list-decimal list-inside space-y-2 text-base text-gray-700 mb-0">
+          <li><strong>Otvorite Google Ads nalog</strong> - registrujte se na ads.google.com i izaberite Expert mode</li>
+          <li><strong>Povežite Google Analytics 4</strong> - dobijate uvid u ponašanje korisnika posle klika</li>
+          <li><strong>Postavite conversion tracking</strong> - pratite kupovine, pozive i formulare pre nego što potrošite prvi dinar</li>
+          <li><strong>Istražite ključne reči</strong> - fokus na termine sa namerom kupovine, ne samo informativne pretrage</li>
+          <li><strong>Kreirajte prvu Search kampanju</strong> - jedna kampanja, jedna ad grupa, 10-15 usko povezanih ključnih reči</li>
+          <li><strong>Postavite negativne ključne reči</strong> - blokirajte irelevantne pretrage od prvog dana</li>
+        </ol>
       </div>
 
       {/* ── Sekcija 1: Zašto Google Ads u 2026. ── */}
@@ -70,7 +88,7 @@ export default function KakoPocetiGoogleAdsSR() {
         Google obradi <strong>8,5 milijardi pretraga dnevno</strong>. Svaki put kada neko ukuca &quot;servis klima uređaja Beograd&quot; ili &quot;kupiti bicikl online&quot; — to je potencijalni kupac koji aktivno traži rešenje. Ne čeka da ga reklama nađe. On sam traži.
       </p>
       <p>
-        Tu leži ključna razlika između Google Ads-a i svega ostalog: oglašavate se ljudima koji su <em>već u fazi traženja</em>. Meta, TikTok, bilbordi — svi prekidaju nekoga ko nije tražio. Google hvata nameru u trenutku kada postoji. Za biznis koji prodaje konkretne proizvode ili usluge, to je najmoćniji kanal koji postoji.
+        Tu leži ključna razlika između Google Ads-a i svega ostalog: oglašavate se ljudima koji su <em>već u fazi traženja</em>. Meta, TikTok, bilbordi - svi prekidaju nekoga ko nije tražio. Google hvata nameru u trenutku kada postoji. Za biznis koji prodaje konkretne proizvode ili usluge, to je najmoćniji kanal koji postoji - i upravo zato je google oglašavanje ostalo prvi izbor za direktan odgovor, godinu za godinom.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -82,6 +100,10 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <p>
         U 2026. godini Google Ads je i dalje dominantan kanal za direktan odgovor — bilo da ste lokalni servis, eCommerce prodavnica ili B2B kompanija. Automatizacija je napredovala (AI bidding, Performance Max), ali osnove nisu se promenile: prava ključna reč + pravi oglas + prava stranica = konverzija.
+      </p>
+      <p>
+        Ovaj vodič vam daje sve što vam treba da krenete sami. Ako u nekom trenutku poželite da neko ko se time bavi svaki dan preuzme vođenje umesto vas, tu je moja{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="text-blue-700 underline">agencija za Google Ads</Link>.
       </p>
 
       <hr />
@@ -217,6 +239,12 @@ export default function KakoPocetiGoogleAdsSR() {
         </p>
       </div>
 
+      <p>
+        Ako vam nedostaje vreme ili strpljenje za sve ovo, profesionalno{" "}
+        <Link href="/usluge/search-kampanje" className="text-blue-700 underline">vođenje kampanja</Link>{" "}
+        od starta je opcija koju najčešće preporučujem vlasnicima biznisa sa ograničenim vremenom.
+      </p>
+
       <hr />
 
       {/* ── Sekcija 5: Korak po korak ── */}
@@ -250,6 +278,9 @@ export default function KakoPocetiGoogleAdsSR() {
       <h3 id="korak-5-kreirajte-prvu-search-kampanju">Korak 5: Kreirajte prvu Search kampanju</h3>
       <p>
         Počnite jednostavno: <strong>jedna kampanja, jedna ad grupa, 10-15 usko povezanih ključnih reči, 2-3 oglasa</strong>. Fokusirajte se na relevantnost, ne na obim. Bolje je imati 10 preciznih ključnih reči nego 100 razvodnjenih. Koristite phrase match ili exact match za početak.
+      </p>
+      <p>
+        Kako napraviti google oglas koji zaista privlači klikove: iskoristite prostor za naslove da odgovorite direktno na pretragu, dodajte cenu ili ključnu prednost ako je relevantno, i uvek uključite jasan poziv na akciju (poziv, kupovina, upit). Testirajte 2-3 varijante odjednom da vidite šta bolje prolazi.
       </p>
 
       <h3 id="korak-6-postavite-negativne-kljucne-reci">Korak 6: Postavite negativne ključne reči</h3>
@@ -455,6 +486,11 @@ export default function KakoPocetiGoogleAdsSR() {
         Detaljno poređenje opcija — agencija, freelancer ili in-house — možete pročitati u posebnom vodiču:{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="text-blue-700 underline">Agencija vs. freelancer: šta je pravo za vaš biznis</Link>.
       </p>
+      <p>
+        Postoji i srednje rešenje: profesionalno postavljen nalog koji dalje sami vodite. Pogledajte moje{" "}
+        <Link href="/usluge/starter-paket" className="text-blue-700 underline">Google Ads usluge</Link>{" "}
+        za senior setup naloga - dobijate čvrst temelj bez obaveze mesečnog angažmana.
+      </p>
 
       <hr />
 
@@ -524,6 +560,7 @@ export default function KakoPocetiGoogleAdsSR() {
 
       {/* ── Sekcija 10: FAQ ── */}
       <h2 id="cesta-pitanja">Česta pitanja</h2>
+
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>

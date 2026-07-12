@@ -38,7 +38,8 @@ export default function GoogleShoppingSrbija2026SR() {
       </p>
       <p>
         Ovo je pillar post o Google Shopping-u u Srbiji. Pokriva sve: datum, šta je Shopping, Ex-Yu tržišta, 15-korak checklist, Merchant Center, product feed, moje UK iskustvo, greške, troškove, i CSS strategiju. Linkovi ka supporting postovima se nalaze kroz tekst za one koji žele više detalja o konkretnim temama. Ako želite da vam neko sa iskustvom postavi ceo eCommerce nalog, pogledajte i našu uslugu{" "}
-        <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads za eCommerce</Link>.
+        <Link href="/usluge/google-ads-za-ecommerce" className="underline font-medium">Google Ads za eCommerce</Link>, a kompletan pregled svih{" "}
+        <Link href="/usluge" className="underline font-medium">Google Ads usluga</Link> je na stranici usluga.
       </p>
 
       <hr />
@@ -897,7 +898,8 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
           Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre novembra ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu — deo je naše šire usluge{" "}
-          <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping upravljanja</Link>.
+          <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping upravljanja</Link>. Kao{" "}
+          <Link href="/usluge/google-ads-upravljanje" className="underline text-yellow-400">agencija za Google Ads</Link> vodimo i Search i Performance Max kampanje, ne samo Shopping.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
