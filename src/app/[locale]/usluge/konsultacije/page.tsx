@@ -359,6 +359,11 @@ export default async function KonsultacijePage({ params }: Props) {
             question: "Da li radite konsultacije i sa malim firmama?",
             answer:
               "Da. Mnogi vlasnici malih firmi zakažu jednu Standard Session da provere pristup pre nego što ulože više u oglase. Ne treba vam interni tim niti veliki budžet da biste imali korist od konsultacije."
+          },
+          {
+            question: "Konsultacije ili vođenje kampanja - šta mi treba?",
+            answer:
+              "Konsultacije su za situacije kada vaš tim (ili vi) vodi kampanje, a treba vam ekspertski input po potrebi - strategija, second opinion, rešavanje konkretnog problema. Ako nemate nikoga da svakodnevno vodi nalog i tražite nekoga ko preuzima kompletnu izvedbu, to je Google Ads upravljanje, ne konsultacija."
           }
         ];
 
@@ -523,7 +528,7 @@ export default async function KonsultacijePage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "Expert advice when you need it — no long-term commitment"
-                : "Ekspertski savet kada vam treba, bez dugoročne obaveze"}
+                : "Google Ads konsultacije - ekspertski savet kada vam treba, bez dugoročne obaveze"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
@@ -947,6 +952,12 @@ export default async function KonsultacijePage({ params }: Props) {
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
             <Link
+              href="/usluge/google-ads-agencija"
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "Google Ads Agency" : "Google Ads agencija"}
+            </Link>
+            <Link
               href="/usluge/google-ads-upravljanje"
               className="hover:text-white transition-colors underline"
             >
@@ -963,6 +974,12 @@ export default async function KonsultacijePage({ params }: Props) {
               className="hover:text-white transition-colors underline"
             >
               {locale === "en" ? "Kickstart" : "Kickstart paket"}
+            </Link>
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: "kako-izabrati-google-ads-konsultanta" } }}
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "How to Choose a Google Ads Consultant" : "Kako izabrati Google Ads konsultanta"}
             </Link>
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}

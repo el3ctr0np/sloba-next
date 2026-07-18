@@ -310,6 +310,16 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
       question: "Koja je razlika između audita od agencije i nezavisnog konsultanta?",
       answer:
         "Audit od agencije često je zapravo prodajni pitch za njihovu uslugu upravljanja. Moj nezavisni audit je neutralan — nemam interes da preporučim nepotrebne izmene, a izveštaj možete odneti bilo kojoj agenciji ili svom internom timu."
+    },
+    {
+      question: "Koliko košta Google Ads audit?",
+      answer:
+        "Zavisi od veličine naloga - Deep Audit + Action Plan počinje od €450 za naloge do ~€5.000 mesečnog spend-a, a veći ili multi-channel nalozi dobijaju cenu na upit. Jednokratna je i uračunava se u prvi mesec upravljanja ako krenemo u saradnju u roku od 30 dana."
+    },
+    {
+      question: "Šta dobijam u auditu?",
+      answer:
+        "PDF izveštaj sa prioritizovanim preporukama (Quick Wins i Long-term), konkretnim action items sa objašnjenjima i screenshot-ovima problema. Opciono i video walkthrough od 15-20 minuta uz live poziv za pitanja i nejasnoće."
     }
   ];
 
@@ -485,7 +495,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "Deep Audit + Action Plan — discover where you're losing money"
-                : "Deep Audit + Action Plan - otkrijte gde gubite novac"}
+                : "Deep Audit + Action Plan - kompletan Google Ads audit koji otkriva gde gubite novac"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
@@ -978,6 +988,12 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             </Link>
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
+            <Link
+              href="/usluge/google-ads-agencija"
+              className="hover:text-white transition-colors underline"
+            >
+              {locale === "en" ? "Google Ads Agency" : "Google Ads agencija"}
+            </Link>
             <Link
               href="/usluge/google-ads-upravljanje"
               className="hover:text-white transition-colors underline"

@@ -34,10 +34,10 @@ export default function GoogleOglasavanjeZaFirmePost() {
           Brzi odgovor
         </p>
         <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
-          Šta je Google oglašavanje i zašto je efikasno za firme?
+          Šta je Google oglašavanje i koliko košta?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google oglašavanje (Google Ads)</strong> prikazuje vaše oglase korisnicima koji aktivno traže vaš proizvod ili uslugu, za razliku od društvenih mreža gde prekidate skrolovanje. Postoji <strong>6 tipova kampanja</strong> (Search, Shopping, Performance Max, Display, Video, Demand Gen), a prosečan ROAS na dobro vođenim nalozima iznosi oko <strong>8.5x</strong>. U Srbiji je CPC od <strong>€0.15 do €2.00</strong>, sa prvim merljivim rezultatima za 2-3 meseca.
+          <strong>Google oglašavanje (Google Ads)</strong> prikazuje vaše oglase korisnicima koji aktivno traže vaš proizvod ili uslugu, za razliku od društvenih mreža gde prekidate skrolovanje. U Srbiji je cena po kliku (CPC) od <strong>€0.15 do €2.00</strong>, a minimalni preporučeni mesečni budžet za kampanje je <strong>€500-1,000</strong>. Prosečan ROAS na dobro vođenim nalozima iznosi oko 8.5x, sa prvim merljivim rezultatima za 2-3 meseca.
         </p>
       </div>
 
@@ -73,7 +73,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Razlika između Google Ads i društvenih mreža</p>
-        <p className="text-blue-800 text-base mb-0">Na društvenim mrežama &quot;upadate&quot; korisnike dok oni konzumiraju sadržaj. Na Google-u, korisnici vas aktivno traže. Zbog toga Google Ads obično donosi manji volume, ali kvalitetniji saobraćaj sa višim intent-om.</p>
+        <p className="text-blue-800 text-base mb-0">Na društvenim mrežama &quot;upadate&quot; korisnike dok oni konzumiraju sadržaj. Oglašavanje na Google-u je suprotno: korisnici vas aktivno traže. Zbog toga Google Ads obično donosi manji volume, ali kvalitetniji saobraćaj sa višim intent-om.</p>
       </div>
 
       <hr />
@@ -147,7 +147,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       <hr />
 
       <h2 id="tipovi-google-ads-kampanja">Tipovi Google Ads kampanja</h2>
-      <p>Google Ads nije jedan sistem — to je ekosistem različitih tipova kampanja. Ono što radi za eCommerce neće raditi za B2B SaaS. Evo pregleda svih tipova:</p>
+      <p>Google Ads oglašavanje nije jedan sistem, to je ekosistem različitih tipova kampanja. Ono što radi za eCommerce neće raditi za B2B SaaS. Evo pregleda svih tipova:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
@@ -739,6 +739,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
       </div>
 
       <h3>Benchmark-ovi za Srbiju i region</h3>
+      <p><strong>Google oglašavanje cena</strong> zavisi od industrije, konkurencije i tipa kampanje. Za detaljniju razradu budžeta pogledajte <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="underline font-semibold">vodič o cenama Google Ads-a</Link>, a evo prosečnih vrednosti za srpsko tržište:</p>
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
@@ -871,6 +872,8 @@ export default function GoogleOglasavanjeZaFirmePost() {
       </details>
 
       <hr />
+
+      <p>Ako želite da ceo proces vodi neko drugi, <Link href="/usluge/google-ads-agencija" className="underline font-semibold">Google Ads agencija</Link> pokriva sve navedene korake, od tracking-a do optimizacije kampanja. Kompletan pregled onoga što radim pronađite na stranici <Link href="/usluge" className="underline font-semibold">Google Ads usluge</Link>.</p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Trebate pomoć sa Google Ads kampanjama?</p>

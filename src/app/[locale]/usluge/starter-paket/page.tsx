@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Ads Kickstart — Senior Setup from $990 | Digital Jelisavac"
-      : "Google Ads Kickstart - senior setup od €690 | Digital Jelisavac",
+      : "Google Ads Kickstart - starter paket za male firme od €690 | Digital Jelisavac",
     description: isEn
       ? "Digital Jelisavac's senior Google Ads setup for teams with an in-house owner who takes it from there. Architecture, keywords, RSAs, tracking spec, 60-day plan, handover session. From $990."
-      : "Senior Google Ads setup od Digital Jelisavac agencije za timove koji imaju osobu za dalje vođenje kampanja. Arhitektura naloga, ključne reči, RSA oglasi, tracking specifikacija, 60-dnevni plan, handover sesija. Od €690.",
+      : "Google Ads starter paket za male firme i osnivače koji sami vode kampanje dalje. Senior setup od Digital Jelisavac agencije - arhitektura naloga, ključne reči, RSA oglasi, tracking specifikacija, 60-dnevni plan, handover sesija. Od €690.",
     locale,
     path: "/services/starter-package",
     srPath: "/usluge/starter-paket",
@@ -339,6 +339,16 @@ export default async function StarterPaketPage({ params }: Props) {
           question: "Da li je ovo jednokratna cena?",
           answer:
             "Da — jedna uplata, bez ugovora. Dobijate arhitekturu, oglase, tracking specifikaciju, plan i handover, a onda vodite dalje. Ako kasnije poželite da pređete na ongoing upravljanje, to je poseban razgovor bez obaveze."
+        },
+        {
+          question: "Za koga je starter paket?",
+          answer:
+            "Kickstart (starter paket) je za male firme i osnivače koji već imaju nekoga da svakodnevno vodi nalog - vama treba samo da bude postavljen kako treba od prvog dana. Ako tek počinjete i nemate ni budžet ni osobu za vođenje kampanja, konsultacija je bolji prvi korak."
+        },
+        {
+          question: "Šta ako prerastemo starter paket?",
+          answer:
+            "Kad kampanje narastu i poželite da neko drugi preuzme svakodnevno vođenje, prelazite na Google Ads upravljanje - arhitektura postavljena u Kickstart-u ostaje, samo se nadograđuje strategija."
         }
       ];
 
@@ -538,7 +548,7 @@ export default async function StarterPaketPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {isEn
                 ? "Google Ads Kickstart — senior setup, you take it from there"
-                : "Google Ads Kickstart - senior setup, vi vodite dalje"}
+                : "Google Ads Kickstart - starter paket za male firme, vi vodite dalje"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {isEn ? (
@@ -940,6 +950,12 @@ export default async function StarterPaketPage({ params }: Props) {
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
             <Link
+              href="/usluge/google-ads-agencija"
+              className="hover:text-white transition-colors underline"
+            >
+              {isEn ? "Google Ads Agency" : "Google Ads agencija"}
+            </Link>
+            <Link
               href="/usluge/google-ads-upravljanje"
               className="hover:text-white transition-colors underline"
             >
@@ -950,6 +966,12 @@ export default async function StarterPaketPage({ params }: Props) {
               className="hover:text-white transition-colors underline"
             >
               {isEn ? "1-on-1 Consultations" : "1-on-1 konsultacije"}
+            </Link>
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: "kako-poceti-google-ads" } }}
+              className="hover:text-white transition-colors underline"
+            >
+              {isEn ? "How to Start with Google Ads" : "Kako početi sa Google Ads-om"}
             </Link>
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}

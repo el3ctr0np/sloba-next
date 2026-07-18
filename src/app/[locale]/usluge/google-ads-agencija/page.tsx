@@ -259,12 +259,12 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
     ? [
         { value: "3.7x", label: "average ROAS (eCommerce)" },
         { value: "3x", label: "UK Search Awards" },
-        { value: "20+", label: "accounts managed" }
+        { value: "50+", label: "brands worked with" }
       ]
     : [
         { value: "3.7x", label: "prosečan ROAS (eCommerce)" },
         { value: "3x", label: "UK Search Awards" },
-        { value: "20+", label: "vođenih naloga" }
+        { value: "50+", label: "brendova" }
       ];
 
   // FAQ
@@ -603,7 +603,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
               <span>{isEn ? "10+ years of experience" : "10+ godina iskustva"}</span>
               <span>3x UK Search Awards</span>
-              <span>{isEn ? "20+ accounts managed" : "20+ vođenih naloga"}</span>
+              <span>{isEn ? "50+ brands worked with" : "50+ brendova"}</span>
             </div>
           </div>
         </div>
@@ -633,16 +633,18 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
             {isEn ? (
               <>
                 I&apos;m Slobodan Jelisavac. For 10+ years I&apos;ve run Google Ads campaigns for
-                eCommerce and B2B brands, with a 3.7x average ROAS in eCommerce and campaigns that won
-                3 UK Search Awards. When you work with this agency, you work directly with me — the
-                person actually making the decisions on your account.
+                eCommerce and B2B brands — over 50 brands in total, including years inside 3
+                international agencies as Head of PPC and Senior PPC — with a 3.7x average ROAS in
+                eCommerce and campaigns that won 3 UK Search Awards. When you work with this agency,
+                you work directly with me — the person actually making the decisions on your account.
               </>
             ) : (
               <>
                 Ja sam Slobodan Jelisavac. Preko 10 godina vodim Google Ads kampanje za eCommerce i B2B
-                brendove, sa 3.7x prosečnim ROAS-om u eCommerce-u i kampanjama koje su osvojile 3 UK
-                Search Awards nagrade. Kada radite sa ovom agencijom, radite direktno sa mnom - osobom
-                koja stvarno donosi odluke na vašem nalogu.
+                brendove - preko 50 brendova ukupno, uz iskustvo iz 3 inostrane agencije na pozicijama
+                Head of PPC i Senior PPC - sa 3.7x prosečnim ROAS-om u eCommerce-u i kampanjama koje su
+                osvojile 3 UK Search Awards nagrade. Kada radite sa ovom agencijom, radite direktno sa
+                mnom - osobom koja stvarno donosi odluke na vašem nalogu.
               </>
             )}
           </p>

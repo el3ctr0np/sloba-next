@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { AuthorBox } from "@/components/blog/AuthorBox";
 import { ReadingProgressBar } from "@/components/blog/ReadingProgressBar";
@@ -1097,7 +1097,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   // If EN locale receives an SR slug, 301 redirect to the EN slug
   if (!post && locale === "en" && slug in slugMap) {
-    redirect(`/en/blog/${slugMap[slug]}`);
+    permanentRedirect(`/en/blog/${slugMap[slug]}`);
   }
 
   if (!post) {

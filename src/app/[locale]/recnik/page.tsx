@@ -206,7 +206,7 @@ export default async function GlossaryPage({ params }: Props) {
                 <p className="text-slate-300 mb-4">
                   {isEn
                     ? "This glossary is maintained monthly. Suggest a term or a correction — I respond within 48 hours."
-                    : "Rečnik se ažurira mesečno. Predložite termin ili ispravku — odgovaram u roku od 48h."}
+                    : "Rečnik se ažurira mesečno. Predložite termin ili ispravku - odgovaram u roku od 48h."}
                 </p>
                 <Link
                   href="/kontakt"
@@ -273,6 +273,7 @@ const TERM_SERVICE_MAP = {
   // Tracking → audit / B2B
   gtm: "/usluge/google-ads-audit",
   ga4: "/usluge/google-ads-audit",
+  ctr: "/usluge/google-ads-audit",
   "enhanced-conversions": "/usluge/google-ads-audit",
   "attribution-model": "/usluge/google-ads-audit",
   "consent-mode-v2": "/usluge/google-ads-audit",
@@ -289,10 +290,66 @@ const TERM_SERVICE_MAP = {
   "seasonality-adjustment": "/usluge/google-ads-upravljanje",
   "budget-pacing": "/usluge/google-ads-upravljanje",
   experiment: "/usluge/google-ads-upravljanje",
+  conversion: "/usluge/google-ads-upravljanje",
   // Core
   "google-ads": "/usluge/google-ads-upravljanje",
   adwords: "/usluge/google-ads-upravljanje",
 } as const;
+
+/**
+ * Natural, service-specific anchor text per money page — replaces the
+ * generic "Pogledaj uslugu →" CTA with wording that matches the destination
+ * (better anchor-text signal). Keyed by href so every term sharing a service
+ * page gets the same, deliberately chosen label. Falls back to the generic
+ * label below if a href is ever added to TERM_SERVICE_MAP without an entry
+ * here.
+ */
+const SERVICE_LABELS: Record<string, { sr: string; en: string }> = {
+  "/usluge/google-ads-upravljanje": {
+    sr: "Vođenje Google Ads kampanja",
+    en: "Google Ads management",
+  },
+  "/usluge/google-ads-agencija": {
+    sr: "Google Ads agencija",
+    en: "Google Ads agency",
+  },
+  "/usluge/google-ads-audit": {
+    sr: "Google Ads audit",
+    en: "Google Ads audit",
+  },
+  "/usluge/google-shopping": {
+    sr: "Google Shopping upravljanje",
+    en: "Google Shopping management",
+  },
+  "/usluge/performance-max": {
+    sr: "Performance Max usluga",
+    en: "Performance Max service",
+  },
+  "/usluge/search-kampanje": {
+    sr: "Vođenje Search kampanja",
+    en: "Search campaign management",
+  },
+  "/usluge/remarketing": {
+    sr: "Remarketing usluga",
+    en: "Remarketing service",
+  },
+  "/usluge/performance-marketing": {
+    sr: "Performance marketing usluga",
+    en: "Performance marketing service",
+  },
+  "/usluge/youtube-oglasi": {
+    sr: "YouTube oglašavanje",
+    en: "YouTube advertising",
+  },
+  "/usluge/google-ads-za-ecommerce": {
+    sr: "Google Ads za eCommerce",
+    en: "Google Ads for eCommerce",
+  },
+  "/usluge/google-ads-za-b2b": {
+    sr: "Google Ads za B2B",
+    en: "Google Ads for B2B",
+  },
+};
 
 /**
  * Single glossary entry card.
@@ -313,6 +370,7 @@ function GlossaryEntry({
     t.slug in TERM_SERVICE_MAP
       ? TERM_SERVICE_MAP[t.slug as keyof typeof TERM_SERVICE_MAP]
       : undefined;
+  const serviceLabel = serviceHref ? SERVICE_LABELS[serviceHref] : undefined;
   const categoryLabel = glossaryCategoryLabels[t.category];
 
   return (
@@ -432,7 +490,9 @@ function GlossaryEntry({
               href={serviceHref}
               className="text-primary hover:underline font-medium"
             >
-              {isEn ? "See the service →" : "Pogledaj uslugu →"}
+              {isEn
+                ? `${serviceLabel?.en ?? "See the service"} →`
+                : `${serviceLabel?.sr ?? "Pogledaj uslugu"} →`}
             </Link>
           </div>
         )}

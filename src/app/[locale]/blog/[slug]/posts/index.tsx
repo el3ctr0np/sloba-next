@@ -327,10 +327,10 @@ const srPosts: PostData[] = [
     slug: "google-oglasavanje-za-firme",
     title: "Google Oglašavanje za Firme: Kompletan Vodič za B2B i eCommerce [2026]",
     date: "2026-01-26",
-    dateModified: "2026-02-07",
+    dateModified: "2026-07-18",
     category: "Google oglašavanje",
     metaDescription:
-      "Kompletan vodič za Google oglašavanje prilagođen firmama. Strategije za B2B i eCommerce, tipovi kampanja, budžetiranje i merenje rezultata — sve na jednom mestu.",
+      "Google oglašavanje za firme: kako funkcioniše, koliko košta i koji tip kampanje bira za B2B ili eCommerce. CPC benchmark za Srbiju, budžeti i strategije za profitabilne kampanje, iz iskustva sa 50+ klijenata.",
     featuredImage: "/blog/google-oglasavanje-za-firme.webp",
     readingTime: "15 min",
     content: <GoogleOglasavanjeZaFirmeSR />

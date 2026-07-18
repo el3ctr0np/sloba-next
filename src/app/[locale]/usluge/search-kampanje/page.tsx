@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Search Ads Management | High-Intent PPC — Digital Jelisavac"
-      : "Google Search Kampanje Srbija | Digital Jelisavac",
+      : "Vođenje Google Search Kampanja | Digital Jelisavac",
     description: isEn
       ? "Digital Jelisavac's expert Google Search campaign management for B2B and eCommerce. High-intent keyword strategy, conversion-focused ad copy, and Quality Score optimization. Free consultation."
       : "Profesionalne Google Search kampanje od Digital Jelisavac agencije za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija. Besplatna konsultacija.",
@@ -339,6 +339,16 @@ export default async function SearchKampanjePage({ params }: Props) {
       question: "Da li mogu da kombinujem Search sa drugim kampanjama?",
       answer:
         "Da, i preporučujem to. Search + Shopping za eCommerce, Search + Remarketing za B2B."
+    },
+    {
+      question: "Koliko košta vođenje Google Search kampanja?",
+      answer:
+        "Kao samostalan kanal, budžet kreće od €500/mes. U okviru punog upravljanja nalogom (Search + Shopping/PMax + remarketing) fee kreće od €700/mes. Kompletan cenovnik je na stranici Google Ads upravljanje."
+    },
+    {
+      question: "Šta je uključeno u vođenje Google search oglasa?",
+      answer:
+        "Setup i struktura (keyword istraživanje, ad grupe, negative keywords, ad copy, extensions), nedeljna optimizacija (search terms review, bid adjustments, A/B testiranje oglasa) i redovan reporting sa ključnim metrikama i preporukama za sledeći period."
     }
   ];
 
@@ -502,7 +512,7 @@ export default async function SearchKampanjePage({ params }: Props) {
           </nav>
 
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
-            {locale === "en" ? "Google Search campaigns — reach customers when they search for you" : "Google Search kampanje - dođite do kupaca kada vas traže"}
+            {locale === "en" ? "Google Search campaigns — reach customers when they search for you" : "Vođenje Google Search kampanja - dođite do kupaca kada vas traže"}
           </h1>
 
           {/* Trust Badges */}
@@ -939,6 +949,13 @@ export default async function SearchKampanjePage({ params }: Props) {
           </div>
           <div className="text-sm text-slate-400 mt-8 space-y-2">
             <div>
+              <Link
+                href="/usluge/google-ads-agencija"
+                className="underline hover:text-white transition-colors"
+              >
+                {locale === "en" ? "Google Ads Agency" : "Google Ads agencija"}
+              </Link>{" "}
+              |{" "}
               <Link
                 href="/usluge/google-shopping"
                 className="underline hover:text-white transition-colors"
