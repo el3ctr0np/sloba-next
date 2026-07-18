@@ -44,9 +44,10 @@ export default async function RootLayout({
     <html lang={locale} className={`${inter.variable} ${poppins.variable}`}>
       <head>
         <link rel="preload" href="/hero.webp" as="image" type="image/webp" />
-        {/* Google Consent Mode v2 — default denied, restored from localStorage if
-            previously granted. Must run BEFORE the GTM snippet so gtag() consent
-            state is queued in dataLayer before any tags fire. */}
+        {/* Google Consent Mode v2 — analytics granted by default (anonimna
+            analitika, RS/ZZPL praksa), ADS storage denied dok korisnik ne
+            prihvati na banneru. Must run BEFORE the GTM snippet so gtag()
+            consent state is queued in dataLayer before any tags fire. */}
         <Script id="consent-mode-default" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -54,7 +55,7 @@ gtag('consent', 'default', {
   ad_storage: 'denied',
   ad_user_data: 'denied',
   ad_personalization: 'denied',
-  analytics_storage: 'denied',
+  analytics_storage: 'granted',
   wait_for_update: 500
 });
 try {

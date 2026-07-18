@@ -27,6 +27,8 @@ function setConsent(value: ConsentValue) {
     // localStorage unavailable (private mode, etc.) — banner still works for this session
   }
 
+  // analytics_storage je granted po default-u (vidi layout.tsx) — banner
+  // upravlja samo marketing (ads) kolačićima.
   if (value === "granted") {
     gtag("consent", "update", {
       ad_storage: "granted",
@@ -70,32 +72,37 @@ export function ConsentBanner() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.06)]">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center gap-4">
-        <p className="text-sm text-gray-600 flex-1 text-center md:text-left">
-          {t("message")}{" "}
-          <Link
-            href="/privatnost"
-            className="underline text-gray-800 hover:text-gray-900"
-          >
-            {t("linkLabel")}
-          </Link>
-          .
-        </p>
-        <div className="flex items-center gap-3 shrink-0 flex-wrap justify-center">
-          <button
-            type="button"
-            onClick={handleEssentialOnly}
-            className="text-sm text-gray-500 hover:text-gray-700 underline transition-colors"
-          >
-            {t("essentialOnly")}
-          </button>
+    <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:bottom-6 md:max-w-sm z-50">
+      <div className="bg-white border border-gray-200 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] p-5">
+        <div className="flex items-start gap-3 mb-4">
+          <span className="text-2xl leading-none select-none" aria-hidden="true">
+            🍪
+          </span>
+          <p className="text-sm text-gray-600 mb-0 leading-relaxed">
+            {t("message")}{" "}
+            <Link
+              href="/privatnost"
+              className="underline text-gray-800 hover:text-gray-900"
+            >
+              {t("linkLabel")}
+            </Link>
+            .
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={handleAccept}
-            className="text-sm font-semibold bg-slate-900 text-white px-4 py-2 rounded-md hover:bg-slate-800 transition-colors"
+            className="flex-1 text-sm font-semibold bg-slate-900 text-white px-4 py-2.5 rounded-lg hover:bg-slate-800 transition-colors"
           >
             {t("accept")}
+          </button>
+          <button
+            type="button"
+            onClick={handleEssentialOnly}
+            className="flex-1 text-sm font-medium text-gray-600 border border-gray-300 px-4 py-2.5 rounded-lg hover:bg-gray-50 transition-colors"
+          >
+            {t("essentialOnly")}
           </button>
         </div>
       </div>
