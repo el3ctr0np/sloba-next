@@ -30,8 +30,8 @@ export function HeroV2({
     ctaText ?? (isEn ? "Book a free consultation" : "Zakažite besplatnu konsultaciju");
 
   const statPills = isEn
-    ? ["£290k+ Shopping revenue UK", "1.78x POAS", "3x UK Search Awards"]
-    : ["£290k+ Shopping prihod UK", "1.78x POAS", "3x UK Search Awards"];
+    ? ["6-figure Shopping revenue UK", "1.78x POAS", "3x UK Search Awards"]
+    : ["6-cifren Shopping prihod UK", "1.78x POAS", "3x UK Search Awards"];
 
   return (
     <section className="relative overflow-hidden bg-white border-b border-gray-100">

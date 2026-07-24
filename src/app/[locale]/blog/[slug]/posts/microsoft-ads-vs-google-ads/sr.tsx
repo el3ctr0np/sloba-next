@@ -755,7 +755,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <p>
         Za srpske biznise koji prodaju lokalno: Microsoft Ads nije prioritet za 2026. Fokusirajte se na
-        Google — i pripremite se za Google Shopping koji stiže u novembru. Za biznise koji prodaju
+        Google - i pripremite se za Google Shopping koji stiže u drugoj polovini 2026 (Q3 ili Q4). Za biznise koji prodaju
         na UK, SAD, DE ili AU: Microsoft Ads test kampanja od £300–£500 mesečno može biti jedan od
         najisplativijih eksperimenata koje ćete uraditi. Ako želite da vam neko upravlja Google Ads nalogom
         dok testirate Microsoft Ads paralelno, pogledajte našu uslugu{" "}

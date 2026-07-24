@@ -64,6 +64,8 @@ import OfflineConversionImportB2BSR from "./offline-conversion-import-b2b/sr";
 import OfflineConversionImportB2BEN from "./offline-conversion-import-b2b/en";
 import GoogleShoppingVsSearchKampanjeSR from "./google-shopping-vs-search-kampanje/sr";
 import GoogleShoppingVsSearchCampaignsEN from "./google-shopping-vs-search-kampanje/en";
+import PerformanceMaxVsStandardShoppingSR from "./performance-max-vs-standard-shopping/sr";
+import PerformanceMaxVsStandardShoppingEN from "./performance-max-vs-standard-shopping/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -98,13 +100,24 @@ export type PostData = {
 
 const srPosts: PostData[] = [
   {
+    slug: "performance-max-vs-standard-shopping-vodic",
+    title: "Performance Max vs Standard Shopping: Šta Radi u 2026",
+    date: "2026-07-19",
+    dateModified: "2026-07-24",
+    category: "Google Shopping",
+    metaDescription:
+      "Performance Max vs Standard Shopping u 2026: gde PMax pobeđuje a gde te sprži (kanibalizacija brenda, skok CPC-a), gde Standard i dalje vodi, promena iz oktobra 2024. koja je srušila stari savet i hibrid koji stvarno radi. Iz UK prakse (skincare brend, šestocifren Shopping prihod).",
+    readingTime: "~13 min",
+    content: <PerformanceMaxVsStandardShoppingSR />
+  },
+  {
     slug: "google-shopping-vs-search-kampanje",
     title: "Google Shopping vs Search: Koju Kampanju za eCommerce [2026]",
     date: "2026-07-19",
-    dateModified: "2026-07-19",
+    dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Google Shopping vs Search kampanje za eCommerce: kada koju biraš, zašto Shopping ima niži CPC, kada Search pobeđuje i zašto najjači nalozi u 2026. voze oba. Budžet split, PMax pragovi i Srbija launch (novembar 2026).",
+      "Google Shopping vs Search kampanje za eCommerce: kada koju biraš, zašto Shopping ima niži CPC, kada Search pobeđuje i zašto najjači nalozi u 2026. voze oba. Budžet split, PMax pragovi i Srbija launch (druga polovina 2026, Q3 ili Q4).",
     readingTime: "~14 min",
     content: <GoogleShoppingVsSearchKampanjeSR />
   },
@@ -208,7 +221,7 @@ const srPosts: PostData[] = [
     slug: "merchant-center-srbija-setup",
     title: "Google Merchant Center za Srbiju — Kompletan Setup Vodič [2026]",
     date: "2026-07-03",
-    dateModified: "2026-07-03",
+    dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
       "Google Merchant Center setup vodič za srpsko tržište: kreiranje naloga, verifikacija, product feed atributi, metode dostave feed-a, česte greške i disapproval razlozi, shipping/tax settings. Iz prakse sa 10+ Shopping naloga.",
@@ -256,10 +269,10 @@ const srPosts: PostData[] = [
     slug: "microsoft-ads-vs-google-ads",
     title: "Microsoft Ads vs Google Ads: Kompletno Poređenje za 2026 [Iz Prakse]",
     date: "2026-04-19",
-    dateModified: "2026-04-23",
+    dateModified: "2026-07-24",
     category: "Strategija",
     metaDescription:
-      "Microsoft Ads vs Google Ads u 2026: market share, CPC razlike, kada koristiti koju platformu, LinkedIn targeting prednost. Iz 2 godine rada sa Chelleon UK na obe platforme istovremeno.",
+      "Microsoft Ads vs Google Ads u 2026: market share, CPC razlike, kada koristiti koju platformu, LinkedIn targeting prednost. Iz 2 godine rada sa UK skincare brendom na obe platforme istovremeno.",
     featuredImage: "/blog/microsoft-ads-vs-google-ads.webp",
     readingTime: "14 min",
     content: <MicrosoftAdsVsGoogleAdsSR />
@@ -268,7 +281,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-za-ecommerce-srbija-2026",
     title: "Google Ads za eCommerce u Srbiji: Kompletna Strategija za 2026 [sa Zvaničnim Podacima]",
     date: "2026-04-14",
-    dateModified: "2026-04-19",
+    dateModified: "2026-07-24",
     category: "eCommerce",
     metaDescription:
       "Data-driven vodič za Google Ads eCommerce strategiju u Srbiji 2026: 110.6M internet kupovina, €3.61B tržište, rast 34%, top kategorije, benchmarks i taktike. Bazirano na podacima NBS-a i iskustvu sa 10+ naloga.",
@@ -292,7 +305,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-novosti-2026",
     title: "Google Ads Novosti i Promene 2026 [Ažurirano Mesečno]",
     date: "2026-04-13",
-    dateModified: "2026-04-13",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "Sve Google Ads promene i novosti za 2026 na jednom mestu. Shopping lansiranje u Srbiji, AI Max Text Guidelines, PMax transparentnost, Editor 2.12. Ažurirano mesečno.",
@@ -314,12 +327,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-shopping-srbija-2026",
-    title: "Google Shopping Dolazi u Srbiju Novembar 2026: Kompletan Vodič za Pripremu",
+    title: "Google Shopping Dolazi u Srbiju: Kompletan Vodič za Pripremu",
     date: "2026-04-09",
-    dateModified: "2026-07-12",
+    dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Google Shopping Ads stiže u Srbiju novembra 2026 i u Hrvatsku Q4 2026. Kompletan vodič sa 15-korak checklist-om, Merchant Center setup, product feed optimizacija, i lekcije iz 2+ godine UK iskustva (Chelleon, £290k+ revenue).",
+      "Google Shopping Ads stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4) i u Hrvatsku Q4 2026. Kompletan vodič sa 15-korak checklist-om, Merchant Center setup, product feed optimizacija, i lekcije iz 2+ godine UK iskustva (skincare brend, šestocifren prihod u funtama).",
     featuredImage: "/blog/google-shopping-srbija-2026.webp",
     readingTime: "18 min",
     content: <GoogleShoppingSrbija2026SR />
@@ -352,7 +365,7 @@ const srPosts: PostData[] = [
     slug: "performance-max-vodic",
     title: "Performance Max (PMax) Vodič za 2026: Struktura, Asset Grupe + Template koji daje bolji ROAS",
     date: "2026-01-26",
-    dateModified: "2026-04-27",
+    dateModified: "2026-07-24",
     category: "Performance Max",
     metaDescription:
       "Performance Max kampanje u 2026: kompletna struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje koštaju 30-50% ROAS-a. Uključuje gotov PMax Asset Grupa template + lekcije iz 10+ naloga.",
@@ -376,10 +389,10 @@ const srPosts: PostData[] = [
     slug: "google-shopping-vodic",
     title: "Google Shopping Kampanje: Kompletan Vodič + 2026 Srbija Launch Priprema",
     date: "2026-01-26",
-    dateModified: "2026-04-19",
+    dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Google Shopping vodič sa 2+ godine UK iskustva (Chelleon £290k+): product feed optimizacija, 10 obaveznih atributa, struktura kampanja, i priprema za lansiranje u Srbiji novembar 2026.",
+      "Google Shopping vodič sa 2+ godine UK iskustva (skincare brend, šestocifren prihod): product feed optimizacija, 10 obaveznih atributa, struktura kampanja, i priprema za lansiranje u Srbiji u drugoj polovini 2026 (Q3 ili Q4).",
     featuredImage: "/blog/google-shopping-vodic.webp",
     readingTime: "16 min",
     content: <GoogleShoppingVodicSR />
@@ -556,10 +569,21 @@ const srPosts: PostData[] = [
 
 const enPosts: PostData[] = [
   {
+    slug: "performance-max-vs-standard-shopping",
+    title: "Performance Max vs Standard Shopping: What Works in 2026",
+    date: "2026-07-19",
+    dateModified: "2026-07-24",
+    category: "Google Shopping",
+    metaDescription:
+      "Performance Max vs Standard Shopping in 2026: where PMax wins and where it burns you (brand cannibalization, CPC jumps), where Standard still wins, the October 2024 change that rewrote the old advice, and the hybrid that actually works. From UK practice (a skincare brand, six-figure Shopping revenue).",
+    readingTime: "~13 min",
+    content: <PerformanceMaxVsStandardShoppingEN />
+  },
+  {
     slug: "google-shopping-vs-search-campaigns",
     title: "Google Shopping vs Search: Which to Pick for eCommerce [2026]",
     date: "2026-07-19",
-    dateModified: "2026-07-19",
+    dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
       "Google Shopping vs Search campaigns for eCommerce: when to pick each, why Shopping has a lower CPC, when Search wins, and why the strongest accounts in 2026 run both. Budget split, PMax thresholds, and the Serbia launch.",
@@ -666,7 +690,7 @@ const enPosts: PostData[] = [
     slug: "merchant-center-serbia-setup",
     title: "Google Merchant Center for Serbia — Complete Setup Guide [2026]",
     date: "2026-07-03",
-    dateModified: "2026-07-03",
+    dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
       "Google Merchant Center setup guide for the Serbian market: account creation, verification, product feed attributes, feed delivery methods, common disapproval reasons, shipping/tax settings.",
@@ -717,7 +741,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-04-23",
     category: "Strategija",
     metaDescription:
-      "Microsoft Ads vs Google Ads in 2026: market share, CPC differences, when to use which platform, LinkedIn targeting advantage. From 2 years running Chelleon UK on both platforms simultaneously.",
+      "Microsoft Ads vs Google Ads in 2026: market share, CPC differences, when to use which platform, LinkedIn targeting advantage. From 2 years running a UK skincare brand on both platforms simultaneously.",
     featuredImage: "/blog/microsoft-ads-vs-google-ads.webp",
     readingTime: "14 min",
     content: <MicrosoftAdsVsGoogleAdsEN />
@@ -726,7 +750,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-for-ecommerce-serbia-2026",
     title: "Google Ads for eCommerce in Serbia: Complete 2026 Strategy [with Official Data]",
     date: "2026-04-14",
-    dateModified: "2026-04-14",
+    dateModified: "2026-07-24",
     category: "eCommerce",
     metaDescription:
       "Data-driven Google Ads eCommerce strategy for Serbia 2026: 110.6M internet purchases, €3.61B market, 34% growth, top categories and tactics.",
@@ -750,7 +774,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-updates-2026",
     title: "Google Ads News & Updates 2026 [Updated Monthly]",
     date: "2026-04-13",
-    dateModified: "2026-04-13",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "All major Google Ads changes in 2026 in one place. Shopping launch in Serbia, AI Max Text Guidelines, PMax Channel Performance, Editor 2.12. Updated monthly.",
@@ -772,12 +796,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-shopping-serbia-2026",
-    title: "Google Shopping Launches in Serbia November 2026: Complete Preparation Guide",
+    title: "Google Shopping Launches in Serbia: Complete Preparation Guide",
     date: "2026-04-09",
-    dateModified: "2026-07-12",
+    dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Google Shopping Ads launches in Serbia in November 2026 and across Croatia, BiH and Slovenia in Q4 2026. Full guide with 15-step checklist, Merchant Center setup, product feed optimisation, and lessons from 2+ years of UK Shopping campaigns (Chelleon, £290k+ revenue).",
+      "Google Shopping Ads launches in Serbia in the second half of 2026 (Q3 or Q4) and across Croatia, BiH and Slovenia in Q4 2026. Full guide with 15-step checklist, Merchant Center setup, product feed optimisation, and lessons from 2+ years of UK Shopping campaigns (a skincare brand, six-figure Shopping revenue).",
     featuredImage: "/blog/google-shopping-srbija-2026.webp",
     readingTime: "18 min",
     content: <GoogleShoppingSerbiaLaunch2026EN />
@@ -809,7 +833,7 @@ const enPosts: PostData[] = [
     slug: "performance-max-guide",
     title: "Performance Max Campaigns: Guide for eCommerce and B2B [2026]",
     date: "2026-01-26",
-    dateModified: "2026-01-31",
+    dateModified: "2026-07-24",
     category: "Performance Max",
     metaDescription:
       "Everything about Performance Max campaigns — how they work, when to use them, structure, asset groups, and optimization strategies. Guide based on real results.",

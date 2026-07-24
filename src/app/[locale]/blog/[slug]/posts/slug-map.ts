@@ -38,6 +38,7 @@ export const slugMap: Record<string, string> = {
   "merchant-center-srbija-setup": "merchant-center-serbia-setup",
   "product-feed-srpski-ecommerce": "product-feed-serbian-ecommerce",
   "google-shopping-vs-search-kampanje": "google-shopping-vs-search-campaigns",
+  "performance-max-vs-standard-shopping-vodic": "performance-max-vs-standard-shopping",
 };
 
 // Reverse map: EN slug → SR (canonical) slug

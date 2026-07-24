@@ -8,33 +8,33 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Quick Summary</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Shopping Ads launches in Serbia in November 2026 — right before Black Friday season. Croatia and the rest of the Ex-Yu region follow in Q4 2026. This is the biggest shift in the Serbian eCommerce market in the last 10 years. You have 7 months to prepare before your competitors even realise what is happening.
+          Google Shopping Ads launches in Serbia in the second half of 2026 (Q3 or Q4), possibly right before Black Friday season if the launch lands in Q4. Croatia and the rest of the Ex-Yu region follow in Q4 2026. This is the biggest shift in the Serbian eCommerce market in the last 10 years. You have time to prepare before your competitors even realise what is happening.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Nov 2026</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Serbia launch date</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Q3-Q4 2026</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">expected launch window</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">15+</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">new EMEA markets</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">7 mo.</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">to prepare (from today)</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Now</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">is the time to prepare</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">£290k+</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">revenue from UK Shopping experience</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">6-figure</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Shopping revenue (GBP) from UK experience</p>
           </div>
         </div>
       </div>
 
       <p>
-        November 2026. You type &quot;men&apos;s jacket zara&quot; into Google search. Instead of just text ads, you see a row of images — jacket, price, store. You click directly. You buy. This is Google Shopping, and that experience is coming to Serbia in less than a year.
+        Second half of 2026. You type &quot;men&apos;s jacket zara&quot; into Google search. Instead of just text ads, you see a row of images — jacket, price, store. You click directly. You buy. This is Google Shopping, and that experience is coming to Serbia within the next several months.
       </p>
       <p>
-        I have run Google Shopping campaigns for UK clients for over 2 years. With Chelleon UK we generated £290,000+ in revenue through Shopping, at a 1.78x <GlossaryLink slug="poas">POAS</GlossaryLink> (Profit on Ad Spend) in a category with thin margins and brutal competition. I know first-hand what works, what doesn&apos;t, and — most importantly for this post — what Serbian eCommerce businesses need to do before November 2026 so they don&apos;t miss the launch window.
+        I have run Google Shopping campaigns for UK clients for over 2 years. With a UK skincare brand we generated six-figure Shopping revenue, at a 1.78x <GlossaryLink slug="poas">POAS</GlossaryLink> (Profit on Ad Spend) in a category with thin margins and brutal competition. I know first-hand what works, what doesn&apos;t, and — most importantly for this post — what Serbian eCommerce businesses need to do before launch (expected in H2 2026) so they don&apos;t miss the launch window.
       </p>
       <p>
         This is a pillar post about Google Shopping in Serbia. It covers everything: the launch date, what Shopping actually is, the wider Ex-Yu markets, a 15-step checklist, Merchant Center, the product feed, my UK experience, common mistakes, costs, and CSS strategy. Links to supporting posts are placed throughout for readers who want more detail on specific topics. If you want an experienced hand to set up the whole eCommerce account for you, see our{" "}
@@ -44,12 +44,12 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
       <div className="bg-white border-2 border-gray-200 rounded-xl p-6 my-8">
         <p className="text-xs uppercase tracking-wider text-gray-500 mb-3 font-semibold">Google Shopping Serbia launch — key facts</p>
         <ul className="space-y-2 text-base text-gray-700 mb-0 pl-5 list-disc">
-          <li><strong>Launch date:</strong> November 2026, expected first or second week — right before Black Friday (November 28th).</li>
+          <li><strong>Launch date:</strong> second half of 2026 (Q3 or Q4), exact date still to be confirmed — possibly before Black Friday season if the launch lands in Q4.</li>
           <li><strong>Regional rollout:</strong> Croatia and Slovenia also launch in Q4 2026, alongside Bosnia &amp; Herzegovina and Montenegro — the wider Balkans wave. North Macedonia is likely Wave 2 in 2027.</li>
           <li><strong>Merchant Center:</strong> registration for the Serbian market isn&apos;t open yet as of July 2026 — Google enables it ahead of the official launch. See the{" "}
             <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="underline text-blue-700">Merchant Center Serbia setup guide</Link>.
           </li>
-          <li><strong>Preparation window:</strong> 7 months from today to complete the 15-step checklist below.</li>
+          <li><strong>Preparation window:</strong> the time between now and launch to complete the 15-step checklist below.</li>
           <li><strong>Account review:</strong> Merchant Center account review can take 1-3 weeks in new markets — verify your account a minimum of 60 days before launch.</li>
           <li><strong>Starter budget:</strong> €150-500/month, with CPC estimated between 3 and 25 RSD depending on industry.</li>
           <li><strong>CSS partners:</strong> can lower effective CPC by 15-20% versus bidding directly through Google Shopping.</li>
@@ -60,10 +60,10 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <h2>Exactly when Google Shopping arrives in Serbia</h2>
       <p>
-        Based on official Google announcements and internal data I track, <strong>Google Shopping Ads officially launches in Serbia in November 2026</strong>. The exact date within November hasn&apos;t been confirmed, but based on the pattern of previous EMEA launches, I expect the first or second week of November.
+        Based on official Google announcements and internal data I track, <strong>Google Shopping Ads is expected to launch in Serbia in the second half of 2026 (Q3 or Q4)</strong>. The exact date hasn&apos;t been confirmed, but based on the pattern of previous EMEA launches, I expect it to land somewhere near the run-up to the holiday season.
       </p>
       <p>
-        Why November? It&apos;s not a coincidence. Google strategically launches Shopping in new markets right before the Q4 season — Black Friday (November 28th), Cyber Monday, and Christmas campaigns. Advertisers get exactly the season where Shopping makes the most sense: high purchase intent, high AOV, and shoppers actively searching for specific products with intent to buy.
+        Why the second half of the year? It&apos;s not a coincidence. Google strategically launches Shopping in new markets ahead of the Q4 season — Black Friday, Cyber Monday, and Christmas campaigns. If the launch lands in Q4, advertisers get exactly the season where Shopping makes the most sense: high purchase intent, high AOV, and shoppers actively searching for specific products with intent to buy.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -82,23 +82,23 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Now – September 2026</td>
+              <td className="py-3 px-3 font-medium">Now</td>
               <td className="py-3 px-3">Preparation, feed optimisation, MC setup</td>
               <td className="py-3 px-3">Complete the 15-step checklist</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">October 2026</td>
+              <td className="py-3 px-3 font-medium">Ahead of launch</td>
               <td className="py-3 px-3">Final checks, feed live, MC verified</td>
               <td className="py-3 px-3">Test campaigns, bug fixing</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">November 2026</td>
+              <td className="py-3 px-3 font-medium">Launch (Q3/Q4 2026)</td>
               <td className="py-3 px-3">Google Shopping LIVE in Serbia</td>
-              <td className="py-3 px-3">Launch campaigns, Q4 budget active</td>
+              <td className="py-3 px-3">Launch campaigns, budget active</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">December 2026</td>
-              <td className="py-3 px-3">Christmas season, peak Shopping volume</td>
+              <td className="py-3 px-3 font-medium">After launch</td>
+              <td className="py-3 px-3">If it lands in Q4: Christmas season, peak Shopping volume</td>
               <td className="py-3 px-3">Scale budget, bidding optimisation</td>
             </tr>
           </tbody>
@@ -164,7 +164,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Serbia</td>
               <td className="py-3 px-3">RSD</td>
-              <td className="py-3 px-3 font-semibold text-green-700">November 2026</td>
+              <td className="py-3 px-3 font-semibold text-green-700">Q3-Q4 2026</td>
               <td className="py-3 px-3">~€2.1B annually</td>
               <td className="py-3 px-3">Largest market in the region</td>
             </tr>
@@ -213,7 +213,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <hr />
 
-      <h2>Preparation checklist: 15 steps before November 2026</h2>
+      <h2>Preparation checklist: 15 steps before launch</h2>
       <p>
         Here is exactly what to do, in the order to do it. Each step has a deadline and an explanation of why it matters. This is the checklist I use with every new Shopping client.
       </p>
@@ -477,20 +477,20 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <hr />
 
-      <h2>My experience: 2+ years of Shopping campaigns in the UK (Chelleon)</h2>
+      <h2>My experience: 2+ years of Shopping campaigns in the UK</h2>
       <p>
-        <strong>For UK skincare brand Chelleon I have run Google Shopping campaigns for over 2 years, generating £290,000+ in revenue at 1.78x POAS (Profit on Ad Spend).</strong> Five key lessons from that experience translate directly to the Serbian market from November 2026.
+        <strong>For a UK skincare brand I have run Google Shopping campaigns for over 2 years, generating six-figure Shopping revenue at 1.78x POAS (Profit on Ad Spend).</strong> Five key lessons from that experience translate directly to the Serbian market from launch (expected Q3/Q4 2026).
       </p>
       <p>
-        I&apos;m not writing this from theory. Chelleon is a premium skincare eCommerce brand with monthly ad spend up to £8,000. Over that time I learned just how critical the data feed is to success — literally 80% of performance depends on feed quality, not bidding. That insight now carries over into every new campaign, and it&apos;s the first thing I check with every client.
+        I&apos;m not writing this from theory. It&apos;s a premium skincare eCommerce brand with a four-figure monthly ad spend in GBP. Over that time I learned just how critical the data feed is to success — literally 80% of performance depends on feed quality, not bidding. That insight now carries over into every new campaign, and it&apos;s the first thing I check with every client.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
-        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Chelleon UK — Real Results</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">A UK skincare brand — Real Results</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">£290k+</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">total Shopping revenue</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">6-figure</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">total Shopping revenue (GBP)</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">1.78x</p>
@@ -518,7 +518,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lesson 2: A tiered campaign structure is mandatory</p>
-          <p className="text-base text-gray-600 mb-0">With Chelleon we use a 3-tier system: Best Sellers (high bid), Catalog (medium bid), Clearance (low bid). This lets us control where the budget goes instead of letting Google decide. For the Serbian market I recommend the same approach from day one.</p>
+          <p className="text-base text-gray-600 mb-0">With that UK skincare brand we use a 3-tier system: Best Sellers (high bid), Catalog (medium bid), Clearance (low bid). This lets us control where the budget goes instead of letting Google decide. For the Serbian market I recommend the same approach from day one.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lesson 3: POAS, not ROAS</p>
@@ -545,7 +545,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         <strong>The most common mistakes in preparing for Google Shopping in Serbia are: currency mismatches between the site and the feed, unoptimised titles, watermarked images, manually updated feeds, unsegmented campaigns, missing conversion tracking, and starting Merchant Center setup too late.</strong> These are findings from pre-launch audits of 7 Serbian eCommerce businesses in the first quarter of 2026.
       </p>
       <p>
-        Here is a detailed breakdown of each mistake and how to fix it before November.
+        Here is a detailed breakdown of each mistake and how to fix it before launch.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
@@ -600,7 +600,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #7</p>
         <p className="font-semibold mb-2">Waiting for launch day to start the Merchant Center setup</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-base text-green-800 mb-0"><strong>Fix:</strong> MC account review can take 1-3 weeks in new markets. Feed optimisation takes months. Those who start now (April 2026) will be live on day one. Those who wait until November will only get going in December or January.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Fix:</strong> MC account review can take 1-3 weeks in new markets. Feed optimisation takes months. Those who start now will be live on day one. Those who wait until launch to start will only get going weeks behind everyone else.</p>
         </div>
       </div>
 
@@ -722,15 +722,15 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
                 name: "When exactly does Google Shopping start in Serbia?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google Shopping officially launches in Serbia in November 2026. The exact date within November hasn't been confirmed, but based on the pattern of previous EMEA launches, the first or second week of November 2026 is expected — right before Black Friday season."
+                  text: "Google Shopping is expected to launch in Serbia in the second half of 2026 (Q3 or Q4). The exact date hasn't been confirmed, but based on the pattern of previous EMEA launches, it may land near the run-up to Black Friday season if the launch is in Q4."
                 }
               },
               {
                 "@type": "Question",
-                name: "Do I need Merchant Center before November 2026?",
+                name: "Do I need Merchant Center before Shopping launches?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes — and the sooner the better. In new markets, Google Merchant Center account review can take 1-3 weeks. Feed optimisation takes months of work. Businesses that start setup in April-May 2026 will be ready on the launch date. Those who wait until October-November will only get actively started in January 2027."
+                  text: "Yes — and the sooner the better. In new markets, Google Merchant Center account review can take 1-3 weeks. Feed optimisation takes months of work. Businesses that start setup well ahead of time will be ready on the launch date. Those who wait until the last minute will only get actively started weeks after their competitors."
                 }
               },
               {
@@ -786,7 +786,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
                 name: "Do Croatia and Bosnia & Herzegovina get Shopping at the same time as Serbia?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Croatia and BiH are in the Q4 2026 wave — exact dates haven't been confirmed, but the same period is expected (October-November 2026). Slovenia is also Q4 2026. North Macedonia is likely Wave 2 in 2027. For a multi-market strategy, plan a feed that can cover RS, HR and BiH from the start."
+                  text: "Croatia and BiH are in the Q4 2026 wave — exact dates haven't been confirmed. Serbia is expected in the second half of 2026 (Q3 or Q4), possibly in the same window. Slovenia is also Q4 2026. North Macedonia is likely Wave 2 in 2027. For a multi-market strategy, plan a feed that can cover RS, HR and BiH from the start."
                 }
               },
               {
@@ -809,17 +809,17 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google Shopping officially launches in Serbia in November 2026. The exact date within November hasn&apos;t been confirmed, but based on the pattern of previous EMEA launches, the first or second week of November 2026 is expected — right before Black Friday season.
+            Google Shopping is expected to launch in Serbia in the second half of 2026 (Q3 or Q4). The exact date hasn&apos;t been confirmed, but based on the pattern of previous EMEA launches, it may land near the run-up to Black Friday season if the launch is in Q4.
           </div>
         </details>
 
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Do I need Merchant Center before November 2026?
+            Do I need Merchant Center before Shopping launches?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Yes — and the sooner the better. In new markets, Google Merchant Center account review can take 1-3 weeks. Feed optimisation takes months of work. Businesses that start setup in April-May 2026 will be ready on the launch date. Those who wait until October-November will only get actively started in January 2027.
+            Yes — and the sooner the better. In new markets, Google Merchant Center account review can take 1-3 weeks. Feed optimisation takes months of work. Businesses that start setup well ahead of time will be ready on the launch date. Those who wait until the last minute will only get actively started weeks after their competitors.
           </div>
         </details>
 
@@ -889,7 +889,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Croatia and BiH are in the Q4 2026 wave — exact dates haven&apos;t been confirmed, but the same period is expected (October-November 2026). Slovenia is also Q4 2026. North Macedonia is likely Wave 2 in 2027. For a multi-market strategy, plan a feed that can cover RS, HR and BiH from the start.
+            Croatia and BiH are in the Q4 2026 wave — exact dates haven&apos;t been confirmed. Serbia is expected in the second half of 2026 (Q3 or Q4), possibly in the same window. Slovenia is also Q4 2026. North Macedonia is likely Wave 2 in 2027. For a multi-market strategy, plan a feed that can cover RS, HR and BiH from the start.
           </div>
         </details>
 
@@ -911,7 +911,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">For serious brands</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
-          If your brand already invests $3,000+ per month in advertising, you&apos;re ready for Shopping from day one. Before November, I&apos;ll go through your site, product feed, Merchant Center, and give you a concrete preparation plan — part of our broader{" "}
+          If your brand already invests $3,000+ per month in advertising, you&apos;re ready for Shopping from day one. Before launch, I&apos;ll go through your site, product feed, Merchant Center, and give you a concrete preparation plan — part of our broader{" "}
           <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping management service</Link>.
         </p>
 

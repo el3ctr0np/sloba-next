@@ -96,7 +96,7 @@ export function HeroV1({
         <div className="container-custom px-4 py-6">
           <div className="grid grid-cols-3 gap-4 text-center divide-x divide-gray-200">
             <div>
-              <div className="text-2xl md:text-3xl font-heading font-bold text-slate-900">£290k+</div>
+              <div className="text-2xl md:text-3xl font-heading font-bold text-slate-900">{isEn ? "6-figure" : "6-cifren"}</div>
               <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
                 {isEn ? "Shopping revenue (UK)" : "Shopping prihod (UK)"}
               </div>

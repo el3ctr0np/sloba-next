@@ -34,7 +34,7 @@ export default function GoogleAdsNovosti2026SR() {
             <p className="text-xs text-slate-400 mt-1 mb-0">oblasti: Search, Shopping, PMax, AI Max, MC</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Nov 2026</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Q3-Q4 2026</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">Shopping dolazi u Srbiju</p>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function GoogleAdsNovosti2026SR() {
             </ul>
           </div>
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Phase 2 — Holiday Season (Nov 2026)</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Phase 2 — Holiday Season (Q3-Q4 2026)</p>
             <ul className="text-base text-green-900 space-y-1 mb-0">
               <li><strong>Srbija</strong></li>
               <li>Hrvatska</li>
@@ -358,9 +358,9 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-600 mb-0">Kipar, Luksemburg, Moldova, Severna Makedonija, Malta, Lihtenštajn dobijaju Shopping Ads u back-to-school periodu.</p>
         </div>
         <div className="bg-white border-2 border-green-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">November 2026</p>
+          <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Q3-Q4 2026 (očekivano)</p>
           <h3 className="text-sm font-heading font-bold mt-0 mb-2">Shopping u Srbiji — Live!</h3>
-          <p className="text-xs text-gray-600 mb-0">Phase 2: Srbija, Hrvatska, BiH, Slovenija, Crna Gora, Bugarska, Estonija, Letonija, Litvanija. Tačno pre Black Friday sezone.</p>
+          <p className="text-xs text-gray-600 mb-0">Phase 2: Srbija, Hrvatska, BiH, Slovenija, Crna Gora, Bugarska, Estonija, Letonija, Litvanija. Tačan datum još nije potvrđen, moguće pre Black Friday sezone ako lansiranje bude u Q4.</p>
         </div>
         <div className="bg-white border-2 border-purple-200 rounded-xl p-5 shadow-card">
           <p className="text-xs font-bold uppercase tracking-wide text-purple-700 mb-2">Cela 2026</p>
@@ -427,7 +427,7 @@ export default function GoogleAdsNovosti2026SR() {
                 name: "Kada dolazi Google Shopping u Srbiju?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google Shopping dolazi u Srbiju u novembru 2026, kao deo Phase 2 EMEA ekspanzije koja uključuje i Hrvatsku, BiH, Sloveniju i Crnu Goru. Lansiranje je strateški planirano pre Black Friday sezone. Merchant Center setup i feed optimizacija treba da budu gotovi do oktobra 2026 najkasnije."
+                  text: "Google Shopping dolazi u Srbiju u drugoj polovini 2026 (Q3 ili Q4), kao deo Phase 2 EMEA ekspanzije koja uključuje i Hrvatsku, BiH, Sloveniju i Crnu Goru. Tačan datum još nije potvrđen; ako lansiranje bude u Q4, moguće je da bude pre Black Friday sezone. Merchant Center setup i feed optimizacija treba da budu gotovi što pre."
                 }
               },
               {
@@ -484,7 +484,7 @@ export default function GoogleAdsNovosti2026SR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google Shopping dolazi u Srbiju u <strong>novembru 2026</strong>, kao deo Phase 2 EMEA ekspanzije koja uključuje i Hrvatsku, BiH, Sloveniju i Crnu Goru. Lansiranje je strateški planirano pre Black Friday sezone. Merchant Center setup i feed optimizacija treba da budu gotovi do oktobra 2026 najkasnije.{" "}
+            Google Shopping dolazi u Srbiju u <strong>drugoj polovini 2026 (Q3 ili Q4)</strong>, kao deo Phase 2 EMEA ekspanzije koja uključuje i Hrvatsku, BiH, Sloveniju i Crnu Goru. Tačan datum još nije potvrđen; ako lansiranje bude u Q4, moguće je da bude pre Black Friday sezone. Merchant Center setup i feed optimizacija treba da budu gotovi što pre.{" "}
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
               className="underline text-blue-700 font-medium"

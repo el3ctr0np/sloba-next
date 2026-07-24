@@ -406,7 +406,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     { name: "Chatislav", src: "/client-logos/chatislav.svg", width: 48, height: 45, context: "Srbija · AI platforma" },
     { name: "Pickbox", src: "/client-logos/pickbox-hrvatska-logo.svg.webp", width: 120, height: 40, context: "Hrvatska · Video On Demand" },
     { name: "DC Gaj", src: "/client-logos/dc-gaj.png", width: 120, height: 40, context: "Beograd · Poliklinika" },
-    { name: "Chelleon", src: null, width: 0, height: 0, context: "UK · Skincare eCommerce" },
+    { name: "Skincare brend", src: null, width: 0, height: 0, context: "UK · Skincare eCommerce" },
     { name: "Best at Printing", src: "/client-logos/bestatprinting.co.uk-logo9.webp", width: 120, height: 40, context: "UK · Custom Printing" },
     { name: "Everfun", src: "/client-logos/everfun.hr-logo74.webp", width: 120, height: 40, context: "Hrvatska · Entertainment" },
   ];

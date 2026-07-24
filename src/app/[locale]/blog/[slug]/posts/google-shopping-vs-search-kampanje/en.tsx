@@ -10,14 +10,10 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           For eCommerce this is almost never an &quot;either Shopping or Search&quot; question. Shopping catches the shopper who knows what they want and is comparing products; Search catches the queries Shopping can&apos;t see (research, branded, service). The strongest accounts in 2026 run both, with a clear budget split. This guide shows when each campaign wins and how to combine them.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">~80%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">of eComm ad budget goes to Shopping</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">~18%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">more conversions when running both</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">2</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">campaign types, two different intents</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">30-50</p>
@@ -34,7 +30,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
         Clients ask me this on almost every first call: &quot;What&apos;s better for my store — Google Shopping or Search?&quot; They expect me to pick one. I almost never do. In practice these are two different tools for two different moments in the shopper&apos;s head, and the best eCommerce results come when they work together, not when they fight over the same budget.
       </p>
       <p>
-        I&apos;ve been running Google Shopping for UK clients for over two years. With one of them (Chelleon UK, skincare), Shopping generated over £290k in revenue at a POAS of 1.78x in a thin-margin category. For the same client I run Search in parallel. That first-hand experience with the hybrid is the backbone of this article — not theory, but what actually works on live accounts.
+        I&apos;ve been running Google Shopping for UK clients for over two years. With one of them (a UK skincare brand), Shopping generated six-figure revenue at a POAS of 1.78x in a thin-margin category. For the same client I run Search in parallel. That first-hand experience with the hybrid is the backbone of this article — not theory, but what actually works on live accounts.
       </p>
       <p>
         If you&apos;re new to the topic, it&apos;s worth reading the core{" "}
@@ -54,7 +50,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
           <li><a href="#when-shopping-wins" className="block py-1 text-base text-gray-700 hover:text-primary underline">When Shopping wins</a></li>
           <li><a href="#why-both" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why it&apos;s not either/or</a></li>
           <li><a href="#budget-and-structure" className="block py-1 text-base text-gray-700 hover:text-primary underline">Budget split and structure</a></li>
-          <li><a href="#serbia-context" className="block py-1 text-base text-gray-700 hover:text-primary underline">Serbia: what works today, what arrives in November</a></li>
+          <li><a href="#serbia-context" className="block py-1 text-base text-gray-700 hover:text-primary underline">Serbia: what works today, what arrives in the second half of 2026</a></li>
           <li><a href="#faq" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
         </ul>
       </nav>
@@ -90,7 +86,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">When both</td>
               <td className="py-3 px-3">Hybrid (Search + Shopping)</td>
-              <td className="py-3 px-3">Almost every serious eCommerce store. Shopping covers &quot;I know what I want&quot;, Search covers research and brand. Google reports an average of ~18% more conversions when running both.</td>
+              <td className="py-3 px-3">Almost every serious eCommerce store. Shopping covers &quot;I know what I want&quot;, Search covers research and brand — different phases of intent, so one can&apos;t stand in for the other. I run both for the same UK account.</td>
             </tr>
           </tbody>
         </table>
@@ -169,7 +165,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
 
       <h2 id="when-shopping-wins">When Shopping wins</h2>
       <p>
-        For most eCommerce stores with physical products, Shopping carries the bulk of the work — which is why it takes around 80% of eComm ad budgets on average. Here&apos;s when it&apos;s the clear favorite.
+        For most eCommerce stores with physical products, Shopping carries the bulk of the work — industry reports put it at around 80% of eCommerce ad spend, which is a market average rather than a recommended split for your account. Here&apos;s when it&apos;s the clear favorite.
       </p>
 
       <div className="space-y-4 my-6">
@@ -194,7 +190,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-gray-900 mb-1">Lower CPC for the right traffic</p>
           <p className="text-base text-gray-600 mb-0">
-            As I explained above — a product-tied auction, plus the image and price acting as a filter, usually means a lower CPC and less budget wasted on missed clicks. For thin margins (where I ran a 1.78x POAS at Chelleon), that efficiency is the difference between profit and loss.
+            As I explained above — a product-tied auction, plus the image and price acting as a filter, usually means a lower CPC and less budget wasted on missed clicks. For thin margins (where I ran a 1.78x POAS for that UK skincare brand), that efficiency is the difference between profit and loss.
           </p>
         </div>
       </div>
@@ -212,15 +208,8 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
         Here I come back to the start. The &quot;Shopping or Search&quot; question frames the choice wrong. The shopper doesn&apos;t live in one campaign type — they move through intents. Today they research (&quot;which are the best wireless earbuds&quot;), tomorrow they compare specific models (Shopping), the day after they search for your brand by name. If you cover only one part of that journey, you hand the rest to your competitors.
       </p>
       <p>
-        The data backs it up. Google reports that running both campaigns together delivers an average of around 18% more conversions at a similar cost-per-action — so more sales without each individual one getting more expensive. An Optmyzr study of 24,702 PMax campaigns found that 82% of advertisers already run PMax alongside Shopping or Search, and the group that split budget sensibly saw the strongest return.
+        The argument isn&apos;t some magic percentage lift — it&apos;s coverage. The two types catch different phases of intent, so one can&apos;t stand in for the other: Shopping answers &quot;show me the product and the price&quot;, Search answers the research, comparison, branded, and service queries that never make it into a product feed. An Optmyzr study of 24,702 PMax campaigns found that 82% of advertisers already run PMax alongside Shopping or Search, and the group that split budget sensibly saw the strongest return. On the UK account I mentioned above, I run both types for the same client for exactly that reason.
       </p>
-
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-yellow-900 mb-1">An important change since October 2024</p>
-        <p className="text-yellow-800 text-base mb-0">
-          It used to be a question of &quot;which of my campaigns wins the auction when they overlap&quot;. Since October 2024, Google decides who wins the overlapping auction by <GlossaryLink slug="ad-rank">Ad Rank</GlossaryLink>, not by campaign type — no type gets automatic priority. That means Shopping and Search no longer eat each other&apos;s space by some fixed rule, which makes the hybrid more viable than ever: run both, and the best ad in a given moment wins.
-        </p>
-      </div>
 
       <p>
         Put simply: Shopping is your workhorse for &quot;I know what I want, show me the product and price&quot;. Search is there for everything Shopping can&apos;t see — research, comparison, brand, services. Together they cover the whole shopper journey. That&apos;s why on live accounts I almost always run them in parallel.
@@ -260,7 +249,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
             <div>
               <strong>Don&apos;t split budget — split intents</strong>
-              <p className="text-base text-gray-600 mt-1 mb-0">Don&apos;t think &quot;60% here, 40% there&quot; as a fixed rule. Think about which shopper intents you cover and whether any is left uncovered. Run both types, track which brings profitable conversions, and move budget toward what works — the Ad Rank logic (since October 2024) picks the best ad in each auction anyway.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Don&apos;t think &quot;60% here, 40% there&quot; as a fixed rule. Think about which shopper intents you cover and whether any is left uncovered. Run both types, track which brings profitable conversions, and move budget toward what works. The two aren&apos;t fighting over the same slot anyway — they occupy different parts of the results page, so both can show for the same query.</p>
             </div>
           </div>
         </div>
@@ -274,14 +263,14 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="underline text-blue-700 font-medium">
           product feed guide
         </Link>. If you&apos;re torn between Standard Shopping and PMax, I break it down in detail in the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline text-blue-700 font-medium">
-          Performance Max guide
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vs-standard-shopping-vodic" } }} className="underline text-blue-700 font-medium">
+          Performance Max vs Standard Shopping guide
         </Link>.
       </p>
 
       <hr />
 
-      <h2 id="serbia-context">Serbia: what works today, what arrives in November</h2>
+      <h2 id="serbia-context">Serbia: what works today, what arrives in the second half of 2026</h2>
       <p>
         For the Serbian market there&apos;s one important catch that changes your decision right now: Search campaigns work today, while Shopping is still coming.
       </p>
@@ -293,14 +282,14 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
           <p className="text-base text-gray-600 mb-0">If you have a Serbian store, you can run Search campaigns today — brand, research queries, categories, all of it. There&apos;s no reason to wait. Search is the platform you build on right now.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">November 2026</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Q3-Q4 2026 (expected)</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping is still coming to Serbia</h3>
-          <p className="text-base text-gray-600 mb-0">Google Shopping officially launches in Serbia in November 2026. Until then, Shopping campaigns simply aren&apos;t available for the Serbian market. But the prep (Merchant Center account, product feed, attributes) can start now.</p>
+          <p className="text-base text-gray-600 mb-0">Google Shopping is expected to launch in Serbia in the second half of 2026 (Q3 or Q4) — the exact date has not been confirmed yet. Until then, Shopping campaigns simply aren&apos;t available for the Serbian market. But the prep (Merchant Center account, product feed, attributes) can start now.</p>
         </div>
       </div>
 
       <p>
-        The practical takeaway for Serbian eCommerce: <strong>you&apos;re not choosing between Shopping and Search — you&apos;re choosing the order.</strong> You launch Search today and gather data, revenue, and account history. You prepare Shopping in the background so it&apos;s ready on launch day instead of starting from scratch then. When Shopping goes live in November, you switch to the hybrid I described above — and that&apos;s when you truly run both.
+        The practical takeaway for Serbian eCommerce: <strong>you&apos;re not choosing between Shopping and Search — you&apos;re choosing the order.</strong> You launch Search today and gather data, revenue, and account history. You prepare Shopping in the background so it&apos;s ready on launch day instead of starting from scratch then. When Shopping goes live, you switch to the hybrid I described above — and that&apos;s when you truly run both.
       </p>
 
       <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 md:p-5 my-6">
@@ -329,7 +318,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
                 name: "Is Google Shopping or Search better for eCommerce?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "For most eCommerce stores with physical products, Shopping carries the bulk of sales and takes around 80% of eComm ad budgets, because the shopper sees the image and price before the click. But Search catches queries Shopping can't see — research and comparison queries, branded searches, and services. The best result in 2026 comes from a hybrid: both types run together, with a clear budget split."
+                  text: "For most eCommerce stores with physical products, Shopping carries the bulk of sales, because the shopper sees the image and price before the click. Industry reports put Shopping at around 80% of eCommerce ad spend, but that is a market average, not a recommended split for your account. Search catches queries Shopping can't see — research and comparison queries, branded searches, and services. The best result in 2026 comes from a hybrid: both types run together, with a budget split based on your own data."
                 }
               },
               {
@@ -345,7 +334,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
                 name: "Can I run both Shopping and Search at the same time?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes, and it's the recommended practice for 2026. Google reports that running both campaigns together delivers an average of around 18% more conversions at a similar cost-per-action. Since October 2024, Google decides who wins an overlapping auction by Ad Rank rather than by campaign type, so the two types don't compete by a fixed rule — the best ad in a given moment wins."
+                  text: "Yes, and it's the standard setup for serious eCommerce. The two aren't alternatives: Shopping and Search occupy different parts of the results page, so both ads can show for the same query. Shopping covers the shopper who already knows what they want and is comparing products, while Search covers research, comparison, branded, and service queries that never appear in a product feed. Split the budget by which intent actually brings profitable orders, not by a fixed ratio."
                 }
               },
               {
@@ -369,7 +358,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
                 name: "Does Google Shopping work in Serbia?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google Shopping officially launches in Serbia in November 2026. Until then Shopping campaigns aren't available for the Serbian market, but Search campaigns already work today. The practical plan for Serbian eCommerce: launch Search now and gather data, and in parallel prepare Merchant Center and the product feed so you can switch to the hybrid on Shopping's launch day without waiting."
+                  text: "Google Shopping is expected to launch in Serbia in the second half of 2026 (Q3 or Q4) — the exact date has not been confirmed yet. Until then Shopping campaigns aren't available for the Serbian market, but Search campaigns already work today. The practical plan for Serbian eCommerce: launch Search now and gather data, and in parallel prepare Merchant Center and the product feed so you can switch to the hybrid on Shopping's launch day without waiting."
                 }
               }
             ]
@@ -384,7 +373,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            For most stores with physical products, Shopping carries the bulk of sales and takes around 80% of eComm ad budgets, because the shopper sees the image and price before the click. But Search catches queries Shopping can&apos;t see — research and comparison queries, branded searches, and services. The best result in 2026 is a hybrid: both types run together.
+            For most eCommerce stores with physical products, Shopping carries the bulk of sales, because the shopper sees the image and price before the click. Industry reports put Shopping at around 80% of eCommerce ad spend, but that is a market average, not a recommended split for your account. Search catches queries Shopping can&apos;t see — research and comparison queries, branded searches, and services. The best result in 2026 comes from a hybrid: both types run together, with a budget split based on your own data.
           </div>
         </details>
 
@@ -404,7 +393,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Yes, and it&apos;s the recommended practice for 2026. Google reports an average of around 18% more conversions when running both, at a similar cost-per-action. Since October 2024, an overlapping auction goes to the best ad by Ad Rank rather than to a type by a fixed rule — so the two don&apos;t compete at each other&apos;s expense.
+            Yes, and it&apos;s the standard setup for serious eCommerce. The two aren&apos;t alternatives: Shopping and Search occupy different parts of the results page, so both ads can show for the same query. Shopping covers the shopper who already knows what they want and is comparing products, while Search covers research, comparison, branded, and service queries that never appear in a product feed. Split the budget by which intent actually brings profitable orders, not by a fixed ratio.
           </div>
         </details>
 
@@ -434,7 +423,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google Shopping officially launches in Serbia in November 2026. Until then Shopping isn&apos;t available for the Serbian market, but Search works today. The plan: launch Search now, and in parallel prepare Merchant Center and the product feed so you can switch to the hybrid on launch day without waiting.
+            Google Shopping is expected to launch in Serbia in the second half of 2026 (Q3 or Q4) — the exact date has not been confirmed yet. Until then Shopping isn&apos;t available for the Serbian market, but Search works today. The plan: launch Search now, and in parallel prepare Merchant Center and the product feed so you can switch to the hybrid on launch day without waiting.
           </div>
         </details>
       </div>
@@ -469,9 +458,9 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Product Feed for Serbian eCommerce</p>
           <p className="text-xs text-gray-500 mb-0">8 required attributes, title optimization, custom labels</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Guide</p>
-          <p className="text-xs text-gray-500 mb-0">Asset group structure, when PMax vs Standard Shopping</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vs-standard-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max vs Standard Shopping</p>
+          <p className="text-xs text-gray-500 mb-0">What Works in 2026 — where each one wins, and the hybrid</p>
         </Link>
       </div>
     </>

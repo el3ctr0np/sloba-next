@@ -8,33 +8,33 @@ export default function GoogleShoppingSrbija2026SR() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Shopping Ads dolazi u Srbiju u novembru 2026 — tačno pre Black Friday sezone. Hrvatska i ostatak Ex-Yu regiona slede u Q4 2026. Ovo je najveća promena srpskog eCommerce tržišta u poslednjih 10 godina. Imate 7 meseci da se pripremite pre nego što vaša konkurencija uopšte shvati šta se dešava.
+          Google Shopping Ads dolazi u Srbiju u drugoj polovini 2026 (Q3 ili Q4), moguće pre Black Friday sezone ako lansiranje bude u Q4. Hrvatska i ostatak Ex-Yu regiona slede u Q4 2026. Ovo je najveća promena srpskog eCommerce tržišta u poslednjih 10 godina. Imate vreme da se pripremite pre nego što vaša konkurencija uopšte shvati šta se dešava.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Nov 2026</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">launch datum za Srbiju</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Q3-Q4 2026</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">očekivani period lansiranja</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">15+</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">novih EMEA tržišta</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">7 mes.</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">do pripreme (od danas)</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Sada</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">je vreme za pripremu</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">£290k+</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">revenue iz UK Shopping iskustva</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">6-cifren</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Shopping prihod (u funtama) iz UK iskustva</p>
           </div>
         </div>
       </div>
 
       <p>
-        Novembar 2026. Upisuješ "jakna muška zara" u Google pretragu. Umesto samo tekstualnih oglasa, vidiš red slika — jakna, cena, prodavnica. Klikneš direktno. Kupiš. Ovo je Google Shopping, i to iskustvo dolazi u Srbiju za manje od godinu dana.
+        Druga polovina 2026. Upisuješ "jakna muška zara" u Google pretragu. Umesto samo tekstualnih oglasa, vidiš red slika - jakna, cena, prodavnica. Klikneš direktno. Kupiš. Ovo je Google Shopping, i to iskustvo dolazi u Srbiju u narednih nekoliko meseci.
       </p>
       <p>
-        Radim Google Shopping kampanje za UK klijente više od 2 godine. Sa Chelleeon UK smo generisali £290.000+ revenue kroz Shopping, sa <GlossaryLink slug="poas">POAS</GlossaryLink> 1.78x u kategoriji gde je margina tanka i konkurencija brutalna. Znam iz prve ruke šta funkcioniše, šta ne funkcioniše, i — što je najvažnije za ovaj post — šta srpski eCommerce biznisi moraju da urade pre novembra 2026 da ne propuste launch window.
+        Radim Google Shopping kampanje za UK klijente više od 2 godine. Sa jednim UK skincare brendom generisali smo šestocifren prihod (u funtama) kroz Shopping, sa <GlossaryLink slug="poas">POAS</GlossaryLink> 1.78x u kategoriji gde je margina tanka i konkurencija brutalna. Znam iz prve ruke šta funkcioniše, šta ne funkcioniše, i - što je najvažnije za ovaj post - šta srpski eCommerce biznisi moraju da urade pre lansiranja (očekuje se Q3/Q4 2026) da ne propuste launch window.
       </p>
       <p>
         Ovo je pillar post o Google Shopping-u u Srbiji. Pokriva sve: datum, šta je Shopping, Ex-Yu tržišta, 15-korak checklist, Merchant Center, product feed, moje UK iskustvo, greške, troškove, i CSS strategiju. Linkovi ka supporting postovima se nalaze kroz tekst za one koji žele više detalja o konkretnim temama. Ako želite da vam neko sa iskustvom postavi ceo eCommerce nalog, pogledajte i našu uslugu{" "}
@@ -46,10 +46,10 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <h2>Kada tačno dolazi Google Shopping u Srbiju</h2>
       <p>
-        Prema zvaničnim Google najavama i internim podacima koje pratim, <strong>Google Shopping Ads zvanično počinje u Srbiji u novembru 2026</strong>. Tačniji datum u okviru novembra nije potvrđen, ali prema obrazcu prethodnih EMEA launch-eva, očekujem prvu ili drugu nedelju novembra.
+        Prema zvaničnim Google najavama i internim podacima koje pratim, <strong>Google Shopping Ads dolazi u Srbiju u drugoj polovini 2026 (Q3 ili Q4)</strong>. Tačan datum još nije potvrđen, ali prema obrazcu prethodnih EMEA launch-eva, očekujem da bude vezan za period pred sezonu jakih praznika.
       </p>
       <p>
-        Zašto novembar? Nije slučajno. Google strateški lansira Shopping na novim tržištima pre Q4 sezone — Black Friday (28. novembar), Crni Petak, i Božić kampanje. Advertajzeri dobijaju tačno onu sezonu kada Shopping ima najviše smisla: visok purchase intent, visok AOV, i kupci koji aktivno pretražuju specifične proizvode sa namerom da kupe.
+        Zašto druga polovina godine? Nije slučajno. Google strateški lansira Shopping na novim tržištima pred Q4 sezonu - Black Friday, Crni Petak, i Božić kampanje. Ako lansiranje bude u Q4, advertajzeri dobijaju tačno onu sezonu kada Shopping ima najviše smisla: visok purchase intent, visok AOV, i kupci koji aktivno pretražuju specifične proizvode sa namerom da kupe.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -68,23 +68,23 @@ export default function GoogleShoppingSrbija2026SR() {
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Sada – Septembar 2026</td>
+              <td className="py-3 px-3 font-medium">Sada</td>
               <td className="py-3 px-3">Priprema, feed optimizacija, MC setup</td>
               <td className="py-3 px-3">Kompletirati 15-korak checklist</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">Oktobar 2026</td>
+              <td className="py-3 px-3 font-medium">Pred lansiranje</td>
               <td className="py-3 px-3">Final checks, feed live, MC verifikovan</td>
               <td className="py-3 px-3">Test kampanje, bug fix</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Novembar 2026</td>
+              <td className="py-3 px-3 font-medium">Lansiranje (Q3/Q4 2026)</td>
               <td className="py-3 px-3">Google Shopping LIVE u Srbiji</td>
-              <td className="py-3 px-3">Launch kampanje, Q4 budžet aktivan</td>
+              <td className="py-3 px-3">Launch kampanje, budžet aktivan</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">Decembar 2026</td>
-              <td className="py-3 px-3">Božić sezona, peak Shopping volumen</td>
+              <td className="py-3 px-3 font-medium">Posle lansiranja</td>
+              <td className="py-3 px-3">Ako se poklopi sa Q4: Božić sezona, peak Shopping volumen</td>
               <td className="py-3 px-3">Scale budžet, bidding optimizacija</td>
             </tr>
           </tbody>
@@ -150,7 +150,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Srbija</td>
               <td className="py-3 px-3">RSD</td>
-              <td className="py-3 px-3 font-semibold text-green-700">Novembar 2026</td>
+              <td className="py-3 px-3 font-semibold text-green-700">Q3-Q4 2026</td>
               <td className="py-3 px-3">~€2.1B godišnje</td>
               <td className="py-3 px-3">Najveće tržište u regionu</td>
             </tr>
@@ -199,7 +199,7 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <hr />
 
-      <h2>Checklist za pripremu: 15 koraka pre Novembra 2026</h2>
+      <h2>Checklist za pripremu: 15 koraka pre lansiranja</h2>
       <p>
         Evo tačno šta treba da uradite, u redosledu kojim treba da to uradite. Svaki korak ima rok i objašnjenje zašto je važan. Ovo je checklist koji koristim sa svakim novim Shopping klijentom.
       </p>
@@ -463,20 +463,20 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <hr />
 
-      <h2>Moje iskustvo: 2+ godine Shopping kampanja u UK (Chelleon)</h2>
+      <h2>Moje iskustvo: 2+ godine Shopping kampanja u UK</h2>
       <p>
-        <strong>Za UK skincare brend Chelleon vodim Google Shopping kampanje više od 2 godine, sa £290.000+ generisanog prihoda i 1,78x POAS (Profit on Ad Spend).</strong> Pet ključnih lekcija iz tog iskustva direktno se prenosi na srpsko tržište od novembra 2026.
+        <strong>Za jedan UK skincare brend vodim Google Shopping kampanje više od 2 godine, sa šestocifrenim prihodom (u funtama) i 1,78x POAS (Profit on Ad Spend).</strong> Pet ključnih lekcija iz tog iskustva direktno se prenosi na srpsko tržište od trenutka lansiranja (očekuje se Q3/Q4 2026).
       </p>
       <p>
-        Ovo ne pišem iz teorije. Chelleon je premium skincare eCommerce sa mesečnim ad spend-om do £8,000. Kroz taj period naučio sam koliko je data feed kritičan za uspeh — bukvalno 80% performansi zavisi od kvaliteta feed-a, ne od bidding-a. Taj insight sam preneo na sve nove kampanje i to je prva stvar koju proveravam kod svakog klijenta.
+        Ovo ne pišem iz teorije. Reč je o premium skincare eCommerce brendu sa četvorocifrenim mesečnim ad spend-om (u funtama). Kroz taj period naučio sam koliko je data feed kritičan za uspeh — bukvalno 80% performansi zavisi od kvaliteta feed-a, ne od bidding-a. Taj insight sam preneo na sve nove kampanje i to je prva stvar koju proveravam kod svakog klijenta.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
-        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Chelleon UK — Realni rezultati</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">UK skincare brend - realni rezultati</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">£290k+</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">ukupni Shopping revenue</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">6-cifren</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">ukupni Shopping prihod (u funtama)</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">1.78x</p>
@@ -504,7 +504,7 @@ export default function GoogleShoppingSrbija2026SR() {
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lekcija 2: Tiered struktura kampanja je obavezna</p>
-          <p className="text-base text-gray-600 mb-0">Sa Chelleon koristimo 3-tier sistem: Best Sellers (visoki bid), Catalog (srednji bid), Clearance (niski bid). Ovim kontrolišemo gde ide budžet umesto da Google odlučuje. Za srpsko tržište preporučujem isti pristup od starta.</p>
+          <p className="text-base text-gray-600 mb-0">Sa tim UK skincare brendom koristimo 3-tier sistem: Best Sellers (visoki bid), Catalog (srednji bid), Clearance (niski bid). Ovim kontrolišemo gde ide budžet umesto da Google odlučuje. Za srpsko tržište preporučujem isti pristup od starta.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="font-heading font-bold mb-2">Lekcija 3: POAS, ne ROAS</p>
@@ -531,7 +531,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <strong>Najčešće greške u pripremi za Google Shopping u Srbiji su: mismatch valute između sajta i feed-a, nekooptimizovani title-ovi, slike sa watermark-om, ručno ažuriran feed, nesegmentisane kampanje, nedostatak conversion trackinga i kasno startovan Merchant Center setup.</strong> Ovo su nalazi iz pre-launch audita 7 srpskih eCommerce biznisa u prvom kvartalu 2026.
       </p>
       <p>
-        Evo detaljnog objašnjenja svake greške i kako je popraviti pre novembra.
+        Evo detaljnog objašnjenja svake greške i kako je popraviti pre lansiranja.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
@@ -586,7 +586,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #7</p>
         <p className="font-semibold mb-2">Čekanje na launch dan pre početka Merchant Center setup-a</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> MC account review može trajati 1-3 nedelje na novim tržištima. Feed optimizacija traje mesecima. Oni koji počnu sada (april 2026) biće live na dan 1. Oni koji čekaju novembar, počeće tek u decembru ili januaru.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> MC account review može trajati 1-3 nedelje na novim tržištima. Feed optimizacija traje mesecima. Oni koji počnu sada biće live na dan 1. Oni koji čekaju lansiranje da bi tek onda počeli, kreću sa zaostatkom od nedelja.</p>
         </div>
       </div>
 
@@ -708,15 +708,15 @@ export default function GoogleShoppingSrbija2026SR() {
                 name: "Kada tačno počinje Google Shopping u Srbiji?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google Shopping zvanično starta u Srbiji u novembru 2026. Tačan datum u okviru novembra nije potvrđen, ali prema obrazcu prethodnih EMEA launch-eva, očekuje se prva ili druga nedelja novembra 2026 — tačno pre Black Friday sezone."
+                  text: "Google Shopping zvanično starta u Srbiji u drugoj polovini 2026 (Q3 ili Q4). Tačan datum još nije potvrđen, ali prema obrazcu prethodnih EMEA launch-eva, moguće je da se poklopi sa periodom pred Black Friday sezonu ako lansiranje bude u Q4."
                 }
               },
               {
                 "@type": "Question",
-                name: "Da li mi treba Merchant Center pre novembra 2026?",
+                name: "Da li mi treba Merchant Center pre lansiranja Shopping-a?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Da — i što pre, to bolje. Na novim tržištima, Google Merchant Center account review može trajati 1-3 nedelje. Feed optimizacija zahteva mesece rada. Biznisi koji počnu setup u aprilu-maju 2026 biće spremni na launch datum. Oni koji čekaju oktobar-novembar, počeće aktivno tek u januaru 2027."
+                  text: "Da — i što pre, to bolje. Na novim tržištima, Google Merchant Center account review može trajati 1-3 nedelje. Feed optimizacija zahteva mesece rada. Biznisi koji počnu setup unapred biće spremni na dan lansiranja. Oni koji čekaju do poslednjeg trenutka, počeće aktivno tek nedeljama posle konkurencije."
                 }
               },
               {
@@ -772,7 +772,7 @@ export default function GoogleShoppingSrbija2026SR() {
                 name: "Da li Hrvatska i BiH dobijaju Shopping u isto vreme kao Srbija?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Hrvatska i BiH su u Q4 2026 wave — precizni datumi nisu potvrđeni, ali se očekuje isti period (oktobar-novembar 2026). Slovenija je takođe Q4 2026. Severna Makedonija je verovatno Wave 2 u 2027. Za multi-market strategiju, planirajte feed koji može pokriti RS, HR i BiH od starta."
+                  text: "Hrvatska i BiH su u Q4 2026 wave - precizni datumi nisu potvrđeni. Srbija se očekuje u drugoj polovini 2026 (Q3 ili Q4), moguće u istom periodu. Slovenija je takođe Q4 2026. Severna Makedonija je verovatno Wave 2 u 2027. Za multi-market strategiju, planirajte feed koji može pokriti RS, HR i BiH od starta."
                 }
               },
               {
@@ -795,17 +795,17 @@ export default function GoogleShoppingSrbija2026SR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google Shopping zvanično starta u Srbiji u novembru 2026. Tačan datum u okviru novembra nije potvrđen, ali prema obrazcu prethodnih EMEA launch-eva, očekuje se prva ili druga nedelja novembra 2026 — tačno pre Black Friday sezone.
+            Google Shopping zvanično starta u Srbiji u drugoj polovini 2026 (Q3 ili Q4). Tačan datum još nije potvrđen, ali prema obrazcu prethodnih EMEA launch-eva, moguće je da se poklopi sa periodom pred Black Friday sezonu ako lansiranje bude u Q4.
           </div>
         </details>
 
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Da li mi treba Merchant Center pre novembra 2026?
+            Da li mi treba Merchant Center pre lansiranja Shopping-a?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Da — i što pre, to bolje. Na novim tržištima, Google Merchant Center account review može trajati 1-3 nedelje. Feed optimizacija zahteva mesece rada. Biznisi koji počnu setup u aprilu-maju 2026 biće spremni na launch datum. Oni koji čekaju oktobar-novembar, počeće aktivno tek u januaru 2027.
+            Da — i što pre, to bolje. Na novim tržištima, Google Merchant Center account review može trajati 1-3 nedelje. Feed optimizacija zahteva mesece rada. Biznisi koji počnu setup unapred biće spremni na dan lansiranja. Oni koji čekaju do poslednjeg trenutka, počeće aktivno tek nedeljama posle konkurencije.
           </div>
         </details>
 
@@ -875,7 +875,7 @@ export default function GoogleShoppingSrbija2026SR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Hrvatska i BiH su u Q4 2026 wave — precizni datumi nisu potvrđeni, ali se očekuje isti period (oktobar-novembar 2026). Slovenija je takođe Q4 2026. Severna Makedonija je verovatno Wave 2 u 2027. Za multi-market strategiju, planirajte feed koji može pokriti RS, HR i BiH od starta.
+            Hrvatska i BiH su u Q4 2026 wave - precizni datumi nisu potvrđeni. Srbija se očekuje u drugoj polovini 2026 (Q3 ili Q4), moguće u istom periodu. Slovenija je takođe Q4 2026. Severna Makedonija je verovatno Wave 2 u 2027. Za multi-market strategiju, planirajte feed koji može pokriti RS, HR i BiH od starta.
           </div>
         </details>
 
@@ -897,7 +897,7 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">Za ozbiljne brendove</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
-          Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre novembra ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu — deo je naše šire usluge{" "}
+          Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre lansiranja ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu - deo je naše šire usluge{" "}
           <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping upravljanja</Link>. Kao{" "}
           <Link href="/usluge/google-ads-agencija" className="underline text-yellow-400">agencija za Google Ads</Link> vodimo i Search i Performance Max kampanje, ne samo Shopping.
         </p>

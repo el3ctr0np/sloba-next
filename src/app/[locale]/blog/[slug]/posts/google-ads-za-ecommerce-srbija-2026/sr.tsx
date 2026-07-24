@@ -232,25 +232,25 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
 
       <hr />
 
-      <h2>Zašto je 2026. prelomna godina — Google Shopping dolazi novembra</h2>
+      <h2>Zašto je 2026. prelomna godina - Google Shopping dolazi u Srbiju</h2>
 
       <p>
         Ovo je informacija koja menja sve za srpski eCommerce. Google je 25. marta 2026. zvanično potvrdio
-        lansiranje Google Shopping Ads-a u Srbiji — u novembru 2026, u okviru Holiday Season talasa koji
-        obuhvata 9 tržišta (Srbija, Hrvatska, BiH, Slovenija, Crna Gora, Bugarska, Estonija, Letonija, Litvanija).
+        da Google Shopping Ads dolazi u Srbiju u drugoj polovini 2026 (Q3 ili Q4), u okviru Holiday Season talasa koji
+        obuhvata 9 tržišta (Srbija, Hrvatska, BiH, Slovenija, Crna Gora, Bugarska, Estonija, Letonija, Litvanija). Tačan datum lansiranja još nije potvrđen.
       </p>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-semibold text-yellow-900 text-sm mb-1">Zašto je ovo bitno sada, u aprilu?</p>
         <p className="text-yellow-800 text-base mb-0">
           <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink> setup, product feed optimizacija i account review ne mogu da se urade za vikend.
-          Brendovi koji počnu pripremu sada imaju 6–7 meseci prednosti pred konkurencijom koja će početi
-          u oktobru. U eCommerce-u, 6 meseci je ogromna prednost.
+          Brendovi koji počnu pripremu sada imaju značajnu prednost pred konkurencijom koja će sačekati
+          do poslednjeg trenutka. U eCommerce-u, ta prednost je ogromna.
         </p>
       </div>
 
       <p>
-        Do novembra, relevantna strategija je kombinacija Search kampanja i Performance Max-a.
+        Do lansiranja Shopping-a, relevantna strategija je kombinacija Search kampanja i Performance Max-a.
         PMax je trenutno najjači alat za multi-SKU eCommerce prodavnice u Srbiji jer koristi sve
         Google kanale (Search, YouTube, Display, Gmail, Maps) iz jedne kampanje.
       </p>
@@ -269,7 +269,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
             href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
             className="underline font-medium"
           >
-            Google Shopping dolazi u Srbiju novembar 2026 — kompletan vodič za pripremu
+            Google Shopping dolazi u Srbiju - kompletan vodič za pripremu
           </Link>
         </li>
         <li>
@@ -353,8 +353,8 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       <p>
         Ovo podudaranje je značajno: preporuke iz Ad Mixer-a o feed kvalitetu, ranoj pripremi i promeni
         mentaliteta u potpunosti odgovaraju tome što sam lično video radeći Shopping kampanje za UK
-        klijente poslednje dve godine. Brendovi koji budu spremni pre novembra — sa čistim feedom,
-        verifikovanim Merchant Center nalogom i razumevanjem Shopping dinamike — biće osam meseci
+        klijente poslednje dve godine. Brendovi koji budu spremni pre lansiranja - sa čistim feedom,
+        verifikovanim Merchant Center nalogom i razumevanjem Shopping dinamike - biće mesecima
         ispred konkurencije.
       </p>
 
@@ -370,7 +370,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
 
       <p>
         Opšti princip: srpsko tržište je 2–3 puta jeftinije od UK tržišta po CPC-u.
-        Iz mog iskustva sa Chelleon UK (£290.000+ prihoda od Google Ads), prosečan CPC u UK
+        Iz mog iskustva sa jednim UK skincare brendom (šestocifren prihod od Google Ads, u funtama), prosečan CPC u UK
         za skincare eCommerce iznosi £0,40–£0,80. Ekvivalentne pretrage u Srbiji koštaju 15–40 RSD
         (0,13–0,34 EUR). Ovo je ogromna prednost za srpske oglašivače.
       </p>
@@ -517,9 +517,9 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">Sh</span>
             <div>
-              <h3 className="text-base font-heading font-bold mt-0 mb-1">Shopping (novembar 2026+)</h3>
+              <h3 className="text-base font-heading font-bold mt-0 mb-1">Shopping (od lansiranja, Q3/Q4 2026)</h3>
               <p className="text-base text-gray-600 mb-2">
-                Od novembra 2026. postaje primarna strategija za product-first biznise.
+                Od trenutka lansiranja postaje primarna strategija za product-first biznise.
                 Vizuelni format — korisnik vidi sliku, cenu i ime prodavnice pre klika.
                 Daleko viši CTR i konverzija od tekstualnih oglasa za eCommerce.
               </p>
@@ -763,10 +763,10 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
 
       <hr />
 
-      <h2>Šta očekivati u novembru 2026 — Google Shopping i šta to menja</h2>
+      <h2>Šta očekivati kad stigne Google Shopping - i šta to menja</h2>
 
       <p>
-        Lansiranje Google Shopping-a u Srbiji novembra 2026. nije inkrementalna promena —
+        Lansiranje Google Shopping-a u Srbiji (očekuje se u drugoj polovini 2026, Q3 ili Q4) nije inkrementalna promena -
         to je strukturalna promena tržišta. Pogledajte šta se desilo na tržištima gde je Shopping
         već duže prisutan: u UK-u, Shopping kampanje generišu 76% svih klikova za eCommerce oglašivače.
         U Nemačkoj je taj broj sličan.
@@ -779,7 +779,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       </p>
 
       <div className="bg-green-50 border border-green-200 rounded-xl p-5 my-6">
-        <p className="text-sm font-bold text-green-900 mb-3">Prozor prilike: april — oktobar 2026</p>
+        <p className="text-sm font-bold text-green-900 mb-3">Prozor prilike: sada, pre lansiranja</p>
         <p className="text-base text-green-800 mb-2">
           Brendovi koji sada počnu pripremu imaju ekskluzivnu prednost:
         </p>
@@ -792,8 +792,8 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       </div>
 
       <p>
-        Brendovi koji počnu u oktobru ili novembru kreću sa nultim iskustvom u najkompetitivnijem
-        periodu godine — Holiday season. To je recept za visoke troškove i loše rezultate.
+        Brendovi koji sačekaju lansiranje da bi tek onda počeli kreću sa nultim iskustvom u najkompetitivnijem
+        periodu godine - Holiday season. To je recept za visoke troškove i loše rezultate.
       </p>
 
       <p>
@@ -889,7 +889,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
           },
           {
             num: 15,
-            title: "Post-launch strategija za novembar 2026",
+            title: "Post-launch strategija za Shopping",
             desc: "Definirajte cilj: ROAS target, budžet za Shopping launch, KPI-ji za prvu nedelju, prvu nedelju, prvi mesec."
           }
         ].map((item) => (
@@ -905,11 +905,11 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
 
       <hr />
 
-      <h2>Zaključak — Gde si sada, gde treba da budeš do novembra</h2>
+      <h2>Zaključak - Gde si sada, gde treba da budeš do lansiranja</h2>
 
       <p>
         Srbija 2026. nije isto što i Srbija 2020. Tržište je poraslo, kupci su sofisticiraniji,
-        a od novembra stiže Google Shopping — format koji u razvijenim tržištima dominira
+        a uskoro (očekuje se Q3 ili Q4 2026) stiže Google Shopping - format koji u razvijenim tržištima dominira
         eCommerce oglašavanjem sa 70–80% klikova.
       </p>
 
@@ -922,14 +922,14 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
 
       <p>
         Ako želite da vidite kako izgleda Google Ads eCommerce strategija koja radi u praksi,
-        pogledajte case study sa Chelleon UK — skincare eCommerce koji je generisao £290.000+
-        prihoda kroz Google Ads:
+        pogledajte case study sa UK skincare brendom koji je generisao šestocifren
+        prihod (u funtama) kroz Google Ads:
       </p>
 
       <ul>
         <li>
           <a href="/sr/case-studies/chelleon" className="underline font-medium">
-            Chelleon UK Case Study — Google Ads eCommerce (Skincare, UK tržište)
+            Case Study - Google Ads eCommerce (skincare, UK tržište)
           </a>
         </li>
       </ul>
@@ -962,7 +962,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google je 25. marta 2026. zvanično potvrdio lansiranje <strong>novembra 2026</strong> kao deo Holiday Season talasa (Srbija, Hrvatska, BiH, Slovenija, Crna Gora + Baltik + Bugarska). Priprema mora početi sada — Merchant Center verifikacija traje 1–4 nedelje, feed optimizacija 2–4 nedelje. Brendovi koji startuju u oktobru/novembru kreću sa nultim iskustvom u najkonkurentnijem periodu godine.
+            Google je 25. marta 2026. zvanično potvrdio da Google Shopping dolazi u Srbiju, u okviru Holiday Season talasa (Srbija, Hrvatska, BiH, Slovenija, Crna Gora + Baltik + Bugarska). Lansiranje se očekuje u <strong>drugoj polovini 2026 (Q3 ili Q4)</strong>, tačan datum još nije potvrđen. Priprema mora početi sada - Merchant Center verifikacija traje 1–4 nedelje, feed optimizacija 2–4 nedelje. Brendovi koji sačekaju do poslednjeg trenutka kreću sa nultim iskustvom u najkonkurentnijem periodu godine.
           </div>
         </details>
 
@@ -1056,7 +1056,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
             href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
             className="underline"
           >
-            Google Shopping lansiranje u Srbiji novembar 2026 — interni vodič
+            Google Shopping lansiranje u Srbiji - interni vodič
           </Link>
         </li>
         <li>

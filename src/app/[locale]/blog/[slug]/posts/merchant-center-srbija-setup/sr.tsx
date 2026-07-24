@@ -8,7 +8,7 @@ export default function MerchantCenterSrbijaSetupSR() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Merchant Center je preduslov broj jedan za Shopping oglase — bez verifikovanog naloga i ispravnog product feed-a, ne postoji Shopping kampanja. Ovo je korak-po-korak vodič za setup specifično prilagođen srpskom tržištu, pre nego što Shopping zvanično starta u novembru 2026.
+          Google Merchant Center je preduslov broj jedan za Shopping oglase - bez verifikovanog naloga i ispravnog product feed-a, ne postoji Shopping kampanja. Ovo je korak-po-korak vodič za setup specifično prilagođen srpskom tržištu, pre nego što Shopping zvanično starta (očekuje se u drugoj polovini 2026, Q3 ili Q4).
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -42,7 +42,7 @@ export default function MerchantCenterSrbijaSetupSR() {
         Kad god otvorim novi Shopping nalog za klijenta, prva stvar koju radim nije bidding strategija niti kampanjska struktura — to je Merchant Center. Zvuči kao administrativni detalj, ali u praksi je obrnuto: 80% grešaka koje vidim u Shopping kampanjama potiču iz lošeg MC setup-a ili neurednog feed-a, ne iz lošeg bid managementa.
       </p>
       <p>
-        Radim Google Ads već godinama sa 10 aktivnih klijenata — od Perun Moto (globalna moto oprema) do Chelleon UK (skincare eCommerce) i Sleepy Piglet UK (mattress brand). Sva tri naloga imaju Shopping kampanje koje prolaze kroz Merchant Center, i sva tri su u nekom trenutku imala feed probleme koje sam morao da rešavam. Ovaj vodič je destilacija tih iskustava, prilagođena specifično za srpsko tržište koje dobija Shopping u novembru 2026.
+        Radim Google Ads već godinama sa 10 aktivnih klijenata - od Perun Moto (globalna moto oprema) do jednog UK skincare brenda i Sleepy Piglet UK (mattress brand). Sva tri naloga imaju Shopping kampanje koje prolaze kroz Merchant Center, i sva tri su u nekom trenutku imala feed probleme koje sam morao da rešavam. Ovaj vodič je destilacija tih iskustava, prilagođena specifično za srpsko tržište koje dobija Shopping u drugoj polovini 2026 (Q3 ili Q4).
       </p>
       <p>
         Ovo je supporting post uz pillar vodič{" "}
@@ -238,7 +238,7 @@ export default function MerchantCenterSrbijaSetupSR() {
 
       <h2>Česte greške i razlozi za disapproval</h2>
       <p>
-        Ovo su greške koje najčešće vidim kad radim MC audit za nove klijente — uključujući i one koje sam morao da rešavam kod Perun Moto i Chelleon naloga.
+        Ovo su greške koje najčešće vidim kad radim MC audit za nove klijente — uključujući i one koje sam morao da rešavam na Perun Moto nalogu i na nalogu UK skincare brenda.
       </p>
 
       <div className="space-y-4 my-6">
@@ -444,7 +444,7 @@ export default function MerchantCenterSrbijaSetupSR() {
                 name: "Koliko dugo traje verifikacija i claiming sajta?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Verifikacija (HTML tag, GA ili GTM) je obično trenutna do nekoliko sati. Account review na potpuno novim tržištima (kao što će biti Srbija u novembru 2026) može trajati 1-3 nedelje — zato preporučujem da započnete proces minimum 60 dana pre planiranog launch-a kampanje."
+                  text: "Verifikacija (HTML tag, GA ili GTM) je obično trenutna do nekoliko sati. Account review na potpuno novim tržištima (kao što će biti Srbija kad Shopping krene, očekuje se u drugoj polovini 2026) može trajati 1-3 nedelje - zato preporučujem da započnete proces minimum 60 dana pre planiranog launch-a kampanje."
                 }
               },
               {
@@ -501,7 +501,7 @@ export default function MerchantCenterSrbijaSetupSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Verifikacija (HTML tag, GA ili GTM) je obično trenutna do nekoliko sati. Account review na potpuno novim tržištima (kao što će biti Srbija u novembru 2026) može trajati 1-3 nedelje — zato preporučujem da započnete proces minimum 60 dana pre planiranog launch-a kampanje.
+            Verifikacija (HTML tag, GA ili GTM) je obično trenutna do nekoliko sati. Account review na potpuno novim tržištima (kao što će biti Srbija kad Shopping krene, očekuje se u drugoj polovini 2026) može trajati 1-3 nedelje - zato preporučujem da započnete proces minimum 60 dana pre planiranog launch-a kampanje.
           </div>
         </details>
 

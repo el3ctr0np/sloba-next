@@ -916,7 +916,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
           <p className="text-gray-600 text-base leading-relaxed">
             {isEn ? (
               <>
-                Google Shopping is arriving in Serbia from November 2026, and the setup is ready to
+                Google Shopping is arriving in Serbia in the second half of 2026 (Q3 or Q4), and the setup is ready to
                 move on day one.{" "}
                 <Link href="/usluge/google-shopping" className="text-primary underline">
                   See how we approach Google Shopping →
@@ -924,7 +924,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
               </>
             ) : (
               <>
-                Google Shopping stiže u Srbiju od novembra 2026, a setup je spreman da krene od prvog
+                Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4), a setup je spreman da krene od prvog
                 dana.{" "}
                 <Link href="/usluge/google-shopping" className="text-primary underline">
                   Vidite kako pristupamo Google Shopping-u →

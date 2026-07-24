@@ -12,10 +12,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Shopping Campaign Management | eCommerce PPC — Digital Jelisavac"
-      : "Google Shopping Agencija Srbija - Nov 2026 | Digital Jelisavac",
+      : "Google Shopping Agencija Srbija - 2026 Launch | Digital Jelisavac",
     description: isEn
-      ? "Digital Jelisavac's expert Google Shopping campaign management for eCommerce brands. Product feed optimization, bid strategies, campaign structure. Serbia launch: November 2026 - get ready early."
-      : "Google Shopping zvanično stiže u Srbiju novembra 2026. Pripremite Merchant Center, feed i tracking pre lansiranja sa agencijom koja Shopping već vodi 2+ godine u UK - £290k+ revenue, POAS 1.78x.",
+      ? "Digital Jelisavac's expert Google Shopping campaign management for eCommerce brands. Product feed optimization, bid strategies, campaign structure. Serbia launch: second half of 2026 (Q3 or Q4) - get ready early."
+      : "Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4). Pripremite Merchant Center, feed i tracking pre lansiranja sa agencijom koja Shopping već vodi 2+ godine u UK - šestocifren prihod, POAS 1.78x.",
     locale,
     path: "/services/google-shopping",
     srPath: "/usluge/google-shopping",
@@ -272,7 +272,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
     {
       question: "Kada Google Shopping stiže u Srbiju?",
       answer:
-        "Google Shopping se zvanično lansira u Srbiji novembra 2026. Do tada je najbolje vreme za pripremu - Merchant Center, product feed i tracking treba da budu spremni pre lansiranja, ne posle."
+        "Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4) - tačan datum još nije potvrđen. Do tada je najbolje vreme za pripremu - Merchant Center, product feed i tracking treba da budu spremni pre lansiranja, ne posle."
     },
     {
       question: "Šta treba da pripremim pre lansiranja Google Shopping-a?",
@@ -548,21 +548,21 @@ export default async function GoogleShoppingPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Launch window section - SR only, early-mover positioning pre novembra 2026 */}
+      {/* Launch window section - SR only, early-mover positioning ahead of Serbia launch (expected H2 2026) */}
       {locale !== "en" && (
         <Section background="gray">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-heading font-bold mb-6 text-center">
-              Google Shopping stiže u Srbiju novembra 2026 - pripremite se pre konkurencije
+              Google Shopping stiže u Srbiju u drugoj polovini 2026 - pripremite se pre konkurencije
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Google Shopping se zvanično lansira u Srbiji novembra 2026. Do tada je prozor za pripremu, ne za čekanje - eCommerce brendovi koji podese Merchant Center, feed i tracking unapred kreću sa kampanjama odmah po lansiranju, dok konkurencija tek tada počinje setup i uči na svojoj grešci.
+              Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4) - tačan datum još nije potvrđen. Do tada je prozor za pripremu, ne za čekanje - eCommerce brendovi koji podese Merchant Center, feed i tracking unapred kreću sa kampanjama odmah po lansiranju, dok konkurencija tek tada počinje setup i uči na svojoj grešci.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Priprema pre lansiranja podrazumeva tri stvari: Google Merchant Center nalog i verifikaciju domena, product feed sa tačnim naslovima, atributima i kategorijama, i konverzioni tracking koji već radi pre nego što prve kampanje krenu. Ko ovo reši na vreme, štedi nedelje kašnjenja u novembru.
+              Priprema pre lansiranja podrazumeva tri stvari: Google Merchant Center nalog i verifikaciju domena, product feed sa tačnim naslovima, atributima i kategorijama, i konverzioni tracking koji već radi pre nego što prve kampanje krenu. Ko ovo reši na vreme, štedi nedelje kašnjenja posle lansiranja.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Shopping kampanje vodim za UK klijente više od 2 godine - sa Chelleon UK smo generisali £290k+ revenue kroz Shopping, uz POAS 1.78x u kategoriji sa tankim maržama i jakom konkurencijom. To iskustvo (struktura feed-a, bidding strategije, izbegavanje čestih grešaka) prenosim direktno na pripremu srpskog tržišta, umesto da se testira metodom pokušaja i grešaka tek posle lansiranja.
+              Shopping kampanje vodim za UK klijente više od 2 godine - sa jednim UK skincare brendom generisali smo šestocifren Shopping prihod (u funtama), uz POAS 1.78x u kategoriji sa tankim maržama i jakom konkurencijom. To iskustvo (struktura feed-a, bidding strategije, izbegavanje čestih grešaka) prenosim direktno na pripremu srpskog tržišta, umesto da se testira metodom pokušaja i grešaka tek posle lansiranja.
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2 mt-6">
               <li>Merchant Center nalog i verifikacija domena</li>

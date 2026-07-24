@@ -5,10 +5,10 @@ export default function GoogleShoppingVodicPost() {
   return (
     <>
       <div className="bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-400 rounded-xl p-6 md:p-8 my-8 shadow-card">
-        <p className="text-xs uppercase tracking-[0.2em] text-orange-600 font-bold mb-3">NOVO — Novembar 2026</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-orange-600 font-bold mb-3">NOVO - Srbija, Q3-Q4 2026</p>
         <h3 className="text-xl md:text-2xl font-heading font-bold text-gray-900 mt-0 mb-3">Google Shopping Dolazi u Srbiju!</h3>
         <p className="text-base md:text-lg text-gray-800 mb-4 leading-relaxed">
-          Google zvanično lansira Shopping Ads u Srbiji u <strong>novembru 2026</strong>, tačno pred Black Friday sezonu. Hrvatska, BiH, Slovenija i Crna Gora dobijaju Shopping u Q4 2026. Ovo je najveća promena srpskog eCommerce-a u zadnjih 10 godina — i vreme za pripremu je sada.
+          Google Shopping Ads stiže u Srbiju u <strong>drugoj polovini 2026 (Q3 ili Q4)</strong>, tačan datum još nije potvrđen. Hrvatska, BiH, Slovenija i Crna Gora dobijaju Shopping u Q4 2026. Ovo je najveća promena srpskog eCommerce-a u zadnjih 10 godina - i vreme za pripremu je sada.
         </p>
         <p className="mb-0">
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }} className="inline-block bg-orange-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-700 transition-colors">
@@ -51,7 +51,7 @@ export default function GoogleShoppingVodicPost() {
           Šta je Google Shopping i kako funkcioniše?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Shopping</strong> je vizuelni format oglasa koji prikazuje sliku proizvoda, cenu i ime prodavnice pre klika — što filtrira nekupce i dovodi visoko-nameravane kupce. Zahteva <strong><GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink></strong> i optimizovan product feed. Za Srbiju: <strong>lansira se novembra 2026</strong>.
+          <strong>Google Shopping</strong> je vizuelni format oglasa koji prikazuje sliku proizvoda, cenu i ime prodavnice pre klika - što filtrira nekupce i dovodi visoko-nameravane kupce. Zahteva <strong><GlossaryLink slug="merchant-center">Google Merchant Center</GlossaryLink></strong> i optimizovan product feed. Za Srbiju: <strong>lansira se u drugoj polovini 2026 (Q3 ili Q4)</strong>, tačan datum još nije potvrđen.
         </p>
       </div>
 

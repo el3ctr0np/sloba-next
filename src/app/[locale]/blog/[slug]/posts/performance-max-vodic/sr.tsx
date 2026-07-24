@@ -90,7 +90,7 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">&quot;Crna kutija&quot; problem</p>
-        <p className="text-blue-800 text-base mb-0">PMax vam ne daje nivo kontrole i transparentnosti koji imate sa Search ili Shopping kampanjama. Ne vidite sve search terms, ne znate tačnu alokaciju budžeta po mreži, ne možete isključiti većinu placements, ne kontrolišete bidding po keyword-u. Dobijate agregirane podatke i morate verovati algoritmu. Moje iskustvo je da PMax najbolje funkcioniše za oglašivače koji veruju podacima više nego intuiciji i imaju strpljenja za learning period.</p>
+        <p className="text-blue-800 text-base mb-0">PMax vam ne daje nivo kontrole i transparentnosti koji imate sa Search ili Shopping kampanjama. Ne vidite kompletnu listu search termova, ne znate tačnu alokaciju budžeta po mreži, i nema licitiranja po ključnoj reči. Kontrola je u međuvremenu porasla - negativne ključne reči, brand exclusions i isključivanje placement-a na nivou naloga danas se podešavaju samostalno u interfejsu, bez Google predstavnika. Ali i dalje radite sa dobrim delom agregiranih podataka i morate verovati algoritmu. Moje iskustvo je da PMax najbolje funkcioniše za oglašivače koji veruju podacima više nego intuiciji i imaju strpljenja za learning period.</p>
       </div>
 
       <hr />
@@ -339,16 +339,16 @@ export default function PerformanceMaxVodicPost() {
           <li><strong>Customer Match liste</strong> — postojeći klijenti (email liste iz CRM-a)</li>
           <li><strong>Website visitors</strong> — korisnici koji su bili na ključnim stranicama (pricing, case studies)</li>
           <li><strong>In-market audiences</strong> — business services, software, consulting</li>
-          <li><strong>Custom segments</strong> — ljudi koji su pretraživali relevantne термине</li>
+          <li><strong>Custom segments</strong> — ljudi koji su pretraživali relevantne termine</li>
         </ul>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Account-level negative keywords</h3>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Negativne ključne reči</h3>
         </div>
-        <p className="text-base text-gray-600 mb-3">PMax dozvoljava samo account-level negative keywords. Koristite ih agresivno da filtrirate nekvalitetne upite.</p>
+        <p className="text-base text-gray-600 mb-3">Nekada su za PMax postojale samo negativne ključne reči na nivou naloga. Danas ih dodajete i na nivou same PMax kampanje, samostalno u interfejsu. Koristite ih agresivno da filtrirate nekvalitetne upite.</p>
         <ul className="text-sm">
           <li><strong>Job-related:</strong> &quot;posao&quot;, &quot;karijera&quot;, &quot;plata&quot;, &quot;oglasi za posao&quot;</li>
           <li><strong>Student terms:</strong> &quot;seminarski&quot;, &quot;završni rad&quot;, &quot;projekat&quot;</li>
@@ -629,7 +629,7 @@ export default function PerformanceMaxVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google ograničava search terms insights za PMax. Vidite samo agregirane kategorije i top terme, ne sve kao u Search kampanjama. Ovo je legitimna kritika PMax-a — gubi se transparentnost. Razlog je što PMax radi na više mreža istovremeno i Google ne želi da prikaže kompletan stream podataka. Rešenje: koristite Insights tab i gledate trends, ne pojedinačne termine.
+            PMax ima search terms izveštaj (Insights tab), i vremenom je proširen, ali i dalje ne pokazuje sve. Termovi sa malim brojem prikaza se izostavljaju, podaci nisu razdvojeni po mreži, i nemate kontrolu na nivou ključne reči kao u Search kampanjama. Ovo ostaje legitimna kritika PMax-a jer se gubi deo transparentnosti. Praktično: koristite izveštaj da uhvatite očigledne promašaje koje ćete isključiti negativnim ključnim rečima i da pratite trendove, ali ne očekujte kompletnu listu kao u Search-u.
           </div>
         </details>
 
@@ -639,7 +639,9 @@ export default function PerformanceMaxVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Može. PMax ima prioritet za Shopping queries — što znači da će PMax preuzeti impressions od Standard Shopping kampanja za iste proizvode. To nije nužno loše ako PMax performuje bolje. Pratite ukupne rezultate account-level, ne samo PMax. Ako ukupan ROAS ili konverzije rastu, kanibalizacija nije problem. Ako padaju, razmislite o strategiji — možda isključite neke proizvode iz PMax-a ili podesite bidding.
+            Zavisi od toga o kom periodu pričamo. Do oktobra 2024. PMax je imao automatski prioritet nad Standard Shopping-om za iste proizvode, pa je kanibalizacija bila strukturna - Standard Shopping je gubio prikaze bez obzira na to koliko je dobro postavljen. Od oktobra 2024. Google odlučuje preklapajuću aukciju po <GlossaryLink slug="ad-rank">Ad Rank</GlossaryLink>-u, a ne po tipu kampanje. Nijedan tip nema automatski prioritet, pa dobro izgrađena Standard Shopping kampanja stvarno konkuriše umesto da bude potisnuta.
+            <br /><br />
+            Praktična posledica: preklapanje i dalje postoji i treba ga pratiti, ali nije unapred rešeno u korist PMax-a. Šta gledati - impression share Standard Shopping kampanja na proizvodima koji su i u PMax-u, i brand termine kao negativne ključne reči u PMax-u ako ne želite da PMax kupuje vaš brend. Pratite ukupne rezultate na nivou naloga, ne samo PMax. Ako ukupan ROAS ili konverzije rastu, preklapanje nije problem. Detaljna razrada: <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vs-standard-shopping-vodic" } }} className="underline">Performance Max vs Standard Shopping</Link>.
           </div>
         </details>
 
@@ -722,7 +724,7 @@ export default function PerformanceMaxVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Čest problem sa PMax-om. Rešenja: isključite URL expansion, dodajte negativne ključne reči (preko Google podrške), napravite jače Search kampanje za iste ključne reči. PMax će trošiti gde mu je najjeftinije, ne nužno najefikasnije.
+            Čest problem sa PMax-om. Rešenja: isključite URL expansion, dodajte negativne ključne reči (na nivou kampanje ili naloga, samostalno u interfejsu), uključite brand exclusions ako PMax kupuje vaš brend, napravite jače Search kampanje za iste ključne reči. PMax će trošiti gde mu je najjeftinije, ne nužno najefikasnije.
           </div>
         </details>
 
@@ -748,7 +750,7 @@ export default function PerformanceMaxVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Januar 2026
+        Poslednje ažuriranje: Jul 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

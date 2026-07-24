@@ -8,7 +8,7 @@ export default function MerchantCenterSerbiaSetupEN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Quick answer</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Merchant Center is prerequisite number one for Shopping ads — without a verified account and a correct product feed, there is no Shopping campaign. This is a step-by-step setup guide built specifically for the Serbian market, ahead of Shopping&apos;s official launch in November 2026.
+          Google Merchant Center is prerequisite number one for Shopping ads — without a verified account and a correct product feed, there is no Shopping campaign. This is a step-by-step setup guide built specifically for the Serbian market, ahead of Shopping&apos;s official launch (expected in the second half of 2026, Q3 or Q4).
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -42,7 +42,7 @@ export default function MerchantCenterSerbiaSetupEN() {
         Whenever I open a new Shopping account for a client, the first thing I work on isn&apos;t the bidding strategy or campaign structure — it&apos;s Merchant Center. It sounds like an administrative detail, but in practice it&apos;s the opposite: 80% of the mistakes I see in Shopping campaigns come from a poor MC setup or a messy feed, not from bad bid management.
       </p>
       <p>
-        I&apos;ve been running Google Ads for years across 10 active clients — from Perun Moto (global moto gear) to Chelleon UK (skincare eCommerce) and Sleepy Piglet UK (mattress brand). All three accounts run Shopping campaigns that go through Merchant Center, and all three have had feed issues at some point that I had to fix. This guide is a distillation of those experiences, adapted specifically for the Serbian market, which gets Shopping in November 2026.
+        I&apos;ve been running Google Ads for years across 10 active clients — from Perun Moto (global moto gear) to a UK skincare brand and Sleepy Piglet UK (mattress brand). All three accounts run Shopping campaigns that go through Merchant Center, and all three have had feed issues at some point that I had to fix. This guide is a distillation of those experiences, adapted specifically for the Serbian market, which gets Shopping in the second half of 2026 (Q3 or Q4).
       </p>
       <p>
         This is a supporting post to the pillar guide{" "}
@@ -238,7 +238,7 @@ export default function MerchantCenterSerbiaSetupEN() {
 
       <h2 id="common-mistakes-and-disapproval-reasons">Common mistakes and disapproval reasons</h2>
       <p>
-        These are the mistakes I most often see when doing an MC audit for new clients — including ones I had to fix on the Perun Moto and Chelleon accounts.
+        These are the mistakes I most often see when doing an MC audit for new clients — including ones I had to fix on the Perun Moto account and on a UK skincare brand&apos;s account.
       </p>
 
       <div className="space-y-4 my-6">
@@ -444,7 +444,7 @@ export default function MerchantCenterSerbiaSetupEN() {
                 name: "How long does site verification and claiming take?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Verification (HTML tag, GA, or GTM) is usually instant to a few hours. Account review on brand-new markets (such as Serbia will be in November 2026) can take 1-3 weeks — that's why I recommend starting the process at least 60 days before your planned campaign launch."
+                  text: "Verification (HTML tag, GA, or GTM) is usually instant to a few hours. Account review on brand-new markets (such as Serbia will be once Shopping launches, expected in the second half of 2026) can take 1-3 weeks — that's why I recommend starting the process at least 60 days before your planned campaign launch."
                 }
               },
               {
@@ -501,7 +501,7 @@ export default function MerchantCenterSerbiaSetupEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Verification (HTML tag, GA, or GTM) is usually instant to a few hours. Account review on brand-new markets (such as Serbia will be in November 2026) can take 1-3 weeks — that&apos;s why I recommend starting the process at least 60 days before your planned campaign launch.
+            Verification (HTML tag, GA, or GTM) is usually instant to a few hours. Account review on brand-new markets (such as Serbia will be once Shopping launches, expected in the second half of 2026) can take 1-3 weeks — that&apos;s why I recommend starting the process at least 60 days before your planned campaign launch.
           </div>
         </details>
 
@@ -554,7 +554,7 @@ export default function MerchantCenterSerbiaSetupEN() {
           Need help with your Merchant Center setup?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          I go through your site, feed, and Merchant Center account and give you a concrete plan before Shopping officially launches in Serbia — part of our{" "}
+          I go through your site, feed, and Merchant Center account and give you a concrete plan before Shopping launches in Serbia (expected H2 2026) — part of our{" "}
           <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping management service</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">

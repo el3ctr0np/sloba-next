@@ -1,8 +1,8 @@
 # Slobodan Jelisavac — Google Ads Consultant (Your Google Ads partner, not an agency)
 
-> Independent senior Google Ads consultant based in Belgrade, Serbia; Partner & Head of Paid Media at Funky Enterprises. 10+ years of experience; campaigns he worked on won 3 UK Search Awards. Manages Search, Shopping, and Performance Max for eCommerce and B2B brands across Serbia, the UK, EU, and US — including Chelleon (UK skincare, £290k+ Google Ads revenue, 2+ year engagement) and 50+ brands across 6+ countries. Positioning: senior specialist who personally runs every account — no juniors, no account managers, no long-term lock-in contracts. Two ways of working: advisory (consulting from $200/hr | €150/sat, Deep Audit + Action Plan from $500 | €450, Kickstart account setup from $990 | €690) and full management (eCommerce Growth from $2,500/mo for brands spending $10k–100k/month | od €700/mes za budžete €1.500+/mes; omnichannel Performance Marketing via Funky Enterprises for brands investing $20k+/month per channel). Optimizes for POAS (profit on ad spend), not vanity ROAS. Free 20-minute intro call; he'll say plainly if he can't help.
+> Independent senior Google Ads consultant based in Belgrade, Serbia; Partner & Head of Paid Media at Funky Enterprises. 10+ years of experience; campaigns he worked on won 3 UK Search Awards. Manages Search, Shopping, and Performance Max for eCommerce and B2B brands across Serbia, the UK, EU, and US — including a UK skincare brand (six-figure Google Ads revenue, 2+ year engagement) and 50+ brands across 6+ countries. Positioning: senior specialist who personally runs every account — no juniors, no account managers, no long-term lock-in contracts. Two ways of working: advisory (consulting from $200/hr | €150/sat, Deep Audit + Action Plan from $500 | €450, Kickstart account setup from $990 | €690) and full management (eCommerce Growth from $2,500/mo for brands spending $10k–100k/month | od €700/mes za budžete €1.500+/mes; omnichannel Performance Marketing via Funky Enterprises for brands investing $20k+/month per channel). Optimizes for POAS (profit on ad spend), not vanity ROAS. Free 20-minute intro call; he'll say plainly if he can't help.
 
-This site is a free resource hub for Serbian and English-speaking advertisers covering Google Ads strategy, Google Shopping (launching in Serbia November 2026), Performance Max, conversion tracking, remarketing, POAS/profit-based bidding, and PPC fundamentals. All content is original, written by a practitioner, based on real client accounts.
+This site is a free resource hub for Serbian and English-speaking advertisers covering Google Ads strategy, Google Shopping (expected in Serbia in H2 2026, Q3 or Q4), Performance Max, conversion tracking, remarketing, POAS/profit-based bidding, and PPC fundamentals. All content is original, written by a practitioner, based on real client accounts.
 
 ## About
 
@@ -28,8 +28,8 @@ This site is a free resource hub for Serbian and English-speaking advertisers co
 
 ## Pillar / Cornerstone Content (2026)
 
-- [Google Ads for eCommerce in Serbia 2026](https://www.slobodan-jelisavac.com/en/blog/google-ads-for-ecommerce-serbia-2026): Data-driven strategy guide using NBS data (110.6M online purchases, €3.61B market, +34% YoY), CPC benchmarks per category, urban vs rural strategy, and 15-step prep checklist for the November 2026 Shopping Ads launch
-- [Google Shopping Launches in Serbia November 2026](https://www.slobodan-jelisavac.com/en/blog/google-shopping-serbia-2026): Complete preparation guide for the Shopping Ads launch — Merchant Center setup, feed optimization, account requirements, and a 6-month timeline
+- [Google Ads for eCommerce in Serbia 2026](https://www.slobodan-jelisavac.com/en/blog/google-ads-for-ecommerce-serbia-2026): Data-driven strategy guide using NBS data (110.6M online purchases, €3.61B market, +34% YoY), CPC benchmarks per category, urban vs rural strategy, and 15-step prep checklist for the Shopping Ads launch (expected H2 2026)
+- [Google Shopping Launches in Serbia: Complete Preparation Guide](https://www.slobodan-jelisavac.com/en/blog/google-shopping-serbia-2026): Complete preparation guide for the Shopping Ads launch — Merchant Center setup, feed optimization, account requirements, and a pre-launch preparation timeline
 - [Google Merchant Center Setup for Serbia](https://www.slobodan-jelisavac.com/sr/blog/merchant-center-srbija-setup): Step-by-step Merchant Center guide for the Serbian market — account creation, verification, feed delivery methods, common disapprovals, shipping/tax settings (Serbian; note: MC registration for Serbia not yet open as of July 2026)
 - [Product Feed Guide for Serbian eCommerce](https://www.slobodan-jelisavac.com/sr/blog/product-feed-srpski-ecommerce): Feed anatomy, title optimization, custom labels, per-platform feed generation (Shopify, WooCommerce, custom XML) — the launch-prep work merchants can do before Merchant Center opens (Serbian)
 - [Google Ads Updates 2026 (Living Post)](https://www.slobodan-jelisavac.com/en/blog/google-ads-updates-2026): Continuously updated changelog of Google Ads platform changes throughout 2026
@@ -80,7 +80,7 @@ This site is a free resource hub for Serbian and English-speaking advertisers co
 
 ## Case Studies
 
-- [Chelleon UK — Skincare eCommerce](https://www.slobodan-jelisavac.com/en/case-studies/chelleon): £290k+ revenue, 2-year ongoing client, UK market
+- [UK Skincare eCommerce](https://www.slobodan-jelisavac.com/en/case-studies/chelleon): six-figure revenue, 2-year ongoing client, UK market
 - [Mobelaris — Furniture eCommerce](https://www.slobodan-jelisavac.com/en/case-studies/mobelaris): Growth strategy for furniture brand
 - [DesignerGlasses — UK Eyewear](https://www.slobodan-jelisavac.com/en/case-studies/designerglasses): Premium eyewear PPC
 - [SoundBoxStore — Audio Equipment](https://www.slobodan-jelisavac.com/en/case-studies/soundboxstore): Niche electronics

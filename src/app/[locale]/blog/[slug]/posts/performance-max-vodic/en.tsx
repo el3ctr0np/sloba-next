@@ -78,7 +78,7 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">&quot;Black box&quot; problem</p>
-        <p className="text-blue-800 text-base mb-0">PMax doesn't give you the level of control and transparency you have with Search or Shopping campaigns. You don't see all search terms, don't know exact budget allocation per network, can't exclude most placements, don't control bidding per keyword. You get aggregated data and must trust the algorithm. My experience is PMax works best for advertisers who trust data over intuition and have patience for learning period.</p>
+        <p className="text-blue-800 text-base mb-0">PMax doesn't give you the level of control and transparency you have with Search or Shopping campaigns. You don't see the complete list of search terms, you don't know the exact budget allocation per network, and there is no bidding per keyword. Control has improved since launch — negative keywords, brand exclusions, and account-level placement exclusions are all self-serve in the UI now, no Google rep required. But you still work with a lot of aggregated data and have to trust the algorithm. My experience is PMax works best for advertisers who trust data over intuition and have patience for learning period.</p>
       </div>
 
       <hr />
@@ -324,9 +324,9 @@ export default function PerformanceMaxGuideEN() {
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Account-level negative keywords</h3>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Negative keywords</h3>
         </div>
-        <p className="text-base text-gray-600 mb-3">PMax only allows account-level negative keywords. Use them aggressively to filter out low-quality queries.</p>
+        <p className="text-base text-gray-600 mb-3">PMax used to allow account-level negative keywords only. You can now also add them at the PMax campaign level, self-serve in the UI. Use them aggressively to filter out low-quality queries.</p>
         <ul className="text-sm">
           <li><strong>Job-related:</strong> &quot;jobs&quot;, &quot;careers&quot;, &quot;salary&quot;, &quot;job listings&quot;</li>
           <li><strong>Student terms:</strong> &quot;essay&quot;, &quot;dissertation&quot;, &quot;coursework&quot;, &quot;assignment&quot;</li>
@@ -608,7 +608,7 @@ export default function PerformanceMaxGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google limits search terms insights for PMax. You only see aggregated categories and top terms, not everything like in Search campaigns. This is legitimate PMax criticism — transparency is lost. Reason is PMax works across multiple networks simultaneously and Google doesn't want to show complete data stream. Solution: use Insights tab and look at trends, not individual terms.
+            PMax does have a search terms report (Insights tab), and it has been expanded over time, but it still doesn&apos;t show everything. Low-volume terms are omitted, the data isn&apos;t split by network, and you get no keyword-level control the way you do in Search campaigns. That remains a fair criticism of PMax — part of the transparency is lost. In practice: use the report to catch obvious mismatches you can block with negative keywords and to track trends, but don&apos;t expect the complete list you get in Search.
           </div>
         </details>
 
@@ -618,7 +618,9 @@ export default function PerformanceMaxGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            It can. PMax has priority for Shopping queries — meaning it will take impressions away from Standard Shopping campaigns for the same products. That&apos;s not necessarily a bad thing if PMax performs better. Monitor account-level totals, not just PMax in isolation. If overall ROAS or conversions are growing, cannibalization isn&apos;t a problem. If they&apos;re falling, reconsider your strategy — you may want to exclude certain products from PMax or adjust your bidding.
+            It depends which period you mean. Until October 2024, PMax had automatic priority over Standard Shopping for the same products, so the cannibalization was structural — Standard Shopping lost impressions no matter how well it was built. Since October 2024, Google resolves the overlapping auction on <GlossaryLink slug="ad-rank">Ad Rank</GlossaryLink> rather than campaign type. Neither type gets automatic priority, so a well-built Standard Shopping campaign genuinely competes instead of being pushed aside.
+            <br /><br />
+            What this means in practice: the overlap still exists and still needs watching, but it is no longer decided in PMax&apos;s favour in advance. Watch the impression share of Standard Shopping campaigns on products that also sit in PMax, and add brand terms as negative keywords in PMax if you don&apos;t want PMax buying your own brand. Monitor account-level totals, not just PMax in isolation. If overall ROAS or conversions are growing, the overlap isn&apos;t a problem. Full breakdown: <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vs-standard-shopping" } }} className="underline">Performance Max vs Standard Shopping</Link>.
           </div>
         </details>
 
@@ -702,7 +704,7 @@ export default function PerformanceMaxGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Common PMax problem. Solutions: disable URL expansion, add negative keywords (through Google support), create stronger Search campaigns for the same keywords. PMax will spend where it&apos;s cheapest, not necessarily most effective.
+            Common PMax problem. Solutions: disable URL expansion, add negative keywords (at campaign or account level, self-serve in the UI), switch on brand exclusions if PMax is buying your own brand, create stronger Search campaigns for the same keywords. PMax will spend where it&apos;s cheapest, not necessarily most effective.
           </div>
         </details>
 
@@ -728,7 +730,7 @@ export default function PerformanceMaxGuideEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: January 2026
+        Last updated: July 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

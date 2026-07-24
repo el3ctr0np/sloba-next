@@ -232,26 +232,26 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
 
       <hr />
 
-      <h2 id="why-2026-is-the-turning-point-google-shopping-arrives-in-november">Why 2026 is the turning point — Google Shopping arrives in November</h2>
+      <h2 id="why-2026-is-the-turning-point-google-shopping-is-coming">Why 2026 is the turning point — Google Shopping is coming to Serbia</h2>
 
       <p>
         This is the piece of information that changes everything for Serbian eCommerce. Google officially
-        confirmed on March 25, 2026 that Google Shopping Ads will launch in Serbia — in November 2026, as
+        confirmed on March 25, 2026 that Google Shopping Ads will launch in Serbia — in the second half of 2026 (Q3 or Q4), as
         part of a Holiday Season wave covering 9 markets (Serbia, Croatia, Bosnia and Herzegovina, Slovenia,
-        Montenegro, Bulgaria, Estonia, Latvia, Lithuania).
+        Montenegro, Bulgaria, Estonia, Latvia, Lithuania). The exact launch date hasn&apos;t been confirmed yet.
       </p>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-semibold text-yellow-900 text-sm mb-1">Why does this matter now, in April?</p>
         <p className="text-yellow-800 text-base mb-0">
           <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink> setup, product feed optimization, and account review can&apos;t be done over
-          a weekend. Brands that start preparing now have a 6–7 month head start over competitors who
-          will start in October. In eCommerce, 6 months is a massive advantage.
+          a weekend. Brands that start preparing now get a significant head start over competitors who
+          will wait until the last minute. In eCommerce, that head start is a massive advantage.
         </p>
       </div>
 
       <p>
-        Until November, the relevant strategy is a combination of Search campaigns and Performance Max.
+        Until launch, the relevant strategy is a combination of Search campaigns and Performance Max.
         PMax is currently the strongest tool for multi-SKU eCommerce stores in Serbia because it uses
         all Google channels (Search, YouTube, Display, Gmail, Maps) from a single campaign.
       </p>
@@ -270,7 +270,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
             href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
             className="underline font-medium"
           >
-            Google Shopping is coming to Serbia in November 2026 — complete preparation guide
+            Google Shopping is coming to Serbia — complete preparation guide
           </Link>
         </li>
         <li>
@@ -357,9 +357,9 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <p>
         This alignment is significant: Ad Mixer&apos;s recommendations on feed quality, early
         preparation, and a mindset shift fully match what I&apos;ve personally seen running Shopping
-        campaigns for UK clients over the past two years. Brands that are ready before November —
+        campaigns for UK clients over the past two years. Brands that are ready before launch —
         with a clean feed, a verified Merchant Center account, and an understanding of Shopping
-        dynamics — will be eight months ahead of the competition.
+        dynamics — will be months ahead of the competition.
       </p>
 
       <hr />
@@ -374,7 +374,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
 
       <p>
         General principle: the Serbian market is 2–3 times cheaper than the UK market on a per-CPC
-        basis. From my experience with Chelleon UK (£290,000+ in revenue from Google Ads), the average
+        basis. From my experience with a UK skincare brand (six-figure revenue from Google Ads), the average
         CPC in the UK for skincare eCommerce is £0.40–£0.80. Equivalent searches in Serbia cost 15–40
         RSD (€0.13–€0.34). This is a huge advantage for Serbian advertisers.
       </p>
@@ -524,9 +524,9 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">Sh</span>
             <div>
-              <h3 className="text-base font-heading font-bold mt-0 mb-1">Shopping (November 2026+)</h3>
+              <h3 className="text-base font-heading font-bold mt-0 mb-1">Shopping (from launch, Q3/Q4 2026)</h3>
               <p className="text-base text-gray-600 mb-2">
-                Becomes the primary strategy for product-first businesses starting November 2026.
+                Becomes the primary strategy for product-first businesses from the moment it launches.
                 A visual format — the user sees the image, price, and store name before they even
                 click. Far higher CTR and conversion than text ads for eCommerce.
               </p>
@@ -772,10 +772,10 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
 
       <hr />
 
-      <h2 id="what-to-expect-in-november-2026-google-shopping-and-what-it-changes">What to expect in November 2026 — Google Shopping and what it changes</h2>
+      <h2 id="what-to-expect-when-google-shopping-launches-and-what-it-changes">What to expect when Google Shopping launches — and what it changes</h2>
 
       <p>
-        The launch of Google Shopping in Serbia in November 2026 isn&apos;t an incremental change —
+        The launch of Google Shopping in Serbia (expected in the second half of 2026, Q3 or Q4) isn&apos;t an incremental change —
         it&apos;s a structural shift in the market. Look at what happened in markets where Shopping
         has been present longer: in the UK, Shopping campaigns generate 76% of all clicks for
         eCommerce advertisers. In Germany, the number is similar.
@@ -789,7 +789,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       </p>
 
       <div className="bg-green-50 border border-green-200 rounded-xl p-5 my-6">
-        <p className="text-sm font-bold text-green-900 mb-3">Window of opportunity: April — October 2026</p>
+        <p className="text-sm font-bold text-green-900 mb-3">Window of opportunity: now, ahead of launch</p>
         <p className="text-base text-green-800 mb-2">
           Brands that start preparing now get an exclusive advantage:
         </p>
@@ -802,7 +802,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       </div>
 
       <p>
-        Brands that start in October or November are launching with zero experience during the most
+        Brands that wait until launch to get started are launching with zero experience during the most
         competitive period of the year — the Holiday season. That&apos;s a recipe for high costs and
         poor results.
       </p>
@@ -900,7 +900,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
           },
           {
             num: 15,
-            title: "Post-launch strategy for November 2026",
+            title: "Post-launch strategy for Shopping",
             desc: "Define your goal: ROAS target, Shopping launch budget, KPIs for the first week, and the first month."
           }
         ].map((item) => (
@@ -916,11 +916,11 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
 
       <hr />
 
-      <h2 id="conclusion-where-you-are-now-where-you-need-to-be-by-november">Conclusion — where you are now, where you need to be by November</h2>
+      <h2 id="conclusion-where-you-are-now-where-you-need-to-be-by-launch">Conclusion — where you are now, where you need to be by launch</h2>
 
       <p>
         Serbia in 2026 isn&apos;t the same as Serbia in 2020. The market has grown, shoppers are
-        more sophisticated, and come November, Google Shopping arrives — a format that dominates
+        more sophisticated, and soon (expected Q3 or Q4 2026), Google Shopping arrives — a format that dominates
         eCommerce advertising in mature markets with 70–80% of clicks.
       </p>
 
@@ -933,14 +933,14 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
 
       <p>
         If you want to see what a Google Ads eCommerce strategy that works in practice looks like,
-        check out the case study from Chelleon UK — a skincare eCommerce brand that generated
-        £290,000+ in revenue through Google Ads:
+        check out the case study from a UK skincare eCommerce brand that generated
+        six-figure revenue through Google Ads:
       </p>
 
       <ul>
         <li>
           <a href="/en/case-studies/chelleon" className="underline font-medium">
-            Chelleon UK Case Study — Google Ads eCommerce (Skincare, UK market)
+            Case Study — Google Ads eCommerce (Skincare, UK market)
           </a>
         </li>
       </ul>
@@ -973,7 +973,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google officially confirmed on March 25, 2026 that it will launch in <strong>November 2026</strong> as part of a Holiday Season wave (Serbia, Croatia, Bosnia and Herzegovina, Slovenia, Montenegro + Baltics + Bulgaria). Preparation needs to start now — Merchant Center verification takes 1–4 weeks, feed optimization 2–4 weeks. Brands that start in October/November launch with zero experience during the most competitive period of the year.
+            Google officially confirmed on March 25, 2026 that it will launch in Serbia, as part of a Holiday Season wave (Serbia, Croatia, Bosnia and Herzegovina, Slovenia, Montenegro + Baltics + Bulgaria). Launch is expected in <strong>the second half of 2026 (Q3 or Q4)</strong> — the exact date hasn't been confirmed yet. Preparation needs to start now — Merchant Center verification takes 1–4 weeks, feed optimization 2–4 weeks. Brands that wait until launch to get started will be starting with zero experience during the most competitive period of the year.
           </div>
         </details>
 
@@ -1067,7 +1067,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
             href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
             className="underline"
           >
-            Google Shopping launch in Serbia, November 2026 — internal guide
+            Google Shopping launch in Serbia — internal guide
           </Link>
         </li>
         <li>
