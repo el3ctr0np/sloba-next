@@ -6,6 +6,16 @@ import { Button } from "@/components/ui";
 
 const FORM_NAME = "contact_form";
 
+// Mapiraj budžet bucket iz forme u kvalifikacioni tier koji GTM prosleđuje
+// u GA4 (dimenzija lead_tier). high/mid = spreman za veći angažman, low =
+// mali budžet, unknown = neodlučen. Koristi se za conversion value + bidding.
+function budgetToTier(budget: string): "high" | "mid" | "low" | "unknown" {
+  if (budget === "5000+" || budget === "1500-5000") return "high";
+  if (budget === "500-1500") return "mid";
+  if (budget === "<500") return "low";
+  return "unknown";
+}
+
 type DataLayerWindow = Window & {
   dataLayer?: Array<Record<string, unknown>>;
 };
@@ -32,13 +42,16 @@ export function ContactForm() {
   const handleSubmit = () => {
     // Fires synchronously before the native form submit navigates away to
     // formsubmit.co — do NOT preventDefault, this is a native POST + _next redirect.
+    const lead_tier = budgetToTier(budget);
     pushDataLayer("lead_submit", {
       form_name: FORM_NAME,
       budget,
+      lead_tier,
     });
     try {
       sessionStorage.setItem("dj_lead_form", FORM_NAME);
       sessionStorage.setItem("dj_lead_budget", budget || "unknown");
+      sessionStorage.setItem("dj_lead_tier", lead_tier);
       sessionStorage.setItem("dj_lead_pending", "1");
     } catch {
       // Ignore sessionStorage errors (private mode etc.)

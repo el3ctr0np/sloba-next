@@ -87,7 +87,7 @@ const getCallBenefits = (locale: string) => {
     {
       title: "Tačna procena za vaš biznis",
       description:
-        "Umesto generičnih saveta, analiziramo vašu konkretnu situaciju — industriju, budžet i ciljeve."
+        "Umesto generičnih saveta, analiziramo vašu konkretnu situaciju - industriju, budžet i ciljeve."
     },
     {
       title: "Konkretne preporuke odmah",
@@ -160,7 +160,7 @@ const getFaqs = (locale: string) => {
     {
       question: "Da li ću biti pod pritiskom da kupim nešto?",
       answer:
-        "Ne. Ovo je razgovor, ne prodajni poziv. Mnogi klijenti koriste konsultaciju samo za second opinion — i to je potpuno u redu."
+        "Ne. Ovo je razgovor, ne prodajni poziv. Mnogi klijenti koriste konsultaciju samo za second opinion - i to je potpuno u redu."
     },
     {
       question: "Šta ako još nisam spreman za saradnju?",
@@ -245,7 +245,7 @@ export default async function ThankYouPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
               {locale === "en"
                 ? "Thanks — Your Message Is In"
-                : "Hvala — vaša poruka je stigla"}
+                : "Hvala - vaša poruka je stigla"}
             </h1>
 
             <p className="text-lg text-slate-300 mb-8">
@@ -350,12 +350,12 @@ export default async function ThankYouPage({ params }: Props) {
                 <p className="text-yellow-600 font-semibold text-sm mb-3">
                   {locale === "en"
                     ? "Google Ads Consultant — 10+ years of experience"
-                    : "Google Ads Konsultant — 10+ godina iskustva"}
+                    : "Google Ads Konsultant - 10+ godina iskustva"}
                 </p>
                 <p className="text-gray-600">
                   {locale === "en"
                     ? "You'll speak directly with me — not an account manager or junior employee. The same person who analyzes your campaigns is the one who optimizes them. UK Search Awards winner, 50+ brands across 6+ countries."
-                    : "Razgovaraćete direktno sa mnom — ne sa account managerom ili junior zaposlenim. Isti čovek koji analizira vaše kampanje je i onaj koji ih optimizuje. UK Search Awards winner, 50+ brendova u 6+ zemalja."}
+                    : "Razgovaraćete direktno sa mnom - ne sa account managerom ili junior zaposlenim. Isti čovek koji analizira vaše kampanje je i onaj koji ih optimizuje. UK Search Awards winner, 50+ brendova u 6+ zemalja."}
                 </p>
               </div>
             </div>
