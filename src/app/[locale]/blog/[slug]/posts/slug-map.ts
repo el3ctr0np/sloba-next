@@ -37,6 +37,7 @@ export const slugMap: Record<string, string> = {
   "sta-je-roas": "what-is-roas",
   "merchant-center-srbija-setup": "merchant-center-serbia-setup",
   "product-feed-srpski-ecommerce": "product-feed-serbian-ecommerce",
+  "google-shopping-vs-search-kampanje": "google-shopping-vs-search-campaigns",
 };
 
 // Reverse map: EN slug → SR (canonical) slug

@@ -62,6 +62,8 @@ import PreuzimanjeGoogleAdsNalogaSR from "./preuzimanje-google-ads-naloga/sr";
 import GoogleAdsAccountTakeoverChecklistEN from "./preuzimanje-google-ads-naloga/en";
 import OfflineConversionImportB2BSR from "./offline-conversion-import-b2b/sr";
 import OfflineConversionImportB2BEN from "./offline-conversion-import-b2b/en";
+import GoogleShoppingVsSearchKampanjeSR from "./google-shopping-vs-search-kampanje/sr";
+import GoogleShoppingVsSearchCampaignsEN from "./google-shopping-vs-search-kampanje/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -95,6 +97,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "google-shopping-vs-search-kampanje",
+    title: "Google Shopping vs Search: Koju Kampanju za eCommerce [2026]",
+    date: "2026-07-19",
+    dateModified: "2026-07-19",
+    category: "Google Shopping",
+    metaDescription:
+      "Google Shopping vs Search kampanje za eCommerce: kada koju biraš, zašto Shopping ima niži CPC, kada Search pobeđuje i zašto najjači nalozi u 2026. voze oba. Budžet split, PMax pragovi i Srbija launch (novembar 2026).",
+    readingTime: "~14 min",
+    content: <GoogleShoppingVsSearchKampanjeSR />
+  },
   {
     slug: "google-api-pristupi-za-agencije",
     title: "Google API Pristupi za PPC Agencije — Kompletan Setup Vodič [2026]",
@@ -542,6 +555,17 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "google-shopping-vs-search-campaigns",
+    title: "Google Shopping vs Search: Which to Pick for eCommerce [2026]",
+    date: "2026-07-19",
+    dateModified: "2026-07-19",
+    category: "Google Shopping",
+    metaDescription:
+      "Google Shopping vs Search campaigns for eCommerce: when to pick each, why Shopping has a lower CPC, when Search wins, and why the strongest accounts in 2026 run both. Budget split, PMax thresholds, and the Serbia launch.",
+    readingTime: "~14 min",
+    content: <GoogleShoppingVsSearchCampaignsEN />
+  },
   {
     slug: "google-api-access-guide-for-agencies",
     title: "Google API Access for PPC Agencies: Complete Setup Guide [2026]",

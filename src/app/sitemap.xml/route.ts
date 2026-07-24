@@ -16,7 +16,6 @@ for (const [canonical, localized] of Object.entries(routing.pathnames)) {
 const routeLastmod: Record<string, string> = {
   "": "2026-04-17",
   "/o-meni": "2026-02-10",
-  "/metodologija": "2026-07-09",
   "/kontakt": "2026-01-26",
   "/kontakt/hvala": "2026-01-26",
   "/usluge": "2026-02-10",
@@ -104,7 +103,7 @@ function toEnRoute(route: string): string {
 const priorityForRoute = (route: string) => {
   if (route === "") return "1.0";
   // Pillar / news posts get higher priority
-  if (route.includes("google-shopping-srbija-2026") || route.includes("google-ads-za-ecommerce-srbija-2026")) return "0.9";
+  if (route.includes("google-shopping-srbija-2026") || route.includes("google-ads-za-ecommerce-srbija-2026") || route.includes("google-shopping-vs-search")) return "0.9";
   const segments = route.split("/").filter(Boolean);
   if (segments.length === 1) return "0.8";
   if (segments.length === 2) return "0.7";
