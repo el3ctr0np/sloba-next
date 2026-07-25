@@ -446,7 +446,7 @@ export default function RsaVodicPost() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center font-heading font-bold text-sm">6</span>
             <div>
-              <strong>Dodajte extensions</strong>
+              <strong>Dodajte assets (ranije extensions)</strong>
               <span className="text-gray-500"> — Minimum: Sitelinks (4+), Callouts (4+), Structured Snippets (2+ headera),
               Business Name, Logo. Opciono: Image, Call, Location, Promotion.</span>
             </div>
@@ -932,7 +932,7 @@ export default function RsaVodicPost() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-md transition-all no-underline">
           <p className="font-heading font-semibold text-sm text-gray-900 mb-1">Quality Score vodič</p>
-          <p className="text-xs text-gray-500 mb-0">Kako poboljšati QS i smanjiti CPC za 28%+</p>
+          <p className="text-xs text-gray-500 mb-0">Kako poboljšati QS i sniziti cenu klika</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-md transition-all no-underline">
           <p className="font-heading font-semibold text-sm text-gray-900 mb-1">Ključne reči vodič</p>

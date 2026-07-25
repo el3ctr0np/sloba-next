@@ -6,7 +6,7 @@ export default function AgencyVsFreelancerEN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          You've decided to use Google Ads. Great. Now comes the question: who will manage your campaigns? Three models exist, pricing ranges from $200-2,000+/£150-1,500+, and 67% of marketing managers change partners within the first year. The key isn't price — the key is fit.
+          You've decided to use Google Ads. Great. Now comes the question: who will manage your campaigns? Three models exist, pricing ranges from $300-3,000+/£250-2,400+, and 67% of marketing managers change partners within the first year. The key isn't price — the key is fit.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -14,7 +14,7 @@ export default function AgencyVsFreelancerEN() {
             <p className="text-xs text-slate-400 mt-1 mb-0">Management models</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">$200-2K+</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">$300-3K+</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">Monthly cost range</p>
           </div>
           <div className="text-center">
@@ -102,7 +102,7 @@ export default function AgencyVsFreelancerEN() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">In-house team</h3>
           <p className="text-base text-gray-600 mb-3">Employed PPC specialist in your company. Full control, deep business understanding, instant communication.</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Monthly cost:</strong></p>
-          <p className="text-sm mb-3">$2,000-5,000+ / £1,500-4,000+ (salary + tools)</p>
+          <p className="text-sm mb-3">$3,000-8,000+ / £2,500-6,500+ (salary + tools)</p>
           <p className="text-xs text-gray-500 mb-1"><strong>For whom:</strong></p>
           <p className="text-base mb-0">Companies with $15,000+/£12,000+ monthly budget, marketing as core function, long-term vision.</p>
         </div>
@@ -402,7 +402,7 @@ export default function AgencyVsFreelancerEN() {
         </div>
         <p className="text-base text-gray-600 mb-3">For large budgets ($20,000+/£16,000+), in-house becomes more cost-effective than agency after 12-18 months.</p>
         <ul className="text-base">
-          <li>$3,000-5,000/£2,500-4,000 salary vs $2,500+/£2,000+ agency retainer for same spend</li>
+          <li>$3,000-5,000/£2,500-4,000 salary vs $4,000-6,000/£3,200-4,800 agency retainer at that spend level</li>
           <li>No markup on tools and software (you pay directly)</li>
           <li>Knowledge stays in company as budget grows</li>
           <li>Option to expand team as spend grows</li>
@@ -620,7 +620,7 @@ export default function AgencyVsFreelancerEN() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Enterprise company</h3>
           <p className="text-base text-gray-600 mb-3">Marketing is core function, long-term strategy critical.</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">I recommend:</p>
-          <p className="text-base mb-3">In-house team ($4,000-8,000+/£3,000-6,500+/mo) + quarterly consultant review or full-service agency</p>
+          <p className="text-base mb-3">In-house team ($3,000-8,000+/£2,500-6,500+/mo) + quarterly consultant review or full-service agency</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Why:</p>
           <ul className="text-base">
             <li>Full control over strategy and data</li>
@@ -632,7 +632,7 @@ export default function AgencyVsFreelancerEN() {
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
-          Most companies in the US/UK with budgets $3,000-15,000/£2,400-12,000 monthly get the best value from a freelancer or small specialized agency. Larger agencies make sense only when you exceed $10,000/£8,000 spend and need multi-channel coverage.
+          Most companies in the US/UK with budgets $3,000-15,000/£2,400-12,000 monthly get the best value from a freelancer or small specialized agency. An agency makes sense from $5,000/£4,000 ad spend, and larger agencies with a full team only once you exceed $10,000/£8,000 spend and need multi-channel coverage.
         </p>
       </div>
 
@@ -796,7 +796,7 @@ export default function AgencyVsFreelancerEN() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Google Ads agency prices in US/UK range from $400-500/£320-400 for smaller agencies to $1,500-3,000+/£1,200-2,500+ for larger, established agencies. Percentage of ad spend model is usually 10-20% (typically 12-15%). Freelancers charge $300-1,500/£250-1,200 monthly depending on scope. I recommend getting at least 2-3 quotes and comparing not just price, but scope of work and communication style.
+          Google Ads agency prices in US/UK run $500-3,000/£400-2,400 monthly for mid-range agencies and $3,000-10,000+/£2,400-8,000+ for enterprise-level ones. Percentage of ad spend model is usually 10-20% (typically 12-15%). Freelancers charge $300-1,500/£250-1,200 monthly depending on scope. I recommend getting at least 2-3 quotes and comparing not just price, but scope of work and communication style.
         </div>
       </details>
 
@@ -899,7 +899,7 @@ export default function AgencyVsFreelancerEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            In the US/UK: $500-2,000+/month for mid-range agencies, $3,000-10,000+ for enterprise. Most work on a fixed retainer or percentage of ad spend (10-20%). Some charge setup fees of $500-2,000.
+            In the US/UK: $500-3,000/month for mid-range agencies, $3,000-10,000+ for enterprise. Most work on a fixed retainer or percentage of ad spend (10-20%). Some charge setup fees of $500-2,000.
           </div>
         </details>
 

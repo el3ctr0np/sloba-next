@@ -52,7 +52,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
           <li><a href="#kategorija-2" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 2: Conversion Tracking (5 stavki)</a></li>
           <li><a href="#kategorija-3" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 3: Campaign Settings (5 stavki)</a></li>
           <li><a href="#kategorija-4" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 4: Keywords &amp; Search Terms (5 stavki)</a></li>
-          <li><a href="#kategorija-5" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 5: Ads &amp; Extensions (5 stavki)</a></li>
+          <li><a href="#kategorija-5" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 5: Oglasi i assets (5 stavki)</a></li>
           <li><a href="#kategorija-6" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 6: Audiences &amp; Remarketing (5 stavki)</a></li>
           <li><a href="#kategorija-7" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 7: Bidding Strategy (5 stavki)</a></li>
           <li><a href="#kategorija-8" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 8: Budget &amp; Allocation (5 stavki)</a></li>
@@ -128,7 +128,7 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">5</td>
-              <td className="py-3 px-3 font-medium">Ads &amp; Extensions</td>
+              <td className="py-3 px-3 font-medium">Oglasi i assets</td>
               <td className="py-3 px-3 text-gray-600">RSA quality, sitelinks, callouts</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
@@ -446,9 +446,9 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
       <hr />
 
       {/* ── Kategorija 5 ── */}
-      <h2 id="kategorija-5">Kategorija 5: Ads &amp; Extensions (5 stavki)</h2>
+      <h2 id="kategorija-5">Kategorija 5: Oglasi i assets (ranije extensions) (5 stavki)</h2>
       <p>
-        Oglasi su ono što potencijalni kupci zapravo vide — ali u praksi vidim da preko 50% naloga ima &ldquo;Poor&rdquo; Ad Strength i minimalan broj ekstenzija. To je propuštena prilika: bolji oglasi = viši CTR = niži CPC + više konverzija.
+        Oglasi su ono što potencijalni kupci zapravo vide — ali u praksi vidim da preko 50% naloga ima &ldquo;Poor&rdquo; Ad Strength i minimalan broj asseta. To je propuštena prilika: bolji oglasi = viši CTR = niži CPC + više konverzija.
       </p>
 
       <h3>5.1 — RSA quality</h3>
@@ -487,21 +487,21 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
       <ul>
         <li>Min <strong>8 callouts</strong> (Google koristi 4–6, ostalo testira)</li>
         <li>Structured Snippets — koja kategorija odabrana? (&ldquo;Brands&rdquo;, &ldquo;Services&rdquo;, &ldquo;Types&rdquo;)</li>
-        <li>Promotion extension — aktivna ako imaš sezonsku akciju?</li>
+        <li>Promotion asset (ranije promotion extension) - aktivan ako imaš sezonsku akciju?</li>
       </ul>
 
-      <h3>5.5 — Image extensions + Logo extensions</h3>
+      <h3>5.5 — Image assets + logo asset</h3>
       <p><strong>Šta proveriti:</strong></p>
       <ul>
-        <li>Image extensions setup-ovane?</li>
-        <li>Logo extension (ako imaš verifikovan brand)?</li>
+        <li>Image assets setup-ovani?</li>
+        <li>Logo asset (ako imaš verifikovan brand)?</li>
         <li>Slike: high-quality, square ratio 1:1 + landscape 1.91:1</li>
       </ul>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz prakse</p>
         <p className="text-blue-800 text-base mb-0">
-          Klijent koji je dodao Image extensions video je CTR boost +12% na Search kampanji za 14 dana. Minimalan setup napor, konkretan rezultat.
+          Klijent koji je dodao image assets video je CTR boost +12% na Search kampanji za 14 dana. Minimalan setup napor, konkretan rezultat.
         </p>
       </div>
 
@@ -700,9 +700,9 @@ export default function GoogleAdsAuditChecklistSrbijaPost() {
       <h3>9.2 — Attribution model</h3>
       <p><strong>Šta proveriti:</strong></p>
       <ul>
-        <li>Trenutni model: Last Click? Data-Driven? Position-Based?</li>
-        <li>2026: <strong>Data-Driven</strong> je default i obično najbolji</li>
-        <li>Da li si testirao različite modele i video razliku?</li>
+        <li>Trenutni model: Last Click ili Data-Driven? To su jedina dva modela koja Google Ads danas nudi, ostale (first-click, linear, time-decay, position-based) Google je ugasio 2023.</li>
+        <li>2026: <strong>Data-Driven</strong> je default i za duže cikluse jedina realna alternativa last-click modelu</li>
+        <li>Da li si uporedio Last Click i Data-Driven na istom periodu i video razliku?</li>
       </ul>
 
       <h3>9.3 — UTM parametri</h3>

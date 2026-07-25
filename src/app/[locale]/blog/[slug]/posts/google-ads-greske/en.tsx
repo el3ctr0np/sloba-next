@@ -305,19 +305,19 @@ export default function GoogleAdsMistakesEN() {
           Mistake
         </p>
         <p className="font-semibold mb-2">
-          Missing ad extensions — text ad without extensions takes
+          Missing assets (formerly extensions) — a text ad without them takes
           minimal space
         </p>
         <p className="text-base text-gray-600 mb-3">
           Smaller visual footprint means lower CTR. Ad Rank drops. You pay more
-          per click. Extensions are free and significantly improve performance.
+          per click. Assets are free and significantly improve performance.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of empty ads, add minimum:
             4-6 sitelinks, 4+ callouts, structured snippets (brands,
-            categories, services), call extension if you have phone, location
-            extension if you have physical store.
+            categories, services), a call asset if you have a phone, a location
+            asset if you have a physical store.
           </p>
         </div>
       </div>
@@ -390,10 +390,12 @@ export default function GoogleAdsMistakesEN() {
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
-            <strong>Solution:</strong> Instead of Last Click for everything, use
-            Data-Driven attribution if you have enough data (400+ conversions
-            monthly). For shorter cycle (eCommerce), Last Click is OK. For longer
-            (B2B), Position-Based or Data-Driven gives more realistic picture.
+            <strong>Solution:</strong> Google Ads today offers only two models,
+            Last Click and Data-Driven. Position-based, linear and time-decay were
+            retired in 2023 and can no longer be selected. For a shorter cycle
+            (eCommerce), Last Click is fine. For a longer one (B2B), Data-Driven is
+            the only realistic alternative, since it spreads credit across the whole
+            path to conversion — provided you have enough data.
           </p>
         </div>
       </div>
@@ -489,7 +491,7 @@ export default function GoogleAdsMistakesEN() {
           Higher CTR means lower CPC and better Ad Rank.
         </p>
         <ul className="text-base">
-          <li>Add all relevant ad extensions</li>
+          <li>Add all relevant assets</li>
           <li>Create 2-3 ads per ad group for testing</li>
           <li>Add specific numbers and unique benefits to copy</li>
           <li>Test <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> improvements</li>

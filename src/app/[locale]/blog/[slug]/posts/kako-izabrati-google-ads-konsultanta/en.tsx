@@ -26,10 +26,10 @@ export default function HowToChooseGoogleAdsConsultantPost() {
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">
-              67%
+              Year 1
             </p>
             <p className="text-xs text-slate-400 mt-1 mb-0">
-              switch partners in year 1
+              when most switches happen, in my experience
             </p>
           </div>
           <div className="text-center">

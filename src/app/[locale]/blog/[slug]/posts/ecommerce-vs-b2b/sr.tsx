@@ -164,7 +164,7 @@ export default function EcommerceVsB2BPost() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
         <p className="text-yellow-800 text-base mb-0">
-          Ignorisanje ovih razlika vodi ka primeni pogrešne strategije. <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">Shopping kampanje</a> ne postoje za B2B. Lead-gen tracking ne daje ROAS za eCommerce. Prilagodite pristup modelu.
+          Ignorisanje ovih razlika vodi ka primeni pogrešne strategije. <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">Shopping</a> je retko relevantan za klasičan B2B lead-gen (nema katalog proizvoda), ali B2B distributeri i webshopovi sa online katalogom ga koriste. Lead-gen tracking ne daje ROAS za eCommerce. Prilagodite pristup modelu.
         </p>
       </div>
 
@@ -285,7 +285,7 @@ export default function EcommerceVsB2BPost() {
           </h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          97% posetilaca ne kupi prvi put. Remarketing je obavezan za konverziju &quot;gotovo kupljenih&quot; transakcija.
+          Velika većina posetilaca ne kupi pri prvoj poseti. Remarketing je obavezan za konverziju &quot;gotovo kupljenih&quot; transakcija.
         </p>
         <ul className="text-sm">
           <li>
@@ -398,7 +398,7 @@ export default function EcommerceVsB2BPost() {
           </h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Za B2B, Search je dominantan kanal. Shopping ne postoji, Display ima ograničen impact. Pokrijte ceo funnel, ali najveći budžet na high-intent.
+          Za B2B, Search je dominantan kanal. Shopping je retko relevantan za klasičan lead-gen (nema katalog proizvoda), mada ga B2B distributeri i webshopovi sa online katalogom koriste. Display ima ograničen impact. Pokrijte ceo funnel, ali najveći budžet na high-intent.
         </p>
         <ul className="text-sm">
           <li>
@@ -735,7 +735,7 @@ export default function EcommerceVsB2BPost() {
           </span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Više nego što mislite zbog višeg CPC-a (€2-10+) i nižeg volumena. Minimum €1,500-2,000 mesečno za smisleno testiranje. Preporučujem €3,000-5,000 za stabilne rezultate. Formula: 3x CPC × 30 konverzija = minimalni budžet (npr. €5 CPC &rarr; €450, ali to je minimum za 1 kampanju). Za 3-4 kampanje (Brand, Non-Brand, Remarketing) + testirajuće budžete, računajte €2,000-3,000.
+          Više nego što mislite zbog višeg CPC-a (€2-10+) i nižeg volumena. Minimum €1.500-2.500 mesečno za smisleno testiranje. Preporučujem €3.000-5.000 za stabilne rezultate. Formula: 3x CPC × 30 konverzija = minimalni budžet (npr. €5 CPC &rarr; €450, ali to je minimum za 1 kampanju). Za 3-4 kampanje (Brand, Non-Brand, Remarketing) + testirajuće budžete, računajte €3.000-5.000.
         </div>
       </details>
 
@@ -871,7 +871,7 @@ export default function EcommerceVsB2BPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            eCommerce starteri: €500-1.000/mesečno za testiranje, €2.000+ za ozbiljne rezultate (zavisi od CPC i margina). B2B: €300-800/mesečno za niche targeting, ali CPL može biti €50-500+ zavisno od industrije. Važniji od budžeta je ROI — B2B deal vredan €10.000 opravdava visok CPL.
+            eCommerce starteri: €500-1.000/mesečno za testiranje, €2.000+ za ozbiljne rezultate (zavisi od CPC i margina). B2B: €1.500-2.500/mesečno za smisleno testiranje, a CPL može biti €50-500+ zavisno od industrije. Važniji od budžeta je ROI - B2B deal vredan €10.000 opravdava visok CPL.
           </div>
         </details>
       </div>

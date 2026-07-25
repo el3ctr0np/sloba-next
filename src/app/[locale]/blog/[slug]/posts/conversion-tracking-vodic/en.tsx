@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function ConversionTrackingGuideEN() {
   return (
@@ -28,6 +29,19 @@ export default function ConversionTrackingGuideEN() {
         </div>
       </div>
 
+      {/* ── Featured-snippet definition block ── */}
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
+          Quick answer
+        </p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What is conversion tracking?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong><GlossaryLink slug="conversion">Conversion tracking</GlossaryLink></strong> is a monitoring system that records what a user does after clicking an ad — a purchase, call, or completed form. It&apos;s set up through <strong><GlossaryLink slug="gtm">GTM</GlossaryLink>, <GlossaryLink slug="ga4">GA4</GlossaryLink>, and Google Ads tags</strong> and forms the foundation Smart Bidding algorithms use to optimize campaigns. Without accurate tracking, around 40% of accounts optimize toward the wrong signals and burn budget blind.
+        </p>
+      </div>
+
       <p>
         Every week I see the same situation. A company spends $2,000-5,000/£1,600-4,000 monthly on Google Ads. Campaigns are active, clicks are coming in, but results are either missing or unreliable. When I check the account, the problem is almost always the same — conversion tracking isn't working properly.
       </p>
@@ -35,7 +49,7 @@ export default function ConversionTrackingGuideEN() {
         In my experience, poor tracking is the silent killer of Google Ads performance. Without reliable conversion data, you don't know what's working, algorithms optimize toward wrong signals, and you make decisions based on false data.
       </p>
       <p>
-        In this guide, I cover everything you need to set up precise conversion tracking, from basic GTM setup to advanced techniques like Enhanced Conversions and server-side tracking. You'll also learn how to discover and fix the most common mistakes that cost your budget.
+        In this guide, I cover everything you need to set up precise conversion tracking: basic GTM setup, Consent Mode v2 for EEA and UK traffic, Google Ads conversion actions, and Enhanced Conversions. You'll also learn how to discover and fix the most common mistakes that cost your budget.
       </p>
 
       <hr />
@@ -46,6 +60,7 @@ export default function ConversionTrackingGuideEN() {
           <li><a href="#why-conversion-tracking-is-the-foundation-of-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why conversion tracking is the foundation of Google Ads</a></li>
           <li><a href="#types-of-conversions-to-track" className="block py-1 text-base text-gray-700 hover:text-primary underline">Types of conversions to track</a></li>
           <li><a href="#tools-for-conversion-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tools for conversion tracking</a></li>
+          <li><a href="#consent-mode-v2" className="block py-1 text-base text-gray-700 hover:text-primary underline">Consent Mode v2: mandatory before any tag (EEA/UK)</a></li>
           <li><a href="#step-by-step-setting-up-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step by step — setting up tracking</a></li>
           <li><a href="#conversion-tracking-for-ecommerce" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conversion tracking for eCommerce</a></li>
           <li><a href="#conversion-tracking-for-lead-generation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conversion tracking for Lead Generation</a></li>
@@ -206,10 +221,104 @@ export default function ConversionTrackingGuideEN() {
 
       <hr />
 
+      <h2 id="consent-mode-v2">Consent Mode v2: mandatory before any tag (EEA/UK)</h2>
+      <p>
+        This is the step most setups skip, and without it the rest of the build doesn&apos;t work the way you think it does. Since March 2024, Google requires Consent Mode v2 for all EEA and UK traffic. If you advertise in those markets and consent signals never arrive, Google Ads loses conversion modeling, remarketing lists stop filling, and Enhanced Conversions simply don&apos;t run because they have no permission to send user data.
+      </p>
+      <p>
+        Consent Mode is the layer that tells Google&apos;s tags what the user did and did not allow. The tag still executes, but behaves differently depending on consent state. Your CMP (consent management platform) sets the signals; the tags read them.
+      </p>
+
+      <h3>The four signals you must send</h3>
+      <div className="overflow-x-auto my-6">
+        <table className="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr className="border-b-2 border-gray-900 bg-gray-50">
+              <th className="py-3 px-3 font-heading font-semibold">Signal</th>
+              <th className="py-3 px-3 font-heading font-semibold">What it controls</th>
+              <th className="py-3 px-3 font-heading font-semibold">What breaks when denied</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-gray-200">
+              <td className="py-3 px-3 font-mono text-xs">ad_storage</td>
+              <td className="py-3 px-3">Advertising cookies (click data, conversion cookie)</td>
+              <td className="py-3 px-3">The click can&apos;t be tied to the conversion, only a modeled estimate remains</td>
+            </tr>
+            <tr className="border-b border-gray-200 bg-gray-50/50">
+              <td className="py-3 px-3 font-mono text-xs">ad_user_data</td>
+              <td className="py-3 px-3">Sending user data to Google for advertising purposes</td>
+              <td className="py-3 px-3">Enhanced Conversions stop working, no hashed email or phone is sent</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="py-3 px-3 font-mono text-xs">ad_personalization</td>
+              <td className="py-3 px-3">Personalized advertising and remarketing audiences</td>
+              <td className="py-3 px-3">The user never enters remarketing lists</td>
+            </tr>
+            <tr className="border-b border-gray-200 bg-gray-50/50">
+              <td className="py-3 px-3 font-mono text-xs">analytics_storage</td>
+              <td className="py-3 px-3">GA4 cookies and measurement</td>
+              <td className="py-3 px-3">GA4 sets no identifier, sessions don&apos;t stitch together</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Basic vs Advanced consent mode</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Basic</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Tags don&apos;t load before consent</h3>
+          <p className="text-base text-gray-600 mb-0">
+            Google tags are blocked until the user accepts. If they decline, Google receives nothing at all, so there is no basis for modeling. Easier to defend legally, but you lose most of the data on users who declined.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Advanced</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Tags load, but in restricted mode</h3>
+          <p className="text-base text-gray-600 mb-0">
+            Tags load immediately and, before consent, send only cookieless pings with no identifiers. Google uses those signals to model conversions from users who declined. The practical difference: Advanced recovers part of the lost conversions through modeling, Basic doesn&apos;t.
+          </p>
+        </div>
+      </div>
+      <p>
+        For most advertisers I work with, Advanced makes more sense, provided the CMP is configured correctly and legal signs off. That choice is a business and legal decision, not a technical one.
+      </p>
+
+      <h3>The order is the whole trick</h3>
+      <p>
+        The CMP and the consent default must execute before any conversion or analytics tag. In GTM that means: CMP template on the Consent Initialization - All Pages trigger, default state denied for EEA and UK, and only then the update based on the user&apos;s choice. Conversion Linker, the GA4 tag, and the Google Ads Conversion tag all come after that. If a conversion tag fires before a consent state exists, the tag runs in the wrong mode and the data point is gone.
+      </p>
+
+      <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-red-900 mb-1">What you actually lose by skipping it</p>
+        <ul className="text-red-800 text-base mb-0">
+          <li>Conversion modeling switches off, so reports show only a fraction of real conversions</li>
+          <li>Remarketing lists stop filling and audiences drop below serving minimums</li>
+          <li>Enhanced Conversions don&apos;t work on EEA traffic because <code>ad_user_data</code> isn&apos;t granted</li>
+          <li>Smart Bidding learns from a truncated dataset, so bids are worse than they should be</li>
+        </ul>
+      </div>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Note for non-EEA markets (e.g. Serbia)</p>
+        <p className="text-blue-800 text-base mb-0">
+          Serbia is not in the EEA, so Google&apos;s Consent Mode v2 requirement doesn&apos;t hit an account that targets the domestic market only. But the moment you have visitors from the EU or UK, the rule applies in full for that share of traffic. If you run any cross-border traffic, set up Consent Mode now rather than later. Independently of Google, local data protection law still expects a proper cookie consent flow.
+        </p>
+      </div>
+
+      <hr />
+
       <h2 id="step-by-step-setting-up-tracking">Step by step — setting up tracking</h2>
       <p>
         This is the process I use for all clients. GTM + GA4 + Google Ads tag + Enhanced Conversions = complete setup that delivers maximum accuracy.
       </p>
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Before steps 2-6</p>
+        <p className="text-yellow-800 text-base mb-0">
+          If you have EEA or UK traffic, the CMP and consent default (Consent Mode v2) go in right after step 1, before every tag that records conversions. Details in the section above.
+        </p>
+      </div>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-3">
@@ -228,13 +337,13 @@ export default function ConversionTrackingGuideEN() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div>
-              <strong>Connect GA4 property</strong> <span className="text-gray-500">— Create GA4 property and install GA4 tag via GTM or directly. Mark key events (purchase, generate_lead) as conversions.</span>
+              <strong>Connect GA4 property</strong> <span className="text-gray-500">— Create GA4 property and install GA4 tag via GTM or directly. In GA4, mark purchase and generate_lead as key events. They only become conversion actions once you import them into Google Ads.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
             <div>
-              <strong>Create Google Ads conversion action</strong> <span className="text-gray-500">— In Google Ads → Tools → Conversions → + New conversion. Copy Conversion ID and Conversion Label.</span>
+              <strong>Create Google Ads conversion action</strong> <span className="text-gray-500">— In Google Ads → Goals → Conversions → Summary → + New conversion action. Copy Conversion ID and Conversion Label.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -246,7 +355,7 @@ export default function ConversionTrackingGuideEN() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
             <div>
-              <strong>Enable Enhanced Conversions</strong> <span className="text-gray-500">— In Google Ads → Conversions → Settings → Enhanced conversions → Turn on. Choose GTM method and map user data (email, phone, address) via data layer.</span>
+              <strong>Enable Enhanced Conversions</strong> <span className="text-gray-500">— In Google Ads → Goals → Conversions → Settings → Enhanced conversions → Turn on. Choose GTM method and map user data (email, phone, address) via data layer. On EEA and UK traffic, Enhanced Conversions only run when ad_user_data is granted.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -267,7 +376,7 @@ export default function ConversionTrackingGuideEN() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
         <p className="text-yellow-800 text-base mb-0">
-          Conversion Linker tag is often a forgotten step, but without it cross-domain and cross-device tracking doesn't work properly. Always set this tag on All Pages before any other conversion tag.
+          Conversion Linker tag is often a forgotten step, but without it cross-domain and cross-device tracking doesn't work properly. Always set this tag on All Pages, after the consent setup and before any other conversion tag.
         </p>
       </div>
 
@@ -304,7 +413,7 @@ export default function ConversionTrackingGuideEN() {
         <ul className="text-sm">
           <li>Trigger: Add to Cart button click event</li>
           <li>Conversion value: Optional (can be fixed value or product price)</li>
-          <li>Include in Conversions: NO (observation only)</li>
+          <li>Setting: Secondary action (kept out of the &quot;Conversions&quot; column, used for observation)</li>
         </ul>
       </div>
 
@@ -319,7 +428,7 @@ export default function ConversionTrackingGuideEN() {
         <ul className="text-sm">
           <li>Trigger: Checkout page load (e.g., /checkout, /cart)</li>
           <li>Conversion value: Cart value (optional)</li>
-          <li>Include in Conversions: NO (observation only)</li>
+          <li>Setting: Secondary action (kept out of the &quot;Conversions&quot; column, used for observation)</li>
         </ul>
       </div>
 
@@ -358,13 +467,18 @@ export default function ConversionTrackingGuideEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Phone Call (Primary conversion)</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          For B2B and local businesses, phone calls are often the most important conversion. Google offers call tracking extension that automatically tracks calls.
+          For B2B and local businesses, phone calls are often the most important conversion. Google offers a call asset (formerly called a call extension) that tracks calls from your ads.
         </p>
         <ul className="text-sm">
           <li>Setup: Google forwarding number or website call button click</li>
           <li>Minimum call duration: 60+ seconds (to filter spam)</li>
           <li>Conversion value: Average phone lead value</li>
         </ul>
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-3 mt-3">
+          <p className="text-yellow-800 text-sm mb-0">
+            Google forwarding numbers aren&apos;t available in every country (Serbia, for example, isn&apos;t on the list). Where they aren&apos;t supported, track a click on the call button as a conversion or use a third-party call tracking tool.
+          </p>
+        </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -441,7 +555,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-semibold mb-2">Only tracking purchase/lead, no secondary conversions</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
-            <strong>Solution:</strong> Add secondary and micro conversions (add to cart, pricing page, video view) and set them as observation (Include in Conversions = NO). This gives the algorithm more signals and helps when volume is low.
+            <strong>Solution:</strong> Add secondary and micro conversions (add to cart, pricing page, video view) and set them as Secondary actions, so they stay out of the &quot;Conversions&quot; column and don&apos;t drive bidding. This gives the algorithm more signals and helps when volume is low.
           </p>
         </div>
       </div>
@@ -451,7 +565,7 @@ export default function ConversionTrackingGuideEN() {
         <p className="font-semibold mb-2">Attribution model not adjusted to business type</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
-            <strong>Solution:</strong> Think about customer journey. For short sales cycles (impulse eCommerce), Last Click is OK. For B2B with long cycle, Data-Driven or Position-Based gives more realistic picture. Check in Google Ads → Conversions → Attribution models.
+            <strong>Solution:</strong> Google retired first-click, linear, time-decay, and position-based models in 2023, so the choice is now Last Click or Data-Driven. For short sales cycles (impulse eCommerce), Last Click is still usable. For B2B with a long cycle, Data-Driven is the only alternative that accounts for the full path to conversion. Check in Google Ads → Goals → Measurement → Attribution.
           </p>
         </div>
       </div>
@@ -499,7 +613,7 @@ export default function ConversionTrackingGuideEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Google Ads Conversion Status</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          In Google Ads → Tools → Conversions check Status column. Should say &quot;Recording conversions&quot; with green checkmark.
+          In Google Ads → Goals → Conversions → Summary check the Status column. Should say &quot;Recording conversions&quot; with green checkmark.
         </p>
         <ul className="text-sm">
           <li>If says &quot;Unverified&quot; — tag hasn't fired yet (make test conversion)</li>
@@ -565,7 +679,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Different attribution models, different conversion windows, and different counting methods. GA4 typically uses data-driven attribution, while Google Ads may use last click. Also, GA4 counts sessions differently than Google Ads. Difference of 10-20% is completely normal and doesn't indicate a problem. If difference &gt;30%, check for double counting.
+          Different attribution models, different conversion windows, and different counting methods. Both systems now use data-driven attribution, but each over its own data and with its own window. GA4 is event-based and records every key event on the day it happened, while Google Ads credits the conversion to the click date. Difference of 10-20% is completely normal and doesn't indicate a problem. If difference &gt;30%, check for double counting.
         </div>
       </details>
 
@@ -595,7 +709,7 @@ export default function ConversionTrackingGuideEN() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Google officially recommends minimum 15 conversions in last 30 days for Target CPA and Target ROAS. However, my experience is that 30-50 conversions monthly is ideal for more stable results. Below 15, algorithm doesn't have enough data and performance can be unpredictable. If you don't have enough primary conversions, you can temporarily add secondary conversions as observation while collecting enough volume.
+          Google recommends roughly 30 conversions in the last 30 days for Target CPA and roughly 50 conversions in 30 days for Target ROAS. In my own accounts, results settle down somewhere between 30 and 50 conversions per month. Below that, the algorithm doesn't have enough data and performance can be unpredictable. If you don't have enough primary conversions, you can temporarily add secondary actions for observation while collecting volume.
         </div>
       </details>
 
@@ -688,7 +802,7 @@ export default function ConversionTrackingGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Google recommends a minimum of 15-30 conversions per month per campaign for Target CPA, and 50+ for Target ROAS. Below that, the algorithm lacks sufficient data and results are unpredictable. In that case, use Manual CPC or Maximize Clicks.
+            Google recommends roughly 30 conversions in the last 30 days for Target CPA and roughly 50 for Target ROAS. In my own accounts, stability starts somewhere around 30-50 conversions per month. Below that, the algorithm lacks sufficient data and results are unpredictable. In that case, use Manual CPC or Maximize Clicks.
           </div>
         </details>
 
@@ -698,13 +812,13 @@ export default function ConversionTrackingGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Different attribution models: Google Ads uses last-click by default with a 30-day window, GA4 uses data-driven with a 90-day window. Different counting methods (Google Ads counts every conversion, GA4 counts sessions). Always compare the same periods and understand the differences.
+            For new conversion actions Google Ads uses data-driven attribution by default with a 30-day conversion window, while GA4 uses its own data-driven model with a 90-day window. Counting differs too: Google Ads credits the conversion to the click date, while GA4 is event-based and records every key event on the day it happened. Always compare the same periods and understand the differences.
           </div>
         </details>
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: February 2026
+        Last updated: July 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

@@ -13,9 +13,9 @@ export default function GA4GoogleAdsIntegrationEN() {
       { "@type": "HowToStep", "name": "Enable Auto-Tagging in Google Ads", "text": "Google Ads: Admin → Account settings → Auto-tagging → Tag the URL that people click through. Required for correct GCLID flow." },
       { "@type": "HowToStep", "name": "Set up Key Events in GA4", "text": "GA4: Admin → Events → Mark as key event. Flag purchase, generate_lead, form_submit or a custom event as key event." },
       { "@type": "HowToStep", "name": "Import GA4 Key Events as Google Ads conversions", "text": "Google Ads: Tools → Data Manager → Import conversions → Google Analytics 4 properties → select property → select key events → Import." },
-      { "@type": "HowToStep", "name": "Set Primary vs Secondary conversions", "text": "Google Ads: Tools → Conversions → mark one conversion as Primary (used for bidding); rest as Secondary (observation only). Count: 'One' for leads, 'Every' for eCommerce." },
+      { "@type": "HowToStep", "name": "Set Primary vs Secondary conversions", "text": "Google Ads: Goals → Conversions → Summary → mark one conversion as Primary (used for bidding); rest as Secondary (observation only). Count: 'One' for leads, 'Every' for eCommerce." },
       { "@type": "HowToStep", "name": "Share GA4 audiences with Google Ads", "text": "GA4: Admin → Audiences → create audience → syncs to Google Ads automatically if the link is active. Minimum 1,000 users required for remarketing." },
-      { "@type": "HowToStep", "name": "Verify the data flow", "text": "Wait 24–48h. Check Google Ads → Conversions → status 'Recording conversions'. Check the 'Conv. (all)' column at campaign level for numbers." }
+      { "@type": "HowToStep", "name": "Verify the data flow", "text": "Wait 24–48h. Check Google Ads → Goals → Conversions → Summary → status 'Recording conversions'. Check the 'Conv. (all)' column at campaign level for numbers." }
     ]
   };
 

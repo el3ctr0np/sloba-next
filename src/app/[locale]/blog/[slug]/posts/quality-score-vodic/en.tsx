@@ -7,7 +7,7 @@ export default function QualityScoreGuideEN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Quality Score is Google's relevance rating on a 1-10 scale. It directly impacts your ad position and cost per click. Improving QS from 5 to 7 reduces CPC by 28%. Three components: Expected CTR, Ad Relevance, and Landing Page Experience.
+          Quality Score is Google's relevance rating on a 1-10 scale. It directly impacts your ad position and cost per click: a better Quality Score lowers your cost per click, and how much depends on the competition in the auction. Three components: Expected CTR, Ad Relevance, and Landing Page Experience.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -19,12 +19,12 @@ export default function QualityScoreGuideEN() {
             <p className="text-xs text-slate-400 mt-1 mb-0">QS components</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">28%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">CPC savings (QS 5→7)</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">CPC ↓</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">effect of a higher QS</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">400%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">CPC penalty for QS 1</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">CPC ↑</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">cost of a low QS</p>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function QualityScoreGuideEN() {
           What is Quality Score in Google Ads?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Quality Score</strong> is Google&apos;s ad relevance rating on a <strong>1-10 scale</strong>, made up of three components: Expected CTR, Ad Relevance, and Landing Page Experience. It directly affects ad position and cost per click — improving QS from 5 to 7 cuts CPC by <strong>28%</strong>, while a QS of 1 carries up to a <strong>400% higher</strong> cost per click.
+          <strong>Quality Score</strong> is Google&apos;s ad relevance rating on a <strong>1-10 scale</strong>, made up of three components: Expected CTR, Ad Relevance, and Landing Page Experience. It directly affects ad position and cost per click: a better Quality Score lowers your cost per click and a poor one raises it. How much exactly depends on the competition in the auction, since Google does not publish the formula.
         </p>
       </div>
 
@@ -75,7 +75,7 @@ export default function QualityScoreGuideEN() {
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
-          Formula: Ad Rank = Max CPC Bid × Quality Score × Expected Impact of Extensions
+          Formula: Ad Rank = Max CPC Bid × Quality Score × expected impact of assets (formerly extensions)
         </p>
       </div>
 
@@ -92,7 +92,7 @@ export default function QualityScoreGuideEN() {
       {/* ── CPC impact ── */}
       <h2 id="how-quality-score-affects-cost-per-click">How Quality Score Affects Cost Per Click</h2>
       <p>
-        This is the most important table in the entire guide. It shows how much more or less you pay depending on QS, with baseline at QS 5.
+        Google does not publish the coefficient by which Quality Score enters the cost per click, so any table with fixed percentages is misleading. What you can reliably observe in accounts is the direction: the higher the QS, the lower the cost per click for the same position. This table gives you direction, not a figure.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -100,70 +100,59 @@ export default function QualityScoreGuideEN() {
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
               <th className="py-3 px-3 font-heading font-semibold">Quality Score</th>
-              <th className="py-3 px-3 font-heading font-semibold">CPC impact</th>
-              <th className="py-3 px-3 font-heading font-semibold">Example (baseline $1.00/£1.00)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Effect on CPC (vs. QS 5)</th>
               <th className="py-3 px-3 font-heading font-semibold">Status</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">10</td>
-              <td className="py-3 px-3">-50%</td>
-              <td className="py-3 px-3">$0.50/£0.50</td>
+              <td className="py-3 px-3">Substantially lower</td>
               <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">9</td>
-              <td className="py-3 px-3">-44%</td>
-              <td className="py-3 px-3">$0.56/£0.56</td>
+              <td className="py-3 px-3">Substantially lower</td>
               <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Excellent</span></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">8</td>
-              <td className="py-3 px-3">-37%</td>
-              <td className="py-3 px-3">$0.63/£0.63</td>
+              <td className="py-3 px-3">Noticeably lower</td>
               <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Very good</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">7</td>
-              <td className="py-3 px-3">-28%</td>
-              <td className="py-3 px-3">$0.72/£0.72</td>
+              <td className="py-3 px-3">Lower</td>
               <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Good</span></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">6</td>
-              <td className="py-3 px-3">-17%</td>
-              <td className="py-3 px-3">$0.83/£0.83</td>
+              <td className="py-3 px-3">Slightly lower</td>
               <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">OK</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">5</td>
-              <td className="py-3 px-3">Baseline (0%)</td>
-              <td className="py-3 px-3">$1.00/£1.00</td>
+              <td className="py-3 px-3">Reference point</td>
               <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Average</span></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">4</td>
-              <td className="py-3 px-3">+25%</td>
-              <td className="py-3 px-3">$1.25/£1.25</td>
+              <td className="py-3 px-3">Slightly higher</td>
               <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Below average</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">3</td>
-              <td className="py-3 px-3">+67%</td>
-              <td className="py-3 px-3">$1.67/£1.67</td>
+              <td className="py-3 px-3">Noticeably higher</td>
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Poor</span></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">2</td>
-              <td className="py-3 px-3">+150%</td>
-              <td className="py-3 px-3">$2.50/£2.50</td>
+              <td className="py-3 px-3">Substantially higher</td>
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Critical</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">1</td>
-              <td className="py-3 px-3">+400%</td>
-              <td className="py-3 px-3">$5.00/£5.00</td>
+              <td className="py-3 px-3">Several times higher</td>
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Urgent action</span></td>
             </tr>
           </tbody>
@@ -171,9 +160,9 @@ export default function QualityScoreGuideEN() {
       </div>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
-        <p className="font-heading font-bold text-lg mb-2">ROI example: QS improvement from 5 to 7</p>
+        <p className="font-heading font-bold text-lg mb-2">How to measure the effect on your own account</p>
         <p className="text-base text-yellow-900 mb-0">
-          Monthly spend $6,000/£5,000 with QS 5. By improving to QS 7, CPC decreases by 28%. That means either $1,680/£1,400 savings monthly for same number of clicks, or 28% more clicks for same budget. Annually: $20,160/£16,800 savings.
+          Don&apos;t trust anyone else&apos;s percentages — measure your own. Record the average CPC and Quality Score for a group of keywords, make your ad and landing page changes, then compare the same window 30 days later. That&apos;s the only number that applies to your account, because the effect depends on who you&apos;re up against in the auction.
         </p>
       </div>
 
@@ -189,7 +178,7 @@ export default function QualityScoreGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% impact</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Expected CTR</h3>
-          <p className="text-base text-gray-600 mb-0">Likelihood someone will click your ad. Depends on headlines, CTAs, extensions, and historical performance.</p>
+          <p className="text-base text-gray-600 mb-0">Likelihood someone will click your ad. Depends on headlines, CTAs, assets (formerly extensions), and historical performance.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~20% impact</p>
@@ -219,7 +208,7 @@ export default function QualityScoreGuideEN() {
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
               <td className="py-3 px-3">Average</td>
               <td className="py-3 px-3">Average</td>
-              <td className="py-3 px-3 font-medium">Improve ad (headline, CTA, extensions)</td>
+              <td className="py-3 px-3 font-medium">Improve ad (headline, CTA, assets)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3">Average</td>
@@ -253,7 +242,7 @@ export default function QualityScoreGuideEN() {
 
       {/* ── Improving Expected CTR ── */}
       <h2 id="how-to-improve-expected-ctr">How to Improve Expected CTR</h2>
-      <p>Expected CTR makes up ~40% of Quality Score and can be most directly improved by optimizing ads.</p>
+      <p>Expected CTR is one of the three Quality Score components (Google doesn't publish how much each one weighs) and it's the one you can improve most directly through ad optimization.</p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
@@ -282,13 +271,13 @@ export default function QualityScoreGuideEN() {
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Add all extensions</h3>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Add all assets</h3>
         </div>
-        <p className="text-base text-gray-600 mb-3">Extensions increase ad size and directly impact CTR.</p>
+        <p className="text-base text-gray-600 mb-3">Assets (formerly extensions) increase ad size and directly impact CTR.</p>
         <ul className="text-sm">
-          <li>Sitelinks: +10-20% CTR</li>
-          <li>Callouts: +5-10% CTR</li>
-          <li>Structured Snippets: +5-10% CTR</li>
+          <li>Sitelinks - biggest impact on ad real estate</li>
+          <li>Callouts - short lines that reinforce the offer</li>
+          <li>Structured Snippets - spell out your range or services</li>
         </ul>
       </div>
 
@@ -375,7 +364,7 @@ export default function QualityScoreGuideEN() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Week 4: CTR optimization</strong> <span className="text-gray-500">— test new ads, add all extensions, A/B test headlines</span></div>
+            <div><strong>Week 4: CTR optimization</strong> <span className="text-gray-500">— test new ads, add all assets, A/B test headlines</span></div>
           </div>
         </div>
       </div>
@@ -538,7 +527,7 @@ export default function QualityScoreGuideEN() {
       {/* ── Conclusion + CTA ── */}
       <h2 id="conclusion">Conclusion</h2>
       <p>
-        Quality Score is the most powerful tool for controlling costs in Google Ads. Improving from QS 5 to 7 reduces CPC by 28%, which annually can mean thousands in savings. Focus on three components — Expected CTR, Ad Relevance, and Landing Page Experience — using the diagnostic table to identify where the problem is.
+        Quality Score is the most powerful tool for controlling costs in Google Ads. A better Quality Score lowers your cost per click, and how much depends on the competition in the auction — so measure the effect on your own account rather than trusting someone else&apos;s table. Focus on three components — Expected CTR, Ad Relevance, and Landing Page Experience — using the diagnostic table to identify where the problem is.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">

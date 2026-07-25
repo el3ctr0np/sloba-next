@@ -20,7 +20,7 @@ export default function OfflineConversionImportB2BPostEN() {
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">90</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Day attribution window</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Day conversion window</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Closed-won</p>
@@ -178,7 +178,7 @@ export default function OfflineConversionImportB2BPostEN() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
             <div>
-              <strong>Create matching conversion actions in Google Ads</strong> <span className="text-gray-500">— Tools → Conversions → New conversion action → Import → HubSpot. Mark "Primary" for Closed-won, "Secondary" for MQL/SQL.</span>
+              <strong>Create matching conversion actions in Google Ads</strong> <span className="text-gray-500">— Goals → Conversions → Summary → New conversion action → Import → HubSpot. Mark "Primary" for Closed-won, "Secondary" for MQL/SQL.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -268,7 +268,7 @@ export default function OfflineConversionImportB2BPostEN() {
         <ul className="text-sm">
           <li>Create a "Google Click ID" custom field at the Deal level in Pipedrive, populated via a web-to-lead form</li>
           <li>Weekly or monthly, export the "Deals won in last 7/30 days" filter as CSV with columns: Google Click ID, Conversion Name, Conversion Time, Conversion Value, Conversion Currency</li>
-          <li>In Google Ads: Tools → Conversions → Uploads → CSV upload, match the columns and submit the file</li>
+          <li>In Google Ads: Goals → Conversions → Uploads → CSV upload, match the columns and submit the file</li>
           <li>Downside: lag versus real-time, depending on upload frequency — Google recommends uploading within 90 days of the click</li>
         </ul>
       </div>
@@ -323,13 +323,13 @@ export default function OfflineConversionImportB2BPostEN() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div>
-              <strong>Mark only Closed-won as "Primary"</strong> <span className="text-gray-500">— In Conversions → Settings, only Closed Won feeds the "Conversions" column that Smart Bidding uses for optimization. MQL and SQL stay "Secondary" (observation only).</span>
+              <strong>Mark only Closed-won as "Primary"</strong> <span className="text-gray-500">— In Goals → Conversions → Settings, only Closed Won feeds the "Conversions" column that Smart Bidding uses for optimization. MQL and SQL stay "Secondary" (observation only).</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div>
-              <strong>Set a realistic attribution window</strong> <span className="text-gray-500">— For a long B2B sales cycle, use the 90-day click-through window (the maximum Google Ads allows), not the 30-day default.</span>
+              <strong>Set a realistic conversion window</strong> <span className="text-gray-500">— For a long B2B sales cycle, use the 90-day click-through window (the maximum Google Ads allows), not the 30-day default.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -367,7 +367,7 @@ export default function OfflineConversionImportB2BPostEN() {
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
-        <p className="font-semibold mb-2">Attribution window too short for a long B2B sales cycle</p>
+        <p className="font-semibold mb-2">Conversion window too short for a long B2B sales cycle</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Fix:</strong> If your average sales cycle is 60-90+ days but the conversion window is set to the 30-day default, the system systematically loses Closed-won deals that originated from older clicks. Set the window to the 90-day maximum and check your average sales cycle from the CRM to gauge how much still falls outside that range.

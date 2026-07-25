@@ -7,7 +7,7 @@ export default function CTRGuidePost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">In brief</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          CTR (Click-Through Rate) is the percentage of people who click on your ad after seeing it. Formula: (Clicks ÷ Impressions) × 100. For Search campaigns, aim for 5-10%+, and niche campaigns can achieve 15-20%+. But remember: high CTR ≠ successful campaign.
+          CTR (Click-Through Rate) is the percentage of people who click on your ad after seeing it. Formula: (Clicks ÷ Impressions) × 100. For Search campaigns a good CTR is 5-10%, tight niches reach 10-15%, and anything above 20% is the exception. The average sits around 2-3%. But remember: high CTR ≠ successful campaign.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -15,16 +15,16 @@ export default function CTRGuidePost() {
             <p className="text-xs text-slate-400 mt-1 mb-0">good CTR for Search</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">15-20%</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">10-15%</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">possible for niche campaigns</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">~40%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">CTR impact on Quality Score</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">0.5-1%</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">average for Display</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">2-3%</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">average on Search</p>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function CTRGuidePost() {
           What is CTR (Click-Through Rate)?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>CTR (Click-Through Rate)</strong> is the percentage of people who click your ad after seeing it. Formula: <strong>CTR = (Clicks ÷ Impressions) × 100</strong>. In Google Ads, CTR is a major quality signal — it makes up around 40% of Quality Score. A good CTR for Search campaigns is <strong>5-10%</strong>, while Display typically averages around <strong>0.5-1%</strong>.
+          <strong>CTR (Click-Through Rate)</strong> is the percentage of people who click your ad after seeing it. Formula: <strong>CTR = (Clicks ÷ Impressions) × 100</strong>. In Google Ads, CTR is a major quality signal through Expected CTR. A good CTR for Search campaigns is <strong>5-10%</strong> (the average sits around <strong>2-3%</strong>), while Display typically averages around <strong>0.5-1%</strong>.
         </p>
       </div>
 
@@ -79,7 +79,7 @@ export default function CTRGuidePost() {
 
       <p>Why CTR matters:</p>
       <ul>
-        <li><strong>Impacts Quality Score</strong> — Expected CTR accounts for about 40% of your quality rating</li>
+        <li><strong>Impacts Quality Score</strong> — Expected CTR is one of the three components of the quality rating (Google doesn&apos;t publish the weightings)</li>
         <li><strong>Lowers CPC</strong> — higher CTR = higher Quality Score = lower cost per click</li>
         <li><strong>Relevance signal</strong> — Google sees that users are responding to your ad</li>
         <li><strong>More clicks for the same budget</strong> — better CTR means more efficient spending</li>
@@ -126,7 +126,7 @@ export default function CTRGuidePost() {
               <td className="py-3 px-3">1,000</td>
               <td className="py-3 px-3">200</td>
               <td className="py-3 px-3">20%</td>
-              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Exceptional (niche)</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Exceptional (rare)</span></td>
             </tr>
           </tbody>
         </table>
@@ -139,12 +139,15 @@ export default function CTRGuidePost() {
       <p>
         Benchmarks vary dramatically by campaign type. A 1% Display CTR is excellent, while for Search it would be poor.
       </p>
+      <p>
+        The figures below are a reference point from the accounts I manage, not an official Google benchmark. Your real reference is the account benchmark in your own account and your own history.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search campaigns</h3>
-          <p className="text-2xl font-heading font-bold text-green-600 mb-2">5-10%+</p>
-          <p className="text-base text-gray-600 mb-0">For niche campaigns, CTR can reach 10-15%+. Exact match with specific keywords can achieve up to 20%.</p>
+          <p className="text-2xl font-heading font-bold text-green-600 mb-2">5-10%</p>
+          <p className="text-base text-gray-600 mb-0">The average is around 2-3%. In tight niches CTR reaches 10-15%, and above 20% is the exception — usually exact match on very specific queries.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display campaigns</h3>
@@ -153,7 +156,7 @@ export default function CTRGuidePost() {
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping campaigns</h3>
-          <p className="text-2xl font-heading font-bold text-purple-600 mb-2">1-3%</p>
+          <p className="text-2xl font-heading font-bold text-purple-600 mb-2">0.7-1.5%</p>
           <p className="text-base text-gray-600 mb-0">Depends on product and price. Premium products with good images have higher CTR.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
@@ -231,9 +234,9 @@ export default function CTRGuidePost() {
 
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #2</p>
-          <p className="font-semibold mb-2">Too few extensions (or none at all)</p>
+          <p className="font-semibold mb-2">Too few assets (formerly extensions), or none at all</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Use all available extensions — sitelinks, callouts, structured snippets, call extension (mandatory for services). Extensions increase CTR by 10-20%.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Use all available assets — sitelinks, callouts, structured snippets, call asset (mandatory for services). Assets take up more space in the result and give more reasons to click. How much CTR improves depends on the account, so don&apos;t count on a fixed percentage.</p>
           </div>
         </div>
 
@@ -334,14 +337,17 @@ export default function CTRGuidePost() {
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #6</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Call extension for services</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Call asset for services</h3>
           <p className="text-base text-gray-600 mb-0">Mandatory for all service businesses. Direct calls from ads increase overall engagement and conversions.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #7</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Pinned headlines on Position 1</h3>
-          <p className="text-base text-gray-600 mb-0">Pin key benefits to Position 1 to ensure they always appear. Don&apos;t leave everything to Google&apos;s algorithm.</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Pinning only when you must</h3>
+          <p className="text-base text-gray-600 mb-0">
+            Pin a headline only when the message has to show: a regulatory disclaimer or a mandatory brand line. Otherwise let Google combine. Pinning cuts the number of combinations the algorithm can test and lowers Ad Strength. More detail in the{" "}
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "responsive-search-ads-guide" } }} className="text-primary underline">RSA guide</Link>.
+          </p>
         </div>
       </div>
 
@@ -396,7 +402,7 @@ export default function CTRGuidePost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            For Search campaigns, aim for 5-10%. For niche campaigns with specific keywords in closed match types (exact, phrase), CTR can be 10-15%+. Account benchmark is a good reference point — track it in the Google Ads interface.
+            For Search campaigns a good CTR is 5-10%, while the average sits around 2-3%. In tight niches, with specific keywords in closed match types (exact, phrase), CTR reaches 10-15%, and above 20% is the exception. These are figures from the accounts I manage, not an official benchmark. Your best reference point is the account benchmark in your own account.
           </div>
         </details>
 
@@ -416,7 +422,7 @@ export default function CTRGuidePost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Yes, indirectly. CTR affects Expected CTR, which is a component of Quality Score. Higher Quality Score = lower CPC. Improving QS from 5 to 7 can reduce CPC by 28%.
+            Yes, indirectly. CTR affects Expected CTR, which is a component of Quality Score. A higher Quality Score usually means a lower CPC for the same position. Google doesn&apos;t publish the exact formula, so don&apos;t expect a fixed percentage saving.
           </div>
         </details>
 
@@ -488,7 +494,7 @@ export default function CTRGuidePost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: March 2026
+        Last updated: July 2026
       </div>
       <div className="text-sm text-gray-500">
         Author: Slobodan Jelisavac, Google Ads Consultant

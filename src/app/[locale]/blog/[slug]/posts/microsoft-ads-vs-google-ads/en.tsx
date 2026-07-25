@@ -389,12 +389,14 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">P</span>
             <div>
-              <h3 className="text-base font-heading font-bold mt-0 mb-1">Performance Max equivalent — Microsoft Audience Campaigns + Smart Shopping</h3>
+              <h3 className="text-base font-heading font-bold mt-0 mb-1">Performance Max equivalent — Microsoft Audience Campaigns + Microsoft PMax</h3>
               <p className="text-base text-gray-600 mb-2">
                 Microsoft does not have an identical PMax, but it has the Audience Network (equivalent
-                to Google Display/YouTube network) and Smart Shopping campaigns that automatically
-                distribute budget across Search and Shopping. In 2025, Performance Max launched in
-                beta on Microsoft Ads — gradual rollout throughout 2026.
+                to Google Display/YouTube network) and its own Performance Max campaign that automatically
+                distributes budget across Search and Shopping. A terminology note: Smart Shopping no longer
+                exists on either platform. Google shut it down in 2022 and migrated it into Performance Max,
+                and Microsoft likewise folded its Smart Shopping campaigns into Performance Max. If an older
+                guide tells you to build a Smart Shopping campaign, that campaign type is gone.
               </p>
               <p className="text-xs text-gray-500 mb-0">
                 From practice: Audience Network campaigns deliver lower CPCs than Google Display, but
@@ -513,7 +515,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             Microsoft&apos;s &quot;Import from Google Ads&quot; feature is genuinely useful. You can automatically pull
             an entire campaign structure from Google Ads directly into Microsoft Ads. In the dual-platform workflow, the
             initial Microsoft setup took 3–4 hours instead of the typical 15–20 hours for a manual build.
-            Campaigns sync monthly — new ad copy, new extensions, new negative keywords.
+            Campaigns sync monthly — new ad copy, new assets (formerly extensions), new negative keywords.
           </p>
         </div>
 
@@ -801,7 +803,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Technically, <strong>extremely straightforward</strong>. Microsoft Ads has an &quot;Import from Google Ads&quot; tool that automatically transfers your complete campaign structure (campaigns, ad groups, keywords, ads, extensions) from Google. Initial import takes 1–2 hours (settings, budget mapping, bid adjustments). In practice, monthly synchronisation is automatic and takes just 15 minutes of manual review. Smart advertisers keep Microsoft as a &quot;shadow campaign&quot; that auto-syncs with Google changes.
+            Technically, <strong>extremely straightforward</strong>. Microsoft Ads has an &quot;Import from Google Ads&quot; tool that automatically transfers your complete campaign structure (campaigns, ad groups, keywords, ads, assets — formerly extensions) from Google. Initial import takes 1–2 hours (settings, budget mapping, bid adjustments). In practice, monthly synchronisation is automatic and takes just 15 minutes of manual review. Smart advertisers keep Microsoft as a &quot;shadow campaign&quot; that auto-syncs with Google changes.
           </div>
         </details>
 

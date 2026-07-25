@@ -7,7 +7,7 @@ export default function CTRVodicPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          CTR (Click-Through Rate) je procenat ljudi koji kliknu na vaš oglas nakon što ga vide. Formula: (Klikovi ÷ Impressions) × 100. Za Search kampanje u Srbiji cilj je 5-10%+, a za nišne kampanje i preko 15-20%. Ali zapamtite: visok CTR ≠ uspešna kampanja.
+          CTR (Click-Through Rate) je procenat ljudi koji kliknu na vaš oglas nakon što ga vide. Formula: (Klikovi ÷ Impressions) × 100. Za Search kampanje dobar CTR je 5-10%, u uskim nišama 10-15%, a preko 20% je izuzetak. Prosek na Search-u je oko 2-3%. Ali zapamtite: visok CTR ≠ uspešna kampanja.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -15,16 +15,16 @@ export default function CTRVodicPost() {
             <p className="text-xs text-slate-400 mt-1 mb-0">dobar CTR za Search</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">15-20%</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">10-15%</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">moguć za nišne kampanje</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">~40%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">uticaj CTR na Quality Score</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">0.5-1%</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">prosek za Display</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">2-3%</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">prosek na Search-u</p>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function CTRVodicPost() {
           Šta je CTR (Click-Through Rate)?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>CTR (Click-Through Rate)</strong> je procenat ljudi koji kliknu na vaš oglas nakon što ga vide. Formula: <strong>CTR = (Klikovi ÷ Prikazi) × 100</strong>. U Google Ads-u, CTR je jedan od glavnih signala kvaliteta — čini oko 40% Quality Score-a. Dobar CTR za Search kampanje u Srbiji je <strong>5-10%</strong>, dok je za Display oko <strong>0.5-1%</strong>.
+          <strong>CTR (Click-Through Rate)</strong> je procenat ljudi koji kliknu na vaš oglas nakon što ga vide. Formula: <strong>CTR = (Klikovi ÷ Prikazi) × 100</strong>. U Google Ads-u, CTR je jedan od glavnih signala kvaliteta kroz Expected CTR. Dobar CTR za Search kampanje je <strong>5-10%</strong> (prosek je oko <strong>2-3%</strong>), dok je za Display oko <strong>0.5-1%</strong>.
         </p>
       </div>
 
@@ -79,7 +79,7 @@ export default function CTRVodicPost() {
 
       <p>Zašto je CTR važan:</p>
       <ul>
-        <li><strong>Utiče na Quality Score</strong> — Expected CTR čini oko 40% vaše ocene kvaliteta</li>
+        <li><strong>Utiče na Quality Score</strong> - Expected CTR je jedna od tri komponente ocene kvaliteta (Google ne objavljuje koliko svaka nosi)</li>
         <li><strong>Smanjuje CPC</strong> — viši CTR = viši Quality Score = niža cena po kliku</li>
         <li><strong>Signal relevantnosti</strong> — Google vidi da korisnici reaguju na vaš oglas</li>
         <li><strong>Više klikova za isti budžet</strong> — bolji CTR znači efikasnije trošenje</li>
@@ -126,7 +126,7 @@ export default function CTRVodicPost() {
               <td className="py-3 px-3">1,000</td>
               <td className="py-3 px-3">200</td>
               <td className="py-3 px-3">20%</td>
-              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Izuzetan (nišne)</span></td>
+              <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Izuzetan (retko)</span></td>
             </tr>
           </tbody>
         </table>
@@ -139,12 +139,15 @@ export default function CTRVodicPost() {
       <p>
         Benchmarks se drastično razlikuju po tipu kampanje. Display CTR od 1% je odličan, dok bi za Search to bio loš rezultat.
       </p>
+      <p>
+        Brojke ispod su orijentir iz naloga koje vodim, ne zvaničan Google benchmark. Pravi referentni okvir je account benchmark u vašem nalogu i vaša sopstvena istorija.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Search kampanje</h3>
-          <p className="text-2xl font-heading font-bold text-green-600 mb-2">5-10%+</p>
-          <p className="text-base text-gray-600 mb-0">Za nišne kampanje u Srbiji i preko 10-15%. Exact match sa specifičnim ključnim rečima može dostići i 20%.</p>
+          <p className="text-2xl font-heading font-bold text-green-600 mb-2">5-10%</p>
+          <p className="text-base text-gray-600 mb-0">Prosek je oko 2-3%. U uskim nišama CTR ide na 10-15%, a preko 20% je izuzetak, obično exact match na vrlo specifične upite.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display kampanje</h3>
@@ -153,7 +156,7 @@ export default function CTRVodicPost() {
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping kampanje</h3>
-          <p className="text-2xl font-heading font-bold text-purple-600 mb-2">1-3%</p>
+          <p className="text-2xl font-heading font-bold text-purple-600 mb-2">0.7-1.5%</p>
           <p className="text-base text-gray-600 mb-0">Zavisi od proizvoda i cene. Premium proizvodi sa dobrim slikama imaju viši CTR.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
@@ -231,9 +234,9 @@ export default function CTRVodicPost() {
 
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
-          <p className="font-semibold mb-2">Premalo extensions (ili ih uopšte nema)</p>
+          <p className="font-semibold mb-2">Premalo assets (ranije extensions), ili ih uopšte nema</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Koristite sve dostupne extensions — sitelinks, callouts, structured snippets, call extension (obavezno za usluge). Extensions povećavaju CTR za 10-20%.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Koristite sve dostupne assets - sitelinks, callouts, structured snippets, call asset (obavezno za usluge). Assets zauzimaju više prostora u rezultatu i daju više razloga za klik. Koliko će CTR porasti zavisi od naloga, pa ne računajte na fiksan procenat.</p>
           </div>
         </div>
 
@@ -334,14 +337,17 @@ export default function CTRVodicPost() {
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika #6</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Call extension za usluge</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Call asset za usluge</h3>
           <p className="text-base text-gray-600 mb-0">Obavezno za sve uslužne delatnosti. Direktan poziv iz oglasa povećava ukupni engagement i konverzije.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika #7</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Pinned headlines na Position 1</h3>
-          <p className="text-base text-gray-600 mb-0">Pin-ujte ključne benefite na Position 1 da osigurate da se uvek prikazuju. Ne prepuštajte sve Google algoritmu.</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Pinning samo kad mora</h3>
+          <p className="text-base text-gray-600 mb-0">
+            Pinujte naslov samo kad poruka mora da se prikaže: regulatorni disclaimer ili obavezna brend poruka. Inače pustite Google da kombinuje. Pinning smanjuje broj kombinacija koje algoritam može da testira i obara Ad Strength. Detaljno u{" "}
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "rsa-vodic" } }} className="text-primary underline">RSA vodiču</Link>.
+          </p>
         </div>
       </div>
 
@@ -381,7 +387,7 @@ export default function CTRVodicPost() {
       </p>
 
       <p>
-        <strong>Primer:</strong> Kampanja sa CTR-om od 20% i 0 konverzija je lošija od kampanje sa CTR-om od 5% i 10 konverzija. Uvek gledate celokupnu sliku: CTR + Conversion Rate + CPA/ROAS.
+        <strong>Primer:</strong> Kampanja sa CTR-om od 20% i 0 konverzija je lošija od kampanje sa CTR-om od 5% i 10 konverzija. Uvek gledajte celokupnu sliku: CTR + Conversion Rate + CPA/ROAS.
       </p>
 
       <hr />
@@ -396,7 +402,7 @@ export default function CTRVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Za Search kampanje cilj je 5-10%. Za nišne kampanje sa specifičnim ključnim rečima u zatvorenim match tipovima (exact, phrase), CTR može biti i 10-15%+. Account benchmark je dobar referentni okvir — pratite ga u Google Ads interfejsu.
+            Za Search kampanje dobar CTR je 5-10%, dok je prosek oko 2-3%. U uskim nišama, sa specifičnim ključnim rečima u zatvorenim match tipovima (exact, phrase), CTR ide na 10-15%, a preko 20% je izuzetak. To su brojke iz naloga koje vodim, ne zvaničan benchmark. Najbolji referentni okvir je account benchmark u vašem nalogu.
           </div>
         </details>
 
@@ -416,7 +422,7 @@ export default function CTRVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Da, indirektno. CTR utiče na Expected CTR, koji je komponenta Quality Score-a. Viši Quality Score = niži CPC. Poboljšanje QS sa 5 na 7 može smanjiti CPC za 28%.
+            Da, indirektno. CTR utiče na Expected CTR, koji je komponenta Quality Score-a. Viši Quality Score obično znači niži CPC za istu poziciju. Google ne objavljuje tačnu formulu, pa ne očekujte fiksan procenat uštede.
           </div>
         </details>
 
@@ -488,7 +494,7 @@ export default function CTRVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Mart 2026
+        Poslednje ažuriranje: Jul 2026
       </div>
       <div className="text-sm text-gray-500">
         Autor: Slobodan Jelisavac, Google Ads Consultant

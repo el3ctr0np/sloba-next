@@ -445,7 +445,7 @@ export default function RsaGuideEN() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center font-heading font-bold text-sm">6</span>
             <div>
-              <strong>Add extensions (assets)</strong>
+              <strong>Add assets (formerly extensions)</strong>
               <span className="text-gray-500"> — Minimum: Sitelinks (4+), Callouts (4+), Structured Snippets (2+ headers),
               Business Name, Logo. Optional: Image, Call, Location, Promotion.</span>
             </div>
@@ -988,7 +988,7 @@ export default function RsaGuideEN() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="block border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-md transition-all no-underline">
           <p className="font-heading font-semibold text-sm text-gray-900 mb-1">Quality Score Guide</p>
-          <p className="text-xs text-gray-500 mb-0">How to improve QS and reduce CPC by 28%+</p>
+          <p className="text-xs text-gray-500 mb-0">How to improve QS and bring your cost per click down</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }} className="block border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-md transition-all no-underline">
           <p className="font-heading font-semibold text-sm text-gray-900 mb-1">Google Ads Keyword Guide</p>

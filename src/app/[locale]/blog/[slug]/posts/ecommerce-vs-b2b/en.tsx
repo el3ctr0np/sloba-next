@@ -164,7 +164,7 @@ export default function EcommerceVsB2BEN() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
         <p className="text-yellow-800 text-base mb-0">
-          Ignoring these differences leads to applying the wrong strategy. <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">Shopping campaigns</a> don&apos;t exist for B2B. Lead-gen tracking doesn&apos;t give ROAS for eCommerce. Tailor the approach to the model.
+          Ignoring these differences leads to applying the wrong strategy. <a href="https://support.google.com/google-ads/answer/2567043" target="_blank" rel="noopener noreferrer">Shopping</a> is rarely relevant for classic B2B lead-gen (no product catalog), but B2B distributors and webshops with an online catalog do run it. Lead-gen tracking doesn&apos;t give ROAS for eCommerce. Tailor the approach to the model.
         </p>
       </div>
 
@@ -285,7 +285,7 @@ export default function EcommerceVsB2BEN() {
           </h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          97% of visitors don&apos;t buy the first time. Remarketing is essential for converting &quot;almost purchased&quot; transactions.
+          The large majority of visitors don&apos;t buy on their first visit. Remarketing is essential for converting &quot;almost purchased&quot; transactions.
         </p>
         <ul className="text-sm">
           <li>
@@ -398,7 +398,7 @@ export default function EcommerceVsB2BEN() {
           </h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          For B2B, Search is the dominant channel. Shopping doesn&apos;t exist, Display has limited impact. Cover the full funnel, but biggest budget on high-intent.
+          For B2B, Search is the dominant channel. Shopping is rarely relevant for classic lead-gen (no product catalog), though B2B distributors and webshops with an online catalog do run it. Display has limited impact. Cover the full funnel, but biggest budget on high-intent.
         </p>
         <ul className="text-sm">
           <li>
@@ -735,7 +735,7 @@ export default function EcommerceVsB2BEN() {
           </span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          More than you think because of higher CPC ($3-15+) and lower volume. Minimum $2,500-3,500 monthly for meaningful testing. I recommend $5,000-8,000 for stable results. Formula: 3x CPC × 30 conversions = minimum budget (e.g., $8 CPC &rarr; $720, but that&apos;s minimum for 1 campaign). For 3-4 campaigns (Brand, Non-Brand, Remarketing) + testing budgets, plan $3,500-5,000.
+          More than you think because of higher CPC ($3-15+) and lower volume. Minimum $2,500-4,000 monthly for meaningful testing. I recommend $5,000-8,000 for stable results. Formula: 3x CPC × 30 conversions = minimum budget (e.g., $8 CPC &rarr; $720, but that&apos;s minimum for 1 campaign). For 3-4 campaigns (Brand, Non-Brand, Remarketing) + testing budgets, plan $5,000-8,000.
         </div>
       </details>
 
@@ -871,7 +871,7 @@ export default function EcommerceVsB2BEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            eCommerce starters: $1,000-2,000/month for testing, $5,000+ for serious results (depends on CPC and margins). B2B: $500-1,500/month for niche targeting, but CPL can be $100-1,000+ depending on industry. More important than budget is ROI — a B2B deal worth $50,000 justifies a high CPL.
+            eCommerce starters: $1,000-2,000/month for testing, $5,000+ for serious results (depends on CPC and margins). B2B: $2,500-4,000/month for meaningful testing, and CPL can be $100-1,000+ depending on industry. More important than budget is ROI — a B2B deal worth $50,000 justifies a high CPL.
           </div>
         </details>
       </div>

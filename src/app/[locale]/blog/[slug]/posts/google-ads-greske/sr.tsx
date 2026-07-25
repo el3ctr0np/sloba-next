@@ -306,19 +306,19 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Nedostaju ad extensions — tekstualni oglas bez ekstenzija zauzima
+          Nedostaju assets (ranije extensions) — tekstualni oglas bez njih zauzima
           minimalan prostor
         </p>
         <p className="text-base text-gray-600 mb-3">
           Manji vizuelni footprint znači niži CTR. Ad Rank pada. Placate više
-          po kliku. Extensions su besplatni i značajno poboljšavaju performanse.
+          po kliku. Assets su besplatni i značajno poboljšavaju performanse.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Umesto praznih oglasa, dodajte minimum:
             4-6 sitelink-ova, 4+ callout-a, structured snippets (brendovi,
-            kategorije, usluge), call extension ako imate telefon, location
-            extension ako imate prodajno mesto.
+            kategorije, usluge), call asset ako imate telefon, location
+            asset ako imate prodajno mesto.
           </p>
         </div>
       </div>
@@ -391,10 +391,12 @@ export default function GoogleAdsGreskePost() {
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
-            <strong>Rešenje:</strong> Umesto Last Click-a za sve, koristite
-            Data-Driven attribution ako imate dovoljno podataka (400+ konverzija
-            mesečno). Za kraći cycle (eCommerce), Last Click je OK. Za duži
-            (B2B), Position-Based ili Data-Driven daju realniju sliku.
+            <strong>Rešenje:</strong> Google Ads danas nudi samo dva modela,
+            Last Click i Data-Driven. Modeli poput position-based, linear i
+            time-decay ugašeni su 2023. i više se ne mogu izabrati. Za kraći
+            cycle (eCommerce) Last Click je OK. Za duži (B2B) Data-Driven je
+            jedina realna alternativa jer raspoređuje kredit kroz ceo put do
+            konverzije, pod uslovom da imate dovoljno podataka.
           </p>
         </div>
       </div>
@@ -490,7 +492,7 @@ export default function GoogleAdsGreskePost() {
           Viši CTR znači niži CPC i bolji Ad Rank.
         </p>
         <ul className="text-base">
-          <li>Dodajte sve relevantne ad extensions</li>
+          <li>Dodajte sve relevantne assets</li>
           <li>Kreirajte 2-3 oglasa po ad grupi za testiranje</li>
           <li>Unesite specifične brojke i unique benefits u copy</li>
           <li>Testirajte <a href="https://support.google.com/google-ads/answer/6167118" target="_blank" rel="noopener noreferrer">Quality Score</a> poboljšanja</li>

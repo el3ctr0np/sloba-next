@@ -149,7 +149,7 @@ const srPosts: PostData[] = [
     slug: "offline-conversion-import-b2b",
     title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",
     date: "2026-07-06",
-    dateModified: "2026-07-06",
+    dateModified: "2026-07-24",
     category: "Tracking",
     metaDescription:
       "Kako da Google Ads algoritam uči na zatvorenim poslovima umesto na formama: GCLID vs Enhanced Conversions for Leads, setup za HubSpot, Salesforce i Pipedrive, vrednovanje MQL/SQL/Closed-won faza i česte greške.",
@@ -173,7 +173,7 @@ const srPosts: PostData[] = [
     slug: "kako-izabrati-google-ads-konsultanta",
     title: "Kako izabrati Google Ads konsultanta: 12 pitanja pre potpisivanja ugovora",
     date: "2026-07-06",
-    dateModified: "2026-07-06",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "12 konkretnih pitanja za proveru Google Ads konsultanta ili agencije pre potpisivanja: ko radi na nalogu, vlasništvo naloga, tracking, naplata. Zelene i crvene zastavice iz prakse.",
@@ -233,7 +233,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-audit-checklist-srbija",
     title: "Google Ads Audit Checklist 2026 — 50 Stavki [Srbija]",
     date: "2026-05-09",
-    dateModified: "2026-05-09",
+    dateModified: "2026-07-24",
     category: "Google Ads Audit",
     metaDescription:
       "Konkretan checklist od 50 stavki za audit Google Ads naloga u Srbiji. 10 kategorija sa primerima iz prakse — eCommerce, B2B, lead-gen. Scoring sistem i 30-min brzi audit.",
@@ -245,7 +245,7 @@ const srPosts: PostData[] = [
     slug: "ga4-google-ads-integracija",
     title: "GA4 + Google Ads Integracija: Kompletan Setup Vodič [2026]",
     date: "2026-04-26",
-    dateModified: "2026-04-26",
+    dateModified: "2026-07-24",
     category: "Tracking",
     metaDescription:
       "Kompletan 7-koračni vodič za GA4 + Google Ads integraciju u 2026: linkovanje property-ja, import key events kao konverzija, Primary/Secondary setup, Consent Mode v2 i troubleshooting. HowTo schema + realne lekcije iz 10+ naloga.",
@@ -399,12 +399,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "agencija-vs-freelancer",
-    title: "Google Ads Agencija vs Freelancer vs In-House: Koju Opciju Izabrati u 2026? [€200–€2K+/mes]",
+    title: "Google Ads Agencija vs Freelancer vs In-House: Koju Opciju Izabrati u 2026? [€300-2.500+/mes]",
     date: "2026-01-26",
-    dateModified: "2026-04-27",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Google Ads agencija, freelancer ili in-house tim u 2026? Detaljno poređenje troškova (€200–€2.000+/mes), prednosti i mana svake opcije. Decision framework za biznise iz Srbije, regiona i EU. 67% kompanija menja partnera u prvoj godini — kako da izaberete prvi put kako treba.",
+      "Google Ads agencija, freelancer ili in-house tim u 2026? Detaljno poređenje troškova (€300-2.500+/mes), prednosti i mana svake opcije. Decision framework za biznise iz Srbije, regiona i EU. Kako da izaberete partnera prvi put kako treba.",
     featuredImage: "/blog/agencija-vs-freelancer.webp",
     readingTime: "11 min",
     content: <AgencijaVsFreelancerSR />
@@ -413,10 +413,10 @@ const srPosts: PostData[] = [
     slug: "conversion-tracking-vodic",
     title: "Conversion Tracking za Google Ads: Zašto Vaše Kampanje Ne Rade",
     date: "2026-01-26",
-    dateModified: "2026-02-05",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje tracking-a, enhanced conversions i server-side implementaciju.",
+      "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje GTM, GA4 i Google Ads tagova, Consent Mode v2 i Enhanced Conversions.",
     featuredImage: "/blog/conversion-tracking-vodic.webp",
     readingTime: "13 min",
     content: <ConversionTrackingVodicSR />
@@ -425,7 +425,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-greske",
     title: "Google Ads Greške: 20 Skupih Propusta u Kampanjama [2026]",
     date: "2026-01-27",
-    dateModified: "2026-02-12",
+    dateModified: "2026-07-24",
     category: "Google Ads optimizacija",
     metaDescription:
       "20 najčešćih Google Ads grešaka koje koštaju novac — od loše strukture, preko bidding grešaka, do propuštenih prilika. Proverite da li pravite neku od njih.",
@@ -449,7 +449,7 @@ const srPosts: PostData[] = [
     slug: "ecommerce-vs-b2b",
     title: "Google Ads za eCommerce vs B2B: Ključne Razlike u Strategiji",
     date: "2026-01-27",
-    dateModified: "2026-02-08",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "Google Ads strategija za eCommerce nije ista kao za B2B. Kompletan vodič o razlikama u kampanjama, targetingu, bidding-u i merenju uspeha za oba modela poslovanja.",
@@ -485,7 +485,7 @@ const srPosts: PostData[] = [
     slug: "kljucne-reci-vodic",
     title: "Koje ključne reči zapravo donose rezultate, a koje samo troše budžete",
     date: "2026-01-27",
-    dateModified: "2026-04-27",
+    dateModified: "2026-07-24",
     category: "Google Ads keywords",
     metaDescription:
       "Ključne reči za Google Ads: tipovi po intentu (transactional, commercial, informational), match types (broad/phrase/exact), negative keywords, 7 besplatnih alata za istraživanje i šablon za organizaciju 100+ keyword-a. Koraci koje koristim sa 20+ klijenata.",
@@ -509,7 +509,7 @@ const srPosts: PostData[] = [
     slug: "quality-score-vodic",
     title: "Quality Score: Šta Je i Kako Ga Poboljšati [2026]",
     date: "2026-01-27",
-    dateModified: "2026-01-04",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "Kompletan vodič za Google Ads Quality Score — šta je, kako se računa i konkretne taktike za poboljšanje. Smanjite CPC i poboljšajte pozicije sa boljim QS.",
@@ -545,7 +545,7 @@ const srPosts: PostData[] = [
     slug: "rsa-vodic",
     title: "Responsive Search Ads (RSA): Character Limits + 15 Headline Primera [2026]",
     date: "2026-03-14",
-    dateModified: "2026-04-09",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "Kompletan vodič za RSA oglase u Google Ads: character limit-i za headlines (30) i descriptions (90), 15 headline primera koji rade, i zašto 7-8 bolje od 15. Realni podaci iz 50+ naloga.",
@@ -555,12 +555,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "ctr-vodic",
-    title: "Šta je CTR (Click-Through Rate) i Kako Ga Podići sa 2% na 8% [2026]",
+    title: "Šta je CTR (Click-Through Rate) i Kako Ga Podići [2026]",
     date: "2026-03-24",
-    dateModified: "2026-04-17",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Šta je CTR (Click-Through Rate)? To je procenat ljudi koji kliknu na oglas nakon što ga vide. Formula, realni benchmarks za Srbiju (Search 5-10%, Display 0.5-1%) i 7 taktika za 4x poboljšanje iz 30 naloga.",
+      "Šta je CTR (Click-Through Rate)? To je procenat ljudi koji kliknu na oglas nakon što ga vide. Formula, benchmarks po tipu kampanje (Search 5-10%, prosek 2-3%, Display 0.5-1%) i 7 taktika za podizanje CTR-a iz naloga koje vodim.",
     featuredImage: "/blog/ctr-vodic.webp",
     readingTime: "12 min",
     content: <CtrVodicSR />
@@ -618,7 +618,7 @@ const enPosts: PostData[] = [
     slug: "offline-conversion-import-b2b",
     title: "Offline Conversion Import for B2B: Connect Google Ads to Your CRM",
     date: "2026-07-06",
-    dateModified: "2026-07-06",
+    dateModified: "2026-07-24",
     category: "Tracking",
     metaDescription:
       "Make the Google Ads algorithm learn from closed deals instead of form fills: GCLID vs Enhanced Conversions for Leads, setup for HubSpot, Salesforce and Pipedrive, MQL/SQL/Closed-won valuation, and common mistakes.",
@@ -642,7 +642,7 @@ const enPosts: PostData[] = [
     slug: "how-to-choose-google-ads-consultant",
     title: "How to Choose a Google Ads Consultant: 12 Questions to Ask Before Signing",
     date: "2026-07-06",
-    dateModified: "2026-07-06",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "12 vetting questions to ask a Google Ads consultant or agency before signing: who actually works on the account, account ownership, tracking, billing models. Green and red flags from practice.",
@@ -702,7 +702,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-audit-checklist-serbia-2026",
     title: "Google Ads Audit Checklist 2026 — 50 Points [Serbia]",
     date: "2026-05-09",
-    dateModified: "2026-05-09",
+    dateModified: "2026-07-24",
     category: "Google Ads Audit",
     metaDescription:
       "A concrete 50-item checklist for auditing Google Ads accounts in Serbia. 10 categories with real examples — eCommerce, B2B, lead-gen. Scoring system and a 30-minute quick audit.",
@@ -714,7 +714,7 @@ const enPosts: PostData[] = [
     slug: "ga4-google-ads-integration",
     title: "GA4 + Google Ads Integration: Complete Setup Guide [2026]",
     date: "2026-04-26",
-    dateModified: "2026-04-26",
+    dateModified: "2026-07-24",
     category: "Tracking",
     metaDescription:
       "Complete 7-step GA4 + Google Ads integration guide for 2026: link property, import key events as conversions, Primary/Secondary setup, Consent Mode v2, and troubleshooting. HowTo schema + lessons from 10+ accounts.",
@@ -738,7 +738,7 @@ const enPosts: PostData[] = [
     slug: "microsoft-ads-vs-google-ads-comparison",
     title: "Microsoft Ads vs Google Ads: Complete 2026 Comparison [From the Trenches]",
     date: "2026-04-19",
-    dateModified: "2026-04-23",
+    dateModified: "2026-07-24",
     category: "Strategija",
     metaDescription:
       "Microsoft Ads vs Google Ads in 2026: market share, CPC differences, when to use which platform, LinkedIn targeting advantage. From 2 years running a UK skincare brand on both platforms simultaneously.",
@@ -866,10 +866,10 @@ const enPosts: PostData[] = [
     slug: "google-ads-agency-vs-freelancer",
     title: "Google Ads Agency vs Freelancer vs In-House — Which Should You Hire in 2026?",
     date: "2026-01-26",
-    dateModified: "2026-04-17",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Google Ads agency vs freelancer vs in-house team: detailed cost comparison ($200–$2,000+/mo), pros and cons, and a decision framework. 67% of companies switch partners in year 1 — here's how to pick right the first time.",
+      "Google Ads agency vs freelancer vs in-house team: detailed cost comparison ($300–$3,000+/mo), pros and cons, and a decision framework. How to pick the right partner the first time.",
     featuredImage: "/blog/agencija-vs-freelancer.webp",
     readingTime: "11 min",
     content: <AgencyVsFreelancerEN />
@@ -878,10 +878,10 @@ const enPosts: PostData[] = [
     slug: "conversion-tracking-guide",
     title: "Conversion Tracking for Google Ads: Why Your Campaigns Aren't Working",
     date: "2026-01-26",
-    dateModified: "2026-02-05",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Poor conversion tracking is the #1 reason Google Ads campaigns fail. Guide to proper tracking setup, enhanced conversions, and server-side implementation.",
+      "Poor conversion tracking is the #1 reason Google Ads campaigns fail. Guide to proper GTM, GA4, and Google Ads tag setup, Consent Mode v2, and Enhanced Conversions.",
     readingTime: "13 min",
     content: <ConversionTrackingGuideEN />
   },
@@ -889,7 +889,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-mistakes",
     title: "Google Ads Mistakes: 20 Costly Errors in Your Campaigns [2026]",
     date: "2026-01-27",
-    dateModified: "2026-02-12",
+    dateModified: "2026-07-24",
     category: "Google Ads Optimization",
     metaDescription:
       "20 most common Google Ads mistakes that cost money — from poor structure, through bidding errors, to missed opportunities. Check if you're making any of them.",
@@ -911,7 +911,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-ecommerce-vs-b2b",
     title: "Google Ads for eCommerce vs B2B: Key Strategy Differences",
     date: "2026-01-27",
-    dateModified: "2026-02-08",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "Google Ads for eCommerce vs B2B: key differences in campaigns, targeting, bidding, and measuring success. Choose the right strategy for your business.",
@@ -944,7 +944,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-keyword-guide",
     title: "Which Keywords Actually Bring Customers — And Which Ones Just Burn Your Budget",
     date: "2026-01-27",
-    dateModified: "2026-05-25",
+    dateModified: "2026-07-24",
     category: "Google Ads Keywords",
     metaDescription:
       "What separates Google Ads keywords that bring paying customers from those that just drain your budget. Match types, intent classification, negative keywords, and lessons from 20+ accounts I've personally managed.",
@@ -966,7 +966,7 @@ const enPosts: PostData[] = [
     slug: "quality-score-guide",
     title: "Quality Score: What It Is and How to Improve It [2026]",
     date: "2026-01-27",
-    dateModified: "2026-01-04",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "Google Ads Quality Score guide — what it is, how it's calculated, and proven tactics to improve it. Lower CPC and boost ad positions.",
@@ -999,7 +999,7 @@ const enPosts: PostData[] = [
     slug: "responsive-search-ads-guide",
     title: "RSA Guide: Responsive Search Ads Framework That Actually Works [2026]",
     date: "2026-03-14",
-    dateModified: "2026-03-14",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
       "Responsive Search Ads framework with 7-8 headlines instead of 15, angle-based slot distribution, testing and optimisation. Guide backed by State of PPC 2026 data and real campaign results.",
@@ -1010,10 +1010,10 @@ const enPosts: PostData[] = [
     slug: "ctr-guide",
     title: "CTR (Click-Through Rate): What It Is, Formula & How to Improve [2026]",
     date: "2026-03-24",
-    dateModified: "2026-03-24",
+    dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "What is CTR (Click-Through Rate) in Google Ads? Formula, benchmarks by campaign type, diagnosing low CTR, and 7 proven tactics to improve your click-through rate.",
+      "What is CTR (Click-Through Rate) in Google Ads? Formula, benchmarks by campaign type (Search 5-10%, average 2-3%, Display 0.5-1%), diagnosing low CTR, and 7 tactics to improve your click-through rate.",
     readingTime: "12 min",
     content: <CtrGuideEN />
   }

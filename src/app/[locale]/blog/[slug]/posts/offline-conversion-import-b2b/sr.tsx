@@ -20,7 +20,7 @@ export default function OfflineConversionImportB2BPost() {
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">90</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Dana attribution window</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Dana conversion window</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Closed-won</p>
@@ -191,7 +191,7 @@ export default function OfflineConversionImportB2BPost() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
             <div>
-              <strong>Kreirajte odgovarajuće conversion actions u Google Ads</strong> <span className="text-gray-500">— Tools → Conversions → New conversion action → Import → HubSpot. Odaberite "Primary" za Closed-won, "Secondary" za MQL/SQL.</span>
+              <strong>Kreirajte odgovarajuće conversion actions u Google Ads</strong> <span className="text-gray-500">— Goals → Conversions → Summary → New conversion action → Import → HubSpot. Odaberite "Primary" za Closed-won, "Secondary" za MQL/SQL.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -281,7 +281,7 @@ export default function OfflineConversionImportB2BPost() {
         <ul className="text-sm">
           <li>Kreirajte custom polje "Google Click ID" na Deal nivou u Pipedrive, popunjavano preko web-to-lead forme</li>
           <li>Nedeljno ili mesečno, exportujte filter "Deals won in last 7/30 days" kao CSV sa kolonama: Google Click ID, Conversion Name, Conversion Time, Conversion Value, Conversion Currency</li>
-          <li>U Google Ads: Tools → Conversions → Uploads → CSV upload, poklopite kolone i pošaljite fajl</li>
+          <li>U Google Ads: Goals → Conversions → Uploads → CSV upload, poklopite kolone i pošaljite fajl</li>
           <li>Nedostatak: kašnjenje u odnosu na realno vreme, zavisno od učestalosti uploada — Google preporučuje upload u roku od 90 dana od klika</li>
         </ul>
       </div>
@@ -336,13 +336,13 @@ export default function OfflineConversionImportB2BPost() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div>
-              <strong>Označite samo Closed-won kao "Primary"</strong> <span className="text-gray-500">— U Conversions → Settings, samo Closed Won ulazi u "Conversions" kolonu koju Smart Bidding koristi za optimizaciju. MQL i SQL ostaju "Secondary" (samo za posmatranje).</span>
+              <strong>Označite samo Closed-won kao "Primary"</strong> <span className="text-gray-500">— U Goals → Conversions → Settings, samo Closed Won ulazi u "Conversions" kolonu koju Smart Bidding koristi za optimizaciju. MQL i SQL ostaju "Secondary" (samo za posmatranje).</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div>
-              <strong>Podesite realan attribution window</strong> <span className="text-gray-500">— Za dugi B2B sales ciklus koristite 90-dana click-through window (maksimum koji Google Ads dozvoljava), ne default 30 dana.</span>
+              <strong>Podesite realan conversion window</strong> <span className="text-gray-500">— Za dugi B2B sales ciklus koristite 90-dana click-through window (maksimum koji Google Ads dozvoljava), ne default 30 dana.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -380,7 +380,7 @@ export default function OfflineConversionImportB2BPost() {
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
-        <p className="font-semibold mb-2">Prekratak attribution window za dugi B2B sales ciklus</p>
+        <p className="font-semibold mb-2">Prekratak conversion window za dugi B2B sales ciklus</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Ako je prosečan sales ciklus 60-90+ dana, a conversion window je podešen na default 30 dana, sistem sistematski gubi Closed-won poslove koji su nastali od starijih klikova. Postavite window na maksimalnih 90 dana i pratite prosečan sales cycle iz CRM-a da procenite koliko toga ipak ostaje van dometa.

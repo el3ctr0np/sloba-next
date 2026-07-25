@@ -52,7 +52,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
           <li><a href="#category-2" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 2: Conversion Tracking (5 items)</a></li>
           <li><a href="#category-3" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 3: Campaign Settings (5 items)</a></li>
           <li><a href="#category-4" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 4: Keywords &amp; Search Terms (5 items)</a></li>
-          <li><a href="#category-5" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 5: Ads &amp; Extensions (5 items)</a></li>
+          <li><a href="#category-5" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 5: Ads &amp; Assets (5 items)</a></li>
           <li><a href="#category-6" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 6: Audiences &amp; Remarketing (5 items)</a></li>
           <li><a href="#category-7" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 7: Bidding Strategy (5 items)</a></li>
           <li><a href="#category-8" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 8: Budget &amp; Allocation (5 items)</a></li>
@@ -128,7 +128,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">5</td>
-              <td className="py-3 px-3 font-medium">Ads &amp; Extensions</td>
+              <td className="py-3 px-3 font-medium">Ads &amp; Assets</td>
               <td className="py-3 px-3 text-gray-600">RSA quality, sitelinks, callouts</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
@@ -446,9 +446,9 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       <hr />
 
       {/* ── Category 5 ── */}
-      <h2 id="category-5">Category 5: Ads &amp; Extensions (5 items)</h2>
+      <h2 id="category-5">Category 5: Ads &amp; Assets (formerly extensions) (5 items)</h2>
       <p>
-        Ads are what potential customers actually see — but in practice, over 50% of the accounts I audit have &quot;Poor&quot; Ad Strength and barely any extensions. That&apos;s a missed opportunity: better ads mean a higher CTR, which means a lower CPC and more conversions.
+        Ads are what potential customers actually see — but in practice, over 50% of the accounts I audit have &quot;Poor&quot; Ad Strength and barely any assets. That&apos;s a missed opportunity: better ads mean a higher CTR, which means a lower CPC and more conversions.
       </p>
 
       <h3>5.1 — RSA quality</h3>
@@ -487,21 +487,21 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       <ul>
         <li>A minimum of <strong>8 callouts</strong> (Google shows 4-6 at a time, and tests the rest)</li>
         <li>Structured Snippets — which category is selected? (&quot;Brands&quot;, &quot;Services&quot;, &quot;Types&quot;)</li>
-        <li>Promotion extension — active if you have a seasonal offer?</li>
+        <li>Promotion asset (formerly promotion extension) — active if you have a seasonal offer?</li>
       </ul>
 
-      <h3>5.5 — Image extensions + Logo extensions</h3>
+      <h3>5.5 — Image assets + logo asset</h3>
       <p><strong>What to check:</strong></p>
       <ul>
-        <li>Are image extensions set up?</li>
-        <li>Logo extension (if your brand is verified)?</li>
+        <li>Are image assets set up?</li>
+        <li>Logo asset (if your brand is verified)?</li>
         <li>Images: high quality, square ratio 1:1 + landscape 1.91:1</li>
       </ul>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">From experience</p>
         <p className="text-blue-800 text-base mb-0">
-          A client who added image extensions saw a +12% CTR boost on a Search campaign within 14 days. Minimal setup effort, concrete result.
+          A client who added image assets saw a +12% CTR boost on a Search campaign within 14 days. Minimal setup effort, concrete result.
         </p>
       </div>
 
@@ -700,7 +700,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       <h3>9.2 — Attribution model</h3>
       <p><strong>What to check:</strong></p>
       <ul>
-        <li>What&apos;s the current model? Last Click? Data-Driven? Position-Based?</li>
+        <li>What&apos;s the current model — Last Click or Data-Driven? Those are the only two Google Ads still offers; first-click, linear, time-decay and position-based were retired in 2023.</li>
         <li>In 2026, <strong>Data-Driven</strong> is the default and is usually the best choice</li>
         <li>Have you tested different models and compared the outcomes?</li>
       </ul>

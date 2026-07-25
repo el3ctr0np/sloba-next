@@ -6,7 +6,7 @@ export default function AgencijaVsFreelancerPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Odlučili ste da koristite Google Ads. Odlično. Sada dolazi pitanje: ko će upravljati kampanjama? Postoje tri modela, raspon cena je €200-2,000+, a 67% marketing menadžera menja partnera u prvoj godini. Ključ nije u ceni — ključ je u fitu.
+          Odlučili ste da koristite Google Ads. Odlično. Sada dolazi pitanje: ko će upravljati kampanjama? Postoje tri modela, raspon cena je €300-2.500+, a 67% marketing menadžera menja partnera u prvoj godini. Ključ nije u ceni — ključ je u fitu.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -14,7 +14,7 @@ export default function AgencijaVsFreelancerPost() {
             <p className="text-xs text-slate-400 mt-1 mb-0">Modela upravljanja</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">€200-2000+</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">€300-2.500+</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">Raspon mesečnih troškova</p>
           </div>
           <div className="text-center">
@@ -95,7 +95,7 @@ export default function AgencijaVsFreelancerPost() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Google Ads agencija</h3>
           <p className="text-base text-gray-600 mb-3">Tim specijalista koji vodi vaše kampanje. Kompletna usluga sa account managerom, PPC specijalistom i često dizajnerom. Sertifikovane agencije možete pronaći kroz <a href="https://ads.google.com/intl/sr_rs/home/find-a-partner/" target="_blank" rel="noopener noreferrer">Google Partners</a> direktorijum.</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Mesečni trošak:</strong></p>
-          <p className="text-sm mb-3">€500-3,000+</p>
+          <p className="text-sm mb-3">€300-2.500+</p>
           <p className="text-xs text-gray-500 mb-1"><strong>Za koga:</strong></p>
           <p className="text-base mb-0">Firme sa budžetom €5,000+ mesečno, multi-channel potrebe, potrebna struktura i skalabilnost.</p>
         </div>
@@ -229,7 +229,7 @@ export default function AgencijaVsFreelancerPost() {
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">Fiksna mesečna naknada</td>
-              <td className="py-3 px-3">€500-3,000</td>
+              <td className="py-3 px-3">€300-2.500</td>
               <td className="py-3 px-3">Mali do srednji budžeti, predvidivo</td>
             </tr>
             <tr className="border-b border-gray-200">
@@ -295,7 +295,7 @@ export default function AgencijaVsFreelancerPost() {
         </div>
         <p className="text-base text-gray-600 mb-3">Za budžete €1,000-10,000 mesečno, freelanceri nude najbolji value. Dobijate senior-level ekspertizu po ceni mid-level agencijskog retainera.</p>
         <ul className="text-base">
-          <li>€300-1,500/mesec vs €800-2,000 za agenciju</li>
+          <li>€300-1.500/mesec vs €800-2.500 za agenciju istog obima</li>
           <li>Nema overhead troškova agencijske strukture</li>
           <li>Transparentno pricing (znate koliko vremena ide na vaš nalog)</li>
           <li>Mogućnost rasta retainera kako raste spend</li>
@@ -361,7 +361,7 @@ export default function AgencijaVsFreelancerPost() {
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Project-based</td>
-              <td className="py-3 px-3">€500-3,000</td>
+              <td className="py-3 px-3">€300-2.500</td>
               <td className="py-3 px-3">Audit, setup, migracija naloga</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
@@ -522,7 +522,7 @@ export default function AgencijaVsFreelancerPost() {
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Mesečni trošak</td>
-              <td className="py-3 px-3">€500-3,000+</td>
+              <td className="py-3 px-3">€300-2.500+</td>
               <td className="py-3 px-3">€300-1,500</td>
               <td className="py-3 px-3">€1,000-2,500+</td>
             </tr>
@@ -645,7 +645,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
-          Većina firmi u regionu (Srbija/Ex-Yu) sa budžetom €3,000-15,000 mesečno dobija najbolju vrednost od freelancera ili male specijalizovane agencije. Agencije ima smisla tek kada prekoračite €10,000 spend i trebate multi-channel pokrivenost.
+          Većina firmi u regionu (Srbija/Ex-Yu) sa budžetom €3.000-15.000 mesečno dobija najbolju vrednost od freelancera ili male specijalizovane agencije. Agencija ima smisla od €5.000+ ad spend-a, a veće agencije sa punim timom tek kada prekoračite €10.000 spend i kada vam treba multi-channel pokrivenost.
         </p>
       </div>
 
@@ -786,7 +786,7 @@ export default function AgencijaVsFreelancerPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Zlatno pravilo izbora partnera</p>
-        <p className="text-base text-yellow-900 mb-0">Ako imate loš gut feeling tokom razgovora, to je obično tačno. Ne ignoriše instinkt. Saradnja sa pogrešnim partnerom će vas koštati 10x više od cene usluge.</p>
+        <p className="text-base text-yellow-900 mb-0">Ako imate loš osećaj tokom razgovora, to je obično tačno. Ne ignorišite instinkt. Saradnja sa pogrešnim partnerom će vas koštati 10x više od cene usluge.</p>
       </div>
 
       <hr />
@@ -809,7 +809,7 @@ export default function AgencijaVsFreelancerPost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Cene Google Ads agencija u Srbiji variraju od €400-500 za manje agencije do €1,500-3,000+ za veće, etablirane agencije. Model procenta od ad spend-a je obično 10-20% (najčešće 12-15%). Freelanceri naplaćuju €300-1,500 mesečno zavisno od obima posla. Preporučujem da tražite barem 2-3 ponude i uporedite ne samo cenu, već i scope rada i komunikacijski stil.
+          Cene Google Ads agencija u Srbiji kreću se u rasponu €300-2.500 mesečno: manje agencije pri dnu raspona, veće i etablirane pri vrhu. Model procenta od ad spend-a je obično 10-20% (najčešće 12-15%). Freelanceri naplaćuju €300-1.500 mesečno zavisno od obima posla. Preporučujem da tražite barem 2-3 ponude i uporedite ne samo cenu, već i scope rada i komunikacijski stil.
         </div>
       </details>
 
@@ -912,7 +912,7 @@ export default function AgencijaVsFreelancerPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            U Srbiji: €200-600/mesečno za manje agencije, €800-2,000+ za veće. U UK/USA: £500-2,000+ za mid-range, £3,000-10,000+ za enterprise. Većina radi na fiksnom retainer-u ili procentu od ad spend-a (10-20%).
+            U Srbiji: €300-2.500/mesečno, zavisno od veličine agencije i obima posla. U UK/USA: $500-3.000/mesečno za mid-range, $3.000-10.000+ za enterprise. Većina radi na fiksnom retainer-u ili procentu od ad spend-a (10-20%).
           </div>
         </details>
 
@@ -922,7 +922,7 @@ export default function AgencijaVsFreelancerPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Za budžete do €1,000/mesečno ad spend, freelancer je obično bolji izbor — niži troškovi, direktna komunikacija, veća posvećenost. Agencija ima smisla kad trebate multi-channel pristup ili imate budžet €3,000+/mesečno.
+            Za budžete do €1,000/mesečno ad spend, freelancer je obično bolji izbor — niži troškovi, direktna komunikacija, veća posvećenost. Agencija ima smisla kad trebate multi-channel pristup ili imate budžet €5.000+/mesečno.
           </div>
         </details>
 

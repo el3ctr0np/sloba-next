@@ -26,10 +26,10 @@ export default function KakoIzabratiGoogleAdsKonsultantaPost() {
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">
-              67%
+              1. god.
             </p>
             <p className="text-xs text-slate-400 mt-1 mb-0">
-              menja partnera u 1. godini
+              period u kom najviše firmi menja partnera (moje opažanje)
             </p>
           </div>
           <div className="text-center">

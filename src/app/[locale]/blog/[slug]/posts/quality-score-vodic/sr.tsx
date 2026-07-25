@@ -8,7 +8,7 @@ export default function QualityScoreVodicPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Quality Score je Google-ova ocena relevantnosti na skali 1-10. Direktno utiče na poziciju i cenu klika. Poboljšanje QS sa 5 na 7 smanjuje CPC za 28%. Tri komponente: Expected CTR, Ad Relevance i Landing Page Experience.
+          Quality Score je Google-ova ocena relevantnosti na skali 1-10. Direktno utiče na poziciju i cenu klika: bolji Quality Score snižava cenu klika, a koliko tačno zavisi od konkurencije u aukciji. Tri komponente: Expected CTR, Ad Relevance i Landing Page Experience.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -20,12 +20,12 @@ export default function QualityScoreVodicPost() {
             <p className="text-xs text-slate-400 mt-1 mb-0">komponente QS-a</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">28%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">CPC ušteda (QS 5→7)</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">CPC ↓</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">efekat višeg QS-a</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">400%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">CPC penalizacija za QS 1</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">CPC ↑</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">cena niskog QS-a</p>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ export default function QualityScoreVodicPost() {
           Šta je Quality Score u Google Ads-u?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Quality Score</strong> je Google-ova ocena relevantnosti oglasa na skali <strong>1-10</strong>, sastavljena od tri komponente: Expected CTR, Ad Relevance i Landing Page Experience. Direktno utiče na poziciju oglasa i cenu klika — poboljšanje QS sa 5 na 7 smanjuje CPC za <strong>28%</strong>, dok QS od 1 nosi i do <strong>400% veću</strong> cenu po kliku.
+          <strong>Quality Score</strong> je Google-ova ocena relevantnosti oglasa na skali <strong>1-10</strong>, sastavljena od tri komponente: Expected CTR, Ad Relevance i Landing Page Experience. Direktno utiče na poziciju oglasa i cenu klika: bolji Quality Score snižava cenu klika, a nizak ga podiže. Koliko tačno, zavisi od konkurencije u aukciji, jer Google ne objavljuje formulu.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ export default function QualityScoreVodicPost() {
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
-          Formula: Ad Rank = Max CPC Bid × Quality Score × Expected Impact of Extensions
+          Formula: Ad Rank = Max CPC Bid × Quality Score × očekivani uticaj assets (ranije extensions)
         </p>
       </div>
 
@@ -93,7 +93,7 @@ export default function QualityScoreVodicPost() {
       {/* ── CPC uticaj ── */}
       <h2 id="koliko-quality-score-utice-na-cenu-klika">Koliko Quality Score utiče na cenu klika</h2>
       <p>
-        Ovo je najvažnija tabela u celom vodiču. Pokazuje koliko više ili manje plaćate u zavisnosti od QS-a, sa baseline-om na QS 5.
+        Google ne objavljuje po kom koeficijentu Quality Score ulazi u cenu klika, pa svaka tabela sa fiksnim procentima obmanjuje. Ono što se pouzdano vidi u nalozima je smer: što je QS viši, to je cena klika za istu poziciju niža. Ova tabela zato daje smer, ne cifru.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -101,70 +101,59 @@ export default function QualityScoreVodicPost() {
           <thead>
             <tr className="border-b-2 border-gray-900 bg-gray-50">
               <th className="py-3 px-3 font-heading font-semibold">Quality Score</th>
-              <th className="py-3 px-3 font-heading font-semibold">CPC uticaj</th>
-              <th className="py-3 px-3 font-heading font-semibold">Primer (baseline €1.00)</th>
+              <th className="py-3 px-3 font-heading font-semibold">Efekat na CPC (u odnosu na QS 5)</th>
               <th className="py-3 px-3 font-heading font-semibold">Status</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">10</td>
-              <td className="py-3 px-3">-50%</td>
-              <td className="py-3 px-3">€0.50</td>
+              <td className="py-3 px-3">Znatno niži</td>
               <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Odlično</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">9</td>
-              <td className="py-3 px-3">-44%</td>
-              <td className="py-3 px-3">€0.56</td>
+              <td className="py-3 px-3">Znatno niži</td>
               <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Odlično</span></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">8</td>
-              <td className="py-3 px-3">-37%</td>
-              <td className="py-3 px-3">€0.63</td>
+              <td className="py-3 px-3">Osetno niži</td>
               <td className="py-3 px-3"><span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">Vrlo dobro</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">7</td>
-              <td className="py-3 px-3">-28%</td>
-              <td className="py-3 px-3">€0.72</td>
+              <td className="py-3 px-3">Niži</td>
               <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">Dobro</span></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">6</td>
-              <td className="py-3 px-3">-17%</td>
-              <td className="py-3 px-3">€0.83</td>
+              <td className="py-3 px-3">Blago niži</td>
               <td className="py-3 px-3"><span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded">OK</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">5</td>
-              <td className="py-3 px-3">Baseline (0%)</td>
-              <td className="py-3 px-3">€1.00</td>
+              <td className="py-3 px-3">Referentna tačka</td>
               <td className="py-3 px-3"><span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">Prosek</span></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">4</td>
-              <td className="py-3 px-3">+25%</td>
-              <td className="py-3 px-3">€1.25</td>
+              <td className="py-3 px-3">Blago viši</td>
               <td className="py-3 px-3"><span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-0.5 rounded">Ispod proseka</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">3</td>
-              <td className="py-3 px-3">+67%</td>
-              <td className="py-3 px-3">€1.67</td>
+              <td className="py-3 px-3">Osetno viši</td>
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Loš</span></td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">2</td>
-              <td className="py-3 px-3">+150%</td>
-              <td className="py-3 px-3">€2.50</td>
+              <td className="py-3 px-3">Znatno viši</td>
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Kritičan</span></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">1</td>
-              <td className="py-3 px-3">+400%</td>
-              <td className="py-3 px-3">€5.00</td>
+              <td className="py-3 px-3">Višestruko viši</td>
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Hitna akcija</span></td>
             </tr>
           </tbody>
@@ -172,9 +161,9 @@ export default function QualityScoreVodicPost() {
       </div>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
-        <p className="font-heading font-bold text-lg mb-2">ROI primer: QS poboljšanje sa 5 na 7</p>
+        <p className="font-heading font-bold text-lg mb-2">Kako da izmerite efekat kod sebe</p>
         <p className="text-base text-yellow-900 mb-0">
-          Mesečni spend €5,000 sa QS 5. Poboljšanjem na QS 7, CPC se smanjuje za 28%. To znači ili €1,400 uštede mesečno za isti broj klikova, ili 28% više klikova za isti budžet. Na godišnjem nivou: €16,800 uštede.
+          Ne verujte tuđim procentima, izmerite svoj. Zabeležite prosečan CPC i Quality Score za grupu ključnih reči, uradite izmene na oglasu i landing page-u, pa uporedite isti period posle 30 dana. To je jedini broj koji važi za vaš nalog, jer efekat zavisi od toga ko vam je konkurencija u aukciji.
         </p>
       </div>
 
@@ -188,17 +177,17 @@ export default function QualityScoreVodicPost() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% uticaja</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">komponenta ocene</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Expected CTR</h3>
-          <p className="text-base text-gray-600 mb-0">Verovatnoća da će neko kliknuti na vaš oglas — vidi <GlossaryLink slug="expected-ctr">Expected CTR</GlossaryLink>. Zavisi od headline-ova, CTA-a, extensions i istorijskih performansi.</p>
+          <p className="text-base text-gray-600 mb-0">Verovatnoća da će neko kliknuti na vaš oglas — vidi <GlossaryLink slug="expected-ctr">Expected CTR</GlossaryLink>. Zavisi od headline-ova, CTA-a, assets (ranije extensions) i istorijskih performansi.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~20% uticaja</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">komponenta ocene</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Ad Relevance</h3>
           <p className="text-base text-gray-600 mb-0">Koliko je vaš oglas relevantan za ključnu reč — vidi <GlossaryLink slug="ad-relevance">Ad Relevance</GlossaryLink>. Zavisi od podudaranja ključne reči sa tekstom oglasa.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">~40% uticaja</p>
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">komponenta ocene</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Landing Page Experience</h3>
           <p className="text-base text-gray-600 mb-0">Koliko je <GlossaryLink slug="landing-page-experience">LP koristan i relevantan</GlossaryLink>. Zavisi od sadržaja, brzine, mobile optimizacije i trust signala.</p>
         </div>
@@ -220,7 +209,7 @@ export default function QualityScoreVodicPost() {
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
               <td className="py-3 px-3">Average</td>
               <td className="py-3 px-3">Average</td>
-              <td className="py-3 px-3 font-medium">Poboljšajte oglas (headline, CTA, extensions)</td>
+              <td className="py-3 px-3 font-medium">Poboljšajte oglas (headline, CTA, assets)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3">Average</td>
@@ -254,7 +243,7 @@ export default function QualityScoreVodicPost() {
 
       {/* ── Poboljšanje Expected CTR ── */}
       <h2 id="kako-poboljsati-expected-ctr">Kako poboljšati Expected CTR</h2>
-      <p>Expected CTR čini ~40% Quality Score-a i najdirektnije se može poboljšati optimizacijom oglasa.</p>
+      <p>Expected CTR je jedna od tri komponente Quality Score-a (Google ne objavljuje koliko svaka nosi) i najdirektnije se popravlja optimizacijom oglasa.</p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
@@ -283,13 +272,13 @@ export default function QualityScoreVodicPost() {
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Dodajte sve extensions</h3>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Dodajte sve assets</h3>
         </div>
-        <p className="text-base text-gray-600 mb-3">Extensions povećavaju veličinu oglasa i direktno utiču na CTR.</p>
+        <p className="text-base text-gray-600 mb-3">Assets (ranije extensions) povećavaju veličinu oglasa i direktno utiču na CTR.</p>
         <ul className="text-sm">
-          <li>Sitelinks: +10-20% CTR</li>
-          <li>Callouts: +5-10% CTR</li>
-          <li>Structured Snippets: +5-10% CTR</li>
+          <li>Sitelinks - najveći uticaj na površinu oglasa</li>
+          <li>Callouts - kratke poruke koje pojačavaju ponudu</li>
+          <li>Structured Snippets - konkretizuju asortiman ili usluge</li>
         </ul>
       </div>
 
@@ -376,7 +365,7 @@ export default function QualityScoreVodicPost() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Nedelja 4: CTR optimizacija</strong> <span className="text-gray-500">— testirajte nove oglase, dodajte sve extensions, A/B test headline-ova</span></div>
+            <div><strong>Nedelja 4: CTR optimizacija</strong> <span className="text-gray-500">— testirajte nove oglase, dodajte sve assets, A/B test headline-ova</span></div>
           </div>
         </div>
       </div>
@@ -539,7 +528,7 @@ export default function QualityScoreVodicPost() {
       {/* ── Zaključak + CTA ── */}
       <h2 id="zakljucak">Zaključak</h2>
       <p>
-        Quality Score je najmoćniji alat za kontrolu troškova u Google Ads-u. Poboljšanje sa QS 5 na 7 smanjuje CPC za 28%, što na godišnjem nivou može značiti hiljade evra uštede. Fokusirajte se na tri komponente — Expected CTR, Ad Relevance i Landing Page Experience — koristeći dijagnostičku tabelu da identifikujete gde je problem.
+        Quality Score je najmoćniji alat za kontrolu troškova u Google Ads-u. Bolji Quality Score snižava cenu klika, a koliko tačno zavisi od konkurencije u aukciji, pa efekat merite na svom nalogu, ne po tuđoj tabeli. Fokusirajte se na tri komponente — Expected CTR, Ad Relevance i Landing Page Experience — koristeći dijagnostičku tabelu da identifikujete gde je problem.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">

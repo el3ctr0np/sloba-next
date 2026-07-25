@@ -388,11 +388,14 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">P</span>
             <div>
-              <h3 className="text-base font-heading font-bold mt-0 mb-1">Performance Max ekvivalent — Microsoft Audience Campaigns + Smart Shopping</h3>
+              <h3 className="text-base font-heading font-bold mt-0 mb-1">Performance Max ekvivalent — Microsoft Audience Campaigns + Microsoft PMax</h3>
               <p className="text-base text-gray-600 mb-2">
                 Microsoft nema identični PMax, ali ima Audience Network (ekvivalent Google Display/YouTube
-                mreže) i Smart Shopping kampanje koje automatski distribuiraju budget kroz Search i Shopping.
-                U 2025. je lansiran &quot;Performance Max&quot; u beta na Microsoft Ads — postepeno rollout tokom 2026.
+                mreže) i svoju Performance Max kampanju koja automatski distribuira budget kroz Search i Shopping.
+                Napomena o terminologiji: Smart Shopping se više ne pravi ni na jednoj platformi. Google ga je
+                ugasio 2022. i migrirao u Performance Max, a Microsoft je isto tako svoje Smart Shopping kampanje
+                presložio u Performance Max. Ako u nekom starijem vodiču vidite preporuku da napravite Smart
+                Shopping kampanju, taj tip kampanje danas ne postoji.
               </p>
               <p className="text-xs text-gray-500 mb-0">
                 Iz iskustva: Audience Network kampanje daju niže CPC-ove od Google Display-a, ali i niži
@@ -793,7 +796,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Tehnički, <strong>izuzetno lako</strong>. Microsoft Ads ima &quot;Import from Google Ads&quot; alat koji automatski prebacuje kompletnu strukturu kampanja (kampanje, ad groups, keywords, ads, extensions) iz Google naloga. Inicijalni import traje 1–2 sata (podešavanja, budžet mapping, prilagođavanje bid-ova). Iz prakse: mesečna sinhronizacija je automatska i traje svega 15 minuta manualnog pregleda. Pametni oglašivači imaju Microsoft kao &quot;shadow campaign&quot; koji se automatski sinhronizuje sa Google promenama.
+            Tehnički, <strong>izuzetno lako</strong>. Microsoft Ads ima &quot;Import from Google Ads&quot; alat koji automatski prebacuje kompletnu strukturu kampanja (kampanje, ad groups, keywords, ads, assets, ranije extensions) iz Google naloga. Inicijalni import traje 1–2 sata (podešavanja, budžet mapping, prilagođavanje bid-ova). Iz prakse: mesečna sinhronizacija je automatska i traje svega 15 minuta manualnog pregleda. Pametni oglašivači imaju Microsoft kao &quot;shadow campaign&quot; koji se automatski sinhronizuje sa Google promenama.
           </div>
         </details>
 
