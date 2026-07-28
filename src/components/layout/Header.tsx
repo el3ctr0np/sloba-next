@@ -50,16 +50,24 @@ export function Header() {
     return `/blog/${enSlug}` as any;
   }, [currentBlogSlug, resolvedPathname]);
 
+  // Full list — used by the mobile menu.
   const navItems = useMemo(() => [
     { label: t("nav.home"), href: "/" as const },
     { label: t("nav.services"), href: "/usluge" as const, hasServiceMenu: true },
-    { label: t("nav.methodology"), href: "/metodologija" as const },
     { label: t("nav.caseStudies"), href: "/case-studies" as const },
     { label: t("nav.blog"), href: "/blog" as const },
     { label: t("nav.glossary"), href: "/recnik" as const },
     { label: t("nav.about"), href: "/o-meni" as const },
     { label: t("nav.contact"), href: "/kontakt" as const },
   ], [t]);
+
+  // Desktop nav is trimmed so everything fits on one line: the logo covers
+  // "Home", the CTA button covers "Contact", and "Glossary" stays reachable
+  // via the mobile menu and footer.
+  const desktopNavItems = useMemo(
+    () => navItems.filter((item) => !["/", "/recnik", "/kontakt"].includes(item.href)),
+    [navItems],
+  );
 
   const serviceGroups = useMemo(() => [
     {
@@ -97,7 +105,7 @@ export function Header() {
       </div>
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20 px-4">
+        <div className="flex items-center justify-between gap-4 h-20 px-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
             <Image
@@ -108,14 +116,14 @@ export function Header() {
               className="w-11 h-11"
               priority
             />
-            <span className="font-heading font-bold text-xl hidden sm:inline">
+            <span className="font-heading font-bold text-xl hidden sm:inline lg:hidden xl:inline whitespace-nowrap">
               Slobodan Jelisavac
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {navItems.map((item) => (
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7">
+            {desktopNavItems.map((item) => (
               <div
                 key={item.label}
                 className="relative pb-2"
@@ -124,7 +132,7 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className="font-medium hover:text-primary transition-colors"
+                  className="font-medium hover:text-primary transition-colors whitespace-nowrap text-[15px]"
                 >
                   {item.label}
                   {item.hasServiceMenu && (
@@ -167,8 +175,8 @@ export function Header() {
             ))}
           </nav>
 
-          {/* CTA Button + Language Switcher */}
-          <div className="hidden lg:flex items-center gap-4">
+          {/* Language Switcher + Secondary & Primary CTA */}
+          <div className="hidden lg:flex items-center gap-3 shrink-0">
             <div className="flex items-center gap-2 text-sm font-semibold border border-gray-300 rounded-full px-3 py-1">
               <Link
                 href={srHref}
@@ -186,7 +194,14 @@ export function Header() {
                 EN
               </Link>
             </div>
-            <Button href="/kontakt" variant="secondary" ctaLocation="header_desktop">
+            <Link
+              href="/profit-provera"
+              onClick={() => trackCtaClick("header_profit_check", "/profit-provera")}
+              className="border-2 border-primary text-primary px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition-colors hover:bg-primary hover:text-white"
+            >
+              {t("profitCheck")}
+            </Link>
+            <Button href="/kontakt" variant="secondary" className="whitespace-nowrap !px-5 text-sm" ctaLocation="header_desktop">
               {t("cta")}
             </Button>
           </div>
@@ -217,10 +232,20 @@ export function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-200 py-4 px-4 max-h-[80vh] overflow-y-auto">
-            <div className="mb-4">
+            <div className="mb-4 space-y-2">
               <Button href="/kontakt" variant="secondary" className="w-full text-center" ctaLocation="header_mobile_menu">
                 {t("cta")}
               </Button>
+              <Link
+                href="/profit-provera"
+                onClick={() => {
+                  trackCtaClick("header_mobile_profit_check", "/profit-provera");
+                  setMobileMenuOpen(false);
+                }}
+                className="block w-full text-center border-2 border-primary text-primary px-4 py-2.5 rounded-xl font-semibold"
+              >
+                {t("profitCheck")}
+              </Link>
             </div>
             {navItems.map((item) => (
               <div key={item.label} className="py-2">

@@ -86,10 +86,10 @@ export function ProfitFirstMethod({ locale }: { locale: string }) {
         </div>
         <div className="text-center mt-10">
           <Link
-            href="/metodologija"
+            href="/profit-provera"
             className="inline-flex items-center gap-1 text-primary font-semibold hover:underline"
           >
-            {isEn ? "The complete method →" : "Kompletan metod →"}
+            {isEn ? "Check your profit — free →" : "Proverite svoj profit besplatno →"}
           </Link>
         </div>
       </div>

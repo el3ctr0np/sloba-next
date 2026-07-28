@@ -12,6 +12,17 @@ const nextConfig: NextConfig = {
         destination: "/:locale/usluge",
         permanent: true
       },
+      // Methodology page retired Jul 2026 — folded into service pages
+      {
+        source: "/:locale/metodologija",
+        destination: "/:locale/usluge",
+        permanent: true
+      },
+      {
+        source: "/:locale/methodology",
+        destination: "/:locale/usluge",
+        permanent: true
+      },
       {
         source: "/:locale/usluge/seo",
         destination: "/:locale/usluge",

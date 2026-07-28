@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Consulting | Price from $200/hr — Slobodan Jelisavac"
       : "Google Ads Konsultacije - Cena od €150/sat | Digital Jelisavac",
     description: isEn
-      ? "Google Ads consulting from $200/hr (3h package $500) with Slobodan Jelisavac of Digital Jelisavac. Strategic advice, second opinions, and problem-solving for your PPC campaigns. No long-term commitment."
-      : "Google Ads konsultacije direktno sa Slobodanom Jelisavcem (Digital Jelisavac), cena od €150/sat (paket 3h €400). Strategija, second opinion, problem solving. Bez dugoročne obaveze. Zakažite konsultaciju.",
+      ? "Google Ads consulting from $200/hr (3h package $600) with Slobodan Jelisavac of Digital Jelisavac. Strategic advice, second opinions, and problem-solving for your PPC campaigns. No long-term commitment."
+      : "Google Ads konsultacije direktno sa Slobodanom Jelisavcem (Digital Jelisavac), cena od €150/sat (paket 3h €450). Strategija, second opinion, problem solving. Bez dugoročne obaveze. Zakažite konsultaciju.",
     locale,
     path: "/services/consultations",
     srPath: "/usluge/konsultacije",
@@ -291,7 +291,7 @@ export default async function KonsultacijePage({ params }: Props) {
           {
             question: "How much does Google Ads consulting cost?",
             answer:
-              "A standard 1-hour session is $200, or $500 for a 3-hour package if you need more sessions. Deep Dive (2 hours, detailed account review) is $350. There are no hidden fees — you pay only for the time booked, no retainer required."
+              "A standard 1-hour session is $200, or $600 for a 3-hour package if you need more sessions. Deep Dive (2 hours plus preparation, detailed account review) is $600. There are no hidden fees — you pay only for the time booked, no retainer required."
           },
           {
             question: "Is there a minimum ad spend budget for consulting?",
@@ -343,7 +343,7 @@ export default async function KonsultacijePage({ params }: Props) {
           {
             question: "Koliko koštaju Google Ads konsultacije?",
             answer:
-              "Standardna 1-satna sesija je €150, ili €400 za paket od 3 sata ako vam trebaju dodatne sesije. Deep Dive (2 sata + priprema, detaljan account review) je €250. Nema skrivenih troškova — plaćate samo zakazano vreme, bez mesečnog ugovora."
+              "Standardna 1-satna sesija je €150, ili €450 za paket od 3 sata ako vam trebaju dodatne sesije. Deep Dive (2 sata + priprema, detaljan account review) je €450. Nema skrivenih troškova, plaćate samo zakazano vreme, bez mesečnog ugovora."
           },
           {
             question: "Da li postoji minimalni budžet za oglašavanje da bi konsultacija imala smisla?",
@@ -537,7 +537,7 @@ export default async function KonsultacijePage({ params }: Props) {
                   Google Ads consulting is ideal when you have specific questions,
                   need a <strong className="text-white">second opinion</strong>, or want{" "}
                   <strong className="text-white">strategic guidance</strong> without long-term commitment.
-                  For <strong className="text-white">$200/hr</strong> (or $500 for a 3h package) you get full attention and
+                  For <strong className="text-white">$200/hr</strong> (or $600 for a 3h package) you get full attention and
                   expertise from 10+ years working with the Google Ads platform.
                 </>
               ) : (
@@ -546,7 +546,7 @@ export default async function KonsultacijePage({ params }: Props) {
                   Google Ads konsultacije su idealne kada imate konkretna pitanja,
                   trebate <strong className="text-white">second opinion</strong> ili želite{" "}
                   <strong className="text-white">strategijsku pomoć</strong> bez dugoročne obaveze.
-                  Za <strong className="text-white">€150/sat</strong> (ili €400 za paket 3h) dobijate punu pažnju i
+                  Za <strong className="text-white">€150/sat</strong> (ili €450 za paket 3h) dobijate punu pažnju i
                   ekspertizu iz 10+ godina rada sa Google Ads platformom.
                 </>
               )}
@@ -676,7 +676,7 @@ export default async function KonsultacijePage({ params }: Props) {
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
               {locale === "en" ? "$200" : "€150"}<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "hr" : "sat"}</span>
-              <span className="block text-sm text-gray-500 font-normal mt-0.5">{locale === "en" ? "3h package — $500" : "paket 3h — €400"}</span>
+              <span className="block text-sm text-gray-500 font-normal mt-0.5">{locale === "en" ? "3h package — $600" : "paket 3h: €450"}</span>
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
@@ -725,7 +725,7 @@ export default async function KonsultacijePage({ params }: Props) {
             </p>
             <h3 className="text-xl font-heading font-bold mb-1">Deep Dive</h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "$350" : "€250"}<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "2 hours + prep" : "2 sata + priprema"}</span>
+              {locale === "en" ? "$600" : "€450"}<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "2 hours + prep" : "2 sata + priprema"}</span>
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"

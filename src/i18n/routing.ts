@@ -90,12 +90,6 @@ export const routing = defineRouting({
       en: "/about"
     },
 
-    // Methodology (Profit-First method)
-    "/metodologija": {
-      sr: "/metodologija",
-      en: "/methodology"
-    },
-
     // Blog
     "/blog": "/blog",
     "/blog/[slug]": "/blog/[slug]",
