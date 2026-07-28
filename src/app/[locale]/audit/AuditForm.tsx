@@ -27,16 +27,29 @@ export function AuditForm({ locale }: { locale: string }) {
     pushDataLayer("form_start", { form_name: FORM_NAME });
   };
 
+  // Mapira ad spend opciju (tekstualni label) u tier za GA4 conversion value
+  const spendToTier = (v: string): "high" | "mid" | "low" | "unknown" => {
+    if (!v) return "unknown";
+    if (v.startsWith("<")) return "low";
+    if (v.includes("10.000+") || v.includes("10,000+")) return "high";
+    if (v.includes("– €10.000") || v.includes("– $10,000")) return "high";
+    if (v.includes("– €3.000") || v.includes("– $3,000")) return "mid";
+    return "low";
+  };
+
   const handleSubmit = () => {
     // Fires synchronously before the native form submit navigates away to
     // formsubmit.co — do NOT preventDefault, this is a native POST + _next redirect.
+    const lead_tier = spendToTier(adSpend);
     pushDataLayer("lead_submit", {
       form_name: FORM_NAME,
       ad_spend: adSpend,
+      lead_tier,
     });
     try {
       sessionStorage.setItem("dj_lead_form", FORM_NAME);
       sessionStorage.setItem("dj_lead_ad_spend", adSpend || "unknown");
+      sessionStorage.setItem("dj_lead_tier", lead_tier);
       sessionStorage.setItem("dj_lead_pending", "1");
     } catch {
       // Ignore sessionStorage errors (private mode etc.)
