@@ -12,11 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Search Ads Management | High-Intent PPC — Digital Jelisavac"
-      : "Vođenje Google Search Kampanja | Digital Jelisavac",
+      ? "Google Search Ads Management | High-Intent PPC — Slobodan Jelisavac"
+      : "Vođenje Google Search Kampanja | Slobodan Jelisavac",
     description: isEn
-      ? "Digital Jelisavac's expert Google Search campaign management for B2B and eCommerce. High-intent keyword strategy, conversion-focused ad copy, and Quality Score optimization. Free consultation."
-      : "Profesionalne Google Search kampanje od Digital Jelisavac agencije za B2B i eCommerce. Keyword strategija, ad copy, bid optimizacija. Besplatna konsultacija.",
+      ? "I personally run Google Search campaigns for B2B and eCommerce — 10+ years of experience. High-intent keyword strategy, conversion-focused ad copy, and Quality Score optimization. Free consultation."
+      : "Google Search kampanje koje vodim lično, za B2B i eCommerce - 10+ godina iskustva. Keyword strategija, ad copy, bid optimizacija. Besplatna konsultacija.",
     locale,
     path: "/services/search-campaigns",
     srPath: "/usluge/search-kampanje",

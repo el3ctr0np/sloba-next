@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return buildMetadata({
-      title: "Digital Jelisavac — Senior Google Ads Agency | Slobodan Jelisavac",
-      description: "Digital Jelisavac is a senior-led boutique Google Ads agency, led personally by Slobodan Jelisavac (10+ years, 3x UK Search Awards). Search, Shopping and Performance Max, managed to profit.",
+      title: "Slobodan Jelisavac — Senior Google Ads Expert & Agency",
+      description: "I personally run every Google Ads account — 10+ years, 3x UK Search Awards. Search, Shopping and Performance Max, managed to profit for eCommerce and B2B brands.",
       locale,
       path: "",
       ogImage: "/og/homepage.png",
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "Digital Jelisavac - Senior Google Ads Agencija | S. Jelisavac",
-    description: "Digital Jelisavac je senior-led boutique Google Ads agencija koju lično vodi Slobodan Jelisavac (10+ godina, 3x UK Search Awards). Search, Shopping i Performance Max, optimizovani na profit.",
+    title: "Slobodan Jelisavac - Senior Google Ads Stručnjak i Agencija",
+    description: "Lično vodim svaki Google Ads nalog - 10+ godina iskustva, 3x UK Search Awards. Search, Shopping i Performance Max, optimizovani na profit za eCommerce i B2B brendove.",
     locale,
     path: "",
     ogImage: "/og/homepage.png",
@@ -49,7 +49,7 @@ export default async function Home({ params }: Props) {
       ? {
           title: "A senior Google Ads partner for brands that want results, not overhead and junior staff",
           subtitle:
-            "Digital Jelisavac is a senior-led boutique Google Ads practice. Your account is run by a senior specialist, not a junior learning on your budget. Search, Shopping and Performance Max, managed to profit.",
+            "Your account is run personally by a senior specialist, not a junior learning on your budget. A boutique practice: Search, Shopping and Performance Max, managed to profit.",
           ctaText: "Book a free 20-minute call",
           ctaHref: "/kontakt",
           secondaryCtaText: "View Results",
@@ -65,7 +65,7 @@ export default async function Home({ params }: Props) {
       : {
           title: "Senior Google Ads partner za brendove koji žele rezultate, ne troškove i juniore",
           subtitle:
-            "Digital Jelisavac je senior-led boutique Google Ads agencija. Vaš nalog vodi senior stručnjak lično, ne junior koji uči na vašem budžetu. Search, Shopping i Performance Max, optimizovani na profit.",
+            "Vaš nalog vodi senior stručnjak lično, ne junior koji uči na vašem budžetu. Boutique pristup: Search, Shopping i Performance Max, optimizovani na profit.",
           ctaText: "Zakažite besplatnih 20 minuta",
           ctaHref: "/kontakt",
           secondaryCtaText: "Pogledajte rezultate",
@@ -73,7 +73,7 @@ export default async function Home({ params }: Props) {
           trustBadges: [
             "10+ godina iskustva",
             "3x UK Search Awards nagrade",
-            "Google Partner (Ad Mixer — zvanični predstavnik)",
+            "Google Partner (Ad Mixer - zvanični predstavnik)",
             "Partner @ Funky Enterprises",
             "50+ brendova iz 6+ zemalja",
           ],

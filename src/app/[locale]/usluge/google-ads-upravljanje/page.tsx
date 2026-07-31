@@ -15,11 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Management | Digital Jelisavac — Senior PPC, Serbia"
-      : "Google Ads Upravljanje - Vođenje Kampanja | Digital Jelisavac",
+      ? "Google Ads Management — Senior Runs Your Account | Slobodan Jelisavac"
+      : "Vođenje Google Ads Kampanja - Senior Na Vašem Nalogu | Slobodan Jelisavac",
     description: isEn
-      ? "Senior-led Google Ads management for eCommerce and B2B, run personally by Slobodan Jelisavac of Digital Jelisavac. 3.7x average ROAS (eCommerce), 10+ years of experience. From $2,500/month. Book your free consultation."
-      : "Senior-led vođenje Google Ads kampanja za eCommerce i B2B, vodi lično Slobodan Jelisavac (Digital Jelisavac). Cena od €700/mes, 3.7x prosečan ROAS (eCommerce). Zakažite besplatnu konsultaciju.",
+      ? "I personally run Google Ads accounts for eCommerce and B2B - 10+ years, 3.7x average ROAS, UK and US markets. No junior handoffs. From $2,500/month. Book a free consultation."
+      : "Deset godina lično vodim Google Ads naloge za eCommerce i B2B - od srpskih firmi do UK brendova. Bez juniora na vašem nalogu. Od €700/mes. Zakažite besplatnu konsultaciju.",
     locale,
     path: "/services/google-ads-management",
     srPath: "/usluge/google-ads-upravljanje",
@@ -705,28 +705,29 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
-                ? "Google Ads management services in Belgrade, Serbia — measurable results for eCommerce & B2B"
-                : "Google oglašavanje koje donosi merljive rezultate"}
+                ? "Google Ads management where a senior runs your account — not a team of juniors"
+                : "Vođenje Google Ads kampanja: senior na vašem nalogu, ne tim juniora"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
                 <>
-                  Looking for professional <strong className="text-white">Google Ads management services</strong> from
-                  a <strong className="text-white">Belgrade-based senior PPC specialist</strong>? At{" "}
-                  <strong className="text-white">Digital Jelisavac</strong> I personally handle complete management
-                  of your Google Ads account — from strategy and campaign structure to daily optimization.
-                  Based in Serbia, working with eCommerce and B2B companies across <strong className="text-white">Belgrade,
-                  the UK, and EU markets</strong>. Focus: <strong className="text-white">ROAS, CPA, and real
-                  revenue growth</strong>.
+                  I&apos;ve spent ten years running Google Ads accounts for eCommerce and B2B businesses —
+                  UK, US, and EU markets. When you hand me your account, you don&apos;t get an account
+                  manager and a team of juniors learning on your budget:{" "}
+                  <strong className="text-white">strategy, campaign structure, and daily optimization
+                  are done by me</strong>. And I measure myself on{" "}
+                  <strong className="text-white">ROAS, CPA, and profit</strong> — the same numbers you
+                  measure your business by.
                 </>
               ) : (
                 <>
-                  Tražite profesionalno <strong className="text-white">Google oglašavanje</strong> koje
-                  zaista donosi rezultate? U <strong className="text-white">Digital Jelisavac</strong> agenciji
-                  ja lično preuzimam kompletno upravljanje vašim Google Ads nalogom, od strategije i
-                  strukture kampanja do svakodnevne optimizacije. Fokus:{" "}
-                  <strong className="text-white">ROAS, CPA i realan rast prihoda</strong> za
-                  eCommerce i B2B kompanije u Srbiji i širom Evrope.
+                  Deset godina vodim Google Ads naloge za eCommerce i B2B biznise - od srpskih firmi
+                  do brendova sa UK i US tržišta. Kad mi poverite nalog, ne dobijate account managera
+                  i tim juniora koji uči na vašem budžetu:{" "}
+                  <strong className="text-white">strategiju, strukturu kampanja i svakodnevnu
+                  optimizaciju radim ja</strong>. I merim se kroz{" "}
+                  <strong className="text-white">ROAS, CPA i profit</strong> - iste brojke kroz koje
+                  vi merite svoj biznis.
                 </>
               )}
             </p>

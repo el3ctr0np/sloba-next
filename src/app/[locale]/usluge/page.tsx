@@ -12,11 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Services | Digital Jelisavac — Senior PPC Agency"
-      : "Google Ads Usluge | Digital Jelisavac - Senior PPC Agencija",
+      ? "Google Ads Services | Slobodan Jelisavac — Senior PPC Expert"
+      : "Google Ads Usluge | Slobodan Jelisavac - Senior PPC Stručnjak",
     description: isEn
-      ? "Digital Jelisavac is a senior-led boutique Google Ads agency: management, audit, Shopping, PMax and remarketing for eCommerce and B2B. Led personally by Slobodan Jelisavac (10+ years, 3.7x average ROAS, 3x UK Search Awards)."
-      : "Digital Jelisavac je senior-led boutique Google Ads agencija: upravljanje, audit, Shopping, PMax i remarketing za eCommerce i B2B. Vodi lično Slobodan Jelisavac (10+ godina, 3.7x prosečan ROAS, 3x UK Search Awards).",
+      ? "I've spent 10+ years personally running Google Ads accounts: management, audit, Shopping, PMax and remarketing for eCommerce and B2B. 3.7x average ROAS, 3x UK Search Awards — no juniors on your budget."
+      : "10+ godina lično vodim Google Ads naloge: upravljanje, audit, Shopping, PMax i remarketing za eCommerce i B2B. 3.7x prosečan ROAS, 3x UK Search Awards - bez juniora na vašem budžetu.",
     locale,
     path: "/services",
     srPath: "/usluge",
@@ -544,21 +544,21 @@ export default async function ServicesPage({ params }: Props) {
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
                 <>
-                  <strong className="text-white">Digital Jelisavac</strong> is a
-                  senior-led boutique Google Ads agency — management, audit, and
-                  consulting for companies that want measurable results from paid
-                  advertising. Your account is run by a senior specialist, not a
-                  junior learning on your budget. From strategy to daily optimization,
-                  everything you need for stable revenue growth.
+                  I run a{" "}
+                  <strong className="text-white">senior-led boutique Google Ads practice</strong>{" "}
+                  — management, audit, and consulting for companies that want
+                  measurable results from paid advertising. Your account is run by
+                  me personally, not a junior learning on your budget. From strategy
+                  to daily optimization, everything you need for stable revenue growth.
                 </>
               ) : (
                 <>
-                  <strong className="text-white">Digital Jelisavac</strong> je
-                  senior-led boutique Google Ads agencija: upravljanje, audit i
-                  konsultacije za kompanije koje žele merljive rezultate iz plaćenog
-                  oglašavanja. Vaš nalog vodi senior stručnjak lično, ne junior koji
-                  uči na vašem budžetu. Od strategije do svakodnevne optimizacije, sve
-                  što vam treba za stabilan rast prihoda.
+                  Vodim{" "}
+                  <strong className="text-white">senior boutique Google Ads praksu</strong>:
+                  upravljanje, audit i konsultacije za kompanije koje žele merljive
+                  rezultate iz plaćenog oglašavanja. Vaš nalog vodim ja lično, ne
+                  junior koji uči na vašem budžetu. Od strategije do svakodnevne
+                  optimizacije, sve što vam treba za stabilan rast prihoda.
                 </>
               )}
             </p>

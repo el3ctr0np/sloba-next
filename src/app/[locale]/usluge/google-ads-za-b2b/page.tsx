@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads for B2B | Lead Generation & PPC — Digital Jelisavac"
-      : "Google Ads za B2B kompanije | Lead Generation - Digital Jelisavac",
+      ? "Google Ads for B2B | Lead Generation & PPC — Slobodan Jelisavac"
+      : "Google Ads za B2B kompanije | Lead Generation - Slobodan Jelisavac",
     description: isEn
-      ? "Digital Jelisavac's expert B2B Google Ads management focused on qualified lead generation, CPA optimization, and CRM integration (HubSpot, Salesforce). 10+ years experience, 50+ brands across 6+ countries."
-      : "Digital Jelisavac vodi Google Ads strategije za B2B kompanije u Srbiji, fokus na lead generation. 180% više kvalifikovanih leadova, CRM integracija (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju.",
+      ? "I run B2B Google Ads focused on qualified lead generation, CPA optimization, and CRM integration (HubSpot, Salesforce). 10+ years experience, 50+ brands across 6+ countries."
+      : "Vodim Google Ads strategije za B2B kompanije u Srbiji, fokus na lead generation. 180% više kvalifikovanih leadova, CRM integracija (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju.",
     locale,
     path: "/services/google-ads-for-b2b",
     srPath: "/usluge/google-ads-za-b2b",

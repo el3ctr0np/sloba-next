@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "YouTube Ads Management | Video Campaigns — Digital Jelisavac"
-      : "YouTube Oglašavanje i Oglasi Srbija | Digital Jelisavac",
+      ? "YouTube Ads Management | Video Campaigns — Slobodan Jelisavac"
+      : "YouTube Oglašavanje i Oglasi Srbija | Slobodan Jelisavac",
     description: isEn
-      ? "Digital Jelisavac's professional YouTube advertising management. Drive brand awareness and conversions through targeted video campaigns. Expert PPC consultant with 10+ years experience across 6+ countries."
-      : "Digital Jelisavac profesionalno upravlja YouTube oglašavanjem u Srbiji. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1.000/mesečno.",
+      ? "I personally manage YouTube advertising campaigns. Drive brand awareness and conversions through targeted video. 10+ years of PPC experience across 6+ countries."
+      : "Lično vodim YouTube oglašavanje u Srbiji. Brand awareness i direktne konverzije kroz targetirano video oglašavanje. Minimalni budžet €1.000/mesečno.",
     locale,
     path: "/services/youtube-ads",
     srPath: "/usluge/youtube-oglasi",

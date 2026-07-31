@@ -15,11 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Kickstart — Senior Setup from $990 | Digital Jelisavac"
-      : "Google Ads Kickstart - starter paket za male firme od €690 | Digital Jelisavac",
+      ? "Google Ads Kickstart — Senior Setup from $990 | Slobodan Jelisavac"
+      : "Google Ads Kickstart - starter paket za male firme od €690 | Slobodan Jelisavac",
     description: isEn
-      ? "Digital Jelisavac's senior Google Ads setup for teams with an in-house owner who takes it from there. Architecture, keywords, RSAs, tracking spec, 60-day plan, handover session. From $990."
-      : "Google Ads starter paket za male firme i osnivače koji sami vode kampanje dalje. Senior setup od Digital Jelisavac agencije - arhitektura naloga, ključne reči, RSA oglasi, tracking specifikacija, 60-dnevni plan, handover sesija. Od €690.",
+      ? "A senior Google Ads setup I build personally, for teams with an in-house owner who takes it from there. Architecture, keywords, RSAs, tracking spec, 60-day plan, handover session. From $990."
+      : "Google Ads starter paket za male firme i osnivače koji sami vode kampanje dalje. Senior setup koji radim lično - arhitektura naloga, ključne reči, RSA oglasi, tracking specifikacija, 60-dnevni plan, handover sesija. Od €690.",
     locale,
     path: "/services/starter-package",
     srPath: "/usluge/starter-paket",
@@ -563,8 +563,8 @@ export default async function StarterPaketPage({ params }: Props) {
                 <>
                   Imate nekoga in-house ko će voditi nalog, samo treba da bude
                   napravljen kako treba od prvog dana. Kickstart, senior projekat
-                  Digital Jelisavac agencije, donosi arhitekturu naloga, napisane
-                  oglase i verifikovan tracking temelj, pa ga predaje uz{" "}
+                  koji radim lično, donosi arhitekturu naloga, napisane
+                  oglase i verifikovan tracking temelj, pa ga predajem uz{" "}
                   <strong className="text-white">60-dnevni plan</strong>. Bez
                   mesečnog retainera.
                 </>

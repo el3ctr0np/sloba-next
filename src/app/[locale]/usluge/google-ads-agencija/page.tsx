@@ -15,11 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Agency — Senior-Led Boutique | Digital Jelisavac"
-      : "Google Ads Agencija Srbija - Senior Vodi Vaš Nalog | Digital Jelisavac",
+      ? "Google Ads Agency — Senior-Led Boutique | Slobodan Jelisavac"
+      : "Google Ads Agencija Srbija - Senior Vodi Vaš Nalog | Slobodan Jelisavac",
     description: isEn
-      ? "Digital Jelisavac is a senior-led boutique Google Ads agency run personally by Slobodan Jelisavac — no junior account managers, transparent reporting, you own the account. 3.7x average ROAS (eCommerce), 3x UK Search Awards. From $2,500/month."
-      : "Digital Jelisavac je boutique Google Ads agencija koju lično vodi Slobodan Jelisavac - bez junior account managera, transparentan izveštaj, vi ste vlasnik naloga. 3.7x prosečan ROAS (eCommerce), 3x UK Search Awards. Vođenje kampanja od €700/mes.",
+      ? "I run a senior-led boutique Google Ads agency personally — no junior account managers, transparent reporting, you own the account. 3.7x average ROAS (eCommerce), 3x UK Search Awards. From $2,500/month."
+      : "Vodim boutique Google Ads agenciju lično - bez junior account managera, transparentan izveštaj, vi ste vlasnik naloga. 3.7x prosečan ROAS (eCommerce), 3x UK Search Awards. Vođenje kampanja od €700/mes.",
     locale,
     path: "/services/google-ads-agency",
     srPath: "/usluge/google-ads-agencija",
@@ -556,18 +556,18 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {isEn ? (
                 <>
-                  <strong className="text-white">Digital Jelisavac</strong> is a{" "}
-                  <strong className="text-white">senior-led boutique Google Ads agency</strong>,
-                  run personally by Slobodan Jelisavac. Serbia-based, working with eCommerce and
-                  B2B brands across the UK, EU, and US. No junior account managers, no black-box
-                  reporting, and you own your account. Focus:{" "}
+                  I run a{" "}
+                  <strong className="text-white">senior-led boutique Google Ads agency</strong>{" "}
+                  — every account managed personally by me, Slobodan Jelisavac. Serbia-based,
+                  working with eCommerce and B2B brands across the UK, EU, and US. No junior
+                  account managers, no black-box reporting, and you own your account. Focus:{" "}
                   <strong className="text-white">profit, not ROAS theatre</strong>.
                 </>
               ) : (
                 <>
-                  <strong className="text-white">Digital Jelisavac</strong> je{" "}
-                  <strong className="text-white">senior-led boutique Google Ads agencija</strong>{" "}
-                  koju lično vodi Slobodan Jelisavac. Za eCommerce i B2B kompanije u Srbiji, regionu
+                  Vodim{" "}
+                  <strong className="text-white">senior boutique Google Ads agenciju</strong>{" "}
+                  - svaki nalog vodim lično. Za eCommerce i B2B kompanije u Srbiji, regionu
                   i inostranstvu. Bez junior account managera, bez izveštaja iz crne kutije, i vi ste
                   vlasnik svog naloga. Fokus:{" "}
                   <strong className="text-white">profit, ne ROAS teatar</strong>.
@@ -698,7 +698,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
                   {isEn ? "Criterion" : "Kriterijum"}
                 </th>
                 <th className="text-left py-3 px-4 text-sm font-heading font-semibold text-primary">
-                  {isEn ? "Boutique (Digital Jelisavac)" : "Boutique (Digital Jelisavac)"}
+                  {isEn ? "Boutique (Slobodan Jelisavac)" : "Boutique (Slobodan Jelisavac)"}
                 </th>
                 <th className="text-left py-3 px-4 text-sm font-heading font-semibold text-gray-900">
                   {isEn ? "Big agency" : "Velika agencija"}

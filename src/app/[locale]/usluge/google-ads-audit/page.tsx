@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Deep Audit + Action Plan | Digital Jelisavac — PPC Analysis"
-      : "Deep Audit + Action Plan - Google Ads Audit | Digital Jelisavac",
+      ? "Deep Audit + Action Plan | Slobodan Jelisavac — PPC Analysis"
+      : "Deep Audit + Action Plan - Google Ads Audit | Slobodan Jelisavac",
     description: isEn
-      ? "A Deep Audit + Action Plan from Digital Jelisavac reveals where you're losing money and how to improve ROAS. In-depth campaign analysis by senior specialist Slobodan Jelisavac, with prioritized recommendations. From $500."
-      : "Deep Audit + Action Plan: profesionalni audit koji otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljnu analizu radi lično Slobodan Jelisavac (Digital Jelisavac), cena od €450.",
+      ? "Deep Audit + Action Plan reveals where you're losing money and how to improve ROAS. I analyze every campaign personally — 10+ years of senior experience, prioritized recommendations. From $500."
+      : "Deep Audit + Action Plan: profesionalni audit koji otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljnu analizu radim lično - 10+ godina iskustva, cena od €450.",
     locale,
     path: "/services/google-ads-audit",
     srPath: "/usluge/google-ads-audit",

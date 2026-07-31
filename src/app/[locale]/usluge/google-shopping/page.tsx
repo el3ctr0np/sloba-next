@@ -11,10 +11,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Shopping Campaign Management | eCommerce PPC — Digital Jelisavac"
-      : "Google Shopping Agencija Srbija - 2026 Launch | Digital Jelisavac",
+      ? "Google Shopping Campaign Management for eCommerce | Slobodan Jelisavac"
+      : "Google Shopping Kampanje za eCommerce - Srbija 2026 | Slobodan Jelisavac",
     description: isEn
-      ? "Digital Jelisavac's expert Google Shopping campaign management for eCommerce brands. Product feed optimization, bid strategies, campaign structure. Serbia launch: second half of 2026 (Q3 or Q4) - get ready early."
+      ? "I run Google Shopping campaigns for eCommerce brands — a decade across US, UK, and Australian markets. Product feed optimization, bid strategy, campaign structure, measured on profit."
       : "Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4). Pripremite Merchant Center, feed i tracking pre lansiranja sa agencijom koja Shopping već vodi 2+ godine u UK - šestocifren prihod, POAS 1.78x.",
     locale,
     path: "/services/google-shopping",
@@ -450,16 +450,25 @@ export default async function GoogleShoppingPage({ params }: Props) {
           </nav>
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              {locale === "en" ? "Google Shopping Campaigns — Your Products at the Top of Google Search" : "Google Shopping agencija - vaši proizvodi na vrhu Google pretrage"}
+              {locale === "en" ? "Google Shopping finally comes to Serbia — and what it means for your business" : "Google Shopping napokon dolazi u Srbiju - i šta to znači za vaš biznis"}
             </h1>
             <p className="text-lg text-slate-300 mb-8">
               {locale === "en" ? (
                 <>
-                  Google Shopping campaigns are the most effective way to put your products in front of buyers ready to purchase. Shopping ads display product images, prices, and names directly in search results, giving shoppers all the information before they click. I specialize in eCommerce advertising and help online stores maximize ROAS through strategic Shopping campaign management.
+                  Having spent a decade working with eCommerce businesses across US, UK, and Australian
+                  markets, I can say this with confidence: Google Shopping is the strongest channel there is
+                  for eCommerce. The ad shows the product image, price, and store before the click — so you
+                  get buyers who have already chosen, not window-shoppers. Serbian stores get this channel
+                  in the second half of 2026, and the biggest head start goes to those who prepare their feed,
+                  Merchant Center, and tracking before launch.
                 </>
               ) : (
                 <>
-                  Google Shopping kampanje su najefikasniji način da vaši proizvodi dođu pred kupce koji su spremni da kupe. Shopping oglasi prikazuju sliku, cenu i naziv proizvoda direktno u rezultatima pretrage, što daje kupcima sve informacije pre klika. Specijalizovan sam za eCommerce oglašavanje i pomažem online prodavnicama da maksimiziraju ROAS kroz strateški pristup Shopping kampanjama.
+                  Kao neko ko deceniju radi sa eCommerce biznisima sa USA, UK i australijskog tržišta,
+                  mogu sa sigurnošću da kažem: Google Shopping je najjači kanal za eCommerce koji postoji.
+                  Oglas prikazuje sliku, cenu i prodavnicu pre klika - pa vam dolaze kupci koji su već
+                  odabrali, ne radoznalci. Srpske prodavnice taj kanal dobijaju u drugoj polovini 2026,
+                  a najveću prednost odnose oni koji feed, Merchant Center i tracking spreme pre lansiranja.
                 </>
               )}
             </p>

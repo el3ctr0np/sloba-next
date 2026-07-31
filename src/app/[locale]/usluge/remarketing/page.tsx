@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Remarketing Services | Retargeting Campaigns — Digital Jelisavac"
-      : "Remarketing Kampanje Srbija | Google, Meta, Pinterest - Digital Jelisavac",
+      ? "Google Ads Remarketing Services | Retargeting Campaigns — Slobodan Jelisavac"
+      : "Remarketing Kampanje Srbija | Google, Meta, Pinterest - Slobodan Jelisavac",
     description: isEn
-      ? "Digital Jelisavac's expert remarketing & retargeting campaign management across Google Ads, Meta, and Pinterest. Display remarketing, YouTube remarketing, RLSA, and dynamic retargeting. 10+ years of experience. Book a free consultation."
-      : "Profesionalne remarketing kampanje od Digital Jelisavac agencije koje vraćaju posetioce i povećavaju konverzije. Google Display, YouTube, RLSA, Meta, Pinterest. Zakažite konsultaciju.",
+      ? "I personally manage remarketing & retargeting campaigns across Google Ads, Meta, and Pinterest. Display remarketing, YouTube remarketing, RLSA, and dynamic retargeting. 10+ years of experience. Book a free consultation."
+      : "Remarketing kampanje koje vodim lično vraćaju posetioce i povećavaju konverzije. Google Display, YouTube, RLSA, Meta, Pinterest. Zakažite konsultaciju.",
     locale,
     path: "/services/remarketing",
     srPath: "/usluge/remarketing",
