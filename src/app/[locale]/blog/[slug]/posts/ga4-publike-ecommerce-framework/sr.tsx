@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
@@ -8,7 +9,7 @@ export default function GA4PublikeFrameworkSR() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Kratak sud</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Ovo je ceo framework, u tekstu, besplatno - ništa nije sakriveno iza forme. 25 lista u property-ju, podeljenih u 6 stubova, i najkorisniji deo nije nijedna od njih. Najkorisniji deo je ono što GA4 Admin API odbija da uradi, i tri zaobilaznice koje sam morao da izgradim kad je odbio.
+          Ceo framework je u tekstu, besplatno - ništa nije sakriveno iza forme: 25 lista publika u 6 stubova, sa tačnom konfiguracijom za svaku. A najvredniji deo nije nijedna lista, nego tri stvari koje GA4 Admin API ne ume da uradi i zaobilaznice koje sam izgradio umesto njih.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -31,10 +32,10 @@ export default function GA4PublikeFrameworkSR() {
       </div>
 
       <p>
-        Ovaj framework sam izgradio kroz <GlossaryLink slug="ga4">GA4</GlossaryLink> Admin API za jednu multi-brand skincare prodavnicu u UK-u koju vodim - 25 lista publika, komad po komad, sa svim greškama koje ide uz to. Ime naloga i imena brendova ne pominjem nigde u ovom tekstu; gde treba primer, brendovi su BR1 i BR2, kategorije su krema, SPF, suplementi. To nije oprez radi opreza - to je uslov pod kojim uopšte smem da pišem o živom nalogu.
+        Ovaj framework sam izgradio kroz <GlossaryLink slug="ga4">GA4</GlossaryLink> Admin API za jednu multi-brand skincare prodavnicu u UK-u koju vodim - 25 lista publika, komad po komad, sa svim greškama koje idu uz to. Ime naloga i imena brendova ne pominjem nigde u ovom tekstu; gde treba primer, brendovi su BR1 i BR2, kategorije su krema, SPF, suplementi. To nije oprez radi opreza - to je uslov pod kojim uopšte smem da pišem o živom nalogu.
       </p>
       <p>
-        Ono što je ispalo najkorisnije nije nijedna od 25 lista. Najkorisnije je ono što API odbija da uradi. Tri stvari se jednostavno ne mogu postaviti kroz GA4 Admin API onako kako bi logično očekivao, i za svaku od te tri postoji zaobilaznica koja menja kako gradiš celu listu - ne samo tu jednu, nego čitav stub. Ta sekcija je razlog zbog kog ovaj tekst uopšte postoji, i ona je dole, sa najviše prostora od svega.
+        Ono što je ispalo najkorisnije nije nijedna od 25 lista. Najkorisnije je ono što API odbija da uradi. Tri stvari se jednostavno ne mogu postaviti kroz GA4 Admin API onako kako bi logično očekivao, i za svaku od te tri postoji zaobilaznica koja menja kako gradiš celu listu - ne samo tu jednu, nego čitav stub. Ta sekcija je razlog zbog kog ovaj tekst postoji, i dobila je najviše prostora.
       </p>
       <p>
         Ceo framework je ispod: naming konvencija, svih 25 lista sa tačnom GA4 konfiguracijom, redosled u kom ih gradiš i redosled u kom ih uključuješ u Google Ads. Nema forme, nema &quot;preuzmi da vidiš ostatak&quot;. Ako hoćeš izvršnu verziju - markdown fajlove koje ubaciš direktno u Claude ili ChatGPT i PDF za arhivu - link je na kraju.
@@ -48,14 +49,15 @@ export default function GA4PublikeFrameworkSR() {
           <li><a href="#punjenje-pragovi" className="block py-1 text-base text-gray-700 hover:text-primary underline">Punjenje lista i pragovi aktivacije</a></li>
           <li><a href="#lifecycle" className="block py-1 text-base text-gray-700 hover:text-primary underline">Lifecycle (LCY) - 6 lista</a></li>
           <li><a href="#value" className="block py-1 text-base text-gray-700 hover:text-primary underline">Value / RFM (VAL) - 4 liste</a></li>
-          <li><a href="#intent" className="block py-1 text-base text-gray-700 hover:text-primary underline">Intent / funnel (INT) - 4 liste</a></li>
+          <li><a href="#intent" className="block py-1 text-base text-gray-700 hover:text-primary underline">Intent (INT) - 4 liste</a></li>
           <li><a href="#brand" className="block py-1 text-base text-gray-700 hover:text-primary underline">Brand affinity (BRD) - 5 lista</a></li>
           <li><a href="#replenishment" className="block py-1 text-base text-gray-700 hover:text-primary underline">Replenishment (RPL) - stub koji niko ne gradi</a></li>
           <li><a href="#predictive" className="block py-1 text-base text-gray-700 hover:text-primary underline">Predictive (PRD) i pomoćna lista</a></li>
           <li><a href="#ogranicenja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tri ograničenja GA4 Admin API-ja</a></li>
           <li><a href="#redosled" className="block py-1 text-base text-gray-700 hover:text-primary underline">Redosled gradnje, sa proverama</a></li>
-          <li><a href="#aktivacija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Aktivacija: Observation, isključenja, GA4 protiv CRM</a></li>
+          <li><a href="#aktivacija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Aktivacija: Observation, isključenja, GA4 + CRM</a></li>
           <li><a href="#faq" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja</a></li>
+          <li><a href="#zakljucak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zaključak</a></li>
         </ul>
       </nav>
 
@@ -63,103 +65,75 @@ export default function GA4PublikeFrameworkSR() {
 
       <h2 id="pregled">25 lista, 6 stubova: pravilo brojanja</h2>
       <p>
-        Prvo brojanje, jer se tu najviše ljudi zabuni kad prvi put pogleda listu publika u nalogu. Framework ima 25 definicija lista. Od toga je 24 ciljna publika raspoređena u 6 stubova, plus jedna pomoćna lista koja nije ciljna publika nikada, nigde.
+        Prvo brojanje, jer se tu najviše ljudi zabuni kad prvi put pogleda listu publika u nalogu. Framework ima 25 definicija lista: 24 ciljne publike raspoređene u 6 stubova, plus jedna pomoćna lista koja nikad nije ciljna publika.
       </p>
       <p>
-        Ta pomoćna lista se zove <code className="font-mono text-sm bg-gray-100 px-1.5 py-0.5 rounded">LCY_ALL_ActiveCustomers_45d</code> i njena jedina svrha je da se u Google Ads-u oduzima od replenishment lista - o tome detaljno u sekciji o ograničenjima API-ja, jer je razlog zašto ova lista postoji direktna posledica jedne stvari koju GA4 ne ume da uradi sam. Nju kloniraš na prozor koji ti kombinacija traži, pa u punoj postavci imaš dve kopije više (25 dana za ciklus suplemenata, 120 dana za at-risk sloj): 25 definicija se u nalogu na kraju vidi kao 27 publika. Zato u tabelama ispod stoje i <code className="font-mono text-sm bg-gray-100 px-1.5 py-0.5 rounded">ActiveCustomers_25d</code> i <code className="font-mono text-sm bg-gray-100 px-1.5 py-0.5 rounded">ActiveCustomers_120d</code> - nisu greška u imenovanju, nego isti obrazac kloniran na window koji odgovara drugom stubu.
+        Ta pomoćna lista se zove <code className="font-mono text-sm bg-gray-100 px-1.5 py-0.5 rounded">LCY_ALL_ActiveCustomers_45d</code> i ima tačno jedan posao: u Google Ads-u se oduzima od replenishment lista. Zašto baš tako, objašnjeno je u sekciji o ograničenjima API-ja - njeno postojanje je direktna posledica jedne stvari koju GA4 ne ume sam.
       </p>
       <p>
-        Naming konvencija koju sam koristio na sve 25 je fiksna:
+        U punoj postavci istu definiciju kloniraš na prozor koji kombinacija traži (25 dana za ciklus suplemenata, 120 dana za at-risk sloj), pa se 25 definicija u nalogu vidi kao 27 publika. Zato u tabelama ispod stoje i <code className="font-mono text-sm bg-gray-100 px-1.5 py-0.5 rounded">ActiveCustomers_25d</code> i <code className="font-mono text-sm bg-gray-100 px-1.5 py-0.5 rounded">ActiveCustomers_120d</code> - isti obrazac, drugi prozor.
+      </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/fig-16-counting-rule-sr.png" alt="Šema brojanja: 24 ciljne publike plus 1 pomoćna lista daju 25 definicija, a pomoćna klonirana na prozore 45d, 25d i 120d daje 27 publika u property-ju" width={1600} height={1100} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">24 ciljne plus jedna pomoćna. Pomoćna se klonira, pa u nalogu vidiš 27.</figcaption>
+      </figure>
+
+      <p>
+        Naming konvencija koju sam koristio na svih 25 je fiksna:
       </p>
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 my-6 text-center">
         <code className="font-mono text-base md:text-lg font-semibold">{"{PILLAR}_{SCOPE}_{Segment}_{Window}"}</code>
       </div>
-
-      <div className="overflow-x-auto my-6">
-        <table className="w-full border-collapse text-left text-sm">
-          <thead>
-            <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-3 font-heading font-semibold">Pillar</th>
-              <th className="py-3 px-3 font-heading font-semibold">Značenje</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-mono font-medium">LCY</td>
-              <td className="py-3 px-3">Lifecycle - faza životnog ciklusa kupca</td>
-            </tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-mono font-medium">VAL</td>
-              <td className="py-3 px-3">Value / RFM - vrednosni slojevi</td>
-            </tr>
-            <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-mono font-medium">INT</td>
-              <td className="py-3 px-3">Intent - funnel abandoneri</td>
-            </tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-mono font-medium">BRD</td>
-              <td className="py-3 px-3">Brand affinity - po brendu ili liniji</td>
-            </tr>
-            <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-mono font-medium">RPL</td>
-              <td className="py-3 px-3">Replenishment - ciklus ponovne kupovine</td>
-            </tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-mono font-medium">PRD</td>
-              <td className="py-3 px-3">Predictive - Google ML</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
       <p>
-        Scope je ili <code className="font-mono text-sm bg-gray-100 px-1 rounded">ALL</code> (ceo nalog) ili oznaka brenda i kategorije - <code className="font-mono text-sm bg-gray-100 px-1 rounded">BR1</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">BR2</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">MOI</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">SUP</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">SPF</code>. Window je membership prozor ili ciljni raspon - <code className="font-mono text-sm bg-gray-100 px-1 rounded">90d</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">540d</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">45-120d</code>.
+        Pillar je jedna od šest troslovnih oznaka stubova. Scope je ili <code className="font-mono text-sm bg-gray-100 px-1 rounded">ALL</code> (ceo nalog) ili oznaka brenda i kategorije - <code className="font-mono text-sm bg-gray-100 px-1 rounded">BR1</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">BR2</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">MOI</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">SUP</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">SPF</code>. Window je membership prozor ili ciljni raspon - <code className="font-mono text-sm bg-gray-100 px-1 rounded">90d</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">540d</code>, <code className="font-mono text-sm bg-gray-100 px-1 rounded">45-120d</code>.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-03-naming.png" alt="Šema konvencije imenovanja PILLAR_SCOPE_SEGMENT_WINDOW sa stvarnim primerom LCY_ALL_CartAbandoners_14d" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Četiri segmenta, uvek istim redom, razdvojena donjom crtom.</figcaption>
+      </figure>
       <p>
-        Konvencija nije estetika. Kad imaš 25 stavki u jednoj listi u Google Ads-u, pretraga po prefiksu je jedini realan način da za tri meseca još uvek znaš šta je šta bez da otvaraš svaku i čitaš opis. Sortiranje po imenu ionako grupiše stub uz stub, pa se cela lista publika čita kao šest odeljaka umesto kao 25 nasumičnih redova.
+        Konvencija nije estetika. Kad imaš 25 stavki u jednoj listi u Google Ads-u, pretraga po prefiksu je jedini realan način da za tri meseca još uvek znaš šta je šta, a da ne otvaraš svaku i čitaš opis. Sortiranje po imenu grupiše stub uz stub, pa se cela lista publika čita kao šest odeljaka umesto kao 25 nasumičnih redova.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-04-layers.png" alt="Šest slojeva GA4 frameworka: LCY lifecycle, VAL vrednost i RFM, INT namera, BRD naklonost brendu, RPL ponovna kupovina, PRD prediktivne" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Šest stubova i broj lista u svakom. Detaljne tabele za svaki stub slede ispod.</figcaption>
+      </figure>
+
 
       <hr />
 
       <h2 id="punjenje-pragovi">Punjenje lista i pragovi aktivacije</h2>
       <p>
-        Dva broja ovde odlučuju da li publika uopšte može da se koristi za targeting ili ostaje zarobljena u Observation-u.
-      </p>
-
-      <div className="overflow-x-auto my-6">
-        <table className="w-full border-collapse text-left text-sm">
-          <thead>
-            <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-3 font-heading font-semibold">Kanal</th>
-              <th className="py-3 px-3 font-heading font-semibold">Minimum aktivnih korisnika u 30 dana</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Search remarketing (RLSA) i Shopping</td>
-              <td className="py-3 px-3">1.000</td>
-            </tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">Display, YouTube, <GlossaryLink slug="demand-gen">Demand Gen</GlossaryLink></td>
-              <td className="py-3 px-3">100</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>
-        Ovo su Google-ovi minimumi za isporuku, ne moji, i ne postoji način da ih zaobiđeš osim da lista naraste. Dok je lista ispod praga, živi kao <strong>Observation</strong> - vidiš joj podatke, ne utiče na targeting. Većina prodavnica koju sam video napravi pet publika, nijedna ne pređe prag, i onda neko zaključi da &quot;publike ne rade za nas&quot;. Publike rade. Nalog je premali ili je prozor prekratak da ih napuni.
+        Dva mehanizma odlučuju da li publika može da se koristi za ciljanje ili ostaje u Observation-u: kako se lista puni i koliko članova traži kanal na kome hoćeš da je koristiš.
       </p>
       <p>
-        Punjenje ide ovako: GA4 publika počinje da se puni <strong>od trenutka kreiranja</strong>, uz otprilike 30 dana unazad za korisnike koji već u tom trenutku ispunjavaju uslov. Nema retroaktivnog punjenja preko tih 30 dana - ne postoji dugme koje kaže &quot;popuni mi ovu listu istorijskim podacima od pre godinu dana&quot;. Praktična posledica je jednostavna i neprijatna: lista koju napraviš danas postaje upotrebljiva tek za 2 do 4 nedelje. Što znači da je najgori trenutak da počneš da praviš publike upravo onaj u kom ti već trebaju za kampanju koja kreće sutra.
+        <strong>Punjenje:</strong> GA4 publika počinje da se puni od trenutka kreiranja, uz otprilike 30 dana unazad za korisnike koji već ispunjavaju uslov. Preko tih 30 dana retroaktivnog punjenja nema - ne postoji dugme koje listu popuni istorijom od pre godinu dana. Praktična posledica: lista koju napraviš danas postaje upotrebljiva za 2 do 4 nedelje. Zato je najbolji trenutak za gradnju publika pre nego što ti zatrebaju, a najgori onaj kad kampanja kreće sutra.
       </p>
-
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-01-timeline.png" alt="Vremenska osa: GA4 publika se puni od dana kreiranja uz oko 30 dana istorije unazad, a upotrebljiva je 2 do 4 nedelje kasnije" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Lista počinje da se puni tek kad je napraviš. Backfill je oko 30 dana.</figcaption>
+      </figure>
+      <p>
+        <strong>Pragovi isporuke:</strong> Search remarketing (RLSA) i Shopping traže minimum 1.000 aktivnih korisnika u poslednjih 30 dana. Display, YouTube i <GlossaryLink slug="demand-gen">Demand Gen</GlossaryLink> traže 100. To su Google-ovi minimumi, ne moji, i jedini put preko njih je da lista naraste. Dok je ispod praga, lista živi kao <strong>Observation</strong> - vidiš joj podatke, ne utiče na isporuku.
+      </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-02-thresholds.png" alt="Dve kartice sa pragovima veličine publike: 1.000 članova za Search remarketing (RLSA) i 100 članova za Display, YouTube i Demand Gen" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Ispod praga publika ne isporučuje. Prag od 1.000 važi i za Shopping.</figcaption>
+      </figure>
+      <p>
+        Ovde se većina priča o &quot;publike ne rade za nas&quot; završi pre nego što je počela: prodavnica napravi pet publika, nijedna ne pređe prag, i zaključak se sam napiše. Dobra vest je da prag od 100 za Display, YouTube i Demand Gen prelazi skoro svaka prodavnica sa iole prometa - pa remarketing kreće tamo dok Search liste rastu.
+      </p>
       <hr />
 
       <h2 id="lifecycle">Lifecycle (LCY) - 6 lista</h2>
       <p>
         Lifecycle stub prati gde je kupac u odnosu sa nalogom - da li je tek stigao, da li se vratio, da li je nestao. Ovo je osnova na kojoj stoje skoro svi ostali stubovi, jer se pola RPL i VAL logike oslanja na LCY liste kao isključenja u Google Ads-u.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-05-lifecycle-value.png" alt="Dve kolone publika: lifecycle (prvi kupci, kupci koji se vraćaju, aktivni kupci, uspavani, angažovani bez kupovine, novi posetioci) i vrednosne (top 10 odsto, top 25 odsto, top 25 odsto u riziku, jednokratni male vrednosti)" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Prva dva stuba na jednom mestu, sa uprošćenim imenima. Tačne definicije i prozori su u tabelama ispod.</figcaption>
+      </figure>
+
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
@@ -272,9 +246,9 @@ export default function GA4PublikeFrameworkSR() {
 
       <hr />
 
-      <h2 id="intent">Intent / funnel (INT) - 4 liste</h2>
+      <h2 id="intent">Intent (INT) - 4 liste</h2>
       <p>
-        Intent stub je najtopliji sloj u nalogu - ljudi koji su nešto uradili u funnel-u i stali. Ovo je i jedino mesto gde &quot;temporarily exclude&quot; stvarno radi kako izgleda da bi trebalo, jer se prozor uključenja i isključenja poklapaju. Zašto to nije slučaj svuda, objašnjeno je u trećem ograničenju API-ja ispod.
+        Intent stub je najtopliji sloj u nalogu - ljudi koji su krenuli kroz levak i stali. Ovo je i jedino mesto gde &quot;temporarily exclude&quot; stvarno radi kako izgleda da bi trebalo, jer se prozor uključenja i isključenja poklapaju. Zašto to nije slučaj svuda, objašnjeno je u trećem ograničenju API-ja ispod.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -392,6 +366,11 @@ export default function GA4PublikeFrameworkSR() {
       <p>
         Od svih šest stubova, ovaj nosi najveću težinu, i to ne slučajno - u praksi je gotovo uvek prazan. Lifecycle i Intent liste pravi skoro svako ko otvori GA4 Audiences. Replenishment liste ne pravi skoro niko, jer traže nešto što nijedna druga lista ne traži: da znaš koliko dugo tvoj proizvod traje u upotrebi.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-06-replenishment-timing.png" alt="Ciklusi trošenja za kremu, suplemente i SPF na skali od 120 dana, sa crvenim markerom na 55. danu gde treba da stigne oglas" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">55. dan je oko 80 odsto najkraćeg ciklusa. Podsetnik, ne prekid.</figcaption>
+      </figure>
+
       <p>
         Ime nosi ciljni prozor - <code className="font-mono text-sm bg-gray-100 px-1 rounded">45-120d</code> - ali se u GA4 ne gradi kao raspon. Gradi se kao obična lista kupaca sa jednim membership prozorom (gornja granica), a donja granica nastaje tek kad tu listu u Google Ads-u umanjiš za listu nedavno aktivnih kupaca. To je direktna posledica trećeg ograničenja API-ja ispod - GA4 fizički ne ume da izgradi &quot;kupio pre 45 do 120 dana&quot; kao jedan uslov u jednoj listi.
       </p>
@@ -485,6 +464,8 @@ export default function GA4PublikeFrameworkSR() {
         Uslov za obe: property mora imati dovoljno pozitivnih i negativnih primera - Google traži red veličine 1.000 korisnika koji jesu i 1.000 koji nisu izvršili purchase u prozoru od 28 dana - i model mora ostati &quot;eligible&quot; u kontinuitetu. Male prodavnice ovde jednostavno ne kvalifikuju. To nije greška u setupu koju treba da tražiš i popravljaš; to je pitanje veličine naloga, i vremenom se rešava samo ako nalog naraste.
       </p>
 
+      <h3 className="text-lg font-heading font-bold mt-8 mb-2">Pomoćna lista (nije stub, nikad se ne cilja)</h3>
+
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
@@ -512,8 +493,13 @@ export default function GA4PublikeFrameworkSR() {
 
       <h2 id="ogranicenja">Tri ograničenja GA4 Admin API-ja</h2>
       <p>
-        Ovo je deo koji vredi celog teksta, jer nije nešto što pišeš iz dokumentacije - dokumentacija ne kaže da ova tri ograničenja postoje, ili ih kaže usput, u fusnoti koju preskočiš. Ovo je ono na šta udariš tek kad pokušaš da izgradiš 25 lista programski i API ti vrati grešku, ili gore - ne vrati grešku, nego tiho izgradi nešto drugo od onoga što si tražio.
+        Ovo je deo zbog kog ceo tekst postoji. Dokumentacija ova tri ograničenja ne pominje, ili ih pominje usput, u fusnoti koju preskočiš. Na njih udariš tek kad pokušaš da izgradiš 25 lista programski i API vrati grešku - ili gore, ne vrati grešku, nego tiho izgradi nešto drugo od onoga što si tražio.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-07-api-limits.png" alt="Tri ograničenja GA4 Admin API-ja sa zaobilaznicama: lifetime value nije dostupan u filterima, count filteri nemaju klizne prozore, uslov nije kupio u N dana se ne gradi u GA4" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Tri stvari koje API odbija da uradi, i šta se radi umesto toga.</figcaption>
+      </figure>
+
 
       <div className="bg-red-50 border border-red-100 rounded-xl p-5 my-6">
         <p className="font-heading font-bold text-red-900 mb-1">1. lifetimeValue ne prolazi u audience filterima kroz API</p>
@@ -549,6 +535,11 @@ export default function GA4PublikeFrameworkSR() {
       <p>
         Ne gradiš 25 lista odjednom. Gradiš u talasima, i posle svakog talasa proveravaš da li je prethodni sloj stvaran pre nego što nastaviš dalje - jer ako sloj ispod nije stvaran, sve iznad njega je lista koja pokazuje nulu i nikad neće pokazati ništa drugo.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/fig-17-build-waves-sr.png" alt="Osam talasa gradnje publika sa proverom uz svaki: preduslov tracking, lifecycle, intent kao stop pravilo, value, brand, replenishment, predictive i provera posle dve nedelje" width={1600} height={1100} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Osam talasa, svaki sa svojom proverom. Talas 2 je jedino stop pravilo: bez add_to_cart signala gradnja se pauzira.</figcaption>
+      </figure>
+
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-4">
@@ -614,18 +605,23 @@ export default function GA4PublikeFrameworkSR() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 md:p-5 my-6">
         <p className="font-semibold text-blue-900 mb-1">Stop pravilo</p>
         <p className="text-blue-800 text-base mb-0">
-          Ako talas 2 ne proradi - ako CartAbandoners posle 48h nema nijednog člana - dalja gradnja je gubljenje vremena. Publike ne popravljaju tracking. Ako add_to_cart ne stiže čisto u GA4, nijedna od preostalih lista neće raditi bolje, jer sve one zavise od istog sloja eventova koji upravo ne stiže.
+          Ako talas 2 ne proradi - ako CartAbandoners posle 48h nema nijednog člana - dalja gradnja je gubljenje vremena. Publike ne popravljaju tracking. Ako add_to_cart ne stiže čisto u GA4, nijedna od preostalih lista neće raditi bolje, jer sve one zavise od istog sloja eventova koji upravo ne stiže. Popravi event prvo, pa se vrati na talas 3 - ova provera je ujedno najbrža dijagnoza trackinga koju imaš.
         </p>
       </div>
 
       <hr />
 
-      <h2 id="aktivacija">Aktivacija: Observation, isključenja, GA4 protiv CRM</h2>
+      <h2 id="aktivacija">Aktivacija: Observation, isključenja, GA4 + CRM</h2>
       <p>
         Gradnja lista je pola posla. Druga polovina je redosled u kom ih puštaš da utiču na kampanje, i tu većina naloga koje sam video žuri - stave listu direktno na bid adjustment prvog dana, pre nego što ima dovoljno članova da bilo šta znači.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-08-activation.png" alt="Tri koraka aktivacije publika: prvo Observation, pa isključenje aktivnih kupaca iz akvizicije, pa preslikavanje segmenata u CRM za Customer Match" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Redosled aktivacije. Odluke o ponudama dolaze tek posle punjenja.</figcaption>
+      </figure>
+
       <p>
-        Prvi korak je uvek isti: sve liste idu prvo kao <strong>Observation</strong> na Shopping i Search kampanje. Observation nema nikakav uticaj na isporuku - ne suzuje targeting, ne menja bid - ali posle dve nedelje imaš svoje brojke po publici umesto tuđih benchmark-ova iz nečije studije slučaja. Tek posle toga ide sledeći korak.
+        Prvi korak je uvek isti: sve liste idu prvo kao <strong>Observation</strong> na Shopping i Search kampanje. Observation nema nikakav uticaj na isporuku - ne sužava ciljanje, ne menja bid - ali posle dve nedelje imaš svoje brojke po publici umesto tuđih benchmark-ova iz nečije studije slučaja. Tek posle toga ide sledeći korak.
       </p>
       <p>
         Isključenja se uključuju čim liste pređu prag isporuke: ActiveCustomers_90d izlazi iz akvizicionih tokova (nema smisla plaćati za nekoga ko je već kupio prošle nedelje), OneTimeLowValue izlazi iz skupog remarketinga. Bid podešavanja dolaze tek posle punjenja i tek na listama koje već imaju volumen - ne na listi koja tek treba da naraste.
@@ -645,27 +641,27 @@ export default function GA4PublikeFrameworkSR() {
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Win-back lapsed kupaca</td>
+              <td className="py-3 px-3 font-medium">Vraćanje uspavanih kupaca</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">LCY_ALL_Purchasers_365d</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">LCY_ALL_ActiveCustomers_90d</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">At-risk high value</td>
+              <td className="py-3 px-3 font-medium">Vredan kupac u riziku</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">VAL_ALL_AtRisk_HighValue_120d</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">LCY_ALL_ActiveCustomers_120d</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Moisturiser replenishment</td>
+              <td className="py-3 px-3 font-medium">Ponovna kupovina - krema</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">RPL_MOI_Due_45-120d</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">LCY_ALL_ActiveCustomers_45d</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">Supplement replenishment</td>
+              <td className="py-3 px-3 font-medium">Ponovna kupovina - suplementi</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">RPL_SUP_Due_25-75d</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">LCY_ALL_ActiveCustomers_25d</td>
             </tr>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">SPF replenishment</td>
+              <td className="py-3 px-3 font-medium">Ponovna kupovina - SPF</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">RPL_SPF_Due_45-120d</td>
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">LCY_ALL_ActiveCustomers_45d</td>
             </tr>
@@ -772,6 +768,14 @@ export default function GA4PublikeFrameworkSR() {
 
       <hr />
 
+      <h2 id="zakljucak">Zaključak</h2>
+      <p>
+        GA4 publike za ecommerce nisu spisak od 25 stavki za prekucavanje, nego sistem sa tri pravila koja nose sve ostalo. Liste se pune od dana kreiranja, pa se grade unapred, a ne u nedelji kad kampanja kreće. Pragovi isporuke odlučuju gde koja lista sme da radi, pa manji nalozi kreću od praga od 100 članova na Display, YouTube i Demand Gen, koji prelazi skoro svaka radnja. A ono što GA4 ne ume - vrednost u filterima, klizni prozori, &quot;nije kupio skoro&quot; - rešava se oduzimanjem lista u Google Ads-u, ne borbom sa API-jem.
+      </p>
+      <p>
+        Ako iz ovog teksta poneseš jednu akciju, neka bude ova: napravi lifecycle i intent liste danas i pusti ih da se pune dok radiš druge stvari. Za dve do četiri nedelje imaš sloj first-party podataka koji ti nijedan sledeći update platforme ne uzima - i kampanje koje znaju kome pričaju.
+      </p>
+
       {/* CTA block */}
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
@@ -782,6 +786,22 @@ export default function GA4PublikeFrameworkSR() {
         </p>
         <Link href="/ga4-audiences" className="btn-secondary inline-block">
           Preuzmi izvršnu verziju
+        </Link>
+      </div>
+
+      <h2>Povezani vodiči</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 my-6">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing vodič</p>
+          <p className="text-xs text-gray-500 mb-0">Kako se publike iz ovog teksta pretvaraju u kampanje koje vraćaju kupce</p>
+        </Link>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integracija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">GA4 + Google Ads integracija</p>
+          <p className="text-xs text-gray-500 mb-0">Povezivanje property-ja i naloga - preduslov za sve liste odavde</p>
+        </Link>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion tracking vodič</p>
+          <p className="text-xs text-gray-500 mb-0">Purchase event koji stiže čisto je temelj svake publike</p>
         </Link>
       </div>
     </>

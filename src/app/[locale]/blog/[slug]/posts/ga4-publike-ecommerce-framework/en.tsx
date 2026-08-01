@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
@@ -8,7 +9,7 @@ export default function GA4AudienceFrameworkEN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">What&apos;s in this post</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Twenty-five <GlossaryLink slug="ga4">GA4</GlossaryLink> audiences, six pillars, and three things the Admin API flatly refuses to do. This is the complete framework — every list, every configuration, every workaround — not a teaser for something you have to unlock later.
+          Twenty-five <GlossaryLink slug="ga4">GA4</GlossaryLink> audiences, six pillars, and three things the Admin API flatly refuses to do. This is the complete framework — every list, every configuration, every workaround — not a teaser for a gated download.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -52,8 +53,9 @@ export default function GA4AudienceFrameworkEN() {
           <li><a href="#predictive" className="block py-1 text-base text-gray-700 hover:text-primary underline">Pillar 6 — Predictive (PRD)</a></li>
           <li><a href="#api-limits" className="block py-1 text-base text-gray-700 hover:text-primary underline">The three Admin API limits</a></li>
           <li><a href="#build-order" className="block py-1 text-base text-gray-700 hover:text-primary underline">Build order, with checks</a></li>
-          <li><a href="#activation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Activation: Observation, exclusions, GA4 vs CRM</a></li>
+          <li><a href="#activation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Activation: Observation, exclusions, GA4 + CRM</a></li>
           <li><a href="#faq" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
+          <li><a href="#conclusion" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conclusion</a></li>
         </ul>
       </nav>
 
@@ -66,6 +68,11 @@ export default function GA4AudienceFrameworkEN() {
       <p>
         The helper — <code>LCY_ALL_ActiveCustomers_45d</code> — is not a targeting audience. It exists purely so you can subtract it from replenishment lists inside Google Ads. Counted as a definition it is one list, but you clone it onto whichever windows your combinations need: a full build of this framework ends up with two more copies of it (25 days for the supplement cycle, 120 days for the at-risk value tier), so the property holds 27 audience objects for 25 list definitions. Worth knowing before you count rows in the GA4 interface and think something went wrong.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/fig-16-counting-rule-en.png" alt="The counting rule: 24 target audiences plus 1 helper list make 25 definitions, and the helper cloned to the 45d, 25d and 120d windows makes 27 audiences in the property" width={1600} height={1100} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">24 target lists plus one helper. The helper gets cloned, so the property shows 27.</figcaption>
+      </figure>
+
 
       <hr />
 
@@ -79,30 +86,17 @@ export default function GA4AudienceFrameworkEN() {
       <p>
         <strong>Pillar</strong> is one of six three-letter codes. <strong>Scope</strong> is either <code>ALL</code> (whole account) or a brand/category tag (<code>BR1</code>, <code>BR2</code>, <code>MOI</code>, <code>SUP</code>, <code>SPF</code>). <strong>Window</strong> is the membership duration or the target range the list is built to catch (<code>90d</code>, <code>540d</code>, <code>45-120d</code>).
       </p>
-
-      <div className="overflow-x-auto my-6">
-        <table className="w-full border-collapse text-left text-sm">
-          <thead>
-            <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-3 font-heading font-semibold">Pillar</th>
-              <th className="py-3 px-3 font-heading font-semibold">Meaning</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-200"><td className="py-3 px-3 font-mono">LCY</td><td className="py-3 px-3">Lifecycle — customer lifecycle stage</td></tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50"><td className="py-3 px-3 font-mono">VAL</td><td className="py-3 px-3">Value / RFM — value tiers</td></tr>
-            <tr className="border-b border-gray-200"><td className="py-3 px-3 font-mono">INT</td><td className="py-3 px-3">Intent — funnel abandoners</td></tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50"><td className="py-3 px-3 font-mono">BRD</td><td className="py-3 px-3">Brand affinity — by brand or product line</td></tr>
-            <tr className="border-b border-gray-200"><td className="py-3 px-3 font-mono">RPL</td><td className="py-3 px-3">Replenishment — repurchase cycle</td></tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50"><td className="py-3 px-3 font-mono">PRD</td><td className="py-3 px-3">Predictive — Google ML</td></tr>
-          </tbody>
-        </table>
-      </div>
-
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-03-naming.png" alt="Diagram of the naming convention PILLAR_SCOPE_SEGMENT_WINDOW mapped to the real example LCY_ALL_CartAbandoners_14d" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Four segments, always in this order, separated by underscores.</figcaption>
+      </figure>
       <p>
         The reason the convention exists at all: once a property has 25 lists, prefix search is the only way to know what&apos;s what three months from now. Sort by name and every pillar groups itself. Skip the convention and you&apos;ll be opening list definitions one by one to remember which <code>Browsers_60d</code> is which.
       </p>
-
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-04-layers.png" alt="The six layers of the GA4 audience framework: LCY lifecycle, VAL value and RFM, INT intent, BRD brand affinity, RPL replenishment, PRD predictive" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Six pillars and the list count in each. Detailed tables for every pillar follow below.</figcaption>
+      </figure>
       <hr />
 
       <h2 id="timeline">How audiences fill, and the delivery thresholds</h2>
@@ -110,35 +104,33 @@ export default function GA4AudienceFrameworkEN() {
         Two mechanics decide whether any of this actually reaches anyone, and both catch people off guard.
       </p>
       <p>
-        <strong>Filling:</strong> a GA4 audience starts filling from the moment you create it, plus roughly 30 days of backfill for users who already qualify at creation time. There is no retroactive fill beyond that window. The practical consequence: a list you build today is usable in 2-4 weeks, not tomorrow. The worst possible moment to build an audience is the moment you need it.
+        <strong>Filling:</strong> a GA4 audience starts filling from the moment you create it, plus roughly 30 days of backfill for users who already qualify at creation time. There is no retroactive fill beyond that window. The practical consequence: a list you build today is usable in 2-4 weeks, not tomorrow. The best moment to build audiences is before you need them - the worst is the week a campaign launches.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-01-timeline.png" alt="Timeline showing a GA4 audience filling only from the day it is created, with roughly 30 days of backfill, and becoming usable 2 to 4 weeks later" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">A list only starts filling the day you create it. Backfill is roughly 30 days.</figcaption>
+      </figure>
       <p>
-        <strong>Delivery thresholds</strong> are Google&apos;s hard minimums, not a suggestion:
+        <strong>Delivery thresholds</strong> are Google&apos;s hard minimums, not a suggestion. Search remarketing (RLSA) and Shopping need 1,000 active users in the last 30 days; Display, YouTube and <GlossaryLink slug="demand-gen">Demand Gen</GlossaryLink> need 100. Below the bar, a list sits in <strong>Observation</strong> - you see its data, it does not affect delivery.
       </p>
-      <div className="overflow-x-auto my-6">
-        <table className="w-full border-collapse text-left text-sm">
-          <thead>
-            <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-3 font-heading font-semibold">Channel</th>
-              <th className="py-3 px-3 font-heading font-semibold">Minimum active users (last 30 days)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-200"><td className="py-3 px-3 font-medium">Search remarketing (RLSA) and Shopping</td><td className="py-3 px-3">1,000</td></tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50"><td className="py-3 px-3 font-medium">Display, YouTube, <GlossaryLink slug="demand-gen">Demand Gen</GlossaryLink></td><td className="py-3 px-3">100</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-02-thresholds.png" alt="Two cards comparing GA4 audience size thresholds: 1,000 members minimum for Search remarketing (RLSA) and 100 members minimum for Display, YouTube and Demand Gen" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Below the threshold an audience does not serve. The same 1,000 floor applies to Shopping.</figcaption>
+      </figure>
       <p>
-        Below threshold, a list simply doesn&apos;t serve — it sits there as Observation with zero delivery. This is the single most common reason a client tells me &quot;we tried audiences, they didn&apos;t work.&quot; Most stores build five lists, none of them cross the threshold, and the conclusion drawn is that audiences don&apos;t work — when the actual finding is that the lists were too narrow, too new, or both.
+        This is where most &quot;we tried audiences, they didn&apos;t work&quot; stories end before they start: five lists, none crosses the bar, and the conclusion writes itself. The good news is that nearly every store with real traffic clears the 100-member bar for Display, YouTube and Demand Gen - so remarketing starts there while the Search lists grow.
       </p>
-
       <hr />
 
       <h2 id="lifecycle">Pillar 1 — Lifecycle (LCY)</h2>
       <p>
         Six lists that track where a customer sits in the relationship, from first visit to repeat buyer. This is the foundation pillar — everything else references one of these lists as an exclusion at some point.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-05-lifecycle-value.png" alt="Two columns of audiences: lifecycle (first time buyers, repeat buyers, active customers, lapsed buyers, engaged non buyers, new visitors) and value (top 10 percent, top 25 percent, top 25 percent at risk, one time low value)" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">The first two pillars in one view, with simplified names. Exact definitions and windows are in the tables below.</figcaption>
+      </figure>
+
       <div className="overflow-x-auto my-6">
         <table className="min-w-[900px] w-full border-collapse text-left text-sm">
           <thead>
@@ -369,6 +361,11 @@ export default function GA4AudienceFrameworkEN() {
       <p>
         Three lists, and this is the pillar that gets the most weight in this post, because it&apos;s the one I almost never see built anywhere else. Most accounts have lifecycle and intent audiences. Almost none have replenishment, and for a repeat-purchase consumable business it carries the most weight of the six — it&apos;s the difference between remarketing that reacts to browsing and remarketing that predicts when someone is about to run out.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-06-replenishment-timing.png" alt="Consumption windows for moisturiser, supplements and SPF on a 120 day scale, with a red marker at day 55 where the replenishment ad should land" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Day 55 is roughly 80 percent of the shortest cycle. A reminder, not an interruption.</figcaption>
+      </figure>
+
       <p>
         The name carries the target window (<code>45-120d</code>), but GA4 can only build the upper bound — &quot;purchased within the last 120 days&quot; — as a membership window. The lower bound, &quot;and nothing in the last 45 days&quot;, has to be built as an exclusion in Google Ads, not inside the GA4 list itself. That&apos;s API limit #3 below, and it&apos;s the reason the helper list exists on more than one window.
       </p>
@@ -490,6 +487,11 @@ export default function GA4AudienceFrameworkEN() {
       <p>
         This is the part that came from actually building the thing through the API, not from reading documentation. Every one of these limits will bite you if you try to build the &quot;obvious&quot; version of a list, and every one of them has a workaround that changes how you should think about the list, not just how you configure it.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-07-api-limits.png" alt="Three GA4 Admin API limits paired with workarounds: lifetime value unavailable in filters, count filters without rolling windows, and no way to express has not purchased in N days" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Three things the API refuses to do, and what you do instead.</figcaption>
+      </figure>
+
 
       <div className="space-y-4 my-6">
         <div className="bg-white border-2 border-gray-200 rounded-xl p-5">
@@ -534,6 +536,11 @@ export default function GA4AudienceFrameworkEN() {
       <p>
         I don&apos;t build all 25 lists in one sitting, and you shouldn&apos;t either. Each wave has a check attached, and the check exists because building on top of broken tracking just produces 25 broken lists instead of one obvious problem.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/fig-17-build-waves-en.png" alt="Eight build waves each with its own check: tracking prerequisite, lifecycle, intent as the stop rule, value, brand, replenishment, predictive, and a review after two weeks" width={1600} height={1100} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Eight waves, each with its own check. Wave 2 is the only stop rule: no add_to_cart signal, no further building.</figcaption>
+      </figure>
+
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <div className="space-y-4">
@@ -605,10 +612,15 @@ export default function GA4AudienceFrameworkEN() {
 
       <hr />
 
-      <h2 id="activation">Activation: Observation, exclusions, GA4 vs CRM</h2>
+      <h2 id="activation">Activation: Observation, exclusions, GA4 + CRM</h2>
       <p>
         Building the lists is half the job. How you turn them on determines whether they help or quietly waste budget.
       </p>
+      <figure className="my-8">
+        <Image src="/blog/ga4-audiences/inline/fig-08-activation.png" alt="Three activation steps: Observation first, then excluding active customers from acquisition, then mirroring the segments in the CRM for Customer Match" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Activation order. Bid decisions come only after the lists have filled.</figcaption>
+      </figure>
+
       <ol>
         <li className="mb-2"><strong>Everything starts as Observation.</strong> Every list goes onto Shopping and Search campaigns as Observation first — zero impact on delivery, but after two weeks you have your own numbers instead of borrowing someone else&apos;s benchmark.</li>
         <li className="mb-2"><strong>Exclusions turn on as soon as a list crosses threshold.</strong> <code>ActiveCustomers_90d</code> comes out of acquisition flows, <code>OneTimeLowValue</code> comes out of expensive remarketing.</li>
@@ -732,6 +744,14 @@ export default function GA4AudienceFrameworkEN() {
 
       <hr />
 
+      <h2 id="conclusion">Conclusion</h2>
+      <p>
+        GA4 audiences for ecommerce are not a list of 25 items to type in - they are a system with three rules that carry everything else. Lists fill from the day you create them, so you build ahead of need, not in the week a campaign launches. Delivery thresholds decide where each list is allowed to work, so smaller accounts start from the 100-member bar on Display, YouTube and Demand Gen, which almost any store clears. And the things GA4 will not do - value in filters, rolling windows, &quot;has not purchased recently&quot; - are solved by subtracting lists inside Google Ads, not by fighting the API.
+      </p>
+      <p>
+        If you take one action from this post, make it this: build the lifecycle and intent lists today and let them fill while you work on something else. In two to four weeks you have a first-party data layer no platform update can take away - and campaigns that know exactly who they are talking to.
+      </p>
+
       {/* CTA block */}
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
@@ -742,6 +762,22 @@ export default function GA4AudienceFrameworkEN() {
         </p>
         <Link href="/ga4-audiences" className="btn-secondary inline-block">
           Get the framework
+        </Link>
+      </div>
+
+      <h2>Related guides</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 my-6">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing guide</p>
+          <p className="text-xs text-gray-500 mb-0">How the audiences from this post turn into campaigns that bring customers back</p>
+        </Link>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integration" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">GA4 + Google Ads integration</p>
+          <p className="text-xs text-gray-500 mb-0">Linking the property and the account - the prerequisite for every list here</p>
+        </Link>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion tracking guide</p>
+          <p className="text-xs text-gray-500 mb-0">A clean purchase event is the foundation of every audience</p>
         </Link>
       </div>
     </>
