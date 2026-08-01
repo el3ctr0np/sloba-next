@@ -193,6 +193,14 @@ const getChapters = (locale: string): Chapter[] => {
               "80+ checkpoints for account review, campaign optimization and better ROI.",
             slug: "google-ads-audit-checklist",
             readTime: "15 min"
+          },
+          {
+            title:
+              "The GA4 Audience Framework for Repeat-Purchase Ecommerce: 25 Lists, 6 Layers, 3 API Limits",
+            excerpt:
+              "All 25 audience lists with their exact GA4 configuration, the delivery thresholds, replenishment windows, and the three Admin API limits with a workaround for each.",
+            slug: "ga4-audiences-ecommerce-framework",
+            readTime: "16 min"
           }
         ]
       },
@@ -408,6 +416,14 @@ const getChapters = (locale: string): Chapter[] => {
             "80+ tačaka za proveru naloga, optimizaciju kampanja i bolji ROI.",
           slug: "google-ads-audit-vodic",
           readTime: "15 min"
+        },
+        {
+          title:
+            "GA4 Audience Framework za eCommerce: 25 Lista, 6 Stubova, 3 Ograničenja API-ja",
+          excerpt:
+            "Svih 25 lista sa tačnom GA4 konfiguracijom, pragovi isporuke, replenishment prozori i tri ograničenja Admin API-ja sa zaobilaznicom za svako.",
+          slug: "ga4-publike-ecommerce-framework",
+          readTime: "16 min"
         }
       ]
     },

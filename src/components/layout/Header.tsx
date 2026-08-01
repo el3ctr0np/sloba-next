@@ -195,8 +195,8 @@ export function Header() {
               </Link>
             </div>
             <Link
-              href="/profit-provera"
-              onClick={() => trackCtaClick("header_profit_check", "/profit-provera")}
+              href="/ga4-audiences"
+              onClick={() => trackCtaClick("header_ga4_audiences", "/ga4-audiences")}
               className="border-2 border-primary text-primary px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition-colors hover:bg-primary hover:text-white"
             >
               {t("profitCheck")}
@@ -237,9 +237,9 @@ export function Header() {
                 {t("cta")}
               </Button>
               <Link
-                href="/profit-provera"
+                href="/ga4-audiences"
                 onClick={() => {
-                  trackCtaClick("header_mobile_profit_check", "/profit-provera");
+                  trackCtaClick("header_mobile_ga4_audiences", "/ga4-audiences");
                   setMobileMenuOpen(false);
                 }}
                 className="block w-full text-center border-2 border-primary text-primary px-4 py-2.5 rounded-xl font-semibold"

@@ -70,6 +70,7 @@ This site is a free resource hub for Serbian and English-speaking advertisers co
 - [What is ROAS and How to Calculate It](https://www.slobodan-jelisavac.com/en/blog/what-is-roas): Formula, interactive calculator, industry benchmarks, ROAS vs POAS
 - [POAS vs ROAS — Profit-Based Bidding](https://www.slobodan-jelisavac.com/en/blog/poas-vs-roas): Why a 4x ROAS can still lose money, break-even math (break-even ROAS = 1/margin), and how to feed profit data to Smart Bidding
 - [Offline Conversion Import for B2B](https://www.slobodan-jelisavac.com/en/blog/offline-conversion-import-b2b): Connect Google Ads to HubSpot/Salesforce/Pipedrive so the algorithm learns from closed deals, not form fills
+- [GA4 Audience Framework for Repeat-Purchase Ecommerce](https://www.slobodan-jelisavac.com/en/blog/ga4-audiences-ecommerce-framework): The full 25-list audience framework across six pillars (lifecycle, value/RFM, intent, brand affinity, replenishment, predictive) with exact GA4 configuration per list, delivery thresholds (1,000 active users for Search/Shopping, 100 for Display/YouTube/Demand Gen), replenishment windows for consumable products, and three GA4 Admin API limits with workarounds
 
 ## Advanced Strategy
 
@@ -98,5 +99,6 @@ This site is a free resource hub for Serbian and English-speaking advertisers co
 
 - [Blog Hub (Serbian)](https://www.slobodan-jelisavac.com/sr/blog): Full Serbian blog index, organized into 5 chapters by skill level
 - [Blog Hub (English)](https://www.slobodan-jelisavac.com/en/blog): English blog index
+- [GA4 Audience Framework — free download](https://www.slobodan-jelisavac.com/en/ga4-audiences): The same 25-list framework as executable markdown files (drop into an LLM and it builds the audiences with you) plus a PDF reference. Email only, no other fields.
 - [Google Ads Landing Page](https://www.slobodan-jelisavac.com/sr/lp/google-ads): Conversion-focused service landing page
 - [XML Sitemap](https://www.slobodan-jelisavac.com/sitemap.xml): Full machine-readable URL list

@@ -112,6 +112,9 @@ export const routing = defineRouting({
       en: "/audit"
     },
 
+    // GA4 Audience Framework — lead magnet front-door (replaced /profit-provera Aug 2026)
+    "/ga4-audiences": "/ga4-audiences",
+
     // Profit-Leak Check (interactive scored diagnostic front-door)
     "/profit-provera": {
       sr: "/profit-provera",

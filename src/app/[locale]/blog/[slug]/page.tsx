@@ -859,7 +859,105 @@ const faqSchemaCtrEN = {
   ]
 };
 
+// --- ga4-publike-ecommerce-framework ---
+const faqSchemaGA4AudiencesEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Why are my audiences stuck at zero?",
+      acceptedAnswer: { "@type": "Answer", text: "Either the list hasn't crossed the delivery threshold yet, the event it depends on isn't reaching GA4, or the membership window is shorter than actual customer behaviour. Check in that order — threshold, then event, then window." }
+    },
+    {
+      "@type": "Question",
+      name: "How long should I wait before using a new audience?",
+      acceptedAnswer: { "@type": "Answer", text: "Two to four weeks. Before that, the data sitting in Observation doesn't have enough members to mean anything." }
+    },
+    {
+      "@type": "Question",
+      name: "Do I need the Admin API, or does the UI work fine?",
+      acceptedAnswer: { "@type": "Answer", text: "The UI works for everything except scale. At 25 lists, the API saves hours and gives you repeatability, but the UI can do two things the API can't: LTV percentile targeting and predictive audience templates." }
+    },
+    {
+      "@type": "Question",
+      name: "What's the maximum membership window?",
+      acceptedAnswer: { "@type": "Answer", text: "540 days. There is no longer option in GA4, no matter how long your actual purchase cycle runs." }
+    },
+    {
+      "@type": "Question",
+      name: "What if I only sell one brand?",
+      acceptedAnswer: { "@type": "Answer", text: "Replace the brand affinity pillar with product categories instead. The logic stays identical — only the scope tag changes." }
+    },
+    {
+      "@type": "Question",
+      name: "Does this work for lead gen, not just ecommerce?",
+      acceptedAnswer: { "@type": "Answer", text: "The lifecycle, intent, and value layers carry over. Replenishment doesn't, because there's no consumption cycle to anchor it to — and that pillar is arguably half of this framework's value for a repeat-purchase business." }
+    },
+    {
+      "@type": "Question",
+      name: "Can these audiences go into Performance Max?",
+      acceptedAnswer: { "@type": "Answer", text: "As a signal, yes. As a targeting guarantee, no. PMax uses an audience as an input the algorithm weighs, not as a fence around who sees the ad." }
+    },
+    {
+      "@type": "Question",
+      name: "What if my item_brand field is empty?",
+      acceptedAnswer: { "@type": "Answer", text: "Fall back to a page_location pattern or item_category. Check this before you build the brand affinity lists, not after." }
+    }
+  ]
+};
+
+const faqSchemaGA4AudiencesSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Zašto moje publike stoje na nuli?",
+      acceptedAnswer: { "@type": "Answer", text: "Tri moguća razloga, u redosledu kojim ih proveravam. Ili nisu prešle prag isporuke (1.000 za Search/Shopping, 100 za Display/YouTube/Demand Gen). Ili event na kome počivaju ne stiže u GA4 - proveri Realtime. Ili je membership prozor kraći od stvarnog ponašanja kupaca. Proveravam ovim redosledom, ne nasumično." }
+    },
+    {
+      "@type": "Question",
+      name: "Koliko dugo da čekam pre nego što ih koristim?",
+      acceptedAnswer: { "@type": "Answer", text: "Dve do četiri nedelje. GA4 puni listu od trenutka kreiranja plus otprilike 30 dana unazad - nema retroaktivnog punjenja preko toga. Pre te dve do četiri nedelje, podaci u Observation-u nemaju dovoljno članova da bilo šta znače." }
+    },
+    {
+      "@type": "Question",
+      name: "Da li mi treba Admin API ili može kroz UI?",
+      acceptedAnswer: { "@type": "Answer", text: "UI radi za sve osim za obim. Na 25 lista, API štedi sate i daje ponovljivost. Ali UI ume dve stvari koje API ne ume: prave LTV percentile template-e i predictive audience template-e. Za te dve, ideš u UI bez obzira koliko lista imaš." }
+    },
+    {
+      "@type": "Question",
+      name: "Koji je maksimalni membership prozor?",
+      acceptedAnswer: { "@type": "Answer", text: "540 dana. To je tvrd plafon u GA4 - duže od toga ne postoji, koliko god ti realan ciklus kupovine bio dug. Za kategorije sa dužim ciklusom, ta razlika se rešava van GA4, obično u CRM-u." }
+    },
+    {
+      "@type": "Question",
+      name: "Šta ako prodajem jedan brend?",
+      acceptedAnswer: { "@type": "Answer", text: "BRD stub zameni kategorijama proizvoda umesto brendovima - scope oznaka postaje kategorija (na primer SER za serum) umesto BR1/BR2. Logika ostaje potpuno ista." }
+    },
+    {
+      "@type": "Question",
+      name: "Da li ovo radi za lead-gen, ne samo ecommerce?",
+      acceptedAnswer: { "@type": "Answer", text: "Lifecycle, Intent i Value slojevi rade, sa event imenima prilagođenim lead-gen funnel-u. Replenishment ne radi, jer nema ciklusa potrošnje da se meri - i to je pola vrednosti ovog frameworka koje lead-gen nalog ne dobija." }
+    },
+    {
+      "@type": "Question",
+      name: "Da li publike smeju u PMax?",
+      acceptedAnswer: { "@type": "Answer", text: "Kao signal, da. Kao garancija targetinga, ne. Performance Max koristi publiku kao ulazni signal za algoritam, ne kao ogradu koja fizički ograničava kome se oglas prikazuje." }
+    },
+    {
+      "@type": "Question",
+      name: "Šta ako je moj item_brand prazan?",
+      acceptedAnswer: { "@type": "Answer", text: "Fallback je page_location pattern (URL sadrži brand slug) ili item_category. Ovo proveravaš pre gradnje BRD stuba, ne posle." }
+    }
+  ]
+};
+
 function getFaqSchema(slug: string, locale: string) {
+  if (slug === "ga4-publike-ecommerce-framework") {
+    return locale === "en" ? faqSchemaGA4AudiencesEN : faqSchemaGA4AudiencesSR;
+  }
   if (slug === "google-ads-vs-meta") {
     return locale === "en" ? faqSchemaGoogleVsMetaEN : faqSchemaGoogleVsMetaSR;
   }

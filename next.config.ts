@@ -12,6 +12,28 @@ const nextConfig: NextConfig = {
         destination: "/:locale/usluge",
         permanent: true
       },
+      // Profit-Leak Check retired Aug 2026 — replaced by the GA4 Audience
+      // Framework download as the free front-door. Keeps LinkedIn links alive.
+      {
+        source: "/:locale/profit-provera",
+        destination: "/:locale/ga4-audiences",
+        permanent: true
+      },
+      {
+        source: "/:locale/profit-leak-check",
+        destination: "/:locale/ga4-audiences",
+        permanent: true
+      },
+      {
+        source: "/profit-provera",
+        destination: "/sr/ga4-audiences",
+        permanent: true
+      },
+      {
+        source: "/profit-leak-check",
+        destination: "/en/ga4-audiences",
+        permanent: true
+      },
       // Methodology page retired Jul 2026 — folded into service pages
       {
         source: "/:locale/metodologija",

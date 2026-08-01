@@ -86,10 +86,10 @@ export function ProfitFirstMethod({ locale }: { locale: string }) {
         </div>
         <div className="text-center mt-10">
           <Link
-            href="/profit-provera"
+            href="/ga4-audiences"
             className="inline-flex items-center gap-1 text-primary font-semibold hover:underline"
           >
-            {isEn ? "Check your profit — free →" : "Proverite svoj profit besplatno →"}
+            {isEn ? "Get the free GA4 audience framework →" : "Preuzmite besplatan GA4 audience framework →"}
           </Link>
         </div>
       </div>

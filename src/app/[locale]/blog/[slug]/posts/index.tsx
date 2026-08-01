@@ -64,6 +64,8 @@ import OfflineConversionImportB2BSR from "./offline-conversion-import-b2b/sr";
 import OfflineConversionImportB2BEN from "./offline-conversion-import-b2b/en";
 import GoogleShoppingVsSearchKampanjeSR from "./google-shopping-vs-search-kampanje/sr";
 import GoogleShoppingVsSearchCampaignsEN from "./google-shopping-vs-search-kampanje/en";
+import GA4PublikeFrameworkSR from "./ga4-publike-ecommerce-framework/sr";
+import GA4AudienceFrameworkEN from "./ga4-publike-ecommerce-framework/en";
 import PerformanceMaxVsStandardShoppingSR from "./performance-max-vs-standard-shopping/sr";
 import PerformanceMaxVsStandardShoppingEN from "./performance-max-vs-standard-shopping/en";
 
@@ -99,6 +101,17 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "ga4-publike-ecommerce-framework",
+    title: "GA4 Audience Framework za eCommerce: 25 Lista, 6 Stubova, 3 Ograničenja API-ja",
+    date: "2026-08-01",
+    dateModified: "2026-08-01",
+    category: "Tracking",
+    metaDescription:
+      "Kompletan GA4 audience framework za ecommerce sa ponovljenom kupovinom: svih 25 lista sa tačnom konfiguracijom, naming konvencija, pragovi aktivacije (Search 1.000 / Display 100), replenishment prozori i tri ograničenja Admin API-ja koja ruše pola win-back ideja, sa zaobilaznicama.",
+    readingTime: "~16 min",
+    content: <GA4PublikeFrameworkSR />
+  },
   {
     slug: "performance-max-vs-standard-shopping-vodic",
     title: "Performance Max vs Standard Shopping: Šta Radi u 2026",
@@ -568,6 +581,17 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "ga4-audiences-ecommerce-framework",
+    title: "The GA4 Audience Framework for Repeat-Purchase Ecommerce: 25 Lists, 6 Layers, 3 API Limits",
+    date: "2026-08-01",
+    dateModified: "2026-08-01",
+    category: "Tracking",
+    metaDescription:
+      "The complete GA4 audience framework for repeat-purchase ecommerce: all 25 lists with exact configuration, the naming convention, delivery thresholds (Search 1,000 / Display 100), replenishment windows, and the three Admin API limits that break most win-back setups, with the workaround for each.",
+    readingTime: "~16 min",
+    content: <GA4AudienceFrameworkEN />
+  },
   {
     slug: "performance-max-vs-standard-shopping",
     title: "Performance Max vs Standard Shopping: What Works in 2026",
