@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
-import { Inter, Poppins } from "next/font/google";
-import Script from "next/script";
 // NOTE: <MetaPixel /> deprecated Apr 16, 2026 — Meta Pixel now managed via
 // GTM container GTM-PJ4B5QP (workspace 17, pixel 1794545094595591).
 // Old client-side pixel was firing 978584014430413 (wrong account).
@@ -9,17 +6,19 @@ import Script from "next/script";
 // for reference / potential CAPI revival, but no longer mounted.
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
-});
-
-const poppins = Poppins({
-  weight: ["600", "700"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-poppins",
-});
-
+// This root layout is deliberately a pass-through: it renders no <html>/<body>.
+//
+// It used to call headers() to read the locale for <html lang>. A single
+// headers() call in the ROOT layout opts every route in the app into dynamic
+// rendering — every page, including blog posts that never change, returned
+// `cache-control: private, no-cache, no-store` and missed the CDN on every
+// request (measured Aug 6 2026: x-vercel-cache MISS on 100% of pages, compute
+// running in iad1 while traffic entered at fra1).
+//
+// <html>/<body> now live in the layouts that already know their locale:
+//   src/app/[locale]/layout.tsx  — the whole public site
+//   src/app/not-found.tsx        — global 404 for unmatched URLs
+//   src/app/studio/[[...tool]]/layout.tsx — Sanity Studio (already did)
 export const metadata: Metadata = {
   title: "Slobodan Jelisavac - Google Ads Strategist",
   description:
@@ -33,63 +32,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const locale = (await headers()).get("x-next-intl-locale") ?? "sr";
-
-  return (
-    <html lang={locale} className={`${inter.variable} ${poppins.variable}`}>
-      <head>
-        <link rel="preload" href="/hero.webp" as="image" type="image/webp" />
-        {/* Google Consent Mode v2 — analytics granted by default (anonimna
-            analitika, RS/ZZPL praksa), ADS storage denied dok korisnik ne
-            prihvati na banneru. Must run BEFORE the GTM snippet so gtag()
-            consent state is queued in dataLayer before any tags fire. */}
-        <Script id="consent-mode-default" strategy="beforeInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {
-  ad_storage: 'denied',
-  ad_user_data: 'denied',
-  ad_personalization: 'denied',
-  analytics_storage: 'granted',
-  wait_for_update: 500
-});
-try {
-  if (localStorage.getItem('dj_consent') === 'granted') {
-    gtag('consent', 'update', {
-      ad_storage: 'granted',
-      ad_user_data: 'granted',
-      ad_personalization: 'granted',
-      analytics_storage: 'granted'
-    });
-  }
-} catch (e) {}`}
-        </Script>
-        <Script id="gtm" strategy="afterInteractive">
-          {`if (/(^|\.)slobodan-jelisavac\.com$/.test(location.hostname)) {
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PJ4B5QP');
-}`}
-        </Script>
-      </head>
-      <body className={inter.className}>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PJ4B5QP"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }
