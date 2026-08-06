@@ -232,6 +232,16 @@ const nextConfig: NextConfig = {
     //  - GTM / GA4 / Google Ads / Meta Pixel / YouTube / Vercel: analytics
     //    and embeds fire through googletagmanager, google-analytics,
     //    googleadservices, doubleclick, connect.facebook.net, youtube, vercel.
+    //  - pagead2.googlesyndication.com + doubleclick in connect-src: modern
+    //    gtag posts conversions and remarketing to /ccm/collect via fetch, not
+    //    an image pixel. Missing it silently killed every Google Ads signal
+    //    (GA4 page_view + AW-11116427812 enhanced conversions) until Aug 6 2026.
+    //  - bat.bing.com (Microsoft UET) + clarity.ms (Clarity p9emdujpy4): both
+    //    fire from GTM container GTM-PJ4B5QP, not from site code, so they are
+    //    invisible to a source grep — verify in the browser console after any
+    //    CSP change.
+    //  - img-src is already `https:`, so tracking pixels need no per-host entry;
+    //    only script-src and connect-src are allowlisted per host.
     //  - formsubmit.co: contact + audit forms POST natively (form-action),
     //    LP multi-step + profit-leak calculators POST via fetch (connect-src).
     //  - *.sanity.io + wss://*.sanity.io: embedded Sanity Studio at /studio
@@ -253,7 +263,7 @@ const nextConfig: NextConfig = {
       {
         key: "Content-Security-Policy",
         value:
-          "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://connect.facebook.net https://*.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://connect.facebook.net https://www.facebook.com https://*.vercel-insights.com https://formsubmit.co https://*.sanity.io wss://*.sanity.io; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.googletagmanager.com https://td.doubleclick.net https://www.facebook.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; frame-ancestors 'self'; upgrade-insecure-requests"
+          "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com https://www.google.com https://connect.facebook.net https://*.vercel-scripts.com https://bat.bing.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://td.doubleclick.net https://www.google.com https://connect.facebook.net https://www.facebook.com https://*.vercel-insights.com https://formsubmit.co https://*.sanity.io wss://*.sanity.io https://bat.bing.com https://www.clarity.ms https://*.clarity.ms; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.googletagmanager.com https://td.doubleclick.net https://www.facebook.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; frame-ancestors 'self'; upgrade-insecure-requests"
       }
     ];
 
