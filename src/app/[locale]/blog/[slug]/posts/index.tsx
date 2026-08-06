@@ -105,12 +105,12 @@ export type PostData = {
 const srPosts: PostData[] = [
   {
     slug: "product-feed-optimizacija-scorecard",
-    title: "Merchant Center Feed Scorecard: Kako Oceniti i Popraviti Product Feed",
+    title: "Merchant Center Feed Scorecard: Ocenite i Popravite Feed",
     date: "2026-08-06",
     dateModified: "2026-08-06",
     category: "Google Shopping",
     metaDescription:
-      "Ocenio sam product feed od skoro hiljadu proizvoda po 34 polja i dobio 33 od 100. Metod ocenjivanja koji možete sami da izvedete, tri sloja feeda, formula za naslove, polja koja stoje na nuli a ne koštaju ništa, i pet popravki od kojih se kreće.",
+      "Ocenio sam product feed po 34 polja i dobio 33 od 100. Metod koji sami izvedete za pola sata, tri sloja feeda i pet popravki od kojih se kreće.",
     featuredImage: "/blog/gmc-feed-scorecard/fig-00-cover-sr.png",
     readingTime: "~15 min",
     content: <MerchantCenterFeedScorecardSR />
@@ -597,12 +597,12 @@ const srPosts: PostData[] = [
 const enPosts: PostData[] = [
   {
     slug: "merchant-center-feed-scorecard",
-    title: "The Merchant Center Feed Scorecard: How to Grade and Fix a Product Feed",
+    title: "Merchant Center Feed Scorecard: How to Grade a Product Feed",
     date: "2026-08-06",
     dateModified: "2026-08-06",
     category: "Google Shopping",
     metaDescription:
-      "I scored a product feed of just under 1,000 items across 34 attributes and it came out at 33 out of 100. The scoring method you can run yourself, the three layers of a feed, a title formula, the fields sitting at zero that cost nothing to fill, and the five fixes that move first.",
+      "I scored a product feed across 34 attributes and got 33 out of 100. Run the same method yourself in half an hour, and see the five fixes that move first.",
     featuredImage: "/blog/gmc-feed-scorecard/fig-00-cover-en.png",
     readingTime: "~15 min",
     content: <MerchantCenterFeedScorecardEN />

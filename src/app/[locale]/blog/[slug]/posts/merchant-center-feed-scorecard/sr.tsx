@@ -69,7 +69,7 @@ export default function MerchantCenterFeedScorecardSR() {
 
       <h2 id="ocenjivanje">Kako se ocenjuje</h2>
       <p>
-        Ovde nema procene, samo se broji. Za svako od 34 polja proveravam koliko proizvoda ga ima popunjeno i delim sa ukupnim brojem proizvoda u katalogu. Nema &quot;dobro popunjeno&quot; ili &quot;loše popunjeno&quot; - polje je ili prisutno ili nije, a kvalitet sadržaja unutar njega je posebna priča koja dolazi tek posle. Ukupna ocena je prosek ta 34 procenta.
+        Ovde nema procene, samo se broji. Za svako od 34 polja proveravam koliko proizvoda ga ima popunjeno i delim sa ukupnim brojem proizvoda u katalogu. Nema &quot;dobro popunjeno&quot; ili &quot;loše popunjeno&quot; - polje je ili prisutno ili nije, a kvalitet sadržaja unutar njega je posebna priča koja dolazi tek posle. Ukupna ocena je prosek ta 34 procenta. Sva polja i njihova pravila stoje u Google-ovoj <a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener noreferrer">specifikaciji podataka o proizvodu</a>, pa lista nije moja procena nego njihov spisak.
       </p>
       <p>
         Merenje je namerno tupo, i baš zato mu se veruje. Ne zavisi od mog mišljenja o tome da li je naslov dobar, nego od toga da li polje uopšte postoji u fajlu. Isti postupak možete da ponovite sami nad svojim feedom za pola sata, bez ikakvog alata osim tabele, i dobićete broj koji niko ne može da obori sa &quot;pa meni deluje da je u redu&quot;.
@@ -135,7 +135,7 @@ export default function MerchantCenterFeedScorecardSR() {
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">image_link</td>
               <td className="py-3 px-3 whitespace-nowrap">99%</td>
-              <td className="py-3 px-3">glavna slika, prvi vizuelni signal u oglasu. Google od 14. aprila 2026. upozorava na slike ispod 500x500px, a od 31. januara 2027. počinje da ih odbija, pa je bolje to proveriti sad nego one nedelje kad pravilo stupi na snagu.</td>
+              <td className="py-3 px-3">glavna slika, prvi vizuelni signal u oglasu. Google od 14. aprila 2026. upozorava na slike ispod 500x500px, a od 31. januara 2027. počinje da ih odbija, pa je bolje to proveriti sad nego one nedelje kad pravilo stupi na snagu. Uslovi za sliku su u <a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener noreferrer">Google-ovoj dokumentaciji za image_link</a>.</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-mono text-xs whitespace-nowrap">availability</td>
@@ -217,7 +217,7 @@ export default function MerchantCenterFeedScorecardSR() {
 
       <h3 className="text-lg font-heading font-bold mt-8 mb-2">item_group_id</h3>
       <p>
-        50% pokrivenosti - polovina varijanti (različite zapremine, različite nijanse, različiti setovi istog proizvoda) Google-u izgleda kao nepovezani artikli. Posledica: varijante se čitaju kao nepovezani proizvodi, pa se podaci o učinku razbijaju po skoro istim šiframa umesto da se skupljaju na jednom mestu.
+        50% pokrivenosti - polovina varijanti (različite zapremine, različite nijanse, različiti setovi istog proizvoda) Google-u izgleda kao nepovezani artikli. Posledica: varijante se čitaju kao nepovezani proizvodi, pa se podaci o učinku razbijaju po skoro istim šiframa umesto da se skupljaju na jednom mestu. Pravilo je jednostavno i stoji u <a href="https://support.google.com/merchants/answer/6324507" target="_blank" rel="noopener noreferrer">dokumentaciji za item_group_id</a>: sve varijante istog proizvoda dele istu vrednost.
       </p>
 
       <h3 className="text-lg font-heading font-bold mt-8 mb-2">additional_image_link</h3>

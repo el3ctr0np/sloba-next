@@ -63,7 +63,7 @@ export default function MerchantCenterFeedScorecardEN() {
 
       <h2 id="scoring">How the score works</h2>
       <p>
-        The method is deliberately plain: for each of the 34 attributes, count how many products in the catalogue have that field filled, divide by the total product count, and you get a coverage percentage. Average the 34 percentages and you get the feed score. No weighting, no opinion about which field matters more - just presence or absence, measured the same way for every attribute.
+        The method is deliberately plain: for each of the 34 attributes, count how many products in the catalogue have that field filled, divide by the total product count, and you get a coverage percentage. Average the 34 percentages and you get the feed score. No weighting, no opinion about which field matters more - just presence or absence, measured the same way for every attribute. The attribute list isn&apos;t mine either: it comes straight out of Google&apos;s <a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener noreferrer">product data specification</a>.
       </p>
       <figure className="my-8">
         <Image src="/blog/gmc-feed-scorecard/fig-01-score-en.png" alt="Feed score of 33 out of 100 shown with three stat cards: 34 attributes assessed, 8 attributes at 95 percent or higher coverage, 21 attributes below 30 percent coverage" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
@@ -123,7 +123,7 @@ export default function MerchantCenterFeedScorecardEN() {
             <tr className="border-b border-gray-200 bg-gray-50/50"><td className="py-3 px-3 font-mono text-xs">title</td><td className="py-3 px-3">100%</td><td className="py-3 px-3">Present everywhere - the problem here is length, not presence, see below</td></tr>
             <tr className="border-b border-gray-200"><td className="py-3 px-3 font-mono text-xs">description</td><td className="py-3 px-3">99%</td><td className="py-3 px-3">Filled almost everywhere; quality wasn&apos;t part of this scorecard</td></tr>
             <tr className="border-b border-gray-200 bg-gray-50/50"><td className="py-3 px-3 font-mono text-xs">link</td><td className="py-3 px-3">100%</td><td className="py-3 px-3">Every product resolves to a live product page</td></tr>
-            <tr className="border-b border-gray-200"><td className="py-3 px-3 font-mono text-xs">image_link</td><td className="py-3 px-3">99%</td><td className="py-3 px-3">The dozen or so products without one are worth finding by hand, not just noting. Google began warning on images below 500x500px on 14 April 2026 and starts enforcing the rule on 31 January 2027, which is worth checking now rather than the week it lands.</td></tr>
+            <tr className="border-b border-gray-200"><td className="py-3 px-3 font-mono text-xs">image_link</td><td className="py-3 px-3">99%</td><td className="py-3 px-3">The dozen or so products without one are worth finding by hand, not just noting. Google began warning on images below 500x500px on 14 April 2026 and starts enforcing the rule on 31 January 2027, which is worth checking now rather than the week it lands. The full requirements sit in the <a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener noreferrer">image_link documentation</a>.</td></tr>
             <tr className="border-b border-gray-200 bg-gray-50/50"><td className="py-3 px-3 font-mono text-xs">availability</td><td className="py-3 px-3">100%</td><td className="py-3 px-3">In stock / out of stock is syncing correctly across the catalogue</td></tr>
             <tr className="border-b border-gray-200"><td className="py-3 px-3 font-mono text-xs">price</td><td className="py-3 px-3">99%</td><td className="py-3 px-3">Matches the on-site price for nearly the whole catalogue</td></tr>
             <tr className="border-b border-gray-200 bg-gray-50/50"><td className="py-3 px-3 font-mono text-xs">brand</td><td className="py-3 px-3">99%</td><td className="py-3 px-3">Present, though see the casing issue in the fix list below</td></tr>
@@ -191,7 +191,7 @@ export default function MerchantCenterFeedScorecardEN() {
 
       <h3 className="text-lg font-heading font-bold mt-8 mb-3">item_group_id</h3>
       <p>
-        Coverage sat at 50%. This field is what tells Google &quot;these are the same product in different sizes/shades/scents,&quot; and without it on the other half of the catalogue, variants get treated as unrelated products, so performance data and learnings fragment across near-identical SKUs instead of accumulating on one listing.
+        Coverage sat at 50%. This field is what tells Google &quot;these are the same product in different sizes/shades/scents,&quot; and without it on the other half of the catalogue, variants get treated as unrelated products, so performance data and learnings fragment across near-identical SKUs instead of accumulating on one listing. The rule in the <a href="https://support.google.com/merchants/answer/6324507" target="_blank" rel="noopener noreferrer">item_group_id documentation</a> is simply that every variant of the same product shares one value.
       </p>
 
       <h3 className="text-lg font-heading font-bold mt-8 mb-3">additional_image_link</h3>
