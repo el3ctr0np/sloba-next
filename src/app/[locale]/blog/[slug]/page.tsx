@@ -119,6 +119,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 /* ── FAQ Schemas ── */
 
+// --- product-feed-optimizacija-scorecard / merchant-center-feed-scorecard ---
+const faqSchemaFeedScorecardSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Kako da ocenim svoj product feed?", acceptedAnswer: { "@type": "Answer", text: "Skinite feed iz Merchant Center-a (Products → Feeds → Download), otvorite ga u tabeli, za svaku kolonu izbrojte popunjeno naspram ukupnog broja proizvoda, pretvorite u procenat i usrednjite procente po svim poljima koja proveravate. Dobijete jedan broj od 0 do 100 i listu polja sortiranu po tome koliko su prazna." } },
+    { "@type": "Question", name: "Koliko karaktera sme naslov u Google Shopping-u?", acceptedAnswer: { "@type": "Answer", text: "Google dozvoljava do 150 karaktera. U katalogu koji sam ocenjivao prosečan naslov koristi 51 karakter, a 89 odsto proizvoda je ispod 70 karaktera, pa najveći deo prostora za uparivanje stoji neiskorišćen." } },
+    { "@type": "Question", name: "Šta je GTIN i da li mi treba?", acceptedAnswer: { "@type": "Answer", text: "GTIN je zvanični barkod broj proizvoda (EAN, UPC i slično) koji obično dodeljuje proizvođač. Ako proizvod ima barkod, taj broj ide u polje gtin. Ako ga stvarno nema, na primer kod setova ili ručno rađenih proizvoda, postavite identifier_exists na false umesto da polje ostavite prazno." } },
+    { "@type": "Question", name: "Zašto se moj set poredi sa jednim proizvodom?", acceptedAnswer: { "@type": "Answer", text: "Zato što polje is_bundle nije postavljeno. Bez njega Google nema signal da artikal sadrži više proizvoda, pa cenu seta poredi sa cenom pojedinačnog proizvoda i set izgleda preskupo. Popunite is_bundle, a gde su u pakovanju isti komadi i multipack." } },
+    { "@type": "Question", name: "Koja polja u feedu su obavezna?", acceptedAnswer: { "@type": "Answer", text: "Osnovni skup je id, title, description, link, image_link, availability, price i brand. Skoro svaka platforma za e-trgovinu ih popunjava automatski, zbog čega ta polja retko i jesu pravi problem." } },
+    { "@type": "Question", name: "Da li vredi popunjavati sva polja u feedu?", acceptedAnswer: { "@type": "Answer", text: "Ne. Cilj nije 100 od 100, nego da prepoznate koja polja nešto menjaju za vašu kategoriju. Materijal i sertifikati u skincare kategoriji ne nose skoro ništa, dok isti ti podaci kod odeće ili tehnike nose mnogo." } },
+    { "@type": "Question", name: "Koliko često treba ponovo oceniti feed?", acceptedAnswer: { "@type": "Answer", text: "Svaka veća serija novih proizvoda menja pokrivenost polja, pa je ocenjivanje na svaka dva do tri meseca dovoljno da uhvatite pad pre nego što postane trend." } },
+    { "@type": "Question", name: "Da li je 33 od 100 loša ocena?", acceptedAnswer: { "@type": "Answer", text: "Tretirajte je kao početno merenje, ne kao ocenu u školskom smislu, jer ova metoda još nije primenjena na dovoljno naloga da bi postojao poredbeni prosek. Važan je oblik: obavezna polja skoro puna, pojačivači na pola, treći sloj na nuli. Ako vaš audit pokaže isti oblik, redosled popravki važi bez obzira na to koji broj vama izađe." } },
+  ],
+};
+
+const faqSchemaFeedScorecardEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "How do I score my own product feed?", acceptedAnswer: { "@type": "Answer", text: "Download your feed from Merchant Center under Products → Feeds, open it in a spreadsheet, count filled cells per column against the total number of rows, convert that to a percentage, and average those percentages across every attribute you assess. You get one number from 0 to 100 plus a list of attributes sorted by how empty they are." } },
+    { "@type": "Question", name: "How many characters can a Google Shopping title be?", acceptedAnswer: { "@type": "Answer", text: "150 characters. In the catalogue I audited the average title used only 51 of them and 89 percent of titles sat under 70 characters, so most of the available matching space was never claimed." } },
+    { "@type": "Question", name: "What is a GTIN, and do I need one?", acceptedAnswer: { "@type": "Answer", text: "A GTIN is the barcode-level identifier (UPC, EAN or ISBN depending on the market) that uniquely identifies a manufactured product. If your product genuinely has one, submit it. If it genuinely does not, such as on a bundle or a hand-made item, set identifier_exists to false rather than leaving both fields blank." } },
+    { "@type": "Question", name: "Why is my bundle compared to a single product?", acceptedAnswer: { "@type": "Answer", text: "Because is_bundle is not set on the listing. Without it Google has no signal that the item contains more than one product, so it is price-compared against single-item listings and reads as overpriced. Set is_bundle, and set multipack where a pack contains identical items." } },
+    { "@type": "Question", name: "Which product feed fields are actually required?", acceptedAnswer: { "@type": "Answer", text: "The core set is id, title, description, link, image_link, availability, price and brand. Most ecommerce platforms populate these automatically, which is exactly why they are rarely the real problem." } },
+    { "@type": "Question", name: "Is it worth filling in every feed attribute?", acceptedAnswer: { "@type": "Answer", text: "No. The goal is not 100 out of 100, it is knowing which attributes change something in your category. Material and certification carry almost nothing in skincare, while the same fields are load-bearing on apparel or electronics." } },
+    { "@type": "Question", name: "Is a feed score of 33 out of 100 bad?", acceptedAnswer: { "@type": "Answer", text: "Treat it as a starting measurement rather than a grade, since this method has not been run across enough accounts to publish a benchmark. What matters is the shape: required fields near-perfect, multipliers patchy, advantage layer at zero. If your own audit produces that shape, the fix order applies whatever your overall number is." } },
+    { "@type": "Question", name: "How often should a product feed be re-scored?", acceptedAnswer: { "@type": "Answer", text: "Every sizeable batch of new products changes attribute coverage, because new items arrive with whatever the platform fills in by default rather than with whatever was fixed by hand. Re-scoring every two to three months is enough to catch a decline before it becomes a trend." } },
+  ],
+};
+
 const faqSchemaGoogleVsMetaSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -955,6 +986,9 @@ const faqSchemaGA4AudiencesSR = {
 };
 
 function getFaqSchema(slug: string, locale: string) {
+  if (slug === "product-feed-optimizacija-scorecard") {
+    return locale === "en" ? faqSchemaFeedScorecardEN : faqSchemaFeedScorecardSR;
+  }
   if (slug === "ga4-publike-ecommerce-framework") {
     return locale === "en" ? faqSchemaGA4AudiencesEN : faqSchemaGA4AudiencesSR;
   }
