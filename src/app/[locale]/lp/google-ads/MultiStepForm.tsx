@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "@/i18n/navigation";
-import { useSearchParams } from "next/navigation";
 import { CheckCircle } from "lucide-react";
 
 // --- GTM dataLayer helper -------------------------------------------------
@@ -94,7 +93,6 @@ const TRACKING_PARAMS = [
 
 export function MultiStepForm({ locale }: { locale: string }) {
   const router = useRouter();
-  const searchParams = useSearchParams();
   const [step, setStep] = useState(1);
   const [data, setData] = useState<FormData>(initialData);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -105,17 +103,22 @@ export function MultiStepForm({ locale }: { locale: string }) {
   const formStartedRef = useRef(false);
   const formViewedRef = useRef(false);
 
-  // Capture ad tracking params on mount
+  // Capture ad tracking params on mount.
+  // Reads window.location directly rather than useSearchParams(): that hook
+  // would opt this page out of static prerendering (CSR bailout), which would
+  // ship the LP without the form in its HTML. The capture only ever runs on the
+  // client anyway, so the behaviour is identical.
   useEffect(() => {
+    const query = new URLSearchParams(window.location.search);
     const params: Record<string, string> = {};
     TRACKING_PARAMS.forEach((key) => {
-      const val = searchParams.get(key);
+      const val = query.get(key);
       if (val) params[key] = val;
     });
     if (Object.keys(params).length > 0) {
       setTrackingData(params);
     }
-  }, [searchParams]);
+  }, []);
 
   // form_view: fire once when form scrolls into 30% viewport
   useEffect(() => {
