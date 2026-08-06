@@ -68,6 +68,8 @@ import GA4PublikeFrameworkSR from "./ga4-publike-ecommerce-framework/sr";
 import GA4AudienceFrameworkEN from "./ga4-publike-ecommerce-framework/en";
 import PerformanceMaxVsStandardShoppingSR from "./performance-max-vs-standard-shopping/sr";
 import PerformanceMaxVsStandardShoppingEN from "./performance-max-vs-standard-shopping/en";
+import MerchantCenterFeedScorecardSR from "./merchant-center-feed-scorecard/sr";
+import MerchantCenterFeedScorecardEN from "./merchant-center-feed-scorecard/en";
 
 // English post imports
 import HowMuchDoesGoogleAdsCostEN from "./koliko-kosta-google-ads/en";
@@ -101,6 +103,18 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "product-feed-optimizacija-scorecard",
+    title: "Merchant Center Feed Scorecard: Kako Oceniti i Popraviti Product Feed",
+    date: "2026-08-06",
+    dateModified: "2026-08-06",
+    category: "Google Shopping",
+    metaDescription:
+      "Ocenio sam product feed od skoro hiljadu proizvoda po 34 polja i dobio 33 od 100. Metod ocenjivanja koji možete sami da izvedete, tri sloja feeda, formula za naslove, polja koja stoje na nuli a ne koštaju ništa, i pet popravki od kojih se kreće.",
+    featuredImage: "/blog/gmc-feed-scorecard/fig-00-cover-sr.png",
+    readingTime: "~15 min",
+    content: <MerchantCenterFeedScorecardSR />
+  },
   {
     slug: "ga4-publike-ecommerce-framework",
     title: "GA4 Audience Framework za eCommerce: 25 Lista, 6 Stubova, 3 Ograničenja API-ja",
@@ -581,6 +595,18 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "merchant-center-feed-scorecard",
+    title: "The Merchant Center Feed Scorecard: How to Grade and Fix a Product Feed",
+    date: "2026-08-06",
+    dateModified: "2026-08-06",
+    category: "Google Shopping",
+    metaDescription:
+      "I scored a product feed of just under 1,000 items across 34 attributes and it came out at 33 out of 100. The scoring method you can run yourself, the three layers of a feed, a title formula, the fields sitting at zero that cost nothing to fill, and the five fixes that move first.",
+    featuredImage: "/blog/gmc-feed-scorecard/fig-00-cover-en.png",
+    readingTime: "~15 min",
+    content: <MerchantCenterFeedScorecardEN />
+  },
   {
     slug: "ga4-audiences-ecommerce-framework",
     title: "The GA4 Audience Framework for Repeat-Purchase Ecommerce: 25 Lists, 6 Layers, 3 API Limits",

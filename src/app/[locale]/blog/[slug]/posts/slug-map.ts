@@ -1,5 +1,6 @@
 // Canonical (SR) slug → EN slug mapping
 export const slugMap: Record<string, string> = {
+  "product-feed-optimizacija-scorecard": "merchant-center-feed-scorecard",
   "ga4-publike-ecommerce-framework": "ga4-audiences-ecommerce-framework",
   "google-api-pristupi-za-agencije": "google-api-access-guide-for-agencies",
   "google-ads-api-basic-access-vodic": "google-ads-api-basic-access-guide",
