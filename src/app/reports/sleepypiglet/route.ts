@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { REPORT_B64 } from "./report.data";
 
 // Password-protected client report (HTTP Basic Auth).
-const PASSWORD = process.env.REPORT_SLEEPYPIGLET_PASSWORD || "sleepyPiglet2026*";
+// No fallback default on purpose - see the note in reports/chelleon/route.ts.
+const PASSWORD = process.env.REPORT_SLEEPYPIGLET_PASSWORD;
 
 export const dynamic = "force-dynamic";
 
@@ -17,6 +18,12 @@ function unauthorized() {
 }
 
 export async function GET(request: NextRequest) {
+  if (!PASSWORD) {
+    return new NextResponse("Report is not configured.", {
+      status: 503,
+      headers: { "Cache-Control": "no-store" },
+    });
+  }
   const auth = request.headers.get("authorization") || "";
   if (!auth.startsWith("Basic ")) return unauthorized();
   let decoded = "";

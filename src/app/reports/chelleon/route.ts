@@ -2,9 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { REPORT_B64 } from "./report.data";
 
 // Password-protected client report (HTTP Basic Auth).
-// Password is read from env REPORT_CHELLEON_PASSWORD, with a fallback default.
 // Username can be anything; only the password is checked.
-const PASSWORD = process.env.REPORT_CHELLEON_PASSWORD || "chelleonGrowth2026*";
+//
+// No fallback default on purpose. A literal here is a working password for
+// anyone who can read the repo, which is exactly how these reports leaked
+// (Aug 8 2026). A missing variable now closes the route instead of opening it.
+const PASSWORD = process.env.REPORT_CHELLEON_PASSWORD;
 
 export const dynamic = "force-dynamic";
 
@@ -19,6 +22,13 @@ function unauthorized() {
 }
 
 export async function GET(request: NextRequest) {
+  if (!PASSWORD) {
+    return new NextResponse("Report is not configured.", {
+      status: 503,
+      headers: { "Cache-Control": "no-store" },
+    });
+  }
+
   const auth = request.headers.get("authorization") || "";
 
   if (!auth.startsWith("Basic ")) {

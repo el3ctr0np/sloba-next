@@ -42,3 +42,6 @@ next-env.d.ts
 
 .vercel
 .env*.local
+
+# Documented required vars - safe to track, holds no values
+!.env.example

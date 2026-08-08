@@ -2,9 +2,16 @@ import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 
 const COOKIE_NAME = "portal_session";
-const JWT_SECRET = new TextEncoder().encode(
-  process.env.PORTAL_JWT_SECRET || "dev-secret-change-in-production"
-);
+
+// Signing key for the portal session cookie. No fallback default on purpose:
+// a literal here lets anyone who can read the source mint a valid session.
+// Resolved per call rather than at module load, so a missing variable fails
+// the individual request instead of taking down the whole deployment.
+function jwtSecret(): Uint8Array {
+  const secret = process.env.PORTAL_JWT_SECRET;
+  if (!secret) throw new Error("PORTAL_JWT_SECRET is not set");
+  return new TextEncoder().encode(secret);
+}
 
 export interface PortalSession {
   clientId: string;
@@ -16,12 +23,12 @@ export async function createSessionToken(session: PortalSession): Promise<string
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
     .setExpirationTime("30d")
-    .sign(JWT_SECRET);
+    .sign(jwtSecret());
 }
 
 export async function verifySessionToken(token: string): Promise<PortalSession | null> {
   try {
-    const { payload } = await jwtVerify(token, JWT_SECRET);
+    const { payload } = await jwtVerify(token, jwtSecret());
     return {
       clientId: payload.clientId as string,
       clientName: payload.clientName as string,
