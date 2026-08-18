@@ -92,7 +92,7 @@ export default function GoogleAdsAuditGuideEN() {
         <Link href="/usluge/google-ads-audit" className="underline font-semibold">Google Ads audit service</Link>, which covers the same 80+ checkpoints below.
       </p>
       <p>
-        This checklist still holds up in the Performance Max and AI Max era: those campaign types blend Search, Shopping, and Display signals into one automated unit, so audit them separately from standard Search campaigns and treat each asset group the way you&apos;d treat an ad group — one theme, not a dumping ground.
+        Updated August 2026: this checklist still holds up in the Performance Max and AI Max era, where those campaign types blend Search, Shopping, and Display signals into one automated unit, so audit them separately from standard Search campaigns and treat each asset group the way you&apos;d treat an ad group — one theme, not a dumping ground.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">

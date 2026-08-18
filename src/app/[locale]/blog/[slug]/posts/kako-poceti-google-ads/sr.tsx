@@ -85,10 +85,10 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <h2 id="zasto-google-ads-u-2026-godini">Zašto Google Ads u 2026. godini</h2>
       <p>
-        Google obradi <strong>8,5 milijardi pretraga dnevno</strong>. Svaki put kada neko ukuca &quot;servis klima uređaja Beograd&quot; ili &quot;kupiti bicikl online&quot; — to je potencijalni kupac koji aktivno traži rešenje. Ne čeka da ga reklama nađe. On sam traži.
+        Ako tek počinjete i budžet vam je mali, ne morate odmah da rizikujete veliki iznos da biste proverili da li vam se kanal isplati. Google obradi <strong>8,5 milijardi pretraga dnevno</strong>. Svaki put kada neko ukuca &quot;servis klima uređaja Beograd&quot; ili &quot;kupiti bicikl online&quot;, to je potencijalni kupac koji aktivno traži rešenje. Ne čeka da ga reklama nađe, on sam traži.
       </p>
       <p>
-        Tu leži ključna razlika između Google Ads-a i svega ostalog: oglašavate se ljudima koji su <em>već u fazi traženja</em>. Meta, TikTok, bilbordi - svi prekidaju nekoga ko nije tražio. Google hvata nameru u trenutku kada postoji. Za biznis koji prodaje konkretne proizvode ili usluge, to je najmoćniji kanal koji postoji - i upravo zato je google oglašavanje ostalo prvi izbor za direktan odgovor, godinu za godinom.
+        Tu leži ključna razlika između Google Ads-a i svega ostalog: oglašavate se ljudima koji su <em>već u fazi traženja</em>. Meta, TikTok, bilbordi - svi prekidaju nekoga ko nije tražio. Google hvata nameru u trenutku kada postoji. Za biznis koji prodaje konkretne proizvode ili usluge, to je najmoćniji kanal koji postoji, i upravo zato je google oglašavanje ostalo prvi izbor za direktan odgovor, godinu za godinom.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -483,8 +483,11 @@ export default function KakoPocetiGoogleAdsSR() {
       </div>
 
       <p>
-        Detaljno poređenje opcija — agencija, freelancer ili in-house — možete pročitati u posebnom vodiču:{" "}
+        Detaljno poređenje opcija - agencija, freelancer ili in-house - možete pročitati u posebnom vodiču:{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="text-blue-700 underline">Agencija vs. freelancer: šta je pravo za vaš biznis</Link>.
+      </p>
+      <p>
+        Ako pre ulaganja budžeta samo želite proveru da li je vaš plan realan, <Link href="/usluge/konsultacije" className="text-blue-700 underline">konsultacija</Link> od €150/sat daje spoljni pogled na strukturu i budžet bez obaveze dužeg angažmana.
       </p>
       <p>
         Postoji i srednje rešenje: profesionalno postavljen nalog koji dalje sami vodite. Pogledajte moje{" "}

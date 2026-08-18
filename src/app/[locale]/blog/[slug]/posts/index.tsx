@@ -560,7 +560,7 @@ const srPosts: PostData[] = [
     slug: "kako-poceti-google-ads",
     title: "Kako početi sa Google oglašavanjem: Vodič za početnike [2026]",
     date: "2026-03-01",
-    dateModified: "2026-07-12",
+    dateModified: "2026-08-18",
     category: "Google Ads",
     metaDescription:
       "Kako početi sa Google oglašavanjem od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
@@ -983,7 +983,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-audit-checklist",
     title: "Google Ads Audit Checklist 2026: 80+ Points, 1-Hour Audit",
     date: "2026-01-27",
-    dateModified: "2026-07-12",
+    dateModified: "2026-08-18",
     category: "Google Ads Audit",
     metaDescription:
       "Free 80+ point Google Ads audit checklist for 2026. Find wasted spend in 60 minutes — conversion tracking, Smart Bidding, Quality Score, negatives. Tested on 20+ accounts.",
