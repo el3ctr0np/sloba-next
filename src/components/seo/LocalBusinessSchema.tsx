@@ -59,28 +59,18 @@ export function LocalBusinessSchema({ locale }: { locale: string }) {
         email: "info@slobodan-jelisavac.com",
         foundingDate: "2020-01-01",
         founder: { "@id": "https://www.slobodan-jelisavac.com/#person" },
-        address: [
-          {
-            "@type": "PostalAddress",
-            streetAddress: "Majora Gavrilovića 1",
-            addressLocality: "Nova Pazova",
-            postalCode: "22330",
-            addressRegion: "Vojvodina",
-            addressCountry: "RS",
-          },
-          {
-            "@type": "PostalAddress",
-            streetAddress: "Majora Zorana Radosavljevića 222, stan 16",
-            addressLocality: "Batajnica",
-            postalCode: "11273",
-            addressRegion: "Beograd",
-            addressCountry: "RS",
-          },
-        ],
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Majora Gavrilovića 1",
+          addressLocality: "Nova Pazova",
+          postalCode: "22330",
+          addressRegion: "Vojvodina",
+          addressCountry: "RS",
+        },
         geo: {
           "@type": "GeoCoordinates",
-          latitude: 44.9439,
-          longitude: 20.2200,
+          latitude: 44.9553,
+          longitude: 20.2225,
         },
         openingHoursSpecification: {
           "@type": "OpeningHoursSpecification",

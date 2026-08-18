@@ -352,7 +352,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     "@type": "Service",
     name: "Google Ads za B2B kompanije",
     description:
-      "Mesečno Google Ads vođenje za B2B — od €700/mes.",
+      "Mesečno Google Ads vođenje za B2B - od €700/mes.",
     provider: {
       "@type": "Person",
       name: "Slobodan Jelisavac",
@@ -521,7 +521,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             <p className="text-base text-gray-800 mb-0 leading-relaxed">
               {locale === "en"
                 ? "Google Ads for B2B works best for companies with a defined sales process, a CRM system (HubSpot, Salesforce, Pipedrive), and a budget of $10,000+/month. The focus is lead quality, not lead count — tracking from click to closed deal typically cuts CPA by 40%+ in 2-3 months. Monthly management starts from $2,500/mo."
-                : "Google Ads za B2B najbolje radi za firme sa definisanim sales procesom, CRM sistemom (HubSpot, Salesforce, Pipedrive) i budžetom od €1.500+/mes. Fokus je na kvalitetu leadova, ne na broju — praćenje od klika do zatvorenog posla tipično smanjuje CPA za 40%+ u 2-3 meseca. Mesečno vođenje od €700/mes."}
+                : "Google Ads za B2B najbolje radi za firme sa definisanim sales procesom, CRM sistemom (HubSpot, Salesforce, Pipedrive) i budžetom od €1.500+/mes. Fokus je na kvalitetu leadova, ne na broju - praćenje od klika do zatvorenog posla tipično smanjuje CPA za 40%+ u 2-3 meseca. Mesečno vođenje od €700/mes."}
             </p>
           </div>
         </div>
@@ -594,7 +594,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
               <strong>{locale === "en" ? "Note:" : "Napomena:"}</strong>{" "}
               {locale === "en"
                 ? "If you don't yet have a CRM or a defined sales process, set that up first — a consultation is the right format for that step."
-                : "Ako još nemate CRM ni definisan sales proces, prvo to postavite — konsultacija je pravi format za taj korak."}
+                : "Ako još nemate CRM ni definisan sales proces, prvo to postavite - konsultacija je pravi format za taj korak."}
             </div>
           </Card>
         </div>
@@ -609,7 +609,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "From CRM audit to optimization by closed deals — a 5-step process."
-              : "Od CRM audita do optimizacije po zatvorenim poslovima — proces u 5 koraka."}
+              : "Od CRM audita do optimizacije po zatvorenim poslovima - proces u 5 koraka."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -708,12 +708,12 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
         <div className="max-w-4xl mx-auto mt-8">
           <Card className="h-full">
             <h3 className="text-lg font-heading font-semibold mb-3 text-gray-900">
-              {locale === "en" ? "SaaS Company (Germany) — mini case" : "SaaS Company (Nemačka) — mini case"}
+              {locale === "en" ? "SaaS Company (Germany) — mini case" : "SaaS Company (Nemačka) - mini case"}
             </h3>
             <p className="text-gray-600 text-base">
               {locale === "en"
                 ? "This B2B SaaS company was generating demo requests, but had no visibility into which campaigns produced leads that actually turned into sales conversations. I restructured the account around demo-request campaigns with tighter targeting and connected downstream CRM data back into Google Ads. The result was a $95 CPA against an industry average of $150+ — a direct outcome of optimizing for lead quality rather than raw form-fill volume."
-                : "Ova B2B SaaS kompanija je generisala demo zahteve, ali nije imala uvid u to koje kampanje donose leadove koji zaista postaju sales razgovori. Restruktuirao sam nalog oko demo-request kampanja sa užim targetiranjem i povezao downstream CRM podatke nazad u Google Ads. Rezultat je bio EUR 85 CPA naspram industrijskog proseka od EUR 140+ — direktna posledica optimizacije ka kvalitetu leadova, a ne ka golom broju prijava."}
+                : "Ova B2B SaaS kompanija je generisala demo zahteve, ali nije imala uvid u to koje kampanje donose leadove koji zaista postaju sales razgovori. Restruktuirao sam nalog oko demo-request kampanja sa užim targetiranjem i povezao downstream CRM podatke nazad u Google Ads. Rezultat je bio EUR 85 CPA naspram industrijskog proseka od EUR 140+ - direktna posledica optimizacije ka kvalitetu leadova, a ne ka golom broju prijava."}
             </p>
           </Card>
         </div>

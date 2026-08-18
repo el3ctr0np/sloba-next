@@ -171,7 +171,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
       : [
           "Tražite set-and-forget bez strateškog nadzora",
           "Nemate verifikovan tracking konverzija",
-          "Vaš ad spend je ispod praga — konsultacija je bolja polazna tačka"
+          "Vaš ad spend je ispod praga - konsultacija je bolja polazna tačka"
         ];
 
   const faqs =
@@ -221,7 +221,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
           {
             question: "Koliko budžeta treba za PMax?",
             answer:
-              "Za sam PMax kanal minimum €1.000/mes budžeta ima smisla, ali PMax vodim u sklopu šireg upravljanja (od €700/mes) — samostalan PMax bez Search/Shopping konteksta retko daje pun potencijal."
+              "Za sam PMax kanal minimum €1.000/mes budžeta ima smisla, ali PMax vodim u sklopu šireg upravljanja (od €700/mes) - samostalan PMax bez Search/Shopping konteksta retko daje pun potencijal."
           },
           {
             question: "Koliko traje učenje PMax kampanje?",
@@ -438,7 +438,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
                 <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
                 {locale === "en"
                   ? "Performance Max works best combined with Search and Shopping campaigns — automation needs 4-6 weeks to stabilize and get a clean conversion signal. I run it as part of Google Ads management from $2,500/mo."
-                  : "Performance Max najbolje radi u kombinaciji sa Search i Shopping kampanjama — automatizaciji treba 4-6 nedelja za stabilizaciju i čist conversion signal. Vodim ga u sklopu Google Ads upravljanja od €700/mes."}
+                  : "Performance Max najbolje radi u kombinaciji sa Search i Shopping kampanjama - automatizaciji treba 4-6 nedelja za stabilizaciju i čist conversion signal. Vodim ga u sklopu Google Ads upravljanja od €700/mes."}
               </p>
             </div>
 
@@ -668,7 +668,7 @@ export default async function PerformanceMaxPage({ params }: Props) {
             ) : (
               <>
                 Napomena: PMax je jedan od kanala unutar Google Ads
-                upravljanja — strategija, feed i merenje idu zajedno. Vodim
+                upravljanja - strategija, feed i merenje idu zajedno. Vodim
                 ga u sklopu{" "}
                 <Link
                   href="/usluge/google-ads-upravljanje"

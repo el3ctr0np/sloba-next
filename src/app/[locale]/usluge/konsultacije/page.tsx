@@ -77,7 +77,7 @@ export default async function KonsultacijePage({ params }: Props) {
           {
             title: "Imate specifičan problem",
             description:
-              "Performance je pao ili nešto ne radi kako treba — potreban vam je debugging."
+              "Performance je pao ili nešto ne radi kako treba - potreban vam je debugging."
           },
           {
             title: "Želite strategiju, ne izvršenje",
@@ -348,12 +348,12 @@ export default async function KonsultacijePage({ params }: Props) {
           {
             question: "Da li postoji minimalni budžet za oglašavanje da bi konsultacija imala smisla?",
             answer:
-              "Ne, nema minimalnog ad spend budžeta za konsultaciju — funkcioniše bez obzira da li trošite €300 ili €30.000 mesečno. Cena je po sesiji, ne vezuje se za vaš budžet, što je čini pristupačnom i za manje firme."
+              "Ne, nema minimalnog ad spend budžeta za konsultaciju - funkcioniše bez obzira da li trošite €300 ili €30.000 mesečno. Cena je po sesiji, ne vezuje se za vaš budžet, što je čini pristupačnom i za manje firme."
           },
           {
             question: "Koja je razlika između konsultanta i agencije?",
             answer:
-              "Agencija preuzima kompletnu izvedbu mesečno. Konsultant poput mene daje ekspertski input po potrebi — strategiju, second opinion ili rešavanje problema — dok vaš tim (ili vi) zadržava kontrolu nad svakodnevnim izvršenjem. Lakša i fleksibilnija obaveza."
+              "Agencija preuzima kompletnu izvedbu mesečno. Konsultant poput mene daje ekspertski input po potrebi - strategiju, second opinion ili rešavanje problema - dok vaš tim (ili vi) zadržava kontrolu nad svakodnevnim izvršenjem. Lakša i fleksibilnija obaveza."
           },
           {
             question: "Da li radite konsultacije i sa malim firmama?",
@@ -591,7 +591,7 @@ export default async function KonsultacijePage({ params }: Props) {
           <p className="text-gray-600 text-base leading-relaxed">
             {locale === "en"
               ? "I work with marketing managers, in-house PPC specialists, agency owners, and company founders who want independent assessment, strategic advice, or technical help — without commitment to long-term collaboration."
-              : "Radim sa marketing managerima, in-house PPC specijalistima, vlasnicima agencija i osnivačima kompanija koji žele nezavisnu procenu, strateški savet ili tehničku pomoć — bez obaveze na dugotrajnu saradnju."}
+              : "Radim sa marketing managerima, in-house PPC specijalistima, vlasnicima agencija i osnivačima kompanija koji žele nezavisnu procenu, strateški savet ili tehničku pomoć - bez obaveze na dugotrajnu saradnju."}
           </p>
         </div>
       </section>
@@ -659,7 +659,7 @@ export default async function KonsultacijePage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "Choose the format that fits your needs — from quick session to detailed account review."
-              : "Izaberite format koji odgovara vašim potrebama — od brze sesije do detaljnog account review-a."}
+              : "Izaberite format koji odgovara vašim potrebama - od brze sesije do detaljnog account review-a."}
           </p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
@@ -749,7 +749,7 @@ export default async function KonsultacijePage({ params }: Props) {
                 <span className="text-green-600 flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "Verbal priorities — for a written prioritized plan, see Deep Audit + Action Plan"
-                  : "Usmeni prioriteti — za pisani prioritizovan plan tu je Deep Audit + Action Plan"}
+                  : "Usmeni prioriteti - za pisani prioritizovan plan tu je Deep Audit + Action Plan"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
@@ -831,7 +831,7 @@ export default async function KonsultacijePage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "From booking to written summary — simple process in 4 steps."
-              : "Od zakazivanja termina do pisanog summary-ja — jednostavan proces u 4 koraka."}
+              : "Od zakazivanja termina do pisanog summary-ja - jednostavan proces u 4 koraka."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -873,7 +873,7 @@ export default async function KonsultacijePage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "Google Ads consulting is ideal for different profiles — from marketers to company founders."
-              : "Google Ads konsultacije idealne su za različite profile — od marketara do osnivača kompanija."}
+              : "Google Ads konsultacije idealne su za različite profile - od marketara do osnivača kompanija."}
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

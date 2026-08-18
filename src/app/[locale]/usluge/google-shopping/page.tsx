@@ -177,7 +177,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
     "You're ready for long-term partnership (minimum 3 months)"
   ] : [
     "Imate online prodavnicu sa minimum 50 proizvoda",
-    "Ad spend minimum €1.500/mesečno — Shopping vodim u okviru eCommerce Growth paketa (od €700/mes)",
+    "Ad spend minimum €1.500/mesečno - Shopping vodim u okviru eCommerce Growth paketa (od €700/mes)",
     "Imate definisane marže po proizvodima",
     "Želite da skalirate eCommerce prihode",
     "Spremni ste za dugoročnu saradnju (minimum 3 meseca)"
@@ -189,7 +189,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
     "Looking for the cheapest option on the market"
   ] : [
     "Nemate funkcionalan online sajt ili checkout",
-    "Ad spend je ispod praga od €1.500/mesečno — konsultacija ili Kickstart su bolji fit",
+    "Ad spend je ispod praga od €1.500/mesečno - konsultacija ili Kickstart su bolji fit",
     "Tražite najjeftiniju opciju na tržištu"
   ];
 
@@ -546,7 +546,7 @@ export default async function GoogleShoppingPage({ params }: Props) {
               </>
             ) : (
               <>
-                Shopping je jedan kanal — za kompletnu eCommerce strategiju pogledajte{" "}
+                Shopping je jedan kanal - za kompletnu eCommerce strategiju pogledajte{" "}
                 <Link href="/usluge/google-ads-za-ecommerce" className="underline">
                   Google Ads za eCommerce
                 </Link>

@@ -360,7 +360,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
       "@type": "Offer",
       price: "1000",
       priceCurrency: "EUR",
-      description: "YouTube oglašavanje — minimalni budžet €1.000/mes"
+      description: "YouTube oglašavanje - minimalni budžet €1.000/mes"
     }
   };
 
@@ -495,7 +495,7 @@ export default async function YouTubeOglasiPage({ params }: Props) {
               <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
               {locale === "en"
                 ? "YouTube advertising requires a minimum budget of $1,000/month for measurable results — for awareness campaigns count on $3,000+, for performance campaigns $2,000+. I run it as a channel within Google Ads management."
-                : "YouTube oglašavanje zahteva minimum €1.000/mes budžeta za merljive rezultate — za awareness kampanje računajte €3.000+, za performance €2.000+. Vodim ga kao kanal u okviru Google Ads upravljanja."}
+                : "YouTube oglašavanje zahteva minimum €1.000/mes budžeta za merljive rezultate - za awareness kampanje računajte €3.000+, za performance €2.000+. Vodim ga kao kanal u okviru Google Ads upravljanja."}
             </p>
           </div>
         </div>

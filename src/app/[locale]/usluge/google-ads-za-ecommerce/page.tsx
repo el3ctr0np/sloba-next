@@ -303,7 +303,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         {
           question: "Šta je dobar ROAS za eCommerce?",
           answer:
-            "Zavisi od marži. Ako je marža 50%, break-even ROAS je 2x. Za stvaran profit — uz troškove dostave, povrata i režije — cilja se više, zato optimizujem POAS (profit na uloženo), ne goli ROAS."
+            "Zavisi od marži. Ako je marža 50%, break-even ROAS je 2x. Za stvaran profit - uz troškove dostave, povrata i režije - cilja se više, zato optimizujem POAS (profit na uloženo), ne goli ROAS."
         },
         {
           question: "Da li upravljate i feed-om?",
@@ -318,7 +318,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         {
           question: "Da li radite i Meta oglase?",
           answer:
-            "Fokus je na Google Ads, ali za omnichannel pristup nudim Performance Marketing kroz Funky Enterprises — senior tim koji vodi kompletnu omnichannel paid strategiju: Google, Meta, SEO i CRO."
+            "Fokus je na Google Ads, ali za omnichannel pristup nudim Performance Marketing kroz Funky Enterprises - senior tim koji vodi kompletnu omnichannel paid strategiju: Google, Meta, SEO i CRO."
         }
       ];
 
@@ -369,7 +369,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         "@type": "Service",
         name: "Google Ads za eCommerce",
         description:
-          "Mesečno Google Ads vođenje za eCommerce — od €700/mes.",
+          "Mesečno Google Ads vođenje za eCommerce - od €700/mes.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
@@ -560,7 +560,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
           <p className="text-base text-gray-500 mt-4">
             {locale === "en"
               ? <>This page covers the complete eCommerce strategy — if you're interested specifically in the Shopping feed, see <Link href="/usluge/google-shopping" className="text-primary underline">Google Shopping campaigns</Link>.</>
-              : <>Ova stranica pokriva kompletnu eCommerce strategiju — ako vas zanima isključivo Shopping feed, pogledajte <Link href="/usluge/google-shopping" className="text-primary underline">Google Shopping kampanje</Link>.</>}
+              : <>Ova stranica pokriva kompletnu eCommerce strategiju - ako vas zanima isključivo Shopping feed, pogledajte <Link href="/usluge/google-shopping" className="text-primary underline">Google Shopping kampanje</Link>.</>}
           </p>
         </div>
       </section>
@@ -627,7 +627,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
               <strong>{locale === "en" ? "Note:" : "Napomena:"}</strong>{" "}
               {locale === "en"
                 ? "If you have fewer than 50 products or your store just launched, full management is overkill — a consultation ($200/hr) or Kickstart is a better first step."
-                : "Ako imate manje od 50 proizvoda ili ste tek pokrenuli prodavnicu, puno vođenje je overkill — konsultacija (€150/sat) ili Kickstart su bolji prvi korak."}
+                : "Ako imate manje od 50 proizvoda ili ste tek pokrenuli prodavnicu, puno vođenje je overkill - konsultacija (€150/sat) ili Kickstart su bolji prvi korak."}
             </div>
           </Card>
         </div>
@@ -642,7 +642,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "From feed audit to margin-based optimization — a 5-step process."
-              : "Od feed audita do optimizacije po marži — proces u 5 koraka."}
+              : "Od feed audita do optimizacije po marži - proces u 5 koraka."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -690,7 +690,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
               <>
                 <GlossaryLink slug="roas">ROAS</GlossaryLink> i{" "}
                 <GlossaryLink slug="poas">POAS</GlossaryLink> odgovaraju na
-                različita pitanja — jedan meri prihod, drugi meri profit.
+                različita pitanja - jedan meri prihod, drugi meri profit.
               </>
             )}
           </p>
@@ -757,7 +757,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         <div className="max-w-5xl mx-auto mt-8">
           <Card className="h-full">
             <h3 className="text-lg font-heading font-semibold mb-3 text-gray-900">
-              {locale === "en" ? "Mobelaris — mini case" : "Mobelaris — mini case"}
+              {locale === "en" ? "Mobelaris — mini case" : "Mobelaris - mini case"}
             </h3>
             <p className="text-gray-600 text-base">
               {locale === "en"

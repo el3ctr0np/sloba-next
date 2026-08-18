@@ -97,7 +97,7 @@ export default async function ServicesPage({ params }: Props) {
     {
       title: "Google Ads audit",
       href: "/usluge/google-ads-audit",
-      desc: "Detaljna analiza naloga sa prioritetnim preporukama — otkrijte gde gubite novac i kako popraviti.",
+      desc: "Detaljna analiza naloga sa prioritetnim preporukama - otkrijte gde gubite novac i kako popraviti.",
       badge: null
     },
     {
@@ -121,7 +121,7 @@ export default async function ServicesPage({ params }: Props) {
     {
       title: "Remarketing",
       href: "/usluge/remarketing",
-      desc: "Povratak posetilaca kroz Display, YouTube i Search remarketing — povećajte konverzije.",
+      desc: "Povratak posetilaca kroz Display, YouTube i Search remarketing - povećajte konverzije.",
       badge: null
     },
     {
@@ -249,7 +249,7 @@ export default async function ServicesPage({ params }: Props) {
       title: "eCommerce Growth",
       price: "od €700/mes",
       note: "Za budžete €1.500+/mes ad spend-a.",
-      desc: "Kompletno Google Ads upravljanje za online prodavnice — nedeljna optimizacija, Shopping feed upravljanje, mesečni reporting.",
+      desc: "Kompletno Google Ads upravljanje za online prodavnice - nedeljna optimizacija, Shopping feed upravljanje, mesečni reporting.",
       href: "/usluge/google-ads-upravljanje",
       cta: "Saznajte više"
     },
@@ -257,7 +257,7 @@ export default async function ServicesPage({ params }: Props) {
       title: "Performance Marketing",
       price: "Powered by Funky Enterprises",
       note: null,
-      desc: "Za brendove koji ciljaju lidersku poziciju u svojoj kategoriji. Kompletan omnichannel tim — Google Ads + Meta + SEO + CRO.",
+      desc: "Za brendove koji ciljaju lidersku poziciju u svojoj kategoriji. Kompletan omnichannel tim - Google Ads + Meta + SEO + CRO.",
       href: "/usluge/google-ads-upravljanje",
       cta: "Saznajte više"
     }
@@ -269,7 +269,7 @@ export default async function ServicesPage({ params }: Props) {
     { range: "Omnichannel (Google + Meta + SEO + CRO) — $20k+/mo per channel", fit: "Performance Marketing (Funky)" }
   ] : [
     { range: "Ispod €1.000/mes ili tek počinjete", fit: "Konsultacije / Kickstart" },
-    { range: "€1.500–5.000/mes eCommerce ad spend", fit: "Growth" },
+    { range: "€1.500-5.000/mes eCommerce ad spend", fit: "Growth" },
     { range: "€5.000+/mes ili multi-channel", fit: "Performance (Funky)" }
   ];
 
@@ -425,7 +425,7 @@ export default async function ServicesPage({ params }: Props) {
   } : {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Google Ads usluge — Slobodan Jelisavac",
+    name: "Google Ads usluge - Slobodan Jelisavac",
     description:
       "Profesionalne Google Ads usluge za eCommerce i B2B kompanije: upravljanje, audit, Shopping, Performance Max, remarketing, YouTube, konsultacije.",
     provider: {
@@ -629,13 +629,13 @@ export default async function ServicesPage({ params }: Props) {
               <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
                 <strong>Google Ads</strong> je najbrži način da dođete do kupaca koji
                 aktivno traže vaše proizvode ili usluge. Ali bez pravilne strategije,
-                strukture kampanja i kontinuirane optimizacije — lako se pretvori u
+                strukture kampanja i kontinuirane optimizacije - lako se pretvori u
                 nepotrebni trošak.
               </p>
               <p className="text-gray-600 text-base leading-relaxed">
                 Sa preko decenije iskustva u vođenju kampanja za brendove u Srbiji,
                 UK, Nemačkoj i Hrvatskoj, nudim kompletne Google Ads usluge
-                prilagođene vašim ciljevima — bilo da ste eCommerce koji traži bolji
+                prilagođene vašim ciljevima - bilo da ste eCommerce koji traži bolji
                 ROAS ili B2B firma koja generiše kvalifikovane leadove.
               </p>
             </>
@@ -745,7 +745,7 @@ export default async function ServicesPage({ params }: Props) {
                 <p className="text-slate-300 text-sm mb-6 leading-relaxed">
                   {locale === "en"
                     ? "For market leaders and brands aspiring to become one. Complete performance team — Google Ads + Meta + SEO + CRO. I partner with the Funky Enterprises team."
-                    : "Za tržišne lidere i brendove koji žele da to postanu. Kompletni performance tim — Google Ads + Meta + SEO + CRO. Nastupam kao partner Funky Enterprises tima."
+                    : "Za tržišne lidere i brendove koji žele da to postanu. Kompletni performance tim - Google Ads + Meta + SEO + CRO. Nastupam kao partner Funky Enterprises tima."
                   }
                 </p>
                 <ul className="space-y-2 text-sm text-slate-300 mb-6">
@@ -785,7 +785,7 @@ export default async function ServicesPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "Two ways to work together — strategic support you or your team execute, or complete campaign management."
-              : "Dva načina saradnje — strategijska podrška koju vi ili vaš tim izvršavate, ili kompletno vođenje kampanja."
+              : "Dva načina saradnje - strategijska podrška koju vi ili vaš tim izvršavate, ili kompletno vođenje kampanja."
             }
           </p>
         </div>
@@ -897,7 +897,7 @@ export default async function ServicesPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "From first call to measurable results — transparent process with no surprises."
-              : "Od prvog poziva do merljivih rezultata — transparentan proces bez iznenađenja."
+              : "Od prvog poziva do merljivih rezultata - transparentan proces bez iznenađenja."
             }
           </p>
         </div>

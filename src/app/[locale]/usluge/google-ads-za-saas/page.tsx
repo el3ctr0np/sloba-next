@@ -109,7 +109,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           number: 1,
           title: "Trial/demo tracking",
           description:
-            "Pre bilo kakvih izmena u kampanjama, postavljam tracking za akcije koje su zaista bitne — trial start, demo booking i evente koji prethode plaćenoj konverziji."
+            "Pre bilo kakvih izmena u kampanjama, postavljam tracking za akcije koje su zaista bitne - trial start, demo booking i evente koji prethode plaćenoj konverziji."
         },
         {
           number: 2,
@@ -133,7 +133,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           number: 5,
           title: "Optimizacija na CAC payback",
           description:
-            "Budžet se pomera ka kampanjama sa najbržim CAC payback periodom — metrikom koja zaista određuje da li je rast održiv."
+            "Budžet se pomera ka kampanjama sa najbržim CAC payback periodom - metrikom koja zaista određuje da li je rast održiv."
         }
       ];
 
@@ -324,7 +324,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         "@type": "Service",
         name: "Google Ads za SaaS",
         description:
-          "Mesečno Google Ads vođenje za SaaS — od €700/mes.",
+          "Mesečno Google Ads vođenje za SaaS - od €700/mes.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
@@ -649,7 +649,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "From trial/demo tracking to optimization on CAC payback — a 5-step process."
-              : "Od trial/demo trackinga do optimizacije na CAC payback — proces u 5 koraka."}
+              : "Od trial/demo trackinga do optimizacije na CAC payback - proces u 5 koraka."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -692,12 +692,12 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
             <p className="text-gray-700 text-base leading-relaxed mb-3">
               {locale === "en"
                 ? "CAC (Customer Acquisition Cost) is what it costs to turn a click into a paying customer, and LTV (Lifetime Value) is what that customer is worth over the full relationship. In Google Ads, every bid decision is really a bet on this ratio — if CAC creeps above what LTV supports, growth stops being profitable no matter how many trials you generate."
-                : "CAC (Customer Acquisition Cost) je trošak pretvaranja klika u plaćajućeg korisnika, a LTV (Lifetime Value) je vrednost tog korisnika tokom celog odnosa sa vama. U Google Ads-u je svaka odluka o bidu zapravo opklada na ovaj odnos — ako CAC prevaziđe ono što LTV podržava, rast prestaje da bude profitabilan bez obzira na broj generisanih trial-ova."}
+                : "CAC (Customer Acquisition Cost) je trošak pretvaranja klika u plaćajućeg korisnika, a LTV (Lifetime Value) je vrednost tog korisnika tokom celog odnosa sa vama. U Google Ads-u je svaka odluka o bidu zapravo opklada na ovaj odnos - ako CAC prevaziđe ono što LTV podržava, rast prestaje da bude profitabilan bez obzira na broj generisanih trial-ova."}
             </p>
             <p className="text-gray-700 text-base leading-relaxed mb-4">
               {locale === "en"
                 ? "The formula is straightforward: CAC = total acquisition cost / number of new customers. As a rule of thumb, a healthy LTV:CAC ratio target is 3:1 or higher — below that, the economics of paid acquisition become fragile."
-                : "Formula je jednostavna: CAC = ukupan trošak akvizicije / broj novih kupaca. Kao orijentir, zdrav cilj za LTV:CAC odnos je 3:1 ili viši — ispod toga, ekonomija paid acquisition-a postaje krhka."}
+                : "Formula je jednostavna: CAC = ukupan trošak akvizicije / broj novih kupaca. Kao orijentir, zdrav cilj za LTV:CAC odnos je 3:1 ili viši - ispod toga, ekonomija paid acquisition-a postaje krhka."}
             </p>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 font-mono text-sm text-gray-800">
               CAC = {locale === "en" ? "total acquisition cost" : "ukupan trošak akvizicije"} / {locale === "en" ? "number of new customers" : "broj novih kupaca"}
@@ -744,12 +744,12 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         <div className="max-w-4xl mx-auto mt-8">
           <Card className="h-full">
             <h3 className="text-lg font-heading font-semibold mb-3 text-yellow-700">
-              {locale === "en" ? "HR Tech Startup — mini case" : "HR Tech Startup — mini case"}
+              {locale === "en" ? "HR Tech Startup — mini case" : "HR Tech Startup - mini case"}
             </h3>
             <p className="text-gray-600 text-base">
               {locale === "en"
                 ? "This HR tech startup had demo request campaigns running, but CAC was climbing and there was no clear read on which channels produced demos that converted to paid seats. After tightening targeting toward higher-intent search terms and connecting demo-to-paid data back into the account, CAC dropped from $220 to $105 while qualified demo requests grew 180% — proof that a lower CAC and higher lead quality can move together when the account optimizes on the right signal."
-                : "Ovaj HR tech startup je imao demo request kampanje, ali CAC je rastao i nije bilo jasnog uvida u to koji kanali donose demo zahteve koji konvertuju u plaćene korisnike. Nakon sužavanja targetiranja ka high-intent search terminima i povezivanja demo-to-paid podataka nazad u nalog, CAC je pao sa EUR 200 na EUR 95, dok su kvalifikovani demo zahtevi porasli 180% — dokaz da niži CAC i veći kvalitet leadova mogu ići zajedno kada nalog optimizuje ka pravom signalu."}
+                : "Ovaj HR tech startup je imao demo request kampanje, ali CAC je rastao i nije bilo jasnog uvida u to koji kanali donose demo zahteve koji konvertuju u plaćene korisnike. Nakon sužavanja targetiranja ka high-intent search terminima i povezivanja demo-to-paid podataka nazad u nalog, CAC je pao sa EUR 200 na EUR 95, dok su kvalifikovani demo zahtevi porasli 180% - dokaz da niži CAC i veći kvalitet leadova mogu ići zajedno kada nalog optimizuje ka pravom signalu."}
             </p>
           </Card>
         </div>

@@ -174,7 +174,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           "Looking for the cheapest option on the market"
         ]
       : [
-          "Budžet ispod €5.000 mesečno po kanalu — eCommerce Growth je bolji fit za vas",
+          "Budžet ispod €5.000 mesečno po kanalu - eCommerce Growth je bolji fit za vas",
           "Potreban samo jedan kanal (Google Ads ili Meta)",
           "Tražite najjeftiniju opciju na tržištu"
         ];
@@ -271,7 +271,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
             question:
               "Koja je razlika između Performance Marketing-a i standardnog Google Ads upravljanja?",
             answer:
-              "Performance Marketing uključuje kompletan omnichannel tim — Google Ads, Meta, SEO, CRO i kreativu. Standardno upravljanje pokriva samo Google Ads."
+              "Performance Marketing uključuje kompletan omnichannel tim - Google Ads, Meta, SEO, CRO i kreativu. Standardno upravljanje pokriva samo Google Ads."
           },
           {
             question: "Koliki je minimalni budžet za Performance Marketing?",
@@ -281,7 +281,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           {
             question: "Ko je Funky Enterprises?",
             answer:
-              "Funky Enterprises je digital marketing agencija sa kojom imam strateško partnerstvo. Zajedno pokrivamo sve kanale — od Google Ads-a i Meta oglašavanja do SEO-a i kreative."
+              "Funky Enterprises je digital marketing agencija sa kojom imam strateško partnerstvo. Zajedno pokrivamo sve kanale - od Google Ads-a i Meta oglašavanja do SEO-a i kreative."
           },
           {
             question:
@@ -292,7 +292,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           {
             question: "Kako izgleda komunikacija sa timom?",
             answer:
-              "Imate jednu kontaktnu tačku — mene. Ja koordinišem ceo tim i vi ne morate da komunicirate sa svakim specijalistom pojedinačno."
+              "Imate jednu kontaktnu tačku - mene. Ja koordinišem ceo tim i vi ne morate da komunicirate sa svakim specijalistom pojedinačno."
           }
         ];
 
@@ -427,7 +427,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           "@type": "Service",
           name: "Performance Marketing",
           description:
-            "Omnichannel performance marketing tim (Google + Meta + SEO + CRO) — za budžete €5.000+/mes. Isporučuje se u partnerstvu sa Funky Enterprises.",
+            "Omnichannel performance marketing tim (Google + Meta + SEO + CRO) - za budžete €5.000+/mes. Isporučuje se u partnerstvu sa Funky Enterprises.",
           provider: [
             {
               "@type": "Person",
@@ -600,7 +600,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
                 >
                   Funky Enterprises
                 </a>{" "}
-                — digital marketing agencijom specijalizovanom za omnichannel
+                - digital marketing agencijom specijalizovanom za omnichannel
                 pristup.
               </>
             )}
@@ -608,7 +608,7 @@ export default async function PerformanceMarketingPage({ params }: Props) {
           <p className="text-gray-600">
             {locale === "en"
               ? "This isn't classic freelance management where you have one person on one channel. Here you get a complete team of specialists: Meta expert, creative team (designer + copywriter), SEO team, CRO specialist, project manager, and me on Google Ads. The result is an integrated strategy that functions as if you have an in-house marketing team — but without the overhead of hiring."
-              : "Ovo nije klasično freelance upravljanje gde imate jednog čoveka na jednom kanalu. Ovde dobijate kompletan tim specijalista: Meta ekspertu, creative tim (designer + copywriter), SEO tim, CRO specijalista, project managera i mene na Google Ads-u. Rezultat je integrisana strategija koja funkcioniše kao da imate interni marketing tim — ali bez overhead-a zapošljavanja."}
+              : "Ovo nije klasično freelance upravljanje gde imate jednog čoveka na jednom kanalu. Ovde dobijate kompletan tim specijalista: Meta ekspertu, creative tim (designer + copywriter), SEO tim, CRO specijalista, project managera i mene na Google Ads-u. Rezultat je integrisana strategija koja funkcioniše kao da imate interni marketing tim - ali bez overhead-a zapošljavanja."}
           </p>
         </div>
       </section>

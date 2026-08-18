@@ -274,7 +274,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     {
       question: "Da li mi treba pristup Google Ads-u?",
       answer:
-        "Da, potreban mi je read-only pristup (Viewer role). Ne menjam ništa u nalogu bez vašeg odobrenja — audit je čisto analitički."
+        "Da, potreban mi je read-only pristup (Viewer role). Ne menjam ništa u nalogu bez vašeg odobrenja - audit je čisto analitički."
     },
     {
       question: "Da li mogu sam da implementiram preporuke?",
@@ -304,12 +304,12 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     {
       question: "Da li radite audit i za male ad budžete?",
       answer:
-        "Da. Čak i mali budžet ima koristi od audita ako niste sigurni zašto kampanje ne konvertuju. Za veoma male budžete, konsultacija može biti isplativiji početak — iskreno ću vam reći šta vam više odgovara. Ako vam treba samo brza provera, razmislite prvo o besplatnom 15-minutnom video pregledu."
+        "Da. Čak i mali budžet ima koristi od audita ako niste sigurni zašto kampanje ne konvertuju. Za veoma male budžete, konsultacija može biti isplativiji početak - iskreno ću vam reći šta vam više odgovara. Ako vam treba samo brza provera, razmislite prvo o besplatnom 15-minutnom video pregledu."
     },
     {
       question: "Koja je razlika između audita od agencije i nezavisnog konsultanta?",
       answer:
-        "Audit od agencije često je zapravo prodajni pitch za njihovu uslugu upravljanja. Moj nezavisni audit je neutralan — nemam interes da preporučim nepotrebne izmene, a izveštaj možete odneti bilo kojoj agenciji ili svom internom timu."
+        "Audit od agencije često je zapravo prodajni pitch za njihovu uslugu upravljanja. Moj nezavisni audit je neutralan - nemam interes da preporučim nepotrebne izmene, a izveštaj možete odneti bilo kojoj agenciji ili svom internom timu."
     },
     {
       question: "Koliko košta Google Ads audit?",
@@ -574,7 +574,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               <>
                 Sa preko decenije iskustva u vođenju Google Ads kampanja za brendove
                 u Srbiji, UK, Nemačkoj i Hrvatskoj, pomažem kompanijama da identifikuju
-                tačno gde se troši novac bez rezultata — i kako to popraviti. Audit je
+                tačno gde se troši novac bez rezultata - i kako to popraviti. Audit je
                 idealan za one koji žele second opinion, pripremaju skaliranje ili traže
                 razlog za loše performanse.
               </>
@@ -609,7 +609,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
                   <Link href="/audit" className="text-primary underline">
                     besplatan 15-minutni video pregled
                   </Link>{" "}
-                  za kvalifikovane naloge — lakši, teaser nivo, ne kompletan plan.
+                  za kvalifikovane naloge - lakši, teaser nivo, ne kompletan plan.
                 </>
               )}
             </p>
@@ -744,7 +744,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "From access to final report — simple and transparent 3-step process."
-              : "Od pristupa do finalnog izveštaja — jednostavan i transparentan proces u 3 koraka."}
+              : "Od pristupa do finalnog izveštaja - jednostavan i transparentan proces u 3 koraka."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">

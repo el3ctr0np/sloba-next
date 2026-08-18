@@ -114,7 +114,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             title: "Dubinska analiza pre početka",
             description:
-              "Razumevanje vašeg biznis modela, marži, idealnih kupaca i konkurencije — pre nego što potrošim i jedan dinar na oglase."
+              "Razumevanje vašeg biznis modela, marži, idealnih kupaca i konkurencije - pre nego što potrošim i jedan dinar na oglase."
           },
           {
             title: "Struktura kampanja po meri",
@@ -456,17 +456,17 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "Da li morate imati pristup mom Google Ads nalogu?",
             answer:
-              "Da, potreban je admin pristup kako bih mogao da sprovodim sve neophodne izmene. Nalog ostaje u vašem vlasništvu — ja dobijam pristup kroz MCC (My Client Center)."
+              "Da, potreban je admin pristup kako bih mogao da sprovodim sve neophodne izmene. Nalog ostaje u vašem vlasništvu - ja dobijam pristup kroz MCC (My Client Center)."
           },
           {
             question: "Šta ako već imam kampanje koje rade?",
             answer:
-              "Počinjem auditom postojećeg stanja i identifikujem prilike za poboljšanje pre većih promena. Nikada ne rušim ono što funkcioniše — nadograđujem."
+              "Počinjem auditom postojećeg stanja i identifikujem prilike za poboljšanje pre većih promena. Nikada ne rušim ono što funkcioniše - nadograđujem."
           },
           {
             question: "Da li radite i sa malim budžetima?",
             answer:
-              "Mesečno vođenje ispod €700/mes ne radim — ne mogu da ga isporučim na senior nivou. Za manje budžete: konsultacije (€150/sat) ili Kickstart projekat (od €690)."
+              "Mesečno vođenje ispod €700/mes ne radim - ne mogu da ga isporučim na senior nivou. Za manje budžete: konsultacije (€150/sat) ili Kickstart projekat (od €690)."
           },
           {
             question: "Koliko često ćemo komunicirati?",
@@ -476,27 +476,27 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           {
             question: "Koja je minimalna dužina saradnje?",
             answer:
-              "Preporučujem minimum 3 meseca za testiranje i optimizaciju. Nema dugoročnih ugovora — rezultati me zadržavaju, ne ugovori."
+              "Preporučujem minimum 3 meseca za testiranje i optimizaciju. Nema dugoročnih ugovora - rezultati me zadržavaju, ne ugovori."
           },
           {
             question: "Koliko košta Google oglašavanje u Srbiji?",
             answer:
-              "Cena Google oglašavanja zavisi od industrije, konkurencije i ciljeva. Prosečan CPC u Srbiji je €0,10-0,80. Mesečno vođenje počinje od €700. Za manja ulaganja tu su one-off projekti i konsultacije — cena zavisi od obima."
+              "Cena Google oglašavanja zavisi od industrije, konkurencije i ciljeva. Prosečan CPC u Srbiji je €0,10-0,80. Mesečno vođenje počinje od €700. Za manja ulaganja tu su one-off projekti i konsultacije - cena zavisi od obima."
           },
           {
             question: "Da li Google oglašavanje funkcioniše za malu firmu?",
             answer:
-              "Svesno vodim ograničen broj naloga. Ako još niste spremni za ozbiljan budžet, počnite konsultacijom — dobićete plan koji možete sami da izvršite."
+              "Svesno vodim ograničen broj naloga. Ako još niste spremni za ozbiljan budžet, počnite konsultacijom - dobićete plan koji možete sami da izvršite."
           },
           {
             question: "Koja je razlika između agencije i freelance konsultanta?",
             answer:
-              "Kod agencije vaš nalog često prolazi kroz junior account managere. Radeći direktno sa mnom, jedna senior osoba vodi i strategiju i izvršenje — bez predaje naloga i bez učenja na vašem budžetu. Cena je po pravilu i niža od agencijskog overhead-a."
+              "Kod agencije vaš nalog često prolazi kroz junior account managere. Radeći direktno sa mnom, jedna senior osoba vodi i strategiju i izvršenje - bez predaje naloga i bez učenja na vašem budžetu. Cena je po pravilu i niža od agencijskog overhead-a."
           },
           {
             question: "Kako konkretno izgleda onboarding?",
             answer:
-              "Nakon besplatnog poziva i audita naloga, tražim MCC pristup, dogovaramo KPI-jeve i dinamiku reportinga, pa implementiram strategiju u prve 1-2 nedelje. Dobijate zajednički dokument sa ciljevima, rokovima i checklist-om pristupa pre nego što krenemo — bez iznenađenja."
+              "Nakon besplatnog poziva i audita naloga, tražim MCC pristup, dogovaramo KPI-jeve i dinamiku reportinga, pa implementiram strategiju u prve 1-2 nedelje. Dobijate zajednički dokument sa ciljevima, rokovima i checklist-om pristupa pre nego što krenemo - bez iznenađenja."
           }
         ];
 
@@ -553,7 +553,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
       : {
           "@context": "https://schema.org",
           "@type": "Service",
-          name: "Google oglašavanje — upravljanje Google Ads nalogom",
+          name: "Google oglašavanje - upravljanje Google Ads nalogom",
           description:
             "Profesionalno Google oglašavanje i upravljanje Google Ads nalogom za eCommerce i B2B kompanije u Srbiji, UK i EU. Search, Shopping, Performance Max, Display i YouTube kampanje.",
           provider: {
@@ -584,7 +584,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               price: "700",
               priceCurrency: "EUR",
               unitText: "mesečno",
-              description: "Mesečno vođenje Google Ads naloga — već od €700"
+              description: "Mesečno vođenje Google Ads naloga - već od €700"
             }
           }
         };
@@ -779,7 +779,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               <>
                 <strong>Google oglašavanje</strong> je najbrži način da dođete do kupaca koji
                 aktivno traže vaše proizvode ili usluge. Ali bez pravilne strategije, strukture
-                kampanja i kontinuirane optimizacije — lako se pretvori u bacanje novca.
+                kampanja i kontinuirane optimizacije - lako se pretvori u bacanje novca.
                 Upravo tu ulazim ja.
               </>
             )}
@@ -796,7 +796,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               <>
                 Sa preko decenije iskustva u vođenju Google Ads kampanja za brendove
                 u Srbiji, UK, Nemačkoj i Hrvatskoj, pomažem kompanijama da pretvore
-                ad spend u merljiv prihod. Bez generičkih pristupa — svaka strategija
+                ad spend u merljiv prihod. Bez generičkih pristupa - svaka strategija
                 je prilagođena vašem biznisu, industriji i ciljevima.
               </>
             )}
@@ -868,7 +868,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "Complete Google Ads service — from research and setup to optimization and monthly reporting."
-              : "Kompletna usluga Google oglašavanja — od istraživanja i postavljanja do optimizacije i mesečnog reportinga."}
+              : "Kompletna usluga Google oglašavanja - od istraživanja i postavljanja do optimizacije i mesečnog reportinga."}
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1041,7 +1041,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
               ? "From first call to measurable results — simple and transparent process in 5 steps."
-              : "Od prvog poziva do merljivih rezultata — jednostavan i transparentan proces u 5 koraka."}
+              : "Od prvog poziva do merljivih rezultata - jednostavan i transparentan proces u 5 koraka."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -1101,20 +1101,20 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
                 ? "Senior setup with strategy consultations included — no monthly commitment. Get clarity and a working foundation before committing to ongoing management."
-                : "Senior setup sa uključenim strategijskim konsultacijama — bez mesečne obaveze. Dobijte jasnu sliku i radni temelj pre nego što se odlučite za stalnu saradnju."}
+                : "Senior setup sa uključenim strategijskim konsultacijama - bez mesečne obaveze. Dobijte jasnu sliku i radni temelj pre nego što se odlučite za stalnu saradnju."}
             </p>
             <ul className="space-y-2 text-sm text-gray-600 mb-5">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Consulting — $200/hr" : "Konsultacije — €150/sat"}
+                {locale === "en" ? "Consulting — $200/hr" : "Konsultacije - €150/sat"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Deep Audit + Action Plan — from $500" : "Deep Audit + Action Plan — od €450"}
+                {locale === "en" ? "Deep Audit + Action Plan — from $500" : "Deep Audit + Action Plan - od €450"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Kickstart setup (strategy consultation included) — from $990" : "Kickstart setup (strateška konsultacija uključena) — od €690"}
+                {locale === "en" ? "Kickstart setup (strategy consultation included) — from $990" : "Kickstart setup (strateška konsultacija uključena) - od €690"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 flex-shrink-0">✓</span>
@@ -1143,7 +1143,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <p className="text-sm text-gray-500 mb-3">
               {locale === "en"
                 ? "For brands spending $10k–100k/month — scope and fee scale with spend."
-                : "Saradnja ima smisla ako u oglašavanje ulažete €1.500+ mesečno — konačna ponuda zavisi od obima."}
+                : "Saradnja ima smisla ako u oglašavanje ulažete €1.500+ mesečno - konačna ponuda zavisi od obima."}
             </p>
             <p className="text-gray-600 text-base mb-4">
               {locale === "en"
@@ -1198,7 +1198,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             <p className="text-slate-300 text-sm mb-2">
               {locale === "en"
                 ? "For brands that need a complete business growth team — not just Google Ads."
-                : "Za brendove kojima treba kompletan tim za rast biznisa — ne samo Google Ads."}
+                : "Za brendove kojima treba kompletan tim za rast biznisa - ne samo Google Ads."}
             </p>
             <p className="text-slate-400 text-sm mb-4 italic">
               {locale === "en"

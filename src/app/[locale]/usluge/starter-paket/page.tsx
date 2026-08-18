@@ -56,8 +56,8 @@ export default async function StarterPaketPage({ params }: Props) {
     : [
         "Želite da neko drugi dugoročno vodi nalog (pogledajte Google Ads upravljanje)",
         "Niko u vašem timu nema vremena da preuzme kampanje posle launcha",
-        "Treba vam da neko implementira tracking umesto vas (vidi ispod — to je poseban korak)",
-        "Ad budžet ispod €1.000/mesečno — krenite radije sa konsultacijom"
+        "Treba vam da neko implementira tracking umesto vas (vidi ispod - to je poseban korak)",
+        "Ad budžet ispod €1.000/mesečno - krenite radije sa konsultacijom"
       ];
 
   const iconProps = { size: 28, strokeWidth: 1.5 } as const;
@@ -94,7 +94,7 @@ export default async function StarterPaketPage({ params }: Props) {
           icon: <Layers {...iconProps} className="text-gray-900" />,
           title: "Arhitektura naloga, ne template",
           description:
-            "Struktura kampanja i ad grupa napravljena prema tome kako vaš biznis stvarno prodaje — ne generički template iz tutorijala."
+            "Struktura kampanja i ad grupa napravljena prema tome kako vaš biznis stvarno prodaje - ne generički template iz tutorijala."
         },
         {
           icon: <ListChecks {...iconProps} className="text-gray-900" />,
@@ -106,7 +106,7 @@ export default async function StarterPaketPage({ params }: Props) {
           icon: <ShieldCheck {...iconProps} className="text-gray-900" />,
           title: "Tracking gate, ne pretpostavka",
           description:
-            "Ne puštam ništa live dok konverzije nisu verifikovane. Ako tracking nije spreman, launch čeka — to je poenta."
+            "Ne puštam ništa live dok konverzije nisu verifikovane. Ako tracking nije spreman, launch čeka - to je poenta."
         },
         {
           icon: <Handshake {...iconProps} className="text-gray-900" />,
@@ -176,13 +176,13 @@ export default async function StarterPaketPage({ params }: Props) {
           items: [
             "Precizna specifikacija šta mora da se meri i kako",
             "Verifikacija konverzija pre nego što bilo šta ide live",
-            "Sama implementacija nije uključena — vidi napomenu ispod"
+            "Sama implementacija nije uključena - vidi napomenu ispod"
           ]
         },
         {
           title: "Plan i handover",
           items: [
-            "Strategijska konsultacija pre setupa (uključena — inače €150/sat)",
+            "Strategijska konsultacija pre setupa (uključena - inače €150/sat)",
             "60-dnevni akcioni plan za osobu koja vodi nalog",
             "60-minutna handover sesija (snimljena)",
             "Pisana dokumentacija specifična za vaš nalog"
@@ -228,7 +228,7 @@ export default async function StarterPaketPage({ params }: Props) {
           number: 1,
           title: "20-minutni scoping poziv",
           description:
-            "Potvrđujemo fit — budžet, in-house vlasništvo naloga, spremnost sajta — i definišemo tačan obim pre bilo kakve ponude."
+            "Potvrđujemo fit - budžet, in-house vlasništvo naloga, spremnost sajta - i definišemo tačan obim pre bilo kakve ponude."
         },
         {
           number: 2,
@@ -246,7 +246,7 @@ export default async function StarterPaketPage({ params }: Props) {
           number: 4,
           title: "Tracking verification gate",
           description:
-            "Vaš tim (ili vaš vendor) implementira tracking. Ja verifikujem da radi ispravno pre nego što kampanje krenu live — bez izuzetka."
+            "Vaš tim (ili vaš vendor) implementira tracking. Ja verifikujem da radi ispravno pre nego što kampanje krenu live - bez izuzetka."
         },
         {
           number: 5,
@@ -303,22 +303,22 @@ export default async function StarterPaketPage({ params }: Props) {
         {
           question: "Za koga je Kickstart napravljen?",
           answer:
-            "Za timove ili osnivače koji već imaju nekoga da svakodnevno vodi nalog — samo treba da bude napravljen kako treba od prvog dana. Ako vam treba neko da ga vodi dugoročno, to je Google Ads upravljanje, ne Kickstart."
+            "Za timove ili osnivače koji već imaju nekoga da svakodnevno vodi nalog - samo treba da bude napravljen kako treba od prvog dana. Ako vam treba neko da ga vodi dugoročno, to je Google Ads upravljanje, ne Kickstart."
         },
         {
           question: "Zašto implementacija trackinga nije uključena?",
           answer:
-            "Implementacija trackinga dira kod vašeg sajta i drastično se razlikuje po platformi (Shopify, custom stack, WordPress, headless). Taj posao ne radim ja — rade ga provereni vendori sa kojima sarađujem, naplaćuje se posebno. Ono što garantujem je specifikacija šta tačno mora da se meri, i verifikacija da radi pre nego što bilo šta ide live. To je senior gate, ne rupa u usluzi."
+            "Implementacija trackinga dira kod vašeg sajta i drastično se razlikuje po platformi (Shopify, custom stack, WordPress, headless). Taj posao ne radim ja - rade ga provereni vendori sa kojima sarađujem, naplaćuje se posebno. Ono što garantujem je specifikacija šta tačno mora da se meri, i verifikacija da radi pre nego što bilo šta ide live. To je senior gate, ne rupa u usluzi."
         },
         {
           question: "Koliki ad budžet mi treba?",
           answer:
-            "Planirajte minimum €1.000 mesečno za ad spend. Ispod toga Google-ov algoritam nema dovoljno signala da Smart Bidding radi kako treba, a kompletna arhitektura je overkill — konsultacija je bolja polazna tačka."
+            "Planirajte minimum €1.000 mesečno za ad spend. Ispod toga Google-ov algoritam nema dovoljno signala da Smart Bidding radi kako treba, a kompletna arhitektura je overkill - konsultacija je bolja polazna tačka."
         },
         {
           question: "Kako se određuje konačna cena?",
           answer:
-            "Kickstart počinje od €690. Konačna ponuda zavisi od obima — broja kampanja, da li je uključen Shopping/PMax i kompleksnosti naloga — potvrđuje se posle 20-minutnog poziva."
+            "Kickstart počinje od €690. Konačna ponuda zavisi od obima - broja kampanja, da li je uključen Shopping/PMax i kompleksnosti naloga - potvrđuje se posle 20-minutnog poziva."
         },
         {
           question: "Šta ako želim ongoing upravljanje umesto ovoga?",
@@ -328,7 +328,7 @@ export default async function StarterPaketPage({ params }: Props) {
         {
           question: "Koliko traje od kickoff-a do handover-a?",
           answer:
-            "Obično 10-15 radnih dana, zavisno od toga koliko brzo se tracking implementira i verifikuje sa vaše strane — to je obično faktor koji određuje tempo, ne moj rad."
+            "Obično 10-15 radnih dana, zavisno od toga koliko brzo se tracking implementira i verifikuje sa vaše strane - to je obično faktor koji određuje tempo, ne moj rad."
         },
         {
           question: "Šta ako već imam kampanje koje rade?",
@@ -338,7 +338,7 @@ export default async function StarterPaketPage({ params }: Props) {
         {
           question: "Da li je ovo jednokratna cena?",
           answer:
-            "Da — jedna uplata, bez ugovora. Dobijate arhitekturu, oglase, tracking specifikaciju, plan i handover, a onda vodite dalje. Ako kasnije poželite da pređete na ongoing upravljanje, to je poseban razgovor bez obaveze."
+            "Da - jedna uplata, bez ugovora. Dobijate arhitekturu, oglase, tracking specifikaciju, plan i handover, a onda vodite dalje. Ako kasnije poželite da pređete na ongoing upravljanje, to je poseban razgovor bez obaveze."
         },
         {
           question: "Za koga je starter paket?",
@@ -603,7 +603,7 @@ export default async function StarterPaketPage({ params }: Props) {
             ) : (
               <>
                 <strong>Google Ads Kickstart</strong> je jednokratan projekat za timove
-                koji već imaju nekoga da vodi nalog — in-house marketara ili osnivača —
+                koji već imaju nekoga da vodi nalog - in-house marketara ili osnivača -
                 i samo im treba senior temelj na kome će graditi. Nije paket za
                 početnike i nije mesečni ugovor.
               </>
@@ -612,7 +612,7 @@ export default async function StarterPaketPage({ params }: Props) {
           <p className="text-gray-600 text-base leading-relaxed">
             {isEn
               ? "You get the architecture, the copy, and a verified tracking setup — the parts that are hardest to get right and most expensive to fix later. What you do with it after handover is up to you."
-              : "Dobijate arhitekturu, oglase i verifikovan tracking setup — delove koje je najteže napraviti kako treba i najskuplje popraviti kasnije. Šta radite sa tim posle handover-a, to je na vama."}
+              : "Dobijate arhitekturu, oglase i verifikovan tracking setup - delove koje je najteže napraviti kako treba i najskuplje popraviti kasnije. Šta radite sa tim posle handover-a, to je na vama."}
           </p>
         </div>
       </section>
@@ -626,7 +626,7 @@ export default async function StarterPaketPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {isEn
               ? "Four things that are easy to get wrong without senior oversight — and expensive to fix once campaigns are live."
-              : "Četiri stvari koje je lako pogrešno napraviti bez senior nadzora — i skupo popraviti kada su kampanje već live."}
+              : "Četiri stvari koje je lako pogrešno napraviti bez senior nadzora - i skupo popraviti kada su kampanje već live."}
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -649,7 +649,7 @@ export default async function StarterPaketPage({ params }: Props) {
             <h3 className="font-heading font-bold text-lg mb-3">
               {isEn
                 ? "About tracking — read this before you ask"
-                : "O trackingu — pročitajte pre nego što pitate"}
+                : "O trackingu - pročitajte pre nego što pitate"}
             </h3>
             <p className="text-gray-700 text-base leading-relaxed mb-3">
               {isEn ? (
@@ -662,7 +662,7 @@ export default async function StarterPaketPage({ params }: Props) {
               ) : (
                 <>
                   Tracking implementaciju <strong>ne radim</strong> u okviru Kickstart-a
-                  — nju rade provereni vendori sa kojima sarađujem, naplaćuje se posebno.
+                  - nju rade provereni vendori sa kojima sarađujem, naplaćuje se posebno.
                   Ono što garantujem: dobijate preciznu specifikaciju šta mora da se meri,
                   i ne puštam kampanje live dok konverzije nisu verifikovane.
                 </>
@@ -671,7 +671,7 @@ export default async function StarterPaketPage({ params }: Props) {
             <p className="text-gray-500 text-sm">
               {isEn
                 ? "This is a senior gate, not a shortcut — campaigns built on broken tracking waste budget from day one."
-                : "Ovo je senior gate, ne prečica — kampanje izgrađene na pokvarenom trackingu troše budžet od prvog dana."}
+                : "Ovo je senior gate, ne prečica - kampanje izgrađene na pokvarenom trackingu troše budžet od prvog dana."}
             </p>
           </div>
         </div>
@@ -686,7 +686,7 @@ export default async function StarterPaketPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {isEn
               ? "A single senior-built package — architecture, copy, tracking specification, and a clean handover."
-              : "Jedan senior paket — arhitektura, oglasi, tracking specifikacija i čist handover."}
+              : "Jedan senior paket - arhitektura, oglasi, tracking specifikacija i čist handover."}
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -778,7 +778,7 @@ export default async function StarterPaketPage({ params }: Props) {
           <p className="text-gray-600 max-w-2xl mx-auto">
             {isEn
               ? "From scoping call to handover — transparent process in 5 steps."
-              : "Od scoping poziva do handover-a — transparentan proces u 5 koraka."}
+              : "Od scoping poziva do handover-a - transparentan proces u 5 koraka."}
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -880,7 +880,7 @@ export default async function StarterPaketPage({ params }: Props) {
             <p className="text-gray-600 text-base mb-4">
               {isEn
                 ? "Let's talk about ongoing partnership — the architecture stays, we just upgrade the strategy."
-                : "Razgovarajmo o ongoing partnership-u — arhitektura ostaje, samo nadograđujemo strategiju."}
+                : "Razgovarajmo o ongoing partnership-u - arhitektura ostaje, samo nadograđujemo strategiju."}
             </p>
             <Link href="/kontakt" className="text-primary font-semibold text-sm">
               {isEn ? "Let's discuss partnership →" : "Razgovarajmo o partnerstvu →"}

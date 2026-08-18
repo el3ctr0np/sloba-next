@@ -65,7 +65,7 @@ export default async function RemarketingPage({ params }: Props) {
     {
       title: "Bez remarketinga plaćate dva puta",
       description:
-        "Doveli ste posetioca, a ako se ne vrati — taj trošak akvizicije je izgubljen."
+        "Doveli ste posetioca, a ako se ne vrati - taj trošak akvizicije je izgubljen."
     }
   ];
 
@@ -208,14 +208,14 @@ export default async function RemarketingPage({ params }: Props) {
     "You have a minimum remarketing budget of $300/month"
   ] : [
     "Imate postojeći saobraćaj na sajtu (minimum 1.000 posetilaca mesečno)",
-    "Sales cycle nije instant — korisnici istražuju pre kupovine",
+    "Sales cycle nije instant - korisnici istražuju pre kupovine",
     "Želite da maksimizujete ROI iz postojećih kampanja",
     "Imate budžet za remarketing od minimum €300/mesečno"
   ];
 
   const positioningNote = locale === "en"
     ? "I most often run remarketing as part of broader Google Ads management (from $2,500/mo) — as a standalone channel it makes sense from a $300/mo remarketing-only budget."
-    : "Remarketing najčešće vodim kao deo šireg Google Ads upravljanja (od €700/mes) — kao samostalan kanal ima smisla od €300/mes budžeta za sam remarketing.";
+    : "Remarketing najčešće vodim kao deo šireg Google Ads upravljanja (od €700/mes) - kao samostalan kanal ima smisla od €300/mes budžeta za sam remarketing.";
 
   const bestFor = locale === "en" ? [
     "eCommerce (dynamic remarketing)",
@@ -354,7 +354,7 @@ export default async function RemarketingPage({ params }: Props) {
       "@type": "Offer",
       price: "300",
       priceCurrency: "EUR",
-      description: "Remarketing kao samostalan kanal — minimalni budžet €300/mes"
+      description: "Remarketing kao samostalan kanal - minimalni budžet €300/mes"
     }
   };
 
@@ -532,7 +532,7 @@ export default async function RemarketingPage({ params }: Props) {
               <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
               {locale === "en"
                 ? "Only 2-3% of visitors convert on their first visit — remarketing brings back the other 97%. Optimal frequency cap is 3-5 impressions per day. Minimum budget for the channel: $300/month."
-                : "Samo 2-3% posetilaca konvertuje pri prvoj poseti — remarketing vraća ostalih 97%. Optimalan frequency cap je 3-5 impresija dnevno. Minimalni budžet za kanal: €300/mes."}
+                : "Samo 2-3% posetilaca konvertuje pri prvoj poseti - remarketing vraća ostalih 97%. Optimalan frequency cap je 3-5 impresija dnevno. Minimalni budžet za kanal: €300/mes."}
             </p>
           </div>
         </div>
@@ -552,7 +552,7 @@ export default async function RemarketingPage({ params }: Props) {
             ) : (
               <>
                 <strong>Remarketing</strong> je jedna od najefikasnijih strategija u
-                digital marketingu — targetirate ljude koji su već pokazali
+                digital marketingu - targetirate ljude koji su već pokazali
                 interesovanje za vaš proizvod ili uslugu. Umesto hladnog saobraćaja,
                 komunicirate sa warm audience koja vas poznaje.
               </>

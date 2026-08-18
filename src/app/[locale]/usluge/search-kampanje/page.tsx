@@ -462,7 +462,7 @@ export default async function SearchKampanjePage({ params }: Props) {
       "@type": "Offer",
       price: "500",
       priceCurrency: "EUR",
-      description: "Search kampanje — minimalni budžet kanala €500/mes"
+      description: "Search kampanje - minimalni budžet kanala €500/mes"
     }
   };
 
@@ -587,7 +587,7 @@ export default async function SearchKampanjePage({ params }: Props) {
               <strong>{locale === "en" ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
               {locale === "en"
                 ? "Search campaigns capture existing demand — minimum $500/month budget, first results within a week, stable results after 4-6 weeks with 20-50 carefully chosen keywords."
-                : "Search kampanje hvataju postojeću tražnju — minimum €500/mes budžeta, prvi rezultati za nedelju dana, stabilni rezultati za 4-6 nedelja uz 20-50 pažljivo biranih ključnih reči."}
+                : "Search kampanje hvataju postojeću tražnju - minimum €500/mes budžeta, prvi rezultati za nedelju dana, stabilni rezultati za 4-6 nedelja uz 20-50 pažljivo biranih ključnih reči."}
             </p>
           </div>
         </div>
@@ -615,7 +615,7 @@ export default async function SearchKampanjePage({ params }: Props) {
           <p className="text-base text-gray-600 leading-relaxed mt-4">
             {locale === "en"
               ? "Search from a $500/month budget makes sense as a standalone test — for full growth it combines with Shopping/PMax within management (from $2,500/mo)."
-              : "Search od €500/mes budžeta ima smisla kao samostalan test — za pun rast kombinuje se sa Shopping/PMax u okviru upravljanja (od €700/mes)."}
+              : "Search od €500/mes budžeta ima smisla kao samostalan test - za pun rast kombinuje se sa Shopping/PMax u okviru upravljanja (od €700/mes)."}
           </p>
         </div>
       </section>
@@ -787,13 +787,13 @@ export default async function SearchKampanjePage({ params }: Props) {
                 <span className="text-green-600 mt-0.5 flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "As a standalone channel — from $500/month ad budget"
-                  : "Kao samostalan kanal — od €500/mes budžeta"}
+                  : "Kao samostalan kanal - od €500/mes budžeta"}
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 mt-0.5 flex-shrink-0">✓</span>
                 {locale === "en"
                   ? "As part of full management — from $2,500/mo"
-                  : "U okviru upravljanja — od €700/mes"}
+                  : "U okviru upravljanja - od €700/mes"}
               </li>
             </ul>
             <p className="text-base text-gray-500 mt-4">
