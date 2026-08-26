@@ -55,7 +55,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
         },
         {
           icon: <Coins {...iconProps} className="text-gray-900" />,
-          title: "Profit-First, not ROAS theatre",
+          title: "Back to Basics, not ROAS theatre",
           description:
             "I optimize toward profit and margin, not a revenue number that looks good in a slide but loses money on low-margin products."
         }
@@ -81,7 +81,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
         },
         {
           icon: <Coins {...iconProps} className="text-gray-900" />,
-          title: "Profit-First, ne ROAS teatar",
+          title: "Back to Basics, ne ROAS teatar",
           description:
             "Optimizujem na profit i maržu, ne na prihod koji lepo izgleda u slajdu a gubi novac na proizvodima sa niskom maržom."
         }
