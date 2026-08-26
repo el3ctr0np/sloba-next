@@ -47,12 +47,12 @@ export default async function Home({ params }: Props) {
   const heroProps =
     locale === "en"
       ? {
-          title: "A senior Google Ads partner for brands that want results, not overhead and junior staff",
+          title: "Google advertising, done right.",
           subtitle:
-            "Your account is run personally by a senior specialist, not a junior learning on your budget. A boutique practice: Search, Shopping and Performance Max, managed to profit.",
-          ctaText: "Book a free 20-minute call",
+            "I've spent ten years personally running accounts for brands across the US, UK, EU, Australia, and Serbia. And since this year, my AI agents share the watch: every morning they scan spend, search terms, and conversions, and flag what stands out. The decisions are mine — you get a level of attention no team can afford.",
+          ctaText: "Book a free consultation",
           ctaHref: "/kontakt",
-          secondaryCtaText: "View Results",
+          secondaryCtaText: "See the results",
           secondaryCtaHref: "/case-studies",
           trustBadges: [
             "10+ years of experience",
@@ -63,10 +63,10 @@ export default async function Home({ params }: Props) {
           ],
         }
       : {
-          title: "Senior Google Ads partner za brendove koji žele rezultate, ne troškove i juniore",
+          title: "Google oglašavanje na pravi način.",
           subtitle:
-            "Vaš nalog vodi senior stručnjak lično, ne junior koji uči na vašem budžetu. Boutique pristup: Search, Shopping i Performance Max, optimizovani na profit.",
-          ctaText: "Zakažite besplatnih 20 minuta",
+            "Deset godina lično vodim naloge za brendove iz USA, UK, EU, Australije i Srbije. A od ove godine pažnju dele i moji AI agenti: svako jutro pregledaju potrošnju, pretrage i konverzije i jave mi šta odskače. Odluke donosim ja - vi dobijate pažnju koju nijedan tim ne može da plati.",
+          ctaText: "Zakažite besplatnu konsultaciju",
           ctaHref: "/kontakt",
           secondaryCtaText: "Pogledajte rezultate",
           secondaryCtaHref: "/case-studies",

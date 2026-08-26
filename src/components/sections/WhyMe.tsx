@@ -1,11 +1,18 @@
 import { useLocale, useTranslations } from "next-intl";
-import { Card } from "@/components/ui";
+import { Card, Button } from "@/components/ui";
 
 export function WhyMe() {
   const t = useTranslations("WhyMe");
   const locale = useLocale();
+  const isEn = locale === "en";
 
-  const features = [
+  const features: {
+    icon: React.ReactNode;
+    title: string;
+    description: string;
+    ctaText?: string;
+    ctaHref?: string;
+  }[] = [
     {
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -24,7 +31,9 @@ export function WhyMe() {
         </svg>
       ),
       title: t("features.results.title"),
-      description: t("features.results.description")
+      description: t("features.results.description"),
+      ctaText: isEn ? "See case studies" : "Pogledajte case studies",
+      ctaHref: "/case-studies"
     },
     {
       icon: (
@@ -77,13 +86,13 @@ export function WhyMe() {
           {t("heading")}
         </h2>
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
-          {locale === "en"
-            ? "Slobodan Jelisavac is an independent Google Ads consultant based in Belgrade, Serbia, with 10+ years of experience, who has managed accounts for 50+ brands across 6+ countries (Serbia, the UK, the EU and the US). Campaigns he built won 3 UK Search Awards."
-            : "Slobodan Jelisavac je nezavisni Google Ads konsultant iz Beograda, sa 10+ godina iskustva, koji je vodio naloge za 50+ brendova u 6+ zemalja (Srbija, UK, EU i US). Kampanje koje je postavio osvojile su 3 UK Search Awards."}
+          {isEn
+            ? "I've been running Google Ads for over ten years. I've worked with brands across the US, UK, EU, Australia, and Serbia — 50+ brands in total, and campaigns I built have won three UK Search Awards."
+            : "Bavim se Google Ads oglašavanjem više od deset godina. Radio sam sa brendovima iz USA, UK, EU, Australije i Srbije - sarađivao sam sa preko 50 brendova, a kampanje koje sam postavljao osvojile su tri prestižne UK Search Awards nagrade."}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <Card key={index}>
+            <Card key={index} className="flex flex-col h-full">
               <span className="text-primary mb-4 block">{feature.icon}</span>
               <h3 className="text-xl font-heading font-semibold mb-2">
                 {feature.title}
@@ -91,6 +100,15 @@ export function WhyMe() {
               <p className="text-gray-600">
                 {feature.description}
               </p>
+              {feature.ctaText && feature.ctaHref && (
+                <Button
+                  href={feature.ctaHref}
+                  variant="secondary"
+                  className="mt-4 self-start"
+                >
+                  {feature.ctaText}
+                </Button>
+              )}
             </Card>
           ))}
         </div>

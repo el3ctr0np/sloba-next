@@ -7,11 +7,10 @@ const logos = [
   { src: "/client-logos/designerglasses-uk-logo.svg.webp", alt: "DesignerGlasses UK" },
   { src: "/client-logos/mobelaris-ecomm-logo.svg.webp", alt: "Mobelaris" },
   { src: "/client-logos/soundbox-store-uk-logo.svg.webp", alt: "SoundBox Store" },
-  { src: "/client-logos/chatislav.ai-logo11.webp", alt: "Chatislav AI" },
   { src: "/client-logos/everfun.hr-logo74.webp", alt: "Everfun" },
   { src: "/client-logos/partypieces.co.uk-logo11.webp", alt: "Party Pieces" },
   { src: "/client-logos/perun-moto-oprema-logo.svg.webp", alt: "Perun Moto Oprema" },
-  { src: "/client-logos/pickbox-hrvatska-logo.svg.webp", alt: "Pickbox" },
+  { src: "/client-logos/pickbox-hrvatska-logo-fixed.png", alt: "Pickbox" },
   { src: "/client-logos/little-seeds.co.uk-logo9.webp", alt: "Little Seeds" },
   { src: "/client-logos/bestatprinting.co.uk-logo9.webp", alt: "Best at Printing" },
 ];

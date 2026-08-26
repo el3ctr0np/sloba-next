@@ -83,21 +83,22 @@ export function Hero({
           {/* Left: Stats column */}
           <div className="order-2 lg:order-1 space-y-3">
             <div className="border-l-4 border-blue-500 pl-4 py-1">
-              <div className="text-3xl font-heading font-bold text-slate-900 leading-none">{isEn ? "6-figure" : "6-cifren"}</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
-                {isEn ? "Shopping revenue (UK)" : "Shopping revenue (UK)"}
+              <div className="text-sm font-heading font-semibold text-slate-900 leading-snug">
+                {isEn
+                  ? "Six-figure revenue driven directly through Google Ads"
+                  : "Šestocifreni prihodi direktno iz Google Ads kanala"}
               </div>
             </div>
             <div className="border-l-4 border-green-500 pl-4 py-1">
-              <div className="text-3xl font-heading font-bold text-slate-900 leading-none">1.78x</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
-                {isEn ? "Average POAS" : "Prosečan POAS"}
+              <div className="text-sm font-heading font-semibold text-slate-900 leading-snug">
+                {isEn ? "Focused on profit, not ROAS" : "Fokus na profit, ne na ROAS"}
               </div>
             </div>
             <div className="border-l-4 border-yellow-500 pl-4 py-1">
-              <div className="text-3xl font-heading font-bold text-slate-900 leading-none">-86%</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
-                {isEn ? "Best CPA cut" : "CPA rekord"}
+              <div className="text-sm font-heading font-semibold text-slate-900 leading-snug">
+                {isEn
+                  ? "I verify measurement before the first optimization — on every account"
+                  : "Merenje proveravam pre prve optimizacije - na svakom nalogu"}
               </div>
             </div>
           </div>

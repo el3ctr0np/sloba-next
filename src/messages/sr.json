@@ -85,31 +85,31 @@
     "designCredit": "Dizajn & razvoj:"
   },
   "WhyMe": {
-    "heading": "Zašto klijenti biraju direktnu saradnju umesto agencije",
+    "heading": "Zašto raditi sa mnom",
     "features": {
       "experience": {
-        "title": "10+ godina na Google Ads platformi",
-        "description": "Sertifikovan za sve tipove kampanja — od Search-a do Performance Max-a. Svakodnevno upravljanje nalozima od prvog dana."
+        "title": "Deset godina na Google Ads platformi",
+        "description": "Profitabilno vodim sve vrste kampanja - Search, Shopping, Performance Max, YouTube - prilagođeno svakom biznisu."
       },
       "results": {
-        "title": "Dokazani rezultati sa brojevima",
-        "description": "3.7x ROAS za eCommerce, -50% CPA za lead gen, 12x rast prihoda. Konkretne brojke, ne obećanja."
+        "title": "Dokazani rezultati",
+        "description": "Na case studies stranici vidite tačno kako sam pomogao brendovima iz različitih industrija: šta je bilo stanje, šta sam menjao i šta se desilo sa brojkama."
       },
       "international": {
         "title": "Međunarodno iskustvo, lokalno razumevanje",
-        "description": "Kampanje za UK, US i EU tržišta. Od britanske eCommerce konkurencije do srpskog lokalnog biznisa — razumem specifičnosti svakog."
+        "description": "Iste ruke vode i UK Shopping nalog sa šestocifrenim prihodom i domaći biznis sa tankom maržom. Znam kako izgledaju oba sveta i šta se iz kog može naučiti."
       },
       "ai": {
-        "title": "AI alati za nadljudsku efikasnost",
-        "description": "Claude, Gemini i custom skripte za analizu, copy i automatizaciju rutinskih zadataka. Više vremena za strategiju, manje za admin."
+        "title": "AI alati, ljudske odluke",
+        "description": "Koristim napredne AI alate - Claude Code, GPT i Codex, Gemini - da ubrzam analize i držim naloge pod dnevnim nadzorom. Procese unapređuje tehnologija; odluke donosim ja."
       },
       "direct": {
         "title": "Radite direktno sa ekspertom",
-        "description": "Nema account menadžera koji prepričava. Nema juniora koji uči na vašem budžetu. Direktna komunikacija sa osobom u nalogu."
+        "description": "Bez posrednika i account menadžera: osoba koja analizira vaš nalog je ista osoba sa kojom pričate."
       },
       "transparent": {
-        "title": "Potpuna transparentnost bez iznenađenja",
-        "description": "Svaki dinar vidljiv. Konkretni mesečni izveštaji, ne generičke PDF prezentacije. Bez dugoročnih ugovora — rezultati vas zadržavaju."
+        "title": "Potpuna transparentnost",
+        "description": "Svaki nalog ima custom reporting prilagođen vama: od svake izmene na nalogu do izveštaja - sve je vidljivo, ništa ne morate da tražite."
       }
     }
   },

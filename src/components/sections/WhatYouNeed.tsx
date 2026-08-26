@@ -1,11 +1,21 @@
 import { Card, Button } from "@/components/ui";
 
+interface PackageCard {
+  title: string;
+  subtitle?: string;
+  items?: string[];
+  description?: string;
+  price?: string;
+  ctaText?: string;
+  ctaHref?: string;
+}
+
 interface WhatYouNeedProps {
   locale: string;
 }
 
 export function WhatYouNeed({ locale }: WhatYouNeedProps) {
-  const content =
+  const content: { heading: string; cards: PackageCard[] } =
     locale === "en"
       ? {
           heading: "What do you need?",
@@ -22,14 +32,22 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
               ctaHref: "/usluge",
             },
             {
-              title: "Full campaign management",
+              title: "Full project management",
               subtitle: "I personally run your account.",
-              items: [
-                "eCommerce Growth — from $2,500/mo, for brands spending $10k–100k/month (scope and fee scale with spend)",
-                "Performance Marketing — full omnichannel team (Google + Meta + SEO + CRO + tracking), for brands investing $20k+/month per channel — Powered by Funky Enterprises",
-              ],
               ctaText: "Get in touch",
               ctaHref: "/kontakt",
+            },
+            {
+              title: "eCommerce Growth (100% owned)",
+              description:
+                "For businesses spending €1,500+/month. I personally build and run the whole project: campaigns, feed, measurement, scaling.",
+            },
+            {
+              title: "Performance Marketing (omnichannel)",
+              description:
+                "When you need more than Google Ads: Meta, SEO, CRO, and creative under one strategy — powered by Funky Enterprises.",
+              ctaText: "Learn more",
+              ctaHref: "/usluge/performance-marketing",
             },
           ],
         }
@@ -40,22 +58,31 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
               title: "Strategija i podrška",
               subtitle: "Vi izvršavate, ja usmeravam.",
               items: [
-                "1-na-1 konsultacije — €150/sat",
-                "Deep Audit + Action Plan — od €450",
-                "Kickstart projekat — od €690",
+                "1-na-1 konsultacije - €150/sat",
+                "Deep Audit + Action Plan - od €450",
+                "Kickstart projekat - od €690",
               ],
               ctaText: "Pogledajte usluge",
               ctaHref: "/usluge",
             },
             {
-              title: "Kompletno vođenje kampanja",
+              title: "Kompletno vođenje projekta",
               subtitle: "Ja lično vodim vaš nalog.",
-              items: [
-                "eCommerce Growth — od €700/mes (za budžete €1.500+/mes)",
-                "Performance Marketing — Powered by Funky Enterprises",
-              ],
               ctaText: "Kontaktirajte me",
               ctaHref: "/kontakt",
+            },
+            {
+              title: "eCommerce Growth (100% owned)",
+              description:
+                "Za biznise sa budžetom od €1.500+ mesečno. Lično gradim i vodim ceo projekat: kampanje, feed, merenje, skaliranje.",
+              price: "Od €700/mes.",
+            },
+            {
+              title: "Performance Marketing (omnichannel)",
+              description:
+                "Kad vam treba više od Google Ads-a: Meta, SEO, CRO i kreativa pod jednom strategijom - powered by Funky Enterprises.",
+              ctaText: "Pogledajte više",
+              ctaHref: "/usluge/performance-marketing",
             },
           ],
         };
@@ -72,26 +99,42 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
               <h3 className="text-xl font-heading font-semibold mb-1">
                 {card.title}
               </h3>
-              <p className="text-gray-500 mb-4">{card.subtitle}</p>
-              <ul className="space-y-2 mb-6">
-                {card.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-gray-700 text-sm">
-                    <svg
-                      className="w-4 h-4 text-primary mt-0.5 shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button href={card.ctaHref} variant="secondary" className="w-full mt-auto">
-                {card.ctaText}
-              </Button>
+              {card.subtitle && (
+                <p className="text-gray-500 mb-4">{card.subtitle}</p>
+              )}
+              {card.description && (
+                <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                  {card.description}
+                </p>
+              )}
+              {card.items && (
+                <ul className="space-y-2 mb-6">
+                  {card.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-gray-700 text-sm">
+                      <svg
+                        className="w-4 h-4 text-primary mt-0.5 shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {card.price && (
+                <p className="text-slate-900 font-heading font-semibold mb-6">
+                  {card.price}
+                </p>
+              )}
+              {card.ctaText && card.ctaHref && (
+                <Button href={card.ctaHref} variant="secondary" className="w-full mt-auto">
+                  {card.ctaText}
+                </Button>
+              )}
             </Card>
           ))}
         </div>

@@ -41,7 +41,7 @@ export function HeroV1({
             <div className="inline-flex items-center gap-2 mb-5">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
               <span className="text-xs font-semibold text-gray-600 uppercase tracking-[0.15em]">
-                {isEn ? "Google Ads Consulting • Serbia & UK" : "Google Ads Konsalting • Srbija & UK"}
+                {isEn ? "Google Ads Consultant · USA, UK & Serbia" : "Google Ads Konsultant · USA, UK i Srbija"}
               </span>
             </div>
 
@@ -63,7 +63,7 @@ export function HeroV1({
               )}
             </div>
 
-            <p className="text-sm text-gray-500">
+            <p className="text-sm md:text-base font-semibold text-slate-700 tracking-tight">
               {isEn
                 ? "10+ years of experience · 3x UK Search Awards · 50+ brands"
                 : "10+ godina iskustva · 3x UK Search Awards · 50+ brendova"}
@@ -94,23 +94,24 @@ export function HeroV1({
       {/* Horizontal stats strip */}
       <div className="border-t border-gray-100 bg-gray-50/60">
         <div className="container-custom px-4 py-6">
-          <div className="grid grid-cols-3 gap-4 text-center divide-x divide-gray-200">
-            <div>
-              <div className="text-2xl md:text-3xl font-heading font-bold text-slate-900">{isEn ? "6-figure" : "6-cifren"}</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
-                {isEn ? "Shopping revenue (UK)" : "Shopping prihod (UK)"}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center md:divide-x divide-gray-200">
+            <div className="px-2">
+              <div className="text-sm md:text-base font-heading font-semibold text-slate-900 leading-snug">
+                {isEn
+                  ? "Six-figure revenue driven directly through Google Ads"
+                  : "Šestocifreni prihodi direktno iz Google Ads kanala"}
               </div>
             </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-heading font-bold text-slate-900">1.78x</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
-                {isEn ? "Average POAS" : "Prosečan POAS"}
+            <div className="px-2">
+              <div className="text-sm md:text-base font-heading font-semibold text-slate-900 leading-snug">
+                {isEn ? "Focused on profit, not ROAS" : "Fokus na profit, ne na ROAS"}
               </div>
             </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-heading font-bold text-slate-900">-86%</div>
-              <div className="text-xs text-gray-500 mt-1 uppercase tracking-wider">
-                {isEn ? "Best CPA cut" : "CPA rekord"}
+            <div className="px-2">
+              <div className="text-sm md:text-base font-heading font-semibold text-slate-900 leading-snug">
+                {isEn
+                  ? "I verify measurement before the first optimization — on every account"
+                  : "Merenje proveravam pre prve optimizacije - na svakom nalogu"}
               </div>
             </div>
           </div>

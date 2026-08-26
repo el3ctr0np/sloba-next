@@ -85,31 +85,31 @@
     "designCredit": "Design & development:"
   },
   "WhyMe": {
-    "heading": "Why clients choose a dedicated specialist over an agency",
+    "heading": "Why work with me",
     "features": {
       "experience": {
-        "title": "10+ years managing Google Ads daily",
-        "description": "Certified across all campaign types — from Search to Performance Max. Hands-on account management since day one."
+        "title": "Ten years on the Google Ads platform",
+        "description": "I profitably run every campaign type — Search, Shopping, Performance Max, YouTube — adapted to each business."
       },
       "results": {
-        "title": "Proven results backed by data",
-        "description": "3.7x ROAS for eCommerce, -50% CPA for lead gen, 12x revenue growth. Real numbers, not promises."
+        "title": "Proven results",
+        "description": "On the case studies page you can see exactly how I've helped brands across industries: where they started, what I changed, and what happened to the numbers."
       },
       "international": {
-        "title": "Multi-market experience across UK, US & EU",
-        "description": "Campaigns for UK eCommerce, US direct-to-consumer, and European B2B. I understand the nuances of each market."
+        "title": "International experience, local understanding",
+        "description": "The same hands run a six-figure UK Shopping account and a local business on thin margins. I know both worlds and what each can teach the other."
       },
       "ai": {
-        "title": "AI-powered efficiency at scale",
-        "description": "Custom scripts, Claude, and Gemini for analysis, ad copy, and automation. More time for strategy, less on repetitive tasks."
+        "title": "AI tools, human decisions",
+        "description": "I use advanced AI tools — Claude Code, GPT and Codex, Gemini — to speed up analysis and keep accounts under daily watch. Technology improves the process; the decisions are mine."
       },
       "direct": {
         "title": "Work directly with the expert",
-        "description": "No account managers relaying messages. No juniors learning on your budget. Direct communication with the person in your account."
+        "description": "No middlemen, no account managers: the person analyzing your account is the person you talk to."
       },
       "transparent": {
-        "title": "Full transparency with no surprises",
-        "description": "Every dollar accounted for. Actionable monthly reports, not generic PDF decks. No long-term contracts — results keep you."
+        "title": "Full transparency",
+        "description": "Every account gets custom reporting built for you: from every change on the account to the reports — everything is visible, nothing has to be requested."
       }
     }
   },
