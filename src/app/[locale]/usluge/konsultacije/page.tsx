@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { UserCheck, Target, Building2, Briefcase } from "lucide-react";
@@ -524,45 +525,61 @@ export default async function KonsultacijePage({ params }: Props) {
             </ol>
           </nav>
 
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              {locale === "en"
-                ? "Expert advice when you need it — no long-term commitment"
-                : "Google Ads konsultacije - ekspertski savet kada vam treba, bez dugoročne obaveze"}
-            </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              {locale === "en" ? (
-                <>
-                  Sometimes you don't need full management, just expert advice.
-                  Google Ads consulting is ideal when you have specific questions,
-                  need a <strong className="text-white">second opinion</strong>, or want{" "}
-                  <strong className="text-white">strategic guidance</strong> without long-term commitment.
-                  For <strong className="text-white">$200/hr</strong> (or $600 for a 3h package) you get full attention and
-                  expertise from 10+ years working with the Google Ads platform.
-                </>
-              ) : (
-                <>
-                  Ponekad vam ne treba full management, već samo ekspertski savet.
-                  Google Ads konsultacije su idealne kada imate konkretna pitanja,
-                  trebate <strong className="text-white">second opinion</strong> ili želite{" "}
-                  <strong className="text-white">strategijsku pomoć</strong> bez dugoročne obaveze.
-                  Za <strong className="text-white">€150/sat</strong> (ili €450 za paket 3h) dobijate punu pažnju i
-                  ekspertizu iz 10+ godina rada sa Google Ads platformom.
-                </>
-              )}
-            </p>
+          <div className="grid lg:grid-cols-[1.2fr_0.8fr] lg:gap-12 items-center">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+                {locale === "en"
+                  ? "Expert advice when you need it — no long-term commitment"
+                  : "Google Ads konsultacije - ekspertski savet kada vam treba, bez dugoročne obaveze"}
+              </h1>
+              <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
+                {locale === "en" ? (
+                  <>
+                    Sometimes you don't need full management, just expert advice.
+                    Google Ads consulting is ideal when you have specific questions,
+                    need a <strong className="text-white">second opinion</strong>, or want{" "}
+                    <strong className="text-white">strategic guidance</strong> without long-term commitment.
+                    For <strong className="text-white">$200/hr</strong> (or $600 for a 3h package) you get full attention and
+                    expertise from 10+ years working with the Google Ads platform.
+                  </>
+                ) : (
+                  <>
+                    Ponekad vam ne treba full management, već samo ekspertski savet.
+                    Google Ads konsultacije su idealne kada imate konkretna pitanja,
+                    trebate <strong className="text-white">second opinion</strong> ili želite{" "}
+                    <strong className="text-white">strategijsku pomoć</strong> bez dugoročne obaveze.
+                    Za <strong className="text-white">€150/sat</strong> (ili €450 za paket 3h) dobijate punu pažnju i
+                    ekspertizu iz 10+ godina rada sa Google Ads platformom.
+                  </>
+                )}
+              </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button href="/kontakt" variant="secondary">
+                  {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
+                </Button>
+              </div>
+
+              {/* Trust badges */}
+              <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
+                <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
+                <span>3x UK Search Awards</span>
+                <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
+              </div>
             </div>
 
-            {/* Trust badges */}
-            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
-              <span>3x UK Search Awards</span>
-              <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
+            {/* Right: Photo */}
+            <div className="hidden lg:flex items-center justify-center">
+              <div className="w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/foto/slobodan-jelisavac-google-ads-konsultacije.webp"
+                  alt={locale === "en" ? "Slobodan Jelisavac during a consultation" : "Slobodan Jelisavac na konsultacijama"}
+                  width={800}
+                  height={1000}
+                  className="w-full h-full object-cover rounded-2xl"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

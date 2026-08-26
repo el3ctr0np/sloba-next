@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { ContactForm } from "@/components/sections/ContactForm";
@@ -311,6 +312,16 @@ export default async function ContactPage({ params }: Props) {
 
           {/* Trust Sidebar - 1 column */}
           <div className="space-y-6">
+            <div className="hidden md:block w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden">
+              <Image
+                src="/foto/slobodan-jelisavac-kontakt.webp"
+                alt={locale === "en" ? "Slobodan Jelisavac on the phone - ready for your inquiry" : "Slobodan Jelisavac sa telefonom - spreman za vaš upit"}
+                width={800}
+                height={1000}
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+
             <Card>
               <h3 className="font-heading font-semibold mb-3">
                 {locale === "en" ? "What you'll get on the call" : "Šta dobijate na pozivu"}

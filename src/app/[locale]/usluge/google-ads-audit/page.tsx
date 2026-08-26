@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
@@ -491,51 +492,67 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             </ol>
           </nav>
 
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              {locale === "en"
-                ? "Deep Audit + Action Plan — discover where you're losing money"
-                : "Deep Audit + Action Plan - kompletan Google Ads audit koji otkriva gde gubite novac"}
-            </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              {locale === "en" ? (
-                <>
-                  Not sure if your Google Ads campaigns are running optimally?{" "}
-                  <strong className="text-white">Deep Audit + Action Plan</strong> shows
-                  where you're losing money, which opportunities you're missing, and what
-                  specifically needs to change. The analysis includes a strategic review that
-                  considers your business model, margins, and goals — not just technical metrics.
-                </>
-              ) : (
-                <>
-                  Niste sigurni da li vaše Google Ads kampanje rade optimalno?{" "}
-                  <strong className="text-white">Deep Audit + Action Plan</strong> pokazuje
-                  gde gubite novac, koje prilike propuštate i šta konkretno treba promeniti.
-                  Analiza uključuje strategijski pregled koji uzima u obzir vaš biznis model,
-                  marže i ciljeve, ne samo tehničke metrike.
-                </>
-              )}
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Schedule a Deep Audit" : "Zakažite Deep Audit"}
-              </Button>
-              <Link
-                href="/usluge/google-ads-upravljanje"
-                className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
-              >
+          <div className="grid lg:grid-cols-[1.2fr_0.8fr] lg:gap-12 items-center">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
                 {locale === "en"
-                  ? "Or check out management services →"
-                  : "Ili pogledajte uslugu upravljanja →"}
-              </Link>
+                  ? "Deep Audit + Action Plan — discover where you're losing money"
+                  : "Deep Audit + Action Plan - kompletan Google Ads audit koji otkriva gde gubite novac"}
+              </h1>
+              <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
+                {locale === "en" ? (
+                  <>
+                    Not sure if your Google Ads campaigns are running optimally?{" "}
+                    <strong className="text-white">Deep Audit + Action Plan</strong> shows
+                    where you're losing money, which opportunities you're missing, and what
+                    specifically needs to change. The analysis includes a strategic review that
+                    considers your business model, margins, and goals — not just technical metrics.
+                  </>
+                ) : (
+                  <>
+                    Niste sigurni da li vaše Google Ads kampanje rade optimalno?{" "}
+                    <strong className="text-white">Deep Audit + Action Plan</strong> pokazuje
+                    gde gubite novac, koje prilike propuštate i šta konkretno treba promeniti.
+                    Analiza uključuje strategijski pregled koji uzima u obzir vaš biznis model,
+                    marže i ciljeve, ne samo tehničke metrike.
+                  </>
+                )}
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button href="/kontakt" variant="secondary">
+                  {locale === "en" ? "Schedule a Deep Audit" : "Zakažite Deep Audit"}
+                </Button>
+                <Link
+                  href="/usluge/google-ads-upravljanje"
+                  className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
+                >
+                  {locale === "en"
+                    ? "Or check out management services →"
+                    : "Ili pogledajte uslugu upravljanja →"}
+                </Link>
+              </div>
+
+              {/* Trust badges */}
+              <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
+                <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
+                <span>{locale === "en" ? "3x UK Search Awards" : "3x UK Search Awards"}</span>
+                <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
+              </div>
             </div>
 
-            {/* Trust badges */}
-            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
-              <span>{locale === "en" ? "3x UK Search Awards" : "3x UK Search Awards"}</span>
-              <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
+            {/* Right: Photo */}
+            <div className="hidden lg:flex items-center justify-center">
+              <div className="w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/foto/slobodan-jelisavac-google-ads-audit.webp"
+                  alt={locale === "en" ? "Slobodan Jelisavac taking a close look at where an account loses money" : "Slobodan Jelisavac izbliza traži gde nalog gubi novac"}
+                  width={800}
+                  height={1000}
+                  className="w-full h-full object-cover rounded-2xl"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

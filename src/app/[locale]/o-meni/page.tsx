@@ -352,12 +352,12 @@ export default async function AboutPage({ params }: Props) {
 
             {/* Right: Photo */}
             <div className="hidden md:flex items-center justify-center">
-              <div className="w-full aspect-square max-w-md rounded-2xl overflow-hidden">
+              <div className="w-full aspect-[4/5] max-w-md rounded-2xl overflow-hidden">
                 <Image
-                  src="/slobodan-jelisavac-photo.png"
-                  alt="Slobodan Jelisavac — Google Ads konsultant"
-                  width={480}
-                  height={480}
+                  src="/foto/slobodan-jelisavac-google-ads-strucnjak.webp"
+                  alt={locale === "en" ? "Slobodan Jelisavac, Google Ads expert" : "Slobodan Jelisavac, Google Ads stručnjak"}
+                  width={800}
+                  height={1000}
                   className="w-full h-full object-cover rounded-2xl"
                   priority
                 />
