@@ -40,7 +40,8 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
             {
               title: "eCommerce Growth (100% owned)",
               description:
-                "For businesses spending €1,500+/month. I personally build and run the whole project: campaigns, feed, measurement, scaling.",
+                "For stores spending $10,000+/month on ads. I personally build and run the whole project: campaigns, feed, measurement, scaling.",
+              price: "From $2,500/mo.",
             },
             {
               title: "Performance Marketing (omnichannel)",
