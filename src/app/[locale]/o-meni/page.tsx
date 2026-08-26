@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return buildMetadata({
-      title: "About — Slobodan Jelisavac | Google Ads Consultant | 10+ Years",
-      description: "Google Ads Consultant with 10+ years experience. UK Search Awards winner, 50+ brands in 6+ countries. Work directly with the expert — no middlemen.",
+      title: "About | Slobodan Jelisavac - Google Ads Expert, More Than 10 Years of Experience",
+      description: "Google Ads expert with more than a decade of experience. 3x UK Search Awards, 50+ brands in 6+ countries. Work directly with the expert — no middlemen.",
       locale,
       path: "/about",
       srPath: "/o-meni",
@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "O Meni — Slobodan Jelisavac | Google Ads Konsultant | 10+ Godina Iskustva",
-    description: "Google Ads konsultant sa 10+ godina iskustva. UK Search Awards winner, 50+ brendova u 6+ zemalja. Direktan rad sa ekspertom — bez posrednika.",
+    title: "O meni | Slobodan Jelisavac - Google Ads Stručnjak, Više od 10 Godina Iskustva",
+    description: "Google Ads stručnjak sa više od 10 godina iskustva - 3x UK Search Awards, 50+ brendova iz 6+ zemalja. Direktan rad sa ekspertom, bez posrednika.",
     locale,
     path: "/about",
     srPath: "/o-meni",
@@ -98,27 +98,21 @@ export default async function AboutPage({ params }: Props) {
     ? [
         {
           period: "Start",
-          title: "Agency beginnings",
+          title: "Belgrade agencies",
           description:
-            "I started at several local advertising agencies in Belgrade, where I laid the foundation for working with the Google Ads platform."
+            "I started out in local Belgrade agencies, where I built my foundations on the Google Ads platform."
         },
         {
           period: "Growth",
-          title: "International agencies — Head of PPC",
+          title: "Launchpresso and Exposure Ninja",
           description:
-            "I moved on to work with international agencies of various sizes. I worked for an Australian agency based in Thailand, managing campaigns for brands from Australia, the UK, and the USA. I soon took over the Head of PPC position."
-        },
-        {
-          period: "Recognition",
-          title: "Exposure Ninja (UK) — Senior PPC Expert",
-          description:
-            "I simultaneously worked as a Senior PPC expert at Exposure Ninja, one of the UK's most prominent digital agencies. Campaigns I worked on won 3 awards at the 2021 UK Search Awards: Best Low Budget Campaign (PPC) for Aromantic (\"Low Budget, Huge ROI\"), where I ran the paid channel, plus two Best Use of Search awards (B2B and Retail/Ecommerce) for Takeaway Packaging."
+            "Then I moved on to international agencies. At Launchpresso, an Australian agency headquartered in Thailand, I ran campaigns for brands in markets where advertising is played seriously. In parallel, I worked as a Senior PPC expert at Exposure Ninja, one of the UK's best-known digital agencies — an agency that still wins the industry's biggest global awards (UK Search Awards, Global Search Awards). Campaigns I worked on won three UK Search Awards."
         },
         {
           period: "Today",
-          title: "Digital Jelisavac & Funky Enterprises",
+          title: "My own practice",
           description:
-            "I founded my own practice with direct access to clients from the UK, USA, and the region. For premium brands that need a complete omnichannel team, I collaborate with Funky Enterprises."
+            "I started my own practice when the moment came to simply grow up. I was already sitting in conversations with decision-makers at large companies, on both the US and UK markets. That's where the desire formed: to keep doing everything I was already doing — but under my own roof, on my own terms, the way I work."
         }
       ]
     : [
@@ -126,25 +120,19 @@ export default async function AboutPage({ params }: Props) {
           period: "Početak",
           title: "Beogradske agencije",
           description:
-            "Počeo sam u nekoliko domaćih agencija za oglašavanje, gde sam postavio temelje za rad sa Google Ads platformom."
+            "Počeo sam u domaćim agencijama za oglašavanje, gde sam postavio temelje rada sa Google Ads platformom."
         },
         {
           period: "Rast",
-          title: "Internacionalne agencije — Head of PPC",
+          title: "Launchpresso i Exposure Ninja",
           description:
-            "Prešao sam na rad sa inostranim agencijama različitih veličina. Radio sam za australijsku agenciju sa sedištem na Tajlandu, gde sam upravljao kampanjama za brendove iz Australije, UK-a i USA. Ubrzo sam preuzeo poziciju Head of PPC."
-        },
-        {
-          period: "Priznanja",
-          title: "Exposure Ninja (UK) — Senior PPC ekspert",
-          description:
-            "Uporedo sam radio kao Senior PPC ekspert u Exposure Ninja, jednoj od najpoznatijih UK digitalnih agencija. Kampanje na kojima sam radio osvojile su 3 nagrade na UK Search Awards 2021: Best Low Budget Campaign (PPC) za Aromantic (\"Low Budget, Huge ROI\"), gde sam vodio paid kanal, i dve Best Use of Search nagrade (B2B i Retail/Ecommerce) za Takeaway Packaging."
+            "Zatim sam prešao na inostrane agencije. U Launchpresso, australijskoj agenciji sa sedištem na Tajlandu, vodio sam kampanje za brendove sa tržišta na kojima se oglašavanje igra ozbiljno. Uporedo sam radio kao Senior PPC ekspert u Exposure Ninja, jednoj od najpoznatijih UK digitalnih agencija - agenciji koja i danas osvaja najveće globalne nagrade industrije (UK Search Awards, Global Search Awards). Kampanje na kojima sam radio osvojile su tri UK Search Awards nagrade."
         },
         {
           period: "Danas",
-          title: "Digital Jelisavac & Funky Enterprises",
+          title: "Sopstvena praksa",
           description:
-            "Osnovao sam sopstvenu praksu sa direktnim pristupom klijentima iz UK-a, USA i regiona. Za premium brendove koji trebaju kompletan omnichannel tim, sarađujem sa Funky Enterprises."
+            "Sopstvenu praksu sam osnovao kad je došao momenat da jednostavno sazrim. Već sam sedeo u razgovorima sa donosiocima odluka velikih kompanija, i na američkom i na britanskom tržištu. Tu se stvorila želja da radim sve što sam i do tada radio, ali pod svojim krovom, pod svojim uslovima i na način na koji ja radim."
         }
       ];
 
@@ -190,7 +178,7 @@ export default async function AboutPage({ params }: Props) {
         {
           question: "Kako izgleda početak saradnje?",
           answer:
-            "Počinjemo besplatnom konsultacijom gde razumem vaš biznis i ciljeve. Zatim predlažem strategiju i ako se složimo, krećemo sa radom — bez dugih ugovora."
+            "Počinjemo besplatnom konsultacijom gde razumem vaš biznis i ciljeve. Zatim predlažem strategiju i ako se složimo, krećemo sa radom - bez dugih ugovora."
         }
       ];
 
@@ -290,8 +278,8 @@ export default async function AboutPage({ params }: Props) {
 
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 {locale === "en"
-                  ? "Slobodan Jelisavac — Google Ads Consultant focused on data and results"
-                  : "Slobodan Jelisavac — Google Ads Konsultant sa fokusom na podatke i rezultate"}
+                  ? "Slobodan Jelisavac: a Google Ads expert with more than a decade of experience"
+                  : "Slobodan Jelisavac: Google Ads stručnjak sa više od decenije iskustva"}
               </h1>
 
               <p className="text-lg text-slate-300 mb-6">
@@ -316,7 +304,7 @@ export default async function AboutPage({ params }: Props) {
                       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
+                  <span>{locale === "en" ? "More than 10 years of experience" : "Više od 10 godina iskustva"}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <svg
@@ -332,7 +320,7 @@ export default async function AboutPage({ params }: Props) {
                       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  <span>UK Search Awards winner</span>
+                  <span>3x UK Search Awards</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <svg
@@ -348,13 +336,13 @@ export default async function AboutPage({ params }: Props) {
                       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  <span>{locale === "en" ? "50+ brands in 6+ countries" : "50+ brendova u 6+ zemalja"}</span>
+                  <span>{locale === "en" ? "50+ brands in 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button href="/kontakt" variant="secondary">
-                  {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
+                  {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
                 </Button>
                 <Button href="/case-studies" variant="primary">
                   {locale === "en" ? "View results" : "Pogledajte rezultate"}
@@ -391,25 +379,25 @@ export default async function AboutPage({ params }: Props) {
             {locale === "en" ? (
               <>
                 <p>
-                  I entered this industry nine years ago — completely by accident. I was looking for a job I could do remotely, and that led me to digital advertising.
+                  I got into this industry completely by accident, more than ten years ago. I was looking for a job I could do remotely, and it led me to digital advertising.
                 </p>
                 <p>
-                  I quickly discovered that Google Ads attracted me in a way I didn't expect. It wasn't marketing in the classic sense — it was working with data, analyzing numbers, financial optimization. Things I didn't even know I was drawn to until I tried them.
+                  I quickly discovered that Google Ads pulled me in a way I hadn&apos;t expected: it wasn&apos;t marketing in the classic sense — it was working with data and business math.
                 </p>
                 <p>
-                  It turned out to be a field where analytical thinking and persistence produce measurable results — a decade later, campaigns I've worked on have won three UK Search Awards.
+                  It turned out to be a field where being analytical and persistent produces measurable results.
                 </p>
               </>
             ) : (
               <>
                 <p>
-                  Ušao sam u ovu industriju pre devet godina, potpuno slučajno. Tražio sam posao koji mogu da radim remote, i to me je dovelo do digitalnog oglašavanja.
+                  U industriju sam ušao potpuno slučajno, pre više od deset godina. Tražio sam posao koji mogu da radim remote i to me je dovelo do digitalnog oglašavanja.
                 </p>
                 <p>
-                  Brzo sam otkrio da me Google Ads privlači na način koji nisam očekivao. Nije to bio marketing u klasičnom smislu. Bio je to rad sa podacima, analiza brojeva, finansijska optimizacija. Stvari za koje nisam ni znao da me privlače dok ih nisam probao.
+                  Brzo sam otkrio da me Google Ads privlači na način koji nisam očekivao: nije to bio marketing u klasičnom smislu, nego rad sa podacima i biznis matematika.
                 </p>
                 <p>
-                  Ispostavilo se da je to oblast u kojoj analitičnost i upornost donose merljive rezultate. Deset godina kasnije, kampanje na kojima sam radio osvojile su tri UK Search Awards.
+                  Ispostavilo se da je to oblast u kojoj analitičnost i upornost donose merljive rezultate.
                 </p>
               </>
             )}
@@ -455,8 +443,28 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </Section>
 
-      {/* Why Work With Me */}
+      {/* 2026 and AI */}
       <Section>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-heading font-bold mb-6">
+            {locale === "en" ? "2026 and AI" : "2026. i AI"}
+          </h2>
+          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            {locale === "en" ? (
+              <p>
+                As you already know, 2026 is pushing the whole industry toward AI innovation. I built my system in time: my AI agents now handle the jobs and procedures I spent years doing by hand, while I do the work that still takes an experienced human. No account depends on how many hours a day has, and no decision is left at junior level. What exactly does that system look like? That&apos;s something I show clients, not competitors.
+              </p>
+            ) : (
+              <p>
+                Kao što i sami znate, 2026. donosi ozbiljan pomak cele industrije ka AI inovacijama. Ja sam svoj sistem izgradio na vreme: moji AI agenti danas rade poslove i procedure koje sam godinama radio ručno, a ja radim ono za šta je i dalje potreban čovek sa iskustvom. Tako nijedan nalog ne zavisi od toga koliko sati ima dan, a nijedna odluka ne ostaje na nivou juniora. Kako tačno taj sistem izgleda? To pokazujem klijentima, ne konkurenciji.
+              </p>
+            )}
+          </div>
+        </div>
+      </Section>
+
+      {/* Why Work With Me */}
+      <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
             {locale === "en"
@@ -475,6 +483,26 @@ export default async function AboutPage({ params }: Props) {
               </Card>
             </AnimateOnScroll>
           ))}
+        </div>
+      </Section>
+
+      {/* Longest Collaborations */}
+      <Section>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-heading font-bold mb-6">
+            {locale === "en" ? "Longest collaborations" : "Najduže saradnje"}
+          </h2>
+          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            {locale === "en" ? (
+              <p>
+                My longest collaborations are with clients who read reports the right way: the ones I can talk to transparently about everything — plans, finances, business decisions. When you go deep enough into a project and the conversations stop being surface-level, those clients stay for years. In this industry, that&apos;s genuinely rare.
+              </p>
+            ) : (
+              <p>
+                Najduže saradnje ostvarujem sa klijentima koji izveštaj razumeju na pravi način: sa kojima transparentno pričam o svemu - o planovima, o finansijama, o biznis odlukama. Kad se u projekat uđe dovoljno duboko i razgovara bez površnosti, ti klijenti ostaju u saradnji po nekoliko godina. A to je u ovoj industriji zaista retkost.
+              </p>
+            )}
+          </div>
         </div>
       </Section>
 
@@ -511,6 +539,26 @@ export default async function AboutPage({ params }: Props) {
           </a>
         </p>
       </Section>
+
+      {/* Outside of Work */}
+      <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-heading font-bold mb-6">
+            {locale === "en" ? "Outside of work" : "Van posla"}
+          </h2>
+          <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            {locale === "en" ? (
+              <p>
+                Outside of work: two small kids and a schedule built around them. Home base: Nova Pazova and Batajnica. I&apos;m always up for a business breakfast or lunch — my favorite conversations are with local business owners about how global trends can work for their businesses too.
+              </p>
+            ) : (
+              <p>
+                Van posla: dvoje male dece i raspored koji se prilagođava njima. Relacija Nova Pazova - Batajnica. Uvek sam raspoložen za biznis doručak ili ručak - najviše volim razgovore sa ljudima iz lokalnih sredina o tome kako svetski trendovi mogu da rade i za njihove poslove.
+              </p>
+            )}
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <Section>
@@ -561,12 +609,12 @@ export default async function AboutPage({ params }: Props) {
           </h2>
           <p className="text-slate-300 mb-8">
             {locale === "en"
-              ? "Book a free 20-minute call and let's see how Google Ads can work for your business."
-              : "Zakažite besplatnih 20 minuta i da vidimo kako Google Ads može raditi za vaš biznis."}
+              ? "Book a free consultation and let's see how Google Ads can work for your business."
+              : "Zakažite besplatnu konsultaciju i da vidimo kako Google Ads može raditi za vaš biznis."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
+              {locale === "en" ? "Book a free consultation" : "Zakažite besplatnu konsultaciju"}
             </Button>
             <Button href="/usluge" variant="primary">
               {locale === "en" ? "View services" : "Pogledajte usluge"}
