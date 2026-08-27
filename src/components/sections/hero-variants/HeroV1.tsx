@@ -74,18 +74,13 @@ export function HeroV1({
           <div className="relative">
             <div className="rounded-xl overflow-hidden shadow-card-lg bg-white">
               <Image
-                src="/hero.webp"
-                alt="Slobodan Jelisavac — Ad Mixer Google Ads Event"
-                width={1023}
-                height={781}
+                src="/foto/slobodan-jelisavac-google-ads.webp"
+                alt={isEn ? "Slobodan Jelisavac - Google Ads expert" : "Slobodan Jelisavac - Google Ads stručnjak"}
+                width={1400}
+                height={1400}
                 className="w-full h-auto"
                 priority
               />
-            </div>
-            <div className="absolute bottom-3 right-3 bg-white/95 backdrop-blur rounded-lg px-3 py-1.5 shadow-md">
-              <span className="text-[11px] font-semibold text-slate-700">
-                {isEn ? "Ad Mixer Google Ads Event — Belgrade 2025" : "Ad Mixer Google Ads Event — Beograd 2025"}
-              </span>
             </div>
           </div>
         </div>
