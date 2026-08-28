@@ -161,6 +161,7 @@ const srPosts: PostData[] = [
     category: "Tracking",
     metaDescription:
       "Kompletan GA4 audience framework za ecommerce sa ponovljenom kupovinom: svih 25 lista sa tačnom konfiguracijom, naming konvencija, pragovi aktivacije (Search 1.000 / Display 100), replenishment prozori i tri ograničenja Admin API-ja koja ruše pola win-back ideja, sa zaobilaznicama.",
+    featuredImage: "/blog/ga4-publike-ecommerce-framework.webp",
     readingTime: "~16 min",
     content: <GA4PublikeFrameworkSR />
   },
@@ -172,6 +173,7 @@ const srPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Performance Max vs Standard Shopping u 2026: gde PMax pobeđuje a gde te sprži (kanibalizacija brenda, skok CPC-a), gde Standard i dalje vodi, promena iz oktobra 2024. koja je srušila stari savet i hibrid koji stvarno radi. Iz UK prakse (skincare brend, šestocifren Shopping prihod).",
+    featuredImage: "/blog/performance-max-vs-standard-shopping.webp",
     readingTime: "~13 min",
     content: <PerformanceMaxVsStandardShoppingSR />
   },
@@ -183,6 +185,7 @@ const srPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Google Shopping vs Search kampanje za eCommerce: kada koju biraš, zašto Shopping ima niži CPC, kada Search pobeđuje i zašto najjači nalozi u 2026. voze oba. Budžet split, PMax pragovi i Srbija launch (druga polovina 2026, Q3 ili Q4).",
+    featuredImage: "/blog/google-shopping-vs-search-kampanje.webp",
     readingTime: "~14 min",
     content: <GoogleShoppingVsSearchKampanjeSR />
   },
@@ -690,6 +693,7 @@ const enPosts: PostData[] = [
     category: "Tracking",
     metaDescription:
       "The complete GA4 audience framework for repeat-purchase ecommerce: all 25 lists with exact configuration, the naming convention, delivery thresholds (Search 1,000 / Display 100), replenishment windows, and the three Admin API limits that break most win-back setups, with the workaround for each.",
+    featuredImage: "/blog/ga4-publike-ecommerce-framework.webp",
     readingTime: "~16 min",
     content: <GA4AudienceFrameworkEN />
   },
@@ -701,6 +705,7 @@ const enPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Performance Max vs Standard Shopping in 2026: where PMax wins and where it burns you (brand cannibalization, CPC jumps), where Standard still wins, the October 2024 change that rewrote the old advice, and the hybrid that actually works. From UK practice (a skincare brand, six-figure Shopping revenue).",
+    featuredImage: "/blog/performance-max-vs-standard-shopping.webp",
     readingTime: "~13 min",
     content: <PerformanceMaxVsStandardShoppingEN />
   },
@@ -712,6 +717,7 @@ const enPosts: PostData[] = [
     category: "Google Shopping",
     metaDescription:
       "Google Shopping vs Search campaigns for eCommerce: when to pick each, why Shopping has a lower CPC, when Search wins, and why the strongest accounts in 2026 run both. Budget split, PMax thresholds, and the Serbia launch.",
+    featuredImage: "/blog/google-shopping-vs-search-kampanje.webp",
     readingTime: "~14 min",
     content: <GoogleShoppingVsSearchCampaignsEN />
   },
