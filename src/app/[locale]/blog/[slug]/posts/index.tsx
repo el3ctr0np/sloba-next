@@ -24,6 +24,10 @@ import GoogleShoppingSerbiaLaunch2026EN from "./google-shopping-srbija-2026/en";
 import KolikoKostaGoogleAdsSR from "./koliko-kosta-google-ads/sr";
 import GoogleOglasavanjeZaFirmeSR from "./google-oglasavanje-za-firme/sr";
 import PerformanceMaxVodicSR from "./performance-max-vodic/sr";
+import GoogleSearchKampanjeVodicSR from "./google-search-kampanje-vodic/sr";
+import GoogleSearchCampaignsGuideEN from "./google-search-kampanje-vodic/en";
+import DemandGenVodicSR from "./demand-gen-vodic/sr";
+import DemandGenGuideEN from "./demand-gen-vodic/en";
 import GoogleShoppingVodicSR from "./google-shopping-vodic/sr";
 import AgencijaVsFreelancerSR from "./agencija-vs-freelancer/sr";
 import ConversionTrackingVodicSR from "./conversion-tracking-vodic/sr";
@@ -112,6 +116,31 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "google-search-kampanje-vodic",
+    title: "Google Search kampanje: kompletan vodič [2026]",
+    date: "2026-08-28",
+    dateModified: "2026-08-28",
+    category: "Search",
+    metaDescription:
+      "Kompletan vodič za Google Search kampanje 2026: AI Max suita, septembarska migracija DSA i broad match kampanja, struktura po nameri i marži, negativne ključne reči i merenje pre skaliranja.",
+    featuredImage: "/blog/google-search-kampanje-vodic.webp",
+    readingTime: "12 min",
+    content: <GoogleSearchKampanjeVodicSR />,
+    ctaTarget: "audit"
+  },
+  {
+    slug: "demand-gen-vodic",
+    title: "Demand Gen kampanje: kompletan vodič [2026]",
+    date: "2026-08-28",
+    dateModified: "2026-08-28",
+    category: "Demand Gen",
+    metaDescription:
+      "Demand Gen kampanje 2026: gde se prikazuju, šta je novo (view-through optimizacija, inkrementalnost), kome imaju smisla, kreativa, publike i setup korak po korak. Poređenje sa PMax i YouTube kampanjama.",
+    featuredImage: "/blog/demand-gen-vodic.webp",
+    readingTime: "12 min",
+    content: <DemandGenVodicSR />
+  },
   {
     slug: "product-feed-optimizacija-scorecard",
     title: "Merchant Center Feed Scorecard: Ocenite i Popravite Feed",
@@ -616,6 +645,31 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "google-search-campaigns-guide",
+    title: "Google Search Campaigns: The Complete Guide [2026]",
+    date: "2026-08-28",
+    dateModified: "2026-08-28",
+    category: "Search",
+    metaDescription:
+      "The complete 2026 guide to Google Search campaigns: the AI Max suite, September migration of DSA and broad match campaigns, intent-and-margin structure, negative keywords, and measurement before scaling.",
+    featuredImage: "/blog/google-search-kampanje-vodic.webp",
+    readingTime: "12 min",
+    content: <GoogleSearchCampaignsGuideEN />,
+    ctaTarget: "audit"
+  },
+  {
+    slug: "demand-gen-guide",
+    title: "Demand Gen Campaigns: The Complete Guide [2026]",
+    date: "2026-08-28",
+    dateModified: "2026-08-28",
+    category: "Demand Gen",
+    metaDescription:
+      "Demand Gen campaigns in 2026: where they show, what's new (view-through optimization, incrementality testing), who they make sense for, creative requirements, audiences, and step-by-step setup.",
+    featuredImage: "/blog/demand-gen-vodic.webp",
+    readingTime: "12 min",
+    content: <DemandGenGuideEN />
+  },
   {
     slug: "merchant-center-feed-scorecard",
     title: "Merchant Center Feed Scorecard: How to Grade a Product Feed",
