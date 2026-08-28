@@ -44,6 +44,45 @@ export default function GoogleShoppingSrbija2026SR() {
 
       <hr />
 
+      <h2>Šta je novo u Google Shopping svetu (2026)</h2>
+      <p>
+        Dok Srbija čeka na start (Q3 ili Q4 2026, tačan datum još nije potvrđen), Google Shopping se u svetu menja brže nego ikad. Ovo nisu apstraktne najave - ovo je oblik u kom će Shopping sleteti kod nas kad dođe red. Evo šta se dešava napolju i šta to znači za prodavca koji se sprema.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Februar 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping oglasi sada žive i u AI Mode-u</h3>
+          <p className="text-base text-gray-600 mb-0">Od februara 2026, proizvodni oglasi se zvanično prikazuju u Google AI Mode-u - konverzacionoj pretrazi koja je u maju 2026 prešla milijardu mesečnih korisnika (u trenutku uvođenja Shopping oglasa imala je 75+ miliona dnevnih korisnika). Za prodavca to znači da kupac ne mora da otkuca "jakna muška zara" u klasičnu pretragu - može da razgovara sa Google-om o tome šta traži, a proizvod se pojavljuje unutar tog razgovora. Čist i kompletan feed prestaje da bude "lepo imati" - postaje uslov da vas AI uopšte prepozna kao opciju.</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">April 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">AI Max stiže i u standardne Shopping kampanje</h3>
+          <p className="text-base text-gray-600 mb-0">Sistem sam piše tekst oglasa - direktno iz atributa vašeg feed-a (materijal, fit, karakteristike). Za vas to znači da loš atribut u feed-u više nije samo problem za matching, nego direktno postaje loš oglas, automatski, bez da ste ga vi napisali. Feed higijena prelazi iz "podataka za pretragu" u "copywriting koji AI koristi umesto vas".</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Januar 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Merchant Center dobija "conversational attributes"</h3>
+          <p className="text-base text-gray-600 mb-0">Google je dodao desetine novih atributa u feed strukturi, namenjenih baš AI i konverzacionim interfejsima (AI Mode, Gemini). Kad feed budete pripremali za srpsko tržište, nećete ga pripremati samo za Shopping mrežu kakvu smo znali do sada - pripremaćete ga za sistem koji o vašem proizvodu "razgovara" sa kupcem.</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">AI performance insights</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Prvi uvid u vidljivost brenda unutar AI odgovora</h3>
+          <p className="text-base text-gray-600 mb-0">Merchant Center dobija izveštaj koji pokazuje share of voice vašeg brenda na AI površinama, u poređenju sa sličnim brendovima. Rollout je krenuo u prvih pet tržišta (SAD, Kanada, Australija, Indija, Novi Zeland) - Srbija ide kasnije, ali pravac je jasan: konkurentska analiza se seli sa pitanja "ko je iznad mene po CPC-u" na pitanje "ko me pojede u AI odgovoru".</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Jul 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Merchant Center Next postaje samo Merchant Center</h3>
+          <p className="text-base text-gray-600 mb-0">Google je skinuo "Next" iz imena i dodao Feed Intelligence Scoring - AI ocenu kvaliteta feed-a. Za vas: platforma na kojoj ćete raditi setup kad Srbija krene već sad automatski meri kvalitet vašeg feed-a, pre nego što bilo šta pustite uživo.</p>
+        </div>
+      </div>
+
+      <p>
+        Ko fid i merenje pripremi pre lansiranja, ulazi spreman u svet gde Shopping ne živi samo u klasičnoj pretrazi, nego i u AI pretrazi.
+      </p>
+
+      <hr />
+
       <h2>Kada tačno dolazi Google Shopping u Srbiju</h2>
       <p>
         Prema zvaničnim Google najavama i internim podacima koje pratim, <strong>Google Shopping Ads dolazi u Srbiju u drugoj polovini 2026 (Q3 ili Q4)</strong>. Tačan datum još nije potvrđen, ali prema obrazcu prethodnih EMEA launch-eva, očekujem da bude vezan za period pred sezonu jakih praznika.

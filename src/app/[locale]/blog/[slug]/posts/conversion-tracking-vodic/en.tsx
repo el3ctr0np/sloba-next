@@ -57,6 +57,7 @@ export default function ConversionTrackingGuideEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#whats-new-in-measurement-2026" className="block py-1 text-base text-gray-700 hover:text-primary underline">What's new in measurement (2026)</a></li>
           <li><a href="#why-conversion-tracking-is-the-foundation-of-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why conversion tracking is the foundation of Google Ads</a></li>
           <li><a href="#types-of-conversions-to-track" className="block py-1 text-base text-gray-700 hover:text-primary underline">Types of conversions to track</a></li>
           <li><a href="#tools-for-conversion-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tools for conversion tracking</a></li>
@@ -71,7 +72,50 @@ export default function ConversionTrackingGuideEN() {
         </ol>
       </nav>
 
+      <h2 id="whats-new-in-measurement-2026">What's new in measurement (2026)</h2>
+      <p>
+        Google has been changing GA4 and Google Ads under the hood throughout 2026, quietly, without an announcement that reaches most account owners. Here's what changed and what it actually means for someone who opens a report each month and makes decisions based on it.
+      </p>
 
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">August 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Conversion window is now adjustable</h3>
+          <p className="text-base text-gray-600 mb-0">
+            GA4 conversions now support a custom conversion window for click-through and engaged-view conversions — the EVC window can be set to any number of days from 1 to 30 (previously fixed at 3 days). If you sell something people think about for more than a couple of days (furniture, equipment, a B2B service), you can now set the window to match the actual decision cycle instead of GA4 "losing" conversions that arrive later.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">February 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Measurement Protocol accepts cookies</h3>
+          <p className="text-base text-gray-600 mb-0">
+            The Measurement Protocol now supports client_id and session_id cookies, opening up more flexible server-side implementations. This only matters if you're building or maintaining server-side tracking — Google still recommends non-cookie identifiers as the more reliable choice, so it changes nothing for the standard GTM+GA4 setup described in this guide.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">January 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Cross-channel budgeting in GA4</h3>
+          <p className="text-base text-gray-600 mb-0">
+            GA4 now has projection plans, which track whether spend is pacing the way it was planned, and scenario plans, which simulate "what if I reallocate budget" across channels with a projected ROI. In practice, part of the work you used to do by hand in a spreadsheet for the monthly report is now handled by a tool built into GA4.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">During 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">AI assistant traffic now gets reported</h3>
+          <p className="text-base text-gray-600 mb-0">
+            GA4 gained reporting on traffic coming from AI assistants during 2026 — ChatGPT and Perplexity referrals now show up as their own channel. For the first time, you can see how many visitors arrive directly from a conversation with an AI assistant, a channel that didn't exist in reports until recently.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">February 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">GA4's home now surfaces anomalies on its own</h3>
+          <p className="text-base text-gray-600 mb-0">
+            The generated insights panel on the GA4 home page now surfaces anomalies and opportunities on its own, without you having to go looking. It doesn't replace regular analysis, but it's a useful first signal — you can spot something unusual on the account the moment you open GA4, before you sit down to dig deeper.
+          </p>
+        </div>
+      </div>
+
+      <hr />
 
       <h2 id="why-conversion-tracking-is-the-foundation-of-google-ads">Why conversion tracking is the foundation of Google Ads</h2>
       <p>
@@ -818,7 +862,7 @@ export default function ConversionTrackingGuideEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: July 2026
+        Last updated: August 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

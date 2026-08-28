@@ -58,6 +58,45 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <hr />
 
+      <h2>What&apos;s new in Google Shopping worldwide (2026)</h2>
+      <p>
+        Serbia is still waiting on a launch date (Q3 or Q4 2026, still unconfirmed), but Google Shopping itself keeps changing globally in the meantime. This isn&apos;t distant industry news — it&apos;s the shape Shopping will already be in by the time it lands here. Here&apos;s what&apos;s happened abroad and what it actually means for a seller getting ready.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">February 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping ads now live inside AI Mode</h3>
+          <p className="text-base text-gray-600 mb-0">Since February 2026, product ads officially show up inside Google AI Mode — the conversational search experience that passed a billion monthly users in May 2026 (it had 75+ million daily users at the time Shopping ads were added). For a seller, that means a shopper no longer has to type &quot;men&apos;s jacket zara&quot; into classic search — they can describe what they want in a conversation, and your product can surface inside that exchange. A clean, complete feed stops being a nice-to-have and becomes the condition for the AI to recognise you as an option at all.</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">April 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">AI Max expands into standard Shopping campaigns</h3>
+          <p className="text-base text-gray-600 mb-0">The system now writes ad copy on its own, straight out of your feed attributes (material, fit, features). For you that means a weak attribute in the feed isn&apos;t just a matching problem anymore — it becomes a weak ad automatically, without anyone writing it. Feed hygiene shifts from &quot;data for search&quot; to &quot;copywriting the AI does on your behalf.&quot;</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">January 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Merchant Center adds &quot;conversational attributes&quot;</h3>
+          <p className="text-base text-gray-600 mb-0">Google added dozens of new feed attributes built specifically for AI and conversational surfaces (AI Mode, Gemini). When you build a feed for the Serbian market, you won&apos;t just be building it for the Shopping network as we&apos;ve known it — you&apos;ll be building it for a system that talks to shoppers about your product.</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">AI performance insights</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">A first look at brand visibility inside AI answers</h3>
+          <p className="text-base text-gray-600 mb-0">Merchant Center now offers a report showing your brand&apos;s share of voice on AI surfaces against comparable brands. The rollout started in the first five markets (US, Canada, Australia, India, New Zealand) — Serbia follows later, but the direction is clear: competitive analysis is moving from &quot;who&apos;s beating me on CPC&quot; to &quot;who&apos;s eating my share of the AI answer.&quot;</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">July 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Merchant Center Next drops the &quot;Next&quot;</h3>
+          <p className="text-base text-gray-600 mb-0">Google renamed Merchant Center Next back to plain Merchant Center and added Feed Intelligence Scoring — an AI-generated quality score for your feed. The platform you&apos;ll set up on once Serbia launches already grades your feed automatically, before you put anything live.</p>
+        </div>
+      </div>
+
+      <p>
+        Whoever gets their feed and measurement in order before launch enters a world where Shopping doesn&apos;t just live in classic search anymore — it lives in AI search too.
+      </p>
+
+      <hr />
+
       <h2>Exactly when Google Shopping arrives in Serbia</h2>
       <p>
         Based on official Google announcements and internal data I track, <strong>Google Shopping Ads is expected to launch in Serbia in the second half of 2026 (Q3 or Q4)</strong>. The exact date hasn&apos;t been confirmed, but based on the pattern of previous EMEA launches, I expect it to land somewhere near the run-up to the holiday season.

@@ -40,6 +40,7 @@ export default function PerformanceMaxGuideEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#whats-new-in-performance-max-2026" className="block py-1 text-base text-gray-700 hover:text-primary underline">What's new in Performance Max (2026)</a></li>
           <li><a href="#what-is-performance-max-and-why-its-special" className="block py-1 text-base text-gray-700 hover:text-primary underline">What is Performance Max and why it's special</a></li>
           <li><a href="#when-to-use-performance-max-campaigns" className="block py-1 text-base text-gray-700 hover:text-primary underline">When to use Performance Max campaigns</a></li>
           <li><a href="#performance-max-campaign-structure" className="block py-1 text-base text-gray-700 hover:text-primary underline">Performance Max campaign structure</a></li>
@@ -54,7 +55,73 @@ export default function PerformanceMaxGuideEN() {
         </ol>
       </nav>
 
+      <h2 id="whats-new-in-performance-max-2026">What's new in Performance Max (2026)</h2>
+      <p>
+        Performance Max keeps changing fast, and almost every update shifts how much control you actually have. Here's what Google shipped in 2026 and what it means for you as an advertiser in practice.
+      </p>
 
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Full negative keyword support</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">PMax now has full negative keyword support at both the campaign and account level — the single most requested feature from advertisers. In practice: you can finally cut wasted search traffic inside PMax the same way you do in Search campaigns, without waiting on a Google rep or an exception process.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Channel-level reporting</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">A new report breaks down spend by channel — Search, Shopping, Display, YouTube, Discover, Gmail, and Maps. In practice: it ends the "black box" argument on that specific point. You can now see if a campaign is leaking budget into Display instead of Search or Shopping, and address it through asset quality, negative keywords, and brand controls.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Brand controls</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">New options let you exclude competitor brands, set brand safety parameters, and control brand terms per channel. In practice: you no longer have to rely on negative keywords alone to stop PMax bidding on competitors or showing next to content you don't want your brand near.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Audience exclusions</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">You can now exclude customer lists from PMax campaigns. In practice: useful when you're chasing new customers only and don't want budget going toward people who already bought — it finally addresses one of the most common PMax targeting complaints.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Higher video limit and asset set A/B testing</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">The video limit per asset group went from 5 to 15, and Google added A/B testing for asset sets with proper traffic-split control. In practice: you can now test creative directions against each other with a clearer signal on what's working, instead of guessing from aggregated data.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Waze inventory for store goals</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Store goals campaigns can now tap Waze inventory, US only for now. In practice: relevant if you have physical locations and care about store visits — an extra channel that reaches drivers planning a route, with no additional creative work required.</p>
+      </div>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <p className="font-heading font-bold text-base mb-3">PMax audit checklist (2026)</p>
+        <p className="text-sm text-gray-600 mb-3">A question I'm seeing more often — what to actually check on a PMax campaign today. A short list before you go deeper into optimization:</p>
+        <ul className="text-sm text-gray-600 mb-0">
+          <li>Negative keywords set at both account and campaign level?</li>
+          <li>Channel-level report reviewed — where is budget actually going?</li>
+          <li>Brand exclusions configured if you don't want PMax bidding on your own or a competitor's brand?</li>
+          <li>Asset groups segmented by theme, not mixed categories?</li>
+          <li>Feed quality checked if retail — title, custom labels, GTIN?</li>
+          <li>Conversions clean — right goal tracked, conversion values set up?</li>
+        </ul>
+      </div>
+
+      <hr />
 
       <h2 id="what-is-performance-max-and-why-its-special">What is Performance Max and why it's special</h2>
       <p>
@@ -78,7 +145,7 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">&quot;Black box&quot; problem</p>
-        <p className="text-blue-800 text-base mb-0">PMax doesn't give you the level of control and transparency you have with Search or Shopping campaigns. You don't see the complete list of search terms, you don't know the exact budget allocation per network, and there is no bidding per keyword. Control has improved since launch — negative keywords, brand exclusions, and account-level placement exclusions are all self-serve in the UI now, no Google rep required. But you still work with a lot of aggregated data and have to trust the algorithm. My experience is PMax works best for advertisers who trust data over intuition and have patience for learning period.</p>
+        <p className="text-blue-800 text-base mb-0">PMax doesn't give you the level of control and transparency you have with Search or Shopping campaigns. You don't see the complete list of search terms, and there is no bidding per keyword. Control has improved since launch — negative keywords, brand exclusions, and account-level placement exclusions are all self-serve in the UI now, no Google rep required, and since 2026 channel-level reporting finally shows exact budget allocation per network (see the "What's new" section below). But you still work with a lot of aggregated data and have to trust the algorithm. My experience is PMax works best for advertisers who trust data over intuition and have patience for learning period.</p>
       </div>
 
       <hr />
@@ -704,7 +771,7 @@ export default function PerformanceMaxGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Common PMax problem. Solutions: disable URL expansion, add negative keywords (at campaign or account level, self-serve in the UI), switch on brand exclusions if PMax is buying your own brand, create stronger Search campaigns for the same keywords. PMax will spend where it&apos;s cheapest, not necessarily most effective.
+            Common PMax problem. Check the channel-level report first (Insights tab) to see the exact spend by channel. Solutions: disable URL expansion, add negative keywords (at campaign or account level, self-serve in the UI), switch on brand exclusions if PMax is buying your own brand, create stronger Search campaigns for the same keywords. PMax will spend where it&apos;s cheapest, not necessarily most effective.
           </div>
         </details>
 
@@ -714,7 +781,7 @@ export default function PerformanceMaxGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Insights tab → Placement report (limited), Asset group performance. For more detail: use URL-based conversion tracking or GA4 to see which channels drive conversions. Google intentionally limits PMax transparency.
+            Insights tab → Placement report (limited), Asset group performance. Since 2026 there's also channel-level reporting — a breakdown by channel (Search, Shopping, Display, YouTube, Discover, Gmail, Maps) that shows directly where budget is going, without needing a GA4 workaround. For search-term-level detail, URL-based tracking or GA4 is still useful, but for the "where does budget go" question, the channel-level report is now the first stop.
           </div>
         </details>
 
@@ -730,7 +797,7 @@ export default function PerformanceMaxGuideEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: July 2026
+        Last updated: August 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

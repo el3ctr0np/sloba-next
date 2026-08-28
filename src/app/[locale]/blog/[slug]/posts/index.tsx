@@ -370,7 +370,7 @@ const srPosts: PostData[] = [
     slug: "google-shopping-srbija-2026",
     title: "Google Shopping Dolazi u Srbiju: Kompletan Vodič za Pripremu",
     date: "2026-04-09",
-    dateModified: "2026-07-24",
+    dateModified: "2026-08-28",
     category: "Google Shopping",
     metaDescription:
       "Google Shopping Ads stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4) i u Hrvatsku Q4 2026. Kompletan vodič sa 15-korak checklist-om, Merchant Center setup, product feed optimizacija, i lekcije iz 2+ godine UK iskustva (skincare brend, šestocifren prihod u funtama).",
@@ -406,7 +406,7 @@ const srPosts: PostData[] = [
     slug: "performance-max-vodic",
     title: "Performance Max (PMax) Vodič za 2026: Struktura, Asset Grupe + Template koji daje bolji ROAS",
     date: "2026-01-26",
-    dateModified: "2026-07-24",
+    dateModified: "2026-08-28",
     category: "Performance Max",
     metaDescription:
       "Performance Max kampanje u 2026: kompletna struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje koštaju 30-50% ROAS-a. Uključuje gotov PMax Asset Grupa template + lekcije iz 10+ naloga.",
@@ -457,7 +457,7 @@ const srPosts: PostData[] = [
     slug: "conversion-tracking-vodic",
     title: "Conversion Tracking za Google Ads: Zašto Vaše Kampanje Ne Rade",
     date: "2026-01-26",
-    dateModified: "2026-07-24",
+    dateModified: "2026-08-28",
     category: "Google Ads",
     metaDescription:
       "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje GTM, GA4 i Google Ads tagova, Consent Mode v2 i Enhanced Conversions.",
@@ -869,7 +869,7 @@ const enPosts: PostData[] = [
     slug: "google-shopping-serbia-2026",
     title: "Google Shopping Launches in Serbia: Complete Preparation Guide",
     date: "2026-04-09",
-    dateModified: "2026-07-24",
+    dateModified: "2026-08-28",
     category: "Google Shopping",
     metaDescription:
       "Google Shopping Ads launches in Serbia in the second half of 2026 (Q3 or Q4) and across Croatia, BiH and Slovenia in Q4 2026. Full guide with 15-step checklist, Merchant Center setup, product feed optimisation, and lessons from 2+ years of UK Shopping campaigns (a skincare brand, six-figure Shopping revenue).",
@@ -904,7 +904,7 @@ const enPosts: PostData[] = [
     slug: "performance-max-guide",
     title: "Performance Max Campaigns: Guide for eCommerce and B2B [2026]",
     date: "2026-01-26",
-    dateModified: "2026-07-24",
+    dateModified: "2026-08-28",
     category: "Performance Max",
     metaDescription:
       "Everything about Performance Max campaigns — how they work, when to use them, structure, asset groups, and optimization strategies. Guide based on real results.",
@@ -949,7 +949,7 @@ const enPosts: PostData[] = [
     slug: "conversion-tracking-guide",
     title: "Conversion Tracking for Google Ads: Why Your Campaigns Aren't Working",
     date: "2026-01-26",
-    dateModified: "2026-07-24",
+    dateModified: "2026-08-28",
     category: "Google Ads",
     metaDescription:
       "Poor conversion tracking is the #1 reason Google Ads campaigns fail. Guide to proper GTM, GA4, and Google Ads tag setup, Consent Mode v2, and Enhanced Conversions.",

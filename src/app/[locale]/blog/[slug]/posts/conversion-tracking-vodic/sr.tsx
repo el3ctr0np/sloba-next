@@ -57,6 +57,7 @@ export default function ConversionTrackingVodicPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#sta-je-novo-u-merenju-2026" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je novo u merenju (2026)</a></li>
           <li><a href="#zasto-je-conversion-tracking-temelj-google-ads-a" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto je conversion tracking temelj Google Ads-a</a></li>
           <li><a href="#tipovi-konverzija-koje-treba-pratiti" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tipovi konverzija koje treba pratiti</a></li>
           <li><a href="#alati-za-conversion-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Alati za conversion tracking</a></li>
@@ -71,7 +72,50 @@ export default function ConversionTrackingVodicPost() {
         </ol>
       </nav>
 
+      <h2 id="sta-je-novo-u-merenju-2026">Šta je novo u merenju (2026)</h2>
+      <p>
+        Google tokom cele 2026. menja GA4 i Google Ads iznutra, tiho, bez najave koja stigne do vlasnika naloga. Evo šta se promenilo i šta to konkretno znači za nekoga ko svakog meseca gleda izveštaj i donosi odluke na osnovu njega.
+      </p>
 
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Avgust 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Conversion window sad je podesiv</h3>
+          <p className="text-base text-gray-600 mb-0">
+            GA4 konverzije sad podržavaju prilagođen conversion window za click-through i engaged-view konverzije - EVC prozor se može postaviti na bilo koji broj dana od 1 do 30 (ranije je bio fiksno 3 dana). Ako prodajete nešto gde ljudi razmišljaju duže od par dana (nameštaj, oprema, B2B usluga), sad možete podesiti prozor da odgovara stvarnom ciklusu odlučivanja, umesto da vam GA4 "izgubi" konverzije koje stignu kasnije.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Februar 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Measurement Protocol prima kolačiće</h3>
+          <p className="text-base text-gray-600 mb-0">
+            Measurement Protocol sad podržava client_id i session_id kolačiće, što otvara fleksibilnije server-side implementacije. Ovo je relevantno samo ako gradite ili održavate server-side tracking - Google i dalje preporučuje ne-cookie identifikatore kao pouzdaniji izbor, pa ovo ne menja ništa za standardni GTM+GA4 setup opisan u ovom vodiču.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Januar 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Cross-channel budgeting u GA4</h3>
+          <p className="text-base text-gray-600 mb-0">
+            GA4 sad ima projection plans, koji prate da li je potrošnja na putanji da se potroši kako je planirano (pacing), i scenario plans, koji simuliraju "šta ako preraspodelim budžet" po kanalima uz predviđeni ROI. Praktično - deo posla koji ste ranije radili ručno u Excelu za mesečni izveštaj sad radi sam alat unutar GA4.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tokom 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Saobraćaj iz AI asistenata dobio izveštaj</h3>
+          <p className="text-base text-gray-600 mb-0">
+            GA4 je tokom 2026. dobio izveštavanje o saobraćaju koji dolazi iz AI asistenata - ChatGPT i Perplexity referali sad se vide kao poseban kanal. Prvi put možete videti koliko posetilaca dolazi direktno iz razgovora sa AI asistentom, kanal koji do juče uopšte nije postojao u izveštajima.
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Februar 2026</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">GA4 početna sad sama ističe anomalije</h3>
+          <p className="text-base text-gray-600 mb-0">
+            Panel generated insights na GA4 početnoj stranici sam ističe anomalije i prilike, bez da ih tražite. Ne zamenjuje redovnu analizu, ali je koristan prvi signal - nešto neobično na nalogu možete primetiti čim otvorite GA4, pre nego što sednete da kopate dublje.
+          </p>
+        </div>
+      </div>
+
+      <hr />
 
       <h2 id="zasto-je-conversion-tracking-temelj-google-ads-a">Zašto je conversion tracking temelj Google Ads-a</h2>
       <p>
@@ -818,7 +862,7 @@ export default function ConversionTrackingVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Jul 2026
+        Poslednje ažuriranje: Avgust 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

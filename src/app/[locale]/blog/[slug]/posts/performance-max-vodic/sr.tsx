@@ -53,6 +53,7 @@ export default function PerformanceMaxVodicPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#sta-je-novo-u-performance-maxu-2026" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je novo u Performance Max-u (2026)</a></li>
           <li><a href="#sta-je-performance-max-i-zasto-je-poseban" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je Performance Max i zašto je poseban</a></li>
           <li><a href="#kada-koristiti-performance-max-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kada koristiti Performance Max kampanje</a></li>
           <li><a href="#struktura-performance-max-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Struktura Performance Max kampanje</a></li>
@@ -66,7 +67,73 @@ export default function PerformanceMaxVodicPost() {
         </ol>
       </nav>
 
+      <h2 id="sta-je-novo-u-performance-maxu-2026">Šta je novo u Performance Max-u (2026)</h2>
+      <p>
+        Performance Max se menja brzo, i skoro svaka promena utiče na to koliko kontrole zaista imate. Evo šta je Google objavio 2026. i šta to praktično znači za vas kao oglašivača.
+      </p>
 
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Puna podrška za negativne ključne reči</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">PMax je dobio punu podršku za negativne ključne reči na nivou kampanje i naloga - do sada najveći zahtev oglašivača prema Google-u. Praktično: konačno se seče otpadni search saobraćaj u PMax-u isto kao u Search kampanjama, bez čekanja na Google predstavnika ili exception proces.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Channel-level reporting</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Novi izveštaj pokazuje potrošnju po kanalu - Search, Shopping, Display, YouTube, Discover, Gmail i Maps. Praktično: kraj argumenta da je PMax &quot;crna kutija&quot; bar u toj tački. Sada vidite ako kampanja preliva budžet na Display umesto na Search ili Shopping, i to možete da adresirate kroz asset kvalitet, negativne ključne reči i brand kontrole.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Brand kontrole</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Nove opcije za isključivanje konkurentskih brendova, brand safety parametre i kontrolu brend termina po kanalu. Praktično: ne oslanjate se više samo na negativne ključne reči da biste sprečili PMax da kupuje konkurenciju ili da vaš oglas završi pored neprimerenog sadržaja.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Audience exclusions</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Možete isključiti customer liste iz PMax kampanja. Praktično: korisno kad jurite isključivo nove kupce i ne želite da budžet ide na ljude koji su već kupili - konačno rešava jedan od čestih prigovora na PMax targeting.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Veći video limit i A/B testiranje asset setova</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Limit videa po asset grupi porastao je sa 5 na 15, a dodato je i A/B testiranje asset setova sa kontrolom podele saobraćaja. Praktično: možete testirati različite kreativne pravce jedan naspram drugog sa jasnijim signalom šta radi, umesto da nagađate iz agregiranih podataka.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Waze inventar za store goals</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Store goals kampanje sada mogu da koriste i Waze inventar, za sad u SAD. Praktično: relevantno ako imate fizičke lokacije i cilj vam je poseta prodavnici - dodatni kanal doseže vozače koji planiraju rutu, bez dodatnog rada na kreativi.</p>
+      </div>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <p className="font-heading font-bold text-base mb-3">PMax audit checklist (2026)</p>
+        <p className="text-sm text-gray-600 mb-3">Pitanje koje sve češće viđam - šta uopšte proveriti na PMax kampanji danas. Kratka lista pre nego što krenete u dublju optimizaciju:</p>
+        <ul className="text-sm text-gray-600 mb-0">
+          <li>Negativne ključne reči postavljene na nivou naloga i kampanje?</li>
+          <li>Channel-level report pregledan - gde stvarno ide budžet?</li>
+          <li>Brand exclusions podešene ako ne želite da PMax kupuje sopstveni ili tuđi brend?</li>
+          <li>Asset grupe segmentirane po tematskoj celini, ne pomešane kategorije?</li>
+          <li>Feed kvalitet proveren ako je retail - title, custom labels, GTIN?</li>
+          <li>Konverzije čiste - pravi cilj se prati, conversion values setovane?</li>
+        </ul>
+      </div>
+
+      <hr />
 
       <h2 id="sta-je-performance-max-i-zasto-je-poseban">Šta je Performance Max i zašto je poseban</h2>
       <p>
@@ -90,7 +157,7 @@ export default function PerformanceMaxVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">&quot;Crna kutija&quot; problem</p>
-        <p className="text-blue-800 text-base mb-0">PMax vam ne daje nivo kontrole i transparentnosti koji imate sa Search ili Shopping kampanjama. Ne vidite kompletnu listu search termova, ne znate tačnu alokaciju budžeta po mreži, i nema licitiranja po ključnoj reči. Kontrola je u međuvremenu porasla - negativne ključne reči, brand exclusions i isključivanje placement-a na nivou naloga danas se podešavaju samostalno u interfejsu, bez Google predstavnika. Ali i dalje radite sa dobrim delom agregiranih podataka i morate verovati algoritmu. Moje iskustvo je da PMax najbolje funkcioniše za oglašivače koji veruju podacima više nego intuiciji i imaju strpljenja za learning period.</p>
+        <p className="text-blue-800 text-base mb-0">PMax vam ne daje nivo kontrole i transparentnosti koji imate sa Search ili Shopping kampanjama. Ne vidite kompletnu listu search termova i nema licitiranja po ključnoj reči. Kontrola je u međuvremenu porasla - negativne ključne reči, brand exclusions i isključivanje placement-a na nivou naloga danas se podešavaju samostalno u interfejsu, a od 2026. tu je i channel-level reporting koji konačno pokazuje alokaciju budžeta po mreži (videti sekciju &quot;Šta je novo&quot; ispod). Ali i dalje radite sa dobrim delom agregiranih podataka i morate verovati algoritmu. Moje iskustvo je da PMax najbolje funkcioniše za oglašivače koji veruju podacima više nego intuiciji i imaju strpljenja za learning period.</p>
       </div>
 
       <hr />
@@ -724,7 +791,7 @@ export default function PerformanceMaxVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Čest problem sa PMax-om. Rešenja: isključite URL expansion, dodajte negativne ključne reči (na nivou kampanje ili naloga, samostalno u interfejsu), uključite brand exclusions ako PMax kupuje vaš brend, napravite jače Search kampanje za iste ključne reči. PMax će trošiti gde mu je najjeftinije, ne nužno najefikasnije.
+            Čest problem sa PMax-om. Prvo proverite channel-level report (Insights tab) da vidite tačan iznos po kanalu. Rešenja: isključite URL expansion, dodajte negativne ključne reči (na nivou kampanje ili naloga, samostalno u interfejsu), uključite brand exclusions ako PMax kupuje vaš brend, napravite jače Search kampanje za iste ključne reči. PMax će trošiti gde mu je najjeftinije, ne nužno najefikasnije.
           </div>
         </details>
 
@@ -734,7 +801,7 @@ export default function PerformanceMaxVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Insights tab → Placement report (ograničen), Asset group performance. Za detaljnije: koristite URL-based conversion tracking ili GA4 da vidite koji kanali donose konverzije. Google namerno ograničava transparentnost PMax-a.
+            Insights tab → Placement report (ograničen), Asset group performance. Od 2026. tu je i channel-level reporting - izveštaj po kanalima (Search, Shopping, Display, YouTube, Discover, Gmail, Maps) koji direktno pokazuje gde ide budžet, bez potrebe za GA4 workaround-om. Za search-term nivo detalja i dalje je korisno pratiti URL-based tracking ili GA4, ali za pitanje gde ide budžet channel-level report je sada prvi korak.
           </div>
         </details>
 
@@ -750,7 +817,7 @@ export default function PerformanceMaxVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Jul 2026
+        Poslednje ažuriranje: Avgust 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">
