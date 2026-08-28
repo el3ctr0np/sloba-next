@@ -15,16 +15,16 @@ export default function GA4GoogleAdsIntegracijaSR() {
       { "@type": "HowToStep", "name": "Importuj GA4 Key Events kao Google Ads konverzije", "text": "Google Ads: Tools → Data Manager → Import conversions → Google Analytics 4 properties → odaberi property → odaberi key events → Import." },
       { "@type": "HowToStep", "name": "Odredi Primary vs Secondary konverzije", "text": "Google Ads: Goals → Conversions → Summary → označi jednu konverziju kao Primary (za bidding), ostale kao Secondary (observation only). Count: 'One' za leads, 'Every' za eCommerce." },
       { "@type": "HowToStep", "name": "Prenesi GA4 audiences u Google Ads", "text": "GA4: Admin → Audiences → kreiraj audience → automatski se prenosi u Google Ads ako je link aktivan. Minimum 1,000 korisnika za remarketing." },
-      { "@type": "HowToStep", "name": "Verifikuj data flow", "text": "Čekaj 24-48h. Proveri Google Ads → Goals → Conversions → Summary → status 'Recording conversions'. Proveri kolonu 'Conv. (all)' na kampanji — treba da vidiš brojeve." }
+      { "@type": "HowToStep", "name": "Verifikuj data flow", "text": "Čekaj 24-48h. Proveri Google Ads → Goals → Conversions → Summary → status 'Recording conversions'. Proveri kolonu 'Conv. (all)' na kampanji - treba da vidiš brojeve." }
     ]
   };
 
   return (
     <>
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
-        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko — GA4 + Google Ads 2026</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko - GA4 + Google Ads 2026</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          GA4 + Google Ads integracija je kičma modernog Smart Bidding-a. Bez ispravnog linka, import-a key events i Consent Mode v2, algoritam licitira naslepo. Ovaj vodič prolazi kroz 7 tačnih koraka — od linkovanja property-ja do verifikacije konverzija 48h kasnije.
+          GA4 + Google Ads integracija je kičma modernog Smart Bidding-a. Bez ispravnog linka, import-a key events i Consent Mode v2, algoritam licitira naslepo. Ovaj vodič prolazi kroz 7 tačnih koraka - od linkovanja property-ja do verifikacije konverzija 48h kasnije.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -45,7 +45,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
           </div>
         </div>
         <p className="text-sm text-slate-400 mt-6 mb-0 border-t border-slate-700 pt-4">
-          Bazirano na iskustvu sa 10+ naloga (UK, Srbija, DACH) i zvaničnoj Google dokumentaciji (2024–2026).
+          Bazirano na iskustvu sa 10+ naloga (UK, Srbija, DACH) i zvaničnoj Google dokumentaciji (2024-2026).
         </p>
       </div>
 
@@ -55,18 +55,18 @@ export default function GA4GoogleAdsIntegracijaSR() {
           Šta je GA4 + Google Ads integracija?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong><GlossaryLink slug="ga4">GA4</GlossaryLink> + Google Ads integracija</strong> je dvosmerno povezivanje Google Analytics 4 property-ja i Google Ads naloga koje omogućava import konverzija (key events) iz GA4 u Google Ads, prenos audience-a za <GlossaryLink slug="remarketing">remarketing</GlossaryLink>, i bogatiji set signala za <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> algoritam. Link se aktivira u GA4 Admin → Product links, a verifikuje kroz 24–48h.
+          <strong><GlossaryLink slug="ga4">GA4</GlossaryLink> + Google Ads integracija</strong> je dvosmerno povezivanje Google Analytics 4 property-ja i Google Ads naloga koje omogućava import konverzija (key events) iz GA4 u Google Ads, prenos audience-a za <GlossaryLink slug="remarketing">remarketing</GlossaryLink>, i bogatiji set signala za <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> algoritam. Link se aktivira u GA4 Admin → Product links, a verifikuje kroz 24-48h.
         </p>
       </div>
 
       <p>
-        Od jula 2023, kada je Universal Analytics ugašen, GA4 je jedini Google-ov analytics stack — i jedini izvor GA konverzija za Google Ads. Ali link između GA4 i Google Ads-a je i dalje najčešće loše postavljen deo tracking infrastructure-a na nalozima koje preuzimam.
+        Od jula 2023, kada je Universal Analytics ugašen, GA4 je jedini Google-ov analytics stack - i jedini izvor GA konverzija za Google Ads. Ali link između GA4 i Google Ads-a je i dalje najčešće loše postavljen deo tracking infrastructure-a na nalozima koje preuzimam.
       </p>
       <p>
-        Tipičan simptom: klijent ima GA4, vidi purchase events, ima Google Ads kampanje — ali kada pogledate Google Ads Conversions stranicu, ili ih nema uopšte, ili ima &quot;Google Ads conversion&quot; + &quot;GA4 purchase&quot; u isto vreme što generiše duplikate. Smart Bidding pokušava da optimizuje protiv zbunjene metrike i rezultati stoje.
+        Tipičan simptom: klijent ima GA4, vidi purchase events, ima Google Ads kampanje - ali kada pogledate Google Ads Conversions stranicu, ili ih nema uopšte, ili ima &quot;Google Ads conversion&quot; + &quot;GA4 purchase&quot; u isto vreme što generiše duplikate. Smart Bidding pokušava da optimizuje protiv zbunjene metrike i rezultati stoje.
       </p>
       <p>
-        Ovaj vodič pokriva tačan 7-koračni setup koji radi u 2026 — sa Consent Mode v2 obaveznim od marta 2024, Data Manager izmenama u Google Ads UI-ju, i najčešćim greškama koje vidim na nalozima iz Srbije i UK-a. Ako želite da vam neko sa iskustvom proveri i podesi ceo tracking sistem, pogledajte našu{" "}
+        Ovaj vodič pokriva tačan 7-koračni setup koji radi u 2026 - sa Consent Mode v2 obaveznim od marta 2024, Data Manager izmenama u Google Ads UI-ju, i najčešćim greškama koje vidim na nalozima iz Srbije i UK-a. Ako želite da vam neko sa iskustvom proveri i podesi ceo tracking sistem, pogledajte našu{" "}
         <Link href="/usluge/konsultacije" className="underline font-medium">konsultantsku uslugu</Link>.
       </p>
 
@@ -114,7 +114,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Link ≠ Import konverzija</p>
         <p className="text-base text-yellow-900 mb-0">
-          Linkovanje property-ja samo omogućava <em>mogućnost</em> import-a. Konverzije se ne importuju automatski — treba ih eksplicitno importovati kroz Data Manager. Većina grešaka koje vidim je: klijent linkovao GA4, pretpostavio da je gotovo, a konverzije nikad nisu importovane.
+          Linkovanje property-ja samo omogućava <em>mogućnost</em> import-a. Konverzije se ne importuju automatski - treba ih eksplicitno importovati kroz Data Manager. Većina grešaka koje vidim je: klijent linkovao GA4, pretpostavio da je gotovo, a konverzije nikad nisu importovane.
         </p>
       </div>
 
@@ -126,11 +126,11 @@ export default function GA4GoogleAdsIntegracijaSR() {
       </p>
 
       <ul>
-        <li><strong>Admin pristup GA4 property-ju</strong> — &quot;Edit&quot; role nije dovoljan za linkovanje</li>
-        <li><strong>Admin pristup Google Ads nalogu</strong> — standard nije dovoljan, treba admin za Link step</li>
+        <li><strong>Admin pristup GA4 property-ju</strong> - &quot;Edit&quot; role nije dovoljan za linkovanje</li>
+        <li><strong>Admin pristup Google Ads nalogu</strong> - standard nije dovoljan, treba admin za Link step</li>
         <li><strong>Aktivan GA4 property</strong> sa minimum 14 dana podataka i barem jednim definisanim key event-om</li>
         <li><strong>Enhanced Measurement uključen</strong> u GA4 (Admin → Data Streams → Web stream → Enhanced measurement)</li>
-        <li><strong>Google Tag (gtag.js) ili GTM</strong> ispravno postavljen na sajtu — proverite kroz Tag Assistant</li>
+        <li><strong>Google Tag (gtag.js) ili GTM</strong> ispravno postavljen na sajtu - proverite kroz Tag Assistant</li>
         <li><strong>Consent Mode v2</strong> implementiran ako ciljate EU tržište (obavezno od marta 2024)</li>
       </ul>
 
@@ -150,8 +150,8 @@ export default function GA4GoogleAdsIntegracijaSR() {
             <p className="text-base text-gray-600 mb-2"><strong>Gde:</strong> GA4 → Admin → Property → Product links → Google Ads links → Link</p>
             <p className="text-base text-gray-600 mb-2">Odaberite Google Ads Customer ID (nalog ili MCC). Obavezno čekirajte obe opcije:</p>
             <ul className="text-base text-gray-600 mb-2">
-              <li><strong>Enable Personalized Advertising</strong> — bez ovoga audience transfer neće raditi</li>
-              <li><strong>Enable Auto-Tagging</strong> — dodaje GCLID na sve Google Ads linkove automatski</li>
+              <li><strong>Enable Personalized Advertising</strong> - bez ovoga audience transfer neće raditi</li>
+              <li><strong>Enable Auto-Tagging</strong> - dodaje GCLID na sve Google Ads linkove automatski</li>
             </ul>
             <p className="text-base text-gray-600 mb-0">Klik &quot;Submit&quot;. Status: &quot;Linked&quot; treba da se pojavi odmah.</p>
           </div>
@@ -162,7 +162,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
           <div>
             <h3 className="text-base font-heading font-bold mt-0 mb-2">Uključi Auto-Tagging u Google Ads</h3>
             <p className="text-base text-gray-600 mb-2"><strong>Gde:</strong> Google Ads → Admin → Account settings → Auto-tagging</p>
-            <p className="text-base text-gray-600 mb-2">Čekiraj &quot;Tag the URL that people click through from my ad&quot;. Ovo je obično uključeno, ali proveravam kod svakog novog naloga — našao sam 3 naloga u zadnjih godinu dana gde je bilo isključeno.</p>
+            <p className="text-base text-gray-600 mb-2">Čekiraj &quot;Tag the URL that people click through from my ad&quot;. Ovo je obično uključeno, ali proveravam kod svakog novog naloga - našao sam 3 naloga u zadnjih godinu dana gde je bilo isključeno.</p>
             <p className="text-base text-gray-600 mb-0">Bez auto-tagging-a, GCLID se ne prikači na URL i attribution između Google Ads-a i GA4 ne funkcioniše.</p>
           </div>
         </div>
@@ -225,15 +225,15 @@ export default function GA4GoogleAdsIntegracijaSR() {
         <div className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5">
           <div className="flex-shrink-0 w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center font-heading font-bold">7</div>
           <div>
-            <h3 className="text-base font-heading font-bold mt-0 mb-2">Verifikuj data flow (24–48h)</h3>
-            <p className="text-base text-gray-600 mb-2">Posle 24–48h (ne ranije), proveri:</p>
+            <h3 className="text-base font-heading font-bold mt-0 mb-2">Verifikuj data flow (24-48h)</h3>
+            <p className="text-base text-gray-600 mb-2">Posle 24-48h (ne ranije), proveri:</p>
             <ul className="text-base text-gray-600 mb-2">
-              <li><strong>Google Ads → Goals → Conversions</strong> — status treba da bude &quot;Recording conversions&quot; (zelena tačka)</li>
-              <li><strong>Kampanja → Conv. (all) kolona</strong> — brojevi treba da postoje</li>
-              <li><strong>GA4 → Acquisition → Traffic acquisition</strong> — treba da se pojavi &quot;Paid Search&quot; izvor sa kampanjama</li>
-              <li><strong>GA4 → Advertising → All channels</strong> — Google Ads kampanje sa troškom</li>
+              <li><strong>Google Ads → Goals → Conversions</strong> - status treba da bude &quot;Recording conversions&quot; (zelena tačka)</li>
+              <li><strong>Kampanja → Conv. (all) kolona</strong> - brojevi treba da postoje</li>
+              <li><strong>GA4 → Acquisition → Traffic acquisition</strong> - treba da se pojavi &quot;Paid Search&quot; izvor sa kampanjama</li>
+              <li><strong>GA4 → Advertising → All channels</strong> - Google Ads kampanje sa troškom</li>
             </ul>
-            <p className="text-base text-gray-600 mb-0">Ako &quot;No data&quot; i posle 48h — idi na Troubleshooting sekciju ispod.</p>
+            <p className="text-base text-gray-600 mb-0">Ako &quot;No data&quot; i posle 48h - idi na Troubleshooting sekciju ispod.</p>
           </div>
         </div>
       </div>
@@ -345,7 +345,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-5 my-6">
         <p className="font-heading font-semibold mb-2">Praktična preporuka</p>
         <p className="text-base text-blue-900 mb-0">
-          Za Google Ads bidding, koristite <strong>Data-driven attribution</strong> ako imate dovoljno volumena (Google će vas blokirati ako nemate). Za manje naloge, <strong>Ads-preferred last click</strong>. Ne mešajte modele između GA4 i Google Ads — očekujte malu razliku u brojevima (5–15% je normalno).
+          Za Google Ads bidding, koristite <strong>Data-driven attribution</strong> ako imate dovoljno volumena (Google će vas blokirati ako nemate). Za manje naloge, <strong>Ads-preferred last click</strong>. Ne mešajte modele između GA4 i Google Ads - očekujte malu razliku u brojevima (5-15% je normalno).
         </p>
       </div>
 
@@ -359,20 +359,20 @@ export default function GA4GoogleAdsIntegracijaSR() {
       <p>Šta CMP (Consent Management Platform) treba da šalje u gtag-u:</p>
 
       <ul>
-        <li><code>ad_storage</code> — granted/denied (za cookie-based ads)</li>
-        <li><code>ad_user_data</code> — granted/denied (za slanje korisničkih podataka Google-u)</li>
-        <li><code>ad_personalization</code> — granted/denied (za personalized advertising)</li>
-        <li><code>analytics_storage</code> — granted/denied (za GA4 tracking)</li>
+        <li><code>ad_storage</code> - granted/denied (za cookie-based ads)</li>
+        <li><code>ad_user_data</code> - granted/denied (za slanje korisničkih podataka Google-u)</li>
+        <li><code>ad_personalization</code> - granted/denied (za personalized advertising)</li>
+        <li><code>analytics_storage</code> - granted/denied (za GA4 tracking)</li>
       </ul>
 
       <p>
-        Dodata su 2 parametra (<code>ad_user_data</code> i <code>ad_personalization</code>) u v2 u odnosu na v1. Populariji CMP-ovi (Cookiebot, Iubenda, OneTrust, Usercentrics) imaju Consent Mode v2 modul — treba ga eksplicitno aktivirati u njihovom admin-u.
+        Dodata su 2 parametra (<code>ad_user_data</code> i <code>ad_personalization</code>) u v2 u odnosu na v1. Populariji CMP-ovi (Cookiebot, Iubenda, OneTrust, Usercentrics) imaju Consent Mode v2 modul - treba ga eksplicitno aktivirati u njihovom admin-u.
       </p>
 
       <div className="bg-red-50 border-2 border-red-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-red-700 text-lg mb-2">Kako proveriti da li radi</p>
         <p className="text-base text-red-800 mb-0">
-          Otvorite Chrome DevTools → Network tab → filter &quot;collect&quot; → pogledajte <code>gcs</code> parametar u GA4 request-u. Ako je <code>gcs=G111</code>, Consent v2 radi ispravno. Ako je <code>gcs=G100</code> ili nema — implementacija je nepotpuna.
+          Otvorite Chrome DevTools → Network tab → filter &quot;collect&quot; → pogledajte <code>gcs</code> parametar u GA4 request-u. Ako je <code>gcs=G111</code>, Consent v2 radi ispravno. Ako je <code>gcs=G100</code> ili nema - implementacija je nepotpuna.
         </p>
       </div>
 
@@ -385,13 +385,13 @@ export default function GA4GoogleAdsIntegracijaSR() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #1</p>
           <p className="font-semibold mb-2">Duplikat: Google Ads conversion tag + GA4 purchase import</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Ili stari native Google Ads tag na thank-you stranici, ili GA4 importovana konverzija — ne oba. Preporuka: isključite Google Ads conversion tag i držite samo GA4 import, zato što GA4 kao single source of truth čisti atribuciju.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Ili stari native Google Ads tag na thank-you stranici, ili GA4 importovana konverzija - ne oba. Preporuka: isključite Google Ads conversion tag i držite samo GA4 import, zato što GA4 kao single source of truth čisti atribuciju.</p>
           </div>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
-          <p className="font-semibold mb-2">Više Primary konverzija — Smart Bidding se zbuni</p>
+          <p className="font-semibold mb-2">Više Primary konverzija - Smart Bidding se zbuni</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
             <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Samo jedna konverzija treba da bude Primary. Dodavanjem više Primary konverzija (npr. purchase + add_to_cart + newsletter), algoritam meša signale i tROAS ne radi pravilno.</p>
           </div>
@@ -401,7 +401,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
           <p className="font-semibold mb-2">Missing value/currency na purchase event-u</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Bez <code>value</code> i <code>currency</code> parametara, tROAS ne može da radi. Proverite kroz GA4 DebugView da se vrednosti šalju. Za Shopify/WooCommerce — standardna GTM template-a ima ovo by default.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Bez <code>value</code> i <code>currency</code> parametara, tROAS ne može da radi. Proverite kroz GA4 DebugView da se vrednosti šalju. Za Shopify/WooCommerce - standardna GTM template-a ima ovo by default.</p>
           </div>
         </div>
 
@@ -409,7 +409,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
           <p className="font-semibold mb-2">Pogrešan Count setting</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> eCommerce mora biti &quot;Every&quot; (svaka kupovina se broji). Leads mora biti &quot;One&quot; (ne želite da isti lead troši 3x bidding budget-a). Podrazumevano je &quot;One&quot; — uvek menjajte za eCommerce.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> eCommerce mora biti &quot;Every&quot; (svaka kupovina se broji). Leads mora biti &quot;One&quot; (ne želite da isti lead troši 3x bidding budget-a). Podrazumevano je &quot;One&quot; - uvek menjajte za eCommerce.</p>
           </div>
         </div>
 
@@ -431,9 +431,9 @@ export default function GA4GoogleAdsIntegracijaSR() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Konverzija ne importuje iz GA4</h3>
           <ul className="text-base text-gray-600 mb-0">
             <li>Proveri da li je event označen kao &quot;key event&quot; u GA4 (ne samo običan event)</li>
-            <li>Proveri da ima podataka — event mora biti zabeležen u zadnjih 30 dana</li>
+            <li>Proveri da ima podataka - event mora biti zabeležen u zadnjih 30 dana</li>
             <li>Proveri Link status u GA4 Admin → Product links → Google Ads links</li>
-            <li>Sačekaj 24h posle prvog importa — Google kešira listu</li>
+            <li>Sačekaj 24h posle prvog importa - Google kešira listu</li>
           </ul>
         </div>
 
@@ -441,9 +441,9 @@ export default function GA4GoogleAdsIntegracijaSR() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">&quot;No data&quot; u importovanoj konverziji</h3>
           <ul className="text-base text-gray-600 mb-0">
             <li>Proveri da li Google Ads kampanje stvarno dovode traffic (Conv. (all) kolona)</li>
-            <li>Proveri da li Auto-Tagging radi — GCLID mora biti u URL-u</li>
-            <li>Proveri Consent Mode — ako su korisnici odbili, neće biti podataka</li>
-            <li>Attribution delay: eCommerce konverzije čekaju 3–7 dana pre nego se potpuno prikažu</li>
+            <li>Proveri da li Auto-Tagging radi - GCLID mora biti u URL-u</li>
+            <li>Proveri Consent Mode - ako su korisnici odbili, neće biti podataka</li>
+            <li>Attribution delay: eCommerce konverzije čekaju 3-7 dana pre nego se potpuno prikažu</li>
           </ul>
         </div>
 
@@ -460,10 +460,10 @@ export default function GA4GoogleAdsIntegracijaSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">GA4 broj konverzija ≠ Google Ads broj</h3>
           <ul className="text-base text-gray-600 mb-0">
-            <li>Razlika od 5–15% je normalna (različit attribution model, conversion windows)</li>
-            <li>Razlika &gt; 30% — proveri attribution settings u oba alata</li>
+            <li>Razlika od 5-15% je normalna (različit attribution model, conversion windows)</li>
+            <li>Razlika &gt; 30% - proveri attribution settings u oba alata</li>
             <li>Google Ads koristi click-based, GA4 može biti cross-device ili cross-channel</li>
-            <li>Napomena: broj u Google Ads-u je <em>click-attributed</em>, GA4 broj je <em>last-click GA4</em> — očekuj razliku</li>
+            <li>Napomena: broj u Google Ads-u je <em>click-attributed</em>, GA4 broj je <em>last-click GA4</em> - očekuj razliku</li>
           </ul>
         </div>
       </div>
@@ -479,7 +479,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Obično 24–48h posle importa. Za potpuno backfill istorijskih podataka (za Smart Bidding learning) treba 30–90 dana kontinuiranog trackinga. Ne menjajte bid strategiju u prvih 14 dana — algoritam uči.
+            Obično 24-48h posle importa. Za potpuno backfill istorijskih podataka (za Smart Bidding learning) treba 30-90 dana kontinuiranog trackinga. Ne menjajte bid strategiju u prvih 14 dana - algoritam uči.
           </div>
         </details>
 
@@ -489,7 +489,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Praktično da — GA4 purchase event se može koristiti kao primary Google Ads konverzija. Napredni setup (gdje radim za veće klijente): GA4 za main conversion + native Google Ads conversion kao backup/secondary. Ali za većinu naloga, samo GA4 je dovoljno i izbegava duplikate.
+            Praktično da - GA4 purchase event se može koristiti kao primary Google Ads konverzija. Napredni setup (gdje radim za veće klijente): GA4 za main conversion + native Google Ads conversion kao backup/secondary. Ali za većinu naloga, samo GA4 je dovoljno i izbegava duplikate.
           </div>
         </details>
 
@@ -499,7 +499,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Primary konverzije utiču na Smart Bidding — algoritam optimizuje protiv njih. Secondary su &quot;observation only&quot; — prikazuju se u reportima ali ne utiču na bidding. Pravilo: samo jedna Primary (glavni business outcome). Sve micro-konverzije (add to cart, newsletter signup) na Secondary.
+            Primary konverzije utiču na Smart Bidding - algoritam optimizuje protiv njih. Secondary su &quot;observation only&quot; - prikazuju se u reportima ali ne utiču na bidding. Pravilo: samo jedna Primary (glavni business outcome). Sve micro-konverzije (add to cart, newsletter signup) na Secondary.
           </div>
         </details>
 
@@ -519,7 +519,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Tehnički ne (Srbija nije EU), ali preporučujem da ga imate zato što: (1) mnogi srpski sajtovi targetiraju i EU tržište, (2) GDPR-ready setup je indikator kvaliteta, (3) Google Ads algoritam fino radi sa CMP-om bez obzira na region. Za čisti domaći saobraćaj, možete preskočiti — ali zadržite opciju da uključite.
+            Tehnički ne (Srbija nije EU), ali preporučujem da ga imate zato što: (1) mnogi srpski sajtovi targetiraju i EU tržište, (2) GDPR-ready setup je indikator kvaliteta, (3) Google Ads algoritam fino radi sa CMP-om bez obzira na region. Za čisti domaći saobraćaj, možete preskočiti - ali zadržite opciju da uključite.
           </div>
         </details>
 
@@ -529,7 +529,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Da, može se linkovati više GA4 property-ja na isti Google Ads nalog. Korisno kada imate više domena/brand-ova pod istim Google Ads nalogom. Pažnja sa konverzijama — treba pažljivo mapirati koja dolazi odakle da ne bude duplikata.
+            Da, može se linkovati više GA4 property-ja na isti Google Ads nalog. Korisno kada imate više domena/brand-ova pod istim Google Ads nalogom. Pažnja sa konverzijama - treba pažljivo mapirati koja dolazi odakle da ne bude duplikata.
           </div>
         </details>
 
@@ -539,7 +539,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Besplatno — GA4 i Google Ads su besplatni alati, a integracija je deo platforme. Jedini trošak je vreme (30 min za osnovu + 2–3 sata za audit postojećeg setup-a ako preuzimate nalog od drugog agencija).
+            Besplatno - GA4 i Google Ads su besplatni alati, a integracija je deo platforme. Jedini trošak je vreme (30 min za osnovu + 2-3 sata za audit postojećeg setup-a ako preuzimate nalog od drugog agencija).
           </div>
         </details>
       </div>
@@ -551,7 +551,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
           Vaša GA4 + Google Ads integracija nije potpuna?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Besplatan audit kompletnog tracking sistema na vašem sajtu — provera link statusa, Primary/Secondary setup-a, Consent Mode v2, attribution modela i celokupnog data flow-a. Obično se otkrije 3–5 grešaka koje koštaju konverzija. Deo je našeg{" "}
+          Besplatan audit kompletnog tracking sistema na vašem sajtu - provera link statusa, Primary/Secondary setup-a, Consent Mode v2, attribution modela i celokupnog data flow-a. Obično se otkrije 3-5 grešaka koje koštaju konverzija. Deo je našeg{" "}
           <Link href="/usluge/google-ads-audit" className="underline text-white hover:text-yellow-400">Google Ads audit servisa</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
@@ -576,7 +576,7 @@ export default function GA4GoogleAdsIntegracijaSR() {
           <p className="text-xs text-gray-500 mb-0">GA4 audiences za 4× ROAS kampanje</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimizacija — 30 taktika</p>
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimizacija - 30 taktika</p>
           <p className="text-xs text-gray-500 mb-0">Post-tracking playbook za skalirate rezultate</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

@@ -20,7 +20,7 @@ export default function GoogleShoppingVodicPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Shopping kampanje donose 3-8x ROAS kada su pravilno postavljene. 80% uspeha zavisi od optimizacije product feed-a — 10 obaveznih atributa, strategija title-ova, i 5 custom labela za segmentaciju. Preporučujem strukturu po prioritetu (High/Medium/Low) i Target ROAS bidding za stabilne kampanje sa 50+ mesečnih konverzija.
+          Google Shopping kampanje donose 3-8x ROAS kada su pravilno postavljene. 80% uspeha zavisi od optimizacije product feed-a - 10 obaveznih atributa, strategija title-ova, i 5 custom labela za segmentaciju. Preporučujem strukturu po prioritetu (High/Medium/Low) i Target ROAS bidding za stabilne kampanje sa 50+ mesečnih konverzija.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -59,7 +59,7 @@ export default function GoogleShoppingVodicPost() {
         Google Shopping kampanje su najvažniji kanal za većinu eCommerce biznisa. Vizuelni format sa slikom, cenom i imenom prodavnice stavlja proizvod na vrh pretrage. Korisnici vide proizvod pre nego što kliknu, što filtrira nekvalifikovan saobraćaj i dovodi ljude koji su spremni da kupe.
       </p>
       <p>
-        Shopping kampanje su samo onoliko dobre koliko je dobar vaš product feed i struktura kampanja. Moje iskustvo je da 80% problema proizilazi iz neoptimizovanog feed-a — bez obzira koliko trošite, loš feed znači loše rezultate.
+        Shopping kampanje su samo onoliko dobre koliko je dobar vaš product feed i struktura kampanja. Moje iskustvo je da 80% problema proizilazi iz neoptimizovanog feed-a - bez obzira koliko trošite, loš feed znači loše rezultate.
       </p>
 
       <hr />
@@ -73,23 +73,23 @@ export default function GoogleShoppingVodicPost() {
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Kreirate product feed</strong> <span className="text-gray-500">— XML ili TXT fajl sa svim podacima o proizvodima</span></div>
+            <div><strong>Kreirate product feed</strong> <span className="text-gray-500">- XML ili TXT fajl sa svim podacima o proizvodima</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong><a href="https://support.google.com/merchants/answer/188493" target="_blank" rel="noopener noreferrer" className="underline">Upload u Google Merchant Center</a></strong> <span className="text-gray-500">— centralna platforma za upravljanje feed-om</span></div>
+            <div><strong><a href="https://support.google.com/merchants/answer/188493" target="_blank" rel="noopener noreferrer" className="underline">Upload u Google Merchant Center</a></strong> <span className="text-gray-500">- centralna platforma za upravljanje feed-om</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Povezujete sa Google Ads</strong> <span className="text-gray-500">— omogućava kreiranje Shopping kampanja</span></div>
+            <div><strong>Povezujete sa Google Ads</strong> <span className="text-gray-500">- omogućava kreiranje Shopping kampanja</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Google matchuje proizvode sa pretragama</strong> <span className="text-gray-500">— automatski targeting na osnovu feed podataka</span></div>
+            <div><strong>Google matchuje proizvode sa pretragama</strong> <span className="text-gray-500">- automatski targeting na osnovu feed podataka</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div><strong>Plaćate po kliku</strong> <span className="text-gray-500">— <GlossaryLink slug="cpc">CPC</GlossaryLink> model, kao i Search kampanje</span></div>
+            <div><strong>Plaćate po kliku</strong> <span className="text-gray-500">- <GlossaryLink slug="cpc">CPC</GlossaryLink> model, kao i Search kampanje</span></div>
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@ export default function GoogleShoppingVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prednost</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Vizuelni format</h3>
-          <p className="text-base text-gray-600 mb-0">Korisnik vidi proizvod, cenu i brend pre klika — direktna pre-kvalifikacija kupaca.</p>
+          <p className="text-base text-gray-600 mb-0">Korisnik vidi proizvod, cenu i brend pre klika - direktna pre-kvalifikacija kupaca.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prednost</p>
@@ -113,13 +113,13 @@ export default function GoogleShoppingVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prednost</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Manje konkurencije</h3>
-          <p className="text-base text-gray-600 mb-0">Mnogi eCommerce ne optimizuju feed — prilika za bolje pozicije i niži CPC.</p>
+          <p className="text-base text-gray-600 mb-0">Mnogi eCommerce ne optimizuju feed - prilika za bolje pozicije i niži CPC.</p>
         </div>
       </div>
 
       <hr />
 
-      <h2>Product feed — temelj Shopping kampanja</h2>
+      <h2>Product feed - temelj Shopping kampanja</h2>
       <p>
         Vaš product feed je XML ili TXT fajl koji sadrži sve informacije o proizvodima. Google koristi ove podatke da odluči za koje pretrage prikazati vaš proizvod, kako ga rangirati u odnosu na konkurenciju, i da li je proizvod eligible za prikaz. Kompletnu specifikaciju svih atributa možete pronaći u <a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener noreferrer" className="underline">Google-ovoj specifikaciji podataka o proizvodima</a>.
       </p>
@@ -191,7 +191,7 @@ export default function GoogleShoppingVodicPost() {
         </table>
       </div>
 
-      <h3>Title optimizacija — najvažniji atribut</h3>
+      <h3>Title optimizacija - najvažniji atribut</h3>
       <p>
         Title je najvažniji atribut u feed-u. Google ga koristi za matching sa pretragama korisnika. Loš title = nemate šansu da se prikažete za relevantne pretrage.
       </p>
@@ -209,7 +209,7 @@ export default function GoogleShoppingVodicPost() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Limit karaktera</p>
-        <p className="text-blue-800 text-base mb-0">Google dozvoljava 150 karaktera, ali prvih 70 je najvažnije — to je vidljivo u oglasu. Stavite najvažnije informacije na početak.</p>
+        <p className="text-blue-800 text-base mb-0">Google dozvoljava 150 karaktera, ali prvih 70 je najvažnije - to je vidljivo u oglasu. Stavite najvažnije informacije na početak.</p>
       </div>
 
       <h3>Description optimizacija</h3>
@@ -230,10 +230,10 @@ export default function GoogleShoppingVodicPost() {
 
       <h3>Product Type vs Google Product Category</h3>
       <p>
-        <strong>Google Product Category</strong> je fiksna taksonomija — imate ograničen set kategorija koje Google definiše.
+        <strong>Google Product Category</strong> je fiksna taksonomija - imate ograničen set kategorija koje Google definiše.
       </p>
       <p>
-        <strong>Product Type</strong> je vaša kategorija — imate potpunu slobodu strukture.
+        <strong>Product Type</strong> je vaša kategorija - imate potpunu slobodu strukture.
       </p>
       <p>
         Preporučujem da koristite Product Type za duboku segmentaciju, jer vam omogućava da kreirate ad grupe po specifičnim kategorijama, postavite različite bidove, i bolje pratite performanse.
@@ -243,7 +243,7 @@ export default function GoogleShoppingVodicPost() {
         <p className="font-heading font-semibold text-lg mb-0">Obuća &gt; Muška Obuća &gt; Patike &gt; Running Patike &gt; Nike</p>
       </div>
 
-      <h3>Custom Labels — tajno oružje za segmentaciju</h3>
+      <h3>Custom Labels - tajno oružje za segmentaciju</h3>
       <p>
         Custom Labels (0-4) su vaš alat za segmentaciju proizvoda po biznis kriterijumima. Moje iskustvo je da su ključni za kontrolu nad Shopping kampanjama i ROAS optimizaciju.
       </p>
@@ -304,19 +304,19 @@ export default function GoogleShoppingVodicPost() {
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Brand kampanja</strong> <span className="text-gray-500">— Brand pretrage, svi proizvodi, max kontrola</span></div>
+            <div><strong>Brand kampanja</strong> <span className="text-gray-500">- Brand pretrage, svi proizvodi, max kontrola</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>High Priority kampanja</strong> <span className="text-gray-500">— Generic pretrage, nizak bid, filtrira saobraćaj</span></div>
+            <div><strong>High Priority kampanja</strong> <span className="text-gray-500">- Generic pretrage, nizak bid, filtrira saobraćaj</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Medium Priority kampanja</strong> <span className="text-gray-500">— Kategorije, srednji bid, core saobraćaj</span></div>
+            <div><strong>Medium Priority kampanja</strong> <span className="text-gray-500">- Kategorije, srednji bid, core saobraćaj</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Low Priority kampanja</strong> <span className="text-gray-500">— Top performeri, visok bid, maksimalan ROAS</span></div>
+            <div><strong>Low Priority kampanja</strong> <span className="text-gray-500">- Top performeri, visok bid, maksimalan ROAS</span></div>
           </div>
         </div>
       </div>
@@ -326,14 +326,14 @@ export default function GoogleShoppingVodicPost() {
         Google dozvoljava 3 nivoa prioriteta: High, Medium, Low. Kontraintuitivan pristup koji funkcioniše:
       </p>
       <ul>
-        <li><strong>High Priority + Low Bid</strong> — široke, generičke pretrage ("patike", "laptop")</li>
-        <li><strong>Medium Priority + Medium Bid</strong> — specifičnije pretrage ("nike patike", "hp laptop")</li>
-        <li><strong>Low Priority + High Bid</strong> — high-intent pretrage ("nike air max 90 bele 43")</li>
+        <li><strong>High Priority + Low Bid</strong> - široke, generičke pretrage ("patike", "laptop")</li>
+        <li><strong>Medium Priority + Medium Bid</strong> - specifičnije pretrage ("nike patike", "hp laptop")</li>
+        <li><strong>Low Priority + High Bid</strong> - high-intent pretrage ("nike air max 90 bele 43")</li>
       </ul>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Kako radi</p>
-        <p className="text-blue-800 text-base mb-0">Negativne ključne reči u High Priority kampanji guraju specifičniji saobraćaj dole kroz Medium i Low kampanje. Tako imate kontrolu — generic pretrage plaćate manje, high-intent pretrage plaćate više.</p>
+        <p className="text-blue-800 text-base mb-0">Negativne ključne reči u High Priority kampanji guraju specifičniji saobraćaj dole kroz Medium i Low kampanje. Tako imate kontrolu - generic pretrage plaćate manje, high-intent pretrage plaćate više.</p>
       </div>
 
       <h3>Single Product Ad Groups (SPAGs)</h3>
@@ -419,7 +419,7 @@ export default function GoogleShoppingVodicPost() {
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Moja preporuka</p>
-        <p className="text-base text-yellow-900 mb-0">Preporučujem Manual CPC prvih 2-4 nedelje (dok skupljate minimum 50 konverzija), zatim prelaz na Target ROAS. Podelite kampanje po custom labels (high/medium/low margin) i postavite različite ROAS targetе — visoka marža = niži target, niska marža = viši target.</p>
+        <p className="text-base text-yellow-900 mb-0">Preporučujem Manual CPC prvih 2-4 nedelje (dok skupljate minimum 50 konverzija), zatim prelaz na Target ROAS. Podelite kampanje po custom labels (high/medium/low margin) i postavite različite ROAS targete - visoka marža = niži target, niska marža = viši target.</p>
       </div>
 
       <hr />
@@ -436,7 +436,7 @@ export default function GoogleShoppingVodicPost() {
         </div>
         <p className="text-base text-gray-600 mb-3">Najveći impact za najmanji effort. 80% problema je u feed-u.</p>
         <ul className="text-base mb-3">
-          <li>Audit svih title-ova — dodajte brand, boju, veličinu, model</li>
+          <li>Audit svih title-ova - dodajte brand, boju, veličinu, model</li>
           <li>Optimizuj description za top 100 proizvoda</li>
           <li>Postavi custom labels po marži, performansama, sezoni</li>
           <li>Proveri da li su svi obavezni atributi popunjeni</li>
@@ -483,7 +483,7 @@ export default function GoogleShoppingVodicPost() {
           <li><strong>Cart abandoners:</strong> +30-50% bid adjustment</li>
           <li><strong>Product viewers:</strong> +20-30% bid adjustment</li>
         </ul>
-        <p className="text-base text-gray-500 mb-0">Ovi korisnici već znaju vaš brend — vredi platiti više za klik jer je conversion rate značajno viši.</p>
+        <p className="text-base text-gray-500 mb-0">Ovi korisnici već znaju vaš brend - vredi platiti više za klik jer je conversion rate značajno viši.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -524,7 +524,7 @@ export default function GoogleShoppingVodicPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Neoptimizovan feed direktno iz shopa</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Investirajte vreme u feed optimizaciju ili koristite feed management tool (DataFeedWatch, GoDataFeed). Title "Proizvod 123" i generic description ne funkcionišu — dodajte brand, boju, veličinu, specifičnosti.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Investirajte vreme u feed optimizaciju ili koristite feed management tool (DataFeedWatch, GoDataFeed). Title "Proizvod 123" i generic description ne funkcionišu - dodajte brand, boju, veličinu, specifičnosti.</p>
         </div>
       </div>
 
@@ -540,7 +540,7 @@ export default function GoogleShoppingVodicPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Ignorisanje Search Terms report-a</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Nedeljni review Search Terms report-a i agresivno dodavanje negative keywords. Plaćate za pretrage koje nemaju veze sa vašim proizvodima — "posao", "besplatno", "recenzija".</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Nedeljni review Search Terms report-a i agresivno dodavanje negative keywords. Plaćate za pretrage koje nemaju veze sa vašim proizvodima - "posao", "besplatno", "recenzija".</p>
         </div>
       </div>
 
@@ -612,8 +612,8 @@ export default function GoogleShoppingVodicPost() {
       </div>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
-        <p className="font-heading font-bold text-lg mb-2">Hibridni pristup — moja preporuka</p>
-        <p className="text-base text-yellow-900 mb-0">Preporučujem Standard Shopping za brand kampanje i top kategorije (gde vam je potrebna granularna kontrola i jasan ROAS), i Performance Max za prospecting (širi reach, nove audience). Pratite account-level performanse, ne samo pojedinačne kampanje — PMax može kanibalizovati Shopping, ali ukupni rezultat može biti bolji.</p>
+        <p className="font-heading font-bold text-lg mb-2">Hibridni pristup - moja preporuka</p>
+        <p className="text-base text-yellow-900 mb-0">Preporučujem Standard Shopping za brand kampanje i top kategorije (gde vam je potrebna granularna kontrola i jasan ROAS), i Performance Max za prospecting (širi reach, nove audience). Pratite account-level performanse, ne samo pojedinačne kampanje - PMax može kanibalizovati Shopping, ali ukupni rezultat može biti bolji.</p>
       </div>
 
       <hr />
@@ -628,31 +628,31 @@ export default function GoogleShoppingVodicPost() {
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Verifikujte i claimujte website</strong> <span className="text-gray-500">— dokaz da ste vlasnik sajta</span></div>
+            <div><strong>Verifikujte i claimujte website</strong> <span className="text-gray-500">- dokaz da ste vlasnik sajta</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Shipping settings</strong> <span className="text-gray-500">— konfiguriši cene dostave za Srbiju/region</span></div>
+            <div><strong>Shipping settings</strong> <span className="text-gray-500">- konfiguriši cene dostave za Srbiju/region</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Tax settings</strong> <span className="text-gray-500">— ako je primenjivo za vaše tržište</span></div>
+            <div><strong>Tax settings</strong> <span className="text-gray-500">- ako je primenjivo za vaše tržište</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Return policy</strong> <span className="text-gray-500">— linkujte return policy stranicu</span></div>
+            <div><strong>Return policy</strong> <span className="text-gray-500">- linkujte return policy stranicu</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div><strong>Business information</strong> <span className="text-gray-500">— kompletna adresa, kontakt</span></div>
+            <div><strong>Business information</strong> <span className="text-gray-500">- kompletna adresa, kontakt</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
-            <div><strong>Upload feed</strong> <span className="text-gray-500">— XML/TXT fajl sa proizvodima</span></div>
+            <div><strong>Upload feed</strong> <span className="text-gray-500">- XML/TXT fajl sa proizvodima</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">7</span>
-            <div><strong>Povezivanje sa Google Ads</strong> <span className="text-gray-500">— omogućava kreiranje kampanja</span></div>
+            <div><strong>Povezivanje sa Google Ads</strong> <span className="text-gray-500">- omogućava kreiranje kampanja</span></div>
           </div>
         </div>
       </div>
@@ -813,7 +813,7 @@ export default function GoogleShoppingVodicPost() {
 
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Shopping vs Performance Max — šta je bolje za eCommerce?
+            Shopping vs Performance Max - šta je bolje za eCommerce?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">

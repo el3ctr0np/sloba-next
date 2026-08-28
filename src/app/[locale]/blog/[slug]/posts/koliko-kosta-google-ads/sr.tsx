@@ -9,7 +9,7 @@ export default function KolikoKostaGoogleAdsPost() {
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Cena Google Ads-a zavisi od industrije, konkurencije i kvaliteta kampanja.
-          U Srbiji, CPC se kreće od €0.08 do €8.00 — ali sa pravim pristupom, svaki uloženi euro može doneti 3-10x povraćaj.
+          U Srbiji, CPC se kreće od €0.08 do €8.00 - ali sa pravim pristupom, svaki uloženi euro može doneti 3-10x povraćaj.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -40,7 +40,7 @@ export default function KolikoKostaGoogleAdsPost() {
           Koliko košta Google Ads u Srbiji?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Ads u Srbiji</strong> košta od <strong>15 do 50 RSD po kliku</strong> za većinu industrija, uz minimalni mesečni budžet od <strong>€200-400</strong> da biste videli merljive rezultate. Konačna cena zavisi od industrije i konkurencije — usluge i B2B plaćaju više od maloprodaje.
+          <strong>Google Ads u Srbiji</strong> košta od <strong>15 do 50 RSD po kliku</strong> za većinu industrija, uz minimalni mesečni budžet od <strong>€200-400</strong> da biste videli merljive rezultate. Konačna cena zavisi od industrije i konkurencije - usluge i B2B plaćaju više od maloprodaje.
         </p>
       </div>
 
@@ -66,10 +66,10 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <h2 id="koliko-zaista-kosta-google-ads-u-srbiji">Koliko zaista košta Google Ads u Srbiji</h2>
       <p>
-        &quot;Koliko košta Google Ads?&quot; — ovo je prvo pitanje koje čujem od svakog direktora marketinga ili vlasnika firme koji razmišlja o plaćenom oglašavanju. I razumem frustraciju — Google vam neće dati jasan odgovor, a većina sadržaja na ovu temu dolazi iz SAD-a gde su cene potpuno drugačije.
+        &quot;Koliko košta Google Ads?&quot; - ovo je prvo pitanje koje čujem od svakog direktora marketinga ili vlasnika firme koji razmišlja o plaćenom oglašavanju. I razumem frustraciju - Google vam neće dati jasan odgovor, a većina sadržaja na ovu temu dolazi iz SAD-a gde su cene potpuno drugačije.
       </p>
       <p>
-        Problem je što ne postoji jednostavan odgovor tipa &quot;košta X dinara mesečno&quot;. Cena Google Ads-a zavisi od desetak faktora — od vaše industrije, preko konkurencije, do kvaliteta vaših kampanja.
+        Problem je što ne postoji jednostavan odgovor tipa &quot;košta X dinara mesečno&quot;. Cena Google Ads-a zavisi od desetak faktora - od vaše industrije, preko konkurencije, do kvaliteta vaših kampanja.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -83,16 +83,16 @@ export default function KolikoKostaGoogleAdsPost() {
 
       <h2 id="kako-google-ads-naplacuje">Kako Google Ads naplaćuje</h2>
       <p>
-        Google Ads koristi <strong>aukcijski sistem</strong>. Svaki put kada neko ukuca pretragu, dešava se mini-aukcija između oglašivača koji ciljaju tu ključnu reč. Vi plaćate samo kada neko klikne na vaš oglas — otuda naziv PPC (pay-per-click).
+        Google Ads koristi <strong>aukcijski sistem</strong>. Svaki put kada neko ukuca pretragu, dešava se mini-aukcija između oglašivača koji ciljaju tu ključnu reč. Vi plaćate samo kada neko klikne na vaš oglas - otuda naziv PPC (pay-per-click).
       </p>
 
       <h3>Od čega zavisi cena po kliku (CPC)</h3>
       <ul>
-        <li><strong>Konkurencija</strong> — što više oglašivača cilja istu ključnu reč, veća je cena</li>
-        <li><strong><GlossaryLink slug="quality-score">Quality Score</GlossaryLink></strong> — Google ocenjuje relevantnost vašeg oglasa i landing page-a (1-10). Viši skor = niža cena</li>
-        <li><strong>Pozicija oglasa</strong> — prva pozicija košta više od četvrte</li>
-        <li><strong>Industrija</strong> — osiguranje i advokati plaćaju 10x više od prodavnica odeće</li>
-        <li><strong>Geografija</strong> — Srbija je jeftinija od Nemačke, ali skuplja od Makedonije</li>
+        <li><strong>Konkurencija</strong> - što više oglašivača cilja istu ključnu reč, veća je cena</li>
+        <li><strong><GlossaryLink slug="quality-score">Quality Score</GlossaryLink></strong> - Google ocenjuje relevantnost vašeg oglasa i landing page-a (1-10). Viši skor = niža cena</li>
+        <li><strong>Pozicija oglasa</strong> - prva pozicija košta više od četvrte</li>
+        <li><strong>Industrija</strong> - osiguranje i advokati plaćaju 10x više od prodavnica odeće</li>
+        <li><strong>Geografija</strong> - Srbija je jeftinija od Nemačke, ali skuplja od Makedonije</li>
       </ul>
       <p className="text-base text-gray-500 mt-3">
         Više o aukcijskom sistemu pročitajte u{" "}
@@ -104,19 +104,19 @@ export default function KolikoKostaGoogleAdsPost() {
       <h3>Modeli naplate u Google Ads-u</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC — cena po kliku</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">CPC - cena po kliku</h3>
           <p className="text-base text-gray-600 mb-0">Plaćate kada neko klikne na oglas. Najčešći model za Search i Shopping kampanje.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">CPM — cena po 1.000 prikaza</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">CPM - cena po 1.000 prikaza</h3>
           <p className="text-base text-gray-600 mb-0">Plaćate za vidljivost, ne klikove. Koristi se za Display i YouTube kampanje.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">CPV — cena po pregledu videa</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">CPV - cena po pregledu videa</h3>
           <p className="text-base text-gray-600 mb-0">Plaćate kada neko pogleda vaš video oglas. Specifično za YouTube.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">CPA — cena po konverziji</h3>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">CPA - cena po konverziji</h3>
           <p className="text-base text-gray-600 mb-0">Napredni model gde plaćate po ostvarenoj akciji. Zahteva dovoljno podataka.</p>
         </div>
       </div>
@@ -138,12 +138,12 @@ export default function KolikoKostaGoogleAdsPost() {
           </thead>
           <tbody>
             <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">eCommerce — moda</td>
+              <td className="py-3 px-3 font-medium">eCommerce - moda</td>
               <td className="py-3 px-3">€0.15 - €0.40</td>
               <td className="py-3 px-3">€0.08 - €0.80</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">eCommerce — elektronika</td>
+              <td className="py-3 px-3 font-medium">eCommerce - elektronika</td>
               <td className="py-3 px-3">€0.20 - €0.50</td>
               <td className="py-3 px-3">€0.10 - €1.00</td>
             </tr>
@@ -201,17 +201,17 @@ export default function KolikoKostaGoogleAdsPost() {
       <h3>Zašto je raspon toliko širok</h3>
       <p>CPC od €0.08 do €3.00 u istoj industriji deluje apsurdno. Ali razlika je u:</p>
       <ul>
-        <li><strong>Ključnim rečima</strong> — brendirani termini su jeftiniji od generičkih</li>
-        <li><strong>Nameri pretrage</strong> — &quot;kupi patike online&quot; košta više od &quot;koje patike su u modi&quot;</li>
-        <li><strong>Kvalitetu naloga</strong> — optimizovan nalog plaća i 50% manje</li>
-        <li><strong>Vremenu</strong> — Black Friday vs. februar</li>
+        <li><strong>Ključnim rečima</strong> - brendirani termini su jeftiniji od generičkih</li>
+        <li><strong>Nameri pretrage</strong> - &quot;kupi patike online&quot; košta više od &quot;koje patike su u modi&quot;</li>
+        <li><strong>Kvalitetu naloga</strong> - optimizovan nalog plaća i 50% manje</li>
+        <li><strong>Vremenu</strong> - Black Friday vs. februar</li>
       </ul>
 
       <hr />
 
       <h2 id="minimalni-budzet-koji-ima-smisla">Minimalni budžet koji ima smisla</h2>
       <p>
-        Pitanje koje čujem stalno: &quot;Mogu li da počnem sa €100 mesečno?&quot; Tehnički — da. Praktično — zavisi.
+        Pitanje koje čujem stalno: &quot;Mogu li da počnem sa €100 mesečno?&quot; Tehnički - da. Praktično - zavisi.
       </p>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
@@ -347,28 +347,28 @@ export default function KolikoKostaGoogleAdsPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div>
               <strong>Poznajte prosečnu vrednost kupca</strong>
-              <span className="text-gray-500"> — <GlossaryLink slug="aov">AOV</GlossaryLink>, marža po porudžbini, <GlossaryLink slug="ltv">LTV</GlossaryLink> za povratne kupce</span>
+              <span className="text-gray-500"> - <GlossaryLink slug="aov">AOV</GlossaryLink>, marža po porudžbini, <GlossaryLink slug="ltv">LTV</GlossaryLink> za povratne kupce</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div>
               <strong>Definišite maksimalni CPA</strong>
-              <span className="text-gray-500"> — koliko možete platiti za konverziju i ostati profitabilni</span>
+              <span className="text-gray-500"> - koliko možete platiti za konverziju i ostati profitabilni</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div>
               <strong>Procenite conversion rate</strong>
-              <span className="text-gray-500"> — eCommerce: 1-3%, Lead gen: 2-8%, B2B: 2-5%</span>
+              <span className="text-gray-500"> - eCommerce: 1-3%, Lead gen: 2-8%, B2B: 2-5%</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
             <div>
               <strong>Izračunajte break-even CPC</strong>
-              <span className="text-gray-500"> — Maksimalni CPA × Conversion Rate</span>
+              <span className="text-gray-500"> - Maksimalni CPA × Conversion Rate</span>
             </div>
           </div>
         </div>
@@ -452,14 +452,14 @@ export default function KolikoKostaGoogleAdsPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Preskočite ako...</p>
           <p className="font-semibold mb-2">Marže su ispod 20% ili nema dovoljno potražnje</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0">Sa niskim maržama je teško biti profitabilan. A ako niko ne pretražuje vaš proizvod, Search kampanje neće raditi — razmislite o Display ili Social oglašavanju.</p>
+            <p className="text-base text-green-800 mb-0">Sa niskim maržama je teško biti profitabilan. A ako niko ne pretražuje vaš proizvod, Search kampanje neće raditi - razmislite o Display ili Social oglašavanju.</p>
           </div>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Preskočite ako...</p>
           <p className="font-semibold mb-2">Sajt nije spreman ili nemate budžet za 3-6 meseci</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0">Loš UX ubija i najbolje kampanje. A rezultati ne dolaze preko noći — potrebna su bar 2-3 meseca za optimizaciju.</p>
+            <p className="text-base text-green-800 mb-0">Loš UX ubija i najbolje kampanje. A rezultati ne dolaze preko noći - potrebna su bar 2-3 meseca za optimizaciju.</p>
           </div>
         </div>
       </div>
@@ -496,7 +496,7 @@ export default function KolikoKostaGoogleAdsPost() {
           Želite da znate koliko bi Google Ads koštao za vaš biznis?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Analiziraćemo vašu industriju, konkurenciju i potencijalni ROI — besplatno, bez obaveza.
+          Analiziraćemo vašu industriju, konkurenciju i potencijalni ROI - besplatno, bez obaveza.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju
@@ -550,7 +550,7 @@ export default function KolikoKostaGoogleAdsPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Generalno da, CPC na Google-u je viši. Ali intent korisnika je jači — neko ko pretražuje &quot;kupi X&quot; je bliži kupovini od nekoga ko scrolla Instagram. Više o ovome u{" "}
+            Generalno da, CPC na Google-u je viši. Ali intent korisnika je jači - neko ko pretražuje &quot;kupi X&quot; je bliži kupovini od nekoga ko scrolla Instagram. Više o ovome u{" "}
             <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta" } }} className="underline">Google Ads vs Meta Ads poređenju</Link>.
           </div>
         </details>

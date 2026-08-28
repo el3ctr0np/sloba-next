@@ -285,7 +285,7 @@ const getChapters = (locale: string): Chapter[] => {
         {
           title: "Kako Početi sa Google Ads: Vodič za Početnike [2026]",
           excerpt:
-            "Korak po korak vodič od nule do prve kampanje — tipovi, budžet, ključne reči i greške.",
+            "Korak po korak vodič od nule do prve kampanje - tipovi, budžet, ključne reči i greške.",
           slug: "kako-poceti-google-ads",
           readTime: "14 min"
         },
@@ -319,7 +319,7 @@ const getChapters = (locale: string): Chapter[] => {
       number: 2,
       title: "Ključne Reči i Targeting",
       description:
-        "Osnova svake uspešne kampanje — kako pronaći prave reči i eliminisati otpad. Naučite istraživanje ključnih reči, kreiranje lista negativnih ključnih reči i poboljšanje Quality Score-a za niži CPC.",
+        "Osnova svake uspešne kampanje - kako pronaći prave reči i eliminisati otpad. Naučite istraživanje ključnih reči, kreiranje lista negativnih ključnih reči i poboljšanje Quality Score-a za niži CPC.",
       level: "Početnik → Srednji",
       levelColor: "bg-blue-100 text-blue-800",
       posts: [
@@ -351,7 +351,7 @@ const getChapters = (locale: string): Chapter[] => {
       number: 3,
       title: "Tipovi Kampanja",
       description:
-        "Search, Shopping, PMax — koji tip kampanje je pravi za vaš biznis. Uporedite Google Shopping, Performance Max i klasične Search kampanje, plus razlike između eCommerce i B2B strategija.",
+        "Search, Shopping, PMax - koji tip kampanje je pravi za vaš biznis. Uporedite Google Shopping, Performance Max i klasične Search kampanje, plus razlike između eCommerce i B2B strategija.",
       level: "Srednji",
       levelColor: "bg-yellow-100 text-yellow-800",
       posts: [
@@ -372,7 +372,7 @@ const getChapters = (locale: string): Chapter[] => {
         {
           title: "Google Ads vs Meta Ads: Šta je Bolje za Vaš Biznis?",
           excerpt:
-            "Kada koristiti koji kanal — razlike u targetingu, troškovima i ROI-u.",
+            "Kada koristiti koji kanal - razlike u targetingu, troškovima i ROI-u.",
           slug: "google-ads-vs-meta",
           readTime: "9 min"
         },
@@ -446,7 +446,7 @@ const getChapters = (locale: string): Chapter[] => {
         {
           title: "Google Ads Optimizacija: 20 Grešaka Koje Vas Koštaju Novca",
           excerpt:
-            "Najčešće greške u strukturi, bidding-u i landing page-ovima — i kako ih ispraviti.",
+            "Najčešće greške u strukturi, bidding-u i landing page-ovima - i kako ih ispraviti.",
           slug: "google-ads-greske",
           readTime: "13 min"
         },
@@ -470,9 +470,9 @@ const getChapters = (locale: string): Chapter[] => {
       levelColor: "bg-purple-100 text-purple-800",
       posts: [
         {
-          title: "Google API Pristupi za PPC Agencije — Kompletan Setup Vodič [2026]",
+          title: "Google API Pristupi za PPC Agencije - Kompletan Setup Vodič [2026]",
           excerpt:
-            "Jedan Cloud projekat za Ads, GA4, Search Console, Tag Manager i Merchant Center — sa OAuth lekcijama iz prakse.",
+            "Jedan Cloud projekat za Ads, GA4, Search Console, Tag Manager i Merchant Center - sa OAuth lekcijama iz prakse.",
           slug: "google-api-pristupi-za-agencije",
           readTime: "13 min"
         },
@@ -486,7 +486,7 @@ const getChapters = (locale: string): Chapter[] => {
         {
           title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",
           excerpt:
-            "Neka algoritam uči na zatvorenim poslovima umesto na formama — GCLID, Enhanced Conversions for Leads i CRM setup.",
+            "Neka algoritam uči na zatvorenim poslovima umesto na formama - GCLID, Enhanced Conversions for Leads i CRM setup.",
           slug: "offline-conversion-import-b2b",
           readTime: "13 min"
         }
@@ -626,7 +626,7 @@ export default async function BlogPage({ params }: Props) {
     description:
       locale === "en"
         ? "Complete collection of Google Ads guides — from basics to advanced campaign optimization strategies."
-        : "Kompletna kolekcija Google Ads vodiča — od osnova do naprednih strategija za optimizaciju kampanja.",
+        : "Kompletna kolekcija Google Ads vodiča - od osnova do naprednih strategija za optimizaciju kampanja.",
     numberOfItems: totalPosts,
     itemListElement: allPosts.map((post, index) => ({
       "@type": "ListItem",
@@ -701,7 +701,7 @@ export default async function BlogPage({ params }: Props) {
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
             {locale === "en"
               ? "From complete beginner to advanced advertiser — everything you need to know about Google Ads, in one place."
-              : "Od potpunog početnika do naprednog advertisera — sve što treba da znate o Google Ads-u, na jednom mestu."}
+              : "Od potpunog početnika do naprednog advertisera - sve što treba da znate o Google Ads-u, na jednom mestu."}
           </p>
           <div className="grid grid-cols-3 gap-6 max-w-md mx-auto">
             <div>
@@ -746,7 +746,7 @@ export default async function BlogPage({ params }: Props) {
             ) : (
               <>
                 Ovaj <strong>Google Ads vodič</strong> je osmišljen da vam pomogne da savladate
-                Google oglašavanje korak po korak — bez obzira da li tek počinjete ili već
+                Google oglašavanje korak po korak - bez obzira da li tek počinjete ili već
                 imate iskustva sa plaćenim kampanjama. Svaki vodič je pisan na osnovu
                 realnog iskustva sa klijentima u Srbiji, UK i EU.
               </>

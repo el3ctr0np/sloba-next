@@ -159,7 +159,7 @@ const faqSchemaGoogleVsMetaSR = {
       name: "Koji kanal je bolji za početnike?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Google Search je obično lakši za merenje direktnog ROI-a jer korisnici imaju visoku nameru. Meta zahteva jaku kreativu i dublje razumevanje audience-a. Ali zavisi od vašeg biznisa — ako prodajete vizuelno privlačne proizvode, Meta može biti prirodniji početak."
+        text: "Google Search je obično lakši za merenje direktnog ROI-a jer korisnici imaju visoku nameru. Meta zahteva jaku kreativu i dublje razumevanje audience-a. Ali zavisi od vašeg biznisa - ako prodajete vizuelno privlačne proizvode, Meta može biti prirodniji početak."
       }
     },
     {
@@ -175,12 +175,12 @@ const faqSchemaGoogleVsMetaSR = {
       name: "Da li mi treba agencija koja radi obe platforme?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Idealno da, jer strategija treba biti koordinisana — Meta puni levak, Google zatvara prodaje, remarketing se overlap-uje. Ali specijalizovani freelanceri ili manje agencije za svaki kanal mogu biti bolji u egzekuciji od generalist agencije koja radi sve."
+        text: "Idealno da, jer strategija treba biti koordinisana - Meta puni levak, Google zatvara prodaje, remarketing se overlap-uje. Ali specijalizovani freelanceri ili manje agencije za svaki kanal mogu biti bolji u egzekuciji od generalist agencije koja radi sve."
       }
     },
     {
       "@type": "Question",
-      name: "Šta ako moj proizvod nije vizuelan — da li Meta ima smisla?",
+      name: "Šta ako moj proizvod nije vizuelan - da li Meta ima smisla?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Meta i dalje može raditi kroz UGC content, testimonijale, before/after comparison, ili storytelling videe. B2B SaaS i tehnički proizvodi uspešno koriste Meta za thought leadership i webinar promocije. Ali realno, ako nemate vizuelnu priču, Google će verovatno biti efikasniji kanal."
@@ -199,7 +199,7 @@ const faqSchemaGoogleVsMetaSR = {
       name: "Da li Facebook Ads još uvek rade posle iOS 14 update-a?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Da, ali nisu isti kao pre. iOS 14+ je smanjio tracking mogućnosti, što otežava atribuciju i targetiranje. Ali Meta i dalje radi — samo zahteva drugačiji pristup (Conversions API, server-side tracking, širi targeting). Mnogi biznisi i dalje imaju profitabilne Meta kampanje, posebno za remarketing i brand awareness."
+        text: "Da, ali nisu isti kao pre. iOS 14+ je smanjio tracking mogućnosti, što otežava atribuciju i targetiranje. Ali Meta i dalje radi - samo zahteva drugačiji pristup (Conversions API, server-side tracking, širi targeting). Mnogi biznisi i dalje imaju profitabilne Meta kampanje, posebno za remarketing i brand awareness."
       }
     }
   ]
@@ -309,7 +309,7 @@ const faqSchemaRemarketingSR = {
       name: "Koja je razlika između remarketing-a i retargeting-a?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Praktično nikakva. Google koristi termin 'remarketing', Meta (Facebook/Instagram) koristi 'retargeting'. Princip je identičan — prikazujete oglase ljudima koji su već bili u kontaktu sa vašim biznisom."
+        text: "Praktično nikakva. Google koristi termin 'remarketing', Meta (Facebook/Instagram) koristi 'retargeting'. Princip je identičan - prikazujete oglase ljudima koji su već bili u kontaktu sa vašim biznisom."
       }
     },
     {
@@ -395,7 +395,7 @@ const faqSchemaKolikoKostaSR = {
       name: "Koliko košta Google Ads oglašavanje u Srbiji?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Google Ads u Srbiji košta od 15 do 50 RSD po kliku za većinu industrija, uz minimalni mesečni budžet od €200-400 da biste videli merljive rezultate. Konačna cena zavisi od industrije i konkurencije — usluge i B2B plaćaju više od maloprodaje."
+        text: "Google Ads u Srbiji košta od 15 do 50 RSD po kliku za većinu industrija, uz minimalni mesečni budžet od €200-400 da biste videli merljive rezultate. Konačna cena zavisi od industrije i konkurencije - usluge i B2B plaćaju više od maloprodaje."
       }
     },
     {
@@ -435,7 +435,7 @@ const faqSchemaKolikoKostaSR = {
       name: "Da li Google Ads košta više nego Meta Ads?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Generalno da, CPC na Google-u je viši. Ali intent korisnika je jači — neko ko pretražuje 'kupi X' je bliži kupovini od nekoga ko scrolla Instagram."
+        text: "Generalno da, CPC na Google-u je viši. Ali intent korisnika je jači - neko ko pretražuje 'kupi X' je bliži kupovini od nekoga ko scrolla Instagram."
       }
     }
   ]
@@ -504,11 +504,11 @@ const faqSchemaKljucneReciSR = {
   mainEntity: [
     { "@type": "Question", name: "Šta su ključne reči za Google oglašavanje?", acceptedAnswer: { "@type": "Answer", text: "Ključne reči su reči i fraze koje dodajete u Google Ads kampanju da bi se vaš oglas prikazao kada ih korisnici pretražuju. One određuju ko vidi oglas, koliko plaćate po kliku i kakav Quality Score dobijate. Kontrolišu se preko tri match type-a: Exact, Phrase i Broad." } },
     { "@type": "Question", name: "Koliko ključnih reči je potrebno za početak?", acceptedAnswer: { "@type": "Answer", text: "Za jednu kampanju: 30-50 ključnih reči organizovanih u 3-5 Ad Groups. Bolje je početi sa manje i proširiti na osnovu podataka nego pokrenuti previše odjednom bez fokusa." } },
-    { "@type": "Question", name: "Exact ili Phrase match za početak kampanje?", acceptedAnswer: { "@type": "Answer", text: "Preporučujem Phrase match za početak. Daje dobar balans kontrole i discovery-ja — vidite šta ljudi zapravo traže. Exact match dodajte kasnije za dokazane performere." } },
-    { "@type": "Question", name: "Koliko često pregledati Search Terms?", acceptedAnswer: { "@type": "Answer", text: "Minimum jednom nedeljno. U prva 30 dana nove kampanje — svaka 2-3 dana. Za zrele kampanje sa niskim wasted spend-om, nedeljno je sasvim dovoljno." } },
-    { "@type": "Question", name: "Šta ako ključna reč ima 0 pretraga u Keyword Planner?", acceptedAnswer: { "@type": "Answer", text: "Može i dalje biti vredna. Keyword Planner potcenjuje volume za long-tail reči. Ako je relevantna i ima transakcijsku nameru, testirajte je — možda konvertuje odlično." } },
-    { "@type": "Question", name: "Da li targetirati brand imena konkurenata?", acceptedAnswer: { "@type": "Answer", text: "Opciono i zavisi od industrije. Može biti efektivno za dosezanje ljudi koji razmatraju alternative. Nikada ne koristite competitor brand u tekstu oglasa — fokusirajte se na diferencijaciju." } },
-    { "@type": "Question", name: "Kako prepoznati da je ključna reč loša?", acceptedAnswer: { "@type": "Answer", text: "100+ klikova bez konverzije ili 3x target CPA spend bez rezultata su jasni signali. Ali pre pauziranja, proverite i landing page i oglas — možda je problem tamo, ne u ključnoj reči." } },
+    { "@type": "Question", name: "Exact ili Phrase match za početak kampanje?", acceptedAnswer: { "@type": "Answer", text: "Preporučujem Phrase match za početak. Daje dobar balans kontrole i discovery-ja - vidite šta ljudi zapravo traže. Exact match dodajte kasnije za dokazane performere." } },
+    { "@type": "Question", name: "Koliko često pregledati Search Terms?", acceptedAnswer: { "@type": "Answer", text: "Minimum jednom nedeljno. U prva 30 dana nove kampanje - svaka 2-3 dana. Za zrele kampanje sa niskim wasted spend-om, nedeljno je sasvim dovoljno." } },
+    { "@type": "Question", name: "Šta ako ključna reč ima 0 pretraga u Keyword Planner?", acceptedAnswer: { "@type": "Answer", text: "Može i dalje biti vredna. Keyword Planner potcenjuje volume za long-tail reči. Ako je relevantna i ima transakcijsku nameru, testirajte je - možda konvertuje odlično." } },
+    { "@type": "Question", name: "Da li targetirati brand imena konkurenata?", acceptedAnswer: { "@type": "Answer", text: "Opciono i zavisi od industrije. Može biti efektivno za dosezanje ljudi koji razmatraju alternative. Nikada ne koristite competitor brand u tekstu oglasa - fokusirajte se na diferencijaciju." } },
+    { "@type": "Question", name: "Kako prepoznati da je ključna reč loša?", acceptedAnswer: { "@type": "Answer", text: "100+ klikova bez konverzije ili 3x target CPA spend bez rezultata su jasni signali. Ali pre pauziranja, proverite i landing page i oglas - možda je problem tamo, ne u ključnoj reči." } },
   ]
 };
 
@@ -533,12 +533,12 @@ const faqSchemaNegativneKljucneReciSR = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "Šta su negativne ključne reči?", acceptedAnswer: { "@type": "Answer", text: "Negativne ključne reči su reči i fraze za koje ne želite da se vaš Google Ads oglas prikazuje. Za razliku od regularnih ključnih reči koje privlače saobraćaj, negativne ga filtriraju i štite budžet od klikova bez namere kupovine. Bez njih, 20-40% budžeta obično odlazi na irelevantne pretrage." } },
-    { "@type": "Question", name: "Koliko negativnih ključnih reči je dovoljno?", acceptedAnswer: { "@type": "Answer", text: "Nema gornjeg limita. Tipično: 50-200 za starter listu, raste vremenom. Kvalitet je važniji od kvantiteta — bolje 50 pažljivo odabranih nego 500 nasumičnih." } },
-    { "@type": "Question", name: "Da li negativne ključne reči utiču na Quality Score?", acceptedAnswer: { "@type": "Answer", text: "Indirektno — da. Bolji CTR (manje irelevantnih prikaza) → bolji Expected CTR → bolji QS." } },
+    { "@type": "Question", name: "Koliko negativnih ključnih reči je dovoljno?", acceptedAnswer: { "@type": "Answer", text: "Nema gornjeg limita. Tipično: 50-200 za starter listu, raste vremenom. Kvalitet je važniji od kvantiteta - bolje 50 pažljivo odabranih nego 500 nasumičnih." } },
+    { "@type": "Question", name: "Da li negativne ključne reči utiču na Quality Score?", acceptedAnswer: { "@type": "Answer", text: "Indirektno - da. Bolji CTR (manje irelevantnih prikaza) → bolji Expected CTR → bolji QS." } },
     { "@type": "Question", name: "Mogu li slučajno blokirati dobre pretrage?", acceptedAnswer: { "@type": "Answer", text: "Da, to je realan rizik. Zato: (1) koristite podatke pre dodavanja, (2) proveravajte Search Terms nakon dodavanja, (3) budite pažljivi sa Broad negatives za kratke reči koje imaju više značenja." } },
     { "@type": "Question", name: "Koliko često pregledati i ažurirati negative liste?", acceptedAnswer: { "@type": "Answer", text: "Minimum: jednom nedeljno Search Terms review. Idealno u prva 30 dana: svaka 2-3 dana. Za zrele kampanje: nedeljno + mesečna deep dive + kvartalna kompletna revizija." } },
-    { "@type": "Question", name: "Da li postoje obavezne negativne ključne reči za svaki nalog?", acceptedAnswer: { "@type": "Answer", text: "Universal lista (besplatno, posao, DIY) je dobar starter za većinu biznisa. Ali uvek prilagodite svom biznisu — 'besplatno' možda nije negative ako nudite free trial ili besplatnu dostavu." } },
-    { "@type": "Question", name: "Negative Broad vs Negative Phrase — kada koji?", acceptedAnswer: { "@type": "Answer", text: "Broad: za opšte termine koje uvek želite blokirati (besplatno, posao) — pokriva sve pretrage sa tom reči. Phrase: za specifične fraze gde redosled ima značaj. Exact: retko — samo za vrlo specifične slučajeve." } },
+    { "@type": "Question", name: "Da li postoje obavezne negativne ključne reči za svaki nalog?", acceptedAnswer: { "@type": "Answer", text: "Universal lista (besplatno, posao, DIY) je dobar starter za većinu biznisa. Ali uvek prilagodite svom biznisu - 'besplatno' možda nije negative ako nudite free trial ili besplatnu dostavu." } },
+    { "@type": "Question", name: "Negative Broad vs Negative Phrase - kada koji?", acceptedAnswer: { "@type": "Answer", text: "Broad: za opšte termine koje uvek želite blokirati (besplatno, posao) - pokriva sve pretrage sa tom reči. Phrase: za specifične fraze gde redosled ima značaj. Exact: retko - samo za vrlo specifične slučajeve." } },
   ]
 };
 
@@ -563,11 +563,11 @@ const faqSchemaQualityScoreSR = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "Koji je dobar Quality Score?", acceptedAnswer: { "@type": "Answer", text: "7+ je dobar, 8-9 je odličan, 10 je idealan ali nije uvek potreban niti realan. Za branded ključne reči očekujte 8-10, za generičke komercijalne 6-8 je sasvim solidan rezultat." } },
-    { "@type": "Question", name: "Koliko brzo se Quality Score menja?", acceptedAnswer: { "@type": "Answer", text: "QS se ažurira na osnovu kumulativnih performansi, ali promene vidite postepeno — obično dani do nedelje. Veće promene (restrukturiranje Ad Groups, nove LP) zahtevaju više podataka da se reflektuju." } },
-    { "@type": "Question", name: "Da li QS utiče na Display i Shopping kampanje?", acceptedAnswer: { "@type": "Answer", text: "Display ima sličan ali manje transparentan sistem. Shopping nema klasičan QS — koristi feed quality, price competitiveness i seller ratings. PMax koristi interne signale koji nisu vidljivi." } },
+    { "@type": "Question", name: "Koliko brzo se Quality Score menja?", acceptedAnswer: { "@type": "Answer", text: "QS se ažurira na osnovu kumulativnih performansi, ali promene vidite postepeno - obično dani do nedelje. Veće promene (restrukturiranje Ad Groups, nove LP) zahtevaju više podataka da se reflektuju." } },
+    { "@type": "Question", name: "Da li QS utiče na Display i Shopping kampanje?", acceptedAnswer: { "@type": "Answer", text: "Display ima sličan ali manje transparentan sistem. Shopping nema klasičan QS - koristi feed quality, price competitiveness i seller ratings. PMax koristi interne signale koji nisu vidljivi." } },
     { "@type": "Question", name: "Mogu li imati visok QS i loše konverzije?", acceptedAnswer: { "@type": "Answer", text: "Da. QS meri relevantnost, ne kvalitet ponude. Možete imati savršeno relevantan oglas i LP za ponudu koja nije konkurentna. QS je samo deo jednačine." } },
     { "@type": "Question", name: "Zašto imam nizak QS za branded ključne reči?", acceptedAnswer: { "@type": "Answer", text: "Verovatno konkurenti bidduju na vaš brand. Branded reči bi trebalo da imaju QS 8-10. Proverite: da li je brand u headline-u oglasa, da li LP ima brand prominentno, da li ima tehničkih problema sa sajtom." } },
-    { "@type": "Question", name: "Da li pauziranje loših ključnih reči poboljšava QS ostalih?", acceptedAnswer: { "@type": "Answer", text: "Ne direktno — ne postoji account-level QS. Ali indirektno, bolji fokus na kvalitetne reči poboljšava ukupne performanse naloga što vremenom pomaže svim metrikama." } },
+    { "@type": "Question", name: "Da li pauziranje loših ključnih reči poboljšava QS ostalih?", acceptedAnswer: { "@type": "Answer", text: "Ne direktno - ne postoji account-level QS. Ali indirektno, bolji fokus na kvalitetne reči poboljšava ukupne performanse naloga što vremenom pomaže svim metrikama." } },
   ]
 };
 
@@ -590,7 +590,7 @@ const faqSchemaGoogleOglasavanjeSR = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "Koliko košta Google oglašavanje za firme?", acceptedAnswer: { "@type": "Answer", text: "Prosečan CPC u Srbiji je €0.10-0.80, u UK/DE €1-5+. Minimalni preporučeni mesečni budžet za kampanje je €300-500 za lokalne firme, €1,000+ za eCommerce. Uz to ide fee za upravljanje, na srpskom tržištu tipično €300-2.500/mesečno u zavisnosti od obima." } },
-    { "@type": "Question", name: "Koji tip Google kampanje je najbolji za moju firmu?", acceptedAnswer: { "@type": "Answer", text: "Search kampanje su najbolje za firme koje žele direktne upite/pozive. Shopping za eCommerce. Performance Max za kombinaciju kanala. Display za brand awareness. Zavisi od vašeg cilja — lead generation ili online prodaja." } },
+    { "@type": "Question", name: "Koji tip Google kampanje je najbolji za moju firmu?", acceptedAnswer: { "@type": "Answer", text: "Search kampanje su najbolje za firme koje žele direktne upite/pozive. Shopping za eCommerce. Performance Max za kombinaciju kanala. Display za brand awareness. Zavisi od vašeg cilja - lead generation ili online prodaja." } },
     { "@type": "Question", name: "Koliko dugo treba da se vide rezultati?", acceptedAnswer: { "@type": "Answer", text: "Prve konverzije obično za 2-4 nedelje. Puna optimizacija zahteva 60-90 dana jer Google algoritam treba podatke za učenje. B2B kampanje obično zahtevaju duži period (3-6 meseci) zbog dužeg sales cycle-a." } },
     { "@type": "Question", name: "Da li mi treba sajt za Google oglašavanje?", acceptedAnswer: { "@type": "Answer", text: "Da, sajt je obavezan za Google Ads. Trebate landing page koji je brz (ispod 3 sekunde), mobile-friendly i sa jasnim pozivom na akciju. Bez dobrog sajta, čak ni savršena kampanja neće doneti rezultate." } },
     { "@type": "Question", name: "Mogu li sam da vodim Google Ads ili mi treba stručnjak?", acceptedAnswer: { "@type": "Answer", text: "Možete početi sami sa manjim budžetom, ali bez iskustva obično potrošite 30-50% budžeta neoptimalno. Stručnjak se isplati kad mesečni ad spend pređe €500-1,000 jer uštede na optimizaciji obično pokrivaju fee." } },
@@ -614,12 +614,12 @@ const faqSchemaPerformanceMaxSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Šta je Performance Max kampanja?", acceptedAnswer: { "@type": "Answer", text: "Performance Max je AI-driven Google Ads kampanja koja automatski koristi sve Google kanale — Search, Shopping, Display, YouTube, Gmail i Discover — iz jedne kampanje. Najefektivnija je za multi-SKU eCommerce sa minimum 50 konverzija mesečno koje algoritam koristi za optimizaciju." } },
-    { "@type": "Question", name: "Da li Performance Max zamenjuje Search i Shopping kampanje?", acceptedAnswer: { "@type": "Answer", text: "Ne u potpunosti. PMax može da radi uz Search i Shopping. Google preporučuje kombinaciju — PMax za široku pokrivenost, Search za high-intent upite. Shopping sa PMax-om zahteva pažljivu asset group strukturu da se izbegne kanibalizacija." } },
-    { "@type": "Question", name: "Koliki budžet treba za Performance Max?", acceptedAnswer: { "@type": "Answer", text: "Minimum €30-50/dan (€900-1,500/mesečno). PMax koristi machine learning koji zahteva dovoljno podataka — ispod ovog budžeta algoritam nema dovoljno konverzija za optimizaciju. Za eCommerce sa 100+ proizvoda, preporučuje se €2,000+/mesečno." } },
+    { "@type": "Question", name: "Šta je Performance Max kampanja?", acceptedAnswer: { "@type": "Answer", text: "Performance Max je AI-driven Google Ads kampanja koja automatski koristi sve Google kanale - Search, Shopping, Display, YouTube, Gmail i Discover - iz jedne kampanje. Najefektivnija je za multi-SKU eCommerce sa minimum 50 konverzija mesečno koje algoritam koristi za optimizaciju." } },
+    { "@type": "Question", name: "Da li Performance Max zamenjuje Search i Shopping kampanje?", acceptedAnswer: { "@type": "Answer", text: "Ne u potpunosti. PMax može da radi uz Search i Shopping. Google preporučuje kombinaciju - PMax za široku pokrivenost, Search za high-intent upite. Shopping sa PMax-om zahteva pažljivu asset group strukturu da se izbegne kanibalizacija." } },
+    { "@type": "Question", name: "Koliki budžet treba za Performance Max?", acceptedAnswer: { "@type": "Answer", text: "Minimum €30-50/dan (€900-1,500/mesečno). PMax koristi machine learning koji zahteva dovoljno podataka - ispod ovog budžeta algoritam nema dovoljno konverzija za optimizaciju. Za eCommerce sa 100+ proizvoda, preporučuje se €2,000+/mesečno." } },
     { "@type": "Question", name: "Zašto PMax troši većinu budžeta na Display/YouTube?", acceptedAnswer: { "@type": "Answer", text: "Čest problem sa PMax-om. Rešenja: isključite URL expansion, dodajte negativne ključne reči (na nivou kampanje ili naloga, samostalno u interfejsu), uključite brand exclusions ako PMax kupuje vaš brend, napravite jače Search kampanje za iste ključne reči. PMax će trošiti gde mu je najjeftinije, ne nužno najefikasnije." } },
     { "@type": "Question", name: "Kako videti gde PMax prikazuje oglase?", acceptedAnswer: { "@type": "Answer", text: "Insights tab → Placement report (ograničen), Asset group performance. Za detaljnije: koristite URL-based conversion tracking ili GA4 da vidite koji kanali donose konverzije. Google namerno ograničava transparentnost PMax-a." } },
-    { "@type": "Question", name: "Kada NE koristiti Performance Max?", acceptedAnswer: { "@type": "Answer", text: "Kad imate mali budžet (ispod €500/mesečno), kad nemate conversion tracking, za čist brand awareness, ili kad trebate preciznu kontrolu nad ključnim rečima. PMax je automatizovan — ako želite potpunu kontrolu, Search i Shopping su bolji izbor." } },
+    { "@type": "Question", name: "Kada NE koristiti Performance Max?", acceptedAnswer: { "@type": "Answer", text: "Kad imate mali budžet (ispod €500/mesečno), kad nemate conversion tracking, za čist brand awareness, ili kad trebate preciznu kontrolu nad ključnim rečima. PMax je automatizovan - ako želite potpunu kontrolu, Search i Shopping su bolji izbor." } },
   ]
 };
 
@@ -670,7 +670,7 @@ const faqSchemaShoppingSR = {
     { "@type": "Question", name: "Da li mi treba Merchant Center za Google Shopping?", acceptedAnswer: { "@type": "Answer", text: "Da, Merchant Center je obavezan. Tu upload-ujete product feed sa svim informacijama o proizvodima (naziv, cena, slika, dostupnost). Bez MC-a ne možete pokrenuti Shopping kampanje." } },
     { "@type": "Question", name: "Koliko proizvoda treba imati za Google Shopping?", acceptedAnswer: { "@type": "Answer", text: "Nema minimuma, ali Shopping najbolje radi sa 50+ proizvoda. Sa manje od 20 proizvoda, budžet se brzo potroši na malo SKU-ova. Za optimalne rezultate, preporučuje se 100+ aktivnih proizvoda u feed-u." } },
     { "@type": "Question", name: "Zašto su moji Shopping oglasi odbijeni?", acceptedAnswer: { "@type": "Answer", text: "Najčešći razlozi: neusklađenost cena između sajta i feed-a, nedostajući GTIN/MPN, loše slike (watermark, tekst na slici), nedostajuće shipping informacije, ili kršenje Google Merchant Center politika." } },
-    { "@type": "Question", name: "Shopping vs Performance Max — šta je bolje za eCommerce?", acceptedAnswer: { "@type": "Answer", text: "Standard Shopping daje veću kontrolu i transparentnost. PMax daje širi reach ali manje kontrole. Idealna kombinacija: Standard Shopping za top proizvode + PMax za ostatak kataloga. Zavisi od budžeta i broja proizvoda." } },
+    { "@type": "Question", name: "Shopping vs Performance Max - šta je bolje za eCommerce?", acceptedAnswer: { "@type": "Answer", text: "Standard Shopping daje veću kontrolu i transparentnost. PMax daje širi reach ali manje kontrole. Idealna kombinacija: Standard Shopping za top proizvode + PMax za ostatak kataloga. Zavisi od budžeta i broja proizvoda." } },
     { "@type": "Question", name: "Kako optimizovati product feed za bolje rezultate?", acceptedAnswer: { "@type": "Answer", text: "Ključne optimizacije: 1) Title sa glavnom ključnom rečju na početku, 2) Visokokvalitetne slike na beloj pozadini, 3) Detaljan opis sa ključnim rečima, 4) Tačan product_type i google_product_category, 5) Redovno ažuriranje cena i dostupnosti." } },
   ]
 };
@@ -693,11 +693,11 @@ const faqSchemaAgencijaSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Agencija ili freelancer za Google Ads — šta izabrati?", acceptedAnswer: { "@type": "Answer", text: "Izbor zavisi pre svega od mesečnog budžeta. Freelancer je najbolji fit za budžete od €1,000-10,000 mesečno gde je bitna direktna komunikacija i fokus na jedan kanal. Agencija ima smisla od €5,000+ mesečno kad su potrebni multi-channel tim i skalabilnost. Fit je važniji od cene." } },
+    { "@type": "Question", name: "Agencija ili freelancer za Google Ads - šta izabrati?", acceptedAnswer: { "@type": "Answer", text: "Izbor zavisi pre svega od mesečnog budžeta. Freelancer je najbolji fit za budžete od €1,000-10,000 mesečno gde je bitna direktna komunikacija i fokus na jedan kanal. Agencija ima smisla od €5,000+ mesečno kad su potrebni multi-channel tim i skalabilnost. Fit je važniji od cene." } },
     { "@type": "Question", name: "Koliko košta Google Ads agencija?", acceptedAnswer: { "@type": "Answer", text: "U Srbiji: €300-2.500/mesečno, zavisno od veličine agencije i obima posla. U UK/USA: $500-3.000/mesečno za mid-range, $3.000-10.000+ za enterprise. Većina radi na fiksnom retainer-u ili procentu od ad spend-a (10-20%)." } },
-    { "@type": "Question", name: "Freelancer ili agencija — šta je bolje za mali biznis?", acceptedAnswer: { "@type": "Answer", text: "Za budžete do €1,000/mesečno ad spend, freelancer je obično bolji izbor — niži troškovi, direktna komunikacija, veća posvećenost. Agencija ima smisla kad trebate multi-channel pristup ili imate budžet €5.000+/mesečno." } },
+    { "@type": "Question", name: "Freelancer ili agencija - šta je bolje za mali biznis?", acceptedAnswer: { "@type": "Answer", text: "Za budžete do €1,000/mesečno ad spend, freelancer je obično bolji izbor - niži troškovi, direktna komunikacija, veća posvećenost. Agencija ima smisla kad trebate multi-channel pristup ili imate budžet €5.000+/mesečno." } },
     { "@type": "Question", name: "Kako prepoznati lošu Google Ads agenciju?", acceptedAnswer: { "@type": "Answer", text: "Red flags: ne daju pristup Google Ads nalogu, obećavaju garantovane rezultate, nemaju case studies, ne objašnjavaju strategiju, koriste samo Smart kampanje, ne postavljaju conversion tracking, ili zahtevaju dugoročne ugovore bez izlazne klauzule." } },
-    { "@type": "Question", name: "Da li mogu prebaciti nalog sa jedne agencije na drugu?", acceptedAnswer: { "@type": "Answer", text: "Da, vaš Google Ads nalog je vaš — agencija ima samo pristup. Proverite da je nalog registrovan na vašu email adresu. Pri prelasku, tražite full access od stare agencije, zadržite istoriju kampanja i konverzija, i napravite backup pre promena." } },
+    { "@type": "Question", name: "Da li mogu prebaciti nalog sa jedne agencije na drugu?", acceptedAnswer: { "@type": "Answer", text: "Da, vaš Google Ads nalog je vaš - agencija ima samo pristup. Proverite da je nalog registrovan na vašu email adresu. Pri prelasku, tražite full access od stare agencije, zadržite istoriju kampanja i konverzija, i napravite backup pre promena." } },
     { "@type": "Question", name: "Šta da tražim u ugovoru sa agencijom?", acceptedAnswer: { "@type": "Answer", text: "Ključne tačke: jasno definisan scope rada, mesečni reporting, pristup nalogu, otkazni rok (30 dana je fer), ko je vlasnik naloga, kakav je onboarding proces, i šta se dešava sa kampanjama po raskidu saradnje." } },
   ]
 };
@@ -720,9 +720,9 @@ const faqSchemaConversionTrackingSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Šta je conversion tracking?", acceptedAnswer: { "@type": "Answer", text: "Conversion tracking je sistem praćenja koji beleži šta korisnik uradi nakon klika na oglas — kupovinu, poziv, popunjenu formu. Postavlja se preko GTM-a, GA4 i Google Ads tagova i predstavlja osnovu na kojoj Smart Bidding algoritmi optimizuju kampanje. Bez tačnog tracking-a, oko 40% naloga optimizuje ka pogrešnim signalima i troši budžet naslepo." } },
-    { "@type": "Question", name: "Šta je conversion tracking i zašto je važan?", acceptedAnswer: { "@type": "Answer", text: "Conversion tracking prati akcije korisnika nakon klika na oglas — kupovinu, poziv, popunjavanje forme. Bez njega, Google ne zna koje ključne reči i oglasi donose rezultate, pa ne može optimizovati kampanje. To je osnova svake uspešne kampanje." } },
-    { "@type": "Question", name: "Google Tag vs GTM — šta koristiti?", acceptedAnswer: { "@type": "Answer", text: "Google Tag Manager (GTM) je uvek preporučen jer omogućava fleksibilnost bez menjanja koda sajta. Google Tag (gtag.js) je direktan ali zahteva developersku pomoć za svaku promenu. Za većinu biznisa, GTM je bolji izbor." } },
+    { "@type": "Question", name: "Šta je conversion tracking?", acceptedAnswer: { "@type": "Answer", text: "Conversion tracking je sistem praćenja koji beleži šta korisnik uradi nakon klika na oglas - kupovinu, poziv, popunjenu formu. Postavlja se preko GTM-a, GA4 i Google Ads tagova i predstavlja osnovu na kojoj Smart Bidding algoritmi optimizuju kampanje. Bez tačnog tracking-a, oko 40% naloga optimizuje ka pogrešnim signalima i troši budžet naslepo." } },
+    { "@type": "Question", name: "Šta je conversion tracking i zašto je važan?", acceptedAnswer: { "@type": "Answer", text: "Conversion tracking prati akcije korisnika nakon klika na oglas - kupovinu, poziv, popunjavanje forme. Bez njega, Google ne zna koje ključne reči i oglasi donose rezultate, pa ne može optimizovati kampanje. To je osnova svake uspešne kampanje." } },
+    { "@type": "Question", name: "Google Tag vs GTM - šta koristiti?", acceptedAnswer: { "@type": "Answer", text: "Google Tag Manager (GTM) je uvek preporučen jer omogućava fleksibilnost bez menjanja koda sajta. Google Tag (gtag.js) je direktan ali zahteva developersku pomoć za svaku promenu. Za većinu biznisa, GTM je bolji izbor." } },
     { "@type": "Question", name: "Šta su Enhanced Conversions?", acceptedAnswer: { "@type": "Answer", text: "Enhanced Conversions šalju hash-ovane korisničke podatke (email, telefon) Googleu za bolji matching. Poboljšavaju tracking tačnost za 5-15% posebno na iOS uređajima. Implementacija je jednostavna preko GTM-a ili Google Tag-a." } },
     { "@type": "Question", name: "Koliko konverzija treba za Smart Bidding?", acceptedAnswer: { "@type": "Answer", text: "Google-ova preporuka je oko 30 konverzija u poslednjih 30 dana za Target CPA i oko 50 za Target ROAS. Iz moje prakse, stabilnost počinje oko 30-50 konverzija mesečno. Ispod toga algoritam nema dovoljno podataka i rezultati su nepredvidivi. U tom slučaju koristite Manual CPC ili Maximize Clicks." } },
     { "@type": "Question", name: "Zašto se konverzije u Google Ads i GA4 ne poklapaju?", acceptedAnswer: { "@type": "Answer", text: "Za nove conversion actions Google Ads po default-u koristi data-driven atribuciju sa 30-dnevnim conversion window-om, a GA4 svoj data-driven model sa 90-dnevnim window-om. Razlikuje se i brojanje: Google Ads konverziju pripisuje datumu klika, GA4 je event-based i beleži svaki key event na datum događaja. Uvek uporedite iste periode i razumite razlike." } },
@@ -749,7 +749,7 @@ const faqSchemaGreskeSR = {
   mainEntity: [
     { "@type": "Question", name: "Koje su najčešće Google Ads greške?", acceptedAnswer: { "@type": "Answer", text: "Najčešće Google Ads greške su nestrukturirani nalozi (sve pomešano u jednoj kampanji), izostanak negativnih ključnih reči, loš conversion tracking i location targeting koji pušta saobraćaj van servisnog područja. Ove greške zajedno bacaju u proseku 30% mesečnog budžeta na neproduktivne klikove." } },
     { "@type": "Question", name: "Koja je najskuplja greška u Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Nedostatak negativnih ključnih reči. Bez njih, vaš budžet se troši na irelevantne pretrage. Prosečan nalog bez negativnih ključnih reči baca 20-40% budžeta na neproduktivne klikove. Redovna analiza search terms report-a je obavezna." } },
-    { "@type": "Question", name: "Da li broad match ključne reči treba koristiti?", acceptedAnswer: { "@type": "Answer", text: "Broad match može raditi uz Smart Bidding i dovoljno konverzija (30+/mesečno). Ali za manje naloge, phrase match i exact match daju bolju kontrolu. Najčešća greška je korišćenje broad match-a bez negativnih ključnih reči — to je recept za bacanje novca." } },
+    { "@type": "Question", name: "Da li broad match ključne reči treba koristiti?", acceptedAnswer: { "@type": "Answer", text: "Broad match može raditi uz Smart Bidding i dovoljno konverzija (30+/mesečno). Ali za manje naloge, phrase match i exact match daju bolju kontrolu. Najčešća greška je korišćenje broad match-a bez negativnih ključnih reči - to je recept za bacanje novca." } },
     { "@type": "Question", name: "Koliko ad grupa treba imati po kampnji?", acceptedAnswer: { "@type": "Answer", text: "5-20 ad grupa za većinu kampanja. Previše ad grupa (50+) otežava upravljanje i razređuje budžet. Premalo (1-2) znači lošu relevantnost. Svaka ad grupa treba imati tematski povezane ključne reči i odgovarajuće oglase." } },
     { "@type": "Question", name: "Zašto mi CTR opada iako ništa nisam menjao?", acceptedAnswer: { "@type": "Answer", text: "Najčešći razlozi: sezonalnost, novi konkurenti, ad fatigue (isti oglas predugo), promene u SERP layout-u, ili Quality Score pad. Rešenje: redovno osvežavajte oglase (svakih 4-6 nedelja), pratite Auction Insights i testirajte nove varijante." } },
     { "@type": "Question", name: "Da li treba koristiti sve Google Ads preporuke?", acceptedAnswer: { "@type": "Answer", text: "Ne. Mnoge preporuke služe Googleu da poveća vašu potrošnju. Ignorirajte: 'prebacite na broad match', 'povećajte budžet za 50%', auto-apply promene. Koristite: RSA preporuke za oglase, preporuke za negativne ključne reči, i tehnička poboljšanja." } },
@@ -776,8 +776,8 @@ const faqSchemaZastoNemaRezultataSR = {
   mainEntity: [
     { "@type": "Question", name: "Zašto Google Ads kampanja troši budžet ali nema konverzija?", acceptedAnswer: { "@type": "Answer", text: "Top 3 razloga: 1) Loš conversion tracking (ne pratite prave akcije), 2) Landing page ne konvertuje (spor, nejasan CTA, loš mobile), 3) Pogrešne ključne reči (privlačite ljude bez namere kupovine). Proverite ova tri pre bilo čega drugog." } },
     { "@type": "Question", name: "Koliko dugo čekati pre nego što zaustavim kampanju?", acceptedAnswer: { "@type": "Answer", text: "Minimum 2-3 nedelje sa dovoljnim budžetom (barem 100-200 klikova). Ako posle 500+ klikova nema ni jedne konverzije, problem je gotovo sigurno u landing page-u ili ponudi, ne u kampnji. Smart Bidding treba minimum 2-4 nedelje learning perioda." } },
-    { "@type": "Question", name: "Da li je moj budžet premali za rezultate?", acceptedAnswer: { "@type": "Answer", text: "Ako dnevni budžet ne pokriva barem 10-15 klikova, da — budžet je premali. Izračunajte: prosečan CPC × 15 = minimalni dnevni budžet. Za većinu industrija u Srbiji, €10-20/dan je minimum. Za UK/USA, $30-50/dan." } },
-    { "@type": "Question", name: "Zašto konkurenti imaju bolje pozicije od mene?", acceptedAnswer: { "@type": "Answer", text: "Ad Rank = Bid × Quality Score × očekivani uticaj assets-a (ranije extensions). Ako konkurent ima bolji QS (bolji oglas i LP), može platiti manje po kliku i imati višu poziciju. Proverite Quality Score — ako je ispod 6, tu je problem. Takođe proverite da koristite sve relevantne assets." } },
+    { "@type": "Question", name: "Da li je moj budžet premali za rezultate?", acceptedAnswer: { "@type": "Answer", text: "Ako dnevni budžet ne pokriva barem 10-15 klikova, da - budžet je premali. Izračunajte: prosečan CPC × 15 = minimalni dnevni budžet. Za većinu industrija u Srbiji, €10-20/dan je minimum. Za UK/USA, $30-50/dan." } },
+    { "@type": "Question", name: "Zašto konkurenti imaju bolje pozicije od mene?", acceptedAnswer: { "@type": "Answer", text: "Ad Rank = Bid × Quality Score × očekivani uticaj assets-a (ranije extensions). Ako konkurent ima bolji QS (bolji oglas i LP), može platiti manje po kliku i imati višu poziciju. Proverite Quality Score - ako je ispod 6, tu je problem. Takođe proverite da koristite sve relevantne assets." } },
   ]
 };
 
@@ -845,10 +845,10 @@ const faqSchemaKakoPocetiSR = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Da li se Google Ads isplati za male biznise?", acceptedAnswer: { "@type": "Answer", text: "Da, Google Ads je jedan od najisplativijih kanala za male biznise jer plaćate samo kada neko klikne na vaš oglas. Ključ je precizno targetiranje — koristite lokalne ključne reči, postavite geografski targeting i počnite sa budžetom od €10-20 dnevno. Mali biznisi sa lokalnom uslugom (vodoinstalater, šlep služba, stomatolog) često imaju najbolji ROI jer je konkurencija manja." } },
+    { "@type": "Question", name: "Da li se Google Ads isplati za male biznise?", acceptedAnswer: { "@type": "Answer", text: "Da, Google Ads je jedan od najisplativijih kanala za male biznise jer plaćate samo kada neko klikne na vaš oglas. Ključ je precizno targetiranje - koristite lokalne ključne reči, postavite geografski targeting i počnite sa budžetom od €10-20 dnevno. Mali biznisi sa lokalnom uslugom (vodoinstalater, šlep služba, stomatolog) često imaju najbolji ROI jer je konkurencija manja." } },
     { "@type": "Question", name: "Koliko vremena treba da se vide rezultati sa Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Prve klikove i posetioce videćete istog dana kad pokrenete kampanju. Međutim, za pouzdane podatke o konverzijama potrebno je 2-4 nedelje. Google-ov algoritam koristi prvih 14 dana za učenje (learning period), a prava optimizacija počinje posle 30 dana kada imate dovoljno podataka za donošenje odluka." } },
     { "@type": "Question", name: "Da li mogu sam da vodim Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Da, možete, ali budite spremni da uložite vreme u učenje. Google Skillshop nudi besplatnu sertifikaciju. Za jednostavne kampanje (jedan proizvod, jedna lokacija) DIY pristup funkcioniše. Za kompleksnije naloge (eCommerce sa 100+ proizvoda, višestruke lokacije, budžet preko €1000/mesec) stručnjak će vam uštedeti novac i vreme." } },
-    { "@type": "Question", name: "Koji je minimalni budžet za Google Ads u Srbiji?", acceptedAnswer: { "@type": "Answer", text: "Tehnički možete početi sa bilo kojim iznosom, ali preporučujem minimum €300-500 mesečno (€10-20 dnevno) za Srbiju. Ispod toga nemate dovoljno podataka za optimizaciju. CPC u Srbiji je obično €1-3 za većinu industrija, što znači da sa €10 dnevno dobijate 3-10 klikova — dovoljno za testiranje." } },
+    { "@type": "Question", name: "Koji je minimalni budžet za Google Ads u Srbiji?", acceptedAnswer: { "@type": "Answer", text: "Tehnički možete početi sa bilo kojim iznosom, ali preporučujem minimum €300-500 mesečno (€10-20 dnevno) za Srbiju. Ispod toga nemate dovoljno podataka za optimizaciju. CPC u Srbiji je obično €1-3 za većinu industrija, što znači da sa €10 dnevno dobijate 3-10 klikova - dovoljno za testiranje." } },
     { "@type": "Question", name: "Da li preporučujete Google Ads za svaki biznis?", acceptedAnswer: { "@type": "Answer", text: "Ne. Google Ads nije za svakoga. Ne preporučujem ako: nemate funkcionalan sajt sa jasnim pozivom na akciju, vaša usluga ima ekstremno nisku maržu, vaša ciljna grupa ne koristi Google za pretragu, ili nemate budžet za minimum 3 meseca testiranja. U tim slučajevima, SEO ili društvene mreže mogu biti bolji prvi korak." } },
   ]
 };
@@ -1092,7 +1092,7 @@ const howToSchemaAuditSR = {
   step: [
     { "@type": "HowToStep", name: "Search Terms Report (5 min)", text: "Pregledajte top 30 search terms po trošku za poslednjih 30 dana: da li su relevantni? Dodajte negativne ključne reči za sve irelevantne sa €10+ spend-om." },
     { "@type": "HowToStep", name: "Budget allocation (3 min)", text: "Proverite da li je profitabilna kampanja 'Limited by budget'. Realokujte budžet iz loših kampanja." },
-    { "@type": "HowToStep", name: "Conversion tracking check (5 min)", text: "Proverite da li tracking radi — uporedite Google Ads konverzije sa GA4/CRM-om (maksimalno 10-15% razlike je prihvatljivo)." },
+    { "@type": "HowToStep", name: "Conversion tracking check (5 min)", text: "Proverite da li tracking radi - uporedite Google Ads konverzije sa GA4/CRM-om (maksimalno 10-15% razlike je prihvatljivo)." },
     { "@type": "HowToStep", name: "Top keywords performance (5 min)", text: "Pregledajte top 15 keywords po trošku: da li je Quality Score 6+? Da li je CPA prihvatljiv? Pauzirajte keywords sa CPA 2x+ iznad targeta i 50+ klikova." },
     { "@type": "HowToStep", name: "Ad performance (4 min)", text: "Identifikujte Ad Groups sa CTR ispod 2% (Search) ili 0.5% (Display). Dopunite RSA sa više headlines ili kreirajte nove oglase." },
     { "@type": "HowToStep", name: "Assets aktivni (2 min)", text: "Proverite da li su svi assets (sitelinks, callouts, structured snippets) aktivni i serving. Dodajte ako fale." },
@@ -1150,11 +1150,11 @@ const howToSchemaOptimizacijaEN = {
 const howToSchemaKakoPocetiSR = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "Kako početi sa Google Ads — od nule do prve kampanje",
+  name: "Kako početi sa Google Ads - od nule do prve kampanje",
   step: [
     { "@type": "HowToStep", name: "Otvorite Google Ads nalog", text: "Idite na ads.google.com i registrujte se sa Gmail nalogom. Koristite Expert mode umesto automatskog podešavanja koje vodi ka Smart kampanjama sa manje kontrole." },
-    { "@type": "HowToStep", name: "Povežite sa Google Analytics 4", text: "U podešavanjima naloga povežite GA4 property. Ovo daje uvid u ponašanje korisnika nakon klika — bounce rate, vreme na stranici, putanju kroz sajt." },
-    { "@type": "HowToStep", name: "Postavite conversion tracking od prvog dana", text: "Najvažniji korak — bez praćenja konverzija vodite kampanju naslepo. Postavite tracking za svaki važan cilj: kupovinu, poziv, popunjeni formular." },
+    { "@type": "HowToStep", name: "Povežite sa Google Analytics 4", text: "U podešavanjima naloga povežite GA4 property. Ovo daje uvid u ponašanje korisnika nakon klika - bounce rate, vreme na stranici, putanju kroz sajt." },
+    { "@type": "HowToStep", name: "Postavite conversion tracking od prvog dana", text: "Najvažniji korak - bez praćenja konverzija vodite kampanju naslepo. Postavite tracking za svaki važan cilj: kupovinu, poziv, popunjeni formular." },
     { "@type": "HowToStep", name: "Istražite ključne reči", text: "Koristite Google Keyword Planner i fokusirajte se na ključne reči sa namerom kupovine. Za lokalne biznise dodajte geografske modifikatore (npr. 'vodoinstalater Beograd')." },
     { "@type": "HowToStep", name: "Kreirajte prvu Search kampanju", text: "Počnite jednostavno: jedna kampanja, jedna ad grupa, 10-15 usko povezanih ključnih reči, 2-3 oglasa. Koristite phrase ili exact match za početak." },
     { "@type": "HowToStep", name: "Postavite negativne ključne reči", text: "Odmah na startu blokirajte neodgovarajuće pretrage: 'besplatno', 'posao', 'karijera' i imena konkurenata ako ne ciljate konkurentski saobraćaj." },

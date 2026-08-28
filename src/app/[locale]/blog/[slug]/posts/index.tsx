@@ -150,7 +150,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-api-pristupi-za-agencije",
-    title: "Google API Pristupi za PPC Agencije — Kompletan Setup Vodič [2026]",
+    title: "Google API Pristupi za PPC Agencije - Kompletan Setup Vodič [2026]",
     date: "2026-07-11",
     dateModified: "2026-07-11",
     category: "Automatizacija",
@@ -227,14 +227,14 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-06",
     category: "Audit",
     metaDescription:
-      "Menjate Google Ads agenciju? Checklist šta proveriti PRE prekida (vlasništvo naloga, pristupi, izvoz istorije) i šta raditi u prvoj nedelji preuzimanja — bez naglih promena koje ugrožavaju rezultate.",
+      "Menjate Google Ads agenciju? Checklist šta proveriti PRE prekida (vlasništvo naloga, pristupi, izvoz istorije) i šta raditi u prvoj nedelji preuzimanja - bez naglih promena koje ugrožavaju rezultate.",
     featuredImage: "/blog/preuzimanje-google-ads-naloga.webp",
     readingTime: "14 min",
     content: <PreuzimanjeGoogleAdsNalogaSR />
   },
   {
     slug: "product-feed-srpski-ecommerce",
-    title: "Product Feed za Srpski eCommerce — Kompletan Vodič [2026]",
+    title: "Product Feed za Srpski eCommerce - Kompletan Vodič [2026]",
     date: "2026-07-04",
     dateModified: "2026-07-04",
     category: "Google Shopping",
@@ -246,7 +246,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "merchant-center-srbija-setup",
-    title: "Google Merchant Center za Srbiju — Kompletan Setup Vodič [2026]",
+    title: "Google Merchant Center za Srbiju - Kompletan Setup Vodič [2026]",
     date: "2026-07-03",
     dateModified: "2026-07-24",
     category: "Google Shopping",
@@ -258,12 +258,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-audit-checklist-srbija",
-    title: "Google Ads Audit Checklist 2026 — 50 Stavki [Srbija]",
+    title: "Google Ads Audit Checklist 2026 - 50 Stavki [Srbija]",
     date: "2026-05-09",
     dateModified: "2026-07-24",
     category: "Google Ads Audit",
     metaDescription:
-      "Konkretan checklist od 50 stavki za audit Google Ads naloga u Srbiji. 10 kategorija sa primerima iz prakse — eCommerce, B2B, lead-gen. Scoring sistem i 30-min brzi audit.",
+      "Konkretan checklist od 50 stavki za audit Google Ads naloga u Srbiji. 10 kategorija sa primerima iz prakse - eCommerce, B2B, lead-gen. Scoring sistem i 30-min brzi audit.",
     featuredImage: "/blog/google-ads-audit-checklist-srbija.webp",
     readingTime: "18 min",
     content: <GoogleAdsAuditChecklistSrbijaSR />
@@ -407,7 +407,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-12",
     category: "Optimizacija",
     metaDescription:
-      "Preko +20 taktika za bolje rezultate. Kompletan vodič — bid strategije, negativne ključne reči, Quality Score, landing page i A/B testiranje. Iz prakse sa 20+ klijenata.",
+      "Preko +20 taktika za bolje rezultate. Kompletan vodič - bid strategije, negativne ključne reči, Quality Score, landing page i A/B testiranje. Iz prakse sa 20+ klijenata.",
     featuredImage: "/blog/google-ads-optimizacija.webp",
     readingTime: "18 min",
     content: <GoogleAdsOptimizacijaSR />
@@ -455,7 +455,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Ads optimizacija",
     metaDescription:
-      "20 najčešćih Google Ads grešaka koje koštaju novac — od loše strukture, preko bidding grešaka, do propuštenih prilika. Proverite da li pravite neku od njih.",
+      "20 najčešćih Google Ads grešaka koje koštaju novac - od loše strukture, preko bidding grešaka, do propuštenih prilika. Proverite da li pravite neku od njih.",
     featuredImage: "/blog/google-ads-greske.webp",
     readingTime: "14 min",
     content: <GoogleAdsGreskeSR />
@@ -527,7 +527,7 @@ const srPosts: PostData[] = [
     dateModified: "2025-12-28",
     category: "Google Ads",
     metaDescription:
-      "Kompletan vodič za negative keywords u Google Ads — gotove liste po industrijama, strategija dodavanja i kako sprečiti bacanje budžeta na pogrešne pretrage.",
+      "Kompletan vodič za negative keywords u Google Ads - gotove liste po industrijama, strategija dodavanja i kako sprečiti bacanje budžeta na pogrešne pretrage.",
     featuredImage: "/blog/negativne-kljucne-reci.webp",
     readingTime: "12 min",
     content: <NegativeKeywordsVodicSR />
@@ -539,19 +539,19 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Kompletan vodič za Google Ads Quality Score — šta je, kako se računa i konkretne taktike za poboljšanje. Smanjite CPC i poboljšajte pozicije sa boljim QS.",
+      "Kompletan vodič za Google Ads Quality Score - šta je, kako se računa i konkretne taktike za poboljšanje. Smanjite CPC i poboljšajte pozicije sa boljim QS.",
     featuredImage: "/blog/quality-score-vodic.webp",
     readingTime: "11 min",
     content: <QualityScoreVodicSR />
   },
   {
     slug: "remarketing-vodic",
-    title: "Google Ads Remarketing Vodič 2026: 7 Audience Lista koje Smanje CPA za 50–70%",
+    title: "Google Ads Remarketing Vodič 2026: 7 Audience Lista koje Smanje CPA za 50-70%",
     date: "2026-01-27",
     dateModified: "2026-04-27",
     category: "Google Ads",
     metaDescription:
-      "Remarketing kampanje u Google Ads-u 2026: 7 proverenih audience lista (cart abandoners 7d, product viewers 30d, video viewers, customer match, lookalikes), GA4 integracija, i konkretan setup koji smanji CPA za 50–70% u prosečnom eCommerce nalogu.",
+      "Remarketing kampanje u Google Ads-u 2026: 7 proverenih audience lista (cart abandoners 7d, product viewers 30d, video viewers, customer match, lookalikes), GA4 integracija, i konkretan setup koji smanji CPA za 50-70% u prosečnom eCommerce nalogu.",
     featuredImage: "/blog/remarketing-vodic.webp",
     readingTime: "15 min",
     content: <RemarketingVodicSR />
@@ -563,7 +563,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-08-18",
     category: "Google Ads",
     metaDescription:
-      "Kako početi sa Google oglašavanjem od nule? Korak po korak vodič za početnike — tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
+      "Kako početi sa Google oglašavanjem od nule? Korak po korak vodič za početnike - tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
     featuredImage: "/blog/kako-poceti-google-ads.webp",
     readingTime: "14 min",
     content: <KakoPocetiGoogleAdsSR />

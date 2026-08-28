@@ -17,7 +17,7 @@ export default function GoogleAdsNovosti2026SR() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Sve Google Ads promene u 2026 na jednom mestu — Search, Shopping, PMax, AI Max, Merchant Center.
+          Sve Google Ads promene u 2026 na jednom mestu - Search, Shopping, PMax, AI Max, Merchant Center.
           Ažuriram ovaj post svakog meseca da ne moraš da pratiš 10 različitih blogova.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -39,12 +39,12 @@ export default function GoogleAdsNovosti2026SR() {
           </div>
         </div>
         <p className="text-sm text-slate-400 mt-6 mb-0 border-t border-slate-700 pt-4">
-          Bookmark ovu stranicu — ažuriram je svakog meseca sa svim relevantnim promenama.
+          Bookmark ovu stranicu - ažuriram je svakog meseca sa svim relevantnim promenama.
         </p>
       </div>
 
       <p>
-        Google Ads platforma se menja brže nego ikad. U 2026, između AI Max ekspanzije, Shopping lansiranja na novim tržištima, PMax transparentnosti i deprecation-a starih funkcija — teško je pratiti šta je bitno, a šta je samo šum. Ovaj post je moj odgovor na taj problem.
+        Google Ads platforma se menja brže nego ikad. U 2026, između AI Max ekspanzije, Shopping lansiranja na novim tržištima, PMax transparentnosti i deprecation-a starih funkcija - teško je pratiti šta je bitno, a šta je samo šum. Ovaj post je moj odgovor na taj problem.
       </p>
       <p>
         Radim Google Ads konsalting 10+ godina, upravljam sa 10+ naloga mesečno na tržištima od Srbije do UK i USA. Svaki mesec čitam sve što izlazi iz Google HQ-a, filtriram šta zaista utiče na kampanje, i upisujem ovde. Najnoviji mesec je uvek na vrhu. Ako želite da neko prati ove promene umesto vas i odmah ih primeni na vaš nalog, pogledajte našu uslugu{" "}
@@ -54,7 +54,7 @@ export default function GoogleAdsNovosti2026SR() {
       <hr />
 
       {/* ===== APRIL 2026 ===== */}
-      <h2>April 2026 — Novosti i Promene</h2>
+      <h2>April 2026 - Novosti i Promene</h2>
 
       {/* UPDATE 1 — Shopping 15 markets */}
       <div className="bg-white border-2 border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -63,14 +63,14 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-500 mt-1 mb-0">Objavljeno: 25. mart 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          Google Shopping — Lansiranje u 15 Novih Evropskih Tržišta
+          Google Shopping - Lansiranje u 15 Novih Evropskih Tržišta
         </h3>
         <p className="text-base text-gray-700 mb-3">
           Ovo je najveća Google Shopping ekspanzija od 2014. Google je 25. marta 2026 zvanično potvrdio proširenje Shopping Ads na 15 novih EMEA tržišta u dva talasa:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <p className="text-xs font-bold uppercase tracking-wide text-blue-700 mb-2">Phase 1 — Back-to-School (Q3 2026)</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-blue-700 mb-2">Phase 1 - Back-to-School (Q3 2026)</p>
             <ul className="text-base text-blue-900 space-y-1 mb-0">
               <li>Kipar</li>
               <li>Luksemburg</li>
@@ -81,7 +81,7 @@ export default function GoogleAdsNovosti2026SR() {
             </ul>
           </div>
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Phase 2 — Holiday Season (Q3-Q4 2026)</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Phase 2 - Holiday Season (Q3-Q4 2026)</p>
             <ul className="text-base text-green-900 space-y-1 mb-0">
               <li><strong>Srbija</strong></li>
               <li>Hrvatska</li>
@@ -93,7 +93,7 @@ export default function GoogleAdsNovosti2026SR() {
           </div>
         </div>
         <p className="text-base text-gray-600 mt-4 mb-0">
-          Ako imate eCommerce biznis u Srbiji ili regionu, priprema počinje odmah — ne u oktobru. Merchant Center setup, feed optimizacija i account review traže mesece.{" "}
+          Ako imate eCommerce biznis u Srbiji ili regionu, priprema počinje odmah - ne u oktobru. Merchant Center setup, feed optimizacija i account review traže mesece.{" "}
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
             className="underline font-medium text-blue-700"
@@ -110,10 +110,10 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-500 mt-1 mb-0">April 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          <GlossaryLink slug="pmax">PMax</GlossaryLink> Channel Performance Timeline — Nova Transparentnost
+          <GlossaryLink slug="pmax">PMax</GlossaryLink> Channel Performance Timeline - Nova Transparentnost
         </h3>
         <p className="text-base text-gray-700 mb-3">
-          Konačno. Google je uveo Channel Performance Timeline za Performance Max kampanje — sada možete videti kako svaki kanal doprinosi ukupnim rezultatima.
+          Konačno. Google je uveo Channel Performance Timeline za Performance Max kampanje - sada možete videti kako svaki kanal doprinosi ukupnim rezultatima.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-3">
           {["Search", "YouTube", "Display", "Discover", "Gmail", "Maps"].map((channel) => (
@@ -123,7 +123,7 @@ export default function GoogleAdsNovosti2026SR() {
           ))}
         </div>
         <p className="text-base text-gray-600 mt-4 mb-0">
-          Ovo je najbitniji PMax transparency update od lansiranja kampanjskog tipa 2021. Advertajzeri su godinama tražili da vide breakdown po kanalima — sada je to moguće. Pratite Channel Timeline nedeljno da identifikujete koji kanal troši budžet bez konverzija.
+          Ovo je najbitniji PMax transparency update od lansiranja kampanjskog tipa 2021. Advertajzeri su godinama tražili da vide breakdown po kanalima - sada je to moguće. Pratite Channel Timeline nedeljno da identifikujete koji kanal troši budžet bez konverzija.
         </p>
       </div>
 
@@ -131,7 +131,7 @@ export default function GoogleAdsNovosti2026SR() {
       <div className="bg-white border-2 border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-start gap-3 mb-3">
           <span className="flex-shrink-0 inline-block bg-orange-100 text-orange-700 text-xs font-bold px-2 py-1 rounded uppercase tracking-wide">Conversion Tracking</span>
-          <p className="text-xs text-gray-500 mt-1 mb-0">April–Jun 2026</p>
+          <p className="text-xs text-gray-500 mt-1 mb-0">April-Jun 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
           Google Unified <GlossaryLink slug="enhanced-conversions">Enhanced Conversions</GlossaryLink> Settings
@@ -139,7 +139,7 @@ export default function GoogleAdsNovosti2026SR() {
         <p className="text-base text-gray-700 mb-0">
           Google konsoliduje Web i Leads enhanced conversions u jedinstven setup interfejs. Prethodno odvojene postavke za web konverzije i lead konverzije sada se nalaze na jednom mestu.
           Implementacija u dva koraka: April 2026 (web) i Jun 2026 (leads).
-          Ako još niste podesili enhanced conversions — ovo je pravi trenutak. Enhanced conversions poboljšavaju tačnost merenja za 5-30% u zavisnosti od industrije.
+          Ako još niste podesili enhanced conversions - ovo je pravi trenutak. Enhanced conversions poboljšavaju tačnost merenja za 5-30% u zavisnosti od industrije.
         </p>
       </div>
 
@@ -154,7 +154,7 @@ export default function GoogleAdsNovosti2026SR() {
         </h3>
         <p className="text-base text-gray-700 mb-0">
           eCommerce prodavci sada mogu prikazati product ratings (zvezde i broj recenzija) direktno unutar YouTube Shorts oglasa. Ovo koristi podatke iz Google <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink> i Google Customer Reviews programa.
-          Relevantno za brendove koji imaju dobro ocenjene proizvode — social proof direktno u video formatu povećava CTR i smanjuje prepreke za kupovinu.
+          Relevantno za brendove koji imaju dobro ocenjene proizvode - social proof direktno u video formatu povećava CTR i smanjuje prepreke za kupovinu.
         </p>
       </div>
 
@@ -168,7 +168,7 @@ export default function GoogleAdsNovosti2026SR() {
           Merchant API Dostupan za Google Ads Scripts
         </h3>
         <p className="text-base text-gray-700 mb-0">
-          Programeri i agencije sada mogu koristiti Merchant Center API direktno kroz Google Ads Scripts — bez odvojenih OAuth tokena ili zasebnih projekata. Ovo otvara mogućnosti za automatizovano praćenje feed-a, alertove za disapproved proizvode, i upravljanje cenama direktno iz Ads skripti. Za agencije sa većim Shopping portfoliom, ovo je značajno ubrzanje radnog procesa.
+          Programeri i agencije sada mogu koristiti Merchant Center API direktno kroz Google Ads Scripts - bez odvojenih OAuth tokena ili zasebnih projekata. Ovo otvara mogućnosti za automatizovano praćenje feed-a, alertove za disapproved proizvode, i upravljanje cenama direktno iz Ads skripti. Za agencije sa većim Shopping portfoliom, ovo je značajno ubrzanje radnog procesa.
         </p>
       </div>
 
@@ -179,7 +179,7 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-500 mt-1 mb-0">Od 9. marta 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          Performance Planner — Delimičan Deprecation
+          Performance Planner - Delimičan Deprecation
         </h3>
         <p className="text-base text-gray-700 mb-3">
           Od 9. marta 2026, Display i Video kampanje više nisu podržane u Performance Planner-u. <GlossaryLink slug="impression-share">Impression share</GlossaryLink> metrika je takođe uklonjena iz Planner interfejsa.
@@ -193,7 +193,7 @@ export default function GoogleAdsNovosti2026SR() {
       <hr />
 
       {/* ===== MART 2026 ===== */}
-      <h2>Mart 2026 — Novosti i Promene</h2>
+      <h2>Mart 2026 - Novosti i Promene</h2>
 
       <div className="bg-white border-2 border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-start gap-3 mb-3">
@@ -201,7 +201,7 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-500 mt-1 mb-0">Mart 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          Google Ads Editor 2.12 — 15 Novih Funkcija
+          Google Ads Editor 2.12 - 15 Novih Funkcija
         </h3>
         <p className="text-base text-gray-700 mb-3">
           Biggest Editor release u 2026. Ključne promene po kampanjskom tipu:
@@ -210,14 +210,14 @@ export default function GoogleAdsNovosti2026SR() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">1</span>
             <div>
-              <strong className="text-sm">Performance Max — do 15 videa po asset grupi</strong>
+              <strong className="text-sm">Performance Max - do 15 videa po asset grupi</strong>
               <p className="text-xs text-gray-600 mt-0.5 mb-0">Prethodni limit bio je 5 videa. Sa 15, algoritam ima daleko više materijala za testiranje i optimizaciju u YouTube i Discovery placements-ima.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">2</span>
             <div>
-              <strong className="text-sm">Demand Gen kampanje — novi bulk editing alati</strong>
+              <strong className="text-sm">Demand Gen kampanje - novi bulk editing alati</strong>
               <p className="text-xs text-gray-600 mt-0.5 mb-0">Demand Gen dobija pun Editor support: bulk kreiranje i uređivanje oglasa, audience lista, i bid-ova. Ranije je to zahtevalo ručni rad u UI-ju.</p>
             </div>
           </div>
@@ -225,14 +225,14 @@ export default function GoogleAdsNovosti2026SR() {
             <span className="flex-shrink-0 w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">3</span>
             <div>
               <strong className="text-sm">Total Budgets za Search, PMax, Shopping (Open Beta)</strong>
-              <p className="text-xs text-gray-600 mt-0.5 mb-0">Total Budgets (ukupni budžet za ceo period kampanje) sada se mogu postavljati i upravljati direktno iz Editor-a — prethodno dostupno samo u online UI-ju od januara 2026.</p>
+              <p className="text-xs text-gray-600 mt-0.5 mb-0">Total Budgets (ukupni budžet za ceo period kampanje) sada se mogu postavljati i upravljati direktno iz Editor-a - prethodno dostupno samo u online UI-ju od januara 2026.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">4</span>
             <div>
               <strong className="text-sm">Cross-account campaign management poboljšanja</strong>
-              <p className="text-xs text-gray-600 mt-0.5 mb-0">MCC upravljanje kampanjama dobija poboljšane bulk operacije za naloge koji dele sličnu strukturu — releantno za agencije i white label setup-ove.</p>
+              <p className="text-xs text-gray-600 mt-0.5 mb-0">MCC upravljanje kampanjama dobija poboljšane bulk operacije za naloge koji dele sličnu strukturu - releantno za agencije i white label setup-ove.</p>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ export default function GoogleAdsNovosti2026SR() {
       <hr />
 
       {/* ===== FEBRUAR 2026 ===== */}
-      <h2>Februar 2026 — Novosti i Promene</h2>
+      <h2>Februar 2026 - Novosti i Promene</h2>
 
       <div className="bg-white border-2 border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-start gap-3 mb-3">
@@ -249,7 +249,7 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-500 mt-1 mb-0">26. februar 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          AI Max Text Guidelines — Global Beta za Sve Advertisere
+          AI Max Text Guidelines - Global Beta za Sve Advertisere
         </h3>
         <p className="text-base text-gray-700 mb-3">
           Google je 26. februara 2026 otvorio AI Max Text Guidelines za sve advertisere globalno (prethodno limited beta). Ovo je jedan od najvažnijih AI feature-a 2026 za Search i PMax kampanje.
@@ -257,11 +257,11 @@ export default function GoogleAdsNovosti2026SR() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
             <p className="text-xs font-bold uppercase tracking-wide text-indigo-700 mb-2">Text Customization</p>
-            <p className="text-base text-indigo-900 mb-0">AI automatski generiše headline-ove i description-e u realnom vremenu, prilagođene svakom upitu. Ne koristite iste oglase za svaku pretragu — AI varira kopiju prema kontekstu.</p>
+            <p className="text-base text-indigo-900 mb-0">AI automatski generiše headline-ove i description-e u realnom vremenu, prilagođene svakom upitu. Ne koristite iste oglase za svaku pretragu - AI varira kopiju prema kontekstu.</p>
           </div>
           <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
             <p className="text-xs font-bold uppercase tracking-wide text-indigo-700 mb-2">Text Guidelines (Kontrola)</p>
-            <p className="text-base text-indigo-900 mb-0">Definišete šta AI sme i ne sme da piše — term exclusions (npr. izbegavaj "jeftino" za luxury brendove) i messaging restrictions za konzistentan brand voice.</p>
+            <p className="text-base text-indigo-900 mb-0">Definišete šta AI sme i ne sme da piše - term exclusions (npr. izbegavaj "jeftino" za luxury brendove) i messaging restrictions za konzistentan brand voice.</p>
           </div>
         </div>
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
@@ -273,16 +273,16 @@ export default function GoogleAdsNovosti2026SR() {
       <hr />
 
       {/* ===== JANUAR 2026 ===== */}
-      <h2>Januar 2026 — Novosti i Promene</h2>
+      <h2>Januar 2026 - Novosti i Promene</h2>
 
       {/* UPDATE 1 — Total Budgets */}
       <div className="bg-white border-2 border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-start gap-3 mb-3">
           <span className="flex-shrink-0 inline-block bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded uppercase tracking-wide">Budžetiranje</span>
-          <p className="text-xs text-gray-500 mt-1 mb-0">Januar 2026 — Open Beta</p>
+          <p className="text-xs text-gray-500 mt-1 mb-0">Januar 2026 - Open Beta</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          Campaign Total Budgets — Open Beta
+          Campaign Total Budgets - Open Beta
         </h3>
         <p className="text-base text-gray-700 mb-3">
           Total Budgets ušao u open beta za Search, Performance Max i Shopping kampanje. Umesto dnevnog budžeta (koji se množi sa danima meseca), sada možete postaviti ukupan budžet za ceo period trajanja kampanje.
@@ -311,7 +311,7 @@ export default function GoogleAdsNovosti2026SR() {
           </table>
         </div>
         <p className="text-base text-gray-600 mt-3 mb-0">
-          Korisno za: Black Friday kampanje, product launch-eve, i bilo koji scenario gde imate fiksni marketing budžet za konkretan period — i ne želite da dnevni budžeti "ostanu" neistrošeni.
+          Korisno za: Black Friday kampanje, product launch-eve, i bilo koji scenario gde imate fiksni marketing budžet za konkretan period - i ne želite da dnevni budžeti "ostanu" neistrošeni.
         </p>
       </div>
 
@@ -322,10 +322,10 @@ export default function GoogleAdsNovosti2026SR() {
           <p className="text-xs text-gray-500 mt-1 mb-0">Januar 2026</p>
         </div>
         <h3 className="text-base md:text-lg font-heading font-bold mt-0 mb-2">
-          Universal Commerce Protocol — AI Agenti Kupuju Online
+          Universal Commerce Protocol - AI Agenti Kupuju Online
         </h3>
         <p className="text-base text-gray-700 mb-3">
-          Google je lansirao open-source standarde za AI agente koji autonomno izvršavaju kupovine u ime korisnika. Ovo nije science fiction — ovo je infrastruktura koja se gradi sada.
+          Google je lansirao open-source standarde za AI agente koji autonomno izvršavaju kupovine u ime korisnika. Ovo nije science fiction - ovo je infrastruktura koja se gradi sada.
         </p>
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mt-3">
           <p className="text-xs font-bold uppercase tracking-wide text-gray-600 mb-2">Partneri koji su pristupili protokolu</p>
@@ -339,14 +339,14 @@ export default function GoogleAdsNovosti2026SR() {
         </div>
         <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 mt-4">
           <p className="font-semibold text-yellow-900 text-sm mb-1">Šta ovo znači za advertisere?</p>
-          <p className="text-yellow-800 text-base mb-0">Ovo je početna faza "agentic commerce" ere. Danas: korisnik pretražuje, klika na oglas, kupuje. Sutra: AI agent pretražuje, evaluira, i kupuje automatski — bez klika. Google Shopping feed i dobro strukturirani proizvodni podaci biće osnova za vidljivost u ovim AI sistemima. Počnite sa feed optimizacijom danas.</p>
+          <p className="text-yellow-800 text-base mb-0">Ovo je početna faza "agentic commerce" ere. Danas: korisnik pretražuje, klika na oglas, kupuje. Sutra: AI agent pretražuje, evaluira, i kupuje automatski - bez klika. Google Shopping feed i dobro strukturirani proizvodni podaci biće osnova za vidljivost u ovim AI sistemima. Počnite sa feed optimizacijom danas.</p>
         </div>
       </div>
 
       <hr />
 
       {/* ===== ŠTA DOLAZI SLEDEĆE ===== */}
-      <h2>Šta Dolazi Sledeće — Najave za 2026</h2>
+      <h2>Šta Dolazi Sledeće - Najave za 2026</h2>
       <p>
         Na osnovu Google zvaničnih najava i obrazaca koje pratim, ovo su ključni datumi za ostatak 2026:
       </p>
@@ -359,7 +359,7 @@ export default function GoogleAdsNovosti2026SR() {
         </div>
         <div className="bg-white border-2 border-green-200 rounded-xl p-5 shadow-card">
           <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Q3-Q4 2026 (očekivano)</p>
-          <h3 className="text-sm font-heading font-bold mt-0 mb-2">Shopping u Srbiji — Live!</h3>
+          <h3 className="text-sm font-heading font-bold mt-0 mb-2">Shopping u Srbiji - Live!</h3>
           <p className="text-xs text-gray-600 mb-0">Phase 2: Srbija, Hrvatska, BiH, Slovenija, Crna Gora, Bugarska, Estonija, Letonija, Litvanija. Tačan datum još nije potvrđen, moguće pre Black Friday sezone ako lansiranje bude u Q4.</p>
         </div>
         <div className="bg-white border-2 border-purple-200 rounded-xl p-5 shadow-card">
@@ -372,7 +372,7 @@ export default function GoogleAdsNovosti2026SR() {
       <div className="bg-slate-900 text-white rounded-xl p-6 my-8">
         <p className="text-sm font-bold uppercase tracking-wide text-yellow-400 mb-2">Detaljan vodič za Shopping pripremu</p>
         <p className="text-base font-heading font-semibold mb-3">
-          Ako imate eCommerce biznis u Srbiji, pročitajte naš kompletan vodič za Google Shopping lansiranje — 15-korak checklist, Merchant Center setup, product feed optimizacija i lekcije iz UK tržišta.
+          Ako imate eCommerce biznis u Srbiji, pročitajte naš kompletan vodič za Google Shopping lansiranje - 15-korak checklist, Merchant Center setup, product feed optimizacija i lekcije iz UK tržišta.
         </p>
         <Link
           href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
@@ -389,7 +389,7 @@ export default function GoogleAdsNovosti2026SR() {
       <hr />
 
       {/* ===== FAQ ===== */}
-      <h2>FAQ — Česta Pitanja</h2>
+      <h2>FAQ - Česta Pitanja</h2>
 
       <script
         type="application/ld+json"
@@ -435,7 +435,7 @@ export default function GoogleAdsNovosti2026SR() {
                 name: "Da li ove promene utiču na moje postojeće kampanje?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Većina promena u 2026 su opt-in — morate ih aktivno uključiti da bi imale efekat. Prisilne promene su isključivo deprecation-i: Performance Planner Display/Video support je uklonjen od marta 2026. AI Max i Text Guidelines su opcioni ali preporučeni. Total Budgets su dostupni kao alternativa Daily Budgets-ima, ali ne zamenjuju postojeće kampanje automatski."
+                  text: "Većina promena u 2026 su opt-in - morate ih aktivno uključiti da bi imale efekat. Prisilne promene su isključivo deprecation-i: Performance Planner Display/Video support je uklonjen od marta 2026. AI Max i Text Guidelines su opcioni ali preporučeni. Total Budgets su dostupni kao alternativa Daily Budgets-ima, ali ne zamenjuju postojeće kampanje automatski."
                 }
               }
             ]
@@ -500,7 +500,7 @@ export default function GoogleAdsNovosti2026SR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Većina promena u 2026 su <strong>opt-in</strong> — morate ih aktivno uključiti da bi imale efekat. Prisilne promene su isključivo deprecation-i: Performance Planner Display/Video support je uklonjen od marta 2026. AI Max i Text Guidelines su opcioni ali preporučeni. Total Budgets su dostupni kao alternativa Daily Budgets-ima, ali ne zamenjuju postojeće kampanje automatski.
+            Većina promena u 2026 su <strong>opt-in</strong> - morate ih aktivno uključiti da bi imale efekat. Prisilne promene su isključivo deprecation-i: Performance Planner Display/Video support je uklonjen od marta 2026. AI Max i Text Guidelines su opcioni ali preporučeni. Total Budgets su dostupni kao alternativa Daily Budgets-ima, ali ne zamenjuju postojeće kampanje automatski.
           </div>
         </details>
       </div>

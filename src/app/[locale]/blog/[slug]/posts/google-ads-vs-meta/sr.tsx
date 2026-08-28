@@ -8,7 +8,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google Ads hvata kupce sa namerom, Meta Ads gradi svest i interesovanje.
-          Najbolji rezultati dolaze kada koristite obe platforme strateški —
+          Najbolji rezultati dolaze kada koristite obe platforme strateški -
           Google za zatvaranje prodaja, Meta za punjenje levka.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -32,13 +32,13 @@ export default function GoogleAdsVsMetaAdsPost() {
       </div>
 
       <p>
-        &quot;Da li je bolje Google Ads ili Facebook Ads?&quot; — jedno od najčešćih pitanja
+        &quot;Da li je bolje Google Ads ili Facebook Ads?&quot; - jedno od najčešćih pitanja
         koje dobijem. I moj odgovor je uvek isti: <strong>zavisi</strong>.
       </p>
       <p>
         Zavisi od vašeg biznisa, proizvoda, ciljne publike, budžeta i ciljeva.
         Google Ads i Meta Ads (Facebook + Instagram) nisu konkurencija u tradicionalnom
-        smislu — to su <strong>komplementarni kanali</strong> koji služe različitim
+        smislu - to su <strong>komplementarni kanali</strong> koji služe različitim
         svrhama u customer journey-u.
       </p>
       <p>
@@ -56,7 +56,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           Šta je bolje, Google Ads ili Meta Ads?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Ads</strong> hvata kupce koji već imaju nameru kupovine (aktivno pretražuju), dok <strong>Meta Ads</strong> gradi svest i interesovanje kod publike koja još nije u fazi traženja. To nisu konkurentske, već <strong>komplementarne platforme</strong> — najbolji rezultati dolaze kada se koriste zajedno: Google za zatvaranje prodaje, Meta za punjenje levka. Pravi izbor zavisi od vašeg biznisa, budžeta i faze u kojoj je vaša publika.
+          <strong>Google Ads</strong> hvata kupce koji već imaju nameru kupovine (aktivno pretražuju), dok <strong>Meta Ads</strong> gradi svest i interesovanje kod publike koja još nije u fazi traženja. To nisu konkurentske, već <strong>komplementarne platforme</strong> - najbolji rezultati dolaze kada se koriste zajedno: Google za zatvaranje prodaje, Meta za punjenje levka. Pravi izbor zavisi od vašeg biznisa, budžeta i faze u kojoj je vaša publika.
         </p>
       </div>
 
@@ -67,11 +67,11 @@ export default function GoogleAdsVsMetaAdsPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#osnovna-razlika-namera-vs-interesovanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Osnovna razlika — namera vs interesovanje</a></li>
+          <li><a href="#osnovna-razlika-namera-vs-interesovanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Osnovna razlika - namera vs interesovanje</a></li>
           <li><a href="#poreenje-po-kljucnim-kriterijumima" className="block py-1 text-base text-gray-700 hover:text-primary underline">Poređenje po ključnim kriterijumima</a></li>
           <li><a href="#kada-je-google-ads-bolji-izbor" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kada je Google Ads bolji izbor</a></li>
           <li><a href="#kada-je-meta-ads-bolji-izbor" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kada je Meta Ads bolji izbor</a></li>
-          <li><a href="#kombinovana-strategija-najbolji-pristup" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kombinovana strategija — najbolji pristup</a></li>
+          <li><a href="#kombinovana-strategija-najbolji-pristup" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kombinovana strategija - najbolji pristup</a></li>
           <li><a href="#budzet-i-raspodela" className="block py-1 text-base text-gray-700 hover:text-primary underline">Budžet i raspodela</a></li>
           <li><a href="#merenje-i-atribucija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Merenje i atribucija</a></li>
           <li><a href="#cesto-postavljana-pitanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
@@ -79,7 +79,7 @@ export default function GoogleAdsVsMetaAdsPost() {
       </nav>
 
 
-      <h2 id="osnovna-razlika-namera-vs-interesovanje">Osnovna razlika — namera vs interesovanje</h2>
+      <h2 id="osnovna-razlika-namera-vs-interesovanje">Osnovna razlika - namera vs interesovanje</h2>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
@@ -91,12 +91,12 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <p>
         Ovo je najvažnija razlika između platformi. <strong>Google Ads je demand harvesting</strong>
-        — hvatate postojeću potražnju. Korisnik pretražuje &quot;cipele za trčanje&quot;,
+        - hvatate postojeću potražnju. Korisnik pretražuje &quot;cipele za trčanje&quot;,
         ima jasnu nameru, vi se pojavite sa relevantnim oglasom. Ne morate ga ubediti
-        da mu trebaju cipele — samo da kupi baš vaše.
+        da mu trebaju cipele - samo da kupi baš vaše.
       </p>
       <p>
-        <strong>Meta Ads je demand generation</strong> — stvarate potražnju koja
+        <strong>Meta Ads je demand generation</strong> - stvarate potražnju koja
         pre nije postojala. Korisnik scrolla Instagram feed, vidi vaše cipele.
         Nije ih tražio. Možda mu se dopadnu, možda ne. Vi prvo morate stvoriti
         želju, pa tek onda konvertovati.
@@ -227,7 +227,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         <p className="text-base text-gray-600 mb-3">
           Decision makeri prvo pretražuju Google kada traže biznis rešenja.
           Ako neko traži &quot;ERP za proizvodnju&quot;, ima budžet i ima problem
-          koji mora rešiti — to je vaša prilika.
+          koji mora rešiti - to je vaša prilika.
         </p>
         <ul className="text-sm">
           <li>SaaS proizvodi &amp; softverska rešenja</li>
@@ -304,7 +304,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         <p className="text-base text-gray-600 mb-3">
           Proizvodi koje ljudi kupuju brzo, bez dugog razmišljanja,
           odlično funkcionišu na Meta platformama. Feed scrolla, vidi nešto,
-          dopada mu se — kupi. Niža cena = manji otpor.
+          dopada mu se - kupi. Niža cena = manji otpor.
         </p>
         <ul className="text-sm">
           <li>Proizvodi ispod €50 (niska finansijska barijera)</li>
@@ -320,7 +320,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Izgradnja publike &amp; lookalikes</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Meta omogućava sofisticiranu audience building strategiju —
+          Meta omogućava sofisticiranu audience building strategiju -
           skupljate email liste, gradite custom audiences od posetilaca,
           pravite lookalike audiences sličnih kupaca. Ovaj pristup je
           moćan za dugoročni rast.
@@ -336,11 +336,11 @@ export default function GoogleAdsVsMetaAdsPost() {
       <hr />
 
       {/* ── H2: Kombinovana strategija ── */}
-      <h2 id="kombinovana-strategija-najbolji-pristup">Kombinovana strategija — najbolji pristup</h2>
+      <h2 id="kombinovana-strategija-najbolji-pristup">Kombinovana strategija - najbolji pristup</h2>
 
       <p>
         Umesto &quot;ili-ili&quot;, razmislite o &quot;i-i&quot; pristupu.
-        Većina uspešnih oglašivača koristi obe platforme — svaka ima svoju ulogu
+        Većina uspešnih oglašivača koristi obe platforme - svaka ima svoju ulogu
         u customer journey-u. Evo kako ih strateški kombinovati:
       </p>
 
@@ -364,7 +364,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             </div>
           </div>
           <div>
-            <strong className="text-yellow-600">DECISION (Dno levka — konverzija)</strong>
+            <strong className="text-yellow-600">DECISION (Dno levka - konverzija)</strong>
             <div className="ml-4 mt-1 text-gray-700">
               ↳ <strong>Google Search:</strong> Branded + high-intent keywords<br />
               ↳ <strong>Google Shopping:</strong> Product searches<br />
@@ -493,7 +493,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
       <p>
         Jedan od najvećih izazova multi-platform oglašavanja je <strong>atribucija</strong>
-        — koja platforma zaslužuje credit za konverziju? Meta i Google koriste
+        - koja platforma zaslužuje credit za konverziju? Meta i Google koriste
         različite attribution modele, što često dovodi do konfuzije.
       </p>
 
@@ -548,20 +548,20 @@ export default function GoogleAdsVsMetaAdsPost() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Google Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Focus metrike</h3>
           <ul className="text-sm mb-0">
-            <li><strong>Conversion rate</strong> — meri intent kvalitet</li>
-            <li><strong>Search impression share</strong> — koliko potencijala ostavljate</li>
-            <li><strong>Quality Score</strong> — utiče na CPC</li>
-            <li><strong>ROAS</strong> — profitabilnost kampanja</li>
+            <li><strong>Conversion rate</strong> - meri intent kvalitet</li>
+            <li><strong>Search impression share</strong> - koliko potencijala ostavljate</li>
+            <li><strong>Quality Score</strong> - utiče na CPC</li>
+            <li><strong>ROAS</strong> - profitabilnost kampanja</li>
           </ul>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Meta Ads</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Focus metrike</h3>
           <ul className="text-sm mb-0">
-            <li><strong>CTR (Link)</strong> — meri kreativa kvalitet</li>
-            <li><strong>CPA</strong> — trošak po konverziji</li>
-            <li><strong>Frequency</strong> — ad fatigue signal</li>
-            <li><strong>ROAS</strong> — profitabilnost kampanja</li>
+            <li><strong>CTR (Link)</strong> - meri kreativa kvalitet</li>
+            <li><strong>CPA</strong> - trošak po konverziji</li>
+            <li><strong>Frequency</strong> - ad fatigue signal</li>
+            <li><strong>ROAS</strong> - profitabilnost kampanja</li>
           </ul>
         </div>
       </div>
@@ -580,7 +580,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google Search je obično lakši za merenje direktnog ROI-a jer korisnici
             imaju visoku nameru. Meta zahteva jaku kreativu i dublje razumevanje
-            audience-a. Ali zavisi od vašeg biznisa — ako prodajete vizuelno privlačne
+            audience-a. Ali zavisi od vašeg biznisa - ako prodajete vizuelno privlačne
             proizvode, Meta može biti prirodniji početak. Preporučujem da startujete
             sa onom platformom koja ima jasniju vezu između oglasa i prodaje.
           </div>
@@ -605,7 +605,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Idealno da, jer strategija treba biti koordinisana — Meta puni levak,
+            Idealno da, jer strategija treba biti koordinisana - Meta puni levak,
             Google zatvara prodaje, remarketing se overlap-uje. Ali specijalizovani
             freelanceri ili manje agencije za svaki kanal mogu biti bolji u egzekuciji
             od generalist agencije koja radi &quot;sve&quot;. Važnije je da neko razume
@@ -616,7 +616,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Šta ako moj proizvod nije vizuelan — da li Meta ima smisla?
+            Šta ako moj proizvod nije vizuelan - da li Meta ima smisla?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
@@ -648,7 +648,7 @@ export default function GoogleAdsVsMetaAdsPost() {
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Da, ali nisu isti kao pre. iOS 14+ je smanjio tracking mogućnosti,
-            što otežava atribuciju i targetiranje. Ali Meta i dalje radi — samo
+            što otežava atribuciju i targetiranje. Ali Meta i dalje radi - samo
             zahteva drugačiji pristup (Conversions API, server-side tracking, širi
             targeting). Mnogi biznisi i dalje imaju profitabilne Meta kampanje,
             posebno za remarketing i brand awareness.
@@ -665,7 +665,7 @@ export default function GoogleAdsVsMetaAdsPost() {
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           Analiziram vašu industriju, budžet i ciljeve, i preporučujem optimalnu
-          strategiju — Google, Meta, ili kombinaciju. Besplatna konsultacija, bez obaveze.
+          strategiju - Google, Meta, ili kombinaciju. Besplatna konsultacija, bez obaveze.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju
@@ -682,7 +682,7 @@ export default function GoogleAdsVsMetaAdsPost() {
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
-            Remarketing — Kompletni vodič
+            Remarketing - Kompletni vodič
           </p>
           <p className="text-xs text-gray-500 mb-0">
             Kako vratiti 96% posetilaca koji odu bez kupovine

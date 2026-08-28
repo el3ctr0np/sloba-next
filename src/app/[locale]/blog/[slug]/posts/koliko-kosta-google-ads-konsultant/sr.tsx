@@ -8,7 +8,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Junior freelancer košta €200-400/mesečno, senior konsultant €700-2.000/mesečno (ili €120-200/sat), agencija €500-2.000+/mesečno i često dodatnih 10-20% od ad spend-a. Razlika nije u satima rada — razlika je u tome čije odluke plaćate.
+          Junior freelancer košta €200-400/mesečno, senior konsultant €700-2.000/mesečno (ili €120-200/sat), agencija €500-2.000+/mesečno i često dodatnih 10-20% od ad spend-a. Razlika nije u satima rada - razlika je u tome čije odluke plaćate.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -42,12 +42,12 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
           <strong>Junior freelancer</strong> naplaćuje €200-400 mesečno (obično dodatni prihod uz zaposlenje).{" "}
           <strong>Senior konsultant</strong> sa 5+ godina iskustva naplaćuje €700-2.000 mesečno fiksno ili €120-200 po satu za ad-hoc rad.{" "}
           <strong>Agencija</strong> naplaćuje €500-2.000+ mesečno, često plus 10-20% od ad spend-a iznad određenog praga.
-          Cena prati iskustvo — ali ono što zapravo plaćate kod seniora nisu sati, nego kvalitet odluka i brzina kojom se izbegavaju skupe greške.
+          Cena prati iskustvo - ali ono što zapravo plaćate kod seniora nisu sati, nego kvalitet odluka i brzina kojom se izbegavaju skupe greške.
         </p>
       </div>
 
       <p>
-        &quot;Koliko treba da platim za Google Ads konsultanta?&quot; je pitanje na koje nema jednog tačnog odgovora, ali ima jasnu logiku. Ovaj vodič je čist cost breakdown — bez prodajnog ugla, bez &quot;koga izabrati&quot; dileme. Ako vas zanima poređenje modela (agencija vs freelancer vs in-house) po fitu za vašu firmu, pogledajte{" "}
+        &quot;Koliko treba da platim za Google Ads konsultanta?&quot; je pitanje na koje nema jednog tačnog odgovora, ali ima jasnu logiku. Ovaj vodič je čist cost breakdown - bez prodajnog ugla, bez &quot;koga izabrati&quot; dileme. Ako vas zanima poređenje modela (agencija vs freelancer vs in-house) po fitu za vašu firmu, pogledajte{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="underline">
           taj vodič
         </Link>
@@ -76,7 +76,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
 
       <h2 id="tri-nivoa-cena-junior-senior-agencija">Tri nivoa cena: junior, senior, agencija</h2>
       <p>
-        Tržište Google Ads usluga u regionu ima tri jasno odvojena cenovna nivoa. Nisu proizvoljni — prate stvarnu razliku u iskustvu, kapacitetu i riziku koji nosite kao klijent.
+        Tržište Google Ads usluga u regionu ima tri jasno odvojena cenovna nivoa. Nisu proizvoljni - prate stvarnu razliku u iskustvu, kapacitetu i riziku koji nosite kao klijent.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -102,7 +102,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
               <td className="py-3 px-3 font-medium">Senior konsultant</td>
               <td className="py-3 px-3">€700-2.000/mes. ili €120-200/sat</td>
               <td className="py-3 px-3">5+ god., radi lično, ne prosleđuje junior timu</td>
-              <td className="py-3 px-3">Direktna, brza, strateška — ne samo izveštavanje</td>
+              <td className="py-3 px-3">Direktna, brza, strateška - ne samo izveštavanje</td>
               <td className="py-3 px-3">Budžet €1.000-15.000/mes., potrebna je strategija ne samo izvršenje</td>
             </tr>
             <tr className="border-b border-gray-200">
@@ -119,7 +119,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Zašto je raspon unutar &quot;senior&quot; kategorije tako širok</p>
         <p className="text-blue-800 text-base mb-0">
-          €700 i €2.000 mesečno mogu biti isti broj sati rada — razlika je u veličini naloga, broju kampanja i tome da li je uključena strategija (kampanje, tracking, kreativa) ili samo optimizacija postojećeg seta. Uvek pitajte šta tačno ulazi u fee pre poređenja cena.
+          €700 i €2.000 mesečno mogu biti isti broj sati rada - razlika je u veličini naloga, broju kampanja i tome da li je uključena strategija (kampanje, tracking, kreativa) ili samo optimizacija postojećeg seta. Uvek pitajte šta tačno ulazi u fee pre poređenja cena.
         </p>
       </div>
 
@@ -127,7 +127,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
 
       <h2 id="sta-zapravo-placate-kod-seniora">Šta zapravo plaćate kod seniora</h2>
       <p>
-        Ovo je deo koji se najčešće pogrešno razume. Klijenti gledaju satnicu i misle da plaćaju vreme. U praksi, kod seniora plaćate nešto drugo — a to nešto se ne vidi na fakturi.
+        Ovo je deo koji se najčešće pogrešno razume. Klijenti gledaju satnicu i misle da plaćaju vreme. U praksi, kod seniora plaćate nešto drugo - a to nešto se ne vidi na fakturi.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -149,7 +149,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Izbegnute greške koje se ne vide</h3>
         </div>
         <p className="text-base text-gray-600 mb-0">
-          Najskuplji deo Google Ads-a nisu loše kampanje — to su kampanje koje rade pogrešnu stvar mesecima jer niko
+          Najskuplji deo Google Ads-a nisu loše kampanje - to su kampanje koje rade pogrešnu stvar mesecima jer niko
           nije primetio grešku u <GlossaryLink slug="conversion-rate">conversion tracking-u</GlossaryLink> ili u strukturi naloga.
           Senior to hvata u prve dve nedelje. Junior često ne zna ni šta da traži.
         </p>
@@ -161,7 +161,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Prioritizaciju vremena</h3>
         </div>
         <p className="text-base text-gray-600 mb-0">
-          Sa ograničenim satima mesečno, senior zna gde da uloži pažnju — 20% promena koje nose 80% rezultata.
+          Sa ograničenim satima mesečno, senior zna gde da uloži pažnju - 20% promena koje nose 80% rezultata.
           Junior često troši vreme na sitne optimizacije dok veći problem stoji nedirnut.
         </p>
       </div>
@@ -172,21 +172,21 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Direktnu komunikaciju bez posrednika</h3>
         </div>
         <p className="text-base text-gray-600 mb-0">
-          Kada pitanje postavite direktno osobi koja upravlja nalogom, dobijate odgovor koji je informisan realnim stanjem naloga tog trenutka — ne prepričan kroz account managera koji nema pristup dashboard-u dok ne organizuje interni sastanak. Ova razlika u brzini i tačnosti odgovora se ne meri satima, ali se oseti svake nedelje saradnje.
+          Kada pitanje postavite direktno osobi koja upravlja nalogom, dobijate odgovor koji je informisan realnim stanjem naloga tog trenutka - ne prepričan kroz account managera koji nema pristup dashboard-u dok ne organizuje interni sastanak. Ova razlika u brzini i tačnosti odgovora se ne meri satima, ali se oseti svake nedelje saradnje.
         </p>
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Bez preterivanja</p>
         <p className="text-yellow-800 text-base mb-0">
-          Ovo ne znači da junior freelanceri nemaju vrednost — za male budžete i jednostavne naloge, često su sasvim dovoljni. Ali za nalog gde greška od €500 mesečno prolazi nezapaženo tri meseca, cena seniora se sama isplati.
+          Ovo ne znači da junior freelanceri nemaju vrednost - za male budžete i jednostavne naloge, često su sasvim dovoljni. Ali za nalog gde greška od €500 mesečno prolazi nezapaženo tri meseca, cena seniora se sama isplati.
         </p>
       </div>
 
       <hr />
 
       <h2 id="modeli-naplate-i-njihove-zamke">Modeli naplate i njihove zamke</h2>
-      <p>Postoje četiri osnovna modela naplate. Svaki ima svoju logiku i svoju zamku — evo iskreno o svakom.</p>
+      <p>Postoje četiri osnovna modela naplate. Svaki ima svoju logiku i svoju zamku - evo iskreno o svakom.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
@@ -199,13 +199,13 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Procenat od ad spend-a</h3>
           <p className="text-base text-gray-600 mb-2">Obično 10-20% (najčešće 12-15%) potrošenog budžeta.</p>
           <p className="text-xs text-green-700 mb-1">+ Skalira se prirodno sa rastom naloga, fer za veće budžete</p>
-          <p className="text-xs text-red-600 mb-0">- Kod velikih budžeta plaćate za obim, ne za trud — €50.000 spend ne znači 5x posla u odnosu na €10.000. Uvek pitajte za cap.</p>
+          <p className="text-xs text-red-600 mb-0">- Kod velikih budžeta plaćate za obim, ne za trud - €50.000 spend ne znači 5x posla u odnosu na €10.000. Uvek pitajte za cap.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Satnica (hourly)</h3>
-          <p className="text-base text-gray-600 mb-2">Plaćate tačno utrošeno vreme — €120-200/sat za seniora.</p>
+          <p className="text-base text-gray-600 mb-2">Plaćate tačno utrošeno vreme - €120-200/sat za seniora.</p>
           <p className="text-xs text-green-700 mb-1">+ Transparentno, dobro za ad-hoc konsultacije i audit</p>
-          <p className="text-xs text-red-600 mb-0">- Loše za ongoing upravljanje — stvara podsvesni podsticaj da se rad razvuče. Tražite mesečni cap sati.</p>
+          <p className="text-xs text-red-600 mb-0">- Loše za ongoing upravljanje - stvara podsvesni podsticaj da se rad razvuče. Tražite mesečni cap sati.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Hibrid (baza + procenat)</h3>
@@ -226,13 +226,13 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Da li je % od spend-a fer?</p>
         <p className="text-blue-800 text-base mb-0">
-          Za budžete od €2.000-15.000 mesečno, procenat modeli su generalno fer jer prate stvaran rast obima posla (više kampanja, više testiranja, više izveštavanja). Iznad €20.000/mesec, matematika se lomi — tražite hibrid sa capom ili fiksnu cenu.
+          Za budžete od €2.000-15.000 mesečno, procenat modeli su generalno fer jer prate stvaran rast obima posla (više kampanja, više testiranja, više izveštavanja). Iznad €20.000/mesec, matematika se lomi - tražite hibrid sa capom ili fiksnu cenu.
         </p>
       </div>
 
       <hr />
 
-      <h2 id="sta-tacno-ulazi-u-fee">Šta tačno ulazi u fee — i zašto isti broj znači različitu stvar</h2>
+      <h2 id="sta-tacno-ulazi-u-fee">Šta tačno ulazi u fee - i zašto isti broj znači različitu stvar</h2>
       <p>
         Najčešća greška prilikom poređenja ponuda je gledanje samo na broj na dnu ponude. Dva konsultanta mogu naplaćivati identičnih €1.000 mesečno, a raditi potpuno različit obim posla. Pre nego što uporedite cene, razjasnite tačno šta je uključeno.
       </p>
@@ -261,13 +261,13 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
       </div>
 
       <p>
-        Praktičan test: tražite od konsultanta da napiše, u jednoj rečenici po stavci, šta je uključeno u mesečni fee. Ako izbegava konkretan odgovor i vraća se na &quot;radimo sve što je potrebno&quot;, to je znak da granice scope-a nisu jasne — a nejasan scope je najčešći izvor sukoba posle par meseci saradnje.
+        Praktičan test: tražite od konsultanta da napiše, u jednoj rečenici po stavci, šta je uključeno u mesečni fee. Ako izbegava konkretan odgovor i vraća se na &quot;radimo sve što je potrebno&quot;, to je znak da granice scope-a nisu jasne - a nejasan scope je najčešći izvor sukoba posle par meseci saradnje.
       </p>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Primer iz prakse</p>
         <p className="text-yellow-800 text-base mb-0">
-          Nalog sa €3.000 ad spend-a i samo Search kampanjama zahteva mnogo manje mesečnog rada od naloga sa istim spend-om raspoređenim na Search + Shopping + PMax + remarketing. Isti fee od €800/mesečno može biti preplaćen u prvom slučaju i potplaćen u drugom — zato cenu treba vezati za kompleksnost naloga, ne samo za iznos budžeta.
+          Nalog sa €3.000 ad spend-a i samo Search kampanjama zahteva mnogo manje mesečnog rada od naloga sa istim spend-om raspoređenim na Search + Shopping + PMax + remarketing. Isti fee od €800/mesečno može biti preplaćen u prvom slučaju i potplaćen u drugom - zato cenu treba vezati za kompleksnost naloga, ne samo za iznos budžeta.
         </p>
       </div>
 
@@ -284,35 +284,35 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div>
               <strong>Koliko sati mesečno realno ide na moj nalog?</strong>
-              <span className="text-gray-500"> — ako je fee €1.000, a realno se troši 3 sata mesečno, plaćate €330/sat što je iznad senior benchmarka bez jasne dodatne vrednosti</span>
+              <span className="text-gray-500"> - ako je fee €1.000, a realno se troši 3 sata mesečno, plaćate €330/sat što je iznad senior benchmarka bez jasne dodatne vrednosti</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div>
               <strong>Da li dobijam pisani izveštaj sa objašnjenjem, ne samo brojkama?</strong>
-              <span className="text-gray-500"> — dashboard bez konteksta ne opravdava senior cenu</span>
+              <span className="text-gray-500"> - dashboard bez konteksta ne opravdava senior cenu</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div>
               <strong>Koliko brzo dobijam odgovor na konkretno pitanje?</strong>
-              <span className="text-gray-500"> — preko 48h za jednostavno pitanje je crvena zastavica bez obzira na cenu</span>
+              <span className="text-gray-500"> - preko 48h za jednostavno pitanje je crvena zastavica bez obzira na cenu</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
             <div>
               <strong>Da li se ROAS/CPA trend poboljšava kvartalno, ili stagnira?</strong>
-              <span className="text-gray-500"> — plaćate za rezultat, ne za aktivnost; stagnacija 2+ kvartala zaredom traži razgovor</span>
+              <span className="text-gray-500"> - plaćate za rezultat, ne za aktivnost; stagnacija 2+ kvartala zaredom traži razgovor</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
             <div>
               <strong>Da li bih dobio drugačiji (bolji) odgovor od nekog drugog za istu cenu?</strong>
-              <span className="text-gray-500"> — jednom godišnje vredi platiti nezavisan audit kao proveru (vidi sekciju o mojim cenama ispod)</span>
+              <span className="text-gray-500"> - jednom godišnje vredi platiti nezavisan audit kao proveru (vidi sekciju o mojim cenama ispod)</span>
             </div>
           </div>
         </div>
@@ -329,14 +329,14 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €500-2.000/mes.</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Mali nalog, jedan kanal</h3>
-          <p className="text-base text-gray-600 mb-3">Fee od 40%+ ad spend-a nije neuobičajen kod agencija na ovom nivou — zato junior freelancer ili senior na satnicu ad-hoc obično ima bolji odnos cene i vrednosti.</p>
+          <p className="text-base text-gray-600 mb-3">Fee od 40%+ ad spend-a nije neuobičajen kod agencija na ovom nivou - zato junior freelancer ili senior na satnicu ad-hoc obično ima bolji odnos cene i vrednosti.</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Realan fee:</p>
           <p className="text-base mb-0">€200-500/mesečno (junior) ili €150-300/mesečno senior konsultacije po potrebi</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €2.000-8.000/mes.</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Sweet spot za seniora</h3>
-          <p className="text-base text-gray-600 mb-3">Ovde senior konsultant daje najbolji odnos cene i pažnje — dovoljno velik nalog da opravda ekspertizu, dovoljno mali da dobijate personalizovan fokus.</p>
+          <p className="text-base text-gray-600 mb-3">Ovde senior konsultant daje najbolji odnos cene i pažnje - dovoljno velik nalog da opravda ekspertizu, dovoljno mali da dobijate personalizovan fokus.</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Realan fee:</p>
           <p className="text-base mb-0">€700-1.500/mesečno fiksno, ili 12-15% od spend-a</p>
         </div>
@@ -350,7 +350,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ad spend: €20.000+/mes.</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Iznad senior solo kapaciteta</h3>
-          <p className="text-base text-gray-600 mb-3">Na ovom nivou, jedan čovek — koliko god senior — nosi rizik single point of failure. Agencija sa timom ili senior + junior podrška postaje racionalniji izbor bez obzira na cenu.</p>
+          <p className="text-base text-gray-600 mb-3">Na ovom nivou, jedan čovek - koliko god senior - nosi rizik single point of failure. Agencija sa timom ili senior + junior podrška postaje racionalniji izbor bez obzira na cenu.</p>
           <p className="text-xs font-semibold text-gray-700 mb-1">Realan fee:</p>
           <p className="text-base mb-0">Agencija €2.000-4.000+/mesečno ili senior + in-house koordinator</p>
         </div>
@@ -375,18 +375,18 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         <div className="text-base text-yellow-900 space-y-1">
           <p className="mb-1">Medijalna godišnja zarada (US freelance, PPC Salary Survey 2026): <strong>$202.895</strong></p>
           <p className="mb-1">Efektivna satnica pri punom radnom vremenu: <strong>~$145-175/sat</strong></p>
-          <p className="mb-0 text-sm">Izvor: Take Some Risk — PPC Salary Survey (godišnja anketa freelance i in-house PPC profesionalaca)</p>
+          <p className="mb-0 text-sm">Izvor: Take Some Risk - PPC Salary Survey (godišnja anketa freelance i in-house PPC profesionalaca)</p>
         </div>
       </div>
 
       <p>
-        Ovaj broj nije direktno prenosiv na srpsko/regionalno tržište zbog razlike u troškovima života i konkurenciji, ali daje realan okvir: <strong>senior PPC ekspertiza na zrelim tržištima se plaća blizu $150-200/sat</strong>. Kada neko u regionu naplaćuje €150-200/mesečno &quot;za sve&quot;, matematika jednostavno ne staje — ili je osoba junior, ili vam posvećuje sat-dva mesečno.
+        Ovaj broj nije direktno prenosiv na srpsko/regionalno tržište zbog razlike u troškovima života i konkurenciji, ali daje realan okvir: <strong>senior PPC ekspertiza na zrelim tržištima se plaća blizu $150-200/sat</strong>. Kada neko u regionu naplaćuje €150-200/mesečno &quot;za sve&quot;, matematika jednostavno ne staje - ili je osoba junior, ili vam posvećuje sat-dva mesečno.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Zašto je regionalna cena ipak niža</p>
         <p className="text-blue-800 text-base mb-0">
-          Niža cena života i manja platežna moć lokalnog tržišta znače da senior konsultant u Srbiji ili regionu razumno naplaćuje manje od US/UK ekvivalenta — ali odnos treba da ostane proporcionalan, ne da padne na nivo junior cene. Senior sa 5-10 godina iskustva koji naplaćuje €150/mesečno za ongoing upravljanje je ili subvencionisan drugim izvorom prihoda, ili ne radi ono što tvrdi da radi.
+          Niža cena života i manja platežna moć lokalnog tržišta znače da senior konsultant u Srbiji ili regionu razumno naplaćuje manje od US/UK ekvivalenta - ali odnos treba da ostane proporcionalan, ne da padne na nivo junior cene. Senior sa 5-10 godina iskustva koji naplaćuje €150/mesečno za ongoing upravljanje je ili subvencionisan drugim izvorom prihoda, ili ne radi ono što tvrdi da radi.
         </p>
       </div>
 
@@ -400,7 +400,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Trajanje i notice period</h3>
-          <p className="text-base text-gray-600 mb-0">Standard je 3-6 meseci sa 30-dnevnim notice periodom za raskid. Ugovori duži od 12 meseci bez trial faze su crvena zastavica — dobar konsultant ne treba lock-in da zadrži klijenta.</p>
+          <p className="text-base text-gray-600 mb-0">Standard je 3-6 meseci sa 30-dnevnim notice periodom za raskid. Ugovori duži od 12 meseci bez trial faze su crvena zastavica - dobar konsultant ne treba lock-in da zadrži klijenta.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Klauzula za review cene</h3>
@@ -412,7 +412,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Definisan scope i broj revizija</h3>
-          <p className="text-base text-gray-600 mb-0">Koliko kampanja, koliko izveštaja mesečno, koliko poziva/sastanaka je uključeno. Sve van toga se posebno naplaćuje — jasno definisano izbegava kasnije nesuglasice.</p>
+          <p className="text-base text-gray-600 mb-0">Koliko kampanja, koliko izveštaja mesečno, koliko poziva/sastanaka je uključeno. Sve van toga se posebno naplaćuje - jasno definisano izbegava kasnije nesuglasice.</p>
         </div>
       </div>
 
@@ -426,7 +426,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
       <hr />
 
       <h2 id="crvene-zastavice-kod-jeftinih-ponuda">Crvene zastavice kod jeftinih ponuda</h2>
-      <p>Niska cena sama po sebi nije problem — problem je kada niska cena krije nešto što bi trebalo da znate unapred.</p>
+      <p>Niska cena sama po sebi nije problem - problem je kada niska cena krije nešto što bi trebalo da znate unapred.</p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Crvena zastavica #1</p>
@@ -440,7 +440,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Crvena zastavica #2</p>
         <p className="font-semibold mb-2">Nemate (ili nećete imati) admin pristup sopstvenom Google Ads nalogu</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-base text-green-800 mb-0">Nalog mora biti vaš, sa admin pravima za vas. Ako partner insistira da drži kontrolu &quot;zbog sigurnosti&quot;, to je deal-breaker — kod raskida ostajete bez istorije i podataka.</p>
+          <p className="text-base text-green-800 mb-0">Nalog mora biti vaš, sa admin pravima za vas. Ako partner insistira da drži kontrolu &quot;zbog sigurnosti&quot;, to je deal-breaker - kod raskida ostajete bez istorije i podataka.</p>
         </div>
       </div>
 
@@ -448,7 +448,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Crvena zastavica #3</p>
         <p className="font-semibold mb-2">Nema verifikacije conversion tracking-a pre starta kampanja</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-base text-green-800 mb-0">Ako konsultant ne postavi pitanje o tome kako merite konverzije u prvoj nedelji, radi na slepo. Loš tracking je razlog broj jedan zašto kampanje &quot;ne rade&quot; — a to se retko vidi dok ne prođe par meseci potrošenog budžeta.</p>
+          <p className="text-base text-green-800 mb-0">Ako konsultant ne postavi pitanje o tome kako merite konverzije u prvoj nedelji, radi na slepo. Loš tracking je razlog broj jedan zašto kampanje &quot;ne rade&quot; - a to se retko vidi dok ne prođe par meseci potrošenog budžeta.</p>
         </div>
       </div>
 
@@ -456,7 +456,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Crvena zastavica #4</p>
         <p className="font-semibold mb-2">Cena je ispod €150-200/mesečno za aktivno upravljanje</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-base text-green-800 mb-0">Kvalitetan rad za manje od toga nije održiv — znači da ste jedan od 20+ klijenata sa minimalnom pažnjom, ili da je osoba tek počela i uči na vašem nalogu.</p>
+          <p className="text-base text-green-800 mb-0">Kvalitetan rad za manje od toga nije održiv - znači da ste jedan od 20+ klijenata sa minimalnom pažnjom, ili da je osoba tek počela i uči na vašem nalogu.</p>
         </div>
       </div>
 
@@ -464,7 +464,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
 
       <h2 id="moje-cene-kao-primer-senior-modela">Moje cene kao primer senior modela</h2>
       <p>
-        Bez prodajnog pritiska — evo transparentno kako ja strukturiram cene, kao konkretan primer kako senior model obično izgleda u praksi.
+        Bez prodajnog pritiska - evo transparentno kako ja strukturiram cene, kao konkretan primer kako senior model obično izgleda u praksi.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
@@ -477,7 +477,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Jednokratno</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Kickstart paket</h3>
-          <p className="text-base text-gray-600 mb-3">Setup naloga, struktura kampanja, tracking — za firme koje kreću od nule.</p>
+          <p className="text-base text-gray-600 mb-3">Setup naloga, struktura kampanja, tracking - za firme koje kreću od nule.</p>
           <p className="text-xl font-heading font-bold mb-0">od €690</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
@@ -489,7 +489,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
       </div>
 
       <p className="text-base text-gray-600">
-        Ovo je jedan konkretan primer senior pricinga na regionalnom tržištu — ne jedini ispravan model, samo referentna tačka. Za detalje po tipu angažmana pogledajte{" "}
+        Ovo je jedan konkretan primer senior pricinga na regionalnom tržištu - ne jedini ispravan model, samo referentna tačka. Za detalje po tipu angažmana pogledajte{" "}
         <Link href="/usluge/konsultacije" className="underline">konsultacije</Link>,{" "}
         <Link href="/usluge/starter-paket" className="underline">starter paket</Link> ili{" "}
         <Link href="/usluge/google-ads-upravljanje" className="underline">vođenje naloga</Link>.
@@ -499,7 +499,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
 
       <h2 id="kako-izgleda-poredenje-tri-ponude-u-praksi">Kako izgleda poređenje tri ponude u praksi</h2>
       <p>
-        Da bi sve ovo bilo konkretnije, evo hipotetičkog primera — ne stvaran klijent, već tipičan scenario koji viđam kada firma sa €4.000 mesečnog ad spend-a traži ponude od tri različita tipa partnera.
+        Da bi sve ovo bilo konkretnije, evo hipotetičkog primera - ne stvaran klijent, već tipičan scenario koji viđam kada firma sa €4.000 mesečnog ad spend-a traži ponude od tri različita tipa partnera.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -534,19 +534,19 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
           </tbody>
         </table>
       </div>
-      <p className="text-xs text-gray-500 mt-2">*Procena na osnovu tipičnog broja sati posvećenih nalogu ove veličine — orijentaciona, ne tačna kalkulacija za svaki nalog.</p>
+      <p className="text-xs text-gray-500 mt-2">*Procena na osnovu tipičnog broja sati posvećenih nalogu ove veličine - orijentaciona, ne tačna kalkulacija za svaki nalog.</p>
 
       <p>
-        Na prvi pogled, junior ponuda deluje najisplativije. Ali €35-45/sat za Google Ads upravljanje je ispod nivoa na kom kvalitetan rad realno može da se pruži — što znači da deo posla verovatno neće biti urađen kako treba, ili će se osloniti na automatizovane preporuke Google-a bez kritičke provere.
+        Na prvi pogled, junior ponuda deluje najisplativije. Ali €35-45/sat za Google Ads upravljanje je ispod nivoa na kom kvalitetan rad realno može da se pruži - što znači da deo posla verovatno neće biti urađen kako treba, ili će se osloniti na automatizovane preporuke Google-a bez kritičke provere.
       </p>
       <p>
-        Senior ponuda po €150/sat je u skladu sa tržišnim benchmarkom (videti sekciju iznad) i uglavnom znači da dobijate punu pažnju jedne iskusne osobe. Agencijska ponuda po €60-80/sat efektivno je jeftinija po satu jer uključuje tim — ali sa dodatnim slojem komunikacije (account manager) i manjom garancijom da će konkretno vaš nalog raditi senior osoba.
+        Senior ponuda po €150/sat je u skladu sa tržišnim benchmarkom (videti sekciju iznad) i uglavnom znači da dobijate punu pažnju jedne iskusne osobe. Agencijska ponuda po €60-80/sat efektivno je jeftinija po satu jer uključuje tim - ali sa dodatnim slojem komunikacije (account manager) i manjom garancijom da će konkretno vaš nalog raditi senior osoba.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Kako ja gledam na ovo poređenje</p>
         <p className="text-blue-800 text-base mb-0">
-          Za nalog ove veličine (€4.000 spend, jedan kanal, jasan cilj), senior opcija obično nosi najbolji odnos rizika i vrednosti — dovoljno pažnje da se greške hvataju rano, dovoljno iskustva da se ne troši vreme na učenje na vašem budžetu. Ali to nije univerzalno tačno; ako imate više kanala i potrebu za kreativom/dizajnom, agencijski tim brže pokriva širi scope.
+          Za nalog ove veličine (€4.000 spend, jedan kanal, jasan cilj), senior opcija obično nosi najbolji odnos rizika i vrednosti - dovoljno pažnje da se greške hvataju rano, dovoljno iskustva da se ne troši vreme na učenje na vašem budžetu. Ali to nije univerzalno tačno; ako imate više kanala i potrebu za kreativom/dizajnom, agencijski tim brže pokriva širi scope.
         </p>
       </div>
 
@@ -570,7 +570,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Za budžete €2.000-15.000 mesečno, da — procenat (obično 10-20%, tipično 12-15%) prati realan rast obima posla. Iznad €20.000 mesečno matematika se lomi jer posao ne raste linearno sa spend-om. U tom slučaju tražite hibrid model sa capom ili fiksnu cenu.
+            Za budžete €2.000-15.000 mesečno, da - procenat (obično 10-20%, tipično 12-15%) prati realan rast obima posla. Iznad €20.000 mesečno matematika se lomi jer posao ne raste linearno sa spend-om. U tom slučaju tražite hibrid model sa capom ili fiksnu cenu.
           </div>
         </details>
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
@@ -606,7 +606,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Da, do određene mere. Fiksni retainer se često može prilagoditi obimu (npr. manje kampanja za nižu cenu na startu, sa planom rasta posle 3 meseca). Ono što ne treba pregovarati je kvalitet — ako konsultant popusti u ceni ali onda smanji pažnju posvećenu nalogu, dobili ste lošiju uslugu, ne bolju cenu. Bolji pristup je pregovarati scope (šta je uključeno) nego samo broj na fakturi.
+            Da, do određene mere. Fiksni retainer se često može prilagoditi obimu (npr. manje kampanja za nižu cenu na startu, sa planom rasta posle 3 meseca). Ono što ne treba pregovarati je kvalitet - ako konsultant popusti u ceni ali onda smanji pažnju posvećenu nalogu, dobili ste lošiju uslugu, ne bolju cenu. Bolji pristup je pregovarati scope (šta je uključeno) nego samo broj na fakturi.
           </div>
         </details>
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
@@ -615,7 +615,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Trošak života i platežna moć lokalnog tržišta su glavni faktori — isti senior nivo ekspertize se u UK/US prodaje po $150-200/sat, dok se u regionu prodaje po €120-200/sat. Ovo nije razlika u kvalitetu rada, već u tržišnoj ceni rada tog nivoa u datoj ekonomiji. Zato regionalni klijenti mogu dobiti senior ekspertizu po povoljnijoj ceni nego što bi platili istu osobu da radi za zapadnog klijenta.
+            Trošak života i platežna moć lokalnog tržišta su glavni faktori - isti senior nivo ekspertize se u UK/US prodaje po $150-200/sat, dok se u regionu prodaje po €120-200/sat. Ovo nije razlika u kvalitetu rada, već u tržišnoj ceni rada tog nivoa u datoj ekonomiji. Zato regionalni klijenti mogu dobiti senior ekspertizu po povoljnijoj ceni nego što bi platili istu osobu da radi za zapadnog klijenta.
           </div>
         </details>
       </div>

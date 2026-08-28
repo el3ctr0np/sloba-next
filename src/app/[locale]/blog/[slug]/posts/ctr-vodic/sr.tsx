@@ -51,7 +51,7 @@ export default function CTRVodicPost() {
           <li><a href="#sta-je-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je CTR i zašto je važan</a></li>
           <li><a href="#formula-i-primeri" className="block py-1 text-base text-gray-700 hover:text-primary underline">Formula i primeri izračunavanja</a></li>
           <li><a href="#ctr-benchmarks" className="block py-1 text-base text-gray-700 hover:text-primary underline">CTR benchmarks po tipu kampanje</a></li>
-          <li><a href="#case-study-ankibuddy" className="block py-1 text-base text-gray-700 hover:text-primary underline">Case Study: AnkiBuddy — sa 6-8% na 20% CTR</a></li>
+          <li><a href="#case-study-ankibuddy" className="block py-1 text-base text-gray-700 hover:text-primary underline">Case Study: AnkiBuddy - sa 6-8% na 20% CTR</a></li>
           <li><a href="#greske-koje-ubijaju-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 najčešćih grešaka koje ubijaju CTR</a></li>
           <li><a href="#dijagnostika-niskog-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako dijagnostikovati nizak CTR (3 koraka)</a></li>
           <li><a href="#kako-poboljsati-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">7 načina da poboljšate CTR</a></li>
@@ -68,7 +68,7 @@ export default function CTRVodicPost() {
         <strong>CTR (Click-Through Rate)</strong> je procenat ljudi koji kliknu na vaš oglas nakon što ga vide. To je jedan od najvažnijih signala kvaliteta u Google Ads-u.
       </p>
       <p>
-        Jednostavno rečeno: ako 100 ljudi vidi vaš oglas i 5 klikne na njega — vaš CTR je 5%.
+        Jednostavno rečeno: ako 100 ljudi vidi vaš oglas i 5 klikne na njega - vaš CTR je 5%.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
@@ -80,9 +80,9 @@ export default function CTRVodicPost() {
       <p>Zašto je CTR važan:</p>
       <ul>
         <li><strong>Utiče na Quality Score</strong> - Expected CTR je jedna od tri komponente ocene kvaliteta (Google ne objavljuje koliko svaka nosi)</li>
-        <li><strong>Smanjuje CPC</strong> — viši CTR = viši Quality Score = niža cena po kliku</li>
-        <li><strong>Signal relevantnosti</strong> — Google vidi da korisnici reaguju na vaš oglas</li>
-        <li><strong>Više klikova za isti budžet</strong> — bolji CTR znači efikasnije trošenje</li>
+        <li><strong>Smanjuje CPC</strong> - viši CTR = viši Quality Score = niža cena po kliku</li>
+        <li><strong>Signal relevantnosti</strong> - Google vidi da korisnici reaguju na vaš oglas</li>
+        <li><strong>Više klikova za isti budžet</strong> - bolji CTR znači efikasnije trošenje</li>
       </ul>
 
       <hr />
@@ -169,14 +169,14 @@ export default function CTRVodicPost() {
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Važno: Branded vs Non-branded</p>
         <p className="text-base text-yellow-900 mb-0">
-          Uvek razdvajajte branded od non-branded kampanja. Ako vaše non-branded kampanje imaju neočekivano visok CTR (npr. 25-30%), verovatno niste uklonili branded search termine. To nije znak uspeha — to je greška u strukturi.
+          Uvek razdvajajte branded od non-branded kampanja. Ako vaše non-branded kampanje imaju neočekivano visok CTR (npr. 25-30%), verovatno niste uklonili branded search termine. To nije znak uspeha - to je greška u strukturi.
         </p>
       </div>
 
       <hr />
 
       {/* ── Case Study AnkiBuddy ── */}
-      <h2 id="case-study-ankibuddy">Case Study: AnkiBuddy — sa 6-8% na 20% CTR</h2>
+      <h2 id="case-study-ankibuddy">Case Study: AnkiBuddy - sa 6-8% na 20% CTR</h2>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-5 my-6">
         <p className="font-heading font-semibold mb-2">Iz mog iskustva</p>
@@ -191,14 +191,14 @@ export default function CTRVodicPost() {
 
       <h3>Izazov</h3>
       <p>
-        Kada sam preuzeo nalog, Search kampanje su imale prosečan CTR od 6-8%. Za SaaS sa uskim targetiranjem, ovo nije bilo loše — ali znao sam da može bolje.
+        Kada sam preuzeo nalog, Search kampanje su imale prosečan CTR od 6-8%. Za SaaS sa uskim targetiranjem, ovo nije bilo loše - ali znao sam da može bolje.
       </p>
 
       <h3>Strategija</h3>
       <ul>
-        <li><strong>Usko specifične ključne reči</strong> — fokus na termine koje medicinski studenti stvarno koriste kada traže alate za učenje</li>
-        <li><strong>Pain points u headline-ovima</strong> — naglašeni problemi koje studenti imaju (vreme, količina materijala, priprema za ispite)</li>
-        <li><strong>Benefiti umesto feature-a</strong> — umesto "AI generiše kartice" → "Uštedite 10 sati nedeljno na pravljenju kartica"</li>
+        <li><strong>Usko specifične ključne reči</strong> - fokus na termine koje medicinski studenti stvarno koriste kada traže alate za učenje</li>
+        <li><strong>Pain points u headline-ovima</strong> - naglašeni problemi koje studenti imaju (vreme, količina materijala, priprema za ispite)</li>
+        <li><strong>Benefiti umesto feature-a</strong> - umesto "AI generiše kartice" → "Uštedite 10 sati nedeljno na pravljenju kartica"</li>
       </ul>
 
       <h3>Rezultat</h3>
@@ -220,7 +220,7 @@ export default function CTRVodicPost() {
       {/* ── 5 Grešaka ── */}
       <h2 id="greske-koje-ubijaju-ctr">5 najčešćih grešaka koje ubijaju CTR</h2>
       <p>
-        Na većini naloga koje preuzimam — čak i onih sa mesečnim budžetom od €5-10k — vidim iste greške.
+        Na većini naloga koje preuzimam - čak i onih sa mesečnim budžetom od €5-10k - vidim iste greške.
       </p>
 
       <div className="space-y-4 my-6">
@@ -244,7 +244,7 @@ export default function CTRVodicPost() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
           <p className="font-semibold mb-2">Broad match bez kontrole</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Koristite uže match tipove (phrase, exact) ili ako koristite broad — dodajte obimnu listu negativnih ključnih reči i redovno pregledajte Search Terms Report.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Koristite uže match tipove (phrase, exact) ili ako koristite broad - dodajte obimnu listu negativnih ključnih reči i redovno pregledajte Search Terms Report.</p>
           </div>
         </div>
 
@@ -320,7 +320,7 @@ export default function CTRVodicPost() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Headlines sa urgencijom</h3>
-          <p className="text-base text-gray-600 mb-0">"Danas slobodni termini", "24/7 dostupni", "Dolazimo za 30 min" — urgentnost pokreće akciju.</p>
+          <p className="text-base text-gray-600 mb-0">"Danas slobodni termini", "24/7 dostupni", "Dolazimo za 30 min" - urgentnost pokreće akciju.</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
@@ -359,10 +359,10 @@ export default function CTRVodicPost() {
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-3">Nizak CTR nije uvek problem</p>
         <ul className="text-base text-yellow-900 mb-0 space-y-2">
-          <li><strong>Display remarketing</strong> — očekujte 0.5-1%, cilj je podsećanje, ne odmah klik</li>
-          <li><strong>Brand awareness kampanje</strong> — cilj je vidljivost brenda, ne klikovi</li>
-          <li><strong>Konkurentne industrije</strong> — neki sektori imaju prirodno niži benchmark (npr. osiguranje, finansije)</li>
-          <li><strong>Top-of-funnel YouTube</strong> — video ads za širu publiku imaju niži CTR jer cilj je reach</li>
+          <li><strong>Display remarketing</strong> - očekujte 0.5-1%, cilj je podsećanje, ne odmah klik</li>
+          <li><strong>Brand awareness kampanje</strong> - cilj je vidljivost brenda, ne klikovi</li>
+          <li><strong>Konkurentne industrije</strong> - neki sektori imaju prirodno niži benchmark (npr. osiguranje, finansije)</li>
+          <li><strong>Top-of-funnel YouTube</strong> - video ads za širu publiku imaju niži CTR jer cilj je reach</li>
         </ul>
       </div>
 
@@ -383,7 +383,7 @@ export default function CTRVodicPost() {
       </div>
 
       <p>
-        Ovo je najčešći MIT koji čujem od klijenata. "Imamo odličan CTR, ali nema rezultata" — jer CTR meri samo prvi korak (klik), ne i krajnji cilj (konverziju).
+        Ovo je najčešći MIT koji čujem od klijenata. "Imamo odličan CTR, ali nema rezultata" - jer CTR meri samo prvi korak (klik), ne i krajnji cilj (konverziju).
       </p>
 
       <p>
@@ -468,20 +468,20 @@ export default function CTRVodicPost() {
       <h2 id="povezani-vodici">Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score — kompletan vodič</p>
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score - kompletan vodič</p>
           <p className="text-xs text-gray-500 mb-0">Kako CTR utiče na Quality Score i cenu klika</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Ključne reči — kompletan vodič</p>
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Ključne reči - kompletan vodič</p>
           <p className="text-xs text-gray-500 mb-0">Od istraživanja do optimizacije ključnih reči</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimizacija — 30 taktika</p>
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimizacija - 30 taktika</p>
           <p className="text-xs text-gray-500 mb-0">Kompletna strategija za poboljšanje performansi</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "kako-poceti-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Kako početi sa Google Ads</p>
-          <p className="text-xs text-gray-500 mb-0">Vodič za početnike — od nule do prve kampanje</p>
+          <p className="text-xs text-gray-500 mb-0">Vodič za početnike - od nule do prve kampanje</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "rsa-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">RSA (Responsive Search Ads) vodič</p>

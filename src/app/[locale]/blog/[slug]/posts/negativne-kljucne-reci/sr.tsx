@@ -48,7 +48,7 @@ export default function NegativeKeywordsVodicPost() {
       {/* ── Šta su negativne ključne reči ── */}
       <h2>Šta su negativne ključne reči i zašto su kritične</h2>
       <p>
-<GlossaryLink slug="negative-keywords">Negativne ključne reči</GlossaryLink> (negative keywords) su reči i fraze za koje NE želite da se vaši oglasi prikazuju. Dok regularne ključne reči privlače saobraćaj, negativne ga filtriraju — štite vaš budžet od klikova koji nikada neće doneti konverziju.
+<GlossaryLink slug="negative-keywords">Negativne ključne reči</GlossaryLink> (negative keywords) su reči i fraze za koje NE želite da se vaši oglasi prikazuju. Dok regularne ključne reči privlače saobraćaj, negativne ga filtriraju - štite vaš budžet od klikova koji nikada neće doneti konverziju.
       </p>
       <p>
         U praksi, ovo je jedna od najvažnijih optimizacionih aktivnosti. Na svakom nalogu koji preuzmem, Search Terms Report otkriva minimum 15-20% budžeta potrošenog na potpuno irelevantne pretrage.
@@ -56,7 +56,7 @@ export default function NegativeKeywordsVodicPost() {
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
-          Moje iskustvo: Pravilna negative keywords strategija je najbrži način da poboljšate ROI — rezultati su vidljivi odmah, već u prvoj nedelji.
+          Moje iskustvo: Pravilna negative keywords strategija je najbrži način da poboljšate ROI - rezultati su vidljivi odmah, već u prvoj nedelji.
         </p>
       </div>
 
@@ -150,16 +150,16 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Preporuka za match type</p>
         <p className="text-blue-800 text-base mb-0">
-          Koristite Negative Broad za većinu slučajeva — pokriva najširi opseg. Negative Phrase za specifične fraze gde redosled igra ulogu. Negative Exact retko — samo za vrlo specifične slučajeve.
+          Koristite Negative Broad za većinu slučajeva - pokriva najširi opseg. Negative Phrase za specifične fraze gde redosled igra ulogu. Negative Exact retko - samo za vrlo specifične slučajeve.
         </p>
       </div>
 
       <hr />
 
       {/* ── Universal Negative Lista ── */}
-      <h2>Univerzalna negativna lista — starter za svaki biznis</h2>
+      <h2>Univerzalna negativna lista - starter za svaki biznis</h2>
       <p>
-        Ovu listu preporučujem za svaki nalog kao polaznu tačku. Prilagodite prema vašem biznisu — neke od ovih reči mogu biti relevantne za vas (npr. {`"besplatno"`} ako nudite free trial).
+        Ovu listu preporučujem za svaki nalog kao polaznu tačku. Prilagodite prema vašem biznisu - neke od ovih reči mogu biti relevantne za vas (npr. {`"besplatno"`} ako nudite free trial).
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -206,7 +206,7 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce — Moda i odeća</h3>
+          <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce - Moda i odeća</h3>
         </div>
         <p className="text-sm text-gray-600 mb-0">jeftino, polovno, second hand, outlet, imitacija, replika, fake, kako sašiti, šivenje, pattern, kroj, DIY, trendovi, fashion week, modni dizajner posao, vintage, cosplay, kostim</p>
       </div>
@@ -214,7 +214,7 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce — Elektronika</h3>
+          <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce - Elektronika</h3>
         </div>
         <p className="text-sm text-gray-600 mb-0">polovno, refurbished, korišćeno, broken, pokvaren, popravka, servis, delovi, kako popraviti, teardown, review, unboxing, drajveri, firmware, manual, uputstvo, specifikacije</p>
       </div>
@@ -269,23 +269,23 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Search Terms Report</strong> <span className="text-gray-500">— najvažnija metoda. Filter: last 7 dana, sort po cost-u, pitanje: {`"Da li bi ova osoba kupila od mene?"`} Minimum jednom nedeljno.</span></div>
+            <div><strong>Search Terms Report</strong> <span className="text-gray-500">- najvažnija metoda. Filter: last 7 dana, sort po cost-u, pitanje: {`"Da li bi ova osoba kupila od mene?"`} Minimum jednom nedeljno.</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Pre-launch brainstorming</strong> <span className="text-gray-500">— zamislite ko NIJE vaš kupac, razmislite o ambiguous keywords, pogledajte Keyword Planner suggestions</span></div>
+            <div><strong>Pre-launch brainstorming</strong> <span className="text-gray-500">- zamislite ko NIJE vaš kupac, razmislite o ambiguous keywords, pogledajte Keyword Planner suggestions</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Competitor research</strong> <span className="text-gray-500">— pretražite vaše ključne reči na Google, pogledajte {`"Searches related to..."`}, identifikujte irelevantne</span></div>
+            <div><strong>Competitor research</strong> <span className="text-gray-500">- pretražite vaše ključne reči na Google, pogledajte {`"Searches related to..."`}, identifikujte irelevantne</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Google Autocomplete</strong> <span className="text-gray-500">— počnite kucati ključnu reč, pogledajte suggestions, identifikujte irelevantne</span></div>
+            <div><strong>Google Autocomplete</strong> <span className="text-gray-500">- počnite kucati ključnu reč, pogledajte suggestions, identifikujte irelevantne</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div><strong>Customer support mining</strong> <span className="text-gray-500">— pitajte support tim koja pitanja dolaze od ljudi koji NISU pravi kupci</span></div>
+            <div><strong>Customer support mining</strong> <span className="text-gray-500">- pitajte support tim koja pitanja dolaze od ljudi koji NISU pravi kupci</span></div>
           </div>
         </div>
       </div>
@@ -348,7 +348,7 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
       <hr />
 
       {/* ── Audit checklist ── */}
-      <h2>Negativne ključne reči — audit checklist</h2>
+      <h2>Negativne ključne reči - audit checklist</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
@@ -411,13 +411,13 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #3</p>
           <p className="font-semibold mb-2">Pogrešan match type za negativne reči</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Koristite Negative Broad za opšte termine. Exact negative propušta varijacije — {`"besplatno"`} u Exact ne blokira {`"besplatno preuzimanje CRM"`}.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Koristite Negative Broad za opšte termine. Exact negative propušta varijacije - {`"besplatno"`} u Exact ne blokira {`"besplatno preuzimanje CRM"`}.</p>
           </div>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #4</p>
-          <p className="font-semibold mb-2">Bez deljenih lista — sve ručno po kampanjama</p>
+          <p className="font-semibold mb-2">Bez deljenih lista - sve ručno po kampanjama</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
             <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Kreirajte Negative Keyword Lists i primenite na sve kampanje. Konzistentnost i efikasnost.</p>
           </div>
@@ -444,7 +444,7 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Nema gornjeg limita. Tipično: 50-200 za starter listu, raste vremenom. Kvalitet je važniji od kvantiteta — bolje 50 pažljivo odabranih nego 500 nasumičnih.
+            Nema gornjeg limita. Tipično: 50-200 za starter listu, raste vremenom. Kvalitet je važniji od kvantiteta - bolje 50 pažljivo odabranih nego 500 nasumičnih.
           </div>
         </details>
 
@@ -454,7 +454,7 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Indirektno — da. Bolji <GlossaryLink slug="ctr">CTR</GlossaryLink> (manje irelevantnih prikaza) → bolji Expected CTR → bolji <GlossaryLink slug="quality-score">QS</GlossaryLink>. Više o tome u <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline">Quality Score vodiču</Link>.
+            Indirektno - da. Bolji <GlossaryLink slug="ctr">CTR</GlossaryLink> (manje irelevantnih prikaza) → bolji Expected CTR → bolji <GlossaryLink slug="quality-score">QS</GlossaryLink>. Više o tome u <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline">Quality Score vodiču</Link>.
           </div>
         </details>
 
@@ -484,17 +484,17 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Universal lista (besplatno, posao, DIY) je dobar starter za većinu biznisa. Ali uvek prilagodite svom biznisu — {`"besplatno"`} možda nije negative ako nudite free trial ili besplatnu dostavu.
+            Universal lista (besplatno, posao, DIY) je dobar starter za većinu biznisa. Ali uvek prilagodite svom biznisu - {`"besplatno"`} možda nije negative ako nudite free trial ili besplatnu dostavu.
           </div>
         </details>
 
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Negative Broad vs Negative Phrase — kada koji?
+            Negative Broad vs Negative Phrase - kada koji?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Broad: za opšte termine koje uvek želite blokirati (besplatno, posao) — pokriva sve pretrage sa tom reči. Phrase: za specifične fraze gde redosled ima značaj. Exact: retko — samo za vrlo specifične slučajeve gde je samo ta tačna pretraga problem.
+            Broad: za opšte termine koje uvek želite blokirati (besplatno, posao) - pokriva sve pretrage sa tom reči. Phrase: za specifične fraze gde redosled ima značaj. Exact: retko - samo za vrlo specifične slučajeve gde je samo ta tačna pretraga problem.
           </div>
         </details>
       </div>
@@ -530,7 +530,7 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
         </Link>
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Ključne reči — kompletan vodič</p>
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Ključne reči - kompletan vodič</p>
           <p className="text-xs text-gray-500 mb-0">Od istraživanja do optimizacije ključnih reči</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

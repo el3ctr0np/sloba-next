@@ -38,12 +38,12 @@ export default function ConversionTrackingVodicPost() {
           Šta je conversion tracking?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong><GlossaryLink slug="conversion">Conversion tracking</GlossaryLink></strong> je sistem praćenja koji beleži šta korisnik uradi nakon klika na oglas — kupovinu, poziv, popunjenu formu. Postavlja se preko <strong><GlossaryLink slug="gtm">GTM-a</GlossaryLink>, <GlossaryLink slug="ga4">GA4</GlossaryLink> i Google Ads tagova</strong> i predstavlja osnovu na kojoj Smart Bidding algoritmi optimizuju kampanje. Bez tačnog tracking-a, oko 40% naloga optimizuje ka pogrešnim signalima i troši budžet naslepo.
+          <strong><GlossaryLink slug="conversion">Conversion tracking</GlossaryLink></strong> je sistem praćenja koji beleži šta korisnik uradi nakon klika na oglas - kupovinu, poziv, popunjenu formu. Postavlja se preko <strong><GlossaryLink slug="gtm">GTM-a</GlossaryLink>, <GlossaryLink slug="ga4">GA4</GlossaryLink> i Google Ads tagova</strong> i predstavlja osnovu na kojoj Smart Bidding algoritmi optimizuju kampanje. Bez tačnog tracking-a, oko 40% naloga optimizuje ka pogrešnim signalima i troši budžet naslepo.
         </p>
       </div>
 
       <p>
-        Svake nedelje vidim istu situaciju. Firma troši €2,000-5,000 mesečno na Google Ads. Kampanje su aktivne, klikova ima, ali rezultata nema ili su nepouzdani. Kada pogledam nalog, problem je skoro uvek isti — conversion tracking ne radi kako treba.
+        Svake nedelje vidim istu situaciju. Firma troši €2,000-5,000 mesečno na Google Ads. Kampanje su aktivne, klikova ima, ali rezultata nema ili su nepouzdani. Kada pogledam nalog, problem je skoro uvek isti - conversion tracking ne radi kako treba.
       </p>
       <p>
         Moje iskustvo pokazuje da je loš tracking tihi ubica Google Ads performansi. Bez pouzdanih podataka o konverzijama ne znate šta funkcioniše, algoritmi optimizuju ka pogrešnim signalima i donosite odluke na osnovu lažnih podataka.
@@ -61,7 +61,7 @@ export default function ConversionTrackingVodicPost() {
           <li><a href="#tipovi-konverzija-koje-treba-pratiti" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tipovi konverzija koje treba pratiti</a></li>
           <li><a href="#alati-za-conversion-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Alati za conversion tracking</a></li>
           <li><a href="#consent-mode-v2" className="block py-1 text-base text-gray-700 hover:text-primary underline">Consent Mode v2: obavezan pre svih tagova (EEA/UK)</a></li>
-          <li><a href="#korak-po-korak-postavljanje-tracking-a" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak po korak — postavljanje tracking-a</a></li>
+          <li><a href="#korak-po-korak-postavljanje-tracking-a" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak po korak - postavljanje tracking-a</a></li>
           <li><a href="#conversion-tracking-za-ecommerce" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conversion tracking za eCommerce</a></li>
           <li><a href="#conversion-tracking-za-lead-generation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Conversion tracking za Lead Generation</a></li>
           <li><a href="#najcesce-greske-u-conversion-tracking-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešće greške u conversion tracking-u</a></li>
@@ -83,12 +83,12 @@ export default function ConversionTrackingVodicPost() {
         Google Ads Smart Bidding (Target CPA, Target ROAS, Maximize Conversions) koristi machine learning da optimizuje ponude u realnom vremenu. Ali ML je dobar koliko i podaci koje mu date.
       </p>
       <p>
-        Sa lošim tracking-om, algoritam uči pogrešne signale — biduje previše za loš saobraćaj, biduje premalo za dobar saobraćaj i budžet odlazi u vetar. Sa dobrim tracking-om, algoritam razume šta je prava konverzija, biduje agresivnije kada su signali dobri i štedi budžet kada signali nisu perspektivni.
+        Sa lošim tracking-om, algoritam uči pogrešne signale - biduje previše za loš saobraćaj, biduje premalo za dobar saobraćaj i budžet odlazi u vetar. Sa dobrim tracking-om, algoritam razume šta je prava konverzija, biduje agresivnije kada su signali dobri i štedi budžet kada signali nisu perspektivni.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
-          "Kampanja bez pouzdanog conversion tracking-a je kao auto bez instrumenata — vozite naslepo i ne znate koliko brzo idete ili koliko goriva trošite."
+          "Kampanja bez pouzdanog conversion tracking-a je kao auto bez instrumenata - vozite naslepo i ne znate koliko brzo idete ili koliko goriva trošite."
         </p>
       </div>
 
@@ -115,21 +115,21 @@ export default function ConversionTrackingVodicPost() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Primary</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Primarne konverzije</h3>
           <p className="text-base text-gray-600 mb-0">
-            Krajnji cilj kampanje — kupovina, lead, poziv, registracija. Koriste se za bid optimization.
+            Krajnji cilj kampanje - kupovina, lead, poziv, registracija. Koriste se za bid optimization.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Secondary</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Sekundarne konverzije</h3>
           <p className="text-base text-gray-600 mb-0">
-            Koraci prema cilju — add to cart, pricing page visit, preuzimanje kataloga. Koriste se za observation.
+            Koraci prema cilju - add to cart, pricing page visit, preuzimanje kataloga. Koriste se za observation.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Micro</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Micro konverzije</h3>
           <p className="text-base text-gray-600 mb-0">
-            Engagement signali — scroll depth, video view, time on site. Pomažu algoritmu kada je volumen nizak.
+            Engagement signali - scroll depth, video view, time on site. Pomažu algoritmu kada je volumen nizak.
           </p>
         </div>
       </div>
@@ -309,7 +309,7 @@ export default function ConversionTrackingVodicPost() {
 
       <hr />
 
-      <h2 id="korak-po-korak-postavljanje-tracking-a">Korak po korak — postavljanje tracking-a</h2>
+      <h2 id="korak-po-korak-postavljanje-tracking-a">Korak po korak - postavljanje tracking-a</h2>
       <p>
         Ovo je postupak koji koristim za sve klijente. GTM + GA4 + Google Ads tag + Enhanced Conversions = kompletna postavka koja daje maksimalnu preciznost.
       </p>
@@ -325,49 +325,49 @@ export default function ConversionTrackingVodicPost() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div>
-              <strong>Postavite Google Tag Manager container</strong> <span className="text-gray-500">— Kreirajte GTM account i container, instalirajte container snippet u &lt;head&gt; i &lt;body&gt; na svim stranicama sajta.</span>
+              <strong>Postavite Google Tag Manager container</strong> <span className="text-gray-500">- Kreirajte GTM account i container, instalirajte container snippet u &lt;head&gt; i &lt;body&gt; na svim stranicama sajta.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div>
-              <strong>Dodajte Conversion Linker tag</strong> <span className="text-gray-500">— U GTM kreirajte tag tipa "Conversion Linker", trigger All Pages. Ovo je OBAVEZNO za cross-domain i cross-device tracking.</span>
+              <strong>Dodajte Conversion Linker tag</strong> <span className="text-gray-500">- U GTM kreirajte tag tipa "Conversion Linker", trigger All Pages. Ovo je OBAVEZNO za cross-domain i cross-device tracking.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div>
-              <strong>Povežite GA4 property</strong> <span className="text-gray-500">— Kreirajte GA4 property i instalirajte GA4 tag kroz GTM ili direktno. U GA4 označite događaje purchase i generate_lead kao key events. Tek kada ih uvezete u Google Ads, tamo postaju conversion actions.</span>
+              <strong>Povežite GA4 property</strong> <span className="text-gray-500">- Kreirajte GA4 property i instalirajte GA4 tag kroz GTM ili direktno. U GA4 označite događaje purchase i generate_lead kao key events. Tek kada ih uvezete u Google Ads, tamo postaju conversion actions.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
             <div>
-              <strong>Kreirajte Google Ads conversion action</strong> <span className="text-gray-500">— U Google Ads → Goals → Conversions → Summary → + New conversion action. Kopirajte Conversion ID i Conversion Label.</span>
+              <strong>Kreirajte Google Ads conversion action</strong> <span className="text-gray-500">- U Google Ads → Goals → Conversions → Summary → + New conversion action. Kopirajte Conversion ID i Conversion Label.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
             <div>
-              <strong>Postavite Google Ads Conversion tag u GTM</strong> <span className="text-gray-500">— Kreirajte tag tipa "Google Ads Conversion Tracking", unesite ID i Label, postavite trigger (npr. Page URL contains "thank-you" ili Form ID equals "contact-form").</span>
+              <strong>Postavite Google Ads Conversion tag u GTM</strong> <span className="text-gray-500">- Kreirajte tag tipa "Google Ads Conversion Tracking", unesite ID i Label, postavite trigger (npr. Page URL contains "thank-you" ili Form ID equals "contact-form").</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
             <div>
-              <strong>Uključite Enhanced Conversions</strong> <span className="text-gray-500">— U Google Ads → Goals → Conversions → Settings → Enhanced conversions → Turn on. Izaberite GTM metod i mapirajte user data (email, phone, address) kroz data layer. Za EEA i UK saobraćaj Enhanced Conversions rade samo kada je ad_user_data granted.</span>
+              <strong>Uključite Enhanced Conversions</strong> <span className="text-gray-500">- U Google Ads → Goals → Conversions → Settings → Enhanced conversions → Turn on. Izaberite GTM metod i mapirajte user data (email, phone, address) kroz data layer. Za EEA i UK saobraćaj Enhanced Conversions rade samo kada je ad_user_data granted.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">7</span>
             <div>
-              <strong>Testirajte u GTM Preview mode</strong> <span className="text-gray-500">— Kliknite Preview u GTM, prođite conversion flow na sajtu i proverite da li tagovi rade. Proverite i Google Tag Assistant Chrome extension.</span>
+              <strong>Testirajte u GTM Preview mode</strong> <span className="text-gray-500">- Kliknite Preview u GTM, prođite conversion flow na sajtu i proverite da li tagovi rade. Proverite i Google Tag Assistant Chrome extension.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">8</span>
             <div>
-              <strong>Publish i verifikacija</strong> <span className="text-gray-500">— Objavite GTM container, napravite test konverziju i proverite da li se pojavljuje u Google Ads (3-6 sati delay je normalno).</span>
+              <strong>Publish i verifikacija</strong> <span className="text-gray-500">- Objavite GTM container, napravite test konverziju i proverite da li se pojavljuje u Google Ads (3-6 sati delay je normalno).</span>
             </div>
           </div>
         </div>
@@ -397,7 +397,7 @@ export default function ConversionTrackingVodicPost() {
         </p>
         <ul className="text-sm">
           <li>Trigger: Purchase confirmation page (npr. /order-complete, /thank-you)</li>
-          <li>Conversion value: Dynamic — povući iz data layer-a</li>
+          <li>Conversion value: Dynamic - povući iz data layer-a</li>
           <li>Count: Every (svaka porudžbina se računa)</li>
         </ul>
       </div>
@@ -497,9 +497,9 @@ export default function ConversionTrackingVodicPost() {
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">Offline Conversion Import — Game Changer za B2B</p>
+        <p className="font-semibold text-blue-900 mb-1">Offline Conversion Import - Game Changer za B2B</p>
         <p className="text-blue-800 text-base mb-0">
-          Preporučujem offline import svim B2B klijentima. Razlika je ogromna — Google uči koji tip lead-ova zapravo postaje klijent i optimizuje ka tome, ne samo ka volumenu form submissions. Očekujte 20-30% bolje CPA nakon nekoliko meseci učenja.
+          Preporučujem offline import svim B2B klijentima. Razlika je ogromna - Google uči koji tip lead-ova zapravo postaje klijent i optimizuje ka tome, ne samo ka volumenu form submissions. Očekujte 20-30% bolje CPA nakon nekoliko meseci učenja.
         </p>
       </div>
 
@@ -522,7 +522,7 @@ export default function ConversionTrackingVodicPost() {
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 my-4">
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška #2</p>
-        <p className="font-semibold mb-2">Duplo brojanje — Google Ads tag + GA4 import za istu konverziju</p>
+        <p className="font-semibold mb-2">Duplo brojanje - Google Ads tag + GA4 import za istu konverziju</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Koristite JEDNO ili DRUGO, ne oba. Ako uvozite konverzije iz GA4, deaktivirajte direktni Google Ads tag za tu istu akciju. Duplo brojanje ubija attribution preciznost.
@@ -545,7 +545,7 @@ export default function ConversionTrackingVodicPost() {
         <p className="font-semibold mb-2">Ne pratite vrednost konverzija (sve konverzije = "1")</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
-            <strong>Rešenje:</strong> Za eCommerce koristite dynamic conversion values — šaljite stvarnu transaction_value kroz data layer. Za lead gen, postavite fiksnu vrednost koja odgovara prosečnoj vrednosti lead-a. Bez vrednosti, Target ROAS ne radi.
+            <strong>Rešenje:</strong> Za eCommerce koristite dynamic conversion values - šaljite stvarnu transaction_value kroz data layer. Za lead gen, postavite fiksnu vrednost koja odgovara prosečnoj vrednosti lead-a. Bez vrednosti, Target ROAS ne radi.
           </p>
         </div>
       </div>
@@ -616,9 +616,9 @@ export default function ConversionTrackingVodicPost() {
           U Google Ads → Goals → Conversions → Summary pogledajte Status kolonu. Trebalo bi da piše "Recording conversions" sa zelenim checkmark-om.
         </p>
         <ul className="text-sm">
-          <li>Ako piše "Unverified" — tag još nije aktiviran (napravite test konverziju)</li>
-          <li>Ako piše "No recent conversions" — tag radi ali nema saobraćaja (OK za nove kampanje)</li>
-          <li>Ako piše "Inactive" ili "Error" — tag nije pravilno postavljen</li>
+          <li>Ako piše "Unverified" - tag još nije aktiviran (napravite test konverziju)</li>
+          <li>Ako piše "No recent conversions" - tag radi ali nema saobraćaja (OK za nove kampanje)</li>
+          <li>Ako piše "Inactive" ili "Error" - tag nije pravilno postavljen</li>
         </ul>
       </div>
 
@@ -643,19 +643,19 @@ export default function ConversionTrackingVodicPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Cross-check sa backend podacima</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Uporedite broj konverzija u Google Ads sa stvarnim brojem porudžbina/lead-ova iz CRM-a ili eCommerce platforme. Razlika 10-20% je normalna, ali ako je veća — imaš problem sa tracking-om.
+          Uporedite broj konverzija u Google Ads sa stvarnim brojem porudžbina/lead-ova iz CRM-a ili eCommerce platforme. Razlika 10-20% je normalna, ali ako je veća - imaš problem sa tracking-om.
         </p>
         <ul className="text-sm">
           <li>Export konverzija iz Google Ads za prošlu nedelju</li>
           <li>Export porudžbina/lead-ova iz backend sistema za isti period</li>
-          <li>Uporedite brojeve — ako je razlika &gt;30%, istražite uzrok</li>
+          <li>Uporedite brojeve - ako je razlika &gt;30%, istražite uzrok</li>
         </ul>
       </div>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
         <p className="text-yellow-800 text-base mb-0">
-          Konverzije se obično pojavljuju u Google Ads nakon 3-6 sati, ali može biti i do 24 sata. Nemojte paničiti ako test konverzija ne pokaže odmah — sačekajte nekoliko sati i proverite ponovo.
+          Konverzije se obično pojavljuju u Google Ads nakon 3-6 sati, ali može biti i do 24 sata. Nemojte paničiti ako test konverzija ne pokaže odmah - sačekajte nekoliko sati i proverite ponovo.
         </p>
       </div>
 
@@ -689,7 +689,7 @@ export default function ConversionTrackingVodicPost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Za osnovni GTM setup — ne obavezno. Možete sami postaviti GTM container i basic conversion tagove ako pratite dokumentaciju. Za Enhanced Conversions (data layer push) i server-side tracking — verovatno da, jer zahteva JavaScript i backend integraciju. Ako nemate tehničko znanje, preporučujem da angažujete developera ili Google Ads konsultanta koji će postaviti sve pravilno.
+          Za osnovni GTM setup - ne obavezno. Možete sami postaviti GTM container i basic conversion tagove ako pratite dokumentaciju. Za Enhanced Conversions (data layer push) i server-side tracking - verovatno da, jer zahteva JavaScript i backend integraciju. Ako nemate tehničko znanje, preporučujem da angažujete developera ili Google Ads konsultanta koji će postaviti sve pravilno.
         </div>
       </details>
 
@@ -730,7 +730,7 @@ export default function ConversionTrackingVodicPost() {
           Potrebna vam je pomoć sa conversion tracking-om?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Nudim kompletnu postavku conversion tracking-a — GTM, GA4, Google Ads tagove, Enhanced Conversions i offline import. Sve što vam treba da pratite prave rezultate i optimizujete ka profitabilnosti.
+          Nudim kompletnu postavku conversion tracking-a - GTM, GA4, Google Ads tagove, Enhanced Conversions i offline import. Sve što vam treba da pratite prave rezultate i optimizujete ka profitabilnosti.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju
@@ -772,13 +772,13 @@ export default function ConversionTrackingVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Conversion tracking prati akcije korisnika nakon klika na oglas — kupovinu, poziv, popunjavanje forme. Bez njega, Google ne zna koje ključne reči i oglasi donose rezultate, pa ne može optimizovati kampanje. To je osnova svake uspešne kampanje.
+            Conversion tracking prati akcije korisnika nakon klika na oglas - kupovinu, poziv, popunjavanje forme. Bez njega, Google ne zna koje ključne reči i oglasi donose rezultate, pa ne može optimizovati kampanje. To je osnova svake uspešne kampanje.
           </div>
         </details>
 
         <details className="bg-white border-2 border-gray-200 rounded-xl group">
           <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-            Google Tag vs GTM — šta koristiti?
+            Google Tag vs GTM - šta koristiti?
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">

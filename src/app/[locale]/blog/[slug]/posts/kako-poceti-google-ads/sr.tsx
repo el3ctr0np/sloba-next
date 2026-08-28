@@ -70,7 +70,7 @@ export default function KakoPocetiGoogleAdsSR() {
           <li><a href="#kako-google-ads-funkcionise-jednostavno-objasnjenje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako Google Ads funkcioniše (jednostavno objašnjenje)</a></li>
           <li><a href="#5-kljucnih-pojmova-koje-morate-razumeti" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 ključnih pojmova koje morate razumeti</a></li>
           <li><a href="#koji-tip-kampanje-izabrati-za-pocetak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koji tip kampanje izabrati za početak</a></li>
-          <li><a href="#korak-po-korak-od-nule-do-prve-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak po korak — od nule do prve kampanje</a></li>
+          <li><a href="#korak-po-korak-od-nule-do-prve-kampanje" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak po korak - od nule do prve kampanje</a></li>
           <li><a href="#koliki-budzet-za-pocetak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koliki budžet za početak</a></li>
           <li><a href="#5-najcescih-gresaka-pocetnika" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 najčešćih grešaka početnika</a></li>
           <li><a href="#sam-ili-sa-strucnjakom" className="block py-1 text-base text-gray-700 hover:text-primary underline">Sam ili sa stručnjakom</a></li>
@@ -94,12 +94,12 @@ export default function KakoPocetiGoogleAdsSR() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
         <p className="text-blue-800 text-base mb-0">
-          Počeo sam kao frilensar, a prve kampanje sam vodio za lokalne firme u okolini Nove Pazove — sa budžetima ispod €500 mesečno. Firme su znale da im je oglašavanje potrebno, ali nisu znale odakle da krenu. Naučio sam zajedno sa njima — i svaka ta kampanja mi je dala uvid koji nikakav kurs ne bi mogao da zameni.
+          Počeo sam kao frilensar, a prve kampanje sam vodio za lokalne firme u okolini Nove Pazove - sa budžetima ispod €500 mesečno. Firme su znale da im je oglašavanje potrebno, ali nisu znale odakle da krenu. Naučio sam zajedno sa njima - i svaka ta kampanja mi je dala uvid koji nikakav kurs ne bi mogao da zameni.
         </p>
       </div>
 
       <p>
-        U 2026. godini Google Ads je i dalje dominantan kanal za direktan odgovor — bilo da ste lokalni servis, eCommerce prodavnica ili B2B kompanija. Automatizacija je napredovala (AI bidding, Performance Max), ali osnove nisu se promenile: prava ključna reč + pravi oglas + prava stranica = konverzija.
+        U 2026. godini Google Ads je i dalje dominantan kanal za direktan odgovor - bilo da ste lokalni servis, eCommerce prodavnica ili B2B kompanija. Automatizacija je napredovala (AI bidding, Performance Max), ali osnove nisu se promenile: prava ključna reč + pravi oglas + prava stranica = konverzija.
       </p>
       <p>
         Ovaj vodič vam daje sve što vam treba da krenete sami. Ako u nekom trenutku poželite da neko ko se time bavi svaki dan preuzme vođenje umesto vas, tu je moja{" "}
@@ -111,7 +111,7 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija 2: Kako Google Ads funkcioniše ── */}
       <h2 id="kako-google-ads-funkcionise-jednostavno-objasnjenje">Kako Google Ads funkcioniše (jednostavno objašnjenje)</h2>
       <p>
-        <strong>Google Ads funkcioniše kao aukcija u realnom vremenu: svaki put kada korisnik nešto pretraži, Google za delić sekunde rangira oglašavače kombinacijom ponude (bid) i Quality Score-a — ocene relevantnosti od 1 do 10.</strong> Plaćate samo kada neko klikne na oglas (CPC model), a cena klika u Srbiji se kreće od €0,20 za lokalne niše do €1,50+ za konkurentne industrije. Zamislite to kao zakup najboljeg izloga u gradu — ali koji plaćate samo kada prolaznik zaista traži baš ono što prodajete.
+        <strong>Google Ads funkcioniše kao aukcija u realnom vremenu: svaki put kada korisnik nešto pretraži, Google za delić sekunde rangira oglašavače kombinacijom ponude (bid) i Quality Score-a - ocene relevantnosti od 1 do 10.</strong> Plaćate samo kada neko klikne na oglas (CPC model), a cena klika u Srbiji se kreće od €0,20 za lokalne niše do €1,50+ za konkurentne industrije. Zamislite to kao zakup najboljeg izloga u gradu - ali koji plaćate samo kada prolaznik zaista traži baš ono što prodajete.
       </p>
       <p>
         Ne plaćate za prikazivanje oglasa, samo za klik.
@@ -124,27 +124,27 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Korisnik ukuca ključnu reč</strong> <span className="text-gray-500">— npr. &quot;vodoinstalater Novi Sad hitno&quot;</span></div>
+            <div><strong>Korisnik ukuca ključnu reč</strong> <span className="text-gray-500">- npr. &quot;vodoinstalater Novi Sad hitno&quot;</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Google pokrένe aukciju</strong> <span className="text-gray-500">— u delićima sekunde, između svih oglašivača koji ciljaju tu reč</span></div>
+            <div><strong>Google pokrένe aukciju</strong> <span className="text-gray-500">- u delićima sekunde, između svih oglašivača koji ciljaju tu reč</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Oglas se prikazuje</strong> <span className="text-gray-500">— pobednik aukcije dobija poziciju (nije uvek onaj ko plati najviše)</span></div>
+            <div><strong>Oglas se prikazuje</strong> <span className="text-gray-500">- pobednik aukcije dobija poziciju (nije uvek onaj ko plati najviše)</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Korisnik klikne</strong> <span className="text-gray-500">— vi plaćate <GlossaryLink slug="cpc">CPC</GlossaryLink> (cenu po kliku) tek u ovom trenutku</span></div>
+            <div><strong>Korisnik klikne</strong> <span className="text-gray-500">- vi plaćate <GlossaryLink slug="cpc">CPC</GlossaryLink> (cenu po kliku) tek u ovom trenutku</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div><strong>Dolazi na landing page</strong> <span className="text-gray-500">— stranica mora biti relevantna i brza da ne izgubite posetioca</span></div>
+            <div><strong>Dolazi na landing page</strong> <span className="text-gray-500">- stranica mora biti relevantna i brza da ne izgubite posetioca</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
-            <div><strong>Konverzija</strong> <span className="text-gray-500">— kupovina, poziv, popunjeni formular — zavisno od vašeg cilja</span></div>
+            <div><strong>Konverzija</strong> <span className="text-gray-500">- kupovina, poziv, popunjeni formular - zavisno od vašeg cilja</span></div>
           </div>
         </div>
       </div>
@@ -152,12 +152,12 @@ export default function KakoPocetiGoogleAdsSR() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
         <p className="text-yellow-800 text-base mb-0">
-          Google Ads nije trošak — to je investicija sa merljivim povratom. Za razliku od bilborda ili radio reklame, tačno znate koliko ste platili po kliku, po konverziji i kakav je vaš ROI.
+          Google Ads nije trošak - to je investicija sa merljivim povratom. Za razliku od bilborda ili radio reklame, tačno znate koliko ste platili po kliku, po konverziji i kakav je vaš ROI.
         </p>
       </div>
 
       <p>
-        Aukcija nije isključivo o ceni. Google koristi <strong><GlossaryLink slug="quality-score">Quality Score</GlossaryLink></strong> — kombinaciju relevantnosti oglasa, ključnih reči i landing page-a — da odredi ko dobija bolju poziciju. To znači da pametno kreiran nalog može pobediti veće budžete konkurencije.
+        Aukcija nije isključivo o ceni. Google koristi <strong><GlossaryLink slug="quality-score">Quality Score</GlossaryLink></strong> - kombinaciju relevantnosti oglasa, ključnih reči i landing page-a - da odredi ko dobija bolju poziciju. To znači da pametno kreiran nalog može pobediti veće budžete konkurencije.
       </p>
 
       <hr />
@@ -187,7 +187,7 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Željeni ishod</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Konverzija</h3>
-          <p className="text-base text-gray-600 mb-0"><strong>Konverzija je akcija koju želite da posetilac uradi: kupovina, poziv, popunjen formular ili prijava.</strong> Bez praćenja konverzija ne znate šta funkcioniše — vodite kampanju naslepo.</p>
+          <p className="text-base text-gray-600 mb-0"><strong>Konverzija je akcija koju želite da posetilac uradi: kupovina, poziv, popunjen formular ili prijava.</strong> Bez praćenja konverzija ne znate šta funkcioniše - vodite kampanju naslepo.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Povrat na potrošnju oglasa</p>
@@ -201,7 +201,7 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija 4: Koji tip kampanje ── */}
       <h2 id="koji-tip-kampanje-izabrati-za-pocetak">Koji tip kampanje izabrati za početak</h2>
       <p>
-        Google Ads nudi više vrsta kampanja — svaka je dizajnirana za drugačiji cilj i drugačiju fazu puta kupca. Evo pregleda svakog tipa:
+        Google Ads nudi više vrsta kampanja - svaka je dizajnirana za drugačiji cilj i drugačiju fazu puta kupca. Evo pregleda svakog tipa:
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -213,7 +213,7 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Proizvodi</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shopping kampanje</h3>
-          <p className="text-base text-gray-600 mb-0">Oglasi sa slikom, nazivom i cenom proizvoda. Prikazuju se na vrhu rezultata za produktne pretrage. Savršene za eCommerce — ali zahtevaju product feed i malo iskustva.</p>
+          <p className="text-base text-gray-600 mb-0">Oglasi sa slikom, nazivom i cenom proizvoda. Prikazuju se na vrhu rezultata za produktne pretrage. Savršene za eCommerce - ali zahtevaju product feed i malo iskustva.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Baneri</p>
@@ -228,14 +228,14 @@ export default function KakoPocetiGoogleAdsSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card md:col-span-2">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Sve u jednom</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Performance Max</h3>
-          <p className="text-base text-gray-600 mb-0">Google-ov AI vodi kampanju na svim kanalima istovremeno (Search, Shopping, Display, YouTube, Maps). Moćan alat kada imate dovoljno konverzija i iskustva — ali crna kutija za početnike. Sačekajte da savladate Search pre PMax-a.</p>
+          <p className="text-base text-gray-600 mb-0">Google-ov AI vodi kampanju na svim kanalima istovremeno (Search, Shopping, Display, YouTube, Maps). Moćan alat kada imate dovoljno konverzija i iskustva - ali crna kutija za početnike. Sačekajte da savladate Search pre PMax-a.</p>
         </div>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Za početnike uvek preporučujem Search kampanje</p>
         <p className="text-blue-800 text-base mb-0">
-          Razlog je jednostavan: Search kampanje ciljaju ljude koji <em>aktivno traže</em> ono što nudite. Imate punu kontrolu nad ključnim rečima, oglasima i budžetom. Svaki klik je nameran. I što je najvažnije za učenje — možete jasno videti šta funkcioniše i zašto. Ostale tipove kampanji uvrstite tek kada razumete osnove.
+          Razlog je jednostavan: Search kampanje ciljaju ljude koji <em>aktivno traže</em> ono što nudite. Imate punu kontrolu nad ključnim rečima, oglasima i budžetom. Svaki klik je nameran. I što je najvažnije za učenje - možete jasno videti šta funkcioniše i zašto. Ostale tipove kampanji uvrstite tek kada razumete osnove.
         </p>
       </div>
 
@@ -248,24 +248,24 @@ export default function KakoPocetiGoogleAdsSR() {
       <hr />
 
       {/* ── Sekcija 5: Korak po korak ── */}
-      <h2 id="korak-po-korak-od-nule-do-prve-kampanje">Korak po korak — od nule do prve kampanje</h2>
+      <h2 id="korak-po-korak-od-nule-do-prve-kampanje">Korak po korak - od nule do prve kampanje</h2>
       <p>
-        Evo konkretnih koraka za pokretanje prve Google Ads kampanje. Ne preskačite korake — redosled je bitan, posebno postavljanje praćenja konverzija pre svega ostalog.
+        Evo konkretnih koraka za pokretanje prve Google Ads kampanje. Ne preskačite korake - redosled je bitan, posebno postavljanje praćenja konverzija pre svega ostalog.
       </p>
 
       <h3 id="korak-1-otvorite-google-ads-nalog">Korak 1: Otvorite Google Ads nalog</h3>
       <p>
-        Idite na <a href="https://ads.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">ads.google.com</a> i registrujte se sa Gmail nalogom. <strong>Koristite &quot;Expert mode&quot;</strong> umesto automatskog podešavanja koje vodi ka &quot;Smart Campaigns&quot; — one imaju manje kontrole i lošije rezultate za većinu biznisa.
+        Idite na <a href="https://ads.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">ads.google.com</a> i registrujte se sa Gmail nalogom. <strong>Koristite &quot;Expert mode&quot;</strong> umesto automatskog podešavanja koje vodi ka &quot;Smart Campaigns&quot; - one imaju manje kontrole i lošije rezultate za većinu biznisa.
       </p>
 
       <h3 id="korak-2-povezite-sa-google-analytics-4">Korak 2: Povežite sa Google Analytics 4</h3>
       <p>
-        U podešavanjima naloga povežite GA4 property. Ovo vam daje uvid u ponašanje korisnika <em>nakon</em> klika — bounce rate, vreme na stranici, putanja kroz sajt. Bez GA4 vidite samo klikove, ne i šta se dešava dalje.
+        U podešavanjima naloga povežite GA4 property. Ovo vam daje uvid u ponašanje korisnika <em>nakon</em> klika - bounce rate, vreme na stranici, putanja kroz sajt. Bez GA4 vidite samo klikove, ne i šta se dešava dalje.
       </p>
 
       <h3 id="korak-3-postavite-conversion-tracking">Korak 3: Postavite conversion tracking od prvog dana</h3>
       <p>
-        Ovo je <strong>najvažniji korak</strong>. Bez praćenja konverzija ne znate šta vam donosi rezultate — vodite kampanju naslepo. Postavite tracking za svaki važan cilj: kupovina, poziv, popunjeni formular.{" "}
+        Ovo je <strong>najvažniji korak</strong>. Bez praćenja konverzija ne znate šta vam donosi rezultate - vodite kampanju naslepo. Postavite tracking za svaki važan cilj: kupovina, poziv, popunjeni formular.{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="text-blue-700 underline">Detaljni vodič za conversion tracking</Link>.
       </p>
 
@@ -292,7 +292,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Faza učenja</p>
         <p className="text-blue-800 text-base mb-0">
-          Nakon pokretanja, prvih 7-10 dana je faza učenja — algoritam prikuplja podatke. Ne dirajte kampanju prečesto. Pregledajte rezultate jednom dnevno, ali suštinske promene pravite tek kada imate dovoljno podataka (minimum 50-100 klikova po ad grupi).
+          Nakon pokretanja, prvih 7-10 dana je faza učenja - algoritam prikuplja podatke. Ne dirajte kampanju prečesto. Pregledajte rezultate jednom dnevno, ali suštinske promene pravite tek kada imate dovoljno podataka (minimum 50-100 klikova po ad grupi).
         </p>
       </div>
 
@@ -301,10 +301,10 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija 6: Budžet ── */}
       <h2 id="koliki-budzet-za-pocetak">Koliki budžet za početak</h2>
       <p>
-        <strong>Minimalni smisleni budžet za Google Ads u Srbiji je €300–500 mesečno (€10–20 dnevno), uz period testiranja od 4–8 nedelja pre ocene rezultata.</strong> Sa manjim budžetom kampanja ne skuplja dovoljno podataka za optimizaciju: potrebno je 30–50 konverzija mesečno da bi automatsko bidovanje radilo pouzdano.
+        <strong>Minimalni smisleni budžet za Google Ads u Srbiji je €300-500 mesečno (€10-20 dnevno), uz period testiranja od 4-8 nedelja pre ocene rezultata.</strong> Sa manjim budžetom kampanja ne skuplja dovoljno podataka za optimizaciju: potrebno je 30-50 konverzija mesečno da bi automatsko bidovanje radilo pouzdano.
       </p>
       <p>
-        Ovo je jedno od najčešćih pitanja koje dobijam: &quot;Koliko para treba da potrošim?&quot; Tačan odgovor zavisi od tržišta, industrije i vaših ciljeva — ali gornje pravilo važi kao polazna tačka za testiranje.
+        Ovo je jedno od najčešćih pitanja koje dobijam: &quot;Koliko para treba da potrošim?&quot; Tačan odgovor zavisi od tržišta, industrije i vaših ciljeva - ali gornje pravilo važi kao polazna tačka za testiranje.
       </p>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
@@ -329,26 +329,26 @@ export default function KakoPocetiGoogleAdsSR() {
           <tbody>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Srbija</td>
-              <td className="py-3 px-3">€300–500</td>
-              <td className="py-3 px-3">€0,20–1,50</td>
+              <td className="py-3 px-3">€300-500</td>
+              <td className="py-3 px-3">€0,20-1,50</td>
               <td className="py-3 px-3 text-gray-500">Nizak CPC, manja konkurencija</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">Hrvatska</td>
-              <td className="py-3 px-3">€400–600</td>
-              <td className="py-3 px-3">€0,50–2,50</td>
+              <td className="py-3 px-3">€400-600</td>
+              <td className="py-3 px-3">€0,50-2,50</td>
               <td className="py-3 px-3 text-gray-500">Nešto viša konkurencija</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">UK</td>
-              <td className="py-3 px-3">€800–1.500</td>
-              <td className="py-3 px-3">€1,50–6,00</td>
+              <td className="py-3 px-3">€800-1.500</td>
+              <td className="py-3 px-3">€1,50-6,00</td>
               <td className="py-3 px-3 text-gray-500">Visoka konkurencija, viša kupovna moć</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">USA</td>
-              <td className="py-3 px-3">€1.000–2.000+</td>
-              <td className="py-3 px-3">€2,00–10,00+</td>
+              <td className="py-3 px-3">€1.000-2.000+</td>
+              <td className="py-3 px-3">€2,00-10,00+</td>
               <td className="py-3 px-3 text-gray-500">Najkonkurentnije tržište, najviši CPC</td>
             </tr>
           </tbody>
@@ -358,7 +358,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
         <p className="text-blue-800 text-base mb-0">
-          Sa budžetima ispod €500 mesečno postigao sam odlične rezultate za lokalne firme u Srbiji. Ključ nije u veličini budžeta — ključ je u preciznosti ciljanja. Mali budžet dobro usmeren bije veliki budžet rasut na sve strane.
+          Sa budžetima ispod €500 mesečno postigao sam odlične rezultate za lokalne firme u Srbiji. Ključ nije u veličini budžeta - ključ je u preciznosti ciljanja. Mali budžet dobro usmeren bije veliki budžet rasut na sve strane.
         </p>
       </div>
 
@@ -391,7 +391,7 @@ export default function KakoPocetiGoogleAdsSR() {
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
         <p className="text-base text-green-800 mb-0">
-          Pre pokretanja kampanje, postavite conversion tracking za svaki važan cilj — kupovina, poziv, formular. Ovo je korak koji nikada ne preskačem kod klijenata.
+          Pre pokretanja kampanje, postavite conversion tracking za svaki važan cilj - kupovina, poziv, formular. Ovo je korak koji nikada ne preskačem kod klijenata.
         </p>
       </div>
 
@@ -402,24 +402,24 @@ export default function KakoPocetiGoogleAdsSR() {
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
         <p className="text-base text-green-800 mb-0">
-          Svaki oglas treba da vodi na stranicu koja direktno odgovara pretrazi. Ako neko traži &quot;ugradnja klime Beograd&quot; — vodite ih na stranicu o ugradnji klime, ne na homepage.
+          Svaki oglas treba da vodi na stranicu koja direktno odgovara pretrazi. Ako neko traži &quot;ugradnja klime Beograd&quot; - vodite ih na stranicu o ugradnji klime, ne na homepage.
         </p>
       </div>
 
-      <h3 id="greska-4-prerane-izmene-kampanje">Greška 4: Menjaju kampanju previše brzo — ne čekaju dovoljno podataka</h3>
+      <h3 id="greska-4-prerane-izmene-kampanje">Greška 4: Menjaju kampanju previše brzo - ne čekaju dovoljno podataka</h3>
       <p>
         Nestrpljenje je skupo. Kada promenite kampanju posle 10 klikova, ne znate da li ste popravili nešto ili samo dodali šum. Algoritam takođe treba vremena da se prilagodi.
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
         <p className="text-base text-green-800 mb-0">
-          Prvih 2-4 nedelje su faza učenja — i za algoritam i za vas. Suštinske promene pravite tek posle 50-100 klikova po segmentu. Prerane izmene remete algoritam i produžavaju period učenja.
+          Prvih 2-4 nedelje su faza učenja - i za algoritam i za vas. Suštinske promene pravite tek posle 50-100 klikova po segmentu. Prerane izmene remete algoritam i produžavaju period učenja.
         </p>
       </div>
 
       <h3 id="greska-5-automatsko-prihvatanje-preporuka">Greška 5: Prihvataju sve Google-ove &quot;pametne&quot; preporuke bez razumevanja</h3>
       <p>
-        Google vam aktivno predlaže promene — ali te preporuke su uvek u Google-ovom interesu (veća potrošnja), ne nužno u vašem. Automatsko prihvatanje može udvostručiti troškove za minimalan benefit.
+        Google vam aktivno predlaže promene - ali te preporuke su uvek u Google-ovom interesu (veća potrošnja), ne nužno u vašem. Automatsko prihvatanje može udvostručiti troškove za minimalan benefit.
       </p>
       <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 my-4">
         <p className="font-semibold text-green-900 mb-1">Rešenje</p>
@@ -433,13 +433,13 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija 8: Sam ili sa stručnjakom ── */}
       <h2 id="sam-ili-sa-strucnjakom">Sam ili sa stručnjakom</h2>
       <p>
-        Ovo je pitanje koje dobijam često — i iskren odgovor zavisi od toga šta je vaša primarna delatnost, koliko vremena imate i koliko brzo trebate rezultate.
+        Ovo je pitanje koje dobijam često - i iskren odgovor zavisi od toga šta je vaša primarna delatnost, koliko vremena imate i koliko brzo trebate rezultate.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">DIY vs. stručnjak — ključno pitanje</p>
+        <p className="font-semibold text-blue-900 mb-1">DIY vs. stručnjak - ključno pitanje</p>
         <p className="text-blue-800 text-base mb-0">
-          Ako imate vremena za učenje i manji budžet, DIY je potpuno opravdan put. Google Ads je dostupan svakome. Ali ako je vaše vreme skuplje od usluge stručnjaka, ili ako je greška u kampanjama skupa (veći budžeti, konkurentna tržišta) — angažovanje iskusnog praktičara donosi brži ROI.
+          Ako imate vremena za učenje i manji budžet, DIY je potpuno opravdan put. Google Ads je dostupan svakome. Ali ako je vaše vreme skuplje od usluge stručnjaka, ili ako je greška u kampanjama skupa (veći budžeti, konkurentna tržišta) - angažovanje iskusnog praktičara donosi brži ROI.
         </p>
       </div>
 
@@ -456,17 +456,17 @@ export default function KakoPocetiGoogleAdsSR() {
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Cena upravljanja</td>
               <td className="py-3 px-3">€0 (samo ad spend)</td>
-              <td className="py-3 px-3">€200–600/mesečno</td>
+              <td className="py-3 px-3">€200-600/mesečno</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">Kriva učenja</td>
               <td className="py-3 px-3">Puno vremena uloženo</td>
-              <td className="py-3 px-3">Minimalno — stručnjak to zna</td>
+              <td className="py-3 px-3">Minimalno - stručnjak to zna</td>
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Brzina rezultata</td>
-              <td className="py-3 px-3">Sporije — potrebno iskustvo</td>
-              <td className="py-3 px-3">Brže — iskustvo iz prakse</td>
+              <td className="py-3 px-3">Sporije - potrebno iskustvo</td>
+              <td className="py-3 px-3">Brže - iskustvo iz prakse</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">Greške</td>
@@ -503,30 +503,30 @@ export default function KakoPocetiGoogleAdsSR() {
         Učenje Google Ads-a je kontinuirani proces. Platforma se menja, algoritmi se ažuriraju, novi formati kampanja se uvode. Ono što funkcionisalo pre dve godine možda danas nije optimalno.
       </p>
       <p>
-        Moj put je bio direktan: počeo sam sa malim nalozima, pravio greške na malim budžetima i učio iz svakog rezultata. Nije bilo velikog kursa koji je sve promenio — bio je to spori, sistematični napredak kroz razumevanje zašto se nešto radi, ne samo šta se radi.
+        Moj put je bio direktan: počeo sam sa malim nalozima, pravio greške na malim budžetima i učio iz svakog rezultata. Nije bilo velikog kursa koji je sve promenio - bio je to spori, sistematični napredak kroz razumevanje zašto se nešto radi, ne samo šta se radi.
       </p>
 
       <p>Evo konkretnih resursa koje preporučujem:</p>
 
       <ul>
         <li>
-          <strong>Google Skillshop (oficijalna sertifikacija)</strong> — besplatan, detaljan, pokriven aktuelnim funkcionalnostima.{" "}
+          <strong>Google Skillshop (oficijalna sertifikacija)</strong> - besplatan, detaljan, pokriven aktuelnim funkcionalnostima.{" "}
           <a href="https://skillshop.withgoogle.com/" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">skillshop.withgoogle.com</a>. Sertifikat nije garantija uspeha, ali materijali su solidni za razumevanje osnova.
         </li>
         <li>
-          <strong>Učenje kroz rad</strong> — pokrenite sopstveni nalog, makar sa minimalnim budžetom. Teorija bez prakse ne daje osećaj za to kako se kampanje ponašaju u realnim uslovima.
+          <strong>Učenje kroz rad</strong> - pokrenite sopstveni nalog, makar sa minimalnim budžetom. Teorija bez prakse ne daje osećaj za to kako se kampanje ponašaju u realnim uslovima.
         </li>
         <li>
-          <strong>Regionalni LinkedIn eksperti</strong> — pratite praktičare koji dele konkretne primere sa realnih naloga. Postovi koji pokazuju stvarne rezultate i analizu su vredni stotinu generičkih saveta. Fokusirajte se na ljude koji rade u vašem tržišnom kontekstu.
+          <strong>Regionalni LinkedIn eksperti</strong> - pratite praktičare koji dele konkretne primere sa realnih naloga. Postovi koji pokazuju stvarne rezultate i analizu su vredni stotinu generičkih saveta. Fokusirajte se na ljude koji rade u vašem tržišnom kontekstu.
         </li>
         <li>
-          <strong>Google Ads Help Center</strong> — često potcenjen resurs. Dokumentacija je detaljna i ažurirana. Svaki put kada niste sigurni kako nešto funkcioniše — proverite ovde pre YouTube tutoriala.
+          <strong>Google Ads Help Center</strong> - često potcenjen resurs. Dokumentacija je detaljna i ažurirana. Svaki put kada niste sigurni kako nešto funkcioniše - proverite ovde pre YouTube tutoriala.
         </li>
       </ul>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
-          &quot;Ne bih ništa menjao u svom putu — samostalno učenje me naučilo šta je zaista bitno, a šta je samo teorija bez primene u praksi.&quot;
+          &quot;Ne bih ništa menjao u svom putu - samostalno učenje me naučilo šta je zaista bitno, a šta je samo teorija bez primene u praksi.&quot;
         </p>
       </div>
 
@@ -535,7 +535,7 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija: Remarketing za početnike ── */}
       <h2 id="remarketing-za-pocetnike">Remarketing: Sledeći korak nakon prve kampanje</h2>
       <p>
-        Kada pokrenete prvu kampanju i počnete da dobijate saobraćaj, jedan deo posetilaca neće konvertovati odmah. To je normalno — stopa konverzije od 2-5% znači da 95-98% ljudi napusti sajt bez akcije. <strong><GlossaryLink slug="remarketing">Remarketing</GlossaryLink></strong> vam omogućava da ponovo dosegnete te ljude sa ciljanim porukama.
+        Kada pokrenete prvu kampanju i počnete da dobijate saobraćaj, jedan deo posetilaca neće konvertovati odmah. To je normalno - stopa konverzije od 2-5% znači da 95-98% ljudi napusti sajt bez akcije. <strong><GlossaryLink slug="remarketing">Remarketing</GlossaryLink></strong> vam omogućava da ponovo dosegnete te ljude sa ciljanim porukama.
       </p>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
@@ -549,9 +549,9 @@ export default function KakoPocetiGoogleAdsSR() {
         Remarketing je posebno efikasan za:
       </p>
       <ul>
-        <li><strong>Napuštene korpe</strong> — podsetite kupce na proizvode koje su ostavili</li>
-        <li><strong>Posetioce servisnih stranica</strong> — dosegnite ih dok još uvek traže rešenje</li>
-        <li><strong>Čitaoce blog sadržaja</strong> — pretvorite edukaciju u konverziju</li>
+        <li><strong>Napuštene korpe</strong> - podsetite kupce na proizvode koje su ostavili</li>
+        <li><strong>Posetioce servisnih stranica</strong> - dosegnite ih dok još uvek traže rešenje</li>
+        <li><strong>Čitaoce blog sadržaja</strong> - pretvorite edukaciju u konverziju</li>
       </ul>
 
       <p>
@@ -572,7 +572,7 @@ export default function KakoPocetiGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Da — ali pod uslovom da postoji dovoljno pretrage za vaše usluge ili proizvode i da je ekonomija konverzije zdrava. Ako je vaša prosečna vrednost prodaje €50 a CPC je €3, trebate dobru stopu konverzije da budete profitabilni. Ako je prosečna prodaja €500, margina je puno veća. Google Ads funkcioniše za male biznise koji imaju jasnu ponudu i relevantan saobraćaj — posebno lokalni servisi i specijalizovani eCommerce.
+            Da - ali pod uslovom da postoji dovoljno pretrage za vaše usluge ili proizvode i da je ekonomija konverzije zdrava. Ako je vaša prosečna vrednost prodaje €50 a CPC je €3, trebate dobru stopu konverzije da budete profitabilni. Ako je prosečna prodaja €500, margina je puno veća. Google Ads funkcioniše za male biznise koji imaju jasnu ponudu i relevantan saobraćaj - posebno lokalni servisi i specijalizovani eCommerce.
           </div>
         </details>
 
@@ -592,7 +592,7 @@ export default function KakoPocetiGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Apsolutno. Mnogi vlasnici biznisa uspešno vode sopstvene kampanje. Ključ je u tome da razumete šta pratite (konverzije, CPA, ROAS) i da ne donosite preuranjene odluke. Izazov postaje kada kampanje narastu — više kampanja, više tržišta, kompleksnija segmentacija zahtevaju više vremena i iskustva. Za početak: jedan nalog, jedna kampanja, puno fokusa.
+            Apsolutno. Mnogi vlasnici biznisa uspešno vode sopstvene kampanje. Ključ je u tome da razumete šta pratite (konverzije, CPA, ROAS) i da ne donosite preuranjene odluke. Izazov postaje kada kampanje narastu - više kampanja, više tržišta, kompleksnija segmentacija zahtevaju više vremena i iskustva. Za početak: jedan nalog, jedna kampanja, puno fokusa.
           </div>
         </details>
 
@@ -612,7 +612,7 @@ export default function KakoPocetiGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Ne. Google Ads funkcioniše sjajno kada postoji aktivna pretraga — ljudi moraju da traže vaš proizvod ili uslugu na Google-u. Ako ste potpuno nova kategorija proizvoda koju niko ne zna da traži, bolje počnite sa Facebook/Meta oglasima koji grade svesnost. Isto važi ako je vaš prosečan prihod po kupcu prenizak da pokrije CPC. Pre pokretanja uvek pitajte: &quot;Koliko ljudi traži ovo na Google-u?&quot; i &quot;Da li se ekonomija konverzije drži?&quot;
+            Ne. Google Ads funkcioniše sjajno kada postoji aktivna pretraga - ljudi moraju da traže vaš proizvod ili uslugu na Google-u. Ako ste potpuno nova kategorija proizvoda koju niko ne zna da traži, bolje počnite sa Facebook/Meta oglasima koji grade svesnost. Isto važi ako je vaš prosečan prihod po kupcu prenizak da pokrije CPC. Pre pokretanja uvek pitajte: &quot;Koliko ljudi traži ovo na Google-u?&quot; i &quot;Da li se ekonomija konverzije drži?&quot;
           </div>
         </details>
       </div>
@@ -622,13 +622,13 @@ export default function KakoPocetiGoogleAdsSR() {
       {/* ── Sekcija 11: Zaključak ── */}
       <h2 id="zakljucak">Zaključak</h2>
       <p>
-        Kako početi sa Google Ads-om nije komplikovano pitanje — ali zahteva pravi redosled koraka i strpljenje u prvim nedeljama. Pokrenite nalog, povežite Analytics, postavite praćenje konverzija <em>pre</em> prve kampanje, istražite ključne reči i krenite sa jednom, dobro strukturiranom Search kampanjom.
+        Kako početi sa Google Ads-om nije komplikovano pitanje - ali zahteva pravi redosled koraka i strpljenje u prvim nedeljama. Pokrenite nalog, povežite Analytics, postavite praćenje konverzija <em>pre</em> prve kampanje, istražite ključne reči i krenite sa jednom, dobro strukturiranom Search kampanjom.
       </p>
       <p>
-        Budžet nije prepreka — ni sa €10 dnevno možete naučiti više nego sa bilo kojim kursom. Grešaka će biti: to je deo procesa. Ono što vas odvaja od onih koji odustanu je razumevanje <em>zašto</em> se nešto radi, ne samo šta. Svaki klik, svaki rezultat, svaki neuspešan oglas je podatak koji vas uči.
+        Budžet nije prepreka - ni sa €10 dnevno možete naučiti više nego sa bilo kojim kursom. Grešaka će biti: to je deo procesa. Ono što vas odvaja od onih koji odustanu je razumevanje <em>zašto</em> se nešto radi, ne samo šta. Svaki klik, svaki rezultat, svaki neuspešan oglas je podatak koji vas uči.
       </p>
       <p>
-        Ako budete pratili korake iz ovog vodiča, izbegli pet grešaka koje sam opisao i dali kampanjama 2-4 nedelje da se stabilizuju — bićete ispred 70% početnika koji odustanu prerano ili optimizuju previše rano.
+        Ako budete pratili korake iz ovog vodiča, izbegli pet grešaka koje sam opisao i dali kampanjama 2-4 nedelje da se stabilizuju - bićete ispred 70% početnika koji odustanu prerano ili optimizuju previše rano.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
@@ -636,7 +636,7 @@ export default function KakoPocetiGoogleAdsSR() {
           Želite da pokrenete Google Ads ali niste sigurni odakle da počnete?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Zajedno prolazimo kroz vaš specifični slučaj — industriju, tržište, budžet — i pravimo konkretni plan akcije. Bez generičkih saveta.
+          Zajedno prolazimo kroz vaš specifični slučaj - industriju, tržište, budžet - i pravimo konkretni plan akcije. Bez generičkih saveta.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju
@@ -650,8 +650,8 @@ export default function KakoPocetiGoogleAdsSR() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href="/usluge/starter-paket" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Kickstart — senior setup naloga</p>
-          <p className="text-xs text-gray-500 mb-0">Profesionalno postavljen nalog koji dalje vodite sami — od €690</p>
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Kickstart - senior setup naloga</p>
+          <p className="text-xs text-gray-500 mb-0">Profesionalno postavljen nalog koji dalje vodite sami - od €690</p>
         </Link>
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>
@@ -659,7 +659,7 @@ export default function KakoPocetiGoogleAdsSR() {
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Koliko košta Google Ads oglašavanje?</p>
-          <p className="text-xs text-gray-500 mb-0">Realni troškovi po tržištu, industriji i tipu kampanje — sa konkretnim brojevima.</p>
+          <p className="text-xs text-gray-500 mb-0">Realni troškovi po tržištu, industriji i tipu kampanje - sa konkretnim brojevima.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion tracking: kompletan vodič</p>
@@ -671,7 +671,7 @@ export default function KakoPocetiGoogleAdsSR() {
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">10 grešaka koje uništavaju Google Ads kampanje</p>
-          <p className="text-xs text-gray-500 mb-0">Najčešće greške koje vidim na nalozima — i kako ih ispraviti pre nego što sagoriju budžet.</p>
+          <p className="text-xs text-gray-500 mb-0">Najčešće greške koje vidim na nalozima - i kako ih ispraviti pre nego što sagoriju budžet.</p>
         </Link>
       </div>
     </>

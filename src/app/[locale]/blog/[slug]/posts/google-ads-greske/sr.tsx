@@ -8,7 +8,7 @@ export default function GoogleAdsGreskePost() {
           Ukratko
         </p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Auditujem Google Ads naloge već godinama. 80% naloga ima bar 3 od ovih grešaka — i svaka košta novac. Prosečno se 30% budžeta baca na ispravljive probleme. Evo 12 najčešćih grešaka koje vidim i kako da ih popravite.
+          Auditujem Google Ads naloge već godinama. 80% naloga ima bar 3 od ovih grešaka - i svaka košta novac. Prosečno se 30% budžeta baca na ispravljive probleme. Evo 12 najčešćih grešaka koje vidim i kako da ih popravite.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -70,8 +70,8 @@ export default function GoogleAdsGreskePost() {
 
       <h2 id="zasto-su-greske-u-google-ads-u-skupe">Zašto su greške u Google Ads-u skupe</h2>
       <p>
-        Kad god auditiram Google Ads nalog — bilo da je reč o lokalnoj firmi
-        sa budžetom od €500 mesečno ili eCommerce-u sa €10,000+ spend-om —
+        Kad god auditiram Google Ads nalog - bilo da je reč o lokalnoj firmi
+        sa budžetom od €500 mesečno ili eCommerce-u sa €10,000+ spend-om -
         pronalazim iste greške iznova i iznova.
       </p>
       <p>
@@ -111,7 +111,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Sve u jednoj kampanji — proizvodi, usluge, brand i non-brand keywords,
+          Sve u jednoj kampanji - proizvodi, usluge, brand i non-brand keywords,
           sve pomešano
         </p>
         <p className="text-base text-gray-600 mb-3">
@@ -122,7 +122,7 @@ export default function GoogleAdsGreskePost() {
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Preporučujem restrukturiranje po logičnim
-            celinama — brand kampanja odvojeno od non-brand, proizvodi po
+            celinama - brand kampanja odvojeno od non-brand, proizvodi po
             kategorijama, različiti ciljevi u različite kampanje. Tako dobijate
             čiste podatke i možete optimizovati svaki segment zasebno.
           </p>
@@ -134,7 +134,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Loše imenovanje kampanja i ad grupa — "Kampanja 1", "Ad grupa test",
+          Loše imenovanje kampanja i ad grupa - "Kampanja 1", "Ad grupa test",
           bez strukture
         </p>
         <p className="text-base text-gray-600 mb-3">
@@ -145,7 +145,7 @@ export default function GoogleAdsGreskePost() {
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Umesto generičkih naziva, koristite jasnu
-            konvenciju — npr. "SRB_Search_Brand_Proizvod-X" ili
+            konvenciju - npr. "SRB_Search_Brand_Proizvod-X" ili
             "HR_Shopping_Returning_Kategorija-Y". Uključite geografiju, tip
             kampanje i proizvod/segment u ime.
           </p>
@@ -157,7 +157,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Mešanje Search i Display u istoj kampanji — Google defaultno uključuje
+          Mešanje Search i Display u istoj kampanji - Google defaultno uključuje
           Display Network
         </p>
         <p className="text-base text-gray-600 mb-3">
@@ -184,7 +184,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Nema ili minimum negative keywords — plaćate za "besplatno", "posao",
+          Nema ili minimum negative keywords - plaćate za "besplatno", "posao",
           "kurs", "DIY"
         </p>
         <p className="text-base text-gray-600 mb-3">
@@ -195,7 +195,7 @@ export default function GoogleAdsGreskePost() {
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Umesto čekanja da greške stave na račun,
-            kreirajte starter liste odmah — dodajte "besplatno", "dzabe",
+            kreirajte starter liste odmah - dodajte "besplatno", "dzabe",
             "posao", "oglasi", "kurs", "kako da", "DIY" kao account-level
             negative liste. Detaljan vodič:{" "}
             <Link
@@ -214,7 +214,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Previše široke match types — sve na Broad Match bez kontrole
+          Previše široke match types - sve na Broad Match bez kontrole
         </p>
         <p className="text-base text-gray-600 mb-3">
           Broad match daje Google-u previše slobode da interpretira vaše
@@ -225,7 +225,7 @@ export default function GoogleAdsGreskePost() {
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Preporučujem da za proven keywords (oni
             koji već konvertuju) pređete na Phrase ili Exact match. Broad match
-            držite samo za discovery — i to sa jakom listom negativnih keywords
+            držite samo za discovery - i to sa jakom listom negativnih keywords
             i dovoljno konverzijskih podataka.
           </p>
         </div>
@@ -236,7 +236,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Nikad ne gledate Search Terms Report — ne znate za šta zapravo
+          Nikad ne gledate Search Terms Report - ne znate za šta zapravo
           plaćate
         </p>
         <p className="text-base text-gray-600 mb-3">
@@ -247,7 +247,7 @@ export default function GoogleAdsGreskePost() {
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Umesto ignorisanja, napravite nedeljni
-            ritual — otvorite Search Terms za prethodnu nedelju, dodajte nebitne
+            ritual - otvorite Search Terms za prethodnu nedelju, dodajte nebitne
             kao negative keywords, extractujte dobre termine kao nove positive
             keywords. 15 minuta nedeljno štedi 15-30% budžeta.
           </p>
@@ -263,7 +263,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Generic ad copy — "Kvalitet", "Najpovoljnije", "Brza dostava" kao i
+          Generic ad copy - "Kvalitet", "Najpovoljnije", "Brza dostava" kao i
           svi drugi
         </p>
         <p className="text-base text-gray-600 mb-3">
@@ -285,7 +285,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Nema ad testiranja — samo jedan oglas po ad grupi
+          Nema ad testiranja - samo jedan oglas po ad grupi
         </p>
         <p className="text-base text-gray-600 mb-3">
           Bez A/B testiranja ne znate da li možete bolje. Propuštate priliku
@@ -306,7 +306,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Nedostaju assets (ranije extensions) — tekstualni oglas bez njih zauzima
+          Nedostaju assets (ranije extensions) - tekstualni oglas bez njih zauzima
           minimalan prostor
         </p>
         <p className="text-base text-gray-600 mb-3">
@@ -359,7 +359,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Trackujete pogrešne konverzije — page views, form view, "thank you"
+          Trackujete pogrešne konverzije - page views, form view, "thank you"
           duplikati
         </p>
         <p className="text-base text-gray-600 mb-3">
@@ -382,7 +382,7 @@ export default function GoogleAdsGreskePost() {
           Greška
         </p>
         <p className="font-semibold mb-2">
-          Ignorišete attribution model — koristite Last Click za dug sales cycle
+          Ignorišete attribution model - koristite Last Click za dug sales cycle
         </p>
         <p className="text-base text-gray-600 mb-3">
           Last Click daje sav kredit poslednjem touchpoint-u. Ako imate B2B
@@ -563,10 +563,10 @@ export default function GoogleAdsGreskePost() {
           </span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Greške u merenju — absence ili pogrešan conversion tracking. Bez
+          Greške u merenju - absence ili pogrešan conversion tracking. Bez
           pravilnog merenja, sve odluke su nagađanje. Smart Bidding ne radi.
           Ne znate koja kampanja donosi rezultate. Druga najskuplja greška je
-          nedostatak negative keywords — direktno troši 15-30% budžeta na
+          nedostatak negative keywords - direktno troši 15-30% budžeta na
           nebitne klikove.
         </div>
       </details>
@@ -579,7 +579,7 @@ export default function GoogleAdsGreskePost() {
           </span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Većinu možete sami — ove greške nisu tehnički kompleksne, samo zahtevaju
+          Većinu možete sami - ove greške nisu tehnički kompleksne, samo zahtevaju
           vreme i pažnju. Preporučujem da pročitate povezane vodiče (conversion
           tracking, negative keywords, Quality Score) i radite korak po korak.
           Ako imate budžet €2,000+, ekspertska pomoć se često isplati jer
@@ -595,7 +595,7 @@ export default function GoogleAdsGreskePost() {
           </span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Zavisi od greške. Negative keywords imaju instant efekat — čim ih
+          Zavisi od greške. Negative keywords imaju instant efekat - čim ih
           dodate, prestajete da plaćate za te pretrage. Strukturalne promene
           (kampanje, ad grupe) trebaju 1-2 nedelje da se stabilizuju. Smart
           Bidding strategije trebaju 2-4 nedelje learning period-a. Generalno,
@@ -614,14 +614,14 @@ export default function GoogleAdsGreskePost() {
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
           Napravite sistematski pregled: 1) Proverite da li imate conversion
           tracking postavljen i da brojevi odgovaraju stvarnosti, 2) Otvorite
-          Search Terms Report za prošlu nedelju — da li vidite nebitne pretrage?
-          3) Prebrojite negative keywords — ako imate manje od 50, sigurno currite
-          budžet, 4) Pogledajte strukturu kampanja — da li možete lako da
+          Search Terms Report za prošlu nedelju - da li vidite nebitne pretrage?
+          3) Prebrojite negative keywords - ako imate manje od 50, sigurno currite
+          budžet, 4) Pogledajte strukturu kampanja - da li možete lako da
           razumete šta je šta? Ako vam treba profesionalni audit,{" "}
           <Link href="/kontakt" className="underline text-gray-900">
             kontaktirajte me
           </Link>{" "}
-          — detaljno pregledam nalog i dajem action plan sa prioritetima.
+          - detaljno pregledam nalog i dajem action plan sa prioritetima.
         </div>
       </details>
 
@@ -646,7 +646,7 @@ export default function GoogleAdsGreskePost() {
         </Link>
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>
-          <p className="text-xs text-gray-500 mb-0">Profesionalno vođenje naloga — bez grešaka koje koštaju budžet</p>
+          <p className="text-xs text-gray-500 mb-0">Profesionalno vođenje naloga - bez grešaka koje koštaju budžet</p>
         </Link>
         <Link
           href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
@@ -715,7 +715,7 @@ export default function GoogleAdsGreskePost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Broad match može raditi uz Smart Bidding i dovoljno konverzija (30+/mesečno). Ali za manje naloge, phrase match i exact match daju bolju kontrolu. Najčešća greška je korišćenje broad match-a bez negativnih ključnih reči — to je recept za bacanje novca.
+            Broad match može raditi uz Smart Bidding i dovoljno konverzija (30+/mesečno). Ali za manje naloge, phrase match i exact match daju bolju kontrolu. Najčešća greška je korišćenje broad match-a bez negativnih ključnih reči - to je recept za bacanje novca.
           </div>
         </details>
 

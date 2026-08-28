@@ -9,7 +9,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
         </p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Ako vaše Google Ads kampanje ne donose rezultate, razlog je skoro
-          sigurno tehnički — i rešiv. Evo brzog izvoda za 90% slučajeva.
+          sigurno tehnički - i rešiv. Evo brzog izvoda za 90% slučajeva.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -56,7 +56,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           Zašto moje Google Ads kampanje ne donose rezultate?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          U <strong>90% slučajeva</strong> razlog zašto Google Ads kampanje ne rade je tehnički i rešiv — najčešće loš conversion tracking, pogrešna podešavanja kampanje ili neusklađenost ključnih reči, oglasa i landing page-a. Postoji <strong>8 najčešćih razloga</strong>, a dijagnoza obično traje <strong>2-4 nedelje</strong>. Tačna dijagnoza je pola rešenja.
+          U <strong>90% slučajeva</strong> razlog zašto Google Ads kampanje ne rade je tehnički i rešiv - najčešće loš conversion tracking, pogrešna podešavanja kampanje ili neusklađenost ključnih reči, oglasa i landing page-a. Postoji <strong>8 najčešćih razloga</strong>, a dijagnoza obično traje <strong>2-4 nedelje</strong>. Tačna dijagnoza je pola rešenja.
         </p>
       </div>
 
@@ -64,20 +64,20 @@ export default function GoogleAdsNeDonosiRezultatePost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#razumem-frustraciju-ali-problem-je-resiv" className="block py-1 text-base text-gray-700 hover:text-primary underline">Razumem frustraciju — ali problem je rešiv</a></li>
-          <li><a href="#pre-svega-proverite-osnove" className="block py-1 text-base text-gray-700 hover:text-primary underline">Pre svega — proverite osnove</a></li>
+          <li><a href="#razumem-frustraciju-ali-problem-je-resiv" className="block py-1 text-base text-gray-700 hover:text-primary underline">Razumem frustraciju - ali problem je rešiv</a></li>
+          <li><a href="#pre-svega-proverite-osnove" className="block py-1 text-base text-gray-700 hover:text-primary underline">Pre svega - proverite osnove</a></li>
           <li><a href="#osam-razloga-zasto-kampanje-ne-rade" className="block py-1 text-base text-gray-700 hover:text-primary underline">Osam razloga zašto kampanje ne rade</a></li>
-          <li><a href="#dijagnosticki-vodic-kako-identifikovati-problem" className="block py-1 text-base text-gray-700 hover:text-primary underline">Dijagnostički vodič — kako identifikovati problem</a></li>
+          <li><a href="#dijagnosticki-vodic-kako-identifikovati-problem" className="block py-1 text-base text-gray-700 hover:text-primary underline">Dijagnostički vodič - kako identifikovati problem</a></li>
           <li><a href="#koliko-vremena-dati-kampanji-pre-nego-odustanete" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koliko vremena dati kampanji pre nego odustanete</a></li>
           <li><a href="#kada-potraziti-pomoc" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kada potražiti pomoć</a></li>
           <li><a href="#cesto-postavljana-pitanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
-          <li><a href="#najcesca-pitanja-zasto-google-ads-ne-radi" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja — zašto Google Ads ne radi</a></li>
+          <li><a href="#najcesca-pitanja-zasto-google-ads-ne-radi" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešća pitanja - zašto Google Ads ne radi</a></li>
         </ol>
       </nav>
 
 
 
-      <h2 id="razumem-frustraciju-ali-problem-je-resiv">Razumem frustraciju — ali problem je rešiv</h2>
+      <h2 id="razumem-frustraciju-ali-problem-je-resiv">Razumem frustraciju - ali problem je rešiv</h2>
       <p>
         &quot;Google Ads nam ne radi.&quot; Ovu rečenicu čujem bar jednom
         nedeljno. Od vlasnika firmi koji su pokušali sami. Od marketing
@@ -85,13 +85,13 @@ export default function GoogleAdsNeDonosiRezultatePost() {
         nalog od nekog drugog.
       </p>
       <p>
-        I razumem frustraciju — uložili ste vreme, budžet, možda i novac za
+        I razumem frustraciju - uložili ste vreme, budžet, možda i novac za
         agenciju ili freelancera. A rezultat? Nula. Ili još gore: stalno
         prazno obećanje da će &quot;uskoro krenuti&quot;.
       </p>
       <p>
         Ali evo šta valja znati: <strong>problem nije u Google Ads-u</strong>.
-        Google Ads radi za milione biznisa širom sveta. Problem je specifičan —
+        Google Ads radi za milione biznisa širom sveta. Problem je specifičan -
         i skoro uvek rešiv.
       </p>
       <p>
@@ -107,13 +107,13 @@ export default function GoogleAdsNeDonosiRezultatePost() {
       </p>
       <p>
         Neki problemi možete popraviti sami za sat vremena. Za druge će vam
-        trebati dodatno znanje. Ali svi su rešivi — i cilj ovog vodiča je da
+        trebati dodatno znanje. Ali svi su rešivi - i cilj ovog vodiča je da
         vam pokažem gde je problem i šta dalje.
       </p>
 
       <hr />
 
-      <h2 id="pre-svega-proverite-osnove">Pre svega — proverite osnove</h2>
+      <h2 id="pre-svega-proverite-osnove">Pre svega - proverite osnove</h2>
       <p>
         Pre nego što pređemo na dubinsku analizu, pet brzih provera koje su u
         80% slučajeva dovoljne da identifikujete problem.
@@ -128,7 +128,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
             <div>
               <strong><a href="https://support.google.com/google-ads/answer/1722054" target="_blank" rel="noopener noreferrer">Conversion tracking</a> radi?</strong>{" "}
               <span className="text-gray-500">
-                — Proverite Google Ads {"->"} Goals {"->"} Summary. Ako imate 0
+                - Proverite Google Ads {"->"} Goals {"->"} Summary. Ako imate 0
                 konverzija, ili konverzije koje ne odgovaraju stvarnosti,
                 tracking nije ispravan. To je problem #1.
               </span>
@@ -141,7 +141,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
             <div>
               <strong>Koliko vremena ste dali kampanji?</strong>{" "}
               <span className="text-gray-500">
-                — Ako je kampanja mlađa od 2 nedelje, to još nije dovoljno.
+                - Ako je kampanja mlađa od 2 nedelje, to još nije dovoljno.
                 Learning period za Google Ads je minimalno 2-4 nedelje. Sačekajte.
               </span>
             </div>
@@ -153,7 +153,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
             <div>
               <strong>Da li je budžet dovoljan?</strong>{" "}
               <span className="text-gray-500">
-                — Ako imate €10/dan budžet u industriji gde je CPC €5, dobijaćete
+                - Ako imate €10/dan budžet u industriji gde je CPC €5, dobijaćete
                 2 klika dnevno. To nije dovoljno za konverzije. Realnost je da
                 trebate minimum 10-15 konverzija mesečno za bilo kakvu optimizaciju.
               </span>
@@ -166,7 +166,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
             <div>
               <strong>Landing page je relevantan?</strong>{" "}
               <span className="text-gray-500">
-                — Ako oglasi govore o &quot;servisu rashladnih uređaja&quot; a
+                - Ako oglasi govore o &quot;servisu rashladnih uređaja&quot; a
                 šaljete ljude na homepage gde je 10 različitih usluga, problem je
                 tu. Landing page mora odgovarati oglasu.
               </span>
@@ -179,9 +179,9 @@ export default function GoogleAdsNeDonosiRezultatePost() {
             <div>
               <strong>Gde ste gledate performanse?</strong>{" "}
               <span className="text-gray-500">
-                — Ako gledate samo Google Ads interface bez uvida u stvarne
+                - Ako gledate samo Google Ads interface bez uvida u stvarne
                 konverzije (prodaje, telefone, prijave), možda kampanja zapravo
-                radi — samo ne na metrici koju gledate.
+                radi - samo ne na metrici koju gledate.
               </span>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
         <p className="text-yellow-800 text-base mb-0">
-          Ako vam je problem bio neki od gornjih — popravite to PRVO, pa tek onda
+          Ako vam je problem bio neki od gornjih - popravite to PRVO, pa tek onda
           nastavite sa analizom. Ne postoji smisao optimizovati kampanju ako
           osnove nisu na mestu.
         </p>
@@ -202,7 +202,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
       <h2 id="osam-razloga-zasto-kampanje-ne-rade">Osam razloga zašto kampanje ne rade</h2>
       <p>
         Ovo su najučestaliji razlozi zašto Google Ads kampanje ne donose
-        rezultate — rangirani po učestalosti, ne po važnosti. Za svaki dajem
+        rezultate - rangirani po učestalosti, ne po važnosti. Za svaki dajem
         opis problema i rešenje.
       </p>
 
@@ -325,11 +325,11 @@ export default function GoogleAdsNeDonosiRezultatePost() {
         <p className="font-semibold mb-2">Nizak Quality Score</p>
         <p className="text-base text-gray-600 mb-3">
           Quality Score ispod 5-6 za većinu keywords. Visok CPC za poziciju koju
-          dobijate. Ad Rank problems — kampanja se retko prikazuje.
+          dobijate. Ad Rank problems - kampanja se retko prikazuje.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
-            <strong>Rešenje:</strong> Quality Score ima 3 komponente — radite na
+            <strong>Rešenje:</strong> Quality Score ima 3 komponente - radite na
             svim. <strong>Za CTR:</strong> bolji ad copy, više relevantnih
             ekstenzija. <strong>Za Ad Relevance:</strong> keywords u headline,
             tighter ad groups. <strong>Za Landing Page:</strong> brži sajt,
@@ -350,7 +350,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
         <p className="text-base text-gray-600 mb-3">
           Budžet €300, očekivanja €30,000 revenue. &quot;Želimo rezultate za
           nedelju dana&quot;. Konstantno nezadovoljstvo bez jasnog razloga. Manje
-          od 10-15 konverzija mesečno — nema dovoljno podataka za optimizaciju.
+          od 10-15 konverzija mesečno - nema dovoljno podataka za optimizaciju.
         </p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
           <p className="text-base text-green-800 mb-0">
@@ -380,7 +380,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           <p className="text-base text-green-800 mb-0">
             <strong>Rešenje:</strong> Benefit-focused copy (šta korisnik dobija,
             ne šta vi radite). Uključite keyword u headline. Jasna CTA (Pozovite,
-            Kupite, Zakažite). Testirajte varijacije — minimum 2-3 oglasa po ad
+            Kupite, Zakažite). Testirajte varijacije - minimum 2-3 oglasa po ad
             grupi, različiti approach-i. Pratite CTR i učite šta funkcioniše.
           </p>
         </div>
@@ -388,7 +388,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2 id="dijagnosticki-vodic-kako-identifikovati-problem">Dijagnostički vodič — kako identifikovati problem</h2>
+      <h2 id="dijagnosticki-vodic-kako-identifikovati-problem">Dijagnostički vodič - kako identifikovati problem</h2>
       <p>
         Ako ne znate gde je problem, idite ovim redosledom. Ovo je framework koji
         koristim kad preuzimam novi nalog.
@@ -409,7 +409,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
         </p>
         <ul className="text-sm">
           <li>
-            Ako NE — rešite tracking PRVO. Sve ostalo je gubitak vremena.
+            Ako NE - rešite tracking PRVO. Sve ostalo je gubitak vremena.
           </li>
           <li>
             Proverite: Google Ads {"->"} Goals {"->"} Summary + testirajte live
@@ -437,11 +437,11 @@ export default function GoogleAdsNeDonosiRezultatePost() {
         </p>
         <ul className="text-sm">
           <li>
-            Ako više od 30% pretraga nije relevantno — previše široke ključne
+            Ako više od 30% pretraga nije relevantno - previše široke ključne
             reči + nedostatak negative keywords
           </li>
           <li>
-            Sortirajte po Cost (najviši prvo) — gde odlazi najveći deo budžeta?
+            Sortirajte po Cost (najviši prvo) - gde odlazi najveći deo budžeta?
           </li>
           <li>
             Dodajte najbolje search terms kao eksplicitne ključne reči, najgore
@@ -465,7 +465,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
         </p>
         <ul className="text-sm">
           <li>
-            Ako većina kampanja vodi na homepage — to je problem
+            Ako većina kampanja vodi na homepage - to je problem
           </li>
           <li>
             Testirajte sami: kliknite na oglas kao korisnik. Da li landing page
@@ -492,15 +492,15 @@ export default function GoogleAdsNeDonosiRezultatePost() {
         </p>
         <ul className="text-sm">
           <li>
-            QS ispod 5 = previše skup saobraćaj — radite na CTR, relevantnosti,
+            QS ispod 5 = previše skup saobraćaj - radite na CTR, relevantnosti,
             landing page-u
           </li>
           <li>
             Proverite komponente (Expected CTR, Ad Relevance, Landing Page
-            Experience) — koja je najslabija?
+            Experience) - koja je najslabija?
           </li>
           <li>
-            Često problem nije quality vec struktura — previše keywords u ad
+            Često problem nije quality vec struktura - previše keywords u ad
             grupi
           </li>
         </ul>
@@ -633,8 +633,8 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           </h3>
           <p className="text-base text-gray-600 mb-0">
             Ne znate u čemu je problem (dijagnostika nejasna). Probali ste sve iz
-            ovog vodiča i ne radi. Budžet je veći (preko €1,000/mesec) — greške
-            vas koštaju. Nemate vremena za učenje — potrebni su vam rezultati
+            ovog vodiča i ne radi. Budžet je veći (preko €1,000/mesec) - greške
+            vas koštaju. Nemate vremena za učenje - potrebni su vam rezultati
             brzo. Kampanje su kompleksne (multinacionalne, multilanguage, veliki
             inventar).
           </p>
@@ -644,7 +644,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Strategija</p>
         <p className="text-blue-800 text-base mb-0">
-          Ako niste sigurni — zakažite audit. Jedan dobar audit (1-2h
+          Ako niste sigurni - zakažite audit. Jedan dobar audit (1-2h
           freelancera ili agencije) će vam dati jasnu dijagnozu i akcioni plan.
           Onda možete odlučiti da li ćete raditi sami ili angažovati pomoć.{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline">
@@ -673,7 +673,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           konverzije možete videti za 7-14 dana. Za Smart Bidding (Target CPA,
           Target ROAS), learning period je 2-4 nedelje. Za PMax kampanje, čak 4-6
           nedelja. Ali stabilne, optimizovane rezultate možete očekivati tek
-          nakon 2-3 meseca rada. Nemojte odustati pre toga — learning je deo
+          nakon 2-3 meseca rada. Nemojte odustati pre toga - learning je deo
           procesa.
         </div>
       </details>
@@ -690,7 +690,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           mesečne izveštaje sa jasnim metrikama, jasno objašnjenje akcija.
           Ako dobijate samo &quot;radimo na tome&quot; bez detalja, to je
           crvena zastava. Dobar partner će vam uvek moći objasniti šta radi i
-          zašto. Ako niste zadovoljni, zatražite audit od nezavisne strane —
+          zašto. Ako niste zadovoljni, zatražite audit od nezavisne strane -
           često otkrije da problem nije u setup-u već u nečemu drugom (npr.
           landing page, ponuda).
         </div>
@@ -724,9 +724,9 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           Fokusirajte se na niše gde oni nisu jaki: long-tail keywords
           (specifičnije pretrage), geografski targeting (specifične
           lokacije), ad schedule (vremenski periodi kada konkurencija spava).
-          Quality Score može značajno izjednačiti teren — QS 9 će vam dati
+          Quality Score može značajno izjednačiti teren - QS 9 će vam dati
           bolju poziciju od QS 5 čak i sa manjim bid-om. Takođe, razmislite o
-          manje očiglednim keywords — oni su često jeftiniji a konvertuju
+          manje očiglednim keywords - oni su često jeftiniji a konvertuju
           bolje jer su specifičniji.
         </div>
       </details>
@@ -742,7 +742,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
           Pre nego što odustanete, probajte audit od nezavisne strane. Svež
           pogled često otkrije probleme koje vi ne vidite (ili koji su vam
           zamaskirani ako radite sa agencijom koja ne radi dobro). Google Ads
-          radi za milione biznisa — ali nije univerzalno rešenje. Ako
+          radi za milione biznisa - ali nije univerzalno rešenje. Ako
           stvarno nema potražnje za vašim proizvodom/uslugom, ili su margine
           premale za profitabilnost sa vašim CPC-om, onda je možda vreme za
           drugi kanal (SEO, social media, email marketing).
@@ -797,7 +797,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
-          Problem nije u Google Ads-u — problem je u dijagnozi. Većina kampanja
+          Problem nije u Google Ads-u - problem je u dijagnozi. Većina kampanja
           koje &quot;ne rade&quot; mogu se popraviti za 2-4 nedelje sa
           pravilnom analizom i akcijama.
         </p>
@@ -805,7 +805,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
 
       <hr />
 
-      <h2 id="najcesca-pitanja-zasto-google-ads-ne-radi">Najčešća pitanja — zašto Google Ads ne radi</h2>
+      <h2 id="najcesca-pitanja-zasto-google-ads-ne-radi">Najčešća pitanja - zašto Google Ads ne radi</h2>
 
       <div className="space-y-4 my-6">
         <details className="bg-white border-2 border-gray-200 rounded-xl group" open>
@@ -834,7 +834,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Ako dnevni budžet ne pokriva barem 10-15 klikova, da — budžet je premali. Izračunajte: prosečan CPC × 15 = minimalni dnevni budžet. Za većinu industrija u Srbiji, €10-20/dan je minimum. Za UK/USA, $30-50/dan.
+            Ako dnevni budžet ne pokriva barem 10-15 klikova, da - budžet je premali. Izračunajte: prosečan CPC × 15 = minimalni dnevni budžet. Za većinu industrija u Srbiji, €10-20/dan je minimum. Za UK/USA, $30-50/dan.
           </div>
         </details>
 
@@ -844,7 +844,7 @@ export default function GoogleAdsNeDonosiRezultatePost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Ad Rank = Bid × Quality Score × Expected impact of extensions. Ako konkurent ima bolji QS (bolji oglas i LP), može platiti manje po kliku i imati višu poziciju. Proverite Quality Score — ako je ispod 6, tu je problem. Takođe proverite da koristite sve relevantne ad extensions.
+            Ad Rank = Bid × Quality Score × Expected impact of extensions. Ako konkurent ima bolji QS (bolji oglas i LP), može platiti manje po kliku i imati višu poziciju. Proverite Quality Score - ako je ispod 6, tu je problem. Takođe proverite da koristite sve relevantne ad extensions.
           </div>
         </details>
       </div>

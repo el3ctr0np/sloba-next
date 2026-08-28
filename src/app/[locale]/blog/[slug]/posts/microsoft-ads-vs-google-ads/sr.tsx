@@ -6,11 +6,11 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
     <>
       {/* Hero summary box */}
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
-        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko — Dve platforme, jedan budžet</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko - Dve platforme, jedan budžet</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google drži 92% tržišnog udela u pretrazi. Microsoft Ads pokrije preostalih 5–8% —
-          ali ta publika je starija, bogatija i plaća 30–50% niži CPC. Za klijente iz UK i USA
-          godinama vodim Google Shopping i Google Ads procese — i Microsoft Ads se tu ne zapostavlja.
+          Google drži 92% tržišnog udela u pretrazi. Microsoft Ads pokrije preostalih 5-8% -
+          ali ta publika je starija, bogatija i plaća 30-50% niži CPC. Za klijente iz UK i USA
+          godinama vodim Google Shopping i Google Ads procese - i Microsoft Ads se tu ne zapostavlja.
           Naprotiv, prilazi se pažljivije, ali se veoma lako radi na njemu. Evo šta sam naučio.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -40,19 +40,19 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-5 my-6">
         <p className="font-bold text-yellow-900 text-sm mb-1 uppercase tracking-wide">Brzi odgovor</p>
         <p className="text-yellow-800 text-base mb-0">
-          <GlossaryLink slug="google-ads">Google Ads</GlossaryLink> je obavezna platforma za svaki biznis koji se oglašava online — 92% tržišta, nenadmašan reach, najnaprednija automatizacija. Microsoft Ads je profitabilan dopunski kanal: niži <GlossaryLink slug="cpc">CPC</GlossaryLink> za 30–50%, starija i bogatija publika (35+, viši prihodi), i jedinstven LinkedIn targeting dostupan samo na Microsoft platformi.
+          <GlossaryLink slug="google-ads">Google Ads</GlossaryLink> je obavezna platforma za svaki biznis koji se oglašava online - 92% tržišta, nenadmašan reach, najnaprednija automatizacija. Microsoft Ads je profitabilan dopunski kanal: niži <GlossaryLink slug="cpc">CPC</GlossaryLink> za 30-50%, starija i bogatija publika (35+, viši prihodi), i jedinstven LinkedIn targeting dostupan samo na Microsoft platformi.
         </p>
       </div>
 
       <p>
-        Za klijente iz UK i USA godinama vodim Google Ads i Microsoft Ads procese simultano — uglavnom u kontekstu
+        Za klijente iz UK i USA godinama vodim Google Ads i Microsoft Ads procese simultano - uglavnom u kontekstu
         skincare, fashion i furniture eCommerce-a. Tipična raspodela je ~85% budžeta na Google, ~15% na Microsoft.
         Ovo nije teorijsko poređenje: svaki uvid u ovom tekstu dolazi iz realnih podataka, realnih konverzija i realnog
         novca potrošenog na obema platformama.
       </p>
       <p>
         Srpski PPC konsultanti koji rade sa obe platforme simultano su retkost. Većina bira jednu ili drugu.
-        Microsoft Ads se često <em>zaboravi</em>, ali ne zato što je loš kanal — upravo suprotno, vrlo je jednostavan
+        Microsoft Ads se često <em>zaboravi</em>, ali ne zato što je loš kanal - upravo suprotno, vrlo je jednostavan
         za rad kad se setup postavi kako treba. Prava strategija je znati <em>kada</em> koristiti koju i kako ih
         kombinovati da biste izvukli maksimum iz svakog potrošenog evra.
       </p>
@@ -68,26 +68,26 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#trzisni-udeo" className="block py-1 text-base text-gray-700 hover:underline">Market share realnost — šta 5% zapravo znači</a></li>
-          <li><a href="#razlike-u-publici" className="block py-1 text-base text-gray-700 hover:underline">Razlike u publici — ko su Microsoft Ads korisnici</a></li>
-          <li><a href="#linkedin-targeting" className="block py-1 text-base text-gray-700 hover:underline">LinkedIn targeting — ekskluzivna prednost Microsoft-a</a></li>
-          <li><a href="#cpc-razlike" className="block py-1 text-base text-gray-700 hover:underline">CPC razlike po industrijama — realni benchmarks</a></li>
-          <li><a href="#feature-paritet" className="block py-1 text-base text-gray-700 hover:underline">Feature paritet — RSA, Shopping, PMax ekvivalenti</a></li>
-          <li><a href="#realni-podaci" className="block py-1 text-base text-gray-700 hover:underline">Realni obrasci iz UK/USA naloga — dualno vođenje platformi</a></li>
-          <li><a href="#konverzije-i-atribucija" className="block py-1 text-base text-gray-700 hover:underline">Konverzije i atribucija — gde platforme rade drugačije</a></li>
-          <li><a href="#kada-koristiti" className="block py-1 text-base text-gray-700 hover:underline">Kada koristiti Microsoft Ads — decision framework</a></li>
+          <li><a href="#trzisni-udeo" className="block py-1 text-base text-gray-700 hover:underline">Market share realnost - šta 5% zapravo znači</a></li>
+          <li><a href="#razlike-u-publici" className="block py-1 text-base text-gray-700 hover:underline">Razlike u publici - ko su Microsoft Ads korisnici</a></li>
+          <li><a href="#linkedin-targeting" className="block py-1 text-base text-gray-700 hover:underline">LinkedIn targeting - ekskluzivna prednost Microsoft-a</a></li>
+          <li><a href="#cpc-razlike" className="block py-1 text-base text-gray-700 hover:underline">CPC razlike po industrijama - realni benchmarks</a></li>
+          <li><a href="#feature-paritet" className="block py-1 text-base text-gray-700 hover:underline">Feature paritet - RSA, Shopping, PMax ekvivalenti</a></li>
+          <li><a href="#realni-podaci" className="block py-1 text-base text-gray-700 hover:underline">Realni obrasci iz UK/USA naloga - dualno vođenje platformi</a></li>
+          <li><a href="#konverzije-i-atribucija" className="block py-1 text-base text-gray-700 hover:underline">Konverzije i atribucija - gde platforme rade drugačije</a></li>
+          <li><a href="#kada-koristiti" className="block py-1 text-base text-gray-700 hover:underline">Kada koristiti Microsoft Ads - decision framework</a></li>
           <li><a href="#kada-obe" className="block py-1 text-base text-gray-700 hover:underline">Kada koristiti obe platforme simultano</a></li>
           <li><a href="#zakljucak" className="block py-1 text-base text-gray-700 hover:underline">Zaključak i preporuke</a></li>
         </ol>
       </nav>
 
-      <h2 id="trzisni-udeo">Market share realnost — šta 5% zapravo znači u brojevima</h2>
+      <h2 id="trzisni-udeo">Market share realnost - šta 5% zapravo znači u brojevima</h2>
 
       <p>
-        Kada kažete nekome da Microsoft Ads (Bing) drži 3–5% globalnog tržišta pretrage, prva reakcija je obično
+        Kada kažete nekome da Microsoft Ads (Bing) drži 3-5% globalnog tržišta pretrage, prva reakcija je obično
         &quot;pa to je minorno&quot;. Ali ta brojka je varljiva. Bing/Microsoft Search obradi <strong>12+ milijardi
-        pretraga mesečno</strong> globalno. U Velikoj Britaniji (primer UK tržišta), Bing drži oko 7–9% tržišnog
-        udela — više nego globalni prosek.
+        pretraga mesečno</strong> globalno. U Velikoj Britaniji (primer UK tržišta), Bing drži oko 7-9% tržišnog
+        udela - više nego globalni prosek.
       </p>
 
       <p>
@@ -110,7 +110,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">Globalno</td>
               <td className="py-3 px-3 text-center border-b border-gray-200">~92%</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">~3–5%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~3-5%</td>
               <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">StatCounter 2026</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
@@ -122,7 +122,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">Velika Britanija</td>
               <td className="py-3 px-3 text-center border-b border-gray-200">~87%</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">~7–9%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~7-9%</td>
               <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">Relevantno za UK brendove</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
@@ -134,7 +134,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">Nemačka</td>
               <td className="py-3 px-3 text-center border-b border-gray-200">~88%</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">~5–7%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">~5-7%</td>
               <td className="py-3 px-3 text-right border-b border-gray-200 text-gray-500">Vredan kanal za DE tržište</td>
             </tr>
           </tbody>
@@ -142,40 +142,40 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       </div>
 
       <p>
-        Za srpske biznise koji prodaju <strong>isključivo lokalno</strong>: Microsoft Ads vam nije prioritet —
+        Za srpske biznise koji prodaju <strong>isključivo lokalno</strong>: Microsoft Ads vam nije prioritet -
         2% tržišnog udela ne opravdava vreme i resurse za zasebnu platformu. Međutim, ako prodajete na
         UK, SAD, AU, DE ili Benelux tržištu, Microsoft Ads je ozbiljan kanal koji vredi testirati.
       </p>
 
       <hr />
 
-      <h2 id="razlike-u-publici">Razlike u publici — ko su Microsoft Ads korisnici</h2>
+      <h2 id="razlike-u-publici">Razlike u publici - ko su Microsoft Ads korisnici</h2>
 
       <p>
         Ovo je možda najvažnija razlika između platformi, a i najčešće se zanemaruje. Korisnici koji
-        pretražuju na Bing-u nisu samo &quot;manji Google korisnici&quot; — to je statistički drugačija demografska grupa.
+        pretražuju na Bing-u nisu samo &quot;manji Google korisnici&quot; - to je statistički drugačija demografska grupa.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
         <div className="bg-white border-2 border-blue-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs font-bold uppercase tracking-wide text-blue-700 mb-3">Google Ads — tipični korisnik</p>
+          <p className="text-xs font-bold uppercase tracking-wide text-blue-700 mb-3">Google Ads - tipični korisnik</p>
           <ul className="text-sm text-gray-700 space-y-2 mb-0">
-            <li>Šira demografija (18–65+)</li>
+            <li>Šira demografija (18-65+)</li>
             <li>Dominira mobilni (60%+ pretrage)</li>
-            <li>Mlađa publika (25–35 centar gravitacije)</li>
+            <li>Mlađa publika (25-35 centar gravitacije)</li>
             <li>Mešovit prihodni profil</li>
             <li>Koristi Chrome, Android, Gmail</li>
             <li>Otvoren za impulzivne kupovine</li>
           </ul>
         </div>
         <div className="bg-white border-2 border-orange-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs font-bold uppercase tracking-wide text-orange-700 mb-3">Microsoft Ads — tipični korisnik</p>
+          <p className="text-xs font-bold uppercase tracking-wide text-orange-700 mb-3">Microsoft Ads - tipični korisnik</p>
           <ul className="text-sm text-gray-700 space-y-2 mb-0">
             <li>Starija demografija (35+, 45+ jako zastupljeni)</li>
             <li>Dominira desktop (70%+ pretrage)</li>
             <li>Viši prihodi od proseka</li>
             <li>Korporativni/poslovni korisnici (Edge, Office)</li>
-            <li>Konzervativniji u odlukama — više istraživanja</li>
+            <li>Konzervativniji u odlukama - više istraživanja</li>
             <li>Viši prosečan AOV (Average Order Value)</li>
           </ul>
         </div>
@@ -183,8 +183,8 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <p>
         Iz iskustva sa skincare eCommerce nalozima u UK: publika koja konvertuje na Microsoft Ads starija je
-        u proseku 8–12 godina od Google publike. Ta ista publika ima <strong>viši raspoloživi prihod</strong> i
-        češće kupuje premium linije. Za brend koji prodaje proizvode u cenovnom rangu £30–£120,
+        u proseku 8-12 godina od Google publike. Ta ista publika ima <strong>viši raspoloživi prihod</strong> i
+        češće kupuje premium linije. Za brend koji prodaje proizvode u cenovnom rangu £30-£120,
         ovo je relevantna razlika.
       </p>
 
@@ -197,10 +197,10 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <hr />
 
-      <h2 id="linkedin-targeting">LinkedIn targeting — ekskluzivna prednost dostupna samo na Microsoft Ads</h2>
+      <h2 id="linkedin-targeting">LinkedIn targeting - ekskluzivna prednost dostupna samo na Microsoft Ads</h2>
 
       <p>
-        Microsoft je 2016. kupio LinkedIn za $26,2 milijarde. Ova akvizicija nije samo poslovni potez —
+        Microsoft je 2016. kupio LinkedIn za $26,2 milijarde. Ova akvizicija nije samo poslovni potez -
         donela je jedinstven targeting podatak koji nijedna druga platforma za pretragu nema:
         <strong> profesionalne demografske podatke iz LinkedIn profila</strong>.
       </p>
@@ -243,33 +243,33 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <p>
         Praktična primena: ako prodajete B2B SaaS alat i hoćete da dostignete IT menadžere u finansijskom sektoru
-        sa 500+ zaposlenih — Google Ads nema tu preciznost. Microsoft Ads može da targetira tu tačnu grupu kroz
+        sa 500+ zaposlenih - Google Ads nema tu preciznost. Microsoft Ads može da targetira tu tačnu grupu kroz
         LinkedIn integraciju, i to na nivou pretrage (ne kao display). Ovo je ogromna prednost za B2B oglašivače.
       </p>
 
       <p>
         Za eCommerce brendove: LinkedIn targeting je manje direktno relevantan, ali i tu postoje primene.
-        Targetiramo korisnike u određenim industrijama koji imaju veći raspoloživi prihod — na primer, finansije,
-        pravo, medicina — jer su skloniji premium skincare kupovinama.
+        Targetiramo korisnike u određenim industrijama koji imaju veći raspoloživi prihod - na primer, finansije,
+        pravo, medicina - jer su skloniji premium skincare kupovinama.
       </p>
 
       <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-5 my-6">
         <p className="text-sm font-bold text-yellow-900 mb-2">Napomena o LinkedInt targeting-u</p>
         <p className="text-base text-yellow-800 mb-0">
           LinkedIn Profile Targeting funkcioniše kao <strong>audience bid modifier</strong>, ne kao exclusion targeting.
-          Koristite ga za bid adjustment (+20%, +30%) prema segmentima koji konvertuju bolje — ne za ograničavanje
+          Koristite ga za bid adjustment (+20%, +30%) prema segmentima koji konvertuju bolje - ne za ograničavanje
           dosega. Počnite sa observation mode-om pre nego što primenite bid adjustments.
         </p>
       </div>
 
       <hr />
 
-      <h2 id="cpc-razlike">CPC razlike po industrijama — realni benchmarks</h2>
+      <h2 id="cpc-razlike">CPC razlike po industrijama - realni benchmarks</h2>
 
       <p>
-        Niži CPC na Microsoft Ads nije mit — to je konzistentna realnost koja se objašnjava nižom konkurencijom.
+        Niži CPC na Microsoft Ads nije mit - to je konzistentna realnost koja se objašnjava nižom konkurencijom.
         Manje oglašivača koristi Microsoft Ads, što znači manje bidova u aukciji, što znači nižu cenu po kliku.
-        Iz iskustva sa UK skincare i fashion nalozima, Microsoft CPC-ovi su konzistentno 35–45% niži od Google CPC-ova za iste pretrage.
+        Iz iskustva sa UK skincare i fashion nalozima, Microsoft CPC-ovi su konzistentno 35-45% niži od Google CPC-ova za iste pretrage.
       </p>
 
       <div className="overflow-x-auto my-8">
@@ -285,39 +285,39 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           <tbody>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">Skincare / Beauty</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£0,45–£0,90</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£0,25–£0,50</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,45-£0,90</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,25-£0,50</td>
               <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">Finansijske usluge</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£3,00–£8,00</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£1,80–£4,50</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£3,00-£8,00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£1,80-£4,50</td>
               <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">B2B SaaS / Softver</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£2,00–£6,00</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£1,00–£3,20</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£2,00-£6,00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£1,00-£3,20</td>
               <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">Pravo i advokatura</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£4,00–£12,00</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£2,00–£6,50</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£4,00-£12,00</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£2,00-£6,50</td>
               <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~45%</td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">Hobi i slobodno vreme</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£0,30–£0,70</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£0,18–£0,40</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,30-£0,70</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,18-£0,40</td>
               <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40%</td>
             </tr>
             <tr className="bg-gray-50 hover:bg-gray-100">
               <td className="py-3 px-3 border-b border-gray-200 font-medium">eCommerce (opšte)</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£0,40–£1,20</td>
-              <td className="py-3 px-3 text-center border-b border-gray-200">£0,22–£0,65</td>
-              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40–45%</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,40-£1,20</td>
+              <td className="py-3 px-3 text-center border-b border-gray-200">£0,22-£0,65</td>
+              <td className="py-3 px-3 text-right border-b border-gray-200 text-green-700 font-semibold">~40-45%</td>
             </tr>
           </tbody>
         </table>
@@ -325,20 +325,20 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <p>
         Važno upozorenje: niži CPC ne znači automatski bolji ROAS. Ako je volumen pretrage na Bing-u 10x manji,
-        i CPC je 40% niži, ali konverzija je slična — matematika radi. Ali ako je konverzija niža zbog drugačijeg
+        i CPC je 40% niži, ali konverzija je slična - matematika radi. Ali ako je konverzija niža zbog drugačijeg
         kvaliteta saobraćaja, ušteđeni CPC se gubi u višem CPA. Uvek gledate CPA (Cost Per Acquisition),
         ne samo CPC.
       </p>
 
       <p>
         Iz prakse: vidim nižu stopu konverzije na Bing-u u poređenju sa Google-om za iste proizvode,
-        ali viši prosečan AOV — starija publika kupuje skuplje linije. Net rezultat: CPA je sličan, ali POAS
+        ali viši prosečan AOV - starija publika kupuje skuplje linije. Net rezultat: CPA je sličan, ali POAS
         (Profit on Ad Spend) je blago bolji na Microsoft zbog višeg AOV-a.
       </p>
 
       <hr />
 
-      <h2 id="feature-paritet">Feature paritet — RSA, Shopping, PMax ekvivalenti u 2026</h2>
+      <h2 id="feature-paritet">Feature paritet - RSA, Shopping, PMax ekvivalenti u 2026</h2>
 
       <p>
         Jedna od najvećih prednosti Microsoft Ads-a u poslednjih nekoliko godina: agresivno dostizanje feature
@@ -352,13 +352,13 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Responsive Search Ads (RSA)</h3>
               <p className="text-base text-gray-600 mb-2">
-                Obe platforme imaju RSA format — 15 naslova, 4 opisa, Google/Microsoft kombinuje automatski.
+                Obe platforme imaju RSA format - 15 naslova, 4 opisa, Google/Microsoft kombinuje automatski.
                 Ključna razlika: Microsoft Ads RSA performance insights su manje detaljni od Google-ovih
                 (Asset performance labels su Basic vs. Google-ovog Good/Best/Low/Learning). Character limiti
                 su identični (30 za naslov, 90 za opis).
               </p>
               <p className="text-xs text-gray-500 mb-0">
-                Taktika: koristite iste headline-ove i opise kao na Google-u — Microsoft import alat
+                Taktika: koristite iste headline-ove i opise kao na Google-u - Microsoft import alat
                 automatski povlači kampanje iz Google Ads-a.
               </p>
             </div>
@@ -371,7 +371,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <div>
               <h3 className="text-base font-heading font-bold mt-0 mb-1">Microsoft Shopping Campaigns</h3>
               <p className="text-base text-gray-600 mb-2">
-                Direktni Google Shopping ekvivalent — Microsoft Merchant Center, product feed (isti format
+                Direktni Google Shopping ekvivalent - Microsoft Merchant Center, product feed (isti format
                 kao Google), Shopping kampanje sa Product Groups. Feed se može importovati direktno iz
                 Google Merchant Center-a. Na nalozima gde dualno radimo, vodim paralelne Shopping kampanje na obe platforme
                 sa istim feedom, prilagođenim bid-ovima.
@@ -388,7 +388,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">P</span>
             <div>
-              <h3 className="text-base font-heading font-bold mt-0 mb-1">Performance Max ekvivalent — Microsoft Audience Campaigns + Microsoft PMax</h3>
+              <h3 className="text-base font-heading font-bold mt-0 mb-1">Performance Max ekvivalent - Microsoft Audience Campaigns + Microsoft PMax</h3>
               <p className="text-base text-gray-600 mb-2">
                 Microsoft nema identični PMax, ali ima Audience Network (ekvivalent Google Display/YouTube
                 mreže) i svoju Performance Max kampanju koja automatski distribuira budget kroz Search i Shopping.
@@ -409,7 +409,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">AI</span>
             <div>
-              <h3 className="text-base font-heading font-bold mt-0 mb-1">AI i automatizacija — gde Google vodi</h3>
+              <h3 className="text-base font-heading font-bold mt-0 mb-1">AI i automatizacija - gde Google vodi</h3>
               <p className="text-base text-gray-600 mb-2">
                 Google-ov <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> (tROAS, tCPA, Maximize Conversions) je zreliji i pouzdaniji zbog
                 ogromne količine konverzionih podataka. Microsoft Smart Bidding funkcioniše, ali zahteva
@@ -490,20 +490,20 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <hr />
 
-      <h2 id="realni-podaci">Realni obrasci iz UK/USA naloga — dualno vođenje platformi</h2>
+      <h2 id="realni-podaci">Realni obrasci iz UK/USA naloga - dualno vođenje platformi</h2>
 
       <p>
         Iz godina vođenja obe platforme paralelno za UK i USA eCommerce brendove, ovde su konkretni obrasci
-        koje sam uočio — bez preciznih brend-specific cifara, ali sa jasnim relativnim trendovima:
+        koje sam uočio - bez preciznih brend-specific cifara, ali sa jasnim relativnim trendovima:
       </p>
 
       <div className="space-y-4 my-8">
         <div className="bg-white border-l-4 border-green-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Uvid 1: AOV je konzistentno viši na Microsoft Ads</p>
           <p className="text-base text-gray-600 mb-0">
-            Kupci koji dolaze sa Bing pretrage imaju u proseku 15–25% viši Average Order Value od
-            Google kupaca. Starija demografija kupuje premium proizvode — premium linije u kategorijama koje su relevantne (~£80–£120
-            po stavci) proporcionalno više od entry-level linije (~£20–£35). Ovo direktno utiče na POAS računicu.
+            Kupci koji dolaze sa Bing pretrage imaju u proseku 15-25% viši Average Order Value od
+            Google kupaca. Starija demografija kupuje premium proizvode - premium linije u kategorijama koje su relevantne (~£80-£120
+            po stavci) proporcionalno više od entry-level linije (~£20-£35). Ovo direktno utiče na POAS računicu.
           </p>
         </div>
 
@@ -512,15 +512,15 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           <p className="text-base text-gray-600 mb-0">
             Microsoft-ov &quot;Import from Google Ads&quot; funkcija je izuzetno korisna. Možete automatski povući
             kompletnu kampanjsku strukturu iz Google Ads-a direktno u Microsoft Ads. U dualnom workflow-u, inicijalni
-            setup na Microsoft-u trajao je 3–4 sata umesto tipičnih 15–20 sati za ručni setup. Kampanje
-            se sinhronizuju mesečno — novi ad copy, novo proširenja, nove negativne ključne reči.
+            setup na Microsoft-u trajao je 3-4 sata umesto tipičnih 15-20 sati za ručni setup. Kampanje
+            se sinhronizuju mesečno - novi ad copy, novo proširenja, nove negativne ključne reči.
           </p>
         </div>
 
         <div className="bg-white border-l-4 border-yellow-500 rounded-r-xl p-4 shadow-card">
           <p className="text-sm font-bold text-gray-900 mb-1">Uvid 3: Conversion rate je niži, ali ne dramatično</p>
           <p className="text-base text-gray-600 mb-0">
-            Microsoft Ads conversion rate je konzistentno 20–30% niži od Google-a za iste kampanje.
+            Microsoft Ads conversion rate je konzistentno 20-30% niži od Google-a za iste kampanje.
             Objašnjenje: manji volumen znači manje podataka za Smart Bidding optimizaciju, a demografski
             profil koji više istražuje donosi više &quot;window shoppers&quot;. Važno: niži CVR se kompenzuje
             nižim CPC-om, pa CPA ostaje konkurentan.
@@ -533,7 +533,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             Sa 70%+ desktop pretrage na Bing-u, Microsoft kampanje imaju drugačije asset performanse
             od Google. Duži opisi (90 karaktera) koji detaljno opisuju benefite rade bolje od kratkih,
             punch-oriented naslova koji dominiraju na mobile Google pretrazi. Prilagodili smo descriptions
-            da naglašavaju &quot;dermatologically tested&quot;, &quot;UK-made&quot; i specifične ingredient benefits —
+            da naglašavaju &quot;dermatologically tested&quot;, &quot;UK-made&quot; i specifične ingredient benefits -
             informacije koje desktop korisnik u istraživačkoj fazi želi da vidi.
           </p>
         </div>
@@ -542,7 +542,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           <p className="text-sm font-bold text-gray-900 mb-1">Uvid 5: <GlossaryLink slug="impression-share">Impression Share</GlossaryLink> je lakše osvajati na Bing-u</p>
           <p className="text-base text-gray-600 mb-0">
             Na Google Ads, osvajanje 80%+ impression share za konkurentne termine zahteva agresivne budžete.
-            Na Microsoft Ads, isti impression share dostupan je sa 3–5x manjim budžetom zbog nižeg broja
+            Na Microsoft Ads, isti impression share dostupan je sa 3-5x manjim budžetom zbog nižeg broja
             konkurentnih oglašivača. Tipičan UK brend ima 85%+ IS na branded pretragama na Bing-u sa budžetom
             koji bi na Google-u pokrivao samo 40% IS-a.
           </p>
@@ -551,12 +551,12 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <hr />
 
-      <h2 id="konverzije-i-atribucija">Konverzije i atribucija — gde platforme rade drugačije</h2>
+      <h2 id="konverzije-i-atribucija">Konverzije i atribucija - gde platforme rade drugačije</h2>
 
       <p>
         Jedno od praktičnih izazova u radu sa obe platforme simultano je atribucija konverzija.
         Korisnik može videti oglas na Google-u, ne kupiti, videti oglas na Bing-u dan kasnije i kupiti.
-        Obe platforme će taj konverziju pripisati sebi — fenomen poznat kao double counting.
+        Obe platforme će taj konverziju pripisati sebi - fenomen poznat kao double counting.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 md:p-6 my-6">
@@ -565,15 +565,15 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           {[
             {
               br: "1.",
-              txt: "Koristite GA4 kao sistem istine — GA4 Cross-Channel atribucija (Data-Driven model) daje neutralnu sliku doprinosa svake platforme."
+              txt: "Koristite GA4 kao sistem istine - GA4 Cross-Channel atribucija (Data-Driven model) daje neutralnu sliku doprinosa svake platforme."
             },
             {
               br: "2.",
-              txt: "Pratite Assisted Conversions u GA4 — Google Ads i Bing mogu biti assisted channels u multi-touch journeyu, ne uvek last-click."
+              txt: "Pratite Assisted Conversions u GA4 - Google Ads i Bing mogu biti assisted channels u multi-touch journeyu, ne uvek last-click."
             },
             {
               br: "3.",
-              txt: "Ne optimizujete svaku platformu u vakuumu — pogledajte ukupan rast prihoda, ne samo platformski ROAS. Ako obe rastu, radi."
+              txt: "Ne optimizujete svaku platformu u vakuumu - pogledajte ukupan rast prihoda, ne samo platformski ROAS. Ako obe rastu, radi."
             },
             {
               br: "4.",
@@ -591,13 +591,13 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       <p>
         Reporting razlike: Google Ads ima napredniji Search Terms report, impression share podatke po
         aukciji, i Auction Insights koji pokazuje konkurente. Microsoft Ads ima koristan &quot;Publish to Bing&quot;
-        i LinkedIn demographic reporting (ko klikće po industriji i poziciji) — ali generalni reporting
+        i LinkedIn demographic reporting (ko klikće po industriji i poziciji) - ali generalni reporting
         interfejs je manje intuitivan od Google-a, posebno za granularne analize.
       </p>
 
       <hr />
 
-      <h2 id="kada-koristiti">Kada koristiti Microsoft Ads — decision framework</h2>
+      <h2 id="kada-koristiti">Kada koristiti Microsoft Ads - decision framework</h2>
 
       <p>
         Iz mog iskustva, Microsoft Ads vredi testirati kada se kumulativno ispune ovi uslovi.
@@ -609,7 +609,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           {
             check: true,
             title: "Prodajete na UK, SAD, AU, CA, DE tržištu",
-            desc: "Microsoft Ads ima smisla samo na tržištima gde Bing ima relevantan tržišni udeo (5%+). Za Srbiju, BiH, Crnu Goru — Google je dovoljno."
+            desc: "Microsoft Ads ima smisla samo na tržištima gde Bing ima relevantan tržišni udeo (5%+). Za Srbiju, BiH, Crnu Goru - Google je dovoljno."
           },
           {
             check: true,
@@ -619,22 +619,22 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           {
             check: true,
             title: "Vaš proizvod ili usluga targetira 35+ demografiju",
-            desc: "Premium kozmetika, finansijski proizvodi, zdravstvo, B2B usluge, luksuzni hobi — sve kategorije gde starija demografija troši više."
+            desc: "Premium kozmetika, finansijski proizvodi, zdravstvo, B2B usluge, luksuzni hobi - sve kategorije gde starija demografija troši više."
           },
           {
             check: true,
-            title: "B2B ili professional services — LinkedIn targeting je relevantan",
-            desc: "Ovo je killer prednost Microsoft Ads-a. Ako targetirate poslovne korisnike po industriji, poziciji ili firmi — nema alternativa."
+            title: "B2B ili professional services - LinkedIn targeting je relevantan",
+            desc: "Ovo je killer prednost Microsoft Ads-a. Ako targetirate poslovne korisnike po industriji, poziciji ili firmi - nema alternativa."
           },
           {
             check: true,
             title: "Imate budžet za management druge platforme",
-            desc: "Microsoft import alat pomaže, ali management dve platforme i dalje zahteva vreme. Minimalni mesečni spend za MS Ads koji ima smisla: £300–£500 (UK)."
+            desc: "Microsoft import alat pomaže, ali management dve platforme i dalje zahteva vreme. Minimalni mesečni spend za MS Ads koji ima smisla: £300-£500 (UK)."
           },
           {
             check: false,
             title: "NE: Ako vam je Google nalog ispod target-a",
-            desc: "Diverzifikacija pri lošim rezultatima nije strategija — to je gubljenje fokusa. Popravite Google, pa razmišljajte o Microsoft-u."
+            desc: "Diverzifikacija pri lošim rezultatima nije strategija - to je gubljenje fokusa. Popravite Google, pa razmišljajte o Microsoft-u."
           }
         ].map((item, i) => (
           <div key={i} className={`flex items-start gap-4 bg-white border rounded-xl p-4 shadow-card ${item.check ? "border-green-200" : "border-red-200"}`}>
@@ -651,7 +651,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <hr />
 
-      <h2 id="kada-obe">Kada koristiti obe platforme simultano — i kako to raditi efikasno</h2>
+      <h2 id="kada-obe">Kada koristiti obe platforme simultano - i kako to raditi efikasno</h2>
 
       <p>
         Ako ispunjavate kriterijume za Microsoft Ads, sledeće pitanje je: kako voditi obe platforme
@@ -660,7 +660,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
         <div className="bg-white border-2 border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs font-bold uppercase tracking-wide text-blue-700 mb-3">Google Ads — primarna platforma</p>
+          <p className="text-xs font-bold uppercase tracking-wide text-blue-700 mb-3">Google Ads - primarna platforma</p>
           <ul className="text-sm text-gray-700 space-y-2 mb-0">
             <li>Pun budžet, pun fokus, puna optimizacija</li>
             <li>Smart Bidding sa zrelim konverzionim podacima</li>
@@ -671,7 +671,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           </ul>
         </div>
         <div className="bg-white border-2 border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs font-bold uppercase tracking-wide text-orange-700 mb-3">Microsoft Ads — dopunska platforma</p>
+          <p className="text-xs font-bold uppercase tracking-wide text-orange-700 mb-3">Microsoft Ads - dopunska platforma</p>
           <ul className="text-sm text-gray-700 space-y-2 mb-0">
             <li>Import iz Google Ads-a mesečno (sinhronizacija)</li>
             <li>15% ukupnog budžeta (pravilo za početak)</li>
@@ -686,8 +686,8 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       <p>
         Workflow koji koristim: svaki prvi ponedeljak u mesecu, importujem izmene iz Google Ads-a
         u Microsoft Ads (novi ad copy, nove negative KW-ove, bid adjustments). Mesečni review Microsoft performansi
-        traje 45–60 minuta, nasuprot 3–4 sata za Google. Ukupno dodatno vreme za drugu platformu: 90 minuta
-        mesečno. To je efikasan odnos za platformen koja donosi 12–15% inkrementalnih konverzija.
+        traje 45-60 minuta, nasuprot 3-4 sata za Google. Ukupno dodatno vreme za drugu platformu: 90 minuta
+        mesečno. To je efikasan odnos za platformen koja donosi 12-15% inkrementalnih konverzija.
       </p>
 
       <div className="bg-green-50 border border-green-200 rounded-xl p-5 my-6">
@@ -695,13 +695,13 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         <ol className="text-base text-green-800 space-y-1 mb-0 list-decimal pl-4">
           <li>Microsoft Ads → Tools → Import Campaigns → Import from Google Ads</li>
           <li>Povežite Google Ads nalog, izaberite kampanje za import, mapiranje budžeta</li>
-          <li>Postavite automatski uvoz (mesečno) — svaki put dobijate notifikaciju o promenama</li>
+          <li>Postavite automatski uvoz (mesečno) - svaki put dobijate notifikaciju o promenama</li>
         </ol>
       </div>
 
       <p>
         Važni linkovi za kontekst obe platforme i kakve su razlike u targeting mogućnostima,
-        pogledajte i komparaciju sa Meta Ads — treća platforma koja zatvara triangle:
+        pogledajte i komparaciju sa Meta Ads - treća platforma koja zatvara triangle:
       </p>
 
       <ul>
@@ -741,7 +741,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
 
       <hr />
 
-      <h2 id="zakljucak">Zaključak — Koja platforma za koji biznis</h2>
+      <h2 id="zakljucak">Zaključak - Koja platforma za koji biznis</h2>
 
       <p>
         Posle godina paralelnog vođenja obe platforme za UK i USA klijente, moj stav je jasan:
@@ -749,17 +749,17 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
       </p>
 
       <p>
-        Nije reč o tome koja je &quot;bolja&quot; — reč je o tome koja je primarna i koja je dopunska.
+        Nije reč o tome koja je &quot;bolja&quot; - reč je o tome koja je primarna i koja je dopunska.
         Google-ov tržišni udeo, napredna automatizacija, i zrelost platforme čine ga temeljem svakog
         paid search programa. Microsoft Ads dolazi na vrh kada: prodajete na anglofona tržišta,
         targetirate 35+ demografiju, imate B2B komponentu, ili jednostavno hoćete da pokupite
-        dodatnih 5–12% potencijalnih kupaca po nižoj ceni.
+        dodatnih 5-12% potencijalnih kupaca po nižoj ceni.
       </p>
 
       <p>
         Za srpske biznise koji prodaju lokalno: Microsoft Ads nije prioritet za 2026. Fokusirajte se na
         Google - i pripremite se za Google Shopping koji stiže u drugoj polovini 2026 (Q3 ili Q4). Za biznise koji prodaju
-        na UK, SAD, DE ili AU: Microsoft Ads test kampanja od £300–£500 mesečno može biti jedan od
+        na UK, SAD, DE ili AU: Microsoft Ads test kampanja od £300-£500 mesečno može biti jedan od
         najisplativijih eksperimenata koje ćete uraditi. Ako želite da vam neko upravlja Google Ads nalogom
         dok testirate Microsoft Ads paralelno, pogledajte našu uslugu{" "}
         <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">Google Ads upravljanja</Link>.
@@ -769,7 +769,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         Ako imate pitanja o setup-u Microsoft Ads-a ili kako da integrirate obe platforme u koherentnu
         strategiju,{" "}
         <a href="/sr/kontakt" className="underline font-medium">
-          pišite mi — besplatna konsultacija 30 minuta.
+          pišite mi - besplatna konsultacija 30 minuta.
         </a>{" "}
         Ili pogledajte detalje naše{" "}
         <Link href="/usluge/konsultacije" className="underline font-medium">konsultantske usluge</Link>.
@@ -786,7 +786,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Za biznise koji prodaju <strong>isključivo na srpskom tržištu</strong>: ne vredi — Bing ima samo ~2% tržišnog udela u Srbiji. Za biznise koji prodaju na <strong>UK, SAD, Nemačku, Australiju</strong>: vredi testirati. Na tim tržištima Bing drži 7–12% desktop pretrage, CPC je 35–45% niži od Google-a, a publika je starija i imovinijski snažnija. Minimalni mesečni spend za smislen test: £300–500 ili ekvivalent.
+            Za biznise koji prodaju <strong>isključivo na srpskom tržištu</strong>: ne vredi - Bing ima samo ~2% tržišnog udela u Srbiji. Za biznise koji prodaju na <strong>UK, SAD, Nemačku, Australiju</strong>: vredi testirati. Na tim tržištima Bing drži 7-12% desktop pretrage, CPC je 35-45% niži od Google-a, a publika je starija i imovinijski snažnija. Minimalni mesečni spend za smislen test: £300-500 ili ekvivalent.
           </div>
         </details>
 
@@ -796,7 +796,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Tehnički, <strong>izuzetno lako</strong>. Microsoft Ads ima &quot;Import from Google Ads&quot; alat koji automatski prebacuje kompletnu strukturu kampanja (kampanje, ad groups, keywords, ads, assets, ranije extensions) iz Google naloga. Inicijalni import traje 1–2 sata (podešavanja, budžet mapping, prilagođavanje bid-ova). Iz prakse: mesečna sinhronizacija je automatska i traje svega 15 minuta manualnog pregleda. Pametni oglašivači imaju Microsoft kao &quot;shadow campaign&quot; koji se automatski sinhronizuje sa Google promenama.
+            Tehnički, <strong>izuzetno lako</strong>. Microsoft Ads ima &quot;Import from Google Ads&quot; alat koji automatski prebacuje kompletnu strukturu kampanja (kampanje, ad groups, keywords, ads, assets, ranije extensions) iz Google naloga. Inicijalni import traje 1-2 sata (podešavanja, budžet mapping, prilagođavanje bid-ova). Iz prakse: mesečna sinhronizacija je automatska i traje svega 15 minuta manualnog pregleda. Pametni oglašivači imaju Microsoft kao &quot;shadow campaign&quot; koji se automatski sinhronizuje sa Google promenama.
           </div>
         </details>
 
@@ -806,7 +806,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Microsoft poseduje LinkedIn od 2016, što im daje pristup profesionalnim profilnim podacima. U Microsoft Ads-u možete targetirati korisnike pretrage po <strong>LinkedIn industriji</strong> (40+ kategorija), <strong>radnoj poziciji</strong> (C-level, Director, Manager, Individual Contributor) i <strong>imenu firme</strong>. Ovo funkcioniše kao <strong>bid modifier</strong> — povećavate bid za segmente koji konvertuju bolje, ali ne isključujete ostale. Idealno za B2B, financial services, SaaS, i professional services. Počnite sa observation mode-om, sakupite podatke, pa primenite bid adjustments (+15% do +30% za vredne segmente).
+            Microsoft poseduje LinkedIn od 2016, što im daje pristup profesionalnim profilnim podacima. U Microsoft Ads-u možete targetirati korisnike pretrage po <strong>LinkedIn industriji</strong> (40+ kategorija), <strong>radnoj poziciji</strong> (C-level, Director, Manager, Individual Contributor) i <strong>imenu firme</strong>. Ovo funkcioniše kao <strong>bid modifier</strong> - povećavate bid za segmente koji konvertuju bolje, ali ne isključujete ostale. Idealno za B2B, financial services, SaaS, i professional services. Počnite sa observation mode-om, sakupite podatke, pa primenite bid adjustments (+15% do +30% za vredne segmente).
           </div>
         </details>
 
@@ -816,7 +816,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Da — Microsoft Merchant Center i Microsoft Shopping Campaigns su funkcionalni ekvivalent. <strong>Isti feed format</strong> (Google Shopping feed radi direktno na Microsoft bez izmena), slična kampanjska struktura (Product Groups, bid-ovi po kategoriji), i isti vizuelni format (slika, cena, naziv prodavnice). Razlike: Microsoft nema Google-ov Shopping Intelligence, auction insights su manje detaljni, a reporting je bazičniji. Na nalozima gde dualno radimo, vodim paralelne Shopping kampanje — Microsoft verzija donosi 10–15% dodatnih Shopping konverzija sa identičnim feed-om.
+            Da - Microsoft Merchant Center i Microsoft Shopping Campaigns su funkcionalni ekvivalent. <strong>Isti feed format</strong> (Google Shopping feed radi direktno na Microsoft bez izmena), slična kampanjska struktura (Product Groups, bid-ovi po kategoriji), i isti vizuelni format (slika, cena, naziv prodavnice). Razlike: Microsoft nema Google-ov Shopping Intelligence, auction insights su manje detaljni, a reporting je bazičniji. Na nalozima gde dualno radimo, vodim paralelne Shopping kampanje - Microsoft verzija donosi 10-15% dodatnih Shopping konverzija sa identičnim feed-om.
           </div>
         </details>
 
@@ -826,7 +826,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Pravilo koje koristim: <strong>10–15% ukupnog paid search budžeta</strong>. Ako trošite £3.500 na Google, testni Microsoft budžet je £350–500. Ovo je dovoljno za merljive podatke, ali ne toliko da ugrozi Google performanse. Minimalni smisleni budžet za UK eCommerce je <strong>£300/mesec</strong> — ispod toga nema dovoljno klikova za statički relevantne podatke. Za B2B sa višim CPC-ovima, minimum je viši (~£500+) jer skuplje ključne reči zahtevaju više budžeta za isti volumen podataka.
+            Pravilo koje koristim: <strong>10-15% ukupnog paid search budžeta</strong>. Ako trošite £3.500 na Google, testni Microsoft budžet je £350-500. Ovo je dovoljno za merljive podatke, ali ne toliko da ugrozi Google performanse. Minimalni smisleni budžet za UK eCommerce je <strong>£300/mesec</strong> - ispod toga nema dovoljno klikova za statički relevantne podatke. Za B2B sa višim CPC-ovima, minimum je viši (~£500+) jer skuplje ključne reči zahtevaju više budžeta za isti volumen podataka.
           </div>
         </details>
 
@@ -836,7 +836,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Preporuka za nove Microsoft naloge: počnite sa <strong>Enhanced CPC (eCPC)</strong> ili Manual CPC. Microsoft Smart Bidding (tROAS, tCPA) zahteva minimum <strong>30 konverzija mesečno</strong> za stabilnu optimizaciju — sa manjim volumenima, algoritam fluktuira jer nema dovoljno podataka. Posle 60–90 dana sa 30+ konverzija mesečno, prelazite na Maximize Conversions sa target CPA cap-om. Tek posle 6 meseci solidnih podataka razmišljajte o tROAS ako je to relevantno za vaš model.
+            Preporuka za nove Microsoft naloge: počnite sa <strong>Enhanced CPC (eCPC)</strong> ili Manual CPC. Microsoft Smart Bidding (tROAS, tCPA) zahteva minimum <strong>30 konverzija mesečno</strong> za stabilnu optimizaciju - sa manjim volumenima, algoritam fluktuira jer nema dovoljno podataka. Posle 60-90 dana sa 30+ konverzija mesečno, prelazite na Maximize Conversions sa target CPA cap-om. Tek posle 6 meseci solidnih podataka razmišljajte o tROAS ako je to relevantno za vaš model.
           </div>
         </details>
       </div>
@@ -853,7 +853,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             rel="noopener noreferrer"
             className="underline"
           >
-            StatCounter GlobalStats — Search Engine Market Share (april 2026)
+            StatCounter GlobalStats - Search Engine Market Share (april 2026)
           </a>
         </li>
         <li>
@@ -863,7 +863,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             rel="noopener noreferrer"
             className="underline"
           >
-            Microsoft Advertising — Audience Profile Report
+            Microsoft Advertising - Audience Profile Report
           </a>
         </li>
         <li>
@@ -873,7 +873,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
             rel="noopener noreferrer"
             className="underline"
           >
-            WordStream — Google Ads vs Bing Ads CPC Benchmarks
+            WordStream - Google Ads vs Bing Ads CPC Benchmarks
           </a>
         </li>
         <li>

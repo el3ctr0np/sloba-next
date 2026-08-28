@@ -9,7 +9,7 @@ export default function YouTubeOglasavanjeVodicSR() {
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           YouTube je drugi najveći search engine na svetu sa 2.5 milijardi mesečnih korisnika. Video oglasi konvertuju
-          bolje od teksta jer kombinuju vizual, zvuk i emociju. Prosečni <GlossaryLink slug="cpv">CPV</GlossaryLink> u Srbiji je 2-3x niži nego u US/UK —
+          bolje od teksta jer kombinuju vizual, zvuk i emociju. Prosečni <GlossaryLink slug="cpv">CPV</GlossaryLink> u Srbiji je 2-3x niži nego u US/UK -
           što znači da je sada idealno vreme za testiranje video kampanja.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
@@ -33,10 +33,10 @@ export default function YouTubeOglasavanjeVodicSR() {
       </div>
 
       <p>
-        Ako se pitate da li YouTube oglašavanje ima smisla za vaš biznis — kratki odgovor je da, gotovo uvek.
+        Ako se pitate da li YouTube oglašavanje ima smisla za vaš biznis - kratki odgovor je da, gotovo uvek.
         YouTube je platforma na kojoj ljudi provode više vremena nego na bilo kojoj TV stanici, traže rešenja za
         probleme, gledaju recenzije proizvoda, i donose odluke o kupovini. Video format vam omogućava da
-        komunicirate na način koji tekst jednostavno ne može — kroz demonstraciju, emociju i priču.
+        komunicirate na način koji tekst jednostavno ne može - kroz demonstraciju, emociju i priču.
       </p>
       <p>
         U ovom vodiču pokrićemo sve što trebate znati: od formata oglasa i troškova, kroz targeting opcije i
@@ -64,12 +64,12 @@ export default function YouTubeOglasavanjeVodicSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Činjenica #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Shorts eksplozija</h3>
-          <p className="text-base text-gray-600 mb-0">YouTube Shorts generiše 70+ milijardi dnevnih pregleda. Vertikalni kratki format je najbrže rastući tip sadržaja, a Shorts Ads su novi format koji brendovi tek počinju da koriste — dok je konkurencija još niska.</p>
+          <p className="text-base text-gray-600 mb-0">YouTube Shorts generiše 70+ milijardi dnevnih pregleda. Vertikalni kratki format je najbrže rastući tip sadržaja, a Shorts Ads su novi format koji brendovi tek počinju da koriste - dok je konkurencija još niska.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Činjenica #3</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Jeftino u Srbiji</h3>
-          <p className="text-base text-gray-600 mb-0">CPV (cena po pregledu) u Srbiji je 2-3 puta niži nego u SAD ili UK. To znači da za isti budžet dobijate značajno više pregleda — idealna prilika za testiranje pre nego što se cene povećaju.</p>
+          <p className="text-base text-gray-600 mb-0">CPV (cena po pregledu) u Srbiji je 2-3 puta niži nego u SAD ili UK. To znači da za isti budžet dobijate značajno više pregleda - idealna prilika za testiranje pre nego što se cene povećaju.</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Činjenica #4</p>
@@ -88,7 +88,7 @@ export default function YouTubeOglasavanjeVodicSR() {
       <hr />
 
       {/* ── Sekcija 2: 6 formata ── */}
-      <h2>6 formata YouTube oglasa — koji za šta</h2>
+      <h2>6 formata YouTube oglasa - koji za šta</h2>
       <p>
         YouTube nudi šest glavnih formata oglasa, svaki dizajniran za različite ciljeve. Izbor formata
         direktno utiče na troškove, doseg i tip interakcije sa publikom. Evo pregleda svakog sa{" "}
@@ -152,7 +152,7 @@ export default function YouTubeOglasavanjeVodicSR() {
         <p className="font-semibold text-blue-900 mb-1">Moja preporuka za početnike</p>
         <p className="text-blue-800 text-base mb-0">
           Počnite sa <strong>Skippable In-Stream</strong> formatom. Plaćate samo kada neko odgleda
-          30+ sekundi vašeg videa — što znači da plaćate isključivo za zainteresovane gledaoce.
+          30+ sekundi vašeg videa - što znači da plaćate isključivo za zainteresovane gledaoce.
           Idealno za testiranje sa budžetom od €300-500 mesečno.
         </p>
       </div>
@@ -178,23 +178,23 @@ export default function YouTubeOglasavanjeVodicSR() {
           <tbody className="divide-y divide-gray-200">
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 font-medium">CPV (cena po pregledu)</td>
-              <td className="py-3 px-3">€0.02 – €0.03</td>
-              <td className="py-3 px-3">€0.01 – €0.02</td>
+              <td className="py-3 px-3">€0.02 - €0.03</td>
+              <td className="py-3 px-3">€0.01 - €0.02</td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 font-medium"><GlossaryLink slug="cpm">CPM</GlossaryLink> (cena po 1,000 impresija)</td>
-              <td className="py-3 px-3">€5 – €10</td>
-              <td className="py-3 px-3">€2 – €5</td>
+              <td className="py-3 px-3">€5 - €10</td>
+              <td className="py-3 px-3">€2 - €5</td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 font-medium">Shorts CPV</td>
-              <td className="py-3 px-3">€0.10 – €0.30</td>
-              <td className="py-3 px-3">€0.05 – €0.15</td>
+              <td className="py-3 px-3">€0.10 - €0.30</td>
+              <td className="py-3 px-3">€0.05 - €0.15</td>
             </tr>
             <tr className="hover:bg-gray-50">
               <td className="py-3 px-3 font-medium">CPC (In-Feed format)</td>
               <td className="py-3 px-3">~€0.49</td>
-              <td className="py-3 px-3">€0.15 – €0.35</td>
+              <td className="py-3 px-3">€0.15 - €0.35</td>
             </tr>
           </tbody>
         </table>
@@ -220,14 +220,14 @@ export default function YouTubeOglasavanjeVodicSR() {
 
       <p>
         <strong>Važno za srpsko tržište:</strong> Srbija je značajno jeftinija od razvijenih tržišta
-        jer je konkurencija za YouTube Ads oglasni prostor niža. Ovo je prozor koji neće trajati zauvek —
+        jer je konkurencija za YouTube Ads oglasni prostor niža. Ovo je prozor koji neće trajati zauvek -
         kako više oglašivača počne da koristi video format, cene će rasti.
       </p>
 
       <hr />
 
       {/* ── Sekcija 4: Targeting ── */}
-      <h2>Targeting opcije — kako doći do prave publike</h2>
+      <h2>Targeting opcije - kako doći do prave publike</h2>
       <p>
         Snaga YouTube oglašavanja leži u preciznom targetiranju. Google Ads nudi{" "}
         <a href="https://support.google.com/youtube/answer/2454017?hl=en" target="_blank" rel="noopener noreferrer" className="underline">
@@ -265,7 +265,7 @@ export default function YouTubeOglasavanjeVodicSR() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">7. <GlossaryLink slug="remarketing">Remarketing</GlossaryLink> (vaša publika)</h3>
           <p className="text-base text-gray-600 mb-0">
             Prikažite oglase ljudima koji su već posetili vaš sajt, gledali vaše videe, ili interagovali sa vašim YouTube kanalom.
-            Najisplativiji targeting — više o ovome u našem{" "}
+            Najisplativiji targeting - više o ovome u našem{" "}
             <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-medium">
               vodiču za remarketing kampanje
             </Link>.
@@ -276,7 +276,7 @@ export default function YouTubeOglasavanjeVodicSR() {
       <hr />
 
       {/* ── Sekcija 5: Korak po korak ── */}
-      <h2>Kako kreirati prvu YouTube kampanju — korak po korak</h2>
+      <h2>Kako kreirati prvu YouTube kampanju - korak po korak</h2>
       <p>
         Evo pojednostavljenog procesa za kreiranje prve video kampanje u Google Ads-u. Za detaljne
         instrukcije, pogledajte{" "}
@@ -294,7 +294,7 @@ export default function YouTubeOglasavanjeVodicSR() {
           { step: "5", title: "Definišite targeting", desc: "Lokacija (Srbija), jezik, demografija + minimum jedan audience signal (In-Market, Custom Segment, ili Remarketing lista)." },
           { step: "6", title: "Upload-ujte video", desc: "Video mora biti na vašem YouTube kanalu (može biti Unlisted). Minimalni kvalitet: 720p, horizontalni (16:9) ili vertikalni (9:16) za Shorts." },
           { step: "7", title: "Dodajte CTA i companion banner", desc: "Call-to-Action overlay sa tekstom (npr. Saznajte više) i URL-om. Companion banner (300x60px) pojačava brending." },
-          { step: "8", title: "Pokrenite i pratite", desc: "Prvih 7 dana: ne menjajte ništa — pustite algoritam da nauči. Posle 7 dana: analizirajte View Rate, CPV i konverzije." },
+          { step: "8", title: "Pokrenite i pratite", desc: "Prvih 7 dana: ne menjajte ništa - pustite algoritam da nauči. Posle 7 dana: analizirajte View Rate, CPV i konverzije." },
         ].map((item) => (
           <div key={item.step} className="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-4 shadow-card">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">
@@ -311,14 +311,14 @@ export default function YouTubeOglasavanjeVodicSR() {
       <hr />
 
       {/* ── Sekcija 6: Shorts ── */}
-      <h2>YouTube Shorts Ads — najbrže rastući format u 2026</h2>
+      <h2>YouTube Shorts Ads - najbrže rastući format u 2026</h2>
       <p>
         YouTube Shorts Ads su vertikalni, fullscreen video oglasi koji se prikazuju između organskih
         Shorts videa. Sa 70+ milijardi dnevnih pregleda, Shorts je najbrže rastući format na platformi.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-6 md:p-8 my-6">
-        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Shorts Ads — ključne činjenice</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Shorts Ads - ključne činjenice</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <p className="font-heading font-bold mb-2">Specifikacije:</p>
@@ -333,7 +333,7 @@ export default function YouTubeOglasavanjeVodicSR() {
             <p className="font-heading font-bold mb-2">Novosti za 2026:</p>
             <ul className="text-slate-300 text-sm space-y-1">
               <li>Product Ratings sada dostupni u Shorts (April 2026)</li>
-              <li>Shorts Ads za eCommerce — prikaz ocena i cena</li>
+              <li>Shorts Ads za eCommerce - prikaz ocena i cena</li>
               <li>Idealno za: brand awareness, mlađa demografija, impulzivne kupovine</li>
               <li>
                 Više o ovom update-u u našim{" "}
@@ -395,9 +395,9 @@ export default function YouTubeOglasavanjeVodicSR() {
       <div className="space-y-4 my-6">
         {[
           { num: "1", title: "Predugački videi za awareness kampanje", desc: "Bumper i awareness formati zahtevaju kratke, upečatljive poruke. Video od 3 minuta za awareness kampanju = bacanje budžeta. Držite se 15-30 sekundi za top-of-funnel." },
-          { num: "2", title: "Nema hook-a u prvih 5 sekundi", desc: "Kod Skippable In-Stream formata, imate 5 sekundi pre nego što korisnik može da preskoči. Ako počnete sa logom i sporim introm — izgubili ste ga. Počnite sa problemom ili pitanjem." },
-          { num: "3", title: "Preširoko targetiranje", desc: "Srbija, svi uzrasti, svi interesi — to nije strategija. Što je targeting uži i relevantniji, to je CPV niži i engagement viši. Koristite kombinaciju Audience + Content targeting-a." },
-          { num: "4", title: "Nema remarketing strategije", desc: "YouTube remarketing (ljudi koji su gledali vaše videe) je najjeftiniji i najefikasniji kanal. Ako nemate remarketing liste — gubite 80% vrednosti video kampanja." },
+          { num: "2", title: "Nema hook-a u prvih 5 sekundi", desc: "Kod Skippable In-Stream formata, imate 5 sekundi pre nego što korisnik može da preskoči. Ako počnete sa logom i sporim introm - izgubili ste ga. Počnite sa problemom ili pitanjem." },
+          { num: "3", title: "Preširoko targetiranje", desc: "Srbija, svi uzrasti, svi interesi - to nije strategija. Što je targeting uži i relevantniji, to je CPV niži i engagement viši. Koristite kombinaciju Audience + Content targeting-a." },
+          { num: "4", title: "Nema remarketing strategije", desc: "YouTube remarketing (ljudi koji su gledali vaše videe) je najjeftiniji i najefikasniji kanal. Ako nemate remarketing liste - gubite 80% vrednosti video kampanja." },
           { num: "5", title: "Isti video za sve faze funnela", desc: "Awareness video nije isti kao conversion video. Gornji deo levka traži emociju i priču. Donji deo traži ponudu, cenu i CTA. Napravite minimum 2 verzije." },
           { num: "6", title: "Ignorisanje YouTube Analytics podataka", desc: "Audience Retention graf vam pokazuje tačno gde ljudi prestaju da gledaju. Ako 70% otpadne na sekundi 8, znate da vam je intro problem. Koristite ove podatke za optimizaciju kreative." },
           { num: "7", title: "Nema CTA u samom videu", desc: "CTA overlay u Google Ads-u nije dovoljan. Uključite jasni call-to-action u sam video sadržaj: Posetite naš sajt, Koristite kod YOUTUBE20, Link je u opisu." },
@@ -468,7 +468,7 @@ export default function YouTubeOglasavanjeVodicSR() {
       <hr />
 
       {/* ── Sekcija 10: FAQ ── */}
-      <h2>FAQ — Često postavljana pitanja o YouTube oglašavanju</h2>
+      <h2>FAQ - Često postavljana pitanja o YouTube oglašavanju</h2>
 
       <script
         type="application/ld+json"
@@ -482,7 +482,7 @@ export default function YouTubeOglasavanjeVodicSR() {
                 name: "Koliko košta YouTube reklama?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Prosečni CPV (cena po pregledu) je €0.02-0.03 globalno, a u Srbiji još niže — oko €0.01-0.02. Minimalni dnevni budžet je €5, ali za relevantne podatke preporučujemo minimum €10 dnevno. Starter mesečni budžet za testiranje je €300-500."
+                  text: "Prosečni CPV (cena po pregledu) je €0.02-0.03 globalno, a u Srbiji još niže - oko €0.01-0.02. Minimalni dnevni budžet je €5, ali za relevantne podatke preporučujemo minimum €10 dnevno. Starter mesečni budžet za testiranje je €300-500."
                 }
               },
               {
@@ -506,7 +506,7 @@ export default function YouTubeOglasavanjeVodicSR() {
                 name: "Da li mi treba profesionalni video za YouTube oglase?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ne obavezno. Kvalitet utiče na rezultate, ali Shorts format dozvoljava casual, mobilnim telefonom snimljeni sadržaj koji može biti veoma efikasan. Za In-Stream formate preporučujemo minimum poluprofesinalan kvalitet — dobar zvuk je važniji od savršene slike."
+                  text: "Ne obavezno. Kvalitet utiče na rezultate, ali Shorts format dozvoljava casual, mobilnim telefonom snimljeni sadržaj koji može biti veoma efikasan. Za In-Stream formate preporučujemo minimum poluprofesinalan kvalitet - dobar zvuk je važniji od savršene slike."
                 }
               },
               {
@@ -522,7 +522,7 @@ export default function YouTubeOglasavanjeVodicSR() {
                 name: "Da li YouTube Ads rade za srpsko tržište?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Da. CPV u Srbiji je 2-3 puta niži od US/UK tržišta, što znači više pregleda za isti budžet. Konkurencija za oglasni prostor je niža, a penetracija YouTube-a u Srbiji je visoka — većina internet korisnika redovno koristi platformu."
+                  text: "Da. CPV u Srbiji je 2-3 puta niži od US/UK tržišta, što znači više pregleda za isti budžet. Konkurencija za oglasni prostor je niža, a penetracija YouTube-a u Srbiji je visoka - većina internet korisnika redovno koristi platformu."
                 }
               },
               {
@@ -530,7 +530,7 @@ export default function YouTubeOglasavanjeVodicSR() {
                 name: "Šta su YouTube Shorts Ads?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "YouTube Shorts Ads su vertikalni, fullscreen video oglasi koji se prikazuju između organskih Shorts videa u mobilnoj aplikaciji. Format raste brzo — Shorts imaju 70+ milijardi dnevnih pregleda. Idealni su za brand awareness i dosezanje mlađe demografije."
+                  text: "YouTube Shorts Ads su vertikalni, fullscreen video oglasi koji se prikazuju između organskih Shorts videa u mobilnoj aplikaciji. Format raste brzo - Shorts imaju 70+ milijardi dnevnih pregleda. Idealni su za brand awareness i dosezanje mlađe demografije."
                 }
               },
               {
@@ -538,7 +538,7 @@ export default function YouTubeOglasavanjeVodicSR() {
                 name: "Mogu li da koristim YouTube Ads bez YouTube kanala?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Tehnički da — možete koristiti Unlisted video. Ali preporučujemo kreiranje kanala jer vam omogućava remarketing listu YouTube gledalaca, analitiku, i gradi kredibilitet brenda. Kanal je besplatan i postavlja se za 10 minuta."
+                  text: "Tehnički da - možete koristiti Unlisted video. Ali preporučujemo kreiranje kanala jer vam omogućava remarketing listu YouTube gledalaca, analitiku, i gradi kredibilitet brenda. Kanal je besplatan i postavlja se za 10 minuta."
                 }
               }
             ]
@@ -548,14 +548,14 @@ export default function YouTubeOglasavanjeVodicSR() {
 
       <div className="space-y-3 my-6">
         {[
-          { q: "Koliko košta YouTube reklama?", a: "Prosečni CPV (cena po pregledu) je €0.02-0.03 globalno, a u Srbiji još niže — oko €0.01-0.02. Minimalni dnevni budžet je €5, ali za relevantne podatke preporučujemo minimum €10 dnevno. Starter mesečni budžet za testiranje je €300-500." },
+          { q: "Koliko košta YouTube reklama?", a: "Prosečni CPV (cena po pregledu) je €0.02-0.03 globalno, a u Srbiji još niže - oko €0.01-0.02. Minimalni dnevni budžet je €5, ali za relevantne podatke preporučujemo minimum €10 dnevno. Starter mesečni budžet za testiranje je €300-500." },
           { q: "Da li je YouTube oglašavanje efikasno za male firme?", a: "Da, posebno uz fokus na remarketing (prikaz oglasa ljudima koji su već posetili vaš sajt) i lokalni targeting. Male firme mogu početi sa €300 mesečno i dobiti hiljade kvalitetnih pregleda. Ključ je u preciznom targetiranju, ne u veličini budžeta." },
           { q: "Koji format YouTube oglasa je najbolji za početnike?", a: "Skippable In-Stream format je idealan za početnike jer plaćate samo za preglede duže od 30 sekundi. Ako korisnik preskoči posle 5 sekundi, ne plaćate ništa. To znači da vaš budžet ide isključivo na zainteresovane gledaoce." },
-          { q: "Da li mi treba profesionalni video za YouTube oglase?", a: "Ne obavezno. Kvalitet utiče na rezultate, ali Shorts format dozvoljava casual, mobilnim telefonom snimljeni sadržaj koji može biti veoma efikasan. Za In-Stream formate preporučujemo minimum poluprofesionalan kvalitet — dobar zvuk je važniji od savršene slike." },
+          { q: "Da li mi treba profesionalni video za YouTube oglase?", a: "Ne obavezno. Kvalitet utiče na rezultate, ali Shorts format dozvoljava casual, mobilnim telefonom snimljeni sadržaj koji može biti veoma efikasan. Za In-Stream formate preporučujemo minimum poluprofesionalan kvalitet - dobar zvuk je važniji od savršene slike." },
           { q: "Koliko traje da se vide rezultati od YouTube kampanja?", a: "Awareness kampanje: 2-4 nedelje za vidljive rezultate u brand lift-u. Conversion kampanje: 4-8 nedelja za stabilne podatke o konverzijama. Algoritmu treba 7-14 dana učenja pre nego što počne efikasno da optimizuje." },
-          { q: "Da li YouTube Ads rade za srpsko tržište?", a: "Da. CPV u Srbiji je 2-3 puta niži od US/UK tržišta, što znači više pregleda za isti budžet. Konkurencija za oglasni prostor je niža, a penetracija YouTube-a u Srbiji je visoka — većina internet korisnika redovno koristi platformu." },
-          { q: "Šta su YouTube Shorts Ads?", a: "YouTube Shorts Ads su vertikalni, fullscreen video oglasi koji se prikazuju između organskih Shorts videa u mobilnoj aplikaciji. Format raste brzo — Shorts imaju 70+ milijardi dnevnih pregleda. Idealni su za brand awareness i dosezanje mlađe demografije." },
-          { q: "Mogu li da koristim YouTube Ads bez YouTube kanala?", a: "Tehnički da — možete koristiti Unlisted video. Ali preporučujemo kreiranje kanala jer vam omogućava remarketing listu YouTube gledalaca, analitiku, i gradi kredibilitet brenda. Kanal je besplatan i postavlja se za 10 minuta." },
+          { q: "Da li YouTube Ads rade za srpsko tržište?", a: "Da. CPV u Srbiji je 2-3 puta niži od US/UK tržišta, što znači više pregleda za isti budžet. Konkurencija za oglasni prostor je niža, a penetracija YouTube-a u Srbiji je visoka - većina internet korisnika redovno koristi platformu." },
+          { q: "Šta su YouTube Shorts Ads?", a: "YouTube Shorts Ads su vertikalni, fullscreen video oglasi koji se prikazuju između organskih Shorts videa u mobilnoj aplikaciji. Format raste brzo - Shorts imaju 70+ milijardi dnevnih pregleda. Idealni su za brand awareness i dosezanje mlađe demografije." },
+          { q: "Mogu li da koristim YouTube Ads bez YouTube kanala?", a: "Tehnički da - možete koristiti Unlisted video. Ali preporučujemo kreiranje kanala jer vam omogućava remarketing listu YouTube gledalaca, analitiku, i gradi kredibilitet brenda. Kanal je besplatan i postavlja se za 10 minuta." },
         ].map((item, i) => (
           <details key={i} className="bg-white border-2 border-gray-200 rounded-xl group" {...(i === 0 ? { open: true } : {})}>
             <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">

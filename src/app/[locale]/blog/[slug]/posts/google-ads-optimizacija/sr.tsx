@@ -31,14 +31,14 @@ export default function GoogleAdsOptimizacijaPost() {
       </div>
 
       <p className="lead">
-        Google Ads optimizacija nije jednokratna aktivnost — to je kontinuiran proces koji
+        Google Ads optimizacija nije jednokratna aktivnost - to je kontinuiran proces koji
         odvaja kampanje sa ROAS 2x od onih sa ROAS 5x. U ovom vodiču delim 30 taktika koje
         koristim u praksi sa klijentima iz različitih industrija.
       </p>
 
       <p>
         Ove taktike nisu teorija iz Google Help Centra. Svaka je testirana na realnim nalozima
-        sa realnim budžetima. Neke su donele dramatična poboljšanja, neke marginalna — ali sve
+        sa realnim budžetima. Neke su donele dramatična poboljšanja, neke marginalna - ali sve
         su prošle test prakse.
       </p>
 
@@ -50,7 +50,7 @@ export default function GoogleAdsOptimizacijaPost() {
           Ako si navikao/la da Google Ads zoveš <strong>AdWords</strong>, nisi sam/a.
           AdWords je bio originalni naziv Google-ove oglašivačke platforme od 2000. do 2018.
           godine, kada ga je Google preimenovao u Google Ads. <strong>Ista platforma, isti principi
-          optimizacije</strong> — samo moderniji naziv i AI-first pristup od 2023. godine.
+          optimizacije</strong> - samo moderniji naziv i AI-first pristup od 2023. godine.
           Sve taktike iz ovog vodiča se 1:1 primenjuju na ono što mnogi u industriji (posebno
           agencije sa dužim stažem) još uvek zovu „AdWords optimizacija". Reč se menja, suština ostaje.
         </p>
@@ -65,7 +65,7 @@ export default function GoogleAdsOptimizacijaPost() {
           Kako optimizovati Google Ads kampanje?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Ads optimizacija</strong> je kontinuiran proces primene konkretnih taktika na strukturu naloga, ključne reči, oglase, bidding i Quality Score. Ovaj vodič donosi <strong>30 taktika</strong> testiranih na <strong>20+ naloga</strong>, sa prosečnim poboljšanjem performansi od <strong>40% u prvih 90 dana</strong>. Ključ je sistematičan, nedeljni pristup — ne jednokratna akcija.
+          <strong>Google Ads optimizacija</strong> je kontinuiran proces primene konkretnih taktika na strukturu naloga, ključne reči, oglase, bidding i Quality Score. Ovaj vodič donosi <strong>30 taktika</strong> testiranih na <strong>20+ naloga</strong>, sa prosečnim poboljšanjem performansi od <strong>40% u prvih 90 dana</strong>. Ključ je sistematičan, nedeljni pristup - ne jednokratna akcija.
         </p>
       </div>
 
@@ -81,7 +81,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <p>
         Pareto princip (80/20 pravilo) u Google Ads-u glasi: <strong>20% optimizacija donosi 80% rezultata</strong>.
         Problem je što većina ljudi ne zna koje tih 20% da radi. Zato sam organizovao ovih 30 taktika
-        po prioritetu — počnite od strukture, pa idite dalje.
+        po prioritetu - počnite od strukture, pa idite dalje.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -106,7 +106,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <h2>Optimizacija strukture naloga</h2>
 
       <p>
-        Pre nego što počnete da optimizujete ključne reči, oglase ili bidding — proverite strukturu naloga.
+        Pre nego što počnete da optimizujete ključne reči, oglase ili bidding - proverite strukturu naloga.
         Loša struktura je kao graditi kuću na nestabilnom temelju. Sve ostale optimizacije neće doneti
         maksimalne rezultate.
       </p>
@@ -133,7 +133,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Single Keyword Ad Groups (SKAGs) ili tematske grupe?</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Stara škola preporučuje SKAGs — svaka ključna reč u svojoj ad grupi za maksimalnu relevantnost.
+          Stara škola preporučuje SKAGs - svaka ključna reč u svojoj ad grupi za maksimalnu relevantnost.
           Nova realnost sa RSA oglasima: tematske grupe od 5-15 sličnih ključnih reči daju bolju AI optimizaciju.
         </p>
         <ul className="text-sm">
@@ -187,7 +187,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <ul className="text-sm">
           <li>Top performeri (Brand, High-Intent Search): individualni budžet koji NIKADA ne treba da limitira</li>
           <li>Testne kampanje ili seasonalne: shared budget da fleksibilno alocirate</li>
-          <li>Pratite impression share lost (budget) — ako je &gt;20%, povećajte budžet</li>
+          <li>Pratite impression share lost (budget) - ako je &gt;20%, povećajte budžet</li>
         </ul>
       </div>
 
@@ -224,13 +224,13 @@ export default function GoogleAdsOptimizacijaPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Negativne ključne reči kao fundament</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Ljudi pitaju &quot;Kako da dobijem više konverzija?&quot; — bolje pitanje je &quot;Kako da
+          Ljudi pitaju &quot;Kako da dobijem više konverzija?&quot; - bolje pitanje je &quot;Kako da
           prestanem da gubim pare na lošim klikovima?&quot;. Negativne ključne reči su odgovor.
         </p>
         <ul className="text-sm">
           <li>Kreirajte master listu negativnih reči na account level (free, besplatno, posao, tutorial, PDF)</li>
           <li>Specifične negative keywords po kampanji (ako prodajete nove proizvode: dodajte &quot;polovno&quot;, &quot;second hand&quot;)</li>
-          <li>Koristite negativne liste za brzinu — kreirajte &quot;B2C_Negatives&quot; ili &quot;Informational_Negatives&quot;</li>
+          <li>Koristite negativne liste za brzinu - kreirajte &quot;B2C_Negatives&quot; ili &quot;Informational_Negatives&quot;</li>
           <li>Kompletan vodič: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}>Negativne ključne reči u Google Ads</Link></li>
         </ul>
       </div>
@@ -242,12 +242,12 @@ export default function GoogleAdsOptimizacijaPost() {
         </div>
         <p className="text-base text-gray-600 mb-3">
           Broad Match Modifier više ne postoji (Google ga je ukinuo 2021). Sada imate: Broad, Phrase, Exact.
-          Ali Exact match više nije baš &quot;exact&quot; — close variants su enabled by default.
+          Ali Exact match više nije baš &quot;exact&quot; - close variants su enabled by default.
         </p>
         <ul className="text-sm">
           <li><strong>Exact Match:</strong> Vaš default za komercijalne high-intent keywords. Maksimalna kontrola.</li>
           <li><strong>Phrase Match:</strong> Za discovery novih intenta, ali samo ako imate dobre negativne liste.</li>
-          <li><strong>Broad Match:</strong> Samo ako koristite Smart Bidding (Target CPA/ROAS) — algoritam treba podatke da uči. Inače izbegavajte.</li>
+          <li><strong>Broad Match:</strong> Samo ako koristite Smart Bidding (Target CPA/ROAS) - algoritam treba podatke da uči. Inače izbegavajte.</li>
         </ul>
       </div>
 
@@ -271,7 +271,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <ul className="text-sm">
           <li>Koristite Google Ads interfejs: Tools → Keyword Conflicts da vidite duplicate keywords</li>
           <li>Zadržite keyword u ad grupi sa najboljim Quality Score</li>
-          <li>Zaustavite u ostalim ad grupama — agregirana statistika će biti bolja</li>
+          <li>Zaustavite u ostalim ad grupama - agregirana statistika će biti bolja</li>
         </ul>
       </div>
 
@@ -281,7 +281,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Long-tail strategija za niše</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Ako ste u nišnoj industriji ili imate mali budžet — long-tail keywords su vaš best friend.
+          Ako ste u nišnoj industriji ili imate mali budžet - long-tail keywords su vaš best friend.
           Da, imaju mali volumen, ali CPC je 3-5x niži, a konverziona stopa često viša.
         </p>
         <ul className="text-sm">
@@ -320,7 +320,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <ul className="text-sm">
           <li>Nemojte koristiti ime konkurenta u ad copy (može dobiti ad disapproval)</li>
           <li>Fokusirajte se na comparison i alternative keywords</li>
-          <li>Competitive campaigns zahtevaju viši Quality Score — jako relevantna landing page je must</li>
+          <li>Competitive campaigns zahtevaju viši Quality Score - jako relevantna landing page je must</li>
         </ul>
       </div>
 
@@ -330,7 +330,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
       <p>
         Sa prelaskom na <GlossaryLink slug="rsa">Responsive Search Ads (RSA)</GlossaryLink> kao default formatu, optimizacija oglasa je
-        promenila prirodu. Više nije copy-paste opisnih rečenica — sada kreirate building blocks
+        promenila prirodu. Više nije copy-paste opisnih rečenica - sada kreirate building blocks
         koje Google kombinuje. Strategija je drugačija.
       </p>
 
@@ -347,7 +347,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <li>Podelite headlines u 3 tipa: Product/Service, Benefit, Offer/CTA</li>
           <li>Koristite različite dužine (od 20 do 30 karaktera) da bi se svi mogli prikazati</li>
           <li>Minimalno 2 headlines sa dynamic keyword insertion (DKI): &quot;{`{KeyWord:Default Text}`}&quot;</li>
-          <li>Ad Strength &quot;Excellent&quot; nije cilj — cilj je CTR i konverzije, ali &quot;Good&quot; je minimum</li>
+          <li>Ad Strength &quot;Excellent&quot; nije cilj - cilj je CTR i konverzije, ali &quot;Good&quot; je minimum</li>
         </ul>
       </div>
 
@@ -362,7 +362,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </p>
         <ul className="text-sm">
           <li>Pin Position 1: Brand name ili ključna differentiator poruka uvek vidljiva</li>
-          <li>Nemojte pinnovati sve — ostavite Google-u prostora da optimizuje</li>
+          <li>Nemojte pinnovati sve - ostavite Google-u prostora da optimizuje</li>
           <li>Koristite pinning za legal disclaimers ili price mentions koje moraju biti vidljive</li>
         </ul>
       </div>
@@ -377,7 +377,7 @@ export default function GoogleAdsOptimizacijaPost() {
           za 10-25% jer vaš oglas zauzima više prostora na SERP-u. I potpuno su besplatni.
         </p>
         <ul className="text-sm">
-          <li><strong>Sitelinks:</strong> Minimum 4, best practice 8 — link-ujte na top kategorije/pages</li>
+          <li><strong>Sitelinks:</strong> Minimum 4, best practice 8 - link-ujte na top kategorije/pages</li>
           <li><strong>Callouts:</strong> Kratke USP bullets (&quot;Besplatna dostava&quot;, &quot;24/7 Podrška&quot;)</li>
           <li><strong>Structured Snippets:</strong> Branded kategorije (Brands: Nike, Adidas, Puma...)</li>
           <li><strong>Call Extensions:</strong> Must have ako ste local business ili visok CPA warrantuje poziv</li>
@@ -391,12 +391,12 @@ export default function GoogleAdsOptimizacijaPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Landing page alignment (message match)</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Ako vaš oglas obećava &quot;20% popust na sofe&quot;, a landing page nema pomena o popustu —
+          Ako vaš oglas obećava &quot;20% popust na sofe&quot;, a landing page nema pomena o popustu -
           imali ste visok bounce rate i loš Quality Score. Message match je kritičan.
         </p>
         <ul className="text-sm">
           <li>Headline na landing page treba da odjekuje (mirror) ad headline</li>
-          <li>Ako oglašavate specifičan proizvod/kategoriju, ne slajte na homepage — kreirajte dedicated page</li>
+          <li>Ako oglašavate specifičan proizvod/kategoriju, ne slajte na homepage - kreirajte dedicated page</li>
           <li>Testiranje landing pages često donosi veći ROI od testiranja ad copy</li>
         </ul>
       </div>
@@ -424,7 +424,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </div>
         <p className="text-base text-gray-600 mb-3">
           Ad copy koji samo opisuje features je dosadan. Ad copy koji rešava problem ili aktivira emociju
-          dobija klik. FOMO (fear of missing out), urgencija, benefit-driven copy — to pobjeđuje.
+          dobija klik. FOMO (fear of missing out), urgencija, benefit-driven copy - to pobjeđuje.
         </p>
         <ul className="text-sm">
           <li><strong>FOMO:</strong> &quot;Samo 3 komada ostalo&quot;, &quot;Akcija ističe sutra&quot;</li>
@@ -439,7 +439,7 @@ export default function GoogleAdsOptimizacijaPost() {
 
       <p>
         Bid strategy je vaš autopilot. Možete imati savršenu strukturu i odlične oglase, ali ako
-        bidate pogrešno — trošite više nego što treba ili gubite impression share. Evo kako biramo
+        bidate pogrešno - trošite više nego što treba ili gubite impression share. Evo kako biramo
         i optimizujemo bidding strategije.
       </p>
 
@@ -451,7 +451,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <p className="text-base text-gray-600 mb-3">
           Google gura Smart Bidding (Target CPA, Target ROAS, Maximize Conversions) kao superiorno
           rešenje. U praksi: zavisi od conversion volume-a. Ispod 30 konverzija mesečno, Smart Bidding
-          nema dovoljno podataka da uči — Manual CPC sa bid adjustments je bolji.
+          nema dovoljno podataka da uči - Manual CPC sa bid adjustments je bolji.
         </p>
         <ul className="text-sm">
           <li><strong>Manual CPC:</strong> Novo lansiranje, mali budžet, &lt;30 konverzija/mesec</li>
@@ -477,13 +477,13 @@ export default function GoogleAdsOptimizacijaPost() {
         </div>
         <p className="text-base text-gray-600 mb-3">
           Greška #1: postaviti previše agresivan target. Ako je vaš current CPA €50, a postavite target
-          €20 — kampanja neće dobiti impressions jer Google zna da ne može postići taj target.
+          €20 - kampanja neće dobiti impressions jer Google zna da ne može postići taj target.
         </p>
         <ul className="text-sm">
-          <li>Pogledajte Last 30 days average CPA/ROAS — to je vaša baseline</li>
+          <li>Pogledajte Last 30 days average CPA/ROAS - to je vaša baseline</li>
           <li>Postavite target 10-20% bolji od current average (npr. CPA €50 → target €45)</li>
           <li>Nakon 2-3 nedelje stabilnih performansi, postepeno smanjujte target dalje</li>
-          <li>Nikada nemojte menjati target više od jednom nedeljno — algoritam treba learning period</li>
+          <li>Nikada nemojte menjati target više od jednom nedeljno - algoritam treba learning period</li>
         </ul>
       </div>
 
@@ -499,7 +499,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <ul className="text-sm">
           <li>Koristite portfolio strategy ako imate 3+ kampanja sa istim ciljem (npr. sve Search kampanje sa Target CPA €40)</li>
           <li>Ne mešajte različite tipe kampanja u istoj portfolio (Search + Display = bad idea)</li>
-          <li>Pratite performance po kampanji unutar portfolio — jedna loša može &quot;zaraziti&quot; ostale</li>
+          <li>Pratite performance po kampanji unutar portfolio - jedna loša može &quot;zaraziti&quot; ostale</li>
         </ul>
       </div>
 
@@ -510,7 +510,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </div>
         <p className="text-base text-gray-600 mb-3">
           Dayparting (Ad Schedule) podešava bidove po danu u nedelji i času u danu. Ako vaš CPA u
-          ponedeljak ujutro 50% bolji od petka uveče — zašto bidate isto?
+          ponedeljak ujutro 50% bolji od petka uveče - zašto bidate isto?
         </p>
         <ul className="text-sm">
           <li>Analizirajte performanse po Hours of Day i Days of Week (Google Ads → Dimensions)</li>
@@ -526,7 +526,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Device bid adjustments (mobile/tablet/desktop)</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Ako vaš desktop CPA je €30, a mobilni €60 — ne treba da bidate isto. Device bid adjustments
+          Ako vaš desktop CPA je €30, a mobilni €60 - ne treba da bidate isto. Device bid adjustments
           omogućavaju da automatski smanjite/povećate bid na različitim device-ima.
         </p>
         <ul className="text-sm">
@@ -575,7 +575,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <ul className="text-sm">
           <li>Koristite DKI (Dynamic Keyword Insertion) u ad headlines da automatski insert keyword</li>
           <li>Landing page H1 i meta title treba da sadrže target keyword</li>
-          <li>Nemojte slati sve keywords na homepage — kreirajte category/product-specific pages</li>
+          <li>Nemojte slati sve keywords na homepage - kreirajte category/product-specific pages</li>
         </ul>
       </div>
 
@@ -599,7 +599,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Važno</p>
         <p className="text-yellow-800 text-base mb-0">
-          Quality Score je historijski metric — promene koje napravite danas neće odmah podići QS.
+          Quality Score je historijski metric - promene koje napravite danas neće odmah podići QS.
           Treba 1-2 nedelje da Google akumulira dovoljno podataka. Budite strpljivi i konzistentni.
         </p>
       </div>
@@ -615,7 +615,7 @@ export default function GoogleAdsOptimizacijaPost() {
         </p>
         <ul className="text-sm">
           <li>Pausajte keyword na 2 nedelje da &quot;old data&quot; izgubi težinu</li>
-          <li>Ili: kreirajte nov keyword sa drugim match type-om (Exact → Phrase) — tretira se kao nov</li>
+          <li>Ili: kreirajte nov keyword sa drugim match type-om (Exact → Phrase) - tretira se kao nov</li>
           <li>Kada re-aktivirate, osigurajte da landing page i ad copy su maksimalno relevantni</li>
         </ul>
       </div>
@@ -639,7 +639,7 @@ export default function GoogleAdsOptimizacijaPost() {
             na Search kampanje kao &quot;observation&quot; ili sa bid adjustments.
           </p>
           <ul className="text-sm mb-0">
-            <li><strong>Remarketing audiences:</strong> +30% bid adjustment na prethodnе posetioce sajta</li>
+            <li><strong>Remarketing audiences:</strong> +30% bid adjustment na prethodne posetioce sajta</li>
             <li><strong>Customer Match:</strong> Upload email lista postojećih klijenata, bid agresivnije</li>
             <li><strong>In-Market:</strong> Layerite &quot;In-Market for X&quot; audiences i pratite da li konvertuju bolje</li>
           </ul>
@@ -672,9 +672,9 @@ export default function GoogleAdsOptimizacijaPost() {
         </p>
         <ul className="text-sm">
           <li>Proverite da li su sve konverzije taggovane (Google Tag Manager ili gtag.js)</li>
-          <li>Testirajte svaku konverziju ručno — napravite test transakciju/formu i proverite da li se evidentira</li>
+          <li>Testirajte svaku konverziju ručno - napravite test transakciju/formu i proverite da li se evidentira</li>
           <li>Exclude internal traffic (vaša kancelarija) da ne &quot;zagađuje&quot; podatke</li>
-          <li>Proverite conversion attribution model — Last Click vs Data-Driven (Data-Driven je bolji ako imate volume)</li>
+          <li>Proverite conversion attribution model - Last Click vs Data-Driven (Data-Driven je bolji ako imate volume)</li>
           <li>Kompletan vodič: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking u Google Ads</Link></li>
         </ul>
       </div>
@@ -684,7 +684,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <h2>Nedeljni raspored optimizacije</h2>
 
       <p>
-        Optimizacija nije ad hoc aktivnost — najbolji rezultati dolaze sa konzistentnim nedeljnim
+        Optimizacija nije ad hoc aktivnost - najbolji rezultati dolaze sa konzistentnim nedeljnim
         ritmom. Evo kako organizujem svoj optimization schedule za klijente:
       </p>
 
@@ -701,7 +701,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <tr className="bg-white">
               <td className="border border-gray-300 px-4 py-2 font-semibold">Ponedeljak</td>
               <td className="border border-gray-300 px-4 py-2">
-                <strong>Search Terms Report review</strong> — dodavanje novih keywords i negativnih,
+                <strong>Search Terms Report review</strong> - dodavanje novih keywords i negativnih,
                 pauziranje nerentabilnih terms
               </td>
               <td className="border border-gray-300 px-4 py-2">30-45 min</td>
@@ -709,7 +709,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <tr className="bg-gray-50">
               <td className="border border-gray-300 px-4 py-2 font-semibold">Utorak</td>
               <td className="border border-gray-300 px-4 py-2">
-                <strong>Performance review po kampanji</strong> — CPA/ROAS check, budget reallocation,
+                <strong>Performance review po kampanji</strong> - CPA/ROAS check, budget reallocation,
                 pausiranje underperforming kampanja
               </td>
               <td className="border border-gray-300 px-4 py-2">20-30 min</td>
@@ -717,7 +717,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <tr className="bg-white">
               <td className="border border-gray-300 px-4 py-2 font-semibold">Sreda</td>
               <td className="border border-gray-300 px-4 py-2">
-                <strong>Ad copy testing</strong> — review RSA ad performance, pause low performers, test nove
+                <strong>Ad copy testing</strong> - review RSA ad performance, pause low performers, test nove
                 headlines/descriptions
               </td>
               <td className="border border-gray-300 px-4 py-2">20 min</td>
@@ -725,14 +725,14 @@ export default function GoogleAdsOptimizacijaPost() {
             <tr className="bg-gray-50">
               <td className="border border-gray-300 px-4 py-2 font-semibold">Četvrtak</td>
               <td className="border border-gray-300 px-4 py-2">
-                <strong>Bid strategy review</strong> — check Target CPA/ROAS achievement, adjust targets if needed
+                <strong>Bid strategy review</strong> - check Target CPA/ROAS achievement, adjust targets if needed
               </td>
               <td className="border border-gray-300 px-4 py-2">15 min</td>
             </tr>
             <tr className="bg-white">
               <td className="border border-gray-300 px-4 py-2 font-semibold">Petak</td>
               <td className="border border-gray-300 px-4 py-2">
-                <strong>Quality Score audit</strong> — identifikuj keywords sa QS &lt;5, optimizuj ad relevance
+                <strong>Quality Score audit</strong> - identifikuj keywords sa QS &lt;5, optimizuj ad relevance
                 i landing pages
               </td>
               <td className="border border-gray-300 px-4 py-2">20 min</td>
@@ -745,7 +745,7 @@ export default function GoogleAdsOptimizacijaPost() {
         <p className="font-semibold text-blue-900 mb-1">Mesečne optimizacije (jednom mesečno)</p>
         <p className="text-blue-800 text-base mb-0">
           <strong>1. Conversion Tracking audit</strong> (provera da li sve konverzije prate pravilno) <br />
-          <strong>2. Competitor analysis</strong> (Google Auction Insights — ko se pojavio/nestao) <br />
+          <strong>2. Competitor analysis</strong> (Google Auction Insights - ko se pojavio/nestao) <br />
           <strong>3. Landing page optimization</strong> (A/B testiranje različitih verzija) <br />
           <strong>4. Audience segments review</strong> (remarketing lists, customer match updates)
         </p>
@@ -765,7 +765,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <p>
               Za mali nalog (do €1000/mesec): nedeljno 1-2 sata optimizacije je dovoljno. Za veće naloge
               (€5000+/mesec): preporučujem dnevni check (15 min) + dublja nedeljne optimizacija (2-3 sata).
-              Ključ je konzistentnost — bolje 30 minuta svakog ponedeljka nego 3 sata jednom mesečno.
+              Ključ je konzistentnost - bolje 30 minuta svakog ponedeljka nego 3 sata jednom mesečno.
             </p>
           </div>
         </details>
@@ -777,7 +777,7 @@ export default function GoogleAdsOptimizacijaPost() {
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
-              <strong>Search Terms Report review</strong> (taktika #6). Ovo je aktivnost sa najvišim ROI —
+              <strong>Search Terms Report review</strong> (taktika #6). Ovo je aktivnost sa najvišim ROI -
               eliminišete nerentabilne klikove i otkrivate nove profitable keywords. 80% optimizacije koje
               radim nedeljno je upravo ovo. Sve ostalo je nice-to-have, ali Search Terms mining je must-have.
             </p>
@@ -808,7 +808,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <p>
               Pratite 3 metrike mesec-na-mesec: <strong>1) CPA ili ROAS</strong> (efficiency), <strong>2) Conversion
               volume</strong> (scale), <strong>3) Impression Share</strong> (coverage). Ako CPA pada ali i konverzije
-              padaju — možda ste isuviše restriktivni. Ako CPA raste ali i ROAS raste — možda ste na dobrom tragu.
+              padaju - možda ste isuviše restriktivni. Ako CPA raste ali i ROAS raste - možda ste na dobrom tragu.
               Kontekst je bitan. Benchmark protiv prethodnog meseca, ali i godine-na-godinu za sezonalnost.
             </p>
           </div>
@@ -822,7 +822,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p>
               Freelance consultants naplaćuju €200-600/mesec za redovnu optimizaciju (u zavisnosti od obima naloga).
-              Agencije 10-20% ad spend-a. DIY pristup košta vreme — realno 5-10 sati mesečno ako učite, ili 2-3 sata
+              Agencije 10-20% ad spend-a. DIY pristup košta vreme - realno 5-10 sati mesečno ako učite, ili 2-3 sata
               ako ste iskusni. Više o cenama: <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}>Koliko košta Google Ads</Link>.
               Ako vas zanima profesionalna pomoć, <Link href="/kontakt">zakažite konsultaciju</Link>.
             </p>
@@ -838,7 +838,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <p>
               Da, ali oprezno. Automated Rules su odlični za repetitivne zadatke: pauziranje keywords sa CPA &gt;€100
               i 0 konverzija u poslednjih 30 dana, povećanje budžeta za kampanje sa &gt;90% impression share, itd.
-              Ali ne možete automatizovati <strong>strategy</strong> — pravila ne razumeju kontekst. Koristite ih za
+              Ali ne možete automatizovati <strong>strategy</strong> - pravila ne razumeju kontekst. Koristite ih za
               busywork, ali zadržite strategic decision-making manual.
             </p>
           </div>
@@ -903,7 +903,7 @@ export default function GoogleAdsOptimizacijaPost() {
               Negativne Ključne Reči
             </h3>
             <p className="text-sm text-gray-600 mb-0">
-              Kako negativne ključne reči štede budžet i poboljšavaju CTR — sa listama za razne industrije.
+              Kako negativne ključne reči štede budžet i poboljšavaju CTR - sa listama za razne industrije.
             </p>
           </Link>
 
@@ -997,7 +997,7 @@ export default function GoogleAdsOptimizacijaPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Da, potpuno ista. AdWords je bio originalni naziv Google-ove oglašivačke platforme od 2000. do 2018. godine, kada je Google izvršio rebrand u <strong>Google Ads</strong>. Sve što se nekada zvalo „AdWords optimizacija" danas se zove „Google Ads optimizacija" — ista platforma, iste taktike, isti ROAS principi. Starije agencije i marketing profesionalci još uvek ponekad koriste termin AdWords iz navike, posebno u B2B i enterprise okruženju.
+            Da, potpuno ista. AdWords je bio originalni naziv Google-ove oglašivačke platforme od 2000. do 2018. godine, kada je Google izvršio rebrand u <strong>Google Ads</strong>. Sve što se nekada zvalo „AdWords optimizacija" danas se zove „Google Ads optimizacija" - ista platforma, iste taktike, isti ROAS principi. Starije agencije i marketing profesionalci još uvek ponekad koriste termin AdWords iz navike, posebno u B2B i enterprise okruženju.
           </div>
         </details>
       </div>

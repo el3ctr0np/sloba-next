@@ -9,7 +9,7 @@ export default function RemarketingVodicPost() {
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Remarketing kampanje imaju 2-3x viši CTR i 50-70% niži CPA od hladnog
-          saobraćaja. Ključ uspeha je segmentacija — ne tretirajte sve posetioce isto.
+          saobraćaja. Ključ uspeha je segmentacija - ne tretirajte sve posetioce isto.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -53,12 +53,12 @@ export default function RemarketingVodicPost() {
           <li><a href="#sta-je-remarketing-i-kako-funkcionise" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je remarketing i kako funkcioniše</a></li>
           <li><a href="#tipovi-remarketing-kampanja-u-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tipovi remarketing kampanja u Google Ads</a></li>
           <li><a href="#kako-postaviti-remarketing-korak-po-korak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako postaviti remarketing korak po korak</a></li>
-          <li><a href="#segmentacija-kljuc-uspeha-remarketing-kampanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Segmentacija — ključ uspeha remarketing kampanja</a></li>
+          <li><a href="#segmentacija-kljuc-uspeha-remarketing-kampanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Segmentacija - ključ uspeha remarketing kampanja</a></li>
           <li><a href="#5-remarketing-strategija-koje-donose-rezultate" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 remarketing strategija koje donose rezultate</a></li>
           <li><a href="#najcesce-greske-u-remarketing-kampanjama-i-kako-ih-izbeci" className="block py-1 text-base text-gray-700 hover:text-primary underline">Najčešće greške u remarketing kampanjama i kako ih izbeći</a></li>
           <li><a href="#koliko-budzeta-izdvojiti-za-remarketing" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koliko budžeta izdvojiti za remarketing</a></li>
           <li><a href="#cesto-postavljana-pitanja-o-remarketing-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja o remarketing-u</a></li>
-          <li><a href="#zakljucak-iskoristite-potencijal-posetilaca-koji-vec-dolaze" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zaključak — iskoristite potencijal posetilaca koji već dolaze</a></li>
+          <li><a href="#zakljucak-iskoristite-potencijal-posetilaca-koji-vec-dolaze" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zaključak - iskoristite potencijal posetilaca koji već dolaze</a></li>
           <li><a href="#povezani-vodici" className="block py-1 text-base text-gray-700 hover:text-primary underline">Povezani vodiči</a></li>
         </ol>
       </nav>
@@ -67,12 +67,12 @@ export default function RemarketingVodicPost() {
       <h2 id="zasto-96-posetilaca-odlazi-bez-kupovine">Zašto 96% posetilaca odlazi bez kupovine</h2>
       <p>
         Zamislite scenu: imate sajt, ulažete u Google Ads remarketing kampanje,
-        posetilac dođe, pogleda proizvod ili uslugu — i ode. Bez kupovine, bez
+        posetilac dođe, pogleda proizvod ili uslugu - i ode. Bez kupovine, bez
         kontakta, bez traga. Statistika je neumoljiva: <strong>96 od 100
         posetilaca napusti sajt bez ikakve konverzije</strong>.
       </p>
       <p>
-        To ne znači da vaš sajt ne valja. Ljudi su jednostavno zauzeti — otvorili
+        To ne znači da vaš sajt ne valja. Ljudi su jednostavno zauzeti - otvorili
         su pet tabova, telefon im je zazvonio, odlučili su da &quot;razmisle još
         malo&quot;. Ali ono što <em>jeste</em> problem: većina oglašivača pusti te
         posetioce da odu i nikada ih više ne kontaktira.
@@ -80,7 +80,7 @@ export default function RemarketingVodicPost() {
       <p>
         Tu remarketing menja igru. Umesto da trošite budžet isključivo na nove
         posetioce, <a href="https://support.google.com/google-ads/answer/2453998" target="_blank" rel="noopener noreferrer">remarketing kampanje</a> vam omogućavaju da se vratite pred ljude
-        koji su <strong>već pokazali interes</strong> — i to u trenutku kada su
+        koji su <strong>već pokazali interes</strong> - i to u trenutku kada su
         spremni da donesu odluku.
       </p>
 
@@ -94,9 +94,9 @@ export default function RemarketingVodicPost() {
       </div>
 
       <p>
-        U ovom vodiču prolazimo kroz sve što vam treba — od postavljanja prvog
+        U ovom vodiču prolazimo kroz sve što vam treba - od postavljanja prvog
         remarketing taga, preko segmentacije koja pravi razliku, do strategija
-        koje u praksi donose rezultate. Bez teorije zarad teorije — samo ono što
+        koje u praksi donose rezultate. Bez teorije zarad teorije - samo ono što
         funkcioniše na realnim nalozima.
       </p>
 
@@ -120,39 +120,39 @@ export default function RemarketingVodicPost() {
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Posetilac dođe na vaš sajt</strong> <span className="text-gray-500">— preko Google pretrage, oglasa ili direktno</span></div>
+            <div><strong>Posetilac dođe na vaš sajt</strong> <span className="text-gray-500">- preko Google pretrage, oglasa ili direktno</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-            <div><strong>Google tag ga anonimno identifikuje</strong> <span className="text-gray-500">— pomoću cookie-ja ili login signala</span></div>
+            <div><strong>Google tag ga anonimno identifikuje</strong> <span className="text-gray-500">- pomoću cookie-ja ili login signala</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Posetilac odlazi bez konverzije</strong> <span className="text-gray-500">— što se dešava u 96% slučajeva</span></div>
+            <div><strong>Posetilac odlazi bez konverzije</strong> <span className="text-gray-500">- što se dešava u 96% slučajeva</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div><strong>Posetilac nastavlja da koristi internet</strong> <span className="text-gray-500">— pretražuje Google, gleda YouTube, čita portale</span></div>
+            <div><strong>Posetilac nastavlja da koristi internet</strong> <span className="text-gray-500">- pretražuje Google, gleda YouTube, čita portale</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div><strong>Vaš remarketing oglas mu se prikazuje</strong> <span className="text-gray-500">— na pravom mestu u pravom trenutku</span></div>
+            <div><strong>Vaš remarketing oglas mu se prikazuje</strong> <span className="text-gray-500">- na pravom mestu u pravom trenutku</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
-            <div><strong>Posetilac se vraća i konvertuje</strong> <span className="text-gray-500">— jer je podsetnik stigao kad je bio spreman</span></div>
+            <div><strong>Posetilac se vraća i konvertuje</strong> <span className="text-gray-500">- jer je podsetnik stigao kad je bio spreman</span></div>
           </div>
         </div>
       </div>
 
-      <h3>Remarketing, retargeting ili prospecting — u čemu je razlika</h3>
+      <h3>Remarketing, retargeting ili prospecting - u čemu je razlika</h3>
       <p>
         Remarketing i retargeting su u praksi sinonimi. Google koristi termin
         &quot;remarketing&quot;, Meta (Facebook/Instagram) koristi &quot;retargeting&quot;
-        — ali suština je ista: vraćate se pred ljude koji vas već znaju.
+        - ali suština je ista: vraćate se pred ljude koji vas već znaju.
       </p>
       <p>
-        Prospecting (cold targeting) je suprotnost — ciljate ljude koji nikada
+        Prospecting (cold targeting) je suprotnost - ciljate ljude koji nikada
         nisu čuli za vas. Evo direktnog poređenja:
       </p>
       <div className="overflow-x-auto my-6">
@@ -217,7 +217,7 @@ export default function RemarketingVodicPost() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #1</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Display remarketing</h3>
           <p className="text-base text-gray-600 mb-0">
-            Baneri na Google Display mreži — preko 2 miliona sajtova. Idealan kao
+            Baneri na Google Display mreži - preko 2 miliona sajtova. Idealan kao
             prva remarketing kampanja za svaki nalog. Podseća posetioce da postojite.
           </p>
         </div>
@@ -225,7 +225,7 @@ export default function RemarketingVodicPost() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tip #2</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">RLSA (remarketing na pretrazi)</h3>
           <p className="text-base text-gray-600 mb-0">
-            Prilagođavate Search kampanje za ljude koji su već bili na sajtu —
+            Prilagođavate Search kampanje za ljude koji su već bili na sajtu -
             viši bidovi, šire ključne reči. Daje najbolji ROAS od svih tipova.
           </p>
         </div>
@@ -265,7 +265,7 @@ export default function RemarketingVodicPost() {
       <p>
         Postavljanje remarketing kampanje zahteva tri koraka: instalacija taga,
         povezivanje sa Google Analytics-om i verifikacija. Preporučujem da koristite
-        <GlossaryLink slug="gtm">Google Tag Manager (GTM)</GlossaryLink> — daje vam fleksibilnost bez potrebe da dirate
+        <GlossaryLink slug="gtm">Google Tag Manager (GTM)</GlossaryLink> - daje vam fleksibilnost bez potrebe da dirate
         kod sajta svaki put.
       </p>
 
@@ -370,7 +370,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 5: Segmentacija ── */}
-      <h2 id="segmentacija-kljuc-uspeha-remarketing-kampanja">Segmentacija — ključ uspeha remarketing kampanja</h2>
+      <h2 id="segmentacija-kljuc-uspeha-remarketing-kampanja">Segmentacija - ključ uspeha remarketing kampanja</h2>
       <p>
         Ovo je deo gde većina oglašivača greši: kreiraju jednu remarketing listu
         (&quot;svi posetioci&quot;) i prikazuju im isti oglas. To je kao da u prodavnici
@@ -515,7 +515,7 @@ export default function RemarketingVodicPost() {
 ├── Grupa oglasa: Napuštene korpe (1-7 dana)
 │   ├── Lista: posetioci /cart/ MINUS /thank-you/
 │   ├── Bid: Najviši
-│   └── Poruka: "Završite kupovinu — besplatna dostava danas"
+│   └── Poruka: "Završite kupovinu - besplatna dostava danas"
 │
 ├── Grupa oglasa: Gledaoci proizvoda (7-14 dana)
 │   ├── Lista: posetioci /products/
@@ -555,7 +555,7 @@ export default function RemarketingVodicPost() {
         <ul className="text-sm">
           <li>Kreirajte listu: posetioci /cart/ stranice MINUS /thank-you/</li>
           <li>Trajanje liste: 7 dana (kratak period = visoka namera)</li>
-          <li>Ponudite konkretan razlog za povratak — besplatna dostava, mali popust, garancija</li>
+          <li>Ponudite konkretan razlog za povratak - besplatna dostava, mali popust, garancija</li>
           <li>Dinamički oglasi koji prikazuju tačne proizvode iz korpe daju najbolje rezultate</li>
         </ul>
       </div>
@@ -573,7 +573,7 @@ export default function RemarketingVodicPost() {
         <ul className="text-sm">
           <li>Rezultat: isti budžet, ali više konverzija od poznatih posetilaca</li>
           <li>Posebno efektno za brendovske i generičke pretrage</li>
-          <li>Za napredni pristup — kreirajte posebnu RLSA kampanju sa širim ključnim rečima</li>
+          <li>Za napredni pristup - kreirajte posebnu RLSA kampanju sa širim ključnim rečima</li>
         </ul>
       </div>
 
@@ -589,7 +589,7 @@ export default function RemarketingVodicPost() {
         <ul className="text-sm">
           <li>Obavezan za eCommerce sa 50+ proizvoda</li>
           <li>Kombinujte sa promotivnim porukama (&quot;Sada -20%&quot;, &quot;Besplatna dostava&quot;)</li>
-          <li>Kvalitetne slike proizvoda su ključne — loša slika ubija klik</li>
+          <li>Kvalitetne slike proizvoda su ključne - loša slika ubija klik</li>
         </ul>
       </div>
 
@@ -695,7 +695,7 @@ export default function RemarketingVodicPost() {
           <p className="font-semibold mb-2">Ista poruka za sve faze</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
             <p className="text-base text-green-800 mb-0">
-              <strong>Rešenje:</strong> Prilagodite poruku segmentu — podsetnik za sveže
+              <strong>Rešenje:</strong> Prilagodite poruku segmentu - podsetnik za sveže
               posetioce, urgentnost za napuštene korpe, nova ponuda za hladnu publiku.
             </p>
           </div>
@@ -824,7 +824,7 @@ export default function RemarketingVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Može biti — ako je loše postavljen. Tri stvari sprečavaju negativan
+            Može biti - ako je loše postavljen. Tri stvari sprečavaju negativan
             utisak: frequency cap (3-5 prikazivanja dnevno), relevantne poruke
             prilagođene segmentu i redovno osvežavanje kreativa.
           </div>
@@ -838,7 +838,7 @@ export default function RemarketingVodicPost() {
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Praktično nikakva. Google koristi termin &quot;remarketing&quot;, Meta
             (Facebook/Instagram) koristi &quot;retargeting&quot;. Princip je
-            identičan — prikazujete oglase ljudima koji su već bili u kontaktu sa
+            identičan - prikazujete oglase ljudima koji su već bili u kontaktu sa
             vašim biznisom.
           </div>
         </details>
@@ -860,7 +860,7 @@ export default function RemarketingVodicPost() {
       <hr />
 
       {/* ── Sekcija 10: Zaključak + CTA ── */}
-      <h2 id="zakljucak-iskoristite-potencijal-posetilaca-koji-vec-dolaze">Zaključak — iskoristite potencijal posetilaca koji već dolaze</h2>
+      <h2 id="zakljucak-iskoristite-potencijal-posetilaca-koji-vec-dolaze">Zaključak - iskoristite potencijal posetilaca koji već dolaze</h2>
       <p>
         Google Ads remarketing nije komplikovan, ali zahteva promišljen pristup.
         Razlika između &quot;imamo remarketing&quot; i &quot;imamo remarketing
@@ -873,9 +873,9 @@ export default function RemarketingVodicPost() {
         <ul className="space-y-2 text-base">
           <li>Remarketing kampanje imaju <strong>2-3x viši CTR</strong> i <strong>50-70% niži CPA</strong> od hladnog saobraćaja</li>
           <li>Segmentacija po ponašanju, vremenu i fazi levka pravi ogromnu razliku</li>
-          <li>Izdvojite <strong>10-30% budžeta</strong> za remarketing — ROI od 300-500% je realan</li>
+          <li>Izdvojite <strong>10-30% budžeta</strong> za remarketing - ROI od 300-500% je realan</li>
           <li>Izbegavajte jednu listu za sve, postavite frequency cap i osvežavajte kreative</li>
-          <li>Pratite konverzije precizno — bez toga ne znate šta funkcioniše</li>
+          <li>Pratite konverzije precizno - bez toga ne znate šta funkcioniše</li>
         </ul>
       </div>
 
@@ -885,7 +885,7 @@ export default function RemarketingVodicPost() {
           Želite da neko pregleda vaše remarketing kampanje?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          Analiziraćemo vaš nalog i dati vam konkretne preporuke — besplatno, bez obaveza.
+          Analiziraćemo vaš nalog i dati vam konkretne preporuke - besplatno, bez obaveza.
         </p>
         <Link
           href="/kontakt"
