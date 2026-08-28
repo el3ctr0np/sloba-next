@@ -342,8 +342,8 @@ export default async function ContactPage({ params }: Props) {
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 mt-0.5">✓</span>
                   {locale === "en"
-                    ? "Budget assessment and expected results"
-                    : "Procena budžeta i očekivanih rezultata"}
+                    ? "Budget assessment and a realistic scope of work"
+                    : "Procena budžeta i realnog obima posla"}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-600 mt-0.5">✓</span>
@@ -352,36 +352,6 @@ export default async function ContactPage({ params }: Props) {
                     : "Jasan predlog sledećih koraka"}
                 </li>
               </ul>
-            </Card>
-
-            <Card>
-              <h3 className="font-heading font-semibold mb-3">
-                {locale === "en" ? "Track Record" : "Dokazi"}
-              </h3>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div>
-                  <p className="font-semibold text-slate-900">
-                    {locale === "en" ? "10+ years" : "10+ godina"}
-                  </p>
-                  <p>{locale === "en" ? "of Google Ads experience" : "iskustva u Google Ads-u"}</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">
-                    UK Search Awards
-                  </p>
-                  <p>{locale === "en" ? "award-winning campaigns" : "nagrađivane kampanje"}</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">
-                    {locale === "en" ? "50+ brands" : "50+ brendova"}
-                  </p>
-                  <p>{locale === "en" ? "in 6+ countries" : "u 6+ zemalja"}</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">3.7x</p>
-                  <p>{locale === "en" ? "average ROI improvement" : "prosečno poboljšanje ROI-a"}</p>
-                </div>
-              </div>
             </Card>
 
             <div className="text-sm text-gray-500">

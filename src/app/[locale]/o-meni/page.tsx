@@ -36,14 +36,14 @@ export default async function AboutPage({ params }: Props) {
 
   const stats = locale === "en"
     ? [
-        { value: "3.7x", label: "average ROAS (eCommerce)" },
-        { value: "-50%", label: "CPA reduction for lead generation" },
+        { value: "10+", label: "years in Google Ads" },
+        { value: "3.7x", label: "ROAS — UK eCommerce case" },
         { value: "3x", label: "UK Search Awards" },
         { value: "50+", label: "brands across 6+ countries" }
       ]
     : [
-        { value: "3.7x", label: "prosečan ROAS (eCommerce)" },
-        { value: "-50%", label: "smanjenje CPA za lead generation" },
+        { value: "10+", label: "godina u Google Ads-u" },
+        { value: "3.7x", label: "ROAS - UK eCommerce case" },
         { value: "3x", label: "UK Search Awards" },
         { value: "50+", label: "brendova u 6+ zemalja" }
       ];
@@ -278,14 +278,14 @@ export default async function AboutPage({ params }: Props) {
 
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 {locale === "en"
-                  ? "Slobodan Jelisavac: a Google Ads expert with more than a decade of experience"
-                  : "Slobodan Jelisavac: Google Ads stručnjak sa više od decenije iskustva"}
+                  ? "Slobodan Jelisavac, Google Ads Expert"
+                  : "Slobodan Jelisavac, Google Ads stručnjak"}
               </h1>
 
               <p className="text-lg text-slate-300 mb-6">
                 {locale === "en"
-                  ? "Slobodan Jelisavac is an independent Google Ads consultant based in Belgrade, Serbia, with 10+ years of experience managing campaigns for 50+ brands across 6+ countries. I help companies from Serbia, the UK, and the USA get the most out of Google Ads. No cookie-cutter strategies, no junior staff on your account, just direct work with the expert."
-                  : "Slobodan Jelisavac je nezavisni Google Ads konsultant iz Beograda, sa 10+ godina iskustva i preko 50 brendova u 6+ zemalja. Pomažem kompanijama iz Srbije, UK-a i USA da izvuku maksimum iz Google Ads-a. Bez generic pristupa, bez junior kadrova na vašem nalogu, samo direktan rad sa ekspertom."}
+                  ? "For more than ten years I've personally run Google Ads accounts for brands across Serbia, the UK, and the US — no juniors, no templates. This is my story."
+                  : "Više od deset godina lično vodim Google Ads naloge za brendove iz Srbije, UK i USA - bez juniora i bez šablona. Ovo je moja priča."}
               </p>
 
               {/* Trust Badges */}

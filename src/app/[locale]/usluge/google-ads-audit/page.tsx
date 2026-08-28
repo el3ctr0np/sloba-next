@@ -496,27 +496,13 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
                 {locale === "en"
-                  ? "Deep Audit + Action Plan — discover where you're losing money"
-                  : "Deep Audit + Action Plan - kompletan Google Ads audit koji otkriva gde gubite novac"}
+                  ? "Deep Audit + Action Plan — I'll find where your account is losing money"
+                  : "Deep Audit + Action Plan - pronaći ću gde vaš nalog gubi novac"}
               </h1>
               <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-                {locale === "en" ? (
-                  <>
-                    Not sure if your Google Ads campaigns are running optimally?{" "}
-                    <strong className="text-white">Deep Audit + Action Plan</strong> shows
-                    where you're losing money, which opportunities you're missing, and what
-                    specifically needs to change. The analysis includes a strategic review that
-                    considers your business model, margins, and goals — not just technical metrics.
-                  </>
-                ) : (
-                  <>
-                    Niste sigurni da li vaše Google Ads kampanje rade optimalno?{" "}
-                    <strong className="text-white">Deep Audit + Action Plan</strong> pokazuje
-                    gde gubite novac, koje prilike propuštate i šta konkretno treba promeniti.
-                    Analiza uključuje strategijski pregled koji uzima u obzir vaš biznis model,
-                    marže i ciljeve, ne samo tehničke metrike.
-                  </>
-                )}
+                {locale === "en"
+                  ? "In ten years I've been through 50+ Google Ads accounts, and almost every one had budget quietly leaking — into search terms, products, or audiences that never turn a profit. I do the audit personally: structure, search terms, tracking, and margins — then hand you a prioritized plan: what to kill, what to scale, and what it's worth in money."
+                  : "Za deset godina prošao sam kroz više od 50 Google Ads naloga i gotovo svaki je imao deo budžeta koji tiho curi - na termine, proizvode ili publike bez profita. Audit radim lično: prolazim strukturu, search termine, tracking i marže, pa vam predam plan sa prioritetima - šta gasiti, šta pojačati i koliko to vredi u novcu."}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
