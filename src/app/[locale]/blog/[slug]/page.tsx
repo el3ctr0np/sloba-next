@@ -12,35 +12,11 @@ import {
   getAllSlugs,
   getCanonicalSlug,
   getAlternateSlug,
+  getBlogCtaTarget,
   slugMap
 } from "./posts";
 import { BlogCTA } from "@/components/blog/BlogCTA";
 import { ReadNext } from "@/components/blog/ReadNext";
-
-/**
- * Segment the blog CTA by post intent.
- * TOFU / educational / beginner posts -> low-commitment consultation (/kontakt).
- * BOFU / strategy / audit posts -> the paid audit service page.
- * Keyed on the canonical (SR) slug so SR and EN variants resolve identically.
- */
-const AUDIT_CTA_SLUGS = new Set<string>([
-  "google-ads-audit-vodic",
-  "google-ads-audit-checklist-srbija",
-  "google-ads-greske",
-  "google-ads-optimizacija",
-  "zasto-nema-rezultata",
-  "google-ads-za-ecommerce-srbija-2026",
-  "performance-max-vodic",
-  "smart-bidding-vodic",
-  "conversion-tracking-vodic",
-  "agencija-vs-freelancer",
-  "poas-vs-roas",
-  "preuzimanje-google-ads-naloga",
-]);
-
-function getBlogCtaTarget(canonicalSlug: string): "audit" | "consult" {
-  return AUDIT_CTA_SLUGS.has(canonicalSlug) ? "audit" : "consult";
-}
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;

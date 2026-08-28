@@ -100,6 +100,15 @@ export type PostData = {
   featuredImage?: string;
   readingTime?: string;
   content: ReactNode;
+  /**
+   * Blog CTA segmentation by post intent.
+   * "consult": low-commitment enquiry/consultation (TOFU / educational / beginner posts) -> /kontakt
+   * "audit": the paid audit service page (BOFU / strategy / audit posts) -> /audit
+   * Only meaningful on SR (canonical) post entries — getBlogCtaTarget() below is always
+   * called with the canonical SR slug, so EN entries don't need this field set.
+   * Omit to fall back to "consult" (the original default).
+   */
+  ctaTarget?: "audit" | "consult";
 };
 
 const srPosts: PostData[] = [
@@ -218,7 +227,8 @@ const srPosts: PostData[] = [
       "POAS (Profit on Ad Spend) = profit ÷ spend. Zašto ROAS od 4x može biti gubitak, break-even matematika, praktična implementacija (feed, custom columns) i kada POAS nije potreban.",
     featuredImage: "/blog/poas-vs-roas.webp",
     readingTime: "14 min",
-    content: <PoasVsRoasSR />
+    content: <PoasVsRoasSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "preuzimanje-google-ads-naloga",
@@ -230,7 +240,8 @@ const srPosts: PostData[] = [
       "Menjate Google Ads agenciju? Checklist šta proveriti PRE prekida (vlasništvo naloga, pristupi, izvoz istorije) i šta raditi u prvoj nedelji preuzimanja - bez naglih promena koje ugrožavaju rezultate.",
     featuredImage: "/blog/preuzimanje-google-ads-naloga.webp",
     readingTime: "14 min",
-    content: <PreuzimanjeGoogleAdsNalogaSR />
+    content: <PreuzimanjeGoogleAdsNalogaSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "product-feed-srpski-ecommerce",
@@ -266,7 +277,8 @@ const srPosts: PostData[] = [
       "Konkretan checklist od 50 stavki za audit Google Ads naloga u Srbiji. 10 kategorija sa primerima iz prakse - eCommerce, B2B, lead-gen. Scoring sistem i 30-min brzi audit.",
     featuredImage: "/blog/google-ads-audit-checklist-srbija.webp",
     readingTime: "18 min",
-    content: <GoogleAdsAuditChecklistSrbijaSR />
+    content: <GoogleAdsAuditChecklistSrbijaSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "ga4-google-ads-integracija",
@@ -314,7 +326,8 @@ const srPosts: PostData[] = [
       "Data-driven vodič za Google Ads eCommerce strategiju u Srbiji 2026: 110.6M internet kupovina, €3.61B tržište, rast 34%, top kategorije, benchmarks i taktike. Bazirano na podacima NBS-a i iskustvu sa 10+ naloga.",
     featuredImage: "/blog/google-ads-za-ecommerce-srbija-2026.webp",
     readingTime: "17 min",
-    content: <GoogleAdsZaEcommerceSrbija2026SR />
+    content: <GoogleAdsZaEcommerceSrbija2026SR />,
+    ctaTarget: "audit"
   },
   {
     slug: "smart-bidding-vodic",
@@ -326,7 +339,8 @@ const srPosts: PostData[] = [
       "Smart Bidding strategije u Google Ads-u 2026: 6 strategija (Maximize Conversions, tCPA, tROAS i ostale) sa decision tree-jem, conversion volume requirements, i lekcijama iz 10+ naloga.",
     featuredImage: "/blog/smart-bidding-vodic.webp",
     readingTime: "16 min",
-    content: <SmartBiddingVodicSR />
+    content: <SmartBiddingVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-ads-novosti-2026",
@@ -398,7 +412,8 @@ const srPosts: PostData[] = [
       "Performance Max kampanje u 2026: kompletna struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje koštaju 30-50% ROAS-a. Uključuje gotov PMax Asset Grupa template + lekcije iz 10+ naloga.",
     featuredImage: "/blog/performance-max-vodic.webp",
     readingTime: "14 min",
-    content: <PerformanceMaxVodicSR />
+    content: <PerformanceMaxVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-ads-optimizacija",
@@ -410,7 +425,8 @@ const srPosts: PostData[] = [
       "Preko +20 taktika za bolje rezultate. Kompletan vodič - bid strategije, negativne ključne reči, Quality Score, landing page i A/B testiranje. Iz prakse sa 20+ klijenata.",
     featuredImage: "/blog/google-ads-optimizacija.webp",
     readingTime: "18 min",
-    content: <GoogleAdsOptimizacijaSR />
+    content: <GoogleAdsOptimizacijaSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-shopping-vodic",
@@ -434,7 +450,8 @@ const srPosts: PostData[] = [
       "Google Ads agencija, freelancer ili in-house tim u 2026? Detaljno poređenje troškova (€300-2.500+/mes), prednosti i mana svake opcije. Decision framework za biznise iz Srbije, regiona i EU. Kako da izaberete partnera prvi put kako treba.",
     featuredImage: "/blog/agencija-vs-freelancer.webp",
     readingTime: "11 min",
-    content: <AgencijaVsFreelancerSR />
+    content: <AgencijaVsFreelancerSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "conversion-tracking-vodic",
@@ -446,7 +463,8 @@ const srPosts: PostData[] = [
       "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje GTM, GA4 i Google Ads tagova, Consent Mode v2 i Enhanced Conversions.",
     featuredImage: "/blog/conversion-tracking-vodic.webp",
     readingTime: "13 min",
-    content: <ConversionTrackingVodicSR />
+    content: <ConversionTrackingVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-ads-greske",
@@ -458,7 +476,8 @@ const srPosts: PostData[] = [
       "20 najčešćih Google Ads grešaka koje koštaju novac - od loše strukture, preko bidding grešaka, do propuštenih prilika. Proverite da li pravite neku od njih.",
     featuredImage: "/blog/google-ads-greske.webp",
     readingTime: "14 min",
-    content: <GoogleAdsGreskeSR />
+    content: <GoogleAdsGreskeSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "zasto-nema-rezultata",
@@ -470,7 +489,8 @@ const srPosts: PostData[] = [
       "Vaše Google Ads kampanje troše budžet ali ne donose rezultate? Evo 12 najčešćih razloga zašto kampanje ne rade i konkretna rešenja za svaki problem.",
     featuredImage: "/blog/zasto-nema-rezultata.webp",
     readingTime: "10 min",
-    content: <GoogleAdsNeDonosiRezultateSR />
+    content: <GoogleAdsNeDonosiRezultateSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "ecommerce-vs-b2b",
@@ -506,7 +526,8 @@ const srPosts: PostData[] = [
       "Detaljni Google Ads audit checklist sa 80+ tačaka za proveru. Pronađite probleme, optimizujte kampanje, i poboljšajte ROI.",
     featuredImage: "/blog/google-ads-audit-vodic.webp",
     readingTime: "16 min",
-    content: <GoogleAdsAuditSR />
+    content: <GoogleAdsAuditSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "kljucne-reci-vodic",
@@ -1096,4 +1117,17 @@ export function getNextPost(slug: string, locale: string): PostData | undefined 
 /** Check if a slug is a valid SR slug that has an EN equivalent */
 export function isCanonicalSlug(slug: string): boolean {
   return slug in slugMap;
+}
+
+/**
+ * Segment the blog CTA by post intent.
+ * TOFU / educational / beginner posts -> low-commitment consultation (/kontakt).
+ * BOFU / strategy / audit posts -> the paid audit service page (/audit).
+ * Always called with the canonical (SR) slug so SR and EN variants resolve identically —
+ * see PostData.ctaTarget above, set only on the SR (canonical) post entries.
+ * Posts without the field (or an unrecognized slug) fall back to "consult".
+ */
+export function getBlogCtaTarget(canonicalSlug: string): "audit" | "consult" {
+  const post = srPosts.find((p) => p.slug === canonicalSlug);
+  return post?.ctaTarget ?? "consult";
 }
