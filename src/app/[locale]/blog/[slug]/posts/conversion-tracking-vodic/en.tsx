@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function ConversionTrackingGuideEN() {
@@ -73,6 +74,10 @@ export default function ConversionTrackingGuideEN() {
       </nav>
 
       <h2 id="whats-new-in-measurement-2026">What's new in measurement (2026)</h2>
+      <figure className="my-8">
+        <Image src="/blog/conversion-window-2026.webp" alt="A strip of calendar squares with a blue window stretched by a slider handle" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">Conversion window 2026: stretch the window to the real decision cycle, 1 to 30 days</figcaption>
+      </figure>
       <p>
         Google has been changing GA4 and Google Ads under the hood throughout 2026, quietly, without an announcement that reaches most account owners. Here's what changed and what it actually means for someone who opens a report each month and makes decisions based on it.
       </p>

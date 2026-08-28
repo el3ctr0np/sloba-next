@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleShoppingSerbiaLaunch2026EN() {
@@ -59,6 +60,10 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
       <hr />
 
       <h2>What&apos;s new in Google Shopping worldwide (2026)</h2>
+      <figure className="my-8">
+        <Image src="/blog/shopping-ai-mode.webp" alt="A chat conversation where the reply contains a carousel of three product cards" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">AI Mode: products are no longer found only in search but in conversation too</figcaption>
+      </figure>
       <p>
         Serbia is still waiting on a launch date (Q3 or Q4 2026, still unconfirmed), but Google Shopping itself keeps changing globally in the meantime. This isn&apos;t distant industry news — it&apos;s the shape Shopping will already be in by the time it lands here. Here&apos;s what&apos;s happened abroad and what it actually means for a seller getting ready.
       </p>

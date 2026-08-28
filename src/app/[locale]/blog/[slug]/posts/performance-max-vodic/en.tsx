@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { CheckCircle, XCircle } from "lucide-react";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
@@ -56,6 +57,10 @@ export default function PerformanceMaxGuideEN() {
       </nav>
 
       <h2 id="whats-new-in-performance-max-2026">What's new in Performance Max (2026)</h2>
+      <figure className="my-8">
+        <Image src="/blog/pmax-kontrole-2026.webp" alt="A dashboard with newly unlocked toggle switches and open padlocks" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">2026: controls that were locked for years are now in your hands</figcaption>
+      </figure>
       <p>
         Performance Max keeps changing fast, and almost every update shifts how much control you actually have. Here's what Google shipped in 2026 and what it means for you as an advertiser in practice.
       </p>
@@ -108,6 +113,10 @@ export default function PerformanceMaxGuideEN() {
         <p className="text-base text-gray-600 mb-0">Store goals campaigns can now tap Waze inventory, US only for now. In practice: relevant if you have physical locations and care about store visits — an extra channel that reaches drivers planning a route, with no additional creative work required.</p>
       </div>
 
+      <figure className="my-8">
+        <Image src="/blog/pmax-audit-checklist.webp" alt="A checklist with green checkmarks and one highlighted unfinished item next to a dashboard panel" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">The audit habit: most items are routine — the yellow one is the one people skip</figcaption>
+      </figure>
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">PMax audit checklist (2026)</p>
         <p className="text-sm text-gray-600 mb-3">A question I'm seeing more often — what to actually check on a PMax campaign today. A short list before you go deeper into optimization:</p>

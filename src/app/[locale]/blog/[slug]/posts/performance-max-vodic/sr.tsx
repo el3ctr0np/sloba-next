@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { CheckCircle, XCircle } from "lucide-react";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
@@ -68,6 +69,10 @@ export default function PerformanceMaxVodicPost() {
       </nav>
 
       <h2 id="sta-je-novo-u-performance-maxu-2026">Šta je novo u Performance Max-u (2026)</h2>
+      <figure className="my-8">
+        <Image src="/blog/pmax-kontrole-2026.webp" alt="Kontrolna tabla sa novootključanim prekidačima i otvorenim katancima" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">2026: kontrole koje su godinama bile zaključane sada su u vašim rukama</figcaption>
+      </figure>
       <p>
         Performance Max se menja brzo, i skoro svaka promena utiče na to koliko kontrole zaista imate. Evo šta je Google objavio 2026. i šta to praktično znači za vas kao oglašivača.
       </p>
@@ -120,6 +125,10 @@ export default function PerformanceMaxVodicPost() {
         <p className="text-base text-gray-600 mb-0">Store goals kampanje sada mogu da koriste i Waze inventar, za sad u SAD. Praktično: relevantno ako imate fizičke lokacije i cilj vam je poseta prodavnici - dodatni kanal doseže vozače koji planiraju rutu, bez dodatnog rada na kreativi.</p>
       </div>
 
+      <figure className="my-8">
+        <Image src="/blog/pmax-audit-checklist.webp" alt="Checklista sa zelenim čekovima i jednom istaknutom nezavršenom stavkom pored dashboard panela" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">Audit navika: većina stavki je rutina, ona žuta se najčešće preskoči</figcaption>
+      </figure>
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">PMax audit checklist (2026)</p>
         <p className="text-sm text-gray-600 mb-3">Pitanje koje sve češće viđam - šta uopšte proveriti na PMax kampanji danas. Kratka lista pre nego što krenete u dublju optimizaciju:</p>

@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function ConversionTrackingVodicPost() {
@@ -73,6 +74,10 @@ export default function ConversionTrackingVodicPost() {
       </nav>
 
       <h2 id="sta-je-novo-u-merenju-2026">Šta je novo u merenju (2026)</h2>
+      <figure className="my-8">
+        <Image src="/blog/conversion-window-2026.webp" alt="Traka kalendarskih polja sa plavim prozorom koji se produžava klizačem" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">Conversion window 2026: prozor se rasteže na stvarni ciklus odluke, 1 do 30 dana</figcaption>
+      </figure>
       <p>
         Google tokom cele 2026. menja GA4 i Google Ads iznutra, tiho, bez najave koja stigne do vlasnika naloga. Evo šta se promenilo i šta to konkretno znači za nekoga ko svakog meseca gleda izveštaj i donosi odluke na osnovu njega.
       </p>

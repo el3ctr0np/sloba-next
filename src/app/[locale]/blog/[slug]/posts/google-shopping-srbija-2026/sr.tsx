@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleShoppingSrbija2026SR() {
@@ -45,6 +46,10 @@ export default function GoogleShoppingSrbija2026SR() {
       <hr />
 
       <h2>Šta je novo u Google Shopping svetu (2026)</h2>
+      <figure className="my-8">
+        <Image src="/blog/shopping-ai-mode.webp" alt="Chat razgovor u kome odgovor sadrži karusel sa tri proizvodne kartice" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">AI Mode: proizvodi se više ne traže samo u pretrazi nego i u razgovoru</figcaption>
+      </figure>
       <p>
         Dok Srbija čeka na start (Q3 ili Q4 2026, tačan datum još nije potvrđen), Google Shopping se u svetu menja brže nego ikad. Ovo nisu apstraktne najave - ovo je oblik u kom će Shopping sleteti kod nas kad dođe red. Evo šta se dešava napolju i šta to znači za prodavca koji se sprema.
       </p>
