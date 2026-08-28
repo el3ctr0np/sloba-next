@@ -21,7 +21,7 @@ export function AskAI({ locale }: AskAIProps) {
     : {
         eyebrow: "NEZAVISNA PROVERA",
         heading: "Pitajte AI o meni",
-        sub: "Umesto da verujete sajtu, postavite pitanje nezavisnom AI asistentu. Jedan klik otvara razgovor sa pripremljenim pitanjem — odgovor formira AI na osnovu javno dostupnih informacija, ne mi. Pitanje možete slobodno izmeniti.",
+        sub: "Umesto da verujete sajtu, postavite pitanje nezavisnom AI asistentu. Jedan klik otvara razgovor sa pripremljenim pitanjem - odgovor formira AI na osnovu javno dostupnih informacija, ne mi. Pitanje možete slobodno izmeniti.",
       };
 
   return (

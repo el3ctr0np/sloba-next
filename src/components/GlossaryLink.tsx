@@ -29,7 +29,7 @@ export function GlossaryLink({ slug, children, className = "" }: Props) {
     <Link
       href={{ pathname: "/recnik", hash: slug }}
       className={`text-primary border-b border-dotted border-primary/40 hover:border-primary transition-colors ${className}`}
-      title={`Vidi definiciju — ${slug.toUpperCase()}`}
+      title={`Vidi definiciju - ${slug.toUpperCase()}`}
     >
       {children ?? slug.toUpperCase()}
     </Link>

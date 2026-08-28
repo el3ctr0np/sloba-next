@@ -67,7 +67,7 @@ export function BlogCTA({
       <p className="text-slate-300 mb-4">
         {isEn
           ? "I'll personally record a 15-minute video walking through your campaigns, showing you where you're losing money and giving you 3 specific things to fix immediately. No sales pitch — just value."
-          : "Lično ću snimiti 15-minutni video u kome prolazim kroz vaše kampanje, pokazujem gde gubite novac i dajem 3 konkretne stvari za popravku odmah. Bez prodaje — samo vrednost."}
+          : "Lično ću snimiti 15-minutni video u kome prolazim kroz vaše kampanje, pokazujem gde gubite novac i dajem 3 konkretne stvari za popravku odmah. Bez prodaje - samo vrednost."}
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
