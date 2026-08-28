@@ -49,7 +49,7 @@ export default async function Home({ params }: Props) {
       ? {
           title: "Google advertising, done right.",
           subtitle:
-            "I've spent ten years personally running accounts for brands across the US, UK, EU, Australia, and Serbia. And since this year, my AI agents share the watch: every morning they scan spend, search terms, and conversions, and flag what stands out. The decisions are mine — you get a level of attention no team can afford.",
+            "10+ years of running Google Ads projects for companies across the US, UK, and Serbia. From strategy to execution, backed by an AI system. No junior layer, no middlemen.",
           ctaText: "Book a free consultation",
           ctaHref: "/kontakt",
           secondaryCtaText: "See the results",
@@ -65,7 +65,7 @@ export default async function Home({ params }: Props) {
       : {
           title: "Google oglašavanje na pravi način.",
           subtitle:
-            "Deset godina lično vodim naloge za brendove iz USA, UK, EU, Australije i Srbije. A od ove godine pažnju dele i moji AI agenti: svako jutro pregledaju potrošnju, pretrage i konverzije i jave mi šta odskače. Odluke donosim ja - vi dobijate pažnju koju nijedan tim ne može da plati.",
+            "10+ godina vodim Google Ads projekte za firme iz USA, UK i Srbije. Od strategije do operative, uz AI sistem. Bez junior sloja i bez posrednika.",
           ctaText: "Zakažite besplatnu konsultaciju",
           ctaHref: "/kontakt",
           secondaryCtaText: "Pogledajte rezultate",
