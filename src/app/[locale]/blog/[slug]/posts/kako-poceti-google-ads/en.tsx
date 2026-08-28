@@ -321,7 +321,7 @@ export default function KakoPocetiGoogleAdsEN() {
         <p className="text-base text-gray-600 mb-0">
           Full setup guide:{" "}
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}
             className="underline text-gray-900"
           >
             Google Ads Conversion Tracking Guide
@@ -343,7 +343,7 @@ export default function KakoPocetiGoogleAdsEN() {
         <p className="text-base text-gray-600 mb-0">
           Detailed process:{" "}
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }}
             className="underline text-gray-900"
           >
             Google Ads Keyword Guide
@@ -365,7 +365,7 @@ export default function KakoPocetiGoogleAdsEN() {
         <p className="text-base text-gray-600 mb-0">
           How to build your list:{" "}
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }}
             className="underline text-gray-900"
           >
             Negative Keywords Guide
@@ -569,7 +569,7 @@ export default function KakoPocetiGoogleAdsEN() {
       <p>
         For a full breakdown of the three options — DIY, freelancer, agency — with costs and decision framework:{" "}
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-agency-vs-freelancer" } }}
           className="underline text-gray-900"
         >
           Google Ads: Agency vs. Freelancer vs. In-House
@@ -637,7 +637,7 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <p>
         Full guide to setting up and optimizing remarketing campaigns:{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="text-blue-700 underline">Google Ads Remarketing Guide</Link>.
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="text-blue-700 underline">Google Ads Remarketing Guide</Link>.
       </p>
 
       <hr />
@@ -743,7 +743,7 @@ export default function KakoPocetiGoogleAdsEN() {
           <p className="text-xs text-gray-500 mb-0">Professional campaign management when you are ready to scale</p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -754,7 +754,7 @@ export default function KakoPocetiGoogleAdsEN() {
           </p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -765,7 +765,7 @@ export default function KakoPocetiGoogleAdsEN() {
           </p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -776,7 +776,7 @@ export default function KakoPocetiGoogleAdsEN() {
           </p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">

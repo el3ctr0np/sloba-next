@@ -52,7 +52,7 @@ export default function GoogleAdsAccountTakeoverChecklistPost() {
         But taking over a Google Ads account is a technically and legally sensitive moment, and this is where expensive mistakes happen. I&apos;ve seen business owners lose years of accumulated conversion history because the agency built the account under their own Google login &quot;for easier management.&quot; I&apos;ve seen clients wait months for someone to hand over GTM container access. I&apos;ve also seen companies who, in a rush to change something, paused a campaign that was quietly driving 80% of their leads.
       </p>
       <p>
-        First rule of takeover: <strong>ownership above all</strong>. Second rule: <strong>the first week is diagnosis, not action</strong>. This guide is the logical follow-up to the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }}>Google Ads audit guide</Link> — that one covers WHAT to check inside the account; this one focuses on the SEQUENCE and the RIGHTS you need to secure before you touch anything.
+        First rule of takeover: <strong>ownership above all</strong>. Second rule: <strong>the first week is diagnosis, not action</strong>. This guide is the logical follow-up to the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }}>Google Ads audit guide</Link> — that one covers WHAT to check inside the account; this one focuses on the SEQUENCE and the RIGHTS you need to secure before you touch anything.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -221,7 +221,7 @@ export default function GoogleAdsAccountTakeoverChecklistPost() {
       </div>
 
       <p>
-        For a detailed guide on setting up and troubleshooting conversion tracking: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking for Google Ads</Link>.
+        For a detailed guide on setting up and troubleshooting conversion tracking: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}>Conversion Tracking for Google Ads</Link>.
       </p>
 
       <hr />
@@ -272,7 +272,7 @@ export default function GoogleAdsAccountTakeoverChecklistPost() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Recommendation</p>
         <p className="text-blue-800 text-base mb-0">
-          For a complete, structured list of 80+ checkpoints (Quality Score, bidding strategy, budget allocation, extensions, audiences), move on to the full <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }}>Google Ads audit guide</Link> once you finish this first week of diagnosis. These 7 days give you context; the audit guide gives you systematic coverage.
+          For a complete, structured list of 80+ checkpoints (Quality Score, bidding strategy, budget allocation, extensions, audiences), move on to the full <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }}>Google Ads audit guide</Link> once you finish this first week of diagnosis. These 7 days give you context; the audit guide gives you systematic coverage.
         </p>
       </div>
 
@@ -438,19 +438,19 @@ export default function GoogleAdsAccountTakeoverChecklistPost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads management</p>
           <p className="text-xs text-gray-500 mb-0">Professional account management after handover</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Audit guide</p>
           <p className="text-xs text-gray-500 mb-0">80+ checkpoints for a complete account review</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Common Google Ads mistakes</p>
           <p className="text-xs text-gray-500 mb-0">20+ frequent errors and how to avoid them</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking guide</p>
           <p className="text-xs text-gray-500 mb-0">How to set up and troubleshoot conversion tracking</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "zasto-nema-rezultata" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "why-google-ads-not-working" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Why Google Ads isn&apos;t working</p>
           <p className="text-xs text-gray-500 mb-0">8 common reasons and concrete fixes</p>
         </Link>

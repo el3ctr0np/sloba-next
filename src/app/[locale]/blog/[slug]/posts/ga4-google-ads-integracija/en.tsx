@@ -579,7 +579,7 @@ export default function GA4GoogleAdsIntegrationEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimization — 30 tactics</p>
           <p className="text-xs text-gray-500 mb-0">Post-tracking playbook to scale results</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads audit checklist</p>
           <p className="text-xs text-gray-500 mb-0">80+ points for a full account audit</p>
         </Link>

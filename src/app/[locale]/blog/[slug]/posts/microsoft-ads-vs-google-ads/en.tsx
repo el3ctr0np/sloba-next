@@ -778,7 +778,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
         </a>{" "}
         Or see our{" "}
         <Link href="/usluge/konsultacije" className="underline font-medium">consulting service</Link>. Before you touch bids, it also helps to run a{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-medium">Google Ads audit checklist</Link>{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="underline font-medium">Google Ads audit checklist</Link>{" "}
         on your main account first.
       </p>
 

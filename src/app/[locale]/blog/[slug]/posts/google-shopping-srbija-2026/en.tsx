@@ -48,7 +48,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
           <li><strong>Launch date:</strong> second half of 2026 (Q3 or Q4), exact date still to be confirmed — possibly before Black Friday season if the launch lands in Q4.</li>
           <li><strong>Regional rollout:</strong> Croatia and Slovenia also launch in Q4 2026, alongside Bosnia &amp; Herzegovina and Montenegro — the wider Balkans wave. North Macedonia is likely Wave 2 in 2027.</li>
           <li><strong>Merchant Center:</strong> registration for the Serbian market isn&apos;t open yet as of July 2026 — Google enables it ahead of the official launch. See the{" "}
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="underline text-blue-700">Merchant Center Serbia setup guide</Link>.
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-serbia-setup" } }} className="underline text-blue-700">Merchant Center Serbia setup guide</Link>.
           </li>
           <li><strong>Preparation window:</strong> the time between now and launch to complete the 15-step checklist below.</li>
           <li><strong>Account review:</strong> Merchant Center account review can take 1-3 weeks in new markets — verify your account a minimum of 60 days before launch.</li>
@@ -269,7 +269,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             <div>
               <strong>Create a Google Merchant Center account</strong>
               <span className="text-gray-500 ml-2">— Deadline: as soon as registration opens</span>
-              <p className="text-base text-gray-600 mt-1 mb-0">MC is mandatory for Shopping ads. <strong>Important (July 2026): registering an MC account for the Serbian market isn&apos;t possible yet</strong> — Google will enable it ahead of the official launch. Readers have told me registration currently doesn&apos;t go through for Serbia. Until then: prepare your business details (a name identical to your site and invoices, address, contact info) and get your feed in order — then open the account the day the option appears. Step-by-step instructions are in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="underline text-blue-700">Merchant Center setup guide</Link>.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">MC is mandatory for Shopping ads. <strong>Important (July 2026): registering an MC account for the Serbian market isn&apos;t possible yet</strong> — Google will enable it ahead of the official launch. Readers have told me registration currently doesn&apos;t go through for Serbia. Until then: prepare your business details (a name identical to your site and invoices, address, contact info) and get your feed in order — then open the account the day the option appears. Step-by-step instructions are in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-serbia-setup" } }} className="underline text-blue-700">Merchant Center setup guide</Link>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -309,7 +309,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             <div>
               <strong>Create or export your product feed</strong>
               <span className="text-gray-500 ml-2">— Deadline: July 2026</span>
-              <p className="text-base text-gray-600 mt-1 mb-0">An XML or TXT file with all your product information. WooCommerce has a plugin, Shopify generates a feed automatically, custom shops need a developer. Details in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="underline text-blue-700">Product Feed guide</Link>.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">An XML or TXT file with all your product information. WooCommerce has a plugin, Shopify generates a feed automatically, custom shops need a developer. Details in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-serbian-ecommerce" } }} className="underline text-blue-700">Product Feed guide</Link>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -365,7 +365,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             <div>
               <strong>Set up conversion tracking before launch</strong>
               <span className="text-gray-500 ml-2">— Deadline: September 2026</span>
-              <p className="text-base text-gray-600 mt-1 mb-0">Purchase conversion in Google Ads (value + quantity). Without accurate tracking, Smart Bidding doesn&apos;t work and you can&apos;t measure <GlossaryLink slug="roas">ROAS</GlossaryLink>. Details in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline text-blue-700">Conversion Tracking guide</Link>.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0">Purchase conversion in Google Ads (value + quantity). Without accurate tracking, Smart Bidding doesn&apos;t work and you can&apos;t measure <GlossaryLink slug="roas">ROAS</GlossaryLink>. Details in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline text-blue-700">Conversion Tracking guide</Link>.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -422,7 +422,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <p>
         I cover the complete step-by-step Merchant Center setup specifically for the Serbian market in a supporting post:{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-serbia-setup" } }} className="underline text-blue-700 font-medium">
           Google Merchant Center Setup for Serbia — Complete Guide
         </Link>. That post covers all the details: screenshots, common mistakes, and what to do if your account gets suspended.
       </p>
@@ -514,7 +514,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
 
       <p>
         A complete feed optimisation guide with examples specific to Serbian eCommerce (WooCommerce, Shopify, custom PHP) is available in a supporting post:{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-serbian-ecommerce" } }} className="underline text-blue-700 font-medium">
           Product Feed Optimisation for Serbian eCommerce — Guide
         </Link>.
       </p>

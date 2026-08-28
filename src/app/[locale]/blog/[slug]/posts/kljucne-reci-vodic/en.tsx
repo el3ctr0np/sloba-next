@@ -58,7 +58,7 @@ export default function KeywordGuideEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Deep dive</p>
         <p className="text-blue-800 text-base mb-0">
-          To understand how Quality Score affects your CPC, see the <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline font-semibold">Quality Score guide</Link>.
+          To understand how Quality Score affects your CPC, see the <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="underline font-semibold">Quality Score guide</Link>.
         </p>
       </div>
 
@@ -221,7 +221,7 @@ export default function KeywordGuideEN() {
         <ul className="text-sm">
           <li>Keywords → Search Terms → analyze what people actually search for</li>
           <li>Add good searches as new keywords</li>
-          <li>Add irrelevant searches as <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline">negative keywords</Link></li>
+          <li>Add irrelevant searches as <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="underline">negative keywords</Link></li>
         </ul>
       </div>
 
@@ -470,7 +470,7 @@ export default function KeywordGuideEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Complete list and strategy</p>
         <p className="text-blue-800 text-base mb-0">
-          I have prepared a detailed guide with starter lists by industry: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">Negative Keywords — Guide with Lists</Link>.
+          I have prepared a detailed guide with starter lists by industry: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="underline font-semibold">Negative Keywords — Guide with Lists</Link>.
         </p>
       </div>
 
@@ -566,7 +566,7 @@ export default function KeywordGuideEN() {
         <ul className="text-sm">
           <li>For cold traffic: [crm for small business] (exact)</li>
           <li>For remarketing audience: crm software (broad) — wider reach is ok because they already know you</li>
-          <li>More on remarketing: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline">remarketing guide</Link></li>
+          <li>More on remarketing: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="underline">remarketing guide</Link></li>
         </ul>
       </div>
 
@@ -629,7 +629,7 @@ export default function KeywordGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #4</p>
           <p className="font-semibold mb-2">No negative keywords from start</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Prepare a <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline font-semibold">starter negative list</Link> before launching campaign + add weekly based on Search Terms.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> Prepare a <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="underline font-semibold">starter negative list</Link> before launching campaign + add weekly based on Search Terms.</p>
           </div>
         </div>
 
@@ -751,19 +751,19 @@ export default function KeywordGuideEN() {
           <p className="text-xs text-gray-500 mb-0">Ongoing keyword and campaign optimisation</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negative Keywords — Complete List</p>
           <p className="text-xs text-gray-500 mb-0">Starter lists by industry, strategy and organization</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score Guide</p>
           <p className="text-xs text-gray-500 mb-0">How to improve QS and bring your cost per click down</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Audit Checklist</p>
           <p className="text-xs text-gray-500 mb-0">80+ points for complete account review</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimization" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Optimization — 30 Tactics</p>
           <p className="text-xs text-gray-500 mb-0">Complete strategy for performance improvement</p>
         </Link>

@@ -531,7 +531,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Consultations</p>
           <p className="text-xs text-gray-500 mb-0">Personalized cost analysis and strategy for your business</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads-comparison" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Microsoft Ads vs Google Ads</p>
           <p className="text-xs text-gray-500 mb-0">Which platform delivers better ROI for your budget and industry?</p>
         </Link>

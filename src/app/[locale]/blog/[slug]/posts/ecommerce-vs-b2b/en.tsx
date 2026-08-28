@@ -328,7 +328,7 @@ export default function EcommerceVsB2BEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Related guide</p>
         <p className="text-blue-800 text-base mb-0">
-          More on Shopping campaigns: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping guide — how to launch and optimize</Link>
+          More on Shopping campaigns: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline font-semibold">Google Shopping guide — how to launch and optimize</Link>
         </p>
       </div>
 
@@ -497,7 +497,7 @@ export default function EcommerceVsB2BEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Related guides</p>
         <p className="text-blue-800 text-base mb-0">
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-semibold">Conversion tracking guide</Link> for offline import setup &amp; <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing guide</Link> for nurture strategy.
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline font-semibold">Conversion tracking guide</Link> for offline import setup &amp; <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="underline font-semibold">Remarketing guide</Link> for nurture strategy.
         </p>
       </div>
 
@@ -782,7 +782,7 @@ export default function EcommerceVsB2BEN() {
         </Link>
 
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -794,7 +794,7 @@ export default function EcommerceVsB2BEN() {
         </Link>
 
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -806,7 +806,7 @@ export default function EcommerceVsB2BEN() {
         </Link>
 
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -818,7 +818,7 @@ export default function EcommerceVsB2BEN() {
         </Link>
 
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">

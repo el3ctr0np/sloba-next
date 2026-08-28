@@ -192,7 +192,7 @@ export default function PerformanceMaxGuideEN() {
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Important</p>
-        <p className="text-yellow-800 text-base mb-0">Conversion tracking must be 100% accurate before launching PMax. Bad data = bad algorithm decisions. If you don't have reliable tracking, fix that first. I recommend reading <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">conversion tracking guide</Link> before launching PMax.</p>
+        <p className="text-yellow-800 text-base mb-0">Conversion tracking must be 100% accurate before launching PMax. Bad data = bad algorithm decisions. If you don't have reliable tracking, fix that first. I recommend reading <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline">conversion tracking guide</Link> before launching PMax.</p>
       </div>
 
       <hr />
@@ -419,7 +419,7 @@ export default function PerformanceMaxGuideEN() {
       <h2 id="performance-max-optimization">Performance Max optimization</h2>
       <p>
         Biggest frustration with PMax is limited control. But control isn&apos;t zero — you have levers you can move. Here&apos;s what you can (and should) optimize. For a deep dive into bid strategies used within PMax, see the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="underline font-medium">Smart Bidding guide</Link>.
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="underline font-medium">Smart Bidding guide</Link>.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -578,7 +578,7 @@ export default function PerformanceMaxGuideEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake #5</p>
           <p className="font-semibold mb-2">Poor or unreliable conversion tracking</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> If you&apos;re tracking the wrong conversions (e.g. &quot;button click&quot; instead of an actual purchase) or haven&apos;t set up conversion values, PMax will optimise toward the wrong goal. Fix your tracking first: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking guide</Link>.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Solution:</strong> If you&apos;re tracking the wrong conversions (e.g. &quot;button click&quot; instead of an actual purchase) or haven&apos;t set up conversion values, PMax will optimise toward the wrong goal. Fix your tracking first: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}>Conversion Tracking guide</Link>.</p>
           </div>
         </div>
       </div>
@@ -709,7 +709,7 @@ export default function PerformanceMaxGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            When it consistently underperforms vs your targets after 8+ weeks (enough time for learning), when lead quality is unacceptable and doesn&apos;t improve despite offline conversion import, or when it simply doesn&apos;t fit your business model (e.g. you need strict per-product budget control). PMax isn&apos;t for everyone — and that&apos;s fine. Some businesses perform better with a Search + Shopping + Remarketing combination. <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}>Remarketing guide</Link>.
+            When it consistently underperforms vs your targets after 8+ weeks (enough time for learning), when lead quality is unacceptable and doesn&apos;t improve despite offline conversion import, or when it simply doesn&apos;t fit your business model (e.g. you need strict per-product budget control). PMax isn&apos;t for everyone — and that&apos;s fine. Some businesses perform better with a Search + Shopping + Remarketing combination. <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}>Remarketing guide</Link>.
           </div>
         </details>
       </div>
@@ -734,19 +734,19 @@ export default function PerformanceMaxGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Services</p>
           <p className="text-xs text-gray-500 mb-0">Shopping campaign and product feed optimisation for better ROAS</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Guide</p>
           <p className="text-xs text-gray-500 mb-0">How to optimise your product feed and Shopping campaign structure for better ROAS.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing Guide</p>
           <p className="text-xs text-gray-500 mb-0">Audience segmentation strategies and dynamic remarketing on Display and YouTube.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking Guide</p>
           <p className="text-xs text-gray-500 mb-0">How to set up accurate conversion tracking before launching PMax campaigns.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-oglasavanje-za-firme" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-advertising-for-businesses" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for Businesses</p>
           <p className="text-xs text-gray-500 mb-0">Complete Google Ads strategy for B2B and eCommerce advertisers.</p>
         </Link>

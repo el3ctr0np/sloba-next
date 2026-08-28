@@ -34,7 +34,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
       </p>
       <p>
         If you&apos;re new to the topic, it&apos;s worth reading the core{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-blue-700 font-medium">
           Google Shopping campaigns guide
         </Link>{" "}
         first. Here I assume you know what Shopping is, so I go straight to the decision: when to pick each campaign, and why you usually pick both.
@@ -257,13 +257,13 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
 
       <p>
         For a deeper look at building the whole eCommerce structure on the Serbian market — campaign categorization, negative keywords, custom labels in the feed — see the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-za-ecommerce-srbija-2026" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-for-ecommerce-serbia-2026" } }} className="underline text-blue-700 font-medium">
           complete Google Ads eCommerce guide for Serbia
         </Link>. And for feed preparation itself, there&apos;s the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-serbian-ecommerce" } }} className="underline text-blue-700 font-medium">
           product feed guide
         </Link>. If you&apos;re torn between Standard Shopping and PMax, I break it down in detail in the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vs-standard-shopping-vodic" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vs-standard-shopping" } }} className="underline text-blue-700 font-medium">
           Performance Max vs Standard Shopping guide
         </Link>.
       </p>
@@ -296,7 +296,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
         <p className="font-semibold text-amber-900 mb-1">The full prep plan in one place</p>
         <p className="text-amber-800 text-base mb-0">
           The launch date, Ex-Yu markets, a 15-step checklist, and Merchant Center setup are all worked out in detail in the pillar guide{" "}
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }} className="underline text-amber-900 font-medium">
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }} className="underline text-amber-900 font-medium">
             Google Shopping Is Coming to Serbia - Complete Preparation Guide
           </Link>. If you&apos;re planning Shopping for a Serbian store, that&apos;s the next read.
         </p>
@@ -446,19 +446,19 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Guide — The Basics</p>
           <p className="text-xs text-gray-500 mb-0">Standard Shopping vs Performance Max, feed optimization</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-za-ecommerce-srbija-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-for-ecommerce-serbia-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for eCommerce in Serbia</p>
           <p className="text-xs text-gray-500 mb-0">Complete strategy, campaign structure, budgets</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-serbian-ecommerce" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Product Feed for Serbian eCommerce</p>
           <p className="text-xs text-gray-500 mb-0">8 required attributes, title optimization, custom labels</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vs-standard-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vs-standard-shopping" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max vs Standard Shopping</p>
           <p className="text-xs text-gray-500 mb-0">What Works in 2026 — where each one wins, and the hybrid</p>
         </Link>

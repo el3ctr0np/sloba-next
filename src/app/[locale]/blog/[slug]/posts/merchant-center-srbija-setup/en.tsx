@@ -46,7 +46,7 @@ export default function MerchantCenterSerbiaSetupEN() {
       </p>
       <p>
         This is a supporting post to the pillar guide{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }} className="underline text-blue-700 font-medium">
           Google Shopping Is Coming to Serbia — Complete Preparation Guide
         </Link>. If you&apos;re just getting started and need broader context (launch date, Ex-Yu markets, costs), read that post first. Here I go deep specifically into Merchant Center setup.
       </p>
@@ -412,10 +412,10 @@ export default function MerchantCenterSerbiaSetupEN() {
 
       <p>
         For a deeper look at optimizing the feed itself — title formulas, google_product_category, custom labels for budget segmentation — see the supporting post:{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-za-ecommerce-srbija-2026" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-for-ecommerce-serbia-2026" } }} className="underline text-blue-700 font-medium">
           Google Ads for eCommerce in Serbia — Complete Guide
         </Link>. And for broader context on the Shopping launch, Ex-Yu markets, and budgeting, go back to{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-blue-700 font-medium">
           the core Google Shopping guide
         </Link>.
       </p>
@@ -563,15 +563,15 @@ export default function MerchantCenterSerbiaSetupEN() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Is Coming to Serbia — Complete Guide</p>
           <p className="text-xs text-gray-500 mb-0">Launch date, Ex-Yu markets, 15-step checklist, costs</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Guide — The Basics</p>
           <p className="text-xs text-gray-500 mb-0">Standard Shopping vs Performance Max, feed optimization</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-za-ecommerce-srbija-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-for-ecommerce-serbia-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for eCommerce in Serbia</p>
           <p className="text-xs text-gray-500 mb-0">Complete guide for Serbian eCommerce, feed optimization</p>
         </Link>

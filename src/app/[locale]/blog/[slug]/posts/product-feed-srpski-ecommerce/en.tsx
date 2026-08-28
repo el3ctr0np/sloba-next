@@ -60,11 +60,11 @@ export default function ProductFeedSerbianEcommerceEN() {
       </p>
       <p>
         This is the third post in the Google Shopping series. If you&apos;re just getting started, read the pillar guide first —{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }} className="underline text-blue-700 font-medium">
           Google Shopping Is Coming to Serbia — Complete Preparation Guide
         </Link>{" "}
         for the broader context (launch date, Ex-Yu markets, costs). For the Merchant Center account and verification, see{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-serbia-setup" } }} className="underline text-blue-700 font-medium">
           Google Merchant Center for Serbia — Complete Setup Guide
         </Link>. Here, I go deep exclusively on the feed itself.
       </p>
@@ -613,15 +613,15 @@ export default function ProductFeedSerbianEcommerceEN() {
       <hr />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Is Coming to Serbia — Complete Guide</p>
           <p className="text-xs text-gray-500 mb-0">Launch date, Ex-Yu markets, 15-step checklist, costs</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-serbia-setup" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Merchant Center for Serbia — Setup Guide</p>
           <p className="text-xs text-gray-500 mb-0">Account creation, verification, linking to Google Ads</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-za-ecommerce-srbija-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-for-ecommerce-serbia-2026" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for eCommerce in Serbia</p>
           <p className="text-xs text-gray-500 mb-0">Complete guide for Serbian eCommerce, benchmarks and tactics</p>
         </Link>

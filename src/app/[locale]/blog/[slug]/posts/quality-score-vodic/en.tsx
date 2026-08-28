@@ -232,7 +232,7 @@ export default function QualityScoreGuideEN() {
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
               <td className="py-3 px-3"><span className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-2 py-0.5 rounded">Below</span></td>
-              <td className="py-3 px-3 font-medium">Complete review — <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline">audit checklist</Link></td>
+              <td className="py-3 px-3 font-medium">Complete review — <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="underline">audit checklist</Link></td>
             </tr>
           </tbody>
         </table>
@@ -291,7 +291,7 @@ export default function QualityScoreGuideEN() {
         <div className="space-y-3">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-            <div><strong>Thematic grouping</strong> <span className="text-gray-500">— 10-20 keywords per Ad Group, thematically related. <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="underline">Keywords guide</Link></span></div>
+            <div><strong>Thematic grouping</strong> <span className="text-gray-500">— 10-20 keywords per Ad Group, thematically related. <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }} className="underline">Keywords guide</Link></span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
@@ -560,19 +560,19 @@ export default function QualityScoreGuideEN() {
           <p className="text-xs text-gray-500 mb-0">Professional Search campaigns with optimised Quality Score</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Keywords — Complete Guide</p>
           <p className="text-xs text-gray-500 mb-0">From research to keyword optimization</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negative Keywords — Complete List</p>
           <p className="text-xs text-gray-500 mb-0">200+ negatives by industry</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Most Common Google Ads Mistakes</p>
           <p className="text-xs text-gray-500 mb-0">12 mistakes that destroy performance</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimization" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Optimization — 30 Tactics</p>
           <p className="text-xs text-gray-500 mb-0">Complete strategy for performance improvement</p>
         </Link>

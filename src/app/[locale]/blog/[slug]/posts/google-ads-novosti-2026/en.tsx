@@ -95,7 +95,7 @@ export default function GoogleAdsUpdates2026EN() {
         <p className="text-base text-gray-600 mt-4 mb-0">
           If you run an eCommerce business in Serbia or the region, preparation starts now — not in October. Merchant Center setup, feed optimization, and account review all take months.{" "}
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }}
             className="underline font-medium text-blue-700"
           >
             Complete preparation guide →
@@ -375,7 +375,7 @@ export default function GoogleAdsUpdates2026EN() {
           If you run an eCommerce business in Serbia, read our complete guide to the Google Shopping launch — a 15-step checklist, Merchant Center setup, product feed optimization, and lessons from the UK market.
         </p>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }}
           className="inline-block bg-yellow-400 text-gray-900 font-bold text-sm px-5 py-2.5 rounded-lg hover:bg-yellow-300 transition-colors"
         >
           Read: Google Shopping Serbia 2026 →
@@ -486,7 +486,7 @@ export default function GoogleAdsUpdates2026EN() {
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             Google Shopping is coming to Serbia in <strong>the second half of 2026 (Q3 or Q4)</strong>, as part of the Phase 2 EMEA expansion that also includes Croatia, Bosnia and Herzegovina, Slovenia, and Montenegro. The exact date hasn&apos;t been confirmed yet; if the launch lands in Q4 it may be timed ahead of the Black Friday season. Merchant Center setup and feed optimization should be finished as early as possible.{" "}
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }}
               className="underline text-blue-700 font-medium"
             >
               Complete preparation guide →

@@ -198,7 +198,7 @@ export default function GoogleAdsMistakesEN() {
             &quot;job&quot;, &quot;ads&quot;, &quot;course&quot;, &quot;how to&quot;, &quot;DIY&quot; as account-level
             negative lists. Detailed guide:{" "}
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }}
               className="underline text-green-900"
             >
               negative keywords
@@ -342,7 +342,7 @@ export default function GoogleAdsMistakesEN() {
           <p className="text-base text-green-800 mb-0">
             <strong>Solution:</strong> Instead of improvising, read{" "}
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}
               className="underline text-green-900"
             >
               conversion tracking guide
@@ -517,7 +517,7 @@ export default function GoogleAdsMistakesEN() {
           <li>
             Use{" "}
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }}
               className="underline text-gray-900"
             >
               Google Ads audit guide
@@ -648,7 +648,7 @@ export default function GoogleAdsMistakesEN() {
           <p className="text-xs text-gray-500 mb-0">Professional account management — without mistakes that drain budget</p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -659,7 +659,7 @@ export default function GoogleAdsMistakesEN() {
           </p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -670,7 +670,7 @@ export default function GoogleAdsMistakesEN() {
           </p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -681,7 +681,7 @@ export default function GoogleAdsMistakesEN() {
           </p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">

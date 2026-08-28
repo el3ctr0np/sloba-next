@@ -222,7 +222,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             <strong>Solution:</strong> Set up proper conversion tracking (Google Tag
             Manager is recommended). Enable Enhanced Conversions. Verify that each
             campaign tracks the right conversion action. Test tracking before launch.{" "}
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline">
               Detailed conversion tracking guide
             </Link>
             .
@@ -308,7 +308,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             keywords per ad group, thematically connected. Separate: Brand vs
             Non-brand (mandatory), High intent vs Research, Products vs Services.
             Structure should facilitate analysis and optimization.{" "}
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="underline">
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="underline">
               Most common Google Ads mistakes
             </Link>
             .
@@ -332,7 +332,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             <strong>For Ad Relevance:</strong> keywords in headline, tighter ad groups.
             <strong>For Landing Page:</strong> faster site, relevant content,
             mobile-friendly. Goal: QS 7+ for main keywords.{" "}
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline">
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="underline">
               Quality Score guide
             </Link>
             .
@@ -356,7 +356,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
             2-3 months for proper evaluation. Budget that allows minimum 10-15
             conversions monthly (Google recommends 30+, but 10-15 is minimum for
             any conclusions).{" "}
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="underline">
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }} className="underline">
               How much does Google Ads cost
             </Link>
             .
@@ -639,7 +639,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
           If you&apos;re not sure — schedule an audit. One good audit (1-2h from a
           freelancer or agency) will give you a clear diagnosis and action plan.
           Then you can decide whether to work solo or hire help.{" "}
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline">
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="underline">
             Google Ads audit guide
           </Link>
           .
@@ -762,7 +762,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
         </Link>
 
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -773,7 +773,7 @@ export default function WhyGoogleAdsNotWorkingEN() {
           </p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">

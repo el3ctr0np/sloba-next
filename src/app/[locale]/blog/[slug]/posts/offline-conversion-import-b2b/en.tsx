@@ -482,11 +482,11 @@ export default function OfflineConversionImportB2BPostEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for SaaS</p>
           <p className="text-xs text-gray-500 mb-0">Trial-to-paid tracking and full-funnel valuation.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking Guide</p>
           <p className="text-xs text-gray-500 mb-0">Complete GTM, GA4, and Google Ads tag setup.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integracija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integration" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">GA4 and Google Ads Integration</p>
           <p className="text-xs text-gray-500 mb-0">How to connect GA4 data to Google Ads optimization.</p>
         </Link>

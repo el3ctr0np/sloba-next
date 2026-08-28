@@ -81,7 +81,7 @@ export default function YouTubeAdvertisingGuideEN() {
 
       <p>
         For more on how YouTube fits into a broader digital advertising strategy, see our{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta" } }} className="underline font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta-ads" } }} className="underline font-medium">
           Google Ads vs Meta Ads guide
         </Link>.
       </p>
@@ -270,7 +270,7 @@ export default function YouTubeAdvertisingGuideEN() {
           <p className="text-base text-gray-600 mb-0">
             Show ads to people who already visited your site, watched your videos, or engaged with your YouTube
             channel. The most cost-effective targeting type — more on this in our{" "}
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-medium">
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="underline font-medium">
               remarketing campaigns guide
             </Link>.
           </p>
@@ -341,7 +341,7 @@ export default function YouTubeAdvertisingGuideEN() {
               <li>Ideal for: brand awareness, younger demographics, impulse purchases</li>
               <li>
                 More on this update in our{" "}
-                <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-novosti-2026" } }} className="underline text-yellow-400">
+                <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-updates-2026" } }} className="underline text-yellow-400">
                   Google Ads updates for 2026
                 </Link>
               </li>
@@ -391,7 +391,7 @@ export default function YouTubeAdvertisingGuideEN() {
       <p>
         Managing video campaigns for clients across several markets, these problems keep coming up more than
         any others. For more on general Google Ads mistakes, see our{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="underline font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="underline font-medium">
           guide to the 20 costliest mistakes
         </Link>.
       </p>
@@ -420,7 +420,7 @@ export default function YouTubeAdvertisingGuideEN() {
       <p>
         YouTube campaigns call for different metrics than Search campaigns. Here are the key KPIs and benchmarks.
         For proper conversion tracking, see our{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline font-medium">
           Conversion Tracking guide
         </Link>.
       </p>
@@ -582,7 +582,7 @@ export default function YouTubeAdvertisingGuideEN() {
         </a>{" "}
         can be found in the official Google documentation. And for the full picture of every Google Ads change
         in 2026, see our{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-novosti-2026" } }} className="underline font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-updates-2026" } }} className="underline font-medium">
           monthly-updated Google Ads updates guide
         </Link>.
       </p>

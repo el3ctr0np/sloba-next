@@ -244,7 +244,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         </div>
         <p className="text-base text-gray-600 mb-3">
           If you sell standard products people search by name,
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline">Google Shopping</Link> campaigns
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline">Google Shopping</Link> campaigns
           often deliver best ROAS. Search shows intent, Shopping shows product.
         </p>
         <ul className="text-sm">
@@ -326,7 +326,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           powerful for long-term growth.
         </p>
         <ul className="text-sm">
-          <li><Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline">Remarketing</Link> for site visitors &amp; cart abandoners</li>
+          <li><Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="underline">Remarketing</Link> for site visitors &amp; cart abandoners</li>
           <li>Lookalike audiences based on existing customers</li>
           <li>Video view audiences for funnel progression</li>
           <li>Email list retargeting &amp; customer exclusions</li>
@@ -537,7 +537,7 @@ export default function GoogleAdsVsMetaAdsEN() {
         <p className="text-blue-800 text-base mb-0">
           User sees your ad on Instagram, doesn&apos;t click. Next week
           searches Google, clicks ad, buys. Who gets credit? Google says Google,
-          Meta says Meta (view-through). Truth is somewhere in between. Use <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">Google Analytics 4</Link> or
+          Meta says Meta (view-through). Truth is somewhere in between. Use <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline">Google Analytics 4</Link> or
           dedicated attribution tool (e.g., Triple Whale) for independent measurement.
         </p>
       </div>
@@ -610,7 +610,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             freelancers or smaller agencies for each channel can be better at execution
             than generalist agency that does &quot;everything&quot;. More important that someone understands
             your industry than has access to all platforms. See more at
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="underline ml-1">agency vs freelancer</Link>.
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-agency-vs-freelancer" } }} className="underline ml-1">agency vs freelancer</Link>.
           </div>
         </details>
 
@@ -680,7 +680,7 @@ export default function GoogleAdsVsMetaAdsEN() {
           <p className="text-xs text-gray-500 mb-0">Campaign management across all platforms</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             Remarketing — Complete guide
           </p>
@@ -688,7 +688,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             How to bring back 96% of visitors who leave without buying
           </p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-oglasavanje-za-firme" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-advertising-for-businesses" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             Google advertising for businesses
           </p>
@@ -696,7 +696,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             Guide for B2B companies and service businesses
           </p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             How much does Google Ads cost?
           </p>
@@ -704,7 +704,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             Real advertising costs in US/UK markets
           </p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-ecommerce-vs-b2b" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
             eCommerce vs B2B strategy
           </p>

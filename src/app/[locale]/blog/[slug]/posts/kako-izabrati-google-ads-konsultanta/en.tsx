@@ -624,7 +624,7 @@ export default function HowToChooseGoogleAdsConsultantPost() {
           detailed comparison of the models — including the in-house
           option — see the{" "}
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-agency-vs-freelancer" } }}
             className="underline text-gray-900"
           >
             Google Ads agency vs freelancer vs in-house guide
@@ -703,7 +703,7 @@ export default function HowToChooseGoogleAdsConsultantPost() {
           <p className="text-xs text-gray-500 mb-0">Let's talk through your specific situation before you decide</p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-agency-vs-freelancer" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">
@@ -714,7 +714,7 @@ export default function HowToChooseGoogleAdsConsultantPost() {
           </p>
         </Link>
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}
           className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline"
         >
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">

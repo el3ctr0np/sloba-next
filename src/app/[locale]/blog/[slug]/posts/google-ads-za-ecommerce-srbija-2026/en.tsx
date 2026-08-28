@@ -267,7 +267,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <ul>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }}
             className="underline font-medium"
           >
             Google Shopping is coming to Serbia — complete preparation guide
@@ -275,7 +275,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
         </li>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }}
             className="underline font-medium"
           >
             Google Shopping guide — product feed, Merchant Center, campaign structure
@@ -433,7 +433,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <ul>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }}
             className="underline font-medium"
           >
             How Much Does Google Ads Cost? Prices, Budgets, and ROI in Serbia [2026]
@@ -573,7 +573,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <ul>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }}
             className="underline font-medium"
           >
             Performance Max: Complete Guide for eCommerce
@@ -581,7 +581,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
         </li>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "youtube-oglasavanje-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "youtube-advertising-guide" } }}
             className="underline font-medium"
           >
             YouTube Advertising: Complete Guide to Video Campaigns
@@ -700,7 +700,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
             can&apos;t learn, and you can&apos;t know what&apos;s working. Enhanced Conversions have
             been mandatory since 2025. Guide:{" "}
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}
               className="underline font-medium"
             >
               Conversion Tracking for Google Ads
@@ -742,7 +742,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
             in your account. Without a remarketing campaign for this group, you&apos;re literally
             handing them to the competition. Guide:{" "}
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}
               className="underline font-medium"
             >
               Google Ads Remarketing: 7 Audience Lists
@@ -810,7 +810,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <p>
         Detailed preparation is covered in the guide:{" "}
         <Link
-          href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
+          href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }}
           className="underline font-medium"
         >
           Google Shopping is coming to Serbia — complete preparation guide
@@ -1064,7 +1064,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
         </li>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-srbija-2026" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-serbia-2026" } }}
             className="underline"
           >
             Google Shopping launch in Serbia — internal guide
@@ -1072,7 +1072,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
         </li>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }}
             className="underline"
           >
             Performance Max: Complete Guide for eCommerce [2026]
@@ -1080,7 +1080,7 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
         </li>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}
             className="underline"
           >
             Google Ads Remarketing: 7 Audience Lists for 4x ROAS

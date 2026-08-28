@@ -795,7 +795,7 @@ export default function SmartBiddingGuideEN() {
       <ul>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads-comparison" } }}
             className="underline font-medium"
           >
             Microsoft Ads vs Google Ads — full comparison [2026]
@@ -803,7 +803,7 @@ export default function SmartBiddingGuideEN() {
         </li>
         <li>
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }}
             className="underline font-medium"
           >
             Google Ads audit checklist

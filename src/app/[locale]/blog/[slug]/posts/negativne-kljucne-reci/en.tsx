@@ -383,7 +383,7 @@ export default function NegativeKeywordsGuideEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Pro tip</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Complete account check</h3>
-          <p className="text-base text-gray-600 mb-0">See <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-semibold">Google Ads audit checklist</Link> for complete account review.</p>
+          <p className="text-base text-gray-600 mb-0">See <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="underline font-semibold">Google Ads audit checklist</Link> for complete account review.</p>
         </div>
       </div>
 
@@ -456,7 +456,7 @@ export default function NegativeKeywordsGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Indirectly — yes. Better CTR (fewer irrelevant impressions) → better Expected CTR → better QS. More on this in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="underline">Quality Score guide</Link>.
+            Indirectly — yes. Better CTR (fewer irrelevant impressions) → better Expected CTR → better QS. More on this in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="underline">Quality Score guide</Link>.
           </div>
         </details>
 
@@ -531,19 +531,19 @@ export default function NegativeKeywordsGuideEN() {
           <p className="text-xs text-gray-500 mb-0">Professional Search campaign management</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Keywords — Complete Guide</p>
           <p className="text-xs text-gray-500 mb-0">From research to keyword optimization</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score Guide</p>
           <p className="text-xs text-gray-500 mb-0">How to improve QS and reduce CPC</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Audit Checklist</p>
           <p className="text-xs text-gray-500 mb-0">80+ points for complete account review</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Most Common Google Ads Mistakes</p>
           <p className="text-xs text-gray-500 mb-0">12 mistakes that destroy performance</p>
         </Link>

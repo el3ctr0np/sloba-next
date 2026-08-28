@@ -232,7 +232,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Guide to Performance Max campaigns</p>
-        <p className="text-blue-800 text-base mb-0">PMax campaigns can deliver excellent results, but only if properly set up. For detailed guide, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline font-semibold">Performance Max guide</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">PMax campaigns can deliver excellent results, but only if properly set up. For detailed guide, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="underline font-semibold">Performance Max guide</Link>.</p>
       </div>
 
       <hr />
@@ -279,7 +279,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Google Shopping campaigns guide</p>
-        <p className="text-blue-800 text-base mb-0">For a detailed guide on setting up your product feed and structuring Shopping campaigns, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-semibold">Google Shopping guide</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">For a detailed guide on setting up your product feed and structuring Shopping campaigns, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline font-semibold">Google Shopping guide</Link>.</p>
       </div>
 
       <h3>Shopping vs Performance Max — Which to choose?</h3>
@@ -361,7 +361,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Remarketing deep dive</p>
-        <p className="text-blue-800 text-base mb-0">For a detailed guide on setting up remarketing campaigns and audience lists, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline font-semibold">Remarketing guide</Link>.</p>
+        <p className="text-blue-800 text-base mb-0">For a detailed guide on setting up remarketing campaigns and audience lists, read <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="underline font-semibold">Remarketing guide</Link>.</p>
       </div>
 
       <hr />
@@ -870,23 +870,23 @@ export default function GoogleAdvertisingForBusinessesEN() {
 
       <h3>Related guides</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing guide</p>
           <p className="text-xs text-gray-500 mb-0">How to bring back visitors who didn't buy the first time</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score guide</p>
           <p className="text-xs text-gray-500 mb-0">How to improve Quality Score and reduce costs</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking guide</p>
           <p className="text-xs text-gray-500 mb-0">Step-by-step setup for GA4, GTM and Enhanced Conversions</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping guide</p>
           <p className="text-xs text-gray-500 mb-0">How to set up your product feed and Shopping campaigns</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max guide</p>
           <p className="text-xs text-gray-500 mb-0">Complete guide to PMax campaigns</p>
         </Link>

@@ -345,7 +345,7 @@ export default function GoogleSearchCampaignsGuidePost() {
         </div>
       </div>
       <p>
-        For a detailed breakdown of negative list categories and account-level vs. campaign-level structure, see the <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="underline">negative keywords guide</Link>.
+        For a detailed breakdown of negative list categories and account-level vs. campaign-level structure, see the <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="underline">negative keywords guide</Link>.
       </p>
 
       <hr />
@@ -355,7 +355,7 @@ export default function GoogleSearchCampaignsGuidePost() {
         Ads in Search campaigns are <GlossaryLink slug="rsa">Responsive Search Ads</GlossaryLink> — you provide multiple headlines and descriptions, Google tests the combinations. AI Max can generate additional variants based on the query, but you still write the backbone.
       </p>
       <p>
-        This is its own discipline with its own rules — how many headlines is optimal, how to avoid every headline saying the same thing in different words, how to use pinning without choking off testing. I haven't repeated it here because a full guide already exists: <Link href={{ pathname: "/blog/[slug]", params: { slug: "rsa-vodic" } }} className="underline">RSA guide — how to write ads that convert</Link>.
+        This is its own discipline with its own rules — how many headlines is optimal, how to avoid every headline saying the same thing in different words, how to use pinning without choking off testing. I haven't repeated it here because a full guide already exists: <Link href={{ pathname: "/blog/[slug]", params: { slug: "responsive-search-ads-guide" } }} className="underline">RSA guide — how to write ads that convert</Link>.
       </p>
 
       <hr />
@@ -365,7 +365,7 @@ export default function GoogleSearchCampaignsGuidePost() {
         Search campaigns today almost always run some form of <GlossaryLink slug="smart-bidding">Smart Bidding</GlossaryLink> — Maximize Conversions, Target CPA, or Target ROAS, depending on how much data you have and what you're optimizing for. Manual CPC is rarely the right call today, outside of specific low-conversion-volume situations.
       </p>
       <p>
-        Which bidding strategy to pick and how to set it up depends on the account's stage — how many conversions you're getting monthly, whether you're tracking order value or just conversion count, and how fast you're changing targets. Full breakdown: <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="underline">Smart Bidding guide</Link>.
+        Which bidding strategy to pick and how to set it up depends on the account's stage — how many conversions you're getting monthly, whether you're tracking order value or just conversion count, and how fast you're changing targets. Full breakdown: <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="underline">Smart Bidding guide</Link>.
       </p>
 
       <hr />
@@ -375,7 +375,7 @@ export default function GoogleSearchCampaignsGuidePost() {
         I repeat this in every guide I write because it's the most common cause of accounts that fail: scaling before measurement is verified. A Search campaign that "looks good" in the Google Ads interface, with broken measurement underneath, pushes you toward the wrong decisions — you raise budget on a campaign that in reality isn't converting anywhere near what the report claims.
       </p>
       <p>
-        Before raising budget or switching to Target ROAS, check whether the conversions Google Ads reports actually match real sales or leads. The <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">conversion tracking guide</Link> covers exactly that process — data-driven attribution, GA4/GTM setup, and how to verify the numbers match reality before you raise the stakes.
+        Before raising budget or switching to Target ROAS, check whether the conversions Google Ads reports actually match real sales or leads. The <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline">conversion tracking guide</Link> covers exactly that process — data-driven attribution, GA4/GTM setup, and how to verify the numbers match reality before you raise the stakes.
       </p>
 
       <hr />
@@ -445,23 +445,23 @@ export default function GoogleSearchCampaignsGuidePost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search campaign services</p>
           <p className="text-xs text-gray-500 mb-0">Professional Search campaign management, from €500/mo</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "rsa-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "responsive-search-ads-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">RSA guide</p>
           <p className="text-xs text-gray-500 mb-0">How to write Responsive Search Ads that convert.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Smart Bidding guide</p>
           <p className="text-xs text-gray-500 mb-0">Target CPA, Target ROAS, and Maximize Conversions — when to use what.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion tracking guide</p>
           <p className="text-xs text-gray-500 mb-0">How to set up and verify measurement before scaling budget.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negative keywords guide</p>
           <p className="text-xs text-gray-500 mb-0">A system for cutting wasted spend, not a one-time list.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max guide</p>
           <p className="text-xs text-gray-500 mb-0">The next step once Search is stable — scaling across all Google networks.</p>
         </Link>

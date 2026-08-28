@@ -273,7 +273,7 @@ export default function DemandGenGuideEN() {
       </div>
 
       <p>
-        Short version: PMax is the all-in-one machine that also pulls in Search. Demand Gen is focused purely on visual demand with somewhat more placement control than PMax. A classic YouTube/Video campaign is for reach and brand, not direct conversions. A deeper breakdown of PMax and when to use it is in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline">Performance Max guide</Link>.
+        Short version: PMax is the all-in-one machine that also pulls in Search. Demand Gen is focused purely on visual demand with somewhat more placement control than PMax. A classic YouTube/Video campaign is for reach and brand, not direct conversions. A deeper breakdown of PMax and when to use it is in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="underline">Performance Max guide</Link>.
       </p>
 
       <hr />
@@ -334,7 +334,7 @@ export default function DemandGenGuideEN() {
       </div>
 
       <p>
-        This ties back to the broader topic of conversion tracking — if your on-site tracking isn't clean to begin with, no attribution method here will give you a reliable picture. The fundamentals are covered in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">conversion tracking guide</Link>.
+        This ties back to the broader topic of conversion tracking — if your on-site tracking isn't clean to begin with, no attribution method here will give you a reliable picture. The fundamentals are covered in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline">conversion tracking guide</Link>.
       </p>
 
       <hr />
@@ -448,15 +448,15 @@ export default function DemandGenGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads account management</p>
           <p className="text-xs text-gray-500 mb-0">Hands-on campaign management, including Demand Gen and PMax</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max guide</p>
           <p className="text-xs text-gray-500 mb-0">When to use PMax instead of, or alongside, Demand Gen, and how to structure it.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking guide</p>
           <p className="text-xs text-gray-500 mb-0">How to set up clean tracking before you measure view-through and incrementality.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing guide</p>
           <p className="text-xs text-gray-500 mb-0">How to build the lists that later feed Demand Gen lookalike audiences.</p>
         </Link>

@@ -119,7 +119,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
         <p className="font-semibold text-blue-900 mb-1">Dedicated guide</p>
         <p className="text-blue-800 text-base mb-0">
           The full Basic Access application process, including the newer brand verification pilot that cuts review from days or weeks down to a few hours, is covered step by step in a separate guide:{" "}
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="underline text-blue-700 font-medium">
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="underline text-blue-700 font-medium">
             Google Ads API Basic Access: Step-by-Step Guide
           </Link>. Here I&apos;ll just note the OAuth scope you need is <code>https://www.googleapis.com/auth/adwords</code>, and it all runs through the same Cloud project you set up in the previous section.
         </p>
@@ -183,7 +183,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
       </p>
       <p>
         For the full Merchant Center account setup (verification, feed attributes, feed delivery methods), I have a dedicated guide I won&apos;t repeat here:{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-serbia-setup" } }} className="underline text-blue-700 font-medium">
           Google Merchant Center for Serbia: Complete Setup Guide
         </Link>.
       </p>
@@ -455,15 +455,15 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Basic Access</p>
           <p className="text-xs text-gray-500 mb-0">Detailed guide to the developer token and brand verification.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-serbia-setup" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Merchant Center Setup</p>
           <p className="text-xs text-gray-500 mb-0">Complete account setup, feed attributes, and verification.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integracija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integration" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">GA4 and Google Ads Integration</p>
           <p className="text-xs text-gray-500 mb-0">How to connect GA4 data to Google Ads optimization.</p>
         </Link>

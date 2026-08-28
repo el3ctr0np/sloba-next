@@ -264,7 +264,7 @@ export default function GoogleAdsAuditGuideEN() {
       </div>
 
       <p>
-        For a detailed guide on setting up tracking and troubleshooting problems, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking for Google Ads</Link>.
+        For a detailed guide on setting up tracking and troubleshooting problems, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}>Conversion Tracking for Google Ads</Link>.
       </p>
 
       <hr />
@@ -374,7 +374,7 @@ export default function GoogleAdsAuditGuideEN() {
       </div>
 
       <p>
-        For a detailed guide on keyword research, match types, and Quality Score optimization, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }}>Keywords for Google Ads</Link>. For negative keyword strategy: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}>Negative Keywords</Link>.
+        For a detailed guide on keyword research, match types, and Quality Score optimization, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }}>Keywords for Google Ads</Link>. For negative keyword strategy: <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }}>Negative Keywords</Link>.
       </p>
 
       <hr />
@@ -477,7 +477,7 @@ export default function GoogleAdsAuditGuideEN() {
       </div>
 
       <p>
-        For a detailed guide on remarketing strategies and audience segmentation, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}>Remarketing guide for Google Ads</Link>.
+        For a detailed guide on remarketing strategies and audience segmentation, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}>Remarketing guide for Google Ads</Link>.
       </p>
 
       <hr />
@@ -569,7 +569,7 @@ export default function GoogleAdsAuditGuideEN() {
       </div>
 
       <p>
-        If you don&apos;t know how much budget to allocate per campaign or industry, read: <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}>How much does Google Ads cost</Link>.
+        If you don&apos;t know how much budget to allocate per campaign or industry, read: <Link href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }}>How much does Google Ads cost</Link>.
       </p>
 
       <hr />
@@ -850,7 +850,7 @@ export default function GoogleAdsAuditGuideEN() {
       </p>
 
       <p>
-        To continue optimizing after the audit, read: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }}>Google Ads optimization guide</Link> and <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}>Most common Google Ads mistakes</Link>.
+        To continue optimizing after the audit, read: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimization" } }}>Google Ads optimization guide</Link> and <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }}>Most common Google Ads mistakes</Link>.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
@@ -872,42 +872,42 @@ export default function GoogleAdsAuditGuideEN() {
           <p className="text-xs text-gray-500 mb-0">Professional account management after the audit — optimization and reporting</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking guide</p>
           <p className="text-xs text-gray-500 mb-0">How to set up conversion tracking and troubleshoot problems</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score guide</p>
           <p className="text-xs text-gray-500 mb-0">What Quality Score is and how to improve it for a lower CPC</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Keywords guide</p>
           <p className="text-xs text-gray-500 mb-0">Keyword research, match types, and keyword optimization</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negative keywords</p>
           <p className="text-xs text-gray-500 mb-0">How to identify and add negative keywords to eliminate wasted spend</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimization" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads optimization</p>
           <p className="text-xs text-gray-500 mb-0">Ongoing optimization after the audit — what to do monthly and weekly</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">How much does Google Ads cost</p>
           <p className="text-xs text-gray-500 mb-0">Budget planning and CPC benchmarks by industry</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing guide</p>
           <p className="text-xs text-gray-500 mb-0">How to set up remarketing lists and strategies for better conversions</p>
         </Link>
 
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Most common Google Ads mistakes</p>
           <p className="text-xs text-gray-500 mb-0">20+ of the most common mistakes and how to avoid them</p>
         </Link>

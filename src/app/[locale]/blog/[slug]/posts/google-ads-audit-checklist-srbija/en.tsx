@@ -236,7 +236,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
         Bad conversion tracking means everything downstream is meaningless. Auto-bidding can&apos;t learn, ROAS is an illusion, and optimization misses the real target. This is the most critical category of any audit — without valid conversions, the rest of the checklist doesn&apos;t matter.
       </p>
       <p>
-        For a detailed implementation walkthrough, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">Conversion Tracking for Google Ads</Link>, where I cover GTM setup, deduplication, and Enhanced Conversions step by step.
+        For a detailed implementation walkthrough, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline">Conversion Tracking for Google Ads</Link>, where I cover GTM setup, deduplication, and Enhanced Conversions step by step.
       </p>
 
       <h3>2.1 — Conversion actions setup</h3>
@@ -379,7 +379,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       {/* ── Category 4 ── */}
       <h2 id="category-4">Category 4: Keywords &amp; Search Terms (5 items)</h2>
       <p>
-        Keywords aren&apos;t what you enter — they&apos;re the <strong>search terms</strong> people actually type. Every audit needs to dig into the Search Terms Report and identify where the budget is going. For serious keyword research, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="underline">Google Ads Keyword Guide</Link>.
+        Keywords aren&apos;t what you enter — they&apos;re the <strong>search terms</strong> people actually type. Every audit needs to dig into the Search Terms Report and identify where the budget is going. For serious keyword research, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }} className="underline">Google Ads Keyword Guide</Link>.
       </p>
 
       <h3>4.1 — Match type audit</h3>
@@ -416,7 +416,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">From experience</p>
         <p className="text-blue-800 text-base mb-0">
-          A client with zero negative keywords was burning 25% of spend on irrelevant queries. After 30 minutes of work on the negative list, CTR rose 40% and CPA dropped 18%. For a starting point, see the <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="text-blue-700 underline">complete negative keywords list</Link> organized by category.
+          A client with zero negative keywords was burning 25% of spend on irrelevant queries. After 30 minutes of work on the negative list, CTR rose 40% and CPA dropped 18%. For a starting point, see the <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="text-blue-700 underline">complete negative keywords list</Link> organized by category.
         </p>
       </div>
 
@@ -439,7 +439,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Pro tip</p>
         <p className="text-blue-800 text-base mb-0">
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="text-blue-700 underline">Quality Score</Link> depends directly on keyword relevance — the better you organize ad groups and match types, the better QS you get, and the lower CPC you pay.
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="text-blue-700 underline">Quality Score</Link> depends directly on keyword relevance — the better you organize ad groups and match types, the better QS you get, and the lower CPC you pay.
         </p>
       </div>
 
@@ -462,7 +462,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">2026 reality + RSA guide</p>
         <p className="text-blue-800 text-base mb-0">
-          Google now factors AI-generated assets directly into RSA composition. You can opt out, but most clients see a boost when they leave them on. For a full setup walkthrough, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "rsa-vodic" } }} className="text-blue-700 underline">RSA Guide</Link>.
+          Google now factors AI-generated assets directly into RSA composition. You can opt out, but most clients see a boost when they leave them on. For a full setup walkthrough, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "responsive-search-ads-guide" } }} className="text-blue-700 underline">RSA Guide</Link>.
         </p>
       </div>
 
@@ -510,7 +510,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       {/* ── Category 6 ── */}
       <h2 id="category-6">Category 6: Audiences &amp; Remarketing (5 items)</h2>
       <p>
-        Remarketing is the easiest win in Google Ads — people who&apos;ve already visited your site convert 3-5x better than cold traffic. For a full overview of strategies, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="underline">Remarketing strategies</Link>.
+        Remarketing is the easiest win in Google Ads — people who&apos;ve already visited your site convert 3-5x better than cold traffic. For a full overview of strategies, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="underline">Remarketing strategies</Link>.
       </p>
 
       <h3>6.1 — Remarketing list health</h3>
@@ -565,7 +565,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       {/* ── Category 7 ── */}
       <h2 id="category-7">Category 7: Bidding Strategy (5 items)</h2>
       <p>
-        Smart Bidding is powerful, but only if you have enough conversions for the algorithm to learn from reliably. Over 40% of the accounts I audit run Smart Bidding with fewer than 10 conversions a month — that simply can&apos;t work. For a full strategy overview, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="underline">Smart Bidding Guide</Link>.
+        Smart Bidding is powerful, but only if you have enough conversions for the algorithm to learn from reliably. Over 40% of the accounts I audit run Smart Bidding with fewer than 10 conversions a month — that simply can&apos;t work. For a full strategy overview, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="underline">Smart Bidding Guide</Link>.
       </p>
 
       <h3>7.1 — Smart Bidding readiness</h3>
@@ -933,7 +933,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       {/* ── Mistakes ── */}
       <h2 id="mistakes">The most common mistakes I see in Serbia</h2>
       <p>
-        From working with 30+ Serbia-focused accounts over the last two years — these are the mistakes that keep repeating. For a broader list, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="underline">Google Ads Mistakes</Link>.
+        From working with 30+ Serbia-focused accounts over the last two years — these are the mistakes that keep repeating. For a broader list, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="underline">Google Ads Mistakes</Link>.
       </p>
 
       <div className="space-y-4 my-6">
@@ -989,7 +989,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake 7</p>
           <p className="font-semibold mb-2">Zero negative keywords in the account</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Fix:</strong> The easiest optimization, but often forgotten. 30 minutes on the negative list typically cuts 15-25% of wasted spend. Start with the <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="text-green-700 underline">complete negative keywords list</Link>.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Fix:</strong> The easiest optimization, but often forgotten. 30 minutes on the negative list typically cuts 15-25% of wasted spend. Start with the <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="text-green-700 underline">complete negative keywords list</Link>.</p>
           </div>
         </div>
 
@@ -1013,7 +1013,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
           <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake 10</p>
           <p className="font-semibold mb-2">A campaign called &quot;1&quot; with 50 ad groups named &quot;1, 2, 3...&quot; — impossible to maintain</p>
           <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-            <p className="text-base text-green-800 mb-0"><strong>Fix:</strong> Define a naming convention and apply it retroactively. For more on account organization, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="text-green-700 underline">Google Ads Optimization</Link>.</p>
+            <p className="text-base text-green-800 mb-0"><strong>Fix:</strong> Define a naming convention and apply it retroactively. For more on account organization, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimization" } }} className="text-green-700 underline">Google Ads Optimization</Link>.</p>
           </div>
         </div>
       </div>
@@ -1154,27 +1154,27 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Conversion Tracking Guide</p>
           <p className="text-xs text-gray-500 mb-0">Why your campaigns might not be working</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Smart Bidding Strategies</p>
           <p className="text-xs text-gray-500 mb-0">Complete guide for 2026</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negative Keywords</p>
           <p className="text-xs text-gray-500 mb-0">Complete list + strategy</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimization" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Optimization</p>
           <p className="text-xs text-gray-500 mb-0">30 tactics for better ROAS</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Quality Score Guide</p>
           <p className="text-xs text-gray-500 mb-0">What it is and how to improve it</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Mistakes</p>
           <p className="text-xs text-gray-500 mb-0">20 costly errors in your campaigns</p>
         </Link>

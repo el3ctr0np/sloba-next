@@ -476,7 +476,7 @@ export default function GoogleAdsOptimizationEN() {
           Don&apos;t jump straight from Manual CPC to Target CPA. First switch to &quot;Maximize Conversions&quot;
           without a target so the algorithm can learn. After 2 weeks, switch to Target CPA/ROAS with a realistic
           goal (10% better than your current average). For a complete walkthrough, see the{" "}
-          <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="underline font-semibold">Smart Bidding guide</Link>.
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="underline font-semibold">Smart Bidding guide</Link>.
         </p>
       </div>
 
@@ -668,7 +668,7 @@ export default function GoogleAdsOptimizationEN() {
             <li><strong>Cart Abandoners:</strong> A separate campaign with an aggressive offer (&quot;10% off if you complete your purchase&quot;)</li>
             <li><strong>Page Visitors:</strong> Different messaging for homepage visitors vs product page visitors</li>
             <li><strong>Past Purchasers:</strong> Cross-sell/upsell campaigns with new or complementary products</li>
-            <li>Full guide: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}>Remarketing in Google Ads</Link></li>
+            <li>Full guide: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}>Remarketing in Google Ads</Link></li>
           </ul>
         </div>
       </div>
@@ -687,7 +687,7 @@ export default function GoogleAdsOptimizationEN() {
           <li>Test each conversion manually — run a test transaction or form submission and verify that it records</li>
           <li>Exclude internal traffic (your office IP) so it doesn&apos;t &quot;pollute&quot; your data</li>
           <li>Check the conversion attribution model — Last Click vs Data-Driven (Data-Driven is better if you have sufficient volume)</li>
-          <li>Full guide: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking in Google Ads</Link></li>
+          <li>Full guide: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}>Conversion Tracking in Google Ads</Link></li>
         </ul>
       </div>
 
@@ -938,7 +938,7 @@ export default function GoogleAdsOptimizationEN() {
           </Link>
 
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "quality-score-guide" } }}
             className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimization</p>
@@ -951,7 +951,7 @@ export default function GoogleAdsOptimizationEN() {
           </Link>
 
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }}
             className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Optimization</p>
@@ -964,7 +964,7 @@ export default function GoogleAdsOptimizationEN() {
           </Link>
 
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}
             className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Campaigns</p>
@@ -977,7 +977,7 @@ export default function GoogleAdsOptimizationEN() {
           </Link>
 
           <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
+            href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }}
             className="block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-card transition-shadow no-underline"
           >
             <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Shopping</p>

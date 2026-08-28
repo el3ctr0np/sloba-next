@@ -734,19 +734,19 @@ export default function GoogleShoppingGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for eCommerce</p>
           <p className="text-xs text-gray-500 mb-0">Complete Google Ads strategy for online stores</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Guide</p>
           <p className="text-xs text-gray-500 mb-0">Everything about PMax campaigns, structure, and eCommerce optimization.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Remarketing Guide</p>
           <p className="text-xs text-gray-500 mb-0">Strategies for remarketing in Google Ads and how to increase conversions.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Negative Keywords</p>
           <p className="text-xs text-gray-500 mb-0">How to use negative keywords to reduce CPC and improve CTR.</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-oglasavanje-za-firme" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-advertising-for-businesses" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads for Businesses</p>
           <p className="text-xs text-gray-500 mb-0">Complete guide to Google Ads for B2B and B2C businesses.</p>
         </Link>

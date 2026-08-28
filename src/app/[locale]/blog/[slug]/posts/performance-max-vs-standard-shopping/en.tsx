@@ -38,7 +38,7 @@ export default function PerformanceMaxVsStandardShoppingEN() {
       </p>
       <p>
         If you&apos;re still deciding between Shopping and Search altogether, start with the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vs-search-kampanje" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vs-search-campaigns" } }} className="underline text-blue-700 font-medium">
           Shopping vs Search campaigns guide
         </Link>{" "}
         first. Here I assume you&apos;ve committed to Shopping and the only open question is: Standard Shopping, Performance Max, or both.
@@ -277,19 +277,19 @@ export default function PerformanceMaxVsStandardShoppingEN() {
 
       <p>
         If you want the deeper build detail on the PMax side — asset group structure, search themes, exclusions — I break it all down in the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="underline text-blue-700 font-medium">
           Performance Max guide
         </Link>. And the whole Shopping-vs-Search decision that sits above this one is in the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vs-search-kampanje" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vs-search-campaigns" } }} className="underline text-blue-700 font-medium">
           Shopping vs Search comparison
         </Link>.
       </p>
       <p>
         One thing worth saying before you pick a side: both campaign types read the same Merchant Center feed, so a weak feed caps what either of them can do. If titles, attributes and custom labels aren&apos;t sorted, no bidding strategy rescues it — that groundwork is in the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-serbian-ecommerce" } }} className="underline text-blue-700 font-medium">
           product feed guide
         </Link>, and the campaign-structure fundamentals sit in the{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-blue-700 font-medium">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-blue-700 font-medium">
           Google Shopping guide
         </Link>.
       </p>
@@ -456,19 +456,19 @@ export default function PerformanceMaxVsStandardShoppingEN() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vs-search-kampanje" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vs-search-campaigns" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping vs Search</p>
           <p className="text-xs text-gray-500 mb-0">The decision that sits above this one — when to pick each</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Guide</p>
           <p className="text-xs text-gray-500 mb-0">Asset group structure, search themes, exclusions</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Guide — The Basics</p>
           <p className="text-xs text-gray-500 mb-0">Feed optimization, campaign structure, ROAS</p>
         </Link>
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-srpski-ecommerce" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "product-feed-serbian-ecommerce" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Product Feed Guide</p>
           <p className="text-xs text-gray-500 mb-0">Required attributes, title optimization, custom labels</p>
         </Link>
