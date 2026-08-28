@@ -285,6 +285,10 @@ export default function KakoPocetiGoogleAdsEN() {
         </p>
       </div>
 
+      <p>
+        For the full version of that first campaign — structure by intent and margin, match types in 2026, and the September 2026 migration to keep in mind — see the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="underline">Google Search campaigns guide</Link>.
+      </p>
+
       <hr />
 
       <h2 id="step-by-step-from-zero-to-your-first-campaign">Step by Step — From Zero to Your First Campaign</h2>

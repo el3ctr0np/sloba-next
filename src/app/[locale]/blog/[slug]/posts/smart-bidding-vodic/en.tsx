@@ -60,6 +60,9 @@ export default function SmartBiddingGuideEN() {
         This guide covers every Smart Bidding strategy, when to use each, common mistakes, and real client
         examples — with specific frameworks for eCommerce, Lead Gen, and local services.
       </p>
+      <p>
+        One note before you start: bidding is the last layer of a Search campaign, not the first. If structure, keywords and measurement are not in place, no strategy will make up the difference. That groundwork is covered in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="underline">Google Search campaigns guide</Link>.
+      </p>
 
       <hr />
 

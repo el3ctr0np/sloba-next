@@ -163,6 +163,9 @@ export default function PerformanceMaxGuideEN() {
       <p>
         PMax isn't a universal solution. In some situations it's ideal, in others it's a mistake. Here's when I recommend PMax vs when not to.
       </p>
+      <p>
+        PMax also isn't the only option for these goals. If you need upper-funnel reach without the PMax black box, there is Demand Gen — the same Google inventory (YouTube, Discover, Gmail), but with control over audiences and creative; the differences are in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "demand-gen-guide" } }} className="underline">Demand Gen campaigns guide</Link>. If you need full control over keywords and ads, there is the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="underline">Google Search campaigns guide</Link>.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">

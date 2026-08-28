@@ -539,6 +539,9 @@ export default function GoogleShoppingGuideEN() {
       <p>
         Common dilemma: use Standard Shopping or Performance Max for eCommerce campaigns? In my experience, a hybrid approach works best.
       </p>
+      <p>
+        An earlier question usually comes first: Shopping or Search, and how to split budget between them when the same product can sell in both places. I worked through that in a separate piece — <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vs-search-campaigns" } }} className="underline">Google Shopping vs Search campaigns</Link>.
+      </p>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">

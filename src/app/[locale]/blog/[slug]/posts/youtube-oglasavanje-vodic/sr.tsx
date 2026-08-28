@@ -96,6 +96,9 @@ export default function YouTubeOglasavanjeVodicSR() {
           zvaničnom Google dokumentacijom
         </a>.
       </p>
+      <p>
+        Ovi formati se ne kupuju samo kroz Video kampanje. Demand Gen koristi isti YouTube inventar uz Discover i Gmail, sa drugačijom logikom optimizacije i izveštavanja. Kada birati koji put, pokrivam u <Link href={{ pathname: "/blog/[slug]", params: { slug: "demand-gen-vodic" } }} className="underline">vodiču za Demand Gen kampanje</Link>.
+      </p>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">

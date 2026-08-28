@@ -215,6 +215,9 @@ export default function GoogleSearchCampaignsGuidePost() {
       <p>
         <GlossaryLink slug="match-types">Match types</GlossaryLink> still exist, but the lines between them are thinner than a few years ago — especially now that AI Max is part of the picture.
       </p>
+      <p>
+        If you are still deciding which terms belong in the campaign at all, research comes before match types — the method and selection criteria are in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }} className="underline">keyword research guide</Link>.
+      </p>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">

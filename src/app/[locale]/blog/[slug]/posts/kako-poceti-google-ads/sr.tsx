@@ -240,6 +240,10 @@ export default function KakoPocetiGoogleAdsSR() {
       </div>
 
       <p>
+        Za većinu firmi odgovor je Search kampanja: najveća namera, najveća kontrola i najlakše se meri. Kako je postaviti od nule, sa strukturom po nameri i marži i sa septembarskom migracijom 2026. u vidu, pokrivam u <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="underline">vodiču za Google Search kampanje</Link>.
+      </p>
+
+      <p>
         Ako vam nedostaje vreme ili strpljenje za sve ovo, profesionalno{" "}
         <Link href="/usluge/search-kampanje" className="text-blue-700 underline">vođenje kampanja</Link>{" "}
         od starta je opcija koju najčešće preporučujem vlasnicima biznisa sa ograničenim vremenom.

@@ -215,6 +215,9 @@ export default function GoogleSearchKampanjeVodicPost() {
       <p>
         <GlossaryLink slug="match-types">Match tipovi</GlossaryLink> i dalje postoje, ali granice između njih su tanje nego pre par godina - naročito otkako je AI Max deo slike.
       </p>
+      <p>
+        Ako tek birate koje reči uopšte ulaze u kampanju, pre match tipova ide istraživanje - metod i kriterijume selekcije pokrivam u <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="underline">vodiču za ključne reči</Link>.
+      </p>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">

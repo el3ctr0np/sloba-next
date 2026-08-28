@@ -126,6 +126,9 @@ export default function ConversionTrackingGuideEN() {
       <p>
         I recommend viewing conversion tracking as your campaign's nervous system. Without it, algorithms don't know what's a good signal, and you lose control over budget.
       </p>
+      <p>
+        This guide covers measurement inside Google Ads. The layer around it sits in three separate pieces: <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integration" } }} className="underline">GA4 and Google Ads integration</Link> (how conversions get imported and why the numbers diverge), <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-audiences-ecommerce-framework" } }} className="underline">GA4 audiences for eCommerce</Link> (what to do with the data once tracking works), and <Link href={{ pathname: "/blog/[slug]", params: { slug: "offline-conversion-import-b2b" } }} className="underline">offline conversion import</Link> for B2B accounts where the sale closes off-site.
+      </p>
 
       <h3>Algorithms depend on your data</h3>
       <p>
@@ -133,6 +136,9 @@ export default function ConversionTrackingGuideEN() {
       </p>
       <p>
         With bad tracking, the algorithm learns wrong signals — bids too high for bad traffic, bids too low for good traffic, and budget goes to waste. With good tracking, the algorithm understands what a real conversion is, bids more aggressively when signals are good, and saves budget when signals aren't promising.
+      </p>
+      <p>
+        That is why measurement comes before campaigns, not after them. It holds for <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="underline">Search campaigns</Link>, where you pick the keywords yourself, and for <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="underline">Performance Max</Link>, where the algorithm has no source of truth other than your conversions.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">

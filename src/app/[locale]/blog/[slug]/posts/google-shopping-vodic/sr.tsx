@@ -566,6 +566,9 @@ export default function GoogleShoppingVodicPost() {
       <p>
         Česta dilema: da li koristiti Standard Shopping ili Performance Max za eCommerce kampanje? Moje iskustvo je da najbolje funkcioniše hibridni pristup.
       </p>
+      <p>
+        Pre te dileme obično dolazi jedna ranija: Shopping ili Search, i kako podeliti budžet između njih kada isti proizvod može da se prodaje na oba mesta. To sam razložio u posebnom tekstu - <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vs-search-kampanje" } }} className="underline">Google Shopping vs Search kampanje</Link>.
+      </p>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">

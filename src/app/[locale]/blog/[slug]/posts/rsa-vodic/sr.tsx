@@ -73,6 +73,9 @@ export default function RsaVodicPost() {
         Search oglas koji danas napišete - je RSA.
       </p>
       <p>
+        RSA je format oglasa unutar Search kampanje, ne kampanja za sebe. Ako tek postavljate strukturu kampanja, budžet i biddovanje oko ovih oglasa, krenite od <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="underline">vodiča za Google Search kampanje</Link>, pa se vratite ovde na copy.
+      </p>
+      <p>
         Problem? Većina oglašivača koristi RSA-ove pogrešno. Popune 15 naslova jer
         Google to sugeriše, ne razmišljaju o rasporedu, i onda se pitaju zašto im
         Ad Strength kaže &quot;Excellent&quot; a CTR je ispod prosjeka.

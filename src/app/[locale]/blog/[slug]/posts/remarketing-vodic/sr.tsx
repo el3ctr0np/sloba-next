@@ -211,6 +211,9 @@ export default function RemarketingVodicPost() {
         Google Ads nudi nekoliko vrsta remarketing kampanja, a svaka ima svoju
         namenu. Evo pregleda sa preporukom kada koristiti koji tip:
       </p>
+      <p>
+        Uz ove tipove postoji i Demand Gen: kampanja koja isti YouTube, Discover i Gmail inventar koristi za pronalaženje nove publike, gde remarketing liste ulaze kao signal i kao osnova za lookalike publike, a ne kao jedina meta. Kada ima smisla, a kada ne, razložio sam u <Link href={{ pathname: "/blog/[slug]", params: { slug: "demand-gen-vodic" } }} className="underline">vodiču za Demand Gen kampanje</Link>.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">

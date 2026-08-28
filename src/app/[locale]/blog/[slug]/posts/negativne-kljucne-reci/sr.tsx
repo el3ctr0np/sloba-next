@@ -263,6 +263,9 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
 
       {/* ── Kako pronaći negativne reči ── */}
       <h2>Kako pronaći negativne ključne reči</h2>
+      <p>
+        Search Terms Report je isti izvor iz kog gradite i pozitivnu stranu kampanje. Ako kampanju tek postavljate, redosled koraka je u <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="underline">vodiču za Google Search kampanje</Link>.
+      </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">5 metoda za pronalaženje negatives</p>

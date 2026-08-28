@@ -173,6 +173,9 @@ export default function RemarketingGuideEN() {
       <p>
         Google Ads offers several types of remarketing campaigns, each with its purpose. Here is an overview with recommendation when to use which type:
       </p>
+      <p>
+        Alongside these types there is Demand Gen: a campaign that uses the same YouTube, Discover and Gmail inventory to find new audiences, where your remarketing lists come in as a signal and as the seed for lookalikes rather than as the only target. When it makes sense and when it doesn't is covered in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "demand-gen-guide" } }} className="underline">Demand Gen campaigns guide</Link>.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">

@@ -175,6 +175,9 @@ export default function PerformanceMaxVodicPost() {
       <p>
         PMax nije univerzalno rešenje. U nekim situacijama je idealan, u drugim je greška. Evo kada preporučujem PMax vs kada ne.
       </p>
+      <p>
+        PMax takođe nije jedina opcija za ove ciljeve. Ako vam treba doseg u gornjem delu levka bez PMax-ove crne kutije, tu je Demand Gen - isti Google inventar (YouTube, Discover, Gmail), ali sa kontrolom nad publikama i kreativom; razlike su u <Link href={{ pathname: "/blog/[slug]", params: { slug: "demand-gen-vodic" } }} className="underline">vodiču za Demand Gen kampanje</Link>. Ako vam treba puna kontrola nad ključnim rečima i oglasima, tu je <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="underline">vodič za Google Search kampanje</Link>. U oba slučaja PMax pod haubom vozi Smart Bidding, pa se isplati razumeti i <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="underline">bidding strategije</Link> pre nego što ocenite rezultate.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">

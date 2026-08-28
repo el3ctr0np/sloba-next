@@ -73,6 +73,9 @@ export default function RsaGuideEN() {
         Search ad you write today is an RSA.
       </p>
       <p>
+        An RSA is an ad format inside a Search campaign, not a campaign in its own right. If you are still setting up campaign structure, budgets and bidding around these ads, start with the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="underline">Google Search campaigns guide</Link>, then come back here for the copy.
+      </p>
+      <p>
         The problem? Most advertisers use RSAs incorrectly. They fill all 15 headlines because
         Google suggests it, give no thought to angle distribution, then wonder why their
         Ad Strength reads &quot;Excellent&quot; whilst CTR is below average.

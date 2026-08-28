@@ -961,6 +961,54 @@ const faqSchemaGA4AudiencesSR = {
   ]
 };
 
+const faqSchemaSearchKampanjeSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Koliko košta vođenje Google Search kampanja?", acceptedAnswer: { "@type": "Answer", text: "Kao samostalan kanal, Search budžet kreće od €500/mesečno. U okviru punog upravljanja nalogom (Search + Shopping/PMax + remarketing), fee za vođenje kreće od €700/mesečno. Jednokratna konsultacija je €150/sat, korisna ako želite drugo mišljenje o postojećoj kampanji bez preuzimanja upravljanja. Tačna cena zavisi od obima naloga i kompleksnosti - dobijate je posle uvida u nalog, ne unapred." } },
+    { "@type": "Question", name: "Da li mi treba agencija za Search kampanje?", acceptedAnswer: { "@type": "Answer", text: "Zavisi od budžeta i vremena koje imate. Search je najpristupačniji kanal za samostalno vođenje - struktura je jasnija nego kod PMax-a, a interfejs daje dosta uvida (search termovi, Quality Score, Auction Insights). Ako imate vremena za nedeljni pregled i manji budžet, možete početi sami. Agencija ili konsultant ima smisla kad budžet raste, kad AI Max i broad match traže pažljivije praćenje, ili kad jednostavno nemate vreme da to radite konzistentno svake nedelje." } },
+    { "@type": "Question", name: "Šta je AI Max i da li moram da ga koristim?", acceptedAnswer: { "@type": "Answer", text: "AI Max je paket funkcija za Search kampanje - search themes, URL expansion, AI-generisan copy i AI Brief kroz Gemini. Nije obavezan sam po sebi, ali ako koristite DSA, automatically created assets ili broad match na nivou kampanje, Google vas automatski nadograđuje na njega od septembra 2026, bez vašeg zahteva. Ako to nije ono što želite, morate promeniti konfiguraciju kampanje pre nego što nadogradnja stigne, ne posle." } },
+    { "@type": "Question", name: "Koliko dugo dok Search kampanja ne proradi?", acceptedAnswer: { "@type": "Answer", text: "Prvi klikovi i podaci stižu u roku od par dana. Prve konverzije zavise od volumena upita i budžeta - kod nekih naloga za nedelju dana, kod drugih (niska pretraga, nišni proizvod) treba duže. Smart Bidding treba minimum 2-4 nedelje i dovoljan broj konverzija da počne stabilno da optimizuje. Ne mogu unapred reći tačan datum kad će vaš nalog \"proraditi\" - to zavisi od kategorije, konkurencije i toga da li je merenje ispravno postavljeno od prvog dana. Ono što mogu reći: ako posle 6-8 nedelja sa ispravnim merenjem i realnim budžetom i dalje nema konverzija, problem nije strpljenje nego nešto u strukturi, ponudi ili tracking-u." } },
+    { "@type": "Question", name: "Broad match ili phrase match 2026?", acceptedAnswer: { "@type": "Answer", text: "Nema univerzalnog odgovora, zavisi od faze naloga. Ako tek počinjete i imate malo conversion podataka, phrase ili exact daju više kontrole dok gradite istoriju. Ako imate stabilan volumen konverzija, jak Smart Bidding target i - najvažnije - disciplinu da redovno pregledate search termove, broad match može doneti dodatni doseg koji phrase/exact propuštaju. Broad match bez redovnog pregleda je najčešći način da se budžet potroši na irelevantne upite, pogotovo kad se doda AI Max na vrh." } },
+  ]
+};
+
+const faqSchemaSearchKampanjeEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "How much does managing Google Search campaigns cost?", acceptedAnswer: { "@type": "Answer", text: "As a standalone channel, Search budget starts at €500/month. As part of full account management (Search + Shopping/PMax + remarketing), management fees start at €700/month. A one-off consultation is €150/hour — useful if you want a second opinion on an existing campaign without handing over management. The exact price depends on account size and complexity — you get it after I look at the account, not before." } },
+    { "@type": "Question", name: "Do I need an agency for Search campaigns?", acceptedAnswer: { "@type": "Answer", text: "Depends on your budget and time. Search is the most accessible channel to run yourself — the structure is clearer than PMax, and the interface gives you plenty of visibility (search terms, Quality Score, Auction Insights). If you have time for a weekly review and a smaller budget, you can start solo. An agency or consultant makes sense once budget grows, once AI Max and broad match need closer monitoring, or when you simply don't have time to do it consistently every week." } },
+    { "@type": "Question", name: "What is AI Max, and do I have to use it?", acceptedAnswer: { "@type": "Answer", text: "AI Max is a bundle of features for Search campaigns — search themes, URL expansion, AI-generated copy, and an AI Brief through Gemini. It isn't mandatory on its own, but if you're running DSA, automatically created assets, or campaign-level broad match, Google automatically upgrades you to it starting September 2026, without you asking. If that's not what you want, you need to change the campaign configuration before the upgrade lands, not after." } },
+    { "@type": "Question", name: "How long until a Search campaign starts working?", acceptedAnswer: { "@type": "Answer", text: "First clicks and data arrive within a few days. First conversions depend on query volume and budget — for some accounts that's within a week, for others (low search volume, niche product) it takes longer. Smart Bidding needs a minimum of 2–4 weeks and enough conversions to start optimizing reliably. I can't tell you upfront the exact date your account will \"start working\" — that depends on category, competition, and whether measurement was set up correctly from day one. What I can say: if after 6–8 weeks with correct measurement and a realistic budget there are still no conversions, the problem isn't patience — it's something in the structure, the offer, or the tracking." } },
+    { "@type": "Question", name: "Broad match or phrase match in 2026?", acceptedAnswer: { "@type": "Answer", text: "There's no universal answer — it depends on the account's stage. If you're just starting out with little conversion data, phrase or exact give you more control while you build history. If you have steady conversion volume, a strong Smart Bidding target, and — most importantly — the discipline to review search terms regularly, broad match can bring extra reach that phrase/exact miss. Broad match without regular review is the fastest way to burn budget on irrelevant queries, especially once AI Max is layered on top." } },
+  ]
+};
+
+const faqSchemaDemandGenSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Da li je Demand Gen zamena za Display?", acceptedAnswer: { "@type": "Answer", text: "Delimično se preklapaju, ali nisu isto. Standardni Display pokriva mnogo širu mrežu sajtova i aplikacija preko banner formata. Demand Gen je uži, fokusiran na tri feed-native plasmana - YouTube, Discover, Gmail - sa vizuelnim formatima koji su prirodnije uklopljeni u sadržaj. Za većinu naloga koje vodim, Demand Gen je danas prirodniji izbor za prospecting nego klasičan Display, ali Display ostaje relevantan za širi remarketing doseg." } },
+    { "@type": "Question", name: "Koliki budžet treba za Demand Gen?", acceptedAnswer: { "@type": "Answer", text: "Orijentacioni prag koji ja koristim je otprilike 1.000 EUR mesečno za sam taj kanal. Ovo nije univerzalna granica niti obećanje rezultata - zavisi od cene proizvoda, konkurencije i toga koliko konverzija vam treba da algoritam nauči. Ispod tog nivoa kampanja često ne dobije dovoljno prostora da pokaže šta stvarno radi na tri plasmana odjednom." } },
+    { "@type": "Question", name: "Demand Gen ili PMax?", acceptedAnswer: { "@type": "Answer", text: "Nije uvek pitanje ili-ili. PMax uključuje Search i Shopping pored vizuelnih kanala, pa je šire rešenje sa manje kontrole. Demand Gen je uži i daje vam više kontrole nad plasmanom i kreativom, ali ne dira Search uopšte. Ako već imate PMax koji radi dobro, Demand Gen retko donosi dovoljno dodatne vrednosti da opravda dupliranje budžeta - proverite pre svega kroz A/B test inkrementalnosti. Ako nemate PMax i tražite fokusiran prospecting kanal sa jačim kreativnim usmerenjem, Demand Gen je razumniji prvi korak." } },
+    { "@type": "Question", name: "Da li radi za B2B?", acceptedAnswer: { "@type": "Answer", text: "Može, ali je teže nego za eCommerce. B2B proizvod retko ima jak vizuelni element - teško je napraviti ubedljivu sliku ili video za, recimo, softver za upravljanje zalihama. Ako imate customer match listu postojećih klijenata za lookalike i budžet za makar osnovnu video produkciju, ima smisla probati kao dopunski kanal uz Search. Kao prvi i jedini kanal za B2B lead-gen, ne bih ga preporučio." } },
+    { "@type": "Question", name: "Kako se meri uspeh Demand Gen kampanje?", acceptedAnswer: { "@type": "Answer", text: "Ne samo brojem konverzija koje kampanja sama sebi prijavljuje u interfejsu. Pratite da li ukupan broj konverzija na celom nalogu raste kad je kampanja uključena, u odnosu na period bez nje - to je test inkrementalnosti, i za njega postoji ugrađen A/B framework od 2026. Ako uključite view-through optimizaciju, budite svesni da ona širi definiciju \"konverzije\" i da će prijavljeni broj rasti bez obzira da li stvarni rezultat raste. Gledajte poslovni ishod, ne samo dashboard." } },
+  ]
+};
+
+const faqSchemaDemandGenEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Is Demand Gen a replacement for Display?", acceptedAnswer: { "@type": "Answer", text: "They overlap partly, but they're not the same thing. Standard Display covers a much wider network of sites and apps through banner formats. Demand Gen is narrower, focused on three feed-native placements — YouTube, Discover, Gmail — with visual formats that fit more naturally into content. For most accounts I run, Demand Gen is now the more natural choice for prospecting than classic Display, but Display still has a role for broader remarketing reach." } },
+    { "@type": "Question", name: "How much budget does Demand Gen need?", acceptedAnswer: { "@type": "Answer", text: "The rough threshold I use is around EUR 1,000/month for that channel alone. This isn't a universal cutoff or a promise of results — it depends on product price, competition, and how many conversions the algorithm needs to learn from. Below that level, a campaign often doesn't get enough room to show what it can actually do across three placements at once." } },
+    { "@type": "Question", name: "Demand Gen or PMax?", acceptedAnswer: { "@type": "Answer", text: "It's not always an either-or question. PMax includes Search and Shopping alongside the visual channels, so it's the broader solution with less control. Demand Gen is narrower and gives you more control over placement and creative, but it doesn't touch Search at all. If PMax is already running well for you, Demand Gen rarely adds enough extra value to justify duplicating budget — check with an incrementality A/B test before deciding. If you don't run PMax and want a focused prospecting channel with a stronger creative lean, Demand Gen is the more sensible first step." } },
+    { "@type": "Question", name: "Does it work for B2B?", acceptedAnswer: { "@type": "Answer", text: "It can, but it's harder than for eCommerce. A B2B product rarely has a strong visual hook — it's difficult to make a compelling image or video for, say, inventory management software. If you have a customer match list of existing clients to build lookalikes from and budget for at least basic video production, it's worth testing as a supplementary channel alongside Search. As the first and only channel for B2B lead gen, I wouldn't recommend it." } },
+    { "@type": "Question", name: "How do you measure the success of a Demand Gen campaign?", acceptedAnswer: { "@type": "Answer", text: "Not just by the conversion count the campaign reports in the interface. Watch whether total conversions across the whole account go up when the campaign is running, versus a period without it — that's an incrementality test, and there's a built-in A/B framework for it since 2026. If you turn on view-through optimization, be aware it widens the definition of \"conversion,\" so the reported number will climb regardless of whether the actual result is growing. Look at the business outcome, not just the dashboard." } },
+  ]
+};
+
 function getFaqSchema(slug: string, locale: string) {
   if (slug === "product-feed-optimizacija-scorecard") {
     return locale === "en" ? faqSchemaFeedScorecardEN : faqSchemaFeedScorecardSR;
@@ -1021,6 +1069,12 @@ function getFaqSchema(slug: string, locale: string) {
   }
   if (slug === "ctr-vodic") {
     return locale === "en" ? faqSchemaCtrEN : faqSchemaCtrSR;
+  }
+  if (slug === "google-search-kampanje-vodic") {
+    return locale === "en" ? faqSchemaSearchKampanjeEN : faqSchemaSearchKampanjeSR;
+  }
+  if (slug === "demand-gen-vodic") {
+    return locale === "en" ? faqSchemaDemandGenEN : faqSchemaDemandGenSR;
   }
   return null;
 }

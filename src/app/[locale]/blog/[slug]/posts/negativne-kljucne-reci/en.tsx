@@ -262,6 +262,9 @@ export default function NegativeKeywordsGuideEN() {
 
       {/* ── How to find negatives ── */}
       <h2>How to Find Negative Keywords</h2>
+      <p>
+        The Search Terms Report is the same source you build the positive side of the campaign from. If you are still setting the campaign up, the order of steps is in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="underline">Google Search campaigns guide</Link>.
+      </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">5 methods for finding negatives</p>

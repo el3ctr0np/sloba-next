@@ -369,6 +369,9 @@ export default function KeywordGuideEN() {
       <p>
         A rule I never break: all keywords in one Ad Group must be similar enough to share the SAME ad. If you cannot write one ad that is relevant to all keywords in the group — split them.
       </p>
+      <p>
+        Ad Group structure only makes sense in the context of the whole campaign: how many campaigns you open, how you split budget, and which bidding strategy you pick. That layer is covered in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="underline">Google Search campaigns guide</Link>.
+      </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Example of good organization</p>

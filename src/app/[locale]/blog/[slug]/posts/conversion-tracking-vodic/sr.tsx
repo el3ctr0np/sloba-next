@@ -126,6 +126,9 @@ export default function ConversionTrackingVodicPost() {
       <p>
         Preporučujem da na conversion tracking gledate kao na nervni sistem vaših kampanja. Bez njega, algoritmi ne znaju šta je dobar signal, a vi gubite kontrolu nad budžetom.
       </p>
+      <p>
+        Ovaj vodič pokriva merenje unutar Google Ads-a. Sloj oko njega je u tri odvojena teksta: <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integracija" } }} className="underline">GA4 i Google Ads integracija</Link> (kako se konverzije uvoze i zašto se brojevi razilaze), <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-publike-ecommerce-framework" } }} className="underline">GA4 publike za eCommerce</Link> (šta raditi sa podacima kada tracking proradi) i <Link href={{ pathname: "/blog/[slug]", params: { slug: "offline-conversion-import-b2b" } }} className="underline">offline conversion import</Link> za B2B naloge gde se prodaja zaključuje van sajta.
+      </p>
 
       <h3>Algoritmi zavise od vaših podataka</h3>
       <p>
@@ -133,6 +136,9 @@ export default function ConversionTrackingVodicPost() {
       </p>
       <p>
         Sa lošim tracking-om, algoritam uči pogrešne signale - biduje previše za loš saobraćaj, biduje premalo za dobar saobraćaj i budžet odlazi u vetar. Sa dobrim tracking-om, algoritam razume šta je prava konverzija, biduje agresivnije kada su signali dobri i štedi budžet kada signali nisu perspektivni.
+      </p>
+      <p>
+        Zato merenje ide pre kampanja, a ne posle njih. Važi i za <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="underline">Search kampanje</Link>, gde birate ključne reči sami, i za <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="underline">Performance Max</Link>, gde algoritam nema nijedan drugi izvor istine osim vaših konverzija.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">

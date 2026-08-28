@@ -60,6 +60,9 @@ export default function SmartBiddingVodicSR() {
         Ovaj vodič pokriva svaku Smart Bidding strategiju, kada je koristiti, česte greške i konkretne
         primere iz realnih naloga - sa posebnim osvrtom na eCommerce, Lead Gen i lokalne usluge.
       </p>
+      <p>
+        Jedna napomena pre nego što krenete: bidding je poslednji sloj Search kampanje, ne prvi. Ako struktura, ključne reči i merenje nisu na mestu, nijedna strategija to neće nadoknaditi. Taj deo pokriva <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="underline">vodič za Google Search kampanje</Link>.
+      </p>
 
       <hr />
 

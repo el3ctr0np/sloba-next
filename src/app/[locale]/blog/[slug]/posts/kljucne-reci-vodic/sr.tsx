@@ -382,6 +382,9 @@ export default function KljucneReciVodicPost() {
       <p>
         Pravilo koje nikada ne prekršim: sve ključne reči u jednoj Ad Group moraju biti dovoljno slične da dele ISTI oglas. Ako ne možete napisati jedan oglas koji je relevantan za sve ključne reči u grupi - podelite ih.
       </p>
+      <p>
+        Ad Group struktura ima smisla tek u kontekstu cele kampanje: koliko kampanja otvarate, kako delite budžet i koju bidding strategiju birate. Taj sloj razlažem u <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="underline">vodiču za Google Search kampanje</Link>.
+      </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Primer dobre organizacije</p>

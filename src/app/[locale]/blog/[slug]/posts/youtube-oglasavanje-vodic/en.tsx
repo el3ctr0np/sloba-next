@@ -97,6 +97,9 @@ export default function YouTubeAdvertisingGuideEN() {
           the official Google documentation
         </a>.
       </p>
+      <p>
+        These formats are not bought through Video campaigns alone. Demand Gen runs the same YouTube inventory alongside Discover and Gmail, with different optimisation and reporting logic. Which route to pick when is covered in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "demand-gen-guide" } }} className="underline">Demand Gen campaigns guide</Link>.
+      </p>
 
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
