@@ -271,6 +271,11 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
   const faqs = isEn
     ? [
         {
+          question: "A Google Ads agency or a Google Ads expert — which one do you need?",
+          answer:
+            "If you need ten services and a whole team, you need an agency. If you need Google Ads to actually work, you need an expert who runs the account personally. I'm the latter: a senior with 10+ years of experience, no junior layer. And when the business outgrows one channel, I bring in the Funky Enterprises team — so you get both."
+        },
+        {
           question: "How much does a Google Ads agency cost?",
           answer:
             "It depends on account scope and ad spend. Monthly management with this boutique agency starts from $2,500/month and scales with spend and complexity. For smaller needs there are one-off audits and consultations. You get an exact number after I've reviewed the account, not a promised outcome upfront."
@@ -312,6 +317,11 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
         }
       ]
     : [
+        {
+          question: "Google Ads agencija ili Google Ads stručnjak - šta vam treba?",
+          answer:
+            "Ako vam treba deset usluga i ceo tim, treba vam agencija. Ako vam treba da Google Ads radi kako treba, treba vam stručnjak koji nalog vodi lično. Ja sam ovo drugo: senior sa 10+ godina iskustva, bez junior sloja. A kad posao preraste jedan kanal, uključujem Funky Enterprises tim - pa dobijete oba."
+        },
         {
           question: "Koliko košta Google Ads agencija u Srbiji?",
           answer:

@@ -544,21 +544,17 @@ export default async function ServicesPage({ params }: Props) {
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {locale === "en" ? (
                 <>
-                  I run a{" "}
-                  <strong className="text-white">senior-led boutique Google Ads practice</strong>{" "}
-                  — management, audit, and consulting for companies that want
-                  measurable results from paid advertising. Your account is run by
-                  me personally, not a junior learning on your budget. From strategy
-                  to daily optimization, everything you need for stable revenue growth.
+                  Everything I do is <strong className="text-white">Google Ads</strong>.
+                  Search, Shopping, Performance Max, remarketing — channels of one
+                  system I run personally, for 10+ years. Below are the packages:
+                  same work, different scope.
                 </>
               ) : (
                 <>
-                  Vodim{" "}
-                  <strong className="text-white">senior boutique Google Ads praksu</strong>:
-                  upravljanje, audit i konsultacije za kompanije koje žele merljive
-                  rezultate iz plaćenog oglašavanja. Vaš nalog vodim ja lično, ne
-                  junior koji uči na vašem budžetu. Od strategije do svakodnevne
-                  optimizacije, sve što vam treba za stabilan rast prihoda.
+                  Sve što radim je <strong className="text-white">Google Ads</strong>.
+                  Search, Shopping, Performance Max i remarketing - kanali jednog
+                  sistema koji vodim lično, 10+ godina. Ispod su paketi: isti rad,
+                  različit obim.
                 </>
               )}
             </p>
