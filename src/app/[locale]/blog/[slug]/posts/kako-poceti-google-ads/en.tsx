@@ -567,6 +567,12 @@ export default function KakoPocetiGoogleAdsEN() {
       </div>
 
       <p>
+        If you&apos;re looking for a Google Ads agency built around one senior consultant, not a black box, here is how my{" "}
+        <Link href="/usluge/google-ads-agencija" className="underline text-gray-900">Google Ads agency</Link>{" "}
+        works.
+      </p>
+
+      <p>
         For a full breakdown of the three options — DIY, freelancer, agency — with costs and decision framework:{" "}
         <Link
           href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-agency-vs-freelancer" } }}
@@ -719,6 +725,12 @@ export default function KakoPocetiGoogleAdsEN() {
       <p>
         Every business that gets Google Ads right treats it as a system, not a lottery. The results are measurable. The levers are clear. And the compounding effect of consistent optimization is real.
       </p>
+      <p>
+        If you&apos;re looking for someone to run your Google Ads campaigns professionally, check out my{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="underline text-gray-900">Google Ads management</Link>{" "}
+        service — or, for a broader comparison of your options, my{" "}
+        <Link href="/usluge/google-ads-agencija" className="underline text-gray-900">Google Ads agency</Link>.
+      </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
@@ -741,6 +753,10 @@ export default function KakoPocetiGoogleAdsEN() {
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Management</p>
           <p className="text-xs text-gray-500 mb-0">Professional campaign management when you are ready to scale</p>
+        </Link>
+        <Link href="/usluge/google-ads-agencija" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Agency</p>
+          <p className="text-xs text-gray-500 mb-0">Boutique agency, run personally by a senior consultant — compared against freelancers and big agencies</p>
         </Link>
         <Link
           href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }}

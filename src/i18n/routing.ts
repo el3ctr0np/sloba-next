@@ -99,6 +99,12 @@ export const routing = defineRouting({
     "/blog": "/blog",
     "/blog/[slug]": "/blog/[slug]",
 
+    // Audit checklist download thank-you (gated Google Sheet/XLSX template)
+    "/resursi/audit-checklist/hvala": {
+      sr: "/resursi/audit-checklist/hvala",
+      en: "/resources/audit-checklist/thank-you"
+    },
+
     // PPC Glossary / Rečnik
     "/recnik": {
       sr: "/recnik",

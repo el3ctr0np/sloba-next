@@ -1,18 +1,19 @@
 import { Link } from "@/i18n/navigation";
+import { ChecklistDownloadForm } from "@/components/sections/ChecklistDownloadForm";
 
 export default function GoogleAdsAuditGuideEN() {
   return (
     <>
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
-        <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">A Google Ads audit is a systematic account review that uncovers wasted spend, missed opportunities, and technical errors. A professional audit covers 80+ checkpoints across 10 categories and, on average, finds 15-25% of the budget being spent inefficiently.</p>
+        <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">A Google Ads audit is a systematic account review that uncovers wasted spend, missed opportunities, and technical errors. A professional audit covers 100+ checkpoints across 12 categories and, on average, finds 15-25% of the budget being spent inefficiently.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">80+</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">100+</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">checkpoints</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">10</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">12</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">audit categories</p>
           </div>
           <div className="text-center">
@@ -35,14 +36,14 @@ export default function GoogleAdsAuditGuideEN() {
           What is a Google Ads audit and what does it find?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          A <strong>Google Ads audit</strong> is a systematic account review across <strong>10 categories</strong> — account structure, conversion tracking, campaign settings, keywords, ads, audiences, bidding strategy, and budget. A professional audit covers <strong>80+ checkpoints</strong> and, on average, finds that <strong>15-25% of budget</strong> is being spent inefficiently on accounts that haven&apos;t been optimized in 6+ months.
+          A <strong>Google Ads audit</strong> is a systematic account review across <strong>12 categories</strong> — account structure, conversion tracking, campaign settings, keywords, ads, audiences, bidding strategy, budget, Shopping/Performance Max, and landing pages. A professional audit covers <strong>100+ checkpoints</strong> and, on average, finds that <strong>15-25% of budget</strong> is being spent inefficiently on accounts that haven&apos;t been optimized in 6+ months.
         </p>
       </div>
 
-      {/* ── Featured-snippet: 10 categories list ── */}
+      {/* ── Featured-snippet: 12 categories list ── */}
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-3">
-          Google Ads audit checklist — the 10 categories
+          Google Ads audit checklist — the 12 categories
         </p>
         <ol className="space-y-2 text-base text-gray-700 pl-5 mb-0">
           <li><strong>Account structure</strong> — campaign organization, naming conventions, hierarchy</li>
@@ -55,6 +56,8 @@ export default function GoogleAdsAuditGuideEN() {
           <li><strong>Budget and allocation</strong> — Impression Share Lost (Budget), budget distribution</li>
           <li><strong>Reporting and analytics</strong> — GA4 integration, attribution models, data discrepancies</li>
           <li><strong>Scripts and automation</strong> — Google Ads Scripts, automated rules, alerts</li>
+          <li><strong>Shopping and Performance Max</strong> — feed health, asset group theming, search term insights</li>
+          <li><strong>Landing pages</strong> — offer match, mobile Core Web Vitals, single CTA, page-level CVR</li>
         </ol>
       </div>
 
@@ -64,6 +67,7 @@ export default function GoogleAdsAuditGuideEN() {
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#why-google-ads-audit-is-essential" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why a Google Ads audit is essential</a></li>
           <li><a href="#what-a-good-google-ads-audit-covers" className="block py-1 text-base text-gray-700 hover:text-primary underline">What a good Google Ads audit covers</a></li>
+          <li><a href="#get-the-checklist" className="block py-1 text-base text-gray-700 hover:text-primary underline">Get the checklist (free download)</a></li>
           <li><a href="#category-1-account-structure" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 1: Account structure</a></li>
           <li><a href="#category-2-conversion-tracking" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 2: Conversion tracking</a></li>
           <li><a href="#category-3-campaign-settings" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 3: Campaign settings</a></li>
@@ -72,6 +76,11 @@ export default function GoogleAdsAuditGuideEN() {
           <li><a href="#category-6-audiences-and-remarketing" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 6: Audiences and remarketing</a></li>
           <li><a href="#category-7-bidding-strategy" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 7: Bidding strategy</a></li>
           <li><a href="#category-8-budget-and-allocation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 8: Budget and allocation</a></li>
+          <li><a href="#category-9-reporting-and-analytics" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 9: Reporting and analytics</a></li>
+          <li><a href="#category-10-scripts-and-automation" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 10: Scripts and automation</a></li>
+          <li><a href="#category-11-shopping-and-performance-max" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 11: Shopping and Performance Max</a></li>
+          <li><a href="#category-12-landing-pages" className="block py-1 text-base text-gray-700 hover:text-primary underline">Category 12: Landing pages</a></li>
+          <li><a href="#five-minute-daily-check" className="block py-1 text-base text-gray-700 hover:text-primary underline">A 5-minute daily check</a></li>
           <li><a href="#quick-google-ads-audit-in-30-minutes" className="block py-1 text-base text-gray-700 hover:text-primary underline">A quick Google Ads audit in 30 minutes</a></li>
           <li><a href="#scoring-system-for-google-ads-audit" className="block py-1 text-base text-gray-700 hover:text-primary underline">A scoring system for your Google Ads audit</a></li>
           <li><a href="#most-common-google-ads-audit-mistakes" className="block py-1 text-base text-gray-700 hover:text-primary underline">The most common Google Ads audit mistakes</a></li>
@@ -89,16 +98,19 @@ export default function GoogleAdsAuditGuideEN() {
       </p>
       <p>
         A Google Ads audit isn&apos;t just a list of things that &quot;don&apos;t work&quot; — it&apos;s a systematic diagnostic that pinpoints <strong>where you&apos;re losing money and where you&apos;re missing growth opportunities</strong>. The average account that hasn&apos;t been optimized for 6+ months wastes 15-25% of its budget outright. That waste can be eliminated in the first week after the audit. If you&apos;d rather have it done for you, see my{" "}
-        <Link href="/usluge/google-ads-audit" className="underline font-semibold">Google Ads audit service</Link>, which covers the same 80+ checkpoints below.
+        <Link href="/usluge/google-ads-audit" className="underline font-semibold">Google Ads audit service</Link>, which covers the same 100+ checkpoints below.
       </p>
       <p>
         Updated August 2026: this checklist still holds up in the Performance Max and AI Max era, where those campaign types blend Search, Shopping, and Display signals into one automated unit, so audit them separately from standard Search campaigns and treat each asset group the way you&apos;d treat an ad group — one theme, not a dumping ground.
+      </p>
+      <p>
+        One distinction worth making before you start: a <strong>full account audit</strong> covers every campaign end to end, while a <strong>single campaign audit</strong> narrows the same checklist to one campaign, useful when you&apos;re troubleshooting a specific launch or handed a partial account by a client. The 12 categories below apply either way, you&apos;re just choosing the scope.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">When to run a Google Ads audit</p>
         <p className="text-blue-800 text-base mb-0">
-          <strong>A quarterly deep audit</strong> (2-4 hours, all 10 categories) + <strong>a monthly quick check</strong> (30 min, 7 priority points). On top of that, audit immediately if performance suddenly drops, you&apos;re taking over an account from a previous agency, you&apos;re changing your business model, or you&apos;re launching a new campaign.
+          <strong>A quarterly deep audit</strong> (2-4 hours, all 12 categories) + <strong>a monthly quick check</strong> (30 min, 7 priority points). On top of that, audit immediately if performance suddenly drops, you&apos;re taking over an account from a previous agency, you&apos;re changing your business model, or you&apos;re launching a new campaign.
         </p>
       </div>
 
@@ -110,7 +122,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <h2 id="what-a-good-google-ads-audit-covers">What a good Google Ads audit covers</h2>
       <p>
-        A professional Google Ads audit isn&apos;t improvised — it&apos;s a structured checklist of 80+ checkpoints divided into 10 key categories. Each category has priority items (critical for performance) and optimization items (additional improvements for advanced accounts).
+        A professional Google Ads audit isn&apos;t improvised — it&apos;s a structured checklist of 100+ checkpoints divided into 12 key categories. Each category has priority items (critical for performance) and optimization items (additional improvements for advanced accounts).
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -164,11 +176,38 @@ export default function GoogleAdsAuditGuideEN() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">10. Scripts and automation</h3>
           <p className="text-base text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations — including <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> for offline changes</p>
         </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Feed &amp; automation</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">11. Shopping and Performance Max</h3>
+          <p className="text-base text-gray-600 mb-0">Feed disapprovals, GTIN/MPN coverage, asset group theming, PMax search term insights</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Conversion path</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">12. Landing pages</h3>
+          <p className="text-base text-gray-600 mb-0">Offer match, mobile Core Web Vitals, single CTA above the fold, page-level CVR</p>
+        </div>
       </div>
 
       <p>
         Each category is scored from 1 to 5 and gets a prioritized action plan. At the end of the audit you have a clear picture of where the account stands, what to fix urgently, and what impact to expect from each optimization.
       </p>
+
+      <div id="get-the-checklist" className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-8 my-8 shadow-card scroll-mt-24">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Free download</p>
+        <p className="text-lg md:text-xl text-gray-900 font-heading font-semibold mb-3">
+          Get the Google Ads Audit Checklist (.xlsx)
+        </p>
+        <p className="text-base text-gray-700 mb-4 leading-relaxed">
+          Same methodology as this guide, extended to 105 checkpoints across 12 categories, in one Excel file (.xlsx) you can open directly in Excel or import into Google Sheets. Every checkpoint gets a how-to-check column, a red-flag column, a priority (P1-P3), a status field, and space for notes. Copy it, run it on your own account, and see exactly where the 15-25% waste I mentioned above is hiding.
+        </p>
+        <ul className="text-base text-gray-700 mb-6">
+          <li>105 checkpoints organized into 12 categories, using the same methodology as this guide</li>
+          <li>A separate EN tab and SR tab in the same file</li>
+          <li>Columns for how to check, red flag, priority (P1-P3), status, and notes on every item</li>
+          <li>A separate &quot;Quick 30-minute audit&quot; tab for monthly check-ins between deep audits</li>
+        </ul>
+        <ChecklistDownloadForm />
+      </div>
 
       <hr />
 
@@ -266,6 +305,14 @@ export default function GoogleAdsAuditGuideEN() {
       <p>
         For a detailed guide on setting up tracking and troubleshooting problems, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }}>Conversion Tracking for Google Ads</Link>.
       </p>
+
+      <div className="bg-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-2">Get a second opinion</p>
+        <p className="text-lg text-gray-900 font-heading font-semibold mb-4 leading-snug">
+          Not sure your own conversion data can be trusted? I check tag accuracy, GA4 reconciliation, and Enhanced Conversions setup personally, as part of the Deep Audit + Action Plan. From $500.
+        </p>
+        <Link href="/usluge/google-ads-audit" className="btn-primary inline-block">See what the audit covers →</Link>
+      </div>
 
       <hr />
 
@@ -574,6 +621,240 @@ export default function GoogleAdsAuditGuideEN() {
 
       <hr />
 
+      <h2 id="category-9-reporting-and-analytics">Category 9: Reporting and analytics</h2>
+      <p>
+        The Google Ads interface only shows part of the picture. Without GA4 reconciliation, a sensible attribution model, and regular segment reporting, you&apos;re optimizing blind — you can see that something is spending budget, but not why, or for whom it&apos;s actually working.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>GA4 linked and receiving data</strong> <span className="text-gray-500">— Account settings &gt; Linked accounts. Confirm the GA4 property is linked and conversions/audiences are importing cleanly</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Attribution model matches the actual sales path</strong> <span className="text-gray-500">— Data-driven is the default, but for low-conversion accounts check whether the model has enough data to be reliable</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>Segment reports reviewed regularly</strong> <span className="text-gray-500">— By device, audience, and location. Aggregate numbers hide which slices are actually profitable</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>Discrepancies between Google Ads and GA4/CRM investigated</strong> <span className="text-gray-500">— A gap bigger than 15-20% signals a tracking or attribution problem, not just &quot;platforms count differently&quot;</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>A custom report or dashboard exists for recurring review</strong> <span className="text-gray-500">— A saved report or a Looker Studio dashboard, so you&apos;re not rebuilding the same pivot table every month</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <div><strong>Auto-tagging enabled (GCLID)</strong> <span className="text-gray-500">— Manual UTM tagging without auto-tagging breaks GA4&apos;s attribution matching</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">7</span>
+            <div><strong>Change History reviewed against unexplained performance shifts</strong> <span className="text-gray-500">— The Change History tab shows exactly what changed and when; correlate it with a dip or spike in performance</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
+        <p className="font-heading font-semibold text-lg mb-0">Red flag: GA4 isn&apos;t linked or hasn&apos;t synced in 30+ days, a 20%+ gap between platforms has never been investigated, or there&apos;s no recurring reporting cadence — just an ad-hoc look whenever something breaks.</p>
+      </div>
+
+      <hr />
+
+      <h2 id="category-10-scripts-and-automation">Category 10: Scripts and automation</h2>
+      <p>
+        Automation only saves time when it does exactly what you think it does. Automated rules and scripts running quietly in the background are a common source of trouble — nobody notices until they stop working, or until they do something you never planned.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>Automated rules checked for correctness</strong> <span className="text-gray-500">— Rules tab. A rule that pauses keywords by CPA threshold with no minimum click floor can pause half the account on a slow day</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Scripts running without silent failures</strong> <span className="text-gray-500">— Scripts &gt; execution log. A script that&apos;s been erroring out for weeks with nobody noticing defeats the point of automating it</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>Budget or anomaly alerts configured</strong> <span className="text-gray-500">— Recommendations or a custom script that flags overspend or a conversion drop the same day, not a week later</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>Bulk operations logged and reversible</strong> <span className="text-gray-500">— Editor changes should go through version history/drafts, so a bad bulk upload can be rolled back</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>API access considered for repetitive reporting or optimization tasks</strong> <span className="text-gray-500">— If you&apos;re exporting the same report by hand every week, that&apos;s a signal to automate it through the API. See our <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }}>Google Ads API access guide</Link></span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <div><strong>Ads Editor used for structural changes, not just one-off edits</strong> <span className="text-gray-500">— Bulk find &amp; replace, copy/paste changes across campaigns at once</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
+        <p className="font-heading font-semibold text-lg mb-0">Red flag: automated rules with no minimum thresholds (pausing half the account overnight), scripts failing silently for weeks, or the same report exported by hand every week with zero automation in place.</p>
+      </div>
+
+      <hr />
+
+      <h2 id="category-11-shopping-and-performance-max">Category 11: Shopping and Performance Max</h2>
+      <p>
+        Performance Max blends Search, Shopping, and Display signals into one automated campaign type, and the audit checklist for it is different from standard Search. If you run Shopping or PMax, this is where I usually find the most silent budget waste, because a broken feed doesn&apos;t throw an error in your face, it just quietly caps your impressions.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>No critical Merchant Center disapprovals</strong> <span className="text-gray-500">— Products &gt; Diagnostics; disapproved products eating into a meaningful share of the catalog or spend need fixing first</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Feed titles and descriptions carry real attributes</strong> <span className="text-gray-500">— Sample 10-20 product titles: brand, size, and color should be there, not just a generic SKU code</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>GTINs/MPNs present where required</strong> <span className="text-gray-500">— Missing identifiers on a branded catalog cap Shopping eligibility and PMax matching quality</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>Asset groups follow one theme each</strong> <span className="text-gray-500">— Treat every asset group the way you&apos;d treat an ad group, not a dumping ground for the whole catalog</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>Search term insights reviewed for brand cannibalization</strong> <span className="text-gray-500">— PMax &gt; Insights &gt; Search terms; PMax shouldn&apos;t be winning branded queries a cheaper Search brand campaign should capture</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <div><strong>Feed-only vs full-asset PMax matches the business model</strong> <span className="text-gray-500">— A lead-gen account shouldn&apos;t be running full-asset PMax built for eCommerce logic, or the reverse</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">7</span>
+            <div><strong>Products segmented by performance tier</strong> <span className="text-gray-500">— Sort by ROAS/spend in Merchant Center or Ads reporting; low-margin products shouldn&apos;t share bid priority with bestsellers</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">8</span>
+            <div><strong>Price and availability data fresh</strong> <span className="text-gray-500">— Check the &quot;Last updated&quot; timestamp; a feed that hasn&apos;t refreshed in days risks price-mismatch disapprovals or lost sales</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">9</span>
+            <div><strong>New customer acquisition goal configured where relevant</strong> <span className="text-gray-500">— If you pay a CAC premium, this bidding signal is worth setting</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">10</span>
+            <div><strong>Final URL expansion reviewed</strong> <span className="text-gray-500">— Left on with no exclusions, it can send traffic to pages outside the funnel you actually planned</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
+        <p className="font-heading font-semibold text-lg mb-0">Red flag: disapproved products are sitting untouched in Merchant Center, one asset group covers the entire catalog with generic assets, or PMax search term insights show it winning branded queries your Search brand campaign should own for less.</p>
+      </div>
+
+      <div className="bg-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-2">Skip the DIY marathon</p>
+        <p className="text-lg text-gray-900 font-heading font-semibold mb-4 leading-snug">
+          If working through this makes you wonder how many of these 100+ checkpoints your account is actually failing, that&apos;s exactly what the audit answers. I go through every category personally and hand you a prioritized action plan. From $500.
+        </p>
+        <Link href="/usluge/google-ads-audit" className="btn-primary inline-block">Get a professional audit →</Link>
+      </div>
+
+      <hr />
+
+      <h2 id="category-12-landing-pages">Category 12: Landing pages</h2>
+      <p>
+        This category is smaller than the others, 7 checkpoints, but it&apos;s where account-level metrics and page-level reality meet. A perfectly structured account with clean tracking and a 5/5 Quality Score still fails if the page you&apos;re sending paid traffic to doesn&apos;t convert, and that&apos;s a gap an in-platform Google Ads audit alone can&apos;t catch.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>Destination URL matches the promoted offer</strong> <span className="text-gray-500">— Click through 5-10 top ads and confirm the landing page matches the headline, not the generic homepage</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Fast on mobile (Core Web Vitals)</strong> <span className="text-gray-500">— Run PageSpeed Insights or check Search Console (official definition: <a href="https://web.dev/articles/lcp" target="_blank" rel="noopener noreferrer">web.dev/articles/lcp</a>); mobile LCP over roughly 4 seconds on a page taking paid traffic is a problem</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>Mobile-friendly and matched to the device split</strong> <span className="text-gray-500">— Open the page on an actual phone; a broken mobile layout despite heavy mobile traffic is money burned</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>One clear CTA above the fold</strong> <span className="text-gray-500">— View the page as a first-time visitor; 4+ competing CTAs (or none above the fold) confuses the decision</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>CVR benchmarked against other pages</strong> <span className="text-gray-500">— Goals &gt; Conversions, segment by landing page; a high-spend page converting well below similar-quality traffic is a red flag</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <div><strong>Trust signals present</strong> <span className="text-gray-500">— A quick visual scan for reviews, guarantees, and security badges on any page asking for payment or personal data</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">7</span>
+            <div><strong>A/B test or iteration history exists</strong> <span className="text-gray-500">— If the lowest-converting page has never been tested or revised, that&apos;s the next thing to fix, not to pause the campaign feeding it</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
+        <p className="font-heading font-semibold text-lg mb-0">Red flag: the ad promises one thing and the landing page shows another, mobile Core Web Vitals fail on a page taking paid traffic, or the page has never been tested despite converting worse than every other page in the account.</p>
+      </div>
+
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-8 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Free download</p>
+        <p className="text-lg md:text-xl text-gray-900 font-heading font-semibold mb-3">
+          You just read all 12 categories. Turn them into a working copy.
+        </p>
+        <p className="text-base text-gray-700 mb-6 leading-relaxed">
+          Same checklist, as an Excel file (.xlsx) you can open in Excel or import into Google Sheets — extended to 105 checkpoints with priority (P1-P3), status, and notes columns, so you don&apos;t have to hold them all in your head.
+        </p>
+        <a href="#get-the-checklist" className="btn-primary inline-block">Get the free checklist &#8593;</a>
+      </div>
+
+      <hr />
+
+      <h2 id="five-minute-daily-check">A 5-minute daily check</h2>
+      <p>
+        The 30-minute monthly audit below and the quarterly deep audit above both assume you&apos;re looking back at a stretch of data. In practice, if you&apos;re spending roughly $100+ a day, it&apos;s worth adding a 5-minute daily glance on top — these five checks catch problems the monthly check would only find two weeks too late.
+      </p>
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>Budget pacing on track</strong> <span className="text-gray-500">— Is today&apos;s spend roughly where it should be, or did a campaign burn its daily budget by noon?</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>New disapprovals</strong> <span className="text-gray-500">— Ads, assets, or Shopping products flagged since yesterday (Recommendations page or Merchant Center diagnostics)</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>Cost or conversion anomalies</strong> <span className="text-gray-500">— A sudden spike or a flatline versus the same weekday last week is worth a look before it compounds</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>Conversions in the last 24 hours</strong> <span className="text-gray-500">— Are they showing up at all? This is the fastest way to notice tracking has stopped working</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>Active campaign status</strong> <span className="text-gray-500">— Did a campaign get accidentally paused, or re-enabled without anyone meaning to?</span></div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
       <h2 id="quick-google-ads-audit-in-30-minutes">A quick Google Ads audit in 30 minutes</h2>
       <p>
         If you don&apos;t have 2-4 hours for a full audit, this 30-minute check covers 80% of the most critical issues. I recommend running it monthly, between quarterly deep audits.
@@ -674,7 +955,7 @@ export default function GoogleAdsAuditGuideEN() {
       </div>
 
       <p>
-        The <strong>Overall Account Health Score</strong> is the average of all 10 categories. A score of 3.5 or higher means the account is in solid shape. Below 3.0 means there are priority problems actively wasting budget.
+        The <strong>Overall Account Health Score</strong> is the average of all 12 categories. A score of 3.5 or higher means the account is in solid shape. Below 3.0 means there are priority problems actively wasting budget.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -749,7 +1030,7 @@ export default function GoogleAdsAuditGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            <p className="mb-0">I recommend a <strong>quarterly deep audit</strong> (2-4 hours, all 10 categories and 80+ checkpoints) plus a <strong>monthly quick audit</strong> (30 minutes, 8 priority checkpoints). Also run an audit immediately if: (1) performance suddenly drops, (2) you&apos;re taking over an account from another agency, (3) you&apos;re launching new products or services, or (4) you&apos;re changing your business model.</p>
+            <p className="mb-0">I recommend a <strong>quarterly deep audit</strong> (2-4 hours, all 12 categories and 100+ checkpoints) plus a <strong>monthly quick audit</strong> (30 minutes, 8 priority checkpoints). Also run an audit immediately if: (1) performance suddenly drops, (2) you&apos;re taking over an account from another agency, (3) you&apos;re launching new products or services, or (4) you&apos;re changing your business model.</p>
           </div>
         </details>
 
@@ -769,13 +1050,7 @@ export default function GoogleAdsAuditGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            <p className="mb-3">Prices range from $300 to $2,500+ depending on account size, number of campaigns, and audit depth.</p>
-            <ul className="text-sm mb-0">
-              <li><strong>Basic audit</strong> (small account, 2-3 campaigns, 1 market): $300-500</li>
-              <li><strong>Standard audit</strong> (medium account, 5-10 campaigns, 1-2 markets): $600-1,200</li>
-              <li><strong>Deep audit</strong> (large account, 10+ campaigns, multi-market, complete diagnostics): $1,200-2,500+</li>
-            </ul>
-            <p className="mt-3 mb-0">If your monthly ad spend is $8K+, a professional audit pays for itself: on average it uncovers 15-25% wasted spend that can be eliminated in the first month.</p>
+            <p className="mb-0">Prices start <strong>from $500</strong> — that&apos;s my Deep Audit + Action Plan, where I personally go through the account and hand you a prioritized action plan (see <Link href="/usluge/google-ads-audit" className="underline">what the audit covers</Link>). The final price depends on account size, number of campaigns, and number of markets. If your monthly ad spend is $8K+, the investment typically pays for itself in the first month — audits find 15-25% wasted spend on average.</p>
           </div>
         </details>
 
@@ -838,7 +1113,7 @@ export default function GoogleAdsAuditGuideEN() {
       </p>
 
       <p>
-        This guide covers the 80+ checkpoints across 10 categories that I&apos;ve personally used on 50+ accounts over the past several years. Not everything applies to every business — if you don&apos;t run eCommerce, skip conversion value tracking — but the basics (conversion tracking, search terms, budget allocation, ad quality) are universal across industries.
+        This guide covers the 100+ checkpoints across 12 categories that I&apos;ve personally used on 50+ accounts over the past several years. Not everything applies to every business — if you don&apos;t run eCommerce, skip conversion value tracking and the Shopping category entirely — but the basics (conversion tracking, search terms, budget allocation, ad quality) are universal across industries.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
@@ -853,10 +1128,17 @@ export default function GoogleAdsAuditGuideEN() {
         To continue optimizing after the audit, read: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimization" } }}>Google Ads optimization guide</Link> and <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-mistakes" } }}>Most common Google Ads mistakes</Link>.
       </p>
 
-      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
-        <p className="font-heading font-bold text-xl md:text-2xl mb-3">Need a professional Google Ads audit?</p>
-        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">I audit accounts of all sizes — from startups to enterprise clients. You get an 80+ checkpoint audit report, a prioritized action plan, implementation recommendations, and a follow-up consultation.</p>
-        <Link href="/kontakt" className="btn-secondary inline-block">Schedule a free consultation</Link>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+        <div className="bg-white border-2 border-blue-200 rounded-xl p-6 md:p-8 shadow-card text-center flex flex-col justify-center">
+          <p className="font-heading font-bold text-lg md:text-xl mb-3 text-gray-900">Prefer to do it yourself?</p>
+          <p className="text-gray-600 text-base mb-5">Grab the free checklist as an Excel file and work through all 100+ checkpoints at your own pace.</p>
+          <a href="#get-the-checklist" className="btn-primary inline-block">Get the free checklist</a>
+        </div>
+        <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-card text-center flex flex-col justify-center">
+          <p className="font-heading font-bold text-lg md:text-xl mb-3">Or let me run it for you</p>
+          <p className="text-slate-300 text-base mb-5">I audit accounts of all sizes, from startups to enterprise clients. You get a 100+ checkpoint audit report, a prioritized action plan, and a follow-up consultation. From $500.</p>
+          <Link href="/usluge/google-ads-audit" className="btn-secondary inline-block">See the Deep Audit + Action Plan</Link>
+        </div>
       </div>
 
       <hr />

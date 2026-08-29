@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Ads Management — Senior Runs Your Account | Slobodan Jelisavac"
-      : "Vođenje Google Ads Kampanja - Senior Na Vašem Nalogu | Slobodan Jelisavac",
+      : "Google Ads Usluge - Vođenje Kampanja sa Seniorom | Slobodan Jelisavac",
     description: isEn
       ? "I personally run Google Ads accounts for eCommerce and B2B - 10+ years, 3.7x average ROAS, UK and US markets. No junior handoffs. From $2,500/month. Book a free consultation."
-      : "Deset godina lično vodim Google Ads naloge za eCommerce i B2B - od srpskih firmi do UK brendova. Bez juniora na vašem nalogu. Od €700/mes. Zakažite besplatnu konsultaciju.",
+      : "Google Ads usluge iz jedne ruke - deset godina lično vodim naloge za eCommerce i B2B. Bez juniora na nalogu, vođenje kampanja od €700 mesečno.",
     locale,
     path: "/services/google-ads-management",
     srPath: "/usluge/google-ads-upravljanje",
@@ -95,11 +95,6 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               "Understanding your business model, margins, ideal customers, and competition — before spending a single euro on ads."
           },
           {
-            title: "Custom campaign structure",
-            description:
-              "Campaigns tailored to your goals, whether the focus is ROAS, CPA, lead quality, or brand awareness."
-          },
-          {
             title: "Proactive optimization",
             description:
               "I track signals and react before they impact performance. Daily analysis, not monthly."
@@ -108,6 +103,11 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             title: "Transparent reporting",
             description:
               "You know exactly where every euro goes and what you get in return. No hidden metrics or vague reports."
+          },
+          {
+            title: "Custom campaign structure",
+            description:
+              "Campaigns tailored to your goals, whether the focus is ROAS, CPA, lead quality, or brand awareness."
           }
         ]
       : [
@@ -115,11 +115,6 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             title: "Dubinska analiza pre početka",
             description:
               "Razumevanje vašeg biznis modela, marži, idealnih kupaca i konkurencije - pre nego što potrošim i jedan dinar na oglase."
-          },
-          {
-            title: "Struktura kampanja po meri",
-            description:
-              "Kampanje prilagođene vašim ciljevima, bilo da je fokus na ROAS, CPA, lead quality ili brand awareness."
           },
           {
             title: "Proaktivna optimizacija",
@@ -130,6 +125,11 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             title: "Transparentan reporting",
             description:
               "Tačno znate gde ide svaki EUR i šta dobijate zauzvrat. Bez skrivenih metrika ili nejasnih izveštaja."
+          },
+          {
+            title: "Struktura kampanja po meri",
+            description:
+              "Kampanje prilagođene vašim ciljevima, bilo da je fokus na ROAS, CPA, lead quality ili brand awareness."
           }
         ];
 
@@ -393,7 +393,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           { value: "3x", label: "UK Search Awards" }
         ];
 
-  const faqs =
+  const faqs: { question: string; answer: string; answerRich?: ReactNode }[] =
     locale === "en"
       ? [
           {
@@ -454,6 +454,25 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               "Prve optimizacije sprovodim odmah po preuzimanju naloga. Značajna poboljšanja dolaze nakon 4-6 nedelja, a za punu optimizaciju računajte 2-3 meseca. Razlog: Google-ovom algoritmu treba vreme da nauči i prilagodi se."
           },
           {
+            question: "Da li je ovo isto što i Google Ads agencija?",
+            answer:
+              "Nije potpuno isto. Ova stranica opisuje obim usluge - šta tačno radim na vašem nalogu svakog meseca. Ako birate između modela saradnje (agencija, freelancer, in-house), tu odluku najbolje rešava Google Ads agencija stranica.",
+            answerRich: (
+              <>
+                Nije potpuno isto. Ova stranica opisuje obim usluge - šta tačno radim
+                na vašem nalogu svakog meseca. Ako birate između modela saradnje
+                (agencija, freelancer, in-house), tu odluku najbolje rešava{" "}
+                <Link
+                  href="/usluge/google-ads-agencija"
+                  className="text-primary underline"
+                >
+                  Google Ads agencija stranica
+                </Link>
+                .
+              </>
+            )
+          },
+          {
             question: "Da li morate imati pristup mom Google Ads nalogu?",
             answer:
               "Da, potreban je admin pristup kako bih mogao da sprovodim sve neophodne izmene. Nalog ostaje u vašem vlasništvu - ja dobijam pristup kroz MCC (My Client Center)."
@@ -497,6 +516,11 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
             question: "Kako konkretno izgleda onboarding?",
             answer:
               "Nakon besplatnog poziva i audita naloga, tražim MCC pristup, dogovaramo KPI-jeve i dinamiku reportinga, pa implementiram strategiju u prve 1-2 nedelje. Dobijate zajednički dokument sa ciljevima, rokovima i checklist-om pristupa pre nego što krenemo - bez iznenađenja."
+          },
+          {
+            question: "Koje Google Ads usluge tačno dobijam kroz mesečno vođenje kampanja?",
+            answer:
+              "Strategiju i planiranje, setup i implementaciju, svakodnevnu optimizaciju, tracking i mesečni izveštaj - sve iz jedne ruke, bez podele na posebne pakete koje neke agencije prodaju odvojeno."
           }
         ];
 
@@ -554,8 +578,9 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           "@context": "https://schema.org",
           "@type": "Service",
           name: "Google oglašavanje - upravljanje Google Ads nalogom",
+          alternateName: "Google Ads usluge",
           description:
-            "Profesionalno Google oglašavanje i upravljanje Google Ads nalogom za eCommerce i B2B kompanije u Srbiji, UK i EU. Search, Shopping, Performance Max, Display i YouTube kampanje.",
+            "Profesionalne Google Ads usluge - vođenje i upravljanje Google Ads kampanjama za eCommerce i B2B kompanije u Srbiji, UK i EU. Search, Shopping, Performance Max, Display i YouTube kampanje.",
           provider: {
             "@type": "Person",
             name: "Slobodan Jelisavac",
@@ -703,6 +728,11 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           </nav>
 
           <div className="max-w-3xl">
+            {locale !== "en" && (
+              <p className="text-xs uppercase tracking-wider text-slate-400 mb-3">
+                Google Ads usluge
+              </p>
+            )}
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {locale === "en"
                 ? "Google Ads management where a senior runs your account — not a team of juniors"
@@ -804,56 +834,51 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         </div>
       </section>
 
-      {/* Problem — PAS framework */}
+      {/* Problem → Solution pairs */}
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
             {locale === "en"
-              ? "Do you recognize these challenges?"
-              : "Da li prepoznajete ove izazove?"}
+              ? "Google Ads management: from problem to solution"
+              : "Od problema do rešenja"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
-              ? "Most companies that come to me for Google Ads management have similar campaign issues."
-              : "Većina kompanija koje dolaze do mene za upravljanje Google oglašavanjem ima slične probleme sa kampanjama."}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {problems.map((problem) => (
-            <Card key={problem.title} className="h-full">
-              <div className="mb-3">{problem.icon}</div>
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {problem.title}
-              </h3>
-              <p className="text-gray-600 text-base">{problem.description}</p>
-            </Card>
-          ))}
-        </div>
-      </Section>
-
-      {/* Solution */}
-      <Section background="gray">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "What you get with professional Google Ads management"
-              : "Šta dobijate sa profesionalnim Google oglašavanjem"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Strategic approach to campaigns, not just account setup. Every decision is data-driven and aligned with your business goals."
-              : "Strategijski pristup kampanjama, ne samo podešavanja u nalogu. Svaka odluka je zasnovana na podacima i vašim poslovnim ciljevima."}
+              ? "The issues I see most often on Google Ads accounts — and how professional management fixes each one."
+              : "Problemi sa kojima se najčešće susrećem na Google Ads nalozima - i kako ih profesionalno vođenje kampanja rešava."}
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
-          {solutions.map((solution) => (
-            <Card key={solution.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {solution.title}
-              </h3>
-              <p className="text-gray-600">{solution.description}</p>
-            </Card>
-          ))}
+          {problems.map((problem, index) => {
+            const solution = solutions[index];
+            return (
+              <Card key={problem.title} className="h-full">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="flex-shrink-0">{problem.icon}</div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-gray-400 mb-1">
+                      {locale === "en" ? "Problem" : "Problem"}
+                    </p>
+                    <h3 className="text-lg font-heading font-semibold">
+                      {problem.title}
+                    </h3>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-base mb-4">
+                  {problem.description}
+                </p>
+                <div className="border-t border-gray-100 pt-4">
+                  <p className="text-xs uppercase tracking-wider text-primary mb-1">
+                    {locale === "en" ? "Solution" : "Rešenje"}
+                  </p>
+                  <h4 className="font-heading font-semibold mb-1">
+                    {solution.title}
+                  </h4>
+                  <p className="text-gray-600 text-sm">{solution.description}</p>
+                </div>
+              </Card>
+            );
+          })}
         </div>
       </Section>
 
@@ -863,7 +888,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           <h2 className="text-3xl font-heading font-bold mb-4">
             {locale === "en"
               ? "What's included in Google Ads management"
-              : "Šta uključuje upravljanje Google Ads nalogom"}
+              : "Šta uključuje usluga vođenja Google Ads kampanja"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
@@ -949,7 +974,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           <h2 className="text-3xl font-heading font-bold mb-4">
             {locale === "en"
               ? "Who is this service for"
-              : "Za koga je ova usluga"}
+              : "Kome je namenjena ova Google Ads usluga"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             {locale === "en"
@@ -1265,7 +1290,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
                 </span>
               </summary>
               <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-                {faq.answer}
+                {faq.answerRich ?? faq.answer}
               </div>
             </details>
           ))}

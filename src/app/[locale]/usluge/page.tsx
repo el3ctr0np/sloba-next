@@ -85,7 +85,7 @@ export default async function ServicesPage({ params }: Props) {
     {
       title: "Google Ads upravljanje",
       href: "/usluge/google-ads-upravljanje",
-      desc: "Strategija, setup i svakodnevna optimizacija naloga sa fokusom na ROAS i realan rast prihoda.",
+      desc: "Vođenje Google Ads kampanja - strategija, setup i svakodnevna optimizacija sa fokusom na ROAS i realan rast prihoda.",
       badge: "Najpopularnija"
     },
     {
@@ -337,7 +337,7 @@ export default async function ServicesPage({ params }: Props) {
     }
   ];
 
-  const faqs = locale === "en" ? [
+  const faqs: { q: string; a: string; aRich?: ReactNode }[] = locale === "en" ? [
     {
       q: "How much does a Google Ads consultant cost?",
       a: "Pricing depends on account scope and budget. A one-off consultation is $200/hour. A deep audit with a written action plan starts from $500. Monthly account management starts from $2,500/month, scaling with ad spend and complexity. No hidden fees — you get an exact number after I've reviewed the account, not a promised outcome upfront."
@@ -373,7 +373,24 @@ export default async function ServicesPage({ params }: Props) {
     },
     {
       q: "Koja je razlika između konsultanta i agencije?",
-      a: "Radite direktno sa senior ekspertom koji lično vodi vaš nalog - nema juniora koji uči na vašem budžetu, nema account managera kao posrednika između vas i osobe koja stvarno radi optimizaciju. Nema ni dugoročnog lock-in ugovora koji vas vezuje ako saradnja ne funkcioniše. Manje slojeva znači brže odluke i direktnu odgovornost."
+      a: "Radite direktno sa senior ekspertom koji lično vodi vaš nalog - nema juniora koji uči na vašem budžetu, nema account managera kao posrednika. Vođenje Google Ads kampanja opisuje obim usluge, a Google Ads agencija opisuje model saradnje ako birate između agencije, freelancera i in-house tima. Manje slojeva znači brže odluke i direktnu odgovornost.",
+      aRich: (
+        <>
+          Radite direktno sa senior ekspertom koji lično vodi vaš nalog - nema
+          juniora koji uči na vašem budžetu, nema account managera kao
+          posrednika.{" "}
+          <Link href="/usluge/google-ads-upravljanje" className="text-primary underline">
+            Vođenje Google Ads kampanja
+          </Link>{" "}
+          opisuje obim usluge, a{" "}
+          <Link href="/usluge/google-ads-agencija" className="text-primary underline">
+            Google Ads agencija
+          </Link>{" "}
+          opisuje model saradnje ako birate između agencije, freelancera i
+          in-house tima. Manje slojeva znači brže odluke i direktnu
+          odgovornost.
+        </>
+      )
     },
     {
       q: "Šta je POAS i zašto ga pratite umesto ROAS-a?",
@@ -949,7 +966,7 @@ export default async function ServicesPage({ params }: Props) {
                 </span>
               </summary>
               <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-                {faq.a}
+                {faq.aRich ?? faq.a}
               </div>
             </details>
           ))}

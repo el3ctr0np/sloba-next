@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Google Ads Agencija Srbija - Senior Vodi Vaš Nalog | Slobodan Jelisavac",
     description: isEn
       ? "I run a senior-led boutique Google Ads agency personally — no junior account managers, transparent reporting, you own the account. 3.7x average ROAS (eCommerce), 3x UK Search Awards. From $2,500/month."
-      : "Vodim boutique Google Ads agenciju lično - bez junior account managera, transparentan izveštaj, vi ste vlasnik naloga. 3.7x prosečan ROAS (eCommerce), 3x UK Search Awards. Vođenje kampanja od €700/mes.",
+      : "Agencija za Google Ads koju lično vodim - bez junior account managera. Vođenje kampanja od €700/mes, vi ste vlasnik naloga, transparentan izveštaj.",
     locale,
     path: "/services/google-ads-agency",
     srPath: "/usluge/google-ads-agencija",
@@ -318,9 +318,9 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
       ]
     : [
         {
-          question: "Google Ads agencija ili Google Ads stručnjak - šta vam treba?",
+          question: "Šta znači agencija za Google Ads kad je iza nje jedan čovek - i treba li vam agencija ili stručnjak?",
           answer:
-            "Ako vam treba deset usluga i ceo tim, treba vam agencija. Ako vam treba da Google Ads radi kako treba, treba vam stručnjak koji nalog vodi lično. Ja sam ovo drugo: senior sa 10+ godina iskustva, bez junior sloja. A kad posao preraste jedan kanal, uključujem Funky Enterprises tim - pa dobijete oba."
+            "Ako vam treba deset usluga i ceo tim, treba vam agencija. Ako vam treba da Google Ads radi kako treba, treba vam stručnjak koji nalog vodi lično. Ja sam ovo drugo: senior sa 10+ godina iskustva, bez junior sloja. Reč agencija ovde znači proces i pouzdanost, ne broj ljudi za stolom - ugovor, dokumentovan proces i onboarding checklist, mesečni izveštaj koji se čita, nalog koji ostaje u vlasništvu klijenta. Razlika između agencije i freelancera nije veličina tima nego postojanje sistema iza jedne osobe. A kad posao preraste jedan kanal, uključujem Funky Enterprises tim - pa dobijete oba."
         },
         {
           question: "Koliko košta Google Ads agencija u Srbiji?",
@@ -416,6 +416,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
         "@context": "https://schema.org",
         "@type": "Service",
         name: "Google Ads agencija - senior-led boutique",
+        alternateName: "Agencija za Google Ads",
         description:
           "Boutique Google Ads agencija koju lično vodi Slobodan Jelisavac. Transparentan izveštaj, vlasništvo naloga ostaje kod klijenta, bez junior account managera. Search, Shopping, Performance Max i remarketing za eCommerce i B2B u Srbiji, UK i EU.",
         provider: {
@@ -566,20 +567,20 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
               {isEn ? (
                 <>
-                  I run a{" "}
-                  <strong className="text-white">senior-led boutique Google Ads agency</strong>{" "}
-                  — every account managed personally by me, Slobodan Jelisavac. Serbia-based,
-                  working with eCommerce and B2B brands across the UK, EU, and US. No junior
-                  account managers, no black-box reporting, and you own your account. Focus:{" "}
+                  Choosing a Google Ads agency is really a choice of{" "}
+                  <strong className="text-white">collaboration model</strong> — big agency,
+                  freelancer, or boutique. I run a senior-led boutique Google Ads agency:
+                  the directness of a freelancer with the process and reliability of an
+                  agency, for eCommerce and B2B brands across the UK, EU, and US. Focus:{" "}
                   <strong className="text-white">profit, not ROAS theatre</strong>.
                 </>
               ) : (
                 <>
-                  Vodim{" "}
-                  <strong className="text-white">senior boutique Google Ads agenciju</strong>{" "}
-                  - svaki nalog vodim lično. Za eCommerce i B2B kompanije u Srbiji, regionu
-                  i inostranstvu. Bez junior account managera, bez izveštaja iz crne kutije, i vi ste
-                  vlasnik svog naloga. Fokus:{" "}
+                  Izbor Google Ads agencije je zapravo izbor{" "}
+                  <strong className="text-white">modela saradnje</strong> - velika agencija,
+                  freelancer ili boutique. Vodim senior boutique Google Ads agenciju:
+                  direktnost freelancera uz proces i pouzdanost agencije, za eCommerce i B2B
+                  kompanije u Srbiji, regionu i inostranstvu. Fokus:{" "}
                   <strong className="text-white">profit, ne ROAS teatar</strong>.
                 </>
               )}
@@ -689,6 +690,11 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
       {/* Comparison — boutique vs big agency vs freelancer */}
       <Section background="gray">
         <div className="text-center mb-10">
+          {!isEn && (
+            <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
+              Agencija za Google Ads
+            </p>
+          )}
           <h2 className="text-3xl font-heading font-bold mb-4">
             {isEn
               ? "Boutique agency vs big agency vs freelancer"

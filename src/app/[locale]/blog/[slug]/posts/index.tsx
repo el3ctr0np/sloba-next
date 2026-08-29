@@ -579,12 +579,12 @@ const srPosts: PostData[] = [
     slug: "google-ads-audit-vodic",
     title: "Google Ads Audit: Kompletan Checklist [2026]",
     date: "2026-01-27",
-    dateModified: "2026-07-12",
+    dateModified: "2026-08-29",
     category: "Google Ads audit",
     metaDescription:
-      "Detaljni Google Ads audit checklist sa 80+ tačaka za proveru. Pronađite probleme, optimizujte kampanje, i poboljšajte ROI.",
+      "Google Ads audit checklist sa 100+ tačaka u 12 kategorija + template za preuzimanje (Excel/Google Sheets). Pronađite gde curi budžet pre nego što platite audit.",
     featuredImage: "/blog/google-ads-audit-vodic.webp",
-    readingTime: "16 min",
+    readingTime: "19 min",
     content: <GoogleAdsAuditSR />,
     ctaTarget: "audit"
   },
@@ -1112,13 +1112,13 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-audit-checklist",
-    title: "Google Ads Audit Checklist 2026: 80+ Points, 1-Hour Audit",
+    title: "Google Ads Audit Checklist 2026: 100+ Points, Free Template",
     date: "2026-01-27",
-    dateModified: "2026-08-18",
+    dateModified: "2026-08-29",
     category: "Google Ads Audit",
     metaDescription:
-      "Free 80+ point Google Ads audit checklist for 2026. Find wasted spend in 60 minutes — conversion tracking, Smart Bidding, Quality Score, negatives. Tested on 20+ accounts.",
-    readingTime: "16 min",
+      "Free 100+ point Google Ads audit checklist for 2026, plus a downloadable Excel/Google Sheets template. Find wasted spend — tracking, Smart Bidding, negatives, PMax.",
+    readingTime: "19 min",
     content: <GoogleAdsAuditGuideEN />
   },
   {

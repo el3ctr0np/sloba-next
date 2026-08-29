@@ -1,18 +1,19 @@
 import { Link } from "@/i18n/navigation";
+import { ChecklistDownloadForm } from "@/components/sections/ChecklistDownloadForm";
 
 export default function GoogleAdsAuditPost() {
   return (
     <>
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
-        <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Google Ads audit je sistematski pregled naloga koji otkriva wasted spend, propuštene prilike, i tehničke greške. Profesionalan audit pokriva 80+ checkpoint-a u 10 kategorija i u proseku identifikuje 15-25% budžeta koji se troši neefikasno.</p>
+        <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Google Ads audit je sistematski pregled naloga koji otkriva wasted spend, propuštene prilike, i tehničke greške. Profesionalan audit pokriva 100+ checkpoint-a u 12 kategorija i u proseku identifikuje 15-25% budžeta koji se troši neefikasno.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">80+</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">100+</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">checkpoint-a</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">10</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">12</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">kategorija provere</p>
           </div>
           <div className="text-center">
@@ -35,7 +36,7 @@ export default function GoogleAdsAuditPost() {
           Šta je Google Ads audit i šta otkriva?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Ads audit</strong> je sistematski pregled naloga kroz <strong>10 kategorija</strong> - strukturu naloga, praćenje konverzija, podešavanja kampanja, ključne reči, oglase, publike, bidding strategiju i budžet. Profesionalan audit pokriva <strong>80+ checkpoint-a</strong> i u proseku otkriva da se <strong>15-25% budžeta</strong> troši neefikasno na naloge koji nisu optimizovani 6+ meseci.
+          <strong>Google Ads audit</strong> je sistematski pregled naloga kroz <strong>12 kategorija</strong> - strukturu naloga, praćenje konverzija, podešavanja kampanja, ključne reči, oglase, publike, bidding strategiju, budžet, Shopping/Performance Max i landing stranice. Profesionalan audit pokriva <strong>100+ checkpoint-a</strong> i u proseku otkriva da se <strong>15-25% budžeta</strong> troši neefikasno na naloge koji nisu optimizovani 6+ meseci.
         </p>
       </div>
 
@@ -45,6 +46,7 @@ export default function GoogleAdsAuditPost() {
         <ol className="space-y-1.5 list-none pl-0 mb-0">
           <li><a href="#zasto-je-google-ads-audit-neophodan" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto je Google Ads audit neophodan</a></li>
           <li><a href="#sta-dobar-google-ads-audit-pokriva" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta dobar Google Ads audit pokriva</a></li>
+          <li><a href="#preuzmite-checklist" className="block py-1 text-base text-gray-700 hover:text-primary underline">Preuzmite checklist (besplatan download)</a></li>
           <li><a href="#kategorija-1-struktura-naloga" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 1: Struktura naloga</a></li>
           <li><a href="#kategorija-2-prax107enje-konverzija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 2: Pra&#x107;enje konverzija</a></li>
           <li><a href="#kategorija-3-podex161avanja-kampanja" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 3: Pode&#x161;avanja kampanja</a></li>
@@ -53,6 +55,11 @@ export default function GoogleAdsAuditPost() {
           <li><a href="#kategorija-6-publike-i-remarketing" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 6: Publike i remarketing</a></li>
           <li><a href="#kategorija-7-bidding-strategija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 7: Bidding strategija</a></li>
           <li><a href="#kategorija-8-budzet-i-alokacija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 8: Budžet i alokacija</a></li>
+          <li><a href="#kategorija-9-reporting-i-analitika" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 9: Reporting i analitika</a></li>
+          <li><a href="#kategorija-10-scripts-i-automatizacije" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 10: Scripts i automatizacije</a></li>
+          <li><a href="#kategorija-11-shopping-i-performance-max" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 11: Shopping i Performance Max</a></li>
+          <li><a href="#kategorija-12-landing-stranice" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kategorija 12: Landing stranice</a></li>
+          <li><a href="#dnevna-provera-za-5-minuta" className="block py-1 text-base text-gray-700 hover:text-primary underline">Dnevna provera za 5 minuta</a></li>
           <li><a href="#brzi-google-ads-audit-za-30-minuta" className="block py-1 text-base text-gray-700 hover:text-primary underline">Brzi Google Ads audit za 30 minuta</a></li>
           <li><a href="#sistem-bodovanja-za-google-ads-audit" className="block py-1 text-base text-gray-700 hover:text-primary underline">Sistem bodovanja za Google Ads audit</a></li>
           <li><a href="#najx10dex161x107e-grex161ke-pri-google-ads-audit-u" className="block py-1 text-base text-gray-700 hover:text-primary underline">Naj&#x10D;e&#x161;&#x107;e gre&#x161;ke pri Google Ads audit-u</a></li>
@@ -69,13 +76,13 @@ export default function GoogleAdsAuditPost() {
         Kada preuzmem novi nalog na upravljanje, prva stvar je uvek detaljan Google Ads audit. U praksi vidim da preko 90% naloga ima iste fundamentalne probleme: conversion tracking ne funkcioniše kako treba, budžet cure na irelevantne search terms-ove, kampanje su loše organizovane, ili Smart Bidding pokušava da optimizuje sa nedovoljno podataka.
       </p>
       <p>
-        Google Ads audit nije samo lista stvari koje &quot;ne rade&quot; - to je sistematska dijagnostika koja precizno identifikuje <strong>gde gubite novac i gde propuštate prilike za rast</strong>. Prosečan nalog koji nije optimizovan 6+ meseci troši 15-25% budžeta potpuno neefikasno. To se može eliminisati u prvoj nedelji posle audit-a. Ako nemate vremena da to radite sami, pogledajte moj <Link href="/usluge/google-ads-audit" className="underline">Google Ads audit servis</Link>, koji pokriva isti checklist od 80+ tačaka.
+        Google Ads audit nije samo lista stvari koje &quot;ne rade&quot; - to je sistematska dijagnostika koja precizno identifikuje <strong>gde gubite novac i gde propuštate prilike za rast</strong>. Prosečan nalog koji nije optimizovan 6+ meseci troši 15-25% budžeta potpuno neefikasno. To se može eliminisati u prvoj nedelji posle audit-a. Ako nemate vremena da to radite sami, pogledajte moj <Link href="/usluge/google-ads-audit" className="underline">Google Ads audit servis</Link>, koji pokriva isti checklist od 100+ tačaka.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Kada raditi Google Ads audit</p>
         <p className="text-blue-800 text-base mb-0">
-          <strong>Kvartalni deep audit</strong> (2-4 sata, svih 10 kategorija) + <strong>mesečni quick check</strong> (30 min, 7 prioritetnih tačaka). Dodatno: odmah ako performance naglo padne, preuzimate nalog od prethodne agencije, menjate biznis model, ili pokre&#x107;ete novu kampanju.
+          <strong>Kvartalni deep audit</strong> (2-4 sata, svih 12 kategorija) + <strong>mesečni quick check</strong> (30 min, 7 prioritetnih tačaka). Dodatno: odmah ako performance naglo padne, preuzimate nalog od prethodne agencije, menjate biznis model, ili pokre&#x107;ete novu kampanju.
         </p>
       </div>
 
@@ -87,7 +94,10 @@ export default function GoogleAdsAuditPost() {
 
       <h2 id="sta-dobar-google-ads-audit-pokriva">Šta dobar Google Ads audit pokriva</h2>
       <p>
-        Profesionalan Google Ads audit nije improvizacija - to je strukturiran checklist od 80+ kontrolnih tačaka podeljenih u 10 ključnih kategorija. Svaka kategorija ima priority items (kritično za performance) i optimization items (dodatna poboljšanja za napredne naloge).
+        Profesionalan Google Ads audit nije improvizacija - to je strukturiran checklist od 100+ kontrolnih tačaka podeljenih u 12 ključnih kategorija. Svaka kategorija ima priority items (kritično za performance) i optimization items (dodatna poboljšanja za napredne naloge).
+      </p>
+      <p>
+        Ovaj checklist pokriva pun audit naloga - sve kampanje, sve kategorije, ceo nalog odjednom. Ako vas brine samo jedna kampanja (recimo, novi Performance Max koji ne ide dobro), možete isti checklist primeniti suženo, samo na tu kampanju i kategorije koje su za nju relevantne. Razlika je u obimu provere, ne u metodi.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -141,11 +151,36 @@ export default function GoogleAdsAuditPost() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">10. Scripts i automatizacije</h3>
           <p className="text-base text-gray-600 mb-0">Google Ads Scripts, automated rules, alerts, bulk operations - kao i <a href="https://ads.google.com/home/tools/ads-editor/" target="_blank" rel="noopener noreferrer">Google Ads Editor</a> za offline izmene</p>
         </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">eCommerce</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">11. Shopping i Performance Max</h3>
+          <p className="text-base text-gray-600 mb-0">Feed kvalitet, GTIN, asset grupe, search term insights, price freshness</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Konverzija</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">12. Landing stranice</h3>
+          <p className="text-base text-gray-600 mb-0">URL-ponuda poklapanje, brzina na mobilnom, jasan CTA, CVR po stranici, trust signali</p>
+        </div>
       </div>
 
       <p>
         Svaka kategorija dobija scoring od 1 do 5 i prioritizovan action plan. Na kraju Google Ads audit-a dobijate jasnu sliku gde ste, šta hitno popraviti, i koliki impact o&#x10D;ekivati od svake optimizacije.
       </p>
+
+      <div id="preuzmite-checklist" className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 md:p-8 my-8 shadow-card scroll-mt-24">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Besplatan download</p>
+        <p className="text-xl md:text-2xl font-heading font-bold text-gray-900 mb-3">Preuzmite Google Ads Audit Checklist (.xlsx)</p>
+        <p className="text-base text-gray-700 mb-5 leading-relaxed">
+          Ista metodologija kao ovaj vodič, proširena na 105 tačaka u 12 kategorija - u jednom Excel fajlu (.xlsx) koji otvarate direktno u Excelu ili uvozite u Google Sheets. Svaka tačka ima kolonu kako proveriti, red flag na šta prvo da obratite pažnju, prioritet (P1-P3), status i prostor za beleške. Kopirajte ga, pokrenite na sopstvenom nalogu i vidite tačno gde se krije ono 15-25% neefikasnog troška koje sam pomenuo gore.
+        </p>
+        <ul className="text-sm text-gray-700 space-y-1.5 mb-6">
+          <li>105 tačaka raspoređenih u 12 kategorija, spremnih da se odrađuju jedna po jedna</li>
+          <li>Poseban tab na srpskom i poseban tab na engleskom jeziku</li>
+          <li>Kolone za svaku tačku: kako proveriti, red flag, prioritet (P1-P3), status i beleške</li>
+          <li>Poseban tab {`"Brzi audit za 30 minuta"`} za mesečne provere između dubinskih audita</li>
+        </ul>
+        <ChecklistDownloadForm />
+      </div>
 
       <hr />
 
@@ -245,6 +280,12 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
       <p>
         Detaljan vodič kako postaviti tracking i kako troubleshoot-ovati probleme: <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }}>Conversion Tracking za Google Ads</Link>.
       </p>
+
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+        <p className="font-heading font-bold text-xl md:text-2xl mb-3">Sumnjate u sopstvene podatke o konverzijama?</p>
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">Proveru tag-a, poklapanje sa GA4 i Enhanced Conversions setup radim lično, kao deo Deep Audit + Action Plan usluge. Cena od €450.</p>
+        <Link href="/usluge/google-ads-audit" className="btn-secondary inline-block">Pogledajte šta audit pokriva</Link>
+      </div>
 
       <hr />
 
@@ -553,6 +594,237 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
 
       <hr />
 
+      <h2 id="kategorija-9-reporting-i-analitika">Kategorija 9: Reporting i analitika</h2>
+      <p>
+        Google Ads interfejs pokazuje samo deo slike. Bez GA4 poklapanja, jasnog attribution modela i redovnih segment izveštaja, radite optimizaciju naslepo - vidite da nešto troši budžet, ali ne i zašto, ili za koga zapravo radi.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>GA4 povezan i prima podatke</strong> <span className="text-gray-500">- Podešavanja naloga &gt; Povezani nalozi. Proverite da je GA4 property povezan i da konverzije/publike uredno importuju</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Attribution model odgovara stvarnom prodajnom putu</strong> <span className="text-gray-500">- Data-driven je default, ali za naloge sa malo konverzija proverite da li model ima dovoljno podataka da bude pouzdan</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>Segment izveštaji se redovno pregledaju</strong> <span className="text-gray-500">- Po uređaju, publici, lokaciji. Agregatni brojevi kriju koji segmenti su zapravo profitabilni</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>Neslaganja podataka između Google Ads i GA4/CRM-a istražena</strong> <span className="text-gray-500">- Razlika veća od 15-20% je signal problema u tracking-u ili attribution modelu, ne &quot;samo drugačije broje platforme&quot;</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>Postoji custom report ili dashboard za redovan pregled</strong> <span className="text-gray-500">- Sačuvan izveštaj ili Looker Studio dashboard, da ne pravite istu pivot tabelu svaki mesec iznova</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <div><strong>Auto-tagging uključen (GCLID)</strong> <span className="text-gray-500">- Ručno UTM tagovanje bez auto-tagging-a lomi poklapanje sa GA4 attribution-om</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">7</span>
+            <div><strong>Change History pregledan kod neobjašnjivih promena u performansama</strong> <span className="text-gray-500">- Tab Change History pokazuje tačno šta je i kada promenjeno, uporedite sa padom ili skokom performansi</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
+        <p className="font-heading font-semibold text-lg mb-0">Red flag: GA4 nije povezan ili se podaci nisu sinhronizovali 30+ dana, razlika 20%+ između platformi nikad nije istražena, ili ne postoji redovan ritam izveštavanja - samo ad-hoc pogled kad nešto pukne.</p>
+      </div>
+
+      <hr />
+
+      <h2 id="kategorija-10-scripts-i-automatizacije">Kategorija 10: Scripts i automatizacije</h2>
+      <p>
+        Automatizacija štedi vreme samo ako radi tačno ono što mislite da radi. Automated rules i scripts koji rade tiho u pozadini su čest izvor problema - niko ih ne primeti dok ne prestanu da rade, ili dok ne urade nešto što niste planirali.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>Automated rules provereni da rade ispravno</strong> <span className="text-gray-500">- Tab Rules. Pravilo koje pauzira keywords po CPA pragu bez minimuma klikova može pauzirati polovinu naloga u jednom sporijem danu</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Scripts rade bez tihih grešaka</strong> <span className="text-gray-500">- Scripts &gt; execution log. Script koji nedeljama baca grešku a niko to ne primeti gubi celu svrhu automatizacije</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>Alert-i za budžet i anomalije podešeni</strong> <span className="text-gray-500">- Recommendations ili custom script koji istog dana prijavi prekoračenje ili pad konverzija, ne tek nedelju dana kasnije</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>Bulk operacije logovane i reverzibilne</strong> <span className="text-gray-500">- Izmene kroz Editor treba da prolaze kroz version history/drafts, da loš bulk upload možete vratiti unazad</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>API pristup razmotren za ponavljajuće izveštaje i optimizacije</strong> <span className="text-gray-500">- Ako svake nedelje ručno eksportujete isti izveštaj, to je signal da ga automatizujete kroz API. Vidi <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }}>vodič za Google Ads API pristup</Link></span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <div><strong>Google Ads Editor koristi se za strukturne izmene, ne samo pojedinačne</strong> <span className="text-gray-500">- Bulk find &amp; replace, copy/paste izmena preko više kampanja odjednom</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
+        <p className="font-heading font-semibold text-lg mb-0">Red flag: automated rules bez minimalnih pragova (pauziraju pola naloga preko noći), scripts koji tiho ne rade nedeljama, ili isti izveštaj koji se ručno eksportuje svake nedelje bez ijedne automatizacije.</p>
+      </div>
+
+      <hr />
+
+      <h2 id="kategorija-11-shopping-i-performance-max">Kategorija 11: Shopping i Performance Max</h2>
+      <p>
+        Shopping i Performance Max imaju svoje specifičnosti koje običan Search audit ne pokriva - feed kvalitet, GTIN-ovi, asset grupe, i to kako se PMax ponaša prema branded upitima. Ako vodite eCommerce nalog, ova kategorija često otkriva više wasted spend-a nego bilo koja druga.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>Feed proizvoda nema kritičnih odbijanja</strong> <span className="text-gray-500">- Merchant Center &gt; Products &gt; Diagnostics. Ako odbijeni proizvodi čine značajan deo kataloga ili troška, prioritet je hitan</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Naslovi i opisi feed-a koriste stvarne atribute</strong> <span className="text-gray-500">- proverite uzorak od 10-20 naslova za brend, veličinu, boju. Generičke SKU šifre bez atributa štete matching-u u pretrazi</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>GTIN/MPN prisutni gde su neophodni</strong> <span className="text-gray-500">- Merchant Center &gt; Diagnostics, proverite upozorenja o nedostajućim identifikatorima. Brendiran katalog bez GTIN-ova gubi Shopping eligibility</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>PMax asset grupe prate jednu temu, ne ceo katalog</strong> <span className="text-gray-500">- PMax campaign &gt; Asset groups. Jedna grupa koja pokriva sve proizvode sa generičkim assetima je najčešća greška koju vidim</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>PMax search term insights provereni zbog kanibalizacije brenda</strong> <span className="text-gray-500">- PMax campaign &gt; Insights &gt; Search terms. Ako PMax osvaja branded upite koje bi jeftinija Search brand kampanja trebalo da hvata, to je direktan gubitak</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <div><strong>Feed-only ili full-asset PMax odgovara poslovnom modelu</strong> <span className="text-gray-500">- proverite da li su Final URL expansion, headline-ovi i slike popunjeni namerno ili slučajno prazni</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">7</span>
+            <div><strong>Proizvodi segmentirani po nivou performansi</strong> <span className="text-gray-500">- sortirajte po ROAS-u ili trošku u Merchant Center-u ili Ads izveštajima. Bez podele po nivoima, proizvod sa niskom maržom dobija isti bid prioritet kao bestseler</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">8</span>
+            <div><strong>Podaci o ceni i dostupnosti sveži u poslednjih otprilike 24-48h</strong> <span className="text-gray-500">- Merchant Center &gt; Products, proverite oznaku Last updated. Ovo je orijentacioni prozor iz prakse, ne zvanična preporuka - zastareo feed rizikuje odbijanja zbog neslaganja cene ili izgubljenu prodaju</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">9</span>
+            <div><strong>Cilj akvizicije novih kupaca podešen gde je relevantno</strong> <span className="text-gray-500">- PMax/Shopping campaign settings &gt; Goals &gt; New customer acquisition</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">10</span>
+            <div><strong>Final URL expansion proveren za PMax</strong> <span className="text-gray-500">- ako je uključen bez isključenja, saobraćaj odlazi na stranice van planiranog levka</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
+        <p className="font-heading font-semibold text-lg mb-0">Red flag: feed ima kritična odbijanja, jedna asset grupa pokriva ceo katalog generičkim assetima, ili PMax troši budžet na branded upite koje bi jeftinija Search brand kampanja trebalo da hvata.</p>
+      </div>
+
+      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
+        <p className="font-heading font-bold text-xl md:text-2xl mb-3">Previše tačaka da proveravate sami?</p>
+        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">Ako vam ovaj tekst izaziva pitanje koliko od ovih 100+ tačaka vaš nalog zapravo ne prolazi, upravo za to služi audit. Prolazim lično kroz svaku kategoriju i dajem prioritizovan akcioni plan. Cena od €450.</p>
+        <Link href="/usluge/google-ads-audit" className="btn-secondary inline-block">Zakažite profesionalan audit</Link>
+      </div>
+
+      <hr />
+
+      <h2 id="kategorija-12-landing-stranice">Kategorija 12: Landing stranice</h2>
+      <p>
+        Najbolji Google Ads nalog na svetu ne pomaže ako oglas vodi na stranicu koja ne konvertuje. Landing stranica retko ulazi u standardni audit, ali direktno određuje da li se sav rad na tracking-u i bidding-u uopšte isplati.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>Destinacioni URL odgovara stvarnoj ponudi iz oglasa</strong> <span className="text-gray-500">- prokliktajte kroz 5-10 top oglasa. Generička početna stranica umesto konkretnog proizvoda ili ponude je česta greška</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Landing stranica se brzo učitava na mobilnom</strong> <span className="text-gray-500">- PageSpeed Insights ili Core Web Vitals u Search Console-u (zvanična definicija: <a href="https://web.dev/articles/lcp" target="_blank" rel="noopener noreferrer">web.dev/articles/lcp</a>). Mobile LCP preko otprilike 4 sekunde na stranici koja prima plaćen saobraćaj je problem</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>Stranica je mobile-friendly</strong> <span className="text-gray-500">- otvorite je na stvarnom mobilnom uređaju ili emulatoru. Pokvaren mobile layout uz značajan mobilni saobraćaj gubi konverzije direktno</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>Jasan, jedan poziv na akciju iznad fold-a</strong> <span className="text-gray-500">- pogledajte stranicu očima prvog posetioca. Četiri konkurentna CTA ili nijedan iznad fold-a zbunjuju umesto da vode</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>Landing page CVR upoređen po stranicama</strong> <span className="text-gray-500">- Goals &gt; Conversions, segmentirajte po landing stranici. Stranica sa visokim troškom a znatno slabijim CVR-om od sličnih stranica troši budžet uzalud</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <div><strong>Trust signali prisutni na eCommerce/lead gen stranicama</strong> <span className="text-gray-500">- recenzije, garancije, security bedževi. Njihovo odsustvo na stranici koja traži plaćanje ili lične podatke je red flag</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">7</span>
+            <div><strong>Postoji plan testiranja za slabe stranice</strong> <span className="text-gray-500">- istorija A/B testova ili ručan zapis pre/posle promene. Stranica sa najslabijim CVR-om koja nikad nije testirana je propuštena prilika</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
+        <p className="font-heading font-semibold text-lg mb-0">Red flag: oglas obećava konkretan proizvod ili cenu, a landing stranica vodi na generičku početnu; ili stranica nema nijedan jasan poziv na akciju iznad fold-a.</p>
+      </div>
+
+      <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Besplatan download</p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">Upravo ste prošli kroz svih 12 kategorija. Uzmite ih kao radni alat.</p>
+        <p className="text-base text-gray-700 mb-4 leading-relaxed">
+          Isti checklist, kao Excel fajl (.xlsx) koji otvarate u Excelu ili uvozite u Google Sheets - proširen na 105 tačaka sa kolonama za prioritet (P1-P3), status i beleške, spreman da ga pokrenete na sopstvenom nalogu.
+        </p>
+        <a href="#preuzmite-checklist" className="btn-secondary inline-block">Preuzmite besplatan checklist &#8593;</a>
+      </div>
+
+      <hr />
+
+      <h2 id="dnevna-provera-za-5-minuta">Dnevna provera za 5 minuta</h2>
+      <p>
+        Kvartalni i mesečni audit hvataju strukturne probleme, ali nalog sa velikim dnevnim budžetom može izgubiti novac za par sati, ne za par nedelja. Iz prakse, ako trošite otprilike €100+ dnevno, ovih pet stavki proverite svako jutro - traje manje od 5 minuta.
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div><strong>Budget pacing</strong> <span className="text-gray-500">- da li se dnevni budžet troši ravnomerno, ili se potroši do podneva? Neravnomerno trošenje znači da gubite impresije u drugoj polovini dana</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div><strong>Disapprovals</strong> <span className="text-gray-500">- Ads &amp; assets tab, filtrirajte po statusu. Odbijen oglas ili asset preko noći znači nula impresija za taj deo naloga dok ne primetite</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div><strong>Anomalije u trošku</strong> <span className="text-gray-500">- nagli skok CPC-a ili dnevnog troška preko noći, bez odgovarajućeg skoka konverzija</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div><strong>Konverzije u poslednja 24h</strong> <span className="text-gray-500">- da li se uopšte beleže? Ovo je najbrži način da primetite da je tracking prestao da radi</span></div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div><strong>Status aktivnih kampanja</strong> <span className="text-gray-500">- da li je neka kampanja slučajno pauzirana, ili obrnuto, ponovo pokrenuta bez namere</span></div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
       <h2 id="brzi-google-ads-audit-za-30-minuta">Brzi Google Ads audit za 30 minuta</h2>
       <p>
         Ako nemate 2-4 sata za full Google Ads audit, evo quick check-a koji pokriva 80% najkriti&#x10D;nijih stvari. Preporu&#x10D;ujem da radite ovaj brzi audit mesečno između kvartalnih deep audit-a.
@@ -653,7 +925,7 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
       </div>
 
       <p>
-        <strong>Overall Account Health Score</strong> se ra&#x10D;una kao prosek svih 10 kategorija. Ako je overall score 3.5 ili vi&#x161;e, nalog je u solidnom stanju. Ispod 3.0 zna&#x10D;i da postoje prioritetni problemi koji tro&#x161;e budžet neefikasno.
+        <strong>Overall Account Health Score</strong> se ra&#x10D;una kao prosek svih 12 kategorija. Ako je overall score 3.5 ili vi&#x161;e, nalog je u solidnom stanju. Ispod 3.0 zna&#x10D;i da postoje prioritetni problemi koji tro&#x161;e budžet neefikasno.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
@@ -728,7 +1000,7 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            <p className="mb-0">Preporu&#x10D;ujem <strong>kvartalni deep audit</strong> (2-4 sata, svih 10 kategorija + 80+ checkpoint-a) + <strong>mese&#x10D;ni quick audit</strong> (30 min, 8 priority checkpoint-a). Takođe radite audit odmah ako: (1) performance naglo padne, (2) preuzimate nalog od druge agencije, (3) pokrećete nove proizvode/usluge, ili (4) menjate biznis model.</p>
+            <p className="mb-0">Preporu&#x10D;ujem <strong>kvartalni deep audit</strong> (2-4 sata, svih 12 kategorija + 100+ checkpoint-a) + <strong>mese&#x10D;ni quick audit</strong> (30 min, 8 priority checkpoint-a). Takođe radite audit odmah ako: (1) performance naglo padne, (2) preuzimate nalog od druge agencije, (3) pokrećete nove proizvode/usluge, ili (4) menjate biznis model.</p>
           </div>
         </details>
 
@@ -748,13 +1020,7 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            <p className="mb-3">U praksi vidim opseg od €200 do €1500+ u zavisnosti od veli&#x10D;ine naloga, broja kampanja, i dubine audit-a.</p>
-            <ul className="text-sm mb-0">
-              <li><strong>Basic audit</strong> (mali nalog, 2-3 kampanje, 1 tržište): €200-350</li>
-              <li><strong>Standard audit</strong> (srednji nalog, 5-10 kampanja, 1-2 tržišta): €400-700</li>
-              <li><strong>Deep audit</strong> (veliki nalog, 10+ kampanja, multi-market, kompletna dijagnostika): €800-1500+</li>
-            </ul>
-            <p className="mt-3 mb-0">Ako vam je mese&#x10D;ni ad spend €5K+, profesionalan Google Ads audit se isplati jer u proseku otkriva 15-25% wasted spend-a koji se može eliminisati u prvom mesecu.</p>
+            <p className="mb-0">Cena kreće <strong>od €450</strong> - to je moj Deep Audit + Action Plan, gde li&#x10D;no prolazim kroz nalog i dajem prioritizovan akcioni plan (vidi <Link href="/usluge/google-ads-audit" className="underline">&#x161;ta audit pokriva</Link>). Kona&#x10D;na cena zavisi od veli&#x10D;ine naloga, broja kampanja i broja tr&#x17E;i&#x161;ta. Ako vam je mese&#x10D;ni ad spend €5K+, investicija se po pravilu isplati u prvom mesecu jer audit u proseku otkriva 15-25% budžeta koji se tro&#x161;i neefikasno.</p>
           </div>
         </details>
 
@@ -807,7 +1073,7 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
       </p>
 
       <p>
-        Ovaj vodič pokriva 80+ checkpoint-a u 10 kategorija koje li&#x10D;no koristim na 50+ naloga u poslednjih nekoliko godina. Nije sve relevantno za svaki biznis - npr. ako nemate eCommerce, preskočite conversion value tracking. Ali osnove (conversion tracking, search terms, budget allocation, ad quality) su univerzalne za sve industrije.
+        Ovaj vodič pokriva 100+ checkpoint-a u 12 kategorija koje li&#x10D;no koristim na 50+ naloga u poslednjih nekoliko godina. Nije sve relevantno za svaki biznis - npr. ako nemate eCommerce, preskočite Kategoriju 11 i conversion value tracking. Ali osnove (conversion tracking, search terms, budget allocation, ad quality) su univerzalne za sve industrije.
       </p>
 
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
@@ -822,10 +1088,21 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
         Za nastavak optimizacije posle audit-a, pro&#x10D;itajte: <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-optimizacija" } }}>Google Ads optimizacija vodi&#x10D;</Link> i <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}>Naj&#x10D;eš&#x107;e Google Ads gre&#x161;ke</Link>.
       </p>
 
-      <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
-        <p className="font-heading font-bold text-xl md:text-2xl mb-3">Potreban vam je profesionalan Google Ads audit?</p>
-        <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">Radim audit-e za naloge svih veli&#x10D;ina - od startupa do enterprise klijenata. Dobijate 80+ checkpoint audit report + prioritizovan action plan + implementation preporuke + follow-up konsultaciju.</p>
-        <Link href="/kontakt" className="btn-secondary inline-block">Zaka&#x17E;ite besplatnu konsultaciju</Link>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+        <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 shadow-card text-center flex flex-col justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Radije prvo sami?</p>
+            <p className="text-base text-gray-700 mb-5">Preuzmite besplatan checklist kao Excel fajl i prođite kroz sve kategorije sopstvenim tempom.</p>
+          </div>
+          <a href="#preuzmite-checklist" className="btn-secondary inline-block">Preuzmite besplatan checklist</a>
+        </div>
+        <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 shadow-card text-center flex flex-col justify-between">
+          <div>
+            <p className="font-heading font-bold text-xl mb-3">Ili neka ja to uradim</p>
+            <p className="text-slate-300 text-base mb-5">Radim audit-e za naloge svih veli&#x10D;ina - od startupa do enterprise klijenata. Dobijate 100+ checkpoint audit report + prioritizovan action plan + implementation preporuke + follow-up konsultaciju. Cena od €450.</p>
+          </div>
+          <Link href="/usluge/google-ads-audit" className="btn-secondary inline-block">Pogledajte Deep Audit + Action Plan</Link>
+        </div>
       </div>
 
       <hr />

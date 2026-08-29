@@ -102,8 +102,8 @@ export default function KakoPocetiGoogleAdsSR() {
         U 2026. godini Google Ads je i dalje dominantan kanal za direktan odgovor - bilo da ste lokalni servis, eCommerce prodavnica ili B2B kompanija. Automatizacija je napredovala (AI bidding, Performance Max), ali osnove nisu se promenile: prava ključna reč + pravi oglas + prava stranica = konverzija.
       </p>
       <p>
-        Ovaj vodič vam daje sve što vam treba da krenete sami. Ako u nekom trenutku poželite da neko ko se time bavi svaki dan preuzme vođenje umesto vas, tu je moja{" "}
-        <Link href="/usluge/google-ads-agencija" className="text-blue-700 underline">agencija za Google Ads</Link>.
+        Ovaj vodič vam daje sve što vam treba da krenete sami. Ako u nekom trenutku poželite da neko ko se time bavi svaki dan preuzme vođenje kampanja umesto vas, tu je moje{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="text-blue-700 underline">vođenje Google Ads kampanja</Link>.
       </p>
 
       <hr />
@@ -460,7 +460,7 @@ export default function KakoPocetiGoogleAdsSR() {
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Cena upravljanja</td>
               <td className="py-3 px-3">€0 (samo ad spend)</td>
-              <td className="py-3 px-3">€200-600/mesečno</td>
+              <td className="py-3 px-3">€300-1.500/mesečno (kod mene: od €700)</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">Kriva učenja</td>
@@ -485,6 +485,11 @@ export default function KakoPocetiGoogleAdsSR() {
           </tbody>
         </table>
       </div>
+
+      <p>
+        Ako tražite agenciju za Google Ads koja radi kao produžena ruka vašeg tima, a ne crna kutija, pogledajte kako izgleda moja{" "}
+        <Link href="/usluge/google-ads-agencija" className="text-blue-700 underline">Google Ads agencija</Link>.
+      </p>
 
       <p>
         Detaljno poređenje opcija - agencija, freelancer ili in-house - možete pročitati u posebnom vodiču:{" "}
@@ -634,6 +639,12 @@ export default function KakoPocetiGoogleAdsSR() {
       <p>
         Ako budete pratili korake iz ovog vodiča, izbegli pet grešaka koje sam opisao i dali kampanjama 2-4 nedelje da se stabilizuju - bićete ispred 70% početnika koji odustanu prerano ili optimizuju previše rano.
       </p>
+      <p>
+        Ako tražite nekoga da vam profesionalno vodi Google Ads kampanje, pogledajte moju{" "}
+        <Link href="/usluge/google-ads-upravljanje" className="text-blue-700 underline">uslugu vođenja Google Ads kampanja</Link>{" "}
+        - ili, ako vam treba širi okvir za poređenje opcija, moju{" "}
+        <Link href="/usluge/google-ads-agencija" className="text-blue-700 underline">Google Ads agenciju</Link>.
+      </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">
@@ -660,6 +671,10 @@ export default function KakoPocetiGoogleAdsSR() {
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>
           <p className="text-xs text-gray-500 mb-0">Profesionalno vođenje kampanja kada ste spremni za skaliranje</p>
+        </Link>
+        <Link href="/usluge/google-ads-agencija" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads agencija</p>
+          <p className="text-xs text-gray-500 mb-0">Boutique agencija, senior vodi lično - poređenje sa freelancerom i velikom agencijom</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Koliko košta Google Ads oglašavanje?</p>
