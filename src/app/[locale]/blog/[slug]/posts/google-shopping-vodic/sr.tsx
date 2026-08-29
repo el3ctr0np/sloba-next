@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GoogleShoppingVodicPost() {
@@ -120,6 +121,10 @@ export default function GoogleShoppingVodicPost() {
       <hr />
 
       <h2>Product feed - temelj Shopping kampanja</h2>
+      <figure className="my-8">
+        <Image src="/blog/shopping-feed-pipeline.webp" alt="Katalog prodavnice, feed sa zelenim i crvenim statusima, pa Shopping oglasi" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">Put proizvoda: katalog → feed (gde se vide greške) → oglas. Slaba karika je skoro uvek sredina.</figcaption>
+      </figure>
       <p>
         Vaš product feed je XML ili TXT fajl koji sadrži sve informacije o proizvodima. Google koristi ove podatke da odluči za koje pretrage prikazati vaš proizvod, kako ga rangirati u odnosu na konkurenciju, i da li je proizvod eligible za prikaz. Kompletnu specifikaciju svih atributa možete pronaći u <a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener noreferrer" className="underline">Google-ovoj specifikaciji podataka o proizvodima</a>.
       </p>
@@ -295,6 +300,10 @@ export default function GoogleShoppingVodicPost() {
       <hr />
 
       <h2>Struktura Shopping kampanja</h2>
+      <figure className="my-8">
+        <Image src="/blog/shopping-struktura-marza.webp" alt="Tri Shopping kampanje sa različitom popunjenošću proizvoda, podeljene po marži" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">Podela po marži, ne po kategoriji: jedan budžet ne sme da tretira sve proizvode isto.</figcaption>
+      </figure>
       <p>
         Struktura kampanja determiniše koliko kontrole imate nad bidovima i budžetom. Preporučujem strukturu po prioritetu koja vam daje maksimalnu kontrolu uz minimalnu kompleksnost.
       </p>

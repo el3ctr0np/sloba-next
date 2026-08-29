@@ -277,6 +277,10 @@ export default function ConversionTrackingVodicPost() {
       <hr />
 
       <h2 id="consent-mode-v2">Consent Mode v2: obavezan pre svih tagova (EEA/UK)</h2>
+      <figure className="my-8">
+        <Image src="/blog/consent-mode-signal.webp" alt="Consent baner koji se grana na pun signal i na modelovani, delimičan signal" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">Isti posetilac, dva puta: sa pristankom pun signal, bez njega modelovan i nepotpun.</figcaption>
+      </figure>
       <p>
         Ovo je korak koji se najčešće preskoči, a bez njega ostatak postavke ne radi kako mislite. Od marta 2024. Google traži Consent Mode v2 za sav saobraćaj iz EEA i Ujedinjenog Kraljevstva. Ako oglašavate na tim tržištima, a consent signali ne stižu, Google Ads gubi conversion modeling, remarketing liste prestaju da se pune, a Enhanced Conversions ne rade jer nemaju dozvolu da pošalju korisničke podatke.
       </p>

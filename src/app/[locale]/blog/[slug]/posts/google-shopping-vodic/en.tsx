@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 
 export default function GoogleShoppingGuideEN() {
   return (
@@ -93,6 +94,10 @@ export default function GoogleShoppingGuideEN() {
       <hr />
 
       <h2>Product feed — the foundation of Shopping campaigns</h2>
+      <figure className="my-8">
+        <Image src="/blog/shopping-feed-pipeline.webp" alt="Shop catalogue, a feed with green and red status markers, then Shopping ads" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">The product journey: catalogue → feed (where the errors show) → ad. The weak link is almost always the middle.</figcaption>
+      </figure>
       <p>
         Your product feed is an XML or TXT file containing all product information. Google uses this data to decide which searches to show your product for, how to rank it against competitors, and whether the product is eligible for display. The full attribute specification is available in <a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener noreferrer" className="underline">Google&apos;s product data specification</a>.
       </p>
@@ -268,6 +273,10 @@ export default function GoogleShoppingGuideEN() {
       <hr />
 
       <h2>Shopping campaign structure</h2>
+      <figure className="my-8">
+        <Image src="/blog/shopping-struktura-marza.webp" alt="Three Shopping campaigns with different product density, split by margin" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">Split by margin, not by category: one budget should not treat every product the same.</figcaption>
+      </figure>
       <p>
         Campaign structure determines how much control you have over bids and budget. I recommend a priority-based structure that gives you maximum control with minimal complexity.
       </p>

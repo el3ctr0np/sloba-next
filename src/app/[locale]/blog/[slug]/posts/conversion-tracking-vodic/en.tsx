@@ -277,6 +277,10 @@ export default function ConversionTrackingGuideEN() {
       <hr />
 
       <h2 id="consent-mode-v2">Consent Mode v2: mandatory before any tag (EEA/UK)</h2>
+      <figure className="my-8">
+        <Image src="/blog/consent-mode-signal.webp" alt="A consent banner branching into a full signal path and a modelled, partial one" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-sm text-gray-500 text-center mt-2">Same visitor, two paths: with consent the signal is complete, without it the data is modelled and partial.</figcaption>
+      </figure>
       <p>
         This is the step most setups skip, and without it the rest of the build doesn&apos;t work the way you think it does. Since March 2024, Google requires Consent Mode v2 for all EEA and UK traffic. If you advertise in those markets and consent signals never arrive, Google Ads loses conversion modeling, remarketing lists stop filling, and Enhanced Conversions simply don&apos;t run because they have no permission to send user data.
       </p>
