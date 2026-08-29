@@ -8,16 +8,16 @@ export default function NegativeKeywordsVodicPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Negativne ključne reči sprečavaju prikazivanje oglasa za irelevantne pretrage. Bez njih, 20-40% budžeta odlazi na klikove koji nikada neće konvertovati. U ovom vodiču: kompletne starter liste, strategija po industrijama i sistem organizacije.
+          Negativne ključne reči sprečavaju prikazivanje oglasa za irelevantne pretrage. Bez njih, 20-40% budžeta odlazi na klikove koji nikada neće konvertovati. U ovom vodiču: kako rade match tipovi, gde dodajete negativne reči i kako gradite sopstvenu listu iz Search Terms izveštaja.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">200+</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">negativnih reči u listama</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">3</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">nivoa organizacije</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">7</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">industrijskh lista</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">5</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">metoda za pronalaženje</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">30%+</p>
@@ -36,12 +36,20 @@ export default function NegativeKeywordsVodicPost() {
           Brzi odgovor
         </p>
         <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
-          Šta su negativne ključne reči?
+          Kako rade negativne ključne reči u Google Ads-u?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Negativne ključne reči</strong> su reči i fraze za koje ne želite da se vaš Google Ads oglas prikazuje. Za razliku od regularnih ključnih reči koje privlače saobraćaj, negativne ga filtriraju i štite budžet od klikova bez namere kupovine. Bez njih, <strong>20-40% budžeta</strong> obično odlazi na potpuno irelevantne pretrage.
+          Negativne ključne reči rade tako što uklanjaju vaš oglas iz aukcije za određene pretrage, koristeći ista tri match tipa kao i regularne ključne reči - <strong>negative broad</strong>, <strong>negative phrase</strong> i <strong>negative exact</strong> - od kojih svaki blokira drugačiji opseg pretraga. Dodajete ih na tri nivoa: deljenu <strong>Negative Keyword List</strong> (na nivou naloga), nivo kampanje ili nivo ad grupe. U kombinaciji sa nedeljnim pregledom Search Terms izveštaja, to je mehanizam koji sprečava da budžet curi na pretrage koje nikada ne bi konvertovale.
         </p>
       </div>
+
+      <p className="text-sm text-gray-600 -mt-2">
+        Tražite konkretne termine za copy-paste, a ne teoriju? Pogledajte{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "lista-negativnih-kljucnih-reci" } }} className="underline font-semibold">
+          kompletnu listu negativnih ključnih reči
+        </Link>
+        {" "}- 400+ termina kroz 15 kategorija spremnih za copy-paste.
+      </p>
 
       <hr />
 
@@ -156,108 +164,15 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
 
       <hr />
 
-      {/* ── Universal Negative Lista ── */}
-      <h2>Univerzalna negativna lista - starter za svaki biznis</h2>
+      {/* ── Gde pronaći kompletnu listu ── */}
+      <h2>Gde pronaći kompletnu listu termina</h2>
       <p>
-        Ovu listu preporučujem za svaki nalog kao polaznu tačku. Prilagodite prema vašem biznisu - neke od ovih reči mogu biti relevantne za vas (npr. {`"besplatno"`} ako nudite free trial).
+        Umesto da ponavljam stotine termina na ovoj stranici, kompletnu listu držim na jednom mestu: 400+ negativnih ključnih reči kroz 15 kategorija spremnih za copy-paste - 8 univerzalnih grupa (traženje besplatnog, traženje posla, DIY, informativne pretrage, lovci na popuste, polovna i refurbished roba, negativne asocijacije) i 5 industrijskih lista (eCommerce, B2B/SaaS, lokalne usluge, turizam, nekretnine, fitnes). Otvorite{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "lista-negativnih-kljucnih-reci" } }} className="underline font-semibold">
+          kompletnu listu negativnih ključnih reči
+        </Link>
+        , izaberite kategorije koje odgovaraju vašem biznisu i nalepite ih direktno u Negative Keyword List.
       </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Besplatno / Free</h3>
-          <p className="text-sm text-gray-600 mb-0">besplatno, besplatan, besplatna, free, freeware, opensource, open source, dzabe, gratis</p>
-        </div>
-        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Posao / Zaposlenje</h3>
-          <p className="text-sm text-gray-600 mb-0">posao, zaposlenje, karijera, plata, zarada, CV, resume, konkurs, oglas za posao, job, hiring, vacancy, praksa, pripravnik</p>
-        </div>
-        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Informacione / Edukacione</h3>
-          <p className="text-sm text-gray-600 mb-0">šta je, kako, zašto, what is, how to, definicija, pojam, wikipedia, wiki, tutorial, kurs, obuka, edukacija, webinar</p>
-        </div>
-        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">DIY / Uradi sam</h3>
-          <p className="text-sm text-gray-600 mb-0">DIY, uradi sam, napravi sam, homemade, handmade, tutorial, how to make, kako napraviti</p>
-        </div>
-        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Jeftino / Budget</h3>
-          <p className="text-sm text-gray-600 mb-0">jeftino, najjeftinije, povoljno, budget, cheap, discount, popust, akcija, rasprodaja, sniženje, second hand, polovno, rabljeno</p>
-        </div>
-        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Kategorija</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Negativne asocijacije</h3>
-          <p className="text-sm text-gray-600 mb-0">problem, ne radi, complaint, žalba, prevara, scam, fake, lažno, opasno, rizik, bug, greška</p>
-        </div>
-      </div>
-
-      <hr />
-
-      {/* ── Liste po industrijama ── */}
-      <h2>Negativne ključne reči po industrijama</h2>
-      <p>
-        Pored univerzalne liste, svaka industrija ima specifične termine koje bi trebalo blokirati. Evo lista za najčešće industrije sa kojima radim.
-      </p>
-
-      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">1</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce - Moda i odeća</h3>
-        </div>
-        <p className="text-sm text-gray-600 mb-0">jeftino, polovno, second hand, outlet, imitacija, replika, fake, kako sašiti, šivenje, pattern, kroj, DIY, trendovi, fashion week, modni dizajner posao, vintage, cosplay, kostim</p>
-      </div>
-
-      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">eCommerce - Elektronika</h3>
-        </div>
-        <p className="text-sm text-gray-600 mb-0">polovno, refurbished, korišćeno, broken, pokvaren, popravka, servis, delovi, kako popraviti, teardown, review, unboxing, drajveri, firmware, manual, uputstvo, specifikacije</p>
-      </div>
-
-      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">3</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">B2B / SaaS</h3>
-        </div>
-        <p className="text-sm text-gray-600 mb-0">besplatno, free, open source, crack, pirate, nulled, developer posao, programer plata, it karijera, kurs, tutorial, za početnike, student, personal use</p>
-      </div>
-
-      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">4</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Lokalne usluge</h3>
-        </div>
-        <p className="text-sm text-gray-600 mb-0">[gradovi van zone], online, remote, na daljinu, besplatno, jeftino, posao, zapošljavanje, plata, uradi sam, kako sam, DIY, žalba, tužba, advokat, inspekcija</p>
-      </div>
-
-      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">5</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Turizam / Hoteli</h3>
-        </div>
-        <p className="text-sm text-gray-600 mb-0">besplatno, free, budget, hostel (za hotele), camping, posao u hotelu, recepcioner, konobar posao, turistički vodič posao, slike, fotografije, vlog, blog, iskustva, forum</p>
-      </div>
-
-      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Nekretnine</h3>
-        </div>
-        <p className="text-sm text-gray-600 mb-0">iznajmljivanje (ako prodajete), prodaja (ako iznajmljujete), poslovni prostor (za residential), agent za nekretnine posao, broker, licenca, cene nekretnina, prognoza, statistika, foreclosure, ovrha</p>
-      </div>
-
-      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
-          <h3 className="mt-0 mb-0 font-heading font-bold">Fitness / Zdravlje</h3>
-        </div>
-        <p className="text-sm text-gray-600 mb-0">besplatno, free, youtube, app, doktor, lekar, bolnica, dijagnoza, lek, terapija, steroidi, anabolici, brzo mršavljenje, ekstremna dijeta, trener posao, fitness instruktor</p>
-      </div>
 
       <hr />
 
@@ -527,6 +442,11 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
       {/* ── Povezani vodiči ── */}
       <h2>Povezani vodiči</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "lista-negativnih-kljucnih-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Lista negativnih ključnih reči - 400+ termina</p>
+          <p className="text-xs text-gray-500 mb-0">Kategorije spremne za copy-paste, 15 grupa</p>
+        </Link>
+
         <Link href="/usluge/search-kampanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search kampanje</p>
           <p className="text-xs text-gray-500 mb-0">Profesionalno upravljanje Search kampanjama</p>

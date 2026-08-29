@@ -1,5 +1,7 @@
 // Canonical (SR) slug → EN slug mapping
 export const slugMap: Record<string, string> = {
+  "lista-negativnih-kljucnih-reci": "negative-keywords-list",
+  "google-ads-api-autentifikacija": "google-ads-api-authentication-guide",
   "google-search-kampanje-vodic": "google-search-campaigns-guide",
   "demand-gen-vodic": "demand-gen-guide",
   "product-feed-optimizacija-scorecard": "merchant-center-feed-scorecard",

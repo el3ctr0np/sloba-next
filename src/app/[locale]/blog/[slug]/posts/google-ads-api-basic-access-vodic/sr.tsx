@@ -176,6 +176,14 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
         </p>
       </div>
 
+      <p>
+        Taj isti poziv je i mesto gde ostatak lanca autentifikacije mora biti ispravno povezan - developer token header, login-customer-id i izbor OAuth2 toka - inače ništa od ovoga nije bitno pre nego što Basic Access uopšte dođe na red. Ceo taj lanac, uključujući izbor između desktop i web toka i zamku od 7 dana kod refresh tokena, pokrivam u{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-autentifikacija" } }} className="underline text-blue-700 font-medium">
+          vodiču za Google Ads API autentifikaciju
+        </Link>
+        .
+      </p>
+
       <hr />
 
       <h2 id="korak-4-brand-verification">Korak 4: Brand verification (novi pilot od jula 2026)</h2>

@@ -532,6 +532,56 @@ const faqSchemaNegativneKljucneReciEN = {
   ]
 };
 
+// ── FAQ Schema: Lista negativnih ključnih reči + API autentifikacija ──
+
+const faqSchemaNegativeListSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Mogu li da kopiram ovu listu direktno i nalepim je u svoj nalog?", acceptedAnswer: { "@type": "Answer", text: "Možete kopirati bilo koji blok iznad i nalepiti ga u Negative Keyword List ili u Google Ads Editor import - tačno za to format i služi. Ali prvo pročitajte kategoriju i obrišite sve što je zapravo deo vaše ponude (besplatna dostava, polovna roba, kurs koji prodajete). Nijedna objavljena lista, uključujući ovu, ne poznaje vaš biznis bez tog koraka." } },
+    { "@type": "Question", name: "Da li ova lista radi za Shopping i Performance Max?", acceptedAnswer: { "@type": "Answer", text: "Da. Ako ove termine dodate u negativnu listu na nivou naloga, automatski se primenjuju na Search, Shopping, Performance Max, App, Smart i Local kampanje. Performance Max sada takođe direktno prihvata negative i negativne liste na nivou kampanje - do 2025. je to bilo moguće samo preko Google predstavnika ili API-ja, sada je self-servisno u interfejsu. Izvor: Performance Max negativne ključne reči." } },
+    { "@type": "Question", name: "Po čemu se ovo razlikuje od Vodiča za negativne ključne reči?", acceptedAnswer: { "@type": "Answer", text: "Vodič za negativne ključne reči je kako i zašto - ponašanje match tipova, sistem organizacije u tri sloja, stvarna studija slučaja, kako da izvučete sopstvene negative iz Search Terms reporta. Ova stranica je šta - 421 termin spreman za lepljenje kroz 15 kategorija, plus AI prompt za pravljenje prilagođenog seta. Pročitajte vodič jednom, vraćajte se ovde kad god vam trebaju termini." } },
+    { "@type": "Question", name: "Da li treba samo da koristim AI da generišem celu listu umesto ove?", acceptedAnswer: { "@type": "Answer", text: "Oboje, tim redosledom. Krenite od lista na ovoj stranici - one su skinule nagađanje sa univerzalnih i brand safety kategorija. Onda pokrenite AI prompt sa svojim konkretnim proizvodima, lokacijama i izuzecima da popunite ono što generička lista ne može da zna. Proverite svaki AI predlog kroz sedam pravila pre dodavanja - model ne vidi vaš nalog, vaš Search Terms report ni vašu stvarnu teritoriju usluge." } },
+    { "@type": "Question", name: "Koliko često treba da ažuriram ovu listu?", acceptedAnswer: { "@type": "Answer", text: "Nalepite relevantne kategorije jednom kao polaznu tačku, a Search Terms report tretirajte kao stvarni, tekući izvor - nedeljno prvog meseca nove kampanje, pa minimum mesečno posle toga. Ova statična lista vas dovodi do razumne osnove prvog dana; ne zamenjuje praćenje šta ljudi stvarno pretražuju." } },
+  ]
+};
+
+const faqSchemaNegativeListEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Can I copy this list directly and paste it into my account?", acceptedAnswer: { "@type": "Answer", text: "You can copy any block above and paste it into a Negative Keyword List or a Google Ads Editor import — that is exactly what the format is for. But read through the category first and delete anything that is actually part of your offer (free shipping, used goods, a course you sell). No published list, including this one, knows your business without that pass." } },
+    { "@type": "Question", name: "Does this list work for Shopping and Performance Max?", acceptedAnswer: { "@type": "Answer", text: "Yes. If you add these terms to your account-level negative list, they apply automatically to Search, Shopping, Performance Max, App, Smart, and Local campaigns. Performance Max also now accepts campaign-level negatives and negative keyword lists directly — until 2025 that required going through a Google rep or the API, and it is now self-serve in the interface. Source: Performance Max negative keywords." } },
+    { "@type": "Question", name: "How is this different from the Negative Keywords Guide?", acceptedAnswer: { "@type": "Answer", text: "The Negative Keywords Guide is the how and why — match type behavior, the three-tier organization system, a real case study, how to mine your own negatives from the Search Terms report. This page is the what — 422 ready-to-paste terms across 15 categories, plus the AI prompt for building a custom set. Read the guide once, come back to this page whenever you need terms." } },
+    { "@type": "Question", name: "Should I just use AI to generate the whole list instead of this one?", acceptedAnswer: { "@type": "Answer", text: "Both, in that order. Start with the lists on this page — they took the guesswork out of the universal and brand safety categories. Then run the AI prompt with your specific products, locations, and exceptions to fill in what a generic list cannot know. Verify every AI suggestion against the seven rules before adding it — the model does not see your account, your Search Terms report, or your actual service area." } },
+    { "@type": "Question", name: "How often should I update this list?", acceptedAnswer: { "@type": "Answer", text: "Paste the relevant categories once as a starting point, then treat the Search Terms report as the real, ongoing source — weekly for the first month of a new campaign, then at minimum monthly after that. This static list gets you to a reasonable baseline on day one; it does not replace watching what people actually search for." } },
+  ]
+};
+
+const faqSchemaApiAuthSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Koja je razlika između developer token-a i OAuth2 token-a na Google Ads API-ju?", acceptedAnswer: { "@type": "Answer", text: "Developer token identifikuje vašu aplikaciju - fiksan je string izdat jednom u API Center-u vašeg manager naloga (22 karaktera u mojim nalozima), i sam po sebi ne ističe. OAuth2 access token (i refresh token iza njega) identifikuje osobu koja je odobrila pristup vašoj aplikaciji, i može isteći ili biti opozvan. Svaki poziv na Google Ads API zahteva oba: developer token kao header, i validan OAuth2 access token za autentifikaciju." } },
+    { "@type": "Question", name: "Zašto mi refresh token prestane da radi na svakih 7 dana?", acceptedAnswer: { "@type": "Answer", text: "OAuth consent screen vašeg Google Cloud projekta postavljen je na External tip korisnika sa statusom objave Testing. Google to dokumentuje: refresh tokeni izdati pod tim uslovima ističu posle 7 dana, što se pojavljuje kao invalid_grant ili RefreshError. Prebacivanje statusa objave na In production uklanja taj rok od 7 dana - to radite samo jednom po projektu." } },
+    { "@type": "Question", name: "Da li mi treba Google Workspace za service account na Google Ads API-ju?", acceptedAnswer: { "@type": "Answer", text: "U praksi da. Google-ov sopstveni vodič za service account to ne objašnjava, ali programeri koji su ovo implementirali prijavljuju na Google-ovom Ads API developer forumu da bez Google Workspace domena i podešene domain-wide delegacije za adwords scope, poziv ne prolazi sa AuthenticationError.NOT_ADS_USER - service account mora da impersonira stvarnog Workspace korisnika preko subject parametra da bi se uspešno autentifikovao. Za solo operatera ili mali tim bez Workspace domena, OAuth2 desktop tok je jednostavniji i ništa od ovoga mu ne treba." } },
+    { "@type": "Question", name: "Šta je login-customer-id i kad mi treba?", acceptedAnswer: { "@type": "Answer", text: "login-customer-id je header koji Google Ads API-ju kaže u kontekstu kog naloga radite. Obavezan je kad autentifikovan nalog pristupa klijentskom nalogu kroz manager (MCC) nalog - postavite ga na ID MCC-a. Izostavljanje kad je potreban proizvodi USER_PERMISSION_DENIED, čak i ako nalog jasno vidite u Google Ads interfejsu." } },
+    { "@type": "Question", name: "Šta znači AuthenticationError.NOT_ADS_USER?", acceptedAnswer: { "@type": "Answer", text: "Prema zvaničnoj Google dokumentaciji, znači da Google nalog korišćen za generisanje access tokena nije povezan ni sa jednim Google Ads nalogom. Pojavljuje se u dve situacije: OAuth login bez ikakvog pristupa Google Ads-u, ili poziv service account-a kojem fali subject/impersonirani parametar potreban da se autentifikuje kao stvaran Workspace korisnik." } },
+  ]
+};
+
+const faqSchemaApiAuthEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "What's the difference between a developer token and an OAuth2 token in the Google Ads API?", acceptedAnswer: { "@type": "Answer", text: "A developer token identifies your application — it's a fixed string issued once in your manager account's API Center (22 characters in my accounts), and it never expires on its own. An OAuth2 access token (and the refresh token behind it) identifies the person who authorized your app, and it can expire or be revoked. Every Google Ads API call needs both: the developer token as a header, and a valid OAuth2 access token for authentication." } },
+    { "@type": "Question", name: "Why does my refresh token stop working every 7 days?", acceptedAnswer: { "@type": "Answer", text: "Your Google Cloud project's OAuth consent screen is set to an External user type with a Testing publishing status. Google documents this: refresh tokens issued under those conditions expire after 7 days, which surfaces as invalid_grant or a RefreshError. Switching the publishing status to In production removes that 7-day expiry — you only need to do it once per project." } },
+    { "@type": "Question", name: "Do I need Google Workspace to use a service account with the Google Ads API?", acceptedAnswer: { "@type": "Answer", text: "In practice, yes. Google's quick-start steps for service accounts don't spell this out, but developers who've implemented it report that without a Google Workspace domain and domain-wide delegation configured for the adwords scope, the call fails with AuthenticationError.NOT_ADS_USER — the service account has to impersonate a real Workspace user via a subject parameter to authenticate successfully. For a solo operator or small team without a Workspace domain, the OAuth2 desktop flow is simpler and doesn't require any of this." } },
+    { "@type": "Question", name: "What is login-customer-id and when do I need it?", acceptedAnswer: { "@type": "Answer", text: "login-customer-id is a header that tells the Google Ads API which account context you're operating in. It's required whenever the authenticated account accesses a client account through a manager (MCC) account — set it to the MCC's ID. Leaving it out when it's needed produces USER_PERMISSION_DENIED, even if you can see the account fine in the Google Ads UI." } },
+    { "@type": "Question", name: "What does AuthenticationError.NOT_ADS_USER mean?", acceptedAnswer: { "@type": "Answer", text: "Per Google's official documentation, it means the Google account used to generate the access token isn't associated with any Google Ads account. It shows up in two situations: an OAuth login with no Google Ads access at all, or a service account call missing the subject/impersonated-user parameter it needs to authenticate as a real Workspace user." } },
+  ]
+};
+
 // ── FAQ Schema: Quality Score vodič ──
 
 const faqSchemaQualityScoreSR = {
@@ -1030,6 +1080,12 @@ function getFaqSchema(slug: string, locale: string) {
   }
   if (slug === "negativne-kljucne-reci") {
     return locale === "en" ? faqSchemaNegativneKljucneReciEN : faqSchemaNegativneKljucneReciSR;
+  }
+  if (slug === "lista-negativnih-kljucnih-reci") {
+    return locale === "en" ? faqSchemaNegativeListEN : faqSchemaNegativeListSR;
+  }
+  if (slug === "google-ads-api-autentifikacija") {
+    return locale === "en" ? faqSchemaApiAuthEN : faqSchemaApiAuthSR;
   }
   if (slug === "quality-score-vodic") {
     return locale === "en" ? faqSchemaQualityScoreEN : faqSchemaQualityScoreSR;

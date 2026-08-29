@@ -184,6 +184,14 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
         </p>
       </div>
 
+      <p>
+        That single call is also where the rest of the authentication chain — the developer token header, login-customer-id, and which OAuth2 flow you&apos;re running — has to be wired correctly, or nothing here matters before Basic Access even comes into it. I walk through that full chain, including the desktop-vs-web flow choice and the 7-day refresh token trap, in{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-authentication-guide" } }} className="underline text-blue-700 font-medium">
+          the Google Ads API authentication guide
+        </Link>
+        .
+      </p>
+
       <hr />
 
       <h2 id="step-4-brand-verification-the-july-2026-pilot">Step 4 — Brand verification (the July 2026 pilot)</h2>

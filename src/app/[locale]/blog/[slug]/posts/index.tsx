@@ -5,6 +5,10 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import ListaNegativnihKljucnihReciSR from "./lista-negativnih-kljucnih-reci/sr";
+import NegativeKeywordsListEN from "./lista-negativnih-kljucnih-reci/en";
+import GoogleAdsApiAutentifikacijaSR from "./google-ads-api-autentifikacija/sr";
+import GoogleAdsApiAuthenticationGuideEN from "./google-ads-api-autentifikacija/en";
 import GoogleApiPristupiZaAgencijeSR from "./google-api-pristupi-za-agencije/sr";
 import GoogleApiAccessGuideForAgenciesEN from "./google-api-pristupi-za-agencije/en";
 import GoogleAdsApiBasicAccessVodicSR from "./google-ads-api-basic-access-vodic/sr";
@@ -116,6 +120,29 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "lista-negativnih-kljucnih-reci",
+    title: "Lista Negativnih Ključnih Reči 2026: 400+ Termina po Kategorijama",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Google Ads",
+    metaDescription:
+      "Lista od 400+ negativnih ključnih reči za Google Ads u 15 kategorija, sa srpskim terminima, brand safety blokom i AI promptom za prilagođavanje vašem biznisu.",
+    readingTime: "12 min",
+    content: <ListaNegativnihKljucnihReciSR />,
+    ctaTarget: "audit"
+  },
+  {
+    slug: "google-ads-api-autentifikacija",
+    title: "Google Ads API Autentifikacija: OAuth, Service Account i Developer Token [2026]",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Automatizacija",
+    metaDescription:
+      "Google Ads API autentifikacija bez lutanja: OAuth2 tok korak po korak, refresh token zamka od 7 dana, service account pravila i tabela čestih grešaka sa rešenjima.",
+    readingTime: "11 min",
+    content: <GoogleAdsApiAutentifikacijaSR />
+  },
   {
     slug: "google-search-kampanje-vodic",
     title: "Google Search kampanje: kompletan vodič [2026]",
@@ -575,12 +602,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "negativne-kljucne-reci",
-    title: "Negative Keywords: Kompletna Lista + Strategija [2026]",
+    title: "Negativne Ključne Reči: Strategija, Match Tipovi i Organizacija [2026]",
     date: "2026-01-27",
-    dateModified: "2025-12-28",
+    dateModified: "2026-08-29",
     category: "Google Ads",
     metaDescription:
-      "Kompletan vodič za negative keywords u Google Ads - gotove liste po industrijama, strategija dodavanja i kako sprečiti bacanje budžeta na pogrešne pretrage.",
+      "Kako rade negativne ključne reči u Google Ads: match tipovi, 5 metoda pronalaženja, organizacija po nivoima i najčešće greške koje troše budžet na pogrešne pretrage.",
     featuredImage: "/blog/negativne-kljucne-reci.webp",
     readingTime: "12 min",
     content: <NegativeKeywordsVodicSR />
@@ -648,6 +675,29 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "negative-keywords-list",
+    title: "Negative Keywords List 2026: 400+ Terms by Category (Copy-Paste)",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Google Ads",
+    metaDescription:
+      "400+ copy-paste negative keywords across 15 categories, with brand-safety and adult blocks plus a ready AI prompt to generate a custom list for your business.",
+    readingTime: "12 min",
+    content: <NegativeKeywordsListEN />,
+    ctaTarget: "audit"
+  },
+  {
+    slug: "google-ads-api-authentication-guide",
+    title: "Google Ads API Authentication: OAuth, Service Accounts & Developer Token (2026)",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Automation",
+    metaDescription:
+      "Google Ads API authentication explained: OAuth2 desktop vs. web flow, the 7-day refresh token trap, service account rules, and a table of common errors with fixes.",
+    readingTime: "11 min",
+    content: <GoogleAdsApiAuthenticationGuideEN />
+  },
   {
     slug: "google-search-campaigns-guide",
     title: "Google Search Campaigns: The Complete Guide [2026]",
@@ -1084,12 +1134,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "negative-keywords-guide",
-    title: "Comprehensive Negative Keywords List for Google Ads: 200+ Universal + 7 Industry Lists [2026]",
+    title: "Negative Keywords Strategy for Google Ads: Match Types, Organization & Process [2026]",
     date: "2026-01-27",
-    dateModified: "2026-04-27",
+    dateModified: "2026-08-29",
     category: "Google Ads",
     metaDescription:
-      "Complete negative keywords list for Google Ads (200+ entries across 7 categories): universal negatives, eCommerce, B2B, SaaS, Local Service, Lead Gen + competitor blocks. Strategy and match types that cut wasted spend by 20-40% in 30 days.",
+      "How negative keywords actually work in Google Ads: match type behavior, 5 methods for finding them, a tiered organization system, and the mistakes that waste budget.",
     readingTime: "12 min",
     content: <NegativeKeywordsGuideEN />
   },
