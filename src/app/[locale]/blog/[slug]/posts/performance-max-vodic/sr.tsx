@@ -131,15 +131,14 @@ export default function PerformanceMaxVodicPost() {
       </figure>
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">PMax audit checklist (2026)</p>
-        <p className="text-sm text-gray-600 mb-3">Pitanje koje sve češće viđam - šta uopšte proveriti na PMax kampanji danas. Kratka lista pre nego što krenete u dublju optimizaciju:</p>
-        <ul className="text-sm text-gray-600 mb-0">
+        <p className="text-sm text-gray-600 mb-3">Pitanje koje sve češće viđam - šta uopšte proveriti na PMax kampanji danas. Prva četiri koraka:</p>
+        <ul className="text-sm text-gray-600 mb-3">
           <li>Negativne ključne reči postavljene na nivou naloga i kampanje?</li>
           <li>Channel-level report pregledan - gde stvarno ide budžet?</li>
           <li>Brand exclusions podešene ako ne želite da PMax kupuje sopstveni ili tuđi brend?</li>
-          <li>Asset grupe segmentirane po tematskoj celini, ne pomešane kategorije?</li>
           <li>Feed kvalitet proveren ako je retail - title, custom labels, GTIN?</li>
-          <li>Konverzije čiste - pravi cilj se prati, conversion values setovane?</li>
         </ul>
+        <p className="text-sm text-gray-600 mb-0">Pun PMax audit checklist (35+ tačaka): <Link href={{ pathname: "/blog/[slug]", params: { slug: "pmax-audit-checklist" } }} className="underline">pogledajte namenski vodič</Link>.</p>
       </div>
 
       <hr />

@@ -278,6 +278,13 @@ for row in response:
       <p>
         Ako to vrati ime naloga, svaki sloj - OAuth2, developer token, login-customer-id - pravilno je povezan. Ako padne, greška koju dobijete nazad kaže tačno koji sloj popraviti; vidi tabelu ispod.
       </p>
+      <p>
+        Sad kad konekcija radi, evo pravih izveštaja koje s njom vučete - pogledajte{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "gaql-reporting-vodic" } }} className="underline text-blue-700 font-medium">
+          vodič za GAQL izveštavanje
+        </Link>
+        .
+      </p>
 
       <hr />
 

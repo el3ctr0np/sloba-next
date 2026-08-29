@@ -119,15 +119,14 @@ export default function PerformanceMaxGuideEN() {
       </figure>
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">PMax audit checklist (2026)</p>
-        <p className="text-sm text-gray-600 mb-3">A question I'm seeing more often — what to actually check on a PMax campaign today. A short list before you go deeper into optimization:</p>
-        <ul className="text-sm text-gray-600 mb-0">
+        <p className="text-sm text-gray-600 mb-3">A question I'm seeing more often — what to actually check on a PMax campaign today. The first four steps:</p>
+        <ul className="text-sm text-gray-600 mb-3">
           <li>Negative keywords set at both account and campaign level?</li>
           <li>Channel-level report reviewed — where is budget actually going?</li>
           <li>Brand exclusions configured if you don't want PMax bidding on your own or a competitor's brand?</li>
-          <li>Asset groups segmented by theme, not mixed categories?</li>
           <li>Feed quality checked if retail — title, custom labels, GTIN?</li>
-          <li>Conversions clean — right goal tracked, conversion values set up?</li>
         </ul>
+        <p className="text-sm text-gray-600 mb-0">Full PMax audit checklist (35+ points): <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-audit-checklist" } }} className="underline">see the dedicated guide</Link>.</p>
       </div>
 
       <hr />

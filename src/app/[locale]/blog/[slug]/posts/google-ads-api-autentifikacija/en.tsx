@@ -278,6 +278,13 @@ for row in response:
       <p>
         If that returns an account name, every layer — OAuth2, developer token, login-customer-id — is correctly wired. If it fails, the error you get back tells you exactly which layer to fix; see the table below.
       </p>
+      <p>
+        Now that the connection works, here are the real reports you can pull with it — see{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-reporting-gaql" } }} className="underline text-blue-700 font-medium">
+          the GAQL reporting guide
+        </Link>
+        .
+      </p>
 
       <hr />
 

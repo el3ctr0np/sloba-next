@@ -582,6 +582,80 @@ const faqSchemaApiAuthEN = {
   ]
 };
 
+// ── FAQ Schema: PMax checklist + Budzet + GAQL ──
+
+const faqSchemaPmaxChecklistSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Da li se search teme primenjuju na PMax kampanje koje vode samo na feed-u?", acceptedAnswer: { "@type": "Answer", text: "Ne. Search teme se podešavaju unutar Signals u asset grupi, a PMax kampanja koja vodi čisto na feed-u, dakle samo iz Merchant Center feed-a, bez asset grupa, tu strukturu nema. Ako vaša PMax kampanja radi isključivo na feedu, tačka 35 se na nju ne odnosi, preskočite pravo na audience signale iz Grupe 8, koji rade isto bez obzira na strukturu." } },
+    { "@type": "Question", name: "Koliko listing grupa je previše?", acceptedAnswer: { "@type": "Answer", text: "Google nema objavljen tvrd plafon za to šta je previše, ali u praksi, kad počnete da sečete stotine listing grupa po kombinacijama atributa koje niko pojedinačno ne pregleda, dodali ste granularnost bez kontrole. Čistiji signal: ako listing grupa nikad nije dobila sopstvenu odluku o ponudi ili isključenju, verovatno je previše sitna. Segmentišite po onome na šta ćete stvarno reagovati, margin tier, tip proizvoda, custom label, ne po svakom mogućem atributu." } },
+    { "@type": "Question", name: "Šta se promenilo u izveštavanju Performance Max-a u 2026?", acceptedAnswer: { "@type": "Answer", text: "Najveća promena je izveštavanje po kanalu, najavljeno januara 2026, novi Channel performance pregled koji razbija PMax potrošnju i konverzije po Search, Search Partners, Display, YouTube, Discover, Gmail i Maps, na nivou kampanje, asset grupe i sredstva. Pre ovoga je PMax skoro sve prikazivao agregatno, pa nije bilo moguće utvrditi da li budžet zaista ide tamo gde mislite." } },
+    { "@type": "Question", name: "Po čemu se PMax audit razlikuje od audita Search kampanje?", acceptedAnswer: { "@type": "Answer", text: "Search audit radi ključnu reč po ključnu reč, Quality Score, tipovi podudaranja, izveštaj o pretragama, ponude po ključnoj reči. PMax većinu toga ne otkriva, auditujete asset grupe umesto grupa oglasa, kvalitet feed-a umesto samo teksta oglasa, izveštavanje po kanalu umesto podele po uređaju ili mreži. Suštinska pitanja su slična (da li je praćenje tačno, da li budžet ide tamo gde treba, da li je targetiranje pod kontrolom), ali skoro svaki odgovor na \"gde proveriti\" je drugačiji." } },
+    { "@type": "Question", name: "Koliko često treba auditovati Performance Max kampanju?", acceptedAnswer: { "@type": "Answer", text: "Pun prolaz kroz svih 38 tačaka jednom u kvartalu, plus lakša mesečna provera onoga što najbrže odstupa, negativne ključne reči, izveštaj po kanalu, status budžeta, ocene sredstava i brand isključenja. Audit odmah van rasporeda ako učinak naglo padne, ako preuzimate nalog od druge agencije, ili ako ste upravo promenili konverzioni cilj ili bidding strategiju." } },
+  ]
+};
+
+const faqSchemaPmaxChecklistEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Do search themes apply to feed-only Performance Max campaigns?", acceptedAnswer: { "@type": "Answer", text: "No. Search themes are set inside an asset group's Signals, and a feed-only PMax campaign — one running purely off a Merchant Center feed, with no asset groups — doesn't have that structure. If your PMax campaign is feed-only, checkpoint 35 doesn't apply; skip straight to audience signals in Group 8, which work the same way regardless." } },
+    { "@type": "Question", name: "How many listing groups is too many?", acceptedAnswer: { "@type": "Answer", text: "There's no hard Google-published ceiling for what's \"too many,\" but in practice, once you're carving out hundreds of listing groups by attribute combinations nobody reviews individually, you've added granularity without adding control. A cleaner signal: if a listing group has never had its own bid or exclusion decision made against it, it's probably too granular. Segment by what you'll actually act on — custom label tier, product type, margin band — not by every possible attribute." } },
+    { "@type": "Question", name: "What changed in Performance Max reporting in 2026?", acceptedAnswer: { "@type": "Answer", text: "The biggest change is channel-level reporting, announced in January 2026: a new Channel performance view that breaks PMax spend and conversions down by Search, Search Partners, Display, YouTube, Discover, Gmail, and Maps — at the campaign, asset-group, and asset level. Before this, PMax reported almost everything in aggregate, which made it impossible to tell whether your budget was actually going where you thought it was." } },
+    { "@type": "Question", name: "How is a PMax audit different from auditing a Search campaign?", acceptedAnswer: { "@type": "Answer", text: "A Search audit works keyword by keyword: Quality Score, match types, Search Terms Report, per-keyword bids. PMax doesn't expose most of that — you audit asset groups instead of ad groups, feed quality instead of ad copy alone, and channel-level reporting instead of a device or network breakdown. The underlying questions are similar (is tracking accurate, is budget going where it should, is targeting under control), but almost every \"where to check\" answer is different." } },
+    { "@type": "Question", name: "How often should I audit a Performance Max campaign?", acceptedAnswer: { "@type": "Answer", text: "A full pass through all 38 checkpoints once a quarter, plus a lighter monthly check on the items that drift fastest — negative keywords, the channel report, budget status, asset ratings, and brand exclusions. Audit immediately outside that schedule if performance drops suddenly, you're taking over the account from another agency, or you just changed the conversion goal or bid strategy." } },
+  ]
+};
+
+const faqSchemaBudzetSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Koliki mesečni budžet mi treba za Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Zavisi od max CPA i ciljanog broja konverzija - mesečni budžet = max CPA × ciljani broj konverzija. Za test fazu, minimum je €300-500 mesečno (€10-20 dnevno) da dobijete dovoljno podataka - detaljnije u vodiču kako početi sa Google Ads-om; konkretan broj za vaš biznis izračunate po formuli iz ovog teksta." } },
+    { "@type": "Question", name: "Kako da podelim budžet između više kampanja?", acceptedAnswer: { "@type": "Answer", text: "U test fazi, na 1-2 uske kampanje - ne razvlačite mali budžet na više njih. Kasnije, split zavisi od kanala: eCommerce nalozi u praksi drže veći deo na Shopping-u, Search se deli na brand i non-brand, a mala rezerva ide na remarketing." } },
+    { "@type": "Question", name: "Kada da povećam budžet za Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Kad kampanja dosledno ostvaruje 30+ konverzija za tCPA ili 50+ za tROAS na 30 dana, gubite impression share zbog budžeta, i break-even CPA i dalje ima prostora posle povećanja. Sva tri signala treba da se poklope, ne samo jedan." } },
+    { "@type": "Question", name: "Da li treba da imam isti budžet svaki mesec?", acceptedAnswer: { "@type": "Answer", text: "Ne, ako imate sezonalnost. Planirajte veći budžet unapred za period jače potražnje (Black Friday, praznici) i manji van sezone - to je planiranje, ne reagovanje kad kampanja usred meseca potroši sve." } },
+    { "@type": "Question", name: "Koja je razlika između dnevnog i mesečnog budžeta u Google Ads-u?", acceptedAnswer: { "@type": "Answer", text: "Unosite dnevni budžet, ali Google ga tretira kao prosek - pojedinačnog dana može potrošiti i do dvostruko više, dok mesečna naplata ne prelazi dnevni budžet pomnožen prosečnim brojem dana u mesecu (30.4)." } },
+  ]
+};
+
+const faqSchemaBudzetEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "How much monthly budget do I need for Google Ads?", acceptedAnswer: { "@type": "Answer", text: "It depends on your max CPA and target conversion count — monthly budget = max CPA × target number of conversions. For the test phase, aim for enough spend to hit the 10-15 clicks/day floor I use as a starting minimum — see how to start with Google Ads for the full breakdown by market; the exact number for your business comes from the formula in this guide." } },
+    { "@type": "Question", name: "How do I split budget across multiple campaigns?", acceptedAnswer: { "@type": "Answer", text: "In the test phase, put it behind 1-2 narrow campaigns — don't stretch a small budget across more than that. Later, the split depends on channel: eCommerce accounts typically hold more of the budget in Shopping, Search splits between brand and non-brand, and a small reserve goes to remarketing." } },
+    { "@type": "Question", name: "When should I increase my Google Ads budget?", acceptedAnswer: { "@type": "Answer", text: "When a campaign consistently hits 30+ conversions for tCPA or 50+ for tROAS over 30 days, you're losing impression share to budget, and break-even CPA still has room after the increase. All three signals need to line up, not just one." } },
+    { "@type": "Question", name: "Should my budget stay the same every month?", acceptedAnswer: { "@type": "Answer", text: "No, not if you have seasonality. Plan a higher budget in advance for high-demand periods (Black Friday, holidays) and lower it out of season — that's planning, not reacting once a campaign burns through everything mid-month." } },
+    { "@type": "Question", name: "What's the difference between daily and monthly budget in Google Ads?", acceptedAnswer: { "@type": "Answer", text: "You enter a daily budget, but Google treats it as an average — a single day can spend up to double that, while monthly billing won't exceed the daily budget multiplied by the average number of days in a month (30.4)." } },
+  ]
+};
+
+const faqSchemaGaqlSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Šta je GAQL, i da li je to isto što i SQL?", acceptedAnswer: { "@type": "Answer", text: "GAQL (Google Ads Query Language) pozajmljuje SQL-ov oblik SELECT/FROM/WHERE/ORDER BY/LIMIT, ali radi na sopstvenoj gramatici. Nema JOIN-a ni subquery-ja - umesto toga, određeni resursi su \"pridruženi\" vašem glavnom FROM resursu i uvuku se implicitno, pa možete selektovati ad_group.name dok upitujete ad_group_ad, a da pritom sami ne pišete join. Ima i duži spisak WHERE operatora nego čist SQL, uključujući CONTAINS ANY/ALL/NONE i DURING za fiksne literale perioda." } },
+    { "@type": "Question", name: "Kad da koristim search() umesto searchStream()?", acceptedAnswer: { "@type": "Answer", text: "Koristite search() kad je set rezultata mali do umeren ili hoćete eksplicitnu kontrolu nad paginacijom - svaki modul u mom sopstvenom steku za nadzor naloga to radi, jer su nalozi u pitanju u hiljadama redova, ne milionima. Koristite searchStream() za veća povlačenja gde ne biste ručno pisali iteraciju kroz page token. Obe se računaju kao jedna operacija u dnevnu kvotu po pozivu, bez obzira koliko redova stigne." } },
+    { "@type": "Question", name: "Zašto mi GAQL izveštaj vraća redove sa nula impresija i nula troška?", acceptedAnswer: { "@type": "Answer", text: "To je očekivano ponašanje, ne bag - resursi poput keyword_view vraćaju svaki red koji odgovara upitu, uključujući one bez ikakve aktivnosti u periodu. Ako hoćete samo redove koji su stvarno trošili ili se prikazivali, dodajte eksplicitan filter u WHERE, na primer metrics.cost_micros > 0 ili metrics.impressions > 0." } },
+    { "@type": "Question", name: "Šta znači nastavak \"_micros\" na poljima kao cost_micros?", acceptedAnswer: { "@type": "Answer", text: "Svako novčano polje u Google Ads API-ju - cost_micros, cpc_bid_micros, target_cpa_micros i slična - izraženo je u micros, fiksnoj jedinici jednakoj jednom milionitom delu valute naloga. Podelite sa 1.000.000 da dobijete stvarni iznos. Lako se propusti prvi put, i onda prijavite trošak koji je pogrešan za šest redova veličine." } },
+    { "@type": "Question", name: "Da li mi treba Basic Access za GAQL izveštaje, ili Explorer pristup pokriva to?", acceptedAnswer: { "@type": "Answer", text: "Po mom iskustvu, Explorer pristup pokriva reporting resurse iza većine GAQL upita - campaign, ad_group, keyword_view, search_term_view i ostale korišćene u ovom tekstu - uz 2.880 operacija dnevno na produkcionim nalozima. Basic Access to podigne na 15.000 operacija dnevno i uglavnom otključa alate za planiranje kao što je Keyword Planner, ne sam reporting. Ceo proces prijave je u vodiču za Basic Access ." } },
+  ]
+};
+
+const faqSchemaGaqlEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "What is GAQL, and is it the same as SQL?", acceptedAnswer: { "@type": "Answer", text: "GAQL (Google Ads Query Language) borrows SQL's SELECT/FROM/WHERE/ORDER BY/LIMIT shape but runs on its own grammar. There's no JOIN and no subquery — instead, certain resources are \"attributed\" to your main FROM resource and get pulled in implicitly, so you can select ad_group.name while querying ad_group_ad without writing a join yourself. It also has a longer WHERE operator set than plain SQL, including CONTAINS ANY/ALL/NONE and DURING for fixed date-range literals." } },
+    { "@type": "Question", name: "When should I use search() instead of searchStream()?", acceptedAnswer: { "@type": "Answer", text: "Use search() when the result set is small to moderate or you want explicit control over pagination — every module in my own account-monitoring stack uses it, since the accounts involved run in the thousands of rows, not millions. Use searchStream() for larger pulls where you'd rather not hand-roll page-token iteration. Both count as a single operation against your daily quota per call, no matter how many rows come back." } },
+    { "@type": "Question", name: "Why does my GAQL report return rows with zero impressions and zero cost?", acceptedAnswer: { "@type": "Answer", text: "That's expected behavior, not a bug — resources like keyword_view return every matching row, including ones with no activity in the period. If you only want rows that actually spent or served, add an explicit filter such as metrics.cost_micros > 0 or metrics.impressions > 0 to your WHERE clause." } },
+    { "@type": "Question", name: "What does the \"_micros\" suffix on fields like cost_micros mean?", acceptedAnswer: { "@type": "Answer", text: "Every monetary field in the Google Ads API — cost_micros, cpc_bid_micros, target_cpa_micros, and similar — is expressed in micros, a fixed-point unit equal to one-millionth of the account's currency. Divide by 1,000,000 to get the actual amount. It's easy to miss the first time and report a spend number that's off by six orders of magnitude." } },
+    { "@type": "Question", name: "Do I need Basic Access to run GAQL reports, or does Explorer access cover it?", acceptedAnswer: { "@type": "Answer", text: "In my experience, Explorer access covers the reporting resources behind most GAQL queries — campaign, ad_group, keyword_view, search_term_view, and the rest used in this post — at 2,880 operations per day on production accounts. Basic Access raises that to 15,000 operations per day and mainly unlocks planning tools like Keyword Planner fields, not reporting itself. See the Basic Access guide for the full application process." } },
+  ]
+};
+
 // ── FAQ Schema: Quality Score vodič ──
 
 const faqSchemaQualityScoreSR = {
@@ -1082,6 +1156,15 @@ function getFaqSchema(slug: string, locale: string) {
   }
   if (slug === "kljucne-reci-vodic") {
     return locale === "en" ? faqSchemaKljucneReciEN : faqSchemaKljucneReciSR;
+  }
+  if (slug === "pmax-audit-checklist") {
+    return locale === "en" ? faqSchemaPmaxChecklistEN : faqSchemaPmaxChecklistSR;
+  }
+  if (slug === "google-ads-budzet") {
+    return locale === "en" ? faqSchemaBudzetEN : faqSchemaBudzetSR;
+  }
+  if (slug === "gaql-reporting-vodic") {
+    return locale === "en" ? faqSchemaGaqlEN : faqSchemaGaqlSR;
   }
   if (slug === "negativne-kljucne-reci") {
     return locale === "en" ? faqSchemaNegativneKljucneReciEN : faqSchemaNegativneKljucneReciSR;

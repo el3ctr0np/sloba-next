@@ -74,6 +74,13 @@ const getChapters = (locale: string): Chapter[] => {
             readTime: "12 min"
           },
           {
+            title: "Google Ads Budget: How Much You Actually Need [2026]",
+            excerpt:
+              "The max-CPA formula, spend by phase (test, optimize, scale) and worked examples with transparent math.",
+            slug: "google-ads-budget-planning",
+            readTime: "13 min"
+          },
+          {
             title:
               "Google Advertising for Businesses: Complete Guide for B2B and eCommerce [2026]",
             excerpt:
@@ -211,8 +218,15 @@ const getChapters = (locale: string): Chapter[] => {
           {
             title: "Google Ads Audit: Complete Checklist [2026]",
             excerpt:
-              "80+ checkpoints for account review, campaign optimization and better ROI.",
+              "100+ checkpoints in 12 categories, plus a downloadable Excel/Google Sheets template.",
             slug: "google-ads-audit-checklist",
+            readTime: "19 min"
+          },
+          {
+            title: "Performance Max Audit Checklist: 35+ Checkpoints [2026]",
+            excerpt:
+              "PMax-specific checks: asset groups, feed quality, negatives, brand exclusions and channel reporting.",
+            slug: "performance-max-audit-checklist",
             readTime: "15 min"
           },
           {
@@ -289,6 +303,13 @@ const getChapters = (locale: string): Chapter[] => {
             readTime: "11 min"
           },
           {
+            title: "Google Ads API Reporting with GAQL: Anatomy + Copy-Paste Queries [2026]",
+            excerpt:
+              "Query anatomy, search() vs searchStream(), 12 copy-paste reports and the traps that break queries.",
+            slug: "google-ads-api-reporting-gaql",
+            readTime: "11 min"
+          },
+          {
             title: "Offline Conversion Import for B2B: Connect Google Ads to Your CRM",
             excerpt:
               "Make the algorithm learn from closed deals instead of form fills — GCLID, Enhanced Conversions for Leads and CRM setup.",
@@ -323,6 +344,13 @@ const getChapters = (locale: string): Chapter[] => {
             "Realne CPC cene po industrijama, minimalni budžeti i okvir za planiranje ROI-ja u Srbiji.",
           slug: "koliko-kosta-google-ads",
           readTime: "12 min"
+        },
+        {
+          title: "Google Ads Budžet: Koliko Vam Realno Treba i Kako Ga Rasporediti [2026]",
+          excerpt:
+            "Formula za budžet, potrošnja po fazama (test, optimizacija, skaliranje) i 3 računska primera.",
+          slug: "google-ads-budzet",
+          readTime: "9 min"
         },
         {
           title:
@@ -462,9 +490,16 @@ const getChapters = (locale: string): Chapter[] => {
         {
           title: "Google Ads Audit: Kompletan Checklist [2026]",
           excerpt:
-            "80+ tačaka za proveru naloga, optimizaciju kampanja i bolji ROI.",
+            "100+ tačaka u 12 kategorija, plus template za preuzimanje (Excel/Google Sheets).",
           slug: "google-ads-audit-vodic",
-          readTime: "15 min"
+          readTime: "19 min"
+        },
+        {
+          title: "PMax Audit Checklist: 35+ Tačaka za Proveru [2026]",
+          excerpt:
+            "PMax provere: asset grupe, kvalitet feeda, negativne reči, brand exclusions i izveštaj po kanalima.",
+          slug: "pmax-audit-checklist",
+          readTime: "14 min"
         },
         {
           title:
@@ -538,6 +573,13 @@ const getChapters = (locale: string): Chapter[] => {
             "OAuth2 tok korak po korak, zamka refresh tokena od 7 dana, service account pravila i tabela čestih grešaka.",
           slug: "google-ads-api-autentifikacija",
           readTime: "11 min"
+        },
+        {
+          title: "GAQL Reporting: Google Ads API Upiti Korak po Korak [2026]",
+          excerpt:
+            "Anatomija upita, search() naspram searchStream(), 12 gotovih izveštaja za copy-paste i najčešće zamke.",
+          slug: "gaql-reporting-vodic",
+          readTime: "9 min"
         },
         {
           title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",

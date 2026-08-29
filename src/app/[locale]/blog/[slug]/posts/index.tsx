@@ -5,6 +5,12 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import PmaxAuditChecklistSR from "./pmax-audit-checklist/sr";
+import PerformanceMaxAuditChecklistEN from "./pmax-audit-checklist/en";
+import GoogleAdsBudzetSR from "./google-ads-budzet/sr";
+import GoogleAdsBudgetPlanningEN from "./google-ads-budzet/en";
+import GaqlReportingVodicSR from "./gaql-reporting-vodic/sr";
+import GoogleAdsApiReportingGaqlEN from "./gaql-reporting-vodic/en";
 import ListaNegativnihKljucnihReciSR from "./lista-negativnih-kljucnih-reci/sr";
 import NegativeKeywordsListEN from "./lista-negativnih-kljucnih-reci/en";
 import GoogleAdsApiAutentifikacijaSR from "./google-ads-api-autentifikacija/sr";
@@ -120,6 +126,40 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "pmax-audit-checklist",
+    title: "PMax Audit Checklist: 35+ Tačaka za Proveru [2026]",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Performance Max",
+    metaDescription:
+      "Performance Max audit checklist: 38 tačaka u 8 grupa (struktura, merenje, feed, brand safety, kanali, bidding, signali) - gde proveriti i šta je crveni signal.",
+    readingTime: "14 min",
+    content: <PmaxAuditChecklistSR />,
+    ctaTarget: "audit"
+  },
+  {
+    slug: "google-ads-budzet",
+    title: "Google Ads Budžet: Koliko Vam Realno Treba i Kako Ga Rasporediti [2026]",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Google Ads",
+    metaDescription:
+      "Koliki budžet vam treba za Google Ads i kako ga rasporediti kroz faze test, optimizacija, skaliranje. Formula, pragovi i 3 računska primera.",
+    readingTime: "9 min",
+    content: <GoogleAdsBudzetSR />
+  },
+  {
+    slug: "gaql-reporting-vodic",
+    title: "GAQL Reporting: Google Ads API Upiti Korak po Korak [2026]",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Automatizacija",
+    metaDescription:
+      "GAQL nije SQL - anatomija upita, search() naspram searchStream(), 12 gotovih izveštaja za copy-paste i zamke zbog kojih upiti padaju na validaciji.",
+    readingTime: "9 min",
+    content: <GaqlReportingVodicSR />
+  },
   {
     slug: "lista-negativnih-kljucnih-reci",
     title: "Lista Negativnih Ključnih Reči 2026: 400+ Termina po Kategorijama",
@@ -675,6 +715,40 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "performance-max-audit-checklist",
+    title: "Performance Max Audit Checklist: 35+ Checkpoints [2026]",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Performance Max",
+    metaDescription:
+      "Performance Max audit checklist: 38 checkpoints across 8 groups — asset groups, feed quality, negative keywords, brand exclusions, and channel reporting.",
+    readingTime: "15 min",
+    content: <PerformanceMaxAuditChecklistEN />,
+    ctaTarget: "audit"
+  },
+  {
+    slug: "google-ads-budget-planning",
+    title: "Google Ads Budget: How Much You Actually Need [2026]",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Google Ads",
+    metaDescription:
+      "Google Ads budget in three phases (test, optimize, scale): the max-CPA formula, spend by phase, when to increase, and worked examples with transparent math.",
+    readingTime: "13 min",
+    content: <GoogleAdsBudgetPlanningEN />
+  },
+  {
+    slug: "google-ads-api-reporting-gaql",
+    title: "Google Ads API Reporting with GAQL: Anatomy + Copy-Paste Queries [2026]",
+    date: "2026-08-29",
+    dateModified: "2026-08-29",
+    category: "Automation",
+    metaDescription:
+      "GAQL explained: query anatomy, search() vs searchStream(), 12 copy-paste Google Ads API reports, and the metrics/segments and micros traps that break queries.",
+    readingTime: "11 min",
+    content: <GoogleAdsApiReportingGaqlEN />
+  },
   {
     slug: "negative-keywords-list",
     title: "Negative Keywords List 2026: 400+ Terms by Category (Copy-Paste)",
