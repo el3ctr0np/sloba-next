@@ -108,11 +108,18 @@ const getChapters = (locale: string): Chapter[] => {
             readTime: "14 min"
           },
           {
-            title: "Negative Keywords: Complete List + Strategy [2026]",
+            title: "Negative Keywords Strategy: Match Types, Organization & Process [2026]",
             excerpt:
-              "Ready-made negative keyword lists and process for eliminating budget waste.",
+              "How negatives actually work — match type behavior, a tiered organization system and the process for mining your own.",
             slug: "negative-keywords-guide",
             readTime: "11 min"
+          },
+          {
+            title: "Negative Keywords List 2026: 400+ Terms by Category (Copy-Paste)",
+            excerpt:
+              "400+ copy-paste terms across 15 categories, brand-safety blocks and an AI prompt that builds a custom list for your business.",
+            slug: "negative-keywords-list",
+            readTime: "12 min"
           },
           {
             title: "Quality Score: What It Is and How to Improve It [2026]",
@@ -167,6 +174,20 @@ const getChapters = (locale: string): Chapter[] => {
               "7-8 headlines instead of 15, angle-based distribution, and a testing loop that actually works.",
             slug: "responsive-search-ads-guide",
             readTime: "14 min"
+          },
+          {
+            title: "Google Search Campaigns: The Complete Guide [2026]",
+            excerpt:
+              "The AI Max suite, the September migration of DSA and broad match campaigns, and an intent-and-margin structure.",
+            slug: "google-search-campaigns-guide",
+            readTime: "12 min"
+          },
+          {
+            title: "Demand Gen Campaigns: The Complete Guide [2026]",
+            excerpt:
+              "Where they show, who they make sense for, creative requirements and setup — compared honestly with PMax and YouTube.",
+            slug: "demand-gen-guide",
+            readTime: "12 min"
           }
         ]
       },
@@ -261,6 +282,13 @@ const getChapters = (locale: string): Chapter[] => {
             readTime: "12 min"
           },
           {
+            title: "Google Ads API Authentication: OAuth, Service Accounts & Developer Token (2026)",
+            excerpt:
+              "OAuth2 desktop vs. web flow, the 7-day refresh token trap, service account rules and a table of common errors with fixes.",
+            slug: "google-ads-api-authentication-guide",
+            readTime: "11 min"
+          },
+          {
             title: "Offline Conversion Import for B2B: Connect Google Ads to Your CRM",
             excerpt:
               "Make the algorithm learn from closed deals instead of form fills — GCLID, Enhanced Conversions for Leads and CRM setup.",
@@ -331,11 +359,18 @@ const getChapters = (locale: string): Chapter[] => {
           readTime: "14 min"
         },
         {
-          title: "Negative Keywords: Kompletna Lista + Strategija [2026]",
+          title: "Negativne Ključne Reči: Strategija, Match Tipovi i Organizacija [2026]",
           excerpt:
-            "Gotove liste negativnih ključnih reči i proces za eliminaciju budžet waste-a.",
+            "Kako negativne ključne reči zaista rade - match tipovi, organizacija po nivoima i proces za pronalaženje sopstvenih.",
           slug: "negativne-kljucne-reci",
           readTime: "11 min"
+        },
+        {
+          title: "Lista Negativnih Ključnih Reči 2026: 400+ Termina po Kategorijama",
+          excerpt:
+            "400+ copy-paste termina u 15 kategorija, brand safety blokovi i AI prompt koji pravi listu za vaš biznis.",
+          slug: "lista-negativnih-kljucnih-reci",
+          readTime: "12 min"
         },
         {
           title: "Quality Score: Šta Je i Kako Ga Poboljšati [2026]",
@@ -390,6 +425,20 @@ const getChapters = (locale: string): Chapter[] => {
             "7-8 naslova umesto 15, angle-based distribucija i testiranje koje zaista daje rezultate.",
           slug: "rsa-vodic",
           readTime: "14 min"
+        },
+        {
+          title: "Google Search Kampanje: Kompletan Vodič [2026]",
+          excerpt:
+            "AI Max suita, septembarska migracija DSA i broad match kampanja, struktura po nameri i marži.",
+          slug: "google-search-kampanje-vodic",
+          readTime: "12 min"
+        },
+        {
+          title: "Demand Gen Kampanje: Kompletan Vodič [2026]",
+          excerpt:
+            "Gde se prikazuju, kome imaju smisla, kreativa i setup - pošteno poređenje sa PMax i YouTube kampanjama.",
+          slug: "demand-gen-vodic",
+          readTime: "12 min"
         }
       ]
     },
@@ -482,6 +531,13 @@ const getChapters = (locale: string): Chapter[] => {
             "Developer token, aplikacija koja prolazi i novi brand verification pilot koji skraćuje review na par sati.",
           slug: "google-ads-api-basic-access-vodic",
           readTime: "12 min"
+        },
+        {
+          title: "Google Ads API Autentifikacija: OAuth, Service Account i Developer Token [2026]",
+          excerpt:
+            "OAuth2 tok korak po korak, zamka refresh tokena od 7 dana, service account pravila i tabela čestih grešaka.",
+          slug: "google-ads-api-autentifikacija",
+          readTime: "11 min"
         },
         {
           title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",
