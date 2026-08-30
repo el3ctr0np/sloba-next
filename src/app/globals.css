@@ -22,16 +22,6 @@
            transition-all duration-300 hover:bg-primary-dark hover:shadow-md;
   }
 
-  /* Blog prose (prose-a:*) ne sme da prebija dugmad-linkove u sadrzaju posta */
-  .prose a.btn-primary {
-    color: #fff;
-    text-decoration: none;
-  }
-  .prose a.btn-secondary {
-    color: rgb(17 24 39);
-    text-decoration: none;
-  }
-
   .btn-secondary {
     @apply bg-accent text-gray-900 px-6 py-3 rounded-xl font-semibold
            transition-all duration-300
@@ -94,4 +84,16 @@
     pointer-events: none;
     border-radius: 0 0.75rem 0.75rem 0;
   }
+}
+
+/* Blog prose (prose-a:* utility) ne sme da prebija dugmad-linkove u sadrzaju
+   posta. Van @layer namerno: unlayered CSS pobedjuje utility layer, sto obicna
+   specificnost unutar @layer components ne moze. */
+.prose a.btn-primary {
+  color: #fff;
+  text-decoration: none;
+}
+.prose a.btn-secondary {
+  color: rgb(17 24 39);
+  text-decoration: none;
 }
