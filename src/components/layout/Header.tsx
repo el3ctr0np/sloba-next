@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
@@ -49,6 +49,30 @@ export function Header() {
     const enSlug = getAlternateSlug(currentBlogSlug, "en");
     return `/blog/${enSlug}` as any;
   }, [currentBlogSlug, resolvedPathname]);
+
+  // One-off nudge toward the free tools. Shown once per session, never on the
+  // tools page itself, and never before the page has settled. Scheduled rather
+  // than set during render so it cannot cause a hydration mismatch.
+  const [showToolsHint, setShowToolsHint] = useState(false);
+  useEffect(() => {
+    if (pathname === "/resursi") return;
+    let alreadyShown = false;
+    try {
+      alreadyShown = sessionStorage.getItem("dj_tools_hint") === "1";
+    } catch {
+      // sessionStorage unavailable — show it, it is harmless
+    }
+    if (alreadyShown) return;
+    const id = setTimeout(() => {
+      setShowToolsHint(true);
+      try {
+        sessionStorage.setItem("dj_tools_hint", "1");
+      } catch {
+        // ignore
+      }
+    }, 0);
+    return () => clearTimeout(id);
+  }, [pathname]);
 
   // Full list — used by the mobile menu.
   const navItems = useMemo(() => [
@@ -198,7 +222,9 @@ export function Header() {
             <Link
               href="/resursi"
               onClick={() => trackCtaClick("header_free_tools", "/resursi")}
-              className="border-2 border-primary text-primary px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition-colors hover:bg-primary hover:text-white"
+              className={`border-2 border-primary text-primary px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition-colors hover:bg-primary hover:text-white ${
+                showToolsHint ? "dj-attention-ring" : ""
+              }`}
             >
               {t("freeTools")}
             </Link>

@@ -51,6 +51,32 @@
   animation-play-state: paused;
 }
 
+/* One-off attention cue for the free-tools button in the header.
+   Deliberately FINITE (three pulses, then it stops) and shown once per session:
+   a button that pulses forever reads as a cheap sales page, which works against
+   a premium, diagnostic positioning. Outside @layer, like the marquee above. */
+@keyframes dj-attention-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(26, 115, 232, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(26, 115, 232, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(26, 115, 232, 0);
+  }
+}
+
+.dj-attention-ring {
+  animation: dj-attention-ring 1.6s ease-out 1.2s 3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dj-attention-ring {
+    animation: none;
+  }
+}
+
 /* Blog prose readability — optimized for Google readability standards */
 .prose {
   --tw-prose-body: #374151;        /* gray-700 — 7:1 contrast ratio */
