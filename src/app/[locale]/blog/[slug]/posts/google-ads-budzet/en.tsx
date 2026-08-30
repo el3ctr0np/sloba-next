@@ -257,18 +257,15 @@ export default function GoogleAdsBudgetPlanningEN() {
 
       <h2 id="check-whether-your-budget-actually-pays-off">Check whether your budget actually pays off</h2>
       <p>
-        If you run eCommerce, I built a free tool that runs this math for you: enter average order value, margin, conversion rate, and budget, and it returns your break-even ROAS and real profitability — with a transparent formula, not a black box.
+        I built a free mini calculator that runs this formula for you, for lead gen and for eCommerce: enter your max CPA (or order value and margin), your goal, and your conversion rate, and it instantly returns the max CPC you can afford and a realistic monthly budget — with a transparent formula, not a black box.
       </p>
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card text-center">
-        <p className="font-heading font-bold text-lg mb-2">Profit-Leak Calculator</p>
-        <p className="text-base text-gray-600 mb-4">Enter your numbers, get your break-even ROAS and a full breakdown by email within 24h.</p>
-        <Link href="/profit-provera" className="btn-secondary inline-block">
+        <p className="font-heading font-bold text-lg mb-2">Budget Calculator</p>
+        <p className="text-base text-gray-600 mb-4">Enter your numbers, the result is calculated instantly on the page. No email required.</p>
+        <Link href="/resursi/budzet-kalkulator" className="btn-secondary inline-block">
           Check your budget
         </Link>
       </div>
-      <p>
-        For lead gen and B2B I don&apos;t have a dedicated tool yet — the logic is simple enough to work out by hand: <strong>max CPA × landing page conversion rate = max CPC</strong> you can afford, and you compare that max CPC against the real CPC in your industry.
-      </p>
 
       <hr />
 
@@ -291,7 +288,7 @@ export default function GoogleAdsBudgetPlanningEN() {
       <p>
         Same logic — margin sets max CPA, max CPA and CVR set max CPC, and max CPA × target order count gives you the monthly budget. Rather than repeat the full manual calculation here (the complete walkthrough with AOV and margin is in{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "how-much-does-google-ads-cost" } }} className="underline">the Google Ads pricing guide</Link>), plug your own numbers into the{" "}
-        <Link href="/profit-provera" className="underline">Profit-Leak Calculator</Link> and get an exact figure for your business, not a generic example.
+        <Link href="/resursi/budzet-kalkulator" className="underline">budget calculator</Link> and get an exact figure for your business, not a generic example.
       </p>
 
       <h3>3. B2B service (long sales cycle)</h3>

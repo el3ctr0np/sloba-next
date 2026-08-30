@@ -175,9 +175,9 @@ export default function GoogleAdsAuditPost() {
         </p>
         <ul className="text-sm text-gray-700 space-y-1.5 mb-6">
           <li>105 tačaka raspoređenih u 12 kategorija, spremnih da se odrađuju jedna po jedna</li>
-          <li>Poseban tab na srpskom i poseban tab na engleskom jeziku</li>
+          <li>Na srpskom, sa engleskim terminima iz interfejsa (tačno kako ih vidite u nalogu)</li>
           <li>Kolone za svaku tačku: kako proveriti, red flag, prioritet (P1-P3), status i beleške</li>
-          <li>Poseban tab {`"Brzi audit za 30 minuta"`} za mesečne provere između dubinskih audita</li>
+          <li>Tab sa uputstvom kako se checklista koristi, korak po korak</li>
         </ul>
         <ChecklistDownloadForm />
       </div>

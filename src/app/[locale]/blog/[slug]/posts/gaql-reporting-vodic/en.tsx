@@ -119,7 +119,7 @@ export default function GoogleAdsApiReportingGaqlEN() {
         </a>
         :
       </p>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`= != > >= < <= IN NOT IN
 LIKE NOT LIKE
 CONTAINS ANY  CONTAINS ALL  CONTAINS NONE
@@ -130,7 +130,7 @@ REGEXP_MATCH  NOT REGEXP_MATCH`}</code>
       <p>
         LIKE only works on string fields, not arrays — use CONTAINS ANY/ALL/NONE for array fields instead. REGEXP_MATCH runs on RE2 syntax, and DURING pairs with a fixed set of date-range literals rather than arbitrary date math:
       </p>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`LAST_7_DAYS   LAST_14_DAYS   LAST_30_DAYS   LAST_BUSINESS_WEEK
 LAST_MONTH    LAST_WEEK_MON_SUN   LAST_WEEK_SUN_SAT
 THIS_MONTH    THIS_WEEK_MON_TODAY   THIS_WEEK_SUN_TODAY
@@ -192,7 +192,7 @@ TODAY   YESTERDAY`}</code>
       </p>
 
       <h3>1. Campaign spend, last 30 days</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT campaign.name, campaign.status, campaign.id,
        segments.date, metrics.impressions, metrics.clicks,
        metrics.cost_micros, metrics.conversions, metrics.conversions_value
@@ -202,7 +202,7 @@ WHERE campaign.status = 'ENABLED'
       </pre>
 
       <h3>2. Search terms report for a period</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT search_term_view.search_term, search_term_view.status,
        campaign.name, campaign.advertising_channel_type, ad_group.name,
        metrics.impressions, metrics.clicks, metrics.cost_micros,
@@ -212,7 +212,7 @@ WHERE segments.date BETWEEN '2026-01-01' AND '2026-01-31'`}</code>
       </pre>
 
       <h3>3. Conversions by day, for pacing and trend checks</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT campaign.id, segments.date,
        metrics.cost_micros, metrics.impressions, metrics.clicks,
        metrics.conversions, metrics.conversions_value
@@ -224,7 +224,7 @@ WHERE segments.date BETWEEN '2026-01-01' AND '2026-03-31'`}</code>
       </p>
 
       <h3>4. Keyword performance with Quality Score</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT
     campaign.name,
     ad_group.name,
@@ -253,7 +253,7 @@ ORDER BY metrics.cost_micros DESC`}</code>
       </p>
 
       <h3>5. RSA asset performance and ad strength</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT ad_group_ad.ad.id,
        ad_group_ad.ad.type,
        ad_group_ad.ad.responsive_search_ad.headlines,
@@ -274,7 +274,7 @@ WHERE ad_group_ad.status != 'REMOVED'
       </pre>
 
       <h3>6. PMax asset group ad strength</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT asset_group.id, asset_group.name, asset_group.status,
        asset_group.ad_strength, campaign.name, campaign.status
 FROM asset_group
@@ -282,7 +282,7 @@ WHERE asset_group.status != 'REMOVED' AND campaign.status = 'ENABLED'`}</code>
       </pre>
 
       <h3>7. Conversion action setup audit</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT
     conversion_action.id,
     conversion_action.name,
@@ -303,7 +303,7 @@ ORDER BY conversion_action.primary_for_goal DESC`}</code>
       </p>
 
       <h3>8. Change event log — an audit trail of who changed what</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT change_event.change_date_time,
        change_event.change_resource_type,
        change_event.change_resource_name,
@@ -326,7 +326,7 @@ LIMIT 1000`}</code>
       </p>
 
       <h3>9. Effective target on portfolio (shared) bidding strategies</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT bidding_strategy.id,
        bidding_strategy.name,
        bidding_strategy.type,
@@ -343,7 +343,7 @@ FROM bidding_strategy`}</code>
       </p>
 
       <h3>10. Shopping and product performance</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT segments.product_title, metrics.impressions, metrics.clicks,
        metrics.cost_micros, metrics.conversions, metrics.conversions_value
 FROM shopping_performance_view
@@ -352,7 +352,7 @@ ORDER BY metrics.cost_micros DESC`}</code>
       </pre>
 
       <h3>11. Account-level assets (sitelinks, callouts)</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT customer_asset.field_type, customer_asset.status,
        asset.id, asset.type
 FROM customer_asset
@@ -363,7 +363,7 @@ WHERE customer_asset.status != 'REMOVED'`}</code>
       </p>
 
       <h3>12. Budget pacing (standard pattern)</h3>
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`SELECT campaign.id, campaign.name,
        campaign_budget.amount_micros,
        campaign_budget.delivery_method,

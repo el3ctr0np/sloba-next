@@ -233,7 +233,7 @@ export default function GoogleAdsApiAutentifikacijaSR() {
         Koji god tok da koristite, Python client biblioteka čita sve iz jednog YAML fajla. Evo kako izgleda - zamenite svaku vrednost, naravno, ovo nije stvarna konfiguracija:
       </p>
 
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`developer_token: "UPIŠI_DEVELOPER_TOKEN_OVDE"
 client_id: "UPIŠI_OAUTH2_CLIENT_ID_OVDE"
 client_secret: "UPIŠI_OAUTH2_CLIENT_SECRET_OVDE"
@@ -253,7 +253,7 @@ use_proto_plus: True`}</code>
         Pre nego što na ovome bilo šta gradite, proverite da ceo lanac - OAuth2, developer token, login-customer-id - stvarno radi. Isti princip kao testiranje na Explorer pristupu pre prijave za Basic: prvo dokažite da lanac radi na najmanjem mogućem pozivu.
       </p>
 
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`# 1) Jednokratno: generiši refresh token (desktop OAuth tok)
 from google_auth_oauthlib.flow import InstalledAppFlow
 

@@ -258,18 +258,15 @@ export default function GoogleAdsBudzetSR() {
 
       <h2 id="proverite-da-li-vam-se-budzet-isplati">Proverite da li vam se budžet isplati</h2>
       <p>
-        Ako vodite eCommerce, napravio sam besplatan alat koji ovo računa umesto vas: unesete prosečnu vrednost porudžbine, maržu, conversion rate i budžet, a on vam vrati break-even ROAS i realnu profitabilnost - sa transparentnom formulom, ne crnom kutijom.
+        Napravio sam besplatan mini kalkulator koji ovu formulu računa umesto vas, za lead gen i za eCommerce: unesete max CPA (ili vrednost porudžbine i maržu), cilj i conversion rate, a on vam odmah vrati max CPC koji smete da platite i realan mesečni budžet - sa transparentnom formulom, ne crnom kutijom.
       </p>
       <div className="bg-white border-2 border-gray-900 rounded-xl p-5 md:p-6 my-6 shadow-card text-center">
-        <p className="font-heading font-bold text-lg mb-2">Profit-provera kalkulator</p>
-        <p className="text-base text-gray-600 mb-4">Unesite svoje brojke, dobijete break-even ROAS i pregled na email u roku od 24h.</p>
-        <Link href="/profit-provera" className="btn-secondary inline-block">
+        <p className="font-heading font-bold text-lg mb-2">Budžet kalkulator</p>
+        <p className="text-base text-gray-600 mb-4">Unesite svoje brojke, rezultat se računa odmah na stranici. Bez ostavljanja emaila.</p>
+        <Link href="/resursi/budzet-kalkulator" className="btn-secondary inline-block">
           Proverite svoj budžet
         </Link>
       </div>
-      <p>
-        Za lead gen i B2B nemam još poseban alat - logika je ipak jednostavna za ručni izračun: <strong>max CPA × conversion rate na landing page-u = max CPC</strong> koji smete da platite, a taj max CPC upoređujete sa realnim CPC-om u vašoj industriji.
-      </p>
 
       <hr />
 
@@ -292,7 +289,7 @@ export default function GoogleAdsBudzetSR() {
       <p>
         Logika je ista - marža određuje max CPA, max CPA i CVR određuju max CPC, a max CPA × ciljani broj porudžbina daje mesečni budžet. Umesto da ovde ponavljam ceo ručni izračun (pun primer sa AOV i maržom je u{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }} className="underline">vodiču o ceni Google Ads-a</Link>), unesite svoje brojke u{" "}
-        <Link href="/profit-provera" className="underline">profit-provera kalkulator</Link> i dobijate tačan broj za svoj biznis, ne generički primer.
+        <Link href="/resursi/budzet-kalkulator" className="underline">budžet kalkulator</Link> i dobijate tačan broj za svoj biznis, ne generički primer.
       </p>
 
       <h3>3. B2B usluga (dug prodajni ciklus)</h3>

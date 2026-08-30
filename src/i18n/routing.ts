@@ -99,6 +99,12 @@ export const routing = defineRouting({
     "/blog": "/blog",
     "/blog/[slug]": "/blog/[slug]",
 
+    // Budget mini calculator (linked from google-ads-budzet post)
+    "/resursi/budzet-kalkulator": {
+      sr: "/resursi/budzet-kalkulator",
+      en: "/resources/budget-calculator"
+    },
+
     // Audit checklist download thank-you (gated Google Sheet/XLSX template)
     "/resursi/audit-checklist/hvala": {
       sr: "/resursi/audit-checklist/hvala",

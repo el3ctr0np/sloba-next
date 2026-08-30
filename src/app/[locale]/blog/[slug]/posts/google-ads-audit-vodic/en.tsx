@@ -202,9 +202,8 @@ export default function GoogleAdsAuditGuideEN() {
         </p>
         <ul className="text-base text-gray-700 mb-6">
           <li>105 checkpoints organized into 12 categories, using the same methodology as this guide</li>
-          <li>A separate EN tab and SR tab in the same file</li>
+          <li>Branded template with a how-to-use tab, in English</li>
           <li>Columns for how to check, red flag, priority (P1-P3), status, and notes on every item</li>
-          <li>A separate &quot;Quick 30-minute audit&quot; tab for monthly check-ins between deep audits</li>
         </ul>
         <ChecklistDownloadForm />
       </div>

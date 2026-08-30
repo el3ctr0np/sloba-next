@@ -7,7 +7,10 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-const FILE_PATH = "/downloads/google-ads-audit-checklist.xlsx";
+const FILE_PATHS = {
+  sr: "/downloads/google-ads-audit-checklist-sr.xlsx",
+  en: "/downloads/google-ads-audit-checklist-en.xlsx",
+} as const;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -57,7 +60,7 @@ export default async function ChecklistThankYouPage({ params }: Props) {
           </p>
 
           <a
-            href={FILE_PATH}
+            href={sr ? FILE_PATHS.sr : FILE_PATHS.en}
             download
             className="btn-secondary inline-block !py-3.5 px-8 text-base font-semibold"
           >

@@ -22,6 +22,16 @@
            transition-all duration-300 hover:bg-primary-dark hover:shadow-md;
   }
 
+  /* Blog prose (prose-a:*) ne sme da prebija dugmad-linkove u sadrzaju posta */
+  .prose a.btn-primary {
+    color: #fff;
+    text-decoration: none;
+  }
+  .prose a.btn-secondary {
+    color: rgb(17 24 39);
+    text-decoration: none;
+  }
+
   .btn-secondary {
     @apply bg-accent text-gray-900 px-6 py-3 rounded-xl font-semibold
            transition-all duration-300

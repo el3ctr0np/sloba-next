@@ -233,7 +233,7 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
         Whichever flow you use, the Python client library reads everything from one YAML file. Here&apos;s the shape of it — replace every value, obviously, this isn&apos;t a real config:
       </p>
 
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`developer_token: "INSERT_DEVELOPER_TOKEN_HERE"
 client_id: "INSERT_OAUTH2_CLIENT_ID_HERE"
 client_secret: "INSERT_OAUTH2_CLIENT_SECRET_HERE"
@@ -253,7 +253,7 @@ use_proto_plus: True`}</code>
         Before building anything on top of this, confirm the whole chain — OAuth2, developer token, login-customer-id — actually connects. The same principle as testing at Explorer access before applying for Basic: prove the plumbing works on the smallest possible call first.
       </p>
 
-      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm leading-relaxed overflow-x-auto">
+      <pre className="border border-gray-200 rounded-xl p-5 bg-gray-50 text-sm text-gray-800 leading-relaxed overflow-x-auto">
         <code>{`# 1) One-time: generate a refresh token (desktop OAuth flow)
 from google_auth_oauthlib.flow import InstalledAppFlow
 
