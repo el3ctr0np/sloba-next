@@ -11,7 +11,9 @@ import { usePathname } from "next/navigation";
  * - read_complete    {active_seconds, scroll_percent}  blog post consumed (>=60s active + >=75% scroll)
  * - toc_click        {target_id, link_text}    in-page anchor navigation
  * - faq_toggle       {question}                <details> accordion opened
- * - cta_click        {cta_text, link_url}      clicks toward kontakt/usluge/audit/konsultacije
+ * - cta_click        {cta_text, link_url}      clicks toward kontakt/usluge/audit/
+ *                                              konsultacije/resursi
+ * - outbound_click   {outbound_host, link_url, link_text}  leaving for another site
  *
  * Scroll depth is intentionally NOT tracked here — the GTM container already
  * has a native scrollDepth trigger (10/25/50/75/90%) firing the "scroll" event.
@@ -24,7 +26,11 @@ import { usePathname } from "next/navigation";
 const TIME_MILESTONES = [30, 60, 120, 300];
 const READ_MIN_SECONDS = 60;
 const READ_MIN_SCROLL = 75;
-const CTA_PATH_RE = /\/(kontakt|contact|usluge|services|audit|konsultacije)(\/|$|\?|#)/;
+// `resursi`/`resources` added Aug 30 2026 with the free-tools hub: until then a
+// click toward any free tool was invisible, because the pattern only knew about
+// commercial pages.
+const CTA_PATH_RE =
+  /\/(kontakt|contact|usluge|services|audit|konsultacije|resursi|resources)(\/|$|\?|#)/;
 
 function push(event: string, params: Record<string, unknown>) {
   const w = window as unknown as { dataLayer?: Array<Record<string, unknown>> };
@@ -114,12 +120,35 @@ export function EngagementTracker() {
       const link = el.closest("a");
       if (!link) return;
       const href = link.getAttribute("href") || "";
-      const text = cleanText(link.textContent, 80);
+      // A card-shaped link would otherwise report its entire body as the label,
+      // so an explicit data-cta-label wins when present.
+      const text =
+        cleanText(link.getAttribute("data-cta-label"), 80) ||
+        cleanText(link.textContent, 80);
 
       if (href.startsWith("#")) {
         push("toc_click", { target_id: href.slice(1), link_text: text });
         return;
       }
+      if (/^https?:\/\//i.test(href)) {
+        // Leaving the site. Worth knowing now that the tools and guides carry a
+        // few hundred links to Google's documentation and the trade press.
+        let host = "";
+        try {
+          host = new URL(href).hostname.replace(/^www\./, "");
+        } catch {
+          return;
+        }
+        if (host && host !== window.location.hostname.replace(/^www\./, "")) {
+          push("outbound_click", {
+            outbound_host: host,
+            link_url: href,
+            link_text: text,
+          });
+        }
+        return;
+      }
+
       if (CTA_PATH_RE.test(href)) {
         push("cta_click", { cta_text: text, link_url: href });
       }

@@ -163,6 +163,7 @@ export default async function ResourcesPage({ params }: Props) {
             <Link
               key={tool.title}
               href={tool.href}
+              data-cta-label={tool.title}
               className={`group block rounded-2xl p-6 md:p-7 transition-all duration-300 no-underline hover:-translate-y-1 ${
                 tool.featured
                   ? "bg-slate-900 text-white border-2 border-gray-900 shadow-card hover:shadow-card-lg"
