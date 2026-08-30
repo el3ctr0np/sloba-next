@@ -665,7 +665,7 @@ function ChapterSection({ chapter, locale }: { chapter: Chapter; locale: string 
                   <div className="relative aspect-[1200/630] bg-slate-100 overflow-hidden">
                     <Image
                       src={featuredImage}
-                      alt={post.title}
+                      alt={postData?.imageAlt ?? post.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

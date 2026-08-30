@@ -1536,7 +1536,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
                   <Image
                     src={post.featuredImage}
-                    alt={post.title}
+                    alt={post.imageAlt ?? post.title}
                     width={1200}
                     height={630}
                     className="w-full h-auto"

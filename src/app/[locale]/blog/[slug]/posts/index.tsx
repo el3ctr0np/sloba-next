@@ -112,6 +112,8 @@ export type PostData = {
   category: string;
   metaDescription: string;
   featuredImage?: string;
+  /** Lokalizovan alt tekst hero slike; fallback je title. */
+  imageAlt?: string;
   readingTime?: string;
   content: ReactNode;
   /**
@@ -134,7 +136,8 @@ const srPosts: PostData[] = [
     category: "Performance Max",
     metaDescription:
       "Performance Max audit checklist: 38 tačaka u 8 grupa (struktura, merenje, feed, brand safety, kanali, bidding, signali) - gde proveriti i šta je crveni signal.",
-    featuredImage: "/blog/pmax-audit-checklist-sr.webp",
+    featuredImage: "/blog/pmax-audit-checklist.webp",
+    imageAlt: "Ilustracija klipborda sa checklistom, kvačicama i lupom, tema audita Performance Max kampanje",
     readingTime: "14 min",
     content: <PmaxAuditChecklistSR />,
     ctaTarget: "audit"
@@ -159,7 +162,8 @@ const srPosts: PostData[] = [
     category: "Automatizacija",
     metaDescription:
       "GAQL nije SQL - anatomija upita, search() naspram searchStream(), 12 gotovih izveštaja za copy-paste i zamke zbog kojih upiti padaju na validaciji.",
-    featuredImage: "/blog/gaql-reporting-vodic-sr.webp",
+    featuredImage: "/blog/gaql-reporting-vodic.webp",
+    imageAlt: "Ilustracija zupčanika i kabla koji napaja grafikon podacima, tema GAQL upita za Google Ads API izveštavanje",
     readingTime: "9 min",
     content: <GaqlReportingVodicSR />
   },
@@ -728,7 +732,8 @@ const enPosts: PostData[] = [
     category: "Performance Max",
     metaDescription:
       "Performance Max audit checklist: 38 checkpoints across 8 groups — asset groups, feed quality, negative keywords, brand exclusions, and channel reporting.",
-    featuredImage: "/blog/pmax-audit-checklist-en.webp",
+    featuredImage: "/blog/pmax-audit-checklist.webp",
+    imageAlt: "Illustration of a clipboard checklist with check marks and a magnifying glass, Performance Max campaign audit topic",
     readingTime: "15 min",
     content: <PerformanceMaxAuditChecklistEN />,
     ctaTarget: "audit"
@@ -753,7 +758,8 @@ const enPosts: PostData[] = [
     category: "Automation",
     metaDescription:
       "GAQL explained: query anatomy, search() vs searchStream(), 12 copy-paste Google Ads API reports, and the metrics/segments and micros traps that break queries.",
-    featuredImage: "/blog/gaql-reporting-vodic-en.webp",
+    featuredImage: "/blog/gaql-reporting-vodic.webp",
+    imageAlt: "Illustration of gears and a cable feeding a bar chart with data, GAQL query guide for Google Ads API reporting topic",
     readingTime: "11 min",
     content: <GoogleAdsApiReportingGaqlEN />
   },
