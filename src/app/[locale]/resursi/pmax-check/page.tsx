@@ -30,7 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Prođite kroz 38 tačaka provere Performance Max kampanje i dobijte ponderisan skor po grupi i ukupno, plus redosled popravki. Besplatno, radi u pregledaču, bez ostavljanja emaila.",
     locale,
-    path: "/resursi/pmax-check",
+    path: "/resources/pmax-check",
+    srPath: "/resursi/pmax-check",
   });
 }
 

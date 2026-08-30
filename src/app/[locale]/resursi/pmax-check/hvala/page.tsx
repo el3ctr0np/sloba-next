@@ -25,7 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           description:
             "Vaš Performance Max skor i označene tačke su stigli do mene. Svaki pročitam i odgovorim lično.",
           locale,
-          path: "/resursi/pmax-check/hvala",
+          path: "/resources/pmax-check/thank-you",
+          srPath: "/resursi/pmax-check/hvala",
         });
 
   // Post-submit page: keep it out of the index so the tool stays the way in.
