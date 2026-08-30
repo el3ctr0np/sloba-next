@@ -63,11 +63,45 @@ export function HeroV1({
               )}
             </div>
 
-            <p className="text-sm md:text-base font-semibold text-slate-700 tracking-tight">
-              {isEn
-                ? "10+ years of experience · 3x UK Search Awards · 50+ brands"
-                : "10+ godina iskustva · 3x UK Search Awards · 50+ brendova"}
-            </p>
+            {/* Trust traka: nagrada nosi glavnu tezinu, godine i brendovi je podupiru */}
+            <div className="flex flex-col sm:flex-row gap-3 max-w-xl">
+              <div className="flex-[1.4] flex items-center gap-3 bg-slate-900 text-white rounded-xl px-4 py-3">
+                <svg
+                  className="w-7 h-7 flex-shrink-0 text-yellow-400"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M19 5h-2V3H7v2H5a2 2 0 0 0-2 2v1a4 4 0 0 0 3.4 3.95A6 6 0 0 0 11 15.9V18H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-3v-2.1a6 6 0 0 0 4.6-3.95A4 4 0 0 0 21 8V7a2 2 0 0 0-2-2ZM5 8V7h2v3.83A2 2 0 0 1 5 9V8Zm14 1a2 2 0 0 1-2 1.83V7h2v2Z" />
+                </svg>
+                <span>
+                  <span className="block font-heading font-bold text-base leading-tight">
+                    3x UK Search Awards
+                  </span>
+                  <span className="block text-[10px] text-slate-400 uppercase tracking-[0.06em] mt-0.5">
+                    {isEn ? "award-winning Google Ads work" : "nagrađivan Google Ads rad"}
+                  </span>
+                </span>
+              </div>
+              <div className="flex gap-3 flex-1">
+                <div className="flex-1 border border-gray-200 bg-gray-50 rounded-xl px-3.5 py-3">
+                  <span className="block font-heading font-bold text-base leading-tight text-slate-900">
+                    {isEn ? "10+ years" : "10+ godina"}
+                  </span>
+                  <span className="block text-[11px] text-gray-500 mt-0.5">
+                    {isEn ? "in Google Ads" : "u Google Ads-u"}
+                  </span>
+                </div>
+                <div className="flex-1 border border-gray-200 bg-gray-50 rounded-xl px-3.5 py-3">
+                  <span className="block font-heading font-bold text-base leading-tight text-slate-900">
+                    {isEn ? "50+ brands" : "50+ brendova"}
+                  </span>
+                  <span className="block text-[11px] text-gray-500 mt-0.5">
+                    {isEn ? "across 6+ countries" : "u 6+ zemalja"}
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right: photo */}
