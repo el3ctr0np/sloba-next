@@ -103,7 +103,12 @@ export function scoreAudit(def: AuditDefinition, answers: Answers): ScoreResult 
       const answer = answers[item.id];
       if (answer === "na") na += 1;
       if (answer === "problem" || answer === "unsure") {
-        findings.push({ item, groupTitle: group.title, answer });
+        findings.push({
+          item,
+          groupId: group.id,
+          groupTitle: group.title,
+          answer,
+        });
         if (answer === "problem") {
           problems += 1;
           if (item.priority === "P1") p1Problems += 1;

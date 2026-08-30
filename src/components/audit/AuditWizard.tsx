@@ -73,6 +73,8 @@ export type AuditWizardProps = {
   };
   /** Rendered at the very bottom of the results. */
   guideHref: React.ReactNode;
+  /** Blog slug of the source guide; each finding deep-links to its group anchor. */
+  guideSlug?: string;
 };
 
 export function AuditWizard({
@@ -82,6 +84,7 @@ export function AuditWizard({
   locale,
   report,
   guideHref,
+  guideSlug,
 }: AuditWizardProps) {
   const [phase, setPhase] = useState<Phase>("intro");
   const [answers, setAnswers] = useState<Answers>({});
@@ -264,6 +267,15 @@ export function AuditWizard({
                 </li>
               ))}
             </ol>
+
+            <p className="text-sm text-gray-500 mt-5 mb-0">{copy.intro.timeEstimate}</p>
+
+            <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-6">
+              <p className="font-semibold text-blue-900 text-sm mb-1">
+                {copy.intro.forWhomTitle}
+              </p>
+              <p className="text-blue-800 text-sm mb-0">{copy.intro.forWhom}</p>
+            </div>
           </div>
 
           <div className="bg-slate-900 text-white p-6 md:p-8">
@@ -461,14 +473,14 @@ export function AuditWizard({
                 <button
                   type="button"
                   onClick={finish}
-                  disabled={!allAnswered}
+                  disabled={answered === 0}
                   className={`flex-1 sm:flex-none px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                    allAnswered
+                    answered > 0
                       ? "bg-accent text-gray-900 hover:brightness-105 hover:shadow-md hover:-translate-y-0.5"
                       : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
                 >
-                  {copy.wizard.finish} →
+                  {allAnswered ? copy.wizard.finish : copy.wizard.finishPartial} →
                 </button>
               )}
 
@@ -481,14 +493,15 @@ export function AuditWizard({
               </p>
             </div>
 
-            {/* Finish shortcut from any group once everything is answered */}
-            {allAnswered && !isLastGroup && (
+            {/* Finish from any group. A partial run still scores honestly: unanswered
+                checkpoints leave the denominator alone, and the result says so. */}
+            {answered > 0 && !isLastGroup && (
               <button
                 type="button"
                 onClick={finish}
                 className="btn-secondary w-full mt-4 !py-3.5 text-base font-semibold"
               >
-                {copy.wizard.finish} →
+                {allAnswered ? copy.wizard.finish : copy.wizard.finishPartial} →
               </button>
             )}
           </div>
@@ -504,6 +517,7 @@ export function AuditWizard({
           eventPrefix={eventPrefix}
           report={report}
           guideHref={guideHref}
+          guideSlug={guideSlug}
           onReview={() => {
             setPhase("wizard");
             requestAnimationFrame(scrollToTop);

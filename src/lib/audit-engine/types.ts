@@ -79,6 +79,8 @@ export type ScoreResult = {
 
 export type Finding = {
   item: AuditItem;
+  /** Group id, which doubles as the anchor of that section in the source guide. */
+  groupId: string;
   groupTitle: string;
   answer: Extract<Answer, "problem" | "unsure">;
 };

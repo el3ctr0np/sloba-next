@@ -65,7 +65,15 @@ export function AuditReportForm({
   // these values into HTML table cells, where a bare newline collapses to a
   // space and turns the list into one unreadable run-on line.
   const groupLines = result.groups
-    .map((g) => `• ${g.title}: ${g.score === null ? "N/A" : `${g.score}/100`}`)
+    .map((g) => {
+      const label =
+        g.score === null
+          ? g.answered === 0
+            ? copy.results.groupNotChecked
+            : "N/A"
+          : `${g.score}/100`;
+      return `• ${g.title}: ${label}`;
+    })
     .join("\n");
 
   const findingLines = result.findings

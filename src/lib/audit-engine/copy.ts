@@ -33,6 +33,10 @@ export type AuditCopy = {
     howTitle: string;
     how: string[];
     noEmail: string;
+    /** Honest up-front framing: how long, and what you need to answer these. */
+    timeEstimate: string;
+    forWhomTitle: string;
+    forWhom: string;
   };
   wizard: {
     /** Template with {i} and {n}. */
@@ -48,6 +52,8 @@ export type AuditCopy = {
     groupDone: string;
     answerAllInGroup: PluralForms;
     backToStart: string;
+    /** Shown on the finish button while the run is still incomplete. */
+    finishPartial: string;
   };
   results: {
     eyebrow: string;
@@ -56,8 +62,26 @@ export type AuditCopy = {
     ofHundred: string;
     byGroup: string;
     naGroup: string;
+    /** A group nobody answered yet — different from a group answered all-N/A. */
+    groupNotChecked: string;
     /** Shown instead of a rank when every checkpoint was marked N/A. */
     allNa: { title: string; blurb: string };
+    /** Banner on a partial run. Template with {answered} and {total}. */
+    partialTitle: string;
+    partialBody: string;
+    finishRest: string;
+    /** Per-finding affordances. */
+    whereLabel: string;
+    openInGuide: string;
+    /** Export. */
+    exportTitle: string;
+    exportBody: string;
+    copyReport: string;
+    copied: string;
+    printReport: string;
+    showAsText: string;
+    hideText: string;
+    copyManually: string;
     p1Label: string;
     problemsLabel: string;
     unsureLabel: string;
@@ -155,6 +179,9 @@ export const pmaxCopySR: AuditCopy = {
       "Progres se čuva u vašem pregledaču, možete da zatvorite stranicu i vratite se.",
     ],
     noEmail: "Alat radi bez emaila. Email tražim samo ako hoćete pun izveštaj u inbox.",
+    timeEstimate: "Ceo prolaz traje 15 do 20 minuta. Ne morate odjednom: rezultat možete videti i na pola puta, a progres vas čeka kad se vratite.",
+    forWhomTitle: "Za koga je",
+    forWhom: "Provera traži da tokom popunjavanja gledate u Google Ads nalog, jer se za svaku tačku pita nešto konkretno iz interfejsa. Radi se najlakše ako sami vodite kampanje ili imate pristup nalogu. Ako nemate pristup, ovo je lista pitanja koju možete postaviti onome ko vam vodi nalog.",
   },
   wizard: {
     groupOf: "Grupa {i} od {n}",
@@ -176,6 +203,7 @@ export const pmaxCopySR: AuditCopy = {
       other: "Još {n} tačaka u ovoj grupi",
     },
     backToStart: "Nazad na početak",
+    finishPartial: "Vidite rezultat dosad",
   },
   results: {
     eyebrow: "Rezultat",
@@ -184,11 +212,27 @@ export const pmaxCopySR: AuditCopy = {
     ofHundred: "/ 100",
     byGroup: "Skor po grupi",
     naGroup: "cela grupa označena kao N/A",
+    groupNotChecked: "još nije provereno",
     allNa: {
       title: "Nema šta da se oceni",
       blurb:
         "Sve tačke su označene kao N/A, pa nema osnove za skor. Vratite se na proveru i odgovorite bar na tačke koje se odnose na vašu kampanju.",
     },
+    partialTitle: "Ovo je delimičan rezultat",
+    partialBody:
+      "Odgovorili ste na {answered} od {total} tačaka. Skor računa samo ono što ste stvarno proverili, pa je tačan za taj deo, ali ne pokriva ceo nalog.",
+    finishRest: "Odgovorite na ostatak",
+    whereLabel: "Gde",
+    openInGuide: "Otvorite u vodiču",
+    exportTitle: "Ponesite nalaz sa sobom",
+    exportBody:
+      "Kopirajte nalaz kao tekst ili ga odštampajte. Korisno ako proveru radite za nekog drugog, ili ako hoćete da tačan spisak pošaljete onome ko vam vodi nalog.",
+    copyReport: "Kopirajte nalaz",
+    copied: "Kopirano",
+    printReport: "Odštampajte",
+    showAsText: "Prikažite kao tekst",
+    hideText: "Sakrijte tekst",
+    copyManually: "Kopiranje jednim klikom nije prošlo u vašem pregledaču. Tekst je ispod, označite ga i kopirajte ručno.",
     p1Label: "P1 problema",
     problemsLabel: "problema ukupno",
     unsureLabel: "puta Ne znam",
@@ -293,6 +337,9 @@ export const pmaxCopyEN: AuditCopy = {
       "Progress is saved in your browser, so you can close the page and come back.",
     ],
     noEmail: "The tool works without an email. I only ask for one if you want the full report in your inbox.",
+    timeEstimate: "A full pass takes 15 to 20 minutes. You do not have to do it in one sitting: you can see a result halfway through, and your progress waits for you.",
+    forWhomTitle: "Who this is for",
+    forWhom: "The check assumes you have the Google Ads account open while you answer, because every checkpoint asks something specific about the interface. Easiest if you run the campaigns yourself or have account access. If you do not, this is a list of questions to put to whoever does.",
   },
   wizard: {
     groupOf: "Group {i} of {n}",
@@ -312,6 +359,7 @@ export const pmaxCopyEN: AuditCopy = {
       other: "{n} checkpoints left in this group",
     },
     backToStart: "Back to the start",
+    finishPartial: "See the result so far",
   },
   results: {
     eyebrow: "Result",
@@ -320,11 +368,27 @@ export const pmaxCopyEN: AuditCopy = {
     ofHundred: "/ 100",
     byGroup: "Score by group",
     naGroup: "whole group marked N/A",
+    groupNotChecked: "not checked yet",
     allNa: {
       title: "Nothing to score",
       blurb:
         "Every checkpoint is marked N/A, so there is no basis for a score. Go back and answer at least the checkpoints that do apply to your campaign.",
     },
+    partialTitle: "This is a partial result",
+    partialBody:
+      "You answered {answered} of {total} checkpoints. The score counts only what you actually checked, so it is accurate for that slice, but it does not cover the whole account.",
+    finishRest: "Answer the rest",
+    whereLabel: "Where",
+    openInGuide: "Open in the guide",
+    exportTitle: "Take the findings with you",
+    exportBody:
+      "Copy the findings as text or print them. Useful if you are running the check for someone else, or if you want to send the exact list to whoever manages the account.",
+    copyReport: "Copy the findings",
+    copied: "Copied",
+    printReport: "Print",
+    showAsText: "Show as text",
+    hideText: "Hide the text",
+    copyManually: "One-click copy did not go through in your browser. The text is below — select it and copy by hand.",
     p1Label: "P1 problems",
     problemsLabel: "problems total",
     unsureLabel: "not sure",

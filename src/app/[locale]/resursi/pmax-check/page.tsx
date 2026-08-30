@@ -113,6 +113,7 @@ export default async function PmaxCheckPage({ params }: Props) {
               sr ? "sr/resursi/pmax-check/hvala" : "en/resources/pmax-check/thank-you"
             }`,
           }}
+          guideSlug={guideSlug}
           guideHref={
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: guideSlug } }}

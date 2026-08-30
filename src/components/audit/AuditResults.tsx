@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import type { AuditCopy } from "@/lib/audit-engine/copy";
+import { fill } from "@/lib/audit-engine/format";
 import {
   PAID_AUDIT_THRESHOLD,
   groupByQuadrant,
@@ -72,6 +73,8 @@ export type AuditResultsProps = {
   eventPrefix: string;
   report: { formName: string; subject: string; nextUrl: string };
   guideHref: React.ReactNode;
+  /** Blog slug of the source guide; each finding deep-links to its group anchor. */
+  guideSlug?: string;
   onReview: () => void;
   onReset: () => void;
 };
@@ -84,10 +87,14 @@ export function AuditResults({
   eventPrefix,
   report,
   guideHref,
+  guideSlug,
   onReview,
   onReset,
 }: AuditResultsProps) {
   const [revealed, setRevealed] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [showText, setShowText] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   // A timer rather than requestAnimationFrame: rAF is paused while the tab is
   // hidden, and the reveal gates visibility (opacity-0), so a backgrounded tab
@@ -109,6 +116,51 @@ export function AuditResults({
   );
   const belowThreshold =
     result.scorable && result.overall < PAID_AUDIT_THRESHOLD;
+  const isPartial = result.answered < result.total;
+
+  /** Plain-text findings, for pasting into an email to whoever runs the account. */
+  const reportText = useMemo(() => {
+    const lines: string[] = [];
+    lines.push(`${copy.results.title}: ${result.scorable ? `${result.overall}/100` : "N/A"}`);
+    lines.push(`${copy.wizard.progress.replace("{answered}", String(result.answered)).replace("{total}", String(result.total))}`);
+    lines.push("");
+    lines.push(copy.results.byGroup);
+    for (const g of result.groups) {
+      const label =
+        g.score === null
+          ? g.answered === 0
+            ? copy.results.groupNotChecked
+            : "N/A"
+          : `${g.score}/100`;
+      lines.push(`  ${g.title}: ${label}`);
+    }
+    if (result.findings.length > 0) {
+      lines.push("");
+      lines.push(copy.results.matrixTitle);
+      for (const f of result.findings) {
+        lines.push(
+          `  #${f.item.n} [${f.item.priority} / ${copy.effort[f.item.effort]} / ${copy.answers[f.answer]}] ${f.item.title}`,
+        );
+        lines.push(`      ${copy.results.whereLabel}: ${f.item.where}${f.item.note ? `, ${f.item.note}` : ""}`);
+      }
+    }
+    return lines.join("\n");
+  }, [copy, result]);
+
+  const copyReport = async () => {
+    try {
+      await navigator.clipboard.writeText(reportText);
+      setCopied(true);
+      setCopyFailed(false);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Clipboard API refuses in an insecure context, without permission, or when
+      // the document is not focused. Never fail silently: reveal the text so the
+      // findings can still be selected and copied by hand.
+      setCopyFailed(true);
+      setShowText(true);
+    }
+  };
 
   // Ring geometry: r=52 gives a 327px circumference at a 120px box.
   const circumference = 2 * Math.PI * 52;
@@ -118,7 +170,29 @@ export function AuditResults({
       : circumference;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6" data-audit-results>
+      {/* ── Partial-run banner ── */}
+      {isPartial && (
+        <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-5 md:p-6">
+          <p className="font-heading font-bold text-gray-900 mb-1.5">
+            {copy.results.partialTitle}
+          </p>
+          <p className="text-sm text-gray-700 mb-4">
+            {fill(copy.results.partialBody, {
+              answered: result.answered,
+              total: result.total,
+            })}
+          </p>
+          <button
+            type="button"
+            onClick={onReview}
+            className="btn-primary inline-block text-sm no-print"
+          >
+            {copy.results.finishRest} →
+          </button>
+        </div>
+      )}
+
       {/* ── Score ── */}
       <div className="bg-slate-900 text-white rounded-2xl border-2 border-gray-900 shadow-card overflow-hidden">
         <div className="p-6 md:p-10">
@@ -130,6 +204,7 @@ export function AuditResults({
             <div className="relative flex-shrink-0 w-[120px] h-[120px]">
               <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
                 <circle
+                  data-ring="track"
                   cx="60"
                   cy="60"
                   r="52"
@@ -138,6 +213,7 @@ export function AuditResults({
                   strokeWidth="10"
                 />
                 <circle
+                  data-ring="value"
                   cx="60"
                   cy="60"
                   r="52"
@@ -214,6 +290,9 @@ export function AuditResults({
           <div className="space-y-3.5">
             {result.groups.map((g, i) => {
               const gb = g.score === null ? null : bandClasses(g.score);
+              // An untouched group and a group answered entirely N/A both score
+              // null, but they mean different things to the reader.
+              const notChecked = g.answered === 0;
               return (
                 <Reveal key={g.groupId} shown={revealed} delay={400 + i * 70}>
                   <div className="flex items-baseline justify-between gap-4 mb-1.5">
@@ -223,7 +302,7 @@ export function AuditResults({
                         gb ? gb.text : "text-slate-500"
                       }`}
                     >
-                      {g.score === null ? "N/A" : g.score}
+                      {g.score === null ? (notChecked ? "-" : "N/A") : g.score}
                     </p>
                   </div>
                   <div className="h-1.5 w-full bg-slate-700 rounded-full overflow-hidden">
@@ -239,7 +318,9 @@ export function AuditResults({
                   </div>
                   {g.score === null && (
                     <p className="text-[11px] text-slate-400 mt-1 mb-0">
-                      {copy.results.naGroup}
+                      {notChecked
+                        ? copy.results.groupNotChecked
+                        : copy.results.naGroup}
                     </p>
                   )}
                 </Reveal>
@@ -306,9 +387,32 @@ export function AuditResults({
                             <p className="text-sm font-semibold text-gray-900 mb-0.5">
                               {f.item.title}
                             </p>
+                            {/* The next move: where in the interface this lives. */}
+                            <p className="text-xs text-gray-600 mb-1">
+                              <span className="font-semibold">
+                                {copy.results.whereLabel}:
+                              </span>{" "}
+                              {f.item.where}
+                              {f.item.note ? `, ${f.item.note}` : ""}
+                            </p>
                             <p className="text-xs text-gray-500 mb-0">
                               {copy.priority[f.item.priority]} ·{" "}
                               {copy.effort[f.item.effort]} · {copy.answers[f.answer]}
+                              {guideSlug && (
+                                <>
+                                  {" · "}
+                                  <Link
+                                    href={{
+                                      pathname: "/blog/[slug]",
+                                      params: { slug: guideSlug },
+                                      hash: f.groupId,
+                                    }}
+                                    className="underline font-semibold no-print"
+                                  >
+                                    {copy.results.openInGuide}
+                                  </Link>
+                                </>
+                              )}
                             </p>
                           </div>
                         </li>
@@ -326,7 +430,57 @@ export function AuditResults({
           </>
         )}
 
-        <div className="flex flex-col sm:flex-row gap-3 mt-6 pt-6 border-t border-gray-200">
+        {/* Take it with you: the findings are only useful if they can leave the page. */}
+        {result.findings.length > 0 && (
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 md:p-5 mt-6 no-print">
+            <p className="font-heading font-semibold text-gray-900 mb-1">
+              {copy.results.exportTitle}
+            </p>
+            <p className="text-sm text-gray-600 mb-4">{copy.results.exportBody}</p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button
+                type="button"
+                onClick={copyReport}
+                className="px-5 py-2.5 rounded-lg font-semibold text-sm border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors"
+              >
+                {copied ? `✓ ${copy.results.copied}` : copy.results.copyReport}
+              </button>
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="px-5 py-2.5 rounded-lg font-semibold text-sm border border-gray-300 text-gray-700 hover:border-gray-900 hover:text-gray-900 transition-colors"
+              >
+                {copy.results.printReport}
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowText((v) => !v)}
+                className="px-5 py-2.5 rounded-lg font-semibold text-sm text-gray-500 hover:text-gray-900 transition-colors sm:ml-auto"
+              >
+                {showText ? copy.results.hideText : copy.results.showAsText}
+              </button>
+            </div>
+
+            {copyFailed && (
+              <p className="text-sm text-amber-800 bg-amber-50 border border-amber-200 rounded-lg p-3 mt-4 mb-0">
+                {copy.results.copyManually}
+              </p>
+            )}
+
+            {showText && (
+              <textarea
+                readOnly
+                value={reportText}
+                onFocus={(e) => e.currentTarget.select()}
+                rows={12}
+                aria-label={copy.results.exportTitle}
+                className="w-full mt-4 px-4 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 text-xs font-mono leading-relaxed focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+              />
+            )}
+          </div>
+        )}
+
+        <div className="flex flex-col sm:flex-row gap-3 mt-6 pt-6 border-t border-gray-200 no-print">
           <button
             type="button"
             onClick={onReview}
@@ -345,7 +499,7 @@ export function AuditResults({
       </Reveal>
 
       {/* ── Report gate (the only place an email is asked for) ── */}
-      <Reveal shown={revealed} delay={800}>
+      <Reveal shown={revealed} delay={800} className="no-print">
         <AuditReportForm
           definition={definition}
           copy={copy}
@@ -356,7 +510,7 @@ export function AuditResults({
       </Reveal>
 
       {/* ── Paid audit CTA, loud below the threshold ── */}
-      <Reveal shown={revealed} delay={900}>
+      <Reveal shown={revealed} delay={900} className="no-print">
         {belowThreshold ? (
           <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-10 text-center">
             <p className="font-heading font-bold text-xl md:text-2xl mb-3">
@@ -388,7 +542,9 @@ export function AuditResults({
         )}
       </Reveal>
 
-      <Reveal shown={revealed} delay={950}>{guideHref}</Reveal>
+      <Reveal shown={revealed} delay={950} className="no-print">
+        {guideHref}
+      </Reveal>
     </div>
   );
 }

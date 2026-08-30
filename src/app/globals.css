@@ -97,3 +97,63 @@
   color: rgb(17 24 39);
   text-decoration: none;
 }
+
+/* Print: the audit result has to survive being printed or saved as PDF, because
+   the whole point is that a findings list can leave the page and be sent to
+   whoever runs the account. Deliberately outside @layer — unlayered CSS beats
+   the utility layer, which plain specificity inside @layer components cannot.
+
+   Scoped with :has() so this only changes how the audit tool prints, not how
+   every other page on the site prints. `.no-print` carries no screen styles on
+   purpose: a `display` rule here would override the display utilities on the
+   elements that use it. */
+@media print {
+  body:has([data-audit-results]) .no-print,
+  body:has([data-audit-results]) > header,
+  body:has([data-audit-results]) > footer {
+    display: none !important;
+  }
+
+  /* Print in ink, not in navy: the dark result panels would eat a cartridge. */
+  [data-audit-results],
+  [data-audit-results] * {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
+
+  [data-audit-results] {
+    max-width: 100% !important;
+  }
+
+  /* Keep the borders that carry meaning, drop the decoration. */
+  [data-audit-results] .rounded-2xl,
+  [data-audit-results] .rounded-xl {
+    border: 1px solid #999 !important;
+    break-inside: avoid;
+  }
+
+  [data-audit-results] li {
+    break-inside: avoid;
+  }
+
+  /* Score ring: keep the track light and the value solid, or the whole circle
+     prints as one filled ring and stops meaning anything. */
+  [data-audit-results] circle[data-ring="track"] {
+    stroke: #d1d5db !important;
+  }
+  [data-audit-results] circle[data-ring="value"] {
+    stroke: #000 !important;
+  }
+
+  /* The reveal animation leaves elements at opacity 0 until it runs; a print
+     from a background tab must never come out blank. */
+  [data-audit-results] * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  @page {
+    margin: 15mm;
+  }
+}
