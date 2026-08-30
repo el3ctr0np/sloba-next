@@ -134,6 +134,7 @@ const srPosts: PostData[] = [
     category: "Performance Max",
     metaDescription:
       "Performance Max audit checklist: 38 tačaka u 8 grupa (struktura, merenje, feed, brand safety, kanali, bidding, signali) - gde proveriti i šta je crveni signal.",
+    featuredImage: "/blog/pmax-audit-checklist-sr.webp",
     readingTime: "14 min",
     content: <PmaxAuditChecklistSR />,
     ctaTarget: "audit"
@@ -146,6 +147,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Koliki budžet vam treba za Google Ads i kako ga rasporediti kroz faze test, optimizacija, skaliranje. Formula, pragovi i 3 računska primera.",
+    featuredImage: "/blog/google-ads-budzet-sr.webp",
     readingTime: "9 min",
     content: <GoogleAdsBudzetSR />
   },
@@ -157,6 +159,7 @@ const srPosts: PostData[] = [
     category: "Automatizacija",
     metaDescription:
       "GAQL nije SQL - anatomija upita, search() naspram searchStream(), 12 gotovih izveštaja za copy-paste i zamke zbog kojih upiti padaju na validaciji.",
+    featuredImage: "/blog/gaql-reporting-vodic-sr.webp",
     readingTime: "9 min",
     content: <GaqlReportingVodicSR />
   },
@@ -168,6 +171,7 @@ const srPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Lista od 400+ negativnih ključnih reči za Google Ads u 15 kategorija, sa srpskim terminima, brand safety blokom i AI promptom za prilagođavanje vašem biznisu.",
+    featuredImage: "/blog/lista-negativnih-kljucnih-reci-sr.webp",
     readingTime: "12 min",
     content: <ListaNegativnihKljucnihReciSR />,
     ctaTarget: "audit"
@@ -180,6 +184,7 @@ const srPosts: PostData[] = [
     category: "Automatizacija",
     metaDescription:
       "Google Ads API autentifikacija bez lutanja: OAuth2 tok korak po korak, refresh token zamka od 7 dana, service account pravila i tabela čestih grešaka sa rešenjima.",
+    featuredImage: "/blog/google-ads-api-autentifikacija-sr.webp",
     readingTime: "11 min",
     content: <GoogleAdsApiAutentifikacijaSR />
   },
@@ -723,6 +728,7 @@ const enPosts: PostData[] = [
     category: "Performance Max",
     metaDescription:
       "Performance Max audit checklist: 38 checkpoints across 8 groups — asset groups, feed quality, negative keywords, brand exclusions, and channel reporting.",
+    featuredImage: "/blog/pmax-audit-checklist-en.webp",
     readingTime: "15 min",
     content: <PerformanceMaxAuditChecklistEN />,
     ctaTarget: "audit"
@@ -735,6 +741,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "Google Ads budget in three phases (test, optimize, scale): the max-CPA formula, spend by phase, when to increase, and worked examples with transparent math.",
+    featuredImage: "/blog/google-ads-budzet-en.webp",
     readingTime: "13 min",
     content: <GoogleAdsBudgetPlanningEN />
   },
@@ -746,6 +753,7 @@ const enPosts: PostData[] = [
     category: "Automation",
     metaDescription:
       "GAQL explained: query anatomy, search() vs searchStream(), 12 copy-paste Google Ads API reports, and the metrics/segments and micros traps that break queries.",
+    featuredImage: "/blog/gaql-reporting-vodic-en.webp",
     readingTime: "11 min",
     content: <GoogleAdsApiReportingGaqlEN />
   },
@@ -757,6 +765,7 @@ const enPosts: PostData[] = [
     category: "Google Ads",
     metaDescription:
       "400+ copy-paste negative keywords across 15 categories, with brand-safety and adult blocks plus a ready AI prompt to generate a custom list for your business.",
+    featuredImage: "/blog/lista-negativnih-kljucnih-reci-en.webp",
     readingTime: "12 min",
     content: <NegativeKeywordsListEN />,
     ctaTarget: "audit"
@@ -769,6 +778,7 @@ const enPosts: PostData[] = [
     category: "Automation",
     metaDescription:
       "Google Ads API authentication explained: OAuth2 desktop vs. web flow, the 7-day refresh token trap, service account rules, and a table of common errors with fixes.",
+    featuredImage: "/blog/google-ads-api-autentifikacija-en.webp",
     readingTime: "11 min",
     content: <GoogleAdsApiAuthenticationGuideEN />
   },
