@@ -21,6 +21,7 @@ import type {
 } from "@/lib/audit-engine/types";
 import { AuditResults } from "./AuditResults";
 import { CheckpointCard } from "./CheckpointCard";
+import { NotesPanel } from "./NotesPanel";
 import type { Teaching } from "@/lib/audit-engine/data/pmax-check-teaching";
 
 type DataLayerWindow = Window & { dataLayer?: Array<Record<string, unknown>> };
@@ -71,7 +72,9 @@ export function AuditWizard({
   // inside one tick would otherwise each read the same pre-render snapshot and
   // overwrite one another. Keep the two in lockstep on every assignment.
   const answersRef = useRef<Answers>({});
+  const notesRef = useRef("");
   const [groupIndex, setGroupIndex] = useState(0);
+  const [notes, setNotes] = useState("");
   const [restored, setRestored] = useState<{ answers: number } | null>(null);
   const [hydrated, setHydrated] = useState(false);
 
@@ -103,7 +106,9 @@ export function AuditWizard({
     const id = setTimeout(() => {
       if (saved) {
         answersRef.current = saved.answers;
+        notesRef.current = saved.notes;
         setAnswers(saved.answers);
+        setNotes(saved.notes);
         setGroupIndex(saved.group);
         setRestored({ answers: Object.keys(saved.answers).length });
       }
@@ -128,7 +133,9 @@ export function AuditWizard({
   const start = (fresh: boolean) => {
     if (fresh) {
       answersRef.current = {};
+      notesRef.current = "";
       setAnswers({});
+      setNotes("");
       setGroupIndex(0);
       setRestored(null);
       groupFiredRef.current.clear();
@@ -153,7 +160,7 @@ export function AuditWizard({
     const next = { ...answersRef.current, [item.id]: value };
     answersRef.current = next;
     setAnswers(next);
-    saveProgress(definition, next, groupIndex);
+    saveProgress(definition, next, groupIndex, notesRef.current);
 
     const group = definition.groups[groupIndex];
     if (
@@ -174,9 +181,15 @@ export function AuditWizard({
     }
   };
 
+  const updateNotes = (next: string) => {
+    notesRef.current = next;
+    setNotes(next);
+    saveProgress(definition, answersRef.current, groupIndex, next);
+  };
+
   const goToGroup = (index: number) => {
     setGroupIndex(index);
-    saveProgress(definition, answers, index);
+    saveProgress(definition, answers, index, notesRef.current);
     requestAnimationFrame(scrollToTop);
   };
 
@@ -211,7 +224,9 @@ export function AuditWizard({
       return;
     }
     answersRef.current = {};
+    notesRef.current = "";
     setAnswers({});
+    setNotes("");
     setGroupIndex(0);
     setRestored(null);
     groupFiredRef.current.clear();
@@ -231,7 +246,7 @@ export function AuditWizard({
   return (
     <div ref={topRef} tabIndex={-1} className="scroll-mt-24 focus:outline-none">
       {phase === "intro" && (
-        <div className="bg-white rounded-2xl border-2 border-gray-900 shadow-card overflow-hidden">
+        <div className="max-w-3xl bg-white rounded-2xl border-2 border-gray-900 shadow-card overflow-hidden">
           <div className="p-6 md:p-8">
             <p className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold mb-3">
               {copy.intro.howTitle}
@@ -287,6 +302,7 @@ export function AuditWizard({
       )}
 
       {phase === "wizard" && group && (
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px] gap-6 xl:gap-8 items-start">
         <div className="bg-white rounded-2xl border-2 border-gray-900 shadow-card overflow-hidden">
           {/* Progress header */}
           <div className="bg-slate-900 text-white p-5 md:p-6">
@@ -421,9 +437,13 @@ export function AuditWizard({
             )}
           </div>
         </div>
+
+        <NotesPanel copy={copy} value={notes} onChange={updateNotes} />
+        </div>
       )}
 
       {phase === "results" && (
+        <div className="max-w-5xl">
         <AuditResults
           definition={definition}
           copy={copy}
@@ -438,7 +458,9 @@ export function AuditWizard({
             requestAnimationFrame(scrollToTop);
           }}
           onReset={reset}
+          notes={notes}
         />
+        </div>
       )}
     </div>
   );

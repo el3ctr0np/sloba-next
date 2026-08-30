@@ -24,6 +24,17 @@ export function googleDocUrl(id: string): string {
   return `https://support.google.com/google-ads/answer/${id}?hl=${GOOGLE_DOC_LOCALE}`;
 }
 
+/**
+ * One "read more" link.
+ * - google:   Google's own documentation, by Help Centre article id
+ * - industry: an independent PPC publication (never a competing agency)
+ * - internal: one of our own posts, by this locale's slug
+ */
+export type Resource =
+  | { kind: "google"; docId: string; label: string }
+  | { kind: "industry"; url: string; label: string; source: string }
+  | { kind: "internal"; slug: string; label: string };
+
 export type Teaching = {
   /** Plain-language version of the checkpoint, phrased as a question. */
   question: string;
@@ -33,12 +44,8 @@ export type Teaching = {
   exampleBad: string;
   /** Why this matters and when it bites. */
   why: string;
-  /** Google Help Centre article id, verified to resolve. */
-  googleDocId: string;
-  googleDocLabel: string;
-  /** One of our posts, in this locale's slug. */
-  internalSlug: string;
-  internalLabel: string;
+  /** Where to go deeper. Google first, then industry, then us. */
+  resources: Resource[];
 };
 
 export const pmaxTeachingSR: Record<string, Teaching> = {
@@ -49,10 +56,24 @@ export const pmaxTeachingSR: Record<string, Teaching> = {
     exampleBad:
       "Jakne, patike i rančevi zajedno u jednoj grupi, jer je tako bilo brže.",
     why: "Performance Max od naslova, opisa i slika iz iste asset grupe sam sklapa oglase. Ako su u grupi nespojive stvari, sklopiće oglas u kom naslov govori o jaknama a slika pokazuje patike, i vi to nigde ne vidite kao grešku. Google preporučuje da asset grupe delite po kategoriji, temi, jeziku ili publici.",
-    googleDocId: "14528220",
-    googleDocLabel: "Google: najbolje prakse za asset grupe u PMax kampanjama",
-    internalSlug: "performance-max-vodic",
-    internalLabel: "Naš vodič: kako je Performance Max sastavljen",
+    resources: [
+      {
+        kind: "google",
+        docId: "14528220",
+        label: "Najbolje prakse za asset grupe u PMax kampanjama",
+      },
+      {
+        kind: "industry",
+        url: "https://searchengineland.com/how-campaign-structure-shapes-google-ads-performance-481332",
+        source: "Search Engine Land",
+        label: "Kako struktura naloga oblikuje učinak",
+      },
+      {
+        kind: "internal",
+        slug: "performance-max-vodic",
+        label: "Kako je Performance Max sastavljen",
+      },
+    ],
   },
   "pmax-2": {
     question: "Da li broj asset grupa prati koliko različitih stvari zaista prodajete?",
@@ -61,10 +82,20 @@ export const pmaxTeachingSR: Record<string, Teaching> = {
     exampleBad:
       "Jedna asset grupa pokriva 500 artikala, ili dvanaest grupa deli budžet od 300 evra mesečno.",
     why: "Svaka asset grupa mora da dobije dovoljno saobraćaja da Google nauči šta u njoj radi. Previše grupa na malom budžetu znači da nijedna ne skupi dovoljno podataka. Jedna grupa preko celog kataloga znači suprotno: sve radi, ali ne vidite šta od toga zapravo prodaje. Google savetuje da grupe pravite po sekcijama i kategorijama koje već postoje na vašem sajtu.",
-    googleDocId: "10724748",
-    googleDocLabel: "Google: kako asset grupe funkcionišu",
-    internalSlug: "performance-max-vodic",
-    internalLabel: "Naš vodič: struktura PMax naloga",
+    resources: [
+      { kind: "google", docId: "10724748", label: "Kako asset grupe funkcionišu" },
+      {
+        kind: "industry",
+        url: "https://searchengineland.com/top-performance-max-optimization-tips-461913",
+        source: "Search Engine Land",
+        label: "Saveti za optimizaciju PMax kampanja u 2026.",
+      },
+      {
+        kind: "internal",
+        slug: "performance-max-vodic",
+        label: "Struktura PMax naloga",
+      },
+    ],
   },
   "pmax-3": {
     question: "Znate li da li vam je URL expansion uključen, i da li ste tako hteli?",
@@ -73,10 +104,24 @@ export const pmaxTeachingSR: Record<string, Teaching> = {
     exampleBad:
       "Uključen je zato što je tako podrazumevano, a niko nikad nije proverio gde ljudi zapravo sleću.",
     why: "Kad je uključen, Google sme da zameni vašu odabranu stranicu drugom sa istog domena, onom za koju proceni da bolje odgovara pretrazi. To ume da radi u vašu korist, ali ume i da šalje kupce na blog tekst umesto na stranicu proizvoda. Podrazumevano je uključen, pa je i odluka da ga ostavite uključenog isto odluka, samo je niko nije doneo.",
-    googleDocId: "15995647",
-    googleDocLabel: "Google: najbolje prakse za URL expansion",
-    internalSlug: "performance-max-vodic",
-    internalLabel: "Naš vodič: šta u PMax-u možete da kontrolišete",
+    resources: [
+      {
+        kind: "google",
+        docId: "15995647",
+        label: "Najbolje prakse za URL expansion",
+      },
+      {
+        kind: "industry",
+        url: "https://searchengineland.com/the-parts-of-performance-max-you-can-actually-control-472523",
+        source: "Search Engine Land",
+        label: "Šta u Performance Max-u zaista možete da kontrolišete",
+      },
+      {
+        kind: "internal",
+        slug: "performance-max-vodic",
+        label: "Šta u PMax-u možete da kontrolišete",
+      },
+    ],
   },
   "pmax-4": {
     question: "Da li svaka asset grupa vodi na svoju stranicu, a ne na početnu?",
@@ -85,10 +130,24 @@ export const pmaxTeachingSR: Record<string, Teaching> = {
     exampleBad:
       "Sve asset grupe vode na početnu stranu, pa kupac sam traži ono zbog čega je kliknuo.",
     why: "Svaki dodatni klik posle dolaska na sajt je mesto gde se ljudi gube. Uz to, redirekcija usput ume da pojede UTM parametre, pa vam se i merenje raspadne, a to se otkrije tek kad počnete da tražite odakle je došla prodaja.",
-    googleDocId: "16176749",
-    googleDocLabel: "Google: URL opcije na nivou asset grupe",
-    internalSlug: "zasto-nema-rezultata",
-    internalLabel: "Naš vodič: zašto kampanja ne daje rezultate",
+    resources: [
+      {
+        kind: "google",
+        docId: "16176749",
+        label: "URL opcije na nivou asset grupe",
+      },
+      {
+        kind: "industry",
+        url: "https://searchengineland.com/google-url-contains-targeting-functionality-performance-max-431572",
+        source: "Search Engine Land",
+        label: "URL pravila i isključivanje stranica u PMax-u",
+      },
+      {
+        kind: "internal",
+        slug: "zasto-nema-rezultata",
+        label: "Zašto kampanja ne daje rezultate",
+      },
+    ],
   },
   "pmax-5": {
     question: "Da li kampanja optimizuje ka akciji koja vam zaista donosi novac?",
@@ -97,10 +156,23 @@ export const pmaxTeachingSR: Record<string, Teaching> = {
     exampleBad:
       "Cilj kampanje je klik na dugme, pregled stranice ili prijava na newsletter.",
     why: "Performance Max gura budžet ka onome što ste mu rekli da je cilj i u tome je vrlo uspešan. Ako mu je cilj klik na dugme, dobićete mnogo klikova na dugme i malo prodaje. Ovo je jedno od retkih podešavanja gde pogrešan izbor ne pokvari kampanju vidljivo, nego je tiho vodi u pogrešnom smeru mesecima.",
-    googleDocId: "9143218",
-    googleDocLabel: "Google: konverzioni ciljevi na nivou kampanje",
-    internalSlug: "conversion-tracking-vodic",
-    internalLabel: "Naš vodič: praćenje konverzija od nule",
+    resources: [
+      {
+        kind: "google",
+        docId: "9143218",
+        label: "Konverzioni ciljevi na nivou kampanje",
+      },
+      {
+        kind: "google",
+        docId: "11461796",
+        label: "Primarne i sekundarne konverzione radnje",
+      },
+      {
+        kind: "internal",
+        slug: "conversion-tracking-vodic",
+        label: "Praćenje konverzija od nule",
+      },
+    ],
   },
 };
 
@@ -112,10 +184,24 @@ export const pmaxTeachingEN: Record<string, Teaching> = {
     exampleBad:
       "Coats, trainers and backpacks together in one group, because that was quicker.",
     why: "Performance Max assembles ads itself from the headlines, descriptions and images inside one asset group. Put unrelated things in the same group and it will build an ad whose headline talks about coats while the image shows trainers, and nothing flags that as a mistake. Google recommends splitting asset groups by content category, theme, language or target audience.",
-    googleDocId: "14528220",
-    googleDocLabel: "Google: best practices for asset groups in Performance Max",
-    internalSlug: "performance-max-guide",
-    internalLabel: "Our guide: how Performance Max is put together",
+    resources: [
+      {
+        kind: "google",
+        docId: "14528220",
+        label: "Best practices for asset groups in Performance Max",
+      },
+      {
+        kind: "industry",
+        url: "https://searchengineland.com/how-campaign-structure-shapes-google-ads-performance-481332",
+        source: "Search Engine Land",
+        label: "How campaign structure shapes performance",
+      },
+      {
+        kind: "internal",
+        slug: "performance-max-guide",
+        label: "How Performance Max is put together",
+      },
+    ],
   },
   "pmax-2": {
     question: "Does the number of asset groups match how many different things you actually sell?",
@@ -124,10 +210,20 @@ export const pmaxTeachingEN: Record<string, Teaching> = {
     exampleBad:
       "One asset group covering 500 SKUs, or twelve groups splitting a small monthly budget.",
     why: "Every asset group needs enough traffic for Google to learn what works inside it. Too many groups on a small budget means none of them gathers enough data. One group across the whole catalogue is the opposite problem: everything runs, but you cannot see what is actually selling. Google suggests basing groups on the sections and categories that already exist on your site.",
-    googleDocId: "10724748",
-    googleDocLabel: "Google: how asset groups work",
-    internalSlug: "performance-max-guide",
-    internalLabel: "Our guide: PMax account structure",
+    resources: [
+      { kind: "google", docId: "10724748", label: "How asset groups work" },
+      {
+        kind: "industry",
+        url: "https://searchengineland.com/top-performance-max-optimization-tips-461913",
+        source: "Search Engine Land",
+        label: "Performance Max optimization tips for 2026",
+      },
+      {
+        kind: "internal",
+        slug: "performance-max-guide",
+        label: "PMax account structure",
+      },
+    ],
   },
   "pmax-3": {
     question: "Do you know whether Final URL expansion is on, and did you mean it to be?",
@@ -136,10 +232,24 @@ export const pmaxTeachingEN: Record<string, Teaching> = {
     exampleBad:
       "It is on because that is the default, and nobody has ever checked where people actually land.",
     why: "When it is on, Google may swap your chosen page for a different one on the same domain, whichever it judges a better match for the search. That can work in your favour, and it can equally send buyers to a blog post instead of a product page. It is on by default, so leaving it on is a decision too. It is just one nobody made.",
-    googleDocId: "15995647",
-    googleDocLabel: "Google: best practices for URL expansion",
-    internalSlug: "performance-max-guide",
-    internalLabel: "Our guide: what you can actually control in PMax",
+    resources: [
+      {
+        kind: "google",
+        docId: "15995647",
+        label: "Best practices for URL expansion",
+      },
+      {
+        kind: "industry",
+        url: "https://searchengineland.com/the-parts-of-performance-max-you-can-actually-control-472523",
+        source: "Search Engine Land",
+        label: "The parts of Performance Max you can actually control",
+      },
+      {
+        kind: "internal",
+        slug: "performance-max-guide",
+        label: "What you can actually control in PMax",
+      },
+    ],
   },
   "pmax-4": {
     question: "Does each asset group lead to its own page rather than the homepage?",
@@ -148,10 +258,20 @@ export const pmaxTeachingEN: Record<string, Teaching> = {
     exampleBad:
       "Every asset group lands on the homepage, so the buyer has to go looking for the thing they clicked on.",
     why: "Every extra click after arriving is somewhere people drop out. A redirect on the way can also eat your UTM parameters, which breaks your measurement, and you only find that out when you start asking where a sale came from.",
-    googleDocId: "16176749",
-    googleDocLabel: "Google: asset group URL options",
-    internalSlug: "why-google-ads-not-working",
-    internalLabel: "Our guide: why a campaign is not delivering",
+    resources: [
+      { kind: "google", docId: "16176749", label: "Asset group URL options" },
+      {
+        kind: "industry",
+        url: "https://searchengineland.com/google-url-contains-targeting-functionality-performance-max-431572",
+        source: "Search Engine Land",
+        label: "URL rules and page exclusions in PMax",
+      },
+      {
+        kind: "internal",
+        slug: "why-google-ads-not-working",
+        label: "Why a campaign is not delivering",
+      },
+    ],
   },
   "pmax-5": {
     question: "Is the campaign optimizing toward the action that actually makes you money?",
@@ -160,9 +280,22 @@ export const pmaxTeachingEN: Record<string, Teaching> = {
     exampleBad:
       "The campaign goal is a button click, a pageview, or a newsletter signup.",
     why: "Performance Max pushes budget toward whatever you told it the goal is, and it is very good at that. Tell it the goal is a button click and you will get plenty of button clicks and few sales. This is one of the few settings where the wrong choice does not break the campaign visibly. It quietly steers it in the wrong direction for months.",
-    googleDocId: "9143218",
-    googleDocLabel: "Google: campaign-specific conversion goals",
-    internalSlug: "conversion-tracking-guide",
-    internalLabel: "Our guide: conversion tracking from scratch",
+    resources: [
+      {
+        kind: "google",
+        docId: "9143218",
+        label: "Campaign-specific conversion goals",
+      },
+      {
+        kind: "google",
+        docId: "11461796",
+        label: "Primary and secondary conversion actions",
+      },
+      {
+        kind: "internal",
+        slug: "conversion-tracking-guide",
+        label: "Conversion tracking from scratch",
+      },
+    ],
   },
 };

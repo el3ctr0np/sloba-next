@@ -188,23 +188,30 @@ export function CheckpointCard({
               <p className="text-xs uppercase tracking-wider font-bold text-gray-400 mb-1">
                 {copy.wizard.readMore}
               </p>
-              <a
-                href={googleDocUrl(teaching.googleDocId)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm text-primary hover:text-primary-dark underline"
-              >
-                {teaching.googleDocLabel} ↗
-              </a>
-              <Link
-                href={{
-                  pathname: "/blog/[slug]",
-                  params: { slug: teaching.internalSlug },
-                }}
-                className="block text-sm text-primary hover:text-primary-dark underline"
-              >
-                {teaching.internalLabel} →
-              </Link>
+              {teaching.resources.map((r) =>
+                r.kind === "internal" ? (
+                  <Link
+                    key={r.slug + r.label}
+                    href={{ pathname: "/blog/[slug]", params: { slug: r.slug } }}
+                    className="block text-sm text-primary hover:text-primary-dark underline"
+                  >
+                    {r.label} →
+                  </Link>
+                ) : (
+                  <a
+                    key={r.kind === "google" ? r.docId : r.url}
+                    href={r.kind === "google" ? googleDocUrl(r.docId) : r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-sm text-primary hover:text-primary-dark underline"
+                  >
+                    <span className="text-gray-400 not-italic">
+                      {r.kind === "google" ? "Google" : r.source}:
+                    </span>{" "}
+                    {r.label} ↗
+                  </a>
+                ),
+              )}
             </div>
           </div>
         </details>

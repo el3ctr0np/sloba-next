@@ -60,6 +60,14 @@ export type AuditCopy = {
     whyAsking: string;
     technicalName: string;
     readMore: string;
+    /** Notes panel. */
+    notesTitle: string;
+    notesHint: string;
+    notesPlaceholder: string;
+    notesSaved: string;
+    notesOpen: string;
+    notesClose: string;
+    addNoteFor: string;
   };
   results: {
     eyebrow: string;
@@ -215,6 +223,13 @@ export const pmaxCopySR: AuditCopy = {
     whyAsking: "Zašto ovo pitam",
     technicalName: "Stručni naziv ove provere",
     readMore: "Ako hoćete dublje",
+    notesTitle: "Vaše beleške",
+    notesHint: "Sve što zapišete ide u vaš izveštaj na kraju. Čuva se u pregledaču.",
+    notesPlaceholder: "Na primer: asset grupa za jakne ima staru sliku, proveriti feed za patike, pitati Milana za pristup Merchant Center-u...",
+    notesSaved: "Sačuvano",
+    notesOpen: "Beleške",
+    notesClose: "Zatvorite beleške",
+    addNoteFor: "Zabeležite nešto o ovoj tački",
   },
   results: {
     eyebrow: "Rezultat",
@@ -376,6 +391,13 @@ export const pmaxCopyEN: AuditCopy = {
     whyAsking: "Why I am asking",
     technicalName: "The technical name for this check",
     readMore: "If you want to go deeper",
+    notesTitle: "Your notes",
+    notesHint: "Anything you write here goes into your report at the end. Saved in your browser.",
+    notesPlaceholder: "For example: the coats asset group has an old image, check the trainers feed, ask Milan for Merchant Center access...",
+    notesSaved: "Saved",
+    notesOpen: "Notes",
+    notesClose: "Close notes",
+    addNoteFor: "Jot something down about this checkpoint",
   },
   results: {
     eyebrow: "Result",

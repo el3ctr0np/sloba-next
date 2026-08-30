@@ -78,7 +78,7 @@ export default async function PmaxCheckPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
       />
 
-      <div className="max-w-3xl mx-auto px-4 py-14 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 py-14 md:py-20">
         <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">
           {copy.intro.eyebrow}
         </p>
@@ -87,10 +87,10 @@ export default async function PmaxCheckPage({ params }: Props) {
             ? "PMax Check: provera Performance Max kampanje"
             : "PMax Check: a Performance Max review"}
         </h1>
-        <p className="text-gray-600 text-lg mb-8 max-w-2xl">{copy.intro.lead}</p>
+        <p className="text-gray-600 text-lg mb-8 max-w-3xl">{copy.intro.lead}</p>
 
         {/* Headline numbers, same convention as the guide */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-slate-900 text-white rounded-xl p-5 md:p-6 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-slate-900 text-white rounded-xl p-5 md:p-6 mb-8 max-w-3xl">
           {[
             { value: "38", label: sr ? "tačaka provere" : "checkpoints" },
             { value: "8", label: sr ? "grupa" : "groups" },

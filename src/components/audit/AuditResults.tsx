@@ -75,6 +75,8 @@ export type AuditResultsProps = {
   guideHref: React.ReactNode;
   /** Blog slug of the source guide; each finding deep-links to its group anchor. */
   guideSlug?: string;
+  /** Free-text notes taken during the run; they ride along into the report. */
+  notes?: string;
   onReview: () => void;
   onReset: () => void;
 };
@@ -88,6 +90,7 @@ export function AuditResults({
   report,
   guideHref,
   guideSlug,
+  notes,
   onReview,
   onReset,
 }: AuditResultsProps) {
@@ -144,8 +147,15 @@ export function AuditResults({
         lines.push(`      ${copy.results.whereLabel}: ${f.item.where}${f.item.note ? `, ${f.item.note}` : ""}`);
       }
     }
+    if (notes && notes.trim() !== "") {
+      lines.push("");
+      lines.push(copy.wizard.notesTitle);
+      for (const line of notes.trim().split("\n")) {
+        lines.push(`  ${line}`);
+      }
+    }
     return lines.join("\n");
-  }, [copy, result]);
+  }, [copy, result, notes]);
 
   const copyReport = async () => {
     try {
@@ -430,6 +440,17 @@ export function AuditResults({
           </>
         )}
 
+        {notes && notes.trim() !== "" && (
+          <div className="bg-white border-2 border-gray-200 rounded-xl p-4 md:p-5 mt-6">
+            <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-semibold mb-2">
+              {copy.wizard.notesTitle}
+            </p>
+            <p className="text-sm text-gray-700 mb-0 whitespace-pre-wrap">
+              {notes.trim()}
+            </p>
+          </div>
+        )}
+
         {/* Take it with you: the findings are only useful if they can leave the page. */}
         {result.findings.length > 0 && (
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 md:p-5 mt-6 no-print">
@@ -506,6 +527,7 @@ export function AuditResults({
           result={result}
           eventPrefix={eventPrefix}
           report={report}
+          notes={notes}
         />
       </Reveal>
 

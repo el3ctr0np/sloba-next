@@ -32,12 +32,14 @@ export function AuditReportForm({
   result,
   eventPrefix,
   report,
+  notes,
 }: {
   definition: AuditDefinition;
   copy: AuditCopy;
   result: ScoreResult;
   eventPrefix: string;
   report: { formName: string; subject: string; nextUrl: string };
+  notes?: string;
 }) {
   const startedRef = useRef(false);
 
@@ -127,6 +129,11 @@ export function AuditReportForm({
         />
         <input type="hidden" name="skor_po_grupi" value={groupLines} />
         <input type="hidden" name="nalazi" value={findingLines || "-"} />
+        <input
+          type="hidden"
+          name="beleske"
+          value={notes && notes.trim() !== "" ? notes.trim() : "-"}
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>

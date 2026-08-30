@@ -12,6 +12,8 @@ type Stored = {
   answers: Answers;
   /** Index of the group the user was last on. */
   group: number;
+  /** Free-text notes the user kept while working through the checkpoints. */
+  notes?: string;
   savedAt: string;
 };
 
@@ -23,7 +25,7 @@ function key(def: AuditDefinition): string {
 
 export function loadProgress(
   def: AuditDefinition,
-): { answers: Answers; group: number } | null {
+): { answers: Answers; group: number; notes: string } | null {
   if (typeof window === "undefined") return null;
   let raw: string | null = null;
   try {
@@ -52,7 +54,8 @@ export function loadProgress(
       answers[id] = value as Answer;
     }
   }
-  if (Object.keys(answers).length === 0) return null;
+  const notes = typeof parsed.notes === "string" ? parsed.notes : "";
+  if (Object.keys(answers).length === 0 && notes === "") return null;
 
   const group =
     Number.isInteger(parsed.group) &&
@@ -61,13 +64,14 @@ export function loadProgress(
       ? parsed.group
       : 0;
 
-  return { answers, group };
+  return { answers, group, notes };
 }
 
 export function saveProgress(
   def: AuditDefinition,
   answers: Answers,
   group: number,
+  notes = "",
 ): void {
   if (typeof window === "undefined") return;
   try {
@@ -75,6 +79,7 @@ export function saveProgress(
       v: def.version,
       answers,
       group,
+      notes,
       savedAt: new Date().toISOString(),
     };
     window.localStorage.setItem(key(def), JSON.stringify(payload));
