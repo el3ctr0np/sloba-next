@@ -1,0 +1,516 @@
+"use client";
+
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { AuditCopy } from "@/lib/audit-engine/copy";
+import { fill, plural } from "@/lib/audit-engine/format";
+import {
+  countAnswered,
+  isGroupComplete,
+  scoreAudit,
+} from "@/lib/audit-engine/scoring";
+import {
+  clearProgress,
+  loadProgress,
+  saveProgress,
+} from "@/lib/audit-engine/storage";
+import type {
+  Answer,
+  Answers,
+  AuditDefinition,
+  AuditItem,
+} from "@/lib/audit-engine/types";
+import { AuditResults } from "./AuditResults";
+
+type DataLayerWindow = Window & { dataLayer?: Array<Record<string, unknown>> };
+
+function pushDataLayer(event: string, params: Record<string, unknown> = {}): void {
+  if (typeof window === "undefined") return;
+  const w = window as DataLayerWindow;
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({ event, ...params });
+}
+
+const ANSWER_ORDER: Answer[] = ["ok", "problem", "unsure", "na"];
+
+const ANSWER_STYLE: Record<Answer, { on: string; off: string }> = {
+  ok: {
+    on: "bg-green-600 text-white border-green-600 shadow-md",
+    off: "bg-white text-gray-600 border-gray-300 hover:border-green-600 hover:text-green-700",
+  },
+  problem: {
+    on: "bg-red-600 text-white border-red-600 shadow-md",
+    off: "bg-white text-gray-600 border-gray-300 hover:border-red-600 hover:text-red-700",
+  },
+  unsure: {
+    on: "bg-accent text-gray-900 border-accent shadow-md",
+    off: "bg-white text-gray-600 border-gray-300 hover:border-accent-dark hover:text-gray-900",
+  },
+  na: {
+    on: "bg-gray-900 text-white border-gray-900 shadow-md",
+    off: "bg-white text-gray-500 border-gray-300 hover:border-gray-900 hover:text-gray-900",
+  },
+};
+
+const PRIORITY_STYLE: Record<string, string> = {
+  P1: "bg-red-50 text-red-700 border-red-200",
+  P2: "bg-amber-50 text-amber-800 border-amber-200",
+  P3: "bg-gray-50 text-gray-600 border-gray-200",
+};
+
+type Phase = "intro" | "wizard" | "results";
+
+export type AuditWizardProps = {
+  definition: AuditDefinition;
+  copy: AuditCopy;
+  /** dataLayer event namespace, e.g. "pmax_check". */
+  eventPrefix: string;
+  locale: string;
+  /** formsubmit endpoint + redirect for the "send me the report" gate. */
+  report: {
+    formName: string;
+    subject: string;
+    nextUrl: string;
+  };
+  /** Rendered at the very bottom of the results. */
+  guideHref: React.ReactNode;
+};
+
+export function AuditWizard({
+  definition,
+  copy,
+  eventPrefix,
+  locale,
+  report,
+  guideHref,
+}: AuditWizardProps) {
+  const [phase, setPhase] = useState<Phase>("intro");
+  const [answers, setAnswers] = useState<Answers>({});
+  // Writes go through this ref, not through the `answers` closure: several clicks
+  // inside one tick would otherwise each read the same pre-render snapshot and
+  // overwrite one another. Keep the two in lockstep on every assignment.
+  const answersRef = useRef<Answers>({});
+  const [groupIndex, setGroupIndex] = useState(0);
+  const [restored, setRestored] = useState<{ answers: number } | null>(null);
+  const [hydrated, setHydrated] = useState(false);
+
+  const topRef = useRef<HTMLDivElement>(null);
+  const startedRef = useRef(false);
+  const groupFiredRef = useRef<Set<string>>(new Set());
+  const finishedScoreRef = useRef<number | null>(null);
+
+  const total = useMemo(
+    () => definition.groups.reduce((n, g) => n + g.items.length, 0),
+    [definition],
+  );
+
+  // Restore saved progress once, on the client only. localStorage cannot be read
+  // during render without a hydration mismatch, so the intro renders blank first
+  // and the restored state lands on the next tick (scheduled rather than set
+  // synchronously, per react-hooks/set-state-in-effect; a timer rather than a
+  // frame so a backgrounded tab still restores).
+  useEffect(() => {
+    const saved = loadProgress(definition);
+    if (saved) {
+      // A resumed run has already counted its completed groups; do not re-fire.
+      for (const group of definition.groups) {
+        if (isGroupComplete(group, saved.answers)) {
+          groupFiredRef.current.add(group.id);
+        }
+      }
+    }
+    const id = setTimeout(() => {
+      if (saved) {
+        answersRef.current = saved.answers;
+        setAnswers(saved.answers);
+        setGroupIndex(saved.group);
+        setRestored({ answers: Object.keys(saved.answers).length });
+      }
+      setHydrated(true);
+    }, 0);
+    return () => clearTimeout(id);
+  }, [definition]);
+
+  const answered = countAnswered(definition, answers);
+  const remaining = total - answered;
+  const allAnswered = remaining === 0;
+  const progressLabel = fill(copy.wizard.progress, { answered, total });
+
+  // Scroll and move focus together: a phase swap replaces the whole panel, so a
+  // keyboard or screen-reader user would otherwise be dropped back to <body>
+  // with no announcement of what changed.
+  const scrollToTop = useCallback(() => {
+    topRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    topRef.current?.focus({ preventScroll: true });
+  }, []);
+
+  const start = (fresh: boolean) => {
+    if (fresh) {
+      answersRef.current = {};
+      setAnswers({});
+      setGroupIndex(0);
+      setRestored(null);
+      groupFiredRef.current.clear();
+      clearProgress(definition);
+    }
+    if (!startedRef.current) {
+      startedRef.current = true;
+      pushDataLayer(`${eventPrefix}_started`, {
+        audit_id: definition.id,
+        resumed: !fresh && Boolean(restored),
+      });
+    }
+    setPhase("wizard");
+    requestAnimationFrame(scrollToTop);
+  };
+
+  const answer = (item: AuditItem, value: Answer) => {
+    // Computed outside the state updater on purpose: writing to localStorage,
+    // mutating groupFiredRef and pushing to the dataLayer are side effects, and
+    // React may replay or discard an updater under concurrent rendering. A
+    // discarded replay would leave groupFiredRef poisoned and drop the event.
+    const next = { ...answersRef.current, [item.id]: value };
+    answersRef.current = next;
+    setAnswers(next);
+    saveProgress(definition, next, groupIndex);
+
+    const group = definition.groups[groupIndex];
+    if (
+      group &&
+      isGroupComplete(group, next) &&
+      !groupFiredRef.current.has(group.id)
+    ) {
+      groupFiredRef.current.add(group.id);
+      const groupResult = scoreAudit({ ...definition, groups: [group] }, next);
+      pushDataLayer(`${eventPrefix}_group_completed`, {
+        audit_id: definition.id,
+        group_id: group.id,
+        group_index: groupIndex + 1,
+        // null, not 0, when every checkpoint in the group is N/A: an unscorable
+        // group must not be averaged in as a zero.
+        group_score: groupResult.scorable ? groupResult.overall : null,
+      });
+    }
+  };
+
+  const goToGroup = (index: number) => {
+    setGroupIndex(index);
+    saveProgress(definition, answers, index);
+    requestAnimationFrame(scrollToTop);
+  };
+
+  const result = useMemo(
+    () => scoreAudit(definition, answers),
+    [definition, answers],
+  );
+
+  const finish = () => {
+    // Re-firing is keyed on the score, not on a boolean: someone who goes back,
+    // changes answers and finishes again would otherwise leave a stale score in
+    // analytics that disagrees with the one the report form submits.
+    if (finishedScoreRef.current !== result.overall) {
+      finishedScoreRef.current = result.overall;
+      pushDataLayer(`${eventPrefix}_finished`, {
+        audit_id: definition.id,
+        // null, not 0, when every checkpoint was marked N/A — same reason as
+        // group_score above: an unscorable run must not average in as a zero.
+        score: result.scorable ? result.overall : null,
+        p1_problems: result.p1Problems,
+        problems: result.problems,
+        unsure: result.unsure,
+        na: result.na,
+      });
+    }
+    setPhase("results");
+    requestAnimationFrame(scrollToTop);
+  };
+
+  const reset = () => {
+    if (typeof window !== "undefined" && !window.confirm(copy.results.resetConfirm)) {
+      return;
+    }
+    answersRef.current = {};
+    setAnswers({});
+    setGroupIndex(0);
+    setRestored(null);
+    groupFiredRef.current.clear();
+    finishedScoreRef.current = null;
+    startedRef.current = false;
+    clearProgress(definition);
+    setPhase("intro");
+    requestAnimationFrame(scrollToTop);
+  };
+
+  const group = definition.groups[groupIndex];
+  const groupRemaining = group
+    ? group.items.filter((i) => !answers[i.id]).length
+    : 0;
+  const isLastGroup = groupIndex === definition.groups.length - 1;
+
+  return (
+    <div ref={topRef} tabIndex={-1} className="scroll-mt-24 focus:outline-none">
+      {phase === "intro" && (
+        <div className="bg-white rounded-2xl border-2 border-gray-900 shadow-card overflow-hidden">
+          <div className="p-6 md:p-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500 font-semibold mb-3">
+              {copy.intro.howTitle}
+            </p>
+            <ol className="space-y-3 list-none pl-0 mb-0">
+              {copy.intro.how.map((line, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 mt-0.5 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">
+                    {i + 1}
+                  </span>
+                  <span className="text-sm md:text-base text-gray-700">{line}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          <div className="bg-slate-900 text-white p-6 md:p-8">
+            {hydrated && restored && (
+              <p className="text-sm text-accent mb-4">
+                {fill(copy.intro.resumeNote, { answered: restored.answers, total })}
+              </p>
+            )}
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button
+                type="button"
+                onClick={() => start(!restored)}
+                className="btn-secondary !py-3.5 text-base font-semibold"
+              >
+                {hydrated && restored ? copy.intro.resume : copy.intro.start} →
+              </button>
+              {hydrated && restored && (
+                <button
+                  type="button"
+                  onClick={() => start(true)}
+                  className="px-6 py-3 rounded-xl font-semibold border border-slate-600 text-slate-300 hover:text-white hover:border-slate-400 transition-colors"
+                >
+                  {copy.intro.restart}
+                </button>
+              )}
+            </div>
+            <p className="text-xs text-slate-400 mt-4 mb-0">{copy.intro.noEmail}</p>
+          </div>
+        </div>
+      )}
+
+      {phase === "wizard" && group && (
+        <div className="bg-white rounded-2xl border-2 border-gray-900 shadow-card overflow-hidden">
+          {/* Progress header */}
+          <div className="bg-slate-900 text-white p-5 md:p-6">
+            <div className="flex items-center justify-between gap-4 mb-3">
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-0">
+                {fill(copy.wizard.groupOf, {
+                  i: groupIndex + 1,
+                  n: definition.groups.length,
+                })}
+              </p>
+              <p className="text-xs font-semibold text-accent tabular-nums mb-0">
+                {progressLabel}
+              </p>
+            </div>
+            <div
+              className="h-2 w-full bg-slate-700 rounded-full overflow-hidden"
+              role="progressbar"
+              aria-valuenow={answered}
+              aria-valuemin={0}
+              aria-valuemax={total}
+              aria-label={progressLabel}
+            >
+              <div
+                className="h-full bg-accent rounded-full transition-[width] duration-500 ease-out"
+                style={{ width: `${(answered / total) * 100}%` }}
+              />
+            </div>
+
+            {/* Group chips */}
+            <div className="flex flex-wrap gap-1.5 mt-4">
+              {definition.groups.map((g, i) => {
+                const done = isGroupComplete(g, answers);
+                const active = i === groupIndex;
+                return (
+                  <button
+                    key={g.id}
+                    type="button"
+                    onClick={() => goToGroup(i)}
+                    aria-current={active ? "step" : undefined}
+                    aria-label={g.title}
+                    title={g.title}
+                    className={`w-9 h-9 rounded-lg text-xs font-bold transition-all duration-300 ${
+                      active
+                        ? "bg-white text-gray-900 scale-105"
+                        : done
+                          ? "bg-green-600 text-white hover:bg-green-500"
+                          : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                    }`}
+                  >
+                    {done && !active ? "✓" : i + 1}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Checkpoints */}
+          <div className="p-5 md:p-8">
+            <h2 className="font-heading font-bold text-xl md:text-2xl text-gray-900 mb-6">
+              {group.title}
+            </h2>
+
+            <div className="space-y-4">
+              {group.items.map((item) => {
+                const current = answers[item.id];
+                const labelId = `${item.id}-label`;
+                return (
+                  <div
+                    key={item.id}
+                    className={`rounded-xl border p-4 md:p-5 transition-colors duration-300 ${
+                      current
+                        ? "border-gray-300 bg-white"
+                        : "border-gray-200 bg-gray-50"
+                    }`}
+                  >
+                    <div className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-7 h-7 mt-0.5 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">
+                        {item.n}
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                          <span
+                            className={`text-[11px] font-bold px-2 py-0.5 rounded border ${PRIORITY_STYLE[item.priority]}`}
+                            title={copy.priorityLong[item.priority]}
+                          >
+                            {copy.priority[item.priority]}
+                          </span>
+                          <span className="text-[11px] text-gray-500">
+                            {copy.effort[item.effort]}
+                          </span>
+                        </div>
+                        <p id={labelId} className="font-semibold text-gray-900 mb-1.5">
+                          {item.title}
+                        </p>
+                        <p className="text-sm text-gray-500 mb-1">
+                          <span className="font-semibold">{copy.wizard.where}:</span>{" "}
+                          {item.where}
+                        </p>
+                        {item.note && (
+                          <p className="text-sm text-gray-500 mb-1">{item.note}</p>
+                        )}
+                        <p className="text-sm text-red-600 mb-0">
+                          <span className="font-semibold">{copy.wizard.redFlag}:</span>{" "}
+                          {item.redFlag}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      role="radiogroup"
+                      aria-labelledby={labelId}
+                      className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4"
+                    >
+                      {ANSWER_ORDER.map((value) => {
+                        const selected = current === value;
+                        return (
+                          <button
+                            key={value}
+                            type="button"
+                            role="radio"
+                            aria-checked={selected}
+                            title={copy.answerHints[value]}
+                            onClick={() => answer(item, value)}
+                            className={`px-3 py-2.5 rounded-lg border-2 text-sm font-semibold transition-all duration-200 ${
+                              selected
+                                ? ANSWER_STYLE[value].on
+                                : ANSWER_STYLE[value].off
+                            }`}
+                          >
+                            {copy.answers[value]}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Navigation */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 mt-8 pt-6 border-t border-gray-200">
+              <button
+                type="button"
+                onClick={() =>
+                  groupIndex === 0 ? setPhase("intro") : goToGroup(groupIndex - 1)
+                }
+                className="px-5 py-3 rounded-xl font-semibold border border-gray-300 text-gray-700 hover:border-gray-900 hover:text-gray-900 transition-colors"
+              >
+                ← {groupIndex === 0 ? copy.wizard.backToStart : copy.wizard.prev}
+              </button>
+
+              {!isLastGroup && (
+                <button
+                  type="button"
+                  onClick={() => goToGroup(groupIndex + 1)}
+                  className="btn-primary flex-1 sm:flex-none"
+                >
+                  {copy.wizard.next} →
+                </button>
+              )}
+
+              {isLastGroup && (
+                <button
+                  type="button"
+                  onClick={finish}
+                  disabled={!allAnswered}
+                  className={`flex-1 sm:flex-none px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                    allAnswered
+                      ? "bg-accent text-gray-900 hover:brightness-105 hover:shadow-md hover:-translate-y-0.5"
+                      : "bg-gray-200 text-gray-400 cursor-not-allowed"
+                  }`}
+                >
+                  {copy.wizard.finish} →
+                </button>
+              )}
+
+              <p className="text-sm text-gray-500 mb-0 sm:ml-auto">
+                {groupRemaining > 0
+                  ? plural(locale, groupRemaining, copy.wizard.answerAllInGroup)
+                  : remaining > 0
+                    ? plural(locale, remaining, copy.wizard.remaining)
+                    : `✓ ${copy.wizard.groupDone}`}
+              </p>
+            </div>
+
+            {/* Finish shortcut from any group once everything is answered */}
+            {allAnswered && !isLastGroup && (
+              <button
+                type="button"
+                onClick={finish}
+                className="btn-secondary w-full mt-4 !py-3.5 text-base font-semibold"
+              >
+                {copy.wizard.finish} →
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
+      {phase === "results" && (
+        <AuditResults
+          definition={definition}
+          copy={copy}
+          result={result}
+          locale={locale}
+          eventPrefix={eventPrefix}
+          report={report}
+          guideHref={guideHref}
+          onReview={() => {
+            setPhase("wizard");
+            requestAnimationFrame(scrollToTop);
+          }}
+          onReset={reset}
+        />
+      )}
+    </div>
+  );
+}

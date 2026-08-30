@@ -126,7 +126,8 @@ export default function PerformanceMaxGuideEN() {
           <li>Brand exclusions configured if you don't want PMax bidding on your own or a competitor's brand?</li>
           <li>Feed quality checked if retail — title, custom labels, GTIN?</li>
         </ul>
-        <p className="text-sm text-gray-600 mb-0">Full PMax audit checklist (35+ points): <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-audit-checklist" } }} className="underline">see the dedicated guide</Link>.</p>
+        <p className="text-sm text-gray-600 mb-1">Full PMax audit checklist (35+ points): <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-audit-checklist" } }} className="underline">see the dedicated guide</Link>.</p>
+        <p className="text-sm text-gray-600 mb-0">Or the same 38 checkpoints as an interactive check with a score per group: <Link href="/resursi/pmax-check" className="underline">PMax Check</Link>.</p>
       </div>
 
       <hr />

@@ -83,6 +83,18 @@ export default function PerformanceMaxAuditChecklistEN() {
         </ol>
       </nav>
 
+      {/* ── Interactive tool CTA ── */}
+      <div className="bg-slate-900 text-white rounded-xl p-6 md:p-8 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-bold mb-2">Would rather be walked through it?</p>
+        <p className="text-lg text-white font-heading font-semibold mb-3 leading-snug">
+          The same 38 checkpoints also exist as an interactive check: you answer OK, Problem, Not sure or N/A, and it hands back a weighted score per group and overall, plus the order to fix things in, weighed by impact against effort.
+        </p>
+        <p className="text-slate-300 text-sm mb-5">
+          It runs in the browser, saves your progress, and does not ask for an email to show you the result.
+        </p>
+        <Link href="/resursi/pmax-check" className="btn-secondary inline-block">Open PMax Check →</Link>
+      </div>
+
       <hr />
 
       {/* ── Group 1 ── */}
@@ -523,7 +535,9 @@ export default function PerformanceMaxAuditChecklistEN() {
         <p className="text-blue-800 text-base mb-0">
           Run all 38 points once a quarter. Between deep passes, a monthly 10-minute check covers the items that drift fastest: negative keywords (21-22), channel report (26), budget status (34), asset ratings (11), and brand exclusions (23). Same cadence as the{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-checklist" } }} className="underline font-semibold">general account audit</Link>
-          , for consistency across your whole review process.
+          , for consistency across your whole review process. For the quarterly pass the easiest route is{" "}
+          <Link href="/resursi/pmax-check" className="underline font-semibold">PMax Check</Link>
+          , which saves your answers so next time you can see what has moved since.
         </p>
       </div>
 

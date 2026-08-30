@@ -83,6 +83,18 @@ export default function PmaxAuditChecklistSR() {
         </ol>
       </nav>
 
+      {/* ── Interactive tool CTA ── */}
+      <div className="bg-slate-900 text-white rounded-xl p-6 md:p-8 my-8 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-slate-400 font-bold mb-2">Radije da vas alat vodi kroz listu?</p>
+        <p className="text-lg text-white font-heading font-semibold mb-3 leading-snug">
+          Istih 38 tačaka postoji i kao interaktivna provera: odgovarate OK, Problem, Ne znam ili N/A, a alat vam vrati ponderisan skor po grupi i ukupno, plus redosled popravki po odnosu uticaja i napora.
+        </p>
+        <p className="text-slate-300 text-sm mb-5">
+          Radi u pretraživaču, čuva progres i ne traži email da biste videli rezultat.
+        </p>
+        <Link href="/resursi/pmax-check" className="btn-secondary inline-block">Otvorite PMax Check &rarr;</Link>
+      </div>
+
       <hr />
 
       {/* ── Group 1 ── */}
@@ -523,7 +535,9 @@ export default function PmaxAuditChecklistSR() {
         <p className="text-blue-800 text-base mb-0">
           Svih 38 tačaka jednom u kvartalu. Između dva puna prolaza, mesečna provera od 10 minuta pokriva ono što najbrže odstupa: negativne ključne reči (21-22), izveštaj po kanalu (26), status budžeta (34), ocene sredstava (11) i brand isključenja (23). Isti ritam kao{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }} className="underline font-semibold">opšti audit naloga</Link>
-          , radi doslednosti kroz ceo proces provere.
+          , radi doslednosti kroz ceo proces provere. Za kvartalni prolaz je najlakše otvoriti{" "}
+          <Link href="/resursi/pmax-check" className="underline font-semibold">PMax Check</Link>
+          , jer čuva odgovore pa sledeći put vidite šta se u međuvremenu promenilo.
         </p>
       </div>
 

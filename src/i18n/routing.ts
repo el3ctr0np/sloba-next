@@ -105,6 +105,16 @@ export const routing = defineRouting({
       en: "/resources/budget-calculator"
     },
 
+    // PMax Check (interactive 38-checkpoint Performance Max audit tool)
+    "/resursi/pmax-check": {
+      sr: "/resursi/pmax-check",
+      en: "/resources/pmax-check"
+    },
+    "/resursi/pmax-check/hvala": {
+      sr: "/resursi/pmax-check/hvala",
+      en: "/resources/pmax-check/thank-you"
+    },
+
     // Audit checklist download thank-you (gated Google Sheet/XLSX template)
     "/resursi/audit-checklist/hvala": {
       sr: "/resursi/audit-checklist/hvala",

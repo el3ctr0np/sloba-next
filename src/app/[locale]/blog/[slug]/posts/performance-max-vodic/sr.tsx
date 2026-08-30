@@ -138,7 +138,8 @@ export default function PerformanceMaxVodicPost() {
           <li>Brand exclusions podešene ako ne želite da PMax kupuje sopstveni ili tuđi brend?</li>
           <li>Feed kvalitet proveren ako je retail - title, custom labels, GTIN?</li>
         </ul>
-        <p className="text-sm text-gray-600 mb-0">Pun PMax audit checklist (35+ tačaka): <Link href={{ pathname: "/blog/[slug]", params: { slug: "pmax-audit-checklist" } }} className="underline">pogledajte namenski vodič</Link>.</p>
+        <p className="text-sm text-gray-600 mb-1">Pun PMax audit checklist (35+ tačaka): <Link href={{ pathname: "/blog/[slug]", params: { slug: "pmax-audit-checklist" } }} className="underline">pogledajte namenski vodič</Link>.</p>
+        <p className="text-sm text-gray-600 mb-0">Ili istih 38 tačaka kao interaktivnu proveru sa skorom po grupi: <Link href="/resursi/pmax-check" className="underline">PMax Check</Link>.</p>
       </div>
 
       <hr />
