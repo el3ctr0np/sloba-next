@@ -5,6 +5,7 @@ import { Card } from "@/components/ui";
 import { slugMap } from "./[slug]/posts/slug-map";
 import { getPost } from "./[slug]/posts";
 import { buildMetadata } from "@/lib/metadata";
+import ChapterProgressNav from "@/components/blog/ChapterProgressNav";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -634,7 +635,7 @@ function ChapterNav({ chapters, locale }: { chapters: Chapter[]; locale: string 
 
 function ChapterSection({ chapter, locale }: { chapter: Chapter; locale: string }) {
   return (
-    <section id={chapter.id} className="scroll-mt-8">
+    <section id={chapter.id} className="scroll-mt-24">
       <div className="flex items-start gap-4 mb-2">
         <span className="flex-shrink-0 w-10 h-10 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-lg font-bold font-heading mt-1">
           {chapter.number}
@@ -879,10 +880,23 @@ export default async function BlogPage({ params }: Props) {
 
       {/* Chapters */}
       <section className="pb-16 md:pb-24 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto space-y-16 md:space-y-24">
-          {chapters.map((chapter) => (
-            <ChapterSection key={chapter.id} chapter={chapter} locale={locale} />
-          ))}
+        <div className="max-w-7xl mx-auto flex gap-10 xl:gap-14">
+          <ChapterProgressNav
+            chapters={chapters.map((c) => ({
+              id: c.id,
+              number: c.number,
+              title: c.title,
+              level: c.level,
+              levelColor: c.levelColor,
+              count: c.posts.length,
+            }))}
+            locale={locale}
+          />
+          <div className="min-w-0 flex-1 space-y-16 md:space-y-24">
+            {chapters.map((chapter) => (
+              <ChapterSection key={chapter.id} chapter={chapter} locale={locale} />
+            ))}
+          </div>
         </div>
       </section>
 
