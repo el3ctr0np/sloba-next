@@ -29,7 +29,10 @@ export function Footer() {
       { label: t("resources.blog"), href: "/blog" as const },
       { label: t("resources.caseStudies"), href: "/case-studies" as const },
       { label: t("resources.glossary"), href: "/recnik" as const },
-      { label: t("resources.ga4Audiences"), href: "/ga4-audiences" as const },
+      { label: t("resources.freeTools"), href: "/resursi" as const },
+      { label: t("resources.ga4Audiences"), href: "/resursi/ga4-framework" as const },
+      { label: t("resources.pmaxCheck"), href: "/resursi/pmax-check" as const },
+      { label: t("resources.budgetCalculator"), href: "/resursi/budzet-kalkulator" as const },
       { label: t("resources.about"), href: "/o-meni" as const },
       { label: t("resources.contact"), href: "/kontakt" as const }
     ]

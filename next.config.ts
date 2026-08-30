@@ -12,26 +12,55 @@ const nextConfig: NextConfig = {
         destination: "/:locale/usluge",
         permanent: true
       },
-      // Profit-Leak Check retired Aug 2026 — replaced by the GA4 Audience
-      // Framework download as the free front-door. Keeps LinkedIn links alive.
+      // GA4 Audience Framework moved under the /resursi tools hub Aug 30 2026.
+      // Locale-specific because the EN path differs (/resources/ga4-framework).
       {
-        source: "/:locale/profit-provera",
-        destination: "/:locale/ga4-audiences",
+        source: "/sr/ga4-audiences",
+        destination: "/sr/resursi/ga4-framework",
         permanent: true
       },
       {
-        source: "/:locale/profit-leak-check",
-        destination: "/:locale/ga4-audiences",
+        source: "/en/ga4-audiences",
+        destination: "/en/resources/ga4-framework",
+        permanent: true
+      },
+      {
+        source: "/ga4-audiences",
+        destination: "/sr/resursi/ga4-framework",
+        permanent: true
+      },
+      // Profit-Leak Check retired Aug 2026 — replaced by the GA4 Audience
+      // Framework download as the free front-door. Keeps LinkedIn links alive.
+      // Points straight at the new URL: chaining through /ga4-audiences would
+      // make these two hops instead of one.
+      {
+        source: "/sr/profit-provera",
+        destination: "/sr/resursi/ga4-framework",
+        permanent: true
+      },
+      {
+        source: "/en/profit-provera",
+        destination: "/en/resources/ga4-framework",
+        permanent: true
+      },
+      {
+        source: "/sr/profit-leak-check",
+        destination: "/sr/resursi/ga4-framework",
+        permanent: true
+      },
+      {
+        source: "/en/profit-leak-check",
+        destination: "/en/resources/ga4-framework",
         permanent: true
       },
       {
         source: "/profit-provera",
-        destination: "/sr/ga4-audiences",
+        destination: "/sr/resursi/ga4-framework",
         permanent: true
       },
       {
         source: "/profit-leak-check",
-        destination: "/en/ga4-audiences",
+        destination: "/en/resources/ga4-framework",
         permanent: true
       },
       // Methodology page retired Jul 2026 — folded into service pages

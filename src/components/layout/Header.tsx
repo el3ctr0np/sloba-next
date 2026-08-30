@@ -56,6 +56,7 @@ export function Header() {
     { label: t("nav.services"), href: "/usluge" as const, hasServiceMenu: true },
     { label: t("nav.caseStudies"), href: "/case-studies" as const },
     { label: t("nav.blog"), href: "/blog" as const },
+    { label: t("nav.resources"), href: "/resursi" as const },
     { label: t("nav.glossary"), href: "/recnik" as const },
     { label: t("nav.about"), href: "/o-meni" as const },
     { label: t("nav.contact"), href: "/kontakt" as const },
@@ -195,11 +196,11 @@ export function Header() {
               </Link>
             </div>
             <Link
-              href="/ga4-audiences"
-              onClick={() => trackCtaClick("header_ga4_audiences", "/ga4-audiences")}
+              href="/resursi"
+              onClick={() => trackCtaClick("header_free_tools", "/resursi")}
               className="border-2 border-primary text-primary px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition-colors hover:bg-primary hover:text-white"
             >
-              {t("profitCheck")}
+              {t("freeTools")}
             </Link>
             <Button href="/kontakt" variant="secondary" className="whitespace-nowrap !px-5 text-sm" ctaLocation="header_desktop">
               {t("cta")}
@@ -237,14 +238,14 @@ export function Header() {
                 {t("cta")}
               </Button>
               <Link
-                href="/ga4-audiences"
+                href="/resursi"
                 onClick={() => {
-                  trackCtaClick("header_mobile_ga4_audiences", "/ga4-audiences");
+                  trackCtaClick("header_mobile_free_tools", "/resursi");
                   setMobileMenuOpen(false);
                 }}
                 className="block w-full text-center border-2 border-primary text-primary px-4 py-2.5 rounded-xl font-semibold"
               >
-                {t("profitCheck")}
+                {t("freeTools")}
               </Link>
             </div>
             {navItems.map((item) => (

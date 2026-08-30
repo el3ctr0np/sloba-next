@@ -8,10 +8,10 @@
       "blog": "Blog",
       "about": "About",
       "contact": "Contact",
-      "glossary": "Glossary"
+      "glossary": "Glossary",
+      "resources": "Resources"
     },
     "cta": "Book a Consultation →",
-    "profitCheck": "Free GA4 Framework",
     "serviceGroups": {
       "googleAds": "Campaign management",
       "strategySupport": "Strategy & support",
@@ -33,7 +33,8 @@
     "trustBar": {
       "full": "10+ years of experience · 3x UK Search Awards · 50+ brands across 6+ countries",
       "short": "10+ years · 3x UK Search Awards"
-    }
+    },
+    "freeTools": "Free tools"
   },
   "Footer": {
     "brandDescription": "Senior-led boutique Google Ads agency. Led by Slobodan Jelisavac - 10+ years, 50+ brands, 3x UK Search Awards.",
@@ -67,7 +68,10 @@
       "ga4Audiences": "GA4 Audience Framework",
       "methodology": "Methodology",
       "about": "About",
-      "contact": "Contact"
+      "contact": "Contact",
+      "freeTools": "All free tools",
+      "pmaxCheck": "PMax Check",
+      "budgetCalculator": "Budget calculator"
     },
     "insights": {
       "heading": "Google Ads insights",

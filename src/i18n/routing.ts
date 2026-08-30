@@ -139,8 +139,19 @@ export const routing = defineRouting({
       en: "/audit"
     },
 
-    // GA4 Audience Framework — lead magnet front-door (replaced /profit-provera Aug 2026)
-    "/ga4-audiences": "/ga4-audiences",
+    // Free tools hub — every lead magnet lives under /resursi so one link in the
+    // header and nav covers all of them, present and future.
+    "/resursi": {
+      sr: "/resursi",
+      en: "/resources"
+    },
+
+    // GA4 Audience Framework — lead magnet front-door (replaced /profit-provera
+    // Aug 2026). Moved under /resursi Aug 30 2026; old URL 301s in next.config.
+    "/resursi/ga4-framework": {
+      sr: "/resursi/ga4-framework",
+      en: "/resources/ga4-framework"
+    },
 
     // Profit-Leak Check (interactive scored diagnostic front-door)
     "/profit-provera": {

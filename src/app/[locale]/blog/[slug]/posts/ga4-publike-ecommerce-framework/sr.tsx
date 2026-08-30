@@ -784,7 +784,7 @@ export default function GA4PublikeFrameworkSR() {
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           Isti framework kao gore, ali u izvršnoj formi - markdown fajlovi koje ubaciš direktno u Claude ili ChatGPT da ti izgrade konfiguraciju po listi, plus PDF za arhivu. Traži se samo email.
         </p>
-        <Link href="/ga4-audiences" className="btn-secondary inline-block">
+        <Link href="/resursi/ga4-framework" className="btn-secondary inline-block">
           Preuzmi izvršnu verziju
         </Link>
       </div>

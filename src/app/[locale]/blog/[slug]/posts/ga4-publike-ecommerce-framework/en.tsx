@@ -758,9 +758,9 @@ export default function GA4AudienceFrameworkEN() {
           Want the executable version?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          The <Link href="/ga4-audiences" className="underline text-white hover:text-yellow-400">free GA4 Audience Framework download</Link> packages all 25 list definitions as markdown files you can drop straight into Claude or ChatGPT, plus a PDF reference. Email only, nothing else to fill in.
+          The <Link href="/resursi/ga4-framework" className="underline text-white hover:text-yellow-400">free GA4 Audience Framework download</Link> packages all 25 list definitions as markdown files you can drop straight into Claude or ChatGPT, plus a PDF reference. Email only, nothing else to fill in.
         </p>
-        <Link href="/ga4-audiences" className="btn-secondary inline-block">
+        <Link href="/resursi/ga4-framework" className="btn-secondary inline-block">
           Get the framework
         </Link>
       </div>
