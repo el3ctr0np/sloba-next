@@ -20,6 +20,8 @@ import type {
   AuditItem,
 } from "@/lib/audit-engine/types";
 import { AuditResults } from "./AuditResults";
+import { CheckpointCard } from "./CheckpointCard";
+import type { Teaching } from "@/lib/audit-engine/data/pmax-check-teaching";
 
 type DataLayerWindow = Window & { dataLayer?: Array<Record<string, unknown>> };
 
@@ -29,33 +31,6 @@ function pushDataLayer(event: string, params: Record<string, unknown> = {}): voi
   w.dataLayer = w.dataLayer || [];
   w.dataLayer.push({ event, ...params });
 }
-
-const ANSWER_ORDER: Answer[] = ["ok", "problem", "unsure", "na"];
-
-const ANSWER_STYLE: Record<Answer, { on: string; off: string }> = {
-  ok: {
-    on: "bg-green-600 text-white border-green-600 shadow-md",
-    off: "bg-white text-gray-600 border-gray-300 hover:border-green-600 hover:text-green-700",
-  },
-  problem: {
-    on: "bg-red-600 text-white border-red-600 shadow-md",
-    off: "bg-white text-gray-600 border-gray-300 hover:border-red-600 hover:text-red-700",
-  },
-  unsure: {
-    on: "bg-accent text-gray-900 border-accent shadow-md",
-    off: "bg-white text-gray-600 border-gray-300 hover:border-accent-dark hover:text-gray-900",
-  },
-  na: {
-    on: "bg-gray-900 text-white border-gray-900 shadow-md",
-    off: "bg-white text-gray-500 border-gray-300 hover:border-gray-900 hover:text-gray-900",
-  },
-};
-
-const PRIORITY_STYLE: Record<string, string> = {
-  P1: "bg-red-50 text-red-700 border-red-200",
-  P2: "bg-amber-50 text-amber-800 border-amber-200",
-  P3: "bg-gray-50 text-gray-600 border-gray-200",
-};
 
 type Phase = "intro" | "wizard" | "results";
 
@@ -75,6 +50,9 @@ export type AuditWizardProps = {
   guideHref: React.ReactNode;
   /** Blog slug of the source guide; each finding deep-links to its group anchor. */
   guideSlug?: string;
+  /** Plain-language layer, keyed by checkpoint id. Checkpoints without an entry
+   *  render in their original technical form. */
+  teaching?: Record<string, Teaching>;
 };
 
 export function AuditWizard({
@@ -85,6 +63,7 @@ export function AuditWizard({
   report,
   guideHref,
   guideSlug,
+  teaching,
 }: AuditWizardProps) {
   const [phase, setPhase] = useState<Phase>("intro");
   const [answers, setAnswers] = useState<Answers>({});
@@ -371,80 +350,16 @@ export function AuditWizard({
             </h2>
 
             <div className="space-y-4">
-              {group.items.map((item) => {
-                const current = answers[item.id];
-                const labelId = `${item.id}-label`;
-                return (
-                  <div
-                    key={item.id}
-                    className={`rounded-xl border p-4 md:p-5 transition-colors duration-300 ${
-                      current
-                        ? "border-gray-300 bg-white"
-                        : "border-gray-200 bg-gray-50"
-                    }`}
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="flex-shrink-0 w-7 h-7 mt-0.5 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">
-                        {item.n}
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                          <span
-                            className={`text-[11px] font-bold px-2 py-0.5 rounded border ${PRIORITY_STYLE[item.priority]}`}
-                            title={copy.priorityLong[item.priority]}
-                          >
-                            {copy.priority[item.priority]}
-                          </span>
-                          <span className="text-[11px] text-gray-500">
-                            {copy.effort[item.effort]}
-                          </span>
-                        </div>
-                        <p id={labelId} className="font-semibold text-gray-900 mb-1.5">
-                          {item.title}
-                        </p>
-                        <p className="text-sm text-gray-500 mb-1">
-                          <span className="font-semibold">{copy.wizard.where}:</span>{" "}
-                          {item.where}
-                        </p>
-                        {item.note && (
-                          <p className="text-sm text-gray-500 mb-1">{item.note}</p>
-                        )}
-                        <p className="text-sm text-red-600 mb-0">
-                          <span className="font-semibold">{copy.wizard.redFlag}:</span>{" "}
-                          {item.redFlag}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div
-                      role="radiogroup"
-                      aria-labelledby={labelId}
-                      className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4"
-                    >
-                      {ANSWER_ORDER.map((value) => {
-                        const selected = current === value;
-                        return (
-                          <button
-                            key={value}
-                            type="button"
-                            role="radio"
-                            aria-checked={selected}
-                            title={copy.answerHints[value]}
-                            onClick={() => answer(item, value)}
-                            className={`px-3 py-2.5 rounded-lg border-2 text-sm font-semibold transition-all duration-200 ${
-                              selected
-                                ? ANSWER_STYLE[value].on
-                                : ANSWER_STYLE[value].off
-                            }`}
-                          >
-                            {copy.answers[value]}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
+              {group.items.map((item) => (
+                <CheckpointCard
+                  key={item.id}
+                  item={item}
+                  copy={copy}
+                  teaching={teaching?.[item.id]}
+                  current={answers[item.id]}
+                  onAnswer={(value) => answer(item, value)}
+                />
+              ))}
             </div>
 
             {/* Navigation */}

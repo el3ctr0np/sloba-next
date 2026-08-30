@@ -54,6 +54,12 @@ export type AuditCopy = {
     backToStart: string;
     /** Shown on the finish button while the run is still incomplete. */
     finishPartial: string;
+    /** Teaching layer. */
+    goodExample: string;
+    badExample: string;
+    whyAsking: string;
+    technicalName: string;
+    readMore: string;
   };
   results: {
     eyebrow: string;
@@ -204,6 +210,11 @@ export const pmaxCopySR: AuditCopy = {
     },
     backToStart: "Nazad na početak",
     finishPartial: "Vidite rezultat dosad",
+    goodExample: "Ovako treba",
+    badExample: "Ovako ne treba",
+    whyAsking: "Zašto ovo pitam",
+    technicalName: "Stručni naziv ove provere",
+    readMore: "Ako hoćete dublje",
   },
   results: {
     eyebrow: "Rezultat",
@@ -360,6 +371,11 @@ export const pmaxCopyEN: AuditCopy = {
     },
     backToStart: "Back to the start",
     finishPartial: "See the result so far",
+    goodExample: "What good looks like",
+    badExample: "What bad looks like",
+    whyAsking: "Why I am asking",
+    technicalName: "The technical name for this check",
+    readMore: "If you want to go deeper",
   },
   results: {
     eyebrow: "Result",

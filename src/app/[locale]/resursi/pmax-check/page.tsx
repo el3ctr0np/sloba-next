@@ -4,6 +4,10 @@ import { buildMetadata } from "@/lib/metadata";
 import { AuditWizard } from "@/components/audit/AuditWizard";
 import { pmaxCopyEN, pmaxCopySR } from "@/lib/audit-engine/copy";
 import { pmaxCheckEN, pmaxCheckSR } from "@/lib/audit-engine/data/pmax-check";
+import {
+  pmaxTeachingEN,
+  pmaxTeachingSR,
+} from "@/lib/audit-engine/data/pmax-check-teaching";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -40,6 +44,7 @@ export default async function PmaxCheckPage({ params }: Props) {
   const sr = locale !== "en";
   const copy = sr ? pmaxCopySR : pmaxCopyEN;
   const definition = sr ? pmaxCheckSR : pmaxCheckEN;
+  const teaching = sr ? pmaxTeachingSR : pmaxTeachingEN;
   const guideSlug = sr ? "pmax-audit-checklist" : "performance-max-audit-checklist";
 
   // Structured data: a free tool, not an article.
@@ -114,6 +119,7 @@ export default async function PmaxCheckPage({ params }: Props) {
             }`,
           }}
           guideSlug={guideSlug}
+          teaching={teaching}
           guideHref={
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: guideSlug } }}
