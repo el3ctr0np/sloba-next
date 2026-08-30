@@ -200,13 +200,22 @@ export function CheckpointCard({
                 ) : (
                   <a
                     key={r.kind === "google" ? r.docId : r.url}
-                    href={r.kind === "google" ? googleDocUrl(r.docId) : r.url}
+                    href={
+                      r.kind === "google"
+                        ? googleDocUrl(r.docId, r.product)
+                        : r.url
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-sm text-primary hover:text-primary-dark underline"
                   >
                     <span className="text-gray-400 not-italic">
-                      {r.kind === "google" ? "Google" : r.source}:
+                      {r.kind === "google"
+                        ? r.product === "merchants"
+                          ? "Merchant Center"
+                          : "Google"
+                        : r.source}
+                      :
                     </span>{" "}
                     {r.label} ↗
                   </a>

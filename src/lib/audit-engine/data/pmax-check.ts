@@ -140,7 +140,7 @@ export const pmaxCheckSR: AuditDefinition = {
         {
           id: "pmax-13",
           n: 13,
-          priority: "P3",
+          priority: "P2",
           effort: "high",
           title: "Video sredstva ubačena ručno tamo gde postoji materijal, ne prepuštena automatskom generisanju",
           where: "Asset group → Videos",
@@ -548,7 +548,7 @@ export const pmaxCheckEN: AuditDefinition = {
         {
           id: "pmax-13",
           n: 13,
-          priority: "P3",
+          priority: "P2",
           effort: "high",
           title: "Video assets uploaded by hand where you have the material, not left to auto-generation",
           where: "Asset group → Videos",
