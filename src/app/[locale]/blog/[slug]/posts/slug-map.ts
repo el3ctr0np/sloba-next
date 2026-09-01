@@ -1,5 +1,8 @@
 // Canonical (SR) slug → EN slug mapping
 export const slugMap: Record<string, string> = {
+  "chatgpt-ads-vodic": "chatgpt-ads-guide",
+  "chatgpt-ads-vs-google-ads": "chatgpt-ads-vs-google-ads",
+  "chatgpt-ads-evropa": "chatgpt-ads-europe",
   "lista-negativnih-kljucnih-reci": "negative-keywords-list",
   "pmax-audit-checklist": "performance-max-audit-checklist",
   "google-ads-budzet": "google-ads-budget-planning",

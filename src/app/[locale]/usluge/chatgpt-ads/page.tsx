@@ -582,6 +582,41 @@ export default async function ChatGptAdsPage({ params }: Props) {
                 </>
               )}
             </p>
+            <p>
+              {isEn ? (
+                <>
+                  If you want the full picture before we talk, I keep a{" "}
+                  <Link href={{ pathname: "/blog/[slug]", params: { slug: "chatgpt-ads-guide" } }} className="underline">
+                    complete ChatGPT Ads guide
+                  </Link>{" "}
+                  with verified numbers, a{" "}
+                  <Link href={{ pathname: "/blog/[slug]", params: { slug: "chatgpt-ads-vs-google-ads" } }} className="underline">
+                    comparison with Google Ads
+                  </Link>
+                  , and a breakdown of{" "}
+                  <Link href={{ pathname: "/blog/[slug]", params: { slug: "chatgpt-ads-europe" } }} className="underline">
+                    how the rules differ in Europe
+                  </Link>
+                  .
+                </>
+              ) : (
+                <>
+                  Ako želite celu sliku pre razgovora, održavam{" "}
+                  <Link href={{ pathname: "/blog/[slug]", params: { slug: "chatgpt-ads-vodic" } }} className="underline">
+                    kompletan ChatGPT Ads vodič
+                  </Link>{" "}
+                  sa verifikovanim brojkama,{" "}
+                  <Link href={{ pathname: "/blog/[slug]", params: { slug: "chatgpt-ads-vs-google-ads" } }} className="underline">
+                    poređenje sa Google Ads-om
+                  </Link>{" "}
+                  i pregled toga{" "}
+                  <Link href={{ pathname: "/blog/[slug]", params: { slug: "chatgpt-ads-evropa" } }} className="underline">
+                    kako se pravila razlikuju u Evropi
+                  </Link>
+                  .
+                </>
+              )}
+            </p>
           </div>
         </div>
       </Section>
@@ -814,6 +849,27 @@ export default async function ChatGptAdsPage({ params }: Props) {
               </Button>
             </div>
             <div className="text-sm text-gray-400 mt-8 space-x-3">
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "chatgpt-ads-guide" : "chatgpt-ads-vodic" } }}
+                className="hover:text-accent transition-colors"
+              >
+                {isEn ? "ChatGPT Ads guide" : "ChatGPT Ads vodič"}
+              </Link>
+              <span>•</span>
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "chatgpt-ads-vs-google-ads" } }}
+                className="hover:text-accent transition-colors"
+              >
+                {isEn ? "ChatGPT Ads vs Google Ads" : "ChatGPT Ads vs Google Ads"}
+              </Link>
+              <span>•</span>
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "chatgpt-ads-europe" : "chatgpt-ads-evropa" } }}
+                className="hover:text-accent transition-colors"
+              >
+                {isEn ? "ChatGPT Ads in Europe" : "ChatGPT Ads u Evropi"}
+              </Link>
+              <span>•</span>
               <Link href="/usluge/google-ads-upravljanje" className="hover:text-accent transition-colors">
                 {isEn ? "Google Ads management" : "Google Ads upravljanje"}
               </Link>

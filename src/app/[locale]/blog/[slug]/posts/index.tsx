@@ -5,6 +5,12 @@ import { slugMap, enToSrMap } from "./slug-map";
 export { slugMap, getCanonicalSlug, getEnSlug, getAlternateSlug } from "./slug-map";
 
 // Serbian post imports
+import ChatGptAdsVodicSR from "./chatgpt-ads-vodic/sr";
+import ChatGptAdsGuideEN from "./chatgpt-ads-vodic/en";
+import ChatGptAdsVsGoogleAdsSR from "./chatgpt-ads-vs-google-ads/sr";
+import ChatGptAdsVsGoogleAdsEN from "./chatgpt-ads-vs-google-ads/en";
+import ChatGptAdsEvropaSR from "./chatgpt-ads-evropa/sr";
+import ChatGptAdsEuropeEN from "./chatgpt-ads-evropa/en";
 import PmaxAuditChecklistSR from "./pmax-audit-checklist/sr";
 import PerformanceMaxAuditChecklistEN from "./pmax-audit-checklist/en";
 import GoogleAdsBudzetSR from "./google-ads-budzet/sr";
@@ -128,6 +134,45 @@ export type PostData = {
 };
 
 const srPosts: PostData[] = [
+  {
+    slug: "chatgpt-ads-vodic",
+    title: "ChatGPT Ads Vodič: Sve Što Treba da Znate [2026]",
+    date: "2026-09-01",
+    dateModified: "2026-09-01",
+    category: "ChatGPT Ads",
+    metaDescription:
+      "ChatGPT Ads vodič: gde su dostupni (47 zemalja, EU od avgusta), formati, context hints umesto ključnih reči, cene i merenje - uz stvarne brojke iz nezavisnih testova.",
+    featuredImage: "/blog/chatgpt-ads-vodic.webp",
+    imageAlt: "Ilustracija stilizovanog AI chat interfejsa sa sponzorisanom karticom ispod odgovora, tema vodiča za ChatGPT Ads",
+    readingTime: "18 min",
+    content: <ChatGptAdsVodicSR />
+  },
+  {
+    slug: "chatgpt-ads-vs-google-ads",
+    title: "ChatGPT Ads vs Google Ads: Gde Koji Pobeđuje [2026]",
+    date: "2026-09-01",
+    dateModified: "2026-09-01",
+    category: "ChatGPT Ads",
+    metaDescription:
+      "ChatGPT Ads i Google Ads hvataju kupca u različitim trenucima. Poređenje targetinga, realnih CTR i CPC brojki sa izvorima i zrelosti merenja, plus kako ih kombinovati.",
+    featuredImage: "/blog/chatgpt-ads-vs-google-ads.webp",
+    imageAlt: "Ilustracija dva panela: AI chat kartica sa oglasom levo i Google pretraga sa tekstualnim oglasima desno",
+    readingTime: "10 min",
+    content: <ChatGptAdsVsGoogleAdsSR />
+  },
+  {
+    slug: "chatgpt-ads-evropa",
+    title: "ChatGPT Ads u Evropi: Pravila Su Drugačija [2026]",
+    date: "2026-09-01",
+    dateModified: "2026-09-01",
+    category: "ChatGPT Ads",
+    metaDescription:
+      "ChatGPT Ads su živi u 31 evropskom tržištu, ali bez personalizacije: kontekst i kreativa nose sve. Consent model, DSA registar oglasa do decembra i kategorije koje u Evropi ne mogu.",
+    featuredImage: "/blog/chatgpt-ads-evropa.webp",
+    imageAlt: "Ilustracija AI chat interfejsa sa oglasom povezanog sa tamnom karticom sa krugom evropskih zvezdica",
+    readingTime: "9 min",
+    content: <ChatGptAdsEvropaSR />
+  },
   {
     slug: "pmax-audit-checklist",
     title: "PMax Audit Checklist: 35+ Tačaka za Proveru [2026]",
@@ -767,6 +812,45 @@ const srPosts: PostData[] = [
 ];
 
 const enPosts: PostData[] = [
+  {
+    slug: "chatgpt-ads-guide",
+    title: "ChatGPT Ads: The Complete Guide [2026]",
+    date: "2026-09-01",
+    dateModified: "2026-09-01",
+    category: "ChatGPT Ads",
+    metaDescription:
+      "ChatGPT Ads explained: where they're live (47 countries), ad formats, context-hint targeting, real CPC and CTR numbers from independent tests, eligibility rules, and how to run a first pilot.",
+    featuredImage: "/blog/chatgpt-ads-vodic.webp",
+    imageAlt: "Illustration of a stylized AI chat interface with a sponsored card below the answer, ChatGPT Ads guide topic",
+    readingTime: "18 min",
+    content: <ChatGptAdsGuideEN />
+  },
+  {
+    slug: "chatgpt-ads-vs-google-ads",
+    title: "ChatGPT Ads vs Google Ads: Where Each Wins [2026]",
+    date: "2026-09-01",
+    dateModified: "2026-09-01",
+    category: "ChatGPT Ads",
+    metaDescription:
+      "ChatGPT Ads and Google Ads catch buyers at different moments. Targeting, real CTR and CPC numbers with sources, measurement maturity, and how to combine both without cannibalizing Search.",
+    featuredImage: "/blog/chatgpt-ads-vs-google-ads.webp",
+    imageAlt: "Illustration of two panels: an AI chat card with an ad on the left and Google search results with text ads on the right",
+    readingTime: "10 min",
+    content: <ChatGptAdsVsGoogleAdsEN />
+  },
+  {
+    slug: "chatgpt-ads-europe",
+    title: "ChatGPT Ads in Europe: The Rules Are Different [2026]",
+    date: "2026-09-01",
+    dateModified: "2026-09-01",
+    category: "ChatGPT Ads",
+    metaDescription:
+      "ChatGPT Ads are live across 31 European markets - without personalization. What context-only matching means for strategy, the DSA ad repository deadline, and who can't advertise in Europe.",
+    featuredImage: "/blog/chatgpt-ads-evropa.webp",
+    imageAlt: "Illustration of an AI chat interface with an ad connected to a dark card with a circle of European stars",
+    readingTime: "9 min",
+    content: <ChatGptAdsEuropeEN />
+  },
   {
     slug: "performance-max-audit-checklist",
     title: "Performance Max Audit Checklist: 35+ Checkpoints [2026]",

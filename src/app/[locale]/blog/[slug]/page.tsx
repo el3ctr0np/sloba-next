@@ -95,6 +95,77 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 /* ── FAQ Schemas ── */
 
+// --- chatgpt-ads-vodic / chatgpt-ads-guide + klaster ---
+
+const faqSchemaChatGptAdsSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Da li ChatGPT Ads stvarno postoje i gde se prikazuju?", acceptedAnswer: { "@type": "Answer", text: "Da, postoje od februara 2026. Prikazuju se kao sponzorisane kartice ispod kraja odgovora u ChatGPT-u, jasno označene i vizuelno odvojene, i to samo ulogovanim korisnicima na Free i Go planovima. Plus, Pro, Business, Enterprise i Edu planovi su bez oglasa, kao i korisnici ispod 18 godina, Temporary Chats i Atlas browser. Ne postoji sidebar plasman, ne postoji display mreža, i ne postoje konverzacioni formati u kojima bi oglas bio deo dijaloga, iako su najavljeni kao namera. Do 31. avgusta 2026. oglasi se prikazuju u 41 tržištu." } },
+    { "@type": "Question", name: "Mogu li da se oglašavam iz Srbije?", acceptedAnswer: { "@type": "Answer", text: "Ne, zaključno sa 1. septembrom 2026. Srbija nije na listi od 47 zemalja u kojima firma može da otvori advertiser nalog, niti na listi tržišta u kojima se oglasi prikazuju korisnicima. Isto važi za Bosnu i Hercegovinu, Crnu Goru, Severnu Makedoniju, Albaniju i Kosovo. Od ex-Yu tržišta dostupne su Hrvatska i Slovenija, kao članice EU. Firma sa stvarnim pravnim entitetom koji posluje u EU, UK ili SAD može da se oglašava kroz taj entitet. Lažno predstavljanje lokacije biznisa radi zaobilaženja bloka OpenAI izričito zabranjuje kroz policy." } },
+    { "@type": "Question", name: "Koliko koštaju ChatGPT Ads?", acceptedAnswer: { "@type": "Answer", text: "Minimalni ulazni budžet više ne postoji; ukinut je 5. maja 2026. Naplata ide po CPM, CPC ili oCPC modelu, kroz relevance-weighted second-price aukciju. OpenAI preporučuje početni CPC od 3 do 5 dolara, ali nezavisni testovi sa objavljenim spendom pokazuju realizovan CPC od 1,72 do 12 dolara, zavisno od vertikale. U jednom testu bid od 3 dolara nije doneo nijednu impresiju. Minimalni budžeti kampanje postoje po tržištu, na primer 25 dolara u SAD i 15 funti u UK. Zvanični iznosi u evrima nisu objavljeni ni u jednom izvoru." } },
+    { "@type": "Question", name: "Kako se meri učinak ChatGPT oglasa?", acceptedAnswer: { "@type": "Answer", text: "Kroz OpenAI merni piksel sa first-party kolačićem koji traje oko 30 dana, kroz Conversions API sa server-side slanjem i deduplikacijom po event ID-u, i kroz UTM parametre koji prolaze na klik. Native integracije sa GA4 nema, pa saobraćaj u analitici stiže kao običan referral i mora se obeležiti UTM parametrima pre lansiranja. Izveštaj na nivou upita ne postoji, dakle ne vidi se koji je prompt okinuo oglas. Više imenovanih agencija je tokom leta 2026. prijavilo da platforma broji osetno više klikova nego što analitika vidi sesija; uzrok te razlike nije javno utvrđen, a jaz se kroz avgust smanjivao." } },
+    { "@type": "Question", name: "Da li oglasi utiču na odgovore ChatGPT-a?", acceptedAnswer: { "@type": "Answer", text: "Ne. Oglas se pojavljuje kao zasebna, jasno označena kartica ispod završenog odgovora i ne menja sadržaj tog odgovora. Oglašivač ne može da plati da ChatGPT preporuči njegov proizvod unutar teksta odgovora. Ako korisnik iskoristi opciju da oglas ubaci nazad u razgovor i pita nešto o njemu, oglašivač ni tada ne kontroliše šta će model odgovoriti. Oglašivač takođe nikada ne dobija sadržaj razgovora, istoriju, memorije, ime, email, preciznu lokaciju ni IP adresu korisnika, nego samo agregirane podatke o učinku kampanje." } },
+  ],
+};
+
+const faqSchemaChatGptAdsEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Do ChatGPT Ads actually exist, and where do they appear?", acceptedAnswer: { "@type": "Answer", text: "Yes, they have existed since February 2026. They appear as sponsored cards below the end of an answer in ChatGPT, clearly labelled and visually separated, and only to logged-in users on the Free and Go plans. Plus, Pro, Business, Enterprise and Edu plans are ad-free, as are users under 18, Temporary Chats and the Atlas browser. There is no sidebar placement, no display network, and no conversational ad format in which the ad becomes part of the dialogue, although such formats have been announced as intent. As of 31 August 2026 ads serve across 41 markets." } },
+    { "@type": "Question", name: "Can I advertise if my country is not supported?", acceptedAnswer: { "@type": "Answer", text: "Only through a genuine legal entity that actually operates in a supported market, or through a client entity that already does. As of 1 September 2026 businesses can open self-serve advertiser accounts in 47 countries, including the US, the UK and all EU member states. In an unsupported country you can begin creating an account and leave your details to be notified when it opens, but that gives you no earlier access and no queue priority. OpenAI policy explicitly prohibits misrepresenting a business location or its eligibility for a market, so incorporating somewhere purely to bypass the restriction is a policy violation rather than a workaround." } },
+    { "@type": "Question", name: "How much do ChatGPT Ads cost?", acceptedAnswer: { "@type": "Answer", text: "There is no minimum entry spend any more; it was removed on 5 May 2026. Billing runs on CPM, CPC or oCPC through a relevance-weighted second-price auction. OpenAI recommends an opening CPC of $3 to $5, but independent tests with published spend show realised CPC between $1.72 and $12 depending on the vertical, and in one test a $3 bid produced no impressions at all. Per-market campaign minimums do exist, for example $25 in the US and £15 in the UK. No official euro amounts have been published in any source." } },
+    { "@type": "Question", name: "How is ChatGPT Ads performance measured?", acceptedAnswer: { "@type": "Answer", text: "Through the OpenAI measurement pixel with a first-party cookie lasting around 30 days, through a server-side Conversions API with event-ID deduplication, and through UTM parameters that pass on click. There is no native GA4 integration, so the traffic arrives in analytics as plain referral traffic and has to be tagged with UTM parameters before launch. Query-level reporting does not exist, meaning you cannot see which prompt triggered an ad. Several named agencies reported during summer 2026 that the platform counted materially more clicks than analytics recorded sessions; the cause of that gap has not been publicly established, and the gap narrowed through August." } },
+    { "@type": "Question", name: "Do ads influence ChatGPT's answers?", acceptedAnswer: { "@type": "Answer", text: "No. The ad appears as a separate, clearly labelled card below a completed answer and does not change the content of that answer. An advertiser cannot pay to have ChatGPT recommend its product inside the answer text. If a user pulls an ad back into the conversation to ask about it, the advertiser still has no control over what the model says. Advertisers also never receive conversation content, history, memories, name, email, precise location or IP address, only aggregated campaign performance data." } },
+  ],
+};
+
+const faqSchemaChatGptVsGoogleSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Da li ChatGPT Ads zamenjuju Google Ads?", acceptedAnswer: { "@type": "Answer", text: "Ne. Google Search hvata tražnju koja već postoji, i za većinu naloga koje vodim to je i dalje kanal koji nosi najveći deo konverzija. ChatGPT Ads targetira potpuno drugačiji trenutak - korisnika čije je pitanje već rešeno gotovim odgovorom. Tretiram ga kao dodatak, ne zamenu, i budžet za Search ne diram dok se ChatGPT test ne pokaže." } },
+    { "@type": "Question", name: "Koliki budžet za prvi test?", acceptedAnswer: { "@type": "Answer", text: "Tretiram ga kao istraživački trošak, ne kao kampanju sa garantovanim povratom - budžet dovoljno mali da gubitak ne boli, dovoljno velik da se prikupi nekoliko nedelja podataka o klikovima i sesijama. Minimum spend istorijski ne postoji (ukinut u maju 2026), ali za smislen zaključak i dalje treba prostora da algoritam prođe kroz learning fazu." } },
+    { "@type": "Question", name: "Zašto je CTR toliko niži nego na Search-u?", acceptedAnswer: { "@type": "Answer", text: "Zato što oglas stiže posle odgovora, ne pre njega. Na Search-u je oglas deo procesa traženja rešenja - korisnik ga vidi dok još odlučuje. Na ChatGPT-ju je odgovor već isporučen, pitanje je zatvoreno u glavi korisnika, i kartica ispod odgovora traži dodatni korak pažnje koji nije nužan da bi korisnik dobio ono zbog čega je došao. Nezavisni testovi konvergiraju na 0,65-1,3%, i to se ponavlja kroz više izvora - nije greška u podešavanju kampanje." } },
+    { "@type": "Question", name: "Mogu li da vodim oba kanala istovremeno?", acceptedAnswer: { "@type": "Answer", text: "Da, i to je uobičajen setup za naloge koji su već prošli osnovnu Search fazu. Preduslov je da imate GA4 postavljen i da pratite sesije nezavisno od Ads Manager izveštaja - zbog klik-diskrepance opisane gore, brojevi unutar ChatGPT platforme sami po sebi nisu dovoljan signal za odluku o budžetu. Ako GA4 nije čist, prvo to sredite, na bilo kom kanalu." } },
+  ],
+};
+
+const faqSchemaChatGptVsGoogleEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Do ChatGPT Ads replace Google Ads?", acceptedAnswer: { "@type": "Answer", text: "No. Google Search captures demand that already exists, and for most accounts I run, it's still the channel carrying the bulk of conversions. ChatGPT Ads targets a completely different moment — a user whose question has already been resolved by a finished answer. I treat it as an addition, not a replacement, and I don't touch the Search budget until a ChatGPT test proves itself." } },
+    { "@type": "Question", name: "How much budget for a first test?", acceptedAnswer: { "@type": "Answer", text: "I treat a first test as a research cost, not a campaign with a guaranteed return — small enough that losing it doesn't hurt, large enough for a few weeks of click and session data. There's no historical minimum spend anymore (removed May 2026), but a meaningful conclusion still needs room for the algorithm to get through a learning phase." } },
+    { "@type": "Question", name: "Why is the CTR so much lower than Search?", acceptedAnswer: { "@type": "Answer", text: "Because the ad arrives after the answer, not before it. On Search, the ad is part of finding a solution — the user sees it while still deciding. On ChatGPT, the answer is already delivered, the question is closed, and a card below it asks for extra attention that isn't necessary to get what the user came for. Independent tests converge on 0.65-1.3% across multiple sources — it's not a campaign setup mistake." } },
+    { "@type": "Question", name: "Can I run both channels at the same time?", acceptedAnswer: { "@type": "Answer", text: "Yes, and it's a common setup for accounts that have already gone through a solid Search phase. The precondition is GA4 tracking sessions independently of Ads Manager reporting — given the click discrepancy described above, ChatGPT's own numbers alone aren't a sufficient signal for a budget decision. If GA4 isn't clean, fix that first, on either channel." } },
+  ],
+};
+
+const faqSchemaChatGptEvropaSR = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "U kojim evropskim zemljama ChatGPT Ads rade?", acceptedAnswer: { "@type": "Answer", text: "U svih 27 članica Evropske unije plus Island, Lihtenštajn, Norveška i Švajcarska - ukupno 31 tržište. Oglasi su korisnicima počeli da se prikazuju 24.8.2026, a self-serve nalozi za oglašivače su otvoreni od 31.8.2026. Van te liste, u regionu, ostaju Srbija i ceo ne-EU Zapadni Balkan." } },
+    { "@type": "Question", name: "Da li mogu da targetiram po publikama u EU?", acceptedAnswer: { "@type": "Answer", text: "Ne na način na koji ste navikli iz drugih platformi. U Evropskom ekonomskom prostoru i Švajcarskoj oglasi se trenutno biraju bez personalizacije - samo po tekućem razgovoru, gruboj lokaciji i jeziku. Nema memorije, prošlih razgovora niti ad istorije koje bi ušle u izbor. Ono što oglašivač i dalje kontroliše su context hints na nivou ad grupe i geo targeting, ali oba su znatno grublji alat nego audience targeting na koji ste navikli." } },
+    { "@type": "Question", name: "Šta je DSA registar oglasa i kada stiže?", acceptedAnswer: { "@type": "Answer", text: "Evropska komisija je 31.8.2026 designirala ChatGPT kao Very Large Online Search Engine po Digital Services Act-u, sa rokom usklađivanja do kraja decembra 2026. Deo obaveza je javni ad repository - registar koji čuva sadržaj oglasa, ime oglašivača, period prikazivanja, targeting parametre i domet, dostupan javno godinu dana. U praksi je to slično onome što Meta Ad Library radi za Facebook i Instagram oglase, samo za ChatGPT." } },
+    { "@type": "Question", name: "Može li firma iz Srbije da se oglašava?", acceptedAnswer: { "@type": "Answer", text: "Direktno ne. Srbija nije na listi ni za prikazivanje oglasa ni za otvaranje advertiser naloga, kao ni ostatak ne-EU Zapadnog Balkana. Hrvatska i Slovenija jesu dostupne. Ako firma ima stvaran pravni entitet u jednoj od podržanih zemalja - na primer u EU ili UK - može da se oglašava kroz taj entitet. Registracija firme negde drugde samo da bi se zaobišao blok nije dozvoljena po policy-ju, koji izričito zabranjuje lažno predstavljanje lokacije biznisa." } },
+  ],
+};
+
+const faqSchemaChatGptEvropaEN = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "Which European countries do ChatGPT Ads run in?", acceptedAnswer: { "@type": "Answer", text: "All 27 EU member states plus Iceland, Liechtenstein, Norway, and Switzerland — 31 markets in total. Ads started showing to users on August 24, 2026, and self-serve accounts for advertisers opened on August 31, 2026. Outside that list, in the region, that leaves Serbia and the rest of the non-EU Western Balkans." } },
+    { "@type": "Question", name: "Can I target by audience in the EU?", acceptedAnswer: { "@type": "Answer", text: "Not the way you're used to on other platforms. Inside the European Economic Area and Switzerland, ads are currently selected without personalization — only the current conversation, rough location, and language factor in. There's no memory, past conversation, or ad history feeding the choice. What an advertiser still controls is context hints at the ad group level and geo targeting, but both are a much blunter tool than the audience targeting you're likely used to." } },
+    { "@type": "Question", name: "What is the DSA ad repository, and when is it coming?", acceptedAnswer: { "@type": "Answer", text: "On August 31, 2026, the European Commission designated ChatGPT a Very Large Online Search Engine under the Digital Services Act, with a compliance deadline of end of December 2026. Part of that obligation is a public ad repository — a registry that stores ad content, advertiser name, the period an ad ran, targeting parameters, and reach, kept publicly available for a year. In practice it's similar to what Meta Ad Library does for Facebook and Instagram ads, just for ChatGPT." } },
+    { "@type": "Question", name: "What if my country isn't on the supported list?", acceptedAnswer: { "@type": "Answer", text: "You can still advertise if your business has a real legal entity registered in a supported market — for example, an EU or UK entity. Registering a shell entity elsewhere purely to get around a geographic block isn't allowed under the policy, which explicitly prohibits misrepresenting a business's location. There's no waitlist for unsupported countries either — an account can be created with a notification for when the market opens, but that doesn't grant earlier access." } },
+  ],
+};
+
+
 // --- product-feed-optimizacija-scorecard / merchant-center-feed-scorecard ---
 const faqSchemaFeedScorecardSR = {
   "@context": "https://schema.org",
@@ -1139,6 +1210,15 @@ const faqSchemaDemandGenEN = {
 };
 
 function getFaqSchema(slug: string, locale: string) {
+  if (slug === "chatgpt-ads-vodic") {
+    return locale === "en" ? faqSchemaChatGptAdsEN : faqSchemaChatGptAdsSR;
+  }
+  if (slug === "chatgpt-ads-vs-google-ads") {
+    return locale === "en" ? faqSchemaChatGptVsGoogleEN : faqSchemaChatGptVsGoogleSR;
+  }
+  if (slug === "chatgpt-ads-evropa") {
+    return locale === "en" ? faqSchemaChatGptEvropaEN : faqSchemaChatGptEvropaSR;
+  }
   if (slug === "product-feed-optimizacija-scorecard") {
     return locale === "en" ? faqSchemaFeedScorecardEN : faqSchemaFeedScorecardSR;
   }
