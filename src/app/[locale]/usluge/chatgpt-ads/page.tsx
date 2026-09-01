@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "ChatGPT Ads Agency | Early-Access Advertising in ChatGPT — Slobodan Jelisavac"
-      : "ChatGPT Ads (oglasi u ChatGPT-u) | Early Access - Slobodan Jelisavac",
+      ? "ChatGPT Ads Agency | Advertising in ChatGPT (Live in 47 Countries) — Slobodan Jelisavac"
+      : "ChatGPT Ads (oglasi u ChatGPT-u) | Živo u 47 zemalja - Slobodan Jelisavac",
     description: isEn
-      ? "Early-access ChatGPT Ads management: sponsored placements inside AI conversations, captured at peak intent. Context-hint strategy, OAIQ pixel tracking, creative, and landing pages. Senior-led, before your competition arrives."
-      : "Early-access upravljanje ChatGPT Ads oglasima: plaćena mesta unutar AI razgovora, tačno u trenutku najveće namere. Strategija konteksta, OAIQ merenje, kreativa i landing stranice. Senior pristup, pre nego što konkurencija stigne.",
+      ? "ChatGPT Ads management: sponsored placements inside AI conversations, live across the US, UK, EU (including Croatia), and 47 countries total. Context-hint strategy, OAIQ pixel tracking, creative, and landing pages. Senior-led pilots for considered-purchase brands."
+      : "Upravljanje ChatGPT Ads oglasima: plaćena mesta unutar AI razgovora, živa u SAD, UK, EU (uključujući Hrvatsku) i ukupno 47 zemalja. Strategija konteksta, OAIQ merenje, kreativa i landing stranice. Za firme koje posluju u inostranstvu ili EU vodim pilote već sada.",
     locale,
     path: "/services/chatgpt-ads",
     srPath: "/usluge/chatgpt-ads",
@@ -36,12 +36,12 @@ export default async function ChatGptAdsPage({ params }: Props) {
         {
           title: "Contextual matching, not keywords",
           description:
-            "ChatGPT matches ads to the full meaning of the conversation, not to a keyword you bid on. You describe the questions, needs, and situations your buyer brings to the chat, and the model places you where that context actually shows up. Message-to-market fit wins here, not keyword lists.",
+            "ChatGPT matches ads to the full meaning of the conversation, not to a keyword you bid on. In the EU and Switzerland there's no personalization layer at all right now — no memory, no past conversations, no ad history — just the current chat, broad location, and language. Context hints and creative carry the entire match. Message-to-market fit wins here, not audience targeting.",
         },
         {
           title: "Early-mover advantage",
           description:
-            "The self-serve beta opened in 2026 and the auction is still thin. Recommended CPC bids sit at $3–5 and pilot CPMs have been falling. The brands that learn this format now build the account history and creative learnings competitors won't have when the window closes.",
+            "The channel is about seven months old and self-serve access only just opened across the EU. The auction is still far from saturated, but the window is closing fast — OpenAI hit a $1B annualized run rate in under 200 days. Brands that learn the format now build the account history and creative learnings that show up as an advantage once the auction matures.",
         },
       ]
     : [
@@ -53,12 +53,12 @@ export default async function ChatGptAdsPage({ params }: Props) {
         {
           title: "Kontekst, ne ključne reči",
           description:
-            "ChatGPT povezuje oglas sa punim značenjem razgovora, ne sa ključnom reči na koju licitirate. Vi opisujete pitanja, potrebe i situacije sa kojima vaš kupac dolazi u chat, a model vas postavlja tamo gde se taj kontekst zaista javlja. Ovde pobeđuje poklapanje poruke i tržišta, ne liste ključnih reči.",
+            "ChatGPT povezuje oglas sa punim značenjem razgovora, ne sa ključnom reči na koju licitirate. U EU i Švajcarskoj trenutno nema sloja personalizacije - nema memorije, prošlih razgovora, ni istorije oglasa - samo tekući razgovor, gruba lokacija i jezik. Kontekstualne smernice i kreativa nose ceo mehanizam poklapanja. Ovde pobeđuje poklapanje poruke i tržišta, ne targetiranje publike.",
         },
         {
           title: "Prednost ranog ulaska",
           description:
-            "Self-serve beta je otvorena tokom 2026. i aukcija je i dalje retka. Preporučeni CPC iznosi su 3-5 dolara, a CPM cene u pilotu padaju. Brendovi koji nauče ovaj format sada grade istoriju naloga i uvide u kreativu koje konkurencija neće imati kada se prozor zatvori.",
+            "Kanal ima oko sedam meseci, a self-serve pristup se u EU tek otvorio. Aukcija je i dalje daleko od zasićene, ali se prozor brzo zatvara - OpenAI je za manje od 200 dana dostigao run rate prihoda od milijardu dolara na godišnjem nivou. Brendovi koji format nauče sada grade istoriju naloga i uvide u kreativu koji postaju prednost kad aukcija sazri.",
         },
       ];
 
@@ -67,7 +67,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
         {
           title: "Advertiser account & access",
           description:
-            "Setup inside OpenAI's Ads Manager beta — billing, budgets, bidding, and pacing configured correctly from day one.",
+            "Setup inside OpenAI's Ads Manager — billing, budgets, bidding, and pacing configured correctly from day one, plus a category eligibility check (consumer categories only; finance, healthcare, and legal are US-only for now).",
         },
         {
           title: "Context-hint strategy",
@@ -97,14 +97,14 @@ export default async function ChatGptAdsPage({ params }: Props) {
         {
           title: "Testing & optimization",
           description:
-            "CPC vs CPM objectives, bid levels, and context hints tested against your real conversion data — the same discipline I bring to a Google Ads account.",
+            "CPC, CPM, and oCPC objectives, bid levels, and context hints tested against your real conversion data — the same discipline I bring to a Google Ads account.",
         },
       ]
     : [
         {
           title: "Nalog i pristup platformi",
           description:
-            "Setup unutar OpenAI Ads Manager bete - naplata, budžeti, licitiranje i pacing pravilno podešeni od prvog dana.",
+            "Setup unutar OpenAI Ads Manager-a - naplata, budžeti, licitiranje i pacing pravilno podešeni od prvog dana, uz proveru kategorije i podobnosti (samo consumer kategorije; finansije, zdravstvo i pravne usluge su za sada samo za SAD).",
         },
         {
           title: "Strategija konteksta",
@@ -134,7 +134,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
         {
           title: "Testiranje i optimizacija",
           description:
-            "CPC vs CPM ciljevi, nivoi licitacije i kontekstualne smernice testirani na vašim stvarnim podacima o konverzijama - ista disciplina koju nosim u Google Ads nalog.",
+            "CPC, CPM i oCPC ciljevi, nivoi licitacije i kontekstualne smernice testirani na vašim stvarnim podacima o konverzijama - ista disciplina koju nosim u Google Ads nalog.",
         },
       ];
 
@@ -154,7 +154,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
         },
         {
           dimension: "Competition right now",
-          chatgpt: "Thin — early beta, few advertisers",
+          chatgpt: "Young — tens of thousands of advertisers vs Google's millions",
           google: "Mature and saturated in most niches",
           meta: "Mature and saturated",
         },
@@ -186,7 +186,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
         },
         {
           dimension: "Konkurencija sada",
-          chatgpt: "Retka - rana beta, malo oglašivača",
+          chatgpt: "Mlada - desetine hiljada oglašivača naspram miliona na Google-u",
           google: "Zrela i zasićena u većini niša",
           meta: "Zrela i zasićena",
         },
@@ -207,13 +207,15 @@ export default async function ChatGptAdsPage({ params }: Props) {
   const idealClients = isEn
     ? [
         "Considered-purchase brands where buyers research before deciding (B2B, SaaS, premium eCommerce, services)",
-        "Advertisers in markets where the format is live (US, UK, and other early-access regions)",
+        "Advertisers with a legal entity or operations in a supported market — US, UK, EU (including Croatia and Slovenia), Canada, Australia, and 40+ other countries",
+        "Businesses in an allowed consumer category — eCommerce, travel, digital products, education, or local services",
         "Brands that already run Google or Meta and want a genuine first-mover channel",
         "Teams that value being early to a format over waiting for a proven playbook",
       ]
     : [
         "Brendovi sa promišljenom kupovinom gde kupci istražuju pre odluke (B2B, SaaS, premium eCommerce, usluge)",
-        "Oglašivači na tržištima gde je format živ (US, UK i druga early-access tržišta)",
+        "Oglašivači sa pravnim entitetom ili poslovanjem na podržanom tržištu - SAD, UK, EU (uključujući Hrvatsku i Sloveniju), Kanada, Australija i još 40+ zemalja",
+        "Biznisi u dozvoljenoj consumer kategoriji - eCommerce, putovanja, digitalni proizvodi, edukacija ili lokalne usluge",
         "Brendovi koji već vrte Google ili Meta i žele stvarni first-mover kanal",
         "Timovi kojima je vrednost biti rano na formatu, a ne čekati proveren plan",
       ];
@@ -223,11 +225,13 @@ export default async function ChatGptAdsPage({ params }: Props) {
         "You need guaranteed volume today — beta inventory and reach are still limited",
         "You have no verified conversion tracking — without it, a new channel is invisible",
         "You want a channel that runs itself with no testing budget for a young format",
+        "You're in finance, healthcare, or legal outside the US — OpenAI currently restricts these categories to US advertisers",
       ]
     : [
         "Treba vam zagarantovan obim odmah - beta inventar i domet su još ograničeni",
         "Nemate verifikovan tracking konverzija - bez toga je novi kanal nevidljiv",
         "Želite kanal koji se vrti sam, bez budžeta za testiranje mladog formata",
+        "Bavite se finansijama, zdravstvom ili pravnim uslugama van SAD - OpenAI trenutno dozvoljava ove kategorije samo oglašivačima iz SAD",
       ];
 
   const faqs = isEn
@@ -235,64 +239,64 @@ export default async function ChatGptAdsPage({ params }: Props) {
         {
           question: "Are ChatGPT Ads actually live in 2026?",
           answer:
-            "Yes. OpenAI moved from a partner-led pilot to a self-serve Ads Manager beta during 2026, and removed the earlier five- and six-figure minimum spend commitments. Ads appear as clearly labeled sponsored cards below ChatGPT responses and don't influence the answer itself. Advertiser access is still expanding market by market, which is exactly why this is an early-access engagement.",
+            "Yes, fully live. The rollout moved fast: a US pilot from February 9, UK/Japan/Brazil/Mexico/Korea confirmed live by August 11, and the EU (all 27 member states plus Iceland, Liechtenstein, Norway, and Switzerland) live from August 24. By August 31, self-serve advertiser access had opened across 47 countries, and OpenAI reported a $1B annualized run rate reached in under 200 days. Ads only appear to logged-in Free and Go users, as clearly labeled sponsored cards below the answer — they never change the answer itself, and Plus, Pro, Business, Enterprise, and Edu users don't see them at all.",
         },
         {
           question: "Can I run ChatGPT Ads from Serbia / the region?",
           answer:
-            "Advertiser access during the beta is primarily US-focused, and ads currently reach users in markets like the US, Canada, Australia, and New Zealand. If your customers are there, we can run pilots now. If you're targeting the regional market, I put you on an early-access footing — account, tracking, context-hint strategy, and creative ready — so you launch on day one when it opens here, instead of starting from zero.",
+            "Honestly, not as a Serbian entity — Serbia isn't on OpenAI's supported list, on either side: ads don't reach Serbian users and a Serbian business can't open an advertiser account. Registering somewhere else purely to get around that isn't a gray area either — OpenAI's policy explicitly prohibits misrepresenting your business location. What does work: advertising through a real legal entity in a supported market (the EU, UK, or US — Croatia and Slovenia are both on the list) or through a client's own entity if they operate there. If your business already has that footing, I can run a pilot now.",
         },
         {
           question: "How is targeting different from Google Ads?",
           answer:
-            "There are no keywords to bid on. You give the platform broad intent and theme guidance — descriptions of the questions and situations your buyer brings to the chat — and it matches you on the full meaning of the conversation. It rewards understanding your customer over building keyword lists, which is where a senior strategist matters more, not less.",
+            "There are no keywords to bid on. You give the platform context hints — broad descriptions of the questions and situations your buyer brings to the chat — and it matches you on the full meaning of the current conversation. In the EU and Switzerland it's even more contextual right now: there's no personalization layer at all, so nothing about a user's past chats, memory, or ad history factors in — just the live conversation, rough location, and language. There's also no keyword lists, no demographic targeting, no site-visitor retargeting, and no query-level reporting (you won't see which prompt triggered your ad). It rewards understanding your customer over building keyword lists, which is where a senior strategist matters more, not less.",
         },
         {
           question: "What does it cost to advertise?",
           answer:
-            "OpenAI offers CPC and CPM buying. For CPC, the recommended starting max bid is around $3–5 per click, and pilot CPMs have been trending down as inventory grows. The earlier $50,000+ minimum is gone for the self-serve beta, so you can start with a real test budget rather than an enterprise commitment.",
+            "There's no minimum spend anymore — that requirement (once $200–250K, later $50K) was dropped in May. OpenAI recommends a starting max CPC around $3–5, but independent tests tell a more honest story: real CPCs have ranged from $1.72 to $12 depending on vertical and competition. CPM and a newer oCPC (conversion-optimized) model are also available. My honest framing for a first pilot: treat the budget as a research budget, not a guaranteed-return media buy — that's true of any young ad channel.",
         },
         {
           question: "How do you measure results?",
           answer:
-            "OpenAI provides the OAIQ pixel (a first-party cookie with a 30-day window) plus a server-side Conversions API with event deduplication. I set both up so conversions and cost per action are measured properly — the same tracking discipline I apply to every Google Ads account, applied to a channel most people are running blind.",
+            "OpenAI provides the OAIQ pixel (a first-party cookie with a roughly 30-day window) plus a server-side Conversions API with event deduplication. I set both up properly. What I'm upfront about: there's no native GA4 integration — traffic lands as plain referral — and several agencies have publicly reported a real gap between the clicks OpenAI's dashboard shows and the sessions analytics actually records (the cause isn't established; I won't call it fraud or double-counting, because neither is proven). My standard, agreed before we launch anything: your own analytics is the source of truth, not the platform's own numbers.",
         },
         {
           question: "Why work with you specifically on this?",
           answer:
-            "Because the winning skill here isn't platform button-clicking, it's understanding buyer intent and writing to it — which is what I've done in paid search for 10+ years. I bring that judgment to a format where the playbook is still being written, and I'm honest about what's proven versus what we're testing together.",
+            "Because the winning skill here isn't platform button-clicking, it's understanding buyer intent and writing to it — which is what I've done in paid search for 10+ years. The ChatGPT Ads playbook is still being written; nobody has a proven formula yet. What I bring is the measurement discipline from running Google Ads accounts, applied honestly to a channel where most advertisers are still flying blind, and a straight answer about what's proven versus what we're testing together.",
         },
       ]
     : [
         {
           question: "Da li ChatGPT Ads zaista postoje u 2026?",
           answer:
-            "Da. OpenAI je tokom 2026. prešao sa pilota vođenog kroz partnere na self-serve Ads Manager betu i ukinuo ranije obaveze o minimalnom trošenju od pet i šest cifara. Oglasi se pojavljuju kao jasno označene sponzorisane kartice ispod ChatGPT odgovora i ne utiču na sam odgovor. Pristup za oglašivače se i dalje širi tržište po tržište, i zato je ovo early-access angažman.",
+            "Da, potpuno je živ. Rollout je bio brz: US pilot od 9. februara, UK/Japan/Brazil/Meksiko/Koreja potvrđeno živi do 11. avgusta, a EU (svih 27 zemalja članica plus Island, Lihtenštajn, Norveška i Švajcarska) živa od 24. avgusta. Do 31. avgusta se self-serve pristup za oglašivače otvorio u 47 zemalja, a OpenAI je objavio da je za manje od 200 dana dostigao run rate prihoda od milijardu dolara na godišnjem nivou. Oglase vide samo ulogovani Free i Go korisnici, kao jasno označene sponzorisane kartice ispod odgovora - nikad ne menjaju sam odgovor, a Plus, Pro, Business, Enterprise i Edu korisnici ih uopšte ne vide.",
         },
         {
           question: "Mogu li da vrtim ChatGPT Ads iz Srbije / regiona?",
           answer:
-            "Pristup za oglašivače je tokom bete pretežno usmeren na US, a oglasi trenutno dolaze do korisnika na tržištima poput US, Kanade, Australije i Novog Zelanda. Ako su vaši kupci tamo, pilote možemo da vrtimo odmah. Ako ciljate regionalno tržište, postavljam vas na early-access poziciju - nalog, tracking, strategija konteksta i kreativa spremni - da krenete prvog dana kada se otvori kod nas, umesto od nule.",
+            "Iskreno, ne kao srpska firma - Srbija nije na OpenAI-jevoj listi podržanih tržišta, sa nijedne strane: oglasi ne dolaze do srpskih korisnika i srpska firma ne može da otvori advertiser nalog. Registracija negde drugde samo da bi se to zaobišlo nije siva zona - OpenAI-jeva pravila izričito zabranjuju lažno predstavljanje lokacije biznisa. Ono što radi: oglašavanje kroz stvaran pravni entitet na podržanom tržištu (EU, UK ili SAD - Hrvatska i Slovenija su obe na listi) ili kroz entitet klijenta ako tamo posluje. Ako vaša firma već ima takvu poziciju, mogu da pokrenem pilot odmah.",
         },
         {
           question: "Kako se targeting razlikuje od Google Ads?",
           answer:
-            "Nema ključnih reči na koje se licitira. Platformi dajete široke smernice po nameri i temi - opise pitanja i situacija sa kojima vaš kupac dolazi u chat - a ona vas povezuje na osnovu punog značenja razgovora. Nagrađuje razumevanje kupca više nego pravljenje listi ključnih reči, i tu senior strateg znači više, a ne manje.",
+            "Nema ključnih reči na koje se licitira. Platformi dajete kontekstualne smernice - opise pitanja i situacija sa kojima vaš kupac dolazi u chat - a ona vas povezuje na osnovu punog značenja tekućeg razgovora. U EU i Švajcarskoj je to trenutno još izraženije: nema sloja personalizacije uopšte, pa ništa od prošlih razgovora, memorije ili istorije oglasa ne ulazi u igru - samo tekući razgovor, gruba lokacija i jezik. Nema ni listi ključnih reči, ni demografskog targetiranja, ni retargetinga posetilaca sajta, ni izveštaja na nivou upita (nećete videti koji prompt je okinuo vaš oglas). Nagrađuje razumevanje kupca više nego pravljenje listi ključnih reči, i tu senior strateg znači više, a ne manje.",
         },
         {
           question: "Koliko košta oglašavanje?",
           answer:
-            "OpenAI nudi CPC i CPM kupovinu. Za CPC, preporučena početna maksimalna licitacija je oko 3-5 dolara po kliku, a CPM cene u pilotu opadaju kako raste inventar. Raniji minimum od 50.000 dolara je ukinut za self-serve betu, pa možete da krenete sa stvarnim test budžetom umesto enterprise obavezom.",
+            "Minimalnog budžeta više nema - ta obaveza (nekad 200-250 hiljada dolara, kasnije 50 hiljada) ukinuta je u maju. OpenAI preporučuje početnu maksimalnu CPC licitaciju od oko 3-5 dolara, ali nezavisni testovi daju iskreniju sliku: realni CPC-evi su se kretali od 1,72 do 12 dolara zavisno od vertikale i konkurencije. Postoje i CPM i noviji oCPC model (optimizacija ka konverziji). Moj iskren okvir za prvi pilot: budžet tretirati kao istraživački, ne kao medijski budžet sa zagarantovanim povraćajem - to važi za svaki mlad oglasni kanal.",
         },
         {
           question: "Kako merite rezultate?",
           answer:
-            "OpenAI daje OAIQ piksel (first-party kolačić sa prozorom od 30 dana) plus server-side Conversions API sa deduplikacijom događaja. Podešavam oba tako da se konverzije i cena po akciji mere kako treba - ista disciplina merenja koju primenjujem na svaki Google Ads nalog, na kanalu koji većina vrti naslepo.",
+            "OpenAI daje OAIQ piksel (first-party kolačić sa prozorom od otprilike 30 dana) plus server-side Conversions API sa deduplikacijom događaja. Oba podešavam kako treba. Ono oko čega sam iskren unapred: nema native GA4 integracije - saobraćaj stiže kao običan referral - i nekoliko agencija je javno prijavilo stvaran jaz između broja klikova koje pokazuje OpenAI-jev panel i sesija koje analitika stvarno beleži (uzrok nije utvrđen, ne zovem to prevarom ni dvostrukim brojanjem jer nijedno nije dokazano). Moj standard, dogovoren pre nego što bilo šta lansiramo: vaša sopstvena analitika je izvor istine, ne brojke same platforme.",
         },
         {
           question: "Zašto baš sa vama za ovo?",
           answer:
-            "Zato što ključna veština ovde nije kliktanje po platformi, već razumevanje namere kupca i pisanje za nju - a to radim u paid search-u preko 10 godina. Tu procenu nosim u format gde se plan tek piše, i iskren sam oko toga šta je dokazano, a šta zajedno testiramo.",
+            "Zato što ključna veština ovde nije kliktanje po platformi, već razumevanje namere kupca i pisanje za nju - a to radim u paid search-u preko 10 godina. Playbook za ChatGPT Ads se tek piše, niko još nema dokazanu formulu. Ono što donosim je disciplina merenja iz vođenja Google Ads naloga, primenjena iskreno na kanal na kom većina oglašivača i dalje leti naslepo, i iskren odgovor o tome šta je dokazano, a šta zajedno testiramo.",
         },
       ];
 
@@ -341,13 +345,13 @@ export default async function ChatGptAdsPage({ params }: Props) {
         name: "ChatGPT Ads Management",
         serviceType: "ChatGPT Ads Agency",
         description:
-          "Early-access management of advertising inside ChatGPT: context-hint strategy, chat-card creative, OAIQ pixel tracking, and landing pages for considered-purchase brands.",
+          "Management of advertising inside ChatGPT, live across 47 countries: context-hint strategy, chat-card creative, OAIQ pixel tracking, and landing pages for considered-purchase brands.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
           url: "https://www.slobodan-jelisavac.com",
         },
-        areaServed: ["United States", "United Kingdom", "Australia", "Canada", "Serbia"],
+        areaServed: ["United States", "United Kingdom", "European Union", "Croatia", "Canada", "Australia"],
         offers: {
           "@type": "Offer",
           priceCurrency: "USD",
@@ -366,7 +370,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
         name: "ChatGPT Ads upravljanje",
         serviceType: "ChatGPT Ads agencija",
         description:
-          "Early-access upravljanje oglašavanjem unutar ChatGPT-a: strategija konteksta, kreativa za chat kartice, OAIQ merenje i landing stranice za brendove sa promišljenom kupovinom.",
+          "Upravljanje oglašavanjem unutar ChatGPT-a, živo u 47 zemalja: strategija konteksta, kreativa za chat kartice, OAIQ merenje i landing stranice za brendove sa promišljenom kupovinom.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
@@ -420,7 +424,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
 
           <div className="max-w-3xl">
             <p className="text-accent font-semibold uppercase tracking-wide text-sm mb-4">
-              {isEn ? "ChatGPT Ads Agency — Early Access" : "ChatGPT Ads agencija - Early Access"}
+              {isEn ? "ChatGPT Ads Agency — Live in the EU, UK & US" : "ChatGPT Ads agencija - živo u EU, UK i SAD"}
             </p>
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               {isEn
@@ -433,18 +437,20 @@ export default async function ChatGptAdsPage({ params }: Props) {
                   ChatGPT now sells sponsored placements inside its answers — a
                   card that appears the moment someone is reasoning through a
                   decision. It reaches a buyer at peak intent, before they ever
-                  open Google. The format is new and the auction is still thin.
-                  I help considered-purchase brands get in early, correctly, and
-                  measured.
+                  open Google. The channel is young — self-serve access opened
+                  across 47 countries by the end of August 2026 — and the
+                  auction is still far from mature. I help considered-purchase
+                  brands get in now, correctly, and measured.
                 </>
               ) : (
                 <>
                   ChatGPT sada prodaje sponzorisana mesta unutar svojih odgovora
                   - kartica koja se pojavi u trenutku dok neko razmišlja o
                   odluci. Dolazi do kupca u trenutku najveće namere, pre nego što
-                  uopšte otvori Google. Format je nov i aukcija je i dalje retka.
-                  Pomažem brendovima sa promišljenom kupovinom da uđu rano,
-                  ispravno i mereno.
+                  uopšte otvori Google. Kanal je mlad - self-serve pristup se do
+                  kraja avgusta 2026. otvorio u 47 zemalja - i aukcija je i dalje
+                  daleko od zrele. Pomažem brendovima sa promišljenom kupovinom
+                  da uđu sada, ispravno i mereno.
                 </>
               )}
             </p>
@@ -453,8 +459,8 @@ export default async function ChatGptAdsPage({ params }: Props) {
               <p className="text-gray-800 text-sm md:text-base leading-relaxed">
                 <strong>{isEn ? "Quick answer:" : "Brzi odgovor:"}</strong>{" "}
                 {isEn
-                  ? "ChatGPT Ads are live in a self-serve beta (CPC ~$3–5, no minimum spend). Advertiser access is expanding market by market — I run pilots where it's live and put regional brands on early-access footing so they launch on day one."
-                  : "ChatGPT Ads su živi u self-serve beti (CPC ~3-5 dolara, bez minimalnog budžeta). Pristup za oglašivače se širi tržište po tržište - vrtim pilote gde je format živ i postavljam regionalne brendove na early-access poziciju da krenu prvog dana."}
+                  ? "ChatGPT Ads are live in a self-serve beta across 47 countries, including the US, UK, and EU (Croatia and Slovenia included) — no minimum spend. Recommended starting CPC is $3–5, though independent tests show real CPCs from $1.72 up to $12 depending on vertical. Serbia isn't on the supported list yet. I run pilots for brands with a legal entity in a supported market."
+                  : "ChatGPT Ads su živi u self-serve beti u 47 zemalja, uključujući SAD, UK i EU (Hrvatska i Slovenija su na listi) - bez minimalnog budžeta. Preporučeni početni CPC je 3-5 dolara, ali nezavisni testovi pokazuju realne CPC-eve od 1,72 do 12 dolara zavisno od vertikale. Srbija još nije na listi podržanih tržišta. Vodim pilote za brendove sa pravnim entitetom na podržanom tržištu."}
               </p>
             </div>
 
@@ -473,7 +479,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/kontakt" variant="secondary">
-                {isEn ? "Join the early-access list" : "Prijavi se za early access"}
+                {isEn ? "Book a pilot conversation" : "Zakažite razgovor o pilotu"}
               </Button>
               <Button href="/usluge/google-ads-upravljanje" variant="primary">
                 {isEn ? "Google Ads Management" : "Google Ads upravljanje"}
@@ -482,6 +488,31 @@ export default async function ChatGptAdsPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* SR-only availability box - gde ChatGPT Ads rade danas (1.9.2026) */}
+      {!isEn && (
+        <Section>
+          <div className="max-w-3xl mx-auto">
+            <div className="border-l-4 border-primary bg-blue-50 p-4 md:p-5 rounded-r-lg text-left">
+              <p className="font-heading font-semibold text-gray-900 mb-3">
+                Dostupnost: gde ChatGPT Ads rade danas
+              </p>
+              <ul className="space-y-2 text-gray-800 text-sm md:text-base leading-relaxed">
+                <li>
+                  <strong>Srbija:</strong> još nije dostupno - ni oglasi korisnicima, ni nalozi za oglašivače.
+                </li>
+                <li>
+                  <strong>EU, uključujući Hrvatsku i Sloveniju:</strong> dostupno - oglasi korisnicima od 24.8, self-serve nalozi za oglašivače od 31.8.2026.
+                </li>
+                <li>
+                  <strong>Ako vaša firma ima pravni entitet u EU, UK ili SAD, ili posluje na tim tržištima:</strong>{" "}
+                  primenljivo odmah - to je tačno profil sa kojim radim.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </Section>
+      )}
 
       {/* SEO Intro Section */}
       <Section>
@@ -771,12 +802,12 @@ export default async function ChatGptAdsPage({ params }: Props) {
             </h2>
             <p className="text-gray-300 mb-8">
               {isEn
-                ? "The advertisers who learn ChatGPT Ads now will own the cheap, uncrowded auction. Let's see if your business fits — and get you on the early-access list."
-                : "Oglašivači koji ChatGPT Ads nauče sada držaće jeftinu, nezakrčenu aukciju. Da vidimo da li vaš biznis odgovara - i da vas stavimo na early-access listu."}
+                ? "The advertisers who learn ChatGPT Ads now are building account history and creative learnings while the auction is still young. Let's see if your business fits — and get a pilot running."
+                : "Oglašivači koji ChatGPT Ads nauče sada grade istoriju naloga i uvide u kreativu dok je aukcija još mlada. Da vidimo da li vaš biznis odgovara - i pokrenemo pilot."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button href="/kontakt" variant="secondary">
-                {isEn ? "Join the early-access list" : "Prijavi se za early access"}
+                {isEn ? "Book a pilot conversation" : "Zakažite razgovor o pilotu"}
               </Button>
               <Button href="/case-studies" variant="primary">
                 {isEn ? "View case studies" : "Pogledajte rezultate"}
