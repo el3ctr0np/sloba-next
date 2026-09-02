@@ -620,7 +620,7 @@ function ChapterNav({ chapters, locale }: { chapters: Chapter[]; locale: string 
                 {chapter.level}
               </span>
             </div>
-            <span className="text-gray-400 text-sm flex-shrink-0">
+            <span className="text-gray-500 text-sm flex-shrink-0">
               {chapter.posts.length}{" "}
               {locale === "en"
                 ? (chapter.posts.length === 1 ? "guide" : "guides")

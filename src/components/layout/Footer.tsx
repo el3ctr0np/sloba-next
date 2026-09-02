@@ -91,9 +91,9 @@ export function Footer() {
 
           {/* Usluge */}
           <div>
-            <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
+            <h2 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
               {t("sectionServices")}
-            </h4>
+            </h2>
             <ul className="space-y-2">
               {footerLinks.usluge.map((link) => (
                 <li key={link.label}>
@@ -110,9 +110,9 @@ export function Footer() {
 
           {/* Industrije + Paketi */}
           <div>
-            <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
+            <h2 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
               {t("sectionIndustries")}
-            </h4>
+            </h2>
             <ul className="space-y-2">
               {footerLinks.industrije.map((link) => (
                 <li key={link.label}>
@@ -129,9 +129,9 @@ export function Footer() {
 
           {/* Resursi */}
           <div>
-            <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
+            <h2 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wide text-gray-300">
               {t("sectionResources")}
-            </h4>
+            </h2>
             <ul className="space-y-2">
               {footerLinks.resursi.map((link) => (
                 <li key={link.label}>
@@ -147,9 +147,9 @@ export function Footer() {
 
             {/* Mini-CTA — Google Ads insights */}
             <div className="mt-6 pt-4 border-t border-gray-800">
-              <h4 className="font-heading font-semibold text-sm text-gray-300 mb-2">
+              <h2 className="font-heading font-semibold text-sm text-gray-300 mb-2">
                 {t("insights.heading")}
-              </h4>
+              </h2>
               <p className="text-gray-400 text-xs mb-3">
                 {t("insights.description")}
               </p>

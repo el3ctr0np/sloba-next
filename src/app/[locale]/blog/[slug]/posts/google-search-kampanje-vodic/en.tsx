@@ -34,7 +34,7 @@ export default function GoogleSearchCampaignsGuidePost() {
             <p className="text-xs text-slate-400 mt-1 mb-0">weeks to first results</p>
           </div>
         </div>
-        <p className="text-xs text-slate-600 mt-4 mb-0">*Per Google's own data: an average 7% increase in conversions or conversion value at a similar CPA/ROAS, with the full AI Max suite vs. search term matching alone.</p>
+        <p className="text-xs text-slate-400 mt-4 mb-0">*Per Google's own data: an average 7% increase in conversions or conversion value at a similar CPA/ROAS, with the full AI Max suite vs. search term matching alone.</p>
       </div>
 
       {/* ── Featured-snippet definition block ── */}

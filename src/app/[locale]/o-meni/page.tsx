@@ -531,7 +531,7 @@ export default async function AboutPage({ params }: Props) {
             href="https://searchawards.co.uk/2021-winners/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary underline hover:no-underline"
+            className="text-primary-dark underline hover:no-underline"
           >
             {locale === "en"
               ? "UK Search Awards 2021 winners page"

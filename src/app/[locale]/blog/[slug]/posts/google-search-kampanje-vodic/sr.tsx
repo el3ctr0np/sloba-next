@@ -34,7 +34,7 @@ export default function GoogleSearchKampanjeVodicPost() {
             <p className="text-xs text-slate-400 mt-1 mb-0">nedelje do prvih rezultata</p>
           </div>
         </div>
-        <p className="text-xs text-slate-600 mt-4 mb-0">*Po Google-ovim podacima: prosečno 7% više konverzija ili conversion value pri sličnom CPA/ROAS, uz punu AI Max suitu vs samo search term matching.</p>
+        <p className="text-xs text-slate-400 mt-4 mb-0">*Po Google-ovim podacima: prosečno 7% više konverzija ili conversion value pri sličnom CPA/ROAS, uz punu AI Max suitu vs samo search term matching.</p>
       </div>
 
       {/* ── Featured-snippet definition block ── */}
