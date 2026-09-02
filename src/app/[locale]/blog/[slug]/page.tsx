@@ -1486,6 +1486,17 @@ export default async function BlogPostPage({ params }: Props) {
     permanentRedirect(`/en/blog/${slugMap[slug]}`);
   }
 
+  // Mirror case: SR locale receiving an EN slug. Google builds /sr/blog/<en-slug>
+  // from the hreflang pattern and every unprefixed /blog/<en-slug> link lands
+  // here too (the locale middleware prefixes /sr). GSC Sep 2026 listed 13 such
+  // 404s. Same 301 as above, in the other direction.
+  if (!post && locale === "sr") {
+    const srSlug = getAlternateSlug(slug, "sr");
+    if (srSlug !== slug) {
+      permanentRedirect(`/sr/blog/${srSlug}`);
+    }
+  }
+
   if (!post) {
     notFound();
   }

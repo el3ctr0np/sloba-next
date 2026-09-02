@@ -36,7 +36,6 @@ export default async function LocaleLayout({
   return (
     <html lang={typedLocale} className={fontVariables}>
       <head>
-        <link rel="preload" href="/hero.webp" as="image" type="image/webp" />
         <HeadScripts />
       </head>
       <body className={inter.className}>

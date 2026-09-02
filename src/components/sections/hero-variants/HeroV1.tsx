@@ -71,7 +71,7 @@ export function HeroV1({
 
             {/* Logotipi klijenata: popunjavaju levu kolonu dokazom, ne vazduhom */}
             <div className="mt-7 pt-6 border-t border-gray-100">
-              <p className="text-[11px] uppercase tracking-[0.14em] text-gray-400 mb-3.5">
+              <p className="text-[11px] uppercase tracking-[0.14em] text-gray-500 mb-3.5">
                 {isEn ? "Brands I have worked with" : "Brendovi sa kojima sam radio"}
               </p>
               <div className="flex flex-wrap items-center gap-x-7 gap-y-4">
@@ -104,8 +104,13 @@ export function HeroV1({
                 alt={isEn ? "Slobodan Jelisavac - Google Ads expert" : "Slobodan Jelisavac - Google Ads stručnjak"}
                 width={1400}
                 height={1400}
+                // Without `sizes` the browser assumed 100vw at every DPR and
+                // fetched the 3840px variant: LCP 7.5s on mobile, 46 KB where
+                // ~20 KB does the job. Half the grid on lg+, full width below.
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="w-full h-auto"
                 priority
+                fetchPriority="high"
               />
               {/* Dokazi preko fotografije: nagrada nosi tezinu, brojke je podupiru.
                   Tekst je namerno kratak da se nista ne prelama. */}

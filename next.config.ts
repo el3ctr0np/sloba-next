@@ -4,11 +4,19 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
+  images: {
+    // Optimised images (/_next/image) default to a 60s cache; every hero and
+    // logo came back with a short TTL in PageSpeed. Source files rarely change
+    // and are content-addressed by URL params anyway.
+    minimumCacheTTL: 2592000
+  },
   async redirects() {
     return [
-      // Deleted pages → redirect to relevant sections
+      // Deleted pages → redirect to relevant sections. `:locale` is pinned to
+      // sr|en: an unpinned param swallowed /google-ads-usluge/cenovnik as
+      // locale="google-ads-usluge" and sent it to /google-ads-usluge/usluge.
       {
-        source: "/:locale/cenovnik",
+        source: "/:locale(sr|en)/cenovnik",
         destination: "/:locale/usluge",
         permanent: true
       },
@@ -65,17 +73,17 @@ const nextConfig: NextConfig = {
       },
       // Methodology page retired Jul 2026 — folded into service pages
       {
-        source: "/:locale/metodologija",
+        source: "/:locale(sr|en)/metodologija",
         destination: "/:locale/usluge",
         permanent: true
       },
       {
-        source: "/:locale/methodology",
+        source: "/:locale(sr|en)/methodology",
         destination: "/:locale/usluge",
         permanent: true
       },
       {
-        source: "/:locale/usluge/seo",
+        source: "/:locale(sr|en)/usluge/seo",
         destination: "/:locale/usluge",
         permanent: true
       },
@@ -133,6 +141,53 @@ const nextConfig: NextConfig = {
         destination: "/sr/blog",
         permanent: true
       },
+      // Old WP pages → new equivalents (second batch from GSC "Not found" list,
+      // Sep 2026 — each one has a real successor, so 301 rather than 410)
+      {
+        source: "/google-ads-usluge",
+        destination: "/sr/usluge",
+        permanent: true
+      },
+      {
+        source: "/google-ads-usluge/:path*",
+        destination: "/sr/usluge",
+        permanent: true
+      },
+      {
+        source: "/blog/google-ads-za-pocetnike",
+        destination: "/sr/blog/kako-poceti-google-ads",
+        permanent: true
+      },
+      {
+        source: "/blog/google-ads-za-pocetnike-vodic",
+        destination: "/sr/blog/kako-poceti-google-ads",
+        permanent: true
+      },
+      {
+        source: "/blog/google-oglasavanje-vodic-2025",
+        destination: "/sr/blog/google-oglasavanje-za-firme",
+        permanent: true
+      },
+      {
+        source: "/blog/pisanje-google-ads-oglasa",
+        destination: "/sr/blog/rsa-vodic",
+        permanent: true
+      },
+      {
+        source: "/about-us",
+        destination: "/sr/o-meni",
+        permanent: true
+      },
+      {
+        source: "/our-team",
+        destination: "/sr/o-meni",
+        permanent: true
+      },
+      {
+        source: "/privacy-policy",
+        destination: "/sr/privatnost",
+        permanent: true
+      },
       // Old WP pages → new equivalents
       {
         source: "/author/:path*",
@@ -185,9 +240,11 @@ const nextConfig: NextConfig = {
         destination: "/sr/blog",
         permanent: true
       },
+      // Old glossary entries → the glossary that exists now (was /sr/blog
+      // before /recnik shipped; GSC still lists 7 of these as redirects)
       {
         source: "/edukacija/recnik/:path*",
-        destination: "/sr/blog",
+        destination: "/sr/recnik",
         permanent: true
       },
       // Old category pages → blog
@@ -298,8 +355,23 @@ const nextConfig: NextConfig = {
 
     const noindex = [{ key: "X-Robots-Tag", value: "noindex, nofollow" }];
 
+    // Files under /public are served by Vercel with `max-age=0, must-revalidate`
+    // (every repeat view re-validates every logo and photo). /_next/static is
+    // already immutable; this covers the raw public images. 30 days, not a
+    // year: blog covers and photos get replaced under the same filename.
+    const staticImageCache = [
+      {
+        key: "Cache-Control",
+        value: "public, max-age=2592000, stale-while-revalidate=86400"
+      }
+    ];
+
     return [
       { source: "/:path*", headers: securityHeaders },
+      {
+        source: "/:all*(svg|jpg|jpeg|png|webp|avif|gif|ico)",
+        headers: staticImageCache
+      },
       // Private surfaces: robots.txt disallows crawling, but add a header-level
       // noindex so a linked URL can never be URL-indexed either.
       { source: "/studio/:path*", headers: noindex },

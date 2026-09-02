@@ -24,7 +24,44 @@ function isProtectedPortalRoute(pathname: string): boolean {
   );
 }
 
+// Old WordPress leftovers. The site moved to Next.js in Jan 2026 but Googlebot
+// keeps requesting these (GSC Sep 2026: 39 x 404, 3 x 403, 2 x duplicate).
+// A 410 says "gone on purpose": it drops out of the index report faster than a
+// 404 and, unlike a redirect to the homepage, is never counted as a soft 404.
+// Only junk with no successor lives here. Anything with a real replacement is
+// a 301 in next.config.ts (which runs before this middleware).
+const GONE_PREFIXES = [
+  "/wp-content",
+  "/wp-admin",
+  "/wp-includes",
+  "/wp-json",
+  "/wp-login",
+  "/portfolio-post",
+  "/product-tag",
+  "/product-category",
+  "/service-category",
+  "/tag/",
+  "/feed",
+  "/comments",
+  "/hello-world",
+  "/5-resasons-to-purchase-desktop-computer",
+  "/event-recap-careers-open-source-beyond",
+];
+
+function isGone(pathname: string): boolean {
+  return GONE_PREFIXES.some(
+    (p) => pathname === p || pathname === p.replace(/\/$/, "") || pathname.startsWith(p.endsWith("/") ? p : p + "/")
+  );
+}
+
 export default async function middleware(request: NextRequest) {
+  if (isGone(request.nextUrl.pathname)) {
+    return new NextResponse("Gone", {
+      status: 410,
+      headers: { "Content-Type": "text/plain; charset=utf-8", "X-Robots-Tag": "noindex" },
+    });
+  }
+
   // Check if this is a protected portal route
   if (isProtectedPortalRoute(request.nextUrl.pathname)) {
     const token = request.cookies.get("portal_session")?.value;

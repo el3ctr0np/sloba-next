@@ -148,7 +148,7 @@ export function Footer() {
               <h4 className="font-heading font-semibold text-sm text-gray-300 mb-2">
                 {t("insights.heading")}
               </h4>
-              <p className="text-gray-500 text-xs mb-3">
+              <p className="text-gray-400 text-xs mb-3">
                 {t("insights.description")}
               </p>
               <div className="flex flex-col gap-1.5">
@@ -175,7 +175,7 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-500">
+          <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
             <p>
               {t("copyright")}
             </p>

@@ -11,22 +11,27 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
-  if (locale === "en") {
-    return buildMetadata({
-      title: "Thank You | Slobodan Jelisavac",
-      description: "We received your inquiry. Book a slot for a free Google Ads consultation.",
-      locale,
-      path: "/contact/thank-you",
-      srPath: "/kontakt/hvala",
-    });
-  }
+  // Thank-you page: reachable only after a form submit, no search value, and
+  // GSC listed it under "Discovered - currently not indexed". noindex + out of
+  // the sitemap, same as the other hvala routes.
+  const base =
+    locale === "en"
+      ? buildMetadata({
+          title: "Thank You | Slobodan Jelisavac",
+          description: "We received your inquiry. Book a slot for a free Google Ads consultation.",
+          locale,
+          path: "/contact/thank-you",
+          srPath: "/kontakt/hvala",
+        })
+      : buildMetadata({
+          title: "Hvala na upitu | Slobodan Jelisavac",
+          description: "Primili smo vaš upit. Zakažite termin za besplatnu Google Ads konsultaciju.",
+          locale,
+          path: "/contact/thank-you",
+          srPath: "/kontakt/hvala",
+        });
 
-  return buildMetadata({
-    title: "Hvala na upitu | Slobodan Jelisavac",
-    description: "Primili smo vaš upit. Zakažite termin za besplatnu Google Ads konsultaciju.",
-    locale,
-    path: "/kontakt/hvala",
-  });
+  return { ...base, robots: { index: false, follow: true } };
 }
 
 const getPersonSchema = (locale: string) => ({
