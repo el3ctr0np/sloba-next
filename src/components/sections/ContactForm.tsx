@@ -112,7 +112,7 @@ export function ContactForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label htmlFor="cf-website" className="text-sm font-semibold text-gray-900 block mb-1.5">
-            Website <span className="font-normal text-gray-400">({sr ? "opciono" : "optional"})</span>
+            Website <span className="font-normal text-gray-500">({sr ? "opciono" : "optional"})</span>
           </label>
           <input
             id="cf-website"
@@ -168,7 +168,7 @@ export function ContactForm() {
         {t("submit")} →
       </Button>
 
-      <p className="text-xs text-gray-400 text-center mb-0">
+      <p className="text-xs text-gray-500 text-center mb-0">
         {sr
           ? "Odgovaram u roku od 24h radnim danima. Bez spama, bez liste."
           : "I reply within 24h on weekdays. No spam, no mailing list."}

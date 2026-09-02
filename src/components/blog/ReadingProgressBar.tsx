@@ -1,8 +1,11 @@
 "use client";
 
+import { useLocale } from "next-intl";
+
 import { useEffect, useState } from "react";
 
 export function ReadingProgressBar() {
+  const locale = useLocale();
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -41,6 +44,7 @@ export function ReadingProgressBar() {
     <div
       className="fixed top-0 left-0 w-full h-[3px] z-50 bg-transparent pointer-events-none"
       role="progressbar"
+      aria-label={locale === "en" ? "Reading progress" : "Napredak čitanja"}
       aria-valuenow={Math.round(progress)}
       aria-valuemin={0}
       aria-valuemax={100}

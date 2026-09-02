@@ -114,7 +114,7 @@ export function ChecklistDownloadForm() {
         {sr ? "Preuzmite checklistu" : "Get the checklist"} →
       </button>
 
-      <p className="text-xs text-gray-400 text-center mb-0">
+      <p className="text-xs text-gray-500 text-center mb-0">
         {sr
           ? "Odmah dobijate link za preuzimanje. Bez spama, bez liste."
           : "You get the download link immediately. No spam, no mailing list."}

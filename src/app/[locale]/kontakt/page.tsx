@@ -288,9 +288,9 @@ export default async function ContactPage({ params }: Props) {
                   {step.number}
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">
+                  <h2 className="font-heading font-semibold mb-1">
                     {step.title}
-                  </h3>
+                  </h2>
                   <p className="text-gray-600 text-sm">{step.description}</p>
                 </div>
               </div>

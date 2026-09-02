@@ -146,7 +146,7 @@ export default async function ResourcesPage({ params }: Props) {
       />
 
       <div className="max-w-6xl mx-auto px-4 py-14 md:py-20">
-        <p className="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-3">
+        <p className="text-xs uppercase tracking-[0.2em] text-primary-dark font-bold mb-3">
           {sr ? "Besplatno" : "Free"}
         </p>
         <h1 className="font-heading font-bold text-3xl md:text-4xl text-gray-900 mb-4">
@@ -193,7 +193,7 @@ export default async function ResourcesPage({ params }: Props) {
               </p>
               <p
                 className={`text-xs mb-4 ${
-                  tool.featured ? "text-slate-400" : "text-gray-400"
+                  tool.featured ? "text-slate-400" : "text-gray-500"
                 }`}
               >
                 {tool.meta}

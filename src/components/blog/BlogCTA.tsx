@@ -110,7 +110,7 @@ export function BlogCTA({
         </Link>
       </div>
 
-      <p className="text-slate-500 text-xs mt-4 mb-0">
+      <p className="text-slate-400 text-xs mt-4 mb-0">
         {isEn
           ? "Limited to 5 audits per month. Response within 48 hours."
           : "Ograničeno na 5 audita mesečno. Odgovor u roku od 48h."}

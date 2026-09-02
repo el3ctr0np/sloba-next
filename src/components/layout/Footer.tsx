@@ -45,9 +45,11 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <h3 className="font-heading font-bold text-xl mb-4">
+            {/* Brand name, not a section heading: as an h3 it broke heading
+                order on pages whose last heading is the h1 (e.g. /resursi). */}
+            <p className="font-heading font-bold text-xl mb-4">
               Digital Jelisavac
-            </h3>
+            </p>
             <p className="text-gray-400 text-sm mb-4">
               {t("brandDescription")}
             </p>

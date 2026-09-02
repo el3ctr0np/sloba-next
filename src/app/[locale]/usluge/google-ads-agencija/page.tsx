@@ -713,7 +713,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
                 <th className="text-left py-3 px-4 text-sm font-heading font-semibold text-gray-900">
                   {isEn ? "Criterion" : "Kriterijum"}
                 </th>
-                <th className="text-left py-3 px-4 text-sm font-heading font-semibold text-primary">
+                <th className="text-left py-3 px-4 text-sm font-heading font-semibold text-primary-dark">
                   {isEn ? "Boutique (Slobodan Jelisavac)" : "Boutique (Slobodan Jelisavac)"}
                 </th>
                 <th className="text-left py-3 px-4 text-sm font-heading font-semibold text-gray-900">
@@ -743,7 +743,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
                 Still weighing it up?{" "}
                 <Link
                   href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
-                  className="text-primary underline"
+                  className="text-primary-dark underline"
                 >
                   Read the full agency vs freelancer breakdown →
                 </Link>
@@ -753,7 +753,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
                 Još vagate?{" "}
                 <Link
                   href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
-                  className="text-primary underline"
+                  className="text-primary-dark underline"
                 >
                   Pročitajte detaljno poređenje agencija naspram freelancera →
                 </Link>
@@ -934,7 +934,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
               <>
                 Google Shopping is arriving in Serbia in the second half of 2026 (Q3 or Q4), and the setup is ready to
                 move on day one.{" "}
-                <Link href="/usluge/google-shopping" className="text-primary underline">
+                <Link href="/usluge/google-shopping" className="text-primary-dark underline">
                   See how we approach Google Shopping →
                 </Link>
               </>
@@ -942,7 +942,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
               <>
                 Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4), a setup je spreman da krene od prvog
                 dana.{" "}
-                <Link href="/usluge/google-shopping" className="text-primary underline">
+                <Link href="/usluge/google-shopping" className="text-primary-dark underline">
                   Vidite kako pristupamo Google Shopping-u →
                 </Link>
               </>
