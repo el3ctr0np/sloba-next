@@ -244,7 +244,7 @@ const srPosts: PostData[] = [
     slug: "google-search-kampanje-vodic",
     title: "Google Search kampanje: kompletan vodič [2026]",
     date: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-06",
     category: "Search",
     metaDescription:
       "Kompletan vodič za Google Search kampanje 2026: AI Max suita, septembarska migracija DSA i broad match kampanja, struktura po nameri i marži, negativne ključne reči i merenje pre skaliranja.",
@@ -258,7 +258,7 @@ const srPosts: PostData[] = [
     slug: "demand-gen-vodic",
     title: "Demand Gen kampanje: kompletan vodič [2026]",
     date: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-06",
     category: "Demand Gen",
     metaDescription:
       "Demand Gen kampanje 2026: gde se prikazuju, šta je novo (view-through optimizacija, inkrementalnost), kome imaju smisla, kreativa, publike i setup korak po korak. Poređenje sa PMax i YouTube kampanjama.",
@@ -336,7 +336,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-api-basic-access-vodic",
     title: "Google Ads API Basic Access: Vodič Korak po Korak [2026]",
     date: "2026-07-11",
-    dateModified: "2026-07-11",
+    dateModified: "2026-09-06",
     category: "Automatizacija",
     metaDescription:
       "Kako do Google Ads API Basic Access nivoa u 2026: developer token, aplikacija koja prolazi iz prve, povezivanje sa Cloud projektom i novi brand verification pilot koji skraćuje review sa nedelja na par sati. Iz ličnog iskustva.",
@@ -586,7 +586,7 @@ const srPosts: PostData[] = [
     slug: "performance-max-vodic",
     title: "Performance Max (PMax) Vodič za 2026: Struktura, Asset Grupe + Template koji daje bolji ROAS",
     date: "2026-01-26",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-06",
     category: "Performance Max",
     metaDescription:
       "Performance Max kampanje u 2026: kompletna struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje koštaju 30-50% ROAS-a. Uključuje gotov PMax Asset Grupa template + lekcije iz 10+ naloga.",
@@ -614,7 +614,7 @@ const srPosts: PostData[] = [
     slug: "google-shopping-vodic",
     title: "Google Shopping Kampanje: Kompletan Vodič + 2026 Srbija Launch Priprema",
     date: "2026-01-26",
-    dateModified: "2026-07-24",
+    dateModified: "2026-09-06",
     category: "Google Shopping",
     metaDescription:
       "Google Shopping vodič sa 2+ godine UK iskustva (skincare brend, šestocifren prihod): product feed optimizacija, 10 obaveznih atributa, struktura kampanja, i priprema za lansiranje u Srbiji u drugoj polovini 2026 (Q3 ili Q4).",
@@ -640,7 +640,7 @@ const srPosts: PostData[] = [
     slug: "conversion-tracking-vodic",
     title: "Conversion Tracking za Google Ads: Zašto Vaše Kampanje Ne Rade",
     date: "2026-01-26",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-06",
     category: "Google Ads",
     metaDescription:
       "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje GTM, GA4 i Google Ads tagova, Consent Mode v2 i Enhanced Conversions.",
@@ -720,12 +720,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "kljucne-reci-vodic",
-    title: "Koje ključne reči zapravo donose rezultate, a koje samo troše budžete",
+    title: "Ključne reči za Google Ads: kako izabrati one koje donose kupce [2026]",
     date: "2026-01-27",
-    dateModified: "2026-07-24",
+    dateModified: "2026-09-06",
     category: "Google Ads keywords",
     metaDescription:
-      "Ključne reči za Google Ads: tipovi po intentu (transactional, commercial, informational), match types (broad/phrase/exact), negative keywords, 7 besplatnih alata za istraživanje i šablon za organizaciju 100+ keyword-a. Koraci koje koristim sa 20+ klijenata.",
+      "Ključne reči za Google Ads: kako ih birate po nameri kupca, koji match tip za šta i koje reči odmah isključujete. Postupak sa klijentskih naloga plus 7 besplatnih alata.",
     featuredImage: "/blog/kljucne-reci-vodic.webp",
     imageAlt: "Ilustracija zlatnog ključa pored sivih ključeva i sita koje ih razdvaja, tema ključnih reči koje donose rezultate u Google Ads",
     readingTime: "14 min",
@@ -922,7 +922,7 @@ const enPosts: PostData[] = [
     slug: "google-search-campaigns-guide",
     title: "Google Search Campaigns: The Complete Guide [2026]",
     date: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-06",
     category: "Search",
     metaDescription:
       "The complete 2026 guide to Google Search campaigns: the AI Max suite, September migration of DSA and broad match campaigns, intent-and-margin structure, negative keywords, and measurement before scaling.",
@@ -936,7 +936,7 @@ const enPosts: PostData[] = [
     slug: "demand-gen-guide",
     title: "Demand Gen Campaigns: The Complete Guide [2026]",
     date: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-06",
     category: "Demand Gen",
     metaDescription:
       "Demand Gen campaigns in 2026: where they show, what's new (view-through optimization, incrementality testing), who they make sense for, creative requirements, audiences, and step-by-step setup.",
@@ -1014,7 +1014,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-api-basic-access-guide",
     title: "Google Ads API Basic Access: Step-by-Step Guide [2026]",
     date: "2026-07-11",
-    dateModified: "2026-07-11",
+    dateModified: "2026-09-06",
     category: "Automation",
     metaDescription:
       "How to get Google Ads API Basic Access in 2026: developer token setup, an application that gets approved on the first try, Cloud project linking, and the new brand verification pilot that cuts review time from weeks to hours. First-hand guide.",
@@ -1258,7 +1258,7 @@ const enPosts: PostData[] = [
     slug: "performance-max-guide",
     title: "Performance Max Campaigns: Guide for eCommerce and B2B [2026]",
     date: "2026-01-26",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-06",
     category: "Performance Max",
     metaDescription:
       "Everything about Performance Max campaigns — how they work, when to use them, structure, asset groups, and optimization strategies. Guide based on real results.",
@@ -1284,7 +1284,7 @@ const enPosts: PostData[] = [
     slug: "google-shopping-guide",
     title: "Google Shopping Campaigns: How to Increase ROAS [Guide 2026]",
     date: "2026-01-26",
-    dateModified: "2026-02-03",
+    dateModified: "2026-09-06",
     category: "Google Shopping",
     metaDescription:
       "Complete guide to Google Shopping campaigns. Product feed optimization, campaign structure, bidding strategies and tactics for increasing ROAS — based on real results.",
@@ -1309,7 +1309,7 @@ const enPosts: PostData[] = [
     slug: "conversion-tracking-guide",
     title: "Conversion Tracking for Google Ads: Why Your Campaigns Aren't Working",
     date: "2026-01-26",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-06",
     category: "Google Ads",
     metaDescription:
       "Poor conversion tracking is the #1 reason Google Ads campaigns fail. Guide to proper GTM, GA4, and Google Ads tag setup, Consent Mode v2, and Enhanced Conversions.",
@@ -1385,9 +1385,9 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-keyword-guide",
-    title: "Which Keywords Actually Bring Customers — And Which Ones Just Burn Your Budget",
+    title: "Google Ads Keywords: How to Pick the Ones That Bring Customers [2026]",
     date: "2026-01-27",
-    dateModified: "2026-07-24",
+    dateModified: "2026-09-06",
     category: "Google Ads Keywords",
     metaDescription:
       "What separates Google Ads keywords that bring paying customers from those that just drain your budget. Match types, intent classification, negative keywords, and lessons from 20+ accounts I've personally managed.",

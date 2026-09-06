@@ -36,6 +36,15 @@ export default function GoogleShoppingGuideEN() {
         Shopping campaigns are only as good as your product feed and campaign structure. In my experience, 80% of problems stem from an unoptimized feed — no matter how much you spend, a bad feed means bad results.
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide — change history</p>
+        <p className="text-sm text-gray-600 mb-3">This guide is updated every month. What changed:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>September 2026:</strong> Content API for Shopping was permanently shut down (Aug 18) — if your feed runs through an older integration or plugin, check whether it has already moved to the Merchant API. As of Aug 31, Shopping campaigns include local inventory by default (the enable_local flag is now ignored) — online-only sellers should check their inventory filters. As of Aug 17, campaigns on tCPA/tROAS that had long been outperforming their target now consistently drift toward it instead of continuing to beat it. As of Jan 31, 2027, a main product image under 500x500 px will go straight to disapproval, no longer just a warning.</li>
+          <li><strong>January 2026:</strong> First version of this guide.</li>
+        </ul>
+      </div>
+
       <hr />
 
       <h2>How Google Shopping works</h2>
@@ -399,6 +408,11 @@ export default function GoogleShoppingGuideEN() {
         </ul>
       </div>
 
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Change as of Aug 17, 2026</p>
+        <p className="text-blue-800 text-base mb-0">For budget-constrained campaigns on Target CPA or Target ROAS, Google now steers the campaign more consistently TOWARD the target. If a campaign had long been outperforming its target, efficiency tightens toward it — spend doesn't increase, and Google doesn't touch the target or the budget. If you notice ROAS drifting toward the target instead of continuing to beat it, that's expected behavior, not a broken campaign.</p>
+      </div>
+
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">My recommendation</p>
         <p className="text-base text-yellow-900 mb-0">I recommend Manual CPC for the first 2-4 weeks (while collecting minimum 50 conversions), then switch to Target ROAS. Split campaigns by custom labels (high/medium/low margin) and set different ROAS targets — high margin = lower target, low margin = higher target.</p>
@@ -530,7 +544,7 @@ export default function GoogleShoppingGuideEN() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Mistake</p>
         <p className="font-semibold mb-2">Poor product images</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Clean white background, consistent style, high resolution (minimum 800x800px), and multiple images via additional_image_link attribute. Poor images = low CTR = low Quality Score = higher CPC.</p>
+          <p className="text-sm text-green-800 mb-0"><strong>Solution:</strong> Clean white background, consistent style, high resolution (minimum 800x800px), and multiple images via additional_image_link attribute. Poor images = low CTR = low Quality Score = higher CPC. As of Jan 31, 2027, Merchant Center sends any main image under 500x500 px straight to disapproval, no longer just a warning, across all categories — check Diagnostics before that date so part of your catalogue doesn't drop out of active status.</p>
         </div>
       </div>
 
@@ -640,6 +654,23 @@ export default function GoogleShoppingGuideEN() {
             <div><strong>Link to Google Ads</strong> <span className="text-gray-500">— enables campaign creation</span></div>
           </div>
         </div>
+      </div>
+
+      <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
+        <p className="font-heading font-bold text-lg mb-2">If your feed arrives via an API integration</p>
+        <p className="text-base text-yellow-900 mb-0">Content API for Shopping was permanently shut down on Aug 18, 2026. If your feed runs through a platform plugin (WooCommerce, a Shopify app) or a feed management tool that isn't on the Merchant API, your product data will go stale over time and end up in disapproval. Check with your integration provider whether it has already moved to the Merchant API — this isn't optional, the old API no longer works.</p>
+      </div>
+
+      <div className="bg-orange-50 border-2 border-orange-300 rounded-xl p-5 md:p-6 my-6">
+        <p className="font-heading font-bold text-lg mb-2">Online-only seller? Check local inventory</p>
+        <p className="text-base text-orange-900 mb-3">As of Aug 31, 2026, Shopping campaigns include local inventory by default — the older enable_local flag that used to turn this off is no longer respected. For stores with no physical location, this means part of the budget can end up in a channel that does nothing for them.</p>
+        <p className="font-semibold text-orange-900 mb-1">What to check:</p>
+        <ul className="text-base text-orange-900 mb-0">
+          <li>In Merchant Center, check whether the account is linked to a Business Profile or has an active local inventory feed — if you only sell online, that feed shouldn't exist</li>
+          <li>In the Shopping campaign settings, check the inventory filter and exclude local ads if the option is available</li>
+          <li>In campaign reports, segment by click type/network and check whether spend is showing up on local ads</li>
+          <li>If local inventory spend exists, check Merchant Center under Growth &gt; Manage programs and opt out of the local inventory program</li>
+        </ul>
       </div>
 
       <h3>Common disapproval reasons</h3>
@@ -818,7 +849,7 @@ export default function GoogleShoppingGuideEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: February 2026
+        Last updated: September 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

@@ -13,6 +13,15 @@ export default function PerformanceMaxGuideEN() {
         In practice, PMax can be an exceptionally effective channel that scales results or a black hole consuming budget without transparency. The difference is in approach and understanding how the system works.
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide — change history</p>
+        <p className="text-sm text-gray-600 mb-3">This guide is updated every month. What changed:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>September 2026:</strong> Since August 17, target-based bid strategies (tCPA/tROAS) on budget-constrained campaigns now track more consistently toward the set target — a campaign that was beating its target now drifts back toward it, without spend increasing. I added an explanation of what that means for PMax and what to do if your ROAS has been sitting above target (see "Performance Max optimization"). Also: as of September, language targeting in PMax no longer applies to the Search Network portion of the campaign, but still applies to YouTube, Display, Discover, and Gmail.</li>
+          <li><strong>January 2026:</strong> First version of this guide.</li>
+        </ul>
+      </div>
+
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Performance Max campaigns combine all Google networks in one campaign with automated bidding. I recommend them for scaling after you have stable conversion tracking and sufficient data — minimum 50+ conversions monthly. Hybrid approach delivers best results: Search for control, Shopping for products, PMax for reach.</p>
@@ -111,6 +120,14 @@ export default function PerformanceMaxGuideEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Waze inventory for store goals</h3>
         </div>
         <p className="text-base text-gray-600 mb-0">Store goals campaigns can now tap Waze inventory, US only for now. In practice: relevant if you have physical locations and care about store visits — an extra channel that reaches drivers planning a route, with no additional creative work required.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Language targeting disappears from the Search side</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">As of September 2026, Google is removing campaign-level language targeting from Search campaigns — matching now runs on the language of your ad and landing page, plus the languages a user knows. For PMax that means language targeting no longer applies to the Search Network portion of the campaign, but it still applies to YouTube, Display, Discover, and Gmail. In practice: if you relied on that setting for language control across the whole PMax campaign, it still works for YouTube, Display, Discover, and Gmail — for the Search portion, language control now comes from the language of your assets and landing page.</p>
       </div>
 
       <figure className="my-8">
@@ -283,6 +300,11 @@ export default function PerformanceMaxGuideEN() {
       <p>
         For eCommerce, PMax is most powerful when launched with an optimized product feed linked to <GlossaryLink slug="merchant-center">Merchant Center</GlossaryLink>. PMax without feed is essentially a Display campaign in new packaging — it loses Shopping and Product Listing Ads power, and your <GlossaryLink slug="roas">ROAS</GlossaryLink> potential drops significantly.
       </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Local inventory: the August 31, 2026 change does not apply to PMax</p>
+        <p className="text-yellow-800 text-base mb-0">Since August 31, 2026 Google enables local inventory by default in <strong>standard Shopping campaigns</strong>, where the &quot;enable_local&quot; flag no longer has any effect. In Performance Max the flag still behaves exactly as before, so PMax is not affected. I mention it here because the change gets retold as if it covered every feed-driven campaign: if you also run standard Shopping alongside PMax, check the inventory filters there.</p>
+      </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
@@ -473,6 +495,11 @@ export default function PerformanceMaxGuideEN() {
           <li>Wait a minimum of 7–10 days before making the next adjustment</li>
           <li>Set a realistic target based on your historical data</li>
         </ul>
+      </div>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Bidding behavior change (as of August 17, 2026)</p>
+        <p className="text-blue-800 text-base mb-0">If a campaign is budget-constrained and was performing better than its tCPA/tROAS target, Google has, since August 17, been steering it more consistently TOWARD that target — efficiency tightens back down toward the target, spend doesn't increase, and Google doesn't touch your target or budget itself. This applies to Search, Shopping, PMax, Demand Gen, Display, Hotel, and Travel campaigns. In practice, if you're used to seeing ROAS above target: that no longer means the campaign has a "cushion" it will keep holding — the system will move it toward the target over time instead of leaving it above it. If you want to keep the higher efficiency you'd been seeing, you now have to ask for it explicitly — raise the tROAS target (or lower tCPA) to a level that matches the results the campaign was showing, rather than counting on it staying better than target on its own.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -809,7 +836,7 @@ export default function PerformanceMaxGuideEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: August 2026
+        Last updated: September 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

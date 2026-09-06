@@ -37,6 +37,7 @@ export default function DemandGenVodicPost() {
         <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
         <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira svakog meseca. Šta je novo:</p>
         <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>Septembar 2026:</strong> Sam kanal nije dobio velike izmene ovog meseca - dodao sam šta znači alat za migraciju Display kampanja u Demand Gen (živ od juna 2026, migracija za sada dobrovoljna) i kako target-based bidding od 17.8.2026. utiče na Demand Gen kampanje sa tCPA/tROAS ciljem.</li>
           <li><strong>Avgust 2026:</strong> Prva verzija vodiča: šta je Demand Gen, novosti 2026 (view-through optimizacija, inkrementalnost), poređenje sa PMax i YouTube kampanjama.</li>
         </ul>
       </div>
@@ -142,6 +143,22 @@ export default function DemandGenVodicPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">AI image i video enhancements</h3>
         </div>
         <p className="text-base text-gray-600 mb-0">Automatske varijante kreativa - Google iz vaših slika i videa generiše dodatne verzije za testiranje. Praktično: korisno za brzinu, ali ne rešava problem lošeg polaznog materijala. Više o tome u sekciji o kreativi ispod.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Alat za migraciju Display kampanja u Demand Gen (od juna 2026)</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Google je od juna 2026. otvorio alat koji Display kampanje prebacuje u ono što zovu &quot;Google Display Network on Demand Gen&quot;. Migracija je za sada dobrovoljna - datum kad postaje obavezna nije objavljen. Šta se u praksi menja: struktura ide sa banner ad grupa na asset grupe kao kod Demand Gen-a i PMax-a (slike, video i tekst grupisani po temi umesto pojedinačnih banner varijanti), a merenje se seli sa display-specifičnih pokazatelja (viewability, impresije po plasmanu) na feed-native izveštavanje, uključujući opciju view-through konverzije opisanu iznad. Dok migracija nije obavezna, ne žurim sa njom kod klijenata čije Display kampanje već rade stabilno - prelazak restartuje deo learning perioda i menja izveštavanje na način koji otežava poređenje sa istorijskim podacima. Kad datum obavezne migracije bude objavljen, vodič se ažurira.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">8</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Target-based bidding sad strože prati cilj (17.8.2026)</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Google je promenio ponašanje target-based bid strategija (tCPA, tROAS) kod kampanja ograničenih budžetom - promena važi za Search, Shopping, PMax, Display, Hotel, Travel i Demand Gen. Ako je kampanja duže vreme radila bolje od zadatog cilja, sad će doslednije driftovati KA tom cilju - efikasnost se steže, potrošnja se ne povećava, Google sam od sebe ne dira ni cilj ni budžet. Praktično: ako ste navikli da vam Demand Gen kampanja sa tCPA drži CPA ispod cilja mesecima, ne iznenadite se ako se to postepeno približi zadatoj vrednosti - to je namerno ponašanje algoritma, ne kvar u kampanji.</p>
       </div>
 
       <hr />
@@ -467,7 +484,7 @@ export default function DemandGenVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Avgust 2026
+        Poslednje ažuriranje: Septembar 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

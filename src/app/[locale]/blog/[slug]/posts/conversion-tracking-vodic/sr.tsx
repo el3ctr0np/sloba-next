@@ -53,6 +53,15 @@ export default function ConversionTrackingVodicPost() {
         U ovom vodiču pokrivam sve što vam treba da postavite precizno praćenje konverzija: osnovni GTM setup, Consent Mode v2 za EEA i UK saobraćaj, Google Ads conversion actions i Enhanced Conversions. Takođe ćete naučiti kako da otkrijete i ispravite najčešće greške koje koštaju vaš budžet.
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
+        <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira svakog meseca. Šta je novo:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>Septembar 2026:</strong> U samom merenju nema promene - GTM, GA4 i Google Ads tagovi se postavljaju isto kao pre. Promenilo se to koliko brzo greška u merenju utiče na potrošnju: od 17. avgusta target-based bid strategije (tCPA, tROAS) doslednije drže kampanju na zadatom cilju, pa pogrešno postavljena ili duplirana konverzija direktnije oblikuje budžet. Detalji u sekciji "Zašto je conversion tracking temelj Google Ads-a".</li>
+          <li><strong>Januar 2026:</strong> Prva verzija vodiča.</li>
+        </ul>
+      </div>
+
       <hr />
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
@@ -144,6 +153,16 @@ export default function ConversionTrackingVodicPost() {
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
           "Kampanja bez pouzdanog conversion tracking-a je kao auto bez instrumenata - vozite naslepo i ne znate koliko brzo idete ili koliko goriva trošite."
+        </p>
+      </div>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Od 17. avgusta 2026: greška u merenju se brže vidi u potrošnji</p>
+        <p className="text-blue-800 text-base mb-2">
+          Google je od 17. avgusta 2026. promenio kako se target-based bid strategije (tCPA, tROAS) ponašaju kod kampanja ograničenih budžetom: kampanja koja je trošila bolje od zadatog cilja sada doslednije "driftuje" nazad ka tom cilju - efikasnost se steže, potrošnja ostaje ista, a Google ne dira ni cilj ni budžet. Važi za Search, Shopping, PMax, Demand Gen, Display, Hotel i Travel kampanje.
+        </p>
+        <p className="text-blue-800 text-base mb-0">
+          Praktično: kad se kampanja čvršće drži zadatog broja, pogrešno postavljena ili duplirana konverzija direktnije oblikuje potrošnju - manje se "izgladi" slučajno dobrim rezultatom na drugoj strani naloga. Pre nego što diram target vrednost, proveravam četiri stvari: da li se ista akcija broji dvaput (greška #2 dole), da li je neka sekundarna konverzija greškom postavljena kao Primary i ulazi u cilj, da li Count stoji na pogrešnoj vrednosti (Every umesto One ili obrnuto) i da li conversion value i dalje tačno stiže posle poslednje izmene na checkout-u ili formi. Ovo ne garantuje bolji CPA - samo znači da grešku u merenju sad brže vidite u tome koliko se troši, ne samo u izveštaju.
         </p>
       </div>
 

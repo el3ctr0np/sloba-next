@@ -53,6 +53,15 @@ export default function ConversionTrackingGuideEN() {
         In this guide, I cover everything you need to set up precise conversion tracking: basic GTM setup, Consent Mode v2 for EEA and UK traffic, Google Ads conversion actions, and Enhanced Conversions. You'll also learn how to discover and fix the most common mistakes that cost your budget.
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide — change history</p>
+        <p className="text-sm text-gray-600 mb-3">This guide is updated every month. What changed:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>September 2026:</strong> No change in measurement itself — GTM, GA4, and Google Ads tags are set up the same way as before. What changed is how fast a measurement error shows up in spend: since August 17, target-based bid strategies (tCPA, tROAS) hold budget-constrained campaigns closer to their set goal, so a misconfigured or duplicated conversion shapes budget more directly. Details in the "Why conversion tracking is the foundation of Google Ads" section.</li>
+          <li><strong>January 2026:</strong> First version of the guide.</li>
+        </ul>
+      </div>
+
       <hr />
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
@@ -144,6 +153,16 @@ export default function ConversionTrackingGuideEN() {
       <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
         <p className="font-heading font-semibold text-lg mb-0">
           &quot;A campaign without reliable conversion tracking is like a car without instruments — you're driving blind and don't know how fast you're going or how much fuel you're using.&quot;
+        </p>
+      </div>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Since August 17, 2026: a measurement error shows up in spend faster</p>
+        <p className="text-blue-800 text-base mb-2">
+          Google changed how target-based bid strategies (tCPA, tROAS) behave on budget-constrained campaigns starting August 17, 2026: a campaign that was spending better than its set goal now drifts back toward that goal more consistently — efficiency tightens, spend stays the same, and Google doesn't touch the goal or the budget. This applies to Search, Shopping, PMax, Demand Gen, Display, Hotel, and Travel campaigns.
+        </p>
+        <p className="text-blue-800 text-base mb-0">
+          In practice: once a campaign holds more tightly to its set number, a misconfigured or duplicated conversion shapes spend more directly — there's less room for it to get smoothed out by a coincidentally good result elsewhere in the account. Before I touch a target value, I check four things: whether the same action is counted twice (mistake #2 below), whether a secondary conversion got flagged as Primary by mistake and is feeding the goal, whether Count is set wrong (Every instead of One, or the reverse), and whether conversion value is still arriving accurately after the last change to checkout or the form. This doesn't guarantee a better CPA — it just means a measurement error now shows up faster in what you spend, not only in the report.
         </p>
       </div>
 

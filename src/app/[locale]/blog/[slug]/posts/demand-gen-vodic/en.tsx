@@ -37,6 +37,7 @@ export default function DemandGenGuideEN() {
         <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide — change history</p>
         <p className="text-sm text-gray-600 mb-3">This guide is updated every month. What changed:</p>
         <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>September 2026:</strong> The channel itself didn't get major changes this month — added what the Display-to-Demand-Gen migration tool means (live since June 2026, migration voluntary for now) and how target-based bidding changes from August 17, 2026 affect Demand Gen campaigns running tCPA/tROAS.</li>
           <li><strong>August 2026:</strong> First version: what Demand Gen is, the 2026 updates (view-through optimization, incrementality), comparison with PMax and YouTube campaigns.</li>
         </ul>
       </div>
@@ -142,6 +143,22 @@ export default function DemandGenGuideEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">AI image and video enhancements</h3>
         </div>
         <p className="text-base text-gray-600 mb-0">Automatic creative variants — Google generates additional versions from your images and video for testing. In practice: useful for testing speed, but it doesn't fix a weak starting asset. More on that in the creative section below.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">A migration tool from Display to Demand Gen (live since June 2026)</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Since June 2026, Google has had a live tool that moves Display campaigns into what it calls "Google Display Network on Demand Gen." The migration is voluntary for now — no date for a mandatory switch has been announced. What actually changes: structure moves from banner ad groups to asset groups the way Demand Gen and PMax work (images, video, and text grouped by theme instead of individual banner variants), and measurement shifts from Display-specific metrics (viewability, impressions by placement) to feed-native reporting, including the view-through conversion option described above. While the migration stays voluntary, I'm not rushing it for clients whose Display campaigns are already running stably — the switch resets part of the learning period and changes reporting in a way that makes comparing against historical data harder. Once a mandatory migration date is announced, this guide gets updated.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">8</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Target-based bidding now sticks closer to the target (August 17, 2026)</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">As of August 17, 2026, Google changed how target-based bid strategies (tCPA, tROAS) behave on budget-constrained campaigns — the change applies to Search, Shopping, PMax, Display, Hotel, Travel, and Demand Gen. If a campaign has been outperforming its target for a while, it will now drift more consistently TOWARD that target — efficiency tightens, spend doesn't increase, and Google doesn't change the target or budget on its own. In practice: if you're used to a Demand Gen campaign on tCPA holding CPA below target for months, don't be surprised if it gradually moves closer to the number you set — that's intentional algorithm behavior, not a campaign malfunction.</p>
       </div>
 
       <hr />
@@ -467,7 +484,7 @@ export default function DemandGenGuideEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: August 2026
+        Last updated: September 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

@@ -10,12 +10,12 @@ export default function GoogleSearchCampaignsGuidePost() {
         Search is the oldest format in Google Ads — and still the most reliable. Someone types a query, you show up right when they're looking for exactly that. No guessing intent like Display, no waiting for the algorithm to learn who your audience is like PMax.
       </p>
       <p>
-        Everything I build for a client starts here. Foundation, then measurement, then scaling — Search is that foundation. If Search doesn't work, nothing built on top of it (Shopping, PMax, remarketing) will work better. This guide is my complete approach to Search campaigns in 2026 — including the September change that rewrites the rules for anyone running DSA or campaign-level broad match.
+        Everything I build for a client starts here. Foundation, then measurement, then scaling — Search is that foundation. If Search doesn't work, nothing built on top of it (Shopping, PMax, remarketing) will work better. This guide is my complete approach to Search campaigns in 2026 — including the migration that's running right now, this September, and rewrites the rules for anyone using DSA or broad match.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
-        <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Search campaigns capture existing demand — people already searching for what you sell. It's the foundation of every account, and the place to first verify measurement actually works. Starting September 2026, AI Max upgrades campaigns running DSA, automatically created assets, and campaign-level broad match — with no action on your part. Prepare before it happens, not after.</p>
+        <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Search campaigns capture existing demand — people already searching for what you sell. It's the foundation of every account, and the place to first verify measurement actually works. The migration is running right now (Sep 1–30, 2026): AI Max upgrades campaigns running DSA, automatically created assets, and campaign-level broad match — with no action on your part. If you haven't checked yet, this week is your last window to do it before Google does it for you.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">7%</p>
@@ -42,6 +42,7 @@ export default function GoogleSearchCampaignsGuidePost() {
         <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide — change history</p>
         <p className="text-sm text-gray-600 mb-3">This guide is updated every month. What changed:</p>
         <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>September 2026:</strong> The AI Max migration for DSA/ACA/broad match campaigns is running now (Sep 1–30), with full DSA sunset scheduled for February 2027. Google is removing language targeting from Search campaigns — added an explanation of what replaces it and what it means for a Serbian-plus-English structure. Added a note on the target-based bid strategy change (from Aug 17) that now steers performance toward the goal more consistently.</li>
           <li><strong>August 2026:</strong> First version: the AI Max suite, the September migration (DSA, ACA, broad match), intent-and-margin structure.</li>
         </ul>
       </div>
@@ -160,13 +161,13 @@ export default function GoogleSearchCampaignsGuidePost() {
         <p className="text-sm text-gray-700 mb-0">Google&#39;s showcase examples are impressive (L&#39;Oréal: double the conversion rate at a 31% lower cost per conversion). But an independent analysis by Mike Ryan of Smarter Ecommerce across 250+ retail campaigns shows a more sober picture: a median +13% revenue lift with a median +16% higher CPA. Translation: switch AI Max on, but watch your own CPA weekly — the showcase is not a guarantee.</p>
       </div>
 
-      <h2 id="september-migration-2026">⚠️ The September 2026 migration</h2>
+      <h2 id="september-migration-2026">⚠️ The September 2026 migration — happening now</h2>
       <figure className="my-8">
         <Image src="/blog/search-migracija.webp" alt="Three legacy campaigns consolidating into one new AI Max system" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-sm text-gray-500 text-center mt-2">September 2026: DSA, ACA and broad match campaigns move into AI Max</figcaption>
       </figure>
       <p>
-        This is the part most people miss — and the part that will hit hardest. Starting September 2026, Google automatically upgrades certain campaigns to AI Max — without you asking for it. The upgrade doesn't ask permission, it just happens, and every migration wraps up by the end of September.
+        This is the part most people miss — and the part that will hit hardest. Right now, in the September 1–30, 2026 window, Google is automatically upgrading certain campaigns to AI Max — without you asking for it. The upgrade doesn't ask permission, it just happens, and every eligible account goes through it before the month is out.
       </p>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
@@ -179,8 +180,12 @@ export default function GoogleSearchCampaignsGuidePost() {
       </div>
 
       <p>
-        If you're running any of these three configurations, the campaign moves to AI Max this September, whether you asked for it or not. Practical consequence: URL expansion, search themes, and AI-generated copy get turned on for a campaign that was possibly never set up for that kind of automation.
+        If you're running any of these three configurations, the campaign moves to AI Max in this wave, whether you asked for it or not. Practical consequence: URL expansion, search themes, and AI-generated copy get turned on for a campaign that was possibly never set up for that kind of automation.
       </p>
+
+      <div className="bg-gray-50 border-l-4 border-gray-400 rounded-r-lg p-4 my-4">
+        <p className="text-sm text-gray-700 mb-0">New DSA campaigns can no longer be created as of this month — existing ones move into AI Max for Search, where dynamic ad groups become standard ad groups with expanded query matching and the same URL controls. ACA and campaign-level broad match go through the same process, and any brand inclusions/exclusions you'd already set carry over to the new structure. Full DSA sunset is scheduled for February 2027 — until then, migrated campaigns keep running, just under the new name and controls.</p>
+      </div>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">Checklist before Google flips the switch</p>
@@ -205,8 +210,13 @@ export default function GoogleSearchCampaignsGuidePost() {
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">What to do now</p>
-        <p className="text-blue-800 text-base mb-0">Don't wait until September. If you're running DSA, ACA, or campaign-level broad match, work through the checklist above now — while you're still the one choosing the settings, not Google. If you'd rather keep control, you can manually move from DSA to a standard Search campaign with search themes before the upgrade lands on its own.</p>
+        <p className="font-semibold text-blue-900 mb-1">What to do this week</p>
+        <p className="text-blue-800 text-base mb-0">The migration runs all month, but you don't get to pick when your account comes up — so this week, not the last week of September, is when to work through the checklist above. If you're running DSA, ACA, or campaign-level broad match, do it now — while you're still the one choosing the settings, not Google. If you'd rather keep control, you can manually move from DSA to a standard Search campaign with search themes before the upgrade reaches your account.</p>
+      </div>
+
+      <div className="bg-orange-50 border-l-4 border-orange-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-orange-900 mb-1">Also this September: language targeting is leaving Search</p>
+        <p className="text-orange-800 text-base mb-0">Google is removing the language setting at the Search campaign level. Instead, it matches ads to users based on the language of the ad and landing page, plus the languages the user is set up to understand in their own Google settings. For PMax, language targeting still applies to YouTube, Display, Discover, and Gmail — just no longer to the Search portion of the campaign. This matters for markets like ours where Serbian and English are often targeted side by side: a one-language-per-campaign structure (Serbian ads in one campaign, English in another) keeps working fine, because the ad and landing page language now does that job instead of the campaign-level setting. If you had one campaign running ads in both languages and relied on the language setting to split who saw what, that control disappears — split it into two campaigns by ad/page language to keep the precision.</p>
       </div>
 
       <hr />
@@ -368,6 +378,11 @@ export default function GoogleSearchCampaignsGuidePost() {
         Which bidding strategy to pick and how to set it up depends on the account's stage — how many conversions you're getting monthly, whether you're tracking order value or just conversion count, and how fast you're changing targets. Full breakdown: <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="underline">Smart Bidding guide</Link>.
       </p>
 
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Change from Aug 17, 2026: target-based strategies now steer toward the goal more consistently</p>
+        <p className="text-blue-800 text-base mb-0">If a campaign is budget-constrained and has spent a long stretch outperforming its tCPA/tROAS target, Google now consistently drifts performance TOWARD that target — CPA rises (or ROAS drops) toward the goal, spend doesn't increase, and Google touches neither the budget nor the target itself. This applies to Search, Shopping, PMax, Demand Gen, Display, Hotel, and Travel campaigns. If you notice CPA "getting worse" on a campaign that had long been beating its target, this is the likely reason, not a mistake in the account. If you want to keep that better efficiency, you now have to manually lower the target or raise the budget — Google no longer does that for you in this direction.</p>
+      </div>
+
       <hr />
 
       <h2 id="measure-before-scaling">Measure before you scale</h2>
@@ -409,7 +424,7 @@ export default function GoogleSearchCampaignsGuidePost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            AI Max is a bundle of features for Search campaigns — search themes, URL expansion, AI-generated copy, and an AI Brief through Gemini. It isn't mandatory on its own, but if you're running DSA, automatically created assets, or campaign-level broad match, Google automatically upgrades you to it starting September 2026, without you asking. If that's not what you want, you need to change the campaign configuration before the upgrade lands, not after.
+            AI Max is a bundle of features for Search campaigns — search themes, URL expansion, AI-generated copy, and an AI Brief through Gemini. It isn't mandatory on its own, but if you're running DSA, automatically created assets, or campaign-level broad match, Google is automatically upgrading you to it during September 2026 (the migration is running now, Sep 1–30), without you asking. If that's not what you want, you need to change the campaign configuration before the upgrade lands, not after. For DSA specifically: new DSA campaigns can no longer be created, and full sunset of the old format is scheduled for February 2027.
           </div>
         </details>
 
@@ -435,8 +450,8 @@ export default function GoogleSearchCampaignsGuidePost() {
       </div>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
-        <p className="font-heading font-bold text-xl md:text-2xl mb-3">Setting up a Search campaign, or getting ready for the September migration?</p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">I help businesses launch Search campaigns with clean structure, real measurement, and an account prepared before the AI Max upgrade lands automatically. Book a free consultation and we'll go through your account.</p>
+        <p className="font-heading font-bold text-xl md:text-2xl mb-3">Setting up a Search campaign, or in the middle of the September migration?</p>
+        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">I help businesses launch Search campaigns with clean structure, real measurement, and an account checked before the AI Max upgrade lands automatically. Book a free consultation and we'll go through your account.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Book a free consultation</Link>
       </div>
 
@@ -472,7 +487,7 @@ export default function GoogleSearchCampaignsGuidePost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: August 2026
+        Last updated: September 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

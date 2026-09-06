@@ -13,6 +13,15 @@ export default function PerformanceMaxVodicPost() {
         U praksi, PMax može biti izuzetno efikasan kanal koji skalira rezultate ili crna rupa koja guta budžet bez transparentnosti. Razlika je u pristupu i razumevanju kako sistem funkcioniše.
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
+        <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira svakog meseca. Šta je novo:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>Septembar 2026:</strong> Od 17.8. target-based bid strategije (tCPA/tROAS) na kampanjama ograničenim budžetom doslednije idu ka zadatom cilju - kampanja koja je bila bolja od cilja sada polako driftuje ka njemu, potrošnja se ne povećava. Dodao sam objašnjenje šta to znači za PMax i šta uraditi ako vam je ROAS do sada bio iznad cilja (sekcija &quot;Optimizacija Performance Max kampanja&quot;). Takođe: od septembra jezik targeting u PMax-u više ne važi za Search Network deo kampanje, i dalje važi za YouTube, Display, Discover i Gmail.</li>
+          <li><strong>Januar 2026:</strong> Prva verzija vodiča.</li>
+        </ul>
+      </div>
+
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Performance Max kampanje kombinuju sve Google mreže u jednoj kampanji sa automatskim bidding-om. Preporučujem ih za skaliranje nakon što imate stabilan conversion tracking i dovoljno podataka - minimum 50+ konverzija mesečno. Hibridni pristup daje najbolje rezultate: Search za kontrolu, Shopping za proizvode, PMax za doseg.</p>
@@ -123,6 +132,14 @@ export default function PerformanceMaxVodicPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Waze inventar za store goals</h3>
         </div>
         <p className="text-base text-gray-600 mb-0">Store goals kampanje sada mogu da koriste i Waze inventar, za sad u SAD. Praktično: relevantno ako imate fizičke lokacije i cilj vam je poseta prodavnici - dodatni kanal doseže vozače koji planiraju rutu, bez dodatnog rada na kreativi.</p>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">7</span>
+          <h3 className="mt-0 mb-0 font-heading font-bold">Jezik targeting nestaje sa Search dela kampanje</h3>
+        </div>
+        <p className="text-base text-gray-600 mb-0">Od septembra 2026. Google uklanja podešavanje jezika na nivou kampanje za Search kampanje - uparivanje ide po jeziku oglasa i landing stranice, plus po jezicima koje korisnik zna. Za PMax to znači da jezik targeting više ne važi za Search Network deo kampanje, ali i dalje važi za YouTube, Display, Discover i Gmail. Praktično: ako ste do sada oslanjali kontrolu jezika u PMax-u samo na to podešavanje, ono i dalje radi za YouTube, Display, Discover i Gmail kanale - za Search deo, kontrolu jezika sada nosi jezik vaših asset-a i landing stranice.</p>
       </div>
 
       <figure className="my-8">
@@ -295,6 +312,11 @@ export default function PerformanceMaxVodicPost() {
       <p>
         Za eCommerce, PMax je najmoćniji kada se pokreće sa optimizovanim product feed-om. PMax bez feed-a je u suštini Display kampanja u novom pakovanju - gubi Shopping i Product Listing Ads moć.
       </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Lokalni inventar: promena od 31.8.2026 se NE odnosi na PMax</p>
+        <p className="text-yellow-800 text-base mb-0">Od 31.8.2026. Google po defaultu uključuje lokalni inventar u <strong>standardnim Shopping kampanjama</strong> i tamo zastavica &quot;enable_local&quot; više nema efekta. U Performance Max kampanjama ta zastavica i dalje radi kao i do sada, pa PMax nije pogođen. Pominjem to ovde jer se promena često prepričava kao da važi za sve kampanje sa feed-om: ako vodite i standardni Shopping pored PMax-a, tamo proverite filtere inventara.</p>
+      </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <div className="flex items-center gap-3 mb-3">
@@ -494,6 +516,11 @@ export default function PerformanceMaxVodicPost() {
           <li>Čekajte minimum 7-10 dana pre sledeće izmene</li>
           <li>Postavite realan target baziran na historijskim podacima</li>
         </ul>
+      </div>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Promena bidding ponašanja (od 17.8.2026)</p>
+        <p className="text-blue-800 text-base mb-0">Ako je kampanja ograničena budžetom i radila je bolje od zadatog tCPA/tROAS cilja, Google je od 17.8. tera da doslednije ide KA tom cilju - efikasnost se steže nazad prema cilju, potrošnja se ne povećava, i Google pritom ne dira ni vaš cilj ni budžet. Ovo važi za Search, Shopping, PMax, Demand Gen, Display, Hotel i Travel kampanje. Praktično za nekoga ko je navikao da mu je ROAS iznad cilja: to više ne znači da kampanja ima &quot;rezervu&quot; koja ostaje - sistem će je vremenom približiti cilju umesto da je drži iznad njega. Ako želite da zadržite tu višu efikasnost koju ste do sada viđali, morate to eksplicitno da tražite - podignite tROAS cilj (ili spustite tCPA) na nivo koji odgovara rezultatima koje je kampanja pokazivala, umesto da se oslanjate na to da će ostati bolja od cilja sama od sebe.</p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -829,7 +856,7 @@ export default function PerformanceMaxVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Avgust 2026
+        Poslednje ažuriranje: Septembar 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

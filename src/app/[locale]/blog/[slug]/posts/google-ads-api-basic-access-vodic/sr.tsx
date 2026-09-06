@@ -52,6 +52,15 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
         To se menja. Google je 7. jula 2026. objavio pilot koji tu čekaonicu drastično skraćuje za developere koji su spremni da urade jedan dodatni, opcioni korak. Ovaj vodič vas vodi kroz ceo proces, od nule do odobrenog Basic Access tokena, uključujući i taj novi korak.
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
+        <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira svakog meseca. Šta je novo:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>Septembar 2026:</strong> Dodata napomena o dve promene koje utiču na kod izgrađen preko Google Ads API-ja: trajno gašenje Content API for Shopping (18. avgust) i uklanjanje language targetinga sa Search kampanja.</li>
+          <li><strong>Jul 2026:</strong> Prva verzija vodiča.</li>
+        </ul>
+      </div>
+
       <hr />
       {/* ── Sadržaj ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
@@ -313,6 +322,17 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       <p>
         Standard Access je posebna, kasnija aplikacija za koju idete tek kada Basic postane usko grlo, obično kada gradite alat velikog obima za više klijenata istovremeno i kada dnevni limit od 15.000 operacija počne realno da vas koči. Uslov je da već imate Basic, a zvaničan review traje do 10 radnih dana. Za agenciju sa desetak naloga, Basic je plafon koji vam realno treba.
       </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Dve stvari da proverite u kodu, ne u ovom vodiču</p>
+        <p className="text-yellow-800 text-base mb-2">
+          Developer token iz ovog vodiča radi sa Google Ads nalozima, ne sa Merchant Center feedom proizvoda. Ali ako u istom automatizacionom stacku vučete i podatke o proizvodima ili upravljate Search kampanjama preko API-ja, dve stvari su se promenile u avgustu i septembru 2026, i vredi ih proveriti pre nego što nešto počne tiho da otkazuje.
+        </p>
+        <ul className="text-yellow-800 text-base mb-0 list-disc pl-5 space-y-1">
+          <li><strong>18. avgust 2026:</strong> Content API for Shopping je trajno ugašen. Ako neki deo vaše automatizacije još zove taj stariji API za feed proizvoda, mora da pređe na Merchant API, inače podaci o proizvodima zastarevaju i idu u disapproval.</li>
+          <li><strong>Septembar 2026:</strong> Google uklanja language targeting sa nivoa Search kampanje. Ako vaš kod preko Google Ads API-ja podešava ili čita kriterijum jezika (CampaignCriterion) na Search kampanjama, ta postavka više ne utiče na isporuku - Google sada uparuje po jeziku oglasa, landing stranice i jezicima koje korisnik zna. Kod PMax kampanja jezik i dalje važi, ali samo za YouTube, Display, Discover i Gmail, ne za Search Network. Strukture sa jednim jezikom po kampanji nastavljaju normalno da rade, samo kriterijum jezika na Search-u više ništa ne radi.</li>
+        </ul>
+      </div>
 
       <hr />
 

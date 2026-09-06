@@ -10,12 +10,12 @@ export default function GoogleSearchKampanjeVodicPost() {
         Search kampanja je najstariji format u Google Ads-u i i dalje najpouzdaniji. Neko kuca upit u pretragu, vi mu se pojavite u trenutku kad traži baš to. Nema pogađanja namere kao kod Display-a, nema čekanja da algoritam nauči ko je publika kao kod PMax-a.
       </p>
       <p>
-        Sve što radim za klijente počinje odavde. Temelj, pa merenje, pa skaliranje - Search je taj temelj. Ako Search ne radi, ništa iznad njega (Shopping, PMax, remarketing) neće raditi bolje. Ovaj vodič je moj kompletan pristup Search kampanjama u 2026 - uključujući septembarsku promenu koja menja pravila igre za svakog ko koristi DSA ili broad match.
+        Sve što radim za klijente počinje odavde. Temelj, pa merenje, pa skaliranje - Search je taj temelj. Ako Search ne radi, ništa iznad njega (Shopping, PMax, remarketing) neće raditi bolje. Ovaj vodič je moj kompletan pristup Search kampanjama u 2026 - uključujući migraciju koja je u toku baš ovog septembra i menja pravila igre za svakog ko koristi DSA ili broad match.
       </p>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
-        <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Search kampanja hvata postojeću potražnju - ljude koji već traže ono što prodajete. Temelj je svakog naloga i mesto gde prvo proveravate da li merenje uopšte radi. Od septembra 2026, AI Max nadograđuje kampanje sa DSA-om, automatski kreiranim asset-ima i broad match-om na nivou kampanje - bez akcije s vaše strane. Pripremite se pre nego što se to desi, ne posle.</p>
+        <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">Search kampanja hvata postojeću potražnju - ljude koji već traže ono što prodajete. Temelj je svakog naloga i mesto gde prvo proveravate da li merenje uopšte radi. Migracija je u toku upravo sada (1-30.9.2026): AI Max nadograđuje kampanje sa DSA-om, automatski kreiranim asset-ima i broad match-om na nivou kampanje - bez akcije s vaše strane. Ako je niste proverili, ova nedelja je poslednji trenutak da to uradite pre nego što Google to uradi umesto vas.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">7%</p>
@@ -42,6 +42,7 @@ export default function GoogleSearchKampanjeVodicPost() {
         <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
         <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira svakog meseca. Šta je novo:</p>
         <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>Septembar 2026:</strong> AI Max migracija DSA/ACA/broad match kampanja je u toku (1-30.9), DSA se potpuno gasi februara 2027. Google uklanja language targeting iz Search kampanja - dodato objašnjenje šta ga zamenjuje i šta to znači za strukturu sa srpskim i engleskim jezikom. Dodata napomena o target-based bid strategijama (od 17.8) koje sada dosledno idu ka zadatom cilju.</li>
           <li><strong>Avgust 2026:</strong> Prva verzija vodiča: AI Max suita, septembarska migracija (DSA, ACA, broad match), struktura po nameri i marži.</li>
         </ul>
       </div>
@@ -160,13 +161,13 @@ export default function GoogleSearchKampanjeVodicPost() {
         <p className="text-sm text-gray-700 mb-0">Google-ovi izlog primeri su impresivni (L&#39;Oréal: dupla stopa konverzije uz 31% nižu cenu konverzije). Ali nezavisna analiza Mike Ryana iz Smarter Ecommerce na više od 250 retail kampanja pokazuje trezveniju sliku: medijan +13% prihoda uz medijan +16% viši CPA. Prevod: AI Max uključite, ali sopstveni CPA merite nedeljno - izlog nije garancija.</p>
       </div>
 
-      <h2 id="septembarska-migracija-2026">⚠️ Septembarska migracija (2026)</h2>
+      <h2 id="septembarska-migracija-2026">⚠️ Septembarska migracija - u toku</h2>
       <figure className="my-8">
         <Image src="/blog/search-migracija.webp" alt="Tri stare kampanje se spajaju u jedan novi AI Max sistem" width={1200} height={896} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-sm text-gray-500 text-center mt-2">Septembar 2026: DSA, ACA i broad match kampanje prelaze u AI Max</figcaption>
       </figure>
       <p>
-        Ovo je deo koji najviše ljudi propušta, a najviše će ih pogoditi. Od septembra 2026, Google automatski nadograđuje određene kampanje na AI Max - bez vašeg zahteva. Nadogradnja se ne pita, samo se dešava, i sve migracije se završavaju do kraja septembra.
+        Ovo je deo koji najviše ljudi propušta, a najviše će ih pogoditi. Upravo sada, u prozoru 1-30.9.2026, Google automatski nadograđuje određene kampanje na AI Max - bez vašeg zahteva. Nadogradnja se ne pita, samo se dešava, i svi nalozi koji ispunjavaju uslove prolaze kroz nju do kraja meseca.
       </p>
 
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
@@ -179,8 +180,12 @@ export default function GoogleSearchKampanjeVodicPost() {
       </div>
 
       <p>
-        Ako vodite bilo koju od ove tri konfiguracije, kampanja će preći na AI Max ovog septembra, bez obzira da li ste to tražili. Praktična posledica: URL expansion, search themes i AI-generisan copy se uključuju na kampanji koja možda nikad nije bila podešena za tu vrstu automatizacije.
+        Ako vodite bilo koju od ove tri konfiguracije, kampanja prelazi na AI Max u ovom talasu, bez obzira da li ste to tražili. Praktična posledica: URL expansion, search themes i AI-generisan copy se uključuju na kampanji koja možda nikad nije bila podešena za tu vrstu automatizacije.
       </p>
+
+      <div className="bg-gray-50 border-l-4 border-gray-400 rounded-r-lg p-4 my-4">
+        <p className="text-sm text-gray-700 mb-0">Nove DSA kampanje se od ovog meseca više ne mogu praviti - postojeće prelaze u AI Max for Search, gde dinamičke ad grupe postaju standardne ad grupe sa proširenim uparivanjem upita i istim kontrolama URL-ova. ACA i broad match na nivou kampanje prolaze kroz isti proces, a brand inclusions/exclusions koje ste ranije podesili se prenose na novu strukturu. Potpuno gašenje DSA-a (sunset) je zakazano za februar 2027 - do tada migrirane kampanje rade dalje, samo pod novim imenom i sa novim kontrolama.</p>
+      </div>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-base mb-3">Checklist pre nego što Google prebaci kampanju</p>
@@ -205,8 +210,13 @@ export default function GoogleSearchKampanjeVodicPost() {
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">Šta uraditi sada</p>
-        <p className="text-blue-800 text-base mb-0">Ne čekajte septembar. Ako imate DSA, ACA ili broad match na nivou kampanje, prođite checklist gore odmah - dok još birate podešavanja, ne dok ih Google bira umesto vas. Ako radije zadržite kontrolu, možete ručno preći sa DSA-a na standardnu Search kampanju sa search themes-om, pre nego što nadogradnja stigne.</p>
+        <p className="font-semibold text-blue-900 mb-1">Šta uraditi ove nedelje</p>
+        <p className="text-blue-800 text-base mb-0">Migracija traje ceo mesec, ali datum kad će vaš nalog biti na redu ne birate vi - zato je ova nedelja, ne poslednja nedelja septembra, trenutak da prođete checklist gore. Ako imate DSA, ACA ili broad match na nivou kampanje, uradite to sada - dok još birate podešavanja vi, ne Google. Ako radije zadržite kontrolu, možete ručno preći sa DSA-a na standardnu Search kampanju sa search themes-om pre nego što nadogradnja stigne do vašeg naloga.</p>
+      </div>
+
+      <div className="bg-orange-50 border-l-4 border-orange-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-orange-900 mb-1">Takođe u septembru: nestaje language targeting na Search-u</p>
+        <p className="text-orange-800 text-base mb-0">Google uklanja podešavanje jezika na nivou Search kampanje. Umesto toga, uparuje oglas sa korisnikom po jeziku samog oglasa i landing stranice, plus jezicima koje korisnik razume po svojim Google podešavanjima. Kod PMax-a jezik targeting i dalje važi za YouTube, Display, Discover i Gmail - samo više ne za Search deo kampanje. Za naše tržište je ovo bitno jer ovde skoro uvek targetiramo srpski i engleski paralelno: struktura sa jednom kampanjom po jeziku (srpski oglasi u jednoj kampanji, engleski u drugoj) i dalje radi normalno, jer jezik oglasa i landing stranice sada radi taj posao umesto campaign-level podešavanja. Ako ste imali jednu kampanju sa oglasima na oba jezika i oslanjali se na language setting da razdvoji ko šta vidi, ta kontrola nestaje - podelite je na dve kampanje po jeziku oglasa i stranice da zadržite preciznost.</p>
       </div>
 
       <hr />
@@ -368,6 +378,11 @@ export default function GoogleSearchKampanjeVodicPost() {
         Izbor bidding strategije i kako je podešavate zavisi od faze naloga - koliko konverzija imate mesečno, da li pratite vrednost porudžbine ili samo broj konverzija, i koliko brzo menjate targete. Kompletna razrada: <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-vodic" } }} className="underline">Smart Bidding vodič</Link>.
       </p>
 
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Promena od 17.8.2026: target-based strategije sada dosledno idu ka cilju</p>
+        <p className="text-blue-800 text-base mb-0">Ako je kampanja ograničena budžetom i duže vreme radi bolje od zadatog tCPA/tROAS cilja, Google sada dosledno pomera efikasnost KA tom cilju - CPA raste (ili ROAS pada) prema targetu, potrošnja se ne povećava, i Google ne dira ni budžet ni sam cilj. Ovo važi za Search, Shopping, PMax, Demand Gen, Display, Hotel i Travel kampanje. Ako primetite da se CPA "pogoršao" na kampanji koja je ranije trajno bila bolja od cilja, ovo je verovatno razlog, ne greška u nalogu. Ako želite da zadržite tu bolju efikasnost, morate ručno da spustite target ili povećate budžet - Google to više ne radi umesto vas u tom pravcu.</p>
+      </div>
+
       <hr />
 
       <h2 id="merenje-pre-skaliranja">Merenje pre skaliranja</h2>
@@ -409,7 +424,7 @@ export default function GoogleSearchKampanjeVodicPost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            AI Max je paket funkcija za Search kampanje - search themes, URL expansion, AI-generisan copy i AI Brief kroz Gemini. Nije obavezan sam po sebi, ali ako koristite DSA, automatically created assets ili broad match na nivou kampanje, Google vas automatski nadograđuje na njega od septembra 2026, bez vašeg zahteva. Ako to nije ono što želite, morate promeniti konfiguraciju kampanje pre nego što nadogradnja stigne, ne posle.
+            AI Max je paket funkcija za Search kampanje - search themes, URL expansion, AI-generisan copy i AI Brief kroz Gemini. Nije obavezan sam po sebi, ali ako koristite DSA, automatically created assets ili broad match na nivou kampanje, Google vas automatski nadograđuje na njega tokom septembra 2026 (migracija je u toku, 1-30.9), bez vašeg zahteva. Ako to nije ono što želite, morate promeniti konfiguraciju kampanje pre nego što nadogradnja stigne, ne posle. Za DSA konkretno: nove DSA kampanje se više ne prave, a potpuno gašenje starog formata je zakazano za februar 2027.
           </div>
         </details>
 
@@ -435,8 +450,8 @@ export default function GoogleSearchKampanjeVodicPost() {
       </div>
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
-        <p className="font-heading font-bold text-xl md:text-2xl mb-3">Spremate Search kampanju ili se pripremate za septembarsku migraciju?</p>
-        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">Pomažem firmama da postave Search kampanje sa čistom strukturom, pravim merenjem i pripremljenim nalogom pre nego što AI Max nadogradnja stigne automatski. Zakažite besplatnu konsultaciju da prođemo vaš nalog.</p>
+        <p className="font-heading font-bold text-xl md:text-2xl mb-3">Spremate Search kampanju ili prolazite kroz septembarsku migraciju?</p>
+        <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">Pomažem firmama da postave Search kampanje sa čistom strukturom, pravim merenjem i nalogom proverenim pre nego što AI Max nadogradnja stigne automatski. Zakažite besplatnu konsultaciju da prođemo vaš nalog.</p>
         <Link href="/kontakt" className="btn-secondary inline-block">Zakažite besplatnu konsultaciju</Link>
       </div>
 
@@ -472,7 +487,7 @@ export default function GoogleSearchKampanjeVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Avgust 2026
+        Poslednje ažuriranje: Septembar 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

@@ -51,6 +51,15 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
         That changed on July 7, 2026. Google launched a pilot that lets you complete brand verification on your Cloud project while your Basic Access application is pending, and get a review within hours. This guide walks through the whole path — token, application, Cloud project link, and the new verification shortcut — based on how I actually set mine up.
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide — change history</p>
+        <p className="text-sm text-gray-600 mb-3">This guide is updated every month. What changed:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>September 2026:</strong> Added a note on two changes affecting code built on the Google Ads API: the permanent shutdown of Content API for Shopping (August 18) and the removal of language targeting from Search campaigns.</li>
+          <li><strong>July 2026:</strong> First version of this guide.</li>
+        </ul>
+      </div>
+
       <hr />
       {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
@@ -351,6 +360,17 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
       <p>
         If you&apos;re running automation for your own agency&apos;s accounts, Basic Access is almost certainly all you&apos;ll ever need — Standard exists for tools built to serve large numbers of external advertisers at high volume, which is a different problem than one MCC and a handful of client accounts.
       </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Two things to check in your own code, not in this guide</p>
+        <p className="text-yellow-800 text-base mb-2">
+          The developer token this guide walks through works against Google Ads accounts, not the Merchant Center product feed. But if the same automation stack also touches product data or manages Search campaigns through the API, two things changed in August and September 2026 that are worth checking before something quietly breaks.
+        </p>
+        <ul className="text-yellow-800 text-base mb-0 list-disc pl-5 space-y-1">
+          <li><strong>August 18, 2026:</strong> Content API for Shopping was permanently shut down. If any part of your pipeline still calls that older API for product feed data, it needs to move to the Merchant API, or your product data goes stale and starts landing in disapproval.</li>
+          <li><strong>September 2026:</strong> Google is removing language targeting from Search campaigns. If your Google Ads API code sets or reads a language criterion (CampaignCriterion) on Search campaigns, that setting no longer affects delivery — Google now matches on ad and landing page language plus the languages a user knows. For Performance Max, language targeting still applies, but only to YouTube, Display, Discover and Gmail, not the Search Network. Single-language-per-campaign structures keep working as before; the criterion itself just stops doing anything on Search.</li>
+        </ul>
+      </div>
 
       <hr />
 

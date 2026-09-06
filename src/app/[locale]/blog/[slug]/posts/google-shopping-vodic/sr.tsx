@@ -63,6 +63,15 @@ export default function GoogleShoppingVodicPost() {
         Shopping kampanje su samo onoliko dobre koliko je dobar vaš product feed i struktura kampanja. Moje iskustvo je da 80% problema proizilazi iz neoptimizovanog feed-a - bez obzira koliko trošite, loš feed znači loše rezultate.
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
+        <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira svakog meseca. Šta je novo:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>Septembar 2026:</strong> Content API for Shopping je trajno ugašen (18.8) - ako feed ide preko starije integracije ili plugina, proverite da li je već prebačen na Merchant API. Od 31.8 Shopping kampanje po defaultu uključuju lokalni inventar (flag enable_local se ignoriše) - prodavci koji rade samo online treba da provere filtere inventara. Od 17.8 kampanje sa tCPA/tROAS koje su duže bile bolje od cilja sada dosledno driftuju ka zadatom cilju umesto da nastave da ga premašuju. Od 31.1.2027 glavna slika proizvoda ispod 500x500 px ide direktno u disapproval, ne više samo upozorenje.</li>
+          <li><strong>Januar 2026:</strong> Prva verzija vodiča.</li>
+        </ul>
+      </div>
+
       <hr />
 
       <h2>Kako Google Shopping funkcioniše</h2>
@@ -426,6 +435,11 @@ export default function GoogleShoppingVodicPost() {
         </ul>
       </div>
 
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Promena od 17.8.2026</p>
+        <p className="text-blue-800 text-base mb-0">Kod kampanja koje su ograničene budžetom, sa Target CPA ili Target ROAS, Google sada doslednije vodi kampanju KA zadatom cilju. Ako je kampanja duže vreme bila bolja od targeta, efikasnost se steže ka njemu - potrošnja se ne povećava, Google ne dira ni cilj ni budžet. Ako primetite da ROAS "klizi" ka targetu umesto da ga i dalje premašuje, to je očekivano ponašanje, ne kvar u kampanji.</p>
+      </div>
+
       <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold text-lg mb-2">Moja preporuka</p>
         <p className="text-base text-yellow-900 mb-0">Preporučujem Manual CPC prvih 2-4 nedelje (dok skupljate minimum 50 konverzija), zatim prelaz na Target ROAS. Podelite kampanje po custom labels (high/medium/low margin) i postavite različite ROAS targete - visoka marža = niži target, niska marža = viši target.</p>
@@ -557,7 +571,7 @@ export default function GoogleShoppingVodicPost() {
         <p className="font-heading font-bold text-red-600 mb-1 text-sm">Greška</p>
         <p className="font-semibold mb-2">Loše slike proizvoda</p>
         <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-3">
-          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Čista bela pozadina, konzistentan stil, high resolution (minimum 800x800px), i više slika putem additional_image_link atributa. Loše slike = nizak CTR = nizak Quality Score = viši CPC.</p>
+          <p className="text-base text-green-800 mb-0"><strong>Rešenje:</strong> Čista bela pozadina, konzistentan stil, high resolution (minimum 800x800px), i više slika putem additional_image_link atributa. Loše slike = nizak CTR = nizak Quality Score = viši CPC. Od 31.1.2027 Merchant Center šalje u disapproval, ne više samo upozorenje, svaku glavnu sliku ispod 500x500 px u svim kategorijama - proverite Diagnostics pre tog datuma da vam deo kataloga ne ispadne iz aktivnog stanja.</p>
         </div>
       </div>
 
@@ -667,6 +681,23 @@ export default function GoogleShoppingVodicPost() {
             <div><strong>Povezivanje sa Google Ads</strong> <span className="text-gray-500">- omogućava kreiranje kampanja</span></div>
           </div>
         </div>
+      </div>
+
+      <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5 md:p-6 my-6">
+        <p className="font-heading font-bold text-lg mb-2">Ako feed stiže preko API integracije</p>
+        <p className="text-base text-yellow-900 mb-0">Content API for Shopping je trajno ugašen 18.8.2026. Ako vaš feed ide preko plugina za platformu (WooCommerce, Shopify app) ili preko feed management alata koji ne radi na Merchant API-ju, podaci o proizvodima će vremenom zastareti i ići u disapproval. Proverite kod dobavljača integracije da li je već prebačen na Merchant API - ovo nije opciono, stari API ne radi više.</p>
+      </div>
+
+      <div className="bg-orange-50 border-2 border-orange-300 rounded-xl p-5 md:p-6 my-6">
+        <p className="font-heading font-bold text-lg mb-2">Prodajete samo online? Proverite lokalni inventar</p>
+        <p className="text-base text-orange-900 mb-3">Od 31.8.2026 Shopping kampanje po defaultu uključuju lokalni inventar - stariji flag enable_local, kojim se to ranije isključivalo, više se ne poštuje. Za prodavnice bez fizičke lokacije ovo znači da deo budžeta može otići u kanal koji im ne donosi ništa.</p>
+        <p className="font-semibold text-orange-900 mb-1">Šta proveriti:</p>
+        <ul className="text-base text-orange-900 mb-0">
+          <li>U Merchant Center-u proverite da li je nalog povezan sa Business Profile-om ili da li postoji aktivan feed lokalnog inventara - ako prodajete samo online, taj feed vam ne treba</li>
+          <li>U podešavanjima Shopping kampanje proverite inventory filter i isključite lokalne oglase ako je opcija dostupna</li>
+          <li>U izveštajima kampanje segmentirajte po tipu klika/mreži i proverite da li se pojavljuje trošak sa lokalnih oglasa</li>
+          <li>Ako trošak na lokalni inventar postoji, proverite Merchant Center pod Growth &gt; Manage programs i isključite program lokalnog inventara</li>
+        </ul>
       </div>
 
       <h3>Česti razlozi za disapproval</h3>
@@ -845,7 +876,7 @@ export default function GoogleShoppingVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Februar 2026
+        Poslednje ažuriranje: Septembar 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">
