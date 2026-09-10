@@ -97,7 +97,7 @@ export default function ChecklistUpravljanjaEN() {
       </p>
 
       <figure className="my-8">
-        <Image src="/blog/checklist-ritam.webp" alt="A weekly calendar with daily, weekly, monthly, and quarterly Google Ads checks laid out across the days, instead of one universal to-do list" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/checklist-ritam.webp" alt="Illustration of four lanes with clocks and an increasing number of dots, theme of the daily, weekly, monthly and quarterly rhythm of checking a Google Ads account" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-sm text-gray-500 text-center mt-2">The rhythm is built around the account, not copied off the internet.</figcaption>
       </figure>
 
@@ -164,7 +164,7 @@ export default function ChecklistUpravljanjaEN() {
       </p>
 
       <figure className="my-8">
-        <Image src="/blog/checklist-prag-konverzija.webp" alt="Two Google Ads accounts side by side - one under 50 conversions a month, one with thousands of conversions - with different frequencies of bid strategy changes" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/checklist-prag-konverzija.webp" alt="Illustration of two jars, one holding a few dots under a magnifying glass and one full of dots beside a speedometer, theme of the fifty conversions a month threshold in a Google Ads account" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-sm text-gray-500 text-center mt-2">Monthly conversion count decides how much you're allowed to touch the bid strategy.</figcaption>
       </figure>
 
@@ -226,7 +226,7 @@ export default function ChecklistUpravljanjaEN() {
       </p>
 
       <figure className="my-8">
-        <Image src="/blog/checklist-ne-diraj.webp" alt="A Google Ads panel recommendation to switch bid strategy crossed out next to a manually configured branded Search campaign running a low CPC" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/checklist-ne-diraj.webp" alt="Illustration of a settings panel with toggles and sliders, a padlock and a do-not sign, beside a rising green arrow, theme of the Google Ads settings you leave alone" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-sm text-gray-500 text-center mt-2">The panel's recommendation doesn't know why the campaign exists.</figcaption>
       </figure>
 

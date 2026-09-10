@@ -97,7 +97,7 @@ export default function ChecklistUpravljanjaSR() {
       </p>
 
       <figure className="my-8">
-        <Image src="/blog/checklist-ritam.webp" alt="Nedeljni kalendar sa dnevnim, nedeljnim, mesečnim i kvartalnim proverama Google Ads naloga raspoređenim po danima, umesto univerzalne liste zadataka" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/checklist-ritam.webp" alt="Ilustracija četiri trake sa satovima i sve većim brojem tačaka, tema dnevnog, nedeljnog, mesečnog i kvartalnog ritma provere Google Ads naloga" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-sm text-gray-500 text-center mt-2">Ritam se gradi oko naloga, ne prepisuje sa interneta.</figcaption>
       </figure>
 
@@ -164,7 +164,7 @@ export default function ChecklistUpravljanjaSR() {
       </p>
 
       <figure className="my-8">
-        <Image src="/blog/checklist-prag-konverzija.webp" alt="Dva Google Ads naloga jedan pored drugog - jedan ispod 50 konverzija mesečno, drugi sa hiljadama konverzija - sa različitom učestalošću promena bid strategije" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/checklist-prag-konverzija.webp" alt="Ilustracija dve tegle, jedne sa nekoliko tačaka pod lupom i druge pune tačaka pored brzinomera, tema praga od 50 konverzija mesečno u Google Ads nalogu" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-sm text-gray-500 text-center mt-2">Broj konverzija mesečno određuje koliko sme da se dira bid strategija.</figcaption>
       </figure>
 
@@ -226,7 +226,7 @@ export default function ChecklistUpravljanjaSR() {
       </p>
 
       <figure className="my-8">
-        <Image src="/blog/checklist-ne-diraj.webp" alt="Predlog iz Google Ads panela za promenu bid strategije precrtan pored ručno podešene brendirane Search kampanje sa niskim CPC-om" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/checklist-ne-diraj.webp" alt="Ilustracija panela sa prekidačima i klizačima, katancem i znakom zabrane, pored zelene strelice rasta, tema Google Ads podešavanja koja se ne diraju" width={1200} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-sm text-gray-500 text-center mt-2">Preporuka iz panela ne zna zašto kampanja postoji.</figcaption>
       </figure>
 
