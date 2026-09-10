@@ -8,6 +8,7 @@ export const slugMap: Record<string, string> = {
   "google-ads-budzet": "google-ads-budget-planning",
   "gaql-reporting-vodic": "google-ads-api-reporting-gaql",
   "google-ads-api-autentifikacija": "google-ads-api-authentication-guide",
+  "google-ads-checklist-upravljanje": "google-ads-management-checklist",
   "google-search-kampanje-vodic": "google-search-campaigns-guide",
   "demand-gen-vodic": "demand-gen-guide",
   "product-feed-optimizacija-scorecard": "merchant-center-feed-scorecard",

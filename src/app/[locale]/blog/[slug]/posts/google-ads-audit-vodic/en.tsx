@@ -824,6 +824,14 @@ export default function GoogleAdsAuditGuideEN() {
       <hr />
 
       <h2 id="five-minute-daily-check">A 5-minute daily check</h2>
+      <p className="text-base text-gray-600">
+        This is the daily layer of an audit. The full management rhythm, from daily to quarterly, and
+        why it has to be derived from your conversion count rather than copied off someone else&apos;s list,
+        is covered in{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-management-checklist" } }} className="underline font-semibold">
+          the management checklist piece
+        </Link>.
+      </p>
       <p>
         The 30-minute monthly audit below and the quarterly deep audit above both assume you&apos;re looking back at a stretch of data. In practice, if you&apos;re spending roughly $100+ a day, it&apos;s worth adding a 5-minute daily glance on top — these five checks catch problems the monthly check would only find two weeks too late.
       </p>

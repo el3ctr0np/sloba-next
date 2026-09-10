@@ -688,6 +688,17 @@ export default function GoogleAdsOptimizacijaPost() {
         ritmom. Evo kako organizujem svoj optimization schedule za klijente:
       </p>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-6">
+        <p className="text-base text-blue-900 mb-0">
+          Raspored ispod je <strong>primer, ne univerzalno pravilo</strong>. Koliko često se šta radi
+          zavisi pre svega od broja konverzija na nalogu, a ne od dana u nedelji. Kako se taj ritam
+          izvodi za konkretan nalog, razložio sam u posebnom tekstu:{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-checklist-upravljanje" } }} className="underline font-semibold">
+            zašto univerzalna Google Ads checklista ne radi i šta je zamenjuje
+          </Link>.
+        </p>
+      </div>
+
       <div className="overflow-x-auto my-6">
         <table className="w-full border border-gray-200 text-sm">
           <thead className="bg-gray-50">

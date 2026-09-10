@@ -694,6 +694,16 @@ export default function GoogleAdsOptimizationEN() {
       <hr />
 
       <h2>Weekly optimization schedule</h2>
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-6">
+        <p className="text-base text-blue-900 mb-0">
+          The schedule below is <strong>an example, not a universal rule</strong>. How often you do what
+          depends first on the account&apos;s conversion count, not on the day of the week. How that rhythm
+          is derived for a specific account is covered in{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-management-checklist" } }} className="underline font-semibold">
+            why one Google Ads checklist never fits every account
+          </Link>.
+        </p>
+      </div>
 
       <p>
         Optimization isn&apos;t an ad hoc activity — the best results come from a consistent weekly

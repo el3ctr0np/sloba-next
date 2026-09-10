@@ -40,6 +40,8 @@ import GoogleShoppingSerbiaLaunch2026EN from "./google-shopping-srbija-2026/en";
 import KolikoKostaGoogleAdsSR from "./koliko-kosta-google-ads/sr";
 import GoogleOglasavanjeZaFirmeSR from "./google-oglasavanje-za-firme/sr";
 import PerformanceMaxVodicSR from "./performance-max-vodic/sr";
+import ChecklistUpravljanjaSR from "./google-ads-checklist-upravljanje/sr";
+import ChecklistUpravljanjaEN from "./google-ads-checklist-upravljanje/en";
 import GoogleSearchKampanjeVodicSR from "./google-search-kampanje-vodic/sr";
 import GoogleSearchCampaignsGuideEN from "./google-search-kampanje-vodic/en";
 import DemandGenVodicSR from "./demand-gen-vodic/sr";
@@ -204,7 +206,7 @@ const srPosts: PostData[] = [
     slug: "gaql-reporting-vodic",
     title: "GAQL Reporting: Google Ads API Upiti Korak po Korak [2026]",
     date: "2026-08-29",
-    dateModified: "2026-08-29",
+    dateModified: "2026-09-10",
     category: "Automatizacija",
     metaDescription:
       "GAQL nije SQL - anatomija upita, search() naspram searchStream(), 12 gotovih izveštaja za copy-paste i zamke zbog kojih upiti padaju na validaciji.",
@@ -231,7 +233,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-api-autentifikacija",
     title: "Google Ads API Autentifikacija: OAuth, Service Account i Developer Token [2026]",
     date: "2026-08-29",
-    dateModified: "2026-08-29",
+    dateModified: "2026-09-10",
     category: "Automatizacija",
     metaDescription:
       "Google Ads API autentifikacija bez lutanja: OAuth2 tok korak po korak, refresh token zamka od 7 dana, service account pravila i tabela čestih grešaka sa rešenjima.",
@@ -239,6 +241,20 @@ const srPosts: PostData[] = [
     imageAlt: "Ilustracija katanca sa ključem, štitom i identifikacionom karticom, tema autentifikacije za Google Ads API",
     readingTime: "11 min",
     content: <GoogleAdsApiAutentifikacijaSR />
+  },
+  {
+    slug: "google-ads-checklist-upravljanje",
+    title: "Google Ads checklist: zašto univerzalna lista ne radi i šta je zamenjuje [2026]",
+    date: "2026-09-10",
+    dateModified: "2026-09-10",
+    category: "Optimizacija",
+    metaDescription:
+      "Zašto vam skinuta Google Ads checklista ne pomaže i šta stvarno drži nalog: ritam po nalogu, prag od 50 konverzija mesečno i tri stvari koje proveravam svakog dana.",
+    featuredImage: "/blog/google-ads-checklist-upravljanje.webp",
+    imageAlt: "Ilustracija klipborda sa zelenim kvačicama i crvenim krstićima, kalendarom i satom, tema ritma upravljanja Google Ads nalogom",
+    readingTime: "11 min",
+    content: <ChecklistUpravljanjaSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-search-kampanje-vodic",
@@ -323,7 +339,7 @@ const srPosts: PostData[] = [
     slug: "google-api-pristupi-za-agencije",
     title: "Google API Pristupi za PPC Agencije - Kompletan Setup Vodič [2026]",
     date: "2026-07-11",
-    dateModified: "2026-07-11",
+    dateModified: "2026-09-10",
     category: "Automatizacija",
     metaDescription:
       "Kompletan setup vodič za Google API pristupe u PPC agenciji: Ads, GA4, Search Console, Tag Manager, Merchant Center i Data Manager API. Jedan Cloud projekat, OAuth scope-ovi i ključna lekcija o Testing modu koji gasi refresh token za 7 dana.",
@@ -336,10 +352,10 @@ const srPosts: PostData[] = [
     slug: "google-ads-api-basic-access-vodic",
     title: "Google Ads API Basic Access: Vodič Korak po Korak [2026]",
     date: "2026-07-11",
-    dateModified: "2026-09-06",
+    dateModified: "2026-09-10",
     category: "Automatizacija",
     metaDescription:
-      "Kako do Google Ads API Basic Access nivoa u 2026: developer token, aplikacija koja prolazi iz prve, povezivanje sa Cloud projektom i novi brand verification pilot koji skraćuje review sa nedelja na par sati. Iz ličnog iskustva.",
+      "Kako do Google Ads API Basic Access nivoa posle 9.9.2026, kada je Google ukinuo developer tokene i vezao nivo pristupa za Cloud projekat: brand verification, zahtev kroz Cloud Console, šta Basic stvarno otključava i kada Standard ima smisla. Iz ličnog iskustva.",
     featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
     imageAlt: "Ilustracija stepenica koje vode do otvorene kapije sa zastavicom na vrhu, tema vodiča za Google Ads API Basic Access",
     readingTime: "12 min",
@@ -882,7 +898,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-api-reporting-gaql",
     title: "Google Ads API Reporting with GAQL: Anatomy + Copy-Paste Queries [2026]",
     date: "2026-08-29",
-    dateModified: "2026-08-29",
+    dateModified: "2026-09-10",
     category: "Automation",
     metaDescription:
       "GAQL explained: query anatomy, search() vs searchStream(), 12 copy-paste Google Ads API reports, and the metrics/segments and micros traps that break queries.",
@@ -909,7 +925,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-api-authentication-guide",
     title: "Google Ads API Authentication: OAuth, Service Accounts & Developer Token (2026)",
     date: "2026-08-29",
-    dateModified: "2026-08-29",
+    dateModified: "2026-09-10",
     category: "Automation",
     metaDescription:
       "Google Ads API authentication explained: OAuth2 desktop vs. web flow, the 7-day refresh token trap, service account rules, and a table of common errors with fixes.",
@@ -917,6 +933,20 @@ const enPosts: PostData[] = [
     imageAlt: "Illustration of a padlock with a key, a shield and an ID badge card, Google Ads API authentication topic",
     readingTime: "11 min",
     content: <GoogleAdsApiAuthenticationGuideEN />
+  },
+  {
+    slug: "google-ads-management-checklist",
+    title: "Google Ads Management Checklist: Why One List Never Fits Every Account [2026]",
+    date: "2026-09-10",
+    dateModified: "2026-09-10",
+    category: "Optimization",
+    metaDescription:
+      "Why the Google Ads checklist you downloaded doesn't help, and what actually keeps an account healthy: rhythm per account, the 50-conversion threshold, and the three things I check every day.",
+    featuredImage: "/blog/google-ads-checklist-upravljanje.webp",
+    imageAlt: "Illustration of a clipboard with green checkmarks and red crosses, a calendar and a clock, theme of the rhythm of managing a Google Ads account",
+    readingTime: "11 min",
+    content: <ChecklistUpravljanjaEN />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-search-campaigns-guide",
@@ -1001,7 +1031,7 @@ const enPosts: PostData[] = [
     slug: "google-api-access-guide-for-agencies",
     title: "Google API Access for PPC Agencies: Complete Setup Guide [2026]",
     date: "2026-07-11",
-    dateModified: "2026-07-11",
+    dateModified: "2026-09-10",
     category: "Automation",
     metaDescription:
       "Complete setup guide to Google API access for PPC agencies: Ads, GA4, Search Console, Tag Manager, Merchant Center, and Data Manager API. One Cloud project, OAuth scopes, and the key lesson about Testing mode killing refresh tokens after 7 days.",
@@ -1014,10 +1044,10 @@ const enPosts: PostData[] = [
     slug: "google-ads-api-basic-access-guide",
     title: "Google Ads API Basic Access: Step-by-Step Guide [2026]",
     date: "2026-07-11",
-    dateModified: "2026-09-06",
+    dateModified: "2026-09-10",
     category: "Automation",
     metaDescription:
-      "How to get Google Ads API Basic Access in 2026: developer token setup, an application that gets approved on the first try, Cloud project linking, and the new brand verification pilot that cuts review time from weeks to hours. First-hand guide.",
+      "How to get Google Ads API Basic Access after September 9, 2026, when Google retired developer tokens and tied access levels to the Cloud project: brand verification, requesting the upgrade in Cloud Console, what Basic actually unlocks, and when Standard is worth asking for. First-hand guide.",
     featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
     imageAlt: "Illustration of a staircase leading to an open gate with a flag at the top, Google Ads API Basic Access step-by-step guide topic",
     readingTime: "12 min",

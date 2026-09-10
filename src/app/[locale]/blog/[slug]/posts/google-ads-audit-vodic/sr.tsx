@@ -794,6 +794,13 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
       <hr />
 
       <h2 id="dnevna-provera-za-5-minuta">Dnevna provera za 5 minuta</h2>
+      <p className="text-base text-gray-600">
+        Ovo je dnevni sloj audita. Ceo ritam upravljanja nalogom, od dnevnog do kvartalnog, i
+        razlog zašto se on izvodi iz broja konverzija a ne prepisuje sa tuđe liste, opisao sam u{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-checklist-upravljanje" } }} className="underline font-semibold">
+          tekstu o checklisti upravljanja
+        </Link>.
+      </p>
       <p>
         Kvartalni i mesečni audit hvataju strukturne probleme, ali nalog sa velikim dnevnim budžetom može izgubiti novac za par sati, ne za par nedelja. Iz prakse, ako trošite otprilike €100+ dnevno, ovih pet stavki proverite svako jutro - traje manje od 5 minuta.
       </p>
