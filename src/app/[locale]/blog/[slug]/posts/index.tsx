@@ -125,14 +125,22 @@ export type PostData = {
   readingTime?: string;
   content: ReactNode;
   /**
-   * Blog CTA segmentation by post intent.
-   * "consult": low-commitment enquiry/consultation (TOFU / educational / beginner posts) -> /kontakt
-   * "audit": the paid audit service page (BOFU / strategy / audit posts) -> /audit
+   * Blog CTA segmentation by WHO reads the post, not by what it is about
+   * (Q4_SAJT_SPEC.md, talas 2). Three audiences, three different offers:
+   * "tool": PPC operator / developer on the technical cluster (Google Ads API,
+   *   GAQL, automation, feed and measurement implementation). Gets the free
+   *   tools, never a retainer pitch - that reader is not buying account
+   *   management. -> /resursi
+   * "audit": someone already spending on Google Ads who suspects something is
+   *   wrong (audits, mistakes, optimization, takeover, ROAS/POAS, choosing a
+   *   consultant). -> /audit
+   * "consult": beginner with no account yet, or still comparing platforms.
+   *   The exception, not the default. -> /kontakt
    * Only meaningful on SR (canonical) post entries — getBlogCtaTarget() below is always
    * called with the canonical SR slug, so EN entries don't need this field set.
-   * Omit to fall back to "consult" (the original default).
+   * Omit to fall back to "consult".
    */
-  ctaTarget?: "audit" | "consult";
+  ctaTarget?: "audit" | "consult" | "tool";
 };
 
 const srPosts: PostData[] = [
@@ -147,7 +155,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/chatgpt-ads-vodic.webp",
     imageAlt: "Ilustracija stilizovanog AI chat interfejsa sa sponzorisanom karticom ispod odgovora, tema vodiča za ChatGPT Ads",
     readingTime: "18 min",
-    content: <ChatGptAdsVodicSR />
+    content: <ChatGptAdsVodicSR />,
+    ctaTarget: "consult"
   },
   {
     slug: "chatgpt-ads-vs-google-ads",
@@ -160,7 +169,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/chatgpt-ads-vs-google-ads.webp",
     imageAlt: "Ilustracija dva panela: AI chat kartica sa oglasom levo i Google pretraga sa tekstualnim oglasima desno",
     readingTime: "10 min",
-    content: <ChatGptAdsVsGoogleAdsSR />
+    content: <ChatGptAdsVsGoogleAdsSR />,
+    ctaTarget: "consult"
   },
   {
     slug: "chatgpt-ads-evropa",
@@ -173,7 +183,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/chatgpt-ads-evropa.webp",
     imageAlt: "Ilustracija AI chat interfejsa sa oglasom povezanog sa tamnom karticom sa krugom evropskih zvezdica",
     readingTime: "9 min",
-    content: <ChatGptAdsEvropaSR />
+    content: <ChatGptAdsEvropaSR />,
+    ctaTarget: "consult"
   },
   {
     slug: "pmax-audit-checklist",
@@ -200,7 +211,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-ads-budzet.webp",
     imageAlt: "Ilustracija novčića poređanih kao stubići grafikona i kalkulatora, tema planiranja budžeta za Google Ads",
     readingTime: "9 min",
-    content: <GoogleAdsBudzetSR />
+    content: <GoogleAdsBudzetSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "gaql-reporting-vodic",
@@ -213,7 +225,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/gaql-reporting-vodic.webp",
     imageAlt: "Ilustracija zupčanika i kabla koji napaja grafikon podacima, tema GAQL upita za Google Ads API izveštavanje",
     readingTime: "9 min",
-    content: <GaqlReportingVodicSR />
+    content: <GaqlReportingVodicSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "lista-negativnih-kljucnih-reci",
@@ -240,7 +253,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-ads-api-autentifikacija.webp",
     imageAlt: "Ilustracija katanca sa ključem, štitom i identifikacionom karticom, tema autentifikacije za Google Ads API",
     readingTime: "11 min",
-    content: <GoogleAdsApiAutentifikacijaSR />
+    content: <GoogleAdsApiAutentifikacijaSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "google-ads-checklist-upravljanje",
@@ -254,7 +268,7 @@ const srPosts: PostData[] = [
     imageAlt: "Ilustracija klipborda sa zelenim kvačicama i crvenim krstićima, kalendarom i satom, tema ritma upravljanja Google Ads nalogom",
     readingTime: "11 min",
     content: <ChecklistUpravljanjaSR />,
-    ctaTarget: "audit"
+    ctaTarget: "tool"
   },
   {
     slug: "google-search-kampanje-vodic",
@@ -268,7 +282,7 @@ const srPosts: PostData[] = [
     imageAlt: "Ilustracija mete sa strelicom u centru, megafona i stoga reklamnih kartica, tema vodiča za Google Search kampanje",
     readingTime: "12 min",
     content: <GoogleSearchKampanjeVodicSR />,
-    ctaTarget: "audit"
+    ctaTarget: "tool"
   },
   {
     slug: "demand-gen-vodic",
@@ -281,7 +295,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/demand-gen-vodic.webp",
     imageAlt: "Ilustracija rakete koja lansira okružena šarenim geometrijskim oblicima i kompasom, tema vodiča za Demand Gen kampanje",
     readingTime: "12 min",
-    content: <DemandGenVodicSR />
+    content: <DemandGenVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "product-feed-optimizacija-scorecard",
@@ -294,7 +309,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/product-feed-optimizacija-scorecard.webp",
     imageAlt: "Ilustracija kartonske kutije sa izveštajem ocene i pečatom kvačice, tema scorecarda za Merchant Center product feed",
     readingTime: "~15 min",
-    content: <MerchantCenterFeedScorecardSR />
+    content: <MerchantCenterFeedScorecardSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "ga4-publike-ecommerce-framework",
@@ -307,7 +323,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/ga4-publike-ecommerce-framework.webp",
     imageAlt: "Ilustracija fascikli poređanih u slojevima kao piramida sa grafikonom i štopericom, tema GA4 framework-a publika za eCommerce",
     readingTime: "~16 min",
-    content: <GA4PublikeFrameworkSR />
+    content: <GA4PublikeFrameworkSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "performance-max-vs-standard-shopping-vodic",
@@ -320,7 +337,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/performance-max-vs-standard-shopping-vodic.webp",
     imageAlt: "Ilustracija vage sa kolicima za kupovinu na jednoj i robot zupčanikom na drugoj strani, tema poređenja Performance Max i Standard Shopping",
     readingTime: "~13 min",
-    content: <PerformanceMaxVsStandardShoppingSR />
+    content: <PerformanceMaxVsStandardShoppingSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-shopping-vs-search-kampanje",
@@ -333,7 +351,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-shopping-vs-search-kampanje.webp",
     imageAlt: "Ilustracija dva putokaza koji pokazuju u suprotnim pravcima, jedan sa kesom za kupovinu, drugi sa oblačićem, tema poređenja Shopping i Search kampanja",
     readingTime: "~14 min",
-    content: <GoogleShoppingVsSearchKampanjeSR />
+    content: <GoogleShoppingVsSearchKampanjeSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-api-pristupi-za-agencije",
@@ -346,7 +365,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-api-pristupi-za-agencije.webp",
     imageAlt: "Ilustracija otvorenog alatnog sanduka sa ključem i privezakom ključeva, tema pristupa Google API-jima za agencije",
     readingTime: "13 min",
-    content: <GoogleApiPristupiZaAgencijeSR />
+    content: <GoogleApiPristupiZaAgencijeSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "google-ads-api-basic-access-vodic",
@@ -359,7 +379,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
     imageAlt: "Ilustracija stepenica koje vode do otvorene kapije sa zastavicom na vrhu, tema vodiča za Google Ads API Basic Access",
     readingTime: "12 min",
-    content: <GoogleAdsApiBasicAccessVodicSR />
+    content: <GoogleAdsApiBasicAccessVodicSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "offline-conversion-import-b2b",
@@ -371,7 +392,8 @@ const srPosts: PostData[] = [
       "Kako da Google Ads algoritam uči na zatvorenim poslovima umesto na formama: GCLID vs Enhanced Conversions for Leads, setup za HubSpot, Salesforce i Pipedrive, vrednovanje MQL/SQL/Closed-won faza i česte greške.",
     featuredImage: "/blog/offline-conversion-import-b2b.webp",
     readingTime: "13 min",
-    content: <OfflineConversionImportB2BSR />
+    content: <OfflineConversionImportB2BSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "koliko-kosta-google-ads-konsultant",
@@ -384,7 +406,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/koliko-kosta-google-ads-konsultant.webp",
     imageAlt: "Ilustracija tri cenovne etikete različitih veličina sa novčićima i lenjirom, tema cene Google Ads konsultanta",
     readingTime: "14 min",
-    content: <KolikoKostaGoogleAdsKonsultantSR />
+    content: <KolikoKostaGoogleAdsKonsultantSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "kako-izabrati-google-ads-konsultanta",
@@ -397,7 +420,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/kako-izabrati-google-ads-konsultanta.webp",
     imageAlt: "Ilustracija stoga kartica sa znacima pitanja, trofeja i olovke, tema izbora Google Ads konsultanta pre potpisivanja ugovora",
     readingTime: "16 min",
-    content: <KakoIzabratiGoogleAdsKonsultantaSR />
+    content: <KakoIzabratiGoogleAdsKonsultantaSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "poas-vs-roas",
@@ -438,7 +462,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/product-feed-srpski-ecommerce.webp",
     imageAlt: "Ilustracija trake sa kutijama koje ulaze u levak i cenovna nalepnica, tema product feeda za srpski eCommerce",
     readingTime: "15 min",
-    content: <ProductFeedSrpskiEcommerceSR />
+    content: <ProductFeedSrpskiEcommerceSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "merchant-center-srbija-setup",
@@ -451,7 +476,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/merchant-center-srbija-setup.webp",
     imageAlt: "Ilustracija kolica za kupovinu povezanih konektorom i stit sa kvacicom, tema podesavanja Google Merchant Centra za Srbiju",
     readingTime: "14 min",
-    content: <MerchantCenterSrbijaSetupSR />
+    content: <MerchantCenterSrbijaSetupSR />,
+    ctaTarget: "consult"
   },
   {
     slug: "google-ads-audit-checklist-srbija",
@@ -478,7 +504,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/ga4-google-ads-integracija.webp",
     imageAlt: "Ilustracija dva dela slagalice koji se spajaju uz mali grafikon, tema integracije GA4 i Google Ads",
     readingTime: "18 min",
-    content: <GA4GoogleAdsIntegracijaSR />
+    content: <GA4GoogleAdsIntegracijaSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "sta-je-roas",
@@ -491,7 +518,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/sta-je-roas.webp",
     imageAlt: "Ilustracija kalkulatora i gomile novcica pored rastuceg grafikona, tema objasnjenja sta je ROAS i kako se racuna",
     readingTime: "8 min",
-    content: <StaJeRoasSR />
+    content: <StaJeRoasSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "microsoft-ads-vs-google-ads",
@@ -504,7 +532,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/microsoft-ads-vs-google-ads.webp",
     imageAlt: "Ilustracija dva putokaza u suprotnim smerovima sa trofejom izmedju, tema poredjenja Microsoft Ads i Google Ads",
     readingTime: "14 min",
-    content: <MicrosoftAdsVsGoogleAdsSR />
+    content: <MicrosoftAdsVsGoogleAdsSR />,
+    ctaTarget: "consult"
   },
   {
     slug: "google-ads-za-ecommerce-srbija-2026",
@@ -545,7 +574,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-ads-novosti-2026.webp",
     imageAlt: "Ilustracija megafona sa zvezdicama pored stranice kalendara i zvona, tema mesecnih novosti i promena u Google Ads",
     readingTime: "12 min",
-    content: <GoogleAdsNovosti2026SR />
+    content: <GoogleAdsNovosti2026SR />,
+    ctaTarget: "audit"
   },
   {
     slug: "youtube-oglasavanje-vodic",
@@ -558,7 +588,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/youtube-oglasavanje-vodic.webp",
     imageAlt: "Ilustracija dugmeta za pustanje i filmske klapse pored grafikona, tema vodica za YouTube video oglasavanje",
     readingTime: "16 min",
-    content: <YouTubeOglasavanjeVodicSR />
+    content: <YouTubeOglasavanjeVodicSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "google-shopping-srbija-2026",
@@ -571,7 +602,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-shopping-srbija-2026.webp",
     imageAlt: "Ilustracija kese za kupovinu i stoperice koja odbrojava sa pinom na mapi, tema dolaska Google Shopping-a u Srbiju",
     readingTime: "18 min",
-    content: <GoogleShoppingSrbija2026SR />
+    content: <GoogleShoppingSrbija2026SR />,
+    ctaTarget: "audit"
   },
   {
     slug: "koliko-kosta-google-ads",
@@ -583,7 +615,8 @@ const srPosts: PostData[] = [
       "Google oglašavanje cena u Srbiji: realni CPC po industrijama (15-50 RSD), minimalni budžeti od €200/mes, agencijske takse, i ROI okvir koji koristim sa 20+ klijenata. Sve cifre iz 2026, sa konkretnim primerima.",
     featuredImage: "/blog/koliko-kosta-google-ads.webp",
     readingTime: "12 min",
-    content: <KolikoKostaGoogleAdsSR />
+    content: <KolikoKostaGoogleAdsSR />,
+    ctaTarget: "tool"
   },
   {
     slug: "google-oglasavanje-za-firme",
@@ -596,7 +629,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-oglasavanje-za-firme.webp",
     imageAlt: "Ilustracija akten tasne i kese za kupovinu povezanih zupčanikom, tema Google oglasavanja za B2B i eCommerce firme",
     readingTime: "15 min",
-    content: <GoogleOglasavanjeZaFirmeSR />
+    content: <GoogleOglasavanjeZaFirmeSR />,
+    ctaTarget: "consult"
   },
   {
     slug: "performance-max-vodic",
@@ -610,7 +644,7 @@ const srPosts: PostData[] = [
     imageAlt: "Ilustracija slozenih kockica u boji i mete sa strelicom u centru, tema vodica za Performance Max kampanje",
     readingTime: "14 min",
     content: <PerformanceMaxVodicSR />,
-    ctaTarget: "audit"
+    ctaTarget: "tool"
   },
   {
     slug: "google-ads-optimizacija",
@@ -637,7 +671,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-shopping-vodic.webp",
     imageAlt: "Ilustracija kolica za kupovinu sa kutijama i cenovnim etiketama, tema vodiča za Google Shopping kampanje",
     readingTime: "16 min",
-    content: <GoogleShoppingVodicSR />
+    content: <GoogleShoppingVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "agencija-vs-freelancer",
@@ -705,7 +740,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/ecommerce-vs-b2b.webp",
     imageAlt: "Ilustracija vage sa kesom za kupovinu na jednoj i fasciklama na drugoj strani, tema razlika između eCommerce i B2B Google Ads strategije",
     readingTime: "13 min",
-    content: <EcommerceVsB2BSR />
+    content: <EcommerceVsB2BSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "google-ads-vs-meta",
@@ -718,7 +754,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/google-ads-vs-meta.webp",
     imageAlt: "Ilustracija dva stuba sa grafikonom i simbolom srca na vrhu, tema poređenja Google Ads i Meta oglašavanja",
     readingTime: "15 min",
-    content: <GoogleAdsVsMetaAdsSR />
+    content: <GoogleAdsVsMetaAdsSR />,
+    ctaTarget: "consult"
   },
   {
     slug: "google-ads-audit-vodic",
@@ -732,7 +769,7 @@ const srPosts: PostData[] = [
     imageAlt: "Ilustracija table sa checklistom, kvačicama i lupom, tema kompletnog audit checklista za Google Ads nalog",
     readingTime: "19 min",
     content: <GoogleAdsAuditSR />,
-    ctaTarget: "audit"
+    ctaTarget: "tool"
   },
   {
     slug: "kljucne-reci-vodic",
@@ -745,7 +782,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/kljucne-reci-vodic.webp",
     imageAlt: "Ilustracija zlatnog ključa pored sivih ključeva i sita koje ih razdvaja, tema ključnih reči koje donose rezultate u Google Ads",
     readingTime: "14 min",
-    content: <KljucneReciVodicSR />
+    content: <KljucneReciVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "negativne-kljucne-reci",
@@ -758,7 +796,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/negativne-kljucne-reci.webp",
     imageAlt: "Ilustracija levka koji blokira loše upite i propušta dobre, sa fasciklama pored, tema negativnih ključnih reči u Google Ads",
     readingTime: "12 min",
-    content: <NegativeKeywordsVodicSR />
+    content: <NegativeKeywordsVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "quality-score-vodic",
@@ -771,7 +810,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/quality-score-vodic.webp",
     imageAlt: "Ilustracija štita sa zvezdom i slagalicama pored njega, tema Quality Score-a i kako ga poboljšati u Google Ads",
     readingTime: "11 min",
-    content: <QualityScoreVodicSR />
+    content: <QualityScoreVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "remarketing-vodic",
@@ -784,7 +824,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/remarketing-vodic.webp",
     imageAlt: "Ilustracija magneta koji privlači oblike nazad i bumeranga pored, tema remarketinga u Google Ads",
     readingTime: "15 min",
-    content: <RemarketingVodicSR />
+    content: <RemarketingVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "kako-poceti-google-ads",
@@ -797,7 +838,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/kako-poceti-google-ads.webp",
     imageAlt: "Ilustracija rakete na lansirnoj rampi sa kompasom i kockicama, tema vodiča za početnike u Google Ads",
     readingTime: "14 min",
-    content: <KakoPocetiGoogleAdsSR />
+    content: <KakoPocetiGoogleAdsSR />,
+    ctaTarget: "consult"
   },
   {
     slug: "rsa-vodic",
@@ -810,7 +852,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/rsa-vodic.webp",
     imageAlt: "Ilustracija lepeze kartica sa lenjirom i slagalicama, tema vodiča za Responsive Search Ads oglase",
     readingTime: "14 min",
-    content: <RsaVodicSR />
+    content: <RsaVodicSR />,
+    ctaTarget: "audit"
   },
   {
     slug: "ctr-vodic",
@@ -823,7 +866,8 @@ const srPosts: PostData[] = [
     featuredImage: "/blog/ctr-vodic.webp",
     imageAlt: "Ilustracija kursora koji klikće na metu sa štopericom pored, tema CTR-a i kako ga podići u Google Ads",
     readingTime: "12 min",
-    content: <CtrVodicSR />
+    content: <CtrVodicSR />,
+    ctaTarget: "audit"
   }
 ];
 
@@ -878,8 +922,7 @@ const enPosts: PostData[] = [
     featuredImage: "/blog/pmax-audit-checklist.webp",
     imageAlt: "Illustration of a clipboard checklist with check marks and a magnifying glass, Performance Max campaign audit topic",
     readingTime: "15 min",
-    content: <PerformanceMaxAuditChecklistEN />,
-    ctaTarget: "audit"
+    content: <PerformanceMaxAuditChecklistEN />
   },
   {
     slug: "google-ads-budget-planning",
@@ -918,8 +961,7 @@ const enPosts: PostData[] = [
     featuredImage: "/blog/lista-negativnih-kljucnih-reci.webp",
     imageAlt: "Illustration of a funnel and sieve filtering blocks with a red X into a trash bin, negative keywords list topic",
     readingTime: "12 min",
-    content: <NegativeKeywordsListEN />,
-    ctaTarget: "audit"
+    content: <NegativeKeywordsListEN />
   },
   {
     slug: "google-ads-api-authentication-guide",
@@ -945,8 +987,7 @@ const enPosts: PostData[] = [
     featuredImage: "/blog/google-ads-checklist-upravljanje.webp",
     imageAlt: "Illustration of a clipboard with green checkmarks and red crosses, a calendar and a clock, theme of the rhythm of managing a Google Ads account",
     readingTime: "11 min",
-    content: <ChecklistUpravljanjaEN />,
-    ctaTarget: "audit"
+    content: <ChecklistUpravljanjaEN />
   },
   {
     slug: "google-search-campaigns-guide",
@@ -959,8 +1000,7 @@ const enPosts: PostData[] = [
     featuredImage: "/blog/google-search-kampanje-vodic.webp",
     imageAlt: "Illustration of a target with an arrow in the bullseye, a megaphone and a stack of ad cards, Google Search campaigns guide topic",
     readingTime: "12 min",
-    content: <GoogleSearchCampaignsGuideEN />,
-    ctaTarget: "audit"
+    content: <GoogleSearchCampaignsGuideEN />
   },
   {
     slug: "demand-gen-guide",
@@ -1536,14 +1576,14 @@ export function isCanonicalSlug(slug: string): boolean {
 }
 
 /**
- * Segment the blog CTA by post intent.
- * TOFU / educational / beginner posts -> low-commitment consultation (/kontakt).
- * BOFU / strategy / audit posts -> the paid audit service page (/audit).
- * Always called with the canonical (SR) slug so SR and EN variants resolve identically —
- * see PostData.ctaTarget above, set only on the SR (canonical) post entries.
+ * Segment the blog CTA by reader, not by topic — see PostData.ctaTarget above.
+ * Always called with the canonical (SR) slug so SR and EN variants resolve identically.
+ * That is deliberate: a Google Ads API guide is read by a developer in both
+ * languages, and a "why is my account not working" post is read by an owner in
+ * both, so the audience follows the post rather than the locale.
  * Posts without the field (or an unrecognized slug) fall back to "consult".
  */
-export function getBlogCtaTarget(canonicalSlug: string): "audit" | "consult" {
+export function getBlogCtaTarget(canonicalSlug: string): "audit" | "consult" | "tool" {
   const post = srPosts.find((p) => p.slug === canonicalSlug);
   return post?.ctaTarget ?? "consult";
 }

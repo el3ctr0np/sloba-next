@@ -8,15 +8,106 @@ export function BlogCTA({
   locale: string;
   variant?: "mid" | "bottom";
   /**
-   * Where the CTA should send the reader.
-   * - "consult": low-commitment enquiry/consultation (TOFU / beginner posts) -> /kontakt
-   * - "audit": the paid audit service page (BOFU / strategy / audit posts) -> /usluge/google-ads-audit
-   * Defaults to "consult" to preserve the original /kontakt behaviour.
+   * Where the CTA should send the reader. Segmented by who actually reads the
+   * post, not by what the post is about (Q4_SAJT_SPEC.md, talas 2).
+   * - "tool": PPC operator / developer reading the technical cluster (API,
+   *   GAQL, automation, feed and measurement implementation). Never a retainer
+   *   pitch - they are not buying account management. -> /resursi
+   * - "audit": someone already spending on Google Ads who suspects something
+   *   is wrong. -> /audit
+   * - "consult": beginner who has no account yet, or is still comparing
+   *   platforms. The exception, not the default. -> /kontakt
    */
-  target?: "audit" | "consult";
+  target?: "audit" | "consult" | "tool";
 }) {
   const isEn = locale === "en";
-  const primaryHref = target === "audit" ? "/audit" : "/kontakt";
+  const primaryHref =
+    target === "tool" ? "/resursi" : target === "audit" ? "/audit" : "/kontakt";
+
+  if (target === "tool") {
+    if (variant === "mid") {
+      return (
+        <div className="not-prose my-10 bg-gradient-to-br from-slate-50 to-blue-50 border-2 border-slate-200 rounded-xl p-6 md:p-8">
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-xs uppercase tracking-wider text-slate-600 font-bold mb-1">
+                {isEn ? "Free tools" : "Besplatni alati"}
+              </p>
+              <h3 className="text-lg md:text-xl font-heading font-bold text-slate-900 mt-0 mb-2">
+                {isEn
+                  ? "Check your own account, no email required"
+                  : "Proverite nalog sami, bez ostavljanja emaila"}
+              </h3>
+              <p className="text-sm text-gray-600 mb-0">
+                {isEn
+                  ? "Four tools that run in the browser: a 38-point Performance Max review, a budget calculator, a GA4 audience framework and an account audit checklist."
+                  : "Cetiri alata koja rade u pretrazivacu: provera Performance Max kampanje kroz 38 tacaka, budzet kalkulator, GA4 audience framework i checklista za audit naloga."}
+              </p>
+            </div>
+            <Link
+              href={primaryHref}
+              className="shrink-0 bg-slate-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-slate-800 transition-colors text-sm whitespace-nowrap"
+            >
+              {isEn ? "Open the tools \u2192" : "Otvorite alate \u2192"}
+            </Link>
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="not-prose mt-12 mb-4 bg-slate-900 text-white rounded-xl p-8 md:p-10">
+        <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 font-bold mb-3">
+          {isEn ? "Free tools, no form" : "Besplatni alati, bez forme"}
+        </p>
+        <h3 className="text-xl md:text-2xl font-heading font-bold mt-0 mb-3">
+          {isEn ? "The tools I built for my own accounts" : "Alati koje sam napravio za sopstvene naloge"}
+        </h3>
+        <p className="text-slate-300 mb-6">
+          {isEn
+            ? "I built these because I needed them while working on accounts. They run in the browser, they don't ask for an email, and they show the whole result on the spot."
+            : "Napravio sam ih zato sto su mi trebali u radu na nalozima. Rade u pretrazivacu, ne traze email i pokazuju ceo rezultat odmah."}
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+          {(isEn
+            ? [
+                ["PMax Check", "38 checkpoints, weighted score per group"],
+                ["Budget calculator", "what the account needs per phase"],
+                ["GA4 audience framework", "25 lists, 6 pillars"],
+                ["Audit checklist", "50 items to run on any account"],
+              ]
+            : [
+                ["PMax Check", "38 tacaka provere, ponderisan skor po grupi"],
+                ["Budzet kalkulator", "koliko nalogu treba po fazi"],
+                ["GA4 audience framework", "25 lista, 6 stubova"],
+                ["Audit checklista", "50 stavki za prolaz kroz nalog"],
+              ]
+          ).map(([name, note]) => (
+            <div key={name} className="bg-white/5 border border-white/10 rounded-lg px-4 py-3">
+              <p className="text-yellow-400 font-bold text-sm mb-1">{name}</p>
+              <p className="text-slate-400 text-sm mb-0">{note}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-3">
+          <Link
+            href={primaryHref}
+            className="inline-block bg-yellow-400 text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition-colors text-center"
+          >
+            {isEn ? "Open the free tools \u2192" : "Otvorite besplatne alate \u2192"}
+          </Link>
+          <Link
+            href="/kontakt"
+            className="inline-block border border-slate-500 text-slate-300 font-medium py-3 px-6 rounded-lg hover:border-slate-300 hover:text-white transition-colors text-sm text-center"
+          >
+            {isEn ? "Something broken or missing? Tell me" : "Nesto ne radi ili fali? Javite mi"}
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   if (variant === "mid") {
     return (
