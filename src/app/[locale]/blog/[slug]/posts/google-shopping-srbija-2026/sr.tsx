@@ -941,8 +941,8 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">Za ozbiljne brendove</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
-          Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre lansiranja ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu - deo je naše šire usluge{" "}
-          <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping upravljanja</Link>. Kao{" "}
+          Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre lansiranja ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu - detaljan proces opisujem u našem{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-yellow-400">kompletnom vodiču za Google Shopping</Link>. Kao{" "}
           <Link href="/usluge/google-ads-agencija" className="underline text-yellow-400">agencija za Google Ads</Link> vodimo i Search i Performance Max kampanje, ne samo Shopping.
         </p>
 

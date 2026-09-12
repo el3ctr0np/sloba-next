@@ -259,9 +259,8 @@ export default function GoogleAdsForEcommerceSerbia2026EN() {
       <p>
         After Shopping launches, the dynamic shifts — Shopping campaigns take over as the dominant format
         for product-first businesses, just as they have in the UK, Germany, and across Western Europe.
-        If you want someone to set up your account ahead of this transition, see our{" "}
-        <Link href="/usluge/google-shopping" className="underline font-medium">Google Shopping management service</Link>.
-        You can also find a detailed preparation strategy in a dedicated guide:
+        If you want a detailed preparation strategy for this transition, see our{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline font-medium">complete Google Shopping guide</Link>:
       </p>
 
       <ul>

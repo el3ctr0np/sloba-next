@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
-import { GlossaryLink } from "@/components/GlossaryLink";
-import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -12,11 +10,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads for eCommerce | Shopping & PMax — Slobodan Jelisavac"
-      : "Google Ads za eCommerce | 3-5x ROAS - Slobodan Jelisavac",
+      ? "Google Ads for eCommerce | Shopping & PMax - Slobodan Jelisavac"
+      : "Google Ads za eCommerce | Shopping i Performance Max - Slobodan Jelisavac",
     description: isEn
-      ? "I've spent 10+ years driving profitable growth for online stores with Google Ads. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, and other verticals. 5x+ ROAS in 90 days."
-      : "Povećavam prihod i ROAS vaše online prodavnice - 10+ godina radim Google Ads strategije za eCommerce. Shopping, Performance Max i remarketing kampanje za fashion, home & garden i druge vertikale.",
+      ? "10+ years running Google Ads for online stores. Shopping, Performance Max, and Search, structured by margin - not just revenue. Management from $2,500/mo, minimum $10,000+/mo ad spend."
+      : "10+ godina vodim Google Ads za online prodavnice. Shopping, Performance Max i Search, strukturirani po marži - ne samo po prihodu. Vođenje od €700/mes, uslov €1.500+/mes ad spend-a.",
     locale,
     path: "/services/google-ads-for-ecommerce",
     srPath: "/usluge/google-ads-za-ecommerce",
@@ -25,323 +23,202 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GoogleAdsZaEcommercePage({ params }: Props) {
   const { locale } = await params;
+  const isEn = locale === "en";
 
-  const challenges = locale === "en"
+  const shoppingGuideSlug = isEn ? "google-shopping-guide" : "google-shopping-vodic";
+  const pmaxGuideSlug = isEn ? "performance-max-guide" : "performance-max-vodic";
+
+  const challenges = isEn
     ? [
         {
-          title: "Poor product feed quality",
+          title: "The feed blocks visibility",
           description:
-            "Weak titles, incomplete attributes, and incorrect categories block product visibility and limit campaign performance."
+            "Weak titles, incomplete attributes, and wrong categories push products out of the auction before bidding even matters."
         },
         {
-          title: "ROAS doesn't cover costs",
+          title: "ROAS doesn't cover margin",
           description:
-            "Campaigns drive sales, but margins aren't sufficient for profitability without feed and bid optimization."
+            "Revenue climbs, but without margin data per product you don't know how much of it actually stays in the business."
         },
         {
-          title: "Performance Max without insights",
+          title: "Performance Max without insight",
           description:
-            "No control means you don't know where budget is going or what's actually driving results."
-        },
-        {
-          title: "Seasonality and inventory issues",
-          description:
-            "Campaigns promote out-of-stock products or miss peak season opportunities due to poor feed management."
-        },
-        {
-          title: "Competition with bigger budgets",
-          description:
-            "Large retailers dominate the auction, requiring smarter targeting and segmentation strategies."
+            "Automation spends budget across channels and segments you can't see, turning optimization into guesswork."
         }
       ]
     : [
         {
-          title: "Feed kvalitet koji koči kampanje",
+          title: "Feed koči vidljivost",
           description:
-            "Loši naslovi, nepotpuni atributi i pogrešne kategorije blokiraju vidljivost proizvoda."
+            "Loši naslovi, nepotpuni atributi i pogrešne kategorije guraju proizvode van aukcije pre nego što bid uopšte dođe na red."
         },
         {
-          title: "ROAS ne pokriva troškove",
+          title: "ROAS ne pokriva maržu",
           description:
-            "Kampanje donose prodaju, ali marže nisu dovoljne za profitabilnost."
+            "Prihod raste, ali bez podataka o marži po proizvodu ne znate koji deo tog prihoda zaista ostaje u biznisu."
         },
         {
           title: "Performance Max bez uvida",
           description:
-            "Bez kontrole ne znate gde ide budžet i šta zapravo donosi rezultate."
-        },
-        {
-          title: "Sezonalnost i inventory",
-          description:
-            "Kampanje promovišu proizvode kojih nema na stanju ili propuštate peak season."
-        },
-        {
-          title: "Konkurencija sa većim budžetima",
-          description:
-            "Veliki retaileri dominiraju aukcijom, pa je potrebna pametna strategija."
+            "Automatizacija troši budžet po kanalima i segmentima koje ne vidite, pa optimizacija liči na nagađanje."
         }
       ];
 
-  const processSteps = locale === "en"
+  const deliverables = isEn
     ? [
         {
-          number: 1,
           title: "Feed audit",
           description:
-            "I review titles, attributes, categories, and image quality against Google Merchant Center requirements. Most Shopping underperformance traces back to feed issues, not bidding."
+            "Titles, attributes, categories, and images get aligned with Merchant Center requirements before bids get touched."
         },
         {
-          number: 2,
-          title: "Shopping/PMax/Search structure",
+          title: "Shopping, Performance Max, and Search structure",
           description:
-            "Campaigns are structured across Shopping, Performance Max, and Search based on where each product sits in its lifecycle and margin profile."
+            "Campaigns are split by margin and seasonality, with remarketing signals folded into PMax."
         },
         {
-          number: 3,
-          title: "Seasonal strategy + custom labels",
+          title: "Custom label segmentation",
           description:
-            "Custom labels segment products by margin, season, and performance tier, so budget and bids can be adjusted at the segment level rather than the whole catalog."
+            "Best sellers, new arrivals, and seasonal items get separate budget and bids instead of one blanket treatment."
         },
         {
-          number: 4,
-          title: "ROAS/POAS tracking",
+          title: "Margin-based conversion tracking",
           description:
-            "Conversion tracking is set up to capture margin data where possible, not just revenue - this is what makes POAS optimization possible."
+            "Tracking is set up to capture margin where possible, not just revenue - the foundation for POAS optimization."
         },
         {
-          number: 5,
-          title: "Optimization on margin",
+          title: "Monthly optimization for profit",
           description:
-            "Ongoing optimization prioritizes the products and campaigns that protect margin, not just the ones with the highest raw revenue."
+            "Priority goes to products and campaigns that protect margin, not the ones with the highest raw revenue."
         }
       ]
     : [
         {
-          number: 1,
           title: "Feed audit",
           description:
-            "Pregledam naslove, atribute, kategorije i kvalitet slika u odnosu na Google Merchant Center zahteve. Najveći deo slabog Shopping učinka vuče koren iz feed-a, ne iz bidovanja."
+            "Naslovi, atributi, kategorije i slike se usklađuju sa Merchant Center zahtevima pre nego što se dirne bid."
         },
         {
-          number: 2,
-          title: "Struktura Shopping/PMax/Search",
+          title: "Struktura Shopping, Performance Max i Search",
           description:
-            "Kampanje se strukturiraju kroz Shopping, Performance Max i Search u zavisnosti od toga gde se proizvod nalazi u životnom ciklusu i profilu marže."
+            "Kampanje se raspoređuju po marži i sezoni proizvoda, sa remarketing signalima uključenim u PMax."
         },
         {
-          number: 3,
-          title: "Sezonska strategija + custom labels",
+          title: "Custom labels segmentacija",
           description:
-            "Custom labels segmentiraju proizvode po marži, sezoni i performance tier-u, tako da se budžet i bidovi mogu prilagoditi na nivou segmenta, ne celog kataloga."
+            "Best seller, novi proizvodi i sezonski artikli dobijaju odvojen budžet i bid, ne isti tretman kao ceo katalog."
         },
         {
-          number: 4,
-          title: "ROAS/POAS tracking",
+          title: "Conversion tracking na maržu",
           description:
-            "Conversion tracking se podešava da hvata podatke o marži gde je moguće, ne samo prihod - to je ono što omogućava POAS optimizaciju."
+            "Tracking se podešava da hvata maržu gde je moguće, ne samo prihod - osnova za POAS optimizaciju."
         },
         {
-          number: 5,
-          title: "Optimizacija marži",
+          title: "Mesečna optimizacija na profit",
           description:
-            "Kontinuirana optimizacija prioritizuje proizvode i kampanje koje čuvaju maržu, ne samo one sa najvećim golim prihodom."
+            "Prioritet imaju proizvodi i kampanje koje čuvaju profit, ne oni sa najvećim golim prihodom."
         }
       ];
 
-  const roasVsPoas = locale === "en" ? [
-    {
-      row: "What it measures",
-      roas: "Revenue generated per unit of ad spend",
-      poas: "Profit generated per unit of ad spend"
-    },
-    {
-      row: "Formula",
-      roas: "Revenue / Ad spend",
-      poas: "(Revenue − COGS − costs) / Ad spend"
-    },
-    {
-      row: "When it's enough",
-      roas: "Early-stage accounts with uniform margins across the catalog",
-      poas: "Catalogs with mixed margins, bundles, or discounting"
-    },
-    {
-      row: "Why POAS",
-      roas: "Simple, but blind to margin differences between products",
-      poas: "Optimizes toward what the business actually keeps, not just top-line revenue"
-    }
-  ] : [
-    {
-      row: "Šta meri",
-      roas: "Prihod ostvaren po jedinici uloženog u oglase",
-      poas: "Profit ostvaren po jedinici uloženog u oglase"
-    },
-    {
-      row: "Formula",
-      roas: "Prihod / Ad spend",
-      poas: "(Prihod − nabavna cena − troškovi) / Ad spend"
-    },
-    {
-      row: "Kada je dovoljan",
-      roas: "Rani nalozi sa ujednačenim maržama kroz ceo katalog",
-      poas: "Katalozi sa različitim maržama, bundle proizvodima ili popustima"
-    },
-    {
-      row: "Zašto POAS",
-      roas: "Jednostavan, ali slep za razlike u marži između proizvoda",
-      poas: "Optimizuje ka onome što biznis zaista zadrži, ne samo ka golom prihodu"
-    }
-  ];
-
-  const idealClients = locale === "en"
+  const processSteps = isEn
     ? [
-        "Minimum 100 products in your catalog",
-        "Ad spend minimum $10,000/month (monthly management from $2,500/mo)",
-        "Defined margins by product or category",
-        "Functional tracking setup (GA4, purchase events)",
-        "Ready for minimum 3-month engagement"
+        { number: 1, title: "Audit", description: "I review the feed, campaign structure, and tracking before the first recommendation." },
+        { number: 2, title: "Restructure", description: "Shopping, PMax, and Search get aligned by margin and season, and custom labels come into play." },
+        { number: 3, title: "Optimize for profit", description: "Bids and budget follow POAS, not raw revenue, week over week." }
       ]
     : [
-        "Minimum 100 proizvoda u ponudi",
-        "Ad spend minimum €1.500/mesečno (mesečno vođenje od €700/mes)",
-        "Definisane marže po proizvodima ili kategorijama",
-        "Funkcionalan tracking (GA4, purchase events)",
-        "Spremni ste na minimum 3 meseca saradnje"
+        { number: 1, title: "Audit", description: "Pregledam feed, strukturu kampanja i tracking pre prvog predloga." },
+        { number: 2, title: "Restrukturiranje", description: "Shopping, PMax i Search se slažu po marži i sezoni, custom labels ulaze u igru." },
+        { number: 3, title: "Optimizacija na profit", description: "Bidovi i budžet prate POAS, ne goli prihod, iz nedelje u nedelju." }
       ];
 
-  const industries = locale === "en"
-    ? [
-        "Fashion & Apparel",
-        "Home & Garden",
-        "Electronics & Gadgets",
-        "Beauty & Personal Care",
-        "Sports & Outdoor",
-        "Pet Supplies"
-      ]
-    : [
-        "Fashion i apparel",
-        "Home and Garden",
-        "Electronics and Gadgets",
-        "Beauty and Personal Care",
-        "Sports and Outdoor",
-        "Pet Supplies"
-      ];
-
-  const platforms = ["Shopify", "WooCommerce", "Magento", "Custom solutions"];
-
-  const results = locale === "en"
-    ? [
-        {
-          title: "UK Skincare Brand",
-          items: [
-            "From 2.8x to 5.2x POAS in 90 days",
-            "Tiered Shopping + PMax restructuring",
-            "£80k+ annual revenue from Google Ads"
-          ]
-        },
-        {
-          title: "Home & Garden (Croatia)",
-          items: [
-            "320% ROAS improvement",
-            "Custom labels by season",
-            "PMax and Standard Shopping combo"
-          ]
-        }
-      ]
-    : [
-        {
-          title: "Fashion Brand (Srbija)",
-          items: [
-            "Od 2x do 5x ROAS u 90 dana",
-            "Feed reoptimizacija i campaign restructuring",
-            "EUR 150k+ godišnji prihod iz Google Ads"
-          ]
-        },
-        {
-          title: "Home and Garden (Hrvatska)",
-          items: [
-            "320% poboljšanje ROAS-a",
-            "Custom labels po sezonama",
-            "PMax i Standard Shopping kombinacija"
-          ]
-        }
-      ];
-
-  const faqs = locale === "en"
+  const faqs = isEn
     ? [
         {
           question: "Which platform is best for eCommerce Google Ads?",
           answer:
-            "I work with Shopify, WooCommerce, and Magento platforms. The key is that you can generate a quality product feed with all required attributes."
+            "I work with Shopify, WooCommerce, and Magento accounts. What matters more than the platform is whether you can pull a quality product feed from it."
         },
         {
           question: "What's a good ROAS for eCommerce?",
           answer:
-            "It depends on margins. If your margin is 50%, break-even ROAS is 2x. For real profit — covering shipping, returns and overhead — you target higher, which is why I optimize for POAS (profit on ad spend), not raw ROAS."
+            "It depends on margin - at a 50% margin, break-even ROAS is 2x. That's why I optimize for POAS instead of raw ROAS; average ROAS across the accounts I run is 3.7x, but that figure alone says nothing about profit."
         },
         {
-          question: "Do you manage product feeds?",
+          question: "Do you manage the product feed too?",
           answer:
-            "Yes, feed management is part of the service, including title optimization, custom labels, and attribute enhancement for better visibility."
+            "Yes, feed management is part of the service - titles, attributes, and custom labels change alongside the campaign structure."
         },
         {
-          question: "How long until I see results?",
+          question: "When do I see the first results?",
           answer:
-            "First improvements in 2-3 weeks, stabilization and serious growth in 6-8 weeks. eCommerce requires feed optimization and audience learning time."
+            "Auction changes show up within a few weeks of feed and structure optimization. A meaningful POAS shift depends on the catalog, season, and budget, so I don't promise a timeline upfront."
+        },
+        {
+          question: "My budget or catalog is smaller - is this for me?",
+          answer:
+            "Not if ad spend is under $10,000/month. For that range, an audit or a consulting call is a better starting point, laying the groundwork before full management."
         },
         {
           question: "Do you run Meta ads too?",
           answer:
-            "My focus is Google Ads, but for omnichannel performance marketing, I offer comprehensive services through Funky Enterprises — a senior team that runs a complete omnichannel paid strategy: Google, Meta, SEO, and CRO."
+            "My focus is Google Ads. For an omnichannel approach - Google, Meta, SEO, and CRO together - that work runs through Funky Enterprises, a team I work with regularly."
         }
       ]
     : [
         {
-          question: "Koja platforma je najbolja za eCommerce?",
+          question: "Koja platforma je najbolja za eCommerce Google Ads?",
           answer:
-            "Radim sa Shopify, WooCommerce i Magento platformama. Bitno je da možete generisati kvalitetan product feed."
+            "Radim sa Shopify, WooCommerce i Magento nalozima. Bitnije od same platforme je da iz nje možete izvući kvalitetan product feed."
         },
         {
           question: "Šta je dobar ROAS za eCommerce?",
           answer:
-            "Zavisi od marži. Ako je marža 50%, break-even ROAS je 2x. Za stvaran profit - uz troškove dostave, povrata i režije - cilja se više, zato optimizujem POAS (profit na uloženo), ne goli ROAS."
+            "Zavisi od marže - ako je marža 50%, break-even ROAS je 2x. Zato optimizujem POAS umesto golog ROAS-a; u nalozima koje vodim prosečan ROAS je 3.7x, ali ta brojka sama po sebi ne kaže ništa o profitu."
         },
         {
-          question: "Da li upravljate i feed-om?",
+          question: "Da li vodite i product feed?",
           answer:
-            "Da, feed management je deo usluge, uključujući optimizaciju naslova i custom labels."
+            "Da, feed management je deo usluge - naslovi, atributi i custom labels se menjaju zajedno sa strukturom kampanja."
         },
         {
-          question: "Koliko traje da se vide rezultati?",
+          question: "Kada se vide prvi rezultati?",
           answer:
-            "Prva poboljšanja za 2-3 nedelje, stabilizacija i ozbiljniji rast za 6-8 nedelja."
+            "Prve promene u aukciji se vide posle nekoliko nedelja optimizacije feed-a i strukture. Ozbiljniji pomak u POAS-u zavisi od kataloga, sezone i budžeta, pa ga ne obećavam unapred."
+        },
+        {
+          question: "Imam manji budžet ili manji katalog - da li je ovo za mene?",
+          answer:
+            "Ne ako je ad spend ispod €1.500 mesečno. Za taj raspon Deep Audit ili konsultacije su bolji početak, gde postavljamo osnovu pre punog vođenja."
         },
         {
           question: "Da li radite i Meta oglase?",
           answer:
-            "Fokus je na Google Ads, ali za omnichannel pristup nudim Performance Marketing kroz Funky Enterprises - senior tim koji vodi kompletnu omnichannel paid strategiju: Google, Meta, SEO i CRO."
+            "Fokus mi je Google Ads. Za omnichannel pristup - Google, Meta, SEO i CRO zajedno - saradnja ide preko Funky Enterprises, tima sa kojim redovno radim."
         }
       ];
+
+  const ctaLabel = isEn ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta";
 
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
+    jobTitle: isEn ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
-  const serviceSchema = locale === "en"
+  const serviceSchema = isEn
     ? {
         "@context": "https://schema.org",
         "@type": "Service",
         name: "Google Ads for eCommerce",
-        description:
-          "Monthly Google Ads management for eCommerce — from $2,500/mo.",
+        description: "Monthly Google Ads management for eCommerce - from $2,500/mo.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
           url: "https://www.slobodan-jelisavac.com",
-          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
+          jobTitle: "Google Ads Consultant",
           knowsAbout: ["Google Ads", "eCommerce Advertising", "Google Shopping", "Performance Max", "Product Feed Optimization"]
         },
         areaServed: [
@@ -368,13 +245,12 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         "@context": "https://schema.org",
         "@type": "Service",
         name: "Google Ads za eCommerce",
-        description:
-          "Mesečno Google Ads vođenje za eCommerce - od €700/mes.",
+        description: "Mesečno Google Ads vođenje za eCommerce - od €700/mes.",
         provider: {
           "@type": "Person",
           name: "Slobodan Jelisavac",
           url: "https://www.slobodan-jelisavac.com",
-          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
+          jobTitle: "Google Ads Konsultant",
           knowsAbout: ["Google Ads", "eCommerce Advertising", "Google Shopping", "Performance Max"]
         },
         areaServed: [
@@ -396,53 +272,23 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         }
       };
 
-  const breadcrumbSchema = locale === "en"
+  const breadcrumbSchema = isEn
     ? {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "https://www.slobodan-jelisavac.com"
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Services",
-            item: "https://www.slobodan-jelisavac.com/en/services"
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: "Google Ads for eCommerce",
-            item: "https://www.slobodan-jelisavac.com/en/services/google-ads-for-ecommerce"
-          }
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.slobodan-jelisavac.com" },
+          { "@type": "ListItem", position: 2, name: "Services", item: "https://www.slobodan-jelisavac.com/en/services" },
+          { "@type": "ListItem", position: 3, name: "Google Ads for eCommerce", item: "https://www.slobodan-jelisavac.com/en/services/google-ads-for-ecommerce" }
         ]
       }
     : {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Početna",
-            item: "https://www.slobodan-jelisavac.com"
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Usluge",
-            item: "https://www.slobodan-jelisavac.com/sr/usluge"
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: "Google Ads za eCommerce",
-            item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-za-ecommerce"
-          }
+          { "@type": "ListItem", position: 1, name: "Početna", item: "https://www.slobodan-jelisavac.com" },
+          { "@type": "ListItem", position: 2, name: "Usluge", item: "https://www.slobodan-jelisavac.com/sr/usluge" },
+          { "@type": "ListItem", position: 3, name: "Google Ads za eCommerce", item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-za-ecommerce" }
         ]
       };
 
@@ -452,348 +298,187 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer
-      }
+      acceptedAnswer: { "@type": "Answer", text: faq.answer }
     }))
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
+      {/* 1. Hero - kome je namenjeno, sta se desava kad me angazujem, jedan dokaz */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <nav className="mb-8 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 text-slate-400">
-              <li><Link href="/" className="hover:text-white transition-colors">{locale === "en" ? "Home" : "Početna"}</Link></li>
+              <li><Link href="/" className="hover:text-white transition-colors">{isEn ? "Home" : "Početna"}</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/usluge" className="hover:text-white transition-colors">{locale === "en" ? "Services" : "Usluge"}</Link></li>
+              <li><Link href="/usluge" className="hover:text-white transition-colors">{isEn ? "Services" : "Usluge"}</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-accent font-medium">{locale === "en" ? "Google Ads for eCommerce" : "Google Ads za eCommerce"}</li>
+              <li className="text-accent font-medium">{isEn ? "Google Ads for eCommerce" : "Google Ads za eCommerce"}</li>
             </ol>
           </nav>
 
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-              {locale === "en"
-                ? "Google Ads for eCommerce - maximize your online store revenue"
-                : "Google Ads za eCommerce - maksimizujte prihod vaše online prodavnice"}
+              {isEn ? "Google Ads for eCommerce" : "Google Ads za eCommerce"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              {locale === "en"
-                ? "Expert Google Ads strategies for online stores that drive profitable growth. Shopping campaigns, Performance Max, and remarketing for fashion, home & garden, electronics, and other verticals."
-                : "Specijalizovane Google Ads strategije za online prodavnice koje generišu profitabilan rast. Shopping kampanje, Performance Max i remarketing za fashion, home & garden, electronics i druge vertikale."}
+              {isEn
+                ? "I run Shopping, Performance Max, and Search campaigns for online stores that care about profit, not just revenue."
+                : "Vodim Shopping, Performance Max i Search kampanje za online prodavnice koje gledaju na profit, ne samo na prihod."}
             </p>
 
             <div className="flex flex-wrap gap-6 mb-8">
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-slate-300">{locale === "en" ? "10+ years experience" : "10+ godina iskustva"}</span>
+                <span className="text-slate-300">{isEn ? "10+ years experience" : "10+ godina iskustva"}</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-slate-300">{locale === "en" ? "5x+ ROAS in 90 days" : "5x+ ROAS u 90 dana"}</span>
+                <span className="text-slate-300">
+                  {isEn ? "POAS 1.78x on a UK Shopping account, 2+ years" : "POAS 1.78x na UK Shopping nalogu, 2+ godine"}
+                </span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-slate-300">Shopify, WooCommerce, Magento</span>
+                <span className="text-slate-300">
+                  {isEn ? "For accounts spending $10,000+/mo" : "Za naloge sa ad spend-om €1.500+/mes"}
+                </span>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="/kontakt" variant="secondary">
-                {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
-              </Button>
-              <Button href="/usluge/google-shopping" variant="primary">
-                {locale === "en" ? "Google Shopping campaigns" : "Google Shopping kampanje"}
-              </Button>
-            </div>
+            <p className="text-base text-slate-400 mb-8 max-w-2xl">
+              {isEn
+                ? <>Smaller budget? An <Link href="/usluge/google-ads-audit" className="text-accent underline">audit</Link> or a <Link href="/usluge/konsultacije" className="text-accent underline">consulting call</Link> is a better first step.</>
+                : <>Manji budžet? <Link href="/usluge/google-ads-audit" className="text-accent underline">Deep Audit</Link> ili <Link href="/usluge/konsultacije" className="text-accent underline">konsultacije</Link> su bolji prvi korak.</>}
+            </p>
+
+            <Button href="/kontakt" variant="secondary">{ctaLabel}</Button>
           </div>
         </div>
       </section>
 
-      <section className="bg-white px-4 md:px-8 pt-8 md:pt-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-blue-50 border-l-4 border-primary rounded-xl p-5 md:p-6 shadow-card">
-            <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">
-              {locale === "en" ? "Quick answer" : "Brzi odgovor"}
-            </p>
-            <p className="text-base text-gray-800 mb-0 leading-relaxed">
-              {locale === "en"
-                ? "Google Ads for eCommerce works best for stores with 100+ products and $10,000+/month ad spend. Combining Shopping + Performance Max + remarketing typically reaches 3-5x ROAS in 90 days when the feed is high quality. Monthly management starts from $2,500/mo; for smaller budgets, Kickstart (from $990) or consulting ($200/hr) are the right entry points."
-                : "Google Ads za eCommerce najbolje radi za prodavnice sa 100+ proizvoda i €1.500+/mes ad spend-a. Kombinacija Shopping + Performance Max + remarketing tipično dostiže 3-5x ROAS u 90 dana kada je feed kvalitetan. Mesečno vođenje kreće od €700/mes; za manje budžete tu su Kickstart (od €690) ili konsultacije (€150/sat)."}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white border-b border-gray-100 py-12 md:py-16 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-lg text-gray-700 leading-relaxed">
-            {locale === "en"
-              ? "Google Ads for eCommerce is the most effective channel for scaling online stores. Shopping campaigns display products directly in search results with images, prices, and names, while Performance Max reaches customers across all Google platforms - YouTube, Display, Search, and Discover. With a properly optimized product feed, campaign structure, and bidding strategy, Google Ads can drive profitable growth for fashion, home & garden, electronics, beauty, and other verticals. The key to success is combining quality product feed optimization, performance-based segmentation (best sellers, new arrivals, seasonal), and continuous ROAS and margin-driven optimization."
-              : "Google Ads za eCommerce je najefikasniji kanal za skaliranje online prodavnice. Shopping kampanje prikazuju proizvode direktno u pretraži sa slikom, cenom i nazivom, dok Performance Max dostiže kupce na svim Google platformama - YouTube, Display, Search i Discover. Sa pravilno podešenim feed-om, strukturom kampanja i bid strategijom, Google Ads može doneti profitabilan rast za fashion, home and garden, electronics, beauty i druge vertikale. Ključ uspeha je u kombinaciji kvalitetnog product feed-a, segmentacije po performance-u (best sellers, new arrivals, seasonal), i kontinuirane optimizacije zasnovane na ROAS-u i marži."}
-          </p>
-          <p className="text-base text-gray-500 mt-4">
-            {locale === "en"
-              ? <>This page covers the complete eCommerce strategy — if you're interested specifically in the Shopping feed, see <Link href="/usluge/google-shopping" className="text-primary underline">Google Shopping campaigns</Link>.</>
-              : <>Ova stranica pokriva kompletnu eCommerce strategiju - ako vas zanima isključivo Shopping feed, pogledajte <Link href="/usluge/google-shopping" className="text-primary underline">Google Shopping kampanje</Link>.</>}
-          </p>
-        </div>
-      </section>
-
+      {/* 2. Problem - tri stavke */}
       <Section>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            {locale === "en" ? "eCommerce advertising challenges" : "Izazovi eCommerce oglašavanja"}
+            {isEn ? "Why eCommerce accounts stall" : "Zašto eCommerce nalozi stanu u mestu"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Common problems online store owners face with Google Ads"
-              : "Ovo su najčešći problemi sa kojima se susreću vlasnici online prodavnica"}
-          </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {challenges.map((challenge) => (
             <Card key={challenge.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {challenge.title}
-              </h3>
+              <h3 className="text-lg font-heading font-semibold mb-2">{challenge.title}</h3>
               <p className="text-gray-600">{challenge.description}</p>
             </Card>
           ))}
         </div>
       </Section>
 
+      {/* 3. Sta dobijate - numerisano */}
       <Section background="gray">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            {locale === "en" ? "Who is eCommerce Google Ads for" : "Za koga je eCommerce Google Ads usluga"}
+            {isEn ? "What you get" : "Šta dobijate"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "This service is designed for serious eCommerce stores ready for growth"
-              : "Ova usluga je dizajnirana za ozbiljne eCommerce prodavnice spremne za rast"}
-          </p>
-        </div>
-        <div className="max-w-3xl mx-auto">
-          <Card className="h-full">
-            <ul className="space-y-3 text-gray-700">
-              {idealClients.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="text-base text-gray-600 mt-6 pt-6 border-t border-gray-200">
-              <strong className="font-semibold text-gray-900">
-                {locale === "en" ? "Industries I work best with:" : "Industrije sa kojima najbolje radim:"}
-              </strong>
-              <p className="mt-2">{industries.join(", ")}</p>
-            </div>
-            <div className="text-base text-gray-600 mt-4">
-              <strong className="font-semibold text-gray-900">
-                {locale === "en" ? "Platforms:" : "Platforme:"}
-              </strong>
-              <p className="mt-2">{platforms.join(", ")}</p>
-            </div>
-            <div className="text-base text-gray-500 mt-4 bg-yellow-50 border-l-4 border-accent p-4 rounded">
-              <strong>{locale === "en" ? "Note:" : "Napomena:"}</strong>{" "}
-              {locale === "en"
-                ? "If you have fewer than 50 products or your store just launched, full management is overkill — a consultation ($200/hr) or Kickstart is a better first step."
-                : "Ako imate manje od 50 proizvoda ili ste tek pokrenuli prodavnicu, puno vođenje je overkill - konsultacija (€150/sat) ili Kickstart su bolji prvi korak."}
-            </div>
-          </Card>
-        </div>
-      </Section>
-
-      {/* Process — eCommerce setup */}
-      <Section>
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            {locale === "en" ? "eCommerce setup process" : "eCommerce setup proces"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "From feed audit to margin-based optimization — a 5-step process."
-              : "Od feed audita do optimizacije po marži - proces u 5 koraka."}
-          </p>
         </div>
         <div className="max-w-3xl mx-auto">
           <div className="space-y-4">
-            {processSteps.map((step, index) => (
-              <div
-                key={step.title}
-                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
-              >
-                <span
-                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
-                    index === processSteps.length - 1
-                      ? "bg-accent text-gray-900"
-                      : "bg-slate-900 text-white"
-                  }`}
-                >
-                  {step.number}
+            {deliverables.map((item, index) => (
+              <div key={item.title} className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+                <span className="flex-shrink-0 w-9 h-9 rounded-full bg-slate-900 text-white flex items-center justify-center text-sm font-bold font-heading">
+                  {index + 1}
                 </span>
                 <div>
-                  <h3 className="font-heading font-semibold text-lg mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 text-base">{step.description}</p>
+                  <h3 className="font-heading font-semibold text-lg mb-1">{item.title}</h3>
+                  <p className="text-gray-600 text-base">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </Section>
-
-      {/* ROAS vs POAS comparison table */}
-      <Section background="gray">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            {locale === "en" ? "ROAS vs POAS" : "ROAS vs POAS"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en" ? (
-              <>
-                <GlossaryLink slug="roas">ROAS</GlossaryLink> and{" "}
-                <GlossaryLink slug="poas">POAS</GlossaryLink> answer different
-                questions — one measures revenue, the other measures profit.
-              </>
-            ) : (
-              <>
-                <GlossaryLink slug="roas">ROAS</GlossaryLink> i{" "}
-                <GlossaryLink slug="poas">POAS</GlossaryLink> odgovaraju na
-                različita pitanja - jedan meri prihod, drugi meri profit.
-              </>
-            )}
+          <p className="text-sm text-gray-500 mt-6 text-center">
+            {isEn ? "Deeper dives: " : "Detaljnije: "}
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: shoppingGuideSlug } }} className="text-primary underline">
+              {isEn ? "Google Shopping guide" : "Google Shopping vodič"}
+            </Link>
+            {" · "}
+            <Link href={{ pathname: "/blog/[slug]", params: { slug: pmaxGuideSlug } }} className="text-primary underline">
+              {isEn ? "Performance Max guide" : "Performance Max vodič"}
+            </Link>
           </p>
         </div>
-        <div className="max-w-4xl mx-auto overflow-x-auto">
-          <table className="w-full border-collapse bg-white rounded-xl shadow-card overflow-hidden">
-            <thead>
-              <tr className="bg-slate-900 text-white">
-                <th className="text-left p-4 font-heading font-semibold"></th>
-                <th className="text-left p-4 font-heading font-semibold">
-                  <GlossaryLink slug="roas" className="text-white border-white/40 hover:border-white">ROAS</GlossaryLink>
-                </th>
-                <th className="text-left p-4 font-heading font-semibold">
-                  <GlossaryLink slug="poas" className="text-white border-white/40 hover:border-white">POAS</GlossaryLink>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {roasVsPoas.map((row, index) => (
-                <tr
-                  key={row.row}
-                  className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
-                >
-                  <td className="p-4 font-semibold text-gray-900 align-top">{row.row}</td>
-                  <td className="p-4 text-gray-600 align-top">{row.roas}</td>
-                  <td className="p-4 text-gray-600 align-top">{row.poas}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
       </Section>
 
+      {/* 4. Dokaz */}
       <Section>
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            {locale === "en" ? "eCommerce results" : "eCommerce rezultati"}
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+            {isEn ? "Proof from the field" : "Dokaz iz prakse"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Examples of client performance transformations"
-              : "Primeri transformacije performansi klijenata"}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {results.map((result) => (
-            <Card key={result.title} className="h-full">
-              <h3 className="text-xl font-heading font-semibold mb-4 text-gray-900">
-                {result.title}
-              </h3>
-              <ul className="space-y-3">
-                {result.items.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-gray-700">
-                    <svg className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          ))}
-        </div>
-        <div className="max-w-5xl mx-auto mt-8">
-          <Card className="h-full">
-            <h3 className="text-lg font-heading font-semibold mb-3 text-gray-900">
-              {locale === "en" ? "Mobelaris — mini case" : "Mobelaris - mini case"}
-            </h3>
-            <p className="text-gray-600 text-base">
-              {locale === "en"
-                ? "Mobelaris, a luxury furniture eCommerce brand, came in with an ROI of only 1.8x on a €30k monthly budget spread across 300+ overlapping campaigns. The account was consolidated to 90 campaigns and rebuilt around server-side profit tracking rather than raw revenue, using broad match combined with Performance Max to give visually strong products the display placements they needed. Over the course of a 2-3 year partnership, ROI moved from 1.8x to 3.7x while the monthly budget scaled from €30k to €85k."
-                : "Mobelaris, eCommerce brend luksuznog nameštaja, došao je sa ROI-jem od svega 1.8x na mesečnom budžetu od €30k, raspoređenom kroz 300+ preklapajućih kampanja. Nalog je konsolidovan na 90 kampanja i rekonstruisan oko server-side tracking-a profita umesto golog prihoda, uz broad match kombinovan sa Performance Max-om koji je vizuelno jakim proizvodima dao display prikaz koji im je bio potreban. Tokom 2-3 godine saradnje, ROI je porastao sa 1.8x na 3.7x, dok je mesečni budžet skaliran sa €30k na €85k."}
+          <Card className="text-left">
+            <p className="text-gray-700 text-lg leading-relaxed">
+              {isEn
+                ? "The clearest proof I have is a UK online store I've managed for over two years - six-figure annual revenue in GBP, POAS holding at 1.78x. Average ROAS across the eCommerce accounts I run is 3.7x, but that number alone says nothing about margin - which is why I track POAS, not raw ROAS."
+                : "Najjasniji dokaz koji imam je UK online prodavnica koju vodim više od dve godine - šestocifren godišnji prihod u funtama, POAS na 1.78x. Prosečan ROAS u eCommerce nalozima koje vodim je 3.7x, ali ta brojka sama po sebi ne govori ništa o marži - zato pratim POAS, ne goli ROAS."}
             </p>
-            <Link
-              href={{ pathname: "/case-studies/[slug]", params: { slug: "mobelaris" } }}
-              className="text-primary underline text-sm mt-3 inline-block"
-            >
-              {locale === "en" ? "Read the full Mobelaris case study →" : "Pročitajte kompletnu Mobelaris studiju slučaja →"}
+            <Link href="/case-studies" className="text-primary underline text-sm mt-4 inline-block">
+              {isEn ? "See the case studies →" : "Pogledajte case studies →"}
             </Link>
           </Card>
         </div>
-        <div className="text-center mt-10">
-          <Button href="/case-studies" variant="primary">
-            {locale === "en" ? "All eCommerce case studies" : "Svi eCommerce case studies"}
-          </Button>
+      </Section>
+
+      {/* 5. Cena i proces */}
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+            {isEn ? "Price and process" : "Cena i proces"}
+          </h2>
+          <p className="text-gray-700 max-w-2xl mx-auto text-lg">
+            {isEn
+              ? <>Monthly management starts from <strong>$2,500/mo</strong>, with a minimum of <strong>$10,000+/mo</strong> ad spend - eCommerce optimization needs time for the feed and bidding strategies to mature, so I don&apos;t take on short, single-month engagements.</>
+              : <>Mesečno vođenje kreće od <strong>€700</strong>, uz uslov od <strong>€1.500+</strong> mesečnog ad spend-a - eCommerce optimizacija traži vreme da feed i bidding strategije sazru, pa ne radim kratke, jednomesečne angažmane.</>}
+          </p>
+        </div>
+        <div className="max-w-3xl mx-auto space-y-4">
+          {processSteps.map((step) => (
+            <div key={step.title} className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+              <span className="flex-shrink-0 w-9 h-9 rounded-full bg-accent text-gray-900 flex items-center justify-center text-sm font-bold font-heading">
+                {step.number}
+              </span>
+              <div>
+                <h3 className="font-heading font-semibold text-lg mb-1">{step.title}</h3>
+                <p className="text-gray-600 text-base">{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="max-w-3xl mx-auto mt-8 text-center">
+          <p className="text-base text-gray-600 mb-6">
+            {isEn
+              ? <>Smaller budget or catalog? <Link href="/usluge/google-ads-audit" className="text-primary underline">Audit ($500)</Link> or <Link href="/usluge/konsultacije" className="text-primary underline">consulting ($200/hr)</Link> is a better starting point.</>
+              : <>Manji budžet ili katalog? <Link href="/usluge/google-ads-audit" className="text-primary underline">Deep Audit (€450)</Link> ili <Link href="/usluge/konsultacije" className="text-primary underline">konsultacije (€150/sat)</Link> su bolji početak.</>}
+          </p>
+          <Button href="/kontakt" variant="primary">{ctaLabel}</Button>
         </div>
       </Section>
 
-      <RelatedGlossaryTerms
-        slugs={["roas", "poas", "aov", "ltv", "cogs", "merchant-center", "pmax"]}
-        locale={locale}
-      />
-
-      <Section background="gray">
+      {/* 6. FAQ */}
+      <Section>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            {locale === "en" ? "Frequently asked questions" : "Često postavljana pitanja"}
+            {isEn ? "Questions I actually get" : "Pitanja koja dobijam"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Answers to common questions about eCommerce Google Ads"
-              : "Odgovori na najčešća pitanja o Google Ads za eCommerce"}
-          </p>
         </div>
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
@@ -814,71 +499,31 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         </div>
       </Section>
 
-      <Section background="gray">
-        <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-            {locale === "en" ? "What's your next step?" : "Koji je vaš sledeći korak?"}
-          </h2>
-        </div>
-        <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto text-base">
-          <Link href="/usluge/google-ads-upravljanje" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
-            {locale === "en" ? "Ready for management → eCommerce Growth (from $2,500/mo)" : "Spremni za vođenje → eCommerce Growth (od €700/mes)"}
-          </Link>
-          <Link href="/usluge/starter-paket" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
-            {locale === "en" ? "Just setting up your account → Kickstart (from $990)" : "Tek postavljate nalog → Kickstart (od €690)"}
-          </Link>
-          <Link href="/usluge/google-ads-audit" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
-            {locale === "en" ? "Diagnosis first → Deep Audit + Action Plan (from $500)" : "Prvo dijagnostika → Deep Audit + Action Plan (od €450)"}
-          </Link>
-          <Link href="/usluge/konsultacije" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
-            {locale === "en" ? "Smaller budget or a quick answer → Consulting ($200/hr)" : "Manji budžet ili brzi savet → Konsultacije (€150/sat)"}
-          </Link>
-        </div>
-      </Section>
-
+      {/* 7. Zatvaranje - isti CTA treci put */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-            {locale === "en"
-              ? "Ready to scale your online store?"
-              : "Spremni da skalirate vašu online prodavnicu?"}
+            {isEn ? "Ready to scale your eCommerce account?" : "Spremni da skalirate eCommerce nalog?"}
           </h2>
           <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-            {locale === "en"
-              ? "Book a free consultation and let's discuss how Google Ads can increase your eCommerce store revenue. I'll analyze your current setup, product feed quality, and identify quick wins for growth."
-              : "Zakažite besplatnu konsultaciju i razgovarajmo kako Google Ads može povećati prihod vaše eCommerce prodavnice. Analiziraćemo trenutno stanje, feed kvalitet i identifikovati brze pobede za rast."}
+            {isEn
+              ? "On the call we go through your feed, current campaign structure, and tracking, and I'll tell you honestly whether full management is the right next step or something smaller fits better."
+              : "Na pozivu prolazimo kroz feed, trenutnu strukturu kampanja i tracking, pa vam iskreno kažem da li je puno vođenje sledeći korak ili vam treba nešto manje."}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
-            </Button>
-            <Button href="/usluge/performance-marketing" variant="primary">
-              {locale === "en" ? "Performance Marketing" : "Performance Marketing"}
-            </Button>
+          <div className="mb-8">
+            <Button href="/kontakt" variant="secondary">{ctaLabel}</Button>
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
-            <Link href="/usluge/google-shopping" className="hover:text-accent transition-colors underline">
-              {locale === "en" ? "Google Shopping campaigns" : "Google Shopping kampanje"}
-            </Link>
-            <span aria-hidden="true">•</span>
-            <Link href="/usluge/performance-max" className="hover:text-accent transition-colors underline">
-              {locale === "en" ? "Performance Max" : "Performance Max"}
-            </Link>
-            <span aria-hidden="true">•</span>
-            <Link href="/usluge/remarketing" className="hover:text-accent transition-colors underline">
-              {locale === "en" ? "Remarketing" : "Remarketing"}
+            <Link href="/usluge/google-ads-upravljanje" className="hover:text-accent transition-colors underline">
+              {isEn ? "Management" : "Vođenje kampanja"}
             </Link>
             <span aria-hidden="true">•</span>
             <Link href="/usluge/google-ads-audit" className="hover:text-accent transition-colors underline">
-              {locale === "en" ? "Deep Audit" : "Deep Audit"}
+              {isEn ? "Deep Audit" : "Deep Audit"}
             </Link>
             <span aria-hidden="true">•</span>
-            <Link href="/usluge/starter-paket" className="hover:text-accent transition-colors underline">
-              {locale === "en" ? "Kickstart" : "Kickstart"}
-            </Link>
-            <span aria-hidden="true">•</span>
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="hover:text-accent transition-colors underline">
-              {locale === "en" ? "Google Shopping guide" : "Google Shopping vodič"}
+            <Link href="/usluge/konsultacije" className="hover:text-accent transition-colors underline">
+              {isEn ? "Consulting" : "Konsultacije"}
             </Link>
           </div>
         </div>

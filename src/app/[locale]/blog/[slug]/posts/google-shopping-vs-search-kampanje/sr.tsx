@@ -436,8 +436,8 @@ export default function GoogleShoppingVsSearchKampanjeSR() {
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           Prođem kroz vaš katalog, marže i ciljeve i dam konkretan plan - šta pokrenuti danas kroz{" "}
-          <Link href="/usluge/search-kampanje" className="underline text-white hover:text-yellow-400">Search kampanje</Link>, a šta pripremiti za{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping</Link> pre lansiranja u Srbiji.
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="underline text-white hover:text-yellow-400">Search kampanje</Link>, a šta pripremiti za{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-white hover:text-yellow-400">Google Shopping</Link> pre lansiranja u Srbiji.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju

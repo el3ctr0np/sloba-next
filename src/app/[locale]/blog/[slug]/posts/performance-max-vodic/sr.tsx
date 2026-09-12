@@ -769,12 +769,12 @@ export default function PerformanceMaxVodicPost() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/usluge/performance-max" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max usluge</p>
-          <p className="text-xs text-gray-500 mb-0">Profesionalno upravljanje PMax kampanjama</p>
+        <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Upravljanje Google Ads kampanjama</p>
+          <p className="text-xs text-gray-500 mb-0">Profesionalno vođenje PMax i ostalih kampanja</p>
         </Link>
-        <Link href="/usluge/google-shopping" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping usluge</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping - kompletan vodič</p>
           <p className="text-xs text-gray-500 mb-0">Optimizacija Shopping kampanja i product feed-a za bolji ROAS</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

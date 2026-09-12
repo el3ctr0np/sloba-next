@@ -134,11 +134,10 @@
     "description": "Specijalizovane strategije za svaki aspekt digitalnog oglašavanja.",
     "services": {
       "googleAds": "Google Ads",
-      "performanceMax": "Performance Max",
-      "googleShopping": "Google Shopping",
-      "youtubeAds": "YouTube Oglasi",
-      "remarketing": "Remarketing",
-      "performanceMarketing": "Performance Marketing"
+      "ecommerce": "eCommerce Growth",
+      "audit": "Google Ads audit",
+      "consultations": "Konsultacije",
+      "aiAds": "AI oglašavanje"
     },
     "allServices": "Sve usluge →"
   },

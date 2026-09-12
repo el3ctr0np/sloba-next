@@ -437,8 +437,8 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
           I go through your catalog, margins, and goals and give you a concrete plan — what to launch today through{" "}
-          <Link href="/usluge/search-kampanje" className="underline text-white hover:text-yellow-400">Search campaigns</Link>, and what to prepare for{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping</Link> ahead of the Serbian launch.
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="underline text-white hover:text-yellow-400">Search campaigns</Link>, and what to prepare for{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-white hover:text-yellow-400">Google Shopping</Link> ahead of the Serbian launch.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Schedule a free consultation

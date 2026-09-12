@@ -381,8 +381,8 @@ export default function GoogleAdsNovosti2026SR() {
           Pročitaj: Google Shopping Srbija 2026 →
         </Link>
         <p className="text-sm text-slate-400 mt-4 mb-0">
-          Ili zakažite pripremu unapred kroz našu uslugu{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping upravljanja</Link>.
+          Ili pogledajte naš{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-white hover:text-yellow-400">kompletan vodič za Google Shopping</Link>.
         </p>
       </div>
 

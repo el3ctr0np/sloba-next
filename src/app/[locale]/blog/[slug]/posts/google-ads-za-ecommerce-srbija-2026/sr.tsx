@@ -258,9 +258,8 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
       <p>
         Nakon lansiranja Shopping-a, dinamika se menja - Shopping kampanje preuzimaju dominaciju za
         product-first biznise, baš kao što je to slučaj u UK, Nemačkoj i celoj zapadnoj Evropi.
-        Ako želite da vam neko unapred podesi nalog za ovu tranziciju, pogledajte našu uslugu{" "}
-        <Link href="/usluge/google-shopping" className="underline font-medium">Google Shopping upravljanja</Link>.
-        Detaljnu strategiju pripreme možete pronaći u posebnom vodiču:
+        Ako želite detaljnu strategiju pripreme za ovu tranziciju, pogledajte naš{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline font-medium">kompletan vodič za Google Shopping</Link>:
       </p>
 
       <ul>

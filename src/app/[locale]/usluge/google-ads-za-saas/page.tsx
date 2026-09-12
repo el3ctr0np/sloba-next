@@ -843,16 +843,16 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
                 ? "Book a free 20-minute call"
                 : "Zakažite besplatnu konsultaciju"}
             </Button>
-            <Button href="/usluge/search-kampanje" variant="primary">
-              {locale === "en" ? "Search campaigns" : "Search kampanje"}
+            <Button href="/usluge/google-ads-upravljanje" variant="primary">
+              {locale === "en" ? "Google Ads management" : "Google Ads upravljanje"}
             </Button>
           </div>
           <div className="text-sm text-slate-400 space-x-4">
             <Link
-              href="/usluge/remarketing"
+              href="/usluge/google-ads-upravljanje"
               className="hover:text-accent transition-colors underline"
             >
-              {locale === "en" ? "Remarketing" : "Remarketing"}
+              {locale === "en" ? "Campaign management" : "Vođenje kampanja"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link
@@ -863,10 +863,10 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
             </Link>
             <span className="text-slate-600">·</span>
             <Link
-              href="/usluge/search-kampanje"
+              href="/usluge/google-ads-upravljanje"
               className="hover:text-accent transition-colors underline"
             >
-              {locale === "en" ? "Search campaigns" : "Search kampanje"}
+              {locale === "en" ? "Google Ads management" : "Google Ads upravljanje"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link

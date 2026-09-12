@@ -504,8 +504,8 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
               <Button href="/kontakt" variant="secondary">
                 {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
               </Button>
-              <Button href="/usluge/search-kampanje" variant="primary">
-                {locale === "en" ? "Search campaigns" : "Search kampanje"}
+              <Button href="/usluge/google-ads-upravljanje" variant="primary">
+                {locale === "en" ? "Google Ads management" : "Google Ads upravljanje"}
               </Button>
             </div>
           </div>
@@ -810,16 +810,16 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
           <div className="mt-12 pt-8 border-t border-slate-800">
             <p className="text-sm text-slate-400 mb-4">{locale === "en" ? "Related services:" : "Povezane usluge:"}</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link href="/usluge/remarketing" className="text-accent hover:text-accent-dark underline">
-                {locale === "en" ? "Remarketing" : "Remarketing"}
+              <Link href="/usluge/google-ads-upravljanje" className="text-accent hover:text-accent-dark underline">
+                {locale === "en" ? "Campaign management" : "Vođenje kampanja"}
               </Link>
               <span className="text-slate-600">•</span>
               <Link href="/usluge/google-ads-za-saas" className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "Google Ads for SaaS" : "Google Ads za SaaS"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href="/usluge/search-kampanje" className="text-accent hover:text-accent-dark underline">
-                {locale === "en" ? "Search campaigns" : "Search kampanje"}
+              <Link href="/usluge/google-ads-upravljanje" className="text-accent hover:text-accent-dark underline">
+                {locale === "en" ? "Google Ads management" : "Google Ads upravljanje"}
               </Link>
               <span className="text-slate-600">•</span>
               <Link href="/usluge/google-ads-audit" className="text-accent hover:text-accent-dark underline">

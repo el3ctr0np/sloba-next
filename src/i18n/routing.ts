@@ -13,7 +13,9 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
 
-    // Services
+    // Services. Sest stranica ugaseno 12.9.2026 (Q4_SAJT_SPEC.md, talas 4):
+    // search-kampanje, performance-max, google-shopping, remarketing,
+    // youtube-oglasi, performance-marketing. Preusmerenja su u next.config.ts.
     "/usluge": {
       sr: "/usluge",
       en: "/services"
@@ -38,29 +40,9 @@ export const routing = defineRouting({
       sr: "/usluge/starter-paket",
       en: "/services/starter-package"
     },
-    "/usluge/google-shopping": {
-      sr: "/usluge/google-shopping",
-      en: "/services/google-shopping"
-    },
-    "/usluge/performance-max": {
-      sr: "/usluge/performance-max",
-      en: "/services/performance-max"
-    },
     "/usluge/chatgpt-ads": {
       sr: "/usluge/chatgpt-ads",
       en: "/services/chatgpt-ads"
-    },
-    "/usluge/search-kampanje": {
-      sr: "/usluge/search-kampanje",
-      en: "/services/search-campaigns"
-    },
-    "/usluge/remarketing": {
-      sr: "/usluge/remarketing",
-      en: "/services/remarketing"
-    },
-    "/usluge/youtube-oglasi": {
-      sr: "/usluge/youtube-oglasi",
-      en: "/services/youtube-ads"
     },
     "/usluge/google-ads-za-ecommerce": {
       sr: "/usluge/google-ads-za-ecommerce",
@@ -73,10 +55,6 @@ export const routing = defineRouting({
     "/usluge/google-ads-za-saas": {
       sr: "/usluge/google-ads-za-saas",
       en: "/services/google-ads-for-saas"
-    },
-    "/usluge/performance-marketing": {
-      sr: "/usluge/performance-marketing",
-      en: "/services/performance-marketing"
     },
 
     // Contact

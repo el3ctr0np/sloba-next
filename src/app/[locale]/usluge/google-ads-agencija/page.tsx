@@ -934,16 +934,16 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
               <>
                 Google Shopping is arriving in Serbia in the second half of 2026 (Q3 or Q4), and the setup is ready to
                 move on day one.{" "}
-                <Link href="/usluge/google-shopping" className="text-primary-dark underline">
-                  See how we approach Google Shopping →
+                <Link href="/usluge/google-ads-za-ecommerce" className="text-primary-dark underline">
+                  See how we run Google Ads for eCommerce →
                 </Link>
               </>
             ) : (
               <>
                 Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4), a setup je spreman da krene od prvog
                 dana.{" "}
-                <Link href="/usluge/google-shopping" className="text-primary-dark underline">
-                  Vidite kako pristupamo Google Shopping-u →
+                <Link href="/usluge/google-ads-za-ecommerce" className="text-primary-dark underline">
+                  Vidite kako vodim Google Ads za eCommerce →
                 </Link>
               </>
             )}

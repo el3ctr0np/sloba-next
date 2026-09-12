@@ -446,9 +446,9 @@ export default function PerformanceMaxVsStandardShoppingEN() {
           Not sure whether PMax or Standard Shopping fits your account?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          I look at your catalog, margins, conversion volume, and tracking, then tell you exactly what to run — and where a{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping</Link> and{" "}
-          <Link href="/usluge/google-ads-za-ecommerce" className="underline text-white hover:text-yellow-400">eCommerce Google Ads</Link> hybrid would beat either one alone.
+          I look at your catalog, margins, conversion volume, and tracking, then tell you exactly what to run — and where a hybrid drawing on the{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-white hover:text-yellow-400">Google Shopping guide</Link> and our{" "}
+          <Link href="/usluge/google-ads-za-ecommerce" className="underline text-white hover:text-yellow-400">eCommerce Google Ads</Link> service would beat either one alone.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Schedule a free consultation

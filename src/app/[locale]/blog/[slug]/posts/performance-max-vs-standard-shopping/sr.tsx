@@ -445,8 +445,8 @@ export default function PerformanceMaxVsStandardShoppingSR() {
           Niste sigurni da li vam za nalog odgovara PMax ili Standard Shopping?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Pogledam vaš katalog, marže, volumen konverzija i tracking, pa vam kažem tačno šta da vozite - i gde bi hibrid{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping</Link> i{" "}
+          Pogledam vaš katalog, marže, volumen konverzija i tracking, pa vam kažem tačno šta da vozite - i gde bi hibrid taktika iz{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-white hover:text-yellow-400">vodiča za Google Shopping</Link> i naše usluge{" "}
           <Link href="/usluge/google-ads-za-ecommerce" className="underline text-white hover:text-yellow-400">eCommerce Google Ads</Link> pobedio bilo koji od njih sam.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">

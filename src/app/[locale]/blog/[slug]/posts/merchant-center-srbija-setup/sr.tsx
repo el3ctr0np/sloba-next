@@ -554,8 +554,8 @@ export default function MerchantCenterSrbijaSetupSR() {
           Treba vam pomoć oko Merchant Center setup-a?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Prolazim kroz vaš sajt, feed i Merchant Center nalog i dajem konkretan plan pre nego što Shopping zvanično starta u Srbiji - deo naše usluge{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping upravljanja</Link>.
+          Prolazim kroz vaš sajt, feed i Merchant Center nalog i dajem konkretan plan pre nego što Shopping zvanično starta u Srbiji - pogledajte i{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-white hover:text-yellow-400">vodič kroz Google Shopping</Link> za širi kontekst.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju

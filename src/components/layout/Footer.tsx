@@ -12,12 +12,6 @@ export function Footer() {
       { label: t("services.starterPackage"), href: "/usluge/starter-paket" as const },
       { label: t("services.consultations"), href: "/usluge/konsultacije" as const },
       { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" as const },
-      { label: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
-      { label: t("services.performanceMax"), href: "/usluge/performance-max" as const },
-      { label: t("services.searchCampaigns"), href: "/usluge/search-kampanje" as const },
-      { label: t("services.remarketing"), href: "/usluge/remarketing" as const },
-      { label: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" as const },
-      { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const },
       { label: t("services.chatgptAds"), href: "/usluge/chatgpt-ads" as const }
     ],
     industrije: [

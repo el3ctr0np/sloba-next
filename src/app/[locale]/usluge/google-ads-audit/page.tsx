@@ -33,298 +33,161 @@ const personSchema = {
 
 export default async function GoogleAdsAuditPage({ params }: Props) {
   const { locale } = await params;
+  const isEn = locale === "en";
 
-  const problems = locale === "en" ? [
+  const ctaLabel = isEn ? "Schedule a Deep Audit" : "Zakažite Deep Audit";
+
+  const problems = isEn ? [
     {
-      title: "Not sure if campaigns are performing well",
+      title: "Not sure the account is actually working",
       description:
-        "Without deep Google Ads knowledge, it's hard to assess potential for better results and what to change."
-    },
-    {
-      title: "Reports you don't understand",
-      description:
-        "You're getting metrics, but lack clarity on what they mean for your business and profitability."
+        "Reports arrive, but they don't tell you what the metrics mean for profit or what needs to change."
     },
     {
       title: "Costs rising, results stagnating",
       description:
-        "CPC is increasing, ROAS is declining, and the cause and solution aren't clear. Campaigns run but aren't profitable."
+        "CPC is climbing, ROAS is falling, and neither the cause nor the fix are clear. Campaigns run, but profit doesn't follow."
     },
     {
-      title: "Need a second opinion",
+      title: "You need a second opinion",
       description:
-        "Planning a bigger investment and want validation before scaling budget or switching to a new agency."
+        "Planning a bigger budget or a switch in agencies, and want a check before you decide."
     }
   ] : [
     {
-      title: "Ne znate da li kampanje rade kako treba",
+      title: "Ne znate da li nalog stvarno radi kako treba",
       description:
-        "Bez dubinskog razumevanja Google Ads-a teško je proceniti potencijal za bolje rezultate i šta menjati."
-    },
-    {
-      title: "Izveštaji koje ne razumete",
-      description:
-        "Dobijate metrike, ali nemate jasnu sliku šta to znači za vaš biznis i profitabilnost."
+        "Izveštaji stižu, ali vam ne daju jasnu sliku šta metrike znače za profit ni šta bi trebalo da se promeni."
     },
     {
       title: "Troškovi rastu, rezultati stagniraju",
       description:
-        "CPC raste, ROAS pada, a uzrok i rešenje nisu jasni. Kampanje rade ali nisu profitabilne."
+        "CPC raste, ROAS pada, a uzrok i rešenje nisu jasni. Kampanje rade, ali profit ne prati."
     },
     {
       title: "Treba vam second opinion",
       description:
-        "Planirate veću investiciju i želite proveru pre skaliranja budžeta ili prelaska na novu agenciju."
+        "Planirate veći budžet ili promenu agencije i želite proveru pre nego što odlučite."
     }
   ];
 
-  const auditAreas = locale === "en" ? [
-    {
-      title: "Account structure",
-      description:
-        "Analysis of campaigns, ad groups, keywords, match types, and negative keywords. Identifying structural issues that increase CPC."
-    },
-    {
-      title: "Ads and extensions",
-      description:
-        "Review of ad copy, responsive search ads variations, ad extensions, and alignment with landing pages."
-    },
-    {
-      title: "Bid strategies and budget",
-      description:
-        "Alignment of bid strategies with goals, budget pacing, daily limits, and their impact on performance."
-    },
-    {
-      title: "Conversion tracking",
-      description:
-        "Verification of correct conversion tracking, duplicates, tracking gaps, and attribution model."
-    },
-    {
-      title: "Audience and targeting",
-      description:
-        "Remarketing lists, demographic targeting, geo targeting, targeting settings, and audience signals."
-    },
-    {
-      title: "Shopping / Performance Max",
-      description:
-        "Feed quality, asset groups, audience signals, product optimization, and bid strategies for eCommerce."
-    }
+  const deliverables = isEn ? [
+    "Prioritized recommendations - Quick Wins and Long-term, ranked by impact on profit, not alphabetically.",
+    "Analysis of account structure, bidding strategies, conversion tracking and, for eCommerce, the Shopping/PMax feed.",
+    "Screenshots of the actual issues and concrete action items - not generic advice you already know.",
+    "A video walkthrough (optional) and a live call for questions."
   ] : [
-    {
-      title: "Struktura naloga",
-      description:
-        "Analiza kampanja, ad grupa, ključnih reči, match types i negativnih reči. Identifikacija strukturnih problema koji povećavaju CPC."
-    },
-    {
-      title: "Oglasi i ekstenzije",
-      description:
-        "Pregled ad copy-ja, responsive search ads varijacija, ad extensions i alignment sa landing stranicama."
-    },
-    {
-      title: "Bid strategije i budžet",
-      description:
-        "Usklađenost bid strategija sa ciljevima, budget pacing, dnevni limiti i njihov uticaj na performanse."
-    },
-    {
-      title: "Conversion tracking",
-      description:
-        "Provera da li se prate prave konverzije, duplikati, propusti u praćenju i attribution model."
-    },
-    {
-      title: "Audience i targeting",
-      description:
-        "Remarketing liste, demografski targeting, geo targeting, targeting podešavanja i audience signali."
-    },
-    {
-      title: "Shopping / Performance Max",
-      description:
-        "Feed kvalitet, asset grupe, audience signali, optimizacija proizvoda i bid strategije za eCommerce."
-    }
+    "Prioritizovane preporuke - Quick Wins i Long-term, rangirano po uticaju na profit, ne po abecedi.",
+    "Analizu strukture naloga, bidding strategija, conversion trackinga i, za eCommerce, Shopping/PMax feed-a.",
+    "Screenshot-ove problema i konkretne action items - ne opšte savete koje već znate.",
+    "Video walkthrough (opciono) i live poziv za pitanja i nejasnoće."
   ];
 
-  const deliverables = locale === "en" ? [
-    {
-      title: "PDF or Google Doc report",
-      items: [
-        "Prioritized recommendations (Quick Wins vs Long-term)",
-        "Concrete action items with explanations",
-        "Executive summary with key findings",
-        "Screenshots of issues and examples"
-      ]
-    },
-    {
-      title: "Video walkthrough (optional)",
-      items: [
-        "Recorded report walkthrough (15-20min)",
-        "Live Q&A call for questions and clarifications",
-        "Step-by-step implementation guidelines"
-      ]
-    }
-  ] : [
-    {
-      title: "PDF ili Google Doc izveštaj",
-      items: [
-        "Prioritizovane preporuke (Quick Wins vs Long-term)",
-        "Konkretni action items sa objašnjenjima",
-        "Executive summary sa ključnim nalazima",
-        "Screenshot-ovi problema i primerima"
-      ]
-    },
-    {
-      title: "Video walkthrough (opciono)",
-      items: [
-        "Snimak prolaska kroz izveštaj (15-20min)",
-        "Live Q&A poziv za pitanja i nejasnoće",
-        "Implementacione smernice po koracima"
-      ]
-    }
-  ];
-
-  const processSteps = locale === "en" ? [
+  const processSteps = isEn ? [
     {
       number: 1,
       title: "Access and kickoff call",
       description:
-        "I get read-only access to Google Ads and GA4, plus a brief call about goals, priorities, and business context."
+        "Read-only access to Google Ads and GA4, plus a short call about goals and priorities."
     },
     {
       number: 2,
-      title: "In-depth analysis (3-5 days)",
+      title: "In-depth analysis",
       description:
-        "Detailed account review, identifying problems and opportunities. Analysis includes structure, bidding, tracking, and competition."
+        "I go through structure, search terms, bidding, tracking, and competition myself - not an automated tool that just spits out numbers."
     },
     {
       number: 3,
       title: "Report and presentation",
       description:
-        "Complete PDF report with prioritized recommendations, plus optional video walkthrough or live Q&A call."
+        "A written, prioritized plan, plus an optional video walkthrough and live Q&A call."
     }
   ] : [
     {
       number: 1,
       title: "Pristup i kickoff poziv",
       description:
-        "Dobijam read-only pristup Google Ads i GA4, plus kratak poziv o ciljevima, prioritetima i kontekstu poslovanja."
+        "Read-only pristup Google Ads i GA4 nalogu, plus kratak poziv o ciljevima i prioritetima."
     },
     {
       number: 2,
-      title: "Dubinska analiza (3-5 dana)",
+      title: "Dubinska analiza",
       description:
-        "Detaljan pregled naloga, identifikacija problema i prilika. Analiza uključuje strukturu, bidding, tracking, konkurenciju."
+        "Prolazim strukturu, search termine, bidding, tracking i konkurenciju lično - ne automatizovan alat koji samo izbacuje brojke."
     },
     {
       number: 3,
       title: "Izveštaj i prezentacija",
       description:
-        "Kompletan PDF izveštaj sa prioritetnim preporukama, uz opcioni video walkthrough ili live poziv za Q&A."
+        "Pisan plan sa prioritetima, uz opcioni video walkthrough i live poziv za pitanja."
     }
   ];
 
-  const faqs = locale === "en" ? [
-    {
-      question: "How long does a complete audit take?",
-      answer:
-        "From receiving access to final report typically takes 5-7 business days. For more complex accounts (over $5,000 spend), it may take up to 10 days."
-    },
+  const faqs = isEn ? [
     {
       question: "Do you need access to my Google Ads account?",
       answer:
         "Yes, I need read-only access (Viewer role). I don't change anything in your account without your approval — the audit is purely analytical."
     },
     {
-      question: "Can I implement the recommendations myself?",
+      question: "How much does the Deep Audit + Action Plan cost?",
       answer:
-        "Absolutely. The report is written so you or your team can implement recommendations independently, step by step. It includes priority ranking by impact."
+        "$500 for accounts up to about $5,000 in monthly spend. Larger or multi-channel accounts get custom pricing on request. It's a one-time fee, credited toward your first month of management if we start within 30 days."
     },
     {
       question: "What if I want you to take over management after the audit?",
       answer:
-        "The audit fee is credited toward your first month of management if you decide to work together within 30 days. The audit gives me a complete picture of your account before taking over."
+        "The audit fee is credited toward your first month of management if we decide to work together within 30 days. The audit gives me a complete picture of your account before taking over."
     },
     {
-      question: "I work with an agency - do they need to know about the audit?",
+      question: "What's the difference between an audit from an agency and an independent consultant?",
       answer:
-        "That's your decision. Some clients use the audit as a basis for conversation with their agency, others as preparation for a change. The audit is neutral and data-driven."
-    },
-    {
-      question: "What if I don't have active campaigns yet?",
-      answer:
-        "The audit is designed for existing accounts with active campaigns. For new accounts, I recommend going directly to strategy and setup through the management service."
-    },
-    {
-      question: "How much does the Deep Audit + Action Plan cost?",
-      answer:
-        "The Deep Audit + Action Plan starts at $500 for accounts up to ~$5,000 monthly spend. Larger or multi-channel accounts get custom pricing on request. It's a one-time fee, and it's credited toward your first month of management if we start within 30 days."
+        "An agency audit often doubles as a sales pitch for their own management service. My audit is independent — I have no incentive to recommend unnecessary changes, and you can take the report to any agency or your in-house team."
     },
     {
       question: "Do you audit accounts with small ad budgets?",
       answer:
-        "Yes. Even a small budget benefits from an audit if you're unsure why campaigns aren't converting. For very small budgets, a consultation session might be a more cost-effective starting point — I'll tell you honestly which fits better. If you just want a quick gut check, the free 15-minute video review is also worth considering first."
+        "The audit pays off from roughly $5,000 in monthly spend upward. For smaller budgets, a consultation session is usually the better starting point — I'll tell you honestly which fits."
     },
     {
-      question: "What's the difference between an audit from an agency versus an independent consultant?",
+      question: "What if I just want a quick check before a full audit?",
       answer:
-        "An agency audit often doubles as a sales pitch for their own management service. An independent audit from me is neutral — I have no incentive to recommend unnecessary changes, and you can take the report to any agency or your in-house team."
+        "There's a free 15-minute video review for qualified accounts — a lighter, teaser-level look, not a full plan."
     }
   ] : [
     {
-      question: "Koliko traje kompletan audit?",
+      question: "Da li mi treba pristup Google Ads nalogu?",
       answer:
-        "Od dobijanja pristupa do finalnog izveštaja obično prođe 5-7 radnih dana. Za složenije naloge (preko €5,000 spend-a) može trajati do 10 dana."
-    },
-    {
-      question: "Da li mi treba pristup Google Ads-u?",
-      answer:
-        "Da, potreban mi je read-only pristup (Viewer role). Ne menjam ništa u nalogu bez vašeg odobrenja - audit je čisto analitički."
-    },
-    {
-      question: "Da li mogu sam da implementiram preporuke?",
-      answer:
-        "Apsolutno. Izveštaj je napisan tako da vi ili vaš tim možete samostalno da implementirate preporuke, korak po korak. Uključuje i prioritet po impact-u."
-    },
-    {
-      question: "Šta ako želim da preuzmete upravljanje nakon audita?",
-      answer:
-        "Cena audita se uračunava u prvi mesec upravljanja ako se odlučite za saradnju u roku od 30 dana. Audit mi daje kompletnu sliku vašeg naloga pre preuzimanja."
-    },
-    {
-      question: "Radim sa agencijom - da li oni treba da znaju za audit?",
-      answer:
-        "To je vaša odluka. Neki klijenti koriste audit kao osnovu za razgovor sa agencijom, drugi kao pripremu za promenu. Audit je neutralan i data-driven."
-    },
-    {
-      question: "Šta ako nemam aktivne kampanje već?",
-      answer:
-        "Audit je namenjen postojećim nalozima sa aktivnim kampanjama. Za nove naloge preporučujem direktno strategiju i setup kroz uslugu upravljanja."
+        "Da, treba mi read-only pristup (Viewer role). Ne menjam ništa u nalogu bez vašeg odobrenja - audit je čisto analitički."
     },
     {
       question: "Koliko košta Deep Audit + Action Plan?",
       answer:
-        "Deep Audit + Action Plan počinje od €450 za naloge do ~€5.000 mesečnog spend-a. Veći ili multi-channel nalozi dobijaju cenu na upit. Jednokratna je i uračunava se u prvi mesec upravljanja ako krenemo u saradnju u roku od 30 dana."
+        "€450 za naloge do oko €5.000 mesečnog spend-a. Veći ili multi-channel nalozi dobijaju cenu na upit. Jednokratna je i uračunava se u prvi mesec upravljanja ako krenemo u saradnju u roku od 30 dana."
     },
     {
-      question: "Da li radite audit i za male ad budžete?",
+      question: "Šta ako želim da preuzmete upravljanje posle audita?",
       answer:
-        "Da. Čak i mali budžet ima koristi od audita ako niste sigurni zašto kampanje ne konvertuju. Za veoma male budžete, konsultacija može biti isplativiji početak - iskreno ću vam reći šta vam više odgovara. Ako vam treba samo brza provera, razmislite prvo o besplatnom 15-minutnom video pregledu."
+        "Cena audita se uračunava u prvi mesec upravljanja ako se odlučite za saradnju u roku od 30 dana. Audit mi daje kompletnu sliku vašeg naloga pre preuzimanja."
     },
     {
       question: "Koja je razlika između audita od agencije i nezavisnog konsultanta?",
       answer:
-        "Audit od agencije često je zapravo prodajni pitch za njihovu uslugu upravljanja. Moj nezavisni audit je neutralan - nemam interes da preporučim nepotrebne izmene, a izveštaj možete odneti bilo kojoj agenciji ili svom internom timu."
+        "Audit od agencije često je i prodajni pitch za njihovu uslugu upravljanja. Moj audit je nezavisan - nemam interes da preporučim nepotrebne izmene, a izveštaj možete odneti bilo kojoj agenciji ili internom timu."
     },
     {
-      question: "Koliko košta Google Ads audit?",
+      question: "Da li radite audit i za male ad budžete?",
       answer:
-        "Zavisi od veličine naloga - Deep Audit + Action Plan počinje od €450 za naloge do ~€5.000 mesečnog spend-a, a veći ili multi-channel nalozi dobijaju cenu na upit. Jednokratna je i uračunava se u prvi mesec upravljanja ako krenemo u saradnju u roku od 30 dana."
+        "Audit se isplati od oko €5.000 mesečnog spend-a naviše. Za manje budžete konsultacija je obično isplativiji početak - reći ću vam iskreno šta vam više odgovara."
     },
     {
-      question: "Šta dobijam u auditu?",
+      question: "Šta ako mi treba samo brza provera pre punog audita?",
       answer:
-        "PDF izveštaj sa prioritizovanim preporukama (Quick Wins i Long-term), konkretnim action items sa objašnjenjima i screenshot-ovima problema. Opciono i video walkthrough od 15-20 minuta uz live poziv za pitanja i nejasnoće."
+        "Za to postoji besplatan 15-minutni video pregled za kvalifikovane naloge - lakši, teaser nivo, ne kompletan plan."
     }
   ];
 
-  const serviceSchema = locale === "en" ? {
+  const serviceSchema = isEn ? {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Deep Audit + Action Plan",
@@ -418,30 +281,23 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "en" ? "Home" : "Početna",
+        name: isEn ? "Home" : "Početna",
         item: "https://www.slobodan-jelisavac.com"
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "en" ? "Services" : "Usluge",
-        item: locale === "en" ? "https://www.slobodan-jelisavac.com/en/services" : "https://www.slobodan-jelisavac.com/sr/usluge"
+        name: isEn ? "Services" : "Usluge",
+        item: isEn ? "https://www.slobodan-jelisavac.com/en/services" : "https://www.slobodan-jelisavac.com/sr/usluge"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Deep Audit + Action Plan",
-        item: locale === "en" ? "https://www.slobodan-jelisavac.com/en/services/google-ads-audit" : "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-audit"
+        item: isEn ? "https://www.slobodan-jelisavac.com/en/services/google-ads-audit" : "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-audit"
       }
     ]
   };
-
-  // Real, consent-approved client quotes only. Leave EMPTY until a client has
-  // explicitly approved a quote for public use. The testimonials section below
-  // renders NOTHING while this array is empty — no placeholder/fake text ships.
-  // TODO: real client quote pending consent — add objects of the shape:
-  // { quote: string; author: string; role: string } (localized as needed).
-  const testimonials: { quote: string; author: string; role: string }[] = [];
 
   return (
     <>
@@ -462,77 +318,83 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Hero — dark with breadcrumb */}
+      {/* Hero — kome je namenjeno, šta se dešava kad me angažujete, jedan dokaz */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* Breadcrumb */}
           <nav className="mb-8 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 text-slate-400">
               <li>
-                <Link
-                  href="/"
-                  className="hover:text-white transition-colors"
-                >
-                  {locale === "en" ? "Home" : "Početna"}
+                <Link href="/" className="hover:text-white transition-colors">
+                  {isEn ? "Home" : "Početna"}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li>
-                <Link
-                  href="/usluge"
-                  className="hover:text-white transition-colors"
-                >
-                  {locale === "en" ? "Services" : "Usluge"}
+                <Link href="/usluge" className="hover:text-white transition-colors">
+                  {isEn ? "Services" : "Usluge"}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="text-accent font-medium">
-                {locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan"}
-              </li>
+              <li className="text-accent font-medium">Deep Audit + Action Plan</li>
             </ol>
           </nav>
 
           <div className="grid lg:grid-cols-[1.2fr_0.8fr] lg:gap-12 items-center">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                {locale === "en"
+                {isEn
                   ? "Deep Audit + Action Plan — I'll find where your account is losing money"
                   : "Deep Audit + Action Plan - pronaći ću gde vaš nalog gubi novac"}
               </h1>
               <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-                {locale === "en"
-                  ? "In ten years I've been through 50+ Google Ads accounts, and almost every one had budget quietly leaking — into search terms, products, or audiences that never turn a profit. I do the audit personally: structure, search terms, tracking, and margins — then hand you a prioritized plan: what to kill, what to scale, and what it's worth in money."
-                  : "Za deset godina prošao sam kroz više od 50 Google Ads naloga i gotovo svaki je imao deo budžeta koji tiho curi - na termine, proizvode ili publike bez profita. Audit radim lično: prolazim strukturu, search termine, tracking i marže, pa vam predam plan sa prioritetima - šta gasiti, šta pojačati i koliko to vredi u novcu."}
+                {isEn ? (
+                  <>
+                    If you&apos;re spending more than $5,000 a month on Google Ads and can&apos;t
+                    tell where the budget disappears, this is for you — below that spend, a
+                    consultation session is usually the better start. You get read-only access to
+                    the account and a short call about goals, then I go through structure, search
+                    terms, tracking, and margins myself — not a tool that just spits out metrics.
+                    What comes back is a written, prioritized plan: what to kill, what to scale,
+                    and what actually moves profit. Across the accounts I manage, average ROAS
+                    runs at 3.7x for eCommerce — the audit applies the same lens to yours.
+                  </>
+                ) : (
+                  <>
+                    Ako mesečno trošite više od €5.000 na Google Ads i niste sigurni gde tačno
+                    odlazi budžet, audit je za vas - ispod te cifre se obično više isplati
+                    konsultacija. Angažovanjem dobijate read-only pristup nalogu i kratak poziv o
+                    ciljevima, pa lično prolazim strukturu, search termine, tracking i marže - ne
+                    alat koji samo izbacuje metrike. Rezultat je pisan plan sa prioritetima: šta
+                    gasiti, šta pojačati, šta zapravo pomera profit. U nalozima koje vodim
+                    prosečan ROAS je 3.7x za eCommerce - audit primenjuje istu logiku na vaš nalog.
+                  </>
+                )}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button href="/kontakt" variant="secondary">
-                  {locale === "en" ? "Schedule a Deep Audit" : "Zakažite Deep Audit"}
+                  {ctaLabel}
                 </Button>
                 <Link
                   href="/usluge/google-ads-upravljanje"
                   className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
                 >
-                  {locale === "en"
-                    ? "Or check out management services →"
-                    : "Ili pogledajte uslugu upravljanja →"}
+                  {isEn ? "Or check out management services →" : "Ili pogledajte uslugu upravljanja →"}
                 </Link>
               </div>
 
-              {/* Trust badges */}
               <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-                <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
-                <span>{locale === "en" ? "3x UK Search Awards" : "3x UK Search Awards"}</span>
-                <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
+                <span>{isEn ? "10+ years of experience" : "10+ godina iskustva"}</span>
+                <span>3x UK Search Awards</span>
+                <span>{isEn ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
               </div>
             </div>
 
-            {/* Right: Photo */}
             <div className="hidden lg:flex items-center justify-center">
               <div className="w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/foto/slobodan-jelisavac-google-ads-audit.webp"
-                  alt={locale === "en" ? "Slobodan Jelisavac taking a close look at where an account loses money" : "Slobodan Jelisavac izbliza traži gde nalog gubi novac"}
+                  alt={isEn ? "Slobodan Jelisavac taking a close look at where an account loses money" : "Slobodan Jelisavac izbliza traži gde nalog gubi novac"}
                   width={800}
                   height={1000}
                   className="w-full h-full object-cover rounded-2xl"
@@ -544,388 +406,134 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         </div>
       </section>
 
-      {/* SEO Intro */}
-      <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            {locale === "en" ? (
-              <>
-                <strong>Deep Audit + Action Plan</strong> is an in-depth analysis of your account that
-                identifies problems, missed opportunities, and concrete actions to improve
-                performance. Unlike automated tools that just output metrics, a professional
-                audit considers your business model, industry, and goals.
-              </>
-            ) : (
-              <>
-                <strong>Deep Audit + Action Plan</strong> je dubinska analiza vašeg naloga koja
-                identifikuje probleme, propuštene prilike i konkretne akcije za poboljšanje
-                performansi. Za razliku od automatizovanih alata koji samo izbacuju metrike,
-                profesionalni audit uzima u obzir vaš biznis model, industriju i ciljeve.
-              </>
-            )}
-          </p>
-          <p className="text-gray-600 text-base leading-relaxed">
-            {locale === "en" ? (
-              <>
-                With over a decade of experience managing Google Ads campaigns for brands
-                across the UK, Germany, Croatia, and beyond, I help companies identify
-                exactly where they're spending money without results — and how to fix it. The audit is
-                ideal for those seeking a second opinion, preparing to scale, or looking for
-                reasons behind poor performance.
-              </>
-            ) : (
-              <>
-                Sa preko decenije iskustva u vođenju Google Ads kampanja za brendove
-                u Srbiji, UK, Nemačkoj i Hrvatskoj, pomažem kompanijama da identifikuju
-                tačno gde se troši novac bez rezultata - i kako to popraviti. Audit je
-                idealan za one koji žele second opinion, pripremaju skaliranje ili traže
-                razlog za loše performanse.
-              </>
-            )}
-          </p>
-        </div>
-      </section>
-
-      {/* Cross-link — which analysis do you need */}
-      <section className="py-10 px-4 md:px-8 bg-white border-b border-gray-100">
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-6">
-            <h3 className="font-heading font-bold text-lg mb-3">
-              {locale === "en" ? "Which analysis do you need?" : "Koja analiza vam treba?"}
-            </h3>
-            <p className="text-gray-600 text-base leading-relaxed">
-              {locale === "en" ? (
-                <>
-                  <strong>Deep Audit + Action Plan</strong> (this page, from $500) is a paid,
-                  complete review with a written action plan you can implement yourself or hand
-                  to your team. If you just want a quick gut check first, there's also a{" "}
-                  <Link href="/audit" className="text-primary underline">
-                    free 15-minute video review
-                  </Link>{" "}
-                  for qualified accounts — a lighter, teaser-level look, not a full plan.
-                </>
-              ) : (
-                <>
-                  <strong>Deep Audit + Action Plan</strong> (ova stranica, od €450) je plaćena,
-                  kompletna analiza sa pisanim akcionim planom koji možete sami da implementirate
-                  ili predate svom timu. Ako želite prvo brzu proveru, tu je i{" "}
-                  <Link href="/audit" className="text-primary underline">
-                    besplatan 15-minutni video pregled
-                  </Link>{" "}
-                  za kvalifikovane naloge - lakši, teaser nivo, ne kompletan plan.
-                </>
-              )}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Problems — PAS framework */}
+      {/* Problem — tri stavke */}
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Why you need an independent Google Ads audit"
-              : "Zašto vam treba nezavisan Google Ads audit"}
+            {isEn ? "Why owners ask for an independent audit" : "Zašto vlasnici traže nezavisan audit"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Most companies who come to me for an audit face similar campaign challenges."
-              : "Većina kompanija koje dolaze do mene za audit imaju slične izazove sa kampanjama."}
-          </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {problems.map((problem) => (
             <Card key={problem.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {problem.title}
-              </h3>
+              <h3 className="text-lg font-heading font-semibold mb-2">{problem.title}</h3>
               <p className="text-gray-600 text-base">{problem.description}</p>
             </Card>
           ))}
         </div>
       </Section>
 
-      {/* Audit areas */}
+      {/* Šta dobijate — numerisano */}
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "What a Google Ads audit covers"
-              : "Šta pokriva Google Ads audit"}
+            {isEn ? "What you get" : "Šta dobijate"}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Focus on key account areas that directly impact ROAS, CPA, and campaign profitability."
-              : "Fokus na ključne delove naloga koji direktno utiču na ROAS, CPA i profitabilnost kampanja."}
+            {isEn
+              ? "A complete report you can implement yourself or hand to your team:"
+              : "Kompletan izveštaj koji možete sami da implementirate ili predate timu:"}
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {auditAreas.map((area) => (
-            <Card key={area.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {area.title}
-              </h3>
-              <p className="text-gray-600 text-base">{area.description}</p>
-            </Card>
+        <ol className="max-w-2xl mx-auto space-y-4">
+          {deliverables.map((item, index) => (
+            <li key={item} className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+              <span className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center text-sm font-bold font-heading">
+                {index + 1}
+              </span>
+              <p className="text-gray-700 text-base">{item}</p>
+            </li>
           ))}
-        </div>
+        </ol>
       </Section>
 
-      {/* Deliverables */}
+      {/* Dokaz — slučaj iz prakse (NDA: bez imena i apsolutnih cifara) */}
       <Section>
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "What you get after the audit"
-              : "Šta dobijate nakon audita"}
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-heading font-bold mb-6">
+            {isEn ? "Proof from the field" : "Dokaz iz prakse"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Complete report with prioritized recommendations and concrete action items you can implement immediately."
-              : "Kompletan izveštaj sa prioritetnim preporukama i konkretnim action items koje možete implementirati odmah."}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {deliverables.map((block) => (
-            <Card key={block.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-4">
-                {block.title}
-              </h3>
-              <ul className="space-y-2 text-gray-600 text-sm">
-                {block.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5 flex-shrink-0">
-                      ✓
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          ))}
+          <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-6 md:p-8 text-left">
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+              {isEn ? (
+                <>
+                  For one UK Shopping client, the audit uncovered structural issues in the feed
+                  and bidding logic. After the changes, POAS held at <strong>1.78x</strong> across
+                  more than <strong>two years</strong> of work together, on{" "}
+                  <strong>six-figure revenue (GBP)</strong>. I don&apos;t share the client&apos;s name or
+                  exact revenue publicly — NDA — but I apply the same approach to every account I
+                  analyze.
+                </>
+              ) : (
+                <>
+                  Kod jednog UK Shopping klijenta audit je otkrio strukturne probleme u feedu i
+                  bidding logici. Posle promena POAS je držan na <strong>1.78x</strong> kroz više
+                  od <strong>dve godine</strong> saradnje, uz <strong>šestocifren prihod u
+                  funtama</strong>. Ime klijenta i tačnu cifru prihoda ne delim javno - NDA - ali
+                  istu logiku primenjujem na svaki nalog koji analiziram.
+                </>
+              )}
+            </p>
+          </div>
         </div>
       </Section>
 
-      {/* Testimonials — renders ONLY when real, consent-approved quotes exist.
-          Positioned between "What a Google Ads audit covers" and "What you get".
-          Empty `testimonials` array => this whole block returns null (nothing
-          ships). Do NOT add placeholder/fake quotes here. */}
-      {testimonials.length > 0 && (
-        <Section>
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-heading font-bold mb-4">
-              {locale === "en"
-                ? "What clients say"
-                : "Šta kažu klijenti"}
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {testimonials.map((t) => (
-              <Card key={t.author} className="h-full">
-                <p className="text-gray-700 text-base leading-relaxed mb-4">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <p className="text-sm font-heading font-semibold text-gray-900">
-                  {t.author}
-                </p>
-                <p className="text-xs text-gray-500">{t.role}</p>
-              </Card>
-            ))}
-          </div>
-        </Section>
-      )}
-
-      {/* Process — sequential vertical stack */}
+      {/* Cena i proces — vidljivo */}
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "How the audit process works"
-              : "Kako izgleda proces audita"}
+            {isEn ? "Pricing and how the process works" : "Cena i kako izgleda proces"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "From access to final report — simple and transparent 3-step process."
-              : "Od pristupa do finalnog izveštaja - jednostavan i transparentan proces u 3 koraka."}
-          </p>
         </div>
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-4">
-            {processSteps.map((step, index) => (
-              <div
-                key={step.title}
-                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
-              >
-                <span
-                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
-                    index === processSteps.length - 1
-                      ? "bg-accent text-gray-900"
-                      : "bg-slate-900 text-white"
-                  }`}
-                >
-                  {step.number}
-                </span>
-                <div>
-                  <h3 className="font-heading font-semibold text-lg mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 text-base">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
 
-      {/* Pricing */}
-      <Section>
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Deep Audit + Action Plan pricing"
-              : "Cena Deep Audit + Action Plan"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en" ? (
-              <>
-                Transparent pricing based on account complexity and monthly ad spend,
-                credited toward your first month of management if we start within 30 days.
-              </>
-            ) : (
-              <>
-                Transparentne cene zasnovane na složenosti naloga i mesečnom ad
-                spend-u, uračunava se u prvi mesec upravljanja ako krenemo u saradnju
-                u roku od 30 dana.
-              </>
-            )}
-          </p>
-        </div>
-        <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {/* Standard audit */}
-          <div className="bg-white border-2 border-accent rounded-lg p-6 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-accent text-gray-900 text-xs font-bold px-3 py-1 rounded-md">
-              {locale === "en" ? "Most Popular" : "Najpopularniji"}
-            </span>
-            <h3 className="text-xl font-heading font-bold mb-2">
-              {locale === "en"
-                ? "Deep Audit + Action Plan"
-                : "Deep Audit + Action Plan"}
-            </h3>
-            <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "from $500" : "od €450"}
+        <div className="max-w-xl mx-auto mb-12">
+          <div className="bg-white border-2 border-accent rounded-lg p-6 md:p-8 shadow-card">
+            <h3 className="text-xl font-heading font-bold mb-2">Deep Audit + Action Plan</h3>
+            <p className="text-3xl font-heading font-bold text-primary mb-4">
+              {isEn ? "$500" : "€450"}
             </p>
             <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "For accounts up to ~$5,000 monthly spend. Complete review of structure, ads, bidding strategies, tracking, audiences, and Shopping/PMax campaigns. PDF report + video walkthrough."
-                : "Za naloge do ~€5.000 mesečnog spend-a. Kompletan pregled strukture, oglasa, bidding strategija, tracking-a, audience-a i Shopping/PMax kampanja. Izveštaj u PDF formatu + video walkthrough."}
+              {isEn ? (
+                <>
+                  For accounts up to about $5,000 in monthly spend. Larger or multi-channel
+                  accounts get custom pricing on request. The fee is credited toward your first
+                  month of management if we start working together within 30 days.
+                </>
+              ) : (
+                <>
+                  Za naloge do oko €5.000 mesečnog spend-a. Veći ili multi-channel nalozi
+                  dobijaju cenu na upit. Cena se uračunava u prvi mesec upravljanja ako krenemo u
+                  saradnju u roku od 30 dana.
+                </>
+              )}
             </p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Analysis of all relevant account areas"
-                  : "Analiza svih relevantnih oblasti naloga"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Prioritized recommendations (Quick Wins + Long-term)"
-                  : "Prioritizovane preporuke (Quick Wins + Long-term)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "PDF report with screenshots and action items"
-                  : "PDF izveštaj sa screenshot-ovima i action items"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Video walkthrough (15-20min)"
-                  : "Video walkthrough (15-20min)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Delivery in 5-7 business days"
-                  : "Isporuka za 5-7 radnih dana"}
-              </li>
-            </ul>
             <Button href="/kontakt" variant="secondary" className="w-full">
-              {locale === "en"
-                ? "Schedule Deep Audit"
-                : "Zakažite Deep Audit"}
-            </Button>
-          </div>
-
-          {/* Custom audit */}
-          <div className="bg-slate-900 text-white border-2 border-slate-700 rounded-lg p-6 shadow-card">
-            <h3 className="text-xl font-heading font-bold mb-2">
-              {locale === "en"
-                ? "Custom audit (on request)"
-                : "Custom audit (na upit)"}
-            </h3>
-            <p className="text-2xl font-heading font-bold text-accent mb-3">
-              {locale === "en" ? "Pricing on request" : "Cena na upit"}
-            </p>
-            <p className="text-slate-300 text-sm mb-4">
-              {locale === "en"
-                ? "For large and complex accounts with ad spend over $5,000/month. Multi-channel audit (Google + Meta + Microsoft), deeper analysis, strategic recommendations for scaling. Premium reporting and live Q&A session."
-                : "Za velike i složene naloge sa ad spend-om preko €5.000/mesečno. Multi-channel audit (Google + Meta + Microsoft), dublja analiza, strategijske preporuke za skaliranje. Premium reporting i live Q&A sesija."}
-            </p>
-            <ul className="space-y-2 text-sm text-slate-300 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Multi-channel analysis (Google, Meta, Microsoft)"
-                  : "Multi-channel analiza (Google, Meta, Microsoft)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Deeper competitive and market analysis"
-                  : "Dublja analiza konkurencije i tržišta"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Strategic recommendations for scaling"
-                  : "Strategijske preporuke za skaliranje"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Live presentation + Q&A session"
-                  : "Live prezentacija + Q&A sesija"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Premium reporting with detailed charts"
-                  : "Premium reporting sa detaljnim grafovima"}
-              </li>
-            </ul>
-            <Button href="/kontakt" variant="primary" className="w-full">
-              {locale === "en"
-                ? "Contact me for custom audit"
-                : "Kontaktirajte me za custom audit"}
+              {ctaLabel}
             </Button>
           </div>
         </div>
 
-        {/* Discount note */}
-        <div className="max-w-3xl mx-auto mt-8">
-          <div className="bg-yellow-50 border-2 border-accent rounded-xl p-5">
-            <p className="text-base text-gray-700 font-medium">
-              <span className="font-heading font-bold text-gray-900">
-                {locale === "en" ? "Bonus:" : "Bonus:"}
-              </span>{" "}
-              {locale === "en"
-                ? "The audit fee is credited toward your first month of management if you decide to work together within 30 days. The audit gives me a complete picture of your account before taking over, so I use it as a foundation for strategy."
-                : "Cena audita se uračunava u prvi mesec upravljanja ako se odlučite za saradnju u roku od 30 dana. Audit mi daje kompletnu sliku vašeg naloga pre preuzimanja, pa ga koristim kao osnovu za strategiju."}
-            </p>
-          </div>
+        <div className="max-w-3xl mx-auto space-y-4">
+          {processSteps.map((step, index) => (
+            <div
+              key={step.title}
+              className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
+            >
+              <span
+                className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
+                  index === processSteps.length - 1
+                    ? "bg-accent text-gray-900"
+                    : "bg-slate-900 text-white"
+                }`}
+              >
+                {step.number}
+              </span>
+              <div>
+                <h3 className="font-heading font-semibold text-lg mb-1">{step.title}</h3>
+                <p className="text-gray-600 text-base">{step.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </Section>
 
@@ -934,13 +542,11 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         locale={locale}
       />
 
-      {/* FAQ — accordion */}
+      {/* Pitanja koja se stvarno postavljaju */}
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Frequently asked questions about Google Ads audits"
-              : "Često postavljana pitanja o Google Ads auditu"}
+            {isEn ? "Questions people actually ask" : "Pitanja koja se stvarno postavljaju"}
           </h2>
         </div>
         <div className="max-w-3xl mx-auto space-y-3">
@@ -958,80 +564,69 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               </summary>
               <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
                 {faq.answer}
+                {index === faqs.length - 1 && (
+                  <>
+                    {" "}
+                    <Link href="/audit" className="text-primary underline">
+                      {isEn ? "Book the free video review →" : "Zakažite besplatan video pregled →"}
+                    </Link>
+                  </>
+                )}
               </div>
             </details>
           ))}
         </div>
       </Section>
 
-      {/* Final CTA — dark */}
+      {/* Final CTA — dark, isti poziv na akciju treći put */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Find out exactly where you're losing money"
-              : "Saznajte tačno gde gubite novac"}
+            {isEn ? "Find out exactly where you're losing money" : "Saznajte tačno gde gubite novac"}
           </h2>
           <p className="text-slate-300 mb-8">
-            {locale === "en"
-              ? "Schedule a Deep Audit + Action Plan and get a clear picture of campaign performance with concrete recommendations for improvement. No obligations."
-              : "Zakažite Deep Audit + Action Plan i dobijte jasnu sliku performansi kampanja sa konkretnim preporukama za poboljšanje. Bez obaveza."}
+            {isEn
+              ? "Schedule a Deep Audit + Action Plan and get a written plan with concrete recommendations. No obligations."
+              : "Zakažite Deep Audit + Action Plan i dobijte pisan plan sa konkretnim preporukama. Bez obaveza."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Schedule a Deep Audit" : "Zakažite Deep Audit"}
+              {ctaLabel}
             </Button>
             <Link
               href="/usluge/google-ads-upravljanje"
               className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
             >
-              {locale === "en"
-                ? "Or check out management services →"
-                : "Ili pogledajte uslugu upravljanja →"}
+              {isEn ? "Or check out management services →" : "Ili pogledajte uslugu upravljanja →"}
             </Link>
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-            <Link
-              href="/usluge/google-ads-agencija"
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "Google Ads Agency" : "Google Ads agencija"}
+            <Link href="/usluge/google-ads-agencija" className="hover:text-white transition-colors underline">
+              {isEn ? "Google Ads Agency" : "Google Ads agencija"}
             </Link>
-            <Link
-              href="/usluge/google-ads-upravljanje"
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en"
-                ? "Google Ads Account Management"
-                : "Upravljanje Google Ads nalogom"}
+            <Link href="/usluge/google-ads-upravljanje" className="hover:text-white transition-colors underline">
+              {isEn ? "Google Ads Account Management" : "Upravljanje Google Ads nalogom"}
             </Link>
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }}
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en"
-                ? "Google Ads Audit Guide"
-                : "Google Ads audit vodič"}
+              {isEn ? "Google Ads Audit Guide" : "Google Ads audit vodič"}
             </Link>
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en"
-                ? "Common Google Ads Mistakes"
-                : "Najčešće Google Ads greške"}
+              {isEn ? "Common Google Ads Mistakes" : "Najčešće Google Ads greške"}
             </Link>
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: "sta-je-roas" } }}
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en" ? "What is ROAS?" : "Šta je ROAS i kako ga meriti?"}
+              {isEn ? "What is ROAS?" : "Šta je ROAS i kako ga meriti?"}
             </Link>
-            <Link
-              href="/"
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "Google Ads Consulting" : "Google Ads Srbija"}
+            <Link href="/" className="hover:text-white transition-colors underline">
+              {isEn ? "Google Ads Consulting" : "Google Ads Srbija"}
             </Link>
           </div>
         </div>

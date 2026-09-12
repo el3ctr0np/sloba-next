@@ -381,8 +381,8 @@ export default function GoogleAdsUpdates2026EN() {
           Read: Google Shopping Serbia 2026 →
         </Link>
         <p className="text-sm text-slate-400 mt-4 mb-0">
-          Or book your preparation now through our{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping management service</Link>.
+          Or check out our{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-white hover:text-yellow-400">complete Google Shopping guide</Link>.
         </p>
       </div>
 

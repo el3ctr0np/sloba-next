@@ -46,36 +46,6 @@ export default async function ServicesPage({ params }: Props) {
       badge: null
     },
     {
-      title: "Google Shopping Campaigns",
-      href: "/usluge/google-shopping",
-      desc: "Feed optimization, campaign structure, and bidding strategies for maximum eCommerce ROAS.",
-      badge: null
-    },
-    {
-      title: "Performance Max",
-      href: "/usluge/performance-max",
-      desc: "Control over asset groups, audience signals, and transparent performance tracking across all Google channels.",
-      badge: null
-    },
-    {
-      title: "Search Campaigns",
-      href: "/usluge/search-kampanje",
-      desc: "Keyword strategy, ad copy, and landing page optimization for high-intent users.",
-      badge: null
-    },
-    {
-      title: "Remarketing",
-      href: "/usluge/remarketing",
-      desc: "Re-engage visitors through Display, YouTube, and Search remarketing — increase conversions.",
-      badge: null
-    },
-    {
-      title: "YouTube Ads",
-      href: "/usluge/youtube-oglasi",
-      desc: "Video campaigns for awareness and direct response goals using skippable and bumper formats.",
-      badge: null
-    },
-    {
       title: "ChatGPT Ads",
       href: "/usluge/chatgpt-ads",
       desc: "Early-access advertising inside ChatGPT — sponsored placements captured at peak intent, before your competition arrives.",
@@ -98,36 +68,6 @@ export default async function ServicesPage({ params }: Props) {
       title: "Google Ads audit",
       href: "/usluge/google-ads-audit",
       desc: "Detaljna analiza naloga sa prioritetnim preporukama - otkrijte gde gubite novac i kako popraviti.",
-      badge: null
-    },
-    {
-      title: "Google Shopping kampanje",
-      href: "/usluge/google-shopping",
-      desc: "Feed optimizacija, struktura kampanja i bid strategije za maksimalan ROAS u eCommerce-u.",
-      badge: null
-    },
-    {
-      title: "Performance Max",
-      href: "/usluge/performance-max",
-      desc: "Kontrola asset grupa, audience signala i transparentno praćenje performansi kroz sve Google kanale.",
-      badge: null
-    },
-    {
-      title: "Search kampanje",
-      href: "/usluge/search-kampanje",
-      desc: "Keyword strategija, ad copy i landing page optimizacija za korisnike sa visokom namerom kupovine.",
-      badge: null
-    },
-    {
-      title: "Remarketing",
-      href: "/usluge/remarketing",
-      desc: "Povratak posetilaca kroz Display, YouTube i Search remarketing - povećajte konverzije.",
-      badge: null
-    },
-    {
-      title: "YouTube oglasi",
-      href: "/usluge/youtube-oglasi",
-      desc: "Video kampanje za awareness i direct response ciljeve kroz skippable i bumper formate.",
       badge: null
     },
     {

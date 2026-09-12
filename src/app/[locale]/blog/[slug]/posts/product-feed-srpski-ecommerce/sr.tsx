@@ -476,8 +476,8 @@ export default function ProductFeedSrpskiEcommerceSR() {
           Treba vam pomoć oko product feed-a?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Prolazim kroz vaš katalog, feed strukturu i atribute i dajem konkretan plan pre nego što Shopping zvanično starta u Srbiji - deo naše usluge{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping upravljanja</Link>.
+          Prolazim kroz vaš katalog, feed strukturu i atribute i dajem konkretan plan pre nego što Shopping zvanično starta u Srbiji - pogledajte i moj{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-white hover:text-yellow-400">vodič za Google Shopping</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju

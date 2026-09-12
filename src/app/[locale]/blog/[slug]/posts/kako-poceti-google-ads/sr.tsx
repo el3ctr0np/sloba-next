@@ -244,9 +244,8 @@ export default function KakoPocetiGoogleAdsSR() {
       </p>
 
       <p>
-        Ako vam nedostaje vreme ili strpljenje za sve ovo, profesionalno{" "}
-        <Link href="/usluge/search-kampanje" className="text-blue-700 underline">vođenje kampanja</Link>{" "}
-        od starta je opcija koju najčešće preporučujem vlasnicima biznisa sa ograničenim vremenom.
+        Ako vam nedostaje vreme ili strpljenje da sve ovo sami postavljate, ceo proces je razložen korak po korak u{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="text-blue-700 underline">vodiču za Google Search kampanje</Link>.
       </p>
 
       <hr />

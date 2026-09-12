@@ -463,10 +463,10 @@ export default function MerchantCenterFeedScorecardEN() {
           Want your feed scored the same way?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          I run this same 34-attribute scorecard on <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping accounts</Link> before touching campaign structure or bids. No promised score, no promised uplift - just a clear read on which fields are actually costing you matches, and which ones aren&apos;t worth your time.
+          I run this same 34-attribute scorecard on <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-white hover:text-yellow-400">Google Shopping accounts</Link> before touching campaign structure or bids. No promised score, no promised uplift - just a clear read on which fields are actually costing you matches, and which ones aren&apos;t worth your time.
         </p>
-        <Link href="/usluge/google-shopping" className="btn-secondary inline-block">
-          Get your feed scored
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="btn-secondary inline-block">
+          Read the Google Shopping guide
         </Link>
       </div>
 

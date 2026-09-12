@@ -48,7 +48,7 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
               description:
                 "When you need more than Google Ads: Meta, SEO, CRO, and creative under one strategy — powered by Funky Enterprises.",
               ctaText: "Learn more",
-              ctaHref: "/usluge/performance-marketing",
+              ctaHref: "/kontakt",
             },
           ],
         }
@@ -83,7 +83,7 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
               description:
                 "Kad vam treba više od Google Ads-a: Meta, SEO, CRO i kreativa pod jednom strategijom - powered by Funky Enterprises.",
               ctaText: "Pogledajte više",
-              ctaHref: "/usluge/performance-marketing",
+              ctaHref: "/kontakt",
             },
           ],
         };

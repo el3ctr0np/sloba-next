@@ -753,12 +753,12 @@ export default function PerformanceMaxGuideEN() {
 
       <h2 id="related-guides">Related Guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/usluge/performance-max" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Services</p>
-          <p className="text-xs text-gray-500 mb-0">Professional PMax campaign management</p>
+        <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Management</p>
+          <p className="text-xs text-gray-500 mb-0">Professional management of PMax and other campaigns</p>
         </Link>
-        <Link href="/usluge/google-shopping" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping Services</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping — Complete Guide</p>
           <p className="text-xs text-gray-500 mb-0">Shopping campaign and product feed optimisation for better ROAS</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

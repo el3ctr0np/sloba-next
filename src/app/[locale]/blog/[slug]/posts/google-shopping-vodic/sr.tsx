@@ -789,13 +789,13 @@ export default function GoogleShoppingVodicPost() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/usluge/google-shopping" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Shopping usluge</p>
-          <p className="text-xs text-gray-500 mb-0">Profesionalno upravljanje Shopping kampanjama</p>
+        <Link href="/usluge/google-ads-za-ecommerce" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Vođenje Google Ads naloga za eCommerce</p>
+          <p className="text-xs text-gray-500 mb-0">Feed, ROAS i PMax pod jednom strategijom</p>
         </Link>
-        <Link href="/usluge/performance-max" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max usluge</p>
-          <p className="text-xs text-gray-500 mb-0">PMax kampanje za skaliranje eCommerce prodaje</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max vodič</p>
+          <p className="text-xs text-gray-500 mb-0">Kako PMax kampanje skaliraju eCommerce prodaju</p>
         </Link>
         <Link href="/usluge/google-ads-za-ecommerce" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads za eCommerce</p>

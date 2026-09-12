@@ -561,10 +561,10 @@ export default function MerchantCenterFeedScorecardSR() {
           Hoćete da ocenim vaš feed?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Isti postupak koji sam upravo opisao, primenjen na vaš katalog - dijagnoza, ne obećanje. Pokažem vam tačno gde stojite i po čemu bih krenuo prvo.
+          Isti postupak koji sam upravo opisao, primenjen na vaš katalog - dijagnoza, ne obećanje. Ceo proces, atribut po atribut, je u vodiču za Google Shopping.
         </p>
-        <Link href="/usluge/google-shopping" className="btn-secondary inline-block">
-          Pošaljite feed na proveru
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="btn-secondary inline-block">
+          Pogledajte Google Shopping vodič
         </Link>
       </div>
 

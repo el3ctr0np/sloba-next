@@ -585,10 +585,7 @@ export default function YouTubeOglasavanjeVodicSR() {
         </Link>.
       </p>
       <p>
-        Za više o našim YouTube oglašavačkim uslugama, posetite{" "}
-        <Link href="/usluge/youtube-oglasi" className="underline font-medium">
-          stranicu za YouTube Ads upravljanje
-        </Link>. Ako vodite i Search/Shopping kampanje uz video, pogledajte i našu širu uslugu{" "}
+        Za više o tome kako mogu da vam pomognem oko YouTube oglašavanja, uz Search i Shopping kampanje, pogledajte moju uslugu{" "}
         <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">
           Google Ads upravljanja
         </Link>.

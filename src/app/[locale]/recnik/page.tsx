@@ -233,29 +233,29 @@ export default async function GlossaryPage({ params }: Props) {
  */
 const TERM_SERVICE_MAP = {
   // Shopping / feed
-  "google-shopping": "/usluge/google-shopping",
-  "merchant-center": "/usluge/google-shopping",
+  "google-shopping": "/usluge/google-ads-za-ecommerce",
+  "merchant-center": "/usluge/google-ads-za-ecommerce",
   // Performance Max
-  pmax: "/usluge/performance-max",
+  pmax: "/usluge/google-ads-upravljanje",
   // Search / keywords
-  rsa: "/usluge/search-kampanje",
-  "match-types": "/usluge/search-kampanje",
-  "broad-match": "/usluge/search-kampanje",
-  "exact-match": "/usluge/search-kampanje",
-  "phrase-match": "/usluge/search-kampanje",
-  "negative-keywords": "/usluge/search-kampanje",
-  "ad-assets": "/usluge/search-kampanje",
-  "brand-vs-nonbrand": "/usluge/search-kampanje",
+  rsa: "/usluge/google-ads-upravljanje",
+  "match-types": "/usluge/google-ads-upravljanje",
+  "broad-match": "/usluge/google-ads-upravljanje",
+  "exact-match": "/usluge/google-ads-upravljanje",
+  "phrase-match": "/usluge/google-ads-upravljanje",
+  "negative-keywords": "/usluge/google-ads-upravljanje",
+  "ad-assets": "/usluge/google-ads-upravljanje",
+  "brand-vs-nonbrand": "/usluge/google-ads-upravljanje",
   // Remarketing
-  remarketing: "/usluge/remarketing",
-  "audience-network": "/usluge/remarketing",
-  "in-market-audience": "/usluge/remarketing",
-  "custom-segments": "/usluge/remarketing",
+  remarketing: "/usluge/google-ads-upravljanje",
+  "audience-network": "/usluge/google-ads-upravljanje",
+  "in-market-audience": "/usluge/google-ads-upravljanje",
+  "custom-segments": "/usluge/google-ads-upravljanje",
   // Display / Demand Gen
-  "display-network": "/usluge/performance-marketing",
-  "demand-gen": "/usluge/performance-marketing",
+  "display-network": "/usluge/google-ads-upravljanje",
+  "demand-gen": "/usluge/google-ads-upravljanje",
   // YouTube
-  cpv: "/usluge/youtube-oglasi",
+  cpv: "/usluge/google-ads-upravljanje",
   // eCommerce economics
   roas: "/usluge/google-ads-za-ecommerce",
   poas: "/usluge/google-ads-za-ecommerce",
@@ -317,30 +317,6 @@ const SERVICE_LABELS: Record<string, { sr: string; en: string }> = {
   "/usluge/google-ads-audit": {
     sr: "Google Ads audit",
     en: "Google Ads audit",
-  },
-  "/usluge/google-shopping": {
-    sr: "Google Shopping upravljanje",
-    en: "Google Shopping management",
-  },
-  "/usluge/performance-max": {
-    sr: "Performance Max usluga",
-    en: "Performance Max service",
-  },
-  "/usluge/search-kampanje": {
-    sr: "Vođenje Search kampanja",
-    en: "Search campaign management",
-  },
-  "/usluge/remarketing": {
-    sr: "Remarketing usluga",
-    en: "Remarketing service",
-  },
-  "/usluge/performance-marketing": {
-    sr: "Performance marketing usluga",
-    en: "Performance marketing service",
-  },
-  "/usluge/youtube-oglasi": {
-    sr: "YouTube oglašavanje",
-    en: "YouTube advertising",
   },
   "/usluge/google-ads-za-ecommerce": {
     sr: "Google Ads za eCommerce",

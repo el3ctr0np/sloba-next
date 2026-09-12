@@ -447,9 +447,9 @@ Negativni <GlossaryLink slug="match-types">match types</GlossaryLink> rade druga
           <p className="text-xs text-gray-500 mb-0">Kategorije spremne za copy-paste, 15 grupa</p>
         </Link>
 
-        <Link href="/usluge/search-kampanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search kampanje</p>
-          <p className="text-xs text-gray-500 mb-0">Profesionalno upravljanje Search kampanjama</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search kampanje - kompletan vodič</p>
+          <p className="text-xs text-gray-500 mb-0">Struktura po nameri i marži, AI Max suita</p>
         </Link>
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

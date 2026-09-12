@@ -646,9 +646,9 @@ export default function PerformanceMaxAuditChecklistEN() {
           <p className="text-xs text-gray-500 mb-0">GTM, GA4, and Google Ads tag setup, done right</p>
         </Link>
 
-        <Link href="/usluge/performance-max" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Management</p>
-          <p className="text-xs text-gray-500 mb-0">Ongoing PMax setup and optimization as a service</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max Campaigns: Guide</p>
+          <p className="text-xs text-gray-500 mb-0">How PMax campaigns work, when to use them, and how to optimize them</p>
         </Link>
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "negative-keywords-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

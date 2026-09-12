@@ -134,11 +134,10 @@
     "description": "Specialized strategies for every aspect of paid advertising.",
     "services": {
       "googleAds": "Google Ads",
-      "performanceMax": "Performance Max",
-      "googleShopping": "Google Shopping",
-      "youtubeAds": "YouTube Ads",
-      "remarketing": "Remarketing",
-      "performanceMarketing": "Performance Marketing"
+      "ecommerce": "eCommerce Growth",
+      "audit": "Google Ads audit",
+      "consultations": "Consulting",
+      "aiAds": "AI advertising"
     },
     "allServices": "All services →"
   },

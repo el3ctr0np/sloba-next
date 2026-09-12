@@ -646,9 +646,9 @@ export default function PmaxAuditChecklistSR() {
           <p className="text-xs text-gray-500 mb-0">GTM, GA4 i Google Ads tag, podešeno kako treba</p>
         </Link>
 
-        <Link href="/usluge/performance-max" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Vođenje Performance Max kampanja</p>
-          <p className="text-xs text-gray-500 mb-0">Kontinuirano podešavanje i optimizacija PMax-a kao usluga</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Performance Max kampanje: vodič</p>
+          <p className="text-xs text-gray-500 mb-0">Kako rade PMax kampanje, kada ih koristiti i kako ih optimizovati</p>
         </Link>
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "negativne-kljucne-reci" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

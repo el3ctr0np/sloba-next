@@ -554,8 +554,8 @@ export default function MerchantCenterSerbiaSetupEN() {
           Need help with your Merchant Center setup?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          I go through your site, feed, and Merchant Center account and give you a concrete plan before Shopping launches in Serbia (expected H2 2026) — part of our{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping management service</Link>.
+          I go through your site, feed, and Merchant Center account and give you a concrete plan before Shopping launches in Serbia (expected H2 2026) — see also our{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-white hover:text-yellow-400">guide to Google Shopping</Link> for more context.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Schedule a free consultation

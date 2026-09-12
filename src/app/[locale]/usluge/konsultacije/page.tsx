@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
-import { UserCheck, Target, Building2, Briefcase } from "lucide-react";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -29,346 +27,127 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function KonsultacijePage({ params }: Props) {
   const { locale } = await params;
+  const isEn = locale === "en";
 
-  const reasons =
-    locale === "en"
-      ? [
-          {
-            title: "You have an in-house team that needs expert support",
-            description:
-              "Your team runs the campaigns, but they need external expertise for complex questions and strategy validation."
-          },
-          {
-            title: "You're considering Google Ads but not sure yet",
-            description:
-              "You want to understand if Google Ads is the right channel before making a commitment."
-          },
-          {
-            title: "You need a second opinion",
-            description:
-              "Your agency proposed something, and you want verification before making a decision."
-          },
-          {
-            title: "You have a specific problem",
-            description:
-              "Performance dropped or something isn't working as expected — you need debugging."
-          },
-          {
-            title: "You want strategy, not execution",
-            description:
-              "Your team implements, but you need someone to set direction and make strategic decisions."
-          }
-        ]
-      : [
-          {
-            title: "Imate interni tim, treba vam ekspertska podrška",
-            description:
-              "Vaš tim vodi kampanje, a treba im eksterni ekspert za teža pitanja i validaciju strategije."
-          },
-          {
-            title: "Razmišljate o Google Ads, ali niste sigurni",
-            description:
-              "Želite da razumete da li je Google Ads pravi kanal pre nego što investirate."
-          },
-          {
-            title: "Trebate second opinion",
-            description:
-              "Agencija predlaže nešto, a vi želite proveru pre donošenja odluke."
-          },
-          {
-            title: "Imate specifičan problem",
-            description:
-              "Performance je pao ili nešto ne radi kako treba - potreban vam je debugging."
-          },
-          {
-            title: "Želite strategiju, ne izvršenje",
-            description:
-              "Vaš tim implementira, a vi trebate nekoga ko postavlja pravac i donosi strateške odluke."
-          }
-        ];
+  const ctaLabel = isEn ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta";
 
-  const topics =
-    locale === "en"
-      ? [
-          {
-            title: "Google Ads strategy",
-            description:
-              "Campaign type selection, budget allocation, targeting approach, account structure."
-          },
-          {
-            title: "Campaign review and diagnostics",
-            description:
-              "Performance review, problem identification, quick analysis of what works and what doesn't."
-          },
-          {
-            title: "Technical questions",
-            description:
-              "Bid strategies, PMax setup, Shopping feed optimization, conversion tracking."
-          },
-          {
-            title: "Second opinion",
-            description:
-              "Agency strategy validation, proposed changes review, independent assessment."
-          },
-          {
-            title: "Training and education",
-            description:
-              "In-house team training, best practices, Q&A sessions, knowledge transfer."
-          }
-        ]
-      : [
-          {
-            title: "Google Ads strategija",
-            description:
-              "Izbor tipova kampanja, alokacija budžeta, targeting pristup, struktura naloga."
-          },
-          {
-            title: "Campaign review i dijagnostika",
-            description:
-              "Pregled performansi, identifikacija problema, brza analiza šta funkcioniše i šta ne."
-          },
-          {
-            title: "Technical pitanja",
-            description:
-              "Bid strategije, PMax setup, Shopping feed optimizacija, conversion tracking."
-          },
-          {
-            title: "Drugo mišljenje",
-            description:
-              "Validacija agencijske strategije, provera predloženih izmena, nezavisna procena."
-          },
-          {
-            title: "Training i edukacija",
-            description:
-              "Obuka internog tima, best practices, Q&A sesije, transfer znanja."
-          }
-        ];
+  const problems = isEn
+    ? [
+        {
+          title: "You need a second opinion before you commit",
+          description:
+            "An agency proposed something, or your team wants to change direction, and you want independent verification before the budget moves.",
+        },
+        {
+          title: "Something is broken and you don't know why",
+          description:
+            "Performance dropped, a change didn't do what you expected, and you need someone to find the actual cause, not guess at it.",
+        },
+        {
+          title: "You have people who execute, not who decide",
+          description:
+            "Your team runs the account day to day, but nobody on it is setting the strategy or catching the mistakes before they cost money.",
+        },
+      ]
+    : [
+        {
+          title: "Trebate drugo mišljenje pre nego što potrošite budžet",
+          description:
+            "Agencija je predložila nešto, ili vaš tim želi da menja pravac, a vi želite nezavisnu proveru pre nego što se budžet pomeri.",
+        },
+        {
+          title: "Nešto ne radi kako treba, a ne znate zašto",
+          description:
+            "Performanse su pale ili izmena nije dala očekivano, a treba vam neko ko će naći pravi uzrok, ne nagađati.",
+        },
+        {
+          title: "Imate ljude koji izvršavaju, ne koji odlučuju",
+          description:
+            "Vaš tim svakodnevno vodi nalog, ali niko u njemu ne postavlja strategiju niti hvata greške pre nego što koštaju.",
+        },
+      ];
 
-  const processSteps =
-    locale === "en"
-      ? [
-          {
-            number: 1,
-            title: "Book your session",
-            description:
-              "Fill out the contact form with your topic and choose consultation format. I'll send you available time slots."
-          },
-          {
-            number: 2,
-            title: "Prepare materials",
-            description:
-              "Send screenshots, account access (optional), or specific questions a day before the call."
-          },
-          {
-            number: 3,
-            title: "Live consultation",
-            description:
-              "Video call where we review the problem, I answer questions and provide concrete recommendations."
-          },
-          {
-            number: 4,
-            title: "Written summary",
-            description:
-              "After the session you receive a written summary with action items and recommendations."
-          }
-        ]
-      : [
-          {
-            number: 1,
-            title: "Zakažite termin",
-            description:
-              "Popunite kontakt formu sa temom i izaberite format konsultacije. Dobiću vam dostupne termine."
-          },
-          {
-            number: 2,
-            title: "Pripremite materijal",
-            description:
-              "Pošaljite screenshot-ove, pristup nalogu (opciono) ili specificna pitanja dan pre poziva."
-          },
-          {
-            number: 3,
-            title: "Live konsultacija",
-            description:
-              "Video poziv gde pregledamo problem, odgovorim na pitanja i dam konkretne preporuke."
-          },
-          {
-            number: 4,
-            title: "Pisani summary",
-            description:
-              "Nakon sesije dobijate pisani rezime sa action items-ima i preporukama."
-          }
-        ];
+  const benefits = isEn
+    ? [
+        "An independent assessment of your current strategy or an agency's proposal, without a sales motive on either side.",
+        "A direct answer to the technical question you're stuck on — bidding, PMax setup, feed structure, or tracking.",
+        "A written summary with concrete action items after every session, not just verbal advice you have to remember.",
+        "A conversation with someone who has run accounts across 50+ brands, not a generic playbook.",
+      ]
+    : [
+        "Nezavisnu procenu vaše strategije ili agencijskog predloga, bez prodajnog interesa ni na jednoj strani.",
+        "Direktan odgovor na tehničko pitanje u kom ste zaglavljeni - bidding, PMax setup, struktura feeda ili tracking.",
+        "Pisani rezime sa konkretnim koracima posle svake sesije, ne samo usmeni savet koji morate da pamtite.",
+        "Razgovor sa nekim ko je vodio naloge kroz 50+ brendova, ne generički priručnik.",
+      ];
 
-  const iconProps = { size: 28, strokeWidth: 1.5 } as const;
+  const faqs = isEn
+    ? [
+        {
+          question: "How much does Google Ads consulting cost?",
+          answer:
+            "A Standard Session is $200/hr, or $600 for a 3-hour package. Deep Dive (2 hours plus prep, detailed account review) is $600. No hidden fees — you pay only for the time booked, no retainer required.",
+        },
+        {
+          question: "Is there a minimum ad spend budget for consulting?",
+          answer:
+            "No minimum ad spend is required. Consulting is priced per session, not tied to your budget, so it works whether you're spending $500/month or $50,000/month.",
+        },
+        {
+          question: "Consulting or full management — which do I need?",
+          answer:
+            "Consulting is for situations where your team (or you) already runs the account and needs expert input on demand. If nobody runs the account day to day and you need someone to take over execution, that's Google Ads management, not consulting.",
+        },
+        {
+          question: "What's the difference between a consultant and an agency?",
+          answer:
+            "An agency takes over full execution monthly. A consultant gives you expert input on demand — strategy, second opinion, or problem-solving — while your team stays in control of day-to-day execution.",
+        },
+        {
+          question: "What if I decide to work together long-term?",
+          answer:
+            "The consultation fee is deducted from the first month if you decide on management or a Kickstart project within 30 days.",
+        },
+        {
+          question: "How far in advance should I book?",
+          answer:
+            "Ideally 3-5 business days. For urgent cases, contact me directly and we'll see if I can adjust my schedule.",
+        },
+      ]
+    : [
+        {
+          question: "Koliko koštaju Google Ads konsultacije?",
+          answer:
+            "Standardna sesija je €150/sat, ili €450 za paket od 3 sata. Deep Dive (2 sata plus priprema, detaljan account review) je €450. Nema skrivenih troškova, plaćate samo zakazano vreme, bez mesečnog ugovora.",
+        },
+        {
+          question: "Da li postoji minimalni budžet za oglašavanje da bi konsultacija imala smisla?",
+          answer:
+            "Ne, nema minimalnog ad spend budžeta. Cena je po sesiji, ne vezuje se za vaš budžet, pa funkcioniše bez obzira da li trošite €300 ili €30.000 mesečno.",
+        },
+        {
+          question: "Konsultacije ili vođenje kampanja - šta mi treba?",
+          answer:
+            "Konsultacije su za situacije kada vaš tim (ili vi) već vodi nalog, a treba vam ekspertski input po potrebi. Ako niko svakodnevno ne vodi nalog i tražite nekoga ko preuzima kompletno izvršenje, to je Google Ads upravljanje, ne konsultacija.",
+        },
+        {
+          question: "Koja je razlika između konsultanta i agencije?",
+          answer:
+            "Agencija preuzima kompletnu izvedbu mesečno. Konsultant daje ekspertski input po potrebi - strategiju, second opinion ili rešavanje problema - dok vaš tim zadržava kontrolu nad svakodnevnim izvršenjem.",
+        },
+        {
+          question: "Šta ako odlučim da radimo zajedno dugoročno?",
+          answer:
+            "Cena konsultacije se odbija od prvog meseca ukoliko se odlučite za upravljanje ili Kickstart projekat u roku od 30 dana.",
+        },
+        {
+          question: "Koliko unapred treba zakazati termin?",
+          answer:
+            "Idealno 3-5 radnih dana. Za urgentne slučajeve, kontaktirajte me direktno i videćemo da li mogu da prilagodim raspored.",
+        },
+      ];
 
-  const audiences: { icon: ReactNode; title: string; description: string }[] =
-    locale === "en"
-      ? [
-          {
-            icon: <UserCheck {...iconProps} className="text-gray-900" />,
-            title: "Marketing managers",
-            description:
-              "Strategy validation, budget justification, agency evaluation."
-          },
-          {
-            icon: <Target {...iconProps} className="text-gray-900" />,
-            title: "In-house PPC specialists",
-            description:
-              "Solving complex problems, second opinion, campaign optimization."
-          },
-          {
-            icon: <Building2 {...iconProps} className="text-gray-900" />,
-            title: "Agency owners",
-            description:
-              "Client project consultations, specialist input, white label support."
-          },
-          {
-            icon: <Briefcase {...iconProps} className="text-gray-900" />,
-            title: "Founders & CEOs",
-            description:
-              "Understanding Google Ads, performance evaluation, strategic decisions."
-          }
-        ]
-      : [
-          {
-            icon: <UserCheck {...iconProps} className="text-gray-900" />,
-            title: "Marketing manageri",
-            description:
-              "Validacija strategije, budget justification, evaluacija agencija."
-          },
-          {
-            icon: <Target {...iconProps} className="text-gray-900" />,
-            title: "In-house PPC specijalisti",
-            description:
-              "Rešavanje kompleksnih problema, second opinion, optimizacija kampanja."
-          },
-          {
-            icon: <Building2 {...iconProps} className="text-gray-900" />,
-            title: "Agency owners",
-            description:
-              "Konsultacije za klijentske projekte, specialist input, white label podrška."
-          },
-          {
-            icon: <Briefcase {...iconProps} className="text-gray-900" />,
-            title: "Founders i CEOs",
-            description:
-              "Razumevanje Google Ads-a, evaluacija performansi, strateške odluke."
-          }
-        ];
-
-  const faqs =
-    locale === "en"
-      ? [
-          {
-            question: "Can I record the call?",
-            answer:
-              "Yes, no problem. You can record the call for internal use and team training."
-          },
-          {
-            question: "What if I need more time?",
-            answer:
-              "We can extend the session if I'm available or book a follow-up consultation for additional questions."
-          },
-          {
-            question: "How far in advance should I book?",
-            answer:
-              "Ideally 3-5 business days. For urgent cases, contact me directly and we'll see if I can adjust my schedule."
-          },
-          {
-            question: "What if I decide to work together long-term?",
-            answer:
-              "The consultation fee is deducted from the first month if you decide on management or a Kickstart project within 30 days."
-          },
-          {
-            question: "Do you work with competing agencies?",
-            answer:
-              "Yes, I do white label consultations for agencies. All information remains strictly confidential."
-          },
-          {
-            question: "What tools do we use during consultation?",
-            answer:
-              "Google Meet or Zoom for the call. If you want screen share and account review, Google Ads account access is needed (read-only is sufficient)."
-          },
-          {
-            question: "How much does Google Ads consulting cost?",
-            answer:
-              "A standard 1-hour session is $200, or $600 for a 3-hour package if you need more sessions. Deep Dive (2 hours plus preparation, detailed account review) is $600. There are no hidden fees — you pay only for the time booked, no retainer required."
-          },
-          {
-            question: "Is there a minimum ad spend budget for consulting?",
-            answer:
-              "No minimum ad spend is required for a consultation — it works whether you're spending $500/month or $50,000/month. Consulting is priced per session, not tied to your ad budget, which makes it accessible for smaller businesses too."
-          },
-          {
-            question: "What's the difference between hiring a consultant and an agency?",
-            answer:
-              "An agency takes over full execution monthly. A consultant like me gives you expert input on demand — strategy, second opinion, or problem-solving — while your team (or you) stays in control of day-to-day execution. It's a lighter, more flexible commitment."
-          },
-          {
-            question: "Do you work with small businesses on a single consultation?",
-            answer:
-              "Yes. Many small business owners book a single Standard Session to validate their approach before investing more in ads. You don't need an in-house team or large budget to benefit from a consultation."
-          }
-        ]
-      : [
-          {
-            question: "Da li mogu da snimim poziv?",
-            answer:
-              "Da, nema problema. Poziv možete snimiti za internu upotrebu i edukaciju tima."
-          },
-          {
-            question: "Šta ako mi treba više vremena?",
-            answer:
-              "Možemo produžiti sesiju ako sam dostupan ili zakazati follow-up konsultaciju za dodatna pitanja."
-          },
-          {
-            question: "Koliko unapred treba zakazati?",
-            answer:
-              "Idealno 3-5 radnih dana. Za urgentne slučajeve, kontaktirajte me direktno i videćemo da li mogu da prilagodim raspored."
-          },
-          {
-            question: "Šta ako odlučim da radimo zajedno dugotrajno?",
-            answer:
-              "Cena konsultacije se odbija od prvog meseca ukoliko se odlučite za upravljanje ili Kickstart projekat u roku od 30 dana."
-          },
-          {
-            question: "Da li radite i za konkurentske agencije?",
-            answer:
-              "Da, radim white label konsultacije za agencije. Sve informacije ostaju strogo poverljive."
-          },
-          {
-            question: "Koji alati koristimo tokom konsultacije?",
-            answer:
-              "Google Meet ili Zoom za poziv. Ako želite screen share i pregled naloga, potreban je pristup Google Ads nalogu (read-only dovoljan)."
-          },
-          {
-            question: "Koliko koštaju Google Ads konsultacije?",
-            answer:
-              "Standardna 1-satna sesija je €150, ili €450 za paket od 3 sata ako vam trebaju dodatne sesije. Deep Dive (2 sata + priprema, detaljan account review) je €450. Nema skrivenih troškova, plaćate samo zakazano vreme, bez mesečnog ugovora."
-          },
-          {
-            question: "Da li postoji minimalni budžet za oglašavanje da bi konsultacija imala smisla?",
-            answer:
-              "Ne, nema minimalnog ad spend budžeta za konsultaciju - funkcioniše bez obzira da li trošite €300 ili €30.000 mesečno. Cena je po sesiji, ne vezuje se za vaš budžet, što je čini pristupačnom i za manje firme."
-          },
-          {
-            question: "Koja je razlika između konsultanta i agencije?",
-            answer:
-              "Agencija preuzima kompletnu izvedbu mesečno. Konsultant poput mene daje ekspertski input po potrebi - strategiju, second opinion ili rešavanje problema - dok vaš tim (ili vi) zadržava kontrolu nad svakodnevnim izvršenjem. Lakša i fleksibilnija obaveza."
-          },
-          {
-            question: "Da li radite konsultacije i sa malim firmama?",
-            answer:
-              "Da. Mnogi vlasnici malih firmi zakažu jednu Standard Session da provere pristup pre nego što ulože više u oglase. Ne treba vam interni tim niti veliki budžet da biste imali korist od konsultacije."
-          },
-          {
-            question: "Konsultacije ili vođenje kampanja - šta mi treba?",
-            answer:
-              "Konsultacije su za situacije kada vaš tim (ili vi) vodi kampanje, a treba vam ekspertski input po potrebi - strategija, second opinion, rešavanje konkretnog problema. Ako nemate nikoga da svakodnevno vodi nalog i tražite nekoga ko preuzima kompletnu izvedbu, to je Google Ads upravljanje, ne konsultacija."
-          }
-        ];
-
-  const serviceSchema = locale === "en" ? {
+  const serviceSchema = isEn ? {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Google Ads Consulting",
@@ -495,32 +274,25 @@ export default async function KonsultacijePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Hero — dark, impact-driven */}
+      {/* 1. Hero — kome je namenjeno, šta se dešava kad me angažujete, jedan dokaz */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* Breadcrumb */}
           <nav className="mb-8 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 text-slate-400">
               <li>
-                <Link
-                  href="/"
-                  className="hover:text-white transition-colors"
-                >
-                  {locale === "en" ? "Home" : "Početna"}
+                <Link href="/" className="hover:text-white transition-colors">
+                  {isEn ? "Home" : "Početna"}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li>
-                <Link
-                  href="/usluge"
-                  className="hover:text-white transition-colors"
-                >
-                  {locale === "en" ? "Services" : "Usluge"}
+                <Link href="/usluge" className="hover:text-white transition-colors">
+                  {isEn ? "Services" : "Usluge"}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li className="text-accent font-medium">
-                {locale === "en" ? "Consultations" : "Konsultacije"}
+                {isEn ? "Consultations" : "Konsultacije"}
               </li>
             </ol>
           </nav>
@@ -528,52 +300,43 @@ export default async function KonsultacijePage({ params }: Props) {
           <div className="grid lg:grid-cols-[1.2fr_0.8fr] lg:gap-12 items-center">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                {locale === "en"
-                  ? "Expert advice when you need it — no long-term commitment"
-                  : "Google Ads konsultacije - ekspertski savet kada vam treba, bez dugoročne obaveze"}
+                {isEn
+                  ? "For teams that already run campaigns and need a second opinion"
+                  : "Za timove koji već vode kampanje, a treba im drugo mišljenje"}
               </h1>
-              <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-                {locale === "en" ? (
+              <p className="text-lg md:text-xl text-slate-300 mb-4 leading-relaxed">
+                {isEn ? (
                   <>
-                    Sometimes you don't need full management, just expert advice.
-                    Google Ads consulting is ideal when you have specific questions,
-                    need a <strong className="text-white">second opinion</strong>, or want{" "}
-                    <strong className="text-white">strategic guidance</strong> without long-term commitment.
-                    For <strong className="text-white">$200/hr</strong> (or $600 for a 3h package) you get full attention and
-                    expertise from 10+ years working with the Google Ads platform.
+                    Consulting is for marketing managers, in-house PPC specialists and
+                    agency owners who already run Google Ads but need independent input
+                    before a decision. You book a call, send materials ahead of time,
+                    and leave the session with a written summary and concrete next steps.
                   </>
                 ) : (
                   <>
-                    Ponekad vam ne treba full management, već samo ekspertski savet.
-                    Google Ads konsultacije su idealne kada imate konkretna pitanja,
-                    trebate <strong className="text-white">second opinion</strong> ili želite{" "}
-                    <strong className="text-white">strategijsku pomoć</strong> bez dugoročne obaveze.
-                    Za <strong className="text-white">€150/sat</strong> (ili €450 za paket 3h) dobijate punu pažnju i
-                    ekspertizu iz 10+ godina rada sa Google Ads platformom.
+                    Konsultacije su za marketing managere, in-house PPC specijaliste i
+                    vlasnike agencija koji već vode Google Ads, a treba im nezavisan
+                    input pre odluke. Zakažete poziv, pošaljete materijal unapred, a
+                    sesiju napuštate sa pisanim rezimeom i konkretnim sledećim koracima.
                   </>
                 )}
               </p>
+              <p className="text-base text-slate-400 mb-8">
+                {isEn
+                  ? "I've run Google Ads accounts for 10+ years, including 3 international agencies, and carry 3x UK Search Awards recognition for the work."
+                  : "Google Ads radim 10+ godina, uključujući 3 inostrane agencije, i nosim 3x UK Search Awards priznanje za taj rad."}
+              </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button href="/kontakt" variant="secondary">
-                  {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
-                </Button>
-              </div>
-
-              {/* Trust badges */}
-              <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-                <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
-                <span>3x UK Search Awards</span>
-                <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
-              </div>
+              <Button href="/kontakt" variant="secondary">
+                {ctaLabel}
+              </Button>
             </div>
 
-            {/* Right: Photo */}
             <div className="hidden lg:flex items-center justify-center">
               <div className="w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/foto/slobodan-jelisavac-google-ads-konsultacije.webp"
-                  alt={locale === "en" ? "Slobodan Jelisavac during a consultation" : "Slobodan Jelisavac na konsultacijama"}
+                  alt={isEn ? "Slobodan Jelisavac during a consultation" : "Slobodan Jelisavac na konsultacijama"}
                   width={800}
                   height={1000}
                   className="w-full h-full object-cover rounded-2xl"
@@ -585,324 +348,147 @@ export default async function KonsultacijePage({ params }: Props) {
         </div>
       </section>
 
-      {/* SEO Intro */}
-      <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            {locale === "en" ? (
-              <>
-                <strong>Google Ads consulting</strong> is a flexible alternative to full
-                management. Ideal for companies with in-house teams running campaigns
-                but needing expert support for specific questions, strategy validation,
-                or solving complex problems.
-              </>
-            ) : (
-              <>
-                <strong>Google Ads konsultacije</strong> su fleksibilna alternativa full
-                upravljanju. Idealne za kompanije sa internim timom koji vodi kampanje,
-                ali treba im ekspertska podrška za specifična pitanja, validaciju strategije
-                ili rešavanje kompleksnih problema.
-              </>
-            )}
-          </p>
-          <p className="text-gray-600 text-base leading-relaxed">
-            {locale === "en"
-              ? "I work with marketing managers, in-house PPC specialists, agency owners, and company founders who want independent assessment, strategic advice, or technical help — without commitment to long-term collaboration."
-              : "Radim sa marketing managerima, in-house PPC specijalistima, vlasnicima agencija i osnivačima kompanija koji žele nezavisnu procenu, strateški savet ili tehničku pomoć - bez obaveze na dugotrajnu saradnju."}
-          </p>
-        </div>
-      </section>
-
-      {/* When to choose consulting */}
+      {/* 2. Problem u tri stavke */}
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "When a consultation is the right choice"
-              : "Kada je konsultacija pravi izbor"}
+            {isEn ? "The situations I get called into" : "Situacije zbog kojih me ljudi zovu"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Google Ads consulting works best in these situations."
-              : "Google Ads konsultacije najbolje funkcionišu u ovim situacijama."}
-          </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.map((reason) => (
-            <Card key={reason.title} className="h-full">
+        <div className="grid md:grid-cols-3 gap-6">
+          {problems.map((problem) => (
+            <Card key={problem.title} className="h-full">
               <h3 className="text-lg font-heading font-semibold mb-2">
-                {reason.title}
+                {problem.title}
               </h3>
-              <p className="text-gray-600 text-base">{reason.description}</p>
+              <p className="text-gray-600 text-base">{problem.description}</p>
             </Card>
           ))}
         </div>
       </Section>
 
-      {/* Topics */}
+      {/* 3. Šta dobijate, numerisano */}
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Topics we can cover"
-              : "Teme koje možemo pokriti"}
+            {isEn ? "What you get out of a session" : "Šta dobijate iz sesije"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "From strategy and campaign structure to technical questions and performance optimization."
-              : "Od strategije i strukture kampanja do tehničkih pitanja i optimizacije performansi."}
-          </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {topics.map((topic) => (
-            <Card key={topic.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {topic.title}
-              </h3>
-              <p className="text-gray-600 text-base">{topic.description}</p>
-            </Card>
+        <ol className="max-w-3xl mx-auto space-y-4">
+          {benefits.map((benefit, index) => (
+            <li key={benefit} className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+              <span className="flex-shrink-0 w-9 h-9 rounded-full bg-slate-900 text-white flex items-center justify-center text-sm font-bold font-heading">
+                {index + 1}
+              </span>
+              <p className="text-gray-700 text-base leading-relaxed">{benefit}</p>
+            </li>
           ))}
+        </ol>
+      </Section>
+
+      {/* 4. Dokaz — slučaj iz prakse, NDA-usklađen */}
+      <Section>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-heading font-bold mb-6">
+            {isEn ? "A case from practice" : "Jedan slučaj iz prakse"}
+          </h2>
+          <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-10">
+            <p className="text-lg md:text-xl leading-relaxed">
+              {isEn ? (
+                <>
+                  A UK Shopping client has worked with me for <strong className="text-accent">2+ years</strong>.
+                  The account currently holds a <strong className="text-accent">1.78x POAS</strong> and
+                  generates <strong className="text-accent">six-figure revenue (GBP)</strong>. No client
+                  name or absolute revenue figure is shared here — that's the NDA I keep on every account.
+                </>
+              ) : (
+                <>
+                  Jedan UK Shopping klijent radi sa mnom već <strong className="text-accent">2+ godine</strong>.
+                  Nalog trenutno drži <strong className="text-accent">POAS 1.78x</strong> i generiše{" "}
+                  <strong className="text-accent">šestocifren prihod (GBP)</strong>. Ime klijenta ni
+                  apsolutnu cifru prihoda ovde ne otkrivam - to je NDA koji držim na svakom nalogu.
+                </>
+              )}
+            </p>
+          </div>
         </div>
       </Section>
 
-      {/* Pricing — 3 formats */}
-      <Section>
+      {/* 5. Cena i proces, vidljivo */}
+      <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Consultation formats"
-              : "Formati konsultacija"}
+            {isEn ? "Price and process" : "Cena i proces"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Choose the format that fits your needs — from quick session to detailed account review."
-              : "Izaberite format koji odgovara vašim potrebama - od brze sesije do detaljnog account review-a."}
-          </p>
         </div>
-        <div className="grid lg:grid-cols-3 gap-6">
-          {/* Standard Session */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
           <div className="bg-white border-2 border-accent rounded-lg p-6 shadow-card relative">
             <span className="absolute -top-3 left-6 bg-accent text-gray-900 text-xs font-bold px-3 py-1 rounded-md">
-              {locale === "en" ? "Most Popular" : "Najpopularniji"}
+              {isEn ? "Most Popular" : "Najpopularniji"}
             </span>
-            <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "For most needs" : "Za većinu potreba"}
-            </p>
-            <h3 className="text-xl font-heading font-bold mb-1">
-              Standard Session
-            </h3>
+            <h3 className="text-xl font-heading font-bold mb-1">Standard Session</h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "$200" : "€150"}<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "hr" : "sat"}</span>
-              <span className="block text-sm text-gray-500 font-normal mt-0.5">{locale === "en" ? "3h package — $600" : "paket 3h: €450"}</span>
+              {isEn ? "$200" : "€150"}
+              <span className="text-sm text-gray-500 font-normal">/{isEn ? "hr" : "sat"}</span>
+              <span className="block text-sm text-gray-500 font-normal mt-0.5">
+                {isEn ? "3h package — $600" : "paket 3h: €450"}
+              </span>
             </p>
-            <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "Campaign review, strategic questions, training session, or second opinion. Ideal for approach validation and quick problem diagnostics."
-                : "Pregled kampanja, strategijska pitanja, training sesija ili second opinion. Idealno za validaciju pristupa i brzu dijagnostiku problema."}
+            <p className="text-gray-600 text-base">
+              {isEn
+                ? "1-hour live call: campaign review, strategic questions, second opinion. Written summary after."
+                : "1 sat live poziva: campaign review, strategijska pitanja, second opinion. Pisani rezime posle."}
             </p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "1 hour live video call" : "1 sat live video poziva"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Campaign review and performance analysis"
-                  : "Campaign review i analiza performansi"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Answers to strategic questions"
-                  : "Odgovori na strategijska pitanja"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Second opinion on proposed changes"
-                  : "Drugo mišljenje na predložene izmene"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Written summary with recommendations"
-                  : "Pisani summary sa preporukama"}
-              </li>
-            </ul>
-            <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
-            </Button>
           </div>
 
-          {/* Deep Dive */}
           <Card className="h-full">
-            <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "For complex needs" : "Za kompleksne potrebe"}
-            </p>
             <h3 className="text-xl font-heading font-bold mb-1">Deep Dive</h3>
             <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "$600" : "€450"}<span className="text-sm text-gray-500 font-normal">/{locale === "en" ? "2 hours + prep" : "2 sata + priprema"}</span>
+              {isEn ? "$600" : "€450"}
+              <span className="text-sm text-gray-500 font-normal">
+                /{isEn ? "2 hours + prep" : "2 sata + priprema"}
+              </span>
             </p>
-            <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "Detailed account review, complex strategy discussion, or team training. For situations requiring deeper analysis and more time."
-                : "Detaljan account review, kompleksna diskusija o strategiji ili team training. Za situacije kada treba dublja analiza i više vremena."}
+            <p className="text-gray-600 text-base">
+              {isEn
+                ? "Detailed account review, complex strategy discussion, or team training. Session recording included."
+                : "Detaljan account review, kompleksna diskusija o strategiji ili team training. Snimak sesije uključen."}
             </p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "2 hours of detailed review and discussion"
-                  : "2 sata detaljnog pregleda i diskusije"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Live account walkthrough (no written report)"
-                  : "Live pregled naloga (bez pisanog izveštaja)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Verbal priorities — for a written prioritized plan, see Deep Audit + Action Plan"
-                  : "Usmeni prioriteti - za pisani prioritizovan plan tu je Deep Audit + Action Plan"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Team training and Q&A session"
-                  : "Team training i Q&A sesija"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Session recording and summary notes"
-                  : "Snimak sesije i kratke beleške"}
-              </li>
-            </ul>
-            <Button href="/kontakt" variant="primary">
-              {locale === "en" ? "Book Deep Dive" : "Zakažite Deep Dive"}
-            </Button>
           </Card>
+        </div>
+        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-sm">
+          {isEn
+            ? "Need ongoing, allocated hours instead of a single session? Ongoing Advisory is scoped and priced on request — ask when you book."
+            : "Treba vam kontinuirana podrška umesto jedne sesije? Ongoing Advisory se dogovara i cenu formiramo na upit - pitajte kad zakazujete."}
+        </p>
 
-          {/* Retainer */}
-          <div className="bg-slate-900 text-white border-2 border-slate-700 rounded-lg p-6 shadow-card relative">
-            <p className="text-xs uppercase tracking-wider text-slate-400 mb-2">
-              {locale === "en" ? "For ongoing support" : "Za kontinuiranu podršku"}
-            </p>
-            <h3 className="text-xl font-heading font-bold mb-1">
-              {locale === "en" ? "Ongoing Advisory" : "Kontinuirano savetovanje"}
-            </h3>
-            <p className="text-2xl font-heading font-bold text-accent mb-3">
-              {locale === "en" ? "on request" : "na upit"}
-            </p>
-            <p className="text-slate-300 text-sm mb-4">
-              {locale === "en"
-                ? "For in-house teams running campaigns but needing regular expert support. Custom scope and pricing based on your needs."
-                : "Za in-house timove koji vode kampanje ali trebaju regularnu ekspertsku podršku. Prilagođen scope i cena prema vašim potrebama."}
-            </p>
-            <ul className="space-y-2 text-sm text-slate-300 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Monthly allocated hours"
-                  : "Mesečno alociranih sati"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                Priority scheduling
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Slack/email access for quick questions"
-                  : "Slack/email pristup za brza pitanja"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Ad-hoc consultations as needed"
-                  : "Ad-hoc konsultacije po potrebi"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Flexible extension as needed"
-                  : "Fleksibilno produženje po potrebi"}
-              </li>
-            </ul>
-            <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Contact me for details" : "Kontaktirajte me za detalje"}
-            </Button>
-          </div>
-        </div>
-      </Section>
-
-      {/* Process — sequential */}
-      <Section background="gray">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en" ? "How the process works" : "Kako izgleda proces"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "From booking to written summary — simple process in 4 steps."
-              : "Od zakazivanja termina do pisanog summary-ja - jednostavan proces u 4 koraka."}
-          </p>
-        </div>
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-4">
-            {processSteps.map((step, index) => (
-              <div
-                key={step.title}
-                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
-              >
-                <span
-                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
-                    index === processSteps.length - 1
-                      ? "bg-accent text-gray-900"
-                      : "bg-slate-900 text-white"
-                  }`}
-                >
-                  {step.number}
-                </span>
-                <div>
-                  <h3 className="font-heading font-semibold text-lg mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 text-base">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      {/* Who uses consulting */}
-      <Section>
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Who uses consultations"
-              : "Ko najčešće koristi konsultacije"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Google Ads consulting is ideal for different profiles — from marketers to company founders."
-              : "Google Ads konsultacije idealne su za različite profile - od marketara do osnivača kompanija."}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {audiences.map((audience) => (
-            <Card key={audience.title} className="h-full text-center">
-              <div className="mb-3">{audience.icon}</div>
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {audience.title}
-              </h3>
-              <p className="text-gray-600 text-base">{audience.description}</p>
-            </Card>
+        <div className="max-w-3xl mx-auto grid md:grid-cols-3 gap-4 mb-10">
+          {(isEn
+            ? [
+                { n: 1, title: "Book", description: "Fill out the contact form with your topic. I send available time slots." },
+                { n: 2, title: "Prepare", description: "Send screenshots, access, or questions a day before the call." },
+                { n: 3, title: "Call + summary", description: "We work through the problem live, then you get a written summary." },
+              ]
+            : [
+                { n: 1, title: "Zakazivanje", description: "Popunite kontakt formu sa temom. Šaljem dostupne termine." },
+                { n: 2, title: "Priprema", description: "Pošaljete screenshot-ove, pristup ili pitanja dan pre poziva." },
+                { n: 3, title: "Poziv + rezime", description: "Rešavamo problem uživo, a posle dobijate pisani rezime." },
+              ]
+          ).map((step) => (
+            <div key={step.title} className="bg-white border border-gray-200 rounded-xl p-5 shadow-card text-center">
+              <span className="inline-flex w-8 h-8 rounded-full bg-slate-900 text-white items-center justify-center text-sm font-bold font-heading mb-3">
+                {step.n}
+              </span>
+              <h3 className="font-heading font-semibold mb-1">{step.title}</h3>
+              <p className="text-gray-600 text-sm">{step.description}</p>
+            </div>
           ))}
+        </div>
+
+        <div className="text-center">
+          <Button href="/kontakt" variant="primary">
+            {ctaLabel}
+          </Button>
         </div>
       </Section>
 
@@ -911,13 +497,11 @@ export default async function KonsultacijePage({ params }: Props) {
         locale={locale}
       />
 
-      {/* FAQ — proper accordion */}
-      <Section background="gray">
+      {/* 6. Pitanja koja se stvarno postavljaju */}
+      <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Frequently asked questions about consultations"
-              : "Često postavljana pitanja o konsultacijama"}
+            {isEn ? "Questions people actually ask" : "Pitanja koja se stvarno postavljaju"}
           </h2>
         </div>
         <div className="max-w-3xl mx-auto space-y-3">
@@ -941,86 +525,46 @@ export default async function KonsultacijePage({ params }: Props) {
         </div>
       </Section>
 
-      {/* Final CTA */}
+      {/* 7. Final CTA — isti poziv treći put */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Have a question? Book a consultation"
-              : "Imate pitanje? Zakažite konsultaciju"}
+            {isEn ? "Have a question? Book a consultation" : "Imate pitanje? Zakažite konsultaciju"}
           </h2>
           <p className="text-slate-300 mb-8">
-            {locale === "en"
+            {isEn
               ? "Fill out the contact form with the topic you want to cover and I'll get back with available time slots. No commitment, no automatic renewals."
               : "Popunite kontakt formu sa temom koju želite pokriti i javiću se sa dostupnim terminima. Bez obaveza, bez automatskih produženja."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/kontakt" variant="secondary">
-              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
+              {ctaLabel}
             </Button>
             <Link
               href="/usluge/google-ads-audit"
               className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
             >
-              {locale === "en"
-                ? "Or book a Google Ads audit →"
-                : "Ili zakažite Google Ads audit →"}
+              {isEn ? "Or book a Google Ads audit →" : "Ili zakažite Google Ads audit →"}
             </Link>
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-            <Link
-              href="/usluge/google-ads-agencija"
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "Google Ads Agency" : "Google Ads agencija"}
+            <Link href="/usluge/google-ads-upravljanje" className="hover:text-white transition-colors underline">
+              {isEn ? "Google Ads Management" : "Google Ads upravljanje"}
+            </Link>
+            <Link href="/usluge/starter-paket" className="hover:text-white transition-colors underline">
+              {isEn ? "Kickstart" : "Kickstart paket"}
             </Link>
             <Link
-              href="/usluge/google-ads-upravljanje"
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "how-to-choose-google-ads-consultant" : "kako-izabrati-google-ads-konsultanta" } }}
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en" ? "Google Ads Management" : "Google Ads upravljanje"}
+              {isEn ? "How to Choose a Google Ads Consultant" : "Kako izabrati Google Ads konsultanta"}
             </Link>
             <Link
-              href="/usluge/google-ads-audit"
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "google-ads-agency-vs-freelancer" : "agencija-vs-freelancer" } }}
               className="hover:text-white transition-colors underline"
             >
-              {locale === "en" ? "Deep Audit + Action Plan" : "Deep Audit + Action Plan"}
-            </Link>
-            <Link
-              href="/usluge/starter-paket"
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "Kickstart" : "Kickstart paket"}
-            </Link>
-            <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "kako-izabrati-google-ads-konsultanta" } }}
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "How to Choose a Google Ads Consultant" : "Kako izabrati Google Ads konsultanta"}
-            </Link>
-            <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "Agency vs Freelancer" : "Agencija vs Freelancer"}
-            </Link>
-            <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "kljucne-reci-vodic" } }}
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "Keyword Research Guide" : "Vodič za ključne reči"}
-            </Link>
-            <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "sta-je-roas" } }}
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "What is ROAS?" : "Šta je ROAS?"}
-            </Link>
-            <Link
-              href="/"
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en" ? "Google Ads Consulting" : "Google Ads Srbija"}
+              {isEn ? "Agency vs Freelancer" : "Agencija vs Freelancer"}
             </Link>
           </div>
         </div>

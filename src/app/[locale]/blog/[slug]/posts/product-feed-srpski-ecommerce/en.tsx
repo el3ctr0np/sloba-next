@@ -476,8 +476,8 @@ export default function ProductFeedSerbianEcommerceEN() {
           Need help with your product feed?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          I&apos;ll go through your catalogue, feed structure, and attributes and give you a concrete plan before Google Shopping launches in Serbia (expected H2 2026) — part of our{" "}
-          <Link href="/usluge/google-shopping" className="underline text-white hover:text-yellow-400">Google Shopping management service</Link>.
+          I&apos;ll go through your catalogue, feed structure, and attributes and give you a concrete plan before Google Shopping launches in Serbia (expected H2 2026) — see also my{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-white hover:text-yellow-400">Google Shopping guide</Link>.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Book a free consultation

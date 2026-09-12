@@ -955,8 +955,8 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">For serious brands</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
-          If your brand already invests $3,000+ per month in advertising, you&apos;re ready for Shopping from day one. Before launch, I&apos;ll go through your site, product feed, Merchant Center, and give you a concrete preparation plan — part of our broader{" "}
-          <Link href="/usluge/google-shopping" className="underline text-yellow-400">Google Shopping management service</Link>.
+          If your brand already invests $3,000+ per month in advertising, you&apos;re ready for Shopping from day one. Before launch, I&apos;ll go through your site, product feed, Merchant Center, and give you a concrete preparation plan — I cover the detailed process in our{" "}
+          <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-yellow-400">complete Google Shopping guide</Link>.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">

@@ -587,10 +587,7 @@ export default function YouTubeAdvertisingGuideEN() {
         </Link>.
       </p>
       <p>
-        For more on our YouTube advertising services, visit the{" "}
-        <Link href="/usluge/youtube-oglasi" className="underline font-medium">
-          YouTube Ads management page
-        </Link>. If you also run Search or Shopping campaigns alongside video, see our broader{" "}
+        For more on how I can help with YouTube advertising, alongside Search and Shopping campaigns, see my{" "}
         <Link href="/usluge/google-ads-upravljanje" className="underline font-medium">
           Google Ads management service
         </Link>.

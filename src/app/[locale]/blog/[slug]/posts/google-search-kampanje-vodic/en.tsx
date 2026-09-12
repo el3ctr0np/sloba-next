@@ -456,9 +456,9 @@ export default function GoogleSearchCampaignsGuidePost() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/usluge/search-kampanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search campaign services</p>
-          <p className="text-xs text-gray-500 mb-0">Professional Search campaign management, from €500/mo</p>
+        <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Management</p>
+          <p className="text-xs text-gray-500 mb-0">Professional Google Ads campaign management, from $2,500/mo</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "responsive-search-ads-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">RSA guide</p>

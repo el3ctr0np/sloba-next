@@ -89,6 +89,109 @@ const nextConfig: NextConfig = {
       },
       // meta-oglasavanje redirect removed — LP page now exists at /lp/google-ads
 
+      // ─── Konsolidacija usluga, 12.9.2026 (Q4_SAJT_SPEC.md, talas 4) ───
+      // Sest stranica pod /usluge/ bilo je opisi tipova kampanja, ne usluga, i
+      // vodici ih pokrivaju bolje. Zajedno su za tri meseca dale 122 impresije i
+      // 4 klika. Svaki unutrasnji link na njih prevezan je PRE gasenja, pa ova
+      // preusmerenja hvataju samo spoljne linkove i indeks.
+      // SR i EN putanje se razlikuju, zato dva pravila po stranici plus varijanta
+      // bez prefiksa jezika za stare linkove.
+      {
+        source: "/sr/usluge/search-kampanje",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      {
+        source: "/en/services/search-campaigns",
+        destination: "/en/services/google-ads-management",
+        permanent: true
+      },
+      {
+        source: "/usluge/search-kampanje",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      {
+        source: "/sr/usluge/performance-max",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      {
+        source: "/en/services/performance-max",
+        destination: "/en/services/google-ads-management",
+        permanent: true
+      },
+      {
+        source: "/usluge/performance-max",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      // Shopping ide na eCommerce Growth, jer je to jedina preostala stranica
+      // koja stvarno pokriva prodavnicu i feed.
+      {
+        source: "/sr/usluge/google-shopping",
+        destination: "/sr/usluge/google-ads-za-ecommerce",
+        permanent: true
+      },
+      {
+        source: "/en/services/google-shopping",
+        destination: "/en/services/google-ads-for-ecommerce",
+        permanent: true
+      },
+      {
+        source: "/usluge/google-shopping",
+        destination: "/sr/usluge/google-ads-za-ecommerce",
+        permanent: true
+      },
+      {
+        source: "/sr/usluge/remarketing",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      {
+        source: "/en/services/remarketing",
+        destination: "/en/services/google-ads-management",
+        permanent: true
+      },
+      {
+        source: "/usluge/remarketing",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      {
+        source: "/sr/usluge/youtube-oglasi",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      {
+        source: "/en/services/youtube-ads",
+        destination: "/en/services/google-ads-management",
+        permanent: true
+      },
+      {
+        source: "/usluge/youtube-oglasi",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      // performance-marketing je od sest imala jedina klikove (4 klika, 30
+      // impresija, pozicija 27,5), zato ide na konkretnu stranicu a ne na hub:
+      // hub slabije rangira na te opste upite.
+      {
+        source: "/sr/usluge/performance-marketing",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      {
+        source: "/en/services/performance-marketing",
+        destination: "/en/services/google-ads-management",
+        permanent: true
+      },
+      {
+        source: "/usluge/performance-marketing",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+
       // ─── Old WordPress URLs → New Next.js equivalents (301) ───
       // Blog posts (old WP slugs → new Next.js slugs)
       {
@@ -256,12 +359,12 @@ const nextConfig: NextConfig = {
       // Old service posts → services
       {
         source: "/service-post/shopping-campaign",
-        destination: "/sr/usluge/google-shopping",
+        destination: "/sr/usluge/google-ads-za-ecommerce",
         permanent: true
       },
       {
         source: "/service-post/shopping-campaign/",
-        destination: "/sr/usluge/google-shopping",
+        destination: "/sr/usluge/google-ads-za-ecommerce",
         permanent: true
       },
       {

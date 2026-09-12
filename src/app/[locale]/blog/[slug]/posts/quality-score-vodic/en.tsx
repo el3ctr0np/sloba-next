@@ -555,9 +555,9 @@ export default function QualityScoreGuideEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Audit</p>
           <p className="text-xs text-gray-500 mb-0">Identify low Quality Score keywords that are wasting budget</p>
         </Link>
-        <Link href="/usluge/search-kampanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search Campaigns</p>
-          <p className="text-xs text-gray-500 mb-0">Professional Search campaigns with optimised Quality Score</p>
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Search Campaigns Guide</p>
+          <p className="text-xs text-gray-500 mb-0">My complete approach to Search campaigns, the foundation of every account</p>
         </Link>
 
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-keyword-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

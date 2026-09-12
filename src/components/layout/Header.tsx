@@ -109,8 +109,6 @@ export function Header() {
       title: t("serviceGroups.googleAds"),
       items: [
         { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" as const },
-        { label: t("services.googleShopping"), href: "/usluge/google-shopping" as const },
-        { label: t("services.performanceMarketing"), href: "/usluge/performance-marketing" as const },
         { label: t("services.chatgptAds"), href: "/usluge/chatgpt-ads" as const },
       ]
     },

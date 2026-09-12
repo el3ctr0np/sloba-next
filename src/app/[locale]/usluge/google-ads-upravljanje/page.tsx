@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
-import { Banknote, Clock, Frown, BarChart3 } from "lucide-react";
+import { Banknote, Clock, Frown } from "lucide-react";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -28,591 +28,433 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GoogleAdsUpravljanjePage({ params }: Props) {
   const { locale } = await params;
+  const isEn = locale === "en";
 
   const iconProps = { size: 28, strokeWidth: 1.5 } as const;
+  const ctaLabel = isEn ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta";
 
-  const problems: { icon: ReactNode; title: string; description: string }[] =
-    locale === "en"
-      ? [
-          {
-            icon: <Banknote {...iconProps} className="text-gray-900" />,
-            title: "Budget waste without results",
-            description:
-              "Campaigns are burning through your budget, but conversions are missing or too expensive. You lack clear visibility into what's working."
-          },
-          {
-            icon: <Clock {...iconProps} className="text-gray-900" />,
-            title: "No time or expertise",
-            description:
-              "Google Ads requires constant monitoring and optimization, but you have a business to run."
-          },
-          {
-            icon: <Frown {...iconProps} className="text-gray-900" />,
-            title: "Bad past experiences",
-            description:
-              "Agencies just set up campaigns without real strategy. You never saw genuine ROI."
-          },
-          {
-            icon: <BarChart3 {...iconProps} className="text-gray-900" />,
-            title: "Growth has stalled",
-            description:
-              "Campaigns work okay, but you don't know how to scale them without inflating costs."
-          }
-        ]
-      : [
-          {
-            icon: <Banknote {...iconProps} className="text-gray-900" />,
-            title: "Bacanje novca bez rezultata",
-            description:
-              "Kampanje troše budžet, ali konverzije izostaju ili su preskupe. Nemate jasnu sliku šta funkcioniše."
-          },
-          {
-            icon: <Clock {...iconProps} className="text-gray-900" />,
-            title: "Nedostatak vremena i ekspertize",
-            description:
-              "Google Ads zahteva stalno praćenje i optimizaciju, a vi imate biznis koji vodite."
-          },
-          {
-            icon: <Frown {...iconProps} className="text-gray-900" />,
-            title: "Prethodna loša iskustva",
-            description:
-              "Agencije su samo podešavale kampanje bez stvarne strategije. Niste videli pravi ROI."
-          },
-          {
-            icon: <BarChart3 {...iconProps} className="text-gray-900" />,
-            title: "Rast je stao",
-            description:
-              "Kampanje rade solidno, ali ne znate kako da ih skalirate bez povećanja troškova."
-          }
-        ];
+  const problems: { icon: ReactNode; title: string; description: string }[] = isEn
+    ? [
+        {
+          icon: <Banknote {...iconProps} className="text-gray-900" />,
+          title: "Budget spent, no clear results",
+          description:
+            "Campaigns run, but you don't know what's actually driving conversions, at what cost, or whether it's worth it at all."
+        },
+        {
+          icon: <Clock {...iconProps} className="text-gray-900" />,
+          title: "No time to watch the account daily",
+          description:
+            "Google Ads needs daily attention — auction, budget, and competitor shifts. You run a business, not an ad account."
+        },
+        {
+          icon: <Frown {...iconProps} className="text-gray-900" />,
+          title: "An agency that never delivered",
+          description:
+            "Campaigns got set up, a report showed up every month — but there was never a real strategy or measurable ROI behind it."
+        }
+      ]
+    : [
+        {
+          icon: <Banknote {...iconProps} className="text-gray-900" />,
+          title: "Trošite budžet bez jasnih rezultata",
+          description:
+            "Kampanje rade, ali ne znate tačno šta donosi konverzije, po kojoj ceni i da li se to uopšte isplati."
+        },
+        {
+          icon: <Clock {...iconProps} className="text-gray-900" />,
+          title: "Nemate vremena da pratite nalog svaki dan",
+          description:
+            "Google Ads traži svakodnevnu pažnju - promene u aukciji, budžetu i konkurenciji. Vi vodite biznis, ne nalog."
+        },
+        {
+          icon: <Frown {...iconProps} className="text-gray-900" />,
+          title: "Prošli ste kroz agenciju koja nije isporučila",
+          description:
+            "Kampanje su podešene, izveštaj je stizao svaki mesec, ali prave strategije i merljivog ROI-ja nikad nije bilo."
+        }
+      ];
 
-  const solutions =
-    locale === "en"
-      ? [
-          {
-            title: "Deep analysis before launch",
-            description:
-              "Understanding your business model, margins, ideal customers, and competition — before spending a single euro on ads."
-          },
-          {
-            title: "Proactive optimization",
-            description:
-              "I track signals and react before they impact performance. Daily analysis, not monthly."
-          },
-          {
-            title: "Transparent reporting",
-            description:
-              "You know exactly where every euro goes and what you get in return. No hidden metrics or vague reports."
-          },
-          {
-            title: "Custom campaign structure",
-            description:
-              "Campaigns tailored to your goals, whether the focus is ROAS, CPA, lead quality, or brand awareness."
-          }
-        ]
-      : [
-          {
-            title: "Dubinska analiza pre početka",
-            description:
-              "Razumevanje vašeg biznis modela, marži, idealnih kupaca i konkurencije - pre nego što potrošim i jedan dinar na oglase."
-          },
-          {
-            title: "Proaktivna optimizacija",
-            description:
-              "Pratim signale i reagujem pre nego što utiču na performanse. Svakodnevna analiza, ne mesečna."
-          },
-          {
-            title: "Transparentan reporting",
-            description:
-              "Tačno znate gde ide svaki EUR i šta dobijate zauzvrat. Bez skrivenih metrika ili nejasnih izveštaja."
-          },
-          {
-            title: "Struktura kampanja po meri",
-            description:
-              "Kampanje prilagođene vašim ciljevima, bilo da je fokus na ROAS, CPA, lead quality ili brand awareness."
-          }
-        ];
+  const whatYouGet: { title: string; description: ReactNode }[] = isEn
+    ? [
+        {
+          title: "Search campaigns",
+          description: (
+            <>
+              Direct targeting of people already searching for what you sell.{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "google-search-campaigns-guide" } }}
+                className="text-primary underline"
+              >
+                Guide →
+              </Link>
+            </>
+          )
+        },
+        {
+          title: "Shopping and Performance Max",
+          description: (
+            <>
+              Feed optimization and PMax run with clear audience signals, not a black box.{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }}
+                className="text-primary underline"
+              >
+                Shopping guide →
+              </Link>{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-guide" } }}
+                className="text-primary underline"
+              >
+                PMax guide →
+              </Link>
+            </>
+          )
+        },
+        {
+          title: "Display and remarketing",
+          description: (
+            <>
+              Bringing back visitors who didn&apos;t convert the first time.{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}
+                className="text-primary underline"
+              >
+                Guide →
+              </Link>
+            </>
+          )
+        },
+        {
+          title: "YouTube ads",
+          description: (
+            <>
+              Video advertising, when it actually fits your budget and goal.{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "youtube-advertising-guide" } }}
+                className="text-primary underline"
+              >
+                Guide →
+              </Link>
+            </>
+          )
+        },
+        {
+          title: "Daily optimization",
+          description: "Bid adjustments, negative keywords, and ad A/B testing every week — not once a month."
+        },
+        {
+          title: "Tracking and monthly reporting",
+          description:
+            "GA4 and conversion tracking set up correctly, custom dashboards, and a monthly call to walk through results."
+        }
+      ]
+    : [
+        {
+          title: "Search kampanje",
+          description: (
+            <>
+              Direktno targetiranje kupaca koji već traže vaš proizvod.{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "google-search-kampanje-vodic" } }}
+                className="text-primary underline"
+              >
+                Vodič →
+              </Link>
+            </>
+          )
+        },
+        {
+          title: "Shopping i Performance Max",
+          description: (
+            <>
+              Feed optimizacija i PMax uz jasne audience signale, ne crna kutija.{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }}
+                className="text-primary underline"
+              >
+                Shopping vodič →
+              </Link>{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "performance-max-vodic" } }}
+                className="text-primary underline"
+              >
+                PMax vodič →
+              </Link>
+            </>
+          )
+        },
+        {
+          title: "Display i remarketing",
+          description: (
+            <>
+              Vraćanje posetilaca koji nisu kupili iz prve.{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}
+                className="text-primary underline"
+              >
+                Vodič →
+              </Link>
+            </>
+          )
+        },
+        {
+          title: "YouTube oglasi",
+          description: (
+            <>
+              Video oglašavanje, kad ima smisla za vaš budžet i cilj.{" "}
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: "youtube-oglasavanje-vodic" } }}
+                className="text-primary underline"
+              >
+                Vodič →
+              </Link>
+            </>
+          )
+        },
+        {
+          title: "Svakodnevna optimizacija",
+          description: "Bid adjustments, negativne ključne reči i A/B testiranje oglasa svake nedelje, ne jednom mesečno."
+        },
+        {
+          title: "Tracking i mesečni report",
+          description:
+            "Ispravno podešen GA4 i conversion tracking, custom dashboards i mesečni poziv sa pregledom rezultata."
+        }
+      ];
 
-  const inclusions =
-    locale === "en"
-      ? [
-          {
-            title: "Strategy and planning",
-            items: [
-              "Goal and KPI definition",
-              "Keyword and competitor research",
-              "Campaign structure creation",
-              "Budget allocation planning"
-            ]
-          },
-          {
-            title: "Setup and implementation",
-            items: [
-              "Campaign creation or restructuring",
-              "Ad copywriting (responsive search & display)",
-              "Bid strategy configuration",
-              "Audience targeting and remarketing lists"
-            ]
-          },
-          {
-            title: "Campaign optimization",
-            items: [
-              "Daily performance monitoring",
-              "A/B testing of ads",
-              "Bid adjustments by device, location, and time",
-              "Negative keywords and placement exclusions"
-            ]
-          },
-          {
-            title: "Tracking and analytics",
-            items: [
-              "Google Analytics 4 integration",
-              "Conversion tracking setup",
-              "Custom reporting dashboards",
-              "Attribution modeling"
-            ]
-          },
-          {
-            title: "Monthly reporting",
-            items: [
-              "Key metrics and trends overview",
-              "Analysis of actions taken",
-              "Plan and recommendations for next period",
-              "Live call to discuss results"
-            ]
-          }
-        ]
-      : [
-          {
-            title: "Strategija i planiranje",
-            items: [
-              "Definisanje ciljeva i KPI-jeva",
-              "Istraživanje ključnih reči i konkurencije",
-              "Kreiranje strukture kampanja",
-              "Planiranje budžeta po kampanjama"
-            ]
-          },
-          {
-            title: "Setup i implementacija",
-            items: [
-              "Kreiranje ili restruktuiranje kampanja",
-              "Pisanje oglasa (responsive search i display)",
-              "Podešavanje bid strategija",
-              "Audience targeting i remarketing liste"
-            ]
-          },
-          {
-            title: "Optimizacija kampanja",
-            items: [
-              "Svakodnevno praćenje performansi",
-              "A/B testiranje oglasa",
-              "Bid adjustments po uređaju, lokaciji i vremenu",
-              "Negativne ključne reči i placement exclusions"
-            ]
-          },
-          {
-            title: "Tracking i analitika",
-            items: [
-              "Google Analytics 4 integracija",
-              "Conversion tracking podešavanje",
-              "Custom reporting dashboards",
-              "Attribution modeling"
-            ]
-          },
-          {
-            title: "Mesečni reporting",
-            items: [
-              "Pregled ključnih metrika i trendova",
-              "Analiza sprovedenih akcija",
-              "Plan i preporuke za sledeći period",
-              "Live poziv za diskusiju rezultata"
-            ]
-          }
-        ];
+  const processSteps: { number: number; title: string; description: string }[] = isEn
+    ? [
+        {
+          number: 1,
+          title: "Free call",
+          description: "20 minutes about your goals and the current state of the account."
+        },
+        {
+          number: 2,
+          title: "Audit and strategy",
+          description: "Detailed analysis of the existing account with clear projections."
+        },
+        {
+          number: 3,
+          title: "Onboarding and setup",
+          description: "MCC access, campaign structure, and tracking set up correctly."
+        },
+        {
+          number: 4,
+          title: "Optimization and reporting",
+          description: "Daily work on the account and a monthly call to review results."
+        }
+      ]
+    : [
+        {
+          number: 1,
+          title: "Besplatan poziv",
+          description: "20 minuta o vašim ciljevima i trenutnom stanju naloga."
+        },
+        {
+          number: 2,
+          title: "Audit i strategija",
+          description: "Detaljna analiza postojećeg naloga sa jasnim projekcijama."
+        },
+        {
+          number: 3,
+          title: "Onboarding i setup",
+          description: "MCC pristup, struktura kampanja i ispravno podešen tracking."
+        },
+        {
+          number: 4,
+          title: "Optimizacija i reporting",
+          description: "Svakodnevni rad na nalogu i mesečni poziv sa pregledom rezultata."
+        }
+      ];
 
-  const campaignTypes =
-    locale === "en"
-      ? ([
-          {
-            title: "Search campaigns",
-            description:
-              "Direct targeting of users actively searching for your products or services on Google search.",
-            href: "/usluge/search-kampanje",
-            cta: "Learn more about Search campaigns"
-          },
-          {
-            title: "Shopping campaigns",
-            description:
-              "Feed optimization, campaign structure, and bid strategies for maximum ROAS in eCommerce.",
-            href: "/usluge/google-shopping",
-            cta: "Learn more about Shopping campaigns"
-          },
-          {
-            title: "Performance Max",
-            description:
-              "Strategic PMax with control, clear audience signals, and transparent results.",
-            href: "/usluge/performance-max",
-            cta: "Learn more about Performance Max"
-          },
-          {
-            title: "Display and remarketing",
-            description:
-              "Precise targeting to bring back visitors and increase conversions.",
-            href: "/usluge/remarketing",
-            cta: "Learn more about remarketing"
-          },
-          {
-            title: "YouTube ads",
-            description:
-              "Video advertising for awareness and direct response through skippable and bumper formats.",
-            href: "/usluge/youtube-oglasi",
-            cta: "Learn more about YouTube ads"
-          }
-        ] as const)
-      : ([
-          {
-            title: "Search kampanje",
-            description:
-              "Direktno targetiranje korisnika koji aktivno traže vaše proizvode ili usluge na Google pretrazi.",
-            href: "/usluge/search-kampanje",
-            cta: "Više o Search kampanjama"
-          },
-          {
-            title: "Shopping kampanje",
-            description:
-              "Optimizacija feed-a, struktura kampanja i bid strategije za maksimalan ROAS u eCommerce-u.",
-            href: "/usluge/google-shopping",
-            cta: "Više o Shopping kampanjama"
-          },
-          {
-            title: "Performance Max",
-            description:
-              "Strateški PMax uz kontrolu, jasne audience signale i transparentne rezultate.",
-            href: "/usluge/performance-max",
-            cta: "Više o Performance Max"
-          },
-          {
-            title: "Display i remarketing",
-            description:
-              "Precizno targetiranje za povratak posetilaca i povećanje konverzija.",
-            href: "/usluge/remarketing",
-            cta: "Više o remarketingu"
-          },
-          {
-            title: "YouTube oglasi",
-            description:
-              "Video oglašavanje za awareness i direct response kroz skippable i bumper formate.",
-            href: "/usluge/youtube-oglasi",
-            cta: "Više o YouTube oglasima"
-          }
-        ] as const);
-
-  const processSteps =
-    locale === "en"
-      ? [
-          {
-            number: 1,
-            title: "Free consultation",
-            description:
-              "20-minute call about your goals, current campaign status, and challenges."
-          },
-          {
-            number: 2,
-            title: "Audit and strategy",
-            description:
-              "Detailed analysis of existing account and strategy development with clear projections."
-          },
-          {
-            number: 3,
-            title: "Onboarding",
-            description:
-              "Access setup, communication channels definition, and reporting agreement."
-          },
-          {
-            number: 4,
-            title: "Implementation",
-            description:
-              "Restructuring or creating campaigns according to agreed strategy."
-          },
-          {
-            number: 5,
-            title: "Optimization and scaling",
-            description:
-              "Continuous performance improvement and scaling of winning campaigns."
-          }
-        ]
-      : [
-          {
-            number: 1,
-            title: "Besplatna konsultacija",
-            description:
-              "20-minutni poziv o vašim ciljevima, trenutnom stanju kampanja i izazovima."
-          },
-          {
-            number: 2,
-            title: "Audit i strategija",
-            description:
-              "Detaljna analiza postojećeg naloga i izrada strategije sa jasnim projekcijama."
-          },
-          {
-            number: 3,
-            title: "Onboarding",
-            description:
-              "Setup pristupa, definisanje komunikacionih kanala i dogovor oko reportinga."
-          },
-          {
-            number: 4,
-            title: "Implementacija",
-            description:
-              "Restruktuiranje ili kreiranje kampanja prema dogovorenoj strategiji."
-          },
-          {
-            number: 5,
-            title: "Optimizacija i skaliranje",
-            description:
-              "Kontinuirano poboljšanje performansi i skaliranje pobedničkih kampanja."
-          }
-        ];
-
-  const results =
-    locale === "en"
-      ? [
-          {
-            value: "3.7x",
-            label: "average ROAS (eCommerce)"
-          },
-          { value: "−35%", label: "CPA reduction through continuous optimization" },
-          { value: "3x", label: "UK Search Awards" }
-        ]
-      : [
-          {
-            value: "3.7x",
-            label: "prosečan ROAS (eCommerce)"
-          },
-          { value: "−35%", label: "smanjenje CPA kroz kontinuiranu optimizaciju" },
-          { value: "3x", label: "UK Search Awards" }
-        ];
-
-  const faqs: { question: string; answer: string; answerRich?: ReactNode }[] =
-    locale === "en"
-      ? [
-          {
-            question: "How long does it take to see results?",
-            answer:
-              "I implement first optimizations immediately after taking over the account. Significant improvements come after 4-6 weeks, and for full optimization expect 2-3 months. Reason: Google's algorithm needs time to learn and adjust."
-          },
-          {
-            question: "Do you need access to my Google Ads account?",
-            answer:
-              "Yes, admin access is required so I can implement all necessary changes. The account remains under your ownership — I get access through MCC (My Client Center)."
-          },
-          {
-            question: "What if I already have campaigns that work?",
-            answer:
-              "I start with an audit of the current state and identify opportunities for improvement before making major changes. I never tear down what's working — I build on it."
-          },
-          {
-            question: "Do you work with small budgets?",
-            answer:
-              "I don't take on monthly management under $2,500/month — I can't deliver it at a senior level below that. For smaller budgets: consultations ($200/hour) or a Kickstart project (from $990)."
-          },
-          {
-            question: "How often will we communicate?",
-            answer:
-              "Minimum one monthly call plus written report. For urgent questions, I'm available via Slack or email within 24 hours."
-          },
-          {
-            question: "What's the minimum contract length?",
-            answer:
-              "I recommend a minimum of 3 months for testing and optimization. No long-term contracts — results keep me, not contracts."
-          },
-          {
-            question: "How much does Google Ads cost?",
-            answer:
-              "The cost of Google Ads depends on industry, competition, and goals. Average CPC varies from $0.10-0.80 in emerging markets to $1-5+ in competitive Western markets. Monthly management (eCommerce Growth) starts from $2,500/month. For smaller ad spend, Kickstart and consultations are priced per scope."
-          },
-          {
-            question: "Does Google Ads work for small businesses?",
-            answer:
-              "I intentionally keep a limited number of accounts. If you're not yet ready for a serious budget, start with a consultation — you'll get a plan you can execute yourself."
-          },
-          {
-            question: "What's the difference between hiring an agency and a freelance consultant?",
-            answer:
-              "With an agency, your account often gets passed between junior account managers. Working directly with me means one senior person handles strategy and execution — no account handoffs, no junior training on your budget. Pricing is also typically lower than agency overhead."
-          },
-          {
-            question: "What does onboarding actually look like?",
-            answer:
-              "After the free call and account audit, I request MCC access, agree on KPIs and reporting cadence, then implement the strategy within the first 1-2 weeks. You get a shared document with goals, timeline, and access checklist before we start — no surprises."
-          }
-        ]
-      : [
-          {
-            question: "Koliko vremena treba da se vide rezultati?",
-            answer:
-              "Prve optimizacije sprovodim odmah po preuzimanju naloga. Značajna poboljšanja dolaze nakon 4-6 nedelja, a za punu optimizaciju računajte 2-3 meseca. Razlog: Google-ovom algoritmu treba vreme da nauči i prilagodi se."
-          },
-          {
-            question: "Da li je ovo isto što i Google Ads agencija?",
-            answer:
-              "Nije potpuno isto. Ova stranica opisuje obim usluge - šta tačno radim na vašem nalogu svakog meseca. Ako birate između modela saradnje (agencija, freelancer, in-house), tu odluku najbolje rešava Google Ads agencija stranica.",
-            answerRich: (
-              <>
-                Nije potpuno isto. Ova stranica opisuje obim usluge - šta tačno radim
-                na vašem nalogu svakog meseca. Ako birate između modela saradnje
-                (agencija, freelancer, in-house), tu odluku najbolje rešava{" "}
-                <Link
-                  href="/usluge/google-ads-agencija"
-                  className="text-primary underline"
-                >
-                  Google Ads agencija stranica
-                </Link>
-                .
-              </>
-            )
-          },
-          {
-            question: "Da li morate imati pristup mom Google Ads nalogu?",
-            answer:
-              "Da, potreban je admin pristup kako bih mogao da sprovodim sve neophodne izmene. Nalog ostaje u vašem vlasništvu - ja dobijam pristup kroz MCC (My Client Center)."
-          },
-          {
-            question: "Šta ako već imam kampanje koje rade?",
-            answer:
-              "Počinjem auditom postojećeg stanja i identifikujem prilike za poboljšanje pre većih promena. Nikada ne rušim ono što funkcioniše - nadograđujem."
-          },
-          {
-            question: "Da li radite i sa malim budžetima?",
-            answer:
-              "Mesečno vođenje ispod €700/mes ne radim - ne mogu da ga isporučim na senior nivou. Za manje budžete: konsultacije (€150/sat) ili Kickstart projekat (od €690)."
-          },
-          {
-            question: "Koliko često ćemo komunicirati?",
-            answer:
-              "Minimum jedan mesečni call plus pisani report. Za hitna pitanja dostupan sam putem Slack-a ili email-a u roku od 24h."
-          },
-          {
-            question: "Koja je minimalna dužina saradnje?",
-            answer:
-              "Preporučujem minimum 3 meseca za testiranje i optimizaciju. Nema dugoročnih ugovora - rezultati me zadržavaju, ne ugovori."
-          },
-          {
-            question: "Koliko košta Google oglašavanje u Srbiji?",
-            answer:
-              "Cena Google oglašavanja zavisi od industrije, konkurencije i ciljeva. Prosečan CPC u Srbiji je €0,10-0,80. Mesečno vođenje počinje od €700. Za manja ulaganja tu su one-off projekti i konsultacije - cena zavisi od obima."
-          },
-          {
-            question: "Da li Google oglašavanje funkcioniše za malu firmu?",
-            answer:
-              "Svesno vodim ograničen broj naloga. Ako još niste spremni za ozbiljan budžet, počnite konsultacijom - dobićete plan koji možete sami da izvršite."
-          },
-          {
-            question: "Koja je razlika između agencije i freelance konsultanta?",
-            answer:
-              "Kod agencije vaš nalog često prolazi kroz junior account managere. Radeći direktno sa mnom, jedna senior osoba vodi i strategiju i izvršenje - bez predaje naloga i bez učenja na vašem budžetu. Cena je po pravilu i niža od agencijskog overhead-a."
-          },
-          {
-            question: "Kako konkretno izgleda onboarding?",
-            answer:
-              "Nakon besplatnog poziva i audita naloga, tražim MCC pristup, dogovaramo KPI-jeve i dinamiku reportinga, pa implementiram strategiju u prve 1-2 nedelje. Dobijate zajednički dokument sa ciljevima, rokovima i checklist-om pristupa pre nego što krenemo - bez iznenađenja."
-          },
-          {
-            question: "Koje Google Ads usluge tačno dobijam kroz mesečno vođenje kampanja?",
-            answer:
-              "Strategiju i planiranje, setup i implementaciju, svakodnevnu optimizaciju, tracking i mesečni izveštaj - sve iz jedne ruke, bez podele na posebne pakete koje neke agencije prodaju odvojeno."
-          }
-        ];
+  const faqs: { question: string; answer: string; answerRich?: ReactNode }[] = isEn
+    ? [
+        {
+          question: "How long until I see results?",
+          answer:
+            "I run the first optimizations right after taking over the account. Visible improvement comes after 4-6 weeks, full optimization takes 2-3 months — that's how long Google's algorithm needs to learn the account."
+        },
+        {
+          question: "Do you need access to my Google Ads account?",
+          answer:
+            "Yes, admin access is required so I can implement changes. The account stays under your ownership — I get access through MCC (My Client Center)."
+        },
+        {
+          question: "What if I already have campaigns that work?",
+          answer:
+            "I start with an audit of the current account and look for room to improve before touching anything. I don't tear down what's working — I build on it."
+        },
+        {
+          question: "Do you work with small budgets?",
+          answer:
+            "I don't take on monthly management under $2,500/month — I can't deliver it at a senior level below that. For smaller budgets there's Kickstart (from $990) and consulting ($200/hr)."
+        },
+        {
+          question: "How often will we talk?",
+          answer:
+            "At least one monthly call plus a written report. For anything urgent, I'm reachable by email or Slack within 24 hours."
+        },
+        {
+          question: "Is this the same as hiring a Google Ads agency?",
+          answer:
+            "Not quite. This page describes the scope of work — what I actually do on your account each month. If you're weighing agency vs. freelancer vs. in-house, that decision is better answered on the Google Ads agency page.",
+          answerRich: (
+            <>
+              Not quite. This page describes the scope of work — what I actually do on your
+              account each month. If you&apos;re weighing agency vs. freelancer vs. in-house, that
+              decision is better answered on the{" "}
+              <Link href="/usluge/google-ads-agencija" className="text-primary underline">
+                Google Ads agency page
+              </Link>
+              .
+            </>
+          )
+        },
+        {
+          question: "What's the minimum contract length?",
+          answer:
+            "I recommend a minimum of three months for testing and optimization. No long-term lock-in — results keep me, not contracts."
+        }
+      ]
+    : [
+        {
+          question: "Koliko vremena treba da se vide rezultati?",
+          answer:
+            "Prve optimizacije radim odmah po preuzimanju naloga. Vidljiva poboljšanja dolaze posle 4-6 nedelja, a puna optimizacija traži 2-3 meseca - toliko treba Google algoritmu da nauči nalog."
+        },
+        {
+          question: "Da li je potreban pristup mom Google Ads nalogu?",
+          answer:
+            "Da, admin pristup je neophodan da bih mogao da sprovedem sve izmene. Nalog ostaje u vašem vlasništvu - ja pristupam kroz MCC (My Client Center)."
+        },
+        {
+          question: "Šta ako već imam kampanje koje rade?",
+          answer:
+            "Počinjem auditom postojećeg stanja i tražim prilike za poboljšanje pre bilo kakve promene. Ono što funkcioniše ne rušim - nadograđujem."
+        },
+        {
+          question: "Da li radite i sa malim budžetima?",
+          answer:
+            "Mesečno vođenje ispod €700 ne radim - ne mogu da ga isporučim na senior nivou. Za manje budžete tu su Kickstart (od €690) i konsultacije (€150/sat)."
+        },
+        {
+          question: "Koliko često ćemo komunicirati?",
+          answer:
+            "Minimum jedan mesečni poziv i pisani report. Za hitna pitanja dostupan sam mejlom ili preko Slack-a u roku od 24h."
+        },
+        {
+          question: "Da li je ovo isto što i Google Ads agencija?",
+          answer:
+            "Nije potpuno isto. Ova stranica opisuje obim usluge - šta tačno radim na vašem nalogu svakog meseca. Ako birate između modela saradnje (agencija, freelancer, in-house), tu odluku najbolje rešava stranica o Google Ads agenciji.",
+          answerRich: (
+            <>
+              Nije potpuno isto. Ova stranica opisuje obim usluge - šta tačno radim na vašem
+              nalogu svakog meseca. Ako birate između modela saradnje (agencija, freelancer,
+              in-house), tu odluku najbolje rešava{" "}
+              <Link href="/usluge/google-ads-agencija" className="text-primary underline">
+                stranica o Google Ads agenciji
+              </Link>
+              .
+            </>
+          )
+        },
+        {
+          question: "Koja je minimalna dužina saradnje?",
+          answer:
+            "Preporučujem minimum tri meseca za testiranje i optimizaciju. Nema dugoročnih ugovora - rezultati me zadržavaju, ne ugovor."
+        }
+      ];
 
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Slobodan Jelisavac",
     url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
+    jobTitle: isEn ? "Google Ads Consultant" : "Google Ads Konsultant"
   };
 
-  const serviceSchema =
-    locale === "en"
-      ? {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: "Google Ads Management Services",
-          description:
-            "Professional Google Ads management and PPC account management for eCommerce and B2B companies globally. Search, Shopping, Performance Max, Display, and YouTube campaigns with proven results.",
-          provider: {
-            "@type": "Person",
-            name: "Slobodan Jelisavac",
-            url: "https://www.slobodan-jelisavac.com",
-            jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-            knowsAbout: [
-              "Google Ads",
-              "Performance Marketing",
-              "eCommerce Advertising",
-              "B2B Lead Generation"
-            ]
-          },
-          areaServed: [
-            { "@type": "Country", name: "United States" },
-            { "@type": "Country", name: "United Kingdom" },
-            { "@type": "Country", name: "Australia" },
-            { "@type": "Country", name: "Germany" },
-            { "@type": "Country", name: "Serbia" },
-            { "@type": "Country", name: "Croatia" }
-          ],
-          serviceType: "Google Ads Management",
-          offers: {
-            "@type": "Offer",
-            priceCurrency: "USD",
+  const serviceSchema = isEn
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Google Ads Management Services",
+        description:
+          "Professional Google Ads management for eCommerce and B2B companies globally. Search, Shopping, Performance Max, Display, and YouTube campaigns, run by a senior consultant.",
+        provider: {
+          "@type": "Person",
+          name: "Slobodan Jelisavac",
+          url: "https://www.slobodan-jelisavac.com",
+          jobTitle: "Google Ads Consultant",
+          knowsAbout: [
+            "Google Ads",
+            "Performance Marketing",
+            "eCommerce Advertising",
+            "B2B Lead Generation"
+          ]
+        },
+        areaServed: [
+          { "@type": "Country", name: "United States" },
+          { "@type": "Country", name: "United Kingdom" },
+          { "@type": "Country", name: "Australia" },
+          { "@type": "Country", name: "Germany" },
+          { "@type": "Country", name: "Serbia" },
+          { "@type": "Country", name: "Croatia" }
+        ],
+        serviceType: "Google Ads Management",
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "USD",
+          price: "2500",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
             price: "2500",
-            priceSpecification: {
-              "@type": "UnitPriceSpecification",
-              price: "2500",
-              priceCurrency: "USD",
-              unitText: "monthly",
-              description: "Monthly Google Ads management (eCommerce Growth) — from $2,500/month"
-            }
+            priceCurrency: "USD",
+            unitText: "monthly",
+            description: "Monthly Google Ads management — from $2,500/month"
           }
         }
-      : {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: "Google oglašavanje - upravljanje Google Ads nalogom",
-          alternateName: "Google Ads usluge",
-          description:
-            "Profesionalne Google Ads usluge - vođenje i upravljanje Google Ads kampanjama za eCommerce i B2B kompanije u Srbiji, UK i EU. Search, Shopping, Performance Max, Display i YouTube kampanje.",
-          provider: {
-            "@type": "Person",
-            name: "Slobodan Jelisavac",
-            url: "https://www.slobodan-jelisavac.com",
-            jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-            knowsAbout: [
-              "Google Ads",
-              "Performance Marketing",
-              "eCommerce Advertising",
-              "B2B Lead Generation"
-            ]
-          },
-          areaServed: [
-            { "@type": "Country", name: "Serbia" },
-            { "@type": "Country", name: "United Kingdom" },
-            { "@type": "Country", name: "Germany" },
-            { "@type": "Country", name: "Croatia" }
-          ],
-          serviceType: "Google Ads Management",
-          offers: {
-            "@type": "Offer",
-            priceCurrency: "EUR",
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Google oglašavanje - upravljanje Google Ads nalogom",
+        alternateName: "Google Ads usluge",
+        description:
+          "Profesionalne Google Ads usluge - vođenje Google Ads kampanja za eCommerce i B2B kompanije u Srbiji, UK i EU. Search, Shopping, Performance Max, Display i YouTube kampanje, iz jedne senior ruke.",
+        provider: {
+          "@type": "Person",
+          name: "Slobodan Jelisavac",
+          url: "https://www.slobodan-jelisavac.com",
+          jobTitle: "Google Ads Konsultant",
+          knowsAbout: [
+            "Google Ads",
+            "Performance Marketing",
+            "eCommerce Advertising",
+            "B2B Lead Generation"
+          ]
+        },
+        areaServed: [
+          { "@type": "Country", name: "Serbia" },
+          { "@type": "Country", name: "United Kingdom" },
+          { "@type": "Country", name: "Germany" },
+          { "@type": "Country", name: "Croatia" }
+        ],
+        serviceType: "Google Ads Management",
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "EUR",
+          price: "700",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
             price: "700",
-            priceSpecification: {
-              "@type": "UnitPriceSpecification",
-              price: "700",
-              priceCurrency: "EUR",
-              unitText: "mesečno",
-              description: "Mesečno vođenje Google Ads naloga - već od €700"
-            }
+            priceCurrency: "EUR",
+            unitText: "mesečno",
+            description: "Mesečno vođenje Google Ads naloga - već od €700"
           }
-        };
+        }
+      };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -627,638 +469,265 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
     }))
   };
 
-  const breadcrumbSchema =
-    locale === "en"
-      ? {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://www.slobodan-jelisavac.com"
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Services",
-              item: "https://www.slobodan-jelisavac.com/en/services"
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: "Google Ads Management",
-              item: "https://www.slobodan-jelisavac.com/en/services/google-ads-management"
-            }
-          ]
-        }
-      : {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Početna",
-              item: "https://www.slobodan-jelisavac.com"
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Usluge",
-              item: "https://www.slobodan-jelisavac.com/sr/usluge"
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: "Google Ads upravljanje",
-              item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-upravljanje"
-            }
-          ]
-        };
+  const breadcrumbSchema = isEn
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.slobodan-jelisavac.com" },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://www.slobodan-jelisavac.com/en/services"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Google Ads Management",
+            item: "https://www.slobodan-jelisavac.com/en/services/google-ads-management"
+          }
+        ]
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Početna", item: "https://www.slobodan-jelisavac.com" },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Usluge",
+            item: "https://www.slobodan-jelisavac.com/sr/usluge"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Google Ads upravljanje",
+            item: "https://www.slobodan-jelisavac.com/sr/usluge/google-ads-upravljanje"
+          }
+        ]
+      };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      {/* Hero — dark, impact-driven */}
+      {/* Hero - kome je namenjeno, sta se desava kad me angazujete, jedan dokaz */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* Breadcrumb */}
           <nav className="mb-8 text-sm" aria-label="Breadcrumb">
             <ol className="flex items-center gap-2 text-slate-400">
               <li>
-                <Link
-                  href="/"
-                  className="hover:text-white transition-colors"
-                >
-                  {locale === "en" ? "Home" : "Početna"}
+                <Link href="/" className="hover:text-white transition-colors">
+                  {isEn ? "Home" : "Početna"}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li>
-                <Link
-                  href="/usluge"
-                  className="hover:text-white transition-colors"
-                >
-                  {locale === "en" ? "Services" : "Usluge"}
+                <Link href="/usluge" className="hover:text-white transition-colors">
+                  {isEn ? "Services" : "Usluge"}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li className="text-accent font-medium">
-                {locale === "en" ? "Google Ads Management" : "Google Ads upravljanje"}
+                {isEn ? "Google Ads Management" : "Google Ads upravljanje"}
               </li>
             </ol>
           </nav>
 
           <div className="max-w-3xl">
-            {locale !== "en" && (
-              <p className="text-xs uppercase tracking-wider text-slate-400 mb-3">
-                Google Ads usluge
-              </p>
+            {!isEn && (
+              <p className="text-xs uppercase tracking-wider text-slate-400 mb-3">Google Ads usluge</p>
             )}
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              {locale === "en"
+              {isEn
                 ? "Google Ads management where a senior runs your account — not a team of juniors"
                 : "Vođenje Google Ads kampanja: senior na vašem nalogu, ne tim juniora"}
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              {locale === "en" ? (
+              {isEn ? (
                 <>
-                  I&apos;ve spent ten years running Google Ads accounts for eCommerce and B2B businesses —
-                  UK, US, and EU markets. When you hand me your account, you don&apos;t get an account
-                  manager and a team of juniors learning on your budget:{" "}
-                  <strong className="text-white">strategy, campaign structure, and daily optimization
-                  are done by me</strong>. And I measure myself on{" "}
-                  <strong className="text-white">ROAS, CPA, and profit</strong> — the same numbers you
-                  measure your business by.
+                  This is for eCommerce and B2B companies that want their Google Ads account run
+                  by <strong className="text-white">one senior person</strong> — not a team of
+                  juniors learning on your budget. Once I take over, the first 1-2 weeks go into
+                  audit and setup, then daily optimization and a monthly report take over.
                 </>
               ) : (
                 <>
-                  Deset godina vodim Google Ads naloge za eCommerce i B2B biznise - od srpskih firmi
-                  do brendova sa UK i US tržišta. Kad mi poverite nalog, ne dobijate account managera
-                  i tim juniora koji uči na vašem budžetu:{" "}
-                  <strong className="text-white">strategiju, strukturu kampanja i svakodnevnu
-                  optimizaciju radim ja</strong>. I merim se kroz{" "}
-                  <strong className="text-white">ROAS, CPA i profit</strong> - iste brojke kroz koje
-                  vi merite svoj biznis.
+                  Ovo je za eCommerce i B2B firme koje žele da im nalog vodi{" "}
+                  <strong className="text-white">jedna senior osoba</strong> - ne tim koji uči na
+                  njihovom budžetu. Kad preuzmem nalog, prvih 1-2 nedelje idu na audit i setup, a
+                  posle toga sledi svakodnevna optimizacija i mesečni report.
                 </>
               )}
             </p>
 
-            {/* Results — social proof odmah u heroju */}
-            <div className="grid grid-cols-3 gap-6 mb-10 max-w-lg">
-              {results.map((result) => (
-                <div key={result.label}>
-                  <p className="text-2xl md:text-3xl font-heading font-bold text-accent">
-                    {result.value}
-                  </p>
-                  <p className="text-xs text-slate-400 mt-1">
-                    {result.label}
-                  </p>
-                </div>
-              ))}
+            {/* Jedan dokaz */}
+            <div className="mb-8">
+              <p className="text-3xl md:text-4xl font-heading font-bold text-accent">3.7x</p>
+              <p className="text-sm text-slate-400 mt-1">
+                {isEn
+                  ? "average ROAS across eCommerce accounts I run"
+                  : "prosečan ROAS u eCommerce nalozima koje vodim"}
+              </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="/kontakt" variant="secondary">
-                {locale === "en"
-                  ? "Book a free 20-minute call"
-                  : "Zakažite besplatnih 20 minuta"}
-              </Button>
-            </div>
+            <Button href="/kontakt" variant="secondary">
+              {ctaLabel}
+            </Button>
 
-            {/* Trust badges */}
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-              <span>{locale === "en" ? "10+ years of experience" : "10+ godina iskustva"}</span>
-              <span>3x UK Search Awards{locale === "en" ? " winner" : ""}</span>
-              <span>{locale === "en" ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
+              <span>{isEn ? "10+ years of experience" : "10+ godina iskustva"}</span>
+              <span>3x UK Search Awards{isEn ? " winner" : ""}</span>
+              <span>{isEn ? "50+ brands across 6+ countries" : "50+ brendova iz 6+ zemalja"}</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SEO Intro */}
-      <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
-        <div className="max-w-3xl mx-auto">
+      {/* Problem - tri stavke */}
+      <Section>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            {isEn ? "Three things I see on most accounts" : "Tri stvari koje najčešće vidim na nalozima"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {isEn
+              ? "Patterns that repeat regardless of industry or account size."
+              : "Obrasci koji se ponavljaju bez obzira na industriju ili veličinu naloga."}
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {problems.map((problem) => (
+            <Card key={problem.title} className="h-full">
+              <div className="flex-shrink-0 mb-3">{problem.icon}</div>
+              <h3 className="text-lg font-heading font-semibold mb-2">{problem.title}</h3>
+              <p className="text-gray-600 text-base">{problem.description}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Sta dobijate - numerisano */}
+      <Section background="gray">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-heading font-bold mb-4">
+            {isEn ? "What you get" : "Šta dobijate"}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {isEn
+              ? "Campaigns built around your margins and goals — the mix depends on budget and industry."
+              : "Kampanje gradim oko vaših marži i ciljeva - kombinacija zavisi od budžeta i industrije."}
+          </p>
+        </div>
+        <div className="max-w-3xl mx-auto space-y-4">
+          {whatYouGet.map((item, index) => (
+            <div
+              key={item.title}
+              className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
+            >
+              <span className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading bg-slate-900 text-white">
+                {index + 1}
+              </span>
+              <div>
+                <h3 className="font-heading font-semibold text-lg mb-1">{item.title}</h3>
+                <p className="text-gray-600 text-base">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Dokaz - slucaj iz prakse, NDA */}
+      <Section>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-heading font-bold mb-6">
+            {isEn ? "Proof, not a promise" : "Dokaz, ne obećanje"}
+          </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            {locale === "en" ? (
+            {isEn ? (
               <>
-                <strong>Google Ads</strong> is the fastest way to reach customers who are
-                actively searching for your products or services. But without proper strategy,
-                campaign structure, and continuous optimization — it easily turns into wasted money.
-                That's where I come in.
+                One case from practice: a UK eCommerce client on Shopping campaigns, working
+                together for 2+ years and still active. POAS (profit on ad spend) sits at{" "}
+                <strong>1.78x</strong>, revenue is in the six-figure range (GBP).
               </>
             ) : (
               <>
-                <strong>Google oglašavanje</strong> je najbrži način da dođete do kupaca koji
-                aktivno traže vaše proizvode ili usluge. Ali bez pravilne strategije, strukture
-                kampanja i kontinuirane optimizacije - lako se pretvori u bacanje novca.
-                Upravo tu ulazim ja.
+                Jedan primer iz prakse: UK eCommerce klijent na Shopping kampanjama, saradnja
+                duže od dve godine, i dalje je aktivna. POAS (profit on ad spend) je{" "}
+                <strong>1.78x</strong>, prihod je u šestocifrenom rasponu (GBP).
               </>
             )}
           </p>
           <p className="text-gray-600 text-base leading-relaxed">
-            {locale === "en" ? (
-              <>
-                With over a decade of experience managing Google Ads campaigns for brands
-                across the UK, Germany, US, and beyond, I help companies turn ad spend into
-                measurable revenue. No cookie-cutter approaches — every strategy is tailored
-                to your business, industry, and goals.
-              </>
-            ) : (
-              <>
-                Sa preko decenije iskustva u vođenju Google Ads kampanja za brendove
-                u Srbiji, UK, Nemačkoj i Hrvatskoj, pomažem kompanijama da pretvore
-                ad spend u merljiv prihod. Bez generičkih pristupa - svaka strategija
-                je prilagođena vašem biznisu, industriji i ciljevima.
-              </>
-            )}
+            {isEn
+              ? "No client name, no absolute revenue figure — that's an NDA, not a marketing trick. Across the eCommerce accounts I run, average ROAS is 3.7x, and the work has earned 3x UK Search Awards."
+              : "Bez imena klijenta i bez apsolutne cifre prihoda - to je NDA, ne marketinški trik. U eCommerce nalozima koje vodim prosečan ROAS je 3.7x, a rad je nagrađen sa tri UK Search Awards."}
           </p>
-        </div>
-      </section>
-
-      {/* Problem → Solution pairs */}
-      <Section>
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Google Ads management: from problem to solution"
-              : "Od problema do rešenja"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "The issues I see most often on Google Ads accounts — and how professional management fixes each one."
-              : "Problemi sa kojima se najčešće susrećem na Google Ads nalozima - i kako ih profesionalno vođenje kampanja rešava."}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          {problems.map((problem, index) => {
-            const solution = solutions[index];
-            return (
-              <Card key={problem.title} className="h-full">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="flex-shrink-0">{problem.icon}</div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wider text-gray-400 mb-1">
-                      {locale === "en" ? "Problem" : "Problem"}
-                    </p>
-                    <h3 className="text-lg font-heading font-semibold">
-                      {problem.title}
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-600 text-base mb-4">
-                  {problem.description}
-                </p>
-                <div className="border-t border-gray-100 pt-4">
-                  <p className="text-xs uppercase tracking-wider text-primary mb-1">
-                    {locale === "en" ? "Solution" : "Rešenje"}
-                  </p>
-                  <h4 className="font-heading font-semibold mb-1">
-                    {solution.title}
-                  </h4>
-                  <p className="text-gray-600 text-sm">{solution.description}</p>
-                </div>
-              </Card>
-            );
-          })}
         </div>
       </Section>
 
-      {/* What's included */}
-      <Section>
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "What's included in Google Ads management"
-              : "Šta uključuje usluga vođenja Google Ads kampanja"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Complete Google Ads service — from research and setup to optimization and monthly reporting."
-              : "Kompletna usluga Google oglašavanja - od istraživanja i postavljanja do optimizacije i mesečnog reportinga."}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {inclusions.map((block) => (
-            <Card key={block.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-4">
-                {block.title}
-              </h3>
-              <ul className="space-y-2 text-gray-600 text-sm">
-                {block.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="text-green-600 mt-0.5 flex-shrink-0">
-                      ✓
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          ))}
-        </div>
-      </Section>
-
-      {/* Campaign types */}
+      {/* Cena i proces - vidljivo */}
       <Section background="gray">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Google Ads campaign types I manage"
-              : "Tipovi Google Ads kampanja koje vodim"}
+            {isEn ? "Price and process" : "Cena i proces"}
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Each campaign type requires a specific approach. I choose the right combination based on your goals, industry, and budget."
-              : "Svaki tip kampanje zahteva specifičan pristup. Biram pravu kombinaciju na osnovu vaših ciljeva, industrije i budžeta."}
+        </div>
+        <div className="max-w-3xl mx-auto bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-card mb-10">
+          <p className="text-2xl md:text-3xl font-heading font-bold text-primary mb-1">
+            {isEn ? "From $2,500" : "Od €700"}
+            <span className="text-sm text-gray-500 font-normal">{isEn ? "/mo" : "/mes"}</span>
           </p>
-          <p className="text-base text-gray-500 mt-3">
-            {locale === "en" ? (
+          <p className="text-gray-600 text-base mb-2">
+            {isEn
+              ? "For brands with an ad spend budget of $10k+/month."
+              : "Za budžete od €1.500+/mesečno ad spend-a."}
+          </p>
+          <p className="text-gray-500 text-sm">
+            {isEn ? (
               <>
-                Read detailed information about each campaign type in the{" "}
-                <Link href="/blog" className="text-primary underline">
-                  Google Ads guide
+                Smaller budget? Kickstart (from $990, one-off) or consulting ($200/hr) — see the{" "}
+                <Link href="/usluge/konsultacije" className="text-primary underline">
+                  consulting page
                 </Link>
+                .
               </>
             ) : (
               <>
-                Detaljno o svakom tipu kampanje čitajte u{" "}
-                <Link href="/blog" className="text-primary underline">
-                  Google Ads vodiču
+                Manji budžet? Kickstart paket (od €690, jednokratno) ili{" "}
+                <Link href="/usluge/konsultacije" className="text-primary underline">
+                  konsultacije (€150/sat)
                 </Link>
+                .
               </>
             )}
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {campaignTypes.map((campaign) => (
-            <Card key={campaign.title} className="h-full">
-              <h3 className="text-lg font-heading font-semibold mb-2">
-                {campaign.title}
-              </h3>
-              <p className="text-gray-600 text-base mb-4">
-                {campaign.description}
-              </p>
-              <Link
-                href={campaign.href}
-                className="text-primary font-semibold text-sm"
-              >
-                {campaign.cta} →
-              </Link>
-            </Card>
-          ))}
-        </div>
-      </Section>
-
-      {/* Who is this for — ICP targeting */}
-      <Section>
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Who is this service for"
-              : "Kome je namenjena ova Google Ads usluga"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Google Ads works best for businesses with a clear product or service and commitment to long-term growth."
-              : "Google oglašavanje najbolje funkcioniše za biznise sa jasnim proizvodom ili uslugom i spremnošću za dugoročan rast."}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-card">
-            <h3 className="font-heading font-bold text-lg mb-4">
-              {locale === "en" ? "eCommerce brands" : "eCommerce brendovi"}
-            </h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Online stores looking for higher ROAS from Google Shopping and PMax"
-                  : "Online prodavnice koje žele veći ROAS iz Google Shopping-a i PMax-a"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Brands with 50+ products that need structured feed optimization"
-                  : "Brendovi sa 50+ proizvoda koji trebaju strukturiranu feed optimizaciju"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Companies with ad spend budget of $10k+/month"
-                  : "Firme sa ad spend budžetom od €1.500+/mesečno"}
-              </li>
-            </ul>
-          </div>
-          <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-card">
-            <h3 className="font-heading font-bold text-lg mb-4">
-              {locale === "en" ? "B2B & service companies" : "B2B i uslužne firme"}
-            </h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Companies generating leads through Search campaigns"
-                  : "Kompanije koje generišu leadove putem Search kampanja"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "Service companies with high customer lifetime value (LTV)"
-                  : "Uslužne firme sa visokom vrednošću po klijentu (LTV)"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en"
-                  ? "SaaS companies targeting specific niches"
-                  : "SaaS kompanije koje targetiraju specifične niše"}
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="text-center mt-8">
-          <p className="text-base text-gray-500">
-            {locale === "en" ? (
-              <>
-                I work with clients from the UK, US, Germany, Australia, and beyond.{" "}
-                <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-primary underline">
-                  Read about differences between eCommerce and B2B strategies →
-                </Link>
-              </>
-            ) : (
-              <>
-                Radim sa klijentima iz Srbije, UK, Nemačke i Hrvatske.{" "}
-                <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-primary underline">
-                  Pročitajte razlike između eCommerce i B2B strategija →
-                </Link>
-              </>
-            )}
-          </p>
-        </div>
-      </Section>
-
-      {/* Process — sequential, not grid */}
-      <Section>
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "How the collaboration process works"
-              : "Kako izgleda proces saradnje"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "From first call to measurable results — simple and transparent process in 5 steps."
-              : "Od prvog poziva do merljivih rezultata - jednostavan i transparentan proces u 5 koraka."}
-          </p>
-        </div>
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-4">
-            {processSteps.map((step, index) => (
-              <div
-                key={step.title}
-                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
-              >
-                <span
-                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading ${
-                    index === processSteps.length - 1
-                      ? "bg-accent text-gray-900"
-                      : "bg-slate-900 text-white"
-                  }`}
-                >
-                  {step.number}
-                </span>
-                <div>
-                  <h3 className="font-heading font-semibold text-lg mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 text-base">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      {/* Pricing */}
-      <Section background="gray">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Choose your plan"
-              : "Izaberite model saradnje"}
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {locale === "en"
-              ? "Transparent pricing with no hidden costs."
-              : "Transparentne cene bez skrivenih troškova."}
-          </p>
-        </div>
-        <div className="grid lg:grid-cols-3 gap-6 items-stretch">
-          {/* Card 1 — Strategy & support */}
-          <div className="flex flex-col h-full bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-card relative">
-            <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "START WITH CLARITY" : "POČNITE SA JASNOM SLIKOM"}
-            </p>
-            <h3 className="text-xl font-heading font-bold mb-1">
-              {locale === "en" ? "Strategy & support" : "Strategija i podrška"}
-            </h3>
-            <p className="text-2xl font-heading font-bold text-primary mb-3">
-              {locale === "en" ? "Kickstart from $990" : "Kickstart od €690"}
-            </p>
-            <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "Senior setup with strategy consultations included — no monthly commitment. Get clarity and a working foundation before committing to ongoing management."
-                : "Senior setup sa uključenim strategijskim konsultacijama - bez mesečne obaveze. Dobijte jasnu sliku i radni temelj pre nego što se odlučite za stalnu saradnju."}
-            </p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Consulting — $200/hr" : "Konsultacije - €150/sat"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Deep Audit + Action Plan — from $500" : "Deep Audit + Action Plan - od €450"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Kickstart setup (strategy consultation included) — from $990" : "Kickstart setup (strateška konsultacija uključena) - od €690"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "No monthly commitment" : "Bez mesečne obaveze"}
-              </li>
-            </ul>
-            <Button href="/kontakt" variant="secondary" className="mt-auto w-full">
-              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
-            </Button>
-          </div>
-
-          {/* Card 2 — eCommerce Growth (highlighted) */}
-          <div className="flex flex-col h-full bg-white border-2 border-accent rounded-xl p-6 md:p-8 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-accent text-gray-900 text-xs font-bold px-3 py-1 rounded-md">
-              {locale === "en" ? "Most popular" : "Najpopularniji"}
-            </span>
-            <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
-              {locale === "en" ? "FOR STEADY GROWTH" : "ZA STABILAN RAST"}
-            </p>
-            <h3 className="text-xl font-heading font-bold mb-1">
-              eCommerce Growth
-            </h3>
-            <p className="text-2xl font-heading font-bold text-primary mb-1">
-              {locale === "en" ? "from $2,500" : "od €700"}<span className="text-sm text-gray-500 font-normal">{locale === "en" ? "/mo" : "/mes"}</span>
-            </p>
-            <p className="text-sm text-gray-500 mb-3">
-              {locale === "en"
-                ? "For brands spending $10k–100k/month — scope and fee scale with spend."
-                : "Saradnja ima smisla ako u oglašavanje ulažete €1.500+ mesečno - konačna ponuda zavisi od obima."}
-            </p>
-            <p className="text-gray-600 text-base mb-4">
-              {locale === "en"
-                ? "Complete Google Ads management for online stores. Weekly optimizations, Shopping feed management, and monthly reporting with a strategic call."
-                : "Kompletno Google Ads upravljanje za online prodavnice. Nedeljne optimizacije, upravljanje Shopping feedom i mesečni reporting sa strategijskim pozivom."}
-            </p>
-            <ul className="space-y-2 text-sm text-gray-600 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Weekly optimizations" : "Nedeljne optimizacije"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Shopping feed management" : "Shopping feed upravljanje"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Monthly report + call" : "Mesečni report + poziv"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "A/B testing" : "A/B testiranje"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Quarterly analysis" : "Kvartalna analiza"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-600 flex-shrink-0">✓</span>
-                {locale === "en" ? "Quarterly strategy plan" : "Kvartalni strategijski plan"}
-              </li>
-            </ul>
-            <Button href="/kontakt" variant="secondary" className="mt-auto w-full">
-              {locale === "en" ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta"}
-            </Button>
-          </div>
-
-          {/* Card 3 — Performance Marketing via Funky */}
-          <div className="flex flex-col h-full bg-slate-900 text-white border-2 border-slate-700 rounded-xl p-6 md:p-8 shadow-card relative">
-            <span className="absolute -top-3 left-6 bg-white text-slate-900 text-xs font-bold px-3 py-1 rounded-md">
-              {locale === "en" ? "Full-team" : "Ceo tim"}
-            </span>
-            <p className="text-xs uppercase tracking-wider text-slate-400 mb-2">
-              {locale === "en" ? "COMPLETE GROWTH TEAM" : "KOMPLETAN GROWTH TIM"}
-            </p>
-            <h3 className="text-xl font-heading font-bold mb-1">
-              Performance Marketing
-            </h3>
-            <p className="text-sm text-slate-400 mb-4 italic">
-              Powered by Funky Enterprises
-            </p>
-            <p className="text-slate-300 text-sm mb-2">
-              {locale === "en"
-                ? "For brands that need a complete business growth team — not just Google Ads."
-                : "Za brendove kojima treba kompletan tim za rast biznisa - ne samo Google Ads."}
-            </p>
-            <p className="text-slate-400 text-sm mb-4 italic">
-              {locale === "en"
-                ? "For brands aiming for the leading position in their category — $20k+/month per channel."
-                : "Za brendove koji ciljaju lidersku poziciju u svojoj kategoriji."}
-            </p>
-            <ul className="space-y-2 text-sm text-slate-300 mb-5">
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en" ? "GTM strategy" : "GTM strategija"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en" ? "Brand + creative" : "Brend + kreativa"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en" ? "Google + Meta + SEO + CRO" : "Google + Meta + SEO + CRO"}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent flex-shrink-0">✓</span>
-                {locale === "en" ? "Senior-led team" : "Senior-led tim"}
-              </li>
-            </ul>
-            <a
-              href="https://www.funky.enterprises/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-center w-full mt-auto border border-slate-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-slate-800 hover:border-slate-500"
+        <div className="max-w-3xl mx-auto space-y-4">
+          {processSteps.map((step) => (
+            <div
+              key={step.title}
+              className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-card"
             >
-              {locale === "en"
-                ? "Learn more about Funky Enterprises"
-                : "Saznajte više o Funky Enterprises"}
-            </a>
-          </div>
+              <span className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-heading bg-slate-900 text-white">
+                {step.number}
+              </span>
+              <div>
+                <h3 className="font-heading font-semibold text-lg mb-1">{step.title}</h3>
+                <p className="text-gray-600 text-base">{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-10">
+          <Button href="/kontakt" variant="secondary">
+            {ctaLabel}
+          </Button>
         </div>
       </Section>
 
@@ -1267,13 +736,11 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         locale={locale}
       />
 
-      {/* FAQ — proper accordion */}
+      {/* FAQ - pitanja koja se stvarno postavljaju */}
       <Section>
         <div className="text-center mb-10">
           <h2 className="text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Frequently asked questions about Google Ads"
-              : "Često postavljana pitanja o Google oglašavanju"}
+            {isEn ? "Questions people actually ask" : "Pitanja koja se stvarno postavljaju"}
           </h2>
         </div>
         <div className="max-w-3xl mx-auto space-y-3">
@@ -1297,52 +764,20 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         </div>
       </Section>
 
-      {/* Final CTA */}
+      {/* Final CTA - isti poziv na akciju, treci put */}
       <section className="bg-slate-900 text-white py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-            {locale === "en"
-              ? "Ready for Google Ads that actually works?"
-              : "Spremni za Google oglašavanje koje zaista radi?"}
+            {isEn ? "Ready for Google Ads that actually works?" : "Spremni za Google oglašavanje koje zaista radi?"}
           </h2>
           <p className="text-slate-300 mb-8">
-            {locale === "en"
-              ? "Book a free 20-minute consultation and let's see if it makes sense to work together. No obligations."
-              : "Zakažite besplatnu 20-minutnu konsultaciju i proverimo da li ima smisla da radimo zajedno. Bez obaveza."}
+            {isEn
+              ? "Book a free 20-minute call and let's see if it makes sense to work together. No obligations."
+              : "Zakažite besplatnu 20-minutnu konsultaciju i vidimo da li ima smisla da radimo zajedno. Bez obaveza."}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/kontakt" variant="secondary">
-              {locale === "en"
-                ? "Book a free 20-minute call"
-                : "Zakažite besplatnih 20 minuta"}
-            </Button>
-            <Link
-              href="/usluge/google-ads-audit"
-              className="text-slate-300 hover:text-white underline text-sm self-center transition-colors"
-            >
-              {locale === "en"
-                ? "Or schedule a Google Ads audit →"
-                : "Ili zakažite Google Ads audit →"}
-            </Link>
-          </div>
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
-            <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en"
-                ? "How much does Google Ads cost?"
-                : "Koliko košta Google Ads?"}
-            </Link>
-            <Link
-              href="/blog"
-              className="hover:text-white transition-colors underline"
-            >
-              {locale === "en"
-                ? "Google Ads guide for beginners"
-                : "Google Ads vodič za početnike"}
-            </Link>
-          </div>
+          <Button href="/kontakt" variant="secondary">
+            {ctaLabel}
+          </Button>
         </div>
       </section>
     </>

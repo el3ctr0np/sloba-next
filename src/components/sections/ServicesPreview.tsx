@@ -4,26 +4,38 @@ import { Link } from "@/i18n/navigation";
 import { Card } from "@/components/ui";
 import {
   Target,
-  Zap,
   ShoppingCart,
-  Play,
-  RefreshCw,
-  Rocket,
-  Star,
+  ClipboardCheck,
+  UserCheck,
+  Sparkles,
 } from "lucide-react";
 
 const iconProps = { size: 28, strokeWidth: 1.5 } as const;
 
+/**
+ * Pet usluga, koliko ih je i ostalo posle konsolidacije 12.9.2026
+ * (Q4_SAJT_SPEC.md, talas 4). Ranije je ovde stajalo sest kartica, od kojih je
+ * pet vodilo na stranice tipova kampanja (Performance Max, Shopping, YouTube,
+ * remarketing, performance marketing). To su tipovi kampanja, ne usluge.
+ */
 export function ServicesPreview() {
   const t = useTranslations("ServicesPreview");
 
-  const services: { icon: ReactNode; title: string; href: "/usluge/google-ads-upravljanje" | "/usluge/performance-max" | "/usluge/google-shopping" | "/usluge/youtube-oglasi" | "/usluge/remarketing" | "/usluge/performance-marketing"; featured?: boolean }[] = [
+  const services: {
+    icon: ReactNode;
+    title: string;
+    href:
+      | "/usluge/google-ads-upravljanje"
+      | "/usluge/google-ads-za-ecommerce"
+      | "/usluge/google-ads-audit"
+      | "/usluge/konsultacije"
+      | "/usluge/chatgpt-ads";
+  }[] = [
     { icon: <Target {...iconProps} />, title: t("services.googleAds"), href: "/usluge/google-ads-upravljanje" },
-    { icon: <Zap {...iconProps} />, title: t("services.performanceMax"), href: "/usluge/performance-max" },
-    { icon: <ShoppingCart {...iconProps} />, title: t("services.googleShopping"), href: "/usluge/google-shopping" },
-    { icon: <Play {...iconProps} />, title: t("services.youtubeAds"), href: "/usluge/youtube-oglasi" },
-    { icon: <RefreshCw {...iconProps} />, title: t("services.remarketing"), href: "/usluge/remarketing" },
-    { icon: <Rocket {...iconProps} />, title: t("services.performanceMarketing"), href: "/usluge/performance-marketing", featured: true },
+    { icon: <ShoppingCart {...iconProps} />, title: t("services.ecommerce"), href: "/usluge/google-ads-za-ecommerce" },
+    { icon: <ClipboardCheck {...iconProps} />, title: t("services.audit"), href: "/usluge/google-ads-audit" },
+    { icon: <UserCheck {...iconProps} />, title: t("services.consultations"), href: "/usluge/konsultacije" },
+    { icon: <Sparkles {...iconProps} />, title: t("services.aiAds"), href: "/usluge/chatgpt-ads" },
   ];
 
   return (
@@ -35,17 +47,12 @@ export function ServicesPreview() {
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
           {t("description")}
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           {services.map((service, index) => (
             <Link key={index} href={service.href}>
-              <Card className={`text-center h-full ${service.featured ? 'border-primary' : ''}`}>
+              <Card className="text-center h-full">
                 <span className="mb-3 block">{service.icon}</span>
-                <h3 className="font-heading font-semibold">
-                  {service.title}
-                </h3>
-                {service.featured && (
-                  <span className="text-xs text-primary mt-2 flex items-center justify-center gap-1"><Star size={14} strokeWidth={1.5} /> Premium</span>
-                )}
+                <h3 className="font-heading font-semibold">{service.title}</h3>
               </Card>
             </Link>
           ))}
