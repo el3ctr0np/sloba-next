@@ -15,7 +15,7 @@ export function Header() {
   const locale = useLocale();
   const t = useTranslations("Header");
   const rawPathname = usePathname();
-  const params = useParams<{ slug?: string }>();
+  const params = useParams<{ slug?: string; term?: string }>();
 
   // Strip locale prefix if present to avoid /sr/en issues
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -30,11 +30,21 @@ export function Header() {
   const isCaseStudy = pathname === "/case-studies/[slug]" || (pathname.startsWith("/case-studies/") && pathname !== "/case-studies");
   const currentCaseStudySlug = isCaseStudy && params?.slug ? (params.slug as string) : null;
 
+  // Glossary term pages. Unlike a case study, the SR and EN paths differ
+  // (/recnik/cpc vs /glossary/cpc), so a plain string would ship the reader to a
+  // path that does not exist in the other locale. The object form lets next-intl
+  // localize the segment; without it the switcher renders "/sr/recnik/[term]"
+  // literally, which is a dead link.
+  const isGlossaryTerm = pathname === "/recnik/[term]";
+  const currentTermSlug = isGlossaryTerm && params?.term ? (params.term as string) : null;
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const resolvedPathname = useMemo(() => {
     if (currentCaseStudySlug) return `/case-studies/${currentCaseStudySlug}` as any;
+    if (currentTermSlug)
+      return { pathname: "/recnik/[term]", params: { term: currentTermSlug } } as any;
     return pathname;
-  }, [currentCaseStudySlug, pathname]);
+  }, [currentCaseStudySlug, currentTermSlug, pathname]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const srHref = useMemo(() => {

@@ -9,6 +9,7 @@ import {
   type GlossaryTerm,
 } from "./glossary-data";
 import { GlossarySearch } from "./GlossarySearch";
+import { hasTermPage } from "./terms";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -381,7 +382,16 @@ function GlossaryEntry({
       {/* Header: term + aliases + category tag */}
       <header className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
         <h3 className="text-xl md:text-2xl font-heading font-bold text-slate-900 mb-0">
-          {t.term}
+          {hasTermPage(t.slug) ? (
+            <Link
+              href={{ pathname: "/recnik/[term]", params: { term: t.slug } }}
+              className="hover:text-primary"
+            >
+              {t.term}
+            </Link>
+          ) : (
+            t.term
+          )}
         </h3>
         {t.termSr && t.termSr !== t.term && (
           <span className="text-sm text-gray-500">({t.termSr})</span>
@@ -453,6 +463,18 @@ function GlossaryEntry({
 
       {/* Related terms + blog link */}
       <footer className="mt-4 pt-3 border-t border-gray-100 text-sm text-gray-600">
+        {hasTermPage(t.slug) && (
+          <div className="mb-2">
+            <Link
+              href={{ pathname: "/recnik/[term]", params: { term: t.slug } }}
+              className="text-primary hover:underline font-medium"
+            >
+              {isEn
+                ? `Full page on ${t.term} →`
+                : `Cela stranica o pojmu ${t.term} →`}
+            </Link>
+          </div>
+        )}
         {t.relatedTerms && t.relatedTerms.length > 0 && (
           <div className="mb-2">
             <span className="font-semibold">

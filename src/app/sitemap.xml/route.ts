@@ -1,6 +1,7 @@
 import { routing } from "@/i18n/routing";
 import { srPosts, enPosts, slugMap } from "@/app/[locale]/blog/[slug]/posts";
 import { caseStudies } from "@/app/[locale]/case-studies/data";
+import { termPageSlugs } from "@/app/[locale]/recnik/terms";
 
 const baseUrl = "https://www.slobodan-jelisavac.com";
 
@@ -78,20 +79,37 @@ for (const post of enPosts) {
   }
 }
 
+// Pojedinacne stranice pojmova recnika. Slug je isti na oba jezika, samo se
+// segment ispred prevodi (/recnik/cpc -> /glossary/cpc), sto toEnRoute resava.
+const glossaryTermLastmod: Record<string, string> = {};
+for (const slug of termPageSlugs) {
+  glossaryTermLastmod[`/recnik/${slug}`] = "2026-09-12";
+}
+
 // All canonical (SR) routes
 const routes = [
   ...Object.keys(routeLastmod),
   ...Object.keys(blogLastmod),
+  ...Object.keys(glossaryTermLastmod),
 ];
 
 function getLastmod(route: string): string {
-  return blogLastmod[route] || routeLastmod[route] || "2026-01-26";
+  return (
+    blogLastmod[route] ||
+    routeLastmod[route] ||
+    glossaryTermLastmod[route] ||
+    "2026-01-26"
+  );
 }
 
 /** Translate a canonical (SR) route to the EN equivalent */
 function toEnRoute(route: string): string {
   // Direct match in routing pathnames (service pages, about, contact)
   if (enPathMap[route]) return enPathMap[route];
+
+  // Pojmovi recnika: samo segment ispred slug-a je drugaciji
+  const termMatch = route.match(/^\/recnik\/(.+)$/);
+  if (termMatch) return `/glossary/${termMatch[1]}`;
 
   // Blog posts: translate slug
   const blogMatch = route.match(/^\/blog\/(.+)$/);

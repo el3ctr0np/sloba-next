@@ -126,6 +126,12 @@ export const routing = defineRouting({
       sr: "/recnik",
       en: "/glossary"
     },
+    // Pojedinacne stranice pojmova. Slug pojma je isti na oba jezika (cpc, aov,
+    // serp), prevodi se samo segment ispred njega.
+    "/recnik/[term]": {
+      sr: "/recnik/[term]",
+      en: "/glossary/[term]"
+    },
 
     // Privacy Policy
     "/privatnost": {
