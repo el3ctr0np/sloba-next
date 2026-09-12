@@ -7,8 +7,12 @@
     scroll-behavior: smooth;
   }
 
+  /* Topla, gotovo bela pozadina stranice umesto ciste bele. Kartice clanka
+     i sekcije ostaju bg-white, pa se dobija blaga razlika izmedju podloge i
+     povrsine na kojoj se cita, bez promene kontrasta teksta. */
   body {
-    @apply font-sans text-gray-900 bg-white;
+    @apply font-sans text-gray-900;
+    background-color: #fdfdfc;
   }
 
   h1, h2, h3, h4, h5, h6 {
