@@ -140,10 +140,12 @@ export function Header() {
       <div className="container-custom">
         <div className="flex items-center justify-between gap-4 h-20 px-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5">
+          {/* Ime ide u aria-label linka: tekst pored logotipa je sakriven na
+              mobilnom i na lg, a alt jednak vidljivom tekstu je dupliran naziv. */}
+          <Link href="/" className="flex items-center gap-2.5" aria-label="Slobodan Jelisavac">
             <Image
               src="/logo.png"
-              alt="Slobodan Jelisavac"
+              alt=""
               width={44}
               height={44}
               className="w-11 h-11"
