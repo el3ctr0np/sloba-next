@@ -1,5 +1,23 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import { routing } from "./src/i18n/routing";
+
+// Putanja sa segmentom drugog jezika (/en/usluge, /sr/services) next-intl
+// preusmerava sa 307, pa Google taj URL drzi kao zaseban i daje mu impresije
+// (GSC 13-14.9.2026: /en/usluge). Ovde isti parovi idu kao 308, izvedeni iz
+// routing.pathnames da nova stranica ne trazi rucno pravilo.
+function crossLocaleRedirects() {
+  const out: { source: string; destination: string; permanent: true }[] = [];
+  for (const localized of Object.values(routing.pathnames)) {
+    if (typeof localized !== "object") continue;
+    const { sr, en } = localized as { sr: string; en: string };
+    if (sr === en) continue;
+    const toParam = (p: string) => p.replace(/\[(\w+)\]/g, ":$1");
+    out.push({ source: `/en${toParam(sr)}`, destination: `/en${toParam(en)}`, permanent: true });
+    out.push({ source: `/sr${toParam(en)}`, destination: `/sr${toParam(sr)}`, permanent: true });
+  }
+  return out;
+}
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -12,12 +30,40 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Stari slug vodica za pocetnike sa prefiksom jezika. Bez prefiksa je vec
+      // pokriven nize; GA4 je 14.8-12.9 zabelezio organski ulaz na EN varijantu (404).
+      {
+        source: "/sr/blog/google-ads-za-pocetnike-vodic",
+        destination: "/sr/blog/kako-poceti-google-ads",
+        permanent: true
+      },
+      {
+        source: "/sr/blog/google-ads-za-pocetnike",
+        destination: "/sr/blog/kako-poceti-google-ads",
+        permanent: true
+      },
+      {
+        source: "/en/blog/google-ads-za-pocetnike-vodic",
+        destination: "/en/blog/how-to-start-google-ads",
+        permanent: true
+      },
+      {
+        source: "/en/blog/google-ads-za-pocetnike",
+        destination: "/en/blog/how-to-start-google-ads",
+        permanent: true
+      },
       // Deleted pages → redirect to relevant sections. `:locale` is pinned to
       // sr|en: an unpinned param swallowed /google-ads-usluge/cenovnik as
       // locale="google-ads-usluge" and sent it to /google-ads-usluge/usluge.
       {
-        source: "/:locale(sr|en)/cenovnik",
-        destination: "/:locale/usluge",
+        source: "/sr/cenovnik",
+        destination: "/sr/usluge",
+        permanent: true
+      },
+      // EN direktno na /services: preko /en/usluge bio bi lanac od dva skoka.
+      {
+        source: "/en/cenovnik",
+        destination: "/en/services",
         permanent: true
       },
       // GA4 Audience Framework moved under the /resursi tools hub Aug 30 2026.
@@ -73,18 +119,36 @@ const nextConfig: NextConfig = {
       },
       // Methodology page retired Jul 2026 — folded into service pages
       {
-        source: "/:locale(sr|en)/metodologija",
-        destination: "/:locale/usluge",
+        source: "/sr/metodologija",
+        destination: "/sr/usluge",
+        permanent: true
+      },
+      // EN direktno na /services: preko /en/usluge bio bi lanac od dva skoka.
+      {
+        source: "/en/metodologija",
+        destination: "/en/services",
         permanent: true
       },
       {
-        source: "/:locale(sr|en)/methodology",
-        destination: "/:locale/usluge",
+        source: "/sr/methodology",
+        destination: "/sr/usluge",
+        permanent: true
+      },
+      // EN direktno na /services: preko /en/usluge bio bi lanac od dva skoka.
+      {
+        source: "/en/methodology",
+        destination: "/en/services",
         permanent: true
       },
       {
-        source: "/:locale(sr|en)/usluge/seo",
-        destination: "/:locale/usluge",
+        source: "/sr/usluge/seo",
+        destination: "/sr/usluge",
+        permanent: true
+      },
+      // EN direktno na /services: preko /en/usluge bio bi lanac od dva skoka.
+      {
+        source: "/en/usluge/seo",
+        destination: "/en/services",
         permanent: true
       },
       // meta-oglasavanje redirect removed — LP page now exists at /lp/google-ads
@@ -401,6 +465,11 @@ const nextConfig: NextConfig = {
         destination: "/sr/case-studies/soundboxstore",
         permanent: true
       },
+
+      // Parovi jezika iz routing.pathnames idu POSLE svih eksplicitnih pravila:
+      // prvo poklapanje pobedjuje, a eksplicitno pravilo (npr. profit-provera)
+      // vodi direktno na krajnju stranicu.
+      ...crossLocaleRedirects(),
 
       // ─── Non-www → www canonical redirect ───
       {

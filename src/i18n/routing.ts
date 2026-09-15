@@ -7,7 +7,8 @@ export const routing = defineRouting({
   // On: an unprefixed entry (/, or the apex domain) is routed by the
   // NEXT_LOCALE cookie first, then Accept-Language, so an English browser lands
   // on /en instead of always getting Serbian. Googlebot sends no
-  // Accept-Language, so crawlers still get the x-default (/sr). Only affects
+  // Accept-Language, so crawlers still get /sr (the default locale; hreflang
+  // x-default points to EN since 15.9.2026). Only affects
   // unprefixed paths — a shared /sr/... link still opens in Serbian.
   localeDetection: true,
   pathnames: {

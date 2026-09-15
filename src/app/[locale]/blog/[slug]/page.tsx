@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: {
         sr: `https://www.slobodan-jelisavac.com/sr/blog/${srSlug}`,
         en: `https://www.slobodan-jelisavac.com/en/blog/${enSlug}`,
-        "x-default": `https://www.slobodan-jelisavac.com/sr/blog/${srSlug}`
+        "x-default": `https://www.slobodan-jelisavac.com/en/blog/${enSlug}`
       }
     },
     openGraph: {

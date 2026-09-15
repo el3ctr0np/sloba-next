@@ -38,7 +38,9 @@ export function buildMetadata({
       languages: {
         sr: `${BASE_URL}/sr${srPathFinal}`,
         en: `${BASE_URL}/en${enPath}`,
-        "x-default": `${BASE_URL}/sr${srPathFinal}`,
+        // x-default = EN od 15.9.2026: posetilac ciji jezik nije srpski treba da dobije
+        // englesku verziju, a strano trziste (UK, SAD) je glavno.
+        "x-default": `${BASE_URL}/en${enPath}`,
       },
     },
     openGraph: {

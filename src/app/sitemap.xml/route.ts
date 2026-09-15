@@ -138,7 +138,19 @@ export async function GET() {
     const alternates = `
     <xhtml:link rel="alternate" hreflang="sr" href="${srUrl}"/>
     <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="${srUrl}"/>`;
+    <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>`;
+
+    const srEntry = `
+  <url>
+    <loc>${srUrl}</loc>${alternates}
+    <lastmod>${lastmod}</lastmod>
+    <priority>${priority}</priority>
+  </url>`;
+
+    // EN stranice pojmova recnika su van sitemap-a od 15.9.2026 do checkpointa
+    // 12.12. Google na EN strani vec ne indeksira oko polovine URL-ova, a vrednost
+    // recnika je u SR trzistu. Stranice i dalje postoje i imaju hreflang.
+    if (glossaryTermLastmod[route]) return [srEntry];
 
     return [
       `
