@@ -30,6 +30,15 @@ export default function WhatIsRoasEN() {
         </div>
       </div>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide - change history</p>
+        <p className="text-sm text-gray-600 mb-3">This guide gets updated as the numbers change. What changed:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>September 2026:</strong> Added break-even ROAS and a &quot;What is a good ROAS?&quot; section.</li>
+          <li><strong>April 2026:</strong> First version of this guide.</li>
+        </ul>
+      </div>
+
       <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Quick answer</p>
         <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
@@ -48,6 +57,7 @@ export default function WhatIsRoasEN() {
           <li><a href="#what-is-roas" className="block py-1 text-base text-gray-700 hover:text-primary underline">What is ROAS</a></li>
           <li><a href="#formula" className="block py-1 text-base text-gray-700 hover:text-primary underline">Formula and calculation</a></li>
           <li><a href="#calculator" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS calculator</a></li>
+          <li><a href="#good-roas" className="block py-1 text-base text-gray-700 hover:text-primary underline">What is a good ROAS?</a></li>
           <li><a href="#benchmarks" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS benchmarks by industry</a></li>
           <li><a href="#roas-vs-poas" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS vs POAS: why ROAS doesn&apos;t measure profit</a></li>
           <li><a href="#how-to-improve" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to improve ROAS</a></li>
@@ -152,6 +162,14 @@ export default function WhatIsRoasEN() {
         </p>
       </div>
 
+      <h3>Break-even ROAS</h3>
+      <p>
+        Break-even ROAS = 1 ÷ gross margin (margin as a decimal). Example: at a 40% margin, break-even ROAS is 2.5× - below that, every extra sale from ads is losing you money, not making you any.
+      </p>
+      <p>
+        ROAS above break-even still doesn&apos;t mean profit if your margin figure doesn&apos;t already account for shipping, returns, and the cost of running the account. See <a href="#roas-vs-poas" className="underline">ROAS vs POAS</a> below for the full picture.
+      </p>
+
       <hr />
 
       <h2 id="calculator">ROAS calculator</h2>
@@ -167,9 +185,50 @@ export default function WhatIsRoasEN() {
 
       <hr />
 
+      <h2 id="good-roas">What is a good ROAS?</h2>
+      <p>
+        There&apos;s no universal number. A good ROAS is one that sits above your break-even ROAS for your own margin, not a benchmark copied from a different business with a different cost structure. In accounts I manage, average eCommerce ROAS is 3.7×, but that&apos;s an average across different margins and verticals, not a target to chase.
+      </p>
+      <p>Break-even ROAS by margin:</p>
+
+      <div className="overflow-x-auto my-6">
+        <table className="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr className="border-b-2 border-gray-900 bg-gray-50">
+              <th className="py-3 px-3 font-heading font-semibold">Margin</th>
+              <th className="py-3 px-3 font-heading font-semibold">Break-even ROAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-gray-200">
+              <td className="py-3 px-3">20%</td>
+              <td className="py-3 px-3">5.0×</td>
+            </tr>
+            <tr className="border-b border-gray-200 bg-gray-50/50">
+              <td className="py-3 px-3">30%</td>
+              <td className="py-3 px-3">3.33×</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="py-3 px-3">40%</td>
+              <td className="py-3 px-3">2.5×</td>
+            </tr>
+            <tr className="border-b border-gray-200 bg-gray-50/50">
+              <td className="py-3 px-3">50%</td>
+              <td className="py-3 px-3">2.0×</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="py-3 px-3">60%</td>
+              <td className="py-3 px-3">1.67×</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+
       <h2 id="benchmarks">ROAS benchmarks by industry</h2>
       <p>
-        ROAS varies dramatically by vertical. Luxury brands carry a high ROAS but low conversion rate; lead-gen businesses run a lower ROAS but make it back via long customer LTV.
+        ROAS varies dramatically by vertical. Luxury brands carry a high ROAS but low conversion rate; lead-gen businesses run a lower ROAS but make it back via long customer LTV. Treat the numbers below as directional estimates from industry reports, not as targets to copy onto your own account.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -306,7 +365,7 @@ export default function WhatIsRoasEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Depends on margin. For eCommerce with 30–50% margin, ROAS of 3–5× is good. For low margins (electronics, 5–15%), you need 6–10×. Break-even formula: ROAS = 1 ÷ margin (decimal). For a 25% margin, break-even is 4×.
+            Depends on margin, not a single number that fits every account. Good ROAS is any ROAS above your break-even ROAS (1 ÷ margin) - see the <a href="#good-roas" className="underline">break-even table above</a> for your margin. In accounts I manage, average eCommerce ROAS is 3.7×, but that&apos;s an average, not a target.
           </div>
         </details>
 

@@ -8,7 +8,7 @@ export default function GoogleAdsOptimizacijaPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          30 taktika za Google Ads optimizaciju proverenih na 20+ naloga. Prosečno poboljšanje performansi 40% u prvih 90 dana. Fokus na strukturu, ključne reči, oglase, bidding i Quality Score.
+          30 taktika za Google Ads optimizaciju koje koristim na nalozima 50+ brendova, u praksi dužoj od 10 godina. Fokus na strukturu, ključne reči, oglase, bidding i Quality Score.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -20,14 +20,23 @@ export default function GoogleAdsOptimizacijaPost() {
             <p className="text-xs text-slate-400 mt-1 mb-0">kategorija optimizacije</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">20+</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">naloga testirano</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">50+</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">brendova</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">40%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">prosečno poboljšanje</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">10+</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">godina u praksi</p>
           </div>
         </div>
+      </div>
+
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
+        <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira periodično. Šta je novo:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>Septembar 2026:</strong> Uklonjene brojke bez izvora kroz ceo vodič. Osvežena SKAG sekcija zbog prelaska na AI Max za Search. Dodati pragovi za uključivanje i za čitanje rezultata kod Target CPA/ROAS. Napomenuta promena od 17.8. u tome kako budžetom ograničene tCPA/tROAS kampanje prate cilj.</li>
+          <li><strong>Januar 2026:</strong> Prva verzija vodiča.</li>
+        </ul>
       </div>
 
       <p className="lead">
@@ -65,7 +74,7 @@ export default function GoogleAdsOptimizacijaPost() {
           Kako optimizovati Google Ads kampanje?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Ads optimizacija</strong> je kontinuiran proces primene konkretnih taktika na strukturu naloga, ključne reči, oglase, bidding i Quality Score. Ovaj vodič donosi <strong>30 taktika</strong> testiranih na <strong>20+ naloga</strong>, sa prosečnim poboljšanjem performansi od <strong>40% u prvih 90 dana</strong>. Ključ je sistematičan, nedeljni pristup - ne jednokratna akcija.
+          <strong>Google Ads optimizacija</strong> je kontinuiran proces primene konkretnih taktika na strukturu naloga, ključne reči, oglase, bidding i Quality Score. Ovaj vodič donosi <strong>30 taktika</strong> koje koristim na nalozima <strong>50+ brendova</strong>, izgrađenih kroz <strong>10+ godina</strong> praktičnog vođenja naloga. Ključ je sistematičan, nedeljni pristup - ne jednokratna akcija.
         </p>
       </div>
 
@@ -74,8 +83,9 @@ export default function GoogleAdsOptimizacijaPost() {
       <h2>Zašto je optimizacija ključna za uspeh</h2>
 
       <p>
-        Vidim dve vrste naloga: one koje <strong>set-and-forget</strong> vlasnici ostavljaju da rade
-        sami, i one koje se optimizuju redovno. Razlika u performansama? U proeku 40-60%.
+        Postoje dve vrste naloga: oni koje vlasnik ostavi da rade sami (<strong>set-and-forget</strong>)
+        i oni koji se optimizuju redovno. Na nalozima 50+ brendova, kroz 10+ godina prakse, obrazac je
+        dosledan: redovna pažnja pobeđuje autopilot.
       </p>
 
       <p>
@@ -87,8 +97,10 @@ export default function GoogleAdsOptimizacijaPost() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Realnost iz prakse</p>
         <p className="text-blue-800 text-base mb-0">
-          U januaru 2026 sam preuzeo nalog gde je kampanja 6 meseci radila bez optimizacije. CPA je bio
-          €85. Nakon 4 nedelje primene ovih taktika: CPA €42. Isti budžet, duplo više konverzija.
+          Čest obrazac koji viđam: preuzmem nalog koji mesecima radi bez ijedne optimizacije. Lista
+          ključnih reči je zastarela, negativna lista jedva postoji, a bidding strategija nije menjana
+          od lansiranja. Najveći deo ranih poboljšanja dolazi od osnovnog održavanja naloga, ne od neke
+          jedne pametne taktike.
         </p>
       </div>
 
@@ -133,13 +145,15 @@ export default function GoogleAdsOptimizacijaPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Single Keyword Ad Groups (SKAGs) ili tematske grupe?</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Stara škola preporučuje SKAGs - svaka ključna reč u svojoj ad grupi za maksimalnu relevantnost.
-          Nova realnost sa RSA oglasima: tematske grupe od 5-15 sličnih ključnih reči daju bolju AI optimizaciju.
+          Do 2026. SKAG je uglavnom prevaziđena taktika. Close variants i broad match u kombinaciji sa
+          Smart Bidding-om već spajaju slične upite u istu ad grupu, pa je tematsko grupisanje po nameri
+          podrazumevano. Izuzetak su brend termini i mala grupa visoko-komercijalnih ključnih reči gde je
+          bitna kontrola poruke.
         </p>
         <ul className="text-sm">
-          <li>Za visoko-intent komercijalne ključne reči: testirajte SKAGs</li>
-          <li>Za informativne i long-tail: tematske grupe</li>
-          <li>Nikada nemojte mešati različite intente u istoj ad grupi</li>
+          <li>Podrazumevano koristite tematske ad grupe organizovane po nameri pretrage, ne po pojedinačnoj ključnoj reči</li>
+          <li>SKAG zadržite samo za brend kampanje i mali broj visoko-komercijalnih upita gde je kontrola poruke važnija od obima</li>
+          <li>Google od septembra 2026. prebacuje DSA i broad match naloge na AI Max za Search (DSA se gasi februar 2027.), što je još jedan razlog da struktura kampanje prati nameru, ne pojedinačnu reč</li>
         </ul>
       </div>
 
@@ -478,6 +492,18 @@ export default function GoogleAdsOptimizacijaPost() {
         <p className="text-base text-gray-600 mb-3">
           Greška #1: postaviti previše agresivan target. Ako je vaš current CPA €50, a postavite target
           €20 - kampanja neće dobiti impressions jer Google zna da ne može postići taj target.
+        </p>
+        <p className="text-base text-gray-600 mb-3">
+          Ovde se mešaju dva različita praga. Da bi se tROAS uopšte uključio na Search ili Shopping
+          nalogu, Google traži minimum 15 konverzija u poslednjih 30 dana - to je prag za uključivanje.
+          Čitanje rezultata je druga stvar: učinak ima smisla ocenjivati tek na oko 30 konverzija u 30
+          dana za tCPA, odnosno oko 50 konverzija u 30 dana za tROAS.
+        </p>
+        <p className="text-base text-gray-600 mb-3">
+          Od 17.8.2026. kampanje ograničene budžetom na tCPA/tROAS koje su dugo bile bolje od cilja sada
+          doslednije idu ka samom cilju umesto da ga i dalje premašuju - potrošnja se pri tome ne
+          povećava. Ako kampanja koja je ranije radila ispod cilja odjednom deluje kao da &quot;sustiže&quot;
+          cilj, ovo je verovatno razlog.
         </p>
         <ul className="text-sm">
           <li>Pogledajte Last 30 days average CPA/ROAS - to je vaša baseline</li>

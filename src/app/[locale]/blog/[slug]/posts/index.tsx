@@ -511,7 +511,7 @@ const srPosts: PostData[] = [
     slug: "sta-je-roas",
     title: "Šta je ROAS i Kako se Računa? [sa Kalkulatorom] [2026]",
     date: "2026-04-26",
-    dateModified: "2026-04-26",
+    dateModified: "2026-09-15",
     category: "Metrike",
     metaDescription:
       "Šta je ROAS (Return on Ad Spend)? Formula: ROAS = Prihod ÷ Potrošnja. Interaktivni kalkulator, industrijski benchmarks, razlika ROAS vs POAS i 6 taktika za poboljšanje. Bazirano na realnim nalozima.",
@@ -648,12 +648,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-optimizacija",
-    title: "Google Ads Optimizacija: +20 Taktika za bolje rezultate [2026]",
+    title: "Google Ads optimizacija: 30 taktika iz prakse [2026]",
     date: "2026-01-17",
-    dateModified: "2026-07-12",
+    dateModified: "2026-09-15",
     category: "Optimizacija",
     metaDescription:
-      "Preko +20 taktika za bolje rezultate. Kompletan vodič - bid strategije, negativne ključne reči, Quality Score, landing page i A/B testiranje. Iz prakse sa 20+ klijenata.",
+      "30 taktika za Google Ads optimizaciju koje koristim na nalozima: Smart Bidding ciljevi i pragovi, search terms, negativne ključne reči, Quality Score i nedeljni ritam provere.",
     featuredImage: "/blog/google-ads-optimizacija.webp",
     imageAlt: "Ilustracija merača sa iglom u zelenoj zoni i ključem za podešavanje, tema optimizacije Google Ads kampanja",
     readingTime: "18 min",
@@ -829,12 +829,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "kako-poceti-google-ads",
-    title: "Kako početi sa Google oglašavanjem: Vodič za početnike [2026]",
+    title: "Google Ads za početnike: kako da pokrenete prvu kampanju [2026]",
     date: "2026-03-01",
     dateModified: "2026-08-18",
     category: "Google Ads",
     metaDescription:
-      "Kako početi sa Google oglašavanjem od nule? Korak po korak vodič za početnike - tipovi kampanja, budžet, ključne reči i najčešće greške. Sve što treba da znate pre prve kampanje.",
+      "Google Ads za početnike, korak po korak: koji tip kampanje izabrati, koliki budžet, kako birati ključne reči i koje greške najviše koštaju na prvoj kampanji.",
     featuredImage: "/blog/kako-poceti-google-ads.webp",
     imageAlt: "Ilustracija rakete na lansirnoj rampi sa kompasom i kockicama, tema vodiča za početnike u Google Ads",
     readingTime: "14 min",
@@ -1212,10 +1212,10 @@ const enPosts: PostData[] = [
     slug: "what-is-roas",
     title: "What is ROAS and How to Calculate It? [with Calculator] [2026]",
     date: "2026-04-26",
-    dateModified: "2026-04-26",
+    dateModified: "2026-09-15",
     category: "Metrics",
     metaDescription:
-      "What is ROAS (Return on Ad Spend)? Formula: ROAS = Revenue ÷ Spend. Interactive calculator, industry benchmarks, ROAS vs POAS, and 6 tactics to improve. Based on real account data.",
+      "What is ROAS (Return on Ad Spend)? Formula: ROAS = Revenue ÷ Spend. Interactive calculator, break-even ROAS by margin, what counts as a good ROAS, ROAS vs POAS and 6 ways to improve it.",
     featuredImage: "/blog/sta-je-roas.webp",
     imageAlt: "Illustration of a calculator and a stack of coins beside a rising chart, illustrating what ROAS is and how to calculate it",
     readingTime: "8 min",
@@ -1339,12 +1339,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-optimization",
-    title: "Google Ads Optimization 2026: 30 Tactics to Lift ROAS 40%",
+    title: "Google Ads Optimization 2026: 30 Tactics From Real Accounts",
     date: "2026-01-17",
-    dateModified: "2026-07-12",
+    dateModified: "2026-09-15",
     category: "Optimization",
     metaDescription:
-      "30 Google Ads optimization tactics tested on 20+ eCommerce and B2B accounts — Smart Bidding, negative keywords, Quality Score, landing pages. Average 40% ROAS lift in 90 days.",
+      "30 Google Ads optimization tactics I use on eCommerce and B2B accounts: Smart Bidding targets and thresholds, search terms, negative keywords, Quality Score and a weekly routine.",
     featuredImage: "/blog/google-ads-optimizacija.webp",
     imageAlt: "Illustration of a gauge dial with the needle in the green zone and a wrench, theme of Google Ads campaign optimization",
     readingTime: "18 min",

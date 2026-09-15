@@ -8,7 +8,7 @@ export default function GoogleAdsOptimizationEN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          30 Google Ads optimization tactics tested across 20+ accounts with $2M+ in combined annual spend, delivering an average 40% performance improvement within the first 90 days. The focus: structure, keywords, ads, bidding, and Quality Score.
+          30 Google Ads optimization tactics I use across 50+ brands and 10+ years of hands-on management. The focus: structure, keywords, ads, bidding, and Quality Score.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -20,14 +20,23 @@ export default function GoogleAdsOptimizationEN() {
             <p className="text-xs text-slate-400 mt-1 mb-0">optimization categories</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">20+</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">accounts tested</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">50+</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">brands managed</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">40%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">average improvement</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">10+</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">years in practice</p>
           </div>
         </div>
+      </div>
+
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide - change history</p>
+        <p className="text-sm text-gray-600 mb-3">This guide is updated periodically. What changed:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>September 2026:</strong> Removed unsourced performance figures throughout the guide. Refreshed the SKAG section for the shift toward AI Max for Search. Added the enable and read thresholds for Target CPA/ROAS. Noted the August 17 change in how budget-constrained tCPA/tROAS campaigns track toward target.</li>
+          <li><strong>January 2026:</strong> First version of this guide.</li>
+        </ul>
       </div>
 
       <p className="lead">
@@ -51,7 +60,7 @@ export default function GoogleAdsOptimizationEN() {
           How do you optimize Google Ads campaigns?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Ads optimization</strong> is a continuous process of applying concrete tactics to account structure, keywords, ads, bidding, and Quality Score. This guide covers <strong>30 tactics</strong> tested across <strong>20+ accounts</strong>, delivering an average performance improvement of <strong>40% within the first 90 days</strong>. The key is a systematic, weekly approach — not a one-time action.
+          <strong>Google Ads optimization</strong> is a continuous process of applying concrete tactics to account structure, keywords, ads, bidding, and Quality Score. This guide covers <strong>30 tactics</strong> I use across <strong>50+ brands</strong>, built over <strong>10+ years</strong> of hands-on account management. The key is a systematic, weekly approach, not a one-time action.
         </p>
       </div>
 
@@ -82,9 +91,9 @@ export default function GoogleAdsOptimizationEN() {
       <h2>Why optimization is key to success</h2>
 
       <p>
-        Across 20+ accounts with $2M+ in combined annual ad spend, applying these tactics has lifted
-        performance by an average of 40% within the first 90 days. The gap between <strong>set-and-forget</strong> accounts
-        and regularly optimized ones is consistently 40-60% — same budget, same market, different discipline.
+        Across 50+ brands and 10+ years of hands-on management, the pattern holds: accounts that
+        get consistent attention outperform the ones left on <strong>set-and-forget</strong>. Same budget,
+        same market, different discipline.
       </p>
 
       <p>
@@ -94,10 +103,11 @@ export default function GoogleAdsOptimizationEN() {
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">A real-world example</p>
+        <p className="font-semibold text-blue-900 mb-1">A pattern I see often</p>
         <p className="text-blue-800 text-base mb-0">
-          In January 2026 I took over an account whose campaigns had run for 6 months without any optimization.
-          CPA was $85. After 4 weeks of applying these tactics: CPA $42. Same budget, double the conversions.
+          I take over an account that has been running for months with zero optimization work. The keyword
+          list is stale, the negative list barely exists, and the bidding strategy has not been touched
+          since launch. Most of the early gains come from basic housekeeping, not any single clever tactic.
         </p>
       </div>
 
@@ -142,13 +152,15 @@ export default function GoogleAdsOptimizationEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Single Keyword Ad Groups (SKAGs) or thematic groups?</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          The old school recommends SKAGs — each keyword in its own ad group for maximum relevance.
-          The new reality with RSAs: thematic groups of 5-15 similar keywords give the AI more to optimize with.
+          By 2026, SKAGs are largely a legacy tactic. Close variants and broad match paired with Smart
+          Bidding already consolidate similar queries under one ad group, so thematic, intent-based
+          grouping is the default now. The exception is brand terms and a small set of high-commercial-intent
+          keywords where you still want tight control over the message.
         </p>
         <ul className="text-sm">
-          <li>For high-intent commercial keywords: test SKAGs</li>
-          <li>For informational and long-tail terms: thematic groups</li>
-          <li>Never mix different intents in the same ad group</li>
+          <li>Default to thematic ad groups organized by search intent, not by individual keyword</li>
+          <li>Keep SKAGs only for brand campaigns and a handful of high-intent commercial terms where message control matters more than scale</li>
+          <li>Google is moving DSA and broad match accounts onto AI Max for Search starting September 2026 (DSA itself retires in February 2027), one more reason to structure campaigns around intent rather than a single keyword</li>
         </ul>
       </div>
 
@@ -489,6 +501,19 @@ export default function GoogleAdsOptimizationEN() {
           Mistake #1: setting an overly aggressive target. If your current CPA is £50 and you set a
           target of £20, the campaign will barely get impressions because Google knows it can&apos;t
           achieve that target.
+        </p>
+        <p className="text-base text-gray-600 mb-3">
+          Two different thresholds matter here, and they get confused often. To even turn on Target
+          ROAS on Search or Shopping, Google requires at least 15 conversions in the last 30 days,
+          that is the enable threshold. Reading the results is a separate matter: Google recommends
+          waiting for roughly 30 conversions in 30 days on Target CPA, and roughly 50 conversions in
+          30 days on Target ROAS, before judging whether the strategy is actually working.
+        </p>
+        <p className="text-base text-gray-600 mb-3">
+          Since August 17, 2026, budget-constrained campaigns running Target CPA or Target ROAS that
+          had long been beating their target now track more closely to it instead of continuing to
+          outperform it, without spend going up. If a campaign that used to run comfortably under
+          target suddenly looks like it is catching up to the goal, this is a likely reason.
         </p>
         <ul className="text-sm">
           <li>Look at your last 30 days&apos; average CPA/ROAS — that&apos;s your baseline</li>

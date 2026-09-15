@@ -30,6 +30,15 @@ export default function StaJeRoasSR() {
         </div>
       </div>
 
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
+        <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
+        <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira kad se brojke promene. Šta je novo:</p>
+        <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>Septembar 2026:</strong> Dodata break-even ROAS formula i sekcija &quot;Koji ROAS je dobar?&quot;.</li>
+          <li><strong>April 2026:</strong> Prva verzija vodiča.</li>
+        </ul>
+      </div>
+
       <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
         <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Brzi odgovor</p>
         <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
@@ -48,6 +57,7 @@ export default function StaJeRoasSR() {
           <li><a href="#sta-je-roas" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je ROAS</a></li>
           <li><a href="#formula" className="block py-1 text-base text-gray-700 hover:text-primary underline">Formula i kako se računa</a></li>
           <li><a href="#kalkulator" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS kalkulator</a></li>
+          <li><a href="#dobar-roas" className="block py-1 text-base text-gray-700 hover:text-primary underline">Koji ROAS je dobar?</a></li>
           <li><a href="#benchmarks" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS benchmarks po industriji</a></li>
           <li><a href="#roas-vs-poas" className="block py-1 text-base text-gray-700 hover:text-primary underline">ROAS vs POAS: zašto ROAS ne meri profit</a></li>
           <li><a href="#kako-poboljsati" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako poboljšati ROAS</a></li>
@@ -152,6 +162,14 @@ export default function StaJeRoasSR() {
         </p>
       </div>
 
+      <h3>Break-even ROAS (ROAS pokrića)</h3>
+      <p>
+        Break-even ROAS = 1 ÷ bruto marža (marža kao decimalni broj). Primer: kod marže od 40%, break-even ROAS je 2,5× - ispod toga svaka dodatna prodaja preko oglasa vas košta, ne zarađuje.
+      </p>
+      <p>
+        ROAS iznad break-even još ne znači profit ako marža ne uključuje dostavu, povrate i trošak vođenja naloga. Pogledajte <a href="#roas-vs-poas" className="underline">ROAS vs POAS</a> ispod za kompletnu sliku.
+      </p>
+
       <hr />
 
       <h2 id="kalkulator">ROAS kalkulator</h2>
@@ -167,9 +185,50 @@ export default function StaJeRoasSR() {
 
       <hr />
 
+      <h2 id="dobar-roas">Koji ROAS je dobar?</h2>
+      <p>
+        Ne postoji univerzalan broj. Dobar ROAS je onaj iznad vašeg break-even ROAS-a za vašu maržu - ne benchmark prepisan iz drugog biznisa sa drugačijom strukturom troškova. U nalozima koje vodim, prosečan eCommerce ROAS je 3,7×, ali to je prosek preko različitih marži i industrija, ne cilj kojem treba težiti.
+      </p>
+      <p>Break-even ROAS po marži:</p>
+
+      <div className="overflow-x-auto my-6">
+        <table className="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr className="border-b-2 border-gray-900 bg-gray-50">
+              <th className="py-3 px-3 font-heading font-semibold">Marža</th>
+              <th className="py-3 px-3 font-heading font-semibold">Break-even ROAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-gray-200">
+              <td className="py-3 px-3">20%</td>
+              <td className="py-3 px-3">5,0×</td>
+            </tr>
+            <tr className="border-b border-gray-200 bg-gray-50/50">
+              <td className="py-3 px-3">30%</td>
+              <td className="py-3 px-3">3,33×</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="py-3 px-3">40%</td>
+              <td className="py-3 px-3">2,5×</td>
+            </tr>
+            <tr className="border-b border-gray-200 bg-gray-50/50">
+              <td className="py-3 px-3">50%</td>
+              <td className="py-3 px-3">2,0×</td>
+            </tr>
+            <tr className="border-b border-gray-200">
+              <td className="py-3 px-3">60%</td>
+              <td className="py-3 px-3">1,67×</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+
       <h2 id="benchmarks">ROAS benchmarks po industriji</h2>
       <p>
-        ROAS se drastično razlikuje po industriji. Luksuzni proizvodi imaju visok ROAS ali nisku konverziju; lead gen biznisi imaju nizak ROAS ali visok LTV po klijentu.
+        ROAS se drastično razlikuje po industriji. Luksuzni proizvodi imaju visok ROAS ali nisku konverziju; lead gen biznisi imaju nizak ROAS ali visok LTV po klijentu. Brojevi ispod su orijentacione procene iz industrijskih izveštaja, ne ciljevi koje treba prepisati na svoj nalog.
       </p>
 
       <div className="overflow-x-auto my-6">
@@ -306,7 +365,7 @@ export default function StaJeRoasSR() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            Zavisi od marže. Za eCommerce sa 30-50% maržom, ROAS od 3-5× je dobar. Za niske marže (elektronika, 5-15%), potreban je 6-10×. Break-even formula: ROAS = 1 ÷ marža (decimala). Za 25% maržu, break-even je 4×.
+            Zavisi od marže, ne od jednog broja koji važi za sve naloge. Dobar ROAS je svaki ROAS iznad vašeg break-even ROAS-a (1 ÷ marža) - pogledajte <a href="#dobar-roas" className="underline">tabelu break-even iznad</a> za vašu maržu. U nalozima koje vodim, prosečan eCommerce ROAS je 3,7×, ali to je prosek, ne cilj.
           </div>
         </details>
 
