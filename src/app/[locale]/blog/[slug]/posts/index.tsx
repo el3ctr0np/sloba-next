@@ -148,7 +148,7 @@ const srPosts: PostData[] = [
     slug: "chatgpt-ads-vodic",
     title: "ChatGPT Ads Vodič: Sve Što Treba da Znate [2026]",
     date: "2026-09-01",
-    dateModified: "2026-09-01",
+    dateModified: "2026-09-15",
     category: "ChatGPT Ads",
     metaDescription:
       "ChatGPT Ads vodič: gde su dostupni (47 zemalja, EU od avgusta), formati, context hints umesto ključnih reči, cene i merenje - uz stvarne brojke iz nezavisnih testova.",
@@ -874,12 +874,12 @@ const srPosts: PostData[] = [
 const enPosts: PostData[] = [
   {
     slug: "chatgpt-ads-guide",
-    title: "ChatGPT Ads: The Complete Guide [2026]",
+    title: "ChatGPT Ads (OpenAI Ads): The Complete Guide [2026]",
     date: "2026-09-01",
-    dateModified: "2026-09-01",
+    dateModified: "2026-09-15",
     category: "ChatGPT Ads",
     metaDescription:
-      "ChatGPT Ads explained: where they're live (47 countries), ad formats, context-hint targeting, real CPC and CTR numbers from independent tests, eligibility rules, and how to run a first pilot.",
+      "ChatGPT Ads (OpenAI Ads) explained: where they're live, how to advertise step by step, real CPC numbers from independent tests, who it doesn't fit yet, and how much budget to test with.",
     featuredImage: "/blog/chatgpt-ads-vodic.webp",
     imageAlt: "Illustration of a stylized AI chat interface with a sponsored card below the answer, ChatGPT Ads guide topic",
     readingTime: "18 min",

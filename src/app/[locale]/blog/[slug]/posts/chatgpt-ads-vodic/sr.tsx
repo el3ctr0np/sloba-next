@@ -35,7 +35,7 @@ export default function ChatGptAdsVodicPost() {
         <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
         <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira kako OpenAI menja proizvod. Šta je novo:</p>
         <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
-          <li><strong>Septembar 2026:</strong> Prva verzija vodiča: formati i plasman, dve različite rollout liste (gde se oglasi prikazuju naspram gde se kupuju), modeli kupovine i aukcija, targeting bez ključnih reči, EEA bez personalizacije, merenje i klik-diskrepanca, kategorije kojima je oglašavanje van SAD zabranjeno, nezavisni benchmarci sa imeniocima.</li>
+          <li><strong>Septembar 2026:</strong> Prva verzija vodiča: formati i plasman, dve različite rollout liste (gde se oglasi prikazuju naspram gde se kupuju), modeli kupovine i aukcija, targeting bez ključnih reči, EEA bez personalizacije, merenje i klik-diskrepanca, kategorije kojima je oglašavanje van SAD zabranjeno, nezavisni benchmarci sa imeniocima. Dodato naknadno: iskustvo iz naloga (pristup i MCC glitch), kome kanal (još) ne odgovara, budžet za test, merenje kvaliteta, naziv OpenAI Ads i sažetak koraka.</li>
         </ul>
       </div>
 
@@ -47,7 +47,7 @@ export default function ChatGptAdsVodicPost() {
           Šta su ChatGPT Ads?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>ChatGPT Ads</strong> su sponzorisane kartice koje OpenAI prikazuje <strong>ispod kraja odgovora</strong> u ChatGPT-u, jasno označene i vizuelno odvojene od samog odgovora. Vide ih samo ulogovani korisnici na <strong>Free i Go</strong> planovima. Oglašivač ne bira ključne reči nego opisuje kontekst razgovora u kom želi da se pojavi, a sistem odlučuje da li je oglas relevantan za tekuću temu. Oglas nikada ne menja sam odgovor.
+          <strong>ChatGPT Ads</strong> su sponzorisane kartice koje OpenAI prikazuje <strong>ispod kraja odgovora</strong> u ChatGPT-u, jasno označene i vizuelno odvojene od samog odgovora. Vide ih samo ulogovani korisnici na <strong>Free i Go</strong> planovima. Oglašivač ne bira ključne reči nego opisuje kontekst razgovora u kom želi da se pojavi, a sistem odlučuje da li je oglas relevantan za tekuću temu. Oglas nikada ne menja sam odgovor. OpenAI ovaj proizvod zvanično zove <strong>OpenAI Ads</strong>, kroz ads.openai.com; u pretrazi i svakodnevnom razgovoru, pa i u ovom vodiču, kaže se ChatGPT Ads. Isto je.
         </p>
       </div>
 
@@ -220,6 +220,20 @@ export default function ChatGptAdsVodicPost() {
         <p className="text-base text-yellow-900 mb-0">OpenAI preporučuje početni CPC od 3 do 5 dolara. U nezavisnim testovima sa objavljenim spendom realizovani CPC ide od 1,72 do 12 dolara, zavisno od vertikale. Symphonic je u avgustu prijavio da sa bidom od 3 dolara nije dobio <strong>nijednu impresiju</strong> i da je morao na oko 12 dolara maksimalnog bida da bi kampanja uopšte krenula. Preporučeni raspon uzmite kao donju granicu za neutakmičene teme, ne kao planski broj.</p>
       </div>
 
+      <h3>Kako se oglašavati na ChatGPT-u, korak po korak</h3>
+      <ol>
+        <li>Prvo proverite kategoriju i tržište - nije svaka firma podobna svuda. Vidi <a href="#ko-sme" className="underline">ko sme da se oglašava</a>.</li>
+        <li>Otvorite nalog na ads.openai.com, ili preko agencijskog partnera, i prođite verifikaciju identiteta i pregled naloga.</li>
+        <li>Postavite merenje pre kampanje - piksel, Conversions API, UTM šema. Vidi <a href="#merenje" className="underline">merenje i merni jaz</a>.</li>
+        <li>Pišite context hints umesto ključnih reči - opišite razgovor u kom želite da se pojavite. Vidi <a href="#targeting" className="underline">targeting bez ključnih reči</a>.</li>
+        <li>Lansirajte sa budžetom za učenje i unapred dogovorenim rokom provere, ne sa ciljanim ROAS-om. Vidi <a href="#pilot" className="underline">kako vodim pilot</a>.</li>
+      </ol>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Iz mojih naloga</p>
+        <p className="text-blue-800 text-base mb-0">Nalog koji vodim otvorio je klijent i dao mi pristup. Trenutno postoji poznat glitch: ako klijent otvori nalog i da pristup na vaš email, pod tim istim emailom teško ćete posle otvoriti sopstveni MCC-tip nalog. Rešava se od slučaja do slučaja - nekima ostane, nekima se reši brzo - i zavisi od zemlje za koju se nalog otvara. Praktičan savet koji iz ovoga direktno sledi: unapred se dogovorite čiji email otvara nalog i ko na kraju njime upravlja, pre nego što bilo šta otvorite.</p>
+      </div>
+
       <hr />
 
       <h2 id="targeting">Targeting bez ključnih reči</h2>
@@ -285,6 +299,10 @@ export default function ChatGptAdsVodicPost() {
 
       <p>
         Ovo podrazumeva da tracking na sajtu već radi kako treba pre nego što uopšte otvorite ChatGPT nalog. Osnove i redosled postavljanja sam razradio u <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-vodic" } }} className="underline">vodiču za conversion tracking</Link>.
+      </p>
+
+      <p>
+        Ono što sada u praksi merim je kvalitet: šta posetioci iz ChatGPT-a stvarno rade na sajtu. ChatGPT ima sopstveni conversion tracking - piksel, Conversions API i Automatic Advanced Matching gore u tekstu - i taj deo se stalno usavršava, pa pratim i njega. Ali, kao što sam već rekao, analitika klijenta ostaje izvor istine; brojke iz platforme su drugo čitanje, ne prvo.
       </p>
 
       <hr />
@@ -402,11 +420,19 @@ export default function ChatGptAdsVodicPost() {
         Najinstruktivniji presedan nije brojka nego događaj: <strong>Perplexity je krajem 2025. pauzirao prijem novih oglašivača</strong>, uz slabe rezultate i teško merenje kao razlog. To ne znači da će se isto desiti OpenAI-ju, koji ima nesrazmerno veći doseg. Znači da model &quot;oglas ispod AI odgovora&quot; već jednom nije održao obećanje, i da to vredi imati u vidu kad neko planira budžet za sledeću godinu.
       </p>
 
+      <p>
+        Na nalozima koje vodim, u test fazi, već vidim CPC i broj impresija za nekoliko industrija. Konkretne brojke ne objavljujem - uzorak još nije dovoljno velik da se iz njega izvuče zaključak.
+      </p>
+
       <hr />
 
       <h2 id="da-li-testirati">Da li da testirate</h2>
       <p>
         Moj filter je kratak i primenjujem ga pre nego što uopšte otvorimo temu budžeta.
+      </p>
+
+      <p>
+        Mene pitaju uglavnom iz medicine, finansija i eCommerce-a, i svi već imaju neku procenu prodaje koja dolazi preko AI kanala pre nego što uopšte pitaju. Ono što ih spaja: kad se razgovori o usluzi ili proizvodu dešavaju unutar samog ChatGPT-a, i korisnici sve češće pitaju svog ChatGPT agenta za mišljenje pre kupovine, to je trenutak da se bude prisutan, da se pokrije deo puta koji bi inače stajao na blogu. Kategorija ipak ide prva. Finansije i zdravstvo su van SAD zabranjeni, a u SAD na ručnom odobrenju, pa interesovanje za kanal ne preskače proveru iz <a href="#ko-sme" className="underline">ko sme da se oglašava</a>.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -430,10 +456,20 @@ export default function ChatGptAdsVodicPost() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Budžet koji mora da se vrati ovog meseca</h3>
           <p className="text-base text-gray-600 mb-0">Ako je svaki evro već obećan nekom rezultatu, ovo nije kanal za taj novac. Ovo je budžet za učenje o kanalu, i tako ga treba i knjižiti.</p>
         </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Nema smisla</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Impulsivne, jeftine kupovine</h3>
+          <p className="text-base text-gray-600 mb-0">Cleverly u <a href="https://www.cleverly.co/blog/chatgpt-ads" target="_blank" rel="noopener noreferrer" className="underline">sopstvenom testiranju</a> (8. septembar 2026) impulsivne potrošačke proizvode i hiperlokalne firme navodi kao slab spoj za ovaj kanal. Pri CPC rasponu iz <a href="#brojke" className="underline">šta kažu stvarne brojke</a> (1,72-12 dolara), jeftin proizvod sa tankom maržom može da izgubi novac već na kliku, pre nego što uopšte konvertuje.</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Nema smisla</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Hitna, lokalna potražnja koja se rešava odmah</h3>
+          <p className="text-base text-gray-600 mb-0">Oglas se pojavljuje tek posle odgovora, kad je pitanje već zatvoreno - vidi <a href="#sta-su" className="underline">šta su ChatGPT Ads</a> - pa kupac kome treba trenutno rešenje po pravilu je već odlučio dok se oglas pojavi. Cleverly i hiperlokalne firme navodi kao slab spoj.</p>
+        </div>
       </div>
 
       <p>
-        Ako uđete, uđite sa jasno postavljenim pitanjem umesto sa ciljanim ROAS-om. Pitanje glasi: da li nas ljudi uopšte nalaze kroz ovaj kanal i kako izgleda njihovo ponašanje na sajtu u odnosu na saobraćaj iz drugih izvora. To je merljivo za četiri do šest nedelja. Ciljani ROAS na kanalu koji nema izveštaj na nivou upita i ima poznat merni jaz nije nešto što bih obećao. Ista logika važi i kod raspodele budžeta između postojećih kanala, o čemu sam pisao u poređenju <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta" } }} className="underline">Google Ads i Meta oglasa</Link>.
+        Test vodim kao svaki normalan kanal: oko 10% budžeta izdvojim dodatno, ne preusmeravam ga iz onoga što već radi. Ako uđete, uđite sa jasno postavljenim pitanjem umesto sa ciljanim ROAS-om. Pitanje glasi: da li nas ljudi uopšte nalaze kroz ovaj kanal i kako izgleda njihovo ponašanje na sajtu u odnosu na saobraćaj iz drugih izvora. To je merljivo za četiri do šest nedelja. Ciljani ROAS na kanalu koji nema izveštaj na nivou upita i ima poznat merni jaz nije nešto što bih obećao. Ista logika važi i kod raspodele budžeta između postojećih kanala, o čemu sam pisao u poređenju <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta" } }} className="underline">Google Ads i Meta oglasa</Link>.
       </p>
 
       <hr />
@@ -524,6 +560,26 @@ export default function ChatGptAdsVodicPost() {
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">Ne. Oglas se pojavljuje kao zasebna, jasno označena kartica ispod završenog odgovora i ne menja sadržaj tog odgovora. Oglašivač ne može da plati da ChatGPT preporuči njegov proizvod unutar teksta odgovora. Ako korisnik iskoristi opciju da oglas ubaci nazad u razgovor i pita nešto o njemu, oglašivač ni tada ne kontroliše šta će model odgovoriti. Oglašivač takođe nikada ne dobija sadržaj razgovora, istoriju, memorije, ime, email, preciznu lokaciju ni IP adresu korisnika, nego samo agregirane podatke o učinku kampanje.</p>
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Da li su OpenAI Ads i ChatGPT Ads isto?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+            <p className="mb-0">Da. OpenAI Ads je naziv platforme za oglašivače na ads.openai.com; ChatGPT Ads je kako većina ljudi, pa i sam OpenAI help centar, naziva oglase koji se pojavljuju u ChatGPT-u. Isti proizvod.</p>
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Koliki budžet izdvojiti za test ChatGPT Ads?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+            <p className="mb-0">Tretiram ga kao testiranje svakog drugog kanala: oko 10% budžeta, izdvojeno dodatno na ono što već trošite, ne preusmereno iz kanala koji radi. Nezavisno od toga, važe minimalni budžeti kampanje po tržištu - 25 dolara u SAD, 15 funti u UK, i ostali pragovi navedeni u <a href="#kupovina" className="underline">kako se kupuju</a> - pa 10% mora da pređe te minimume da bi test uopšte bio izvodljiv.</p>
           </div>
         </details>
       </div>

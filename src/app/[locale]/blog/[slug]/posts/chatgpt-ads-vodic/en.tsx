@@ -35,7 +35,7 @@ export default function ChatGptAdsGuideEN() {
         <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide — change history</p>
         <p className="text-sm text-gray-600 mb-3">This guide is updated as OpenAI changes the product. What&apos;s new:</p>
         <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
-          <li><strong>September 2026:</strong> First version: formats and placement, the two separate rollout lists (where ads serve vs where you can buy), buying models and the auction, targeting without keywords, no personalisation in the EEA, measurement and the click gap, categories banned outside the US, independent benchmarks with denominators.</li>
+          <li><strong>September 2026:</strong> First version: formats and placement, the two separate rollout lists (where ads serve vs where you can buy), buying models and the auction, targeting without keywords, no personalisation in the EEA, measurement and the click gap, categories banned outside the US, independent benchmarks with denominators. Added since: hands-on account experience (access and the MCC glitch), who the channel still doesn&apos;t fit, budget for a test, quality measurement, the OpenAI Ads name, and a step-by-step summary.</li>
         </ul>
       </div>
 
@@ -47,7 +47,7 @@ export default function ChatGptAdsGuideEN() {
           What are ChatGPT Ads?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>ChatGPT Ads</strong> are sponsored cards that OpenAI shows <strong>below the end of an answer</strong> in ChatGPT, clearly labelled and visually separated from the answer itself. Only logged-in users on the <strong>Free and Go</strong> plans see them. Advertisers don&apos;t pick keywords — they describe the conversational context they want to appear in, and the system decides whether the ad is relevant to the current topic. The ad never changes the answer.
+          <strong>ChatGPT Ads</strong> are sponsored cards that OpenAI shows <strong>below the end of an answer</strong> in ChatGPT, clearly labelled and visually separated from the answer itself. Only logged-in users on the <strong>Free and Go</strong> plans see them. Advertisers don&apos;t pick keywords — they describe the conversational context they want to appear in, and the system decides whether the ad is relevant to the current topic. The ad never changes the answer. OpenAI&apos;s own name for the product is <strong>OpenAI Ads</strong>, run through ads.openai.com; in search queries and everyday conversation, this guide included, people say ChatGPT Ads. Same thing.
         </p>
       </div>
 
@@ -213,6 +213,20 @@ export default function ChatGptAdsGuideEN() {
         <p className="text-base text-yellow-900 mb-0">OpenAI recommends an opening CPC of $3-5. In independent tests with published spend, realised CPC ranged from $1.72 to $12 depending on vertical. Symphonic reported in August that a $3 bid produced <strong>zero impressions</strong>, and that it took roughly a $12 max bid before the campaign served at all. Treat the recommended range as a floor for uncontested topics, not as a planning number.</p>
       </div>
 
+      <h3>How to advertise on ChatGPT, step by step</h3>
+      <ol>
+        <li>Check your category and market first - not every business is eligible everywhere. See <a href="#eligibility" className="underline">who is allowed to advertise</a>.</li>
+        <li>Open an account at ads.openai.com, or through an agency partner, and get through identity verification and account review.</li>
+        <li>Set up measurement before you touch a campaign - pixel, Conversions API, a UTM scheme. See <a href="#measurement" className="underline">measurement and the click gap</a>.</li>
+        <li>Write context hints instead of keywords - describe the conversation you want to appear in. See <a href="#targeting" className="underline">targeting without keywords</a>.</li>
+        <li>Launch with a learning budget and a fixed review window rather than a target ROAS. See <a href="#pilot" className="underline">how I run a pilot</a>.</li>
+      </ol>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">From my accounts</p>
+        <p className="text-blue-800 text-base mb-0">On the account I run, the client opened it and gave me access. There is a known glitch right now: if the client opens the account and grants access on your email, it can be hard to open your own MCC-style account under that same email afterwards. It gets sorted case by case - some stay stuck, some resolve quickly - and it depends on which country the account is being opened for. Practical takeaway: agree upfront whose email opens the account and who ends up managing it, before you open anything.</p>
+      </div>
+
       <hr />
 
       <h2 id="targeting">Targeting without keywords</h2>
@@ -281,6 +295,10 @@ export default function ChatGptAdsGuideEN() {
 
       <p>
         All of this assumes site tracking already works before you ever open a ChatGPT account. The fundamentals and the order I set them up in are in my <Link href={{ pathname: "/blog/[slug]", params: { slug: "conversion-tracking-guide" } }} className="underline">conversion tracking guide</Link>.
+      </p>
+
+      <p>
+        What I measure now, in practice, is quality: what ChatGPT visitors actually do once they land on the site. ChatGPT has its own conversion tracking - the pixel, the Conversions API and Automatic Advanced Matching above - and that side keeps getting refined, so I watch it too. But as stated above, the client&apos;s own analytics stays the source of truth; the platform&apos;s numbers are the second read, not the first.
       </p>
 
       <hr />
@@ -398,11 +416,19 @@ export default function ChatGptAdsGuideEN() {
         The most instructive precedent isn&apos;t a number, it is an event: <strong>Perplexity paused onboarding new advertisers in late 2025</strong>, citing weak results and difficult measurement. That does not mean the same happens to OpenAI, which has disproportionately more reach. It means the &quot;ad below the AI answer&quot; model has already failed to deliver once, and that is worth holding in mind when someone plans next year&apos;s budget around it.
       </p>
 
+      <p>
+        On the accounts I manage, in the test phase, I&apos;m already seeing CPC and impression volume for a handful of industries. I&apos;m not publishing the actual figures - the sample isn&apos;t big enough yet to draw a conclusion from it.
+      </p>
+
       <hr />
 
       <h2 id="should-you-test">Should you test it</h2>
       <p>
         My filter is short, and I apply it before we ever open the budget conversation.
+      </p>
+
+      <p>
+        The businesses that ask me about this come from medicine, finance and ecommerce, and all of them already have some estimate of sales coming through AI channels before they even ask. What ties them together: when conversations about a service or product happen inside ChatGPT itself, and users increasingly ask their ChatGPT agent for an opinion before they buy, that is the moment to be present - covering the part of the journey that would otherwise sit on a blog post. Category still comes first, though. Finance and healthcare are prohibited outside the US and sit on manual approval inside it, so interest in the channel does not skip the check in <a href="#eligibility" className="underline">who is allowed to advertise</a>.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -426,10 +452,20 @@ export default function ChatGptAdsGuideEN() {
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Budget that has to return this month</h3>
           <p className="text-base text-gray-600 mb-0">If the budget is already promised to a result, this is not the channel for that money. This is a budget for learning about a channel, and it should be booked that way.</p>
         </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Not yet</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Impulse or low-consideration purchases</h3>
+          <p className="text-base text-gray-600 mb-0">Cleverly&apos;s <a href="https://www.cleverly.co/blog/chatgpt-ads" target="_blank" rel="noopener noreferrer" className="underline">own testing</a> (8 September 2026) lists impulse-purchase consumer goods and hyper-local businesses as a weak fit for this channel. At the CPC range in <a href="#real-numbers" className="underline">what the real numbers say</a> ($1.72-$12), a low-price item on a thin margin can lose money on the click alone, before it ever converts.</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1.5"><XCircle size={14} strokeWidth={1.5} className="text-red-500" /> Not yet</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Urgent, decide-now local demand</h3>
+          <p className="text-base text-gray-600 mb-0">The ad only ever shows after the answer is already given - see <a href="#what-they-are" className="underline">what ChatGPT Ads are</a> - so a buyer who needs to act immediately has usually already decided by the time it appears. Cleverly also lists hyper-local businesses as a weak fit.</p>
+        </div>
       </div>
 
       <p>
-        If you do go in, go in with a question rather than a target ROAS. The question is whether people find you through this channel at all, and how their on-site behaviour compares with traffic from your other sources. That is answerable in four to six weeks. A target ROAS on a channel with no query-level reporting and a documented measurement gap is not something I would promise. The same logic applies to splitting budget between channels you already run, which I covered in my comparison of <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta-ads" } }} className="underline">Google Ads and Meta Ads</Link>. I&apos;ve run the same side-by-side against the other established search alternative in my <Link href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads-comparison" } }} className="underline">Microsoft Ads vs Google Ads comparison</Link>.
+        I test it the way I test any normal channel: roughly 10% of budget, set aside on top, not shifted from a channel that already works. If you do go in, go in with a question rather than a target ROAS. The question is whether people find you through this channel at all, and how their on-site behaviour compares with traffic from your other sources. That is answerable in four to six weeks. A target ROAS on a channel with no query-level reporting and a documented measurement gap is not something I would promise. The same logic applies to splitting budget between channels you already run, which I covered in my comparison of <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta-ads" } }} className="underline">Google Ads and Meta Ads</Link>. I&apos;ve run the same side-by-side against the other established search alternative in my <Link href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads-comparison" } }} className="underline">Microsoft Ads vs Google Ads comparison</Link>.
       </p>
 
       <hr />
@@ -520,6 +556,26 @@ export default function ChatGptAdsGuideEN() {
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
             <p className="mb-0">No. The ad appears as a separate, clearly labelled card below a completed answer and does not change the content of that answer. An advertiser cannot pay to have ChatGPT recommend its product inside the answer text. If a user pulls an ad back into the conversation to ask about it, the advertiser still has no control over what the model says. Advertisers also never receive conversation content, history, memories, name, email, precise location or IP address, only aggregated campaign performance data.</p>
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            Are OpenAI Ads and ChatGPT Ads the same thing?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+            <p className="mb-0">Yes. OpenAI Ads is the name of the advertiser platform at ads.openai.com; ChatGPT Ads is what most people, including OpenAI&apos;s own help centre, call the ads that show up inside ChatGPT. Same product.</p>
+          </div>
+        </details>
+
+        <details className="bg-white border-2 border-gray-200 rounded-xl group">
+          <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+            How much budget should I set aside to test ChatGPT Ads?
+            <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+          </summary>
+          <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+            <p className="mb-0">I treat it like testing any other channel: roughly 10% of budget, set aside on top of what you already spend, not diverted from a channel that is working. Separately, per-market campaign minimums still apply - $25 in the US, £15 in the UK, and the other floors listed under <a href="#buying" className="underline">how to buy them</a> - so the 10% has to clear those minimums before it is a workable test.</p>
           </div>
         </details>
       </div>
