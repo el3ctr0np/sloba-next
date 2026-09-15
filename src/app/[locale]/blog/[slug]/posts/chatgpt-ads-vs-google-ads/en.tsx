@@ -185,6 +185,9 @@ export default function ChatGptAdsVsGoogleAdsPostEN() {
       <p>
         One bridge is worth calling out specifically: ChatGPT has no site-visitor retargeting, only a custom-audience upload built from your existing list. That means a visitor who clicks a ChatGPT card and leaves without converting is <strong>lost from the ChatGPT ecosystem</strong> — there's no ChatGPT remarketing pulling them back in, because that function doesn't exist. You catch them with your own <GlossaryLink slug="remarketing">remarketing</GlossaryLink> on the Google side — a GA4 audience, a Google Ads remarketing list, a standard setup you likely already have. More on how those lists get built is in the <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="underline">remarketing guide</Link>.
       </p>
+      <p>
+        ChatGPT isn&apos;t the only alternative to Search worth weighing against a Google Ads budget. I&apos;ve also written up how <Link href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads-comparison" } }} className="underline">Microsoft Ads compares to Google Ads</Link>, the more established of the two options.
+      </p>
 
       <hr />
 

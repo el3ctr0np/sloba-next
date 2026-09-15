@@ -363,7 +363,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       </div>
 
       <p>
-        If average CPC in your industry is $0.30, you have room for profit. If it's $0.60, work on conversion rate or <GlossaryLink slug="aov">AOV</GlossaryLink>. For eCommerce, tracking <GlossaryLink slug="roas">ROAS</GlossaryLink> gives you a clearer picture of campaign profitability than raw ROI.
+        If average CPC in your industry is $0.30, you have room for profit. If it's $0.60, work on conversion rate or <GlossaryLink slug="aov">AOV</GlossaryLink>. For eCommerce, tracking <GlossaryLink slug="roas">ROAS</GlossaryLink> gives you a clearer picture of campaign profitability than raw ROI — see <Link href={{ pathname: "/blog/[slug]", params: { slug: "what-is-roas" } }} className="underline">what ROAS is and how to calculate it</Link> for the formula.
       </p>
 
       <hr />
@@ -433,6 +433,10 @@ export default function HowMuchDoesGoogleAdsCostEN() {
           </div>
         </div>
       </div>
+
+      <p>
+        If cost is the deciding factor, it&apos;s worth weighing the alternative too. I&apos;ve laid out the full <Link href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads-comparison" } }} className="underline">Microsoft Ads vs Google Ads comparison</Link>, cost included.
+      </p>
 
       <hr />
 

@@ -427,7 +427,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <h2 id="category-5-ads-and-extensions">Category 5: Ads and extensions</h2>
       <p>
-        Over 50% of the accounts I audit run ads with &quot;Poor&quot; Ad Strength and barely any extensions. That&apos;s a missed opportunity — better ads mean a higher CTR, which means a lower CPC and more conversions. Ads are the only part of your account that potential customers actually see.
+        Over 50% of the accounts I audit run ads with &quot;Poor&quot; Ad Strength and barely any extensions. That&apos;s a missed opportunity — better ads mean a higher <Link href={{ pathname: "/blog/[slug]", params: { slug: "ctr-guide" } }} className="underline">CTR</Link>, which means a lower CPC and more conversions. Ads are the only part of your account that potential customers actually see.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -530,7 +530,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <h2 id="category-7-bidding-strategy">Category 7: Bidding strategy</h2>
       <p>
-        Smart Bidding is a powerful tool, but only when the algorithm has enough conversions to learn from. Over 40% of the accounts I audit run Smart Bidding with &lt;10 conversions a month — that simply can&apos;t work.
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="underline">Smart Bidding</Link> is a powerful tool, but only when the algorithm has enough conversions to learn from. Over 40% of the accounts I audit run Smart Bidding with &lt;10 conversions a month — that simply can&apos;t work.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
@@ -622,7 +622,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <h2 id="category-9-reporting-and-analytics">Category 9: Reporting and analytics</h2>
       <p>
-        The Google Ads interface only shows part of the picture. Without GA4 reconciliation, a sensible attribution model, and regular segment reporting, you&apos;re optimizing blind — you can see that something is spending budget, but not why, or for whom it&apos;s actually working.
+        The Google Ads interface only shows part of the picture. Without <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integration" } }} className="underline">GA4 reconciliation</Link>, a sensible attribution model, and regular segment reporting, you&apos;re optimizing blind — you can see that something is spending budget, but not why, or for whom it&apos;s actually working.
       </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">

@@ -207,7 +207,7 @@ export default function PerformanceMaxVsStandardShoppingEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <p className="font-heading font-bold text-gray-900 mb-1">Control and a hard CPC ceiling</p>
           <p className="text-base text-gray-600 mb-0">
-            Manual or capped bidding lets you set a ceiling PMax won&apos;t give you. For margin-sensitive categories, where a couple of extra pence of CPC turns a winner into a loss, that ceiling is the difference between profit and bleeding out. This is exactly where I ran Standard to protect a 1.78x POAS. One caveat worth stating plainly: that ceiling only exists while Standard stays on manual or capped CPC. Put a target ROAS on it and you&apos;ve handed bidding to Smart Bidding and traded the ceiling away — see step 4 of the hybrid below, where I split the two modes out.
+            Manual or capped bidding lets you set a ceiling PMax won&apos;t give you. For margin-sensitive categories, where a couple of extra pence of CPC turns a winner into a loss, that ceiling is the difference between profit and bleeding out. This is exactly where I ran Standard to protect a 1.78x POAS. One caveat worth stating plainly: that ceiling only exists while Standard stays on manual or capped CPC. Put a target ROAS on it and you&apos;ve handed bidding to <Link href={{ pathname: "/blog/[slug]", params: { slug: "smart-bidding-guide" } }} className="underline">Smart Bidding</Link> and traded the ceiling away — see step 4 of the hybrid below, where I split the two modes out.
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5">

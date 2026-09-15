@@ -367,6 +367,9 @@ export default function GoogleSearchCampaignsGuidePost() {
       <p>
         This is its own discipline with its own rules — how many headlines is optimal, how to avoid every headline saying the same thing in different words, how to use pinning without choking off testing. I haven't repeated it here because a full guide already exists: <Link href={{ pathname: "/blog/[slug]", params: { slug: "responsive-search-ads-guide" } }} className="underline">RSA guide — how to write ads that convert</Link>.
       </p>
+      <p>
+        Better headlines are also the main lever for <Link href={{ pathname: "/blog/[slug]", params: { slug: "ctr-guide" } }} className="underline">CTR</Link> in a Search campaign. I break down what moves it in a separate guide.
+      </p>
 
       <hr />
 

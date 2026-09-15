@@ -359,7 +359,7 @@ export default function GA4AudienceFrameworkEN() {
 
       <h2 id="replenishment">Pillar 5 — Replenishment (RPL) — the one nobody builds</h2>
       <p>
-        Three lists, and this is the pillar that gets the most weight in this post, because it&apos;s the one I almost never see built anywhere else. Most accounts have lifecycle and intent audiences. Almost none have replenishment, and for a repeat-purchase consumable business it carries the most weight of the six — it&apos;s the difference between remarketing that reacts to browsing and remarketing that predicts when someone is about to run out.
+        Three lists, and this is the pillar that gets the most weight in this post, because it&apos;s the one I almost never see built anywhere else. Most accounts have lifecycle and intent audiences. Almost none have replenishment, and for a repeat-purchase consumable business it carries the most weight of the six — it&apos;s the difference between <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }} className="underline">remarketing</Link> that reacts to browsing and remarketing that predicts when someone is about to run out.
       </p>
       <figure className="my-8">
         <Image src="/blog/ga4-audiences/inline/fig-06-replenishment-timing.png" alt="Consumption windows for moisturiser, supplements and SPF on a 120 day scale, with a red marker at day 55 where the replenishment ad should land" width={1600} height={900} className="rounded-xl border border-gray-200 w-full h-auto" />
@@ -548,7 +548,7 @@ export default function GA4AudienceFrameworkEN() {
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">0</span>
             <div>
               <strong>Prerequisite — ecommerce events actually fire</strong>
-              <p className="text-base text-gray-600 mt-1 mb-0"><code>view_item</code>, <code>add_to_cart</code>, <code>begin_checkout</code>, <code>purchase</code> all need to be reaching GA4, the property needs to be linked to the Google Ads account, and Google signals should be on if you need Display reach. Check: GA4 → Realtime, run a test purchase, confirm <code>purchase</code> shows up with a value.</p>
+              <p className="text-base text-gray-600 mt-1 mb-0"><code>view_item</code>, <code>add_to_cart</code>, <code>begin_checkout</code>, <code>purchase</code> all need to be reaching GA4, the property needs to be linked to the Google Ads account (full setup in my <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integration" } }} className="underline">GA4/Google Ads integration guide</Link>), and Google signals should be on if you need Display reach. Check: GA4 → Realtime, run a test purchase, confirm <code>purchase</code> shows up with a value.</p>
             </div>
           </div>
           <div className="flex items-start gap-3">

@@ -244,6 +244,9 @@ export default function ChatGptAdsGuideEN() {
       <p>
         On privacy, the advertiser never receives conversations, history, memories, name, email, precise location or IP address. You get aggregated performance data. Ads-related data is retained for 30 days after deletion. ChatGPT was designated a Very Large Online Search Engine in the EU on 31 August 2026, so by the end of December 2026 it must meet DSA obligations, including a public ad repository listing ad content, advertiser, serving period and targeting parameters — effectively an ad library for ChatGPT, with a known deadline.
       </p>
+      <p>
+        I go deeper on this market-by-market rollout and the EEA-specific restrictions in <Link href={{ pathname: "/blog/[slug]", params: { slug: "chatgpt-ads-europe" } }} className="underline">ChatGPT Ads in Europe</Link>.
+      </p>
 
       <hr />
 
@@ -426,7 +429,7 @@ export default function ChatGptAdsGuideEN() {
       </div>
 
       <p>
-        If you do go in, go in with a question rather than a target ROAS. The question is whether people find you through this channel at all, and how their on-site behaviour compares with traffic from your other sources. That is answerable in four to six weeks. A target ROAS on a channel with no query-level reporting and a documented measurement gap is not something I would promise. The same logic applies to splitting budget between channels you already run, which I covered in my comparison of <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta-ads" } }} className="underline">Google Ads and Meta Ads</Link>.
+        If you do go in, go in with a question rather than a target ROAS. The question is whether people find you through this channel at all, and how their on-site behaviour compares with traffic from your other sources. That is answerable in four to six weeks. A target ROAS on a channel with no query-level reporting and a documented measurement gap is not something I would promise. The same logic applies to splitting budget between channels you already run, which I covered in my comparison of <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-vs-meta-ads" } }} className="underline">Google Ads and Meta Ads</Link>. I&apos;ve run the same side-by-side against the other established search alternative in my <Link href={{ pathname: "/blog/[slug]", params: { slug: "microsoft-ads-vs-google-ads-comparison" } }} className="underline">Microsoft Ads vs Google Ads comparison</Link>.
       </p>
 
       <hr />
