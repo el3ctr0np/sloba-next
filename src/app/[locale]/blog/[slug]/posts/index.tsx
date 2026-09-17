@@ -251,7 +251,7 @@ const srPosts: PostData[] = [
     metaDescription:
       "Google Ads API autentifikacija bez lutanja: OAuth2 tok korak po korak, refresh token zamka od 7 dana, service account pravila i tabela čestih grešaka sa rešenjima.",
     featuredImage: "/blog/google-ads-api-autentifikacija.webp",
-    imageAlt: "Ilustracija katanca sa ključem, štitom i identifikacionom karticom, tema autentifikacije za Google Ads API",
+    imageAlt: "Ilustracija katanca sa ključem, oblakom, štitom i identifikacionom karticom, tema autentifikacije za Google Ads API: OAuth, service account i Cloud projekti",
     readingTime: "11 min",
     content: <GoogleAdsApiAutentifikacijaSR />,
     ctaTarget: "tool"
@@ -377,7 +377,7 @@ const srPosts: PostData[] = [
     metaDescription:
       "Kako do Google Ads API Basic Access nivoa posle 9.9.2026, kada je Google ukinuo developer tokene i vezao nivo pristupa za Cloud projekat: brand verification, zahtev kroz Cloud Console, šta Basic stvarno otključava i kada Standard ima smisla. Iz ličnog iskustva.",
     featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
-    imageAlt: "Ilustracija stepenica koje vode do otvorene kapije sa zastavicom na vrhu, tema vodiča za Google Ads API Basic Access",
+    imageAlt: "Ilustracija starog ključa na poslužavniku i strelice ka oblaku sa zelenim štitom, tema prelaska Google Ads API pristupa sa developer tokena na Cloud projekat",
     readingTime: "12 min",
     content: <GoogleAdsApiBasicAccessVodicSR />,
     ctaTarget: "tool"
@@ -972,7 +972,7 @@ const enPosts: PostData[] = [
     metaDescription:
       "Google Ads API authentication explained: OAuth2 desktop vs. web flow, the 7-day refresh token trap, service account rules, and a table of common errors with fixes.",
     featuredImage: "/blog/google-ads-api-autentifikacija.webp",
-    imageAlt: "Illustration of a padlock with a key, a shield and an ID badge card, Google Ads API authentication topic",
+    imageAlt: "Illustration of a padlock with a key, a cloud, a shield and an ID badge card, Google Ads API authentication with OAuth, service accounts and Cloud projects",
     readingTime: "11 min",
     content: <GoogleAdsApiAuthenticationGuideEN />
   },
@@ -1089,7 +1089,7 @@ const enPosts: PostData[] = [
     metaDescription:
       "How to get Google Ads API Basic Access after September 9, 2026, when Google retired developer tokens and tied access levels to the Cloud project: brand verification, requesting the upgrade in Cloud Console, what Basic actually unlocks, and when Standard is worth asking for. First-hand guide.",
     featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
-    imageAlt: "Illustration of a staircase leading to an open gate with a flag at the top, Google Ads API Basic Access step-by-step guide topic",
+    imageAlt: "Illustration of an old key on a tray with an arrow pointing to a cloud holding a green shield, Google Ads API access moving from developer tokens to Cloud projects",
     readingTime: "12 min",
     content: <GoogleAdsApiBasicAccessGuideEN />
   },
