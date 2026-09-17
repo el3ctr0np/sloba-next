@@ -292,7 +292,7 @@ const getChapters = (locale: string): Chapter[] => {
           {
             title: "Google Ads API Basic Access: Step-by-Step Guide [2026]",
             excerpt:
-              "Developer token, an application that gets approved, and the new brand verification pilot that cuts review time to hours.",
+              "Google retired developer tokens on Sep 9, 2026 and tied access levels to the Cloud project. What changed, what Basic unlocks, and when Standard is worth asking for.",
             slug: "google-ads-api-basic-access-guide",
             readTime: "12 min"
           },
@@ -564,7 +564,7 @@ const getChapters = (locale: string): Chapter[] => {
         {
           title: "Google Ads API Basic Access: Vodič Korak po Korak [2026]",
           excerpt:
-            "Developer token, aplikacija koja prolazi i novi brand verification pilot koji skraćuje review na par sati.",
+            "Google je 9.9.2026. ukinuo developer tokene i vezao nivo pristupa za Cloud projekat. Šta se menja, šta Basic otključava i kada Standard ima smisla.",
           slug: "google-ads-api-basic-access-vodic",
           readTime: "12 min"
         },

@@ -7,7 +7,7 @@ export default function GoogleAdsApiAutentifikacijaSR() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Autentifikacija na Google Ads API-ju ima tri sloja koja se stalno mešaju - OAuth2 kredencijali koji kažu ko ste, developer token koji kaže koja je aplikacija u pitanju, i login-customer-id koji kaže koji nalog gađate. Postoji i četvrti, opcioni sloj (service account) za uži slučaj upotrebe nego što quick-start dokumentacija sugeriše. Pogrešite li bilo koji od ta tri, ne dobijate upozorenje - dobijate konkretan kod greške i mrtav skript.
+          Autentifikacija na Google Ads API-ju ima tri sloja koja se stalno mešaju - OAuth2 kredencijali koji kažu ko ste, developer token koji kaže koja je aplikacija u pitanju, i login-customer-id koji kaže koji nalog gađate. Postoji i četvrti, opcioni sloj (service account) za uži slučaj upotrebe nego što quick-start dokumentacija sugeriše. Pogrešite li bilo koji od ta tri, ne dobijate upozorenje - dobijate konkretan kod greške i mrtav skript. Od 9. septembra 2026. developer token više nije obavezan - Google ga ignoriše ako ga i dalje šaljete, a nivo pristupa sad nosi Google Cloud projekat iz kog su izvučeni OAuth kredencijali, ne sam token.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -32,12 +32,12 @@ export default function GoogleAdsApiAutentifikacijaSR() {
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-semibold">Brz odgovor</p>
         <p className="text-base text-gray-700 mb-0">
-          Developer token na Google Ads API-ju identifikuje vašu aplikaciju i nikad se ne menja; OAuth2 client (client ID i secret) identifikuje aplikaciju Google-ovim auth serverima; refresh token identifikuje osobu koja je odobrila pristup i može isteći. Za solo operatera ili agenciju koja vodi sopstvene skriptove, koristite OAuth2 desktop (installed app) tok - najjednostavniji je put i offline pristup je uključen po default-u. Web application tok koristite samo ako gradite nešto u šta se korisnici uloguju kroz browser. Service account ima smisla isključivo kad radite server-to-server automatizaciju unutar Google Workspace domena sa podešenom domain-wide delegacijom za adwords scope - Google-ov sopstveni vodič za service account to ne objašnjava, ali bez toga, poziv preko service account-a na Google Ads API-ju ne prolazi sa <code>AuthenticationError.NOT_ADS_USER</code>.
+          Developer token na Google Ads API-ju identifikuje vašu aplikaciju i nikad se ne menja, mada od 9. septembra 2026. više nije obavezan - Google ga ignoriše ako i dalje stiže u pozivu; OAuth2 client (client ID i secret) identifikuje aplikaciju Google-ovim auth serverima; refresh token identifikuje osobu koja je odobrila pristup i može isteći. Za solo operatera ili agenciju koja vodi sopstvene skriptove, koristite OAuth2 desktop (installed app) tok - najjednostavniji je put i offline pristup je uključen po default-u. Web application tok koristite samo ako gradite nešto u šta se korisnici uloguju kroz browser. Service account ima smisla isključivo kad radite server-to-server automatizaciju unutar Google Workspace domena sa podešenom domain-wide delegacijom za adwords scope - Google-ov sopstveni vodič za service account to ne objašnjava, ali bez toga, poziv preko service account-a na Google Ads API-ju ne prolazi sa <code>AuthenticationError.NOT_ADS_USER</code>.
         </p>
       </div>
 
       <p>
-        Moja Basic Access prijava za Google Ads API prošla je pregled za par sati umesto uobičajenih dana - tačne korake opisao sam u{" "}
+        Moja Basic Access prijava za Google Ads API poslata je početkom avgusta 2026, vraćena mi je na dopunu, dopunio sam je početkom septembra, i konačno je odobrena 9-10. septembra - tačne korake opisao sam u{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="underline text-blue-700 font-medium">
           vodiču za Basic Access
         </Link>
@@ -46,6 +46,13 @@ export default function GoogleAdsApiAutentifikacijaSR() {
       <p>
         Ovaj vodič pokriva deo koji niko čisto ne objasni: OAuth2 desktop naspram web toka, zamku od 7 dana, šta je developer token header stvarno u odnosu na OAuth token, kad je service account zaista pravi alat (a kad to samo izgleda tako), i test od dva minuta u Python-u kojim proverite da ceo lanac radi pre nego što na njemu gradite bilo šta.
       </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Promena od 9. septembra 2026.</p>
+        <p className="text-yellow-800 text-base mb-0">
+          Google je tog dana ukinuo developer tokene na Google Ads API-ju - kod koji ga i dalje šalje nastavlja da radi, ali Google ga ignoriše. Nivo pristupa (Test / Explorer / Basic / Standard) sad nosi Google Cloud projekat iz kog su izvučeni OAuth kredencijali, ne token, i nadogradnja nivoa se traži u Cloud Console-u, ne u API Center-u. Nova zamka: povučete li OAuth kredencijale iz drugog Cloud projekta od onog koji ima odobren nivo, padate na Test nivo i ne vidite produkcione naloge - ranije je to bilo svejedno jer je nivo nosio token. Zvanična dokumentacija je trenutno sama sa sobom nesaglasna po ovom pitanju, pa proverite svoj Cloud projekat pre nego što nešto slomite.
+        </p>
+      </div>
 
       <hr />
       {/* ── Sadržaj ── */}
@@ -95,7 +102,7 @@ export default function GoogleAdsApiAutentifikacijaSR() {
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Developer token</td>
               <td className="py-3 px-3">Identifikuje vašu <em>aplikaciju</em> Google Ads API-ju - ne korisnika</td>
-              <td className="py-3 px-3">API Center, u tvom manager nalogu</td>
+              <td className="py-3 px-3">API Center, u tvom manager nalogu (nivo se od 9.9.2026. menja u Cloud Console-u; sama stranica ide u gašenje u prvoj polovini 2027.)</td>
               <td className="py-3 px-3"><code>DEVELOPER_TOKEN_NOT_APPROVED</code></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
@@ -109,11 +116,11 @@ export default function GoogleAdsApiAutentifikacijaSR() {
       </div>
 
       <p>
-        Sam developer token - kako se generiše, i nivoi pristupa Test / Explorer / Basic / Standard koji određuju šta može da poziva - pokriven je u celini u{" "}
+        Sam developer token - kako se generiše (mada od 9.9.2026. više nije obavezan) - i nivoi pristupa Test / Explorer / Basic / Standard, koje sad nosi Google Cloud projekat iz kog vučete OAuth kredencijale a ne sam token, pokriveni su u celini u{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="underline text-blue-700 font-medium">
           vodiču za Basic Access
         </Link>
-        . Ovaj post pretpostavlja da već imate token (bilo koji nivo radi za testiranje) i fokusira se na to da ostali slojevi rade kako treba.
+        . Ovaj post pretpostavlja da vaš Cloud projekat već ima nivo pristupa (bilo koji radi za testiranje) i fokusira se na to da ostali slojevi rade kako treba.
       </p>
 
       <hr />
@@ -166,7 +173,7 @@ export default function GoogleAdsApiAutentifikacijaSR() {
       </div>
 
       <p>
-        Ako ste već prošli kroz OAuth consent screen radi verifikacije brenda - korak 4 u vodiču za Basic Access - prepoznaćete ovaj ekran. Isti je; sad ste tu iz drugog razloga.
+        Ako ste već prošli kroz OAuth consent screen radi verifikacije brenda - korak 4 u vodiču za Basic Access, sada preduslov za nove Basic i Standard prijave (postojeći nosioci pristupa su izuzeti) - prepoznaćete ovaj ekran. Isti je; sad ste tu iz drugog razloga.
       </p>
 
       <hr />
@@ -181,7 +188,7 @@ export default function GoogleAdsApiAutentifikacijaSR() {
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-api-pristupi-za-agencije" } }} className="underline text-blue-700 font-medium">
           vodiču za Google API pristupe za agencije
         </Link>
-        . Ako je vaš projekat isti onaj koji ste već gurnuli u <strong>In production</strong> radi verifikacije brenda (korak 4 iz vodiča za Basic Access), ovo je već rešeno. Ako niste, proverite sad: Cloud Console → APIs and services → OAuth consent screen → tab Audience.
+        . Ako je vaš projekat isti onaj koji ste već gurnuli u <strong>In production</strong> radi verifikacije brenda (korak 4 iz vodiča za Basic Access, sada preduslov za nove Basic i Standard prijave, dok su postojeći nosioci pristupa izuzeti), ovo je već rešeno. Ako niste, proverite sad: Cloud Console → APIs and services → OAuth consent screen → tab Audience.
       </p>
 
       <hr />
@@ -191,7 +198,7 @@ export default function GoogleAdsApiAutentifikacijaSR() {
         Još dve stvari se stalno mešaju jedna sa drugom, i nijedna nije OAuth koncept.
       </p>
       <p>
-        <strong>Developer token</strong> nije header koji dobijate iz OAuth toka - to je fiksan string iz API Center-a vašeg manager naloga (22 karaktera u mojim nalozima), i ide na svaki zahtev kao <code>developer-token</code> HTTP/gRPC header. Identifikuje aplikaciju, ne osobu koja poziva, i ista je vrednost bez obzira koji je Google nalog autentifikovao poziv.
+        <strong>Developer token</strong> nije header koji dobijate iz OAuth toka - to je fiksan string iz API Center-a vašeg manager naloga (22 karaktera u mojim nalozima), i ide na svaki zahtev kao <code>developer-token</code> HTTP/gRPC header - to i dalje radi, ali od 9. septembra 2026. više nije uslov za poziv, jer Google header ignoriše i nivo pristupa čita iz Cloud projekta. Identifikuje aplikaciju, ne osobu koja poziva, i ista je vrednost bez obzira koji je Google nalog autentifikovao poziv.
       </p>
       <p>
         <strong>login-customer-id</strong> je bitan tek kad vaš autentifikovan nalog ima pristup manager (MCC) nalogu. Ako pozivate API da uradite nešto na klijentskom nalogu ispod tog MCC-a, morate Google-u reći u kontekstu kog naloga radite - postavite <code>login-customer-id</code> header na ID MCC-a. Preskočite to i dobijate <code>USER_PERMISSION_DENIED</code>: &quot;the authorized customer does not have access to the operating customer&quot;, iako u Google Ads interfejsu jasno imate pristup.
@@ -244,6 +251,9 @@ use_proto_plus: True`}</code>
 
       <p>
         Dve stvari vredne isticanja: <code>login_customer_id</code> je MCC ID bez crtica, i mora se postaviti samo ako pozivate kroz manager nalog - izostavite ga za samostalan nalog. A <code>use_proto_plus: True</code> nije opciona kozmetika; client biblioteka zahteva ovo polje u konfiguraciji, i njegovo odsustvo pravi konfuzne greške tipova koje s autentifikacijom nemaju veze.
+      </p>
+      <p>
+        Red sa <code>developer_token</code> u ovom fajlu možete već sada tretirati kao opcion u novim setup-ovima - Google u mejlu od 14. septembra 2026. najavljuje da ga nova izdanja Google Ads API-ja, očekivano u prvoj polovini 2027, neće više ni primati u pozivu, pa ga postojećim skriptovima ne morate hitno brisati, ali ga u novim ne treba više dodavati.
       </p>
 
       <hr />
@@ -351,7 +361,7 @@ for row in response:
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Developer token identifikuje vašu aplikaciju - fiksan je string izdat jednom u API Center-u vašeg manager naloga (22 karaktera u mojim nalozima), i sam po sebi ne ističe. OAuth2 access token (i refresh token iza njega) identifikuje osobu koja je odobrila pristup vašoj aplikaciji, i može isteći ili biti opozvan. Svaki poziv na Google Ads API zahteva oba: developer token kao header, i validan OAuth2 access token za autentifikaciju.
+          Developer token identifikuje vašu aplikaciju - fiksan je string izdat jednom u API Center-u vašeg manager naloga (22 karaktera u mojim nalozima), i sam po sebi ne ističe. OAuth2 access token (i refresh token iza njega) identifikuje osobu koja je odobrila pristup vašoj aplikaciji, i može isteći ili biti opozvan. Svaki poziv na Google Ads API zahteva oba: developer token kao header, i validan OAuth2 access token za autentifikaciju. Od 9. septembra 2026. developer token više nije obavezan deo tog poziva - Google ga ignoriše ako stigne, a nivo pristupa sad nosi Cloud projekat iz kog su OAuth kredencijali izvučeni.
         </div>
       </details>
 
@@ -420,7 +430,7 @@ for row in response:
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Basic Access Vodič</p>
-          <p className="text-xs text-gray-500 mb-0">Kako da vam odobre developer token, uključujući brzu prijavu od jula 2026.</p>
+          <p className="text-xs text-gray-500 mb-0">Kako da vam odobre developer token i koji nivo pristupa da tražite - ažurirano posle promena od 9. septembra 2026.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-api-pristupi-za-agencije" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google API Pristupi za Agencije</p>
@@ -433,7 +443,7 @@ for row in response:
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: 29. avgust 2026.
+        Poslednje ažuriranje: 17. septembar 2026.
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

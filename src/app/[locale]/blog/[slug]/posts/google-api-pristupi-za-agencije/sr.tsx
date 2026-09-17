@@ -41,7 +41,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
       </div>
 
       <p>
-        Kad sam prošao kroz aplikaciju za Google Ads API Basic Access, ispostavilo se da je developer token samo jedan deo slagalice. Ista agencija koja automatizuje reporting za Google Ads treba i GA4 podatke za attribution, Search Console podatke za SEO stranu, Tag Manager za tracking audit, i Merchant Center za Shopping feed dijagnostiku. Svaki od tih alata ima svoj API, svoj scope i svoja pravila, ali svi žive pod jednim krovom: Google Cloud projekat koji jednom podesite i onda samo dodajete servise.
+        Kad sam prošao kroz aplikaciju za Google Ads API Basic Access - u dva kruga, jer je prva prijava vraćena na dopunu - ispostavilo se da je developer token samo jedan deo slagalice. Ista agencija koja automatizuje reporting za Google Ads treba i GA4 podatke za attribution, Search Console podatke za SEO stranu, Tag Manager za tracking audit, i Merchant Center za Shopping feed dijagnostiku. Svaki od tih alata ima svoj API, svoj scope i svoja pravila, ali svi žive pod jednim krovom: Google Cloud projekat koji jednom podesite i onda samo dodajete servise.
       </p>
       <p>
         Ovaj vodič pokriva ceo taj krov, od nule. Prolazimo kroz temelj (Cloud projekat i OAuth consent screen, uključujući grešku koja mi je jednom ugasila token), pa kroz svaki od šest API-ja pojedinačno, sa scope-om koji vam treba i mestom gde se uključuje. Za Google Ads API developer token i brand verification pilot postoji poseban, detaljan vodič na koji ću linkovati u odgovarajućoj sekciji - ovde ga samo smeštam u širi kontekst.
@@ -110,20 +110,27 @@ export default function GoogleApiPristupiZaAgencijePost() {
         </p>
       </div>
 
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Proverite ko je Owner ili Editor na projektu</p>
+        <p className="text-yellow-800 text-base mb-0">
+          Dok Google Ads API Center postoji, administrativna i compliance obaveštenja o vašem Cloud projektu idu na kontakt email podešen tamo. Google očekuje da tu stranicu ugasi u prvoj polovini 2027, i posle toga obaveštenja idu samo korisnicima koji na Cloud projektu imaju ulogu Owner ili Editor u IAM-u. Proverite sad, na IAM stranici projekta, da je prava osoba na jednoj od te dve uloge - inače ćete propustiti obaveštenje kad taj prelaz dođe.
+        </p>
+      </div>
+
       <hr />
 
       <h2 id="google-ads-api">Google Ads API</h2>
       <p>
-        Google Ads API je verovatno prvi API po koji agencija poseže, jer direktno diže reporting i upravljanje kampanjama na nivo koji ručni rad ne može da isprati. Pristup se drži na nivou manager (MCC) naloga preko developer tokena, i taj token prolazi kroz tri nivoa: <strong>Explorer access</strong> (default, do 2.880 operacija dnevno na produkcijskim nalozima), <strong>Basic Access</strong> (do 15.000 operacija dnevno plus planning servisi) i <strong>Standard Access</strong> (bez dnevnog limita, za alate velikog obima).
+        Google Ads API je verovatno prvi API po koji agencija poseže, jer direktno diže reporting i upravljanje kampanjama na nivo koji ručni rad ne može da isprati. Od 9. septembra 2026. Google je ukinuo developer tokene za Google Ads API - i dalje se mogu slati u pozivima, ali ih Google ignoriše, i više nisu obavezni. Prelaz je za postojeće korisnike prošao automatski: Google je na osnovu poslednjih 90 dana API poziva sam preneo odobreni nivo sa tokena na svaki Cloud projekat koji je u tom periodu njime pozivao API. Nivo pristupa sada nosi Google Cloud projekat iz kog su izvučeni OAuth kredencijali, ne token na nivou manager (MCC) naloga. MCC i dalje igra ulogu, ali kroz <code>login-customer-id</code> parametar u pozivu ka API-ju, što je odvojena stvar od samog nivoa pristupa. Taj nivo prolazi kroz tri praktična koraka za produkcijske naloge: <strong>Explorer access</strong> (default, do 2.880 operacija dnevno), <strong>Basic Access</strong> (do 15.000 operacija dnevno plus planning servisi) i <strong>Standard Access</strong> (bez ukupnog dnevnog limita, pojedinačni servisi zadržavaju sopstvene rate limite).
       </p>
       <p>
-        Explorer nivo je dovoljan da povlačite izveštaje i radite osnovne izmene na svojim nalozima, ali sa dva ograničenja koja se brzo osete: dnevni limit od 2.880 operacija i potpuno blokirani planning servisi. Pozivi ka Keyword Planner delu API-ja, za generisanje ideja za ključne reči ili procenu volumena pretrage, vraćaju grešku <code>DEVELOPER_TOKEN_NOT_APPROVED</code> sve dok ne dobijete Basic Access. To je i glavni praktični razlog da aplikaciju pošaljete pre nego što vam limiti stvarno zasmetaju.
+        Explorer nivo je dovoljan da povlačite izveštaje i radite osnovne izmene na svojim nalozima, ali sa dva ograničenja koja se brzo osete: dnevni limit od 2.880 operacija i potpuno blokirani planning servisi. Pozivi ka Keyword Planner delu API-ja, za generisanje ideja za ključne reči ili procenu volumena pretrage, vraćaju grešku <code>DEVELOPER_TOKEN_NOT_APPROVED</code> sve dok Cloud projekat ne dobije Basic Access. To je i glavni praktični razlog da aplikaciju pošaljete pre nego što vam limiti stvarno zasmetaju. Nova zamka na koju treba da pazite: ako OAuth kredencijale generišete iz drugog Cloud projekta od onog koji nosi vaš odobreni nivo pristupa, pozivi padaju na Test nivo i ne vide produkcione naloge - proverite da li je projekat iz kog vučete kredencijale isti onaj koji je prošao review.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Detaljan vodič</p>
         <p className="text-blue-800 text-base mb-0">
-          Ceo proces aplikacije za Basic Access, uključujući noviji brand verification pilot koji ubrzava review sa dana ili nedelja na par sati, pokriven je korak po korak u odvojenom vodiču:{" "}
+          Ceo proces aplikacije za Basic Access, uključujući brand verification - koji je sada preduslov za nove Basic i Standard prijave (postojeći nosioci pristupa su izuzeti) - pokriven je korak po korak u odvojenom vodiču:{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="underline text-blue-700 font-medium">
             Google Ads API Basic Access - vodič korak po korak
           </Link>. Ovde samo napominjem da OAuth scope koji vam treba je <code>https://www.googleapis.com/auth/adwords</code>, i da se sve dešava u istom Cloud projektu koji ste podesili u prethodnoj sekciji.
@@ -225,7 +232,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
               <td className="py-3 px-3 font-medium">Google Ads API</td>
               <td className="py-3 px-3">Reporting, upravljanje kampanjama, bulk izmene</td>
               <td className="py-3 px-3"><code>.../auth/adwords</code></td>
-              <td className="py-3 px-3">API Center (MCC) + Cloud Console</td>
+              <td className="py-3 px-3">Google Cloud Console</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">GA4 Data API</td>
@@ -298,7 +305,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
-            <div><strong>Za Google Ads API - aplicirajte za developer token</strong> <span className="text-gray-500">- ovo je jedini korak sa čekanjem na review; ostalih pet API-ja rade odmah čim su uključeni i autentifikovani.</span></div>
+            <div><strong>Za Google Ads API - proverite ili podignite nivo pristupa Cloud projekta</strong> <span className="text-gray-500">- više se ne aplicira za token nego za nivo pristupa samog Cloud projekta, u Google Cloud Console-u; Basic Access se sada odobrava automatski, u roku od nekoliko minuta posle brand verifikacije, dok Standard i dalje ide na ručni audit; ostalih pet API-ja rade odmah čim su uključeni i autentifikovani.</span></div>
           </div>
         </div>
       </div>
@@ -335,7 +342,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
                 name: "Da li API pristup nešto košta?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ne, kreiranje Cloud projekta, uključivanje API-ja i generisanje OAuth kredencijala su besplatni. Google Ads API developer token takođe je besplatan za aplikaciju i korišćenje. Trošak se pojavljuje jedino ako prevaziđete besplatne kvote na pojedinim API-jima uz veliki obim poziva, što je retko za tipičnu agenciju sa desetak naloga."
+                  text: "Ne, kreiranje Cloud projekta, uključivanje API-ja i generisanje OAuth kredencijala su besplatni. Nivo pristupa za Google Ads API je takođe besplatan za podizanje i korišćenje. Trošak se pojavljuje jedino ako prevaziđete besplatne kvote na pojedinim API-jima uz veliki obim poziva, što je retko za tipičnu agenciju sa desetak naloga."
                 }
               },
               {
@@ -367,7 +374,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
                 name: "Da li jedan refresh token pokriva više klijentskih naloga?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Zavisi od API-ja. Kod Google Ads API-ja, developer token na MCC nivou automatski pokriva sve klijentske naloge povezane pod njim, jednim tokenom. Kod GA4, Search Console i Merchant Center, pristup se dodaje po nalogu ili property-ju, pa vam za svaki novi klijentski property ili nalog treba da budete dodati kao korisnik, čak i ako OAuth kredencijali ostaju isti."
+                  text: "Zavisi od API-ja. Kod Google Ads API-ja, pristup nosi Cloud projekat i pokriva sve naloge koje kroz njega gađate; MCC se navodi posebno, kroz login-customer-id parametar u pozivu, ne kroz poseban token. Kod GA4, Search Console i Merchant Center, pristup se dodaje po nalogu ili property-ju, pa vam za svaki novi klijentski property ili nalog treba da budete dodati kao korisnik, čak i ako OAuth kredencijali ostaju isti."
                 }
               }
             ]
@@ -401,7 +408,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Ne, kreiranje Cloud projekta, uključivanje API-ja i generisanje OAuth kredencijala su besplatni. Google Ads API developer token takođe je besplatan za aplikaciju i korišćenje. Trošak se pojavljuje jedino ako prevaziđete besplatne kvote na pojedinim API-jima uz veliki obim poziva, što je retko za tipičnu agenciju sa desetak naloga.
+          Ne, kreiranje Cloud projekta, uključivanje API-ja i generisanje OAuth kredencijala su besplatni. Nivo pristupa za Google Ads API je takođe besplatan za podizanje i korišćenje. Trošak se pojavljuje jedino ako prevaziđete besplatne kvote na pojedinim API-jima uz veliki obim poziva, što je retko za tipičnu agenciju sa desetak naloga.
         </div>
       </details>
 
@@ -441,7 +448,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Zavisi od API-ja. Kod Google Ads API-ja, developer token na MCC nivou automatski pokriva sve klijentske naloge povezane pod njim, jednim tokenom. Kod GA4, Search Console i Merchant Center, pristup se dodaje po nalogu ili property-ju, pa vam za svaki novi klijentski property ili nalog treba da budete dodati kao korisnik, čak i ako OAuth kredencijali ostaju isti.
+          Zavisi od API-ja. Kod Google Ads API-ja, pristup nosi Cloud projekat i pokriva sve naloge koje kroz njega gađate; MCC se navodi posebno, kroz login-customer-id parametar u pozivu, ne kroz poseban token. Kod GA4, Search Console i Merchant Center, pristup se dodaje po nalogu ili property-ju, pa vam za svaki novi klijentski property ili nalog treba da budete dodati kao korisnik, čak i ako OAuth kredencijali ostaju isti.
         </div>
       </details>
 
@@ -462,7 +469,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Basic Access</p>
-          <p className="text-xs text-gray-500 mb-0">Detaljan vodič za developer token i brand verification.</p>
+          <p className="text-xs text-gray-500 mb-0">Detaljan vodič za nivoe pristupa i brand verification.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-srbija-setup" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Merchant Center Setup</p>
@@ -479,7 +486,7 @@ export default function GoogleApiPristupiZaAgencijePost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: 11. jul 2026.
+        Poslednje ažuriranje: 17. septembar 2026.
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

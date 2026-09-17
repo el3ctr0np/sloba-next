@@ -37,7 +37,7 @@ export default function GoogleAdsApiReportingGaqlEN() {
       </div>
 
       <p>
-        Every morning, a script pulls GAQL reports against nine client accounts before I&apos;m at my desk — spend, search terms, conversions, asset performance. None of that runs without the auth chain working first, which I covered in{" "}
+        Every morning, a script pulls GAQL reports against 27 client accounts before I&apos;m at my desk — spend, search terms, conversions, asset performance. None of that runs without the auth chain working first, which I covered in{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-authentication-guide" } }} className="underline text-blue-700 font-medium">
           the authentication guide
         </Link>
@@ -181,7 +181,7 @@ TODAY   YESTERDAY`}</code>
       </div>
 
       <p>
-        In my own stack, every module in <code>ppc_ops</code> — the nightly script that walks nine client accounts — calls <code>search()</code>, not <code>searchStream()</code>. The accounts are in the thousands-of-rows range, not millions, so explicit pagination control costs nothing and keeps the code simpler to debug when a report comes back wrong. <code>searchStream()</code> earns its keep once you&apos;re scanning an entire MCC at once and the row count climbs into the tens of thousands — a single call still costs one operation either way, which is the detail worth remembering when you&apos;re budgeting against a daily quota.
+        In my own stack, every module in <code>ppc_ops</code> — the nightly script that walks 27 client accounts — calls <code>search()</code>, not <code>searchStream()</code>. The accounts are in the thousands-of-rows range, not millions, so explicit pagination control costs nothing and keeps the code simpler to debug when a report comes back wrong. <code>searchStream()</code> earns its keep once you&apos;re scanning an entire MCC at once and the row count climbs into the tens of thousands — a single call still costs one operation either way, which is the detail worth remembering when you&apos;re budgeting against a daily quota.
       </p>
 
       <hr />
@@ -423,6 +423,13 @@ WHERE campaign.status = 'ENABLED'
         , a <code>search</code> or <code>searchStream</code> request counts as exactly one operation against your daily operation quota — regardless of how many rows or streaming batches come back. Paginated follow-up requests on a valid page token don&apos;t count again. Exceed the quota and you get <code>RESOURCE_EXHAUSTED</code>.
       </p>
 
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Change as of September 9, 2026</p>
+        <p className="text-blue-800 text-base mb-0">
+          Google retired developer tokens that day. The access tier is now tied to the Google Cloud project your OAuth credentials come from, not the token — you can still send an old developer token in a call, but the API ignores it. The limits in the table below are unchanged; only how the tier gets assigned has changed.
+        </p>
+      </div>
+
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
@@ -448,7 +455,7 @@ WHERE campaign.status = 'ENABLED'
       </div>
 
       <p>
-        My own nightly reporting across all nine client accounts runs entirely on Explorer access — every query above works fine at that level. In my experience, stepping up to Basic Access mainly unlocks planning tools like Keyword Planner fields, not the reporting resources themselves; I wrote up the full application process, including the July 2026 fast-track, in{" "}
+        For a year, my nightly reporting across all 27 client accounts ran entirely on Explorer access — every query in this post works fine at that level. I moved to Basic Access in September 2026, so this is now confirmed experience, not a guess: Basic unlocked Keyword Planner (<code>GenerateKeywordIdeas</code>, <code>GenerateKeywordHistoricalMetrics</code>), while the reporting queries in this guide ran identically before the move, on Explorer. If you&apos;re wondering whether you need Basic just for GAQL reporting — you don&apos;t; you need it once you reach for planning. I wrote up the full application process in{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="underline text-blue-700 font-medium">
           the Basic Access guide
         </Link>
@@ -505,7 +512,7 @@ WHERE campaign.status = 'ENABLED'
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          In my experience, Explorer access covers the reporting resources behind most GAQL queries — campaign, ad_group, keyword_view, search_term_view, and the rest used in this post — at 2,880 operations per day on production accounts. Basic Access raises that to 15,000 operations per day and mainly unlocks planning tools like Keyword Planner fields, not reporting itself. See{" "}
+          You don&apos;t, for GAQL reporting. Explorer access covers the reporting resources behind most GAQL queries — campaign, ad_group, keyword_view, search_term_view, and the rest used in this post — at 2,880 operations per day on production accounts, and I ran on exactly that tier for a year. Basic Access raises the ceiling to 15,000 operations per day, but what it actually unlocks are the planning services: <code>KeywordPlanIdeaService</code> (<code>GenerateKeywordIdeas</code> returns keyword ideas with monthly volume, competition level, and CPC bid ranges) and <code>GenerateKeywordHistoricalMetrics</code> for 12 months of historical volume. <code>ReachPlanService</code> stays blocked even on Basic — that&apos;s a separate allowlist. See{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="underline text-blue-700 font-medium">
             the Basic Access guide
           </Link>{" "}
@@ -538,11 +545,11 @@ WHERE campaign.status = 'ENABLED'
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-authentication-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Authentication Guide</p>
-          <p className="text-xs text-gray-500 mb-0">OAuth2, developer tokens, and the 7-day refresh token trap.</p>
+          <p className="text-xs text-gray-500 mb-0">The OAuth2 flow, the Cloud project that now carries access, and the 7-day refresh token trap.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Basic Access Guide</p>
-          <p className="text-xs text-gray-500 mb-0">Getting your developer token approved, including the July 2026 fast-track.</p>
+          <p className="text-xs text-gray-500 mb-0">The four access tiers and how they&apos;re granted through your Google Cloud project now, not a developer token.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-api-access-guide-for-agencies" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google API Access Guide for Agencies</p>
@@ -555,7 +562,7 @@ WHERE campaign.status = 'ENABLED'
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: August 29, 2026
+        Last updated: September 10, 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

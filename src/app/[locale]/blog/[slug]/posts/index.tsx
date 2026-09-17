@@ -246,7 +246,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-api-autentifikacija",
     title: "Google Ads API Autentifikacija: OAuth, Service Account i Developer Token [2026]",
     date: "2026-08-29",
-    dateModified: "2026-09-10",
+    dateModified: "2026-09-17",
     category: "Automatizacija",
     metaDescription:
       "Google Ads API autentifikacija bez lutanja: OAuth2 tok korak po korak, refresh token zamka od 7 dana, service account pravila i tabela čestih grešaka sa rešenjima.",
@@ -358,7 +358,7 @@ const srPosts: PostData[] = [
     slug: "google-api-pristupi-za-agencije",
     title: "Google API Pristupi za PPC Agencije - Kompletan Setup Vodič [2026]",
     date: "2026-07-11",
-    dateModified: "2026-09-10",
+    dateModified: "2026-09-17",
     category: "Automatizacija",
     metaDescription:
       "Kompletan setup vodič za Google API pristupe u PPC agenciji: Ads, GA4, Search Console, Tag Manager, Merchant Center i Data Manager API. Jedan Cloud projekat, OAuth scope-ovi i ključna lekcija o Testing modu koji gasi refresh token za 7 dana.",
@@ -372,7 +372,7 @@ const srPosts: PostData[] = [
     slug: "google-ads-api-basic-access-vodic",
     title: "Google Ads API Basic Access: Vodič Korak po Korak [2026]",
     date: "2026-07-11",
-    dateModified: "2026-09-10",
+    dateModified: "2026-09-17",
     category: "Automatizacija",
     metaDescription:
       "Kako do Google Ads API Basic Access nivoa posle 9.9.2026, kada je Google ukinuo developer tokene i vezao nivo pristupa za Cloud projekat: brand verification, zahtev kroz Cloud Console, šta Basic stvarno otključava i kada Standard ima smisla. Iz ličnog iskustva.",
@@ -967,7 +967,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-api-authentication-guide",
     title: "Google Ads API Authentication: OAuth, Service Accounts & Developer Token (2026)",
     date: "2026-08-29",
-    dateModified: "2026-09-10",
+    dateModified: "2026-09-17",
     category: "Automation",
     metaDescription:
       "Google Ads API authentication explained: OAuth2 desktop vs. web flow, the 7-day refresh token trap, service account rules, and a table of common errors with fixes.",
@@ -1071,7 +1071,7 @@ const enPosts: PostData[] = [
     slug: "google-api-access-guide-for-agencies",
     title: "Google API Access for PPC Agencies: Complete Setup Guide [2026]",
     date: "2026-07-11",
-    dateModified: "2026-09-10",
+    dateModified: "2026-09-17",
     category: "Automation",
     metaDescription:
       "Complete setup guide to Google API access for PPC agencies: Ads, GA4, Search Console, Tag Manager, Merchant Center, and Data Manager API. One Cloud project, OAuth scopes, and the key lesson about Testing mode killing refresh tokens after 7 days.",
@@ -1084,7 +1084,7 @@ const enPosts: PostData[] = [
     slug: "google-ads-api-basic-access-guide",
     title: "Google Ads API Basic Access: Step-by-Step Guide [2026]",
     date: "2026-07-11",
-    dateModified: "2026-09-10",
+    dateModified: "2026-09-17",
     category: "Automation",
     metaDescription:
       "How to get Google Ads API Basic Access after September 9, 2026, when Google retired developer tokens and tied access levels to the Cloud project: brand verification, requesting the upgrade in Cloud Console, what Basic actually unlocks, and when Standard is worth asking for. First-hand guide.",

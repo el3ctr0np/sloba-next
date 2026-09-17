@@ -7,24 +7,24 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Ads API Basic Access je nivo pristupa koji vam otključava produkcijske naloge za reporting i automatizaciju, sa limitom od 15.000 API operacija dnevno. Od 7. jula 2026. Google testira brand verification pilot koji, ako je vaša aplikacija na statusu pending, skraćuje čekanje na review sa zvaničnih do 5 radnih dana na svega par sati.
+          Google Ads API Basic Access vam otključava produkcijske naloge i planning alate, sa limitom od 15.000 operacija dnevno umesto 2.880 na Explorer nivou. Od 9. septembra 2026. developer token više ne nosi taj nivo: nosi ga Google Cloud projekat iz kog vučete OAuth kredencijale, a nadogradnja se traži u Cloud Console-u, ne više u API Center-u.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">par sati</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Review uz brand verification</p>
-          </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">15.000</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">Operacija dnevno na Basic</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">4</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Koraka do odobrenog tokena</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">2.880</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Operacija dnevno na Explorer</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">9.9.2026.</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Dan kada su tokeni ukinuti</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">0 €</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Cena aplikacije i tokena</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">Cena pristupa</p>
           </div>
         </div>
       </div>
@@ -38,26 +38,28 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
           Šta je Google Ads API Basic Access i kako se dobija?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google Ads API Basic Access</strong> je nivo pristupa developer tokenu koji vam dozvoljava rad sa pravim, produkcijskim Google Ads nalozima preko API-ja, do 15.000 operacija dnevno. Da biste ga dobili, aplicirate iz API Center-a u manager nalogu i čekate da Google pregleda vašu aplikaciju. Od jula 2026. postoji prečica: ako je vaša aplikacija zaglavljena na statusu pending, možete završiti brand verification na svom Google Cloud projektu, i Google obećava pregled u narednih nekoliko sati umesto uobičajenog čekanja.
+          <strong>Google Ads API Basic Access</strong> je nivo pristupa koji vam dozvoljava rad sa pravim, produkcijskim Google Ads nalozima preko API-ja, do 15.000 operacija dnevno, uključujući i planning alate koje niži nivoi ne pokrivaju. Od 9. septembra 2026. taj nivo je vezan za vaš Google Cloud projekat, a ne za developer token. Dobija se tako što na tom projektu završite brand verification i zatim zatražite Basic nivo u Google Cloud Console-u. Google navodi da je odobrenje za Basic sada automatizovano i stiže u roku od nekoliko minuta nakon verifikacije.
         </p>
       </div>
 
       <p>
-        Živimo u trenutku kada svaka ozbiljnija agencijska operacija prolazi kroz neki oblik API-ja i automatizacije, ne samo kroz interfejs u browseru. Kod mene to izgleda konkretno: svako jutro, pre nego što otvorim Google Ads na bilo kom klijentskom nalogu, već imam podatke iz noćne provere preko svih ~10 naloga koje vodim pod jednim manager nalogom. Budget pacing, performanse po kampanji, upozorenja kada nešto padne u disapproved, i rudarenje search termina koje bi ručno trajalo satima. Sve to radi API, ne ja.
+        Živimo u trenutku kada svaka ozbiljnija agencijska operacija prolazi kroz neki oblik API-ja i automatizacije, ne samo kroz interfejs u browseru. Kod mene to izgleda konkretno: svako jutro, pre nego što otvorim Google Ads na bilo kom klijentskom nalogu, već imam podatke iz noćne provere preko svih naloga koje vodim pod jednim manager nalogom. Budget pacing, performanse po kampanji, upozorenja kada nešto padne u disapproved, i rudarenje search termina koje bi ručno trajalo satima. Sve to radi API, ne ja.
       </p>
       <p>
-        Ulaznica za sve to je developer token. Moj token danas radi na Explorer nivou, koji Google dodeljuje automatski, i on pokriva kompletan moj noćni reporting. Ali čim zatražite nešto više od toga, recimo Keyword Planner pozive, udarite u zid: DEVELOPER_TOKEN_NOT_APPROVED. Za punu funkcionalnost treba vam Basic Access, a to znači aplikaciju i review koji zvanično traje do 5 radnih dana, bez statusne trake i bez procene koliko još treba čekati.
+        Godinu dana je taj noćni posao radio na Explorer nivou, koji Google dodeljuje bez ikakve prijave. Explorer pokriva reporting sasvim pristojno, ali čim zatražite nešto više, recimo Keyword Planner pozive, udarite u zid: <code>DEVELOPER_TOKEN_NOT_APPROVED</code>. Od septembra 2026. sam na Basic nivou, pa ovaj vodič više nije teorija nego opis puta koji sam prošao, uključujući i to da mi je prijava jednom bila vraćena na dopunu.
       </p>
       <p>
-        To se menja. Google je 7. jula 2026. objavio pilot koji tu čekaonicu drastično skraćuje za developere koji su spremni da urade jedan dodatni, opcioni korak. Ovaj vodič vas vodi kroz ceo proces, od nule do odobrenog Basic Access tokena, uključujući i taj novi korak.
+        U međuvremenu se promenilo nešto krupnije od mog naloga. Google je 9. septembra 2026. ukinuo developer tokene i premestio ceo sistem pristupa na Google Cloud projekat. Ako ste ovaj vodič čitali ranije, put kroz API Center koji je tu bio opisan više ne postoji. Ovo je verzija koja opisuje kako stvari stoje danas.
       </p>
 
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
         <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Živi vodič - istorija izmena</p>
         <p className="text-sm text-gray-600 mb-3">Ovaj vodič se ažurira svakog meseca. Šta je novo:</p>
         <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
+          <li><strong>17. septembar 2026:</strong> Dodata sekcija o automatskom prenosu nivoa pristupa na Cloud projekte, na osnovu poslednjih 90 dana poziva, za sve koji su već imali odobren token - uključujući moje sopstveno iskustvo sa mejlom koji mi je Google poslao 14.9. Dodat kratak pregled šta uraditi pre nego što Google u 2027. prestane da prima developer token u pozivima.</li>
+          <li><strong>10. septembar 2026:</strong> Veliki prepis. Google je 9.9. ukinuo developer tokene i vezao nivo pristupa za Google Cloud projekat. Nadogradnja se traži u Cloud Console-u, brand verification je od opcionog ubrzivača postala preduslov, a odobrenje za Basic je automatizovano. Dodata sekcija o Standard nivou sa uslovima koje Google zaista proverava, i moje merenje šta Basic konkretno otključava.</li>
           <li><strong>Septembar 2026:</strong> Dodata napomena o dve promene koje utiču na kod izgrađen preko Google Ads API-ja: trajno gašenje Content API for Shopping (18. avgust) i uklanjanje language targetinga sa Search kampanja.</li>
-          <li><strong>Jul 2026:</strong> Prva verzija vodiča.</li>
+          <li><strong>Jul 2026:</strong> Prva verzija vodiča, pisana oko tada aktuelnog brand verification pilota.</li>
         </ul>
       </div>
 
@@ -66,55 +68,91 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#sta-se-promenilo" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta se promenilo 9. septembra 2026.</a></li>
           <li><a href="#preduslovi" className="block py-1 text-base text-gray-700 hover:text-primary underline">Preduslovi pre nego što počnete</a></li>
-          <li><a href="#korak-1-developer-token" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak 1: Developer token u API Center-u</a></li>
-          <li><a href="#korak-2-basic-access-aplikacija" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak 2: Basic Access aplikacija</a></li>
-          <li><a href="#korak-3-cloud-projekat" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak 3: Povezivanje sa Google Cloud projektom</a></li>
-          <li><a href="#korak-4-brand-verification" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak 4: Brand verification (novi pilot)</a></li>
+          <li><a href="#korak-1-cloud-projekat" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak 1: Cloud projekat je sada nosilac pristupa</a></li>
+          <li><a href="#korak-2-brand-verification" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak 2: Brand verification, ekran po ekran</a></li>
+          <li><a href="#korak-3-trazenje-nivoa" className="block py-1 text-base text-gray-700 hover:text-primary underline">Korak 3: Traženje Basic nivoa</a></li>
+          <li><a href="#ako-vas-vrate-na-dopunu" className="block py-1 text-base text-gray-700 hover:text-primary underline">Ako vam prijavu vrate na dopunu</a></li>
           <li><a href="#sta-dobijate-i-sta-ne-radi" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta dobijate sa Basic Access i šta i dalje ne radi</a></li>
+          <li><a href="#standard-access" className="block py-1 text-base text-gray-700 hover:text-primary underline">Standard Access i kada ga zaista treba tražiti</a></li>
           <li><a href="#faq-google-ads-api-basic-access" className="block py-1 text-base text-gray-700 hover:text-primary underline">Često postavljana pitanja</a></li>
         </ol>
       </nav>
 
-      <h2 id="preduslovi">Preduslovi pre nego što počnete</h2>
+      <h2 id="sta-se-promenilo">Šta se promenilo 9. septembra 2026.</h2>
       <p>
-        Pre nego što uopšte otvorite API Center, treba vam dve stvari. Prva je Google Ads nalog, i preporučujem da to bude manager nalog (MCC), ne pojedinačni klijentski nalog. Razlog je praktičan: developer token živi na nivou manager naloga, i taj isti token pokriva sve klijentske naloge koje pod njim vodite. Ako aplicirate iz pojedinačnog naloga, kasnije ćete morati da radite ceo proces ponovo čim dobijete drugog klijenta.
+        Developer token je do tada bio ključ izdat manager nalogu. Nosio je nivo pristupa. Svaki poziv ka API-ju morao je da ga pošalje, i Google je po tokenu znao da li smete 2.880 ili 15.000 operacija. Nivo je pripadao agenciji.
       </p>
       <p>
-        Druga stvar je Google Cloud projekat. Ovo nije dodatni posao, jer vam ionako treba da biste generisali OAuth2 kredencijale (client ID i client secret) preko kojih se API autentifikuje. Projekat je besplatan za kreiranje, i isti projekat ćete kasnije koristiti i za brand verification iz Koraka 4.
+        Token je 9. septembra 2026. penzionisan. I dalje ga možete slati, kod nastavlja da radi, ali ga Google ignoriše. Nivo pristupa sada određuje <strong>Google Cloud projekat iz kog su izvučeni vaši OAuth kredencijali</strong>. Zvanična dokumentacija to kaže jednom rečenicom: "Your Google Cloud project is assigned an access level."
       </p>
 
-      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
-        <p className="text-blue-800 text-base mb-0">
-          Ako tek postavljate strukturu, krenite odmah od manager naloga. Token koji živi na MCC nivou pokriva svaki nalog koji kasnije povežete, pa novi klijent znači samo linkovanje naloga, bez nove aplikacije i novog čekanja. Ceo moj noćni monitoring preko desetak naloga radi na jednom jedinom tokenu upravo zato što je izdat na nivou MCC-a.
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Zamka koju ovo uvodi</p>
+        <p className="text-yellow-800 text-base mb-0">
+          Ranije je bilo svejedno iz kog Cloud projekta dolaze vaši OAuth kredencijali, jer je token nosio nivo. Sada nije. Svaka skripta koja dobije kredencijale iz drugog Cloud projekta pada na Test nivo i ne vidi produkcijske naloge. Ako imate više projekata, proverite iz kog se tačno autentifikujete: prefiks vašeg client ID-ja je broj projekta, pa je provera pitanje jednog pogleda u <code>google-ads.yaml</code>.
         </p>
       </div>
 
-      <hr />
-
-      <h2 id="korak-1-developer-token">Korak 1: Developer token u API Center-u</h2>
       <p>
-        Developer token se nalazi na jednom, uvek istom mestu: u manager nalogu otvorite API Center, u novijem interfejsu pod Admin sekcijom (stariji nalozi ga i dalje prikazuju pod Tools and Settings). Ako do sada niste imali potrebu za API-jem, ova stranica vam verovatno nikad nije zapala za oko, ali tu se dešava sve što je vezano za pristup Google Ads API-ju.
-      </p>
-
-      <figure className="my-6">
-        <Image src="/blog/google-ads-api-basic-access/api-center-token-explorer.webp" alt="API Center u Google Ads manager nalogu: maskiran developer token sa View token linkom i Access level red koji prikazuje Explorer Access" width={1690} height={400} className="rounded-xl border border-gray-200 w-full h-auto" />
-        <figcaption className="text-xs text-gray-500 mt-2 text-center">API Center u mom manager nalogu: developer token (maskiran) i trenutni nivo pristupa</figcaption>
-      </figure>
-
-      <p>
-        Kada prvi put otvorite API Center, Google vam automatski generiše token sa <strong>Test Account Access</strong> nivoom: radi isključivo sa test nalozima koje sami kreirate, i ne vidi ni jedan bajt produkcijskih podataka. Google zatim mnogim nalozima automatski dodeli <strong>Explorer Access</strong>, bez ikakve aplikacije. To je nivo na kom je moj token na slici iznad: radi i sa pravim, produkcijskim nalozima, ali sa limitom od 2.880 operacija dnevno i bez pristupa planning alatima (Keyword Planner), kreiranju naloga, user management-u i billing servisima.
+        Menja se i mesto gde se traži nadogradnja. Nije više API Center u manager nalogu, nego Google Cloud Console. Sama stranica API Center-a to danas piše u baneru: nivo koji prikazuje "may no longer be accurate and cannot be upgraded from this page". Ostaje korisna još samo za developer kontakt email.
       </p>
       <p>
-        Explorer je sasvim pristojna ulaznica: na njemu vrtim kompletan noćni reporting preko svih klijentskih naloga. Ali je i tačno mesto gde ćete prvi put osetiti ograničenje, jer svaki poziv ka servisu koji Explorer ne pokriva vraća DEVELOPER_TOKEN_NOT_APPROVED. Pre nego što aplicirate za Basic, iskoristite ovaj nivo da proverite da vam autentifikacija i osnovna konekcija rade: ako poziv ne prolazi ni ovde, problem je u konfiguraciji, ne u nivou pristupa.
+        Vredi znati i da Google-ova sopstvena dokumentacija u trenutku pisanja nije usaglašena. Stranica o nivoima pristupa ažurirana je 9. septembra 2026, uredno navodi da nivo nosi Cloud projekat, ali ukidanje tokena ne pominje nijednom rečju. Ta informacija stoji samo na stranici o politici developer tokena. Ako negde naiđete na uputstvo koje vas šalje u API Center, verovatno nije pogrešno napisano, nego samo nije stiglo da bude ažurirano.
       </p>
 
-      <hr />
+      <div className="tablewrap overflow-x-auto my-6">
+        <table className="w-full text-base border border-gray-200 rounded-xl">
+          <thead>
+            <tr className="bg-gray-50">
+              <th className="py-3 px-3 text-left font-heading">Aspekt</th>
+              <th className="py-3 px-3 text-left font-heading">Pre 9.9.2026.</th>
+              <th className="py-3 px-3 text-left font-heading">Posle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Nosilac nivoa pristupa</td>
+              <td className="py-3 px-3">developer token na MCC nivou</td>
+              <td className="py-3 px-3">Google Cloud projekat</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Gde se traži nadogradnja</td>
+              <td className="py-3 px-3">API Center u Google Ads-u</td>
+              <td className="py-3 px-3">Google Cloud Console</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Odobrenje za Basic</td>
+              <td className="py-3 px-3">ručni pregled, do 5 radnih dana</td>
+              <td className="py-3 px-3">automatski, minuti posle brand verifikacije</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Odobrenje za Standard</td>
+              <td className="py-3 px-3">ručni audit</td>
+              <td className="py-3 px-3">ručni audit, nepromenjeno</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Brand verification</td>
+              <td className="py-3 px-3">opcioni ubrzivač</td>
+              <td className="py-3 px-3">preduslov za nove prijave</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Developer token u pozivima</td>
+              <td className="py-3 px-3">obavezan</td>
+              <td className="py-3 px-3">ignoriše se</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <h2 id="korak-2-basic-access-aplikacija">Korak 2: Basic Access aplikacija</h2>
       <p>
-        Iz API Center-a, uz karticu developer tokena, nalazi se dugme za aplikaciju za viši nivo pristupa. Otvara se forma sa nekoliko pitanja o tome ko ste i šta planirate da radite sa API-jem. Ovde se najviše grešaka pravi, i ovde vredi uložiti deset minuta pažnje umesto da formu popunite uzgred.
+        Poslednji detalj iz tranzicije: prijave započete pre 9. septembra 2026. su zatvorene i moraju se ponovo podneti kroz Cloud Console. Ako vam je nešto tada visilo na statusu pending, ne čekajte odgovor koji neće doći.
+      </p>
+
+      <h3 id="ako-ste-vec-imali-token">Ako ste već imali odobren token</h3>
+      <p>
+        Za sve koji su pre 9. septembra imali odobren nivo pristupa na developer tokenu, prelaz nije tražio nijedan korak sa vaše strane. Desilo se sledeće:
       </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
@@ -122,71 +160,74 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div>
-              <strong>Budite konkretni oko use case-a</strong> <span className="text-gray-500">- "automatizacija" nije dovoljno. Napišite tačno šta radite: dnevni izveštaji o performansama za klijentske naloge, automatska upozorenja na disapproved oglase, upravljanje budžetom preko skripte. Konkretnost ubrzava review.</span>
+              <strong>Nivo se automatski preneo, na osnovu poslednjih 90 dana poziva.</strong> <span className="text-gray-500">Google je pregledao logove API poziva unazad 90 dana i odobreni nivo sa tokena preneo na svaki Cloud projekat koji je u tom periodu tim tokenom pravio pozive. Projekat koji u tih 90 dana nije korišćen, nije dobio ništa.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div>
-              <strong>Navedite servise koje zovete</strong> <span className="text-gray-500">- reporting, campaign management, upravljanje budžetima. Google želi da vidi da razumete šta zapravo tražite, ne generičku frazu "pristup podacima".</span>
+              <strong>Prevezivanje na drugi projekat više ne postoji.</strong> <span className="text-gray-500">Ranije je Google podrška po potrebi prevezivala odobren token na drugi Cloud projekat. Od 9. septembra to ne radi - za novi projekat se nivo traži iznova, sa stranice Google Ads API Overview tog projekta u Cloud Console-u.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div>
-              <strong>Koristite poslovni email na svom domenu</strong> <span className="text-gray-500">- ne besplatan Gmail/Yahoo nalog. Email na sopstvenom domenu je jedan od signala koji Google koristi da proceni legitimnost aplikacije.</span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div>
-              <strong>Budite iskreni da li je interni alat ili servis za treće strane</strong> <span className="text-gray-500">- ako gradite alat samo za sopstvenu agenciju i sopstvene klijente pod jednim MCC-om, recite to. Ako planirate da API pristup prodajete ili delite kao proizvod trećim licima, to je drugačija kategorija i drugačiji nivo provere.</span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div>
-              <strong>Opišite tok podataka jednostavno</strong> <span className="text-gray-500">- odakle podaci dolaze, gde se skladište, ko ih vidi. Nekoliko rečenica je dovoljno, ali one moraju da postoje.</span>
+              <strong>Prijave na čekanju su zatvorene u prelazu.</strong> <span className="text-gray-500">Ko je imao prijavu za Basic na statusu pending, ta prijava je zatvorena i mora se poslati ponovo, kroz Cloud Console, uz brand verification.</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-yellow-900 mb-1">Zašto je čekanje bilo problem</p>
-        <p className="text-yellow-800 text-base mb-0">
-          Google za Basic review zvanično navodi do 5 radnih dana. U praksi, to je nedelja dana tokom koje je status samo "pending": nema procene datuma, nema poruke da je neko preuzeo review, nema dugmeta "ubrzaj mi". Ja sam aplikaciju odlagao mesecima upravo zbog toga, jer mi je Explorer nivo pokrivao tekući posao, a nedelja neizvesnosti nije delovala vredna truda. Pilot iz Koraka 4 je tačno ono što taj račun menja.
+      <p>
+        Meni lično je 14. septembra 2026. stigao mejl od Google-a da je nivo BASIC sa mog manager naloga automatski prenet na tri moja Google Cloud projekta. Nisam morao ništa da uradim - kod je nastavio da radi bez ijedne izmene.
+      </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Šta uraditi pre 2027.</p>
+        <ul className="text-blue-800 text-base mb-0 list-disc pl-5 space-y-1">
+          <li>Developer token je sad opcion i API ga ignoriše, ali Google u istom mejlu najavljuje da ga nova izdanja Google Ads API-ja, očekivano u prvoj polovini 2027, više neće ni primati u pozivima. Izbacite ga iz <code>google-ads.yaml</code> i koda pre tog roka i pređite na ažurirane klijentske biblioteke koje rade bez njega.</li>
+          <li>API Center stranica je zastarela. Istorijski podaci su tamo još dostupni, a Google očekuje da je ugasi u prvoj polovini 2027.</li>
+          <li>Dok API Center postoji, administrativna i compliance obaveštenja idu na kontakt email podešen tamo. Posle gašenja idu samo korisnicima sa ulogom Owner ili Editor na Cloud projektu - proverite na IAM stranici projekta da je prava osoba na jednoj od te dve uloge, inače ćete propustiti obaveštenje kad taj prelaz dođe.</li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h2 id="preduslovi">Preduslovi pre nego što počnete</h2>
+      <p>
+        Trebaju vam dve stvari. Prva je Google Ads nalog, i preporučujem da to bude manager nalog (MCC), ne pojedinačni klijentski nalog. Razlog je i dalje praktičan, samo se promenio mehanizam: MCC vam služi kao ulazna tačka preko <code>login-customer-id</code> parametra, pa jedan skup kredencijala gađa sve naloge povezane pod njim, bez posebnog podešavanja po klijentu.
+      </p>
+      <p>
+        Druga stvar je Google Cloud projekat, i on je sada glavni akter. Na njemu se generišu OAuth2 kredencijali (client ID i client secret), na njemu se radi brand verification, i njemu se dodeljuje nivo pristupa. Projekat je besplatan za kreiranje.
+      </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Iz mog iskustva</p>
+        <p className="text-blue-800 text-base mb-0">
+          Ako gradite agencijsku automatizaciju, držite se jednog Cloud projekta za sve. Sav moj kod, od noćnog reportinga do keyword research skripti, autentifikuje se iz istog projekta, pa je nivo pristupa jedna stvar koju treba pratiti umesto da se raspe na više mesta. Onog trenutka kada se pojavi drugi projekat, pojavi se i mogućnost da neka skripta tiho radi na Test nivou.
         </p>
       </div>
 
       <hr />
 
-      <h2 id="korak-3-cloud-projekat">Korak 3: Povezivanje sa Google Cloud projektom</h2>
+      <h2 id="korak-1-cloud-projekat">Korak 1: Cloud projekat je sada nosilac pristupa</h2>
       <p>
-        Da bi brand verification iz sledećeg koraka uopšte mogla da se veže za vaš token, Google mora da zna koji Cloud projekat ide uz koji developer token. Očekivali biste formu ili polje za to, ali povezivanje radi drugačije: po{" "}
-        <a
-          href="https://developers.google.com/google-ads/api/docs/api-policy/brand-verification#prerequisite"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline text-blue-700 font-medium"
-        >
-          zvaničnoj dokumentaciji
-        </a>
-        , dovoljno je da napravite bilo koji API poziv koji istovremeno koristi vaš developer token i OAuth kredencijale iz tog Cloud projekta. Time su token i projekat povezani.
+        Prvi korak nije generisanje tokena, nego provera koji Cloud projekat zaista stoji iza vaših poziva. Ako ste do sada radili sa Google Ads API-jem, taj projekat već postoji, jer ste iz njega izvukli OAuth kredencijale. Broj projekta pročitate iz prefiksa client ID-ja, dela pre prve crtice.
       </p>
       <p>
-        Detalji koji olakšavaju: poziv može ići kroz user authentication ili service account tok, može ciljati test ili produkcijski nalog, i potpuno je nebitno da li će uspeti ili pasti. Nebitan je i trenutni nivo pristupa tokena. Bitno je samo da se token i kredencijali iz projekta pojave zajedno u jednom pozivu.
+        Novi projekat dobija <strong>Test Account Access</strong>: radi isključivo sa test nalozima koje sami kreirate i ne vidi ni jedan bajt produkcijskih podataka. Mnogi projekti zatim dobiju <strong>Explorer Access</strong>, koji radi i sa pravim nalozima, ali sa limitom od 2.880 operacija dnevno i bez pristupa planning alatima (Keyword Planner), kreiranju naloga, user management-u i billing servisima.
       </p>
 
-      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">Verovatno ste ovo već uradili</p>
-        <p className="text-blue-800 text-base mb-0">
-          Ako ste u Koraku 1 testirali konekciju na test nalogu sa svojim OAuth kredencijalima, povezivanje se već desilo, a da niste ni primetili. Ako niste, najjednostavniji test poziv (recimo listanje naloga pod MCC-om) obavlja posao. Ako imate više Cloud projekata, koristite onaj koji zaista zovete iz koda - kasnije je dovoljno da baš taj jedan bude verifikovan.
-        </p>
-      </div>
+      <figure className="my-6">
+        <Image src="/blog/google-ads-api-basic-access/api-center-token-explorer.webp" alt="API Center u Google Ads manager nalogu: maskiran developer token sa View token linkom i Access level red koji prikazuje Explorer Access" width={1690} height={400} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">API Center dok je token još nosio nivo: maskiran developer token i Explorer Access. Ova stranica danas i dalje postoji, ali se sa nje više ne menja nivo pristupa.</figcaption>
+      </figure>
 
       <p>
-        Taj isti poziv je i mesto gde ostatak lanca autentifikacije mora biti ispravno povezan - developer token header, login-customer-id i izbor OAuth2 toka - inače ništa od ovoga nije bitno pre nego što Basic Access uopšte dođe na red. Ceo taj lanac, uključujući izbor između desktop i web toka i zamku od 7 dana kod refresh tokena, pokrivam u{" "}
+        Explorer je sasvim pristojna ulaznica i na njemu sam godinu dana vrteo kompletan noćni reporting preko svih klijentskih naloga. Ali je i tačno mesto gde ćete prvi put osetiti ograničenje, jer svaki poziv ka servisu koji Explorer ne pokriva vraća <code>DEVELOPER_TOKEN_NOT_APPROVED</code>. Ime greške je, uzgred, jedan od ostataka starog sistema: token više ne odlučuje ništa, ali se poruka nije promenila.
+      </p>
+      <p>
+        Pre nego što tražite nadogradnju, iskoristite postojeći nivo da proverite da vam autentifikacija i osnovna konekcija rade. Ako poziv ne prolazi ni ovde, problem je u konfiguraciji, ne u nivou pristupa. Ceo taj lanac, uključujući izbor između desktop i web OAuth toka i zamku od 7 dana kod refresh tokena, pokrivam u{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-autentifikacija" } }} className="underline text-blue-700 font-medium">
           vodiču za Google Ads API autentifikaciju
         </Link>
@@ -195,15 +236,13 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
 
       <hr />
 
-      <h2 id="korak-4-brand-verification">Korak 4: Brand verification (novi pilot od jula 2026)</h2>
+      <h2 id="korak-2-brand-verification">Korak 2: Brand verification, ekran po ekran</h2>
       <p>
-        Ovo je deo koji do 7. jula 2026. jednostavno nije postojao u ovom obliku. Google Ads API Team, preko Anash P. Oommena, objavio je na zvaničnom Google Ads Developer Blog-u da developeri sada mogu da ubrzaju review svoje Basic Access aplikacije jednim opcionim korakom: brand verification na povezanom Google Cloud projektu.
+        Ovaj korak je u julu 2026. bio opcion, kao način da ubrzate prijavu koja visi na statusu pending. Danas je preduslov za nove Basic i Standard prijave. Ko već ima odobren pristup, izuzet je i ne mora ništa da radi.
       </p>
       <p>
-        Kako to izgleda u praksi: ako je vaša aplikacija za developer token na statusu pending, odete u Google Cloud Console, pod OAuth consent screen, odnosno Google Auth Platform, pa Branding, i tamo završite brand verification. To je deo šireg OAuth App verification procesa i za većinu developera je samoposlužni proces, bez čekanja na ljudski review sa te strane. Google navodi da će nakon toga vašu Basic Access aplikaciju pregledati "in the next few hours", odnosno u narednih nekoliko sati.
+        Brand verification je deo šireg OAuth App verification procesa i za većinu developera je samoposlužna, bez čekanja na ljudski pregled. Ekrani ispod su iz mog projekta i proces se od jula nije menjao.
       </p>
-
-      <h3>Kako izgleda ceo proces, ekran po ekran</h3>
 
       <p>
         <strong>1. Otvorite OAuth consent screen.</strong> U Google Cloud Console-u izaberite svoj projekat, pa u levom meniju APIs and services, pa OAuth consent screen. Time ulazite u Google Auth Platform deo konzole.
@@ -230,7 +269,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       </figure>
 
       <p>
-        <strong>4. Prebacite User type na External i status na In production.</strong> Na Audience tabu, ako piše Internal, kliknite Make external. Google u dokumentaciji izričito kaže da za potrebe ovog review-a User type mora biti External, a publishing status In production, čak i ako je vaš alat čisto interni. U dijalogu izaberite In production i potvrdite Push to production.
+        <strong>4. Prebacite User type na External i status na In production.</strong> Na Audience tabu, ako piše Internal, kliknite Make external. Google u dokumentaciji izričito kaže da za potrebe ovog pregleda User type mora biti External, a publishing status In production, čak i ako je vaš alat čisto interni. U dijalogu izaberite In production i potvrdite Push to production.
       </p>
       <figure className="my-6">
         <Image src="/blog/google-ads-api-basic-access/verify-04-user-type-internal.webp" alt="User type sekcija koja prikazuje Internal i dugme Make external" width={608} height={326} className="rounded-xl border border-gray-200 w-full h-auto" />
@@ -244,6 +283,13 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
         <Image src="/blog/google-ads-api-basic-access/verify-06-push-to-production.webp" alt="Push to production dijalog za potvrdu objavljivanja aplikacije" width={709} height={512} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-xs text-gray-500 mt-2 text-center">Potvrda: Push to production → Confirm</figcaption>
       </figure>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Ovo je isti ekran koji ubija refresh tokene</p>
+        <p className="text-yellow-800 text-base mb-0">
+          Publishing status In production nije samo formalnost za verifikaciju. Ako projekat ostane u Testing modu, refresh tokeni izdati iz njega umiru posle 7 dana i skripte vam tiho prestanu da rade. Ovo je greška koja me je jednom koštala mrtvog Merchant Center tokena usred noćnog posla. Kad već prolazite kroz ovaj korak, rešavate i taj problem.
+        </p>
+      </div>
 
       <p>
         <strong>5. Popunite Branding tab.</strong> Ovde unosite podatke koji se korisnicima prikazuju na consent ekranu: home page aplikacije, linkove ka privacy policy i uslovima korišćenja, authorized domene i kontakt email. Kliknite Save.
@@ -278,7 +324,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       </figure>
 
       <p>
-        <strong>9. Gotovo: projekat je brand verified.</strong> Status kartica sada prikazuje zelenu potvrdu da je branding verifikovan i vidljiv korisnicima. Ovo je signal koji Google-ov tim vidi kada pregleda vašu pending Basic Access aplikaciju.
+        <strong>9. Gotovo: projekat je brand verified.</strong> Status kartica sada prikazuje zelenu potvrdu da je branding verifikovan i vidljiv korisnicima.
       </p>
       <figure className="my-6">
         <Image src="/blog/google-ads-api-basic-access/verify-11-branding-verified.webp" alt="Verification status sa zelenom potvrdom da je branding verifikovan i prikazan korisnicima" width={1141} height={568} className="rounded-xl border border-gray-200 w-full h-auto" />
@@ -286,53 +332,161 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       </figure>
 
       <p>
-        Nekoliko stvari je bitno da razumete pre nego što krenete u ovaj korak. Ako je vaš Cloud projekat ranije već prošao brand verification za bilo koji drugi Google API, ne morate to ponavljati. I ako imate više Cloud projekata, dovoljno je da samo jedan bude verifikovan. Sam korak je potpuno opcion: ako već imate odobren developer token, ne treba vam brand verification, jer je ceo smisao ovog pilota da ubrza aplikacije koje čekaju na status pending, ne da menja nešto za već odobrene naloge.
+        Ako je vaš Cloud projekat ranije već prošao brand verification za bilo koji drugi Google API, ne morate to ponavljati. I ako imate više Cloud projekata, verifikujete onaj iz kog se zaista autentifikujete, jer se nivo pristupa dodeljuje njemu.
       </p>
 
-      <div className="bg-slate-900 text-white rounded-xl p-5 my-6">
-        <p className="font-heading font-semibold text-lg mb-0">
-          Google kao razlog za ovaj pilot navodi "significant interest from our developer community for Google Ads API access", odnosno veliko interesovanje developer zajednice za pristup Google Ads API-ju. Pročitajte originalnu objavu na{" "}
-          <a
-            href="https://ads-developers.googleblog.com/2026/07/accelerate-google-ads-api-basic-access.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-yellow-400"
-          >
-            Google Ads Developer Blog-u
-          </a>.
-        </p>
+      <hr />
+
+      <h2 id="korak-3-trazenje-nivoa">Korak 3: Traženje Basic nivoa</h2>
+      <p>
+        Sa verifikovanim projektom, nadogradnja se traži u Google Cloud Console-u, na Google Ads API stranici tog projekta. Google navodi da je odobrenje za Basic sada automatizovano i da stiže u roku od nekoliko minuta nakon brand verifikacije. To je bitna razlika u odnosu na stari proces, gde je ručni pregled zvanično trajao do 5 radnih dana bez ikakvog uvida u status.
+      </p>
+      <p>
+        Ono što se nije promenilo je šta treba da napišete o sebi. Bez obzira na to što odluku sada donosi automatika, opis vašeg slučaja upotrebe ostaje deo zapisa i postaje bitan onog trenutka kada nešto ode na ručni pregled. Pet stvari koje vredi odraditi kako treba:
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div>
+              <strong>Budite konkretni oko use case-a</strong> <span className="text-gray-500">- "automatizacija" nije dovoljno. Napišite tačno šta radite: dnevni izveštaji o performansama za klijentske naloge, automatska upozorenja na disapproved oglase, upravljanje budžetom preko skripte. Konkretnost pomaže i kada je odluka automatska.</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div>
+              <strong>Navedite servise koje zovete</strong> <span className="text-gray-500">- reporting, campaign management, upravljanje budžetima. Google želi da vidi da razumete šta zapravo tražite, ne generičku frazu "pristup podacima".</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div>
+              <strong>Koristite poslovni email na svom domenu</strong> <span className="text-gray-500">- ne besplatan Gmail/Yahoo nalog. Google to i sam preporučuje, i to u obliku role based adrese kao što je info@firma.com, da prepiska ne zavisi od jednog čoveka.</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div>
+              <strong>Budite iskreni da li je interni alat ili servis za treće strane</strong> <span className="text-gray-500">- ako gradite alat samo za sopstvenu agenciju i sopstvene klijente pod jednim MCC-om, recite to. Ova razlika kasnije odlučuje da li vas obavezuje RMF kad budete tražili Standard, o čemu niže.</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div>
+              <strong>Proverite da je URL vaše firme tačan i da sajt radi</strong> <span className="text-gray-500">- pregled uključuje otvaranje vašeg sajta. Proverite da polje sa adresom nema slovnu grešku, da sajt odgovara sa 200, i da stranica na koju se stiže može da se pročita na engleskom. Ovo zvuči trivijalno dok ne postane razlog za vraćanje prijave.</span>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <hr />
+
+      <h2 id="ako-vas-vrate-na-dopunu">Ako vam prijavu vrate na dopunu</h2>
       <p>
-        Ako trenutno imate aplikaciju koja čeka na review, ovo je jednostavno najbrži put da je ubrzate: par minuta u Cloud Console-u umesto do 5 radnih dana neizvesnosti.
+        Meni se to desilo. Prijava je otišla početkom avgusta, vraćena je na dopunu, i odobrenje je stiglo tek posle drugog kruga, u septembru. To nije katastrofa, ali jeste mesto gde se najviše vremena izgubi ako reagujete pogrešno.
+      </p>
+      <p>
+        Tri stvari koje sam naučio iz tog kruga:
+      </p>
+      <p>
+        <strong>Ne šaljite formu ponovo sa istim odgovorima.</strong> Poruka koju dobijete to izričito kaže, i to je bukvalno tako: dobićete isti odgovor drugi put. Odgovorite u postojećem thread-u, na isti broj slučaja.
+      </p>
+      <p>
+        <strong>Proverite gde je prepiska stigla.</strong> Kod mene je odgovor otišao na adresu koja nije ista kao developer kontakt email podešen u nalogu, pa je nedeljama stajao u sandučetu koje ne gledam svaki dan. Uskladite te dve adrese pre nego što uopšte aplicirate.
+      </p>
+      <p>
+        <strong>Ponudite detaljan opis biznis modela.</strong> Poruka o dopuni obično sama nudi tu alternativu. Iskoristite je: ko ste, ko su vam klijenti, odakle vam prihod, šta tačno alat radi, ko ga koristi, koliko operacija dnevno očekujete i zašto vam trenutni plafon smeta. To je nekoliko pasusa, ne roman, ali su konkretni brojevi ono što pomera stvar.
       </p>
 
       <hr />
 
       <h2 id="sta-dobijate-i-sta-ne-radi">Šta dobijate sa Basic Access i šta i dalje ne radi</h2>
       <p>
-        Sa odobrenim Basic Access tokenom dobijate punu funkcionalnost API-ja na svim klijentskim nalozima povezanim pod vašim manager nalogom, do 15.000 API operacija dnevno. To uključuje i ono što Explorer izričito ne pokriva: planning alate (Keyword Planner pozive za keyword ideje i volumen), kreiranje naloga i billing servise. Moj svakodnevni stack, reporting koji se sam generiše svako jutro, praćenje pacing-a, performansi i disapproved oglasa preko svih naloga, radi već na Explorer nivou. Isti mehanizam koristim i za automatski upload offline konverzija kod pojedinih klijenata, o čemu sam pisao odvojeno u{" "}
+        Sa Basic nivoom dobijate punu funkcionalnost API-ja na svim klijentskim nalozima koje gađate, do 15.000 operacija dnevno. To uključuje i ono što Explorer izričito ne pokriva: planning alate, kreiranje naloga, user management i billing servise.
+      </p>
+      <p>
+        Broj sam po sebi nije ono što najviše boli na Explorer nivou. Plafon od 2.880 je <strong>deljen preko svih naloga</strong> pod vašim manager nalogom. Jedno veće restrukturiranje jednog klijenta pojede dnevnu kvotu i blokira rad na svima ostalima do ponoći. Basic to sklanja sa puta.
+      </p>
+      <p>
+        Keyword Planner je kod mene bio prva stvar koja je udarila u ograničenje. Evo šta se konkretno promenilo, isti poziv pre i posle:
+      </p>
+
+      <pre className="bg-slate-900 text-slate-100 rounded-xl p-4 md:p-5 my-6 overflow-x-auto text-sm leading-relaxed">
+{`# Explorer
+GenerateKeywordIdeas  ->  DEVELOPER_TOKEN_NOT_APPROVED
+   "This method is not allowed for use with explorer access."
+
+# Basic
+GenerateKeywordIdeas  ->  599 keyword ideja
+   polovni motori     12.100/mes   comp=LOW   bid  7,84-13,49
+   kacige za motor     5.400/mes   comp=LOW   bid  3,49-22,82
+   moto oprema         2.900/mes   comp=LOW   bid  3,03-24,04`}
+      </pre>
+
+      <p>
+        Dva seed pojma, 599 ideja sa mesečnim volumenom, nivoom konkurencije i rasponom cene klika na vrhu stranice. Uz to radi i <code>GenerateKeywordHistoricalMetrics</code>, koji daje volumen mesec po mesec dvanaest meseci unazad. Za sezonske klijente to je budžetski kalendar koji se do sada nije mogao izvući programski: kod istog klijenta jedan pojam ima raspon 2,2 puta između vrha i dna godine, a drugi 4,3 puta. To su dva različita kalendara, u istom nalogu.
+      </p>
+      <p>
+        Dok Basic nije prošao, procenu volumena sam radio preko podataka iz Search Console-a i benchmark CPC-a iz same platforme. To je sasvim upotrebljiva zaobilaznica i preporučujem je svakome ko čeka, ali je zaobilaznica.
+      </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Šta ni Basic ne otključava</p>
+        <p className="text-yellow-800 text-base mb-0">
+          <code>ReachPlanService</code>, odnosno reach planiranje za YouTube i Display (krive dosega, frekvencija, projekcije CPM-a), ostaje zatvoren i na Basic nivou. Poziv vraća <code>ACTION_NOT_PERMITTED</code> uz poruku "not authorized to call ReachPlanningService". To je zaseban allowlist, ne stavka koja dolazi uz nivo pristupa, pa ako vam je video planiranje kroz API bitno, računajte na odvojen zahtev.
+        </p>
+      </div>
+
+      <p>
+        Moj svakodnevni stack, reporting koji se sam generiše svako jutro, praćenje pacing-a, performansi i disapproved oglasa preko svih naloga, radio je i na Explorer nivou. Isti mehanizam koristim i za automatski upload offline konverzija kod pojedinih klijenata, o čemu sam pisao odvojeno u{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "offline-conversion-import-b2b" } }} className="underline text-blue-700 font-medium">
           vodiču o Offline Conversion Import za B2B
-        </Link>. Za jednog čoveka koji vodi deset naloga, ovo nije pogodnost, ovo je jedini realan način da monitoring bude na nivou agencije, a ne na nivou koliko stigne da otvori u browseru.
-      </p>
-      <p>
-        Keyword Planner je kod mene bio prva stvar koja je udarila u ograničenje: pozivi za generisanje keyword ideja i procenu volumena vraćali su DEVELOPER_TOKEN_NOT_APPROVED, jer planning alati jednostavno nisu deo Explorer nivoa. Dok Basic ne prođe, procenu volumena radim preko podataka iz Search Console-a i benchmark CPC-a iz same platforme, što je sasvim dovoljno za odluke koje donosim. Ali ako vam je keyword research kroz API bitan deo posla, Basic Access nije opcija nego uslov.
-      </p>
-      <p>
-        Standard Access je posebna, kasnija aplikacija za koju idete tek kada Basic postane usko grlo, obično kada gradite alat velikog obima za više klijenata istovremeno i kada dnevni limit od 15.000 operacija počne realno da vas koči. Uslov je da već imate Basic, a zvaničan review traje do 10 radnih dana. Za agenciju sa desetak naloga, Basic je plafon koji vam realno treba.
+        </Link>. Za jednog čoveka koji vodi desetine naloga, ovo nije pogodnost, ovo je jedini realan način da monitoring bude na nivou agencije, a ne na nivou koliko stigne da otvori u browseru.
       </p>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-yellow-900 mb-1">Dve stvari da proverite u kodu, ne u ovom vodiču</p>
         <p className="text-yellow-800 text-base mb-2">
-          Developer token iz ovog vodiča radi sa Google Ads nalozima, ne sa Merchant Center feedom proizvoda. Ali ako u istom automatizacionom stacku vučete i podatke o proizvodima ili upravljate Search kampanjama preko API-ja, dve stvari su se promenile u avgustu i septembru 2026, i vredi ih proveriti pre nego što nešto počne tiho da otkazuje.
+          Pristup iz ovog vodiča važi za Google Ads naloge, ne za Merchant Center feed proizvoda. Ali ako u istom automatizacionom stacku vučete i podatke o proizvodima ili upravljate Search kampanjama preko API-ja, dve stvari su se promenile u avgustu i septembru 2026, i vredi ih proveriti pre nego što nešto počne tiho da otkazuje.
         </p>
         <ul className="text-yellow-800 text-base mb-0 list-disc pl-5 space-y-1">
           <li><strong>18. avgust 2026:</strong> Content API for Shopping je trajno ugašen. Ako neki deo vaše automatizacije još zove taj stariji API za feed proizvoda, mora da pređe na Merchant API, inače podaci o proizvodima zastarevaju i idu u disapproval.</li>
           <li><strong>Septembar 2026:</strong> Google uklanja language targeting sa nivoa Search kampanje. Ako vaš kod preko Google Ads API-ja podešava ili čita kriterijum jezika (CampaignCriterion) na Search kampanjama, ta postavka više ne utiče na isporuku - Google sada uparuje po jeziku oglasa, landing stranice i jezicima koje korisnik zna. Kod PMax kampanja jezik i dalje važi, ali samo za YouTube, Display, Discover i Gmail, ne za Search Network. Strukture sa jednim jezikom po kampanji nastavljaju normalno da rade, samo kriterijum jezika na Search-u više ništa ne radi.</li>
         </ul>
       </div>
+
+      <hr />
+
+      <h2 id="standard-access">Standard Access i kada ga zaista treba tražiti</h2>
+      <p>
+        Standard ukida ukupan dnevni plafon. Pojedinačni servisi zadržavaju svoje rate limite, ali broj operacija više nije ograničen. Uslova ima pet, i vredi ih znati unapred, jer se dva najčešće previde.
+      </p>
+      <p>
+        Prvi je da već imate Basic. Drugi je usklađenost sa <strong>RMF</strong> (Required Minimum Functionality), spiskom funkcija koje vaš alat mora da ima. Treći je ručni audit aplikacije, za koji Google navodi oko 10 radnih dana. Četvrti je demo pristup, ako alat koriste spoljni korisnici. Peti je dokazan obim.
+      </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">RMF verovatno ne važi za vas</p>
+        <p className="text-blue-800 text-base mb-0">
+          Google izuzima kategoriju "Internal Use Only" od svih RMF zahteva. Ako gradite alat isključivo za sopstvenu agenciju i sopstvene klijente, i ne prodajete ga niti ga izlažete trećim licima, kolone Creation, Management i Reporting u RMF tabeli za vas stoje kao N/A. Reporting-only alati imaju svoje, blaže izuzeće. Ovo znači da ne morate da gradite funkcije koje vam ne trebaju samo da biste prošli audit.
+        </p>
+      </div>
+
+      <p>
+        Peti uslov je onaj koji obara većinu zahteva, i formulisan je bez uvijanja:
+      </p>
+
+      <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600 my-6">
+        If your volume does not consistently near the 15,000 daily limit, your request will be denied.
+      </blockquote>
+
+      <p>
+        Drugim rečima, Standard nije nagrada za ozbiljnost nego rešenje za usko grlo koje morate dokazati da imate. Za agenciju sa desetak do trideset naloga i noćnim reportingom, dnevna potrošnja je reda veličine stotina operacija, daleko ispod plafona. Zahtev bi bio odbijen, a odbijanje ostaje zabeleženo.
+      </p>
+      <p>
+        Praktičan savet: izmerite pre nego što tražite. Potrošnju vidite u Google Cloud Console-u, na metrikama za Google Ads API. Ako se ne približavate plafonu, Basic je tačan nivo, a RMF izuzeće vam ne ističe, pa Standard možete tražiti onog dana kada obim to zaista opravda.
+      </p>
 
       <hr />
 
@@ -347,10 +501,18 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "Koliko sada traje review Basic Access aplikacije?",
+                name: "Da li mi i dalje treba developer token za Google Ads API?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ako je vaša aplikacija na statusu pending i završite opcioni brand verification korak na povezanom Google Cloud projektu, Google navodi da će vašu aplikaciju pregledati u narednih nekoliko sati. Bez tog koraka važi standardni proces, za koji Google zvanično navodi do 5 radnih dana, bez uvida u status u međuvremenu."
+                  text: "Ne. Google je developer tokene ukinuo 9. septembra 2026. Ako ih vaš kod i dalje šalje, pozivi nastavljaju da rade, ali Google token ignoriše. Nivo pristupa sada nosi Google Cloud projekat iz kog su izvučeni vaši OAuth kredencijali. Praktična posledica je da kredencijali iz drugog Cloud projekta padaju na Test nivo i ne vide produkcijske naloge."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Koliko sada traje odobrenje za Basic Access?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Google navodi da je odobrenje za Basic sada automatizovano i da stiže u roku od nekoliko minuta nakon što na Cloud projektu završite brand verification. Standard i dalje ide na ručni audit, za koji Google navodi oko 10 radnih dana. Ako vam prijava ipak bude vraćena na dopunu, odgovarajte u postojećem thread-u umesto da ponovo šaljete formu sa istim odgovorima."
                 }
               },
               {
@@ -358,7 +520,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
                 name: "Da li je brand verification obavezna?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ne. Brand verification je potpuno opcioni signal koji Google koristi da brže donese odluku o vašoj aplikaciji. Ko već ima odobren developer token, ne treba mu ovaj korak. Vredi ga uraditi jedino ako vam je aplikacija trenutno na statusu pending i želite brži pregled."
+                  text: "Za nove Basic i Standard prijave jeste, i to je promena u odnosu na jul 2026, kada je bila opcioni ubrzivač. Ko već ima odobren pristup, izuzet je. Verifikuje se onaj Cloud projekat iz kog se zaista autentifikujete, a ako je taj projekat već prošao brand verification za neki drugi Google API, ne morate je ponavljati."
                 }
               },
               {
@@ -366,7 +528,15 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
                 name: "Koja je razlika između Test, Explorer, Basic i Standard access-a?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Postoje četiri nivoa. Test Account Access je default novog tokena i radi samo sa test nalozima. Explorer Access Google često dodeli automatski: radi i sa produkcijskim nalozima (2.880 operacija dnevno), ali bez planning alata, kreiranja naloga i billing servisa. Basic Access se dobija aplikacijom i donosi punu funkcionalnost sa 15.000 operacija dnevno, dovoljno za većinu agencijske automatizacije. Standard Access je posebna, kasnija aplikacija za alate velikog obima i uklanja dnevni limit za većinu servisa."
+                  text: "Postoje četiri nivoa i svi se sada dodeljuju Google Cloud projektu. Test Account Access je default novog projekta i radi samo sa test nalozima. Explorer Access radi i sa produkcijskim nalozima, uz 2.880 operacija dnevno, ali bez planning alata, kreiranja naloga, user management-a i billing servisa. Basic Access donosi punu funkcionalnost sa 15.000 operacija dnevno, dovoljno za većinu agencijske automatizacije. Standard Access ukida ukupan dnevni limit, dok pojedinačni servisi zadržavaju svoje rate limite."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Da li Basic Access otključava sve servise?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Ne sve. Basic otključava planning alate poput Keyword Planner-a, kreiranje naloga, user management i billing servise. Ali ReachPlanService, odnosno reach planiranje za YouTube i Display, ostaje zatvoren i na Basic nivou i vraća grešku ACTION_NOT_PERMITTED. To je zaseban allowlist koji ne dolazi uz nivo pristupa."
                 }
               },
               {
@@ -374,7 +544,15 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
                 name: "Šta ako nemam Google Cloud projekat?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Kreiranje Google Cloud projekta je besplatno i traje nekoliko minuta preko Google Cloud Console-a. Projekat vam je ionako potreban za generisanje OAuth2 kredencijala (client ID i client secret) koji omogućavaju autentifikaciju prema Google Ads API-ju, tako da ovo nije dodatan korak, nego preduslov koji ćete uraditi u svakom slučaju."
+                  text: "Kreiranje Google Cloud projekta je besplatno i traje nekoliko minuta preko Google Cloud Console-a. Projekat vam je ionako potreban za generisanje OAuth2 kredencijala (client ID i client secret), a od septembra 2026. je i nosilac vašeg nivoa pristupa, pa je to prvi korak, ne dodatni."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Da li jedan Cloud projekat pokriva sve moje klijentske naloge?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Da. Nivo pristupa se dodeljuje Cloud projektu i važi za svaki nalog koji kroz njega gađate, a manager nalog navodite kroz login-customer-id parametar. Za novog klijenta je dovoljno povezati nalog pod MCC, bez nove prijave. Obrnuto važi kao upozorenje: ako neka skripta koristi kredencijale iz drugog Cloud projekta, ona radi na nivou tog projekta, ne vašeg glavnog."
                 }
               },
               {
@@ -384,14 +562,6 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
                   "@type": "Answer",
                   text: "Osnovno razumevanje pomaže, ali ne morate biti programer u klasičnom smislu. Google nudi zvanične klijentske biblioteke za više jezika koje pojednostavljuju pozive, a danas AI agenti poput Claude-a mogu da napišu i održavaju veći deo skripti za reporting i automatizaciju, uz vaše jasno definisane zahteve o tome šta treba da se radi."
                 }
-              },
-              {
-                "@type": "Question",
-                name: "Da li jedan developer token pokriva sve moje klijentske naloge?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Da, pod uslovom da aplicirate iz manager naloga (MCC), a ne iz pojedinačnog klijentskog naloga. Developer token živi na nivou manager naloga i automatski pokriva sve klijentske naloge koji su pod njim povezani, tako da vam za novog klijenta nije potreban novi token niti nova aplikacija."
-                }
               }
             ]
           })
@@ -400,11 +570,21 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group my-3" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Koliko sada traje review Basic Access aplikacije?
+          Da li mi i dalje treba developer token za Google Ads API?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Ako je vaša aplikacija na statusu pending i završite opcioni brand verification korak na povezanom Google Cloud projektu, Google navodi da će vašu aplikaciju pregledati u narednih nekoliko sati. Bez tog koraka važi standardni proces, za koji Google zvanično navodi do 5 radnih dana, bez uvida u status u međuvremenu.
+          Ne. Google je developer tokene ukinuo 9. septembra 2026. Ako ih vaš kod i dalje šalje, pozivi nastavljaju da rade, ali Google token ignoriše. Nivo pristupa sada nosi Google Cloud projekat iz kog su izvučeni vaši OAuth kredencijali. Praktična posledica je da kredencijali iz drugog Cloud projekta padaju na Test nivo i ne vide produkcijske naloge.
+        </div>
+      </details>
+
+      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
+        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+          Koliko sada traje odobrenje za Basic Access?
+          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+        </summary>
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+          Google navodi da je odobrenje za Basic sada automatizovano i da stiže u roku od nekoliko minuta nakon što na Cloud projektu završite brand verification. Standard i dalje ide na ručni audit, za koji Google navodi oko 10 radnih dana. Ako vam prijava ipak bude vraćena na dopunu, odgovarajte u postojećem thread-u umesto da ponovo šaljete formu sa istim odgovorima.
         </div>
       </details>
 
@@ -414,7 +594,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Ne. Brand verification je potpuno opcioni signal koji Google koristi da brže donese odluku o vašoj aplikaciji. Ko već ima odobren developer token, ne treba mu ovaj korak. Vredi ga uraditi jedino ako vam je aplikacija trenutno na statusu pending i želite brži pregled.
+          Za nove Basic i Standard prijave jeste, i to je promena u odnosu na jul 2026, kada je bila opcioni ubrzivač. Ko već ima odobren pristup, izuzet je. Verifikuje se onaj Cloud projekat iz kog se zaista autentifikujete, a ako je taj projekat već prošao brand verification za neki drugi Google API, ne morate je ponavljati.
         </div>
       </details>
 
@@ -424,7 +604,17 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Postoje četiri nivoa. Test Account Access je default novog tokena i radi samo sa test nalozima. Explorer Access Google često dodeli automatski: radi i sa produkcijskim nalozima (2.880 operacija dnevno), ali bez planning alata, kreiranja naloga i billing servisa. Basic Access se dobija aplikacijom i donosi punu funkcionalnost sa 15.000 operacija dnevno, dovoljno za većinu agencijske automatizacije. Standard Access je posebna, kasnija aplikacija za alate velikog obima i uklanja dnevni limit za većinu servisa.
+          Postoje četiri nivoa i svi se sada dodeljuju Google Cloud projektu. Test Account Access je default novog projekta i radi samo sa test nalozima. Explorer Access radi i sa produkcijskim nalozima, uz 2.880 operacija dnevno, ali bez planning alata, kreiranja naloga, user management-a i billing servisa. Basic Access donosi punu funkcionalnost sa 15.000 operacija dnevno, dovoljno za većinu agencijske automatizacije. Standard Access ukida ukupan dnevni limit, dok pojedinačni servisi zadržavaju svoje rate limite.
+        </div>
+      </details>
+
+      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
+        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+          Da li Basic Access otključava sve servise?
+          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+        </summary>
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+          Ne sve. Basic otključava planning alate poput Keyword Planner-a, kreiranje naloga, user management i billing servise. Ali ReachPlanService, odnosno reach planiranje za YouTube i Display, ostaje zatvoren i na Basic nivou i vraća grešku ACTION_NOT_PERMITTED. To je zaseban allowlist koji ne dolazi uz nivo pristupa.
         </div>
       </details>
 
@@ -434,7 +624,17 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Kreiranje Google Cloud projekta je besplatno i traje nekoliko minuta preko Google Cloud Console-a. Projekat vam je ionako potreban za generisanje OAuth2 kredencijala (client ID i client secret) koji omogućavaju autentifikaciju prema Google Ads API-ju, tako da ovo nije dodatan korak, nego preduslov koji ćete uraditi u svakom slučaju.
+          Kreiranje Google Cloud projekta je besplatno i traje nekoliko minuta preko Google Cloud Console-a. Projekat vam je ionako potreban za generisanje OAuth2 kredencijala (client ID i client secret), a od septembra 2026. je i nosilac vašeg nivoa pristupa, pa je to prvi korak, ne dodatni.
+        </div>
+      </details>
+
+      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
+        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+          Da li jedan Cloud projekat pokriva sve moje klijentske naloge?
+          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+        </summary>
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+          Da. Nivo pristupa se dodeljuje Cloud projektu i važi za svaki nalog koji kroz njega gađate, a manager nalog navodite kroz login-customer-id parametar. Za novog klijenta je dovoljno povezati nalog pod MCC, bez nove prijave. Obrnuto važi kao upozorenje: ako neka skripta koristi kredencijale iz drugog Cloud projekta, ona radi na nivou tog projekta, ne vašeg glavnog.
         </div>
       </details>
 
@@ -448,16 +648,6 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
         </div>
       </details>
 
-      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
-        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Da li jedan developer token pokriva sve moje klijentske naloge?
-          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
-        </summary>
-        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Da, pod uslovom da aplicirate iz manager naloga (MCC), a ne iz pojedinačnog klijentskog naloga. Developer token živi na nivou manager naloga i automatski pokriva sve klijentske naloge koji su pod njim povezani, tako da vam za novog klijenta nije potreban novi token niti nova aplikacija.
-        </div>
-      </details>
-
       <hr />
 
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
@@ -465,7 +655,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
           Treba vam API monitoring i automatizacija za klijentske naloge?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          Postavljam developer token, API pristup i noćnu automatizaciju (pacing, performanse, search-term rudarenje, upozorenja) za agencije i timove koji vode više Google Ads naloga pod jednim manager nalogom.
+          Postavljam API pristup, Cloud projekat i noćnu automatizaciju (pacing, performanse, search-term rudarenje, upozorenja) za agencije i timove koji vode više Google Ads naloga pod jednim manager nalogom.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Zakažite besplatnu konsultaciju
@@ -496,7 +686,7 @@ export default function GoogleAdsApiBasicAccessVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: 11. jul 2026.
+        Poslednje ažuriranje: 17. septembar 2026.
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

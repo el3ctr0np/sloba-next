@@ -36,7 +36,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
       </div>
 
       <p>
-        By the time I finished applying for Google Ads API Basic Access, it was clear the developer token was only one piece of a bigger picture. The same agency automating Google Ads reporting also needs GA4 data for attribution, Search Console data for the SEO side, Tag Manager for tracking audits, and Merchant Center for Shopping feed diagnostics. Each of those tools has its own API, its own scope, and its own rules — but they all sit under one roof: a Google Cloud project you set up once and then keep adding services to.
+        By the time I finished applying for Google Ads API Basic Access — it took two rounds, since the first submission got sent back for more detail — it was clear the developer token was only one piece of a bigger picture. The same agency automating Google Ads reporting also needs GA4 data for attribution, Search Console data for the SEO side, Tag Manager for tracking audits, and Merchant Center for Shopping feed diagnostics. Each of those tools has its own API, its own scope, and its own rules — but they all sit under one roof: a Google Cloud project you set up once and then keep adding services to.
       </p>
       <p>
         This guide covers that whole roof, starting from zero. We go through the foundation (the Cloud project and OAuth consent screen, including a mistake that once killed one of my tokens), then through each of the six APIs individually, with the scope you need and where to enable it. Google Ads API developer tokens and the brand verification pilot get their own dedicated guide, linked in the relevant section below — here I just place it in the wider context.
@@ -105,20 +105,27 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
         </p>
       </div>
 
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Check who holds Owner or Editor on the project</p>
+        <p className="text-yellow-800 text-base mb-0">
+          While the Google Ads API Center still exists, administrative and compliance notices about your Cloud project go to the contact email set there. Google expects to retire that page in the first half of 2027, and after that, notices go only to users holding the Owner or Editor role on the Cloud project in IAM. Check now, on the project&apos;s IAM page, that the right person holds one of those two roles — or you&apos;ll miss the notice when that transition lands.
+        </p>
+      </div>
+
       <hr />
 
       <h2 id="google-ads-api">Google Ads API</h2>
       <p>
-        The Google Ads API is probably the first API an agency reaches for, since it lifts reporting and campaign management to a level manual work simply can&apos;t match. Access sits at the manager (MCC) account level through a developer token, and that token moves through three tiers: <strong>Explorer access</strong> (the default, up to 2,880 operations a day against production accounts), <strong>Basic Access</strong> (up to 15,000 operations a day plus the planning services), and <strong>Standard Access</strong> (no daily cap, built for high-volume tools).
+        The Google Ads API is probably the first API an agency reaches for, since it lifts reporting and campaign management to a level manual work simply can&apos;t match. As of September 9, 2026, Google retired developer tokens for the Google Ads API — they can still be sent with a call, but Google ignores them, and they&apos;re no longer required. For existing users, the transition itself was automatic: Google reviewed the last 90 days of API calls and moved the token&apos;s approved level onto every Cloud project that had called the API with it during that window. Access now sits with the Google Cloud project the OAuth credentials come from, not with a token at the manager (MCC) account level. The MCC still plays a role, but through the <code>login-customer-id</code> parameter on the call, which is a separate thing from the access level itself. That level moves through three practical tiers for production accounts: <strong>Explorer access</strong> (the default, up to 2,880 operations a day), <strong>Basic Access</strong> (up to 15,000 operations a day plus the planning services), and <strong>Standard Access</strong> (no overall daily cap, though individual services keep their own rate limits).
       </p>
       <p>
-        Explorer level is enough to pull reports and make basic changes on your own accounts, but it comes with two constraints you feel quickly: the 2,880 daily operations cap and fully blocked planning services. Calls to the Keyword Planner portion of the API — keyword ideas, search volume estimates — return a <code>DEVELOPER_TOKEN_NOT_APPROVED</code> error until you're approved for Basic Access. That's the main practical reason to submit the application before the limits actually start to hurt.
+        Explorer level is enough to pull reports and make basic changes on your own accounts, but it comes with two constraints you feel quickly: the 2,880 daily operations cap and fully blocked planning services. Calls to the Keyword Planner portion of the API — keyword ideas, search volume estimates — return a <code>DEVELOPER_TOKEN_NOT_APPROVED</code> error until the Cloud project is approved for Basic Access. That's the main practical reason to submit the application before the limits actually start to hurt. There's a new trap to watch for too: if you generate OAuth credentials from a different Cloud project than the one holding your approved access level, calls fall back to Test tier and can&apos;t see production accounts — make sure the project you&apos;re pulling credentials from is the same one that went through review.
       </p>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Dedicated guide</p>
         <p className="text-blue-800 text-base mb-0">
-          The full Basic Access application process, including the newer brand verification pilot that cuts review from days or weeks down to a few hours, is covered step by step in a separate guide:{" "}
+          The full Basic Access application process, including brand verification — now a prerequisite for new Basic and Standard applications (existing access holders are exempt) — is covered step by step in a separate guide:{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="underline text-blue-700 font-medium">
             Google Ads API Basic Access: Step-by-Step Guide
           </Link>. Here I&apos;ll just note the OAuth scope you need is <code>https://www.googleapis.com/auth/adwords</code>, and it all runs through the same Cloud project you set up in the previous section.
@@ -220,7 +227,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
               <td className="py-3 px-3 font-medium">Google Ads API</td>
               <td className="py-3 px-3">Reporting, campaign management, bulk changes</td>
               <td className="py-3 px-3"><code>.../auth/adwords</code></td>
-              <td className="py-3 px-3">API Center (MCC) + Cloud Console</td>
+              <td className="py-3 px-3">Google Cloud Console</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">GA4 Data API</td>
@@ -293,7 +300,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">6</span>
-            <div><strong>For the Google Ads API — apply for a developer token</strong> <span className="text-gray-500">— this is the only step with a review wait; the other five APIs work immediately once enabled and authenticated.</span></div>
+            <div><strong>For the Google Ads API — check or raise your Cloud project&apos;s access level</strong> <span className="text-gray-500">— you no longer apply for a token, you apply for an access level on the Cloud project itself, in Google Cloud Console; Basic Access is now granted automatically, within minutes of brand verification, while Standard still goes through manual review; the other five APIs work immediately once enabled and authenticated.</span></div>
           </div>
         </div>
       </div>
@@ -330,7 +337,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
                 name: "Does API access cost anything?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "No, creating a Cloud project, enabling APIs, and generating OAuth credentials are all free. The Google Ads API developer token is also free to apply for and use. Cost only shows up if you exceed the free quotas on individual APIs through very high call volume, which is rare for a typical agency managing a dozen accounts."
+                  text: "No, creating a Cloud project, enabling APIs, and generating OAuth credentials are all free. The Google Ads API access level is also free to apply for and use. Cost only shows up if you exceed the free quotas on individual APIs through very high call volume, which is rare for a typical agency managing a dozen accounts."
                 }
               },
               {
@@ -362,7 +369,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
                 name: "Does one refresh token cover multiple client accounts?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "It depends on the API. For the Google Ads API, a developer token at the MCC level automatically covers every client account linked underneath it, with a single token. For GA4, Search Console, and Merchant Center, access is granted per account or property, so you need to be added as a user for each new client property or account, even if your OAuth credentials stay the same."
+                  text: "It depends on the API. For the Google Ads API, access sits with the Cloud project and covers every account you call through it; the MCC is specified separately, via the login-customer-id parameter on the call, not through a token. For GA4, Search Console, and Merchant Center, access is granted per account or property, so you need to be added as a user for each new client property or account, even if your OAuth credentials stay the same."
                 }
               }
             ]
@@ -396,7 +403,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          No, creating a Cloud project, enabling APIs, and generating OAuth credentials are all free. The Google Ads API developer token is also free to apply for and use. Cost only shows up if you exceed the free quotas on individual APIs through very high call volume, which is rare for a typical agency managing a dozen accounts.
+          No, creating a Cloud project, enabling APIs, and generating OAuth credentials are all free. The Google Ads API access level is also free to apply for and use. Cost only shows up if you exceed the free quotas on individual APIs through very high call volume, which is rare for a typical agency managing a dozen accounts.
         </div>
       </details>
 
@@ -436,7 +443,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          It depends on the API. For the Google Ads API, a developer token at the MCC level automatically covers every client account linked underneath it, with a single token. For GA4, Search Console, and Merchant Center, access is granted per account or property, so you need to be added as a user for each new client property or account, even if your OAuth credentials stay the same.
+          It depends on the API. For the Google Ads API, access sits with the Cloud project and covers every account you call through it; the MCC is specified separately, via the login-customer-id parameter on the call, not through a token. For GA4, Search Console, and Merchant Center, access is granted per account or property, so you need to be added as a user for each new client property or account, even if your OAuth credentials stay the same.
         </div>
       </details>
 
@@ -457,7 +464,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Basic Access</p>
-          <p className="text-xs text-gray-500 mb-0">Detailed guide to the developer token and brand verification.</p>
+          <p className="text-xs text-gray-500 mb-0">Detailed guide to access levels and brand verification.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "merchant-center-serbia-setup" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Merchant Center Setup</p>
@@ -474,7 +481,7 @@ export default function GoogleApiAccessGuideForAgenciesPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: July 11, 2026
+        Last updated: September 17, 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">
