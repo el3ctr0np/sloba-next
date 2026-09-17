@@ -14,10 +14,15 @@ declare global {
   }
 }
 
-function gtag(...args: unknown[]) {
+// Google tag prihvata samo `arguments` objekat. Obican niz (rest parametar)
+// tiho ignorise: consent update se nije primenjivao na stranici na kojoj je
+// posetilac kliknuo "Prihvatam" (provereno 17.9.2026, ad_storage je ostajao denied).
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function gtag(..._args: unknown[]) {
   if (typeof window === "undefined") return;
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push(args as unknown as Record<string, unknown>);
+  // eslint-disable-next-line prefer-rest-params
+  window.dataLayer.push(arguments);
 }
 
 function setConsent(value: ConsentValue) {
