@@ -7,7 +7,7 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">In short</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Google Ads API authentication has three layers that get mixed up constantly — the OAuth2 credentials that say who you are, the developer token that says which application you are, and the login-customer-id that says which account you&apos;re targeting. A fourth, optional layer (service accounts) exists for a narrower use case than the quick-start docs let on. Get any one of the three wrong and you don&apos;t get a warning — you get a specific error code and a dead script.
+          Google Ads API authentication has three layers that get mixed up constantly — the OAuth2 credentials that say who you are, the developer token that says which application you are, and the login-customer-id that says which account you&apos;re targeting. A fourth, optional layer (service accounts) exists for a narrower use case than the quick-start docs let on. Get any one of the three wrong and you don&apos;t get a warning — you get a specific error code and a dead script. As of September 9, 2026, the developer token is no longer required — Google ignores it if you still send it, and access level now lives with the Google Cloud project your OAuth credentials come from, not the token itself.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
@@ -32,12 +32,12 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-semibold">Quick answer</p>
         <p className="text-base text-gray-700 mb-0">
-          A Google Ads API developer token identifies your application and never changes; an OAuth2 client (client ID and secret) identifies your app to Google&apos;s auth servers; a refresh token identifies the person who granted access and can expire. For a solo operator or agency running your own scripts, use the OAuth2 desktop (installed app) flow — it&apos;s the simplest path and offline access is on by default. Use the web application flow only if you&apos;re building something users log into through a browser. Service accounts make sense only for server-to-server automation inside a Google Workspace domain with domain-wide delegation configured for the adwords scope — Google&apos;s own service account guide doesn&apos;t spell this requirement out, but skip it and the call fails with <code>AuthenticationError.NOT_ADS_USER</code>.
+          A Google Ads API developer token identifies your application and never changes, though as of September 9, 2026 it&apos;s no longer required — Google ignores it if it&apos;s still sent; an OAuth2 client (client ID and secret) identifies your app to Google&apos;s auth servers; a refresh token identifies the person who granted access and can expire. For a solo operator or agency running your own scripts, use the OAuth2 desktop (installed app) flow — it&apos;s the simplest path and offline access is on by default. Use the web application flow only if you&apos;re building something users log into through a browser. Service accounts make sense only for server-to-server automation inside a Google Workspace domain with domain-wide delegation configured for the adwords scope — Google&apos;s own service account guide doesn&apos;t spell this requirement out, but skip it and the call fails with <code>AuthenticationError.NOT_ADS_USER</code>.
         </p>
       </div>
 
       <p>
-        My Basic Access application for the Google Ads API got reviewed in a few hours instead of the usual days — I wrote about the exact steps in{" "}
+        My Basic Access application for the Google Ads API went in early August 2026, came back for more information, I resubmitted it in early September, and it was finally approved on September 9-10 — I wrote about the exact steps in{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="underline text-blue-700 font-medium">
           the Basic Access guide
         </Link>
@@ -46,6 +46,13 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
       <p>
         This guide is the part nobody explains cleanly: OAuth2 desktop vs. web flow, the 7-day trap, what a developer token header actually is versus an OAuth token, when a service account is genuinely the right tool (and when it silently isn&apos;t), and a two-minute Python test to confirm the whole chain works before you build anything on top of it.
       </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">The September 9, 2026 change</p>
+        <p className="text-yellow-800 text-base mb-0">
+          That&apos;s the day Google sunset developer tokens for the Google Ads API — code that still sends one keeps working, but Google ignores it. Access level (Test / Explorer / Basic / Standard) now lives with the Google Cloud project your OAuth credentials come from, not the token, and upgrades are requested in Cloud Console instead of API Center. The new trap: pull OAuth credentials from a different Cloud project than the one holding your approved access level, and you fall back to Test level with no visibility into production accounts — previously this didn&apos;t matter because the token carried the level. Google&apos;s own docs currently contradict each other on this, so check your Cloud project before you assume anything.
+        </p>
+      </div>
 
       <hr />
       {/* ── Table of Contents ── */}
@@ -95,7 +102,7 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">Developer token</td>
               <td className="py-3 px-3">Identifies your <em>application</em> to the Google Ads API — not the user</td>
-              <td className="py-3 px-3">API Center, in your manager account</td>
+              <td className="py-3 px-3">API Center, in your manager account (the level now changes in Cloud Console as of 9/9/2026; the page itself is slated for retirement in H1 2027)</td>
               <td className="py-3 px-3"><code>DEVELOPER_TOKEN_NOT_APPROVED</code></td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
@@ -109,11 +116,11 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
       </div>
 
       <p>
-        The developer token itself — how it&apos;s generated, and the Test / Explorer / Basic / Standard access levels that gate what it can call — is covered in full in{" "}
+        The developer token itself — how it&apos;s generated (though as of 9/9/2026 it&apos;s no longer required) — and the Test / Explorer / Basic / Standard access levels, now carried by the Cloud project your OAuth credentials come from rather than the token itself, are covered in full in{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="underline text-blue-700 font-medium">
           the Basic Access guide
         </Link>
-        . This post assumes you have a token (any level works for testing) and focuses on getting the other layers right.
+        . This post assumes your Cloud project already has an access level set (any level works for testing) and focuses on getting the other layers right.
       </p>
 
       <hr />
@@ -166,7 +173,7 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
       </div>
 
       <p>
-        If you&apos;ve already been through the OAuth consent screen for brand verification — Step 4 in the Basic Access guide — you&apos;ll recognize this screen. It&apos;s the same one; you&apos;re just here for a different reason this time.
+        If you&apos;ve already been through the OAuth consent screen for brand verification — Step 4 in the Basic Access guide, now a prerequisite for new Basic and Standard applications, though existing access holders are exempt — you&apos;ll recognize this screen. It&apos;s the same one; you&apos;re just here for a different reason this time.
       </p>
 
       <hr />
@@ -181,7 +188,7 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-api-access-guide-for-agencies" } }} className="underline text-blue-700 font-medium">
           the Google API access guide for agencies
         </Link>
-        . If your project is the same one you already pushed to <strong>In production</strong> for brand verification (Step 4 of the Basic Access guide), you&apos;ve already fixed this — nothing more to do. If not, check now: Cloud Console → APIs and services → OAuth consent screen → Audience tab.
+        . If your project is the same one you already pushed to <strong>In production</strong> for brand verification (Step 4 of the Basic Access guide, now a prerequisite for new Basic and Standard applications, with existing access holders exempt), you&apos;ve already fixed this — nothing more to do. If not, check now: Cloud Console → APIs and services → OAuth consent screen → Audience tab.
       </p>
 
       <hr />
@@ -191,7 +198,7 @@ export default function GoogleAdsApiAuthenticationGuideEN() {
         Two more pieces get confused for each other constantly, and neither is an OAuth concept.
       </p>
       <p>
-        The <strong>developer token</strong> is not a header you get from an OAuth flow — it&apos;s a fixed string from your manager account&apos;s API Center (22 characters in my accounts), and it goes on every request as a <code>developer-token</code> HTTP/gRPC header. It identifies the application, not the person calling it, and it&apos;s the same value regardless of which Google account authenticated the call.
+        The <strong>developer token</strong> is not a header you get from an OAuth flow — it&apos;s a fixed string from your manager account&apos;s API Center (22 characters in my accounts), and it goes on every request as a <code>developer-token</code> HTTP/gRPC header — that still works, but as of September 9, 2026 it&apos;s no longer a condition for the call, since Google ignores the header and reads the access level from the Cloud project instead. It identifies the application, not the person calling it, and it&apos;s the same value regardless of which Google account authenticated the call.
       </p>
       <p>
         <strong>login-customer-id</strong> only matters once your authenticated account has access to a manager (MCC) account. If you&apos;re calling the API to act on a client account underneath that MCC, you have to tell Google which account context you&apos;re operating in — set the <code>login-customer-id</code> header to the MCC&apos;s ID. Skip it and you get <code>USER_PERMISSION_DENIED</code>: &quot;the authorized customer does not have access to the operating customer,&quot; even though, from the Google Ads UI, you clearly do.
@@ -244,6 +251,9 @@ use_proto_plus: True`}</code>
 
       <p>
         Two things worth flagging: <code>login_customer_id</code> is the MCC ID without dashes, and it only needs to be set if you&apos;re calling through a manager account — leave it out for a standalone account. And <code>use_proto_plus: True</code> isn&apos;t optional cosmetics; the client library requires this field in its configuration, and its absence produces confusing type errors that have nothing to do with authentication at all.
+      </p>
+      <p>
+        You can already treat the <code>developer_token</code> line in this file as optional for new setups — Google&apos;s email from September 14, 2026 flags that upcoming Google Ads API releases, expected in the first half of 2027, won&apos;t accept it in calls at all any more. No need to rush and strip it from existing scripts, but stop adding it to new ones.
       </p>
 
       <hr />
@@ -351,7 +361,7 @@ for row in response:
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          A developer token identifies your application — it&apos;s a fixed string issued once in your manager account&apos;s API Center (22 characters in my accounts), and it never expires on its own. An OAuth2 access token (and the refresh token behind it) identifies the person who authorized your app, and it can expire or be revoked. Every Google Ads API call needs both: the developer token as a header, and a valid OAuth2 access token for authentication.
+          A developer token identifies your application — it&apos;s a fixed string issued once in your manager account&apos;s API Center (22 characters in my accounts), and it never expires on its own. An OAuth2 access token (and the refresh token behind it) identifies the person who authorized your app, and it can expire or be revoked. Every Google Ads API call needs both: the developer token as a header, and a valid OAuth2 access token for authentication. As of September 9, 2026, the developer token is no longer a required part of that call — Google ignores it if it&apos;s sent, and access level now lives with the Cloud project the OAuth credentials come from.
         </div>
       </details>
 
@@ -420,7 +430,7 @@ for row in response:
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-guide" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Basic Access Guide</p>
-          <p className="text-xs text-gray-500 mb-0">Getting your developer token approved, including the July 2026 fast-track.</p>
+          <p className="text-xs text-gray-500 mb-0">Getting your developer token approved and picking the right access level — updated for the September 2026 changes.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-api-access-guide-for-agencies" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google API Access Guide for Agencies</p>
@@ -433,7 +443,7 @@ for row in response:
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: August 29, 2026
+        Last updated: September 17, 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

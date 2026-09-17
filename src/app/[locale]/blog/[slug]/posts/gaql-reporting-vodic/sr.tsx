@@ -37,7 +37,7 @@ export default function GaqlReportingVodicSR() {
       </div>
 
       <p>
-        Svakog jutra, pre nego što sednem za sto, skript izvuče GAQL izveštaje za devet klijentskih naloga - trošenje, search terms, konverzije, učinak asseta. Ništa od toga ne radi dok auth lanac najpre ne proradi, a to sam pokrio u{" "}
+        Svakog jutra, pre nego što sednem za sto, skript izvuče GAQL izveštaje za 27 klijentskih naloga - trošenje, search terms, konverzije, učinak asseta. Ništa od toga ne radi dok auth lanac najpre ne proradi, a to sam pokrio u{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-autentifikacija" } }} className="underline text-blue-700 font-medium">
           vodiču za autentifikaciju
         </Link>
@@ -181,7 +181,7 @@ TODAY   YESTERDAY`}</code>
       </div>
 
       <p>
-        U mom sopstvenom steku, svaki modul u <code>ppc_ops</code>, noćnom skriptu koji prolazi kroz devet klijentskih naloga, zove <code>search()</code>, ne <code>searchStream()</code>. Nalozi su u opsegu hiljada redova, ne miliona, pa eksplicitna kontrola paginacije ne košta ništa i kod ostaje jednostavniji za debug kad izveštaj stigne pogrešan. <code>searchStream()</code> se isplati tek kad skenirate ceo MCC odjednom i broj redova pređe u desetine hiljada - jedan poziv i dalje košta jednu operaciju u oba slučaja, što je detalj koji vredi zapamtiti kad planirate dnevnu kvotu.
+        U mom sopstvenom steku, svaki modul u <code>ppc_ops</code>, noćnom skriptu koji prolazi kroz 27 klijentskih naloga, zove <code>search()</code>, ne <code>searchStream()</code>. Nalozi su u opsegu hiljada redova, ne miliona, pa eksplicitna kontrola paginacije ne košta ništa i kod ostaje jednostavniji za debug kad izveštaj stigne pogrešan. <code>searchStream()</code> se isplati tek kad skenirate ceo MCC odjednom i broj redova pređe u desetine hiljada - jedan poziv i dalje košta jednu operaciju u oba slučaja, što je detalj koji vredi zapamtiti kad planirate dnevnu kvotu.
       </p>
 
       <hr />
@@ -423,6 +423,13 @@ WHERE campaign.status = 'ENABLED'
         , zahtev <code>search</code> ili <code>searchStream</code> se računa kao tačno jedna operacija u vašu dnevnu kvotu operacija - bez obzira koliko redova ili streaming batch-eva stigne. Paginirani zahtevi koji nastavljaju na validan page token se ne broje ponovo. Pređete kvotu i dobijate <code>RESOURCE_EXHAUSTED</code>.
       </p>
 
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">Promena od 9. septembra 2026.</p>
+        <p className="text-blue-800 text-base mb-0">
+          Google je tog datuma ukinuo developer tokene. Nivo pristupa sad nosi Google Cloud projekat iz kog dolaze OAuth kredencijali, a ne token - stari developer token se i dalje može poslati u pozivu, ali API ga ignoriše. Limiti u tabeli ispod ostaju isti, samo se dodela nivoa promenila.
+        </p>
+      </div>
+
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
@@ -448,7 +455,7 @@ WHERE campaign.status = 'ENABLED'
       </div>
 
       <p>
-        Ceo moj noćni reporting za svih devet klijentskih naloga radi na Explorer nivou - svaki upit iznad na njemu prolazi bez problema. Po mom iskustvu, prelazak na Basic Access uglavnom otključava alate za planiranje kao što je Keyword Planner, ne same reporting resurse; ceo proces prijave, uključujući brzu prijavu od jula 2026, opisao sam u{" "}
+        Godinu dana je moj noćni reporting za svih 27 klijentskih naloga radio na Explorer nivou - svaki upit iz ovog teksta prolazi bez problema i na njemu. Od septembra 2026. sam prešao na Basic Access, pa je ovo sad potvrđeno iskustvo, ne pretpostavka: Basic je otključao Keyword Planner (<code>GenerateKeywordIdeas</code>, <code>GenerateKeywordHistoricalMetrics</code>), dok su reporting upiti iz ovog vodiča radili identično i pre prelaska, na Explorer nivou. Ako se pitate da li vam Basic uopšte treba samo zbog GAQL izveštavanja - ne treba; treba vam tek kad posegnete za planiranjem. Ceo proces prijave opisao sam u{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="underline text-blue-700 font-medium">
           vodiču za Basic Access
         </Link>
@@ -505,7 +512,7 @@ WHERE campaign.status = 'ENABLED'
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Po mom iskustvu, Explorer pristup pokriva reporting resurse iza većine GAQL upita - campaign, ad_group, keyword_view, search_term_view i ostale korišćene u ovom tekstu - uz 2.880 operacija dnevno na produkcionim nalozima. Basic Access to podigne na 15.000 operacija dnevno i uglavnom otključa alate za planiranje kao što je Keyword Planner, ne sam reporting. Ceo proces prijave je u{" "}
+          Ne treba vam za GAQL izveštavanje. Explorer pristup pokriva reporting resurse iza većine GAQL upita - campaign, ad_group, keyword_view, search_term_view i ostale korišćene u ovom tekstu - uz 2.880 operacija dnevno na produkcionim nalozima, i to sam godinu dana proveravao na sopstvenim nalozima. Basic Access to podigne na 15.000 operacija dnevno, ali ono što stvarno otključava su alati za planiranje: <code>KeywordPlanIdeaService</code> (<code>GenerateKeywordIdeas</code> vraća keyword ideje sa mesečnim volumenom, nivoom konkurencije i rasponom cene klika) i <code>GenerateKeywordHistoricalMetrics</code> za istorijski volumen 12 meseci unazad. <code>ReachPlanService</code> ostaje blokiran i na Basic nivou - to je zaseban allowlist. Ceo proces prijave je u{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="underline text-blue-700 font-medium">
             vodiču za Basic Access
           </Link>.
@@ -537,11 +544,11 @@ WHERE campaign.status = 'ENABLED'
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-autentifikacija" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Vodič za Autentifikaciju</p>
-          <p className="text-xs text-gray-500 mb-0">OAuth2, developer tokeni i zamka od 7 dana kod refresh tokena.</p>
+          <p className="text-xs text-gray-500 mb-0">OAuth2 tok, Cloud projekat kao nosilac pristupa i zamka od 7 dana kod refresh tokena.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-basic-access-vodic" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads API Basic Access Vodič</p>
-          <p className="text-xs text-gray-500 mb-0">Kako da vam odobre developer token, uključujući brzu prijavu od jula 2026.</p>
+          <p className="text-xs text-gray-500 mb-0">Četiri nivoa pristupa i kako se danas dodeljuju preko Google Cloud projekta, ne developer tokena.</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-api-pristupi-za-agencije" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google API Pristupi za Agencije</p>
@@ -554,7 +561,7 @@ WHERE campaign.status = 'ENABLED'
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: 29. avgust 2026.
+        Poslednje ažuriranje: 10. septembar 2026.
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

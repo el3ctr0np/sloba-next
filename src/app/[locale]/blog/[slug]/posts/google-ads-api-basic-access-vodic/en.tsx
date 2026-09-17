@@ -8,126 +8,148 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">In short</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Getting a Google Ads API developer token approved for Basic Access used to mean submitting a form and waiting up to 5 business days, with almost no visibility into where you stood. On July 7, 2026, Google launched a brand verification pilot that can cut a pending review down to a few hours. Here&apos;s the exact path: token, application, Cloud project link, verification.
+          Google Ads API Basic Access unlocks production accounts and the planning services, at 15,000 operations a day instead of Explorer&apos;s 2,880. As of September 9, 2026, the developer token no longer carries that level: your Google Cloud project does, and upgrades are requested in Cloud Console rather than the API Center.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Hours</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">review time with brand verification</p>
-          </div>
-          <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">15,000</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">operations/day on Basic Access</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">operations/day on Basic</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">4</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">steps from token to approval</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">2,880</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">operations/day on Explorer</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Sep 9, 2026</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">the day tokens were retired</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">$0</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">cost of the application itself</p>
+            <p className="text-xs text-slate-400 mt-1 mb-0">cost of access</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
-        <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-semibold">Quick answer</p>
-        <p className="text-base text-gray-700 mb-0">
-          Google Ads API Basic Access is the approval level that lets a developer token pull and push data against live, production Google Ads accounts — reporting, campaign management, automation — up to 15,000 operations a day. You get it by generating a developer token in your manager account&apos;s API Center, submitting the Basic Access application with a clear description of your use case, and waiting for Google&apos;s review. Since July 7, 2026, if your application is sitting in Pending status, completing brand verification on your linked Google Cloud project can get it reviewed within hours instead of days.
+      <div className="bg-white border-2 border-blue-200 rounded-xl p-5 md:p-6 my-6 shadow-card">
+        <p className="text-xs uppercase tracking-[0.15em] text-blue-600 font-bold mb-2">Quick answer</p>
+        <p className="text-base md:text-lg text-gray-900 font-heading font-semibold mb-3">
+          What is Google Ads API Basic Access, and how do you get it?
+        </p>
+        <p className="text-base text-gray-700 mb-0 leading-relaxed">
+          <strong>Google Ads API Basic Access</strong> is the level that lets you pull and push data against live, production Google Ads accounts — up to 15,000 operations a day, including the planning services the lower tiers block. Since September 9, 2026, that level is attached to your Google Cloud project rather than to a developer token. You get it by completing brand verification on that project and then requesting Basic access in Google Cloud Console. Google says Basic approval is now automated and lands within minutes of verification.
         </p>
       </div>
 
       <p>
-        Every morning, before I look at a single campaign by hand, a script has already checked all ten of my client accounts overnight — budget pacing, performance swings, disapproved ads, search terms worth turning into keywords or negatives. That script only exists because of one thing sitting quietly in my manager account: an approved Google Ads API developer token. Without it, I&apos;d be logging into ten separate accounts every day just to see what changed. With it, one person can run monitoring that used to take a small team.
+        Every morning, before I look at a single campaign by hand, a script has already checked every client account under my manager account overnight — budget pacing, performance swings, disapproved ads, search terms worth turning into keywords or negatives. That script is the difference between logging into dozens of accounts daily just to see what changed, and one person running monitoring that used to take a small team.
       </p>
       <p>
-        The developer token is the entry ticket to all of that — the API is what makes agency-grade automation possible for a single operator, whether you&apos;re pulling performance data, pushing bid changes, or feeding closed deals back into Google Ads (I wrote about that last part in{" "}
-        <Link href={{ pathname: "/blog/[slug]", params: { slug: "offline-conversion-import-b2b" } }} className="underline text-blue-700 font-medium">
-          the offline conversion import guide
-        </Link>
-        , which also runs through the API under the hood). My token currently runs at Explorer access — the level Google grants automatically — and it covers all of that nightly reporting. But the moment you ask for more, say Keyword Planner calls, you hit a wall: <code>DEVELOPER_TOKEN_NOT_APPROVED</code>. Full functionality means Basic Access, and that means an application and a review that officially takes up to 5 business days, with no status bar and no estimate of how much longer you&apos;ll wait.
+        For a year, all of that ran on Explorer access, the level Google grants without any application. Explorer covers reporting perfectly well, but the moment you ask for more — Keyword Planner calls, say — you hit a wall: <code>DEVELOPER_TOKEN_NOT_APPROVED</code>. Since September 2026 I&apos;ve been on Basic, so this guide is no longer theory. It&apos;s the path I actually walked, including the part where my application came back for more information before it was approved.
       </p>
       <p>
-        That changed on July 7, 2026. Google launched a pilot that lets you complete brand verification on your Cloud project while your Basic Access application is pending, and get a review within hours. This guide walks through the whole path — token, application, Cloud project link, and the new verification shortcut — based on how I actually set mine up.
+        Meanwhile, something bigger than my account changed. On September 9, 2026, Google retired developer tokens and moved the whole access system onto the Google Cloud project. If you read this guide earlier, the API Center path it described no longer exists. This is the version that matches how things work today.
       </p>
 
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 my-8" id="istorija-izmena">
         <p className="text-xs uppercase tracking-[0.2em] text-blue-700 mb-2 font-semibold">🔄 Living guide — change history</p>
-        <p className="text-sm text-gray-600 mb-3">This guide is updated every month. What changed:</p>
+        <p className="text-sm text-gray-600 mb-3">This guide is updated monthly. What&apos;s new:</p>
         <ul className="text-sm text-gray-700 space-y-1 mb-0 list-disc pl-5">
-          <li><strong>September 2026:</strong> Added a note on two changes affecting code built on the Google Ads API: the permanent shutdown of Content API for Shopping (August 18) and the removal of language targeting from Search campaigns.</li>
-          <li><strong>July 2026:</strong> First version of this guide.</li>
+          <li><strong>September 17, 2026:</strong> Added a section on the automatic transfer of access levels onto Cloud projects, based on the last 90 days of calls, for anyone who already had an approved token — including my own experience with the email Google sent me on September 14. Added a short rundown of what to do before Google stops accepting the developer token in calls in 2027.</li>
+          <li><strong>September 10, 2026:</strong> Major rewrite. Google retired developer tokens on Sep 9 and tied access levels to the Google Cloud project. Upgrades now go through Cloud Console, brand verification moved from optional accelerator to prerequisite, and Basic approval is automated. Added a section on Standard access with the conditions Google actually checks, plus my own measurements of what Basic unlocks.</li>
+          <li><strong>September 2026:</strong> Added a note on two changes that affect code built on the Google Ads API: the permanent shutdown of the Content API for Shopping (August 18) and the removal of language targeting from Search campaigns.</li>
+          <li><strong>July 2026:</strong> First version, written around the brand verification pilot that was current at the time.</li>
         </ul>
       </div>
 
       <hr />
-      {/* ── Table of Contents ── */}
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
-        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
+          <li><a href="#what-changed" className="block py-1 text-base text-gray-700 hover:text-primary underline">What changed on September 9, 2026</a></li>
           <li><a href="#prerequisites" className="block py-1 text-base text-gray-700 hover:text-primary underline">Prerequisites</a></li>
-          <li><a href="#step-1-get-your-developer-token" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step 1 — Get your developer token</a></li>
-          <li><a href="#step-2-the-basic-access-application" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step 2 — The Basic Access application</a></li>
-          <li><a href="#step-3-link-the-token-to-a-cloud-project" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step 3 — Link the token to a Cloud project</a></li>
-          <li><a href="#step-4-brand-verification-the-july-2026-pilot" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step 4 — Brand verification (the July 2026 pilot)</a></li>
-          <li><a href="#what-basic-access-gives-you-and-what-it-still-doesnt" className="block py-1 text-base text-gray-700 hover:text-primary underline">What Basic Access gives you — and what it still doesn&apos;t</a></li>
+          <li><a href="#step-1-cloud-project" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step 1 — Your Cloud project now carries the access level</a></li>
+          <li><a href="#step-2-brand-verification" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step 2 — Brand verification, screen by screen</a></li>
+          <li><a href="#step-3-request-basic" className="block py-1 text-base text-gray-700 hover:text-primary underline">Step 3 — Requesting Basic access</a></li>
+          <li><a href="#if-it-comes-back" className="block py-1 text-base text-gray-700 hover:text-primary underline">If your application comes back for more information</a></li>
+          <li><a href="#what-basic-access-gives-you-and-what-it-still-doesnt" className="block py-1 text-base text-gray-700 hover:text-primary underline">What Basic Access gives you, and what it still doesn&apos;t</a></li>
+          <li><a href="#standard-access" className="block py-1 text-base text-gray-700 hover:text-primary underline">Standard Access, and when it&apos;s actually worth asking</a></li>
           <li><a href="#faq-google-ads-api-basic-access" className="block py-1 text-base text-gray-700 hover:text-primary underline">Frequently asked questions</a></li>
         </ol>
       </nav>
 
-      <h2 id="prerequisites">Prerequisites</h2>
+      <h2 id="what-changed">What changed on September 9, 2026</h2>
       <p>
-        Two things need to exist before you touch the application form. Neither costs money, and if you&apos;re already running Google Ads, you probably have the first one.
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prerequisite 1</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">A Google Ads account — ideally a manager account</h3>
-          <p className="text-base text-gray-600 mb-0">
-            The developer token lives at the manager (MCC) level, not on an individual client account. If you manage more than one account, set up an MCC first — one token issued there gives you API access to every client account linked underneath it. That&apos;s the whole reason the API scales for an agency: one approval, all accounts.
-          </p>
-        </div>
-        <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Prerequisite 2</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">A Google Cloud project</h3>
-          <p className="text-base text-gray-600 mb-0">
-            You need one anyway to generate the OAuth2 client ID and secret the API uses to authenticate — so this isn&apos;t extra work created by the new pilot, it&apos;s a step you&apos;d take regardless. Free tier is enough; the Ads API itself doesn&apos;t require billing to be enabled on the project.
-          </p>
-        </div>
-      </div>
-
-      <hr />
-
-      <h2 id="step-1-get-your-developer-token">Step 1 — Get your developer token</h2>
-      <p>
-        In your manager account, open the API Center — under Admin in the current interface (older accounts may still show it under Tools &amp; Settings). This is where the developer token lives, and where its current access level is shown. If you&apos;ve never applied before, generating the token itself is instant — you don&apos;t need approval to get a token, only to use it against real accounts.
-      </p>
-
-      <figure className="my-6">
-        <Image src="/blog/google-ads-api-basic-access/api-center-token-explorer.webp" alt="API Center in the Google Ads manager account: masked developer token with a View token link, and an Access level row showing Explorer Access" width={1690} height={400} className="rounded-xl border border-gray-200 w-full h-auto" />
-        <figcaption className="text-xs text-gray-500 mt-2 text-center">API Center in my manager account: the developer token (masked) and its current access level</figcaption>
-      </figure>
-
-      <p>
-        A brand new token starts at <strong>Test Account Access</strong>: it works only against test accounts you create for development and can&apos;t see a byte of production data. Google then automatically grants many accounts <strong>Explorer Access</strong> — no application needed. That&apos;s the level my token is at in the screenshot above: it works against real, production accounts, but with a cap of 2,880 operations per day and no access to planning tools (Keyword Planner), account creation, user management, or billing services.
+        Until then, the developer token was a key issued to your manager account, and it carried your access level. Every API call had to send it, and Google used it to decide whether you were allowed 2,880 operations or 15,000. The level belonged to the agency.
       </p>
       <p>
-        Explorer is a perfectly usable entry ticket — my entire nightly reporting stack runs on it. It&apos;s also exactly where you&apos;ll first feel the ceiling, because any call to a service Explorer doesn&apos;t cover returns <code>DEVELOPER_TOKEN_NOT_APPROVED</code>. Before you apply for Basic, use this level to confirm your authentication and basic connection work: if a call fails here, the problem is your configuration, not your access level.
+        On September 9, 2026, the token was retired. You can still send it, your code keeps working, but Google ignores it. Access level is now determined by the <strong>Google Cloud project your OAuth credentials come from</strong>. The official documentation puts it in one line: &quot;Your Google Cloud project is assigned an access level.&quot;
       </p>
 
-      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">From my experience</p>
-        <p className="text-blue-800 text-base mb-0">
-          Don&apos;t wait for Basic Access to start building. Write and test your first scripts against a test account while the application is under review — reporting pulls, a basic budget check, whatever your actual use case is. By the time Basic Access comes through, you&apos;ve already worked out the authentication flow and the obvious bugs, and you can point the same code at production accounts immediately.
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">The trap this introduces</p>
+        <p className="text-yellow-800 text-base mb-0">
+          It used to make no difference which Cloud project your OAuth credentials came from, because the token carried the level. Now it does. Any script authenticating with credentials from a different Cloud project drops to Test level and can&apos;t see production accounts. If you run more than one project, check which one you&apos;re actually authenticating from: the prefix of your client ID is the project number, so it&apos;s one glance at <code>google-ads.yaml</code>.
         </p>
       </div>
 
-      <hr />
-
-      <h2 id="step-2-the-basic-access-application">Step 2 — The Basic Access application</h2>
       <p>
-        In API Center, next to the developer token, there&apos;s a link to apply for Basic Access. The form asks what you plan to do with the API — and this is the part that actually determines how smoothly the review goes.
+        Where you request an upgrade changed too. It&apos;s no longer the API Center in your manager account, it&apos;s Google Cloud Console. The API Center page says so itself in a banner today: the level it displays &quot;may no longer be accurate and cannot be upgraded from this page.&quot; It stays useful only for your developer contact email.
+      </p>
+      <p>
+        Worth knowing: at the time of writing, Google&apos;s own documentation isn&apos;t in sync with itself. The access levels page was updated on September 9, 2026, correctly states that the Cloud project carries the level, and yet never mentions the token retirement. That detail lives only on the developer token policy page. So if you run into a guide that sends you to the API Center, it probably wasn&apos;t written wrong — it just hasn&apos;t caught up.
+      </p>
+
+      <div className="tablewrap overflow-x-auto my-6">
+        <table className="w-full text-base border border-gray-200 rounded-xl">
+          <thead>
+            <tr className="bg-gray-50">
+              <th className="py-3 px-3 text-left font-heading">Aspect</th>
+              <th className="py-3 px-3 text-left font-heading">Before Sep 9, 2026</th>
+              <th className="py-3 px-3 text-left font-heading">After</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">What carries the access level</td>
+              <td className="py-3 px-3">developer token at MCC level</td>
+              <td className="py-3 px-3">Google Cloud project</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Where you request an upgrade</td>
+              <td className="py-3 px-3">API Center in Google Ads</td>
+              <td className="py-3 px-3">Google Cloud Console</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Basic approval</td>
+              <td className="py-3 px-3">manual review, up to 5 business days</td>
+              <td className="py-3 px-3">automated, minutes after brand verification</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Standard approval</td>
+              <td className="py-3 px-3">manual audit</td>
+              <td className="py-3 px-3">manual audit, unchanged</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Brand verification</td>
+              <td className="py-3 px-3">optional accelerator</td>
+              <td className="py-3 px-3">prerequisite for new applications</td>
+            </tr>
+            <tr className="border-t border-gray-200">
+              <td className="py-3 px-3 font-medium">Developer token in calls</td>
+              <td className="py-3 px-3">required</td>
+              <td className="py-3 px-3">ignored</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        One last detail from the transition: applications started before September 9, 2026 were closed and have to be resubmitted through Cloud Console. If something of yours was sitting in Pending status back then, don&apos;t wait for an answer that isn&apos;t coming.
+      </p>
+
+      <h3 id="if-you-already-had-an-approved-token">If you already had an approved token</h3>
+      <p>
+        For anyone who already held an approved access level on a developer token before September 9, the transition didn&apos;t require a single step from you. Here&apos;s what happened:
       </p>
 
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
@@ -135,66 +157,74 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
             <div>
-              <strong>Be specific about the use case</strong> <span className="text-gray-500">— &quot;automated reporting&quot; is vague. &quot;Nightly budget pacing and performance checks across managed client accounts&quot; tells the reviewer exactly what you&apos;re building and why it needs production data.</span>
+              <strong>The level transferred automatically, based on the last 90 days of calls.</strong> <span className="text-gray-500">Google reviewed 90 days of API call logs and moved the token&apos;s approved level onto every Cloud project that had made calls with that token during that window. A project that hadn&apos;t been used in those 90 days got nothing.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
             <div>
-              <strong>Name the services you&apos;ll actually call</strong> <span className="text-gray-500">— reporting/GoogleAdsService for performance data, campaign and ad group management if you&apos;re pushing changes. If you don&apos;t know yet, say so honestly rather than listing everything to sound thorough.</span>
+              <strong>Re-linking to a different project no longer exists.</strong> <span className="text-gray-500">Google support used to be able to re-link an approved token onto a different Cloud project on request. As of September 9, that&apos;s gone — a new project has to request its level from scratch, on that project&apos;s own Google Ads API Overview page in Cloud Console.</span>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
             <div>
-              <strong>Use a business email on your own domain</strong> <span className="text-gray-500">— not a personal Gmail address. It&apos;s a small signal, but it matters when a reviewer is trying to establish that a real business is behind the application.</span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-            <div>
-              <strong>Be honest about internal tool vs. external users</strong> <span className="text-gray-500">— an internal automation script for your own agency&apos;s accounts is a different, simpler review than a tool you plan to sell to other advertisers. Say which one you&apos;re building.</span>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-            <div>
-              <strong>Describe the data flow in plain language</strong> <span className="text-gray-500">— where the data comes from (Google Ads), where it goes (your database, a dashboard, a spreadsheet), and who sees it. One or two sentences is enough; don&apos;t over-engineer the description.</span>
+              <strong>Pending applications were closed in the transition.</strong> <span className="text-gray-500">Anyone with a Basic application sitting in Pending had that application closed, and it has to be resubmitted through Cloud Console, including brand verification.</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-yellow-900 mb-1">Why the wait was the problem</p>
-        <p className="text-yellow-800 text-base mb-0">
-          Google officially quotes up to 5 business days for the Basic review. In practice that&apos;s a week of the status just sitting on Pending — no estimated date, no sign anyone has picked it up, no &quot;speed this up&quot; button. I put off applying for months for exactly this reason: Explorer covered my day-to-day work, and a week of uncertainty didn&apos;t feel worth it. The brand verification pilot in Step 4 is what changes that math.
+      <p>
+        I got an email from Google myself on September 14, 2026 saying my Basic level had been automatically transferred from my manager account onto three of my Google Cloud projects. I didn&apos;t have to do anything — the code kept working without a single change.
+      </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">What to do before 2027</p>
+        <ul className="text-blue-800 text-base mb-0 list-disc pl-5 space-y-1">
+          <li>The developer token is optional now and the API ignores it, but Google&apos;s email flags that upcoming Google Ads API releases, expected in the first half of 2027, won&apos;t accept it in calls at all any more. Pull it out of <code>google-ads.yaml</code> and your code before then and move to the updated client libraries that work without it.</li>
+          <li>The API Center page is deprecated. Historical data is still there for now, and Google expects to retire the page in the first half of 2027.</li>
+          <li>While the API Center exists, administrative and compliance notices go to the contact email set there. After it&apos;s retired, they go only to users holding the Owner or Editor role on the Cloud project — check the project&apos;s IAM page now to confirm the right person holds one of those two roles, or you&apos;ll miss the notice when that transition lands.</li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h2 id="prerequisites">Prerequisites</h2>
+      <p>
+        You need two things. The first is a Google Ads account, and I&apos;d make it a manager account (MCC) rather than a single client account. The reasoning is still practical, only the mechanism moved: the MCC is your entry point through the <code>login-customer-id</code> parameter, so one set of credentials reaches every account linked under it, with no per-client setup.
+      </p>
+      <p>
+        The second is a Google Cloud project, and it&apos;s now the main character. It&apos;s where you generate OAuth2 credentials (client ID and secret), where brand verification happens, and what gets assigned an access level. Creating one is free.
+      </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">From my own setup</p>
+        <p className="text-blue-800 text-base mb-0">
+          If you&apos;re building agency automation, keep everything on one Cloud project. All of my code, from nightly reporting to keyword research scripts, authenticates from the same project, so access level is one thing to track rather than something scattered across several. The moment a second project appears, so does the possibility of a script quietly running at Test level.
         </p>
       </div>
 
       <hr />
 
-      <h2 id="step-3-link-the-token-to-a-cloud-project">Step 3 — Link the token to a Cloud project</h2>
+      <h2 id="step-1-cloud-project">Step 1 — Your Cloud project now carries the access level</h2>
       <p>
-        For brand verification to count toward your token, Google needs to know which Cloud project belongs to which developer token. You&apos;d expect a form or a field for this — but per the{" "}
-        <a href="https://developers.google.com/google-ads/api/docs/api-policy/brand-verification#prerequisite" target="_blank" rel="noopener noreferrer" className="underline text-blue-700 font-medium">
-          official documentation
-        </a>
-        , the association happens by simply making any API call that uses your developer token together with OAuth credentials from that Cloud project. That single call ties the two together.
+        The first step isn&apos;t generating a token, it&apos;s working out which Cloud project actually sits behind your calls. If you&apos;ve used the Google Ads API before, that project already exists, because your OAuth credentials came out of it. You can read the project number from the client ID prefix, the part before the first dash.
       </p>
       <p>
-        The details that make this painless: the call can go through either the user authentication or the service account workflow, it can target a test or a production account, and it does not matter whether the call succeeds or fails. Your token&apos;s current access level doesn&apos;t matter either. The only thing that counts is that the token and the project&apos;s credentials show up in the same request.
+        A new project gets <strong>Test Account Access</strong>: it works only with test accounts you create yourself and sees no production data at all. Many projects then get <strong>Explorer Access</strong>, which does work against live accounts, but caps you at 2,880 operations a day and blocks the planning services (Keyword Planner), account creation, user management, and billing.
       </p>
 
-      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">You&apos;ve probably already done this</p>
-        <p className="text-blue-800 text-base mb-0">
-          If you tested your connection against a test account in Step 1 using your OAuth credentials, the association already happened without you noticing. If not, the simplest possible test call — listing the accounts under your MCC, say — does the job. If you run several Cloud projects, use the one your code actually calls from; that&apos;s the one worth verifying in the next step.
-        </p>
-      </div>
+      <figure className="my-6">
+        <Image src="/blog/google-ads-api-basic-access/api-center-token-explorer.webp" alt="API Center in the Google Ads manager account: masked developer token with a View token link and an Access level row showing Explorer Access" width={1690} height={400} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">The API Center back when the token still carried the level: masked developer token and Explorer Access. The page still exists today, but access levels are no longer changed from it.</figcaption>
+      </figure>
 
       <p>
-        That single call is also where the rest of the authentication chain — the developer token header, login-customer-id, and which OAuth2 flow you&apos;re running — has to be wired correctly, or nothing here matters before Basic Access even comes into it. I walk through that full chain, including the desktop-vs-web flow choice and the 7-day refresh token trap, in{" "}
+        Explorer is a perfectly decent entry ticket, and I ran a full nightly reporting stack across every client account on it for a year. It&apos;s also exactly where you first feel the ceiling, because any call to a service Explorer doesn&apos;t cover returns <code>DEVELOPER_TOKEN_NOT_APPROVED</code>. That error name is, incidentally, a leftover from the old system: the token decides nothing any more, but the message hasn&apos;t changed.
+      </p>
+      <p>
+        Before requesting an upgrade, use whatever level you have to confirm that authentication and basic connectivity work. If a call doesn&apos;t go through even here, the problem is your configuration, not your access level. That whole chain, including the choice between the desktop and web OAuth flows and the 7-day refresh token trap, is covered in{" "}
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-api-authentication-guide" } }} className="underline text-blue-700 font-medium">
           the Google Ads API authentication guide
         </Link>
@@ -203,38 +233,32 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
 
       <hr />
 
-      <h2 id="step-4-brand-verification-the-july-2026-pilot">Step 4 — Brand verification (the July 2026 pilot)</h2>
+      <h2 id="step-2-brand-verification">Step 2 — Brand verification, screen by screen</h2>
       <p>
-        This is the new part. On July 7, 2026, Anash P. Oommen of the Google Ads API Team announced on the{" "}
-        <a href="https://ads-developers.googleblog.com/2026/07/accelerate-google-ads-api-basic-access.html" target="_blank" rel="noopener noreferrer" className="underline text-blue-700 font-medium">
-          Google Ads Developer Blog
-        </a>{" "}
-        that developers with a pending Basic Access application can complete brand verification on their Cloud project and get reviewed &quot;in the next few hours.&quot; Google cited &quot;significant interest from our developer community for Google Ads API access&quot; as the reason for building the shortcut.
+        In July 2026 this step was optional, a way to speed up an application stuck in Pending. Today it&apos;s a prerequisite for new Basic and Standard applications. If you already have approved access, you&apos;re exempt and there&apos;s nothing to do.
       </p>
       <p>
-        Brand verification is part of the standard OAuth App verification process in Google Cloud Console and is self-service for most developers — you don&apos;t need to submit anything to a human or wait on a separate approval queue for it. It lives under the OAuth consent screen / Google Auth Platform → Branding section of your linked Cloud project.
+        Brand verification is part of the wider OAuth App verification process and, for most developers, it&apos;s self-service with no human review on that side. The screens below are from my own project, and the flow hasn&apos;t changed since July.
       </p>
 
-      <h3>The whole process, screen by screen</h3>
-
       <p>
-        <strong>1. Open the OAuth consent screen.</strong> In Google Cloud Console, select your project, then go to APIs and services → OAuth consent screen in the left menu. That drops you into the Google Auth Platform section of the console.
+        <strong>1. Open the OAuth consent screen.</strong> In Google Cloud Console, select your project, then APIs and services in the left menu, then OAuth consent screen. That drops you into the Google Auth Platform part of the console.
       </p>
       <figure className="my-6">
-        <Image src="/blog/google-ads-api-basic-access/verify-01-oauth-consent-menu.webp" alt="Google Cloud Console menu: APIs and services with the OAuth consent screen option highlighted" width={869} height={716} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/google-ads-api-basic-access/verify-01-oauth-consent-menu.webp" alt="Google Cloud Console menu: APIs and services with the OAuth consent screen option" width={869} height={716} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-xs text-gray-500 mt-2 text-center">The path: APIs and services → OAuth consent screen</figcaption>
       </figure>
 
       <p>
-        <strong>2. Click Get started if the platform isn&apos;t configured yet.</strong> If you&apos;ve never set up OAuth consent for this project, you&apos;ll land on an empty Overview screen with a Get started button.
+        <strong>2. Click Get started if the platform isn&apos;t configured.</strong> If you&apos;ve never set up OAuth consent for this project, you&apos;ll land on an empty Overview screen with a Get started button.
       </p>
       <figure className="my-6">
-        <Image src="/blog/google-ads-api-basic-access/verify-02-get-started.webp" alt="Google Auth Platform Overview screen showing the platform is not configured yet, with a Get started button" width={927} height={714} className="rounded-xl border border-gray-200 w-full h-auto" />
-        <figcaption className="text-xs text-gray-500 mt-2 text-center">Overview tab: Get started for first-time configuration</figcaption>
+        <Image src="/blog/google-ads-api-basic-access/verify-02-get-started.webp" alt="Google Auth Platform Overview screen showing the platform is not configured, with a Get started button" width={927} height={714} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Overview tab: Get started for the first configuration</figcaption>
       </figure>
 
       <p>
-        <strong>3. Fill in the project configuration.</strong> Four short sections — App Information (app name and support email), Audience, Contact Information, and Finish — then click Create.
+        <strong>3. Fill in the project configuration.</strong> Four short sections: App Information (app name and support email), Audience, Contact Information, and Finish, then Create.
       </p>
       <figure className="my-6">
         <Image src="/blog/google-ads-api-basic-access/verify-03-project-configuration.webp" alt="Project configuration wizard with App Information, Audience, Contact Information and Finish sections" width={927} height={922} className="rounded-xl border border-gray-200 w-full h-auto" />
@@ -242,7 +266,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
       </figure>
 
       <p>
-        <strong>4. Switch User type to External and publishing status to In production.</strong> On the Audience tab, if User type says Internal, click Make external. Google&apos;s documentation is explicit that for this review your User type must be External and publishing status In production — even if your tool is strictly internal. Pick In production in the dialog and confirm the Push to production prompt.
+        <strong>4. Switch User type to External and status to In production.</strong> On the Audience tab, if it says Internal, click Make external. Google&apos;s documentation is explicit that for this review the User type has to be External and the publishing status In production, even if your tool is purely internal. In the dialog, pick In production and confirm Push to production.
       </p>
       <figure className="my-6">
         <Image src="/blog/google-ads-api-basic-access/verify-04-user-type-internal.webp" alt="User type section showing Internal with a Make external button" width={608} height={326} className="rounded-xl border border-gray-200 w-full h-auto" />
@@ -257,16 +281,23 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
         <figcaption className="text-xs text-gray-500 mt-2 text-center">Confirm: Push to production → Confirm</figcaption>
       </figure>
 
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">This is the same screen that kills refresh tokens</p>
+        <p className="text-yellow-800 text-base mb-0">
+          Setting the publishing status to In production isn&apos;t just a formality for verification. If the project stays in Testing mode, refresh tokens issued from it die after 7 days and your scripts quietly stop working. That mistake once cost me a dead Merchant Center token in the middle of a nightly job. Since you&apos;re here anyway, this step fixes that too.
+        </p>
+      </div>
+
       <p>
-        <strong>5. Complete the Branding tab.</strong> This is the information users see on the consent screen: your application home page, privacy policy and terms of service links, authorized domains, and a developer contact email. Click Save.
+        <strong>5. Fill in the Branding tab.</strong> This is what users see on the consent screen: your app&apos;s home page, links to your privacy policy and terms, authorized domains, and a contact email. Click Save.
       </p>
       <figure className="my-6">
         <Image src="/blog/google-ads-api-basic-access/verify-07-branding-form.webp" alt="Branding tab with App domain, Authorised domains and Developer contact information fields" width={875} height={1033} className="rounded-xl border border-gray-200 w-full h-auto" />
-        <figcaption className="text-xs text-gray-500 mt-2 text-center">Branding form: domain, privacy policy, terms of service, contact</figcaption>
+        <figcaption className="text-xs text-gray-500 mt-2 text-center">Branding form: domain, privacy policy, terms, contact</figcaption>
       </figure>
 
       <p>
-        <strong>6. Click Verify branding.</strong> The button sits in the top-right corner of the Branding tab, inside the Verification status card.
+        <strong>6. Click Verify branding.</strong> The button sits in the top right of the Branding tab, in the Verification status card.
       </p>
       <figure className="my-6">
         <Image src="/blog/google-ads-api-basic-access/verify-08-verify-branding-button.webp" alt="Verification status card with the Verify branding button" width={1070} height={522} className="rounded-xl border border-gray-200 w-full h-auto" />
@@ -274,7 +305,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
       </figure>
 
       <p>
-        <strong>7. Wait a few minutes.</strong> Verification is automated, and the interface itself says it can take up to 5 minutes. If an error comes back, fix what it points at — usually a domain or link issue — and run it again.
+        <strong>7. Wait a few minutes.</strong> Verification is automatic and the interface says it can take up to 5 minutes. If it errors out, fix whatever it asks for (usually the domains or the links) and run it again.
       </p>
       <figure className="my-6">
         <Image src="/blog/google-ads-api-basic-access/verify-09-verification-in-progress.webp" alt="Verification in progress status noting it could take up to 5 minutes" width={1114} height={495} className="rounded-xl border border-gray-200 w-full h-auto" />
@@ -282,95 +313,177 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
       </figure>
 
       <p>
-        <strong>8. Publish the verified branding.</strong> Once verification succeeds, click Publish branding. Don&apos;t sit on this one — the verified result expires in 7 days if you don&apos;t publish it.
+        <strong>8. Publish the verified branding.</strong> Once verification passes, click Publish branding. Don&apos;t sit on this: a verified result expires after 7 days if you don&apos;t publish it.
       </p>
       <figure className="my-6">
-        <Image src="/blog/google-ads-api-basic-access/verify-10-publish-branding.webp" alt="Verification status showing branding has been verified, with a Publish branding button and a note about the 7-day expiry" width={1165} height={526} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/google-ads-api-basic-access/verify-10-publish-branding.webp" alt="Verification status showing branding has been verified, with a Publish branding button and a note about 7-day expiry" width={1165} height={526} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-xs text-gray-500 mt-2 text-center">Publish branding within 7 days of verification</figcaption>
       </figure>
 
       <p>
-        <strong>9. Done: the project is brand verified.</strong> The status card now shows a green confirmation that your branding is verified and being shown to users. This is the signal Google&apos;s team sees when it picks up your pending Basic Access application.
+        <strong>9. Done: the project is brand verified.</strong> The status card now shows a green confirmation that branding is verified and visible to users.
       </p>
       <figure className="my-6">
-        <Image src="/blog/google-ads-api-basic-access/verify-11-branding-verified.webp" alt="Verification status with a green confirmation that branding has been verified and is shown to users" width={1141} height={568} className="rounded-xl border border-gray-200 w-full h-auto" />
+        <Image src="/blog/google-ads-api-basic-access/verify-11-branding-verified.webp" alt="Verification status with a green confirmation that branding has been verified and shown to users" width={1141} height={568} className="rounded-xl border border-gray-200 w-full h-auto" />
         <figcaption className="text-xs text-gray-500 mt-2 text-center">Final status: branding verified</figcaption>
       </figure>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-5 my-6 shadow-card">
-        <p className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-semibold">Who can skip this step</p>
-        <ul className="text-base text-gray-600 mb-0">
-          <li>If your token already has Basic or Standard access approved — you don&apos;t need it, this only helps pending applications.</li>
-          <li>If your Cloud project was already verified for a different Google API (Search Console, Analytics, whatever) — that verification carries over, you don&apos;t repeat it.</li>
-          <li>If you run several Cloud projects — verifying just one of them is enough.</li>
-        </ul>
-      </div>
+      <p>
+        If your Cloud project already went through brand verification for any other Google API, you don&apos;t need to repeat it. And if you have several Cloud projects, verify the one you actually authenticate from, since that&apos;s the project the access level gets assigned to.
+      </p>
 
-      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-blue-900 mb-1">It&apos;s optional</p>
-        <p className="text-blue-800 text-base mb-0">
-          Brand verification isn&apos;t a requirement to get Basic Access — it&apos;s a trust signal that helps Google&apos;s review move faster. If your application is sitting in Pending status right now, it&apos;s a few minutes of setup for a review that could otherwise take days. If you already have an approved token, there&apos;s nothing to do here.
-        </p>
+      <hr />
+
+      <h2 id="step-3-request-basic">Step 3 — Requesting Basic access</h2>
+      <p>
+        With the project verified, the upgrade is requested in Google Cloud Console, on that project&apos;s Google Ads API page. Google says Basic approval is now automated and arrives within minutes of brand verification. That&apos;s a real difference from the old process, where a manual review officially took up to 5 business days with no visibility into where you stood.
+      </p>
+      <p>
+        What hasn&apos;t changed is what you should write about yourself. Even with an automated decision, your use case description stays on the record and starts to matter the moment anything gets escalated to a human. Five things worth doing properly:
+      </p>
+
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+            <div>
+              <strong>Be specific about the use case</strong> <span className="text-gray-500">— &quot;automation&quot; isn&apos;t enough. Write down exactly what you do: daily performance reports for client accounts, automated alerts on disapproved ads, budget management via script. Specificity helps even when the decision is automated.</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <div>
+              <strong>Name the services you call</strong> <span className="text-gray-500">— reporting, campaign management, budget management. Google wants to see that you understand what you&apos;re asking for, not a generic &quot;access to data.&quot;</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <div>
+              <strong>Use a business email on your own domain</strong> <span className="text-gray-500">— not a free Gmail or Yahoo account. Google recommends this itself, and specifically a role-based address like info@company.com, so correspondence doesn&apos;t depend on one person.</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <div>
+              <strong>Be honest about whether it&apos;s an internal tool or a third-party service</strong> <span className="text-gray-500">— if you&apos;re building only for your own agency and your own clients under one MCC, say so. This distinction later decides whether RMF applies to you when you go for Standard, covered below.</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <div>
+              <strong>Check that your company URL is correct and the site loads</strong> <span className="text-gray-500">— the review includes opening your website. Make sure the URL field has no typo, that the site returns a 200, and that whatever page a reviewer lands on can be read in English. This sounds trivial right up until it becomes the reason an application comes back.</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <hr />
 
-      <h2 id="what-basic-access-gives-you-and-what-it-still-doesnt">What Basic Access gives you — and what it still doesn&apos;t</h2>
+      <h2 id="if-it-comes-back">If your application comes back for more information</h2>
       <p>
-        Once approved, you get the API&apos;s full feature set against every production account under your manager account, up to 15,000 operations a day. That includes exactly what Explorer excludes: planning tools (Keyword Planner calls for keyword ideas and volume), account creation, and billing services. My day-to-day stack — reporting that generates itself every morning, pacing, performance and disapproval monitoring across all accounts — already runs at Explorer level. For a solo operator watching ten client accounts, Basic&apos;s daily cap is not something you&apos;ll bump into.
+        Mine did. It went in at the start of August, came back for more information, and approval only landed after a second round, in September. That&apos;s not a disaster, but it is where most of the time gets lost if you react the wrong way.
       </p>
       <p>
-        Keyword Planner was the first thing that hit the ceiling for me: calls for keyword ideas and search volume returned <code>DEVELOPER_TOKEN_NOT_APPROVED</code>, because planning tools simply aren&apos;t part of the Explorer level. Until Basic comes through, I estimate volume from Search Console impression data plus benchmark CPCs, which is close enough for planning decisions. But if keyword research through the API matters to your workflow, Basic Access isn&apos;t optional — it&apos;s the requirement.
+        Three things I took away from that round:
+      </p>
+      <p>
+        <strong>Don&apos;t resubmit the form with the same answers.</strong> The message you get says so explicitly, and it means it literally: you&apos;ll receive the same reply a second time. Answer in the existing thread, on the same case number.
+      </p>
+      <p>
+        <strong>Check where the correspondence actually landed.</strong> In my case the reply went to an address that wasn&apos;t the developer contact email configured on the account, so it sat for weeks in a mailbox I don&apos;t check daily. Line those two addresses up before you even apply.
+      </p>
+      <p>
+        <strong>Offer a detailed description of your business model.</strong> The follow-up message usually offers this as an alternative. Take it: who you are, who your clients are, where revenue comes from, what the tool does, who uses it, how many operations a day you expect, and why the current ceiling gets in the way. That&apos;s a few paragraphs, not an essay, but concrete numbers are what move it.
       </p>
 
-      <div className="overflow-x-auto my-6">
-        <table className="w-full border-collapse text-left text-sm">
-          <thead>
-            <tr className="border-b-2 border-gray-900 bg-gray-50">
-              <th className="py-3 px-3 font-heading font-semibold">Access level</th>
-              <th className="py-3 px-3 font-heading font-semibold">What it&apos;s for</th>
-              <th className="py-3 px-3 font-heading font-semibold">Limit</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Test Account</td>
-              <td className="py-3 px-3">Building and debugging against test accounts only — the default for a new token</td>
-              <td className="py-3 px-3">No production account access</td>
-            </tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">Explorer</td>
-              <td className="py-3 px-3">Production accounts, minus planning tools, account creation, user management and billing — often granted automatically</td>
-              <td className="py-3 px-3">2,880 operations/day on production</td>
-            </tr>
-            <tr className="border-b border-gray-200">
-              <td className="py-3 px-3 font-medium">Basic</td>
-              <td className="py-3 px-3">Full feature set: reporting, campaign management, planning tools, automation on real accounts</td>
-              <td className="py-3 px-3">15,000 operations/day — application, review up to 5 business days</td>
-            </tr>
-            <tr className="border-b border-gray-200 bg-gray-50/50">
-              <td className="py-3 px-3 font-medium">Standard</td>
-              <td className="py-3 px-3">High-volume tools, large-scale management platforms — requires Basic first</td>
-              <td className="py-3 px-3">Daily cap removed for most services — separate application</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <hr />
+
+      <h2 id="what-basic-access-gives-you-and-what-it-still-doesnt">What Basic Access gives you, and what it still doesn&apos;t</h2>
+      <p>
+        Basic gives you full API functionality across every client account you reach, up to 15,000 operations a day. That includes what Explorer explicitly leaves out: the planning services, account creation, user management, and billing.
+      </p>
+      <p>
+        The number itself isn&apos;t what hurts most on Explorer. The 2,880 ceiling is <strong>shared across every account</strong> under your manager account. One larger restructure for one client eats the daily quota and blocks work on everyone else until midnight. Basic takes that off the table.
+      </p>
+      <p>
+        Keyword Planner was the first thing to hit the ceiling for me. Here&apos;s what actually changed, the same call before and after:
+      </p>
+
+      <pre className="bg-slate-900 text-slate-100 rounded-xl p-4 md:p-5 my-6 overflow-x-auto text-sm leading-relaxed">
+{`# Explorer
+GenerateKeywordIdeas  ->  DEVELOPER_TOKEN_NOT_APPROVED
+   "This method is not allowed for use with explorer access."
+
+# Basic
+GenerateKeywordIdeas  ->  599 keyword ideas
+   used motorcycles     12,100/mo   comp=LOW   bid  7.84-13.49
+   motorcycle helmets    5,400/mo   comp=LOW   bid  3.49-22.82
+   riding gear           2,900/mo   comp=LOW   bid  3.03-24.04`}
+      </pre>
 
       <p>
-        If you&apos;re running automation for your own agency&apos;s accounts, Basic Access is almost certainly all you&apos;ll ever need — Standard exists for tools built to serve large numbers of external advertisers at high volume, which is a different problem than one MCC and a handful of client accounts.
+        Two seed terms, 599 ideas with monthly volume, competition level, and top-of-page bid ranges. Alongside it, <code>GenerateKeywordHistoricalMetrics</code> works too, returning volume month by month for twelve months back. For seasonal clients that&apos;s a budget calendar you simply couldn&apos;t pull programmatically before: in one account, one term swings 2.2x between the year&apos;s peak and trough, another 4.3x. Two different calendars, same advertiser.
+      </p>
+      <p>
+        While Basic was pending, I estimated volume from Search Console data and the platform&apos;s own benchmark CPC. That&apos;s a perfectly usable workaround and I&apos;d recommend it to anyone waiting, but it is a workaround.
       </p>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
-        <p className="font-semibold text-yellow-900 mb-1">Two things to check in your own code, not in this guide</p>
+        <p className="font-semibold text-yellow-900 mb-1">What Basic still doesn&apos;t unlock</p>
+        <p className="text-yellow-800 text-base mb-0">
+          <code>ReachPlanService</code> — reach planning for YouTube and Display (reach curves, frequency, CPM projections) — stays closed even on Basic. The call returns <code>ACTION_NOT_PERMITTED</code> with &quot;not authorized to call ReachPlanningService.&quot; That&apos;s a separate allowlist, not something that ships with an access level, so if API-driven video planning matters to you, budget for a separate request.
+        </p>
+      </div>
+
+      <p>
+        My day-to-day stack — reporting that generates itself every morning, pacing, performance, and disapproval monitoring across every account — ran fine on Explorer too. The same mechanism handles automated offline conversion uploads for some clients, which I wrote about separately in{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "offline-conversion-import-b2b" } }} className="underline text-blue-700 font-medium">
+          the offline conversion import guide
+        </Link>. For one person running dozens of accounts, this isn&apos;t a convenience. It&apos;s the only realistic way to keep monitoring at agency level rather than at whatever-you-manage-to-open-in-a-browser level.
+      </p>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-yellow-900 mb-1">Two things to check in your code, not in this guide</p>
         <p className="text-yellow-800 text-base mb-2">
-          The developer token this guide walks through works against Google Ads accounts, not the Merchant Center product feed. But if the same automation stack also touches product data or manages Search campaigns through the API, two things changed in August and September 2026 that are worth checking before something quietly breaks.
+          The access described here applies to Google Ads accounts, not the Merchant Center product feed. But if the same automation stack also pulls product data or manages Search campaigns through the API, two things changed in August and September 2026 and are worth checking before something starts failing quietly.
         </p>
         <ul className="text-yellow-800 text-base mb-0 list-disc pl-5 space-y-1">
-          <li><strong>August 18, 2026:</strong> Content API for Shopping was permanently shut down. If any part of your pipeline still calls that older API for product feed data, it needs to move to the Merchant API, or your product data goes stale and starts landing in disapproval.</li>
-          <li><strong>September 2026:</strong> Google is removing language targeting from Search campaigns. If your Google Ads API code sets or reads a language criterion (CampaignCriterion) on Search campaigns, that setting no longer affects delivery — Google now matches on ad and landing page language plus the languages a user knows. For Performance Max, language targeting still applies, but only to YouTube, Display, Discover and Gmail, not the Search Network. Single-language-per-campaign structures keep working as before; the criterion itself just stops doing anything on Search.</li>
+          <li><strong>August 18, 2026:</strong> the Content API for Shopping was permanently shut down. If any part of your automation still calls that older API for product feeds, it has to move to the Merchant API, or product data goes stale and into disapproval.</li>
+          <li><strong>September 2026:</strong> Google removed language targeting at the Search campaign level. If your code sets or reads the language criterion (CampaignCriterion) on Search campaigns through the Google Ads API, that setting no longer affects delivery — Google now matches on ad language, landing page language, and the languages a user understands. For PMax, language still applies, but only to YouTube, Display, Discover and Gmail, not the Search Network. One-language-per-campaign structures keep working normally; the language criterion on Search just no longer does anything.</li>
         </ul>
       </div>
+
+      <hr />
+
+      <h2 id="standard-access">Standard Access, and when it&apos;s actually worth asking</h2>
+      <p>
+        Standard removes the total daily ceiling. Individual services keep their own rate limits, but the operation count is no longer capped. There are five conditions, and they&apos;re worth knowing up front, because two of them are routinely missed.
+      </p>
+      <p>
+        The first is already holding Basic. The second is compliance with <strong>RMF</strong> (Required Minimum Functionality), a list of features your tool has to implement. The third is a manual audit of your application, for which Google quotes around 10 business days. The fourth is demo access, if external users operate your tool. The fifth is demonstrated volume.
+      </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
+        <p className="font-semibold text-blue-900 mb-1">RMF probably doesn&apos;t apply to you</p>
+        <p className="text-blue-800 text-base mb-0">
+          Google exempts the &quot;Internal Use Only&quot; category from every RMF requirement. If you&apos;re building strictly for your own agency and your own clients, and you don&apos;t sell it or expose it to third parties, the Creation, Management and Reporting columns of the RMF table read N/A for you. Reporting-only tools get their own, lighter exemption. Which means you don&apos;t have to build features you don&apos;t need just to pass an audit.
+        </p>
+      </div>
+
+      <p>
+        The fifth condition is the one that sinks most requests, and it&apos;s phrased without any hedging:
+      </p>
+
+      <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600 my-6">
+        If your volume does not consistently near the 15,000 daily limit, your request will be denied.
+      </blockquote>
+
+      <p>
+        In other words, Standard isn&apos;t a reward for seriousness. It&apos;s a fix for a bottleneck you have to prove you have. For an agency running ten to thirty accounts with nightly reporting, daily consumption sits in the hundreds of operations, nowhere near the ceiling. The request would be denied, and a denial stays on the record.
+      </p>
+      <p>
+        Practical advice: measure before you ask. Consumption is visible in Google Cloud Console, under the metrics for the Google Ads API. If you&apos;re not approaching the ceiling, Basic is the right level, and the RMF exemption doesn&apos;t expire, so you can ask for Standard the day your volume genuinely justifies it.
+      </p>
 
       <hr />
 
@@ -385,10 +498,18 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "How long does the Basic Access review take now?",
+                name: "Do I still need a developer token for the Google Ads API?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "If your application is Pending and you complete brand verification on your linked Google Cloud project, Google says review happens within a few hours, per the July 7, 2026 pilot announcement. Without brand verification, the standard process applies — officially up to 5 business days, with limited status visibility in the meantime."
+                  text: "No. Google retired developer tokens on September 9, 2026. If your code still sends one, calls keep working, but Google ignores the token. Access level is now carried by the Google Cloud project your OAuth credentials come from. The practical consequence is that credentials from a different Cloud project drop to Test level and can't see production accounts."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "How long does Basic Access approval take now?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Google says Basic approval is now automated and arrives within minutes of completing brand verification on your Cloud project. Standard still goes through a manual audit, for which Google quotes around 10 business days. If your application does come back for more information, reply in the existing thread rather than resubmitting the form with the same answers."
                 }
               },
               {
@@ -396,7 +517,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
                 name: "Is brand verification mandatory to get Basic Access?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "No. Brand verification is optional — it's a trust signal that can speed up review for a pending application. Developers who already have an approved developer token don't need to do anything."
+                  text: "For new Basic and Standard applications it is, which is a change from July 2026 when it was an optional accelerator. Anyone who already holds approved access is exempt. Verify the Cloud project you actually authenticate from, and if that project was already verified for another Google API, you don't need to repeat it."
                 }
               },
               {
@@ -404,7 +525,15 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
                 name: "What's the difference between Test, Explorer, Basic, and Standard access?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "There are four levels. Test Account Access is the default for a new token and works only against test accounts. Explorer Access is often granted automatically: it works against production accounts (2,880 operations per day) but excludes planning tools, account creation and billing services. Basic Access requires an application and brings the full feature set at 15,000 operations per day, which covers most agency and internal automation use cases. Standard Access is a separate, later application for high-volume tools that removes the daily cap for most services."
+                  text: "There are four levels, and all of them are now assigned to a Google Cloud project. Test Account Access is the default for a new project and works only with test accounts. Explorer Access works against production accounts at 2,880 operations a day, but without the planning services, account creation, user management, or billing. Basic Access brings full functionality at 15,000 operations a day, enough for most agency automation. Standard Access removes the total daily cap, while individual services keep their own rate limits."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Does Basic Access unlock every service?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Not every one. Basic unlocks the planning services such as Keyword Planner, plus account creation, user management and billing. But ReachPlanService, the reach planning for YouTube and Display, stays closed even on Basic and returns ACTION_NOT_PERMITTED. That's a separate allowlist that doesn't ship with an access level."
                 }
               },
               {
@@ -412,7 +541,15 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
                 name: "What if I don't have a Google Cloud project yet?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "You need one anyway to generate the OAuth2 client ID and secret the Google Ads API uses for authentication, so creating a project isn't extra work created by the verification pilot — it's a normal part of setting up API access. Google Cloud's free tier is sufficient; the Ads API doesn't require billing to be enabled."
+                  text: "Creating a Google Cloud project is free and takes a few minutes in Google Cloud Console. You need one anyway to generate OAuth2 credentials (client ID and secret), and since September 2026 it also carries your access level, so it's the first step rather than an extra one."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Does one Cloud project cover all my client accounts?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. The access level is assigned to the Cloud project and applies to every account you reach through it, with the manager account specified via the login-customer-id parameter. Adding a new client just means linking the account under your MCC, with no new application. The reverse is the warning: if a script uses credentials from a different Cloud project, it runs at that project's level, not your main one."
                 }
               },
               {
@@ -420,23 +557,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
                 name: "Do I need to know how to code to use the Google Ads API?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "You need someone (or something) writing the scripts that call it — but that no longer has to mean a developer on staff. Google publishes official client libraries in several languages, and AI coding assistants can write and debug most of the reporting and automation scripts an agency typically needs, once you know what the API can do and can describe the use case clearly."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "Can one developer token cover all my client accounts?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, as long as the token is generated at the manager (MCC) account level and the client accounts are linked underneath it. One approved token gives API access to every account under that manager account — you don't need a separate token per client."
-                }
-              },
-              {
-                "@type": "Question",
-                name: "If I have multiple Google Cloud projects, do I need to verify all of them?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "No. Verifying one project is enough, and if any of your projects were already verified for a different Google API, that verification carries over — you don't need to repeat the process for the Ads API specifically."
+                  text: "A basic understanding helps, but you don't need to be a programmer in the classic sense. Google publishes official client libraries for several languages that simplify the calls, and today AI agents like Claude can write and maintain most reporting and automation scripts, given clear requirements from you about what they should do."
                 }
               }
             ]
@@ -446,11 +567,21 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
 
       <details className="bg-white border-2 border-gray-200 rounded-xl group my-3" open>
         <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          How long does the Basic Access review take now?
+          Do I still need a developer token for the Google Ads API?
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          If your application is Pending and you complete brand verification on your linked Google Cloud project, Google says review happens within a few hours, per the July 7, 2026 pilot announcement. Without brand verification, the standard process applies — officially up to 5 business days, with limited status visibility in the meantime.
+          No. Google retired developer tokens on September 9, 2026. If your code still sends one, calls keep working, but Google ignores the token. Access level is now carried by the Google Cloud project your OAuth credentials come from. The practical consequence is that credentials from a different Cloud project drop to Test level and can&apos;t see production accounts.
+        </div>
+      </details>
+
+      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
+        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+          How long does Basic Access approval take now?
+          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+        </summary>
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+          Google says Basic approval is now automated and arrives within minutes of completing brand verification on your Cloud project. Standard still goes through a manual audit, for which Google quotes around 10 business days. If your application does come back for more information, reply in the existing thread rather than resubmitting the form with the same answers.
         </div>
       </details>
 
@@ -460,7 +591,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          No. Brand verification is optional — it&apos;s a trust signal that can speed up review for a pending application. Developers who already have an approved developer token don&apos;t need to do anything.
+          For new Basic and Standard applications it is, which is a change from July 2026 when it was an optional accelerator. Anyone who already holds approved access is exempt. Verify the Cloud project you actually authenticate from, and if that project was already verified for another Google API, you don&apos;t need to repeat it.
         </div>
       </details>
 
@@ -470,7 +601,17 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          There are four levels. Test Account Access is the default for a new token and works only against test accounts. Explorer Access is often granted automatically: it works against production accounts (2,880 operations per day) but excludes planning tools, account creation and billing services. Basic Access requires an application and brings the full feature set at 15,000 operations per day, which covers most agency and internal automation use cases. Standard Access is a separate, later application for high-volume tools that removes the daily cap for most services.
+          There are four levels, and all of them are now assigned to a Google Cloud project. Test Account Access is the default for a new project and works only with test accounts. Explorer Access works against production accounts at 2,880 operations a day, but without the planning services, account creation, user management, or billing. Basic Access brings full functionality at 15,000 operations a day, enough for most agency automation. Standard Access removes the total daily cap, while individual services keep their own rate limits.
+        </div>
+      </details>
+
+      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
+        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+          Does Basic Access unlock every service?
+          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+        </summary>
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+          Not every one. Basic unlocks the planning services such as Keyword Planner, plus account creation, user management and billing. But ReachPlanService, the reach planning for YouTube and Display, stays closed even on Basic and returns ACTION_NOT_PERMITTED. That&apos;s a separate allowlist that doesn&apos;t ship with an access level.
         </div>
       </details>
 
@@ -480,7 +621,17 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          You need one anyway to generate the OAuth2 client ID and secret the Google Ads API uses for authentication, so creating a project isn&apos;t extra work created by the verification pilot — it&apos;s a normal part of setting up API access. Google Cloud&apos;s free tier is sufficient; the Ads API doesn&apos;t require billing to be enabled.
+          Creating a Google Cloud project is free and takes a few minutes in Google Cloud Console. You need one anyway to generate OAuth2 credentials (client ID and secret), and since September 2026 it also carries your access level, so it&apos;s the first step rather than an extra one.
+        </div>
+      </details>
+
+      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
+        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
+          Does one Cloud project cover all my client accounts?
+          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
+        </summary>
+        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
+          Yes. The access level is assigned to the Cloud project and applies to every account you reach through it, with the manager account specified via the login-customer-id parameter. Adding a new client just means linking the account under your MCC, with no new application. The reverse is the warning: if a script uses credentials from a different Cloud project, it runs at that project&apos;s level, not your main one.
         </div>
       </details>
 
@@ -490,27 +641,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
         </summary>
         <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          You need someone (or something) writing the scripts that call it — but that no longer has to mean a developer on staff. Google publishes official client libraries in several languages, and AI coding assistants can write and debug most of the reporting and automation scripts an agency typically needs, once you know what the API can do and can describe the use case clearly.
-        </div>
-      </details>
-
-      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
-        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          Can one developer token cover all my client accounts?
-          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
-        </summary>
-        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          Yes, as long as the token is generated at the manager (MCC) account level and the client accounts are linked underneath it. One approved token gives API access to every account under that manager account — you don&apos;t need a separate token per client.
-        </div>
-      </details>
-
-      <details className="bg-white border-2 border-gray-200 rounded-xl group my-3">
-        <summary className="cursor-pointer p-5 font-heading font-semibold list-none flex items-center justify-between hover:bg-gray-50 rounded-xl">
-          If I have multiple Google Cloud projects, do I need to verify all of them?
-          <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
-        </summary>
-        <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-          No. Verifying one project is enough, and if any of your projects were already verified for a different Google API, that verification carries over — you don&apos;t need to repeat the process for the Ads API specifically.
+          A basic understanding helps, but you don&apos;t need to be a programmer in the classic sense. Google publishes official client libraries for several languages that simplify the calls, and today AI agents like Claude can write and maintain most reporting and automation scripts, given clear requirements from you about what they should do.
         </div>
       </details>
 
@@ -521,7 +652,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
           Want API-driven monitoring for your accounts?
         </p>
         <p className="text-slate-300 text-base mb-5 max-w-xl mx-auto">
-          I set up the exact kind of automation described in this guide for client accounts — nightly budget pacing checks, performance pulls, disapproval alerts, search-term mining — all running on top of an approved Google Ads API developer token.
+          I set up API access, the Cloud project, and the nightly automation described in this guide — budget pacing checks, performance pulls, disapproval alerts, search-term mining — for agencies and teams running multiple Google Ads accounts under one manager account.
         </p>
         <Link href="/kontakt" className="btn-secondary inline-block">
           Schedule a free consultation
@@ -552,7 +683,7 @@ export default function GoogleAdsApiBasicAccessGuidePost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: July 11, 2026
+        Last updated: September 17, 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">
