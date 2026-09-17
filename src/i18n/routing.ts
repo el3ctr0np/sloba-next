@@ -112,6 +112,13 @@ export const routing = defineRouting({
       en: "/glossary/[term]"
     },
 
+    // Industrije. Talas 5, 17.9.2026: samo hub, pod-stranice (npr. dijagnostika)
+    // tek kad postoji nalaz iz vise od jednog naloga.
+    "/industrije/medicina": {
+      sr: "/industrije/medicina",
+      en: "/industries/healthcare"
+    },
+
     // Privacy Policy
     "/privatnost": {
       sr: "/privatnost",

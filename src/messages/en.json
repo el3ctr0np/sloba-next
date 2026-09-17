@@ -59,7 +59,8 @@
     "industries": {
       "ecommerce": "Google Ads for eCommerce",
       "b2b": "Google Ads for B2B",
-      "saas": "Google Ads for SaaS"
+      "saas": "Google Ads for SaaS",
+      "healthcare": "Google Ads for Healthcare"
     },
     "resources": {
       "blog": "Blog / Google Ads Guide",

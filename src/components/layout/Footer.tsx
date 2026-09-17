@@ -17,7 +17,8 @@ export function Footer() {
     industrije: [
       { label: t("industries.ecommerce"), href: "/usluge/google-ads-za-ecommerce" as const },
       { label: t("industries.b2b"), href: "/usluge/google-ads-za-b2b" as const },
-      { label: t("industries.saas"), href: "/usluge/google-ads-za-saas" as const }
+      { label: t("industries.saas"), href: "/usluge/google-ads-za-saas" as const },
+      { label: t("industries.healthcare"), href: "/industrije/medicina" as const }
     ],
     resursi: [
       { label: t("resources.blog"), href: "/blog" as const },

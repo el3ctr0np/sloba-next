@@ -36,6 +36,7 @@ const routeLastmod: Record<string, string> = {
   "/resursi/ga4-framework": "2026-08-01",
   "/resursi/pmax-check": "2026-08-30",
   "/resursi/budzet-kalkulator": "2026-07-12",
+  "/industrije/medicina": "2026-09-17",
 };
 
 // Build blog lastmod map dynamically from posts/index.tsx (single source of truth)

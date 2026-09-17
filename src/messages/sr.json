@@ -59,7 +59,8 @@
     "industries": {
       "ecommerce": "Google Ads za eCommerce",
       "b2b": "Google Ads za B2B",
-      "saas": "Google Ads za SaaS"
+      "saas": "Google Ads za SaaS",
+      "healthcare": "Google Ads za medicinu"
     },
     "resources": {
       "blog": "Blog / Google Ads Vodič",
