@@ -526,6 +526,10 @@ export default function GoogleAdsAuditGuideEN() {
         For a detailed guide on remarketing strategies and audience segmentation, see: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-guide" } }}>Remarketing guide for Google Ads</Link>.
       </p>
 
+      <p>
+        One exception worth flagging in this category: healthcare accounts can&apos;t rely on any of the above audiences at all. Health is one of Google&apos;s sensitive interest categories, so remarketing, customer match, and lookalike audiences are off the table by policy, not by choice. I cover what that changes about the rest of the audit on the <Link href="/industrije/medicina">Google Ads for healthcare page</Link>.
+      </p>
+
       <hr />
 
       <h2 id="category-7-bidding-strategy">Category 7: Bidding strategy</h2>

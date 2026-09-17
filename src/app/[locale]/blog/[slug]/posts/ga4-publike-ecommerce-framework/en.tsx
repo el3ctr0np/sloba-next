@@ -752,6 +752,10 @@ export default function GA4AudienceFrameworkEN() {
         If you take one action from this post, make it this: build the lifecycle and intent lists today and let them fill while you work on something else. In two to four weeks you have a first-party data layer no platform update can take away - and campaigns that know exactly who they are talking to.
       </p>
 
+      <p>
+        For what this kind of audience-and-PMax structure looks like on a live eCommerce account, see the <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "mobelaris" } }}>Mobelaris case study</Link> (a luxury furniture retailer consolidated from 300 to 90 campaigns) and the <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "designerglasses" } }}>DesignerGlasses case study</Link> (a designer eyewear retailer built on a brand-by-brand PMax structure).
+      </p>
+
       {/* CTA block */}
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card text-center">
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">

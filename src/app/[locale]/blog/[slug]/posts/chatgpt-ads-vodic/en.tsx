@@ -420,6 +420,10 @@ export default function ChatGptAdsGuideEN() {
         On the accounts I manage, in the test phase, I&apos;m already seeing CPC and impression volume for a handful of industries. I&apos;m not publishing the actual figures - the sample isn&apos;t big enough yet to draw a conclusion from it.
       </p>
 
+      <p>
+        For the demand side of the question - how many people are actually searching for this in the first place, not just how ads perform - I pulled the raw Keyword Planner numbers separately: <Link href={{ pathname: "/insights/[slug]", params: { slug: "chatgpt-ads-search-demand-2026" } }}>ChatGPT Ads searches rose at least 13x in a year (US/UK/DE)</Link>, part of the <Link href="/insights">Insights</Link> section where every number is sourced.
+      </p>
+
       <hr />
 
       <h2 id="should-you-test">Should you test it</h2>

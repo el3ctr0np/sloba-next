@@ -494,9 +494,18 @@ export default async function AboutPage({ params }: Props) {
           </h2>
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             {locale === "en" ? (
-              <p>
-                My longest collaborations are with clients who read reports the right way: the ones I can talk to transparently about everything — plans, finances, business decisions. When you go deep enough into a project and the conversations stop being surface-level, those clients stay for years. In this industry, that&apos;s genuinely rare.
-              </p>
+              <>
+                <p>
+                  My longest collaborations are with clients who read reports the right way: the ones I can talk to transparently about everything — plans, finances, business decisions. When you go deep enough into a project and the conversations stop being surface-level, those clients stay for years. In this industry, that&apos;s genuinely rare.
+                </p>
+                <p>
+                  That same openness is what makes it possible to rebuild an account from scratch instead of just tweaking it. The{" "}
+                  <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "ankibuddy" } }} className="underline">
+                    AnkiBuddy case study
+                  </Link>{" "}
+                  covers exactly that for a SaaS EdTech client: fixing broken conversion tracking from the ground up, then precision geo-targeting medical faculties across the DACH region.
+                </p>
+              </>
             ) : (
               <p>
                 Najduže saradnje ostvarujem sa klijentima koji izveštaj razumeju na pravi način: sa kojima transparentno pričam o svemu - o planovima, o finansijama, o biznis odlukama. Kad se u projekat uđe dovoljno duboko i razgovara bez površnosti, ti klijenti ostaju u saradnji po nekoliko godina. A to je u ovoj industriji zaista retkost.
