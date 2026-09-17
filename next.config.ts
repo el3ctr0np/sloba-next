@@ -466,6 +466,19 @@ const nextConfig: NextConfig = {
         permanent: true
       },
 
+      // Insights (talas 6c) — samo EN, /sr/insights nema svoju stranicu, pa
+      // ide direktno na /en/insights umesto 404.
+      {
+        source: "/sr/insights",
+        destination: "/en/insights",
+        permanent: true
+      },
+      {
+        source: "/sr/insights/:slug",
+        destination: "/en/insights/:slug",
+        permanent: true
+      },
+
       // Parovi jezika iz routing.pathnames idu POSLE svih eksplicitnih pravila:
       // prvo poklapanje pobedjuje, a eksplicitno pravilo (npr. profit-provera)
       // vodi direktno na krajnju stranicu.

@@ -161,6 +161,10 @@ export const routing = defineRouting({
     "/case-studies": "/case-studies",
     "/case-studies/[slug]": "/case-studies/[slug]",
 
+    // Insights (talas 6, samo EN — /sr/insights preusmerava na /en/insights)
+    "/insights": "/insights",
+    "/insights/[slug]": "/insights/[slug]",
+
     // Portal
     "/portal": "/portal",
     "/portal/dashboard": "/portal/dashboard",

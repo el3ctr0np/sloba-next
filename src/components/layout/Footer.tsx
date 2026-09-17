@@ -1,10 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 export function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
 
   const footerLinks = {
     usluge: [
@@ -23,6 +24,8 @@ export function Footer() {
     resursi: [
       { label: t("resources.blog"), href: "/blog" as const },
       { label: t("resources.caseStudies"), href: "/case-studies" as const },
+      // Insights (talas 6, samo EN): nema SR verzije, pa se link ne prikazuje na SR footeru.
+      ...(locale === "en" ? [{ label: t("resources.insights"), href: "/insights" as const }] : []),
       { label: t("resources.glossary"), href: "/recnik" as const },
       { label: t("resources.freeTools"), href: "/resursi" as const },
       { label: t("resources.ga4Audiences"), href: "/resursi/ga4-framework" as const },

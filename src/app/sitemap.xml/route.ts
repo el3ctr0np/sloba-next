@@ -37,7 +37,13 @@ const routeLastmod: Record<string, string> = {
   "/resursi/pmax-check": "2026-08-30",
   "/resursi/budzet-kalkulator": "2026-07-12",
   "/industrije/medicina": "2026-09-17",
+  "/insights": "2026-09-17",
+  "/insights/chatgpt-ads-search-demand-2026": "2026-09-17",
 };
+
+// Insights (talas 6c): samo EN, nema SR par ni hreflang. GET() ispod ove rute
+// emituje kao samostalan <url> bez xhtml:link alternates.
+const enOnlyRoutes = new Set<string>(["/insights", "/insights/chatgpt-ads-search-demand-2026"]);
 
 // Build blog lastmod map dynamically from posts/index.tsx (single source of truth)
 const blogLastmod: Record<string, string> = {};
@@ -152,6 +158,19 @@ export async function GET() {
     // 12.12. Google na EN strani vec ne indeksira oko polovine URL-ova, a vrednost
     // recnika je u SR trzistu. Stranice i dalje postoje i imaju hreflang.
     if (glossaryTermLastmod[route]) return [srEntry];
+
+    // Insights (talas 6c): samo EN postoji, /sr/insights je 308 redirect na
+    // /en/insights (next.config.ts), pa ovde nema SR par i nema hreflang.
+    if (enOnlyRoutes.has(route)) {
+      return [
+        `
+  <url>
+    <loc>${enUrl}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>${priority}</priority>
+  </url>`
+      ];
+    }
 
     return [
       `
