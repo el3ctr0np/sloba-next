@@ -11,6 +11,13 @@ export const routing = defineRouting({
   // x-default points to EN since 15.9.2026). Only affects
   // unprefixed paths — a shared /sr/... link still opens in Serbian.
   localeDetection: true,
+  // Off (17.9.2026, S-A): next-intl's middleware was sending its own HTTP Link
+  // header with hreflang alternates built from the internal template path, not
+  // the localized pathname above — sr alternate landed on the EN slug (a 308)
+  // and x-default on an unprefixed path (a 307 to SR). The <head> hreflang from
+  // buildMetadata() (src/lib/metadata.ts) is correct and stays; this only turns
+  // off the second, wrong signal so Google reads one hreflang source, not two.
+  alternateLinks: false,
   pathnames: {
     "/": "/",
 
