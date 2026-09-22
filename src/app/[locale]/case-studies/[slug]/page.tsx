@@ -60,10 +60,6 @@ export default async function CaseStudyPage({ params }: Props) {
       "@type": "SpeakableSpecification",
       cssSelector: ["h1", "h2"],
     },
-    mentions: {
-      "@type": "Organization",
-      name: cs.company,
-    },
   };
 
   const breadcrumbSchema = {
@@ -163,8 +159,8 @@ export default async function CaseStudyPage({ params }: Props) {
             </div>
 
             {/* Right: Hero Image */}
-            <div className="hidden md:flex items-center justify-center">
-              {cs.heroImage ? (
+            {cs.heroImage && (
+              <div className="hidden md:flex items-center justify-center">
                 <div className="w-full max-w-lg rounded-2xl overflow-hidden border-2 border-slate-700">
                   <Image
                     src={cs.heroImage}
@@ -174,14 +170,8 @@ export default async function CaseStudyPage({ params }: Props) {
                     className="w-full h-auto object-cover"
                   />
                 </div>
-              ) : (
-                <div className="w-full aspect-[4/3] max-w-lg rounded-2xl bg-slate-800 border-2 border-slate-700 flex items-center justify-center">
-                  <span className="text-slate-500 text-sm">
-                    {cs.company} — {isEn ? "image here" : "slika ovde"}
-                  </span>
-                </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -190,7 +180,7 @@ export default async function CaseStudyPage({ params }: Props) {
       <section className="py-12 md:py-16 px-4 md:px-8 bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-heading font-bold mb-4">
-            {isEn ? `About ${cs.company}` : `O kompaniji ${cs.company}`}
+            {isEn ? "About the client" : "O klijentu"}
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             {cs.brandIntro}

@@ -5,7 +5,7 @@ export default function ChatGptAdsEvropaPost() {
   return (
     <>
       <p>
-        Radim sa evropskim i UK klijentima (Chelleon UK, Best at Printing, Pickbox HRV) i poslednjih nedelja čitam gomilu tekstova o ChatGPT Ads. Skoro svi su pisani iz američke perspektive: američki minimalni budžeti, američke kategorije, američki podaci o klikovima. Problem je što se ChatGPT Ads u Evropi ne ponaša isto kao u SAD - pravila su drugačija, i niko ko prepisuje američki vodič to ne kaže.
+        Radim sa evropskim i UK klijentima i poslednjih nedelja čitam gomilu tekstova o ChatGPT Ads. Skoro svi su pisani iz američke perspektive: američki minimalni budžeti, američke kategorije, američki podaci o klikovima. Problem je što se ChatGPT Ads u Evropi ne ponaša isto kao u SAD - pravila su drugačija, i niko ko prepisuje američki vodič to ne kaže.
       </p>
       <p>
         Evropski rollout je stigao 24. avgusta 2026, self-serve nalozi 31. avgusta. Otad postoje dve stvari koje menjaju kako treba da razmišljate o ovom kanalu ako radite u EU ili UK: u Evropskom ekonomskom prostoru trenutno nema personalizacije oglasa, i do kraja decembra stiže javni registar oglasa po Digital Services Act-u. Ovaj tekst je o tome šta ta dva pravila stvarno menjaju u praksi.

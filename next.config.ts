@@ -449,20 +449,103 @@ const nextConfig: NextConfig = {
         permanent: true
       },
 
-      // Old case studies (without locale) → new with locale
+      // Old case studies (without locale) → case studies hub (studies removed, single hop)
       {
         source: "/case-studies/designerglasses/",
-        destination: "/sr/case-studies/designerglasses",
+        destination: "/sr/case-studies",
         permanent: true
       },
       {
         source: "/case-studies/mobelaris/",
-        destination: "/sr/case-studies/mobelaris",
+        destination: "/sr/case-studies",
         permanent: true
       },
       {
         source: "/case-studies/soundboxstore/",
-        destination: "/sr/case-studies/soundboxstore",
+        destination: "/sr/case-studies",
+        permanent: true
+      },
+
+      // NDA faza 2b (23.9.2026): 4 case study slug-ovi renameovani (anonimizacija),
+      // 4 uklonjeni → hub. Jedan skok, oba jezika.
+      {
+        source: "/sr/case-studies/chelleon",
+        destination: "/sr/case-studies/uk-skincare-ecommerce-poas",
+        permanent: true
+      },
+      {
+        source: "/en/case-studies/chelleon",
+        destination: "/en/case-studies/uk-skincare-ecommerce-poas",
+        permanent: true
+      },
+      {
+        source: "/sr/case-studies/ankibuddy",
+        destination: "/sr/case-studies/dach-edtech-saas-tracking",
+        permanent: true
+      },
+      {
+        source: "/en/case-studies/ankibuddy",
+        destination: "/en/case-studies/dach-edtech-saas-tracking",
+        permanent: true
+      },
+      {
+        source: "/sr/case-studies/mbfinance",
+        destination: "/sr/case-studies/finance-consulting-audit-serbia",
+        permanent: true
+      },
+      {
+        source: "/en/case-studies/mbfinance",
+        destination: "/en/case-studies/finance-consulting-audit-serbia",
+        permanent: true
+      },
+      {
+        source: "/sr/case-studies/chatislav",
+        destination: "/sr/case-studies/tech-startup-launch-serbia",
+        permanent: true
+      },
+      {
+        source: "/en/case-studies/chatislav",
+        destination: "/en/case-studies/tech-startup-launch-serbia",
+        permanent: true
+      },
+      {
+        source: "/sr/case-studies/mobelaris",
+        destination: "/sr/case-studies",
+        permanent: true
+      },
+      {
+        source: "/en/case-studies/mobelaris",
+        destination: "/en/case-studies",
+        permanent: true
+      },
+      {
+        source: "/sr/case-studies/designerglasses",
+        destination: "/sr/case-studies",
+        permanent: true
+      },
+      {
+        source: "/en/case-studies/designerglasses",
+        destination: "/en/case-studies",
+        permanent: true
+      },
+      {
+        source: "/sr/case-studies/soundboxstore",
+        destination: "/sr/case-studies",
+        permanent: true
+      },
+      {
+        source: "/en/case-studies/soundboxstore",
+        destination: "/en/case-studies",
+        permanent: true
+      },
+      {
+        source: "/sr/case-studies/uk-agency-partnership",
+        destination: "/sr/case-studies",
+        permanent: true
+      },
+      {
+        source: "/en/case-studies/uk-agency-partnership",
+        destination: "/en/case-studies",
         permanent: true
       },
 

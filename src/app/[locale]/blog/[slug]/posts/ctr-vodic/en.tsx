@@ -51,7 +51,7 @@ export default function CTRGuidePost() {
           <li><a href="#what-is-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">What is CTR and why it matters</a></li>
           <li><a href="#formula-and-examples" className="block py-1 text-base text-gray-700 hover:text-primary underline">Formula and calculation examples</a></li>
           <li><a href="#ctr-benchmarks" className="block py-1 text-base text-gray-700 hover:text-primary underline">CTR benchmarks by campaign type</a></li>
-          <li><a href="#case-study-ankibuddy" className="block py-1 text-base text-gray-700 hover:text-primary underline">Case Study: AnkiBuddy — from 6-8% to 20% CTR</a></li>
+          <li><a href="#case-study-edtech" className="block py-1 text-base text-gray-700 hover:text-primary underline">From practice: an EdTech SaaS in the DACH region</a></li>
           <li><a href="#mistakes-killing-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 common mistakes that kill CTR</a></li>
           <li><a href="#diagnosing-low-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to diagnose low CTR (3 steps)</a></li>
           <li><a href="#how-to-improve-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">7 ways to improve CTR</a></li>
@@ -175,43 +175,39 @@ export default function CTRGuidePost() {
 
       <hr />
 
-      {/* ── Case Study AnkiBuddy ── */}
-      <h2 id="case-study-ankibuddy">Case Study: AnkiBuddy — from 6-8% to 20% CTR</h2>
+      {/* ── Case Study EdTech SaaS ── */}
+      <h2 id="case-study-edtech">From practice: an EdTech SaaS in the DACH region</h2>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-5 my-6">
         <p className="font-heading font-semibold mb-2">From my experience</p>
         <p className="text-base text-blue-900 mb-0">
-          Due to NDA agreements, I cannot share financial metrics, but I can explain the strategy and approach. This demonstrates that I&apos;m a serious partner who respects client confidentiality.
+          I don&apos;t publish client names or numbers. I describe the approach, because that is what transfers to other accounts.
         </p>
       </div>
 
       <p>
-        <strong>AnkiBuddy</strong> is an EdTech SaaS platform that uses AI to automatically generate Anki flashcards from lecture PDFs. The primary market is medical students in the DACH region (Germany, Austria, Switzerland).
+        The client is an EdTech SaaS product for medical students in the DACH region (Germany, Austria, Switzerland).
       </p>
 
       <h3>Challenge</h3>
       <p>
-        When I took over the account, Search campaigns had an average CTR of 6-8%. For a SaaS with narrow targeting, this wasn&apos;t bad — but I knew it could be better.
+        When I took over the account, the Search ads were generic, while the audience is narrow and knows exactly what it is looking for.
       </p>
 
       <h3>Strategy</h3>
       <ul>
         <li><strong>Highly specific keywords</strong> — focused on terms medical students actually use when searching for study tools</li>
         <li><strong>Pain points in headlines</strong> — emphasized problems students face (time, volume of material, exam preparation)</li>
-        <li><strong>Benefits over features</strong> — instead of &quot;AI generates cards&quot; → &quot;Save 10 hours weekly on creating flashcards&quot;</li>
+        <li><strong>Benefits over features</strong> — instead of describing a feature, the benefit a student feels: time saved before an exam</li>
       </ul>
 
-      <h3>Result</h3>
-      <div className="bg-green-50 border-2 border-green-400 rounded-xl p-5 my-6">
-        <p className="text-2xl font-heading font-bold text-green-700 mb-2">CTR: up to 20%</p>
-        <p className="text-base text-green-800 mb-0">
-          From the initial 6-8% on Search campaigns, we achieved over 20% CTR for the best Ad Groups. The key was understanding the exact needs of the target audience.
-        </p>
-      </div>
+      <p>
+        The key was understanding exactly what the target audience needed.
+      </p>
 
       <p>
-        <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "ankibuddy" } }} className="text-primary underline">
-          View the complete AnkiBuddy case study →
+        <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "dach-edtech-saas-tracking" } }} className="text-primary underline">
+          View the full case study →
         </Link>
       </p>
 

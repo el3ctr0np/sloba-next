@@ -4,7 +4,6 @@ import {
   WhatYouNeed,
   ClientLogos,
   CaseStudiesPreview,
-  Testimonial,
   AskAI,
   FinalCTA
 } from "@/components/sections";
@@ -97,14 +96,12 @@ export default async function Home({ params }: Props) {
       <AnimateOnScroll>
         <CaseStudiesPreview locale={locale} />
       </AnimateOnScroll>
-      <AnimateOnScroll>
-        <Testimonial />
-      </AnimateOnScroll>
       {/*
-        Testimonials grid removed (Jun 10 2026): all entries in placeholderTestimonials
-        contained visible "[PLACEHOLDER — ...]" text. Re-enable once real client quotes
-        are collected (Asana: outreach HERO reviews — Grant, Janko, Mike).
-        The single real <Testimonial /> above remains.
+        Testimonials removed (NDA faza 2b, 23.9.2026): the single real
+        <Testimonial /> named a client (Jason M., CEO at Mobelaris) with no
+        written permission to publish, alongside a since-retracted ROI figure.
+        The placeholder grid was already off (Jun 10 2026 — visible
+        "[PLACEHOLDER — ...]" text, real quotes never collected).
       */}
       <AskAI locale={locale} />
       <FinalCTA />

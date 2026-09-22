@@ -11,7 +11,7 @@ type Props = {
 // in display order. Kept separate from data.ts ordering (which follows a
 // different, e.g. chronological, convention) — this list only affects
 // what shows up here.
-const FEATURED_SLUGS = ["chelleon", "mobelaris", "soundboxstore"];
+const FEATURED_SLUGS = ["uk-skincare-ecommerce-poas", "dach-edtech-saas-tracking", "tech-startup-launch-serbia"];
 
 export function CaseStudiesPreview({ locale }: Props) {
   const t = useTranslations("CaseStudiesPreview");

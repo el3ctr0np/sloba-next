@@ -645,108 +645,19 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Realni rezultati, realni klijenti
+              Rezultati, bez imena klijenata
             </h2>
           </div>
 
-          {/* Case study card — Soundbox Store */}
-          <div className="max-w-4xl mx-auto bg-slate-900 text-white rounded-xl p-8 md:p-12 mb-10">
-            <p className="text-accent text-sm font-semibold mb-2 uppercase tracking-wider">
-              Case Study — Soundbox Store
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              UK eCommerce brend iz premium nege kože: nalog vodim više od dve
+              godine, prosečan POAS 1.78x za 12 meseci. Imena klijenata i
+              iznose ne objavljujem.
             </p>
-            <h3 className="text-2xl font-heading font-bold mb-4">
-              Od nule do £170k ad spend-a — i širenje na celu Evropu
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6 mb-6">
-              <div>
-                <p className="text-sm text-slate-400 mb-1">Početak</p>
-                <p className="text-2xl font-heading font-bold text-red-400">
-                  £0
-                </p>
-                <p className="text-xs text-slate-500 mt-1">
-                  Bez Google Ads prisustva
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-slate-400 mb-1">Skalirano na</p>
-                <p className="text-2xl font-heading font-bold text-green-400">
-                  £170k+
-                </p>
-                <p className="text-xs text-slate-500 mt-1">
-                  Mesečni ad spend
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-slate-400 mb-1">Ekspanzija</p>
-                <p className="text-2xl font-heading font-bold text-accent">
-                  UK → EU
-                </p>
-                <p className="text-xs text-slate-500 mt-1">
-                  Rast na više tržišta
-                </p>
-              </div>
-            </div>
-            <p className="text-slate-300 text-sm">
-              UK B2B eCommerce u visoko specijalizovanoj niši akustičnih rešenja
-              sa prosečnim narudžbinama u hiljadama funti. Google Ads izgrađen od
-              nule — Search, Shopping i Performance Max. Stabilizovan rast
-              prihoda u UK, zatim ekspanzija na EU tržišta sa lokalizovanim
-              kampanjama.
-            </p>
-          </div>
-
-          {/* Additional case studies — grid */}
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 mb-10">
-            {/* MetalFlex RS */}
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6">
-              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
-                eCommerce — Srbija
-              </p>
-              <h4 className="font-heading font-bold text-lg mb-3">
-                Domaći eCommerce sa 40.000+ proizvoda
-              </h4>
-              <div className="flex items-baseline gap-2 mb-3">
-                <span className="text-3xl font-heading font-bold text-green-600">300%+</span>
-                <span className="text-sm text-gray-500">porast poseta i prodaje</span>
-              </div>
-              <p className="text-sm text-gray-600">
-                Kompletan tehnički setup — analitika, tracking, feed optimizacija i aktivacija Search kampanja. Rezultati vidljivi u prvih par meseci saradnje.
-              </p>
-            </div>
-
-            {/* Privatna klinika */}
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6">
-              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
-                Lead Generation — Beograd
-              </p>
-              <h4 className="font-heading font-bold text-lg mb-3">
-                Privatna klinika sa 10 lokacija
-              </h4>
-              <div className="flex items-baseline gap-2 mb-3">
-                <span className="text-3xl font-heading font-bold text-green-600">+320%</span>
-                <span className="text-sm text-gray-500">više upita za isti budžet</span>
-              </div>
-              <p className="text-sm text-gray-600">
-                Restrukturirane Search kampanje, poboljšan Quality Score i optimizovano targetiranje. Isti mesečni budžet, drastično više kvalifikovanih upita.
-              </p>
-            </div>
-          </div>
-
-          {/* Testimonial */}
-          <div className="max-w-3xl mx-auto bg-gray-50 border-2 border-gray-200 rounded-xl p-8 text-center mb-12">
-            <div className="text-4xl mb-4">&ldquo;</div>
-            <p className="text-gray-700 text-lg italic mb-4">
-              Slobodan nam je pomogao da značajno povećamo prodaju, stabilizujemo
-              ulaganja u oglašavanje i proširimo se sa UK tržišta na više
-              evropskih zemalja. Proaktivan je, transparentan i iskreno uložen u
-              naš uspeh.
-            </p>
-            <p className="font-heading font-semibold">
-              Jason — Owner, Soundbox Store
-            </p>
-            <p className="text-sm text-gray-500">
-              B2B eCommerce — Akustična rešenja (UK)
-            </p>
+            <Link href="/case-studies" className="btn-primary inline-block">
+              Pogledajte studije slučaja
+            </Link>
           </div>
 
         </div>

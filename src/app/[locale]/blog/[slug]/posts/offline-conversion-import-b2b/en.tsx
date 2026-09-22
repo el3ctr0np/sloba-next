@@ -406,7 +406,7 @@ export default function OfflineConversionImportB2BPostEN() {
       </div>
 
       <p>
-        The B2B accounts I&apos;ve worked on longest tend to share this same discipline around clean, single-source reporting. The <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "uk-agency-partnership" } }}>UK Digital Agency case study</Link> covers running eight client accounts under one consistent tracking and reporting framework, and the <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "soundboxstore" } }}>SoundBox Store case study</Link> covers a B2B office furniture brand scaling from a single market into eight-plus European markets.
+        The B2B accounts I&apos;ve worked on longest tend to share this same discipline around clean, single-source reporting.
       </p>
 
       <hr />

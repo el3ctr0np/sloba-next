@@ -927,7 +927,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
 
       <ul>
         <li>
-          <a href="/sr/case-studies/chelleon" className="underline font-medium">
+          <a href="/sr/case-studies/uk-skincare-ecommerce-poas" className="underline font-medium">
             Case Study - Google Ads eCommerce (skincare, UK tržište)
           </a>
         </li>

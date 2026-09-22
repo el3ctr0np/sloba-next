@@ -500,8 +500,8 @@ export default async function AboutPage({ params }: Props) {
                 </p>
                 <p>
                   That same openness is what makes it possible to rebuild an account from scratch instead of just tweaking it. The{" "}
-                  <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "ankibuddy" } }} className="underline">
-                    AnkiBuddy case study
+                  <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "dach-edtech-saas-tracking" } }} className="underline">
+                    EdTech SaaS case study
                   </Link>{" "}
                   covers exactly that for a SaaS EdTech client: fixing broken conversion tracking from the ground up, then precision geo-targeting medical faculties across the DACH region.
                 </p>

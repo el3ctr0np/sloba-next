@@ -51,7 +51,7 @@ export default function CTRVodicPost() {
           <li><a href="#sta-je-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je CTR i zašto je važan</a></li>
           <li><a href="#formula-i-primeri" className="block py-1 text-base text-gray-700 hover:text-primary underline">Formula i primeri izračunavanja</a></li>
           <li><a href="#ctr-benchmarks" className="block py-1 text-base text-gray-700 hover:text-primary underline">CTR benchmarks po tipu kampanje</a></li>
-          <li><a href="#case-study-ankibuddy" className="block py-1 text-base text-gray-700 hover:text-primary underline">Case Study: AnkiBuddy - sa 6-8% na 20% CTR</a></li>
+          <li><a href="#case-study-edtech" className="block py-1 text-base text-gray-700 hover:text-primary underline">Primer iz prakse: EdTech SaaS u DACH regionu</a></li>
           <li><a href="#greske-koje-ubijaju-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">5 najčešćih grešaka koje ubijaju CTR</a></li>
           <li><a href="#dijagnostika-niskog-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako dijagnostikovati nizak CTR (3 koraka)</a></li>
           <li><a href="#kako-poboljsati-ctr" className="block py-1 text-base text-gray-700 hover:text-primary underline">7 načina da poboljšate CTR</a></li>
@@ -175,43 +175,39 @@ export default function CTRVodicPost() {
 
       <hr />
 
-      {/* ── Case Study AnkiBuddy ── */}
-      <h2 id="case-study-ankibuddy">Case Study: AnkiBuddy - sa 6-8% na 20% CTR</h2>
+      {/* ── Case Study EdTech SaaS ── */}
+      <h2 id="case-study-edtech">Primer iz prakse: EdTech SaaS u DACH regionu</h2>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-5 my-6">
         <p className="font-heading font-semibold mb-2">Iz mog iskustva</p>
         <p className="text-base text-blue-900 mb-0">
-          Zbog NDA ugovora ne mogu deliti finansijske metrike, ali mogu objasniti strategiju i pristup. Ovo pokazuje da sam ozbiljan partner koji poštuje poverljivost klijenata.
+          Ime klijenta i brojke ne objavljujem. Opisujem pristup, jer se on prenosi na druge naloge.
         </p>
       </div>
 
       <p>
-        <strong>AnkiBuddy</strong> je EdTech SaaS platforma koja koristi AI za automatsko generisanje Anki kartica za učenje iz PDF predavanja. Primarno tržište su medicinski studenti u DACH regionu (Nemačka, Austrija, Švajcarska).
+        Klijent je EdTech SaaS proizvod za studente medicine u DACH regionu (Nemačka, Austrija, Švajcarska).
       </p>
 
       <h3>Izazov</h3>
       <p>
-        Kada sam preuzeo nalog, Search kampanje su imale prosečan CTR od 6-8%. Za SaaS sa uskim targetiranjem, ovo nije bilo loše - ali znao sam da može bolje.
+        Kada sam preuzeo nalog, Search oglasi su bili opšti, a publika je uska i zna tačno šta traži.
       </p>
 
       <h3>Strategija</h3>
       <ul>
         <li><strong>Usko specifične ključne reči</strong> - fokus na termine koje medicinski studenti stvarno koriste kada traže alate za učenje</li>
         <li><strong>Pain points u headline-ovima</strong> - naglašeni problemi koje studenti imaju (vreme, količina materijala, priprema za ispite)</li>
-        <li><strong>Benefiti umesto feature-a</strong> - umesto "AI generiše kartice" → "Uštedite 10 sati nedeljno na pravljenju kartica"</li>
+        <li><strong>Benefiti umesto feature-a</strong> - umesto opisa funkcije, korist koju student oseća: ušteđeno vreme pred ispit</li>
       </ul>
 
-      <h3>Rezultat</h3>
-      <div className="bg-green-50 border-2 border-green-400 rounded-xl p-5 my-6">
-        <p className="text-2xl font-heading font-bold text-green-700 mb-2">CTR: do 20%</p>
-        <p className="text-base text-green-800 mb-0">
-          Sa početnih 6-8% na Search kampanjama, dostigli smo i preko 20% CTR za najbolje Ad Grupe. Ključ je bio u razumevanju tačnih potreba ciljne publike.
-        </p>
-      </div>
+      <p>
+        Ključ je bio u razumevanju tačnih potreba ciljne publike.
+      </p>
 
       <p>
-        <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "ankibuddy" } }} className="text-primary underline">
-          Pogledajte kompletan AnkiBuddy case study →
+        <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "dach-edtech-saas-tracking" } }} className="text-primary underline">
+          Pogledajte celu studiju slučaja →
         </Link>
       </p>
 

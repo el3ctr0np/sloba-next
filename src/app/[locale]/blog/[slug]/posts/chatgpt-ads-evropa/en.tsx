@@ -5,7 +5,7 @@ export default function ChatGptAdsEuropeEN() {
   return (
     <>
       <p>
-        I work with European and UK clients — Chelleon UK, Best at Printing, Pickbox HRV — and over the past few weeks I've read a stack of ChatGPT Ads guides. Almost all of them are written from a US vantage point: US minimum budgets, US-only categories, US click data. The problem is that ChatGPT Ads doesn't behave the same way in Europe, and none of the guides that just reword the American playbook say so.
+        I work with European and UK clients, and over the past few weeks I've read a stack of ChatGPT Ads guides. Almost all of them are written from a US vantage point: US minimum budgets, US-only categories, US click data. The problem is that ChatGPT Ads doesn't behave the same way in Europe, and none of the guides that just reword the American playbook say so.
       </p>
       <p>
         The European rollout landed on August 24, 2026, with self-serve accounts opening a week later on August 31. Since then, two things have changed how you should think about this channel if you work in the EU or UK: personalized ad selection isn't currently available inside the European Economic Area, and a public ad repository is arriving by the end of December under the Digital Services Act. This post is about what those two rules actually change in practice.

@@ -53,14 +53,10 @@ for (const post of srPosts) {
 // Build case study lastmod map (use static dates per slug — case studies don't have
 // dateModified field; use the most recent meaningful update we know about)
 const caseStudyLastmod: Record<string, string> = {
-  "ankibuddy": "2026-02-28",
-  "mobelaris": "2026-01-26",
-  "designerglasses": "2026-01-26",
-  "soundboxstore": "2026-01-26",
-  "chelleon": "2026-03-05",
-  "uk-agency-partnership": "2026-03-05",
-  "mbfinance": "2026-03-05",
-  "chatislav": "2026-03-05",
+  "uk-skincare-ecommerce-poas": "2026-09-23",
+  "dach-edtech-saas-tracking": "2026-09-23",
+  "tech-startup-launch-serbia": "2026-09-23",
+  "finance-consulting-audit-serbia": "2026-09-23",
 };
 for (const cs of caseStudies) {
   if (caseStudyLastmod[cs.slug]) {

@@ -753,7 +753,7 @@ export default function GA4AudienceFrameworkEN() {
       </p>
 
       <p>
-        For what this kind of audience-and-PMax structure looks like on a live eCommerce account, see the <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "mobelaris" } }}>Mobelaris case study</Link> (a luxury furniture retailer consolidated from 300 to 90 campaigns) and the <Link href={{ pathname: "/case-studies/[slug]", params: { slug: "designerglasses" } }}>DesignerGlasses case study</Link> (a designer eyewear retailer built on a brand-by-brand PMax structure).
+        For what this kind of audience-and-PMax structure looks like on a live eCommerce account, see the <Link href="/case-studies">case studies</Link>, including a UK skincare eCommerce account where bidding runs on gross profit and returning customers get higher bids than new ones.
       </p>
 
       {/* CTA block */}

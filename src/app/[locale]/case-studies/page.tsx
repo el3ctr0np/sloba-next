@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (locale === "en") {
     return buildMetadata({
       title: "Google Ads Case Studies | Real Results — Slobodan Jelisavac",
-      description: "Real Google Ads results: 3.7x ROI for luxury furniture, 12x revenue growth for eyewear, 3x more leads for acoustic pods. View case studies.",
+      description: "Google Ads case studies without client names: profit-based bidding for UK eCommerce, a SaaS tracking rebuild, a brand launch and an account audit.",
       locale,
       path: "/case-studies",
     });
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return buildMetadata({
     title: "Case Studies | Google Ads Rezultati — Slobodan Jelisavac",
-    description: "Realni Google Ads rezultati: 3.7x ROI za luksuzni nameštaj, 12x rast prihoda za naočare, 3x više leadova za akustične kabine. Pogledajte case studies.",
+    description: "Studije slučaja iz Google Ads prakse, bez imena klijenata: licitiranje na profit za UK eCommerce, merenje za SaaS, lansiranje brenda i audit naloga.",
     locale,
     path: "/case-studies",
   });
