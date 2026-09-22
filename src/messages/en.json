@@ -26,7 +26,6 @@
       "saas": "Google Ads for SaaS",
       "performanceMarketing": "Performance Marketing",
       "consultations": "Consultations",
-      "starterPackage": "Kickstart",
       "chatgptAds": "ChatGPT Ads"
     },
     "allServices": "All services →",
@@ -45,7 +44,6 @@
     "privacyPolicy": "Privacy Policy",
     "services": {
       "googleAdsManagement": "Google Ads Management",
-      "starterPackage": "Kickstart",
       "consultations": "Consultations",
       "googleAdsAudit": "Google Ads Audit",
       "googleShopping": "Google Shopping",

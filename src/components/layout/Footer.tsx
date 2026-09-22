@@ -10,7 +10,6 @@ export function Footer() {
   const footerLinks = {
     usluge: [
       { label: t("services.googleAdsManagement"), href: "/usluge/google-ads-upravljanje" as const },
-      { label: t("services.starterPackage"), href: "/usluge/starter-paket" as const },
       { label: t("services.consultations"), href: "/usluge/konsultacije" as const },
       { label: t("services.googleAdsAudit"), href: "/usluge/google-ads-audit" as const },
       { label: t("services.chatgptAds"), href: "/usluge/chatgpt-ads" as const }

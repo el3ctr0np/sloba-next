@@ -941,21 +941,21 @@ export default function GoogleShoppingSrbija2026SR() {
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">Za ozbiljne brendove</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
-          Ako vaš brend već ulaže €3,000+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre lansiranja ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu - detaljan proces opisujem u našem{" "}
+          Ako vaš brend već ulaže €1.500+ mesečno u oglašavanje, spremni ste za Shopping od prvog dana. Pre lansiranja ću proći kroz vaš sajt, product feed, Merchant Center i dati konkretan plan za pripremu - detaljan proces opisujem u našem{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-vodic" } }} className="underline text-yellow-400">kompletnom vodiču za Google Shopping</Link>. Kao{" "}
           <Link href="/usluge/google-ads-agencija" className="underline text-yellow-400">agencija za Google Ads</Link> vodimo i Search i Performance Max kampanje, ne samo Shopping.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
           <div className="bg-white/5 border border-white/10 rounded-lg p-4">
-            <p className="text-yellow-400 font-bold text-sm mb-2">Besplatan audit (€3,000+/mes ad spend)</p>
+            <p className="text-yellow-400 font-bold text-sm mb-2">Besplatan video pregled (€1.500+/mes ad spend)</p>
             <ul className="text-slate-300 text-sm space-y-1">
-              <li>60 minuta dubinske analize (online)</li>
+              <li>15-minutni video pregled</li>
               <li>Feed gap analiza + budžet preporuka</li>
               <li>Personalizovani Shopping launch checklist</li>
             </ul>
-            <Link href="/kontakt" className="btn-secondary inline-block mt-3 text-sm">
-              Zakaži besplatan audit →
+            <Link href="/audit" className="btn-secondary inline-block mt-3 text-sm">
+              Zakaži besplatan video pregled →
             </Link>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-lg p-4">
@@ -970,7 +970,7 @@ export default function GoogleShoppingSrbija2026SR() {
             </Link>
           </div>
         </div>
-        <p className="text-slate-500 text-xs mb-0">Besplatni auditi: ograničeno na 3 nedeljno. Pravo na besplatan audit imaju brendovi sa aktivnim ad spend-om od €3,000+/mes.</p>
+        <p className="text-slate-500 text-xs mb-0">Besplatni video pregledi: ograničeno na 5 mesečno, za brendove sa aktivnim ad spend-om od €1.500+/mes.</p>
       </div>
     </>
   );

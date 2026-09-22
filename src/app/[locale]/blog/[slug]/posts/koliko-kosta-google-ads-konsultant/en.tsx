@@ -476,9 +476,9 @@ export default function GoogleAdsConsultantCostEN() {
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">One-time</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Kickstart package</h3>
-          <p className="text-base text-gray-600 mb-3">Account setup, campaign structure, and tracking — for companies starting from scratch.</p>
-          <p className="text-xl font-heading font-bold mb-0">from $990</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Deep Audit + Action Plan</h3>
+          <p className="text-base text-gray-600 mb-3">Independent analysis of an existing account with a written, prioritized action plan.</p>
+          <p className="text-xl font-heading font-bold mb-0">$1,500 (US) / £750 (UK)</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ongoing</p>
@@ -491,7 +491,7 @@ export default function GoogleAdsConsultantCostEN() {
       <p className="text-base text-gray-600">
         This is one concrete example of senior pricing — not the only valid model, just a reference point. For details by engagement type, see{" "}
         <Link href="/usluge/konsultacije" className="underline">consultations</Link>,{" "}
-        <Link href="/usluge/starter-paket" className="underline">the starter package</Link>, or{" "}
+        <Link href="/usluge/google-ads-audit" className="underline">the audit</Link>, or{" "}
         <Link href="/usluge/google-ads-upravljanje" className="underline">account management</Link>.
       </p>
 
@@ -631,9 +631,9 @@ export default function GoogleAdsConsultantCostEN() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads account management</p>
           <p className="text-xs text-gray-500 mb-0">Ongoing monthly management and optimization</p>
         </Link>
-        <Link href="/usluge/starter-paket" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Starter package</p>
-          <p className="text-xs text-gray-500 mb-0">One-time account setup for companies starting from scratch</p>
+        <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Deep Audit + Action Plan</p>
+          <p className="text-xs text-gray-500 mb-0">Independent analysis of an existing account with a written action plan</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-agency-vs-freelancer" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Agency vs. Freelancer vs. In-House</p>

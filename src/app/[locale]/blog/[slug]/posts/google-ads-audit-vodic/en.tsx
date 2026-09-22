@@ -308,7 +308,7 @@ export default function GoogleAdsAuditGuideEN() {
       <div className="bg-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-2">Get a second opinion</p>
         <p className="text-lg text-gray-900 font-heading font-semibold mb-4 leading-snug">
-          Not sure your own conversion data can be trusted? I check tag accuracy, GA4 reconciliation, and Enhanced Conversions setup personally, as part of the Deep Audit + Action Plan. From $500.
+          Not sure your own conversion data can be trusted? I check tag accuracy, GA4 reconciliation, and Enhanced Conversions setup personally, as part of the Deep Audit + Action Plan. £750 (UK), €750 (EU), or $1,500 (US).
         </p>
         <Link href="/usluge/google-ads-audit" className="btn-primary inline-block">See what the audit covers →</Link>
       </div>
@@ -765,7 +765,7 @@ export default function GoogleAdsAuditGuideEN() {
       <div className="bg-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-2">Skip the DIY marathon</p>
         <p className="text-lg text-gray-900 font-heading font-semibold mb-4 leading-snug">
-          If working through this makes you wonder how many of these 100+ checkpoints your account is actually failing, that&apos;s exactly what the audit answers. I go through every category personally and hand you a prioritized action plan. From $500.
+          If working through this makes you wonder how many of these 100+ checkpoints your account is actually failing, that&apos;s exactly what the audit answers. I go through every category personally and hand you a prioritized action plan. £750 (UK), €750 (EU), or $1,500 (US).
         </p>
         <Link href="/usluge/google-ads-audit" className="btn-primary inline-block">Get a professional audit →</Link>
       </div>
@@ -1061,7 +1061,7 @@ export default function GoogleAdsAuditGuideEN() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            <p className="mb-0">Prices start <strong>from $500</strong> — that&apos;s my Deep Audit + Action Plan, where I personally go through the account and hand you a prioritized action plan (see <Link href="/usluge/google-ads-audit" className="underline">what the audit covers</Link>). The final price depends on account size, number of campaigns, and number of markets. If your monthly ad spend is $8K+, the investment typically pays for itself in the first month — audits find 15-25% wasted spend on average.</p>
+            <p className="mb-0">Prices are <strong>£750 (UK), €750 (EU), or $1,500 (US)</strong> — that&apos;s my Deep Audit + Action Plan, where I personally go through the account and hand you a prioritized action plan (see <Link href="/usluge/google-ads-audit" className="underline">what the audit covers</Link>). The final price depends on account size, number of campaigns, and number of markets. If your monthly ad spend is $8K+, the investment typically pays for itself in the first month — audits find 15-25% wasted spend on average.</p>
           </div>
         </details>
 
@@ -1147,7 +1147,7 @@ export default function GoogleAdsAuditGuideEN() {
         </div>
         <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-card text-center flex flex-col justify-center">
           <p className="font-heading font-bold text-lg md:text-xl mb-3">Or let me run it for you</p>
-          <p className="text-slate-300 text-base mb-5">I audit accounts of all sizes, from startups to enterprise clients. You get a 100+ checkpoint audit report, a prioritized action plan, and a follow-up consultation. From $500.</p>
+          <p className="text-slate-300 text-base mb-5">I audit accounts of all sizes, from startups to enterprise clients. You get a 100+ checkpoint audit report, a prioritized action plan, and a follow-up consultation. £750 (UK), €750 (EU), or $1,500 (US).</p>
           <Link href="/usluge/google-ads-audit" className="btn-secondary inline-block">See the Deep Audit + Action Plan</Link>
         </div>
       </div>

@@ -446,9 +446,9 @@ export default function GoogleAdsBudzetSR() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Search kampanje: kompletan vodič</p>
           <p className="text-xs text-gray-500 mb-0">Struktura kampanja po nameri i marži, negativne ključne reči, merenje pre skaliranja</p>
         </Link>
-        <Link href="/usluge/starter-paket" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Starter paket (Kickstart)</p>
-          <p className="text-xs text-gray-500 mb-0">Senior setup jednom, od €690 - ako još nemate budžet za mesečno vođenje</p>
+        <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Deep Audit + Action Plan</p>
+          <p className="text-xs text-gray-500 mb-0">Nezavisna analiza postojećeg naloga sa pisanim akcionim planom, €450</p>
         </Link>
       </div>
 

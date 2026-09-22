@@ -289,7 +289,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         {
           question: "Do you work with small budgets?",
           answer:
-            "I don't take on monthly management under $2,500/month — I can't deliver it at a senior level below that. For smaller budgets there's Kickstart (from $990) and consulting ($200/hr)."
+            "I don't take on monthly management under $2,500/month — I can't deliver it at a senior level below that. For smaller budgets there's an audit ($1,500 US / £750 UK) and consulting ($200/hr)."
         },
         {
           question: "How often will we talk?",
@@ -337,7 +337,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         {
           question: "Da li radite i sa malim budžetima?",
           answer:
-            "Mesečno vođenje ispod €700 ne radim - ne mogu da ga isporučim na senior nivou. Za manje budžete tu su Kickstart (od €690) i konsultacije (€150/sat)."
+            "Mesečno vođenje ispod €700 ne radim - ne mogu da ga isporučim na senior nivou. Za manje budžete tu su audit (€450) i konsultacije (€150/sat)."
         },
         {
           question: "Koliko često ćemo komunicirati?",
@@ -691,7 +691,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
           <p className="text-gray-500 text-sm">
             {isEn ? (
               <>
-                Smaller budget? Kickstart (from $990, one-off) or consulting ($200/hr) — see the{" "}
+                Smaller budget? An audit ($1,500 US / £750 UK) or consulting ($200/hr) — see the{" "}
                 <Link href="/usluge/konsultacije" className="text-primary underline">
                   consulting page
                 </Link>
@@ -699,7 +699,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
               </>
             ) : (
               <>
-                Manji budžet? Kickstart paket (od €690, jednokratno) ili{" "}
+                Manji budžet? Audit (€450) ili{" "}
                 <Link href="/usluge/konsultacije" className="text-primary underline">
                   konsultacije (€150/sat)
                 </Link>

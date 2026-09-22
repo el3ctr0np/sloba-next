@@ -955,20 +955,20 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
         <p className="text-xs uppercase tracking-[0.2em] text-yellow-400 mb-3">For serious brands</p>
         <p className="font-heading font-bold text-xl md:text-2xl mb-3">Pre-Launch Google Shopping Audit</p>
         <p className="text-slate-300 text-base mb-4 max-w-xl">
-          If your brand already invests $3,000+ per month in advertising, you&apos;re ready for Shopping from day one. Before launch, I&apos;ll go through your site, product feed, Merchant Center, and give you a concrete preparation plan — I cover the detailed process in our{" "}
+          If your brand already invests $1,500+ per month in advertising, you&apos;re ready for Shopping from day one. Before launch, I&apos;ll go through your site, product feed, Merchant Center, and give you a concrete preparation plan — I cover the detailed process in our{" "}
           <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-shopping-guide" } }} className="underline text-yellow-400">complete Google Shopping guide</Link>.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
           <div className="bg-white/5 border border-white/10 rounded-lg p-4">
-            <p className="text-yellow-400 font-bold text-sm mb-2">Free audit ($3,000+/mo ad spend)</p>
+            <p className="text-yellow-400 font-bold text-sm mb-2">Free video review ($1,500+/mo ad spend)</p>
             <ul className="text-slate-300 text-sm space-y-1">
-              <li>60-minute deep-dive analysis (online)</li>
+              <li>15-minute video walkthrough</li>
               <li>Feed gap analysis + budget recommendation</li>
               <li>Personalised Shopping launch checklist</li>
             </ul>
-            <Link href="/kontakt" className="btn-secondary inline-block mt-3 text-sm">
-              Book a free audit →
+            <Link href="/audit" className="btn-secondary inline-block mt-3 text-sm">
+              Book a free video review →
             </Link>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-lg p-4">
@@ -983,7 +983,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
             </Link>
           </div>
         </div>
-        <p className="text-slate-500 text-xs mb-0">Free audits: limited to 3 per week. Free audits are available to brands with active ad spend of $3,000+/mo.</p>
+        <p className="text-slate-500 text-xs mb-0">Free video reviews: limited to 5 a month, for brands with active ad spend of $1,500+/mo.</p>
       </div>
     </>
   );

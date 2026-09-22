@@ -466,7 +466,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         <div className="max-w-3xl mx-auto mt-8 text-center">
           <p className="text-base text-gray-600 mb-6">
             {isEn
-              ? <>Smaller budget or catalog? <Link href="/usluge/google-ads-audit" className="text-primary underline">Audit ($500)</Link> or <Link href="/usluge/konsultacije" className="text-primary underline">consulting ($200/hr)</Link> is a better starting point.</>
+              ? <>Smaller budget or catalog? <Link href="/usluge/google-ads-audit" className="text-primary underline">Audit ($1,500 US / £750 UK)</Link> or <Link href="/usluge/konsultacije" className="text-primary underline">consulting ($200/hr)</Link> is a better starting point.</>
               : <>Manji budžet ili katalog? <Link href="/usluge/google-ads-audit" className="text-primary underline">Deep Audit (€450)</Link> ili <Link href="/usluge/konsultacije" className="text-primary underline">konsultacije (€150/sat)</Link> su bolji početak.</>}
           </p>
           <Button href="/kontakt" variant="primary">{ctaLabel}</Button>

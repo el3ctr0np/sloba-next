@@ -580,9 +580,9 @@ export default function KakoPocetiGoogleAdsEN() {
         >
           Google Ads: Agency vs. Freelancer vs. In-House
         </Link>
-        . There is also a middle ground: a professionally built account you run yourself. Check out my{" "}
-        <Link href="/usluge/starter-paket" className="underline text-gray-900">Google Ads services</Link>{" "}
-        for a senior account setup.
+        . If your account is already running and you want an outside check on it, a{" "}
+        <Link href="/usluge/google-ads-audit" className="underline text-gray-900">Deep Audit + Action Plan</Link>{" "}
+        gives you a written plan without a monthly commitment.
       </p>
 
       <hr />
@@ -746,9 +746,9 @@ export default function KakoPocetiGoogleAdsEN() {
 
       <h2 id="related-guides">Related Guides</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/usluge/starter-paket" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Kickstart — senior account setup</p>
-          <p className="text-xs text-gray-500 mb-0">A professionally built account you run yourself — from $990</p>
+        <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Deep Audit + Action Plan</p>
+          <p className="text-xs text-gray-500 mb-0">Independent analysis of an existing account — $1,500 (US) / £750 (UK)</p>
         </Link>
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Management</p>

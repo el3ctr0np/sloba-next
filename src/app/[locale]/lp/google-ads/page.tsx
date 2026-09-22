@@ -274,25 +274,6 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
   const pricingTiers = [
     {
-      name: "Kickstart projekat",
-      price: "Od €690",
-      period: " jednokratno",
-      adSpend: "Za planirane budžete €1.000+/mes",
-      subtitle:
-        "Senior setup: arhitektura kampanja, keywords, oglasi, tracking specifikacija + verifikacija, 60-dnevni plan. Vi vodite dalje.",
-      features: [
-        "Arhitektura kampanja i struktura naloga",
-        "Istraživanje ključnih reči i konkurencije",
-        "Oglasi — RSA naslovi i opisi",
-        "Tracking specifikacija + verifikacija",
-        "60-dnevni plan optimizacije",
-        "Predaja naloga vašem timu",
-      ],
-      popular: false,
-      cta: "Zatražite Kickstart",
-      funkyBadge: false,
-    },
-    {
       name: "eCommerce Growth",
       price: "Od €700",
       period: "/mes",
@@ -362,7 +343,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     {
       question: "Koji je preporučeni budžet za oglašavanje?",
       answer:
-        "Za mesečno vođenje naloga (eCommerce Growth) najbolje rezultate vidimo kod klijenata koji ulažu €1.500+ mesečno u ad spend. Za planirane budžete od €1.000+/mes, ali gde tek gradite temelje, ima smisla Kickstart projekat — jednokratan senior setup nakon kog vi vodite dalje.",
+        "Za mesečno vođenje naloga (eCommerce Growth) najbolje rezultate vidimo kod klijenata koji ulažu €1.500+ mesečno u ad spend. Za manji budžet ili dok tek gradite temelje, audit ili sat konsultacija su bolji prvi korak.",
     },
     {
       question: "Šta ako već imam kampanje koje rade?",

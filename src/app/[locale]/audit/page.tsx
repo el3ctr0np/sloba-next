@@ -351,7 +351,7 @@ export default async function AuditPage({ params }: Props) {
                     look at qualified accounts — 3 red flags and top priorities, not a full plan.
                     If you want a complete, paid analysis with a written action plan, see{" "}
                     <Link href="/usluge/google-ads-audit" className="text-primary underline">
-                      Deep Audit + Action Plan (from $500)
+                      Deep Audit + Action Plan ($1,500 US / £750 UK)
                     </Link>
                     .
                   </>

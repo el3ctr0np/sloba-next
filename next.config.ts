@@ -479,6 +479,20 @@ const nextConfig: NextConfig = {
         permanent: true
       },
 
+      // Kickstart skinut sa sajta (odluka 13.9.2026, izvrseno 22-23.9) — ostaje
+      // samo kao privatna ponuda na pozivu. GSC 90 dana: 0 impresija na obe
+      // jezicke verzije starter-paket stranice, pa ide direktno na vodjenje.
+      {
+        source: "/sr/usluge/starter-paket",
+        destination: "/sr/usluge/google-ads-upravljanje",
+        permanent: true
+      },
+      {
+        source: "/en/services/starter-package",
+        destination: "/en/services/google-ads-management",
+        permanent: true
+      },
+
       // Parovi jezika iz routing.pathnames idu POSLE svih eksplicitnih pravila:
       // prvo poklapanje pobedjuje, a eksplicitno pravilo (npr. profit-provera)
       // vodi direktno na krajnju stranicu.

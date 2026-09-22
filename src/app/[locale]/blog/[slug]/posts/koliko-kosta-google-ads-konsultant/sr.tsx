@@ -476,9 +476,9 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Jednokratno</p>
-          <h3 className="text-base font-heading font-bold mt-0 mb-2">Kickstart paket</h3>
-          <p className="text-base text-gray-600 mb-3">Setup naloga, struktura kampanja, tracking - za firme koje kreću od nule.</p>
-          <p className="text-xl font-heading font-bold mb-0">od €690</p>
+          <h3 className="text-base font-heading font-bold mt-0 mb-2">Deep Audit + Action Plan</h3>
+          <p className="text-base text-gray-600 mb-3">Nezavisna analiza postojećeg naloga sa pisanim, prioritizovanim akcionim planom.</p>
+          <p className="text-xl font-heading font-bold mb-0">€450</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Ongoing</p>
@@ -491,7 +491,7 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
       <p className="text-base text-gray-600">
         Ovo je jedan konkretan primer senior pricinga na regionalnom tržištu - ne jedini ispravan model, samo referentna tačka. Za detalje po tipu angažmana pogledajte{" "}
         <Link href="/usluge/konsultacije" className="underline">konsultacije</Link>,{" "}
-        <Link href="/usluge/starter-paket" className="underline">starter paket</Link> ili{" "}
+        <Link href="/usluge/google-ads-audit" className="underline">audit</Link> ili{" "}
         <Link href="/usluge/google-ads-upravljanje" className="underline">vođenje naloga</Link>.
       </p>
 
@@ -631,9 +631,9 @@ export default function KolikoKostaGoogleAdsKonsultantPost() {
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Vođenje Google Ads naloga</p>
           <p className="text-xs text-gray-500 mb-0">Ongoing mesečno upravljanje i optimizacija</p>
         </Link>
-        <Link href="/usluge/starter-paket" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Starter paket</p>
-          <p className="text-xs text-gray-500 mb-0">Jednokratni setup naloga za firme koje kreću od nule</p>
+        <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Deep Audit + Action Plan</p>
+          <p className="text-xs text-gray-500 mb-0">Nezavisna analiza postojećeg naloga sa pisanim akcionim planom</p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Agencija vs. Freelancer vs. In-House</p>

@@ -812,11 +812,8 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
           <Link href="/usluge/google-ads-upravljanje" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
             {locale === "en" ? "Ready for management → eCommerce Growth (from $2,500/mo)" : "Spremni za vođenje → eCommerce Growth (od €700/mes)"}
           </Link>
-          <Link href="/usluge/starter-paket" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
-            {locale === "en" ? "Just setting up your account → Kickstart (from $990)" : "Tek postavljate nalog → Kickstart (od €690)"}
-          </Link>
           <Link href="/usluge/google-ads-audit" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
-            {locale === "en" ? "Diagnosis first → Deep Audit + Action Plan (from $500)" : "Prvo dijagnostika → Deep Audit + Action Plan (od €450)"}
+            {locale === "en" ? "Diagnosis first → Deep Audit + Action Plan ($1,500 US / £750 UK)" : "Prvo dijagnostika → Deep Audit + Action Plan (€450)"}
           </Link>
           <Link href="/usluge/konsultacije" className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-card transition">
             {locale === "en" ? "Smaller budget or a quick answer → Consulting ($200/hr)" : "Manji budžet ili brzi savet → Konsultacije (€150/sat)"}
@@ -874,13 +871,6 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
               className="hover:text-accent transition-colors underline"
             >
               {locale === "en" ? "Deep Audit" : "Deep Audit"}
-            </Link>
-            <span className="text-slate-600">·</span>
-            <Link
-              href="/usluge/starter-paket"
-              className="hover:text-accent transition-colors underline"
-            >
-              {locale === "en" ? "Kickstart" : "Kickstart"}
             </Link>
             <span className="text-slate-600">·</span>
             <Link

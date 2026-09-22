@@ -106,7 +106,7 @@ export default async function KonsultacijePage({ params }: Props) {
         {
           question: "What if I decide to work together long-term?",
           answer:
-            "The consultation fee is deducted from the first month if you decide on management or a Kickstart project within 30 days.",
+            "The consultation fee is deducted from the first month if you decide on management within 30 days.",
         },
         {
           question: "How far in advance should I book?",
@@ -138,7 +138,7 @@ export default async function KonsultacijePage({ params }: Props) {
         {
           question: "Šta ako odlučim da radimo zajedno dugoročno?",
           answer:
-            "Cena konsultacije se odbija od prvog meseca ukoliko se odlučite za upravljanje ili Kickstart projekat u roku od 30 dana.",
+            "Cena konsultacije se odbija od prvog meseca ukoliko se odlučite za upravljanje u roku od 30 dana.",
         },
         {
           question: "Koliko unapred treba zakazati termin?",
@@ -550,9 +550,6 @@ export default async function KonsultacijePage({ params }: Props) {
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
             <Link href="/usluge/google-ads-upravljanje" className="hover:text-white transition-colors underline">
               {isEn ? "Google Ads Management" : "Google Ads upravljanje"}
-            </Link>
-            <Link href="/usluge/starter-paket" className="hover:text-white transition-colors underline">
-              {isEn ? "Kickstart" : "Kickstart paket"}
             </Link>
             <Link
               href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "how-to-choose-google-ads-consultant" : "kako-izabrati-google-ads-konsultanta" } }}

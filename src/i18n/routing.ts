@@ -44,10 +44,6 @@ export const routing = defineRouting({
       sr: "/usluge/konsultacije",
       en: "/services/consultations"
     },
-    "/usluge/starter-paket": {
-      sr: "/usluge/starter-paket",
-      en: "/services/starter-package"
-    },
     "/usluge/chatgpt-ads": {
       sr: "/usluge/chatgpt-ads",
       en: "/services/chatgpt-ads"

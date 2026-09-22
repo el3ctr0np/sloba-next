@@ -460,11 +460,11 @@ export const pmaxCopyEN: AuditCopy = {
   cta: {
     lowTitle: "This is more than one fix",
     lowBody:
-      "Once this many checkpoints stack up, the order matters more than the list. The paid audit is that work done for you: I go through the account and come back with the findings and a plan in priority order. It starts from $500.",
+      "Once this many checkpoints stack up, the order matters more than the list. The paid audit is that work done for you: I go through the account and come back with the findings and a plan in priority order. £750 (UK), €750 (EU), or $1,500 (US).",
     lowButton: "See the paid audit",
     highTitle: "Stuck on one of the checkpoints?",
     highBody:
-      "The check shows you what to look at. If you want someone to go through the account for you and come back with a concrete plan, that is the paid audit. It starts from $500.",
+      "The check shows you what to look at. If you want someone to go through the account for you and come back with a concrete plan, that is the paid audit. £750 (UK), €750 (EU), or $1,500 (US).",
     highButton: "See the paid audit",
     guideTitle: "The full guide behind every checkpoint",
     guideBody:

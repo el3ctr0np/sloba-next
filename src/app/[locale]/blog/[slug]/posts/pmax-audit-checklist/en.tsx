@@ -318,7 +318,7 @@ export default function PerformanceMaxAuditChecklistEN() {
       <div className="bg-white border-2 border-gray-900 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.15em] text-gray-500 font-bold mb-2">Get a second opinion</p>
         <p className="text-lg text-gray-900 font-heading font-semibold mb-4 leading-snug">
-          Feed and negative-keyword issues are the two categories I find most often on accounts that&apos;ve never had a PMax-specific audit. I go through all 38 checkpoints personally as part of the Deep Audit + Action Plan. From $500.
+          Feed and negative-keyword issues are the two categories I find most often on accounts that&apos;ve never had a PMax-specific audit. I go through all 38 checkpoints personally as part of the Deep Audit + Action Plan. £750 (UK), €750 (EU), or $1,500 (US).
         </p>
         <Link href="/usluge/google-ads-audit" className="btn-primary inline-block">See what the audit covers →</Link>
       </div>
@@ -611,7 +611,7 @@ export default function PerformanceMaxAuditChecklistEN() {
           Want a second set of eyes on your PMax account?
         </p>
         <p className="text-slate-300 text-sm mb-5 max-w-xl mx-auto">
-          The Deep Audit + Action Plan runs this checklist and the full 100+ point account audit together, with a prioritized action plan you can hand to whoever manages the account. From $500.
+          The Deep Audit + Action Plan runs this checklist and the full 100+ point account audit together, with a prioritized action plan you can hand to whoever manages the account. £750 (UK), €750 (EU), or $1,500 (US).
         </p>
         <Link href="/usluge/google-ads-audit" className="btn-secondary inline-block">See what the audit covers</Link>
         <p className="text-slate-400 text-xs mt-4 mb-0">

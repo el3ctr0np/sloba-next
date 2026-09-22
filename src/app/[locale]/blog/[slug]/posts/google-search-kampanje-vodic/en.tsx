@@ -407,7 +407,7 @@ export default function GoogleSearchCampaignsGuidePost() {
             <span className="text-gray-400 group-open:rotate-180 transition-transform ml-2">&#9660;</span>
           </summary>
           <div className="px-5 pb-5 text-base text-gray-600 border-t border-gray-100 pt-3">
-            As a standalone channel, Search budget starts at €500/month. As part of full account management (Search + Shopping/PMax + remarketing), management fees start at €700/month. A one-off consultation is €150/hour — useful if you want a second opinion on an existing campaign without handing over management. The exact price depends on account size and complexity — you get it after I look at the account, not before.
+            As a standalone channel, Search budget starts at $500/month. As part of full account management (Search + Shopping/PMax + remarketing), management fees start at $2,500/month. A one-off consultation is $200/hour — useful if you want a second opinion on an existing campaign without handing over management. The exact price depends on account size and complexity — you get it after I look at the account, not before.
           </div>
         </details>
 

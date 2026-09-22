@@ -298,7 +298,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
         {
           question: "Do you work with small budgets?",
           answer:
-            "Monthly management makes sense above roughly $10k/month in ad spend. Below that, a consultation or a Kickstart setup is usually a better fit — you get a plan you or your team can execute."
+            "Monthly management makes sense above roughly $10k/month in ad spend. Below that, a consultation or an audit is usually a better fit — you get a plan you or your team can execute."
         },
         {
           question: "What's the difference between you and a big agency?",
@@ -345,7 +345,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
         {
           question: "Radite li sa malim budžetima?",
           answer:
-            "Mesečno vođenje ima smisla iznad otprilike €1.500 mesečnog ad spend-a. Ispod toga, konsultacija ili Kickstart setup su obično bolji izbor - dobijate plan koji vi ili vaš tim možete sami da izvršite."
+            "Mesečno vođenje ima smisla iznad otprilike €1.500 mesečnog ad spend-a. Ispod toga, konsultacija ili audit su obično bolji izbor - dobijate plan koji vi ili vaš tim možete sami da izvršite."
         },
         {
           question: "Šta je razlika između vas i velikih agencija?",
@@ -898,7 +898,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
               {isEn ? "Audit & consultation" : "Audit i konsultacija"}
             </h3>
             <p className="text-2xl font-heading font-bold text-primary mb-1">
-              {isEn ? "from $500" : "od €450"}
+              {isEn ? "$1,500 (US) / £750 (UK)" : "od €450"}
             </p>
             <p className="text-sm text-gray-500 mb-3">
               {isEn

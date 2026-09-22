@@ -71,8 +71,8 @@ const notifications: Notification[] = [
     name: "Nikola",
     city: { sr: "Zagreb, HR", en: "Zagreb, HR" },
     message: {
-      sr: "Zakazao Kickstart projekat za svoju B2B firmu",
-      en: "Booked the Kickstart project for his B2B company",
+      sr: "Zakazao audit za svoju B2B firmu",
+      en: "Booked an audit for his B2B company",
     },
   },
   {

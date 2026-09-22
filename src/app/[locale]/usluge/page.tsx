@@ -131,16 +131,9 @@ export default async function ServicesPage({ params }: Props) {
     },
     {
       title: "Deep Audit + Action Plan",
-      price: "from $500",
+      price: "from $1,500 (US) / £750 (UK)",
       desc: "Independent account analysis with a written, prioritized action plan. No commitment for ongoing work required.",
       href: "/usluge/google-ads-audit",
-      cta: "Learn more"
-    },
-    {
-      title: "Kickstart",
-      price: "from $990",
-      desc: "Senior account setup for teams with an in-house owner who takes it from there. No monthly retainer.",
-      href: "/usluge/starter-paket",
       cta: "Learn more"
     }
   ] as const) : ([
@@ -156,13 +149,6 @@ export default async function ServicesPage({ params }: Props) {
       price: "od €450",
       desc: "Nezavisna analiza naloga sa pisanim, prioritizovanim akcionim planom. Bez obaveze za dalju saradnju.",
       href: "/usluge/google-ads-audit",
-      cta: "Saznajte više"
-    },
-    {
-      title: "Kickstart",
-      price: "od €690",
-      desc: "Senior setup naloga za timove koji imaju in-house osobu za dalje vođenje. Bez mesečnog retainera.",
-      href: "/usluge/starter-paket",
       cta: "Saznajte više"
     }
   ] as const);
@@ -204,11 +190,11 @@ export default async function ServicesPage({ params }: Props) {
   ] as const);
 
   const routingRows = locale === "en" ? [
-    { range: "Under $5k/mo or just starting", fit: "Consulting or Kickstart" },
+    { range: "Under $5k/mo or just starting", fit: "Consulting or Audit" },
     { range: "$10k–100k/mo Google Ads spend", fit: "eCommerce Growth" },
     { range: "Omnichannel (Google + Meta + SEO + CRO) — $20k+/mo per channel", fit: "Performance Marketing (Funky)" }
   ] : [
-    { range: "Ispod €1.000/mes ili tek počinjete", fit: "Konsultacije / Kickstart" },
+    { range: "Ispod €1.000/mes ili tek počinjete", fit: "Konsultacije / Audit" },
     { range: "€1.500-5.000/mes eCommerce ad spend", fit: "Growth" },
     { range: "€5.000+/mes ili multi-channel", fit: "Performance (Funky)" }
   ];
@@ -280,7 +266,7 @@ export default async function ServicesPage({ params }: Props) {
   const faqs: { q: string; a: string; aRich?: ReactNode }[] = locale === "en" ? [
     {
       q: "How much does a Google Ads consultant cost?",
-      a: "Pricing depends on account scope and budget. A one-off consultation is $200/hour. A deep audit with a written action plan starts from $500. Monthly account management starts from $2,500/month, scaling with ad spend and complexity. No hidden fees — you get an exact number after I've reviewed the account, not a promised outcome upfront."
+      a: "Pricing depends on account scope, budget, and market. A one-off consultation is $200/hour. A deep audit with a written action plan is $1,500 (US), £750 (UK), or €750 (EU). Monthly account management starts from $2,500/month, scaling with ad spend and complexity. No hidden fees — you get an exact number after I've reviewed the account, not a promised outcome upfront."
     },
     {
       q: "What's the difference between a consultant and an agency?",

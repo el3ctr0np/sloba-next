@@ -28,8 +28,7 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
               subtitle: "You execute, I guide.",
               items: [
                 "1-on-1 consulting — $200/hour",
-                "Deep Audit + Action Plan — $500 (credited toward first month)",
-                "Kickstart project — from $990",
+                "Deep Audit + Action Plan — $1,500 (US) / £750 (UK), credited toward first month",
               ],
               ctaText: "View services",
               ctaHref: "/usluge",
@@ -64,8 +63,7 @@ export function WhatYouNeed({ locale }: WhatYouNeedProps) {
               subtitle: "Vi izvršavate, ja usmeravam.",
               items: [
                 "1-na-1 konsultacije - €150/sat",
-                "Deep Audit + Action Plan - od €450",
-                "Kickstart projekat - od €690",
+                "Deep Audit + Action Plan - €450, uračunava se u prvi mesec",
               ],
               ctaText: "Pogledajte usluge",
               ctaHref: "/usluge",

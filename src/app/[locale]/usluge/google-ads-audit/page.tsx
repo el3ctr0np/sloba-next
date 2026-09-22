@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Deep Audit + Action Plan | Slobodan Jelisavac — PPC Analysis"
       : "Deep Audit + Action Plan - Google Ads Audit | Slobodan Jelisavac",
     description: isEn
-      ? "Deep Audit + Action Plan reveals where you're losing money and how to improve ROAS. I analyze every campaign personally — 10+ years of senior experience, prioritized recommendations. From $500."
-      : "Deep Audit + Action Plan: profesionalni audit koji otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljnu analizu radim lično - 10+ godina iskustva, cena od €450.",
+      ? "Deep Audit + Action Plan reveals where you're losing money and how to improve ROAS. I analyze every campaign personally — 10+ years of senior experience, prioritized recommendations. £750 (UK), €750 (EU), $1,500 (US)."
+      : "Deep Audit + Action Plan: profesionalni audit koji otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljnu analizu radim lično - 10+ godina iskustva, cena €450.",
     locale,
     path: "/services/google-ads-audit",
     srPath: "/usluge/google-ads-audit",
@@ -36,6 +36,15 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
   const isEn = locale === "en";
 
   const ctaLabel = isEn ? "Schedule a Deep Audit" : "Zakažite Deep Audit";
+
+  // Cene audita po regionu, odluka Slobe 13.9.2026 (potvrđena 22.9.2026).
+  // SR ostaje jedinstveno €450 (routing.pathnames drži /sr i /en odvojeno).
+  const regionPrices = [
+    { region: "UK", price: "£750" },
+    { region: "EU", price: "€750" },
+    { region: "AUS", price: "$1,200 AUD" },
+    { region: "US", price: "$1,500" }
+  ];
 
   const problems = isEn ? [
     {
@@ -132,7 +141,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     {
       question: "How much does the Deep Audit + Action Plan cost?",
       answer:
-        "$500 for accounts up to about $5,000 in monthly spend. Larger or multi-channel accounts get custom pricing on request. It's a one-time fee, credited toward your first month of management if we start within 30 days."
+        "£750 (UK), €750 (EU), $1,200 AUD (Australia), or $1,500 (US) — for accounts spending upward of roughly $5,000/month. Larger or multi-channel accounts get custom pricing on request. It's a one-time fee, credited toward your first month of management if we start within 30 days."
     },
     {
       question: "What if I want you to take over management after the audit?",
@@ -163,7 +172,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     {
       question: "Koliko košta Deep Audit + Action Plan?",
       answer:
-        "€450 za naloge do oko €5.000 mesečnog spend-a. Veći ili multi-channel nalozi dobijaju cenu na upit. Jednokratna je i uračunava se u prvi mesec upravljanja ako krenemo u saradnju u roku od 30 dana."
+        "€450, za naloge sa mesečnim spend-om od oko €5.000 naviše. Veći ili multi-channel nalozi dobijaju cenu na upit. Jednokratna je i uračunava se u prvi mesec upravljanja ako krenemo u saradnju u roku od 30 dana."
     },
     {
       question: "Šta ako želim da preuzmete upravljanje posle audita?",
@@ -212,17 +221,56 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
       { "@type": "Country", name: "Germany" }
     ],
     serviceType: "Google Ads Audit",
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "USD",
-      price: "500",
-      priceSpecification: {
-        "@type": "UnitPriceSpecification",
-        price: "500",
+    offers: [
+      {
+        "@type": "Offer",
         priceCurrency: "USD",
-        description: "Deep Audit + Action Plan from $500, credited toward your first month of management if we start within 30 days."
+        price: "1500",
+        eligibleRegion: { "@type": "Country", name: "United States" },
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "1500",
+          priceCurrency: "USD",
+          description: "Deep Audit + Action Plan, $1,500 (US), credited toward your first month of management if we start within 30 days."
+        }
+      },
+      {
+        "@type": "Offer",
+        priceCurrency: "GBP",
+        price: "750",
+        eligibleRegion: { "@type": "Country", name: "United Kingdom" },
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "750",
+          priceCurrency: "GBP",
+          description: "Deep Audit + Action Plan, £750 (UK), credited toward your first month of management if we start within 30 days."
+        }
+      },
+      {
+        "@type": "Offer",
+        priceCurrency: "EUR",
+        price: "750",
+        eligibleRegion: { "@type": "Country", name: "Germany" },
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "750",
+          priceCurrency: "EUR",
+          description: "Deep Audit + Action Plan, €750 (EU), credited toward your first month of management if we start within 30 days."
+        }
+      },
+      {
+        "@type": "Offer",
+        priceCurrency: "AUD",
+        price: "1200",
+        eligibleRegion: { "@type": "Country", name: "Australia" },
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "1200",
+          priceCurrency: "AUD",
+          description: "Deep Audit + Action Plan, $1,200 AUD (Australia), credited toward your first month of management if we start within 30 days."
+        }
       }
-    }
+    ]
   } : {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -489,21 +537,33 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
         <div className="max-w-xl mx-auto mb-12">
           <div className="bg-white border-2 border-accent rounded-lg p-6 md:p-8 shadow-card">
             <h3 className="text-xl font-heading font-bold mb-2">Deep Audit + Action Plan</h3>
-            <p className="text-3xl font-heading font-bold text-primary mb-4">
-              {isEn ? "$500" : "€450"}
-            </p>
+            {isEn ? (
+              <div className="mb-4">
+                <ul className="divide-y divide-gray-100 border border-gray-200 rounded-lg overflow-hidden">
+                  {regionPrices.map((r) => (
+                    <li key={r.region} className="flex items-center justify-between px-4 py-2.5">
+                      <span className="text-sm font-medium text-gray-500">{r.region}</span>
+                      <span className="text-lg font-heading font-bold text-primary">{r.price}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : (
+              <p className="text-3xl font-heading font-bold text-primary mb-4">€450</p>
+            )}
             <p className="text-gray-600 text-base mb-4">
               {isEn ? (
                 <>
-                  For accounts up to about $5,000 in monthly spend. Larger or multi-channel
+                  For accounts spending upward of roughly $5,000 a month. Larger or multi-channel
                   accounts get custom pricing on request. The fee is credited toward your first
-                  month of management if we start working together within 30 days.
+                  month of management if we start working together within 30 days. Price applies
+                  to the market your business bills from.
                 </>
               ) : (
                 <>
-                  Za naloge do oko €5.000 mesečnog spend-a. Veći ili multi-channel nalozi
-                  dobijaju cenu na upit. Cena se uračunava u prvi mesec upravljanja ako krenemo u
-                  saradnju u roku od 30 dana.
+                  Za naloge sa mesečnim spend-om od oko €5.000 naviše. Veći ili multi-channel
+                  nalozi dobijaju cenu na upit. Cena se uračunava u prvi mesec upravljanja ako
+                  krenemo u saradnju u roku od 30 dana.
                 </>
               )}
             </p>

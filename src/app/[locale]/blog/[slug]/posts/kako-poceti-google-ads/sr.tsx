@@ -495,12 +495,7 @@ export default function KakoPocetiGoogleAdsSR() {
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }} className="text-blue-700 underline">Agencija vs. freelancer: šta je pravo za vaš biznis</Link>.
       </p>
       <p>
-        Ako pre ulaganja budžeta samo želite proveru da li je vaš plan realan, <Link href="/usluge/konsultacije" className="text-blue-700 underline">konsultacija</Link> od €150/sat daje spoljni pogled na strukturu i budžet bez obaveze dužeg angažmana.
-      </p>
-      <p>
-        Postoji i srednje rešenje: profesionalno postavljen nalog koji dalje sami vodite. Pogledajte moje{" "}
-        <Link href="/usluge/starter-paket" className="text-blue-700 underline">Google Ads usluge</Link>{" "}
-        za senior setup naloga - dobijate čvrst temelj bez obaveze mesečnog angažmana.
+        Ako pre ulaganja budžeta samo želite proveru da li je vaš plan realan, <Link href="/usluge/konsultacije" className="text-blue-700 underline">konsultacija</Link> od €150/sat daje spoljni pogled na strukturu i budžet bez obaveze dužeg angažmana. Za postojeći nalog koji već troši, <Link href="/usluge/google-ads-audit" className="text-blue-700 underline">audit</Link> (€450) daje pisan akcioni plan bez obaveze dužeg angažmana.
       </p>
 
       <hr />
@@ -663,9 +658,9 @@ export default function KakoPocetiGoogleAdsSR() {
       <h2 id="povezani-vodici">Povezani vodiči</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-6">
-        <Link href="/usluge/starter-paket" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
-          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads Kickstart - senior setup naloga</p>
-          <p className="text-xs text-gray-500 mb-0">Profesionalno postavljen nalog koji dalje vodite sami - od €690</p>
+        <Link href="/usluge/google-ads-audit" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
+          <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Deep Audit + Action Plan</p>
+          <p className="text-xs text-gray-500 mb-0">Nezavisna analiza postojećeg naloga sa pisanim akcionim planom - €450</p>
         </Link>
         <Link href="/usluge/google-ads-upravljanje" className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">
           <p className="font-heading font-semibold text-gray-900 mb-1 text-sm">Google Ads upravljanje</p>

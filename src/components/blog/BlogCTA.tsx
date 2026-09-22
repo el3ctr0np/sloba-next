@@ -177,7 +177,7 @@ export function BlogCTA({
             {isEn ? "Requirements:" : "Uslovi:"}
           </p>
           <ul className="text-slate-400 text-sm space-y-1">
-            <li>{isEn ? "Ad spend: €1,500+/month (or £1,500+)" : "Ad spend: €1.500+/mesečno"}</li>
+            <li>{isEn ? "Ad spend: $1,500+/month" : "Ad spend: €1.500+/mesečno"}</li>
             <li>{isEn ? "Active account for 3+ months" : "Aktivan nalog minimum 3 meseca"}</li>
             <li>{isEn ? "eCommerce or Lead Gen business" : "eCommerce ili Lead Gen biznis"}</li>
           </ul>

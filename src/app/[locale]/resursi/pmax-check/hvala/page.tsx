@@ -78,7 +78,7 @@ export default async function PmaxCheckThankYouPage({ params }: Props) {
           <p className="text-slate-300 text-sm mb-6 max-w-md mx-auto">
             {sr
               ? "Provera pokazuje šta da gledate. Plaćeni audit je taj posao urađen umesto vas: prolazim kroz nalog i vraćam nalaz sa planom po prioritetu. Cena je od €450."
-              : "The check shows you what to look at. The paid audit is that work done for you: I go through the account and come back with the findings and a plan in priority order. It starts from $500."}
+              : "The check shows you what to look at. The paid audit is that work done for you: I go through the account and come back with the findings and a plan in priority order. £750 (UK), €750 (EU), or $1,500 (US)."}
           </p>
           <Link
             href="/usluge/google-ads-audit"
