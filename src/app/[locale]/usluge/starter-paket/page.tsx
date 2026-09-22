@@ -968,13 +968,13 @@ export default async function StarterPaketPage({ params }: Props) {
               {isEn ? "1-on-1 Consultations" : "1-on-1 konsultacije"}
             </Link>
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "kako-poceti-google-ads" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "how-to-start-google-ads" : "kako-poceti-google-ads" } }}
               className="hover:text-white transition-colors underline"
             >
               {isEn ? "How to Start with Google Ads" : "Kako početi sa Google Ads-om"}
             </Link>
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "how-much-does-google-ads-cost" : "koliko-kosta-google-ads" } }}
               className="hover:text-white transition-colors underline"
             >
               {isEn ? "How much does Google Ads cost?" : "Koliko košta Google Ads?"}

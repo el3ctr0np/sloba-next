@@ -608,19 +608,19 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
               {isEn ? "Google Ads Account Management" : "Upravljanje Google Ads nalogom"}
             </Link>
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-audit-vodic" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "google-ads-audit-checklist" : "google-ads-audit-vodic" } }}
               className="hover:text-white transition-colors underline"
             >
               {isEn ? "Google Ads Audit Guide" : "Google Ads audit vodič"}
             </Link>
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "google-ads-mistakes" : "google-ads-greske" } }}
               className="hover:text-white transition-colors underline"
             >
               {isEn ? "Common Google Ads Mistakes" : "Najčešće Google Ads greške"}
             </Link>
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "sta-je-roas" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "what-is-roas" : "sta-je-roas" } }}
               className="hover:text-white transition-colors underline"
             >
               {isEn ? "What is ROAS?" : "Šta je ROAS i kako ga meriti?"}

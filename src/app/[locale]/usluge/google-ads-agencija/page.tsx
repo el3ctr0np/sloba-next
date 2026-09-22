@@ -742,7 +742,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
               <>
                 Still weighing it up?{" "}
                 <Link
-                  href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
+                  href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "google-ads-agency-vs-freelancer" : "agencija-vs-freelancer" } }}
                   className="text-primary-dark underline"
                 >
                   Read the full agency vs freelancer breakdown →
@@ -752,7 +752,7 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
               <>
                 Još vagate?{" "}
                 <Link
-                  href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
+                  href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "google-ads-agency-vs-freelancer" : "agencija-vs-freelancer" } }}
                   className="text-primary-dark underline"
                 >
                   Pročitajte detaljno poređenje agencija naspram freelancera →
@@ -1012,13 +1012,13 @@ export default async function GoogleAdsAgencijaPage({ params }: Props) {
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "kako-izabrati-google-ads-konsultanta" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "how-to-choose-google-ads-consultant" : "kako-izabrati-google-ads-konsultanta" } }}
               className="hover:text-white transition-colors underline"
             >
               {isEn ? "How to choose a Google Ads consultant" : "Kako izabrati Google Ads konsultanta"}
             </Link>
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "agencija-vs-freelancer" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "google-ads-agency-vs-freelancer" : "agencija-vs-freelancer" } }}
               className="hover:text-white transition-colors underline"
             >
               {isEn ? "Agency vs freelancer" : "Agencija ili freelancer"}

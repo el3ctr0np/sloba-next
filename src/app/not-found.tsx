@@ -4,6 +4,20 @@ import { HeadScripts, GtmNoScript } from "@/components/analytics/HeadScripts";
 
 // Renders its own <html>/<body>: the root layout is a pass-through so that the
 // site can be statically rendered. See the note in src/app/layout.tsx.
+//
+// force-dynamic: without this, `next build` prerenders this page once as
+// static HTML (no dynamic segments feed it). Any request for a root-level
+// path that isn't a real route or a static asset — e.g. /llms-full.txt,
+// /rss.xml, /humans.txt — still has to be served by this page at runtime,
+// and Next has to fall back to rendering it dynamically for a URL it never
+// saw at build time. That "static at build, dynamic at request" mismatch
+// throws ("Page changed from static to dynamic at runtime ... reason:
+// headers") and surfaces as a 500 instead of a clean 404 (scan finding H1,
+// 22.9.2026) — AI crawlers hit this on almost every first request, since
+// /llms-full.txt and /rss.xml are exactly the paths they probe first.
+// Forcing this page dynamic up front removes the mismatch.
+export const dynamic = "force-dynamic";
+
 export default function NotFound() {
   return (
     <html lang="sr" className={fontVariables}>

@@ -830,11 +830,11 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
                 {locale === "en" ? "Kickstart" : "Kickstart"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href={{ pathname: "/blog/[slug]", params: { slug: "ecommerce-vs-b2b" } }} className="text-accent hover:text-accent-dark underline">
+              <Link href={{ pathname: "/blog/[slug]", params: { slug: locale === "en" ? "google-ads-ecommerce-vs-b2b" : "ecommerce-vs-b2b" } }} className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "eCommerce vs B2B" : "eCommerce vs B2B"}
               </Link>
               <span className="text-slate-600">•</span>
-              <Link href={{ pathname: "/blog/[slug]", params: { slug: "ga4-google-ads-integracija" } }} className="text-accent hover:text-accent-dark underline">
+              <Link href={{ pathname: "/blog/[slug]", params: { slug: locale === "en" ? "ga4-google-ads-integration" : "ga4-google-ads-integracija" } }} className="text-accent hover:text-accent-dark underline">
                 {locale === "en" ? "GA4 + Google Ads tracking" : "GA4 + Google Ads tracking"}
               </Link>
               <span className="text-slate-600">•</span>

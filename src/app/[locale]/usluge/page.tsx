@@ -941,7 +941,7 @@ export default async function ServicesPage({ params }: Props) {
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-slate-400">
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "koliko-kosta-google-ads" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: locale === "en" ? "how-much-does-google-ads-cost" : "koliko-kosta-google-ads" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en" ? "How much does Google Ads cost?" : "Koliko košta Google Ads?"}
@@ -953,7 +953,7 @@ export default async function ServicesPage({ params }: Props) {
               {locale === "en" ? "Google Ads guide for beginners" : "Google Ads vodič za početnike"}
             </Link>
             <Link
-              href={{ pathname: "/blog/[slug]", params: { slug: "google-ads-greske" } }}
+              href={{ pathname: "/blog/[slug]", params: { slug: locale === "en" ? "google-ads-mistakes" : "google-ads-greske" } }}
               className="hover:text-white transition-colors underline"
             >
               {locale === "en" ? "Most common Google Ads mistakes" : "Najčešće Google Ads greške"}

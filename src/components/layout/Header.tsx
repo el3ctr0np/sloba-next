@@ -38,13 +38,22 @@ export function Header() {
   const isGlossaryTerm = pathname === "/recnik/[term]";
   const currentTermSlug = isGlossaryTerm && params?.term ? (params.term as string) : null;
 
+  // Insights reports. Same fix as the glossary term above — usePathname
+  // returns the raw route template "/insights/[slug]", which without params
+  // renders the literal string "/en/insights/[slug]" in both switcher links
+  // (404 either way, scan finding H5, 22.9.2026).
+  const isInsightsPost = pathname === "/insights/[slug]";
+  const currentInsightsSlug = isInsightsPost && params?.slug ? (params.slug as string) : null;
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const resolvedPathname = useMemo(() => {
     if (currentCaseStudySlug) return `/case-studies/${currentCaseStudySlug}` as any;
+    if (currentInsightsSlug)
+      return { pathname: "/insights/[slug]", params: { slug: currentInsightsSlug } } as any;
     if (currentTermSlug)
       return { pathname: "/recnik/[term]", params: { term: currentTermSlug } } as any;
     return pathname;
-  }, [currentCaseStudySlug, currentTermSlug, pathname]);
+  }, [currentCaseStudySlug, currentInsightsSlug, currentTermSlug, pathname]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const srHref = useMemo(() => {

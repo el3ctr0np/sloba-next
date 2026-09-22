@@ -10,6 +10,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
+  // `path` je uvek EN putanja, `srPath` je SR putanja kad se razlikuje — vidi
+  // src/lib/metadata.ts. SR grana je ranije slala SR putanju kao `path` bez
+  // `srPath`, pa je hreflang za EN ispao "/en/resursi/budzet-kalkulator"
+  // (preusmerava 308 na pravu EN putanju umesto da je direktno pokaze — nalaz
+  // M4, scan 22.9.2026).
   if (locale === "en") {
     return buildMetadata({
       title: "Google Ads Budget Calculator | Slobodan Jelisavac",
@@ -26,7 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       "Unesite max CPA, cilj i conversion rate - dobijate max CPC koji smete da platite i realan mesečni budžet. Transparentna formula, bez ostavljanja emaila.",
     locale,
-    path: "/resursi/budzet-kalkulator",
+    path: "/resources/budget-calculator",
+    srPath: "/resursi/budzet-kalkulator",
   });
 }
 
