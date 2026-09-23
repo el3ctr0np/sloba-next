@@ -49,7 +49,10 @@ export function Footer() {
             <p className="font-heading font-bold text-xl mb-1">
               Slobodan Jelisavac
             </p>
-            <p className="text-gray-500 text-xs mb-3">
+            {/* gray-400, ne gray-500: footer je bg-slate-900 (taman), a
+                gray-500 na toj podlozi daje 3,68:1 (N7, 23.9.2026 audit) -
+                gray-400 je vec dokazan obrazac u ostatku ove kolone. */}
+            <p className="text-gray-400 text-xs mb-3">
               {t("legalName")}
             </p>
             <p className="text-gray-400 text-sm mb-4">

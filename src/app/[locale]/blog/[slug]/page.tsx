@@ -4306,7 +4306,9 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="sticky top-24 space-y-4">
                 <TableOfContents locale={locale} />
                 <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
-                  <div className="text-xs uppercase tracking-wider text-yellow-600 font-bold">
+                  {/* yellow-700, ne yellow-600: na bg-white daje ~2,9:1
+                      (N7, 23.9.2026 audit) - yellow-700 daje ~4,9:1. */}
+                  <div className="text-xs uppercase tracking-wider text-yellow-700 font-bold">
                     {locale === "en" ? "Free video audit" : "Besplatni video audit"}
                   </div>
                   <h2 className="mt-2 text-lg font-heading font-semibold">

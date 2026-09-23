@@ -153,11 +153,11 @@ export function ContactForm() {
             className={`${inputClass} ${budget ? "text-gray-900" : "text-gray-400"}`}
           >
             <option value="" disabled>
-              {sr ? "— Izaberite —" : "— Select —"}
+              {sr ? "- Izaberite -" : "— Select —"}
             </option>
             <option value="<500">{sr ? "Do €500/mesec" : "Under $500/month"}</option>
-            <option value="500-1500">{sr ? "€500 – €1.500/mesec" : "$500 – $1,500/month"}</option>
-            <option value="1500-5000">{sr ? "€1.500 – €5.000/mesec" : "$1,500 – $5,000/month"}</option>
+            <option value="500-1500">{sr ? "€500 - €1.500/mesec" : "$500 – $1,500/month"}</option>
+            <option value="1500-5000">{sr ? "€1.500 - €5.000/mesec" : "$1,500 – $5,000/month"}</option>
             <option value="5000+">{sr ? "€5.000+/mesec" : "$5,000+/month"}</option>
             <option value="not-sure">{sr ? "Nisam siguran/na" : "Not sure yet"}</option>
           </select>
@@ -180,7 +180,7 @@ export function ContactForm() {
           className={`${inputClass} ${leadSource ? "text-gray-900" : "text-gray-400"}`}
         >
           <option value="" disabled>
-            {sr ? "— Izaberite —" : "— Select —"}
+            {sr ? "- Izaberite -" : "— Select —"}
           </option>
           {LEAD_SOURCE_OPTIONS.map((opt) => (
             <option key={opt.value} value={opt.value}>

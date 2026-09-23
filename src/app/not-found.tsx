@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { inter, fontVariables } from "@/lib/fonts";
 import { HeadScripts, GtmNoScript } from "@/components/analytics/HeadScripts";
 
@@ -17,6 +18,16 @@ import { HeadScripts, GtmNoScript } from "@/components/analytics/HeadScripts";
 // /llms-full.txt and /rss.xml are exactly the paths they probe first.
 // Forcing this page dynamic up front removes the mismatch.
 export const dynamic = "force-dynamic";
+
+// Own metadata: without this the page fell back to the root layout's
+// metadata (title "Slobodan Jelisavac - Google Ads Strategist", description
+// ending in "AI-first optimizacije") — stale copy on a 404 (N3, 23.9.2026
+// audit). description: null stops it inheriting the parent's description
+// instead of just leaving it unset (Next.js metadata field resolution).
+export const metadata: Metadata = {
+  title: "Stranica nije pronađena | Slobodan Jelisavac",
+  description: null,
+};
 
 export default function NotFound() {
   return (
@@ -54,20 +65,32 @@ export default function NotFound() {
               </Link>
             </div>
             <div className="mt-12 flex flex-wrap gap-4 justify-center text-sm text-slate-500">
-              <Link href="/sr/usluge" className="hover:text-white transition-colors">
-                Usluge
-              </Link>
               <Link href="/sr/blog" className="hover:text-white transition-colors">
                 Blog
               </Link>
               <Link
-                href="/sr/case-studies"
+                href="/sr/usluge/google-ads-audit"
                 className="hover:text-white transition-colors"
               >
-                Case Studies
+                Audit
               </Link>
               <Link href="/sr/kontakt" className="hover:text-white transition-colors">
                 Kontakt
+              </Link>
+              <span className="text-slate-700" aria-hidden="true">
+                |
+              </span>
+              <Link href="/en/blog" className="hover:text-white transition-colors">
+                Blog (EN)
+              </Link>
+              <Link
+                href="/en/services/google-ads-audit"
+                className="hover:text-white transition-colors"
+              >
+                Audit (EN)
+              </Link>
+              <Link href="/en/contact" className="hover:text-white transition-colors">
+                Contact (EN)
               </Link>
             </div>
           </div>

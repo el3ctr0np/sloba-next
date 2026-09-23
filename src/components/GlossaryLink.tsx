@@ -28,7 +28,13 @@ export function GlossaryLink({ slug, children, className = "" }: Props) {
   return (
     <Link
       href={{ pathname: "/recnik", hash: slug }}
-      className={`text-primary border-b border-dotted border-primary/40 hover:border-primary transition-colors ${className}`}
+      // !text-primary-dark, ne text-primary: #1a73e8 na beloj/svetloj podlozi
+      // daje ~4,5:1, granica koju Lighthouse meri kao neuspeh (N7, 23.9.2026
+      // audit) - primary-dark (#1557b0) daje ~6,9:1. "!" je obavezan: unutar
+      // .prose (blog telo) --tw-prose-links (globals.css) pobedjuje obicnu
+      // utility klasu bez obzira na boju, isti uzrok kao .prose a.text-white
+      // ispod u globals.css.
+      className={`!text-primary-dark border-b border-dotted border-primary-dark/40 hover:border-primary-dark transition-colors ${className}`}
       title={`Vidi definiciju - ${slug.toUpperCase()}`}
     >
       {children ?? slug.toUpperCase()}

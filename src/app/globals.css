@@ -128,6 +128,18 @@
   text-decoration: none;
 }
 
+/* Isti razlog kao gore: linkovi na tamnim CTA kutijama unutar posta (bg-slate-900
+   sa "text-white hover:text-yellow-400", 16 fajlova u src/app/[locale]/blog/[slug]/posts/)
+   dobijaju --tw-prose-links (#1a73e8) umesto belog, sto na tamnoj podlozi pada
+   ispod 4,5:1 (N7, 23.9.2026 audit). Hover mora ostati eksplicitan ovde jer
+   unlayered CSS bije i hover: utility klasu. */
+.prose a.text-white {
+  color: #fff;
+}
+.prose a.text-white:hover {
+  color: #facc15;
+}
+
 /* Print: the audit result has to survive being printed or saved as PDF, because
    the whole point is that a findings list can leave the page and be sent to
    whoever runs the account. Deliberately outside @layer — unlayered CSS beats

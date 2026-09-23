@@ -623,9 +623,12 @@ const nextConfig: NextConfig = {
         key: "Permissions-Policy",
         value: "camera=(), microphone=(), geolocation=(), browsing-topics=()"
       },
+      // "preload" uklonjen 23.9.2026 (N6): domen nije na hstspreload.org listi,
+      // a prijava je trajna i tesko se povlaci. max-age i includeSubDomains
+      // ostaju - i dalje forsiraju HTTPS na sve buduce posete i poddomene.
       {
         key: "Strict-Transport-Security",
-        value: "max-age=63072000; includeSubDomains; preload"
+        value: "max-age=63072000; includeSubDomains"
       },
       { key: "X-DNS-Prefetch-Control", value: "on" },
       {
