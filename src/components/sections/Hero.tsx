@@ -125,7 +125,7 @@ export function Hero({
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                 </div>
                 <span className="text-[11px] font-bold text-slate-900 uppercase tracking-wider">
-                  {isEn ? "Google Ads Event — Belgrade 2025" : "Google Ads Event — Beograd 2025"}
+                  {isEn ? "Google Ads Event — Belgrade 2025" : "Google Ads Event - Beograd 2025"}
                 </span>
               </div>
             </div>

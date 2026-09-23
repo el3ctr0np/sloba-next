@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "Politika Privatnosti — Slobodan Jelisavac | Google Ads Konsultant",
-    description: "Kako Slobodan Jelisavac prikuplja, koristi i štiti vaše lične podatke — kontakt forme, analitika i remarketing.",
+    title: "Politika Privatnosti - Slobodan Jelisavac | Google Ads Konsultant",
+    description: "Kako Slobodan Jelisavac prikuplja, koristi i štiti vaše lične podatke - kontakt forme, analitika i remarketing.",
     locale,
     path: "/privacy",
     srPath: "/privatnost",
@@ -194,17 +194,17 @@ export default async function PrivacyPolicyPage({ params }: Props) {
               <p>U zavisnosti od toga kako koristite sajt, mogu prikupiti:</p>
               <ul className="list-disc pl-6 space-y-1">
                 <li>
-                  <strong>Podatke iz kontakt forme</strong> — ime, email adresu, sajt (ako je
+                  <strong>Podatke iz kontakt forme</strong> - ime, email adresu, sajt (ako je
                   navedete) i informacije o budžetu/biznisu koje delite prilikom zakazivanja
                   konsultacije.
                 </li>
                 <li>
-                  <strong>Analitičke podatke</strong> — posećene stranice, vreme provedeno na
+                  <strong>Analitičke podatke</strong> - posećene stranice, vreme provedeno na
                   sajtu, informacije o uređaju i pregledaču, prikupljene putem Google
                   Analytics 4 (GA4) i Google Tag Manager (GTM) kolačića.
                 </li>
                 <li>
-                  <strong>Podatke za oglašavanje</strong> — Meta pixel može zabeležiti vašu
+                  <strong>Podatke za oglašavanje</strong> - Meta pixel može zabeležiti vašu
                   posetu i interakcije na sajtu u svrhu oglašavanja.
                 </li>
               </ul>
@@ -242,15 +242,15 @@ export default async function PrivacyPolicyPage({ params }: Props) {
               <p>Podaci mogu biti podeljeni sa, ili obrađeni od strane, sledećih servisa trećih strana:</p>
               <ul className="list-disc pl-6 space-y-1">
                 <li>
-                  <strong>Google Analytics / Google Ads</strong> — analitika sajta i merenje
+                  <strong>Google Analytics / Google Ads</strong> - analitika sajta i merenje
                   performansi oglašavanja.
                 </li>
                 <li>
-                  <strong>Meta (Facebook/Instagram)</strong> — oglašavanje i remarketing putem
+                  <strong>Meta (Facebook/Instagram)</strong> - oglašavanje i remarketing putem
                   Meta pixel-a.
                 </li>
                 <li>
-                  <strong>FormSubmit</strong> — koristi se za prosleđivanje poruka iz kontakt
+                  <strong>FormSubmit</strong> - koristi se za prosleđivanje poruka iz kontakt
                   forme na moj email.
                 </li>
               </ul>

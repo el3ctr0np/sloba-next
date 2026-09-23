@@ -784,7 +784,7 @@ export default function GoogleShoppingSrbija2026SR() {
                 name: "Koliko SKU-ova mi treba da bi Shopping bio isplativ?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Minimum 50 aktivnih SKU-ova sa prosečnom vrednosti porudžbine iznad 2,500-3,000 RSD. Sa manjim katalogom ili nižim AOV, setup troškovi (feed, Merchant Center, kampanje) mogu premašiti ROI. Idealno: 200+ SKU-ova, jasna segmentacija po kategorijama, i margina minimum 30% na best-sellerima."
+                  text: "Minimum 50 aktivnih SKU-ova sa prosečnom vrednosti porudžbine iznad 2,500-3,000 RSD. Sa manjim katalogom ili nižim AOV, setup troškovi mogu premašiti ROI. Idealno: 200+ SKU-ova, jasna segmentacija po kategorijama, i margina minimum 30% na best-sellerima."
                 }
               },
               {
@@ -792,7 +792,7 @@ export default function GoogleShoppingSrbija2026SR() {
                 name: "Da li Shopping funkcioniše i za usluge (ne samo fizičke proizvode)?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ne - Google Shopping je isključivo za fizičke (i digitalne) proizvode koji se prodaju online. Za usluge koristite Search kampanje ili Local Services Ads (kada budu dostupni u Srbiji). Shopping zahteva product feed sa cenama, slikama i dostupnošću - atributima koji nisu primenjivi za usluge."
+                  text: "Ne - Google Shopping je isključivo za fizičke (i digitalne) proizvode koji se prodaju online. Za usluge koristite Search kampanje. Shopping zahteva product feed sa cenama, slikama i dostupnošću - atributima koji nisu primenjivi za usluge."
                 }
               },
               {
@@ -800,15 +800,15 @@ export default function GoogleShoppingSrbija2026SR() {
                 name: "Šta je razlika između Standard Shopping i Performance Max za eCommerce?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Standard Shopping daje više kontrole: vidite search terms, možete segmentirati, i imate transparentnost. Performance Max automatizuje sve - koristi machine learning ali daje manje uvida. Moja preporuka za srpsko tržište: počnite sa Standard Shopping prve 3 meseca dok skupljate podatke, zatim testirajte PMax uz Signal audiences. Više u vodiču o Google Shopping kampanjama."
+                  text: "Standard Shopping daje više kontrole: vidite search terms, možete segmentirati, i imate transparentnost. Performance Max automatizuje sve ali daje manje uvida. Moja preporuka za srpsko tržište: počnite sa Standard Shopping prve 3 meseca dok skupljate podatke, zatim testirajte PMax uz Signal audiences."
                 }
               },
               {
                 "@type": "Question",
-                name: "Mogu li ja sam podesiti Shopping ili mi treba agencija/freelancer?",
+                name: "Mogu li ja sam podesiti Shopping ili mi treba specijalist?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Merchant Center setup i osnovni feed možete sami (posebno ako koristite WooCommerce + YITH Google Shopping plugin, ili Shopify). Kampanjska optimizacija, tiered struktura, i bid management zahtevaju iskustvo. Prema mom iskustvu, DIY setup sa 0 znanja košta više (u propuštenim konverzijama i lošim kampanjama) nego mesec-dva rada sa iskusnim specijalistom koji vas nauči sistem."
+                  text: "Merchant Center setup i osnovni feed možete sami (posebno sa WooCommerce + plugin-om, ili Shopify). Kampanjska optimizacija, tiered struktura, i bid management zahtevaju iskustvo. DIY setup sa 0 znanja obično košta više u propuštenim konverzijama nego rad sa iskusnim specijalistom."
                 }
               },
               {
@@ -824,7 +824,7 @@ export default function GoogleShoppingSrbija2026SR() {
                 name: "Šta je POAS i zašto je važniji od ROAS-a za Shopping?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "POAS (Profit on Ad Spend) = (Revenue - COGS) / Ad Spend. Za razliku od ROAS koji meri ukupni revenue, POAS meri profitabilnost. Ako prodajete proizvod za 5,000 RSD sa 40% maržom (2,000 RSD profita) i platite 1,000 RSD na ads - ROAS je 5x, POAS je 2x. Target ROAS bez marže može voditi ka kampanjama koje generišu revenue ali troše profit. Uvek znajte COGS pre postavljanja bidding targeta."
+                  text: "POAS (Profit on Ad Spend) = (Revenue - COGS) / Ad Spend. Za razliku od ROAS koji meri ukupni revenue, POAS meri profitabilnost. Uvek znajte COGS po kategoriji pre postavljanja bidding targeta - visok ROAS uz lošu maržu može značiti da trošite profit."
                 }
               }
             ]

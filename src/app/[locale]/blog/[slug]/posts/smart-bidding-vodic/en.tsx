@@ -966,7 +966,7 @@ export default function SmartBiddingGuideEN() {
         </li>
         <li>
           <a
-            href="https://support.google.com/google-ads/answer/7365136"
+            href="https://support.google.com/google-ads/answer/10369906"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
@@ -976,7 +976,7 @@ export default function SmartBiddingGuideEN() {
         </li>
         <li>
           <a
-            href="https://support.google.com/google-ads/answer/2994573"
+            href="https://support.google.com/google-ads/answer/7074566"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"

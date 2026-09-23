@@ -196,14 +196,14 @@ export default async function ClientReportPage({
                   {metrics.slice(0, 6).map((m: any, i: number) => (
                     <tr key={m.period} className={`border-b border-white/5 ${i === 0 ? "text-white" : "text-slate-400"}`}>
                       <td className="py-3 font-medium">{formatPeriodLabel(m.period)}</td>
-                      <td className="text-right py-3">{m.impressions?.toLocaleString("sr-RS") ?? "—"}</td>
-                      <td className="text-right py-3">{m.clicks?.toLocaleString("sr-RS") ?? "—"}</td>
+                      <td className="text-right py-3">{m.impressions?.toLocaleString("sr-RS") ?? "-"}</td>
+                      <td className="text-right py-3">{m.clicks?.toLocaleString("sr-RS") ?? "-"}</td>
                       <td className="text-right py-3">
-                        {m.impressions && m.clicks ? ((m.clicks / m.impressions) * 100).toFixed(1) + "%" : "—"}
+                        {m.impressions && m.clicks ? ((m.clicks / m.impressions) * 100).toFixed(1) + "%" : "-"}
                       </td>
-                      <td className="text-right py-3">{m.adSpend ? `€${m.adSpend.toLocaleString("sr-RS")}` : "—"}</td>
-                      {isLocal && <td className="text-right py-3">{m.phoneCalls ?? "—"}</td>}
-                      {isLocal && <td className="text-right py-3">{m.jobsCompleted ?? "—"}</td>}
+                      <td className="text-right py-3">{m.adSpend ? `€${m.adSpend.toLocaleString("sr-RS")}` : "-"}</td>
+                      {isLocal && <td className="text-right py-3">{m.phoneCalls ?? "-"}</td>}
+                      {isLocal && <td className="text-right py-3">{m.jobsCompleted ?? "-"}</td>}
                     </tr>
                   ))}
                 </tbody>
@@ -286,7 +286,7 @@ function KPI({
   format?: "currency" | "decimal" | "number";
   icon: React.ReactNode;
 }) {
-  const displayValue = value === null || value === undefined ? "—" :
+  const displayValue = value === null || value === undefined ? "-" :
     format === "currency" ? `€${value.toLocaleString("sr-RS")}` :
     format === "decimal" ? value.toFixed(2) :
     value.toLocaleString("sr-RS");

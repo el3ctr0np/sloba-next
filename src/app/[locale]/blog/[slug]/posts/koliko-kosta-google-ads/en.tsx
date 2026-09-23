@@ -81,7 +81,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       </ul>
       <p className="text-base text-gray-500 mt-3">
         Read more about the auction system in the{" "}
-        <a href="https://support.google.com/google-ads/answer/1704342" target="_blank" rel="noopener noreferrer" className="underline">
+        <a href="https://support.google.com/google-ads/answer/6366577" target="_blank" rel="noopener noreferrer" className="underline">
           Google Ads Help Center
         </a>.
       </p>
@@ -542,7 +542,7 @@ export default function HowMuchDoesGoogleAdsCostEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: January 2026
+        Last updated: April 2026
       </div>
       <div className="text-sm text-gray-500">
         Author: Slobodan Jelisavac, Google Ads Consultant

@@ -45,8 +45,9 @@ export function LocalBusinessSchema({ locale }: { locale: string }) {
       {
         "@type": ["ProfessionalService", "LocalBusiness"],
         "@id": "https://www.slobodan-jelisavac.com/#organization",
-        name: "Digital Jelisavac",
-        alternateName: "Slobodan Jelisavac - Google Ads",
+        name: "Slobodan Jelisavac - Google Ads",
+        legalName: "Digital Jelisavac",
+        alternateName: "Digital Jelisavac",
         url: "https://www.slobodan-jelisavac.com",
         logo: "https://www.slobodan-jelisavac.com/logo.png",
         image: "https://www.slobodan-jelisavac.com/og/homepage.png",
@@ -54,8 +55,8 @@ export function LocalBusinessSchema({ locale }: { locale: string }) {
           ? "Senior-led Google Ads for brands that want results, not overhead."
           : "Senior-led Google Ads za brendove koji žele rezultate, ne troškove.",
         description: isEn
-          ? "Digital Jelisavac is a senior-led boutique Google Ads agency, led personally by Slobodan Jelisavac. Specialized in Search, Shopping, and Performance Max for eCommerce, B2B and SaaS brands."
-          : "Digital Jelisavac je senior-led boutique Google Ads agencija koju lično vodi Slobodan Jelisavac. Specijalizovana za Search, Shopping i Performance Max za eCommerce, B2B i SaaS brendove.",
+          ? "Slobodan Jelisavac personally runs Google Ads accounts for eCommerce, B2B, and SaaS brands, trading legally as Digital Jelisavac. Specialized in Search, Shopping, and Performance Max."
+          : "Slobodan Jelisavac lično vodi Google Ads naloge za eCommerce, B2B i SaaS brendove, posluje pod pravnim imenom Digital Jelisavac. Specijalizovan za Search, Shopping i Performance Max.",
         email: "info@slobodan-jelisavac.com",
         foundingDate: "2020-01-01",
         founder: { "@id": "https://www.slobodan-jelisavac.com/#person" },

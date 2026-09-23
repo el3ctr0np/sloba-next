@@ -328,7 +328,7 @@ export default function PerformanceMaxVsStandardShoppingEN() {
                 name: "Will Performance Max cannibalize my brand traffic?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes, if you don't stop it. Without brand exclusions, PMax spends on people already searching for your brand and reports those conversions as its own — a tax on your own name for sales that would have happened anyway through cheap brand Search. Apply brand exclusions (via a Google rep or the account-level setting) and route branded demand to a dedicated brand Search campaign, so PMax stays focused on incremental, non-brand conversions."
+                  text: "Yes, if you don't stop it. Without brand exclusions, PMax spends on people already searching for your brand and reports those conversions as its own — a tax on your own name for sales that would have happened anyway. Apply brand exclusions and route branded demand to a dedicated brand Search campaign, so PMax stays focused on incremental, non-brand conversions."
                 }
               },
               {
@@ -336,7 +336,7 @@ export default function PerformanceMaxVsStandardShoppingEN() {
                 name: "Why did my CPC jump after switching to PMax?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "It's common. When accounts migrated from Smart Shopping to PMax, many saw CPCs climb — in some cases close to double — for similar traffic. PMax bids across more surfaces (Search, Shopping, YouTube, Display, Discover) and reports less transparently, so the extra cost isn't always visible. Watch your CPC trend for the first few weeks after launch, and consider keeping high-margin or CPC-sensitive products in Standard Shopping where you can cap the bid."
+                  text: "It's common. Migrating from Smart Shopping to PMax, many advertisers saw CPCs climb — in some cases close to double — for similar traffic. PMax bids across more surfaces and reports less transparently, so the extra cost isn't always visible. Watch the CPC trend for the first few weeks, and keep CPC-sensitive products in Standard Shopping where you can cap the bid."
                 }
               },
               {
@@ -344,7 +344,7 @@ export default function PerformanceMaxVsStandardShoppingEN() {
                 name: "Can I run Standard Shopping and Performance Max at the same time?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes, and in 2026 it's often the stronger setup. Since October 2024, Google decides the overlapping auction by Ad Rank rather than giving PMax automatic priority, so a well-built Standard Shopping campaign actually competes instead of being overridden. An Optmyzr study of 24,702 campaigns found 82% of advertisers already run PMax alongside Shopping or Search rather than PMax-only — that is a snapshot of common practice, not proof that the split itself causes better results. The real case for running both is the division of labour: PMax scales the catalog and finds demand you would never bid on, while Standard Shopping keeps control and search-term visibility where you need them."
+                  text: "Yes, and in 2026 it's often the stronger setup. Since October 2024, the overlapping auction is decided by Ad Rank rather than giving PMax automatic priority, so a well-built Standard Shopping campaign actually competes. An Optmyzr study of 24,702 campaigns found 82% of advertisers already run PMax alongside Shopping or Search rather than PMax-only — that's a snapshot of common practice, not proof that the split itself causes better results. The real case for running both is the division of labour: PMax scales the catalog and finds demand you'd never bid on, while Standard Shopping keeps control and search-term visibility where you need them."
                 }
               },
               {
@@ -352,7 +352,7 @@ export default function PerformanceMaxVsStandardShoppingEN() {
                 name: "How many conversions do I need for Performance Max?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Use one scale: under 30 conversions a month, don't introduce PMax at all, because its bidding starves for signal and behaves erratically. Between 30 and 50 is a grey zone where you can test it, but with modest expectations and a close eye on spend. Past 50 conversions a month, PMax earns the primary slot. That is a practitioner's rule of thumb from running these accounts, not a published Google minimum — Google does not state a conversion threshold for PMax. Under the threshold, launch Standard Shopping on manual CPC (or Maximize Clicks with a max CPC limit) so you keep a hard lid on click cost while conversion data accumulates, then move to value-based bidding once there is enough signal to feed it."
+                  text: "Use one scale: under 30 conversions a month, don't introduce PMax at all — its bidding starves for signal and behaves erratically. Between 30 and 50 is a grey zone where you can test it, but with modest expectations and a close eye on spend. Past 50, PMax earns the primary slot. That's a practitioner's rule of thumb from running these accounts, not a published Google minimum — Google doesn't state a conversion threshold for PMax. Under the threshold, launch Standard Shopping on manual CPC (or Maximize Clicks with a max CPC limit) so you keep a hard lid on click cost while conversion data accumulates, then move to value-based bidding once there's enough signal to feed it."
                 }
               },
               {
@@ -360,7 +360,7 @@ export default function PerformanceMaxVsStandardShoppingEN() {
                 name: "Why is Performance Max reporting so limited?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "By design. PMax hides full search terms, doesn't cleanly separate Shopping from Display or YouTube performance, and gives limited asset-level data. Google added some more transparency through 2026, but it's still well short of Standard Shopping. If you need to know exactly what drove a result, keep those products in Standard Shopping, where you get full search-term visibility and can add negatives."
+                  text: "By design. PMax hides full search terms, doesn't cleanly separate Shopping from Display or YouTube, and gives limited asset-level data. Google added some more transparency through 2026, but it's still well short of Standard Shopping. If you need to know exactly what drove a result, keep those products in Standard Shopping."
                 }
               },
               {
@@ -368,7 +368,7 @@ export default function PerformanceMaxVsStandardShoppingEN() {
                 name: "Standard Shopping or Performance Max for a small catalog?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Standard Shopping. Under about 50 SKUs, PMax's automation doesn't have enough product variety or signal to optimize across, so it tends to spin without improving. Standard Shopping runs well on a lean catalog, gives you a CPC ceiling and search-term visibility, and is the better starting point until your catalog and conversion volume grow enough to justify PMax."
+                  text: "Standard Shopping. Under about 50 SKUs, PMax's automation doesn't have enough product variety or signal to optimize across. Standard Shopping runs well on a lean catalog, gives you a CPC ceiling and search-term visibility, and is the better starting point until your catalog and conversion volume grow enough to justify PMax."
                 }
               }
             ]

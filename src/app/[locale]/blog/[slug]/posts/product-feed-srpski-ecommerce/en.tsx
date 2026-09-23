@@ -500,7 +500,7 @@ export default function ProductFeedSerbianEcommerceEN() {
                 name: "Which feed format is best — XML, TXT, or Google Sheets?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "There's no universally 'best' format — it depends on catalogue size and platform. XML is the standard for plugins and Content API integrations. Google Sheets is great for small catalogues (under 50-100 products) without a developer. TXT/CSV is used less often manually, but some custom systems generate it automatically. More important than the format is that it's updated regularly and accurately."
+                  text: "There's no universally \"best\" format — it depends on catalogue size and platform. XML is the standard for plugins and Content API integrations. Google Sheets is great for small catalogues (under 50-100 products) without a developer. More important than the format is that it's updated regularly and accurately."
                 }
               },
               {
@@ -508,7 +508,7 @@ export default function ProductFeedSerbianEcommerceEN() {
                 name: "How often should I update the product feed?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google recommends updating the entire feed at least once a day, and for availability (stock status) ideally in real time or several times a day. If your feed generator supports automatic scheduled fetching, set it to a daily cycle as an absolute minimum."
+                  text: "Google recommends updating the entire feed at least once a day, and for availability ideally in real time or several times a day. Set an automatic scheduled fetch to a daily cycle as an absolute minimum."
                 }
               },
               {
@@ -516,7 +516,7 @@ export default function ProductFeedSerbianEcommerceEN() {
                 name: "Does the product title affect cost per click (CPC)?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Indirectly, yes. A precise, well-structured title improves matching relevance with searches, which affects how much quality traffic you get and how efficiently Google spends the budget. A bad title doesn't directly raise CPC, but it reduces the chance the product shows up for the right searches at all, which effectively raises the cost per conversion."
+                  text: "Indirectly, yes. A precise title improves matching relevance, which affects traffic quality. A bad title reduces the chance the product shows up for the right searches at all, which effectively raises the cost per conversion."
                 }
               },
               {
@@ -524,7 +524,7 @@ export default function ProductFeedSerbianEcommerceEN() {
                 name: "What are custom labels and are they mandatory?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Custom labels (custom_label_0 through custom_label_4) are five free-form fields you define yourself for product segmentation — by margin, season, bestseller status, and similar. They aren't mandatory and don't affect matching, but they're a key tool for more precise bidding across the campaign when you want a different bid strategy for different catalogue segments."
+                  text: "Custom labels (custom_label_0 through custom_label_4) are five free-form fields for product segmentation — by margin, season, bestseller status. They aren't mandatory, but they're a key tool for more precise bidding by catalogue segment."
                 }
               },
               {
@@ -532,7 +532,7 @@ export default function ProductFeedSerbianEcommerceEN() {
                 name: "How do I fix disapproved products in the feed?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The first step is Merchant Center Diagnostics (Products → Diagnostics) — Google lists the exact reason for the disapproval for every product there, with a link to the relevant policy. The most common causes are price mismatches, a missing GTIN, promotional text in the title, or watermarked images. Fix the cause, wait for the next feed fetch, and the product gets automatically re-checked."
+                  text: "The first step is Merchant Center Diagnostics (Products → Diagnostics) — Google lists the exact reason for the disapproval for every product there. The most common causes: price mismatches, a missing GTIN, promotional text in the title, or watermarked images."
                 }
               },
               {
@@ -540,7 +540,7 @@ export default function ProductFeedSerbianEcommerceEN() {
                 name: "Can I use the same feed for Google Shopping and Meta Shops?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Not directly — Google Merchant Center and Meta Commerce Manager are separate platforms with their own attribute specifications, although they overlap quite a bit. Many feed tools and platforms (Shopify apps, WooCommerce plugins) can generate both feeds from the same source data on the site, but each feed is uploaded to its own platform separately."
+                  text: "Not directly — these are separate platforms with their own specifications, although they overlap quite a bit. Many feed tools can generate both feeds from the same source data on the site, but each is uploaded separately."
                 }
               }
             ]

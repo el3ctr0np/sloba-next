@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "Case Studies | Google Ads Rezultati — Slobodan Jelisavac",
+    title: "Case Studies | Google Ads Rezultati - Slobodan Jelisavac",
     description: "Studije slučaja iz Google Ads prakse, bez imena klijenata: licitiranje na profit za UK eCommerce, merenje za SaaS, lansiranje brenda i audit naloga.",
     locale,
     path: "/case-studies",
@@ -100,7 +100,7 @@ export default async function CaseStudiesPage({ params }: Props) {
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
               {locale === "en"
                 ? "Case Studies — real results for real businesses"
-                : "Case Studies — realni rezultati za realne biznise"}
+                : "Case Studies - realni rezultati za realne biznise"}
             </h1>
 
             <p className="text-lg text-slate-300 mb-8">

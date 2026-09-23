@@ -452,7 +452,7 @@ export default function MerchantCenterSrbijaSetupSR() {
                 name: "Šta ako nemam GTIN barkod za moje proizvode?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ako prodajete sopstvenu marku (private label) bez GTIN-a, popunite brand i MPN (manufacturer part number) atribute umesto GTIN-a, ili aplicirajte za GTIN exemption kroz Merchant Center. Za brandovane proizvode poznatih proizvođača, GTIN je praktično obavezan - bez njega rizikujete disapproval ili ograničen reach."
+                  text: "Ako prodajete sopstvenu marku (private label) bez GTIN-a, popunite brand i MPN (manufacturer part number) atribute umesto GTIN-a, ili aplicirajte za GTIN exemption kroz Merchant Center. Za brandovane proizvode poznatih proizvođača, GTIN je praktično obavezan."
                 }
               },
               {
@@ -468,7 +468,7 @@ export default function MerchantCenterSrbijaSetupSR() {
                 name: "Zašto mi je proizvod disapproved iako izgleda ispravno?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Najčešći uzroci: mismatch cene između sajta i feed-a, nedostajući GTIN za brandovan proizvod, promotivni tekst u title-u, ili slika sa watermark-om. Proverite Diagnostics sekciju u Merchant Center-u - tamo Google navodi tačan razlog za svaki disapproved proizvod, sa linkom ka relevantnoj politici."
+                  text: "Najčešći uzroci: mismatch cene između sajta i feed-a, nedostajući GTIN za brandovan proizvod, promotivni tekst u title-u, ili slika sa watermark-om. Proverite Diagnostics sekciju u Merchant Center-u - tamo Google navodi tačan razlog za svaki disapproved proizvod."
                 }
               },
               {
@@ -476,7 +476,7 @@ export default function MerchantCenterSrbijaSetupSR() {
                 name: "Da li mi treba Merchant Center ako prodajem samo preko Instagram/Facebook prodavnice?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ne za Meta Shops - to je odvojen katalog kroz Meta Commerce Manager. Merchant Center je specifično za Google Shopping oglase. Ako želite da se pojavljujete i na Google pretrazi i na Meta platformama, trebaće vam dva odvojena feed-a (mada mnogi alati mogu generisati oba iz istog izvora podataka)."
+                  text: "Ne za Meta Shops - to je odvojen katalog kroz Meta Commerce Manager. Merchant Center je specifično za Google Shopping oglase. Ako želite prisustvo na obe platforme, trebaće vam dva odvojena feed-a."
                 }
               }
             ]

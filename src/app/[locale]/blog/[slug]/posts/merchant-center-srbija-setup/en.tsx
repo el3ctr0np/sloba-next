@@ -452,7 +452,7 @@ export default function MerchantCenterSerbiaSetupEN() {
                 name: "What if I don't have a GTIN barcode for my products?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "If you sell your own private label without a GTIN, fill in the brand and MPN (manufacturer part number) attributes instead of GTIN, or apply for a GTIN exemption through Merchant Center. For branded products from well-known manufacturers, GTIN is practically required — without it you risk disapproval or limited reach."
+                  text: "If you sell your own private label without a GTIN, fill in the brand and MPN (manufacturer part number) attributes instead of GTIN, or apply for a GTIN exemption through Merchant Center. For branded products from well-known manufacturers, GTIN is practically required."
                 }
               },
               {
@@ -468,7 +468,7 @@ export default function MerchantCenterSerbiaSetupEN() {
                 name: "Why is my product disapproved even though it looks correct?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The most common causes: a price mismatch between the site and the feed, a missing GTIN for a branded product, promotional text in the title, or an image with a watermark. Check the Diagnostics section in Merchant Center — that's where Google lists the exact reason for every disapproved product, with a link to the relevant policy."
+                  text: "The most common causes: a price mismatch between the site and the feed, a missing GTIN for a branded product, promotional text in the title, or an image with a watermark. Check the Diagnostics section in Merchant Center — that's where Google lists the exact reason for every disapproved product."
                 }
               },
               {
@@ -476,7 +476,7 @@ export default function MerchantCenterSerbiaSetupEN() {
                 name: "Do I need Merchant Center if I only sell through an Instagram/Facebook shop?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Not for Meta Shops — that's a separate catalog through Meta Commerce Manager. Merchant Center is specifically for Google Shopping ads. If you want a presence on both Google search and Meta platforms, you'll need two separate feeds (though many tools can generate both from the same data source)."
+                  text: "Not for Meta Shops — that's a separate catalog through Meta Commerce Manager. Merchant Center is specifically for Google Shopping ads. If you want a presence on both platforms, you'll need two separate feeds."
                 }
               }
             ]

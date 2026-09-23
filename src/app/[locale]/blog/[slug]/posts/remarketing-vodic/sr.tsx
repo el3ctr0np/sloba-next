@@ -904,7 +904,7 @@ export default function RemarketingVodicPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Januar 2026
+        Poslednje ažuriranje: April 2026
       </div>
       <div className="text-sm text-gray-500">
         Autor: Slobodan Jelisavac, Google Ads Consultant

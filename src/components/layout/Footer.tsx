@@ -43,9 +43,14 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             {/* Brand name, not a section heading: as an h3 it broke heading
-                order on pages whose last heading is the h1 (e.g. /resursi). */}
-            <p className="font-heading font-bold text-xl mb-4">
-              Digital Jelisavac
+                order on pages whose last heading is the h1 (e.g. /resursi).
+                Person-first (Jul 30, 2026 decision): Slobodan Jelisavac carries
+                the authority; "Digital Jelisavac" is the legal name only. */}
+            <p className="font-heading font-bold text-xl mb-1">
+              Slobodan Jelisavac
+            </p>
+            <p className="text-gray-500 text-xs mb-3">
+              {t("legalName")}
             </p>
             <p className="text-gray-400 text-sm mb-4">
               {t("brandDescription")}

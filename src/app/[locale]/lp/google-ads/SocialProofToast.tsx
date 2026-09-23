@@ -79,7 +79,7 @@ const notifications: Notification[] = [
     name: "Dragana",
     city: { sr: "Pančevo", en: "Pančevo" },
     message: {
-      sr: "Popunila formu — prvi put pokreće Google Ads",
+      sr: "Popunila formu - prvi put pokreće Google Ads",
       en: "Submitted form — launching Google Ads for the first time",
     },
   },

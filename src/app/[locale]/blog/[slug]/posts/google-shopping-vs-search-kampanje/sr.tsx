@@ -325,7 +325,7 @@ export default function GoogleShoppingVsSearchKampanjeSR() {
                 name: "Zašto Shopping obično ima niži CPC od Search-a?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Kod Search-a licitiraš na ključnu reč gde se takmičiš sa svima koji je ciljaju. Kod Shopping-a se licitacija vezuje za konkretan proizvod i njegovu relevantnost iz feed-a, pa je konkurencija uža. Uz to, slika i cena vidljive pre klika deluju kao filter koji odbija promašene klikove, pa u proseku dobijaš niži CPC za kvalitetniji saobraćaj."
+                  text: "Kod Search-a licitiraš na ključnu reč gde se takmičiš sa svima koji je ciljaju. Kod Shopping-a se licitacija vezuje za konkretan proizvod iz feed-a, pa je konkurencija uža. Slika i cena vidljive pre klika deluju kao filter koji odbija promašene klikove, pa u proseku dobijaš niži CPC za kvalitetniji saobraćaj."
                 }
               },
               {
@@ -341,7 +341,7 @@ export default function GoogleShoppingVsSearchKampanjeSR() {
                 name: "Kada da izaberem Standard Shopping, a kada Performance Max?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Standard Shopping je bolji za manje kataloge (ispod oko 50 SKU-ova), nova lansiranja gde ti treba uvid u search termove, i kategorije osetljive na maržu. Performance Max dolazi do izražaja kada imaš 50 i više konverzija mesečno sa čistim trackingom, veliki katalog i prave kreativne assete. Ispod 30-50 konverzija mesečno drži se jednostavnijih bid strategija dok algoritam ne skupi dovoljno podataka."
+                  text: "Standard Shopping je bolji za manje kataloge (ispod oko 50 SKU-ova), nova lansiranja gde ti treba uvid u search termove, i kategorije osetljive na maržu. Performance Max se isplati sa 50+ konverzija mesečno, čistim trackingom, velikim katalogom i pravim kreativnim assetima. Ispod 30-50 konverzija drži se jednostavnijih bid strategija."
                 }
               },
               {
@@ -349,7 +349,7 @@ export default function GoogleShoppingVsSearchKampanjeSR() {
                 name: "Koliko budžeta da dam na Shopping, a koliko na Search?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Nema univerzalnog procenta - split zavisi od toga šta prodaješ. Za vizuelne fizičke proizvode težina prirodno ide ka Shopping-u; istraživački upiti, usluge i brend idu u Search. Uvek izdvoji zaseban budžet za brend Search jer je najjeftiniji i najbolje konvertuje. Pusti oba tipa, prati koji donosi profitabilne konverzije i pomeraj budžet ka onome što radi."
+                  text: "Nema univerzalnog procenta - split zavisi od toga šta prodaješ. Za vizuelne fizičke proizvode težina ide ka Shopping-u; istraživanje, usluge i brend idu u Search. Uvek izdvoji zaseban budžet za brend Search. Pusti oba tipa, prati koji donosi profitabilne konverzije i pomeraj budžet ka onome što radi."
                 }
               },
               {
@@ -357,7 +357,7 @@ export default function GoogleShoppingVsSearchKampanjeSR() {
                 name: "Radi li Google Shopping u Srbiji?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4), tačan datum još nije potvrđen. Do tada Shopping kampanje nisu dostupne za srpsko tržište, ali Search kampanje rade već danas. Praktičan plan za srpski eCommerce: pokreni Search odmah i skupljaj podatke, a paralelno pripremaj Merchant Center i product feed da bi na dan lansiranja Shopping-a prešao na hibrid bez čekanja."
+                  text: "Google Shopping stiže u Srbiju u drugoj polovini 2026 (Q3 ili Q4), tačan datum još nije potvrđen. Do tada Shopping nije dostupan za srpsko tržište, ali Search radi već danas. Plan: pokreni Search odmah, a paralelno pripremaj Merchant Center i product feed da bi na dan lansiranja prešao na hibrid bez čekanja."
                 }
               }
             ]

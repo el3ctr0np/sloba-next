@@ -841,49 +841,57 @@ export default function RsaVodicPost() {
                 name: "Koliko RSA-ova treba imati po ad grupi?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google preporučuje minimum 1 RSA po ad grupi, a optimalno 2-3. Dva RSA-a vam omogućavaju A/B testiranje različitih pristupa. Ne idite preko 3 jer fragmentišete podatke.",
-                },
+                  text: "Google preporučuje minimum 1 RSA po ad grupi, a optimalno 2-3. Dva RSA-a vam omogućavaju A/B testiranje različitih pristupa (npr. jedan fokusiran na cenu, drugi na kvalitet). Ne idite preko 3 - fragmentišete podatke."
+                }
               },
               {
                 "@type": "Question",
                 name: "Da li Ad Strength \"Excellent\" garantuje bolje rezultate?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ne. Ad Strength je Googleov input signal koji meri raznolikost i relevantnost vaših naslova - nije performance metrika. Ciljajte \"Good\" kao minimum, ali merite uspeh po CTR-u i konverzijama.",
-                },
+                  text: "Ne. Ad Strength je Googleov input signal koji meri raznolikost i relevantnost vaših naslova - nije performance metrika. RSA sa \"Good\" Ad Strength i preciznim angle-based naslovima često nadmašuje \"Excellent\" RSA sa 15 generičkih naslova. Ciljajte \"Good\" kao minimum, ali merite uspeh po CTR-u i konverzijama."
+                }
               },
               {
                 "@type": "Question",
                 name: "Da li da koristim AI za pisanje RSA naslova?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Da, ali sa framework-om. 59% PPC profesionalaca koristi LLM-ove za ad copy. Koristite angle-based slot distribution kao brief za AI umesto slobodnog generisanja.",
-                },
+                  text: "Da, ali sa framework-om. 59% PPC profesionalaca već koristi LLM-ove za ad copy (State of PPC 2026). Problem nastaje kad AI piše bez strukture - dobijate 15 varijacija iste poruke. Koristite angle-based slot distribution kao brif za AI: \"Napiši H1 (Relevance Anchor, 30 karaktera), H2 (Value Proposition)...\" itd."
+                }
               },
               {
                 "@type": "Question",
                 name: "Koliko često treba menjati RSA?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Koristite Iteration Loop: svake 2-8 nedelja analizirajte podatke, identifikujte Champions i Silent Killers, i napravite novu iteraciju. Ne menjajte RSA pre nego što imate minimum 1,000 impressions.",
-                },
+                  text: "Koristite Iteration Loop: svake 2-8 nedelja analizirajte podatke, identifikujte Champions i Silent Killers, i napravite novu iteraciju. Ne menjajte RSA pre nego što imate minimum 1,000 impressions. Česte promene resetuju learning period."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Šta ako nemam dovoljno impressions za 7-8 naslova?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Za ad grupe sa manje od 5,000 impressions mesečno, koristite 5-6 naslova. Manje naslova = manje kombinacija = brže učenje. Bolje je imati 5 preciznih naslova nego 8 od kojih su 3 slaba."
+                }
               },
               {
                 "@type": "Question",
                 name: "Kako RSA funkcioniše sa Smart Bidding-om?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "RSA i Smart Bidding su komplementarni. Smart Bidding optimizuje koliko platite za klik, dok RSA optimizuje koji oglas se prikazuje. Kombinacija tROAS/tCPA + angle-based RSA daje automatizaciju sa strukturom.",
-                },
+                  text: "RSA i Smart Bidding su komplementarni. Smart Bidding (tCPA, tROAS) optimizuje koliko platite za klik, dok RSA optimizuje koji oglas se prikazuje. Prema State of PPC 2026, tROAS i tCPA su najkorišćenije i najzadovoljnije bid strategije. Kombinacija: Smart Bidding + angle-based RSA = automatizacija sa strukturom."
+                }
               },
               {
                 "@type": "Question",
                 name: "Da li RSA zamenjuje potrebu za A/B testiranjem?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ne. RSA optimizuje kombinacije unutar jednog oglasa. A/B testiranje testira različite pristupe - npr. RSA fokusiran na cenu vs RSA fokusiran na kvalitet. Oba su potrebna.",
-                },
-              },
+                  text: "Ne. RSA optimizuje kombinacije unutar jednog oglasa. A/B testiranje (Google Ads Experiments) testira različite pristupe - npr. RSA fokusiran na cenu vs RSA fokusiran na kvalitet. Oba su potrebna za kompletnu optimizaciju."
+                }
+              }
             ],
           }),
         }}
@@ -963,7 +971,7 @@ export default function RsaVodicPost() {
       {/* ── Footer: datum + autor ── */}
       <hr />
       <p className="text-xs text-gray-400 mt-4">
-        Poslednje ažuriranje: Mart 2026 &middot; Autor: Slobodan Jelisavac, Google Ads consultant &middot; Vreme čitanja: ~14 min
+        Poslednje ažuriranje: Jul 2026 &middot; Autor: Slobodan Jelisavac, Google Ads consultant &middot; Vreme čitanja: ~14 min
       </p>
     </>
   );

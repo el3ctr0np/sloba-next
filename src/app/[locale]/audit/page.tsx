@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Free Google Ads Video Audit — For Qualified eCommerce & B2B Brands"
-      : "Besplatan Google Ads Video Audit — za kvalifikovane eCommerce i B2B brendove",
+      : "Besplatan Google Ads Video Audit - za kvalifikovane eCommerce i B2B brendove",
     description: isEn
       ? "15-minute video walkthrough of your Google Ads account: structure issues, conversion tracking gaps, bidding strategy, and top 3 priorities to fix. For brands with $1,500+/mo ad spend."
       : "15-minutni video review vašeg Google Ads naloga: struktura kampanja, conversion tracking, bidding strategija, i top 3 prioriteta za fix. Za brendove sa €1.500+/mes ad spend-om.",
@@ -136,7 +136,7 @@ export default async function AuditPage({ params }: Props) {
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 {isEn
                   ? "I only review accounts that match these criteria — because I want to actually move the needle for you, not give generic advice."
-                  : "Radim audit samo za naloge koji ispunjavaju ove kriterijume — jer želim da stvarno pomognem, ne da dajem generičke savete."}
+                  : "Radim audit samo za naloge koji ispunjavaju ove kriterijume - jer želim da stvarno pomognem, ne da dajem generičke savete."}
               </p>
             </div>
 
@@ -286,7 +286,7 @@ export default async function AuditPage({ params }: Props) {
               {isEn ? "Process" : "Proces"}
             </p>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-3">
-              {isEn ? "How It Works — 4 Steps" : "Kako Funkcioniše — 4 Koraka"}
+              {isEn ? "How It Works — 4 Steps" : "Kako Funkcioniše - 4 Koraka"}
             </h2>
           </div>
 
@@ -358,7 +358,7 @@ export default async function AuditPage({ params }: Props) {
                 ) : (
                   <>
                     Ovaj <strong>besplatan 15-minutni video pregled</strong> je lakši, teaser nivo
-                    provere za kvalifikovane naloge — 3 crvena flag-a i top prioriteti, ne
+                    provere za kvalifikovane naloge - 3 crvena flag-a i top prioriteti, ne
                     kompletan plan. Ako želite kompletnu, plaćenu analizu sa pisanim akcionim
                     planom, pogledajte{" "}
                     <Link href="/usluge/google-ads-audit" className="text-primary underline">
@@ -389,19 +389,19 @@ export default async function AuditPage({ params }: Props) {
             <div className="space-y-4">
               {[
                 {
-                  t: isEn ? "Account structure — 3 red flags" : "Struktura naloga — 3 crvena flag-a",
+                  t: isEn ? "Account structure — 3 red flags" : "Struktura naloga - 3 crvena flag-a",
                   d: isEn
                     ? "What's fundamentally broken that's capping your performance before anything else."
                     : "Šta je fundamentalno pokvareno što ograničava performanse pre svega ostalog.",
                 },
                 {
-                  t: isEn ? "Conversion tracking — is it accurate?" : "Conversion tracking — da li je tačan?",
+                  t: isEn ? "Conversion tracking — is it accurate?" : "Conversion tracking - da li je tačan?",
                   d: isEn
                     ? "If the algorithm is getting wrong signals, no optimization will work. I'll verify GA4 + Google Ads integration."
                     : "Ako algoritam dobija pogrešne signale, nijedna optimizacija neće raditi. Proverim GA4 + Google Ads integraciju.",
                 },
                 {
-                  t: isEn ? "Bidding strategy — is it the right one?" : "Bidding strategija — da li je prava?",
+                  t: isEn ? "Bidding strategy — is it the right one?" : "Bidding strategija - da li je prava?",
                   d: isEn
                     ? "Most accounts use the wrong Smart Bidding strategy for their conversion volume and goals."
                     : "Većina naloga koristi pogrešnu Smart Bidding strategiju za svoj conversion volume i ciljeve.",
@@ -410,10 +410,10 @@ export default async function AuditPage({ params }: Props) {
                   t: isEn ? "Search terms leak analysis" : "Search terms leak analiza",
                   d: isEn
                     ? "Where your budget is bleeding — irrelevant queries you're paying for but shouldn't."
-                    : "Gde vaš budžet krvari — irelevantne pretrage za koje plaćate a ne bi trebalo.",
+                    : "Gde vaš budžet krvari - irelevantne pretrage za koje plaćate a ne bi trebalo.",
                 },
                 {
-                  t: isEn ? "Top 3 priorities — ranked by impact" : "Top 3 prioriteta — poređano po impaktu",
+                  t: isEn ? "Top 3 priorities — ranked by impact" : "Top 3 prioriteta - poređano po impaktu",
                   d: isEn
                     ? "If you do nothing else, fix these 3 things first. Expected impact per fix."
                     : "Ako ništa drugo ne uradite, popravite ovih 3. Očekivan impact po svakom fix-u.",
@@ -441,7 +441,7 @@ export default async function AuditPage({ params }: Props) {
               <p className="text-sm text-amber-900 mb-0 leading-relaxed">
                 {isEn
                   ? "It's NOT a full implementation plan. I'll identify the problems — but the actual fix work is a paid engagement. Think of this as a qualified second opinion, not a do-it-yourself playbook."
-                  : "NIJE kompletan implementacijski plan. Identifikujem probleme — ali sam rad na fix-u je plaćen. Ovo je kvalifikovano drugo mišljenje, ne do-it-yourself playbook."}
+                  : "NIJE kompletan implementacijski plan. Identifikujem probleme - ali sam rad na fix-u je plaćen. Ovo je kvalifikovano drugo mišljenje, ne do-it-yourself playbook."}
               </p>
             </div>
           </div>
@@ -497,7 +497,7 @@ export default async function AuditPage({ params }: Props) {
                 q: isEn ? "Why is it free?" : "Zašto je besplatan?",
                 a: isEn
                   ? "Because the audit identifies problems — not full solutions. If you like the thinking, we can discuss a paid engagement. If you don't, you keep the insights. Works for both of us."
-                  : "Jer audit identifikuje probleme — ne pruža kompletna rešenja. Ako vam se dopada razmišljanje, možemo pričati o saradnji. Ako ne, zadržite insights. Radi za oboje.",
+                  : "Jer audit identifikuje probleme - ne pruža kompletna rešenja. Ako vam se dopada razmišljanje, možemo pričati o saradnji. Ako ne, zadržite insights. Radi za oboje.",
               },
               {
                 q: isEn ? "How long does it really take?" : "Koliko zaista traje?",
@@ -509,7 +509,7 @@ export default async function AuditPage({ params }: Props) {
                 q: isEn ? "What if I'm not qualified?" : "Šta ako nisam kvalifikovan?",
                 a: isEn
                   ? "I'll redirect you to the right resource — blog, glossary, or suggested agency. No ghosting."
-                  : "Redirectujem vas ka pravom resursu — blog, rečnik, ili predloženoj agenciji. Bez ghosting-a.",
+                  : "Redirectujem vas ka pravom resursu - blog, rečnik, ili predloženoj agenciji. Bez ghosting-a.",
               },
               {
                 q: isEn ? "Is there any obligation?" : "Da li postoji obaveza?",
@@ -521,7 +521,7 @@ export default async function AuditPage({ params }: Props) {
                 q: isEn ? "What tools do you use?" : "Koje alate koristite?",
                 a: isEn
                   ? "Google Ads UI (read-only), GA4, sometimes Supermetrics for data export, Loom for recording. That's it — no proprietary 'magic box'."
-                  : "Google Ads UI (read-only), GA4, povremeno Supermetrics za data export, Loom za snimanje. To je sve — bez proprietary 'magic box-a'.",
+                  : "Google Ads UI (read-only), GA4, povremeno Supermetrics za data export, Loom za snimanje. To je sve - bez proprietary 'magic box-a'.",
               },
             ].map((item, i) => (
               <details

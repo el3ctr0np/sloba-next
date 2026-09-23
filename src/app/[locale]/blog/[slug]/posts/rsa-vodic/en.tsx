@@ -897,49 +897,57 @@ export default function RsaGuideEN() {
                 name: "How many RSAs should I have per ad group?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google recommends a minimum of 1 RSA per ad group, with 2-3 being optimal. Two RSAs allow you to A/B test different approaches. Do not go above 3 as you fragment your data.",
-                },
+                  text: "Google recommends a minimum of 1 RSA per ad group, with 2-3 being optimal. Two RSAs allow you to A/B test different approaches (for example, one focused on price, another on quality). Do not go above 3 — you fragment your data."
+                }
               },
               {
                 "@type": "Question",
-                name: "Does an 'Excellent' Ad Strength guarantee better results?",
+                name: "Does an \"Excellent\" Ad Strength guarantee better results?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "No. Ad Strength is Google's input signal that measures the variety and relevance of your headlines — it is not a performance metric. Aim for 'Good' as your minimum, but measure success by CTR and conversions.",
-                },
+                  text: "No. Ad Strength is Google's input signal that measures the variety and relevance of your headlines — it is not a performance metric. An RSA with \"Good\" Ad Strength and precise angle-based headlines will often outperform an \"Excellent\" RSA built from 15 generic headlines. Aim for \"Good\" as your minimum, but measure success by CTR and conversions."
+                }
               },
               {
                 "@type": "Question",
                 name: "Should I use AI to write RSA headlines?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes, but with a framework. 59% of PPC professionals already use LLMs for ad copy (State of PPC 2026). Use angle-based slot distribution as your brief for AI instead of free-form generation.",
-                },
+                  text: "Yes, but with a framework. 59% of PPC professionals already use LLMs for ad copy (State of PPC 2026). The problem arises when AI writes without structure — you end up with 15 variations of the same message. Use angle-based slot distribution as your brief for AI: \"Write H1 (Relevance Anchor, 30 characters), H2 (Value Proposition)...\" and so on."
+                }
               },
               {
                 "@type": "Question",
                 name: "How frequently should I update my RSAs?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Use the Iteration Loop: every 2-8 weeks analyse your data, identify Champions and Silent Killers, and create a new iteration. Do not update an RSA before you have at least 1,000 impressions.",
-                },
+                  text: "Use the Iteration Loop: every 2-8 weeks analyse your data, identify Champions and Silent Killers, and create a new iteration. Do not update an RSA before you have at least 1,000 impressions. Frequent changes reset the learning period."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "What if I do not have enough impressions for 7-8 headlines?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "For ad groups receiving fewer than 5,000 impressions per month, use 5-6 headlines. Fewer headlines mean fewer combinations mean faster learning. Five precise headlines are better than 8 of which 3 are weak."
+                }
               },
               {
                 "@type": "Question",
                 name: "How does RSA work alongside Smart Bidding?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "RSA and Smart Bidding are complementary. Smart Bidding optimises how much you pay per click, whilst RSA optimises which ad is served. The combination of tROAS/tCPA and angle-based RSA delivers automation with structure.",
-                },
+                  text: "RSA and Smart Bidding are complementary. Smart Bidding (tCPA, tROAS) optimises how much you pay per click, whilst RSA optimises which ad is served. According to State of PPC 2026, tROAS and tCPA are the most widely used and highest-rated bid strategies. The combination: Smart Bidding + angle-based RSA = automation with structure."
+                }
               },
               {
                 "@type": "Question",
                 name: "Does RSA replace the need for A/B testing?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "No. RSA optimises combinations within a single ad. A/B testing tests different approaches — for example, an RSA focused on price versus one focused on quality. Both are needed for complete optimisation.",
-                },
-              },
+                  text: "No. RSA optimises combinations within a single ad. A/B testing (Google Ads Experiments) tests different approaches — for example, an RSA focused on price versus an RSA focused on quality. Both are needed for complete optimisation."
+                }
+              }
             ],
           }),
         }}
@@ -1019,7 +1027,7 @@ export default function RsaGuideEN() {
       {/* ── Footer: date + author ── */}
       <hr />
       <p className="text-xs text-gray-400 mt-4">
-        Last updated: March 2026 &middot; Author: Slobodan Jelisavac, Google Ads Consultant &middot; Reading time: ~14 min
+        Last updated: July 2026 &middot; Author: Slobodan Jelisavac, Google Ads Consultant &middot; Reading time: ~14 min
       </p>
     </>
   );

@@ -32,7 +32,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
           </div>
         </div>
         <p className="text-sm text-slate-400 mt-6 mb-0 border-t border-slate-700 pt-4">
-          Podaci: StatCounter GlobalStats, Microsoft Advertising, WordStream. Ažurirano: april 2026.
+          Podaci: StatCounter GlobalStats, Microsoft Advertising, WordStream. Ažurirano: jul 2026.
         </p>
       </div>
 
@@ -858,7 +858,7 @@ export default function MicrosoftAdsVsGoogleAdsSR() {
         </li>
         <li>
           <a
-            href="https://about.ads.microsoft.com/en-us/resources/microsoft-advertising-audience"
+            href="https://about.ads.microsoft.com/en-us/solutions/microsoft-audience-network/microsoft-audience-ads"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"

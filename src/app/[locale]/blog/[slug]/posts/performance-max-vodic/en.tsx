@@ -7,7 +7,7 @@ export default function PerformanceMaxGuideEN() {
   return (
     <>
       <p>
-        <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max</a> (<GlossaryLink slug="pmax">PMax</GlossaryLink>) campaigns are Google's most powerful — and most controversial — tool for automated advertising. You give the algorithm budget, creative, and goal, and it finds customers across all Google networks simultaneously.
+        <a href="https://support.google.com/google-ads/answer/10724817" target="_blank" rel="noopener noreferrer">Performance Max</a> (<GlossaryLink slug="pmax">PMax</GlossaryLink>) campaigns are Google's most powerful — and most controversial — tool for automated advertising. You give the algorithm budget, creative, and goal, and it finds customers across all Google networks simultaneously.
       </p>
       <p>
         In practice, PMax can be an exceptionally effective channel that scales results or a black hole consuming budget without transparency. The difference is in approach and understanding how the system works.
@@ -151,7 +151,7 @@ export default function PerformanceMaxGuideEN() {
 
       <h2 id="what-is-performance-max-and-why-its-special">What is Performance Max and why it's special</h2>
       <p>
-        <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max</a> is an automated campaign using machine learning to show your ads across all Google networks simultaneously: Search, Shopping, Display, YouTube, Gmail, Discover, and Maps. Instead of creating separate campaigns per channel, you give Google raw material and it combines everything in real time.
+        <a href="https://support.google.com/google-ads/answer/10724817" target="_blank" rel="noopener noreferrer">Performance Max</a> is an automated campaign using machine learning to show your ads across all Google networks simultaneously: Search, Shopping, Display, YouTube, Gmail, Discover, and Maps. Instead of creating separate campaigns per channel, you give Google raw material and it combines everything in real time.
       </p>
       <p><strong>You provide:</strong></p>
       <ul>

@@ -327,7 +327,7 @@ export default function PerformanceMaxVsStandardShoppingSR() {
                 name: "Da li će Performance Max kanibalizovati moj brendirani saobraćaj?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Hoće, ako ga ne zaustaviš. Bez brand exclusions, PMax troši na ljude koji već traže tvoj brend i prijavljuje te konverzije kao svoje - porez na sopstveno ime za prodaje koje bi se ionako desile kroz jeftin brend Search. Primeni brand exclusions (preko Google predstavnika ili podešavanja na nivou naloga) i preusmeri brendiranu tražnju u zasebnu brend Search kampanju, da PMax ostane fokusiran na inkrementalne, ne-brend konverzije."
+                  text: "Hoće, ako ga ne zaustaviš. Bez brand exclusions, PMax troši na ljude koji već traže tvoj brend i prijavljuje te konverzije kao svoje - porez na sopstveno ime za prodaje koje bi se ionako desile. Primeni brand exclusions i preusmeri brendiranu tražnju u zasebnu brend Search kampanju, da PMax ostane fokusiran na inkrementalne, ne-brend konverzije."
                 }
               },
               {
@@ -335,7 +335,7 @@ export default function PerformanceMaxVsStandardShoppingSR() {
                 name: "Zašto mi je CPC skočio nakon prelaska na PMax?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Uobičajeno je. Kada su nalozi migrirali sa Smart Shopping-a na PMax, mnogi su videli da CPC raste - u pojedinim slučajevima skoro udvostručen - za sličan saobraćaj. PMax licitira preko više površina (Search, Shopping, YouTube, Display, Discover) i prijavljuje manje providno, pa dodatni trošak nije uvek vidljiv. Prati CPC trend prvih nekoliko nedelja posle lansiranja, i razmisli da proizvode sa visokom maržom ili osetljive na CPC držiš u Standard Shopping-u gde možeš da ograničiš licitaciju."
+                  text: "Uobičajeno je. Pri migraciji sa Smart Shopping-a na PMax, mnogi oglašivači su videli da CPC raste - u pojedinim slučajevima skoro udvostručen - za sličan saobraćaj. PMax licitira preko više površina i prijavljuje manje providno, pa dodatni trošak nije uvek vidljiv. Prati CPC trend prvih nekoliko nedelja, i drži proizvode osetljive na CPC u Standard Shopping-u gde možeš da ograničiš licitaciju."
                 }
               },
               {
@@ -343,7 +343,7 @@ export default function PerformanceMaxVsStandardShoppingSR() {
                 name: "Mogu li da vozim Standard Shopping i Performance Max u isto vreme?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Da, i u 2026. je to često jači setup. Od oktobra 2024. Google odlučuje preklapajuću aukciju po Ad Rank-u umesto da daje PMax-u automatski prioritet, pa dobro izgrađena Standard Shopping kampanja stvarno konkuriše umesto da bude nadjačana. Optmyzr studija na 24.702 kampanje pokazala je da 82% oglašivača već vozi PMax uz Shopping ili Search umesto samo PMax - to je snimak uobičajene prakse, a ne dokaz da sama podela proizvodi bolji rezultat. Pravi razlog da voziš oba je podela posla: PMax skalira katalog i nalazi tražnju na koju ručno ne bi licitirao, a Standard Shopping čuva kontrolu i uvid u search termove tamo gde ti trebaju."
+                  text: "Da, i u 2026. je to često jači setup. Od oktobra 2024. preklapajuća aukcija se odlučuje po Ad Rank-u umesto da daje PMax-u automatski prioritet, pa dobro izgrađena Standard Shopping kampanja stvarno konkuriše. Optmyzr studija na 24.702 kampanje pokazala je da 82% oglašivača već vozi PMax uz Shopping ili Search umesto samo PMax - to je snimak uobičajene prakse, a ne dokaz da sama podela proizvodi bolji rezultat. Pravi razlog da voziš oba je podela posla: PMax skalira katalog i nalazi tražnju na koju ručno ne bi licitirao, a Standard Shopping čuva kontrolu i uvid u search termove tamo gde ti trebaju."
                 }
               },
               {
@@ -359,7 +359,7 @@ export default function PerformanceMaxVsStandardShoppingSR() {
                 name: "Zašto je Performance Max reporting toliko ograničen?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Po dizajnu. PMax krije pune search termove, ne razdvaja čisto Shopping od Display-a ili YouTube-a, i daje ograničene podatke na nivou asseta. Google je kroz 2026. dodao malo više providnosti, ali je i dalje dosta ispod Standard Shopping-a. Ako moraš tačno da znaš šta je nosilo rezultat, drži te proizvode u Standard Shopping-u, gde imaš pun uvid u search termove i možeš da dodaješ negative."
+                  text: "Po dizajnu. PMax krije pune search termove, ne razdvaja čisto Shopping od Display-a ili YouTube-a, i daje ograničene podatke na nivou asseta. Google je kroz 2026. dodao malo više providnosti, ali je i dalje dosta ispod Standard Shopping-a. Ako moraš tačno da znaš šta je nosilo rezultat, drži te proizvode u Standard Shopping-u."
                 }
               },
               {
@@ -367,7 +367,7 @@ export default function PerformanceMaxVsStandardShoppingSR() {
                 name: "Standard Shopping ili Performance Max za mali katalog?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Standard Shopping. Ispod oko 50 SKU-ova, PMax automatika nema dovoljno raznovrsnosti proizvoda ni signala da optimizuje, pa najčešće prazni hod bez poboljšanja. Standard Shopping radi dobro na mršavom katalogu, daje ti CPC plafon i uvid u search termove, i bolja je polazna tačka dok ti katalog i volumen konverzija ne narastu dovoljno da opravdaju PMax."
+                  text: "Standard Shopping. Ispod oko 50 SKU-ova, PMax automatika nema dovoljno raznovrsnosti proizvoda ni signala da optimizuje. Standard Shopping radi dobro na mršavom katalogu, daje ti CPC plafon i uvid u search termove, i bolja je polazna tačka dok ti katalog i volumen konverzija ne narastu dovoljno da opravdaju PMax."
                 }
               }
             ]

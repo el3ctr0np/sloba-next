@@ -326,7 +326,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
                 name: "Why does Shopping usually have a lower CPC than Search?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "With Search you bid on a keyword where you compete with everyone targeting it. With Shopping the auction is tied to a specific product and its relevance from the feed, so the competition is narrower. On top of that, the image and price visible before the click act as a filter that repels wasted clicks, so on average you get a lower CPC for higher-quality traffic."
+                  text: "With Search you bid on a keyword where you compete with everyone targeting it. With Shopping the auction is tied to a specific product from the feed, so competition is narrower. The image and price visible before the click act as a filter that repels wasted clicks, so on average you get a lower CPC for higher-quality traffic."
                 }
               },
               {
@@ -342,7 +342,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
                 name: "When should I choose Standard Shopping and when Performance Max?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Standard Shopping is better for smaller catalogs (under about 50 SKUs), new launches where you need search-term visibility, and margin-sensitive categories. Performance Max shines once you have 50+ conversions a month with clean tracking, a large catalog, and real creative assets. Below 30-50 conversions a month, stick with simpler bid strategies until the algorithm gathers enough data."
+                  text: "Standard Shopping is better for smaller catalogs (under about 50 SKUs), new launches where you need search-term visibility, and margin-sensitive categories. Performance Max shines with 50+ conversions a month, clean tracking, a large catalog, and real creative assets. Below 30-50 conversions, stick with simpler bid strategies."
                 }
               },
               {
@@ -350,7 +350,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
                 name: "How much budget should go to Shopping versus Search?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "There's no universal percentage — the split depends on what you sell. For visual physical products, weight leans toward Shopping; research queries, services, and brand go to Search. Always carve out a separate budget for brand Search since it's the cheapest and converts best. Run both types, track which brings profitable conversions, and move budget toward what works."
+                  text: "There's no universal percentage — the split depends on what you sell. For visual physical products, weight leans toward Shopping; research, services, and brand go to Search. Always carve out a separate brand Search budget. Run both types, track which brings profitable conversions, and move budget toward what works."
                 }
               },
               {
@@ -358,7 +358,7 @@ export default function GoogleShoppingVsSearchCampaignsEN() {
                 name: "Does Google Shopping work in Serbia?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google Shopping is expected to launch in Serbia in the second half of 2026 (Q3 or Q4) — the exact date has not been confirmed yet. Until then Shopping campaigns aren't available for the Serbian market, but Search campaigns already work today. The practical plan for Serbian eCommerce: launch Search now and gather data, and in parallel prepare Merchant Center and the product feed so you can switch to the hybrid on Shopping's launch day without waiting."
+                  text: "Google Shopping is expected to launch in Serbia in the second half of 2026 (Q3 or Q4) — the exact date has not been confirmed yet. Until then Shopping isn't available for the Serbian market, but Search works today. The plan: launch Search now, and in parallel prepare Merchant Center and the product feed so you can switch to the hybrid on launch day without waiting."
                 }
               }
             ]

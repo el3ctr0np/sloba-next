@@ -53,7 +53,7 @@ export default async function GlossaryPage({ params }: Props) {
     "@id": glossaryUrl,
     name: isEn
       ? "PPC Glossary — Slobodan Jelisavac"
-      : "PPC Rečnik — Slobodan Jelisavac",
+      : "PPC Rečnik - Slobodan Jelisavac",
     description: isEn
       ? "Complete glossary of PPC and Google Ads terms in Serbian and English."
       : "Kompletan rečnik PPC i Google Ads termina na srpskom i engleskom.",

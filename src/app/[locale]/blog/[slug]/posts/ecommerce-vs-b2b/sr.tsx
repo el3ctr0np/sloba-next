@@ -877,7 +877,7 @@ export default function EcommerceVsB2BPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Februar 2026
+        Poslednje ažuriranje: Jul 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">

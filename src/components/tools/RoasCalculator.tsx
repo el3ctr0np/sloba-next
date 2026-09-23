@@ -20,11 +20,11 @@ const copy = {
     resultTitle: "Vaš ROAS",
     ratioLabel: "ROAS (odnos)",
     percentLabel: "ROAS (%)",
-    profitLabel: "Neto ROI (prihod – spend)",
+    profitLabel: "Neto ROI (prihod - spend)",
     benchmarkTitle: "Poređenje sa benchmark-om",
-    benchmarkGood: "Iznad benchmark-a — zadržite trend",
-    benchmarkOk: "Blizu benchmark-a — ima prostora",
-    benchmarkLow: "Ispod benchmark-a — optimizacija je prioritet",
+    benchmarkGood: "Iznad benchmark-a - zadržite trend",
+    benchmarkOk: "Blizu benchmark-a - ima prostora",
+    benchmarkLow: "Ispod benchmark-a - optimizacija je prioritet",
     emptyState: "Unesite oba broja da vidite rezultat.",
     zeroSpend: "Potrošnja mora biti veća od nule.",
     disclaimer: "Benchmark-ovi su orijentacioni proseci po industriji (Srbija + EU). Vaš profitabilan prag zavisi od marže.",
@@ -54,11 +54,11 @@ const copy = {
 } as const;
 
 const industries = [
-  { key: "ecommerce_fashion", sr: "eCommerce — Moda/Odeća", en: "eCommerce — Fashion/Apparel", benchmark: 4.0 },
-  { key: "ecommerce_beauty", sr: "eCommerce — Kozmetika/Lepota", en: "eCommerce — Beauty/Skincare", benchmark: 3.5 },
-  { key: "ecommerce_home", sr: "eCommerce — Dom i bašta", en: "eCommerce — Home & Garden", benchmark: 3.8 },
-  { key: "ecommerce_electronics", sr: "eCommerce — Elektronika", en: "eCommerce — Electronics", benchmark: 5.0 },
-  { key: "ecommerce_food", sr: "eCommerce — Hrana/Pića", en: "eCommerce — Food & Beverage", benchmark: 4.5 },
+  { key: "ecommerce_fashion", sr: "eCommerce - Moda/Odeća", en: "eCommerce — Fashion/Apparel", benchmark: 4.0 },
+  { key: "ecommerce_beauty", sr: "eCommerce - Kozmetika/Lepota", en: "eCommerce — Beauty/Skincare", benchmark: 3.5 },
+  { key: "ecommerce_home", sr: "eCommerce - Dom i bašta", en: "eCommerce — Home & Garden", benchmark: 3.8 },
+  { key: "ecommerce_electronics", sr: "eCommerce - Elektronika", en: "eCommerce — Electronics", benchmark: 5.0 },
+  { key: "ecommerce_food", sr: "eCommerce - Hrana/Pića", en: "eCommerce — Food & Beverage", benchmark: 4.5 },
   { key: "saas_b2b", sr: "SaaS / B2B", en: "SaaS / B2B", benchmark: 3.0 },
   { key: "lead_gen", sr: "Lead Gen (lokalne usluge)", en: "Lead Gen (local services)", benchmark: 2.5 },
   { key: "luxury", sr: "Luksuzni proizvodi", en: "Luxury products", benchmark: 6.0 },
@@ -152,7 +152,7 @@ export default function RoasCalculator({ locale = "sr" }: RoasCalculatorProps) {
           >
             {industries.map((i) => (
               <option key={i.key} value={i.key}>
-                {locale === "sr" ? i.sr : i.en} — {t.targetLabel} {i.benchmark.toFixed(1)}×
+                {locale === "sr" ? i.sr : i.en} - {t.targetLabel} {i.benchmark.toFixed(1)}×
               </option>
             ))}
           </select>

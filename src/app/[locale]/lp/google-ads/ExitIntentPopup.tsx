@@ -86,7 +86,7 @@ export function ExitIntentPopup({ locale }: ExitIntentPopupProps) {
           {/* Content */}
           <div className="px-6 py-5">
             <p className="text-gray-600 text-sm mb-4">
-              Pre nego što odete — proverite da li vaše kampanje prolaze ovaj
+              Pre nego što odete - proverite da li vaše kampanje prolaze ovaj
               brzi test. Većina naloga pada na barem 2 od 5 pitanja.
             </p>
 

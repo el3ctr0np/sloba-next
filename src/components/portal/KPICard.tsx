@@ -12,7 +12,7 @@ function formatValue(
   value: string | number | null | undefined,
   format: KPICardProps["format"] = "number"
 ): string {
-  if (value === null || value === undefined) return "—";
+  if (value === null || value === undefined) return "-";
   if (typeof value === "string") return value;
   switch (format) {
     case "currency":

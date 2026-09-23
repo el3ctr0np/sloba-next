@@ -1064,7 +1064,7 @@ export default function GoogleAdsAuditChecklistSrbijaEN() {
               },
               {
                 "@type": "Question",
-                name: "Is it enough to just follow Google's 'Recommendations' tab?",
+                name: "Is it enough to just follow Google's \"Recommendations\" tab?",
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "No. Google's Recommendations mostly favor Google's interests: more spend, broader match, automated targeting expansion. A third-party audit looks out for your business's interests. Those aren't the same goal."

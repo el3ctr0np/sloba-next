@@ -13,7 +13,7 @@ interface DataTableProps {
 }
 
 function formatCell(value: any, format?: string): string {
-  if (value === null || value === undefined) return "—";
+  if (value === null || value === undefined) return "-";
   switch (format) {
     case "currency":
       return `€${Number(value).toLocaleString("sr-RS", { minimumFractionDigits: 0 })}`;

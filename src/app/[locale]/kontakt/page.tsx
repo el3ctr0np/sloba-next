@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "Kontakt | Besplatna Google Ads Konsultacija — Slobodan Jelisavac",
-    description: "Zakažite besplatnu Google Ads konsultaciju. Bez obaveze, bez pritiska — samo konkretan razgovor o tome kako poboljšati vaše kampanje.",
+    title: "Kontakt | Besplatna Google Ads Konsultacija - Slobodan Jelisavac",
+    description: "Zakažite besplatnu Google Ads konsultaciju. Bez obaveze, bez pritiska - samo konkretan razgovor o tome kako poboljšati vaše kampanje.",
     locale,
     path: "/contact",
     srPath: "/kontakt",
@@ -221,7 +221,7 @@ export default async function ContactPage({ params }: Props) {
             <p className="text-lg text-slate-300 mb-8">
               {locale === "en"
                 ? "No obligation, no pressure — just an honest 20-minute conversation about how Google Ads can work for your business."
-                : "Bez obaveze, bez pritiska — samo konkretan 20-minutni razgovor o tome kako Google Ads može raditi za vaš biznis."}
+                : "Bez obaveze, bez pritiska - samo konkretan 20-minutni razgovor o tome kako Google Ads može raditi za vaš biznis."}
             </p>
 
             <div className="flex flex-wrap gap-4 text-sm text-slate-300">

@@ -40,7 +40,7 @@ type Props = {
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title:
-      "Google Ads ekspert | Oglašavanje koje donosi rezultate — Slobodan Jelisavac",
+      "Google Ads ekspert | Oglašavanje koje donosi rezultate - Slobodan Jelisavac",
     description:
       "Google kampanje za eCommerce i B2B koje donose kupce, ne samo klikove. Decenija iskustva, 50+ brendova. Zakažite besplatan razgovor.",
     robots: {
@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     openGraph: {
       title:
-        "Google Ads ekspert | Oglašavanje koje donosi rezultate — Slobodan Jelisavac",
+        "Google Ads ekspert | Oglašavanje koje donosi rezultate - Slobodan Jelisavac",
       description:
         "Google kampanje za eCommerce i B2B koje donose kupce, ne samo klikove. Decenija iskustva, 50+ brendova. Zakažite besplatan razgovor.",
       url: "https://www.slobodan-jelisavac.com/sr/lp/google-ads",
@@ -92,17 +92,17 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       icon: <BarChart3 {...iconProps} className="text-gray-900" />,
       title: "Agencija šalje reportove, ali ROAS stagnira",
       description:
-        "Mesecima gledate iste brojke. Niko ne predlaže nove strategije, ne testira nove pristupe — samo održava status quo dok vi plaćate retainer.",
+        "Mesecima gledate iste brojke. Niko ne predlaže nove strategije, ne testira nove pristupe - samo održava status quo dok vi plaćate retainer.",
     },
     {
       icon: <Target {...iconProps} className="text-gray-900" />,
       title: "Želite da uložite više, ali ne verujete trenutnom timu",
       description:
-        "Znate da Google Ads radi za vašu industriju, imate budžet za skaliranje — ali nemate poverenje da će trenutni tim pametno upravljati većim spend-om.",
+        "Znate da Google Ads radi za vašu industriju, imate budžet za skaliranje - ali nemate poverenje da će trenutni tim pametno upravljati većim spend-om.",
     },
     {
       icon: <TrendingUp {...iconProps} className="text-gray-900" />,
-      title: "Rast je stao — ne znate kako dalje",
+      title: "Rast je stao - ne znate kako dalje",
       description:
         "Kampanje rade solidno, ali ste udarili u plafon. Treba vam neko ko razume napredne strategije skaliranja bez gubitka profitabilnosti.",
     },
@@ -119,13 +119,13 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       icon: <Microscope {...iconProps} className="text-gray-900" />,
       title: "Dubinska analiza pre bilo kakve potrošnje",
       description:
-        "Razumem vaš biznis model, marže, idealne kupce i konkurenciju — pre nego što potrošim i jedan dinar na oglase.",
+        "Razumem vaš biznis model, marže, idealne kupce i konkurenciju - pre nego što potrošim i jedan dinar na oglase.",
     },
     {
       icon: <Building2 {...iconProps} className="text-gray-900" />,
       title: "Struktura kampanja po meri",
       description:
-        "Kampanje dizajnirane specifično za vaše ciljeve. Bilo da je fokus ROAS, CPA, kvalitet leadova ili brand awareness — svaka struktura ima svrhu.",
+        "Kampanje dizajnirane specifično za vaše ciljeve. Bilo da je fokus ROAS, CPA, kvalitet leadova ili brand awareness - svaka struktura ima svrhu.",
     },
     {
       icon: <Zap {...iconProps} className="text-gray-900" />,
@@ -207,7 +207,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     "Definisanje ciljeva i KPI-jeva",
     "Istraživanje ključnih reči i konkurencije",
     "Kreiranje strukture kampanja",
-    "Kreiranje oglasa — RSA naslovi, opisi i ekstenzije",
+    "Kreiranje oglasa - RSA naslovi, opisi i ekstenzije",
     "AI alati za praćenje napretka kampanja",
     "Mesečni i kvartalni eksperimenti i A/B testiranja",
     "Custom skripte za automatizaciju i alerte",
@@ -318,17 +318,17 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       icon: <Handshake {...iconProps} className="text-gray-900" />,
       title: "Prvih 90 dana bez rizika",
       description:
-        "Počinjemo sa probnim periodom od 90 dana. Ako ste zadovoljni rezultatima — nastavljamo dugoročno. Ako ne — bez obaveza.",
+        "Počinjemo sa probnim periodom od 90 dana. Ako ste zadovoljni rezultatima - nastavljamo dugoročno. Ako ne - bez obaveza.",
     },
     {
       icon: <DoorOpen {...iconProps} className="text-gray-900" />,
       title: "Izlazna garancija",
       description:
-        "Bez obaveza, bez penala. Ako niste zadovoljni — odlazite sa kompletnim nalogom, kampanjama i svim što smo izgradili. Sve je vaše.",
+        "Bez obaveza, bez penala. Ako niste zadovoljni - odlazite sa kompletnim nalogom, kampanjama i svim što smo izgradili. Sve je vaše.",
     },
     {
       icon: <MessageCircle {...iconProps} className="text-gray-900" />,
-      title: "Direktan pristup ekspertu — uvek",
+      title: "Direktan pristup ekspertu - uvek",
       description:
         "Uvek pričate direktno sa mnom. Bez juniora, bez posrednika. Direktan Slack/email pristup sa odgovorom u roku od 24h.",
     },
@@ -348,7 +348,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     {
       question: "Šta ako već imam kampanje koje rade?",
       answer:
-        "Odlično — to je idealna polazna tačka. Počinjem auditom postojećeg stanja i identifikujem prilike za poboljšanje. Nikada ne rušim ono što funkcioniše — nadograđujem i tražim propuštene prilike za rast.",
+        "Odlično - to je idealna polazna tačka. Počinjem auditom postojećeg stanja i identifikujem prilike za poboljšanje. Nikada ne rušim ono što funkcioniše - nadograđujem i tražim propuštene prilike za rast.",
     },
     {
       question: "Po čemu se razlikujete od agencije?",
@@ -358,17 +358,17 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     {
       question: "Zašto ste skuplji od nekih agencija?",
       answer:
-        "Zato što ne dobijate juniora koji uči na vašem nalogu. Dobijate senior stratega sa decenijom iskustva, custom skripte, AI monitoring i direktan pristup — bez posrednika. Kvalitet košta manje od lošeg rada koji troši vaš budžet.",
+        "Zato što ne dobijate juniora koji uči na vašem nalogu. Dobijate senior stratega sa decenijom iskustva, custom skripte, AI monitoring i direktan pristup - bez posrednika. Kvalitet košta manje od lošeg rada koji troši vaš budžet.",
     },
     {
       question: "Da li pokrivate i ostale kanale osim Google Ads?",
       answer:
-        "Da — kroz Performance Marketing paket sa Funky Enterprises pokrivamo Google Ads, Meta Ads, SEO, CRO i kompletnu digitalnu strategiju. Conversion tracking, analitika i atribucija su uključeni u svaki paket.",
+        "Da - kroz Performance Marketing paket sa Funky Enterprises pokrivamo Google Ads, Meta Ads, SEO, CRO i kompletnu digitalnu strategiju. Conversion tracking, analitika i atribucija su uključeni u svaki paket.",
     },
     {
       question: "Sa kojim tipovima biznisa radite?",
       answer:
-        "Radim sa biznisima koji su spremni da investiraju u rast — od ambicioznih kompanija do etabliranih brendova. Specijalizujem se za eCommerce (Shopping, PMax) i lead generation (Search). Radio sam sa skincare brendovima, auto delovima, printing-om, klinikama, SaaS platformama i još mnogo toga.",
+        "Radim sa biznisima koji su spremni da investiraju u rast - od ambicioznih kompanija do etabliranih brendova. Specijalizujem se za eCommerce (Shopping, PMax) i lead generation (Search). Radio sam sa skincare brendovima, auto delovima, printing-om, klinikama, SaaS platformama i još mnogo toga.",
     },
     {
       question: "Da li postoji minimalan period saradnje?",
@@ -378,7 +378,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
     {
       question: "Šta se dešava na besplatnom razgovoru?",
       answer:
-        "Pregledam vašu trenutnu Google Ads situaciju (ili vaše tržište ako ste novi), identifikujem najveće prilike i probleme, i dajem vam iskren feedback o tome šta je realno. Bez prodajnog pitch-a — samo podaci. Ako se kvalifikujete, možete dobiti i besplatnu analizu naloga sa konkretnim akcionim planom.",
+        "Pregledam vašu trenutnu Google Ads situaciju (ili vaše tržište ako ste novi), identifikujem najveće prilike i probleme, i dajem vam iskren feedback o tome šta je realno. Bez prodajnog pitch-a - samo podaci. Ako se kvalifikujete, možete dobiti i besplatnu analizu naloga sa konkretnim akcionim planom.",
     },
   ];
 
@@ -433,7 +433,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             <div className="md:flex-1">
               {/* Micro-label */}
               <p className="text-accent text-sm font-semibold mb-4 uppercase tracking-wider">
-                Google Ads ekspert — decenija iskustva
+                Google Ads ekspert - decenija iskustva
               </p>
 
               {/* Urgency badge */}
@@ -442,7 +442,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-red-400"></span>
                 </span>
-                Svesno primam ograničen broj novih klijenata po kvartalu — trenutnu dostupnost proveravamo na 20-min pozivu
+                Svesno primam ograničen broj novih klijenata po kvartalu - trenutnu dostupnost proveravamo na 20-min pozivu
               </div>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 leading-tight">
@@ -452,7 +452,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
 
               <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-xl">
                 Kampanje za srednje i enterprise kompanije koje žele merljive
-                rezultate. Vi se fokusirate na biznis — ja se brinem da vam
+                rezultate. Vi se fokusirate na biznis - ja se brinem da vam
                 Google dovodi kupce.
               </p>
 
@@ -502,7 +502,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             <div className="hidden md:block md:flex-shrink-0">
               <Image
                 src="/sloba.webp"
-                alt="Slobodan Jelisavac — Google Ads Consultant"
+                alt="Slobodan Jelisavac - Google Ads Consultant"
                 width={380}
                 height={380}
                 className="rounded-2xl shadow-2xl shadow-black/30 lg:w-[380px] md:w-[300px]"
@@ -518,7 +518,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       {/* ============================================= */}
       <section className="py-10 md:py-12 bg-gray-50 border-b border-gray-100 overflow-hidden">
         <p className="text-center text-sm text-gray-500 mb-6 uppercase tracking-wider px-4">
-          Brendovi koji su mi ukazali poverenje — UK, EU, Srbija, Ex-Yu
+          Brendovi koji su mi ukazali poverenje - UK, EU, Srbija, Ex-Yu
         </p>
         <div className="relative">
           {/* Fade edges */}
@@ -567,7 +567,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Problemi koje ignorišete — a koštaju vas svaki dan
+              Problemi koje ignorišete - a koštaju vas svaki dan
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Većina kompanija sa kojima radim dolazi mi sa istim frustracijama. Prepoznajete li se?
@@ -684,14 +684,14 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
               </h2>
               <div className="space-y-3 text-gray-700">
                 <p>
-                  Ja sam Slobodan Jelisavac — Google Ads strateg sa decenijom
+                  Ja sam Slobodan Jelisavac - Google Ads strateg sa decenijom
                   iskustva u vođenju kampanja za brendove u UK, USA, Nemačkoj,
                   Australiji, Hrvatskoj i Srbiji.
                 </p>
                 <p>
                   Radio sam u agencijama uključujući Exposure Ninja (UK) kao Head
                   of PPC, vodio kampanje koje su osvojile 3x
-                  UK Search Awards. Sada radim nezavisno — što znači da uvek
+                  UK Search Awards. Sada radim nezavisno - što znači da uvek
                   dobijate senior-level ekspertizu direktno.
                 </p>
                 <p className="font-semibold">
@@ -799,7 +799,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
               Sve što je uključeno
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Kompletna Google Ads usluga — od istraživanja i setup-a do
+              Kompletna Google Ads usluga - od istraživanja i setup-a do
               optimizacije i reportinga.
             </p>
           </div>
@@ -829,10 +829,10 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Kako funkcioniše — 3 jednostavna koraka
+              Kako funkcioniše - 3 jednostavna koraka
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Od prvog kontakta do merljivih rezultata — jasno i transparentno.
+              Od prvog kontakta do merljivih rezultata - jasno i transparentno.
             </p>
           </div>
           <div className="space-y-6">
@@ -873,7 +873,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             Zakažite besplatan razgovor
           </a>
           <p className="text-sm text-white/60 mt-3">
-            Svesno primam ograničen broj novih klijenata po kvartalu — trenutnu dostupnost proveravamo na 20-min pozivu
+            Svesno primam ograničen broj novih klijenata po kvartalu - trenutnu dostupnost proveravamo na 20-min pozivu
           </p>
         </div>
       </section>
@@ -1057,7 +1057,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
               </span>
-              Ograničen broj novih klijenata po kvartalu — proverite dostupnost na pozivu
+              Ograničen broj novih klijenata po kvartalu - proverite dostupnost na pozivu
             </div>
           </div>
         </div>
@@ -1073,7 +1073,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
               Nula rizika za vas
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Verujem u zarađivanje vašeg poverenja kroz rezultate — ne kroz
+              Verujem u zarađivanje vašeg poverenja kroz rezultate - ne kroz
               ugovore.
             </p>
           </div>
@@ -1140,7 +1140,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
             </h2>
             <p className="text-slate-300 max-w-xl mx-auto mb-6">
               Popunite formular i ja ću lično pregledati vašu situaciju u roku
-              od 48 sati. Bez prodajnog pitch-a — samo iskren feedback i
+              od 48 sati. Bez prodajnog pitch-a - samo iskren feedback i
               konkretne preporuke.
             </p>
 
@@ -1191,7 +1191,7 @@ export default async function GoogleAdsLandingPage({ params }: Props) {
       {/* ============================================= */}
       <footer className="bg-slate-900 text-slate-400 py-6 px-4 md:px-8 text-center text-sm border-t border-slate-800">
         <p>
-          &copy; {new Date().getFullYear()} Slobodan Jelisavac — Google Ads
+          &copy; {new Date().getFullYear()} Slobodan Jelisavac - Google Ads
           Strategist
         </p>
         <div className="flex justify-center gap-4 mt-2">

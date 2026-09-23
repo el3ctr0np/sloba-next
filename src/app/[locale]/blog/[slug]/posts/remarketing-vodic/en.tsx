@@ -802,7 +802,7 @@ export default function RemarketingGuideEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: January 2026
+        Last updated: February 2026
       </div>
       <div className="text-sm text-gray-500">
         Author: Slobodan Jelisavac, Google Ads Consultant

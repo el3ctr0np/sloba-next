@@ -798,7 +798,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
                 name: "How many SKUs do I need for Shopping to be worth it?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "A minimum of 50 active SKUs with an average order value above 2,500-3,000 RSD. With a smaller catalogue or lower AOV, setup costs (feed, Merchant Center, campaigns) can exceed the ROI. Ideally: 200+ SKUs, clear segmentation by category, and a minimum 30% margin on best-sellers."
+                  text: "A minimum of 50 active SKUs with an average order value above 2,500-3,000 RSD. With a smaller catalogue or lower AOV, setup costs can exceed the ROI. Ideally: 200+ SKUs, clear segmentation by category, and a minimum 30% margin on best-sellers."
                 }
               },
               {
@@ -806,7 +806,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
                 name: "Does Shopping work for services (not just physical products)?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "No — Google Shopping is exclusively for physical (and digital) products sold online. For services, use Search campaigns or Local Services Ads (once available in Serbia). Shopping requires a product feed with prices, images, and availability — attributes that don't apply to services."
+                  text: "No — Google Shopping is exclusively for physical (and digital) products sold online. For services, use Search campaigns. Shopping requires a product feed with prices, images, and availability — attributes that don't apply to services."
                 }
               },
               {
@@ -814,15 +814,15 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
                 name: "What is the difference between Standard Shopping and Performance Max for eCommerce?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Standard Shopping gives you more control: you see search terms, you can segment, and you get transparency. Performance Max automates everything — it uses machine learning but gives less visibility. My recommendation for the Serbian market: start with Standard Shopping for the first 3 months while collecting data, then test PMax with Signal audiences. More in the guide on Google Shopping campaigns."
+                  text: "Standard Shopping gives you more control: you see search terms, you can segment, and you get transparency. Performance Max automates everything but gives less visibility. My recommendation for the Serbian market: start with Standard Shopping for the first 3 months while collecting data, then test PMax with Signal audiences."
                 }
               },
               {
                 "@type": "Question",
-                name: "Can I set up Shopping myself or do I need an agency/freelancer?",
+                name: "Can I set up Shopping myself or do I need a specialist?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "You can handle Merchant Center setup and a basic feed yourself (especially with WooCommerce + the YITH Google Shopping plugin, or Shopify). Campaign optimisation, tiered structure, and bid management require experience. In my experience, a DIY setup with zero prior knowledge ends up costing more (in missed conversions and poor campaigns) than a month or two of working with an experienced specialist who teaches you the system."
+                  text: "You can handle Merchant Center setup and a basic feed yourself (especially with WooCommerce + a plugin, or Shopify). Campaign optimisation, tiered structure, and bid management require experience. A DIY setup with zero prior knowledge usually ends up costing more in missed conversions than working with an experienced specialist."
                 }
               },
               {
@@ -838,7 +838,7 @@ export default function GoogleShoppingSerbiaLaunch2026EN() {
                 name: "What is POAS and why does it matter more than ROAS for Shopping?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "POAS (Profit on Ad Spend) = (Revenue - COGS) / Ad Spend. Unlike ROAS, which measures total revenue, POAS measures profitability. If you sell a product for 5,000 RSD with a 40% margin (2,000 RSD profit) and spend 1,000 RSD on ads — ROAS is 5x, POAS is 2x. A Target ROAS without margin data can lead to campaigns that generate revenue but eat into profit. Always know your COGS before setting a bidding target."
+                  text: "POAS (Profit on Ad Spend) = (Revenue - COGS) / Ad Spend. Unlike ROAS, which measures total revenue, POAS measures profitability. Always know your COGS per category before setting a bidding target — a high ROAS on a poor margin can mean you're spending your profit."
                 }
               }
             ]

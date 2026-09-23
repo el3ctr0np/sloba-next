@@ -30,7 +30,7 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
           </div>
         </div>
         <p className="text-sm text-slate-400 mt-6 mb-0 border-t border-slate-700 pt-4">
-          Podaci: Narodna banka Srbije, Mordor Intelligence, ECDB/Statista. Ažurirano: april 2026.
+          Podaci: Narodna banka Srbije, Mordor Intelligence, ECDB/Statista. Ažurirano: jul 2026.
         </p>
       </div>
 

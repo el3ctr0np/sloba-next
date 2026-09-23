@@ -96,7 +96,7 @@ export default function KolikoKostaGoogleAdsPost() {
       </ul>
       <p className="text-base text-gray-500 mt-3">
         Više o aukcijskom sistemu pročitajte u{" "}
-        <a href="https://support.google.com/google-ads/answer/1704342" target="_blank" rel="noopener noreferrer" className="underline">
+        <a href="https://support.google.com/google-ads/answer/6366577" target="_blank" rel="noopener noreferrer" className="underline">
           Google Ads Help Center-u
         </a>.
       </p>
@@ -582,7 +582,7 @@ export default function KolikoKostaGoogleAdsPost() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Poslednje ažuriranje: Januar 2026
+        Poslednje ažuriranje: Maj 2026
       </div>
       <div className="text-sm text-gray-500">
         Autor: Slobodan Jelisavac, Google Ads Consultant

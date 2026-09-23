@@ -500,7 +500,7 @@ export default function ProductFeedSrpskiEcommerceSR() {
                 name: "Koji format feed-a je najbolji - XML, TXT ili Google Sheets?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Nema univerzalno 'najboljeg' formata - zavisi od veličine kataloga i platforme. XML je standard za plugin-ovi i Content API integracije. Google Sheets je odličan za male kataloge (ispod 50-100 proizvoda) bez developera. TXT/CSV se ređe koristi ručno, ali ga neki custom sistemi generišu automatski. Bitnije od formata je da se redovno i tačno ažurira."
+                  text: "Nema univerzalno \"najboljeg\" formata - zavisi od veličine kataloga i platforme. XML je standard za plugin-ove i Content API integracije. Google Sheets je odličan za male kataloge (ispod 50-100 proizvoda) bez developera. Bitnije od formata je da se redovno i tačno ažurira."
                 }
               },
               {
@@ -508,7 +508,7 @@ export default function ProductFeedSrpskiEcommerceSR() {
                 name: "Koliko često treba da ažuriram product feed?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google preporučuje minimum jednom dnevno ažuriranje celog feed-a, a za availability (stanje zaliha) idealno u realnom vremenu ili nekoliko puta dnevno. Ako vaš feed generator podržava automatski scheduled fetch, podesite ga na dnevni ciklus kao apsolutni minimum."
+                  text: "Google preporučuje minimum jednom dnevno ažuriranje celog feed-a, a za availability idealno u realnom vremenu ili nekoliko puta dnevno. Podesite automatski scheduled fetch na dnevni ciklus kao apsolutni minimum."
                 }
               },
               {
@@ -516,7 +516,7 @@ export default function ProductFeedSrpskiEcommerceSR() {
                 name: "Da li title proizvoda utiče na cenu klika (CPC)?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Indirektno da. Precizan, dobro strukturiran title poboljšava relevantnost matching-a sa pretragama, što utiče na to koliko kvalitetan saobraćaj dobijate i koliko efikasno Google troši budžet. Loš title ne povećava CPC direktno, ali smanjava šansu da se proizvod uopšte prikaže za prave pretrage, što efektivno povećava trošak po konverziji."
+                  text: "Indirektno da. Precizan title poboljšava relevantnost matching-a, što utiče na kvalitet saobraćaja. Loš title smanjuje šansu da se proizvod uopšte prikaže za prave pretrage, što efektivno povećava trošak po konverziji."
                 }
               },
               {
@@ -524,7 +524,7 @@ export default function ProductFeedSrpskiEcommerceSR() {
                 name: "Šta su custom labels i da li su obavezni?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Custom labels (custom_label_0 do custom_label_4) su pet slobodnih polja koja sami definišete za segmentaciju proizvoda - po marži, sezoni, bestseller statusu i slično. Nisu obavezni i ne utiču na matching, ali su ključni alat za precizniji bidding kroz kampanju kad želite različitu bid strategiju za različite segmente kataloga."
+                  text: "Custom labels (custom_label_0 do custom_label_4) su pet slobodnih polja za segmentaciju proizvoda - po marži, sezoni, bestseller statusu. Nisu obavezni, ali su ključan alat za precizniji bidding po segmentu kataloga."
                 }
               },
               {
@@ -532,7 +532,7 @@ export default function ProductFeedSrpskiEcommerceSR() {
                 name: "Kako da popravim disapproved proizvode u feed-u?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Prvi korak je Merchant Center Diagnostics (Products → Diagnostics) - tamo Google navodi tačan razlog disapproval-a za svaki proizvod, sa linkom ka relevantnoj politici. Najčešći uzroci su mismatch cene, nedostajući GTIN, promotivni tekst u title-u, ili slike sa watermark-om. Rešite uzrok, sačekajte sledeći fetch feed-a, i proizvod se automatski ponovo proverava."
+                  text: "Prvi korak je Merchant Center Diagnostics (Products → Diagnostics) - tamo Google navodi tačan razlog disapproval-a za svaki proizvod. Najčešći uzroci: mismatch cene, nedostajući GTIN, promotivni tekst u title-u, ili slike sa watermark-om."
                 }
               },
               {
@@ -540,7 +540,7 @@ export default function ProductFeedSrpskiEcommerceSR() {
                 name: "Da li mogu koristiti isti feed za Google Shopping i Meta Shops?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Ne direktno - Google Merchant Center i Meta Commerce Manager su odvojene platforme sa sopstvenim specifikacijama atributa, iako se dosta preklapaju. Mnogi feed alati i platforme (Shopify apps, WooCommerce pluginovi) mogu generisati oba feed-a iz istog izvora podataka na sajtu, ali svaki feed se posebno upload-uje na svoju platformu."
+                  text: "Ne direktno - to su odvojene platforme sa sopstvenim specifikacijama, iako se dosta preklapaju. Mnogi feed alati mogu generisati oba feed-a iz istog izvora podataka na sajtu, ali se svaki posebno upload-uje."
                 }
               }
             ]

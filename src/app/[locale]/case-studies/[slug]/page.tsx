@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const seeHow = isEn ? "See how." : "Pogledajte kako.";
 
   return buildMetadata({
-    title: `${cs.company} Case Study | ${cs.highlight} — Slobodan Jelisavac`,
+    title: `${cs.company} Case Study | ${cs.highlight} - Slobodan Jelisavac`,
     description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}. ${cs.results[1]?.label}: ${cs.results[1]?.value}. ${seeHow}`,
     locale,
     path: `/case-studies/${slug}`,
@@ -144,7 +144,7 @@ export default async function CaseStudyPage({ params }: Props) {
                 {cs.company}
               </h1>
               <p className="text-xl text-yellow-400 font-semibold mb-4">
-                {cs.niche} — {cs.highlight}
+                {cs.niche} - {cs.highlight}
               </p>
               <p className="text-slate-300 mb-8">{cs.period}</p>
 

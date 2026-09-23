@@ -1208,7 +1208,7 @@ export default function GoogleAdsAuditGuideEN() {
 
       <div className="mt-10 text-sm text-gray-500">
         <p className="mb-1"><strong>Author:</strong> Slobodan Jelisavac, Google Ads Specialist</p>
-        <p className="mb-0">Last updated: July 2026</p>
+        <p className="mb-0">Last updated: August 2026</p>
       </div>
     </>
   );

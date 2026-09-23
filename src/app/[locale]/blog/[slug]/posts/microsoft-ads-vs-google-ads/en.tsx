@@ -865,7 +865,7 @@ export default function MicrosoftAdsVsGoogleAdsEN() {
         </li>
         <li>
           <a
-            href="https://about.ads.microsoft.com/en-us/resources/microsoft-advertising-audience"
+            href="https://about.ads.microsoft.com/en-us/solutions/microsoft-audience-network/microsoft-audience-ads"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"

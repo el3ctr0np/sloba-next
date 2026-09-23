@@ -1168,7 +1168,7 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
 
       <div className="mt-10 text-sm text-gray-500">
         <p className="mb-1"><strong>Autor:</strong> Slobodan Jelisavac, Google Ads Specialist</p>
-        <p className="mb-0">Poslednje ažuriranje: Jul 2026</p>
+        <p className="mb-0">Poslednje ažuriranje: Avgust 2026</p>
       </div>
     </>
   );

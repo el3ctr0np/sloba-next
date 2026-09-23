@@ -163,7 +163,7 @@ export default function PerformanceMaxVodicPost() {
 
       <h2 id="sta-je-performance-max-i-zasto-je-poseban">Šta je Performance Max i zašto je poseban</h2>
       <p>
-        <a href="https://support.google.com/google-ads/answer/13396471" target="_blank" rel="noopener noreferrer">Performance Max</a> je automatizovana kampanja koja koristi machine learning da prikaže vaše oglase na svim Google mrežama odjednom: Search, Shopping, Display, YouTube, Gmail, Discover i Maps. Umesto da kreirate odvojene kampanje po kanalu, dajete Google-u sirov materijal i on kombinuje sve u stvarnom vremenu.
+        <a href="https://support.google.com/google-ads/answer/10724817" target="_blank" rel="noopener noreferrer">Performance Max</a> je automatizovana kampanja koja koristi machine learning da prikaže vaše oglase na svim Google mrežama odjednom: Search, Shopping, Display, YouTube, Gmail, Discover i Maps. Umesto da kreirate odvojene kampanje po kanalu, dajete Google-u sirov materijal i on kombinuje sve u stvarnom vremenu.
       </p>
       <p><strong>Vi dajete:</strong></p>
       <ul>

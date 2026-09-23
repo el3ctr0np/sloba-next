@@ -465,7 +465,7 @@ export default function WhatIsRoasEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: April 2026
+        Last updated: September 2026
       </div>
       <div className="text-sm text-gray-500">
         Author: Slobodan Jelisavac, Google Ads Consultant

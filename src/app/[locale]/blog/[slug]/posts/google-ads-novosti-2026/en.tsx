@@ -10,7 +10,7 @@ export default function GoogleAdsUpdates2026EN() {
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse inline-block"></span>
           Updated monthly
         </span>
-        <span className="text-xs text-gray-500">Last updated: April 2026</span>
+        <span className="text-xs text-gray-500">Last updated: July 2026</span>
       </div>
 
       {/* Hero summary box */}
@@ -403,7 +403,7 @@ export default function GoogleAdsUpdates2026EN() {
                 name: "How often is this post updated?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The post is updated monthly, usually within the first 7 days of the new month. Each update adds the new month to the top with all the relevant changes from the Google Ads platform. The 'Last updated' label in the header shows when the post was last edited."
+                  text: "The post is updated monthly, usually within the first 7 days of the new month. Each update adds the new month to the top with all the relevant changes from the Google Ads platform. The \"Last updated\" label in the header shows when the post was last edited."
                 }
               },
               {
@@ -411,7 +411,7 @@ export default function GoogleAdsUpdates2026EN() {
                 name: "Where can I follow Google Ads news?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Primary sources: the official Google Ads Blog (ads.google.com/intl/en_us/home/resources/), Search Engine Land, PPC Hero, and the Inside Google Ads podcast. For the Serbian market, this post is the only Serbian resource that aggregates all the relevant changes in one place."
+                  text: "Primary sources: Official Google Ads Blog, Search Engine Land, PPC Hero, and the Inside Google Ads podcast. For the Serbian market, this post is the only Serbian resource that aggregates all the relevant changes in one place."
                 }
               },
               {
@@ -419,7 +419,7 @@ export default function GoogleAdsUpdates2026EN() {
                 name: "What is AI Max for Google Ads?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "AI Max is a set of AI-powered features for Search and Performance Max campaigns that automatically generate ad copy, expand keyword targeting to relevant queries you have not explicitly added, and optimize creative based on search context. It consists of: Text Customization (real-time headline and description generation), Text Guidelines (control over what AI can write), and Broad Match Expansion (automatic reach expansion). Available globally since February 2026."
+                  text: "AI Max is a set of AI-powered features for Search and Performance Max campaigns that automatically generate ad copy, expand keyword targeting to relevant queries you have not explicitly added, and optimize creative based on search context. It consists of: Text Customization (real-time headline and description generation), Text Guidelines (control over what AI can write), and Broad Match Expansion. Available globally since February 2026."
                 }
               },
               {
@@ -427,7 +427,7 @@ export default function GoogleAdsUpdates2026EN() {
                 name: "When is Google Shopping coming to Serbia?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google Shopping is coming to Serbia in the second half of 2026 (Q3 or Q4), as part of the Phase 2 EMEA expansion that also includes Croatia, Bosnia and Herzegovina, Slovenia, and Montenegro. The exact date hasn't been confirmed yet; if the launch lands in Q4 it may be timed ahead of the Black Friday season. Merchant Center setup and feed optimization should be finished as early as possible."
+                  text: "Google Shopping is coming to Serbia in the second half of 2026 (Q3 or Q4), as part of the Phase 2 EMEA expansion that also includes Croatia, Bosnia and Herzegovina, Slovenia, and Montenegro. The exact date hasn't been confirmed yet; if the launch lands in Q4 it may be timed ahead of the Black Friday season. Merchant Center setup and feed optimization should be finished as early as possible. Complete preparation guide →"
                 }
               },
               {

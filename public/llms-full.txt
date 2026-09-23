@@ -2378,7 +2378,7 @@ Personalizovano za vaš nalog
 Kvalifikacija
 
 ## Da li je ovaj Audit za vas?
-Radim audit samo za naloge koji ispunjavaju ove kriterijume — jer želim da stvarno pomognem, ne da dajem generičke savete.
+Radim audit samo za naloge koji ispunjavaju ove kriterijume - jer želim da stvarno pomognem, ne da dajem generičke savete.
 
 ✓
 
@@ -2401,7 +2401,7 @@ Radim audit samo za naloge koji ispunjavaju ove kriterijume — jer želim da st
 
 Proces
 
-## Kako Funkcioniše — 4 Koraka
+## Kako Funkcioniše - 4 Koraka
 
 1
 
@@ -2424,7 +2424,7 @@ Snimam 15-minutni video: 3 crvena flag-a + top 3 prioriteta. Šaljem preko Loom-
 Popravljate sami, ili zakažete poziv za saradnju. Bez pritiska.
 
 ### Koja analiza vam treba?
-Ovaj besplatan 15-minutni video pregled je lakši, teaser nivo provere za kvalifikovane naloge — 3 crvena flag-a i top prioriteti, ne kompletan plan. Ako želite kompletnu, plaćenu analizu sa pisanim akcionim planom, pogledajte Deep Audit + Action Plan (od €450).
+Ovaj besplatan 15-minutni video pregled je lakši, teaser nivo provere za kvalifikovane naloge - 3 crvena flag-a i top prioriteti, ne kompletan plan. Ako želite kompletnu, plaćenu analizu sa pisanim akcionim planom, pogledajte Deep Audit + Action Plan (od €450).
 
 Šta video pokriva
 
@@ -2432,32 +2432,32 @@ Ovaj besplatan 15-minutni video pregled je lakši, teaser nivo provere za kvalif
 
 1
 
-### Struktura naloga — 3 crvena flag-a
+### Struktura naloga - 3 crvena flag-a
 Šta je fundamentalno pokvareno što ograničava performanse pre svega ostalog.
 
 2
 
-### Conversion tracking — da li je tačan?
+### Conversion tracking - da li je tačan?
 Ako algoritam dobija pogrešne signale, nijedna optimizacija neće raditi. Proverim GA4 + Google Ads integraciju.
 
 3
 
-### Bidding strategija — da li je prava?
+### Bidding strategija - da li je prava?
 Većina naloga koristi pogrešnu Smart Bidding strategiju za svoj conversion volume i ciljeve.
 
 4
 
 ### Search terms leak analiza
-Gde vaš budžet krvari — irelevantne pretrage za koje plaćate a ne bi trebalo.
+Gde vaš budžet krvari - irelevantne pretrage za koje plaćate a ne bi trebalo.
 
 5
 
-### Top 3 prioriteta — poređano po impaktu
+### Top 3 prioriteta - poređano po impaktu
 Ako ništa drugo ne uradite, popravite ovih 3. Očekivan impact po svakom fix-u.
 
 Šta audit NIJE
 
-NIJE kompletan implementacijski plan. Identifikujem probleme — ali sam rad na fix-u je plaćen. Ovo je kvalifikovano drugo mišljenje, ne do-it-yourself playbook.
+NIJE kompletan implementacijski plan. Identifikujem probleme - ali sam rad na fix-u je plaćen. Ovo je kvalifikovano drugo mišljenje, ne do-it-yourself playbook.
 
 Prijava
 
@@ -2474,21 +2474,23 @@ Tip biznisa *— Izaberi —eCommerceB2B / Lead GenSaaSLocal ServiceDrugo
 
 Mesečni ad spend *— Izaberi —< €500/mes (nije još kvalifikovan)€500 – €1.500/mes€1.500 – €3.000/mes ✓€3.000 – €10.000/mes ✓€10.000+/mes ✓
 
+Kako ste me našli?— Izaberi —Google pretragaChatGPT ili drugi AI asistentLinkedInPreporukaDrugo
+
 Najveći problem trenutno
 
 Pošalji prijavu →Ne koristim vaše podatke za marketing. Bez email sekvenci. Bez remarketinga. Samo audit.
 
 ## Česta pitanja
 
-Zašto je besplatan?▼Jer audit identifikuje probleme — ne pruža kompletna rešenja. Ako vam se dopada razmišljanje, možemo pričati o saradnji. Ako ne, zadržite insights. Radi za oboje.
+Zašto je besplatan?▼Jer audit identifikuje probleme - ne pruža kompletna rešenja. Ako vam se dopada razmišljanje, možemo pričati o saradnji. Ako ne, zadržite insights. Radi za oboje.
 
 Koliko zaista traje?▼Za vas: 5 min prijava + 48h čekanje + 15 min video + ~30 min razmišljanja = 1h ukupno. Za mene: 2-3h po auditu (zato limit od 5/mes).
 
-Šta ako nisam kvalifikovan?▼Redirectujem vas ka pravom resursu — blog, rečnik, ili predloženoj agenciji. Bez ghosting-a.
+Šta ako nisam kvalifikovan?▼Redirectujem vas ka pravom resursu - blog, rečnik, ili predloženoj agenciji. Bez ghosting-a.
 
 Da li postoji obaveza?▼Nema. Video je vaš. Slobodno ga koristite, delite sa timom, ili ništa.
 
-Koje alate koristite?▼Google Ads UI (read-only), GA4, povremeno Supermetrics za data export, Loom za snimanje. To je sve — bez proprietary 'magic box-a'.
+Koje alate koristite?▼Google Ads UI (read-only), GA4, povremeno Supermetrics za data export, Loom za snimanje. To je sve - bez proprietary 'magic box-a'.
 
 ---
 
@@ -2610,6 +2612,8 @@ Company website *
 Business type *— Select —eCommerceB2B / Lead GenSaaSLocal ServiceOther
 
 Monthly ad spend *— Select —< $500/mo (not qualified yet)$500 – $1,500/mo$1,500 – $3,000/mo ✓$3,000 – $10,000/mo ✓$10,000+/mo ✓
+
+How did you find me?— Select —Google searchChatGPT or another AI assistantLinkedInReferralOther
 
 Biggest pain right now
 
@@ -5157,7 +5161,7 @@ Most common Google Ads mistakes
 
 Author: Slobodan Jelisavac, Google Ads Specialist
 
-Last updated: July 2026
+Last updated: August 2026
 
 Free tools
 
@@ -5530,7 +5534,7 @@ Google Ads vs Meta Ads
 
 Koji kanal je bolji za vaš biznis
 
-Poslednje ažuriranje: Januar 2026
+Poslednje ažuriranje: Maj 2026
 
 Autor: Slobodan Jelisavac, Google Ads Consultant
 
@@ -5617,7 +5621,7 @@ rast YoY
 
 online prodavnica aktivno
 
-Podaci: Narodna banka Srbije, Mordor Intelligence, ECDB/Statista. Ažurirano: april 2026.
+Podaci: Narodna banka Srbije, Mordor Intelligence, ECDB/Statista. Ažurirano: jul 2026.
 
 Srbija je 2025. godine prošla kroz tihu revoluciju eCommerce-a. Dok su mnogi vlasnici online prodavnica i dalje razmišljali u kategorijama 2019. godine, kupci su tiho promenili navike - 110,6 miliona internet kupovina, rast od 34,3% u odnosu na 2024, i 906 novih online prodavnica otvorenih u jednoj godini. Ovo više nisu marginalne brojke. Ovo je zrelo tržište koje traži zrelu strategiju.
 
@@ -6518,7 +6522,7 @@ Shopping
 ### Google Shopping Campaigns
 Product feed optimization, bid strategies, and the Tiered Shopping approach for eCommerce accounts.
 
-Last updated: January 2026
+Last updated: September 2026
 
 Author: Slobodan Jelisavac, Google Ads Consultant
 
@@ -8167,7 +8171,7 @@ Google Ads optimizacija - 30 taktika
 
 Kompletna strategija za poboljšanje performansi
 
-Poslednje ažuriranje: Februar 2026
+Poslednje ažuriranje: Septembar 2026
 
 Autor: Slobodan Jelisavac, Google Ads Consultant
 

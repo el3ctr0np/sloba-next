@@ -10,7 +10,7 @@ export default function GoogleAdsNovosti2026SR() {
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse inline-block"></span>
           Ažurirano mesečno
         </span>
-        <span className="text-xs text-gray-500">Poslednje ažuriranje: April 2026</span>
+        <span className="text-xs text-gray-500">Poslednje ažuriranje: Jul 2026</span>
       </div>
 
       {/* Hero summary box */}
@@ -403,7 +403,7 @@ export default function GoogleAdsNovosti2026SR() {
                 name: "Koliko često se ovaj post ažurira?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Post se ažurira mesečno, obično u prvih 7 dana novog meseca. Svako ažuriranje dodaje novi mesec na vrh sa svim relevantnim promenama iz Google Ads platforme. Oznaka 'Poslednje ažuriranje' u zaglavlju pokazuje kada je post poslednji put menjan."
+                  text: "Post se ažurira mesečno, obično u prvih 7 dana novog meseca. Svako ažuriranje dodaje novi mesec na vrh sa svim relevantnim promenama iz Google Ads platforme. Oznaka \"Poslednje ažuriranje\" u zaglavlju pokazuje kada je post poslednji put menjan."
                 }
               },
               {
@@ -411,7 +411,7 @@ export default function GoogleAdsNovosti2026SR() {
                 name: "Gde mogu pratiti Google Ads novosti?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Primarni izvori: Official Google Ads Blog (ads.google.com/intl/en_us/home/resources/), Search Engine Land, PPC Hero, i Inside Google Ads podcast. Za srpsko tržište, ovaj post je jedini srpski resurs koji agregira sve relevantne promene na jednom mestu."
+                  text: "Primarni izvori: Official Google Ads Blog, Search Engine Land, PPC Hero, i Inside Google Ads podcast. Za srpsko tržište, ovaj post je jedini srpski resurs koji agregira sve relevantne promene na jednom mestu."
                 }
               },
               {
@@ -419,7 +419,7 @@ export default function GoogleAdsNovosti2026SR() {
                 name: "Šta je AI Max za Google Ads?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "AI Max je skup AI-powered funkcija za Search i Performance Max kampanje koje automatski generišu reklamne tekstove, proširuju keyword targeting na relevantne upite koje niste eksplicitno dodali, i optimizuju kreative na osnovu konteksta pretrage. Sastoji se od: Text Customization (generisanje headlinea/opisa u realnom vremenu), Text Guidelines (kontrola šta AI sme da piše), i Broad Match Expansion (automatsko proširenje dosega). Dostupno globalno od februara 2026."
+                  text: "AI Max je skup AI-powered funkcija za Search i Performance Max kampanje koje automatski generišu reklamne tekstove, proširuju keyword targeting na relevantne upite koje niste eksplicitno dodali, i optimizuju kreative na osnovu konteksta pretrage. Sastoji se od: Text Customization (generisanje headlinea i opisa u realnom vremenu), Text Guidelines (kontrola šta AI sme da piše), i Broad Match Expansion. Dostupno globalno od februara 2026."
                 }
               },
               {
@@ -427,7 +427,7 @@ export default function GoogleAdsNovosti2026SR() {
                 name: "Kada dolazi Google Shopping u Srbiju?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Google Shopping dolazi u Srbiju u drugoj polovini 2026 (Q3 ili Q4), kao deo Phase 2 EMEA ekspanzije koja uključuje i Hrvatsku, BiH, Sloveniju i Crnu Goru. Tačan datum još nije potvrđen; ako lansiranje bude u Q4, moguće je da bude pre Black Friday sezone. Merchant Center setup i feed optimizacija treba da budu gotovi što pre."
+                  text: "Google Shopping dolazi u Srbiju u drugoj polovini 2026 (Q3 ili Q4), kao deo Phase 2 EMEA ekspanzije koja uključuje i Hrvatsku, BiH, Sloveniju i Crnu Goru. Tačan datum još nije potvrđen; ako lansiranje bude u Q4, moguće je da bude pre Black Friday sezone. Merchant Center setup i feed optimizacija treba da budu gotovi što pre. Kompletan vodič za pripremu →"
                 }
               },
               {

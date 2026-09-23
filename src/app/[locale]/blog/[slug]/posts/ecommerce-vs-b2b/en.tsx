@@ -877,7 +877,7 @@ export default function EcommerceVsB2BEN() {
       </div>
 
       <div className="mt-10 text-sm text-gray-500">
-        Last updated: February 2026
+        Last updated: July 2026
       </div>
       <div className="text-sm text-gray-500">
         <Link href="/o-meni" className="underline">
