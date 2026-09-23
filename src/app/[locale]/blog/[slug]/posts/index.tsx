@@ -815,12 +815,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "remarketing-vodic",
-    title: "Google Ads Remarketing Vodič 2026: 7 Audience Lista koje Smanje CPA za 50-70%",
+    title: "Google Ads Remarketing Vodič 2026: 7 Audience Lista koje Smanjuju CPA",
     date: "2026-01-27",
     dateModified: "2026-04-27",
     category: "Google Ads",
     metaDescription:
-      "Remarketing kampanje u Google Ads-u 2026: 7 proverenih audience lista (cart abandoners 7d, product viewers 30d, video viewers, customer match, lookalikes), GA4 integracija, i konkretan setup koji smanji CPA za 50-70% u prosečnom eCommerce nalogu.",
+      "Remarketing kampanje u Google Ads-u 2026: 7 proverenih audience lista (cart abandoners 7d, product viewers 30d, video viewers, customer match, lookalikes), GA4 integracija, i konkretan setup koji smanjuje CPA u prosečnom eCommerce nalogu.",
     featuredImage: "/blog/remarketing-vodic.webp",
     imageAlt: "Ilustracija magneta koji privlači oblike nazad i bumeranga pored, tema remarketinga u Google Ads",
     readingTime: "15 min",
@@ -1499,7 +1499,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-02-11",
     category: "Google Ads",
     metaDescription:
-      "Learn how to launch Google Ads remarketing campaigns that bring back visitors and reduce CPA by 50-70%. Guide with segmentation, strategies, and real examples.",
+      "Learn how to launch Google Ads remarketing campaigns that bring back visitors and reduce CPA. Guide with segmentation, strategies, and real examples.",
     featuredImage: "/blog/remarketing-vodic.webp",
     imageAlt: "Illustration of a magnet pulling shapes back and a boomerang beside it, theme of Google Ads remarketing",
     readingTime: "15 min",
