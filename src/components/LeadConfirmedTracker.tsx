@@ -10,9 +10,15 @@ import { useEffect } from "react";
  *   - Meta Pixel - Lead [PRIMARY]  (will be added once code-side MetaPixel is unmounted)
  *
  * Dedup pattern (sessionStorage):
- *   - MultiStepForm sets `dj_lead_pending=1` + `dj_lead_tier=<tier>` on submit success
- *   - ContactForm sets `dj_lead_pending=1` + `dj_lead_form=contact_form` + `dj_lead_budget=<budget>`
- *   - AuditForm sets `dj_lead_pending=1` + `dj_lead_form=audit_form` + `dj_lead_ad_spend=<spend>`
+ *   - MultiStepForm sets `dj_lead_pending=1` + `dj_lead_tier=<tier>` + `dj_lead_form`
+ *     + `dj_lead_source=<slug>` + `dj_lead_budget=<monthlyBudget>` on submit success
+ *   - ContactForm sets `dj_lead_pending=1` + `dj_lead_form=contact_form` +
+ *     `dj_lead_budget=<budget>` + `dj_lead_source=<slug>`
+ *   - AuditForm sets `dj_lead_pending=1` + `dj_lead_form=audit_form` +
+ *     `dj_lead_ad_spend=<spend>` + `dj_lead_budget=<spend>` (alias, same value) +
+ *     `dj_lead_source=<slug>`
+ *   - `dj_lead_source` values: google | ai_assistant | linkedin | referral | other |
+ *     not_specified (added Sep 2026, task 1218761766603573 — "kako ste me našli?")
  *   - This component reads whichever markers are present, fires lead_confirmed
  *     once per session, and sets `dj_lead_confirmed_fired=1` to prevent
  *     double-fire on hvala refresh
@@ -38,12 +44,14 @@ export default function LeadConfirmedTracker() {
     let leadForm = "unknown";
     let leadBudget = "unknown";
     let leadAdSpend = "unknown";
+    let leadSource = "not_specified";
     let isPending = false;
     try {
       leadTier = sessionStorage.getItem("dj_lead_tier") || "unknown";
       leadForm = sessionStorage.getItem("dj_lead_form") || "unknown";
       leadBudget = sessionStorage.getItem("dj_lead_budget") || "unknown";
       leadAdSpend = sessionStorage.getItem("dj_lead_ad_spend") || "unknown";
+      leadSource = sessionStorage.getItem("dj_lead_source") || "not_specified";
       isPending = sessionStorage.getItem("dj_lead_pending") === "1";
     } catch {
       // ignore
@@ -60,6 +68,7 @@ export default function LeadConfirmedTracker() {
       lead_form: leadForm,
       lead_budget: leadBudget,
       lead_ad_spend: leadAdSpend,
+      lead_source: leadSource,
       // false = direct/refresh hit (organic), true = arrived via form submit redirect
       from_form_submit: isPending,
     });
@@ -68,8 +77,8 @@ export default function LeadConfirmedTracker() {
     try {
       sessionStorage.setItem("dj_lead_confirmed_fired", "1");
       sessionStorage.removeItem("dj_lead_pending");
-      // keep dj_lead_tier/dj_lead_form/dj_lead_budget/dj_lead_ad_spend in case
-      // page is reopened in same session — harmless
+      // keep dj_lead_tier/dj_lead_form/dj_lead_budget/dj_lead_ad_spend/dj_lead_source
+      // in case page is reopened in same session — harmless
     } catch {
       // ignore
     }

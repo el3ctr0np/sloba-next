@@ -18,6 +18,16 @@ function pushDataLayer(event: string, params: Record<string, unknown> = {}): voi
   w.dataLayer.push({ event, ...params });
 }
 
+// Opcije za "Kako ste me našli?" — isti slugovi u SR i EN da GTM/GA4 dobija
+// dosledne vrednosti bez obzira na jezik forme.
+const LEAD_SOURCE_OPTIONS: Array<{ value: string; sr: string; en: string }> = [
+  { value: "google", sr: "Google pretraga", en: "Google search" },
+  { value: "ai_assistant", sr: "ChatGPT ili drugi AI asistent", en: "ChatGPT or another AI assistant" },
+  { value: "linkedin", sr: "LinkedIn", en: "LinkedIn" },
+  { value: "referral", sr: "Preporuka", en: "Referral" },
+  { value: "other", sr: "Drugo", en: "Other" },
+];
+
 // --- Unit-economics math --------------------------------------------------
 // Everything here is deterministic and traceable to one input — no black box.
 //   breakEvenROAS  = 1 / margin            (pure math)
@@ -178,6 +188,8 @@ function getContent(locale: string) {
     emailPlaceholder: "email@example.com",
     websiteLabel: isEn ? "Store URL (optional)" : "Adresa prodavnice (opciono)",
     websitePlaceholder: "www.example.com",
+    leadSourceLabel: isEn ? "How did you find me?" : "Kako ste me našli?",
+    leadSourceOtherPlaceholder: isEn ? "Tell us more (optional)" : "Recite nam više (opciono)",
     submit: isEn ? "Send me the full read" : "Pošaljite mi pun pregled",
     submitting: isEn ? "Sending..." : "Šaljem...",
     privacyNote: isEn
@@ -215,6 +227,8 @@ export function EcomCalculator({ locale }: { locale: string }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [website, setWebsite] = useState("");
+  const [leadSource, setLeadSource] = useState("");
+  const [leadSourceOther, setLeadSourceOther] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -299,6 +313,11 @@ export function EcomCalculator({ locale }: { locale: string }) {
           "Max CPC": `${t.currency}${fmtNum(result.maxCPC, t.localeCode, 2)}`,
           "Projektovani ROAS": p ? `${fmtNum(p.projectedROAS, t.localeCode)}x` : "—",
           "Neto profit/gubitak": p ? `${t.currency}${fmtMoney(p.netAfterAds, t.localeCode)}/mes` : "—",
+          "Kako nas je pronašao/la": leadSource
+            ? `${LEAD_SOURCE_OPTIONS.find((o) => o.value === leadSource)?.[t.isEn ? "en" : "sr"] || leadSource}${
+                leadSource === "other" && leadSourceOther ? ` — ${leadSourceOther}` : ""
+              }`
+            : "—",
           _subject: `eCommerce kalkulator - break-even ${fmtNum(result.breakEvenROAS, t.localeCode)}x - ${website || name}`,
           _template: "table",
         }),
@@ -309,6 +328,10 @@ export function EcomCalculator({ locale }: { locale: string }) {
           form_name: FORM_NAME,
           break_even_roas: Math.round(result.breakEvenROAS * 100) / 100,
           net_after_ads: p ? Math.round(p.netAfterAds) : null,
+          lead_source: leadSource || "not_specified",
+          // Napomena: sajt meša valute (EN=USD, SR=EUR) pa se ovde šalje sirov
+          // mesečni spend broj bez ICP EUR bucketa — vidi FEEDBACK/NEJASNO.
+          lead_budget: spend || "unknown",
         });
         try {
           sessionStorage.setItem("dj_lead_form", "ecom_profit_calculator");
@@ -751,6 +774,36 @@ export function EcomCalculator({ locale }: { locale: string }) {
                 className={inputClass}
                 placeholder={t.websitePlaceholder}
               />
+            </div>
+            <div>
+              <label htmlFor="calc-lead-source" className="block text-sm font-medium text-gray-700 mb-1">
+                {t.leadSourceLabel}
+              </label>
+              <select
+                id="calc-lead-source"
+                value={leadSource}
+                onChange={(e) => {
+                  setLeadSource(e.target.value);
+                  if (e.target.value !== "other") setLeadSourceOther("");
+                }}
+                className={inputClass}
+              >
+                <option value="">— {t.isEn ? "Select" : "Izaberite"} —</option>
+                {LEAD_SOURCE_OPTIONS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {t.isEn ? opt.en : opt.sr}
+                  </option>
+                ))}
+              </select>
+              {leadSource === "other" && (
+                <input
+                  type="text"
+                  value={leadSourceOther}
+                  onChange={(e) => setLeadSourceOther(e.target.value)}
+                  placeholder={t.leadSourceOtherPlaceholder}
+                  className={`${inputClass} mt-2`}
+                />
+              )}
             </div>
             <button
               type="submit"

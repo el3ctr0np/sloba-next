@@ -30,10 +30,22 @@ function pushDataLayer(event: string, params: Record<string, unknown> = {}): voi
 const inputClass =
   "w-full px-4 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors";
 
+// Opcije za "Kako ste me našli?" — isti slugovi u SR i EN da GTM/GA4 dobija
+// dosledne vrednosti bez obzira na jezik forme.
+const LEAD_SOURCE_OPTIONS: Array<{ value: string; sr: string; en: string }> = [
+  { value: "google", sr: "Google pretraga", en: "Google search" },
+  { value: "ai_assistant", sr: "ChatGPT ili drugi AI asistent", en: "ChatGPT or another AI assistant" },
+  { value: "linkedin", sr: "LinkedIn", en: "LinkedIn" },
+  { value: "referral", sr: "Preporuka", en: "Referral" },
+  { value: "other", sr: "Drugo", en: "Other" },
+];
+
 export function ContactForm() {
   const locale = useLocale();
   const t = useTranslations("ContactForm");
   const [budget, setBudget] = useState("");
+  const [leadSource, setLeadSource] = useState("");
+  const [leadSourceOther, setLeadSourceOther] = useState("");
   const formStartedRef = useRef(false);
   const sr = locale === "sr";
 
@@ -51,11 +63,14 @@ export function ContactForm() {
       form_name: FORM_NAME,
       budget,
       lead_tier,
+      lead_source: leadSource || "not_specified",
+      lead_budget: budget || "unknown",
     });
     try {
       sessionStorage.setItem("dj_lead_form", FORM_NAME);
       sessionStorage.setItem("dj_lead_budget", budget || "unknown");
       sessionStorage.setItem("dj_lead_tier", lead_tier);
+      sessionStorage.setItem("dj_lead_source", leadSource || "not_specified");
       sessionStorage.setItem("dj_lead_pending", "1");
     } catch {
       // Ignore sessionStorage errors (private mode etc.)
@@ -147,6 +162,42 @@ export function ContactForm() {
             <option value="not-sure">{sr ? "Nisam siguran/na" : "Not sure yet"}</option>
           </select>
         </div>
+      </div>
+
+      <div>
+        <label htmlFor="cf-lead-source" className="text-sm font-semibold text-gray-900 block mb-1.5">
+          {sr ? "Kako ste me našli?" : "How did you find me?"}
+        </label>
+        <select
+          id="cf-lead-source"
+          name="lead_source"
+          value={leadSource}
+          onChange={(e) => {
+            handleFieldInteraction();
+            setLeadSource(e.target.value);
+            if (e.target.value !== "other") setLeadSourceOther("");
+          }}
+          className={`${inputClass} ${leadSource ? "text-gray-900" : "text-gray-400"}`}
+        >
+          <option value="" disabled>
+            {sr ? "— Izaberite —" : "— Select —"}
+          </option>
+          {LEAD_SOURCE_OPTIONS.map((opt) => (
+            <option key={opt.value} value={opt.value}>
+              {sr ? opt.sr : opt.en}
+            </option>
+          ))}
+        </select>
+        {leadSource === "other" && (
+          <input
+            type="text"
+            name="lead_source_other"
+            value={leadSourceOther}
+            onChange={(e) => setLeadSourceOther(e.target.value)}
+            placeholder={sr ? "Recite nam više (opciono)" : "Tell us more (optional)"}
+            className={`${inputClass} mt-2`}
+          />
+        )}
       </div>
 
       <div>

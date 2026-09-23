@@ -31,6 +31,8 @@ type FormData = {
   phone: string;
   website: string;
   message: string;
+  leadSource: string;
+  leadSourceOther: string;
 };
 
 const initialData: FormData = {
@@ -43,6 +45,8 @@ const initialData: FormData = {
   phone: "",
   website: "",
   message: "",
+  leadSource: "",
+  leadSourceOther: "",
 };
 
 // Readable label maps for email output
@@ -75,6 +79,13 @@ const labelMaps = {
     "bad-agency": "Loše iskustvo sa trenutnom agencijom",
     "dont-know": "Ne znam odakle da počnem",
     other: "Ostalo",
+  } as Record<string, string>,
+  leadSource: {
+    google: "Google pretraga",
+    ai_assistant: "ChatGPT ili drugi AI asistent",
+    linkedin: "LinkedIn",
+    referral: "Preporuka",
+    other: "Drugo",
   } as Record<string, string>,
 };
 
@@ -213,6 +224,11 @@ export function MultiStepForm({ locale }: { locale: string }) {
             "Poruka": data.message || "—",
             "Lead Tier": getLeadTier().toUpperCase(),
             "Izvor": trackingInfo,
+            "Kako nas je pronašao/la": data.leadSource
+              ? `${labelMaps.leadSource[data.leadSource] || data.leadSource}${
+                  data.leadSource === "other" && data.leadSourceOther ? ` — ${data.leadSourceOther}` : ""
+                }`
+              : "—",
             _subject: `[LP Lead - ${getLeadTier().toUpperCase()}] ${data.name} — ${labelMaps.businessType[data.businessType] || data.businessType}`,
             _template: "table",
           }),
@@ -229,10 +245,15 @@ export function MultiStepForm({ locale }: { locale: string }) {
         pushDataLayer("lead_submit", {
           form_name: FORM_NAME,
           lead_tier: tier,
+          lead_source: data.leadSource || "not_specified",
+          lead_budget: data.monthlyBudget || "unknown",
         });
-        // Stash lead_tier so /kontakt/hvala LeadConfirmedTracker can read it
+        // Stash lead_tier/lead_source/lead_budget so /kontakt/hvala LeadConfirmedTracker can read them
         try {
           sessionStorage.setItem("dj_lead_tier", tier);
+          sessionStorage.setItem("dj_lead_form", FORM_NAME);
+          sessionStorage.setItem("dj_lead_source", data.leadSource || "not_specified");
+          sessionStorage.setItem("dj_lead_budget", data.monthlyBudget || "unknown");
           sessionStorage.setItem("dj_lead_pending", "1");
         } catch {
           // Ignore sessionStorage errors (private mode etc.)
@@ -317,6 +338,15 @@ export function MultiStepForm({ locale }: { locale: string }) {
           websitePlaceholder: "www.example.com",
           messageLabel: "Anything else you'd like me to know?",
           messagePlaceholder: "Your goals, timeline, questions...",
+          leadSourceLabel: "How did you find me?",
+          leadSourceOptions: [
+            { value: "google", label: "Google search" },
+            { value: "ai_assistant", label: "ChatGPT or another AI assistant" },
+            { value: "linkedin", label: "LinkedIn" },
+            { value: "referral", label: "Referral" },
+            { value: "other", label: "Other" },
+          ],
+          leadSourceOtherPlaceholder: "Tell us more (optional)",
           next: "Next Step",
           back: "Back",
           submit: "Send — Get Free Analysis",
@@ -373,6 +403,15 @@ export function MultiStepForm({ locale }: { locale: string }) {
           websitePlaceholder: "www.example.com",
           messageLabel: "Želite li da dodate nešto?",
           messagePlaceholder: "Vaši ciljevi, vremenski okvir, pitanja...",
+          leadSourceLabel: "Kako ste me našli?",
+          leadSourceOptions: [
+            { value: "google", label: "Google pretraga" },
+            { value: "ai_assistant", label: "ChatGPT ili drugi AI asistent" },
+            { value: "linkedin", label: "LinkedIn" },
+            { value: "referral", label: "Preporuka" },
+            { value: "other", label: "Drugo" },
+          ],
+          leadSourceOtherPlaceholder: "Recite nam više (opciono)",
           next: "Sledeći korak",
           back: "Nazad",
           submit: "Pošaljite — dobijte besplatnu analizu",
@@ -691,6 +730,41 @@ export function MultiStepForm({ locale }: { locale: string }) {
                   placeholder={t.websitePlaceholder}
                 />
               </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor="leadSource"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                {t.leadSourceLabel}
+              </label>
+              <select
+                id="leadSource"
+                name="leadSource"
+                value={data.leadSource}
+                onChange={(e) => {
+                  updateField("leadSource", e.target.value);
+                  if (e.target.value !== "other") updateField("leadSourceOther", "");
+                }}
+                className={inputClass}
+              >
+                <option value="">— {locale === "en" ? "Select" : "Izaberi"} —</option>
+                {t.leadSourceOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+              {data.leadSource === "other" && (
+                <input
+                  type="text"
+                  value={data.leadSourceOther}
+                  onChange={(e) => updateField("leadSourceOther", e.target.value)}
+                  placeholder={t.leadSourceOtherPlaceholder}
+                  className={`${inputClass} mt-2`}
+                />
+              )}
             </div>
 
             <div>

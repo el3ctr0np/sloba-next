@@ -16,9 +16,21 @@ function pushDataLayer(event: string, params: Record<string, unknown> = {}): voi
   w.dataLayer.push({ event, ...params });
 }
 
+// Opcije za "Kako ste me našli?" — isti slugovi u SR i EN da GTM/GA4 dobija
+// dosledne vrednosti bez obzira na jezik forme.
+const LEAD_SOURCE_OPTIONS: Array<{ value: string; sr: string; en: string }> = [
+  { value: "google", sr: "Google pretraga", en: "Google search" },
+  { value: "ai_assistant", sr: "ChatGPT ili drugi AI asistent", en: "ChatGPT or another AI assistant" },
+  { value: "linkedin", sr: "LinkedIn", en: "LinkedIn" },
+  { value: "referral", sr: "Preporuka", en: "Referral" },
+  { value: "other", sr: "Drugo", en: "Other" },
+];
+
 export function AuditForm({ locale }: { locale: string }) {
   const isEn = locale === "en";
   const [adSpend, setAdSpend] = useState("");
+  const [leadSource, setLeadSource] = useState("");
+  const [leadSourceOther, setLeadSourceOther] = useState("");
   const formStartedRef = useRef(false);
 
   const handleFieldInteraction = () => {
@@ -45,11 +57,17 @@ export function AuditForm({ locale }: { locale: string }) {
       form_name: FORM_NAME,
       ad_spend: adSpend,
       lead_tier,
+      lead_source: leadSource || "not_specified",
+      lead_budget: adSpend || "unknown",
     });
     try {
       sessionStorage.setItem("dj_lead_form", FORM_NAME);
       sessionStorage.setItem("dj_lead_ad_spend", adSpend || "unknown");
+      // dj_lead_budget je alias istog polja pod standardnim imenom, da
+      // LeadConfirmedTracker ima konzistentan lead_budget za sve forme.
+      sessionStorage.setItem("dj_lead_budget", adSpend || "unknown");
       sessionStorage.setItem("dj_lead_tier", lead_tier);
+      sessionStorage.setItem("dj_lead_source", leadSource || "not_specified");
       sessionStorage.setItem("dj_lead_pending", "1");
     } catch {
       // Ignore sessionStorage errors (private mode etc.)
@@ -159,6 +177,39 @@ export function AuditForm({ locale }: { locale: string }) {
             <option>{isEn ? "$10,000+/mo ✓" : "€10.000+/mes ✓"}</option>
           </select>
         </div>
+      </div>
+
+      <div>
+        <label className="text-sm font-semibold text-gray-900 block mb-1.5">
+          {isEn ? "How did you find me?" : "Kako ste me našli?"}
+        </label>
+        <select
+          name="lead_source"
+          value={leadSource}
+          onChange={(e) => {
+            handleFieldInteraction();
+            setLeadSource(e.target.value);
+            if (e.target.value !== "other") setLeadSourceOther("");
+          }}
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white"
+        >
+          <option value="">— {isEn ? "Select" : "Izaberi"} —</option>
+          {LEAD_SOURCE_OPTIONS.map((opt) => (
+            <option key={opt.value} value={opt.value}>
+              {isEn ? opt.en : opt.sr}
+            </option>
+          ))}
+        </select>
+        {leadSource === "other" && (
+          <input
+            type="text"
+            name="lead_source_other"
+            value={leadSourceOther}
+            onChange={(e) => setLeadSourceOther(e.target.value)}
+            placeholder={isEn ? "Tell us more (optional)" : "Recite nam više (opciono)"}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white mt-2"
+          />
+        )}
       </div>
 
       <div>
