@@ -56,8 +56,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `https://www.slobodan-jelisavac.com${post.featuredImage}`
     : `https://www.slobodan-jelisavac.com/og/homepage.png`;
 
+  // Suffix only when it still fits the ~60-char title budget - most post
+  // titles already use that budget for the hook/year, so it usually doesn't.
+  const withSuffix = `${post.title} | Slobodan Jelisavac`;
+  const pageTitle = withSuffix.length <= 60 ? withSuffix : post.title;
+
   return {
-    title: `${post.title} | Slobodan Jelisavac`,
+    title: pageTitle,
     description: post.metaDescription,
     alternates: {
       canonical: `https://www.slobodan-jelisavac.com/${locale}/blog/${slug}`,

@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return buildMetadata({
-      title: "About | Slobodan Jelisavac - Google Ads Expert, More Than 10 Years of Experience",
+      title: "About | Slobodan Jelisavac - Google Ads Expert, 10+ Years",
       description: "Google Ads expert with more than a decade of experience. 3x UK Search Awards, 50+ brands in 6+ countries. Work directly with the expert — no middlemen.",
       locale,
       path: "/about",
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "O meni | Slobodan Jelisavac - Google Ads Stručnjak, Više od 10 Godina Iskustva",
+    title: "O meni | Google Ads Stručnjak, 10+ Godina Iskustva",
     description: "Google Ads stručnjak sa više od 10 godina iskustva - 3x UK Search Awards, 50+ brendova iz 6+ zemalja. Direktan rad sa ekspertom, bez posrednika.",
     locale,
     path: "/about",

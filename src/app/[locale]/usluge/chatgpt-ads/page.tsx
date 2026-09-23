@@ -12,11 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "ChatGPT Ads Agency | Advertising in ChatGPT (Live in 47 Countries) — Slobodan Jelisavac"
-      : "ChatGPT Ads (oglasi u ChatGPT-u) | Živo u 47 zemalja - Slobodan Jelisavac",
+      ? "ChatGPT Ads Agency: Advertising in ChatGPT [47 Countries]"
+      : "ChatGPT Ads (oglasi u ChatGPT-u) | Živo u 47 zemalja",
     description: isEn
-      ? "ChatGPT Ads management: sponsored placements inside AI conversations, live across the US, UK, EU (including Croatia), and 47 countries total. Context-hint strategy, OAIQ pixel tracking, creative, and landing pages. Senior-led pilots for considered-purchase brands."
-      : "Upravljanje ChatGPT Ads oglasima: plaćena mesta unutar AI razgovora, živa u SAD, UK, EU (uključujući Hrvatsku) i ukupno 47 zemalja. Strategija konteksta, OAIQ merenje, kreativa i landing stranice. Za firme koje posluju u inostranstvu ili EU vodim pilote već sada.",
+      ? "ChatGPT Ads management: sponsored placements inside AI conversations, live across the US, UK, EU (including Croatia), and 47 countries total."
+      : "Upravljanje ChatGPT Ads oglasima: plaćena mesta unutar AI razgovora, živa u SAD, UK, EU i ukupno 47 zemalja. Strategija konteksta i OAIQ merenje.",
     locale,
     path: "/services/chatgpt-ads",
     srPath: "/usluge/chatgpt-ads",

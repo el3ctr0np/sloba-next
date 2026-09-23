@@ -17,10 +17,10 @@ export const term: TermPage = {
   guideSlug: "zasto-nema-rezultata",
   guideLabelSr: "Zašto Google Ads kampanje ne donose rezultate",
   guideLabelEn: "Why Google Ads campaigns don't deliver",
-  metaTitleSr: "Landing page: šta je i zašto utiče na cenu klika | Slobodan Jelisavac",
+  metaTitleSr: "Landing page: šta je i zašto utiče na cenu klika",
   metaTitleEn: "Landing Page: What It Is and Why It Affects CPC | Slobodan Jelisavac",
   metaDescriptionSr:
-    "Landing page je stranica na koju posetilac stigne posle klika na oglas. Šta je čini dobrom, kako ulazi u Quality Score i zašto menja cenu klika i conversion rate.",
+    "Landing page je stranica na koju posetilac stigne posle klika na oglas. Šta je čini dobrom, kako ulazi u Quality Score i zašto menja cenu klika.",
   metaDescriptionEn:
     "A landing page is the page a visitor reaches after clicking an ad. What makes one good, how it enters Quality Score, and why it moves both CPC and conversion rate.",
 };

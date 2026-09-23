@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Google Ads Services | Slobodan Jelisavac — Senior PPC Expert"
       : "Google Ads Usluge | Slobodan Jelisavac - Senior PPC Stručnjak",
     description: isEn
-      ? "I've spent 10+ years personally running Google Ads accounts: management, audit, Shopping, PMax and remarketing for eCommerce and B2B. 3.7x average ROAS, 3x UK Search Awards — no juniors on your budget."
-      : "10+ godina lično vodim Google Ads naloge: upravljanje, audit, Shopping, PMax i remarketing za eCommerce i B2B. 3.7x prosečan ROAS, 3x UK Search Awards - bez juniora na vašem budžetu.",
+      ? "I've spent 10+ years personally running Google Ads accounts: management, audit, Shopping, PMax and remarketing for eCommerce and B2B. 3.7x average ROAS."
+      : "10+ godina lično vodim Google Ads naloge: upravljanje, audit, Shopping, PMax i remarketing za eCommerce i B2B. 3.7x prosečan ROAS, 3x UK Search Awards.",
     locale,
     path: "/services",
     srPath: "/usluge",

@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Free Google Ads Video Audit — For Qualified eCommerce & B2B Brands"
-      : "Besplatan Google Ads Video Audit - za kvalifikovane eCommerce i B2B brendove",
+      ? "Free Google Ads Video Audit for Qualified eCommerce & B2B"
+      : "Besplatan Google Ads Video Audit za eCommerce i B2B Brendove",
     description: isEn
-      ? "15-minute video walkthrough of your Google Ads account: structure issues, conversion tracking gaps, bidding strategy, and top 3 priorities to fix. For brands with $1,500+/mo ad spend."
-      : "15-minutni video review vašeg Google Ads naloga: struktura kampanja, conversion tracking, bidding strategija, i top 3 prioriteta za fix. Za brendove sa €1.500+/mes ad spend-om.",
+      ? "15-minute video walkthrough of your Google Ads account: structure, tracking, bidding strategy, top 3 priorities to fix. For brands with $1,500+/mo spend."
+      : "15-minutni video review Google Ads naloga: struktura kampanja, conversion tracking, bidding strategija i top 3 prioriteta. Za brendove sa €1.500+/mes.",
     locale,
     path: "/audit",
     srPath: "/audit",

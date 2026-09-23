@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return buildMetadata({
       title: "PMax Check — Free Performance Max Audit Tool | Slobodan Jelisavac",
       description:
-        "Work through 38 Performance Max checkpoints and get a weighted score per group and overall, plus the order to fix things in. Free, runs in the browser, no email required.",
+        "Work through 38 Performance Max checkpoints and get a weighted score per group and overall, plus the order to fix things in. No email required.",
       locale,
       path: "/resources/pmax-check",
       srPath: "/resursi/pmax-check",
@@ -31,9 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return buildMetadata({
-    title: "PMax Check - besplatan Performance Max audit alat | Slobodan Jelisavac",
+    title: "PMax Check - besplatan Performance Max audit alat",
     description:
-      "Prođite kroz 38 tačaka provere Performance Max kampanje i dobijte ponderisan skor po grupi i ukupno, plus redosled popravki. Besplatno, radi u pregledaču, bez ostavljanja emaila.",
+      "Prođite kroz 38 tačaka provere Performance Max kampanje i dobijte ponderisan skor po grupi i ukupno, plus redosled popravki. Bez emaila.",
     locale,
     path: "/resources/pmax-check",
     srPath: "/resursi/pmax-check",

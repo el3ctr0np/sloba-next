@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "PPC Glossary — 64 Google Ads Terms Explained [2026] | Slobodan Jelisavac"
-      : "PPC Rečnik - 64 Google Ads Termina Objašnjenih [2026] | Slobodan Jelisavac",
+      ? "PPC Glossary - 64 Google Ads Terms Explained [2026]"
+      : "PPC Rečnik - 64 Google Ads Termina Objašnjenih [2026]",
     description: isEn
-      ? "PPC glossary with 64 essential Google Ads terms — from CTR, CPC, ROAS, POAS to Performance Max, Smart Bidding, and Quality Score. Definitions, formulas, examples, and Serbian market benchmarks."
-      : "PPC rečnik sa 64 Google Ads termina - od CTR, CPC, ROAS, POAS do Performance Max, Smart Bidding i Quality Score. Definicije, formule, primeri i benchmarks za srpsko tržište.",
+      ? "PPC glossary with 64 essential Google Ads terms - from CTR, CPC, ROAS, POAS to Performance Max, Smart Bidding, and Quality Score. Definitions, formulas."
+      : "PPC rečnik sa 64 Google Ads termina - od CTR, CPC, ROAS, POAS do Performance Max, Smart Bidding i Quality Score. Definicije, formule.",
     locale,
     path: "/glossary",
     srPath: "/recnik",

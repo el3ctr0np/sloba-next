@@ -151,7 +151,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-09-15",
     category: "ChatGPT Ads",
     metaDescription:
-      "ChatGPT Ads vodič: gde su dostupni (47 zemalja, EU od avgusta), formati, context hints umesto ključnih reči, cene i merenje - uz stvarne brojke iz nezavisnih testova.",
+      "ChatGPT Ads vodič: gde su dostupni (47 zemalja, EU od avgusta), formati, context hints umesto ključnih reči, cene i merenje - uz stvarne brojke.",
     featuredImage: "/blog/chatgpt-ads-vodic.webp",
     imageAlt: "Ilustracija stilizovanog AI chat interfejsa sa sponzorisanom karticom ispod odgovora, tema vodiča za ChatGPT Ads",
     readingTime: "18 min",
@@ -165,7 +165,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-09-01",
     category: "ChatGPT Ads",
     metaDescription:
-      "ChatGPT Ads i Google Ads hvataju kupca u različitim trenucima. Poređenje targetinga, realnih CTR i CPC brojki sa izvorima i zrelosti merenja, plus kako ih kombinovati.",
+      "ChatGPT Ads i Google Ads hvataju kupca u različitim trenucima. Poređenje targetinga, realnih CTR i CPC brojki sa izvorima i zrelosti merenja.",
     featuredImage: "/blog/chatgpt-ads-vs-google-ads.webp",
     imageAlt: "Ilustracija dva panela: AI chat kartica sa oglasom levo i Google pretraga sa tekstualnim oglasima desno",
     readingTime: "10 min",
@@ -179,7 +179,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-09-01",
     category: "ChatGPT Ads",
     metaDescription:
-      "ChatGPT Ads su živi u 31 evropskom tržištu, ali bez personalizacije: kontekst i kreativa nose sve. Consent model, DSA registar oglasa do decembra i kategorije koje u Evropi ne mogu.",
+      "ChatGPT Ads su živi u 31 evropskom tržištu, ali bez personalizacije: kontekst i kreativa nose sve. Consent model, DSA registar oglasa do decembra.",
     featuredImage: "/blog/chatgpt-ads-evropa.webp",
     imageAlt: "Ilustracija AI chat interfejsa sa oglasom povezanog sa tamnom karticom sa krugom evropskih zvezdica",
     readingTime: "9 min",
@@ -202,7 +202,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-budzet",
-    title: "Google Ads Budžet: Koliko Vam Realno Treba i Kako Ga Rasporediti [2026]",
+    title: "Google Ads Budžet: Koliko Vam Realno Treba [2026]",
     date: "2026-08-29",
     dateModified: "2026-08-29",
     category: "Google Ads",
@@ -230,7 +230,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "lista-negativnih-kljucnih-reci",
-    title: "Lista Negativnih Ključnih Reči 2026: 400+ Termina po Kategorijama",
+    title: "Lista Negativnih Ključnih Reči 2026: 400+ Termina",
     date: "2026-08-29",
     dateModified: "2026-08-29",
     category: "Google Ads",
@@ -244,12 +244,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-api-autentifikacija",
-    title: "Google Ads API Autentifikacija: OAuth, Service Account i Developer Token [2026]",
+    title: "Google Ads API Autentifikacija: OAuth i Developer Token",
     date: "2026-08-29",
     dateModified: "2026-09-17",
     category: "Automatizacija",
     metaDescription:
-      "Google Ads API autentifikacija bez lutanja: OAuth2 tok korak po korak, refresh token zamka od 7 dana, service account pravila i tabela čestih grešaka sa rešenjima.",
+      "Google Ads API autentifikacija bez lutanja: OAuth2 tok korak po korak, refresh token zamka od 7 dana, service account pravila i tabela čestih grešaka.",
     featuredImage: "/blog/google-ads-api-autentifikacija.webp",
     imageAlt: "Ilustracija katanca sa ključem, oblakom, štitom i identifikacionom karticom, tema autentifikacije za Google Ads API: OAuth, service account i Cloud projekti",
     readingTime: "11 min",
@@ -258,12 +258,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-checklist-upravljanje",
-    title: "Google Ads checklist: zašto univerzalna lista ne radi i šta je zamenjuje [2026]",
+    title: "Google Ads checklist: zašto univerzalna lista ne radi [2026]",
     date: "2026-09-10",
     dateModified: "2026-09-10",
     category: "Optimizacija",
     metaDescription:
-      "Zašto vam skinuta Google Ads checklista ne pomaže i šta stvarno drži nalog: ritam po nalogu, prag od 50 konverzija mesečno i tri stvari koje proveravam svakog dana.",
+      "Zašto vam skinuta Google Ads checklista ne pomaže i šta stvarno drži nalog: ritam po nalogu, prag od 50 konverzija mesečno i tri stvari koje proveravam.",
     featuredImage: "/blog/google-ads-checklist-upravljanje.webp",
     imageAlt: "Ilustracija klipborda sa zelenim kvačicama i crvenim krstićima, kalendarom i satom, tema ritma upravljanja Google Ads nalogom",
     readingTime: "11 min",
@@ -277,7 +277,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-09-06",
     category: "Search",
     metaDescription:
-      "Kompletan vodič za Google Search kampanje 2026: AI Max suita, septembarska migracija DSA i broad match kampanja, struktura po nameri i marži, negativne ključne reči i merenje pre skaliranja.",
+      "Kompletan vodič za Google Search kampanje 2026: AI Max suita, septembarska migracija DSA i broad match kampanja, struktura po nameri i marži.",
     featuredImage: "/blog/google-search-kampanje-vodic.webp",
     imageAlt: "Ilustracija mete sa strelicom u centru, megafona i stoga reklamnih kartica, tema vodiča za Google Search kampanje",
     readingTime: "12 min",
@@ -291,7 +291,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-09-06",
     category: "Demand Gen",
     metaDescription:
-      "Demand Gen kampanje 2026: gde se prikazuju, šta je novo (view-through optimizacija, inkrementalnost), kome imaju smisla, kreativa, publike i setup korak po korak. Poređenje sa PMax i YouTube kampanjama.",
+      "Demand Gen kampanje 2026: gde se prikazuju, šta je novo (view-through optimizacija, inkrementalnost), kome imaju smisla, kreativa, publike i setup korak.",
     featuredImage: "/blog/demand-gen-vodic.webp",
     imageAlt: "Ilustracija rakete koja lansira okružena šarenim geometrijskim oblicima i kompasom, tema vodiča za Demand Gen kampanje",
     readingTime: "12 min",
@@ -314,12 +314,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "ga4-publike-ecommerce-framework",
-    title: "GA4 Audience Framework za eCommerce: 25 Lista, 6 Stubova, 3 Ograničenja API-ja",
+    title: "GA4 Audience Framework za eCommerce: 25 Lista, 6 Stubova",
     date: "2026-08-01",
     dateModified: "2026-08-01",
     category: "Tracking",
     metaDescription:
-      "Kompletan GA4 audience framework za ecommerce sa ponovljenom kupovinom: svih 25 lista sa tačnom konfiguracijom, naming konvencija, pragovi aktivacije (Search 1.000 / Display 100), replenishment prozori i tri ograničenja Admin API-ja koja ruše pola win-back ideja, sa zaobilaznicama.",
+      "Kompletan GA4 audience framework za ecommerce sa ponovljenom kupovinom: svih 25 lista sa tačnom konfiguracijom, naming konvencija, pragovi aktivacije.",
     featuredImage: "/blog/ga4-publike-ecommerce-framework.webp",
     imageAlt: "Ilustracija fascikli poređanih u slojevima kao piramida sa grafikonom i štopericom, tema GA4 framework-a publika za eCommerce",
     readingTime: "~16 min",
@@ -333,7 +333,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Performance Max vs Standard Shopping u 2026: gde PMax pobeđuje a gde te sprži (kanibalizacija brenda, skok CPC-a), gde Standard i dalje vodi, promena iz oktobra 2024. koja je srušila stari savet i hibrid koji stvarno radi. Iz UK prakse (skincare brend, šestocifren Shopping prihod).",
+      "Performance Max vs Standard Shopping u 2026: gde PMax pobeđuje a gde te sprži (kanibalizacija brenda, skok CPC-a), gde Standard i dalje vodi.",
     featuredImage: "/blog/performance-max-vs-standard-shopping-vodic.webp",
     imageAlt: "Ilustracija vage sa kolicima za kupovinu na jednoj i robot zupčanikom na drugoj strani, tema poređenja Performance Max i Standard Shopping",
     readingTime: "~13 min",
@@ -347,7 +347,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Google Shopping vs Search kampanje za eCommerce: kada koju biraš, zašto Shopping ima niži CPC, kada Search pobeđuje i zašto najjači nalozi u 2026. voze oba. Budžet split, PMax pragovi i Srbija launch (druga polovina 2026, Q3 ili Q4).",
+      "Google Shopping vs Search kampanje za eCommerce: kada koju biraš, zašto Shopping ima niži CPC, kada Search pobeđuje i zašto najjači nalozi u 2026. voze.",
     featuredImage: "/blog/google-shopping-vs-search-kampanje.webp",
     imageAlt: "Ilustracija dva putokaza koji pokazuju u suprotnim pravcima, jedan sa kesom za kupovinu, drugi sa oblačićem, tema poređenja Shopping i Search kampanja",
     readingTime: "~14 min",
@@ -356,12 +356,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-api-pristupi-za-agencije",
-    title: "Google API Pristupi za PPC Agencije - Kompletan Setup Vodič [2026]",
+    title: "Google API Pristupi za PPC Agencije - Kompletan Setup Vodič",
     date: "2026-07-11",
     dateModified: "2026-09-17",
     category: "Automatizacija",
     metaDescription:
-      "Kompletan setup vodič za Google API pristupe u PPC agenciji: Ads, GA4, Search Console, Tag Manager, Merchant Center i Data Manager API. Jedan Cloud projekat, OAuth scope-ovi i ključna lekcija o Testing modu koji gasi refresh token za 7 dana.",
+      "Kompletan setup vodič za Google API pristupe u PPC agenciji: Ads, GA4, Search Console, Tag Manager, Merchant Center i Data Manager API. Jedan Cloud.",
     featuredImage: "/blog/google-api-pristupi-za-agencije.webp",
     imageAlt: "Ilustracija otvorenog alatnog sanduka sa ključem i privezakom ključeva, tema pristupa Google API-jima za agencije",
     readingTime: "13 min",
@@ -375,7 +375,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-09-17",
     category: "Automatizacija",
     metaDescription:
-      "Kako do Google Ads API Basic Access nivoa posle 9.9.2026, kada je Google ukinuo developer tokene i vezao nivo pristupa za Cloud projekat: brand verification, zahtev kroz Cloud Console, šta Basic stvarno otključava i kada Standard ima smisla. Iz ličnog iskustva.",
+      "Kako do Google Ads API Basic Access nivoa posle 9.9.2026: brand verification, zahtev kroz Cloud Console i šta Basic stvarno otključava.",
     featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
     imageAlt: "Ilustracija starog ključa na poslužavniku i strelice ka oblaku sa zelenim štitom, tema prelaska Google Ads API pristupa sa developer tokena na Cloud projekat",
     readingTime: "12 min",
@@ -384,12 +384,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "offline-conversion-import-b2b",
-    title: "Offline Conversion Import za B2B: Povežite Google Ads sa CRM-om",
+    title: "Offline Conversion Import za B2B: Google Ads i CRM Setup",
     date: "2026-07-06",
     dateModified: "2026-07-24",
     category: "Tracking",
     metaDescription:
-      "Kako da Google Ads algoritam uči na zatvorenim poslovima umesto na formama: GCLID vs Enhanced Conversions for Leads, setup za HubSpot, Salesforce i Pipedrive, vrednovanje MQL/SQL/Closed-won faza i česte greške.",
+      "Kako da Google Ads algoritam uči na zatvorenim poslovima umesto na formama: GCLID vs Enhanced Conversions for Leads, setup za HubSpot.",
     featuredImage: "/blog/offline-conversion-import-b2b.webp",
     readingTime: "13 min",
     content: <OfflineConversionImportB2BSR />,
@@ -397,12 +397,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "koliko-kosta-google-ads-konsultant",
-    title: "Koliko košta Google Ads konsultant u 2026? (senior vs agencija vs junior)",
+    title: "Koliko košta Google Ads konsultant u 2026? Senior vs Junior",
     date: "2026-07-06",
     dateModified: "2026-07-06",
     category: "Google Ads",
     metaDescription:
-      "Transparentna cenovnica: junior freelancer €200-400/mes, senior konsultant €700-2.000/mes (€120-200/sat), agencija €500-2.000+ uz % od spend-a. Modeli naplate, tržišni benchmark i crvene zastavice kod jeftinih ponuda.",
+      "Transparentna cenovnica: junior freelancer €200-400/mes, senior konsultant €700-2.000/mes (€120-200/sat), agencija €500-2.000+ uz % od spend-a.",
     featuredImage: "/blog/koliko-kosta-google-ads-konsultant.webp",
     imageAlt: "Ilustracija tri cenovne etikete različitih veličina sa novčićima i lenjirom, tema cene Google Ads konsultanta",
     readingTime: "14 min",
@@ -411,12 +411,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "kako-izabrati-google-ads-konsultanta",
-    title: "Kako izabrati Google Ads konsultanta: 12 pitanja pre potpisivanja ugovora",
+    title: "Kako izabrati Google Ads konsultanta: 12 pitanja [2026]",
     date: "2026-07-06",
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "12 konkretnih pitanja za proveru Google Ads konsultanta ili agencije pre potpisivanja: ko radi na nalogu, vlasništvo naloga, tracking, naplata. Zelene i crvene zastavice iz prakse.",
+      "12 konkretnih pitanja za proveru Google Ads konsultanta ili agencije pre potpisivanja: ko radi na nalogu, vlasništvo naloga, tracking, naplata.",
     featuredImage: "/blog/kako-izabrati-google-ads-konsultanta.webp",
     imageAlt: "Ilustracija stoga kartica sa znacima pitanja, trofeja i olovke, tema izbora Google Ads konsultanta pre potpisivanja ugovora",
     readingTime: "16 min",
@@ -425,12 +425,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "poas-vs-roas",
-    title: "POAS umesto ROAS: Kako Profit-Based Bidding Menja eCommerce Oglašavanje",
+    title: "POAS umesto ROAS: Kako Menja eCommerce Oglašavanje",
     date: "2026-07-06",
     dateModified: "2026-07-06",
     category: "Metrike",
     metaDescription:
-      "POAS (Profit on Ad Spend) = profit ÷ spend. Zašto ROAS od 4x može biti gubitak, break-even matematika, praktična implementacija (feed, custom columns) i kada POAS nije potreban.",
+      "POAS (Profit on Ad Spend) = profit ÷ spend. Zašto ROAS od 4x može biti gubitak, break-even matematika i praktična implementacija.",
     featuredImage: "/blog/poas-vs-roas.webp",
     imageAlt: "Illustration of a balance scale with coins and a price tag, illustrating POAS versus ROAS bidding",
     readingTime: "14 min",
@@ -439,12 +439,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "preuzimanje-google-ads-naloga",
-    title: "Preuzimanje Google Ads Naloga od Agencije: Šta Proveriti u Prvoj Nedelji",
+    title: "Preuzimanje Google Ads Naloga: Šta Proveriti u Prvoj Nedelji",
     date: "2026-07-06",
     dateModified: "2026-07-06",
     category: "Audit",
     metaDescription:
-      "Menjate Google Ads agenciju? Checklist šta proveriti PRE prekida (vlasništvo naloga, pristupi, izvoz istorije) i šta raditi u prvoj nedelji preuzimanja - bez naglih promena koje ugrožavaju rezultate.",
+      "Menjate Google Ads agenciju? Checklist šta proveriti PRE prekida (vlasništvo naloga, pristupi, izvoz istorije) i šta raditi u prvoj nedelji preuzimanja.",
     featuredImage: "/blog/preuzimanje-google-ads-naloga.webp",
     imageAlt: "Ilustracija kljuca i katanca sa checklistom na klipbordu, tema preuzimanja Google Ads naloga od agencije",
     readingTime: "14 min",
@@ -458,7 +458,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-04",
     category: "Google Shopping",
     metaDescription:
-      "Product feed vodič za srpski eCommerce: 8 obaveznih atributa, title optimizacija, custom labels za bidding, feed po platformi (Shopify, WooCommerce, custom XML) i najčešće greške. Iz prakse sa globalnim Shopping nalozima.",
+      "Product feed vodič za srpski eCommerce: 8 obaveznih atributa, title optimizacija, custom labels za bidding i najčešće greške.",
     featuredImage: "/blog/product-feed-srpski-ecommerce.webp",
     imageAlt: "Ilustracija trake sa kutijama koje ulaze u levak i cenovna nalepnica, tema product feeda za srpski eCommerce",
     readingTime: "15 min",
@@ -467,12 +467,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "merchant-center-srbija-setup",
-    title: "Google Merchant Center za Srbiju - Kompletan Setup Vodič [2026]",
+    title: "Google Merchant Center za Srbiju - Kompletan Setup Vodič",
     date: "2026-07-03",
     dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Google Merchant Center setup vodič za srpsko tržište: kreiranje naloga, verifikacija, product feed atributi, metode dostave feed-a, česte greške i disapproval razlozi, shipping/tax settings. Iz prakse sa 10+ Shopping naloga.",
+      "Google Merchant Center setup vodič za srpsko tržište: kreiranje naloga, verifikacija, product feed atributi, metode dostave feed-a, česte greške.",
     featuredImage: "/blog/merchant-center-srbija-setup.webp",
     imageAlt: "Ilustracija kolica za kupovinu povezanih konektorom i stit sa kvacicom, tema podesavanja Google Merchant Centra za Srbiju",
     readingTime: "14 min",
@@ -486,7 +486,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Ads Audit",
     metaDescription:
-      "Konkretan checklist od 50 stavki za audit Google Ads naloga u Srbiji. 10 kategorija sa primerima iz prakse - eCommerce, B2B, lead-gen. Scoring sistem i 30-min brzi audit.",
+      "Konkretan checklist od 50 stavki za audit Google Ads naloga u Srbiji. 10 kategorija sa primerima iz prakse - eCommerce, B2B, lead-gen. Scoring sistem.",
     featuredImage: "/blog/google-ads-audit-checklist-srbija.webp",
     imageAlt: "Ilustracija klipborda sa checklistom i lupom iznad njega, tema audit checkliste za Google Ads naloge",
     readingTime: "18 min",
@@ -500,7 +500,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Tracking",
     metaDescription:
-      "Kompletan 7-koračni vodič za GA4 + Google Ads integraciju u 2026: linkovanje property-ja, import key events kao konverzija, Primary/Secondary setup, Consent Mode v2 i troubleshooting. HowTo schema + realne lekcije iz 10+ naloga.",
+      "Kompletan 7-koračni vodič za GA4 + Google Ads integraciju u 2026: linkovanje property-ja, import key events kao konverzija, Primary/Secondary setup.",
     featuredImage: "/blog/ga4-google-ads-integracija.webp",
     imageAlt: "Ilustracija dva dela slagalice koji se spajaju uz mali grafikon, tema integracije GA4 i Google Ads",
     readingTime: "18 min",
@@ -514,7 +514,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-09-15",
     category: "Metrike",
     metaDescription:
-      "Šta je ROAS (Return on Ad Spend)? Formula: ROAS = Prihod ÷ Potrošnja. Interaktivni kalkulator, industrijski benchmarks, razlika ROAS vs POAS i 6 taktika za poboljšanje. Bazirano na realnim nalozima.",
+      "Šta je ROAS (Return on Ad Spend)? Formula: ROAS = Prihod ÷ Potrošnja. Interaktivni kalkulator, industrijski benchmarks, razlika ROAS vs POAS i 6 taktika.",
     featuredImage: "/blog/sta-je-roas.webp",
     imageAlt: "Ilustracija kalkulatora i gomile novcica pored rastuceg grafikona, tema objasnjenja sta je ROAS i kako se racuna",
     readingTime: "8 min",
@@ -523,12 +523,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "microsoft-ads-vs-google-ads",
-    title: "Microsoft Ads vs Google Ads: Kompletno Poređenje za 2026 [Iz Prakse]",
+    title: "Microsoft Ads vs Google Ads: Kompletno Poređenje za 2026",
     date: "2026-04-19",
     dateModified: "2026-07-24",
     category: "Strategija",
     metaDescription:
-      "Microsoft Ads vs Google Ads u 2026: market share, CPC razlike, kada koristiti koju platformu, LinkedIn targeting prednost. Iz 2 godine rada sa UK skincare brendom na obe platforme istovremeno.",
+      "Microsoft Ads vs Google Ads u 2026: market share, CPC razlike, kada koristiti koju platformu, LinkedIn targeting prednost. Iz 2 godine rada sa UK.",
     featuredImage: "/blog/microsoft-ads-vs-google-ads.webp",
     imageAlt: "Ilustracija dva putokaza u suprotnim smerovima sa trofejom izmedju, tema poredjenja Microsoft Ads i Google Ads",
     readingTime: "14 min",
@@ -537,12 +537,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-ads-za-ecommerce-srbija-2026",
-    title: "Google Ads za eCommerce u Srbiji: Kompletna Strategija za 2026 [sa Zvaničnim Podacima]",
+    title: "Google Ads za eCommerce u Srbiji: Strategija za 2026",
     date: "2026-04-14",
     dateModified: "2026-07-24",
     category: "eCommerce",
     metaDescription:
-      "Data-driven vodič za Google Ads eCommerce strategiju u Srbiji 2026: 110.6M internet kupovina, €3.61B tržište, rast 34%, top kategorije, benchmarks i taktike. Bazirano na podacima NBS-a i iskustvu sa 10+ naloga.",
+      "Data-driven vodič za Google Ads eCommerce strategiju u Srbiji 2026: veličina tržišta, rast, top kategorije, benchmarks i taktike.",
     featuredImage: "/blog/google-ads-za-ecommerce-srbija-2026.webp",
     imageAlt: "Ilustracija rakete koja lansira iz kolica za kupovinu sa pinom na mapi, tema Google Ads strategije za eCommerce u Srbiji",
     readingTime: "17 min",
@@ -551,12 +551,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "smart-bidding-vodic",
-    title: "Smart Bidding Strategije za Google Ads: Kompletan Vodič za 2026",
+    title: "Smart Bidding Strategije za Google Ads: Vodič za 2026",
     date: "2026-04-19",
     dateModified: "2026-04-23",
     category: "Optimizacija",
     metaDescription:
-      "Smart Bidding strategije u Google Ads-u 2026: 6 strategija (Maximize Conversions, tCPA, tROAS i ostale) sa decision tree-jem, conversion volume requirements, i lekcijama iz 10+ naloga.",
+      "Smart Bidding strategije u Google Ads-u 2026: 6 strategija (Maximize Conversions, tCPA, tROAS i ostale) sa decision tree-jem, conversion volume.",
     featuredImage: "/blog/smart-bidding-vodic.webp",
     imageAlt: "Ilustracija robotske ruke koja podesava veliki merac sa zupčanicima, tema vodica za smart bidding strategije",
     readingTime: "16 min",
@@ -570,7 +570,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Sve Google Ads promene i novosti za 2026 na jednom mestu. Shopping lansiranje u Srbiji, AI Max Text Guidelines, PMax transparentnost, Editor 2.12. Ažurirano mesečno.",
+      "Sve Google Ads promene i novosti za 2026 na jednom mestu. Shopping lansiranje u Srbiji, AI Max Text Guidelines, PMax transparentnost.",
     featuredImage: "/blog/google-ads-novosti-2026.webp",
     imageAlt: "Ilustracija megafona sa zvezdicama pored stranice kalendara i zvona, tema mesecnih novosti i promena u Google Ads",
     readingTime: "12 min",
@@ -579,12 +579,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "youtube-oglasavanje-vodic",
-    title: "YouTube Oglašavanje: Kompletan Vodič za Video Kampanje [2026]",
+    title: "YouTube Oglašavanje: Kompletan Vodič za Video Kampanje",
     date: "2026-04-13",
     dateModified: "2026-04-13",
     category: "YouTube Ads",
     metaDescription:
-      "Kompletan vodič za YouTube oglašavanje u 2026: 6 formata oglasa (Skippable, Bumper, Shorts, In-Feed), targeting opcije, troškovi (CPV €0.02-0.03), i strategije za eCommerce i B2B. Bazirano na iskustvu sa 10+ naloga.",
+      "Kompletan vodič za YouTube oglašavanje u 2026: 6 formata oglasa (Skippable, Bumper, Shorts, In-Feed), targeting opcije i troškovi.",
     featuredImage: "/blog/youtube-oglasavanje-vodic.webp",
     imageAlt: "Ilustracija dugmeta za pustanje i filmske klapse pored grafikona, tema vodica za YouTube video oglasavanje",
     readingTime: "16 min",
@@ -607,12 +607,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "koliko-kosta-google-ads",
-    title: "Koliko zapravo košta Google oglašavanje u Srbiji? CPC po Industrijama + Budžeti od 200€ do 5.000€ [2026]",
+    title: "Koliko košta Google oglašavanje u Srbiji? CPC i budžeti",
     date: "2026-01-26",
     dateModified: "2026-05-14",
     category: "Google Ads",
     metaDescription:
-      "Google oglašavanje cena u Srbiji: realni CPC po industrijama (15-50 RSD), minimalni budžeti od €200/mes, agencijske takse, i ROI okvir koji koristim sa 20+ klijenata. Sve cifre iz 2026, sa konkretnim primerima.",
+      "Google oglašavanje cena u Srbiji: realni CPC po industrijama (15-50 RSD), minimalni budžeti od €200/mes, agencijske takse, i ROI okvir koji koristim.",
     featuredImage: "/blog/koliko-kosta-google-ads.webp",
     readingTime: "12 min",
     content: <KolikoKostaGoogleAdsSR />,
@@ -620,12 +620,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-oglasavanje-za-firme",
-    title: "Google Oglašavanje za Firme: Kompletan Vodič za B2B i eCommerce [2026]",
+    title: "Google Oglašavanje za Firme: Vodič za B2B i eCommerce [2026]",
     date: "2026-01-26",
     dateModified: "2026-07-18",
     category: "Google oglašavanje",
     metaDescription:
-      "Google oglašavanje za firme: kako funkcioniše, koliko košta i koji tip kampanje bira za B2B ili eCommerce. CPC benchmark za Srbiju, budžeti i strategije za profitabilne kampanje, iz iskustva sa 50+ klijenata.",
+      "Google oglašavanje za firme: kako funkcioniše, koliko košta i koji tip kampanje bira za B2B ili eCommerce. CPC benchmark za Srbiju, budžeti i strategije.",
     featuredImage: "/blog/google-oglasavanje-za-firme.webp",
     imageAlt: "Ilustracija akten tasne i kese za kupovinu povezanih zupčanikom, tema Google oglasavanja za B2B i eCommerce firme",
     readingTime: "15 min",
@@ -634,12 +634,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "performance-max-vodic",
-    title: "Performance Max (PMax) Vodič za 2026: Struktura, Asset Grupe + Template koji daje bolji ROAS",
+    title: "Performance Max (PMax) Vodič za 2026: Struktura, Asset Grupe",
     date: "2026-01-26",
     dateModified: "2026-09-06",
     category: "Performance Max",
     metaDescription:
-      "Performance Max kampanje u 2026: kompletna struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje koštaju 30-50% ROAS-a. Uključuje gotov PMax Asset Grupa template + lekcije iz 10+ naloga.",
+      "Performance Max kampanje u 2026: kompletna struktura asset grupa, search themes, exclusions, i 5 najčešćih grešaka koje koštaju 30-50% ROAS-a.",
     featuredImage: "/blog/performance-max-vodic.webp",
     imageAlt: "Ilustracija slozenih kockica u boji i mete sa strelicom u centru, tema vodica za Performance Max kampanje",
     readingTime: "14 min",
@@ -653,7 +653,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-09-15",
     category: "Optimizacija",
     metaDescription:
-      "30 taktika za Google Ads optimizaciju koje koristim na nalozima: Smart Bidding ciljevi i pragovi, search terms, negativne ključne reči, Quality Score i nedeljni ritam provere.",
+      "30 taktika za Google Ads optimizaciju koje koristim na nalozima: Smart Bidding ciljevi i pragovi, search terms, negativne ključne reči, Quality Score.",
     featuredImage: "/blog/google-ads-optimizacija.webp",
     imageAlt: "Ilustracija merača sa iglom u zelenoj zoni i ključem za podešavanje, tema optimizacije Google Ads kampanja",
     readingTime: "18 min",
@@ -662,12 +662,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "google-shopping-vodic",
-    title: "Google Shopping Kampanje: Kompletan Vodič + 2026 Srbija Launch Priprema",
+    title: "Google Shopping Kampanje: Vodič + 2026 Srbija Launch",
     date: "2026-01-26",
     dateModified: "2026-09-06",
     category: "Google Shopping",
     metaDescription:
-      "Google Shopping vodič sa 2+ godine UK iskustva (skincare brend, šestocifren prihod): product feed optimizacija, 10 obaveznih atributa, struktura kampanja, i priprema za lansiranje u Srbiji u drugoj polovini 2026 (Q3 ili Q4).",
+      "Google Shopping vodič sa 2+ godine UK iskustva (skincare brend, šestocifren prihod): product feed optimizacija, 10 obaveznih atributa, struktura kampanja.",
     featuredImage: "/blog/google-shopping-vodic.webp",
     imageAlt: "Ilustracija kolica za kupovinu sa kutijama i cenovnim etiketama, tema vodiča za Google Shopping kampanje",
     readingTime: "16 min",
@@ -676,12 +676,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "agencija-vs-freelancer",
-    title: "Google Ads Agencija vs Freelancer vs In-House: Koju Opciju Izabrati u 2026? [€300-2.500+/mes]",
+    title: "Google Ads Agencija vs Freelancer vs In-House [2026]",
     date: "2026-01-26",
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Google Ads agencija, freelancer ili in-house tim u 2026? Detaljno poređenje troškova (€300-2.500+/mes), prednosti i mana svake opcije. Decision framework za biznise iz Srbije, regiona i EU. Kako da izaberete partnera prvi put kako treba.",
+      "Google Ads agencija, freelancer ili in-house tim u 2026? Detaljno poređenje troškova (€300-2.500+/mes), prednosti i mana svake opcije. Decision framework.",
     featuredImage: "/blog/agencija-vs-freelancer.webp",
     readingTime: "11 min",
     content: <AgencijaVsFreelancerSR />,
@@ -689,12 +689,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "conversion-tracking-vodic",
-    title: "Conversion Tracking za Google Ads: Zašto Vaše Kampanje Ne Rade",
+    title: "Conversion Tracking za Google Ads: Zašto Ne Radi [2026]",
     date: "2026-01-26",
     dateModified: "2026-09-06",
     category: "Google Ads",
     metaDescription:
-      "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje GTM, GA4 i Google Ads tagova, Consent Mode v2 i Enhanced Conversions.",
+      "Loš conversion tracking je razlog #1 zašto Google Ads kampanje ne donose rezultate. Vodič za pravilno postavljanje GTM, GA4 i Google Ads tagova.",
     featuredImage: "/blog/conversion-tracking-vodic.webp",
     imageAlt: "Ilustracija neuključenog utikača pored prazne utičnice i pokidanog lanca, tema praćenja konverzija u Google Ads",
     readingTime: "13 min",
@@ -717,7 +717,7 @@ const srPosts: PostData[] = [
   },
   {
     slug: "zasto-nema-rezultata",
-    title: "Zašto Google Ads Kampanje Ne Donose Rezultate (i Kako to Popraviti)",
+    title: "Zašto Google Ads Ne Donosi Rezultate: Kako Popraviti",
     date: "2026-01-27",
     dateModified: "2026-01-30",
     category: "Google Ads",
@@ -736,7 +736,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Google Ads strategija za eCommerce nije ista kao za B2B. Kompletan vodič o razlikama u kampanjama, targetingu, bidding-u i merenju uspeha za oba modela poslovanja.",
+      "Google Ads strategija za eCommerce nije ista kao za B2B. Kompletan vodič o razlikama u kampanjama, targetingu, bidding-u i merenju uspeha za oba modela.",
     featuredImage: "/blog/ecommerce-vs-b2b.webp",
     imageAlt: "Ilustracija vage sa kesom za kupovinu na jednoj i fasciklama na drugoj strani, tema razlika između eCommerce i B2B Google Ads strategije",
     readingTime: "13 min",
@@ -750,7 +750,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-02-14",
     category: "Google Ads",
     metaDescription:
-      "Google Ads hvata kupce sa namerom, Meta Ads gradi svest. Poređenje po intent-u, CPC, conversion rate-u i ROI-u. Kada koristiti šta + kako ih kombinovati za maksimalan efekat.",
+      "Google Ads hvata kupce sa namerom, Meta Ads gradi svest. Poređenje po intent-u, CPC, conversion rate-u i ROI-u. Kada koristiti šta + kako ih kombinovati.",
     featuredImage: "/blog/google-ads-vs-meta.webp",
     imageAlt: "Ilustracija dva stuba sa grafikonom i simbolom srca na vrhu, tema poređenja Google Ads i Meta oglašavanja",
     readingTime: "15 min",
@@ -773,12 +773,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "kljucne-reci-vodic",
-    title: "Ključne reči za Google Ads: kako izabrati one koje donose kupce [2026]",
+    title: "Ključne reči za Google Ads: koje donose kupce [2026]",
     date: "2026-01-27",
     dateModified: "2026-09-06",
     category: "Google Ads keywords",
     metaDescription:
-      "Ključne reči za Google Ads: kako ih birate po nameri kupca, koji match tip za šta i koje reči odmah isključujete. Postupak sa klijentskih naloga plus 7 besplatnih alata.",
+      "Ključne reči za Google Ads: kako ih birate po nameri kupca, koji match tip za šta i koje reči odmah isključujete. Postupak sa klijentskih naloga plus.",
     featuredImage: "/blog/kljucne-reci-vodic.webp",
     imageAlt: "Ilustracija zlatnog ključa pored sivih ključeva i sita koje ih razdvaja, tema ključnih reči koje donose rezultate u Google Ads",
     readingTime: "14 min",
@@ -787,12 +787,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "negativne-kljucne-reci",
-    title: "Negativne Ključne Reči: Strategija, Match Tipovi i Organizacija [2026]",
+    title: "Negativne Ključne Reči: Strategija, Match Tipovi [2026]",
     date: "2026-01-27",
     dateModified: "2026-08-29",
     category: "Google Ads",
     metaDescription:
-      "Kako rade negativne ključne reči u Google Ads: match tipovi, 5 metoda pronalaženja, organizacija po nivoima i najčešće greške koje troše budžet na pogrešne pretrage.",
+      "Kako rade negativne ključne reči u Google Ads: match tipovi, 5 metoda pronalaženja, organizacija po nivoima i najčešće greške koje troše budžet.",
     featuredImage: "/blog/negativne-kljucne-reci.webp",
     imageAlt: "Ilustracija levka koji blokira loše upite i propušta dobre, sa fasciklama pored, tema negativnih ključnih reči u Google Ads",
     readingTime: "12 min",
@@ -815,12 +815,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "remarketing-vodic",
-    title: "Google Ads Remarketing Vodič 2026: 7 Audience Lista koje Smanjuju CPA",
+    title: "Google Ads Remarketing Vodič 2026: 7 Audience Lista",
     date: "2026-01-27",
     dateModified: "2026-04-27",
     category: "Google Ads",
     metaDescription:
-      "Remarketing kampanje u Google Ads-u 2026: 7 proverenih audience lista (cart abandoners 7d, product viewers 30d, video viewers, customer match, lookalikes), GA4 integracija, i konkretan setup koji smanjuje CPA u prosečnom eCommerce nalogu.",
+      "Remarketing kampanje u Google Ads-u 2026: 7 proverenih audience lista, GA4 integracija i konkretan setup za eCommerce nalog.",
     featuredImage: "/blog/remarketing-vodic.webp",
     imageAlt: "Ilustracija magneta koji privlači oblike nazad i bumeranga pored, tema remarketinga u Google Ads",
     readingTime: "15 min",
@@ -843,12 +843,12 @@ const srPosts: PostData[] = [
   },
   {
     slug: "rsa-vodic",
-    title: "Responsive Search Ads (RSA): Character Limits + 15 Headline Primera [2026]",
+    title: "Responsive Search Ads (RSA): Character Limits [2026]",
     date: "2026-03-14",
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Kompletan vodič za RSA oglase u Google Ads: character limit-i za headlines (30) i descriptions (90), 15 headline primera koji rade, i zašto 7-8 bolje od 15. Realni podaci iz 50+ naloga.",
+      "Kompletan vodič za RSA oglase u Google Ads: character limit-i za headlines (30) i descriptions (90), 15 headline primera koji rade, i zašto 7-8 bolje.",
     featuredImage: "/blog/rsa-vodic.webp",
     imageAlt: "Ilustracija lepeze kartica sa lenjirom i slagalicama, tema vodiča za Responsive Search Ads oglase",
     readingTime: "14 min",
@@ -862,7 +862,7 @@ const srPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Šta je CTR (Click-Through Rate)? To je procenat ljudi koji kliknu na oglas nakon što ga vide. Formula, benchmarks po tipu kampanje (Search 5-10%, prosek 2-3%, Display 0.5-1%) i 7 taktika za podizanje CTR-a iz naloga koje vodim.",
+      "Šta je CTR (Click-Through Rate)? To je procenat ljudi koji kliknu na oglas nakon što ga vide. Formula, benchmarks po tipu kampanje.",
     featuredImage: "/blog/ctr-vodic.webp",
     imageAlt: "Ilustracija kursora koji klikće na metu sa štopericom pored, tema CTR-a i kako ga podići u Google Ads",
     readingTime: "12 min",
@@ -892,7 +892,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-09-01",
     category: "ChatGPT Ads",
     metaDescription:
-      "ChatGPT Ads and Google Ads catch buyers at different moments. Targeting, real CTR and CPC numbers with sources, measurement maturity, and how to combine both without cannibalizing Search.",
+      "ChatGPT Ads and Google Ads catch buyers at different moments. Targeting, real CTR and CPC numbers with sources, measurement maturity, and how to combine.",
     featuredImage: "/blog/chatgpt-ads-vs-google-ads.webp",
     imageAlt: "Illustration of two panels: an AI chat card with an ad on the left and Google search results with text ads on the right",
     readingTime: "10 min",
@@ -905,7 +905,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-09-01",
     category: "ChatGPT Ads",
     metaDescription:
-      "ChatGPT Ads are live across 31 European markets - without personalization. What context-only matching means for strategy, the DSA ad repository deadline, and who can't advertise in Europe.",
+      "ChatGPT Ads are live across 31 European markets - without personalization. What context-only matching means for strategy, the DSA ad repository deadline.",
     featuredImage: "/blog/chatgpt-ads-evropa.webp",
     imageAlt: "Illustration of an AI chat interface with an ad connected to a dark card with a circle of European stars",
     readingTime: "9 min",
@@ -939,7 +939,7 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-api-reporting-gaql",
-    title: "Google Ads API Reporting with GAQL: Anatomy + Copy-Paste Queries [2026]",
+    title: "Google Ads API Reporting with GAQL: Anatomy [2026]",
     date: "2026-08-29",
     dateModified: "2026-09-10",
     category: "Automation",
@@ -952,7 +952,7 @@ const enPosts: PostData[] = [
   },
   {
     slug: "negative-keywords-list",
-    title: "Negative Keywords List 2026: 400+ Terms by Category (Copy-Paste)",
+    title: "Negative Keywords List 2026: 400+ Terms by Category",
     date: "2026-08-29",
     dateModified: "2026-08-29",
     category: "Google Ads",
@@ -965,12 +965,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-api-authentication-guide",
-    title: "Google Ads API Authentication: OAuth, Service Accounts & Developer Token (2026)",
+    title: "Google Ads API Authentication: OAuth & Developer Token",
     date: "2026-08-29",
     dateModified: "2026-09-17",
     category: "Automation",
     metaDescription:
-      "Google Ads API authentication explained: OAuth2 desktop vs. web flow, the 7-day refresh token trap, service account rules, and a table of common errors with fixes.",
+      "Google Ads API authentication explained: OAuth2 desktop vs. web flow, the 7-day refresh token trap, service account rules, and a table of common errors.",
     featuredImage: "/blog/google-ads-api-autentifikacija.webp",
     imageAlt: "Illustration of a padlock with a key, a cloud, a shield and an ID badge card, Google Ads API authentication with OAuth, service accounts and Cloud projects",
     readingTime: "11 min",
@@ -978,12 +978,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-management-checklist",
-    title: "Google Ads Management Checklist: Why One List Never Fits Every Account [2026]",
+    title: "Google Ads Management Checklist: Why One List Never Fits",
     date: "2026-09-10",
     dateModified: "2026-09-10",
     category: "Optimization",
     metaDescription:
-      "Why the Google Ads checklist you downloaded doesn't help, and what actually keeps an account healthy: rhythm per account, the 50-conversion threshold, and the three things I check every day.",
+      "Why the Google Ads checklist you downloaded doesn't help, and what actually keeps an account healthy: rhythm per account, the 50-conversion threshold.",
     featuredImage: "/blog/google-ads-checklist-upravljanje.webp",
     imageAlt: "Illustration of a clipboard with green checkmarks and red crosses, a calendar and a clock, theme of the rhythm of managing a Google Ads account",
     readingTime: "11 min",
@@ -996,7 +996,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-09-06",
     category: "Search",
     metaDescription:
-      "The complete 2026 guide to Google Search campaigns: the AI Max suite, September migration of DSA and broad match campaigns, intent-and-margin structure, negative keywords, and measurement before scaling.",
+      "The complete 2026 guide to Google Search campaigns: the AI Max suite, September migration of DSA and broad match campaigns, intent-and-margin structure.",
     featuredImage: "/blog/google-search-kampanje-vodic.webp",
     imageAlt: "Illustration of a target with an arrow in the bullseye, a megaphone and a stack of ad cards, Google Search campaigns guide topic",
     readingTime: "12 min",
@@ -1009,7 +1009,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-09-06",
     category: "Demand Gen",
     metaDescription:
-      "Demand Gen campaigns in 2026: where they show, what's new (view-through optimization, incrementality testing), who they make sense for, creative requirements, audiences, and step-by-step setup.",
+      "Demand Gen campaigns in 2026: where they show, what's new (view-through optimization, incrementality testing), who they make sense for, creative.",
     featuredImage: "/blog/demand-gen-vodic.webp",
     imageAlt: "Illustration of a rocket launching surrounded by colorful geometric shapes and a compass, Demand Gen campaigns guide topic",
     readingTime: "12 min",
@@ -1030,12 +1030,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "ga4-audiences-ecommerce-framework",
-    title: "The GA4 Audience Framework for Repeat-Purchase Ecommerce: 25 Lists, 6 Layers, 3 API Limits",
+    title: "The GA4 Audience Framework for Repeat-Purchase Ecommerce",
     date: "2026-08-01",
     dateModified: "2026-08-01",
     category: "Tracking",
     metaDescription:
-      "The complete GA4 audience framework for repeat-purchase ecommerce: all 25 lists with exact configuration, the naming convention, delivery thresholds (Search 1,000 / Display 100), replenishment windows, and the three Admin API limits that break most win-back setups, with the workaround for each.",
+      "The complete GA4 audience framework for repeat-purchase ecommerce: all 25 lists with exact configuration, the naming convention, delivery thresholds.",
     featuredImage: "/blog/ga4-publike-ecommerce-framework.webp",
     imageAlt: "Illustration of folders stacked in tiered layers with a rising bar chart and a stopwatch, GA4 audience framework for ecommerce topic",
     readingTime: "~16 min",
@@ -1048,7 +1048,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Performance Max vs Standard Shopping in 2026: where PMax wins and where it burns you (brand cannibalization, CPC jumps), where Standard still wins, the October 2024 change that rewrote the old advice, and the hybrid that actually works. From UK practice (a skincare brand, six-figure Shopping revenue).",
+      "Performance Max vs Standard Shopping in 2026: where PMax wins and where it burns you (brand cannibalization, CPC jumps), where Standard still wins.",
     featuredImage: "/blog/performance-max-vs-standard-shopping-vodic.webp",
     imageAlt: "Illustration of a balance scale with a shopping cart on one side and a robot gear on the other, Performance Max vs Standard Shopping comparison topic",
     readingTime: "~13 min",
@@ -1056,12 +1056,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-shopping-vs-search-campaigns",
-    title: "Google Shopping vs Search: Which to Pick for eCommerce [2026]",
+    title: "Google Shopping vs Search: Which to Pick for eCommerce",
     date: "2026-07-19",
     dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Google Shopping vs Search campaigns for eCommerce: when to pick each, why Shopping has a lower CPC, when Search wins, and why the strongest accounts in 2026 run both. Budget split, PMax thresholds, and the Serbia launch.",
+      "Google Shopping vs Search campaigns for eCommerce: when to pick each, why Shopping has a lower CPC, when Search wins, and why the strongest accounts.",
     featuredImage: "/blog/google-shopping-vs-search-kampanje.webp",
     imageAlt: "Illustration of two signposts pointing opposite ways, one topped with a shopping bag and the other with a chat bubble, Shopping vs Search campaigns comparison topic",
     readingTime: "~14 min",
@@ -1069,12 +1069,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-api-access-guide-for-agencies",
-    title: "Google API Access for PPC Agencies: Complete Setup Guide [2026]",
+    title: "Google API Access for PPC Agencies: Complete Setup Guide",
     date: "2026-07-11",
     dateModified: "2026-09-17",
     category: "Automation",
     metaDescription:
-      "Complete setup guide to Google API access for PPC agencies: Ads, GA4, Search Console, Tag Manager, Merchant Center, and Data Manager API. One Cloud project, OAuth scopes, and the key lesson about Testing mode killing refresh tokens after 7 days.",
+      "Complete setup guide to Google API access for PPC agencies: Ads, GA4, Search Console, Tag Manager, Merchant Center, and Data Manager API.",
     featuredImage: "/blog/google-api-pristupi-za-agencije.webp",
     imageAlt: "Illustration of an open toolbox with a wrench and a ring of keys, Google API access setup guide for agencies topic",
     readingTime: "13 min",
@@ -1087,7 +1087,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-09-17",
     category: "Automation",
     metaDescription:
-      "How to get Google Ads API Basic Access after September 9, 2026, when Google retired developer tokens and tied access levels to the Cloud project: brand verification, requesting the upgrade in Cloud Console, what Basic actually unlocks, and when Standard is worth asking for. First-hand guide.",
+      "How to get Google Ads API Basic Access after September 9, 2026: brand verification, the Cloud Console request, and what Basic actually includes.",
     featuredImage: "/blog/google-ads-api-basic-access-vodic.webp",
     imageAlt: "Illustration of an old key on a tray with an arrow pointing to a cloud holding a green shield, Google Ads API access moving from developer tokens to Cloud projects",
     readingTime: "12 min",
@@ -1095,24 +1095,24 @@ const enPosts: PostData[] = [
   },
   {
     slug: "offline-conversion-import-b2b",
-    title: "Offline Conversion Import for B2B: Connect Google Ads to Your CRM",
+    title: "Offline Conversion Import for B2B: Google Ads to Your CRM",
     date: "2026-07-06",
     dateModified: "2026-07-24",
     category: "Tracking",
     metaDescription:
-      "Make the Google Ads algorithm learn from closed deals instead of form fills: GCLID vs Enhanced Conversions for Leads, setup for HubSpot, Salesforce and Pipedrive, MQL/SQL/Closed-won valuation, and common mistakes.",
+      "Make the Google Ads algorithm learn from closed deals instead of form fills: GCLID vs Enhanced Conversions for Leads, setup for HubSpot.",
     featuredImage: "/blog/offline-conversion-import-b2b.webp",
     readingTime: "13 min",
     content: <OfflineConversionImportB2BEN />
   },
   {
     slug: "google-ads-consultant-cost-2026",
-    title: "How Much Does a Google Ads Consultant Cost in 2026? (Senior vs Agency vs Junior)",
+    title: "How Much Does a Google Ads Consultant Cost in 2026?",
     date: "2026-07-06",
     dateModified: "2026-07-06",
     category: "Google Ads",
     metaDescription:
-      "A transparent cost breakdown: junior freelancer $250-500/mo, senior consultant $800-2,500/mo ($150-250/hr), agency $600-2,500+ plus % of spend. Pricing models, market benchmarks, and red flags in cheap offers.",
+      "A transparent cost breakdown: junior freelancer $250-500/mo, senior consultant $800-2,500/mo ($150-250/hr), agency $600-2,500+ plus % of spend.",
     featuredImage: "/blog/koliko-kosta-google-ads-konsultant.webp",
     imageAlt: "Illustration of three price tags of different sizes with coins and a ruler, Google Ads consultant cost comparison topic",
     readingTime: "14 min",
@@ -1120,12 +1120,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "how-to-choose-google-ads-consultant",
-    title: "How to Choose a Google Ads Consultant: 12 Questions to Ask Before Signing",
+    title: "How to Choose a Google Ads Consultant: 12 Questions [2026]",
     date: "2026-07-06",
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "12 vetting questions to ask a Google Ads consultant or agency before signing: who actually works on the account, account ownership, tracking, billing models. Green and red flags from practice.",
+      "12 vetting questions to ask a Google Ads consultant or agency before signing: who actually works on the account, account ownership, tracking.",
     featuredImage: "/blog/kako-izabrati-google-ads-konsultanta.webp",
     imageAlt: "Illustration of a stack of question-mark cards, a trophy and a pen, how to choose a Google Ads consultant topic",
     readingTime: "16 min",
@@ -1133,24 +1133,24 @@ const enPosts: PostData[] = [
   },
   {
     slug: "poas-vs-roas",
-    title: "POAS vs ROAS: Why Profit-Based Bidding Changes eCommerce Advertising",
+    title: "POAS vs ROAS: Why It Changes eCommerce Advertising",
     date: "2026-07-06",
     dateModified: "2026-07-06",
     category: "Metrics",
     metaDescription:
-      "POAS (Profit on Ad Spend) = profit ÷ spend. Why a 4x ROAS can still be a loss, break-even math, practical implementation (feed, custom columns), and when POAS isn't needed.",
+      "POAS (Profit on Ad Spend) = profit ÷ spend. Why a 4x ROAS can still be a loss, break-even math, practical implementation (feed, custom columns).",
     featuredImage: "/blog/poas-vs-roas.webp",
     readingTime: "14 min",
     content: <PoasVsRoasEN />
   },
   {
     slug: "google-ads-account-takeover-checklist",
-    title: "Taking Over a Google Ads Account from an Agency: First-Week Checklist",
+    title: "Taking Over a Google Ads Account: First-Week Checklist",
     date: "2026-07-06",
     dateModified: "2026-07-06",
     category: "Audit",
     metaDescription:
-      "Switching Google Ads agencies? What to verify BEFORE you cut ties (account ownership, access, history export) and exactly what to do in your first week — without sudden changes that put results at risk.",
+      "Switching Google Ads agencies? What to verify BEFORE you cut ties (account ownership, access, history export) and exactly what to do in your first week.",
     featuredImage: "/blog/preuzimanje-google-ads-naloga.webp",
     imageAlt: "Illustration of a key and padlock with a checklist clipboard, illustrating taking over a Google Ads account",
     readingTime: "16 min",
@@ -1158,12 +1158,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "product-feed-serbian-ecommerce",
-    title: "Product Feed for Serbian eCommerce — Complete Guide [2026]",
+    title: "Product Feed for Serbian eCommerce - Complete Guide [2026]",
     date: "2026-07-04",
     dateModified: "2026-07-04",
     category: "Google Shopping",
     metaDescription:
-      "Product feed guide for Serbian eCommerce: 8 required attributes, title optimization, custom labels for bidding, feed delivery by platform, and common feed errors.",
+      "Product feed guide for Serbian eCommerce: 8 required attributes, title optimization, custom labels for bidding, feed delivery by platform.",
     featuredImage: "/blog/product-feed-srpski-ecommerce.webp",
     imageAlt: "Illustration of boxes on a conveyor belt feeding into a funnel with a price tag, illustrating a product feed guide",
     readingTime: "15 min",
@@ -1171,12 +1171,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "merchant-center-serbia-setup",
-    title: "Google Merchant Center for Serbia — Complete Setup Guide [2026]",
+    title: "Google Merchant Center for Serbia - Complete Setup Guide",
     date: "2026-07-03",
     dateModified: "2026-07-24",
     category: "Google Shopping",
     metaDescription:
-      "Google Merchant Center setup guide for the Serbian market: account creation, verification, product feed attributes, feed delivery methods, common disapproval reasons, shipping/tax settings.",
+      "Google Merchant Center setup guide for the Serbian market: account creation, verification, product feed attributes, feed delivery methods.",
     featuredImage: "/blog/merchant-center-srbija-setup.webp",
     imageAlt: "Illustration of a shopping cart connected by a plug with a checkmark shield, illustrating Merchant Center setup for Serbia",
     readingTime: "14 min",
@@ -1184,12 +1184,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-audit-checklist-serbia-2026",
-    title: "Google Ads Audit Checklist 2026 — 50 Points [Serbia]",
+    title: "Google Ads Audit Checklist 2026 - 50 Points [Serbia]",
     date: "2026-05-09",
     dateModified: "2026-07-24",
     category: "Google Ads Audit",
     metaDescription:
-      "A concrete 50-item checklist for auditing Google Ads accounts in Serbia. 10 categories with real examples — eCommerce, B2B, lead-gen. Scoring system and a 30-minute quick audit.",
+      "A concrete 50-item checklist for auditing Google Ads accounts in Serbia. 10 categories with real examples - eCommerce, B2B, lead-gen. Scoring system.",
     featuredImage: "/blog/google-ads-audit-checklist-srbija.webp",
     imageAlt: "Illustration of a checklist clipboard with a magnifying glass, illustrating a Google Ads audit checklist",
     readingTime: "18 min",
@@ -1202,7 +1202,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Tracking",
     metaDescription:
-      "Complete 7-step GA4 + Google Ads integration guide for 2026: link property, import key events as conversions, Primary/Secondary setup, Consent Mode v2, and troubleshooting. HowTo schema + lessons from 10+ accounts.",
+      "Complete 7-step GA4 + Google Ads integration guide for 2026: link property, import key events as conversions, Primary/Secondary setup, Consent Mode v2.",
     featuredImage: "/blog/ga4-google-ads-integracija.webp",
     imageAlt: "Illustration of two puzzle pieces connecting with a small chart, illustrating GA4 and Google Ads integration",
     readingTime: "18 min",
@@ -1236,7 +1236,7 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-for-ecommerce-serbia-2026",
-    title: "Google Ads for eCommerce in Serbia: Complete 2026 Strategy [with Official Data]",
+    title: "Google Ads for eCommerce in Serbia: Complete 2026 Strategy",
     date: "2026-04-14",
     dateModified: "2026-07-24",
     category: "eCommerce",
@@ -1254,7 +1254,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-04-23",
     category: "Optimizacija",
     metaDescription:
-      "Smart Bidding strategies in Google Ads 2026: 6 strategies (Maximize Conversions, tCPA, tROAS, more) with decision tree, conversion volume requirements, and lessons from managing 10+ accounts across UK, Serbia, and EU markets.",
+      "Smart Bidding strategies in Google Ads 2026: 6 strategies (Maximize Conversions, tCPA, tROAS, more) with decision tree, conversion volume requirements.",
     featuredImage: "/blog/smart-bidding-vodic.webp",
     imageAlt: "Illustration of a robot hand adjusting a large dial with gears, illustrating a guide to smart bidding strategies",
     readingTime: "16 min",
@@ -1275,12 +1275,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "youtube-advertising-guide",
-    title: "YouTube Advertising: Complete Guide to Video Campaigns [2026]",
+    title: "YouTube Advertising: Complete Guide to Video Campaigns",
     date: "2026-04-13",
     dateModified: "2026-04-13",
     category: "YouTube Ads",
     metaDescription:
-      "Complete YouTube advertising guide for 2026: 6 ad formats, targeting options, costs (CPV benchmarks), and strategies for eCommerce and B2B. Based on experience managing 10+ accounts.",
+      "Complete YouTube advertising guide for 2026: 6 ad formats, targeting options, costs (CPV benchmarks), and strategies for eCommerce and B2B.",
     featuredImage: "/blog/youtube-oglasavanje-vodic.webp",
     imageAlt: "Illustration of a play button and a film clapperboard beside a chart, illustrating a guide to YouTube video advertising",
     readingTime: "16 min",
@@ -1288,12 +1288,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-shopping-serbia-2026",
-    title: "Google Shopping Launches in Serbia: Complete Preparation Guide",
+    title: "Google Shopping Launches in Serbia: Preparation Guide [2026]",
     date: "2026-04-09",
     dateModified: "2026-08-28",
     category: "Google Shopping",
     metaDescription:
-      "Google Shopping Ads launches in Serbia in the second half of 2026 (Q3 or Q4) and across Croatia, BiH and Slovenia in Q4 2026. Full guide with 15-step checklist, Merchant Center setup, product feed optimisation, and lessons from 2+ years of UK Shopping campaigns (a skincare brand, six-figure Shopping revenue).",
+      "Google Shopping Ads launches in Serbia in the second half of 2026 (Q3 or Q4) and across Croatia, BiH and Slovenia in Q4 2026. Full guide with 15-step.",
     featuredImage: "/blog/google-shopping-srbija-2026.webp",
     imageAlt: "Illustration of a shopping bag and a countdown stopwatch with a map pin, illustrating the Google Shopping launch in Serbia",
     readingTime: "18 min",
@@ -1301,12 +1301,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "how-much-does-google-ads-cost",
-    title: "How Much Does Google Ads Cost in 2026? Real CPCs + Budget Guide ($500–$50K/mo)",
+    title: "How Much Does Google Ads Cost in 2026? Real CPC Data",
     date: "2026-01-26",
     dateModified: "2026-04-22",
     category: "Google Ads",
     metaDescription:
-      "Google Ads costs $0.50–$5 per click on average — but your real spend depends on industry, competition, and goals. Actual CPC data across 10+ industries, minimum budgets from $500/mo, and the ROI framework 20+ clients use to scale profitably.",
+      "Google Ads costs $0.50-$5 per click on average - but your real spend depends on industry, competition, and goals. Actual CPC data across 10+ industries.",
     featuredImage: "/blog/koliko-kosta-google-ads.webp",
     readingTime: "12 min",
     content: <HowMuchDoesGoogleAdsCostEN />
@@ -1326,7 +1326,7 @@ const enPosts: PostData[] = [
   },
   {
     slug: "performance-max-guide",
-    title: "Performance Max Campaigns: Guide for eCommerce and B2B [2026]",
+    title: "Performance Max Campaigns: Guide for eCommerce and B2B",
     date: "2026-01-26",
     dateModified: "2026-09-06",
     category: "Performance Max",
@@ -1357,7 +1357,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-09-06",
     category: "Google Shopping",
     metaDescription:
-      "Complete guide to Google Shopping campaigns. Product feed optimization, campaign structure, bidding strategies and tactics for increasing ROAS — based on real results.",
+      "Complete guide to Google Shopping campaigns: product feed optimization, campaign structure, and bidding strategies for better ROAS.",
     featuredImage: "/blog/google-shopping-vodic.webp",
     imageAlt: "Illustration of a shopping cart with boxes and price tags, theme of a Google Shopping campaigns guide",
     readingTime: "16 min",
@@ -1365,24 +1365,24 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-agency-vs-freelancer",
-    title: "Google Ads Agency vs Freelancer vs In-House — Which Should You Hire in 2026?",
+    title: "Google Ads Agency vs Freelancer vs In-House [2026]",
     date: "2026-01-26",
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Google Ads agency vs freelancer vs in-house team: detailed cost comparison ($300–$3,000+/mo), pros and cons, and a decision framework. How to pick the right partner the first time.",
+      "Google Ads agency vs freelancer vs in-house team: detailed cost comparison ($300-$3,000+/mo), pros and cons, and a decision framework. How to pick.",
     featuredImage: "/blog/agencija-vs-freelancer.webp",
     readingTime: "11 min",
     content: <AgencyVsFreelancerEN />
   },
   {
     slug: "conversion-tracking-guide",
-    title: "Conversion Tracking for Google Ads: Why Your Campaigns Aren't Working",
+    title: "Conversion Tracking for Google Ads: Why It Fails [2026]",
     date: "2026-01-26",
     dateModified: "2026-09-06",
     category: "Google Ads",
     metaDescription:
-      "Poor conversion tracking is the #1 reason Google Ads campaigns fail. Guide to proper GTM, GA4, and Google Ads tag setup, Consent Mode v2, and Enhanced Conversions.",
+      "Poor conversion tracking is the #1 reason Google Ads campaigns fail. Guide to proper GTM, GA4, and Google Ads tag setup, Consent Mode v2, and Enhanced.",
     featuredImage: "/blog/conversion-tracking-vodic.webp",
     imageAlt: "Illustration of an unplugged cable near an empty socket and a broken chain link, theme of conversion tracking for Google Ads",
     readingTime: "13 min",
@@ -1390,7 +1390,7 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-mistakes",
-    title: "Google Ads Mistakes: 20 Costly Errors in Your Campaigns [2026]",
+    title: "Google Ads Mistakes: 20 Costly Errors in Your Campaigns",
     date: "2026-01-27",
     dateModified: "2026-07-24",
     category: "Google Ads Optimization",
@@ -1455,12 +1455,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "google-ads-keyword-guide",
-    title: "Google Ads Keywords: How to Pick the Ones That Bring Customers [2026]",
+    title: "Google Ads Keywords: How to Pick the Right Ones",
     date: "2026-01-27",
     dateModified: "2026-09-06",
     category: "Google Ads Keywords",
     metaDescription:
-      "What separates Google Ads keywords that bring paying customers from those that just drain your budget. Match types, intent classification, negative keywords, and lessons from 20+ accounts I've personally managed.",
+      "What separates Google Ads keywords that bring paying customers from those that just drain your budget. Match types, intent classification.",
     featuredImage: "/blog/kljucne-reci-vodic.webp",
     imageAlt: "Illustration of a golden key beside plain gray keys separated by a sieve, theme of which keywords actually bring results in Google Ads",
     readingTime: "14 min",
@@ -1468,12 +1468,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "negative-keywords-guide",
-    title: "Negative Keywords Strategy for Google Ads: Match Types, Organization & Process [2026]",
+    title: "Negative Keywords Strategy for Google Ads: Match Types",
     date: "2026-01-27",
     dateModified: "2026-08-29",
     category: "Google Ads",
     metaDescription:
-      "How negative keywords actually work in Google Ads: match type behavior, 5 methods for finding them, a tiered organization system, and the mistakes that waste budget.",
+      "How negative keywords actually work in Google Ads: match type behavior, 5 methods for finding them, a tiered organization system, and the mistakes that.",
     featuredImage: "/blog/negativne-kljucne-reci.webp",
     imageAlt: "Illustration of a funnel blocking bad shapes while letting good ones through, with folders beside it, theme of negative keywords strategy in Google Ads",
     readingTime: "12 min",
@@ -1486,7 +1486,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Google Ads Quality Score guide — what it is, how it's calculated, and proven tactics to improve it. Lower CPC and boost ad positions.",
+      "Google Ads Quality Score guide — what it is, how it's calculated, and proven tactics to improve it. Lower CPC and improve ad positions.",
     featuredImage: "/blog/quality-score-vodic.webp",
     imageAlt: "Illustration of a shield with a star and stacked puzzle pieces, theme of Quality Score and how to improve it in Google Ads",
     readingTime: "11 min",
@@ -1512,7 +1512,7 @@ const enPosts: PostData[] = [
     dateModified: "2026-07-12",
     category: "Google Ads",
     metaDescription:
-      "How to start Google Ads from scratch? Step-by-step beginner guide — campaign types, budget, keywords, and common mistakes. Everything you need before your first campaign.",
+      "How to start Google Ads from scratch? Step-by-step beginner guide - campaign types, budget, keywords, and common mistakes. Everything you need before.",
     featuredImage: "/blog/kako-poceti-google-ads.webp",
     imageAlt: "Illustration of a rocket on a launch pad with a compass and building blocks, theme of a beginner's guide to Google Ads",
     readingTime: "14 min",
@@ -1520,12 +1520,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "responsive-search-ads-guide",
-    title: "RSA Guide: Responsive Search Ads Framework That Actually Works [2026]",
+    title: "RSA Guide: Responsive Search Ads Framework [2026]",
     date: "2026-03-14",
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "Responsive Search Ads framework with 7-8 headlines instead of 15, angle-based slot distribution, testing and optimisation. Guide backed by State of PPC 2026 data and real campaign results.",
+      "Responsive Search Ads framework with 7-8 headlines instead of 15, angle-based slot distribution, testing and optimisation. Guide backed by State of PPC.",
     featuredImage: "/blog/rsa-vodic.webp",
     imageAlt: "Illustration of a fan of cards with a ruler and puzzle pieces, theme of a Responsive Search Ads guide",
     readingTime: "14 min",
@@ -1533,12 +1533,12 @@ const enPosts: PostData[] = [
   },
   {
     slug: "ctr-guide",
-    title: "CTR (Click-Through Rate): What It Is, Formula & How to Improve [2026]",
+    title: "CTR (Click-Through Rate): What It Is & How to Improve [2026]",
     date: "2026-03-24",
     dateModified: "2026-07-24",
     category: "Google Ads",
     metaDescription:
-      "What is CTR (Click-Through Rate) in Google Ads? Formula, benchmarks by campaign type (Search 5-10%, average 2-3%, Display 0.5-1%), diagnosing low CTR, and 7 tactics to improve your click-through rate.",
+      "What is CTR (Click-Through Rate) in Google Ads? Formula, benchmarks by campaign type, diagnosing low CTR, and tactics to improve it.",
     featuredImage: "/blog/ctr-vodic.webp",
     imageAlt: "Illustration of a cursor clicking a bullseye target with a stopwatch beside it, theme of CTR and how to improve it in Google Ads",
     readingTime: "12 min",

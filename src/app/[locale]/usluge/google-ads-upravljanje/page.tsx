@@ -16,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads Management — Senior Runs Your Account | Slobodan Jelisavac"
-      : "Google Ads Usluge - Vođenje Kampanja sa Seniorom | Slobodan Jelisavac",
+      ? "Google Ads Management - Senior Runs Your Account"
+      : "Google Ads Usluge - Vođenje Kampanja sa Seniorom",
     description: isEn
-      ? "I personally run Google Ads accounts for eCommerce and B2B - 10+ years, 3.7x average ROAS, UK and US markets. No junior handoffs. From $2,500/month. Book a free consultation."
+      ? "I personally run Google Ads accounts for eCommerce and B2B - 10+ years, 3.7x average ROAS, UK and US markets. No junior handoffs. From $2,500/month."
       : "Google Ads usluge iz jedne ruke - deset godina lično vodim naloge za eCommerce i B2B. Bez juniora na nalogu, vođenje kampanja od €700 mesečno.",
     locale,
     path: "/services/google-ads-management",

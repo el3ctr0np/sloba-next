@@ -17,9 +17,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Ads Agency — Senior-Led Boutique | Slobodan Jelisavac"
-      : "Google Ads Agencija Srbija - Senior Vodi Vaš Nalog | Slobodan Jelisavac",
+      : "Google Ads Agencija Srbija - Senior Vodi Vaš Nalog",
     description: isEn
-      ? "I run a senior-led boutique Google Ads agency personally — no junior account managers, transparent reporting, you own the account. 3.7x average ROAS (eCommerce), 3x UK Search Awards. From $2,500/month."
+      ? "I run a senior-led boutique Google Ads agency personally, no junior account managers. 3.7x average ROAS, 3x UK Search Awards. From $2,500/month."
       : "Agencija za Google Ads koju lično vodim - bez junior account managera. Vođenje kampanja od €700/mes, vi ste vlasnik naloga, transparentan izveštaj.",
     locale,
     path: "/services/google-ads-agency",

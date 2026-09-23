@@ -17,7 +17,7 @@ export const term: TermPage = {
   guideSlug: "conversion-tracking-vodic",
   guideLabelSr: "Conversion tracking za Google Ads: zašto vaše kampanje ne rade",
   guideLabelEn: "Conversion Tracking for Google Ads: Why Your Campaigns Aren't Working",
-  metaTitleSr: "Klik u Google Ads-u: šta se naplaćuje, a šta ne | Slobodan Jelisavac",
+  metaTitleSr: "Klik u Google Ads-u: šta se naplaćuje, a šta ne",
   metaTitleEn: "Click in Google Ads: What Gets Charged and What Doesn't | Slobodan Jelisavac",
   metaDescriptionSr:
     "Šta je klik u Google Ads-u, koji klikovi se ne naplaćuju i zašto se broj klikova ne poklapa sa GA4 sesijama. Definicija, primer i moj stav iz prakse.",

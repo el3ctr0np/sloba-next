@@ -12,10 +12,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: isEn
       ? "Google Ads for eCommerce | Shopping & PMax - Slobodan Jelisavac"
-      : "Google Ads za eCommerce | Shopping i Performance Max - Slobodan Jelisavac",
+      : "Google Ads za eCommerce | Shopping i Performance Max",
     description: isEn
-      ? "10+ years running Google Ads for online stores. Shopping, Performance Max, and Search, structured by margin - not just revenue. Management from $2,500/mo, minimum $10,000+/mo ad spend."
-      : "10+ godina vodim Google Ads za online prodavnice. Shopping, Performance Max i Search, strukturirani po marži - ne samo po prihodu. Vođenje od €700/mes, uslov €1.500+/mes ad spend-a.",
+      ? "10+ years running Google Ads for online stores. Shopping, Performance Max, and Search, structured by margin, not just revenue. Management from $2,500/mo."
+      : "10+ godina vodim Google Ads za online prodavnice. Shopping, Performance Max i Search, strukturirani po marži, ne samo po prihodu. Vođenje od €700/mes.",
     locale,
     path: "/services/google-ads-for-ecommerce",
     srPath: "/usluge/google-ads-za-ecommerce",

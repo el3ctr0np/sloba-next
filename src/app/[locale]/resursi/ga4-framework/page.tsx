@@ -12,11 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "GA4 Audience Framework for Repeat-Purchase Ecommerce — Free Download"
-      : "GA4 Audience Framework za eCommerce sa Ponovljenom Kupovinom - Besplatno Preuzimanje | Slobodan Jelisavac",
+      ? "GA4 Audience Framework for Repeat-Purchase Ecommerce"
+      : "GA4 Audience Framework za eCommerce sa Ponovljenom Kupovinom",
     description: isEn
-      ? "Twenty five GA4 audience lists across six layers, as markdown files you drop into Claude or ChatGPT so it builds them with you, plus a PDF. Lifecycle, value, intent, brand, replenishment, predictive — with the three Admin API limits and the workaround for each. Email only."
-      : "Dvadeset pet GA4 audience lista u šest stubova, kao markdown fajlovi koje ubaciš u Claude ili ChatGPT pa ti ih gradi, plus PDF. Lifecycle, vrednost, namera, brend, replenishment i prediktivne liste, sa tri ograničenja Admin API-ja i zaobilaznicom za svako. Traži se samo email.",
+      ? "Twenty five GA4 audience lists across six layers, as markdown files you drop into Claude or ChatGPT so it builds them with you, plus a PDF. Lifecycle."
+      : "Dvadeset pet GA4 audience lista u šest stubova, kao markdown fajlovi koje ubaciš u Claude ili ChatGPT pa ti ih gradi, plus PDF. Lifecycle, vrednost.",
     locale,
     path: "/resources/ga4-framework",
     srPath: "/resursi/ga4-framework",

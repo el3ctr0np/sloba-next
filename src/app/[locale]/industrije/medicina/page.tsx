@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   return buildMetadata({
     title: isEn
-      ? "Google Ads for Private Clinics and Diagnostics | Slobodan Jelisavac"
+      ? "Google Ads for Private Clinics and Diagnostics"
       : "Google Ads za klinike i dijagnostičke centre | Slobodan Jelisavac",
     description: isEn
       ? "Google Ads for private clinics and diagnostic centres: health policy know-how, audiences and booking measurement, account management."

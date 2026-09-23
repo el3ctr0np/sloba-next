@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "Deep Audit + Action Plan | Slobodan Jelisavac — PPC Analysis"
       : "Deep Audit + Action Plan - Google Ads Audit | Slobodan Jelisavac",
     description: isEn
-      ? "Deep Audit + Action Plan reveals where you're losing money and how to improve ROAS. I analyze every campaign personally — 10+ years of senior experience, prioritized recommendations. £750 (UK), €750 (EU), $1,500 (US)."
-      : "Deep Audit + Action Plan: profesionalni audit koji otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Detaljnu analizu radim lično - 10+ godina iskustva, cena €450.",
+      ? "Deep Audit + Action Plan finds where you're losing money and improves ROAS. I analyze every campaign, 10+ years. From £750/€750/$1,500."
+      : "Deep Audit + Action Plan: audit koji otkriva gde gubite novac u Google oglašavanju i kako poboljšati ROAS. Radim lično, 10+ godina iskustva. Cena €450.",
     locale,
     path: "/services/google-ads-audit",
     srPath: "/usluge/google-ads-audit",

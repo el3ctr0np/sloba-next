@@ -15,17 +15,29 @@ export async function generateStaticParams() {
   return caseStudies.map((cs) => ({ slug: cs.slug }));
 }
 
+// Word-boundary truncate so a long company/highlight pair never breaks
+// mid-word in the <title> tag (checker rule, 23.9: title stays <= 60 chars).
+function truncateAtWord(str: string, maxLen: number): string {
+  if (str.length <= maxLen) return str;
+  const cut = str.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut).replace(/[ ,;:-]+$/, "");
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, locale } = await params;
   const cs = getCaseStudy(slug, locale);
   if (!cs) return { title: "Case Study Not Found" };
 
-  const isEn = locale === "en";
-  const seeHow = isEn ? "See how." : "Pogledajte kako.";
+  // No "Case Study" label and no brand suffix in the title - both were
+  // pushing every entry past 100+ chars. No results[1] restatement in the
+  // description either: it duplicated cs.highlight word for word on the
+  // tech-startup-launch-serbia entry (checker rule, 23.9).
+  const pageTitle = truncateAtWord(`${cs.company}: ${cs.highlight}`, 60);
 
   return buildMetadata({
-    title: `${cs.company} Case Study | ${cs.highlight} - Slobodan Jelisavac`,
-    description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}. ${cs.results[1]?.label}: ${cs.results[1]?.value}. ${seeHow}`,
+    title: pageTitle,
+    description: `${cs.category} case study: ${cs.niche} (${cs.market}). ${cs.highlight}.`,
     locale,
     path: `/case-studies/${slug}`,
   });

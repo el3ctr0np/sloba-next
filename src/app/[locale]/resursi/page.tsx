@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return buildMetadata({
       title: "Free Google Ads Tools | Slobodan Jelisavac",
       description:
-        "Free tools for people running their own Google Ads: a 38-point Performance Max review, a budget calculator, a GA4 audience framework and an account audit checklist. All run in the browser, none of them gate the result behind an email.",
+        "Free tools for people running their own Google Ads: a 38-point PMax review, budget calculator, GA4 framework. Run in the browser, no email required.",
       locale,
       path: "/resources",
       srPath: "/resursi",
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildMetadata({
     title: "Besplatni Google Ads alati | Slobodan Jelisavac",
     description:
-      "Besplatni alati za one koji sami vode Google Ads: provera Performance Max kampanje kroz 38 tačaka, budžet kalkulator, GA4 audience framework i audit checklista naloga. Sve radi u pretraživaču, nijedan ne krije rezultat iza emaila.",
+      "Besplatni alati za one koji sami vode Google Ads: provera Performance Max kroz 38 tačaka, budžet kalkulator, GA4 framework, bez emaila.",
     locale,
     // buildMetadata derives the EN alternate from `path`, so the SR branch has to
     // pass the EN path plus srPath. Without it the en hreflang points at

@@ -17,7 +17,7 @@ export const term: TermPage = {
   guideSlug: "smart-bidding-vodic",
   guideLabelSr: "Kompletan vodič kroz Smart Bidding strategije",
   guideLabelEn: "The complete guide to Smart Bidding strategies",
-  metaTitleSr: "Bidding: šta je i kako funkcioniše licitiranje | Slobodan Jelisavac",
+  metaTitleSr: "Bidding: šta je i kako funkcioniše licitiranje",
   metaTitleEn: "Bidding: What It Is and How the Auction Works | Slobodan Jelisavac",
   metaDescriptionSr:
     "Bidding u Google Ads objašnjen: kako radi aukcija, razlika između Manual i Smart Bidding pristupa, i najčešća greška koju vidim kad preuzmem nov nalog.",
