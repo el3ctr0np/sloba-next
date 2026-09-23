@@ -51,6 +51,14 @@ export default function GoogleAdsZaEcommerceSrbija2026SR() {
         Sve što pišem ovde testirano je u praksi.
       </p>
 
+      <p className="text-sm text-gray-600">
+        Tek pravite prvi nalog? Opšti koraci za podešavanje su u tekstu{" "}
+        <Link href={{ pathname: "/blog/[slug]", params: { slug: "kako-poceti-google-ads" } }} className="underline font-semibold">
+          Kako početi sa Google Ads-om
+        </Link>
+        . Ovaj tekst pretpostavlja da nalog već postoji i ulazi pravo u eCommerce specifike za srpsko tržište.
+      </p>
+
       <hr />
 
       <h2>Stanje eCommerce tržišta u Srbiji - Šta podaci kažu</h2>

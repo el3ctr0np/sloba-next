@@ -500,6 +500,10 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
         Detaljan vodič o remarketing strategijama i audience segmentation-u: <Link href={{ pathname: "/blog/[slug]", params: { slug: "remarketing-vodic" } }}>Remarketing vodič za Google Ads</Link>.
       </p>
 
+      <p>
+        Jedan izuzetak u ovoj kategoriji: zdravstveni nalozi ne mogu da se oslone ni na jednu od gornjih publika. Zdravlje je jedna od Google-ovih osetljivih kategorija interesovanja, pa su remarketing, customer match i slične publike isključene po pravilima, ne po izboru. Šta to menja u ostatku audita pišem na stranici <Link href={{ pathname: "/industrije/medicina" }}>Google Ads za medicinu</Link>.
+      </p>
+
       <hr />
 
       <h2 id="kategorija-7-bidding-strategija">Kategorija 7: Bidding strategija</h2>

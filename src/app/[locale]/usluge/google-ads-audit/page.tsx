@@ -652,6 +652,18 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
             >
               {isEn ? "What is ROAS?" : "Šta je ROAS i kako ga meriti?"}
             </Link>
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "google-ads-audit-checklist-serbia-2026" : "google-ads-audit-checklist-srbija" } }}
+              className="hover:text-white transition-colors underline"
+            >
+              {isEn ? "Google Ads Audit Checklist Serbia 2026" : "Audit checklist za Srbiju 2026"}
+            </Link>
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "google-ads-account-takeover-checklist" : "preuzimanje-google-ads-naloga" } }}
+              className="hover:text-white transition-colors underline"
+            >
+              {isEn ? "Account Takeover Checklist" : "Preuzimanje Google Ads naloga"}
+            </Link>
             <Link href="/" className="hover:text-white transition-colors underline">
               {isEn ? "Google Ads Consulting" : "Google Ads Srbija"}
             </Link>

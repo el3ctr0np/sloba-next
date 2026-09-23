@@ -242,6 +242,10 @@ export default function RemarketingVodicPost() {
         </p>
       </div>
 
+      <p>
+        Svih pet tipova zavisi od publika, a to je tačno gde zdravstveni nalozi ispadaju iz igre - zdravlje je osetljiva kategorija interesovanja kod Google-a, pa remarketing, customer match i slične publike nisu dozvoljene. Šta ostaje kao alternativa opisao sam na stranici <Link href={{ pathname: "/industrije/medicina" }}>Google Ads za medicinu</Link>.
+      </p>
+
       <hr />
 
       {/* ── Sekcija 4: Kako postaviti remarketing ── */}

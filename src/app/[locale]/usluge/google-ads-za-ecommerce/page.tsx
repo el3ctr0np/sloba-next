@@ -396,6 +396,13 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
             <Link href={{ pathname: "/blog/[slug]", params: { slug: pmaxGuideSlug } }} className="text-primary underline">
               {isEn ? "Performance Max guide" : "Performance Max vodič"}
             </Link>
+            {" · "}
+            <Link
+              href={{ pathname: "/blog/[slug]", params: { slug: isEn ? "product-feed-serbian-ecommerce" : "product-feed-srpski-ecommerce" } }}
+              className="text-primary underline"
+            >
+              {isEn ? "Product feed for Serbian eCommerce" : "Product feed za srpski eCommerce"}
+            </Link>
           </p>
         </div>
       </Section>

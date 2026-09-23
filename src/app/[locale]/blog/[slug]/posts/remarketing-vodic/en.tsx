@@ -197,6 +197,10 @@ export default function RemarketingGuideEN() {
         </p>
       </div>
 
+      <p>
+        All five types depend on audiences, and that is exactly where healthcare accounts drop out. Health is one of Google&apos;s sensitive interest categories, so remarketing, customer match, and similar audiences aren&apos;t allowed. I cover what&apos;s left as an alternative on the <Link href="/industrije/medicina">Google Ads for healthcare page</Link>.
+      </p>
+
       <hr />
 
       {/* ── Section 4: How to set up remarketing ── */}
