@@ -42,7 +42,7 @@ export default function MerchantCenterSrbijaSetupSR() {
         Kad god otvorim novi Shopping nalog za klijenta, prva stvar koju radim nije bidding strategija niti kampanjska struktura - to je Merchant Center. Zvuči kao administrativni detalj, ali u praksi je obrnuto: 80% grešaka koje vidim u Shopping kampanjama potiču iz lošeg MC setup-a ili neurednog feed-a, ne iz lošeg bid managementa.
       </p>
       <p>
-        Radim Google Ads već godinama sa 10 aktivnih klijenata - od Perun Moto (globalna moto oprema) do jednog UK skincare brenda i Sleepy Piglet UK (mattress brand). Sva tri naloga imaju Shopping kampanje koje prolaze kroz Merchant Center, i sva tri su u nekom trenutku imala feed probleme koje sam morao da rešavam. Ovaj vodič je destilacija tih iskustava, prilagođena specifično za srpsko tržište koje dobija Shopping u drugoj polovini 2026 (Q3 ili Q4).
+        Radim Google Ads već godinama sa aktivnim klijentima - od globalnog brenda moto opreme do UK skincare brenda i UK brenda dušeka. Sva tri naloga imaju Shopping kampanje koje prolaze kroz Merchant Center, i sva tri su u nekom trenutku imala feed probleme koje sam morao da rešavam. Ovaj vodič je destilacija tih iskustava, prilagođena specifično za srpsko tržište koje dobija Shopping u drugoj polovini 2026 (Q3 ili Q4).
       </p>
       <p>
         Ovo je supporting post uz pillar vodič{" "}
@@ -238,7 +238,7 @@ export default function MerchantCenterSrbijaSetupSR() {
 
       <h2>Česte greške i razlozi za disapproval</h2>
       <p>
-        Ovo su greške koje najčešće vidim kad radim MC audit za nove klijente - uključujući i one koje sam morao da rešavam na Perun Moto nalogu i na nalogu UK skincare brenda.
+        Ovo su greške koje najčešće vidim kad radim MC audit za nove klijente - uključujući i one koje sam morao da rešavam na nalogu brenda moto opreme i na nalogu UK skincare brenda.
       </p>
 
       <div className="space-y-4 my-6">

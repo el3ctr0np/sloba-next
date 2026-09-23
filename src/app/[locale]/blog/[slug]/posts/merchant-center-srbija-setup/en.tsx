@@ -42,7 +42,7 @@ export default function MerchantCenterSerbiaSetupEN() {
         Whenever I open a new Shopping account for a client, the first thing I work on isn&apos;t the bidding strategy or campaign structure — it&apos;s Merchant Center. It sounds like an administrative detail, but in practice it&apos;s the opposite: 80% of the mistakes I see in Shopping campaigns come from a poor MC setup or a messy feed, not from bad bid management.
       </p>
       <p>
-        I&apos;ve been running Google Ads for years across 10 active clients — from Perun Moto (global moto gear) to a UK skincare brand and Sleepy Piglet UK (mattress brand). All three accounts run Shopping campaigns that go through Merchant Center, and all three have had feed issues at some point that I had to fix. This guide is a distillation of those experiences, adapted specifically for the Serbian market, which gets Shopping in the second half of 2026 (Q3 or Q4).
+        I&apos;ve been running Google Ads for years across active clients — from a global motorcycle gear brand to a UK skincare brand and a UK mattress brand. All three accounts run Shopping campaigns that go through Merchant Center, and all three have had feed issues at some point that I had to fix. This guide is a distillation of those experiences, adapted specifically for the Serbian market, which gets Shopping in the second half of 2026 (Q3 or Q4).
       </p>
       <p>
         This is a supporting post to the pillar guide{" "}
@@ -238,7 +238,7 @@ export default function MerchantCenterSerbiaSetupEN() {
 
       <h2 id="common-mistakes-and-disapproval-reasons">Common mistakes and disapproval reasons</h2>
       <p>
-        These are the mistakes I most often see when doing an MC audit for new clients — including ones I had to fix on the Perun Moto account and on a UK skincare brand&apos;s account.
+        These are the mistakes I most often see when doing an MC audit for new clients — including ones I had to fix on a motorcycle gear brand&apos;s account and on a UK skincare brand&apos;s account.
       </p>
 
       <div className="space-y-4 my-6">
