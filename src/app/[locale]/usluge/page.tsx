@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Section, Card, Button, AnimateOnScroll } from "@/components/ui";
 import { ShoppingCart, Building2, Monitor, Settings, ClipboardCheck, Search, Eye, PlayCircle, BarChart3, MessageSquare } from "lucide-react";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -346,18 +347,7 @@ export default async function ServicesPage({ params }: Props) {
     name: "Google Ads Services — Slobodan Jelisavac",
     description:
       "Professional Google Ads services for eCommerce and B2B companies: management, audit, Shopping, Performance Max, remarketing, YouTube, consultations.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-      knowsAbout: [
-        "Google Ads",
-        "Performance Marketing",
-        "eCommerce Advertising",
-        "B2B Lead Generation"
-      ]
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "United Kingdom" },
@@ -371,18 +361,7 @@ export default async function ServicesPage({ params }: Props) {
     name: "Google Ads usluge - Slobodan Jelisavac",
     description:
       "Profesionalne Google Ads usluge za eCommerce i B2B kompanije: upravljanje, audit, Shopping, Performance Max, remarketing, YouTube, konsultacije.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-      knowsAbout: [
-        "Google Ads",
-        "Performance Marketing",
-        "eCommerce Advertising",
-        "B2B Lead Generation"
-      ]
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "United Kingdom" },

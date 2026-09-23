@@ -2,23 +2,6 @@ import { Link } from "@/i18n/navigation";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GA4GoogleAdsIntegracijaSR() {
-  const howToJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "Kako integrisati GA4 sa Google Ads (2026)",
-    "description": "Kompletan 7-koračni vodič za povezivanje GA4 property-ja sa Google Ads nalogom, import key events kao konverzije i prenos audience-a za remarketing.",
-    "totalTime": "PT30M",
-    "step": [
-      { "@type": "HowToStep", "name": "Poveži GA4 property sa Google Ads nalogom", "text": "U GA4: Admin → Product links → Google Ads links → Link. Odaberi MCC/Client nalog i čekiraj 'Enable Personalized Advertising' i 'Enable Auto-Tagging'." },
-      { "@type": "HowToStep", "name": "Uključi Auto-Tagging", "text": "U Google Ads: Admin → Account settings → Auto-tagging → Tag the URL that people click through. Obavezno za ispravan GCLID flow." },
-      { "@type": "HowToStep", "name": "Podesi Key Events u GA4", "text": "U GA4: Admin → Events → Mark as key event. Označi purchase, generate_lead, form_submit ili custom event kao key event." },
-      { "@type": "HowToStep", "name": "Importuj GA4 Key Events kao Google Ads konverzije", "text": "Google Ads: Tools → Data Manager → Import conversions → Google Analytics 4 properties → odaberi property → odaberi key events → Import." },
-      { "@type": "HowToStep", "name": "Odredi Primary vs Secondary konverzije", "text": "Google Ads: Goals → Conversions → Summary → označi jednu konverziju kao Primary (za bidding), ostale kao Secondary (observation only). Count: 'One' za leads, 'Every' za eCommerce." },
-      { "@type": "HowToStep", "name": "Prenesi GA4 audiences u Google Ads", "text": "GA4: Admin → Audiences → kreiraj audience → automatski se prenosi u Google Ads ako je link aktivan. Minimum 1,000 korisnika za remarketing." },
-      { "@type": "HowToStep", "name": "Verifikuj data flow", "text": "Čekaj 24-48h. Proveri Google Ads → Goals → Conversions → Summary → status 'Recording conversions'. Proveri kolonu 'Conv. (all)' na kampanji - treba da vidiš brojeve." }
-    ]
-  };
-
   return (
     <>
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
@@ -596,10 +579,6 @@ export default function GA4GoogleAdsIntegracijaSR() {
         Autor: Slobodan Jelisavac, Google Ads Consultant
       </div>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-      />
     </>
   );
 }

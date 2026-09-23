@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -153,18 +154,7 @@ export default async function KonsultacijePage({ params }: Props) {
     name: "Google Ads Consulting",
     description:
       "Expert 1-on-1 Google Ads consulting. Strategy, audit, second opinion and problem solving. Flexible support without long-term commitment.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Consultant",
-      knowsAbout: [
-        "Google Ads",
-        "Google Ads Consulting",
-        "PPC Strategy",
-        "Performance Marketing"
-      ]
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "United Kingdom" },
       { "@type": "Country", name: "United States" },
@@ -189,18 +179,7 @@ export default async function KonsultacijePage({ params }: Props) {
     name: "Google Ads konsultacije",
     description:
       "Ekspertske 1-na-1 Google Ads konsultacije. Strategija, audit, second opinion i problem solving. Fleksibilna podrška bez dugoročne obaveze.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Konsultant",
-      knowsAbout: [
-        "Google Ads",
-        "Google Ads Consulting",
-        "PPC Strategy",
-        "Performance Marketing"
-      ]
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "United Kingdom" },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { ChatgptAdsChart } from "./ChatgptAdsChart";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -64,16 +65,8 @@ const articleSchema = {
     'Google Searches For "ChatGPT Ads" Rose At Least 13-Fold In A Year. Searches For "ChatGPT" Rose About 2-Fold Or Less.',
   datePublished: "2026-09-17",
   dateModified: "2026-09-17",
-  author: {
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: `${BASE_URL}/en/about`
-  },
-  publisher: {
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: `${BASE_URL}/en/about`
-  },
+  author: PERSON_REF,
+  publisher: PERSON_REF,
   mainEntityOfPage: CANONICAL
 };
 
@@ -124,11 +117,7 @@ const datasetSchema = {
     'Monthly Google Keyword Planner search volume for "chatgpt ads", "chatgpt advertising", "openai ads", "advertise on chatgpt", "chatgpt" and "google ads" (control), in the US, UK and Germany, September 2022 through August 2026.',
   temporalCoverage: "2022-09/2026-08",
   spatialCoverage: ["US", "GB", "DE"],
-  creator: {
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: `${BASE_URL}/en/about`
-  },
+  creator: PERSON_REF,
   isAccessibleForFree: true,
   measurementTechnique: "Google Keyword Planner API, GenerateKeywordHistoricalMetrics",
   distribution: {

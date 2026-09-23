@@ -29,20 +29,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-const getPersonSchema = (locale: string) => ({
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Slobodan Jelisavac",
-  url: "https://www.slobodan-jelisavac.com",
-  jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-  knowsAbout: [
-    "Google Ads",
-    "eCommerce PPC",
-    "B2B Lead Generation",
-    "Performance Max"
-  ]
-});
-
 const getBreadcrumbSchema = (locale: string) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -65,14 +51,9 @@ const getBreadcrumbSchema = (locale: string) => ({
 export default async function CaseStudiesPage({ params }: Props) {
   const { locale } = await params;
   const breadcrumbSchema = getBreadcrumbSchema(locale);
-  const personSchema = getPersonSchema(locale);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

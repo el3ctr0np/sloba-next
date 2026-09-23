@@ -54,3 +54,15 @@ export const PERSON_SCHEMA = {
   ],
   sameAs: PERSON_SAME_AS,
 } as const;
+
+/**
+ * Reference to the single site-wide Person node (#person, emitted once via
+ * LocalBusinessSchema on every page). Use this everywhere a schema property
+ * expects a Person (Service.provider, Article.author/publisher, Dataset.creator,
+ * CollectionPage.author, WebApplication.author, ...) instead of a second,
+ * @id-less Person object — two Person nodes without a shared @id read as two
+ * different entities to Google and AI crawlers.
+ */
+export const PERSON_REF = {
+  "@id": "https://www.slobodan-jelisavac.com/#person",
+} as const;

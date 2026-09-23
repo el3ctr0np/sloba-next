@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -180,13 +181,6 @@ export default async function ChatGptAdsPage({ params }: Props) {
         },
       ];
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: "https://www.slobodan-jelisavac.com",
-    jobTitle: isEn ? "Google Ads Consultant" : "Google Ads Konsultant",
-  };
 
   const breadcrumbSchema = isEn
     ? {
@@ -226,11 +220,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
         serviceType: "ChatGPT Ads Agency",
         description:
           "Management of advertising inside ChatGPT, live across 47 countries: context-hint strategy, chat-card creative, OAIQ pixel tracking, and landing pages for considered-purchase brands.",
-        provider: {
-          "@type": "Person",
-          name: "Slobodan Jelisavac",
-          url: "https://www.slobodan-jelisavac.com",
-        },
+        provider: PERSON_REF,
         areaServed: ["United States", "United Kingdom", "European Union", "Croatia", "Canada", "Australia"],
         offers: {
           "@type": "Offer",
@@ -251,11 +241,7 @@ export default async function ChatGptAdsPage({ params }: Props) {
         serviceType: "ChatGPT Ads agencija",
         description:
           "Upravljanje oglašavanjem unutar ChatGPT-a, živo u 47 zemalja: strategija konteksta, kreativa za chat kartice, OAIQ merenje i landing stranice za brendove sa promišljenom kupovinom.",
-        provider: {
-          "@type": "Person",
-          name: "Slobodan Jelisavac",
-          url: "https://www.slobodan-jelisavac.com",
-        },
+        provider: PERSON_REF,
         offers: {
           "@type": "Offer",
           priceCurrency: "EUR",
@@ -281,7 +267,6 @@ export default async function ChatGptAdsPage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

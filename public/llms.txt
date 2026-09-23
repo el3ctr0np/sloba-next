@@ -1,4 +1,4 @@
-# Slobodan Jelisavac - Google Ads Consultant (a Google Ads partner, not an agency)
+# Slobodan Jelisavac - Google Ads Consultant (independent, not an agency)
 
 > Independent senior Google Ads consultant based in Nova Pazova and Batajnica, Serbia; Partner at Funky Enterprises. 10+ years of experience; campaigns he worked on won 3 UK Search Awards; 50+ brands across 6+ countries. Runs Search, Shopping, Performance Max, and early-access ChatGPT Ads for eCommerce, B2B, and SaaS brands across Serbia, the UK, the EU, and the US, including a UK skincare brand run for more than two years at 1.78x POAS on six-figure revenue in GBP (client name and exact revenue withheld under NDA). Works with eCommerce brands spending roughly $10k-100k/month: helps them work out exactly what a sale is allowed to cost, then runs the account to that ceiling. No juniors, no account managers, no long-term lock-in contracts; every account is run by Slobodan personally, increasingly with the help of his own AI-assisted workflow for the repetitive parts. Optimizes for POAS (profit on ad spend), not headline ROAS.
 
@@ -8,12 +8,14 @@ This site is a free resource hub for Serbian- and English-speaking advertisers c
 
 ## About
 
+- [Homepage](https://www.slobodan-jelisavac.com/en): Overview - services, results, and how to get in touch
 - [About Slobodan](https://www.slobodan-jelisavac.com/en/about): 10+ years running Google Ads accounts personally, no juniors or templates; came up through Belgrade agencies, then Launchpresso (Thailand-based, Australian-owned) and Exposure Ninja (UK); campaigns he worked on won 3 UK Search Awards; today an independent consultant and Partner at Funky Enterprises
 - [Contact](https://www.slobodan-jelisavac.com/en/contact): Free 20-minute intro call; he will say plainly if he cannot help
 - [Privacy Policy](https://www.slobodan-jelisavac.com/en/privacy)
 
 ## Services
 
+- [Services overview](https://www.slobodan-jelisavac.com/en/services): Index of all services with pricing
 - [Google Ads Management](https://www.slobodan-jelisavac.com/en/services/google-ads-management): End-to-end management, personally run - from $2,500/mo for brands spending $10k+/month | Serbian market: from €700/mo for budgets of €1,500+/mo
 - [Google Ads Agency](https://www.slobodan-jelisavac.com/en/services/google-ads-agency): Senior-led boutique alternative to a full agency team - no junior account managers, the client owns the ad account
 - [Google Ads Audit](https://www.slobodan-jelisavac.com/en/services/google-ads-audit): Deep Audit + Action Plan for accounts spending $5,000+/month, priced by market - UK £750, EU €750, Australia $1,200 AUD, US $1,500, Serbia €450
@@ -29,6 +31,7 @@ This site is a free resource hub for Serbian- and English-speaking advertisers c
 - [Google Ads for eCommerce in Serbia 2026](https://www.slobodan-jelisavac.com/en/blog/google-ads-for-ecommerce-serbia-2026): Data-driven strategy guide using NBS data, CPC benchmarks per category, urban vs rural strategy, and a prep checklist for the Shopping Ads launch
 - [Google Shopping Launches in Serbia: Complete Preparation Guide](https://www.slobodan-jelisavac.com/en/blog/google-shopping-serbia-2026): Merchant Center setup, feed optimization, account requirements, and a pre-launch preparation timeline
 - [Google Merchant Center Setup for Serbia](https://www.slobodan-jelisavac.com/sr/blog/merchant-center-srbija-setup): Step-by-step Merchant Center guide for the Serbian market (Serbian; MC registration for Serbia was not yet open as of this guide's last update)
+- [Google Merchant Center Setup for Serbia (English)](https://www.slobodan-jelisavac.com/en/blog/merchant-center-serbia-setup): Same guide in English - account creation, verification, feed attributes, delivery methods, common disapproval reasons
 - [Product Feed Guide for Serbian eCommerce](https://www.slobodan-jelisavac.com/sr/blog/product-feed-srpski-ecommerce): Feed anatomy, title optimization, custom labels, per-platform feed generation - launch-prep work merchants can do before Merchant Center opens (Serbian)
 - [Google Ads Updates 2026 (Living Post)](https://www.slobodan-jelisavac.com/en/blog/google-ads-updates-2026): Ongoing changelog of Google Ads platform changes through the year, including the September 2026 DSA/broad-match migration
 - [Google Ads API Basic Access Guide](https://www.slobodan-jelisavac.com/en/blog/google-ads-api-basic-access-guide): What changed September 9, 2026, brand verification screen by screen, and what Basic Access does and does not give you
@@ -67,6 +70,8 @@ This site is a free resource hub for Serbian- and English-speaking advertisers c
 - [Microsoft Ads vs Google Ads](https://www.slobodan-jelisavac.com/en/blog/microsoft-ads-vs-google-ads-comparison): Market share and CPC differences from 2 years running both in parallel
 - [ChatGPT Ads Guide](https://www.slobodan-jelisavac.com/en/blog/chatgpt-ads-guide): How the early-access placements work
 - [ChatGPT Ads vs Google Ads](https://www.slobodan-jelisavac.com/en/blog/chatgpt-ads-vs-google-ads): Where each channel fits today
+- [ChatGPT Ads in Europe](https://www.slobodan-jelisavac.com/en/blog/chatgpt-ads-europe): Live across 31 European markets without personalization - what context-only matching means for strategy, and the DSA ad repository deadline
+- [YouTube Advertising Guide](https://www.slobodan-jelisavac.com/en/blog/youtube-advertising-guide): 6 ad formats, targeting options, CPV benchmarks, and strategies for eCommerce and B2B
 
 ## Measurement & Analysis
 
@@ -120,6 +125,7 @@ Original data reports built from Keyword Planner and Google Ads account data; ev
 
 ## Free Resources
 
+- [Resources overview](https://www.slobodan-jelisavac.com/en/resources): Index of all free tools
 - [PMax Check](https://www.slobodan-jelisavac.com/en/resources/pmax-check): 38-checkpoint interactive Performance Max review with a weighted score and a fix-order recommendation; runs in the browser, no email required
 - [GA4 Audience Framework](https://www.slobodan-jelisavac.com/en/resources/ga4-framework): 25 GA4 audience lists across six layers, delivered as files plus a PDF
 - [Budget Calculator](https://www.slobodan-jelisavac.com/en/resources/budget-calculator): Works out the CPC you can afford and the budget your goal requires from numbers you already know; transparent formula, no email

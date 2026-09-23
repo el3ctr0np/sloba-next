@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -22,14 +23,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     srPath: "/usluge/google-ads-audit",
   });
 }
-
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Slobodan Jelisavac",
-  url: "https://www.slobodan-jelisavac.com",
-  jobTitle: "Google Ads Consultant"
-};
 
 export default async function GoogleAdsAuditPage({ params }: Props) {
   const { locale } = await params;
@@ -202,18 +195,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     name: "Deep Audit + Action Plan",
     description:
       "Professional Google Ads account audit with prioritized recommendations for performance improvement. Analysis of structure, bidding strategies, conversion tracking, and identification of opportunities to increase ROAS.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Consultant",
-      knowsAbout: [
-        "Google Ads",
-        "Google Ads Audit",
-        "Performance Marketing",
-        "eCommerce Advertising"
-      ]
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "United States" },
       { "@type": "Country", name: "United Kingdom" },
@@ -277,18 +259,7 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
     name: "Deep Audit + Action Plan",
     description:
       "Profesionalni audit Google Ads naloga sa prioritetnim preporukama za poboljšanje performansi. Analiza strukture, bidding strategija, conversion tracking-a i identifikacija prilika za povećanje ROAS-a.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Consultant",
-      knowsAbout: [
-        "Google Ads",
-        "Google Ads Audit",
-        "Performance Marketing",
-        "eCommerce Advertising"
-      ]
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "United Kingdom" },
@@ -349,10 +320,6 @@ export default async function GoogleAdsAuditPage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

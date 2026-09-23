@@ -5,6 +5,7 @@ import { Button, Card, Section } from "@/components/ui";
 import { Banknote, Clock, Frown } from "lucide-react";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -367,13 +368,6 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         }
       ];
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: "https://www.slobodan-jelisavac.com",
-    jobTitle: isEn ? "Google Ads Consultant" : "Google Ads Konsultant"
-  };
 
   const serviceSchema = isEn
     ? {
@@ -382,18 +376,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         name: "Google Ads Management Services",
         description:
           "Professional Google Ads management for eCommerce and B2B companies globally. Search, Shopping, Performance Max, Display, and YouTube campaigns, run by a senior consultant.",
-        provider: {
-          "@type": "Person",
-          name: "Slobodan Jelisavac",
-          url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Consultant",
-          knowsAbout: [
-            "Google Ads",
-            "Performance Marketing",
-            "eCommerce Advertising",
-            "B2B Lead Generation"
-          ]
-        },
+        provider: PERSON_REF,
         areaServed: [
           { "@type": "Country", name: "United States" },
           { "@type": "Country", name: "United Kingdom" },
@@ -423,18 +406,7 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
         alternateName: "Google Ads usluge",
         description:
           "Profesionalne Google Ads usluge - vođenje Google Ads kampanja za eCommerce i B2B kompanije u Srbiji, UK i EU. Search, Shopping, Performance Max, Display i YouTube kampanje, iz jedne senior ruke.",
-        provider: {
-          "@type": "Person",
-          name: "Slobodan Jelisavac",
-          url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Konsultant",
-          knowsAbout: [
-            "Google Ads",
-            "Performance Marketing",
-            "eCommerce Advertising",
-            "B2B Lead Generation"
-          ]
-        },
+        provider: PERSON_REF,
         areaServed: [
           { "@type": "Country", name: "Serbia" },
           { "@type": "Country", name: "United Kingdom" },
@@ -511,7 +483,6 @@ export default async function GoogleAdsUpravljanjePage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

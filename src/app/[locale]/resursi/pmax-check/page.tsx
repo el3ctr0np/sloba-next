@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 import { AuditWizard } from "@/components/audit/AuditWizard";
 import { pmaxCopyEN, pmaxCopySR } from "@/lib/audit-engine/copy";
 import { pmaxCheckEN, pmaxCheckSR } from "@/lib/audit-engine/data/pmax-check";
@@ -64,11 +65,7 @@ export default async function PmaxCheckPage({ params }: Props) {
       price: "0",
       priceCurrency: sr ? "EUR" : "USD",
     },
-    author: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: `${BASE_URL}/${sr ? "sr/o-meni" : "en/about"}`,
-    },
+    author: PERSON_REF,
   };
 
   return (

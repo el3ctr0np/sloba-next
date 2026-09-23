@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -131,11 +132,7 @@ export default async function ResourcesPage({ params }: Props) {
     name: sr ? "Besplatni Google Ads alati" : "Free Google Ads tools",
     url: `${BASE_URL}/${sr ? "sr/resursi" : "en/resources"}`,
     inLanguage: sr ? "sr-RS" : "en",
-    author: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: `${BASE_URL}/${sr ? "sr/o-meni" : "en/about"}`,
-    },
+    author: PERSON_REF,
   };
 
   return (

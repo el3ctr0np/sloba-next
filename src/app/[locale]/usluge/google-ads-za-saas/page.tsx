@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -269,14 +270,6 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         }
       ];
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: "https://www.slobodan-jelisavac.com",
-    jobTitle:
-      locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
-  };
 
   const serviceSchema = locale === "en"
     ? {
@@ -285,18 +278,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         name: "Google Ads for SaaS",
         description:
           "Monthly Google Ads management for SaaS — from $2,500/mo.",
-        provider: {
-          "@type": "Person",
-          name: "Slobodan Jelisavac",
-          url: "https://www.slobodan-jelisavac.com",
-          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-          knowsAbout: [
-            "Google Ads",
-            "SaaS Customer Acquisition",
-            "B2B Marketing",
-            "Performance Marketing"
-          ]
-        },
+        provider: PERSON_REF,
         areaServed: [
           { "@type": "Country", name: "United States" },
           { "@type": "Country", name: "United Kingdom" },
@@ -323,18 +305,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         name: "Google Ads za SaaS",
         description:
           "Mesečno Google Ads vođenje za SaaS - od €700/mes.",
-        provider: {
-          "@type": "Person",
-          name: "Slobodan Jelisavac",
-          url: "https://www.slobodan-jelisavac.com",
-          jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-          knowsAbout: [
-            "Google Ads",
-            "SaaS Customer Acquisition",
-            "B2B Marketing",
-            "Performance Marketing"
-          ]
-        },
+        provider: PERSON_REF,
         areaServed: [
           { "@type": "Country", name: "Serbia" },
           { "@type": "Country", name: "United Kingdom" },
@@ -419,10 +390,6 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

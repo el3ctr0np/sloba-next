@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -200,13 +201,6 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
 
   const ctaLabel = isEn ? "Book a free 20-minute call" : "Zakažite besplatnih 20 minuta";
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: "https://www.slobodan-jelisavac.com",
-    jobTitle: isEn ? "Google Ads Consultant" : "Google Ads Konsultant"
-  };
 
   const serviceSchema = isEn
     ? {
@@ -214,13 +208,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         "@type": "Service",
         name: "Google Ads for eCommerce",
         description: "Monthly Google Ads management for eCommerce - from $2,500/mo.",
-        provider: {
-          "@type": "Person",
-          name: "Slobodan Jelisavac",
-          url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Consultant",
-          knowsAbout: ["Google Ads", "eCommerce Advertising", "Google Shopping", "Performance Max", "Product Feed Optimization"]
-        },
+        provider: PERSON_REF,
         areaServed: [
           { "@type": "Country", name: "United States" },
           { "@type": "Country", name: "United Kingdom" },
@@ -246,13 +234,7 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
         "@type": "Service",
         name: "Google Ads za eCommerce",
         description: "Mesečno Google Ads vođenje za eCommerce - od €700/mes.",
-        provider: {
-          "@type": "Person",
-          name: "Slobodan Jelisavac",
-          url: "https://www.slobodan-jelisavac.com",
-          jobTitle: "Google Ads Konsultant",
-          knowsAbout: ["Google Ads", "eCommerce Advertising", "Google Shopping", "Performance Max"]
-        },
+        provider: PERSON_REF,
         areaServed: [
           { "@type": "Country", name: "Serbia" },
           { "@type": "Country", name: "United Kingdom" },
@@ -304,7 +286,6 @@ export default async function GoogleAdsZaEcommercePage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

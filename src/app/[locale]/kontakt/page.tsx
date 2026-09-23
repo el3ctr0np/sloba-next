@@ -118,15 +118,6 @@ export default async function ContactPage({ params }: Props) {
         }
       ];
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-    email: "info@slobodan-jelisavac.com"
-  };
-
   const breadcrumbSchema = locale === "en"
     ? {
         "@context": "https://schema.org",
@@ -180,10 +171,6 @@ export default async function ContactPage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

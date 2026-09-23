@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { Button, Card, Section } from "@/components/ui";
 import { RelatedGlossaryTerms } from "@/components/RelatedGlossaryTerms";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -305,13 +306,6 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     }
   ];
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
-  };
 
   const serviceSchema = locale === "en" ? {
     "@context": "https://schema.org",
@@ -319,13 +313,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     name: "Google Ads for B2B Companies",
     description:
       "Monthly Google Ads management for B2B — from $2,500/mo.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-      knowsAbout: ["Google Ads", "B2B Lead Generation", "CRM Integration", "Performance Marketing"]
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "United States" },
       { "@type": "Country", name: "United Kingdom" },
@@ -351,13 +339,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     name: "Google Ads za B2B kompanije",
     description:
       "Mesečno Google Ads vođenje za B2B - od €700/mes.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant",
-      knowsAbout: ["Google Ads", "B2B Lead Generation", "CRM Integration", "Performance Marketing"]
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "United Kingdom" },
@@ -440,10 +422,6 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

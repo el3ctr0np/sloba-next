@@ -710,14 +710,6 @@ export default async function BlogPage({ params }: Props) {
 
   const allPosts = chapters.flatMap((ch) => ch.posts);
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Slobodan Jelisavac",
-    url: "https://www.slobodan-jelisavac.com",
-    jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
-  };
-
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -756,10 +748,6 @@ export default async function BlogPage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

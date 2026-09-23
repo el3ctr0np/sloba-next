@@ -34,14 +34,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { ...base, robots: { index: false, follow: true } };
 }
 
-const getPersonSchema = (locale: string) => ({
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Slobodan Jelisavac",
-  url: "https://www.slobodan-jelisavac.com",
-  jobTitle: locale === "en" ? "Google Ads Consultant" : "Google Ads Konsultant"
-});
-
 const getBreadcrumbSchema = (locale: string) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -177,7 +169,6 @@ const getFaqs = (locale: string) => {
 
 export default async function ThankYouPage({ params }: Props) {
   const { locale } = await params;
-  const personSchema = getPersonSchema(locale);
   const breadcrumbSchema = getBreadcrumbSchema(locale);
   const callBenefits = getCallBenefits(locale);
   const callSteps = getCallSteps(locale);
@@ -187,10 +178,6 @@ export default async function ThankYouPage({ params }: Props) {
     <>
       {/* GTM lead_confirmed event (PRIMARY conversion) — fires once per session */}
       <LeadConfirmedTracker />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

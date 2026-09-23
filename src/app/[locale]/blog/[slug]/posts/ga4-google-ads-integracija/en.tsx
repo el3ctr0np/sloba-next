@@ -2,23 +2,6 @@ import { Link } from "@/i18n/navigation";
 import { GlossaryLink } from "@/components/GlossaryLink";
 
 export default function GA4GoogleAdsIntegrationEN() {
-  const howToJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "How to integrate GA4 with Google Ads (2026)",
-    "description": "Complete 7-step guide to link a GA4 property to a Google Ads account, import key events as conversions, and share audiences for remarketing.",
-    "totalTime": "PT30M",
-    "step": [
-      { "@type": "HowToStep", "name": "Link the GA4 property to your Google Ads account", "text": "In GA4: Admin → Product links → Google Ads links → Link. Choose your MCC/client account and tick both 'Enable Personalized Advertising' and 'Enable Auto-Tagging'." },
-      { "@type": "HowToStep", "name": "Enable Auto-Tagging in Google Ads", "text": "Google Ads: Admin → Account settings → Auto-tagging → Tag the URL that people click through. Required for correct GCLID flow." },
-      { "@type": "HowToStep", "name": "Set up Key Events in GA4", "text": "GA4: Admin → Events → Mark as key event. Flag purchase, generate_lead, form_submit or a custom event as key event." },
-      { "@type": "HowToStep", "name": "Import GA4 Key Events as Google Ads conversions", "text": "Google Ads: Tools → Data Manager → Import conversions → Google Analytics 4 properties → select property → select key events → Import." },
-      { "@type": "HowToStep", "name": "Set Primary vs Secondary conversions", "text": "Google Ads: Goals → Conversions → Summary → mark one conversion as Primary (used for bidding); rest as Secondary (observation only). Count: 'One' for leads, 'Every' for eCommerce." },
-      { "@type": "HowToStep", "name": "Share GA4 audiences with Google Ads", "text": "GA4: Admin → Audiences → create audience → syncs to Google Ads automatically if the link is active. Minimum 1,000 users required for remarketing." },
-      { "@type": "HowToStep", "name": "Verify the data flow", "text": "Wait 24–48h. Check Google Ads → Goals → Conversions → Summary → status 'Recording conversions'. Check the 'Conv. (all)' column at campaign level for numbers." }
-    ]
-  };
-
   return (
     <>
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
@@ -596,10 +579,6 @@ export default function GA4GoogleAdsIntegrationEN() {
         Author: Slobodan Jelisavac, Google Ads Consultant
       </div>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
-      />
     </>
   );
 }

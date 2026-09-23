@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { Button, Section } from "@/components/ui";
 import { buildMetadata } from "@/lib/metadata";
+import { PERSON_REF } from "@/lib/brand";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -145,12 +146,7 @@ export default async function MedicinaPage({ params }: Props) {
     description: isEn
       ? "Google Ads management for private clinics and diagnostic centres: health policy compliance, audience strategy within healthcare restrictions, and booking measurement."
       : "Vođenje Google Ads naloga za klinike i dijagnostičke centre: usklađenost sa zdravstvenim politikama, strategija publika u okviru ograničenja i merenje zakazivanja.",
-    provider: {
-      "@type": "Person",
-      name: "Slobodan Jelisavac",
-      url: "https://www.slobodan-jelisavac.com",
-      jobTitle: "Google Ads Consultant",
-    },
+    provider: PERSON_REF,
     areaServed: [
       { "@type": "Country", name: "Serbia" },
       { "@type": "Country", name: "United Kingdom" },
