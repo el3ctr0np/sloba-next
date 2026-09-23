@@ -38,7 +38,7 @@
   "Footer": {
     "brandDescription": "Google Ads konsultant - 10+ godina, 50+ brendova, 3x UK Search Awards.",
     "legalName": "Pravno ime: Digital Jelisavac",
-    "location": "Beograd, Srbija",
+    "location": "Nova Pazova i Batajnica, Srbija",
     "sectionServices": "Usluge",
     "sectionIndustries": "Po Industriji",
     "sectionResources": "Resursi",
@@ -151,7 +151,9 @@
   },
   "ClientLogos": {
     "subtitle": "Poverenje brendova iz 6+ zemalja",
-    "heading": "Trusted by 50+ brands"
+    "heading": "Trusted by 50+ brands",
+    "ndaLabel": "Klijent pod NDA",
+    "ndaVertical": "eCommerce"
   },
   "Common": {
     "readMore": "Saznajte više",

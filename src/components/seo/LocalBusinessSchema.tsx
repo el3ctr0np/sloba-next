@@ -63,7 +63,7 @@ export function LocalBusinessSchema({ locale }: { locale: string }) {
         address: {
           "@type": "PostalAddress",
           streetAddress: "Majora Gavrilovića 1",
-          addressLocality: "Nova Pazova",
+          addressLocality: isEn ? "Nova Pazova and Batajnica" : "Nova Pazova i Batajnica",
           postalCode: "22330",
           addressRegion: "Vojvodina",
           addressCountry: "RS",

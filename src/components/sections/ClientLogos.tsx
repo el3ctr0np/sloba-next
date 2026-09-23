@@ -11,7 +11,7 @@ const logos = [
   { src: "/client-logos/partypieces.co.uk-logo11.webp", alt: "Party Pieces" },
   { src: "/client-logos/perun-moto-oprema-logo.svg.webp", alt: "Perun Moto Oprema" },
   { src: "/client-logos/pickbox-hrvatska-logo-fixed.png", alt: "Pickbox" },
-  { src: "/client-logos/little-seeds.co.uk-logo9.webp", alt: "Little Seeds" },
+  { src: null, alt: "nda", nda: true },
   { src: "/client-logos/bestatprinting.co.uk-logo9.webp", alt: "Best at Printing" },
 ];
 
@@ -42,14 +42,25 @@ export function ClientLogos() {
               key={`${logo.alt}-${i}`}
               className="flex-shrink-0 mx-8 md:mx-12 flex items-center justify-center h-16"
             >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={160}
-                height={60}
-                loading="lazy"
-                className="h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
-              />
+              {logo.nda ? (
+                <div className="h-10 px-4 flex flex-col items-center justify-center gap-0.5 border border-white/30 rounded-md opacity-60 hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-white text-xs font-semibold leading-none whitespace-nowrap">
+                    {t("ndaLabel")}
+                  </span>
+                  <span className="text-white/70 text-[10px] uppercase tracking-wide leading-none whitespace-nowrap">
+                    {t("ndaVertical")}
+                  </span>
+                </div>
+              ) : (
+                <Image
+                  src={logo.src!}
+                  alt={logo.alt}
+                  width={160}
+                  height={60}
+                  loading="lazy"
+                  className="h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
+                />
+              )}
             </div>
           ))}
         </div>
