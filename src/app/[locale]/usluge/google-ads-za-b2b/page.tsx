@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : "Google Ads za B2B kompanije | Lead Generation - Slobodan Jelisavac",
     description: isEn
       ? "I run B2B Google Ads focused on qualified lead generation, CPA optimization, and CRM integration (HubSpot, Salesforce). 10+ years experience, 50+ brands across 6+ countries."
-      : "Vodim Google Ads strategije za B2B kompanije u Srbiji, fokus na lead generation. 180% više kvalifikovanih leadova, CRM integracija (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju.",
+      : "Vodim Google Ads strategije za B2B kompanije u Srbiji, fokus na lead generation. Bolji kvalitet leadova kroz CRM integraciju (HubSpot, Salesforce), niži CPA. Zakažite konsultaciju.",
     locale,
     path: "/services/google-ads-for-b2b",
     srPath: "/usluge/google-ads-za-b2b",
@@ -229,7 +229,6 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     {
       title: "Tech Company (UK)",
       items: [
-        "180% increase in qualified leads",
         "42% reduction in CPA",
         "Offline conversion tracking implementation"
       ]
@@ -242,7 +241,6 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
     {
       title: "Tech Company (UK)",
       items: [
-        "180% povećanje qualified leads",
         "42% smanjenje CPA",
         "Offline conversion tracking implementacija"
       ]
@@ -485,11 +483,7 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             </p>
 
             {/* Trust Badges */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-                <div className="text-accent font-bold text-2xl mb-1">180%</div>
-                <div className="text-sm text-slate-400">{locale === "en" ? "more qualified leads" : "više kvalifikovanih leadova"}</div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
                 <div className="text-accent font-bold text-2xl mb-1">{locale === "en" ? "3x" : "3x"}</div>
                 <div className="text-sm text-slate-400">{locale === "en" ? "UK Search Awards shortlisted" : "UK Search Awards"}</div>
@@ -520,8 +514,8 @@ export default async function GoogleAdsZaB2BPage({ params }: Props) {
             </p>
             <p className="text-base text-gray-800 mb-0 leading-relaxed">
               {locale === "en"
-                ? "Google Ads for B2B works best for companies with a defined sales process, a CRM system (HubSpot, Salesforce, Pipedrive), and a budget of $10,000+/month. The focus is lead quality, not lead count — tracking from click to closed deal typically cuts CPA by 40%+ in 2-3 months. Monthly management starts from $2,500/mo."
-                : "Google Ads za B2B najbolje radi za firme sa definisanim sales procesom, CRM sistemom (HubSpot, Salesforce, Pipedrive) i budžetom od €1.500+/mes. Fokus je na kvalitetu leadova, ne na broju - praćenje od klika do zatvorenog posla tipično smanjuje CPA za 40%+ u 2-3 meseca. Mesečno vođenje od €700/mes."}
+                ? "Google Ads for B2B works best for companies with a defined sales process, a CRM system (HubSpot, Salesforce, Pipedrive), and a budget of $10,000+/month. The focus is lead quality, not lead count - tracking from click to closed deal shows which channels and search terms actually produce business. Monthly management starts from $2,500/mo."
+                : "Google Ads za B2B najbolje radi za firme sa definisanim sales procesom, CRM sistemom (HubSpot, Salesforce, Pipedrive) i budžetom od €1.500+/mes. Fokus je na kvalitetu leadova, ne na broju - praćenje od klika do zatvorenog posla otkriva koji kanali i termini stvarno donose posao. Mesečno vođenje od €700/mes."}
             </p>
           </div>
         </div>

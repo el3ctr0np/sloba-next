@@ -685,7 +685,7 @@ export default function GoogleAdsVsMetaAdsPost() {
             Remarketing - Kompletni vodič
           </p>
           <p className="text-xs text-gray-500 mb-0">
-            Kako vratiti 96% posetilaca koji odu bez kupovine
+            Kako vratiti posetioce koji odu bez kupovine
           </p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-oglasavanje-za-firme" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

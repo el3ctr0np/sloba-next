@@ -422,7 +422,7 @@ export default function GoogleShoppingGuideEN() {
 
       <h2>Six tactics to increase ROAS</h2>
       <p>
-        These are tactics that consistently deliver results in Shopping campaigns. In my experience, most eCommerce businesses can increase ROAS by 20-50% implementing these optimizations.
+        These are tactics that consistently deliver results in Shopping campaigns. How much ROAS improves depends on catalog, season and competition.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">

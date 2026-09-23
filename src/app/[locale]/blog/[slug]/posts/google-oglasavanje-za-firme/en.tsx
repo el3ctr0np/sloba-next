@@ -8,21 +8,17 @@ export default function GoogleAdvertisingForBusinessesEN() {
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google Ads is the most powerful channel for businesses looking to reach customers with active purchase intent. Unlike social media where you &quot;interrupt&quot; people while they scroll, Google Ads connects you with users actively searching for your product or service.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">6</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">campaign types</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">8.5x</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">average ROAS</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">$0.50–$10</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">$0.50-$10</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">CPC range (US/UK)</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">2–3</p>
+            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">2-3</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">months to results</p>
           </div>
         </div>
@@ -37,7 +33,7 @@ export default function GoogleAdvertisingForBusinessesEN() {
           What is Google advertising and why is it effective for businesses?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google advertising (Google Ads)</strong> shows your ads to people actively searching for your product or service, unlike social media where you interrupt scrolling. There are <strong>6 campaign types</strong> (Search, Shopping, Performance Max, Display, Video, Demand Gen), and well-run accounts see an average ROAS of around <strong>8.5x</strong>. CPC typically ranges from <strong>$0.50 to $10</strong>, with the first measurable results in 2-3 months.
+          <strong>Google advertising (Google Ads)</strong> shows your ads to people actively searching for your product or service, unlike social media where you interrupt scrolling. There are <strong>6 campaign types</strong> (Search, Shopping, Performance Max, Display, Video, Demand Gen). ROAS varies heavily by industry, margin and competition. CPC typically ranges from <strong>$0.50 to $10</strong>, with the first measurable results in 2-3 months.
         </p>
       </div>
 

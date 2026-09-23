@@ -634,7 +634,7 @@ export default function PerformanceMaxGuideEN() {
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3">Volume increase</td>
-              <td className="py-3 px-3">20–40% revenue increase vs Search/Shopping only</td>
+              <td className="py-3 px-3">Revenue increases vs Search/Shopping only, the exact amount depends on catalog and budget</td>
               <td className="py-3 px-3">Volume significantly grows, but lead quality varies</td>
             </tr>
             <tr className="border-b border-gray-200">

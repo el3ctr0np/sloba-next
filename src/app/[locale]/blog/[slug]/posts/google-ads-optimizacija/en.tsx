@@ -393,8 +393,8 @@ export default function GoogleAdsOptimizationEN() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Extensions: use ALL the relevant ones</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Ad extensions (sitelinks, callouts, structured snippets, call, location...) increase CTR
-          by 10-25% because your ad takes up more space on the SERP. And they&apos;re completely free.
+          Ad assets (sitelinks, callouts, structured snippets, call, location...) make your ad more visible
+          because it takes up more space on the SERP. And they&apos;re completely free.
         </p>
         <ul className="text-sm">
           <li><strong>Sitelinks:</strong> Minimum 4, best practice 8 — link to your top categories/pages</li>

@@ -182,8 +182,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         {
           title: "HR Tech Startup",
           items: [
-            "From $220 CAC to $105 CAC",
-            "180% increase in qualified demo requests"
+            "From $220 CAC to $105 CAC"
           ]
         }
       ]
@@ -199,8 +198,7 @@ export default async function GoogleAdsZaSaasPage({ params }: Props) {
         {
           title: "HR Tech Startup",
           items: [
-            "Sa EUR 200 CAC na EUR 95 CAC",
-            "180% povećanje qualified demo zahteva"
+            "Sa EUR 200 CAC na EUR 95 CAC"
           ]
         }
       ];

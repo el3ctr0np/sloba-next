@@ -6,9 +6,9 @@ export default function AgencijaVsFreelancerPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Odlučili ste da koristite Google Ads. Odlično. Sada dolazi pitanje: ko će upravljati kampanjama? Postoje tri modela, raspon cena je €300-2.500+, a 67% marketing menadžera menja partnera u prvoj godini. Ključ nije u ceni - ključ je u fitu.
+          Odlučili ste da koristite Google Ads. Odlično. Sada dolazi pitanje: ko će upravljati kampanjama? Postoje tri modela, raspon cena je €300-2.500+. Ključ nije u ceni - ključ je u fitu.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">3</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">Modela upravljanja</p>
@@ -16,10 +16,6 @@ export default function AgencijaVsFreelancerPost() {
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">€300-2.500+</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">Raspon mesečnih troškova</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">67%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Menja partnera u prvoj godini</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Fit &gt; Cena</p>
@@ -37,7 +33,7 @@ export default function AgencijaVsFreelancerPost() {
           Agencija ili freelancer za Google Ads - šta izabrati?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          Izbor između <strong>agencije, freelancera i in-house tima</strong> zavisi pre svega od mesečnog budžeta. Freelancer je najbolji fit za budžete od €1,000-10,000 mesečno gde je bitna direktna komunikacija i fokus na jedan kanal. Agencija ima smisla od €5,000+ mesečno kad su potrebni multi-channel tim i skalabilnost. In-house tim se isplati tek od €15,000+ mesečno. Fit je važniji od cene - 67% firmi menja partnera u prvoj godini zbog lošeg fita.
+          Izbor između <strong>agencije, freelancera i in-house tima</strong> zavisi pre svega od mesečnog budžeta. Freelancer je najbolji fit za budžete od €1,000-10,000 mesečno gde je bitna direktna komunikacija i fokus na jedan kanal. Agencija ima smisla od €5,000+ mesečno kad su potrebni multi-channel tim i skalabilnost. In-house tim se isplati tek od €15,000+ mesečno. Fit je važniji od cene.
         </p>
       </div>
 

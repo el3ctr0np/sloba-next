@@ -7,26 +7,8 @@ export default function RemarketingGuideEN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Remarketing campaigns have 2-3x higher CTR and 50-70% lower CPA than cold traffic. The key to success is segmentation — do not treat all visitors the same.
+          Remarketing brings back visitors who left without buying and typically has a higher CTR and lower CPA than cold traffic. The key to success is segmentation - do not treat all visitors the same.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">96%</p>
-            <p className="text-xs text-slate-400 mt-1">visitors leave without converting</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">2-3x</p>
-            <p className="text-xs text-slate-400 mt-1">higher CTR remarketing</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">50-70%</p>
-            <p className="text-xs text-slate-400 mt-1">lower CPA</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">300-500%</p>
-            <p className="text-xs text-slate-400 mt-1">average ROI</p>
-          </div>
-        </div>
       </div>
 
       {/* ── Section 1: Hook intro ── */}
@@ -34,7 +16,7 @@ export default function RemarketingGuideEN() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Table of Contents</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#why-96-of-visitors-leave-without-buying" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why 96% of Visitors Leave Without Buying</a></li>
+          <li><a href="#why-96-of-visitors-leave-without-buying" className="block py-1 text-base text-gray-700 hover:text-primary underline">Why Most Visitors Leave Without Buying</a></li>
           <li><a href="#what-is-remarketing-and-how-it-works" className="block py-1 text-base text-gray-700 hover:text-primary underline">What Is Remarketing and How It Works</a></li>
           <li><a href="#types-of-remarketing-campaigns-in-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Types of Remarketing Campaigns in Google Ads</a></li>
           <li><a href="#how-to-set-up-remarketing-step-by-step" className="block py-1 text-base text-gray-700 hover:text-primary underline">How to Set Up Remarketing Step by Step</a></li>
@@ -49,9 +31,9 @@ export default function RemarketingGuideEN() {
       </nav>
 
 
-      <h2 id="why-96-of-visitors-leave-without-buying">Why 96% of Visitors Leave Without Buying</h2>
+      <h2 id="why-96-of-visitors-leave-without-buying">Why Most Visitors Leave Without Buying</h2>
       <p>
-        Imagine this: you have a website, you invest in Google Ads, a visitor arrives, views a product or service — and leaves. No purchase, no contact, no trace. The statistics are harsh: <strong>96 out of 100 visitors leave your site without any conversion</strong>.
+        Imagine this: you have a website, you invest in Google Ads, a visitor arrives, views a product or service - and leaves. No purchase, no contact, no trace. The statistics are harsh: <strong>the large majority of visitors leave your site without any conversion</strong>.
       </p>
       <p>
         This does not mean your website is bad. People are simply busy — they opened five tabs, the phone rang, they decided to &quot;think about it&quot;. But what IS a problem: most advertisers let those visitors go and never contact them again.
@@ -63,7 +45,7 @@ export default function RemarketingGuideEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">From my experience</p>
         <p className="text-blue-800 text-base">
-          After managing $2M+ in annual ad spend across 50+ accounts in 6+ countries, remarketing is the most profitable campaign type you can run. CTR is 2-3 times higher than cold traffic, and CPA is 50-70% lower.
+          After managing $2M+ in annual ad spend across 50+ accounts in 6+ countries, remarketing is the most profitable campaign type you can run. CTR is typically higher than cold traffic, and CPA is lower.
         </p>
       </div>
 
@@ -95,7 +77,7 @@ export default function RemarketingGuideEN() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Visitor leaves without converting</strong> <span className="text-gray-500">— happens in 96% of cases</span></div>
+            <div><strong>Visitor leaves without converting</strong> <span className="text-gray-500">- happens in the large majority of cases</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
@@ -141,12 +123,12 @@ export default function RemarketingGuideEN() {
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">CTR</td>
-              <td className="py-3 px-3 text-green-700 font-semibold">2-3x higher</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Higher</td>
               <td className="py-3 px-3">Baseline</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">CPA</td>
-              <td className="py-3 px-3 text-green-700 font-semibold">50-70% lower</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Lower</td>
               <td className="py-3 px-3">Baseline</td>
             </tr>
             <tr className="border-b border-gray-200">
@@ -688,7 +670,7 @@ export default function RemarketingGuideEN() {
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 my-6">
         <p className="font-semibold text-blue-900 mb-1">Why remarketing deserves larger budget share?</p>
         <p className="text-blue-800 text-base mb-0">
-          Math is clear: if prospecting campaign brings CPA of $80/£60, remarketing campaign for same conversions usually brings CPA of $25-40/£20-30. That means <strong>2-3 times more conversions for same money</strong>. ROI of 300-500% is realistic for well-set remarketing campaigns.
+          Math is clear: if prospecting campaign brings CPA of $80/£60, remarketing campaign for same conversions usually brings CPA of $25-40/£20-30. That means <strong>2-3 times more conversions for same money</strong>.
         </p>
       </div>
 
@@ -770,9 +752,9 @@ export default function RemarketingGuideEN() {
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Key takeaways from this guide:</p>
         <ul className="space-y-2 text-base">
-          <li>Remarketing campaigns have <strong>2-3x higher CTR</strong> and <strong>50-70% lower CPA</strong> than cold traffic</li>
+          <li>Remarketing campaigns typically have <strong>higher CTR</strong> and <strong>lower CPA</strong> than cold traffic</li>
           <li>Segmentation by behavior, time, and funnel stage makes huge difference</li>
-          <li>Allocate <strong>10-30% of budget</strong> to remarketing — ROI of 300-500% is realistic</li>
+          <li>Allocate <strong>10-30% of budget</strong> to remarketing</li>
           <li>Avoid one list for all, set frequency cap, and refresh creatives</li>
           <li>Track conversions precisely — without it you do not know what works</li>
         </ul>

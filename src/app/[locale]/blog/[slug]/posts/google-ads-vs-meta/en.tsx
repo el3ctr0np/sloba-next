@@ -685,7 +685,7 @@ export default function GoogleAdsVsMetaAdsEN() {
             Remarketing — Complete guide
           </p>
           <p className="text-xs text-gray-500 mb-0">
-            How to bring back 96% of visitors who leave without buying
+            How to bring back visitors who leave without buying
           </p>
         </Link>
         <Link href={{ pathname: "/blog/[slug]", params: { slug: "google-advertising-for-businesses" } }} className="block bg-white border-2 border-gray-200 rounded-xl p-4 hover:border-gray-900 transition-colors no-underline">

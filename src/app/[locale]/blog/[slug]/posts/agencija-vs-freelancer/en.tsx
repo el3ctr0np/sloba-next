@@ -6,9 +6,9 @@ export default function AgencyVsFreelancerEN() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">TL;DR</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          You've decided to use Google Ads. Great. Now comes the question: who will manage your campaigns? Three models exist, pricing ranges from $300-3,000+/£250-2,400+, and 67% of marketing managers change partners within the first year. The key isn't price — the key is fit.
+          You've decided to use Google Ads. Great. Now comes the question: who will manage your campaigns? Three models exist, pricing ranges from $300-3,000+/£250-2,400+. The key isn't price - the key is fit.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">3</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">Management models</p>
@@ -16,10 +16,6 @@ export default function AgencyVsFreelancerEN() {
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">$300-3K+</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">Monthly cost range</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">67%</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">Change partner year 1</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">Fit &gt; Price</p>

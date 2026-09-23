@@ -8,14 +8,10 @@ export default function GoogleOglasavanjeZaFirmePost() {
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
           Google oglašavanje je najmoćniji kanal za firme koje žele da dosegnu kupce sa aktivnom namerom kupovine. Za razliku od društvenih mreža gde &quot;upadate&quot; ljude dok skroluju, Google Ads vas dovodi do korisnika koji aktivno traže vaš proizvod ili uslugu.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">6</p>
             <p className="text-xs text-slate-400 mt-1 mb-0">tipova kampanja</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">8.5x</p>
-            <p className="text-xs text-slate-400 mt-1 mb-0">prosečan ROAS</p>
           </div>
           <div className="text-center">
             <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400 mb-0">€0.15-2.00</p>
@@ -37,7 +33,7 @@ export default function GoogleOglasavanjeZaFirmePost() {
           Šta je Google oglašavanje i koliko košta?
         </p>
         <p className="text-base text-gray-700 mb-0 leading-relaxed">
-          <strong>Google oglašavanje (Google Ads)</strong> prikazuje vaše oglase korisnicima koji aktivno traže vaš proizvod ili uslugu, za razliku od društvenih mreža gde prekidate skrolovanje. U Srbiji je cena po kliku (CPC) od <strong>€0.15 do €2.00</strong>, a minimalni preporučeni mesečni budžet za kampanje je <strong>€500-1,000</strong>. Prosečan ROAS na dobro vođenim nalozima iznosi oko 8.5x, sa prvim merljivim rezultatima za 2-3 meseca.
+          <strong>Google oglašavanje (Google Ads)</strong> prikazuje vaše oglase korisnicima koji aktivno traže vaš proizvod ili uslugu, za razliku od društvenih mreža gde prekidate skrolovanje. U Srbiji je cena po kliku (CPC) od <strong>€0.15 do €2.00</strong>, a minimalni preporučeni mesečni budžet za kampanje je <strong>€500-1,000</strong>. ROAS zavisi od industrije, marže i konkurencije, sa prvim merljivim rezultatima za 2-3 meseca.
         </p>
       </div>
 

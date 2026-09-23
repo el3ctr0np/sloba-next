@@ -450,7 +450,7 @@ export default function GoogleAdsAuditGuideEN() {
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Extensions (sitelinks, callouts...)</h3>
         </div>
-        <p className="text-base text-gray-600 mb-3">Extensions increase CTR by 10-15% and claim more space on the SERP. Every campaign should have:</p>
+        <p className="text-base text-gray-600 mb-3">Assets (formerly extensions) take up more space on the SERP and are factored into Ad Rank. Every campaign should have:</p>
         <ul className="text-sm">
           <li><strong>Sitelinks (min 4)</strong> — Links to different pages (categories, about, contact), each relevant to that campaign</li>
           <li><strong>Callouts (min 4)</strong> — Short bullet-point benefits: &quot;Free shipping&quot;, &quot;24/7 support&quot;, &quot;30-day guarantee&quot;</li>

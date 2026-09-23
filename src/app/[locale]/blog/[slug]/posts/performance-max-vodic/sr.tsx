@@ -655,7 +655,7 @@ export default function PerformanceMaxVodicPost() {
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3">Porast volume-a</td>
-              <td className="py-3 px-3">20-40% porast revenue-a vs samo Search/Shopping</td>
+              <td className="py-3 px-3">Revenue raste vs samo Search/Shopping, tačan iznos zavisi od kataloga i budžeta</td>
               <td className="py-3 px-3">Volume značajno raste, ali lead quality variše</td>
             </tr>
             <tr className="border-b border-gray-200">

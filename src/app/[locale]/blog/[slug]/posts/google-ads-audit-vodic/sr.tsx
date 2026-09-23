@@ -424,7 +424,7 @@ gi&#x10D;na, skalabilna, i transparentna - bilo ko treba da razume organizaciju 
           <span className="flex-shrink-0 w-8 h-8 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">2</span>
           <h3 className="mt-0 mb-0 font-heading font-bold">Ekstenzije (sitelinks, callouts...)</h3>
         </div>
-        <p className="text-base text-gray-600 mb-3">Extensions pove&#x107;avaju CTR za 10-15% i zauzimaju vi&#x161;e prostora na SERP-u. Svaka kampanja mora imati:</p>
+        <p className="text-base text-gray-600 mb-3">Assets (ranije extensions) zauzimaju vi&#x161;e prostora na SERP-u i ulaze u ra&#x10D;unanje Ad Rank-a. Svaka kampanja mora imati:</p>
         <ul className="text-sm">
           <li><strong>Sitelinks (min 4)</strong> - Linkovi ka razli&#x10D;itim stranicama (categories, about, contact), svaki relevantan za tu kampanju</li>
           <li><strong>Callouts (min 4)</strong> - Kratke bullet point prednosti: {`"Besplatna dostava"`}, {`"24/7 podrška"`}, {`"30 dana garancije"`}</li>

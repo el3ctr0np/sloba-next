@@ -338,7 +338,7 @@ export default function WhatIsRoasEN() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Improve Quality Score</h3>
-          <p className="text-base text-gray-600 mb-0">Higher QS = lower CPC. Same revenue with less spend = higher ROAS. QS 7+ cuts CPC by 20–30%.</p>
+          <p className="text-base text-gray-600 mb-0">Higher QS = lower CPC. Same revenue with less spend = higher ROAS. How much CPC drops depends on auction competition (Google doesn't publish the formula).</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">

@@ -509,7 +509,7 @@ const faqSchemaKolikoKostaEN = {
       name: "What is the minimum investment for Google Ads?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The technical minimum is $1/day, but for meaningful results expect to spend at least $300-500/month for local businesses and $1,000+ for eCommerce or B2B."
+        text: "The technical minimum is $1/day, but for meaningful results expect to spend at least $1,000-1,500/month for local businesses and $3,000+ for eCommerce or B2B."
       }
     },
     {

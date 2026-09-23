@@ -449,7 +449,7 @@ export default function GoogleShoppingVodicPost() {
 
       <h2>Šest taktika za povećanje ROAS-a</h2>
       <p>
-        Ovo su taktike koje konzistentno donose rezultate u Shopping kampanjama. Moje iskustvo je da većina eCommerce poslova može povećati ROAS za 20-50% implementacijom ovih optimizacija.
+        Ovo su taktike koje konzistentno donose rezultate u Shopping kampanjama. Koliko ROAS raste zavisi od kataloga, sezone i konkurencije.
       </p>
 
       <div className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-6 shadow-card">

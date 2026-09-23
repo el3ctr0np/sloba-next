@@ -387,8 +387,8 @@ export default function GoogleAdsOptimizacijaPost() {
           <h3 className="mt-0 mb-0 font-heading font-bold">Ad Extensions: koristite SVE relevantne</h3>
         </div>
         <p className="text-base text-gray-600 mb-3">
-          Ad extensions (sitelinks, callouts, structured snippets, call, location...) povećavaju CTR
-          za 10-25% jer vaš oglas zauzima više prostora na SERP-u. I potpuno su besplatni.
+          Ad assets (sitelinks, callouts, structured snippets, call, location...) čine oglas vidljivijim
+          jer zauzima više prostora na SERP-u. I potpuno su besplatni.
         </p>
         <ul className="text-sm">
           <li><strong>Sitelinks:</strong> Minimum 4, best practice 8 - link-ujte na top kategorije/pages</li>

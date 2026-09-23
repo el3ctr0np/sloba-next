@@ -338,7 +338,7 @@ export default function StaJeRoasSR() {
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika #4</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Poboljšajte Quality Score</h3>
-          <p className="text-base text-gray-600 mb-0">Viši QS = niži CPC. Isti prihod uz nižu potrošnju = viši ROAS. QS 7+ smanjuje CPC za 20-30%.</p>
+          <p className="text-base text-gray-600 mb-0">Viši QS = niži CPC. Isti prihod uz nižu potrošnju = viši ROAS. Koliko tačno CPC pada zavisi od konkurencije u aukciji (Google ne objavljuje formulu).</p>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-card">

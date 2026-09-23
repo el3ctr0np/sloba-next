@@ -8,27 +8,8 @@ export default function RemarketingVodicPost() {
       <div className="bg-slate-900 text-white border border-gray-200 rounded-xl p-6 md:p-8 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-3">Ukratko</p>
         <p className="text-lg md:text-xl font-heading font-semibold leading-snug mb-4">
-          Remarketing kampanje imaju 2-3x viši CTR i 50-70% niži CPA od hladnog
-          saobraćaja. Ključ uspeha je segmentacija - ne tretirajte sve posetioce isto.
+          Remarketing vraća posetioce koji su otišli bez kupovine i obično ima viši CTR i niži CPA od hladnog saobraćaja. Ključ uspeha je segmentacija - ne tretirajte sve posetioce isto.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">96%</p>
-            <p className="text-xs text-slate-400 mt-1">posetilaca ode bez konverzije</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">2-3x</p>
-            <p className="text-xs text-slate-400 mt-1">viši CTR remarketing-a</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">50-70%</p>
-            <p className="text-xs text-slate-400 mt-1">niži CPA</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl font-heading font-bold text-yellow-400">300-500%</p>
-            <p className="text-xs text-slate-400 mt-1">prosečan ROI</p>
-          </div>
-        </div>
       </div>
 
       {/* ── Featured-snippet definition block ── */}
@@ -49,7 +30,7 @@ export default function RemarketingVodicPost() {
       <nav className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 my-8 shadow-card">
         <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-3 font-semibold">Sadržaj</p>
         <ol className="space-y-1.5 list-none pl-0 mb-0">
-          <li><a href="#zasto-96-posetilaca-odlazi-bez-kupovine" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto 96% posetilaca odlazi bez kupovine</a></li>
+          <li><a href="#zasto-96-posetilaca-odlazi-bez-kupovine" className="block py-1 text-base text-gray-700 hover:text-primary underline">Zašto većina posetilaca odlazi bez kupovine</a></li>
           <li><a href="#sta-je-remarketing-i-kako-funkcionise" className="block py-1 text-base text-gray-700 hover:text-primary underline">Šta je remarketing i kako funkcioniše</a></li>
           <li><a href="#tipovi-remarketing-kampanja-u-google-ads" className="block py-1 text-base text-gray-700 hover:text-primary underline">Tipovi remarketing kampanja u Google Ads</a></li>
           <li><a href="#kako-postaviti-remarketing-korak-po-korak" className="block py-1 text-base text-gray-700 hover:text-primary underline">Kako postaviti remarketing korak po korak</a></li>
@@ -64,11 +45,11 @@ export default function RemarketingVodicPost() {
       </nav>
 
 
-      <h2 id="zasto-96-posetilaca-odlazi-bez-kupovine">Zašto 96% posetilaca odlazi bez kupovine</h2>
+      <h2 id="zasto-96-posetilaca-odlazi-bez-kupovine">Zašto većina posetilaca odlazi bez kupovine</h2>
       <p>
         Zamislite scenu: imate sajt, ulažete u Google Ads remarketing kampanje,
         posetilac dođe, pogleda proizvod ili uslugu - i ode. Bez kupovine, bez
-        kontakta, bez traga. Statistika je neumoljiva: <strong>96 od 100
+        kontakta, bez traga. Statistika je neumoljiva: <strong>velika većina
         posetilaca napusti sajt bez ikakve konverzije</strong>.
       </p>
       <p>
@@ -89,7 +70,7 @@ export default function RemarketingVodicPost() {
         <p className="text-blue-800 text-base">
           Nakon skoro decenije upravljanja Google Ads nalozima u regionu i
           inostranstvu, remarketing je najisplativiji tip kampanja koji možete
-          pokrenuti. <GlossaryLink slug="ctr">CTR</GlossaryLink> je 2-3 puta viši od hladnog saobraćaja, a CPA je 50-70% niži.
+          pokrenuti. <GlossaryLink slug="ctr">CTR</GlossaryLink> je obično viši od hladnog saobraćaja, a CPA niži.
         </p>
       </div>
 
@@ -128,7 +109,7 @@ export default function RemarketingVodicPost() {
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-            <div><strong>Posetilac odlazi bez konverzije</strong> <span className="text-gray-500">- što se dešava u 96% slučajeva</span></div>
+            <div><strong>Posetilac odlazi bez konverzije</strong> <span className="text-gray-500">- što se dešava u velikoj većini slučajeva</span></div>
           </div>
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
@@ -177,12 +158,12 @@ export default function RemarketingVodicPost() {
             </tr>
             <tr className="border-b border-gray-200">
               <td className="py-3 px-3 font-medium">CTR</td>
-              <td className="py-3 px-3 text-green-700 font-semibold">2-3x viši</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Viši</td>
               <td className="py-3 px-3">Osnovni nivo</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50/50">
               <td className="py-3 px-3 font-medium">CPA</td>
-              <td className="py-3 px-3 text-green-700 font-semibold">50-70% niži</td>
+              <td className="py-3 px-3 text-green-700 font-semibold">Niži</td>
               <td className="py-3 px-3">Osnovni nivo</td>
             </tr>
             <tr className="border-b border-gray-200">
@@ -774,7 +755,6 @@ export default function RemarketingVodicPost() {
           Proračun je jasan: ako vam prospecting kampanja donese CPA od 2.000 RSD,
           remarketing kampanja za iste konverzije obično donese CPA od 600-1.000 RSD.
           To znači <strong>2-3 puta više konverzija za isti novac</strong>.
-          ROI od 300-500% je realan za dobro postavljene remarketing kampanje.
         </p>
       </div>
 
@@ -874,9 +854,9 @@ export default function RemarketingVodicPost() {
       <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 md:p-6 my-6">
         <p className="font-heading font-bold mb-3">Ključne stvari iz ovog vodiča:</p>
         <ul className="space-y-2 text-base">
-          <li>Remarketing kampanje imaju <strong>2-3x viši CTR</strong> i <strong>50-70% niži CPA</strong> od hladnog saobraćaja</li>
+          <li>Remarketing kampanje obično imaju <strong>viši CTR</strong> i <strong>niži CPA</strong> od hladnog saobraćaja</li>
           <li>Segmentacija po ponašanju, vremenu i fazi levka pravi ogromnu razliku</li>
-          <li>Izdvojite <strong>10-30% budžeta</strong> za remarketing - ROI od 300-500% je realan</li>
+          <li>Izdvojite <strong>10-30% budžeta</strong> za remarketing</li>
           <li>Izbegavajte jednu listu za sve, postavite frequency cap i osvežavajte kreative</li>
           <li>Pratite konverzije precizno - bez toga ne znate šta funkcioniše</li>
         </ul>
