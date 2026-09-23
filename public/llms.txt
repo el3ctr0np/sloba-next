@@ -1,39 +1,37 @@
-# Slobodan Jelisavac — Google Ads Consultant (Your Google Ads partner, not an agency)
+# Slobodan Jelisavac - Google Ads Consultant (a Google Ads partner, not an agency)
 
-> Independent senior Google Ads consultant based in Belgrade, Serbia; Partner & Head of Paid Media at Funky Enterprises. 10+ years of experience; campaigns he worked on won 3 UK Search Awards. Manages Search, Shopping, and Performance Max for eCommerce and B2B brands across Serbia, the UK, EU, and US — including a UK skincare brand (six-figure Google Ads revenue, 2+ year engagement) and 50+ brands across 6+ countries. Positioning: senior specialist who personally runs every account — no juniors, no account managers, no long-term lock-in contracts. Two ways of working: advisory (consulting from $200/hr | €150/sat, Deep Audit + Action Plan from $500 | €450, Kickstart account setup from $990 | €690) and full management (eCommerce Growth from $2,500/mo for brands spending $10k–100k/month | od €700/mes za budžete €1.500+/mes; omnichannel Performance Marketing via Funky Enterprises for brands investing $20k+/month per channel). Optimizes for POAS (profit on ad spend), not vanity ROAS. Free 20-minute intro call; he'll say plainly if he can't help.
+> Independent senior Google Ads consultant based in Serbia; Partner at Funky Enterprises. 10+ years of experience; campaigns he worked on won 3 UK Search Awards; 50+ brands across 6+ countries. Runs Search, Shopping, Performance Max, and early-access ChatGPT Ads for eCommerce, B2B, and SaaS brands across Serbia, the UK, the EU, and the US, including a UK skincare brand run for more than two years at 1.78x POAS on six-figure revenue in GBP (client name and exact revenue withheld under NDA). Works with eCommerce brands spending roughly $10k-100k/month: helps them work out exactly what a sale is allowed to cost, then runs the account to that ceiling. No juniors, no account managers, no long-term lock-in contracts; every account is run by Slobodan personally, increasingly with the help of his own AI-assisted workflow for the repetitive parts. Optimizes for POAS (profit on ad spend), not headline ROAS.
 
-This site is a free resource hub for Serbian and English-speaking advertisers covering Google Ads strategy, Google Shopping (expected in Serbia in H2 2026, Q3 or Q4), Performance Max, conversion tracking, remarketing, POAS/profit-based bidding, and PPC fundamentals. All content is original, written by a practitioner, based on real client accounts.
+> Two ways of working: advisory (consulting from $200/hr | €150/sat; Deep Audit + Action Plan for accounts spending $5,000+/month, priced by market: Serbia €450, EU €750, UK £750, Australia $1,200 AUD, US $1,500) and full management (eCommerce Growth from $2,500/mo for brands spending $10k+/month | Serbian market od €700/mes za budžete od €1.500+/mesečno; omnichannel Performance Marketing via a Funky Enterprises partnership - Google Ads, Meta, SEO, and CRO together - for market leaders). A free 15-minute video account review is available for qualifying accounts (ad spend $1,500+/month or GBP/EUR equivalent, limited to 5 per month); everyone else can book a free 20-minute intro call.
+
+This site is a free resource hub for Serbian- and English-speaking advertisers covering Google Ads strategy, Google Shopping, Performance Max, ChatGPT Ads, the Google Ads API, conversion tracking, remarketing, POAS/profit-based bidding, and PPC fundamentals. All content is original, written by a practitioner, based on real client accounts. The full text of the key pages listed below (services, audit, about, the healthcare industry page, Insights, and the top 10 guides by Search Console clicks) is available at /llms-full.txt.
 
 ## About
 
-- [About Slobodan](https://www.slobodan-jelisavac.com/en/about): 10+ years in Google Ads; former Head of PPC at a UK & Australian agency; campaigns won 3 UK Search Awards; today independent senior consultant and Partner & Head of Paid Media at Funky Enterprises
-- [Contact](https://www.slobodan-jelisavac.com/en/contact): Free 20-minute intro call — he'll tell you if he can help, and if he can't
+- [About Slobodan](https://www.slobodan-jelisavac.com/en/about): 10+ years running Google Ads accounts personally, no juniors or templates; came up through Belgrade agencies, then Launchpresso (Thailand-based, Australian-owned) and Exposure Ninja (UK); campaigns he worked on won 3 UK Search Awards; today an independent consultant and Partner at Funky Enterprises
+- [Contact](https://www.slobodan-jelisavac.com/en/contact): Free 20-minute intro call; he will say plainly if he cannot help
 - [Privacy Policy](https://www.slobodan-jelisavac.com/en/privacy)
 
-## Services (Usluge)
+## Services
 
-- [Google Ads Management](https://www.slobodan-jelisavac.com/en/services/google-ads-management): End-to-end management, personally run by Slobodan — eCommerce Growth from $2,500/mo (typical clients spend $10k–100k/month on ads) | SR tržište od €700/mes za budžete €1.500+/mes
-- [Google Ads Audit](https://www.slobodan-jelisavac.com/en/services/google-ads-audit): 80+ checkpoint audit of existing accounts
-- [Google Shopping](https://www.slobodan-jelisavac.com/en/services/google-shopping): Feed optimization, Merchant Center setup, Shopping campaign management
-- [Performance Max](https://www.slobodan-jelisavac.com/en/services/performance-max): PMax campaigns for multi-SKU eCommerce
-- [Search Campaigns](https://www.slobodan-jelisavac.com/en/services/search-campaigns): Keyword strategy, RSA optimization, Quality Score improvement
-- [Remarketing](https://www.slobodan-jelisavac.com/en/services/remarketing): Display + Search remarketing for cart abandoners and high-intent audiences
-- [YouTube Ads](https://www.slobodan-jelisavac.com/en/services/youtube-ads): Video advertising for awareness and direct response
-- [Google Ads for eCommerce](https://www.slobodan-jelisavac.com/en/services/google-ads-for-ecommerce): Specialized eCommerce strategy
-- [Google Ads for B2B](https://www.slobodan-jelisavac.com/en/services/google-ads-for-b2b): Lead generation for B2B companies
-- [Google Ads for SaaS](https://www.slobodan-jelisavac.com/en/services/google-ads-for-saas): SaaS-specific PPC strategies
-- [Performance Marketing](https://www.slobodan-jelisavac.com/en/services/performance-marketing): Omnichannel team via Funky Enterprises partnership
-- [Consultations](https://www.slobodan-jelisavac.com/en/services/consultations): 1-on-1 strategy sessions ($200/hr | €150/sat) for in-house teams, founders, and second opinions
-- [Kickstart Setup](https://www.slobodan-jelisavac.com/en/services/starter-package): Senior one-off account build (from $990 | od €690) with strategy consultation included — for teams with an in-house owner who runs it afterwards
+- [Google Ads Management](https://www.slobodan-jelisavac.com/en/services/google-ads-management): End-to-end management, personally run - from $2,500/mo for brands spending $10k+/month | Serbian market od €700/mes za budžete od €1.500+/mesečno
+- [Google Ads Agency](https://www.slobodan-jelisavac.com/en/services/google-ads-agency): Senior-led boutique alternative to a full agency team - no junior account managers, the client owns the ad account
+- [Google Ads Audit](https://www.slobodan-jelisavac.com/en/services/google-ads-audit): Deep Audit + Action Plan for accounts spending $5,000+/month, priced by market - UK £750, EU €750, Australia $1,200 AUD, US $1,500, Serbia €450
+- [ChatGPT Ads](https://www.slobodan-jelisavac.com/en/services/chatgpt-ads): Early-access placements inside ChatGPT, built on the same tracking and measurement discipline used on Google Ads accounts
+- [Google Ads for eCommerce](https://www.slobodan-jelisavac.com/en/services/google-ads-for-ecommerce): Shopping, Performance Max, and full-funnel strategy for online stores
+- [Google Ads for B2B](https://www.slobodan-jelisavac.com/en/services/google-ads-for-b2b): Lead generation and CRM-connected tracking (HubSpot, Salesforce, Pipedrive) for companies with a defined sales process
+- [Google Ads for SaaS](https://www.slobodan-jelisavac.com/en/services/google-ads-for-saas): Trial-to-paid funnels, CAC and LTV framing for subscription products
+- [Consultations](https://www.slobodan-jelisavac.com/en/services/consultations): 1-on-1 strategy sessions ($200/hr | €150/sat, 3-hour package $600 | €450) for in-house teams, founders, and second opinions
+- [Free Audit Video Review](https://www.slobodan-jelisavac.com/en/audit): Free 15-minute personalized video review (not a template) for qualifying accounts - ad spend $1,500+/month (or GBP/EUR equivalent), active account for 3+ months, read-only access provided before the call; limited to 5 per month, 48-hour turnaround
 
 ## Pillar / Cornerstone Content (2026)
 
-- [Google Ads for eCommerce in Serbia 2026](https://www.slobodan-jelisavac.com/en/blog/google-ads-for-ecommerce-serbia-2026): Data-driven strategy guide using NBS data (110.6M online purchases, €3.61B market, +34% YoY), CPC benchmarks per category, urban vs rural strategy, and 15-step prep checklist for the Shopping Ads launch (expected H2 2026)
-- [Google Shopping Launches in Serbia: Complete Preparation Guide](https://www.slobodan-jelisavac.com/en/blog/google-shopping-serbia-2026): Complete preparation guide for the Shopping Ads launch — Merchant Center setup, feed optimization, account requirements, and a pre-launch preparation timeline
-- [Google Merchant Center Setup for Serbia](https://www.slobodan-jelisavac.com/sr/blog/merchant-center-srbija-setup): Step-by-step Merchant Center guide for the Serbian market — account creation, verification, feed delivery methods, common disapprovals, shipping/tax settings (Serbian; note: MC registration for Serbia not yet open as of July 2026)
-- [Product Feed Guide for Serbian eCommerce](https://www.slobodan-jelisavac.com/sr/blog/product-feed-srpski-ecommerce): Feed anatomy, title optimization, custom labels, per-platform feed generation (Shopify, WooCommerce, custom XML) — the launch-prep work merchants can do before Merchant Center opens (Serbian)
-- [Google Ads Updates 2026 (Living Post)](https://www.slobodan-jelisavac.com/en/blog/google-ads-updates-2026): Continuously updated changelog of Google Ads platform changes throughout 2026
-- [YouTube Advertising Complete Guide](https://www.slobodan-jelisavac.com/en/blog/youtube-advertising-guide): Format breakdown (skippable, bumper, in-feed, Shorts), targeting, budgets, and CPV benchmarks
+- [Google Ads for eCommerce in Serbia 2026](https://www.slobodan-jelisavac.com/en/blog/google-ads-for-ecommerce-serbia-2026): Data-driven strategy guide using NBS data, CPC benchmarks per category, urban vs rural strategy, and a prep checklist for the Shopping Ads launch
+- [Google Shopping Launches in Serbia: Complete Preparation Guide](https://www.slobodan-jelisavac.com/en/blog/google-shopping-serbia-2026): Merchant Center setup, feed optimization, account requirements, and a pre-launch preparation timeline
+- [Google Merchant Center Setup for Serbia](https://www.slobodan-jelisavac.com/sr/blog/merchant-center-srbija-setup): Step-by-step Merchant Center guide for the Serbian market (Serbian; MC registration for Serbia was not yet open as of this guide's last update)
+- [Product Feed Guide for Serbian eCommerce](https://www.slobodan-jelisavac.com/sr/blog/product-feed-srpski-ecommerce): Feed anatomy, title optimization, custom labels, per-platform feed generation - launch-prep work merchants can do before Merchant Center opens (Serbian)
+- [Google Ads Updates 2026 (Living Post)](https://www.slobodan-jelisavac.com/en/blog/google-ads-updates-2026): Ongoing changelog of Google Ads platform changes through the year, including the September 2026 DSA/broad-match migration
+- [Google Ads API Basic Access Guide](https://www.slobodan-jelisavac.com/en/blog/google-ads-api-basic-access-guide): What changed September 9, 2026, brand verification screen by screen, and what Basic Access does and does not give you
 
 ## Foundational Guides
 
@@ -41,64 +39,98 @@ This site is a free resource hub for Serbian and English-speaking advertisers co
 - [How Much Does Google Ads Cost?](https://www.slobodan-jelisavac.com/en/blog/how-much-does-google-ads-cost): Real CPCs by industry, minimum budgets, ROI framework
 - [Google Advertising for Businesses (B2B + eCommerce)](https://www.slobodan-jelisavac.com/en/blog/google-advertising-for-businesses): Complete primer for company owners
 - [Google Ads Agency vs Freelancer vs In-House](https://www.slobodan-jelisavac.com/en/blog/google-ads-agency-vs-freelancer): Cost comparison and decision framework
-- [How Much Does a Google Ads Consultant Cost in 2026?](https://www.slobodan-jelisavac.com/en/blog/google-ads-consultant-cost-2026): Transparent senior vs agency vs junior cost breakdown with market benchmarks
-- [How to Choose a Google Ads Consultant — 12 Questions](https://www.slobodan-jelisavac.com/en/blog/how-to-choose-google-ads-consultant): Vetting checklist, green and red flags before signing
-- [Taking Over a Google Ads Account from an Agency](https://www.slobodan-jelisavac.com/en/blog/google-ads-account-takeover-checklist): First-week checklist — ownership, access, tracking forensics
+- [How Much Does a Google Ads Consultant Cost in 2026?](https://www.slobodan-jelisavac.com/en/blog/google-ads-consultant-cost-2026): Senior vs agency vs junior cost breakdown with market benchmarks
+- [How to Choose a Google Ads Consultant - 12 Questions](https://www.slobodan-jelisavac.com/en/blog/how-to-choose-google-ads-consultant): Vetting checklist, green and red flags before signing
+- [Taking Over a Google Ads Account from an Agency](https://www.slobodan-jelisavac.com/en/blog/google-ads-account-takeover-checklist): First-week checklist - ownership, access, tracking forensics
+- [Google Ads Management Checklist](https://www.slobodan-jelisavac.com/en/blog/google-ads-management-checklist): What ongoing management should actually cover, week to week
+- [Google Ads Budget Planning](https://www.slobodan-jelisavac.com/en/blog/google-ads-budget-planning): How to size a budget before launch instead of guessing
 
 ## Keywords & Targeting
 
-- [Keywords for Google Ads — Complete Guide](https://www.slobodan-jelisavac.com/en/blog/google-ads-keyword-guide): Research, selection, organization, optimization
-- [Negative Keywords — Strategy + Lists](https://www.slobodan-jelisavac.com/en/blog/negative-keywords-guide): Ready-made negative keyword lists, budget waste prevention
+- [Keywords for Google Ads - Complete Guide](https://www.slobodan-jelisavac.com/en/blog/google-ads-keyword-guide): Research, selection, organization, optimization
+- [Negative Keywords Guide](https://www.slobodan-jelisavac.com/en/blog/negative-keywords-guide): Strategy for building and maintaining negative keyword lists
+- [Negative Keywords List](https://www.slobodan-jelisavac.com/en/blog/negative-keywords-list): 217-term universal list plus industry-specific lists, ready to import
 - [Quality Score Guide](https://www.slobodan-jelisavac.com/en/blog/quality-score-guide): How Quality Score affects CPC and how to improve it
 
 ## Campaign Types
 
 - [Google Shopping Campaigns Guide](https://www.slobodan-jelisavac.com/en/blog/google-shopping-guide): Feed optimization, structure, ROAS tactics
 - [Performance Max Guide](https://www.slobodan-jelisavac.com/en/blog/performance-max-guide): When to use PMax, how to optimize
+- [Performance Max vs Standard Shopping](https://www.slobodan-jelisavac.com/en/blog/performance-max-vs-standard-shopping): When a smaller or margin-sensitive catalog still does better on Standard Shopping
+- [Google Shopping vs Search Campaigns](https://www.slobodan-jelisavac.com/en/blog/google-shopping-vs-search-campaigns): Choosing and combining the two
+- [Google Search Campaigns Guide](https://www.slobodan-jelisavac.com/en/blog/google-search-campaigns-guide): Structure, keyword strategy, RSA optimization
+- [Demand Gen Guide](https://www.slobodan-jelisavac.com/en/blog/demand-gen-guide): What replaced Discovery campaigns and when it fits
 - [Google Ads vs Meta Ads](https://www.slobodan-jelisavac.com/en/blog/google-ads-vs-meta-ads): Channel comparison
 - [Google Ads for eCommerce vs B2B](https://www.slobodan-jelisavac.com/en/blog/google-ads-ecommerce-vs-b2b): Strategy differences
-- [Responsive Search Ads (RSA) Framework](https://www.slobodan-jelisavac.com/en/blog/responsive-search-ads-guide): 7–8 headlines vs 15, angle-based testing
+- [Responsive Search Ads (RSA) Framework](https://www.slobodan-jelisavac.com/en/blog/responsive-search-ads-guide): 7-8 headlines vs 15, angle-based testing
 - [Smart Bidding Strategies Guide](https://www.slobodan-jelisavac.com/en/blog/smart-bidding-guide): tCPA vs tROAS, when to switch from manual, minimum conversion thresholds
-- [Microsoft Ads vs Google Ads](https://www.slobodan-jelisavac.com/en/blog/microsoft-ads-vs-google-ads-comparison): Market share, CPC differences, when each platform wins — from 2 years running both in parallel
+- [Microsoft Ads vs Google Ads](https://www.slobodan-jelisavac.com/en/blog/microsoft-ads-vs-google-ads-comparison): Market share and CPC differences from 2 years running both in parallel
+- [ChatGPT Ads Guide](https://www.slobodan-jelisavac.com/en/blog/chatgpt-ads-guide): How the early-access placements work
+- [ChatGPT Ads vs Google Ads](https://www.slobodan-jelisavac.com/en/blog/chatgpt-ads-vs-google-ads): Where each channel fits today
 
 ## Measurement & Analysis
 
 - [Conversion Tracking for Google Ads](https://www.slobodan-jelisavac.com/en/blog/conversion-tracking-guide): Setup, enhanced conversions, troubleshooting
-- [Google Ads Audit Checklist](https://www.slobodan-jelisavac.com/en/blog/google-ads-audit-checklist): 80+ checkpoints
-- [CTR Guide — From 2% to 8%](https://www.slobodan-jelisavac.com/en/blog/ctr-guide): What is CTR, formula, benchmarks, optimization tactics
-- [GA4 + Google Ads Integration Guide](https://www.slobodan-jelisavac.com/en/blog/ga4-google-ads-integration): 7-step linking guide, importing key events as conversions, Consent Mode v2
-- [What is ROAS and How to Calculate It](https://www.slobodan-jelisavac.com/en/blog/what-is-roas): Formula, interactive calculator, industry benchmarks, ROAS vs POAS
-- [POAS vs ROAS — Profit-Based Bidding](https://www.slobodan-jelisavac.com/en/blog/poas-vs-roas): Why a 4x ROAS can still lose money, break-even math (break-even ROAS = 1/margin), and how to feed profit data to Smart Bidding
-- [Offline Conversion Import for B2B](https://www.slobodan-jelisavac.com/en/blog/offline-conversion-import-b2b): Connect Google Ads to HubSpot/Salesforce/Pipedrive so the algorithm learns from closed deals, not form fills
-- [GA4 Audience Framework for Repeat-Purchase Ecommerce](https://www.slobodan-jelisavac.com/en/blog/ga4-audiences-ecommerce-framework): The full 25-list audience framework across six pillars (lifecycle, value/RFM, intent, brand affinity, replenishment, predictive) with exact GA4 configuration per list, delivery thresholds (1,000 active users for Search/Shopping, 100 for Display/YouTube/Demand Gen), replenishment windows for consumable products, and three GA4 Admin API limits with workarounds
+- [Google Ads Audit Checklist](https://www.slobodan-jelisavac.com/en/blog/google-ads-audit-checklist): Full checkpoint list across account structure, tracking, bidding, and Shopping/PMax
+- [CTR Guide](https://www.slobodan-jelisavac.com/en/blog/ctr-guide): What CTR is, the formula, benchmarks, optimization tactics
+- [GA4 + Google Ads Integration Guide](https://www.slobodan-jelisavac.com/en/blog/ga4-google-ads-integration): Linking guide, importing key events as conversions, Consent Mode v2
+- [What is ROAS and How to Calculate It](https://www.slobodan-jelisavac.com/en/blog/what-is-roas): Formula, interactive calculator, ROAS vs POAS
+- [POAS vs ROAS - Profit-Based Bidding](https://www.slobodan-jelisavac.com/en/blog/poas-vs-roas): Why a high ROAS can still lose money, break-even math, and how to feed profit data to Smart Bidding
+- [Offline Conversion Import for B2B](https://www.slobodan-jelisavac.com/en/blog/offline-conversion-import-b2b): Connecting Google Ads to a CRM so the algorithm learns from closed deals, not form fills
+- [GA4 Audience Framework for Repeat-Purchase Ecommerce](https://www.slobodan-jelisavac.com/en/blog/ga4-audiences-ecommerce-framework): 25-list audience framework with delivery thresholds and GA4 configuration per list
+- [Merchant Center Feed Scorecard](https://www.slobodan-jelisavac.com/en/blog/merchant-center-feed-scorecard): Scoring your product feed before it becomes a Shopping/PMax problem
+- [Product Feed Guide for Serbian eCommerce](https://www.slobodan-jelisavac.com/en/blog/product-feed-serbian-ecommerce): Same feed-anatomy guide as above, English version
+- [Google Ads Audit Checklist for Serbia 2026](https://www.slobodan-jelisavac.com/en/blog/google-ads-audit-checklist-serbia-2026): Serbia-specific version of the audit checklist
+- [Performance Max Audit Checklist](https://www.slobodan-jelisavac.com/en/blog/performance-max-audit-checklist): PMax-specific checkpoints, also available as an interactive tool (see Resources)
+
+## Google Ads API
+
+- [Google Ads API Basic Access Guide](https://www.slobodan-jelisavac.com/en/blog/google-ads-api-basic-access-guide): What changed September 9, 2026, and how to apply for Basic Access
+- [Google Ads API Authentication Guide](https://www.slobodan-jelisavac.com/en/blog/google-ads-api-authentication-guide): OAuth setup and token generation
+- [Google Ads API Reporting with GAQL](https://www.slobodan-jelisavac.com/en/blog/google-ads-api-reporting-gaql): Query language for pulling account data programmatically
+- [Google API Access Guide for Agencies](https://www.slobodan-jelisavac.com/en/blog/google-api-access-guide-for-agencies): MCC-level access and multi-client setups
 
 ## Advanced Strategy
 
-- [Google Ads Remarketing Guide](https://www.slobodan-jelisavac.com/en/blog/remarketing-guide): Setup, segmentation, 7 audience lists
-- [Google Ads Optimization — 30 Tactics](https://www.slobodan-jelisavac.com/en/blog/google-ads-optimization): Proven optimization playbook for better ROAS
-- [Google Ads Mistakes — 20 Things That Cost You Money](https://www.slobodan-jelisavac.com/en/blog/google-ads-mistakes): Common errors and fixes
-- [Why Google Ads Aren't Working](https://www.slobodan-jelisavac.com/en/blog/why-google-ads-not-working): 12 common reasons and solutions
+- [Google Ads Remarketing Guide](https://www.slobodan-jelisavac.com/en/blog/remarketing-guide): Setup, segmentation, audience lists
+- [Google Ads Optimization - 30 Tactics](https://www.slobodan-jelisavac.com/en/blog/google-ads-optimization): Optimization playbook by account area
+- [Google Ads Mistakes](https://www.slobodan-jelisavac.com/en/blog/google-ads-mistakes): Common errors and fixes
+- [Why Google Ads Aren't Working](https://www.slobodan-jelisavac.com/en/blog/why-google-ads-not-working): Common reasons and how to diagnose them
 
 ## Case Studies
 
-- [UK Skincare eCommerce](https://www.slobodan-jelisavac.com/en/case-studies/chelleon): six-figure revenue, 2-year ongoing client, UK market
-- [Mobelaris — Furniture eCommerce](https://www.slobodan-jelisavac.com/en/case-studies/mobelaris): Growth strategy for furniture brand
-- [DesignerGlasses — UK Eyewear](https://www.slobodan-jelisavac.com/en/case-studies/designerglasses): Premium eyewear PPC
-- [SoundBoxStore — Audio Equipment](https://www.slobodan-jelisavac.com/en/case-studies/soundboxstore): Niche electronics
-- [AnkiBuddy — DACH SaaS](https://www.slobodan-jelisavac.com/en/case-studies/ankibuddy): EdTech SaaS for medical students
-- [UK Agency Partnership (OutSearch)](https://www.slobodan-jelisavac.com/en/case-studies/uk-agency-partnership): White-label management of 8 UK accounts
-- [MBFinance — Financial Services](https://www.slobodan-jelisavac.com/en/case-studies/mbfinance): B2B finance lead gen
-- [Chatislav — Local Services](https://www.slobodan-jelisavac.com/en/case-studies/chatislav): Local Lead generation
+No client names or absolute financial figures appear in any case study on this site; all results are described as ratios, percentage changes, or relative comparisons, per NDA.
+
+- [UK Skincare eCommerce](https://www.slobodan-jelisavac.com/en/case-studies/uk-skincare-ecommerce-poas): profit-based bidding, 1.78x average POAS, 2+ year engagement, UK market
+- [DACH EdTech SaaS](https://www.slobodan-jelisavac.com/en/case-studies/dach-edtech-saas-tracking): tracking rebuilt around paid subscriptions
+- [Tech Startup Launch, Serbia](https://www.slobodan-jelisavac.com/en/case-studies/tech-startup-launch-serbia): tracking built before the first ad
+- [Financial Consulting Audit, Serbia](https://www.slobodan-jelisavac.com/en/case-studies/finance-consulting-audit-serbia): one-time Google Ads audit and 30-day action plan
+- [Case Studies index](https://www.slobodan-jelisavac.com/en/case-studies): all case studies in one place
+
+## Industries
+
+- [Google Ads for Healthcare](https://www.slobodan-jelisavac.com/en/industries/healthcare): Private clinics and medical practices - measurement under advertising restrictions, what to check first in a clinic's account
+
+## Insights
+
+Original data reports built from Keyword Planner and Google Ads account data; every number is sourced and every report states what it does not show.
+
+- [Insights index](https://www.slobodan-jelisavac.com/en/insights): Report index
+- [ChatGPT Ads Search Demand 2026](https://www.slobodan-jelisavac.com/en/insights/chatgpt-ads-search-demand-2026): Search interest in "chatgpt ads" rose at least 13-fold year over year in the US, UK, and Germany, versus roughly 2-fold or less for "chatgpt" itself; methodology and limitations included
+
+## Free Resources
+
+- [PMax Check](https://www.slobodan-jelisavac.com/en/resources/pmax-check): 38-checkpoint interactive Performance Max review with a weighted score and a fix-order recommendation; runs in the browser, no email required
+- [GA4 Audience Framework](https://www.slobodan-jelisavac.com/en/resources/ga4-framework): 25 GA4 audience lists across six layers, delivered as files plus a PDF
+- [Budget Calculator](https://www.slobodan-jelisavac.com/en/resources/budget-calculator): Works out the CPC you can afford and the budget your goal requires from numbers you already know; transparent formula, no email
 
 ## PPC Glossary
 
-- [PPC Glossary (English)](https://www.slobodan-jelisavac.com/en/glossary): 50 essential Google Ads terms — CTR, CPC, ROAS, POAS, Smart Bidding, Performance Max, Quality Score, and more. Each with definition, formula, example, and Serbian market benchmarks.
-- [PPC Rečnik (Serbian)](https://www.slobodan-jelisavac.com/sr/recnik): Kompletan rečnik PPC i Google Ads termina na srpskom — 50 termina sa definicijama, formulama, primerima.
+- [PPC Glossary (English)](https://www.slobodan-jelisavac.com/en/glossary): 64 essential Google Ads terms - CTR, CPC, ROAS, POAS, Smart Bidding, Performance Max, Quality Score, and more, each with a definition, formula, and example
+- [PPC Rečnik (Serbian)](https://www.slobodan-jelisavac.com/sr/recnik): Isti rečnik na srpskom - 64 termina sa definicijama, formulama i primerima
 
 ## Optional
 
-- [Blog Hub (Serbian)](https://www.slobodan-jelisavac.com/sr/blog): Full Serbian blog index, organized into 5 chapters by skill level
-- [Blog Hub (English)](https://www.slobodan-jelisavac.com/en/blog): English blog index
-- [GA4 Audience Framework — free download](https://www.slobodan-jelisavac.com/en/ga4-audiences): The same 25-list framework as executable markdown files (drop into an LLM and it builds the audiences with you) plus a PDF reference. Email only, no other fields.
-- [Google Ads Landing Page](https://www.slobodan-jelisavac.com/sr/lp/google-ads): Conversion-focused service landing page
+- [Blog Hub (Serbian)](https://www.slobodan-jelisavac.com/sr/blog): Full Serbian blog index
+- [Blog Hub (English)](https://www.slobodan-jelisavac.com/en/blog): Full English blog index
 - [XML Sitemap](https://www.slobodan-jelisavac.com/sitemap.xml): Full machine-readable URL list
