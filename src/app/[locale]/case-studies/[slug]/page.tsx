@@ -32,8 +32,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // No "Case Study" label and no brand suffix in the title - both were
   // pushing every entry past 100+ chars. No results[1] restatement in the
   // description either: it duplicated cs.highlight word for word on the
-  // tech-startup-launch-serbia entry (checker rule, 23.9).
-  const pageTitle = truncateAtWord(`${cs.company}: ${cs.highlight}`, 60);
+  // tech-startup-launch-serbia entry (checker rule, 23.9). Prefer the
+  // hand-written seoTitle (a complete thought) over the mechanical
+  // word-boundary cut, which was chopping phrases mid-word (checker rule,
+  // 23.9, round 2).
+  const pageTitle = cs.seoTitle ?? truncateAtWord(`${cs.company}: ${cs.highlight}`, 60);
 
   return buildMetadata({
     title: pageTitle,

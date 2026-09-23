@@ -15,6 +15,11 @@ export type CaseStudy = {
   tactics: { title: string; description: string }[];
   results: { label: string; value: string }[];
   highlight: string;
+  // Explicit <title> tag text, <= 60 chars, a complete thought built only
+  // from words already in company/highlight. Falls back to a mechanical
+  // truncation of "company: highlight" when absent, which can cut a phrase
+  // mid-word - checker rule, 23.9.
+  seoTitle?: string;
   testimonial?: { quote: string; name: string; role: string };
 };
 
@@ -54,7 +59,8 @@ export const caseStudies: CaseStudy[] = [
       { label: "Prosečan POAS (12 meseci)", value: "1.78x" },
       { label: "Saradnja", value: "2+ godine" }
     ],
-    highlight: "Prosečan POAS 1.78x za 12 meseci"
+    highlight: "Prosečan POAS 1.78x za 12 meseci",
+    seoTitle: "UK eCommerce brend: prosečan POAS 1.78x za 12 meseci"
   },
   {
     slug: "dach-edtech-saas-tracking",
@@ -91,7 +97,8 @@ export const caseStudies: CaseStudy[] = [
       { label: "Primarna konverzija", value: "Samo plaćena pretplata" },
       { label: "Saradnja", value: "3 meseca" }
     ],
-    highlight: "Merenje prebačeno sa registracije na plaćenu pretplatu"
+    highlight: "Merenje prebačeno sa registracije na plaćenu pretplatu",
+    seoTitle: "EdTech SaaS, DACH: merenje prebačeno na plaćenu pretplatu"
   },
   {
     slug: "tech-startup-launch-serbia",
@@ -128,7 +135,8 @@ export const caseStudies: CaseStudy[] = [
       { label: "Prilagođeni događaji u merenju", value: "10+" },
       { label: "Merenje", value: "Postavljeno pre prvog oglasa" }
     ],
-    highlight: "Merenje postavljeno pre prvog oglasa"
+    highlight: "Merenje postavljeno pre prvog oglasa",
+    seoTitle: "Tehnološki startup: merenje postavljeno pre prvog oglasa"
   },
   {
     slug: "finance-consulting-audit-serbia",
@@ -165,7 +173,8 @@ export const caseStudies: CaseStudy[] = [
       { label: "Vrsta posla", value: "Audit, bez implementacije" },
       { label: "Isporuka", value: "Akcioni plan za 30 dana" }
     ],
-    highlight: "Gde budžet odlazi bez upita, i redosled izmena za 30 dana"
+    highlight: "Gde budžet odlazi bez upita, i redosled izmena za 30 dana",
+    seoTitle: "Finansijski konsalting, Srbija: gde budžet odlazi bez upita"
   }
 ];
 
@@ -205,7 +214,8 @@ export const caseStudiesEn: CaseStudy[] = [
       { label: "Average POAS (12 months)", value: "1.78x" },
       { label: "Partnership", value: "2+ years" }
     ],
-    highlight: "1.78x average POAS over 12 months"
+    highlight: "1.78x average POAS over 12 months",
+    seoTitle: "UK skincare eCommerce brand: 1.78x POAS over 12 months"
   },
   {
     slug: "dach-edtech-saas-tracking",
@@ -242,7 +252,8 @@ export const caseStudiesEn: CaseStudy[] = [
       { label: "Primary conversion", value: "Paid subscription only" },
       { label: "Partnership", value: "3 months" }
     ],
-    highlight: "Tracking rebuilt around paid subscriptions, not sign-ups"
+    highlight: "Tracking rebuilt around paid subscriptions, not sign-ups",
+    seoTitle: "EdTech SaaS, DACH: tracking rebuilt around subscriptions"
   },
   {
     slug: "tech-startup-launch-serbia",
@@ -279,7 +290,8 @@ export const caseStudiesEn: CaseStudy[] = [
       { label: "Custom tracking events", value: "10+" },
       { label: "Tracking", value: "Live before the first ad" }
     ],
-    highlight: "Tracking live before the first ad"
+    highlight: "Tracking live before the first ad",
+    seoTitle: "Tech startup: tracking live before the first ad"
   },
   {
     slug: "finance-consulting-audit-serbia",
@@ -316,7 +328,8 @@ export const caseStudiesEn: CaseStudy[] = [
       { label: "Type of work", value: "Audit, no implementation" },
       { label: "Deliverable", value: "30-day action plan" }
     ],
-    highlight: "Where the budget leaks, and the order of fixes for 30 days"
+    highlight: "Where the budget leaks, and the order of fixes for 30 days",
+    seoTitle: "Financial consulting firm, Serbia: where the budget leaks"
   }
 ];
 
