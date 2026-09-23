@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-// NOTE: <MetaPixel /> deprecated Apr 16, 2026 — Meta Pixel now managed via
-// GTM container GTM-PJ4B5QP (workspace 17, pixel 1794545094595591).
-// Old client-side pixel was firing 978584014430413 (wrong account).
-// Files src/components/MetaPixel.tsx + src/lib/meta-tracking.ts kept in repo
-// for reference / potential CAPI revival, but no longer mounted.
+// NOTE: Meta Pixel is managed via GTM container GTM-PJ4B5QP (workspace 17,
+// pixel 1794545094595591). The old client-side pixel component and its
+// server-side events route were removed Sep 23, 2026 (dead code, open route).
 import "./globals.css";
 
 // This root layout is deliberately a pass-through: it renders no <html>/<body>.

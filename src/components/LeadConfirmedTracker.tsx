@@ -7,7 +7,7 @@ import { useEffect } from "react";
  * Used by GTM workspace 17 (container GTM-PJ4B5QP):
  *   - GA4 - lead_confirmed [PRIMARY CONV]
  *   - UET - Lead Conv
- *   - Meta Pixel - Lead [PRIMARY]  (will be added once code-side MetaPixel is unmounted)
+ *   - Meta Pixel - Lead [PRIMARY]
  *
  * Dedup pattern (sessionStorage):
  *   - MultiStepForm sets `dj_lead_pending=1` + `dj_lead_tier=<tier>` + `dj_lead_form`
