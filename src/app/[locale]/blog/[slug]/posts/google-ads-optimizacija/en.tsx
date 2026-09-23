@@ -686,7 +686,7 @@ export default function GoogleAdsOptimizationEN() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Tactic 29</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Remarketing optimization</h3>
           <p className="text-base text-gray-600 mb-3">
-            Remarketing campaigns have 2-3x higher CTR and 50-70% lower CPA than cold traffic — but only
+            Remarketing campaigns typically have higher CTR and lower CPA than cold traffic - but only
             if you properly segment your audiences. Don&apos;t treat all site visitors the same.
           </p>
           <ul className="text-sm mb-0">

@@ -675,7 +675,7 @@ export default function GoogleAdsOptimizacijaPost() {
           <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Taktika 29</p>
           <h3 className="text-base font-heading font-bold mt-0 mb-2">Remarketing optimization</h3>
           <p className="text-base text-gray-600 mb-3">
-            <GlossaryLink slug="remarketing">Remarketing</GlossaryLink> kampanje imaju 2-3x viši CTR i 50-70% niži CPA od cold traffic. Ali samo ako
+            <GlossaryLink slug="remarketing">Remarketing</GlossaryLink> kampanje obično imaju viši CTR i niži CPA od cold traffic-a. Ali samo ako
             pravilno segmentirate audience. Ne tretirajte sve posetioce isto.
           </p>
           <ul className="text-sm mb-0">
